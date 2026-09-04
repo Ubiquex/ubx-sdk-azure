@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSkuDetailsForExistingResource_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type OpenapiSkuDetailsForExistingResource_Value struct {
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type OpenapiSkuDetailsForExistingResourceConfig struct {

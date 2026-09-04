@@ -4,8 +4,8 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVirtualEndpoint_Value_Properties struct {
-	EndpointType any
-	Members any
+	EndpointType     any
+	Members          any
 	VirtualEndpoints any
 }
 
@@ -19,7 +19,7 @@ type OpenapiVirtualEndpointConfig struct {
 
 type OpenapiVirtualEndpointAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The VirtualEndpoint items on this page
 	Value any

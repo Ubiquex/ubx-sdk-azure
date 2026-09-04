@@ -11,10 +11,6 @@ const ServerconnectionpoliciesServerConnectionPolicy_PropertiesFields: FieldMap 
 };
 
 export interface ServerconnectionpoliciesServerConnectionPolicyConfig {
-  /** Metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
-  /** Resource location. */
-  location?: string | Computed<string>;
   /** The properties of a server connection policy. */
   properties?: ServerconnectionpoliciesServerConnectionPolicy_Properties | Computed<ServerconnectionpoliciesServerConnectionPolicy_Properties>;
 }
@@ -31,8 +27,6 @@ export interface ServerconnectionpoliciesServerConnectionPolicyAttrs {
 export const ServerconnectionpoliciesServerConnectionPolicy: ResourceBinding<ServerconnectionpoliciesServerConnectionPolicyConfig, ServerconnectionpoliciesServerConnectionPolicyAttrs> = {
   wireType: "azure_sql_serverconnectionpolicies_server_connection_policy",
   fields: {
-    kind: "kind",
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

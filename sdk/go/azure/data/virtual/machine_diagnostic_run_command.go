@@ -9,52 +9,52 @@ type MachineDiagnosticRunCommand_Value_Properties_ErrorBlobManagedIdentity struc
 }
 
 type MachineDiagnosticRunCommand_Value_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type MachineDiagnosticRunCommand_Value_Properties_InstanceView struct {
-	EndTime any
-	Error any
+	EndTime          any
+	Error            any
 	ExecutionMessage any
-	ExecutionState any
-	ExitCode any
-	Output any
-	StartTime any
-	Statuses any
+	ExecutionState   any
+	ExitCode         any
+	Output           any
+	StartTime        any
+	Statuses         any
 }
 
 type MachineDiagnosticRunCommand_Value_Properties_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type MachineDiagnosticRunCommand_Value_Properties_Source struct {
-	CommandId any
+	CommandId                any
 	GalleryScriptReferenceId any
-	Script any
-	ScriptShell any
-	ScriptUri any
+	Script                   any
+	ScriptShell              any
+	ScriptUri                any
 	ScriptUriManagedIdentity any
 }
 
 type MachineDiagnosticRunCommand_Value_Properties struct {
-	AsyncExecution any
-	ErrorBlobManagedIdentity any
-	ErrorBlobUri any
-	InstanceView any
-	OutputBlobManagedIdentity any
-	OutputBlobUri any
-	Parameters any
-	ProtectedParameters any
-	ProvisioningState any
-	RunAsPassword any
-	RunAsUser any
-	Source any
-	TimeoutInSeconds any
+	AsyncExecution                  any
+	ErrorBlobManagedIdentity        any
+	ErrorBlobUri                    any
+	InstanceView                    any
+	OutputBlobManagedIdentity       any
+	OutputBlobUri                   any
+	Parameters                      any
+	ProtectedParameters             any
+	ProvisioningState               any
+	RunAsPassword                   any
+	RunAsUser                       any
+	Source                          any
+	TimeoutInSeconds                any
 	TreatFailureAsDeploymentFailure any
 }
 
@@ -63,7 +63,7 @@ type MachineDiagnosticRunCommand_Value struct {
 }
 
 type MachineDiagnosticRunCommandConfig struct {
-	InstanceId any
+	InstanceId     any
 	VmScaleSetName any
 }
 
@@ -72,14 +72,14 @@ type MachineDiagnosticRunCommandAttrs struct {
 	// The uri to fetch the next page of diagnostic run commands.
 	NextLink any
 	// The list of diagnostic run commands.
-	Value any
+	Value          any
 	VmScaleSetName any
 }
 
 var MachineDiagnosticRunCommand = ubx.DataSourceBinding{
 	WireType: "azure_virtual_machine_diagnostic_run_command",
 	Fields: ubx.FieldMap{
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
+		"InstanceId":     ubx.FieldSpec{WireName: "instance_id"},
 		"VmScaleSetName": ubx.FieldSpec{WireName: "vm_scale_set_name"},
 	},
 }

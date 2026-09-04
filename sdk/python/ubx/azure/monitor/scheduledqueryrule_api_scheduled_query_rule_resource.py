@@ -230,37 +230,18 @@ _ScheduledqueryruleApiScheduledQueryRuleResource_PropertiesFields = {
     "window_size": ubx.FieldSpec(wire_name="window_size"),
 }
 
-_ScheduledqueryruleApiScheduledQueryRuleResource_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class ScheduledqueryruleApiScheduledQueryRuleResourceConfig:
-    # The etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-    etag: Any = None
-    # Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
-    id: Any = None
     # Identity for the resource.
     identity: Any = None
     # Indicates the type of scheduled query rule. The default is LogAlert.
     kind: Any = None
     # The geo-location where the resource lives
     location: Any = None
-    # The name of the resource
-    name: Any = None
     # scheduled query rule Definition
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
     # Resource tags.
     tags: Any = None
-    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
-    type: Any = None
 
 @dataclasses.dataclass
 class ScheduledqueryruleApiScheduledQueryRuleResourceAttrs:
@@ -288,8 +269,6 @@ class ScheduledqueryruleApiScheduledQueryRuleResourceAttrs:
 ScheduledqueryruleApiScheduledQueryRuleResource = ubx.ResourceBinding(
     wire_type="azure_monitor_scheduledqueryrule_api_scheduled_query_rule_resource",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
-        "id": ubx.FieldSpec(wire_name="id"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",
@@ -297,18 +276,11 @@ ScheduledqueryruleApiScheduledQueryRuleResource = ubx.ResourceBinding(
         ),
         "kind": ubx.FieldSpec(wire_name="kind"),
         "location": ubx.FieldSpec(wire_name="location"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_ScheduledqueryruleApiScheduledQueryRuleResource_PropertiesFields,
         ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_ScheduledqueryruleApiScheduledQueryRuleResource_SystemDataFields,
-        ),
         "tags": ubx.FieldSpec(wire_name="tags"),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

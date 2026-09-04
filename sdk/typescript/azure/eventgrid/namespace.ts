@@ -297,15 +297,6 @@ const Namespace_SkuFields: FieldMap = {
   name: "name",
 };
 
-const Namespace_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NamespaceConfig {
   /** The identity information for the resource. */
   identity?: Namespace_Identity | Computed<Namespace_Identity>;
@@ -313,8 +304,6 @@ export interface NamespaceConfig {
   properties?: Namespace_Properties | Computed<Namespace_Properties>;
   /** Represents available Sku pricing tiers. */
   sku?: Namespace_Sku | Computed<Namespace_Sku>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: Namespace_SystemData | Computed<Namespace_SystemData>;
 }
 
 export interface NamespaceAttrs {
@@ -345,11 +334,6 @@ export const Namespace: ResourceBinding<NamespaceConfig, NamespaceAttrs> = {
       wireName: "sku",
       kind: "object",
       fields: Namespace_SkuFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: Namespace_SystemDataFields,
     },
   },
 };

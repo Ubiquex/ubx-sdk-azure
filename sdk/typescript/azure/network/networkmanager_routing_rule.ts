@@ -69,20 +69,9 @@ const NetworkmanagerRoutingRule_PropertiesFields: FieldMap = {
   resourceGuid: "resource_guid",
 };
 
-const NetworkmanagerRoutingRule_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerRoutingRuleConfig {
   /** Routing rule resource. */
   properties?: NetworkmanagerRoutingRule_Properties | Computed<NetworkmanagerRoutingRule_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerRoutingRule_SystemData | Computed<NetworkmanagerRoutingRule_SystemData>;
 }
 
 export interface NetworkmanagerRoutingRuleAttrs {
@@ -99,11 +88,6 @@ export const NetworkmanagerRoutingRule: ResourceBinding<NetworkmanagerRoutingRul
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerRoutingRule_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerRoutingRule_SystemDataFields,
     },
   },
 };

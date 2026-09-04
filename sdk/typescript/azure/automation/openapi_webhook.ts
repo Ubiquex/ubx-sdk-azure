@@ -7,10 +7,20 @@ export interface OpenapiWebhook_Properties_Runbook {
 }
 
 export interface OpenapiWebhook_Properties {
+  /** Gets or sets the creation time. */
+  creationTime?: string | Computed<string>;
+  /** Gets or sets the description. */
+  description?: string | Computed<string>;
   /** Gets or sets the expiry time. */
   expiryTime?: string | Computed<string>;
   /** Gets or sets the value of the enabled flag of webhook. */
   isEnabled?: boolean | Computed<boolean>;
+  /** Gets or sets the last invoked time. */
+  lastInvokedTime?: string | Computed<string>;
+  /** Details of the user who last modified the Webhook */
+  lastModifiedBy?: string | Computed<string>;
+  /** Gets or sets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
   /** Gets or sets the parameters of the job. */
   parameters?: Record<string, string> | Computed<Record<string, string>>;
   /** Gets or sets the name of the hybrid worker group the webhook job will run on. */
@@ -26,8 +36,13 @@ const OpenapiWebhook_Properties_RunbookFields: FieldMap = {
 };
 
 const OpenapiWebhook_PropertiesFields: FieldMap = {
+  creationTime: "creation_time",
+  description: "description",
   expiryTime: "expiry_time",
   isEnabled: "is_enabled",
+  lastInvokedTime: "last_invoked_time",
+  lastModifiedBy: "last_modified_by",
+  lastModifiedTime: "last_modified_time",
   parameters: "parameters",
   runOn: "run_on",
   runbook: {

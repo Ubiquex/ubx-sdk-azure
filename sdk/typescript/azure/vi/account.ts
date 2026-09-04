@@ -162,22 +162,11 @@ const Account_PropertiesFields: FieldMap = {
   totalSecondsIndexed: "total_seconds_indexed",
 };
 
-const Account_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface AccountConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: Account_Identity | Computed<Account_Identity>;
   /** Azure Video Indexer account properties */
   properties?: Account_Properties | Computed<Account_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: Account_SystemData | Computed<Account_SystemData>;
 }
 
 export interface AccountAttrs {
@@ -201,11 +190,6 @@ export const Account: ResourceBinding<AccountConfig, AccountAttrs> = {
       wireName: "properties",
       kind: "object",
       fields: Account_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: Account_SystemDataFields,
     },
   },
 };

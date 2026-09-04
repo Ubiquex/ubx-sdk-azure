@@ -11,15 +11,10 @@ export interface Block_Placement {
 }
 
 export interface Block_Properties_InstanceView_Statuses {
-  /** The status code for the instance view of the Azure interconnect block. This is a machine-readable code that indicates the current status. (AI-inferred) */
   code?: string | Computed<string>;
-  /** A human-readable string that describes the current status of the Azure interconnect block. (AI-inferred) */
   displayStatus?: string | Computed<string>;
-  /** The severity level of the status. Possible values are Info, Warning, and Error. (AI-inferred) */
   level?: string | Computed<string>;
-  /** A human-readable message providing additional details about the corresponding status in the instance view. (AI-inferred) */
   message?: string | Computed<string>;
-  /** The time at which the status was recorded, typically in a date-time format. (AI-inferred) */
   time?: string | Computed<string>;
 }
 

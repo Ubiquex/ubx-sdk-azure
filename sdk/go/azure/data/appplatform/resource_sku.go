@@ -4,59 +4,59 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceSku_Value_Capacity struct {
-	Default any
-	Maximum any
-	Minimum any
+	Default   any
+	Maximum   any
+	Minimum   any
 	ScaleType any
 }
 
 type ResourceSku_Value_LocationInfo_ZoneDetails_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type ResourceSku_Value_LocationInfo_ZoneDetails struct {
 	Capabilities any
-	Name any
+	Name         any
 }
 
 type ResourceSku_Value_LocationInfo struct {
-	Location any
+	Location    any
 	ZoneDetails any
-	Zones any
+	Zones       any
 }
 
 type ResourceSku_Value_Restrictions_RestrictionInfo struct {
 	Locations any
-	Zones any
+	Zones     any
 }
 
 type ResourceSku_Value_Restrictions struct {
-	ReasonCode any
+	ReasonCode      any
 	RestrictionInfo any
-	Type any
-	Values any
+	Type            any
+	Values          any
 }
 
 type ResourceSku_Value struct {
-	Capacity any
+	Capacity     any
 	LocationInfo any
-	Locations any
-	Name any
+	Locations    any
+	Name         any
 	ResourceType any
 	Restrictions any
-	Tier any
+	Tier         any
 }
 
 type ResourceSkuConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ResourceSkuAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// Collection of resource SKU
 	Value any
@@ -65,7 +65,7 @@ type ResourceSkuAttrs struct {
 var ResourceSku = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_resource_sku",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

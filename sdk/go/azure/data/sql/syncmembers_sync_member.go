@@ -4,18 +4,18 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SyncmembersSyncMember_Value_Properties struct {
-	DatabaseName any
-	DatabaseType any
-	Password any
-	PrivateEndpointName any
-	ServerName any
-	SqlServerDatabaseId any
-	SyncAgentId any
-	SyncDirection any
+	DatabaseName                      any
+	DatabaseType                      any
+	Password                          any
+	PrivateEndpointName               any
+	ServerName                        any
+	SqlServerDatabaseId               any
+	SyncAgentId                       any
+	SyncDirection                     any
 	SyncMemberAzureDatabaseResourceId any
-	SyncState any
-	UsePrivateLinkConnection any
-	UserName any
+	SyncState                         any
+	UsePrivateLinkConnection          any
+	UserName                          any
 }
 
 type SyncmembersSyncMember_Value struct {
@@ -23,16 +23,16 @@ type SyncmembersSyncMember_Value struct {
 }
 
 type SyncmembersSyncMemberConfig struct {
-	DatabaseName any
-	ServerName any
+	DatabaseName  any
+	ServerName    any
 	SyncGroupName any
 }
 
 type SyncmembersSyncMemberAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
-	ServerName any
+	NextLink      any
+	ServerName    any
 	SyncGroupName any
 	// The SyncMember items on this page
 	Value any
@@ -41,8 +41,8 @@ type SyncmembersSyncMemberAttrs struct {
 var SyncmembersSyncMember = ubx.DataSourceBinding{
 	WireType: "azure_sql_syncmembers_sync_member",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"DatabaseName":  ubx.FieldSpec{WireName: "database_name"},
+		"ServerName":    ubx.FieldSpec{WireName: "server_name"},
 		"SyncGroupName": ubx.FieldSpec{WireName: "sync_group_name"},
 	},
 }

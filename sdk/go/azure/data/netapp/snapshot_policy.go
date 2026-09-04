@@ -4,45 +4,45 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SnapshotPolicy_Value_Properties_DailySchedule struct {
-	Hour any
-	Minute any
+	Hour            any
+	Minute          any
 	SnapshotsToKeep any
-	UsedBytes any
+	UsedBytes       any
 }
 
 type SnapshotPolicy_Value_Properties_HourlySchedule struct {
-	Minute any
+	Minute          any
 	SnapshotsToKeep any
-	UsedBytes any
+	UsedBytes       any
 }
 
 type SnapshotPolicy_Value_Properties_MonthlySchedule struct {
-	DaysOfMonth any
-	Hour any
-	Minute any
+	DaysOfMonth     any
+	Hour            any
+	Minute          any
 	SnapshotsToKeep any
-	UsedBytes any
+	UsedBytes       any
 }
 
 type SnapshotPolicy_Value_Properties_WeeklySchedule struct {
-	Day any
-	Hour any
-	Minute any
+	Day             any
+	Hour            any
+	Minute          any
 	SnapshotsToKeep any
-	UsedBytes any
+	UsedBytes       any
 }
 
 type SnapshotPolicy_Value_Properties struct {
-	DailySchedule any
-	Enabled any
-	HourlySchedule any
-	MonthlySchedule any
+	DailySchedule     any
+	Enabled           any
+	HourlySchedule    any
+	MonthlySchedule   any
 	ProvisioningState any
-	WeeklySchedule any
+	WeeklySchedule    any
 }
 
 type SnapshotPolicy_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

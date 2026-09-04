@@ -11,9 +11,9 @@ type JobprivateendpointsJobPrivateEndpoint_Properties struct {
 }
 
 var JobprivateendpointsJobPrivateEndpoint_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpointId": ubx.FieldSpec{WireName: "private_endpoint_id"},
-		"TargetServerAzureResourceId": ubx.FieldSpec{WireName: "target_server_azure_resource_id"},
-	}
+	"PrivateEndpointId":           ubx.FieldSpec{WireName: "private_endpoint_id"},
+	"TargetServerAzureResourceId": ubx.FieldSpec{WireName: "target_server_azure_resource_id"},
+}
 
 type JobprivateendpointsJobPrivateEndpointConfig struct {
 	// Properties of job agent private endpoint.
@@ -30,8 +30,8 @@ var JobprivateendpointsJobPrivateEndpoint = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: JobprivateendpointsJobPrivateEndpoint_PropertiesFields,
+			Kind:     "object",
+			Fields:   JobprivateendpointsJobPrivateEndpoint_PropertiesFields,
 		},
 	},
 }

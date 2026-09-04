@@ -4,14 +4,14 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Sbnamespace_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Sbnamespace_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,25 +20,25 @@ type Sbnamespace_Value_Properties_Encryption_KeyVaultProperties_Identity struct 
 }
 
 type Sbnamespace_Value_Properties_Encryption_KeyVaultProperties struct {
-	Identity any
-	KeyName any
+	Identity    any
+	KeyName     any
 	KeyVaultUri any
-	KeyVersion any
+	KeyVersion  any
 }
 
 type Sbnamespace_Value_Properties_Encryption struct {
-	KeySource any
-	KeyVaultProperties any
+	KeySource                       any
+	KeyVaultProperties              any
 	RequireInfrastructureEncryption any
 }
 
 type Sbnamespace_Value_Properties_GeoDataReplication_Locations struct {
 	LocationName any
-	RoleType any
+	RoleType     any
 }
 
 type Sbnamespace_Value_Properties_GeoDataReplication struct {
-	Locations any
+	Locations                          any
 	MaxReplicationLagDurationInSeconds any
 }
 
@@ -56,50 +56,50 @@ type Sbnamespace_Value_Properties_PrivateEndpointConnections_Properties_PrivateE
 
 type Sbnamespace_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	Description any
-	Status any
+	Status      any
 }
 
 type Sbnamespace_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Sbnamespace_Value_Properties_PrivateEndpointConnections struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type Sbnamespace_Value_Properties struct {
-	AlternateName any
-	CreatedAt any
-	DisableLocalAuth any
-	Encryption any
-	GeoDataReplication any
-	IpAddressType any
-	MetricId any
-	MinimumTlsVersion any
-	PlatformCapabilities any
+	AlternateName              any
+	CreatedAt                  any
+	DisableLocalAuth           any
+	Encryption                 any
+	GeoDataReplication         any
+	IpAddressType              any
+	MetricId                   any
+	MinimumTlsVersion          any
+	PlatformCapabilities       any
 	PremiumMessagingPartitions any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ServiceBusEndpoint any
-	Status any
-	UpdatedAt any
-	ZoneRedundant any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	ServiceBusEndpoint         any
+	Status                     any
+	UpdatedAt                  any
+	ZoneRedundant              any
 }
 
 type Sbnamespace_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type Sbnamespace_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type SbnamespaceConfig struct {
@@ -114,6 +114,5 @@ type SbnamespaceAttrs struct {
 
 var Sbnamespace = ubx.DataSourceBinding{
 	WireType: "azure_servicebus_sbnamespace",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -29,8 +29,6 @@ _ArmDisasterRecovery_PropertiesFields = {
 
 @dataclasses.dataclass
 class ArmDisasterRecoveryConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Properties required to the Create Or Update Alias(Disaster Recovery configurations)
     properties: Any = None
     # path parameter, not part of the API's own resource representation
@@ -48,7 +46,6 @@ class ArmDisasterRecoveryAttrs:
 ArmDisasterRecovery = ubx.ResourceBinding(
     wire_type="azure_servicebus_arm_disaster_recovery",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

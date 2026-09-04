@@ -8,6 +8,8 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiAdministratorMicrosoftEntra_Properties:
+    # Object identifier of the Microsoft Entra principal.
+    object_id: Any = None
     # Name of the Microsoft Entra principal.
     principal_name: Any = None
     # Type of Microsoft Entra principal to which the server administrator is associated.
@@ -16,6 +18,7 @@ class OpenapiAdministratorMicrosoftEntra_Properties:
     tenant_id: Any = None
 
 _OpenapiAdministratorMicrosoftEntra_PropertiesFields = {
+    "object_id": ubx.FieldSpec(wire_name="object_id"),
     "principal_name": ubx.FieldSpec(wire_name="principal_name"),
     "principal_type": ubx.FieldSpec(wire_name="principal_type"),
     "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),

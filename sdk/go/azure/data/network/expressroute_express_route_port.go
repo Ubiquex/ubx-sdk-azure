@@ -4,14 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRoutePort_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ExpressrouteExpressRoutePort_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,47 +21,47 @@ type ExpressrouteExpressRoutePort_Value_Properties_Circuits struct {
 
 type ExpressrouteExpressRoutePort_Value_Properties_Links_Properties_MacSecConfig struct {
 	CakSecretIdentifier any
-	Cipher any
+	Cipher              any
 	CknSecretIdentifier any
-	SciState any
+	SciState            any
 }
 
 type ExpressrouteExpressRoutePort_Value_Properties_Links_Properties struct {
-	AdminState any
-	ColoLocation any
-	ConnectorType any
-	InterfaceName any
-	MacSecConfig any
-	PatchPanelId any
+	AdminState        any
+	ColoLocation      any
+	ConnectorType     any
+	InterfaceName     any
+	MacSecConfig      any
+	PatchPanelId      any
 	ProvisioningState any
-	RackId any
-	RouterName any
+	RackId            any
+	RouterName        any
 }
 
 type ExpressrouteExpressRoutePort_Value_Properties_Links struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ExpressrouteExpressRoutePort_Value_Properties struct {
-	AllocationDate any
-	BandwidthInGbps any
-	BillingType any
-	Circuits any
-	Encapsulation any
-	EtherType any
-	Links any
-	Mtu any
-	PeeringLocation any
+	AllocationDate             any
+	BandwidthInGbps            any
+	BillingType                any
+	Circuits                   any
+	Encapsulation              any
+	EtherType                  any
+	Links                      any
+	Mtu                        any
+	PeeringLocation            any
 	ProvisionedBandwidthInGbps any
-	ProvisioningState any
-	ResourceGuid any
+	ProvisioningState          any
+	ResourceGuid               any
 }
 
 type ExpressrouteExpressRoutePort_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
@@ -77,6 +77,5 @@ type ExpressrouteExpressRoutePortAttrs struct {
 
 var ExpressrouteExpressRoutePort = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_port",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

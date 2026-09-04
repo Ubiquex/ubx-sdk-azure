@@ -4,7 +4,7 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciCluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -51,52 +51,52 @@ type HciCluster_Properties_IsolatedVmAttestationConfiguration struct {
 
 type HciCluster_Properties_LocalAvailabilityZones struct {
 	LocalAvailabilityZoneName any
-	Nodes any
+	Nodes                     any
 }
 
 type HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionError struct {
-	ErrorCode any
+	ErrorCode    any
 	ErrorMessage any
 }
 
 type HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails struct {
-	CorrelationId any
-	EndTimeCollected any
-	LogCollectionError any
+	CorrelationId        any
+	EndTimeCollected     any
+	LogCollectionError   any
 	LogCollectionJobType any
-	LogCollectionStatus any
-	LogEndTime any
-	LogSize any
-	LogStartTime any
-	TimeCollected any
+	LogCollectionStatus  any
+	LogEndTime           any
+	LogSize              any
+	LogStartTime         any
+	TimeCollected        any
 }
 
 type HciCluster_Properties_LogCollectionProperties struct {
 	// From DateTimeStamp from when logs need to be connected
 	FromDate any
 	// Recent DateTimeStamp where logs are successfully generated
-	LastLogGenerated any
+	LastLogGenerated            any
 	LogCollectionSessionDetails any
 	// To DateTimeStamp till when logs need to be connected
 	ToDate any
 }
 
 type HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettings struct {
-	ArcResourceId any
+	ArcResourceId          any
 	ConnectionErrorMessage any
-	ConnectionStatus any
-	CreatedAt any
-	State any
-	TranscriptLocation any
-	UpdatedAt any
+	ConnectionStatus       any
+	CreatedAt              any
+	State                  any
+	TranscriptLocation     any
+	UpdatedAt              any
 }
 
 type HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetails struct {
-	AccessLevel any
-	Duration any
-	NodeName any
-	SessionEndTime any
-	SessionStartTime any
+	AccessLevel        any
+	Duration           any
+	NodeName           any
+	SessionEndTime     any
+	SessionStartTime   any
 	TranscriptLocation any
 }
 
@@ -104,30 +104,30 @@ type HciCluster_Properties_RemoteSupportProperties struct {
 	// Remote Support Access Level
 	AccessLevel any
 	// Expiration DateTimeStamp when Remote Support Access will be expired
-	ExpirationTimeStamp any
+	ExpirationTimeStamp       any
 	RemoteSupportNodeSettings any
 	// Remote Support Provisioning State
 	RemoteSupportProvisioningState any
-	RemoteSupportSessionDetails any
+	RemoteSupportSessionDetails    any
 	// Remote Support Type for cluster
 	RemoteSupportType any
 }
 
 type HciCluster_Properties_ReportedProperties_Nodes struct {
-	CoreCount any
-	EhcResourceId any
-	Id any
-	LastLicensingTimestamp any
-	Manufacturer any
-	MemoryInGiB any
-	Model any
-	Name any
-	NodeType any
-	OemActivation any
-	OsDisplayVersion any
-	OsName any
-	OsVersion any
-	SerialNumber any
+	CoreCount                 any
+	EhcResourceId             any
+	Id                        any
+	LastLicensingTimestamp    any
+	Manufacturer              any
+	MemoryInGiB               any
+	Model                     any
+	Name                      any
+	NodeType                  any
+	OemActivation             any
+	OsDisplayVersion          any
+	OsName                    any
+	OsVersion                 any
+	SerialNumber              any
 	WindowsServerSubscription any
 }
 
@@ -162,7 +162,7 @@ type HciCluster_Properties_ReportedProperties struct {
 
 type HciCluster_Properties_SecretsLocations struct {
 	SecretsLocation any
-	SecretsType any
+	SecretsType     any
 }
 
 type HciCluster_Properties_SoftwareAssuranceProperties struct {
@@ -236,235 +236,235 @@ type HciCluster_Properties struct {
 }
 
 var HciCluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var HciCluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: HciCluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   HciCluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var HciCluster_Properties_BillingProperties_NextBillingModelFields = ubx.FieldMap{
-		"BillingModel": ubx.FieldSpec{WireName: "billing_model"},
-		"CapabilitiesEnabled": ubx.FieldSpec{WireName: "capabilities_enabled"},
-		"TrialDaysRemaining": ubx.FieldSpec{WireName: "trial_days_remaining"},
-	}
+	"BillingModel":        ubx.FieldSpec{WireName: "billing_model"},
+	"CapabilitiesEnabled": ubx.FieldSpec{WireName: "capabilities_enabled"},
+	"TrialDaysRemaining":  ubx.FieldSpec{WireName: "trial_days_remaining"},
+}
 
 var HciCluster_Properties_BillingPropertiesFields = ubx.FieldMap{
-		"NextBillingModel": ubx.FieldSpec{
-			WireName: "next_billing_model",
-			Kind: "object",
-			Fields: HciCluster_Properties_BillingProperties_NextBillingModelFields,
-		},
-	}
+	"NextBillingModel": ubx.FieldSpec{
+		WireName: "next_billing_model",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_BillingProperties_NextBillingModelFields,
+	},
+}
 
 var HciCluster_Properties_DesiredPropertiesFields = ubx.FieldMap{
-		"DiagnosticLevel": ubx.FieldSpec{WireName: "diagnostic_level"},
-		"WindowsServerSubscription": ubx.FieldSpec{WireName: "windows_server_subscription"},
-	}
+	"DiagnosticLevel":           ubx.FieldSpec{WireName: "diagnostic_level"},
+	"WindowsServerSubscription": ubx.FieldSpec{WireName: "windows_server_subscription"},
+}
 
 var HciCluster_Properties_IsolatedVmAttestationConfigurationFields = ubx.FieldMap{
-		"AttestationResourceId": ubx.FieldSpec{WireName: "attestation_resource_id"},
-		"AttestationServiceEndpoint": ubx.FieldSpec{WireName: "attestation_service_endpoint"},
-		"RelyingPartyServiceEndpoint": ubx.FieldSpec{WireName: "relying_party_service_endpoint"},
-	}
+	"AttestationResourceId":       ubx.FieldSpec{WireName: "attestation_resource_id"},
+	"AttestationServiceEndpoint":  ubx.FieldSpec{WireName: "attestation_service_endpoint"},
+	"RelyingPartyServiceEndpoint": ubx.FieldSpec{WireName: "relying_party_service_endpoint"},
+}
 
 var HciCluster_Properties_LocalAvailabilityZonesFields = ubx.FieldMap{
-		"LocalAvailabilityZoneName": ubx.FieldSpec{WireName: "local_availability_zone_name"},
-		"Nodes": ubx.FieldSpec{WireName: "nodes"},
-	}
+	"LocalAvailabilityZoneName": ubx.FieldSpec{WireName: "local_availability_zone_name"},
+	"Nodes":                     ubx.FieldSpec{WireName: "nodes"},
+}
 
 var HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionErrorFields = ubx.FieldMap{
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-	}
+	"ErrorCode":    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
+}
 
 var HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetailsFields = ubx.FieldMap{
-		"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
-		"EndTimeCollected": ubx.FieldSpec{WireName: "end_time_collected"},
-		"LogCollectionError": ubx.FieldSpec{
-			WireName: "log_collection_error",
-			Kind: "object",
-			Fields: HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionErrorFields,
-		},
-		"LogCollectionJobType": ubx.FieldSpec{WireName: "log_collection_job_type"},
-		"LogCollectionStatus": ubx.FieldSpec{WireName: "log_collection_status"},
-		"LogEndTime": ubx.FieldSpec{WireName: "log_end_time"},
-		"LogSize": ubx.FieldSpec{WireName: "log_size"},
-		"LogStartTime": ubx.FieldSpec{WireName: "log_start_time"},
-		"TimeCollected": ubx.FieldSpec{WireName: "time_collected"},
-	}
+	"CorrelationId":    ubx.FieldSpec{WireName: "correlation_id"},
+	"EndTimeCollected": ubx.FieldSpec{WireName: "end_time_collected"},
+	"LogCollectionError": ubx.FieldSpec{
+		WireName: "log_collection_error",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetails_LogCollectionErrorFields,
+	},
+	"LogCollectionJobType": ubx.FieldSpec{WireName: "log_collection_job_type"},
+	"LogCollectionStatus":  ubx.FieldSpec{WireName: "log_collection_status"},
+	"LogEndTime":           ubx.FieldSpec{WireName: "log_end_time"},
+	"LogSize":              ubx.FieldSpec{WireName: "log_size"},
+	"LogStartTime":         ubx.FieldSpec{WireName: "log_start_time"},
+	"TimeCollected":        ubx.FieldSpec{WireName: "time_collected"},
+}
 
 var HciCluster_Properties_LogCollectionPropertiesFields = ubx.FieldMap{
-		"FromDate": ubx.FieldSpec{WireName: "from_date"},
-		"LastLogGenerated": ubx.FieldSpec{WireName: "last_log_generated"},
-		"LogCollectionSessionDetails": ubx.FieldSpec{
-			WireName: "log_collection_session_details",
-			Kind: "list",
-			Fields: HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetailsFields,
-		},
-		"ToDate": ubx.FieldSpec{WireName: "to_date"},
-	}
+	"FromDate":         ubx.FieldSpec{WireName: "from_date"},
+	"LastLogGenerated": ubx.FieldSpec{WireName: "last_log_generated"},
+	"LogCollectionSessionDetails": ubx.FieldSpec{
+		WireName: "log_collection_session_details",
+		Kind:     "list",
+		Fields:   HciCluster_Properties_LogCollectionProperties_LogCollectionSessionDetailsFields,
+	},
+	"ToDate": ubx.FieldSpec{WireName: "to_date"},
+}
 
 var HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettingsFields = ubx.FieldMap{
-		"ArcResourceId": ubx.FieldSpec{WireName: "arc_resource_id"},
-		"ConnectionErrorMessage": ubx.FieldSpec{WireName: "connection_error_message"},
-		"ConnectionStatus": ubx.FieldSpec{WireName: "connection_status"},
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"TranscriptLocation": ubx.FieldSpec{WireName: "transcript_location"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-	}
+	"ArcResourceId":          ubx.FieldSpec{WireName: "arc_resource_id"},
+	"ConnectionErrorMessage": ubx.FieldSpec{WireName: "connection_error_message"},
+	"ConnectionStatus":       ubx.FieldSpec{WireName: "connection_status"},
+	"CreatedAt":              ubx.FieldSpec{WireName: "created_at"},
+	"State":                  ubx.FieldSpec{WireName: "state"},
+	"TranscriptLocation":     ubx.FieldSpec{WireName: "transcript_location"},
+	"UpdatedAt":              ubx.FieldSpec{WireName: "updated_at"},
+}
 
 var HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetailsFields = ubx.FieldMap{
-		"AccessLevel": ubx.FieldSpec{WireName: "access_level"},
-		"Duration": ubx.FieldSpec{WireName: "duration"},
-		"NodeName": ubx.FieldSpec{WireName: "node_name"},
-		"SessionEndTime": ubx.FieldSpec{WireName: "session_end_time"},
-		"SessionStartTime": ubx.FieldSpec{WireName: "session_start_time"},
-		"TranscriptLocation": ubx.FieldSpec{WireName: "transcript_location"},
-	}
+	"AccessLevel":        ubx.FieldSpec{WireName: "access_level"},
+	"Duration":           ubx.FieldSpec{WireName: "duration"},
+	"NodeName":           ubx.FieldSpec{WireName: "node_name"},
+	"SessionEndTime":     ubx.FieldSpec{WireName: "session_end_time"},
+	"SessionStartTime":   ubx.FieldSpec{WireName: "session_start_time"},
+	"TranscriptLocation": ubx.FieldSpec{WireName: "transcript_location"},
+}
 
 var HciCluster_Properties_RemoteSupportPropertiesFields = ubx.FieldMap{
-		"AccessLevel": ubx.FieldSpec{WireName: "access_level"},
-		"ExpirationTimeStamp": ubx.FieldSpec{WireName: "expiration_time_stamp"},
-		"RemoteSupportNodeSettings": ubx.FieldSpec{
-			WireName: "remote_support_node_settings",
-			Kind: "list",
-			Fields: HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettingsFields,
-		},
-		"RemoteSupportProvisioningState": ubx.FieldSpec{WireName: "remote_support_provisioning_state"},
-		"RemoteSupportSessionDetails": ubx.FieldSpec{
-			WireName: "remote_support_session_details",
-			Kind: "list",
-			Fields: HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetailsFields,
-		},
-		"RemoteSupportType": ubx.FieldSpec{WireName: "remote_support_type"},
-	}
+	"AccessLevel":         ubx.FieldSpec{WireName: "access_level"},
+	"ExpirationTimeStamp": ubx.FieldSpec{WireName: "expiration_time_stamp"},
+	"RemoteSupportNodeSettings": ubx.FieldSpec{
+		WireName: "remote_support_node_settings",
+		Kind:     "list",
+		Fields:   HciCluster_Properties_RemoteSupportProperties_RemoteSupportNodeSettingsFields,
+	},
+	"RemoteSupportProvisioningState": ubx.FieldSpec{WireName: "remote_support_provisioning_state"},
+	"RemoteSupportSessionDetails": ubx.FieldSpec{
+		WireName: "remote_support_session_details",
+		Kind:     "list",
+		Fields:   HciCluster_Properties_RemoteSupportProperties_RemoteSupportSessionDetailsFields,
+	},
+	"RemoteSupportType": ubx.FieldSpec{WireName: "remote_support_type"},
+}
 
 var HciCluster_Properties_ReportedProperties_NodesFields = ubx.FieldMap{
-		"CoreCount": ubx.FieldSpec{WireName: "core_count"},
-		"EhcResourceId": ubx.FieldSpec{WireName: "ehc_resource_id"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"LastLicensingTimestamp": ubx.FieldSpec{WireName: "last_licensing_timestamp"},
-		"Manufacturer": ubx.FieldSpec{WireName: "manufacturer"},
-		"MemoryInGiB": ubx.FieldSpec{WireName: "memory_in_gi_b"},
-		"Model": ubx.FieldSpec{WireName: "model"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NodeType": ubx.FieldSpec{WireName: "node_type"},
-		"OemActivation": ubx.FieldSpec{WireName: "oem_activation"},
-		"OsDisplayVersion": ubx.FieldSpec{WireName: "os_display_version"},
-		"OsName": ubx.FieldSpec{WireName: "os_name"},
-		"OsVersion": ubx.FieldSpec{WireName: "os_version"},
-		"SerialNumber": ubx.FieldSpec{WireName: "serial_number"},
-		"WindowsServerSubscription": ubx.FieldSpec{WireName: "windows_server_subscription"},
-	}
+	"CoreCount":                 ubx.FieldSpec{WireName: "core_count"},
+	"EhcResourceId":             ubx.FieldSpec{WireName: "ehc_resource_id"},
+	"Id":                        ubx.FieldSpec{WireName: "id"},
+	"LastLicensingTimestamp":    ubx.FieldSpec{WireName: "last_licensing_timestamp"},
+	"Manufacturer":              ubx.FieldSpec{WireName: "manufacturer"},
+	"MemoryInGiB":               ubx.FieldSpec{WireName: "memory_in_gi_b"},
+	"Model":                     ubx.FieldSpec{WireName: "model"},
+	"Name":                      ubx.FieldSpec{WireName: "name"},
+	"NodeType":                  ubx.FieldSpec{WireName: "node_type"},
+	"OemActivation":             ubx.FieldSpec{WireName: "oem_activation"},
+	"OsDisplayVersion":          ubx.FieldSpec{WireName: "os_display_version"},
+	"OsName":                    ubx.FieldSpec{WireName: "os_name"},
+	"OsVersion":                 ubx.FieldSpec{WireName: "os_version"},
+	"SerialNumber":              ubx.FieldSpec{WireName: "serial_number"},
+	"WindowsServerSubscription": ubx.FieldSpec{WireName: "windows_server_subscription"},
+}
 
 var HciCluster_Properties_ReportedPropertiesFields = ubx.FieldMap{
-		"ClusterId": ubx.FieldSpec{WireName: "cluster_id"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"ClusterType": ubx.FieldSpec{WireName: "cluster_type"},
-		"ClusterVersion": ubx.FieldSpec{WireName: "cluster_version"},
-		"DiagnosticLevel": ubx.FieldSpec{WireName: "diagnostic_level"},
-		"HardwareClass": ubx.FieldSpec{WireName: "hardware_class"},
-		"ImdsAttestation": ubx.FieldSpec{WireName: "imds_attestation"},
-		"LastUpdated": ubx.FieldSpec{WireName: "last_updated"},
-		"Manufacturer": ubx.FieldSpec{WireName: "manufacturer"},
-		"MsiExpirationTimeStamp": ubx.FieldSpec{WireName: "msi_expiration_time_stamp"},
-		"Nodes": ubx.FieldSpec{
-			WireName: "nodes",
-			Kind: "list",
-			Fields: HciCluster_Properties_ReportedProperties_NodesFields,
-		},
-		"OemActivation": ubx.FieldSpec{WireName: "oem_activation"},
-		"SupportedCapabilities": ubx.FieldSpec{WireName: "supported_capabilities"},
-	}
+	"ClusterId":              ubx.FieldSpec{WireName: "cluster_id"},
+	"ClusterName":            ubx.FieldSpec{WireName: "cluster_name"},
+	"ClusterType":            ubx.FieldSpec{WireName: "cluster_type"},
+	"ClusterVersion":         ubx.FieldSpec{WireName: "cluster_version"},
+	"DiagnosticLevel":        ubx.FieldSpec{WireName: "diagnostic_level"},
+	"HardwareClass":          ubx.FieldSpec{WireName: "hardware_class"},
+	"ImdsAttestation":        ubx.FieldSpec{WireName: "imds_attestation"},
+	"LastUpdated":            ubx.FieldSpec{WireName: "last_updated"},
+	"Manufacturer":           ubx.FieldSpec{WireName: "manufacturer"},
+	"MsiExpirationTimeStamp": ubx.FieldSpec{WireName: "msi_expiration_time_stamp"},
+	"Nodes": ubx.FieldSpec{
+		WireName: "nodes",
+		Kind:     "list",
+		Fields:   HciCluster_Properties_ReportedProperties_NodesFields,
+	},
+	"OemActivation":         ubx.FieldSpec{WireName: "oem_activation"},
+	"SupportedCapabilities": ubx.FieldSpec{WireName: "supported_capabilities"},
+}
 
 var HciCluster_Properties_SecretsLocationsFields = ubx.FieldMap{
-		"SecretsLocation": ubx.FieldSpec{WireName: "secrets_location"},
-		"SecretsType": ubx.FieldSpec{WireName: "secrets_type"},
-	}
+	"SecretsLocation": ubx.FieldSpec{WireName: "secrets_location"},
+	"SecretsType":     ubx.FieldSpec{WireName: "secrets_type"},
+}
 
 var HciCluster_Properties_SoftwareAssurancePropertiesFields = ubx.FieldMap{
-		"LastUpdated": ubx.FieldSpec{WireName: "last_updated"},
-		"SoftwareAssuranceIntent": ubx.FieldSpec{WireName: "software_assurance_intent"},
-		"SoftwareAssuranceStatus": ubx.FieldSpec{WireName: "software_assurance_status"},
-	}
+	"LastUpdated":             ubx.FieldSpec{WireName: "last_updated"},
+	"SoftwareAssuranceIntent": ubx.FieldSpec{WireName: "software_assurance_intent"},
+	"SoftwareAssuranceStatus": ubx.FieldSpec{WireName: "software_assurance_status"},
+}
 
 var HciCluster_PropertiesFields = ubx.FieldMap{
-		"AadApplicationObjectId": ubx.FieldSpec{WireName: "aad_application_object_id"},
-		"AadClientId": ubx.FieldSpec{WireName: "aad_client_id"},
-		"AadServicePrincipalObjectId": ubx.FieldSpec{WireName: "aad_service_principal_object_id"},
-		"AadTenantId": ubx.FieldSpec{WireName: "aad_tenant_id"},
-		"BillingModel": ubx.FieldSpec{WireName: "billing_model"},
-		"BillingProperties": ubx.FieldSpec{
-			WireName: "billing_properties",
-			Kind: "object",
-			Fields: HciCluster_Properties_BillingPropertiesFields,
-		},
-		"CloudId": ubx.FieldSpec{WireName: "cloud_id"},
-		"CloudManagementEndpoint": ubx.FieldSpec{WireName: "cloud_management_endpoint"},
-		"ClusterPattern": ubx.FieldSpec{WireName: "cluster_pattern"},
-		"ConnectivityStatus": ubx.FieldSpec{WireName: "connectivity_status"},
-		"DesiredProperties": ubx.FieldSpec{
-			WireName: "desired_properties",
-			Kind: "object",
-			Fields: HciCluster_Properties_DesiredPropertiesFields,
-		},
-		"IdentityProvider": ubx.FieldSpec{WireName: "identity_provider"},
-		"IsManagementCluster": ubx.FieldSpec{WireName: "is_management_cluster"},
-		"IsolatedVmAttestationConfiguration": ubx.FieldSpec{
-			WireName: "isolated_vm_attestation_configuration",
-			Kind: "object",
-			Fields: HciCluster_Properties_IsolatedVmAttestationConfigurationFields,
-		},
-		"LastBillingTimestamp": ubx.FieldSpec{WireName: "last_billing_timestamp"},
-		"LastSyncTimestamp": ubx.FieldSpec{WireName: "last_sync_timestamp"},
-		"LocalAvailabilityZones": ubx.FieldSpec{
-			WireName: "local_availability_zones",
-			Kind: "list",
-			Fields: HciCluster_Properties_LocalAvailabilityZonesFields,
-		},
-		"LogCollectionProperties": ubx.FieldSpec{
-			WireName: "log_collection_properties",
-			Kind: "object",
-			Fields: HciCluster_Properties_LogCollectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RegistrationTimestamp": ubx.FieldSpec{WireName: "registration_timestamp"},
-		"RemoteSupportProperties": ubx.FieldSpec{
-			WireName: "remote_support_properties",
-			Kind: "object",
-			Fields: HciCluster_Properties_RemoteSupportPropertiesFields,
-		},
-		"ReportedProperties": ubx.FieldSpec{
-			WireName: "reported_properties",
-			Kind: "object",
-			Fields: HciCluster_Properties_ReportedPropertiesFields,
-		},
-		"ResourceProviderObjectId": ubx.FieldSpec{WireName: "resource_provider_object_id"},
-		"SecretsLocations": ubx.FieldSpec{
-			WireName: "secrets_locations",
-			Kind: "list",
-			Fields: HciCluster_Properties_SecretsLocationsFields,
-		},
-		"ServiceEndpoint": ubx.FieldSpec{WireName: "service_endpoint"},
-		"SoftwareAssuranceProperties": ubx.FieldSpec{
-			WireName: "software_assurance_properties",
-			Kind: "object",
-			Fields: HciCluster_Properties_SoftwareAssurancePropertiesFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-		"TrialDaysRemaining": ubx.FieldSpec{WireName: "trial_days_remaining"},
-	}
+	"AadApplicationObjectId":      ubx.FieldSpec{WireName: "aad_application_object_id"},
+	"AadClientId":                 ubx.FieldSpec{WireName: "aad_client_id"},
+	"AadServicePrincipalObjectId": ubx.FieldSpec{WireName: "aad_service_principal_object_id"},
+	"AadTenantId":                 ubx.FieldSpec{WireName: "aad_tenant_id"},
+	"BillingModel":                ubx.FieldSpec{WireName: "billing_model"},
+	"BillingProperties": ubx.FieldSpec{
+		WireName: "billing_properties",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_BillingPropertiesFields,
+	},
+	"CloudId":                 ubx.FieldSpec{WireName: "cloud_id"},
+	"CloudManagementEndpoint": ubx.FieldSpec{WireName: "cloud_management_endpoint"},
+	"ClusterPattern":          ubx.FieldSpec{WireName: "cluster_pattern"},
+	"ConnectivityStatus":      ubx.FieldSpec{WireName: "connectivity_status"},
+	"DesiredProperties": ubx.FieldSpec{
+		WireName: "desired_properties",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_DesiredPropertiesFields,
+	},
+	"IdentityProvider":    ubx.FieldSpec{WireName: "identity_provider"},
+	"IsManagementCluster": ubx.FieldSpec{WireName: "is_management_cluster"},
+	"IsolatedVmAttestationConfiguration": ubx.FieldSpec{
+		WireName: "isolated_vm_attestation_configuration",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_IsolatedVmAttestationConfigurationFields,
+	},
+	"LastBillingTimestamp": ubx.FieldSpec{WireName: "last_billing_timestamp"},
+	"LastSyncTimestamp":    ubx.FieldSpec{WireName: "last_sync_timestamp"},
+	"LocalAvailabilityZones": ubx.FieldSpec{
+		WireName: "local_availability_zones",
+		Kind:     "list",
+		Fields:   HciCluster_Properties_LocalAvailabilityZonesFields,
+	},
+	"LogCollectionProperties": ubx.FieldSpec{
+		WireName: "log_collection_properties",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_LogCollectionPropertiesFields,
+	},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"RegistrationTimestamp": ubx.FieldSpec{WireName: "registration_timestamp"},
+	"RemoteSupportProperties": ubx.FieldSpec{
+		WireName: "remote_support_properties",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_RemoteSupportPropertiesFields,
+	},
+	"ReportedProperties": ubx.FieldSpec{
+		WireName: "reported_properties",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_ReportedPropertiesFields,
+	},
+	"ResourceProviderObjectId": ubx.FieldSpec{WireName: "resource_provider_object_id"},
+	"SecretsLocations": ubx.FieldSpec{
+		WireName: "secrets_locations",
+		Kind:     "list",
+		Fields:   HciCluster_Properties_SecretsLocationsFields,
+	},
+	"ServiceEndpoint": ubx.FieldSpec{WireName: "service_endpoint"},
+	"SoftwareAssuranceProperties": ubx.FieldSpec{
+		WireName: "software_assurance_properties",
+		Kind:     "object",
+		Fields:   HciCluster_Properties_SoftwareAssurancePropertiesFields,
+	},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+	"StorageType":        ubx.FieldSpec{WireName: "storage_type"},
+	"TrialDaysRemaining": ubx.FieldSpec{WireName: "trial_days_remaining"},
+}
 
 type HciClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -489,14 +489,14 @@ var HciCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: HciCluster_IdentityFields,
+			Kind:     "object",
+			Fields:   HciCluster_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HciCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   HciCluster_PropertiesFields,
 		},
 	},
 }

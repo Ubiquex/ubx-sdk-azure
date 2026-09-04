@@ -33,33 +33,22 @@ type HealthcareApisIotFhirDestination_SystemData struct {
 }
 
 var HealthcareApisIotFhirDestination_Properties_FhirMappingFields = ubx.FieldMap{
-		"Content": ubx.FieldSpec{WireName: "content"},
-	}
+	"Content": ubx.FieldSpec{WireName: "content"},
+}
 
 var HealthcareApisIotFhirDestination_PropertiesFields = ubx.FieldMap{
-		"FhirMapping": ubx.FieldSpec{
-			WireName: "fhir_mapping",
-			Kind: "object",
-			Fields: HealthcareApisIotFhirDestination_Properties_FhirMappingFields,
-		},
-		"FhirServiceResourceId": ubx.FieldSpec{WireName: "fhir_service_resource_id"},
-		"ResourceIdentityResolutionType": ubx.FieldSpec{WireName: "resource_identity_resolution_type"},
-	}
-
-var HealthcareApisIotFhirDestination_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"FhirMapping": ubx.FieldSpec{
+		WireName: "fhir_mapping",
+		Kind:     "object",
+		Fields:   HealthcareApisIotFhirDestination_Properties_FhirMappingFields,
+	},
+	"FhirServiceResourceId":          ubx.FieldSpec{WireName: "fhir_service_resource_id"},
+	"ResourceIdentityResolutionType": ubx.FieldSpec{WireName: "resource_identity_resolution_type"},
+}
 
 type HealthcareApisIotFhirDestinationConfig struct {
 	// IoT Connector destination properties for an Azure FHIR service.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type HealthcareApisIotFhirDestinationAttrs struct {
@@ -74,13 +63,8 @@ var HealthcareApisIotFhirDestination = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HealthcareApisIotFhirDestination_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: HealthcareApisIotFhirDestination_SystemDataFields,
+			Kind:     "object",
+			Fields:   HealthcareApisIotFhirDestination_PropertiesFields,
 		},
 	},
 }

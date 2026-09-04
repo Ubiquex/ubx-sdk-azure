@@ -27,31 +27,29 @@ type VirtualwanVirtualWan_Properties struct {
 }
 
 var VirtualwanVirtualWan_Properties_VirtualHubsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualwanVirtualWan_PropertiesFields = ubx.FieldMap{
-		"AllowBranchToBranchTraffic": ubx.FieldSpec{WireName: "allow_branch_to_branch_traffic"},
-		"AllowVnetToVnetTraffic": ubx.FieldSpec{WireName: "allow_vnet_to_vnet_traffic"},
-		"DisableVpnEncryption": ubx.FieldSpec{WireName: "disable_vpn_encryption"},
-		"Office365LocalBreakoutCategory": ubx.FieldSpec{WireName: "office365_local_breakout_category"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"VirtualHubs": ubx.FieldSpec{
-			WireName: "virtual_hubs",
-			Kind: "list",
-			Fields: VirtualwanVirtualWan_Properties_VirtualHubsFields,
-		},
-		"VpnSites": ubx.FieldSpec{
-			WireName: "vpn_sites",
-			Kind: "list",
-			Fields: VirtualwanVirtualWan_Properties_VirtualHubsFields,
-		},
-	}
+	"AllowBranchToBranchTraffic":     ubx.FieldSpec{WireName: "allow_branch_to_branch_traffic"},
+	"AllowVnetToVnetTraffic":         ubx.FieldSpec{WireName: "allow_vnet_to_vnet_traffic"},
+	"DisableVpnEncryption":           ubx.FieldSpec{WireName: "disable_vpn_encryption"},
+	"Office365LocalBreakoutCategory": ubx.FieldSpec{WireName: "office365_local_breakout_category"},
+	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
+	"Type":                           ubx.FieldSpec{WireName: "type"},
+	"VirtualHubs": ubx.FieldSpec{
+		WireName: "virtual_hubs",
+		Kind:     "list",
+		Fields:   VirtualwanVirtualWan_Properties_VirtualHubsFields,
+	},
+	"VpnSites": ubx.FieldSpec{
+		WireName: "vpn_sites",
+		Kind:     "list",
+		Fields:   VirtualwanVirtualWan_Properties_VirtualHubsFields,
+	},
+}
 
 type VirtualwanVirtualWanConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Parameters for VirtualWAN.
 	Properties any
 }
@@ -66,11 +64,10 @@ type VirtualwanVirtualWanAttrs struct {
 var VirtualwanVirtualWan = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_virtual_wan",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVirtualWan_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanVirtualWan_PropertiesFields,
 		},
 	},
 }

@@ -4,21 +4,21 @@ package botservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConnectionSetting_Value_Properties_Parameters struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type ConnectionSetting_Value_Properties struct {
-	ClientId any
-	ClientSecret any
-	Id any
-	Name any
-	Parameters any
-	ProvisioningState any
-	Scopes any
+	ClientId                   any
+	ClientSecret               any
+	Id                         any
+	Name                       any
+	Parameters                 any
+	ProvisioningState          any
+	Scopes                     any
 	ServiceProviderDisplayName any
-	ServiceProviderId any
-	SettingId any
+	ServiceProviderId          any
+	SettingId                  any
 }
 
 type ConnectionSetting_Value struct {
@@ -26,19 +26,19 @@ type ConnectionSetting_Value struct {
 }
 
 type ConnectionSettingConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type ConnectionSettingAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of bot service connection setting resources.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// Gets the list of bot service connection settings and their properties.
 	Value any
 }
@@ -46,9 +46,9 @@ type ConnectionSettingAttrs struct {
 var ConnectionSetting = ubx.DataSourceBinding{
 	WireType: "azure_botservice_connection_setting",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -4,17 +4,17 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AdminRequestApprovalsResource_Properties_Plans_Requesters struct {
-	Date any
-	Justification any
-	SubscriptionId any
+	Date             any
+	Justification    any
+	SubscriptionId   any
 	SubscriptionName any
-	User any
+	User             any
 }
 
 type AdminRequestApprovalsResource_Properties_Plans struct {
 	PlanDisplayName any
-	PlanId any
-	Requesters any
+	PlanId          any
+	Requesters      any
 }
 
 type AdminRequestApprovalsResource_Properties struct {
@@ -41,39 +41,39 @@ type AdminRequestApprovalsResource_Properties struct {
 }
 
 var AdminRequestApprovalsResource_Properties_Plans_RequestersFields = ubx.FieldMap{
-		"Date": ubx.FieldSpec{WireName: "date"},
-		"Justification": ubx.FieldSpec{WireName: "justification"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"SubscriptionName": ubx.FieldSpec{WireName: "subscription_name"},
-		"User": ubx.FieldSpec{WireName: "user"},
-	}
+	"Date":             ubx.FieldSpec{WireName: "date"},
+	"Justification":    ubx.FieldSpec{WireName: "justification"},
+	"SubscriptionId":   ubx.FieldSpec{WireName: "subscription_id"},
+	"SubscriptionName": ubx.FieldSpec{WireName: "subscription_name"},
+	"User":             ubx.FieldSpec{WireName: "user"},
+}
 
 var AdminRequestApprovalsResource_Properties_PlansFields = ubx.FieldMap{
-		"PlanDisplayName": ubx.FieldSpec{WireName: "plan_display_name"},
-		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
-		"Requesters": ubx.FieldSpec{
-			WireName: "requesters",
-			Kind: "list",
-			Fields: AdminRequestApprovalsResource_Properties_Plans_RequestersFields,
-		},
-	}
+	"PlanDisplayName": ubx.FieldSpec{WireName: "plan_display_name"},
+	"PlanId":          ubx.FieldSpec{WireName: "plan_id"},
+	"Requesters": ubx.FieldSpec{
+		WireName: "requesters",
+		Kind:     "list",
+		Fields:   AdminRequestApprovalsResource_Properties_Plans_RequestersFields,
+	},
+}
 
 var AdminRequestApprovalsResource_PropertiesFields = ubx.FieldMap{
-		"AdminAction": ubx.FieldSpec{WireName: "admin_action"},
-		"Administrator": ubx.FieldSpec{WireName: "administrator"},
-		"ApprovedPlans": ubx.FieldSpec{WireName: "approved_plans"},
-		"CollectionIds": ubx.FieldSpec{WireName: "collection_ids"},
-		"Comment": ubx.FieldSpec{WireName: "comment"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Icon": ubx.FieldSpec{WireName: "icon"},
-		"OfferId": ubx.FieldSpec{WireName: "offer_id"},
-		"Plans": ubx.FieldSpec{
-			WireName: "plans",
-			Kind: "list",
-			Fields: AdminRequestApprovalsResource_Properties_PlansFields,
-		},
-		"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
-	}
+	"AdminAction":   ubx.FieldSpec{WireName: "admin_action"},
+	"Administrator": ubx.FieldSpec{WireName: "administrator"},
+	"ApprovedPlans": ubx.FieldSpec{WireName: "approved_plans"},
+	"CollectionIds": ubx.FieldSpec{WireName: "collection_ids"},
+	"Comment":       ubx.FieldSpec{WireName: "comment"},
+	"DisplayName":   ubx.FieldSpec{WireName: "display_name"},
+	"Icon":          ubx.FieldSpec{WireName: "icon"},
+	"OfferId":       ubx.FieldSpec{WireName: "offer_id"},
+	"Plans": ubx.FieldSpec{
+		WireName: "plans",
+		Kind:     "list",
+		Fields:   AdminRequestApprovalsResource_Properties_PlansFields,
+	},
+	"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
+}
 
 type AdminRequestApprovalsResourceConfig struct {
 	// Admin approval request resource properties
@@ -90,8 +90,8 @@ var AdminRequestApprovalsResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AdminRequestApprovalsResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   AdminRequestApprovalsResource_PropertiesFields,
 		},
 	},
 }

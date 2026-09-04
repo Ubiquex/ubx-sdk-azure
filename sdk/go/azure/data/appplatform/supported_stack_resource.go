@@ -13,21 +13,21 @@ type SupportedStackResource_Value struct {
 }
 
 type SupportedStackResourceConfig struct {
-	ApiVersion any
-	BuildServiceName any
+	ApiVersion        any
+	BuildServiceName  any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type SupportedStackResourceAttrs struct {
-	ApiVersion any
+	ApiVersion       any
 	BuildServiceName any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of supported stacks resources
 	Value any
 }
@@ -35,10 +35,10 @@ type SupportedStackResourceAttrs struct {
 var SupportedStackResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_supported_stack_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"BuildServiceName": ubx.FieldSpec{WireName: "build_service_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"BuildServiceName":  ubx.FieldSpec{WireName: "build_service_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

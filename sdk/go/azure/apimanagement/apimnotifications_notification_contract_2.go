@@ -29,6 +29,5 @@ type ApimnotificationsNotificationContract2Attrs struct {
 
 var ApimnotificationsNotificationContract2 = ubx.ResourceBinding{
 	WireType: "azure_apimanagement_apimnotifications_notification_contract_2",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

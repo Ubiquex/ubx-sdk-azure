@@ -9,14 +9,14 @@ type NetworkgatewayVirtualNetworkGateway_Value_ExtendedLocation struct {
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -30,17 +30,17 @@ type NetworkgatewayVirtualNetworkGateway_Value_Properties_AutoScaleConfiguration
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_BgpSettings_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses any
+	CustomBgpIpAddresses  any
 	DefaultBgpIpAddresses any
-	IpconfigurationId any
-	TunnelIpAddresses any
+	IpconfigurationId     any
+	TunnelIpAddresses     any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_BgpSettings struct {
-	Asn any
-	BgpPeeringAddress any
+	Asn                 any
+	BgpPeeringAddress   any
 	BgpPeeringAddresses any
-	PeerWeight any
+	PeerWeight          any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_CustomRoutes_IpamPoolPrefixAllocations_Pool struct {
@@ -49,183 +49,183 @@ type NetworkgatewayVirtualNetworkGateway_Value_Properties_CustomRoutes_IpamPoolP
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_CustomRoutes_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_CustomRoutes struct {
-	AddressPrefixes any
+	AddressPrefixes           any
 	IpamPoolPrefixAllocations any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_NatRules_Properties_ExternalMappings struct {
 	AddressSpace any
-	PortRange any
+	PortRange    any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_NatRules_Properties struct {
-	ExternalMappings any
-	InternalMappings any
+	ExternalMappings  any
+	InternalMappings  any
 	IpConfigurationId any
-	Mode any
+	Mode              any
 	ProvisioningState any
-	Type any
+	Type              any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_NatRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VirtualNetworkGatewayMigrationStatus struct {
 	ErrorMessage any
-	Phase any
-	State any
+	Phase        any
+	State        any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembers struct {
-	AttributeType any
+	AttributeType  any
 	AttributeValue any
-	Name any
+	Name           any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VirtualNetworkGatewayPolicyGroups_Properties struct {
-	IsDefault any
-	PolicyMembers any
-	Priority any
-	ProvisioningState any
+	IsDefault                         any
+	PolicyMembers                     any
+	Priority                          any
+	ProvisioningState                 any
 	VngClientConnectionConfigurations any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VirtualNetworkGatewayPolicyGroups struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration_RadiusServers struct {
 	RadiusServerAddress any
-	RadiusServerScore any
-	RadiusServerSecret any
+	RadiusServerScore   any
+	RadiusServerSecret  any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_Properties struct {
-	ProvisioningState any
+	ProvisioningState                 any
 	VirtualNetworkGatewayPolicyGroups any
-	VpnClientAddressPool any
+	VpnClientAddressPool              any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration_VngClientConnectionConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration_VpnClientIpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_Properties struct {
 	ProvisioningState any
-	Thumbprint any
+	Thumbprint        any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration_VpnClientRevokedCertificates struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration_VpnClientRootCertificates_Properties struct {
 	ProvisioningState any
-	PublicCertData any
+	PublicCertData    any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration_VpnClientRootCertificates struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties_VpnClientConfiguration struct {
-	AadAudience any
-	AadIssuer any
-	AadTenant any
-	RadiusServerAddress any
-	RadiusServerSecret any
-	RadiusServers any
+	AadAudience                       any
+	AadIssuer                         any
+	AadTenant                         any
+	RadiusServerAddress               any
+	RadiusServerSecret                any
+	RadiusServers                     any
 	VngClientConnectionConfigurations any
-	VpnAuthenticationTypes any
-	VpnClientAddressPool any
-	VpnClientIpsecPolicies any
-	VpnClientProtocols any
-	VpnClientRevokedCertificates any
-	VpnClientRootCertificates any
+	VpnAuthenticationTypes            any
+	VpnClientAddressPool              any
+	VpnClientIpsecPolicies            any
+	VpnClientProtocols                any
+	VpnClientRevokedCertificates      any
+	VpnClientRootCertificates         any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value_Properties struct {
-	ActiveActive any
-	AdminState any
-	AllowRemoteVnetTraffic any
-	AllowVirtualWanTraffic any
-	AutoScaleConfiguration any
-	BgpSettings any
-	CustomRoutes any
-	DisableIpsecReplayProtection any
-	EnableBgp any
-	EnableBgpRouteTranslationForNat any
-	EnableDnsForwarding any
-	EnableHighBandwidthVpnGateway any
-	EnablePrivateIpAddress any
-	GatewayDefaultSite any
-	GatewayType any
-	InboundDnsForwardingEndpoint any
-	IpConfigurations any
-	NatRules any
-	ProvisioningState any
-	ResiliencyModel any
-	ResourceGuid any
-	Sku any
-	VNetExtendedLocationResourceId any
+	ActiveActive                         any
+	AdminState                           any
+	AllowRemoteVnetTraffic               any
+	AllowVirtualWanTraffic               any
+	AutoScaleConfiguration               any
+	BgpSettings                          any
+	CustomRoutes                         any
+	DisableIpsecReplayProtection         any
+	EnableBgp                            any
+	EnableBgpRouteTranslationForNat      any
+	EnableDnsForwarding                  any
+	EnableHighBandwidthVpnGateway        any
+	EnablePrivateIpAddress               any
+	GatewayDefaultSite                   any
+	GatewayType                          any
+	InboundDnsForwardingEndpoint         any
+	IpConfigurations                     any
+	NatRules                             any
+	ProvisioningState                    any
+	ResiliencyModel                      any
+	ResourceGuid                         any
+	Sku                                  any
+	VNetExtendedLocationResourceId       any
 	VirtualNetworkGatewayMigrationStatus any
-	VirtualNetworkGatewayPolicyGroups any
-	VpnClientConfiguration any
-	VpnGatewayGeneration any
-	VpnType any
+	VirtualNetworkGatewayPolicyGroups    any
+	VpnClientConfiguration               any
+	VpnGatewayGeneration                 any
+	VpnType                              any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Value struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Identity any
-	Properties any
+	Identity         any
+	Properties       any
 }
 
 type NetworkgatewayVirtualNetworkGatewayConfig struct {
@@ -240,6 +240,5 @@ type NetworkgatewayVirtualNetworkGatewayAttrs struct {
 
 var NetworkgatewayVirtualNetworkGateway = ubx.DataSourceBinding{
 	WireType: "azure_network_networkgateway_virtual_network_gateway",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

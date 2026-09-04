@@ -4,31 +4,31 @@ package datadog
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AgreementResource_Value_Properties struct {
-	Accepted any
-	LicenseTextLink any
-	Plan any
+	Accepted          any
+	LicenseTextLink   any
+	Plan              any
 	PrivacyPolicyLink any
-	Product any
-	Publisher any
-	RetrieveDatetime any
-	Signature any
+	Product           any
+	Publisher         any
+	RetrieveDatetime  any
+	Signature         any
 }
 
 type AgreementResource_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type AgreementResource_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type AgreementResourceConfig struct {
@@ -43,6 +43,5 @@ type AgreementResourceAttrs struct {
 
 var AgreementResource = ubx.DataSourceBinding{
 	WireType: "azure_datadog_agreement_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

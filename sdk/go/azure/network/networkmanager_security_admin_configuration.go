@@ -32,27 +32,16 @@ type NetworkmanagerSecurityAdminConfiguration_SystemData struct {
 }
 
 var NetworkmanagerSecurityAdminConfiguration_PropertiesFields = ubx.FieldMap{
-		"ApplyOnNetworkIntentPolicyBasedServices": ubx.FieldSpec{WireName: "apply_on_network_intent_policy_based_services"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"NetworkGroupAddressSpaceAggregationOption": ubx.FieldSpec{WireName: "network_group_address_space_aggregation_option"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
-
-var NetworkmanagerSecurityAdminConfiguration_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ApplyOnNetworkIntentPolicyBasedServices": ubx.FieldSpec{WireName: "apply_on_network_intent_policy_based_services"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"NetworkGroupAddressSpaceAggregationOption": ubx.FieldSpec{WireName: "network_group_address_space_aggregation_option"},
+	"ProvisioningState":                         ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":                              ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkmanagerSecurityAdminConfigurationConfig struct {
 	// Defines the security admin configuration properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerSecurityAdminConfigurationAttrs struct {
@@ -67,13 +56,8 @@ var NetworkmanagerSecurityAdminConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerSecurityAdminConfiguration_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerSecurityAdminConfiguration_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerSecurityAdminConfiguration_PropertiesFields,
 		},
 	},
 }

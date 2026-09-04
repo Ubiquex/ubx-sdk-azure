@@ -5,37 +5,37 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiReservationSummary_Value_Properties struct {
 	AvgUtilizationPercentage any
-	Kind any
+	Kind                     any
 	MaxUtilizationPercentage any
 	MinUtilizationPercentage any
-	PurchasedQuantity any
-	RemainingQuantity any
-	ReservationId any
-	ReservationOrderId any
-	ReservedHours any
-	SkuName any
-	TotalReservedQuantity any
-	UsageDate any
-	UsedHours any
-	UsedQuantity any
-	UtilizedPercentage any
+	PurchasedQuantity        any
+	RemainingQuantity        any
+	ReservationId            any
+	ReservationOrderId       any
+	ReservedHours            any
+	SkuName                  any
+	TotalReservedQuantity    any
+	UsageDate                any
+	UsedHours                any
+	UsedQuantity             any
+	UtilizedPercentage       any
 }
 
 type OpenapiReservationSummary_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiReservationSummaryConfig struct {
-	Grain any
+	Grain              any
 	ReservationOrderId any
 }
 
 type OpenapiReservationSummaryAttrs struct {
 	Grain any
 	// The link (url) to the next page of results.
-	NextLink any
+	NextLink           any
 	ReservationOrderId any
 	// The list of reservation summaries.
 	Value any
@@ -44,7 +44,7 @@ type OpenapiReservationSummaryAttrs struct {
 var OpenapiReservationSummary = ubx.DataSourceBinding{
 	WireType: "azure_consumption_openapi_reservation_summary",
 	Fields: ubx.FieldMap{
-		"Grain": ubx.FieldSpec{WireName: "grain"},
+		"Grain":              ubx.FieldSpec{WireName: "grain"},
 		"ReservationOrderId": ubx.FieldSpec{WireName: "reservation_order_id"},
 	},
 }

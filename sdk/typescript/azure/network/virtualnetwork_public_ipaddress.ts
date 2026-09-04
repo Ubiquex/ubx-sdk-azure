@@ -11954,8 +11954,6 @@ const VirtualnetworkPublicIpaddress_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkPublicIpaddressConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkPublicIpaddress_ExtendedLocation | Computed<VirtualnetworkPublicIpaddress_ExtendedLocation>;
   /** Public IP address properties. */
@@ -11982,7 +11980,6 @@ export interface VirtualnetworkPublicIpaddressAttrs {
 export const VirtualnetworkPublicIpaddress: ResourceBinding<VirtualnetworkPublicIpaddressConfig, VirtualnetworkPublicIpaddressAttrs> = {
   wireType: "azure_network_virtualnetwork_public_ipaddress",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

@@ -9,25 +9,25 @@ type GatewayRouteConfigResource_Value_Properties_OpenApi struct {
 
 type GatewayRouteConfigResource_Value_Properties_Routes struct {
 	Description any
-	Filters any
-	Order any
-	Predicates any
-	SsoEnabled any
-	Tags any
-	Title any
-	TokenRelay any
-	Uri any
+	Filters     any
+	Order       any
+	Predicates  any
+	SsoEnabled  any
+	Tags        any
+	Title       any
+	TokenRelay  any
+	Uri         any
 }
 
 type GatewayRouteConfigResource_Value_Properties struct {
-	AppResourceId any
-	Filters any
-	OpenApi any
-	Predicates any
-	Protocol any
+	AppResourceId     any
+	Filters           any
+	OpenApi           any
+	Predicates        any
+	Protocol          any
 	ProvisioningState any
-	Routes any
-	SsoEnabled any
+	Routes            any
+	SsoEnabled        any
 }
 
 type GatewayRouteConfigResource_Value struct {
@@ -35,21 +35,21 @@ type GatewayRouteConfigResource_Value struct {
 }
 
 type GatewayRouteConfigResourceConfig struct {
-	ApiVersion any
-	GatewayName any
+	ApiVersion        any
+	GatewayName       any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type GatewayRouteConfigResourceAttrs struct {
-	ApiVersion any
+	ApiVersion  any
 	GatewayName any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of Spring Cloud Gateway route config resources
 	Value any
 }
@@ -57,10 +57,10 @@ type GatewayRouteConfigResourceAttrs struct {
 var GatewayRouteConfigResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_gateway_route_config_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"GatewayName":       ubx.FieldSpec{WireName: "gateway_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

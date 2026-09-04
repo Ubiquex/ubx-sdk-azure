@@ -14,13 +14,13 @@ type OpenapiCloudVmCluster_Properties_DataCollectionOptions struct {
 
 type OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetails struct {
 	FileSystemSizeGb any
-	MountPoint any
+	MountPoint       any
 }
 
 type OpenapiCloudVmCluster_Properties_IormConfigCache_DbPlans struct {
-	DbName any
+	DbName          any
 	FlashCacheLimit any
-	Share any
+	Share           any
 }
 
 type OpenapiCloudVmCluster_Properties_IormConfigCache struct {
@@ -41,7 +41,7 @@ type OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRange struct {
 
 type OpenapiCloudVmCluster_Properties_NsgCidrs struct {
 	DestinationPortRange any
-	Source any
+	Source               any
 }
 
 type OpenapiCloudVmCluster_Properties struct {
@@ -152,117 +152,117 @@ type OpenapiCloudVmCluster_Properties struct {
 }
 
 var OpenapiCloudVmCluster_Properties_DataCollectionOptionsFields = ubx.FieldMap{
-		"IsDiagnosticsEventsEnabled": ubx.FieldSpec{WireName: "is_diagnostics_events_enabled"},
-		"IsHealthMonitoringEnabled": ubx.FieldSpec{WireName: "is_health_monitoring_enabled"},
-		"IsIncidentLogsEnabled": ubx.FieldSpec{WireName: "is_incident_logs_enabled"},
-	}
+	"IsDiagnosticsEventsEnabled": ubx.FieldSpec{WireName: "is_diagnostics_events_enabled"},
+	"IsHealthMonitoringEnabled":  ubx.FieldSpec{WireName: "is_health_monitoring_enabled"},
+	"IsIncidentLogsEnabled":      ubx.FieldSpec{WireName: "is_incident_logs_enabled"},
+}
 
 var OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetailsFields = ubx.FieldMap{
-		"FileSystemSizeGb": ubx.FieldSpec{WireName: "file_system_size_gb"},
-		"MountPoint": ubx.FieldSpec{WireName: "mount_point"},
-	}
+	"FileSystemSizeGb": ubx.FieldSpec{WireName: "file_system_size_gb"},
+	"MountPoint":       ubx.FieldSpec{WireName: "mount_point"},
+}
 
 var OpenapiCloudVmCluster_Properties_IormConfigCache_DbPlansFields = ubx.FieldMap{
-		"DbName": ubx.FieldSpec{WireName: "db_name"},
-		"FlashCacheLimit": ubx.FieldSpec{WireName: "flash_cache_limit"},
-		"Share": ubx.FieldSpec{WireName: "share"},
-	}
+	"DbName":          ubx.FieldSpec{WireName: "db_name"},
+	"FlashCacheLimit": ubx.FieldSpec{WireName: "flash_cache_limit"},
+	"Share":           ubx.FieldSpec{WireName: "share"},
+}
 
 var OpenapiCloudVmCluster_Properties_IormConfigCacheFields = ubx.FieldMap{
-		"DbPlans": ubx.FieldSpec{
-			WireName: "db_plans",
-			Kind: "list",
-			Fields: OpenapiCloudVmCluster_Properties_IormConfigCache_DbPlansFields,
-		},
-		"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
-		"LifecycleState": ubx.FieldSpec{WireName: "lifecycle_state"},
-		"Objective": ubx.FieldSpec{WireName: "objective"},
-	}
+	"DbPlans": ubx.FieldSpec{
+		WireName: "db_plans",
+		Kind:     "list",
+		Fields:   OpenapiCloudVmCluster_Properties_IormConfigCache_DbPlansFields,
+	},
+	"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
+	"LifecycleState":   ubx.FieldSpec{WireName: "lifecycle_state"},
+	"Objective":        ubx.FieldSpec{WireName: "objective"},
+}
 
 var OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRangeFields = ubx.FieldMap{
-		"Max": ubx.FieldSpec{WireName: "max"},
-		"Min": ubx.FieldSpec{WireName: "min"},
-	}
+	"Max": ubx.FieldSpec{WireName: "max"},
+	"Min": ubx.FieldSpec{WireName: "min"},
+}
 
 var OpenapiCloudVmCluster_Properties_NsgCidrsFields = ubx.FieldMap{
-		"DestinationPortRange": ubx.FieldSpec{
-			WireName: "destination_port_range",
-			Kind: "object",
-			Fields: OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRangeFields,
-		},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"DestinationPortRange": ubx.FieldSpec{
+		WireName: "destination_port_range",
+		Kind:     "object",
+		Fields:   OpenapiCloudVmCluster_Properties_NsgCidrs_DestinationPortRangeFields,
+	},
+	"Source": ubx.FieldSpec{WireName: "source"},
+}
 
 var OpenapiCloudVmCluster_PropertiesFields = ubx.FieldMap{
-		"BackupSubnetCidr": ubx.FieldSpec{WireName: "backup_subnet_cidr"},
-		"CloudExadataInfrastructureId": ubx.FieldSpec{WireName: "cloud_exadata_infrastructure_id"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"CompartmentId": ubx.FieldSpec{WireName: "compartment_id"},
-		"ComputeModel": ubx.FieldSpec{WireName: "compute_model"},
-		"ComputeNodes": ubx.FieldSpec{WireName: "compute_nodes"},
-		"CpuCoreCount": ubx.FieldSpec{WireName: "cpu_core_count"},
-		"DataCollectionOptions": ubx.FieldSpec{
-			WireName: "data_collection_options",
-			Kind: "object",
-			Fields: OpenapiCloudVmCluster_Properties_DataCollectionOptionsFields,
-		},
-		"DataStoragePercentage": ubx.FieldSpec{WireName: "data_storage_percentage"},
-		"DataStorageSizeInTbs": ubx.FieldSpec{WireName: "data_storage_size_in_tbs"},
-		"DbNodeStorageSizeInGbs": ubx.FieldSpec{WireName: "db_node_storage_size_in_gbs"},
-		"DbServers": ubx.FieldSpec{WireName: "db_servers"},
-		"DiskRedundancy": ubx.FieldSpec{WireName: "disk_redundancy"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"ExascaleDbStorageVaultId": ubx.FieldSpec{WireName: "exascale_db_storage_vault_id"},
-		"FileSystemConfigurationDetails": ubx.FieldSpec{
-			WireName: "file_system_configuration_details",
-			Kind: "list",
-			Fields: OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetailsFields,
-		},
-		"GiVersion": ubx.FieldSpec{WireName: "gi_version"},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"IormConfigCache": ubx.FieldSpec{
-			WireName: "iorm_config_cache",
-			Kind: "object",
-			Fields: OpenapiCloudVmCluster_Properties_IormConfigCacheFields,
-		},
-		"IsLocalBackupEnabled": ubx.FieldSpec{WireName: "is_local_backup_enabled"},
-		"IsSparseDiskgroupEnabled": ubx.FieldSpec{WireName: "is_sparse_diskgroup_enabled"},
-		"LastUpdateHistoryEntryId": ubx.FieldSpec{WireName: "last_update_history_entry_id"},
-		"LicenseModel": ubx.FieldSpec{WireName: "license_model"},
-		"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
-		"LifecycleState": ubx.FieldSpec{WireName: "lifecycle_state"},
-		"ListenerPort": ubx.FieldSpec{WireName: "listener_port"},
-		"MemorySizeInGbs": ubx.FieldSpec{WireName: "memory_size_in_gbs"},
-		"NodeCount": ubx.FieldSpec{WireName: "node_count"},
-		"NsgCidrs": ubx.FieldSpec{
-			WireName: "nsg_cidrs",
-			Kind: "list",
-			Fields: OpenapiCloudVmCluster_Properties_NsgCidrsFields,
-		},
-		"NsgUrl": ubx.FieldSpec{WireName: "nsg_url"},
-		"OciUrl": ubx.FieldSpec{WireName: "oci_url"},
-		"Ocid": ubx.FieldSpec{WireName: "ocid"},
-		"OcpuCount": ubx.FieldSpec{WireName: "ocpu_count"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ScanDnsName": ubx.FieldSpec{WireName: "scan_dns_name"},
-		"ScanDnsRecordId": ubx.FieldSpec{WireName: "scan_dns_record_id"},
-		"ScanIpIds": ubx.FieldSpec{WireName: "scan_ip_ids"},
-		"ScanListenerPortTcp": ubx.FieldSpec{WireName: "scan_listener_port_tcp"},
-		"ScanListenerPortTcpSsl": ubx.FieldSpec{WireName: "scan_listener_port_tcp_ssl"},
-		"Shape": ubx.FieldSpec{WireName: "shape"},
-		"SshPublicKeys": ubx.FieldSpec{WireName: "ssh_public_keys"},
-		"StorageManagementType": ubx.FieldSpec{WireName: "storage_management_type"},
-		"StorageSizeInGbs": ubx.FieldSpec{WireName: "storage_size_in_gbs"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"SubnetOcid": ubx.FieldSpec{WireName: "subnet_ocid"},
-		"SystemVersion": ubx.FieldSpec{WireName: "system_version"},
-		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-		"VipIds": ubx.FieldSpec{WireName: "vip_ids"},
-		"VnetId": ubx.FieldSpec{WireName: "vnet_id"},
-		"ZoneId": ubx.FieldSpec{WireName: "zone_id"},
-	}
+	"BackupSubnetCidr":             ubx.FieldSpec{WireName: "backup_subnet_cidr"},
+	"CloudExadataInfrastructureId": ubx.FieldSpec{WireName: "cloud_exadata_infrastructure_id"},
+	"ClusterName":                  ubx.FieldSpec{WireName: "cluster_name"},
+	"CompartmentId":                ubx.FieldSpec{WireName: "compartment_id"},
+	"ComputeModel":                 ubx.FieldSpec{WireName: "compute_model"},
+	"ComputeNodes":                 ubx.FieldSpec{WireName: "compute_nodes"},
+	"CpuCoreCount":                 ubx.FieldSpec{WireName: "cpu_core_count"},
+	"DataCollectionOptions": ubx.FieldSpec{
+		WireName: "data_collection_options",
+		Kind:     "object",
+		Fields:   OpenapiCloudVmCluster_Properties_DataCollectionOptionsFields,
+	},
+	"DataStoragePercentage":    ubx.FieldSpec{WireName: "data_storage_percentage"},
+	"DataStorageSizeInTbs":     ubx.FieldSpec{WireName: "data_storage_size_in_tbs"},
+	"DbNodeStorageSizeInGbs":   ubx.FieldSpec{WireName: "db_node_storage_size_in_gbs"},
+	"DbServers":                ubx.FieldSpec{WireName: "db_servers"},
+	"DiskRedundancy":           ubx.FieldSpec{WireName: "disk_redundancy"},
+	"DisplayName":              ubx.FieldSpec{WireName: "display_name"},
+	"Domain":                   ubx.FieldSpec{WireName: "domain"},
+	"ExascaleDbStorageVaultId": ubx.FieldSpec{WireName: "exascale_db_storage_vault_id"},
+	"FileSystemConfigurationDetails": ubx.FieldSpec{
+		WireName: "file_system_configuration_details",
+		Kind:     "list",
+		Fields:   OpenapiCloudVmCluster_Properties_FileSystemConfigurationDetailsFields,
+	},
+	"GiVersion": ubx.FieldSpec{WireName: "gi_version"},
+	"Hostname":  ubx.FieldSpec{WireName: "hostname"},
+	"IormConfigCache": ubx.FieldSpec{
+		WireName: "iorm_config_cache",
+		Kind:     "object",
+		Fields:   OpenapiCloudVmCluster_Properties_IormConfigCacheFields,
+	},
+	"IsLocalBackupEnabled":     ubx.FieldSpec{WireName: "is_local_backup_enabled"},
+	"IsSparseDiskgroupEnabled": ubx.FieldSpec{WireName: "is_sparse_diskgroup_enabled"},
+	"LastUpdateHistoryEntryId": ubx.FieldSpec{WireName: "last_update_history_entry_id"},
+	"LicenseModel":             ubx.FieldSpec{WireName: "license_model"},
+	"LifecycleDetails":         ubx.FieldSpec{WireName: "lifecycle_details"},
+	"LifecycleState":           ubx.FieldSpec{WireName: "lifecycle_state"},
+	"ListenerPort":             ubx.FieldSpec{WireName: "listener_port"},
+	"MemorySizeInGbs":          ubx.FieldSpec{WireName: "memory_size_in_gbs"},
+	"NodeCount":                ubx.FieldSpec{WireName: "node_count"},
+	"NsgCidrs": ubx.FieldSpec{
+		WireName: "nsg_cidrs",
+		Kind:     "list",
+		Fields:   OpenapiCloudVmCluster_Properties_NsgCidrsFields,
+	},
+	"NsgUrl":                 ubx.FieldSpec{WireName: "nsg_url"},
+	"OciUrl":                 ubx.FieldSpec{WireName: "oci_url"},
+	"Ocid":                   ubx.FieldSpec{WireName: "ocid"},
+	"OcpuCount":              ubx.FieldSpec{WireName: "ocpu_count"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"ScanDnsName":            ubx.FieldSpec{WireName: "scan_dns_name"},
+	"ScanDnsRecordId":        ubx.FieldSpec{WireName: "scan_dns_record_id"},
+	"ScanIpIds":              ubx.FieldSpec{WireName: "scan_ip_ids"},
+	"ScanListenerPortTcp":    ubx.FieldSpec{WireName: "scan_listener_port_tcp"},
+	"ScanListenerPortTcpSsl": ubx.FieldSpec{WireName: "scan_listener_port_tcp_ssl"},
+	"Shape":                  ubx.FieldSpec{WireName: "shape"},
+	"SshPublicKeys":          ubx.FieldSpec{WireName: "ssh_public_keys"},
+	"StorageManagementType":  ubx.FieldSpec{WireName: "storage_management_type"},
+	"StorageSizeInGbs":       ubx.FieldSpec{WireName: "storage_size_in_gbs"},
+	"SubnetId":               ubx.FieldSpec{WireName: "subnet_id"},
+	"SubnetOcid":             ubx.FieldSpec{WireName: "subnet_ocid"},
+	"SystemVersion":          ubx.FieldSpec{WireName: "system_version"},
+	"TimeCreated":            ubx.FieldSpec{WireName: "time_created"},
+	"TimeZone":               ubx.FieldSpec{WireName: "time_zone"},
+	"VipIds":                 ubx.FieldSpec{WireName: "vip_ids"},
+	"VnetId":                 ubx.FieldSpec{WireName: "vnet_id"},
+	"ZoneId":                 ubx.FieldSpec{WireName: "zone_id"},
+}
 
 type OpenapiCloudVmClusterConfig struct {
 	// CloudVmCluster resource model
@@ -283,8 +283,8 @@ var OpenapiCloudVmCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCloudVmCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCloudVmCluster_PropertiesFields,
 		},
 		"Cloudvmclustername": ubx.FieldSpec{WireName: "cloudvmclustername"},
 	},

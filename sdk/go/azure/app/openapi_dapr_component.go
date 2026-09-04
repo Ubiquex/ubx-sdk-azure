@@ -4,16 +4,16 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDaprComponent_Properties_Metadata struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiDaprComponent_Properties_Secrets struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
-	Name any
-	Value any
+	Name        any
+	Value       any
 }
 
 type OpenapiDaprComponent_Properties struct {
@@ -40,38 +40,38 @@ type OpenapiDaprComponent_Properties struct {
 }
 
 var OpenapiDaprComponent_Properties_MetadataFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiDaprComponent_Properties_SecretsFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+	"Value":       ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiDaprComponent_PropertiesFields = ubx.FieldMap{
-		"ComponentType": ubx.FieldSpec{WireName: "component_type"},
-		"DeploymentErrors": ubx.FieldSpec{WireName: "deployment_errors"},
-		"IgnoreErrors": ubx.FieldSpec{WireName: "ignore_errors"},
-		"InitTimeout": ubx.FieldSpec{WireName: "init_timeout"},
-		"Metadata": ubx.FieldSpec{
-			WireName: "metadata",
-			Kind: "list",
-			Fields: OpenapiDaprComponent_Properties_MetadataFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Scopes": ubx.FieldSpec{WireName: "scopes"},
-		"SecretStoreComponent": ubx.FieldSpec{WireName: "secret_store_component"},
-		"Secrets": ubx.FieldSpec{
-			WireName: "secrets",
-			Kind: "list",
-			Fields: OpenapiDaprComponent_Properties_SecretsFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ComponentType":    ubx.FieldSpec{WireName: "component_type"},
+	"DeploymentErrors": ubx.FieldSpec{WireName: "deployment_errors"},
+	"IgnoreErrors":     ubx.FieldSpec{WireName: "ignore_errors"},
+	"InitTimeout":      ubx.FieldSpec{WireName: "init_timeout"},
+	"Metadata": ubx.FieldSpec{
+		WireName: "metadata",
+		Kind:     "list",
+		Fields:   OpenapiDaprComponent_Properties_MetadataFields,
+	},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"Scopes":               ubx.FieldSpec{WireName: "scopes"},
+	"SecretStoreComponent": ubx.FieldSpec{WireName: "secret_store_component"},
+	"Secrets": ubx.FieldSpec{
+		WireName: "secrets",
+		Kind:     "list",
+		Fields:   OpenapiDaprComponent_Properties_SecretsFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiDaprComponentConfig struct {
 	// Dapr Component resource specific properties
@@ -88,8 +88,8 @@ var OpenapiDaprComponent = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDaprComponent_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDaprComponent_PropertiesFields,
 		},
 	},
 }

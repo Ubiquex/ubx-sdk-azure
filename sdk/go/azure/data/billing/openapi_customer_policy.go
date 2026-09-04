@@ -4,10 +4,10 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCustomerPolicy_Properties_Policies struct {
-	Name any
+	Name       any
 	PolicyType any
-	Scope any
-	Value any
+	Scope      any
+	Value      any
 }
 
 type OpenapiCustomerPolicy_Properties struct {
@@ -21,12 +21,12 @@ type OpenapiCustomerPolicy_Properties struct {
 
 type OpenapiCustomerPolicyConfig struct {
 	BillingAccountName any
-	CustomerName any
+	CustomerName       any
 }
 
 type OpenapiCustomerPolicyAttrs struct {
 	BillingAccountName any
-	CustomerName any
+	CustomerName       any
 	// A policy at customer scope.
 	Properties any
 	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
@@ -37,6 +37,6 @@ var OpenapiCustomerPolicy = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_customer_policy",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"CustomerName": ubx.FieldSpec{WireName: "customer_name"},
+		"CustomerName":       ubx.FieldSpec{WireName: "customer_name"},
 	},
 }

@@ -4,7 +4,7 @@ package newrelic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NewRelicMonitorResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -116,108 +116,108 @@ type NewRelicMonitorResource_Properties struct {
 }
 
 var NewRelicMonitorResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var NewRelicMonitorResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: NewRelicMonitorResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   NewRelicMonitorResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var NewRelicMonitorResource_Properties_NewRelicAccountProperties_AccountInfoFields = ubx.FieldMap{
-		"AccountId": ubx.FieldSpec{WireName: "account_id"},
-		"IngestionKey": ubx.FieldSpec{WireName: "ingestion_key"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-	}
+	"AccountId":    ubx.FieldSpec{WireName: "account_id"},
+	"IngestionKey": ubx.FieldSpec{WireName: "ingestion_key"},
+	"Region":       ubx.FieldSpec{WireName: "region"},
+}
 
 var NewRelicMonitorResource_Properties_NewRelicAccountProperties_OrganizationInfoFields = ubx.FieldMap{
-		"OrganizationId": ubx.FieldSpec{WireName: "organization_id"},
-	}
+	"OrganizationId": ubx.FieldSpec{WireName: "organization_id"},
+}
 
 var NewRelicMonitorResource_Properties_NewRelicAccountProperties_SingleSignOnPropertiesFields = ubx.FieldMap{
-		"EnterpriseAppId": ubx.FieldSpec{WireName: "enterprise_app_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SingleSignOnState": ubx.FieldSpec{WireName: "single_sign_on_state"},
-		"SingleSignOnUrl": ubx.FieldSpec{WireName: "single_sign_on_url"},
-	}
+	"EnterpriseAppId":   ubx.FieldSpec{WireName: "enterprise_app_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SingleSignOnState": ubx.FieldSpec{WireName: "single_sign_on_state"},
+	"SingleSignOnUrl":   ubx.FieldSpec{WireName: "single_sign_on_url"},
+}
 
 var NewRelicMonitorResource_Properties_NewRelicAccountPropertiesFields = ubx.FieldMap{
-		"AccountInfo": ubx.FieldSpec{
-			WireName: "account_info",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_Properties_NewRelicAccountProperties_AccountInfoFields,
-		},
-		"OrganizationInfo": ubx.FieldSpec{
-			WireName: "organization_info",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_Properties_NewRelicAccountProperties_OrganizationInfoFields,
-		},
-		"SingleSignOnProperties": ubx.FieldSpec{
-			WireName: "single_sign_on_properties",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_Properties_NewRelicAccountProperties_SingleSignOnPropertiesFields,
-		},
-		"UserId": ubx.FieldSpec{WireName: "user_id"},
-	}
+	"AccountInfo": ubx.FieldSpec{
+		WireName: "account_info",
+		Kind:     "object",
+		Fields:   NewRelicMonitorResource_Properties_NewRelicAccountProperties_AccountInfoFields,
+	},
+	"OrganizationInfo": ubx.FieldSpec{
+		WireName: "organization_info",
+		Kind:     "object",
+		Fields:   NewRelicMonitorResource_Properties_NewRelicAccountProperties_OrganizationInfoFields,
+	},
+	"SingleSignOnProperties": ubx.FieldSpec{
+		WireName: "single_sign_on_properties",
+		Kind:     "object",
+		Fields:   NewRelicMonitorResource_Properties_NewRelicAccountProperties_SingleSignOnPropertiesFields,
+	},
+	"UserId": ubx.FieldSpec{WireName: "user_id"},
+}
 
 var NewRelicMonitorResource_Properties_PlanDataFields = ubx.FieldMap{
-		"BillingCycle": ubx.FieldSpec{WireName: "billing_cycle"},
-		"EffectiveDate": ubx.FieldSpec{WireName: "effective_date"},
-		"PlanDetails": ubx.FieldSpec{WireName: "plan_details"},
-		"UsageType": ubx.FieldSpec{WireName: "usage_type"},
-	}
+	"BillingCycle":  ubx.FieldSpec{WireName: "billing_cycle"},
+	"EffectiveDate": ubx.FieldSpec{WireName: "effective_date"},
+	"PlanDetails":   ubx.FieldSpec{WireName: "plan_details"},
+	"UsageType":     ubx.FieldSpec{WireName: "usage_type"},
+}
 
 var NewRelicMonitorResource_Properties_SaaSdataFields = ubx.FieldMap{
-		"SaaSresourceId": ubx.FieldSpec{WireName: "saa_sresource_id"},
-	}
+	"SaaSresourceId": ubx.FieldSpec{WireName: "saa_sresource_id"},
+}
 
 var NewRelicMonitorResource_Properties_UserInfoFields = ubx.FieldMap{
-		"Country": ubx.FieldSpec{WireName: "country"},
-		"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
-		"FirstName": ubx.FieldSpec{WireName: "first_name"},
-		"LastName": ubx.FieldSpec{WireName: "last_name"},
-		"PhoneNumber": ubx.FieldSpec{WireName: "phone_number"},
-	}
+	"Country":      ubx.FieldSpec{WireName: "country"},
+	"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
+	"FirstName":    ubx.FieldSpec{WireName: "first_name"},
+	"LastName":     ubx.FieldSpec{WireName: "last_name"},
+	"PhoneNumber":  ubx.FieldSpec{WireName: "phone_number"},
+}
 
 var NewRelicMonitorResource_PropertiesFields = ubx.FieldMap{
-		"AccountCreationSource": ubx.FieldSpec{WireName: "account_creation_source"},
-		"LiftrResourceCategory": ubx.FieldSpec{WireName: "liftr_resource_category"},
-		"LiftrResourcePreference": ubx.FieldSpec{WireName: "liftr_resource_preference"},
-		"MarketplaceSubscriptionId": ubx.FieldSpec{WireName: "marketplace_subscription_id"},
-		"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
-		"MonitoringStatus": ubx.FieldSpec{WireName: "monitoring_status"},
-		"NewRelicAccountProperties": ubx.FieldSpec{
-			WireName: "new_relic_account_properties",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_Properties_NewRelicAccountPropertiesFields,
-		},
-		"OrgCreationSource": ubx.FieldSpec{WireName: "org_creation_source"},
-		"PlanData": ubx.FieldSpec{
-			WireName: "plan_data",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_Properties_PlanDataFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SaaSazureSubscriptionStatus": ubx.FieldSpec{WireName: "saa_sazure_subscription_status"},
-		"SaaSdata": ubx.FieldSpec{
-			WireName: "saa_sdata",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_Properties_SaaSdataFields,
-		},
-		"SubscriptionState": ubx.FieldSpec{WireName: "subscription_state"},
-		"UserInfo": ubx.FieldSpec{
-			WireName: "user_info",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_Properties_UserInfoFields,
-		},
-	}
+	"AccountCreationSource":         ubx.FieldSpec{WireName: "account_creation_source"},
+	"LiftrResourceCategory":         ubx.FieldSpec{WireName: "liftr_resource_category"},
+	"LiftrResourcePreference":       ubx.FieldSpec{WireName: "liftr_resource_preference"},
+	"MarketplaceSubscriptionId":     ubx.FieldSpec{WireName: "marketplace_subscription_id"},
+	"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
+	"MonitoringStatus":              ubx.FieldSpec{WireName: "monitoring_status"},
+	"NewRelicAccountProperties": ubx.FieldSpec{
+		WireName: "new_relic_account_properties",
+		Kind:     "object",
+		Fields:   NewRelicMonitorResource_Properties_NewRelicAccountPropertiesFields,
+	},
+	"OrgCreationSource": ubx.FieldSpec{WireName: "org_creation_source"},
+	"PlanData": ubx.FieldSpec{
+		WireName: "plan_data",
+		Kind:     "object",
+		Fields:   NewRelicMonitorResource_Properties_PlanDataFields,
+	},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"SaaSazureSubscriptionStatus": ubx.FieldSpec{WireName: "saa_sazure_subscription_status"},
+	"SaaSdata": ubx.FieldSpec{
+		WireName: "saa_sdata",
+		Kind:     "object",
+		Fields:   NewRelicMonitorResource_Properties_SaaSdataFields,
+	},
+	"SubscriptionState": ubx.FieldSpec{WireName: "subscription_state"},
+	"UserInfo": ubx.FieldSpec{
+		WireName: "user_info",
+		Kind:     "object",
+		Fields:   NewRelicMonitorResource_Properties_UserInfoFields,
+	},
+}
 
 type NewRelicMonitorResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -238,13 +238,13 @@ var NewRelicMonitorResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_IdentityFields,
+			Kind:     "object",
+			Fields:   NewRelicMonitorResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NewRelicMonitorResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   NewRelicMonitorResource_PropertiesFields,
 		},
 	},
 }

@@ -8,17 +8,17 @@ type OpenapiWebhook_Value_Properties_Runbook struct {
 }
 
 type OpenapiWebhook_Value_Properties struct {
-	CreationTime any
-	Description any
-	ExpiryTime any
-	IsEnabled any
-	LastInvokedTime any
-	LastModifiedBy any
+	CreationTime     any
+	Description      any
+	ExpiryTime       any
+	IsEnabled        any
+	LastInvokedTime  any
+	LastModifiedBy   any
 	LastModifiedTime any
-	Parameters any
-	RunOn any
-	Runbook any
-	Uri any
+	Parameters       any
+	RunOn            any
+	Runbook          any
+	Uri              any
 }
 
 type OpenapiWebhook_Value struct {

@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceSku_Value struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type ResourceSkuConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ResourceSkuAttrs struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 	// The collection of available SKUs for new resources.
 	Value any
@@ -24,7 +24,7 @@ type ResourceSkuAttrs struct {
 var ResourceSku = ubx.DataSourceBinding{
 	WireType: "azure_analysisservices_resource_sku",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -99,86 +99,85 @@ type OpenapiMetadataModel_Properties struct {
 }
 
 var OpenapiMetadataModel_Properties_AuthorFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Link": ubx.FieldSpec{WireName: "link"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Email": ubx.FieldSpec{WireName: "email"},
+	"Link":  ubx.FieldSpec{WireName: "link"},
+	"Name":  ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiMetadataModel_Properties_CategoriesFields = ubx.FieldMap{
-		"Domains": ubx.FieldSpec{WireName: "domains"},
-		"Verticals": ubx.FieldSpec{WireName: "verticals"},
-	}
+	"Domains":   ubx.FieldSpec{WireName: "domains"},
+	"Verticals": ubx.FieldSpec{WireName: "verticals"},
+}
 
-var OpenapiMetadataModel_Properties_Dependencies_CriteriaFields = ubx.FieldMap{
-	}
+var OpenapiMetadataModel_Properties_Dependencies_CriteriaFields = ubx.FieldMap{}
 
 var OpenapiMetadataModel_Properties_DependenciesFields = ubx.FieldMap{
-		"ContentId": ubx.FieldSpec{WireName: "content_id"},
-		"Criteria": ubx.FieldSpec{
-			WireName: "criteria",
-			Kind: "list",
-			Fields: OpenapiMetadataModel_Properties_Dependencies_CriteriaFields,
-		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Operator": ubx.FieldSpec{WireName: "operator"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ContentId": ubx.FieldSpec{WireName: "content_id"},
+	"Criteria": ubx.FieldSpec{
+		WireName: "criteria",
+		Kind:     "list",
+		Fields:   OpenapiMetadataModel_Properties_Dependencies_CriteriaFields,
+	},
+	"Kind":     ubx.FieldSpec{WireName: "kind"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Operator": ubx.FieldSpec{WireName: "operator"},
+	"Version":  ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiMetadataModel_Properties_SourceFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SourceId": ubx.FieldSpec{WireName: "source_id"},
-	}
+	"Kind":     ubx.FieldSpec{WireName: "kind"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"SourceId": ubx.FieldSpec{WireName: "source_id"},
+}
 
 var OpenapiMetadataModel_Properties_SupportFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Link": ubx.FieldSpec{WireName: "link"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Email": ubx.FieldSpec{WireName: "email"},
+	"Link":  ubx.FieldSpec{WireName: "link"},
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Tier":  ubx.FieldSpec{WireName: "tier"},
+}
 
 var OpenapiMetadataModel_PropertiesFields = ubx.FieldMap{
-		"Author": ubx.FieldSpec{
-			WireName: "author",
-			Kind: "object",
-			Fields: OpenapiMetadataModel_Properties_AuthorFields,
-		},
-		"Categories": ubx.FieldSpec{
-			WireName: "categories",
-			Kind: "object",
-			Fields: OpenapiMetadataModel_Properties_CategoriesFields,
-		},
-		"ContentId": ubx.FieldSpec{WireName: "content_id"},
-		"ContentSchemaVersion": ubx.FieldSpec{WireName: "content_schema_version"},
-		"CustomVersion": ubx.FieldSpec{WireName: "custom_version"},
-		"Dependencies": ubx.FieldSpec{
-			WireName: "dependencies",
-			Kind: "object",
-			Fields: OpenapiMetadataModel_Properties_DependenciesFields,
-		},
-		"FirstPublishDate": ubx.FieldSpec{WireName: "first_publish_date"},
-		"Icon": ubx.FieldSpec{WireName: "icon"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"LastPublishDate": ubx.FieldSpec{WireName: "last_publish_date"},
-		"ParentId": ubx.FieldSpec{WireName: "parent_id"},
-		"PreviewImages": ubx.FieldSpec{WireName: "preview_images"},
-		"PreviewImagesDark": ubx.FieldSpec{WireName: "preview_images_dark"},
-		"Providers": ubx.FieldSpec{WireName: "providers"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: OpenapiMetadataModel_Properties_SourceFields,
-		},
-		"Support": ubx.FieldSpec{
-			WireName: "support",
-			Kind: "object",
-			Fields: OpenapiMetadataModel_Properties_SupportFields,
-		},
-		"ThreatAnalysisTactics": ubx.FieldSpec{WireName: "threat_analysis_tactics"},
-		"ThreatAnalysisTechniques": ubx.FieldSpec{WireName: "threat_analysis_techniques"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Author": ubx.FieldSpec{
+		WireName: "author",
+		Kind:     "object",
+		Fields:   OpenapiMetadataModel_Properties_AuthorFields,
+	},
+	"Categories": ubx.FieldSpec{
+		WireName: "categories",
+		Kind:     "object",
+		Fields:   OpenapiMetadataModel_Properties_CategoriesFields,
+	},
+	"ContentId":            ubx.FieldSpec{WireName: "content_id"},
+	"ContentSchemaVersion": ubx.FieldSpec{WireName: "content_schema_version"},
+	"CustomVersion":        ubx.FieldSpec{WireName: "custom_version"},
+	"Dependencies": ubx.FieldSpec{
+		WireName: "dependencies",
+		Kind:     "object",
+		Fields:   OpenapiMetadataModel_Properties_DependenciesFields,
+	},
+	"FirstPublishDate":  ubx.FieldSpec{WireName: "first_publish_date"},
+	"Icon":              ubx.FieldSpec{WireName: "icon"},
+	"Kind":              ubx.FieldSpec{WireName: "kind"},
+	"LastPublishDate":   ubx.FieldSpec{WireName: "last_publish_date"},
+	"ParentId":          ubx.FieldSpec{WireName: "parent_id"},
+	"PreviewImages":     ubx.FieldSpec{WireName: "preview_images"},
+	"PreviewImagesDark": ubx.FieldSpec{WireName: "preview_images_dark"},
+	"Providers":         ubx.FieldSpec{WireName: "providers"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   OpenapiMetadataModel_Properties_SourceFields,
+	},
+	"Support": ubx.FieldSpec{
+		WireName: "support",
+		Kind:     "object",
+		Fields:   OpenapiMetadataModel_Properties_SupportFields,
+	},
+	"ThreatAnalysisTactics":    ubx.FieldSpec{WireName: "threat_analysis_tactics"},
+	"ThreatAnalysisTechniques": ubx.FieldSpec{WireName: "threat_analysis_techniques"},
+	"Version":                  ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiMetadataModelConfig struct {
 	// Etag of the azure resource
@@ -200,8 +199,8 @@ var OpenapiMetadataModel = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiMetadataModel_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiMetadataModel_PropertiesFields,
 		},
 	},
 }

@@ -11,9 +11,9 @@ type TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption_Properti
 }
 
 var TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption_PropertiesFields = ubx.FieldMap{
-		"ScanState": ubx.FieldSpec{WireName: "scan_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"ScanState": ubx.FieldSpec{WireName: "scan_state"},
+	"State":     ubx.FieldSpec{WireName: "state"},
+}
 
 type TransparentdataencryptionsLogicalDatabaseTransparentDataEncryptionConfig struct {
 	// Properties of a transparent data encryption scan.
@@ -30,8 +30,8 @@ var TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption = ubx.Res
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption_PropertiesFields,
+			Kind:     "object",
+			Fields:   TransparentdataencryptionsLogicalDatabaseTransparentDataEncryption_PropertiesFields,
 		},
 	},
 }

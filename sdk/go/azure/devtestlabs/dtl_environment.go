@@ -4,7 +4,7 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlEnvironment_Properties_DeploymentProperties_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -31,31 +31,31 @@ type DtlEnvironment_Properties struct {
 }
 
 var DtlEnvironment_Properties_DeploymentProperties_ParametersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var DtlEnvironment_Properties_DeploymentPropertiesFields = ubx.FieldMap{
-		"ArmTemplateId": ubx.FieldSpec{WireName: "arm_template_id"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: DtlEnvironment_Properties_DeploymentProperties_ParametersFields,
-		},
-	}
+	"ArmTemplateId": ubx.FieldSpec{WireName: "arm_template_id"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   DtlEnvironment_Properties_DeploymentProperties_ParametersFields,
+	},
+}
 
 var DtlEnvironment_PropertiesFields = ubx.FieldMap{
-		"ArmTemplateDisplayName": ubx.FieldSpec{WireName: "arm_template_display_name"},
-		"CreatedByUser": ubx.FieldSpec{WireName: "created_by_user"},
-		"DeploymentProperties": ubx.FieldSpec{
-			WireName: "deployment_properties",
-			Kind: "object",
-			Fields: DtlEnvironment_Properties_DeploymentPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGroupId": ubx.FieldSpec{WireName: "resource_group_id"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-	}
+	"ArmTemplateDisplayName": ubx.FieldSpec{WireName: "arm_template_display_name"},
+	"CreatedByUser":          ubx.FieldSpec{WireName: "created_by_user"},
+	"DeploymentProperties": ubx.FieldSpec{
+		WireName: "deployment_properties",
+		Kind:     "object",
+		Fields:   DtlEnvironment_Properties_DeploymentPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGroupId":   ubx.FieldSpec{WireName: "resource_group_id"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+}
 
 type DtlEnvironmentConfig struct {
 	// The geo-location where the resource lives
@@ -85,8 +85,8 @@ var DtlEnvironment = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlEnvironment_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlEnvironment_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

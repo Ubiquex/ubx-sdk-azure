@@ -5,14 +5,20 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivatelinksPrivateLinkAssociation_Properties struct {
 	// The rmpl Resource ID.
-	PrivateLink any
+	PrivateLink         any
 	PublicNetworkAccess any
+	// The scope of the private link association.
+	Scope any
+	// The TenantID.
+	TenantId any
 }
 
 var PrivatelinksPrivateLinkAssociation_PropertiesFields = ubx.FieldMap{
-		"PrivateLink": ubx.FieldSpec{WireName: "private_link"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	}
+	"PrivateLink":         ubx.FieldSpec{WireName: "private_link"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"Scope":               ubx.FieldSpec{WireName: "scope"},
+	"TenantId":            ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type PrivatelinksPrivateLinkAssociationConfig struct {
 	Properties any
@@ -22,7 +28,7 @@ type PrivatelinksPrivateLinkAssociationAttrs struct {
 	// The plaResourceID.
 	Id any
 	// The pla name.
-	Name any
+	Name       any
 	Properties any
 	// The operation type.
 	Type any
@@ -33,8 +39,8 @@ var PrivatelinksPrivateLinkAssociation = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivatelinksPrivateLinkAssociation_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivatelinksPrivateLinkAssociation_PropertiesFields,
 		},
 	},
 }

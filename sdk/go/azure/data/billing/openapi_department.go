@@ -4,35 +4,35 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDepartment_Value_Properties struct {
-	CostCenter any
+	CostCenter  any
 	DisplayName any
-	Id any
-	Status any
+	Id          any
+	Status      any
 }
 
 type OpenapiDepartment_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiDepartmentConfig struct {
 	BillingAccountName any
-	Filter any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Filter             any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiDepartmentAttrs struct {
 	BillingAccountName any
-	Filter any
+	Filter             any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The Department items on this page
 	Value any
 }
@@ -41,10 +41,10 @@ var OpenapiDepartment = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_department",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

@@ -9,13 +9,13 @@ type WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentity struct {
 
 type WebPubSubHub_Properties_EventHandlers_Auth struct {
 	ManagedIdentity any
-	Type any
+	Type            any
 }
 
 type WebPubSubHub_Properties_EventHandlers struct {
-	Auth any
-	SystemEvents any
-	UrlTemplate any
+	Auth             any
+	SystemEvents     any
+	UrlTemplate      any
 	UserEventPattern any
 }
 
@@ -25,7 +25,7 @@ type WebPubSubHub_Properties_EventListeners_Endpoint struct {
 
 type WebPubSubHub_Properties_EventListeners struct {
 	Endpoint any
-	Filter any
+	Filter   any
 }
 
 type WebPubSubHub_Properties struct {
@@ -40,60 +40,60 @@ type WebPubSubHub_Properties struct {
 }
 
 var WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentityFields = ubx.FieldMap{
-		"Resource": ubx.FieldSpec{WireName: "resource"},
-	}
+	"Resource": ubx.FieldSpec{WireName: "resource"},
+}
 
 var WebPubSubHub_Properties_EventHandlers_AuthFields = ubx.FieldMap{
-		"ManagedIdentity": ubx.FieldSpec{
-			WireName: "managed_identity",
-			Kind: "object",
-			Fields: WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentityFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ManagedIdentity": ubx.FieldSpec{
+		WireName: "managed_identity",
+		Kind:     "object",
+		Fields:   WebPubSubHub_Properties_EventHandlers_Auth_ManagedIdentityFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var WebPubSubHub_Properties_EventHandlersFields = ubx.FieldMap{
-		"Auth": ubx.FieldSpec{
-			WireName: "auth",
-			Kind: "object",
-			Fields: WebPubSubHub_Properties_EventHandlers_AuthFields,
-		},
-		"SystemEvents": ubx.FieldSpec{WireName: "system_events"},
-		"UrlTemplate": ubx.FieldSpec{WireName: "url_template"},
-		"UserEventPattern": ubx.FieldSpec{WireName: "user_event_pattern"},
-	}
+	"Auth": ubx.FieldSpec{
+		WireName: "auth",
+		Kind:     "object",
+		Fields:   WebPubSubHub_Properties_EventHandlers_AuthFields,
+	},
+	"SystemEvents":     ubx.FieldSpec{WireName: "system_events"},
+	"UrlTemplate":      ubx.FieldSpec{WireName: "url_template"},
+	"UserEventPattern": ubx.FieldSpec{WireName: "user_event_pattern"},
+}
 
 var WebPubSubHub_Properties_EventListeners_EndpointFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var WebPubSubHub_Properties_EventListenersFields = ubx.FieldMap{
-		"Endpoint": ubx.FieldSpec{
-			WireName: "endpoint",
-			Kind: "object",
-			Fields: WebPubSubHub_Properties_EventListeners_EndpointFields,
-		},
-		"Filter": ubx.FieldSpec{
-			WireName: "filter",
-			Kind: "object",
-			Fields: WebPubSubHub_Properties_EventListeners_EndpointFields,
-		},
-	}
+	"Endpoint": ubx.FieldSpec{
+		WireName: "endpoint",
+		Kind:     "object",
+		Fields:   WebPubSubHub_Properties_EventListeners_EndpointFields,
+	},
+	"Filter": ubx.FieldSpec{
+		WireName: "filter",
+		Kind:     "object",
+		Fields:   WebPubSubHub_Properties_EventListeners_EndpointFields,
+	},
+}
 
 var WebPubSubHub_PropertiesFields = ubx.FieldMap{
-		"AnonymousConnectPolicy": ubx.FieldSpec{WireName: "anonymous_connect_policy"},
-		"EventHandlers": ubx.FieldSpec{
-			WireName: "event_handlers",
-			Kind: "list",
-			Fields: WebPubSubHub_Properties_EventHandlersFields,
-		},
-		"EventListeners": ubx.FieldSpec{
-			WireName: "event_listeners",
-			Kind: "list",
-			Fields: WebPubSubHub_Properties_EventListenersFields,
-		},
-		"WebSocketKeepAliveIntervalInSeconds": ubx.FieldSpec{WireName: "web_socket_keep_alive_interval_in_seconds"},
-	}
+	"AnonymousConnectPolicy": ubx.FieldSpec{WireName: "anonymous_connect_policy"},
+	"EventHandlers": ubx.FieldSpec{
+		WireName: "event_handlers",
+		Kind:     "list",
+		Fields:   WebPubSubHub_Properties_EventHandlersFields,
+	},
+	"EventListeners": ubx.FieldSpec{
+		WireName: "event_listeners",
+		Kind:     "list",
+		Fields:   WebPubSubHub_Properties_EventListenersFields,
+	},
+	"WebSocketKeepAliveIntervalInSeconds": ubx.FieldSpec{WireName: "web_socket_keep_alive_interval_in_seconds"},
+}
 
 type WebPubSubHubConfig struct {
 	// Properties of a hub.
@@ -110,8 +110,8 @@ var WebPubSubHub = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WebPubSubHub_PropertiesFields,
+			Kind:     "object",
+			Fields:   WebPubSubHub_PropertiesFields,
 		},
 	},
 }

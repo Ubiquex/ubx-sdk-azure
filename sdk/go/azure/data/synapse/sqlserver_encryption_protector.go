@@ -6,14 +6,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type SqlserverEncryptionProtector_Value_Properties struct {
 	ServerKeyName any
 	ServerKeyType any
-	Subregion any
-	Thumbprint any
-	Uri any
+	Subregion     any
+	Thumbprint    any
+	Uri           any
 }
 
 type SqlserverEncryptionProtector_Value struct {
-	Kind any
-	Location any
+	Kind       any
+	Location   any
 	Properties any
 }
 
@@ -29,6 +29,5 @@ type SqlserverEncryptionProtectorAttrs struct {
 
 var SqlserverEncryptionProtector = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlserver_encryption_protector",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

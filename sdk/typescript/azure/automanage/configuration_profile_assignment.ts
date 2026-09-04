@@ -31,22 +31,11 @@ const ConfigurationProfileAssignment_PropertiesFields: FieldMap = {
   targetId: "target_id",
 };
 
-const ConfigurationProfileAssignment_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ConfigurationProfileAssignmentConfig {
   /** Azure resource id. Indicates if this resource is managed by another Azure resource. */
   managedBy?: string | Computed<string>;
   /** Automanage configuration profile assignment properties. */
   properties?: ConfigurationProfileAssignment_Properties | Computed<ConfigurationProfileAssignment_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ConfigurationProfileAssignment_SystemData | Computed<ConfigurationProfileAssignment_SystemData>;
 }
 
 export interface ConfigurationProfileAssignmentAttrs {
@@ -66,11 +55,6 @@ export const ConfigurationProfileAssignment: ResourceBinding<ConfigurationProfil
       wireName: "properties",
       kind: "object",
       fields: ConfigurationProfileAssignment_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ConfigurationProfileAssignment_SystemDataFields,
     },
   },
 };

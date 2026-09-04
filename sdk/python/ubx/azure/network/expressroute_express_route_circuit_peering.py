@@ -300,8 +300,6 @@ _ExpressrouteExpressRouteCircuitPeering_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteCircuitPeeringConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the express route circuit peering.
     properties: Any = None
 
@@ -315,7 +313,6 @@ class ExpressrouteExpressRouteCircuitPeeringAttrs:
 ExpressrouteExpressRouteCircuitPeering = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_circuit_peering",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

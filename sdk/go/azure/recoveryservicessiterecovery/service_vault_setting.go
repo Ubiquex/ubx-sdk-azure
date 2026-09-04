@@ -11,9 +11,9 @@ type ServiceVaultSetting_Properties struct {
 }
 
 var ServiceVaultSetting_PropertiesFields = ubx.FieldMap{
-		"MigrationSolutionId": ubx.FieldSpec{WireName: "migration_solution_id"},
-		"VmwareToAzureProviderType": ubx.FieldSpec{WireName: "vmware_to_azure_provider_type"},
-	}
+	"MigrationSolutionId":       ubx.FieldSpec{WireName: "migration_solution_id"},
+	"VmwareToAzureProviderType": ubx.FieldSpec{WireName: "vmware_to_azure_provider_type"},
+}
 
 type ServiceVaultSettingConfig struct {
 	// Input to create vault setting.
@@ -32,8 +32,8 @@ var ServiceVaultSetting = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceVaultSetting_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceVaultSetting_PropertiesFields,
 		},
 	},
 }

@@ -9,8 +9,8 @@ type ApimworkspacesTagOperationLinkContract2_Properties struct {
 }
 
 var ApimworkspacesTagOperationLinkContract2_PropertiesFields = ubx.FieldMap{
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-	}
+	"OperationId": ubx.FieldSpec{WireName: "operation_id"},
+}
 
 type ApimworkspacesTagOperationLinkContract2Config struct {
 	// Tag-operation link entity properties.
@@ -27,8 +27,8 @@ var ApimworkspacesTagOperationLinkContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesTagOperationLinkContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesTagOperationLinkContract2_PropertiesFields,
 		},
 	},
 }

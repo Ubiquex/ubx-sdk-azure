@@ -167,8 +167,6 @@ const OpenapiEventhub_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiEventhubConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties supplied to the Create Or Update Event Hub operation. */
   properties?: OpenapiEventhub_Properties | Computed<OpenapiEventhub_Properties>;
 }
@@ -183,7 +181,6 @@ export interface OpenapiEventhubAttrs {
 export const OpenapiEventhub: ResourceBinding<OpenapiEventhubConfig, OpenapiEventhubAttrs> = {
   wireType: "azure_eventhub_openapi_eventhub",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

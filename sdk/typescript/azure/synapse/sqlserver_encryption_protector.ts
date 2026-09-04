@@ -23,10 +23,6 @@ const SqlserverEncryptionProtector_PropertiesFields: FieldMap = {
 };
 
 export interface SqlserverEncryptionProtectorConfig {
-  /** Kind of encryption protector. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
-  /** Resource location. */
-  location?: string | Computed<string>;
   /** Properties for an encryption protector execution. */
   properties?: SqlserverEncryptionProtector_Properties | Computed<SqlserverEncryptionProtector_Properties>;
 }
@@ -43,8 +39,6 @@ export interface SqlserverEncryptionProtectorAttrs {
 export const SqlserverEncryptionProtector: ResourceBinding<SqlserverEncryptionProtectorConfig, SqlserverEncryptionProtectorAttrs> = {
   wireType: "azure_synapse_sqlserver_encryption_protector",
   fields: {
-    kind: "kind",
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

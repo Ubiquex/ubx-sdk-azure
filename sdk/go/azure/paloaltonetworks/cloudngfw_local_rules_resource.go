@@ -35,7 +35,7 @@ type CloudngfwLocalRulesResource_Properties_Source struct {
 }
 
 type CloudngfwLocalRulesResource_Properties_Tags struct {
-	Key any
+	Key   any
 	Value any
 }
 
@@ -46,7 +46,7 @@ type CloudngfwLocalRulesResource_Properties struct {
 	// rule comment
 	AuditComment any
 	// URL/EDL to match
-	Category any
+	Category           any
 	DecryptionRuleType any
 	// rule description
 	Description any
@@ -62,7 +62,7 @@ type CloudngfwLocalRulesResource_Properties struct {
 	NegateDestination any
 	// Boolean Enum
 	NegateSource any
-	Priority any
+	Priority     any
 	// any, application-default, TCP:number, UDP:number
 	Protocol any
 	// prot port list
@@ -80,68 +80,68 @@ type CloudngfwLocalRulesResource_Properties struct {
 }
 
 var CloudngfwLocalRulesResource_Properties_CategoryFields = ubx.FieldMap{
-		"Feeds": ubx.FieldSpec{WireName: "feeds"},
-		"UrlCustom": ubx.FieldSpec{WireName: "url_custom"},
-	}
+	"Feeds":     ubx.FieldSpec{WireName: "feeds"},
+	"UrlCustom": ubx.FieldSpec{WireName: "url_custom"},
+}
 
 var CloudngfwLocalRulesResource_Properties_DestinationFields = ubx.FieldMap{
-		"Cidrs": ubx.FieldSpec{WireName: "cidrs"},
-		"Countries": ubx.FieldSpec{WireName: "countries"},
-		"Feeds": ubx.FieldSpec{WireName: "feeds"},
-		"FqdnLists": ubx.FieldSpec{WireName: "fqdn_lists"},
-		"PrefixLists": ubx.FieldSpec{WireName: "prefix_lists"},
-	}
+	"Cidrs":       ubx.FieldSpec{WireName: "cidrs"},
+	"Countries":   ubx.FieldSpec{WireName: "countries"},
+	"Feeds":       ubx.FieldSpec{WireName: "feeds"},
+	"FqdnLists":   ubx.FieldSpec{WireName: "fqdn_lists"},
+	"PrefixLists": ubx.FieldSpec{WireName: "prefix_lists"},
+}
 
 var CloudngfwLocalRulesResource_Properties_SourceFields = ubx.FieldMap{
-		"Cidrs": ubx.FieldSpec{WireName: "cidrs"},
-		"Countries": ubx.FieldSpec{WireName: "countries"},
-		"Feeds": ubx.FieldSpec{WireName: "feeds"},
-		"PrefixLists": ubx.FieldSpec{WireName: "prefix_lists"},
-	}
+	"Cidrs":       ubx.FieldSpec{WireName: "cidrs"},
+	"Countries":   ubx.FieldSpec{WireName: "countries"},
+	"Feeds":       ubx.FieldSpec{WireName: "feeds"},
+	"PrefixLists": ubx.FieldSpec{WireName: "prefix_lists"},
+}
 
 var CloudngfwLocalRulesResource_Properties_TagsFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Key":   ubx.FieldSpec{WireName: "key"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var CloudngfwLocalRulesResource_PropertiesFields = ubx.FieldMap{
-		"ActionType": ubx.FieldSpec{WireName: "action_type"},
-		"Applications": ubx.FieldSpec{WireName: "applications"},
-		"AuditComment": ubx.FieldSpec{WireName: "audit_comment"},
-		"Category": ubx.FieldSpec{
-			WireName: "category",
-			Kind: "object",
-			Fields: CloudngfwLocalRulesResource_Properties_CategoryFields,
-		},
-		"DecryptionRuleType": ubx.FieldSpec{WireName: "decryption_rule_type"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Destination": ubx.FieldSpec{
-			WireName: "destination",
-			Kind: "object",
-			Fields: CloudngfwLocalRulesResource_Properties_DestinationFields,
-		},
-		"EnableLogging": ubx.FieldSpec{WireName: "enable_logging"},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"InboundInspectionCertificate": ubx.FieldSpec{WireName: "inbound_inspection_certificate"},
-		"NegateDestination": ubx.FieldSpec{WireName: "negate_destination"},
-		"NegateSource": ubx.FieldSpec{WireName: "negate_source"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProtocolPortList": ubx.FieldSpec{WireName: "protocol_port_list"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuleName": ubx.FieldSpec{WireName: "rule_name"},
-		"RuleState": ubx.FieldSpec{WireName: "rule_state"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: CloudngfwLocalRulesResource_Properties_SourceFields,
-		},
-		"Tags": ubx.FieldSpec{
-			WireName: "tags",
-			Kind: "list",
-			Fields: CloudngfwLocalRulesResource_Properties_TagsFields,
-		},
-	}
+	"ActionType":   ubx.FieldSpec{WireName: "action_type"},
+	"Applications": ubx.FieldSpec{WireName: "applications"},
+	"AuditComment": ubx.FieldSpec{WireName: "audit_comment"},
+	"Category": ubx.FieldSpec{
+		WireName: "category",
+		Kind:     "object",
+		Fields:   CloudngfwLocalRulesResource_Properties_CategoryFields,
+	},
+	"DecryptionRuleType": ubx.FieldSpec{WireName: "decryption_rule_type"},
+	"Description":        ubx.FieldSpec{WireName: "description"},
+	"Destination": ubx.FieldSpec{
+		WireName: "destination",
+		Kind:     "object",
+		Fields:   CloudngfwLocalRulesResource_Properties_DestinationFields,
+	},
+	"EnableLogging":                ubx.FieldSpec{WireName: "enable_logging"},
+	"Etag":                         ubx.FieldSpec{WireName: "etag"},
+	"InboundInspectionCertificate": ubx.FieldSpec{WireName: "inbound_inspection_certificate"},
+	"NegateDestination":            ubx.FieldSpec{WireName: "negate_destination"},
+	"NegateSource":                 ubx.FieldSpec{WireName: "negate_source"},
+	"Priority":                     ubx.FieldSpec{WireName: "priority"},
+	"Protocol":                     ubx.FieldSpec{WireName: "protocol"},
+	"ProtocolPortList":             ubx.FieldSpec{WireName: "protocol_port_list"},
+	"ProvisioningState":            ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuleName":                     ubx.FieldSpec{WireName: "rule_name"},
+	"RuleState":                    ubx.FieldSpec{WireName: "rule_state"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   CloudngfwLocalRulesResource_Properties_SourceFields,
+	},
+	"Tags": ubx.FieldSpec{
+		WireName: "tags",
+		Kind:     "list",
+		Fields:   CloudngfwLocalRulesResource_Properties_TagsFields,
+	},
+}
 
 type CloudngfwLocalRulesResourceConfig struct {
 	// definition of rule
@@ -162,8 +162,8 @@ var CloudngfwLocalRulesResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CloudngfwLocalRulesResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CloudngfwLocalRulesResource_PropertiesFields,
 		},
 		"Priority": ubx.FieldSpec{WireName: "priority"},
 	},

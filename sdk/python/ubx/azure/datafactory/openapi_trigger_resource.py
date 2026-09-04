@@ -26,8 +26,6 @@ _OpenapiTriggerResource_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiTriggerResourceConfig:
-    # "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-    etag: Any = None
     # Azure data factory nested object which contains information about creating pipeline run
     properties: Any = None
 
@@ -41,7 +39,6 @@ class OpenapiTriggerResourceAttrs:
 OpenapiTriggerResource = ubx.ResourceBinding(
     wire_type="azure_datafactory_openapi_trigger_resource",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

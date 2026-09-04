@@ -4,17 +4,17 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerNetworkManagerConnection_Value_Properties struct {
-	ConnectionState any
-	Description any
+	ConnectionState  any
+	Description      any
 	NetworkManagerId any
 }
 
 type NetworkmanagerNetworkManagerConnection_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 

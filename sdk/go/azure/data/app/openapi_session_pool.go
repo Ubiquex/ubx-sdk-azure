@@ -4,34 +4,34 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSessionPool_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiSessionPool_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiSessionPool_Value_Properties_CustomContainerTemplate_Containers_Env struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiSessionPool_Value_Properties_CustomContainerTemplate_Containers_Resources struct {
-	Cpu any
+	Cpu    any
 	Memory any
 }
 
 type OpenapiSessionPool_Value_Properties_CustomContainerTemplate_Containers struct {
-	Args any
-	Command any
-	Env any
-	Image any
-	Name any
+	Args      any
+	Command   any
+	Env       any
+	Image     any
+	Name      any
 	Resources any
 }
 
@@ -40,21 +40,21 @@ type OpenapiSessionPool_Value_Properties_CustomContainerTemplate_Ingress struct 
 }
 
 type OpenapiSessionPool_Value_Properties_CustomContainerTemplate_RegistryCredentials struct {
-	Identity any
+	Identity          any
 	PasswordSecretRef any
-	Server any
-	Username any
+	Server            any
+	Username          any
 }
 
 type OpenapiSessionPool_Value_Properties_CustomContainerTemplate struct {
-	Containers any
-	Ingress any
+	Containers          any
+	Ingress             any
 	RegistryCredentials any
 }
 
 type OpenapiSessionPool_Value_Properties_DynamicPoolConfiguration_LifecycleConfiguration struct {
 	CooldownPeriodInSeconds any
-	LifecycleType any
+	LifecycleType           any
 	MaxAlivePeriodInSeconds any
 }
 
@@ -63,7 +63,7 @@ type OpenapiSessionPool_Value_Properties_DynamicPoolConfiguration struct {
 }
 
 type OpenapiSessionPool_Value_Properties_ManagedIdentitySettings struct {
-	Identity any
+	Identity  any
 	Lifecycle any
 }
 
@@ -73,7 +73,7 @@ type OpenapiSessionPool_Value_Properties_ScaleConfiguration struct {
 }
 
 type OpenapiSessionPool_Value_Properties_Secrets struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -82,22 +82,22 @@ type OpenapiSessionPool_Value_Properties_SessionNetworkConfiguration struct {
 }
 
 type OpenapiSessionPool_Value_Properties struct {
-	ContainerType any
-	CustomContainerTemplate any
-	DynamicPoolConfiguration any
-	EnvironmentId any
-	ManagedIdentitySettings any
-	NodeCount any
-	PoolManagementEndpoint any
-	PoolManagementType any
-	ProvisioningState any
-	ScaleConfiguration any
-	Secrets any
+	ContainerType               any
+	CustomContainerTemplate     any
+	DynamicPoolConfiguration    any
+	EnvironmentId               any
+	ManagedIdentitySettings     any
+	NodeCount                   any
+	PoolManagementEndpoint      any
+	PoolManagementType          any
+	ProvisioningState           any
+	ScaleConfiguration          any
+	Secrets                     any
 	SessionNetworkConfiguration any
 }
 
 type OpenapiSessionPool_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -113,6 +113,5 @@ type OpenapiSessionPoolAttrs struct {
 
 var OpenapiSessionPool = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_session_pool",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

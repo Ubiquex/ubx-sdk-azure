@@ -17,15 +17,10 @@ class Block_Placement:
 
 @dataclasses.dataclass
 class Block_Properties_InstanceView_Statuses:
-    # The status code for the instance view of the Azure interconnect block. This is a machine-readable code that indicates the current status. (AI-inferred)
     code: Any = None
-    # A human-readable string that describes the current status of the Azure interconnect block. (AI-inferred)
     display_status: Any = None
-    # The severity level of the status. Possible values are Info, Warning, and Error. (AI-inferred)
     level: Any = None
-    # A human-readable message providing additional details about the corresponding status in the instance view. (AI-inferred)
     message: Any = None
-    # The time at which the status was recorded, typically in a date-time format. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass

@@ -24,7 +24,7 @@ type BmsTieringCostInfoAttrs struct {
 var BmsTieringCostInfo = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_tiering_cost_info",
 	Fields: ubx.FieldMap{
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
+		"ObjectType":     ubx.FieldSpec{WireName: "object_type"},
 		"SourceTierType": ubx.FieldSpec{WireName: "source_tier_type"},
 		"TargetTierType": ubx.FieldSpec{WireName: "target_tier_type"},
 	},

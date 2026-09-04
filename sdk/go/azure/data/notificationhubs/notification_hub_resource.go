@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NotificationHubResource_Value_Properties_AdmCredential_Properties struct {
 	AuthTokenUrl any
-	ClientId any
+	ClientId     any
 	ClientSecret any
 }
 
@@ -15,13 +15,13 @@ type NotificationHubResource_Value_Properties_AdmCredential struct {
 
 type NotificationHubResource_Value_Properties_ApnsCredential_Properties struct {
 	ApnsCertificate any
-	AppId any
-	AppName any
-	CertificateKey any
-	Endpoint any
-	KeyId any
-	Thumbprint any
-	Token any
+	AppId           any
+	AppName         any
+	CertificateKey  any
+	Endpoint        any
+	KeyId           any
+	Thumbprint      any
+	Token           any
 }
 
 type NotificationHubResource_Value_Properties_ApnsCredential struct {
@@ -29,20 +29,20 @@ type NotificationHubResource_Value_Properties_ApnsCredential struct {
 }
 
 type NotificationHubResource_Value_Properties_AuthorizationRules struct {
-	ClaimType any
-	ClaimValue any
-	CreatedTime any
-	KeyName any
+	ClaimType    any
+	ClaimValue   any
+	CreatedTime  any
+	KeyName      any
 	ModifiedTime any
-	PrimaryKey any
-	Revision any
-	Rights any
+	PrimaryKey   any
+	Revision     any
+	Rights       any
 	SecondaryKey any
 }
 
 type NotificationHubResource_Value_Properties_BaiduCredential_Properties struct {
-	BaiduApiKey any
-	BaiduEndPoint any
+	BaiduApiKey    any
+	BaiduEndPoint  any
 	BaiduSecretKey any
 }
 
@@ -51,9 +51,9 @@ type NotificationHubResource_Value_Properties_BaiduCredential struct {
 }
 
 type NotificationHubResource_Value_Properties_BrowserCredential_Properties struct {
-	Subject any
+	Subject         any
 	VapidPrivateKey any
-	VapidPublicKey any
+	VapidPublicKey  any
 }
 
 type NotificationHubResource_Value_Properties_BrowserCredential struct {
@@ -61,7 +61,7 @@ type NotificationHubResource_Value_Properties_BrowserCredential struct {
 }
 
 type NotificationHubResource_Value_Properties_GcmCredential_Properties struct {
-	GcmEndpoint any
+	GcmEndpoint  any
 	GoogleApiKey any
 }
 
@@ -70,9 +70,9 @@ type NotificationHubResource_Value_Properties_GcmCredential struct {
 }
 
 type NotificationHubResource_Value_Properties_MpnsCredential_Properties struct {
-	CertificateKey any
+	CertificateKey  any
 	MpnsCertificate any
-	Thumbprint any
+	Thumbprint      any
 }
 
 type NotificationHubResource_Value_Properties_MpnsCredential struct {
@@ -80,11 +80,11 @@ type NotificationHubResource_Value_Properties_MpnsCredential struct {
 }
 
 type NotificationHubResource_Value_Properties_WnsCredential_Properties struct {
-	CertificateKey any
-	PackageSid any
-	SecretKey any
+	CertificateKey      any
+	PackageSid          any
+	SecretKey           any
 	WindowsLiveEndpoint any
-	WnsCertificate any
+	WnsCertificate      any
 }
 
 type NotificationHubResource_Value_Properties_WnsCredential struct {
@@ -93,7 +93,7 @@ type NotificationHubResource_Value_Properties_WnsCredential struct {
 
 type NotificationHubResource_Value_Properties_XiaomiCredential_Properties struct {
 	AppSecret any
-	Endpoint any
+	Endpoint  any
 }
 
 type NotificationHubResource_Value_Properties_XiaomiCredential struct {
@@ -101,31 +101,31 @@ type NotificationHubResource_Value_Properties_XiaomiCredential struct {
 }
 
 type NotificationHubResource_Value_Properties struct {
-	AdmCredential any
-	ApnsCredential any
-	AuthorizationRules any
-	BaiduCredential any
-	BrowserCredential any
+	AdmCredential         any
+	ApnsCredential        any
+	AuthorizationRules    any
+	BaiduCredential       any
+	BrowserCredential     any
 	DailyMaxActiveDevices any
-	GcmCredential any
-	MpnsCredential any
-	Name any
-	RegistrationTtl any
-	WnsCredential any
-	XiaomiCredential any
+	GcmCredential         any
+	MpnsCredential        any
+	Name                  any
+	RegistrationTtl       any
+	WnsCredential         any
+	XiaomiCredential      any
 }
 
 type NotificationHubResource_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type NotificationHubResource_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type NotificationHubResourceConfig struct {

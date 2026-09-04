@@ -4,8 +4,8 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
-	Id any
-	Location any
+	Id            any
+	Location      any
 	PerimeterGuid any
 }
 
@@ -14,50 +14,50 @@ type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_
 }
 
 type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	Direction any
+	AddressPrefixes           any
+	Direction                 any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	Subscriptions any
+	Subscriptions             any
 }
 
 type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
-	AccessRules any
-	AccessRulesVersion any
+	AccessRules               any
+	AccessRulesVersion        any
 	DiagnosticSettingsVersion any
-	EnabledLogCategories any
-	Name any
+	EnabledLogCategories      any
+	Name                      any
 }
 
 type NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type NetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
 	AccessMode any
-	Name any
+	Name       any
 }
 
 type NetworkSecurityPerimeterConfiguration_Value_Properties struct {
 	NetworkSecurityPerimeter any
-	Profile any
-	ProvisioningIssues any
-	ProvisioningState any
-	ResourceAssociation any
+	Profile                  any
+	ProvisioningIssues       any
+	ProvisioningState        any
+	ResourceAssociation      any
 }
 
 type NetworkSecurityPerimeterConfiguration_Value struct {

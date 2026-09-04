@@ -5,14 +5,12 @@ export interface SkuConfig {
   edgeZone: string | Computed<string>;
   offer: string | Computed<string>;
   publisherName: string | Computed<string>;
-  skus: string | Computed<string>;
 }
 
 export interface SkuAttrs {
   edgeZone: string;
   offer: string;
   publisherName: string;
-  skus: string;
 }
 
 export const Sku: DataSourceBinding<SkuConfig, SkuAttrs> = {
@@ -21,6 +19,5 @@ export const Sku: DataSourceBinding<SkuConfig, SkuAttrs> = {
     edgeZone: "edge_zone",
     offer: "offer",
     publisherName: "publisher_name",
-    skus: "skus",
   },
 };

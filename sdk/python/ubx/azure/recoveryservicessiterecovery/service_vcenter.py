@@ -7,11 +7,58 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ServiceVcenter_Properties_HealthErrors_InnerHealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
+class ServiceVcenter_Properties_HealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    inner_health_errors: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
 class ServiceVcenter_Properties:
+    # The VCenter discovery status.
+    discovery_status: Any = None
+    # The ARM resource name of the fabric containing this VCenter.
+    fabric_arm_resource_name: Any = None
     # The friendly name of the vCenter.
     friendly_name: Any = None
+    # The health errors for this VCenter.
+    health_errors: Any = None
+    # The infrastructure Id of vCenter.
+    infrastructure_id: Any = None
+    # VCenter internal ID.
+    internal_id: Any = None
     # The IP address of the vCenter to be discovered.
     ip_address: Any = None
+    # The time when the last heartbeat was received by vCenter.
+    last_heartbeat: Any = None
     # The port number for discovery.
     port: Any = None
     # The process server Id from where the discovery is orchestrated.
@@ -19,9 +66,58 @@ class ServiceVcenter_Properties:
     # The account Id which has privileges to discover the vCenter.
     run_as_account_id: Any = None
 
+_ServiceVcenter_Properties_HealthErrors_InnerHealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
+_ServiceVcenter_Properties_HealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "inner_health_errors": ubx.FieldSpec(
+        wire_name="inner_health_errors",
+        kind="list",
+        fields=_ServiceVcenter_Properties_HealthErrors_InnerHealthErrorsFields,
+    ),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
 _ServiceVcenter_PropertiesFields = {
+    "discovery_status": ubx.FieldSpec(wire_name="discovery_status"),
+    "fabric_arm_resource_name": ubx.FieldSpec(wire_name="fabric_arm_resource_name"),
     "friendly_name": ubx.FieldSpec(wire_name="friendly_name"),
+    "health_errors": ubx.FieldSpec(
+        wire_name="health_errors",
+        kind="list",
+        fields=_ServiceVcenter_Properties_HealthErrorsFields,
+    ),
+    "infrastructure_id": ubx.FieldSpec(wire_name="infrastructure_id"),
+    "internal_id": ubx.FieldSpec(wire_name="internal_id"),
     "ip_address": ubx.FieldSpec(wire_name="ip_address"),
+    "last_heartbeat": ubx.FieldSpec(wire_name="last_heartbeat"),
     "port": ubx.FieldSpec(wire_name="port"),
     "process_server_id": ubx.FieldSpec(wire_name="process_server_id"),
     "run_as_account_id": ubx.FieldSpec(wire_name="run_as_account_id"),

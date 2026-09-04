@@ -4,38 +4,38 @@ package iothub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IotHubSkuDescription_Value_Capacity struct {
-	Default any
-	Maximum any
-	Minimum any
+	Default   any
+	Maximum   any
+	Minimum   any
 	ScaleType any
 }
 
 type IotHubSkuDescription_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type IotHubSkuDescription_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type IotHubSkuDescriptionConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type IotHubSkuDescriptionAttrs struct {
 	ApiVersion any
 	// The next link.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// The array of IotHubSkuDescription.
 	Value any
 }
@@ -43,9 +43,9 @@ type IotHubSkuDescriptionAttrs struct {
 var IotHubSkuDescription = ubx.DataSourceBinding{
 	WireType: "azure_iothub_iot_hub_sku_description",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

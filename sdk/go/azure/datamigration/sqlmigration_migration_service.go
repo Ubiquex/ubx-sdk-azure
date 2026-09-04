@@ -11,9 +11,9 @@ type SqlmigrationMigrationService_Properties struct {
 }
 
 var SqlmigrationMigrationService_PropertiesFields = ubx.FieldMap{
-		"IntegrationRuntimeState": ubx.FieldSpec{WireName: "integration_runtime_state"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"IntegrationRuntimeState": ubx.FieldSpec{WireName: "integration_runtime_state"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type SqlmigrationMigrationServiceConfig struct {
 	// The Migration Service properties.
@@ -30,8 +30,8 @@ var SqlmigrationMigrationService = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlmigrationMigrationService_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlmigrationMigrationService_PropertiesFields,
 		},
 	},
 }

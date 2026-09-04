@@ -4,15 +4,15 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CertificateResource_Value_Properties struct {
-	ActivateDate any
-	DnsNames any
-	ExpirationDate any
-	IssuedDate any
-	Issuer any
+	ActivateDate      any
+	DnsNames          any
+	ExpirationDate    any
+	IssuedDate        any
+	Issuer            any
 	ProvisioningState any
-	SubjectName any
-	Thumbprint any
-	Type any
+	SubjectName       any
+	Thumbprint        any
+	Type              any
 }
 
 type CertificateResource_Value struct {
@@ -20,19 +20,19 @@ type CertificateResource_Value struct {
 }
 
 type CertificateResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type CertificateResourceAttrs struct {
 	ApiVersion any
 	// The link to next page of certificate list.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// The certificate resources list.
 	Value any
 }
@@ -40,9 +40,9 @@ type CertificateResourceAttrs struct {
 var CertificateResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_certificate_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

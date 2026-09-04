@@ -122,6 +122,12 @@ class DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicy:
 
 @dataclasses.dataclass
 class DbOpenapiGremlinGraphGetResults_Properties_Resource:
+    # A system generated property representing the resource etag required for optimistic concurrency control.
+    etag: Any = None
+    # A system generated property. A unique identifier.
+    rid: Any = None
+    # A system generated property that denotes the last updated timestamp of the resource.
+    ts: Any = None
     # Analytical TTL.
     analytical_storage_ttl: Any = None
     # The conflict resolution policy for the container.
@@ -256,6 +262,9 @@ _DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicyFields = {
 }
 
 _DbOpenapiGremlinGraphGetResults_Properties_ResourceFields = {
+    "etag": ubx.FieldSpec(wire_name="_etag"),
+    "rid": ubx.FieldSpec(wire_name="_rid"),
+    "ts": ubx.FieldSpec(wire_name="_ts"),
     "analytical_storage_ttl": ubx.FieldSpec(wire_name="analytical_storage_ttl"),
     "conflict_resolution_policy": ubx.FieldSpec(
         wire_name="conflict_resolution_policy",

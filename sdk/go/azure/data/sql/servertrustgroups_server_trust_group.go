@@ -9,7 +9,7 @@ type ServertrustgroupsServerTrustGroup_Value_Properties_GroupMembers struct {
 
 type ServertrustgroupsServerTrustGroup_Value_Properties struct {
 	GroupMembers any
-	TrustScopes any
+	TrustScopes  any
 }
 
 type ServertrustgroupsServerTrustGroup_Value struct {

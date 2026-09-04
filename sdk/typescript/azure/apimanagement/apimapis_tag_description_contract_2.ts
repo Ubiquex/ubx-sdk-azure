@@ -4,16 +4,22 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface ApimapisTagDescriptionContract2_Properties {
   /** Description of the Tag. */
   description?: string | Computed<string>;
+  /** Tag name. */
+  displayName?: string | Computed<string>;
   /** Description of the external resources describing the tag. */
   externalDocsDescription?: string | Computed<string>;
   /** Absolute URL of external resources describing the tag. */
   externalDocsUrl?: string | Computed<string>;
+  /** Identifier of the tag in the form of /tags/{tagId} */
+  tagId?: string | Computed<string>;
 }
 
 const ApimapisTagDescriptionContract2_PropertiesFields: FieldMap = {
   description: "description",
+  displayName: "display_name",
   externalDocsDescription: "external_docs_description",
   externalDocsUrl: "external_docs_url",
+  tagId: "tag_id",
 };
 
 export interface ApimapisTagDescriptionContract2Config {

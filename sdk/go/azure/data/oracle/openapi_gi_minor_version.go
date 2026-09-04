@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiGiMinorVersion_Value_Properties struct {
 	GridImageOcid any
-	Version any
+	Version       any
 }
 
 type OpenapiGiMinorVersion_Value struct {
@@ -14,25 +14,25 @@ type OpenapiGiMinorVersion_Value struct {
 
 type OpenapiGiMinorVersionConfig struct {
 	Giversionname any
-	ShapeFamily any
-	Zone any
+	ShapeFamily   any
+	Zone          any
 }
 
 type OpenapiGiMinorVersionAttrs struct {
 	Giversionname any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ShapeFamily any
 	// The GiMinorVersion items on this page
 	Value any
-	Zone any
+	Zone  any
 }
 
 var OpenapiGiMinorVersion = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_gi_minor_version",
 	Fields: ubx.FieldMap{
 		"Giversionname": ubx.FieldSpec{WireName: "giversionname"},
-		"ShapeFamily": ubx.FieldSpec{WireName: "shape_family"},
-		"Zone": ubx.FieldSpec{WireName: "zone"},
+		"ShapeFamily":   ubx.FieldSpec{WireName: "shape_family"},
+		"Zone":          ubx.FieldSpec{WireName: "zone"},
 	},
 }

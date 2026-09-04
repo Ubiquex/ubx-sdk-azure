@@ -13,10 +13,10 @@ type VirtualclustersVirtualCluster_Properties struct {
 }
 
 var VirtualclustersVirtualCluster_PropertiesFields = ubx.FieldMap{
-		"ChildResources": ubx.FieldSpec{WireName: "child_resources"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ChildResources": ubx.FieldSpec{WireName: "child_resources"},
+	"SubnetId":       ubx.FieldSpec{WireName: "subnet_id"},
+	"Version":        ubx.FieldSpec{WireName: "version"},
+}
 
 type VirtualclustersVirtualClusterConfig struct {
 	// The properties of a virtual cluster.
@@ -33,8 +33,8 @@ var VirtualclustersVirtualCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualclustersVirtualCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualclustersVirtualCluster_PropertiesFields,
 		},
 	},
 }

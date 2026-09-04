@@ -13,85 +13,85 @@ type WorkflowRun_Value_Properties_Outputs struct {
 
 type WorkflowRun_Value_Properties_Response_InputsLink_ContentHash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type WorkflowRun_Value_Properties_Response_InputsLink struct {
-	ContentHash any
-	ContentSize any
+	ContentHash    any
+	ContentSize    any
 	ContentVersion any
-	Metadata any
-	Uri any
+	Metadata       any
+	Uri            any
 }
 
 type WorkflowRun_Value_Properties_Response struct {
-	Code any
-	Correlation any
-	EndTime any
-	Error any
-	Inputs any
-	InputsLink any
-	Name any
-	Outputs any
-	OutputsLink any
-	ScheduledTime any
-	StartTime any
-	Status any
+	Code              any
+	Correlation       any
+	EndTime           any
+	Error             any
+	Inputs            any
+	InputsLink        any
+	Name              any
+	Outputs           any
+	OutputsLink       any
+	ScheduledTime     any
+	StartTime         any
+	Status            any
 	TrackedProperties any
-	TrackingId any
+	TrackingId        any
 }
 
 type WorkflowRun_Value_Properties_Workflow struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type WorkflowRun_Value_Properties struct {
-	Code any
-	Correlation any
+	Code          any
+	Correlation   any
 	CorrelationId any
-	EndTime any
-	Error any
-	Outputs any
-	Response any
-	StartTime any
-	Status any
-	Trigger any
-	WaitEndTime any
-	Workflow any
+	EndTime       any
+	Error         any
+	Outputs       any
+	Response      any
+	StartTime     any
+	Status        any
+	Trigger       any
+	WaitEndTime   any
+	Workflow      any
 }
 
 type WorkflowRun_Value struct {
-	Name any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type WorkflowRunConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
-	WorkflowName any
+	SubscriptionId    any
+	WorkflowName      any
 }
 
 type WorkflowRunAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// A list of workflow runs.
-	Value any
+	Value        any
 	WorkflowName any
 }
 
 var WorkflowRun = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_run",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

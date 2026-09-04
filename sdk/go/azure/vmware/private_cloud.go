@@ -70,16 +70,16 @@ type PrivateCloud_Properties_Endpoints struct {
 }
 
 type PrivateCloud_Properties_IdentitySources struct {
-	Alias any
-	BaseGroupDn any
-	BaseUserDn any
-	Domain any
-	Name any
-	Password any
-	PrimaryServer any
+	Alias           any
+	BaseGroupDn     any
+	BaseUserDn      any
+	Domain          any
+	Name            any
+	Password        any
+	PrimaryServer   any
 	SecondaryServer any
-	Ssl any
-	Username any
+	Ssl             any
+	Username        any
 }
 
 type PrivateCloud_Properties_ManagementCluster struct {
@@ -165,142 +165,142 @@ type PrivateCloud_Sku struct {
 }
 
 var PrivateCloud_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var PrivateCloud_Properties_AvailabilityFields = ubx.FieldMap{
-		"SecondaryZone": ubx.FieldSpec{WireName: "secondary_zone"},
-		"Strategy": ubx.FieldSpec{WireName: "strategy"},
-		"Zone": ubx.FieldSpec{WireName: "zone"},
-	}
+	"SecondaryZone": ubx.FieldSpec{WireName: "secondary_zone"},
+	"Strategy":      ubx.FieldSpec{WireName: "strategy"},
+	"Zone":          ubx.FieldSpec{WireName: "zone"},
+}
 
 var PrivateCloud_Properties_CircuitFields = ubx.FieldMap{
-		"ExpressRouteId": ubx.FieldSpec{WireName: "express_route_id"},
-		"ExpressRoutePrivatePeeringId": ubx.FieldSpec{WireName: "express_route_private_peering_id"},
-		"PrimarySubnet": ubx.FieldSpec{WireName: "primary_subnet"},
-		"SecondarySubnet": ubx.FieldSpec{WireName: "secondary_subnet"},
-	}
+	"ExpressRouteId":               ubx.FieldSpec{WireName: "express_route_id"},
+	"ExpressRoutePrivatePeeringId": ubx.FieldSpec{WireName: "express_route_private_peering_id"},
+	"PrimarySubnet":                ubx.FieldSpec{WireName: "primary_subnet"},
+	"SecondarySubnet":              ubx.FieldSpec{WireName: "secondary_subnet"},
+}
 
 var PrivateCloud_Properties_Encryption_KeyVaultPropertiesFields = ubx.FieldMap{
-		"AutoDetectedKeyVersion": ubx.FieldSpec{WireName: "auto_detected_key_version"},
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyState": ubx.FieldSpec{WireName: "key_state"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"VersionType": ubx.FieldSpec{WireName: "version_type"},
-	}
+	"AutoDetectedKeyVersion": ubx.FieldSpec{WireName: "auto_detected_key_version"},
+	"KeyName":                ubx.FieldSpec{WireName: "key_name"},
+	"KeyState":               ubx.FieldSpec{WireName: "key_state"},
+	"KeyVaultUrl":            ubx.FieldSpec{WireName: "key_vault_url"},
+	"KeyVersion":             ubx.FieldSpec{WireName: "key_version"},
+	"VersionType":            ubx.FieldSpec{WireName: "version_type"},
+}
 
 var PrivateCloud_Properties_EncryptionFields = ubx.FieldMap{
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: PrivateCloud_Properties_Encryption_KeyVaultPropertiesFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   PrivateCloud_Properties_Encryption_KeyVaultPropertiesFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var PrivateCloud_Properties_EndpointsFields = ubx.FieldMap{
-		"HcxCloudManager": ubx.FieldSpec{WireName: "hcx_cloud_manager"},
-		"HcxCloudManagerIp": ubx.FieldSpec{WireName: "hcx_cloud_manager_ip"},
-		"NsxtManager": ubx.FieldSpec{WireName: "nsxt_manager"},
-		"NsxtManagerIp": ubx.FieldSpec{WireName: "nsxt_manager_ip"},
-		"VcenterIp": ubx.FieldSpec{WireName: "vcenter_ip"},
-		"Vcsa": ubx.FieldSpec{WireName: "vcsa"},
-	}
+	"HcxCloudManager":   ubx.FieldSpec{WireName: "hcx_cloud_manager"},
+	"HcxCloudManagerIp": ubx.FieldSpec{WireName: "hcx_cloud_manager_ip"},
+	"NsxtManager":       ubx.FieldSpec{WireName: "nsxt_manager"},
+	"NsxtManagerIp":     ubx.FieldSpec{WireName: "nsxt_manager_ip"},
+	"VcenterIp":         ubx.FieldSpec{WireName: "vcenter_ip"},
+	"Vcsa":              ubx.FieldSpec{WireName: "vcsa"},
+}
 
 var PrivateCloud_Properties_IdentitySourcesFields = ubx.FieldMap{
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"BaseGroupDn": ubx.FieldSpec{WireName: "base_group_dn"},
-		"BaseUserDn": ubx.FieldSpec{WireName: "base_user_dn"},
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"PrimaryServer": ubx.FieldSpec{WireName: "primary_server"},
-		"SecondaryServer": ubx.FieldSpec{WireName: "secondary_server"},
-		"Ssl": ubx.FieldSpec{WireName: "ssl"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Alias":           ubx.FieldSpec{WireName: "alias"},
+	"BaseGroupDn":     ubx.FieldSpec{WireName: "base_group_dn"},
+	"BaseUserDn":      ubx.FieldSpec{WireName: "base_user_dn"},
+	"Domain":          ubx.FieldSpec{WireName: "domain"},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+	"Password":        ubx.FieldSpec{WireName: "password"},
+	"PrimaryServer":   ubx.FieldSpec{WireName: "primary_server"},
+	"SecondaryServer": ubx.FieldSpec{WireName: "secondary_server"},
+	"Ssl":             ubx.FieldSpec{WireName: "ssl"},
+	"Username":        ubx.FieldSpec{WireName: "username"},
+}
 
 var PrivateCloud_Properties_ManagementClusterFields = ubx.FieldMap{
-		"ClusterId": ubx.FieldSpec{WireName: "cluster_id"},
-		"ClusterSize": ubx.FieldSpec{WireName: "cluster_size"},
-		"Hosts": ubx.FieldSpec{WireName: "hosts"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VsanDatastoreName": ubx.FieldSpec{WireName: "vsan_datastore_name"},
-	}
+	"ClusterId":         ubx.FieldSpec{WireName: "cluster_id"},
+	"ClusterSize":       ubx.FieldSpec{WireName: "cluster_size"},
+	"Hosts":             ubx.FieldSpec{WireName: "hosts"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VsanDatastoreName": ubx.FieldSpec{WireName: "vsan_datastore_name"},
+}
 
 var PrivateCloud_Properties_VcfLicenseFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Kind":              ubx.FieldSpec{WireName: "kind"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var PrivateCloud_PropertiesFields = ubx.FieldMap{
-		"Availability": ubx.FieldSpec{
-			WireName: "availability",
-			Kind: "object",
-			Fields: PrivateCloud_Properties_AvailabilityFields,
-		},
-		"Circuit": ubx.FieldSpec{
-			WireName: "circuit",
-			Kind: "object",
-			Fields: PrivateCloud_Properties_CircuitFields,
-		},
-		"DnsZoneType": ubx.FieldSpec{WireName: "dns_zone_type"},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: PrivateCloud_Properties_EncryptionFields,
-		},
-		"Endpoints": ubx.FieldSpec{
-			WireName: "endpoints",
-			Kind: "object",
-			Fields: PrivateCloud_Properties_EndpointsFields,
-		},
-		"ExtendedNetworkBlocks": ubx.FieldSpec{WireName: "extended_network_blocks"},
-		"ExternalCloudLinks": ubx.FieldSpec{WireName: "external_cloud_links"},
-		"IdentitySources": ubx.FieldSpec{
-			WireName: "identity_sources",
-			Kind: "list",
-			Fields: PrivateCloud_Properties_IdentitySourcesFields,
-		},
-		"Internet": ubx.FieldSpec{WireName: "internet"},
-		"ManagementCluster": ubx.FieldSpec{
-			WireName: "management_cluster",
-			Kind: "object",
-			Fields: PrivateCloud_Properties_ManagementClusterFields,
-		},
-		"ManagementNetwork": ubx.FieldSpec{WireName: "management_network"},
-		"NetworkBlock": ubx.FieldSpec{WireName: "network_block"},
-		"NsxPublicIpQuotaRaised": ubx.FieldSpec{WireName: "nsx_public_ip_quota_raised"},
-		"NsxtCertificateThumbprint": ubx.FieldSpec{WireName: "nsxt_certificate_thumbprint"},
-		"NsxtPassword": ubx.FieldSpec{WireName: "nsxt_password"},
-		"ProvisioningNetwork": ubx.FieldSpec{WireName: "provisioning_network"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SecondaryCircuit": ubx.FieldSpec{
-			WireName: "secondary_circuit",
-			Kind: "object",
-			Fields: PrivateCloud_Properties_CircuitFields,
-		},
-		"VcenterCertificateThumbprint": ubx.FieldSpec{WireName: "vcenter_certificate_thumbprint"},
-		"VcenterPassword": ubx.FieldSpec{WireName: "vcenter_password"},
-		"VcfLicense": ubx.FieldSpec{
-			WireName: "vcf_license",
-			Kind: "object",
-			Fields: PrivateCloud_Properties_VcfLicenseFields,
-		},
-		"VirtualNetworkId": ubx.FieldSpec{WireName: "virtual_network_id"},
-		"VmotionNetwork": ubx.FieldSpec{WireName: "vmotion_network"},
-	}
+	"Availability": ubx.FieldSpec{
+		WireName: "availability",
+		Kind:     "object",
+		Fields:   PrivateCloud_Properties_AvailabilityFields,
+	},
+	"Circuit": ubx.FieldSpec{
+		WireName: "circuit",
+		Kind:     "object",
+		Fields:   PrivateCloud_Properties_CircuitFields,
+	},
+	"DnsZoneType": ubx.FieldSpec{WireName: "dns_zone_type"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   PrivateCloud_Properties_EncryptionFields,
+	},
+	"Endpoints": ubx.FieldSpec{
+		WireName: "endpoints",
+		Kind:     "object",
+		Fields:   PrivateCloud_Properties_EndpointsFields,
+	},
+	"ExtendedNetworkBlocks": ubx.FieldSpec{WireName: "extended_network_blocks"},
+	"ExternalCloudLinks":    ubx.FieldSpec{WireName: "external_cloud_links"},
+	"IdentitySources": ubx.FieldSpec{
+		WireName: "identity_sources",
+		Kind:     "list",
+		Fields:   PrivateCloud_Properties_IdentitySourcesFields,
+	},
+	"Internet": ubx.FieldSpec{WireName: "internet"},
+	"ManagementCluster": ubx.FieldSpec{
+		WireName: "management_cluster",
+		Kind:     "object",
+		Fields:   PrivateCloud_Properties_ManagementClusterFields,
+	},
+	"ManagementNetwork":         ubx.FieldSpec{WireName: "management_network"},
+	"NetworkBlock":              ubx.FieldSpec{WireName: "network_block"},
+	"NsxPublicIpQuotaRaised":    ubx.FieldSpec{WireName: "nsx_public_ip_quota_raised"},
+	"NsxtCertificateThumbprint": ubx.FieldSpec{WireName: "nsxt_certificate_thumbprint"},
+	"NsxtPassword":              ubx.FieldSpec{WireName: "nsxt_password"},
+	"ProvisioningNetwork":       ubx.FieldSpec{WireName: "provisioning_network"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"SecondaryCircuit": ubx.FieldSpec{
+		WireName: "secondary_circuit",
+		Kind:     "object",
+		Fields:   PrivateCloud_Properties_CircuitFields,
+	},
+	"VcenterCertificateThumbprint": ubx.FieldSpec{WireName: "vcenter_certificate_thumbprint"},
+	"VcenterPassword":              ubx.FieldSpec{WireName: "vcenter_password"},
+	"VcfLicense": ubx.FieldSpec{
+		WireName: "vcf_license",
+		Kind:     "object",
+		Fields:   PrivateCloud_Properties_VcfLicenseFields,
+	},
+	"VirtualNetworkId": ubx.FieldSpec{WireName: "virtual_network_id"},
+	"VmotionNetwork":   ubx.FieldSpec{WireName: "vmotion_network"},
+}
 
 var PrivateCloud_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type PrivateCloudConfig struct {
 	// Managed service identity (either system assigned, or none)
@@ -329,18 +329,18 @@ var PrivateCloud = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: PrivateCloud_IdentityFields,
+			Kind:     "object",
+			Fields:   PrivateCloud_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateCloud_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivateCloud_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: PrivateCloud_SkuFields,
+			Kind:     "object",
+			Fields:   PrivateCloud_SkuFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

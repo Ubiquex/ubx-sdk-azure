@@ -5,111 +5,111 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateCloud_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type PrivateCloud_Value_Properties_Availability struct {
 	SecondaryZone any
-	Strategy any
-	Zone any
+	Strategy      any
+	Zone          any
 }
 
 type PrivateCloud_Value_Properties_Circuit struct {
-	ExpressRouteId any
+	ExpressRouteId               any
 	ExpressRoutePrivatePeeringId any
-	PrimarySubnet any
-	SecondarySubnet any
+	PrimarySubnet                any
+	SecondarySubnet              any
 }
 
 type PrivateCloud_Value_Properties_Encryption_KeyVaultProperties struct {
 	AutoDetectedKeyVersion any
-	KeyName any
-	KeyState any
-	KeyVaultUrl any
-	KeyVersion any
-	VersionType any
+	KeyName                any
+	KeyState               any
+	KeyVaultUrl            any
+	KeyVersion             any
+	VersionType            any
 }
 
 type PrivateCloud_Value_Properties_Encryption struct {
 	KeyVaultProperties any
-	Status any
+	Status             any
 }
 
 type PrivateCloud_Value_Properties_Endpoints struct {
-	HcxCloudManager any
+	HcxCloudManager   any
 	HcxCloudManagerIp any
-	NsxtManager any
-	NsxtManagerIp any
-	VcenterIp any
-	Vcsa any
+	NsxtManager       any
+	NsxtManagerIp     any
+	VcenterIp         any
+	Vcsa              any
 }
 
 type PrivateCloud_Value_Properties_IdentitySources struct {
-	Alias any
-	BaseGroupDn any
-	BaseUserDn any
-	Domain any
-	Name any
-	Password any
-	PrimaryServer any
+	Alias           any
+	BaseGroupDn     any
+	BaseUserDn      any
+	Domain          any
+	Name            any
+	Password        any
+	PrimaryServer   any
 	SecondaryServer any
-	Ssl any
-	Username any
+	Ssl             any
+	Username        any
 }
 
 type PrivateCloud_Value_Properties_ManagementCluster struct {
-	ClusterId any
-	ClusterSize any
-	Hosts any
+	ClusterId         any
+	ClusterSize       any
+	Hosts             any
 	ProvisioningState any
 	VsanDatastoreName any
 }
 
 type PrivateCloud_Value_Properties_VcfLicense struct {
-	Kind any
+	Kind              any
 	ProvisioningState any
 }
 
 type PrivateCloud_Value_Properties struct {
-	Availability any
-	Circuit any
-	DnsZoneType any
-	Encryption any
-	Endpoints any
-	ExtendedNetworkBlocks any
-	ExternalCloudLinks any
-	IdentitySources any
-	Internet any
-	ManagementCluster any
-	ManagementNetwork any
-	NetworkBlock any
-	NsxPublicIpQuotaRaised any
-	NsxtCertificateThumbprint any
-	NsxtPassword any
-	ProvisioningNetwork any
-	ProvisioningState any
-	SecondaryCircuit any
+	Availability                 any
+	Circuit                      any
+	DnsZoneType                  any
+	Encryption                   any
+	Endpoints                    any
+	ExtendedNetworkBlocks        any
+	ExternalCloudLinks           any
+	IdentitySources              any
+	Internet                     any
+	ManagementCluster            any
+	ManagementNetwork            any
+	NetworkBlock                 any
+	NsxPublicIpQuotaRaised       any
+	NsxtCertificateThumbprint    any
+	NsxtPassword                 any
+	ProvisioningNetwork          any
+	ProvisioningState            any
+	SecondaryCircuit             any
 	VcenterCertificateThumbprint any
-	VcenterPassword any
-	VcfLicense any
-	VirtualNetworkId any
-	VmotionNetwork any
+	VcenterPassword              any
+	VcfLicense                   any
+	VirtualNetworkId             any
+	VmotionNetwork               any
 }
 
 type PrivateCloud_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type PrivateCloud_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type PrivateCloudConfig struct {
@@ -124,6 +124,5 @@ type PrivateCloudAttrs struct {
 
 var PrivateCloud = ubx.DataSourceBinding{
 	WireType: "azure_vmware_private_cloud",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

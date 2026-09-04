@@ -13,14 +13,12 @@ type VirtualnetworkVirtualRouterPeering_Properties struct {
 }
 
 var VirtualnetworkVirtualRouterPeering_PropertiesFields = ubx.FieldMap{
-		"PeerAsn": ubx.FieldSpec{WireName: "peer_asn"},
-		"PeerIp": ubx.FieldSpec{WireName: "peer_ip"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PeerAsn":           ubx.FieldSpec{WireName: "peer_asn"},
+	"PeerIp":            ubx.FieldSpec{WireName: "peer_ip"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkVirtualRouterPeeringConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of the rule group.
 	Properties any
 }
@@ -35,11 +33,10 @@ type VirtualnetworkVirtualRouterPeeringAttrs struct {
 var VirtualnetworkVirtualRouterPeering = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_virtual_router_peering",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualRouterPeering_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkVirtualRouterPeering_PropertiesFields,
 		},
 	},
 }

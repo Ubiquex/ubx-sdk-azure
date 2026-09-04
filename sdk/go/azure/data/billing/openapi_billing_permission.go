@@ -4,7 +4,7 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingPermission_Value struct {
-	Actions any
+	Actions    any
 	NotActions any
 }
 

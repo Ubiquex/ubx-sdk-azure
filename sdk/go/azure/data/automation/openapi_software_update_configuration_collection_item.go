@@ -5,73 +5,73 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_Tasks_PostTask struct {
 	Parameters any
-	Source any
+	Source     any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_Tasks struct {
 	PostTask any
-	PreTask any
+	PreTask  any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_UpdateConfiguration_Linux struct {
-	ExcludedPackageNameMasks any
+	ExcludedPackageNameMasks       any
 	IncludedPackageClassifications any
-	IncludedPackageNameMasks any
-	RebootSetting any
+	IncludedPackageNameMasks       any
+	RebootSetting                  any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_UpdateConfiguration_Targets_AzureQueries_TagSettings struct {
 	FilterOperator any
-	Tags any
+	Tags           any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_UpdateConfiguration_Targets_AzureQueries struct {
-	Locations any
-	Scope any
+	Locations   any
+	Scope       any
 	TagSettings any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_UpdateConfiguration_Targets_NonAzureQueries struct {
 	FunctionAlias any
-	WorkspaceId any
+	WorkspaceId   any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_UpdateConfiguration_Targets struct {
-	AzureQueries any
+	AzureQueries    any
 	NonAzureQueries any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_UpdateConfiguration_Windows struct {
-	ExcludedKbNumbers any
-	IncludedKbNumbers any
+	ExcludedKbNumbers             any
+	IncludedKbNumbers             any
 	IncludedUpdateClassifications any
-	RebootSetting any
+	RebootSetting                 any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties_UpdateConfiguration struct {
-	AzureVirtualMachines any
-	Duration any
-	Linux any
+	AzureVirtualMachines  any
+	Duration              any
+	Linux                 any
 	NonAzureComputerNames any
-	OperatingSystem any
-	Targets any
-	Windows any
+	OperatingSystem       any
+	Targets               any
+	Windows               any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value_Properties struct {
-	CreationTime any
-	Frequency any
-	LastModifiedTime any
-	NextRun any
-	ProvisioningState any
-	StartTime any
-	Tasks any
+	CreationTime        any
+	Frequency           any
+	LastModifiedTime    any
+	NextRun             any
+	ProvisioningState   any
+	StartTime           any
+	Tasks               any
 	UpdateConfiguration any
 }
 
 type OpenapiSoftwareUpdateConfigurationCollectionItem_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 }
 

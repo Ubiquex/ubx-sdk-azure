@@ -35,16 +35,8 @@ _CertificateDescription_PropertiesFields = {
 
 @dataclasses.dataclass
 class CertificateDescriptionConfig:
-    # The entity tag.
-    etag: Any = None
-    # The resource identifier.
-    id: Any = None
-    # The name of the certificate.
-    name: Any = None
     # The description of an X509 CA Certificate.
     properties: Any = None
-    # The resource type.
-    type: Any = None
 
 @dataclasses.dataclass
 class CertificateDescriptionAttrs:
@@ -62,14 +54,10 @@ class CertificateDescriptionAttrs:
 CertificateDescription = ubx.ResourceBinding(
     wire_type="azure_iothub_certificate_description",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_CertificateDescription_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

@@ -9,71 +9,71 @@ type OpenapiChangeDataCaptureResource_Value_Properties_Folder struct {
 
 type OpenapiChangeDataCaptureResource_Value_Properties_Policy_Recurrence struct {
 	Frequency any
-	Interval any
+	Interval  any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_Policy struct {
-	Mode any
+	Mode       any
 	Recurrence any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorProperties struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_SourceConnectionsInfo_Connection_LinkedService struct {
-	Parameters any
+	Parameters    any
 	ReferenceName any
-	Type any
+	Type          any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_SourceConnectionsInfo_Connection struct {
 	CommonDslConnectorProperties any
-	IsInlineDataset any
-	LinkedService any
-	LinkedServiceType any
-	Type any
+	IsInlineDataset              any
+	LinkedService                any
+	LinkedServiceType            any
+	Type                         any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_SourceConnectionsInfo_SourceEntities_Properties_Schema struct {
 	DataType any
-	Name any
+	Name     any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_SourceConnectionsInfo_SourceEntities_Properties struct {
 	DslConnectorProperties any
-	Schema any
+	Schema                 any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_SourceConnectionsInfo_SourceEntities struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_SourceConnectionsInfo struct {
-	Connection any
+	Connection     any
 	SourceEntities any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReference struct {
 	ConnectionName any
-	Type any
+	Type           any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference struct {
-	Entity any
+	Entity                    any
 	EntityConnectionReference any
-	Name any
+	Name                      any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings struct {
-	AttributeReference any
+	AttributeReference  any
 	AttributeReferences any
-	Expression any
-	FunctionName any
-	Name any
-	Type any
+	Expression          any
+	FunctionName        any
+	Name                any
+	Type                any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo struct {
@@ -81,32 +81,32 @@ type OpenapiChangeDataCaptureResource_Value_Properties_TargetConnectionsInfo_Dat
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_TargetConnectionsInfo_DataMapperMappings struct {
-	AttributeMappingInfo any
+	AttributeMappingInfo      any
 	SourceConnectionReference any
-	SourceDenormalizeInfo any
-	SourceEntityName any
-	TargetEntityName any
+	SourceDenormalizeInfo     any
+	SourceEntityName          any
+	TargetEntityName          any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties_TargetConnectionsInfo struct {
-	Connection any
+	Connection         any
 	DataMapperMappings any
-	Relationships any
-	TargetEntities any
+	Relationships      any
+	TargetEntities     any
 }
 
 type OpenapiChangeDataCaptureResource_Value_Properties struct {
-	AllowVnetOverride any
-	Description any
-	Folder any
-	Policy any
+	AllowVnetOverride     any
+	Description           any
+	Folder                any
+	Policy                any
 	SourceConnectionsInfo any
-	Status any
+	Status                any
 	TargetConnectionsInfo any
 }
 
 type OpenapiChangeDataCaptureResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

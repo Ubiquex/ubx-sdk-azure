@@ -18,10 +18,10 @@ type OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute struct {
 }
 
 type OpenapiEnvironmentVersion_Properties_InferenceConfig struct {
-	LivenessRoute any
+	LivenessRoute  any
 	ReadinessRoute any
-	ScoringRoute any
-	StartupRoute any
+	ScoringRoute   any
+	StartupRoute   any
 }
 
 type OpenapiEnvironmentVersion_Properties struct {
@@ -34,7 +34,7 @@ type OpenapiEnvironmentVersion_Properties struct {
 	// Environment type is either user created or curated by Azure ML service
 	EnvironmentType any
 	// Name of the image that will be used for the environment. <seealso href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-docker-image#use-a-custom-base-image" />
-	Image any
+	Image           any
 	InferenceConfig any
 	// The type of operating system.
 	OsType any
@@ -45,57 +45,57 @@ type OpenapiEnvironmentVersion_Properties struct {
 }
 
 var OpenapiEnvironmentVersion_Properties_BuildFields = ubx.FieldMap{
-		"ContextUri": ubx.FieldSpec{WireName: "context_uri"},
-		"DockerfilePath": ubx.FieldSpec{WireName: "dockerfile_path"},
-	}
+	"ContextUri":     ubx.FieldSpec{WireName: "context_uri"},
+	"DockerfilePath": ubx.FieldSpec{WireName: "dockerfile_path"},
+}
 
 var OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields = ubx.FieldMap{
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-	}
+	"Path": ubx.FieldSpec{WireName: "path"},
+	"Port": ubx.FieldSpec{WireName: "port"},
+}
 
 var OpenapiEnvironmentVersion_Properties_InferenceConfigFields = ubx.FieldMap{
-		"LivenessRoute": ubx.FieldSpec{
-			WireName: "liveness_route",
-			Kind: "object",
-			Fields: OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields,
-		},
-		"ReadinessRoute": ubx.FieldSpec{
-			WireName: "readiness_route",
-			Kind: "object",
-			Fields: OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields,
-		},
-		"ScoringRoute": ubx.FieldSpec{
-			WireName: "scoring_route",
-			Kind: "object",
-			Fields: OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields,
-		},
-		"StartupRoute": ubx.FieldSpec{
-			WireName: "startup_route",
-			Kind: "object",
-			Fields: OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields,
-		},
-	}
+	"LivenessRoute": ubx.FieldSpec{
+		WireName: "liveness_route",
+		Kind:     "object",
+		Fields:   OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields,
+	},
+	"ReadinessRoute": ubx.FieldSpec{
+		WireName: "readiness_route",
+		Kind:     "object",
+		Fields:   OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields,
+	},
+	"ScoringRoute": ubx.FieldSpec{
+		WireName: "scoring_route",
+		Kind:     "object",
+		Fields:   OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields,
+	},
+	"StartupRoute": ubx.FieldSpec{
+		WireName: "startup_route",
+		Kind:     "object",
+		Fields:   OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRouteFields,
+	},
+}
 
 var OpenapiEnvironmentVersion_PropertiesFields = ubx.FieldMap{
-		"AutoRebuild": ubx.FieldSpec{WireName: "auto_rebuild"},
-		"Build": ubx.FieldSpec{
-			WireName: "build",
-			Kind: "object",
-			Fields: OpenapiEnvironmentVersion_Properties_BuildFields,
-		},
-		"CondaFile": ubx.FieldSpec{WireName: "conda_file"},
-		"EnvironmentType": ubx.FieldSpec{WireName: "environment_type"},
-		"Image": ubx.FieldSpec{WireName: "image"},
-		"InferenceConfig": ubx.FieldSpec{
-			WireName: "inference_config",
-			Kind: "object",
-			Fields: OpenapiEnvironmentVersion_Properties_InferenceConfigFields,
-		},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Stage": ubx.FieldSpec{WireName: "stage"},
-	}
+	"AutoRebuild": ubx.FieldSpec{WireName: "auto_rebuild"},
+	"Build": ubx.FieldSpec{
+		WireName: "build",
+		Kind:     "object",
+		Fields:   OpenapiEnvironmentVersion_Properties_BuildFields,
+	},
+	"CondaFile":       ubx.FieldSpec{WireName: "conda_file"},
+	"EnvironmentType": ubx.FieldSpec{WireName: "environment_type"},
+	"Image":           ubx.FieldSpec{WireName: "image"},
+	"InferenceConfig": ubx.FieldSpec{
+		WireName: "inference_config",
+		Kind:     "object",
+		Fields:   OpenapiEnvironmentVersion_Properties_InferenceConfigFields,
+	},
+	"OsType":            ubx.FieldSpec{WireName: "os_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Stage":             ubx.FieldSpec{WireName: "stage"},
+}
 
 type OpenapiEnvironmentVersionConfig struct {
 	// Environment version details.
@@ -116,8 +116,8 @@ var OpenapiEnvironmentVersion = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEnvironmentVersion_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiEnvironmentVersion_PropertiesFields,
 		},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},

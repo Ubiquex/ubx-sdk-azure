@@ -8,31 +8,31 @@ type PointCollection_Value_Properties_RestorePoints_Properties_ExcludeDisks stru
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus struct {
 	CompletionPercent any
-	Status any
+	Status            any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints struct {
-	Id any
-	ReplicationStatus any
+	Id                  any
+	ReplicationStatus   any
 	SnapshotAccessState any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_InstanceView struct {
 	DiskRestorePoints any
-	Statuses any
+	Statuses          any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_DiagnosticsProfile_BootDiagnostics struct {
-	Enabled any
+	Enabled    any
 	StorageUri any
 }
 
@@ -42,29 +42,29 @@ type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_Di
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_HardwareProfile_VmSizeProperties struct {
 	VCpusAvailable any
-	VCpusPerCore any
+	VCpusPerCore   any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_HardwareProfile struct {
-	ProcessorMode any
-	VmSize any
+	ProcessorMode    any
+	VmSize           any
 	VmSizeProperties any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettings struct {
 	BypassPlatformSafetyChecksOnUserSchedule any
-	RebootSetting any
+	RebootSetting                            any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings struct {
-	AssessmentMode any
+	AssessmentMode              any
 	AutomaticByPlatformSettings any
-	PatchMode any
+	PatchMode                   any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeys struct {
 	KeyData any
-	Path any
+	Path    any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh struct {
@@ -73,39 +73,39 @@ type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_Os
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration struct {
 	DisablePasswordAuthentication any
-	EnableVmagentPlatformUpdates any
-	PatchSettings any
-	ProvisionVmagent any
-	Ssh any
+	EnableVmagentPlatformUpdates  any
+	PatchSettings                 any
+	ProvisionVmagent              any
+	Ssh                           any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates struct {
 	CertificateStore any
-	CertificateUrl any
+	CertificateUrl   any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_Secrets struct {
-	SourceVault any
+	SourceVault       any
 	VaultCertificates any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContent struct {
 	ComponentName any
-	Content any
-	PassName any
-	SettingName any
+	Content       any
+	PassName      any
+	SettingName   any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettings struct {
-	AssessmentMode any
+	AssessmentMode              any
 	AutomaticByPlatformSettings any
-	EnableHotpatching any
-	PatchMode any
+	EnableHotpatching           any
+	PatchMode                   any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_Listeners struct {
 	CertificateUrl any
-	Protocol any
+	Protocol       any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm struct {
@@ -113,25 +113,25 @@ type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_Os
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration struct {
-	AdditionalUnattendContent any
-	EnableAutomaticUpdates any
+	AdditionalUnattendContent    any
+	EnableAutomaticUpdates       any
 	EnableVmagentPlatformUpdates any
-	PatchSettings any
-	ProvisionVmagent any
-	TimeZone any
-	WinRm any
+	PatchSettings                any
+	ProvisionVmagent             any
+	TimeZone                     any
+	WinRm                        any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_OsProfile struct {
-	AdminPassword any
-	AdminUsername any
-	AllowExtensionOperations any
-	ComputerName any
-	CustomData any
-	LinuxConfiguration any
+	AdminPassword               any
+	AdminUsername               any
+	AllowExtensionOperations    any
+	ComputerName                any
+	CustomData                  any
+	LinuxConfiguration          any
 	RequireGuestProvisionSignal any
-	Secrets any
-	WindowsConfiguration any
+	Secrets                     any
+	WindowsConfiguration        any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_EncryptionIdentity struct {
@@ -140,39 +140,39 @@ type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_Se
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_Imds struct {
 	InVmaccessControlProfileReferenceId any
-	Mode any
-	UseLocalFileRules any
+	Mode                                any
+	UseLocalFileRules                   any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings struct {
 	AddProxyAgentExtension any
-	Enabled any
-	Imds any
-	KeyIncarnationId any
-	Mode any
-	WireServer any
+	Enabled                any
+	Imds                   any
+	KeyIncarnationId       any
+	Mode                   any
+	WireServer             any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_UefiSettings struct {
 	SecureBootEnabled any
-	VTpmEnabled any
+	VTpmEnabled       any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile struct {
-	EncryptionAtHost any
+	EncryptionAtHost   any
 	EncryptionIdentity any
 	ProxyAgentSettings any
-	SecurityType any
-	UefiSettings any
+	SecurityType       any
+	UefiSettings       any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption struct {
 	DiskEncryptionSet any
-	Type any
+	Type              any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint struct {
-	Encryption any
+	Encryption             any
 	SourceDiskRestorePoint any
 }
 
@@ -181,17 +181,17 @@ type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_St
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties struct {
-	AvailabilityPolicy any
-	BurstingEnabled any
-	DiskAccessId any
-	DiskIopsreadOnly any
-	DiskMbpsReadOnly any
-	LogicalSectorSize any
-	MaxShares any
-	NetworkAccessPolicy any
+	AvailabilityPolicy         any
+	BurstingEnabled            any
+	DiskAccessId               any
+	DiskIopsreadOnly           any
+	DiskMbpsReadOnly           any
+	LogicalSectorSize          any
+	MaxShares                  any
+	NetworkAccessPolicy        any
 	OptimizedForFrequentAttach any
-	PerformancePlus any
-	Tier any
+	PerformancePlus            any
+	Tier                       any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties struct {
@@ -199,82 +199,82 @@ type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_St
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile struct {
-	DiskEncryptionSet any
+	DiskEncryptionSet      any
 	SecurityEncryptionType any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk struct {
 	AdditionalDiskProperties any
-	DiskEncryptionSet any
-	SecurityProfile any
-	StorageAccountType any
+	DiskEncryptionSet        any
+	SecurityProfile          any
+	StorageAccountType       any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks struct {
-	Caching any
-	DiskRestorePoint any
-	DiskSizeGb any
-	Lun any
-	ManagedDisk any
-	Name any
+	Caching                 any
+	DiskRestorePoint        any
+	DiskSizeGb              any
+	Lun                     any
+	ManagedDisk             any
+	Name                    any
 	WriteAcceleratorEnabled any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKey struct {
-	SecretUrl any
+	SecretUrl   any
 	SourceVault any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKey struct {
-	KeyUrl any
+	KeyUrl      any
 	SourceVault any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings struct {
 	DiskEncryptionKey any
-	Enabled any
-	KeyEncryptionKey any
+	Enabled           any
+	KeyEncryptionKey  any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk struct {
-	Caching any
-	DiskRestorePoint any
-	DiskSizeGb any
-	EncryptionSettings any
-	ManagedDisk any
-	Name any
-	OsType any
+	Caching                 any
+	DiskRestorePoint        any
+	DiskSizeGb              any
+	EncryptionSettings      any
+	ManagedDisk             any
+	Name                    any
+	OsType                  any
 	WriteAcceleratorEnabled any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile struct {
-	DataDisks any
+	DataDisks          any
 	DiskControllerType any
-	OsDisk any
+	OsDisk             any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties_SourceMetadata struct {
 	DiagnosticsProfile any
-	HardwareProfile any
-	HyperVgeneration any
-	LicenseType any
-	Location any
-	OsProfile any
-	SecurityProfile any
-	StorageProfile any
-	UserData any
-	VmId any
+	HardwareProfile    any
+	HyperVgeneration   any
+	LicenseType        any
+	Location           any
+	OsProfile          any
+	SecurityProfile    any
+	StorageProfile     any
+	UserData           any
+	VmId               any
 }
 
 type PointCollection_Value_Properties_RestorePoints_Properties struct {
-	ConsistencyMode any
-	ExcludeDisks any
-	InstanceView any
+	ConsistencyMode              any
+	ExcludeDisks                 any
+	InstanceView                 any
 	InstantAccessDurationMinutes any
-	ProvisioningState any
-	SourceMetadata any
-	SourceRestorePoint any
-	TimeCreated any
+	ProvisioningState            any
+	SourceMetadata               any
+	SourceRestorePoint           any
+	TimeCreated                  any
 }
 
 type PointCollection_Value_Properties_RestorePoints struct {
@@ -282,16 +282,16 @@ type PointCollection_Value_Properties_RestorePoints struct {
 }
 
 type PointCollection_Value_Properties_Source struct {
-	Id any
+	Id       any
 	Location any
 }
 
 type PointCollection_Value_Properties struct {
-	InstantAccess any
-	ProvisioningState any
+	InstantAccess            any
+	ProvisioningState        any
 	RestorePointCollectionId any
-	RestorePoints any
-	Source any
+	RestorePoints            any
+	Source                   any
 }
 
 type PointCollection_Value struct {
@@ -310,6 +310,5 @@ type PointCollectionAttrs struct {
 
 var PointCollection = ubx.DataSourceBinding{
 	WireType: "azure_restore_point_collection",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

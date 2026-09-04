@@ -13,10 +13,20 @@ class OpenapiWebhook_Properties_Runbook:
 
 @dataclasses.dataclass
 class OpenapiWebhook_Properties:
+    # Gets or sets the creation time.
+    creation_time: Any = None
+    # Gets or sets the description.
+    description: Any = None
     # Gets or sets the expiry time.
     expiry_time: Any = None
     # Gets or sets the value of the enabled flag of webhook.
     is_enabled: Any = None
+    # Gets or sets the last invoked time.
+    last_invoked_time: Any = None
+    # Details of the user who last modified the Webhook
+    last_modified_by: Any = None
+    # Gets or sets the last modified time.
+    last_modified_time: Any = None
     # Gets or sets the parameters of the job.
     parameters: Any = None
     # Gets or sets the name of the hybrid worker group the webhook job will run on.
@@ -31,8 +41,13 @@ _OpenapiWebhook_Properties_RunbookFields = {
 }
 
 _OpenapiWebhook_PropertiesFields = {
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
+    "description": ubx.FieldSpec(wire_name="description"),
     "expiry_time": ubx.FieldSpec(wire_name="expiry_time"),
     "is_enabled": ubx.FieldSpec(wire_name="is_enabled"),
+    "last_invoked_time": ubx.FieldSpec(wire_name="last_invoked_time"),
+    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
     "parameters": ubx.FieldSpec(wire_name="parameters"),
     "run_on": ubx.FieldSpec(wire_name="run_on"),
     "runbook": ubx.FieldSpec(

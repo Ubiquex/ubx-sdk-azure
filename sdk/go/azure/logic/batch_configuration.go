@@ -4,7 +4,7 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BatchConfiguration_Properties_ReleaseCriteria_Recurrence_Schedule_MonthlyOccurrences struct {
-	Day any
+	Day        any
 	Occurrence any
 }
 
@@ -57,55 +57,55 @@ type BatchConfiguration_Properties struct {
 }
 
 var BatchConfiguration_Properties_ReleaseCriteria_Recurrence_Schedule_MonthlyOccurrencesFields = ubx.FieldMap{
-		"Day": ubx.FieldSpec{WireName: "day"},
-		"Occurrence": ubx.FieldSpec{WireName: "occurrence"},
-	}
+	"Day":        ubx.FieldSpec{WireName: "day"},
+	"Occurrence": ubx.FieldSpec{WireName: "occurrence"},
+}
 
 var BatchConfiguration_Properties_ReleaseCriteria_Recurrence_ScheduleFields = ubx.FieldMap{
-		"Hours": ubx.FieldSpec{WireName: "hours"},
-		"Minutes": ubx.FieldSpec{WireName: "minutes"},
-		"MonthDays": ubx.FieldSpec{WireName: "month_days"},
-		"MonthlyOccurrences": ubx.FieldSpec{
-			WireName: "monthly_occurrences",
-			Kind: "list",
-			Fields: BatchConfiguration_Properties_ReleaseCriteria_Recurrence_Schedule_MonthlyOccurrencesFields,
-		},
-		"WeekDays": ubx.FieldSpec{WireName: "week_days"},
-	}
+	"Hours":     ubx.FieldSpec{WireName: "hours"},
+	"Minutes":   ubx.FieldSpec{WireName: "minutes"},
+	"MonthDays": ubx.FieldSpec{WireName: "month_days"},
+	"MonthlyOccurrences": ubx.FieldSpec{
+		WireName: "monthly_occurrences",
+		Kind:     "list",
+		Fields:   BatchConfiguration_Properties_ReleaseCriteria_Recurrence_Schedule_MonthlyOccurrencesFields,
+	},
+	"WeekDays": ubx.FieldSpec{WireName: "week_days"},
+}
 
 var BatchConfiguration_Properties_ReleaseCriteria_RecurrenceFields = ubx.FieldMap{
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Frequency": ubx.FieldSpec{WireName: "frequency"},
-		"Interval": ubx.FieldSpec{WireName: "interval"},
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "object",
-			Fields: BatchConfiguration_Properties_ReleaseCriteria_Recurrence_ScheduleFields,
-		},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-	}
+	"EndTime":   ubx.FieldSpec{WireName: "end_time"},
+	"Frequency": ubx.FieldSpec{WireName: "frequency"},
+	"Interval":  ubx.FieldSpec{WireName: "interval"},
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "object",
+		Fields:   BatchConfiguration_Properties_ReleaseCriteria_Recurrence_ScheduleFields,
+	},
+	"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	"TimeZone":  ubx.FieldSpec{WireName: "time_zone"},
+}
 
 var BatchConfiguration_Properties_ReleaseCriteriaFields = ubx.FieldMap{
-		"BatchSize": ubx.FieldSpec{WireName: "batch_size"},
-		"MessageCount": ubx.FieldSpec{WireName: "message_count"},
-		"Recurrence": ubx.FieldSpec{
-			WireName: "recurrence",
-			Kind: "object",
-			Fields: BatchConfiguration_Properties_ReleaseCriteria_RecurrenceFields,
-		},
-	}
+	"BatchSize":    ubx.FieldSpec{WireName: "batch_size"},
+	"MessageCount": ubx.FieldSpec{WireName: "message_count"},
+	"Recurrence": ubx.FieldSpec{
+		WireName: "recurrence",
+		Kind:     "object",
+		Fields:   BatchConfiguration_Properties_ReleaseCriteria_RecurrenceFields,
+	},
+}
 
 var BatchConfiguration_PropertiesFields = ubx.FieldMap{
-		"BatchGroupName": ubx.FieldSpec{WireName: "batch_group_name"},
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"ReleaseCriteria": ubx.FieldSpec{
-			WireName: "release_criteria",
-			Kind: "object",
-			Fields: BatchConfiguration_Properties_ReleaseCriteriaFields,
-		},
-	}
+	"BatchGroupName": ubx.FieldSpec{WireName: "batch_group_name"},
+	"ChangedTime":    ubx.FieldSpec{WireName: "changed_time"},
+	"CreatedTime":    ubx.FieldSpec{WireName: "created_time"},
+	"ReleaseCriteria": ubx.FieldSpec{
+		WireName: "release_criteria",
+		Kind:     "object",
+		Fields:   BatchConfiguration_Properties_ReleaseCriteriaFields,
+	},
+}
 
 type BatchConfigurationConfig struct {
 	// The batch configuration properties definition.
@@ -122,8 +122,8 @@ var BatchConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BatchConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   BatchConfiguration_PropertiesFields,
 		},
 	},
 }

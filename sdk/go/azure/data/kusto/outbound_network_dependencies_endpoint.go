@@ -5,22 +5,22 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OutboundNetworkDependenciesEndpoint_Value_Properties_Endpoints_EndpointDetails struct {
 	IpAddress any
-	Port any
+	Port      any
 }
 
 type OutboundNetworkDependenciesEndpoint_Value_Properties_Endpoints struct {
-	DomainName any
+	DomainName      any
 	EndpointDetails any
 }
 
 type OutboundNetworkDependenciesEndpoint_Value_Properties struct {
-	Category any
-	Endpoints any
+	Category          any
+	Endpoints         any
 	ProvisioningState any
 }
 
 type OutboundNetworkDependenciesEndpoint_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

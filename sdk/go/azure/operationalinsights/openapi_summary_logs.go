@@ -4,7 +4,7 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSummaryLogs_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -52,43 +52,43 @@ type OpenapiSummaryLogs_Properties struct {
 }
 
 var OpenapiSummaryLogs_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiSummaryLogs_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiSummaryLogs_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiSummaryLogs_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiSummaryLogs_Properties_RuleDefinitionFields = ubx.FieldMap{
-		"BinDelay": ubx.FieldSpec{WireName: "bin_delay"},
-		"BinSize": ubx.FieldSpec{WireName: "bin_size"},
-		"BinStartTime": ubx.FieldSpec{WireName: "bin_start_time"},
-		"DestinationTable": ubx.FieldSpec{WireName: "destination_table"},
-		"Query": ubx.FieldSpec{WireName: "query"},
-		"TimeSelector": ubx.FieldSpec{WireName: "time_selector"},
-	}
+	"BinDelay":         ubx.FieldSpec{WireName: "bin_delay"},
+	"BinSize":          ubx.FieldSpec{WireName: "bin_size"},
+	"BinStartTime":     ubx.FieldSpec{WireName: "bin_start_time"},
+	"DestinationTable": ubx.FieldSpec{WireName: "destination_table"},
+	"Query":            ubx.FieldSpec{WireName: "query"},
+	"TimeSelector":     ubx.FieldSpec{WireName: "time_selector"},
+}
 
 var OpenapiSummaryLogs_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"IsActive": ubx.FieldSpec{WireName: "is_active"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuleDefinition": ubx.FieldSpec{
-			WireName: "rule_definition",
-			Kind: "object",
-			Fields: OpenapiSummaryLogs_Properties_RuleDefinitionFields,
-		},
-		"RuleType": ubx.FieldSpec{WireName: "rule_type"},
-		"StatusCode": ubx.FieldSpec{WireName: "status_code"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"IsActive":          ubx.FieldSpec{WireName: "is_active"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuleDefinition": ubx.FieldSpec{
+		WireName: "rule_definition",
+		Kind:     "object",
+		Fields:   OpenapiSummaryLogs_Properties_RuleDefinitionFields,
+	},
+	"RuleType":   ubx.FieldSpec{WireName: "rule_type"},
+	"StatusCode": ubx.FieldSpec{WireName: "status_code"},
+}
 
 type OpenapiSummaryLogsConfig struct {
 	// Identity for the summary logs resource.
@@ -109,13 +109,13 @@ var OpenapiSummaryLogs = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiSummaryLogs_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiSummaryLogs_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSummaryLogs_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSummaryLogs_PropertiesFields,
 		},
 	},
 }

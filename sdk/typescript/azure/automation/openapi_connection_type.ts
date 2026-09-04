@@ -8,10 +8,16 @@ export interface OpenapiConnectionType_Properties_FieldDefinitions {
 }
 
 export interface OpenapiConnectionType_Properties {
+  /** Gets the creation time. */
+  creationTime?: string | Computed<string>;
+  /** Gets or sets the description. */
+  description?: string | Computed<string>;
   /** Gets or sets the field definitions of the connection type. */
-  fieldDefinitions: Record<string, OpenapiConnectionType_Properties_FieldDefinitions> | Computed<Record<string, OpenapiConnectionType_Properties_FieldDefinitions>>;
+  fieldDefinitions?: Record<string, OpenapiConnectionType_Properties_FieldDefinitions> | Computed<Record<string, OpenapiConnectionType_Properties_FieldDefinitions>>;
   /** Gets or sets a Boolean value to indicate if the connection type is global. */
   isGlobal?: boolean | Computed<boolean>;
+  /** Gets or sets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
 }
 
 const OpenapiConnectionType_Properties_FieldDefinitionsFields: FieldMap = {
@@ -21,12 +27,15 @@ const OpenapiConnectionType_Properties_FieldDefinitionsFields: FieldMap = {
 };
 
 const OpenapiConnectionType_PropertiesFields: FieldMap = {
+  creationTime: "creation_time",
+  description: "description",
   fieldDefinitions: {
     wireName: "field_definitions",
     kind: "map",
     fields: OpenapiConnectionType_Properties_FieldDefinitionsFields,
   },
   isGlobal: "is_global",
+  lastModifiedTime: "last_modified_time",
 };
 
 export interface OpenapiConnectionTypeConfig {

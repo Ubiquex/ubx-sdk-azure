@@ -23,15 +23,15 @@ type SqlpoolSqlPoolSecurityAlertPolicy_Properties struct {
 }
 
 var SqlpoolSqlPoolSecurityAlertPolicy_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"DisabledAlerts": ubx.FieldSpec{WireName: "disabled_alerts"},
-		"EmailAccountAdmins": ubx.FieldSpec{WireName: "email_account_admins"},
-		"EmailAddresses": ubx.FieldSpec{WireName: "email_addresses"},
-		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageAccountAccessKey": ubx.FieldSpec{WireName: "storage_account_access_key"},
-		"StorageEndpoint": ubx.FieldSpec{WireName: "storage_endpoint"},
-	}
+	"CreationTime":            ubx.FieldSpec{WireName: "creation_time"},
+	"DisabledAlerts":          ubx.FieldSpec{WireName: "disabled_alerts"},
+	"EmailAccountAdmins":      ubx.FieldSpec{WireName: "email_account_admins"},
+	"EmailAddresses":          ubx.FieldSpec{WireName: "email_addresses"},
+	"RetentionDays":           ubx.FieldSpec{WireName: "retention_days"},
+	"State":                   ubx.FieldSpec{WireName: "state"},
+	"StorageAccountAccessKey": ubx.FieldSpec{WireName: "storage_account_access_key"},
+	"StorageEndpoint":         ubx.FieldSpec{WireName: "storage_endpoint"},
+}
 
 type SqlpoolSqlPoolSecurityAlertPolicyConfig struct {
 	// Properties of a security alert policy.
@@ -48,8 +48,8 @@ var SqlpoolSqlPoolSecurityAlertPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolSqlPoolSecurityAlertPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolSqlPoolSecurityAlertPolicy_PropertiesFields,
 		},
 	},
 }

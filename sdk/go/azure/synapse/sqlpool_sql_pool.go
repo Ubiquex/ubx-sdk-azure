@@ -38,24 +38,24 @@ type SqlpoolSqlPool_Sku struct {
 }
 
 var SqlpoolSqlPool_PropertiesFields = ubx.FieldMap{
-		"Collation": ubx.FieldSpec{WireName: "collation"},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"MaxSizeBytes": ubx.FieldSpec{WireName: "max_size_bytes"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RecoverableDatabaseId": ubx.FieldSpec{WireName: "recoverable_database_id"},
-		"RestorePointInTime": ubx.FieldSpec{WireName: "restore_point_in_time"},
-		"SourceDatabaseDeletionDate": ubx.FieldSpec{WireName: "source_database_deletion_date"},
-		"SourceDatabaseId": ubx.FieldSpec{WireName: "source_database_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
-	}
+	"Collation":                  ubx.FieldSpec{WireName: "collation"},
+	"CreateMode":                 ubx.FieldSpec{WireName: "create_mode"},
+	"CreationDate":               ubx.FieldSpec{WireName: "creation_date"},
+	"MaxSizeBytes":               ubx.FieldSpec{WireName: "max_size_bytes"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"RecoverableDatabaseId":      ubx.FieldSpec{WireName: "recoverable_database_id"},
+	"RestorePointInTime":         ubx.FieldSpec{WireName: "restore_point_in_time"},
+	"SourceDatabaseDeletionDate": ubx.FieldSpec{WireName: "source_database_deletion_date"},
+	"SourceDatabaseId":           ubx.FieldSpec{WireName: "source_database_id"},
+	"Status":                     ubx.FieldSpec{WireName: "status"},
+	"StorageAccountType":         ubx.FieldSpec{WireName: "storage_account_type"},
+}
 
 var SqlpoolSqlPool_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type SqlpoolSqlPoolConfig struct {
 	// Properties of a SQL Analytics pool
@@ -76,13 +76,13 @@ var SqlpoolSqlPool = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolSqlPool_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolSqlPool_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: SqlpoolSqlPool_SkuFields,
+			Kind:     "object",
+			Fields:   SqlpoolSqlPool_SkuFields,
 		},
 	},
 }

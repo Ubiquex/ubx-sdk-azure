@@ -97,100 +97,100 @@ type DtlServiceFabric_Properties struct {
 }
 
 var DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrenceFields = ubx.FieldMap{
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Time": ubx.FieldSpec{WireName: "time"},
+}
 
 var DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrenceFields = ubx.FieldMap{
-		"Minute": ubx.FieldSpec{WireName: "minute"},
-	}
+	"Minute": ubx.FieldSpec{WireName: "minute"},
+}
 
 var DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettingsFields = ubx.FieldMap{
-		"EmailRecipient": ubx.FieldSpec{WireName: "email_recipient"},
-		"NotificationLocale": ubx.FieldSpec{WireName: "notification_locale"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TimeInMinutes": ubx.FieldSpec{WireName: "time_in_minutes"},
-		"WebhookUrl": ubx.FieldSpec{WireName: "webhook_url"},
-	}
+	"EmailRecipient":     ubx.FieldSpec{WireName: "email_recipient"},
+	"NotificationLocale": ubx.FieldSpec{WireName: "notification_locale"},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+	"TimeInMinutes":      ubx.FieldSpec{WireName: "time_in_minutes"},
+	"WebhookUrl":         ubx.FieldSpec{WireName: "webhook_url"},
+}
 
 var DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrenceFields = ubx.FieldMap{
-		"Time": ubx.FieldSpec{WireName: "time"},
-		"Weekdays": ubx.FieldSpec{WireName: "weekdays"},
-	}
+	"Time":     ubx.FieldSpec{WireName: "time"},
+	"Weekdays": ubx.FieldSpec{WireName: "weekdays"},
+}
 
 var DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"DailyRecurrence": ubx.FieldSpec{
-			WireName: "daily_recurrence",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrenceFields,
-		},
-		"HourlyRecurrence": ubx.FieldSpec{
-			WireName: "hourly_recurrence",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrenceFields,
-		},
-		"NotificationSettings": ubx.FieldSpec{
-			WireName: "notification_settings",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettingsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-		"TaskType": ubx.FieldSpec{WireName: "task_type"},
-		"TimeZoneId": ubx.FieldSpec{WireName: "time_zone_id"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"WeeklyRecurrence": ubx.FieldSpec{
-			WireName: "weekly_recurrence",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrenceFields,
-		},
-	}
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"DailyRecurrence": ubx.FieldSpec{
+		WireName: "daily_recurrence",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrenceFields,
+	},
+	"HourlyRecurrence": ubx.FieldSpec{
+		WireName: "hourly_recurrence",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrenceFields,
+	},
+	"NotificationSettings": ubx.FieldSpec{
+		WireName: "notification_settings",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettingsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"TargetResourceId":  ubx.FieldSpec{WireName: "target_resource_id"},
+	"TaskType":          ubx.FieldSpec{WireName: "task_type"},
+	"TimeZoneId":        ubx.FieldSpec{WireName: "time_zone_id"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+	"WeeklyRecurrence": ubx.FieldSpec{
+		WireName: "weekly_recurrence",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrenceFields,
+	},
+}
 
 var DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_PropertiesFields,
-		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdown_PropertiesFields,
+	},
+	"Tags": ubx.FieldSpec{WireName: "tags"},
+}
 
 var DtlServiceFabric_Properties_ApplicableSchedule_PropertiesFields = ubx.FieldMap{
-		"LabVmsShutdown": ubx.FieldSpec{
-			WireName: "lab_vms_shutdown",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields,
-		},
-		"LabVmsStartup": ubx.FieldSpec{
-			WireName: "lab_vms_startup",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields,
-		},
-	}
+	"LabVmsShutdown": ubx.FieldSpec{
+		WireName: "lab_vms_shutdown",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields,
+	},
+	"LabVmsStartup": ubx.FieldSpec{
+		WireName: "lab_vms_startup",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields,
+	},
+}
 
 var DtlServiceFabric_Properties_ApplicableScheduleFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableSchedule_PropertiesFields,
-		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableSchedule_PropertiesFields,
+	},
+	"Tags": ubx.FieldSpec{WireName: "tags"},
+}
 
 var DtlServiceFabric_PropertiesFields = ubx.FieldMap{
-		"ApplicableSchedule": ubx.FieldSpec{
-			WireName: "applicable_schedule",
-			Kind: "object",
-			Fields: DtlServiceFabric_Properties_ApplicableScheduleFields,
-		},
-		"EnvironmentId": ubx.FieldSpec{WireName: "environment_id"},
-		"ExternalServiceFabricId": ubx.FieldSpec{WireName: "external_service_fabric_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-	}
+	"ApplicableSchedule": ubx.FieldSpec{
+		WireName: "applicable_schedule",
+		Kind:     "object",
+		Fields:   DtlServiceFabric_Properties_ApplicableScheduleFields,
+	},
+	"EnvironmentId":           ubx.FieldSpec{WireName: "environment_id"},
+	"ExternalServiceFabricId": ubx.FieldSpec{WireName: "external_service_fabric_id"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"UniqueIdentifier":        ubx.FieldSpec{WireName: "unique_identifier"},
+}
 
 type DtlServiceFabricConfig struct {
 	// The geo-location where the resource lives
@@ -220,8 +220,8 @@ var DtlServiceFabric = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlServiceFabric_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlServiceFabric_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

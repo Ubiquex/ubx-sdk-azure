@@ -4,11 +4,11 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SreagentSupportedAgentModel_Value_Properties struct {
-	Default any
-	Model any
-	ModelDisplayName any
-	Multiplier any
-	Provider any
+	Default             any
+	Model               any
+	ModelDisplayName    any
+	Multiplier          any
+	Provider            any
 	ProviderDisplayName any
 }
 
@@ -28,6 +28,5 @@ type SreagentSupportedAgentModelAttrs struct {
 
 var SreagentSupportedAgentModel = ubx.DataSourceBinding{
 	WireType: "azure_app_sreagent_supported_agent_model",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

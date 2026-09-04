@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SupportedRuntimeVersion_Value struct {
 	Platform any
-	Value any
-	Version any
+	Value    any
+	Version  any
 }
 
 type SupportedRuntimeVersionConfig struct {

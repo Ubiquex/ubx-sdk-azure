@@ -9,65 +9,65 @@ type VirtualMachineTemplate_Value_ExtendedLocation struct {
 }
 
 type VirtualMachineTemplate_Value_Properties_Disks_StorageQoSpolicy struct {
-	Id any
+	Id   any
 	Name any
 }
 
 type VirtualMachineTemplate_Value_Properties_Disks struct {
-	Bus any
-	BusType any
-	CreateDiffDisk any
-	DiskId any
-	DiskSizeGb any
-	DisplayName any
-	Lun any
-	MaxDiskSizeGb any
-	Name any
+	Bus              any
+	BusType          any
+	CreateDiffDisk   any
+	DiskId           any
+	DiskSizeGb       any
+	DisplayName      any
+	Lun              any
+	MaxDiskSizeGb    any
+	Name             any
 	StorageQoSpolicy any
-	TemplateDiskId any
-	VhdFormatType any
-	VhdType any
-	VolumeType any
+	TemplateDiskId   any
+	VhdFormatType    any
+	VhdType          any
+	VolumeType       any
 }
 
 type VirtualMachineTemplate_Value_Properties_NetworkInterfaces struct {
-	DisplayName any
-	Ipv4AddressType any
-	Ipv4Addresses any
-	Ipv6AddressType any
-	Ipv6Addresses any
-	MacAddress any
-	MacAddressType any
-	Name any
-	NetworkName any
-	NicId any
+	DisplayName      any
+	Ipv4AddressType  any
+	Ipv4Addresses    any
+	Ipv6AddressType  any
+	Ipv6Addresses    any
+	MacAddress       any
+	MacAddressType   any
+	Name             any
+	NetworkName      any
+	NicId            any
 	VirtualNetworkId any
 }
 
 type VirtualMachineTemplate_Value_Properties struct {
-	ComputerName any
-	CpuCount any
-	Disks any
+	ComputerName         any
+	CpuCount             any
+	Disks                any
 	DynamicMemoryEnabled any
-	DynamicMemoryMaxMb any
-	DynamicMemoryMinMb any
-	Generation any
-	InventoryItemId any
-	IsCustomizable any
-	IsHighlyAvailable any
+	DynamicMemoryMaxMb   any
+	DynamicMemoryMinMb   any
+	Generation           any
+	InventoryItemId      any
+	IsCustomizable       any
+	IsHighlyAvailable    any
 	LimitCpuForMigration any
-	MemoryMb any
-	NetworkInterfaces any
-	OsName any
-	OsType any
-	ProvisioningState any
-	Uuid any
-	VmmServerId any
+	MemoryMb             any
+	NetworkInterfaces    any
+	OsName               any
+	OsType               any
+	ProvisioningState    any
+	Uuid                 any
+	VmmServerId          any
 }
 
 type VirtualMachineTemplate_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualMachineTemplateConfig struct {
@@ -82,6 +82,5 @@ type VirtualMachineTemplateAttrs struct {
 
 var VirtualMachineTemplate = ubx.DataSourceBinding{
 	WireType: "azure_scvmm_virtual_machine_template",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

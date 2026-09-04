@@ -11,9 +11,9 @@ type BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy_Properties s
 }
 
 var BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy_PropertiesFields = ubx.FieldMap{
-		"DiffBackupIntervalInHours": ubx.FieldSpec{WireName: "diff_backup_interval_in_hours"},
-		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
-	}
+	"DiffBackupIntervalInHours": ubx.FieldSpec{WireName: "diff_backup_interval_in_hours"},
+	"RetentionDays":             ubx.FieldSpec{WireName: "retention_days"},
+}
 
 type BackupshorttermretentionpoliciesBackupShortTermRetentionPolicyConfig struct {
 	// Properties of a short term retention policy
@@ -30,8 +30,8 @@ var BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy = ubx.Resourc
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   BackupshorttermretentionpoliciesBackupShortTermRetentionPolicy_PropertiesFields,
 		},
 	},
 }

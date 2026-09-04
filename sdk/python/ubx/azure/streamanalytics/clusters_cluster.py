@@ -41,8 +41,6 @@ _ClustersCluster_SkuFields = {
 
 @dataclasses.dataclass
 class ClustersClusterConfig:
-    # The current entity tag for the cluster. This is an opaque string. You can use it to detect whether the resource has changed between requests. You can also use it in the If-Match or If-None-Match headers for write operations for optimistic concurrency.
-    etag: Any = None
     # The properties associated with a Stream Analytics cluster.
     properties: Any = None
     # The SKU of the cluster. This determines the size/capacity of the cluster. Required on PUT (CreateOrUpdate) requests.
@@ -60,7 +58,6 @@ class ClustersClusterAttrs:
 ClustersCluster = ubx.ResourceBinding(
     wire_type="azure_streamanalytics_clusters_cluster",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

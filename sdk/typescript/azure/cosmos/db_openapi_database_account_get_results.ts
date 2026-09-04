@@ -69,6 +69,12 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties_Cors {
   maxAgeInSeconds?: number | Computed<number>;
 }
 
+export interface DbOpenapiDatabaseAccountGetResults_Properties_FailoverPolicies {
+  failoverPriority?: number | Computed<number>;
+  id?: string | Computed<string>;
+  locationName?: string | Computed<string>;
+}
+
 export interface DbOpenapiDatabaseAccountGetResults_Properties_IpRules {
   ipAddressOrRange?: string | Computed<string>;
 }
@@ -96,6 +102,27 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties_Locations {
   isZoneRedundant?: boolean | Computed<boolean>;
   locationName?: string | Computed<string>;
   provisioningState?: string | Computed<string>;
+}
+
+export interface DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  id?: string | Computed<string>;
+}
+
+export interface DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  actionsRequired?: string | Computed<string>;
+  description?: string | Computed<string>;
+  status?: string | Computed<string>;
+}
+
+export interface DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties {
+  groupId?: string | Computed<string>;
+  privateEndpoint?: DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  privateLinkServiceConnectionState?: DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  provisioningState?: string | Computed<string>;
+}
+
+export interface DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections {
+  properties?: DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties | Computed<DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties>;
 }
 
 export interface DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestore {
@@ -151,7 +178,7 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties {
   /** Indicates the status of the Customer Managed Key feature on the account. In case there are errors, the property provides troubleshooting guidance. */
   customerManagedKeyStatus?: string | Computed<string>;
   /** The offer type for the Cosmos DB database account. */
-  databaseAccountOfferType: string | Computed<string>;
+  databaseAccountOfferType?: string | Computed<string>;
   /** The default identity for accessing key vault used in features like customer managed keys. The default identity needs to be explicitly set by the users. It can be "FirstPartyIdentity", "SystemAssignedIdentity" and more. */
   defaultIdentity?: string | Computed<string>;
   /** Enum to indicate default priorityLevel of requests */
@@ -160,6 +187,8 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties {
   disableKeyBasedMetadataWriteAccess?: boolean | Computed<boolean>;
   /** Opt-out of local authentication and ensure only MSI and AAD can be used exclusively for authentication. */
   disableLocalAuth?: boolean | Computed<boolean>;
+  /** The connection endpoint for the Cosmos DB database account. */
+  documentEndpoint?: string | Computed<string>;
   /** Flag to indicate whether to enable storage analytics. */
   enableAnalyticalStorage?: boolean | Computed<boolean>;
   /** Enables automatic failover of the write region in the rare event that the region is unavailable due to an outage. Automatic failover will result in a new write region for the account and is chosen based on the failover priorities configured for the account. */
@@ -180,28 +209,42 @@ export interface DbOpenapiDatabaseAccountGetResults_Properties {
   enablePriorityBasedExecution?: boolean | Computed<boolean>;
   /** Flag to indicate enabling/disabling of hierarchical partition key ID last level enforcement on the account. */
   enforceHierarchicalPartitionKeyIdLastLevel?: boolean | Computed<boolean>;
+  /** An array that contains the regions ordered by their failover priorities. */
+  failoverPolicies?: DbOpenapiDatabaseAccountGetResults_Properties_FailoverPolicies[] | Computed<DbOpenapiDatabaseAccountGetResults_Properties_FailoverPolicies[]>;
+  /** A unique identifier assigned to the database account */
+  instanceId?: string | Computed<string>;
   /** List of IpRules. */
   ipRules?: DbOpenapiDatabaseAccountGetResults_Properties_IpRules[] | Computed<DbOpenapiDatabaseAccountGetResults_Properties_IpRules[]>;
   /** Flag to indicate whether to enable/disable Virtual Network ACL rules. */
   isVirtualNetworkFilterEnabled?: boolean | Computed<boolean>;
   /** The URI of the key vault */
   keyVaultKeyUri?: string | Computed<string>;
+  /** The version of the Customer Managed Key currently being used by the account */
+  keyVaultKeyUriVersion?: string | Computed<string>;
   /** The metadata related to each access key for the given Cosmos DB database account. */
   keysMetadata?: DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata | Computed<DbOpenapiDatabaseAccountGetResults_Properties_KeysMetadata>;
   /** An array that contains the georeplication locations enabled for the Cosmos DB account. */
-  locations: DbOpenapiDatabaseAccountGetResults_Properties_Locations[] | Computed<DbOpenapiDatabaseAccountGetResults_Properties_Locations[]>;
+  locations?: DbOpenapiDatabaseAccountGetResults_Properties_Locations[] | Computed<DbOpenapiDatabaseAccountGetResults_Properties_Locations[]>;
   /** Indicates the minimum allowed Tls version. The default is Tls 1.0, except for Cassandra and Mongo API's, which only work with Tls 1.2. */
   minimalTlsVersion?: string | Computed<string>;
   /** Indicates what services are allowed to bypass firewall checks. */
   networkAclBypass?: string | Computed<string>;
   /** An array that contains the Resource Ids for Network Acl Bypass for the Cosmos DB account. */
   networkAclBypassResourceIds?: string[] | Computed<string[]>;
+  /** List of Private Endpoint Connections configured for the Cosmos DB account. */
+  privateEndpointConnections?: DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections[] | Computed<DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections[]>;
+  /** The provisioning state of the resource. */
+  provisioningState?: string | Computed<string>;
   /** Whether requests from Public Network are allowed */
   publicNetworkAccess?: string | Computed<string>;
+  /** An array that contains of the read locations enabled for the Cosmos DB account. */
+  readLocations?: DbOpenapiDatabaseAccountGetResults_Properties_Locations[] | Computed<DbOpenapiDatabaseAccountGetResults_Properties_Locations[]>;
   /** Parameters to indicate the information about the restore. */
   restoreParameters?: DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters | Computed<DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters>;
   /** List of Virtual Network ACL rules configured for the Cosmos DB account. */
   virtualNetworkRules?: DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRules[] | Computed<DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRules[]>;
+  /** An array that contains the write location for the Cosmos DB account. */
+  writeLocations?: DbOpenapiDatabaseAccountGetResults_Properties_Locations[] | Computed<DbOpenapiDatabaseAccountGetResults_Properties_Locations[]>;
 }
 
 const DbOpenapiDatabaseAccountGetResults_Identity_UserAssignedIdentitiesFields: FieldMap = {
@@ -265,6 +308,12 @@ const DbOpenapiDatabaseAccountGetResults_Properties_CorsFields: FieldMap = {
   maxAgeInSeconds: "max_age_in_seconds",
 };
 
+const DbOpenapiDatabaseAccountGetResults_Properties_FailoverPoliciesFields: FieldMap = {
+  failoverPriority: "failover_priority",
+  id: "id",
+  locationName: "location_name",
+};
+
 const DbOpenapiDatabaseAccountGetResults_Properties_IpRulesFields: FieldMap = {
   ipAddressOrRange: "ip_address_or_range",
 };
@@ -303,6 +352,39 @@ const DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields: FieldMap = 
   isZoneRedundant: "is_zone_redundant",
   locationName: "location_name",
   provisioningState: "provisioning_state",
+};
+
+const DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields: FieldMap = {
+  id: "id",
+};
+
+const DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields: FieldMap = {
+  actionsRequired: "actions_required",
+  description: "description",
+  status: "status",
+};
+
+const DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_PropertiesFields: FieldMap = {
+  groupId: "group_id",
+  privateEndpoint: {
+    wireName: "private_endpoint",
+    kind: "object",
+    fields: DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+  },
+  privateLinkServiceConnectionState: {
+    wireName: "private_link_service_connection_state",
+    kind: "object",
+    fields: DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+  },
+  provisioningState: "provisioning_state",
+};
+
+const DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnectionsFields: FieldMap = {
+  properties: {
+    wireName: "properties",
+    kind: "object",
+    fields: DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnections_PropertiesFields,
+  },
 };
 
 const DbOpenapiDatabaseAccountGetResults_Properties_RestoreParameters_DatabasesToRestoreFields: FieldMap = {
@@ -382,6 +464,7 @@ const DbOpenapiDatabaseAccountGetResults_PropertiesFields: FieldMap = {
   defaultPriorityLevel: "default_priority_level",
   disableKeyBasedMetadataWriteAccess: "disable_key_based_metadata_write_access",
   disableLocalAuth: "disable_local_auth",
+  documentEndpoint: "document_endpoint",
   enableAnalyticalStorage: "enable_analytical_storage",
   enableAutomaticFailover: "enable_automatic_failover",
   enableBurstCapacity: "enable_burst_capacity",
@@ -392,6 +475,12 @@ const DbOpenapiDatabaseAccountGetResults_PropertiesFields: FieldMap = {
   enablePerRegionPerPartitionAutoscale: "enable_per_region_per_partition_autoscale",
   enablePriorityBasedExecution: "enable_priority_based_execution",
   enforceHierarchicalPartitionKeyIdLastLevel: "enforce_hierarchical_partition_key_id_last_level",
+  failoverPolicies: {
+    wireName: "failover_policies",
+    kind: "list",
+    fields: DbOpenapiDatabaseAccountGetResults_Properties_FailoverPoliciesFields,
+  },
+  instanceId: "instance_id",
   ipRules: {
     wireName: "ip_rules",
     kind: "list",
@@ -399,6 +488,7 @@ const DbOpenapiDatabaseAccountGetResults_PropertiesFields: FieldMap = {
   },
   isVirtualNetworkFilterEnabled: "is_virtual_network_filter_enabled",
   keyVaultKeyUri: "key_vault_key_uri",
+  keyVaultKeyUriVersion: "key_vault_key_uri_version",
   keysMetadata: {
     wireName: "keys_metadata",
     kind: "object",
@@ -412,7 +502,18 @@ const DbOpenapiDatabaseAccountGetResults_PropertiesFields: FieldMap = {
   minimalTlsVersion: "minimal_tls_version",
   networkAclBypass: "network_acl_bypass",
   networkAclBypassResourceIds: "network_acl_bypass_resource_ids",
+  privateEndpointConnections: {
+    wireName: "private_endpoint_connections",
+    kind: "list",
+    fields: DbOpenapiDatabaseAccountGetResults_Properties_PrivateEndpointConnectionsFields,
+  },
+  provisioningState: "provisioning_state",
   publicNetworkAccess: "public_network_access",
+  readLocations: {
+    wireName: "read_locations",
+    kind: "list",
+    fields: DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields,
+  },
   restoreParameters: {
     wireName: "restore_parameters",
     kind: "object",
@@ -422,6 +523,11 @@ const DbOpenapiDatabaseAccountGetResults_PropertiesFields: FieldMap = {
     wireName: "virtual_network_rules",
     kind: "list",
     fields: DbOpenapiDatabaseAccountGetResults_Properties_VirtualNetworkRulesFields,
+  },
+  writeLocations: {
+    wireName: "write_locations",
+    kind: "list",
+    fields: DbOpenapiDatabaseAccountGetResults_Properties_LocationsFields,
   },
 };
 

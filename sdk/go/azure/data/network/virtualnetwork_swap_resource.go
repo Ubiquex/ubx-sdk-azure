@@ -12,20 +12,20 @@ type VirtualnetworkSwapResource_Value struct {
 }
 
 type VirtualnetworkSwapResourceConfig struct {
-	GroupName any
+	GroupName    any
 	ResourceName any
 }
 
 type VirtualnetworkSwapResourceAttrs struct {
-	GroupName any
+	GroupName    any
 	ResourceName any
-	Value any
+	Value        any
 }
 
 var VirtualnetworkSwapResource = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_swap_resource",
 	Fields: ubx.FieldMap{
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
+		"GroupName":    ubx.FieldSpec{WireName: "group_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

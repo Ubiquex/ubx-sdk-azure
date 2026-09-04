@@ -167,15 +167,15 @@ type NamespaceResource_Properties_PrivateEndpointConnections_Properties_PrivateE
 
 type NamespaceResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type NamespaceResource_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type NamespaceResource_Properties_PrivateEndpointConnections struct {
@@ -239,262 +239,262 @@ type NamespaceResource_Sku struct {
 }
 
 var NamespaceResource_Properties_NetworkAcls_IpRulesFields = ubx.FieldMap{
-		"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-	}
+	"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
+	"Rights": ubx.FieldSpec{WireName: "rights"},
+}
 
 var NamespaceResource_Properties_NetworkAcls_PublicNetworkRuleFields = ubx.FieldMap{
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-	}
+	"Rights": ubx.FieldSpec{WireName: "rights"},
+}
 
 var NamespaceResource_Properties_NetworkAclsFields = ubx.FieldMap{
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: NamespaceResource_Properties_NetworkAcls_IpRulesFields,
-		},
-		"PublicNetworkRule": ubx.FieldSpec{
-			WireName: "public_network_rule",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_NetworkAcls_PublicNetworkRuleFields,
-		},
-	}
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   NamespaceResource_Properties_NetworkAcls_IpRulesFields,
+	},
+	"PublicNetworkRule": ubx.FieldSpec{
+		WireName: "public_network_rule",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_NetworkAcls_PublicNetworkRuleFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentials_AdmCredential_PropertiesFields = ubx.FieldMap{
-		"AuthTokenUrl": ubx.FieldSpec{WireName: "auth_token_url"},
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-	}
+	"AuthTokenUrl": ubx.FieldSpec{WireName: "auth_token_url"},
+	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+}
 
 var NamespaceResource_Properties_PnsCredentials_AdmCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_AdmCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_AdmCredential_PropertiesFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentials_ApnsCredential_PropertiesFields = ubx.FieldMap{
-		"ApnsCertificate": ubx.FieldSpec{WireName: "apns_certificate"},
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"AppName": ubx.FieldSpec{WireName: "app_name"},
-		"CertificateKey": ubx.FieldSpec{WireName: "certificate_key"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"KeyId": ubx.FieldSpec{WireName: "key_id"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Token": ubx.FieldSpec{WireName: "token"},
-	}
+	"ApnsCertificate": ubx.FieldSpec{WireName: "apns_certificate"},
+	"AppId":           ubx.FieldSpec{WireName: "app_id"},
+	"AppName":         ubx.FieldSpec{WireName: "app_name"},
+	"CertificateKey":  ubx.FieldSpec{WireName: "certificate_key"},
+	"Endpoint":        ubx.FieldSpec{WireName: "endpoint"},
+	"KeyId":           ubx.FieldSpec{WireName: "key_id"},
+	"Thumbprint":      ubx.FieldSpec{WireName: "thumbprint"},
+	"Token":           ubx.FieldSpec{WireName: "token"},
+}
 
 var NamespaceResource_Properties_PnsCredentials_ApnsCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_ApnsCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_ApnsCredential_PropertiesFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentials_BaiduCredential_PropertiesFields = ubx.FieldMap{
-		"BaiduApiKey": ubx.FieldSpec{WireName: "baidu_api_key"},
-		"BaiduEndPoint": ubx.FieldSpec{WireName: "baidu_end_point"},
-		"BaiduSecretKey": ubx.FieldSpec{WireName: "baidu_secret_key"},
-	}
+	"BaiduApiKey":    ubx.FieldSpec{WireName: "baidu_api_key"},
+	"BaiduEndPoint":  ubx.FieldSpec{WireName: "baidu_end_point"},
+	"BaiduSecretKey": ubx.FieldSpec{WireName: "baidu_secret_key"},
+}
 
 var NamespaceResource_Properties_PnsCredentials_BaiduCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_BaiduCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_BaiduCredential_PropertiesFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentials_BrowserCredential_PropertiesFields = ubx.FieldMap{
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"VapidPrivateKey": ubx.FieldSpec{WireName: "vapid_private_key"},
-		"VapidPublicKey": ubx.FieldSpec{WireName: "vapid_public_key"},
-	}
+	"Subject":         ubx.FieldSpec{WireName: "subject"},
+	"VapidPrivateKey": ubx.FieldSpec{WireName: "vapid_private_key"},
+	"VapidPublicKey":  ubx.FieldSpec{WireName: "vapid_public_key"},
+}
 
 var NamespaceResource_Properties_PnsCredentials_BrowserCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_BrowserCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_BrowserCredential_PropertiesFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentials_GcmCredential_PropertiesFields = ubx.FieldMap{
-		"GcmEndpoint": ubx.FieldSpec{WireName: "gcm_endpoint"},
-		"GoogleApiKey": ubx.FieldSpec{WireName: "google_api_key"},
-	}
+	"GcmEndpoint":  ubx.FieldSpec{WireName: "gcm_endpoint"},
+	"GoogleApiKey": ubx.FieldSpec{WireName: "google_api_key"},
+}
 
 var NamespaceResource_Properties_PnsCredentials_GcmCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_GcmCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_GcmCredential_PropertiesFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentials_MpnsCredential_PropertiesFields = ubx.FieldMap{
-		"CertificateKey": ubx.FieldSpec{WireName: "certificate_key"},
-		"MpnsCertificate": ubx.FieldSpec{WireName: "mpns_certificate"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"CertificateKey":  ubx.FieldSpec{WireName: "certificate_key"},
+	"MpnsCertificate": ubx.FieldSpec{WireName: "mpns_certificate"},
+	"Thumbprint":      ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 var NamespaceResource_Properties_PnsCredentials_MpnsCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_MpnsCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_MpnsCredential_PropertiesFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentials_WnsCredential_PropertiesFields = ubx.FieldMap{
-		"CertificateKey": ubx.FieldSpec{WireName: "certificate_key"},
-		"PackageSid": ubx.FieldSpec{WireName: "package_sid"},
-		"SecretKey": ubx.FieldSpec{WireName: "secret_key"},
-		"WindowsLiveEndpoint": ubx.FieldSpec{WireName: "windows_live_endpoint"},
-		"WnsCertificate": ubx.FieldSpec{WireName: "wns_certificate"},
-	}
+	"CertificateKey":      ubx.FieldSpec{WireName: "certificate_key"},
+	"PackageSid":          ubx.FieldSpec{WireName: "package_sid"},
+	"SecretKey":           ubx.FieldSpec{WireName: "secret_key"},
+	"WindowsLiveEndpoint": ubx.FieldSpec{WireName: "windows_live_endpoint"},
+	"WnsCertificate":      ubx.FieldSpec{WireName: "wns_certificate"},
+}
 
 var NamespaceResource_Properties_PnsCredentials_WnsCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_WnsCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_WnsCredential_PropertiesFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentials_XiaomiCredential_PropertiesFields = ubx.FieldMap{
-		"AppSecret": ubx.FieldSpec{WireName: "app_secret"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-	}
+	"AppSecret": ubx.FieldSpec{WireName: "app_secret"},
+	"Endpoint":  ubx.FieldSpec{WireName: "endpoint"},
+}
 
 var NamespaceResource_Properties_PnsCredentials_XiaomiCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_XiaomiCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_XiaomiCredential_PropertiesFields,
+	},
+}
 
 var NamespaceResource_Properties_PnsCredentialsFields = ubx.FieldMap{
-		"AdmCredential": ubx.FieldSpec{
-			WireName: "adm_credential",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_AdmCredentialFields,
-		},
-		"ApnsCredential": ubx.FieldSpec{
-			WireName: "apns_credential",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_ApnsCredentialFields,
-		},
-		"BaiduCredential": ubx.FieldSpec{
-			WireName: "baidu_credential",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_BaiduCredentialFields,
-		},
-		"BrowserCredential": ubx.FieldSpec{
-			WireName: "browser_credential",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_BrowserCredentialFields,
-		},
-		"GcmCredential": ubx.FieldSpec{
-			WireName: "gcm_credential",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_GcmCredentialFields,
-		},
-		"MpnsCredential": ubx.FieldSpec{
-			WireName: "mpns_credential",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_MpnsCredentialFields,
-		},
-		"WnsCredential": ubx.FieldSpec{
-			WireName: "wns_credential",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_WnsCredentialFields,
-		},
-		"XiaomiCredential": ubx.FieldSpec{
-			WireName: "xiaomi_credential",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentials_XiaomiCredentialFields,
-		},
-	}
+	"AdmCredential": ubx.FieldSpec{
+		WireName: "adm_credential",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_AdmCredentialFields,
+	},
+	"ApnsCredential": ubx.FieldSpec{
+		WireName: "apns_credential",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_ApnsCredentialFields,
+	},
+	"BaiduCredential": ubx.FieldSpec{
+		WireName: "baidu_credential",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_BaiduCredentialFields,
+	},
+	"BrowserCredential": ubx.FieldSpec{
+		WireName: "browser_credential",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_BrowserCredentialFields,
+	},
+	"GcmCredential": ubx.FieldSpec{
+		WireName: "gcm_credential",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_GcmCredentialFields,
+	},
+	"MpnsCredential": ubx.FieldSpec{
+		WireName: "mpns_credential",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_MpnsCredentialFields,
+	},
+	"WnsCredential": ubx.FieldSpec{
+		WireName: "wns_credential",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_WnsCredentialFields,
+	},
+	"XiaomiCredential": ubx.FieldSpec{
+		WireName: "xiaomi_credential",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentials_XiaomiCredentialFields,
+	},
+}
 
 var NamespaceResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var NamespaceResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var NamespaceResource_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var NamespaceResource_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var NamespaceResource_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"Critical": ubx.FieldSpec{WireName: "critical"},
-		"DataCenter": ubx.FieldSpec{WireName: "data_center"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"MetricId": ubx.FieldSpec{WireName: "metric_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NamespaceType": ubx.FieldSpec{WireName: "namespace_type"},
-		"NetworkAcls": ubx.FieldSpec{
-			WireName: "network_acls",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_NetworkAclsFields,
-		},
-		"PnsCredentials": ubx.FieldSpec{
-			WireName: "pns_credentials",
-			Kind: "object",
-			Fields: NamespaceResource_Properties_PnsCredentialsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: NamespaceResource_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-		"ReplicationRegion": ubx.FieldSpec{WireName: "replication_region"},
-		"ScaleUnit": ubx.FieldSpec{WireName: "scale_unit"},
-		"ServiceBusEndpoint": ubx.FieldSpec{WireName: "service_bus_endpoint"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"ZoneRedundancy": ubx.FieldSpec{WireName: "zone_redundancy"},
-	}
+	"CreatedAt":     ubx.FieldSpec{WireName: "created_at"},
+	"Critical":      ubx.FieldSpec{WireName: "critical"},
+	"DataCenter":    ubx.FieldSpec{WireName: "data_center"},
+	"Enabled":       ubx.FieldSpec{WireName: "enabled"},
+	"MetricId":      ubx.FieldSpec{WireName: "metric_id"},
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"NamespaceType": ubx.FieldSpec{WireName: "namespace_type"},
+	"NetworkAcls": ubx.FieldSpec{
+		WireName: "network_acls",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_NetworkAclsFields,
+	},
+	"PnsCredentials": ubx.FieldSpec{
+		WireName: "pns_credentials",
+		Kind:     "object",
+		Fields:   NamespaceResource_Properties_PnsCredentialsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   NamespaceResource_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"Region":              ubx.FieldSpec{WireName: "region"},
+	"ReplicationRegion":   ubx.FieldSpec{WireName: "replication_region"},
+	"ScaleUnit":           ubx.FieldSpec{WireName: "scale_unit"},
+	"ServiceBusEndpoint":  ubx.FieldSpec{WireName: "service_bus_endpoint"},
+	"Status":              ubx.FieldSpec{WireName: "status"},
+	"SubscriptionId":      ubx.FieldSpec{WireName: "subscription_id"},
+	"UpdatedAt":           ubx.FieldSpec{WireName: "updated_at"},
+	"ZoneRedundancy":      ubx.FieldSpec{WireName: "zone_redundancy"},
+}
 
 var NamespaceResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type NamespaceResourceConfig struct {
 	// Represents namespace properties.
@@ -515,13 +515,13 @@ var NamespaceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NamespaceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   NamespaceResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: NamespaceResource_SkuFields,
+			Kind:     "object",
+			Fields:   NamespaceResource_SkuFields,
 		},
 	},
 }

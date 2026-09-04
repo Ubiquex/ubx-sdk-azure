@@ -4,7 +4,6 @@ import type { Computed, FieldMap, DataSourceBinding } from "@ubx/sdk";
 export interface OpenapiSelfHostedIntegrationRuntimeNodeConfig {
   factoryName: string | Computed<string>;
   integrationRuntimeName: string | Computed<string>;
-  nodeName: string | Computed<string>;
 }
 
 export interface OpenapiSelfHostedIntegrationRuntimeNodeAttrs {
@@ -52,6 +51,5 @@ export const OpenapiSelfHostedIntegrationRuntimeNode: DataSourceBinding<OpenapiS
   fields: {
     factoryName: "factory_name",
     integrationRuntimeName: "integration_runtime_name",
-    nodeName: "node_name",
   },
 };

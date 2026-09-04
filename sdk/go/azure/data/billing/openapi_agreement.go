@@ -4,45 +4,45 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAgreement_Value_Properties_BillingProfileInfo struct {
-	BillingAccountId any
-	BillingProfileDisplayName any
-	BillingProfileId any
-	BillingProfileSystemId any
+	BillingAccountId                     any
+	BillingProfileDisplayName            any
+	BillingProfileId                     any
+	BillingProfileSystemId               any
 	IndirectRelationshipOrganizationName any
 }
 
 type OpenapiAgreement_Value_Properties_Participants struct {
-	Email any
-	Status any
+	Email      any
+	Status     any
 	StatusDate any
 }
 
 type OpenapiAgreement_Value_Properties struct {
-	AcceptanceMode any
-	AgreementLink any
-	BillingProfileInfo any
-	Category any
-	DisplayName any
-	EffectiveDate any
-	ExpirationDate any
+	AcceptanceMode         any
+	AgreementLink          any
+	BillingProfileInfo     any
+	Category               any
+	DisplayName            any
+	EffectiveDate          any
+	ExpirationDate         any
 	LeadBillingAccountName any
-	Participants any
-	Status any
+	Participants           any
+	Status                 any
 }
 
 type OpenapiAgreement_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiAgreementConfig struct {
 	BillingAccountName any
-	Expand any
+	Expand             any
 }
 
 type OpenapiAgreementAttrs struct {
 	BillingAccountName any
-	Expand any
+	Expand             any
 	// The link to the next page of items
 	NextLink any
 	// The Agreement items on this page
@@ -53,6 +53,6 @@ var OpenapiAgreement = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_agreement",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
+		"Expand":             ubx.FieldSpec{WireName: "expand"},
 	},
 }

@@ -4,24 +4,24 @@ package chaos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTarget_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type OpenapiTargetConfig struct {
-	ContinuationToken any
+	ContinuationToken       any
 	ParentProviderNamespace any
-	ParentResourceName any
-	ParentResourceType any
+	ParentResourceName      any
+	ParentResourceType      any
 }
 
 type OpenapiTargetAttrs struct {
 	ContinuationToken any
 	// The link to the next page of items
-	NextLink any
+	NextLink                any
 	ParentProviderNamespace any
-	ParentResourceName any
-	ParentResourceType any
+	ParentResourceName      any
+	ParentResourceType      any
 	// The Target items on this page
 	Value any
 }
@@ -29,9 +29,9 @@ type OpenapiTargetAttrs struct {
 var OpenapiTarget = ubx.DataSourceBinding{
 	WireType: "azure_chaos_openapi_target",
 	Fields: ubx.FieldMap{
-		"ContinuationToken": ubx.FieldSpec{WireName: "continuation_token"},
+		"ContinuationToken":       ubx.FieldSpec{WireName: "continuation_token"},
 		"ParentProviderNamespace": ubx.FieldSpec{WireName: "parent_provider_namespace"},
-		"ParentResourceName": ubx.FieldSpec{WireName: "parent_resource_name"},
-		"ParentResourceType": ubx.FieldSpec{WireName: "parent_resource_type"},
+		"ParentResourceName":      ubx.FieldSpec{WireName: "parent_resource_name"},
+		"ParentResourceType":      ubx.FieldSpec{WireName: "parent_resource_type"},
 	},
 }

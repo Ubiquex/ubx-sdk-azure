@@ -20,14 +20,14 @@ type NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_S
 }
 
 type NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties struct {
-	Gateway any
-	PrefixLength any
+	Gateway          any
+	PrefixLength     any
 	PrivateIpaddress any
-	Subnet any
+	Subnet           any
 }
 
 type NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -42,7 +42,7 @@ type NetworkinterfacesNetworkInterfaces_Properties_Status struct {
 	// NetworkInterface provisioning error code
 	ErrorCode any
 	// Descriptive error message
-	ErrorMessage any
+	ErrorMessage       any
 	ProvisioningStatus any
 }
 
@@ -59,72 +59,72 @@ type NetworkinterfacesNetworkInterfaces_Properties struct {
 }
 
 var NetworkinterfacesNetworkInterfaces_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var NetworkinterfacesNetworkInterfaces_Properties_DnsSettingsFields = ubx.FieldMap{
-		"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
-	}
+	"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
+}
 
 var NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Gateway": ubx.FieldSpec{WireName: "gateway"},
-		"PrefixLength": ubx.FieldSpec{WireName: "prefix_length"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields,
-		},
-	}
+	"Gateway":          ubx.FieldSpec{WireName: "gateway"},
+	"PrefixLength":     ubx.FieldSpec{WireName: "prefix_length"},
+	"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields,
+	},
+}
 
 var NetworkinterfacesNetworkInterfaces_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NetworkinterfacesNetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var NetworkinterfacesNetworkInterfaces_Properties_Status_ProvisioningStatusFields = ubx.FieldMap{
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"OperationId": ubx.FieldSpec{WireName: "operation_id"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var NetworkinterfacesNetworkInterfaces_Properties_StatusFields = ubx.FieldMap{
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ProvisioningStatus": ubx.FieldSpec{
-			WireName: "provisioning_status",
-			Kind: "object",
-			Fields: NetworkinterfacesNetworkInterfaces_Properties_Status_ProvisioningStatusFields,
-		},
-	}
+	"ErrorCode":    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
+	"ProvisioningStatus": ubx.FieldSpec{
+		WireName: "provisioning_status",
+		Kind:     "object",
+		Fields:   NetworkinterfacesNetworkInterfaces_Properties_Status_ProvisioningStatusFields,
+	},
+}
 
 var NetworkinterfacesNetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: NetworkinterfacesNetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: NetworkinterfacesNetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: NetworkinterfacesNetworkInterfaces_Properties_StatusFields,
-		},
-	}
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   NetworkinterfacesNetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   NetworkinterfacesNetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":        ubx.FieldSpec{WireName: "mac_address"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   NetworkinterfacesNetworkInterfaces_Properties_StatusFields,
+	},
+}
 
 type NetworkinterfacesNetworkInterfacesConfig struct {
 	// The complex type of the extended location.
@@ -145,13 +145,13 @@ var NetworkinterfacesNetworkInterfaces = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: NetworkinterfacesNetworkInterfaces_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   NetworkinterfacesNetworkInterfaces_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkinterfacesNetworkInterfaces_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkinterfacesNetworkInterfaces_PropertiesFields,
 		},
 	},
 }

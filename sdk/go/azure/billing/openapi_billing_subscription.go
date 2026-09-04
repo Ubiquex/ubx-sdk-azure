@@ -55,7 +55,7 @@ type OpenapiBillingSubscription_Properties_Reseller struct {
 
 type OpenapiBillingSubscription_Properties_SuspensionReasonDetails struct {
 	EffectiveDate any
-	Reason any
+	Reason        any
 }
 
 type OpenapiBillingSubscription_Properties_SystemOverrides struct {
@@ -177,7 +177,7 @@ type OpenapiBillingSubscriptionAttrs struct {
 var OpenapiBillingSubscription = ubx.ResourceBinding{
 	WireType: "azure_billing_openapi_billing_subscription",
 	Fields: ubx.FieldMap{
-		"Quantity": ubx.FieldSpec{WireName: "quantity"},
+		"Quantity":                      ubx.FieldSpec{WireName: "quantity"},
 		"TargetBillingSubscriptionName": ubx.FieldSpec{WireName: "target_billing_subscription_name"},
 	},
 }

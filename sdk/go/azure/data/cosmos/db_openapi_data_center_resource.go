@@ -8,21 +8,21 @@ type DbOpenapiDataCenterResource_Value_Properties_AuthenticationMethodLdapProper
 }
 
 type DbOpenapiDataCenterResource_Value_Properties_AuthenticationMethodLdapProperties struct {
-	ConnectionTimeoutInMs any
-	SearchBaseDistinguishedName any
-	SearchFilterTemplate any
-	ServerCertificates any
-	ServerHostname any
-	ServerPort any
+	ConnectionTimeoutInMs        any
+	SearchBaseDistinguishedName  any
+	SearchFilterTemplate         any
+	ServerCertificates           any
+	ServerHostname               any
+	ServerPort                   any
 	ServiceUserDistinguishedName any
-	ServiceUserPassword any
+	ServiceUserPassword          any
 }
 
 type DbOpenapiDataCenterResource_Value_Properties_ProvisionError struct {
 	AdditionalErrorInfo any
-	Code any
-	Message any
-	Target any
+	Code                any
+	Message             any
+	Target              any
 }
 
 type DbOpenapiDataCenterResource_Value_Properties_SeedNodes struct {
@@ -31,21 +31,21 @@ type DbOpenapiDataCenterResource_Value_Properties_SeedNodes struct {
 
 type DbOpenapiDataCenterResource_Value_Properties struct {
 	AuthenticationMethodLdapProperties any
-	AvailabilityZone any
-	BackupStorageCustomerKeyUri any
+	AvailabilityZone                   any
+	BackupStorageCustomerKeyUri        any
 	Base64EncodedCassandraYamlFragment any
-	DataCenterLocation any
-	Deallocated any
-	DelegatedSubnetId any
-	DiskCapacity any
-	DiskSku any
-	ManagedDiskCustomerKeyUri any
-	NodeCount any
-	PrivateEndpointIpAddress any
-	ProvisionError any
-	ProvisioningState any
-	SeedNodes any
-	Sku any
+	DataCenterLocation                 any
+	Deallocated                        any
+	DelegatedSubnetId                  any
+	DiskCapacity                       any
+	DiskSku                            any
+	ManagedDiskCustomerKeyUri          any
+	NodeCount                          any
+	PrivateEndpointIpAddress           any
+	ProvisionError                     any
+	ProvisioningState                  any
+	SeedNodes                          any
+	Sku                                any
 }
 
 type DbOpenapiDataCenterResource_Value struct {
@@ -58,7 +58,7 @@ type DbOpenapiDataCenterResourceConfig struct {
 
 type DbOpenapiDataCenterResourceAttrs struct {
 	ClusterName any
-	NextLink any
+	NextLink    any
 	// Container for array of data centers.
 	Value any
 }

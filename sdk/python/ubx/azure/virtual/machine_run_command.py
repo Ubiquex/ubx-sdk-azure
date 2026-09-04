@@ -15,15 +15,10 @@ class MachineRunCommand_Properties_ErrorBlobManagedIdentity:
 
 @dataclasses.dataclass
 class MachineRunCommand_Properties_InstanceView_Statuses:
-    # The status code of the run command instance view, representing the current state (e.g., 'ProvisioningState/succeeded'). (AI-inferred)
     code: Any = None
-    # The localized, human-readable status message for the run command instance, providing a user-friendly description of the current state (e.g., 'Provisioning succeeded' or 'Failed'). (AI-inferred)
     display_status: Any = None
-    # The severity level of the status, one of Info, Warning, or Error. (AI-inferred)
     level: Any = None
-    # The human-readable status message associated with the instance view of the virtual machine run command. (AI-inferred)
     message: Any = None
-    # The timestamp when the status was observed, typically in ISO 8601 format. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
@@ -47,9 +42,7 @@ class MachineRunCommand_Properties_InstanceView:
 
 @dataclasses.dataclass
 class MachineRunCommand_Properties_Parameters:
-    # The name of the parameter to be passed to the run command. This name is used as the key for the parameter value. (AI-inferred)
     name: Any = None
-    # The value of a parameter used by the virtual machine run command. (AI-inferred)
     value: Any = None
 
 @dataclasses.dataclass

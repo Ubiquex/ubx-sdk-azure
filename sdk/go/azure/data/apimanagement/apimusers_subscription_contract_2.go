@@ -42,6 +42,5 @@ type ApimusersSubscriptionContract2Attrs struct {
 
 var ApimusersSubscriptionContract2 = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimusers_subscription_contract_2",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

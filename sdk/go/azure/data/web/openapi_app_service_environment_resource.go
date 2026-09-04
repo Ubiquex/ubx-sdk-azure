@@ -4,71 +4,71 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAppServiceEnvironmentResource_Value_Properties_ClusterSettings struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiAppServiceEnvironmentResource_Value_Properties_CustomDnsSuffixConfiguration_Properties struct {
-	CertificateUrl any
-	DnsSuffix any
+	CertificateUrl            any
+	DnsSuffix                 any
 	KeyVaultReferenceIdentity any
-	ProvisioningDetails any
-	ProvisioningState any
+	ProvisioningDetails       any
+	ProvisioningState         any
 }
 
 type OpenapiAppServiceEnvironmentResource_Value_Properties_CustomDnsSuffixConfiguration struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiAppServiceEnvironmentResource_Value_Properties_NetworkingConfiguration_Properties struct {
 	AllowNewPrivateEndpointConnections any
-	ExternalInboundIpAddresses any
-	FtpEnabled any
-	InboundIpAddressOverride any
-	InternalInboundIpAddresses any
-	LinuxOutboundIpAddresses any
-	RemoteDebugEnabled any
-	WindowsOutboundIpAddresses any
+	ExternalInboundIpAddresses         any
+	FtpEnabled                         any
+	InboundIpAddressOverride           any
+	InternalInboundIpAddresses         any
+	LinuxOutboundIpAddresses           any
+	RemoteDebugEnabled                 any
+	WindowsOutboundIpAddresses         any
 }
 
 type OpenapiAppServiceEnvironmentResource_Value_Properties_NetworkingConfiguration struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiAppServiceEnvironmentResource_Value_Properties_VirtualNetwork struct {
-	Id any
-	Name any
+	Id     any
+	Name   any
 	Subnet any
-	Type any
+	Type   any
 }
 
 type OpenapiAppServiceEnvironmentResource_Value_Properties struct {
-	ClusterSettings any
+	ClusterSettings              any
 	CustomDnsSuffixConfiguration any
-	DedicatedHostCount any
-	DnsSuffix any
-	FrontEndScaleFactor any
-	HasLinuxWorkers any
-	InternalLoadBalancingMode any
-	IpsslAddressCount any
-	MaximumNumberOfMachines any
-	MultiRoleCount any
-	MultiSize any
-	NetworkingConfiguration any
-	ProvisioningState any
-	Status any
-	Suspended any
-	UpgradeAvailability any
-	UpgradePreference any
-	UserWhitelistedIpRanges any
-	VirtualNetwork any
-	ZoneRedundant any
+	DedicatedHostCount           any
+	DnsSuffix                    any
+	FrontEndScaleFactor          any
+	HasLinuxWorkers              any
+	InternalLoadBalancingMode    any
+	IpsslAddressCount            any
+	MaximumNumberOfMachines      any
+	MultiRoleCount               any
+	MultiSize                    any
+	NetworkingConfiguration      any
+	ProvisioningState            any
+	Status                       any
+	Suspended                    any
+	UpgradeAvailability          any
+	UpgradePreference            any
+	UserWhitelistedIpRanges      any
+	VirtualNetwork               any
+	ZoneRedundant                any
 }
 
 type OpenapiAppServiceEnvironmentResource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -84,6 +84,5 @@ type OpenapiAppServiceEnvironmentResourceAttrs struct {
 
 var OpenapiAppServiceEnvironmentResource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_app_service_environment_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

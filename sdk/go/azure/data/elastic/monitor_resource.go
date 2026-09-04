@@ -5,76 +5,76 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorResource_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type MonitorResource_Value_Properties_ElasticProperties_ElasticCloudDeployment struct {
-	AzureSubscriptionId any
-	DeploymentId any
-	ElasticsearchRegion any
+	AzureSubscriptionId     any
+	DeploymentId            any
+	ElasticsearchRegion     any
 	ElasticsearchServiceUrl any
-	KibanaServiceUrl any
-	KibanaSsoUrl any
-	Name any
+	KibanaServiceUrl        any
+	KibanaSsoUrl            any
+	Name                    any
 }
 
 type MonitorResource_Value_Properties_ElasticProperties_ElasticCloudUser struct {
 	ElasticCloudSsoDefaultUrl any
-	EmailAddress any
-	Id any
+	EmailAddress              any
+	Id                        any
 }
 
 type MonitorResource_Value_Properties_ElasticProperties struct {
 	ElasticCloudDeployment any
-	ElasticCloudUser any
+	ElasticCloudUser       any
 }
 
 type MonitorResource_Value_Properties_PlanDetails struct {
-	OfferId any
-	PlanId any
-	PlanName any
+	OfferId     any
+	PlanId      any
+	PlanName    any
 	PublisherId any
-	TermId any
+	TermId      any
 }
 
 type MonitorResource_Value_Properties_ProjectDetails struct {
 	ConfigurationType any
-	ProjectType any
+	ProjectType       any
 }
 
 type MonitorResource_Value_Properties_UserInfo_CompanyInfo struct {
-	Business any
-	Country any
-	Domain any
+	Business        any
+	Country         any
+	Domain          any
 	EmployeesNumber any
-	State any
+	State           any
 }
 
 type MonitorResource_Value_Properties_UserInfo struct {
-	CompanyInfo any
-	CompanyName any
+	CompanyInfo  any
+	CompanyName  any
 	EmailAddress any
-	FirstName any
-	LastName any
+	FirstName    any
+	LastName     any
 }
 
 type MonitorResource_Value_Properties struct {
-	ElasticProperties any
-	GenerateApiKey any
-	HostingType any
-	LiftrResourceCategory any
-	LiftrResourcePreference any
-	MonitoringStatus any
-	PlanDetails any
-	ProjectDetails any
-	ProvisioningState any
+	ElasticProperties           any
+	GenerateApiKey              any
+	HostingType                 any
+	LiftrResourceCategory       any
+	LiftrResourcePreference     any
+	MonitoringStatus            any
+	PlanDetails                 any
+	ProjectDetails              any
+	ProvisioningState           any
 	SaaSazureSubscriptionStatus any
-	SourceCampaignId any
-	SourceCampaignName any
-	SubscriptionState any
-	UserInfo any
-	Version any
+	SourceCampaignId            any
+	SourceCampaignName          any
+	SubscriptionState           any
+	UserInfo                    any
+	Version                     any
 }
 
 type MonitorResource_Value_Sku struct {
@@ -82,10 +82,10 @@ type MonitorResource_Value_Sku struct {
 }
 
 type MonitorResource_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type MonitorResourceConfig struct {
@@ -100,6 +100,5 @@ type MonitorResourceAttrs struct {
 
 var MonitorResource = ubx.DataSourceBinding{
 	WireType: "azure_elastic_monitor_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

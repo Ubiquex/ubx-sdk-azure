@@ -137,31 +137,31 @@ type OpenapiSiteAuthSettingsV2_Properties_IdentityProviders_AzureStaticWebApps s
 
 type OpenapiSiteAuthSettingsV2_Properties_IdentityProviders_CustomOpenIdConnectProviders_Login struct {
 	NameClaimType any
-	Scopes any
+	Scopes        any
 }
 
 type OpenapiSiteAuthSettingsV2_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredential struct {
 	ClientSecretSettingName any
-	Method any
+	Method                  any
 }
 
 type OpenapiSiteAuthSettingsV2_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfiguration struct {
-	AuthorizationEndpoint any
-	CertificationUri any
-	Issuer any
-	TokenEndpoint any
+	AuthorizationEndpoint        any
+	CertificationUri             any
+	Issuer                       any
+	TokenEndpoint                any
 	WellKnownOpenIdConfiguration any
 }
 
 type OpenapiSiteAuthSettingsV2_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration struct {
-	ClientCredential any
-	ClientId any
+	ClientCredential           any
+	ClientId                   any
 	OpenIdConnectConfiguration any
 }
 
 type OpenapiSiteAuthSettingsV2_Properties_IdentityProviders_CustomOpenIdConnectProviders struct {
-	Enabled any
-	Login any
+	Enabled      any
+	Login        any
 	Registration any
 }
 

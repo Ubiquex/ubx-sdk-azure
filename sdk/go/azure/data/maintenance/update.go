@@ -9,33 +9,33 @@ type Update_Value_Properties struct {
 
 type Update_Value struct {
 	ImpactDurationInSec any
-	ImpactType any
-	MaintenanceScope any
-	NotBefore any
-	Properties any
-	Status any
+	ImpactType          any
+	MaintenanceScope    any
+	NotBefore           any
+	Properties          any
+	Status              any
 }
 
 type UpdateConfig struct {
-	ApiVersion any
-	ProviderName any
-	ResourceGroupName any
-	ResourceName any
+	ApiVersion         any
+	ProviderName       any
+	ResourceGroupName  any
+	ResourceName       any
 	ResourceParentName any
 	ResourceParentType any
-	ResourceType any
-	SubscriptionId any
+	ResourceType       any
+	SubscriptionId     any
 }
 
 type UpdateAttrs struct {
-	ApiVersion any
-	ProviderName any
-	ResourceGroupName any
-	ResourceName any
+	ApiVersion         any
+	ProviderName       any
+	ResourceGroupName  any
+	ResourceName       any
 	ResourceParentName any
 	ResourceParentType any
-	ResourceType any
-	SubscriptionId any
+	ResourceType       any
+	SubscriptionId     any
 	// The pending updates
 	Value any
 }
@@ -43,13 +43,13 @@ type UpdateAttrs struct {
 var Update = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_update",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ProviderName": ubx.FieldSpec{WireName: "provider_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ApiVersion":         ubx.FieldSpec{WireName: "api_version"},
+		"ProviderName":       ubx.FieldSpec{WireName: "provider_name"},
+		"ResourceGroupName":  ubx.FieldSpec{WireName: "resource_group_name"},
+		"ResourceName":       ubx.FieldSpec{WireName: "resource_name"},
 		"ResourceParentName": ubx.FieldSpec{WireName: "resource_parent_name"},
 		"ResourceParentType": ubx.FieldSpec{WireName: "resource_parent_type"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceType":       ubx.FieldSpec{WireName: "resource_type"},
+		"SubscriptionId":     ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

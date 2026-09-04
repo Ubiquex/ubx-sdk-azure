@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedidentityFederatedIdentityCredential_Value_Properties struct {
 	Audiences any
-	Issuer any
-	Subject any
+	Issuer    any
+	Subject   any
 }
 
 type ManagedidentityFederatedIdentityCredential_Value struct {
@@ -19,7 +19,7 @@ type ManagedidentityFederatedIdentityCredentialConfig struct {
 
 type ManagedidentityFederatedIdentityCredentialAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The FederatedIdentityCredential items on this page
 	Value any

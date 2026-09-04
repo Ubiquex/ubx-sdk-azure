@@ -6,7 +6,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiAmlUserFeature_Value struct {
 	Description any
 	DisplayName any
-	Id any
+	Id          any
 }
 
 type OpenapiAmlUserFeatureConfig struct {
@@ -17,7 +17,7 @@ type OpenapiAmlUserFeatureAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The AmlUserFeature items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

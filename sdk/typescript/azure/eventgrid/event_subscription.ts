@@ -190,20 +190,9 @@ const EventSubscription_PropertiesFields: FieldMap = {
   topic: "topic",
 };
 
-const EventSubscription_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface EventSubscriptionConfig {
   /** Properties of the Event Subscription. */
   properties?: EventSubscription_Properties | Computed<EventSubscription_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: EventSubscription_SystemData | Computed<EventSubscription_SystemData>;
   /** path parameter, not part of the API's own resource representation */
   scope: string | Computed<string>;
 }
@@ -224,11 +213,6 @@ export const EventSubscription: ResourceBinding<EventSubscriptionConfig, EventSu
       wireName: "properties",
       kind: "object",
       fields: EventSubscription_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: EventSubscription_SystemDataFields,
     },
     scope: "scope",
   },

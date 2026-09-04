@@ -21,7 +21,7 @@ type AgentApplication_Properties_AgentIdentityBlueprint struct {
 }
 
 type AgentApplication_Properties_Agents struct {
-	AgentId any
+	AgentId   any
 	AgentName any
 }
 
@@ -31,9 +31,9 @@ type AgentApplication_Properties_AuthorizationPolicy struct {
 }
 
 type AgentApplication_Properties_TrafficRoutingPolicy_Rules struct {
-	DeploymentId any
-	Description any
-	RuleId any
+	DeploymentId      any
+	Description       any
+	RuleId            any
 	TrafficPercentage any
 }
 
@@ -66,71 +66,71 @@ type AgentApplication_Properties struct {
 }
 
 var AgentApplication_Properties_AgentIdentityBlueprintFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ClientId":          ubx.FieldSpec{WireName: "client_id"},
+	"Kind":              ubx.FieldSpec{WireName: "kind"},
+	"PrincipalId":       ubx.FieldSpec{WireName: "principal_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subject":           ubx.FieldSpec{WireName: "subject"},
+	"TenantId":          ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 var AgentApplication_Properties_AgentsFields = ubx.FieldMap{
-		"AgentId": ubx.FieldSpec{WireName: "agent_id"},
-		"AgentName": ubx.FieldSpec{WireName: "agent_name"},
-	}
+	"AgentId":   ubx.FieldSpec{WireName: "agent_id"},
+	"AgentName": ubx.FieldSpec{WireName: "agent_name"},
+}
 
 var AgentApplication_Properties_AuthorizationPolicyFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var AgentApplication_Properties_TrafficRoutingPolicy_RulesFields = ubx.FieldMap{
-		"DeploymentId": ubx.FieldSpec{WireName: "deployment_id"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"RuleId": ubx.FieldSpec{WireName: "rule_id"},
-		"TrafficPercentage": ubx.FieldSpec{WireName: "traffic_percentage"},
-	}
+	"DeploymentId":      ubx.FieldSpec{WireName: "deployment_id"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"RuleId":            ubx.FieldSpec{WireName: "rule_id"},
+	"TrafficPercentage": ubx.FieldSpec{WireName: "traffic_percentage"},
+}
 
 var AgentApplication_Properties_TrafficRoutingPolicyFields = ubx.FieldMap{
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: AgentApplication_Properties_TrafficRoutingPolicy_RulesFields,
-		},
-	}
+	"Protocol": ubx.FieldSpec{WireName: "protocol"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   AgentApplication_Properties_TrafficRoutingPolicy_RulesFields,
+	},
+}
 
 var AgentApplication_PropertiesFields = ubx.FieldMap{
-		"AgentIdentityBlueprint": ubx.FieldSpec{
-			WireName: "agent_identity_blueprint",
-			Kind: "object",
-			Fields: AgentApplication_Properties_AgentIdentityBlueprintFields,
-		},
-		"Agents": ubx.FieldSpec{
-			WireName: "agents",
-			Kind: "list",
-			Fields: AgentApplication_Properties_AgentsFields,
-		},
-		"AuthorizationPolicy": ubx.FieldSpec{
-			WireName: "authorization_policy",
-			Kind: "object",
-			Fields: AgentApplication_Properties_AuthorizationPolicyFields,
-		},
-		"BaseUrl": ubx.FieldSpec{WireName: "base_url"},
-		"DefaultInstanceIdentity": ubx.FieldSpec{
-			WireName: "default_instance_identity",
-			Kind: "object",
-			Fields: AgentApplication_Properties_AgentIdentityBlueprintFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TrafficRoutingPolicy": ubx.FieldSpec{
-			WireName: "traffic_routing_policy",
-			Kind: "object",
-			Fields: AgentApplication_Properties_TrafficRoutingPolicyFields,
-		},
-	}
+	"AgentIdentityBlueprint": ubx.FieldSpec{
+		WireName: "agent_identity_blueprint",
+		Kind:     "object",
+		Fields:   AgentApplication_Properties_AgentIdentityBlueprintFields,
+	},
+	"Agents": ubx.FieldSpec{
+		WireName: "agents",
+		Kind:     "list",
+		Fields:   AgentApplication_Properties_AgentsFields,
+	},
+	"AuthorizationPolicy": ubx.FieldSpec{
+		WireName: "authorization_policy",
+		Kind:     "object",
+		Fields:   AgentApplication_Properties_AuthorizationPolicyFields,
+	},
+	"BaseUrl": ubx.FieldSpec{WireName: "base_url"},
+	"DefaultInstanceIdentity": ubx.FieldSpec{
+		WireName: "default_instance_identity",
+		Kind:     "object",
+		Fields:   AgentApplication_Properties_AgentIdentityBlueprintFields,
+	},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"IsEnabled":         ubx.FieldSpec{WireName: "is_enabled"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TrafficRoutingPolicy": ubx.FieldSpec{
+		WireName: "traffic_routing_policy",
+		Kind:     "object",
+		Fields:   AgentApplication_Properties_TrafficRoutingPolicyFields,
+	},
+}
 
 type AgentApplicationConfig struct {
 	// Resource type representing an agentic application as a management construct.
@@ -151,8 +151,8 @@ var AgentApplication = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AgentApplication_PropertiesFields,
+			Kind:     "object",
+			Fields:   AgentApplication_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

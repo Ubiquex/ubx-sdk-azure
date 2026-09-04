@@ -28,25 +28,14 @@ type NetworkmanagerStaticMember_SystemData struct {
 }
 
 var NetworkmanagerStaticMember_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
-
-var NetworkmanagerStaticMember_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Region":            ubx.FieldSpec{WireName: "region"},
+	"ResourceId":        ubx.FieldSpec{WireName: "resource_id"},
+}
 
 type NetworkmanagerStaticMemberConfig struct {
 	// Properties of static member.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerStaticMemberAttrs struct {
@@ -61,13 +50,8 @@ var NetworkmanagerStaticMember = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerStaticMember_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerStaticMember_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerStaticMember_PropertiesFields,
 		},
 	},
 }

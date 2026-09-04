@@ -4,11 +4,11 @@ package compute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ContainerserviceContainerService_Properties_AgentPoolProfiles struct {
-	Count any
+	Count     any
 	DnsPrefix any
-	Fqdn any
-	Name any
-	VmSize any
+	Fqdn      any
+	Name      any
+	VmSize    any
 }
 
 type ContainerserviceContainerService_Properties_CustomProfile struct {
@@ -76,7 +76,7 @@ type ContainerserviceContainerService_Properties struct {
 	// Properties of the agent pool.
 	AgentPoolProfiles any
 	// Properties to configure a custom container service cluster.
-	CustomProfile any
+	CustomProfile      any
 	DiagnosticsProfile any
 	// Profile for Linux VMs in the container service cluster.
 	LinuxProfile any
@@ -93,114 +93,114 @@ type ContainerserviceContainerService_Properties struct {
 }
 
 var ContainerserviceContainerService_Properties_AgentPoolProfilesFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"DnsPrefix": ubx.FieldSpec{WireName: "dns_prefix"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"Count":     ubx.FieldSpec{WireName: "count"},
+	"DnsPrefix": ubx.FieldSpec{WireName: "dns_prefix"},
+	"Fqdn":      ubx.FieldSpec{WireName: "fqdn"},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"VmSize":    ubx.FieldSpec{WireName: "vm_size"},
+}
 
 var ContainerserviceContainerService_Properties_CustomProfileFields = ubx.FieldMap{
-		"Orchestrator": ubx.FieldSpec{WireName: "orchestrator"},
-	}
+	"Orchestrator": ubx.FieldSpec{WireName: "orchestrator"},
+}
 
 var ContainerserviceContainerService_Properties_DiagnosticsProfile_VmDiagnosticsFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"StorageUri": ubx.FieldSpec{WireName: "storage_uri"},
-	}
+	"Enabled":    ubx.FieldSpec{WireName: "enabled"},
+	"StorageUri": ubx.FieldSpec{WireName: "storage_uri"},
+}
 
 var ContainerserviceContainerService_Properties_DiagnosticsProfileFields = ubx.FieldMap{
-		"VmDiagnostics": ubx.FieldSpec{
-			WireName: "vm_diagnostics",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_DiagnosticsProfile_VmDiagnosticsFields,
-		},
-	}
+	"VmDiagnostics": ubx.FieldSpec{
+		WireName: "vm_diagnostics",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_DiagnosticsProfile_VmDiagnosticsFields,
+	},
+}
 
 var ContainerserviceContainerService_Properties_LinuxProfile_Ssh_PublicKeysFields = ubx.FieldMap{
-		"KeyData": ubx.FieldSpec{WireName: "key_data"},
-	}
+	"KeyData": ubx.FieldSpec{WireName: "key_data"},
+}
 
 var ContainerserviceContainerService_Properties_LinuxProfile_SshFields = ubx.FieldMap{
-		"PublicKeys": ubx.FieldSpec{
-			WireName: "public_keys",
-			Kind: "list",
-			Fields: ContainerserviceContainerService_Properties_LinuxProfile_Ssh_PublicKeysFields,
-		},
-	}
+	"PublicKeys": ubx.FieldSpec{
+		WireName: "public_keys",
+		Kind:     "list",
+		Fields:   ContainerserviceContainerService_Properties_LinuxProfile_Ssh_PublicKeysFields,
+	},
+}
 
 var ContainerserviceContainerService_Properties_LinuxProfileFields = ubx.FieldMap{
-		"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
-		"Ssh": ubx.FieldSpec{
-			WireName: "ssh",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_LinuxProfile_SshFields,
-		},
-	}
+	"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
+	"Ssh": ubx.FieldSpec{
+		WireName: "ssh",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_LinuxProfile_SshFields,
+	},
+}
 
 var ContainerserviceContainerService_Properties_MasterProfileFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"DnsPrefix": ubx.FieldSpec{WireName: "dns_prefix"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-	}
+	"Count":     ubx.FieldSpec{WireName: "count"},
+	"DnsPrefix": ubx.FieldSpec{WireName: "dns_prefix"},
+	"Fqdn":      ubx.FieldSpec{WireName: "fqdn"},
+}
 
 var ContainerserviceContainerService_Properties_OrchestratorProfileFields = ubx.FieldMap{
-		"OrchestratorType": ubx.FieldSpec{WireName: "orchestrator_type"},
-	}
+	"OrchestratorType": ubx.FieldSpec{WireName: "orchestrator_type"},
+}
 
 var ContainerserviceContainerService_Properties_ServicePrincipalProfileFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"Secret": ubx.FieldSpec{WireName: "secret"},
-	}
+	"ClientId": ubx.FieldSpec{WireName: "client_id"},
+	"Secret":   ubx.FieldSpec{WireName: "secret"},
+}
 
 var ContainerserviceContainerService_Properties_WindowsProfileFields = ubx.FieldMap{
-		"AdminPassword": ubx.FieldSpec{WireName: "admin_password"},
-		"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
-	}
+	"AdminPassword": ubx.FieldSpec{WireName: "admin_password"},
+	"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
+}
 
 var ContainerserviceContainerService_PropertiesFields = ubx.FieldMap{
-		"AgentPoolProfiles": ubx.FieldSpec{
-			WireName: "agent_pool_profiles",
-			Kind: "list",
-			Fields: ContainerserviceContainerService_Properties_AgentPoolProfilesFields,
-		},
-		"CustomProfile": ubx.FieldSpec{
-			WireName: "custom_profile",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_CustomProfileFields,
-		},
-		"DiagnosticsProfile": ubx.FieldSpec{
-			WireName: "diagnostics_profile",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_DiagnosticsProfileFields,
-		},
-		"LinuxProfile": ubx.FieldSpec{
-			WireName: "linux_profile",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_LinuxProfileFields,
-		},
-		"MasterProfile": ubx.FieldSpec{
-			WireName: "master_profile",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_MasterProfileFields,
-		},
-		"OrchestratorProfile": ubx.FieldSpec{
-			WireName: "orchestrator_profile",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_OrchestratorProfileFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServicePrincipalProfile": ubx.FieldSpec{
-			WireName: "service_principal_profile",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_ServicePrincipalProfileFields,
-		},
-		"WindowsProfile": ubx.FieldSpec{
-			WireName: "windows_profile",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_Properties_WindowsProfileFields,
-		},
-	}
+	"AgentPoolProfiles": ubx.FieldSpec{
+		WireName: "agent_pool_profiles",
+		Kind:     "list",
+		Fields:   ContainerserviceContainerService_Properties_AgentPoolProfilesFields,
+	},
+	"CustomProfile": ubx.FieldSpec{
+		WireName: "custom_profile",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_CustomProfileFields,
+	},
+	"DiagnosticsProfile": ubx.FieldSpec{
+		WireName: "diagnostics_profile",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_DiagnosticsProfileFields,
+	},
+	"LinuxProfile": ubx.FieldSpec{
+		WireName: "linux_profile",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_LinuxProfileFields,
+	},
+	"MasterProfile": ubx.FieldSpec{
+		WireName: "master_profile",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_MasterProfileFields,
+	},
+	"OrchestratorProfile": ubx.FieldSpec{
+		WireName: "orchestrator_profile",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_OrchestratorProfileFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServicePrincipalProfile": ubx.FieldSpec{
+		WireName: "service_principal_profile",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_ServicePrincipalProfileFields,
+	},
+	"WindowsProfile": ubx.FieldSpec{
+		WireName: "windows_profile",
+		Kind:     "object",
+		Fields:   ContainerserviceContainerService_Properties_WindowsProfileFields,
+	},
+}
 
 type ContainerserviceContainerServiceConfig struct {
 	// Properties of the container service.
@@ -217,8 +217,8 @@ var ContainerserviceContainerService = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ContainerserviceContainerService_PropertiesFields,
+			Kind:     "object",
+			Fields:   ContainerserviceContainerService_PropertiesFields,
 		},
 	},
 }

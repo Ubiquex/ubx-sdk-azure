@@ -27,8 +27,14 @@ export interface OpenapiDscNodeConfiguration_Properties_Source {
 export interface OpenapiDscNodeConfiguration_Properties {
   /** The Dsc configuration property associated with the entity. */
   configuration: OpenapiDscNodeConfiguration_Properties_Configuration | Computed<OpenapiDscNodeConfiguration_Properties_Configuration>;
+  /** Gets or sets creation time. */
+  creationTime?: string | Computed<string>;
   /** If a new build version of NodeConfiguration is required. */
   incrementNodeConfigurationBuild?: boolean | Computed<boolean>;
+  /** Gets or sets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
+  /** Number of nodes with this node configuration assigned */
+  nodeCount?: number | Computed<number>;
   /** Definition of the content source. */
   source: OpenapiDscNodeConfiguration_Properties_Source | Computed<OpenapiDscNodeConfiguration_Properties_Source>;
 }
@@ -59,7 +65,10 @@ const OpenapiDscNodeConfiguration_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiDscNodeConfiguration_Properties_ConfigurationFields,
   },
+  creationTime: "creation_time",
   incrementNodeConfigurationBuild: "increment_node_configuration_build",
+  lastModifiedTime: "last_modified_time",
+  nodeCount: "node_count",
   source: {
     wireName: "source",
     kind: "object",

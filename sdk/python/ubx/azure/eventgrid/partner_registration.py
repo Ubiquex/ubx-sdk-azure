@@ -33,21 +33,10 @@ _PartnerRegistration_PropertiesFields = {
     "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
 }
 
-_PartnerRegistration_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class PartnerRegistrationConfig:
     # Properties of the partner registration.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class PartnerRegistrationAttrs:
@@ -63,11 +52,6 @@ PartnerRegistration = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_PartnerRegistration_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_PartnerRegistration_SystemDataFields,
         ),
     },
 )

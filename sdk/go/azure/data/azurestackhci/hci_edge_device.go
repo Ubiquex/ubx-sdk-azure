@@ -13,7 +13,7 @@ type HciEdgeDeviceConfig struct {
 
 type HciEdgeDeviceAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ResourceUri any
 	// The EdgeDevice items on this page
 	Value any

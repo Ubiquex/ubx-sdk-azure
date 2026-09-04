@@ -120,6 +120,14 @@ export interface Cluster_Properties_ComputeProfile {
   roles?: Cluster_Properties_ComputeProfile_Roles[] | Computed<Cluster_Properties_ComputeProfile_Roles[]>;
 }
 
+export interface Cluster_Properties_ConnectivityEndpoints {
+  location?: string | Computed<string>;
+  name?: string | Computed<string>;
+  port?: number | Computed<number>;
+  privateIpaddress?: string | Computed<string>;
+  protocol?: string | Computed<string>;
+}
+
 export interface Cluster_Properties_DiskEncryptionProperties {
   /** Algorithm identifier for encryption, default RSA-OAEP. */
   encryptionAlgorithm?: string | Computed<string>;
@@ -138,6 +146,18 @@ export interface Cluster_Properties_DiskEncryptionProperties {
 export interface Cluster_Properties_EncryptionInTransitProperties {
   /** Indicates whether or not inter cluster node communication is encrypted in transit. */
   isEncryptionInTransitEnabled?: boolean | Computed<boolean>;
+}
+
+export interface Cluster_Properties_Errors {
+  code?: string | Computed<string>;
+  message?: string | Computed<string>;
+}
+
+export interface Cluster_Properties_ExcludedServicesConfig {
+  /** The config id of excluded services. */
+  excludedServicesConfigId?: string | Computed<string>;
+  /** The list of excluded services. */
+  excludedServicesList?: string | Computed<string>;
 }
 
 export interface Cluster_Properties_KafkaRestProperties_ClientGroupInfo {
@@ -161,8 +181,35 @@ export interface Cluster_Properties_NetworkProperties {
   resourceProviderConnection?: string | Computed<string>;
 }
 
-export interface Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet {
+export interface Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
   id?: string | Computed<string>;
+}
+
+export interface Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  actionsRequired?: string | Computed<string>;
+  description?: string | Computed<string>;
+  status?: string | Computed<string>;
+}
+
+export interface Cluster_Properties_PrivateEndpointConnections_Properties {
+  linkIdentifier?: string | Computed<string>;
+  privateEndpoint?: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  privateLinkServiceConnectionState?: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  provisioningState?: string | Computed<string>;
+}
+
+export interface Cluster_Properties_PrivateEndpointConnections_SystemData {
+  createdAt?: string | Computed<string>;
+  createdBy?: string | Computed<string>;
+  createdByType?: string | Computed<string>;
+  lastModifiedAt?: string | Computed<string>;
+  lastModifiedBy?: string | Computed<string>;
+  lastModifiedByType?: string | Computed<string>;
+}
+
+export interface Cluster_Properties_PrivateEndpointConnections {
+  properties?: Cluster_Properties_PrivateEndpointConnections_Properties | Computed<Cluster_Properties_PrivateEndpointConnections_Properties>;
+  systemData?: Cluster_Properties_PrivateEndpointConnections_SystemData | Computed<Cluster_Properties_PrivateEndpointConnections_SystemData>;
 }
 
 export interface Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties {
@@ -170,7 +217,7 @@ export interface Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfi
   privateIpaddress?: string | Computed<string>;
   privateIpallocationMethod?: string | Computed<string>;
   provisioningState?: string | Computed<string>;
-  subnet?: Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet | Computed<Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet>;
+  subnet?: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
 }
 
 export interface Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations {
@@ -191,6 +238,11 @@ export interface Cluster_Properties_PrivateLinkConfigurations {
   name?: string | Computed<string>;
   properties?: Cluster_Properties_PrivateLinkConfigurations_Properties | Computed<Cluster_Properties_PrivateLinkConfigurations_Properties>;
   type?: string | Computed<string>;
+}
+
+export interface Cluster_Properties_QuotaInfo {
+  /** The cores used by the cluster. */
+  coresUsed?: number | Computed<number>;
 }
 
 export interface Cluster_Properties_SecurityProfile {
@@ -234,16 +286,30 @@ export interface Cluster_Properties_StorageProfile {
 export interface Cluster_Properties {
   /** The cluster definition. */
   clusterDefinition?: Cluster_Properties_ClusterDefinition | Computed<Cluster_Properties_ClusterDefinition>;
+  /** The hdp version of the cluster. */
+  clusterHdpVersion?: string | Computed<string>;
+  /** The cluster id. */
+  clusterId?: string | Computed<string>;
+  /** The state of the cluster. */
+  clusterState?: string | Computed<string>;
   /** The version of the cluster. */
   clusterVersion?: string | Computed<string>;
   /** The compute isolation properties. */
   computeIsolationProperties?: Cluster_Properties_ComputeIsolationProperties | Computed<Cluster_Properties_ComputeIsolationProperties>;
   /** Describes the compute profile. */
   computeProfile?: Cluster_Properties_ComputeProfile | Computed<Cluster_Properties_ComputeProfile>;
+  /** The list of connectivity endpoints. */
+  connectivityEndpoints?: Cluster_Properties_ConnectivityEndpoints[] | Computed<Cluster_Properties_ConnectivityEndpoints[]>;
+  /** The date on which the cluster was created. */
+  createdDate?: string | Computed<string>;
   /** The disk encryption properties */
   diskEncryptionProperties?: Cluster_Properties_DiskEncryptionProperties | Computed<Cluster_Properties_DiskEncryptionProperties>;
   /** The encryption-in-transit properties. */
   encryptionInTransitProperties?: Cluster_Properties_EncryptionInTransitProperties | Computed<Cluster_Properties_EncryptionInTransitProperties>;
+  /** The list of errors. */
+  errors?: Cluster_Properties_Errors[] | Computed<Cluster_Properties_Errors[]>;
+  /** The configuration that services will be excluded when creating cluster. */
+  excludedServicesConfig?: Cluster_Properties_ExcludedServicesConfig | Computed<Cluster_Properties_ExcludedServicesConfig>;
   /** The kafka rest proxy configuration which contains AAD security group information. */
   kafkaRestProperties?: Cluster_Properties_KafkaRestProperties | Computed<Cluster_Properties_KafkaRestProperties>;
   /** The minimal supported tls version. */
@@ -252,29 +318,20 @@ export interface Cluster_Properties {
   networkProperties?: Cluster_Properties_NetworkProperties | Computed<Cluster_Properties_NetworkProperties>;
   /** The type of operating system. */
   osType?: string | Computed<string>;
+  /** The list of private endpoint connections. */
+  privateEndpointConnections?: Cluster_Properties_PrivateEndpointConnections[] | Computed<Cluster_Properties_PrivateEndpointConnections[]>;
   /** The private link configurations. */
   privateLinkConfigurations?: Cluster_Properties_PrivateLinkConfigurations[] | Computed<Cluster_Properties_PrivateLinkConfigurations[]>;
+  /** The provisioning state, which only appears in the response. */
+  provisioningState?: string | Computed<string>;
+  /** The quota properties for the cluster. */
+  quotaInfo?: Cluster_Properties_QuotaInfo | Computed<Cluster_Properties_QuotaInfo>;
   /** The security profile which contains Ssh public key for the HDInsight cluster. */
   securityProfile?: Cluster_Properties_SecurityProfile | Computed<Cluster_Properties_SecurityProfile>;
   /** The storage profile. */
   storageProfile?: Cluster_Properties_StorageProfile | Computed<Cluster_Properties_StorageProfile>;
   /** The cluster tier. */
   tier?: string | Computed<string>;
-}
-
-export interface Cluster_SystemData {
-  /** The timestamp of resource creation (UTC). */
-  createdAt?: string | Computed<string>;
-  /** The identity that created the resource. */
-  createdBy?: string | Computed<string>;
-  /** The type of identity that created the resource. */
-  createdByType?: string | Computed<string>;
-  /** The timestamp of resource last modification (UTC) */
-  lastModifiedAt?: string | Computed<string>;
-  /** The identity that last modified the resource. */
-  lastModifiedBy?: string | Computed<string>;
-  /** The type of identity that last modified the resource. */
-  lastModifiedByType?: string | Computed<string>;
 }
 
 const Cluster_Identity_UserAssignedIdentitiesFields: FieldMap = {
@@ -445,6 +502,14 @@ const Cluster_Properties_ComputeProfileFields: FieldMap = {
   },
 };
 
+const Cluster_Properties_ConnectivityEndpointsFields: FieldMap = {
+  location: "location",
+  name: "name",
+  port: "port",
+  privateIpaddress: "private_ipaddress",
+  protocol: "protocol",
+};
+
 const Cluster_Properties_DiskEncryptionPropertiesFields: FieldMap = {
   encryptionAlgorithm: "encryption_algorithm",
   encryptionAtHost: "encryption_at_host",
@@ -456,6 +521,16 @@ const Cluster_Properties_DiskEncryptionPropertiesFields: FieldMap = {
 
 const Cluster_Properties_EncryptionInTransitPropertiesFields: FieldMap = {
   isEncryptionInTransitEnabled: "is_encryption_in_transit_enabled",
+};
+
+const Cluster_Properties_ErrorsFields: FieldMap = {
+  code: "code",
+  message: "message",
+};
+
+const Cluster_Properties_ExcludedServicesConfigFields: FieldMap = {
+  excludedServicesConfigId: "excluded_services_config_id",
+  excludedServicesList: "excluded_services_list",
 };
 
 const Cluster_Properties_KafkaRestProperties_ClientGroupInfoFields: FieldMap = {
@@ -477,8 +552,51 @@ const Cluster_Properties_NetworkPropertiesFields: FieldMap = {
   resourceProviderConnection: "resource_provider_connection",
 };
 
-const Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields: FieldMap = {
+const Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields: FieldMap = {
   id: "id",
+};
+
+const Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields: FieldMap = {
+  actionsRequired: "actions_required",
+  description: "description",
+  status: "status",
+};
+
+const Cluster_Properties_PrivateEndpointConnections_PropertiesFields: FieldMap = {
+  linkIdentifier: "link_identifier",
+  privateEndpoint: {
+    wireName: "private_endpoint",
+    kind: "object",
+    fields: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+  },
+  privateLinkServiceConnectionState: {
+    wireName: "private_link_service_connection_state",
+    kind: "object",
+    fields: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+  },
+  provisioningState: "provisioning_state",
+};
+
+const Cluster_Properties_PrivateEndpointConnections_SystemDataFields: FieldMap = {
+  createdAt: "created_at",
+  createdBy: "created_by",
+  createdByType: "created_by_type",
+  lastModifiedAt: "last_modified_at",
+  lastModifiedBy: "last_modified_by",
+  lastModifiedByType: "last_modified_by_type",
+};
+
+const Cluster_Properties_PrivateEndpointConnectionsFields: FieldMap = {
+  properties: {
+    wireName: "properties",
+    kind: "object",
+    fields: Cluster_Properties_PrivateEndpointConnections_PropertiesFields,
+  },
+  systemData: {
+    wireName: "system_data",
+    kind: "object",
+    fields: Cluster_Properties_PrivateEndpointConnections_SystemDataFields,
+  },
 };
 
 const Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields: FieldMap = {
@@ -489,7 +607,7 @@ const Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_P
   subnet: {
     wireName: "subnet",
     kind: "object",
-    fields: Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields,
+    fields: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
   },
 };
 
@@ -523,6 +641,10 @@ const Cluster_Properties_PrivateLinkConfigurationsFields: FieldMap = {
     fields: Cluster_Properties_PrivateLinkConfigurations_PropertiesFields,
   },
   type: "type",
+};
+
+const Cluster_Properties_QuotaInfoFields: FieldMap = {
+  coresUsed: "cores_used",
 };
 
 const Cluster_Properties_SecurityProfileFields: FieldMap = {
@@ -563,6 +685,9 @@ const Cluster_PropertiesFields: FieldMap = {
     kind: "object",
     fields: Cluster_Properties_ClusterDefinitionFields,
   },
+  clusterHdpVersion: "cluster_hdp_version",
+  clusterId: "cluster_id",
+  clusterState: "cluster_state",
   clusterVersion: "cluster_version",
   computeIsolationProperties: {
     wireName: "compute_isolation_properties",
@@ -574,6 +699,12 @@ const Cluster_PropertiesFields: FieldMap = {
     kind: "object",
     fields: Cluster_Properties_ComputeProfileFields,
   },
+  connectivityEndpoints: {
+    wireName: "connectivity_endpoints",
+    kind: "list",
+    fields: Cluster_Properties_ConnectivityEndpointsFields,
+  },
+  createdDate: "created_date",
   diskEncryptionProperties: {
     wireName: "disk_encryption_properties",
     kind: "object",
@@ -583,6 +714,16 @@ const Cluster_PropertiesFields: FieldMap = {
     wireName: "encryption_in_transit_properties",
     kind: "object",
     fields: Cluster_Properties_EncryptionInTransitPropertiesFields,
+  },
+  errors: {
+    wireName: "errors",
+    kind: "list",
+    fields: Cluster_Properties_ErrorsFields,
+  },
+  excludedServicesConfig: {
+    wireName: "excluded_services_config",
+    kind: "object",
+    fields: Cluster_Properties_ExcludedServicesConfigFields,
   },
   kafkaRestProperties: {
     wireName: "kafka_rest_properties",
@@ -596,10 +737,21 @@ const Cluster_PropertiesFields: FieldMap = {
     fields: Cluster_Properties_NetworkPropertiesFields,
   },
   osType: "os_type",
+  privateEndpointConnections: {
+    wireName: "private_endpoint_connections",
+    kind: "list",
+    fields: Cluster_Properties_PrivateEndpointConnectionsFields,
+  },
   privateLinkConfigurations: {
     wireName: "private_link_configurations",
     kind: "list",
     fields: Cluster_Properties_PrivateLinkConfigurationsFields,
+  },
+  provisioningState: "provisioning_state",
+  quotaInfo: {
+    wireName: "quota_info",
+    kind: "object",
+    fields: Cluster_Properties_QuotaInfoFields,
   },
   securityProfile: {
     wireName: "security_profile",
@@ -637,7 +789,7 @@ export interface ClusterAttrs {
   /** The cluster create parameters. */
   properties: Cluster_Properties;
   /** Metadata pertaining to creation and last modification of the resource. */
-  systemData: Cluster_SystemData;
+  systemData: Cluster_Properties_PrivateEndpointConnections_SystemData;
   /** The resource tags. */
   tags: Record<string, string>;
   /** The availability zones. */

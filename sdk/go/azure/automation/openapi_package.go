@@ -10,6 +10,21 @@ type OpenapiPackage_AllOf struct {
 	Tags any
 }
 
+type OpenapiPackage_Properties_AllOf struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
+}
+
 type OpenapiPackage_Properties_ContentLink_ContentHash struct {
 	// Gets or sets the content hash algorithm used to hash the content.
 	Algorithm any
@@ -26,38 +41,85 @@ type OpenapiPackage_Properties_ContentLink struct {
 	Version any
 }
 
+type OpenapiPackage_Properties_Error struct {
+	// Package import error code.
+	Code any
+	// Package import error message.
+	Message any
+}
+
 type OpenapiPackage_Properties struct {
+	// Metadata pertaining to creation and last modification of the resource.
+	AllOf any
 	// Definition of the content link.
 	ContentLink any
+	// Gets or sets the isGlobal flag of the package.
+	Default any
+	// Definition of the package error info type.
+	Error any
+	// Gets or sets the provisioning state of the Package.
+	ProvisioningState any
+	// Gets or sets the size in bytes of the Package.
+	SizeInBytes any
+	// Gets or sets the version of the Package.
+	Version any
 }
 
 var OpenapiPackage_AllOfFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Tags":     ubx.FieldSpec{WireName: "tags"},
+}
+
+var OpenapiPackage_Properties_AllOfFields = ubx.FieldMap{
+	"CreatedAt":          ubx.FieldSpec{WireName: "created_at"},
+	"CreatedBy":          ubx.FieldSpec{WireName: "created_by"},
+	"CreatedByType":      ubx.FieldSpec{WireName: "created_by_type"},
+	"LastModifiedAt":     ubx.FieldSpec{WireName: "last_modified_at"},
+	"LastModifiedBy":     ubx.FieldSpec{WireName: "last_modified_by"},
+	"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
+}
 
 var OpenapiPackage_Properties_ContentLink_ContentHashFields = ubx.FieldMap{
-		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiPackage_Properties_ContentLinkFields = ubx.FieldMap{
-		"ContentHash": ubx.FieldSpec{
-			WireName: "content_hash",
-			Kind: "object",
-			Fields: OpenapiPackage_Properties_ContentLink_ContentHashFields,
-		},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ContentHash": ubx.FieldSpec{
+		WireName: "content_hash",
+		Kind:     "object",
+		Fields:   OpenapiPackage_Properties_ContentLink_ContentHashFields,
+	},
+	"Uri":     ubx.FieldSpec{WireName: "uri"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
+
+var OpenapiPackage_Properties_ErrorFields = ubx.FieldMap{
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var OpenapiPackage_PropertiesFields = ubx.FieldMap{
-		"ContentLink": ubx.FieldSpec{
-			WireName: "content_link",
-			Kind: "object",
-			Fields: OpenapiPackage_Properties_ContentLinkFields,
-		},
-	}
+	"AllOf": ubx.FieldSpec{
+		WireName: "all_of",
+		Kind:     "object",
+		Fields:   OpenapiPackage_Properties_AllOfFields,
+	},
+	"ContentLink": ubx.FieldSpec{
+		WireName: "content_link",
+		Kind:     "object",
+		Fields:   OpenapiPackage_Properties_ContentLinkFields,
+	},
+	"Default": ubx.FieldSpec{WireName: "default"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiPackage_Properties_ErrorFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SizeInBytes":       ubx.FieldSpec{WireName: "size_in_bytes"},
+	"Version":           ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiPackageConfig struct {
 	// The resource model definition for an Azure Resource Manager tracked top level resource which has 'tags' and a 'location'
@@ -78,13 +140,13 @@ var OpenapiPackage = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"AllOf": ubx.FieldSpec{
 			WireName: "all_of",
-			Kind: "object",
-			Fields: OpenapiPackage_AllOfFields,
+			Kind:     "object",
+			Fields:   OpenapiPackage_AllOfFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPackage_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPackage_PropertiesFields,
 		},
 	},
 }

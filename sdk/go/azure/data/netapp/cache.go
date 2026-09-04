@@ -4,21 +4,21 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cache_Value_Properties_ExportPolicy_Rules struct {
-	AllowedClients any
-	ChownMode any
-	Cifs any
-	HasRootAccess any
-	Kerberos5ReadOnly any
-	Kerberos5ReadWrite any
-	Kerberos5iReadOnly any
+	AllowedClients      any
+	ChownMode           any
+	Cifs                any
+	HasRootAccess       any
+	Kerberos5ReadOnly   any
+	Kerberos5ReadWrite  any
+	Kerberos5iReadOnly  any
 	Kerberos5iReadWrite any
-	Kerberos5pReadOnly any
+	Kerberos5pReadOnly  any
 	Kerberos5pReadWrite any
-	Nfsv3 any
-	Nfsv41 any
-	RuleIndex any
-	UnixReadOnly any
-	UnixReadWrite any
+	Nfsv3               any
+	Nfsv41              any
+	RuleIndex           any
+	UnixReadOnly        any
+	UnixReadWrite       any
 }
 
 type Cache_Value_Properties_ExportPolicy struct {
@@ -26,61 +26,61 @@ type Cache_Value_Properties_ExportPolicy struct {
 }
 
 type Cache_Value_Properties_MountTargets struct {
-	IpAddress any
+	IpAddress     any
 	MountTargetId any
 	SmbServerFqdn any
 }
 
 type Cache_Value_Properties_OriginClusterInformation struct {
-	PeerAddresses any
+	PeerAddresses   any
 	PeerClusterName any
-	PeerVolumeName any
+	PeerVolumeName  any
 	PeerVserverName any
 }
 
 type Cache_Value_Properties_SmbSettings struct {
 	SmbAccessBasedEnumeration any
-	SmbEncryption any
-	SmbNonBrowsable any
+	SmbEncryption             any
+	SmbNonBrowsable           any
 }
 
 type Cache_Value_Properties struct {
-	ActualThroughputMibps any
-	CacheState any
-	CacheSubnetResourceId any
-	CifsChangeNotifications any
-	Encryption any
-	EncryptionKeySource any
-	ExportPolicy any
-	FileAccessLogs any
-	FilePath any
-	GlobalFileLocking any
-	Kerberos any
+	ActualThroughputMibps             any
+	CacheState                        any
+	CacheSubnetResourceId             any
+	CifsChangeNotifications           any
+	Encryption                        any
+	EncryptionKeySource               any
+	ExportPolicy                      any
+	FileAccessLogs                    any
+	FilePath                          any
+	GlobalFileLocking                 any
+	Kerberos                          any
 	KeyVaultPrivateEndpointResourceId any
-	Language any
-	Ldap any
-	LdapServerType any
-	MaximumNumberOfFiles any
-	MountTargets any
-	OriginClusterInformation any
-	PeeringSubnetResourceId any
-	ProtocolTypes any
-	ProvisioningState any
-	Size any
-	SmbSettings any
-	ThroughputMibps any
-	WriteBack any
+	Language                          any
+	Ldap                              any
+	LdapServerType                    any
+	MaximumNumberOfFiles              any
+	MountTargets                      any
+	OriginClusterInformation          any
+	PeeringSubnetResourceId           any
+	ProtocolTypes                     any
+	ProvisioningState                 any
+	Size                              any
+	SmbSettings                       any
+	ThroughputMibps                   any
+	WriteBack                         any
 }
 
 type Cache_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type CacheConfig struct {
 	AccountName any
-	PoolName any
+	PoolName    any
 }
 
 type CacheAttrs struct {
@@ -96,6 +96,6 @@ var Cache = ubx.DataSourceBinding{
 	WireType: "azure_netapp_cache",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
 	},
 }

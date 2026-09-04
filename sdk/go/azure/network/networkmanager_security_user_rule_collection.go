@@ -34,34 +34,23 @@ type NetworkmanagerSecurityUserRuleCollection_SystemData struct {
 }
 
 var NetworkmanagerSecurityUserRuleCollection_Properties_AppliesToGroupsFields = ubx.FieldMap{
-		"NetworkGroupId": ubx.FieldSpec{WireName: "network_group_id"},
-	}
+	"NetworkGroupId": ubx.FieldSpec{WireName: "network_group_id"},
+}
 
 var NetworkmanagerSecurityUserRuleCollection_PropertiesFields = ubx.FieldMap{
-		"AppliesToGroups": ubx.FieldSpec{
-			WireName: "applies_to_groups",
-			Kind: "list",
-			Fields: NetworkmanagerSecurityUserRuleCollection_Properties_AppliesToGroupsFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
-
-var NetworkmanagerSecurityUserRuleCollection_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"AppliesToGroups": ubx.FieldSpec{
+		WireName: "applies_to_groups",
+		Kind:     "list",
+		Fields:   NetworkmanagerSecurityUserRuleCollection_Properties_AppliesToGroupsFields,
+	},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkmanagerSecurityUserRuleCollectionConfig struct {
 	// Defines the security user rule collection properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerSecurityUserRuleCollectionAttrs struct {
@@ -76,13 +65,8 @@ var NetworkmanagerSecurityUserRuleCollection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerSecurityUserRuleCollection_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerSecurityUserRuleCollection_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerSecurityUserRuleCollection_PropertiesFields,
 		},
 	},
 }

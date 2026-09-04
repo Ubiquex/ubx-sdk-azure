@@ -20,7 +20,7 @@ type DataConnectionAttrs struct {
 var DataConnection = ubx.ResourceBinding{
 	WireType: "azure_kusto_data_connection",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 	},
 }

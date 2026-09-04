@@ -35,21 +35,21 @@ type Backup_Properties struct {
 }
 
 var Backup_PropertiesFields = ubx.FieldMap{
-		"BackupId": ubx.FieldSpec{WireName: "backup_id"},
-		"BackupPolicyResourceId": ubx.FieldSpec{WireName: "backup_policy_resource_id"},
-		"BackupType": ubx.FieldSpec{WireName: "backup_type"},
-		"CompletionDate": ubx.FieldSpec{WireName: "completion_date"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"FailureReason": ubx.FieldSpec{WireName: "failure_reason"},
-		"IsLargeVolume": ubx.FieldSpec{WireName: "is_large_volume"},
-		"Label": ubx.FieldSpec{WireName: "label"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"SnapshotCreationDate": ubx.FieldSpec{WireName: "snapshot_creation_date"},
-		"SnapshotName": ubx.FieldSpec{WireName: "snapshot_name"},
-		"UseExistingSnapshot": ubx.FieldSpec{WireName: "use_existing_snapshot"},
-		"VolumeResourceId": ubx.FieldSpec{WireName: "volume_resource_id"},
-	}
+	"BackupId":               ubx.FieldSpec{WireName: "backup_id"},
+	"BackupPolicyResourceId": ubx.FieldSpec{WireName: "backup_policy_resource_id"},
+	"BackupType":             ubx.FieldSpec{WireName: "backup_type"},
+	"CompletionDate":         ubx.FieldSpec{WireName: "completion_date"},
+	"CreationDate":           ubx.FieldSpec{WireName: "creation_date"},
+	"FailureReason":          ubx.FieldSpec{WireName: "failure_reason"},
+	"IsLargeVolume":          ubx.FieldSpec{WireName: "is_large_volume"},
+	"Label":                  ubx.FieldSpec{WireName: "label"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"Size":                   ubx.FieldSpec{WireName: "size"},
+	"SnapshotCreationDate":   ubx.FieldSpec{WireName: "snapshot_creation_date"},
+	"SnapshotName":           ubx.FieldSpec{WireName: "snapshot_name"},
+	"UseExistingSnapshot":    ubx.FieldSpec{WireName: "use_existing_snapshot"},
+	"VolumeResourceId":       ubx.FieldSpec{WireName: "volume_resource_id"},
+}
 
 type BackupConfig struct {
 	// Backup properties
@@ -66,8 +66,8 @@ var Backup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Backup_PropertiesFields,
+			Kind:     "object",
+			Fields:   Backup_PropertiesFields,
 		},
 	},
 }

@@ -4,8 +4,8 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FailovergroupsFailoverGroup_Properties_PartnerServers struct {
-	Id any
-	Location any
+	Id              any
+	Location        any
 	ReplicationRole any
 }
 
@@ -41,46 +41,44 @@ type FailovergroupsFailoverGroup_Properties struct {
 }
 
 var FailovergroupsFailoverGroup_Properties_PartnerServersFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
-	}
+	"Id":              ubx.FieldSpec{WireName: "id"},
+	"Location":        ubx.FieldSpec{WireName: "location"},
+	"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
+}
 
 var FailovergroupsFailoverGroup_Properties_ReadOnlyEndpointFields = ubx.FieldMap{
-		"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
-		"TargetServer": ubx.FieldSpec{WireName: "target_server"},
-	}
+	"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
+	"TargetServer":   ubx.FieldSpec{WireName: "target_server"},
+}
 
 var FailovergroupsFailoverGroup_Properties_ReadWriteEndpointFields = ubx.FieldMap{
-		"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
-		"FailoverWithDataLossGracePeriodMinutes": ubx.FieldSpec{WireName: "failover_with_data_loss_grace_period_minutes"},
-	}
+	"FailoverPolicy":                         ubx.FieldSpec{WireName: "failover_policy"},
+	"FailoverWithDataLossGracePeriodMinutes": ubx.FieldSpec{WireName: "failover_with_data_loss_grace_period_minutes"},
+}
 
 var FailovergroupsFailoverGroup_PropertiesFields = ubx.FieldMap{
-		"Databases": ubx.FieldSpec{WireName: "databases"},
-		"PartnerServers": ubx.FieldSpec{
-			WireName: "partner_servers",
-			Kind: "list",
-			Fields: FailovergroupsFailoverGroup_Properties_PartnerServersFields,
-		},
-		"ReadOnlyEndpoint": ubx.FieldSpec{
-			WireName: "read_only_endpoint",
-			Kind: "object",
-			Fields: FailovergroupsFailoverGroup_Properties_ReadOnlyEndpointFields,
-		},
-		"ReadWriteEndpoint": ubx.FieldSpec{
-			WireName: "read_write_endpoint",
-			Kind: "object",
-			Fields: FailovergroupsFailoverGroup_Properties_ReadWriteEndpointFields,
-		},
-		"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
-		"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
-		"SecondaryType": ubx.FieldSpec{WireName: "secondary_type"},
-	}
+	"Databases": ubx.FieldSpec{WireName: "databases"},
+	"PartnerServers": ubx.FieldSpec{
+		WireName: "partner_servers",
+		Kind:     "list",
+		Fields:   FailovergroupsFailoverGroup_Properties_PartnerServersFields,
+	},
+	"ReadOnlyEndpoint": ubx.FieldSpec{
+		WireName: "read_only_endpoint",
+		Kind:     "object",
+		Fields:   FailovergroupsFailoverGroup_Properties_ReadOnlyEndpointFields,
+	},
+	"ReadWriteEndpoint": ubx.FieldSpec{
+		WireName: "read_write_endpoint",
+		Kind:     "object",
+		Fields:   FailovergroupsFailoverGroup_Properties_ReadWriteEndpointFields,
+	},
+	"ReplicationRole":  ubx.FieldSpec{WireName: "replication_role"},
+	"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
+	"SecondaryType":    ubx.FieldSpec{WireName: "secondary_type"},
+}
 
 type FailovergroupsFailoverGroupConfig struct {
-	// Resource location.
-	Location any
 	// Properties of a failover group.
 	Properties any
 	// Resource tags.
@@ -99,11 +97,10 @@ type FailovergroupsFailoverGroupAttrs struct {
 var FailovergroupsFailoverGroup = ubx.ResourceBinding{
 	WireType: "azure_sql_failovergroups_failover_group",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FailovergroupsFailoverGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   FailovergroupsFailoverGroup_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

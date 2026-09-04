@@ -4,25 +4,25 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationServiceEnvironmentNetworkHealthConfig struct {
-	ApiVersion any
+	ApiVersion                        any
 	IntegrationServiceEnvironmentName any
-	ResourceGroup any
-	SubscriptionId any
+	ResourceGroup                     any
+	SubscriptionId                    any
 }
 
 type IntegrationServiceEnvironmentNetworkHealthAttrs struct {
-	ApiVersion any
+	ApiVersion                        any
 	IntegrationServiceEnvironmentName any
-	ResourceGroup any
-	SubscriptionId any
+	ResourceGroup                     any
+	SubscriptionId                    any
 }
 
 var IntegrationServiceEnvironmentNetworkHealth = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_service_environment_network_health",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":                        ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationServiceEnvironmentName": ubx.FieldSpec{WireName: "integration_service_environment_name"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroup":                     ubx.FieldSpec{WireName: "resource_group"},
+		"SubscriptionId":                    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

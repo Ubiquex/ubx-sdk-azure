@@ -4,21 +4,21 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsJobResource_Value_Properties struct {
-	ActivityId any
+	ActivityId           any
 	BackupManagementType any
-	EndTime any
-	EntityFriendlyName any
-	JobType any
-	Operation any
-	StartTime any
-	Status any
+	EndTime              any
+	EntityFriendlyName   any
+	JobType              any
+	Operation            any
+	StartTime            any
+	Status               any
 }
 
 type BmsJobResource_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsJobResourceConfig struct {
@@ -27,7 +27,7 @@ type BmsJobResourceConfig struct {
 
 type BmsJobResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

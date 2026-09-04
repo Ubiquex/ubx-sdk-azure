@@ -96,26 +96,13 @@ const ApigatewayApiManagementGatewayResource_SkuFields: FieldMap = {
   name: "name",
 };
 
-const ApigatewayApiManagementGatewayResource_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ApigatewayApiManagementGatewayResourceConfig {
-  /** ETag of the resource. */
-  etag?: string | Computed<string>;
   /** Resource location. */
   location: string | Computed<string>;
   /** Properties of an API Management gateway resource description. */
   properties: ApigatewayApiManagementGatewayResource_Properties | Computed<ApigatewayApiManagementGatewayResource_Properties>;
   /** API Management gateway resource SKU properties. */
   sku: ApigatewayApiManagementGatewayResource_Sku | Computed<ApigatewayApiManagementGatewayResource_Sku>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ApigatewayApiManagementGatewayResource_SystemData | Computed<ApigatewayApiManagementGatewayResource_SystemData>;
 }
 
 export interface ApigatewayApiManagementGatewayResourceAttrs {
@@ -134,7 +121,6 @@ export interface ApigatewayApiManagementGatewayResourceAttrs {
 export const ApigatewayApiManagementGatewayResource: ResourceBinding<ApigatewayApiManagementGatewayResourceConfig, ApigatewayApiManagementGatewayResourceAttrs> = {
   wireType: "azure_apimanagement_apigateway_api_management_gateway_resource",
   fields: {
-    etag: "etag",
     location: "location",
     properties: {
       wireName: "properties",
@@ -145,11 +131,6 @@ export const ApigatewayApiManagementGatewayResource: ResourceBinding<ApigatewayA
       wireName: "sku",
       kind: "object",
       fields: ApigatewayApiManagementGatewayResource_SkuFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ApigatewayApiManagementGatewayResource_SystemDataFields,
     },
   },
 };

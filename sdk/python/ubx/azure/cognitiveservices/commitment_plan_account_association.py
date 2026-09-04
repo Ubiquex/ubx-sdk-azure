@@ -17,8 +17,6 @@ _CommitmentPlanAccountAssociation_PropertiesFields = {
 
 @dataclasses.dataclass
 class CommitmentPlanAccountAssociationConfig:
-    # Resource Etag.
-    etag: Any = None
     # The commitment plan account association properties.
     properties: Any = None
     # Resource tags.
@@ -36,7 +34,6 @@ class CommitmentPlanAccountAssociationAttrs:
 CommitmentPlanAccountAssociation = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_commitment_plan_account_association",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -108,8 +108,6 @@ _Sbqueue_PropertiesFields = {
 
 @dataclasses.dataclass
 class SbqueueConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # The Queue Properties definition.
     properties: Any = None
 
@@ -123,7 +121,6 @@ class SbqueueAttrs:
 Sbqueue = ubx.ResourceBinding(
     wire_type="azure_servicebus_sbqueue",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

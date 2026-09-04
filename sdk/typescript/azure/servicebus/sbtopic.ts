@@ -87,8 +87,6 @@ const Sbtopic_PropertiesFields: FieldMap = {
 };
 
 export interface SbtopicConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** The Topic Properties definition. */
   properties?: Sbtopic_Properties | Computed<Sbtopic_Properties>;
 }
@@ -103,7 +101,6 @@ export interface SbtopicAttrs {
 export const Sbtopic: ResourceBinding<SbtopicConfig, SbtopicAttrs> = {
   wireType: "azure_servicebus_sbtopic",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

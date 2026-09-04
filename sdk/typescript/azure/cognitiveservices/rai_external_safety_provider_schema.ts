@@ -35,12 +35,8 @@ const RaiExternalSafetyProviderSchema_PropertiesFields: FieldMap = {
 };
 
 export interface RaiExternalSafetyProviderSchemaConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** RAI External SafetyProvider schema properties. */
   properties?: RaiExternalSafetyProviderSchema_Properties | Computed<RaiExternalSafetyProviderSchema_Properties>;
-  /** Resource tags. */
-  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface RaiExternalSafetyProviderSchemaAttrs {
@@ -55,12 +51,10 @@ export interface RaiExternalSafetyProviderSchemaAttrs {
 export const RaiExternalSafetyProviderSchema: ResourceBinding<RaiExternalSafetyProviderSchemaConfig, RaiExternalSafetyProviderSchemaAttrs> = {
   wireType: "azure_cognitiveservices_rai_external_safety_provider_schema",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: RaiExternalSafetyProviderSchema_PropertiesFields,
     },
-    tags: "tags",
   },
 };

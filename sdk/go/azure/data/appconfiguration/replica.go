@@ -4,42 +4,42 @@ package appconfiguration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Replica_Value_Properties struct {
-	Endpoint any
+	Endpoint          any
 	ProvisioningState any
 }
 
 type Replica_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type Replica_Value struct {
-	Id any
-	Location any
-	Name any
+	Id         any
+	Location   any
+	Name       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type ReplicaConfig struct {
-	ApiVersion any
-	ConfigStoreName any
+	ApiVersion        any
+	ConfigStoreName   any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type ReplicaAttrs struct {
-	ApiVersion any
+	ApiVersion      any
 	ConfigStoreName any
 	// The URI that can be used to request the next set of paged results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The collection value.
 	Value any
 }
@@ -47,9 +47,9 @@ type ReplicaAttrs struct {
 var Replica = ubx.DataSourceBinding{
 	WireType: "azure_appconfiguration_replica",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ConfigStoreName": ubx.FieldSpec{WireName: "config_store_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ConfigStoreName":   ubx.FieldSpec{WireName: "config_store_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

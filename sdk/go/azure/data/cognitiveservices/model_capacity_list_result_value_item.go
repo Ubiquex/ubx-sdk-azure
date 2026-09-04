@@ -5,57 +5,57 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ModelCapacityListResultValueItem_Value_Properties_Model_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path any
+	Path   any
 }
 
 type ModelCapacityListResultValueItem_Value_Properties_Model_CallRateLimit_Rules struct {
-	Count any
+	Count                    any
 	DynamicThrottlingEnabled any
-	Key any
-	MatchPatterns any
-	MinCount any
-	RenewalPeriod any
+	Key                      any
+	MatchPatterns            any
+	MinCount                 any
+	RenewalPeriod            any
 }
 
 type ModelCapacityListResultValueItem_Value_Properties_Model_CallRateLimit struct {
-	Count any
+	Count         any
 	RenewalPeriod any
-	Rules any
+	Rules         any
 }
 
 type ModelCapacityListResultValueItem_Value_Properties_Model struct {
 	CallRateLimit any
-	Format any
-	Name any
-	Publisher any
-	Source any
+	Format        any
+	Name          any
+	Publisher     any
+	Source        any
 	SourceAccount any
-	Version any
+	Version       any
 }
 
 type ModelCapacityListResultValueItem_Value_Properties struct {
-	AvailableCapacity any
+	AvailableCapacity         any
 	AvailableFinetuneCapacity any
-	Model any
-	ScopeId any
-	ScopeType any
-	SkuName any
+	Model                     any
+	ScopeId                   any
+	ScopeType                 any
+	SkuName                   any
 }
 
 type ModelCapacityListResultValueItem_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ModelCapacityListResultValueItemConfig struct {
-	ModelFormat any
-	ModelName any
+	ModelFormat  any
+	ModelName    any
 	ModelVersion any
 }
 
 type ModelCapacityListResultValueItemAttrs struct {
-	ModelFormat any
-	ModelName any
+	ModelFormat  any
+	ModelName    any
 	ModelVersion any
 	// The link used to get the next page of ModelSkuCapacity.
 	NextLink any
@@ -66,8 +66,8 @@ type ModelCapacityListResultValueItemAttrs struct {
 var ModelCapacityListResultValueItem = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_model_capacity_list_result_value_item",
 	Fields: ubx.FieldMap{
-		"ModelFormat": ubx.FieldSpec{WireName: "model_format"},
-		"ModelName": ubx.FieldSpec{WireName: "model_name"},
+		"ModelFormat":  ubx.FieldSpec{WireName: "model_format"},
+		"ModelName":    ubx.FieldSpec{WireName: "model_name"},
 		"ModelVersion": ubx.FieldSpec{WireName: "model_version"},
 	},
 }

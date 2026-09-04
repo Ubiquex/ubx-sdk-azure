@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateendpointsPrivateEndpoint_Value_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateendpointsPrivateEndpoint_Value_Properties_ManualPrivateLinkServiceConnections_Properties struct {
-	GroupIds any
+	GroupIds                          any
 	PrivateLinkServiceConnectionState any
-	PrivateLinkServiceId any
-	RequestMessage any
+	PrivateLinkServiceId              any
+	RequestMessage                    any
 }
 
 type PrivateendpointsPrivateEndpoint_Value_Properties_ManualPrivateLinkServiceConnections struct {
@@ -21,12 +21,12 @@ type PrivateendpointsPrivateEndpoint_Value_Properties_ManualPrivateLinkServiceCo
 }
 
 type PrivateendpointsPrivateEndpoint_Value_Properties struct {
-	CreatedDate any
+	CreatedDate                         any
 	ManualPrivateLinkServiceConnections any
 }
 
 type PrivateendpointsPrivateEndpoint_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -42,6 +42,5 @@ type PrivateendpointsPrivateEndpointAttrs struct {
 
 var PrivateendpointsPrivateEndpoint = ubx.DataSourceBinding{
 	WireType: "azure_streamanalytics_privateendpoints_private_endpoint",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

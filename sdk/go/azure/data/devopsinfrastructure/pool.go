@@ -4,14 +4,14 @@ package devopsinfrastructure
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Pool_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Pool_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,8 +20,8 @@ type Pool_Value_Properties_AgentProfile_ResourcePredictionsProfile struct {
 }
 
 type Pool_Value_Properties_AgentProfile struct {
-	Kind any
-	ResourcePredictions any
+	Kind                       any
+	ResourcePredictions        any
 	ResourcePredictionsProfile any
 }
 
@@ -30,17 +30,17 @@ type Pool_Value_Properties_RuntimeConfiguration struct {
 }
 
 type Pool_Value_Properties struct {
-	AgentProfile any
+	AgentProfile               any
 	DevCenterProjectResourceId any
-	FabricProfile any
-	MaximumConcurrency any
-	OrganizationProfile any
-	ProvisioningState any
-	RuntimeConfiguration any
+	FabricProfile              any
+	MaximumConcurrency         any
+	OrganizationProfile        any
+	ProvisioningState          any
+	RuntimeConfiguration       any
 }
 
 type Pool_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -56,6 +56,5 @@ type PoolAttrs struct {
 
 var Pool = ubx.DataSourceBinding{
 	WireType: "azure_devopsinfrastructure_pool",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

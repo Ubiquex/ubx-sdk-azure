@@ -4,16 +4,16 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiResourceCollectionConfig struct {
-	Name any
+	Name          any
 	NamespaceName any
-	RelayName any
+	RelayName     any
 }
 
 type OpenapiResourceCollectionAttrs struct {
-	Name any
+	Name          any
 	NamespaceName any
 	// Link to next page of resources.
-	NextLink any
+	NextLink  any
 	RelayName any
 	// Collection of resources.
 	Value any
@@ -22,8 +22,8 @@ type OpenapiResourceCollectionAttrs struct {
 var OpenapiResourceCollection = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_resource_collection",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
-		"RelayName": ubx.FieldSpec{WireName: "relay_name"},
+		"RelayName":     ubx.FieldSpec{WireName: "relay_name"},
 	},
 }

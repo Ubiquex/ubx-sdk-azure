@@ -4,7 +4,7 @@ package redisenterprise
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -32,35 +32,33 @@ type Cluster_Sku struct {
 }
 
 var Cluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Cluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Cluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Cluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Cluster_PropertiesFields = ubx.FieldMap{
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	}
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+}
 
 var Cluster_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 type ClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
-	// Distinguishes the kind of cluster. Read-only.
-	Kind any
 	// Properties of Redis Enterprise clusters for create operations
 	Properties any
 	// SKU parameters supplied to the create Redis Enterprise cluster operation.
@@ -87,19 +85,18 @@ var Cluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Cluster_IdentityFields,
+			Kind:     "object",
+			Fields:   Cluster_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Cluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   Cluster_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Cluster_SkuFields,
+			Kind:     "object",
+			Fields:   Cluster_SkuFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

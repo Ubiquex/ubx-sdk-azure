@@ -4,14 +4,14 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Workspace_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Workspace_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,37 +20,37 @@ type Workspace_Value_Properties_CspWorkspaceAdminProperties struct {
 }
 
 type Workspace_Value_Properties_DefaultDataLakeStorage struct {
-	AccountUrl any
+	AccountUrl                   any
 	CreateManagedPrivateEndpoint any
-	Filesystem any
-	ResourceId any
+	Filesystem                   any
+	ResourceId                   any
 }
 
 type Workspace_Value_Properties_Encryption_Cmk_KekIdentity struct {
 	UseSystemAssignedIdentity any
-	UserAssignedIdentity any
+	UserAssignedIdentity      any
 }
 
 type Workspace_Value_Properties_Encryption_Cmk_Key struct {
 	KeyVaultUrl any
-	Name any
+	Name        any
 }
 
 type Workspace_Value_Properties_Encryption_Cmk struct {
 	KekIdentity any
-	Key any
-	Status any
+	Key         any
+	Status      any
 }
 
 type Workspace_Value_Properties_Encryption struct {
-	Cmk any
+	Cmk                     any
 	DoubleEncryptionEnabled any
 }
 
 type Workspace_Value_Properties_ManagedVirtualNetworkSettings struct {
-	AllowedAadTenantIdsForLinking any
+	AllowedAadTenantIdsForLinking     any
 	LinkedAccessCheckOnTargetResource any
-	PreventDataExfiltration any
+	PreventDataExfiltration           any
 }
 
 type Workspace_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -59,14 +59,14 @@ type Workspace_Value_Properties_PrivateEndpointConnections_Properties_PrivateEnd
 
 type Workspace_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Workspace_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Workspace_Value_Properties_PrivateEndpointConnections struct {
@@ -82,43 +82,43 @@ type Workspace_Value_Properties_VirtualNetworkProfile struct {
 }
 
 type Workspace_Value_Properties_WorkspaceRepositoryConfiguration struct {
-	AccountName any
+	AccountName         any
 	CollaborationBranch any
-	HostName any
-	LastCommitId any
-	ProjectName any
-	RepositoryName any
-	RootFolder any
-	TenantId any
-	Type any
+	HostName            any
+	LastCommitId        any
+	ProjectName         any
+	RepositoryName      any
+	RootFolder          any
+	TenantId            any
+	Type                any
 }
 
 type Workspace_Value_Properties struct {
-	AdlaResourceId any
-	AzureAdonlyAuthentication any
-	ConnectivityEndpoints any
-	CspWorkspaceAdminProperties any
-	DefaultDataLakeStorage any
-	Encryption any
-	ExtraProperties any
-	ManagedResourceGroupName any
-	ManagedVirtualNetwork any
-	ManagedVirtualNetworkSettings any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	PurviewConfiguration any
-	Settings any
-	SqlAdministratorLogin any
-	SqlAdministratorLoginPassword any
-	TrustedServiceBypassEnabled any
-	VirtualNetworkProfile any
+	AdlaResourceId                   any
+	AzureAdonlyAuthentication        any
+	ConnectivityEndpoints            any
+	CspWorkspaceAdminProperties      any
+	DefaultDataLakeStorage           any
+	Encryption                       any
+	ExtraProperties                  any
+	ManagedResourceGroupName         any
+	ManagedVirtualNetwork            any
+	ManagedVirtualNetworkSettings    any
+	PrivateEndpointConnections       any
+	ProvisioningState                any
+	PublicNetworkAccess              any
+	PurviewConfiguration             any
+	Settings                         any
+	SqlAdministratorLogin            any
+	SqlAdministratorLoginPassword    any
+	TrustedServiceBypassEnabled      any
+	VirtualNetworkProfile            any
 	WorkspaceRepositoryConfiguration any
-	WorkspaceUid any
+	WorkspaceUid                     any
 }
 
 type Workspace_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -134,6 +134,5 @@ type WorkspaceAttrs struct {
 
 var Workspace = ubx.DataSourceBinding{
 	WireType: "azure_synapse_workspace",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

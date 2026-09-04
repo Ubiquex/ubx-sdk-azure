@@ -184,8 +184,6 @@ const ServersServer_PropertiesFields: FieldMap = {
 export interface ServersServerConfig {
   /** Azure Active Directory identity configuration for a resource. */
   identity?: ServersServer_Identity | Computed<ServersServer_Identity>;
-  /** Kind of sql server. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
   /** The properties of a server. */
   properties?: ServersServer_Properties | Computed<ServersServer_Properties>;
 }
@@ -207,7 +205,6 @@ export const ServersServer: ResourceBinding<ServersServerConfig, ServersServerAt
       kind: "object",
       fields: ServersServer_IdentityFields,
     },
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

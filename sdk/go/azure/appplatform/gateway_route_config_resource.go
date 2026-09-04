@@ -10,14 +10,14 @@ type GatewayRouteConfigResource_Properties_OpenApi struct {
 
 type GatewayRouteConfigResource_Properties_Routes struct {
 	Description any
-	Filters any
-	Order any
-	Predicates any
-	SsoEnabled any
-	Tags any
-	Title any
-	TokenRelay any
-	Uri any
+	Filters     any
+	Order       any
+	Predicates  any
+	SsoEnabled  any
+	Tags        any
+	Title       any
+	TokenRelay  any
+	Uri         any
 }
 
 type GatewayRouteConfigResource_Properties struct {
@@ -40,39 +40,39 @@ type GatewayRouteConfigResource_Properties struct {
 }
 
 var GatewayRouteConfigResource_Properties_OpenApiFields = ubx.FieldMap{
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"Uri": ubx.FieldSpec{WireName: "uri"},
+}
 
 var GatewayRouteConfigResource_Properties_RoutesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Filters": ubx.FieldSpec{WireName: "filters"},
-		"Order": ubx.FieldSpec{WireName: "order"},
-		"Predicates": ubx.FieldSpec{WireName: "predicates"},
-		"SsoEnabled": ubx.FieldSpec{WireName: "sso_enabled"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-		"TokenRelay": ubx.FieldSpec{WireName: "token_relay"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Filters":     ubx.FieldSpec{WireName: "filters"},
+	"Order":       ubx.FieldSpec{WireName: "order"},
+	"Predicates":  ubx.FieldSpec{WireName: "predicates"},
+	"SsoEnabled":  ubx.FieldSpec{WireName: "sso_enabled"},
+	"Tags":        ubx.FieldSpec{WireName: "tags"},
+	"Title":       ubx.FieldSpec{WireName: "title"},
+	"TokenRelay":  ubx.FieldSpec{WireName: "token_relay"},
+	"Uri":         ubx.FieldSpec{WireName: "uri"},
+}
 
 var GatewayRouteConfigResource_PropertiesFields = ubx.FieldMap{
-		"AppResourceId": ubx.FieldSpec{WireName: "app_resource_id"},
-		"Filters": ubx.FieldSpec{WireName: "filters"},
-		"OpenApi": ubx.FieldSpec{
-			WireName: "open_api",
-			Kind: "object",
-			Fields: GatewayRouteConfigResource_Properties_OpenApiFields,
-		},
-		"Predicates": ubx.FieldSpec{WireName: "predicates"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: GatewayRouteConfigResource_Properties_RoutesFields,
-		},
-		"SsoEnabled": ubx.FieldSpec{WireName: "sso_enabled"},
-	}
+	"AppResourceId": ubx.FieldSpec{WireName: "app_resource_id"},
+	"Filters":       ubx.FieldSpec{WireName: "filters"},
+	"OpenApi": ubx.FieldSpec{
+		WireName: "open_api",
+		Kind:     "object",
+		Fields:   GatewayRouteConfigResource_Properties_OpenApiFields,
+	},
+	"Predicates":        ubx.FieldSpec{WireName: "predicates"},
+	"Protocol":          ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   GatewayRouteConfigResource_Properties_RoutesFields,
+	},
+	"SsoEnabled": ubx.FieldSpec{WireName: "sso_enabled"},
+}
 
 type GatewayRouteConfigResourceConfig struct {
 	// API route config of the Spring Cloud Gateway
@@ -89,8 +89,8 @@ var GatewayRouteConfigResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GatewayRouteConfigResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   GatewayRouteConfigResource_PropertiesFields,
 		},
 	},
 }

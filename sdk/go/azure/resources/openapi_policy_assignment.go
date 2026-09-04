@@ -4,7 +4,7 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicyAssignment_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,21 +20,21 @@ type OpenapiPolicyAssignment_Identity struct {
 }
 
 type OpenapiPolicyAssignment_Properties_NonComplianceMessages struct {
-	Message any
+	Message                     any
 	PolicyDefinitionReferenceId any
 }
 
 type OpenapiPolicyAssignment_Properties_Overrides_Selectors struct {
-	In any
-	Kind any
-	NotIn any
+	In       any
+	Kind     any
+	NotIn    any
 	Progress any
 }
 
 type OpenapiPolicyAssignment_Properties_Overrides struct {
-	Kind any
+	Kind      any
 	Selectors any
-	Value any
+	Value     any
 }
 
 type OpenapiPolicyAssignment_Properties_Parameters struct {
@@ -42,7 +42,7 @@ type OpenapiPolicyAssignment_Properties_Parameters struct {
 }
 
 type OpenapiPolicyAssignment_Properties_ResourceSelectors struct {
-	Name any
+	Name      any
 	Selectors any
 }
 
@@ -91,100 +91,100 @@ type OpenapiPolicyAssignment_Properties struct {
 }
 
 var OpenapiPolicyAssignment_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiPolicyAssignment_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiPolicyAssignment_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiPolicyAssignment_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiPolicyAssignment_Properties_NonComplianceMessagesFields = ubx.FieldMap{
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"PolicyDefinitionReferenceId": ubx.FieldSpec{WireName: "policy_definition_reference_id"},
-	}
+	"Message":                     ubx.FieldSpec{WireName: "message"},
+	"PolicyDefinitionReferenceId": ubx.FieldSpec{WireName: "policy_definition_reference_id"},
+}
 
 var OpenapiPolicyAssignment_Properties_Overrides_SelectorsFields = ubx.FieldMap{
-		"In": ubx.FieldSpec{WireName: "in"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"NotIn": ubx.FieldSpec{WireName: "not_in"},
-		"Progress": ubx.FieldSpec{WireName: "progress"},
-	}
+	"In":       ubx.FieldSpec{WireName: "in"},
+	"Kind":     ubx.FieldSpec{WireName: "kind"},
+	"NotIn":    ubx.FieldSpec{WireName: "not_in"},
+	"Progress": ubx.FieldSpec{WireName: "progress"},
+}
 
 var OpenapiPolicyAssignment_Properties_OverridesFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Selectors": ubx.FieldSpec{
-			WireName: "selectors",
-			Kind: "list",
-			Fields: OpenapiPolicyAssignment_Properties_Overrides_SelectorsFields,
-		},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+	"Selectors": ubx.FieldSpec{
+		WireName: "selectors",
+		Kind:     "list",
+		Fields:   OpenapiPolicyAssignment_Properties_Overrides_SelectorsFields,
+	},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiPolicyAssignment_Properties_ParametersFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiPolicyAssignment_Properties_ResourceSelectorsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Selectors": ubx.FieldSpec{
-			WireName: "selectors",
-			Kind: "list",
-			Fields: OpenapiPolicyAssignment_Properties_Overrides_SelectorsFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Selectors": ubx.FieldSpec{
+		WireName: "selectors",
+		Kind:     "list",
+		Fields:   OpenapiPolicyAssignment_Properties_Overrides_SelectorsFields,
+	},
+}
 
 var OpenapiPolicyAssignment_Properties_SelfServeExemptionSettingsFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"PolicyDefinitionReferenceIds": ubx.FieldSpec{WireName: "policy_definition_reference_ids"},
-	}
+	"Enabled":                      ubx.FieldSpec{WireName: "enabled"},
+	"PolicyDefinitionReferenceIds": ubx.FieldSpec{WireName: "policy_definition_reference_ids"},
+}
 
 var OpenapiPolicyAssignment_PropertiesFields = ubx.FieldMap{
-		"AssignmentType": ubx.FieldSpec{WireName: "assignment_type"},
-		"DefinitionVersion": ubx.FieldSpec{WireName: "definition_version"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"EffectiveDefinitionVersion": ubx.FieldSpec{WireName: "effective_definition_version"},
-		"EnforcementMode": ubx.FieldSpec{WireName: "enforcement_mode"},
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"LatestDefinitionVersion": ubx.FieldSpec{WireName: "latest_definition_version"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"NonComplianceMessages": ubx.FieldSpec{
-			WireName: "non_compliance_messages",
-			Kind: "list",
-			Fields: OpenapiPolicyAssignment_Properties_NonComplianceMessagesFields,
-		},
-		"NotScopes": ubx.FieldSpec{WireName: "not_scopes"},
-		"Overrides": ubx.FieldSpec{
-			WireName: "overrides",
-			Kind: "list",
-			Fields: OpenapiPolicyAssignment_Properties_OverridesFields,
-		},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: OpenapiPolicyAssignment_Properties_ParametersFields,
-		},
-		"PolicyDefinitionId": ubx.FieldSpec{WireName: "policy_definition_id"},
-		"ResourceSelectors": ubx.FieldSpec{
-			WireName: "resource_selectors",
-			Kind: "list",
-			Fields: OpenapiPolicyAssignment_Properties_ResourceSelectorsFields,
-		},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"SelfServeExemptionSettings": ubx.FieldSpec{
-			WireName: "self_serve_exemption_settings",
-			Kind: "object",
-			Fields: OpenapiPolicyAssignment_Properties_SelfServeExemptionSettingsFields,
-		},
-	}
+	"AssignmentType":             ubx.FieldSpec{WireName: "assignment_type"},
+	"DefinitionVersion":          ubx.FieldSpec{WireName: "definition_version"},
+	"Description":                ubx.FieldSpec{WireName: "description"},
+	"DisplayName":                ubx.FieldSpec{WireName: "display_name"},
+	"EffectiveDefinitionVersion": ubx.FieldSpec{WireName: "effective_definition_version"},
+	"EnforcementMode":            ubx.FieldSpec{WireName: "enforcement_mode"},
+	"InstanceId":                 ubx.FieldSpec{WireName: "instance_id"},
+	"LatestDefinitionVersion":    ubx.FieldSpec{WireName: "latest_definition_version"},
+	"Metadata":                   ubx.FieldSpec{WireName: "metadata"},
+	"NonComplianceMessages": ubx.FieldSpec{
+		WireName: "non_compliance_messages",
+		Kind:     "list",
+		Fields:   OpenapiPolicyAssignment_Properties_NonComplianceMessagesFields,
+	},
+	"NotScopes": ubx.FieldSpec{WireName: "not_scopes"},
+	"Overrides": ubx.FieldSpec{
+		WireName: "overrides",
+		Kind:     "list",
+		Fields:   OpenapiPolicyAssignment_Properties_OverridesFields,
+	},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiPolicyAssignment_Properties_ParametersFields,
+	},
+	"PolicyDefinitionId": ubx.FieldSpec{WireName: "policy_definition_id"},
+	"ResourceSelectors": ubx.FieldSpec{
+		WireName: "resource_selectors",
+		Kind:     "list",
+		Fields:   OpenapiPolicyAssignment_Properties_ResourceSelectorsFields,
+	},
+	"Scope": ubx.FieldSpec{WireName: "scope"},
+	"SelfServeExemptionSettings": ubx.FieldSpec{
+		WireName: "self_serve_exemption_settings",
+		Kind:     "object",
+		Fields:   OpenapiPolicyAssignment_Properties_SelfServeExemptionSettingsFields,
+	},
+}
 
 type OpenapiPolicyAssignmentConfig struct {
 	// Identity for the resource. Policy assignments support a maximum of one identity. That is either a system assigned identity or a single user assigned identity.
@@ -213,14 +213,14 @@ var OpenapiPolicyAssignment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiPolicyAssignment_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiPolicyAssignment_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPolicyAssignment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPolicyAssignment_PropertiesFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

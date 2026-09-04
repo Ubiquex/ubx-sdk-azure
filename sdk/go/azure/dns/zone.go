@@ -25,26 +25,26 @@ type Zone_Properties struct {
 }
 
 var Zone_Properties_RegistrationVirtualNetworksFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Zone_PropertiesFields = ubx.FieldMap{
-		"MaxNumberOfRecordSets": ubx.FieldSpec{WireName: "max_number_of_record_sets"},
-		"MaxNumberOfRecordsPerRecordSet": ubx.FieldSpec{WireName: "max_number_of_records_per_record_set"},
-		"NameServers": ubx.FieldSpec{WireName: "name_servers"},
-		"NumberOfRecordSets": ubx.FieldSpec{WireName: "number_of_record_sets"},
-		"RegistrationVirtualNetworks": ubx.FieldSpec{
-			WireName: "registration_virtual_networks",
-			Kind: "list",
-			Fields: Zone_Properties_RegistrationVirtualNetworksFields,
-		},
-		"ResolutionVirtualNetworks": ubx.FieldSpec{
-			WireName: "resolution_virtual_networks",
-			Kind: "list",
-			Fields: Zone_Properties_RegistrationVirtualNetworksFields,
-		},
-		"ZoneType": ubx.FieldSpec{WireName: "zone_type"},
-	}
+	"MaxNumberOfRecordSets":          ubx.FieldSpec{WireName: "max_number_of_record_sets"},
+	"MaxNumberOfRecordsPerRecordSet": ubx.FieldSpec{WireName: "max_number_of_records_per_record_set"},
+	"NameServers":                    ubx.FieldSpec{WireName: "name_servers"},
+	"NumberOfRecordSets":             ubx.FieldSpec{WireName: "number_of_record_sets"},
+	"RegistrationVirtualNetworks": ubx.FieldSpec{
+		WireName: "registration_virtual_networks",
+		Kind:     "list",
+		Fields:   Zone_Properties_RegistrationVirtualNetworksFields,
+	},
+	"ResolutionVirtualNetworks": ubx.FieldSpec{
+		WireName: "resolution_virtual_networks",
+		Kind:     "list",
+		Fields:   Zone_Properties_RegistrationVirtualNetworksFields,
+	},
+	"ZoneType": ubx.FieldSpec{WireName: "zone_type"},
+}
 
 type ZoneConfig struct {
 	// The etag of the zone.
@@ -66,8 +66,8 @@ var Zone = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Zone_PropertiesFields,
+			Kind:     "object",
+			Fields:   Zone_PropertiesFields,
 		},
 	},
 }

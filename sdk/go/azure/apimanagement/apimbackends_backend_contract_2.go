@@ -11,9 +11,9 @@ type ApimbackendsBackendContract2_Properties struct {
 }
 
 var ApimbackendsBackendContract2_PropertiesFields = ubx.FieldMap{
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"Protocol": ubx.FieldSpec{WireName: "protocol"},
+	"Url":      ubx.FieldSpec{WireName: "url"},
+}
 
 type ApimbackendsBackendContract2Config struct {
 	// Parameters supplied to the Create Backend operation.
@@ -30,8 +30,8 @@ var ApimbackendsBackendContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimbackendsBackendContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimbackendsBackendContract2_PropertiesFields,
 		},
 	},
 }

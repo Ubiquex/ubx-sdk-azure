@@ -7,24 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServicePolicy_Properties_ProviderSpecificInput:
-    # The class type.
+class ServicePolicy_Properties_ProviderSpecificDetails:
+    # Gets the class type. Overridden in derived classes.
     instance_type: Any = None
 
 @dataclasses.dataclass
 class ServicePolicy_Properties:
+    # The FriendlyName.
+    friendly_name: Any = None
+    # Base class for Provider specific details for policies.
+    provider_specific_details: Any = None
     # Base class for provider specific input.
     provider_specific_input: Any = None
 
-_ServicePolicy_Properties_ProviderSpecificInputFields = {
+_ServicePolicy_Properties_ProviderSpecificDetailsFields = {
     "instance_type": ubx.FieldSpec(wire_name="instance_type"),
 }
 
 _ServicePolicy_PropertiesFields = {
+    "friendly_name": ubx.FieldSpec(wire_name="friendly_name"),
+    "provider_specific_details": ubx.FieldSpec(
+        wire_name="provider_specific_details",
+        kind="object",
+        fields=_ServicePolicy_Properties_ProviderSpecificDetailsFields,
+    ),
     "provider_specific_input": ubx.FieldSpec(
         wire_name="provider_specific_input",
         kind="object",
-        fields=_ServicePolicy_Properties_ProviderSpecificInputFields,
+        fields=_ServicePolicy_Properties_ProviderSpecificDetailsFields,
     ),
 }
 

@@ -11,9 +11,9 @@ type ApimdocumentationsDocumentationContract2_Properties struct {
 }
 
 var ApimdocumentationsDocumentationContract2_PropertiesFields = ubx.FieldMap{
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"Content": ubx.FieldSpec{WireName: "content"},
+	"Title":   ubx.FieldSpec{WireName: "title"},
+}
 
 type ApimdocumentationsDocumentationContract2Config struct {
 	// Markdown documentation details.
@@ -30,8 +30,8 @@ var ApimdocumentationsDocumentationContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimdocumentationsDocumentationContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimdocumentationsDocumentationContract2_PropertiesFields,
 		},
 	},
 }

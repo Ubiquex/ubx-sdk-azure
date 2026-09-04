@@ -413,8 +413,6 @@ const ExpressrouteExpressRouteCircuit_SkuFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRouteCircuitConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of ExpressRouteCircuit. */
   properties?: ExpressrouteExpressRouteCircuit_Properties | Computed<ExpressrouteExpressRouteCircuit_Properties>;
   /** Contains SKU in an ExpressRouteCircuit. */
@@ -433,7 +431,6 @@ export interface ExpressrouteExpressRouteCircuitAttrs {
 export const ExpressrouteExpressRouteCircuit: ResourceBinding<ExpressrouteExpressRouteCircuitConfig, ExpressrouteExpressRouteCircuitAttrs> = {
   wireType: "azure_network_expressroute_express_route_circuit",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

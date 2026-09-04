@@ -17,7 +17,7 @@ type IntegrationAccountMap_Properties_ContentLink struct {
 	ContentSize any
 	// The content version.
 	ContentVersion any
-	Metadata any
+	Metadata       any
 	// The content link URI.
 	Uri any
 }
@@ -47,44 +47,44 @@ type IntegrationAccountMap_Properties struct {
 }
 
 var IntegrationAccountMap_Properties_ContentLink_ContentHashFields = ubx.FieldMap{
-		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var IntegrationAccountMap_Properties_ContentLinkFields = ubx.FieldMap{
-		"ContentHash": ubx.FieldSpec{
-			WireName: "content_hash",
-			Kind: "object",
-			Fields: IntegrationAccountMap_Properties_ContentLink_ContentHashFields,
-		},
-		"ContentSize": ubx.FieldSpec{WireName: "content_size"},
-		"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ContentHash": ubx.FieldSpec{
+		WireName: "content_hash",
+		Kind:     "object",
+		Fields:   IntegrationAccountMap_Properties_ContentLink_ContentHashFields,
+	},
+	"ContentSize":    ubx.FieldSpec{WireName: "content_size"},
+	"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
+	"Metadata":       ubx.FieldSpec{WireName: "metadata"},
+	"Uri":            ubx.FieldSpec{WireName: "uri"},
+}
 
 var IntegrationAccountMap_Properties_ParametersSchemaFields = ubx.FieldMap{
-		"Ref": ubx.FieldSpec{WireName: "ref"},
-	}
+	"Ref": ubx.FieldSpec{WireName: "ref"},
+}
 
 var IntegrationAccountMap_PropertiesFields = ubx.FieldMap{
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"ContentLink": ubx.FieldSpec{
-			WireName: "content_link",
-			Kind: "object",
-			Fields: IntegrationAccountMap_Properties_ContentLinkFields,
-		},
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"MapType": ubx.FieldSpec{WireName: "map_type"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"ParametersSchema": ubx.FieldSpec{
-			WireName: "parameters_schema",
-			Kind: "object",
-			Fields: IntegrationAccountMap_Properties_ParametersSchemaFields,
-		},
-	}
+	"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
+	"Content":     ubx.FieldSpec{WireName: "content"},
+	"ContentLink": ubx.FieldSpec{
+		WireName: "content_link",
+		Kind:     "object",
+		Fields:   IntegrationAccountMap_Properties_ContentLinkFields,
+	},
+	"ContentType": ubx.FieldSpec{WireName: "content_type"},
+	"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
+	"MapType":     ubx.FieldSpec{WireName: "map_type"},
+	"Metadata":    ubx.FieldSpec{WireName: "metadata"},
+	"ParametersSchema": ubx.FieldSpec{
+		WireName: "parameters_schema",
+		Kind:     "object",
+		Fields:   IntegrationAccountMap_Properties_ParametersSchemaFields,
+	},
+}
 
 type IntegrationAccountMapConfig struct {
 	// The integration account map.
@@ -101,8 +101,8 @@ var IntegrationAccountMap = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationAccountMap_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationAccountMap_PropertiesFields,
 		},
 	},
 }

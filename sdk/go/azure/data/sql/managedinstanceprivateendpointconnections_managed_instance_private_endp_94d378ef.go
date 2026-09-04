@@ -9,14 +9,14 @@ type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConn
 
 type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Value struct {

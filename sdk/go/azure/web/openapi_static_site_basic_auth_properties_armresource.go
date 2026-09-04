@@ -17,12 +17,12 @@ type OpenapiStaticSiteBasicAuthPropertiesArmresource_Properties struct {
 }
 
 var OpenapiStaticSiteBasicAuthPropertiesArmresource_PropertiesFields = ubx.FieldMap{
-		"ApplicableEnvironmentsMode": ubx.FieldSpec{WireName: "applicable_environments_mode"},
-		"Environments": ubx.FieldSpec{WireName: "environments"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"SecretState": ubx.FieldSpec{WireName: "secret_state"},
-		"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
-	}
+	"ApplicableEnvironmentsMode": ubx.FieldSpec{WireName: "applicable_environments_mode"},
+	"Environments":               ubx.FieldSpec{WireName: "environments"},
+	"Password":                   ubx.FieldSpec{WireName: "password"},
+	"SecretState":                ubx.FieldSpec{WireName: "secret_state"},
+	"SecretUrl":                  ubx.FieldSpec{WireName: "secret_url"},
+}
 
 type OpenapiStaticSiteBasicAuthPropertiesArmresourceConfig struct {
 	// Kind of resource.
@@ -48,8 +48,8 @@ var OpenapiStaticSiteBasicAuthPropertiesArmresource = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteBasicAuthPropertiesArmresource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiStaticSiteBasicAuthPropertiesArmresource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

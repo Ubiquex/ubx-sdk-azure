@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PartnerRegistration_Value_Properties struct {
 	PartnerRegistrationImmutableId any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type PartnerRegistration_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -23,14 +23,14 @@ type PartnerRegistration_Value struct {
 }
 
 type PartnerRegistrationConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type PartnerRegistrationAttrs struct {
 	ApiVersion any
 	// A link for the next page of partner registrations.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A collection of partner registrations.
 	Value any
@@ -39,7 +39,7 @@ type PartnerRegistrationAttrs struct {
 var PartnerRegistration = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_partner_registration",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

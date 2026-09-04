@@ -5,16 +5,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVault_Value_Properties_AccessPolicies_Permissions struct {
 	Certificates any
-	Keys any
-	Secrets any
-	Storage any
+	Keys         any
+	Secrets      any
+	Storage      any
 }
 
 type OpenapiVault_Value_Properties_AccessPolicies struct {
 	ApplicationId any
-	ObjectId any
-	Permissions any
-	TenantId any
+	ObjectId      any
+	Permissions   any
+	TenantId      any
 }
 
 type OpenapiVault_Value_Properties_NetworkAcls_IpRules struct {
@@ -22,14 +22,14 @@ type OpenapiVault_Value_Properties_NetworkAcls_IpRules struct {
 }
 
 type OpenapiVault_Value_Properties_NetworkAcls_VirtualNetworkRules struct {
-	Id any
+	Id                               any
 	IgnoreMissingVnetServiceEndpoint any
 }
 
 type OpenapiVault_Value_Properties_NetworkAcls struct {
-	Bypass any
-	DefaultAction any
-	IpRules any
+	Bypass              any
+	DefaultAction       any
+	IpRules             any
 	VirtualNetworkRules any
 }
 
@@ -39,51 +39,51 @@ type OpenapiVault_Value_Properties_PrivateEndpointConnections_Properties_Private
 
 type OpenapiVault_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiVault_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiVault_Value_Properties_PrivateEndpointConnections struct {
-	Etag any
-	Id any
+	Etag       any
+	Id         any
 	Properties any
 }
 
 type OpenapiVault_Value_Properties_Sku struct {
 	Family any
-	Name any
+	Name   any
 }
 
 type OpenapiVault_Value_Properties struct {
-	AccessPolicies any
-	CreateMode any
-	EnablePurgeProtection any
-	EnableRbacAuthorization any
-	EnableSoftDelete any
-	EnabledForDeployment any
-	EnabledForDiskEncryption any
+	AccessPolicies               any
+	CreateMode                   any
+	EnablePurgeProtection        any
+	EnableRbacAuthorization      any
+	EnableSoftDelete             any
+	EnabledForDeployment         any
+	EnabledForDiskEncryption     any
 	EnabledForTemplateDeployment any
-	HsmPoolResourceId any
-	NetworkAcls any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	Sku any
-	SoftDeleteRetentionInDays any
-	TenantId any
-	VaultUri any
+	HsmPoolResourceId            any
+	NetworkAcls                  any
+	PrivateEndpointConnections   any
+	ProvisioningState            any
+	PublicNetworkAccess          any
+	Sku                          any
+	SoftDeleteRetentionInDays    any
+	TenantId                     any
+	VaultUri                     any
 }
 
 type OpenapiVault_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiVaultConfig struct {
@@ -98,6 +98,5 @@ type OpenapiVaultAttrs struct {
 
 var OpenapiVault = ubx.DataSourceBinding{
 	WireType: "azure_keyvault_openapi_vault",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

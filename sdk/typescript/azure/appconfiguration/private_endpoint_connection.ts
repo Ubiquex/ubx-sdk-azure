@@ -49,14 +49,8 @@ const PrivateEndpointConnection_PropertiesFields: FieldMap = {
 };
 
 export interface PrivateEndpointConnectionConfig {
-  /** The resource ID. */
-  id?: string | Computed<string>;
-  /** The name of the resource. */
-  name?: string | Computed<string>;
   /** Properties of a private endpoint connection. */
   properties?: PrivateEndpointConnection_Properties | Computed<PrivateEndpointConnection_Properties>;
-  /** The type of the resource. */
-  type?: string | Computed<string>;
 }
 
 export interface PrivateEndpointConnectionAttrs {
@@ -73,13 +67,10 @@ export interface PrivateEndpointConnectionAttrs {
 export const PrivateEndpointConnection: ResourceBinding<PrivateEndpointConnectionConfig, PrivateEndpointConnectionAttrs> = {
   wireType: "azure_appconfiguration_private_endpoint_connection",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PrivateEndpointConnection_PropertiesFields,
     },
-    type: "type",
   },
 };

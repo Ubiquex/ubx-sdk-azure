@@ -22,30 +22,32 @@ type OpenapiPrivateEndpointConnectionResource_Properties struct {
 	PrivateEndpoint any
 	// The state of a private link connection
 	PrivateLinkServiceConnectionState any
+	ProvisioningState                 any
 }
 
 var OpenapiPrivateEndpointConnectionResource_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiPrivateEndpointConnectionResource_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiPrivateEndpointConnectionResource_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnectionResource_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnectionResource_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiPrivateEndpointConnectionResource_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiPrivateEndpointConnectionResource_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiPrivateEndpointConnectionResourceConfig struct {
 	// A request to approve or reject a private endpoint connection
@@ -64,8 +66,8 @@ var OpenapiPrivateEndpointConnectionResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPrivateEndpointConnectionResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPrivateEndpointConnectionResource_PropertiesFields,
 		},
 	},
 }

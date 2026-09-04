@@ -5,34 +5,34 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTags struct {
 	Action any
-	Name any
-	Value any
+	Name   any
+	Value  any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules struct {
-	FilteringTags any
-	SendAadLogs any
-	SendActivityLogs any
+	FilteringTags        any
+	SendAadLogs          any
+	SendActivityLogs     any
 	SendSubscriptionLogs any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRules struct {
 	FilteringTags any
-	SendMetrics any
-	UserEmail any
+	SendMetrics   any
+	UserEmail     any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules struct {
-	LogRules any
-	MetricRules any
+	LogRules          any
+	MetricRules       any
 	ProvisioningState any
 }
 
 type MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList struct {
-	Error any
-	Status any
+	Error          any
+	Status         any
 	SubscriptionId any
-	TagRules any
+	TagRules       any
 }
 
 type MonitoredSubscriptionProperties_Properties struct {
@@ -45,66 +45,66 @@ type MonitoredSubscriptionProperties_Properties struct {
 }
 
 var MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTagsFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Action": ubx.FieldSpec{WireName: "action"},
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRulesFields = ubx.FieldMap{
-		"FilteringTags": ubx.FieldSpec{
-			WireName: "filtering_tags",
-			Kind: "list",
-			Fields: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTagsFields,
-		},
-		"SendAadLogs": ubx.FieldSpec{WireName: "send_aad_logs"},
-		"SendActivityLogs": ubx.FieldSpec{WireName: "send_activity_logs"},
-		"SendSubscriptionLogs": ubx.FieldSpec{WireName: "send_subscription_logs"},
-	}
+	"FilteringTags": ubx.FieldSpec{
+		WireName: "filtering_tags",
+		Kind:     "list",
+		Fields:   MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTagsFields,
+	},
+	"SendAadLogs":          ubx.FieldSpec{WireName: "send_aad_logs"},
+	"SendActivityLogs":     ubx.FieldSpec{WireName: "send_activity_logs"},
+	"SendSubscriptionLogs": ubx.FieldSpec{WireName: "send_subscription_logs"},
+}
 
 var MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRulesFields = ubx.FieldMap{
-		"FilteringTags": ubx.FieldSpec{
-			WireName: "filtering_tags",
-			Kind: "list",
-			Fields: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTagsFields,
-		},
-		"SendMetrics": ubx.FieldSpec{WireName: "send_metrics"},
-		"UserEmail": ubx.FieldSpec{WireName: "user_email"},
-	}
+	"FilteringTags": ubx.FieldSpec{
+		WireName: "filtering_tags",
+		Kind:     "list",
+		Fields:   MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRules_FilteringTagsFields,
+	},
+	"SendMetrics": ubx.FieldSpec{WireName: "send_metrics"},
+	"UserEmail":   ubx.FieldSpec{WireName: "user_email"},
+}
 
 var MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRulesFields = ubx.FieldMap{
-		"LogRules": ubx.FieldSpec{
-			WireName: "log_rules",
-			Kind: "object",
-			Fields: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRulesFields,
-		},
-		"MetricRules": ubx.FieldSpec{
-			WireName: "metric_rules",
-			Kind: "object",
-			Fields: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRulesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LogRules": ubx.FieldSpec{
+		WireName: "log_rules",
+		Kind:     "object",
+		Fields:   MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_LogRulesFields,
+	},
+	"MetricRules": ubx.FieldSpec{
+		WireName: "metric_rules",
+		Kind:     "object",
+		Fields:   MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRules_MetricRulesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionListFields = ubx.FieldMap{
-		"Error": ubx.FieldSpec{WireName: "error"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TagRules": ubx.FieldSpec{
-			WireName: "tag_rules",
-			Kind: "object",
-			Fields: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRulesFields,
-		},
-	}
+	"Error":          ubx.FieldSpec{WireName: "error"},
+	"Status":         ubx.FieldSpec{WireName: "status"},
+	"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+	"TagRules": ubx.FieldSpec{
+		WireName: "tag_rules",
+		Kind:     "object",
+		Fields:   MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionList_TagRulesFields,
+	},
+}
 
 var MonitoredSubscriptionProperties_PropertiesFields = ubx.FieldMap{
-		"MonitoredSubscriptionList": ubx.FieldSpec{
-			WireName: "monitored_subscription_list",
-			Kind: "list",
-			Fields: MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionListFields,
-		},
-		"PatchOperation": ubx.FieldSpec{WireName: "patch_operation"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"MonitoredSubscriptionList": ubx.FieldSpec{
+		WireName: "monitored_subscription_list",
+		Kind:     "list",
+		Fields:   MonitoredSubscriptionProperties_Properties_MonitoredSubscriptionListFields,
+	},
+	"PatchOperation":    ubx.FieldSpec{WireName: "patch_operation"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type MonitoredSubscriptionPropertiesConfig struct {
 	// The request to update subscriptions needed to be monitored by the NewRelic monitor resource.
@@ -121,8 +121,8 @@ var MonitoredSubscriptionProperties = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MonitoredSubscriptionProperties_PropertiesFields,
+			Kind:     "object",
+			Fields:   MonitoredSubscriptionProperties_PropertiesFields,
 		},
 	},
 }

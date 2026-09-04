@@ -4,13 +4,13 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Offer_Properties_Plans struct {
-	Accessibility any
+	Accessibility     any
 	AltStackReference any
-	IsStopSell any
-	PlanDisplayName any
-	PlanId any
-	SkuId any
-	StackType any
+	IsStopSell        any
+	PlanDisplayName   any
+	PlanId            any
+	SkuId             any
+	StackType         any
 }
 
 type Offer_Properties struct {
@@ -41,33 +41,33 @@ type Offer_Properties struct {
 }
 
 var Offer_Properties_PlansFields = ubx.FieldMap{
-		"Accessibility": ubx.FieldSpec{WireName: "accessibility"},
-		"AltStackReference": ubx.FieldSpec{WireName: "alt_stack_reference"},
-		"IsStopSell": ubx.FieldSpec{WireName: "is_stop_sell"},
-		"PlanDisplayName": ubx.FieldSpec{WireName: "plan_display_name"},
-		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
-		"SkuId": ubx.FieldSpec{WireName: "sku_id"},
-		"StackType": ubx.FieldSpec{WireName: "stack_type"},
-	}
+	"Accessibility":     ubx.FieldSpec{WireName: "accessibility"},
+	"AltStackReference": ubx.FieldSpec{WireName: "alt_stack_reference"},
+	"IsStopSell":        ubx.FieldSpec{WireName: "is_stop_sell"},
+	"PlanDisplayName":   ubx.FieldSpec{WireName: "plan_display_name"},
+	"PlanId":            ubx.FieldSpec{WireName: "plan_id"},
+	"SkuId":             ubx.FieldSpec{WireName: "sku_id"},
+	"StackType":         ubx.FieldSpec{WireName: "stack_type"},
+}
 
 var Offer_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
-		"IconFileUris": ubx.FieldSpec{WireName: "icon_file_uris"},
-		"IsStopSell": ubx.FieldSpec{WireName: "is_stop_sell"},
-		"ModifiedAt": ubx.FieldSpec{WireName: "modified_at"},
-		"OfferDisplayName": ubx.FieldSpec{WireName: "offer_display_name"},
-		"Plans": ubx.FieldSpec{
-			WireName: "plans",
-			Kind: "list",
-			Fields: Offer_Properties_PlansFields,
-		},
-		"PrivateStoreId": ubx.FieldSpec{WireName: "private_store_id"},
-		"PublisherDisplayName": ubx.FieldSpec{WireName: "publisher_display_name"},
-		"SpecificPlanIdsLimitation": ubx.FieldSpec{WireName: "specific_plan_ids_limitation"},
-		"UniqueOfferId": ubx.FieldSpec{WireName: "unique_offer_id"},
-		"UpdateSuppressedDueIdempotence": ubx.FieldSpec{WireName: "update_suppressed_due_idempotence"},
-	}
+	"CreatedAt":        ubx.FieldSpec{WireName: "created_at"},
+	"ETag":             ubx.FieldSpec{WireName: "e_tag"},
+	"IconFileUris":     ubx.FieldSpec{WireName: "icon_file_uris"},
+	"IsStopSell":       ubx.FieldSpec{WireName: "is_stop_sell"},
+	"ModifiedAt":       ubx.FieldSpec{WireName: "modified_at"},
+	"OfferDisplayName": ubx.FieldSpec{WireName: "offer_display_name"},
+	"Plans": ubx.FieldSpec{
+		WireName: "plans",
+		Kind:     "list",
+		Fields:   Offer_Properties_PlansFields,
+	},
+	"PrivateStoreId":                 ubx.FieldSpec{WireName: "private_store_id"},
+	"PublisherDisplayName":           ubx.FieldSpec{WireName: "publisher_display_name"},
+	"SpecificPlanIdsLimitation":      ubx.FieldSpec{WireName: "specific_plan_ids_limitation"},
+	"UniqueOfferId":                  ubx.FieldSpec{WireName: "unique_offer_id"},
+	"UpdateSuppressedDueIdempotence": ubx.FieldSpec{WireName: "update_suppressed_due_idempotence"},
+}
 
 type OfferConfig struct {
 	Properties any
@@ -82,8 +82,8 @@ var Offer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Offer_PropertiesFields,
+			Kind:     "object",
+			Fields:   Offer_PropertiesFields,
 		},
 	},
 }

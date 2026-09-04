@@ -145,8 +145,6 @@ _VirtualnetworkBastionHost_SkuFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkBastionHostConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the Bastion Host.
     properties: Any = None
     # The sku of this Bastion Host.
@@ -168,7 +166,6 @@ class VirtualnetworkBastionHostAttrs:
 VirtualnetworkBastionHost = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_bastion_host",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

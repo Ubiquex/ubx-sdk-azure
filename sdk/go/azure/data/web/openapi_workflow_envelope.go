@@ -7,14 +7,14 @@ type OpenapiWorkflowEnvelope_Value_Properties_Health_Error_Details struct {
 }
 
 type OpenapiWorkflowEnvelope_Value_Properties_Health_Error struct {
-	Code any
-	Details any
-	ExtendedCode any
-	InnerErrors any
-	Message any
+	Code            any
+	Details         any
+	ExtendedCode    any
+	InnerErrors     any
+	Message         any
 	MessageTemplate any
-	Parameters any
-	Target any
+	Parameters      any
+	Target          any
 }
 
 type OpenapiWorkflowEnvelope_Value_Properties_Health struct {
@@ -23,14 +23,14 @@ type OpenapiWorkflowEnvelope_Value_Properties_Health struct {
 }
 
 type OpenapiWorkflowEnvelope_Value_Properties struct {
-	Files any
+	Files     any
 	FlowState any
-	Health any
+	Health    any
 }
 
 type OpenapiWorkflowEnvelope_Value struct {
-	Kind any
-	Location any
+	Kind       any
+	Location   any
 	Properties any
 }
 
@@ -43,7 +43,7 @@ type OpenapiWorkflowEnvelopeAttrs struct {
 	Name any
 	// The link to the next page of items
 	NextLink any
-	Slot any
+	Slot     any
 	// The WorkflowEnvelope items on this page
 	Value any
 }

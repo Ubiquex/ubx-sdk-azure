@@ -4,12 +4,12 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type LongtermretentionpoliciesLongTermRetentionPolicy_Value_Properties struct {
-	MonthlyRetention any
-	TimeBasedImmutability any
+	MonthlyRetention          any
+	TimeBasedImmutability     any
 	TimeBasedImmutabilityMode any
-	WeekOfYear any
-	WeeklyRetention any
-	YearlyRetention any
+	WeekOfYear                any
+	WeeklyRetention           any
+	YearlyRetention           any
 }
 
 type LongtermretentionpoliciesLongTermRetentionPolicy_Value struct {
@@ -18,13 +18,13 @@ type LongtermretentionpoliciesLongTermRetentionPolicy_Value struct {
 
 type LongtermretentionpoliciesLongTermRetentionPolicyConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type LongtermretentionpoliciesLongTermRetentionPolicyAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The LongTermRetentionPolicy items on this page
 	Value any
@@ -34,6 +34,6 @@ var LongtermretentionpoliciesLongTermRetentionPolicy = ubx.DataSourceBinding{
 	WireType: "azure_sql_longtermretentionpolicies_long_term_retention_policy",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

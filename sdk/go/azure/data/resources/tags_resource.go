@@ -15,7 +15,7 @@ type TagsResourceConfig struct {
 type TagsResourceAttrs struct {
 	// A dictionary of name and value pairs.
 	Properties any
-	Scope any
+	Scope      any
 }
 
 var TagsResource = ubx.DataSourceBinding{

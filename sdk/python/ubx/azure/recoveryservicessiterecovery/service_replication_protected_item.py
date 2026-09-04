@@ -7,31 +7,209 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ServiceReplicationProtectedItem_Properties_CurrentScenario:
+    # ARM Id of the job being executed.
+    job_id: Any = None
+    # Scenario name.
+    scenario_name: Any = None
+    # Start time of the workflow.
+    start_time: Any = None
+
+@dataclasses.dataclass
+class ServiceReplicationProtectedItem_Properties_HealthErrors_InnerHealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
+class ServiceReplicationProtectedItem_Properties_HealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    inner_health_errors: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
 class ServiceReplicationProtectedItem_Properties_ProviderSpecificDetails:
     # The class type.
     instance_type: Any = None
 
 @dataclasses.dataclass
 class ServiceReplicationProtectedItem_Properties:
+    # The Current active location of the PE.
+    active_location: Any = None
+    # The allowed operations on the Replication protected item.
+    allowed_operations: Any = None
+    # Current scenario details of the protected entity.
+    current_scenario: Any = None
+    # The correlation Id for events associated with this protected item.
+    event_correlation_id: Any = None
+    # The consolidated failover health for the VM.
+    failover_health: Any = None
+    # The recovery point ARM Id to which the Vm was failed over.
+    failover_recovery_point_id: Any = None
+    # The name.
+    friendly_name: Any = None
+    # List of health errors.
+    health_errors: Any = None
+    # The Last successful failover time.
+    last_successful_failover_time: Any = None
+    # The Last successful test failover time.
+    last_successful_test_failover_time: Any = None
+    # The name of Policy governing this PE.
+    policy_friendly_name: Any = None
     # The Policy Id.
     policy_id: Any = None
+    # The friendly name of the primary fabric.
+    primary_fabric_friendly_name: Any = None
+    # The fabric provider of the primary fabric.
+    primary_fabric_provider: Any = None
+    # The name of primary protection container friendly name.
+    primary_protection_container_friendly_name: Any = None
     # The protectable item Id.
     protectable_item_id: Any = None
+    # The type of protected item type.
+    protected_item_type: Any = None
+    # The protection status.
+    protection_state: Any = None
+    # The protection state description.
+    protection_state_description: Any = None
     # Enable protection provider specific input.
     provider_specific_details: Any = None
+    # The recovery container Id.
+    recovery_container_id: Any = None
+    # The friendly name of recovery fabric.
+    recovery_fabric_friendly_name: Any = None
+    # The Arm Id of recovery fabric.
+    recovery_fabric_id: Any = None
+    # The name of recovery container friendly name.
+    recovery_protection_container_friendly_name: Any = None
+    # The recovery provider ARM Id.
+    recovery_services_provider_id: Any = None
+    # The consolidated protection health for the VM taking any issues with SRS as well as all the replication units associated with the VM's replication group into account. This is a string representation of the ProtectionHealth enumeration.
+    replication_health: Any = None
+    # The switch provider state.
+    switch_provider_state: Any = None
+    # The switch provider state description.
+    switch_provider_state_description: Any = None
+    # The Test failover state.
+    test_failover_state: Any = None
+    # The Test failover state description.
+    test_failover_state_description: Any = None
+
+_ServiceReplicationProtectedItem_Properties_CurrentScenarioFields = {
+    "job_id": ubx.FieldSpec(wire_name="job_id"),
+    "scenario_name": ubx.FieldSpec(wire_name="scenario_name"),
+    "start_time": ubx.FieldSpec(wire_name="start_time"),
+}
+
+_ServiceReplicationProtectedItem_Properties_HealthErrors_InnerHealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
+_ServiceReplicationProtectedItem_Properties_HealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "inner_health_errors": ubx.FieldSpec(
+        wire_name="inner_health_errors",
+        kind="list",
+        fields=_ServiceReplicationProtectedItem_Properties_HealthErrors_InnerHealthErrorsFields,
+    ),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
 
 _ServiceReplicationProtectedItem_Properties_ProviderSpecificDetailsFields = {
     "instance_type": ubx.FieldSpec(wire_name="instance_type"),
 }
 
 _ServiceReplicationProtectedItem_PropertiesFields = {
+    "active_location": ubx.FieldSpec(wire_name="active_location"),
+    "allowed_operations": ubx.FieldSpec(wire_name="allowed_operations"),
+    "current_scenario": ubx.FieldSpec(
+        wire_name="current_scenario",
+        kind="object",
+        fields=_ServiceReplicationProtectedItem_Properties_CurrentScenarioFields,
+    ),
+    "event_correlation_id": ubx.FieldSpec(wire_name="event_correlation_id"),
+    "failover_health": ubx.FieldSpec(wire_name="failover_health"),
+    "failover_recovery_point_id": ubx.FieldSpec(wire_name="failover_recovery_point_id"),
+    "friendly_name": ubx.FieldSpec(wire_name="friendly_name"),
+    "health_errors": ubx.FieldSpec(
+        wire_name="health_errors",
+        kind="list",
+        fields=_ServiceReplicationProtectedItem_Properties_HealthErrorsFields,
+    ),
+    "last_successful_failover_time": ubx.FieldSpec(wire_name="last_successful_failover_time"),
+    "last_successful_test_failover_time": ubx.FieldSpec(wire_name="last_successful_test_failover_time"),
+    "policy_friendly_name": ubx.FieldSpec(wire_name="policy_friendly_name"),
     "policy_id": ubx.FieldSpec(wire_name="policy_id"),
+    "primary_fabric_friendly_name": ubx.FieldSpec(wire_name="primary_fabric_friendly_name"),
+    "primary_fabric_provider": ubx.FieldSpec(wire_name="primary_fabric_provider"),
+    "primary_protection_container_friendly_name": ubx.FieldSpec(wire_name="primary_protection_container_friendly_name"),
     "protectable_item_id": ubx.FieldSpec(wire_name="protectable_item_id"),
+    "protected_item_type": ubx.FieldSpec(wire_name="protected_item_type"),
+    "protection_state": ubx.FieldSpec(wire_name="protection_state"),
+    "protection_state_description": ubx.FieldSpec(wire_name="protection_state_description"),
     "provider_specific_details": ubx.FieldSpec(
         wire_name="provider_specific_details",
         kind="object",
         fields=_ServiceReplicationProtectedItem_Properties_ProviderSpecificDetailsFields,
     ),
+    "recovery_container_id": ubx.FieldSpec(wire_name="recovery_container_id"),
+    "recovery_fabric_friendly_name": ubx.FieldSpec(wire_name="recovery_fabric_friendly_name"),
+    "recovery_fabric_id": ubx.FieldSpec(wire_name="recovery_fabric_id"),
+    "recovery_protection_container_friendly_name": ubx.FieldSpec(wire_name="recovery_protection_container_friendly_name"),
+    "recovery_services_provider_id": ubx.FieldSpec(wire_name="recovery_services_provider_id"),
+    "replication_health": ubx.FieldSpec(wire_name="replication_health"),
+    "switch_provider_state": ubx.FieldSpec(wire_name="switch_provider_state"),
+    "switch_provider_state_description": ubx.FieldSpec(wire_name="switch_provider_state_description"),
+    "test_failover_state": ubx.FieldSpec(wire_name="test_failover_state"),
+    "test_failover_state_description": ubx.FieldSpec(wire_name="test_failover_state_description"),
 }
 
 @dataclasses.dataclass

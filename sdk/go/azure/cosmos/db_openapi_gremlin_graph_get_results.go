@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiGremlinGraphGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -41,7 +41,7 @@ type DbOpenapiGremlinGraphGetResults_Properties_Resource_ConflictResolutionPolic
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_CompositeIndexes struct {
 	Order any
-	Path any
+	Path  any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_ExcludedPaths struct {
@@ -49,27 +49,27 @@ type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_Excluded
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_Indexes struct {
-	DataType any
-	Kind any
+	DataType  any
+	Kind      any
 	Precision any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths struct {
 	Indexes any
-	Path any
+	Path    any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_SpatialIndexes struct {
-	Path any
+	Path  any
 	Types any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_VectorIndexes struct {
 	IndexingSearchListSize any
-	Path any
-	QuantizationByteSize any
-	Type any
-	VectorIndexShardKey any
+	Path                   any
+	QuantizationByteSize   any
+	Type                   any
+	VectorIndexShardKey    any
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy struct {
@@ -103,8 +103,8 @@ type DbOpenapiGremlinGraphGetResults_Properties_Resource_PartitionKey struct {
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource_RestoreParameters struct {
-	RestoreSource any
-	RestoreTimestampInUtc any
+	RestoreSource          any
+	RestoreTimestampInUtc  any
 	RestoreWithTtlDisabled any
 }
 
@@ -118,6 +118,12 @@ type DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicy struct 
 }
 
 type DbOpenapiGremlinGraphGetResults_Properties_Resource struct {
+	// A system generated property representing the resource etag required for optimistic concurrency control.
+	Etag any
+	// A system generated property. A unique identifier.
+	Rid any
+	// A system generated property that denotes the last updated timestamp of the resource.
+	Ts any
 	// Analytical TTL.
 	AnalyticalStorageTtl any
 	// The conflict resolution policy for the container.
@@ -146,156 +152,159 @@ type DbOpenapiGremlinGraphGetResults_Properties struct {
 }
 
 var DbOpenapiGremlinGraphGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_ConflictResolutionPolicyFields = ubx.FieldMap{
-		"ConflictResolutionPath": ubx.FieldSpec{WireName: "conflict_resolution_path"},
-		"ConflictResolutionProcedure": ubx.FieldSpec{WireName: "conflict_resolution_procedure"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"ConflictResolutionPath":      ubx.FieldSpec{WireName: "conflict_resolution_path"},
+	"ConflictResolutionProcedure": ubx.FieldSpec{WireName: "conflict_resolution_procedure"},
+	"Mode":                        ubx.FieldSpec{WireName: "mode"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields = ubx.FieldMap{
-		"Path": ubx.FieldSpec{WireName: "path"},
-	}
+	"Path": ubx.FieldSpec{WireName: "path"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_IndexesFields = ubx.FieldMap{
-		"DataType": ubx.FieldSpec{WireName: "data_type"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Precision": ubx.FieldSpec{WireName: "precision"},
-	}
+	"DataType":  ubx.FieldSpec{WireName: "data_type"},
+	"Kind":      ubx.FieldSpec{WireName: "kind"},
+	"Precision": ubx.FieldSpec{WireName: "precision"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPathsFields = ubx.FieldMap{
-		"Indexes": ubx.FieldSpec{
-			WireName: "indexes",
-			Kind: "list",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_IndexesFields,
-		},
-		"Path": ubx.FieldSpec{WireName: "path"},
-	}
+	"Indexes": ubx.FieldSpec{
+		WireName: "indexes",
+		Kind:     "list",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_IndexesFields,
+	},
+	"Path": ubx.FieldSpec{WireName: "path"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_SpatialIndexesFields = ubx.FieldMap{
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Types": ubx.FieldSpec{WireName: "types"},
-	}
+	"Path":  ubx.FieldSpec{WireName: "path"},
+	"Types": ubx.FieldSpec{WireName: "types"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_VectorIndexesFields = ubx.FieldMap{
-		"IndexingSearchListSize": ubx.FieldSpec{WireName: "indexing_search_list_size"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"QuantizationByteSize": ubx.FieldSpec{WireName: "quantization_byte_size"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"VectorIndexShardKey": ubx.FieldSpec{WireName: "vector_index_shard_key"},
-	}
+	"IndexingSearchListSize": ubx.FieldSpec{WireName: "indexing_search_list_size"},
+	"Path":                   ubx.FieldSpec{WireName: "path"},
+	"QuantizationByteSize":   ubx.FieldSpec{WireName: "quantization_byte_size"},
+	"Type":                   ubx.FieldSpec{WireName: "type"},
+	"VectorIndexShardKey":    ubx.FieldSpec{WireName: "vector_index_shard_key"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicyFields = ubx.FieldMap{
-		"Automatic": ubx.FieldSpec{WireName: "automatic"},
-		"CompositeIndexes": ubx.FieldSpec{WireName: "composite_indexes"},
-		"ExcludedPaths": ubx.FieldSpec{
-			WireName: "excluded_paths",
-			Kind: "list",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields,
-		},
-		"FullTextIndexes": ubx.FieldSpec{
-			WireName: "full_text_indexes",
-			Kind: "list",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields,
-		},
-		"IncludedPaths": ubx.FieldSpec{
-			WireName: "included_paths",
-			Kind: "list",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPathsFields,
-		},
-		"IndexingMode": ubx.FieldSpec{WireName: "indexing_mode"},
-		"SpatialIndexes": ubx.FieldSpec{
-			WireName: "spatial_indexes",
-			Kind: "list",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_SpatialIndexesFields,
-		},
-		"VectorIndexes": ubx.FieldSpec{
-			WireName: "vector_indexes",
-			Kind: "list",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_VectorIndexesFields,
-		},
-	}
+	"Automatic":        ubx.FieldSpec{WireName: "automatic"},
+	"CompositeIndexes": ubx.FieldSpec{WireName: "composite_indexes"},
+	"ExcludedPaths": ubx.FieldSpec{
+		WireName: "excluded_paths",
+		Kind:     "list",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields,
+	},
+	"FullTextIndexes": ubx.FieldSpec{
+		WireName: "full_text_indexes",
+		Kind:     "list",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields,
+	},
+	"IncludedPaths": ubx.FieldSpec{
+		WireName: "included_paths",
+		Kind:     "list",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_IncludedPathsFields,
+	},
+	"IndexingMode": ubx.FieldSpec{WireName: "indexing_mode"},
+	"SpatialIndexes": ubx.FieldSpec{
+		WireName: "spatial_indexes",
+		Kind:     "list",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_SpatialIndexesFields,
+	},
+	"VectorIndexes": ubx.FieldSpec{
+		WireName: "vector_indexes",
+		Kind:     "list",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicy_VectorIndexesFields,
+	},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_PartitionKeyFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Paths": ubx.FieldSpec{WireName: "paths"},
-		"SystemKey": ubx.FieldSpec{WireName: "system_key"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Kind":      ubx.FieldSpec{WireName: "kind"},
+	"Paths":     ubx.FieldSpec{WireName: "paths"},
+	"SystemKey": ubx.FieldSpec{WireName: "system_key"},
+	"Version":   ubx.FieldSpec{WireName: "version"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_RestoreParametersFields = ubx.FieldMap{
-		"RestoreSource": ubx.FieldSpec{WireName: "restore_source"},
-		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
-		"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
-	}
+	"RestoreSource":          ubx.FieldSpec{WireName: "restore_source"},
+	"RestoreTimestampInUtc":  ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
+	"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeysFields = ubx.FieldMap{
-		"Paths": ubx.FieldSpec{WireName: "paths"},
-	}
+	"Paths": ubx.FieldSpec{WireName: "paths"},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicyFields = ubx.FieldMap{
-		"UniqueKeys": ubx.FieldSpec{
-			WireName: "unique_keys",
-			Kind: "list",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeysFields,
-		},
-	}
+	"UniqueKeys": ubx.FieldSpec{
+		WireName: "unique_keys",
+		Kind:     "list",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeysFields,
+	},
+}
 
 var DbOpenapiGremlinGraphGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"AnalyticalStorageTtl": ubx.FieldSpec{WireName: "analytical_storage_ttl"},
-		"ConflictResolutionPolicy": ubx.FieldSpec{
-			WireName: "conflict_resolution_policy",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_ConflictResolutionPolicyFields,
-		},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"DefaultTtl": ubx.FieldSpec{WireName: "default_ttl"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IndexingPolicy": ubx.FieldSpec{
-			WireName: "indexing_policy",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicyFields,
-		},
-		"PartitionKey": ubx.FieldSpec{
-			WireName: "partition_key",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_PartitionKeyFields,
-		},
-		"RestoreParameters": ubx.FieldSpec{
-			WireName: "restore_parameters",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_RestoreParametersFields,
-		},
-		"UniqueKeyPolicy": ubx.FieldSpec{
-			WireName: "unique_key_policy",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicyFields,
-		},
-	}
+	"Etag":                 ubx.FieldSpec{WireName: "_etag"},
+	"Rid":                  ubx.FieldSpec{WireName: "_rid"},
+	"Ts":                   ubx.FieldSpec{WireName: "_ts"},
+	"AnalyticalStorageTtl": ubx.FieldSpec{WireName: "analytical_storage_ttl"},
+	"ConflictResolutionPolicy": ubx.FieldSpec{
+		WireName: "conflict_resolution_policy",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_ConflictResolutionPolicyFields,
+	},
+	"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
+	"DefaultTtl": ubx.FieldSpec{WireName: "default_ttl"},
+	"Id":         ubx.FieldSpec{WireName: "id"},
+	"IndexingPolicy": ubx.FieldSpec{
+		WireName: "indexing_policy",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_IndexingPolicyFields,
+	},
+	"PartitionKey": ubx.FieldSpec{
+		WireName: "partition_key",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_PartitionKeyFields,
+	},
+	"RestoreParameters": ubx.FieldSpec{
+		WireName: "restore_parameters",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_RestoreParametersFields,
+	},
+	"UniqueKeyPolicy": ubx.FieldSpec{
+		WireName: "unique_key_policy",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_Resource_UniqueKeyPolicyFields,
+	},
+}
 
 var DbOpenapiGremlinGraphGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinGraphGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiGremlinGraphGetResultsConfig struct {
 	// Properties to create and update Azure Cosmos DB Gremlin graph.
@@ -318,8 +327,8 @@ var DbOpenapiGremlinGraphGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiGremlinGraphGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiGremlinGraphGetResults_PropertiesFields,
 		},
 	},
 }

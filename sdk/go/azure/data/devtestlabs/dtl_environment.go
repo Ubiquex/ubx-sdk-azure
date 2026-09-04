@@ -4,32 +4,32 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlEnvironment_Value_Properties_DeploymentProperties_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type DtlEnvironment_Value_Properties_DeploymentProperties struct {
 	ArmTemplateId any
-	Parameters any
+	Parameters    any
 }
 
 type DtlEnvironment_Value_Properties struct {
 	ArmTemplateDisplayName any
-	CreatedByUser any
-	DeploymentProperties any
-	ProvisioningState any
-	ResourceGroupId any
-	UniqueIdentifier any
+	CreatedByUser          any
+	DeploymentProperties   any
+	ProvisioningState      any
+	ResourceGroupId        any
+	UniqueIdentifier       any
 }
 
 type DtlEnvironment_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlEnvironmentConfig struct {
-	LabName any
+	LabName  any
 	UserName any
 }
 
@@ -45,7 +45,7 @@ type DtlEnvironmentAttrs struct {
 var DtlEnvironment = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_environment",
 	Fields: ubx.FieldMap{
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
+		"LabName":  ubx.FieldSpec{WireName: "lab_name"},
 		"UserName": ubx.FieldSpec{WireName: "user_name"},
 	},
 }

@@ -10,15 +10,15 @@ type HeatMapModel_Properties_Endpoints struct {
 
 type HeatMapModel_Properties_TrafficFlows_QueryExperiences struct {
 	EndpointId any
-	Latency any
+	Latency    any
 	QueryCount any
 }
 
 type HeatMapModel_Properties_TrafficFlows struct {
-	Latitude any
-	Longitude any
+	Latitude         any
+	Longitude        any
 	QueryExperiences any
-	SourceIp any
+	SourceIp         any
 }
 
 type HeatMapModel_Properties struct {
@@ -33,27 +33,27 @@ type HeatMapModel_Properties struct {
 }
 
 type HeatMapModelConfig struct {
-	BotRight any
+	BotRight    any
 	HeatMapType any
 	ProfileName any
-	TopLeft any
+	TopLeft     any
 }
 
 type HeatMapModelAttrs struct {
-	BotRight any
+	BotRight    any
 	HeatMapType any
 	ProfileName any
 	// Class representing a Traffic Manager HeatMap properties.
 	Properties any
-	TopLeft any
+	TopLeft    any
 }
 
 var HeatMapModel = ubx.DataSourceBinding{
 	WireType: "azure_trafficmanager_heat_map_model",
 	Fields: ubx.FieldMap{
-		"BotRight": ubx.FieldSpec{WireName: "bot_right"},
+		"BotRight":    ubx.FieldSpec{WireName: "bot_right"},
 		"HeatMapType": ubx.FieldSpec{WireName: "heat_map_type"},
 		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-		"TopLeft": ubx.FieldSpec{WireName: "top_left"},
+		"TopLeft":     ubx.FieldSpec{WireName: "top_left"},
 	},
 }

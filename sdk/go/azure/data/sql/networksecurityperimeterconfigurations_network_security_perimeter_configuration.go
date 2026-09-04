@@ -4,55 +4,55 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
-	Id any
-	Location any
+	Id            any
+	Location      any
 	PerimeterGuid any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	Direction any
+	AddressPrefixes           any
+	Direction                 any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	ServiceTags any
-	Subscriptions any
+	ServiceTags               any
+	Subscriptions             any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
-	AccessRules any
+	AccessRules        any
 	AccessRulesVersion any
-	Name any
+	Name               any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
 	AccessMode any
-	Name any
+	Name       any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value_Properties struct {
 	NetworkSecurityPerimeter any
-	Profile any
-	ProvisioningIssues any
-	ProvisioningState any
-	ResourceAssociation any
+	Profile                  any
+	ProvisioningIssues       any
+	ProvisioningState        any
+	ResourceAssociation      any
 }
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration_Value struct {
@@ -65,7 +65,7 @@ type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration
 
 type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfigurationAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The NetworkSecurityPerimeterConfiguration items on this page
 	Value any

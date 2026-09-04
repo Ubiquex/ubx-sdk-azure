@@ -4,7 +4,7 @@ package workloads
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SapvirtualinstanceSapvirtualInstance_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -64,71 +64,70 @@ type SapvirtualinstanceSapvirtualInstance_Properties struct {
 }
 
 var SapvirtualinstanceSapvirtualInstance_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var SapvirtualinstanceSapvirtualInstance_IdentityFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: SapvirtualinstanceSapvirtualInstance_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   SapvirtualinstanceSapvirtualInstance_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var SapvirtualinstanceSapvirtualInstance_Properties_ConfigurationFields = ubx.FieldMap{
-		"ConfigurationType": ubx.FieldSpec{WireName: "configuration_type"},
-	}
+	"ConfigurationType": ubx.FieldSpec{WireName: "configuration_type"},
+}
 
-var SapvirtualinstanceSapvirtualInstance_Properties_Errors_Properties_DetailsFields = ubx.FieldMap{
-	}
+var SapvirtualinstanceSapvirtualInstance_Properties_Errors_Properties_DetailsFields = ubx.FieldMap{}
 
 var SapvirtualinstanceSapvirtualInstance_Properties_Errors_PropertiesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: SapvirtualinstanceSapvirtualInstance_Properties_Errors_Properties_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   SapvirtualinstanceSapvirtualInstance_Properties_Errors_Properties_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var SapvirtualinstanceSapvirtualInstance_Properties_ErrorsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapvirtualInstance_Properties_Errors_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapvirtualInstance_Properties_Errors_PropertiesFields,
+	},
+}
 
 var SapvirtualinstanceSapvirtualInstance_Properties_ManagedResourceGroupConfigurationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var SapvirtualinstanceSapvirtualInstance_PropertiesFields = ubx.FieldMap{
-		"Configuration": ubx.FieldSpec{
-			WireName: "configuration",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapvirtualInstance_Properties_ConfigurationFields,
-		},
-		"Environment": ubx.FieldSpec{WireName: "environment"},
-		"Errors": ubx.FieldSpec{
-			WireName: "errors",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapvirtualInstance_Properties_ErrorsFields,
-		},
-		"Health": ubx.FieldSpec{WireName: "health"},
-		"ManagedResourceGroupConfiguration": ubx.FieldSpec{
-			WireName: "managed_resource_group_configuration",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapvirtualInstance_Properties_ManagedResourceGroupConfigurationFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SapProduct": ubx.FieldSpec{WireName: "sap_product"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Configuration": ubx.FieldSpec{
+		WireName: "configuration",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapvirtualInstance_Properties_ConfigurationFields,
+	},
+	"Environment": ubx.FieldSpec{WireName: "environment"},
+	"Errors": ubx.FieldSpec{
+		WireName: "errors",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapvirtualInstance_Properties_ErrorsFields,
+	},
+	"Health": ubx.FieldSpec{WireName: "health"},
+	"ManagedResourceGroupConfiguration": ubx.FieldSpec{
+		WireName: "managed_resource_group_configuration",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapvirtualInstance_Properties_ManagedResourceGroupConfigurationFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SapProduct":        ubx.FieldSpec{WireName: "sap_product"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+}
 
 type SapvirtualinstanceSapvirtualInstanceConfig struct {
 	// A pre-created user assigned identity with appropriate roles assigned. To learn more on identity and roles required, visit the ACSS how-to-guide.
@@ -149,13 +148,13 @@ var SapvirtualinstanceSapvirtualInstance = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapvirtualInstance_IdentityFields,
+			Kind:     "object",
+			Fields:   SapvirtualinstanceSapvirtualInstance_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapvirtualInstance_PropertiesFields,
+			Kind:     "object",
+			Fields:   SapvirtualinstanceSapvirtualInstance_PropertiesFields,
 		},
 	},
 }

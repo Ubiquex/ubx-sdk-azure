@@ -4,9 +4,9 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFactory_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -15,14 +15,14 @@ type OpenapiFactory_Value_Properties_Encryption_Identity struct {
 }
 
 type OpenapiFactory_Value_Properties_Encryption struct {
-	Identity any
-	KeyName any
-	KeyVersion any
+	Identity     any
+	KeyName      any
+	KeyVersion   any
 	VaultBaseUrl any
 }
 
 type OpenapiFactory_Value_Properties_GlobalParameters struct {
-	Type any
+	Type  any
 	Value any
 }
 
@@ -31,32 +31,32 @@ type OpenapiFactory_Value_Properties_PurviewConfiguration struct {
 }
 
 type OpenapiFactory_Value_Properties_RepoConfiguration struct {
-	AccountName any
+	AccountName         any
 	CollaborationBranch any
-	DisablePublish any
-	LastCommitId any
-	RepositoryName any
-	RootFolder any
-	Type any
+	DisablePublish      any
+	LastCommitId        any
+	RepositoryName      any
+	RootFolder          any
+	Type                any
 }
 
 type OpenapiFactory_Value_Properties struct {
-	CreateTime any
-	Encryption any
-	GlobalParameters any
-	ProvisioningState any
-	PublicNetworkAccess any
+	CreateTime           any
+	Encryption           any
+	GlobalParameters     any
+	ProvisioningState    any
+	PublicNetworkAccess  any
 	PurviewConfiguration any
-	RepoConfiguration any
-	Version any
+	RepoConfiguration    any
+	Version              any
 }
 
 type OpenapiFactory_Value struct {
-	ETag any
-	Identity any
-	Location any
+	ETag       any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiFactoryConfig struct {
@@ -71,6 +71,5 @@ type OpenapiFactoryAttrs struct {
 
 var OpenapiFactory = ubx.DataSourceBinding{
 	WireType: "azure_datafactory_openapi_factory",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

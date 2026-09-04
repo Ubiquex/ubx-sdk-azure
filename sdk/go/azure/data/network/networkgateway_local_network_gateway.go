@@ -4,17 +4,17 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkgatewayLocalNetworkGateway_Value_Properties_BgpSettings_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses any
+	CustomBgpIpAddresses  any
 	DefaultBgpIpAddresses any
-	IpconfigurationId any
-	TunnelIpAddresses any
+	IpconfigurationId     any
+	TunnelIpAddresses     any
 }
 
 type NetworkgatewayLocalNetworkGateway_Value_Properties_BgpSettings struct {
-	Asn any
-	BgpPeeringAddress any
+	Asn                 any
+	BgpPeeringAddress   any
 	BgpPeeringAddresses any
-	PeerWeight any
+	PeerWeight          any
 }
 
 type NetworkgatewayLocalNetworkGateway_Value_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations_Pool struct {
@@ -23,26 +23,26 @@ type NetworkgatewayLocalNetworkGateway_Value_Properties_LocalNetworkAddressSpace
 
 type NetworkgatewayLocalNetworkGateway_Value_Properties_LocalNetworkAddressSpace_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type NetworkgatewayLocalNetworkGateway_Value_Properties_LocalNetworkAddressSpace struct {
-	AddressPrefixes any
+	AddressPrefixes           any
 	IpamPoolPrefixAllocations any
 }
 
 type NetworkgatewayLocalNetworkGateway_Value_Properties struct {
-	BgpSettings any
-	Fqdn any
-	GatewayIpAddress any
+	BgpSettings              any
+	Fqdn                     any
+	GatewayIpAddress         any
 	LocalNetworkAddressSpace any
-	ProvisioningState any
-	ResourceGuid any
+	ProvisioningState        any
+	ResourceGuid             any
 }
 
 type NetworkgatewayLocalNetworkGateway_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -58,6 +58,5 @@ type NetworkgatewayLocalNetworkGatewayAttrs struct {
 
 var NetworkgatewayLocalNetworkGateway = ubx.DataSourceBinding{
 	WireType: "azure_network_networkgateway_local_network_gateway",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

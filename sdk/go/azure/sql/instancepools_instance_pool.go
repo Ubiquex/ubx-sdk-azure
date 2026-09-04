@@ -30,20 +30,20 @@ type InstancepoolsInstancePool_Sku struct {
 }
 
 var InstancepoolsInstancePool_PropertiesFields = ubx.FieldMap{
-		"DnsZone": ubx.FieldSpec{WireName: "dns_zone"},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-		"MaintenanceConfigurationId": ubx.FieldSpec{WireName: "maintenance_configuration_id"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"VCores": ubx.FieldSpec{WireName: "v_cores"},
-	}
+	"DnsZone":                    ubx.FieldSpec{WireName: "dns_zone"},
+	"LicenseType":                ubx.FieldSpec{WireName: "license_type"},
+	"MaintenanceConfigurationId": ubx.FieldSpec{WireName: "maintenance_configuration_id"},
+	"SubnetId":                   ubx.FieldSpec{WireName: "subnet_id"},
+	"VCores":                     ubx.FieldSpec{WireName: "v_cores"},
+}
 
 var InstancepoolsInstancePool_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type InstancepoolsInstancePoolConfig struct {
 	// Properties of an instance pool.
@@ -64,13 +64,13 @@ var InstancepoolsInstancePool = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: InstancepoolsInstancePool_PropertiesFields,
+			Kind:     "object",
+			Fields:   InstancepoolsInstancePool_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: InstancepoolsInstancePool_SkuFields,
+			Kind:     "object",
+			Fields:   InstancepoolsInstancePool_SkuFields,
 		},
 	},
 }

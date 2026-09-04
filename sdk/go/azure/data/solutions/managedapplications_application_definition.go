@@ -6,11 +6,11 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type ManagedapplicationsApplicationDefinition_Value_Properties_Artifacts struct {
 	Name any
 	Type any
-	Uri any
+	Uri  any
 }
 
 type ManagedapplicationsApplicationDefinition_Value_Properties_Authorizations struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
@@ -19,7 +19,7 @@ type ManagedapplicationsApplicationDefinition_Value_Properties_DeploymentPolicy 
 }
 
 type ManagedapplicationsApplicationDefinition_Value_Properties_LockingPolicy struct {
-	AllowedActions any
+	AllowedActions     any
 	AllowedDataActions any
 }
 
@@ -36,27 +36,27 @@ type ManagedapplicationsApplicationDefinition_Value_Properties_NotificationPolic
 }
 
 type ManagedapplicationsApplicationDefinition_Value_Properties_Policies struct {
-	Name any
-	Parameters any
+	Name               any
+	Parameters         any
 	PolicyDefinitionId any
 }
 
 type ManagedapplicationsApplicationDefinition_Value_Properties struct {
-	Artifacts any
-	Authorizations any
+	Artifacts          any
+	Authorizations     any
 	CreateUiDefinition any
-	DeploymentPolicy any
-	Description any
-	DisplayName any
-	IsEnabled any
-	LockLevel any
-	LockingPolicy any
-	MainTemplate any
-	ManagementPolicy any
+	DeploymentPolicy   any
+	Description        any
+	DisplayName        any
+	IsEnabled          any
+	LockLevel          any
+	LockingPolicy      any
+	MainTemplate       any
+	ManagementPolicy   any
 	NotificationPolicy any
-	PackageFileUri any
-	Policies any
-	StorageAccountId any
+	PackageFileUri     any
+	Policies           any
+	StorageAccountId   any
 }
 
 type ManagedapplicationsApplicationDefinition_Value struct {
@@ -75,6 +75,5 @@ type ManagedapplicationsApplicationDefinitionAttrs struct {
 
 var ManagedapplicationsApplicationDefinition = ubx.DataSourceBinding{
 	WireType: "azure_solutions_managedapplications_application_definition",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

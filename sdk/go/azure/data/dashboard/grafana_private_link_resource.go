@@ -4,9 +4,9 @@ package dashboard
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GrafanaPrivateLinkResource_Value_Properties struct {
-	GroupId any
+	GroupId           any
 	ProvisioningState any
-	RequiredMembers any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
@@ -22,7 +22,7 @@ type GrafanaPrivateLinkResourceAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The PrivateLinkResource items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

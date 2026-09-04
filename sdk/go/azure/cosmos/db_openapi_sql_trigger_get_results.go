@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlTriggerGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -31,6 +31,12 @@ type DbOpenapiSqlTriggerGetResults_Properties_Options struct {
 }
 
 type DbOpenapiSqlTriggerGetResults_Properties_Resource struct {
+	// A system generated property representing the resource etag required for optimistic concurrency control.
+	Etag any
+	// A system generated property. A unique identifier.
+	Rid any
+	// A system generated property that denotes the last updated timestamp of the resource.
+	Ts any
 	// Body of the Trigger
 	Body any
 	// Name of the Cosmos DB SQL trigger
@@ -49,37 +55,40 @@ type DbOpenapiSqlTriggerGetResults_Properties struct {
 }
 
 var DbOpenapiSqlTriggerGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiSqlTriggerGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiSqlTriggerGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlTriggerGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiSqlTriggerGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"Body": ubx.FieldSpec{WireName: "body"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"TriggerOperation": ubx.FieldSpec{WireName: "trigger_operation"},
-		"TriggerType": ubx.FieldSpec{WireName: "trigger_type"},
-	}
+	"Etag":             ubx.FieldSpec{WireName: "_etag"},
+	"Rid":              ubx.FieldSpec{WireName: "_rid"},
+	"Ts":               ubx.FieldSpec{WireName: "_ts"},
+	"Body":             ubx.FieldSpec{WireName: "body"},
+	"Id":               ubx.FieldSpec{WireName: "id"},
+	"TriggerOperation": ubx.FieldSpec{WireName: "trigger_operation"},
+	"TriggerType":      ubx.FieldSpec{WireName: "trigger_type"},
+}
 
 var DbOpenapiSqlTriggerGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiSqlTriggerGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiSqlTriggerGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlTriggerGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlTriggerGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiSqlTriggerGetResultsConfig struct {
 	// Properties to create and update Azure Cosmos DB trigger.
@@ -102,8 +111,8 @@ var DbOpenapiSqlTriggerGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiSqlTriggerGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiSqlTriggerGetResults_PropertiesFields,
 		},
 	},
 }

@@ -5,7 +5,6 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationruntimeSelfHostedIntegrationRuntimeNodeConfig struct {
 	IntegrationRuntimeName any
-	NodeName any
 }
 
 type IntegrationruntimeSelfHostedIntegrationRuntimeNodeAttrs struct {
@@ -16,7 +15,7 @@ type IntegrationruntimeSelfHostedIntegrationRuntimeNodeAttrs struct {
 	// The time at which the integration runtime will expire in ISO8601 format.
 	ExpiryTime any
 	// URI for the host machine of the integration runtime.
-	HostServiceUri any
+	HostServiceUri         any
 	IntegrationRuntimeName any
 	// Indicates whether this node is the active dispatcher for integration runtime requests.
 	IsActiveDispatcher any
@@ -36,7 +35,7 @@ type IntegrationruntimeSelfHostedIntegrationRuntimeNodeAttrs struct {
 	MachineName any
 	// The maximum concurrent jobs in this integration runtime.
 	MaxConcurrentJobs any
-	NodeName any
+	NodeName          any
 	// The time at which the integration runtime node was registered in ISO8601 format.
 	RegisterTime any
 	// Status of the integration runtime node.
@@ -51,6 +50,5 @@ var IntegrationruntimeSelfHostedIntegrationRuntimeNode = ubx.DataSourceBinding{
 	WireType: "azure_synapse_integrationruntime_self_hosted_integration_runtime_node",
 	Fields: ubx.FieldMap{
 		"IntegrationRuntimeName": ubx.FieldSpec{WireName: "integration_runtime_name"},
-		"NodeName": ubx.FieldSpec{WireName: "node_name"},
 	},
 }

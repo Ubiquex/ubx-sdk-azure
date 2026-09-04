@@ -64,8 +64,6 @@ const RaiPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface RaiPolicyConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** Azure OpenAI Content Filters properties. */
   properties?: RaiPolicy_Properties | Computed<RaiPolicy_Properties>;
   /** Resource tags. */
@@ -84,7 +82,6 @@ export interface RaiPolicyAttrs {
 export const RaiPolicy: ResourceBinding<RaiPolicyConfig, RaiPolicyAttrs> = {
   wireType: "azure_cognitiveservices_rai_policy",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

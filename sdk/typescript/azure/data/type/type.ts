@@ -3,18 +3,15 @@ import type { Computed, FieldMap, DataSourceBinding } from "@ubx/sdk";
 
 export interface TypeConfig {
   publisherName: string | Computed<string>;
-  type: string | Computed<string>;
 }
 
 export interface TypeAttrs {
   publisherName: string;
-  type: string;
 }
 
 export const Type: DataSourceBinding<TypeConfig, TypeAttrs> = {
   wireType: "azure_type",
   fields: {
     publisherName: "publisher_name",
-    type: "type",
   },
 };

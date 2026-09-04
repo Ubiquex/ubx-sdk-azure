@@ -7,84 +7,84 @@ type AzureBackupJobResource_Value_Properties_ErrorDetails_Details struct {
 }
 
 type AzureBackupJobResource_Value_Properties_ErrorDetails_InnerError struct {
-	AdditionalInfo any
-	Code any
+	AdditionalInfo     any
+	Code               any
 	EmbeddedInnerError any
 }
 
 type AzureBackupJobResource_Value_Properties_ErrorDetails struct {
-	Code any
-	Details any
-	InnerError any
-	IsRetryable any
-	IsUserError any
-	Message any
-	Properties any
+	Code              any
+	Details           any
+	InnerError        any
+	IsRetryable       any
+	IsUserError       any
+	Message           any
+	Properties        any
 	RecommendedAction any
-	Target any
+	Target            any
 }
 
 type AzureBackupJobResource_Value_Properties_ExtendedInfo_SourceRecoverPoint struct {
-	RecoveryPointId any
+	RecoveryPointId   any
 	RecoveryPointTime any
 }
 
 type AzureBackupJobResource_Value_Properties_ExtendedInfo_SubTasks struct {
 	AdditionalDetails any
-	TaskId any
-	TaskName any
-	TaskProgress any
-	TaskStatus any
+	TaskId            any
+	TaskName          any
+	TaskProgress      any
+	TaskStatus        any
 }
 
 type AzureBackupJobResource_Value_Properties_ExtendedInfo_WarningDetails struct {
 	ResourceName any
-	Warning any
+	Warning      any
 }
 
 type AzureBackupJobResource_Value_Properties_ExtendedInfo struct {
-	AdditionalDetails any
-	BackupInstanceState any
+	AdditionalDetails      any
+	BackupInstanceState    any
 	DataTransferredInBytes any
-	RecoveryDestination any
-	SourceRecoverPoint any
-	SubTasks any
-	TargetRecoverPoint any
-	WarningDetails any
+	RecoveryDestination    any
+	SourceRecoverPoint     any
+	SubTasks               any
+	TargetRecoverPoint     any
+	WarningDetails         any
 }
 
 type AzureBackupJobResource_Value_Properties struct {
-	ActivityId any
+	ActivityId                 any
 	BackupInstanceFriendlyName any
-	BackupInstanceId any
-	DataSourceId any
-	DataSourceLocation any
-	DataSourceName any
-	DataSourceSetName any
-	DataSourceType any
-	DestinationDataStoreName any
-	Duration any
-	EndTime any
-	ErrorDetails any
-	Etag any
-	ExtendedInfo any
-	IsUserTriggered any
-	Operation any
-	OperationCategory any
-	PolicyId any
-	PolicyName any
-	ProgressEnabled any
-	ProgressUrl any
-	RehydrationPriority any
-	RestoreType any
-	SourceDataStoreName any
-	SourceResourceGroup any
-	SourceSubscriptionId any
-	StartTime any
-	Status any
-	SubscriptionId any
-	SupportedActions any
-	VaultName any
+	BackupInstanceId           any
+	DataSourceId               any
+	DataSourceLocation         any
+	DataSourceName             any
+	DataSourceSetName          any
+	DataSourceType             any
+	DestinationDataStoreName   any
+	Duration                   any
+	EndTime                    any
+	ErrorDetails               any
+	Etag                       any
+	ExtendedInfo               any
+	IsUserTriggered            any
+	Operation                  any
+	OperationCategory          any
+	PolicyId                   any
+	PolicyName                 any
+	ProgressEnabled            any
+	ProgressUrl                any
+	RehydrationPriority        any
+	RestoreType                any
+	SourceDataStoreName        any
+	SourceResourceGroup        any
+	SourceSubscriptionId       any
+	StartTime                  any
+	Status                     any
+	SubscriptionId             any
+	SupportedActions           any
+	VaultName                  any
 }
 
 type AzureBackupJobResource_Value struct {
@@ -97,7 +97,7 @@ type AzureBackupJobResourceConfig struct {
 
 type AzureBackupJobResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

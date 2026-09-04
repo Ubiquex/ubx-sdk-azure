@@ -33,29 +33,12 @@ _Replica_PropertiesFields = {
     "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
 }
 
-_Replica_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class ReplicaConfig:
-    # The resource ID.
-    id: Any = None
     # The location of the replica.
     location: Any = None
-    # The name of the replica.
-    name: Any = None
     # All replica properties.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # The type of the resource.
-    type: Any = None
 
 @dataclasses.dataclass
 class ReplicaAttrs:
@@ -75,19 +58,11 @@ class ReplicaAttrs:
 Replica = ubx.ResourceBinding(
     wire_type="azure_appconfiguration_replica",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
         "location": ubx.FieldSpec(wire_name="location"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Replica_PropertiesFields,
         ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_Replica_SystemDataFields,
-        ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

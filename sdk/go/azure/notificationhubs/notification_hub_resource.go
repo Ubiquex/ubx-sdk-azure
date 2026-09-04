@@ -42,14 +42,14 @@ type NotificationHubResource_Properties_ApnsCredential struct {
 }
 
 type NotificationHubResource_Properties_AuthorizationRules struct {
-	ClaimType any
-	ClaimValue any
-	CreatedTime any
-	KeyName any
+	ClaimType    any
+	ClaimValue   any
+	CreatedTime  any
+	KeyName      any
 	ModifiedTime any
-	PrimaryKey any
-	Revision any
-	Rights any
+	PrimaryKey   any
+	Revision     any
+	Rights       any
 	SecondaryKey any
 }
 
@@ -147,7 +147,7 @@ type NotificationHubResource_Properties struct {
 	// Description of a NotificationHub BaiduCredential.
 	BaiduCredential any
 	// Description of a NotificationHub BrowserCredential.
-	BrowserCredential any
+	BrowserCredential     any
 	DailyMaxActiveDevices any
 	// Description of a NotificationHub GcmCredential.
 	GcmCredential any
@@ -177,192 +177,192 @@ type NotificationHubResource_Sku struct {
 }
 
 var NotificationHubResource_Properties_AdmCredential_PropertiesFields = ubx.FieldMap{
-		"AuthTokenUrl": ubx.FieldSpec{WireName: "auth_token_url"},
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-	}
+	"AuthTokenUrl": ubx.FieldSpec{WireName: "auth_token_url"},
+	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+}
 
 var NotificationHubResource_Properties_AdmCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_AdmCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_AdmCredential_PropertiesFields,
+	},
+}
 
 var NotificationHubResource_Properties_ApnsCredential_PropertiesFields = ubx.FieldMap{
-		"ApnsCertificate": ubx.FieldSpec{WireName: "apns_certificate"},
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"AppName": ubx.FieldSpec{WireName: "app_name"},
-		"CertificateKey": ubx.FieldSpec{WireName: "certificate_key"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"KeyId": ubx.FieldSpec{WireName: "key_id"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Token": ubx.FieldSpec{WireName: "token"},
-	}
+	"ApnsCertificate": ubx.FieldSpec{WireName: "apns_certificate"},
+	"AppId":           ubx.FieldSpec{WireName: "app_id"},
+	"AppName":         ubx.FieldSpec{WireName: "app_name"},
+	"CertificateKey":  ubx.FieldSpec{WireName: "certificate_key"},
+	"Endpoint":        ubx.FieldSpec{WireName: "endpoint"},
+	"KeyId":           ubx.FieldSpec{WireName: "key_id"},
+	"Thumbprint":      ubx.FieldSpec{WireName: "thumbprint"},
+	"Token":           ubx.FieldSpec{WireName: "token"},
+}
 
 var NotificationHubResource_Properties_ApnsCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_ApnsCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_ApnsCredential_PropertiesFields,
+	},
+}
 
 var NotificationHubResource_Properties_AuthorizationRulesFields = ubx.FieldMap{
-		"ClaimType": ubx.FieldSpec{WireName: "claim_type"},
-		"ClaimValue": ubx.FieldSpec{WireName: "claim_value"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"ModifiedTime": ubx.FieldSpec{WireName: "modified_time"},
-		"PrimaryKey": ubx.FieldSpec{WireName: "primary_key"},
-		"Revision": ubx.FieldSpec{WireName: "revision"},
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-		"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
-	}
+	"ClaimType":    ubx.FieldSpec{WireName: "claim_type"},
+	"ClaimValue":   ubx.FieldSpec{WireName: "claim_value"},
+	"CreatedTime":  ubx.FieldSpec{WireName: "created_time"},
+	"KeyName":      ubx.FieldSpec{WireName: "key_name"},
+	"ModifiedTime": ubx.FieldSpec{WireName: "modified_time"},
+	"PrimaryKey":   ubx.FieldSpec{WireName: "primary_key"},
+	"Revision":     ubx.FieldSpec{WireName: "revision"},
+	"Rights":       ubx.FieldSpec{WireName: "rights"},
+	"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
+}
 
 var NotificationHubResource_Properties_BaiduCredential_PropertiesFields = ubx.FieldMap{
-		"BaiduApiKey": ubx.FieldSpec{WireName: "baidu_api_key"},
-		"BaiduEndPoint": ubx.FieldSpec{WireName: "baidu_end_point"},
-		"BaiduSecretKey": ubx.FieldSpec{WireName: "baidu_secret_key"},
-	}
+	"BaiduApiKey":    ubx.FieldSpec{WireName: "baidu_api_key"},
+	"BaiduEndPoint":  ubx.FieldSpec{WireName: "baidu_end_point"},
+	"BaiduSecretKey": ubx.FieldSpec{WireName: "baidu_secret_key"},
+}
 
 var NotificationHubResource_Properties_BaiduCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_BaiduCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_BaiduCredential_PropertiesFields,
+	},
+}
 
 var NotificationHubResource_Properties_BrowserCredential_PropertiesFields = ubx.FieldMap{
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"VapidPrivateKey": ubx.FieldSpec{WireName: "vapid_private_key"},
-		"VapidPublicKey": ubx.FieldSpec{WireName: "vapid_public_key"},
-	}
+	"Subject":         ubx.FieldSpec{WireName: "subject"},
+	"VapidPrivateKey": ubx.FieldSpec{WireName: "vapid_private_key"},
+	"VapidPublicKey":  ubx.FieldSpec{WireName: "vapid_public_key"},
+}
 
 var NotificationHubResource_Properties_BrowserCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_BrowserCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_BrowserCredential_PropertiesFields,
+	},
+}
 
 var NotificationHubResource_Properties_GcmCredential_PropertiesFields = ubx.FieldMap{
-		"GcmEndpoint": ubx.FieldSpec{WireName: "gcm_endpoint"},
-		"GoogleApiKey": ubx.FieldSpec{WireName: "google_api_key"},
-	}
+	"GcmEndpoint":  ubx.FieldSpec{WireName: "gcm_endpoint"},
+	"GoogleApiKey": ubx.FieldSpec{WireName: "google_api_key"},
+}
 
 var NotificationHubResource_Properties_GcmCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_GcmCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_GcmCredential_PropertiesFields,
+	},
+}
 
 var NotificationHubResource_Properties_MpnsCredential_PropertiesFields = ubx.FieldMap{
-		"CertificateKey": ubx.FieldSpec{WireName: "certificate_key"},
-		"MpnsCertificate": ubx.FieldSpec{WireName: "mpns_certificate"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"CertificateKey":  ubx.FieldSpec{WireName: "certificate_key"},
+	"MpnsCertificate": ubx.FieldSpec{WireName: "mpns_certificate"},
+	"Thumbprint":      ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 var NotificationHubResource_Properties_MpnsCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_MpnsCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_MpnsCredential_PropertiesFields,
+	},
+}
 
 var NotificationHubResource_Properties_WnsCredential_PropertiesFields = ubx.FieldMap{
-		"CertificateKey": ubx.FieldSpec{WireName: "certificate_key"},
-		"PackageSid": ubx.FieldSpec{WireName: "package_sid"},
-		"SecretKey": ubx.FieldSpec{WireName: "secret_key"},
-		"WindowsLiveEndpoint": ubx.FieldSpec{WireName: "windows_live_endpoint"},
-		"WnsCertificate": ubx.FieldSpec{WireName: "wns_certificate"},
-	}
+	"CertificateKey":      ubx.FieldSpec{WireName: "certificate_key"},
+	"PackageSid":          ubx.FieldSpec{WireName: "package_sid"},
+	"SecretKey":           ubx.FieldSpec{WireName: "secret_key"},
+	"WindowsLiveEndpoint": ubx.FieldSpec{WireName: "windows_live_endpoint"},
+	"WnsCertificate":      ubx.FieldSpec{WireName: "wns_certificate"},
+}
 
 var NotificationHubResource_Properties_WnsCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_WnsCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_WnsCredential_PropertiesFields,
+	},
+}
 
 var NotificationHubResource_Properties_XiaomiCredential_PropertiesFields = ubx.FieldMap{
-		"AppSecret": ubx.FieldSpec{WireName: "app_secret"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-	}
+	"AppSecret": ubx.FieldSpec{WireName: "app_secret"},
+	"Endpoint":  ubx.FieldSpec{WireName: "endpoint"},
+}
 
 var NotificationHubResource_Properties_XiaomiCredentialFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_XiaomiCredential_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_XiaomiCredential_PropertiesFields,
+	},
+}
 
 var NotificationHubResource_PropertiesFields = ubx.FieldMap{
-		"AdmCredential": ubx.FieldSpec{
-			WireName: "adm_credential",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_AdmCredentialFields,
-		},
-		"ApnsCredential": ubx.FieldSpec{
-			WireName: "apns_credential",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_ApnsCredentialFields,
-		},
-		"AuthorizationRules": ubx.FieldSpec{
-			WireName: "authorization_rules",
-			Kind: "list",
-			Fields: NotificationHubResource_Properties_AuthorizationRulesFields,
-		},
-		"BaiduCredential": ubx.FieldSpec{
-			WireName: "baidu_credential",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_BaiduCredentialFields,
-		},
-		"BrowserCredential": ubx.FieldSpec{
-			WireName: "browser_credential",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_BrowserCredentialFields,
-		},
-		"DailyMaxActiveDevices": ubx.FieldSpec{WireName: "daily_max_active_devices"},
-		"GcmCredential": ubx.FieldSpec{
-			WireName: "gcm_credential",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_GcmCredentialFields,
-		},
-		"MpnsCredential": ubx.FieldSpec{
-			WireName: "mpns_credential",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_MpnsCredentialFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"RegistrationTtl": ubx.FieldSpec{WireName: "registration_ttl"},
-		"WnsCredential": ubx.FieldSpec{
-			WireName: "wns_credential",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_WnsCredentialFields,
-		},
-		"XiaomiCredential": ubx.FieldSpec{
-			WireName: "xiaomi_credential",
-			Kind: "object",
-			Fields: NotificationHubResource_Properties_XiaomiCredentialFields,
-		},
-	}
+	"AdmCredential": ubx.FieldSpec{
+		WireName: "adm_credential",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_AdmCredentialFields,
+	},
+	"ApnsCredential": ubx.FieldSpec{
+		WireName: "apns_credential",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_ApnsCredentialFields,
+	},
+	"AuthorizationRules": ubx.FieldSpec{
+		WireName: "authorization_rules",
+		Kind:     "list",
+		Fields:   NotificationHubResource_Properties_AuthorizationRulesFields,
+	},
+	"BaiduCredential": ubx.FieldSpec{
+		WireName: "baidu_credential",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_BaiduCredentialFields,
+	},
+	"BrowserCredential": ubx.FieldSpec{
+		WireName: "browser_credential",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_BrowserCredentialFields,
+	},
+	"DailyMaxActiveDevices": ubx.FieldSpec{WireName: "daily_max_active_devices"},
+	"GcmCredential": ubx.FieldSpec{
+		WireName: "gcm_credential",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_GcmCredentialFields,
+	},
+	"MpnsCredential": ubx.FieldSpec{
+		WireName: "mpns_credential",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_MpnsCredentialFields,
+	},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+	"RegistrationTtl": ubx.FieldSpec{WireName: "registration_ttl"},
+	"WnsCredential": ubx.FieldSpec{
+		WireName: "wns_credential",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_WnsCredentialFields,
+	},
+	"XiaomiCredential": ubx.FieldSpec{
+		WireName: "xiaomi_credential",
+		Kind:     "object",
+		Fields:   NotificationHubResource_Properties_XiaomiCredentialFields,
+	},
+}
 
 var NotificationHubResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type NotificationHubResourceConfig struct {
 	// NotificationHub properties.
@@ -383,13 +383,13 @@ var NotificationHubResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NotificationHubResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   NotificationHubResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: NotificationHubResource_SkuFields,
+			Kind:     "object",
+			Fields:   NotificationHubResource_SkuFields,
 		},
 	},
 }

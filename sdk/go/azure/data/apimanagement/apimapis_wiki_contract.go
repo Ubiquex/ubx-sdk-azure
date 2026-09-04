@@ -27,6 +27,5 @@ type ApimapisWikiContractAttrs struct {
 
 var ApimapisWikiContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_wiki_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

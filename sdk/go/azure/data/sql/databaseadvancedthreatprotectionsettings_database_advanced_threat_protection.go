@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatabaseadvancedthreatprotectionsettingsDatabaseAdvancedThreatProtection_Value_Properties struct {
 	CreationTime any
-	State any
+	State        any
 }
 
 type DatabaseadvancedthreatprotectionsettingsDatabaseAdvancedThreatProtection_Value struct {
@@ -14,13 +14,13 @@ type DatabaseadvancedthreatprotectionsettingsDatabaseAdvancedThreatProtection_Va
 
 type DatabaseadvancedthreatprotectionsettingsDatabaseAdvancedThreatProtectionConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type DatabaseadvancedthreatprotectionsettingsDatabaseAdvancedThreatProtectionAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The DatabaseAdvancedThreatProtection items on this page
 	Value any
@@ -30,6 +30,6 @@ var DatabaseadvancedthreatprotectionsettingsDatabaseAdvancedThreatProtection = u
 	WireType: "azure_sql_databaseadvancedthreatprotectionsettings_database_advanced_threat_protection",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

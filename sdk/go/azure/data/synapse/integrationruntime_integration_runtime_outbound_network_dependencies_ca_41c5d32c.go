@@ -8,12 +8,12 @@ type IntegrationruntimeIntegrationRuntimeOutboundNetworkDependenciesCategoryEndp
 }
 
 type IntegrationruntimeIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpoint_Value_Endpoints struct {
-	DomainName any
+	DomainName      any
 	EndpointDetails any
 }
 
 type IntegrationruntimeIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpoint_Value struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 

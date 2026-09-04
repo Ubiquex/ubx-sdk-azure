@@ -36,21 +36,10 @@ _TopicSpace_PropertiesFields = {
     "topic_templates": ubx.FieldSpec(wire_name="topic_templates"),
 }
 
-_TopicSpace_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class TopicSpaceConfig:
     # The properties of topic space.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class TopicSpaceAttrs:
@@ -66,11 +55,6 @@ TopicSpace = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_TopicSpace_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_TopicSpace_SystemDataFields,
         ),
     },
 )

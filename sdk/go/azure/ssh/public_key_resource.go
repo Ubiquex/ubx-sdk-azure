@@ -9,8 +9,8 @@ type PublicKeyResource_Properties struct {
 }
 
 var PublicKeyResource_PropertiesFields = ubx.FieldMap{
-		"PublicKey": ubx.FieldSpec{WireName: "public_key"},
-	}
+	"PublicKey": ubx.FieldSpec{WireName: "public_key"},
+}
 
 type PublicKeyResourceConfig struct {
 	// Properties of the SSH public key.
@@ -27,8 +27,8 @@ var PublicKeyResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PublicKeyResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   PublicKeyResource_PropertiesFields,
 		},
 	},
 }

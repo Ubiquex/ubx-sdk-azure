@@ -51,8 +51,6 @@ _OpenapiSecret_PropertiesFields = {
 class OpenapiSecretConfig:
     # Properties of the secret
     properties: Any = None
-    # The tags that will be assigned to the secret.
-    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiSecretAttrs:
@@ -71,6 +69,5 @@ OpenapiSecret = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiSecret_PropertiesFields,
         ),
-        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

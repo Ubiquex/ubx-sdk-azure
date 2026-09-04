@@ -4,77 +4,77 @@ package managedservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RegistrationDefinition_Value_Plan struct {
-	Name any
-	Product any
+	Name      any
+	Product   any
 	Publisher any
-	Version any
+	Version   any
 }
 
 type RegistrationDefinition_Value_Properties_Authorizations struct {
 	DelegatedRoleDefinitionIds any
-	PrincipalId any
-	PrincipalIdDisplayName any
-	RoleDefinitionId any
+	PrincipalId                any
+	PrincipalIdDisplayName     any
+	RoleDefinitionId           any
 }
 
 type RegistrationDefinition_Value_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers struct {
-	PrincipalId any
+	PrincipalId            any
 	PrincipalIdDisplayName any
 }
 
 type RegistrationDefinition_Value_Properties_EligibleAuthorizations_JustInTimeAccessPolicy struct {
-	ManagedByTenantApprovers any
+	ManagedByTenantApprovers  any
 	MaximumActivationDuration any
-	MultiFactorAuthProvider any
+	MultiFactorAuthProvider   any
 }
 
 type RegistrationDefinition_Value_Properties_EligibleAuthorizations struct {
 	JustInTimeAccessPolicy any
-	PrincipalId any
+	PrincipalId            any
 	PrincipalIdDisplayName any
-	RoleDefinitionId any
+	RoleDefinitionId       any
 }
 
 type RegistrationDefinition_Value_Properties struct {
-	Authorizations any
-	Description any
-	EligibleAuthorizations any
-	ManagedByTenantId any
-	ManagedByTenantName any
-	ManageeTenantId any
-	ManageeTenantName any
-	ProvisioningState any
+	Authorizations             any
+	Description                any
+	EligibleAuthorizations     any
+	ManagedByTenantId          any
+	ManagedByTenantName        any
+	ManageeTenantId            any
+	ManageeTenantName          any
+	ProvisioningState          any
 	RegistrationDefinitionName any
 }
 
 type RegistrationDefinition_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type RegistrationDefinition_Value struct {
-	Id any
-	Name any
-	Plan any
+	Id         any
+	Name       any
+	Plan       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type RegistrationDefinitionConfig struct {
 	ApiVersion any
-	Scope any
+	Scope      any
 }
 
 type RegistrationDefinitionAttrs struct {
 	ApiVersion any
 	// The link to the next page of registration definitions.
 	NextLink any
-	Scope any
+	Scope    any
 	// The list of registration definitions.
 	Value any
 }
@@ -83,6 +83,6 @@ var RegistrationDefinition = ubx.DataSourceBinding{
 	WireType: "azure_managedservices_registration_definition",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"Scope":      ubx.FieldSpec{WireName: "scope"},
 	},
 }

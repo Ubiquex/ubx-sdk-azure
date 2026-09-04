@@ -25,16 +25,16 @@ type SharedAccessAuthorizationRuleResource_Properties struct {
 }
 
 var SharedAccessAuthorizationRuleResource_PropertiesFields = ubx.FieldMap{
-		"ClaimType": ubx.FieldSpec{WireName: "claim_type"},
-		"ClaimValue": ubx.FieldSpec{WireName: "claim_value"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"ModifiedTime": ubx.FieldSpec{WireName: "modified_time"},
-		"PrimaryKey": ubx.FieldSpec{WireName: "primary_key"},
-		"Revision": ubx.FieldSpec{WireName: "revision"},
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-		"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
-	}
+	"ClaimType":    ubx.FieldSpec{WireName: "claim_type"},
+	"ClaimValue":   ubx.FieldSpec{WireName: "claim_value"},
+	"CreatedTime":  ubx.FieldSpec{WireName: "created_time"},
+	"KeyName":      ubx.FieldSpec{WireName: "key_name"},
+	"ModifiedTime": ubx.FieldSpec{WireName: "modified_time"},
+	"PrimaryKey":   ubx.FieldSpec{WireName: "primary_key"},
+	"Revision":     ubx.FieldSpec{WireName: "revision"},
+	"Rights":       ubx.FieldSpec{WireName: "rights"},
+	"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
+}
 
 type SharedAccessAuthorizationRuleResourceConfig struct {
 	// Deprecated - only for compatibility.
@@ -60,8 +60,8 @@ var SharedAccessAuthorizationRuleResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SharedAccessAuthorizationRuleResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   SharedAccessAuthorizationRuleResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

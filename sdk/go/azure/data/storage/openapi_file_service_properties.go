@@ -4,10 +4,10 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFileServiceProperties_Value_Properties_Cors_CorsRules struct {
-	AllowedHeaders any
-	AllowedMethods any
-	AllowedOrigins any
-	ExposedHeaders any
+	AllowedHeaders  any
+	AllowedMethods  any
+	AllowedOrigins  any
+	ExposedHeaders  any
 	MaxAgeInSeconds any
 }
 
@@ -28,12 +28,12 @@ type OpenapiFileServiceProperties_Value_Properties_ProtocolSettings_Smb_Multicha
 }
 
 type OpenapiFileServiceProperties_Value_Properties_ProtocolSettings_Smb struct {
-	AuthenticationMethods any
-	ChannelEncryption any
-	EncryptionInTransit any
+	AuthenticationMethods    any
+	ChannelEncryption        any
+	EncryptionInTransit      any
 	KerberosTicketEncryption any
-	Multichannel any
-	Versions any
+	Multichannel             any
+	Versions                 any
 }
 
 type OpenapiFileServiceProperties_Value_Properties_ProtocolSettings struct {
@@ -43,13 +43,13 @@ type OpenapiFileServiceProperties_Value_Properties_ProtocolSettings struct {
 
 type OpenapiFileServiceProperties_Value_Properties_ShareDeleteRetentionPolicy struct {
 	AllowPermanentDelete any
-	Days any
-	Enabled any
+	Days                 any
+	Enabled              any
 }
 
 type OpenapiFileServiceProperties_Value_Properties struct {
-	Cors any
-	ProtocolSettings any
+	Cors                       any
+	ProtocolSettings           any
 	ShareDeleteRetentionPolicy any
 }
 
@@ -60,7 +60,7 @@ type OpenapiFileServiceProperties_Value_Sku struct {
 
 type OpenapiFileServiceProperties_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiFileServicePropertiesConfig struct {

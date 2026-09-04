@@ -4,12 +4,12 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimgatewaysGatewayHostnameConfigurationContract_Value_Properties struct {
-	CertificateId any
-	Hostname any
-	Http2Enabled any
+	CertificateId              any
+	Hostname                   any
+	Http2Enabled               any
 	NegotiateClientCertificate any
-	Tls10Enabled any
-	Tls11Enabled any
+	Tls10Enabled               any
+	Tls11Enabled               any
 }
 
 type ApimgatewaysGatewayHostnameConfigurationContract_Value struct {
@@ -28,6 +28,5 @@ type ApimgatewaysGatewayHostnameConfigurationContractAttrs struct {
 
 var ApimgatewaysGatewayHostnameConfigurationContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimgateways_gateway_hostname_configuration_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

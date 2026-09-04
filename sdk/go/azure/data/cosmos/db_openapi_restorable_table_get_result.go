@@ -4,13 +4,13 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableTableGetResult_Value_Properties_Resource struct {
-	Rid any
-	CanUndelete any
+	Rid               any
+	CanUndelete       any
 	CanUndeleteReason any
-	EventTimestamp any
-	OperationType any
-	OwnerId any
-	OwnerResourceId any
+	EventTimestamp    any
+	OperationType     any
+	OwnerId           any
+	OwnerResourceId   any
 }
 
 type DbOpenapiRestorableTableGetResult_Value_Properties struct {
@@ -18,25 +18,25 @@ type DbOpenapiRestorableTableGetResult_Value_Properties struct {
 }
 
 type DbOpenapiRestorableTableGetResult_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type DbOpenapiRestorableTableGetResultConfig struct {
-	EndTime any
+	EndTime    any
 	InstanceId any
-	Location any
-	StartTime any
+	Location   any
+	StartTime  any
 }
 
 type DbOpenapiRestorableTableGetResultAttrs struct {
-	EndTime any
+	EndTime    any
 	InstanceId any
-	Location any
-	NextLink any
-	StartTime any
+	Location   any
+	NextLink   any
+	StartTime  any
 	// List of Table events and their properties.
 	Value any
 }
@@ -44,9 +44,9 @@ type DbOpenapiRestorableTableGetResultAttrs struct {
 var DbOpenapiRestorableTableGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_table_get_result",
 	Fields: ubx.FieldMap{
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
+		"EndTime":    ubx.FieldSpec{WireName: "end_time"},
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+		"Location":   ubx.FieldSpec{WireName: "location"},
+		"StartTime":  ubx.FieldSpec{WireName: "start_time"},
 	},
 }

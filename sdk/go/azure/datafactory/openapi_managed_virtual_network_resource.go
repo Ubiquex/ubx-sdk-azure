@@ -11,13 +11,11 @@ type OpenapiManagedVirtualNetworkResource_Properties struct {
 }
 
 var OpenapiManagedVirtualNetworkResource_PropertiesFields = ubx.FieldMap{
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"VNetId": ubx.FieldSpec{WireName: "v_net_id"},
-	}
+	"Alias":  ubx.FieldSpec{WireName: "alias"},
+	"VNetId": ubx.FieldSpec{WireName: "v_net_id"},
+}
 
 type OpenapiManagedVirtualNetworkResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// A managed Virtual Network associated with the Azure Data Factory
 	Properties any
 }
@@ -32,11 +30,10 @@ type OpenapiManagedVirtualNetworkResourceAttrs struct {
 var OpenapiManagedVirtualNetworkResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_managed_virtual_network_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedVirtualNetworkResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedVirtualNetworkResource_PropertiesFields,
 		},
 	},
 }

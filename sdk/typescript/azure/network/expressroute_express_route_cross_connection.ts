@@ -177,8 +177,6 @@ const ExpressrouteExpressRouteCrossConnection_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRouteCrossConnectionConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of ExpressRouteCrossConnection. */
   properties?: ExpressrouteExpressRouteCrossConnection_Properties | Computed<ExpressrouteExpressRouteCrossConnection_Properties>;
 }
@@ -193,7 +191,6 @@ export interface ExpressrouteExpressRouteCrossConnectionAttrs {
 export const ExpressrouteExpressRouteCrossConnection: ResourceBinding<ExpressrouteExpressRouteCrossConnectionConfig, ExpressrouteExpressRouteCrossConnectionAttrs> = {
   wireType: "azure_network_expressroute_express_route_cross_connection",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

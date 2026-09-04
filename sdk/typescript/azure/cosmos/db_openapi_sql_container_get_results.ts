@@ -159,6 +159,12 @@ export interface DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbed
 }
 
 export interface DbOpenapiSqlContainerGetResults_Properties_Resource {
+  /** A system generated property representing the resource etag required for optimistic concurrency control. */
+  etag?: string | Computed<string>;
+  /** A system generated property. A unique identifier. */
+  rid?: string | Computed<string>;
+  /** A system generated property that denotes the last updated timestamp of the resource. */
+  ts?: number | Computed<number>;
   /** Analytical TTL. */
   analyticalStorageTtl?: number | Computed<number>;
   /** Cosmos DB client encryption policy. */
@@ -352,6 +358,9 @@ const DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicyF
 };
 
 const DbOpenapiSqlContainerGetResults_Properties_ResourceFields: FieldMap = {
+  etag: "_etag",
+  rid: "_rid",
+  ts: "_ts",
   analyticalStorageTtl: "analytical_storage_ttl",
   clientEncryptionPolicy: {
     wireName: "client_encryption_policy",

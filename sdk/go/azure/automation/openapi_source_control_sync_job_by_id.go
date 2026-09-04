@@ -6,11 +6,32 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiSourceControlSyncJobById_Properties struct {
 	// The commit id of the source control sync job. If not syncing to a commitId, enter an empty string.
 	CommitId any
+	// The creation time of the job.
+	CreationTime any
+	// The end time of the job.
+	EndTime any
+	// The exceptions that occurred while running the sync job.
+	Exception any
+	// The provisioning state of the job.
+	ProvisioningState any
+	// The source control sync job id.
+	SourceControlSyncJobId any
+	// The start time of the job.
+	StartTime any
+	// The sync type.
+	SyncType any
 }
 
 var OpenapiSourceControlSyncJobById_PropertiesFields = ubx.FieldMap{
-		"CommitId": ubx.FieldSpec{WireName: "commit_id"},
-	}
+	"CommitId":               ubx.FieldSpec{WireName: "commit_id"},
+	"CreationTime":           ubx.FieldSpec{WireName: "creation_time"},
+	"EndTime":                ubx.FieldSpec{WireName: "end_time"},
+	"Exception":              ubx.FieldSpec{WireName: "exception"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceControlSyncJobId": ubx.FieldSpec{WireName: "source_control_sync_job_id"},
+	"StartTime":              ubx.FieldSpec{WireName: "start_time"},
+	"SyncType":               ubx.FieldSpec{WireName: "sync_type"},
+}
 
 type OpenapiSourceControlSyncJobByIdConfig struct {
 	// Definition of create source control sync job properties.
@@ -29,8 +50,8 @@ var OpenapiSourceControlSyncJobById = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSourceControlSyncJobById_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSourceControlSyncJobById_PropertiesFields,
 		},
 	},
 }

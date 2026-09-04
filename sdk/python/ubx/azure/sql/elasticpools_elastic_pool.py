@@ -90,8 +90,6 @@ _ElasticpoolsElasticPool_SkuFields = {
 
 @dataclasses.dataclass
 class ElasticpoolsElasticPoolConfig:
-    # Kind of elastic pool. This is metadata used for the Azure portal experience.
-    kind: Any = None
     # Properties of an elastic pool
     properties: Any = None
     # An ARM Resource SKU.
@@ -109,7 +107,6 @@ class ElasticpoolsElasticPoolAttrs:
 ElasticpoolsElasticPool = ubx.ResourceBinding(
     wire_type="azure_sql_elasticpools_elastic_pool",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

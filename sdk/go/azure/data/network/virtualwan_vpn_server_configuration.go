@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanVpnServerConfiguration_Value_Properties_AadAuthenticationParameters struct {
 	AadAudience any
-	AadIssuer any
-	AadTenant any
+	AadIssuer   any
+	AadTenant   any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_ConfigurationPolicyGroups_Properties_P2SconnectionConfigurations struct {
@@ -14,151 +14,151 @@ type VirtualwanVpnServerConfiguration_Value_Properties_ConfigurationPolicyGroups
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_ConfigurationPolicyGroups_Properties_PolicyMembers struct {
-	AttributeType any
+	AttributeType  any
 	AttributeValue any
-	Name any
+	Name           any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_ConfigurationPolicyGroups_Properties struct {
-	IsDefault any
+	IsDefault                   any
 	P2SconnectionConfigurations any
-	PolicyMembers any
-	Priority any
-	ProvisioningState any
+	PolicyMembers               any
+	Priority                    any
+	ProvisioningState           any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_ConfigurationPolicyGroups struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties_VpnClientAddressPool struct {
-	AddressPrefixes any
+	AddressPrefixes           any
 	IpamPoolPrefixAllocations any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations_Properties struct {
-	ConfigurationPolicyGroupAssociations any
-	EnableInternetSecurity any
+	ConfigurationPolicyGroupAssociations         any
+	EnableInternetSecurity                       any
 	PreviousConfigurationPolicyGroupAssociations any
-	ProvisioningState any
-	RoutingConfiguration any
-	VpnClientAddressPool any
+	ProvisioningState                            any
+	RoutingConfiguration                         any
+	VpnClientAddressPool                         any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_P2SconnectionConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties_VpnClientConnectionHealth struct {
-	AllocatedIpAddresses any
-	TotalEgressBytesTransferred any
+	AllocatedIpAddresses         any
+	TotalEgressBytesTransferred  any
 	TotalIngressBytesTransferred any
-	VpnClientConnectionsCount any
+	VpnClientConnectionsCount    any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways_Properties struct {
-	CustomDnsServers any
+	CustomDnsServers            any
 	IsRoutingPreferenceInternet any
 	P2SconnectionConfigurations any
-	ProvisioningState any
-	VirtualHub any
-	VpnClientConnectionHealth any
-	VpnGatewayScaleUnit any
-	VpnServerConfiguration any
+	ProvisioningState           any
+	VirtualHub                  any
+	VpnClientConnectionHealth   any
+	VpnGatewayScaleUnit         any
+	VpnServerConfiguration      any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_P2SvpnGateways struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_RadiusClientRootCertificates struct {
-	Name any
+	Name       any
 	Thumbprint any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_RadiusServerRootCertificates struct {
-	Name any
+	Name           any
 	PublicCertData any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_RadiusServers struct {
 	RadiusServerAddress any
-	RadiusServerScore any
-	RadiusServerSecret any
+	RadiusServerScore   any
+	RadiusServerSecret  any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties_VpnClientIpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type VirtualwanVpnServerConfiguration_Value_Properties struct {
-	AadAuthenticationParameters any
-	ConfigurationPolicyGroups any
-	Etag any
-	Name any
-	P2SvpnGateways any
-	ProvisioningState any
+	AadAuthenticationParameters  any
+	ConfigurationPolicyGroups    any
+	Etag                         any
+	Name                         any
+	P2SvpnGateways               any
+	ProvisioningState            any
 	RadiusClientRootCertificates any
-	RadiusServerAddress any
+	RadiusServerAddress          any
 	RadiusServerRootCertificates any
-	RadiusServerSecret any
-	RadiusServers any
-	VpnAuthenticationTypes any
-	VpnClientIpsecPolicies any
+	RadiusServerSecret           any
+	RadiusServers                any
+	VpnAuthenticationTypes       any
+	VpnClientIpsecPolicies       any
 	VpnClientRevokedCertificates any
-	VpnClientRootCertificates any
-	VpnProtocols any
+	VpnClientRootCertificates    any
+	VpnProtocols                 any
 }
 
 type VirtualwanVpnServerConfiguration_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -174,6 +174,5 @@ type VirtualwanVpnServerConfigurationAttrs struct {
 
 var VirtualwanVpnServerConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_vpn_server_configuration",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

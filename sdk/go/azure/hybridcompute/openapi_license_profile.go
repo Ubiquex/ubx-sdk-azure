@@ -18,10 +18,10 @@ type OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_Details struc
 
 type OpenapiLicenseProfile_Properties_ProductProfile_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiLicenseProfile_Properties_ProductProfile_Error struct {
@@ -38,12 +38,12 @@ type OpenapiLicenseProfile_Properties_ProductProfile_Error struct {
 }
 
 type OpenapiLicenseProfile_Properties_ProductProfile_ProductFeatures struct {
-	BillingEndDate any
-	BillingStartDate any
-	DisenrollmentDate any
-	EnrollmentDate any
-	Error any
-	Name any
+	BillingEndDate     any
+	BillingStartDate   any
+	DisenrollmentDate  any
+	EnrollmentDate     any
+	Error              any
+	Name               any
 	SubscriptionStatus any
 }
 
@@ -82,104 +82,103 @@ type OpenapiLicenseProfile_Properties struct {
 }
 
 var OpenapiLicenseProfile_Properties_EsuProfileFields = ubx.FieldMap{
-		"AssignedLicense": ubx.FieldSpec{WireName: "assigned_license"},
-	}
+	"AssignedLicense": ubx.FieldSpec{WireName: "assigned_license"},
+}
 
 var OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_DetailsFields = ubx.FieldMap{
-	}
+var OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_DetailsFields = ubx.FieldMap{}
 
 var OpenapiLicenseProfile_Properties_ProductProfile_Error_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   OpenapiLicenseProfile_Properties_ProductProfile_Error_Details_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var OpenapiLicenseProfile_Properties_ProductProfile_ErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: OpenapiLicenseProfile_Properties_ProductProfile_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   OpenapiLicenseProfile_Properties_ProductProfile_Error_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   OpenapiLicenseProfile_Properties_ProductProfile_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var OpenapiLicenseProfile_Properties_ProductProfile_ProductFeaturesFields = ubx.FieldMap{
-		"BillingEndDate": ubx.FieldSpec{WireName: "billing_end_date"},
-		"BillingStartDate": ubx.FieldSpec{WireName: "billing_start_date"},
-		"DisenrollmentDate": ubx.FieldSpec{WireName: "disenrollment_date"},
-		"EnrollmentDate": ubx.FieldSpec{WireName: "enrollment_date"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiLicenseProfile_Properties_ProductProfile_ErrorFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SubscriptionStatus": ubx.FieldSpec{WireName: "subscription_status"},
-	}
+	"BillingEndDate":    ubx.FieldSpec{WireName: "billing_end_date"},
+	"BillingStartDate":  ubx.FieldSpec{WireName: "billing_start_date"},
+	"DisenrollmentDate": ubx.FieldSpec{WireName: "disenrollment_date"},
+	"EnrollmentDate":    ubx.FieldSpec{WireName: "enrollment_date"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiLicenseProfile_Properties_ProductProfile_ErrorFields,
+	},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"SubscriptionStatus": ubx.FieldSpec{WireName: "subscription_status"},
+}
 
 var OpenapiLicenseProfile_Properties_ProductProfileFields = ubx.FieldMap{
-		"BillingEndDate": ubx.FieldSpec{WireName: "billing_end_date"},
-		"BillingStartDate": ubx.FieldSpec{WireName: "billing_start_date"},
-		"DisenrollmentDate": ubx.FieldSpec{WireName: "disenrollment_date"},
-		"EnrollmentDate": ubx.FieldSpec{WireName: "enrollment_date"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiLicenseProfile_Properties_ProductProfile_ErrorFields,
-		},
-		"ProductFeatures": ubx.FieldSpec{
-			WireName: "product_features",
-			Kind: "list",
-			Fields: OpenapiLicenseProfile_Properties_ProductProfile_ProductFeaturesFields,
-		},
-		"ProductType": ubx.FieldSpec{WireName: "product_type"},
-		"SubscriptionStatus": ubx.FieldSpec{WireName: "subscription_status"},
-	}
+	"BillingEndDate":    ubx.FieldSpec{WireName: "billing_end_date"},
+	"BillingStartDate":  ubx.FieldSpec{WireName: "billing_start_date"},
+	"DisenrollmentDate": ubx.FieldSpec{WireName: "disenrollment_date"},
+	"EnrollmentDate":    ubx.FieldSpec{WireName: "enrollment_date"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiLicenseProfile_Properties_ProductProfile_ErrorFields,
+	},
+	"ProductFeatures": ubx.FieldSpec{
+		WireName: "product_features",
+		Kind:     "list",
+		Fields:   OpenapiLicenseProfile_Properties_ProductProfile_ProductFeaturesFields,
+	},
+	"ProductType":        ubx.FieldSpec{WireName: "product_type"},
+	"SubscriptionStatus": ubx.FieldSpec{WireName: "subscription_status"},
+}
 
 var OpenapiLicenseProfile_Properties_SoftwareAssuranceFields = ubx.FieldMap{
-		"SoftwareAssuranceCustomer": ubx.FieldSpec{WireName: "software_assurance_customer"},
-	}
+	"SoftwareAssuranceCustomer": ubx.FieldSpec{WireName: "software_assurance_customer"},
+}
 
 var OpenapiLicenseProfile_PropertiesFields = ubx.FieldMap{
-		"EsuProfile": ubx.FieldSpec{
-			WireName: "esu_profile",
-			Kind: "object",
-			Fields: OpenapiLicenseProfile_Properties_EsuProfileFields,
-		},
-		"ProductProfile": ubx.FieldSpec{
-			WireName: "product_profile",
-			Kind: "object",
-			Fields: OpenapiLicenseProfile_Properties_ProductProfileFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SoftwareAssurance": ubx.FieldSpec{
-			WireName: "software_assurance",
-			Kind: "object",
-			Fields: OpenapiLicenseProfile_Properties_SoftwareAssuranceFields,
-		},
-	}
+	"EsuProfile": ubx.FieldSpec{
+		WireName: "esu_profile",
+		Kind:     "object",
+		Fields:   OpenapiLicenseProfile_Properties_EsuProfileFields,
+	},
+	"ProductProfile": ubx.FieldSpec{
+		WireName: "product_profile",
+		Kind:     "object",
+		Fields:   OpenapiLicenseProfile_Properties_ProductProfileFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SoftwareAssurance": ubx.FieldSpec{
+		WireName: "software_assurance",
+		Kind:     "object",
+		Fields:   OpenapiLicenseProfile_Properties_SoftwareAssuranceFields,
+	},
+}
 
 type OpenapiLicenseProfileConfig struct {
 	// Describe the properties of a license profile.
@@ -196,8 +195,8 @@ var OpenapiLicenseProfile = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLicenseProfile_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLicenseProfile_PropertiesFields,
 		},
 	},
 }

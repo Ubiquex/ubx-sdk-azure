@@ -9,24 +9,24 @@ type ServiceMigrationRecoveryPoint_Value_Properties struct {
 }
 
 type ServiceMigrationRecoveryPoint_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceMigrationRecoveryPointConfig struct {
-	FabricName any
-	MigrationItemName any
+	FabricName              any
+	MigrationItemName       any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 }
 
 type ServiceMigrationRecoveryPointAttrs struct {
-	FabricName any
+	FabricName        any
 	MigrationItemName any
 	// The link to the next page of items
-	NextLink any
+	NextLink                any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 	// The MigrationRecoveryPoint items on this page
 	Value any
 }
@@ -34,9 +34,9 @@ type ServiceMigrationRecoveryPointAttrs struct {
 var ServiceMigrationRecoveryPoint = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_migration_recovery_point",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"MigrationItemName": ubx.FieldSpec{WireName: "migration_item_name"},
+		"FabricName":              ubx.FieldSpec{WireName: "fabric_name"},
+		"MigrationItemName":       ubx.FieldSpec{WireName: "migration_item_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":            ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

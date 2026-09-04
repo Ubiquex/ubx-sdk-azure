@@ -4,8 +4,12 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCredential_Properties struct {
+	// Gets the creation time.
+	CreationTime any
 	// Gets or sets the description of the credential.
 	Description any
+	// Gets the last modified time.
+	LastModifiedTime any
 	// Gets or sets the password of the credential.
 	Password any
 	// Gets or sets the user name of the credential.
@@ -13,10 +17,12 @@ type OpenapiCredential_Properties struct {
 }
 
 var OpenapiCredential_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-	}
+	"CreationTime":     ubx.FieldSpec{WireName: "creation_time"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"Password":         ubx.FieldSpec{WireName: "password"},
+	"UserName":         ubx.FieldSpec{WireName: "user_name"},
+}
 
 type OpenapiCredentialConfig struct {
 	// Gets or sets the name of the credential.
@@ -38,8 +44,8 @@ var OpenapiCredential = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCredential_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCredential_PropertiesFields,
 		},
 	},
 }

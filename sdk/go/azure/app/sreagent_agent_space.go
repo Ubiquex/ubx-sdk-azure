@@ -4,7 +4,7 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SreagentAgentSpace_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -34,10 +34,10 @@ type SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedAc
 }
 
 type SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions struct {
-	ActionName any
+	ActionName       any
 	ActionParameters any
 	ApprovalRequired any
-	Extension any
+	Extension        any
 }
 
 type SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration struct {
@@ -84,84 +84,84 @@ type SreagentAgentSpace_Properties struct {
 }
 
 var SreagentAgentSpace_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var SreagentAgentSpace_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: SreagentAgentSpace_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   SreagentAgentSpace_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var SreagentAgentSpace_Properties_ComplianceStatusFields = ubx.FieldMap{
-		"ComplianceIssues": ubx.FieldSpec{WireName: "compliance_issues"},
-		"IsCompliant": ubx.FieldSpec{WireName: "is_compliant"},
-		"LastComplianceCheck": ubx.FieldSpec{WireName: "last_compliance_check"},
-	}
+	"ComplianceIssues":    ubx.FieldSpec{WireName: "compliance_issues"},
+	"IsCompliant":         ubx.FieldSpec{WireName: "is_compliant"},
+	"LastComplianceCheck": ubx.FieldSpec{WireName: "last_compliance_check"},
+}
 
 var SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions_ActionParametersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActionsFields = ubx.FieldMap{
-		"ActionName": ubx.FieldSpec{WireName: "action_name"},
-		"ActionParameters": ubx.FieldSpec{
-			WireName: "action_parameters",
-			Kind: "list",
-			Fields: SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions_ActionParametersFields,
-		},
-		"ApprovalRequired": ubx.FieldSpec{WireName: "approval_required"},
-		"Extension": ubx.FieldSpec{WireName: "extension"},
-	}
+	"ActionName": ubx.FieldSpec{WireName: "action_name"},
+	"ActionParameters": ubx.FieldSpec{
+		WireName: "action_parameters",
+		Kind:     "list",
+		Fields:   SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActions_ActionParametersFields,
+	},
+	"ApprovalRequired": ubx.FieldSpec{WireName: "approval_required"},
+	"Extension":        ubx.FieldSpec{WireName: "extension"},
+}
 
 var SreagentAgentSpace_Properties_Policies_GenevaActionsConfigurationFields = ubx.FieldMap{
-		"AcisEndpoint": ubx.FieldSpec{WireName: "acis_endpoint"},
-		"AllowedActions": ubx.FieldSpec{
-			WireName: "allowed_actions",
-			Kind: "list",
-			Fields: SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActionsFields,
-		},
-		"AuthenticationMode": ubx.FieldSpec{WireName: "authentication_mode"},
-		"CertificateSubjectAlternativeName": ubx.FieldSpec{WireName: "certificate_subject_alternative_name"},
-		"CertificateSubjectName": ubx.FieldSpec{WireName: "certificate_subject_name"},
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ExtensionName": ubx.FieldSpec{WireName: "extension_name"},
-	}
+	"AcisEndpoint": ubx.FieldSpec{WireName: "acis_endpoint"},
+	"AllowedActions": ubx.FieldSpec{
+		WireName: "allowed_actions",
+		Kind:     "list",
+		Fields:   SreagentAgentSpace_Properties_Policies_GenevaActionsConfiguration_AllowedActionsFields,
+	},
+	"AuthenticationMode":                ubx.FieldSpec{WireName: "authentication_mode"},
+	"CertificateSubjectAlternativeName": ubx.FieldSpec{WireName: "certificate_subject_alternative_name"},
+	"CertificateSubjectName":            ubx.FieldSpec{WireName: "certificate_subject_name"},
+	"ClientId":                          ubx.FieldSpec{WireName: "client_id"},
+	"ExtensionName":                     ubx.FieldSpec{WireName: "extension_name"},
+}
 
 var SreagentAgentSpace_Properties_PoliciesFields = ubx.FieldMap{
-		"GenevaActionsConfiguration": ubx.FieldSpec{
-			WireName: "geneva_actions_configuration",
-			Kind: "object",
-			Fields: SreagentAgentSpace_Properties_Policies_GenevaActionsConfigurationFields,
-		},
-	}
+	"GenevaActionsConfiguration": ubx.FieldSpec{
+		WireName: "geneva_actions_configuration",
+		Kind:     "object",
+		Fields:   SreagentAgentSpace_Properties_Policies_GenevaActionsConfigurationFields,
+	},
+}
 
 var SreagentAgentSpace_PropertiesFields = ubx.FieldMap{
-		"ComplianceStatus": ubx.FieldSpec{
-			WireName: "compliance_status",
-			Kind: "object",
-			Fields: SreagentAgentSpace_Properties_ComplianceStatusFields,
-		},
-		"CurrentAgentCount": ubx.FieldSpec{WireName: "current_agent_count"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"LastPolicyPropagation": ubx.FieldSpec{WireName: "last_policy_propagation"},
-		"MaxAgentCount": ubx.FieldSpec{WireName: "max_agent_count"},
-		"MemberAgents": ubx.FieldSpec{WireName: "member_agents"},
-		"Policies": ubx.FieldSpec{
-			WireName: "policies",
-			Kind: "object",
-			Fields: SreagentAgentSpace_Properties_PoliciesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceTreeId": ubx.FieldSpec{WireName: "service_tree_id"},
-	}
+	"ComplianceStatus": ubx.FieldSpec{
+		WireName: "compliance_status",
+		Kind:     "object",
+		Fields:   SreagentAgentSpace_Properties_ComplianceStatusFields,
+	},
+	"CurrentAgentCount":     ubx.FieldSpec{WireName: "current_agent_count"},
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"LastPolicyPropagation": ubx.FieldSpec{WireName: "last_policy_propagation"},
+	"MaxAgentCount":         ubx.FieldSpec{WireName: "max_agent_count"},
+	"MemberAgents":          ubx.FieldSpec{WireName: "member_agents"},
+	"Policies": ubx.FieldSpec{
+		WireName: "policies",
+		Kind:     "object",
+		Fields:   SreagentAgentSpace_Properties_PoliciesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceTreeId":     ubx.FieldSpec{WireName: "service_tree_id"},
+}
 
 type SreagentAgentSpaceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -182,13 +182,13 @@ var SreagentAgentSpace = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: SreagentAgentSpace_IdentityFields,
+			Kind:     "object",
+			Fields:   SreagentAgentSpace_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SreagentAgentSpace_PropertiesFields,
+			Kind:     "object",
+			Fields:   SreagentAgentSpace_PropertiesFields,
 		},
 	},
 }

@@ -63,8 +63,6 @@ _Cluster_SkuFields = {
 class ClusterConfig:
     # Managed service identity (system assigned and/or user assigned identities)
     identity: Any = None
-    # Distinguishes the kind of cluster. Read-only.
-    kind: Any = None
     # Properties of Redis Enterprise clusters for create operations
     properties: Any = None
     # SKU parameters supplied to the create Redis Enterprise cluster operation.
@@ -93,7 +91,6 @@ Cluster = ubx.ResourceBinding(
             kind="object",
             fields=_Cluster_IdentityFields,
         ),
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

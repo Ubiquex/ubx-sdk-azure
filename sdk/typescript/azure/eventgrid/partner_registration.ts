@@ -28,20 +28,9 @@ const PartnerRegistration_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const PartnerRegistration_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface PartnerRegistrationConfig {
   /** Properties of the partner registration. */
   properties?: PartnerRegistration_Properties | Computed<PartnerRegistration_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: PartnerRegistration_SystemData | Computed<PartnerRegistration_SystemData>;
 }
 
 export interface PartnerRegistrationAttrs {
@@ -58,11 +47,6 @@ export const PartnerRegistration: ResourceBinding<PartnerRegistrationConfig, Par
       wireName: "properties",
       kind: "object",
       fields: PartnerRegistration_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: PartnerRegistration_SystemDataFields,
     },
   },
 };

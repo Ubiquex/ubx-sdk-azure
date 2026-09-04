@@ -99,20 +99,9 @@ const SourceControlConfiguration_PropertiesFields: FieldMap = {
   sshKnownHostsContents: "ssh_known_hosts_contents",
 };
 
-const SourceControlConfiguration_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface SourceControlConfigurationConfig {
   /** Properties to create a Source Control Configuration resource */
   properties?: SourceControlConfiguration_Properties | Computed<SourceControlConfiguration_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: SourceControlConfiguration_SystemData | Computed<SourceControlConfiguration_SystemData>;
 }
 
 export interface SourceControlConfigurationAttrs {
@@ -129,11 +118,6 @@ export const SourceControlConfiguration: ResourceBinding<SourceControlConfigurat
       wireName: "properties",
       kind: "object",
       fields: SourceControlConfiguration_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: SourceControlConfiguration_SystemDataFields,
     },
   },
 };

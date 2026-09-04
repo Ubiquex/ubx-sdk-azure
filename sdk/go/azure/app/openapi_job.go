@@ -4,7 +4,7 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiJob_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,16 +20,16 @@ type OpenapiJob_Identity struct {
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_Auth struct {
-	SecretRef any
+	SecretRef        any
 	TriggerParameter any
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules struct {
-	Auth any
+	Auth     any
 	Identity any
 	Metadata any
-	Name any
-	Type any
+	Name     any
+	Type     any
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale struct {
@@ -53,7 +53,7 @@ type OpenapiJob_Properties_Configuration_EventTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_IdentitySettings struct {
-	Identity any
+	Identity  any
 	Lifecycle any
 }
 
@@ -65,10 +65,10 @@ type OpenapiJob_Properties_Configuration_ManualTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_Registries struct {
-	Identity any
+	Identity          any
 	PasswordSecretRef any
-	Server any
-	Username any
+	Server            any
+	Username          any
 }
 
 type OpenapiJob_Properties_Configuration_ScheduleTriggerConfig struct {
@@ -81,10 +81,10 @@ type OpenapiJob_Properties_Configuration_ScheduleTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_Secrets struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
-	Name any
-	Value any
+	Name        any
+	Value       any
 }
 
 type OpenapiJob_Properties_Configuration struct {
@@ -109,16 +109,16 @@ type OpenapiJob_Properties_Configuration struct {
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_HttpGet struct {
-	Host any
+	Host        any
 	HttpHeaders any
-	Path any
-	Port any
-	Scheme any
+	Path        any
+	Port        any
+	Scheme      any
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_TcpSocket struct {
@@ -127,15 +127,15 @@ type OpenapiJob_Properties_Template_Containers_Probes_TcpSocket struct {
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes struct {
-	FailureThreshold any
-	HttpGet any
-	InitialDelaySeconds any
-	PeriodSeconds any
-	SuccessThreshold any
-	TcpSocket any
+	FailureThreshold              any
+	HttpGet                       any
+	InitialDelaySeconds           any
+	PeriodSeconds                 any
+	SuccessThreshold              any
+	TcpSocket                     any
 	TerminationGracePeriodSeconds any
-	TimeoutSeconds any
-	Type any
+	TimeoutSeconds                any
+	Type                          any
 }
 
 type OpenapiJob_Properties_Template_Containers struct {
@@ -143,44 +143,44 @@ type OpenapiJob_Properties_Template_Containers struct {
 }
 
 type OpenapiJob_Properties_Template_InitContainers_Env struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiJob_Properties_Template_InitContainers_Resources struct {
-	Cpu any
+	Cpu              any
 	EphemeralStorage any
-	Memory any
+	Memory           any
 }
 
 type OpenapiJob_Properties_Template_InitContainers_VolumeMounts struct {
-	MountPath any
-	SubPath any
+	MountPath  any
+	SubPath    any
 	VolumeName any
 }
 
 type OpenapiJob_Properties_Template_InitContainers struct {
-	Args any
-	Command any
-	Env any
-	Image any
-	Name any
-	Resources any
+	Args         any
+	Command      any
+	Env          any
+	Image        any
+	Name         any
+	Resources    any
 	VolumeMounts any
 }
 
 type OpenapiJob_Properties_Template_Volumes_Secrets struct {
-	Path any
+	Path      any
 	SecretRef any
 }
 
 type OpenapiJob_Properties_Template_Volumes struct {
 	MountOptions any
-	Name any
-	Secrets any
-	StorageName any
-	StorageType any
+	Name         any
+	Secrets      any
+	StorageName  any
+	StorageType  any
 }
 
 type OpenapiJob_Properties_Template struct {
@@ -210,267 +210,267 @@ type OpenapiJob_Properties struct {
 }
 
 var OpenapiJob_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiJob_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiJob_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiJob_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_AuthFields = ubx.FieldMap{
-		"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
-		"TriggerParameter": ubx.FieldSpec{WireName: "trigger_parameter"},
-	}
+	"SecretRef":        ubx.FieldSpec{WireName: "secret_ref"},
+	"TriggerParameter": ubx.FieldSpec{WireName: "trigger_parameter"},
+}
 
 var OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_RulesFields = ubx.FieldMap{
-		"Auth": ubx.FieldSpec{
-			WireName: "auth",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_AuthFields,
-		},
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Auth": ubx.FieldSpec{
+		WireName: "auth",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_AuthFields,
+	},
+	"Identity": ubx.FieldSpec{WireName: "identity"},
+	"Metadata": ubx.FieldSpec{WireName: "metadata"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiJob_Properties_Configuration_EventTriggerConfig_ScaleFields = ubx.FieldMap{
-		"MaxExecutions": ubx.FieldSpec{WireName: "max_executions"},
-		"MinExecutions": ubx.FieldSpec{WireName: "min_executions"},
-		"PollingInterval": ubx.FieldSpec{WireName: "polling_interval"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_RulesFields,
-		},
-	}
+	"MaxExecutions":   ubx.FieldSpec{WireName: "max_executions"},
+	"MinExecutions":   ubx.FieldSpec{WireName: "min_executions"},
+	"PollingInterval": ubx.FieldSpec{WireName: "polling_interval"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_RulesFields,
+	},
+}
 
 var OpenapiJob_Properties_Configuration_EventTriggerConfigFields = ubx.FieldMap{
-		"Parallelism": ubx.FieldSpec{WireName: "parallelism"},
-		"ReplicaCompletionCount": ubx.FieldSpec{WireName: "replica_completion_count"},
-		"Scale": ubx.FieldSpec{
-			WireName: "scale",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_Configuration_EventTriggerConfig_ScaleFields,
-		},
-	}
+	"Parallelism":            ubx.FieldSpec{WireName: "parallelism"},
+	"ReplicaCompletionCount": ubx.FieldSpec{WireName: "replica_completion_count"},
+	"Scale": ubx.FieldSpec{
+		WireName: "scale",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_Configuration_EventTriggerConfig_ScaleFields,
+	},
+}
 
 var OpenapiJob_Properties_Configuration_IdentitySettingsFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"Lifecycle": ubx.FieldSpec{WireName: "lifecycle"},
-	}
+	"Identity":  ubx.FieldSpec{WireName: "identity"},
+	"Lifecycle": ubx.FieldSpec{WireName: "lifecycle"},
+}
 
 var OpenapiJob_Properties_Configuration_ManualTriggerConfigFields = ubx.FieldMap{
-		"Parallelism": ubx.FieldSpec{WireName: "parallelism"},
-		"ReplicaCompletionCount": ubx.FieldSpec{WireName: "replica_completion_count"},
-	}
+	"Parallelism":            ubx.FieldSpec{WireName: "parallelism"},
+	"ReplicaCompletionCount": ubx.FieldSpec{WireName: "replica_completion_count"},
+}
 
 var OpenapiJob_Properties_Configuration_RegistriesFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"PasswordSecretRef": ubx.FieldSpec{WireName: "password_secret_ref"},
-		"Server": ubx.FieldSpec{WireName: "server"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Identity":          ubx.FieldSpec{WireName: "identity"},
+	"PasswordSecretRef": ubx.FieldSpec{WireName: "password_secret_ref"},
+	"Server":            ubx.FieldSpec{WireName: "server"},
+	"Username":          ubx.FieldSpec{WireName: "username"},
+}
 
 var OpenapiJob_Properties_Configuration_ScheduleTriggerConfigFields = ubx.FieldMap{
-		"CronExpression": ubx.FieldSpec{WireName: "cron_expression"},
-		"Parallelism": ubx.FieldSpec{WireName: "parallelism"},
-		"ReplicaCompletionCount": ubx.FieldSpec{WireName: "replica_completion_count"},
-	}
+	"CronExpression":         ubx.FieldSpec{WireName: "cron_expression"},
+	"Parallelism":            ubx.FieldSpec{WireName: "parallelism"},
+	"ReplicaCompletionCount": ubx.FieldSpec{WireName: "replica_completion_count"},
+}
 
 var OpenapiJob_Properties_Configuration_SecretsFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+	"Value":       ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiJob_Properties_ConfigurationFields = ubx.FieldMap{
-		"EventTriggerConfig": ubx.FieldSpec{
-			WireName: "event_trigger_config",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_Configuration_EventTriggerConfigFields,
-		},
-		"IdentitySettings": ubx.FieldSpec{
-			WireName: "identity_settings",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Configuration_IdentitySettingsFields,
-		},
-		"ManualTriggerConfig": ubx.FieldSpec{
-			WireName: "manual_trigger_config",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_Configuration_ManualTriggerConfigFields,
-		},
-		"Registries": ubx.FieldSpec{
-			WireName: "registries",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Configuration_RegistriesFields,
-		},
-		"ReplicaRetryLimit": ubx.FieldSpec{WireName: "replica_retry_limit"},
-		"ReplicaTimeout": ubx.FieldSpec{WireName: "replica_timeout"},
-		"ScheduleTriggerConfig": ubx.FieldSpec{
-			WireName: "schedule_trigger_config",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_Configuration_ScheduleTriggerConfigFields,
-		},
-		"Secrets": ubx.FieldSpec{
-			WireName: "secrets",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Configuration_SecretsFields,
-		},
-		"TriggerType": ubx.FieldSpec{WireName: "trigger_type"},
-	}
+	"EventTriggerConfig": ubx.FieldSpec{
+		WireName: "event_trigger_config",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_Configuration_EventTriggerConfigFields,
+	},
+	"IdentitySettings": ubx.FieldSpec{
+		WireName: "identity_settings",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Configuration_IdentitySettingsFields,
+	},
+	"ManualTriggerConfig": ubx.FieldSpec{
+		WireName: "manual_trigger_config",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_Configuration_ManualTriggerConfigFields,
+	},
+	"Registries": ubx.FieldSpec{
+		WireName: "registries",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Configuration_RegistriesFields,
+	},
+	"ReplicaRetryLimit": ubx.FieldSpec{WireName: "replica_retry_limit"},
+	"ReplicaTimeout":    ubx.FieldSpec{WireName: "replica_timeout"},
+	"ScheduleTriggerConfig": ubx.FieldSpec{
+		WireName: "schedule_trigger_config",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_Configuration_ScheduleTriggerConfigFields,
+	},
+	"Secrets": ubx.FieldSpec{
+		WireName: "secrets",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Configuration_SecretsFields,
+	},
+	"TriggerType": ubx.FieldSpec{WireName: "trigger_type"},
+}
 
 var OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeadersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiJob_Properties_Template_Containers_Probes_HttpGetFields = ubx.FieldMap{
-		"Host": ubx.FieldSpec{WireName: "host"},
-		"HttpHeaders": ubx.FieldSpec{
-			WireName: "http_headers",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeadersFields,
-		},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Scheme": ubx.FieldSpec{WireName: "scheme"},
-	}
+	"Host": ubx.FieldSpec{WireName: "host"},
+	"HttpHeaders": ubx.FieldSpec{
+		WireName: "http_headers",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeadersFields,
+	},
+	"Path":   ubx.FieldSpec{WireName: "path"},
+	"Port":   ubx.FieldSpec{WireName: "port"},
+	"Scheme": ubx.FieldSpec{WireName: "scheme"},
+}
 
 var OpenapiJob_Properties_Template_Containers_Probes_TcpSocketFields = ubx.FieldMap{
-		"Host": ubx.FieldSpec{WireName: "host"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-	}
+	"Host": ubx.FieldSpec{WireName: "host"},
+	"Port": ubx.FieldSpec{WireName: "port"},
+}
 
 var OpenapiJob_Properties_Template_Containers_ProbesFields = ubx.FieldMap{
-		"FailureThreshold": ubx.FieldSpec{WireName: "failure_threshold"},
-		"HttpGet": ubx.FieldSpec{
-			WireName: "http_get",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_Template_Containers_Probes_HttpGetFields,
-		},
-		"InitialDelaySeconds": ubx.FieldSpec{WireName: "initial_delay_seconds"},
-		"PeriodSeconds": ubx.FieldSpec{WireName: "period_seconds"},
-		"SuccessThreshold": ubx.FieldSpec{WireName: "success_threshold"},
-		"TcpSocket": ubx.FieldSpec{
-			WireName: "tcp_socket",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_Template_Containers_Probes_TcpSocketFields,
-		},
-		"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
-		"TimeoutSeconds": ubx.FieldSpec{WireName: "timeout_seconds"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"FailureThreshold": ubx.FieldSpec{WireName: "failure_threshold"},
+	"HttpGet": ubx.FieldSpec{
+		WireName: "http_get",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_Template_Containers_Probes_HttpGetFields,
+	},
+	"InitialDelaySeconds": ubx.FieldSpec{WireName: "initial_delay_seconds"},
+	"PeriodSeconds":       ubx.FieldSpec{WireName: "period_seconds"},
+	"SuccessThreshold":    ubx.FieldSpec{WireName: "success_threshold"},
+	"TcpSocket": ubx.FieldSpec{
+		WireName: "tcp_socket",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_Template_Containers_Probes_TcpSocketFields,
+	},
+	"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
+	"TimeoutSeconds":                ubx.FieldSpec{WireName: "timeout_seconds"},
+	"Type":                          ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiJob_Properties_Template_ContainersFields = ubx.FieldMap{
-		"Probes": ubx.FieldSpec{
-			WireName: "probes",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Template_Containers_ProbesFields,
-		},
-	}
+	"Probes": ubx.FieldSpec{
+		WireName: "probes",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Template_Containers_ProbesFields,
+	},
+}
 
 var OpenapiJob_Properties_Template_InitContainers_EnvFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiJob_Properties_Template_InitContainers_ResourcesFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"EphemeralStorage": ubx.FieldSpec{WireName: "ephemeral_storage"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":              ubx.FieldSpec{WireName: "cpu"},
+	"EphemeralStorage": ubx.FieldSpec{WireName: "ephemeral_storage"},
+	"Memory":           ubx.FieldSpec{WireName: "memory"},
+}
 
 var OpenapiJob_Properties_Template_InitContainers_VolumeMountsFields = ubx.FieldMap{
-		"MountPath": ubx.FieldSpec{WireName: "mount_path"},
-		"SubPath": ubx.FieldSpec{WireName: "sub_path"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
-	}
+	"MountPath":  ubx.FieldSpec{WireName: "mount_path"},
+	"SubPath":    ubx.FieldSpec{WireName: "sub_path"},
+	"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+}
 
 var OpenapiJob_Properties_Template_InitContainersFields = ubx.FieldMap{
-		"Args": ubx.FieldSpec{WireName: "args"},
-		"Command": ubx.FieldSpec{WireName: "command"},
-		"Env": ubx.FieldSpec{
-			WireName: "env",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Template_InitContainers_EnvFields,
-		},
-		"Image": ubx.FieldSpec{WireName: "image"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Resources": ubx.FieldSpec{
-			WireName: "resources",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_Template_InitContainers_ResourcesFields,
-		},
-		"VolumeMounts": ubx.FieldSpec{
-			WireName: "volume_mounts",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Template_InitContainers_VolumeMountsFields,
-		},
-	}
+	"Args":    ubx.FieldSpec{WireName: "args"},
+	"Command": ubx.FieldSpec{WireName: "command"},
+	"Env": ubx.FieldSpec{
+		WireName: "env",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Template_InitContainers_EnvFields,
+	},
+	"Image": ubx.FieldSpec{WireName: "image"},
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Resources": ubx.FieldSpec{
+		WireName: "resources",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_Template_InitContainers_ResourcesFields,
+	},
+	"VolumeMounts": ubx.FieldSpec{
+		WireName: "volume_mounts",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Template_InitContainers_VolumeMountsFields,
+	},
+}
 
 var OpenapiJob_Properties_Template_Volumes_SecretsFields = ubx.FieldMap{
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
-	}
+	"Path":      ubx.FieldSpec{WireName: "path"},
+	"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
+}
 
 var OpenapiJob_Properties_Template_VolumesFields = ubx.FieldMap{
-		"MountOptions": ubx.FieldSpec{WireName: "mount_options"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Secrets": ubx.FieldSpec{
-			WireName: "secrets",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Template_Volumes_SecretsFields,
-		},
-		"StorageName": ubx.FieldSpec{WireName: "storage_name"},
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-	}
+	"MountOptions": ubx.FieldSpec{WireName: "mount_options"},
+	"Name":         ubx.FieldSpec{WireName: "name"},
+	"Secrets": ubx.FieldSpec{
+		WireName: "secrets",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Template_Volumes_SecretsFields,
+	},
+	"StorageName": ubx.FieldSpec{WireName: "storage_name"},
+	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+}
 
 var OpenapiJob_Properties_TemplateFields = ubx.FieldMap{
-		"Containers": ubx.FieldSpec{
-			WireName: "containers",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Template_ContainersFields,
-		},
-		"InitContainers": ubx.FieldSpec{
-			WireName: "init_containers",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Template_InitContainersFields,
-		},
-		"Volumes": ubx.FieldSpec{
-			WireName: "volumes",
-			Kind: "list",
-			Fields: OpenapiJob_Properties_Template_VolumesFields,
-		},
-	}
+	"Containers": ubx.FieldSpec{
+		WireName: "containers",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Template_ContainersFields,
+	},
+	"InitContainers": ubx.FieldSpec{
+		WireName: "init_containers",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Template_InitContainersFields,
+	},
+	"Volumes": ubx.FieldSpec{
+		WireName: "volumes",
+		Kind:     "list",
+		Fields:   OpenapiJob_Properties_Template_VolumesFields,
+	},
+}
 
 var OpenapiJob_PropertiesFields = ubx.FieldMap{
-		"Configuration": ubx.FieldSpec{
-			WireName: "configuration",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_ConfigurationFields,
-		},
-		"EnvironmentId": ubx.FieldSpec{WireName: "environment_id"},
-		"EventStreamEndpoint": ubx.FieldSpec{WireName: "event_stream_endpoint"},
-		"OutboundIpAddresses": ubx.FieldSpec{WireName: "outbound_ip_addresses"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Template": ubx.FieldSpec{
-			WireName: "template",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_TemplateFields,
-		},
-		"WorkloadProfileName": ubx.FieldSpec{WireName: "workload_profile_name"},
-	}
+	"Configuration": ubx.FieldSpec{
+		WireName: "configuration",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_ConfigurationFields,
+	},
+	"EnvironmentId":       ubx.FieldSpec{WireName: "environment_id"},
+	"EventStreamEndpoint": ubx.FieldSpec{WireName: "event_stream_endpoint"},
+	"OutboundIpAddresses": ubx.FieldSpec{WireName: "outbound_ip_addresses"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"Template": ubx.FieldSpec{
+		WireName: "template",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_TemplateFields,
+	},
+	"WorkloadProfileName": ubx.FieldSpec{WireName: "workload_profile_name"},
+}
 
 type OpenapiJobConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -491,13 +491,13 @@ var OpenapiJob = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiJob_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiJob_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiJob_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiJob_PropertiesFields,
 		},
 	},
 }

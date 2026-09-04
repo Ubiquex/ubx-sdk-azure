@@ -15,11 +15,11 @@ type OpenapiDbSystem_Properties struct {
 }
 
 var OpenapiDbSystem_PropertiesFields = ubx.FieldMap{
-		"AdminPassword": ubx.FieldSpec{WireName: "admin_password"},
-		"DatabaseEdition": ubx.FieldSpec{WireName: "database_edition"},
-		"DbVersion": ubx.FieldSpec{WireName: "db_version"},
-		"PdbName": ubx.FieldSpec{WireName: "pdb_name"},
-	}
+	"AdminPassword":   ubx.FieldSpec{WireName: "admin_password"},
+	"DatabaseEdition": ubx.FieldSpec{WireName: "database_edition"},
+	"DbVersion":       ubx.FieldSpec{WireName: "db_version"},
+	"PdbName":         ubx.FieldSpec{WireName: "pdb_name"},
+}
 
 type OpenapiDbSystemConfig struct {
 	// DbSystem resource model.
@@ -40,8 +40,8 @@ var OpenapiDbSystem = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDbSystem_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDbSystem_PropertiesFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

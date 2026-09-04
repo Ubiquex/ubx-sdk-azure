@@ -4,40 +4,40 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRankingsResponseTablesItem_Tables_Data_Metrics struct {
-	Metric any
+	Metric     any
 	Percentage any
-	Value any
+	Value      any
 }
 
 type OpenapiRankingsResponseTablesItem_Tables_Data struct {
 	Metrics any
-	Name any
+	Name    any
 }
 
 type OpenapiRankingsResponseTablesItem_Tables struct {
-	Data any
+	Data    any
 	Ranking any
 }
 
 type OpenapiRankingsResponseTablesItemConfig struct {
 	CustomDomains any
 	DateTimeBegin any
-	DateTimeEnd any
-	MaxRanking any
-	Metrics any
-	ProfileName any
-	Rankings any
+	DateTimeEnd   any
+	MaxRanking    any
+	Metrics       any
+	ProfileName   any
+	Rankings      any
 }
 
 type OpenapiRankingsResponseTablesItemAttrs struct {
 	CustomDomains any
 	DateTimeBegin any
-	DateTimeEnd any
-	MaxRanking any
-	Metrics any
-	ProfileName any
-	Rankings any
-	Tables any
+	DateTimeEnd   any
+	MaxRanking    any
+	Metrics       any
+	ProfileName   any
+	Rankings      any
+	Tables        any
 }
 
 var OpenapiRankingsResponseTablesItem = ubx.DataSourceBinding{
@@ -45,10 +45,10 @@ var OpenapiRankingsResponseTablesItem = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"CustomDomains": ubx.FieldSpec{WireName: "custom_domains"},
 		"DateTimeBegin": ubx.FieldSpec{WireName: "date_time_begin"},
-		"DateTimeEnd": ubx.FieldSpec{WireName: "date_time_end"},
-		"MaxRanking": ubx.FieldSpec{WireName: "max_ranking"},
-		"Metrics": ubx.FieldSpec{WireName: "metrics"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-		"Rankings": ubx.FieldSpec{WireName: "rankings"},
+		"DateTimeEnd":   ubx.FieldSpec{WireName: "date_time_end"},
+		"MaxRanking":    ubx.FieldSpec{WireName: "max_ranking"},
+		"Metrics":       ubx.FieldSpec{WireName: "metrics"},
+		"ProfileName":   ubx.FieldSpec{WireName: "profile_name"},
+		"Rankings":      ubx.FieldSpec{WireName: "rankings"},
 	},
 }

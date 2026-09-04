@@ -4,7 +4,7 @@ package search
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Service_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -55,15 +55,15 @@ type Service_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint st
 
 type Service_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Service_Properties_PrivateEndpointConnections_Properties struct {
-	GroupId any
-	PrivateEndpoint any
+	GroupId                           any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Service_Properties_PrivateEndpointConnections struct {
@@ -71,12 +71,12 @@ type Service_Properties_PrivateEndpointConnections struct {
 }
 
 type Service_Properties_SharedPrivateLinkResources_Properties struct {
-	GroupId any
+	GroupId               any
 	PrivateLinkResourceId any
-	ProvisioningState any
-	RequestMessage any
-	ResourceRegion any
-	Status any
+	ProvisioningState     any
+	RequestMessage        any
+	ResourceRegion        any
+	Status                any
 }
 
 type Service_Properties_SharedPrivateLinkResources struct {
@@ -132,148 +132,148 @@ type Service_Sku struct {
 }
 
 var Service_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Service_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Service_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Service_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Service_Properties_AuthOptions_AadOrApiKeyFields = ubx.FieldMap{
-		"AadAuthFailureMode": ubx.FieldSpec{WireName: "aad_auth_failure_mode"},
-	}
+	"AadAuthFailureMode": ubx.FieldSpec{WireName: "aad_auth_failure_mode"},
+}
 
 var Service_Properties_AuthOptionsFields = ubx.FieldMap{
-		"AadOrApiKey": ubx.FieldSpec{
-			WireName: "aad_or_api_key",
-			Kind: "object",
-			Fields: Service_Properties_AuthOptions_AadOrApiKeyFields,
-		},
-		"ApiKeyOnly": ubx.FieldSpec{WireName: "api_key_only"},
-	}
+	"AadOrApiKey": ubx.FieldSpec{
+		WireName: "aad_or_api_key",
+		Kind:     "object",
+		Fields:   Service_Properties_AuthOptions_AadOrApiKeyFields,
+	},
+	"ApiKeyOnly": ubx.FieldSpec{WireName: "api_key_only"},
+}
 
 var Service_Properties_EncryptionWithCmkFields = ubx.FieldMap{
-		"EncryptionComplianceStatus": ubx.FieldSpec{WireName: "encryption_compliance_status"},
-		"Enforcement": ubx.FieldSpec{WireName: "enforcement"},
-	}
+	"EncryptionComplianceStatus": ubx.FieldSpec{WireName: "encryption_compliance_status"},
+	"Enforcement":                ubx.FieldSpec{WireName: "enforcement"},
+}
 
 var Service_Properties_NetworkRuleSet_IpRulesFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Service_Properties_NetworkRuleSetFields = ubx.FieldMap{
-		"Bypass": ubx.FieldSpec{WireName: "bypass"},
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: Service_Properties_NetworkRuleSet_IpRulesFields,
-		},
-	}
+	"Bypass": ubx.FieldSpec{WireName: "bypass"},
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   Service_Properties_NetworkRuleSet_IpRulesFields,
+	},
+}
 
 var Service_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Service_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var Service_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Service_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Service_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupId": ubx.FieldSpec{WireName: "group_id"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Service_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Service_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Service_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Service_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Service_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Service_Properties_SharedPrivateLinkResources_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-		"ResourceRegion": ubx.FieldSpec{WireName: "resource_region"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"GroupId":               ubx.FieldSpec{WireName: "group_id"},
+	"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestMessage":        ubx.FieldSpec{WireName: "request_message"},
+	"ResourceRegion":        ubx.FieldSpec{WireName: "resource_region"},
+	"Status":                ubx.FieldSpec{WireName: "status"},
+}
 
 var Service_Properties_SharedPrivateLinkResourcesFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Service_Properties_SharedPrivateLinkResources_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Service_Properties_SharedPrivateLinkResources_PropertiesFields,
+	},
+}
 
 var Service_PropertiesFields = ubx.FieldMap{
-		"AuthOptions": ubx.FieldSpec{
-			WireName: "auth_options",
-			Kind: "object",
-			Fields: Service_Properties_AuthOptionsFields,
-		},
-		"ComputeType": ubx.FieldSpec{WireName: "compute_type"},
-		"DataExfiltrationProtections": ubx.FieldSpec{WireName: "data_exfiltration_protections"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
-		"EncryptionWithCmk": ubx.FieldSpec{
-			WireName: "encryption_with_cmk",
-			Kind: "object",
-			Fields: Service_Properties_EncryptionWithCmkFields,
-		},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"HostingMode": ubx.FieldSpec{WireName: "hosting_mode"},
-		"NetworkRuleSet": ubx.FieldSpec{
-			WireName: "network_rule_set",
-			Kind: "object",
-			Fields: Service_Properties_NetworkRuleSetFields,
-		},
-		"PartitionCount": ubx.FieldSpec{WireName: "partition_count"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Service_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"ReplicaCount": ubx.FieldSpec{WireName: "replica_count"},
-		"SemanticSearch": ubx.FieldSpec{WireName: "semantic_search"},
-		"ServiceUpgradedAt": ubx.FieldSpec{WireName: "service_upgraded_at"},
-		"SharedPrivateLinkResources": ubx.FieldSpec{
-			WireName: "shared_private_link_resources",
-			Kind: "list",
-			Fields: Service_Properties_SharedPrivateLinkResourcesFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StatusDetails": ubx.FieldSpec{WireName: "status_details"},
-		"UpgradeAvailable": ubx.FieldSpec{WireName: "upgrade_available"},
-	}
+	"AuthOptions": ubx.FieldSpec{
+		WireName: "auth_options",
+		Kind:     "object",
+		Fields:   Service_Properties_AuthOptionsFields,
+	},
+	"ComputeType":                 ubx.FieldSpec{WireName: "compute_type"},
+	"DataExfiltrationProtections": ubx.FieldSpec{WireName: "data_exfiltration_protections"},
+	"DisableLocalAuth":            ubx.FieldSpec{WireName: "disable_local_auth"},
+	"ETag":                        ubx.FieldSpec{WireName: "e_tag"},
+	"EncryptionWithCmk": ubx.FieldSpec{
+		WireName: "encryption_with_cmk",
+		Kind:     "object",
+		Fields:   Service_Properties_EncryptionWithCmkFields,
+	},
+	"Endpoint":    ubx.FieldSpec{WireName: "endpoint"},
+	"HostingMode": ubx.FieldSpec{WireName: "hosting_mode"},
+	"NetworkRuleSet": ubx.FieldSpec{
+		WireName: "network_rule_set",
+		Kind:     "object",
+		Fields:   Service_Properties_NetworkRuleSetFields,
+	},
+	"PartitionCount": ubx.FieldSpec{WireName: "partition_count"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Service_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ReplicaCount":        ubx.FieldSpec{WireName: "replica_count"},
+	"SemanticSearch":      ubx.FieldSpec{WireName: "semantic_search"},
+	"ServiceUpgradedAt":   ubx.FieldSpec{WireName: "service_upgraded_at"},
+	"SharedPrivateLinkResources": ubx.FieldSpec{
+		WireName: "shared_private_link_resources",
+		Kind:     "list",
+		Fields:   Service_Properties_SharedPrivateLinkResourcesFields,
+	},
+	"Status":           ubx.FieldSpec{WireName: "status"},
+	"StatusDetails":    ubx.FieldSpec{WireName: "status_details"},
+	"UpgradeAvailable": ubx.FieldSpec{WireName: "upgrade_available"},
+}
 
 var Service_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type ServiceConfig struct {
 	// Details about the search service identity. A null value indicates that the search service has no identity assigned.
@@ -298,18 +298,18 @@ var Service = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Service_IdentityFields,
+			Kind:     "object",
+			Fields:   Service_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Service_PropertiesFields,
+			Kind:     "object",
+			Fields:   Service_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Service_SkuFields,
+			Kind:     "object",
+			Fields:   Service_SkuFields,
 		},
 	},
 }

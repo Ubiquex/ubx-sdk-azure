@@ -42,8 +42,6 @@ _ManageddatabasesensitivitylabelsSensitivityLabel2_PropertiesFields = {
 
 @dataclasses.dataclass
 class ManageddatabasesensitivitylabelsSensitivityLabel2Config:
-    # Resource that manages the sensitivity label.
-    managed_by: Any = None
     # Properties of a sensitivity label.
     properties: Any = None
 
@@ -57,7 +55,6 @@ class ManageddatabasesensitivitylabelsSensitivityLabel2Attrs:
 ManageddatabasesensitivitylabelsSensitivityLabel2 = ubx.ResourceBinding(
     wire_type="azure_sql_manageddatabasesensitivitylabels_sensitivity_label_2",
     fields={
-        "managed_by": ubx.FieldSpec(wire_name="managed_by"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

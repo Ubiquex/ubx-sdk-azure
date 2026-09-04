@@ -8,15 +8,21 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiCredential_Properties:
+    # Gets the creation time.
+    creation_time: Any = None
     # Gets or sets the description of the credential.
     description: Any = None
+    # Gets the last modified time.
+    last_modified_time: Any = None
     # Gets or sets the password of the credential.
     password: Any = None
     # Gets or sets the user name of the credential.
     user_name: Any = None
 
 _OpenapiCredential_PropertiesFields = {
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "description": ubx.FieldSpec(wire_name="description"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
     "password": ubx.FieldSpec(wire_name="password"),
     "user_name": ubx.FieldSpec(wire_name="user_name"),
 }

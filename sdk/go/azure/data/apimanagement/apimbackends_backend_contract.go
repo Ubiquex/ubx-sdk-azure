@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimbackendsBackendContract_Value_Properties struct {
 	Protocol any
-	Url any
+	Url      any
 }
 
 type ApimbackendsBackendContract_Value struct {
@@ -26,6 +26,5 @@ type ApimbackendsBackendContractAttrs struct {
 
 var ApimbackendsBackendContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimbackends_backend_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

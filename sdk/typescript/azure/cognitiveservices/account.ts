@@ -556,8 +556,6 @@ const Account_SkuFields: FieldMap = {
 };
 
 export interface AccountConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: Account_Identity | Computed<Account_Identity>;
   /** The kind (type) of cognitive service account. */
@@ -592,7 +590,6 @@ export interface AccountAttrs {
 export const Account: ResourceBinding<AccountConfig, AccountAttrs> = {
   wireType: "azure_cognitiveservices_account",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",

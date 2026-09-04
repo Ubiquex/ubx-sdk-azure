@@ -46,21 +46,37 @@ class OpenapiRunbook_Properties_Draft:
 
 @dataclasses.dataclass
 class OpenapiRunbook_Properties:
+    # Gets or sets the creation time.
+    creation_time: Any = None
     # Gets or sets the description of the runbook.
     description: Any = None
     draft: Any = None
+    # Gets or sets the job count of the runbook.
+    job_count: Any = None
+    # Gets or sets the last modified by.
+    last_modified_by: Any = None
+    # Gets or sets the last modified time.
+    last_modified_time: Any = None
     # Gets or sets the activity-level tracing options of the runbook.
     log_activity_trace: Any = None
     # Gets or sets progress log option.
     log_progress: Any = None
     # Gets or sets verbose log option.
     log_verbose: Any = None
+    # Gets or sets the runbook output types.
+    output_types: Any = None
+    # Gets or sets the runbook parameters.
+    parameters: Any = None
+    # Gets or sets the provisioning state of the runbook.
+    provisioning_state: Any = None
     # Definition of the content link.
     publish_content_link: Any = None
     # Gets or sets the type of the runbook.
     runbook_type: Any = None
     # Environment of the runbook.
     runtime_environment: Any = None
+    # Gets or sets the state of the runbook.
+    state: Any = None
 
 _OpenapiRunbook_Properties_Draft_DraftContentLink_ContentHashFields = {
     "algorithm": ubx.FieldSpec(wire_name="algorithm"),
@@ -102,15 +118,26 @@ _OpenapiRunbook_Properties_DraftFields = {
 }
 
 _OpenapiRunbook_PropertiesFields = {
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "description": ubx.FieldSpec(wire_name="description"),
     "draft": ubx.FieldSpec(
         wire_name="draft",
         kind="object",
         fields=_OpenapiRunbook_Properties_DraftFields,
     ),
+    "job_count": ubx.FieldSpec(wire_name="job_count"),
+    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
+    "last_modified_time": ubx.FieldSpec(wire_name="last_modified_time"),
     "log_activity_trace": ubx.FieldSpec(wire_name="log_activity_trace"),
     "log_progress": ubx.FieldSpec(wire_name="log_progress"),
     "log_verbose": ubx.FieldSpec(wire_name="log_verbose"),
+    "output_types": ubx.FieldSpec(wire_name="output_types"),
+    "parameters": ubx.FieldSpec(
+        wire_name="parameters",
+        kind="map",
+        fields=_OpenapiRunbook_Properties_Draft_ParametersFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "publish_content_link": ubx.FieldSpec(
         wire_name="publish_content_link",
         kind="object",
@@ -118,6 +145,7 @@ _OpenapiRunbook_PropertiesFields = {
     ),
     "runbook_type": ubx.FieldSpec(wire_name="runbook_type"),
     "runtime_environment": ubx.FieldSpec(wire_name="runtime_environment"),
+    "state": ubx.FieldSpec(wire_name="state"),
 }
 
 @dataclasses.dataclass

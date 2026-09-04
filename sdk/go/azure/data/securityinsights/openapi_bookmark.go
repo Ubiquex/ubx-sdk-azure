@@ -4,36 +4,36 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBookmark_Value_Properties_CreatedBy struct {
-	Email any
-	Name any
+	Email    any
+	Name     any
 	ObjectId any
 }
 
 type OpenapiBookmark_Value_Properties_IncidentInfo struct {
-	IncidentId any
+	IncidentId   any
 	RelationName any
-	Severity any
-	Title any
+	Severity     any
+	Title        any
 }
 
 type OpenapiBookmark_Value_Properties struct {
-	Created any
-	CreatedBy any
-	DisplayName any
-	EventTime any
-	IncidentInfo any
-	Labels any
-	Notes any
-	Query any
-	QueryEndTime any
-	QueryResult any
+	Created        any
+	CreatedBy      any
+	DisplayName    any
+	EventTime      any
+	IncidentInfo   any
+	Labels         any
+	Notes          any
+	Query          any
+	QueryEndTime   any
+	QueryResult    any
 	QueryStartTime any
-	Updated any
-	UpdatedBy any
+	Updated        any
+	UpdatedBy      any
 }
 
 type OpenapiBookmark_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -45,7 +45,7 @@ type OpenapiBookmarkAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The Bookmark items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

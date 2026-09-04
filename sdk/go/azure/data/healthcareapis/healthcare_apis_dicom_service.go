@@ -10,10 +10,10 @@ type HealthcareApisDicomService_Value_Properties_AuthenticationConfiguration str
 
 type HealthcareApisDicomService_Value_Properties_CorsConfiguration struct {
 	AllowCredentials any
-	Headers any
-	MaxAge any
-	Methods any
-	Origins any
+	Headers          any
+	MaxAge           any
+	Methods          any
+	Origins          any
 }
 
 type HealthcareApisDicomService_Value_Properties_Encryption_CustomerManagedKeyEncryption struct {
@@ -30,14 +30,14 @@ type HealthcareApisDicomService_Value_Properties_PrivateEndpointConnections_Prop
 
 type HealthcareApisDicomService_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type HealthcareApisDicomService_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type HealthcareApisDicomService_Value_Properties_PrivateEndpointConnections struct {
@@ -45,29 +45,29 @@ type HealthcareApisDicomService_Value_Properties_PrivateEndpointConnections stru
 }
 
 type HealthcareApisDicomService_Value_Properties_StorageConfiguration struct {
-	FileSystemName any
+	FileSystemName    any
 	StorageResourceId any
 }
 
 type HealthcareApisDicomService_Value_Properties struct {
 	AuthenticationConfiguration any
-	CorsConfiguration any
-	EnableDataPartitions any
-	Encryption any
-	EventState any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ServiceUrl any
-	StorageConfiguration any
+	CorsConfiguration           any
+	EnableDataPartitions        any
+	Encryption                  any
+	EventState                  any
+	PrivateEndpointConnections  any
+	ProvisioningState           any
+	PublicNetworkAccess         any
+	ServiceUrl                  any
+	StorageConfiguration        any
 }
 
 type HealthcareApisDicomService_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -78,15 +78,15 @@ type HealthcareApisDicomService_Value struct {
 
 type HealthcareApisDicomServiceConfig struct {
 	ResourceGroupName any
-	WorkspaceName any
+	WorkspaceName     any
 }
 
 type HealthcareApisDicomServiceAttrs struct {
 	// The link used to get the next page of Dicom Services.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
 	// The list of Dicom Services.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
@@ -94,6 +94,6 @@ var HealthcareApisDicomService = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_dicom_service",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"WorkspaceName":     ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

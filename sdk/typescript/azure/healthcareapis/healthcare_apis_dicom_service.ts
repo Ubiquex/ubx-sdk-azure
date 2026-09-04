@@ -191,20 +191,9 @@ const HealthcareApisDicomService_PropertiesFields: FieldMap = {
   },
 };
 
-const HealthcareApisDicomService_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface HealthcareApisDicomServiceConfig {
   /** Dicom Service properties. */
   properties?: HealthcareApisDicomService_Properties | Computed<HealthcareApisDicomService_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: HealthcareApisDicomService_SystemData | Computed<HealthcareApisDicomService_SystemData>;
 }
 
 export interface HealthcareApisDicomServiceAttrs {
@@ -221,11 +210,6 @@ export const HealthcareApisDicomService: ResourceBinding<HealthcareApisDicomServ
       wireName: "properties",
       kind: "object",
       fields: HealthcareApisDicomService_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: HealthcareApisDicomService_SystemDataFields,
     },
   },
 };

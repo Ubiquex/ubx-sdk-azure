@@ -4,13 +4,13 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimportalrevisionsPortalRevisionContract_Value_Properties struct {
-	CreatedDateTime any
-	Description any
-	IsCurrent any
+	CreatedDateTime   any
+	Description       any
+	IsCurrent         any
 	ProvisioningState any
-	Status any
-	StatusDetails any
-	UpdatedDateTime any
+	Status            any
+	StatusDetails     any
+	UpdatedDateTime   any
 }
 
 type ApimportalrevisionsPortalRevisionContract_Value struct {
@@ -29,6 +29,5 @@ type ApimportalrevisionsPortalRevisionContractAttrs struct {
 
 var ApimportalrevisionsPortalRevisionContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimportalrevisions_portal_revision_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

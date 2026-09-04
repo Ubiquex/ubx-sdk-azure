@@ -156,8 +156,6 @@ _ExpressrouteExpressRoutePort_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRoutePortConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Identity for the resource.
     identity: Any = None
     # Properties specific to ExpressRoutePort resources.
@@ -175,7 +173,6 @@ class ExpressrouteExpressRoutePortAttrs:
 ExpressrouteExpressRoutePort = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_port",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",

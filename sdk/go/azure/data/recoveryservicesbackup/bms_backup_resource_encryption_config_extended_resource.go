@@ -18,10 +18,10 @@ type BmsBackupResourceEncryptionConfigExtendedResourceAttrs struct {
 	// Optional ETag.
 	ETag any
 	// Represents an Azure geography region where supported resource providers live.
-	Location any
+	Location   any
 	Properties any
 	// Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 

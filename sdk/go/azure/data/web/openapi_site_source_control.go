@@ -60,7 +60,7 @@ type OpenapiSiteSourceControlAttrs struct {
 	Name any
 	// SiteSourceControl resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 }
 
 var OpenapiSiteSourceControl = ubx.DataSourceBinding{

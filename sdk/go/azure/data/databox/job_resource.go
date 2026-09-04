@@ -4,14 +4,14 @@ package databox
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type JobResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,16 +21,16 @@ type JobResource_Value_Properties_DeliveryInfo struct {
 
 type JobResource_Value_Properties_Details_ContactDetails_NotificationPreference struct {
 	SendNotification any
-	StageName any
+	StageName        any
 }
 
 type JobResource_Value_Properties_Details_ContactDetails struct {
-	ContactName any
-	EmailList any
-	Mobile any
+	ContactName            any
+	EmailList              any
+	Mobile                 any
 	NotificationPreference any
-	Phone any
-	PhoneExtension any
+	Phone                  any
+	PhoneExtension         any
 }
 
 type JobResource_Value_Properties_Details_CopyLogDetails struct {
@@ -39,11 +39,11 @@ type JobResource_Value_Properties_Details_CopyLogDetails struct {
 
 type JobResource_Value_Properties_Details_DataExportDetails_AccountDetails struct {
 	DataAccountType any
-	SharePassword any
+	SharePassword   any
 }
 
 type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_Include struct {
-	DataAccountType any
+	DataAccountType  any
 	TransferAllBlobs any
 	TransferAllFiles any
 }
@@ -53,15 +53,15 @@ type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguratio
 }
 
 type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetails struct {
-	FilePathList any
+	FilePathList   any
 	FilePrefixList any
-	FileShareList any
+	FileShareList  any
 }
 
 type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetails struct {
-	BlobPathList any
+	BlobPathList   any
 	BlobPrefixList any
-	ContainerList any
+	ContainerList  any
 }
 
 type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetails struct {
@@ -71,9 +71,9 @@ type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguratio
 
 type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include struct {
 	AzureFileFilterDetails any
-	BlobFilterDetails any
-	DataAccountType any
-	FilterFileDetails any
+	BlobFilterDetails      any
+	DataAccountType        any
+	FilterFileDetails      any
 }
 
 type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails struct {
@@ -81,55 +81,55 @@ type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguratio
 }
 
 type JobResource_Value_Properties_Details_DataExportDetails_TransferConfiguration struct {
-	TransferAllDetails any
+	TransferAllDetails        any
 	TransferConfigurationType any
-	TransferFilterDetails any
+	TransferFilterDetails     any
 }
 
 type JobResource_Value_Properties_Details_DataExportDetails struct {
-	AccountDetails any
-	LogCollectionLevel any
+	AccountDetails        any
+	LogCollectionLevel    any
 	TransferConfiguration any
 }
 
 type JobResource_Value_Properties_Details_DataImportDetails struct {
-	AccountDetails any
+	AccountDetails     any
 	LogCollectionLevel any
 }
 
 type JobResource_Value_Properties_Details_DatacenterAddress struct {
-	DataCenterAzureLocation any
-	DatacenterAddressType any
+	DataCenterAzureLocation            any
+	DatacenterAddressType              any
 	SupportedCarriersForReturnShipment any
 }
 
 type JobResource_Value_Properties_Details_DeliveryPackage struct {
 	CarrierName any
-	TrackingId any
+	TrackingId  any
 	TrackingUrl any
 }
 
 type JobResource_Value_Properties_Details_DeviceErasureDetails struct {
-	DeviceErasureStatus any
+	DeviceErasureStatus                   any
 	ErasureOrDestructionCertificateSasKey any
-	SecureErasureCertificateSasKey any
+	SecureErasureCertificateSasKey        any
 }
 
 type JobResource_Value_Properties_Details_JobStages_DelayInformation struct {
-	Description any
-	ErrorCode any
+	Description    any
+	ErrorCode      any
 	ResolutionTime any
-	StartTime any
-	Status any
+	StartTime      any
+	Status         any
 }
 
 type JobResource_Value_Properties_Details_JobStages struct {
 	DelayInformation any
-	DisplayName any
-	JobStageDetails any
-	StageName any
-	StageStatus any
-	StageTime any
+	DisplayName      any
+	JobStageDetails  any
+	StageName        any
+	StageStatus      any
+	StageTime        any
 }
 
 type JobResource_Value_Properties_Details_KeyEncryptionKey_IdentityProperties_UserAssigned struct {
@@ -137,90 +137,90 @@ type JobResource_Value_Properties_Details_KeyEncryptionKey_IdentityProperties_Us
 }
 
 type JobResource_Value_Properties_Details_KeyEncryptionKey_IdentityProperties struct {
-	Type any
+	Type         any
 	UserAssigned any
 }
 
 type JobResource_Value_Properties_Details_KeyEncryptionKey struct {
 	IdentityProperties any
-	KekType any
-	KekUrl any
+	KekType            any
+	KekUrl             any
 	KekVaultResourceId any
 }
 
 type JobResource_Value_Properties_Details_LastMitigationActionOnJob struct {
-	ActionDateTimeInUtc any
-	CustomerResolution any
+	ActionDateTimeInUtc   any
+	CustomerResolution    any
 	IsPerformedByCustomer any
 }
 
 type JobResource_Value_Properties_Details_Preferences_EncryptionPreferences struct {
-	DoubleEncryption any
+	DoubleEncryption   any
 	HardwareEncryption any
 }
 
 type JobResource_Value_Properties_Details_Preferences_ReverseTransportPreferences struct {
-	IsUpdated any
+	IsUpdated             any
 	PreferredShipmentType any
 }
 
 type JobResource_Value_Properties_Details_Preferences struct {
-	EncryptionPreferences any
-	PreferredDataCenterRegion any
-	ReverseTransportPreferences any
+	EncryptionPreferences               any
+	PreferredDataCenterRegion           any
+	ReverseTransportPreferences         any
 	StorageAccountAccessTierPreferences any
-	TransportPreferences any
+	TransportPreferences                any
 }
 
 type JobResource_Value_Properties_Details_ReverseShippingDetails_ContactDetails struct {
-	ContactName any
-	Mobile any
-	Phone any
+	ContactName    any
+	Mobile         any
+	Phone          any
 	PhoneExtension any
 }
 
 type JobResource_Value_Properties_Details_ReverseShippingDetails_ShippingAddress struct {
-	AddressType any
-	City any
-	CompanyName any
-	Country any
-	PostalCode any
-	SkipAddressValidation any
-	StateOrProvince any
-	StreetAddress1 any
-	StreetAddress2 any
-	StreetAddress3 any
+	AddressType             any
+	City                    any
+	CompanyName             any
+	Country                 any
+	PostalCode              any
+	SkipAddressValidation   any
+	StateOrProvince         any
+	StreetAddress1          any
+	StreetAddress2          any
+	StreetAddress3          any
 	TaxIdentificationNumber any
-	ZipExtendedCode any
+	ZipExtendedCode         any
 }
 
 type JobResource_Value_Properties_Details_ReverseShippingDetails struct {
-	ContactDetails any
-	IsUpdated any
+	ContactDetails  any
+	IsUpdated       any
 	ShippingAddress any
 }
 
 type JobResource_Value_Properties_Details struct {
-	Actions any
-	ChainOfCustodySasKey any
-	ContactDetails any
-	CopyLogDetails any
-	DataCenterCode any
-	DataExportDetails any
-	DataImportDetails any
-	DatacenterAddress any
-	DeliveryPackage any
-	DeviceErasureDetails any
+	Actions                     any
+	ChainOfCustodySasKey        any
+	ContactDetails              any
+	CopyLogDetails              any
+	DataCenterCode              any
+	DataExportDetails           any
+	DataImportDetails           any
+	DatacenterAddress           any
+	DeliveryPackage             any
+	DeviceErasureDetails        any
 	ExpectedDataSizeInTeraBytes any
-	JobDetailsType any
-	JobStages any
-	KeyEncryptionKey any
-	LastMitigationActionOnJob any
-	Preferences any
-	ReturnPackage any
-	ReverseShipmentLabelSasKey any
-	ReverseShippingDetails any
-	ShippingAddress any
+	JobDetailsType              any
+	JobStages                   any
+	KeyEncryptionKey            any
+	LastMitigationActionOnJob   any
+	Preferences                 any
+	ReturnPackage               any
+	ReverseShipmentLabelSasKey  any
+	ReverseShippingDetails      any
+	ShippingAddress             any
 }
 
 type JobResource_Value_Properties_Error_AdditionalInfo struct {
@@ -233,43 +233,43 @@ type JobResource_Value_Properties_Error_Details struct {
 
 type JobResource_Value_Properties_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type JobResource_Value_Properties struct {
-	AllDevicesLost any
-	CancellationReason any
-	DelayedStage any
-	DeliveryInfo any
-	DeliveryType any
-	Details any
-	Error any
-	IsCancellable any
-	IsCancellableWithoutFee any
-	IsDeletable any
-	IsPrepareToShipEnabled any
-	IsShippingAddressEditable any
-	ReverseShippingDetailsUpdate any
+	AllDevicesLost                   any
+	CancellationReason               any
+	DelayedStage                     any
+	DeliveryInfo                     any
+	DeliveryType                     any
+	Details                          any
+	Error                            any
+	IsCancellable                    any
+	IsCancellableWithoutFee          any
+	IsDeletable                      any
+	IsPrepareToShipEnabled           any
+	IsShippingAddressEditable        any
+	ReverseShippingDetailsUpdate     any
 	ReverseTransportPreferenceUpdate any
-	StartTime any
-	Status any
-	TransferType any
+	StartTime                        any
+	Status                           any
+	TransferType                     any
 }
 
 type JobResource_Value_Sku struct {
 	DisplayName any
-	Family any
-	Model any
-	Name any
+	Family      any
+	Model       any
+	Name        any
 }
 
 type JobResource_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type JobResourceConfig struct {
@@ -284,6 +284,5 @@ type JobResourceAttrs struct {
 
 var JobResource = ubx.DataSourceBinding{
 	WireType: "azure_databox_job_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

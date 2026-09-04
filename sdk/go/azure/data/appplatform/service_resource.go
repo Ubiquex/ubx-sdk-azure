@@ -4,8 +4,8 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceResource_Value_Properties_MarketplaceResource struct {
-	Plan any
-	Product any
+	Plan      any
+	Product   any
 	Publisher any
 }
 
@@ -19,22 +19,22 @@ type ServiceResource_Value_Properties_NetworkProfile_OutboundIps struct {
 
 type ServiceResource_Value_Properties_NetworkProfile_RequiredTraffics struct {
 	Direction any
-	Fqdns any
-	Ips any
-	Port any
-	Protocol any
+	Fqdns     any
+	Ips       any
+	Port      any
+	Protocol  any
 }
 
 type ServiceResource_Value_Properties_NetworkProfile struct {
-	AppNetworkResourceGroup any
-	AppSubnetId any
-	IngressConfig any
-	OutboundIps any
-	OutboundType any
-	RequiredTraffics any
-	ServiceCidr any
+	AppNetworkResourceGroup            any
+	AppSubnetId                        any
+	IngressConfig                      any
+	OutboundIps                        any
+	OutboundType                       any
+	RequiredTraffics                   any
+	ServiceCidr                        any
 	ServiceRuntimeNetworkResourceGroup any
-	ServiceRuntimeSubnetId any
+	ServiceRuntimeSubnetId             any
 }
 
 type ServiceResource_Value_Properties_VnetAddons struct {
@@ -43,37 +43,37 @@ type ServiceResource_Value_Properties_VnetAddons struct {
 }
 
 type ServiceResource_Value_Properties struct {
-	Fqdn any
+	Fqdn                any
 	MarketplaceResource any
-	NetworkProfile any
-	PowerState any
-	ProvisioningState any
-	ServiceId any
-	Version any
-	VnetAddons any
-	ZoneRedundant any
+	NetworkProfile      any
+	PowerState          any
+	ProvisioningState   any
+	ServiceId           any
+	Version             any
+	VnetAddons          any
+	ZoneRedundant       any
 }
 
 type ServiceResource_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type ServiceResource_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ServiceResourceConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ServiceResourceAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// Collection of Service resources
 	Value any
@@ -82,7 +82,7 @@ type ServiceResourceAttrs struct {
 var ServiceResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_service_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

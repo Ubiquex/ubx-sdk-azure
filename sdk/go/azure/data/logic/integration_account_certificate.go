@@ -4,22 +4,22 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationAccountCertificate_Value_Properties_Key_KeyVault struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type IntegrationAccountCertificate_Value_Properties_Key struct {
-	KeyName any
-	KeyVault any
+	KeyName    any
+	KeyVault   any
 	KeyVersion any
 }
 
 type IntegrationAccountCertificate_Value_Properties struct {
-	ChangedTime any
-	CreatedTime any
-	Key any
-	Metadata any
+	ChangedTime       any
+	CreatedTime       any
+	Key               any
+	Metadata          any
 	PublicCertificate any
 }
 
@@ -28,19 +28,19 @@ type IntegrationAccountCertificate_Value struct {
 }
 
 type IntegrationAccountCertificateConfig struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName      any
+	SubscriptionId         any
 }
 
 type IntegrationAccountCertificateAttrs struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The list of integration account certificates.
 	Value any
 }
@@ -48,9 +48,9 @@ type IntegrationAccountCertificateAttrs struct {
 var IntegrationAccountCertificate = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_account_certificate",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":             ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationAccountName": ubx.FieldSpec{WireName: "integration_account_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":      ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":         ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -15,15 +15,13 @@ type OpenapiTriggerResource_Properties struct {
 }
 
 var OpenapiTriggerResource_PropertiesFields = ubx.FieldMap{
-		"Annotations": ubx.FieldSpec{WireName: "annotations"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"RuntimeState": ubx.FieldSpec{WireName: "runtime_state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Annotations":  ubx.FieldSpec{WireName: "annotations"},
+	"Description":  ubx.FieldSpec{WireName: "description"},
+	"RuntimeState": ubx.FieldSpec{WireName: "runtime_state"},
+	"Type":         ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiTriggerResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Azure data factory nested object which contains information about creating pipeline run
 	Properties any
 }
@@ -38,11 +36,10 @@ type OpenapiTriggerResourceAttrs struct {
 var OpenapiTriggerResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_trigger_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiTriggerResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiTriggerResource_PropertiesFields,
 		},
 	},
 }

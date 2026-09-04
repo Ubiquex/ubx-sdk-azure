@@ -8,7 +8,7 @@ type ManagedNetworkSettingsPropertiesBasicResource_Value_Properties_ManagedNetwo
 }
 
 type ManagedNetworkSettingsPropertiesBasicResource_Value_Properties struct {
-	ManagedNetwork any
+	ManagedNetwork    any
 	ProvisioningState any
 }
 

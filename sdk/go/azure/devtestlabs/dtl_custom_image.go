@@ -13,7 +13,7 @@ type DtlCustomImage_Properties_CustomImagePlan struct {
 }
 
 type DtlCustomImage_Properties_DataDiskStorageInfo struct {
-	Lun any
+	Lun         any
 	StorageType any
 }
 
@@ -73,74 +73,74 @@ type DtlCustomImage_Properties struct {
 }
 
 var DtlCustomImage_Properties_CustomImagePlanFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Offer": ubx.FieldSpec{WireName: "offer"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-	}
+	"Id":        ubx.FieldSpec{WireName: "id"},
+	"Offer":     ubx.FieldSpec{WireName: "offer"},
+	"Publisher": ubx.FieldSpec{WireName: "publisher"},
+}
 
 var DtlCustomImage_Properties_DataDiskStorageInfoFields = ubx.FieldMap{
-		"Lun": ubx.FieldSpec{WireName: "lun"},
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-	}
+	"Lun":         ubx.FieldSpec{WireName: "lun"},
+	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+}
 
 var DtlCustomImage_Properties_VhdFields = ubx.FieldMap{
-		"ImageName": ubx.FieldSpec{WireName: "image_name"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"SysPrep": ubx.FieldSpec{WireName: "sys_prep"},
-	}
+	"ImageName": ubx.FieldSpec{WireName: "image_name"},
+	"OsType":    ubx.FieldSpec{WireName: "os_type"},
+	"SysPrep":   ubx.FieldSpec{WireName: "sys_prep"},
+}
 
 var DtlCustomImage_Properties_Vm_LinuxOsInfoFields = ubx.FieldMap{
-		"LinuxOsState": ubx.FieldSpec{WireName: "linux_os_state"},
-	}
+	"LinuxOsState": ubx.FieldSpec{WireName: "linux_os_state"},
+}
 
 var DtlCustomImage_Properties_Vm_WindowsOsInfoFields = ubx.FieldMap{
-		"WindowsOsState": ubx.FieldSpec{WireName: "windows_os_state"},
-	}
+	"WindowsOsState": ubx.FieldSpec{WireName: "windows_os_state"},
+}
 
 var DtlCustomImage_Properties_VmFields = ubx.FieldMap{
-		"LinuxOsInfo": ubx.FieldSpec{
-			WireName: "linux_os_info",
-			Kind: "object",
-			Fields: DtlCustomImage_Properties_Vm_LinuxOsInfoFields,
-		},
-		"SourceVmId": ubx.FieldSpec{WireName: "source_vm_id"},
-		"WindowsOsInfo": ubx.FieldSpec{
-			WireName: "windows_os_info",
-			Kind: "object",
-			Fields: DtlCustomImage_Properties_Vm_WindowsOsInfoFields,
-		},
-	}
+	"LinuxOsInfo": ubx.FieldSpec{
+		WireName: "linux_os_info",
+		Kind:     "object",
+		Fields:   DtlCustomImage_Properties_Vm_LinuxOsInfoFields,
+	},
+	"SourceVmId": ubx.FieldSpec{WireName: "source_vm_id"},
+	"WindowsOsInfo": ubx.FieldSpec{
+		WireName: "windows_os_info",
+		Kind:     "object",
+		Fields:   DtlCustomImage_Properties_Vm_WindowsOsInfoFields,
+	},
+}
 
 var DtlCustomImage_PropertiesFields = ubx.FieldMap{
-		"Author": ubx.FieldSpec{WireName: "author"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"CustomImagePlan": ubx.FieldSpec{
-			WireName: "custom_image_plan",
-			Kind: "object",
-			Fields: DtlCustomImage_Properties_CustomImagePlanFields,
-		},
-		"DataDiskStorageInfo": ubx.FieldSpec{
-			WireName: "data_disk_storage_info",
-			Kind: "list",
-			Fields: DtlCustomImage_Properties_DataDiskStorageInfoFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IsPlanAuthorized": ubx.FieldSpec{WireName: "is_plan_authorized"},
-		"ManagedImageId": ubx.FieldSpec{WireName: "managed_image_id"},
-		"ManagedSnapshotId": ubx.FieldSpec{WireName: "managed_snapshot_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"Vhd": ubx.FieldSpec{
-			WireName: "vhd",
-			Kind: "object",
-			Fields: DtlCustomImage_Properties_VhdFields,
-		},
-		"Vm": ubx.FieldSpec{
-			WireName: "vm",
-			Kind: "object",
-			Fields: DtlCustomImage_Properties_VmFields,
-		},
-	}
+	"Author":       ubx.FieldSpec{WireName: "author"},
+	"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
+	"CustomImagePlan": ubx.FieldSpec{
+		WireName: "custom_image_plan",
+		Kind:     "object",
+		Fields:   DtlCustomImage_Properties_CustomImagePlanFields,
+	},
+	"DataDiskStorageInfo": ubx.FieldSpec{
+		WireName: "data_disk_storage_info",
+		Kind:     "list",
+		Fields:   DtlCustomImage_Properties_DataDiskStorageInfoFields,
+	},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"IsPlanAuthorized":  ubx.FieldSpec{WireName: "is_plan_authorized"},
+	"ManagedImageId":    ubx.FieldSpec{WireName: "managed_image_id"},
+	"ManagedSnapshotId": ubx.FieldSpec{WireName: "managed_snapshot_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+	"Vhd": ubx.FieldSpec{
+		WireName: "vhd",
+		Kind:     "object",
+		Fields:   DtlCustomImage_Properties_VhdFields,
+	},
+	"Vm": ubx.FieldSpec{
+		WireName: "vm",
+		Kind:     "object",
+		Fields:   DtlCustomImage_Properties_VmFields,
+	},
+}
 
 type DtlCustomImageConfig struct {
 	// The geo-location where the resource lives
@@ -170,8 +170,8 @@ var DtlCustomImage = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlCustomImage_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlCustomImage_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

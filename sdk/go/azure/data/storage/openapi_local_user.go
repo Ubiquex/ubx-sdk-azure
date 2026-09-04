@@ -4,29 +4,29 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLocalUser_Value_Properties_PermissionScopes struct {
-	Permissions any
+	Permissions  any
 	ResourceName any
-	Service any
+	Service      any
 }
 
 type OpenapiLocalUser_Value_Properties_SshAuthorizedKeys struct {
 	Description any
-	Key any
+	Key         any
 }
 
 type OpenapiLocalUser_Value_Properties struct {
 	AllowAclAuthorization any
-	ExtendedGroups any
-	GroupId any
-	HasSharedKey any
-	HasSshKey any
-	HasSshPassword any
-	HomeDirectory any
-	IsNfsv3Enabled any
-	PermissionScopes any
-	Sid any
-	SshAuthorizedKeys any
-	UserId any
+	ExtendedGroups        any
+	GroupId               any
+	HasSharedKey          any
+	HasSshKey             any
+	HasSshPassword        any
+	HomeDirectory         any
+	IsNfsv3Enabled        any
+	PermissionScopes      any
+	Sid                   any
+	SshAuthorizedKeys     any
+	UserId                any
 }
 
 type OpenapiLocalUser_Value struct {

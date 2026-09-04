@@ -9,12 +9,10 @@ type CommitmentPlanAccountAssociation_Properties struct {
 }
 
 var CommitmentPlanAccountAssociation_PropertiesFields = ubx.FieldMap{
-		"AccountId": ubx.FieldSpec{WireName: "account_id"},
-	}
+	"AccountId": ubx.FieldSpec{WireName: "account_id"},
+}
 
 type CommitmentPlanAccountAssociationConfig struct {
-	// Resource Etag.
-	Etag any
 	// The commitment plan account association properties.
 	Properties any
 	// Resource tags.
@@ -33,11 +31,10 @@ type CommitmentPlanAccountAssociationAttrs struct {
 var CommitmentPlanAccountAssociation = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_commitment_plan_account_association",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CommitmentPlanAccountAssociation_PropertiesFields,
+			Kind:     "object",
+			Fields:   CommitmentPlanAccountAssociation_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

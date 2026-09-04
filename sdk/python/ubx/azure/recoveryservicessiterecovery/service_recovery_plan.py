@@ -7,6 +7,15 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ServiceRecoveryPlan_Properties_CurrentScenario:
+    # ARM Id of the job being executed.
+    job_id: Any = None
+    # Scenario name.
+    scenario_name: Any = None
+    # Start time of the workflow.
+    start_time: Any = None
+
+@dataclasses.dataclass
 class ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetails:
     instance_type: Any = None
 
@@ -31,16 +40,46 @@ class ServiceRecoveryPlan_Properties_Groups:
 
 @dataclasses.dataclass
 class ServiceRecoveryPlan_Properties:
+    # The list of allowed operations.
+    allowed_operations: Any = None
+    # Current scenario details of the protected entity.
+    current_scenario: Any = None
+    # The recovery plan status.
+    current_scenario_status: Any = None
+    # The recovery plan status description.
+    current_scenario_status_description: Any = None
     # The failover deployment model.
     failover_deployment_model: Any = None
+    # The friendly name.
+    friendly_name: Any = None
     # The recovery plan groups.
     groups: Any = None
+    # The start time of the last planned failover.
+    last_planned_failover_time: Any = None
+    # The start time of the last test failover.
+    last_test_failover_time: Any = None
+    # The start time of the last unplanned failover.
+    last_unplanned_failover_time: Any = None
+    # The primary fabric friendly name.
+    primary_fabric_friendly_name: Any = None
     # The primary fabric Id.
     primary_fabric_id: Any = None
+    # The provider id and provider specific details.
+    provider_specific_details: Any = None
     # The provider specific input.
     provider_specific_input: Any = None
+    # The recovery fabric friendly name.
+    recovery_fabric_friendly_name: Any = None
     # The recovery fabric Id.
     recovery_fabric_id: Any = None
+    # The list of replication providers.
+    replication_providers: Any = None
+
+_ServiceRecoveryPlan_Properties_CurrentScenarioFields = {
+    "job_id": ubx.FieldSpec(wire_name="job_id"),
+    "scenario_name": ubx.FieldSpec(wire_name="scenario_name"),
+    "start_time": ubx.FieldSpec(wire_name="start_time"),
+}
 
 _ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields = {
     "instance_type": ubx.FieldSpec(wire_name="instance_type"),
@@ -82,19 +121,39 @@ _ServiceRecoveryPlan_Properties_GroupsFields = {
 }
 
 _ServiceRecoveryPlan_PropertiesFields = {
+    "allowed_operations": ubx.FieldSpec(wire_name="allowed_operations"),
+    "current_scenario": ubx.FieldSpec(
+        wire_name="current_scenario",
+        kind="object",
+        fields=_ServiceRecoveryPlan_Properties_CurrentScenarioFields,
+    ),
+    "current_scenario_status": ubx.FieldSpec(wire_name="current_scenario_status"),
+    "current_scenario_status_description": ubx.FieldSpec(wire_name="current_scenario_status_description"),
     "failover_deployment_model": ubx.FieldSpec(wire_name="failover_deployment_model"),
+    "friendly_name": ubx.FieldSpec(wire_name="friendly_name"),
     "groups": ubx.FieldSpec(
         wire_name="groups",
         kind="list",
         fields=_ServiceRecoveryPlan_Properties_GroupsFields,
     ),
+    "last_planned_failover_time": ubx.FieldSpec(wire_name="last_planned_failover_time"),
+    "last_test_failover_time": ubx.FieldSpec(wire_name="last_test_failover_time"),
+    "last_unplanned_failover_time": ubx.FieldSpec(wire_name="last_unplanned_failover_time"),
+    "primary_fabric_friendly_name": ubx.FieldSpec(wire_name="primary_fabric_friendly_name"),
     "primary_fabric_id": ubx.FieldSpec(wire_name="primary_fabric_id"),
+    "provider_specific_details": ubx.FieldSpec(
+        wire_name="provider_specific_details",
+        kind="list",
+        fields=_ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields,
+    ),
     "provider_specific_input": ubx.FieldSpec(
         wire_name="provider_specific_input",
         kind="list",
         fields=_ServiceRecoveryPlan_Properties_Groups_EndGroupActions_CustomDetailsFields,
     ),
+    "recovery_fabric_friendly_name": ubx.FieldSpec(wire_name="recovery_fabric_friendly_name"),
     "recovery_fabric_id": ubx.FieldSpec(wire_name="recovery_fabric_id"),
+    "replication_providers": ubx.FieldSpec(wire_name="replication_providers"),
 }
 
 @dataclasses.dataclass

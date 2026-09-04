@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AnalysisServicesServer_Value_Properties_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type AnalysisServicesServer_Value_Properties struct {
 	ProvisioningState any
-	ServerFullName any
-	Sku any
-	State any
+	ServerFullName    any
+	Sku               any
+	State             any
 }
 
 type AnalysisServicesServer_Value struct {
@@ -21,12 +21,12 @@ type AnalysisServicesServer_Value struct {
 }
 
 type AnalysisServicesServerConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type AnalysisServicesServerAttrs struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 	// An array of Analysis Services resources.
 	Value any
@@ -35,7 +35,7 @@ type AnalysisServicesServerAttrs struct {
 var AnalysisServicesServer = ubx.DataSourceBinding{
 	WireType: "azure_analysisservices_analysis_services_server",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

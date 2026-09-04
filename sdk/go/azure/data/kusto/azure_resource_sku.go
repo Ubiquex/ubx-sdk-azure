@@ -4,22 +4,22 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AzureResourceSku_Value_Capacity struct {
-	Default any
-	Maximum any
-	Minimum any
+	Default   any
+	Maximum   any
+	Minimum   any
 	ScaleType any
 }
 
 type AzureResourceSku_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type AzureResourceSku_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type AzureResourceSkuConfig struct {

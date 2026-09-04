@@ -11,9 +11,9 @@ type OpenapiBillingSubscriptionAlias_Properties struct {
 }
 
 var OpenapiBillingSubscriptionAlias_PropertiesFields = ubx.FieldMap{
-		"BillingSubscriptionId": ubx.FieldSpec{WireName: "billing_subscription_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BillingSubscriptionId": ubx.FieldSpec{WireName: "billing_subscription_id"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiBillingSubscriptionAliasConfig struct {
 	// A billing subscription alias.
@@ -34,8 +34,8 @@ var OpenapiBillingSubscriptionAlias = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBillingSubscriptionAlias_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBillingSubscriptionAlias_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

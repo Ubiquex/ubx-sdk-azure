@@ -8,7 +8,7 @@ type OpenapiSecret_Value_Properties_Parameters struct {
 }
 
 type OpenapiSecret_Value_Properties struct {
-	Parameters any
+	Parameters  any
 	ProfileName any
 }
 
@@ -22,7 +22,7 @@ type OpenapiSecretConfig struct {
 
 type OpenapiSecretAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The Secret items on this page
 	Value any

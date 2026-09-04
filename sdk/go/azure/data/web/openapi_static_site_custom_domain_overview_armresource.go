@@ -4,15 +4,15 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteCustomDomainOverviewArmresource_Value_Properties struct {
-	CreatedOn any
-	DomainName any
-	ErrorMessage any
-	Status any
+	CreatedOn       any
+	DomainName      any
+	ErrorMessage    any
+	Status          any
 	ValidationToken any
 }
 
 type OpenapiStaticSiteCustomDomainOverviewArmresource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

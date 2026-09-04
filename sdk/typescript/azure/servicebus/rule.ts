@@ -83,8 +83,6 @@ const Rule_PropertiesFields: FieldMap = {
 };
 
 export interface RuleConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Description of Rule Resource. */
   properties?: Rule_Properties | Computed<Rule_Properties>;
 }
@@ -99,7 +97,6 @@ export interface RuleAttrs {
 export const Rule: ResourceBinding<RuleConfig, RuleAttrs> = {
   wireType: "azure_servicebus_rule",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

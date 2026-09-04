@@ -4,11 +4,11 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ImageVersion_Value_Properties struct {
-	ExcludeFromLatest any
-	Name any
+	ExcludeFromLatest   any
+	Name                any
 	OsDiskImageSizeInGb any
-	ProvisioningState any
-	PublishedDate any
+	ProvisioningState   any
+	PublishedDate       any
 }
 
 type ImageVersion_Value struct {
@@ -17,14 +17,14 @@ type ImageVersion_Value struct {
 
 type ImageVersionConfig struct {
 	DevCenterName any
-	GalleryName any
-	ImageName any
+	GalleryName   any
+	ImageName     any
 }
 
 type ImageVersionAttrs struct {
 	DevCenterName any
-	GalleryName any
-	ImageName any
+	GalleryName   any
+	ImageName     any
 	// URL to get the next set of results if there are any.
 	NextLink any
 	// Current page of results.
@@ -35,7 +35,7 @@ var ImageVersion = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image_version",
 	Fields: ubx.FieldMap{
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
-		"GalleryName": ubx.FieldSpec{WireName: "gallery_name"},
-		"ImageName": ubx.FieldSpec{WireName: "image_name"},
+		"GalleryName":   ubx.FieldSpec{WireName: "gallery_name"},
+		"ImageName":     ubx.FieldSpec{WireName: "image_name"},
 	},
 }

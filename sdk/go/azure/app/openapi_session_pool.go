@@ -4,7 +4,7 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSessionPool_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,22 +20,22 @@ type OpenapiSessionPool_Identity struct {
 }
 
 type OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Env struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_Resources struct {
-	Cpu any
+	Cpu    any
 	Memory any
 }
 
 type OpenapiSessionPool_Properties_CustomContainerTemplate_Containers struct {
-	Args any
-	Command any
-	Env any
-	Image any
-	Name any
+	Args      any
+	Command   any
+	Env       any
+	Image     any
+	Name      any
 	Resources any
 }
 
@@ -79,7 +79,7 @@ type OpenapiSessionPool_Properties_DynamicPoolConfiguration struct {
 }
 
 type OpenapiSessionPool_Properties_ManagedIdentitySettings struct {
-	Identity any
+	Identity  any
 	Lifecycle any
 }
 
@@ -91,7 +91,7 @@ type OpenapiSessionPool_Properties_ScaleConfiguration struct {
 }
 
 type OpenapiSessionPool_Properties_Secrets struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -128,149 +128,149 @@ type OpenapiSessionPool_Properties struct {
 }
 
 var OpenapiSessionPool_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiSessionPool_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiSessionPool_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiSessionPool_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_EnvFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_ResourcesFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":    ubx.FieldSpec{WireName: "cpu"},
+	"Memory": ubx.FieldSpec{WireName: "memory"},
+}
 
 var OpenapiSessionPool_Properties_CustomContainerTemplate_ContainersFields = ubx.FieldMap{
-		"Args": ubx.FieldSpec{WireName: "args"},
-		"Command": ubx.FieldSpec{WireName: "command"},
-		"Env": ubx.FieldSpec{
-			WireName: "env",
-			Kind: "list",
-			Fields: OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_EnvFields,
-		},
-		"Image": ubx.FieldSpec{WireName: "image"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Resources": ubx.FieldSpec{
-			WireName: "resources",
-			Kind: "object",
-			Fields: OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_ResourcesFields,
-		},
-	}
+	"Args":    ubx.FieldSpec{WireName: "args"},
+	"Command": ubx.FieldSpec{WireName: "command"},
+	"Env": ubx.FieldSpec{
+		WireName: "env",
+		Kind:     "list",
+		Fields:   OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_EnvFields,
+	},
+	"Image": ubx.FieldSpec{WireName: "image"},
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Resources": ubx.FieldSpec{
+		WireName: "resources",
+		Kind:     "object",
+		Fields:   OpenapiSessionPool_Properties_CustomContainerTemplate_Containers_ResourcesFields,
+	},
+}
 
 var OpenapiSessionPool_Properties_CustomContainerTemplate_IngressFields = ubx.FieldMap{
-		"TargetPort": ubx.FieldSpec{WireName: "target_port"},
-	}
+	"TargetPort": ubx.FieldSpec{WireName: "target_port"},
+}
 
 var OpenapiSessionPool_Properties_CustomContainerTemplate_RegistryCredentialsFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"PasswordSecretRef": ubx.FieldSpec{WireName: "password_secret_ref"},
-		"Server": ubx.FieldSpec{WireName: "server"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Identity":          ubx.FieldSpec{WireName: "identity"},
+	"PasswordSecretRef": ubx.FieldSpec{WireName: "password_secret_ref"},
+	"Server":            ubx.FieldSpec{WireName: "server"},
+	"Username":          ubx.FieldSpec{WireName: "username"},
+}
 
 var OpenapiSessionPool_Properties_CustomContainerTemplateFields = ubx.FieldMap{
-		"Containers": ubx.FieldSpec{
-			WireName: "containers",
-			Kind: "list",
-			Fields: OpenapiSessionPool_Properties_CustomContainerTemplate_ContainersFields,
-		},
-		"Ingress": ubx.FieldSpec{
-			WireName: "ingress",
-			Kind: "object",
-			Fields: OpenapiSessionPool_Properties_CustomContainerTemplate_IngressFields,
-		},
-		"RegistryCredentials": ubx.FieldSpec{
-			WireName: "registry_credentials",
-			Kind: "object",
-			Fields: OpenapiSessionPool_Properties_CustomContainerTemplate_RegistryCredentialsFields,
-		},
-	}
+	"Containers": ubx.FieldSpec{
+		WireName: "containers",
+		Kind:     "list",
+		Fields:   OpenapiSessionPool_Properties_CustomContainerTemplate_ContainersFields,
+	},
+	"Ingress": ubx.FieldSpec{
+		WireName: "ingress",
+		Kind:     "object",
+		Fields:   OpenapiSessionPool_Properties_CustomContainerTemplate_IngressFields,
+	},
+	"RegistryCredentials": ubx.FieldSpec{
+		WireName: "registry_credentials",
+		Kind:     "object",
+		Fields:   OpenapiSessionPool_Properties_CustomContainerTemplate_RegistryCredentialsFields,
+	},
+}
 
 var OpenapiSessionPool_Properties_DynamicPoolConfiguration_LifecycleConfigurationFields = ubx.FieldMap{
-		"CooldownPeriodInSeconds": ubx.FieldSpec{WireName: "cooldown_period_in_seconds"},
-		"LifecycleType": ubx.FieldSpec{WireName: "lifecycle_type"},
-		"MaxAlivePeriodInSeconds": ubx.FieldSpec{WireName: "max_alive_period_in_seconds"},
-	}
+	"CooldownPeriodInSeconds": ubx.FieldSpec{WireName: "cooldown_period_in_seconds"},
+	"LifecycleType":           ubx.FieldSpec{WireName: "lifecycle_type"},
+	"MaxAlivePeriodInSeconds": ubx.FieldSpec{WireName: "max_alive_period_in_seconds"},
+}
 
 var OpenapiSessionPool_Properties_DynamicPoolConfigurationFields = ubx.FieldMap{
-		"LifecycleConfiguration": ubx.FieldSpec{
-			WireName: "lifecycle_configuration",
-			Kind: "object",
-			Fields: OpenapiSessionPool_Properties_DynamicPoolConfiguration_LifecycleConfigurationFields,
-		},
-	}
+	"LifecycleConfiguration": ubx.FieldSpec{
+		WireName: "lifecycle_configuration",
+		Kind:     "object",
+		Fields:   OpenapiSessionPool_Properties_DynamicPoolConfiguration_LifecycleConfigurationFields,
+	},
+}
 
 var OpenapiSessionPool_Properties_ManagedIdentitySettingsFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"Lifecycle": ubx.FieldSpec{WireName: "lifecycle"},
-	}
+	"Identity":  ubx.FieldSpec{WireName: "identity"},
+	"Lifecycle": ubx.FieldSpec{WireName: "lifecycle"},
+}
 
 var OpenapiSessionPool_Properties_ScaleConfigurationFields = ubx.FieldMap{
-		"MaxConcurrentSessions": ubx.FieldSpec{WireName: "max_concurrent_sessions"},
-		"ReadySessionInstances": ubx.FieldSpec{WireName: "ready_session_instances"},
-	}
+	"MaxConcurrentSessions": ubx.FieldSpec{WireName: "max_concurrent_sessions"},
+	"ReadySessionInstances": ubx.FieldSpec{WireName: "ready_session_instances"},
+}
 
 var OpenapiSessionPool_Properties_SecretsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiSessionPool_Properties_SessionNetworkConfigurationFields = ubx.FieldMap{
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiSessionPool_PropertiesFields = ubx.FieldMap{
-		"ContainerType": ubx.FieldSpec{WireName: "container_type"},
-		"CustomContainerTemplate": ubx.FieldSpec{
-			WireName: "custom_container_template",
-			Kind: "object",
-			Fields: OpenapiSessionPool_Properties_CustomContainerTemplateFields,
-		},
-		"DynamicPoolConfiguration": ubx.FieldSpec{
-			WireName: "dynamic_pool_configuration",
-			Kind: "object",
-			Fields: OpenapiSessionPool_Properties_DynamicPoolConfigurationFields,
-		},
-		"EnvironmentId": ubx.FieldSpec{WireName: "environment_id"},
-		"ManagedIdentitySettings": ubx.FieldSpec{
-			WireName: "managed_identity_settings",
-			Kind: "list",
-			Fields: OpenapiSessionPool_Properties_ManagedIdentitySettingsFields,
-		},
-		"NodeCount": ubx.FieldSpec{WireName: "node_count"},
-		"PoolManagementEndpoint": ubx.FieldSpec{WireName: "pool_management_endpoint"},
-		"PoolManagementType": ubx.FieldSpec{WireName: "pool_management_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ScaleConfiguration": ubx.FieldSpec{
-			WireName: "scale_configuration",
-			Kind: "object",
-			Fields: OpenapiSessionPool_Properties_ScaleConfigurationFields,
-		},
-		"Secrets": ubx.FieldSpec{
-			WireName: "secrets",
-			Kind: "list",
-			Fields: OpenapiSessionPool_Properties_SecretsFields,
-		},
-		"SessionNetworkConfiguration": ubx.FieldSpec{
-			WireName: "session_network_configuration",
-			Kind: "object",
-			Fields: OpenapiSessionPool_Properties_SessionNetworkConfigurationFields,
-		},
-	}
+	"ContainerType": ubx.FieldSpec{WireName: "container_type"},
+	"CustomContainerTemplate": ubx.FieldSpec{
+		WireName: "custom_container_template",
+		Kind:     "object",
+		Fields:   OpenapiSessionPool_Properties_CustomContainerTemplateFields,
+	},
+	"DynamicPoolConfiguration": ubx.FieldSpec{
+		WireName: "dynamic_pool_configuration",
+		Kind:     "object",
+		Fields:   OpenapiSessionPool_Properties_DynamicPoolConfigurationFields,
+	},
+	"EnvironmentId": ubx.FieldSpec{WireName: "environment_id"},
+	"ManagedIdentitySettings": ubx.FieldSpec{
+		WireName: "managed_identity_settings",
+		Kind:     "list",
+		Fields:   OpenapiSessionPool_Properties_ManagedIdentitySettingsFields,
+	},
+	"NodeCount":              ubx.FieldSpec{WireName: "node_count"},
+	"PoolManagementEndpoint": ubx.FieldSpec{WireName: "pool_management_endpoint"},
+	"PoolManagementType":     ubx.FieldSpec{WireName: "pool_management_type"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"ScaleConfiguration": ubx.FieldSpec{
+		WireName: "scale_configuration",
+		Kind:     "object",
+		Fields:   OpenapiSessionPool_Properties_ScaleConfigurationFields,
+	},
+	"Secrets": ubx.FieldSpec{
+		WireName: "secrets",
+		Kind:     "list",
+		Fields:   OpenapiSessionPool_Properties_SecretsFields,
+	},
+	"SessionNetworkConfiguration": ubx.FieldSpec{
+		WireName: "session_network_configuration",
+		Kind:     "object",
+		Fields:   OpenapiSessionPool_Properties_SessionNetworkConfigurationFields,
+	},
+}
 
 type OpenapiSessionPoolConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -291,13 +291,13 @@ var OpenapiSessionPool = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiSessionPool_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiSessionPool_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSessionPool_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSessionPool_PropertiesFields,
 		},
 	},
 }

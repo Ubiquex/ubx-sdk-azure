@@ -7,22 +7,22 @@ type Account_Properties_AccountStatus_ErrorDetails_Details_Details struct {
 }
 
 type Account_Properties_AccountStatus_ErrorDetails_Details struct {
-	Code any
+	Code    any
 	Details any
 	Message any
-	Target any
+	Target  any
 }
 
 type Account_Properties_AccountStatus_ErrorDetails struct {
-	Code any
+	Code    any
 	Details any
 	Message any
-	Target any
+	Target  any
 }
 
 type Account_Properties_AccountStatus struct {
 	AccountProvisioningState any
-	ErrorDetails any
+	ErrorDetails             any
 }
 
 type Account_Properties_CloudConnectors struct {
@@ -31,15 +31,15 @@ type Account_Properties_CloudConnectors struct {
 }
 
 type Account_Properties_Endpoints struct {
-	Catalog any
+	Catalog  any
 	Guardian any
-	Scan any
+	Scan     any
 }
 
 type Account_Properties_ManagedResources struct {
 	EventHubNamespace any
-	ResourceGroup any
-	StorageAccount any
+	ResourceGroup     any
+	StorageAccount    any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -48,14 +48,14 @@ type Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint st
 
 type Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Account_Properties_PrivateEndpointConnections struct {
@@ -95,138 +95,130 @@ type Account_Properties struct {
 
 type Account_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
-var Account_Properties_AccountStatus_ErrorDetails_Details_DetailsFields = ubx.FieldMap{
-	}
+var Account_Properties_AccountStatus_ErrorDetails_Details_DetailsFields = ubx.FieldMap{}
 
 var Account_Properties_AccountStatus_ErrorDetails_DetailsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: Account_Properties_AccountStatus_ErrorDetails_Details_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   Account_Properties_AccountStatus_ErrorDetails_Details_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var Account_Properties_AccountStatus_ErrorDetailsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: Account_Properties_AccountStatus_ErrorDetails_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   Account_Properties_AccountStatus_ErrorDetails_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var Account_Properties_AccountStatusFields = ubx.FieldMap{
-		"AccountProvisioningState": ubx.FieldSpec{WireName: "account_provisioning_state"},
-		"ErrorDetails": ubx.FieldSpec{
-			WireName: "error_details",
-			Kind: "object",
-			Fields: Account_Properties_AccountStatus_ErrorDetailsFields,
-		},
-	}
+	"AccountProvisioningState": ubx.FieldSpec{WireName: "account_provisioning_state"},
+	"ErrorDetails": ubx.FieldSpec{
+		WireName: "error_details",
+		Kind:     "object",
+		Fields:   Account_Properties_AccountStatus_ErrorDetailsFields,
+	},
+}
 
 var Account_Properties_CloudConnectorsFields = ubx.FieldMap{
-		"AwsExternalId": ubx.FieldSpec{WireName: "aws_external_id"},
-	}
+	"AwsExternalId": ubx.FieldSpec{WireName: "aws_external_id"},
+}
 
 var Account_Properties_EndpointsFields = ubx.FieldMap{
-		"Catalog": ubx.FieldSpec{WireName: "catalog"},
-		"Guardian": ubx.FieldSpec{WireName: "guardian"},
-		"Scan": ubx.FieldSpec{WireName: "scan"},
-	}
+	"Catalog":  ubx.FieldSpec{WireName: "catalog"},
+	"Guardian": ubx.FieldSpec{WireName: "guardian"},
+	"Scan":     ubx.FieldSpec{WireName: "scan"},
+}
 
 var Account_Properties_ManagedResourcesFields = ubx.FieldMap{
-		"EventHubNamespace": ubx.FieldSpec{WireName: "event_hub_namespace"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"StorageAccount": ubx.FieldSpec{WireName: "storage_account"},
-	}
+	"EventHubNamespace": ubx.FieldSpec{WireName: "event_hub_namespace"},
+	"ResourceGroup":     ubx.FieldSpec{WireName: "resource_group"},
+	"StorageAccount":    ubx.FieldSpec{WireName: "storage_account"},
+}
 
 var Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var Account_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Account_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Account_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Account_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Account_PropertiesFields = ubx.FieldMap{
-		"AccountStatus": ubx.FieldSpec{
-			WireName: "account_status",
-			Kind: "object",
-			Fields: Account_Properties_AccountStatusFields,
-		},
-		"CloudConnectors": ubx.FieldSpec{
-			WireName: "cloud_connectors",
-			Kind: "object",
-			Fields: Account_Properties_CloudConnectorsFields,
-		},
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByObjectId": ubx.FieldSpec{WireName: "created_by_object_id"},
-		"Endpoints": ubx.FieldSpec{
-			WireName: "endpoints",
-			Kind: "object",
-			Fields: Account_Properties_EndpointsFields,
-		},
-		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-		"ManagedEventHubState": ubx.FieldSpec{WireName: "managed_event_hub_state"},
-		"ManagedResourceGroupName": ubx.FieldSpec{WireName: "managed_resource_group_name"},
-		"ManagedResources": ubx.FieldSpec{
-			WireName: "managed_resources",
-			Kind: "object",
-			Fields: Account_Properties_ManagedResourcesFields,
-		},
-		"ManagedResourcesPublicNetworkAccess": ubx.FieldSpec{WireName: "managed_resources_public_network_access"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Account_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	}
-
-var Account_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AccountStatus": ubx.FieldSpec{
+		WireName: "account_status",
+		Kind:     "object",
+		Fields:   Account_Properties_AccountStatusFields,
+	},
+	"CloudConnectors": ubx.FieldSpec{
+		WireName: "cloud_connectors",
+		Kind:     "object",
+		Fields:   Account_Properties_CloudConnectorsFields,
+	},
+	"CreatedAt":         ubx.FieldSpec{WireName: "created_at"},
+	"CreatedBy":         ubx.FieldSpec{WireName: "created_by"},
+	"CreatedByObjectId": ubx.FieldSpec{WireName: "created_by_object_id"},
+	"Endpoints": ubx.FieldSpec{
+		WireName: "endpoints",
+		Kind:     "object",
+		Fields:   Account_Properties_EndpointsFields,
+	},
+	"FriendlyName":             ubx.FieldSpec{WireName: "friendly_name"},
+	"ManagedEventHubState":     ubx.FieldSpec{WireName: "managed_event_hub_state"},
+	"ManagedResourceGroupName": ubx.FieldSpec{WireName: "managed_resource_group_name"},
+	"ManagedResources": ubx.FieldSpec{
+		WireName: "managed_resources",
+		Kind:     "object",
+		Fields:   Account_Properties_ManagedResourcesFields,
+	},
+	"ManagedResourcesPublicNetworkAccess": ubx.FieldSpec{WireName: "managed_resources_public_network_access"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Account_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+}
 
 type AccountConfig struct {
 	// The account properties
 	Properties any
-	// Gets or sets the Sku.
-	Sku any
 }
 
 type AccountAttrs struct {
@@ -241,13 +233,8 @@ var Account = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Account_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: Account_SkuFields,
+			Kind:     "object",
+			Fields:   Account_PropertiesFields,
 		},
 	},
 }

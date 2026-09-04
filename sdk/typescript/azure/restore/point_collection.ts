@@ -2,207 +2,143 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface PointCollection_Properties_RestorePoints_Properties_ExcludeDisks {
-  /** The fully qualified resource ID of the managed disk to exclude from the restore point. (AI-inferred) */
   id?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status {
-  /** The status code indicating the current replication state of the disk restore point, such as 'Succeeded' or 'Failed'. (AI-inferred) */
   code?: string | Computed<string>;
-  /** The display status of the replication process for the disk restore point. (AI-inferred) */
   displayStatus?: string | Computed<string>;
-  /** The severity level of the replication status. Possible values are: Info, Warning, Error. (AI-inferred) */
   level?: string | Computed<string>;
-  /** A human-readable message providing additional details about the replication status of the disk restore point. (AI-inferred) */
   message?: string | Computed<string>;
-  /** The timestamp when the replication status was last updated, formatted as an ISO 8601 string. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus {
-  /** The completion percentage of replication for the disk restore point. (AI-inferred) */
   completionPercent?: number | Computed<number>;
   status?: PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status | Computed<PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints {
   id?: string | Computed<string>;
-  /** The replication status of the disk restore point, providing information such as completion percentage and current replication state. (AI-inferred) */
   replicationStatus?: PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus | Computed<PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus>;
-  /** The state of access to the snapshot for the disk restore point. Possible values include Unknown, Pending, Available, InstantAccess, and AvailableWithInstantAccess, indicating the current snapshot availability and support for instant access. (AI-inferred) */
   snapshotAccessState?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_InstanceView {
   diskRestorePoints?: PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints[] | Computed<PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints[]>;
-  /** The list of statuses for the restore point instance view, providing details such as provisioning state and error information. (AI-inferred) */
   statuses?: PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status[] | Computed<PointCollection_Properties_RestorePoints_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status[]>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_DiagnosticsProfile_BootDiagnostics {
-  /** Indicates whether boot diagnostics is enabled for the virtual machine. When true, boot diagnostics captures console output and screenshots to help diagnose startup issues. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
-  /** The URI of the storage account where boot diagnostics logs are stored. (AI-inferred) */
   storageUri?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_DiagnosticsProfile {
-  /** Configuration for boot diagnostics of the source virtual machine, which captures serial console output and screenshots to aid in troubleshooting boot failures. (AI-inferred) */
   bootDiagnostics?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_DiagnosticsProfile_BootDiagnostics | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_DiagnosticsProfile_BootDiagnostics>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_HardwareProfile_VmSizeProperties {
-  /** The number of virtual CPUs available for the virtual machine size. (AI-inferred) */
   vCpusAvailable?: number | Computed<number>;
-  /** The number of virtual CPUs per core for the source VM, used to configure hyper-threading (typically 1 or 2). (AI-inferred) */
   vCpusPerCore?: number | Computed<number>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_HardwareProfile {
-  /** The processor mode of the source virtual machine. 'Deterministic' ensures consistent CPU performance, while 'Opportunistic' allows the CPU to boost to higher frequencies when available, potentially leading to variable performance. (AI-inferred) */
   processorMode?: string | Computed<string>;
-  /** The Azure VM size of the source virtual machine, selected from the allowed size names (e.g., Basic_A0, Standard_D2s_v3). The size determines the compute, memory, and performance capabilities of the VM. (AI-inferred) */
   vmSize?: string | Computed<string>;
   vmSizeProperties?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_HardwareProfile_VmSizeProperties | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_HardwareProfile_VmSizeProperties>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettings {
-  /** Specifies whether to bypass the platform safety checks when a user schedules a patch operation. When set to true, the safety checks are skipped; when false, they are enforced. (AI-inferred) */
   bypassPlatformSafetyChecksOnUserSchedule?: boolean | Computed<boolean>;
-  /** Specifies the reboot setting for automatic by platform patching. Allowed values: Unknown, IfRequired, Never, Always. This controls whether and when the VM reboots after patch installation. (AI-inferred) */
   rebootSetting?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings {
-  /** Specifies the patch assessment mode for the Linux VM. 'ImageDefault' uses the default patch assessment provided by the OS image, while 'AutomaticByPlatform' enables automatic patch assessment by the Azure platform. (AI-inferred) */
   assessmentMode?: string | Computed<string>;
-  /** Settings for automatic patching by the Azure platform, applied as part of the Linux configuration's patch settings. (AI-inferred) */
   automaticByPlatformSettings?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettings | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettings>;
-  /** Specifies the patch mode for Linux virtual machines. Allowed values are ImageDefault (default patching behavior based on the image) and AutomaticByPlatform (automatic patching by the platform). (AI-inferred) */
   patchMode?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeys {
-  /** The SSH public key data, in OpenSSH format (e.g., 'ssh-rsa AAAAB3NzaC1yc2E...'). This is the public key used to authenticate to the VM via SSH. (AI-inferred) */
   keyData?: string | Computed<string>;
-  /** Specifies the full path on the Linux VM where the SSH public key is placed, such as /home/username/.ssh/authorized_keys. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh {
-  /** A list of SSH public keys used for authentication. Each object typically contains the public key data and the file path where the key is installed on the Linux VM. (AI-inferred) */
   publicKeys?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeys[] | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeys[]>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration {
-  /** Indicates whether password authentication is disabled for SSH. When set to true, SSH access is allowed only using authentication keys, not passwords. (AI-inferred) */
   disablePasswordAuthentication?: boolean | Computed<boolean>;
-  /** Indicates whether the Azure VM agent will be automatically updated by the platform. When true, the platform can install the latest VM agent updates; when false, the agent is not automatically updated. (AI-inferred) */
   enableVmagentPlatformUpdates?: boolean | Computed<boolean>;
-  /** Holds the patch configuration settings for the Linux operating system of the source VM. (AI-inferred) */
   patchSettings?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings>;
-  /** Indicates whether the Azure VM Agent should be provisioned on the Linux virtual machine. When this property is not specified, it defaults to true. (AI-inferred) */
   provisionVmagent?: boolean | Computed<boolean>;
-  /** Specifies the SSH configuration for the Linux virtual machine, including a list of SSH public keys used for authentication. (AI-inferred) */
   ssh?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates {
-  /** On Windows VMs, the name of the certificate store where the certificate should be added (for example, 'My' or 'RootStore'). (AI-inferred) */
   certificateStore?: string | Computed<string>;
-  /** The URL of the certificate in Azure Key Vault. (AI-inferred) */
   certificateUrl?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_Secrets {
-  /** The source Key Vault that contains the secret or certificate. (AI-inferred) */
   sourceVault?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks>;
-  /** Specifies the list of certificates to be installed from the specified key vault. Each entry references a certificate URL and optionally a certificate store name. (AI-inferred) */
   vaultCertificates?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates[] | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates[]>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContent {
-  /** The name of the unattend component. The only allowed value is Microsoft-Windows-Shell-Setup. (AI-inferred) */
   componentName?: string | Computed<string>;
-  /** The XML formatted content that is added to the unattend.xml file for the specified pass and component. (AI-inferred) */
   content?: string | Computed<string>;
-  /** The name of the Windows unattended installation pass. The only supported value is OobeSystem. (AI-inferred) */
   passName?: string | Computed<string>;
-  /** The name of the unattended Windows setting. Accepts 'AutoLogon' or 'FirstLogonCommands'. (AI-inferred) */
   settingName?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettings {
-  /** Specifies the patch assessment mode for the Windows virtual machine. 'ImageDefault' uses the default assessment mode of the VM image, while 'AutomaticByPlatform' enables automatic patch assessment by the Azure platform. (AI-inferred) */
   assessmentMode?: string | Computed<string>;
-  /** Settings for automatic updates applied by the platform to the virtual machine, as part of Windows patch configuration. (AI-inferred) */
   automaticByPlatformSettings?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettings | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettings>;
-  /** Indicates whether hotpatching is enabled for the Windows virtual machine. When enabled, updates can be applied without requiring a reboot, applicable to Windows Server Azure Edition VMs. (AI-inferred) */
   enableHotpatching?: boolean | Computed<boolean>;
-  /** Specifies the patch mode for the Windows virtual machine, determining how updates are applied. Allowed values: Manual, AutomaticByOS, AutomaticByPlatform. (AI-inferred) */
   patchMode?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_Listeners {
-  /** The URL of the certificate used by the WinRM HTTPS listener. Required if the listener protocol is Https. (AI-inferred) */
   certificateUrl?: string | Computed<string>;
-  /** The protocol used by the WinRM listener. Allowed values are 'Http' and 'Https'. (AI-inferred) */
   protocol?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm {
-  /** The list of WinRM listeners. Each listener specifies the protocol (Http or Https) and, when using Https, the certificate URL. (AI-inferred) */
   listeners?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_Listeners[] | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_Listeners[]>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration {
-  /** Specifies additional base-64 encoded XML formatted information that can be included in the Unattend.xml file for a Windows virtual machine. Each item in the list represents one additional unattend content entry, with properties for pass, component, setting name, and the XML content. (AI-inferred) */
   additionalUnattendContent?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContent[] | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContent[]>;
-  /** Specifies whether automatic updates are enabled for the Windows virtual machine. The default value is true for Windows VMs. (AI-inferred) */
   enableAutomaticUpdates?: boolean | Computed<boolean>;
-  /** Indicates whether VM agent platform updates are enabled for this Windows virtual machine configuration. When true, the Azure platform will update the VM agent automatically. (AI-inferred) */
   enableVmagentPlatformUpdates?: boolean | Computed<boolean>;
-  /** Patch management settings for the Windows operating system, including preferences for how updates are applied. (AI-inferred) */
   patchSettings?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettings | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettings>;
-  /** Specifies whether the virtual machine agent should be provisioned on the Windows virtual machine. When set to true, the agent is installed; when false, it is not. (AI-inferred) */
   provisionVmagent?: boolean | Computed<boolean>;
-  /** Specifies the time zone for the virtual machine. For example, 'Pacific Standard Time'. (AI-inferred) */
   timeZone?: string | Computed<string>;
-  /** The Windows Remote Management (WinRM) configuration for the virtual machine, including settings such as listeners. (AI-inferred) */
   winRm?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile {
-  /** The password for the administrator account defined in the OS profile of the source virtual machine. (AI-inferred) */
   adminPassword?: string | Computed<string>;
-  /** The administrator username configured in the OS profile of the source virtual machine from which the restore point was captured. (AI-inferred) */
   adminUsername?: string | Computed<string>;
-  /** Specifies whether extension operations are allowed on the virtual machine. This may only be set to False when no extensions are present on the virtual machine. (AI-inferred) */
   allowExtensionOperations?: boolean | Computed<boolean>;
-  /** The computer name assigned to the virtual machine in the OS profile of the source metadata. (AI-inferred) */
   computerName?: string | Computed<string>;
-  /** The custom data (typically base64-encoded) that was provided to the source VM's operating system during provisioning, captured from the source VM's OS profile. (AI-inferred) */
   customData?: string | Computed<string>;
   linuxConfiguration?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_LinuxConfiguration>;
-  /** Specifies whether the source virtual machine requires a guest provision signal to confirm successful provisioning. When set to true, the VM is not considered provisioned until the guest agent sends the signal. (AI-inferred) */
   requireGuestProvisionSignal?: boolean | Computed<boolean>;
-  /** Specifies the set of certificates that should be installed onto the virtual machine. Each element is a Key Vault secret group containing a vault reference and a list of certificate URLs. (AI-inferred) */
   secrets?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_Secrets[] | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_Secrets[]>;
-  /** Windows-specific settings for the virtual machine OS profile, such as provisioning of the VM agent, automatic updates, and time zone. (AI-inferred) */
   windowsConfiguration?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile_WindowsConfiguration>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_EncryptionIdentity {
-  /** The resource ID of the user-assigned managed identity used for encryption operations, such as accessing the key vault for disk encryption. (AI-inferred) */
   userAssignedIdentityResourceId?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_Imds {
-  /** The reference ID of the in-VM access control profile associated with the IMDS settings of the proxy agent. (AI-inferred) */
   inVmaccessControlProfileReferenceId?: string | Computed<string>;
-  /** The mode for the IMDS proxy agent settings. Allowed values: 'Audit', 'Enforce', and 'Disabled'. (AI-inferred) */
   mode?: string | Computed<string>;
-  /** Enables or disables the use of local file rules for the Azure Instance Metadata Service (IMDS) proxy agent settings. (AI-inferred) */
   useLocalFileRules?: boolean | Computed<boolean>;
 }
 
@@ -211,70 +147,48 @@ export interface PointCollection_Properties_RestorePoints_Properties_SourceMetad
   enabled?: boolean | Computed<boolean>;
   imds?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_Imds | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_Imds>;
   keyIncarnationId?: number | Computed<number>;
-  /** The mode of the proxy agent. When set to 'Audit', the agent logs security events without blocking; when set to 'Enforce', it logs and enforces security policies. (AI-inferred) */
   mode?: string | Computed<string>;
   wireServer?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_Imds | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_Imds>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_UefiSettings {
-  /** Specifies whether Secure Boot is enabled for the virtual machine's UEFI firmware. (AI-inferred) */
   secureBootEnabled?: boolean | Computed<boolean>;
-  /** Indicates whether the virtual Trusted Platform Module (vTPM) is enabled for the source virtual machine. This is part of the UEFI security settings captured in the restore point source metadata. (AI-inferred) */
   vTpmEnabled?: boolean | Computed<boolean>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile {
-  /** Specifies whether encryption at host is enabled on the virtual machine from which the restore point was captured. When enabled, all data stored on the VM host is encrypted at rest. (AI-inferred) */
   encryptionAtHost?: boolean | Computed<boolean>;
-  /** The encryption identity in the security profile of the source virtual machine, containing the user-assigned identity resource ID used for managing disk encryption keys. (AI-inferred) */
   encryptionIdentity?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_EncryptionIdentity | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_EncryptionIdentity>;
   proxyAgentSettings?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings>;
-  /** Specifies the security type of the virtual machine. Allowed values are Standard, TrustedLaunch, and ConfidentialVM, which determine the security features and capabilities enabled for the VM. (AI-inferred) */
   securityType?: string | Computed<string>;
-  /** Configuration for UEFI boot settings in the security profile, including whether Secure Boot and virtual Trusted Platform Module (vTPM) are enabled. (AI-inferred) */
   uefiSettings?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_UefiSettings | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile_UefiSettings>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption {
-  /** The disk encryption set used to encrypt the disk restore point, typically a reference to a DiskEncryptionSet resource. (AI-inferred) */
   diskEncryptionSet?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks>;
-  /** Specifies the type of encryption at rest for the disk restore point. Allowed values are: EncryptionAtRestWithPlatformKey, EncryptionAtRestWithCustomerKey, EncryptionAtRestWithPlatformAndCustomerKeys. (AI-inferred) */
   type?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint {
-  /** Configuration for encrypting the disk restore point, including the encryption type (e.g., platform-managed or customer-managed keys) and the disk encryption set identifier if customer-managed keys are used. (AI-inferred) */
   encryption?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption>;
-  /** An object referencing the source disk restore point from which this disk restore point was created. (AI-inferred) */
   sourceDiskRestorePoint?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy {
-  /** Specifies the action to take when a disk delay is encountered. Allowed values: 'None' (no action) or 'AutomaticReattach' (automatically reattach the disk after the delay). (AI-inferred) */
   actionOnDiskDelay?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties {
   availabilityPolicy?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy>;
-  /** Specifies whether performance bursting is enabled for the managed disk. When enabled, the disk can temporarily burst to higher performance levels to handle unexpected traffic spikes. (AI-inferred) */
   burstingEnabled?: boolean | Computed<boolean>;
-  /** The resource ID of the disk access object associated with the managed disk. This is used to control access via private endpoints. (AI-inferred) */
   diskAccessId?: string | Computed<string>;
-  /** The number of IOPS (input/output operations per second) allowed for read-only operations on this managed disk. (AI-inferred) */
   diskIopsreadOnly?: number | Computed<number>;
-  /** The maximum read-only throughput in MB/s for the managed disk. (AI-inferred) */
   diskMbpsReadOnly?: number | Computed<number>;
-  /** The logical sector size in bytes for the managed disk. (AI-inferred) */
   logicalSectorSize?: number | Computed<number>;
-  /** The maximum number of VMs that can simultaneously attach to the managed disk. The minimum allowed value is 1. (AI-inferred) */
   maxShares?: number | Computed<number>;
-  /** The network access policy for the managed disk, controlling public network access. Allowed values are: AllowAll (permit all public access), AllowPrivate (permit only private endpoint access), and DenyAll (deny all public access). (AI-inferred) */
   networkAccessPolicy?: string | Computed<string>;
-  /** Indicates whether the managed disk is optimized for frequent attach and detach scenarios. When enabled, the disk has reduced latency for attach/detach operations, useful for workloads that frequently attach/detach the disk. (AI-inferred) */
   optimizedForFrequentAttach?: boolean | Computed<boolean>;
-  /** Indicates whether Performance Plus is enabled for the managed disk. When true, the disk is configured for higher IOPS and throughput limits (supported on certain disk types such as Premium SSD and Ultra disks). (AI-inferred) */
   performancePlus?: boolean | Computed<boolean>;
-  /** The performance tier of the managed disk, which determines its performance characteristics. (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
@@ -283,124 +197,81 @@ export interface PointCollection_Properties_RestorePoints_Properties_SourceMetad
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile {
-  /** The disk encryption set used to encrypt the managed disk. This object contains references to the encryption key and the Azure Key Vault used for managing the key. (AI-inferred) */
   diskEncryptionSet?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks>;
-  /** Specifies the encryption type for the managed disk. Allowed values are VMGuestStateOnly (only VM guest state is encrypted), DiskWithVMGuestState (both disk and VM guest state are encrypted), and NonPersistedTPM (non-persisted TPM encryption). (AI-inferred) */
   securityEncryptionType?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk {
   additionalDiskProperties?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties>;
-  /** The disk encryption set used to encrypt this managed disk. This object contains the resource identifier (ID) of the associated disk encryption set. (AI-inferred) */
   diskEncryptionSet?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks>;
-  /** Security profile of the managed disk, including settings such as security type (e.g., TrustedLaunch, ConfidentialVM) and firmware security options (secure boot, virtual TPM). (AI-inferred) */
   securityProfile?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile>;
-  /** The storage account type for the managed disk. Allowed values are Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, and PremiumV2_LRS. (AI-inferred) */
   storageAccountType?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks {
-  /** The caching mode for the data disk, which determines whether the disk supports read-only or read-write caching. Allowed values: None, ReadOnly, ReadWrite. (AI-inferred) */
   caching?: string | Computed<string>;
-  /** The disk restore point associated with this data disk, representing a point-in-time snapshot that can be used to restore the disk to its state at that time. (AI-inferred) */
   diskRestorePoint?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint>;
-  /** The size of the data disk in gigabytes, as defined in the storage profile of the source virtual machine. (AI-inferred) */
   diskSizeGb?: number | Computed<number>;
-  /** The logical unit number (LUN) of the data disk, used to identify the disk within the virtual machine. (AI-inferred) */
   lun?: number | Computed<number>;
   managedDisk?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk>;
-  /** The name of the data disk. (AI-inferred) */
   name?: string | Computed<string>;
-  /** Indicates whether write accelerator is enabled for the data disk, a capability that improves write I/O latency on Azure managed disks. (AI-inferred) */
   writeAcceleratorEnabled?: boolean | Computed<boolean>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKey {
-  /** The URL to the secret in Azure Key Vault that holds the disk encryption key. (AI-inferred) */
   secretUrl?: string | Computed<string>;
-  /** The Azure Key Vault that holds the disk encryption key. (AI-inferred) */
   sourceVault?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKey {
-  /** The URL of the key encryption key in Azure Key Vault used to encrypt the disk encryption key. (AI-inferred) */
   keyUrl?: string | Computed<string>;
-  /** Specifies the Azure Key Vault that contains the key encryption key (KEK) used to encrypt the disk encryption key. This is a reference to the Key Vault resource. (AI-inferred) */
   sourceVault?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings {
-  /** The disk encryption key used to encrypt the OS disk, typically containing a reference to the secret URL in an Azure Key Vault. (AI-inferred) */
   diskEncryptionKey?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKey | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKey>;
-  /** Specifies whether disk encryption is enabled for this OS disk. Set to true to enable encryption, false to disable. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
   keyEncryptionKey?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKey | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKey>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk {
-  /** The caching type for the OS disk. Allowed values are None, ReadOnly, or ReadWrite. (AI-inferred) */
   caching?: string | Computed<string>;
-  /** The disk restore point that captures the state of the OS disk at the time the restore point was created. This object provides a reference to the underlying disk restore point resource. (AI-inferred) */
   diskRestorePoint?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint>;
-  /** The size of the operating system disk, in gigabytes. (AI-inferred) */
   diskSizeGb?: number | Computed<number>;
-  /** Encryption settings applied to the OS disk in the source virtual machine's storage profile, captured as part of the restore point's metadata. (AI-inferred) */
   encryptionSettings?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings>;
-  /** The managed disk settings for the OS disk in the source virtual machine. (AI-inferred) */
   managedDisk?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk>;
-  /** The name of the operating system disk. (AI-inferred) */
   name?: string | Computed<string>;
-  /** The type of operating system installed on the OS disk. Allowed values are Windows or Linux. (AI-inferred) */
   osType?: string | Computed<string>;
-  /** Indicates whether write accelerator is enabled on the OS disk of the source VM at the time of the restore point creation. (AI-inferred) */
   writeAcceleratorEnabled?: boolean | Computed<boolean>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile {
-  /** The list of data disks attached to the virtual machine at the time the restore point was created, as recorded in the source metadata's storage profile. (AI-inferred) */
   dataDisks?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks[] | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_DataDisks[]>;
-  /** Specifies the disk controller type used by the virtual machine's storage profile, either SCSI or NVMe. (AI-inferred) */
   diskControllerType?: string | Computed<string>;
-  /** The operating system disk configuration of the source virtual machine, as part of its storage profile. (AI-inferred) */
   osDisk?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile_OsDisk>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties_SourceMetadata {
-  /** The diagnostics profile of the source virtual machine, which includes boot diagnostics settings such as whether boot diagnostics is enabled and the storage account URI used for storing boot diagnostics output. (AI-inferred) */
   diagnosticsProfile?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_DiagnosticsProfile | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_DiagnosticsProfile>;
-  /** The hardware profile of the source virtual machine at the time the restore point was created, including the virtual machine size and other hardware configurations. (AI-inferred) */
   hardwareProfile?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_HardwareProfile | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_HardwareProfile>;
-  /** The Hyper-V generation of the source virtual machine. Possible values are V1 (Generation 1) and V2 (Generation 2). (AI-inferred) */
   hyperVgeneration?: string | Computed<string>;
-  /** The type of license used by the source virtual machine, such as Windows_Client or Windows_Server. (AI-inferred) */
   licenseType?: string | Computed<string>;
   location?: string | Computed<string>;
-  /** The operating system profile of the source virtual machine from which the restore point was captured. Contains settings such as computer name, administrator credentials, and other OS configuration. (AI-inferred) */
   osProfile?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_OsProfile>;
-  /** The security profile of the source virtual machine, including settings such as secure boot, virtual Trusted Platform Module (vTPM), and encryption at host. (AI-inferred) */
   securityProfile?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_SecurityProfile>;
-  /** The storage profile of the source virtual machine from which this restore point was created, capturing its disk and storage configuration as part of the restore point's source metadata. (AI-inferred) */
   storageProfile?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata_StorageProfile>;
-  /** User data associated with the source virtual machine. This is a base64-encoded string that represents the userData property of the VM at the time the restore point was captured. (AI-inferred) */
   userData?: string | Computed<string>;
-  /** The Azure resource ID (fully qualified) of the virtual machine that the restore point is captured from. (AI-inferred) */
   vmId?: string | Computed<string>;
 }
 
 export interface PointCollection_Properties_RestorePoints_Properties {
-  /** Specifies the consistency type of the restore point. Allowed values: CrashConsistent, FileSystemConsistent, ApplicationConsistent. (AI-inferred) */
   consistencyMode?: string | Computed<string>;
-  /** Specifies the disks to exclude from the restore point. Each item in the list identifies a disk that will not be captured in the restore point. (AI-inferred) */
   excludeDisks?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks[] | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks[]>;
   instanceView?: PointCollection_Properties_RestorePoints_Properties_InstanceView | Computed<PointCollection_Properties_RestorePoints_Properties_InstanceView>;
-  /** The duration in minutes for which the restore point is available for instant access. After this period, the restore point may no longer be used for instant restoration. (AI-inferred) */
   instantAccessDurationMinutes?: number | Computed<number>;
   provisioningState?: string | Computed<string>;
-  /** The metadata of the source virtual machine from which this restore point was captured. (AI-inferred) */
   sourceMetadata?: PointCollection_Properties_RestorePoints_Properties_SourceMetadata | Computed<PointCollection_Properties_RestorePoints_Properties_SourceMetadata>;
-  /** The restore point from which this restore point was created, used when copying a restore point to another region or collection. (AI-inferred) */
   sourceRestorePoint?: PointCollection_Properties_RestorePoints_Properties_ExcludeDisks | Computed<PointCollection_Properties_RestorePoints_Properties_ExcludeDisks>;
-  /** The timestamp indicating when the restore point was created. (AI-inferred) */
   timeCreated?: string | Computed<string>;
 }
 

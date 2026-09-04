@@ -8,13 +8,13 @@ type WorkflowVersion_Value_Properties_AccessControl_Actions_AllowedCallerIpAddre
 }
 
 type WorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type WorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies struct {
 	Claims any
-	Type any
+	Type   any
 }
 
 type WorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies struct {
@@ -22,14 +22,14 @@ type WorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPo
 }
 
 type WorkflowVersion_Value_Properties_AccessControl_Actions struct {
-	AllowedCallerIpAddresses any
+	AllowedCallerIpAddresses   any
 	OpenAuthenticationPolicies any
 }
 
 type WorkflowVersion_Value_Properties_AccessControl struct {
-	Actions any
-	Contents any
-	Triggers any
+	Actions            any
+	Contents           any
+	Triggers           any
 	WorkflowManagement any
 }
 
@@ -39,25 +39,25 @@ type WorkflowVersion_Value_Properties_EndpointsConfiguration_Connector_AccessEnd
 
 type WorkflowVersion_Value_Properties_EndpointsConfiguration_Connector struct {
 	AccessEndpointIpAddresses any
-	OutgoingIpAddresses any
+	OutgoingIpAddresses       any
 }
 
 type WorkflowVersion_Value_Properties_EndpointsConfiguration struct {
 	Connector any
-	Workflow any
+	Workflow  any
 }
 
 type WorkflowVersion_Value_Properties_IntegrationAccount struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type WorkflowVersion_Value_Properties_Parameters struct {
 	Description any
-	Metadata any
-	Type any
-	Value any
+	Metadata    any
+	Type        any
+	Value       any
 }
 
 type WorkflowVersion_Value_Properties_Sku struct {
@@ -66,18 +66,18 @@ type WorkflowVersion_Value_Properties_Sku struct {
 }
 
 type WorkflowVersion_Value_Properties struct {
-	AccessControl any
-	AccessEndpoint any
-	ChangedTime any
-	CreatedTime any
-	Definition any
+	AccessControl          any
+	AccessEndpoint         any
+	ChangedTime            any
+	CreatedTime            any
+	Definition             any
 	EndpointsConfiguration any
-	IntegrationAccount any
-	Parameters any
-	ProvisioningState any
-	Sku any
-	State any
-	Version any
+	IntegrationAccount     any
+	Parameters             any
+	ProvisioningState      any
+	Sku                    any
+	State                  any
+	Version                any
 }
 
 type WorkflowVersion_Value struct {
@@ -85,29 +85,29 @@ type WorkflowVersion_Value struct {
 }
 
 type WorkflowVersionConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
-	WorkflowName any
+	SubscriptionId    any
+	WorkflowName      any
 }
 
 type WorkflowVersionAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// A list of workflow versions.
-	Value any
+	Value        any
 	WorkflowName any
 }
 
 var WorkflowVersion = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_version",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

@@ -8,27 +8,27 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_AuthenticationCertificates_Properties struct {
-	Data any
+	Data              any
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_AuthenticationCertificates struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_AutoscaleConfiguration struct {
@@ -37,7 +37,7 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendAddresses struct {
-	Fqdn any
+	Fqdn      any
 	IpAddress any
 }
 
@@ -45,99 +45,99 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties struct {
-	BackendAddresses any
+	BackendAddresses        any
 	BackendIpconfigurations any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_Properties struct {
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping struct {
-	BackendPort any
-	FrontendPort any
+	BackendPort        any
+	FrontendPort       any
 	InboundNatRuleName any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties struct {
-	AdminState any
-	InboundNatRulesPortMapping any
-	IpAddress any
+	AdminState                          any
+	InboundNatRulesPortMapping          any
+	IpAddress                           any
 	LoadBalancerFrontendIpconfiguration any
-	NetworkInterfaceIpconfiguration any
-	Subnet any
-	VirtualNetwork any
+	NetworkInterfaceIpconfiguration     any
+	Subnet                              any
+	VirtualNetwork                      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces struct {
 	Identifier any
-	Port any
-	Protocol any
-	Type any
+	Port       any
+	Protocol   any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties struct {
-	BackendIpconfigurations any
-	DrainPeriodInSeconds any
-	InboundNatRules any
+	BackendIpconfigurations      any
+	DrainPeriodInSeconds         any
+	InboundNatRules              any
 	LoadBalancerBackendAddresses any
-	LoadBalancingRules any
-	Location any
-	OutboundRule any
-	OutboundRules any
-	ProvisioningState any
-	SyncMode any
-	TunnelInterfaces any
-	VirtualNetwork any
+	LoadBalancingRules           any
+	Location                     any
+	OutboundRule                 any
+	OutboundRules                any
+	ProvisioningState            any
+	SyncMode                     any
+	TunnelInterfaces             any
+	VirtualNetwork               any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_Properties struct {
-	BackendAddressPool any
-	BackendIpconfiguration any
-	BackendPort any
-	EnableFloatingIp any
-	EnableTcpReset any
+	BackendAddressPool      any
+	BackendIpconfiguration  any
+	BackendPort             any
+	EnableFloatingIp        any
+	EnableTcpReset          any
 	FrontendIpconfiguration any
-	FrontendPort any
-	FrontendPortRangeEnd any
-	FrontendPortRangeStart any
-	IdleTimeoutInMinutes any
-	Protocol any
-	ProvisioningState any
+	FrontendPort            any
+	FrontendPortRangeEnd    any
+	FrontendPortRangeStart  any
+	IdleTimeoutInMinutes    any
+	Protocol                any
+	ProvisioningState       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionProperties struct {
-	Fqdns any
-	GroupId any
+	Fqdns              any
+	GroupId            any
 	RequiredMemberName any
 }
 
@@ -147,91 +147,91 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettings struct {
-	DdosCustomPolicy any
+	DdosCustomPolicy   any
 	DdosProtectionPlan any
-	ProtectionMode any
+	ProtectionMode     any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettings struct {
-	DomainNameLabel any
+	DomainNameLabel      any
 	DomainNameLabelScope any
-	Fqdn any
-	ReverseFqdn any
+	Fqdn                 any
+	ReverseFqdn          any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties struct {
-	Actions any
+	Actions           any
 	ProvisioningState any
-	ServiceName any
+	ServiceName       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties struct {
-	Access any
-	Description any
-	DestinationAddressPrefix any
-	DestinationAddressPrefixes any
+	Access                               any
+	Description                          any
+	DestinationAddressPrefix             any
+	DestinationAddressPrefixes           any
 	DestinationApplicationSecurityGroups any
-	DestinationPortRange any
-	DestinationPortRanges any
-	Direction any
-	Priority any
-	Protocol any
-	ProvisioningState any
-	SourceAddressPrefix any
-	SourceAddressPrefixes any
-	SourceApplicationSecurityGroups any
-	SourcePortRange any
-	SourcePortRanges any
+	DestinationPortRange                 any
+	DestinationPortRanges                any
+	Direction                            any
+	Priority                             any
+	Protocol                             any
+	ProvisioningState                    any
+	SourceAddressPrefix                  any
+	SourceAddressPrefixes                any
+	SourceApplicationSecurityGroups      any
+	SourcePortRange                      any
+	SourcePortRanges                     any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration struct {
-	Enabled any
+	Enabled                  any
 	TrafficAnalyticsInterval any
-	WorkspaceId any
-	WorkspaceRegion any
-	WorkspaceResourceId any
+	WorkspaceId              any
+	WorkspaceRegion          any
+	WorkspaceResourceId      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration struct {
@@ -239,104 +239,104 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format struct {
-	Type any
+	Type    any
 	Version any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy struct {
-	Days any
+	Days    any
 	Enabled any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties struct {
-	Enabled any
-	EnabledFilteringCriteria any
+	Enabled                    any
+	EnabledFilteringCriteria   any
 	FlowAnalyticsConfiguration any
-	Format any
-	ProvisioningState any
-	RecordTypes any
-	RetentionPolicy any
-	StorageId any
-	TargetResourceGuid any
-	TargetResourceId any
+	Format                     any
+	ProvisioningState          any
+	RecordTypes                any
+	RetentionPolicy            any
+	StorageId                  any
+	TargetResourceGuid         any
+	TargetResourceId           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings struct {
-	AppliedDnsServers any
-	DnsServers any
-	InternalDnsNameLabel any
+	AppliedDnsServers        any
+	DnsServers               any
+	InternalDnsNameLabel     any
 	InternalDomainNameSuffix any
-	InternalFqdn any
+	InternalFqdn             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs struct {
-	Fqdn any
+	Fqdn        any
 	IpAddresses any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties struct {
-	GroupId any
-	MemberName any
+	GroupId          any
+	MemberName       any
 	PrivateIpaddress any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties struct {
-	GroupIds any
+	GroupIds                          any
 	PrivateLinkServiceConnectionState any
-	PrivateLinkServiceId any
-	ProvisioningState any
-	RequestMessage any
+	PrivateLinkServiceId              any
+	ProvisioningState                 any
+	RequestMessage                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval struct {
@@ -344,19 +344,19 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	Primary                   any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettings struct {
@@ -369,81 +369,81 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties struct {
-	DdosSettings any
-	EnableConnectionTracking any
-	GatewayLoadBalancer any
-	InboundNatPools any
-	InboundNatRules any
-	LoadBalancingRules any
-	OutboundRules any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	DdosSettings              any
+	EnableConnectionTracking  any
+	GatewayLoadBalancer       any
+	InboundNatPools           any
+	InboundNatRules           any
+	LoadBalancingRules        any
+	OutboundRules             any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	PublicIpprefix any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	PublicIpprefix            any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -453,172 +453,172 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties struct {
-	Link any
+	Link               any
 	LinkedResourceType any
-	ProvisioningState any
+	ProvisioningState  any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop struct {
@@ -626,145 +626,145 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties struct {
-	AddressPrefix any
-	HasBgpOverride any
-	NextHop any
-	NextHopIpAddress any
-	NextHopType any
+	AddressPrefix     any
+	HasBgpOverride    any
+	NextHop           any
+	NextHopIpAddress  any
+	NextHopType       any
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties struct {
 	DisableBgpRoutePropagation any
-	DisablePeeringRoute any
-	ProvisioningState any
-	ResourceGuid any
-	Routes any
-	Subnets any
+	DisablePeeringRoute        any
+	ProvisioningState          any
+	ResourceGuid               any
+	Routes                     any
+	Subnets                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties struct {
-	AllowDelete any
-	Link any
+	AllowDelete        any
+	Link               any
 	LinkedResourceType any
-	Locations any
-	ProvisioningState any
+	Locations          any
+	ProvisioningState  any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties struct {
-	Description any
+	Description       any
 	ProvisioningState any
-	Service any
-	ServiceResources any
+	Service           any
+	ServiceResources  any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties struct {
 	ContextualServiceEndpointPolicies any
-	ProvisioningState any
-	ResourceGuid any
-	ServiceAlias any
-	ServiceEndpointPolicyDefinitions any
-	Subnets any
+	ProvisioningState                 any
+	ResourceGuid                      any
+	ServiceAlias                      any
+	ServiceEndpointPolicyDefinitions  any
+	Subnets                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies struct {
-	Etag any
-	Kind any
+	Etag       any
+	Kind       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints struct {
-	Locations any
+	Locations         any
 	NetworkIdentifier any
 	ProvisioningState any
-	Service any
+	Service           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTags struct {
 	FirstPartyServiceTagId any
-	IpTagType any
-	Tag any
+	IpTagType              any
+	Tag                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Properties struct {
 	IdleTimeoutInMinutes any
-	Nat64 any
-	ProvisioningState any
-	PublicIpAddresses any
-	PublicIpAddressesV6 any
-	PublicIpPrefixes any
-	PublicIpPrefixesV6 any
-	ResourceGuid any
-	ServiceGateway any
+	Nat64                any
+	ProvisioningState    any
+	PublicIpAddresses    any
+	PublicIpAddressesV6  any
+	PublicIpPrefixes     any
+	PublicIpPrefixesV6   any
+	ResourceGuid         any
+	ServiceGateway       any
 	SourceVirtualNetwork any
-	Subnets any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_Sku struct {
@@ -772,179 +772,179 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway struct {
-	Etag any
+	Etag       any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties struct {
-	DdosSettings any
-	EnableConnectionTracking any
-	GatewayLoadBalancer any
-	InboundNatPools any
-	InboundNatRules any
-	LoadBalancingRules any
-	OutboundRules any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	DdosSettings              any
+	EnableConnectionTracking  any
+	GatewayLoadBalancer       any
+	InboundNatPools           any
+	InboundNatRules           any
+	LoadBalancingRules        any
+	OutboundRules             any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	PublicIpprefix any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	PublicIpprefix            any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -954,181 +954,181 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties struct {
@@ -1137,1165 +1137,1165 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	Primary                   any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_Properties struct {
 	DisableBgpRoutePropagation any
-	DisablePeeringRoute any
-	ProvisioningState any
-	ResourceGuid any
-	Routes any
-	Subnets any
+	DisablePeeringRoute        any
+	ProvisioningState          any
+	ResourceGuid               any
+	Routes                     any
+	Subnets                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties struct {
 	ContextualServiceEndpointPolicies any
-	ProvisioningState any
-	ResourceGuid any
-	ServiceAlias any
-	ServiceEndpointPolicyDefinitions any
-	Subnets any
+	ProvisioningState                 any
+	ResourceGuid                      any
+	ServiceAlias                      any
+	ServiceEndpointPolicyDefinitions  any
+	Subnets                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies struct {
-	Etag any
-	Kind any
+	Etag       any
+	Kind       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties struct {
-	DdosSettings any
-	EnableConnectionTracking any
-	GatewayLoadBalancer any
-	InboundNatPools any
-	InboundNatRules any
-	LoadBalancingRules any
-	OutboundRules any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	DdosSettings              any
+	EnableConnectionTracking  any
+	GatewayLoadBalancer       any
+	InboundNatPools           any
+	InboundNatRules           any
+	LoadBalancingRules        any
+	OutboundRules             any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	PublicIpprefix any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	PublicIpprefix            any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties_BackendIpconfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools_Properties struct {
-	BackendAddresses any
+	BackendAddresses        any
 	BackendIpconfigurations any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendAddressPools struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties_ConnectionDraining struct {
 	DrainTimeoutInSec any
-	Enabled any
+	Enabled           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection_Properties struct {
-	AffinityCookieName any
-	AuthenticationCertificates any
-	ConnectionDraining any
-	CookieBasedAffinity any
-	DedicatedBackendConnection any
-	HostName any
-	Path any
+	AffinityCookieName             any
+	AuthenticationCertificates     any
+	ConnectionDraining             any
+	CookieBasedAffinity            any
+	DedicatedBackendConnection     any
+	HostName                       any
+	Path                           any
 	PickHostNameFromBackendAddress any
-	Port any
-	Probe any
-	ProbeEnabled any
-	Protocol any
-	ProvisioningState any
-	RequestTimeout any
-	SniName any
-	TrustedRootCertificates any
-	ValidateCertChainAndExpiry any
-	ValidateSni any
+	Port                           any
+	Probe                          any
+	ProbeEnabled                   any
+	Protocol                       any
+	ProvisioningState              any
+	RequestTimeout                 any
+	SniName                        any
+	TrustedRootCertificates        any
+	ValidateCertChainAndExpiry     any
+	ValidateSni                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendHttpSettingsCollection struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendSettingsCollection_Properties struct {
-	EnableL4ClientIpPreservation any
-	HostName any
+	EnableL4ClientIpPreservation   any
+	HostName                       any
 	PickHostNameFromBackendAddress any
-	Port any
-	Probe any
-	Protocol any
-	ProvisioningState any
-	Timeout any
-	TrustedRootCertificates any
+	Port                           any
+	Probe                          any
+	Protocol                       any
+	ProvisioningState              any
+	Timeout                        any
+	TrustedRootCertificates        any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_BackendSettingsCollection struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_CustomErrorConfigurations struct {
 	CustomErrorPageUrl any
-	StatusCode any
+	StatusCode         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs_Properties struct {
-	Audiences any
-	ClientId any
-	ProvisioningState any
-	TenantId any
+	Audiences                 any
+	ClientId                  any
+	ProvisioningState         any
+	TenantId                  any
 	UnAuthorizedRequestAction any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_EntraJwtvalidationConfigs struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_FrontendIpconfigurations_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	PrivateLinkConfiguration any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	PrivateLinkConfiguration  any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_FrontendIpconfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_FrontendPorts_Properties struct {
-	Port any
+	Port              any
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_FrontendPorts struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_GlobalConfiguration struct {
 	DisableDefaultServerHeaderInResponse any
-	EnableRequestBuffering any
-	EnableResponseBuffering any
+	EnableRequestBuffering               any
+	EnableResponseBuffering              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_HttpListeners_Properties struct {
-	CustomErrorConfigurations any
-	FirewallPolicy any
-	FrontendIpconfiguration any
-	FrontendPort any
-	HostName any
-	HostNames any
-	Protocol any
-	ProvisioningState any
+	CustomErrorConfigurations   any
+	FirewallPolicy              any
+	FrontendIpconfiguration     any
+	FrontendPort                any
+	HostName                    any
+	HostNames                   any
+	Protocol                    any
+	ProvisioningState           any
 	RequireServerNameIndication any
-	SslCertificate any
-	SslProfile any
+	SslCertificate              any
+	SslProfile                  any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_HttpListeners struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_Listeners_Properties struct {
 	FrontendIpconfiguration any
-	FrontendPort any
-	HostNames any
-	Protocol any
-	ProvisioningState any
-	SslCertificate any
-	SslProfile any
+	FrontendPort            any
+	HostNames               any
+	Protocol                any
+	ProvisioningState       any
+	SslCertificate          any
+	SslProfile              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_Listeners struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets_Properties struct {
 	BackendAddressPool any
-	WeightPerServer any
+	WeightPerServer    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_LoadDistributionPolicies_Properties struct {
 	LoadDistributionAlgorithm any
-	LoadDistributionTargets any
-	ProvisioningState any
+	LoadDistributionTargets   any
+	ProvisioningState         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_LoadDistributionPolicies struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties struct {
-	BackendAddresses any
+	BackendAddresses        any
 	BackendIpconfigurations any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties struct {
-	BackendIpconfigurations any
-	DrainPeriodInSeconds any
-	InboundNatRules any
+	BackendIpconfigurations      any
+	DrainPeriodInSeconds         any
+	InboundNatRules              any
 	LoadBalancerBackendAddresses any
-	LoadBalancingRules any
-	Location any
-	OutboundRule any
-	OutboundRules any
-	ProvisioningState any
-	SyncMode any
-	TunnelInterfaces any
-	VirtualNetwork any
+	LoadBalancingRules           any
+	Location                     any
+	OutboundRule                 any
+	OutboundRules                any
+	ProvisioningState            any
+	SyncMode                     any
+	TunnelInterfaces             any
+	VirtualNetwork               any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties struct {
-	BackendAddressPool any
-	BackendIpconfiguration any
-	BackendPort any
-	EnableFloatingIp any
-	EnableTcpReset any
+	BackendAddressPool      any
+	BackendIpconfiguration  any
+	BackendPort             any
+	EnableFloatingIp        any
+	EnableTcpReset          any
 	FrontendIpconfiguration any
-	FrontendPort any
-	FrontendPortRangeEnd any
-	FrontendPortRangeStart any
-	IdleTimeoutInMinutes any
-	Protocol any
-	ProvisioningState any
+	FrontendPort            any
+	FrontendPortRangeEnd    any
+	FrontendPortRangeStart  any
+	IdleTimeoutInMinutes    any
+	Protocol                any
+	ProvisioningState       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties struct {
-	DdosSettings any
-	EnableConnectionTracking any
-	GatewayLoadBalancer any
-	InboundNatPools any
-	InboundNatRules any
-	LoadBalancingRules any
-	OutboundRules any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	DdosSettings              any
+	EnableConnectionTracking  any
+	GatewayLoadBalancer       any
+	InboundNatPools           any
+	InboundNatRules           any
+	LoadBalancingRules        any
+	OutboundRules             any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	PublicIpprefix any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	PublicIpprefix            any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	Primary                   any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -2305,176 +2305,176 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -2484,467 +2484,467 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_Application
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
+	AddressPrefix                      any
+	AddressPrefixes                    any
 	ApplicationGatewayIpconfigurations any
-	DefaultOutboundAccess any
-	Delegations any
-	IpAllocations any
-	IpConfigurationProfiles any
-	IpConfigurations any
-	IpamPoolPrefixAllocations any
-	NatGateway any
-	NetworkSecurityGroup any
-	PrivateEndpointNetworkPolicies any
-	PrivateEndpoints any
-	PrivateLinkServiceNetworkPolicies any
-	ProvisioningState any
-	Purpose any
-	ResourceNavigationLinks any
-	RouteTable any
-	ServiceAssociationLinks any
-	ServiceEndpointPolicies any
-	ServiceEndpoints any
-	ServiceGateway any
-	SharingScope any
+	DefaultOutboundAccess              any
+	Delegations                        any
+	IpAllocations                      any
+	IpConfigurationProfiles            any
+	IpConfigurations                   any
+	IpamPoolPrefixAllocations          any
+	NatGateway                         any
+	NetworkSecurityGroup               any
+	PrivateEndpointNetworkPolicies     any
+	PrivateEndpoints                   any
+	PrivateLinkServiceNetworkPolicies  any
+	ProvisioningState                  any
+	Purpose                            any
+	ResourceNavigationLinks            any
+	RouteTable                         any
+	ServiceAssociationLinks            any
+	ServiceEndpointPolicies            any
+	ServiceEndpoints                   any
+	ServiceGateway                     any
+	SharingScope                       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
+	Primary                   any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations_Properties struct {
-	IpConfigurations any
+	IpConfigurations  any
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_PrivateLinkConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_Probes_Properties_Match struct {
-	Body any
+	Body        any
 	StatusCodes any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_Probes_Properties struct {
-	EnableProbeProxyProtocolHeader any
-	Host any
-	Interval any
-	Match any
-	MinServers any
-	Path any
+	EnableProbeProxyProtocolHeader      any
+	Host                                any
+	Interval                            any
+	Match                               any
+	MinServers                          any
+	Path                                any
 	PickHostNameFromBackendHttpSettings any
-	PickHostNameFromBackendSettings any
-	Port any
-	Protocol any
-	ProvisioningState any
-	Timeout any
-	UnhealthyThreshold any
+	PickHostNameFromBackendSettings     any
+	Port                                any
+	Protocol                            any
+	ProvisioningState                   any
+	Timeout                             any
+	UnhealthyThreshold                  any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_Probes struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RedirectConfigurations_Properties struct {
-	IncludePath any
-	IncludeQueryString any
-	PathRules any
-	RedirectType any
+	IncludePath         any
+	IncludeQueryString  any
+	PathRules           any
+	RedirectType        any
 	RequestRoutingRules any
-	TargetListener any
-	TargetUrl any
-	UrlPathMaps any
+	TargetListener      any
+	TargetUrl           any
+	UrlPathMaps         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RedirectConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RequestRoutingRules_Properties struct {
-	BackendAddressPool any
-	BackendHttpSettings any
+	BackendAddressPool       any
+	BackendHttpSettings      any
 	EntraJwtvalidationConfig any
-	HttpListener any
-	LoadDistributionPolicy any
-	Priority any
-	ProvisioningState any
-	RedirectConfiguration any
-	RewriteRuleSet any
-	RuleType any
-	UrlPathMap any
+	HttpListener             any
+	LoadDistributionPolicy   any
+	Priority                 any
+	ProvisioningState        any
+	RedirectConfiguration    any
+	RewriteRuleSet           any
+	RuleType                 any
+	UrlPathMap               any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RequestRoutingRules struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations_HeaderValueMatcher struct {
 	IgnoreCase any
-	Negate any
-	Pattern any
+	Negate     any
+	Pattern    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations struct {
-	HeaderName any
-	HeaderValue any
+	HeaderName         any
+	HeaderValue        any
 	HeaderValueMatcher any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_UrlConfiguration struct {
-	ModifiedPath any
+	ModifiedPath        any
 	ModifiedQueryString any
-	Reroute any
+	Reroute             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet struct {
-	RequestHeaderConfigurations any
+	RequestHeaderConfigurations  any
 	ResponseHeaderConfigurations any
-	UrlConfiguration any
+	UrlConfiguration             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules_Conditions struct {
 	IgnoreCase any
-	Negate any
-	Pattern any
-	Variable any
+	Negate     any
+	Pattern    any
+	Variable   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties_RewriteRules struct {
-	ActionSet any
-	Conditions any
-	Name any
+	ActionSet    any
+	Conditions   any
+	Name         any
 	RuleSequence any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RewriteRuleSets_Properties struct {
 	ProvisioningState any
-	RewriteRules any
+	RewriteRules      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RewriteRuleSets struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RoutingRules_Properties struct {
 	BackendAddressPool any
-	BackendSettings any
-	Listener any
-	Priority any
-	ProvisioningState any
-	RuleType any
+	BackendSettings    any
+	Listener           any
+	Priority           any
+	ProvisioningState  any
+	RuleType           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_RoutingRules struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Tier any
+	Family   any
+	Name     any
+	Tier     any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_SslCertificates_Properties_Hsm struct {
-	KeyId any
+	KeyId          any
 	PublicCertData any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_SslCertificates_Properties struct {
-	Data any
-	Hsm any
-	KeyVaultSecretId any
-	Password any
+	Data              any
+	Hsm               any
+	KeyVaultSecretId  any
+	Password          any
 	ProvisioningState any
-	PublicCertData any
+	PublicCertData    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_SslCertificates struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_SslPolicy struct {
-	CipherSuites any
+	CipherSuites         any
 	DisabledSslProtocols any
-	MinProtocolVersion any
-	PolicyName any
-	PolicyType any
+	MinProtocolVersion   any
+	PolicyName           any
+	PolicyType           any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_SslProfiles_Properties_ClientAuthConfiguration struct {
-	VerifyClientAuthMode any
+	VerifyClientAuthMode     any
 	VerifyClientCertIssuerDn any
-	VerifyClientRevocation any
+	VerifyClientRevocation   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_SslProfiles_Properties struct {
-	ClientAuthConfiguration any
-	ProvisioningState any
-	SslPolicy any
+	ClientAuthConfiguration   any
+	ProvisioningState         any
+	SslPolicy                 any
 	TrustedClientCertificates any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_SslProfiles struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_TrustedClientCertificates_Properties struct {
 	ClientCertIssuerDn any
-	Data any
-	ProvisioningState any
-	ValidatedCertData any
+	Data               any
+	ProvisioningState  any
+	ValidatedCertData  any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_TrustedClientCertificates struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_TrustedRootCertificates_Properties struct {
-	Data any
-	KeyVaultSecretId any
+	Data              any
+	KeyVaultSecretId  any
 	ProvisioningState any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_TrustedRootCertificates struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules_Properties struct {
-	BackendAddressPool any
-	BackendHttpSettings any
-	FirewallPolicy any
+	BackendAddressPool     any
+	BackendHttpSettings    any
+	FirewallPolicy         any
 	LoadDistributionPolicy any
-	Paths any
-	ProvisioningState any
-	RedirectConfiguration any
-	RewriteRuleSet any
+	Paths                  any
+	ProvisioningState      any
+	RedirectConfiguration  any
+	RewriteRuleSet         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties_PathRules struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_UrlPathMaps_Properties struct {
-	DefaultBackendAddressPool any
-	DefaultBackendHttpSettings any
+	DefaultBackendAddressPool     any
+	DefaultBackendHttpSettings    any
 	DefaultLoadDistributionPolicy any
-	DefaultRedirectConfiguration any
-	DefaultRewriteRuleSet any
-	PathRules any
-	ProvisioningState any
+	DefaultRedirectConfiguration  any
+	DefaultRewriteRuleSet         any
+	PathRules                     any
+	ProvisioningState             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_UrlPathMaps struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_DisabledRuleGroups struct {
 	RuleGroupName any
-	Rules any
+	Rules         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration_Exclusions struct {
-	MatchVariable any
-	Selector any
+	MatchVariable         any
+	Selector              any
 	SelectorMatchOperator any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties_WebApplicationFirewallConfiguration struct {
-	DisabledRuleGroups any
-	Enabled any
-	Exclusions any
-	FileUploadLimitInMb any
-	FirewallMode any
-	MaxRequestBodySize any
+	DisabledRuleGroups     any
+	Enabled                any
+	Exclusions             any
+	FileUploadLimitInMb    any
+	FirewallMode           any
+	MaxRequestBodySize     any
 	MaxRequestBodySizeInKb any
-	RequestBodyCheck any
-	RuleSetType any
-	RuleSetVersion any
+	RequestBodyCheck       any
+	RuleSetType            any
+	RuleSetVersion         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways_Properties struct {
-	AuthenticationCertificates any
-	AutoscaleConfiguration any
-	BackendAddressPools any
-	BackendHttpSettingsCollection any
-	BackendSettingsCollection any
-	CustomErrorConfigurations any
-	DefaultPredefinedSslPolicy any
-	EnableFips any
-	EnableHttp2 any
-	EntraJwtvalidationConfigs any
-	FirewallPolicy any
-	ForceFirewallPolicyAssociation any
-	FrontendIpconfigurations any
-	FrontendPorts any
-	GatewayIpconfigurations any
-	GlobalConfiguration any
-	HttpListeners any
-	Listeners any
-	LoadDistributionPolicies any
-	OperationalState any
-	PrivateEndpointConnections any
-	PrivateLinkConfigurations any
-	Probes any
-	ProvisioningState any
-	RedirectConfigurations any
-	RequestRoutingRules any
-	ResourceGuid any
-	RewriteRuleSets any
-	RoutingRules any
-	Sku any
-	SslCertificates any
-	SslPolicy any
-	SslProfiles any
-	TrustedClientCertificates any
-	TrustedRootCertificates any
-	UrlPathMaps any
+	AuthenticationCertificates          any
+	AutoscaleConfiguration              any
+	BackendAddressPools                 any
+	BackendHttpSettingsCollection       any
+	BackendSettingsCollection           any
+	CustomErrorConfigurations           any
+	DefaultPredefinedSslPolicy          any
+	EnableFips                          any
+	EnableHttp2                         any
+	EntraJwtvalidationConfigs           any
+	FirewallPolicy                      any
+	ForceFirewallPolicyAssociation      any
+	FrontendIpconfigurations            any
+	FrontendPorts                       any
+	GatewayIpconfigurations             any
+	GlobalConfiguration                 any
+	HttpListeners                       any
+	Listeners                           any
+	LoadDistributionPolicies            any
+	OperationalState                    any
+	PrivateEndpointConnections          any
+	PrivateLinkConfigurations           any
+	Probes                              any
+	ProvisioningState                   any
+	RedirectConfigurations              any
+	RequestRoutingRules                 any
+	ResourceGuid                        any
+	RewriteRuleSets                     any
+	RoutingRules                        any
+	Sku                                 any
+	SslCertificates                     any
+	SslPolicy                           any
+	SslProfiles                         any
+	TrustedClientCertificates           any
+	TrustedRootCertificates             any
+	UrlPathMaps                         any
 	WebApplicationFirewallConfiguration any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ApplicationGateways struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_CustomRules_GroupByUserSession_GroupByVariables struct {
@@ -2956,29 +2956,29 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_CustomRules
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_CustomRules_MatchConditions_MatchVariables struct {
-	Selector any
+	Selector     any
 	VariableName any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_CustomRules_MatchConditions struct {
-	MatchValues any
-	MatchVariables any
+	MatchValues      any
+	MatchVariables   any
 	NegationConditon any
-	Operator any
-	Transforms any
+	Operator         any
+	Transforms       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_CustomRules struct {
-	Action any
-	Etag any
+	Action             any
+	Etag               any
 	GroupByUserSession any
-	MatchConditions any
-	Name any
-	Priority any
-	RateLimitDuration any
+	MatchConditions    any
+	Name               any
+	Priority           any
+	RateLimitDuration  any
 	RateLimitThreshold any
-	RuleType any
-	State any
+	RuleType           any
+	State              any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups_Rules struct {
@@ -2987,103 +2987,103 @@ type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRule
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets_RuleGroups struct {
 	RuleGroupName any
-	Rules any
+	Rules         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_Exceptions_ExceptionManagedRuleSets struct {
-	RuleGroups any
-	RuleSetType any
+	RuleGroups     any
+	RuleSetType    any
 	RuleSetVersion any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_Exceptions struct {
 	ExceptionManagedRuleSets any
-	MatchVariable any
-	Selector any
-	SelectorMatchOperator any
-	ValueMatchOperator any
-	Values any
+	MatchVariable            any
+	Selector                 any
+	SelectorMatchOperator    any
+	ValueMatchOperator       any
+	Values                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_Exclusions struct {
 	ExclusionManagedRuleSets any
-	MatchVariable any
-	Selector any
-	SelectorMatchOperator any
+	MatchVariable            any
+	Selector                 any
+	SelectorMatchOperator    any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_ManagedRuleSets_ComputedDisabledRules struct {
 	RuleGroupName any
-	Rules any
+	Rules         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_Rules struct {
-	Action any
-	RuleId any
+	Action      any
+	RuleId      any
 	Sensitivity any
-	State any
+	State       any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides struct {
 	RuleGroupName any
-	Rules any
+	Rules         any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules_ManagedRuleSets struct {
 	ComputedDisabledRules any
-	RuleGroupOverrides any
-	RuleSetType any
-	RuleSetVersion any
+	RuleGroupOverrides    any
+	RuleSetType           any
+	RuleSetVersion        any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_ManagedRules struct {
-	Exceptions any
-	Exclusions any
+	Exceptions      any
+	Exclusions      any
 	ManagedRuleSets any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_PolicySettings_LogScrubbing_ScrubbingRules struct {
-	MatchVariable any
-	Selector any
+	MatchVariable         any
+	Selector              any
 	SelectorMatchOperator any
-	State any
+	State                 any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_PolicySettings_LogScrubbing struct {
 	ScrubbingRules any
-	State any
+	State          any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties_PolicySettings struct {
-	CaptchaExpirationInMins any
-	CustomBlockResponseBody any
-	CustomBlockResponseStatusCode any
-	FileUploadEnforcement any
-	FileUploadLimitInMb any
+	CaptchaExpirationInMins           any
+	CustomBlockResponseBody           any
+	CustomBlockResponseStatusCode     any
+	FileUploadEnforcement             any
+	FileUploadLimitInMb               any
 	JsChallengeCookieExpirationInMins any
-	LogScrubbing any
-	MaxRequestBodySizeInKb any
-	Mode any
-	RequestBodyCheck any
-	RequestBodyEnforcement any
-	RequestBodyInspectLimitInKb any
-	State any
+	LogScrubbing                      any
+	MaxRequestBodySizeInKb            any
+	Mode                              any
+	RequestBodyCheck                  any
+	RequestBodyEnforcement            any
+	RequestBodyInspectLimitInKb       any
+	State                             any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value_Properties struct {
 	ApplicationGatewayForContainers any
-	ApplicationGateways any
-	CustomRules any
-	HttpListeners any
-	ManagedRules any
-	PathBasedRules any
-	PolicySettings any
-	ProvisioningState any
-	ResourceState any
+	ApplicationGateways             any
+	CustomRules                     any
+	HttpListeners                   any
+	ManagedRules                    any
+	PathBasedRules                  any
+	PolicySettings                  any
+	ProvisioningState               any
+	ResourceState                   any
 }
 
 type ApplicationgatewayWebApplicationFirewallPolicy_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -3099,6 +3099,5 @@ type ApplicationgatewayWebApplicationFirewallPolicyAttrs struct {
 
 var ApplicationgatewayWebApplicationFirewallPolicy = ubx.DataSourceBinding{
 	WireType: "azure_network_applicationgateway_web_application_firewall_policy",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

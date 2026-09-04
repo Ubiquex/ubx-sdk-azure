@@ -1184,8 +1184,6 @@ _OpenapiPool_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiPoolConfig:
-    # The ETag of the resource, used for concurrency statements.
-    etag: Any = None
     # The identity of the Batch pool, if configured. If the pool identity is updated during update an existing pool, only the new vms which are created after the pool shrinks to 0 will have the updated identities
     identity: Any = None
     # Pool properties.
@@ -1207,7 +1205,6 @@ class OpenapiPoolAttrs:
 OpenapiPool = ubx.ResourceBinding(
     wire_type="azure_batch_openapi_pool",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",

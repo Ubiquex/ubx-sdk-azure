@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConnectionType_Value_Properties_FieldDefinitions struct {
 	IsEncrypted any
-	IsOptional any
-	Type any
+	IsOptional  any
+	Type        any
 }
 
 type OpenapiConnectionType_Value_Properties struct {
-	CreationTime any
-	Description any
+	CreationTime     any
+	Description      any
 	FieldDefinitions any
-	IsGlobal any
+	IsGlobal         any
 	LastModifiedTime any
 }
 

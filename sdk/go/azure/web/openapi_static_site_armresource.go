@@ -4,7 +4,7 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteArmresource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -41,44 +41,44 @@ type OpenapiStaticSiteArmresource_Properties_BuildProperties struct {
 type OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFiles struct {
 	Contents any
 	FileName any
-	Type any
+	Type     any
 }
 
 type OpenapiStaticSiteArmresource_Properties_DatabaseConnections struct {
 	ConfigurationFiles any
 	ConnectionIdentity any
-	Name any
-	Region any
-	ResourceId any
+	Name               any
+	Region             any
+	ResourceId         any
 }
 
 type OpenapiStaticSiteArmresource_Properties_LinkedBackends struct {
 	BackendResourceId any
-	CreatedOn any
+	CreatedOn         any
 	ProvisioningState any
-	Region any
+	Region            any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_Details struct {
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error struct {
-	Code any
-	Details any
-	ExtendedCode any
-	InnerErrors any
-	Message any
+	Code            any
+	Details         any
+	ExtendedCode    any
+	InnerErrors     any
+	Message         any
 	MessageTemplate any
-	Parameters any
-	Target any
+	Parameters      any
+	Target          any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Plan struct {
-	Name any
-	Product any
+	Name          any
+	Product       any
 	PromotionCode any
-	Publisher any
-	Version any
+	Publisher     any
+	Version       any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpoint struct {
@@ -87,15 +87,15 @@ type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properti
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties struct {
-	IpAddresses any
-	PrivateEndpoint any
+	IpAddresses                       any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties struct {
@@ -103,43 +103,43 @@ type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properti
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacity struct {
-	Default any
+	Default        any
 	ElasticMaximum any
-	Maximum any
-	Minimum any
-	ScaleType any
+	Maximum        any
+	Minimum        any
+	ScaleType      any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku struct {
 	Capabilities any
-	Capacity any
-	Family any
-	Locations any
-	Name any
-	Size any
-	SkuCapacity any
-	Tier any
+	Capacity     any
+	Family       any
+	Locations    any
+	Name         any
+	Size         any
+	SkuCapacity  any
+	Tier         any
 }
 
 type OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections struct {
-	Error any
-	Id any
-	Identity any
-	Location any
-	Name any
-	Plan any
+	Error      any
+	Id         any
+	Identity   any
+	Location   any
+	Name       any
+	Plan       any
 	Properties any
-	Sku any
-	Status any
-	Tags any
-	Type any
-	Zones any
+	Sku        any
+	Status     any
+	Tags       any
+	Type       any
+	Zones      any
 }
 
 type OpenapiStaticSiteArmresource_Properties_TemplateProperties struct {
@@ -156,8 +156,8 @@ type OpenapiStaticSiteArmresource_Properties_TemplateProperties struct {
 }
 
 type OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_Properties struct {
-	CreatedOn any
-	FunctionAppRegion any
+	CreatedOn             any
+	FunctionAppRegion     any
 	FunctionAppResourceId any
 }
 
@@ -205,254 +205,253 @@ type OpenapiStaticSiteArmresource_Properties struct {
 }
 
 var OpenapiStaticSiteArmresource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiStaticSiteArmresource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiStaticSiteArmresource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiStaticSiteArmresource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiStaticSiteArmresource_Properties_BuildPropertiesFields = ubx.FieldMap{
-		"ApiBuildCommand": ubx.FieldSpec{WireName: "api_build_command"},
-		"ApiLocation": ubx.FieldSpec{WireName: "api_location"},
-		"AppArtifactLocation": ubx.FieldSpec{WireName: "app_artifact_location"},
-		"AppBuildCommand": ubx.FieldSpec{WireName: "app_build_command"},
-		"AppLocation": ubx.FieldSpec{WireName: "app_location"},
-		"GithubActionSecretNameOverride": ubx.FieldSpec{WireName: "github_action_secret_name_override"},
-		"OutputLocation": ubx.FieldSpec{WireName: "output_location"},
-		"SkipGithubActionWorkflowGeneration": ubx.FieldSpec{WireName: "skip_github_action_workflow_generation"},
-	}
+	"ApiBuildCommand":                    ubx.FieldSpec{WireName: "api_build_command"},
+	"ApiLocation":                        ubx.FieldSpec{WireName: "api_location"},
+	"AppArtifactLocation":                ubx.FieldSpec{WireName: "app_artifact_location"},
+	"AppBuildCommand":                    ubx.FieldSpec{WireName: "app_build_command"},
+	"AppLocation":                        ubx.FieldSpec{WireName: "app_location"},
+	"GithubActionSecretNameOverride":     ubx.FieldSpec{WireName: "github_action_secret_name_override"},
+	"OutputLocation":                     ubx.FieldSpec{WireName: "output_location"},
+	"SkipGithubActionWorkflowGeneration": ubx.FieldSpec{WireName: "skip_github_action_workflow_generation"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFilesFields = ubx.FieldMap{
-		"Contents": ubx.FieldSpec{WireName: "contents"},
-		"FileName": ubx.FieldSpec{WireName: "file_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Contents": ubx.FieldSpec{WireName: "contents"},
+	"FileName": ubx.FieldSpec{WireName: "file_name"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_DatabaseConnectionsFields = ubx.FieldMap{
-		"ConfigurationFiles": ubx.FieldSpec{
-			WireName: "configuration_files",
-			Kind: "list",
-			Fields: OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFilesFields,
-		},
-		"ConnectionIdentity": ubx.FieldSpec{WireName: "connection_identity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ConfigurationFiles": ubx.FieldSpec{
+		WireName: "configuration_files",
+		Kind:     "list",
+		Fields:   OpenapiStaticSiteArmresource_Properties_DatabaseConnections_ConfigurationFilesFields,
+	},
+	"ConnectionIdentity": ubx.FieldSpec{WireName: "connection_identity"},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"Region":             ubx.FieldSpec{WireName: "region"},
+	"ResourceId":         ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_LinkedBackendsFields = ubx.FieldMap{
-		"BackendResourceId": ubx.FieldSpec{WireName: "backend_resource_id"},
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-	}
+	"BackendResourceId": ubx.FieldSpec{WireName: "backend_resource_id"},
+	"CreatedOn":         ubx.FieldSpec{WireName: "created_on"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Region":            ubx.FieldSpec{WireName: "region"},
+}
 
-var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_DetailsFields = ubx.FieldMap{
-	}
+var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_DetailsFields = ubx.FieldMap{}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_ErrorFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_DetailsFields,
-		},
-		"ExtendedCode": ubx.FieldSpec{WireName: "extended_code"},
-		"InnerErrors": ubx.FieldSpec{
-			WireName: "inner_errors",
-			Kind: "list",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"MessageTemplate": ubx.FieldSpec{WireName: "message_template"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_DetailsFields,
+	},
+	"ExtendedCode": ubx.FieldSpec{WireName: "extended_code"},
+	"InnerErrors": ubx.FieldSpec{
+		WireName: "inner_errors",
+		Kind:     "list",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Error_DetailsFields,
+	},
+	"Message":         ubx.FieldSpec{WireName: "message"},
+	"MessageTemplate": ubx.FieldSpec{WireName: "message_template"},
+	"Parameters":      ubx.FieldSpec{WireName: "parameters"},
+	"Target":          ubx.FieldSpec{WireName: "target"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_PlanFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Product": ubx.FieldSpec{WireName: "product"},
-		"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"Product":       ubx.FieldSpec{WireName: "product"},
+	"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
+	"Publisher":     ubx.FieldSpec{WireName: "publisher"},
+	"Version":       ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_PropertiesFields = ubx.FieldMap{
-		"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Properties_PropertiesFields,
+	},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_CapabilitiesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Reason": ubx.FieldSpec{WireName: "reason"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Reason": ubx.FieldSpec{WireName: "reason"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacityFields = ubx.FieldMap{
-		"Default": ubx.FieldSpec{WireName: "default"},
-		"ElasticMaximum": ubx.FieldSpec{WireName: "elastic_maximum"},
-		"Maximum": ubx.FieldSpec{WireName: "maximum"},
-		"Minimum": ubx.FieldSpec{WireName: "minimum"},
-		"ScaleType": ubx.FieldSpec{WireName: "scale_type"},
-	}
+	"Default":        ubx.FieldSpec{WireName: "default"},
+	"ElasticMaximum": ubx.FieldSpec{WireName: "elastic_maximum"},
+	"Maximum":        ubx.FieldSpec{WireName: "maximum"},
+	"Minimum":        ubx.FieldSpec{WireName: "minimum"},
+	"ScaleType":      ubx.FieldSpec{WireName: "scale_type"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_SkuFields = ubx.FieldMap{
-		"Capabilities": ubx.FieldSpec{
-			WireName: "capabilities",
-			Kind: "list",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_CapabilitiesFields,
-		},
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"SkuCapacity": ubx.FieldSpec{
-			WireName: "sku_capacity",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacityFields,
-		},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capabilities": ubx.FieldSpec{
+		WireName: "capabilities",
+		Kind:     "list",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_CapabilitiesFields,
+	},
+	"Capacity":  ubx.FieldSpec{WireName: "capacity"},
+	"Family":    ubx.FieldSpec{WireName: "family"},
+	"Locations": ubx.FieldSpec{WireName: "locations"},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Size":      ubx.FieldSpec{WireName: "size"},
+	"SkuCapacity": ubx.FieldSpec{
+		WireName: "sku_capacity",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_Sku_SkuCapacityFields,
+	},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_ErrorFields,
-		},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_IdentityFields,
-		},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Plan": ubx.FieldSpec{
-			WireName: "plan",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_PlanFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_SkuFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_ErrorFields,
+	},
+	"Id": ubx.FieldSpec{WireName: "id"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_IdentityFields,
+	},
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Plan": ubx.FieldSpec{
+		WireName: "plan",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_PlanFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_SkuFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+	"Tags":   ubx.FieldSpec{WireName: "tags"},
+	"Type":   ubx.FieldSpec{WireName: "type"},
+	"Zones":  ubx.FieldSpec{WireName: "zones"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_TemplatePropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IsPrivate": ubx.FieldSpec{WireName: "is_private"},
-		"Owner": ubx.FieldSpec{WireName: "owner"},
-		"RepositoryName": ubx.FieldSpec{WireName: "repository_name"},
-		"TemplateRepositoryUrl": ubx.FieldSpec{WireName: "template_repository_url"},
-	}
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"IsPrivate":             ubx.FieldSpec{WireName: "is_private"},
+	"Owner":                 ubx.FieldSpec{WireName: "owner"},
+	"RepositoryName":        ubx.FieldSpec{WireName: "repository_name"},
+	"TemplateRepositoryUrl": ubx.FieldSpec{WireName: "template_repository_url"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_PropertiesFields = ubx.FieldMap{
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"FunctionAppRegion": ubx.FieldSpec{WireName: "function_app_region"},
-		"FunctionAppResourceId": ubx.FieldSpec{WireName: "function_app_resource_id"},
-	}
+	"CreatedOn":             ubx.FieldSpec{WireName: "created_on"},
+	"FunctionAppRegion":     ubx.FieldSpec{WireName: "function_app_region"},
+	"FunctionAppResourceId": ubx.FieldSpec{WireName: "function_app_resource_id"},
+}
 
 var OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionAppsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionApps_PropertiesFields,
+	},
+}
 
 var OpenapiStaticSiteArmresource_PropertiesFields = ubx.FieldMap{
-		"AllowConfigFileUpdates": ubx.FieldSpec{WireName: "allow_config_file_updates"},
-		"Branch": ubx.FieldSpec{WireName: "branch"},
-		"BuildProperties": ubx.FieldSpec{
-			WireName: "build_properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_BuildPropertiesFields,
-		},
-		"ContentDistributionEndpoint": ubx.FieldSpec{WireName: "content_distribution_endpoint"},
-		"CustomDomains": ubx.FieldSpec{WireName: "custom_domains"},
-		"DatabaseConnections": ubx.FieldSpec{
-			WireName: "database_connections",
-			Kind: "list",
-			Fields: OpenapiStaticSiteArmresource_Properties_DatabaseConnectionsFields,
-		},
-		"DefaultHostname": ubx.FieldSpec{WireName: "default_hostname"},
-		"EnterpriseGradeCdnStatus": ubx.FieldSpec{WireName: "enterprise_grade_cdn_status"},
-		"KeyVaultReferenceIdentity": ubx.FieldSpec{WireName: "key_vault_reference_identity"},
-		"LinkedBackends": ubx.FieldSpec{
-			WireName: "linked_backends",
-			Kind: "list",
-			Fields: OpenapiStaticSiteArmresource_Properties_LinkedBackendsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnectionsFields,
-		},
-		"Provider": ubx.FieldSpec{WireName: "provider"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"RepositoryToken": ubx.FieldSpec{WireName: "repository_token"},
-		"RepositoryUrl": ubx.FieldSpec{WireName: "repository_url"},
-		"StagingEnvironmentPolicy": ubx.FieldSpec{WireName: "staging_environment_policy"},
-		"TemplateProperties": ubx.FieldSpec{
-			WireName: "template_properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_TemplatePropertiesFields,
-		},
-		"UserProvidedFunctionApps": ubx.FieldSpec{
-			WireName: "user_provided_function_apps",
-			Kind: "list",
-			Fields: OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionAppsFields,
-		},
-	}
+	"AllowConfigFileUpdates": ubx.FieldSpec{WireName: "allow_config_file_updates"},
+	"Branch":                 ubx.FieldSpec{WireName: "branch"},
+	"BuildProperties": ubx.FieldSpec{
+		WireName: "build_properties",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_BuildPropertiesFields,
+	},
+	"ContentDistributionEndpoint": ubx.FieldSpec{WireName: "content_distribution_endpoint"},
+	"CustomDomains":               ubx.FieldSpec{WireName: "custom_domains"},
+	"DatabaseConnections": ubx.FieldSpec{
+		WireName: "database_connections",
+		Kind:     "list",
+		Fields:   OpenapiStaticSiteArmresource_Properties_DatabaseConnectionsFields,
+	},
+	"DefaultHostname":           ubx.FieldSpec{WireName: "default_hostname"},
+	"EnterpriseGradeCdnStatus":  ubx.FieldSpec{WireName: "enterprise_grade_cdn_status"},
+	"KeyVaultReferenceIdentity": ubx.FieldSpec{WireName: "key_vault_reference_identity"},
+	"LinkedBackends": ubx.FieldSpec{
+		WireName: "linked_backends",
+		Kind:     "list",
+		Fields:   OpenapiStaticSiteArmresource_Properties_LinkedBackendsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnectionsFields,
+	},
+	"Provider":                 ubx.FieldSpec{WireName: "provider"},
+	"PublicNetworkAccess":      ubx.FieldSpec{WireName: "public_network_access"},
+	"RepositoryToken":          ubx.FieldSpec{WireName: "repository_token"},
+	"RepositoryUrl":            ubx.FieldSpec{WireName: "repository_url"},
+	"StagingEnvironmentPolicy": ubx.FieldSpec{WireName: "staging_environment_policy"},
+	"TemplateProperties": ubx.FieldSpec{
+		WireName: "template_properties",
+		Kind:     "object",
+		Fields:   OpenapiStaticSiteArmresource_Properties_TemplatePropertiesFields,
+	},
+	"UserProvidedFunctionApps": ubx.FieldSpec{
+		WireName: "user_provided_function_apps",
+		Kind:     "list",
+		Fields:   OpenapiStaticSiteArmresource_Properties_UserProvidedFunctionAppsFields,
+	},
+}
 
 type OpenapiStaticSiteArmresourceConfig struct {
 	// Managed service identity.
@@ -485,19 +484,19 @@ var OpenapiStaticSiteArmresource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiStaticSiteArmresource_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiStaticSiteArmresource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiStaticSiteArmresource_Properties_PrivateEndpointConnections_SkuFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

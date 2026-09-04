@@ -31,19 +31,19 @@ type RoleassignmentscallsRoleAssignment_Properties struct {
 }
 
 var RoleassignmentscallsRoleAssignment_PropertiesFields = ubx.FieldMap{
-		"Condition": ubx.FieldSpec{WireName: "condition"},
-		"ConditionVersion": ubx.FieldSpec{WireName: "condition_version"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"DelegatedManagedIdentityResourceId": ubx.FieldSpec{WireName: "delegated_managed_identity_resource_id"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"PrincipalType": ubx.FieldSpec{WireName: "principal_type"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"UpdatedBy": ubx.FieldSpec{WireName: "updated_by"},
-		"UpdatedOn": ubx.FieldSpec{WireName: "updated_on"},
-	}
+	"Condition":                          ubx.FieldSpec{WireName: "condition"},
+	"ConditionVersion":                   ubx.FieldSpec{WireName: "condition_version"},
+	"CreatedBy":                          ubx.FieldSpec{WireName: "created_by"},
+	"CreatedOn":                          ubx.FieldSpec{WireName: "created_on"},
+	"DelegatedManagedIdentityResourceId": ubx.FieldSpec{WireName: "delegated_managed_identity_resource_id"},
+	"Description":                        ubx.FieldSpec{WireName: "description"},
+	"PrincipalId":                        ubx.FieldSpec{WireName: "principal_id"},
+	"PrincipalType":                      ubx.FieldSpec{WireName: "principal_type"},
+	"RoleDefinitionId":                   ubx.FieldSpec{WireName: "role_definition_id"},
+	"Scope":                              ubx.FieldSpec{WireName: "scope"},
+	"UpdatedBy":                          ubx.FieldSpec{WireName: "updated_by"},
+	"UpdatedOn":                          ubx.FieldSpec{WireName: "updated_on"},
+}
 
 type RoleassignmentscallsRoleAssignmentConfig struct {
 	// Role assignment properties.
@@ -60,8 +60,8 @@ var RoleassignmentscallsRoleAssignment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RoleassignmentscallsRoleAssignment_PropertiesFields,
+			Kind:     "object",
+			Fields:   RoleassignmentscallsRoleAssignment_PropertiesFields,
 		},
 	},
 }

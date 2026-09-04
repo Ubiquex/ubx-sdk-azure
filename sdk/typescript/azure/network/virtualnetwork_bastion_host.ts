@@ -139,8 +139,6 @@ const VirtualnetworkBastionHost_SkuFields: FieldMap = {
 };
 
 export interface VirtualnetworkBastionHostConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the Bastion Host. */
   properties?: VirtualnetworkBastionHost_Properties | Computed<VirtualnetworkBastionHost_Properties>;
   /** The sku of this Bastion Host. */
@@ -163,7 +161,6 @@ export interface VirtualnetworkBastionHostAttrs {
 export const VirtualnetworkBastionHost: ResourceBinding<VirtualnetworkBastionHostConfig, VirtualnetworkBastionHostAttrs> = {
   wireType: "azure_network_virtualnetwork_bastion_host",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

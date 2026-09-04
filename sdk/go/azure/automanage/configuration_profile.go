@@ -24,23 +24,12 @@ type ConfigurationProfile_SystemData struct {
 }
 
 var ConfigurationProfile_PropertiesFields = ubx.FieldMap{
-		"Configuration": ubx.FieldSpec{WireName: "configuration"},
-	}
-
-var ConfigurationProfile_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Configuration": ubx.FieldSpec{WireName: "configuration"},
+}
 
 type ConfigurationProfileConfig struct {
 	// Automanage configuration profile properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type ConfigurationProfileAttrs struct {
@@ -55,13 +44,8 @@ var ConfigurationProfile = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ConfigurationProfile_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: ConfigurationProfile_SystemDataFields,
+			Kind:     "object",
+			Fields:   ConfigurationProfile_PropertiesFields,
 		},
 	},
 }

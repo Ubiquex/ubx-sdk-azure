@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ReplicationlinksReplicationLink_Value_Properties struct {
 	IsTerminationAllowed any
-	LinkType any
-	PartnerDatabase any
-	PartnerDatabaseId any
-	PartnerLocation any
-	PartnerRole any
-	PartnerServer any
-	PercentComplete any
-	ReplicationMode any
-	ReplicationState any
-	Role any
-	StartTime any
+	LinkType             any
+	PartnerDatabase      any
+	PartnerDatabaseId    any
+	PartnerLocation      any
+	PartnerRole          any
+	PartnerServer        any
+	PercentComplete      any
+	ReplicationMode      any
+	ReplicationState     any
+	Role                 any
+	StartTime            any
 }
 
 type ReplicationlinksReplicationLink_Value struct {
@@ -24,13 +24,13 @@ type ReplicationlinksReplicationLink_Value struct {
 
 type ReplicationlinksReplicationLinkConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type ReplicationlinksReplicationLinkAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The ReplicationLink items on this page
 	Value any
@@ -40,6 +40,6 @@ var ReplicationlinksReplicationLink = ubx.DataSourceBinding{
 	WireType: "azure_sql_replicationlinks_replication_link",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

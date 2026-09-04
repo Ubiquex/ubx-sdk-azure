@@ -100,20 +100,9 @@ const NetworkmanagerConnectivityConfiguration_PropertiesFields: FieldMap = {
   resourceGuid: "resource_guid",
 };
 
-const NetworkmanagerConnectivityConfiguration_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerConnectivityConfigurationConfig {
   /** Properties of network manager connectivity configuration */
   properties?: NetworkmanagerConnectivityConfiguration_Properties | Computed<NetworkmanagerConnectivityConfiguration_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerConnectivityConfiguration_SystemData | Computed<NetworkmanagerConnectivityConfiguration_SystemData>;
 }
 
 export interface NetworkmanagerConnectivityConfigurationAttrs {
@@ -130,11 +119,6 @@ export const NetworkmanagerConnectivityConfiguration: ResourceBinding<Networkman
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerConnectivityConfiguration_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerConnectivityConfiguration_SystemDataFields,
     },
   },
 };

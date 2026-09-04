@@ -4,36 +4,36 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSourceControl_Value_Properties_GithubActionConfiguration_AzureCredentials struct {
-	ClientId any
-	ClientSecret any
-	Kind any
+	ClientId       any
+	ClientSecret   any
+	Kind           any
 	SubscriptionId any
-	TenantId any
+	TenantId       any
 }
 
 type OpenapiSourceControl_Value_Properties_GithubActionConfiguration_RegistryInfo struct {
 	RegistryPassword any
-	RegistryUrl any
+	RegistryUrl      any
 	RegistryUserName any
 }
 
 type OpenapiSourceControl_Value_Properties_GithubActionConfiguration struct {
-	AzureCredentials any
-	ContextPath any
+	AzureCredentials          any
+	ContextPath               any
 	GithubPersonalAccessToken any
-	Image any
-	Os any
-	PublishType any
-	RegistryInfo any
-	RuntimeStack any
-	RuntimeVersion any
+	Image                     any
+	Os                        any
+	PublishType               any
+	RegistryInfo              any
+	RuntimeStack              any
+	RuntimeVersion            any
 }
 
 type OpenapiSourceControl_Value_Properties struct {
-	Branch any
+	Branch                    any
 	GithubActionConfiguration any
-	OperationState any
-	RepoUrl any
+	OperationState            any
+	RepoUrl                   any
 }
 
 type OpenapiSourceControl_Value struct {

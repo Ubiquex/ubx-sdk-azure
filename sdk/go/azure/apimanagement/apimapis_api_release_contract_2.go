@@ -15,11 +15,11 @@ type ApimapisApiReleaseContract2_Properties struct {
 }
 
 var ApimapisApiReleaseContract2_PropertiesFields = ubx.FieldMap{
-		"ApiId": ubx.FieldSpec{WireName: "api_id"},
-		"CreatedDateTime": ubx.FieldSpec{WireName: "created_date_time"},
-		"Notes": ubx.FieldSpec{WireName: "notes"},
-		"UpdatedDateTime": ubx.FieldSpec{WireName: "updated_date_time"},
-	}
+	"ApiId":           ubx.FieldSpec{WireName: "api_id"},
+	"CreatedDateTime": ubx.FieldSpec{WireName: "created_date_time"},
+	"Notes":           ubx.FieldSpec{WireName: "notes"},
+	"UpdatedDateTime": ubx.FieldSpec{WireName: "updated_date_time"},
+}
 
 type ApimapisApiReleaseContract2Config struct {
 	// API Release details
@@ -36,8 +36,8 @@ var ApimapisApiReleaseContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimapisApiReleaseContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimapisApiReleaseContract2_PropertiesFields,
 		},
 	},
 }

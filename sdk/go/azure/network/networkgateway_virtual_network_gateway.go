@@ -11,7 +11,7 @@ type NetworkgatewayVirtualNetworkGateway_ExtendedLocation struct {
 }
 
 type NetworkgatewayVirtualNetworkGateway_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -38,10 +38,10 @@ type NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfiguration struc
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_BgpSettings_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses any
+	CustomBgpIpAddresses  any
 	DefaultBgpIpAddresses any
-	IpconfigurationId any
-	TunnelIpAddresses any
+	IpconfigurationId     any
+	TunnelIpAddresses     any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_BgpSettings struct {
@@ -61,8 +61,8 @@ type NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixA
 
 type NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes struct {
@@ -73,35 +73,35 @@ type NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes struct {
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappings struct {
 	AddressSpace any
-	PortRange any
+	PortRange    any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties struct {
-	ExternalMappings any
-	InternalMappings any
+	ExternalMappings  any
+	InternalMappings  any
 	IpConfigurationId any
-	Mode any
+	Mode              any
 	ProvisioningState any
-	Type any
+	Type              any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_NatRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -124,73 +124,73 @@ type NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayMigrati
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembers struct {
-	AttributeType any
+	AttributeType  any
 	AttributeValue any
-	Name any
+	Name           any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties struct {
-	IsDefault any
-	PolicyMembers any
-	Priority any
-	ProvisioningState any
+	IsDefault                         any
+	PolicyMembers                     any
+	Priority                          any
+	ProvisioningState                 any
 	VngClientConnectionConfigurations any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_RadiusServers struct {
 	RadiusServerAddress any
-	RadiusServerScore any
-	RadiusServerSecret any
+	RadiusServerScore   any
+	RadiusServerSecret  any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_Properties struct {
-	ProvisioningState any
+	ProvisioningState                 any
 	VirtualNetworkGatewayPolicyGroups any
-	VpnClientAddressPool any
+	VpnClientAddressPool              any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientIpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_Properties struct {
 	ProvisioningState any
-	Thumbprint any
+	Thumbprint        any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates_Properties struct {
 	ProvisioningState any
-	PublicCertData any
+	PublicCertData    any
 }
 
 type NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
@@ -283,366 +283,364 @@ type NetworkgatewayVirtualNetworkGateway_Properties struct {
 }
 
 var NetworkgatewayVirtualNetworkGateway_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: NetworkgatewayVirtualNetworkGateway_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfiguration_BoundsFields = ubx.FieldMap{
-		"Max": ubx.FieldSpec{WireName: "max"},
-		"Min": ubx.FieldSpec{WireName: "min"},
-	}
+	"Max": ubx.FieldSpec{WireName: "max"},
+	"Min": ubx.FieldSpec{WireName: "min"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfigurationFields = ubx.FieldMap{
-		"Bounds": ubx.FieldSpec{
-			WireName: "bounds",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfiguration_BoundsFields,
-		},
-	}
+	"Bounds": ubx.FieldSpec{
+		WireName: "bounds",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfiguration_BoundsFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_BgpSettings_BgpPeeringAddressesFields = ubx.FieldMap{
-		"CustomBgpIpAddresses": ubx.FieldSpec{WireName: "custom_bgp_ip_addresses"},
-		"DefaultBgpIpAddresses": ubx.FieldSpec{WireName: "default_bgp_ip_addresses"},
-		"IpconfigurationId": ubx.FieldSpec{WireName: "ipconfiguration_id"},
-		"TunnelIpAddresses": ubx.FieldSpec{WireName: "tunnel_ip_addresses"},
-	}
+	"CustomBgpIpAddresses":  ubx.FieldSpec{WireName: "custom_bgp_ip_addresses"},
+	"DefaultBgpIpAddresses": ubx.FieldSpec{WireName: "default_bgp_ip_addresses"},
+	"IpconfigurationId":     ubx.FieldSpec{WireName: "ipconfiguration_id"},
+	"TunnelIpAddresses":     ubx.FieldSpec{WireName: "tunnel_ip_addresses"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_BgpSettingsFields = ubx.FieldMap{
-		"Asn": ubx.FieldSpec{WireName: "asn"},
-		"BgpPeeringAddress": ubx.FieldSpec{WireName: "bgp_peering_address"},
-		"BgpPeeringAddresses": ubx.FieldSpec{
-			WireName: "bgp_peering_addresses",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_BgpSettings_BgpPeeringAddressesFields,
-		},
-		"PeerWeight": ubx.FieldSpec{WireName: "peer_weight"},
-	}
+	"Asn":               ubx.FieldSpec{WireName: "asn"},
+	"BgpPeeringAddress": ubx.FieldSpec{WireName: "bgp_peering_address"},
+	"BgpPeeringAddresses": ubx.FieldSpec{
+		WireName: "bgp_peering_addresses",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_BgpSettings_BgpPeeringAddressesFields,
+	},
+	"PeerWeight": ubx.FieldSpec{WireName: "peer_weight"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocationsFields = ubx.FieldMap{
-		"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
-		"NumberOfIpAddresses": ubx.FieldSpec{WireName: "number_of_ip_addresses"},
-		"Pool": ubx.FieldSpec{
-			WireName: "pool",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
-		},
-	}
+	"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
+	"NumberOfIpAddresses":      ubx.FieldSpec{WireName: "number_of_ip_addresses"},
+	"Pool": ubx.FieldSpec{
+		WireName: "pool",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutesFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocationsFields,
-		},
-	}
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocationsFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappingsFields = ubx.FieldMap{
-		"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
-		"PortRange": ubx.FieldSpec{WireName: "port_range"},
-	}
+	"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
+	"PortRange":    ubx.FieldSpec{WireName: "port_range"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_NatRules_PropertiesFields = ubx.FieldMap{
-		"ExternalMappings": ubx.FieldSpec{
-			WireName: "external_mappings",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappingsFields,
-		},
-		"InternalMappings": ubx.FieldSpec{
-			WireName: "internal_mappings",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappingsFields,
-		},
-		"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ExternalMappings": ubx.FieldSpec{
+		WireName: "external_mappings",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappingsFields,
+	},
+	"InternalMappings": ubx.FieldSpec{
+		WireName: "internal_mappings",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_NatRules_Properties_ExternalMappingsFields,
+	},
+	"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
+	"Mode":              ubx.FieldSpec{WireName: "mode"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_NatRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_NatRules_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_NatRules_PropertiesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayMigrationStatusFields = ubx.FieldMap{
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"Phase": ubx.FieldSpec{WireName: "phase"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
+	"Phase":        ubx.FieldSpec{WireName: "phase"},
+	"State":        ubx.FieldSpec{WireName: "state"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembersFields = ubx.FieldMap{
-		"AttributeType": ubx.FieldSpec{WireName: "attribute_type"},
-		"AttributeValue": ubx.FieldSpec{WireName: "attribute_value"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AttributeType":  ubx.FieldSpec{WireName: "attribute_type"},
+	"AttributeValue": ubx.FieldSpec{WireName: "attribute_value"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_PropertiesFields = ubx.FieldMap{
-		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
-		"PolicyMembers": ubx.FieldSpec{
-			WireName: "policy_members",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembersFields,
-		},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VngClientConnectionConfigurations": ubx.FieldSpec{
-			WireName: "vng_client_connection_configurations",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
-		},
-	}
+	"IsDefault": ubx.FieldSpec{WireName: "is_default"},
+	"PolicyMembers": ubx.FieldSpec{
+		WireName: "policy_members",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_Properties_PolicyMembersFields,
+	},
+	"Priority":          ubx.FieldSpec{WireName: "priority"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VngClientConnectionConfigurations": ubx.FieldSpec{
+		WireName: "vng_client_connection_configurations",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroupsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroups_PropertiesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_RadiusServersFields = ubx.FieldMap{
-		"RadiusServerAddress": ubx.FieldSpec{WireName: "radius_server_address"},
-		"RadiusServerScore": ubx.FieldSpec{WireName: "radius_server_score"},
-		"RadiusServerSecret": ubx.FieldSpec{WireName: "radius_server_secret"},
-	}
+	"RadiusServerAddress": ubx.FieldSpec{WireName: "radius_server_address"},
+	"RadiusServerScore":   ubx.FieldSpec{WireName: "radius_server_score"},
+	"RadiusServerSecret":  ubx.FieldSpec{WireName: "radius_server_secret"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkGatewayPolicyGroups": ubx.FieldSpec{
-			WireName: "virtual_network_gateway_policy_groups",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
-		},
-		"VpnClientAddressPool": ubx.FieldSpec{
-			WireName: "vpn_client_address_pool",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutesFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkGatewayPolicyGroups": ubx.FieldSpec{
+		WireName: "virtual_network_gateway_policy_groups",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
+	},
+	"VpnClientAddressPool": ubx.FieldSpec{
+		WireName: "vpn_client_address_pool",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurations_PropertiesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientIpsecPoliciesFields = ubx.FieldMap{
-		"DhGroup": ubx.FieldSpec{WireName: "dh_group"},
-		"IkeEncryption": ubx.FieldSpec{WireName: "ike_encryption"},
-		"IkeIntegrity": ubx.FieldSpec{WireName: "ike_integrity"},
-		"IpsecEncryption": ubx.FieldSpec{WireName: "ipsec_encryption"},
-		"IpsecIntegrity": ubx.FieldSpec{WireName: "ipsec_integrity"},
-		"PfsGroup": ubx.FieldSpec{WireName: "pfs_group"},
-		"SaDataSizeKilobytes": ubx.FieldSpec{WireName: "sa_data_size_kilobytes"},
-		"SaLifeTimeSeconds": ubx.FieldSpec{WireName: "sa_life_time_seconds"},
-	}
+	"DhGroup":             ubx.FieldSpec{WireName: "dh_group"},
+	"IkeEncryption":       ubx.FieldSpec{WireName: "ike_encryption"},
+	"IkeIntegrity":        ubx.FieldSpec{WireName: "ike_integrity"},
+	"IpsecEncryption":     ubx.FieldSpec{WireName: "ipsec_encryption"},
+	"IpsecIntegrity":      ubx.FieldSpec{WireName: "ipsec_integrity"},
+	"PfsGroup":            ubx.FieldSpec{WireName: "pfs_group"},
+	"SaDataSizeKilobytes": ubx.FieldSpec{WireName: "sa_data_size_kilobytes"},
+	"SaLifeTimeSeconds":   ubx.FieldSpec{WireName: "sa_life_time_seconds"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Thumbprint":        ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificatesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificates_PropertiesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicCertData": ubx.FieldSpec{WireName: "public_cert_data"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicCertData":    ubx.FieldSpec{WireName: "public_cert_data"},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificatesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificates_PropertiesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfigurationFields = ubx.FieldMap{
-		"AadAudience": ubx.FieldSpec{WireName: "aad_audience"},
-		"AadIssuer": ubx.FieldSpec{WireName: "aad_issuer"},
-		"AadTenant": ubx.FieldSpec{WireName: "aad_tenant"},
-		"RadiusServerAddress": ubx.FieldSpec{WireName: "radius_server_address"},
-		"RadiusServerSecret": ubx.FieldSpec{WireName: "radius_server_secret"},
-		"RadiusServers": ubx.FieldSpec{
-			WireName: "radius_servers",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_RadiusServersFields,
-		},
-		"VngClientConnectionConfigurations": ubx.FieldSpec{
-			WireName: "vng_client_connection_configurations",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurationsFields,
-		},
-		"VpnAuthenticationTypes": ubx.FieldSpec{WireName: "vpn_authentication_types"},
-		"VpnClientAddressPool": ubx.FieldSpec{
-			WireName: "vpn_client_address_pool",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutesFields,
-		},
-		"VpnClientIpsecPolicies": ubx.FieldSpec{
-			WireName: "vpn_client_ipsec_policies",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientIpsecPoliciesFields,
-		},
-		"VpnClientProtocols": ubx.FieldSpec{WireName: "vpn_client_protocols"},
-		"VpnClientRevokedCertificates": ubx.FieldSpec{
-			WireName: "vpn_client_revoked_certificates",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificatesFields,
-		},
-		"VpnClientRootCertificates": ubx.FieldSpec{
-			WireName: "vpn_client_root_certificates",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificatesFields,
-		},
-	}
+	"AadAudience":         ubx.FieldSpec{WireName: "aad_audience"},
+	"AadIssuer":           ubx.FieldSpec{WireName: "aad_issuer"},
+	"AadTenant":           ubx.FieldSpec{WireName: "aad_tenant"},
+	"RadiusServerAddress": ubx.FieldSpec{WireName: "radius_server_address"},
+	"RadiusServerSecret":  ubx.FieldSpec{WireName: "radius_server_secret"},
+	"RadiusServers": ubx.FieldSpec{
+		WireName: "radius_servers",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_RadiusServersFields,
+	},
+	"VngClientConnectionConfigurations": ubx.FieldSpec{
+		WireName: "vng_client_connection_configurations",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VngClientConnectionConfigurationsFields,
+	},
+	"VpnAuthenticationTypes": ubx.FieldSpec{WireName: "vpn_authentication_types"},
+	"VpnClientAddressPool": ubx.FieldSpec{
+		WireName: "vpn_client_address_pool",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutesFields,
+	},
+	"VpnClientIpsecPolicies": ubx.FieldSpec{
+		WireName: "vpn_client_ipsec_policies",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientIpsecPoliciesFields,
+	},
+	"VpnClientProtocols": ubx.FieldSpec{WireName: "vpn_client_protocols"},
+	"VpnClientRevokedCertificates": ubx.FieldSpec{
+		WireName: "vpn_client_revoked_certificates",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRevokedCertificatesFields,
+	},
+	"VpnClientRootCertificates": ubx.FieldSpec{
+		WireName: "vpn_client_root_certificates",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfiguration_VpnClientRootCertificatesFields,
+	},
+}
 
 var NetworkgatewayVirtualNetworkGateway_PropertiesFields = ubx.FieldMap{
-		"ActiveActive": ubx.FieldSpec{WireName: "active_active"},
-		"AdminState": ubx.FieldSpec{WireName: "admin_state"},
-		"AllowRemoteVnetTraffic": ubx.FieldSpec{WireName: "allow_remote_vnet_traffic"},
-		"AllowVirtualWanTraffic": ubx.FieldSpec{WireName: "allow_virtual_wan_traffic"},
-		"AutoScaleConfiguration": ubx.FieldSpec{
-			WireName: "auto_scale_configuration",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfigurationFields,
-		},
-		"BgpSettings": ubx.FieldSpec{
-			WireName: "bgp_settings",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_BgpSettingsFields,
-		},
-		"CustomRoutes": ubx.FieldSpec{
-			WireName: "custom_routes",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutesFields,
-		},
-		"DisableIpsecReplayProtection": ubx.FieldSpec{WireName: "disable_ipsec_replay_protection"},
-		"EnableBgp": ubx.FieldSpec{WireName: "enable_bgp"},
-		"EnableBgpRouteTranslationForNat": ubx.FieldSpec{WireName: "enable_bgp_route_translation_for_nat"},
-		"EnableDnsForwarding": ubx.FieldSpec{WireName: "enable_dns_forwarding"},
-		"EnableHighBandwidthVpnGateway": ubx.FieldSpec{WireName: "enable_high_bandwidth_vpn_gateway"},
-		"EnablePrivateIpAddress": ubx.FieldSpec{WireName: "enable_private_ip_address"},
-		"GatewayDefaultSite": ubx.FieldSpec{
-			WireName: "gateway_default_site",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
-		},
-		"GatewayType": ubx.FieldSpec{WireName: "gateway_type"},
-		"InboundDnsForwardingEndpoint": ubx.FieldSpec{WireName: "inbound_dns_forwarding_endpoint"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurationsFields,
-		},
-		"NatRules": ubx.FieldSpec{
-			WireName: "nat_rules",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_NatRulesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResiliencyModel": ubx.FieldSpec{WireName: "resiliency_model"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_SkuFields,
-		},
-		"VNetExtendedLocationResourceId": ubx.FieldSpec{WireName: "v_net_extended_location_resource_id"},
-		"VirtualNetworkGatewayMigrationStatus": ubx.FieldSpec{
-			WireName: "virtual_network_gateway_migration_status",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayMigrationStatusFields,
-		},
-		"VirtualNetworkGatewayPolicyGroups": ubx.FieldSpec{
-			WireName: "virtual_network_gateway_policy_groups",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroupsFields,
-		},
-		"VpnClientConfiguration": ubx.FieldSpec{
-			WireName: "vpn_client_configuration",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfigurationFields,
-		},
-		"VpnGatewayGeneration": ubx.FieldSpec{WireName: "vpn_gateway_generation"},
-		"VpnType": ubx.FieldSpec{WireName: "vpn_type"},
-	}
+	"ActiveActive":           ubx.FieldSpec{WireName: "active_active"},
+	"AdminState":             ubx.FieldSpec{WireName: "admin_state"},
+	"AllowRemoteVnetTraffic": ubx.FieldSpec{WireName: "allow_remote_vnet_traffic"},
+	"AllowVirtualWanTraffic": ubx.FieldSpec{WireName: "allow_virtual_wan_traffic"},
+	"AutoScaleConfiguration": ubx.FieldSpec{
+		WireName: "auto_scale_configuration",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_AutoScaleConfigurationFields,
+	},
+	"BgpSettings": ubx.FieldSpec{
+		WireName: "bgp_settings",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_BgpSettingsFields,
+	},
+	"CustomRoutes": ubx.FieldSpec{
+		WireName: "custom_routes",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutesFields,
+	},
+	"DisableIpsecReplayProtection":    ubx.FieldSpec{WireName: "disable_ipsec_replay_protection"},
+	"EnableBgp":                       ubx.FieldSpec{WireName: "enable_bgp"},
+	"EnableBgpRouteTranslationForNat": ubx.FieldSpec{WireName: "enable_bgp_route_translation_for_nat"},
+	"EnableDnsForwarding":             ubx.FieldSpec{WireName: "enable_dns_forwarding"},
+	"EnableHighBandwidthVpnGateway":   ubx.FieldSpec{WireName: "enable_high_bandwidth_vpn_gateway"},
+	"EnablePrivateIpAddress":          ubx.FieldSpec{WireName: "enable_private_ip_address"},
+	"GatewayDefaultSite": ubx.FieldSpec{
+		WireName: "gateway_default_site",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_CustomRoutes_IpamPoolPrefixAllocations_PoolFields,
+	},
+	"GatewayType":                  ubx.FieldSpec{WireName: "gateway_type"},
+	"InboundDnsForwardingEndpoint": ubx.FieldSpec{WireName: "inbound_dns_forwarding_endpoint"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_IpConfigurationsFields,
+	},
+	"NatRules": ubx.FieldSpec{
+		WireName: "nat_rules",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_NatRulesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResiliencyModel":   ubx.FieldSpec{WireName: "resiliency_model"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_SkuFields,
+	},
+	"VNetExtendedLocationResourceId": ubx.FieldSpec{WireName: "v_net_extended_location_resource_id"},
+	"VirtualNetworkGatewayMigrationStatus": ubx.FieldSpec{
+		WireName: "virtual_network_gateway_migration_status",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayMigrationStatusFields,
+	},
+	"VirtualNetworkGatewayPolicyGroups": ubx.FieldSpec{
+		WireName: "virtual_network_gateway_policy_groups",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VirtualNetworkGatewayPolicyGroupsFields,
+	},
+	"VpnClientConfiguration": ubx.FieldSpec{
+		WireName: "vpn_client_configuration",
+		Kind:     "object",
+		Fields:   NetworkgatewayVirtualNetworkGateway_Properties_VpnClientConfigurationFields,
+	},
+	"VpnGatewayGeneration": ubx.FieldSpec{WireName: "vpn_gateway_generation"},
+	"VpnType":              ubx.FieldSpec{WireName: "vpn_type"},
+}
 
 type NetworkgatewayVirtualNetworkGatewayConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// ExtendedLocation complex type.
 	ExtendedLocation any
 	// Identity for the resource.
@@ -665,21 +663,20 @@ type NetworkgatewayVirtualNetworkGatewayAttrs struct {
 var NetworkgatewayVirtualNetworkGateway = ubx.ResourceBinding{
 	WireType: "azure_network_networkgateway_virtual_network_gateway",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   NetworkgatewayVirtualNetworkGateway_ExtendedLocationFields,
 		},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_IdentityFields,
+			Kind:     "object",
+			Fields:   NetworkgatewayVirtualNetworkGateway_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGateway_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkgatewayVirtualNetworkGateway_PropertiesFields,
 		},
 	},
 }

@@ -10,8 +10,16 @@ import ubx_sdk as ubx
 class ApimworkspacesSubscriptionContract2_Properties:
     # Determines whether tracing can be enabled
     allow_tracing: Any = None
+    # Subscription creation date. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    created_date: Any = None
     # Subscription name.
     display_name: Any = None
+    # Date when subscription was cancelled or expired. The setting is for audit purposes only and the subscription is not automatically cancelled. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    end_date: Any = None
+    # Subscription expiration date. The setting is for audit purposes only and the subscription is not automatically expired. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    expiration_date: Any = None
+    # Upcoming subscription expiration notification date. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    notification_date: Any = None
     # User (user id path) for whom subscription is being created in form /users/{userId}
     owner_id: Any = None
     # Primary subscription key. If not specified during request key will be generated automatically.
@@ -20,17 +28,27 @@ class ApimworkspacesSubscriptionContract2_Properties:
     scope: Any = None
     # Secondary subscription key. If not specified during request key will be generated automatically.
     secondary_key: Any = None
+    # Subscription activation date. The setting is for audit purposes only and the subscription is not automatically activated. The subscription lifecycle can be managed by using the `state` property. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    start_date: Any = None
     # Initial subscription state. If no value is specified, subscription is created with Submitted state. Possible states are * active – the subscription is active, * suspended – the subscription is blocked, and the subscriber cannot call any APIs of the product, * submitted – the subscription request has been made by the developer, but has not yet been approved or rejected, * rejected – the subscription request has been denied by an administrator, * cancelled – the subscription has been cancelled by the developer or administrator, * expired – the subscription reached its expiration date and was deactivated.
     state: Any = None
+    # Optional subscription comment added by an administrator when the state is changed to the 'rejected'.
+    state_comment: Any = None
 
 _ApimworkspacesSubscriptionContract2_PropertiesFields = {
     "allow_tracing": ubx.FieldSpec(wire_name="allow_tracing"),
+    "created_date": ubx.FieldSpec(wire_name="created_date"),
     "display_name": ubx.FieldSpec(wire_name="display_name"),
+    "end_date": ubx.FieldSpec(wire_name="end_date"),
+    "expiration_date": ubx.FieldSpec(wire_name="expiration_date"),
+    "notification_date": ubx.FieldSpec(wire_name="notification_date"),
     "owner_id": ubx.FieldSpec(wire_name="owner_id"),
     "primary_key": ubx.FieldSpec(wire_name="primary_key"),
     "scope": ubx.FieldSpec(wire_name="scope"),
     "secondary_key": ubx.FieldSpec(wire_name="secondary_key"),
+    "start_date": ubx.FieldSpec(wire_name="start_date"),
     "state": ubx.FieldSpec(wire_name="state"),
+    "state_comment": ubx.FieldSpec(wire_name="state_comment"),
 }
 
 @dataclasses.dataclass

@@ -21,14 +21,14 @@ type SyncagentsSyncAgent_Properties struct {
 }
 
 var SyncagentsSyncAgent_PropertiesFields = ubx.FieldMap{
-		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
-		"IsUpToDate": ubx.FieldSpec{WireName: "is_up_to_date"},
-		"LastAliveTime": ubx.FieldSpec{WireName: "last_alive_time"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"SyncDatabaseId": ubx.FieldSpec{WireName: "sync_database_id"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ExpiryTime":     ubx.FieldSpec{WireName: "expiry_time"},
+	"IsUpToDate":     ubx.FieldSpec{WireName: "is_up_to_date"},
+	"LastAliveTime":  ubx.FieldSpec{WireName: "last_alive_time"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+	"State":          ubx.FieldSpec{WireName: "state"},
+	"SyncDatabaseId": ubx.FieldSpec{WireName: "sync_database_id"},
+	"Version":        ubx.FieldSpec{WireName: "version"},
+}
 
 type SyncagentsSyncAgentConfig struct {
 	// Properties of an Azure SQL Database sync agent.
@@ -45,8 +45,8 @@ var SyncagentsSyncAgent = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SyncagentsSyncAgent_PropertiesFields,
+			Kind:     "object",
+			Fields:   SyncagentsSyncAgent_PropertiesFields,
 		},
 	},
 }

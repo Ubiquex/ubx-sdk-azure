@@ -4,7 +4,7 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Workspace_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -80,14 +80,14 @@ type Workspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint 
 
 type Workspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Workspace_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Workspace_Properties_PrivateEndpointConnections struct {
@@ -171,178 +171,178 @@ type Workspace_Properties struct {
 }
 
 var Workspace_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Workspace_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Workspace_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Workspace_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Workspace_Properties_CspWorkspaceAdminPropertiesFields = ubx.FieldMap{
-		"InitialWorkspaceAdminObjectId": ubx.FieldSpec{WireName: "initial_workspace_admin_object_id"},
-	}
+	"InitialWorkspaceAdminObjectId": ubx.FieldSpec{WireName: "initial_workspace_admin_object_id"},
+}
 
 var Workspace_Properties_DefaultDataLakeStorageFields = ubx.FieldMap{
-		"AccountUrl": ubx.FieldSpec{WireName: "account_url"},
-		"CreateManagedPrivateEndpoint": ubx.FieldSpec{WireName: "create_managed_private_endpoint"},
-		"Filesystem": ubx.FieldSpec{WireName: "filesystem"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"AccountUrl":                   ubx.FieldSpec{WireName: "account_url"},
+	"CreateManagedPrivateEndpoint": ubx.FieldSpec{WireName: "create_managed_private_endpoint"},
+	"Filesystem":                   ubx.FieldSpec{WireName: "filesystem"},
+	"ResourceId":                   ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var Workspace_Properties_Encryption_Cmk_KekIdentityFields = ubx.FieldMap{
-		"UseSystemAssignedIdentity": ubx.FieldSpec{WireName: "use_system_assigned_identity"},
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"UseSystemAssignedIdentity": ubx.FieldSpec{WireName: "use_system_assigned_identity"},
+	"UserAssignedIdentity":      ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var Workspace_Properties_Encryption_Cmk_KeyFields = ubx.FieldMap{
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+}
 
 var Workspace_Properties_Encryption_CmkFields = ubx.FieldMap{
-		"KekIdentity": ubx.FieldSpec{
-			WireName: "kek_identity",
-			Kind: "object",
-			Fields: Workspace_Properties_Encryption_Cmk_KekIdentityFields,
-		},
-		"Key": ubx.FieldSpec{
-			WireName: "key",
-			Kind: "object",
-			Fields: Workspace_Properties_Encryption_Cmk_KeyFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"KekIdentity": ubx.FieldSpec{
+		WireName: "kek_identity",
+		Kind:     "object",
+		Fields:   Workspace_Properties_Encryption_Cmk_KekIdentityFields,
+	},
+	"Key": ubx.FieldSpec{
+		WireName: "key",
+		Kind:     "object",
+		Fields:   Workspace_Properties_Encryption_Cmk_KeyFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var Workspace_Properties_EncryptionFields = ubx.FieldMap{
-		"Cmk": ubx.FieldSpec{
-			WireName: "cmk",
-			Kind: "object",
-			Fields: Workspace_Properties_Encryption_CmkFields,
-		},
-		"DoubleEncryptionEnabled": ubx.FieldSpec{WireName: "double_encryption_enabled"},
-	}
+	"Cmk": ubx.FieldSpec{
+		WireName: "cmk",
+		Kind:     "object",
+		Fields:   Workspace_Properties_Encryption_CmkFields,
+	},
+	"DoubleEncryptionEnabled": ubx.FieldSpec{WireName: "double_encryption_enabled"},
+}
 
 var Workspace_Properties_ManagedVirtualNetworkSettingsFields = ubx.FieldMap{
-		"AllowedAadTenantIdsForLinking": ubx.FieldSpec{WireName: "allowed_aad_tenant_ids_for_linking"},
-		"LinkedAccessCheckOnTargetResource": ubx.FieldSpec{WireName: "linked_access_check_on_target_resource"},
-		"PreventDataExfiltration": ubx.FieldSpec{WireName: "prevent_data_exfiltration"},
-	}
+	"AllowedAadTenantIdsForLinking":     ubx.FieldSpec{WireName: "allowed_aad_tenant_ids_for_linking"},
+	"LinkedAccessCheckOnTargetResource": ubx.FieldSpec{WireName: "linked_access_check_on_target_resource"},
+	"PreventDataExfiltration":           ubx.FieldSpec{WireName: "prevent_data_exfiltration"},
+}
 
 var Workspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Workspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var Workspace_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Workspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Workspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Workspace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Workspace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Workspace_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Workspace_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Workspace_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Workspace_Properties_PurviewConfigurationFields = ubx.FieldMap{
-		"PurviewResourceId": ubx.FieldSpec{WireName: "purview_resource_id"},
-	}
+	"PurviewResourceId": ubx.FieldSpec{WireName: "purview_resource_id"},
+}
 
 var Workspace_Properties_VirtualNetworkProfileFields = ubx.FieldMap{
-		"ComputeSubnetId": ubx.FieldSpec{WireName: "compute_subnet_id"},
-	}
+	"ComputeSubnetId": ubx.FieldSpec{WireName: "compute_subnet_id"},
+}
 
 var Workspace_Properties_WorkspaceRepositoryConfigurationFields = ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"CollaborationBranch": ubx.FieldSpec{WireName: "collaboration_branch"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"LastCommitId": ubx.FieldSpec{WireName: "last_commit_id"},
-		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
-		"RepositoryName": ubx.FieldSpec{WireName: "repository_name"},
-		"RootFolder": ubx.FieldSpec{WireName: "root_folder"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"AccountName":         ubx.FieldSpec{WireName: "account_name"},
+	"CollaborationBranch": ubx.FieldSpec{WireName: "collaboration_branch"},
+	"HostName":            ubx.FieldSpec{WireName: "host_name"},
+	"LastCommitId":        ubx.FieldSpec{WireName: "last_commit_id"},
+	"ProjectName":         ubx.FieldSpec{WireName: "project_name"},
+	"RepositoryName":      ubx.FieldSpec{WireName: "repository_name"},
+	"RootFolder":          ubx.FieldSpec{WireName: "root_folder"},
+	"TenantId":            ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":                ubx.FieldSpec{WireName: "type"},
+}
 
 var Workspace_PropertiesFields = ubx.FieldMap{
-		"AdlaResourceId": ubx.FieldSpec{WireName: "adla_resource_id"},
-		"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
-		"ConnectivityEndpoints": ubx.FieldSpec{WireName: "connectivity_endpoints"},
-		"CspWorkspaceAdminProperties": ubx.FieldSpec{
-			WireName: "csp_workspace_admin_properties",
-			Kind: "object",
-			Fields: Workspace_Properties_CspWorkspaceAdminPropertiesFields,
-		},
-		"DefaultDataLakeStorage": ubx.FieldSpec{
-			WireName: "default_data_lake_storage",
-			Kind: "object",
-			Fields: Workspace_Properties_DefaultDataLakeStorageFields,
-		},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: Workspace_Properties_EncryptionFields,
-		},
-		"ExtraProperties": ubx.FieldSpec{WireName: "extra_properties"},
-		"ManagedResourceGroupName": ubx.FieldSpec{WireName: "managed_resource_group_name"},
-		"ManagedVirtualNetwork": ubx.FieldSpec{WireName: "managed_virtual_network"},
-		"ManagedVirtualNetworkSettings": ubx.FieldSpec{
-			WireName: "managed_virtual_network_settings",
-			Kind: "object",
-			Fields: Workspace_Properties_ManagedVirtualNetworkSettingsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Workspace_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"PurviewConfiguration": ubx.FieldSpec{
-			WireName: "purview_configuration",
-			Kind: "object",
-			Fields: Workspace_Properties_PurviewConfigurationFields,
-		},
-		"Settings": ubx.FieldSpec{WireName: "settings"},
-		"SqlAdministratorLogin": ubx.FieldSpec{WireName: "sql_administrator_login"},
-		"SqlAdministratorLoginPassword": ubx.FieldSpec{WireName: "sql_administrator_login_password"},
-		"TrustedServiceBypassEnabled": ubx.FieldSpec{WireName: "trusted_service_bypass_enabled"},
-		"VirtualNetworkProfile": ubx.FieldSpec{
-			WireName: "virtual_network_profile",
-			Kind: "object",
-			Fields: Workspace_Properties_VirtualNetworkProfileFields,
-		},
-		"WorkspaceRepositoryConfiguration": ubx.FieldSpec{
-			WireName: "workspace_repository_configuration",
-			Kind: "object",
-			Fields: Workspace_Properties_WorkspaceRepositoryConfigurationFields,
-		},
-		"WorkspaceUid": ubx.FieldSpec{WireName: "workspace_uid"},
-	}
+	"AdlaResourceId":            ubx.FieldSpec{WireName: "adla_resource_id"},
+	"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
+	"ConnectivityEndpoints":     ubx.FieldSpec{WireName: "connectivity_endpoints"},
+	"CspWorkspaceAdminProperties": ubx.FieldSpec{
+		WireName: "csp_workspace_admin_properties",
+		Kind:     "object",
+		Fields:   Workspace_Properties_CspWorkspaceAdminPropertiesFields,
+	},
+	"DefaultDataLakeStorage": ubx.FieldSpec{
+		WireName: "default_data_lake_storage",
+		Kind:     "object",
+		Fields:   Workspace_Properties_DefaultDataLakeStorageFields,
+	},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   Workspace_Properties_EncryptionFields,
+	},
+	"ExtraProperties":          ubx.FieldSpec{WireName: "extra_properties"},
+	"ManagedResourceGroupName": ubx.FieldSpec{WireName: "managed_resource_group_name"},
+	"ManagedVirtualNetwork":    ubx.FieldSpec{WireName: "managed_virtual_network"},
+	"ManagedVirtualNetworkSettings": ubx.FieldSpec{
+		WireName: "managed_virtual_network_settings",
+		Kind:     "object",
+		Fields:   Workspace_Properties_ManagedVirtualNetworkSettingsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Workspace_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"PurviewConfiguration": ubx.FieldSpec{
+		WireName: "purview_configuration",
+		Kind:     "object",
+		Fields:   Workspace_Properties_PurviewConfigurationFields,
+	},
+	"Settings":                      ubx.FieldSpec{WireName: "settings"},
+	"SqlAdministratorLogin":         ubx.FieldSpec{WireName: "sql_administrator_login"},
+	"SqlAdministratorLoginPassword": ubx.FieldSpec{WireName: "sql_administrator_login_password"},
+	"TrustedServiceBypassEnabled":   ubx.FieldSpec{WireName: "trusted_service_bypass_enabled"},
+	"VirtualNetworkProfile": ubx.FieldSpec{
+		WireName: "virtual_network_profile",
+		Kind:     "object",
+		Fields:   Workspace_Properties_VirtualNetworkProfileFields,
+	},
+	"WorkspaceRepositoryConfiguration": ubx.FieldSpec{
+		WireName: "workspace_repository_configuration",
+		Kind:     "object",
+		Fields:   Workspace_Properties_WorkspaceRepositoryConfigurationFields,
+	},
+	"WorkspaceUid": ubx.FieldSpec{WireName: "workspace_uid"},
+}
 
 type WorkspaceConfig struct {
 	// The workspace managed identity
@@ -363,13 +363,13 @@ var Workspace = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Workspace_IdentityFields,
+			Kind:     "object",
+			Fields:   Workspace_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Workspace_PropertiesFields,
+			Kind:     "object",
+			Fields:   Workspace_PropertiesFields,
 		},
 	},
 }

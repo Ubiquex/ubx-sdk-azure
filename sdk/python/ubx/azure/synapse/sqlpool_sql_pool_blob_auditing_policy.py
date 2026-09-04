@@ -38,8 +38,6 @@ _SqlpoolSqlPoolBlobAuditingPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class SqlpoolSqlPoolBlobAuditingPolicyConfig:
-    # Resource kind.
-    kind: Any = None
     # Properties of a Sql pool blob auditing policy.
     properties: Any = None
 
@@ -53,7 +51,6 @@ class SqlpoolSqlPoolBlobAuditingPolicyAttrs:
 SqlpoolSqlPoolBlobAuditingPolicy = ubx.ResourceBinding(
     wire_type="azure_synapse_sqlpool_sql_pool_blob_auditing_policy",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

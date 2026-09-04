@@ -247,20 +247,9 @@ const HealthcareApisServicesDescription_PropertiesFields: FieldMap = {
   publicNetworkAccess: "public_network_access",
 };
 
-const HealthcareApisServicesDescription_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface HealthcareApisServicesDescriptionConfig {
   /** The properties of a service instance. */
   properties?: HealthcareApisServicesDescription_Properties | Computed<HealthcareApisServicesDescription_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: HealthcareApisServicesDescription_SystemData | Computed<HealthcareApisServicesDescription_SystemData>;
 }
 
 export interface HealthcareApisServicesDescriptionAttrs {
@@ -277,11 +266,6 @@ export const HealthcareApisServicesDescription: ResourceBinding<HealthcareApisSe
       wireName: "properties",
       kind: "object",
       fields: HealthcareApisServicesDescription_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: HealthcareApisServicesDescription_SystemDataFields,
     },
   },
 };

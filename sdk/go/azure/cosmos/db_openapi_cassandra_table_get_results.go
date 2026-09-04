@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiCassandraTableGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -31,7 +31,7 @@ type DbOpenapiCassandraTableGetResults_Properties_Options struct {
 }
 
 type DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ClusterKeys struct {
-	Name any
+	Name    any
 	OrderBy any
 }
 
@@ -54,6 +54,12 @@ type DbOpenapiCassandraTableGetResults_Properties_Resource_Schema struct {
 }
 
 type DbOpenapiCassandraTableGetResults_Properties_Resource struct {
+	// A system generated property representing the resource etag required for optimistic concurrency control.
+	Etag any
+	// A system generated property. A unique identifier.
+	Rid any
+	// A system generated property that denotes the last updated timestamp of the resource.
+	Ts any
 	// Analytical TTL.
 	AnalyticalStorageTtl any
 	// Time to live of the Cosmos DB Cassandra table
@@ -72,73 +78,76 @@ type DbOpenapiCassandraTableGetResults_Properties struct {
 }
 
 var DbOpenapiCassandraTableGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiCassandraTableGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiCassandraTableGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiCassandraTableGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ClusterKeysFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-	}
+	"Name":    ubx.FieldSpec{WireName: "name"},
+	"OrderBy": ubx.FieldSpec{WireName: "order_by"},
+}
 
 var DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ColumnsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_PartitionKeysFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var DbOpenapiCassandraTableGetResults_Properties_Resource_SchemaFields = ubx.FieldMap{
-		"ClusterKeys": ubx.FieldSpec{
-			WireName: "cluster_keys",
-			Kind: "list",
-			Fields: DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ClusterKeysFields,
-		},
-		"Columns": ubx.FieldSpec{
-			WireName: "columns",
-			Kind: "list",
-			Fields: DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ColumnsFields,
-		},
-		"PartitionKeys": ubx.FieldSpec{
-			WireName: "partition_keys",
-			Kind: "list",
-			Fields: DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_PartitionKeysFields,
-		},
-	}
+	"ClusterKeys": ubx.FieldSpec{
+		WireName: "cluster_keys",
+		Kind:     "list",
+		Fields:   DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ClusterKeysFields,
+	},
+	"Columns": ubx.FieldSpec{
+		WireName: "columns",
+		Kind:     "list",
+		Fields:   DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_ColumnsFields,
+	},
+	"PartitionKeys": ubx.FieldSpec{
+		WireName: "partition_keys",
+		Kind:     "list",
+		Fields:   DbOpenapiCassandraTableGetResults_Properties_Resource_Schema_PartitionKeysFields,
+	},
+}
 
 var DbOpenapiCassandraTableGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"AnalyticalStorageTtl": ubx.FieldSpec{WireName: "analytical_storage_ttl"},
-		"DefaultTtl": ubx.FieldSpec{WireName: "default_ttl"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Schema": ubx.FieldSpec{
-			WireName: "schema",
-			Kind: "object",
-			Fields: DbOpenapiCassandraTableGetResults_Properties_Resource_SchemaFields,
-		},
-	}
+	"Etag":                 ubx.FieldSpec{WireName: "_etag"},
+	"Rid":                  ubx.FieldSpec{WireName: "_rid"},
+	"Ts":                   ubx.FieldSpec{WireName: "_ts"},
+	"AnalyticalStorageTtl": ubx.FieldSpec{WireName: "analytical_storage_ttl"},
+	"DefaultTtl":           ubx.FieldSpec{WireName: "default_ttl"},
+	"Id":                   ubx.FieldSpec{WireName: "id"},
+	"Schema": ubx.FieldSpec{
+		WireName: "schema",
+		Kind:     "object",
+		Fields:   DbOpenapiCassandraTableGetResults_Properties_Resource_SchemaFields,
+	},
+}
 
 var DbOpenapiCassandraTableGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiCassandraTableGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiCassandraTableGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiCassandraTableGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiCassandraTableGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiCassandraTableGetResultsConfig struct {
 	// Properties to create and update Azure Cosmos DB Cassandra table.
@@ -161,8 +170,8 @@ var DbOpenapiCassandraTableGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiCassandraTableGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiCassandraTableGetResults_PropertiesFields,
 		},
 	},
 }

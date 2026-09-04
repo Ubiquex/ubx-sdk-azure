@@ -234,10 +234,6 @@ _DatabasesDatabase_PropertiesFields = {
 class DatabasesDatabaseConfig:
     # Azure Active Directory identity configuration for a resource.
     identity: Any = None
-    # Kind of database. This is metadata used for the Azure portal experience.
-    kind: Any = None
-    # Resource that manages the database.
-    managed_by: Any = None
     # The database's properties.
     properties: Any = None
     # An ARM Resource SKU.
@@ -264,8 +260,6 @@ DatabasesDatabase = ubx.ResourceBinding(
             kind="object",
             fields=_DatabasesDatabase_IdentityFields,
         ),
-        "kind": ubx.FieldSpec(wire_name="kind"),
-        "managed_by": ubx.FieldSpec(wire_name="managed_by"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

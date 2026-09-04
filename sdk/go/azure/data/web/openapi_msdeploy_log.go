@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMsdeployLog_Properties_Entries struct {
 	Message any
-	Time any
-	Type any
+	Time    any
+	Type    any
 }
 
 type OpenapiMsdeployLog_Properties struct {

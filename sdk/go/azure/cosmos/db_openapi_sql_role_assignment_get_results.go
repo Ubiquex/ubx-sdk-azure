@@ -13,10 +13,10 @@ type DbOpenapiSqlRoleAssignmentGetResults_Properties struct {
 }
 
 var DbOpenapiSqlRoleAssignmentGetResults_PropertiesFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"PrincipalId":      ubx.FieldSpec{WireName: "principal_id"},
+	"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
+	"Scope":            ubx.FieldSpec{WireName: "scope"},
+}
 
 type DbOpenapiSqlRoleAssignmentGetResultsConfig struct {
 	// Azure Cosmos DB SQL Role Assignment resource object.
@@ -33,8 +33,8 @@ var DbOpenapiSqlRoleAssignmentGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiSqlRoleAssignmentGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiSqlRoleAssignmentGetResults_PropertiesFields,
 		},
 	},
 }

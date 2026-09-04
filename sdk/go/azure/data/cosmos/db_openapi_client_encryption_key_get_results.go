@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiClientEncryptionKeyGetResults_Value_Properties_Resource struct {
 	Etag any
-	Rid any
-	Ts any
+	Rid  any
+	Ts   any
 }
 
 type DbOpenapiClientEncryptionKeyGetResults_Value_Properties struct {
@@ -18,14 +18,14 @@ type DbOpenapiClientEncryptionKeyGetResults_Value struct {
 }
 
 type DbOpenapiClientEncryptionKeyGetResultsConfig struct {
-	AccountName any
+	AccountName  any
 	DatabaseName any
 }
 
 type DbOpenapiClientEncryptionKeyGetResultsAttrs struct {
-	AccountName any
+	AccountName  any
 	DatabaseName any
-	NextLink any
+	NextLink     any
 	// List of client encryption keys and their properties.
 	Value any
 }
@@ -33,7 +33,7 @@ type DbOpenapiClientEncryptionKeyGetResultsAttrs struct {
 var DbOpenapiClientEncryptionKeyGetResults = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_client_encryption_key_get_results",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":  ubx.FieldSpec{WireName: "account_name"},
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 	},
 }

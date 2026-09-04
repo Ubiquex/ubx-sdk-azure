@@ -4,17 +4,17 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerSecurityUserConfiguration_Value_Properties struct {
-	Description any
+	Description       any
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type NetworkmanagerSecurityUserConfiguration_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 

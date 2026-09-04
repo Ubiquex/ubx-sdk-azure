@@ -91,82 +91,82 @@ type OpenapiStorageTaskAssignment_Properties struct {
 }
 
 var OpenapiStorageTaskAssignment_Properties_ExecutionContext_TargetFields = ubx.FieldMap{
-		"ExcludePrefix": ubx.FieldSpec{WireName: "exclude_prefix"},
-		"Prefix": ubx.FieldSpec{WireName: "prefix"},
-	}
+	"ExcludePrefix": ubx.FieldSpec{WireName: "exclude_prefix"},
+	"Prefix":        ubx.FieldSpec{WireName: "prefix"},
+}
 
 var OpenapiStorageTaskAssignment_Properties_ExecutionContext_Trigger_ParametersFields = ubx.FieldMap{
-		"EndBy": ubx.FieldSpec{WireName: "end_by"},
-		"Interval": ubx.FieldSpec{WireName: "interval"},
-		"IntervalUnit": ubx.FieldSpec{WireName: "interval_unit"},
-		"StartFrom": ubx.FieldSpec{WireName: "start_from"},
-		"StartOn": ubx.FieldSpec{WireName: "start_on"},
-	}
+	"EndBy":        ubx.FieldSpec{WireName: "end_by"},
+	"Interval":     ubx.FieldSpec{WireName: "interval"},
+	"IntervalUnit": ubx.FieldSpec{WireName: "interval_unit"},
+	"StartFrom":    ubx.FieldSpec{WireName: "start_from"},
+	"StartOn":      ubx.FieldSpec{WireName: "start_on"},
+}
 
 var OpenapiStorageTaskAssignment_Properties_ExecutionContext_TriggerFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "object",
-			Fields: OpenapiStorageTaskAssignment_Properties_ExecutionContext_Trigger_ParametersFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "object",
+		Fields:   OpenapiStorageTaskAssignment_Properties_ExecutionContext_Trigger_ParametersFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiStorageTaskAssignment_Properties_ExecutionContextFields = ubx.FieldMap{
-		"Target": ubx.FieldSpec{
-			WireName: "target",
-			Kind: "object",
-			Fields: OpenapiStorageTaskAssignment_Properties_ExecutionContext_TargetFields,
-		},
-		"Trigger": ubx.FieldSpec{
-			WireName: "trigger",
-			Kind: "object",
-			Fields: OpenapiStorageTaskAssignment_Properties_ExecutionContext_TriggerFields,
-		},
-	}
+	"Target": ubx.FieldSpec{
+		WireName: "target",
+		Kind:     "object",
+		Fields:   OpenapiStorageTaskAssignment_Properties_ExecutionContext_TargetFields,
+	},
+	"Trigger": ubx.FieldSpec{
+		WireName: "trigger",
+		Kind:     "object",
+		Fields:   OpenapiStorageTaskAssignment_Properties_ExecutionContext_TriggerFields,
+	},
+}
 
 var OpenapiStorageTaskAssignment_Properties_ReportFields = ubx.FieldMap{
-		"Prefix": ubx.FieldSpec{WireName: "prefix"},
-	}
+	"Prefix": ubx.FieldSpec{WireName: "prefix"},
+}
 
 var OpenapiStorageTaskAssignment_Properties_RunStatusFields = ubx.FieldMap{
-		"FinishTime": ubx.FieldSpec{WireName: "finish_time"},
-		"ObjectFailedCount": ubx.FieldSpec{WireName: "object_failed_count"},
-		"ObjectsOperatedOnCount": ubx.FieldSpec{WireName: "objects_operated_on_count"},
-		"ObjectsSucceededCount": ubx.FieldSpec{WireName: "objects_succeeded_count"},
-		"ObjectsTargetedCount": ubx.FieldSpec{WireName: "objects_targeted_count"},
-		"RunResult": ubx.FieldSpec{WireName: "run_result"},
-		"RunStatusEnum": ubx.FieldSpec{WireName: "run_status_enum"},
-		"RunStatusError": ubx.FieldSpec{WireName: "run_status_error"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"StorageAccountId": ubx.FieldSpec{WireName: "storage_account_id"},
-		"SummaryReportPath": ubx.FieldSpec{WireName: "summary_report_path"},
-		"TaskAssignmentId": ubx.FieldSpec{WireName: "task_assignment_id"},
-		"TaskId": ubx.FieldSpec{WireName: "task_id"},
-		"TaskVersion": ubx.FieldSpec{WireName: "task_version"},
-	}
+	"FinishTime":             ubx.FieldSpec{WireName: "finish_time"},
+	"ObjectFailedCount":      ubx.FieldSpec{WireName: "object_failed_count"},
+	"ObjectsOperatedOnCount": ubx.FieldSpec{WireName: "objects_operated_on_count"},
+	"ObjectsSucceededCount":  ubx.FieldSpec{WireName: "objects_succeeded_count"},
+	"ObjectsTargetedCount":   ubx.FieldSpec{WireName: "objects_targeted_count"},
+	"RunResult":              ubx.FieldSpec{WireName: "run_result"},
+	"RunStatusEnum":          ubx.FieldSpec{WireName: "run_status_enum"},
+	"RunStatusError":         ubx.FieldSpec{WireName: "run_status_error"},
+	"StartTime":              ubx.FieldSpec{WireName: "start_time"},
+	"StorageAccountId":       ubx.FieldSpec{WireName: "storage_account_id"},
+	"SummaryReportPath":      ubx.FieldSpec{WireName: "summary_report_path"},
+	"TaskAssignmentId":       ubx.FieldSpec{WireName: "task_assignment_id"},
+	"TaskId":                 ubx.FieldSpec{WireName: "task_id"},
+	"TaskVersion":            ubx.FieldSpec{WireName: "task_version"},
+}
 
 var OpenapiStorageTaskAssignment_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"ExecutionContext": ubx.FieldSpec{
-			WireName: "execution_context",
-			Kind: "object",
-			Fields: OpenapiStorageTaskAssignment_Properties_ExecutionContextFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Report": ubx.FieldSpec{
-			WireName: "report",
-			Kind: "object",
-			Fields: OpenapiStorageTaskAssignment_Properties_ReportFields,
-		},
-		"RunStatus": ubx.FieldSpec{
-			WireName: "run_status",
-			Kind: "object",
-			Fields: OpenapiStorageTaskAssignment_Properties_RunStatusFields,
-		},
-		"TaskId": ubx.FieldSpec{WireName: "task_id"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Enabled":     ubx.FieldSpec{WireName: "enabled"},
+	"ExecutionContext": ubx.FieldSpec{
+		WireName: "execution_context",
+		Kind:     "object",
+		Fields:   OpenapiStorageTaskAssignment_Properties_ExecutionContextFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Report": ubx.FieldSpec{
+		WireName: "report",
+		Kind:     "object",
+		Fields:   OpenapiStorageTaskAssignment_Properties_ReportFields,
+	},
+	"RunStatus": ubx.FieldSpec{
+		WireName: "run_status",
+		Kind:     "object",
+		Fields:   OpenapiStorageTaskAssignment_Properties_RunStatusFields,
+	},
+	"TaskId": ubx.FieldSpec{WireName: "task_id"},
+}
 
 type OpenapiStorageTaskAssignmentConfig struct {
 	// Properties of the storage task assignment.
@@ -183,8 +183,8 @@ var OpenapiStorageTaskAssignment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStorageTaskAssignment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiStorageTaskAssignment_PropertiesFields,
 		},
 	},
 }

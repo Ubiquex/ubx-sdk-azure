@@ -5,30 +5,30 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedapplicationsJitRequestDefinition_Value_Properties_CreatedBy struct {
 	ApplicationId any
-	Oid any
-	Puid any
+	Oid           any
+	Puid          any
 }
 
 type ManagedapplicationsJitRequestDefinition_Value_Properties_JitAuthorizationPolicies struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
 type ManagedapplicationsJitRequestDefinition_Value_Properties_JitSchedulingPolicy struct {
-	Duration any
+	Duration  any
 	StartTime any
-	Type any
+	Type      any
 }
 
 type ManagedapplicationsJitRequestDefinition_Value_Properties struct {
-	ApplicationResourceId any
-	CreatedBy any
+	ApplicationResourceId    any
+	CreatedBy                any
 	JitAuthorizationPolicies any
-	JitRequestState any
-	JitSchedulingPolicy any
-	ProvisioningState any
-	PublisherTenantId any
-	UpdatedBy any
+	JitRequestState          any
+	JitSchedulingPolicy      any
+	ProvisioningState        any
+	PublisherTenantId        any
+	UpdatedBy                any
 }
 
 type ManagedapplicationsJitRequestDefinition_Value struct {
@@ -47,6 +47,5 @@ type ManagedapplicationsJitRequestDefinitionAttrs struct {
 
 var ManagedapplicationsJitRequestDefinition = ubx.DataSourceBinding{
 	WireType: "azure_solutions_managedapplications_jit_request_definition",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

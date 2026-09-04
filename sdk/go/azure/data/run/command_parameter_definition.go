@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CommandParameterDefinition_Parameters struct {
 	DefaultValue any
-	Name any
-	Required any
-	Type any
+	Name         any
+	Required     any
+	Type         any
 }
 
 type CommandParameterDefinitionConfig struct {

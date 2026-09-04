@@ -19,27 +19,25 @@ type VirtualnetworkDdosProtectionPlan_Properties struct {
 }
 
 var VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkDdosProtectionPlan_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddresses": ubx.FieldSpec{
-			WireName: "public_ipaddresses",
-			Kind: "list",
-			Fields: VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"VirtualNetworks": ubx.FieldSpec{
-			WireName: "virtual_networks",
-			Kind: "list",
-			Fields: VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddresses": ubx.FieldSpec{
+		WireName: "public_ipaddresses",
+		Kind:     "list",
+		Fields:   VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"VirtualNetworks": ubx.FieldSpec{
+		WireName: "virtual_networks",
+		Kind:     "list",
+		Fields:   VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields,
+	},
+}
 
 type VirtualnetworkDdosProtectionPlanConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// DDoS protection plan properties.
 	Properties any
 }
@@ -54,11 +52,10 @@ type VirtualnetworkDdosProtectionPlanAttrs struct {
 var VirtualnetworkDdosProtectionPlan = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ddos_protection_plan",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkDdosProtectionPlan_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkDdosProtectionPlan_PropertiesFields,
 		},
 	},
 }

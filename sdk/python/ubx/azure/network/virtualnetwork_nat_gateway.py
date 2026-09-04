@@ -92,8 +92,6 @@ _VirtualnetworkNatGateway_SkuFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkNatGatewayConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Nat Gateway properties.
     properties: Any = None
     # SKU of nat gateway.
@@ -115,7 +113,6 @@ class VirtualnetworkNatGatewayAttrs:
 VirtualnetworkNatGateway = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_nat_gateway",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

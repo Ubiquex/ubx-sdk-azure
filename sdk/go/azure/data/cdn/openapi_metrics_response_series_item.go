@@ -5,60 +5,60 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMetricsResponseSeriesItem_Series_Data struct {
 	DateTime any
-	Value any
+	Value    any
 }
 
 type OpenapiMetricsResponseSeriesItem_Series_Groups struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiMetricsResponseSeriesItem_Series struct {
-	Data any
+	Data   any
 	Groups any
 	Metric any
-	Unit any
+	Unit   any
 }
 
 type OpenapiMetricsResponseSeriesItemConfig struct {
-	Continents any
+	Continents       any
 	CountryOrRegions any
-	CustomDomains any
-	DateTimeBegin any
-	DateTimeEnd any
-	Granularity any
-	GroupBy any
-	Metrics any
-	ProfileName any
-	Protocols any
+	CustomDomains    any
+	DateTimeBegin    any
+	DateTimeEnd      any
+	Granularity      any
+	GroupBy          any
+	Metrics          any
+	ProfileName      any
+	Protocols        any
 }
 
 type OpenapiMetricsResponseSeriesItemAttrs struct {
-	Continents any
+	Continents       any
 	CountryOrRegions any
-	CustomDomains any
-	DateTimeBegin any
-	DateTimeEnd any
-	Granularity any
-	GroupBy any
-	Metrics any
-	ProfileName any
-	Protocols any
-	Series any
+	CustomDomains    any
+	DateTimeBegin    any
+	DateTimeEnd      any
+	Granularity      any
+	GroupBy          any
+	Metrics          any
+	ProfileName      any
+	Protocols        any
+	Series           any
 }
 
 var OpenapiMetricsResponseSeriesItem = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_metrics_response_series_item",
 	Fields: ubx.FieldMap{
-		"Continents": ubx.FieldSpec{WireName: "continents"},
+		"Continents":       ubx.FieldSpec{WireName: "continents"},
 		"CountryOrRegions": ubx.FieldSpec{WireName: "country_or_regions"},
-		"CustomDomains": ubx.FieldSpec{WireName: "custom_domains"},
-		"DateTimeBegin": ubx.FieldSpec{WireName: "date_time_begin"},
-		"DateTimeEnd": ubx.FieldSpec{WireName: "date_time_end"},
-		"Granularity": ubx.FieldSpec{WireName: "granularity"},
-		"GroupBy": ubx.FieldSpec{WireName: "group_by"},
-		"Metrics": ubx.FieldSpec{WireName: "metrics"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-		"Protocols": ubx.FieldSpec{WireName: "protocols"},
+		"CustomDomains":    ubx.FieldSpec{WireName: "custom_domains"},
+		"DateTimeBegin":    ubx.FieldSpec{WireName: "date_time_begin"},
+		"DateTimeEnd":      ubx.FieldSpec{WireName: "date_time_end"},
+		"Granularity":      ubx.FieldSpec{WireName: "granularity"},
+		"GroupBy":          ubx.FieldSpec{WireName: "group_by"},
+		"Metrics":          ubx.FieldSpec{WireName: "metrics"},
+		"ProfileName":      ubx.FieldSpec{WireName: "profile_name"},
+		"Protocols":        ubx.FieldSpec{WireName: "protocols"},
 	},
 }

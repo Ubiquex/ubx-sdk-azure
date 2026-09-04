@@ -4,23 +4,23 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPipelineResource_Value_Properties_Activities_DependsOn struct {
-	Activity any
+	Activity             any
 	DependencyConditions any
 }
 
 type OpenapiPipelineResource_Value_Properties_Activities_UserProperties struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiPipelineResource_Value_Properties_Activities struct {
-	DependsOn any
-	Description any
-	Name any
+	DependsOn        any
+	Description      any
+	Name             any
 	OnInactiveMarkAs any
-	State any
-	Type any
-	UserProperties any
+	State            any
+	Type             any
+	UserProperties   any
 }
 
 type OpenapiPipelineResource_Value_Properties_Folder struct {
@@ -29,7 +29,7 @@ type OpenapiPipelineResource_Value_Properties_Folder struct {
 
 type OpenapiPipelineResource_Value_Properties_Parameters struct {
 	DefaultValue any
-	Type any
+	Type         any
 }
 
 type OpenapiPipelineResource_Value_Properties_Policy_ElapsedTimeMetric struct {
@@ -41,19 +41,19 @@ type OpenapiPipelineResource_Value_Properties_Policy struct {
 }
 
 type OpenapiPipelineResource_Value_Properties struct {
-	Activities any
-	Annotations any
-	Concurrency any
-	Description any
-	Folder any
-	Parameters any
-	Policy any
+	Activities    any
+	Annotations   any
+	Concurrency   any
+	Description   any
+	Folder        any
+	Parameters    any
+	Policy        any
 	RunDimensions any
-	Variables any
+	Variables     any
 }
 
 type OpenapiPipelineResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

@@ -457,8 +457,6 @@ _FirewallAzureFirewall_PropertiesFields = {
 
 @dataclasses.dataclass
 class FirewallAzureFirewallConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
     # Properties of the Azure Firewall.
@@ -480,7 +478,6 @@ class FirewallAzureFirewallAttrs:
 FirewallAzureFirewall = ubx.ResourceBinding(
     wire_type="azure_network_firewall_azure_firewall",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "extended_location": ubx.FieldSpec(
             wire_name="extended_location",
             kind="object",

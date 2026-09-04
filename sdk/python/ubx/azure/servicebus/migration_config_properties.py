@@ -29,8 +29,6 @@ _MigrationConfigProperties_PropertiesFields = {
 
 @dataclasses.dataclass
 class MigrationConfigPropertiesConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Properties required to the Create Migration Configuration
     properties: Any = None
 
@@ -44,7 +42,6 @@ class MigrationConfigPropertiesAttrs:
 MigrationConfigProperties = ubx.ResourceBinding(
     wire_type="azure_servicebus_migration_config_properties",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

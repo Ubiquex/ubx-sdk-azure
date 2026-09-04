@@ -11,11 +11,11 @@ type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_Autoscale_Cap
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity struct {
 	MaxInstanceCount any
 	MinInstanceCount any
-	Time any
+	Time             any
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule struct {
-	Days any
+	Days            any
 	TimeAndCapacity any
 }
 
@@ -25,13 +25,13 @@ type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_Autoscale_Rec
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_Autoscale struct {
-	Capacity any
+	Capacity   any
 	Recurrence any
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_DataDisksGroups struct {
-	DiskSizeGb any
-	DisksPerNode any
+	DiskSizeGb         any
+	DisksPerNode       any
 	StorageAccountType any
 }
 
@@ -48,9 +48,9 @@ type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_OsProfile_Lin
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile struct {
-	Password any
+	Password   any
 	SshProfile any
-	Username any
+	Username   any
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_OsProfile struct {
@@ -58,28 +58,28 @@ type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_OsProfile str
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_ScriptActions struct {
-	Name any
+	Name       any
 	Parameters any
-	Uri any
+	Uri        any
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles_VirtualNetworkProfile struct {
-	Id any
+	Id     any
 	Subnet any
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile_Roles struct {
-	Autoscale any
-	DataDisksGroups any
-	EncryptDataDisks any
-	HardwareProfile any
-	MinInstanceCount any
-	Name any
-	OsProfile any
-	ScriptActions any
-	TargetInstanceCount any
+	Autoscale             any
+	DataDisksGroups       any
+	EncryptDataDisks      any
+	HardwareProfile       any
+	MinInstanceCount      any
+	Name                  any
+	OsProfile             any
+	ScriptActions         any
+	TargetInstanceCount   any
 	VirtualNetworkProfile any
-	VmgroupName any
+	VmgroupName           any
 }
 
 type ApplicationsApplication_Value_Properties_ComputeProfile struct {
@@ -87,26 +87,26 @@ type ApplicationsApplication_Value_Properties_ComputeProfile struct {
 }
 
 type ApplicationsApplication_Value_Properties_Errors struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type ApplicationsApplication_Value_Properties_HttpsEndpoints struct {
-	AccessModes any
-	DestinationPort any
+	AccessModes        any
+	DestinationPort    any
 	DisableGatewayAuth any
-	Location any
-	PrivateIpaddress any
-	PublicPort any
-	SubDomainSuffix any
+	Location           any
+	PrivateIpaddress   any
+	PublicPort         any
+	SubDomainSuffix    any
 }
 
 type ApplicationsApplication_Value_Properties_InstallScriptActions struct {
 	ApplicationName any
-	Name any
-	Parameters any
-	Roles any
-	Uri any
+	Name            any
+	Parameters      any
+	Roles           any
+	Uri             any
 }
 
 type ApplicationsApplication_Value_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet struct {
@@ -114,85 +114,85 @@ type ApplicationsApplication_Value_Properties_PrivateLinkConfigurations_Properti
 }
 
 type ApplicationsApplication_Value_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
+	Primary                   any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type ApplicationsApplication_Value_Properties_PrivateLinkConfigurations_Properties_IpConfigurations struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationsApplication_Value_Properties_PrivateLinkConfigurations_Properties struct {
-	GroupId any
-	IpConfigurations any
+	GroupId           any
+	IpConfigurations  any
 	ProvisioningState any
 }
 
 type ApplicationsApplication_Value_Properties_PrivateLinkConfigurations struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationsApplication_Value_Properties_SshEndpoints struct {
-	DestinationPort any
-	Location any
+	DestinationPort  any
+	Location         any
 	PrivateIpaddress any
-	PublicPort any
+	PublicPort       any
 }
 
 type ApplicationsApplication_Value_Properties struct {
-	ApplicationState any
-	ApplicationType any
-	ComputeProfile any
-	CreatedDate any
-	Errors any
-	HttpsEndpoints any
-	InstallScriptActions any
-	MarketplaceIdentifier any
+	ApplicationState          any
+	ApplicationType           any
+	ComputeProfile            any
+	CreatedDate               any
+	Errors                    any
+	HttpsEndpoints            any
+	InstallScriptActions      any
+	MarketplaceIdentifier     any
 	PrivateLinkConfigurations any
-	ProvisioningState any
-	SshEndpoints any
-	UninstallScriptActions any
+	ProvisioningState         any
+	SshEndpoints              any
+	UninstallScriptActions    any
 }
 
 type ApplicationsApplication_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ApplicationsApplication_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 	SystemData any
-	Tags any
+	Tags       any
 }
 
 type ApplicationsApplicationConfig struct {
-	ApiVersion any
-	ClusterName any
+	ApiVersion        any
+	ClusterName       any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type ApplicationsApplicationAttrs struct {
-	ApiVersion any
+	ApiVersion  any
 	ClusterName any
 	// The URL to get the next set of operation list results if there are any.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The list of HDInsight applications installed on HDInsight cluster.
 	Value any
 }
@@ -200,9 +200,9 @@ type ApplicationsApplicationAttrs struct {
 var ApplicationsApplication = ubx.DataSourceBinding{
 	WireType: "azure_hdinsight_applications_application",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ClusterName":       ubx.FieldSpec{WireName: "cluster_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

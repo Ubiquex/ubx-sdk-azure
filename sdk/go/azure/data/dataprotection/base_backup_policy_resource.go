@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BaseBackupPolicyResource_Value_Properties struct {
 	DatasourceTypes any
-	ObjectType any
+	ObjectType      any
 }
 
 type BaseBackupPolicyResource_Value struct {
@@ -18,7 +18,7 @@ type BaseBackupPolicyResourceConfig struct {
 
 type BaseBackupPolicyResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

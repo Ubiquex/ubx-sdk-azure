@@ -4,14 +4,14 @@ package mysql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiServer_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiServer_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -19,28 +19,28 @@ type OpenapiServer_Value_Properties_Backup struct {
 	BackupIntervalHours any
 	BackupRetentionDays any
 	EarliestRestoreDate any
-	GeoRedundantBackup any
+	GeoRedundantBackup  any
 }
 
 type OpenapiServer_Value_Properties_DataEncryption struct {
-	GeoBackupKeyUri any
+	GeoBackupKeyUri                 any
 	GeoBackupUserAssignedIdentityId any
-	PrimaryKeyUri any
-	PrimaryUserAssignedIdentityId any
-	Type any
+	PrimaryKeyUri                   any
+	PrimaryUserAssignedIdentityId   any
+	Type                            any
 }
 
 type OpenapiServer_Value_Properties_HighAvailability struct {
-	Mode any
+	Mode                    any
 	StandbyAvailabilityZone any
-	State any
+	State                   any
 }
 
 type OpenapiServer_Value_Properties_ImportSourceProperties struct {
 	DataDirPath any
-	SasToken any
+	SasToken    any
 	StorageType any
-	StorageUrl any
+	StorageUrl  any
 }
 
 type OpenapiServer_Value_Properties_MaintenancePolicy struct {
@@ -49,16 +49,16 @@ type OpenapiServer_Value_Properties_MaintenancePolicy struct {
 
 type OpenapiServer_Value_Properties_MaintenanceWindow struct {
 	BatchOfMaintenance any
-	CustomWindow any
-	DayOfWeek any
-	StartHour any
-	StartMinute any
+	CustomWindow       any
+	DayOfWeek          any
+	StartHour          any
+	StartMinute        any
 }
 
 type OpenapiServer_Value_Properties_Network struct {
 	DelegatedSubnetResourceId any
-	PrivateDnsZoneResourceId any
-	PublicNetworkAccess any
+	PrivateDnsZoneResourceId  any
+	PublicNetworkAccess       any
 }
 
 type OpenapiServer_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -67,15 +67,15 @@ type OpenapiServer_Value_Properties_PrivateEndpointConnections_Properties_Privat
 
 type OpenapiServer_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiServer_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiServer_Value_Properties_PrivateEndpointConnections struct {
@@ -83,38 +83,38 @@ type OpenapiServer_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type OpenapiServer_Value_Properties_Storage struct {
-	AutoGrow any
-	AutoIoScaling any
-	Iops any
-	LogOnDisk any
+	AutoGrow          any
+	AutoIoScaling     any
+	Iops              any
+	LogOnDisk         any
 	StorageRedundancy any
-	StorageSizeGb any
-	StorageSku any
+	StorageSizeGb     any
+	StorageSku        any
 }
 
 type OpenapiServer_Value_Properties struct {
-	AdministratorLogin any
+	AdministratorLogin         any
 	AdministratorLoginPassword any
-	AvailabilityZone any
-	Backup any
-	CreateMode any
-	DataEncryption any
-	DatabasePort any
-	FullVersion any
-	FullyQualifiedDomainName any
-	HighAvailability any
-	ImportSourceProperties any
-	MaintenancePolicy any
-	MaintenanceWindow any
-	Network any
+	AvailabilityZone           any
+	Backup                     any
+	CreateMode                 any
+	DataEncryption             any
+	DatabasePort               any
+	FullVersion                any
+	FullyQualifiedDomainName   any
+	HighAvailability           any
+	ImportSourceProperties     any
+	MaintenancePolicy          any
+	MaintenanceWindow          any
+	Network                    any
 	PrivateEndpointConnections any
-	ReplicaCapacity any
-	ReplicationRole any
-	RestorePointInTime any
-	SourceServerResourceId any
-	State any
-	Storage any
-	Version any
+	ReplicaCapacity            any
+	ReplicationRole            any
+	RestorePointInTime         any
+	SourceServerResourceId     any
+	State                      any
+	Storage                    any
+	Version                    any
 }
 
 type OpenapiServer_Value_Sku struct {
@@ -123,9 +123,9 @@ type OpenapiServer_Value_Sku struct {
 }
 
 type OpenapiServer_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiServerConfig struct {
@@ -140,6 +140,5 @@ type OpenapiServerAttrs struct {
 
 var OpenapiServer = ubx.DataSourceBinding{
 	WireType: "azure_mysql_openapi_server",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

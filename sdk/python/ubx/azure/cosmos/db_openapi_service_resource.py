@@ -8,17 +8,23 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class DbOpenapiServiceResource_Properties:
+    # Time of the last state change (ISO-8601 format).
+    creation_time: Any = None
     # Instance count for the service.
     instance_count: Any = None
     # Instance type for the service.
     instance_size: Any = None
     # ServiceType for the service.
     service_type: Any = None
+    # Describes the status of a service.
+    status: Any = None
 
 _DbOpenapiServiceResource_PropertiesFields = {
+    "creation_time": ubx.FieldSpec(wire_name="creation_time"),
     "instance_count": ubx.FieldSpec(wire_name="instance_count"),
     "instance_size": ubx.FieldSpec(wire_name="instance_size"),
     "service_type": ubx.FieldSpec(wire_name="service_type"),
+    "status": ubx.FieldSpec(wire_name="status"),
 }
 
 @dataclasses.dataclass

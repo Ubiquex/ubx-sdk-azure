@@ -4,7 +4,7 @@ package paloaltonetworks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwFirewallResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -29,7 +29,7 @@ type CloudngfwFirewallResource_Properties_AssociatedRulestack struct {
 }
 
 type CloudngfwFirewallResource_Properties_DnsSettings_DnsServers struct {
-	Address any
+	Address    any
 	ResourceId any
 }
 
@@ -44,14 +44,14 @@ type CloudngfwFirewallResource_Properties_DnsSettings struct {
 
 type CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfiguration struct {
 	Address any
-	Port any
+	Port    any
 }
 
 type CloudngfwFirewallResource_Properties_FrontEndSettings struct {
-	BackendConfiguration any
+	BackendConfiguration  any
 	FrontendConfiguration any
-	Name any
-	Protocol any
+	Name                  any
+	Protocol              any
 }
 
 type CloudngfwFirewallResource_Properties_MarketplaceDetails struct {
@@ -178,220 +178,220 @@ type CloudngfwFirewallResource_Properties struct {
 }
 
 var CloudngfwFirewallResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var CloudngfwFirewallResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: CloudngfwFirewallResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   CloudngfwFirewallResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var CloudngfwFirewallResource_Properties_AssociatedRulestackFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"RulestackId": ubx.FieldSpec{WireName: "rulestack_id"},
-	}
+	"Location":    ubx.FieldSpec{WireName: "location"},
+	"ResourceId":  ubx.FieldSpec{WireName: "resource_id"},
+	"RulestackId": ubx.FieldSpec{WireName: "rulestack_id"},
+}
 
 var CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"Address":    ubx.FieldSpec{WireName: "address"},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var CloudngfwFirewallResource_Properties_DnsSettingsFields = ubx.FieldMap{
-		"DnsServers": ubx.FieldSpec{
-			WireName: "dns_servers",
-			Kind: "list",
-			Fields: CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
-		},
-		"EnableDnsProxy": ubx.FieldSpec{WireName: "enable_dns_proxy"},
-		"EnabledDnsType": ubx.FieldSpec{WireName: "enabled_dns_type"},
-	}
+	"DnsServers": ubx.FieldSpec{
+		WireName: "dns_servers",
+		Kind:     "list",
+		Fields:   CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
+	},
+	"EnableDnsProxy": ubx.FieldSpec{WireName: "enable_dns_proxy"},
+	"EnabledDnsType": ubx.FieldSpec{WireName: "enabled_dns_type"},
+}
 
 var CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfigurationFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{
-			WireName: "address",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
-		},
-		"Port": ubx.FieldSpec{WireName: "port"},
-	}
+	"Address": ubx.FieldSpec{
+		WireName: "address",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
+	},
+	"Port": ubx.FieldSpec{WireName: "port"},
+}
 
 var CloudngfwFirewallResource_Properties_FrontEndSettingsFields = ubx.FieldMap{
-		"BackendConfiguration": ubx.FieldSpec{
-			WireName: "backend_configuration",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfigurationFields,
-		},
-		"FrontendConfiguration": ubx.FieldSpec{
-			WireName: "frontend_configuration",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfigurationFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-	}
+	"BackendConfiguration": ubx.FieldSpec{
+		WireName: "backend_configuration",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfigurationFields,
+	},
+	"FrontendConfiguration": ubx.FieldSpec{
+		WireName: "frontend_configuration",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_FrontEndSettings_BackendConfigurationFields,
+	},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Protocol": ubx.FieldSpec{WireName: "protocol"},
+}
 
 var CloudngfwFirewallResource_Properties_MarketplaceDetailsFields = ubx.FieldMap{
-		"MarketplaceSubscriptionId": ubx.FieldSpec{WireName: "marketplace_subscription_id"},
-		"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
-		"OfferId": ubx.FieldSpec{WireName: "offer_id"},
-		"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
-	}
+	"MarketplaceSubscriptionId":     ubx.FieldSpec{WireName: "marketplace_subscription_id"},
+	"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
+	"OfferId":                       ubx.FieldSpec{WireName: "offer_id"},
+	"PublisherId":                   ubx.FieldSpec{WireName: "publisher_id"},
+}
 
 var CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields = ubx.FieldMap{
-		"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
+	"ResourceId":   ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfigurationFields = ubx.FieldMap{
-		"IpOfTrustSubnetForUdr": ubx.FieldSpec{
-			WireName: "ip_of_trust_subnet_for_udr",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
-		},
-		"TrustSubnet": ubx.FieldSpec{
-			WireName: "trust_subnet",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
-		},
-		"UnTrustSubnet": ubx.FieldSpec{
-			WireName: "un_trust_subnet",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
-		},
-		"Vnet": ubx.FieldSpec{
-			WireName: "vnet",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
-		},
-	}
+	"IpOfTrustSubnetForUdr": ubx.FieldSpec{
+		WireName: "ip_of_trust_subnet_for_udr",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
+	},
+	"TrustSubnet": ubx.FieldSpec{
+		WireName: "trust_subnet",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
+	},
+	"UnTrustSubnet": ubx.FieldSpec{
+		WireName: "un_trust_subnet",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
+	},
+	"Vnet": ubx.FieldSpec{
+		WireName: "vnet",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
+	},
+}
 
 var CloudngfwFirewallResource_Properties_NetworkProfile_VwanConfigurationFields = ubx.FieldMap{
-		"IpOfTrustSubnetForUdr": ubx.FieldSpec{
-			WireName: "ip_of_trust_subnet_for_udr",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
-		},
-		"NetworkVirtualApplianceId": ubx.FieldSpec{WireName: "network_virtual_appliance_id"},
-		"TrustSubnet": ubx.FieldSpec{
-			WireName: "trust_subnet",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
-		},
-		"UnTrustSubnet": ubx.FieldSpec{
-			WireName: "un_trust_subnet",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
-		},
-		"VHub": ubx.FieldSpec{
-			WireName: "v_hub",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
-		},
-	}
+	"IpOfTrustSubnetForUdr": ubx.FieldSpec{
+		WireName: "ip_of_trust_subnet_for_udr",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
+	},
+	"NetworkVirtualApplianceId": ubx.FieldSpec{WireName: "network_virtual_appliance_id"},
+	"TrustSubnet": ubx.FieldSpec{
+		WireName: "trust_subnet",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
+	},
+	"UnTrustSubnet": ubx.FieldSpec{
+		WireName: "un_trust_subnet",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
+	},
+	"VHub": ubx.FieldSpec{
+		WireName: "v_hub",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfiguration_TrustSubnetFields,
+	},
+}
 
 var CloudngfwFirewallResource_Properties_NetworkProfileFields = ubx.FieldMap{
-		"EgressNatIp": ubx.FieldSpec{
-			WireName: "egress_nat_ip",
-			Kind: "list",
-			Fields: CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
-		},
-		"EnableEgressNat": ubx.FieldSpec{WireName: "enable_egress_nat"},
-		"NetworkType": ubx.FieldSpec{WireName: "network_type"},
-		"PrivateSourceNatRulesDestination": ubx.FieldSpec{WireName: "private_source_nat_rules_destination"},
-		"PublicIps": ubx.FieldSpec{
-			WireName: "public_ips",
-			Kind: "list",
-			Fields: CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
-		},
-		"TrustedRanges": ubx.FieldSpec{WireName: "trusted_ranges"},
-		"VnetConfiguration": ubx.FieldSpec{
-			WireName: "vnet_configuration",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfigurationFields,
-		},
-		"VwanConfiguration": ubx.FieldSpec{
-			WireName: "vwan_configuration",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfile_VwanConfigurationFields,
-		},
-	}
+	"EgressNatIp": ubx.FieldSpec{
+		WireName: "egress_nat_ip",
+		Kind:     "list",
+		Fields:   CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
+	},
+	"EnableEgressNat":                  ubx.FieldSpec{WireName: "enable_egress_nat"},
+	"NetworkType":                      ubx.FieldSpec{WireName: "network_type"},
+	"PrivateSourceNatRulesDestination": ubx.FieldSpec{WireName: "private_source_nat_rules_destination"},
+	"PublicIps": ubx.FieldSpec{
+		WireName: "public_ips",
+		Kind:     "list",
+		Fields:   CloudngfwFirewallResource_Properties_DnsSettings_DnsServersFields,
+	},
+	"TrustedRanges": ubx.FieldSpec{WireName: "trusted_ranges"},
+	"VnetConfiguration": ubx.FieldSpec{
+		WireName: "vnet_configuration",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfile_VnetConfigurationFields,
+	},
+	"VwanConfiguration": ubx.FieldSpec{
+		WireName: "vwan_configuration",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfile_VwanConfigurationFields,
+	},
+}
 
 var CloudngfwFirewallResource_Properties_PanoramaConfigFields = ubx.FieldMap{
-		"CgName": ubx.FieldSpec{WireName: "cg_name"},
-		"ConfigString": ubx.FieldSpec{WireName: "config_string"},
-		"DgName": ubx.FieldSpec{WireName: "dg_name"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"PanoramaServer": ubx.FieldSpec{WireName: "panorama_server"},
-		"PanoramaServer2": ubx.FieldSpec{WireName: "panorama_server2"},
-		"TplName": ubx.FieldSpec{WireName: "tpl_name"},
-		"VmAuthKey": ubx.FieldSpec{WireName: "vm_auth_key"},
-	}
+	"CgName":          ubx.FieldSpec{WireName: "cg_name"},
+	"ConfigString":    ubx.FieldSpec{WireName: "config_string"},
+	"DgName":          ubx.FieldSpec{WireName: "dg_name"},
+	"HostName":        ubx.FieldSpec{WireName: "host_name"},
+	"PanoramaServer":  ubx.FieldSpec{WireName: "panorama_server"},
+	"PanoramaServer2": ubx.FieldSpec{WireName: "panorama_server2"},
+	"TplName":         ubx.FieldSpec{WireName: "tpl_name"},
+	"VmAuthKey":       ubx.FieldSpec{WireName: "vm_auth_key"},
+}
 
 var CloudngfwFirewallResource_Properties_PlanDataFields = ubx.FieldMap{
-		"BillingCycle": ubx.FieldSpec{WireName: "billing_cycle"},
-		"EffectiveDate": ubx.FieldSpec{WireName: "effective_date"},
-		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
-		"UsageType": ubx.FieldSpec{WireName: "usage_type"},
-	}
+	"BillingCycle":  ubx.FieldSpec{WireName: "billing_cycle"},
+	"EffectiveDate": ubx.FieldSpec{WireName: "effective_date"},
+	"PlanId":        ubx.FieldSpec{WireName: "plan_id"},
+	"UsageType":     ubx.FieldSpec{WireName: "usage_type"},
+}
 
 var CloudngfwFirewallResource_Properties_StrataCloudManagerConfigFields = ubx.FieldMap{
-		"CloudManagerName": ubx.FieldSpec{WireName: "cloud_manager_name"},
-	}
+	"CloudManagerName": ubx.FieldSpec{WireName: "cloud_manager_name"},
+}
 
 var CloudngfwFirewallResource_PropertiesFields = ubx.FieldMap{
-		"AssociatedRulestack": ubx.FieldSpec{
-			WireName: "associated_rulestack",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_AssociatedRulestackFields,
-		},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_DnsSettingsFields,
-		},
-		"FrontEndSettings": ubx.FieldSpec{
-			WireName: "front_end_settings",
-			Kind: "list",
-			Fields: CloudngfwFirewallResource_Properties_FrontEndSettingsFields,
-		},
-		"IsPanoramaManaged": ubx.FieldSpec{WireName: "is_panorama_managed"},
-		"IsStrataCloudManaged": ubx.FieldSpec{WireName: "is_strata_cloud_managed"},
-		"MarketplaceDetails": ubx.FieldSpec{
-			WireName: "marketplace_details",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_MarketplaceDetailsFields,
-		},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_NetworkProfileFields,
-		},
-		"PanEtag": ubx.FieldSpec{WireName: "pan_etag"},
-		"PanoramaConfig": ubx.FieldSpec{
-			WireName: "panorama_config",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_PanoramaConfigFields,
-		},
-		"PlanData": ubx.FieldSpec{
-			WireName: "plan_data",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_PlanDataFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StrataCloudManagerConfig": ubx.FieldSpec{
-			WireName: "strata_cloud_manager_config",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_Properties_StrataCloudManagerConfigFields,
-		},
-	}
+	"AssociatedRulestack": ubx.FieldSpec{
+		WireName: "associated_rulestack",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_AssociatedRulestackFields,
+	},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_DnsSettingsFields,
+	},
+	"FrontEndSettings": ubx.FieldSpec{
+		WireName: "front_end_settings",
+		Kind:     "list",
+		Fields:   CloudngfwFirewallResource_Properties_FrontEndSettingsFields,
+	},
+	"IsPanoramaManaged":    ubx.FieldSpec{WireName: "is_panorama_managed"},
+	"IsStrataCloudManaged": ubx.FieldSpec{WireName: "is_strata_cloud_managed"},
+	"MarketplaceDetails": ubx.FieldSpec{
+		WireName: "marketplace_details",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_MarketplaceDetailsFields,
+	},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_NetworkProfileFields,
+	},
+	"PanEtag": ubx.FieldSpec{WireName: "pan_etag"},
+	"PanoramaConfig": ubx.FieldSpec{
+		WireName: "panorama_config",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_PanoramaConfigFields,
+	},
+	"PlanData": ubx.FieldSpec{
+		WireName: "plan_data",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_PlanDataFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"StrataCloudManagerConfig": ubx.FieldSpec{
+		WireName: "strata_cloud_manager_config",
+		Kind:     "object",
+		Fields:   CloudngfwFirewallResource_Properties_StrataCloudManagerConfigFields,
+	},
+}
 
 type CloudngfwFirewallResourceConfig struct {
 	// The properties of the managed service identities assigned to this resource.
@@ -412,13 +412,13 @@ var CloudngfwFirewallResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_IdentityFields,
+			Kind:     "object",
+			Fields:   CloudngfwFirewallResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CloudngfwFirewallResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CloudngfwFirewallResource_PropertiesFields,
 		},
 	},
 }

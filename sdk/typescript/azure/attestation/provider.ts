@@ -26,12 +26,40 @@ export interface Provider_Properties_PolicySigningCertificates {
   keys?: Provider_Properties_PolicySigningCertificates_Keys[] | Computed<Provider_Properties_PolicySigningCertificates_Keys[]>;
 }
 
+export interface Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  id?: string | Computed<string>;
+}
+
+export interface Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  actionsRequired?: string | Computed<string>;
+  description?: string | Computed<string>;
+  status?: string | Computed<string>;
+}
+
+export interface Provider_Properties_PrivateEndpointConnections_Properties {
+  privateEndpoint?: Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  privateLinkServiceConnectionState?: Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  provisioningState?: string | Computed<string>;
+}
+
+export interface Provider_Properties_PrivateEndpointConnections {
+  properties?: Provider_Properties_PrivateEndpointConnections_Properties | Computed<Provider_Properties_PrivateEndpointConnections_Properties>;
+}
+
 export interface Provider_Properties {
+  /** Gets the uri of attestation service */
+  attestUri?: string | Computed<string>;
   policySigningCertificates?: Provider_Properties_PolicySigningCertificates | Computed<Provider_Properties_PolicySigningCertificates>;
+  /** List of private endpoint connections associated with the attestation provider. */
+  privateEndpointConnections?: Provider_Properties_PrivateEndpointConnections[] | Computed<Provider_Properties_PrivateEndpointConnections[]>;
   /** Controls whether traffic from the public network is allowed to access the Attestation Provider APIs. */
   publicNetworkAccess?: string | Computed<string>;
+  /** Status of attestation service. */
+  status?: string | Computed<string>;
   /** The setting that controls whether authentication is enabled or disabled for TPM Attestation REST APIs. */
   tpmAttestationAuthentication?: string | Computed<string>;
+  /** Trust model for the attestation provider. */
+  trustModel?: string | Computed<string>;
 }
 
 const Provider_Properties_PolicySigningCertificates_KeysFields: FieldMap = {
@@ -62,14 +90,54 @@ const Provider_Properties_PolicySigningCertificatesFields: FieldMap = {
   },
 };
 
+const Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields: FieldMap = {
+  id: "id",
+};
+
+const Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields: FieldMap = {
+  actionsRequired: "actions_required",
+  description: "description",
+  status: "status",
+};
+
+const Provider_Properties_PrivateEndpointConnections_PropertiesFields: FieldMap = {
+  privateEndpoint: {
+    wireName: "private_endpoint",
+    kind: "object",
+    fields: Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+  },
+  privateLinkServiceConnectionState: {
+    wireName: "private_link_service_connection_state",
+    kind: "object",
+    fields: Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+  },
+  provisioningState: "provisioning_state",
+};
+
+const Provider_Properties_PrivateEndpointConnectionsFields: FieldMap = {
+  properties: {
+    wireName: "properties",
+    kind: "object",
+    fields: Provider_Properties_PrivateEndpointConnections_PropertiesFields,
+  },
+};
+
 const Provider_PropertiesFields: FieldMap = {
+  attestUri: "attest_uri",
   policySigningCertificates: {
     wireName: "policy_signing_certificates",
     kind: "object",
     fields: Provider_Properties_PolicySigningCertificatesFields,
   },
+  privateEndpointConnections: {
+    wireName: "private_endpoint_connections",
+    kind: "list",
+    fields: Provider_Properties_PrivateEndpointConnectionsFields,
+  },
   publicNetworkAccess: "public_network_access",
+  status: "status",
   tpmAttestationAuthentication: "tpm_attestation_authentication",
+  trustModel: "trust_model",
 };
 
 export interface ProviderConfig {

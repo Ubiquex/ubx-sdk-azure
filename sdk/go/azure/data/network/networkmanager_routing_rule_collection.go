@@ -8,19 +8,19 @@ type NetworkmanagerRoutingRuleCollection_Value_Properties_AppliesTo struct {
 }
 
 type NetworkmanagerRoutingRuleCollection_Value_Properties struct {
-	AppliesTo any
-	Description any
+	AppliesTo                  any
+	Description                any
 	DisableBgpRoutePropagation any
-	ProvisioningState any
-	ResourceGuid any
+	ProvisioningState          any
+	ResourceGuid               any
 }
 
 type NetworkmanagerRoutingRuleCollection_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -30,12 +30,12 @@ type NetworkmanagerRoutingRuleCollection_Value struct {
 }
 
 type NetworkmanagerRoutingRuleCollectionConfig struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 }
 
 type NetworkmanagerRoutingRuleCollectionAttrs struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 	// The link to the next page of items
 	NextLink any
@@ -46,7 +46,7 @@ type NetworkmanagerRoutingRuleCollectionAttrs struct {
 var NetworkmanagerRoutingRuleCollection = ubx.DataSourceBinding{
 	WireType: "azure_network_networkmanager_routing_rule_collection",
 	Fields: ubx.FieldMap{
-		"ConfigurationName": ubx.FieldSpec{WireName: "configuration_name"},
+		"ConfigurationName":  ubx.FieldSpec{WireName: "configuration_name"},
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
 	},
 }

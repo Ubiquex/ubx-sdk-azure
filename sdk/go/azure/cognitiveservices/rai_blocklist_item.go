@@ -11,13 +11,11 @@ type RaiBlocklistItem_Properties struct {
 }
 
 var RaiBlocklistItem_PropertiesFields = ubx.FieldMap{
-		"IsRegex": ubx.FieldSpec{WireName: "is_regex"},
-		"Pattern": ubx.FieldSpec{WireName: "pattern"},
-	}
+	"IsRegex": ubx.FieldSpec{WireName: "is_regex"},
+	"Pattern": ubx.FieldSpec{WireName: "pattern"},
+}
 
 type RaiBlocklistItemConfig struct {
-	// Resource Etag.
-	Etag any
 	// RAI Custom Blocklist Item properties.
 	Properties any
 	// Resource tags.
@@ -36,11 +34,10 @@ type RaiBlocklistItemAttrs struct {
 var RaiBlocklistItem = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_rai_blocklist_item",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RaiBlocklistItem_PropertiesFields,
+			Kind:     "object",
+			Fields:   RaiBlocklistItem_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

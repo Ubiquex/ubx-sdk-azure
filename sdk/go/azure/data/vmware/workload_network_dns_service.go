@@ -4,14 +4,14 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadNetworkDnsService_Value_Properties struct {
-	DefaultDnsZone any
-	DisplayName any
-	DnsServiceIp any
-	FqdnZones any
-	LogLevel any
+	DefaultDnsZone    any
+	DisplayName       any
+	DnsServiceIp      any
+	FqdnZones         any
+	LogLevel          any
 	ProvisioningState any
-	Revision any
-	Status any
+	Revision          any
+	Status            any
 }
 
 type WorkloadNetworkDnsService_Value struct {
@@ -24,7 +24,7 @@ type WorkloadNetworkDnsServiceConfig struct {
 
 type WorkloadNetworkDnsServiceAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetworkDnsService items on this page
 	Value any

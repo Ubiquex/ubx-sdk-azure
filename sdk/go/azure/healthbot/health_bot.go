@@ -4,7 +4,7 @@ package healthbot
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HealthBot_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -47,42 +47,42 @@ type HealthBot_Sku struct {
 }
 
 var HealthBot_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var HealthBot_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: HealthBot_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   HealthBot_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var HealthBot_Properties_KeyVaultPropertiesFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"UserIdentity": ubx.FieldSpec{WireName: "user_identity"},
-	}
+	"KeyName":      ubx.FieldSpec{WireName: "key_name"},
+	"KeyVaultUri":  ubx.FieldSpec{WireName: "key_vault_uri"},
+	"KeyVersion":   ubx.FieldSpec{WireName: "key_version"},
+	"UserIdentity": ubx.FieldSpec{WireName: "user_identity"},
+}
 
 var HealthBot_PropertiesFields = ubx.FieldMap{
-		"AccessControlMethod": ubx.FieldSpec{WireName: "access_control_method"},
-		"BotManagementPortalLink": ubx.FieldSpec{WireName: "bot_management_portal_link"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: HealthBot_Properties_KeyVaultPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AccessControlMethod":     ubx.FieldSpec{WireName: "access_control_method"},
+	"BotManagementPortalLink": ubx.FieldSpec{WireName: "bot_management_portal_link"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   HealthBot_Properties_KeyVaultPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var HealthBot_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type HealthBotConfig struct {
 	// Identity for the resource.
@@ -107,18 +107,18 @@ var HealthBot = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: HealthBot_IdentityFields,
+			Kind:     "object",
+			Fields:   HealthBot_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HealthBot_PropertiesFields,
+			Kind:     "object",
+			Fields:   HealthBot_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: HealthBot_SkuFields,
+			Kind:     "object",
+			Fields:   HealthBot_SkuFields,
 		},
 	},
 }

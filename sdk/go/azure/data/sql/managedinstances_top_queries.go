@@ -4,64 +4,64 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstancesTopQueries_Value_Queries_Intervals_Metrics struct {
-	Avg any
+	Avg         any
 	DisplayName any
-	Max any
-	Min any
-	Name any
-	Stdev any
-	Sum any
-	Unit any
-	Value any
+	Max         any
+	Min         any
+	Name        any
+	Stdev       any
+	Sum         any
+	Unit        any
+	Value       any
 }
 
 type ManagedinstancesTopQueries_Value_Queries_Intervals struct {
-	ExecutionCount any
+	ExecutionCount    any
 	IntervalStartTime any
-	IntervalType any
-	Metrics any
+	IntervalType      any
+	Metrics           any
 }
 
 type ManagedinstancesTopQueries_Value_Queries struct {
 	DatabaseName any
-	EndTime any
-	Intervals any
-	QueryId any
-	StartTime any
+	EndTime      any
+	Intervals    any
+	QueryId      any
+	StartTime    any
 }
 
 type ManagedinstancesTopQueries_Value struct {
 	AggregationFunction any
-	EndTime any
-	IntervalType any
-	NumberOfQueries any
-	ObservationMetric any
-	Queries any
-	StartTime any
+	EndTime             any
+	IntervalType        any
+	NumberOfQueries     any
+	ObservationMetric   any
+	Queries             any
+	StartTime           any
 }
 
 type ManagedinstancesTopQueriesConfig struct {
 	AggregationFunction any
-	Databases any
-	EndTime any
-	Interval any
+	Databases           any
+	EndTime             any
+	Interval            any
 	ManagedInstanceName any
-	NumberOfQueries any
-	ObservationMetric any
-	StartTime any
+	NumberOfQueries     any
+	ObservationMetric   any
+	StartTime           any
 }
 
 type ManagedinstancesTopQueriesAttrs struct {
 	AggregationFunction any
-	Databases any
-	EndTime any
-	Interval any
+	Databases           any
+	EndTime             any
+	Interval            any
 	ManagedInstanceName any
 	// The link to the next page of items
-	NextLink any
-	NumberOfQueries any
+	NextLink          any
+	NumberOfQueries   any
 	ObservationMetric any
-	StartTime any
+	StartTime         any
 	// The TopQueries items on this page
 	Value any
 }
@@ -70,12 +70,12 @@ var ManagedinstancesTopQueries = ubx.DataSourceBinding{
 	WireType: "azure_sql_managedinstances_top_queries",
 	Fields: ubx.FieldMap{
 		"AggregationFunction": ubx.FieldSpec{WireName: "aggregation_function"},
-		"Databases": ubx.FieldSpec{WireName: "databases"},
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Interval": ubx.FieldSpec{WireName: "interval"},
+		"Databases":           ubx.FieldSpec{WireName: "databases"},
+		"EndTime":             ubx.FieldSpec{WireName: "end_time"},
+		"Interval":            ubx.FieldSpec{WireName: "interval"},
 		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
-		"NumberOfQueries": ubx.FieldSpec{WireName: "number_of_queries"},
-		"ObservationMetric": ubx.FieldSpec{WireName: "observation_metric"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+		"NumberOfQueries":     ubx.FieldSpec{WireName: "number_of_queries"},
+		"ObservationMetric":   ubx.FieldSpec{WireName: "observation_metric"},
+		"StartTime":           ubx.FieldSpec{WireName: "start_time"},
 	},
 }

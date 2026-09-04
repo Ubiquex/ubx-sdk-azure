@@ -24,21 +24,21 @@ type ManagementOpenapiMarkupRule_Properties struct {
 }
 
 var ManagementOpenapiMarkupRule_Properties_CustomerDetailsFields = ubx.FieldMap{
-		"BillingAccountId": ubx.FieldSpec{WireName: "billing_account_id"},
-		"BillingProfileId": ubx.FieldSpec{WireName: "billing_profile_id"},
-	}
+	"BillingAccountId": ubx.FieldSpec{WireName: "billing_account_id"},
+	"BillingProfileId": ubx.FieldSpec{WireName: "billing_profile_id"},
+}
 
 var ManagementOpenapiMarkupRule_PropertiesFields = ubx.FieldMap{
-		"CustomerDetails": ubx.FieldSpec{
-			WireName: "customer_details",
-			Kind: "object",
-			Fields: ManagementOpenapiMarkupRule_Properties_CustomerDetailsFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"EndDate": ubx.FieldSpec{WireName: "end_date"},
-		"Percentage": ubx.FieldSpec{WireName: "percentage"},
-		"StartDate": ubx.FieldSpec{WireName: "start_date"},
-	}
+	"CustomerDetails": ubx.FieldSpec{
+		WireName: "customer_details",
+		Kind:     "object",
+		Fields:   ManagementOpenapiMarkupRule_Properties_CustomerDetailsFields,
+	},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"EndDate":     ubx.FieldSpec{WireName: "end_date"},
+	"Percentage":  ubx.FieldSpec{WireName: "percentage"},
+	"StartDate":   ubx.FieldSpec{WireName: "start_date"},
+}
 
 type ManagementOpenapiMarkupRuleConfig struct {
 	// The properties of the markup rule.
@@ -55,8 +55,8 @@ var ManagementOpenapiMarkupRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagementOpenapiMarkupRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiMarkupRule_PropertiesFields,
 		},
 	},
 }

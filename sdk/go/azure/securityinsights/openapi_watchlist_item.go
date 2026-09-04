@@ -36,31 +36,31 @@ type OpenapiWatchlistItem_Properties struct {
 }
 
 var OpenapiWatchlistItem_Properties_CreatedByFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-	}
+	"Email":    ubx.FieldSpec{WireName: "email"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+}
 
 var OpenapiWatchlistItem_PropertiesFields = ubx.FieldMap{
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: OpenapiWatchlistItem_Properties_CreatedByFields,
-		},
-		"EntityMapping": ubx.FieldSpec{WireName: "entity_mapping"},
-		"IsDeleted": ubx.FieldSpec{WireName: "is_deleted"},
-		"ItemsKeyValue": ubx.FieldSpec{WireName: "items_key_value"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-		"UpdatedBy": ubx.FieldSpec{
-			WireName: "updated_by",
-			Kind: "object",
-			Fields: OpenapiWatchlistItem_Properties_CreatedByFields,
-		},
-		"WatchlistItemId": ubx.FieldSpec{WireName: "watchlist_item_id"},
-		"WatchlistItemType": ubx.FieldSpec{WireName: "watchlist_item_type"},
-	}
+	"Created": ubx.FieldSpec{WireName: "created"},
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   OpenapiWatchlistItem_Properties_CreatedByFields,
+	},
+	"EntityMapping": ubx.FieldSpec{WireName: "entity_mapping"},
+	"IsDeleted":     ubx.FieldSpec{WireName: "is_deleted"},
+	"ItemsKeyValue": ubx.FieldSpec{WireName: "items_key_value"},
+	"TenantId":      ubx.FieldSpec{WireName: "tenant_id"},
+	"Updated":       ubx.FieldSpec{WireName: "updated"},
+	"UpdatedBy": ubx.FieldSpec{
+		WireName: "updated_by",
+		Kind:     "object",
+		Fields:   OpenapiWatchlistItem_Properties_CreatedByFields,
+	},
+	"WatchlistItemId":   ubx.FieldSpec{WireName: "watchlist_item_id"},
+	"WatchlistItemType": ubx.FieldSpec{WireName: "watchlist_item_type"},
+}
 
 type OpenapiWatchlistItemConfig struct {
 	// Etag of the azure resource
@@ -82,8 +82,8 @@ var OpenapiWatchlistItem = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiWatchlistItem_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiWatchlistItem_PropertiesFields,
 		},
 	},
 }

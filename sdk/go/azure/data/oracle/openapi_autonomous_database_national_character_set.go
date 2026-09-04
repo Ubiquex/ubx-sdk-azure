@@ -23,6 +23,5 @@ type OpenapiAutonomousDatabaseNationalCharacterSetAttrs struct {
 
 var OpenapiAutonomousDatabaseNationalCharacterSet = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_autonomous_database_national_character_set",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

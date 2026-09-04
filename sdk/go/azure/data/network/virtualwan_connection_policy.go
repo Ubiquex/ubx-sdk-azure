@@ -8,40 +8,40 @@ type VirtualwanConnectionPolicy_Value_Properties_RoutingConfiguration_Associated
 }
 
 type VirtualwanConnectionPolicy_Value_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanConnectionPolicy_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanConnectionPolicy_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanConnectionPolicy_Value_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanConnectionPolicy_Value_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanConnectionPolicy_Value_Properties struct {
-	AssociatedConnections any
+	AssociatedConnections  any
 	EnableInternetSecurity any
-	ProvisioningState any
-	RoutingConfiguration any
+	ProvisioningState      any
+	RoutingConfiguration   any
 }
 
 type VirtualwanConnectionPolicy_Value struct {
@@ -56,7 +56,7 @@ type VirtualwanConnectionPolicyAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The ConnectionPolicy items on this page
-	Value any
+	Value          any
 	VirtualHubName any
 }
 

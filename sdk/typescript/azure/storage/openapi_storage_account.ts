@@ -80,6 +80,29 @@ export interface OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthent
   smbOauthSettings?: OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthentication_SmbOauthSettings | Computed<OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthentication_SmbOauthSettings>;
 }
 
+export interface OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters_BlobRanges {
+  endRange?: string | Computed<string>;
+  startRange?: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters {
+  /** Blob ranges to restore. */
+  blobRanges: OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters_BlobRanges[] | Computed<OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters_BlobRanges[]>;
+  /** Restore blob to the specified time. */
+  timeToRestore: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_BlobRestoreStatus {
+  /** Failure reason when blob restore is failed. */
+  failureReason?: string | Computed<string>;
+  /** Blob restore parameters */
+  parameters?: OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters | Computed<OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters>;
+  /** Id for tracking blob restore request. */
+  restoreId?: string | Computed<string>;
+  /** The status of blob restore progress. Possible values are: - InProgress: Indicates that blob restore is ongoing. - Complete: Indicates that blob restore has been completed successfully. - Failed: Indicates that blob restore is failed. */
+  status?: string | Computed<string>;
+}
+
 export interface OpenapiStorageAccount_Properties_CustomDomain {
   /** Gets or sets the custom domain name assigned to the storage account. Name is the CNAME source. */
   name: string | Computed<string>;
@@ -161,6 +184,21 @@ export interface OpenapiStorageAccount_Properties_GeoPriorityReplicationStatus {
   isBlobEnabled?: boolean | Computed<boolean>;
 }
 
+export interface OpenapiStorageAccount_Properties_GeoReplicationStats {
+  /** A boolean flag which indicates whether or not account failover is supported for the account. */
+  canFailover?: boolean | Computed<boolean>;
+  /** A boolean flag which indicates whether or not planned account failover is supported for the account. */
+  canPlannedFailover?: boolean | Computed<boolean>;
+  /** All primary writes preceding this UTC date/time value are guaranteed to be available for read operations. Primary writes following this point in time may or may not be available for reads. Element may be default value if value of LastSyncTime is not available, this can happen if secondary is offline or we are in bootstrap. */
+  lastSyncTime?: string | Computed<string>;
+  /** The redundancy type of the account after an account failover is performed. */
+  postFailoverRedundancy?: string | Computed<string>;
+  /** The redundancy type of the account after a planned account failover is performed. */
+  postPlannedFailoverRedundancy?: string | Computed<string>;
+  /** The status of the secondary location. Possible values are: - Live: Indicates that the secondary location is active and operational. - Bootstrap: Indicates initial synchronization from the primary location to the secondary location is in progress.This typically occurs when replication is first enabled. - Unavailable: Indicates that the secondary location is temporarily unavailable. */
+  status?: string | Computed<string>;
+}
+
 export interface OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicy {
   /** This property can only be changed for disabled and unlocked time-based retention policies. When enabled, new blocks can be written to an append blob while maintaining immutability protection and compliance. Only new blocks can be added and any existing blocks cannot be modified or deleted. */
   allowProtectedAppendWrites?: boolean | Computed<boolean>;
@@ -175,6 +213,11 @@ export interface OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning
   enabled?: boolean | Computed<boolean>;
   /** This defines account-level immutability policy properties. */
   immutabilityPolicy?: OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicy | Computed<OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicy>;
+}
+
+export interface OpenapiStorageAccount_Properties_KeyCreationTime {
+  key1?: string | Computed<string>;
+  key2?: string | Computed<string>;
 }
 
 export interface OpenapiStorageAccount_Properties_KeyPolicy {
@@ -213,6 +256,92 @@ export interface OpenapiStorageAccount_Properties_NetworkAcls {
   virtualNetworkRules?: OpenapiStorageAccount_Properties_NetworkAcls_VirtualNetworkRules[] | Computed<OpenapiStorageAccount_Properties_NetworkAcls_VirtualNetworkRules[]>;
 }
 
+export interface OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpoints {
+  /** Gets the blob endpoint. */
+  blob?: string | Computed<string>;
+  /** Gets the dfs endpoint. */
+  dfs?: string | Computed<string>;
+  /** Gets the file endpoint. */
+  file?: string | Computed<string>;
+  /** Gets the web endpoint. */
+  web?: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpoints {
+  /** Gets the blob endpoint. */
+  blob?: string | Computed<string>;
+  /** Gets the dfs endpoint. */
+  dfs?: string | Computed<string>;
+  /** Gets the file endpoint. */
+  file?: string | Computed<string>;
+  /** Gets the queue endpoint. */
+  queue?: string | Computed<string>;
+  /** Gets the table endpoint. */
+  table?: string | Computed<string>;
+  /** Gets the web endpoint. */
+  web?: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints {
+  /** Gets the blob endpoint. */
+  blob?: string | Computed<string>;
+  /** Gets the dfs endpoint. */
+  dfs?: string | Computed<string>;
+  /** Gets the file endpoint. */
+  file?: string | Computed<string>;
+  /** The URIs that are used to perform a retrieval of a public blob, file, web or dfs object via a internet routing endpoint. */
+  internetEndpoints?: OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpoints | Computed<OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpoints>;
+  /** The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object via a microsoft routing endpoint. */
+  microsoftEndpoints?: OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpoints | Computed<OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpoints>;
+  /** Gets the queue endpoint. */
+  queue?: string | Computed<string>;
+  /** Gets the table endpoint. */
+  table?: string | Computed<string>;
+  /** Gets the web endpoint. */
+  web?: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_PrimaryEndpoints {
+  /** Gets the blob endpoint. */
+  blob?: string | Computed<string>;
+  /** Gets the dfs endpoint. */
+  dfs?: string | Computed<string>;
+  /** Gets the file endpoint. */
+  file?: string | Computed<string>;
+  /** The URIs that are used to perform a retrieval of a public blob, file, web or dfs object via a internet routing endpoint. */
+  internetEndpoints?: OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpoints | Computed<OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpoints>;
+  /** The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object via an IPv6 endpoint. */
+  ipv6Endpoints?: OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints | Computed<OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints>;
+  /** The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object via a microsoft routing endpoint. */
+  microsoftEndpoints?: OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpoints | Computed<OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpoints>;
+  /** Gets the queue endpoint. */
+  queue?: string | Computed<string>;
+  /** Gets the table endpoint. */
+  table?: string | Computed<string>;
+  /** Gets the web endpoint. */
+  web?: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint {
+  id?: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState {
+  actionRequired?: string | Computed<string>;
+  description?: string | Computed<string>;
+  status?: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties {
+  privateEndpoint?: OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint | Computed<OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint>;
+  privateLinkServiceConnectionState?: OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState | Computed<OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState>;
+  provisioningState?: string | Computed<string>;
+}
+
+export interface OpenapiStorageAccount_Properties_PrivateEndpointConnections {
+  properties?: OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties | Computed<OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties>;
+}
+
 export interface OpenapiStorageAccount_Properties_RoutingPreference {
   /** A boolean flag which indicates whether internet routing storage endpoints are to be published */
   publishInternetEndpoints?: boolean | Computed<boolean>;
@@ -229,9 +358,22 @@ export interface OpenapiStorageAccount_Properties_SasPolicy {
   sasExpirationPeriod: string | Computed<string>;
 }
 
+export interface OpenapiStorageAccount_Properties_StorageAccountSkuConversionStatus {
+  /** This property represents the sku conversion end time. */
+  endTime?: string | Computed<string>;
+  /** This property indicates the current sku conversion status. */
+  skuConversionStatus?: string | Computed<string>;
+  /** This property represents the sku conversion start time. */
+  startTime?: string | Computed<string>;
+  /** The SKU name. Required for account creation; optional for update. Note that in older versions, SKU name was called accountType. */
+  targetSkuName?: string | Computed<string>;
+}
+
 export interface OpenapiStorageAccount_Properties {
   /** The default access tier for block blobs in the storage account. Required for storage accounts where kind = BlobStorage. See more details in: https://learn.microsoft.com/azure/storage/blobs/access-tiers-overview. */
   accessTier?: string | Computed<string>;
+  /** If customer initiated account migration is in progress, the value will be true else it will be null. */
+  accountMigrationInProgress?: boolean | Computed<boolean>;
   /** Allow or disallow public access to all blobs or containers in the storage account. The default interpretation is false for this property. */
   allowBlobPublicAccess?: boolean | Computed<boolean>;
   /** Allow or disallow cross AAD tenant object replication. Set this property to true for new or existing accounts only if object replication policies will involve storage accounts in different AAD tenants. The default interpretation is false for new accounts to follow best security practices by default. */
@@ -244,6 +386,10 @@ export interface OpenapiStorageAccount_Properties {
   allowedCopyScope?: string | Computed<string>;
   /** Settings for Azure Files identity based authentication. */
   azureFilesIdentityBasedAuthentication?: OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthentication | Computed<OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthentication>;
+  /** Blob restore status. */
+  blobRestoreStatus?: OpenapiStorageAccount_Properties_BlobRestoreStatus | Computed<OpenapiStorageAccount_Properties_BlobRestoreStatus>;
+  /** Gets the creation date and time of the storage account in UTC. */
+  creationTime?: string | Computed<string>;
   /** The custom domain assigned to this storage account. This can be set via Update. */
   customDomain?: OpenapiStorageAccount_Properties_CustomDomain | Computed<OpenapiStorageAccount_Properties_CustomDomain>;
   /** Defines Data Collaboration Policy for a storage account. */
@@ -258,8 +404,12 @@ export interface OpenapiStorageAccount_Properties {
   enableExtendedGroups?: boolean | Computed<boolean>;
   /** The encryption settings on the storage account. */
   encryption?: OpenapiStorageAccount_Properties_Encryption | Computed<OpenapiStorageAccount_Properties_Encryption>;
+  /** If the failover is in progress, the value will be true, otherwise, it will be null. */
+  failoverInProgress?: boolean | Computed<boolean>;
   /** Geo Priority Replication enablement status for the storage account. */
   geoPriorityReplicationStatus?: OpenapiStorageAccount_Properties_GeoPriorityReplicationStatus | Computed<OpenapiStorageAccount_Properties_GeoPriorityReplicationStatus>;
+  /** Statistics related to replication for storage account's Blob, Table, Queue and File services. It is only available when geo-redundant replication is enabled for the storage account. */
+  geoReplicationStats?: OpenapiStorageAccount_Properties_GeoReplicationStats | Computed<OpenapiStorageAccount_Properties_GeoReplicationStats>;
   /** This property enables and defines account-level immutability. Enabling the feature auto-enables Blob Versioning. */
   immutableStorageWithVersioning?: OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning | Computed<OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning>;
   /** Account HierarchicalNamespace enabled if sets to true. */
@@ -270,20 +420,44 @@ export interface OpenapiStorageAccount_Properties {
   isNfsV3Enabled?: boolean | Computed<boolean>;
   /** Enables Secure File Transfer Protocol, if set to true */
   isSftpEnabled?: boolean | Computed<boolean>;
+  /** This property will be set to true or false on an event of ongoing migration. Default value is null. */
+  isSkuConversionBlocked?: boolean | Computed<boolean>;
+  /** Storage account keys creation time. */
+  keyCreationTime?: OpenapiStorageAccount_Properties_KeyCreationTime | Computed<OpenapiStorageAccount_Properties_KeyCreationTime>;
   /** KeyPolicy assigned to the storage account. */
   keyPolicy?: OpenapiStorageAccount_Properties_KeyPolicy | Computed<OpenapiStorageAccount_Properties_KeyPolicy>;
   /** Allow large file shares if sets to Enabled. It cannot be disabled once it is enabled. */
   largeFileSharesState?: string | Computed<string>;
+  /** Gets the timestamp of the most recent instance of a failover to the secondary location. Only the most recent timestamp is retained. This element is not returned if there has never been a failover instance. Only available if the accountType is Standard_GRS or Standard_RAGRS. */
+  lastGeoFailoverTime?: string | Computed<string>;
   /** Set the minimum TLS version to be permitted on requests to storage. The default interpretation is TLS 1.0 for this property. Minimum TLS version 1.3 version is not supported. */
   minimumTlsVersion?: string | Computed<string>;
   /** Network rule set */
   networkAcls?: OpenapiStorageAccount_Properties_NetworkAcls | Computed<OpenapiStorageAccount_Properties_NetworkAcls>;
+  /** The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object. */
+  primaryEndpoints?: OpenapiStorageAccount_Properties_PrimaryEndpoints | Computed<OpenapiStorageAccount_Properties_PrimaryEndpoints>;
+  /** Gets the location of the primary data center for the storage account. */
+  primaryLocation?: string | Computed<string>;
+  /** List of private endpoint connection associated with the specified storage account */
+  privateEndpointConnections?: OpenapiStorageAccount_Properties_PrivateEndpointConnections[] | Computed<OpenapiStorageAccount_Properties_PrivateEndpointConnections[]>;
+  /** Gets the status of the storage account at the time the operation was called. */
+  provisioningState?: string | Computed<string>;
   /** Allow, disallow, or let Network Security Perimeter configuration to evaluate public network access to Storage Account. Value is optional but if passed in, must be 'Enabled', 'Disabled' or 'SecuredByPerimeter'. */
   publicNetworkAccess?: string | Computed<string>;
   /** Routing preference defines the type of network, either microsoft or internet routing to be used to deliver the user data, the default option is microsoft routing */
   routingPreference?: OpenapiStorageAccount_Properties_RoutingPreference | Computed<OpenapiStorageAccount_Properties_RoutingPreference>;
   /** SasPolicy assigned to the storage account. */
   sasPolicy?: OpenapiStorageAccount_Properties_SasPolicy | Computed<OpenapiStorageAccount_Properties_SasPolicy>;
+  /** The URIs that are used to perform a retrieval of a public blob, queue, table, web or dfs object. */
+  secondaryEndpoints?: OpenapiStorageAccount_Properties_PrimaryEndpoints | Computed<OpenapiStorageAccount_Properties_PrimaryEndpoints>;
+  /** Gets the location of the geo-replicated secondary for the storage account. Only available if the accountType is Standard_GRS or Standard_RAGRS. */
+  secondaryLocation?: string | Computed<string>;
+  /** Gets the status indicating whether the primary location of the storage account is available or unavailable. */
+  statusOfPrimary?: string | Computed<string>;
+  /** Gets the status indicating whether the primary location of the storage account is available or unavailable. */
+  statusOfSecondary?: string | Computed<string>;
+  /** This defines the sku conversion status object for asynchronous sku conversions. */
+  storageAccountSkuConversionStatus?: OpenapiStorageAccount_Properties_StorageAccountSkuConversionStatus | Computed<OpenapiStorageAccount_Properties_StorageAccountSkuConversionStatus>;
   /** Allows https traffic only to storage service if sets to true. The default value is true since API version 2019-04-01. */
   supportsHttpsTrafficOnly?: boolean | Computed<boolean>;
 }
@@ -377,6 +551,31 @@ const OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthenticationFiel
   },
 };
 
+const OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters_BlobRangesFields: FieldMap = {
+  endRange: "end_range",
+  startRange: "start_range",
+};
+
+const OpenapiStorageAccount_Properties_BlobRestoreStatus_ParametersFields: FieldMap = {
+  blobRanges: {
+    wireName: "blob_ranges",
+    kind: "list",
+    fields: OpenapiStorageAccount_Properties_BlobRestoreStatus_Parameters_BlobRangesFields,
+  },
+  timeToRestore: "time_to_restore",
+};
+
+const OpenapiStorageAccount_Properties_BlobRestoreStatusFields: FieldMap = {
+  failureReason: "failure_reason",
+  parameters: {
+    wireName: "parameters",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_BlobRestoreStatus_ParametersFields,
+  },
+  restoreId: "restore_id",
+  status: "status",
+};
+
 const OpenapiStorageAccount_Properties_CustomDomainFields: FieldMap = {
   name: "name",
   useSubDomainName: "use_sub_domain_name",
@@ -459,6 +658,15 @@ const OpenapiStorageAccount_Properties_GeoPriorityReplicationStatusFields: Field
   isBlobEnabled: "is_blob_enabled",
 };
 
+const OpenapiStorageAccount_Properties_GeoReplicationStatsFields: FieldMap = {
+  canFailover: "can_failover",
+  canPlannedFailover: "can_planned_failover",
+  lastSyncTime: "last_sync_time",
+  postFailoverRedundancy: "post_failover_redundancy",
+  postPlannedFailoverRedundancy: "post_planned_failover_redundancy",
+  status: "status",
+};
+
 const OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicyFields: FieldMap = {
   allowProtectedAppendWrites: "allow_protected_append_writes",
   immutabilityPeriodSinceCreationInDays: "immutability_period_since_creation_in_days",
@@ -472,6 +680,11 @@ const OpenapiStorageAccount_Properties_ImmutableStorageWithVersioningFields: Fie
     kind: "object",
     fields: OpenapiStorageAccount_Properties_ImmutableStorageWithVersioning_ImmutabilityPolicyFields,
   },
+};
+
+const OpenapiStorageAccount_Properties_KeyCreationTimeFields: FieldMap = {
+  key1: "key1",
+  key2: "key2",
 };
 
 const OpenapiStorageAccount_Properties_KeyPolicyFields: FieldMap = {
@@ -519,6 +732,97 @@ const OpenapiStorageAccount_Properties_NetworkAclsFields: FieldMap = {
   },
 };
 
+const OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpointsFields: FieldMap = {
+  blob: "blob",
+  dfs: "dfs",
+  file: "file",
+  web: "web",
+};
+
+const OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpointsFields: FieldMap = {
+  blob: "blob",
+  dfs: "dfs",
+  file: "file",
+  queue: "queue",
+  table: "table",
+  web: "web",
+};
+
+const OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6EndpointsFields: FieldMap = {
+  blob: "blob",
+  dfs: "dfs",
+  file: "file",
+  internetEndpoints: {
+    wireName: "internet_endpoints",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpointsFields,
+  },
+  microsoftEndpoints: {
+    wireName: "microsoft_endpoints",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpointsFields,
+  },
+  queue: "queue",
+  table: "table",
+  web: "web",
+};
+
+const OpenapiStorageAccount_Properties_PrimaryEndpointsFields: FieldMap = {
+  blob: "blob",
+  dfs: "dfs",
+  file: "file",
+  internetEndpoints: {
+    wireName: "internet_endpoints",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrimaryEndpoints_InternetEndpointsFields,
+  },
+  ipv6Endpoints: {
+    wireName: "ipv6_endpoints",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6EndpointsFields,
+  },
+  microsoftEndpoints: {
+    wireName: "microsoft_endpoints",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrimaryEndpoints_Ipv6Endpoints_MicrosoftEndpointsFields,
+  },
+  queue: "queue",
+  table: "table",
+  web: "web",
+};
+
+const OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields: FieldMap = {
+  id: "id",
+};
+
+const OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields: FieldMap = {
+  actionRequired: "action_required",
+  description: "description",
+  status: "status",
+};
+
+const OpenapiStorageAccount_Properties_PrivateEndpointConnections_PropertiesFields: FieldMap = {
+  privateEndpoint: {
+    wireName: "private_endpoint",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+  },
+  privateLinkServiceConnectionState: {
+    wireName: "private_link_service_connection_state",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+  },
+  provisioningState: "provisioning_state",
+};
+
+const OpenapiStorageAccount_Properties_PrivateEndpointConnectionsFields: FieldMap = {
+  properties: {
+    wireName: "properties",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrivateEndpointConnections_PropertiesFields,
+  },
+};
+
 const OpenapiStorageAccount_Properties_RoutingPreferenceFields: FieldMap = {
   publishInternetEndpoints: "publish_internet_endpoints",
   publishMicrosoftEndpoints: "publish_microsoft_endpoints",
@@ -530,8 +834,16 @@ const OpenapiStorageAccount_Properties_SasPolicyFields: FieldMap = {
   sasExpirationPeriod: "sas_expiration_period",
 };
 
+const OpenapiStorageAccount_Properties_StorageAccountSkuConversionStatusFields: FieldMap = {
+  endTime: "end_time",
+  skuConversionStatus: "sku_conversion_status",
+  startTime: "start_time",
+  targetSkuName: "target_sku_name",
+};
+
 const OpenapiStorageAccount_PropertiesFields: FieldMap = {
   accessTier: "access_tier",
+  accountMigrationInProgress: "account_migration_in_progress",
   allowBlobPublicAccess: "allow_blob_public_access",
   allowCrossTenantReplication: "allow_cross_tenant_replication",
   allowSharedKeyAccess: "allow_shared_key_access",
@@ -546,6 +858,12 @@ const OpenapiStorageAccount_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiStorageAccount_Properties_AzureFilesIdentityBasedAuthenticationFields,
   },
+  blobRestoreStatus: {
+    wireName: "blob_restore_status",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_BlobRestoreStatusFields,
+  },
+  creationTime: "creation_time",
   customDomain: {
     wireName: "custom_domain",
     kind: "object",
@@ -569,10 +887,16 @@ const OpenapiStorageAccount_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiStorageAccount_Properties_EncryptionFields,
   },
+  failoverInProgress: "failover_in_progress",
   geoPriorityReplicationStatus: {
     wireName: "geo_priority_replication_status",
     kind: "object",
     fields: OpenapiStorageAccount_Properties_GeoPriorityReplicationStatusFields,
+  },
+  geoReplicationStats: {
+    wireName: "geo_replication_stats",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_GeoReplicationStatsFields,
   },
   immutableStorageWithVersioning: {
     wireName: "immutable_storage_with_versioning",
@@ -583,18 +907,37 @@ const OpenapiStorageAccount_PropertiesFields: FieldMap = {
   isLocalUserEnabled: "is_local_user_enabled",
   isNfsV3Enabled: "is_nfs_v3_enabled",
   isSftpEnabled: "is_sftp_enabled",
+  isSkuConversionBlocked: "is_sku_conversion_blocked",
+  keyCreationTime: {
+    wireName: "key_creation_time",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_KeyCreationTimeFields,
+  },
   keyPolicy: {
     wireName: "key_policy",
     kind: "object",
     fields: OpenapiStorageAccount_Properties_KeyPolicyFields,
   },
   largeFileSharesState: "large_file_shares_state",
+  lastGeoFailoverTime: "last_geo_failover_time",
   minimumTlsVersion: "minimum_tls_version",
   networkAcls: {
     wireName: "network_acls",
     kind: "object",
     fields: OpenapiStorageAccount_Properties_NetworkAclsFields,
   },
+  primaryEndpoints: {
+    wireName: "primary_endpoints",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrimaryEndpointsFields,
+  },
+  primaryLocation: "primary_location",
+  privateEndpointConnections: {
+    wireName: "private_endpoint_connections",
+    kind: "list",
+    fields: OpenapiStorageAccount_Properties_PrivateEndpointConnectionsFields,
+  },
+  provisioningState: "provisioning_state",
   publicNetworkAccess: "public_network_access",
   routingPreference: {
     wireName: "routing_preference",
@@ -605,6 +948,19 @@ const OpenapiStorageAccount_PropertiesFields: FieldMap = {
     wireName: "sas_policy",
     kind: "object",
     fields: OpenapiStorageAccount_Properties_SasPolicyFields,
+  },
+  secondaryEndpoints: {
+    wireName: "secondary_endpoints",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_PrimaryEndpointsFields,
+  },
+  secondaryLocation: "secondary_location",
+  statusOfPrimary: "status_of_primary",
+  statusOfSecondary: "status_of_secondary",
+  storageAccountSkuConversionStatus: {
+    wireName: "storage_account_sku_conversion_status",
+    kind: "object",
+    fields: OpenapiStorageAccount_Properties_StorageAccountSkuConversionStatusFields,
   },
   supportsHttpsTrafficOnly: "supports_https_traffic_only",
 };

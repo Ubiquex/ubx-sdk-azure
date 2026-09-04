@@ -10,12 +10,12 @@ type VirtualnetworkDdosProtectionPlan_Value_Properties_PublicIpaddresses struct 
 type VirtualnetworkDdosProtectionPlan_Value_Properties struct {
 	ProvisioningState any
 	PublicIpaddresses any
-	ResourceGuid any
-	VirtualNetworks any
+	ResourceGuid      any
+	VirtualNetworks   any
 }
 
 type VirtualnetworkDdosProtectionPlan_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -31,6 +31,5 @@ type VirtualnetworkDdosProtectionPlanAttrs struct {
 
 var VirtualnetworkDdosProtectionPlan = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_ddos_protection_plan",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

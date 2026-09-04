@@ -21,9 +21,9 @@ type OpenapiRunbook_Properties_Draft_DraftContentLink struct {
 
 type OpenapiRunbook_Properties_Draft_Parameters struct {
 	DefaultValue any
-	IsMandatory any
-	Position any
-	Type any
+	IsMandatory  any
+	Position     any
+	Type         any
 }
 
 type OpenapiRunbook_Properties_Draft struct {
@@ -42,80 +42,108 @@ type OpenapiRunbook_Properties_Draft struct {
 }
 
 type OpenapiRunbook_Properties struct {
+	// Gets or sets the creation time.
+	CreationTime any
 	// Gets or sets the description of the runbook.
 	Description any
-	Draft any
+	Draft       any
+	// Gets or sets the job count of the runbook.
+	JobCount any
+	// Gets or sets the last modified by.
+	LastModifiedBy any
+	// Gets or sets the last modified time.
+	LastModifiedTime any
 	// Gets or sets the activity-level tracing options of the runbook.
 	LogActivityTrace any
 	// Gets or sets progress log option.
 	LogProgress any
 	// Gets or sets verbose log option.
 	LogVerbose any
+	// Gets or sets the runbook output types.
+	OutputTypes any
+	// Gets or sets the runbook parameters.
+	Parameters any
+	// Gets or sets the provisioning state of the runbook.
+	ProvisioningState any
 	// Definition of the content link.
 	PublishContentLink any
 	// Gets or sets the type of the runbook.
 	RunbookType any
 	// Environment of the runbook.
 	RuntimeEnvironment any
+	// Gets or sets the state of the runbook.
+	State any
 }
 
 var OpenapiRunbook_Properties_Draft_DraftContentLink_ContentHashFields = ubx.FieldMap{
-		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiRunbook_Properties_Draft_DraftContentLinkFields = ubx.FieldMap{
-		"ContentHash": ubx.FieldSpec{
-			WireName: "content_hash",
-			Kind: "object",
-			Fields: OpenapiRunbook_Properties_Draft_DraftContentLink_ContentHashFields,
-		},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ContentHash": ubx.FieldSpec{
+		WireName: "content_hash",
+		Kind:     "object",
+		Fields:   OpenapiRunbook_Properties_Draft_DraftContentLink_ContentHashFields,
+	},
+	"Uri":     ubx.FieldSpec{WireName: "uri"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiRunbook_Properties_Draft_ParametersFields = ubx.FieldMap{
-		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-		"IsMandatory": ubx.FieldSpec{WireName: "is_mandatory"},
-		"Position": ubx.FieldSpec{WireName: "position"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
+	"IsMandatory":  ubx.FieldSpec{WireName: "is_mandatory"},
+	"Position":     ubx.FieldSpec{WireName: "position"},
+	"Type":         ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiRunbook_Properties_DraftFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"DraftContentLink": ubx.FieldSpec{
-			WireName: "draft_content_link",
-			Kind: "object",
-			Fields: OpenapiRunbook_Properties_Draft_DraftContentLinkFields,
-		},
-		"InEdit": ubx.FieldSpec{WireName: "in_edit"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"OutputTypes": ubx.FieldSpec{WireName: "output_types"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: OpenapiRunbook_Properties_Draft_ParametersFields,
-		},
-	}
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"DraftContentLink": ubx.FieldSpec{
+		WireName: "draft_content_link",
+		Kind:     "object",
+		Fields:   OpenapiRunbook_Properties_Draft_DraftContentLinkFields,
+	},
+	"InEdit":           ubx.FieldSpec{WireName: "in_edit"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"OutputTypes":      ubx.FieldSpec{WireName: "output_types"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiRunbook_Properties_Draft_ParametersFields,
+	},
+}
 
 var OpenapiRunbook_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Draft": ubx.FieldSpec{
-			WireName: "draft",
-			Kind: "object",
-			Fields: OpenapiRunbook_Properties_DraftFields,
-		},
-		"LogActivityTrace": ubx.FieldSpec{WireName: "log_activity_trace"},
-		"LogProgress": ubx.FieldSpec{WireName: "log_progress"},
-		"LogVerbose": ubx.FieldSpec{WireName: "log_verbose"},
-		"PublishContentLink": ubx.FieldSpec{
-			WireName: "publish_content_link",
-			Kind: "object",
-			Fields: OpenapiRunbook_Properties_Draft_DraftContentLinkFields,
-		},
-		"RunbookType": ubx.FieldSpec{WireName: "runbook_type"},
-		"RuntimeEnvironment": ubx.FieldSpec{WireName: "runtime_environment"},
-	}
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"Description":  ubx.FieldSpec{WireName: "description"},
+	"Draft": ubx.FieldSpec{
+		WireName: "draft",
+		Kind:     "object",
+		Fields:   OpenapiRunbook_Properties_DraftFields,
+	},
+	"JobCount":         ubx.FieldSpec{WireName: "job_count"},
+	"LastModifiedBy":   ubx.FieldSpec{WireName: "last_modified_by"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"LogActivityTrace": ubx.FieldSpec{WireName: "log_activity_trace"},
+	"LogProgress":      ubx.FieldSpec{WireName: "log_progress"},
+	"LogVerbose":       ubx.FieldSpec{WireName: "log_verbose"},
+	"OutputTypes":      ubx.FieldSpec{WireName: "output_types"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiRunbook_Properties_Draft_ParametersFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublishContentLink": ubx.FieldSpec{
+		WireName: "publish_content_link",
+		Kind:     "object",
+		Fields:   OpenapiRunbook_Properties_Draft_DraftContentLinkFields,
+	},
+	"RunbookType":        ubx.FieldSpec{WireName: "runbook_type"},
+	"RuntimeEnvironment": ubx.FieldSpec{WireName: "runtime_environment"},
+	"State":              ubx.FieldSpec{WireName: "state"},
+}
 
 type OpenapiRunbookConfig struct {
 	// Gets or sets the location of the resource.
@@ -145,11 +173,11 @@ var OpenapiRunbook = ubx.ResourceBinding{
 	WireType: "azure_automation_openapi_runbook",
 	Fields: ubx.FieldMap{
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRunbook_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRunbook_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

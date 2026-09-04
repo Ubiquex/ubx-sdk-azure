@@ -8,12 +8,12 @@ type ApplicationServiceResource_Value_Properties_PartitionDescription struct {
 }
 
 type ApplicationServiceResource_Value_Properties struct {
-	PartitionDescription any
-	ProvisioningState any
-	ServiceDnsName any
-	ServiceKind any
+	PartitionDescription         any
+	ProvisioningState            any
+	ServiceDnsName               any
+	ServiceKind                  any
 	ServicePackageActivationMode any
-	ServiceTypeName any
+	ServiceTypeName              any
 }
 
 type ApplicationServiceResource_Value struct {
@@ -21,31 +21,31 @@ type ApplicationServiceResource_Value struct {
 }
 
 type ApplicationServiceResourceConfig struct {
-	ApiVersion any
-	ApplicationName any
-	ClusterName any
+	ApiVersion        any
+	ApplicationName   any
+	ClusterName       any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type ApplicationServiceResourceAttrs struct {
-	ApiVersion any
+	ApiVersion      any
 	ApplicationName any
-	ClusterName any
+	ClusterName     any
 	// URL to get the next set of service list results if there are any.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
-	Value any
+	SubscriptionId    any
+	Value             any
 }
 
 var ApplicationServiceResource = ubx.DataSourceBinding{
 	WireType: "azure_servicefabric_application_service_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ApplicationName": ubx.FieldSpec{WireName: "application_name"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ApplicationName":   ubx.FieldSpec{WireName: "application_name"},
+		"ClusterName":       ubx.FieldSpec{WireName: "cluster_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

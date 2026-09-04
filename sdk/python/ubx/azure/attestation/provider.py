@@ -32,12 +32,40 @@ class Provider_Properties_PolicySigningCertificates:
     keys: Any = None
 
 @dataclasses.dataclass
+class Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
+    id: Any = None
+
+@dataclasses.dataclass
+class Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    actions_required: Any = None
+    description: Any = None
+    status: Any = None
+
+@dataclasses.dataclass
+class Provider_Properties_PrivateEndpointConnections_Properties:
+    private_endpoint: Any = None
+    private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class Provider_Properties_PrivateEndpointConnections:
+    properties: Any = None
+
+@dataclasses.dataclass
 class Provider_Properties:
+    # Gets the uri of attestation service
+    attest_uri: Any = None
     policy_signing_certificates: Any = None
+    # List of private endpoint connections associated with the attestation provider.
+    private_endpoint_connections: Any = None
     # Controls whether traffic from the public network is allowed to access the Attestation Provider APIs.
     public_network_access: Any = None
+    # Status of attestation service.
+    status: Any = None
     # The setting that controls whether authentication is enabled or disabled for TPM Attestation REST APIs.
     tpm_attestation_authentication: Any = None
+    # Trust model for the attestation provider.
+    trust_model: Any = None
 
 _Provider_Properties_PolicySigningCertificates_KeysFields = {
     "alg": ubx.FieldSpec(wire_name="alg"),
@@ -67,14 +95,54 @@ _Provider_Properties_PolicySigningCertificatesFields = {
     ),
 }
 
+_Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = {
+    "id": ubx.FieldSpec(wire_name="id"),
+}
+
+_Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = {
+    "actions_required": ubx.FieldSpec(wire_name="actions_required"),
+    "description": ubx.FieldSpec(wire_name="description"),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
+_Provider_Properties_PrivateEndpointConnections_PropertiesFields = {
+    "private_endpoint": ubx.FieldSpec(
+        wire_name="private_endpoint",
+        kind="object",
+        fields=_Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+    ),
+    "private_link_service_connection_state": ubx.FieldSpec(
+        wire_name="private_link_service_connection_state",
+        kind="object",
+        fields=_Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+}
+
+_Provider_Properties_PrivateEndpointConnectionsFields = {
+    "properties": ubx.FieldSpec(
+        wire_name="properties",
+        kind="object",
+        fields=_Provider_Properties_PrivateEndpointConnections_PropertiesFields,
+    ),
+}
+
 _Provider_PropertiesFields = {
+    "attest_uri": ubx.FieldSpec(wire_name="attest_uri"),
     "policy_signing_certificates": ubx.FieldSpec(
         wire_name="policy_signing_certificates",
         kind="object",
         fields=_Provider_Properties_PolicySigningCertificatesFields,
     ),
+    "private_endpoint_connections": ubx.FieldSpec(
+        wire_name="private_endpoint_connections",
+        kind="list",
+        fields=_Provider_Properties_PrivateEndpointConnectionsFields,
+    ),
     "public_network_access": ubx.FieldSpec(wire_name="public_network_access"),
+    "status": ubx.FieldSpec(wire_name="status"),
     "tpm_attestation_authentication": ubx.FieldSpec(wire_name="tpm_attestation_authentication"),
+    "trust_model": ubx.FieldSpec(wire_name="trust_model"),
 }
 
 @dataclasses.dataclass

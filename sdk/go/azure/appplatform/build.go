@@ -51,50 +51,50 @@ type Build_Properties struct {
 }
 
 var Build_Properties_ApmsFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var Build_Properties_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":    ubx.FieldSpec{WireName: "cpu"},
+	"Memory": ubx.FieldSpec{WireName: "memory"},
+}
 
 var Build_Properties_TriggeredBuildResultFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Image": ubx.FieldSpec{WireName: "image"},
-		"LastTransitionReason": ubx.FieldSpec{WireName: "last_transition_reason"},
-		"LastTransitionStatus": ubx.FieldSpec{WireName: "last_transition_status"},
-		"LastTransitionTime": ubx.FieldSpec{WireName: "last_transition_time"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Id":                   ubx.FieldSpec{WireName: "id"},
+	"Image":                ubx.FieldSpec{WireName: "image"},
+	"LastTransitionReason": ubx.FieldSpec{WireName: "last_transition_reason"},
+	"LastTransitionStatus": ubx.FieldSpec{WireName: "last_transition_status"},
+	"LastTransitionTime":   ubx.FieldSpec{WireName: "last_transition_time"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Build_PropertiesFields = ubx.FieldMap{
-		"AgentPool": ubx.FieldSpec{WireName: "agent_pool"},
-		"Apms": ubx.FieldSpec{
-			WireName: "apms",
-			Kind: "list",
-			Fields: Build_Properties_ApmsFields,
-		},
-		"Builder": ubx.FieldSpec{WireName: "builder"},
-		"Certificates": ubx.FieldSpec{
-			WireName: "certificates",
-			Kind: "list",
-			Fields: Build_Properties_ApmsFields,
-		},
-		"Env": ubx.FieldSpec{WireName: "env"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RelativePath": ubx.FieldSpec{WireName: "relative_path"},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: Build_Properties_ResourceRequestsFields,
-		},
-		"TriggeredBuildResult": ubx.FieldSpec{
-			WireName: "triggered_build_result",
-			Kind: "object",
-			Fields: Build_Properties_TriggeredBuildResultFields,
-		},
-	}
+	"AgentPool": ubx.FieldSpec{WireName: "agent_pool"},
+	"Apms": ubx.FieldSpec{
+		WireName: "apms",
+		Kind:     "list",
+		Fields:   Build_Properties_ApmsFields,
+	},
+	"Builder": ubx.FieldSpec{WireName: "builder"},
+	"Certificates": ubx.FieldSpec{
+		WireName: "certificates",
+		Kind:     "list",
+		Fields:   Build_Properties_ApmsFields,
+	},
+	"Env":               ubx.FieldSpec{WireName: "env"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RelativePath":      ubx.FieldSpec{WireName: "relative_path"},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   Build_Properties_ResourceRequestsFields,
+	},
+	"TriggeredBuildResult": ubx.FieldSpec{
+		WireName: "triggered_build_result",
+		Kind:     "object",
+		Fields:   Build_Properties_TriggeredBuildResultFields,
+	},
+}
 
 type BuildConfig struct {
 	// Build resource properties payload
@@ -111,8 +111,8 @@ var Build = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Build_PropertiesFields,
+			Kind:     "object",
+			Fields:   Build_PropertiesFields,
 		},
 	},
 }

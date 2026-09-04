@@ -9,7 +9,6 @@ import ubx_sdk as ubx
 @dataclasses.dataclass
 class IntegrationruntimeSelfHostedIntegrationRuntimeNodeConfig:
     integration_runtime_name: Any = None
-    node_name: Any = None
 
 @dataclasses.dataclass
 class IntegrationruntimeSelfHostedIntegrationRuntimeNodeAttrs:
@@ -54,6 +53,5 @@ IntegrationruntimeSelfHostedIntegrationRuntimeNode = ubx.DataSourceBinding(
     wire_type="azure_synapse_integrationruntime_self_hosted_integration_runtime_node",
     fields={
         "integration_runtime_name": ubx.FieldSpec(wire_name="integration_runtime_name"),
-        "node_name": ubx.FieldSpec(wire_name="node_name"),
     },
 )

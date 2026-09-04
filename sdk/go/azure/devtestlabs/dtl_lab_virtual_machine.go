@@ -93,31 +93,31 @@ type DtlLabVirtualMachine_Properties_ArtifactDeploymentStatus struct {
 }
 
 type DtlLabVirtualMachine_Properties_Artifacts_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type DtlLabVirtualMachine_Properties_Artifacts struct {
-	ArtifactId any
-	ArtifactTitle any
-	DeploymentStatusMessage any
-	InstallTime any
-	Parameters any
-	Status any
+	ArtifactId               any
+	ArtifactTitle            any
+	DeploymentStatusMessage  any
+	InstallTime              any
+	Parameters               any
+	Status                   any
 	VmExtensionStatusMessage any
 }
 
 type DtlLabVirtualMachine_Properties_ComputeVm_DataDisks struct {
-	DiskSizeGiB any
-	DiskUri any
+	DiskSizeGiB   any
+	DiskUri       any
 	ManagedDiskId any
-	Name any
+	Name          any
 }
 
 type DtlLabVirtualMachine_Properties_ComputeVm_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Message any
+	Message       any
 }
 
 type DtlLabVirtualMachine_Properties_ComputeVm struct {
@@ -138,15 +138,15 @@ type DtlLabVirtualMachine_Properties_ComputeVm struct {
 }
 
 type DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptions struct {
-	DiskName any
+	DiskName    any
 	DiskSizeGiB any
-	DiskType any
+	DiskType    any
 }
 
 type DtlLabVirtualMachine_Properties_DataDiskParameters struct {
 	AttachNewDataDiskOptions any
-	ExistingLabDiskId any
-	HostCaching any
+	ExistingLabDiskId        any
+	HostCaching              any
 }
 
 type DtlLabVirtualMachine_Properties_GalleryImageReference struct {
@@ -163,8 +163,8 @@ type DtlLabVirtualMachine_Properties_GalleryImageReference struct {
 }
 
 type DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRules struct {
-	BackendPort any
-	FrontendPort any
+	BackendPort       any
+	FrontendPort      any
 	TransportProtocol any
 }
 
@@ -195,21 +195,21 @@ type DtlLabVirtualMachine_Properties_NetworkInterface struct {
 }
 
 type DtlLabVirtualMachine_Properties_ScheduleParameters_Properties struct {
-	DailyRecurrence any
-	HourlyRecurrence any
+	DailyRecurrence      any
+	HourlyRecurrence     any
 	NotificationSettings any
-	Status any
-	TargetResourceId any
-	TaskType any
-	TimeZoneId any
-	WeeklyRecurrence any
+	Status               any
+	TargetResourceId     any
+	TaskType             any
+	TimeZoneId           any
+	WeeklyRecurrence     any
 }
 
 type DtlLabVirtualMachine_Properties_ScheduleParameters struct {
-	Location any
-	Name any
+	Location   any
+	Name       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlLabVirtualMachine_Properties struct {
@@ -286,306 +286,306 @@ type DtlLabVirtualMachine_Properties struct {
 }
 
 var DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrenceFields = ubx.FieldMap{
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Time": ubx.FieldSpec{WireName: "time"},
+}
 
 var DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrenceFields = ubx.FieldMap{
-		"Minute": ubx.FieldSpec{WireName: "minute"},
-	}
+	"Minute": ubx.FieldSpec{WireName: "minute"},
+}
 
 var DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettingsFields = ubx.FieldMap{
-		"EmailRecipient": ubx.FieldSpec{WireName: "email_recipient"},
-		"NotificationLocale": ubx.FieldSpec{WireName: "notification_locale"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TimeInMinutes": ubx.FieldSpec{WireName: "time_in_minutes"},
-		"WebhookUrl": ubx.FieldSpec{WireName: "webhook_url"},
-	}
+	"EmailRecipient":     ubx.FieldSpec{WireName: "email_recipient"},
+	"NotificationLocale": ubx.FieldSpec{WireName: "notification_locale"},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+	"TimeInMinutes":      ubx.FieldSpec{WireName: "time_in_minutes"},
+	"WebhookUrl":         ubx.FieldSpec{WireName: "webhook_url"},
+}
 
 var DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrenceFields = ubx.FieldMap{
-		"Time": ubx.FieldSpec{WireName: "time"},
-		"Weekdays": ubx.FieldSpec{WireName: "weekdays"},
-	}
+	"Time":     ubx.FieldSpec{WireName: "time"},
+	"Weekdays": ubx.FieldSpec{WireName: "weekdays"},
+}
 
 var DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"DailyRecurrence": ubx.FieldSpec{
-			WireName: "daily_recurrence",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrenceFields,
-		},
-		"HourlyRecurrence": ubx.FieldSpec{
-			WireName: "hourly_recurrence",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrenceFields,
-		},
-		"NotificationSettings": ubx.FieldSpec{
-			WireName: "notification_settings",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettingsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-		"TaskType": ubx.FieldSpec{WireName: "task_type"},
-		"TimeZoneId": ubx.FieldSpec{WireName: "time_zone_id"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"WeeklyRecurrence": ubx.FieldSpec{
-			WireName: "weekly_recurrence",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrenceFields,
-		},
-	}
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"DailyRecurrence": ubx.FieldSpec{
+		WireName: "daily_recurrence",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrenceFields,
+	},
+	"HourlyRecurrence": ubx.FieldSpec{
+		WireName: "hourly_recurrence",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrenceFields,
+	},
+	"NotificationSettings": ubx.FieldSpec{
+		WireName: "notification_settings",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettingsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"TargetResourceId":  ubx.FieldSpec{WireName: "target_resource_id"},
+	"TaskType":          ubx.FieldSpec{WireName: "task_type"},
+	"TimeZoneId":        ubx.FieldSpec{WireName: "time_zone_id"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+	"WeeklyRecurrence": ubx.FieldSpec{
+		WireName: "weekly_recurrence",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrenceFields,
+	},
+}
 
 var DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_PropertiesFields,
-		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_PropertiesFields,
+	},
+	"Tags": ubx.FieldSpec{WireName: "tags"},
+}
 
 var DtlLabVirtualMachine_Properties_ApplicableSchedule_PropertiesFields = ubx.FieldMap{
-		"LabVmsShutdown": ubx.FieldSpec{
-			WireName: "lab_vms_shutdown",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields,
-		},
-		"LabVmsStartup": ubx.FieldSpec{
-			WireName: "lab_vms_startup",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields,
-		},
-	}
+	"LabVmsShutdown": ubx.FieldSpec{
+		WireName: "lab_vms_shutdown",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields,
+	},
+	"LabVmsStartup": ubx.FieldSpec{
+		WireName: "lab_vms_startup",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdownFields,
+	},
+}
 
 var DtlLabVirtualMachine_Properties_ApplicableScheduleFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_PropertiesFields,
-		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_PropertiesFields,
+	},
+	"Tags": ubx.FieldSpec{WireName: "tags"},
+}
 
 var DtlLabVirtualMachine_Properties_ArtifactDeploymentStatusFields = ubx.FieldMap{
-		"ArtifactsApplied": ubx.FieldSpec{WireName: "artifacts_applied"},
-		"DeploymentStatus": ubx.FieldSpec{WireName: "deployment_status"},
-		"TotalArtifacts": ubx.FieldSpec{WireName: "total_artifacts"},
-	}
+	"ArtifactsApplied": ubx.FieldSpec{WireName: "artifacts_applied"},
+	"DeploymentStatus": ubx.FieldSpec{WireName: "deployment_status"},
+	"TotalArtifacts":   ubx.FieldSpec{WireName: "total_artifacts"},
+}
 
 var DtlLabVirtualMachine_Properties_Artifacts_ParametersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var DtlLabVirtualMachine_Properties_ArtifactsFields = ubx.FieldMap{
-		"ArtifactId": ubx.FieldSpec{WireName: "artifact_id"},
-		"ArtifactTitle": ubx.FieldSpec{WireName: "artifact_title"},
-		"DeploymentStatusMessage": ubx.FieldSpec{WireName: "deployment_status_message"},
-		"InstallTime": ubx.FieldSpec{WireName: "install_time"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: DtlLabVirtualMachine_Properties_Artifacts_ParametersFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"VmExtensionStatusMessage": ubx.FieldSpec{WireName: "vm_extension_status_message"},
-	}
+	"ArtifactId":              ubx.FieldSpec{WireName: "artifact_id"},
+	"ArtifactTitle":           ubx.FieldSpec{WireName: "artifact_title"},
+	"DeploymentStatusMessage": ubx.FieldSpec{WireName: "deployment_status_message"},
+	"InstallTime":             ubx.FieldSpec{WireName: "install_time"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   DtlLabVirtualMachine_Properties_Artifacts_ParametersFields,
+	},
+	"Status":                   ubx.FieldSpec{WireName: "status"},
+	"VmExtensionStatusMessage": ubx.FieldSpec{WireName: "vm_extension_status_message"},
+}
 
 var DtlLabVirtualMachine_Properties_ComputeVm_DataDisksFields = ubx.FieldMap{
-		"DiskSizeGiB": ubx.FieldSpec{WireName: "disk_size_gi_b"},
-		"DiskUri": ubx.FieldSpec{WireName: "disk_uri"},
-		"ManagedDiskId": ubx.FieldSpec{WireName: "managed_disk_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"DiskSizeGiB":   ubx.FieldSpec{WireName: "disk_size_gi_b"},
+	"DiskUri":       ubx.FieldSpec{WireName: "disk_uri"},
+	"ManagedDiskId": ubx.FieldSpec{WireName: "managed_disk_id"},
+	"Name":          ubx.FieldSpec{WireName: "name"},
+}
 
 var DtlLabVirtualMachine_Properties_ComputeVm_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+}
 
 var DtlLabVirtualMachine_Properties_ComputeVmFields = ubx.FieldMap{
-		"DataDiskIds": ubx.FieldSpec{WireName: "data_disk_ids"},
-		"DataDisks": ubx.FieldSpec{
-			WireName: "data_disks",
-			Kind: "list",
-			Fields: DtlLabVirtualMachine_Properties_ComputeVm_DataDisksFields,
-		},
-		"NetworkInterfaceId": ubx.FieldSpec{WireName: "network_interface_id"},
-		"OsDiskId": ubx.FieldSpec{WireName: "os_disk_id"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: DtlLabVirtualMachine_Properties_ComputeVm_StatusesFields,
-		},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"DataDiskIds": ubx.FieldSpec{WireName: "data_disk_ids"},
+	"DataDisks": ubx.FieldSpec{
+		WireName: "data_disks",
+		Kind:     "list",
+		Fields:   DtlLabVirtualMachine_Properties_ComputeVm_DataDisksFields,
+	},
+	"NetworkInterfaceId": ubx.FieldSpec{WireName: "network_interface_id"},
+	"OsDiskId":           ubx.FieldSpec{WireName: "os_disk_id"},
+	"OsType":             ubx.FieldSpec{WireName: "os_type"},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   DtlLabVirtualMachine_Properties_ComputeVm_StatusesFields,
+	},
+	"VmSize": ubx.FieldSpec{WireName: "vm_size"},
+}
 
 var DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptionsFields = ubx.FieldMap{
-		"DiskName": ubx.FieldSpec{WireName: "disk_name"},
-		"DiskSizeGiB": ubx.FieldSpec{WireName: "disk_size_gi_b"},
-		"DiskType": ubx.FieldSpec{WireName: "disk_type"},
-	}
+	"DiskName":    ubx.FieldSpec{WireName: "disk_name"},
+	"DiskSizeGiB": ubx.FieldSpec{WireName: "disk_size_gi_b"},
+	"DiskType":    ubx.FieldSpec{WireName: "disk_type"},
+}
 
 var DtlLabVirtualMachine_Properties_DataDiskParametersFields = ubx.FieldMap{
-		"AttachNewDataDiskOptions": ubx.FieldSpec{
-			WireName: "attach_new_data_disk_options",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptionsFields,
-		},
-		"ExistingLabDiskId": ubx.FieldSpec{WireName: "existing_lab_disk_id"},
-		"HostCaching": ubx.FieldSpec{WireName: "host_caching"},
-	}
+	"AttachNewDataDiskOptions": ubx.FieldSpec{
+		WireName: "attach_new_data_disk_options",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_DataDiskParameters_AttachNewDataDiskOptionsFields,
+	},
+	"ExistingLabDiskId": ubx.FieldSpec{WireName: "existing_lab_disk_id"},
+	"HostCaching":       ubx.FieldSpec{WireName: "host_caching"},
+}
 
 var DtlLabVirtualMachine_Properties_GalleryImageReferenceFields = ubx.FieldMap{
-		"Offer": ubx.FieldSpec{WireName: "offer"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Sku": ubx.FieldSpec{WireName: "sku"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Offer":     ubx.FieldSpec{WireName: "offer"},
+	"OsType":    ubx.FieldSpec{WireName: "os_type"},
+	"Publisher": ubx.FieldSpec{WireName: "publisher"},
+	"Sku":       ubx.FieldSpec{WireName: "sku"},
+	"Version":   ubx.FieldSpec{WireName: "version"},
+}
 
 var DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRulesFields = ubx.FieldMap{
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"FrontendPort": ubx.FieldSpec{WireName: "frontend_port"},
-		"TransportProtocol": ubx.FieldSpec{WireName: "transport_protocol"},
-	}
+	"BackendPort":       ubx.FieldSpec{WireName: "backend_port"},
+	"FrontendPort":      ubx.FieldSpec{WireName: "frontend_port"},
+	"TransportProtocol": ubx.FieldSpec{WireName: "transport_protocol"},
+}
 
 var DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfigurationFields = ubx.FieldMap{
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRulesFields,
-		},
-	}
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRulesFields,
+	},
+}
 
 var DtlLabVirtualMachine_Properties_NetworkInterfaceFields = ubx.FieldMap{
-		"DnsName": ubx.FieldSpec{WireName: "dns_name"},
-		"PrivateIpAddress": ubx.FieldSpec{WireName: "private_ip_address"},
-		"PublicIpAddress": ubx.FieldSpec{WireName: "public_ip_address"},
-		"PublicIpAddressId": ubx.FieldSpec{WireName: "public_ip_address_id"},
-		"RdpAuthority": ubx.FieldSpec{WireName: "rdp_authority"},
-		"SharedPublicIpAddressConfiguration": ubx.FieldSpec{
-			WireName: "shared_public_ip_address_configuration",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfigurationFields,
-		},
-		"SshAuthority": ubx.FieldSpec{WireName: "ssh_authority"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"VirtualNetworkId": ubx.FieldSpec{WireName: "virtual_network_id"},
-	}
+	"DnsName":           ubx.FieldSpec{WireName: "dns_name"},
+	"PrivateIpAddress":  ubx.FieldSpec{WireName: "private_ip_address"},
+	"PublicIpAddress":   ubx.FieldSpec{WireName: "public_ip_address"},
+	"PublicIpAddressId": ubx.FieldSpec{WireName: "public_ip_address_id"},
+	"RdpAuthority":      ubx.FieldSpec{WireName: "rdp_authority"},
+	"SharedPublicIpAddressConfiguration": ubx.FieldSpec{
+		WireName: "shared_public_ip_address_configuration",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_NetworkInterface_SharedPublicIpAddressConfigurationFields,
+	},
+	"SshAuthority":     ubx.FieldSpec{WireName: "ssh_authority"},
+	"SubnetId":         ubx.FieldSpec{WireName: "subnet_id"},
+	"VirtualNetworkId": ubx.FieldSpec{WireName: "virtual_network_id"},
+}
 
 var DtlLabVirtualMachine_Properties_ScheduleParameters_PropertiesFields = ubx.FieldMap{
-		"DailyRecurrence": ubx.FieldSpec{
-			WireName: "daily_recurrence",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrenceFields,
-		},
-		"HourlyRecurrence": ubx.FieldSpec{
-			WireName: "hourly_recurrence",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrenceFields,
-		},
-		"NotificationSettings": ubx.FieldSpec{
-			WireName: "notification_settings",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettingsFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-		"TaskType": ubx.FieldSpec{WireName: "task_type"},
-		"TimeZoneId": ubx.FieldSpec{WireName: "time_zone_id"},
-		"WeeklyRecurrence": ubx.FieldSpec{
-			WireName: "weekly_recurrence",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrenceFields,
-		},
-	}
+	"DailyRecurrence": ubx.FieldSpec{
+		WireName: "daily_recurrence",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_DailyRecurrenceFields,
+	},
+	"HourlyRecurrence": ubx.FieldSpec{
+		WireName: "hourly_recurrence",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_HourlyRecurrenceFields,
+	},
+	"NotificationSettings": ubx.FieldSpec{
+		WireName: "notification_settings",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettingsFields,
+	},
+	"Status":           ubx.FieldSpec{WireName: "status"},
+	"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
+	"TaskType":         ubx.FieldSpec{WireName: "task_type"},
+	"TimeZoneId":       ubx.FieldSpec{WireName: "time_zone_id"},
+	"WeeklyRecurrence": ubx.FieldSpec{
+		WireName: "weekly_recurrence",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrenceFields,
+	},
+}
 
 var DtlLabVirtualMachine_Properties_ScheduleParametersFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ScheduleParameters_PropertiesFields,
-		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ScheduleParameters_PropertiesFields,
+	},
+	"Tags": ubx.FieldSpec{WireName: "tags"},
+}
 
 var DtlLabVirtualMachine_PropertiesFields = ubx.FieldMap{
-		"AllowClaim": ubx.FieldSpec{WireName: "allow_claim"},
-		"ApplicableSchedule": ubx.FieldSpec{
-			WireName: "applicable_schedule",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ApplicableScheduleFields,
-		},
-		"ArtifactDeploymentStatus": ubx.FieldSpec{
-			WireName: "artifact_deployment_status",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ArtifactDeploymentStatusFields,
-		},
-		"Artifacts": ubx.FieldSpec{
-			WireName: "artifacts",
-			Kind: "list",
-			Fields: DtlLabVirtualMachine_Properties_ArtifactsFields,
-		},
-		"ComputeId": ubx.FieldSpec{WireName: "compute_id"},
-		"ComputeVm": ubx.FieldSpec{
-			WireName: "compute_vm",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_ComputeVmFields,
-		},
-		"CreatedByUser": ubx.FieldSpec{WireName: "created_by_user"},
-		"CreatedByUserId": ubx.FieldSpec{WireName: "created_by_user_id"},
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"CustomImageId": ubx.FieldSpec{WireName: "custom_image_id"},
-		"DataDiskParameters": ubx.FieldSpec{
-			WireName: "data_disk_parameters",
-			Kind: "list",
-			Fields: DtlLabVirtualMachine_Properties_DataDiskParametersFields,
-		},
-		"DisallowPublicIpAddress": ubx.FieldSpec{WireName: "disallow_public_ip_address"},
-		"EnvironmentId": ubx.FieldSpec{WireName: "environment_id"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"GalleryImageReference": ubx.FieldSpec{
-			WireName: "gallery_image_reference",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_GalleryImageReferenceFields,
-		},
-		"IsAuthenticationWithSshKey": ubx.FieldSpec{WireName: "is_authentication_with_ssh_key"},
-		"LabSubnetName": ubx.FieldSpec{WireName: "lab_subnet_name"},
-		"LabVirtualNetworkId": ubx.FieldSpec{WireName: "lab_virtual_network_id"},
-		"LastKnownPowerState": ubx.FieldSpec{WireName: "last_known_power_state"},
-		"NetworkInterface": ubx.FieldSpec{
-			WireName: "network_interface",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_Properties_NetworkInterfaceFields,
-		},
-		"Notes": ubx.FieldSpec{WireName: "notes"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"OwnerObjectId": ubx.FieldSpec{WireName: "owner_object_id"},
-		"OwnerUserPrincipalName": ubx.FieldSpec{WireName: "owner_user_principal_name"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ScheduleParameters": ubx.FieldSpec{
-			WireName: "schedule_parameters",
-			Kind: "list",
-			Fields: DtlLabVirtualMachine_Properties_ScheduleParametersFields,
-		},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"SshKey": ubx.FieldSpec{WireName: "ssh_key"},
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-		"VirtualMachineCreationSource": ubx.FieldSpec{WireName: "virtual_machine_creation_source"},
-	}
+	"AllowClaim": ubx.FieldSpec{WireName: "allow_claim"},
+	"ApplicableSchedule": ubx.FieldSpec{
+		WireName: "applicable_schedule",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ApplicableScheduleFields,
+	},
+	"ArtifactDeploymentStatus": ubx.FieldSpec{
+		WireName: "artifact_deployment_status",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ArtifactDeploymentStatusFields,
+	},
+	"Artifacts": ubx.FieldSpec{
+		WireName: "artifacts",
+		Kind:     "list",
+		Fields:   DtlLabVirtualMachine_Properties_ArtifactsFields,
+	},
+	"ComputeId": ubx.FieldSpec{WireName: "compute_id"},
+	"ComputeVm": ubx.FieldSpec{
+		WireName: "compute_vm",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_ComputeVmFields,
+	},
+	"CreatedByUser":   ubx.FieldSpec{WireName: "created_by_user"},
+	"CreatedByUserId": ubx.FieldSpec{WireName: "created_by_user_id"},
+	"CreatedDate":     ubx.FieldSpec{WireName: "created_date"},
+	"CustomImageId":   ubx.FieldSpec{WireName: "custom_image_id"},
+	"DataDiskParameters": ubx.FieldSpec{
+		WireName: "data_disk_parameters",
+		Kind:     "list",
+		Fields:   DtlLabVirtualMachine_Properties_DataDiskParametersFields,
+	},
+	"DisallowPublicIpAddress": ubx.FieldSpec{WireName: "disallow_public_ip_address"},
+	"EnvironmentId":           ubx.FieldSpec{WireName: "environment_id"},
+	"ExpirationDate":          ubx.FieldSpec{WireName: "expiration_date"},
+	"Fqdn":                    ubx.FieldSpec{WireName: "fqdn"},
+	"GalleryImageReference": ubx.FieldSpec{
+		WireName: "gallery_image_reference",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_GalleryImageReferenceFields,
+	},
+	"IsAuthenticationWithSshKey": ubx.FieldSpec{WireName: "is_authentication_with_ssh_key"},
+	"LabSubnetName":              ubx.FieldSpec{WireName: "lab_subnet_name"},
+	"LabVirtualNetworkId":        ubx.FieldSpec{WireName: "lab_virtual_network_id"},
+	"LastKnownPowerState":        ubx.FieldSpec{WireName: "last_known_power_state"},
+	"NetworkInterface": ubx.FieldSpec{
+		WireName: "network_interface",
+		Kind:     "object",
+		Fields:   DtlLabVirtualMachine_Properties_NetworkInterfaceFields,
+	},
+	"Notes":                  ubx.FieldSpec{WireName: "notes"},
+	"OsType":                 ubx.FieldSpec{WireName: "os_type"},
+	"OwnerObjectId":          ubx.FieldSpec{WireName: "owner_object_id"},
+	"OwnerUserPrincipalName": ubx.FieldSpec{WireName: "owner_user_principal_name"},
+	"Password":               ubx.FieldSpec{WireName: "password"},
+	"PlanId":                 ubx.FieldSpec{WireName: "plan_id"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"ScheduleParameters": ubx.FieldSpec{
+		WireName: "schedule_parameters",
+		Kind:     "list",
+		Fields:   DtlLabVirtualMachine_Properties_ScheduleParametersFields,
+	},
+	"Size":                         ubx.FieldSpec{WireName: "size"},
+	"SshKey":                       ubx.FieldSpec{WireName: "ssh_key"},
+	"StorageType":                  ubx.FieldSpec{WireName: "storage_type"},
+	"UniqueIdentifier":             ubx.FieldSpec{WireName: "unique_identifier"},
+	"UserName":                     ubx.FieldSpec{WireName: "user_name"},
+	"VirtualMachineCreationSource": ubx.FieldSpec{WireName: "virtual_machine_creation_source"},
+}
 
 type DtlLabVirtualMachineConfig struct {
 	// The geo-location where the resource lives
@@ -615,8 +615,8 @@ var DtlLabVirtualMachine = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlLabVirtualMachine_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlLabVirtualMachine_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

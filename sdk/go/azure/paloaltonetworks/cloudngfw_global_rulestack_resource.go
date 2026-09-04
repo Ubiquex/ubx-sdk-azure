@@ -4,7 +4,7 @@ package paloaltonetworks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwGlobalRulestackResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -60,47 +60,47 @@ type CloudngfwGlobalRulestackResource_Properties struct {
 }
 
 var CloudngfwGlobalRulestackResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var CloudngfwGlobalRulestackResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: CloudngfwGlobalRulestackResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   CloudngfwGlobalRulestackResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var CloudngfwGlobalRulestackResource_Properties_SecurityServicesFields = ubx.FieldMap{
-		"AntiSpywareProfile": ubx.FieldSpec{WireName: "anti_spyware_profile"},
-		"AntiVirusProfile": ubx.FieldSpec{WireName: "anti_virus_profile"},
-		"DnsSubscription": ubx.FieldSpec{WireName: "dns_subscription"},
-		"FileBlockingProfile": ubx.FieldSpec{WireName: "file_blocking_profile"},
-		"OutboundTrustCertificate": ubx.FieldSpec{WireName: "outbound_trust_certificate"},
-		"OutboundUnTrustCertificate": ubx.FieldSpec{WireName: "outbound_un_trust_certificate"},
-		"UrlFilteringProfile": ubx.FieldSpec{WireName: "url_filtering_profile"},
-		"VulnerabilityProfile": ubx.FieldSpec{WireName: "vulnerability_profile"},
-	}
+	"AntiSpywareProfile":         ubx.FieldSpec{WireName: "anti_spyware_profile"},
+	"AntiVirusProfile":           ubx.FieldSpec{WireName: "anti_virus_profile"},
+	"DnsSubscription":            ubx.FieldSpec{WireName: "dns_subscription"},
+	"FileBlockingProfile":        ubx.FieldSpec{WireName: "file_blocking_profile"},
+	"OutboundTrustCertificate":   ubx.FieldSpec{WireName: "outbound_trust_certificate"},
+	"OutboundUnTrustCertificate": ubx.FieldSpec{WireName: "outbound_un_trust_certificate"},
+	"UrlFilteringProfile":        ubx.FieldSpec{WireName: "url_filtering_profile"},
+	"VulnerabilityProfile":       ubx.FieldSpec{WireName: "vulnerability_profile"},
+}
 
 var CloudngfwGlobalRulestackResource_PropertiesFields = ubx.FieldMap{
-		"AssociatedSubscriptions": ubx.FieldSpec{WireName: "associated_subscriptions"},
-		"DefaultMode": ubx.FieldSpec{WireName: "default_mode"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"MinAppIdVersion": ubx.FieldSpec{WireName: "min_app_id_version"},
-		"PanEtag": ubx.FieldSpec{WireName: "pan_etag"},
-		"PanLocation": ubx.FieldSpec{WireName: "pan_location"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"SecurityServices": ubx.FieldSpec{
-			WireName: "security_services",
-			Kind: "object",
-			Fields: CloudngfwGlobalRulestackResource_Properties_SecurityServicesFields,
-		},
-	}
+	"AssociatedSubscriptions": ubx.FieldSpec{WireName: "associated_subscriptions"},
+	"DefaultMode":             ubx.FieldSpec{WireName: "default_mode"},
+	"Description":             ubx.FieldSpec{WireName: "description"},
+	"MinAppIdVersion":         ubx.FieldSpec{WireName: "min_app_id_version"},
+	"PanEtag":                 ubx.FieldSpec{WireName: "pan_etag"},
+	"PanLocation":             ubx.FieldSpec{WireName: "pan_location"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"Scope":                   ubx.FieldSpec{WireName: "scope"},
+	"SecurityServices": ubx.FieldSpec{
+		WireName: "security_services",
+		Kind:     "object",
+		Fields:   CloudngfwGlobalRulestackResource_Properties_SecurityServicesFields,
+	},
+}
 
 type CloudngfwGlobalRulestackResourceConfig struct {
 	// The properties of the managed service identities assigned to this resource.
@@ -125,14 +125,14 @@ var CloudngfwGlobalRulestackResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: CloudngfwGlobalRulestackResource_IdentityFields,
+			Kind:     "object",
+			Fields:   CloudngfwGlobalRulestackResource_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CloudngfwGlobalRulestackResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CloudngfwGlobalRulestackResource_PropertiesFields,
 		},
 	},
 }

@@ -4,28 +4,28 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineScaleSetInstanceView_Extensions_StatusesSummary struct {
-	Code any
+	Code  any
 	Count any
 }
 
 type MachineScaleSetInstanceView_Extensions struct {
-	Name any
+	Name            any
 	StatusesSummary any
 }
 
 type MachineScaleSetInstanceView_OrchestrationServices struct {
-	LastStatusChangeTime any
+	LastStatusChangeTime  any
 	LatestOperationStatus any
-	ServiceName any
-	ServiceState any
+	ServiceName           any
+	ServiceState          any
 }
 
 type MachineScaleSetInstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type MachineScaleSetInstanceView_VirtualMachine struct {

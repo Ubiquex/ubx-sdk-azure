@@ -9,8 +9,8 @@ type OpenapiModelContainer_Properties struct {
 }
 
 var OpenapiModelContainer_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiModelContainerConfig struct {
 	Properties any
@@ -25,8 +25,8 @@ var OpenapiModelContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiModelContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiModelContainer_PropertiesFields,
 		},
 	},
 }

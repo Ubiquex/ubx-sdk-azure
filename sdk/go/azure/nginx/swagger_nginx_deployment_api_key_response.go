@@ -6,6 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type SwaggerNginxDeploymentApiKeyResponse_Properties struct {
 	// The time after which this Dataplane API Key is no longer valid.
 	EndDateTime any
+	// The first three characters of the secret text to help identify it in use. This property is read-only.
+	Hint any
 	// Secret text to be used as a Dataplane API Key. This is a write only property that can never be read back, but the first three characters will be returned in the 'hint' property.
 	SecretText any
 }
@@ -26,9 +28,10 @@ type SwaggerNginxDeploymentApiKeyResponse_SystemData struct {
 }
 
 var SwaggerNginxDeploymentApiKeyResponse_PropertiesFields = ubx.FieldMap{
-		"EndDateTime": ubx.FieldSpec{WireName: "end_date_time"},
-		"SecretText": ubx.FieldSpec{WireName: "secret_text"},
-	}
+	"EndDateTime": ubx.FieldSpec{WireName: "end_date_time"},
+	"Hint":        ubx.FieldSpec{WireName: "hint"},
+	"SecretText":  ubx.FieldSpec{WireName: "secret_text"},
+}
 
 type SwaggerNginxDeploymentApiKeyResponseConfig struct {
 	// Nginx Deployment Api Key Request Properties
@@ -36,13 +39,13 @@ type SwaggerNginxDeploymentApiKeyResponseConfig struct {
 }
 
 type SwaggerNginxDeploymentApiKeyResponseAttrs struct {
-	Id any
+	Id   any
 	Name any
 	// Nginx Deployment Api Key Request Properties
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
-	Type any
+	Type       any
 }
 
 var SwaggerNginxDeploymentApiKeyResponse = ubx.ResourceBinding{
@@ -50,8 +53,8 @@ var SwaggerNginxDeploymentApiKeyResponse = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SwaggerNginxDeploymentApiKeyResponse_PropertiesFields,
+			Kind:     "object",
+			Fields:   SwaggerNginxDeploymentApiKeyResponse_PropertiesFields,
 		},
 	},
 }

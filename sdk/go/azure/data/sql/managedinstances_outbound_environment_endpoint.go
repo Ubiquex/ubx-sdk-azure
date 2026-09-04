@@ -8,12 +8,12 @@ type ManagedinstancesOutboundEnvironmentEndpoint_Value_Endpoints_EndpointDetails
 }
 
 type ManagedinstancesOutboundEnvironmentEndpoint_Value_Endpoints struct {
-	DomainName any
+	DomainName      any
 	EndpointDetails any
 }
 
 type ManagedinstancesOutboundEnvironmentEndpoint_Value struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 

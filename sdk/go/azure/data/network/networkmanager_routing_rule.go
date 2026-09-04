@@ -5,28 +5,28 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerRoutingRule_Value_Properties_Destination struct {
 	DestinationAddress any
-	Type any
+	Type               any
 }
 
 type NetworkmanagerRoutingRule_Value_Properties_NextHop struct {
 	NextHopAddress any
-	NextHopType any
+	NextHopType    any
 }
 
 type NetworkmanagerRoutingRule_Value_Properties struct {
-	Description any
-	Destination any
-	NextHop any
+	Description       any
+	Destination       any
+	NextHop           any
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type NetworkmanagerRoutingRule_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -36,16 +36,16 @@ type NetworkmanagerRoutingRule_Value struct {
 }
 
 type NetworkmanagerRoutingRuleConfig struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 	RuleCollectionName any
 }
 
 type NetworkmanagerRoutingRuleAttrs struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 	// The link to the next page of items
-	NextLink any
+	NextLink           any
 	RuleCollectionName any
 	// The RoutingRule items on this page
 	Value any
@@ -54,7 +54,7 @@ type NetworkmanagerRoutingRuleAttrs struct {
 var NetworkmanagerRoutingRule = ubx.DataSourceBinding{
 	WireType: "azure_network_networkmanager_routing_rule",
 	Fields: ubx.FieldMap{
-		"ConfigurationName": ubx.FieldSpec{WireName: "configuration_name"},
+		"ConfigurationName":  ubx.FieldSpec{WireName: "configuration_name"},
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
 		"RuleCollectionName": ubx.FieldSpec{WireName: "rule_collection_name"},
 	},

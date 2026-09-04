@@ -4,42 +4,42 @@ package communication
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDomainResource_Value_Properties_VerificationRecords_Dkim struct {
-	Name any
-	Ttl any
-	Type any
+	Name  any
+	Ttl   any
+	Type  any
 	Value any
 }
 
 type OpenapiDomainResource_Value_Properties_VerificationRecords struct {
-	Dkim any
-	Dkim2 any
-	Dmarc any
+	Dkim   any
+	Dkim2  any
+	Dmarc  any
 	Domain any
-	Spf any
+	Spf    any
 }
 
 type OpenapiDomainResource_Value_Properties_VerificationStates_Dkim struct {
 	ErrorCode any
-	Status any
+	Status    any
 }
 
 type OpenapiDomainResource_Value_Properties_VerificationStates struct {
-	Dkim any
-	Dkim2 any
-	Dmarc any
+	Dkim   any
+	Dkim2  any
+	Dmarc  any
 	Domain any
-	Spf any
+	Spf    any
 }
 
 type OpenapiDomainResource_Value_Properties struct {
-	DataLocation any
-	DomainManagement any
-	FromSenderDomain any
-	MailFromSenderDomain any
-	ProvisioningState any
+	DataLocation           any
+	DomainManagement       any
+	FromSenderDomain       any
+	MailFromSenderDomain   any
+	ProvisioningState      any
 	UserEngagementTracking any
-	VerificationRecords any
-	VerificationStates any
+	VerificationRecords    any
+	VerificationStates     any
 }
 
 type OpenapiDomainResource_Value struct {

@@ -52,6 +52,6 @@ var LongtermretentionbackupsLongTermRetentionBackup = ubx.ResourceBinding{
 	WireType: "azure_sql_longtermretentionbackups_long_term_retention_backup",
 	Fields: ubx.FieldMap{
 		"BackupStorageAccessTier": ubx.FieldSpec{WireName: "backup_storage_access_tier"},
-		"OperationMode": ubx.FieldSpec{WireName: "operation_mode"},
+		"OperationMode":           ubx.FieldSpec{WireName: "operation_mode"},
 	},
 }

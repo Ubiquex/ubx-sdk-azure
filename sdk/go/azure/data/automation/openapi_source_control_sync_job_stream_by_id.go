@@ -19,10 +19,10 @@ type OpenapiSourceControlSyncJobStreamById_Properties struct {
 }
 
 type OpenapiSourceControlSyncJobStreamByIdConfig struct {
-	AutomationAccountName any
-	SourceControlName any
+	AutomationAccountName  any
+	SourceControlName      any
 	SourceControlSyncJobId any
-	StreamId any
+	StreamId               any
 }
 
 type OpenapiSourceControlSyncJobStreamByIdAttrs struct {
@@ -30,18 +30,18 @@ type OpenapiSourceControlSyncJobStreamByIdAttrs struct {
 	// Resource id.
 	Id any
 	// Definition of source control sync job stream by id properties.
-	Properties any
-	SourceControlName any
+	Properties             any
+	SourceControlName      any
 	SourceControlSyncJobId any
-	StreamId any
+	StreamId               any
 }
 
 var OpenapiSourceControlSyncJobStreamById = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_source_control_sync_job_stream_by_id",
 	Fields: ubx.FieldMap{
-		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"SourceControlName": ubx.FieldSpec{WireName: "source_control_name"},
+		"AutomationAccountName":  ubx.FieldSpec{WireName: "automation_account_name"},
+		"SourceControlName":      ubx.FieldSpec{WireName: "source_control_name"},
 		"SourceControlSyncJobId": ubx.FieldSpec{WireName: "source_control_sync_job_id"},
-		"StreamId": ubx.FieldSpec{WireName: "stream_id"},
+		"StreamId":               ubx.FieldSpec{WireName: "stream_id"},
 	},
 }

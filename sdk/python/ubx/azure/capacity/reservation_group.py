@@ -30,11 +30,9 @@ class ReservationGroup_Properties_SharingProfile:
 class ReservationGroup_Properties:
     # A list of all capacity reservation resource ids that belong to capacity reservation group.
     capacity_reservations: Any = None
-    # Provides the instance view of the capacity reservation group, including information about the capacity reservations within it, such as their allocated and utilized capacity. (AI-inferred)
     instance_view: Any = None
     # Indicates the type of capacity reservation. Allowed values are 'Block' for block capacity reservations that enable a VM to consume capacity only from this capacity block when it is associated using a capacity reservation group, 'Targeted' for reservations that enable a VM to consume capacity from an explicitly associated capacity reservation group and fall back to the publicly available capacity if the reservation is full, and 'Open' for reservations that a VM consumes when it is eligible from an implicitly associated capacity reservation group with the matching VM size and zone without associating that capacity reservation group and fall back to the publicly available capacity if the reservation is full. Future capacity reservations can be created in 'Targeted' or 'Open' capacity reservation groups. The reservation type is immutable and cannot be changed after the capacity reservation group is created.
     reservation_type: Any = None
-    # The sharing profile for the capacity reservation group, used to enable sharing of reserved capacity with other subscriptions. Its `subscriptionIds` property lists the subscriptions allowed to share the capacity. (AI-inferred)
     sharing_profile: Any = None
     # A list of references to all virtual machines associated to the capacity reservation group.
     virtual_machines_associated: Any = None

@@ -75,8 +75,8 @@ type OpenapiDbNodeAttrs struct {
 var OpenapiDbNode = ubx.ResourceBinding{
 	WireType: "azure_oracle_openapi_db_node",
 	Fields: ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
+		"Action":             ubx.FieldSpec{WireName: "action"},
 		"Cloudvmclustername": ubx.FieldSpec{WireName: "cloudvmclustername"},
-		"Dbnodeocid": ubx.FieldSpec{WireName: "dbnodeocid"},
+		"Dbnodeocid":         ubx.FieldSpec{WireName: "dbnodeocid"},
 	},
 }

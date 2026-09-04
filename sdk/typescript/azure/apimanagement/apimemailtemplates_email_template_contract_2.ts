@@ -12,6 +12,8 @@ export interface ApimemailtemplatesEmailTemplateContract2_Properties {
   body?: string | Computed<string>;
   /** Description of the Email Template. */
   description?: string | Computed<string>;
+  /** Whether the template is the default template provided by API Management or has been edited. */
+  isDefault?: boolean | Computed<boolean>;
   /** Email Template Parameter values. */
   parameters?: ApimemailtemplatesEmailTemplateContract2_Properties_Parameters[] | Computed<ApimemailtemplatesEmailTemplateContract2_Properties_Parameters[]>;
   /** Subject of the Template. */
@@ -29,6 +31,7 @@ const ApimemailtemplatesEmailTemplateContract2_Properties_ParametersFields: Fiel
 const ApimemailtemplatesEmailTemplateContract2_PropertiesFields: FieldMap = {
   body: "body",
   description: "description",
+  isDefault: "is_default",
   parameters: {
     wireName: "parameters",
     kind: "list",

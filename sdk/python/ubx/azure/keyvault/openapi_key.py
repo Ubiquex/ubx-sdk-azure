@@ -161,8 +161,6 @@ _OpenapiKey_PropertiesFields = {
 class OpenapiKeyConfig:
     # The properties of the key.
     properties: Any = None
-    # The tags that will be assigned to the key.
-    tags: Any = None
 
 @dataclasses.dataclass
 class OpenapiKeyAttrs:
@@ -181,6 +179,5 @@ OpenapiKey = ubx.ResourceBinding(
             kind="object",
             fields=_OpenapiKey_PropertiesFields,
         ),
-        "tags": ubx.FieldSpec(wire_name="tags"),
     },
 )

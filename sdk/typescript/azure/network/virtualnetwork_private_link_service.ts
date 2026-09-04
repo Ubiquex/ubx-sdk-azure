@@ -13812,8 +13812,6 @@ const VirtualnetworkPrivateLinkService_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkPrivateLinkServiceConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkPrivateLinkService_ExtendedLocation | Computed<VirtualnetworkPrivateLinkService_ExtendedLocation>;
   /** Properties of the private link service. */
@@ -13832,7 +13830,6 @@ export interface VirtualnetworkPrivateLinkServiceAttrs {
 export const VirtualnetworkPrivateLinkService: ResourceBinding<VirtualnetworkPrivateLinkServiceConfig, VirtualnetworkPrivateLinkServiceAttrs> = {
   wireType: "azure_network_virtualnetwork_private_link_service",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

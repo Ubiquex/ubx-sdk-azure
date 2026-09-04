@@ -5,36 +5,36 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiModule_Value_Properties_ContentLink_ContentHash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type OpenapiModule_Value_Properties_ContentLink struct {
 	ContentHash any
-	Uri any
-	Version any
+	Uri         any
+	Version     any
 }
 
 type OpenapiModule_Value_Properties_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type OpenapiModule_Value_Properties struct {
-	ActivityCount any
-	ContentLink any
-	CreationTime any
-	Description any
-	Error any
-	IsComposite any
-	IsGlobal any
-	LastModifiedTime any
+	ActivityCount     any
+	ContentLink       any
+	CreationTime      any
+	Description       any
+	Error             any
+	IsComposite       any
+	IsGlobal          any
+	LastModifiedTime  any
 	ProvisioningState any
-	SizeInBytes any
-	Version any
+	SizeInBytes       any
+	Version           any
 }
 
 type OpenapiModule_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

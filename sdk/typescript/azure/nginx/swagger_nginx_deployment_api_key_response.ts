@@ -4,6 +4,8 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface SwaggerNginxDeploymentApiKeyResponse_Properties {
   /** The time after which this Dataplane API Key is no longer valid. */
   endDateTime?: string | Computed<string>;
+  /** The first three characters of the secret text to help identify it in use. This property is read-only. */
+  hint?: string | Computed<string>;
   /** Secret text to be used as a Dataplane API Key. This is a write only property that can never be read back, but the first three characters will be returned in the 'hint' property. */
   secretText?: string | Computed<string>;
 }
@@ -25,6 +27,7 @@ export interface SwaggerNginxDeploymentApiKeyResponse_SystemData {
 
 const SwaggerNginxDeploymentApiKeyResponse_PropertiesFields: FieldMap = {
   endDateTime: "end_date_time",
+  hint: "hint",
   secretText: "secret_text",
 };
 

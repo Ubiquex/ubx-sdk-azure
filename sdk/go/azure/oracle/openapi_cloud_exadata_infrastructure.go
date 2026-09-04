@@ -9,9 +9,9 @@ type OpenapiCloudExadataInfrastructure_Properties_CustomerContacts struct {
 
 type OpenapiCloudExadataInfrastructure_Properties_DefinedFileSystemConfiguration struct {
 	IsBackupPartition any
-	IsResizable any
-	MinSizeGb any
-	MountPoint any
+	IsResizable       any
+	MinSizeGb         any
+	MountPoint        any
 }
 
 type OpenapiCloudExadataInfrastructure_Properties_EstimatedPatchingTime struct {
@@ -135,111 +135,111 @@ type OpenapiCloudExadataInfrastructure_Properties struct {
 }
 
 var OpenapiCloudExadataInfrastructure_Properties_CustomerContactsFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-	}
+	"Email": ubx.FieldSpec{WireName: "email"},
+}
 
 var OpenapiCloudExadataInfrastructure_Properties_DefinedFileSystemConfigurationFields = ubx.FieldMap{
-		"IsBackupPartition": ubx.FieldSpec{WireName: "is_backup_partition"},
-		"IsResizable": ubx.FieldSpec{WireName: "is_resizable"},
-		"MinSizeGb": ubx.FieldSpec{WireName: "min_size_gb"},
-		"MountPoint": ubx.FieldSpec{WireName: "mount_point"},
-	}
+	"IsBackupPartition": ubx.FieldSpec{WireName: "is_backup_partition"},
+	"IsResizable":       ubx.FieldSpec{WireName: "is_resizable"},
+	"MinSizeGb":         ubx.FieldSpec{WireName: "min_size_gb"},
+	"MountPoint":        ubx.FieldSpec{WireName: "mount_point"},
+}
 
 var OpenapiCloudExadataInfrastructure_Properties_EstimatedPatchingTimeFields = ubx.FieldMap{
-		"EstimatedDbServerPatchingTime": ubx.FieldSpec{WireName: "estimated_db_server_patching_time"},
-		"EstimatedNetworkSwitchesPatchingTime": ubx.FieldSpec{WireName: "estimated_network_switches_patching_time"},
-		"EstimatedStorageServerPatchingTime": ubx.FieldSpec{WireName: "estimated_storage_server_patching_time"},
-		"TotalEstimatedPatchingTime": ubx.FieldSpec{WireName: "total_estimated_patching_time"},
-	}
+	"EstimatedDbServerPatchingTime":        ubx.FieldSpec{WireName: "estimated_db_server_patching_time"},
+	"EstimatedNetworkSwitchesPatchingTime": ubx.FieldSpec{WireName: "estimated_network_switches_patching_time"},
+	"EstimatedStorageServerPatchingTime":   ubx.FieldSpec{WireName: "estimated_storage_server_patching_time"},
+	"TotalEstimatedPatchingTime":           ubx.FieldSpec{WireName: "total_estimated_patching_time"},
+}
 
 var OpenapiCloudExadataInfrastructure_Properties_ExascaleConfigFields = ubx.FieldMap{
-		"AvailableStorageInGbs": ubx.FieldSpec{WireName: "available_storage_in_gbs"},
-		"TotalStorageInGbs": ubx.FieldSpec{WireName: "total_storage_in_gbs"},
-	}
+	"AvailableStorageInGbs": ubx.FieldSpec{WireName: "available_storage_in_gbs"},
+	"TotalStorageInGbs":     ubx.FieldSpec{WireName: "total_storage_in_gbs"},
+}
 
 var OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindow_DaysOfWeekFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindowFields = ubx.FieldMap{
-		"CustomActionTimeoutInMins": ubx.FieldSpec{WireName: "custom_action_timeout_in_mins"},
-		"DaysOfWeek": ubx.FieldSpec{
-			WireName: "days_of_week",
-			Kind: "list",
-			Fields: OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindow_DaysOfWeekFields,
-		},
-		"HoursOfDay": ubx.FieldSpec{WireName: "hours_of_day"},
-		"IsCustomActionTimeoutEnabled": ubx.FieldSpec{WireName: "is_custom_action_timeout_enabled"},
-		"IsMonthlyPatchingEnabled": ubx.FieldSpec{WireName: "is_monthly_patching_enabled"},
-		"LeadTimeInWeeks": ubx.FieldSpec{WireName: "lead_time_in_weeks"},
-		"Months": ubx.FieldSpec{
-			WireName: "months",
-			Kind: "list",
-			Fields: OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindow_DaysOfWeekFields,
-		},
-		"PatchingMode": ubx.FieldSpec{WireName: "patching_mode"},
-		"Preference": ubx.FieldSpec{WireName: "preference"},
-		"WeeksOfMonth": ubx.FieldSpec{WireName: "weeks_of_month"},
-	}
+	"CustomActionTimeoutInMins": ubx.FieldSpec{WireName: "custom_action_timeout_in_mins"},
+	"DaysOfWeek": ubx.FieldSpec{
+		WireName: "days_of_week",
+		Kind:     "list",
+		Fields:   OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindow_DaysOfWeekFields,
+	},
+	"HoursOfDay":                   ubx.FieldSpec{WireName: "hours_of_day"},
+	"IsCustomActionTimeoutEnabled": ubx.FieldSpec{WireName: "is_custom_action_timeout_enabled"},
+	"IsMonthlyPatchingEnabled":     ubx.FieldSpec{WireName: "is_monthly_patching_enabled"},
+	"LeadTimeInWeeks":              ubx.FieldSpec{WireName: "lead_time_in_weeks"},
+	"Months": ubx.FieldSpec{
+		WireName: "months",
+		Kind:     "list",
+		Fields:   OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindow_DaysOfWeekFields,
+	},
+	"PatchingMode": ubx.FieldSpec{WireName: "patching_mode"},
+	"Preference":   ubx.FieldSpec{WireName: "preference"},
+	"WeeksOfMonth": ubx.FieldSpec{WireName: "weeks_of_month"},
+}
 
 var OpenapiCloudExadataInfrastructure_PropertiesFields = ubx.FieldMap{
-		"ActivatedStorageCount": ubx.FieldSpec{WireName: "activated_storage_count"},
-		"AdditionalStorageCount": ubx.FieldSpec{WireName: "additional_storage_count"},
-		"AvailableStorageSizeInGbs": ubx.FieldSpec{WireName: "available_storage_size_in_gbs"},
-		"ComputeCount": ubx.FieldSpec{WireName: "compute_count"},
-		"ComputeModel": ubx.FieldSpec{WireName: "compute_model"},
-		"CpuCount": ubx.FieldSpec{WireName: "cpu_count"},
-		"CustomerContacts": ubx.FieldSpec{
-			WireName: "customer_contacts",
-			Kind: "list",
-			Fields: OpenapiCloudExadataInfrastructure_Properties_CustomerContactsFields,
-		},
-		"DataStorageSizeInTbs": ubx.FieldSpec{WireName: "data_storage_size_in_tbs"},
-		"DatabaseServerType": ubx.FieldSpec{WireName: "database_server_type"},
-		"DbNodeStorageSizeInGbs": ubx.FieldSpec{WireName: "db_node_storage_size_in_gbs"},
-		"DbServerVersion": ubx.FieldSpec{WireName: "db_server_version"},
-		"DefinedFileSystemConfiguration": ubx.FieldSpec{
-			WireName: "defined_file_system_configuration",
-			Kind: "list",
-			Fields: OpenapiCloudExadataInfrastructure_Properties_DefinedFileSystemConfigurationFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"EstimatedPatchingTime": ubx.FieldSpec{
-			WireName: "estimated_patching_time",
-			Kind: "object",
-			Fields: OpenapiCloudExadataInfrastructure_Properties_EstimatedPatchingTimeFields,
-		},
-		"ExascaleConfig": ubx.FieldSpec{
-			WireName: "exascale_config",
-			Kind: "object",
-			Fields: OpenapiCloudExadataInfrastructure_Properties_ExascaleConfigFields,
-		},
-		"LastMaintenanceRunId": ubx.FieldSpec{WireName: "last_maintenance_run_id"},
-		"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
-		"LifecycleState": ubx.FieldSpec{WireName: "lifecycle_state"},
-		"MaintenanceWindow": ubx.FieldSpec{
-			WireName: "maintenance_window",
-			Kind: "object",
-			Fields: OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindowFields,
-		},
-		"MaxCpuCount": ubx.FieldSpec{WireName: "max_cpu_count"},
-		"MaxDataStorageInTbs": ubx.FieldSpec{WireName: "max_data_storage_in_tbs"},
-		"MaxDbNodeStorageSizeInGbs": ubx.FieldSpec{WireName: "max_db_node_storage_size_in_gbs"},
-		"MaxMemoryInGbs": ubx.FieldSpec{WireName: "max_memory_in_gbs"},
-		"MemorySizeInGbs": ubx.FieldSpec{WireName: "memory_size_in_gbs"},
-		"MonthlyDbServerVersion": ubx.FieldSpec{WireName: "monthly_db_server_version"},
-		"MonthlyStorageServerVersion": ubx.FieldSpec{WireName: "monthly_storage_server_version"},
-		"NextMaintenanceRunId": ubx.FieldSpec{WireName: "next_maintenance_run_id"},
-		"OciUrl": ubx.FieldSpec{WireName: "oci_url"},
-		"Ocid": ubx.FieldSpec{WireName: "ocid"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Shape": ubx.FieldSpec{WireName: "shape"},
-		"StorageCount": ubx.FieldSpec{WireName: "storage_count"},
-		"StorageServerType": ubx.FieldSpec{WireName: "storage_server_type"},
-		"StorageServerVersion": ubx.FieldSpec{WireName: "storage_server_version"},
-		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-		"TotalStorageSizeInGbs": ubx.FieldSpec{WireName: "total_storage_size_in_gbs"},
-	}
+	"ActivatedStorageCount":     ubx.FieldSpec{WireName: "activated_storage_count"},
+	"AdditionalStorageCount":    ubx.FieldSpec{WireName: "additional_storage_count"},
+	"AvailableStorageSizeInGbs": ubx.FieldSpec{WireName: "available_storage_size_in_gbs"},
+	"ComputeCount":              ubx.FieldSpec{WireName: "compute_count"},
+	"ComputeModel":              ubx.FieldSpec{WireName: "compute_model"},
+	"CpuCount":                  ubx.FieldSpec{WireName: "cpu_count"},
+	"CustomerContacts": ubx.FieldSpec{
+		WireName: "customer_contacts",
+		Kind:     "list",
+		Fields:   OpenapiCloudExadataInfrastructure_Properties_CustomerContactsFields,
+	},
+	"DataStorageSizeInTbs":   ubx.FieldSpec{WireName: "data_storage_size_in_tbs"},
+	"DatabaseServerType":     ubx.FieldSpec{WireName: "database_server_type"},
+	"DbNodeStorageSizeInGbs": ubx.FieldSpec{WireName: "db_node_storage_size_in_gbs"},
+	"DbServerVersion":        ubx.FieldSpec{WireName: "db_server_version"},
+	"DefinedFileSystemConfiguration": ubx.FieldSpec{
+		WireName: "defined_file_system_configuration",
+		Kind:     "list",
+		Fields:   OpenapiCloudExadataInfrastructure_Properties_DefinedFileSystemConfigurationFields,
+	},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"EstimatedPatchingTime": ubx.FieldSpec{
+		WireName: "estimated_patching_time",
+		Kind:     "object",
+		Fields:   OpenapiCloudExadataInfrastructure_Properties_EstimatedPatchingTimeFields,
+	},
+	"ExascaleConfig": ubx.FieldSpec{
+		WireName: "exascale_config",
+		Kind:     "object",
+		Fields:   OpenapiCloudExadataInfrastructure_Properties_ExascaleConfigFields,
+	},
+	"LastMaintenanceRunId": ubx.FieldSpec{WireName: "last_maintenance_run_id"},
+	"LifecycleDetails":     ubx.FieldSpec{WireName: "lifecycle_details"},
+	"LifecycleState":       ubx.FieldSpec{WireName: "lifecycle_state"},
+	"MaintenanceWindow": ubx.FieldSpec{
+		WireName: "maintenance_window",
+		Kind:     "object",
+		Fields:   OpenapiCloudExadataInfrastructure_Properties_MaintenanceWindowFields,
+	},
+	"MaxCpuCount":                 ubx.FieldSpec{WireName: "max_cpu_count"},
+	"MaxDataStorageInTbs":         ubx.FieldSpec{WireName: "max_data_storage_in_tbs"},
+	"MaxDbNodeStorageSizeInGbs":   ubx.FieldSpec{WireName: "max_db_node_storage_size_in_gbs"},
+	"MaxMemoryInGbs":              ubx.FieldSpec{WireName: "max_memory_in_gbs"},
+	"MemorySizeInGbs":             ubx.FieldSpec{WireName: "memory_size_in_gbs"},
+	"MonthlyDbServerVersion":      ubx.FieldSpec{WireName: "monthly_db_server_version"},
+	"MonthlyStorageServerVersion": ubx.FieldSpec{WireName: "monthly_storage_server_version"},
+	"NextMaintenanceRunId":        ubx.FieldSpec{WireName: "next_maintenance_run_id"},
+	"OciUrl":                      ubx.FieldSpec{WireName: "oci_url"},
+	"Ocid":                        ubx.FieldSpec{WireName: "ocid"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"Shape":                       ubx.FieldSpec{WireName: "shape"},
+	"StorageCount":                ubx.FieldSpec{WireName: "storage_count"},
+	"StorageServerType":           ubx.FieldSpec{WireName: "storage_server_type"},
+	"StorageServerVersion":        ubx.FieldSpec{WireName: "storage_server_version"},
+	"TimeCreated":                 ubx.FieldSpec{WireName: "time_created"},
+	"TotalStorageSizeInGbs":       ubx.FieldSpec{WireName: "total_storage_size_in_gbs"},
+}
 
 type OpenapiCloudExadataInfrastructureConfig struct {
 	// CloudExadataInfrastructure resource model
@@ -264,10 +264,10 @@ var OpenapiCloudExadataInfrastructure = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCloudExadataInfrastructure_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCloudExadataInfrastructure_PropertiesFields,
 		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
+		"Zones":                          ubx.FieldSpec{WireName: "zones"},
 		"Cloudexadatainfrastructurename": ubx.FieldSpec{WireName: "cloudexadatainfrastructurename"},
 	},
 }

@@ -5,37 +5,37 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ElasticpoolsElasticPool_Value_Properties_PerDatabaseSettings struct {
 	AutoPauseDelay any
-	MaxCapacity any
-	MinCapacity any
+	MaxCapacity    any
+	MinCapacity    any
 }
 
 type ElasticpoolsElasticPool_Value_Properties struct {
-	AutoPauseDelay any
-	AvailabilityZone any
-	CreationDate any
+	AutoPauseDelay               any
+	AvailabilityZone             any
+	CreationDate                 any
 	HighAvailabilityReplicaCount any
-	LicenseType any
-	MaintenanceConfigurationId any
-	MaxSizeBytes any
-	MinCapacity any
-	PerDatabaseSettings any
-	PreferredEnclaveType any
-	State any
-	ZoneRedundant any
+	LicenseType                  any
+	MaintenanceConfigurationId   any
+	MaxSizeBytes                 any
+	MinCapacity                  any
+	PerDatabaseSettings          any
+	PreferredEnclaveType         any
+	State                        any
+	ZoneRedundant                any
 }
 
 type ElasticpoolsElasticPool_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type ElasticpoolsElasticPool_Value struct {
-	Kind any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ElasticpoolsElasticPoolConfig struct {
@@ -44,7 +44,7 @@ type ElasticpoolsElasticPoolConfig struct {
 
 type ElasticpoolsElasticPoolAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The ElasticPool items on this page
 	Value any

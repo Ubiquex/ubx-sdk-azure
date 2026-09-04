@@ -12,26 +12,26 @@ type OpenapiCluster_Value_Properties_PlatformCapabilities struct {
 }
 
 type OpenapiCluster_Value_Properties struct {
-	CreatedAt any
-	MetricId any
+	CreatedAt            any
+	MetricId             any
 	PlatformCapabilities any
-	ProvisioningState any
-	Status any
-	SupportsScaling any
-	UpdatedAt any
-	ZoneRedundant any
+	ProvisioningState    any
+	Status               any
+	SupportsScaling      any
+	UpdatedAt            any
+	ZoneRedundant        any
 }
 
 type OpenapiCluster_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type OpenapiCluster_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiClusterConfig struct {
@@ -46,6 +46,5 @@ type OpenapiClusterAttrs struct {
 
 var OpenapiCluster = ubx.DataSourceBinding{
 	WireType: "azure_eventhub_openapi_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

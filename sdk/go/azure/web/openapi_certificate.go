@@ -58,38 +58,38 @@ type OpenapiCertificate_Properties struct {
 }
 
 var OpenapiCertificate_Properties_HostingEnvironmentProfileFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiCertificate_PropertiesFields = ubx.FieldMap{
-		"CanonicalName": ubx.FieldSpec{WireName: "canonical_name"},
-		"CerBlob": ubx.FieldSpec{WireName: "cer_blob"},
-		"DomainValidationMethod": ubx.FieldSpec{WireName: "domain_validation_method"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-		"HostNames": ubx.FieldSpec{WireName: "host_names"},
-		"HostingEnvironmentProfile": ubx.FieldSpec{
-			WireName: "hosting_environment_profile",
-			Kind: "object",
-			Fields: OpenapiCertificate_Properties_HostingEnvironmentProfileFields,
-		},
-		"IssueDate": ubx.FieldSpec{WireName: "issue_date"},
-		"Issuer": ubx.FieldSpec{WireName: "issuer"},
-		"KeyVaultId": ubx.FieldSpec{WireName: "key_vault_id"},
-		"KeyVaultSecretName": ubx.FieldSpec{WireName: "key_vault_secret_name"},
-		"KeyVaultSecretStatus": ubx.FieldSpec{WireName: "key_vault_secret_status"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"PfxBlob": ubx.FieldSpec{WireName: "pfx_blob"},
-		"PublicKeyHash": ubx.FieldSpec{WireName: "public_key_hash"},
-		"SelfLink": ubx.FieldSpec{WireName: "self_link"},
-		"ServerFarmId": ubx.FieldSpec{WireName: "server_farm_id"},
-		"SiteName": ubx.FieldSpec{WireName: "site_name"},
-		"SubjectName": ubx.FieldSpec{WireName: "subject_name"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Valid": ubx.FieldSpec{WireName: "valid"},
-	}
+	"CanonicalName":          ubx.FieldSpec{WireName: "canonical_name"},
+	"CerBlob":                ubx.FieldSpec{WireName: "cer_blob"},
+	"DomainValidationMethod": ubx.FieldSpec{WireName: "domain_validation_method"},
+	"ExpirationDate":         ubx.FieldSpec{WireName: "expiration_date"},
+	"FriendlyName":           ubx.FieldSpec{WireName: "friendly_name"},
+	"HostNames":              ubx.FieldSpec{WireName: "host_names"},
+	"HostingEnvironmentProfile": ubx.FieldSpec{
+		WireName: "hosting_environment_profile",
+		Kind:     "object",
+		Fields:   OpenapiCertificate_Properties_HostingEnvironmentProfileFields,
+	},
+	"IssueDate":            ubx.FieldSpec{WireName: "issue_date"},
+	"Issuer":               ubx.FieldSpec{WireName: "issuer"},
+	"KeyVaultId":           ubx.FieldSpec{WireName: "key_vault_id"},
+	"KeyVaultSecretName":   ubx.FieldSpec{WireName: "key_vault_secret_name"},
+	"KeyVaultSecretStatus": ubx.FieldSpec{WireName: "key_vault_secret_status"},
+	"Password":             ubx.FieldSpec{WireName: "password"},
+	"PfxBlob":              ubx.FieldSpec{WireName: "pfx_blob"},
+	"PublicKeyHash":        ubx.FieldSpec{WireName: "public_key_hash"},
+	"SelfLink":             ubx.FieldSpec{WireName: "self_link"},
+	"ServerFarmId":         ubx.FieldSpec{WireName: "server_farm_id"},
+	"SiteName":             ubx.FieldSpec{WireName: "site_name"},
+	"SubjectName":          ubx.FieldSpec{WireName: "subject_name"},
+	"Thumbprint":           ubx.FieldSpec{WireName: "thumbprint"},
+	"Valid":                ubx.FieldSpec{WireName: "valid"},
+}
 
 type OpenapiCertificateConfig struct {
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
@@ -115,8 +115,8 @@ var OpenapiCertificate = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCertificate_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCertificate_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

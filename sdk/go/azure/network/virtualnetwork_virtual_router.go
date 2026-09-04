@@ -24,33 +24,31 @@ type VirtualnetworkVirtualRouter_Properties struct {
 }
 
 var VirtualnetworkVirtualRouter_Properties_HostedGatewayFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkVirtualRouter_PropertiesFields = ubx.FieldMap{
-		"HostedGateway": ubx.FieldSpec{
-			WireName: "hosted_gateway",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualRouter_Properties_HostedGatewayFields,
-		},
-		"HostedSubnet": ubx.FieldSpec{
-			WireName: "hosted_subnet",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualRouter_Properties_HostedGatewayFields,
-		},
-		"Peerings": ubx.FieldSpec{
-			WireName: "peerings",
-			Kind: "list",
-			Fields: VirtualnetworkVirtualRouter_Properties_HostedGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualRouterAsn": ubx.FieldSpec{WireName: "virtual_router_asn"},
-		"VirtualRouterIps": ubx.FieldSpec{WireName: "virtual_router_ips"},
-	}
+	"HostedGateway": ubx.FieldSpec{
+		WireName: "hosted_gateway",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualRouter_Properties_HostedGatewayFields,
+	},
+	"HostedSubnet": ubx.FieldSpec{
+		WireName: "hosted_subnet",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualRouter_Properties_HostedGatewayFields,
+	},
+	"Peerings": ubx.FieldSpec{
+		WireName: "peerings",
+		Kind:     "list",
+		Fields:   VirtualnetworkVirtualRouter_Properties_HostedGatewayFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualRouterAsn":  ubx.FieldSpec{WireName: "virtual_router_asn"},
+	"VirtualRouterIps":  ubx.FieldSpec{WireName: "virtual_router_ips"},
+}
 
 type VirtualnetworkVirtualRouterConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Virtual Router definition.
 	Properties any
 }
@@ -65,11 +63,10 @@ type VirtualnetworkVirtualRouterAttrs struct {
 var VirtualnetworkVirtualRouter = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_virtual_router",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualRouter_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkVirtualRouter_PropertiesFields,
 		},
 	},
 }

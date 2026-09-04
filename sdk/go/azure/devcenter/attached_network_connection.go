@@ -17,12 +17,12 @@ type AttachedNetworkConnection_Properties struct {
 }
 
 var AttachedNetworkConnection_PropertiesFields = ubx.FieldMap{
-		"DomainJoinType": ubx.FieldSpec{WireName: "domain_join_type"},
-		"HealthCheckStatus": ubx.FieldSpec{WireName: "health_check_status"},
-		"NetworkConnectionId": ubx.FieldSpec{WireName: "network_connection_id"},
-		"NetworkConnectionLocation": ubx.FieldSpec{WireName: "network_connection_location"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"DomainJoinType":            ubx.FieldSpec{WireName: "domain_join_type"},
+	"HealthCheckStatus":         ubx.FieldSpec{WireName: "health_check_status"},
+	"NetworkConnectionId":       ubx.FieldSpec{WireName: "network_connection_id"},
+	"NetworkConnectionLocation": ubx.FieldSpec{WireName: "network_connection_location"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type AttachedNetworkConnectionConfig struct {
 	// Properties of an attached NetworkConnection.
@@ -39,8 +39,8 @@ var AttachedNetworkConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AttachedNetworkConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   AttachedNetworkConnection_PropertiesFields,
 		},
 	},
 }

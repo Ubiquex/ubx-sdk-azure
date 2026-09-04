@@ -7,24 +7,50 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServiceProtectionContainer_Properties_ProviderSpecificInput:
+class ServiceProtectionContainer_Properties_FabricSpecificDetails:
+    # Gets the class type. Overridden in derived classes.
     instance_type: Any = None
 
 @dataclasses.dataclass
 class ServiceProtectionContainer_Properties:
+    # Fabric friendly name.
+    fabric_friendly_name: Any = None
+    # Base class for fabric specific details of container.
+    fabric_specific_details: Any = None
+    # The fabric type.
+    fabric_type: Any = None
+    # The name.
+    friendly_name: Any = None
+    # The pairing status of this cloud.
+    pairing_status: Any = None
+    # Number of protected PEs.
+    protected_item_count: Any = None
     # Provider specific inputs for container creation.
     provider_specific_input: Any = None
+    # The role of this cloud.
+    role: Any = None
 
-_ServiceProtectionContainer_Properties_ProviderSpecificInputFields = {
+_ServiceProtectionContainer_Properties_FabricSpecificDetailsFields = {
     "instance_type": ubx.FieldSpec(wire_name="instance_type"),
 }
 
 _ServiceProtectionContainer_PropertiesFields = {
+    "fabric_friendly_name": ubx.FieldSpec(wire_name="fabric_friendly_name"),
+    "fabric_specific_details": ubx.FieldSpec(
+        wire_name="fabric_specific_details",
+        kind="object",
+        fields=_ServiceProtectionContainer_Properties_FabricSpecificDetailsFields,
+    ),
+    "fabric_type": ubx.FieldSpec(wire_name="fabric_type"),
+    "friendly_name": ubx.FieldSpec(wire_name="friendly_name"),
+    "pairing_status": ubx.FieldSpec(wire_name="pairing_status"),
+    "protected_item_count": ubx.FieldSpec(wire_name="protected_item_count"),
     "provider_specific_input": ubx.FieldSpec(
         wire_name="provider_specific_input",
         kind="list",
-        fields=_ServiceProtectionContainer_Properties_ProviderSpecificInputFields,
+        fields=_ServiceProtectionContainer_Properties_FabricSpecificDetailsFields,
     ),
+    "role": ubx.FieldSpec(wire_name="role"),
 }
 
 @dataclasses.dataclass

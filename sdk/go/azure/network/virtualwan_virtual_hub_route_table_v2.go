@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanVirtualHubRouteTableV2_Properties_Routes struct {
 	DestinationType any
-	Destinations any
-	NextHopType any
-	NextHops any
+	Destinations    any
+	NextHopType     any
+	NextHops        any
 }
 
 type VirtualwanVirtualHubRouteTableV2_Properties struct {
@@ -20,25 +20,23 @@ type VirtualwanVirtualHubRouteTableV2_Properties struct {
 }
 
 var VirtualwanVirtualHubRouteTableV2_Properties_RoutesFields = ubx.FieldMap{
-		"DestinationType": ubx.FieldSpec{WireName: "destination_type"},
-		"Destinations": ubx.FieldSpec{WireName: "destinations"},
-		"NextHopType": ubx.FieldSpec{WireName: "next_hop_type"},
-		"NextHops": ubx.FieldSpec{WireName: "next_hops"},
-	}
+	"DestinationType": ubx.FieldSpec{WireName: "destination_type"},
+	"Destinations":    ubx.FieldSpec{WireName: "destinations"},
+	"NextHopType":     ubx.FieldSpec{WireName: "next_hop_type"},
+	"NextHops":        ubx.FieldSpec{WireName: "next_hops"},
+}
 
 var VirtualwanVirtualHubRouteTableV2_PropertiesFields = ubx.FieldMap{
-		"AttachedConnections": ubx.FieldSpec{WireName: "attached_connections"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: VirtualwanVirtualHubRouteTableV2_Properties_RoutesFields,
-		},
-	}
+	"AttachedConnections": ubx.FieldSpec{WireName: "attached_connections"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   VirtualwanVirtualHubRouteTableV2_Properties_RoutesFields,
+	},
+}
 
 type VirtualwanVirtualHubRouteTableV2Config struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
 	Name any
 	// Parameters for VirtualHubRouteTableV2.
@@ -57,12 +55,11 @@ type VirtualwanVirtualHubRouteTableV2Attrs struct {
 var VirtualwanVirtualHubRouteTableV2 = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_virtual_hub_route_table_v2",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVirtualHubRouteTableV2_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanVirtualHubRouteTableV2_PropertiesFields,
 		},
 	},
 }

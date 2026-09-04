@@ -11,8 +11,6 @@ const CommitmentPlanAccountAssociation_PropertiesFields: FieldMap = {
 };
 
 export interface CommitmentPlanAccountAssociationConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** The commitment plan account association properties. */
   properties?: CommitmentPlanAccountAssociation_Properties | Computed<CommitmentPlanAccountAssociation_Properties>;
   /** Resource tags. */
@@ -31,7 +29,6 @@ export interface CommitmentPlanAccountAssociationAttrs {
 export const CommitmentPlanAccountAssociation: ResourceBinding<CommitmentPlanAccountAssociationConfig, CommitmentPlanAccountAssociationAttrs> = {
   wireType: "azure_cognitiveservices_commitment_plan_account_association",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

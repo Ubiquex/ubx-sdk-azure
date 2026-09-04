@@ -4,18 +4,18 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Value_Properties_ScheduleList struct {
-	StartDay any
+	StartDay  any
 	StartTime any
-	StopDay any
-	StopTime any
+	StopDay   any
+	StopTime  any
 }
 
 type StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Value_Properties struct {
-	Description any
+	Description       any
 	NextExecutionTime any
-	NextRunAction any
-	ScheduleList any
-	TimeZoneId any
+	NextRunAction     any
+	ScheduleList      any
+	TimeZoneId        any
 }
 
 type StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Value struct {

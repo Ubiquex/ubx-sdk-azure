@@ -15,11 +15,11 @@ type ManagedinstanceadministratorsManagedInstanceAdministrator_Properties struct
 }
 
 var ManagedinstanceadministratorsManagedInstanceAdministrator_PropertiesFields = ubx.FieldMap{
-		"AdministratorType": ubx.FieldSpec{WireName: "administrator_type"},
-		"Login": ubx.FieldSpec{WireName: "login"},
-		"Sid": ubx.FieldSpec{WireName: "sid"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AdministratorType": ubx.FieldSpec{WireName: "administrator_type"},
+	"Login":             ubx.FieldSpec{WireName: "login"},
+	"Sid":               ubx.FieldSpec{WireName: "sid"},
+	"TenantId":          ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type ManagedinstanceadministratorsManagedInstanceAdministratorConfig struct {
 	// The properties of a managed instance administrator.
@@ -36,8 +36,8 @@ var ManagedinstanceadministratorsManagedInstanceAdministrator = ubx.ResourceBind
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstanceadministratorsManagedInstanceAdministrator_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstanceadministratorsManagedInstanceAdministrator_PropertiesFields,
 		},
 	},
 }

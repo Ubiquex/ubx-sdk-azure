@@ -4,21 +4,21 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cache_Properties_ExportPolicy_Rules struct {
-	AllowedClients any
-	ChownMode any
-	Cifs any
-	HasRootAccess any
-	Kerberos5ReadOnly any
-	Kerberos5ReadWrite any
-	Kerberos5iReadOnly any
+	AllowedClients      any
+	ChownMode           any
+	Cifs                any
+	HasRootAccess       any
+	Kerberos5ReadOnly   any
+	Kerberos5ReadWrite  any
+	Kerberos5iReadOnly  any
 	Kerberos5iReadWrite any
-	Kerberos5pReadOnly any
+	Kerberos5pReadOnly  any
 	Kerberos5pReadWrite any
-	Nfsv3 any
-	Nfsv41 any
-	RuleIndex any
-	UnixReadOnly any
-	UnixReadWrite any
+	Nfsv3               any
+	Nfsv41              any
+	RuleIndex           any
+	UnixReadOnly        any
+	UnixReadWrite       any
 }
 
 type Cache_Properties_ExportPolicy struct {
@@ -27,7 +27,7 @@ type Cache_Properties_ExportPolicy struct {
 }
 
 type Cache_Properties_MountTargets struct {
-	IpAddress any
+	IpAddress     any
 	MountTargetId any
 	SmbServerFqdn any
 }
@@ -106,97 +106,95 @@ type Cache_Properties struct {
 }
 
 var Cache_Properties_ExportPolicy_RulesFields = ubx.FieldMap{
-		"AllowedClients": ubx.FieldSpec{WireName: "allowed_clients"},
-		"ChownMode": ubx.FieldSpec{WireName: "chown_mode"},
-		"Cifs": ubx.FieldSpec{WireName: "cifs"},
-		"HasRootAccess": ubx.FieldSpec{WireName: "has_root_access"},
-		"Kerberos5ReadOnly": ubx.FieldSpec{WireName: "kerberos5_read_only"},
-		"Kerberos5ReadWrite": ubx.FieldSpec{WireName: "kerberos5_read_write"},
-		"Kerberos5iReadOnly": ubx.FieldSpec{WireName: "kerberos5i_read_only"},
-		"Kerberos5iReadWrite": ubx.FieldSpec{WireName: "kerberos5i_read_write"},
-		"Kerberos5pReadOnly": ubx.FieldSpec{WireName: "kerberos5p_read_only"},
-		"Kerberos5pReadWrite": ubx.FieldSpec{WireName: "kerberos5p_read_write"},
-		"Nfsv3": ubx.FieldSpec{WireName: "nfsv3"},
-		"Nfsv41": ubx.FieldSpec{WireName: "nfsv41"},
-		"RuleIndex": ubx.FieldSpec{WireName: "rule_index"},
-		"UnixReadOnly": ubx.FieldSpec{WireName: "unix_read_only"},
-		"UnixReadWrite": ubx.FieldSpec{WireName: "unix_read_write"},
-	}
+	"AllowedClients":      ubx.FieldSpec{WireName: "allowed_clients"},
+	"ChownMode":           ubx.FieldSpec{WireName: "chown_mode"},
+	"Cifs":                ubx.FieldSpec{WireName: "cifs"},
+	"HasRootAccess":       ubx.FieldSpec{WireName: "has_root_access"},
+	"Kerberos5ReadOnly":   ubx.FieldSpec{WireName: "kerberos5_read_only"},
+	"Kerberos5ReadWrite":  ubx.FieldSpec{WireName: "kerberos5_read_write"},
+	"Kerberos5iReadOnly":  ubx.FieldSpec{WireName: "kerberos5i_read_only"},
+	"Kerberos5iReadWrite": ubx.FieldSpec{WireName: "kerberos5i_read_write"},
+	"Kerberos5pReadOnly":  ubx.FieldSpec{WireName: "kerberos5p_read_only"},
+	"Kerberos5pReadWrite": ubx.FieldSpec{WireName: "kerberos5p_read_write"},
+	"Nfsv3":               ubx.FieldSpec{WireName: "nfsv3"},
+	"Nfsv41":              ubx.FieldSpec{WireName: "nfsv41"},
+	"RuleIndex":           ubx.FieldSpec{WireName: "rule_index"},
+	"UnixReadOnly":        ubx.FieldSpec{WireName: "unix_read_only"},
+	"UnixReadWrite":       ubx.FieldSpec{WireName: "unix_read_write"},
+}
 
 var Cache_Properties_ExportPolicyFields = ubx.FieldMap{
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: Cache_Properties_ExportPolicy_RulesFields,
-		},
-	}
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   Cache_Properties_ExportPolicy_RulesFields,
+	},
+}
 
 var Cache_Properties_MountTargetsFields = ubx.FieldMap{
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"MountTargetId": ubx.FieldSpec{WireName: "mount_target_id"},
-		"SmbServerFqdn": ubx.FieldSpec{WireName: "smb_server_fqdn"},
-	}
+	"IpAddress":     ubx.FieldSpec{WireName: "ip_address"},
+	"MountTargetId": ubx.FieldSpec{WireName: "mount_target_id"},
+	"SmbServerFqdn": ubx.FieldSpec{WireName: "smb_server_fqdn"},
+}
 
 var Cache_Properties_OriginClusterInformationFields = ubx.FieldMap{
-		"PeerAddresses": ubx.FieldSpec{WireName: "peer_addresses"},
-		"PeerClusterName": ubx.FieldSpec{WireName: "peer_cluster_name"},
-		"PeerVolumeName": ubx.FieldSpec{WireName: "peer_volume_name"},
-		"PeerVserverName": ubx.FieldSpec{WireName: "peer_vserver_name"},
-	}
+	"PeerAddresses":   ubx.FieldSpec{WireName: "peer_addresses"},
+	"PeerClusterName": ubx.FieldSpec{WireName: "peer_cluster_name"},
+	"PeerVolumeName":  ubx.FieldSpec{WireName: "peer_volume_name"},
+	"PeerVserverName": ubx.FieldSpec{WireName: "peer_vserver_name"},
+}
 
 var Cache_Properties_SmbSettingsFields = ubx.FieldMap{
-		"SmbAccessBasedEnumeration": ubx.FieldSpec{WireName: "smb_access_based_enumeration"},
-		"SmbEncryption": ubx.FieldSpec{WireName: "smb_encryption"},
-		"SmbNonBrowsable": ubx.FieldSpec{WireName: "smb_non_browsable"},
-	}
+	"SmbAccessBasedEnumeration": ubx.FieldSpec{WireName: "smb_access_based_enumeration"},
+	"SmbEncryption":             ubx.FieldSpec{WireName: "smb_encryption"},
+	"SmbNonBrowsable":           ubx.FieldSpec{WireName: "smb_non_browsable"},
+}
 
 var Cache_PropertiesFields = ubx.FieldMap{
-		"ActualThroughputMibps": ubx.FieldSpec{WireName: "actual_throughput_mibps"},
-		"CacheState": ubx.FieldSpec{WireName: "cache_state"},
-		"CacheSubnetResourceId": ubx.FieldSpec{WireName: "cache_subnet_resource_id"},
-		"CifsChangeNotifications": ubx.FieldSpec{WireName: "cifs_change_notifications"},
-		"Encryption": ubx.FieldSpec{WireName: "encryption"},
-		"EncryptionKeySource": ubx.FieldSpec{WireName: "encryption_key_source"},
-		"ExportPolicy": ubx.FieldSpec{
-			WireName: "export_policy",
-			Kind: "object",
-			Fields: Cache_Properties_ExportPolicyFields,
-		},
-		"FileAccessLogs": ubx.FieldSpec{WireName: "file_access_logs"},
-		"FilePath": ubx.FieldSpec{WireName: "file_path"},
-		"GlobalFileLocking": ubx.FieldSpec{WireName: "global_file_locking"},
-		"Kerberos": ubx.FieldSpec{WireName: "kerberos"},
-		"KeyVaultPrivateEndpointResourceId": ubx.FieldSpec{WireName: "key_vault_private_endpoint_resource_id"},
-		"Language": ubx.FieldSpec{WireName: "language"},
-		"Ldap": ubx.FieldSpec{WireName: "ldap"},
-		"LdapServerType": ubx.FieldSpec{WireName: "ldap_server_type"},
-		"MaximumNumberOfFiles": ubx.FieldSpec{WireName: "maximum_number_of_files"},
-		"MountTargets": ubx.FieldSpec{
-			WireName: "mount_targets",
-			Kind: "list",
-			Fields: Cache_Properties_MountTargetsFields,
-		},
-		"OriginClusterInformation": ubx.FieldSpec{
-			WireName: "origin_cluster_information",
-			Kind: "object",
-			Fields: Cache_Properties_OriginClusterInformationFields,
-		},
-		"PeeringSubnetResourceId": ubx.FieldSpec{WireName: "peering_subnet_resource_id"},
-		"ProtocolTypes": ubx.FieldSpec{WireName: "protocol_types"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"SmbSettings": ubx.FieldSpec{
-			WireName: "smb_settings",
-			Kind: "object",
-			Fields: Cache_Properties_SmbSettingsFields,
-		},
-		"ThroughputMibps": ubx.FieldSpec{WireName: "throughput_mibps"},
-		"WriteBack": ubx.FieldSpec{WireName: "write_back"},
-	}
+	"ActualThroughputMibps":   ubx.FieldSpec{WireName: "actual_throughput_mibps"},
+	"CacheState":              ubx.FieldSpec{WireName: "cache_state"},
+	"CacheSubnetResourceId":   ubx.FieldSpec{WireName: "cache_subnet_resource_id"},
+	"CifsChangeNotifications": ubx.FieldSpec{WireName: "cifs_change_notifications"},
+	"Encryption":              ubx.FieldSpec{WireName: "encryption"},
+	"EncryptionKeySource":     ubx.FieldSpec{WireName: "encryption_key_source"},
+	"ExportPolicy": ubx.FieldSpec{
+		WireName: "export_policy",
+		Kind:     "object",
+		Fields:   Cache_Properties_ExportPolicyFields,
+	},
+	"FileAccessLogs":                    ubx.FieldSpec{WireName: "file_access_logs"},
+	"FilePath":                          ubx.FieldSpec{WireName: "file_path"},
+	"GlobalFileLocking":                 ubx.FieldSpec{WireName: "global_file_locking"},
+	"Kerberos":                          ubx.FieldSpec{WireName: "kerberos"},
+	"KeyVaultPrivateEndpointResourceId": ubx.FieldSpec{WireName: "key_vault_private_endpoint_resource_id"},
+	"Language":                          ubx.FieldSpec{WireName: "language"},
+	"Ldap":                              ubx.FieldSpec{WireName: "ldap"},
+	"LdapServerType":                    ubx.FieldSpec{WireName: "ldap_server_type"},
+	"MaximumNumberOfFiles":              ubx.FieldSpec{WireName: "maximum_number_of_files"},
+	"MountTargets": ubx.FieldSpec{
+		WireName: "mount_targets",
+		Kind:     "list",
+		Fields:   Cache_Properties_MountTargetsFields,
+	},
+	"OriginClusterInformation": ubx.FieldSpec{
+		WireName: "origin_cluster_information",
+		Kind:     "object",
+		Fields:   Cache_Properties_OriginClusterInformationFields,
+	},
+	"PeeringSubnetResourceId": ubx.FieldSpec{WireName: "peering_subnet_resource_id"},
+	"ProtocolTypes":           ubx.FieldSpec{WireName: "protocol_types"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"Size":                    ubx.FieldSpec{WireName: "size"},
+	"SmbSettings": ubx.FieldSpec{
+		WireName: "smb_settings",
+		Kind:     "object",
+		Fields:   Cache_Properties_SmbSettingsFields,
+	},
+	"ThroughputMibps": ubx.FieldSpec{WireName: "throughput_mibps"},
+	"WriteBack":       ubx.FieldSpec{WireName: "write_back"},
+}
 
 type CacheConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Cache resource properties
 	Properties any
 	// The availability zones.
@@ -215,11 +213,10 @@ type CacheAttrs struct {
 var Cache = ubx.ResourceBinding{
 	WireType: "azure_netapp_cache",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Cache_PropertiesFields,
+			Kind:     "object",
+			Fields:   Cache_PropertiesFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

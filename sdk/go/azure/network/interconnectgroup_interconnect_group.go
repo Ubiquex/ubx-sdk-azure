@@ -17,10 +17,10 @@ type InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_Intercon
 }
 
 type InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties struct {
-	InterconnectBlock any
+	InterconnectBlock  any
 	InternalSubgroupId any
-	ProvisioningState any
-	VirtualMachines any
+	ProvisioningState  any
+	VirtualMachines    any
 }
 
 type InterconnectgroupInterconnectGroup_Properties_Subgroups struct {
@@ -41,57 +41,55 @@ type InterconnectgroupInterconnectGroup_Properties struct {
 }
 
 var InterconnectgroupInterconnectGroup_Properties_SubgroupProfileFields = ubx.FieldMap{
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"Scope":  ubx.FieldSpec{WireName: "scope"},
+	"Size":   ubx.FieldSpec{WireName: "size"},
+	"VmSize": ubx.FieldSpec{WireName: "vm_size"},
+}
 
 var InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlockFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var InterconnectgroupInterconnectGroup_Properties_Subgroups_PropertiesFields = ubx.FieldMap{
-		"InterconnectBlock": ubx.FieldSpec{
-			WireName: "interconnect_block",
-			Kind: "object",
-			Fields: InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlockFields,
-		},
-		"InternalSubgroupId": ubx.FieldSpec{WireName: "internal_subgroup_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualMachines": ubx.FieldSpec{
-			WireName: "virtual_machines",
-			Kind: "list",
-			Fields: InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlockFields,
-		},
-	}
+	"InterconnectBlock": ubx.FieldSpec{
+		WireName: "interconnect_block",
+		Kind:     "object",
+		Fields:   InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlockFields,
+	},
+	"InternalSubgroupId": ubx.FieldSpec{WireName: "internal_subgroup_id"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualMachines": ubx.FieldSpec{
+		WireName: "virtual_machines",
+		Kind:     "list",
+		Fields:   InterconnectgroupInterconnectGroup_Properties_Subgroups_Properties_InterconnectBlockFields,
+	},
+}
 
 var InterconnectgroupInterconnectGroup_Properties_SubgroupsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: InterconnectgroupInterconnectGroup_Properties_Subgroups_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   InterconnectgroupInterconnectGroup_Properties_Subgroups_PropertiesFields,
+	},
+}
 
 var InterconnectgroupInterconnectGroup_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"SubgroupProfile": ubx.FieldSpec{
-			WireName: "subgroup_profile",
-			Kind: "object",
-			Fields: InterconnectgroupInterconnectGroup_Properties_SubgroupProfileFields,
-		},
-		"Subgroups": ubx.FieldSpec{
-			WireName: "subgroups",
-			Kind: "list",
-			Fields: InterconnectgroupInterconnectGroup_Properties_SubgroupsFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"Scope":             ubx.FieldSpec{WireName: "scope"},
+	"SubgroupProfile": ubx.FieldSpec{
+		WireName: "subgroup_profile",
+		Kind:     "object",
+		Fields:   InterconnectgroupInterconnectGroup_Properties_SubgroupProfileFields,
+	},
+	"Subgroups": ubx.FieldSpec{
+		WireName: "subgroups",
+		Kind:     "list",
+		Fields:   InterconnectgroupInterconnectGroup_Properties_SubgroupsFields,
+	},
+}
 
 type InterconnectgroupInterconnectGroupConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Interconnect group properties.
 	Properties any
 }
@@ -106,11 +104,10 @@ type InterconnectgroupInterconnectGroupAttrs struct {
 var InterconnectgroupInterconnectGroup = ubx.ResourceBinding{
 	WireType: "azure_network_interconnectgroup_interconnect_group",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: InterconnectgroupInterconnectGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   InterconnectgroupInterconnectGroup_PropertiesFields,
 		},
 	},
 }

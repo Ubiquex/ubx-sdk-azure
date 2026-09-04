@@ -34,6 +34,5 @@ type OpenapiResource2Attrs struct {
 
 var OpenapiResource2 = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_resource_2",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

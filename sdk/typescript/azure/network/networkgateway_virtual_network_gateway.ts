@@ -639,8 +639,6 @@ const NetworkgatewayVirtualNetworkGateway_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkgatewayVirtualNetworkGatewayConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: NetworkgatewayVirtualNetworkGateway_ExtendedLocation | Computed<NetworkgatewayVirtualNetworkGateway_ExtendedLocation>;
   /** Identity for the resource. */
@@ -663,7 +661,6 @@ export interface NetworkgatewayVirtualNetworkGatewayAttrs {
 export const NetworkgatewayVirtualNetworkGateway: ResourceBinding<NetworkgatewayVirtualNetworkGatewayConfig, NetworkgatewayVirtualNetworkGatewayAttrs> = {
   wireType: "azure_network_networkgateway_virtual_network_gateway",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

@@ -38,8 +38,6 @@ _RaiTopic_PropertiesFields = {
 
 @dataclasses.dataclass
 class RaiTopicConfig:
-    # Resource Etag.
-    etag: Any = None
     # RAI Custom Topic properties.
     properties: Any = None
     # Resource tags.
@@ -57,7 +55,6 @@ class RaiTopicAttrs:
 RaiTopic = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_rai_topic",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

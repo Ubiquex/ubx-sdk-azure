@@ -24,12 +24,12 @@ type OpenapiReservationRecommendationDetailsModel_Properties_Resource struct {
 }
 
 type OpenapiReservationRecommendationDetailsModel_Properties_Savings_CalculatedSavings struct {
-	OnDemandCost any
-	OverageCost any
-	Quantity any
-	ReservationCost any
-	ReservedUnitCount any
-	Savings any
+	OnDemandCost         any
+	OverageCost          any
+	Quantity             any
+	ReservationCost      any
+	ReservedUnitCount    any
+	Savings              any
 	TotalReservationCost any
 }
 
@@ -83,28 +83,28 @@ type OpenapiReservationRecommendationDetailsModel_Properties struct {
 }
 
 type OpenapiReservationRecommendationDetailsModelConfig struct {
-	LookBackPeriod any
+	LookBackPeriod    any
 	ManagementGroupId any
-	Product any
-	Region any
-	ResourceScope any
-	Scope any
-	Term any
+	Product           any
+	Region            any
+	ResourceScope     any
+	Scope             any
+	Term              any
 }
 
 type OpenapiReservationRecommendationDetailsModelAttrs struct {
 	// The etag for the resource.
 	Etag any
 	// Resource Location.
-	Location any
-	LookBackPeriod any
+	Location          any
+	LookBackPeriod    any
 	ManagementGroupId any
-	Product any
+	Product           any
 	// The properties of the reservation recommendation.
-	Properties any
-	Region any
+	Properties    any
+	Region        any
 	ResourceScope any
-	Scope any
+	Scope         any
 	// Resource sku
 	Sku any
 	// Resource tags.
@@ -115,12 +115,12 @@ type OpenapiReservationRecommendationDetailsModelAttrs struct {
 var OpenapiReservationRecommendationDetailsModel = ubx.DataSourceBinding{
 	WireType: "azure_consumption_openapi_reservation_recommendation_details_model",
 	Fields: ubx.FieldMap{
-		"LookBackPeriod": ubx.FieldSpec{WireName: "look_back_period"},
+		"LookBackPeriod":    ubx.FieldSpec{WireName: "look_back_period"},
 		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
-		"Product": ubx.FieldSpec{WireName: "product"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-		"ResourceScope": ubx.FieldSpec{WireName: "resource_scope"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"Term": ubx.FieldSpec{WireName: "term"},
+		"Product":           ubx.FieldSpec{WireName: "product"},
+		"Region":            ubx.FieldSpec{WireName: "region"},
+		"ResourceScope":     ubx.FieldSpec{WireName: "resource_scope"},
+		"Scope":             ubx.FieldSpec{WireName: "scope"},
+		"Term":              ubx.FieldSpec{WireName: "term"},
 	},
 }

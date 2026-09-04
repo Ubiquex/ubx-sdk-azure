@@ -221,17 +221,10 @@ _Account_PropertiesFields = {
     "public_network_access": ubx.FieldSpec(wire_name="public_network_access"),
 }
 
-_Account_SkuFields = {
-    "capacity": ubx.FieldSpec(wire_name="capacity"),
-    "name": ubx.FieldSpec(wire_name="name"),
-}
-
 @dataclasses.dataclass
 class AccountConfig:
     # The account properties
     properties: Any = None
-    # Gets or sets the Sku.
-    sku: Any = None
 
 @dataclasses.dataclass
 class AccountAttrs:
@@ -247,11 +240,6 @@ Account = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_Account_PropertiesFields,
-        ),
-        "sku": ubx.FieldSpec(
-            wire_name="sku",
-            kind="object",
-            fields=_Account_SkuFields,
         ),
     },
 )

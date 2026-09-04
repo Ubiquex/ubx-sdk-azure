@@ -9,8 +9,8 @@ type OpenapiEnvironmentContainer_Properties struct {
 }
 
 var OpenapiEnvironmentContainer_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiEnvironmentContainerConfig struct {
 	// Container for environment specification versions.
@@ -27,8 +27,8 @@ var OpenapiEnvironmentContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiEnvironmentContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiEnvironmentContainer_PropertiesFields,
 		},
 	},
 }

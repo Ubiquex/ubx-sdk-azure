@@ -4,7 +4,7 @@ package devopsinfrastructure
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Pool_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -56,64 +56,64 @@ type Pool_Properties struct {
 }
 
 var Pool_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Pool_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Pool_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Pool_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Pool_Properties_AgentProfile_ResourcePredictionsProfileFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-	}
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+}
 
 var Pool_Properties_AgentProfileFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"ResourcePredictions": ubx.FieldSpec{WireName: "resource_predictions"},
-		"ResourcePredictionsProfile": ubx.FieldSpec{
-			WireName: "resource_predictions_profile",
-			Kind: "object",
-			Fields: Pool_Properties_AgentProfile_ResourcePredictionsProfileFields,
-		},
-	}
+	"Kind":                ubx.FieldSpec{WireName: "kind"},
+	"ResourcePredictions": ubx.FieldSpec{WireName: "resource_predictions"},
+	"ResourcePredictionsProfile": ubx.FieldSpec{
+		WireName: "resource_predictions_profile",
+		Kind:     "object",
+		Fields:   Pool_Properties_AgentProfile_ResourcePredictionsProfileFields,
+	},
+}
 
 var Pool_Properties_RuntimeConfigurationFields = ubx.FieldMap{
-		"WorkFolder": ubx.FieldSpec{WireName: "work_folder"},
-	}
+	"WorkFolder": ubx.FieldSpec{WireName: "work_folder"},
+}
 
 var Pool_PropertiesFields = ubx.FieldMap{
-		"AgentProfile": ubx.FieldSpec{
-			WireName: "agent_profile",
-			Kind: "object",
-			Fields: Pool_Properties_AgentProfileFields,
-		},
-		"DevCenterProjectResourceId": ubx.FieldSpec{WireName: "dev_center_project_resource_id"},
-		"FabricProfile": ubx.FieldSpec{
-			WireName: "fabric_profile",
-			Kind: "object",
-			Fields: Pool_Properties_AgentProfile_ResourcePredictionsProfileFields,
-		},
-		"MaximumConcurrency": ubx.FieldSpec{WireName: "maximum_concurrency"},
-		"OrganizationProfile": ubx.FieldSpec{
-			WireName: "organization_profile",
-			Kind: "object",
-			Fields: Pool_Properties_AgentProfile_ResourcePredictionsProfileFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuntimeConfiguration": ubx.FieldSpec{
-			WireName: "runtime_configuration",
-			Kind: "object",
-			Fields: Pool_Properties_RuntimeConfigurationFields,
-		},
-	}
+	"AgentProfile": ubx.FieldSpec{
+		WireName: "agent_profile",
+		Kind:     "object",
+		Fields:   Pool_Properties_AgentProfileFields,
+	},
+	"DevCenterProjectResourceId": ubx.FieldSpec{WireName: "dev_center_project_resource_id"},
+	"FabricProfile": ubx.FieldSpec{
+		WireName: "fabric_profile",
+		Kind:     "object",
+		Fields:   Pool_Properties_AgentProfile_ResourcePredictionsProfileFields,
+	},
+	"MaximumConcurrency": ubx.FieldSpec{WireName: "maximum_concurrency"},
+	"OrganizationProfile": ubx.FieldSpec{
+		WireName: "organization_profile",
+		Kind:     "object",
+		Fields:   Pool_Properties_AgentProfile_ResourcePredictionsProfileFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuntimeConfiguration": ubx.FieldSpec{
+		WireName: "runtime_configuration",
+		Kind:     "object",
+		Fields:   Pool_Properties_RuntimeConfigurationFields,
+	},
+}
 
 type PoolConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -134,13 +134,13 @@ var Pool = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Pool_IdentityFields,
+			Kind:     "object",
+			Fields:   Pool_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Pool_PropertiesFields,
+			Kind:     "object",
+			Fields:   Pool_PropertiesFields,
 		},
 	},
 }

@@ -4,9 +4,8 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSelfHostedIntegrationRuntimeNodeConfig struct {
-	FactoryName any
+	FactoryName            any
 	IntegrationRuntimeName any
-	NodeName any
 }
 
 type OpenapiSelfHostedIntegrationRuntimeNodeAttrs struct {
@@ -15,10 +14,10 @@ type OpenapiSelfHostedIntegrationRuntimeNodeAttrs struct {
 	// Maximum concurrent jobs on the integration runtime node.
 	ConcurrentJobsLimit any
 	// The time at which the integration runtime will expire in ISO8601 format.
-	ExpiryTime any
+	ExpiryTime  any
 	FactoryName any
 	// URI for the host machine of the integration runtime.
-	HostServiceUri any
+	HostServiceUri         any
 	IntegrationRuntimeName any
 	// Indicates whether this node is the active dispatcher for integration runtime requests.
 	IsActiveDispatcher any
@@ -38,7 +37,7 @@ type OpenapiSelfHostedIntegrationRuntimeNodeAttrs struct {
 	MachineName any
 	// The maximum concurrent jobs in this integration runtime.
 	MaxConcurrentJobs any
-	NodeName any
+	NodeName          any
 	// The time at which the integration runtime node was registered in ISO8601 format.
 	RegisterTime any
 	// Status of the integration runtime node.
@@ -52,8 +51,7 @@ type OpenapiSelfHostedIntegrationRuntimeNodeAttrs struct {
 var OpenapiSelfHostedIntegrationRuntimeNode = ubx.DataSourceBinding{
 	WireType: "azure_datafactory_openapi_self_hosted_integration_runtime_node",
 	Fields: ubx.FieldMap{
-		"FactoryName": ubx.FieldSpec{WireName: "factory_name"},
+		"FactoryName":            ubx.FieldSpec{WireName: "factory_name"},
 		"IntegrationRuntimeName": ubx.FieldSpec{WireName: "integration_runtime_name"},
-		"NodeName": ubx.FieldSpec{WireName: "node_name"},
 	},
 }

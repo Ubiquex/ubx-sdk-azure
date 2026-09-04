@@ -9,21 +9,21 @@ type OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
 
 type OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiPrivateEndpointConnection_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiPrivateEndpointConnection_Value struct {
-	Etag any
-	Location any
+	Etag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiPrivateEndpointConnectionConfig struct {
@@ -34,7 +34,7 @@ type OpenapiPrivateEndpointConnectionAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The PrivateEndpointConnection items on this page
-	Value any
+	Value     any
 	VaultName any
 }
 

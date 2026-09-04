@@ -25,20 +25,9 @@ const ConfigurationProfile_PropertiesFields: FieldMap = {
   configuration: "configuration",
 };
 
-const ConfigurationProfile_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ConfigurationProfileConfig {
   /** Automanage configuration profile properties. */
   properties?: ConfigurationProfile_Properties | Computed<ConfigurationProfile_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ConfigurationProfile_SystemData | Computed<ConfigurationProfile_SystemData>;
 }
 
 export interface ConfigurationProfileAttrs {
@@ -55,11 +44,6 @@ export const ConfigurationProfile: ResourceBinding<ConfigurationProfileConfig, C
       wireName: "properties",
       kind: "object",
       fields: ConfigurationProfile_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ConfigurationProfile_SystemDataFields,
     },
   },
 };

@@ -4,7 +4,7 @@ package communication
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCommunicationServiceResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -41,32 +41,32 @@ type OpenapiCommunicationServiceResource_Properties struct {
 }
 
 var OpenapiCommunicationServiceResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiCommunicationServiceResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiCommunicationServiceResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiCommunicationServiceResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiCommunicationServiceResource_PropertiesFields = ubx.FieldMap{
-		"DataLocation": ubx.FieldSpec{WireName: "data_location"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"ImmutableResourceId": ubx.FieldSpec{WireName: "immutable_resource_id"},
-		"LinkedDomains": ubx.FieldSpec{WireName: "linked_domains"},
-		"NotificationHubId": ubx.FieldSpec{WireName: "notification_hub_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"DataLocation":        ubx.FieldSpec{WireName: "data_location"},
+	"DisableLocalAuth":    ubx.FieldSpec{WireName: "disable_local_auth"},
+	"HostName":            ubx.FieldSpec{WireName: "host_name"},
+	"ImmutableResourceId": ubx.FieldSpec{WireName: "immutable_resource_id"},
+	"LinkedDomains":       ubx.FieldSpec{WireName: "linked_domains"},
+	"NotificationHubId":   ubx.FieldSpec{WireName: "notification_hub_id"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"Version":             ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiCommunicationServiceResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -87,13 +87,13 @@ var OpenapiCommunicationServiceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiCommunicationServiceResource_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiCommunicationServiceResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCommunicationServiceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCommunicationServiceResource_PropertiesFields,
 		},
 	},
 }

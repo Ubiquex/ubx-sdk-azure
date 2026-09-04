@@ -4,14 +4,14 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Value_Properties struct {
-	DefaultHostname any
-	Hostnames any
+	DefaultHostname   any
+	Hostnames         any
 	ProvisioningState any
-	SourceId any
+	SourceId          any
 }
 
 type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -27,6 +27,5 @@ type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceAtt
 
 var ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimgatewayconfigconnections_api_management_gateway_config_connection_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

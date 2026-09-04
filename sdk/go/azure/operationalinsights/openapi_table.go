@@ -24,13 +24,13 @@ type OpenapiTable_Properties_ResultStatistics struct {
 }
 
 type OpenapiTable_Properties_Schema_Columns struct {
-	DataTypeHint any
-	Description any
-	DisplayName any
+	DataTypeHint     any
+	Description      any
+	DisplayName      any
 	IsDefaultDisplay any
-	IsHidden any
-	Name any
-	Type any
+	IsHidden         any
+	Name             any
+	Type             any
 }
 
 type OpenapiTable_Properties_Schema struct {
@@ -105,91 +105,91 @@ type OpenapiTable_Properties struct {
 }
 
 var OpenapiTable_Properties_RestoredLogsFields = ubx.FieldMap{
-		"AzureAsyncOperationId": ubx.FieldSpec{WireName: "azure_async_operation_id"},
-		"EndRestoreTime": ubx.FieldSpec{WireName: "end_restore_time"},
-		"SourceTable": ubx.FieldSpec{WireName: "source_table"},
-		"StartRestoreTime": ubx.FieldSpec{WireName: "start_restore_time"},
-	}
+	"AzureAsyncOperationId": ubx.FieldSpec{WireName: "azure_async_operation_id"},
+	"EndRestoreTime":        ubx.FieldSpec{WireName: "end_restore_time"},
+	"SourceTable":           ubx.FieldSpec{WireName: "source_table"},
+	"StartRestoreTime":      ubx.FieldSpec{WireName: "start_restore_time"},
+}
 
 var OpenapiTable_Properties_ResultStatisticsFields = ubx.FieldMap{
-		"IngestedRecords": ubx.FieldSpec{WireName: "ingested_records"},
-		"Progress": ubx.FieldSpec{WireName: "progress"},
-		"ScannedGb": ubx.FieldSpec{WireName: "scanned_gb"},
-	}
+	"IngestedRecords": ubx.FieldSpec{WireName: "ingested_records"},
+	"Progress":        ubx.FieldSpec{WireName: "progress"},
+	"ScannedGb":       ubx.FieldSpec{WireName: "scanned_gb"},
+}
 
 var OpenapiTable_Properties_Schema_ColumnsFields = ubx.FieldMap{
-		"DataTypeHint": ubx.FieldSpec{WireName: "data_type_hint"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"IsDefaultDisplay": ubx.FieldSpec{WireName: "is_default_display"},
-		"IsHidden": ubx.FieldSpec{WireName: "is_hidden"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DataTypeHint":     ubx.FieldSpec{WireName: "data_type_hint"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
+	"IsDefaultDisplay": ubx.FieldSpec{WireName: "is_default_display"},
+	"IsHidden":         ubx.FieldSpec{WireName: "is_hidden"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"Type":             ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiTable_Properties_SchemaFields = ubx.FieldMap{
-		"Categories": ubx.FieldSpec{WireName: "categories"},
-		"Columns": ubx.FieldSpec{
-			WireName: "columns",
-			Kind: "list",
-			Fields: OpenapiTable_Properties_Schema_ColumnsFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Solutions": ubx.FieldSpec{WireName: "solutions"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"StandardColumns": ubx.FieldSpec{
-			WireName: "standard_columns",
-			Kind: "list",
-			Fields: OpenapiTable_Properties_Schema_ColumnsFields,
-		},
-		"TableSubType": ubx.FieldSpec{WireName: "table_sub_type"},
-		"TableType": ubx.FieldSpec{WireName: "table_type"},
-	}
+	"Categories": ubx.FieldSpec{WireName: "categories"},
+	"Columns": ubx.FieldSpec{
+		WireName: "columns",
+		Kind:     "list",
+		Fields:   OpenapiTable_Properties_Schema_ColumnsFields,
+	},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Labels":      ubx.FieldSpec{WireName: "labels"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+	"Solutions":   ubx.FieldSpec{WireName: "solutions"},
+	"Source":      ubx.FieldSpec{WireName: "source"},
+	"StandardColumns": ubx.FieldSpec{
+		WireName: "standard_columns",
+		Kind:     "list",
+		Fields:   OpenapiTable_Properties_Schema_ColumnsFields,
+	},
+	"TableSubType": ubx.FieldSpec{WireName: "table_sub_type"},
+	"TableType":    ubx.FieldSpec{WireName: "table_type"},
+}
 
 var OpenapiTable_Properties_SearchResultsFields = ubx.FieldMap{
-		"AzureAsyncOperationId": ubx.FieldSpec{WireName: "azure_async_operation_id"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"EndSearchTime": ubx.FieldSpec{WireName: "end_search_time"},
-		"Limit": ubx.FieldSpec{WireName: "limit"},
-		"Query": ubx.FieldSpec{WireName: "query"},
-		"SourceTable": ubx.FieldSpec{WireName: "source_table"},
-		"StartSearchTime": ubx.FieldSpec{WireName: "start_search_time"},
-	}
+	"AzureAsyncOperationId": ubx.FieldSpec{WireName: "azure_async_operation_id"},
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"EndSearchTime":         ubx.FieldSpec{WireName: "end_search_time"},
+	"Limit":                 ubx.FieldSpec{WireName: "limit"},
+	"Query":                 ubx.FieldSpec{WireName: "query"},
+	"SourceTable":           ubx.FieldSpec{WireName: "source_table"},
+	"StartSearchTime":       ubx.FieldSpec{WireName: "start_search_time"},
+}
 
 var OpenapiTable_PropertiesFields = ubx.FieldMap{
-		"ArchiveRetentionInDays": ubx.FieldSpec{WireName: "archive_retention_in_days"},
-		"LastPlanModifiedDate": ubx.FieldSpec{WireName: "last_plan_modified_date"},
-		"Plan": ubx.FieldSpec{WireName: "plan"},
-		"ProtectionLevel": ubx.FieldSpec{WireName: "protection_level"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RestoredLogs": ubx.FieldSpec{
-			WireName: "restored_logs",
-			Kind: "object",
-			Fields: OpenapiTable_Properties_RestoredLogsFields,
-		},
-		"ResultStatistics": ubx.FieldSpec{
-			WireName: "result_statistics",
-			Kind: "object",
-			Fields: OpenapiTable_Properties_ResultStatisticsFields,
-		},
-		"RetentionInDays": ubx.FieldSpec{WireName: "retention_in_days"},
-		"RetentionInDaysAsDefault": ubx.FieldSpec{WireName: "retention_in_days_as_default"},
-		"Schema": ubx.FieldSpec{
-			WireName: "schema",
-			Kind: "object",
-			Fields: OpenapiTable_Properties_SchemaFields,
-		},
-		"SearchResults": ubx.FieldSpec{
-			WireName: "search_results",
-			Kind: "object",
-			Fields: OpenapiTable_Properties_SearchResultsFields,
-		},
-		"TotalRetentionInDays": ubx.FieldSpec{WireName: "total_retention_in_days"},
-		"TotalRetentionInDaysAsDefault": ubx.FieldSpec{WireName: "total_retention_in_days_as_default"},
-	}
+	"ArchiveRetentionInDays": ubx.FieldSpec{WireName: "archive_retention_in_days"},
+	"LastPlanModifiedDate":   ubx.FieldSpec{WireName: "last_plan_modified_date"},
+	"Plan":                   ubx.FieldSpec{WireName: "plan"},
+	"ProtectionLevel":        ubx.FieldSpec{WireName: "protection_level"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"RestoredLogs": ubx.FieldSpec{
+		WireName: "restored_logs",
+		Kind:     "object",
+		Fields:   OpenapiTable_Properties_RestoredLogsFields,
+	},
+	"ResultStatistics": ubx.FieldSpec{
+		WireName: "result_statistics",
+		Kind:     "object",
+		Fields:   OpenapiTable_Properties_ResultStatisticsFields,
+	},
+	"RetentionInDays":          ubx.FieldSpec{WireName: "retention_in_days"},
+	"RetentionInDaysAsDefault": ubx.FieldSpec{WireName: "retention_in_days_as_default"},
+	"Schema": ubx.FieldSpec{
+		WireName: "schema",
+		Kind:     "object",
+		Fields:   OpenapiTable_Properties_SchemaFields,
+	},
+	"SearchResults": ubx.FieldSpec{
+		WireName: "search_results",
+		Kind:     "object",
+		Fields:   OpenapiTable_Properties_SearchResultsFields,
+	},
+	"TotalRetentionInDays":          ubx.FieldSpec{WireName: "total_retention_in_days"},
+	"TotalRetentionInDaysAsDefault": ubx.FieldSpec{WireName: "total_retention_in_days_as_default"},
+}
 
 type OpenapiTableConfig struct {
 	// Table properties.
@@ -206,8 +206,8 @@ var OpenapiTable = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiTable_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiTable_PropertiesFields,
 		},
 	},
 }

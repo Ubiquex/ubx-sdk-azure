@@ -4,18 +4,18 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerNetworkManagerRoutingConfiguration_Value_Properties struct {
-	Description any
-	ProvisioningState any
-	ResourceGuid any
+	Description         any
+	ProvisioningState   any
+	ResourceGuid        any
 	RouteTableUsageMode any
 }
 
 type NetworkmanagerNetworkManagerRoutingConfiguration_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 

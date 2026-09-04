@@ -9,14 +9,10 @@ export interface MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentity
 }
 
 export interface MachineDiagnosticRunCommand_Properties_InstanceView_Statuses {
-  /** The status code for the instance view status, indicating the state of the diagnostic run command. (AI-inferred) */
   code?: string | Computed<string>;
   displayStatus?: string | Computed<string>;
-  /** The severity level of the instance view status. Possible values are 'Info', 'Warning', and 'Error'. (AI-inferred) */
   level?: string | Computed<string>;
-  /** The message that provides additional details about the status of the diagnostic run command, such as error information or execution progress. (AI-inferred) */
   message?: string | Computed<string>;
-  /** The timestamp when the status was recorded, in ISO 8601 format. (AI-inferred) */
   time?: string | Computed<string>;
 }
 
@@ -41,7 +37,6 @@ export interface MachineDiagnosticRunCommand_Properties_InstanceView {
 
 export interface MachineDiagnosticRunCommand_Properties_Parameters {
   name?: string | Computed<string>;
-  /** The value of the parameter to pass to the diagnostic run command. (AI-inferred) */
   value?: string | Computed<string>;
 }
 

@@ -26,8 +26,6 @@ _ExpressrouteExpressRoutePortAuthorization_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRoutePortAuthorizationConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of ExpressRoutePort Authorization.
     properties: Any = None
 
@@ -41,7 +39,6 @@ class ExpressrouteExpressRoutePortAuthorizationAttrs:
 ExpressrouteExpressRoutePortAuthorization = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_port_authorization",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

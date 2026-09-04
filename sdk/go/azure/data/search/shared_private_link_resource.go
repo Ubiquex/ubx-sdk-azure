@@ -4,12 +4,12 @@ package search
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SharedPrivateLinkResource_Value_Properties struct {
-	GroupId any
+	GroupId               any
 	PrivateLinkResourceId any
-	ProvisioningState any
-	RequestMessage any
-	ResourceRegion any
-	Status any
+	ProvisioningState     any
+	RequestMessage        any
+	ResourceRegion        any
+	Status                any
 }
 
 type SharedPrivateLinkResource_Value struct {
@@ -22,7 +22,7 @@ type SharedPrivateLinkResourceConfig struct {
 
 type SharedPrivateLinkResourceAttrs struct {
 	// The URL to get the next set of shared private link resources, if there are any.
-	NextLink any
+	NextLink          any
 	SearchServiceName any
 	// The list of shared private link resources.
 	Value any

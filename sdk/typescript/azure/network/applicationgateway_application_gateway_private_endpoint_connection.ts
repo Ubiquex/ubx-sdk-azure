@@ -4383,8 +4383,6 @@ const ApplicationgatewayApplicationGatewayPrivateEndpointConnection_PropertiesFi
 };
 
 export interface ApplicationgatewayApplicationGatewayPrivateEndpointConnectionConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of Private Link Resource of an application gateway. */
   properties?: ApplicationgatewayApplicationGatewayPrivateEndpointConnection_Properties | Computed<ApplicationgatewayApplicationGatewayPrivateEndpointConnection_Properties>;
 }
@@ -4399,7 +4397,6 @@ export interface ApplicationgatewayApplicationGatewayPrivateEndpointConnectionAt
 export const ApplicationgatewayApplicationGatewayPrivateEndpointConnection: ResourceBinding<ApplicationgatewayApplicationGatewayPrivateEndpointConnectionConfig, ApplicationgatewayApplicationGatewayPrivateEndpointConnectionAttrs> = {
   wireType: "azure_network_applicationgateway_application_gateway_private_endpoint_connection",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

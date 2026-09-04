@@ -4,22 +4,22 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Catalog_Value_Properties_LastSyncStats struct {
-	Added any
-	Removed any
+	Added                  any
+	Removed                any
 	SyncedCatalogItemTypes any
-	SynchronizationErrors any
-	Unchanged any
-	Updated any
-	ValidationErrors any
+	SynchronizationErrors  any
+	Unchanged              any
+	Updated                any
+	ValidationErrors       any
 }
 
 type Catalog_Value_Properties struct {
-	ConnectionState any
+	ConnectionState    any
 	LastConnectionTime any
-	LastSyncStats any
-	LastSyncTime any
-	ProvisioningState any
-	SyncState any
+	LastSyncStats      any
+	LastSyncTime       any
+	ProvisioningState  any
+	SyncState          any
 }
 
 type Catalog_Value struct {

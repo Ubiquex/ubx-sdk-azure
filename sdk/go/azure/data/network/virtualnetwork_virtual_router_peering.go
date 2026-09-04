@@ -4,13 +4,13 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkVirtualRouterPeering_Value_Properties struct {
-	PeerAsn any
-	PeerIp any
+	PeerAsn           any
+	PeerIp            any
 	ProvisioningState any
 }
 
 type VirtualnetworkVirtualRouterPeering_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -22,7 +22,7 @@ type VirtualnetworkVirtualRouterPeeringAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The VirtualRouterPeering items on this page
-	Value any
+	Value             any
 	VirtualRouterName any
 }
 

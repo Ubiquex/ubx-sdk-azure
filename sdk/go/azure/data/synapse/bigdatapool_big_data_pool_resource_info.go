@@ -5,64 +5,64 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BigdatapoolBigDataPoolResourceInfo_Value_Properties_AutoPause struct {
 	DelayInMinutes any
-	Enabled any
+	Enabled        any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Value_Properties_AutoScale struct {
-	Enabled any
+	Enabled      any
 	MaxNodeCount any
 	MinNodeCount any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Value_Properties_CustomLibraries struct {
-	ContainerName any
-	CreatorId any
-	Name any
-	Path any
+	ContainerName      any
+	CreatorId          any
+	Name               any
+	Path               any
 	ProvisioningStatus any
-	Type any
-	UploadedTimestamp any
+	Type               any
+	UploadedTimestamp  any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Value_Properties_DynamicExecutorAllocation struct {
-	Enabled any
+	Enabled      any
 	MaxExecutors any
 	MinExecutors any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Value_Properties_LibraryRequirements struct {
-	Content any
+	Content  any
 	Filename any
-	Time any
+	Time     any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Value_Properties_SparkConfigProperties struct {
 	ConfigurationType any
-	Content any
-	Filename any
-	Time any
+	Content           any
+	Filename          any
+	Time              any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Value_Properties struct {
-	AutoPause any
-	AutoScale any
-	CacheSize any
-	CreationDate any
-	CustomLibraries any
-	DefaultSparkLogFolder any
-	DynamicExecutorAllocation any
-	IsAutotuneEnabled any
-	IsComputeIsolationEnabled any
-	LastSucceededTimestamp any
-	LibraryRequirements any
-	NodeCount any
-	NodeSize any
-	NodeSizeFamily any
-	ProvisioningState any
+	AutoPause                   any
+	AutoScale                   any
+	CacheSize                   any
+	CreationDate                any
+	CustomLibraries             any
+	DefaultSparkLogFolder       any
+	DynamicExecutorAllocation   any
+	IsAutotuneEnabled           any
+	IsComputeIsolationEnabled   any
+	LastSucceededTimestamp      any
+	LibraryRequirements         any
+	NodeCount                   any
+	NodeSize                    any
+	NodeSizeFamily              any
+	ProvisioningState           any
 	SessionLevelPackagesEnabled any
-	SparkConfigProperties any
-	SparkEventsFolder any
-	SparkVersion any
+	SparkConfigProperties       any
+	SparkEventsFolder           any
+	SparkVersion                any
 }
 
 type BigdatapoolBigDataPoolResourceInfo_Value struct {
@@ -81,6 +81,5 @@ type BigdatapoolBigDataPoolResourceInfoAttrs struct {
 
 var BigdatapoolBigDataPoolResourceInfo = ubx.DataSourceBinding{
 	WireType: "azure_synapse_bigdatapool_big_data_pool_resource_info",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

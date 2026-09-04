@@ -16,17 +16,17 @@ type OpenapiSettings_Properties struct {
 }
 
 var OpenapiSettings_Properties_GatewayPropertiesFields = ubx.FieldMap{
-		"GatewayResourceId": ubx.FieldSpec{WireName: "gateway_resource_id"},
-	}
+	"GatewayResourceId": ubx.FieldSpec{WireName: "gateway_resource_id"},
+}
 
 var OpenapiSettings_PropertiesFields = ubx.FieldMap{
-		"GatewayProperties": ubx.FieldSpec{
-			WireName: "gateway_properties",
-			Kind: "object",
-			Fields: OpenapiSettings_Properties_GatewayPropertiesFields,
-		},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"GatewayProperties": ubx.FieldSpec{
+		WireName: "gateway_properties",
+		Kind:     "object",
+		Fields:   OpenapiSettings_Properties_GatewayPropertiesFields,
+	},
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type OpenapiSettingsConfig struct {
 	// Settings properties
@@ -43,8 +43,8 @@ var OpenapiSettings = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSettings_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSettings_PropertiesFields,
 		},
 	},
 }

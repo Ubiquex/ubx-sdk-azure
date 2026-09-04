@@ -26,8 +26,6 @@ _ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Proper
 
 @dataclasses.dataclass
 class ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceConfig:
-    # ETag of the resource.
-    etag: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
@@ -39,7 +37,6 @@ class ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceAt
 ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource = ubx.ResourceBinding(
     wire_type="azure_apimanagement_apimgatewayconfigconnections_api_management_gateway_config_connection_resource",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

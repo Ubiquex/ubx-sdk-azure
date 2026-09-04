@@ -4,8 +4,8 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimworkspacecertificatesCertificateContract_Value_Properties_KeyVault_LastStatus struct {
-	Code any
-	Message any
+	Code         any
+	Message      any
 	TimeStampUtc any
 }
 
@@ -15,9 +15,9 @@ type ApimworkspacecertificatesCertificateContract_Value_Properties_KeyVault stru
 
 type ApimworkspacecertificatesCertificateContract_Value_Properties struct {
 	ExpirationDate any
-	KeyVault any
-	Subject any
-	Thumbprint any
+	KeyVault       any
+	Subject        any
+	Thumbprint     any
 }
 
 type ApimworkspacecertificatesCertificateContract_Value struct {
@@ -30,7 +30,7 @@ type ApimworkspacecertificatesCertificateContractConfig struct {
 
 type ApimworkspacecertificatesCertificateContractAttrs struct {
 	// Total record count number across all pages.
-	Count any
+	Count                   any
 	IsKeyVaultRefreshFailed any
 	// Next page link if any.
 	NextLink any

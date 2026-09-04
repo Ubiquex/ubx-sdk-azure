@@ -52,8 +52,6 @@ _PrivateEndpointConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class PrivateEndpointConnectionConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Properties of the private endpoint connection resource.
     properties: Any = None
 
@@ -67,7 +65,6 @@ class PrivateEndpointConnectionAttrs:
 PrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_relay_private_endpoint_connection",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

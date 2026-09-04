@@ -5,11 +5,11 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiIntegrationRuntimeResource_Value_Properties struct {
 	Description any
-	Type any
+	Type        any
 }
 
 type OpenapiIntegrationRuntimeResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

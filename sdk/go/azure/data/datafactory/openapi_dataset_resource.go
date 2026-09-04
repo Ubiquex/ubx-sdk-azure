@@ -8,29 +8,29 @@ type OpenapiDatasetResource_Value_Properties_Folder struct {
 }
 
 type OpenapiDatasetResource_Value_Properties_LinkedServiceName struct {
-	Parameters any
+	Parameters    any
 	ReferenceName any
-	Type any
+	Type          any
 }
 
 type OpenapiDatasetResource_Value_Properties_Parameters struct {
 	DefaultValue any
-	Type any
+	Type         any
 }
 
 type OpenapiDatasetResource_Value_Properties struct {
-	Annotations any
-	Description any
-	Folder any
+	Annotations       any
+	Description       any
+	Folder            any
 	LinkedServiceName any
-	Parameters any
-	Schema any
-	Structure any
-	Type any
+	Parameters        any
+	Schema            any
+	Structure         any
+	Type              any
 }
 
 type OpenapiDatasetResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

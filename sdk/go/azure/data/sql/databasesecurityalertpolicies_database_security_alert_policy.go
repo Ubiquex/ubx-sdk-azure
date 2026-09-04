@@ -4,14 +4,14 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatabasesecurityalertpoliciesDatabaseSecurityAlertPolicy_Value_Properties struct {
-	CreationTime any
-	DisabledAlerts any
-	EmailAccountAdmins any
-	EmailAddresses any
-	RetentionDays any
-	State any
+	CreationTime            any
+	DisabledAlerts          any
+	EmailAccountAdmins      any
+	EmailAddresses          any
+	RetentionDays           any
+	State                   any
 	StorageAccountAccessKey any
-	StorageEndpoint any
+	StorageEndpoint         any
 }
 
 type DatabasesecurityalertpoliciesDatabaseSecurityAlertPolicy_Value struct {
@@ -20,13 +20,13 @@ type DatabasesecurityalertpoliciesDatabaseSecurityAlertPolicy_Value struct {
 
 type DatabasesecurityalertpoliciesDatabaseSecurityAlertPolicyConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type DatabasesecurityalertpoliciesDatabaseSecurityAlertPolicyAttrs struct {
 	DatabaseName any
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink   any
 	ServerName any
 	// Array of results.
 	Value any
@@ -36,6 +36,6 @@ var DatabasesecurityalertpoliciesDatabaseSecurityAlertPolicy = ubx.DataSourceBin
 	WireType: "azure_sql_databasesecurityalertpolicies_database_security_alert_policy",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

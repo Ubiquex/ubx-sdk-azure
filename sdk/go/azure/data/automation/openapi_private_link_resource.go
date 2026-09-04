@@ -4,7 +4,7 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPrivateLinkResource_Value_Properties struct {
-	GroupId any
+	GroupId         any
 	RequiredMembers any
 }
 
@@ -18,7 +18,7 @@ type OpenapiPrivateLinkResourceConfig struct {
 
 type OpenapiPrivateLinkResourceAttrs struct {
 	AutomationAccountName any
-	NextLink any
+	NextLink              any
 	// Array of private link resources
 	Value any
 }

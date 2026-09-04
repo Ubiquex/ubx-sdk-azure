@@ -31,20 +31,9 @@ const ClientGroup_PropertiesFields: FieldMap = {
   query: "query",
 };
 
-const ClientGroup_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ClientGroupConfig {
   /** The properties of client group. */
   properties?: ClientGroup_Properties | Computed<ClientGroup_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ClientGroup_SystemData | Computed<ClientGroup_SystemData>;
 }
 
 export interface ClientGroupAttrs {
@@ -61,11 +50,6 @@ export const ClientGroup: ResourceBinding<ClientGroupConfig, ClientGroupAttrs> =
       wireName: "properties",
       kind: "object",
       fields: ClientGroup_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ClientGroup_SystemDataFields,
     },
   },
 };

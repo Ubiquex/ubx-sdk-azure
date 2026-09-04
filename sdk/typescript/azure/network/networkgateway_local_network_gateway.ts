@@ -110,8 +110,6 @@ const NetworkgatewayLocalNetworkGateway_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkgatewayLocalNetworkGatewayConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** LocalNetworkGateway properties. */
   properties: NetworkgatewayLocalNetworkGateway_Properties | Computed<NetworkgatewayLocalNetworkGateway_Properties>;
 }
@@ -126,7 +124,6 @@ export interface NetworkgatewayLocalNetworkGatewayAttrs {
 export const NetworkgatewayLocalNetworkGateway: ResourceBinding<NetworkgatewayLocalNetworkGatewayConfig, NetworkgatewayLocalNetworkGatewayAttrs> = {
   wireType: "azure_network_networkgateway_local_network_gateway",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

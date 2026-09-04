@@ -4,68 +4,68 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCluster_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiCluster_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiCluster_Value_Properties_AssociatedWorkspaces struct {
 	AssociateDate any
-	ResourceId any
-	WorkspaceId any
+	ResourceId    any
+	WorkspaceId   any
 	WorkspaceName any
 }
 
 type OpenapiCluster_Value_Properties_CapacityReservationProperties struct {
 	LastSkuUpdate any
-	MinCapacity any
+	MinCapacity   any
 }
 
 type OpenapiCluster_Value_Properties_KeyVaultProperties struct {
-	KeyName any
-	KeyRsaSize any
+	KeyName     any
+	KeyRsaSize  any
 	KeyVaultUri any
-	KeyVersion any
+	KeyVersion  any
 }
 
 type OpenapiCluster_Value_Properties_Replication struct {
-	CreatedDate any
-	Enabled any
+	CreatedDate                any
+	Enabled                    any
 	IsAvailabilityZonesEnabled any
-	LastModifiedDate any
-	Location any
-	ProvisioningState any
+	LastModifiedDate           any
+	Location                   any
+	ProvisioningState          any
 }
 
 type OpenapiCluster_Value_Properties struct {
-	AssociatedWorkspaces any
-	BillingType any
+	AssociatedWorkspaces          any
+	BillingType                   any
 	CapacityReservationProperties any
-	ClusterId any
-	CreatedDate any
-	IsAvailabilityZonesEnabled any
-	IsDoubleEncryptionEnabled any
-	KeyVaultProperties any
-	LastModifiedDate any
-	ProvisioningState any
-	Replication any
+	ClusterId                     any
+	CreatedDate                   any
+	IsAvailabilityZonesEnabled    any
+	IsDoubleEncryptionEnabled     any
+	KeyVaultProperties            any
+	LastModifiedDate              any
+	ProvisioningState             any
+	Replication                   any
 }
 
 type OpenapiCluster_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type OpenapiCluster_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiClusterConfig struct {
@@ -80,6 +80,5 @@ type OpenapiClusterAttrs struct {
 
 var OpenapiCluster = ubx.DataSourceBinding{
 	WireType: "azure_operationalinsights_openapi_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

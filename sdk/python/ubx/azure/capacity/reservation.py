@@ -13,20 +13,14 @@ class Reservation_Properties_InstanceView_ReservationStateInfo:
 
 @dataclasses.dataclass
 class Reservation_Properties_InstanceView_Statuses:
-    # The status code for the capacity reservation, indicating its current state (e.g., 'ProvisioningState/succeeded'). (AI-inferred)
     code: Any = None
-    # The human-readable, localized description of the status code associated with the capacity reservation instance. (AI-inferred)
     display_status: Any = None
-    # The severity level of the status, which can be 'Info', 'Warning', or 'Error'. (AI-inferred)
     level: Any = None
-    # The human-readable message that provides additional details about the status condition. (AI-inferred)
     message: Any = None
-    # The timestamp indicating when the status was observed. (AI-inferred)
     time: Any = None
 
 @dataclasses.dataclass
 class Reservation_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocated:
-    # The resource ID of a virtual machine that is allocated to this capacity reservation. (AI-inferred)
     id: Any = None
 
 @dataclasses.dataclass

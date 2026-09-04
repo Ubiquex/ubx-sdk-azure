@@ -31,22 +31,22 @@ type App_Sku struct {
 }
 
 var App_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var App_PropertiesFields = ubx.FieldMap{
-		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Subdomain": ubx.FieldSpec{WireName: "subdomain"},
-		"Template": ubx.FieldSpec{WireName: "template"},
-	}
+	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+	"DisplayName":   ubx.FieldSpec{WireName: "display_name"},
+	"State":         ubx.FieldSpec{WireName: "state"},
+	"Subdomain":     ubx.FieldSpec{WireName: "subdomain"},
+	"Template":      ubx.FieldSpec{WireName: "template"},
+}
 
 var App_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type AppConfig struct {
 	// Managed service identity (either system assigned, or none)
@@ -71,18 +71,18 @@ var App = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: App_IdentityFields,
+			Kind:     "object",
+			Fields:   App_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: App_PropertiesFields,
+			Kind:     "object",
+			Fields:   App_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: App_SkuFields,
+			Kind:     "object",
+			Fields:   App_SkuFields,
 		},
 	},
 }

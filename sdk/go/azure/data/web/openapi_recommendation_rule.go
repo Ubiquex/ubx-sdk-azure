@@ -34,9 +34,9 @@ type OpenapiRecommendationRule_Properties struct {
 
 type OpenapiRecommendationRuleConfig struct {
 	HostingEnvironmentName any
-	Name any
-	RecommendationId any
-	UpdateSeen any
+	Name                   any
+	RecommendationId       any
+	UpdateSeen             any
 }
 
 type OpenapiRecommendationRuleAttrs struct {
@@ -45,17 +45,17 @@ type OpenapiRecommendationRuleAttrs struct {
 	Kind any
 	Name any
 	// RecommendationRule resource specific properties
-	Properties any
+	Properties       any
 	RecommendationId any
-	UpdateSeen any
+	UpdateSeen       any
 }
 
 var OpenapiRecommendationRule = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_recommendation_rule",
 	Fields: ubx.FieldMap{
 		"HostingEnvironmentName": ubx.FieldSpec{WireName: "hosting_environment_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"RecommendationId": ubx.FieldSpec{WireName: "recommendation_id"},
-		"UpdateSeen": ubx.FieldSpec{WireName: "update_seen"},
+		"Name":                   ubx.FieldSpec{WireName: "name"},
+		"RecommendationId":       ubx.FieldSpec{WireName: "recommendation_id"},
+		"UpdateSeen":             ubx.FieldSpec{WireName: "update_seen"},
 	},
 }

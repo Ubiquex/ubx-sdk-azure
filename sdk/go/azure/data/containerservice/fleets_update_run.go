@@ -9,17 +9,17 @@ type FleetsUpdateRun_Value_Properties_ManagedClusterUpdate_NodeImageSelection_Cu
 
 type FleetsUpdateRun_Value_Properties_ManagedClusterUpdate_NodeImageSelection struct {
 	CustomNodeImageVersions any
-	Type any
+	Type                    any
 }
 
 type FleetsUpdateRun_Value_Properties_ManagedClusterUpdate_Upgrade struct {
 	KubernetesVersion any
-	Type any
+	Type              any
 }
 
 type FleetsUpdateRun_Value_Properties_ManagedClusterUpdate struct {
 	NodeImageSelection any
-	Upgrade any
+	Upgrade            any
 }
 
 type FleetsUpdateRun_Value_Properties_Status_NodeImageSelection struct {
@@ -36,90 +36,90 @@ type FleetsUpdateRun_Value_Properties_Status_Stages_AfterGates_Status_Error_Deta
 
 type FleetsUpdateRun_Value_Properties_Status_Stages_AfterGates_Status_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsUpdateRun_Value_Properties_Status_Stages_AfterGates_Status_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsUpdateRun_Value_Properties_Status_Stages_AfterGates_Status struct {
 	CompletedTime any
-	Error any
-	StartTime any
-	State any
+	Error         any
+	StartTime     any
+	State         any
 }
 
 type FleetsUpdateRun_Value_Properties_Status_Stages_AfterGates struct {
 	DisplayName any
-	GateId any
-	Status any
+	GateId      any
+	Status      any
 }
 
 type FleetsUpdateRun_Value_Properties_Status_Stages_AfterStageWaitStatus struct {
-	Status any
+	Status                any
 	WaitDurationInSeconds any
 }
 
 type FleetsUpdateRun_Value_Properties_Status_Stages_Groups_Members struct {
 	ClusterResourceId any
-	Message any
-	Name any
-	OperationId any
-	Status any
+	Message           any
+	Name              any
+	OperationId       any
+	Status            any
 }
 
 type FleetsUpdateRun_Value_Properties_Status_Stages_Groups struct {
-	AfterGates any
-	BeforeGates any
+	AfterGates     any
+	BeforeGates    any
 	MaxConcurrency any
-	Members any
-	Name any
-	Status any
+	Members        any
+	Name           any
+	Status         any
 }
 
 type FleetsUpdateRun_Value_Properties_Status_Stages struct {
-	AfterGates any
+	AfterGates           any
 	AfterStageWaitStatus any
-	BeforeGates any
-	Groups any
-	MaxConcurrency any
-	Name any
-	Status any
+	BeforeGates          any
+	Groups               any
+	MaxConcurrency       any
+	Name                 any
+	Status               any
 }
 
 type FleetsUpdateRun_Value_Properties_Status struct {
 	NodeImageSelection any
-	Stages any
-	Status any
+	Stages             any
+	Status             any
 }
 
 type FleetsUpdateRun_Value_Properties_Strategy_Stages_AfterGates struct {
 	DisplayName any
-	Type any
+	Type        any
 }
 
 type FleetsUpdateRun_Value_Properties_Strategy_Stages_Groups struct {
-	AfterGates any
-	BeforeGates any
+	AfterGates     any
+	BeforeGates    any
 	MaxConcurrency any
-	Name any
+	Name           any
 }
 
 type FleetsUpdateRun_Value_Properties_Strategy_Stages struct {
-	AfterGates any
+	AfterGates              any
 	AfterStageWaitInSeconds any
-	BeforeGates any
-	Groups any
-	MaxConcurrency any
-	Name any
+	BeforeGates             any
+	Groups                  any
+	MaxConcurrency          any
+	Name                    any
 }
 
 type FleetsUpdateRun_Value_Properties_Strategy struct {
@@ -129,14 +129,14 @@ type FleetsUpdateRun_Value_Properties_Strategy struct {
 type FleetsUpdateRun_Value_Properties struct {
 	AutoUpgradeProfileId any
 	ManagedClusterUpdate any
-	ProvisioningState any
-	Status any
-	Strategy any
-	UpdateStrategyId any
+	ProvisioningState    any
+	Status               any
+	Strategy             any
+	UpdateStrategyId     any
 }
 
 type FleetsUpdateRun_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 

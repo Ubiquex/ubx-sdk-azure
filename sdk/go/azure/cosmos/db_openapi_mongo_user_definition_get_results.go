@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoUserDefinitionGetResults_Properties_Roles struct {
-	Db any
+	Db   any
 	Role any
 }
 
@@ -24,22 +24,22 @@ type DbOpenapiMongoUserDefinitionGetResults_Properties struct {
 }
 
 var DbOpenapiMongoUserDefinitionGetResults_Properties_RolesFields = ubx.FieldMap{
-		"Db": ubx.FieldSpec{WireName: "db"},
-		"Role": ubx.FieldSpec{WireName: "role"},
-	}
+	"Db":   ubx.FieldSpec{WireName: "db"},
+	"Role": ubx.FieldSpec{WireName: "role"},
+}
 
 var DbOpenapiMongoUserDefinitionGetResults_PropertiesFields = ubx.FieldMap{
-		"CustomData": ubx.FieldSpec{WireName: "custom_data"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"Mechanisms": ubx.FieldSpec{WireName: "mechanisms"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"Roles": ubx.FieldSpec{
-			WireName: "roles",
-			Kind: "list",
-			Fields: DbOpenapiMongoUserDefinitionGetResults_Properties_RolesFields,
-		},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-	}
+	"CustomData":   ubx.FieldSpec{WireName: "custom_data"},
+	"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+	"Mechanisms":   ubx.FieldSpec{WireName: "mechanisms"},
+	"Password":     ubx.FieldSpec{WireName: "password"},
+	"Roles": ubx.FieldSpec{
+		WireName: "roles",
+		Kind:     "list",
+		Fields:   DbOpenapiMongoUserDefinitionGetResults_Properties_RolesFields,
+	},
+	"UserName": ubx.FieldSpec{WireName: "user_name"},
+}
 
 type DbOpenapiMongoUserDefinitionGetResultsConfig struct {
 	// Azure Cosmos DB Mongo User Definition resource object.
@@ -56,8 +56,8 @@ var DbOpenapiMongoUserDefinitionGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiMongoUserDefinitionGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiMongoUserDefinitionGetResults_PropertiesFields,
 		},
 	},
 }

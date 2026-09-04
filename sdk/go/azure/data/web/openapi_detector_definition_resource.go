@@ -6,18 +6,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiDetectorDefinitionResource_Value_Properties struct {
 	Description any
 	DisplayName any
-	IsEnabled any
-	Rank any
+	IsEnabled   any
+	Rank        any
 }
 
 type OpenapiDetectorDefinitionResource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiDetectorDefinitionResourceConfig struct {
 	DiagnosticCategory any
-	SiteName any
+	SiteName           any
 }
 
 type OpenapiDetectorDefinitionResourceAttrs struct {
@@ -33,6 +33,6 @@ var OpenapiDetectorDefinitionResource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_detector_definition_resource",
 	Fields: ubx.FieldMap{
 		"DiagnosticCategory": ubx.FieldSpec{WireName: "diagnostic_category"},
-		"SiteName": ubx.FieldSpec{WireName: "site_name"},
+		"SiteName":           ubx.FieldSpec{WireName: "site_name"},
 	},
 }

@@ -8,48 +8,48 @@ type VirtualwanExpressRouteConnection_Value_Properties_ExpressRouteCircuitPeerin
 }
 
 type VirtualwanExpressRouteConnection_Value_Properties_RoutingConfiguration_PropagatedRouteTables struct {
-	Ids any
+	Ids    any
 	Labels any
 }
 
 type VirtualwanExpressRouteConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
 type VirtualwanExpressRouteConnection_Value_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfig struct {
-	PropagateStaticRoutes any
+	PropagateStaticRoutes          any
 	VnetLocalRouteOverrideCriteria any
 }
 
 type VirtualwanExpressRouteConnection_Value_Properties_RoutingConfiguration_VnetRoutes struct {
-	BgpConnections any
-	StaticRoutes any
+	BgpConnections     any
+	StaticRoutes       any
 	StaticRoutesConfig any
 }
 
 type VirtualwanExpressRouteConnection_Value_Properties_RoutingConfiguration struct {
-	AssociatedRouteTable any
-	InboundRouteMap any
-	OutboundRouteMap any
+	AssociatedRouteTable  any
+	InboundRouteMap       any
+	OutboundRouteMap      any
 	PropagatedRouteTables any
-	VnetRoutes any
+	VnetRoutes            any
 }
 
 type VirtualwanExpressRouteConnection_Value_Properties struct {
-	AuthorizationKey any
-	EnableInternetSecurity any
-	EnablePrivateLinkFastPath any
+	AuthorizationKey           any
+	EnableInternetSecurity     any
+	EnablePrivateLinkFastPath  any
 	ExpressRouteCircuitPeering any
-	ExpressRouteGatewayBypass any
-	ProvisioningState any
-	RoutingConfiguration any
-	RoutingWeight any
+	ExpressRouteGatewayBypass  any
+	ProvisioningState          any
+	RoutingConfiguration       any
+	RoutingWeight              any
 }
 
 type VirtualwanExpressRouteConnection_Value struct {
-	Name any
+	Name       any
 	Properties any
 }
 

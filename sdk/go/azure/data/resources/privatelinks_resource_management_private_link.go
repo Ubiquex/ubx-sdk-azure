@@ -8,20 +8,20 @@ type PrivatelinksResourceManagementPrivateLink_Value_Properties struct {
 }
 
 type PrivatelinksResourceManagementPrivateLink_Value struct {
-	Id any
-	Location any
-	Name any
+	Id         any
+	Location   any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type PrivatelinksResourceManagementPrivateLinkConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type PrivatelinksResourceManagementPrivateLinkAttrs struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 	// An array of resource management private links.
 	Value any
@@ -30,7 +30,7 @@ type PrivatelinksResourceManagementPrivateLinkAttrs struct {
 var PrivatelinksResourceManagementPrivateLink = ubx.DataSourceBinding{
 	WireType: "azure_resources_privatelinks_resource_management_private_link",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

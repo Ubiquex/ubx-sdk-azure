@@ -48,7 +48,7 @@ type NetworkwatcherConnectionAnalyzer_Properties_OutputSettings struct {
 }
 
 type NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfiguration_Headers struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -107,131 +107,112 @@ type NetworkwatcherConnectionAnalyzer_SystemData struct {
 }
 
 var NetworkwatcherConnectionAnalyzer_Properties_DestinationFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Address":    ubx.FieldSpec{WireName: "address"},
+	"Port":       ubx.FieldSpec{WireName: "port"},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+	"Type":       ubx.FieldSpec{WireName: "type"},
+}
 
 var NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettings_ConnectivityCheckSettingsFields = ubx.FieldMap{
-		"GeneratePath": ubx.FieldSpec{WireName: "generate_path"},
-		"PreferredIpversion": ubx.FieldSpec{WireName: "preferred_ipversion"},
-	}
+	"GeneratePath":       ubx.FieldSpec{WireName: "generate_path"},
+	"PreferredIpversion": ubx.FieldSpec{WireName: "preferred_ipversion"},
+}
 
 var NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettings_ExpressRouteDiagnosticsSettingsFields = ubx.FieldMap{
-		"Bandwidth": ubx.FieldSpec{WireName: "bandwidth"},
-		"ErCircuitResourceId": ubx.FieldSpec{WireName: "er_circuit_resource_id"},
-	}
+	"Bandwidth":           ubx.FieldSpec{WireName: "bandwidth"},
+	"ErCircuitResourceId": ubx.FieldSpec{WireName: "er_circuit_resource_id"},
+}
 
 var NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettingsFields = ubx.FieldMap{
-		"ConnectivityCheckSettings": ubx.FieldSpec{
-			WireName: "connectivity_check_settings",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettings_ConnectivityCheckSettingsFields,
-		},
-		"ExpressRouteDiagnosticsSettings": ubx.FieldSpec{
-			WireName: "express_route_diagnostics_settings",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettings_ExpressRouteDiagnosticsSettingsFields,
-		},
-	}
+	"ConnectivityCheckSettings": ubx.FieldSpec{
+		WireName: "connectivity_check_settings",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettings_ConnectivityCheckSettingsFields,
+	},
+	"ExpressRouteDiagnosticsSettings": ubx.FieldSpec{
+		WireName: "express_route_diagnostics_settings",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettings_ExpressRouteDiagnosticsSettingsFields,
+	},
+}
 
 var NetworkwatcherConnectionAnalyzer_Properties_OutputSettings_StorageAccountSettingsFields = ubx.FieldMap{
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"StorageAccountId": ubx.FieldSpec{WireName: "storage_account_id"},
-	}
+	"Path":             ubx.FieldSpec{WireName: "path"},
+	"StorageAccountId": ubx.FieldSpec{WireName: "storage_account_id"},
+}
 
 var NetworkwatcherConnectionAnalyzer_Properties_OutputSettingsFields = ubx.FieldMap{
-		"StorageAccountSettings": ubx.FieldSpec{
-			WireName: "storage_account_settings",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_OutputSettings_StorageAccountSettingsFields,
-		},
-	}
+	"StorageAccountSettings": ubx.FieldSpec{
+		WireName: "storage_account_settings",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_OutputSettings_StorageAccountSettingsFields,
+	},
+}
 
 var NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfiguration_HeadersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfigurationFields = ubx.FieldMap{
-		"Headers": ubx.FieldSpec{
-			WireName: "headers",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfiguration_HeadersFields,
-		},
-		"Method": ubx.FieldSpec{WireName: "method"},
-		"ValidStatusCodes": ubx.FieldSpec{WireName: "valid_status_codes"},
-	}
+	"Headers": ubx.FieldSpec{
+		WireName: "headers",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfiguration_HeadersFields,
+	},
+	"Method":           ubx.FieldSpec{WireName: "method"},
+	"ValidStatusCodes": ubx.FieldSpec{WireName: "valid_status_codes"},
+}
 
 var NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettingsFields = ubx.FieldMap{
-		"HttpConfiguration": ubx.FieldSpec{
-			WireName: "http_configuration",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfigurationFields,
-		},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-	}
+	"HttpConfiguration": ubx.FieldSpec{
+		WireName: "http_configuration",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettings_HttpConfigurationFields,
+	},
+	"Protocol": ubx.FieldSpec{WireName: "protocol"},
+}
 
 var NetworkwatcherConnectionAnalyzer_PropertiesFields = ubx.FieldMap{
-		"Destination": ubx.FieldSpec{
-			WireName: "destination",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_DestinationFields,
-		},
-		"DiagnosticOperations": ubx.FieldSpec{WireName: "diagnostic_operations"},
-		"DiagnosticOperationsSettings": ubx.FieldSpec{
-			WireName: "diagnostic_operations_settings",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettingsFields,
-		},
-		"ExpiryInDays": ubx.FieldSpec{WireName: "expiry_in_days"},
-		"OutputSettings": ubx.FieldSpec{
-			WireName: "output_settings",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_OutputSettingsFields,
-		},
-		"ProtocolSettings": ubx.FieldSpec{
-			WireName: "protocol_settings",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettingsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestTime": ubx.FieldSpec{WireName: "request_time"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_Properties_DestinationFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
-
-var NetworkwatcherConnectionAnalyzer_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Destination": ubx.FieldSpec{
+		WireName: "destination",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_DestinationFields,
+	},
+	"DiagnosticOperations": ubx.FieldSpec{WireName: "diagnostic_operations"},
+	"DiagnosticOperationsSettings": ubx.FieldSpec{
+		WireName: "diagnostic_operations_settings",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_DiagnosticOperationsSettingsFields,
+	},
+	"ExpiryInDays": ubx.FieldSpec{WireName: "expiry_in_days"},
+	"OutputSettings": ubx.FieldSpec{
+		WireName: "output_settings",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_OutputSettingsFields,
+	},
+	"ProtocolSettings": ubx.FieldSpec{
+		WireName: "protocol_settings",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_ProtocolSettingsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestTime":       ubx.FieldSpec{WireName: "request_time"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionAnalyzer_Properties_DestinationFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 type NetworkwatcherConnectionAnalyzerConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
-	// Resource ID of the connection analyzer.
-	Id any
 	// Resource location.
 	Location any
-	// Name of the connection analyzer.
-	Name any
 	// Properties of a connection analyzer.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 	// Resource tags.
 	Tags any
-	// Resource type.
-	Type any
 }
 
 type NetworkwatcherConnectionAnalyzerAttrs struct {
@@ -256,21 +237,12 @@ type NetworkwatcherConnectionAnalyzerAttrs struct {
 var NetworkwatcherConnectionAnalyzer = ubx.ResourceBinding{
 	WireType: "azure_network_networkwatcher_connection_analyzer",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionAnalyzer_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkwatcherConnectionAnalyzer_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

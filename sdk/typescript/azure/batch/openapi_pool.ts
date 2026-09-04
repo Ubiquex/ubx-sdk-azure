@@ -1177,8 +1177,6 @@ const OpenapiPool_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiPoolConfig {
-  /** The ETag of the resource, used for concurrency statements. */
-  etag?: string | Computed<string>;
   /** The identity of the Batch pool, if configured. If the pool identity is updated during update an existing pool, only the new vms which are created after the pool shrinks to 0 will have the updated identities */
   identity?: OpenapiPool_Identity | Computed<OpenapiPool_Identity>;
   /** Pool properties. */
@@ -1201,7 +1199,6 @@ export interface OpenapiPoolAttrs {
 export const OpenapiPool: ResourceBinding<OpenapiPoolConfig, OpenapiPoolAttrs> = {
   wireType: "azure_batch_openapi_pool",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",

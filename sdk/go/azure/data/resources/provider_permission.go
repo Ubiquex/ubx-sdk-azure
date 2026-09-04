@@ -4,25 +4,25 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ProviderPermission_Value_ManagedByRoleDefinition_Permissions struct {
-	Actions any
-	DataActions any
-	NotActions any
+	Actions        any
+	DataActions    any
+	NotActions     any
 	NotDataActions any
 }
 
 type ProviderPermission_Value_ManagedByRoleDefinition struct {
-	Id any
+	Id            any
 	IsServiceRole any
-	Name any
-	Permissions any
-	Scopes any
+	Name          any
+	Permissions   any
+	Scopes        any
 }
 
 type ProviderPermission_Value struct {
-	ApplicationId any
-	ManagedByRoleDefinition any
+	ApplicationId                     any
+	ManagedByRoleDefinition           any
 	ProviderAuthorizationConsentState any
-	RoleDefinition any
+	RoleDefinition                    any
 }
 
 type ProviderPermissionConfig struct {
@@ -31,7 +31,7 @@ type ProviderPermissionConfig struct {
 
 type ProviderPermissionAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink                  any
 	ResourceProviderNamespace any
 	// The ProviderPermission items on this page
 	Value any

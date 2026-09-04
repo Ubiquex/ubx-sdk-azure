@@ -17,7 +17,7 @@ type WorkloadNetworkConfig struct {
 
 type WorkloadNetworkAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetwork items on this page
 	Value any

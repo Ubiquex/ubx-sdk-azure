@@ -47,13 +47,13 @@ type MonitorResource_Properties_UserInfo struct {
 type MonitorResource_Properties struct {
 	// Specify the Datadog organization name. In the case of linking to existing organizations, Id, ApiKey, and Applicationkey is required as well.
 	DatadogOrganizationProperties any
-	LiftrResourceCategory any
+	LiftrResourceCategory         any
 	// The priority of the resource.
 	LiftrResourcePreference any
 	// Flag specifying the Marketplace Subscription Status of the resource. If payment is not made in time, the resource will go in Suspended state.
 	MarketplaceSubscriptionStatus any
 	// Flag specifying if the resource monitoring is enabled or disabled.
-	MonitoringStatus any
+	MonitoringStatus  any
 	ProvisioningState any
 	// Includes name, email and optionally, phone number. User Information can't be null.
 	UserInfo any
@@ -65,64 +65,64 @@ type MonitorResource_Sku struct {
 }
 
 var MonitorResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var MonitorResource_Properties_DatadogOrganizationPropertiesFields = ubx.FieldMap{
-		"ApiKey": ubx.FieldSpec{WireName: "api_key"},
-		"ApplicationKey": ubx.FieldSpec{WireName: "application_key"},
-		"Cspm": ubx.FieldSpec{WireName: "cspm"},
-		"EnterpriseAppId": ubx.FieldSpec{WireName: "enterprise_app_id"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"LinkingAuthCode": ubx.FieldSpec{WireName: "linking_auth_code"},
-		"LinkingClientId": ubx.FieldSpec{WireName: "linking_client_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"RedirectUri": ubx.FieldSpec{WireName: "redirect_uri"},
-		"ResourceCollection": ubx.FieldSpec{WireName: "resource_collection"},
-	}
+	"ApiKey":             ubx.FieldSpec{WireName: "api_key"},
+	"ApplicationKey":     ubx.FieldSpec{WireName: "application_key"},
+	"Cspm":               ubx.FieldSpec{WireName: "cspm"},
+	"EnterpriseAppId":    ubx.FieldSpec{WireName: "enterprise_app_id"},
+	"Id":                 ubx.FieldSpec{WireName: "id"},
+	"LinkingAuthCode":    ubx.FieldSpec{WireName: "linking_auth_code"},
+	"LinkingClientId":    ubx.FieldSpec{WireName: "linking_client_id"},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"RedirectUri":        ubx.FieldSpec{WireName: "redirect_uri"},
+	"ResourceCollection": ubx.FieldSpec{WireName: "resource_collection"},
+}
 
 var MonitorResource_Properties_UserInfoFields = ubx.FieldMap{
-		"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PhoneNumber": ubx.FieldSpec{WireName: "phone_number"},
-	}
+	"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
+	"Name":         ubx.FieldSpec{WireName: "name"},
+	"PhoneNumber":  ubx.FieldSpec{WireName: "phone_number"},
+}
 
 var MonitorResource_PropertiesFields = ubx.FieldMap{
-		"DatadogOrganizationProperties": ubx.FieldSpec{
-			WireName: "datadog_organization_properties",
-			Kind: "object",
-			Fields: MonitorResource_Properties_DatadogOrganizationPropertiesFields,
-		},
-		"LiftrResourceCategory": ubx.FieldSpec{WireName: "liftr_resource_category"},
-		"LiftrResourcePreference": ubx.FieldSpec{WireName: "liftr_resource_preference"},
-		"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
-		"MonitoringStatus": ubx.FieldSpec{WireName: "monitoring_status"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"UserInfo": ubx.FieldSpec{
-			WireName: "user_info",
-			Kind: "object",
-			Fields: MonitorResource_Properties_UserInfoFields,
-		},
-	}
+	"DatadogOrganizationProperties": ubx.FieldSpec{
+		WireName: "datadog_organization_properties",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_DatadogOrganizationPropertiesFields,
+	},
+	"LiftrResourceCategory":         ubx.FieldSpec{WireName: "liftr_resource_category"},
+	"LiftrResourcePreference":       ubx.FieldSpec{WireName: "liftr_resource_preference"},
+	"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
+	"MonitoringStatus":              ubx.FieldSpec{WireName: "monitoring_status"},
+	"ProvisioningState":             ubx.FieldSpec{WireName: "provisioning_state"},
+	"UserInfo": ubx.FieldSpec{
+		WireName: "user_info",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_UserInfoFields,
+	},
+}
 
 var MonitorResource_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type MonitorResourceConfig struct {
 	Identity any
 	// Properties specific to the monitor resource.
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type MonitorResourceAttrs struct {
 	Identity any
 	// Properties specific to the monitor resource.
 	Properties any
-	Sku any
+	Sku        any
 }
 
 var MonitorResource = ubx.ResourceBinding{
@@ -130,18 +130,18 @@ var MonitorResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: MonitorResource_IdentityFields,
+			Kind:     "object",
+			Fields:   MonitorResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MonitorResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   MonitorResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: MonitorResource_SkuFields,
+			Kind:     "object",
+			Fields:   MonitorResource_SkuFields,
 		},
 	},
 }

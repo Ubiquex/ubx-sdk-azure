@@ -8,14 +8,14 @@ type ManagedclustersSnapshot_Value_Properties_CreationData struct {
 }
 
 type ManagedclustersSnapshot_Value_Properties struct {
-	CreationData any
-	EnableFips any
+	CreationData      any
+	EnableFips        any
 	KubernetesVersion any
-	NodeImageVersion any
-	OsSku any
-	OsType any
-	SnapshotType any
-	VmSize any
+	NodeImageVersion  any
+	OsSku             any
+	OsType            any
+	SnapshotType      any
+	VmSize            any
 }
 
 type ManagedclustersSnapshot_Value struct {
@@ -34,6 +34,5 @@ type ManagedclustersSnapshotAttrs struct {
 
 var ManagedclustersSnapshot = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_snapshot",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

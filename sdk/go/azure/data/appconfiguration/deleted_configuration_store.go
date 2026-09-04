@@ -4,30 +4,30 @@ package appconfiguration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DeletedConfigurationStore_Value_Properties struct {
-	ConfigurationStoreId any
-	DeletionDate any
-	Location any
+	ConfigurationStoreId   any
+	DeletionDate           any
+	Location               any
 	PurgeProtectionEnabled any
-	ScheduledPurgeDate any
-	Tags any
+	ScheduledPurgeDate     any
+	Tags                   any
 }
 
 type DeletedConfigurationStore_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type DeletedConfigurationStoreConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type DeletedConfigurationStoreAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of deleted configuration stores.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The list of deleted configuration store.
 	Value any
@@ -36,7 +36,7 @@ type DeletedConfigurationStoreAttrs struct {
 var DeletedConfigurationStore = ubx.DataSourceBinding{
 	WireType: "azure_appconfiguration_deleted_configuration_store",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

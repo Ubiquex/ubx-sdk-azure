@@ -4,7 +4,7 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPool_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -16,7 +16,7 @@ type OpenapiPool_Identity struct {
 }
 
 type OpenapiPool_Properties_ApplicationPackages struct {
-	Id any
+	Id      any
 	Version any
 }
 
@@ -47,9 +47,9 @@ type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries struct {
 	IdentityReference any
-	Password any
-	RegistryServer any
-	Username any
+	Password          any
+	RegistryServer    any
+	Username          any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration struct {
@@ -66,20 +66,20 @@ type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfile struct {
-	DiskEncryptionSet any
+	DiskEncryptionSet      any
 	SecurityEncryptionType any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk struct {
-	DiskEncryptionSet any
-	SecurityProfile any
+	DiskEncryptionSet  any
+	SecurityProfile    any
 	StorageAccountType any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks struct {
-	Caching any
-	DiskSizeGb any
-	Lun any
+	Caching     any
+	DiskSizeGb  any
+	Lun         any
 	ManagedDisk any
 }
 
@@ -100,15 +100,15 @@ type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_Extensions struct {
-	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	Name any
-	ProtectedSettings any
+	AutoUpgradeMinorVersion  any
+	EnableAutomaticUpgrade   any
+	Name                     any
+	ProtectedSettings        any
 	ProvisionAfterExtensions any
-	Publisher any
-	Settings any
-	Type any
-	TypeHandlerVersion any
+	Publisher                any
+	Settings                 any
+	Type                     any
+	TypeHandlerVersion       any
 }
 
 type OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ImageReference struct {
@@ -223,63 +223,63 @@ type OpenapiPool_Properties_DeploymentConfiguration struct {
 }
 
 type OpenapiPool_Properties_Metadata struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfiguration struct {
-	AccountKey any
-	AccountName any
-	BlobfuseOptions any
-	ContainerName any
+	AccountKey        any
+	AccountName       any
+	BlobfuseOptions   any
+	ContainerName     any
 	IdentityReference any
 	RelativeMountPath any
-	SasKey any
+	SasKey            any
 }
 
 type OpenapiPool_Properties_MountConfiguration_AzureFileShareConfiguration struct {
-	AccountKey any
-	AccountName any
-	AzureFileUrl any
-	MountOptions any
+	AccountKey        any
+	AccountName       any
+	AzureFileUrl      any
+	MountOptions      any
 	RelativeMountPath any
 }
 
 type OpenapiPool_Properties_MountConfiguration_CifsMountConfiguration struct {
-	MountOptions any
-	Password any
+	MountOptions      any
+	Password          any
 	RelativeMountPath any
-	Source any
-	UserName any
+	Source            any
+	UserName          any
 }
 
 type OpenapiPool_Properties_MountConfiguration_NfsMountConfiguration struct {
-	MountOptions any
+	MountOptions      any
 	RelativeMountPath any
-	Source any
+	Source            any
 }
 
 type OpenapiPool_Properties_MountConfiguration struct {
 	AzureBlobFileSystemConfiguration any
-	AzureFileShareConfiguration any
-	CifsMountConfiguration any
-	NfsMountConfiguration any
+	AzureFileShareConfiguration      any
+	CifsMountConfiguration           any
+	NfsMountConfiguration            any
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRules struct {
-	Access any
-	Priority any
+	Access              any
+	Priority            any
 	SourceAddressPrefix any
-	SourcePortRanges any
+	SourcePortRanges    any
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools struct {
-	BackendPort any
-	FrontendPortRangeEnd any
-	FrontendPortRangeStart any
-	Name any
+	BackendPort               any
+	FrontendPortRangeEnd      any
+	FrontendPortRangeStart    any
+	Name                      any
 	NetworkSecurityGroupRules any
-	Protocol any
+	Protocol                  any
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration struct {
@@ -289,7 +289,7 @@ type OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration struct {
 
 type OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration_IpTags struct {
 	IpTagType any
-	Tag any
+	Tag       any
 }
 
 type OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration struct {
@@ -358,7 +358,7 @@ type OpenapiPool_Properties_ScaleSettings struct {
 
 type OpenapiPool_Properties_StartTask_ContainerSettings_ContainerHostBatchBindMounts struct {
 	IsReadOnly any
-	Source any
+	Source     any
 }
 
 type OpenapiPool_Properties_StartTask_ContainerSettings struct {
@@ -376,12 +376,12 @@ type OpenapiPool_Properties_StartTask_ContainerSettings struct {
 
 type OpenapiPool_Properties_StartTask_ResourceFiles struct {
 	AutoStorageContainerName any
-	BlobPrefix any
-	FileMode any
-	FilePath any
-	HttpUrl any
-	IdentityReference any
-	StorageContainerUrl any
+	BlobPrefix               any
+	FileMode                 any
+	FilePath                 any
+	HttpUrl                  any
+	IdentityReference        any
+	StorageContainerUrl      any
 }
 
 type OpenapiPool_Properties_StartTask_UserIdentity_AutoUser struct {
@@ -460,9 +460,9 @@ type OpenapiPool_Properties_UpgradePolicy struct {
 }
 
 type OpenapiPool_Properties_UserAccounts_LinuxUserConfiguration struct {
-	Gid any
+	Gid           any
 	SshPrivateKey any
-	Uid any
+	Uid           any
 }
 
 type OpenapiPool_Properties_UserAccounts_WindowsUserConfiguration struct {
@@ -470,10 +470,10 @@ type OpenapiPool_Properties_UserAccounts_WindowsUserConfiguration struct {
 }
 
 type OpenapiPool_Properties_UserAccounts struct {
-	ElevationLevel any
-	LinuxUserConfiguration any
-	Name any
-	Password any
+	ElevationLevel           any
+	LinuxUserConfiguration   any
+	Name                     any
+	Password                 any
 	WindowsUserConfiguration any
 }
 
@@ -529,658 +529,655 @@ type OpenapiPool_Properties struct {
 }
 
 var OpenapiPool_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiPool_IdentityFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiPool_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiPool_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiPool_Properties_ApplicationPackagesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Id":      ubx.FieldSpec{WireName: "id"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
-var OpenapiPool_Properties_AutoScaleRun_Error_DetailsFields = ubx.FieldMap{
-	}
+var OpenapiPool_Properties_AutoScaleRun_Error_DetailsFields = ubx.FieldMap{}
 
 var OpenapiPool_Properties_AutoScaleRun_ErrorFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_AutoScaleRun_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_AutoScaleRun_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var OpenapiPool_Properties_AutoScaleRunFields = ubx.FieldMap{
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_AutoScaleRun_ErrorFields,
-		},
-		"EvaluationTime": ubx.FieldSpec{WireName: "evaluation_time"},
-		"Results": ubx.FieldSpec{WireName: "results"},
-	}
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_AutoScaleRun_ErrorFields,
+	},
+	"EvaluationTime": ubx.FieldSpec{WireName: "evaluation_time"},
+	"Results":        ubx.FieldSpec{WireName: "results"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistriesFields = ubx.FieldMap{
-		"IdentityReference": ubx.FieldSpec{
-			WireName: "identity_reference",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields,
-		},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"RegistryServer": ubx.FieldSpec{WireName: "registry_server"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"IdentityReference": ubx.FieldSpec{
+		WireName: "identity_reference",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields,
+	},
+	"Password":       ubx.FieldSpec{WireName: "password"},
+	"RegistryServer": ubx.FieldSpec{WireName: "registry_server"},
+	"Username":       ubx.FieldSpec{WireName: "username"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfigurationFields = ubx.FieldMap{
-		"ContainerImageNames": ubx.FieldSpec{WireName: "container_image_names"},
-		"ContainerRegistries": ubx.FieldSpec{
-			WireName: "container_registries",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistriesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ContainerImageNames": ubx.FieldSpec{WireName: "container_image_names"},
+	"ContainerRegistries": ubx.FieldSpec{
+		WireName: "container_registries",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistriesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSetFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfileFields = ubx.FieldMap{
-		"DiskEncryptionSet": ubx.FieldSpec{
-			WireName: "disk_encryption_set",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSetFields,
-		},
-		"SecurityEncryptionType": ubx.FieldSpec{WireName: "security_encryption_type"},
-	}
+	"DiskEncryptionSet": ubx.FieldSpec{
+		WireName: "disk_encryption_set",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSetFields,
+	},
+	"SecurityEncryptionType": ubx.FieldSpec{WireName: "security_encryption_type"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDiskFields = ubx.FieldMap{
-		"DiskEncryptionSet": ubx.FieldSpec{
-			WireName: "disk_encryption_set",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSetFields,
-		},
-		"SecurityProfile": ubx.FieldSpec{
-			WireName: "security_profile",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfileFields,
-		},
-		"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
-	}
+	"DiskEncryptionSet": ubx.FieldSpec{
+		WireName: "disk_encryption_set",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSetFields,
+	},
+	"SecurityProfile": ubx.FieldSpec{
+		WireName: "security_profile",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfileFields,
+	},
+	"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisksFields = ubx.FieldMap{
-		"Caching": ubx.FieldSpec{WireName: "caching"},
-		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-		"Lun": ubx.FieldSpec{WireName: "lun"},
-		"ManagedDisk": ubx.FieldSpec{
-			WireName: "managed_disk",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDiskFields,
-		},
-	}
+	"Caching":    ubx.FieldSpec{WireName: "caching"},
+	"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
+	"Lun":        ubx.FieldSpec{WireName: "lun"},
+	"ManagedDisk": ubx.FieldSpec{
+		WireName: "managed_disk",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDiskFields,
+	},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DiskEncryptionConfiguration_CustomerManagedKeyFields = ubx.FieldMap{
-		"IdentityReference": ubx.FieldSpec{
-			WireName: "identity_reference",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields,
-		},
-		"KeyUrl": ubx.FieldSpec{WireName: "key_url"},
-		"RotationToLatestKeyVersionEnabled": ubx.FieldSpec{WireName: "rotation_to_latest_key_version_enabled"},
-	}
+	"IdentityReference": ubx.FieldSpec{
+		WireName: "identity_reference",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields,
+	},
+	"KeyUrl":                            ubx.FieldSpec{WireName: "key_url"},
+	"RotationToLatestKeyVersionEnabled": ubx.FieldSpec{WireName: "rotation_to_latest_key_version_enabled"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DiskEncryptionConfigurationFields = ubx.FieldMap{
-		"CustomerManagedKey": ubx.FieldSpec{
-			WireName: "customer_managed_key",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DiskEncryptionConfiguration_CustomerManagedKeyFields,
-		},
-		"Targets": ubx.FieldSpec{WireName: "targets"},
-	}
+	"CustomerManagedKey": ubx.FieldSpec{
+		WireName: "customer_managed_key",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DiskEncryptionConfiguration_CustomerManagedKeyFields,
+	},
+	"Targets": ubx.FieldSpec{WireName: "targets"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ExtensionsFields = ubx.FieldMap{
-		"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
-		"EnableAutomaticUpgrade": ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
-		"ProvisionAfterExtensions": ubx.FieldSpec{WireName: "provision_after_extensions"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Settings": ubx.FieldSpec{WireName: "settings"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"AutoUpgradeMinorVersion":  ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
+	"EnableAutomaticUpgrade":   ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
+	"Name":                     ubx.FieldSpec{WireName: "name"},
+	"ProtectedSettings":        ubx.FieldSpec{WireName: "protected_settings"},
+	"ProvisionAfterExtensions": ubx.FieldSpec{WireName: "provision_after_extensions"},
+	"Publisher":                ubx.FieldSpec{WireName: "publisher"},
+	"Settings":                 ubx.FieldSpec{WireName: "settings"},
+	"Type":                     ubx.FieldSpec{WireName: "type"},
+	"TypeHandlerVersion":       ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ImageReferenceFields = ubx.FieldMap{
-		"CommunityGalleryImageId": ubx.FieldSpec{WireName: "community_gallery_image_id"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Offer": ubx.FieldSpec{WireName: "offer"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"SharedGalleryImageId": ubx.FieldSpec{WireName: "shared_gallery_image_id"},
-		"Sku": ubx.FieldSpec{WireName: "sku"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"CommunityGalleryImageId": ubx.FieldSpec{WireName: "community_gallery_image_id"},
+	"Id":                      ubx.FieldSpec{WireName: "id"},
+	"Offer":                   ubx.FieldSpec{WireName: "offer"},
+	"Publisher":               ubx.FieldSpec{WireName: "publisher"},
+	"SharedGalleryImageId":    ubx.FieldSpec{WireName: "shared_gallery_image_id"},
+	"Sku":                     ubx.FieldSpec{WireName: "sku"},
+	"Version":                 ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_NodePlacementConfigurationFields = ubx.FieldMap{
-		"Policy": ubx.FieldSpec{WireName: "policy"},
-	}
+	"Policy": ubx.FieldSpec{WireName: "policy"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_OsDisk_EphemeralOsdiskSettingsFields = ubx.FieldMap{
-		"Placement": ubx.FieldSpec{WireName: "placement"},
-	}
+	"Placement": ubx.FieldSpec{WireName: "placement"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_OsDiskFields = ubx.FieldMap{
-		"Caching": ubx.FieldSpec{WireName: "caching"},
-		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-		"EphemeralOsdiskSettings": ubx.FieldSpec{
-			WireName: "ephemeral_osdisk_settings",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_OsDisk_EphemeralOsdiskSettingsFields,
-		},
-		"ManagedDisk": ubx.FieldSpec{
-			WireName: "managed_disk",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDiskFields,
-		},
-		"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
-	}
+	"Caching":    ubx.FieldSpec{WireName: "caching"},
+	"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
+	"EphemeralOsdiskSettings": ubx.FieldSpec{
+		WireName: "ephemeral_osdisk_settings",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_OsDisk_EphemeralOsdiskSettingsFields,
+	},
+	"ManagedDisk": ubx.FieldSpec{
+		WireName: "managed_disk",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDiskFields,
+	},
+	"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettings_ImdsFields = ubx.FieldMap{
-		"InVmaccessControlProfileReferenceId": ubx.FieldSpec{WireName: "in_vmaccess_control_profile_reference_id"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"InVmaccessControlProfileReferenceId": ubx.FieldSpec{WireName: "in_vmaccess_control_profile_reference_id"},
+	"Mode":                                ubx.FieldSpec{WireName: "mode"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettingsFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Imds": ubx.FieldSpec{
-			WireName: "imds",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettings_ImdsFields,
-		},
-		"WireServer": ubx.FieldSpec{
-			WireName: "wire_server",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettings_ImdsFields,
-		},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Imds": ubx.FieldSpec{
+		WireName: "imds",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettings_ImdsFields,
+	},
+	"WireServer": ubx.FieldSpec{
+		WireName: "wire_server",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettings_ImdsFields,
+	},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_UefiSettingsFields = ubx.FieldMap{
-		"SecureBootEnabled": ubx.FieldSpec{WireName: "secure_boot_enabled"},
-		"VTpmEnabled": ubx.FieldSpec{WireName: "v_tpm_enabled"},
-	}
+	"SecureBootEnabled": ubx.FieldSpec{WireName: "secure_boot_enabled"},
+	"VTpmEnabled":       ubx.FieldSpec{WireName: "v_tpm_enabled"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfileFields = ubx.FieldMap{
-		"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
-		"ProxyAgentSettings": ubx.FieldSpec{
-			WireName: "proxy_agent_settings",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettingsFields,
-		},
-		"SecurityType": ubx.FieldSpec{WireName: "security_type"},
-		"UefiSettings": ubx.FieldSpec{
-			WireName: "uefi_settings",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_UefiSettingsFields,
-		},
-	}
+	"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
+	"ProxyAgentSettings": ubx.FieldSpec{
+		WireName: "proxy_agent_settings",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettingsFields,
+	},
+	"SecurityType": ubx.FieldSpec{WireName: "security_type"},
+	"UefiSettings": ubx.FieldSpec{
+		WireName: "uefi_settings",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_UefiSettingsFields,
+	},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_WindowsConfigurationFields = ubx.FieldMap{
-		"EnableAutomaticUpdates": ubx.FieldSpec{WireName: "enable_automatic_updates"},
-	}
+	"EnableAutomaticUpdates": ubx.FieldSpec{WireName: "enable_automatic_updates"},
+}
 
 var OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfigurationFields = ubx.FieldMap{
-		"ContainerConfiguration": ubx.FieldSpec{
-			WireName: "container_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfigurationFields,
-		},
-		"DataDisks": ubx.FieldSpec{
-			WireName: "data_disks",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisksFields,
-		},
-		"DiskEncryptionConfiguration": ubx.FieldSpec{
-			WireName: "disk_encryption_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DiskEncryptionConfigurationFields,
-		},
-		"Extensions": ubx.FieldSpec{
-			WireName: "extensions",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ExtensionsFields,
-		},
-		"ImageReference": ubx.FieldSpec{
-			WireName: "image_reference",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ImageReferenceFields,
-		},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-		"NodeAgentSkuId": ubx.FieldSpec{WireName: "node_agent_sku_id"},
-		"NodePlacementConfiguration": ubx.FieldSpec{
-			WireName: "node_placement_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_NodePlacementConfigurationFields,
-		},
-		"OsDisk": ubx.FieldSpec{
-			WireName: "os_disk",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_OsDiskFields,
-		},
-		"SecurityProfile": ubx.FieldSpec{
-			WireName: "security_profile",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfileFields,
-		},
-		"ServiceArtifactReference": ubx.FieldSpec{
-			WireName: "service_artifact_reference",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSetFields,
-		},
-		"WindowsConfiguration": ubx.FieldSpec{
-			WireName: "windows_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_WindowsConfigurationFields,
-		},
-	}
+	"ContainerConfiguration": ubx.FieldSpec{
+		WireName: "container_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfigurationFields,
+	},
+	"DataDisks": ubx.FieldSpec{
+		WireName: "data_disks",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisksFields,
+	},
+	"DiskEncryptionConfiguration": ubx.FieldSpec{
+		WireName: "disk_encryption_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DiskEncryptionConfigurationFields,
+	},
+	"Extensions": ubx.FieldSpec{
+		WireName: "extensions",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ExtensionsFields,
+	},
+	"ImageReference": ubx.FieldSpec{
+		WireName: "image_reference",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ImageReferenceFields,
+	},
+	"LicenseType":    ubx.FieldSpec{WireName: "license_type"},
+	"NodeAgentSkuId": ubx.FieldSpec{WireName: "node_agent_sku_id"},
+	"NodePlacementConfiguration": ubx.FieldSpec{
+		WireName: "node_placement_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_NodePlacementConfigurationFields,
+	},
+	"OsDisk": ubx.FieldSpec{
+		WireName: "os_disk",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_OsDiskFields,
+	},
+	"SecurityProfile": ubx.FieldSpec{
+		WireName: "security_profile",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfileFields,
+	},
+	"ServiceArtifactReference": ubx.FieldSpec{
+		WireName: "service_artifact_reference",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSetFields,
+	},
+	"WindowsConfiguration": ubx.FieldSpec{
+		WireName: "windows_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_WindowsConfigurationFields,
+	},
+}
 
 var OpenapiPool_Properties_DeploymentConfigurationFields = ubx.FieldMap{
-		"VirtualMachineConfiguration": ubx.FieldSpec{
-			WireName: "virtual_machine_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfigurationFields,
-		},
-	}
+	"VirtualMachineConfiguration": ubx.FieldSpec{
+		WireName: "virtual_machine_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfigurationFields,
+	},
+}
 
 var OpenapiPool_Properties_MetadataFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfigurationFields = ubx.FieldMap{
-		"AccountKey": ubx.FieldSpec{WireName: "account_key"},
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"BlobfuseOptions": ubx.FieldSpec{WireName: "blobfuse_options"},
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"IdentityReference": ubx.FieldSpec{
-			WireName: "identity_reference",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields,
-		},
-		"RelativeMountPath": ubx.FieldSpec{WireName: "relative_mount_path"},
-		"SasKey": ubx.FieldSpec{WireName: "sas_key"},
-	}
+	"AccountKey":      ubx.FieldSpec{WireName: "account_key"},
+	"AccountName":     ubx.FieldSpec{WireName: "account_name"},
+	"BlobfuseOptions": ubx.FieldSpec{WireName: "blobfuse_options"},
+	"ContainerName":   ubx.FieldSpec{WireName: "container_name"},
+	"IdentityReference": ubx.FieldSpec{
+		WireName: "identity_reference",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields,
+	},
+	"RelativeMountPath": ubx.FieldSpec{WireName: "relative_mount_path"},
+	"SasKey":            ubx.FieldSpec{WireName: "sas_key"},
+}
 
 var OpenapiPool_Properties_MountConfiguration_AzureFileShareConfigurationFields = ubx.FieldMap{
-		"AccountKey": ubx.FieldSpec{WireName: "account_key"},
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"AzureFileUrl": ubx.FieldSpec{WireName: "azure_file_url"},
-		"MountOptions": ubx.FieldSpec{WireName: "mount_options"},
-		"RelativeMountPath": ubx.FieldSpec{WireName: "relative_mount_path"},
-	}
+	"AccountKey":        ubx.FieldSpec{WireName: "account_key"},
+	"AccountName":       ubx.FieldSpec{WireName: "account_name"},
+	"AzureFileUrl":      ubx.FieldSpec{WireName: "azure_file_url"},
+	"MountOptions":      ubx.FieldSpec{WireName: "mount_options"},
+	"RelativeMountPath": ubx.FieldSpec{WireName: "relative_mount_path"},
+}
 
 var OpenapiPool_Properties_MountConfiguration_CifsMountConfigurationFields = ubx.FieldMap{
-		"MountOptions": ubx.FieldSpec{WireName: "mount_options"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"RelativeMountPath": ubx.FieldSpec{WireName: "relative_mount_path"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-	}
+	"MountOptions":      ubx.FieldSpec{WireName: "mount_options"},
+	"Password":          ubx.FieldSpec{WireName: "password"},
+	"RelativeMountPath": ubx.FieldSpec{WireName: "relative_mount_path"},
+	"Source":            ubx.FieldSpec{WireName: "source"},
+	"UserName":          ubx.FieldSpec{WireName: "user_name"},
+}
 
 var OpenapiPool_Properties_MountConfiguration_NfsMountConfigurationFields = ubx.FieldMap{
-		"MountOptions": ubx.FieldSpec{WireName: "mount_options"},
-		"RelativeMountPath": ubx.FieldSpec{WireName: "relative_mount_path"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"MountOptions":      ubx.FieldSpec{WireName: "mount_options"},
+	"RelativeMountPath": ubx.FieldSpec{WireName: "relative_mount_path"},
+	"Source":            ubx.FieldSpec{WireName: "source"},
+}
 
 var OpenapiPool_Properties_MountConfigurationFields = ubx.FieldMap{
-		"AzureBlobFileSystemConfiguration": ubx.FieldSpec{
-			WireName: "azure_blob_file_system_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfigurationFields,
-		},
-		"AzureFileShareConfiguration": ubx.FieldSpec{
-			WireName: "azure_file_share_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_MountConfiguration_AzureFileShareConfigurationFields,
-		},
-		"CifsMountConfiguration": ubx.FieldSpec{
-			WireName: "cifs_mount_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_MountConfiguration_CifsMountConfigurationFields,
-		},
-		"NfsMountConfiguration": ubx.FieldSpec{
-			WireName: "nfs_mount_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_MountConfiguration_NfsMountConfigurationFields,
-		},
-	}
+	"AzureBlobFileSystemConfiguration": ubx.FieldSpec{
+		WireName: "azure_blob_file_system_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_MountConfiguration_AzureBlobFileSystemConfigurationFields,
+	},
+	"AzureFileShareConfiguration": ubx.FieldSpec{
+		WireName: "azure_file_share_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_MountConfiguration_AzureFileShareConfigurationFields,
+	},
+	"CifsMountConfiguration": ubx.FieldSpec{
+		WireName: "cifs_mount_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_MountConfiguration_CifsMountConfigurationFields,
+	},
+	"NfsMountConfiguration": ubx.FieldSpec{
+		WireName: "nfs_mount_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_MountConfiguration_NfsMountConfigurationFields,
+	},
+}
 
 var OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRulesFields = ubx.FieldMap{
-		"Access": ubx.FieldSpec{WireName: "access"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"SourceAddressPrefix": ubx.FieldSpec{WireName: "source_address_prefix"},
-		"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
-	}
+	"Access":              ubx.FieldSpec{WireName: "access"},
+	"Priority":            ubx.FieldSpec{WireName: "priority"},
+	"SourceAddressPrefix": ubx.FieldSpec{WireName: "source_address_prefix"},
+	"SourcePortRanges":    ubx.FieldSpec{WireName: "source_port_ranges"},
+}
 
 var OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPoolsFields = ubx.FieldMap{
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"FrontendPortRangeEnd": ubx.FieldSpec{WireName: "frontend_port_range_end"},
-		"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NetworkSecurityGroupRules": ubx.FieldSpec{
-			WireName: "network_security_group_rules",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRulesFields,
-		},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-	}
+	"BackendPort":            ubx.FieldSpec{WireName: "backend_port"},
+	"FrontendPortRangeEnd":   ubx.FieldSpec{WireName: "frontend_port_range_end"},
+	"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
+	"Name":                   ubx.FieldSpec{WireName: "name"},
+	"NetworkSecurityGroupRules": ubx.FieldSpec{
+		WireName: "network_security_group_rules",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRulesFields,
+	},
+	"Protocol": ubx.FieldSpec{WireName: "protocol"},
+}
 
 var OpenapiPool_Properties_NetworkConfiguration_EndpointConfigurationFields = ubx.FieldMap{
-		"InboundNatPools": ubx.FieldSpec{
-			WireName: "inbound_nat_pools",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPoolsFields,
-		},
-	}
+	"InboundNatPools": ubx.FieldSpec{
+		WireName: "inbound_nat_pools",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPoolsFields,
+	},
+}
 
 var OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration_IpTagsFields = ubx.FieldMap{
-		"IpTagType": ubx.FieldSpec{WireName: "ip_tag_type"},
-		"Tag": ubx.FieldSpec{WireName: "tag"},
-	}
+	"IpTagType": ubx.FieldSpec{WireName: "ip_tag_type"},
+	"Tag":       ubx.FieldSpec{WireName: "tag"},
+}
 
 var OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfigurationFields = ubx.FieldMap{
-		"IpAddressIds": ubx.FieldSpec{WireName: "ip_address_ids"},
-		"IpFamilies": ubx.FieldSpec{WireName: "ip_families"},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration_IpTagsFields,
-		},
-		"Provision": ubx.FieldSpec{WireName: "provision"},
-	}
+	"IpAddressIds": ubx.FieldSpec{WireName: "ip_address_ids"},
+	"IpFamilies":   ubx.FieldSpec{WireName: "ip_families"},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfiguration_IpTagsFields,
+	},
+	"Provision": ubx.FieldSpec{WireName: "provision"},
+}
 
 var OpenapiPool_Properties_NetworkConfigurationFields = ubx.FieldMap{
-		"DynamicVnetAssignmentScope": ubx.FieldSpec{WireName: "dynamic_vnet_assignment_scope"},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EndpointConfiguration": ubx.FieldSpec{
-			WireName: "endpoint_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_NetworkConfiguration_EndpointConfigurationFields,
-		},
-		"PublicIpaddressConfiguration": ubx.FieldSpec{
-			WireName: "public_ipaddress_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfigurationFields,
-		},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-	}
+	"DynamicVnetAssignmentScope":  ubx.FieldSpec{WireName: "dynamic_vnet_assignment_scope"},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EndpointConfiguration": ubx.FieldSpec{
+		WireName: "endpoint_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_NetworkConfiguration_EndpointConfigurationFields,
+	},
+	"PublicIpaddressConfiguration": ubx.FieldSpec{
+		WireName: "public_ipaddress_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_NetworkConfiguration_PublicIpaddressConfigurationFields,
+	},
+	"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
+}
 
 var OpenapiPool_Properties_ResizeOperationStatusFields = ubx.FieldMap{
-		"Errors": ubx.FieldSpec{
-			WireName: "errors",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_AutoScaleRun_ErrorFields,
-		},
-		"NodeDeallocationOption": ubx.FieldSpec{WireName: "node_deallocation_option"},
-		"ResizeTimeout": ubx.FieldSpec{WireName: "resize_timeout"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"TargetDedicatedNodes": ubx.FieldSpec{WireName: "target_dedicated_nodes"},
-		"TargetLowPriorityNodes": ubx.FieldSpec{WireName: "target_low_priority_nodes"},
-	}
+	"Errors": ubx.FieldSpec{
+		WireName: "errors",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_AutoScaleRun_ErrorFields,
+	},
+	"NodeDeallocationOption": ubx.FieldSpec{WireName: "node_deallocation_option"},
+	"ResizeTimeout":          ubx.FieldSpec{WireName: "resize_timeout"},
+	"StartTime":              ubx.FieldSpec{WireName: "start_time"},
+	"TargetDedicatedNodes":   ubx.FieldSpec{WireName: "target_dedicated_nodes"},
+	"TargetLowPriorityNodes": ubx.FieldSpec{WireName: "target_low_priority_nodes"},
+}
 
 var OpenapiPool_Properties_ScaleSettings_AutoScaleFields = ubx.FieldMap{
-		"EvaluationInterval": ubx.FieldSpec{WireName: "evaluation_interval"},
-		"Formula": ubx.FieldSpec{WireName: "formula"},
-	}
+	"EvaluationInterval": ubx.FieldSpec{WireName: "evaluation_interval"},
+	"Formula":            ubx.FieldSpec{WireName: "formula"},
+}
 
 var OpenapiPool_Properties_ScaleSettings_FixedScaleFields = ubx.FieldMap{
-		"NodeDeallocationOption": ubx.FieldSpec{WireName: "node_deallocation_option"},
-		"ResizeTimeout": ubx.FieldSpec{WireName: "resize_timeout"},
-		"TargetDedicatedNodes": ubx.FieldSpec{WireName: "target_dedicated_nodes"},
-		"TargetLowPriorityNodes": ubx.FieldSpec{WireName: "target_low_priority_nodes"},
-	}
+	"NodeDeallocationOption": ubx.FieldSpec{WireName: "node_deallocation_option"},
+	"ResizeTimeout":          ubx.FieldSpec{WireName: "resize_timeout"},
+	"TargetDedicatedNodes":   ubx.FieldSpec{WireName: "target_dedicated_nodes"},
+	"TargetLowPriorityNodes": ubx.FieldSpec{WireName: "target_low_priority_nodes"},
+}
 
 var OpenapiPool_Properties_ScaleSettingsFields = ubx.FieldMap{
-		"AutoScale": ubx.FieldSpec{
-			WireName: "auto_scale",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_ScaleSettings_AutoScaleFields,
-		},
-		"FixedScale": ubx.FieldSpec{
-			WireName: "fixed_scale",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_ScaleSettings_FixedScaleFields,
-		},
-	}
+	"AutoScale": ubx.FieldSpec{
+		WireName: "auto_scale",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_ScaleSettings_AutoScaleFields,
+	},
+	"FixedScale": ubx.FieldSpec{
+		WireName: "fixed_scale",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_ScaleSettings_FixedScaleFields,
+	},
+}
 
 var OpenapiPool_Properties_StartTask_ContainerSettings_ContainerHostBatchBindMountsFields = ubx.FieldMap{
-		"IsReadOnly": ubx.FieldSpec{WireName: "is_read_only"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"IsReadOnly": ubx.FieldSpec{WireName: "is_read_only"},
+	"Source":     ubx.FieldSpec{WireName: "source"},
+}
 
 var OpenapiPool_Properties_StartTask_ContainerSettingsFields = ubx.FieldMap{
-		"ContainerHostBatchBindMounts": ubx.FieldSpec{
-			WireName: "container_host_batch_bind_mounts",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_StartTask_ContainerSettings_ContainerHostBatchBindMountsFields,
-		},
-		"ContainerRunOptions": ubx.FieldSpec{WireName: "container_run_options"},
-		"ImageName": ubx.FieldSpec{WireName: "image_name"},
-		"Registry": ubx.FieldSpec{
-			WireName: "registry",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistriesFields,
-		},
-		"WorkingDirectory": ubx.FieldSpec{WireName: "working_directory"},
-	}
+	"ContainerHostBatchBindMounts": ubx.FieldSpec{
+		WireName: "container_host_batch_bind_mounts",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_StartTask_ContainerSettings_ContainerHostBatchBindMountsFields,
+	},
+	"ContainerRunOptions": ubx.FieldSpec{WireName: "container_run_options"},
+	"ImageName":           ubx.FieldSpec{WireName: "image_name"},
+	"Registry": ubx.FieldSpec{
+		WireName: "registry",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistriesFields,
+	},
+	"WorkingDirectory": ubx.FieldSpec{WireName: "working_directory"},
+}
 
 var OpenapiPool_Properties_StartTask_ResourceFilesFields = ubx.FieldMap{
-		"AutoStorageContainerName": ubx.FieldSpec{WireName: "auto_storage_container_name"},
-		"BlobPrefix": ubx.FieldSpec{WireName: "blob_prefix"},
-		"FileMode": ubx.FieldSpec{WireName: "file_mode"},
-		"FilePath": ubx.FieldSpec{WireName: "file_path"},
-		"HttpUrl": ubx.FieldSpec{WireName: "http_url"},
-		"IdentityReference": ubx.FieldSpec{
-			WireName: "identity_reference",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields,
-		},
-		"StorageContainerUrl": ubx.FieldSpec{WireName: "storage_container_url"},
-	}
+	"AutoStorageContainerName": ubx.FieldSpec{WireName: "auto_storage_container_name"},
+	"BlobPrefix":               ubx.FieldSpec{WireName: "blob_prefix"},
+	"FileMode":                 ubx.FieldSpec{WireName: "file_mode"},
+	"FilePath":                 ubx.FieldSpec{WireName: "file_path"},
+	"HttpUrl":                  ubx.FieldSpec{WireName: "http_url"},
+	"IdentityReference": ubx.FieldSpec{
+		WireName: "identity_reference",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReferenceFields,
+	},
+	"StorageContainerUrl": ubx.FieldSpec{WireName: "storage_container_url"},
+}
 
 var OpenapiPool_Properties_StartTask_UserIdentity_AutoUserFields = ubx.FieldMap{
-		"ElevationLevel": ubx.FieldSpec{WireName: "elevation_level"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"ElevationLevel": ubx.FieldSpec{WireName: "elevation_level"},
+	"Scope":          ubx.FieldSpec{WireName: "scope"},
+}
 
 var OpenapiPool_Properties_StartTask_UserIdentityFields = ubx.FieldMap{
-		"AutoUser": ubx.FieldSpec{
-			WireName: "auto_user",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_StartTask_UserIdentity_AutoUserFields,
-		},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-	}
+	"AutoUser": ubx.FieldSpec{
+		WireName: "auto_user",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_StartTask_UserIdentity_AutoUserFields,
+	},
+	"UserName": ubx.FieldSpec{WireName: "user_name"},
+}
 
 var OpenapiPool_Properties_StartTaskFields = ubx.FieldMap{
-		"CommandLine": ubx.FieldSpec{WireName: "command_line"},
-		"ContainerSettings": ubx.FieldSpec{
-			WireName: "container_settings",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_StartTask_ContainerSettingsFields,
-		},
-		"EnvironmentSettings": ubx.FieldSpec{
-			WireName: "environment_settings",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_MetadataFields,
-		},
-		"MaxTaskRetryCount": ubx.FieldSpec{WireName: "max_task_retry_count"},
-		"ResourceFiles": ubx.FieldSpec{
-			WireName: "resource_files",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_StartTask_ResourceFilesFields,
-		},
-		"UserIdentity": ubx.FieldSpec{
-			WireName: "user_identity",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_StartTask_UserIdentityFields,
-		},
-		"WaitForSuccess": ubx.FieldSpec{WireName: "wait_for_success"},
-	}
+	"CommandLine": ubx.FieldSpec{WireName: "command_line"},
+	"ContainerSettings": ubx.FieldSpec{
+		WireName: "container_settings",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_StartTask_ContainerSettingsFields,
+	},
+	"EnvironmentSettings": ubx.FieldSpec{
+		WireName: "environment_settings",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_MetadataFields,
+	},
+	"MaxTaskRetryCount": ubx.FieldSpec{WireName: "max_task_retry_count"},
+	"ResourceFiles": ubx.FieldSpec{
+		WireName: "resource_files",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_StartTask_ResourceFilesFields,
+	},
+	"UserIdentity": ubx.FieldSpec{
+		WireName: "user_identity",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_StartTask_UserIdentityFields,
+	},
+	"WaitForSuccess": ubx.FieldSpec{WireName: "wait_for_success"},
+}
 
 var OpenapiPool_Properties_TaskSchedulingPolicyFields = ubx.FieldMap{
-		"JobDefaultOrder": ubx.FieldSpec{WireName: "job_default_order"},
-		"NodeFillType": ubx.FieldSpec{WireName: "node_fill_type"},
-	}
+	"JobDefaultOrder": ubx.FieldSpec{WireName: "job_default_order"},
+	"NodeFillType":    ubx.FieldSpec{WireName: "node_fill_type"},
+}
 
 var OpenapiPool_Properties_UpgradePolicy_AutomaticOsupgradePolicyFields = ubx.FieldMap{
-		"DisableAutomaticRollback": ubx.FieldSpec{WireName: "disable_automatic_rollback"},
-		"EnableAutomaticOsupgrade": ubx.FieldSpec{WireName: "enable_automatic_osupgrade"},
-		"OsRollingUpgradeDeferral": ubx.FieldSpec{WireName: "os_rolling_upgrade_deferral"},
-		"UseRollingUpgradePolicy": ubx.FieldSpec{WireName: "use_rolling_upgrade_policy"},
-	}
+	"DisableAutomaticRollback": ubx.FieldSpec{WireName: "disable_automatic_rollback"},
+	"EnableAutomaticOsupgrade": ubx.FieldSpec{WireName: "enable_automatic_osupgrade"},
+	"OsRollingUpgradeDeferral": ubx.FieldSpec{WireName: "os_rolling_upgrade_deferral"},
+	"UseRollingUpgradePolicy":  ubx.FieldSpec{WireName: "use_rolling_upgrade_policy"},
+}
 
 var OpenapiPool_Properties_UpgradePolicy_RollingUpgradePolicyFields = ubx.FieldMap{
-		"EnableCrossZoneUpgrade": ubx.FieldSpec{WireName: "enable_cross_zone_upgrade"},
-		"MaxBatchInstancePercent": ubx.FieldSpec{WireName: "max_batch_instance_percent"},
-		"MaxUnhealthyInstancePercent": ubx.FieldSpec{WireName: "max_unhealthy_instance_percent"},
-		"MaxUnhealthyUpgradedInstancePercent": ubx.FieldSpec{WireName: "max_unhealthy_upgraded_instance_percent"},
-		"PauseTimeBetweenBatches": ubx.FieldSpec{WireName: "pause_time_between_batches"},
-		"PrioritizeUnhealthyInstances": ubx.FieldSpec{WireName: "prioritize_unhealthy_instances"},
-		"RollbackFailedInstancesOnPolicyBreach": ubx.FieldSpec{WireName: "rollback_failed_instances_on_policy_breach"},
-	}
+	"EnableCrossZoneUpgrade":                ubx.FieldSpec{WireName: "enable_cross_zone_upgrade"},
+	"MaxBatchInstancePercent":               ubx.FieldSpec{WireName: "max_batch_instance_percent"},
+	"MaxUnhealthyInstancePercent":           ubx.FieldSpec{WireName: "max_unhealthy_instance_percent"},
+	"MaxUnhealthyUpgradedInstancePercent":   ubx.FieldSpec{WireName: "max_unhealthy_upgraded_instance_percent"},
+	"PauseTimeBetweenBatches":               ubx.FieldSpec{WireName: "pause_time_between_batches"},
+	"PrioritizeUnhealthyInstances":          ubx.FieldSpec{WireName: "prioritize_unhealthy_instances"},
+	"RollbackFailedInstancesOnPolicyBreach": ubx.FieldSpec{WireName: "rollback_failed_instances_on_policy_breach"},
+}
 
 var OpenapiPool_Properties_UpgradePolicyFields = ubx.FieldMap{
-		"AutomaticOsupgradePolicy": ubx.FieldSpec{
-			WireName: "automatic_osupgrade_policy",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_UpgradePolicy_AutomaticOsupgradePolicyFields,
-		},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"RollingUpgradePolicy": ubx.FieldSpec{
-			WireName: "rolling_upgrade_policy",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_UpgradePolicy_RollingUpgradePolicyFields,
-		},
-	}
+	"AutomaticOsupgradePolicy": ubx.FieldSpec{
+		WireName: "automatic_osupgrade_policy",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_UpgradePolicy_AutomaticOsupgradePolicyFields,
+	},
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+	"RollingUpgradePolicy": ubx.FieldSpec{
+		WireName: "rolling_upgrade_policy",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_UpgradePolicy_RollingUpgradePolicyFields,
+	},
+}
 
 var OpenapiPool_Properties_UserAccounts_LinuxUserConfigurationFields = ubx.FieldMap{
-		"Gid": ubx.FieldSpec{WireName: "gid"},
-		"SshPrivateKey": ubx.FieldSpec{WireName: "ssh_private_key"},
-		"Uid": ubx.FieldSpec{WireName: "uid"},
-	}
+	"Gid":           ubx.FieldSpec{WireName: "gid"},
+	"SshPrivateKey": ubx.FieldSpec{WireName: "ssh_private_key"},
+	"Uid":           ubx.FieldSpec{WireName: "uid"},
+}
 
 var OpenapiPool_Properties_UserAccounts_WindowsUserConfigurationFields = ubx.FieldMap{
-		"LoginMode": ubx.FieldSpec{WireName: "login_mode"},
-	}
+	"LoginMode": ubx.FieldSpec{WireName: "login_mode"},
+}
 
 var OpenapiPool_Properties_UserAccountsFields = ubx.FieldMap{
-		"ElevationLevel": ubx.FieldSpec{WireName: "elevation_level"},
-		"LinuxUserConfiguration": ubx.FieldSpec{
-			WireName: "linux_user_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_UserAccounts_LinuxUserConfigurationFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"WindowsUserConfiguration": ubx.FieldSpec{
-			WireName: "windows_user_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_UserAccounts_WindowsUserConfigurationFields,
-		},
-	}
+	"ElevationLevel": ubx.FieldSpec{WireName: "elevation_level"},
+	"LinuxUserConfiguration": ubx.FieldSpec{
+		WireName: "linux_user_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_UserAccounts_LinuxUserConfigurationFields,
+	},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Password": ubx.FieldSpec{WireName: "password"},
+	"WindowsUserConfiguration": ubx.FieldSpec{
+		WireName: "windows_user_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_UserAccounts_WindowsUserConfigurationFields,
+	},
+}
 
 var OpenapiPool_PropertiesFields = ubx.FieldMap{
-		"AllocationState": ubx.FieldSpec{WireName: "allocation_state"},
-		"AllocationStateTransitionTime": ubx.FieldSpec{WireName: "allocation_state_transition_time"},
-		"ApplicationPackages": ubx.FieldSpec{
-			WireName: "application_packages",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_ApplicationPackagesFields,
-		},
-		"AutoScaleRun": ubx.FieldSpec{
-			WireName: "auto_scale_run",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_AutoScaleRunFields,
-		},
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"CurrentDedicatedNodes": ubx.FieldSpec{WireName: "current_dedicated_nodes"},
-		"CurrentLowPriorityNodes": ubx.FieldSpec{WireName: "current_low_priority_nodes"},
-		"DeploymentConfiguration": ubx.FieldSpec{
-			WireName: "deployment_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_DeploymentConfigurationFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"InterNodeCommunication": ubx.FieldSpec{WireName: "inter_node_communication"},
-		"LastModified": ubx.FieldSpec{WireName: "last_modified"},
-		"Metadata": ubx.FieldSpec{
-			WireName: "metadata",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_MetadataFields,
-		},
-		"MountConfiguration": ubx.FieldSpec{
-			WireName: "mount_configuration",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_MountConfigurationFields,
-		},
-		"NetworkConfiguration": ubx.FieldSpec{
-			WireName: "network_configuration",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_NetworkConfigurationFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ProvisioningStateTransitionTime": ubx.FieldSpec{WireName: "provisioning_state_transition_time"},
-		"ResizeOperationStatus": ubx.FieldSpec{
-			WireName: "resize_operation_status",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_ResizeOperationStatusFields,
-		},
-		"ScaleSettings": ubx.FieldSpec{
-			WireName: "scale_settings",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_ScaleSettingsFields,
-		},
-		"StartTask": ubx.FieldSpec{
-			WireName: "start_task",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_StartTaskFields,
-		},
-		"TaskSchedulingPolicy": ubx.FieldSpec{
-			WireName: "task_scheduling_policy",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_TaskSchedulingPolicyFields,
-		},
-		"TaskSlotsPerNode": ubx.FieldSpec{WireName: "task_slots_per_node"},
-		"UpgradePolicy": ubx.FieldSpec{
-			WireName: "upgrade_policy",
-			Kind: "object",
-			Fields: OpenapiPool_Properties_UpgradePolicyFields,
-		},
-		"UserAccounts": ubx.FieldSpec{
-			WireName: "user_accounts",
-			Kind: "list",
-			Fields: OpenapiPool_Properties_UserAccountsFields,
-		},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"AllocationState":               ubx.FieldSpec{WireName: "allocation_state"},
+	"AllocationStateTransitionTime": ubx.FieldSpec{WireName: "allocation_state_transition_time"},
+	"ApplicationPackages": ubx.FieldSpec{
+		WireName: "application_packages",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_ApplicationPackagesFields,
+	},
+	"AutoScaleRun": ubx.FieldSpec{
+		WireName: "auto_scale_run",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_AutoScaleRunFields,
+	},
+	"CreationTime":            ubx.FieldSpec{WireName: "creation_time"},
+	"CurrentDedicatedNodes":   ubx.FieldSpec{WireName: "current_dedicated_nodes"},
+	"CurrentLowPriorityNodes": ubx.FieldSpec{WireName: "current_low_priority_nodes"},
+	"DeploymentConfiguration": ubx.FieldSpec{
+		WireName: "deployment_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_DeploymentConfigurationFields,
+	},
+	"DisplayName":            ubx.FieldSpec{WireName: "display_name"},
+	"InterNodeCommunication": ubx.FieldSpec{WireName: "inter_node_communication"},
+	"LastModified":           ubx.FieldSpec{WireName: "last_modified"},
+	"Metadata": ubx.FieldSpec{
+		WireName: "metadata",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_MetadataFields,
+	},
+	"MountConfiguration": ubx.FieldSpec{
+		WireName: "mount_configuration",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_MountConfigurationFields,
+	},
+	"NetworkConfiguration": ubx.FieldSpec{
+		WireName: "network_configuration",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_NetworkConfigurationFields,
+	},
+	"ProvisioningState":               ubx.FieldSpec{WireName: "provisioning_state"},
+	"ProvisioningStateTransitionTime": ubx.FieldSpec{WireName: "provisioning_state_transition_time"},
+	"ResizeOperationStatus": ubx.FieldSpec{
+		WireName: "resize_operation_status",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_ResizeOperationStatusFields,
+	},
+	"ScaleSettings": ubx.FieldSpec{
+		WireName: "scale_settings",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_ScaleSettingsFields,
+	},
+	"StartTask": ubx.FieldSpec{
+		WireName: "start_task",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_StartTaskFields,
+	},
+	"TaskSchedulingPolicy": ubx.FieldSpec{
+		WireName: "task_scheduling_policy",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_TaskSchedulingPolicyFields,
+	},
+	"TaskSlotsPerNode": ubx.FieldSpec{WireName: "task_slots_per_node"},
+	"UpgradePolicy": ubx.FieldSpec{
+		WireName: "upgrade_policy",
+		Kind:     "object",
+		Fields:   OpenapiPool_Properties_UpgradePolicyFields,
+	},
+	"UserAccounts": ubx.FieldSpec{
+		WireName: "user_accounts",
+		Kind:     "list",
+		Fields:   OpenapiPool_Properties_UserAccountsFields,
+	},
+	"VmSize": ubx.FieldSpec{WireName: "vm_size"},
+}
 
 type OpenapiPoolConfig struct {
-	// The ETag of the resource, used for concurrency statements.
-	Etag any
 	// The identity of the Batch pool, if configured. If the pool identity is updated during update an existing pool, only the new vms which are created after the pool shrinks to 0 will have the updated identities
 	Identity any
 	// Pool properties.
@@ -1203,16 +1200,15 @@ type OpenapiPoolAttrs struct {
 var OpenapiPool = ubx.ResourceBinding{
 	WireType: "azure_batch_openapi_pool",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiPool_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiPool_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPool_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPool_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

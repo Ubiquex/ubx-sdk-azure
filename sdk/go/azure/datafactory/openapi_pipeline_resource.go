@@ -4,23 +4,23 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPipelineResource_Properties_Activities_DependsOn struct {
-	Activity any
+	Activity             any
 	DependencyConditions any
 }
 
 type OpenapiPipelineResource_Properties_Activities_UserProperties struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiPipelineResource_Properties_Activities struct {
-	DependsOn any
-	Description any
-	Name any
+	DependsOn        any
+	Description      any
+	Name             any
 	OnInactiveMarkAs any
-	State any
-	Type any
-	UserProperties any
+	State            any
+	Type             any
+	UserProperties   any
 }
 
 type OpenapiPipelineResource_Properties_Folder struct {
@@ -30,7 +30,7 @@ type OpenapiPipelineResource_Properties_Folder struct {
 
 type OpenapiPipelineResource_Properties_Parameters struct {
 	DefaultValue any
-	Type any
+	Type         any
 }
 
 type OpenapiPipelineResource_Properties_Policy_ElapsedTimeMetric struct {
@@ -65,89 +65,87 @@ type OpenapiPipelineResource_Properties struct {
 }
 
 var OpenapiPipelineResource_Properties_Activities_DependsOnFields = ubx.FieldMap{
-		"Activity": ubx.FieldSpec{WireName: "activity"},
-		"DependencyConditions": ubx.FieldSpec{WireName: "dependency_conditions"},
-	}
+	"Activity":             ubx.FieldSpec{WireName: "activity"},
+	"DependencyConditions": ubx.FieldSpec{WireName: "dependency_conditions"},
+}
 
 var OpenapiPipelineResource_Properties_Activities_UserPropertiesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiPipelineResource_Properties_ActivitiesFields = ubx.FieldMap{
-		"DependsOn": ubx.FieldSpec{
-			WireName: "depends_on",
-			Kind: "list",
-			Fields: OpenapiPipelineResource_Properties_Activities_DependsOnFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"OnInactiveMarkAs": ubx.FieldSpec{WireName: "on_inactive_mark_as"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserProperties": ubx.FieldSpec{
-			WireName: "user_properties",
-			Kind: "list",
-			Fields: OpenapiPipelineResource_Properties_Activities_UserPropertiesFields,
-		},
-	}
+	"DependsOn": ubx.FieldSpec{
+		WireName: "depends_on",
+		Kind:     "list",
+		Fields:   OpenapiPipelineResource_Properties_Activities_DependsOnFields,
+	},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"OnInactiveMarkAs": ubx.FieldSpec{WireName: "on_inactive_mark_as"},
+	"State":            ubx.FieldSpec{WireName: "state"},
+	"Type":             ubx.FieldSpec{WireName: "type"},
+	"UserProperties": ubx.FieldSpec{
+		WireName: "user_properties",
+		Kind:     "list",
+		Fields:   OpenapiPipelineResource_Properties_Activities_UserPropertiesFields,
+	},
+}
 
 var OpenapiPipelineResource_Properties_FolderFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiPipelineResource_Properties_ParametersFields = ubx.FieldMap{
-		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
+	"Type":         ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiPipelineResource_Properties_Policy_ElapsedTimeMetricFields = ubx.FieldMap{
-		"Duration": ubx.FieldSpec{WireName: "duration"},
-	}
+	"Duration": ubx.FieldSpec{WireName: "duration"},
+}
 
 var OpenapiPipelineResource_Properties_PolicyFields = ubx.FieldMap{
-		"ElapsedTimeMetric": ubx.FieldSpec{
-			WireName: "elapsed_time_metric",
-			Kind: "object",
-			Fields: OpenapiPipelineResource_Properties_Policy_ElapsedTimeMetricFields,
-		},
-	}
+	"ElapsedTimeMetric": ubx.FieldSpec{
+		WireName: "elapsed_time_metric",
+		Kind:     "object",
+		Fields:   OpenapiPipelineResource_Properties_Policy_ElapsedTimeMetricFields,
+	},
+}
 
 var OpenapiPipelineResource_PropertiesFields = ubx.FieldMap{
-		"Activities": ubx.FieldSpec{
-			WireName: "activities",
-			Kind: "list",
-			Fields: OpenapiPipelineResource_Properties_ActivitiesFields,
-		},
-		"Annotations": ubx.FieldSpec{WireName: "annotations"},
-		"Concurrency": ubx.FieldSpec{WireName: "concurrency"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Folder": ubx.FieldSpec{
-			WireName: "folder",
-			Kind: "object",
-			Fields: OpenapiPipelineResource_Properties_FolderFields,
-		},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: OpenapiPipelineResource_Properties_ParametersFields,
-		},
-		"Policy": ubx.FieldSpec{
-			WireName: "policy",
-			Kind: "object",
-			Fields: OpenapiPipelineResource_Properties_PolicyFields,
-		},
-		"RunDimensions": ubx.FieldSpec{WireName: "run_dimensions"},
-		"Variables": ubx.FieldSpec{
-			WireName: "variables",
-			Kind: "map",
-			Fields: OpenapiPipelineResource_Properties_ParametersFields,
-		},
-	}
+	"Activities": ubx.FieldSpec{
+		WireName: "activities",
+		Kind:     "list",
+		Fields:   OpenapiPipelineResource_Properties_ActivitiesFields,
+	},
+	"Annotations": ubx.FieldSpec{WireName: "annotations"},
+	"Concurrency": ubx.FieldSpec{WireName: "concurrency"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Folder": ubx.FieldSpec{
+		WireName: "folder",
+		Kind:     "object",
+		Fields:   OpenapiPipelineResource_Properties_FolderFields,
+	},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiPipelineResource_Properties_ParametersFields,
+	},
+	"Policy": ubx.FieldSpec{
+		WireName: "policy",
+		Kind:     "object",
+		Fields:   OpenapiPipelineResource_Properties_PolicyFields,
+	},
+	"RunDimensions": ubx.FieldSpec{WireName: "run_dimensions"},
+	"Variables": ubx.FieldSpec{
+		WireName: "variables",
+		Kind:     "map",
+		Fields:   OpenapiPipelineResource_Properties_ParametersFields,
+	},
+}
 
 type OpenapiPipelineResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// A data factory pipeline.
 	Properties any
 }
@@ -162,11 +160,10 @@ type OpenapiPipelineResourceAttrs struct {
 var OpenapiPipelineResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_pipeline_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPipelineResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPipelineResource_PropertiesFields,
 		},
 	},
 }

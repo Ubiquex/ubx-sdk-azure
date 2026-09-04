@@ -245,8 +245,6 @@ _VirtualwanVpnSite_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanVpnSiteConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Parameters for VpnSite.
     properties: Any = None
 
@@ -260,7 +258,6 @@ class VirtualwanVpnSiteAttrs:
 VirtualwanVpnSite = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_vpn_site",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

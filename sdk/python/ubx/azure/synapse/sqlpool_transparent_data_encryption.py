@@ -17,8 +17,6 @@ _SqlpoolTransparentDataEncryption_PropertiesFields = {
 
 @dataclasses.dataclass
 class SqlpoolTransparentDataEncryptionConfig:
-    # Resource location.
-    location: Any = None
     # Represents the properties of a database transparent data encryption.
     properties: Any = None
 
@@ -32,7 +30,6 @@ class SqlpoolTransparentDataEncryptionAttrs:
 SqlpoolTransparentDataEncryption = ubx.ResourceBinding(
     wire_type="azure_synapse_sqlpool_transparent_data_encryption",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

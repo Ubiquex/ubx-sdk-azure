@@ -4,7 +4,7 @@ package liftrqumulo
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type QumuloStorageLiftrBaseStorageFileSystemResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -63,54 +63,54 @@ type QumuloStorageLiftrBaseStorageFileSystemResource_Properties struct {
 }
 
 var QumuloStorageLiftrBaseStorageFileSystemResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var QumuloStorageLiftrBaseStorageFileSystemResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: QumuloStorageLiftrBaseStorageFileSystemResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   QumuloStorageLiftrBaseStorageFileSystemResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var QumuloStorageLiftrBaseStorageFileSystemResource_Properties_MarketplaceDetailsFields = ubx.FieldMap{
-		"MarketplaceSubscriptionId": ubx.FieldSpec{WireName: "marketplace_subscription_id"},
-		"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
-		"OfferId": ubx.FieldSpec{WireName: "offer_id"},
-		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
-		"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
-		"TermUnit": ubx.FieldSpec{WireName: "term_unit"},
-	}
+	"MarketplaceSubscriptionId":     ubx.FieldSpec{WireName: "marketplace_subscription_id"},
+	"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
+	"OfferId":                       ubx.FieldSpec{WireName: "offer_id"},
+	"PlanId":                        ubx.FieldSpec{WireName: "plan_id"},
+	"PublisherId":                   ubx.FieldSpec{WireName: "publisher_id"},
+	"TermUnit":                      ubx.FieldSpec{WireName: "term_unit"},
+}
 
 var QumuloStorageLiftrBaseStorageFileSystemResource_Properties_UserDetailsFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-	}
+	"Email": ubx.FieldSpec{WireName: "email"},
+}
 
 var QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields = ubx.FieldMap{
-		"AdminPassword": ubx.FieldSpec{WireName: "admin_password"},
-		"AvailabilityZone": ubx.FieldSpec{WireName: "availability_zone"},
-		"ClusterLoginUrl": ubx.FieldSpec{WireName: "cluster_login_url"},
-		"DelegatedSubnetId": ubx.FieldSpec{WireName: "delegated_subnet_id"},
-		"MarketplaceDetails": ubx.FieldSpec{
-			WireName: "marketplace_details",
-			Kind: "object",
-			Fields: QumuloStorageLiftrBaseStorageFileSystemResource_Properties_MarketplaceDetailsFields,
-		},
-		"PerformanceTier": ubx.FieldSpec{WireName: "performance_tier"},
-		"PrivateIps": ubx.FieldSpec{WireName: "private_ips"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StorageSku": ubx.FieldSpec{WireName: "storage_sku"},
-		"UserDetails": ubx.FieldSpec{
-			WireName: "user_details",
-			Kind: "object",
-			Fields: QumuloStorageLiftrBaseStorageFileSystemResource_Properties_UserDetailsFields,
-		},
-	}
+	"AdminPassword":     ubx.FieldSpec{WireName: "admin_password"},
+	"AvailabilityZone":  ubx.FieldSpec{WireName: "availability_zone"},
+	"ClusterLoginUrl":   ubx.FieldSpec{WireName: "cluster_login_url"},
+	"DelegatedSubnetId": ubx.FieldSpec{WireName: "delegated_subnet_id"},
+	"MarketplaceDetails": ubx.FieldSpec{
+		WireName: "marketplace_details",
+		Kind:     "object",
+		Fields:   QumuloStorageLiftrBaseStorageFileSystemResource_Properties_MarketplaceDetailsFields,
+	},
+	"PerformanceTier":   ubx.FieldSpec{WireName: "performance_tier"},
+	"PrivateIps":        ubx.FieldSpec{WireName: "private_ips"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"StorageSku":        ubx.FieldSpec{WireName: "storage_sku"},
+	"UserDetails": ubx.FieldSpec{
+		WireName: "user_details",
+		Kind:     "object",
+		Fields:   QumuloStorageLiftrBaseStorageFileSystemResource_Properties_UserDetailsFields,
+	},
+}
 
 type QumuloStorageLiftrBaseStorageFileSystemResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -131,13 +131,13 @@ var QumuloStorageLiftrBaseStorageFileSystemResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: QumuloStorageLiftrBaseStorageFileSystemResource_IdentityFields,
+			Kind:     "object",
+			Fields:   QumuloStorageLiftrBaseStorageFileSystemResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   QumuloStorageLiftrBaseStorageFileSystemResource_PropertiesFields,
 		},
 	},
 }

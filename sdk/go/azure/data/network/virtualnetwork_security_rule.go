@@ -5,35 +5,35 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkSecurityRule_Value_Properties_DestinationApplicationSecurityGroups_Properties struct {
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type VirtualnetworkSecurityRule_Value_Properties_DestinationApplicationSecurityGroups struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualnetworkSecurityRule_Value_Properties struct {
-	Access any
-	Description any
-	DestinationAddressPrefix any
-	DestinationAddressPrefixes any
+	Access                               any
+	Description                          any
+	DestinationAddressPrefix             any
+	DestinationAddressPrefixes           any
 	DestinationApplicationSecurityGroups any
-	DestinationPortRange any
-	DestinationPortRanges any
-	Direction any
-	Priority any
-	Protocol any
-	ProvisioningState any
-	SourceAddressPrefix any
-	SourceAddressPrefixes any
-	SourceApplicationSecurityGroups any
-	SourcePortRange any
-	SourcePortRanges any
+	DestinationPortRange                 any
+	DestinationPortRanges                any
+	Direction                            any
+	Priority                             any
+	Protocol                             any
+	ProvisioningState                    any
+	SourceAddressPrefix                  any
+	SourceAddressPrefixes                any
+	SourceApplicationSecurityGroups      any
+	SourcePortRange                      any
+	SourcePortRanges                     any
 }
 
 type VirtualnetworkSecurityRule_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

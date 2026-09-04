@@ -3,28 +3,100 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus_ErrorDetails struct {
+	Code    any
+	Message any
+}
+
+type OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus struct {
+	ErrorDetails   any
+	ProductId      any
+	ProductName    any
+	ProductType    any
+	SkuDescription any
+	TransferStatus any
+}
+
 type OpenapiRecipientTransferDetails_Properties_ProductDetails struct {
-	ProductId any
+	ProductId   any
 	ProductType any
 }
 
 type OpenapiRecipientTransferDetails_Properties struct {
+	// Type of subscriptions that can be transferred.
+	AllowedProductType any
+	// The email ID of the user who canceled the transfer request.
+	CanceledBy any
+	// The customer tenant id.
+	CustomerTenantId any
+	// Detailed transfer status.
+	DetailedTransferStatus any
+	// The time at which the transfer request expires.
+	ExpirationTime any
+	// The type of customer of the transfer initiator.
+	InitiatorCustomerType any
+	// The email ID of the user who sent the transfer request.
+	InitiatorEmailId any
 	// Request parameters to accept transfer.
 	ProductDetails any
+	// The email ID of the user to whom the transfer request was sent.
+	RecipientEmailId any
+	// Optional MPN ID of the reseller for transfer requests that are sent from a Microsoft Partner Agreement billing account.
+	ResellerId any
+	// Optional name of the reseller for transfer requests that are sent from Microsoft Partner Agreement billing account.
+	ResellerName any
+	// List of supported account types.
+	SupportedAccounts any
+	// The status of a transfer.
+	TransferStatus any
+}
+
+var OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus_ErrorDetailsFields = ubx.FieldMap{
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
+
+var OpenapiRecipientTransferDetails_Properties_DetailedTransferStatusFields = ubx.FieldMap{
+	"ErrorDetails": ubx.FieldSpec{
+		WireName: "error_details",
+		Kind:     "object",
+		Fields:   OpenapiRecipientTransferDetails_Properties_DetailedTransferStatus_ErrorDetailsFields,
+	},
+	"ProductId":      ubx.FieldSpec{WireName: "product_id"},
+	"ProductName":    ubx.FieldSpec{WireName: "product_name"},
+	"ProductType":    ubx.FieldSpec{WireName: "product_type"},
+	"SkuDescription": ubx.FieldSpec{WireName: "sku_description"},
+	"TransferStatus": ubx.FieldSpec{WireName: "transfer_status"},
 }
 
 var OpenapiRecipientTransferDetails_Properties_ProductDetailsFields = ubx.FieldMap{
-		"ProductId": ubx.FieldSpec{WireName: "product_id"},
-		"ProductType": ubx.FieldSpec{WireName: "product_type"},
-	}
+	"ProductId":   ubx.FieldSpec{WireName: "product_id"},
+	"ProductType": ubx.FieldSpec{WireName: "product_type"},
+}
 
 var OpenapiRecipientTransferDetails_PropertiesFields = ubx.FieldMap{
-		"ProductDetails": ubx.FieldSpec{
-			WireName: "product_details",
-			Kind: "list",
-			Fields: OpenapiRecipientTransferDetails_Properties_ProductDetailsFields,
-		},
-	}
+	"AllowedProductType": ubx.FieldSpec{WireName: "allowed_product_type"},
+	"CanceledBy":         ubx.FieldSpec{WireName: "canceled_by"},
+	"CustomerTenantId":   ubx.FieldSpec{WireName: "customer_tenant_id"},
+	"DetailedTransferStatus": ubx.FieldSpec{
+		WireName: "detailed_transfer_status",
+		Kind:     "list",
+		Fields:   OpenapiRecipientTransferDetails_Properties_DetailedTransferStatusFields,
+	},
+	"ExpirationTime":        ubx.FieldSpec{WireName: "expiration_time"},
+	"InitiatorCustomerType": ubx.FieldSpec{WireName: "initiator_customer_type"},
+	"InitiatorEmailId":      ubx.FieldSpec{WireName: "initiator_email_id"},
+	"ProductDetails": ubx.FieldSpec{
+		WireName: "product_details",
+		Kind:     "list",
+		Fields:   OpenapiRecipientTransferDetails_Properties_ProductDetailsFields,
+	},
+	"RecipientEmailId":  ubx.FieldSpec{WireName: "recipient_email_id"},
+	"ResellerId":        ubx.FieldSpec{WireName: "reseller_id"},
+	"ResellerName":      ubx.FieldSpec{WireName: "reseller_name"},
+	"SupportedAccounts": ubx.FieldSpec{WireName: "supported_accounts"},
+	"TransferStatus":    ubx.FieldSpec{WireName: "transfer_status"},
+}
 
 type OpenapiRecipientTransferDetailsConfig struct {
 	// Request parameters to accept transfer.
@@ -43,8 +115,8 @@ var OpenapiRecipientTransferDetails = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRecipientTransferDetails_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRecipientTransferDetails_PropertiesFields,
 		},
 	},
 }

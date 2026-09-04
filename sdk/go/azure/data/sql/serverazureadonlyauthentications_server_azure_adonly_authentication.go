@@ -17,7 +17,7 @@ type ServerazureadonlyauthenticationsServerAzureAdonlyAuthenticationConfig struc
 
 type ServerazureadonlyauthenticationsServerAzureAdonlyAuthenticationAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink   any
 	ServerName any
 	// Array of results.
 	Value any

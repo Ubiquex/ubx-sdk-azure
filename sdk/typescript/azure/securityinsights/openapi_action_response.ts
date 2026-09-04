@@ -4,10 +4,13 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface OpenapiActionResponse_Properties {
   /** Logic App Callback URL for this specific workflow. */
   triggerUri: string | Computed<string>;
+  /** The name of the logic app's workflow. */
+  workflowId?: string | Computed<string>;
 }
 
 const OpenapiActionResponse_PropertiesFields: FieldMap = {
   triggerUri: "trigger_uri",
+  workflowId: "workflow_id",
 };
 
 export interface OpenapiActionResponseConfig {

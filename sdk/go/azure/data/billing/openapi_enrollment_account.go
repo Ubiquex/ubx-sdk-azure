@@ -4,45 +4,45 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEnrollmentAccount_Value_Properties struct {
-	AccountOwner any
-	AuthType any
-	CostCenter any
+	AccountOwner          any
+	AuthType              any
+	CostCenter            any
 	DepartmentDisplayName any
-	DepartmentId any
-	DisplayName any
-	EndDate any
-	IsDevTestEnabled any
-	StartDate any
-	Status any
+	DepartmentId          any
+	DisplayName           any
+	EndDate               any
+	IsDevTestEnabled      any
+	StartDate             any
+	Status                any
 }
 
 type OpenapiEnrollmentAccount_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiEnrollmentAccountConfig struct {
 	BillingAccountName any
-	Count any
-	DepartmentName any
-	Filter any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Count              any
+	DepartmentName     any
+	Filter             any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiEnrollmentAccountAttrs struct {
 	BillingAccountName any
-	Count any
-	DepartmentName any
-	Filter any
+	Count              any
+	DepartmentName     any
+	Filter             any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The EnrollmentAccount items on this page
 	Value any
 }
@@ -51,12 +51,12 @@ var OpenapiEnrollmentAccount = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_enrollment_account",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"DepartmentName": ubx.FieldSpec{WireName: "department_name"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"DepartmentName":     ubx.FieldSpec{WireName: "department_name"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

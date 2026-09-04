@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTestJobConfig struct {
 	AutomationAccountName any
-	RunbookName any
+	RunbookName           any
 }
 
 type OpenapiTestJobAttrs struct {
@@ -25,7 +25,7 @@ type OpenapiTestJobAttrs struct {
 	// Gets or sets the parameters of the test job.
 	Parameters any
 	// Gets or sets the runOn which specifies the group name where the job is to be executed.
-	RunOn any
+	RunOn       any
 	RunbookName any
 	// Gets or sets the start time of the test job.
 	StartTime any
@@ -39,6 +39,6 @@ var OpenapiTestJob = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_test_job",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"RunbookName": ubx.FieldSpec{WireName: "runbook_name"},
+		"RunbookName":           ubx.FieldSpec{WireName: "runbook_name"},
 	},
 }

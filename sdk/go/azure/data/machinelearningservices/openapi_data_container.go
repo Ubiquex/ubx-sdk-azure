@@ -19,7 +19,7 @@ type OpenapiDataContainerConfig struct {
 type OpenapiDataContainerAttrs struct {
 	ListViewType any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	RegistryName any
 	// The DataContainer items on this page
 	Value any

@@ -4,12 +4,12 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RaiPolicy_Properties_ContentFilters struct {
-	Action any
-	Blocking any
-	Enabled any
-	Name any
+	Action            any
+	Blocking          any
+	Enabled           any
+	Name              any
 	SeverityThreshold any
-	Source any
+	Source            any
 }
 
 type RaiPolicy_Properties_CustomBlocklists struct {
@@ -32,42 +32,40 @@ type RaiPolicy_Properties struct {
 }
 
 var RaiPolicy_Properties_ContentFiltersFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Blocking": ubx.FieldSpec{WireName: "blocking"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SeverityThreshold": ubx.FieldSpec{WireName: "severity_threshold"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"Action":            ubx.FieldSpec{WireName: "action"},
+	"Blocking":          ubx.FieldSpec{WireName: "blocking"},
+	"Enabled":           ubx.FieldSpec{WireName: "enabled"},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"SeverityThreshold": ubx.FieldSpec{WireName: "severity_threshold"},
+	"Source":            ubx.FieldSpec{WireName: "source"},
+}
 
 var RaiPolicy_Properties_CustomBlocklistsFields = ubx.FieldMap{
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"Source": ubx.FieldSpec{WireName: "source"},
+}
 
 var RaiPolicy_PropertiesFields = ubx.FieldMap{
-		"BasePolicyName": ubx.FieldSpec{WireName: "base_policy_name"},
-		"ContentFilters": ubx.FieldSpec{
-			WireName: "content_filters",
-			Kind: "list",
-			Fields: RaiPolicy_Properties_ContentFiltersFields,
-		},
-		"CustomBlocklists": ubx.FieldSpec{
-			WireName: "custom_blocklists",
-			Kind: "list",
-			Fields: RaiPolicy_Properties_CustomBlocklistsFields,
-		},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"SafetyProviders": ubx.FieldSpec{
-			WireName: "safety_providers",
-			Kind: "list",
-			Fields: RaiPolicy_Properties_CustomBlocklistsFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"BasePolicyName": ubx.FieldSpec{WireName: "base_policy_name"},
+	"ContentFilters": ubx.FieldSpec{
+		WireName: "content_filters",
+		Kind:     "list",
+		Fields:   RaiPolicy_Properties_ContentFiltersFields,
+	},
+	"CustomBlocklists": ubx.FieldSpec{
+		WireName: "custom_blocklists",
+		Kind:     "list",
+		Fields:   RaiPolicy_Properties_CustomBlocklistsFields,
+	},
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+	"SafetyProviders": ubx.FieldSpec{
+		WireName: "safety_providers",
+		Kind:     "list",
+		Fields:   RaiPolicy_Properties_CustomBlocklistsFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 type RaiPolicyConfig struct {
-	// Resource Etag.
-	Etag any
 	// Azure OpenAI Content Filters properties.
 	Properties any
 	// Resource tags.
@@ -86,11 +84,10 @@ type RaiPolicyAttrs struct {
 var RaiPolicy = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_rai_policy",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RaiPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   RaiPolicy_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

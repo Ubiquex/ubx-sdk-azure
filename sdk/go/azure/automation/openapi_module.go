@@ -19,33 +19,79 @@ type OpenapiModule_Properties_ContentLink struct {
 	Version any
 }
 
+type OpenapiModule_Properties_Error struct {
+	// Gets or sets the error code.
+	Code any
+	// Gets or sets the error message.
+	Message any
+}
+
 type OpenapiModule_Properties struct {
+	// Gets or sets the activity count of the module.
+	ActivityCount any
 	// Definition of the content link.
 	ContentLink any
+	// Gets or sets the creation time.
+	CreationTime any
+	// Gets or sets the description.
+	Description any
+	// Definition of the module error info type.
+	Error any
+	// Gets or sets type of module, if its composite or not.
+	IsComposite any
+	// Gets or sets the isGlobal flag of the module.
+	IsGlobal any
+	// Gets or sets the last modified time.
+	LastModifiedTime any
+	// Gets or sets the provisioning state of the module.
+	ProvisioningState any
+	// Gets or sets the size in bytes of the module.
+	SizeInBytes any
+	// Gets or sets the version of the module.
+	Version any
 }
 
 var OpenapiModule_Properties_ContentLink_ContentHashFields = ubx.FieldMap{
-		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiModule_Properties_ContentLinkFields = ubx.FieldMap{
-		"ContentHash": ubx.FieldSpec{
-			WireName: "content_hash",
-			Kind: "object",
-			Fields: OpenapiModule_Properties_ContentLink_ContentHashFields,
-		},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ContentHash": ubx.FieldSpec{
+		WireName: "content_hash",
+		Kind:     "object",
+		Fields:   OpenapiModule_Properties_ContentLink_ContentHashFields,
+	},
+	"Uri":     ubx.FieldSpec{WireName: "uri"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
+
+var OpenapiModule_Properties_ErrorFields = ubx.FieldMap{
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var OpenapiModule_PropertiesFields = ubx.FieldMap{
-		"ContentLink": ubx.FieldSpec{
-			WireName: "content_link",
-			Kind: "object",
-			Fields: OpenapiModule_Properties_ContentLinkFields,
-		},
-	}
+	"ActivityCount": ubx.FieldSpec{WireName: "activity_count"},
+	"ContentLink": ubx.FieldSpec{
+		WireName: "content_link",
+		Kind:     "object",
+		Fields:   OpenapiModule_Properties_ContentLinkFields,
+	},
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"Description":  ubx.FieldSpec{WireName: "description"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiModule_Properties_ErrorFields,
+	},
+	"IsComposite":       ubx.FieldSpec{WireName: "is_composite"},
+	"IsGlobal":          ubx.FieldSpec{WireName: "is_global"},
+	"LastModifiedTime":  ubx.FieldSpec{WireName: "last_modified_time"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SizeInBytes":       ubx.FieldSpec{WireName: "size_in_bytes"},
+	"Version":           ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiModuleConfig struct {
 	// Gets or sets the location of the resource.
@@ -75,11 +121,11 @@ var OpenapiModule = ubx.ResourceBinding{
 	WireType: "azure_automation_openapi_module",
 	Fields: ubx.FieldMap{
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiModule_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiModule_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

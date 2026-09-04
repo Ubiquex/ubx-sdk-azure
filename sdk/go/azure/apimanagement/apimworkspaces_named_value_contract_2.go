@@ -3,9 +3,20 @@ package apimanagement
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type ApimworkspacesNamedValueContract2_Properties_KeyVault_LastStatus struct {
+	// Last status code for sync and refresh of secret from key vault.
+	Code any
+	// Details of the error else empty.
+	Message any
+	// Last time secret was accessed. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	TimeStampUtc any
+}
+
 type ApimworkspacesNamedValueContract2_Properties_KeyVault struct {
 	// Null for SystemAssignedIdentity or Client Id for UserAssignedIdentity , which will be used to access key vault secret.
 	IdentityClientId any
+	// Issue contract Update Properties.
+	LastStatus any
 	// Key vault secret identifier for fetching secret. Providing a versioned secret will prevent auto-refresh. This requires API Management service to be configured with aka.ms/apimmsi
 	SecretIdentifier any
 }
@@ -15,24 +26,38 @@ type ApimworkspacesNamedValueContract2_Properties struct {
 	DisplayName any
 	// Create keyVault contract details.
 	KeyVault any
+	// The provisioning state
+	ProvisioningState any
 	// Value of the NamedValue. Can contain policy expressions. It may not be empty or consist only of whitespace. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value.
 	Value any
 }
 
+var ApimworkspacesNamedValueContract2_Properties_KeyVault_LastStatusFields = ubx.FieldMap{
+	"Code":         ubx.FieldSpec{WireName: "code"},
+	"Message":      ubx.FieldSpec{WireName: "message"},
+	"TimeStampUtc": ubx.FieldSpec{WireName: "time_stamp_utc"},
+}
+
 var ApimworkspacesNamedValueContract2_Properties_KeyVaultFields = ubx.FieldMap{
-		"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
-		"SecretIdentifier": ubx.FieldSpec{WireName: "secret_identifier"},
-	}
+	"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
+	"LastStatus": ubx.FieldSpec{
+		WireName: "last_status",
+		Kind:     "object",
+		Fields:   ApimworkspacesNamedValueContract2_Properties_KeyVault_LastStatusFields,
+	},
+	"SecretIdentifier": ubx.FieldSpec{WireName: "secret_identifier"},
+}
 
 var ApimworkspacesNamedValueContract2_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"KeyVault": ubx.FieldSpec{
-			WireName: "key_vault",
-			Kind: "object",
-			Fields: ApimworkspacesNamedValueContract2_Properties_KeyVaultFields,
-		},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"KeyVault": ubx.FieldSpec{
+		WireName: "key_vault",
+		Kind:     "object",
+		Fields:   ApimworkspacesNamedValueContract2_Properties_KeyVaultFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Value":             ubx.FieldSpec{WireName: "value"},
+}
 
 type ApimworkspacesNamedValueContract2Config struct {
 	// NamedValue Contract properties.
@@ -49,8 +74,8 @@ var ApimworkspacesNamedValueContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesNamedValueContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesNamedValueContract2_PropertiesFields,
 		},
 	},
 }

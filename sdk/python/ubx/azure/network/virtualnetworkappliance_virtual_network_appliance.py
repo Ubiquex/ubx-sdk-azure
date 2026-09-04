@@ -3088,8 +3088,6 @@ _VirtualnetworkapplianceVirtualNetworkAppliance_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkapplianceVirtualNetworkApplianceConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # VirtualNetworkAppliance properties.
     properties: Any = None
 
@@ -3103,7 +3101,6 @@ class VirtualnetworkapplianceVirtualNetworkApplianceAttrs:
 VirtualnetworkapplianceVirtualNetworkAppliance = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetworkappliance_virtual_network_appliance",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

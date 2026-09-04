@@ -20,16 +20,16 @@ type HostGroup_Value_Properties_InstanceView struct {
 }
 
 type HostGroup_Value_Properties struct {
-	AdditionalCapabilities any
-	Hosts any
-	InstanceView any
-	PlatformFaultDomainCount any
+	AdditionalCapabilities    any
+	Hosts                     any
+	InstanceView              any
+	PlatformFaultDomainCount  any
 	SupportAutomaticPlacement any
 }
 
 type HostGroup_Value struct {
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type HostGroupConfig struct {
@@ -44,6 +44,5 @@ type HostGroupAttrs struct {
 
 var HostGroup = ubx.DataSourceBinding{
 	WireType: "azure_dedicated_host_group",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

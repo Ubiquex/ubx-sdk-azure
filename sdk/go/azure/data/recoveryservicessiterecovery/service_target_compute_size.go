@@ -4,44 +4,44 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceTargetComputeSize_Value_Properties_Errors struct {
-	Message any
+	Message  any
 	Severity any
 }
 
 type ServiceTargetComputeSize_Value_Properties struct {
-	CpuCoresCount any
-	Errors any
-	FriendlyName any
+	CpuCoresCount     any
+	Errors            any
+	FriendlyName      any
 	HighIopsSupported any
 	HyperVgenerations any
-	MaxDataDiskCount any
-	MaxNicsCount any
-	MemoryInGb any
-	Name any
-	VCpusAvailable any
+	MaxDataDiskCount  any
+	MaxNicsCount      any
+	MemoryInGb        any
+	Name              any
+	VCpusAvailable    any
 }
 
 type ServiceTargetComputeSize_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ServiceTargetComputeSizeConfig struct {
-	FabricName any
-	ProtectionContainerName any
+	FabricName                  any
+	ProtectionContainerName     any
 	ReplicatedProtectedItemName any
-	ResourceName any
+	ResourceName                any
 }
 
 type ServiceTargetComputeSizeAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
-	ProtectionContainerName any
+	NextLink                    any
+	ProtectionContainerName     any
 	ReplicatedProtectedItemName any
-	ResourceName any
+	ResourceName                any
 	// The TargetComputeSize items on this page
 	Value any
 }
@@ -49,9 +49,9 @@ type ServiceTargetComputeSizeAttrs struct {
 var ServiceTargetComputeSize = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_target_compute_size",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
+		"FabricName":                  ubx.FieldSpec{WireName: "fabric_name"},
+		"ProtectionContainerName":     ubx.FieldSpec{WireName: "protection_container_name"},
 		"ReplicatedProtectedItemName": ubx.FieldSpec{WireName: "replicated_protected_item_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":                ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

@@ -4,19 +4,19 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CaCertificate_Value_Properties struct {
-	Description any
+	Description        any
 	EncodedCertificate any
-	ExpiryTimeInUtc any
-	IssueTimeInUtc any
-	ProvisioningState any
+	ExpiryTimeInUtc    any
+	IssueTimeInUtc     any
+	ProvisioningState  any
 }
 
 type CaCertificate_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -26,19 +26,19 @@ type CaCertificate_Value struct {
 }
 
 type CaCertificateConfig struct {
-	ApiVersion any
-	NamespaceName any
+	ApiVersion        any
+	NamespaceName     any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type CaCertificateAttrs struct {
-	ApiVersion any
+	ApiVersion    any
 	NamespaceName any
 	// A link for the next page of CA Certificate.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// A collection of CA Certificate.
 	Value any
 }
@@ -46,9 +46,9 @@ type CaCertificateAttrs struct {
 var CaCertificate = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_ca_certificate",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"NamespaceName":     ubx.FieldSpec{WireName: "namespace_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

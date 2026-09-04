@@ -3,9 +3,20 @@ package apimanagement
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type ApimworkspacecertificatesCertificateContract2_Properties_KeyVault_LastStatus struct {
+	// Last status code for sync and refresh of secret from key vault.
+	Code any
+	// Details of the error else empty.
+	Message any
+	// Last time secret was accessed. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	TimeStampUtc any
+}
+
 type ApimworkspacecertificatesCertificateContract2_Properties_KeyVault struct {
 	// Null for SystemAssignedIdentity or Client Id for UserAssignedIdentity , which will be used to access key vault secret.
 	IdentityClientId any
+	// Issue contract Update Properties.
+	LastStatus any
 	// Key vault secret identifier for fetching secret. Providing a versioned secret will prevent auto-refresh. This requires API Management service to be configured with aka.ms/apimmsi
 	SecretIdentifier any
 }
@@ -13,26 +24,46 @@ type ApimworkspacecertificatesCertificateContract2_Properties_KeyVault struct {
 type ApimworkspacecertificatesCertificateContract2_Properties struct {
 	// Base 64 encoded certificate using the application/x-pkcs12 representation.
 	Data any
+	// Expiration date of the certificate. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+	ExpirationDate any
 	// Create keyVault contract details.
 	KeyVault any
 	// Password for the Certificate
 	Password any
+	// Subject attribute of the certificate.
+	Subject any
+	// Thumbprint of the certificate.
+	Thumbprint any
+}
+
+var ApimworkspacecertificatesCertificateContract2_Properties_KeyVault_LastStatusFields = ubx.FieldMap{
+	"Code":         ubx.FieldSpec{WireName: "code"},
+	"Message":      ubx.FieldSpec{WireName: "message"},
+	"TimeStampUtc": ubx.FieldSpec{WireName: "time_stamp_utc"},
 }
 
 var ApimworkspacecertificatesCertificateContract2_Properties_KeyVaultFields = ubx.FieldMap{
-		"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
-		"SecretIdentifier": ubx.FieldSpec{WireName: "secret_identifier"},
-	}
+	"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
+	"LastStatus": ubx.FieldSpec{
+		WireName: "last_status",
+		Kind:     "object",
+		Fields:   ApimworkspacecertificatesCertificateContract2_Properties_KeyVault_LastStatusFields,
+	},
+	"SecretIdentifier": ubx.FieldSpec{WireName: "secret_identifier"},
+}
 
 var ApimworkspacecertificatesCertificateContract2_PropertiesFields = ubx.FieldMap{
-		"Data": ubx.FieldSpec{WireName: "data"},
-		"KeyVault": ubx.FieldSpec{
-			WireName: "key_vault",
-			Kind: "object",
-			Fields: ApimworkspacecertificatesCertificateContract2_Properties_KeyVaultFields,
-		},
-		"Password": ubx.FieldSpec{WireName: "password"},
-	}
+	"Data":           ubx.FieldSpec{WireName: "data"},
+	"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
+	"KeyVault": ubx.FieldSpec{
+		WireName: "key_vault",
+		Kind:     "object",
+		Fields:   ApimworkspacecertificatesCertificateContract2_Properties_KeyVaultFields,
+	},
+	"Password":   ubx.FieldSpec{WireName: "password"},
+	"Subject":    ubx.FieldSpec{WireName: "subject"},
+	"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 type ApimworkspacecertificatesCertificateContract2Config struct {
 	// Parameters supplied to the CreateOrUpdate certificate operation.
@@ -49,8 +80,8 @@ var ApimworkspacecertificatesCertificateContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacecertificatesCertificateContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacecertificatesCertificateContract2_PropertiesFields,
 		},
 	},
 }

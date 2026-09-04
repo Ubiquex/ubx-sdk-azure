@@ -4,13 +4,13 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableGremlinDatabaseGetResult_Value_Properties_Resource struct {
-	Rid any
-	CanUndelete any
+	Rid               any
+	CanUndelete       any
 	CanUndeleteReason any
-	EventTimestamp any
-	OperationType any
-	OwnerId any
-	OwnerResourceId any
+	EventTimestamp    any
+	OperationType     any
+	OwnerId           any
+	OwnerResourceId   any
 }
 
 type DbOpenapiRestorableGremlinDatabaseGetResult_Value_Properties struct {
@@ -18,21 +18,21 @@ type DbOpenapiRestorableGremlinDatabaseGetResult_Value_Properties struct {
 }
 
 type DbOpenapiRestorableGremlinDatabaseGetResult_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type DbOpenapiRestorableGremlinDatabaseGetResultConfig struct {
 	InstanceId any
-	Location any
+	Location   any
 }
 
 type DbOpenapiRestorableGremlinDatabaseGetResultAttrs struct {
 	InstanceId any
-	Location any
-	NextLink any
+	Location   any
+	NextLink   any
 	// List of Gremlin database events and their properties.
 	Value any
 }
@@ -41,6 +41,6 @@ var DbOpenapiRestorableGremlinDatabaseGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_gremlin_database_get_result",
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"Location":   ubx.FieldSpec{WireName: "location"},
 	},
 }

@@ -4,19 +4,19 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDeployment_Value_Properties struct {
-	Active any
-	Author any
+	Active      any
+	Author      any
 	AuthorEmail any
-	Deployer any
-	Details any
-	EndTime any
-	Message any
-	StartTime any
-	Status any
+	Deployer    any
+	Details     any
+	EndTime     any
+	Message     any
+	StartTime   any
+	Status      any
 }
 
 type OpenapiDeployment_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

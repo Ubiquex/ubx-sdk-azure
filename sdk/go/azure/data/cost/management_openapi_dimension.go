@@ -4,15 +4,15 @@ package cost
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiDimension_Value_Properties struct {
-	Category any
-	Data any
-	Description any
-	FilterEnabled any
+	Category        any
+	Data            any
+	Description     any
+	FilterEnabled   any
 	GroupingEnabled any
-	NextLink any
-	Total any
-	UsageEnd any
-	UsageStart any
+	NextLink        any
+	Total           any
+	UsageEnd        any
+	UsageStart      any
 }
 
 type ManagementOpenapiDimension_Value struct {
@@ -20,12 +20,12 @@ type ManagementOpenapiDimension_Value struct {
 }
 
 type ManagementOpenapiDimensionConfig struct {
-	ExternalCloudProviderId any
+	ExternalCloudProviderId   any
 	ExternalCloudProviderType any
 }
 
 type ManagementOpenapiDimensionAttrs struct {
-	ExternalCloudProviderId any
+	ExternalCloudProviderId   any
 	ExternalCloudProviderType any
 	// The link (url) to the next page of results.
 	NextLink any
@@ -36,7 +36,7 @@ type ManagementOpenapiDimensionAttrs struct {
 var ManagementOpenapiDimension = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_dimension",
 	Fields: ubx.FieldMap{
-		"ExternalCloudProviderId": ubx.FieldSpec{WireName: "external_cloud_provider_id"},
+		"ExternalCloudProviderId":   ubx.FieldSpec{WireName: "external_cloud_provider_id"},
 		"ExternalCloudProviderType": ubx.FieldSpec{WireName: "external_cloud_provider_type"},
 	},
 }

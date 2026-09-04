@@ -10,10 +10,10 @@ type ManagementOpenapiMarkupRule_Value_Properties_CustomerDetails struct {
 
 type ManagementOpenapiMarkupRule_Value_Properties struct {
 	CustomerDetails any
-	Description any
-	EndDate any
-	Percentage any
-	StartDate any
+	Description     any
+	EndDate         any
+	Percentage      any
+	StartDate       any
 }
 
 type ManagementOpenapiMarkupRule_Value struct {

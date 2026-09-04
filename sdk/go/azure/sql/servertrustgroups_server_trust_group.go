@@ -15,17 +15,17 @@ type ServertrustgroupsServerTrustGroup_Properties struct {
 }
 
 var ServertrustgroupsServerTrustGroup_Properties_GroupMembersFields = ubx.FieldMap{
-		"ServerId": ubx.FieldSpec{WireName: "server_id"},
-	}
+	"ServerId": ubx.FieldSpec{WireName: "server_id"},
+}
 
 var ServertrustgroupsServerTrustGroup_PropertiesFields = ubx.FieldMap{
-		"GroupMembers": ubx.FieldSpec{
-			WireName: "group_members",
-			Kind: "list",
-			Fields: ServertrustgroupsServerTrustGroup_Properties_GroupMembersFields,
-		},
-		"TrustScopes": ubx.FieldSpec{WireName: "trust_scopes"},
-	}
+	"GroupMembers": ubx.FieldSpec{
+		WireName: "group_members",
+		Kind:     "list",
+		Fields:   ServertrustgroupsServerTrustGroup_Properties_GroupMembersFields,
+	},
+	"TrustScopes": ubx.FieldSpec{WireName: "trust_scopes"},
+}
 
 type ServertrustgroupsServerTrustGroupConfig struct {
 	// Properties of a server trust group.
@@ -42,8 +42,8 @@ var ServertrustgroupsServerTrustGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServertrustgroupsServerTrustGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServertrustgroupsServerTrustGroup_PropertiesFields,
 		},
 	},
 }

@@ -66,22 +66,11 @@ const SystemTopic_PropertiesFields: FieldMap = {
   topicType: "topic_type",
 };
 
-const SystemTopic_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface SystemTopicConfig {
   /** The identity information for the resource. */
   identity?: SystemTopic_Identity | Computed<SystemTopic_Identity>;
   /** Properties of the System Topic. */
   properties?: SystemTopic_Properties | Computed<SystemTopic_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: SystemTopic_SystemData | Computed<SystemTopic_SystemData>;
 }
 
 export interface SystemTopicAttrs {
@@ -105,11 +94,6 @@ export const SystemTopic: ResourceBinding<SystemTopicConfig, SystemTopicAttrs> =
       wireName: "properties",
       kind: "object",
       fields: SystemTopic_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: SystemTopic_SystemDataFields,
     },
   },
 };

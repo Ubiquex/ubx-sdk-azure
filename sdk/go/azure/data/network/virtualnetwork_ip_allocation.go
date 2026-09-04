@@ -8,18 +8,18 @@ type VirtualnetworkIpAllocation_Value_Properties_Subnet struct {
 }
 
 type VirtualnetworkIpAllocation_Value_Properties struct {
-	AllocationTags any
+	AllocationTags   any
 	IpamAllocationId any
-	Prefix any
-	PrefixLength any
-	PrefixType any
-	Subnet any
-	Type any
-	VirtualNetwork any
+	Prefix           any
+	PrefixLength     any
+	PrefixType       any
+	Subnet           any
+	Type             any
+	VirtualNetwork   any
 }
 
 type VirtualnetworkIpAllocation_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -35,6 +35,5 @@ type VirtualnetworkIpAllocationAttrs struct {
 
 var VirtualnetworkIpAllocation = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_ip_allocation",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

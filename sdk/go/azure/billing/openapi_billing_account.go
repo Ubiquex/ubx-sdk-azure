@@ -6,57 +6,57 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiBillingAccount_Properties_EnrollmentDetails_IndirectRelationshipInfo struct {
 	BillingAccountName any
 	BillingProfileName any
-	DisplayName any
+	DisplayName        any
 }
 
 type OpenapiBillingAccount_Properties_EnrollmentDetails struct {
-	BillingCycle any
-	Channel any
-	Cloud any
-	CountryCode any
-	Currency any
-	EndDate any
-	ExtendedTermOption any
+	BillingCycle             any
+	Channel                  any
+	Cloud                    any
+	CountryCode              any
+	Currency                 any
+	EndDate                  any
+	ExtendedTermOption       any
 	IndirectRelationshipInfo any
-	InvoiceRecipient any
-	Language any
-	MarkupStatus any
-	PoNumber any
-	StartDate any
-	SupportCoverage any
-	SupportLevel any
+	InvoiceRecipient         any
+	Language                 any
+	MarkupStatus             any
+	PoNumber                 any
+	StartDate                any
+	SupportCoverage          any
+	SupportLevel             any
 }
 
 type OpenapiBillingAccount_Properties_RegistrationNumber struct {
-	Id any
+	Id       any
 	Required any
-	Type any
+	Type     any
 }
 
 type OpenapiBillingAccount_Properties_SoldTo struct {
-	AddressLine1 any
-	AddressLine2 any
-	AddressLine3 any
-	City any
-	CompanyName any
-	Country any
-	District any
-	Email any
-	FirstName any
+	AddressLine1   any
+	AddressLine2   any
+	AddressLine3   any
+	City           any
+	CompanyName    any
+	Country        any
+	District       any
+	Email          any
+	FirstName      any
 	IsValidAddress any
-	LastName any
-	MiddleName any
-	PhoneNumber any
-	PostalCode any
-	Region any
+	LastName       any
+	MiddleName     any
+	PhoneNumber    any
+	PostalCode     any
+	Region         any
 }
 
 type OpenapiBillingAccount_Properties_TaxIds struct {
 	Country any
-	Id any
-	Scope any
-	Status any
-	Type any
+	Id      any
+	Scope   any
+	Status  any
+	Type    any
 }
 
 type OpenapiBillingAccount_Properties struct {
@@ -108,6 +108,5 @@ type OpenapiBillingAccountAttrs struct {
 
 var OpenapiBillingAccount = ubx.ResourceBinding{
 	WireType: "azure_billing_openapi_billing_account",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

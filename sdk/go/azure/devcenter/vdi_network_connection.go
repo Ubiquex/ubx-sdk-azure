@@ -15,11 +15,11 @@ type VdiNetworkConnection_Properties struct {
 }
 
 var VdiNetworkConnection_PropertiesFields = ubx.FieldMap{
-		"DomainJoinType": ubx.FieldSpec{WireName: "domain_join_type"},
-		"HealthCheckStatus": ubx.FieldSpec{WireName: "health_check_status"},
-		"NetworkingResourceGroupName": ubx.FieldSpec{WireName: "networking_resource_group_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"DomainJoinType":              ubx.FieldSpec{WireName: "domain_join_type"},
+	"HealthCheckStatus":           ubx.FieldSpec{WireName: "health_check_status"},
+	"NetworkingResourceGroupName": ubx.FieldSpec{WireName: "networking_resource_group_name"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VdiNetworkConnectionConfig struct {
 	// Network properties
@@ -36,8 +36,8 @@ var VdiNetworkConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VdiNetworkConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   VdiNetworkConnection_PropertiesFields,
 		},
 	},
 }

@@ -17,8 +17,6 @@ _OpenapiAuthorizationRule_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiAuthorizationRuleConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Properties supplied to create or update AuthorizationRule
     properties: Any = None
 
@@ -32,7 +30,6 @@ class OpenapiAuthorizationRuleAttrs:
 OpenapiAuthorizationRule = ubx.ResourceBinding(
     wire_type="azure_eventhub_openapi_authorization_rule",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

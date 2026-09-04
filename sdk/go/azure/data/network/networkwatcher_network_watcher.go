@@ -8,7 +8,7 @@ type NetworkwatcherNetworkWatcher_Value_Properties struct {
 }
 
 type NetworkwatcherNetworkWatcher_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -24,6 +24,5 @@ type NetworkwatcherNetworkWatcherAttrs struct {
 
 var NetworkwatcherNetworkWatcher = ubx.DataSourceBinding{
 	WireType: "azure_network_networkwatcher_network_watcher",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

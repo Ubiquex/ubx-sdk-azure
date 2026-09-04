@@ -8,13 +8,13 @@ type OpenapiRule_Value_Properties_Actions struct {
 }
 
 type OpenapiRule_Value_Properties struct {
-	Actions any
-	Conditions any
-	DeploymentStatus any
+	Actions                 any
+	Conditions              any
+	DeploymentStatus        any
 	MatchProcessingBehavior any
-	Order any
-	ProvisioningState any
-	RuleSetName any
+	Order                   any
+	ProvisioningState       any
+	RuleSetName             any
 }
 
 type OpenapiRule_Value struct {
@@ -28,7 +28,7 @@ type OpenapiRuleConfig struct {
 
 type OpenapiRuleAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	RuleSetName any
 	// The Rule items on this page

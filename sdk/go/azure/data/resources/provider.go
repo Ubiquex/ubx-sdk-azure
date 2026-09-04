@@ -5,67 +5,67 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Provider_Value_ResourceTypes_Aliases_DefaultMetadata struct {
 	Attributes any
-	Type any
+	Type       any
 }
 
 type Provider_Value_ResourceTypes_Aliases_DefaultPattern struct {
-	Phrase any
-	Type any
+	Phrase   any
+	Type     any
 	Variable any
 }
 
 type Provider_Value_ResourceTypes_Aliases_Paths struct {
 	ApiVersions any
-	Metadata any
-	Path any
-	Pattern any
+	Metadata    any
+	Path        any
+	Pattern     any
 }
 
 type Provider_Value_ResourceTypes_Aliases struct {
 	DefaultMetadata any
-	DefaultPath any
-	DefaultPattern any
-	Name any
-	Paths any
-	Type any
+	DefaultPath     any
+	DefaultPattern  any
+	Name            any
+	Paths           any
+	Type            any
 }
 
 type Provider_Value_ResourceTypes_ApiProfiles struct {
-	ApiVersion any
+	ApiVersion     any
 	ProfileVersion any
 }
 
 type Provider_Value_ResourceTypes_LocationMappings struct {
 	ExtendedLocations any
-	Location any
-	Type any
+	Location          any
+	Type              any
 }
 
 type Provider_Value_ResourceTypes_ZoneMappings struct {
 	Location any
-	Zones any
+	Zones    any
 }
 
 type Provider_Value_ResourceTypes struct {
-	Aliases any
-	ApiProfiles any
-	ApiVersions any
-	Capabilities any
+	Aliases           any
+	ApiProfiles       any
+	ApiVersions       any
+	Capabilities      any
 	DefaultApiVersion any
-	LocationMappings any
-	Locations any
-	Properties any
-	ResourceType any
-	ZoneMappings any
+	LocationMappings  any
+	Locations         any
+	Properties        any
+	ResourceType      any
+	ZoneMappings      any
 }
 
 type Provider_Value struct {
-	Id any
-	Namespace any
+	Id                                any
+	Namespace                         any
 	ProviderAuthorizationConsentState any
-	RegistrationPolicy any
-	RegistrationState any
-	ResourceTypes any
+	RegistrationPolicy                any
+	RegistrationState                 any
+	ResourceTypes                     any
 }
 
 type ProviderConfig struct {
@@ -80,6 +80,5 @@ type ProviderAttrs struct {
 
 var Provider = ubx.DataSourceBinding{
 	WireType: "azure_resources_provider",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -8,14 +8,14 @@ type DeploymentsDeploymentExtended_Value_Properties_DebugSetting struct {
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Dependencies_DependsOn struct {
-	Id any
+	Id           any
 	ResourceName any
 	ResourceType any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Dependencies struct {
-	DependsOn any
-	Id any
+	DependsOn    any
+	Id           any
 	ResourceName any
 	ResourceType any
 }
@@ -27,10 +27,10 @@ type DeploymentsDeploymentExtended_Value_Properties_Diagnostics_AdditionalInfo s
 
 type DeploymentsDeploymentExtended_Value_Properties_Diagnostics struct {
 	AdditionalInfo any
-	Code any
-	Level any
-	Message any
-	Target any
+	Code           any
+	Level          any
+	Message        any
+	Target         any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Error_Details struct {
@@ -38,10 +38,10 @@ type DeploymentsDeploymentExtended_Value_Properties_Error_Details struct {
 
 type DeploymentsDeploymentExtended_Value_Properties_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Extensions_Config_KeyVaultReference_KeyVault struct {
@@ -49,144 +49,144 @@ type DeploymentsDeploymentExtended_Value_Properties_Extensions_Config_KeyVaultRe
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Extensions_Config_KeyVaultReference struct {
-	KeyVault any
-	SecretName any
+	KeyVault      any
+	SecretName    any
 	SecretVersion any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Extensions_Config struct {
 	KeyVaultReference any
-	Type any
-	Value any
+	Type              any
+	Value             any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Extensions struct {
-	Alias any
-	Config any
+	Alias    any
+	Config   any
 	ConfigId any
-	Name any
-	Version any
+	Name     any
+	Version  any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_OnErrorDeployment struct {
-	DeploymentName any
+	DeploymentName    any
 	ProvisioningState any
-	Type any
+	Type              any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_OutputResources struct {
-	ApiVersion any
-	Extension any
-	Id any
-	Identifiers any
+	ApiVersion   any
+	Extension    any
+	Id           any
+	Identifiers  any
 	ResourceType any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_ParametersLink struct {
 	ContentVersion any
-	Uri any
+	Uri            any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata struct {
 	Attributes any
-	Type any
+	Type       any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_DefaultPattern struct {
-	Phrase any
-	Type any
+	Phrase   any
+	Type     any
 	Variable any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases_Paths struct {
 	ApiVersions any
-	Metadata any
-	Path any
-	Pattern any
+	Metadata    any
+	Path        any
+	Pattern     any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_Aliases struct {
 	DefaultMetadata any
-	DefaultPath any
-	DefaultPattern any
-	Name any
-	Paths any
-	Type any
+	DefaultPath     any
+	DefaultPattern  any
+	Name            any
+	Paths           any
+	Type            any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_ApiProfiles struct {
-	ApiVersion any
+	ApiVersion     any
 	ProfileVersion any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_LocationMappings struct {
 	ExtendedLocations any
-	Location any
-	Type any
+	Location          any
+	Type              any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes_ZoneMappings struct {
 	Location any
-	Zones any
+	Zones    any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers_ResourceTypes struct {
-	Aliases any
-	ApiProfiles any
-	ApiVersions any
-	Capabilities any
+	Aliases           any
+	ApiProfiles       any
+	ApiVersions       any
+	Capabilities      any
 	DefaultApiVersion any
-	LocationMappings any
-	Locations any
-	Properties any
-	ResourceType any
-	ZoneMappings any
+	LocationMappings  any
+	Locations         any
+	Properties        any
+	ResourceType      any
+	ZoneMappings      any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_Providers struct {
-	Id any
-	Namespace any
+	Id                                any
+	Namespace                         any
 	ProviderAuthorizationConsentState any
-	RegistrationPolicy any
-	RegistrationState any
-	ResourceTypes any
+	RegistrationPolicy                any
+	RegistrationState                 any
+	ResourceTypes                     any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties_TemplateLink struct {
 	ContentVersion any
-	Id any
-	QueryString any
-	RelativePath any
-	Uri any
+	Id             any
+	QueryString    any
+	RelativePath   any
+	Uri            any
 }
 
 type DeploymentsDeploymentExtended_Value_Properties struct {
-	CorrelationId any
-	DebugSetting any
-	Dependencies any
-	Diagnostics any
-	Duration any
-	Error any
-	Extensions any
-	Mode any
-	OnErrorDeployment any
-	OutputResources any
-	Outputs any
-	Parameters any
-	ParametersLink any
-	Providers any
-	ProvisioningState any
-	TemplateHash any
-	TemplateLink any
-	Timestamp any
+	CorrelationId      any
+	DebugSetting       any
+	Dependencies       any
+	Diagnostics        any
+	Duration           any
+	Error              any
+	Extensions         any
+	Mode               any
+	OnErrorDeployment  any
+	OutputResources    any
+	Outputs            any
+	Parameters         any
+	ParametersLink     any
+	Providers          any
+	ProvisioningState  any
+	TemplateHash       any
+	TemplateLink       any
+	Timestamp          any
 	ValidatedResources any
-	ValidationLevel any
+	ValidationLevel    any
 }
 
 type DeploymentsDeploymentExtended_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DeploymentsDeploymentExtendedConfig struct {

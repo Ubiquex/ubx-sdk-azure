@@ -5,26 +5,26 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TagRule_Value_Properties_LogRules_FilteringTags struct {
 	Action any
-	Name any
-	Value any
+	Name   any
+	Value  any
 }
 
 type TagRule_Value_Properties_LogRules struct {
-	FilteringTags any
-	SendAadLogs any
-	SendActivityLogs any
+	FilteringTags        any
+	SendAadLogs          any
+	SendActivityLogs     any
 	SendSubscriptionLogs any
 }
 
 type TagRule_Value_Properties_MetricRules struct {
 	FilteringTags any
-	SendMetrics any
-	UserEmail any
+	SendMetrics   any
+	UserEmail     any
 }
 
 type TagRule_Value_Properties struct {
-	LogRules any
-	MetricRules any
+	LogRules          any
+	MetricRules       any
 	ProvisioningState any
 }
 

@@ -5,35 +5,35 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConfigurationAssignment_Value_Properties_Filter_TagSettings struct {
 	FilterOperator any
-	Tags any
+	Tags           any
 }
 
 type ConfigurationAssignment_Value_Properties_Filter struct {
-	Locations any
-	OsTypes any
+	Locations      any
+	OsTypes        any
 	ResourceGroups any
-	ResourceTypes any
-	TagSettings any
+	ResourceTypes  any
+	TagSettings    any
 }
 
 type ConfigurationAssignment_Value_Properties struct {
-	Filter any
+	Filter                     any
 	MaintenanceConfigurationId any
-	ResourceId any
+	ResourceId                 any
 }
 
 type ConfigurationAssignment_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ConfigurationAssignmentConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ConfigurationAssignmentAttrs struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 	// The list of configuration Assignments
 	Value any
@@ -42,7 +42,7 @@ type ConfigurationAssignmentAttrs struct {
 var ConfigurationAssignment = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_configuration_assignment",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

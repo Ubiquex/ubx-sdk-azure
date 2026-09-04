@@ -25,16 +25,16 @@ type OpenapiDeployment_Properties struct {
 }
 
 var OpenapiDeployment_PropertiesFields = ubx.FieldMap{
-		"Active": ubx.FieldSpec{WireName: "active"},
-		"Author": ubx.FieldSpec{WireName: "author"},
-		"AuthorEmail": ubx.FieldSpec{WireName: "author_email"},
-		"Deployer": ubx.FieldSpec{WireName: "deployer"},
-		"Details": ubx.FieldSpec{WireName: "details"},
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Active":      ubx.FieldSpec{WireName: "active"},
+	"Author":      ubx.FieldSpec{WireName: "author"},
+	"AuthorEmail": ubx.FieldSpec{WireName: "author_email"},
+	"Deployer":    ubx.FieldSpec{WireName: "deployer"},
+	"Details":     ubx.FieldSpec{WireName: "details"},
+	"EndTime":     ubx.FieldSpec{WireName: "end_time"},
+	"Message":     ubx.FieldSpec{WireName: "message"},
+	"StartTime":   ubx.FieldSpec{WireName: "start_time"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 type OpenapiDeploymentConfig struct {
 	// Kind of resource.
@@ -64,10 +64,10 @@ var OpenapiDeployment = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDeployment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDeployment_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"Id": ubx.FieldSpec{WireName: "id"},
+		"Id":   ubx.FieldSpec{WireName: "id"},
 	},
 }

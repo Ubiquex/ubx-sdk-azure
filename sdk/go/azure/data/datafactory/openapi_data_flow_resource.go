@@ -10,12 +10,12 @@ type OpenapiDataFlowResource_Value_Properties_Folder struct {
 type OpenapiDataFlowResource_Value_Properties struct {
 	Annotations any
 	Description any
-	Folder any
-	Type any
+	Folder      any
+	Type        any
 }
 
 type OpenapiDataFlowResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

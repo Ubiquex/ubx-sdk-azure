@@ -4,44 +4,44 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiInvoiceSection_Value_Properties struct {
-	DisplayName any
+	DisplayName       any
 	ProvisioningState any
-	ReasonCode any
-	State any
-	SystemId any
-	Tags any
-	TargetCloud any
+	ReasonCode        any
+	State             any
+	SystemId          any
+	Tags              any
+	TargetCloud       any
 }
 
 type OpenapiInvoiceSection_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiInvoiceSectionConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Filter any
-	IncludeDeleted any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Count              any
+	Filter             any
+	IncludeDeleted     any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiInvoiceSectionAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Filter any
-	IncludeDeleted any
+	Count              any
+	Filter             any
+	IncludeDeleted     any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The InvoiceSection items on this page
 	Value any
 }
@@ -51,12 +51,12 @@ var OpenapiInvoiceSection = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"IncludeDeleted": ubx.FieldSpec{WireName: "include_deleted"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"IncludeDeleted":     ubx.FieldSpec{WireName: "include_deleted"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

@@ -4,30 +4,30 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConfigurationServiceResource_Value_Properties_Instances struct {
-	Name any
+	Name   any
 	Status any
 }
 
 type ConfigurationServiceResource_Value_Properties_ResourceRequests struct {
-	Cpu any
+	Cpu           any
 	InstanceCount any
-	Memory any
+	Memory        any
 }
 
 type ConfigurationServiceResource_Value_Properties_Settings_GitProperty_Repositories struct {
-	CaCertResourceId any
-	GitImplementation any
-	HostKey any
-	HostKeyAlgorithm any
-	Label any
-	Name any
-	Password any
-	Patterns any
-	PrivateKey any
-	SearchPaths any
+	CaCertResourceId      any
+	GitImplementation     any
+	HostKey               any
+	HostKeyAlgorithm      any
+	Label                 any
+	Name                  any
+	Password              any
+	Patterns              any
+	PrivateKey            any
+	SearchPaths           any
 	StrictHostKeyChecking any
-	Uri any
-	Username any
+	Uri                   any
+	Username              any
 }
 
 type ConfigurationServiceResource_Value_Properties_Settings_GitProperty struct {
@@ -39,11 +39,11 @@ type ConfigurationServiceResource_Value_Properties_Settings struct {
 }
 
 type ConfigurationServiceResource_Value_Properties struct {
-	Generation any
-	Instances any
+	Generation        any
+	Instances         any
 	ProvisioningState any
-	ResourceRequests any
-	Settings any
+	ResourceRequests  any
+	Settings          any
 }
 
 type ConfigurationServiceResource_Value struct {
@@ -51,19 +51,19 @@ type ConfigurationServiceResource_Value struct {
 }
 
 type ConfigurationServiceResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type ConfigurationServiceResourceAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of configuration service resources
 	Value any
 }
@@ -71,9 +71,9 @@ type ConfigurationServiceResourceAttrs struct {
 var ConfigurationServiceResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_configuration_service_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -12624,8 +12624,6 @@ const VirtualnetworkPrivateEndpoint_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkPrivateEndpointConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: VirtualnetworkPrivateEndpoint_ExtendedLocation | Computed<VirtualnetworkPrivateEndpoint_ExtendedLocation>;
   /** Properties of the private endpoint. */
@@ -12644,7 +12642,6 @@ export interface VirtualnetworkPrivateEndpointAttrs {
 export const VirtualnetworkPrivateEndpoint: ResourceBinding<VirtualnetworkPrivateEndpointConfig, VirtualnetworkPrivateEndpointAttrs> = {
   wireType: "azure_network_virtualnetwork_private_endpoint",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

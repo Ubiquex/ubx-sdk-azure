@@ -4,25 +4,25 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupPolicy_Value_Properties_VolumeBackups struct {
-	BackupsCount any
-	PolicyEnabled any
-	VolumeName any
+	BackupsCount     any
+	PolicyEnabled    any
+	VolumeName       any
 	VolumeResourceId any
 }
 
 type BackupPolicy_Value_Properties struct {
-	BackupPolicyId any
-	DailyBackupsToKeep any
-	Enabled any
+	BackupPolicyId       any
+	DailyBackupsToKeep   any
+	Enabled              any
 	MonthlyBackupsToKeep any
-	ProvisioningState any
-	VolumeBackups any
-	VolumesAssigned any
-	WeeklyBackupsToKeep any
+	ProvisioningState    any
+	VolumeBackups        any
+	VolumesAssigned      any
+	WeeklyBackupsToKeep  any
 }
 
 type BackupPolicy_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

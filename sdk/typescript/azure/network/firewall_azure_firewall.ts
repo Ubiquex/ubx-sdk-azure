@@ -451,8 +451,6 @@ const FirewallAzureFirewall_PropertiesFields: FieldMap = {
 };
 
 export interface FirewallAzureFirewallConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** ExtendedLocation complex type. */
   extendedLocation?: FirewallAzureFirewall_ExtendedLocation | Computed<FirewallAzureFirewall_ExtendedLocation>;
   /** Properties of the Azure Firewall. */
@@ -475,7 +473,6 @@ export interface FirewallAzureFirewallAttrs {
 export const FirewallAzureFirewall: ResourceBinding<FirewallAzureFirewallConfig, FirewallAzureFirewallAttrs> = {
   wireType: "azure_network_firewall_azure_firewall",
   fields: {
-    etag: "etag",
     extendedLocation: {
       wireName: "extended_location",
       kind: "object",

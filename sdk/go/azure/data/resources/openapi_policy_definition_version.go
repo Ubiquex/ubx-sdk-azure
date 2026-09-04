@@ -5,41 +5,41 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicyDefinitionVersion_Value_Properties_ExternalEvaluationEnforcementSettings_EndpointSettings struct {
 	Details any
-	Kind any
+	Kind    any
 }
 
 type OpenapiPolicyDefinitionVersion_Value_Properties_ExternalEvaluationEnforcementSettings struct {
-	EndpointSettings any
+	EndpointSettings   any
 	MissingTokenAction any
-	ResultLifespan any
-	RoleDefinitionIds any
+	ResultLifespan     any
+	RoleDefinitionIds  any
 }
 
 type OpenapiPolicyDefinitionVersion_Value_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicyDefinitionVersion_Value_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicyDefinitionVersion_Value_Properties struct {
-	Description any
-	DisplayName any
+	Description                           any
+	DisplayName                           any
 	ExternalEvaluationEnforcementSettings any
-	Metadata any
-	Mode any
-	Parameters any
-	PolicyRule any
-	PolicyType any
-	Version any
+	Metadata                              any
+	Mode                                  any
+	Parameters                            any
+	PolicyRule                            any
+	PolicyType                            any
+	Version                               any
 }
 
 type OpenapiPolicyDefinitionVersion_Value struct {
@@ -52,7 +52,7 @@ type OpenapiPolicyDefinitionVersionConfig struct {
 
 type OpenapiPolicyDefinitionVersionAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink             any
 	PolicyDefinitionName any
 	// The PolicyDefinitionVersion items on this page
 	Value any

@@ -42,30 +42,30 @@ type AttachedDatabaseConfiguration_Properties struct {
 }
 
 var AttachedDatabaseConfiguration_Properties_TableLevelSharingPropertiesFields = ubx.FieldMap{
-		"ExternalTablesToExclude": ubx.FieldSpec{WireName: "external_tables_to_exclude"},
-		"ExternalTablesToInclude": ubx.FieldSpec{WireName: "external_tables_to_include"},
-		"FunctionsToExclude": ubx.FieldSpec{WireName: "functions_to_exclude"},
-		"FunctionsToInclude": ubx.FieldSpec{WireName: "functions_to_include"},
-		"MaterializedViewsToExclude": ubx.FieldSpec{WireName: "materialized_views_to_exclude"},
-		"MaterializedViewsToInclude": ubx.FieldSpec{WireName: "materialized_views_to_include"},
-		"TablesToExclude": ubx.FieldSpec{WireName: "tables_to_exclude"},
-		"TablesToInclude": ubx.FieldSpec{WireName: "tables_to_include"},
-	}
+	"ExternalTablesToExclude":    ubx.FieldSpec{WireName: "external_tables_to_exclude"},
+	"ExternalTablesToInclude":    ubx.FieldSpec{WireName: "external_tables_to_include"},
+	"FunctionsToExclude":         ubx.FieldSpec{WireName: "functions_to_exclude"},
+	"FunctionsToInclude":         ubx.FieldSpec{WireName: "functions_to_include"},
+	"MaterializedViewsToExclude": ubx.FieldSpec{WireName: "materialized_views_to_exclude"},
+	"MaterializedViewsToInclude": ubx.FieldSpec{WireName: "materialized_views_to_include"},
+	"TablesToExclude":            ubx.FieldSpec{WireName: "tables_to_exclude"},
+	"TablesToInclude":            ubx.FieldSpec{WireName: "tables_to_include"},
+}
 
 var AttachedDatabaseConfiguration_PropertiesFields = ubx.FieldMap{
-		"AttachedDatabaseNames": ubx.FieldSpec{WireName: "attached_database_names"},
-		"ClusterResourceId": ubx.FieldSpec{WireName: "cluster_resource_id"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"DatabaseNameOverride": ubx.FieldSpec{WireName: "database_name_override"},
-		"DatabaseNamePrefix": ubx.FieldSpec{WireName: "database_name_prefix"},
-		"DefaultPrincipalsModificationKind": ubx.FieldSpec{WireName: "default_principals_modification_kind"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TableLevelSharingProperties": ubx.FieldSpec{
-			WireName: "table_level_sharing_properties",
-			Kind: "object",
-			Fields: AttachedDatabaseConfiguration_Properties_TableLevelSharingPropertiesFields,
-		},
-	}
+	"AttachedDatabaseNames":             ubx.FieldSpec{WireName: "attached_database_names"},
+	"ClusterResourceId":                 ubx.FieldSpec{WireName: "cluster_resource_id"},
+	"DatabaseName":                      ubx.FieldSpec{WireName: "database_name"},
+	"DatabaseNameOverride":              ubx.FieldSpec{WireName: "database_name_override"},
+	"DatabaseNamePrefix":                ubx.FieldSpec{WireName: "database_name_prefix"},
+	"DefaultPrincipalsModificationKind": ubx.FieldSpec{WireName: "default_principals_modification_kind"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"TableLevelSharingProperties": ubx.FieldSpec{
+		WireName: "table_level_sharing_properties",
+		Kind:     "object",
+		Fields:   AttachedDatabaseConfiguration_Properties_TableLevelSharingPropertiesFields,
+	},
+}
 
 type AttachedDatabaseConfigurationConfig struct {
 	// Resource location.
@@ -87,8 +87,8 @@ var AttachedDatabaseConfiguration = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AttachedDatabaseConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   AttachedDatabaseConfiguration_PropertiesFields,
 		},
 	},
 }

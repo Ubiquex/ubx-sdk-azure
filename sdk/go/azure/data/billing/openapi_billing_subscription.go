@@ -9,13 +9,13 @@ type OpenapiBillingSubscription_Value_Properties_Beneficiary struct {
 }
 
 type OpenapiBillingSubscription_Value_Properties_EnrollmentAccountSubscriptionDetails struct {
-	EnrollmentAccountStartDate any
+	EnrollmentAccountStartDate          any
 	SubscriptionEnrollmentAccountStatus any
 }
 
 type OpenapiBillingSubscription_Value_Properties_LastMonthCharges struct {
 	Currency any
-	Value any
+	Value    any
 }
 
 type OpenapiBillingSubscription_Value_Properties_NextBillingCycleDetails struct {
@@ -24,107 +24,107 @@ type OpenapiBillingSubscription_Value_Properties_NextBillingCycleDetails struct 
 
 type OpenapiBillingSubscription_Value_Properties_RenewalTermDetails struct {
 	BillingFrequency any
-	ProductId any
-	ProductTypeId any
-	Quantity any
-	SkuId any
-	TermDuration any
-	TermEndDate any
+	ProductId        any
+	ProductTypeId    any
+	Quantity         any
+	SkuId            any
+	TermDuration     any
+	TermEndDate      any
 }
 
 type OpenapiBillingSubscription_Value_Properties_Reseller struct {
 	Description any
-	ResellerId any
+	ResellerId  any
 }
 
 type OpenapiBillingSubscription_Value_Properties_SuspensionReasonDetails struct {
 	EffectiveDate any
-	Reason any
+	Reason        any
 }
 
 type OpenapiBillingSubscription_Value_Properties_SystemOverrides struct {
-	Cancellation any
+	Cancellation               any
 	CancellationAllowedEndDate any
 }
 
 type OpenapiBillingSubscription_Value_Properties struct {
-	AutoRenew any
-	Beneficiary any
-	BeneficiaryTenantId any
-	BillingFrequency any
-	BillingPolicies any
-	BillingProfileDisplayName any
-	BillingProfileId any
-	BillingProfileName any
-	ConsumptionCostCenter any
-	CustomerDisplayName any
-	CustomerId any
-	CustomerName any
-	DisplayName any
-	EnrollmentAccountDisplayName any
-	EnrollmentAccountId any
+	AutoRenew                            any
+	Beneficiary                          any
+	BeneficiaryTenantId                  any
+	BillingFrequency                     any
+	BillingPolicies                      any
+	BillingProfileDisplayName            any
+	BillingProfileId                     any
+	BillingProfileName                   any
+	ConsumptionCostCenter                any
+	CustomerDisplayName                  any
+	CustomerId                           any
+	CustomerName                         any
+	DisplayName                          any
+	EnrollmentAccountDisplayName         any
+	EnrollmentAccountId                  any
 	EnrollmentAccountSubscriptionDetails any
-	InvoiceSectionDisplayName any
-	InvoiceSectionId any
-	InvoiceSectionName any
-	LastMonthCharges any
-	MonthToDateCharges any
-	NextBillingCycleDetails any
-	OfferId any
-	OperationStatus any
-	ProductCategory any
-	ProductType any
-	ProductTypeId any
-	ProvisioningState any
-	ProvisioningTenantId any
-	PurchaseDate any
-	Quantity any
-	RenewalTermDetails any
-	Reseller any
-	ResourceUri any
-	SkuDescription any
-	SkuId any
-	Status any
-	SubscriptionId any
-	SuspensionReasonDetails any
-	SuspensionReasons any
-	SystemOverrides any
-	TermDuration any
-	TermEndDate any
-	TermStartDate any
+	InvoiceSectionDisplayName            any
+	InvoiceSectionId                     any
+	InvoiceSectionName                   any
+	LastMonthCharges                     any
+	MonthToDateCharges                   any
+	NextBillingCycleDetails              any
+	OfferId                              any
+	OperationStatus                      any
+	ProductCategory                      any
+	ProductType                          any
+	ProductTypeId                        any
+	ProvisioningState                    any
+	ProvisioningTenantId                 any
+	PurchaseDate                         any
+	Quantity                             any
+	RenewalTermDetails                   any
+	Reseller                             any
+	ResourceUri                          any
+	SkuDescription                       any
+	SkuId                                any
+	Status                               any
+	SubscriptionId                       any
+	SuspensionReasonDetails              any
+	SuspensionReasons                    any
+	SystemOverrides                      any
+	TermDuration                         any
+	TermEndDate                          any
+	TermStartDate                        any
 }
 
 type OpenapiBillingSubscription_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiBillingSubscriptionConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Expand any
-	Filter any
-	IncludeDeleted any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Count              any
+	Expand             any
+	Filter             any
+	IncludeDeleted     any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiBillingSubscriptionAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Expand any
-	Filter any
-	IncludeDeleted any
+	Count              any
+	Expand             any
+	Filter             any
+	IncludeDeleted     any
 	// The link (url) to the next page of results.
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// Total number of records.
 	TotalCount any
 	// The list of resources.
@@ -136,13 +136,13 @@ var OpenapiBillingSubscription = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"IncludeDeleted": ubx.FieldSpec{WireName: "include_deleted"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"Expand":             ubx.FieldSpec{WireName: "expand"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"IncludeDeleted":     ubx.FieldSpec{WireName: "include_deleted"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

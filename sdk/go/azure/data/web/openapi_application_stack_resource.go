@@ -7,32 +7,32 @@ type OpenapiApplicationStackResource_Value_Properties_Frameworks struct {
 }
 
 type OpenapiApplicationStackResource_Value_Properties_MajorVersions_MinorVersions struct {
-	DisplayVersion any
-	IsDefault any
+	DisplayVersion           any
+	IsDefault                any
 	IsRemoteDebuggingEnabled any
-	RuntimeVersion any
+	RuntimeVersion           any
 }
 
 type OpenapiApplicationStackResource_Value_Properties_MajorVersions struct {
-	AppSettingsDictionary any
-	ApplicationInsights any
-	DisplayVersion any
-	IsDefault any
-	IsDeprecated any
-	IsHidden any
-	IsPreview any
-	MinorVersions any
-	RuntimeVersion any
+	AppSettingsDictionary          any
+	ApplicationInsights            any
+	DisplayVersion                 any
+	IsDefault                      any
+	IsDeprecated                   any
+	IsHidden                       any
+	IsPreview                      any
+	MinorVersions                  any
+	RuntimeVersion                 any
 	SiteConfigPropertiesDictionary any
 }
 
 type OpenapiApplicationStackResource_Value_Properties struct {
-	Dependency any
-	Display any
-	Frameworks any
-	IsDeprecated any
+	Dependency    any
+	Display       any
+	Frameworks    any
+	IsDeprecated  any
 	MajorVersions any
-	Name any
+	Name          any
 }
 
 type OpenapiApplicationStackResource_Value struct {
@@ -45,7 +45,7 @@ type OpenapiApplicationStackResourceConfig struct {
 
 type OpenapiApplicationStackResourceAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink       any
 	OsTypeSelected any
 	// The ApplicationStackResource items on this page
 	Value any

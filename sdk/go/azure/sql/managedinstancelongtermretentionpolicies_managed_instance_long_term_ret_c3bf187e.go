@@ -17,12 +17,12 @@ type ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPol
 }
 
 var ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicy_PropertiesFields = ubx.FieldMap{
-		"BackupStorageAccessTier": ubx.FieldSpec{WireName: "backup_storage_access_tier"},
-		"MonthlyRetention": ubx.FieldSpec{WireName: "monthly_retention"},
-		"WeekOfYear": ubx.FieldSpec{WireName: "week_of_year"},
-		"WeeklyRetention": ubx.FieldSpec{WireName: "weekly_retention"},
-		"YearlyRetention": ubx.FieldSpec{WireName: "yearly_retention"},
-	}
+	"BackupStorageAccessTier": ubx.FieldSpec{WireName: "backup_storage_access_tier"},
+	"MonthlyRetention":        ubx.FieldSpec{WireName: "monthly_retention"},
+	"WeekOfYear":              ubx.FieldSpec{WireName: "week_of_year"},
+	"WeeklyRetention":         ubx.FieldSpec{WireName: "weekly_retention"},
+	"YearlyRetention":         ubx.FieldSpec{WireName: "yearly_retention"},
+}
 
 type ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicyConfig struct {
 	// Properties of a long term retention policy
@@ -39,8 +39,8 @@ var ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPoli
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstancelongtermretentionpoliciesManagedInstanceLongTermRetentionPolicy_PropertiesFields,
 		},
 	},
 }

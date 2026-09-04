@@ -4,9 +4,9 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PureStoragePolicy_Value_Properties struct {
-	ProvisioningState any
+	ProvisioningState       any
 	StoragePolicyDefinition any
-	StoragePoolId any
+	StoragePoolId           any
 }
 
 type PureStoragePolicy_Value struct {
@@ -19,7 +19,7 @@ type PureStoragePolicyConfig struct {
 
 type PureStoragePolicyAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The PureStoragePolicy items on this page
 	Value any

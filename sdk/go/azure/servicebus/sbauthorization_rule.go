@@ -9,12 +9,10 @@ type SbauthorizationRule_Properties struct {
 }
 
 var SbauthorizationRule_PropertiesFields = ubx.FieldMap{
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-	}
+	"Rights": ubx.FieldSpec{WireName: "rights"},
+}
 
 type SbauthorizationRuleConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// AuthorizationRule properties.
 	Properties any
 }
@@ -29,11 +27,10 @@ type SbauthorizationRuleAttrs struct {
 var SbauthorizationRule = ubx.ResourceBinding{
 	WireType: "azure_servicebus_sbauthorization_rule",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SbauthorizationRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   SbauthorizationRule_PropertiesFields,
 		},
 	},
 }

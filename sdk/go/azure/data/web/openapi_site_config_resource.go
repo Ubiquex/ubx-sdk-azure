@@ -12,93 +12,93 @@ type OpenapiSiteConfigResource_Value_Properties_ApiManagementConfig struct {
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AppSettings struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Actions_CustomAction struct {
-	Exe any
+	Exe        any
 	Parameters any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Actions struct {
-	ActionType any
-	CustomAction any
+	ActionType              any
+	CustomAction            any
 	MinProcessExecutionTime any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers_Requests struct {
-	Count any
+	Count        any
 	TimeInterval any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers_SlowRequests struct {
-	Count any
-	Path any
+	Count        any
+	Path         any
 	TimeInterval any
-	TimeTaken any
+	TimeTaken    any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers_StatusCodes struct {
-	Count any
-	Path any
-	Status any
-	SubStatus any
+	Count        any
+	Path         any
+	Status       any
+	SubStatus    any
 	TimeInterval any
-	Win32Status any
+	Win32Status  any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers_StatusCodesRange struct {
-	Count any
-	Path any
-	StatusCodes any
+	Count        any
+	Path         any
+	StatusCodes  any
 	TimeInterval any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AutoHealRules_Triggers struct {
-	PrivateBytesInKb any
-	Requests any
-	SlowRequests any
+	PrivateBytesInKb     any
+	Requests             any
+	SlowRequests         any
 	SlowRequestsWithPath any
-	StatusCodes any
-	StatusCodesRange any
+	StatusCodes          any
+	StatusCodesRange     any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AutoHealRules struct {
-	Actions any
+	Actions  any
 	Triggers any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_AzureStorageAccounts struct {
-	AccessKey any
+	AccessKey   any
 	AccountName any
-	MountPath any
-	Protocol any
-	ShareName any
-	State any
-	Type any
+	MountPath   any
+	Protocol    any
+	ShareName   any
+	State       any
+	Type        any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_ConnectionStrings struct {
 	ConnectionString any
-	Name any
-	Type any
+	Name             any
+	Type             any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_Cors struct {
-	AllowedOrigins any
+	AllowedOrigins     any
 	SupportCredentials any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_Experiments_RampUpRules struct {
-	ActionHostName any
+	ActionHostName            any
 	ChangeDecisionCallbackUrl any
-	ChangeIntervalInMinutes any
-	ChangeStep any
-	MaxReroutePercentage any
-	MinReroutePercentage any
-	Name any
-	ReroutePercentage any
+	ChangeIntervalInMinutes   any
+	ChangeStep                any
+	MaxReroutePercentage      any
+	MinReroutePercentage      any
+	Name                      any
+	ReroutePercentage         any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_Experiments struct {
@@ -106,42 +106,42 @@ type OpenapiSiteConfigResource_Value_Properties_Experiments struct {
 }
 
 type OpenapiSiteConfigResource_Value_Properties_HandlerMappings struct {
-	Arguments any
-	Extension any
+	Arguments       any
+	Extension       any
 	ScriptProcessor any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_IpSecurityRestrictions struct {
-	Action any
-	Description any
-	Headers any
-	IpAddress any
-	Name any
-	Priority any
-	SubnetMask any
-	SubnetTrafficTag any
-	Tag any
+	Action               any
+	Description          any
+	Headers              any
+	IpAddress            any
+	Name                 any
+	Priority             any
+	SubnetMask           any
+	SubnetTrafficTag     any
+	Tag                  any
 	VnetSubnetResourceId any
-	VnetTrafficTag any
+	VnetTrafficTag       any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_Limits struct {
-	MaxDiskSizeInMb any
-	MaxMemoryInMb any
+	MaxDiskSizeInMb  any
+	MaxMemoryInMb    any
 	MaxPercentageCpu any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_MachineKey struct {
-	Decryption any
+	Decryption    any
 	DecryptionKey any
-	Validation any
+	Validation    any
 	ValidationKey any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_Push_Properties struct {
-	DynamicTagsJson any
-	IsPushEnabled any
-	TagWhitelistJson any
+	DynamicTagsJson   any
+	IsPushEnabled     any
+	TagWhitelistJson  any
 	TagsRequiringAuth any
 }
 
@@ -151,94 +151,94 @@ type OpenapiSiteConfigResource_Value_Properties_Push struct {
 
 type OpenapiSiteConfigResource_Value_Properties_VirtualApplications_VirtualDirectories struct {
 	PhysicalPath any
-	VirtualPath any
+	VirtualPath  any
 }
 
 type OpenapiSiteConfigResource_Value_Properties_VirtualApplications struct {
-	PhysicalPath any
-	PreloadEnabled any
+	PhysicalPath       any
+	PreloadEnabled     any
 	VirtualDirectories any
-	VirtualPath any
+	VirtualPath        any
 }
 
 type OpenapiSiteConfigResource_Value_Properties struct {
-	AcrUseManagedIdentityCreds any
-	AcrUserManagedIdentityId any
-	AlwaysOn any
-	ApiDefinition any
-	ApiManagementConfig any
-	AppCommandLine any
-	AppSettings any
-	AutoHealEnabled any
-	AutoHealRules any
-	AutoSwapSlotName any
-	AzureStorageAccounts any
-	ConnectionStrings any
-	Cors any
-	DefaultDocuments any
-	DetailedErrorLoggingEnabled any
-	DocumentRoot any
-	ElasticWebAppScaleLimit any
-	Experiments any
-	FtpsState any
-	FunctionAppScaleLimit any
+	AcrUseManagedIdentityCreds             any
+	AcrUserManagedIdentityId               any
+	AlwaysOn                               any
+	ApiDefinition                          any
+	ApiManagementConfig                    any
+	AppCommandLine                         any
+	AppSettings                            any
+	AutoHealEnabled                        any
+	AutoHealRules                          any
+	AutoSwapSlotName                       any
+	AzureStorageAccounts                   any
+	ConnectionStrings                      any
+	Cors                                   any
+	DefaultDocuments                       any
+	DetailedErrorLoggingEnabled            any
+	DocumentRoot                           any
+	ElasticWebAppScaleLimit                any
+	Experiments                            any
+	FtpsState                              any
+	FunctionAppScaleLimit                  any
 	FunctionsRuntimeScaleMonitoringEnabled any
-	HandlerMappings any
-	HealthCheckPath any
-	Http20Enabled any
-	Http20ProxyFlag any
-	HttpLoggingEnabled any
-	IpSecurityRestrictions any
-	IpSecurityRestrictionsDefaultAction any
-	JavaContainer any
-	JavaContainerVersion any
-	JavaVersion any
-	KeyVaultReferenceIdentity any
-	Limits any
-	LinuxFxVersion any
-	LoadBalancing any
-	LocalMySqlEnabled any
-	LogsDirectorySizeLimit any
-	MachineKey any
-	ManagedPipelineMode any
-	ManagedServiceIdentityId any
-	Metadata any
-	MinTlsCipherSuite any
-	MinTlsVersion any
-	MinimumElasticInstanceCount any
-	NetFrameworkVersion any
-	NodeVersion any
-	NumberOfWorkers any
-	PhpVersion any
-	PowerShellVersion any
-	PreWarmedInstanceCount any
-	PublicNetworkAccess any
-	PublishingUsername any
-	Push any
-	PythonVersion any
-	RemoteDebuggingEnabled any
-	RemoteDebuggingVersion any
-	RequestTracingEnabled any
-	RequestTracingExpirationTime any
-	ScmIpSecurityRestrictions any
+	HandlerMappings                        any
+	HealthCheckPath                        any
+	Http20Enabled                          any
+	Http20ProxyFlag                        any
+	HttpLoggingEnabled                     any
+	IpSecurityRestrictions                 any
+	IpSecurityRestrictionsDefaultAction    any
+	JavaContainer                          any
+	JavaContainerVersion                   any
+	JavaVersion                            any
+	KeyVaultReferenceIdentity              any
+	Limits                                 any
+	LinuxFxVersion                         any
+	LoadBalancing                          any
+	LocalMySqlEnabled                      any
+	LogsDirectorySizeLimit                 any
+	MachineKey                             any
+	ManagedPipelineMode                    any
+	ManagedServiceIdentityId               any
+	Metadata                               any
+	MinTlsCipherSuite                      any
+	MinTlsVersion                          any
+	MinimumElasticInstanceCount            any
+	NetFrameworkVersion                    any
+	NodeVersion                            any
+	NumberOfWorkers                        any
+	PhpVersion                             any
+	PowerShellVersion                      any
+	PreWarmedInstanceCount                 any
+	PublicNetworkAccess                    any
+	PublishingUsername                     any
+	Push                                   any
+	PythonVersion                          any
+	RemoteDebuggingEnabled                 any
+	RemoteDebuggingVersion                 any
+	RequestTracingEnabled                  any
+	RequestTracingExpirationTime           any
+	ScmIpSecurityRestrictions              any
 	ScmIpSecurityRestrictionsDefaultAction any
-	ScmIpSecurityRestrictionsUseMain any
-	ScmMinTlsVersion any
-	ScmType any
-	TracingOptions any
-	Use32BitWorkerProcess any
-	VirtualApplications any
-	VnetName any
-	VnetPrivatePortsCount any
-	VnetRouteAllEnabled any
-	WebSocketsEnabled any
-	WebsiteTimeZone any
-	WindowsFxVersion any
-	XManagedServiceIdentityId any
+	ScmIpSecurityRestrictionsUseMain       any
+	ScmMinTlsVersion                       any
+	ScmType                                any
+	TracingOptions                         any
+	Use32BitWorkerProcess                  any
+	VirtualApplications                    any
+	VnetName                               any
+	VnetPrivatePortsCount                  any
+	VnetRouteAllEnabled                    any
+	WebSocketsEnabled                      any
+	WebsiteTimeZone                        any
+	WindowsFxVersion                       any
+	XManagedServiceIdentityId              any
 }
 
 type OpenapiSiteConfigResource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

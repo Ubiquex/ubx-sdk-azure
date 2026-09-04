@@ -23,8 +23,6 @@ const OpenapiArmDisasterRecovery_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiArmDisasterRecoveryConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties required to the Create Or Update Alias(Disaster Recovery configurations) */
   properties?: OpenapiArmDisasterRecovery_Properties | Computed<OpenapiArmDisasterRecovery_Properties>;
   /** path parameter, not part of the API's own resource representation */
@@ -43,7 +41,6 @@ export interface OpenapiArmDisasterRecoveryAttrs {
 export const OpenapiArmDisasterRecovery: ResourceBinding<OpenapiArmDisasterRecoveryConfig, OpenapiArmDisasterRecoveryAttrs> = {
   wireType: "azure_eventhub_openapi_arm_disaster_recovery",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

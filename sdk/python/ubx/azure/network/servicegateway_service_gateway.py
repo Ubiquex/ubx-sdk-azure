@@ -4911,8 +4911,6 @@ _ServicegatewayServiceGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class ServicegatewayServiceGatewayConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the service gateway.
     properties: Any = None
     # SKU of a service gateway.
@@ -4934,7 +4932,6 @@ class ServicegatewayServiceGatewayAttrs:
 ServicegatewayServiceGateway = ubx.ResourceBinding(
     wire_type="azure_network_servicegateway_service_gateway",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

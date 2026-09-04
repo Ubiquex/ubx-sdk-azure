@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteBasicAuthPropertiesArmresource_Value_Properties struct {
 	ApplicableEnvironmentsMode any
-	Environments any
-	Password any
-	SecretState any
-	SecretUrl any
+	Environments               any
+	Password                   any
+	SecretState                any
+	SecretUrl                  any
 }
 
 type OpenapiStaticSiteBasicAuthPropertiesArmresource_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

@@ -17,8 +17,6 @@ _DefenderForAisetting_PropertiesFields = {
 
 @dataclasses.dataclass
 class DefenderForAisettingConfig:
-    # Resource Etag.
-    etag: Any = None
     # The Defender for AI resource properties.
     properties: Any = None
     # Resource tags.
@@ -36,7 +34,6 @@ class DefenderForAisettingAttrs:
 DefenderForAisetting = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_defender_for_aisetting",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

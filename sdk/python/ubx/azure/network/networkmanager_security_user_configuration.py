@@ -36,21 +36,10 @@ _NetworkmanagerSecurityUserConfiguration_PropertiesFields = {
     "resource_guid": ubx.FieldSpec(wire_name="resource_guid"),
 }
 
-_NetworkmanagerSecurityUserConfiguration_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class NetworkmanagerSecurityUserConfigurationConfig:
     # Defines the security user configuration properties.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class NetworkmanagerSecurityUserConfigurationAttrs:
@@ -66,11 +55,6 @@ NetworkmanagerSecurityUserConfiguration = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_NetworkmanagerSecurityUserConfiguration_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_NetworkmanagerSecurityUserConfiguration_SystemDataFields,
         ),
     },
 )

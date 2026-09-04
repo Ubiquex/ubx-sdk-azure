@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkrulesVirtualNetworkRule_Value_Properties struct {
 	IgnoreMissingVnetServiceEndpoint any
-	State any
-	VirtualNetworkSubnetId any
+	State                            any
+	VirtualNetworkSubnetId           any
 }
 
 type VirtualnetworkrulesVirtualNetworkRule_Value struct {
@@ -19,7 +19,7 @@ type VirtualnetworkrulesVirtualNetworkRuleConfig struct {
 
 type VirtualnetworkrulesVirtualNetworkRuleAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The VirtualNetworkRule items on this page
 	Value any

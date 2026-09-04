@@ -15,21 +15,15 @@ type FirstpartyservicetagFirstPartyServiceTag_Properties struct {
 }
 
 var FirstpartyservicetagFirstPartyServiceTag_PropertiesFields = ubx.FieldMap{
-		"FailedReason": ubx.FieldSpec{WireName: "failed_reason"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"FailedReason":      ubx.FieldSpec{WireName: "failed_reason"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"Value":             ubx.FieldSpec{WireName: "value"},
+}
 
 type FirstpartyservicetagFirstPartyServiceTagConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
-	// The unique identifier of the resource.
-	Id any
 	// Properties of the first party service tag.
 	Properties any
-	// The type of the resource.
-	Type any
 }
 
 type FirstpartyservicetagFirstPartyServiceTagAttrs struct {
@@ -46,13 +40,10 @@ type FirstpartyservicetagFirstPartyServiceTagAttrs struct {
 var FirstpartyservicetagFirstPartyServiceTag = ubx.ResourceBinding{
 	WireType: "azure_network_firstpartyservicetag_first_party_service_tag",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
+			Kind:     "object",
+			Fields:   FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

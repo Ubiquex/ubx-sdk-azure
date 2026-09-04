@@ -8,9 +8,9 @@ type AccessPolicyAssignment_Value_Properties_User struct {
 }
 
 type AccessPolicyAssignment_Value_Properties struct {
-	AccessPolicyName any
+	AccessPolicyName  any
 	ProvisioningState any
-	User any
+	User              any
 }
 
 type AccessPolicyAssignment_Value struct {
@@ -18,12 +18,12 @@ type AccessPolicyAssignment_Value struct {
 }
 
 type AccessPolicyAssignmentConfig struct {
-	ClusterName any
+	ClusterName  any
 	DatabaseName any
 }
 
 type AccessPolicyAssignmentAttrs struct {
-	ClusterName any
+	ClusterName  any
 	DatabaseName any
 	// The URI to fetch the next page of results.
 	NextLink any
@@ -34,7 +34,7 @@ type AccessPolicyAssignmentAttrs struct {
 var AccessPolicyAssignment = ubx.DataSourceBinding{
 	WireType: "azure_redisenterprise_access_policy_assignment",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":  ubx.FieldSpec{WireName: "cluster_name"},
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 	},
 }

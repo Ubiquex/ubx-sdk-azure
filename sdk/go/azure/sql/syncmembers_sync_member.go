@@ -31,19 +31,19 @@ type SyncmembersSyncMember_Properties struct {
 }
 
 var SyncmembersSyncMember_PropertiesFields = ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"DatabaseType": ubx.FieldSpec{WireName: "database_type"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"PrivateEndpointName": ubx.FieldSpec{WireName: "private_endpoint_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"SqlServerDatabaseId": ubx.FieldSpec{WireName: "sql_server_database_id"},
-		"SyncAgentId": ubx.FieldSpec{WireName: "sync_agent_id"},
-		"SyncDirection": ubx.FieldSpec{WireName: "sync_direction"},
-		"SyncMemberAzureDatabaseResourceId": ubx.FieldSpec{WireName: "sync_member_azure_database_resource_id"},
-		"SyncState": ubx.FieldSpec{WireName: "sync_state"},
-		"UsePrivateLinkConnection": ubx.FieldSpec{WireName: "use_private_link_connection"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-	}
+	"DatabaseName":                      ubx.FieldSpec{WireName: "database_name"},
+	"DatabaseType":                      ubx.FieldSpec{WireName: "database_type"},
+	"Password":                          ubx.FieldSpec{WireName: "password"},
+	"PrivateEndpointName":               ubx.FieldSpec{WireName: "private_endpoint_name"},
+	"ServerName":                        ubx.FieldSpec{WireName: "server_name"},
+	"SqlServerDatabaseId":               ubx.FieldSpec{WireName: "sql_server_database_id"},
+	"SyncAgentId":                       ubx.FieldSpec{WireName: "sync_agent_id"},
+	"SyncDirection":                     ubx.FieldSpec{WireName: "sync_direction"},
+	"SyncMemberAzureDatabaseResourceId": ubx.FieldSpec{WireName: "sync_member_azure_database_resource_id"},
+	"SyncState":                         ubx.FieldSpec{WireName: "sync_state"},
+	"UsePrivateLinkConnection":          ubx.FieldSpec{WireName: "use_private_link_connection"},
+	"UserName":                          ubx.FieldSpec{WireName: "user_name"},
+}
 
 type SyncmembersSyncMemberConfig struct {
 	// Properties of a sync member with support to MI.
@@ -60,8 +60,8 @@ var SyncmembersSyncMember = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SyncmembersSyncMember_PropertiesFields,
+			Kind:     "object",
+			Fields:   SyncmembersSyncMember_PropertiesFields,
 		},
 	},
 }

@@ -36,8 +36,6 @@ const VirtualnetworkIpGroup_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkIpGroupConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** The IpGroups property information. */
   properties?: VirtualnetworkIpGroup_Properties | Computed<VirtualnetworkIpGroup_Properties>;
 }
@@ -52,7 +50,6 @@ export interface VirtualnetworkIpGroupAttrs {
 export const VirtualnetworkIpGroup: ResourceBinding<VirtualnetworkIpGroupConfig, VirtualnetworkIpGroupAttrs> = {
   wireType: "azure_network_virtualnetwork_ip_group",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -48,8 +48,6 @@ const VirtualwanVirtualWan_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualwanVirtualWanConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Parameters for VirtualWAN. */
   properties?: VirtualwanVirtualWan_Properties | Computed<VirtualwanVirtualWan_Properties>;
 }
@@ -64,7 +62,6 @@ export interface VirtualwanVirtualWanAttrs {
 export const VirtualwanVirtualWan: ResourceBinding<VirtualwanVirtualWanConfig, VirtualwanVirtualWanAttrs> = {
   wireType: "azure_network_virtualwan_virtual_wan",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

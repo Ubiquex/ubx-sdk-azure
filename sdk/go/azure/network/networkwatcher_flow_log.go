@@ -4,7 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkwatcherFlowLog_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -75,75 +75,73 @@ type NetworkwatcherFlowLog_Properties struct {
 }
 
 var NetworkwatcherFlowLog_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var NetworkwatcherFlowLog_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: NetworkwatcherFlowLog_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   NetworkwatcherFlowLog_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var NetworkwatcherFlowLog_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"TrafficAnalyticsInterval": ubx.FieldSpec{WireName: "traffic_analytics_interval"},
-		"WorkspaceId": ubx.FieldSpec{WireName: "workspace_id"},
-		"WorkspaceRegion": ubx.FieldSpec{WireName: "workspace_region"},
-		"WorkspaceResourceId": ubx.FieldSpec{WireName: "workspace_resource_id"},
-	}
+	"Enabled":                  ubx.FieldSpec{WireName: "enabled"},
+	"TrafficAnalyticsInterval": ubx.FieldSpec{WireName: "traffic_analytics_interval"},
+	"WorkspaceId":              ubx.FieldSpec{WireName: "workspace_id"},
+	"WorkspaceRegion":          ubx.FieldSpec{WireName: "workspace_region"},
+	"WorkspaceResourceId":      ubx.FieldSpec{WireName: "workspace_resource_id"},
+}
 
 var NetworkwatcherFlowLog_Properties_FlowAnalyticsConfigurationFields = ubx.FieldMap{
-		"NetworkWatcherFlowAnalyticsConfiguration": ubx.FieldSpec{
-			WireName: "network_watcher_flow_analytics_configuration",
-			Kind: "object",
-			Fields: NetworkwatcherFlowLog_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields,
-		},
-	}
+	"NetworkWatcherFlowAnalyticsConfiguration": ubx.FieldSpec{
+		WireName: "network_watcher_flow_analytics_configuration",
+		Kind:     "object",
+		Fields:   NetworkwatcherFlowLog_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields,
+	},
+}
 
 var NetworkwatcherFlowLog_Properties_FormatFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Type":    ubx.FieldSpec{WireName: "type"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var NetworkwatcherFlowLog_Properties_RetentionPolicyFields = ubx.FieldMap{
-		"Days": ubx.FieldSpec{WireName: "days"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Days":    ubx.FieldSpec{WireName: "days"},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var NetworkwatcherFlowLog_PropertiesFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"EnabledFilteringCriteria": ubx.FieldSpec{WireName: "enabled_filtering_criteria"},
-		"FlowAnalyticsConfiguration": ubx.FieldSpec{
-			WireName: "flow_analytics_configuration",
-			Kind: "object",
-			Fields: NetworkwatcherFlowLog_Properties_FlowAnalyticsConfigurationFields,
-		},
-		"Format": ubx.FieldSpec{
-			WireName: "format",
-			Kind: "object",
-			Fields: NetworkwatcherFlowLog_Properties_FormatFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RecordTypes": ubx.FieldSpec{WireName: "record_types"},
-		"RetentionPolicy": ubx.FieldSpec{
-			WireName: "retention_policy",
-			Kind: "object",
-			Fields: NetworkwatcherFlowLog_Properties_RetentionPolicyFields,
-		},
-		"StorageId": ubx.FieldSpec{WireName: "storage_id"},
-		"TargetResourceGuid": ubx.FieldSpec{WireName: "target_resource_guid"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-	}
+	"Enabled":                  ubx.FieldSpec{WireName: "enabled"},
+	"EnabledFilteringCriteria": ubx.FieldSpec{WireName: "enabled_filtering_criteria"},
+	"FlowAnalyticsConfiguration": ubx.FieldSpec{
+		WireName: "flow_analytics_configuration",
+		Kind:     "object",
+		Fields:   NetworkwatcherFlowLog_Properties_FlowAnalyticsConfigurationFields,
+	},
+	"Format": ubx.FieldSpec{
+		WireName: "format",
+		Kind:     "object",
+		Fields:   NetworkwatcherFlowLog_Properties_FormatFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RecordTypes":       ubx.FieldSpec{WireName: "record_types"},
+	"RetentionPolicy": ubx.FieldSpec{
+		WireName: "retention_policy",
+		Kind:     "object",
+		Fields:   NetworkwatcherFlowLog_Properties_RetentionPolicyFields,
+	},
+	"StorageId":          ubx.FieldSpec{WireName: "storage_id"},
+	"TargetResourceGuid": ubx.FieldSpec{WireName: "target_resource_guid"},
+	"TargetResourceId":   ubx.FieldSpec{WireName: "target_resource_id"},
+}
 
 type NetworkwatcherFlowLogConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Identity for the resource.
 	Identity any
 	// Parameters that define the configuration of flow log.
@@ -162,16 +160,15 @@ type NetworkwatcherFlowLogAttrs struct {
 var NetworkwatcherFlowLog = ubx.ResourceBinding{
 	WireType: "azure_network_networkwatcher_flow_log",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: NetworkwatcherFlowLog_IdentityFields,
+			Kind:     "object",
+			Fields:   NetworkwatcherFlowLog_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkwatcherFlowLog_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkwatcherFlowLog_PropertiesFields,
 		},
 	},
 }

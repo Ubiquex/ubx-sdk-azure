@@ -4,7 +4,7 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Sbnamespace_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -24,10 +24,10 @@ type Sbnamespace_Properties_Encryption_KeyVaultProperties_Identity struct {
 }
 
 type Sbnamespace_Properties_Encryption_KeyVaultProperties struct {
-	Identity any
-	KeyName any
+	Identity    any
+	KeyName     any
 	KeyVaultUri any
-	KeyVersion any
+	KeyVersion  any
 }
 
 type Sbnamespace_Properties_Encryption struct {
@@ -41,7 +41,7 @@ type Sbnamespace_Properties_Encryption struct {
 
 type Sbnamespace_Properties_GeoDataReplication_Locations struct {
 	LocationName any
-	RoleType any
+	RoleType     any
 }
 
 type Sbnamespace_Properties_GeoDataReplication struct {
@@ -66,17 +66,17 @@ type Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoin
 
 type Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	Description any
-	Status any
+	Status      any
 }
 
 type Sbnamespace_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Sbnamespace_Properties_PrivateEndpointConnections struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -96,7 +96,7 @@ type Sbnamespace_Properties struct {
 	// Identifier for Azure Insights metrics
 	MetricId any
 	// The minimum TLS version for the cluster to support, e.g. '1.3'
-	MinimumTlsVersion any
+	MinimumTlsVersion    any
 	PlatformCapabilities any
 	// The number of partitions of a Service Bus namespace. This property is only applicable to Premium SKU namespaces. The default value is 1 and possible values are 1, 2 and 4
 	PremiumMessagingPartitions any
@@ -126,145 +126,145 @@ type Sbnamespace_Sku struct {
 }
 
 var Sbnamespace_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Sbnamespace_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Sbnamespace_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Sbnamespace_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Sbnamespace_Properties_Encryption_KeyVaultProperties_IdentityFields = ubx.FieldMap{
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var Sbnamespace_Properties_Encryption_KeyVaultPropertiesFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: Sbnamespace_Properties_Encryption_KeyVaultProperties_IdentityFields,
-		},
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-	}
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   Sbnamespace_Properties_Encryption_KeyVaultProperties_IdentityFields,
+	},
+	"KeyName":     ubx.FieldSpec{WireName: "key_name"},
+	"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
+	"KeyVersion":  ubx.FieldSpec{WireName: "key_version"},
+}
 
 var Sbnamespace_Properties_EncryptionFields = ubx.FieldMap{
-		"KeySource": ubx.FieldSpec{WireName: "key_source"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "list",
-			Fields: Sbnamespace_Properties_Encryption_KeyVaultPropertiesFields,
-		},
-		"RequireInfrastructureEncryption": ubx.FieldSpec{WireName: "require_infrastructure_encryption"},
-	}
+	"KeySource": ubx.FieldSpec{WireName: "key_source"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "list",
+		Fields:   Sbnamespace_Properties_Encryption_KeyVaultPropertiesFields,
+	},
+	"RequireInfrastructureEncryption": ubx.FieldSpec{WireName: "require_infrastructure_encryption"},
+}
 
 var Sbnamespace_Properties_GeoDataReplication_LocationsFields = ubx.FieldMap{
-		"LocationName": ubx.FieldSpec{WireName: "location_name"},
-		"RoleType": ubx.FieldSpec{WireName: "role_type"},
-	}
+	"LocationName": ubx.FieldSpec{WireName: "location_name"},
+	"RoleType":     ubx.FieldSpec{WireName: "role_type"},
+}
 
 var Sbnamespace_Properties_GeoDataReplicationFields = ubx.FieldMap{
-		"Locations": ubx.FieldSpec{
-			WireName: "locations",
-			Kind: "list",
-			Fields: Sbnamespace_Properties_GeoDataReplication_LocationsFields,
-		},
-		"MaxReplicationLagDurationInSeconds": ubx.FieldSpec{WireName: "max_replication_lag_duration_in_seconds"},
-	}
+	"Locations": ubx.FieldSpec{
+		WireName: "locations",
+		Kind:     "list",
+		Fields:   Sbnamespace_Properties_GeoDataReplication_LocationsFields,
+	},
+	"MaxReplicationLagDurationInSeconds": ubx.FieldSpec{WireName: "max_replication_lag_duration_in_seconds"},
+}
 
 var Sbnamespace_Properties_PlatformCapabilities_ConfidentialComputeFields = ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+}
 
 var Sbnamespace_Properties_PlatformCapabilitiesFields = ubx.FieldMap{
-		"ConfidentialCompute": ubx.FieldSpec{
-			WireName: "confidential_compute",
-			Kind: "object",
-			Fields: Sbnamespace_Properties_PlatformCapabilities_ConfidentialComputeFields,
-		},
-	}
+	"ConfidentialCompute": ubx.FieldSpec{
+		WireName: "confidential_compute",
+		Kind:     "object",
+		Fields:   Sbnamespace_Properties_PlatformCapabilities_ConfidentialComputeFields,
+	},
+}
 
 var Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var Sbnamespace_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Sbnamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Sbnamespace_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Sbnamespace_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Sbnamespace_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Sbnamespace_PropertiesFields = ubx.FieldMap{
-		"AlternateName": ubx.FieldSpec{WireName: "alternate_name"},
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: Sbnamespace_Properties_EncryptionFields,
-		},
-		"GeoDataReplication": ubx.FieldSpec{
-			WireName: "geo_data_replication",
-			Kind: "object",
-			Fields: Sbnamespace_Properties_GeoDataReplicationFields,
-		},
-		"IpAddressType": ubx.FieldSpec{WireName: "ip_address_type"},
-		"MetricId": ubx.FieldSpec{WireName: "metric_id"},
-		"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
-		"PlatformCapabilities": ubx.FieldSpec{
-			WireName: "platform_capabilities",
-			Kind: "object",
-			Fields: Sbnamespace_Properties_PlatformCapabilitiesFields,
-		},
-		"PremiumMessagingPartitions": ubx.FieldSpec{WireName: "premium_messaging_partitions"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Sbnamespace_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"ServiceBusEndpoint": ubx.FieldSpec{WireName: "service_bus_endpoint"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-	}
+	"AlternateName":    ubx.FieldSpec{WireName: "alternate_name"},
+	"CreatedAt":        ubx.FieldSpec{WireName: "created_at"},
+	"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   Sbnamespace_Properties_EncryptionFields,
+	},
+	"GeoDataReplication": ubx.FieldSpec{
+		WireName: "geo_data_replication",
+		Kind:     "object",
+		Fields:   Sbnamespace_Properties_GeoDataReplicationFields,
+	},
+	"IpAddressType":     ubx.FieldSpec{WireName: "ip_address_type"},
+	"MetricId":          ubx.FieldSpec{WireName: "metric_id"},
+	"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
+	"PlatformCapabilities": ubx.FieldSpec{
+		WireName: "platform_capabilities",
+		Kind:     "object",
+		Fields:   Sbnamespace_Properties_PlatformCapabilitiesFields,
+	},
+	"PremiumMessagingPartitions": ubx.FieldSpec{WireName: "premium_messaging_partitions"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Sbnamespace_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ServiceBusEndpoint":  ubx.FieldSpec{WireName: "service_bus_endpoint"},
+	"Status":              ubx.FieldSpec{WireName: "status"},
+	"UpdatedAt":           ubx.FieldSpec{WireName: "updated_at"},
+	"ZoneRedundant":       ubx.FieldSpec{WireName: "zone_redundant"},
+}
 
 var Sbnamespace_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type SbnamespaceConfig struct {
 	// Properties to configure User Assigned Identities for Bring your Own Keys
@@ -289,18 +289,18 @@ var Sbnamespace = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Sbnamespace_IdentityFields,
+			Kind:     "object",
+			Fields:   Sbnamespace_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Sbnamespace_PropertiesFields,
+			Kind:     "object",
+			Fields:   Sbnamespace_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Sbnamespace_SkuFields,
+			Kind:     "object",
+			Fields:   Sbnamespace_SkuFields,
 		},
 	},
 }

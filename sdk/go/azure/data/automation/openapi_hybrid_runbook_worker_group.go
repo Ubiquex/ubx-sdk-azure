@@ -9,7 +9,7 @@ type OpenapiHybridRunbookWorkerGroup_Value_Properties_Credential struct {
 
 type OpenapiHybridRunbookWorkerGroup_Value_Properties struct {
 	Credential any
-	GroupType any
+	GroupType  any
 }
 
 type OpenapiHybridRunbookWorkerGroup_Value struct {

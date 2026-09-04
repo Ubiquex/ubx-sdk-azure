@@ -4,7 +4,7 @@ package databox
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -26,7 +26,7 @@ type JobResource_Properties_DeliveryInfo struct {
 
 type JobResource_Properties_Details_ContactDetails_NotificationPreference struct {
 	SendNotification any
-	StageName any
+	StageName        any
 }
 
 type JobResource_Properties_Details_ContactDetails struct {
@@ -50,11 +50,11 @@ type JobResource_Properties_Details_CopyLogDetails struct {
 
 type JobResource_Properties_Details_DataExportDetails_AccountDetails struct {
 	DataAccountType any
-	SharePassword any
+	SharePassword   any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_Include struct {
-	DataAccountType any
+	DataAccountType  any
 	TransferAllBlobs any
 	TransferAllFiles any
 }
@@ -64,15 +64,15 @@ type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_Tran
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetails struct {
-	FilePathList any
+	FilePathList   any
 	FilePrefixList any
-	FileShareList any
+	FileShareList  any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetails struct {
-	BlobPathList any
+	BlobPathList   any
 	BlobPrefixList any
-	ContainerList any
+	ContainerList  any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetails struct {
@@ -82,9 +82,9 @@ type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_Tran
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include struct {
 	AzureFileFilterDetails any
-	BlobFilterDetails any
-	DataAccountType any
-	FilterFileDetails any
+	BlobFilterDetails      any
+	DataAccountType        any
+	FilterFileDetails      any
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails struct {
@@ -92,19 +92,19 @@ type JobResource_Properties_Details_DataExportDetails_TransferConfiguration_Tran
 }
 
 type JobResource_Properties_Details_DataExportDetails_TransferConfiguration struct {
-	TransferAllDetails any
+	TransferAllDetails        any
 	TransferConfigurationType any
-	TransferFilterDetails any
+	TransferFilterDetails     any
 }
 
 type JobResource_Properties_Details_DataExportDetails struct {
-	AccountDetails any
-	LogCollectionLevel any
+	AccountDetails        any
+	LogCollectionLevel    any
 	TransferConfiguration any
 }
 
 type JobResource_Properties_Details_DataImportDetails struct {
-	AccountDetails any
+	AccountDetails     any
 	LogCollectionLevel any
 }
 
@@ -136,20 +136,20 @@ type JobResource_Properties_Details_DeviceErasureDetails struct {
 }
 
 type JobResource_Properties_Details_JobStages_DelayInformation struct {
-	Description any
-	ErrorCode any
+	Description    any
+	ErrorCode      any
 	ResolutionTime any
-	StartTime any
-	Status any
+	StartTime      any
+	Status         any
 }
 
 type JobResource_Properties_Details_JobStages struct {
 	DelayInformation any
-	DisplayName any
-	JobStageDetails any
-	StageName any
-	StageStatus any
-	StageTime any
+	DisplayName      any
+	JobStageDetails  any
+	StageName        any
+	StageStatus      any
+	StageTime        any
 }
 
 type JobResource_Properties_Details_KeyEncryptionKey_IdentityProperties_UserAssigned struct {
@@ -371,423 +371,422 @@ type JobResource_Sku struct {
 }
 
 var JobResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var JobResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: JobResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   JobResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var JobResource_Properties_DeliveryInfoFields = ubx.FieldMap{
-		"ScheduledDateTime": ubx.FieldSpec{WireName: "scheduled_date_time"},
-	}
+	"ScheduledDateTime": ubx.FieldSpec{WireName: "scheduled_date_time"},
+}
 
 var JobResource_Properties_Details_ContactDetails_NotificationPreferenceFields = ubx.FieldMap{
-		"SendNotification": ubx.FieldSpec{WireName: "send_notification"},
-		"StageName": ubx.FieldSpec{WireName: "stage_name"},
-	}
+	"SendNotification": ubx.FieldSpec{WireName: "send_notification"},
+	"StageName":        ubx.FieldSpec{WireName: "stage_name"},
+}
 
 var JobResource_Properties_Details_ContactDetailsFields = ubx.FieldMap{
-		"ContactName": ubx.FieldSpec{WireName: "contact_name"},
-		"EmailList": ubx.FieldSpec{WireName: "email_list"},
-		"Mobile": ubx.FieldSpec{WireName: "mobile"},
-		"NotificationPreference": ubx.FieldSpec{
-			WireName: "notification_preference",
-			Kind: "list",
-			Fields: JobResource_Properties_Details_ContactDetails_NotificationPreferenceFields,
-		},
-		"Phone": ubx.FieldSpec{WireName: "phone"},
-		"PhoneExtension": ubx.FieldSpec{WireName: "phone_extension"},
-	}
+	"ContactName": ubx.FieldSpec{WireName: "contact_name"},
+	"EmailList":   ubx.FieldSpec{WireName: "email_list"},
+	"Mobile":      ubx.FieldSpec{WireName: "mobile"},
+	"NotificationPreference": ubx.FieldSpec{
+		WireName: "notification_preference",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Details_ContactDetails_NotificationPreferenceFields,
+	},
+	"Phone":          ubx.FieldSpec{WireName: "phone"},
+	"PhoneExtension": ubx.FieldSpec{WireName: "phone_extension"},
+}
 
 var JobResource_Properties_Details_CopyLogDetailsFields = ubx.FieldMap{
-		"CopyLogDetailsType": ubx.FieldSpec{WireName: "copy_log_details_type"},
-	}
+	"CopyLogDetailsType": ubx.FieldSpec{WireName: "copy_log_details_type"},
+}
 
 var JobResource_Properties_Details_DataExportDetails_AccountDetailsFields = ubx.FieldMap{
-		"DataAccountType": ubx.FieldSpec{WireName: "data_account_type"},
-		"SharePassword": ubx.FieldSpec{WireName: "share_password"},
-	}
+	"DataAccountType": ubx.FieldSpec{WireName: "data_account_type"},
+	"SharePassword":   ubx.FieldSpec{WireName: "share_password"},
+}
 
 var JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_IncludeFields = ubx.FieldMap{
-		"DataAccountType": ubx.FieldSpec{WireName: "data_account_type"},
-		"TransferAllBlobs": ubx.FieldSpec{WireName: "transfer_all_blobs"},
-		"TransferAllFiles": ubx.FieldSpec{WireName: "transfer_all_files"},
-	}
+	"DataAccountType":  ubx.FieldSpec{WireName: "data_account_type"},
+	"TransferAllBlobs": ubx.FieldSpec{WireName: "transfer_all_blobs"},
+	"TransferAllFiles": ubx.FieldSpec{WireName: "transfer_all_files"},
+}
 
 var JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetailsFields = ubx.FieldMap{
-		"Include": ubx.FieldSpec{
-			WireName: "include",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_IncludeFields,
-		},
-	}
+	"Include": ubx.FieldSpec{
+		WireName: "include",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetails_IncludeFields,
+	},
+}
 
 var JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetailsFields = ubx.FieldMap{
-		"FilePathList": ubx.FieldSpec{WireName: "file_path_list"},
-		"FilePrefixList": ubx.FieldSpec{WireName: "file_prefix_list"},
-		"FileShareList": ubx.FieldSpec{WireName: "file_share_list"},
-	}
+	"FilePathList":   ubx.FieldSpec{WireName: "file_path_list"},
+	"FilePrefixList": ubx.FieldSpec{WireName: "file_prefix_list"},
+	"FileShareList":  ubx.FieldSpec{WireName: "file_share_list"},
+}
 
 var JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetailsFields = ubx.FieldMap{
-		"BlobPathList": ubx.FieldSpec{WireName: "blob_path_list"},
-		"BlobPrefixList": ubx.FieldSpec{WireName: "blob_prefix_list"},
-		"ContainerList": ubx.FieldSpec{WireName: "container_list"},
-	}
+	"BlobPathList":   ubx.FieldSpec{WireName: "blob_path_list"},
+	"BlobPrefixList": ubx.FieldSpec{WireName: "blob_prefix_list"},
+	"ContainerList":  ubx.FieldSpec{WireName: "container_list"},
+}
 
 var JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetailsFields = ubx.FieldMap{
-		"FilterFilePath": ubx.FieldSpec{WireName: "filter_file_path"},
-		"FilterFileType": ubx.FieldSpec{WireName: "filter_file_type"},
-	}
+	"FilterFilePath": ubx.FieldSpec{WireName: "filter_file_path"},
+	"FilterFileType": ubx.FieldSpec{WireName: "filter_file_type"},
+}
 
 var JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_IncludeFields = ubx.FieldMap{
-		"AzureFileFilterDetails": ubx.FieldSpec{
-			WireName: "azure_file_filter_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetailsFields,
-		},
-		"BlobFilterDetails": ubx.FieldSpec{
-			WireName: "blob_filter_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetailsFields,
-		},
-		"DataAccountType": ubx.FieldSpec{WireName: "data_account_type"},
-		"FilterFileDetails": ubx.FieldSpec{
-			WireName: "filter_file_details",
-			Kind: "list",
-			Fields: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetailsFields,
-		},
-	}
+	"AzureFileFilterDetails": ubx.FieldSpec{
+		WireName: "azure_file_filter_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_AzureFileFilterDetailsFields,
+	},
+	"BlobFilterDetails": ubx.FieldSpec{
+		WireName: "blob_filter_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_BlobFilterDetailsFields,
+	},
+	"DataAccountType": ubx.FieldSpec{WireName: "data_account_type"},
+	"FilterFileDetails": ubx.FieldSpec{
+		WireName: "filter_file_details",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_Include_FilterFileDetailsFields,
+	},
+}
 
 var JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetailsFields = ubx.FieldMap{
-		"Include": ubx.FieldSpec{
-			WireName: "include",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_IncludeFields,
-		},
-	}
+	"Include": ubx.FieldSpec{
+		WireName: "include",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetails_IncludeFields,
+	},
+}
 
 var JobResource_Properties_Details_DataExportDetails_TransferConfigurationFields = ubx.FieldMap{
-		"TransferAllDetails": ubx.FieldSpec{
-			WireName: "transfer_all_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetailsFields,
-		},
-		"TransferConfigurationType": ubx.FieldSpec{WireName: "transfer_configuration_type"},
-		"TransferFilterDetails": ubx.FieldSpec{
-			WireName: "transfer_filter_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetailsFields,
-		},
-	}
+	"TransferAllDetails": ubx.FieldSpec{
+		WireName: "transfer_all_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferAllDetailsFields,
+	},
+	"TransferConfigurationType": ubx.FieldSpec{WireName: "transfer_configuration_type"},
+	"TransferFilterDetails": ubx.FieldSpec{
+		WireName: "transfer_filter_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_TransferConfiguration_TransferFilterDetailsFields,
+	},
+}
 
 var JobResource_Properties_Details_DataExportDetailsFields = ubx.FieldMap{
-		"AccountDetails": ubx.FieldSpec{
-			WireName: "account_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_AccountDetailsFields,
-		},
-		"LogCollectionLevel": ubx.FieldSpec{WireName: "log_collection_level"},
-		"TransferConfiguration": ubx.FieldSpec{
-			WireName: "transfer_configuration",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_TransferConfigurationFields,
-		},
-	}
+	"AccountDetails": ubx.FieldSpec{
+		WireName: "account_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_AccountDetailsFields,
+	},
+	"LogCollectionLevel": ubx.FieldSpec{WireName: "log_collection_level"},
+	"TransferConfiguration": ubx.FieldSpec{
+		WireName: "transfer_configuration",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_TransferConfigurationFields,
+	},
+}
 
 var JobResource_Properties_Details_DataImportDetailsFields = ubx.FieldMap{
-		"AccountDetails": ubx.FieldSpec{
-			WireName: "account_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DataExportDetails_AccountDetailsFields,
-		},
-		"LogCollectionLevel": ubx.FieldSpec{WireName: "log_collection_level"},
-	}
+	"AccountDetails": ubx.FieldSpec{
+		WireName: "account_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DataExportDetails_AccountDetailsFields,
+	},
+	"LogCollectionLevel": ubx.FieldSpec{WireName: "log_collection_level"},
+}
 
 var JobResource_Properties_Details_DatacenterAddressFields = ubx.FieldMap{
-		"DataCenterAzureLocation": ubx.FieldSpec{WireName: "data_center_azure_location"},
-		"DatacenterAddressType": ubx.FieldSpec{WireName: "datacenter_address_type"},
-		"SupportedCarriersForReturnShipment": ubx.FieldSpec{WireName: "supported_carriers_for_return_shipment"},
-	}
+	"DataCenterAzureLocation":            ubx.FieldSpec{WireName: "data_center_azure_location"},
+	"DatacenterAddressType":              ubx.FieldSpec{WireName: "datacenter_address_type"},
+	"SupportedCarriersForReturnShipment": ubx.FieldSpec{WireName: "supported_carriers_for_return_shipment"},
+}
 
 var JobResource_Properties_Details_DeliveryPackageFields = ubx.FieldMap{
-		"CarrierName": ubx.FieldSpec{WireName: "carrier_name"},
-		"TrackingId": ubx.FieldSpec{WireName: "tracking_id"},
-		"TrackingUrl": ubx.FieldSpec{WireName: "tracking_url"},
-	}
+	"CarrierName": ubx.FieldSpec{WireName: "carrier_name"},
+	"TrackingId":  ubx.FieldSpec{WireName: "tracking_id"},
+	"TrackingUrl": ubx.FieldSpec{WireName: "tracking_url"},
+}
 
 var JobResource_Properties_Details_DeviceErasureDetailsFields = ubx.FieldMap{
-		"DeviceErasureStatus": ubx.FieldSpec{WireName: "device_erasure_status"},
-		"ErasureOrDestructionCertificateSasKey": ubx.FieldSpec{WireName: "erasure_or_destruction_certificate_sas_key"},
-		"SecureErasureCertificateSasKey": ubx.FieldSpec{WireName: "secure_erasure_certificate_sas_key"},
-	}
+	"DeviceErasureStatus":                   ubx.FieldSpec{WireName: "device_erasure_status"},
+	"ErasureOrDestructionCertificateSasKey": ubx.FieldSpec{WireName: "erasure_or_destruction_certificate_sas_key"},
+	"SecureErasureCertificateSasKey":        ubx.FieldSpec{WireName: "secure_erasure_certificate_sas_key"},
+}
 
 var JobResource_Properties_Details_JobStages_DelayInformationFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ResolutionTime": ubx.FieldSpec{WireName: "resolution_time"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Description":    ubx.FieldSpec{WireName: "description"},
+	"ErrorCode":      ubx.FieldSpec{WireName: "error_code"},
+	"ResolutionTime": ubx.FieldSpec{WireName: "resolution_time"},
+	"StartTime":      ubx.FieldSpec{WireName: "start_time"},
+	"Status":         ubx.FieldSpec{WireName: "status"},
+}
 
 var JobResource_Properties_Details_JobStagesFields = ubx.FieldMap{
-		"DelayInformation": ubx.FieldSpec{
-			WireName: "delay_information",
-			Kind: "list",
-			Fields: JobResource_Properties_Details_JobStages_DelayInformationFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"JobStageDetails": ubx.FieldSpec{WireName: "job_stage_details"},
-		"StageName": ubx.FieldSpec{WireName: "stage_name"},
-		"StageStatus": ubx.FieldSpec{WireName: "stage_status"},
-		"StageTime": ubx.FieldSpec{WireName: "stage_time"},
-	}
+	"DelayInformation": ubx.FieldSpec{
+		WireName: "delay_information",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Details_JobStages_DelayInformationFields,
+	},
+	"DisplayName":     ubx.FieldSpec{WireName: "display_name"},
+	"JobStageDetails": ubx.FieldSpec{WireName: "job_stage_details"},
+	"StageName":       ubx.FieldSpec{WireName: "stage_name"},
+	"StageStatus":     ubx.FieldSpec{WireName: "stage_status"},
+	"StageTime":       ubx.FieldSpec{WireName: "stage_time"},
+}
 
 var JobResource_Properties_Details_KeyEncryptionKey_IdentityProperties_UserAssignedFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var JobResource_Properties_Details_KeyEncryptionKey_IdentityPropertiesFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssigned": ubx.FieldSpec{
-			WireName: "user_assigned",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_KeyEncryptionKey_IdentityProperties_UserAssignedFields,
-		},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"UserAssigned": ubx.FieldSpec{
+		WireName: "user_assigned",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_KeyEncryptionKey_IdentityProperties_UserAssignedFields,
+	},
+}
 
 var JobResource_Properties_Details_KeyEncryptionKeyFields = ubx.FieldMap{
-		"IdentityProperties": ubx.FieldSpec{
-			WireName: "identity_properties",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_KeyEncryptionKey_IdentityPropertiesFields,
-		},
-		"KekType": ubx.FieldSpec{WireName: "kek_type"},
-		"KekUrl": ubx.FieldSpec{WireName: "kek_url"},
-		"KekVaultResourceId": ubx.FieldSpec{WireName: "kek_vault_resource_id"},
-	}
+	"IdentityProperties": ubx.FieldSpec{
+		WireName: "identity_properties",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_KeyEncryptionKey_IdentityPropertiesFields,
+	},
+	"KekType":            ubx.FieldSpec{WireName: "kek_type"},
+	"KekUrl":             ubx.FieldSpec{WireName: "kek_url"},
+	"KekVaultResourceId": ubx.FieldSpec{WireName: "kek_vault_resource_id"},
+}
 
 var JobResource_Properties_Details_LastMitigationActionOnJobFields = ubx.FieldMap{
-		"ActionDateTimeInUtc": ubx.FieldSpec{WireName: "action_date_time_in_utc"},
-		"CustomerResolution": ubx.FieldSpec{WireName: "customer_resolution"},
-		"IsPerformedByCustomer": ubx.FieldSpec{WireName: "is_performed_by_customer"},
-	}
+	"ActionDateTimeInUtc":   ubx.FieldSpec{WireName: "action_date_time_in_utc"},
+	"CustomerResolution":    ubx.FieldSpec{WireName: "customer_resolution"},
+	"IsPerformedByCustomer": ubx.FieldSpec{WireName: "is_performed_by_customer"},
+}
 
 var JobResource_Properties_Details_Preferences_EncryptionPreferencesFields = ubx.FieldMap{
-		"DoubleEncryption": ubx.FieldSpec{WireName: "double_encryption"},
-		"HardwareEncryption": ubx.FieldSpec{WireName: "hardware_encryption"},
-	}
+	"DoubleEncryption":   ubx.FieldSpec{WireName: "double_encryption"},
+	"HardwareEncryption": ubx.FieldSpec{WireName: "hardware_encryption"},
+}
 
 var JobResource_Properties_Details_Preferences_ReverseTransportPreferencesFields = ubx.FieldMap{
-		"IsUpdated": ubx.FieldSpec{WireName: "is_updated"},
-		"PreferredShipmentType": ubx.FieldSpec{WireName: "preferred_shipment_type"},
-	}
+	"IsUpdated":             ubx.FieldSpec{WireName: "is_updated"},
+	"PreferredShipmentType": ubx.FieldSpec{WireName: "preferred_shipment_type"},
+}
 
 var JobResource_Properties_Details_PreferencesFields = ubx.FieldMap{
-		"EncryptionPreferences": ubx.FieldSpec{
-			WireName: "encryption_preferences",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_Preferences_EncryptionPreferencesFields,
-		},
-		"PreferredDataCenterRegion": ubx.FieldSpec{WireName: "preferred_data_center_region"},
-		"ReverseTransportPreferences": ubx.FieldSpec{
-			WireName: "reverse_transport_preferences",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_Preferences_ReverseTransportPreferencesFields,
-		},
-		"StorageAccountAccessTierPreferences": ubx.FieldSpec{WireName: "storage_account_access_tier_preferences"},
-		"TransportPreferences": ubx.FieldSpec{
-			WireName: "transport_preferences",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_Preferences_ReverseTransportPreferencesFields,
-		},
-	}
+	"EncryptionPreferences": ubx.FieldSpec{
+		WireName: "encryption_preferences",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_Preferences_EncryptionPreferencesFields,
+	},
+	"PreferredDataCenterRegion": ubx.FieldSpec{WireName: "preferred_data_center_region"},
+	"ReverseTransportPreferences": ubx.FieldSpec{
+		WireName: "reverse_transport_preferences",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_Preferences_ReverseTransportPreferencesFields,
+	},
+	"StorageAccountAccessTierPreferences": ubx.FieldSpec{WireName: "storage_account_access_tier_preferences"},
+	"TransportPreferences": ubx.FieldSpec{
+		WireName: "transport_preferences",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_Preferences_ReverseTransportPreferencesFields,
+	},
+}
 
 var JobResource_Properties_Details_ReverseShippingDetails_ContactDetailsFields = ubx.FieldMap{
-		"ContactName": ubx.FieldSpec{WireName: "contact_name"},
-		"Mobile": ubx.FieldSpec{WireName: "mobile"},
-		"Phone": ubx.FieldSpec{WireName: "phone"},
-		"PhoneExtension": ubx.FieldSpec{WireName: "phone_extension"},
-	}
+	"ContactName":    ubx.FieldSpec{WireName: "contact_name"},
+	"Mobile":         ubx.FieldSpec{WireName: "mobile"},
+	"Phone":          ubx.FieldSpec{WireName: "phone"},
+	"PhoneExtension": ubx.FieldSpec{WireName: "phone_extension"},
+}
 
 var JobResource_Properties_Details_ReverseShippingDetails_ShippingAddressFields = ubx.FieldMap{
-		"AddressType": ubx.FieldSpec{WireName: "address_type"},
-		"City": ubx.FieldSpec{WireName: "city"},
-		"CompanyName": ubx.FieldSpec{WireName: "company_name"},
-		"Country": ubx.FieldSpec{WireName: "country"},
-		"PostalCode": ubx.FieldSpec{WireName: "postal_code"},
-		"SkipAddressValidation": ubx.FieldSpec{WireName: "skip_address_validation"},
-		"StateOrProvince": ubx.FieldSpec{WireName: "state_or_province"},
-		"StreetAddress1": ubx.FieldSpec{WireName: "street_address1"},
-		"StreetAddress2": ubx.FieldSpec{WireName: "street_address2"},
-		"StreetAddress3": ubx.FieldSpec{WireName: "street_address3"},
-		"TaxIdentificationNumber": ubx.FieldSpec{WireName: "tax_identification_number"},
-		"ZipExtendedCode": ubx.FieldSpec{WireName: "zip_extended_code"},
-	}
+	"AddressType":             ubx.FieldSpec{WireName: "address_type"},
+	"City":                    ubx.FieldSpec{WireName: "city"},
+	"CompanyName":             ubx.FieldSpec{WireName: "company_name"},
+	"Country":                 ubx.FieldSpec{WireName: "country"},
+	"PostalCode":              ubx.FieldSpec{WireName: "postal_code"},
+	"SkipAddressValidation":   ubx.FieldSpec{WireName: "skip_address_validation"},
+	"StateOrProvince":         ubx.FieldSpec{WireName: "state_or_province"},
+	"StreetAddress1":          ubx.FieldSpec{WireName: "street_address1"},
+	"StreetAddress2":          ubx.FieldSpec{WireName: "street_address2"},
+	"StreetAddress3":          ubx.FieldSpec{WireName: "street_address3"},
+	"TaxIdentificationNumber": ubx.FieldSpec{WireName: "tax_identification_number"},
+	"ZipExtendedCode":         ubx.FieldSpec{WireName: "zip_extended_code"},
+}
 
 var JobResource_Properties_Details_ReverseShippingDetailsFields = ubx.FieldMap{
-		"ContactDetails": ubx.FieldSpec{
-			WireName: "contact_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_ReverseShippingDetails_ContactDetailsFields,
-		},
-		"IsUpdated": ubx.FieldSpec{WireName: "is_updated"},
-		"ShippingAddress": ubx.FieldSpec{
-			WireName: "shipping_address",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_ReverseShippingDetails_ShippingAddressFields,
-		},
-	}
+	"ContactDetails": ubx.FieldSpec{
+		WireName: "contact_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_ReverseShippingDetails_ContactDetailsFields,
+	},
+	"IsUpdated": ubx.FieldSpec{WireName: "is_updated"},
+	"ShippingAddress": ubx.FieldSpec{
+		WireName: "shipping_address",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_ReverseShippingDetails_ShippingAddressFields,
+	},
+}
 
 var JobResource_Properties_DetailsFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{WireName: "actions"},
-		"ChainOfCustodySasKey": ubx.FieldSpec{WireName: "chain_of_custody_sas_key"},
-		"ContactDetails": ubx.FieldSpec{
-			WireName: "contact_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_ContactDetailsFields,
-		},
-		"CopyLogDetails": ubx.FieldSpec{
-			WireName: "copy_log_details",
-			Kind: "list",
-			Fields: JobResource_Properties_Details_CopyLogDetailsFields,
-		},
-		"DataCenterCode": ubx.FieldSpec{WireName: "data_center_code"},
-		"DataExportDetails": ubx.FieldSpec{
-			WireName: "data_export_details",
-			Kind: "list",
-			Fields: JobResource_Properties_Details_DataExportDetailsFields,
-		},
-		"DataImportDetails": ubx.FieldSpec{
-			WireName: "data_import_details",
-			Kind: "list",
-			Fields: JobResource_Properties_Details_DataImportDetailsFields,
-		},
-		"DatacenterAddress": ubx.FieldSpec{
-			WireName: "datacenter_address",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DatacenterAddressFields,
-		},
-		"DeliveryPackage": ubx.FieldSpec{
-			WireName: "delivery_package",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DeliveryPackageFields,
-		},
-		"DeviceErasureDetails": ubx.FieldSpec{
-			WireName: "device_erasure_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DeviceErasureDetailsFields,
-		},
-		"ExpectedDataSizeInTeraBytes": ubx.FieldSpec{WireName: "expected_data_size_in_tera_bytes"},
-		"JobDetailsType": ubx.FieldSpec{WireName: "job_details_type"},
-		"JobStages": ubx.FieldSpec{
-			WireName: "job_stages",
-			Kind: "list",
-			Fields: JobResource_Properties_Details_JobStagesFields,
-		},
-		"KeyEncryptionKey": ubx.FieldSpec{
-			WireName: "key_encryption_key",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_KeyEncryptionKeyFields,
-		},
-		"LastMitigationActionOnJob": ubx.FieldSpec{
-			WireName: "last_mitigation_action_on_job",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_LastMitigationActionOnJobFields,
-		},
-		"Preferences": ubx.FieldSpec{
-			WireName: "preferences",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_PreferencesFields,
-		},
-		"ReturnPackage": ubx.FieldSpec{
-			WireName: "return_package",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_DeliveryPackageFields,
-		},
-		"ReverseShipmentLabelSasKey": ubx.FieldSpec{WireName: "reverse_shipment_label_sas_key"},
-		"ReverseShippingDetails": ubx.FieldSpec{
-			WireName: "reverse_shipping_details",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_ReverseShippingDetailsFields,
-		},
-		"ShippingAddress": ubx.FieldSpec{
-			WireName: "shipping_address",
-			Kind: "object",
-			Fields: JobResource_Properties_Details_ReverseShippingDetails_ShippingAddressFields,
-		},
-	}
+	"Actions":              ubx.FieldSpec{WireName: "actions"},
+	"ChainOfCustodySasKey": ubx.FieldSpec{WireName: "chain_of_custody_sas_key"},
+	"ContactDetails": ubx.FieldSpec{
+		WireName: "contact_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_ContactDetailsFields,
+	},
+	"CopyLogDetails": ubx.FieldSpec{
+		WireName: "copy_log_details",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Details_CopyLogDetailsFields,
+	},
+	"DataCenterCode": ubx.FieldSpec{WireName: "data_center_code"},
+	"DataExportDetails": ubx.FieldSpec{
+		WireName: "data_export_details",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Details_DataExportDetailsFields,
+	},
+	"DataImportDetails": ubx.FieldSpec{
+		WireName: "data_import_details",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Details_DataImportDetailsFields,
+	},
+	"DatacenterAddress": ubx.FieldSpec{
+		WireName: "datacenter_address",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DatacenterAddressFields,
+	},
+	"DeliveryPackage": ubx.FieldSpec{
+		WireName: "delivery_package",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DeliveryPackageFields,
+	},
+	"DeviceErasureDetails": ubx.FieldSpec{
+		WireName: "device_erasure_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DeviceErasureDetailsFields,
+	},
+	"ExpectedDataSizeInTeraBytes": ubx.FieldSpec{WireName: "expected_data_size_in_tera_bytes"},
+	"JobDetailsType":              ubx.FieldSpec{WireName: "job_details_type"},
+	"JobStages": ubx.FieldSpec{
+		WireName: "job_stages",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Details_JobStagesFields,
+	},
+	"KeyEncryptionKey": ubx.FieldSpec{
+		WireName: "key_encryption_key",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_KeyEncryptionKeyFields,
+	},
+	"LastMitigationActionOnJob": ubx.FieldSpec{
+		WireName: "last_mitigation_action_on_job",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_LastMitigationActionOnJobFields,
+	},
+	"Preferences": ubx.FieldSpec{
+		WireName: "preferences",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_PreferencesFields,
+	},
+	"ReturnPackage": ubx.FieldSpec{
+		WireName: "return_package",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_DeliveryPackageFields,
+	},
+	"ReverseShipmentLabelSasKey": ubx.FieldSpec{WireName: "reverse_shipment_label_sas_key"},
+	"ReverseShippingDetails": ubx.FieldSpec{
+		WireName: "reverse_shipping_details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_ReverseShippingDetailsFields,
+	},
+	"ShippingAddress": ubx.FieldSpec{
+		WireName: "shipping_address",
+		Kind:     "object",
+		Fields:   JobResource_Properties_Details_ReverseShippingDetails_ShippingAddressFields,
+	},
+}
 
 var JobResource_Properties_Error_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var JobResource_Properties_Error_DetailsFields = ubx.FieldMap{
-	}
+var JobResource_Properties_Error_DetailsFields = ubx.FieldMap{}
 
 var JobResource_Properties_ErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: JobResource_Properties_Error_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: JobResource_Properties_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Error_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   JobResource_Properties_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var JobResource_PropertiesFields = ubx.FieldMap{
-		"AllDevicesLost": ubx.FieldSpec{WireName: "all_devices_lost"},
-		"CancellationReason": ubx.FieldSpec{WireName: "cancellation_reason"},
-		"DelayedStage": ubx.FieldSpec{WireName: "delayed_stage"},
-		"DeliveryInfo": ubx.FieldSpec{
-			WireName: "delivery_info",
-			Kind: "object",
-			Fields: JobResource_Properties_DeliveryInfoFields,
-		},
-		"DeliveryType": ubx.FieldSpec{WireName: "delivery_type"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "object",
-			Fields: JobResource_Properties_DetailsFields,
-		},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: JobResource_Properties_ErrorFields,
-		},
-		"IsCancellable": ubx.FieldSpec{WireName: "is_cancellable"},
-		"IsCancellableWithoutFee": ubx.FieldSpec{WireName: "is_cancellable_without_fee"},
-		"IsDeletable": ubx.FieldSpec{WireName: "is_deletable"},
-		"IsPrepareToShipEnabled": ubx.FieldSpec{WireName: "is_prepare_to_ship_enabled"},
-		"IsShippingAddressEditable": ubx.FieldSpec{WireName: "is_shipping_address_editable"},
-		"ReverseShippingDetailsUpdate": ubx.FieldSpec{WireName: "reverse_shipping_details_update"},
-		"ReverseTransportPreferenceUpdate": ubx.FieldSpec{WireName: "reverse_transport_preference_update"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TransferType": ubx.FieldSpec{WireName: "transfer_type"},
-	}
+	"AllDevicesLost":     ubx.FieldSpec{WireName: "all_devices_lost"},
+	"CancellationReason": ubx.FieldSpec{WireName: "cancellation_reason"},
+	"DelayedStage":       ubx.FieldSpec{WireName: "delayed_stage"},
+	"DeliveryInfo": ubx.FieldSpec{
+		WireName: "delivery_info",
+		Kind:     "object",
+		Fields:   JobResource_Properties_DeliveryInfoFields,
+	},
+	"DeliveryType": ubx.FieldSpec{WireName: "delivery_type"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "object",
+		Fields:   JobResource_Properties_DetailsFields,
+	},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   JobResource_Properties_ErrorFields,
+	},
+	"IsCancellable":                    ubx.FieldSpec{WireName: "is_cancellable"},
+	"IsCancellableWithoutFee":          ubx.FieldSpec{WireName: "is_cancellable_without_fee"},
+	"IsDeletable":                      ubx.FieldSpec{WireName: "is_deletable"},
+	"IsPrepareToShipEnabled":           ubx.FieldSpec{WireName: "is_prepare_to_ship_enabled"},
+	"IsShippingAddressEditable":        ubx.FieldSpec{WireName: "is_shipping_address_editable"},
+	"ReverseShippingDetailsUpdate":     ubx.FieldSpec{WireName: "reverse_shipping_details_update"},
+	"ReverseTransportPreferenceUpdate": ubx.FieldSpec{WireName: "reverse_transport_preference_update"},
+	"StartTime":                        ubx.FieldSpec{WireName: "start_time"},
+	"Status":                           ubx.FieldSpec{WireName: "status"},
+	"TransferType":                     ubx.FieldSpec{WireName: "transfer_type"},
+}
 
 var JobResource_SkuFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Model": ubx.FieldSpec{WireName: "model"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Family":      ubx.FieldSpec{WireName: "family"},
+	"Model":       ubx.FieldSpec{WireName: "model"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+}
 
 type JobResourceConfig struct {
 	// Msi identity details of the resource
@@ -812,18 +811,18 @@ var JobResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: JobResource_IdentityFields,
+			Kind:     "object",
+			Fields:   JobResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: JobResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   JobResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: JobResource_SkuFields,
+			Kind:     "object",
+			Fields:   JobResource_SkuFields,
 		},
 	},
 }

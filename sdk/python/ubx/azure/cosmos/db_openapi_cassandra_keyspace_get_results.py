@@ -35,6 +35,12 @@ class DbOpenapiCassandraKeyspaceGetResults_Properties_Options:
 
 @dataclasses.dataclass
 class DbOpenapiCassandraKeyspaceGetResults_Properties_Resource:
+    # A system generated property representing the resource etag required for optimistic concurrency control.
+    etag: Any = None
+    # A system generated property. A unique identifier.
+    rid: Any = None
+    # A system generated property that denotes the last updated timestamp of the resource.
+    ts: Any = None
     # Name of the Cosmos DB Cassandra keyspace
     id: Any = None
 
@@ -59,6 +65,9 @@ _DbOpenapiCassandraKeyspaceGetResults_Properties_OptionsFields = {
 }
 
 _DbOpenapiCassandraKeyspaceGetResults_Properties_ResourceFields = {
+    "etag": ubx.FieldSpec(wire_name="_etag"),
+    "rid": ubx.FieldSpec(wire_name="_rid"),
+    "ts": ubx.FieldSpec(wire_name="_ts"),
     "id": ubx.FieldSpec(wire_name="id"),
 }
 

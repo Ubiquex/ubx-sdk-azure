@@ -4,12 +4,12 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiHybridRunbookWorker_Value_Properties struct {
-	Ip any
-	LastSeenDateTime any
+	Ip                 any
+	LastSeenDateTime   any
 	RegisteredDateTime any
-	VmResourceId any
-	WorkerName any
-	WorkerType any
+	VmResourceId       any
+	WorkerName         any
+	WorkerType         any
 }
 
 type OpenapiHybridRunbookWorker_Value struct {
@@ -17,12 +17,12 @@ type OpenapiHybridRunbookWorker_Value struct {
 }
 
 type OpenapiHybridRunbookWorkerConfig struct {
-	AutomationAccountName any
+	AutomationAccountName        any
 	HybridRunbookWorkerGroupName any
 }
 
 type OpenapiHybridRunbookWorkerAttrs struct {
-	AutomationAccountName any
+	AutomationAccountName        any
 	HybridRunbookWorkerGroupName any
 	// The link to the next page of items
 	NextLink any
@@ -33,7 +33,7 @@ type OpenapiHybridRunbookWorkerAttrs struct {
 var OpenapiHybridRunbookWorker = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_hybrid_runbook_worker",
 	Fields: ubx.FieldMap{
-		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
+		"AutomationAccountName":        ubx.FieldSpec{WireName: "automation_account_name"},
 		"HybridRunbookWorkerGroupName": ubx.FieldSpec{WireName: "hybrid_runbook_worker_group_name"},
 	},
 }

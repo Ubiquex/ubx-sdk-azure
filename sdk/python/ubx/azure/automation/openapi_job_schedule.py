@@ -13,6 +13,8 @@ class OpenapiJobSchedule_Properties_Runbook:
 
 @dataclasses.dataclass
 class OpenapiJobSchedule_Properties:
+    # Gets or sets the id of job schedule.
+    job_schedule_id: Any = None
     # Gets or sets a list of job properties.
     parameters: Any = None
     # Gets or sets the hybrid worker group that the scheduled job should run on.
@@ -27,6 +29,7 @@ _OpenapiJobSchedule_Properties_RunbookFields = {
 }
 
 _OpenapiJobSchedule_PropertiesFields = {
+    "job_schedule_id": ubx.FieldSpec(wire_name="job_schedule_id"),
     "parameters": ubx.FieldSpec(wire_name="parameters"),
     "run_on": ubx.FieldSpec(wire_name="run_on"),
     "runbook": ubx.FieldSpec(

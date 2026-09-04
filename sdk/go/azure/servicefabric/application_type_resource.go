@@ -9,8 +9,8 @@ type ApplicationTypeResource_Properties struct {
 }
 
 var ApplicationTypeResource_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ApplicationTypeResourceConfig struct {
 	// The application type name properties
@@ -27,8 +27,8 @@ var ApplicationTypeResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationTypeResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApplicationTypeResource_PropertiesFields,
 		},
 	},
 }

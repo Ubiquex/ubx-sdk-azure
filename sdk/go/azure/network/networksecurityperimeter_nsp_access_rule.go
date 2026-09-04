@@ -4,8 +4,8 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterNspAccessRule_Properties_NetworkSecurityPerimeters struct {
-	Id any
-	Location any
+	Id            any
+	Location      any
 	PerimeterGuid any
 }
 
@@ -35,34 +35,34 @@ type NetworksecurityperimeterNspAccessRule_Properties struct {
 }
 
 var NetworksecurityperimeterNspAccessRule_Properties_NetworkSecurityPerimetersFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"PerimeterGuid": ubx.FieldSpec{WireName: "perimeter_guid"},
-	}
+	"Id":            ubx.FieldSpec{WireName: "id"},
+	"Location":      ubx.FieldSpec{WireName: "location"},
+	"PerimeterGuid": ubx.FieldSpec{WireName: "perimeter_guid"},
+}
 
 var NetworksecurityperimeterNspAccessRule_Properties_SubscriptionsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var NetworksecurityperimeterNspAccessRule_PropertiesFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"Direction": ubx.FieldSpec{WireName: "direction"},
-		"EmailAddresses": ubx.FieldSpec{WireName: "email_addresses"},
-		"FullyQualifiedDomainNames": ubx.FieldSpec{WireName: "fully_qualified_domain_names"},
-		"NetworkSecurityPerimeters": ubx.FieldSpec{
-			WireName: "network_security_perimeters",
-			Kind: "list",
-			Fields: NetworksecurityperimeterNspAccessRule_Properties_NetworkSecurityPerimetersFields,
-		},
-		"PhoneNumbers": ubx.FieldSpec{WireName: "phone_numbers"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceTags": ubx.FieldSpec{WireName: "service_tags"},
-		"Subscriptions": ubx.FieldSpec{
-			WireName: "subscriptions",
-			Kind: "list",
-			Fields: NetworksecurityperimeterNspAccessRule_Properties_SubscriptionsFields,
-		},
-	}
+	"AddressPrefixes":           ubx.FieldSpec{WireName: "address_prefixes"},
+	"Direction":                 ubx.FieldSpec{WireName: "direction"},
+	"EmailAddresses":            ubx.FieldSpec{WireName: "email_addresses"},
+	"FullyQualifiedDomainNames": ubx.FieldSpec{WireName: "fully_qualified_domain_names"},
+	"NetworkSecurityPerimeters": ubx.FieldSpec{
+		WireName: "network_security_perimeters",
+		Kind:     "list",
+		Fields:   NetworksecurityperimeterNspAccessRule_Properties_NetworkSecurityPerimetersFields,
+	},
+	"PhoneNumbers":      ubx.FieldSpec{WireName: "phone_numbers"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceTags":       ubx.FieldSpec{WireName: "service_tags"},
+	"Subscriptions": ubx.FieldSpec{
+		WireName: "subscriptions",
+		Kind:     "list",
+		Fields:   NetworksecurityperimeterNspAccessRule_Properties_SubscriptionsFields,
+	},
+}
 
 type NetworksecurityperimeterNspAccessRuleConfig struct {
 	// Properties of NSP access rule.
@@ -79,8 +79,8 @@ var NetworksecurityperimeterNspAccessRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworksecurityperimeterNspAccessRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworksecurityperimeterNspAccessRule_PropertiesFields,
 		},
 	},
 }

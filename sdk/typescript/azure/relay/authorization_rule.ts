@@ -11,8 +11,6 @@ const AuthorizationRule_PropertiesFields: FieldMap = {
 };
 
 export interface AuthorizationRuleConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties supplied to create or update AuthorizationRule */
   properties?: AuthorizationRule_Properties | Computed<AuthorizationRule_Properties>;
 }
@@ -27,7 +25,6 @@ export interface AuthorizationRuleAttrs {
 export const AuthorizationRule: ResourceBinding<AuthorizationRuleConfig, AuthorizationRuleAttrs> = {
   wireType: "azure_relay_authorization_rule",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

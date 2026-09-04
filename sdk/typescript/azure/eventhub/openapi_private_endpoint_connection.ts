@@ -46,8 +46,6 @@ const OpenapiPrivateEndpointConnection_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiPrivateEndpointConnectionConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties of the private endpoint connection resource. */
   properties?: OpenapiPrivateEndpointConnection_Properties | Computed<OpenapiPrivateEndpointConnection_Properties>;
 }
@@ -62,7 +60,6 @@ export interface OpenapiPrivateEndpointConnectionAttrs {
 export const OpenapiPrivateEndpointConnection: ResourceBinding<OpenapiPrivateEndpointConnectionConfig, OpenapiPrivateEndpointConnectionAttrs> = {
   wireType: "azure_eventhub_openapi_private_endpoint_connection",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

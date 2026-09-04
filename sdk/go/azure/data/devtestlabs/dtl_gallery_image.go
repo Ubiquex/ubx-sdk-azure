@@ -4,28 +4,28 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlGalleryImage_Value_Properties_ImageReference struct {
-	Offer any
-	OsType any
+	Offer     any
+	OsType    any
 	Publisher any
-	Sku any
-	Version any
+	Sku       any
+	Version   any
 }
 
 type DtlGalleryImage_Value_Properties struct {
-	Author any
-	CreatedDate any
-	Description any
-	Enabled any
-	Icon any
-	ImageReference any
+	Author           any
+	CreatedDate      any
+	Description      any
+	Enabled          any
+	Icon             any
+	ImageReference   any
 	IsPlanAuthorized any
-	PlanId any
+	PlanId           any
 }
 
 type DtlGalleryImage_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlGalleryImageConfig struct {

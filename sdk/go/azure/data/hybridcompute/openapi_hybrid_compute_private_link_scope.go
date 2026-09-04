@@ -9,35 +9,35 @@ type OpenapiHybridComputePrivateLinkScope_Value_Properties_PrivateEndpointConnec
 
 type OpenapiHybridComputePrivateLinkScope_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Value_Properties_PrivateEndpointConnections struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Value_Properties_ServiceExtensions struct {
 	ServiceExtensionPublicNetworkAccess any
-	ServiceExtensionType any
+	ServiceExtensionType                any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Value_Properties struct {
 	PrivateEndpointConnections any
-	PrivateLinkScopeId any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ServiceExtensions any
+	PrivateLinkScopeId         any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	ServiceExtensions          any
 }
 
 type OpenapiHybridComputePrivateLinkScope_Value struct {
@@ -56,6 +56,5 @@ type OpenapiHybridComputePrivateLinkScopeAttrs struct {
 
 var OpenapiHybridComputePrivateLinkScope = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_hybrid_compute_private_link_scope",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

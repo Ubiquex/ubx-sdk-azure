@@ -8,11 +8,26 @@ import ubx_sdk as ubx
 
 @dataclasses.dataclass
 class OpenapiHybridRunbookWorker_Properties:
+    # Gets or sets the assigned machine IP address.
+    ip: Any = None
+    # Last Heartbeat from the Worker
+    last_seen_date_time: Any = None
+    # Gets or sets the registration time of the worker machine.
+    registered_date_time: Any = None
     # Azure Resource Manager Id for a virtual machine.
     vm_resource_id: Any = None
+    # Name of the HybridWorker.
+    worker_name: Any = None
+    # Type of the HybridWorker.
+    worker_type: Any = None
 
 _OpenapiHybridRunbookWorker_PropertiesFields = {
+    "ip": ubx.FieldSpec(wire_name="ip"),
+    "last_seen_date_time": ubx.FieldSpec(wire_name="last_seen_date_time"),
+    "registered_date_time": ubx.FieldSpec(wire_name="registered_date_time"),
     "vm_resource_id": ubx.FieldSpec(wire_name="vm_resource_id"),
+    "worker_name": ubx.FieldSpec(wire_name="worker_name"),
+    "worker_type": ubx.FieldSpec(wire_name="worker_type"),
 }
 
 @dataclasses.dataclass

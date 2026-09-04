@@ -4,11 +4,11 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimgroupsGroupContract_Value_Properties struct {
-	BuiltIn any
+	BuiltIn     any
 	Description any
 	DisplayName any
-	ExternalId any
-	Type any
+	ExternalId  any
+	Type        any
 }
 
 type ApimgroupsGroupContract_Value struct {
@@ -29,6 +29,5 @@ type ApimgroupsGroupContractAttrs struct {
 
 var ApimgroupsGroupContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimgroups_group_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

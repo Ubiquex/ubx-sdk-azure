@@ -7,6 +7,16 @@ export interface ServiceReplicationProtectionIntent_Properties_ProviderSpecificD
 }
 
 export interface ServiceReplicationProtectionIntent_Properties {
+  /** The creation time in UTC. */
+  creationTimeUtc?: string | Computed<string>;
+  /** The name. */
+  friendlyName?: string | Computed<string>;
+  /** A value indicating whether the intent object is active. */
+  isActive?: boolean | Computed<boolean>;
+  /** The job Id. */
+  jobId?: string | Computed<string>;
+  /** The job state. */
+  jobState?: string | Computed<string>;
   /** Create protection intent provider specific input. */
   providerSpecificDetails?: ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetails | Computed<ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetails>;
 }
@@ -16,6 +26,11 @@ const ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetailsField
 };
 
 const ServiceReplicationProtectionIntent_PropertiesFields: FieldMap = {
+  creationTimeUtc: "creation_time_utc",
+  friendlyName: "friendly_name",
+  isActive: "is_active",
+  jobId: "job_id",
+  jobState: "job_state",
   providerSpecificDetails: {
     wireName: "provider_specific_details",
     kind: "object",

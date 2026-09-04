@@ -11,9 +11,9 @@ type NetworksecurityperimeterNspLoggingConfiguration_Properties struct {
 }
 
 var NetworksecurityperimeterNspLoggingConfiguration_PropertiesFields = ubx.FieldMap{
-		"EnabledLogCategories": ubx.FieldSpec{WireName: "enabled_log_categories"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"EnabledLogCategories": ubx.FieldSpec{WireName: "enabled_log_categories"},
+	"Version":              ubx.FieldSpec{WireName: "version"},
+}
 
 type NetworksecurityperimeterNspLoggingConfigurationConfig struct {
 	// The NSP logging configuration properties.
@@ -30,8 +30,8 @@ var NetworksecurityperimeterNspLoggingConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworksecurityperimeterNspLoggingConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworksecurityperimeterNspLoggingConfiguration_PropertiesFields,
 		},
 	},
 }

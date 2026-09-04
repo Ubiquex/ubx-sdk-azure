@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OucontainerOuContainer_Properties_Accounts struct {
 	AccountName any
-	Password any
-	Spn any
+	Password    any
+	Spn         any
 }
 
 type OucontainerOuContainer_Properties struct {
@@ -52,7 +52,7 @@ var OucontainerOuContainer = ubx.ResourceBinding{
 	WireType: "azure_domainservices_oucontainer_ou_container",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"Spn": ubx.FieldSpec{WireName: "spn"},
+		"Password":    ubx.FieldSpec{WireName: "password"},
+		"Spn":         ubx.FieldSpec{WireName: "spn"},
 	},
 }

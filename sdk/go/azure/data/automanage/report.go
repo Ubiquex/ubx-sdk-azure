@@ -13,47 +13,47 @@ type Report_Value_Properties_Error_Details_Details struct {
 
 type Report_Value_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type Report_Value_Properties_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type Report_Value_Properties_Resources struct {
-	Error any
-	Id any
-	Name any
+	Error  any
+	Id     any
+	Name   any
 	Status any
-	Type any
+	Type   any
 }
 
 type Report_Value_Properties struct {
 	ConfigurationProfile any
-	Duration any
-	EndTime any
-	Error any
-	LastModifiedTime any
-	ReportFormatVersion any
-	Resources any
-	StartTime any
-	Status any
-	Type any
+	Duration             any
+	EndTime              any
+	Error                any
+	LastModifiedTime     any
+	ReportFormatVersion  any
+	Resources            any
+	StartTime            any
+	Status               any
+	Type                 any
 }
 
 type Report_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -63,12 +63,12 @@ type Report_Value struct {
 }
 
 type ReportConfig struct {
-	ClusterName any
+	ClusterName                        any
 	ConfigurationProfileAssignmentName any
 }
 
 type ReportAttrs struct {
-	ClusterName any
+	ClusterName                        any
 	ConfigurationProfileAssignmentName any
 	// Result of the list report operation.
 	Value any
@@ -77,7 +77,7 @@ type ReportAttrs struct {
 var Report = ubx.DataSourceBinding{
 	WireType: "azure_automanage_report",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":                        ubx.FieldSpec{WireName: "cluster_name"},
 		"ConfigurationProfileAssignmentName": ubx.FieldSpec{WireName: "configuration_profile_assignment_name"},
 	},
 }

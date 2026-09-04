@@ -4,33 +4,33 @@ package nginx
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxDeploymentWafPolicyMetadata_Value_Properties_ApplyingState struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Time any
+	Time          any
 }
 
 type SwaggerNginxDeploymentWafPolicyMetadata_Value_Properties struct {
-	ApplyingState any
-	CompilingState any
-	Filepath any
+	ApplyingState     any
+	CompilingState    any
+	Filepath          any
 	ProvisioningState any
 }
 
 type SwaggerNginxDeploymentWafPolicyMetadata_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type SwaggerNginxDeploymentWafPolicyMetadata_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type SwaggerNginxDeploymentWafPolicyMetadataConfig struct {

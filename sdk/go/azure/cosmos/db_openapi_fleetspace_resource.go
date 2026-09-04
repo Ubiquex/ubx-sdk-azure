@@ -28,23 +28,23 @@ type DbOpenapiFleetspaceResource_Properties struct {
 }
 
 var DbOpenapiFleetspaceResource_Properties_ThroughputPoolConfigurationFields = ubx.FieldMap{
-		"DedicatedRus": ubx.FieldSpec{WireName: "dedicated_rus"},
-		"MaxConsumableRus": ubx.FieldSpec{WireName: "max_consumable_rus"},
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-		"MinThroughput": ubx.FieldSpec{WireName: "min_throughput"},
-	}
+	"DedicatedRus":     ubx.FieldSpec{WireName: "dedicated_rus"},
+	"MaxConsumableRus": ubx.FieldSpec{WireName: "max_consumable_rus"},
+	"MaxThroughput":    ubx.FieldSpec{WireName: "max_throughput"},
+	"MinThroughput":    ubx.FieldSpec{WireName: "min_throughput"},
+}
 
 var DbOpenapiFleetspaceResource_PropertiesFields = ubx.FieldMap{
-		"DataRegions": ubx.FieldSpec{WireName: "data_regions"},
-		"FleetspaceApiKind": ubx.FieldSpec{WireName: "fleetspace_api_kind"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceTier": ubx.FieldSpec{WireName: "service_tier"},
-		"ThroughputPoolConfiguration": ubx.FieldSpec{
-			WireName: "throughput_pool_configuration",
-			Kind: "object",
-			Fields: DbOpenapiFleetspaceResource_Properties_ThroughputPoolConfigurationFields,
-		},
-	}
+	"DataRegions":       ubx.FieldSpec{WireName: "data_regions"},
+	"FleetspaceApiKind": ubx.FieldSpec{WireName: "fleetspace_api_kind"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceTier":       ubx.FieldSpec{WireName: "service_tier"},
+	"ThroughputPoolConfiguration": ubx.FieldSpec{
+		WireName: "throughput_pool_configuration",
+		Kind:     "object",
+		Fields:   DbOpenapiFleetspaceResource_Properties_ThroughputPoolConfigurationFields,
+	},
+}
 
 type DbOpenapiFleetspaceResourceConfig struct {
 	// Properties to update Azure Cosmos DB Fleetspace.
@@ -61,8 +61,8 @@ var DbOpenapiFleetspaceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiFleetspaceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiFleetspaceResource_PropertiesFields,
 		},
 	},
 }

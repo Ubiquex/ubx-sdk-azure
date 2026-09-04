@@ -4,11 +4,11 @@ package loadtestservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PlaywrightWorkspace_Value_Properties struct {
-	DataplaneUri any
-	LocalAuth any
+	DataplaneUri      any
+	LocalAuth         any
 	ProvisioningState any
-	RegionalAffinity any
-	WorkspaceId any
+	RegionalAffinity  any
+	WorkspaceId       any
 }
 
 type PlaywrightWorkspace_Value struct {
@@ -27,6 +27,5 @@ type PlaywrightWorkspaceAttrs struct {
 
 var PlaywrightWorkspace = ubx.DataSourceBinding{
 	WireType: "azure_loadtestservice_playwright_workspace",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

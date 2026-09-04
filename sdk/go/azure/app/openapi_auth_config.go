@@ -142,31 +142,31 @@ type OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebApps struct {
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Login struct {
 	NameClaimType any
-	Scopes any
+	Scopes        any
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredential struct {
 	ClientSecretSettingName any
-	Method any
+	Method                  any
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfiguration struct {
-	AuthorizationEndpoint any
-	CertificationUri any
-	Issuer any
-	TokenEndpoint any
+	AuthorizationEndpoint        any
+	CertificationUri             any
+	Issuer                       any
+	TokenEndpoint                any
 	WellKnownOpenIdConfiguration any
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration struct {
-	ClientCredential any
-	ClientId any
+	ClientCredential           any
+	ClientId                   any
 	OpenIdConnectConfiguration any
 }
 
 type OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders struct {
-	Enabled any
-	Login any
+	Enabled      any
+	Login        any
 	Registration any
 }
 
@@ -308,379 +308,379 @@ type OpenapiAuthConfig_Properties struct {
 }
 
 var OpenapiAuthConfig_Properties_EncryptionSettingsFields = ubx.FieldMap{
-		"ContainerAppAuthEncryptionSecretName": ubx.FieldSpec{WireName: "container_app_auth_encryption_secret_name"},
-		"ContainerAppAuthSigningSecretName": ubx.FieldSpec{WireName: "container_app_auth_signing_secret_name"},
-	}
+	"ContainerAppAuthEncryptionSecretName": ubx.FieldSpec{WireName: "container_app_auth_encryption_secret_name"},
+	"ContainerAppAuthSigningSecretName":    ubx.FieldSpec{WireName: "container_app_auth_signing_secret_name"},
+}
 
 var OpenapiAuthConfig_Properties_GlobalValidationFields = ubx.FieldMap{
-		"ExcludedPaths": ubx.FieldSpec{WireName: "excluded_paths"},
-		"RedirectToProvider": ubx.FieldSpec{WireName: "redirect_to_provider"},
-		"UnauthenticatedClientAction": ubx.FieldSpec{WireName: "unauthenticated_client_action"},
-	}
+	"ExcludedPaths":               ubx.FieldSpec{WireName: "excluded_paths"},
+	"RedirectToProvider":          ubx.FieldSpec{WireName: "redirect_to_provider"},
+	"UnauthenticatedClientAction": ubx.FieldSpec{WireName: "unauthenticated_client_action"},
+}
 
 var OpenapiAuthConfig_Properties_HttpSettings_ForwardProxyFields = ubx.FieldMap{
-		"Convention": ubx.FieldSpec{WireName: "convention"},
-		"CustomHostHeaderName": ubx.FieldSpec{WireName: "custom_host_header_name"},
-		"CustomProtoHeaderName": ubx.FieldSpec{WireName: "custom_proto_header_name"},
-	}
+	"Convention":            ubx.FieldSpec{WireName: "convention"},
+	"CustomHostHeaderName":  ubx.FieldSpec{WireName: "custom_host_header_name"},
+	"CustomProtoHeaderName": ubx.FieldSpec{WireName: "custom_proto_header_name"},
+}
 
 var OpenapiAuthConfig_Properties_HttpSettings_RoutesFields = ubx.FieldMap{
-		"ApiPrefix": ubx.FieldSpec{WireName: "api_prefix"},
-	}
+	"ApiPrefix": ubx.FieldSpec{WireName: "api_prefix"},
+}
 
 var OpenapiAuthConfig_Properties_HttpSettingsFields = ubx.FieldMap{
-		"ForwardProxy": ubx.FieldSpec{
-			WireName: "forward_proxy",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_HttpSettings_ForwardProxyFields,
-		},
-		"RequireHttps": ubx.FieldSpec{WireName: "require_https"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_HttpSettings_RoutesFields,
-		},
-	}
+	"ForwardProxy": ubx.FieldSpec{
+		WireName: "forward_proxy",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_HttpSettings_ForwardProxyFields,
+	},
+	"RequireHttps": ubx.FieldSpec{WireName: "require_https"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_HttpSettings_RoutesFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_Apple_LoginFields = ubx.FieldMap{
-		"Scopes": ubx.FieldSpec{WireName: "scopes"},
-	}
+	"Scopes": ubx.FieldSpec{WireName: "scopes"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_Apple_RegistrationFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecretSettingName": ubx.FieldSpec{WireName: "client_secret_setting_name"},
-	}
+	"ClientId":                ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecretSettingName": ubx.FieldSpec{WireName: "client_secret_setting_name"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AppleFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Login": ubx.FieldSpec{
-			WireName: "login",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_Apple_LoginFields,
-		},
-		"Registration": ubx.FieldSpec{
-			WireName: "registration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_Apple_RegistrationFields,
-		},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Login": ubx.FieldSpec{
+		WireName: "login",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_Apple_LoginFields,
+	},
+	"Registration": ubx.FieldSpec{
+		WireName: "registration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_Apple_RegistrationFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_LoginFields = ubx.FieldMap{
-		"DisableWwwauthenticate": ubx.FieldSpec{WireName: "disable_wwwauthenticate"},
-		"LoginParameters": ubx.FieldSpec{WireName: "login_parameters"},
-	}
+	"DisableWwwauthenticate": ubx.FieldSpec{WireName: "disable_wwwauthenticate"},
+	"LoginParameters":        ubx.FieldSpec{WireName: "login_parameters"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_RegistrationFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecretCertificateIssuer": ubx.FieldSpec{WireName: "client_secret_certificate_issuer"},
-		"ClientSecretCertificateSubjectAlternativeName": ubx.FieldSpec{WireName: "client_secret_certificate_subject_alternative_name"},
-		"ClientSecretCertificateThumbprint": ubx.FieldSpec{WireName: "client_secret_certificate_thumbprint"},
-		"ClientSecretSettingName": ubx.FieldSpec{WireName: "client_secret_setting_name"},
-		"OpenIdIssuer": ubx.FieldSpec{WireName: "open_id_issuer"},
-	}
+	"ClientId":                      ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecretCertificateIssuer": ubx.FieldSpec{WireName: "client_secret_certificate_issuer"},
+	"ClientSecretCertificateSubjectAlternativeName": ubx.FieldSpec{WireName: "client_secret_certificate_subject_alternative_name"},
+	"ClientSecretCertificateThumbprint":             ubx.FieldSpec{WireName: "client_secret_certificate_thumbprint"},
+	"ClientSecretSettingName":                       ubx.FieldSpec{WireName: "client_secret_setting_name"},
+	"OpenIdIssuer":                                  ubx.FieldSpec{WireName: "open_id_issuer"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_DefaultAuthorizationPolicy_AllowedPrincipalsFields = ubx.FieldMap{
-		"Groups": ubx.FieldSpec{WireName: "groups"},
-		"Identities": ubx.FieldSpec{WireName: "identities"},
-	}
+	"Groups":     ubx.FieldSpec{WireName: "groups"},
+	"Identities": ubx.FieldSpec{WireName: "identities"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_DefaultAuthorizationPolicyFields = ubx.FieldMap{
-		"AllowedApplications": ubx.FieldSpec{WireName: "allowed_applications"},
-		"AllowedPrincipals": ubx.FieldSpec{
-			WireName: "allowed_principals",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_DefaultAuthorizationPolicy_AllowedPrincipalsFields,
-		},
-	}
+	"AllowedApplications": ubx.FieldSpec{WireName: "allowed_applications"},
+	"AllowedPrincipals": ubx.FieldSpec{
+		WireName: "allowed_principals",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_DefaultAuthorizationPolicy_AllowedPrincipalsFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_JwtClaimChecksFields = ubx.FieldMap{
-		"AllowedClientApplications": ubx.FieldSpec{WireName: "allowed_client_applications"},
-		"AllowedGroups": ubx.FieldSpec{WireName: "allowed_groups"},
-	}
+	"AllowedClientApplications": ubx.FieldSpec{WireName: "allowed_client_applications"},
+	"AllowedGroups":             ubx.FieldSpec{WireName: "allowed_groups"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_ValidationFields = ubx.FieldMap{
-		"AllowedAudiences": ubx.FieldSpec{WireName: "allowed_audiences"},
-		"DefaultAuthorizationPolicy": ubx.FieldSpec{
-			WireName: "default_authorization_policy",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_DefaultAuthorizationPolicyFields,
-		},
-		"JwtClaimChecks": ubx.FieldSpec{
-			WireName: "jwt_claim_checks",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_JwtClaimChecksFields,
-		},
-	}
+	"AllowedAudiences": ubx.FieldSpec{WireName: "allowed_audiences"},
+	"DefaultAuthorizationPolicy": ubx.FieldSpec{
+		WireName: "default_authorization_policy",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_DefaultAuthorizationPolicyFields,
+	},
+	"JwtClaimChecks": ubx.FieldSpec{
+		WireName: "jwt_claim_checks",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_Validation_JwtClaimChecksFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectoryFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"IsAutoProvisioned": ubx.FieldSpec{WireName: "is_auto_provisioned"},
-		"Login": ubx.FieldSpec{
-			WireName: "login",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_LoginFields,
-		},
-		"Registration": ubx.FieldSpec{
-			WireName: "registration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_RegistrationFields,
-		},
-		"Validation": ubx.FieldSpec{
-			WireName: "validation",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_ValidationFields,
-		},
-	}
+	"Enabled":           ubx.FieldSpec{WireName: "enabled"},
+	"IsAutoProvisioned": ubx.FieldSpec{WireName: "is_auto_provisioned"},
+	"Login": ubx.FieldSpec{
+		WireName: "login",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_LoginFields,
+	},
+	"Registration": ubx.FieldSpec{
+		WireName: "registration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_RegistrationFields,
+	},
+	"Validation": ubx.FieldSpec{
+		WireName: "validation",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectory_ValidationFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebApps_RegistrationFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-	}
+	"ClientId": ubx.FieldSpec{WireName: "client_id"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebAppsFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Registration": ubx.FieldSpec{
-			WireName: "registration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebApps_RegistrationFields,
-		},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Registration": ubx.FieldSpec{
+		WireName: "registration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebApps_RegistrationFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_LoginFields = ubx.FieldMap{
-		"NameClaimType": ubx.FieldSpec{WireName: "name_claim_type"},
-		"Scopes": ubx.FieldSpec{WireName: "scopes"},
-	}
+	"NameClaimType": ubx.FieldSpec{WireName: "name_claim_type"},
+	"Scopes":        ubx.FieldSpec{WireName: "scopes"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredentialFields = ubx.FieldMap{
-		"ClientSecretSettingName": ubx.FieldSpec{WireName: "client_secret_setting_name"},
-		"Method": ubx.FieldSpec{WireName: "method"},
-	}
+	"ClientSecretSettingName": ubx.FieldSpec{WireName: "client_secret_setting_name"},
+	"Method":                  ubx.FieldSpec{WireName: "method"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfigurationFields = ubx.FieldMap{
-		"AuthorizationEndpoint": ubx.FieldSpec{WireName: "authorization_endpoint"},
-		"CertificationUri": ubx.FieldSpec{WireName: "certification_uri"},
-		"Issuer": ubx.FieldSpec{WireName: "issuer"},
-		"TokenEndpoint": ubx.FieldSpec{WireName: "token_endpoint"},
-		"WellKnownOpenIdConfiguration": ubx.FieldSpec{WireName: "well_known_open_id_configuration"},
-	}
+	"AuthorizationEndpoint":        ubx.FieldSpec{WireName: "authorization_endpoint"},
+	"CertificationUri":             ubx.FieldSpec{WireName: "certification_uri"},
+	"Issuer":                       ubx.FieldSpec{WireName: "issuer"},
+	"TokenEndpoint":                ubx.FieldSpec{WireName: "token_endpoint"},
+	"WellKnownOpenIdConfiguration": ubx.FieldSpec{WireName: "well_known_open_id_configuration"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_RegistrationFields = ubx.FieldMap{
-		"ClientCredential": ubx.FieldSpec{
-			WireName: "client_credential",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredentialFields,
-		},
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"OpenIdConnectConfiguration": ubx.FieldSpec{
-			WireName: "open_id_connect_configuration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfigurationFields,
-		},
-	}
+	"ClientCredential": ubx.FieldSpec{
+		WireName: "client_credential",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredentialFields,
+	},
+	"ClientId": ubx.FieldSpec{WireName: "client_id"},
+	"OpenIdConnectConfiguration": ubx.FieldSpec{
+		WireName: "open_id_connect_configuration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfigurationFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProvidersFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Login": ubx.FieldSpec{
-			WireName: "login",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_LoginFields,
-		},
-		"Registration": ubx.FieldSpec{
-			WireName: "registration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_RegistrationFields,
-		},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Login": ubx.FieldSpec{
+		WireName: "login",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_LoginFields,
+	},
+	"Registration": ubx.FieldSpec{
+		WireName: "registration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProviders_RegistrationFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_Facebook_RegistrationFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"AppSecretSettingName": ubx.FieldSpec{WireName: "app_secret_setting_name"},
-	}
+	"AppId":                ubx.FieldSpec{WireName: "app_id"},
+	"AppSecretSettingName": ubx.FieldSpec{WireName: "app_secret_setting_name"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_FacebookFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"GraphApiVersion": ubx.FieldSpec{WireName: "graph_api_version"},
-		"Login": ubx.FieldSpec{
-			WireName: "login",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_Apple_LoginFields,
-		},
-		"Registration": ubx.FieldSpec{
-			WireName: "registration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_Facebook_RegistrationFields,
-		},
-	}
+	"Enabled":         ubx.FieldSpec{WireName: "enabled"},
+	"GraphApiVersion": ubx.FieldSpec{WireName: "graph_api_version"},
+	"Login": ubx.FieldSpec{
+		WireName: "login",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_Apple_LoginFields,
+	},
+	"Registration": ubx.FieldSpec{
+		WireName: "registration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_Facebook_RegistrationFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_Google_ValidationFields = ubx.FieldMap{
-		"AllowedAudiences": ubx.FieldSpec{WireName: "allowed_audiences"},
-	}
+	"AllowedAudiences": ubx.FieldSpec{WireName: "allowed_audiences"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_GoogleFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Login": ubx.FieldSpec{
-			WireName: "login",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_Apple_LoginFields,
-		},
-		"Registration": ubx.FieldSpec{
-			WireName: "registration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_Apple_RegistrationFields,
-		},
-		"Validation": ubx.FieldSpec{
-			WireName: "validation",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_Google_ValidationFields,
-		},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Login": ubx.FieldSpec{
+		WireName: "login",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_Apple_LoginFields,
+	},
+	"Registration": ubx.FieldSpec{
+		WireName: "registration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_Apple_RegistrationFields,
+	},
+	"Validation": ubx.FieldSpec{
+		WireName: "validation",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_Google_ValidationFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_Twitter_RegistrationFields = ubx.FieldMap{
-		"ConsumerKey": ubx.FieldSpec{WireName: "consumer_key"},
-		"ConsumerSecretSettingName": ubx.FieldSpec{WireName: "consumer_secret_setting_name"},
-	}
+	"ConsumerKey":               ubx.FieldSpec{WireName: "consumer_key"},
+	"ConsumerSecretSettingName": ubx.FieldSpec{WireName: "consumer_secret_setting_name"},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProviders_TwitterFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Registration": ubx.FieldSpec{
-			WireName: "registration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_Twitter_RegistrationFields,
-		},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Registration": ubx.FieldSpec{
+		WireName: "registration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_Twitter_RegistrationFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_IdentityProvidersFields = ubx.FieldMap{
-		"Apple": ubx.FieldSpec{
-			WireName: "apple",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AppleFields,
-		},
-		"AzureActiveDirectory": ubx.FieldSpec{
-			WireName: "azure_active_directory",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectoryFields,
-		},
-		"AzureStaticWebApps": ubx.FieldSpec{
-			WireName: "azure_static_web_apps",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebAppsFields,
-		},
-		"CustomOpenIdConnectProviders": ubx.FieldSpec{
-			WireName: "custom_open_id_connect_providers",
-			Kind: "map",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProvidersFields,
-		},
-		"Facebook": ubx.FieldSpec{
-			WireName: "facebook",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_FacebookFields,
-		},
-		"GitHub": ubx.FieldSpec{
-			WireName: "git_hub",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_AppleFields,
-		},
-		"Google": ubx.FieldSpec{
-			WireName: "google",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_GoogleFields,
-		},
-		"Twitter": ubx.FieldSpec{
-			WireName: "twitter",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProviders_TwitterFields,
-		},
-	}
+	"Apple": ubx.FieldSpec{
+		WireName: "apple",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AppleFields,
+	},
+	"AzureActiveDirectory": ubx.FieldSpec{
+		WireName: "azure_active_directory",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureActiveDirectoryFields,
+	},
+	"AzureStaticWebApps": ubx.FieldSpec{
+		WireName: "azure_static_web_apps",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AzureStaticWebAppsFields,
+	},
+	"CustomOpenIdConnectProviders": ubx.FieldSpec{
+		WireName: "custom_open_id_connect_providers",
+		Kind:     "map",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_CustomOpenIdConnectProvidersFields,
+	},
+	"Facebook": ubx.FieldSpec{
+		WireName: "facebook",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_FacebookFields,
+	},
+	"GitHub": ubx.FieldSpec{
+		WireName: "git_hub",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_AppleFields,
+	},
+	"Google": ubx.FieldSpec{
+		WireName: "google",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_GoogleFields,
+	},
+	"Twitter": ubx.FieldSpec{
+		WireName: "twitter",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProviders_TwitterFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_Login_CookieExpirationFields = ubx.FieldMap{
-		"Convention": ubx.FieldSpec{WireName: "convention"},
-		"TimeToExpiration": ubx.FieldSpec{WireName: "time_to_expiration"},
-	}
+	"Convention":       ubx.FieldSpec{WireName: "convention"},
+	"TimeToExpiration": ubx.FieldSpec{WireName: "time_to_expiration"},
+}
 
 var OpenapiAuthConfig_Properties_Login_NonceFields = ubx.FieldMap{
-		"NonceExpirationInterval": ubx.FieldSpec{WireName: "nonce_expiration_interval"},
-		"ValidateNonce": ubx.FieldSpec{WireName: "validate_nonce"},
-	}
+	"NonceExpirationInterval": ubx.FieldSpec{WireName: "nonce_expiration_interval"},
+	"ValidateNonce":           ubx.FieldSpec{WireName: "validate_nonce"},
+}
 
 var OpenapiAuthConfig_Properties_Login_RoutesFields = ubx.FieldMap{
-		"LogoutEndpoint": ubx.FieldSpec{WireName: "logout_endpoint"},
-	}
+	"LogoutEndpoint": ubx.FieldSpec{WireName: "logout_endpoint"},
+}
 
 var OpenapiAuthConfig_Properties_Login_TokenStore_AzureBlobStorageFields = ubx.FieldMap{
-		"SasUrlSettingName": ubx.FieldSpec{WireName: "sas_url_setting_name"},
-	}
+	"SasUrlSettingName": ubx.FieldSpec{WireName: "sas_url_setting_name"},
+}
 
 var OpenapiAuthConfig_Properties_Login_TokenStoreFields = ubx.FieldMap{
-		"AzureBlobStorage": ubx.FieldSpec{
-			WireName: "azure_blob_storage",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_Login_TokenStore_AzureBlobStorageFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"TokenRefreshExtensionHours": ubx.FieldSpec{WireName: "token_refresh_extension_hours"},
-	}
+	"AzureBlobStorage": ubx.FieldSpec{
+		WireName: "azure_blob_storage",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_Login_TokenStore_AzureBlobStorageFields,
+	},
+	"Enabled":                    ubx.FieldSpec{WireName: "enabled"},
+	"TokenRefreshExtensionHours": ubx.FieldSpec{WireName: "token_refresh_extension_hours"},
+}
 
 var OpenapiAuthConfig_Properties_LoginFields = ubx.FieldMap{
-		"AllowedExternalRedirectUrls": ubx.FieldSpec{WireName: "allowed_external_redirect_urls"},
-		"CookieExpiration": ubx.FieldSpec{
-			WireName: "cookie_expiration",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_Login_CookieExpirationFields,
-		},
-		"Nonce": ubx.FieldSpec{
-			WireName: "nonce",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_Login_NonceFields,
-		},
-		"PreserveUrlFragmentsForLogins": ubx.FieldSpec{WireName: "preserve_url_fragments_for_logins"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_Login_RoutesFields,
-		},
-		"TokenStore": ubx.FieldSpec{
-			WireName: "token_store",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_Login_TokenStoreFields,
-		},
-	}
+	"AllowedExternalRedirectUrls": ubx.FieldSpec{WireName: "allowed_external_redirect_urls"},
+	"CookieExpiration": ubx.FieldSpec{
+		WireName: "cookie_expiration",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_Login_CookieExpirationFields,
+	},
+	"Nonce": ubx.FieldSpec{
+		WireName: "nonce",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_Login_NonceFields,
+	},
+	"PreserveUrlFragmentsForLogins": ubx.FieldSpec{WireName: "preserve_url_fragments_for_logins"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_Login_RoutesFields,
+	},
+	"TokenStore": ubx.FieldSpec{
+		WireName: "token_store",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_Login_TokenStoreFields,
+	},
+}
 
 var OpenapiAuthConfig_Properties_PlatformFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"RuntimeVersion": ubx.FieldSpec{WireName: "runtime_version"},
-	}
+	"Enabled":        ubx.FieldSpec{WireName: "enabled"},
+	"RuntimeVersion": ubx.FieldSpec{WireName: "runtime_version"},
+}
 
 var OpenapiAuthConfig_PropertiesFields = ubx.FieldMap{
-		"EncryptionSettings": ubx.FieldSpec{
-			WireName: "encryption_settings",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_EncryptionSettingsFields,
-		},
-		"GlobalValidation": ubx.FieldSpec{
-			WireName: "global_validation",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_GlobalValidationFields,
-		},
-		"HttpSettings": ubx.FieldSpec{
-			WireName: "http_settings",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_HttpSettingsFields,
-		},
-		"IdentityProviders": ubx.FieldSpec{
-			WireName: "identity_providers",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_IdentityProvidersFields,
-		},
-		"Login": ubx.FieldSpec{
-			WireName: "login",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_LoginFields,
-		},
-		"Platform": ubx.FieldSpec{
-			WireName: "platform",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_Properties_PlatformFields,
-		},
-	}
+	"EncryptionSettings": ubx.FieldSpec{
+		WireName: "encryption_settings",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_EncryptionSettingsFields,
+	},
+	"GlobalValidation": ubx.FieldSpec{
+		WireName: "global_validation",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_GlobalValidationFields,
+	},
+	"HttpSettings": ubx.FieldSpec{
+		WireName: "http_settings",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_HttpSettingsFields,
+	},
+	"IdentityProviders": ubx.FieldSpec{
+		WireName: "identity_providers",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_IdentityProvidersFields,
+	},
+	"Login": ubx.FieldSpec{
+		WireName: "login",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_LoginFields,
+	},
+	"Platform": ubx.FieldSpec{
+		WireName: "platform",
+		Kind:     "object",
+		Fields:   OpenapiAuthConfig_Properties_PlatformFields,
+	},
+}
 
 type OpenapiAuthConfigConfig struct {
 	// AuthConfig resource specific properties
@@ -697,8 +697,8 @@ var OpenapiAuthConfig = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAuthConfig_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAuthConfig_PropertiesFields,
 		},
 	},
 }

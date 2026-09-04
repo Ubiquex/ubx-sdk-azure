@@ -4,7 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkIpaddressAvailabilityResultConfig struct {
-	IpAddress any
+	IpAddress          any
 	VirtualNetworkName any
 }
 
@@ -13,7 +13,7 @@ type VirtualnetworkIpaddressAvailabilityResultAttrs struct {
 	Available any
 	// Contains other available private IP addresses if the asked for address is taken.
 	AvailableIpaddresses any
-	IpAddress any
+	IpAddress            any
 	// Private IP address platform reserved.
 	IsPlatformReserved any
 	VirtualNetworkName any
@@ -22,7 +22,7 @@ type VirtualnetworkIpaddressAvailabilityResultAttrs struct {
 var VirtualnetworkIpaddressAvailabilityResult = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_ipaddress_availability_result",
 	Fields: ubx.FieldMap{
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+		"IpAddress":          ubx.FieldSpec{WireName: "ip_address"},
 		"VirtualNetworkName": ubx.FieldSpec{WireName: "virtual_network_name"},
 	},
 }

@@ -9730,8 +9730,6 @@ _ApplicationgatewayWebApplicationFirewallPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class ApplicationgatewayWebApplicationFirewallPolicyConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Defines web application firewall policy properties.
     properties: Any = None
 
@@ -9745,7 +9743,6 @@ class ApplicationgatewayWebApplicationFirewallPolicyAttrs:
 ApplicationgatewayWebApplicationFirewallPolicy = ubx.ResourceBinding(
     wire_type="azure_network_applicationgateway_web_application_firewall_policy",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

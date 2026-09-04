@@ -9,10 +9,10 @@ type ResourceGuardProxyBaseResource_Value_Properties_ResourceGuardOperationDetai
 }
 
 type ResourceGuardProxyBaseResource_Value_Properties struct {
-	Description any
-	LastUpdatedTime any
+	Description                   any
+	LastUpdatedTime               any
 	ResourceGuardOperationDetails any
-	ResourceGuardResourceId any
+	ResourceGuardResourceId       any
 }
 
 type ResourceGuardProxyBaseResource_Value struct {
@@ -25,7 +25,7 @@ type ResourceGuardProxyBaseResourceConfig struct {
 
 type ResourceGuardProxyBaseResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

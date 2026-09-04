@@ -29,8 +29,6 @@ _HybridConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class HybridConnectionConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Properties of the HybridConnection.
     properties: Any = None
 
@@ -44,7 +42,6 @@ class HybridConnectionAttrs:
 HybridConnection = ubx.ResourceBinding(
     wire_type="azure_relay_hybrid_connection",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -204,16 +204,8 @@ _RegistrationAssignment_PropertiesFields = {
 
 @dataclasses.dataclass
 class RegistrationAssignmentConfig:
-    # The fully qualified path of the registration assignment.
-    id: Any = None
-    # The name of the registration assignment.
-    name: Any = None
     # The properties of the registration assignment.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
-    # The type of the Azure resource (Microsoft.ManagedServices/registrationAssignments).
-    type: Any = None
     # path parameter, not part of the API's own resource representation
     scope: Any = None
 
@@ -235,19 +227,11 @@ class RegistrationAssignmentAttrs:
 RegistrationAssignment = ubx.ResourceBinding(
     wire_type="azure_managedservices_registration_assignment",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_RegistrationAssignment_PropertiesFields,
         ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_RegistrationAssignment_Properties_RegistrationDefinition_SystemDataFields,
-        ),
-        "type": ubx.FieldSpec(wire_name="type"),
         "scope": ubx.FieldSpec(wire_name="scope"),
     },
 )

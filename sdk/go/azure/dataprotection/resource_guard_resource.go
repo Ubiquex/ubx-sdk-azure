@@ -4,7 +4,7 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceGuardResource_Properties_ResourceGuardOperations struct {
-	RequestResourceType any
+	RequestResourceType    any
 	VaultCriticalOperation any
 }
 
@@ -22,31 +22,31 @@ type ResourceGuardResource_Properties struct {
 }
 
 var ResourceGuardResource_Properties_ResourceGuardOperationsFields = ubx.FieldMap{
-		"RequestResourceType": ubx.FieldSpec{WireName: "request_resource_type"},
-		"VaultCriticalOperation": ubx.FieldSpec{WireName: "vault_critical_operation"},
-	}
+	"RequestResourceType":    ubx.FieldSpec{WireName: "request_resource_type"},
+	"VaultCriticalOperation": ubx.FieldSpec{WireName: "vault_critical_operation"},
+}
 
 var ResourceGuardResource_PropertiesFields = ubx.FieldMap{
-		"AllowAutoApprovals": ubx.FieldSpec{WireName: "allow_auto_approvals"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuardOperations": ubx.FieldSpec{
-			WireName: "resource_guard_operations",
-			Kind: "list",
-			Fields: ResourceGuardResource_Properties_ResourceGuardOperationsFields,
-		},
-		"VaultCriticalOperationExclusionList": ubx.FieldSpec{WireName: "vault_critical_operation_exclusion_list"},
-	}
+	"AllowAutoApprovals": ubx.FieldSpec{WireName: "allow_auto_approvals"},
+	"Description":        ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuardOperations": ubx.FieldSpec{
+		WireName: "resource_guard_operations",
+		Kind:     "list",
+		Fields:   ResourceGuardResource_Properties_ResourceGuardOperationsFields,
+	},
+	"VaultCriticalOperationExclusionList": ubx.FieldSpec{WireName: "vault_critical_operation_exclusion_list"},
+}
 
 type ResourceGuardResourceConfig struct {
 	// Optional ETag.
-	ETag any
+	ETag       any
 	Properties any
 }
 
 type ResourceGuardResourceAttrs struct {
 	// Optional ETag.
-	ETag any
+	ETag       any
 	Properties any
 }
 
@@ -56,8 +56,8 @@ var ResourceGuardResource = ubx.ResourceBinding{
 		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ResourceGuardResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ResourceGuardResource_PropertiesFields,
 		},
 	},
 }

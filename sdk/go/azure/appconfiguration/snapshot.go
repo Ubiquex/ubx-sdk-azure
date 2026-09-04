@@ -4,7 +4,7 @@ package appconfiguration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Snapshot_Properties_Filters struct {
-	Key any
+	Key   any
 	Label any
 }
 
@@ -34,37 +34,31 @@ type Snapshot_Properties struct {
 }
 
 var Snapshot_Properties_FiltersFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Label": ubx.FieldSpec{WireName: "label"},
-	}
+	"Key":   ubx.FieldSpec{WireName: "key"},
+	"Label": ubx.FieldSpec{WireName: "label"},
+}
 
 var Snapshot_PropertiesFields = ubx.FieldMap{
-		"CompositionType": ubx.FieldSpec{WireName: "composition_type"},
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Expires": ubx.FieldSpec{WireName: "expires"},
-		"Filters": ubx.FieldSpec{
-			WireName: "filters",
-			Kind: "list",
-			Fields: Snapshot_Properties_FiltersFields,
-		},
-		"ItemsCount": ubx.FieldSpec{WireName: "items_count"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RetentionPeriod": ubx.FieldSpec{WireName: "retention_period"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"CompositionType": ubx.FieldSpec{WireName: "composition_type"},
+	"Created":         ubx.FieldSpec{WireName: "created"},
+	"Etag":            ubx.FieldSpec{WireName: "etag"},
+	"Expires":         ubx.FieldSpec{WireName: "expires"},
+	"Filters": ubx.FieldSpec{
+		WireName: "filters",
+		Kind:     "list",
+		Fields:   Snapshot_Properties_FiltersFields,
+	},
+	"ItemsCount":        ubx.FieldSpec{WireName: "items_count"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RetentionPeriod":   ubx.FieldSpec{WireName: "retention_period"},
+	"Size":              ubx.FieldSpec{WireName: "size"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"Tags":              ubx.FieldSpec{WireName: "tags"},
+}
 
 type SnapshotConfig struct {
-	// The resource ID.
-	Id any
-	// The name of the snapshot.
-	Name any
 	// All snapshot properties.
 	Properties any
-	// The type of the resource.
-	Type any
 }
 
 type SnapshotAttrs struct {
@@ -81,13 +75,10 @@ type SnapshotAttrs struct {
 var Snapshot = ubx.ResourceBinding{
 	WireType: "azure_appconfiguration_snapshot",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Snapshot_PropertiesFields,
+			Kind:     "object",
+			Fields:   Snapshot_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

@@ -26,14 +26,8 @@ _FirstpartyservicetagFirstPartyServiceTag_PropertiesFields = {
 
 @dataclasses.dataclass
 class FirstpartyservicetagFirstPartyServiceTagConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
-    # The unique identifier of the resource.
-    id: Any = None
     # Properties of the first party service tag.
     properties: Any = None
-    # The type of the resource.
-    type: Any = None
 
 @dataclasses.dataclass
 class FirstpartyservicetagFirstPartyServiceTagAttrs:
@@ -49,13 +43,10 @@ class FirstpartyservicetagFirstPartyServiceTagAttrs:
 FirstpartyservicetagFirstPartyServiceTag = ubx.ResourceBinding(
     wire_type="azure_network_firstpartyservicetag_first_party_service_tag",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
-        "id": ubx.FieldSpec(wire_name="id"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

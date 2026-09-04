@@ -26,24 +26,13 @@ type ManagementCreator_SystemData struct {
 }
 
 var ManagementCreator_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StorageUnits": ubx.FieldSpec{WireName: "storage_units"},
-	}
-
-var ManagementCreator_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"StorageUnits":      ubx.FieldSpec{WireName: "storage_units"},
+}
 
 type ManagementCreatorConfig struct {
 	// Creator resource properties
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type ManagementCreatorAttrs struct {
@@ -58,13 +47,8 @@ var ManagementCreator = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagementCreator_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: ManagementCreator_SystemDataFields,
+			Kind:     "object",
+			Fields:   ManagementCreator_PropertiesFields,
 		},
 	},
 }

@@ -4,12 +4,12 @@ package subscription
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SubscriptionsSubscriptionCreationResultConfig struct {
-	ApiVersion any
+	ApiVersion  any
 	OperationId any
 }
 
 type SubscriptionsSubscriptionCreationResultAttrs struct {
-	ApiVersion any
+	ApiVersion  any
 	OperationId any
 	// The link to the new subscription. Use this link to check the status of subscription creation operation.
 	SubscriptionLink any
@@ -18,7 +18,7 @@ type SubscriptionsSubscriptionCreationResultAttrs struct {
 var SubscriptionsSubscriptionCreationResult = ubx.DataSourceBinding{
 	WireType: "azure_subscription_subscriptions_subscription_creation_result",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":  ubx.FieldSpec{WireName: "api_version"},
 		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
 	},
 }

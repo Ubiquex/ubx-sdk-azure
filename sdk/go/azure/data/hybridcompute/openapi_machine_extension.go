@@ -4,31 +4,31 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMachineExtension_Value_Properties_InstanceView_Status struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type OpenapiMachineExtension_Value_Properties_InstanceView struct {
-	Name any
-	Status any
-	Type any
+	Name               any
+	Status             any
+	Type               any
 	TypeHandlerVersion any
 }
 
 type OpenapiMachineExtension_Value_Properties struct {
 	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	ForceUpdateTag any
-	InstanceView any
-	ProtectedSettings any
-	ProvisioningState any
-	Publisher any
-	Settings any
-	Type any
-	TypeHandlerVersion any
+	EnableAutomaticUpgrade  any
+	ForceUpdateTag          any
+	InstanceView            any
+	ProtectedSettings       any
+	ProvisioningState       any
+	Publisher               any
+	Settings                any
+	Type                    any
+	TypeHandlerVersion      any
 }
 
 type OpenapiMachineExtension_Value struct {

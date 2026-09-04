@@ -27,17 +27,17 @@ type SqlserverServerBlobAuditingPolicy_Properties struct {
 }
 
 var SqlserverServerBlobAuditingPolicy_PropertiesFields = ubx.FieldMap{
-		"AuditActionsAndGroups": ubx.FieldSpec{WireName: "audit_actions_and_groups"},
-		"IsAzureMonitorTargetEnabled": ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
-		"IsDevopsAuditEnabled": ubx.FieldSpec{WireName: "is_devops_audit_enabled"},
-		"IsStorageSecondaryKeyInUse": ubx.FieldSpec{WireName: "is_storage_secondary_key_in_use"},
-		"QueueDelayMs": ubx.FieldSpec{WireName: "queue_delay_ms"},
-		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageAccountAccessKey": ubx.FieldSpec{WireName: "storage_account_access_key"},
-		"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
-		"StorageEndpoint": ubx.FieldSpec{WireName: "storage_endpoint"},
-	}
+	"AuditActionsAndGroups":        ubx.FieldSpec{WireName: "audit_actions_and_groups"},
+	"IsAzureMonitorTargetEnabled":  ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
+	"IsDevopsAuditEnabled":         ubx.FieldSpec{WireName: "is_devops_audit_enabled"},
+	"IsStorageSecondaryKeyInUse":   ubx.FieldSpec{WireName: "is_storage_secondary_key_in_use"},
+	"QueueDelayMs":                 ubx.FieldSpec{WireName: "queue_delay_ms"},
+	"RetentionDays":                ubx.FieldSpec{WireName: "retention_days"},
+	"State":                        ubx.FieldSpec{WireName: "state"},
+	"StorageAccountAccessKey":      ubx.FieldSpec{WireName: "storage_account_access_key"},
+	"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
+	"StorageEndpoint":              ubx.FieldSpec{WireName: "storage_endpoint"},
+}
 
 type SqlserverServerBlobAuditingPolicyConfig struct {
 	// Properties of a server blob auditing policy.
@@ -54,8 +54,8 @@ var SqlserverServerBlobAuditingPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlserverServerBlobAuditingPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlserverServerBlobAuditingPolicy_PropertiesFields,
 		},
 	},
 }

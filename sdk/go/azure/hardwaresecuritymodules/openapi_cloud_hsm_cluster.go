@@ -4,7 +4,7 @@ package hardwaresecuritymodules
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCloudHsmCluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,8 +20,8 @@ type OpenapiCloudHsmCluster_Identity struct {
 }
 
 type OpenapiCloudHsmCluster_Properties_Hsms struct {
-	Fqdn any
-	State any
+	Fqdn         any
+	State        any
 	StateMessage any
 }
 
@@ -31,19 +31,19 @@ type OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_Pri
 
 type OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -74,84 +74,84 @@ type OpenapiCloudHsmCluster_Sku struct {
 }
 
 var OpenapiCloudHsmCluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiCloudHsmCluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiCloudHsmCluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiCloudHsmCluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiCloudHsmCluster_Properties_HsmsFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StateMessage": ubx.FieldSpec{WireName: "state_message"},
-	}
+	"Fqdn":         ubx.FieldSpec{WireName: "fqdn"},
+	"State":        ubx.FieldSpec{WireName: "state"},
+	"StateMessage": ubx.FieldSpec{WireName: "state_message"},
+}
 
 var OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiCloudHsmCluster_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiCloudHsmCluster_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var OpenapiCloudHsmCluster_PropertiesFields = ubx.FieldMap{
-		"ActivationState": ubx.FieldSpec{WireName: "activation_state"},
-		"AutoGeneratedDomainNameLabelScope": ubx.FieldSpec{WireName: "auto_generated_domain_name_label_scope"},
-		"Hsms": ubx.FieldSpec{
-			WireName: "hsms",
-			Kind: "list",
-			Fields: OpenapiCloudHsmCluster_Properties_HsmsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiCloudHsmCluster_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"StatusMessage": ubx.FieldSpec{WireName: "status_message"},
-	}
+	"ActivationState":                   ubx.FieldSpec{WireName: "activation_state"},
+	"AutoGeneratedDomainNameLabelScope": ubx.FieldSpec{WireName: "auto_generated_domain_name_label_scope"},
+	"Hsms": ubx.FieldSpec{
+		WireName: "hsms",
+		Kind:     "list",
+		Fields:   OpenapiCloudHsmCluster_Properties_HsmsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiCloudHsmCluster_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"StatusMessage":       ubx.FieldSpec{WireName: "status_message"},
+}
 
 var OpenapiCloudHsmCluster_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 type OpenapiCloudHsmClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -176,18 +176,18 @@ var OpenapiCloudHsmCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiCloudHsmCluster_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiCloudHsmCluster_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCloudHsmCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCloudHsmCluster_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiCloudHsmCluster_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiCloudHsmCluster_SkuFields,
 		},
 	},
 }

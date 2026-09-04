@@ -51,6 +51,8 @@ class NetworkwatcherPacketCaptureResult_Properties:
     continuous_capture: Any = None
     # A list of packet capture filters.
     filters: Any = None
+    # Provisioning states of a resource.
+    provisioning_state: Any = None
     # A list of AzureVMSS instances which can be included or excluded to run packet capture. If both included and excluded are empty, then the packet capture will run on all instances of AzureVMSS.
     scope: Any = None
     # The storage location for a packet capture session.
@@ -103,6 +105,7 @@ _NetworkwatcherPacketCaptureResult_PropertiesFields = {
         kind="list",
         fields=_NetworkwatcherPacketCaptureResult_Properties_FiltersFields,
     ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "scope": ubx.FieldSpec(
         wire_name="scope",
         kind="object",

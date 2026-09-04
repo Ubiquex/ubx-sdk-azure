@@ -8,56 +8,56 @@ type VirtualwanVpnSiteLinkConnection_Value_Properties_EgressNatRules struct {
 }
 
 type VirtualwanVpnSiteLinkConnection_Value_Properties_IpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type VirtualwanVpnSiteLinkConnection_Value_Properties_VpnGatewayCustomBgpAddresses struct {
 	CustomBgpIpAddress any
-	IpConfigurationId any
+	IpConfigurationId  any
 }
 
 type VirtualwanVpnSiteLinkConnection_Value_Properties struct {
-	ConnectionBandwidth any
-	ConnectionStatus any
-	DpdTimeoutSeconds any
-	EgressBytesTransferred any
-	EgressNatRules any
-	EnableBgp any
-	EnableRateLimiting any
-	IngressBytesTransferred any
-	IngressNatRules any
-	IpsecPolicies any
-	ProvisioningState any
-	RoutingWeight any
-	SharedKey any
-	UseLocalAzureIpAddress any
+	ConnectionBandwidth            any
+	ConnectionStatus               any
+	DpdTimeoutSeconds              any
+	EgressBytesTransferred         any
+	EgressNatRules                 any
+	EnableBgp                      any
+	EnableRateLimiting             any
+	IngressBytesTransferred        any
+	IngressNatRules                any
+	IpsecPolicies                  any
+	ProvisioningState              any
+	RoutingWeight                  any
+	SharedKey                      any
+	UseLocalAzureIpAddress         any
 	UsePolicyBasedTrafficSelectors any
-	VpnConnectionProtocolType any
-	VpnGatewayCustomBgpAddresses any
-	VpnLinkConnectionMode any
-	VpnSiteLink any
+	VpnConnectionProtocolType      any
+	VpnGatewayCustomBgpAddresses   any
+	VpnLinkConnectionMode          any
+	VpnSiteLink                    any
 }
 
 type VirtualwanVpnSiteLinkConnection_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanVpnSiteLinkConnectionConfig struct {
 	ConnectionName any
-	GatewayName any
+	GatewayName    any
 }
 
 type VirtualwanVpnSiteLinkConnectionAttrs struct {
 	ConnectionName any
-	GatewayName any
+	GatewayName    any
 	// The link to the next page of items
 	NextLink any
 	// The VpnSiteLinkConnection items on this page
@@ -68,6 +68,6 @@ var VirtualwanVpnSiteLinkConnection = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_vpn_site_link_connection",
 	Fields: ubx.FieldMap{
 		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
+		"GatewayName":    ubx.FieldSpec{WireName: "gateway_name"},
 	},
 }

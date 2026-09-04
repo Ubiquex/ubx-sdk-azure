@@ -5,40 +5,40 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerConnectivityConfiguration_Value_Properties_AppliesToGroups struct {
 	GroupConnectivity any
-	IsGlobal any
-	NetworkGroupId any
-	UseHubGateway any
+	IsGlobal          any
+	NetworkGroupId    any
+	UseHubGateway     any
 }
 
 type NetworkmanagerConnectivityConfiguration_Value_Properties_ConnectivityCapabilities struct {
-	ConnectedGroupAddressOverlap any
+	ConnectedGroupAddressOverlap        any
 	ConnectedGroupPrivateEndpointsScale any
-	PeeringEnforcement any
+	PeeringEnforcement                  any
 }
 
 type NetworkmanagerConnectivityConfiguration_Value_Properties_Hubs struct {
-	ResourceId any
+	ResourceId   any
 	ResourceType any
 }
 
 type NetworkmanagerConnectivityConfiguration_Value_Properties struct {
-	AppliesToGroups any
+	AppliesToGroups          any
 	ConnectivityCapabilities any
-	ConnectivityTopology any
-	DeleteExistingPeering any
-	Description any
-	Hubs any
-	IsGlobal any
-	ProvisioningState any
-	ResourceGuid any
+	ConnectivityTopology     any
+	DeleteExistingPeering    any
+	Description              any
+	Hubs                     any
+	IsGlobal                 any
+	ProvisioningState        any
+	ResourceGuid             any
 }
 
 type NetworkmanagerConnectivityConfiguration_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 

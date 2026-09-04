@@ -7,29 +7,29 @@ type DiagnosticResource_Properties_Diagnostics_Error_Details struct {
 }
 
 type DiagnosticResource_Properties_Diagnostics_Error struct {
-	Code any
+	Code    any
 	Details any
 	Message any
-	Type any
+	Type    any
 }
 
 type DiagnosticResource_Properties_Diagnostics_Insights struct {
-	Id any
+	Id              any
 	ImportanceLevel any
-	Results any
-	Title any
+	Results         any
+	Title           any
 }
 
 type DiagnosticResource_Properties_Diagnostics struct {
-	Error any
-	Insights any
+	Error      any
+	Insights   any
 	SolutionId any
-	Status any
+	Status     any
 }
 
 type DiagnosticResource_Properties_Insights struct {
 	AdditionalParameters any
-	SolutionId any
+	SolutionId           any
 }
 
 type DiagnosticResource_Properties struct {
@@ -45,62 +45,61 @@ type DiagnosticResource_Properties struct {
 	ProvisioningState any
 }
 
-var DiagnosticResource_Properties_Diagnostics_Error_DetailsFields = ubx.FieldMap{
-	}
+var DiagnosticResource_Properties_Diagnostics_Error_DetailsFields = ubx.FieldMap{}
 
 var DiagnosticResource_Properties_Diagnostics_ErrorFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: DiagnosticResource_Properties_Diagnostics_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   DiagnosticResource_Properties_Diagnostics_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Type":    ubx.FieldSpec{WireName: "type"},
+}
 
 var DiagnosticResource_Properties_Diagnostics_InsightsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"ImportanceLevel": ubx.FieldSpec{WireName: "importance_level"},
-		"Results": ubx.FieldSpec{WireName: "results"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"Id":              ubx.FieldSpec{WireName: "id"},
+	"ImportanceLevel": ubx.FieldSpec{WireName: "importance_level"},
+	"Results":         ubx.FieldSpec{WireName: "results"},
+	"Title":           ubx.FieldSpec{WireName: "title"},
+}
 
 var DiagnosticResource_Properties_DiagnosticsFields = ubx.FieldMap{
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: DiagnosticResource_Properties_Diagnostics_ErrorFields,
-		},
-		"Insights": ubx.FieldSpec{
-			WireName: "insights",
-			Kind: "list",
-			Fields: DiagnosticResource_Properties_Diagnostics_InsightsFields,
-		},
-		"SolutionId": ubx.FieldSpec{WireName: "solution_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   DiagnosticResource_Properties_Diagnostics_ErrorFields,
+	},
+	"Insights": ubx.FieldSpec{
+		WireName: "insights",
+		Kind:     "list",
+		Fields:   DiagnosticResource_Properties_Diagnostics_InsightsFields,
+	},
+	"SolutionId": ubx.FieldSpec{WireName: "solution_id"},
+	"Status":     ubx.FieldSpec{WireName: "status"},
+}
 
 var DiagnosticResource_Properties_InsightsFields = ubx.FieldMap{
-		"AdditionalParameters": ubx.FieldSpec{WireName: "additional_parameters"},
-		"SolutionId": ubx.FieldSpec{WireName: "solution_id"},
-	}
+	"AdditionalParameters": ubx.FieldSpec{WireName: "additional_parameters"},
+	"SolutionId":           ubx.FieldSpec{WireName: "solution_id"},
+}
 
 var DiagnosticResource_PropertiesFields = ubx.FieldMap{
-		"AcceptedAt": ubx.FieldSpec{WireName: "accepted_at"},
-		"Diagnostics": ubx.FieldSpec{
-			WireName: "diagnostics",
-			Kind: "list",
-			Fields: DiagnosticResource_Properties_DiagnosticsFields,
-		},
-		"GlobalParameters": ubx.FieldSpec{WireName: "global_parameters"},
-		"Insights": ubx.FieldSpec{
-			WireName: "insights",
-			Kind: "list",
-			Fields: DiagnosticResource_Properties_InsightsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AcceptedAt": ubx.FieldSpec{WireName: "accepted_at"},
+	"Diagnostics": ubx.FieldSpec{
+		WireName: "diagnostics",
+		Kind:     "list",
+		Fields:   DiagnosticResource_Properties_DiagnosticsFields,
+	},
+	"GlobalParameters": ubx.FieldSpec{WireName: "global_parameters"},
+	"Insights": ubx.FieldSpec{
+		WireName: "insights",
+		Kind:     "list",
+		Fields:   DiagnosticResource_Properties_InsightsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type DiagnosticResourceConfig struct {
 	// Diagnostic resource properties.
@@ -121,8 +120,8 @@ var DiagnosticResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DiagnosticResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DiagnosticResource_PropertiesFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

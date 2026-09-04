@@ -4,9 +4,9 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApigatewayGatewayResourceSkuResult_Value_Capacity struct {
-	Default any
-	Maximum any
-	Minimum any
+	Default   any
+	Maximum   any
+	Minimum   any
 	ScaleType any
 }
 
@@ -15,9 +15,9 @@ type ApigatewayGatewayResourceSkuResult_Value_Sku struct {
 }
 
 type ApigatewayGatewayResourceSkuResult_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type ApigatewayGatewayResourceSkuResultConfig struct {
@@ -32,6 +32,5 @@ type ApigatewayGatewayResourceSkuResultAttrs struct {
 
 var ApigatewayGatewayResourceSkuResult = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apigateway_gateway_resource_sku_result",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

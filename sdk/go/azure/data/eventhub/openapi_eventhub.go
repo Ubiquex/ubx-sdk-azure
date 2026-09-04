@@ -4,31 +4,31 @@ package eventhub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEventhub_Value_Properties_CaptureDescription_Destination_Identity struct {
-	Type any
+	Type                 any
 	UserAssignedIdentity any
 }
 
 type OpenapiEventhub_Value_Properties_CaptureDescription_Destination_Properties struct {
-	ArchiveNameFormat any
-	BlobContainer any
-	DataLakeAccountName any
-	DataLakeFolderPath any
-	DataLakeSubscriptionId any
+	ArchiveNameFormat        any
+	BlobContainer            any
+	DataLakeAccountName      any
+	DataLakeFolderPath       any
+	DataLakeSubscriptionId   any
 	StorageAccountResourceId any
 }
 
 type OpenapiEventhub_Value_Properties_CaptureDescription_Destination struct {
-	Identity any
-	Name any
+	Identity   any
+	Name       any
 	Properties any
 }
 
 type OpenapiEventhub_Value_Properties_CaptureDescription struct {
-	Destination any
-	Enabled any
-	Encoding any
+	Destination       any
+	Enabled           any
+	Encoding          any
 	IntervalInSeconds any
-	SizeLimitInBytes any
+	SizeLimitInBytes  any
 	SkipEmptyArchives any
 }
 
@@ -37,28 +37,28 @@ type OpenapiEventhub_Value_Properties_MessageTimestampDescription struct {
 }
 
 type OpenapiEventhub_Value_Properties_RetentionDescription struct {
-	CleanupPolicy any
+	CleanupPolicy                 any
 	MinCompactionLagTimeInMinutes any
-	RetentionTimeInHours any
+	RetentionTimeInHours          any
 	TombstoneRetentionTimeInHours any
 }
 
 type OpenapiEventhub_Value_Properties struct {
-	CaptureDescription any
-	CreatedAt any
-	Identifier any
-	MessageRetentionInDays any
+	CaptureDescription          any
+	CreatedAt                   any
+	Identifier                  any
+	MessageRetentionInDays      any
 	MessageTimestampDescription any
-	PartitionCount any
-	PartitionIds any
-	RetentionDescription any
-	Status any
-	UpdatedAt any
-	UserMetadata any
+	PartitionCount              any
+	PartitionIds                any
+	RetentionDescription        any
+	Status                      any
+	UpdatedAt                   any
+	UserMetadata                any
 }
 
 type OpenapiEventhub_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

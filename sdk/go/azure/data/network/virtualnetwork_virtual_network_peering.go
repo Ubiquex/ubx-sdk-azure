@@ -9,50 +9,50 @@ type VirtualnetworkVirtualNetworkPeering_Value_Properties_LocalAddressSpace_Ipam
 
 type VirtualnetworkVirtualNetworkPeering_Value_Properties_LocalAddressSpace_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type VirtualnetworkVirtualNetworkPeering_Value_Properties_LocalAddressSpace struct {
-	AddressPrefixes any
+	AddressPrefixes           any
 	IpamPoolPrefixAllocations any
 }
 
 type VirtualnetworkVirtualNetworkPeering_Value_Properties_RemoteBgpCommunities struct {
-	RegionalCommunity any
+	RegionalCommunity       any
 	VirtualNetworkCommunity any
 }
 
 type VirtualnetworkVirtualNetworkPeering_Value_Properties_RemoteVirtualNetworkEncryption struct {
-	Enabled any
+	Enabled     any
 	Enforcement any
 }
 
 type VirtualnetworkVirtualNetworkPeering_Value_Properties struct {
-	AllowForwardedTraffic any
-	AllowGatewayTransit any
-	AllowVirtualNetworkAccess any
-	DoNotVerifyRemoteGateways any
-	EnableOnlyIpv6Peering any
-	LocalAddressSpace any
-	LocalSubnetNames any
-	LocalVirtualNetworkAddressSpace any
-	PeerCompleteVnets any
-	PeeringState any
-	PeeringSyncLevel any
-	ProvisioningState any
-	RemoteAddressSpace any
-	RemoteBgpCommunities any
-	RemoteSubnetNames any
-	RemoteVirtualNetwork any
+	AllowForwardedTraffic            any
+	AllowGatewayTransit              any
+	AllowVirtualNetworkAccess        any
+	DoNotVerifyRemoteGateways        any
+	EnableOnlyIpv6Peering            any
+	LocalAddressSpace                any
+	LocalSubnetNames                 any
+	LocalVirtualNetworkAddressSpace  any
+	PeerCompleteVnets                any
+	PeeringState                     any
+	PeeringSyncLevel                 any
+	ProvisioningState                any
+	RemoteAddressSpace               any
+	RemoteBgpCommunities             any
+	RemoteSubnetNames                any
+	RemoteVirtualNetwork             any
 	RemoteVirtualNetworkAddressSpace any
-	RemoteVirtualNetworkEncryption any
-	ResourceGuid any
-	UseRemoteGateways any
+	RemoteVirtualNetworkEncryption   any
+	ResourceGuid                     any
+	UseRemoteGateways                any
 }
 
 type VirtualnetworkVirtualNetworkPeering_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -64,7 +64,7 @@ type VirtualnetworkVirtualNetworkPeeringAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The VirtualNetworkPeering items on this page
-	Value any
+	Value              any
 	VirtualNetworkName any
 }
 

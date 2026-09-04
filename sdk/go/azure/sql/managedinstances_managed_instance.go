@@ -4,7 +4,7 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstancesManagedInstance_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -40,18 +40,18 @@ type ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Prope
 
 type ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections struct {
-	Id any
+	Id         any
 	Properties any
 }
 
@@ -167,134 +167,134 @@ type ManagedinstancesManagedInstance_Sku struct {
 }
 
 var ManagedinstancesManagedInstance_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var ManagedinstancesManagedInstance_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ManagedinstancesManagedInstance_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ManagedinstancesManagedInstance_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ManagedinstancesManagedInstance_Properties_AdministratorsFields = ubx.FieldMap{
-		"AdministratorType": ubx.FieldSpec{WireName: "administrator_type"},
-		"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
-		"Login": ubx.FieldSpec{WireName: "login"},
-		"PrincipalType": ubx.FieldSpec{WireName: "principal_type"},
-		"Sid": ubx.FieldSpec{WireName: "sid"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AdministratorType":         ubx.FieldSpec{WireName: "administrator_type"},
+	"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
+	"Login":                     ubx.FieldSpec{WireName: "login"},
+	"PrincipalType":             ubx.FieldSpec{WireName: "principal_type"},
+	"Sid":                       ubx.FieldSpec{WireName: "sid"},
+	"TenantId":                  ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ManagedinstancesManagedInstance_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ManagedinstancesManagedInstance_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var ManagedinstancesManagedInstance_Properties_ServicePrincipalFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagedinstancesManagedInstance_PropertiesFields = ubx.FieldMap{
-		"AdministratorLogin": ubx.FieldSpec{WireName: "administrator_login"},
-		"AdministratorLoginPassword": ubx.FieldSpec{WireName: "administrator_login_password"},
-		"Administrators": ubx.FieldSpec{
-			WireName: "administrators",
-			Kind: "object",
-			Fields: ManagedinstancesManagedInstance_Properties_AdministratorsFields,
-		},
-		"AuthenticationMetadata": ubx.FieldSpec{WireName: "authentication_metadata"},
-		"Collation": ubx.FieldSpec{WireName: "collation"},
-		"CreateTime": ubx.FieldSpec{WireName: "create_time"},
-		"CurrentBackupStorageRedundancy": ubx.FieldSpec{WireName: "current_backup_storage_redundancy"},
-		"DatabaseFormat": ubx.FieldSpec{WireName: "database_format"},
-		"DnsZone": ubx.FieldSpec{WireName: "dns_zone"},
-		"DnsZonePartner": ubx.FieldSpec{WireName: "dns_zone_partner"},
-		"ExternalGovernanceStatus": ubx.FieldSpec{WireName: "external_governance_status"},
-		"FullyQualifiedDomainName": ubx.FieldSpec{WireName: "fully_qualified_domain_name"},
-		"HybridSecondaryUsage": ubx.FieldSpec{WireName: "hybrid_secondary_usage"},
-		"HybridSecondaryUsageDetected": ubx.FieldSpec{WireName: "hybrid_secondary_usage_detected"},
-		"InstancePoolId": ubx.FieldSpec{WireName: "instance_pool_id"},
-		"IsGeneralPurposeV2": ubx.FieldSpec{WireName: "is_general_purpose_v2"},
-		"KeyId": ubx.FieldSpec{WireName: "key_id"},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-		"MaintenanceConfigurationId": ubx.FieldSpec{WireName: "maintenance_configuration_id"},
-		"ManagedInstanceCreateMode": ubx.FieldSpec{WireName: "managed_instance_create_mode"},
-		"MemorySizeInGb": ubx.FieldSpec{WireName: "memory_size_in_gb"},
-		"MinimalTlsVersion": ubx.FieldSpec{WireName: "minimal_tls_version"},
-		"PricingModel": ubx.FieldSpec{WireName: "pricing_model"},
-		"PrimaryUserAssignedIdentityId": ubx.FieldSpec{WireName: "primary_user_assigned_identity_id"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ManagedinstancesManagedInstance_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ProxyOverride": ubx.FieldSpec{WireName: "proxy_override"},
-		"PublicDataEndpointEnabled": ubx.FieldSpec{WireName: "public_data_endpoint_enabled"},
-		"RequestedBackupStorageRedundancy": ubx.FieldSpec{WireName: "requested_backup_storage_redundancy"},
-		"RequestedLogicalAvailabilityZone": ubx.FieldSpec{WireName: "requested_logical_availability_zone"},
-		"RestorePointInTime": ubx.FieldSpec{WireName: "restore_point_in_time"},
-		"ServicePrincipal": ubx.FieldSpec{
-			WireName: "service_principal",
-			Kind: "object",
-			Fields: ManagedinstancesManagedInstance_Properties_ServicePrincipalFields,
-		},
-		"SourceManagedInstanceId": ubx.FieldSpec{WireName: "source_managed_instance_id"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageIops": ubx.FieldSpec{WireName: "storage_iops"},
-		"StorageSizeInGb": ubx.FieldSpec{WireName: "storage_size_in_gb"},
-		"StorageThroughputMbps": ubx.FieldSpec{WireName: "storage_throughput_mbps"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"TimezoneId": ubx.FieldSpec{WireName: "timezone_id"},
-		"VCores": ubx.FieldSpec{WireName: "v_cores"},
-		"VirtualClusterId": ubx.FieldSpec{WireName: "virtual_cluster_id"},
-		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-	}
+	"AdministratorLogin":         ubx.FieldSpec{WireName: "administrator_login"},
+	"AdministratorLoginPassword": ubx.FieldSpec{WireName: "administrator_login_password"},
+	"Administrators": ubx.FieldSpec{
+		WireName: "administrators",
+		Kind:     "object",
+		Fields:   ManagedinstancesManagedInstance_Properties_AdministratorsFields,
+	},
+	"AuthenticationMetadata":         ubx.FieldSpec{WireName: "authentication_metadata"},
+	"Collation":                      ubx.FieldSpec{WireName: "collation"},
+	"CreateTime":                     ubx.FieldSpec{WireName: "create_time"},
+	"CurrentBackupStorageRedundancy": ubx.FieldSpec{WireName: "current_backup_storage_redundancy"},
+	"DatabaseFormat":                 ubx.FieldSpec{WireName: "database_format"},
+	"DnsZone":                        ubx.FieldSpec{WireName: "dns_zone"},
+	"DnsZonePartner":                 ubx.FieldSpec{WireName: "dns_zone_partner"},
+	"ExternalGovernanceStatus":       ubx.FieldSpec{WireName: "external_governance_status"},
+	"FullyQualifiedDomainName":       ubx.FieldSpec{WireName: "fully_qualified_domain_name"},
+	"HybridSecondaryUsage":           ubx.FieldSpec{WireName: "hybrid_secondary_usage"},
+	"HybridSecondaryUsageDetected":   ubx.FieldSpec{WireName: "hybrid_secondary_usage_detected"},
+	"InstancePoolId":                 ubx.FieldSpec{WireName: "instance_pool_id"},
+	"IsGeneralPurposeV2":             ubx.FieldSpec{WireName: "is_general_purpose_v2"},
+	"KeyId":                          ubx.FieldSpec{WireName: "key_id"},
+	"LicenseType":                    ubx.FieldSpec{WireName: "license_type"},
+	"MaintenanceConfigurationId":     ubx.FieldSpec{WireName: "maintenance_configuration_id"},
+	"ManagedInstanceCreateMode":      ubx.FieldSpec{WireName: "managed_instance_create_mode"},
+	"MemorySizeInGb":                 ubx.FieldSpec{WireName: "memory_size_in_gb"},
+	"MinimalTlsVersion":              ubx.FieldSpec{WireName: "minimal_tls_version"},
+	"PricingModel":                   ubx.FieldSpec{WireName: "pricing_model"},
+	"PrimaryUserAssignedIdentityId":  ubx.FieldSpec{WireName: "primary_user_assigned_identity_id"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ManagedinstancesManagedInstance_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":                ubx.FieldSpec{WireName: "provisioning_state"},
+	"ProxyOverride":                    ubx.FieldSpec{WireName: "proxy_override"},
+	"PublicDataEndpointEnabled":        ubx.FieldSpec{WireName: "public_data_endpoint_enabled"},
+	"RequestedBackupStorageRedundancy": ubx.FieldSpec{WireName: "requested_backup_storage_redundancy"},
+	"RequestedLogicalAvailabilityZone": ubx.FieldSpec{WireName: "requested_logical_availability_zone"},
+	"RestorePointInTime":               ubx.FieldSpec{WireName: "restore_point_in_time"},
+	"ServicePrincipal": ubx.FieldSpec{
+		WireName: "service_principal",
+		Kind:     "object",
+		Fields:   ManagedinstancesManagedInstance_Properties_ServicePrincipalFields,
+	},
+	"SourceManagedInstanceId": ubx.FieldSpec{WireName: "source_managed_instance_id"},
+	"State":                   ubx.FieldSpec{WireName: "state"},
+	"StorageIops":             ubx.FieldSpec{WireName: "storage_iops"},
+	"StorageSizeInGb":         ubx.FieldSpec{WireName: "storage_size_in_gb"},
+	"StorageThroughputMbps":   ubx.FieldSpec{WireName: "storage_throughput_mbps"},
+	"SubnetId":                ubx.FieldSpec{WireName: "subnet_id"},
+	"TimezoneId":              ubx.FieldSpec{WireName: "timezone_id"},
+	"VCores":                  ubx.FieldSpec{WireName: "v_cores"},
+	"VirtualClusterId":        ubx.FieldSpec{WireName: "virtual_cluster_id"},
+	"ZoneRedundant":           ubx.FieldSpec{WireName: "zone_redundant"},
+}
 
 var ManagedinstancesManagedInstance_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ManagedinstancesManagedInstanceConfig struct {
 	// Azure Active Directory identity configuration for a resource.
@@ -319,18 +319,18 @@ var ManagedinstancesManagedInstance = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ManagedinstancesManagedInstance_IdentityFields,
+			Kind:     "object",
+			Fields:   ManagedinstancesManagedInstance_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstancesManagedInstance_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstancesManagedInstance_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ManagedinstancesManagedInstance_SkuFields,
+			Kind:     "object",
+			Fields:   ManagedinstancesManagedInstance_SkuFields,
 		},
 	},
 }

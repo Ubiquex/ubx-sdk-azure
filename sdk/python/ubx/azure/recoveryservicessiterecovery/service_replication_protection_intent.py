@@ -13,6 +13,16 @@ class ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetails:
 
 @dataclasses.dataclass
 class ServiceReplicationProtectionIntent_Properties:
+    # The creation time in UTC.
+    creation_time_utc: Any = None
+    # The name.
+    friendly_name: Any = None
+    # A value indicating whether the intent object is active.
+    is_active: Any = None
+    # The job Id.
+    job_id: Any = None
+    # The job state.
+    job_state: Any = None
     # Create protection intent provider specific input.
     provider_specific_details: Any = None
 
@@ -21,6 +31,11 @@ _ServiceReplicationProtectionIntent_Properties_ProviderSpecificDetailsFields = {
 }
 
 _ServiceReplicationProtectionIntent_PropertiesFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "friendly_name": ubx.FieldSpec(wire_name="friendly_name"),
+    "is_active": ubx.FieldSpec(wire_name="is_active"),
+    "job_id": ubx.FieldSpec(wire_name="job_id"),
+    "job_state": ubx.FieldSpec(wire_name="job_state"),
     "provider_specific_details": ubx.FieldSpec(
         wire_name="provider_specific_details",
         kind="object",

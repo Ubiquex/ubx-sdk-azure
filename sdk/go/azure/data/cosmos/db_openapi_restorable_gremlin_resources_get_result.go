@@ -5,24 +5,24 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableGremlinResourcesGetResult_Value struct {
 	DatabaseName any
-	GraphNames any
-	Id any
-	Name any
-	Type any
+	GraphNames   any
+	Id           any
+	Name         any
+	Type         any
 }
 
 type DbOpenapiRestorableGremlinResourcesGetResultConfig struct {
-	InstanceId any
-	Location any
-	RestoreLocation any
+	InstanceId            any
+	Location              any
+	RestoreLocation       any
 	RestoreTimestampInUtc any
 }
 
 type DbOpenapiRestorableGremlinResourcesGetResultAttrs struct {
-	InstanceId any
-	Location any
-	NextLink any
-	RestoreLocation any
+	InstanceId            any
+	Location              any
+	NextLink              any
+	RestoreLocation       any
 	RestoreTimestampInUtc any
 	// List of restorable Gremlin resources, including the gremlin database and graph names.
 	Value any
@@ -31,9 +31,9 @@ type DbOpenapiRestorableGremlinResourcesGetResultAttrs struct {
 var DbOpenapiRestorableGremlinResourcesGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_gremlin_resources_get_result",
 	Fields: ubx.FieldMap{
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"RestoreLocation": ubx.FieldSpec{WireName: "restore_location"},
+		"InstanceId":            ubx.FieldSpec{WireName: "instance_id"},
+		"Location":              ubx.FieldSpec{WireName: "location"},
+		"RestoreLocation":       ubx.FieldSpec{WireName: "restore_location"},
 		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
 	},
 }

@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ClustersCluster_Value_Properties struct {
 	CapacityAllocated any
-	CapacityAssigned any
-	ClusterId any
-	CreatedDate any
+	CapacityAssigned  any
+	ClusterId         any
+	CreatedDate       any
 	ProvisioningState any
 }
 
 type ClustersCluster_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type ClustersCluster_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ClustersClusterConfig struct {
@@ -34,6 +34,5 @@ type ClustersClusterAttrs struct {
 
 var ClustersCluster = ubx.DataSourceBinding{
 	WireType: "azure_streamanalytics_clusters_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

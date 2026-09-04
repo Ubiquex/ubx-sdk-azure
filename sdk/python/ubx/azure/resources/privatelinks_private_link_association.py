@@ -11,10 +11,16 @@ class PrivatelinksPrivateLinkAssociation_Properties:
     # The rmpl Resource ID.
     private_link: Any = None
     public_network_access: Any = None
+    # The scope of the private link association.
+    scope: Any = None
+    # The TenantID.
+    tenant_id: Any = None
 
 _PrivatelinksPrivateLinkAssociation_PropertiesFields = {
     "private_link": ubx.FieldSpec(wire_name="private_link"),
     "public_network_access": ubx.FieldSpec(wire_name="public_network_access"),
+    "scope": ubx.FieldSpec(wire_name="scope"),
+    "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
 }
 
 @dataclasses.dataclass

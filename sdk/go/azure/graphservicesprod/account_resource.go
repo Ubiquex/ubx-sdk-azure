@@ -24,23 +24,14 @@ type AccountResource_SystemData struct {
 }
 
 var AccountResource_PropertiesFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"BillingPlanId": ubx.FieldSpec{WireName: "billing_plan_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
-
-var AccountResource_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"AppId":             ubx.FieldSpec{WireName: "app_id"},
+	"BillingPlanId":     ubx.FieldSpec{WireName: "billing_plan_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type AccountResourceConfig struct {
 	// Property bag from billing account
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type AccountResourceAttrs struct {
@@ -55,13 +46,8 @@ var AccountResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AccountResource_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: AccountResource_SystemDataFields,
+			Kind:     "object",
+			Fields:   AccountResource_PropertiesFields,
 		},
 	},
 }

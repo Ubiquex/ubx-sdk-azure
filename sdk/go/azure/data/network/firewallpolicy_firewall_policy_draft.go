@@ -33,7 +33,7 @@ type FirewallpolicyFirewallPolicyDraft_Properties_ExplicitProxy struct {
 }
 
 type FirewallpolicyFirewallPolicyDraft_Properties_Insights_LogAnalyticsResources_Workspaces struct {
-	Region any
+	Region      any
 	WorkspaceId any
 }
 
@@ -54,18 +54,18 @@ type FirewallpolicyFirewallPolicyDraft_Properties_Insights struct {
 }
 
 type FirewallpolicyFirewallPolicyDraft_Properties_IntrusionDetection_Configuration_BypassTrafficSettings struct {
-	Description any
+	Description          any
 	DestinationAddresses any
-	DestinationIpGroups any
-	DestinationPorts any
-	Name any
-	Protocol any
-	SourceAddresses any
-	SourceIpGroups any
+	DestinationIpGroups  any
+	DestinationPorts     any
+	Name                 any
+	Protocol             any
+	SourceAddresses      any
+	SourceIpGroups       any
 }
 
 type FirewallpolicyFirewallPolicyDraft_Properties_IntrusionDetection_Configuration_SignatureOverrides struct {
-	Id any
+	Id   any
 	Mode any
 }
 
@@ -133,7 +133,7 @@ type FirewallpolicyFirewallPolicyDraftConfig struct {
 
 type FirewallpolicyFirewallPolicyDraftAttrs struct {
 	FirewallPolicyName any
-	Properties any
+	Properties         any
 }
 
 var FirewallpolicyFirewallPolicyDraft = ubx.DataSourceBinding{

@@ -64,41 +64,41 @@ type ManageddatabasesManagedDatabase_Properties struct {
 }
 
 var ManageddatabasesManagedDatabase_Properties_ExtendedAccessibilityInfoFields = ubx.FieldMap{
-		"InaccessibilityReasonDescription": ubx.FieldSpec{WireName: "inaccessibility_reason_description"},
-		"InaccessibilityReasonErrorCode": ubx.FieldSpec{WireName: "inaccessibility_reason_error_code"},
-		"InaccessibilityReasonKind": ubx.FieldSpec{WireName: "inaccessibility_reason_kind"},
-		"InaccessibilityReasonTdeKeyUri": ubx.FieldSpec{WireName: "inaccessibility_reason_tde_key_uri"},
-	}
+	"InaccessibilityReasonDescription": ubx.FieldSpec{WireName: "inaccessibility_reason_description"},
+	"InaccessibilityReasonErrorCode":   ubx.FieldSpec{WireName: "inaccessibility_reason_error_code"},
+	"InaccessibilityReasonKind":        ubx.FieldSpec{WireName: "inaccessibility_reason_kind"},
+	"InaccessibilityReasonTdeKeyUri":   ubx.FieldSpec{WireName: "inaccessibility_reason_tde_key_uri"},
+}
 
 var ManageddatabasesManagedDatabase_PropertiesFields = ubx.FieldMap{
-		"AutoCompleteRestore": ubx.FieldSpec{WireName: "auto_complete_restore"},
-		"CatalogCollation": ubx.FieldSpec{WireName: "catalog_collation"},
-		"Collation": ubx.FieldSpec{WireName: "collation"},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"CrossSubscriptionRestorableDroppedDatabaseId": ubx.FieldSpec{WireName: "cross_subscription_restorable_dropped_database_id"},
-		"CrossSubscriptionSourceDatabaseId": ubx.FieldSpec{WireName: "cross_subscription_source_database_id"},
-		"CrossSubscriptionTargetManagedInstanceId": ubx.FieldSpec{WireName: "cross_subscription_target_managed_instance_id"},
-		"DefaultSecondaryLocation": ubx.FieldSpec{WireName: "default_secondary_location"},
-		"EarliestRestorePoint": ubx.FieldSpec{WireName: "earliest_restore_point"},
-		"ExtendedAccessibilityInfo": ubx.FieldSpec{
-			WireName: "extended_accessibility_info",
-			Kind: "object",
-			Fields: ManageddatabasesManagedDatabase_Properties_ExtendedAccessibilityInfoFields,
-		},
-		"FailoverGroupId": ubx.FieldSpec{WireName: "failover_group_id"},
-		"IsLedgerOn": ubx.FieldSpec{WireName: "is_ledger_on"},
-		"LastBackupName": ubx.FieldSpec{WireName: "last_backup_name"},
-		"LongTermRetentionBackupResourceId": ubx.FieldSpec{WireName: "long_term_retention_backup_resource_id"},
-		"RecoverableDatabaseId": ubx.FieldSpec{WireName: "recoverable_database_id"},
-		"RestorableDroppedDatabaseId": ubx.FieldSpec{WireName: "restorable_dropped_database_id"},
-		"RestorePointInTime": ubx.FieldSpec{WireName: "restore_point_in_time"},
-		"SourceDatabaseId": ubx.FieldSpec{WireName: "source_database_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StorageContainerIdentity": ubx.FieldSpec{WireName: "storage_container_identity"},
-		"StorageContainerSasToken": ubx.FieldSpec{WireName: "storage_container_sas_token"},
-		"StorageContainerUri": ubx.FieldSpec{WireName: "storage_container_uri"},
-	}
+	"AutoCompleteRestore": ubx.FieldSpec{WireName: "auto_complete_restore"},
+	"CatalogCollation":    ubx.FieldSpec{WireName: "catalog_collation"},
+	"Collation":           ubx.FieldSpec{WireName: "collation"},
+	"CreateMode":          ubx.FieldSpec{WireName: "create_mode"},
+	"CreationDate":        ubx.FieldSpec{WireName: "creation_date"},
+	"CrossSubscriptionRestorableDroppedDatabaseId": ubx.FieldSpec{WireName: "cross_subscription_restorable_dropped_database_id"},
+	"CrossSubscriptionSourceDatabaseId":            ubx.FieldSpec{WireName: "cross_subscription_source_database_id"},
+	"CrossSubscriptionTargetManagedInstanceId":     ubx.FieldSpec{WireName: "cross_subscription_target_managed_instance_id"},
+	"DefaultSecondaryLocation":                     ubx.FieldSpec{WireName: "default_secondary_location"},
+	"EarliestRestorePoint":                         ubx.FieldSpec{WireName: "earliest_restore_point"},
+	"ExtendedAccessibilityInfo": ubx.FieldSpec{
+		WireName: "extended_accessibility_info",
+		Kind:     "object",
+		Fields:   ManageddatabasesManagedDatabase_Properties_ExtendedAccessibilityInfoFields,
+	},
+	"FailoverGroupId":                   ubx.FieldSpec{WireName: "failover_group_id"},
+	"IsLedgerOn":                        ubx.FieldSpec{WireName: "is_ledger_on"},
+	"LastBackupName":                    ubx.FieldSpec{WireName: "last_backup_name"},
+	"LongTermRetentionBackupResourceId": ubx.FieldSpec{WireName: "long_term_retention_backup_resource_id"},
+	"RecoverableDatabaseId":             ubx.FieldSpec{WireName: "recoverable_database_id"},
+	"RestorableDroppedDatabaseId":       ubx.FieldSpec{WireName: "restorable_dropped_database_id"},
+	"RestorePointInTime":                ubx.FieldSpec{WireName: "restore_point_in_time"},
+	"SourceDatabaseId":                  ubx.FieldSpec{WireName: "source_database_id"},
+	"Status":                            ubx.FieldSpec{WireName: "status"},
+	"StorageContainerIdentity":          ubx.FieldSpec{WireName: "storage_container_identity"},
+	"StorageContainerSasToken":          ubx.FieldSpec{WireName: "storage_container_sas_token"},
+	"StorageContainerUri":               ubx.FieldSpec{WireName: "storage_container_uri"},
+}
 
 type ManageddatabasesManagedDatabaseConfig struct {
 	// The managed database's properties.
@@ -115,8 +115,8 @@ var ManageddatabasesManagedDatabase = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManageddatabasesManagedDatabase_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManageddatabasesManagedDatabase_PropertiesFields,
 		},
 	},
 }

@@ -4,11 +4,11 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedPrivateEndpoint_Value_Properties struct {
-	GroupId any
-	PrivateLinkResourceId any
+	GroupId                   any
+	PrivateLinkResourceId     any
 	PrivateLinkResourceRegion any
-	ProvisioningState any
-	RequestMessage any
+	ProvisioningState         any
+	RequestMessage            any
 }
 
 type ManagedPrivateEndpoint_Value struct {

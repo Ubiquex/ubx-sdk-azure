@@ -126,6 +126,14 @@ class Cluster_Properties_ComputeProfile:
     roles: Any = None
 
 @dataclasses.dataclass
+class Cluster_Properties_ConnectivityEndpoints:
+    location: Any = None
+    name: Any = None
+    port: Any = None
+    private_ipaddress: Any = None
+    protocol: Any = None
+
+@dataclasses.dataclass
 class Cluster_Properties_DiskEncryptionProperties:
     # Algorithm identifier for encryption, default RSA-OAEP.
     encryption_algorithm: Any = None
@@ -144,6 +152,18 @@ class Cluster_Properties_DiskEncryptionProperties:
 class Cluster_Properties_EncryptionInTransitProperties:
     # Indicates whether or not inter cluster node communication is encrypted in transit.
     is_encryption_in_transit_enabled: Any = None
+
+@dataclasses.dataclass
+class Cluster_Properties_Errors:
+    code: Any = None
+    message: Any = None
+
+@dataclasses.dataclass
+class Cluster_Properties_ExcludedServicesConfig:
+    # The config id of excluded services.
+    excluded_services_config_id: Any = None
+    # The list of excluded services.
+    excluded_services_list: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_KafkaRestProperties_ClientGroupInfo:
@@ -167,8 +187,35 @@ class Cluster_Properties_NetworkProperties:
     resource_provider_connection: Any = None
 
 @dataclasses.dataclass
-class Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_Subnet:
+class Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint:
     id: Any = None
+
+@dataclasses.dataclass
+class Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState:
+    actions_required: Any = None
+    description: Any = None
+    status: Any = None
+
+@dataclasses.dataclass
+class Cluster_Properties_PrivateEndpointConnections_Properties:
+    link_identifier: Any = None
+    private_endpoint: Any = None
+    private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class Cluster_Properties_PrivateEndpointConnections_SystemData:
+    created_at: Any = None
+    created_by: Any = None
+    created_by_type: Any = None
+    last_modified_at: Any = None
+    last_modified_by: Any = None
+    last_modified_by_type: Any = None
+
+@dataclasses.dataclass
+class Cluster_Properties_PrivateEndpointConnections:
+    properties: Any = None
+    system_data: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties:
@@ -197,6 +244,11 @@ class Cluster_Properties_PrivateLinkConfigurations:
     name: Any = None
     properties: Any = None
     type: Any = None
+
+@dataclasses.dataclass
+class Cluster_Properties_QuotaInfo:
+    # The cores used by the cluster.
+    cores_used: Any = None
 
 @dataclasses.dataclass
 class Cluster_Properties_SecurityProfile:
@@ -240,16 +292,30 @@ class Cluster_Properties_StorageProfile:
 class Cluster_Properties:
     # The cluster definition.
     cluster_definition: Any = None
+    # The hdp version of the cluster.
+    cluster_hdp_version: Any = None
+    # The cluster id.
+    cluster_id: Any = None
+    # The state of the cluster.
+    cluster_state: Any = None
     # The version of the cluster.
     cluster_version: Any = None
     # The compute isolation properties.
     compute_isolation_properties: Any = None
     # Describes the compute profile.
     compute_profile: Any = None
+    # The list of connectivity endpoints.
+    connectivity_endpoints: Any = None
+    # The date on which the cluster was created.
+    created_date: Any = None
     # The disk encryption properties
     disk_encryption_properties: Any = None
     # The encryption-in-transit properties.
     encryption_in_transit_properties: Any = None
+    # The list of errors.
+    errors: Any = None
+    # The configuration that services will be excluded when creating cluster.
+    excluded_services_config: Any = None
     # The kafka rest proxy configuration which contains AAD security group information.
     kafka_rest_properties: Any = None
     # The minimal supported tls version.
@@ -258,29 +324,20 @@ class Cluster_Properties:
     network_properties: Any = None
     # The type of operating system.
     os_type: Any = None
+    # The list of private endpoint connections.
+    private_endpoint_connections: Any = None
     # The private link configurations.
     private_link_configurations: Any = None
+    # The provisioning state, which only appears in the response.
+    provisioning_state: Any = None
+    # The quota properties for the cluster.
+    quota_info: Any = None
     # The security profile which contains Ssh public key for the HDInsight cluster.
     security_profile: Any = None
     # The storage profile.
     storage_profile: Any = None
     # The cluster tier.
     tier: Any = None
-
-@dataclasses.dataclass
-class Cluster_SystemData:
-    # The timestamp of resource creation (UTC).
-    created_at: Any = None
-    # The identity that created the resource.
-    created_by: Any = None
-    # The type of identity that created the resource.
-    created_by_type: Any = None
-    # The timestamp of resource last modification (UTC)
-    last_modified_at: Any = None
-    # The identity that last modified the resource.
-    last_modified_by: Any = None
-    # The type of identity that last modified the resource.
-    last_modified_by_type: Any = None
 
 _Cluster_Identity_UserAssignedIdentitiesFields = {
     "client_id": ubx.FieldSpec(wire_name="client_id"),
@@ -450,6 +507,14 @@ _Cluster_Properties_ComputeProfileFields = {
     ),
 }
 
+_Cluster_Properties_ConnectivityEndpointsFields = {
+    "location": ubx.FieldSpec(wire_name="location"),
+    "name": ubx.FieldSpec(wire_name="name"),
+    "port": ubx.FieldSpec(wire_name="port"),
+    "private_ipaddress": ubx.FieldSpec(wire_name="private_ipaddress"),
+    "protocol": ubx.FieldSpec(wire_name="protocol"),
+}
+
 _Cluster_Properties_DiskEncryptionPropertiesFields = {
     "encryption_algorithm": ubx.FieldSpec(wire_name="encryption_algorithm"),
     "encryption_at_host": ubx.FieldSpec(wire_name="encryption_at_host"),
@@ -461,6 +526,16 @@ _Cluster_Properties_DiskEncryptionPropertiesFields = {
 
 _Cluster_Properties_EncryptionInTransitPropertiesFields = {
     "is_encryption_in_transit_enabled": ubx.FieldSpec(wire_name="is_encryption_in_transit_enabled"),
+}
+
+_Cluster_Properties_ErrorsFields = {
+    "code": ubx.FieldSpec(wire_name="code"),
+    "message": ubx.FieldSpec(wire_name="message"),
+}
+
+_Cluster_Properties_ExcludedServicesConfigFields = {
+    "excluded_services_config_id": ubx.FieldSpec(wire_name="excluded_services_config_id"),
+    "excluded_services_list": ubx.FieldSpec(wire_name="excluded_services_list"),
 }
 
 _Cluster_Properties_KafkaRestProperties_ClientGroupInfoFields = {
@@ -482,8 +557,51 @@ _Cluster_Properties_NetworkPropertiesFields = {
     "resource_provider_connection": ubx.FieldSpec(wire_name="resource_provider_connection"),
 }
 
-_Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields = {
+_Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = {
     "id": ubx.FieldSpec(wire_name="id"),
+}
+
+_Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = {
+    "actions_required": ubx.FieldSpec(wire_name="actions_required"),
+    "description": ubx.FieldSpec(wire_name="description"),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
+_Cluster_Properties_PrivateEndpointConnections_PropertiesFields = {
+    "link_identifier": ubx.FieldSpec(wire_name="link_identifier"),
+    "private_endpoint": ubx.FieldSpec(
+        wire_name="private_endpoint",
+        kind="object",
+        fields=_Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+    ),
+    "private_link_service_connection_state": ubx.FieldSpec(
+        wire_name="private_link_service_connection_state",
+        kind="object",
+        fields=_Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+}
+
+_Cluster_Properties_PrivateEndpointConnections_SystemDataFields = {
+    "created_at": ubx.FieldSpec(wire_name="created_at"),
+    "created_by": ubx.FieldSpec(wire_name="created_by"),
+    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
+    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
+    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
+    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
+}
+
+_Cluster_Properties_PrivateEndpointConnectionsFields = {
+    "properties": ubx.FieldSpec(
+        wire_name="properties",
+        kind="object",
+        fields=_Cluster_Properties_PrivateEndpointConnections_PropertiesFields,
+    ),
+    "system_data": ubx.FieldSpec(
+        wire_name="system_data",
+        kind="object",
+        fields=_Cluster_Properties_PrivateEndpointConnections_SystemDataFields,
+    ),
 }
 
 _Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields = {
@@ -494,7 +612,7 @@ _Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Proper
     "subnet": ubx.FieldSpec(
         wire_name="subnet",
         kind="object",
-        fields=_Cluster_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties_SubnetFields,
+        fields=_Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
     ),
 }
 
@@ -528,6 +646,10 @@ _Cluster_Properties_PrivateLinkConfigurationsFields = {
         fields=_Cluster_Properties_PrivateLinkConfigurations_PropertiesFields,
     ),
     "type": ubx.FieldSpec(wire_name="type"),
+}
+
+_Cluster_Properties_QuotaInfoFields = {
+    "cores_used": ubx.FieldSpec(wire_name="cores_used"),
 }
 
 _Cluster_Properties_SecurityProfileFields = {
@@ -568,6 +690,9 @@ _Cluster_PropertiesFields = {
         kind="object",
         fields=_Cluster_Properties_ClusterDefinitionFields,
     ),
+    "cluster_hdp_version": ubx.FieldSpec(wire_name="cluster_hdp_version"),
+    "cluster_id": ubx.FieldSpec(wire_name="cluster_id"),
+    "cluster_state": ubx.FieldSpec(wire_name="cluster_state"),
     "cluster_version": ubx.FieldSpec(wire_name="cluster_version"),
     "compute_isolation_properties": ubx.FieldSpec(
         wire_name="compute_isolation_properties",
@@ -579,6 +704,12 @@ _Cluster_PropertiesFields = {
         kind="object",
         fields=_Cluster_Properties_ComputeProfileFields,
     ),
+    "connectivity_endpoints": ubx.FieldSpec(
+        wire_name="connectivity_endpoints",
+        kind="list",
+        fields=_Cluster_Properties_ConnectivityEndpointsFields,
+    ),
+    "created_date": ubx.FieldSpec(wire_name="created_date"),
     "disk_encryption_properties": ubx.FieldSpec(
         wire_name="disk_encryption_properties",
         kind="object",
@@ -588,6 +719,16 @@ _Cluster_PropertiesFields = {
         wire_name="encryption_in_transit_properties",
         kind="object",
         fields=_Cluster_Properties_EncryptionInTransitPropertiesFields,
+    ),
+    "errors": ubx.FieldSpec(
+        wire_name="errors",
+        kind="list",
+        fields=_Cluster_Properties_ErrorsFields,
+    ),
+    "excluded_services_config": ubx.FieldSpec(
+        wire_name="excluded_services_config",
+        kind="object",
+        fields=_Cluster_Properties_ExcludedServicesConfigFields,
     ),
     "kafka_rest_properties": ubx.FieldSpec(
         wire_name="kafka_rest_properties",
@@ -601,10 +742,21 @@ _Cluster_PropertiesFields = {
         fields=_Cluster_Properties_NetworkPropertiesFields,
     ),
     "os_type": ubx.FieldSpec(wire_name="os_type"),
+    "private_endpoint_connections": ubx.FieldSpec(
+        wire_name="private_endpoint_connections",
+        kind="list",
+        fields=_Cluster_Properties_PrivateEndpointConnectionsFields,
+    ),
     "private_link_configurations": ubx.FieldSpec(
         wire_name="private_link_configurations",
         kind="list",
         fields=_Cluster_Properties_PrivateLinkConfigurationsFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "quota_info": ubx.FieldSpec(
+        wire_name="quota_info",
+        kind="object",
+        fields=_Cluster_Properties_QuotaInfoFields,
     ),
     "security_profile": ubx.FieldSpec(
         wire_name="security_profile",

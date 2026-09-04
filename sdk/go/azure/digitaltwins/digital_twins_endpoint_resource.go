@@ -28,23 +28,23 @@ type DigitalTwinsEndpointResource_Properties struct {
 }
 
 var DigitalTwinsEndpointResource_Properties_IdentityFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"Type":                 ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var DigitalTwinsEndpointResource_PropertiesFields = ubx.FieldMap{
-		"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"DeadLetterSecret": ubx.FieldSpec{WireName: "dead_letter_secret"},
-		"DeadLetterUri": ubx.FieldSpec{WireName: "dead_letter_uri"},
-		"EndpointType": ubx.FieldSpec{WireName: "endpoint_type"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: DigitalTwinsEndpointResource_Properties_IdentityFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
+	"CreatedTime":        ubx.FieldSpec{WireName: "created_time"},
+	"DeadLetterSecret":   ubx.FieldSpec{WireName: "dead_letter_secret"},
+	"DeadLetterUri":      ubx.FieldSpec{WireName: "dead_letter_uri"},
+	"EndpointType":       ubx.FieldSpec{WireName: "endpoint_type"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   DigitalTwinsEndpointResource_Properties_IdentityFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type DigitalTwinsEndpointResourceConfig struct {
 	// Properties related to Digital Twins Endpoint
@@ -61,8 +61,8 @@ var DigitalTwinsEndpointResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DigitalTwinsEndpointResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DigitalTwinsEndpointResource_PropertiesFields,
 		},
 	},
 }

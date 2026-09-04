@@ -4,38 +4,38 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSummaryLogs_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiSummaryLogs_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiSummaryLogs_Value_Properties_RuleDefinition struct {
-	BinDelay any
-	BinSize any
-	BinStartTime any
+	BinDelay         any
+	BinSize          any
+	BinStartTime     any
 	DestinationTable any
-	Query any
-	TimeSelector any
+	Query            any
+	TimeSelector     any
 }
 
 type OpenapiSummaryLogs_Value_Properties struct {
-	Description any
-	DisplayName any
-	IsActive any
+	Description       any
+	DisplayName       any
+	IsActive          any
 	ProvisioningState any
-	RuleDefinition any
-	RuleType any
-	StatusCode any
+	RuleDefinition    any
+	RuleType          any
+	StatusCode        any
 }
 
 type OpenapiSummaryLogs_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -47,7 +47,7 @@ type OpenapiSummaryLogsAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The SummaryLogs items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

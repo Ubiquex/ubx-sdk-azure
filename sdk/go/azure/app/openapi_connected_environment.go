@@ -52,42 +52,42 @@ type OpenapiConnectedEnvironment_Properties struct {
 }
 
 var OpenapiConnectedEnvironment_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiConnectedEnvironment_Properties_CustomDomainConfiguration_CertificateKeyVaultPropertiesFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-	}
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+}
 
 var OpenapiConnectedEnvironment_Properties_CustomDomainConfigurationFields = ubx.FieldMap{
-		"CertificateKeyVaultProperties": ubx.FieldSpec{
-			WireName: "certificate_key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiConnectedEnvironment_Properties_CustomDomainConfiguration_CertificateKeyVaultPropertiesFields,
-		},
-		"CertificatePassword": ubx.FieldSpec{WireName: "certificate_password"},
-		"CertificateValue": ubx.FieldSpec{WireName: "certificate_value"},
-		"CustomDomainVerificationId": ubx.FieldSpec{WireName: "custom_domain_verification_id"},
-		"DnsSuffix": ubx.FieldSpec{WireName: "dns_suffix"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"SubjectName": ubx.FieldSpec{WireName: "subject_name"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"CertificateKeyVaultProperties": ubx.FieldSpec{
+		WireName: "certificate_key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiConnectedEnvironment_Properties_CustomDomainConfiguration_CertificateKeyVaultPropertiesFields,
+	},
+	"CertificatePassword":        ubx.FieldSpec{WireName: "certificate_password"},
+	"CertificateValue":           ubx.FieldSpec{WireName: "certificate_value"},
+	"CustomDomainVerificationId": ubx.FieldSpec{WireName: "custom_domain_verification_id"},
+	"DnsSuffix":                  ubx.FieldSpec{WireName: "dns_suffix"},
+	"ExpirationDate":             ubx.FieldSpec{WireName: "expiration_date"},
+	"SubjectName":                ubx.FieldSpec{WireName: "subject_name"},
+	"Thumbprint":                 ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 var OpenapiConnectedEnvironment_PropertiesFields = ubx.FieldMap{
-		"CustomDomainConfiguration": ubx.FieldSpec{
-			WireName: "custom_domain_configuration",
-			Kind: "object",
-			Fields: OpenapiConnectedEnvironment_Properties_CustomDomainConfigurationFields,
-		},
-		"DaprAiconnectionString": ubx.FieldSpec{WireName: "dapr_aiconnection_string"},
-		"DefaultDomain": ubx.FieldSpec{WireName: "default_domain"},
-		"DeploymentErrors": ubx.FieldSpec{WireName: "deployment_errors"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StaticIp": ubx.FieldSpec{WireName: "static_ip"},
-	}
+	"CustomDomainConfiguration": ubx.FieldSpec{
+		WireName: "custom_domain_configuration",
+		Kind:     "object",
+		Fields:   OpenapiConnectedEnvironment_Properties_CustomDomainConfigurationFields,
+	},
+	"DaprAiconnectionString": ubx.FieldSpec{WireName: "dapr_aiconnection_string"},
+	"DefaultDomain":          ubx.FieldSpec{WireName: "default_domain"},
+	"DeploymentErrors":       ubx.FieldSpec{WireName: "deployment_errors"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"StaticIp":               ubx.FieldSpec{WireName: "static_ip"},
+}
 
 type OpenapiConnectedEnvironmentConfig struct {
 	// The complex type of the extended location.
@@ -108,13 +108,13 @@ var OpenapiConnectedEnvironment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: OpenapiConnectedEnvironment_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   OpenapiConnectedEnvironment_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiConnectedEnvironment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiConnectedEnvironment_PropertiesFields,
 		},
 	},
 }

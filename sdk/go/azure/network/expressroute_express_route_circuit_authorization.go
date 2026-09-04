@@ -15,15 +15,13 @@ type ExpressrouteExpressRouteCircuitAuthorization_Properties struct {
 }
 
 var ExpressrouteExpressRouteCircuitAuthorization_PropertiesFields = ubx.FieldMap{
-		"AuthorizationKey": ubx.FieldSpec{WireName: "authorization_key"},
-		"AuthorizationUseStatus": ubx.FieldSpec{WireName: "authorization_use_status"},
-		"ConnectionResourceUri": ubx.FieldSpec{WireName: "connection_resource_uri"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AuthorizationKey":       ubx.FieldSpec{WireName: "authorization_key"},
+	"AuthorizationUseStatus": ubx.FieldSpec{WireName: "authorization_use_status"},
+	"ConnectionResourceUri":  ubx.FieldSpec{WireName: "connection_resource_uri"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ExpressrouteExpressRouteCircuitAuthorizationConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of ExpressRouteCircuitAuthorization.
 	Properties any
 }
@@ -38,11 +36,10 @@ type ExpressrouteExpressRouteCircuitAuthorizationAttrs struct {
 var ExpressrouteExpressRouteCircuitAuthorization = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_express_route_circuit_authorization",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuitAuthorization_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteExpressRouteCircuitAuthorization_PropertiesFields,
 		},
 	},
 }

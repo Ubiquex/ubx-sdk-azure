@@ -9,33 +9,33 @@ type BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetails 
 }
 
 type BmsResourceGuardProxyBaseResource_Properties struct {
-	Description any
-	LastUpdatedTime any
+	Description                   any
+	LastUpdatedTime               any
 	ResourceGuardOperationDetails any
-	ResourceGuardResourceId any
+	ResourceGuardResourceId       any
 }
 
 var BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields = ubx.FieldMap{
-		"DefaultResourceRequest": ubx.FieldSpec{WireName: "default_resource_request"},
-		"VaultCriticalOperation": ubx.FieldSpec{WireName: "vault_critical_operation"},
-	}
+	"DefaultResourceRequest": ubx.FieldSpec{WireName: "default_resource_request"},
+	"VaultCriticalOperation": ubx.FieldSpec{WireName: "vault_critical_operation"},
+}
 
 var BmsResourceGuardProxyBaseResource_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
-		"ResourceGuardOperationDetails": ubx.FieldSpec{
-			WireName: "resource_guard_operation_details",
-			Kind: "list",
-			Fields: BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields,
-		},
-		"ResourceGuardResourceId": ubx.FieldSpec{WireName: "resource_guard_resource_id"},
-	}
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
+	"ResourceGuardOperationDetails": ubx.FieldSpec{
+		WireName: "resource_guard_operation_details",
+		Kind:     "list",
+		Fields:   BmsResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields,
+	},
+	"ResourceGuardResourceId": ubx.FieldSpec{WireName: "resource_guard_resource_id"},
+}
 
 type BmsResourceGuardProxyBaseResourceConfig struct {
 	// Optional ETag.
 	ETag any
 	// Represents an Azure geography region where supported resource providers live.
-	Location any
+	Location   any
 	Properties any
 	// Resource tags.
 	Tags any
@@ -45,7 +45,7 @@ type BmsResourceGuardProxyBaseResourceAttrs struct {
 	// Optional ETag.
 	ETag any
 	// Represents an Azure geography region where supported resource providers live.
-	Location any
+	Location   any
 	Properties any
 	// Resource tags.
 	Tags any
@@ -54,12 +54,12 @@ type BmsResourceGuardProxyBaseResourceAttrs struct {
 var BmsResourceGuardProxyBaseResource = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_resource_guard_proxy_base_resource",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
+		"ETag":     ubx.FieldSpec{WireName: "e_tag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BmsResourceGuardProxyBaseResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BmsResourceGuardProxyBaseResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

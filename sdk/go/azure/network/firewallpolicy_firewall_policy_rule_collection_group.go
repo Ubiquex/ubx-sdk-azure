@@ -4,8 +4,8 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollections struct {
-	Name any
-	Priority any
+	Name               any
+	Priority           any
 	RuleCollectionType any
 }
 
@@ -21,25 +21,23 @@ type FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties struct {
 }
 
 var FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollectionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"RuleCollectionType": ubx.FieldSpec{WireName: "rule_collection_type"},
-	}
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"Priority":           ubx.FieldSpec{WireName: "priority"},
+	"RuleCollectionType": ubx.FieldSpec{WireName: "rule_collection_type"},
+}
 
 var FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields = ubx.FieldMap{
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuleCollections": ubx.FieldSpec{
-			WireName: "rule_collections",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollectionsFields,
-		},
-		"Size": ubx.FieldSpec{WireName: "size"},
-	}
+	"Priority":          ubx.FieldSpec{WireName: "priority"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuleCollections": ubx.FieldSpec{
+		WireName: "rule_collections",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollectionsFields,
+	},
+	"Size": ubx.FieldSpec{WireName: "size"},
+}
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroupConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of the rule collection group.
 	Properties any
 }
@@ -54,11 +52,10 @@ type FirewallpolicyFirewallPolicyRuleCollectionGroupAttrs struct {
 var FirewallpolicyFirewallPolicyRuleCollectionGroup = ubx.ResourceBinding{
 	WireType: "azure_network_firewallpolicy_firewall_policy_rule_collection_group",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields,
 		},
 	},
 }

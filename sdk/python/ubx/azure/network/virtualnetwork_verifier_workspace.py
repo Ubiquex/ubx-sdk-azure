@@ -32,23 +32,10 @@ _VirtualnetworkVerifierWorkspace_PropertiesFields = {
     "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
 }
 
-_VirtualnetworkVerifierWorkspace_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class VirtualnetworkVerifierWorkspaceConfig:
-    # String representing unique etag for the resource document.
-    etag: Any = None
     # Properties of Verifier Workspace resource.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class VirtualnetworkVerifierWorkspaceAttrs:
@@ -62,16 +49,10 @@ class VirtualnetworkVerifierWorkspaceAttrs:
 VirtualnetworkVerifierWorkspace = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_verifier_workspace",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_VirtualnetworkVerifierWorkspace_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_VirtualnetworkVerifierWorkspace_SystemDataFields,
         ),
     },
 )

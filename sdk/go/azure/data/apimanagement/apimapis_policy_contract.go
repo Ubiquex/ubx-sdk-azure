@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapisPolicyContract_Value_Properties struct {
 	Format any
-	Value any
+	Value  any
 }
 
 type ApimapisPolicyContract_Value struct {
@@ -26,6 +26,5 @@ type ApimapisPolicyContractAttrs struct {
 
 var ApimapisPolicyContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_policy_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

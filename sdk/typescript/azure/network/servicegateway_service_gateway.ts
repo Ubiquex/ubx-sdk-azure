@@ -4904,8 +4904,6 @@ const ServicegatewayServiceGateway_PropertiesFields: FieldMap = {
 };
 
 export interface ServicegatewayServiceGatewayConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the service gateway. */
   properties?: ServicegatewayServiceGateway_Properties | Computed<ServicegatewayServiceGateway_Properties>;
   /** SKU of a service gateway. */
@@ -4928,7 +4926,6 @@ export interface ServicegatewayServiceGatewayAttrs {
 export const ServicegatewayServiceGateway: ResourceBinding<ServicegatewayServiceGatewayConfig, ServicegatewayServiceGatewayAttrs> = {
   wireType: "azure_network_servicegateway_service_gateway",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

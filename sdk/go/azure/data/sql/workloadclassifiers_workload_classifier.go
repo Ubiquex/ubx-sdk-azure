@@ -4,12 +4,12 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadclassifiersWorkloadClassifier_Value_Properties struct {
-	Context any
-	EndTime any
+	Context    any
+	EndTime    any
 	Importance any
-	Label any
+	Label      any
 	MemberName any
-	StartTime any
+	StartTime  any
 }
 
 type WorkloadclassifiersWorkloadClassifier_Value struct {
@@ -17,26 +17,26 @@ type WorkloadclassifiersWorkloadClassifier_Value struct {
 }
 
 type WorkloadclassifiersWorkloadClassifierConfig struct {
-	DatabaseName any
-	ServerName any
+	DatabaseName      any
+	ServerName        any
 	WorkloadGroupName any
 }
 
 type WorkloadclassifiersWorkloadClassifierAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The WorkloadClassifier items on this page
-	Value any
+	Value             any
 	WorkloadGroupName any
 }
 
 var WorkloadclassifiersWorkloadClassifier = ubx.DataSourceBinding{
 	WireType: "azure_sql_workloadclassifiers_workload_classifier",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"DatabaseName":      ubx.FieldSpec{WireName: "database_name"},
+		"ServerName":        ubx.FieldSpec{WireName: "server_name"},
 		"WorkloadGroupName": ubx.FieldSpec{WireName: "workload_group_name"},
 	},
 }

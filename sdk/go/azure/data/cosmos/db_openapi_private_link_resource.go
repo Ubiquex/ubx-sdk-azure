@@ -4,8 +4,8 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiPrivateLinkResource_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
@@ -19,7 +19,7 @@ type DbOpenapiPrivateLinkResourceConfig struct {
 
 type DbOpenapiPrivateLinkResourceAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// Array of private link resources
 	Value any
 }

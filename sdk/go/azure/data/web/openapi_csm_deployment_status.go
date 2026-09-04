@@ -7,28 +7,28 @@ type OpenapiCsmDeploymentStatus_Value_Properties_Errors_Details struct {
 }
 
 type OpenapiCsmDeploymentStatus_Value_Properties_Errors struct {
-	Code any
-	Details any
-	ExtendedCode any
-	InnerErrors any
-	Message any
+	Code            any
+	Details         any
+	ExtendedCode    any
+	InnerErrors     any
+	Message         any
 	MessageTemplate any
-	Parameters any
-	Target any
+	Parameters      any
+	Target          any
 }
 
 type OpenapiCsmDeploymentStatus_Value_Properties struct {
-	DeploymentId any
-	Errors any
-	FailedInstancesLogs any
-	NumberOfInstancesFailed any
+	DeploymentId                any
+	Errors                      any
+	FailedInstancesLogs         any
+	NumberOfInstancesFailed     any
 	NumberOfInstancesInProgress any
 	NumberOfInstancesSuccessful any
-	Status any
+	Status                      any
 }
 
 type OpenapiCsmDeploymentStatus_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

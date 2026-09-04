@@ -4,11 +4,11 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadNetworkVmgroup_Value_Properties struct {
-	DisplayName any
-	Members any
+	DisplayName       any
+	Members           any
 	ProvisioningState any
-	Revision any
-	Status any
+	Revision          any
+	Status            any
 }
 
 type WorkloadNetworkVmgroup_Value struct {
@@ -21,7 +21,7 @@ type WorkloadNetworkVmgroupConfig struct {
 
 type WorkloadNetworkVmgroupAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetworkVMGroup items on this page
 	Value any

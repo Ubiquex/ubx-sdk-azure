@@ -4,14 +4,14 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAutomationAccount_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiAutomationAccount_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,14 +20,14 @@ type OpenapiAutomationAccount_Value_Properties_Encryption_Identity struct {
 }
 
 type OpenapiAutomationAccount_Value_Properties_Encryption_KeyVaultProperties struct {
-	KeyName any
-	KeyVersion any
+	KeyName     any
+	KeyVersion  any
 	KeyvaultUri any
 }
 
 type OpenapiAutomationAccount_Value_Properties_Encryption struct {
-	Identity any
-	KeySource any
+	Identity           any
+	KeySource          any
 	KeyVaultProperties any
 }
 
@@ -37,13 +37,13 @@ type OpenapiAutomationAccount_Value_Properties_PrivateEndpointConnections_Proper
 
 type OpenapiAutomationAccount_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiAutomationAccount_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
 }
 
@@ -53,27 +53,27 @@ type OpenapiAutomationAccount_Value_Properties_PrivateEndpointConnections struct
 
 type OpenapiAutomationAccount_Value_Properties_Sku struct {
 	Capacity any
-	Family any
-	Name any
+	Family   any
+	Name     any
 }
 
 type OpenapiAutomationAccount_Value_Properties struct {
 	AutomationHybridServiceUrl any
-	CreationTime any
-	Description any
-	DisableLocalAuth any
-	Encryption any
-	LastModifiedBy any
-	LastModifiedTime any
+	CreationTime               any
+	Description                any
+	DisableLocalAuth           any
+	Encryption                 any
+	LastModifiedBy             any
+	LastModifiedTime           any
 	PrivateEndpointConnections any
-	PublicNetworkAccess any
-	Sku any
-	State any
+	PublicNetworkAccess        any
+	Sku                        any
+	State                      any
 }
 
 type OpenapiAutomationAccount_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
@@ -89,6 +89,5 @@ type OpenapiAutomationAccountAttrs struct {
 
 var OpenapiAutomationAccount = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_automation_account",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

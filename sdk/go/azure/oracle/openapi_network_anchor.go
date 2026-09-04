@@ -4,7 +4,7 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiNetworkAnchor_Properties_DnsForwardingRules struct {
-	DomainNames any
+	DomainNames         any
 	ForwardingIpAddress any
 }
 
@@ -50,35 +50,35 @@ type OpenapiNetworkAnchor_Properties struct {
 }
 
 var OpenapiNetworkAnchor_Properties_DnsForwardingRulesFields = ubx.FieldMap{
-		"DomainNames": ubx.FieldSpec{WireName: "domain_names"},
-		"ForwardingIpAddress": ubx.FieldSpec{WireName: "forwarding_ip_address"},
-	}
+	"DomainNames":         ubx.FieldSpec{WireName: "domain_names"},
+	"ForwardingIpAddress": ubx.FieldSpec{WireName: "forwarding_ip_address"},
+}
 
 var OpenapiNetworkAnchor_PropertiesFields = ubx.FieldMap{
-		"CidrBlock": ubx.FieldSpec{WireName: "cidr_block"},
-		"DnsForwardingEndpointIpAddress": ubx.FieldSpec{WireName: "dns_forwarding_endpoint_ip_address"},
-		"DnsForwardingEndpointNsgRulesUrl": ubx.FieldSpec{WireName: "dns_forwarding_endpoint_nsg_rules_url"},
-		"DnsForwardingRules": ubx.FieldSpec{
-			WireName: "dns_forwarding_rules",
-			Kind: "list",
-			Fields: OpenapiNetworkAnchor_Properties_DnsForwardingRulesFields,
-		},
-		"DnsForwardingRulesUrl": ubx.FieldSpec{WireName: "dns_forwarding_rules_url"},
-		"DnsListeningEndpointAllowedCidrs": ubx.FieldSpec{WireName: "dns_listening_endpoint_allowed_cidrs"},
-		"DnsListeningEndpointIpAddress": ubx.FieldSpec{WireName: "dns_listening_endpoint_ip_address"},
-		"DnsListeningEndpointNsgRulesUrl": ubx.FieldSpec{WireName: "dns_listening_endpoint_nsg_rules_url"},
-		"IsOracleDnsForwardingEndpointEnabled": ubx.FieldSpec{WireName: "is_oracle_dns_forwarding_endpoint_enabled"},
-		"IsOracleDnsListeningEndpointEnabled": ubx.FieldSpec{WireName: "is_oracle_dns_listening_endpoint_enabled"},
-		"IsOracleToAzureDnsZoneSyncEnabled": ubx.FieldSpec{WireName: "is_oracle_to_azure_dns_zone_sync_enabled"},
-		"OciBackupCidrBlock": ubx.FieldSpec{WireName: "oci_backup_cidr_block"},
-		"OciSubnetId": ubx.FieldSpec{WireName: "oci_subnet_id"},
-		"OciVcnDnsLabel": ubx.FieldSpec{WireName: "oci_vcn_dns_label"},
-		"OciVcnId": ubx.FieldSpec{WireName: "oci_vcn_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceAnchorId": ubx.FieldSpec{WireName: "resource_anchor_id"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"VnetId": ubx.FieldSpec{WireName: "vnet_id"},
-	}
+	"CidrBlock":                        ubx.FieldSpec{WireName: "cidr_block"},
+	"DnsForwardingEndpointIpAddress":   ubx.FieldSpec{WireName: "dns_forwarding_endpoint_ip_address"},
+	"DnsForwardingEndpointNsgRulesUrl": ubx.FieldSpec{WireName: "dns_forwarding_endpoint_nsg_rules_url"},
+	"DnsForwardingRules": ubx.FieldSpec{
+		WireName: "dns_forwarding_rules",
+		Kind:     "list",
+		Fields:   OpenapiNetworkAnchor_Properties_DnsForwardingRulesFields,
+	},
+	"DnsForwardingRulesUrl":                ubx.FieldSpec{WireName: "dns_forwarding_rules_url"},
+	"DnsListeningEndpointAllowedCidrs":     ubx.FieldSpec{WireName: "dns_listening_endpoint_allowed_cidrs"},
+	"DnsListeningEndpointIpAddress":        ubx.FieldSpec{WireName: "dns_listening_endpoint_ip_address"},
+	"DnsListeningEndpointNsgRulesUrl":      ubx.FieldSpec{WireName: "dns_listening_endpoint_nsg_rules_url"},
+	"IsOracleDnsForwardingEndpointEnabled": ubx.FieldSpec{WireName: "is_oracle_dns_forwarding_endpoint_enabled"},
+	"IsOracleDnsListeningEndpointEnabled":  ubx.FieldSpec{WireName: "is_oracle_dns_listening_endpoint_enabled"},
+	"IsOracleToAzureDnsZoneSyncEnabled":    ubx.FieldSpec{WireName: "is_oracle_to_azure_dns_zone_sync_enabled"},
+	"OciBackupCidrBlock":                   ubx.FieldSpec{WireName: "oci_backup_cidr_block"},
+	"OciSubnetId":                          ubx.FieldSpec{WireName: "oci_subnet_id"},
+	"OciVcnDnsLabel":                       ubx.FieldSpec{WireName: "oci_vcn_dns_label"},
+	"OciVcnId":                             ubx.FieldSpec{WireName: "oci_vcn_id"},
+	"ProvisioningState":                    ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceAnchorId":                     ubx.FieldSpec{WireName: "resource_anchor_id"},
+	"SubnetId":                             ubx.FieldSpec{WireName: "subnet_id"},
+	"VnetId":                               ubx.FieldSpec{WireName: "vnet_id"},
+}
 
 type OpenapiNetworkAnchorConfig struct {
 	// Network Anchor properties
@@ -99,8 +99,8 @@ var OpenapiNetworkAnchor = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiNetworkAnchor_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiNetworkAnchor_PropertiesFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

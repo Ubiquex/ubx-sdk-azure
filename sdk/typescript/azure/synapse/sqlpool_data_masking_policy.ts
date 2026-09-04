@@ -20,12 +20,6 @@ const SqlpoolDataMaskingPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface SqlpoolDataMaskingPolicyConfig {
-  /** The kind of data masking policy. Metadata, used for Azure portal. */
-  kind?: string | Computed<string>;
-  /** The location of the data masking policy. */
-  location?: string | Computed<string>;
-  /** Fully qualified resource ID of the sql pool */
-  managedBy?: string | Computed<string>;
   /** The properties of a database data masking policy. */
   properties?: SqlpoolDataMaskingPolicy_Properties | Computed<SqlpoolDataMaskingPolicy_Properties>;
 }
@@ -44,9 +38,6 @@ export interface SqlpoolDataMaskingPolicyAttrs {
 export const SqlpoolDataMaskingPolicy: ResourceBinding<SqlpoolDataMaskingPolicyConfig, SqlpoolDataMaskingPolicyAttrs> = {
   wireType: "azure_synapse_sqlpool_data_masking_policy",
   fields: {
-    kind: "kind",
-    location: "location",
-    managedBy: "managed_by",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -14,8 +14,6 @@ const OpenapiIntegrationRuntimeResource_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiIntegrationRuntimeResourceConfig {
-  /** "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.") */
-  etag?: string | Computed<string>;
   /** Azure Data Factory nested object which serves as a compute resource for activities. */
   properties: OpenapiIntegrationRuntimeResource_Properties | Computed<OpenapiIntegrationRuntimeResource_Properties>;
 }
@@ -30,7 +28,6 @@ export interface OpenapiIntegrationRuntimeResourceAttrs {
 export const OpenapiIntegrationRuntimeResource: ResourceBinding<OpenapiIntegrationRuntimeResourceConfig, OpenapiIntegrationRuntimeResourceAttrs> = {
   wireType: "azure_datafactory_openapi_integration_runtime_resource",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

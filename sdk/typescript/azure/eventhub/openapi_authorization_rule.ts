@@ -11,8 +11,6 @@ const OpenapiAuthorizationRule_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiAuthorizationRuleConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties supplied to create or update AuthorizationRule */
   properties?: OpenapiAuthorizationRule_Properties | Computed<OpenapiAuthorizationRule_Properties>;
 }
@@ -27,7 +25,6 @@ export interface OpenapiAuthorizationRuleAttrs {
 export const OpenapiAuthorizationRule: ResourceBinding<OpenapiAuthorizationRuleConfig, OpenapiAuthorizationRuleAttrs> = {
   wireType: "azure_eventhub_openapi_authorization_rule",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

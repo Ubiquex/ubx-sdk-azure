@@ -11,9 +11,9 @@ type NetworksecurityperimeterNspProfile_Properties struct {
 }
 
 var NetworksecurityperimeterNspProfile_PropertiesFields = ubx.FieldMap{
-		"AccessRulesVersion": ubx.FieldSpec{WireName: "access_rules_version"},
-		"DiagnosticSettingsVersion": ubx.FieldSpec{WireName: "diagnostic_settings_version"},
-	}
+	"AccessRulesVersion":        ubx.FieldSpec{WireName: "access_rules_version"},
+	"DiagnosticSettingsVersion": ubx.FieldSpec{WireName: "diagnostic_settings_version"},
+}
 
 type NetworksecurityperimeterNspProfileConfig struct {
 	// Properties of NSP profile.
@@ -30,8 +30,8 @@ var NetworksecurityperimeterNspProfile = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworksecurityperimeterNspProfile_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworksecurityperimeterNspProfile_PropertiesFields,
 		},
 	},
 }

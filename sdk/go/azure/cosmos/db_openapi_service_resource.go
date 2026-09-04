@@ -4,19 +4,25 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiServiceResource_Properties struct {
+	// Time of the last state change (ISO-8601 format).
+	CreationTime any
 	// Instance count for the service.
 	InstanceCount any
 	// Instance type for the service.
 	InstanceSize any
 	// ServiceType for the service.
 	ServiceType any
+	// Describes the status of a service.
+	Status any
 }
 
 var DbOpenapiServiceResource_PropertiesFields = ubx.FieldMap{
-		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-		"InstanceSize": ubx.FieldSpec{WireName: "instance_size"},
-		"ServiceType": ubx.FieldSpec{WireName: "service_type"},
-	}
+	"CreationTime":  ubx.FieldSpec{WireName: "creation_time"},
+	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+	"InstanceSize":  ubx.FieldSpec{WireName: "instance_size"},
+	"ServiceType":   ubx.FieldSpec{WireName: "service_type"},
+	"Status":        ubx.FieldSpec{WireName: "status"},
+}
 
 type DbOpenapiServiceResourceConfig struct {
 	// Properties in ServiceResourceCreateUpdateParameters.
@@ -33,8 +39,8 @@ var DbOpenapiServiceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiServiceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiServiceResource_PropertiesFields,
 		},
 	},
 }

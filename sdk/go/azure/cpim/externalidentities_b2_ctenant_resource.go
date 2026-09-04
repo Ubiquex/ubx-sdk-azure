@@ -3,6 +3,13 @@ package cpim
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type ExternalidentitiesB2CtenantResource_Properties_BillingConfig struct {
+	// The type of billing. Will be MAU for all new customers. If 'Auths', it can be updated to 'MAU'. Cannot be changed if value is 'MAU'. Learn more about Azure AD B2C billing at [aka.ms/b2cBilling](https://aka.ms/b2cbilling).
+	BillingType any
+	// The data from which the billing type took effect
+	EffectiveStartDateUtc any
+}
+
 type ExternalidentitiesB2CtenantResource_Properties_CreateTenantProperties struct {
 	// Country code of Azure tenant (e.g. 'US'). Refer to [aka.ms/B2CDataResidency](https://aka.ms/B2CDataResidency) to see valid country codes and corresponding data residency locations. If you do not see a country code in an valid data residency location, choose one from the list.
 	CountryCode any
@@ -11,8 +18,12 @@ type ExternalidentitiesB2CtenantResource_Properties_CreateTenantProperties struc
 }
 
 type ExternalidentitiesB2CtenantResource_Properties struct {
+	// The billing configuration for the tenant.
+	BillingConfig any
 	// These properties are used to create the Azure AD B2C tenant. These properties are not part of the Azure resource.
 	CreateTenantProperties any
+	// An identifier of the Azure AD B2C tenant.
+	TenantId any
 }
 
 type ExternalidentitiesB2CtenantResource_Sku struct {
@@ -37,27 +48,38 @@ type ExternalidentitiesB2CtenantResource_SystemData struct {
 	LastModifiedByType any
 }
 
+var ExternalidentitiesB2CtenantResource_Properties_BillingConfigFields = ubx.FieldMap{
+	"BillingType":           ubx.FieldSpec{WireName: "billing_type"},
+	"EffectiveStartDateUtc": ubx.FieldSpec{WireName: "effective_start_date_utc"},
+}
+
 var ExternalidentitiesB2CtenantResource_Properties_CreateTenantPropertiesFields = ubx.FieldMap{
-		"CountryCode": ubx.FieldSpec{WireName: "country_code"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"CountryCode": ubx.FieldSpec{WireName: "country_code"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+}
 
 var ExternalidentitiesB2CtenantResource_PropertiesFields = ubx.FieldMap{
-		"CreateTenantProperties": ubx.FieldSpec{
-			WireName: "create_tenant_properties",
-			Kind: "object",
-			Fields: ExternalidentitiesB2CtenantResource_Properties_CreateTenantPropertiesFields,
-		},
-	}
+	"BillingConfig": ubx.FieldSpec{
+		WireName: "billing_config",
+		Kind:     "object",
+		Fields:   ExternalidentitiesB2CtenantResource_Properties_BillingConfigFields,
+	},
+	"CreateTenantProperties": ubx.FieldSpec{
+		WireName: "create_tenant_properties",
+		Kind:     "object",
+		Fields:   ExternalidentitiesB2CtenantResource_Properties_CreateTenantPropertiesFields,
+	},
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var ExternalidentitiesB2CtenantResource_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type ExternalidentitiesB2CtenantResourceConfig struct {
 	// The location in which the resource is hosted and data resides. Can be one of 'United States', 'Europe', 'Asia Pacific', or 'Australia'. Refer to [this documentation](https://aka.ms/B2CDataResidency) for more information.
-	Location any
+	Location   any
 	Properties any
 	// SKU properties of the Azure AD B2C tenant. Learn more about Azure AD B2C billing at [aka.ms/b2cBilling](https://aka.ms/b2cBilling).
 	Sku any
@@ -71,7 +93,7 @@ type ExternalidentitiesB2CtenantResourceAttrs struct {
 	// The location in which the resource is hosted and data resides. Can be one of 'United States', 'Europe', 'Asia Pacific', or 'Australia'. Refer to [this documentation](https://aka.ms/B2CDataResidency) for more information.
 	Location any
 	// The name of the Azure AD B2C tenant resource.
-	Name any
+	Name       any
 	Properties any
 	// SKU properties of the Azure AD B2C tenant. Learn more about Azure AD B2C billing at [aka.ms/b2cBilling](https://aka.ms/b2cBilling).
 	Sku any
@@ -89,13 +111,13 @@ var ExternalidentitiesB2CtenantResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExternalidentitiesB2CtenantResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExternalidentitiesB2CtenantResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ExternalidentitiesB2CtenantResource_SkuFields,
+			Kind:     "object",
+			Fields:   ExternalidentitiesB2CtenantResource_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

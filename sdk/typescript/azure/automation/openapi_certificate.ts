@@ -4,18 +4,27 @@ import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 export interface OpenapiCertificate_Properties {
   /** Gets or sets the base64 encoded value of the certificate. */
   base64Value: string | Computed<string>;
+  /** Gets the creation time. */
+  creationTime?: string | Computed<string>;
   /** Gets or sets the description of the certificate. */
   description?: string | Computed<string>;
+  /** Gets the expiry time of the certificate. */
+  expiryTime?: string | Computed<string>;
   /** Gets or sets the is exportable flag of the certificate. */
   isExportable?: boolean | Computed<boolean>;
+  /** Gets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
   /** Gets or sets the thumbprint of the certificate. */
   thumbprint?: string | Computed<string>;
 }
 
 const OpenapiCertificate_PropertiesFields: FieldMap = {
   base64Value: "base64_value",
+  creationTime: "creation_time",
   description: "description",
+  expiryTime: "expiry_time",
   isExportable: "is_exportable",
+  lastModifiedTime: "last_modified_time",
   thumbprint: "thumbprint",
 };
 

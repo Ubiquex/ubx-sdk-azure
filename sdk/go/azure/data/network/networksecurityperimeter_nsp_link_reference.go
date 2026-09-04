@@ -4,16 +4,16 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterNspLinkReference_Value_Properties struct {
-	Description any
-	LocalInboundProfiles any
-	LocalOutboundProfiles any
-	ProvisioningState any
-	RemoteInboundProfiles any
-	RemoteOutboundProfiles any
-	RemotePerimeterGuid any
-	RemotePerimeterLocation any
+	Description               any
+	LocalInboundProfiles      any
+	LocalOutboundProfiles     any
+	ProvisioningState         any
+	RemoteInboundProfiles     any
+	RemoteOutboundProfiles    any
+	RemotePerimeterGuid       any
+	RemotePerimeterLocation   any
 	RemotePerimeterResourceId any
-	Status any
+	Status                    any
 }
 
 type NetworksecurityperimeterNspLinkReference_Value struct {

@@ -9,17 +9,17 @@ type Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint 
 
 type Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	Description any
-	Status any
+	Status      any
 }
 
 type Namespace_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Namespace_Properties_PrivateEndpointConnections struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -52,57 +52,57 @@ type Namespace_Sku struct {
 }
 
 var Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var Namespace_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Namespace_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Namespace_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Namespace_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Namespace_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"MetricId": ubx.FieldSpec{WireName: "metric_id"},
-		"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Namespace_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"ServiceBusEndpoint": ubx.FieldSpec{WireName: "service_bus_endpoint"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-	}
+	"CreatedAt":         ubx.FieldSpec{WireName: "created_at"},
+	"MetricId":          ubx.FieldSpec{WireName: "metric_id"},
+	"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Namespace_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ServiceBusEndpoint":  ubx.FieldSpec{WireName: "service_bus_endpoint"},
+	"Status":              ubx.FieldSpec{WireName: "status"},
+	"UpdatedAt":           ubx.FieldSpec{WireName: "updated_at"},
+}
 
 var Namespace_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type NamespaceConfig struct {
 	// Properties of the namespace.
@@ -123,13 +123,13 @@ var Namespace = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Namespace_PropertiesFields,
+			Kind:     "object",
+			Fields:   Namespace_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Namespace_SkuFields,
+			Kind:     "object",
+			Fields:   Namespace_SkuFields,
 		},
 	},
 }

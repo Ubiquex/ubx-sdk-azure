@@ -4,7 +4,7 @@ package dynatrace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -109,99 +109,99 @@ type MonitorResource_Properties struct {
 }
 
 var MonitorResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var MonitorResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: MonitorResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   MonitorResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var MonitorResource_Properties_DynatraceEnvironmentProperties_AccountInfoFields = ubx.FieldMap{
-		"AccountId": ubx.FieldSpec{WireName: "account_id"},
-		"CompanyName": ubx.FieldSpec{WireName: "company_name"},
-		"RegionId": ubx.FieldSpec{WireName: "region_id"},
-	}
+	"AccountId":   ubx.FieldSpec{WireName: "account_id"},
+	"CompanyName": ubx.FieldSpec{WireName: "company_name"},
+	"RegionId":    ubx.FieldSpec{WireName: "region_id"},
+}
 
 var MonitorResource_Properties_DynatraceEnvironmentProperties_EnvironmentInfoFields = ubx.FieldMap{
-		"EnvironmentId": ubx.FieldSpec{WireName: "environment_id"},
-		"IngestionKey": ubx.FieldSpec{WireName: "ingestion_key"},
-		"LandingUrl": ubx.FieldSpec{WireName: "landing_url"},
-		"LogsIngestionEndpoint": ubx.FieldSpec{WireName: "logs_ingestion_endpoint"},
-	}
+	"EnvironmentId":         ubx.FieldSpec{WireName: "environment_id"},
+	"IngestionKey":          ubx.FieldSpec{WireName: "ingestion_key"},
+	"LandingUrl":            ubx.FieldSpec{WireName: "landing_url"},
+	"LogsIngestionEndpoint": ubx.FieldSpec{WireName: "logs_ingestion_endpoint"},
+}
 
 var MonitorResource_Properties_DynatraceEnvironmentProperties_SingleSignOnPropertiesFields = ubx.FieldMap{
-		"AadDomains": ubx.FieldSpec{WireName: "aad_domains"},
-		"EnterpriseAppId": ubx.FieldSpec{WireName: "enterprise_app_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SingleSignOnState": ubx.FieldSpec{WireName: "single_sign_on_state"},
-		"SingleSignOnUrl": ubx.FieldSpec{WireName: "single_sign_on_url"},
-	}
+	"AadDomains":        ubx.FieldSpec{WireName: "aad_domains"},
+	"EnterpriseAppId":   ubx.FieldSpec{WireName: "enterprise_app_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SingleSignOnState": ubx.FieldSpec{WireName: "single_sign_on_state"},
+	"SingleSignOnUrl":   ubx.FieldSpec{WireName: "single_sign_on_url"},
+}
 
 var MonitorResource_Properties_DynatraceEnvironmentPropertiesFields = ubx.FieldMap{
-		"AccountInfo": ubx.FieldSpec{
-			WireName: "account_info",
-			Kind: "object",
-			Fields: MonitorResource_Properties_DynatraceEnvironmentProperties_AccountInfoFields,
-		},
-		"EnvironmentInfo": ubx.FieldSpec{
-			WireName: "environment_info",
-			Kind: "object",
-			Fields: MonitorResource_Properties_DynatraceEnvironmentProperties_EnvironmentInfoFields,
-		},
-		"SingleSignOnProperties": ubx.FieldSpec{
-			WireName: "single_sign_on_properties",
-			Kind: "object",
-			Fields: MonitorResource_Properties_DynatraceEnvironmentProperties_SingleSignOnPropertiesFields,
-		},
-		"UserId": ubx.FieldSpec{WireName: "user_id"},
-	}
+	"AccountInfo": ubx.FieldSpec{
+		WireName: "account_info",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_DynatraceEnvironmentProperties_AccountInfoFields,
+	},
+	"EnvironmentInfo": ubx.FieldSpec{
+		WireName: "environment_info",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_DynatraceEnvironmentProperties_EnvironmentInfoFields,
+	},
+	"SingleSignOnProperties": ubx.FieldSpec{
+		WireName: "single_sign_on_properties",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_DynatraceEnvironmentProperties_SingleSignOnPropertiesFields,
+	},
+	"UserId": ubx.FieldSpec{WireName: "user_id"},
+}
 
 var MonitorResource_Properties_PlanDataFields = ubx.FieldMap{
-		"BillingCycle": ubx.FieldSpec{WireName: "billing_cycle"},
-		"EffectiveDate": ubx.FieldSpec{WireName: "effective_date"},
-		"PlanDetails": ubx.FieldSpec{WireName: "plan_details"},
-		"UsageType": ubx.FieldSpec{WireName: "usage_type"},
-	}
+	"BillingCycle":  ubx.FieldSpec{WireName: "billing_cycle"},
+	"EffectiveDate": ubx.FieldSpec{WireName: "effective_date"},
+	"PlanDetails":   ubx.FieldSpec{WireName: "plan_details"},
+	"UsageType":     ubx.FieldSpec{WireName: "usage_type"},
+}
 
 var MonitorResource_Properties_UserInfoFields = ubx.FieldMap{
-		"Country": ubx.FieldSpec{WireName: "country"},
-		"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
-		"FirstName": ubx.FieldSpec{WireName: "first_name"},
-		"LastName": ubx.FieldSpec{WireName: "last_name"},
-		"PhoneNumber": ubx.FieldSpec{WireName: "phone_number"},
-	}
+	"Country":      ubx.FieldSpec{WireName: "country"},
+	"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
+	"FirstName":    ubx.FieldSpec{WireName: "first_name"},
+	"LastName":     ubx.FieldSpec{WireName: "last_name"},
+	"PhoneNumber":  ubx.FieldSpec{WireName: "phone_number"},
+}
 
 var MonitorResource_PropertiesFields = ubx.FieldMap{
-		"DynatraceEnvironmentProperties": ubx.FieldSpec{
-			WireName: "dynatrace_environment_properties",
-			Kind: "object",
-			Fields: MonitorResource_Properties_DynatraceEnvironmentPropertiesFields,
-		},
-		"LiftrResourceCategory": ubx.FieldSpec{WireName: "liftr_resource_category"},
-		"LiftrResourcePreference": ubx.FieldSpec{WireName: "liftr_resource_preference"},
-		"MarketplaceSaasAutoRenew": ubx.FieldSpec{WireName: "marketplace_saas_auto_renew"},
-		"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
-		"MonitoringStatus": ubx.FieldSpec{WireName: "monitoring_status"},
-		"PlanData": ubx.FieldSpec{
-			WireName: "plan_data",
-			Kind: "object",
-			Fields: MonitorResource_Properties_PlanDataFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"UserInfo": ubx.FieldSpec{
-			WireName: "user_info",
-			Kind: "object",
-			Fields: MonitorResource_Properties_UserInfoFields,
-		},
-	}
+	"DynatraceEnvironmentProperties": ubx.FieldSpec{
+		WireName: "dynatrace_environment_properties",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_DynatraceEnvironmentPropertiesFields,
+	},
+	"LiftrResourceCategory":         ubx.FieldSpec{WireName: "liftr_resource_category"},
+	"LiftrResourcePreference":       ubx.FieldSpec{WireName: "liftr_resource_preference"},
+	"MarketplaceSaasAutoRenew":      ubx.FieldSpec{WireName: "marketplace_saas_auto_renew"},
+	"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
+	"MonitoringStatus":              ubx.FieldSpec{WireName: "monitoring_status"},
+	"PlanData": ubx.FieldSpec{
+		WireName: "plan_data",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_PlanDataFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"UserInfo": ubx.FieldSpec{
+		WireName: "user_info",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_UserInfoFields,
+	},
+}
 
 type MonitorResourceConfig struct {
 	// The properties of the managed service identities assigned to this resource.
@@ -222,13 +222,13 @@ var MonitorResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: MonitorResource_IdentityFields,
+			Kind:     "object",
+			Fields:   MonitorResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MonitorResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   MonitorResource_PropertiesFields,
 		},
 	},
 }

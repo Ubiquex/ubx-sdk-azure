@@ -11,7 +11,7 @@ type OpenapiContainerApp_ExtendedLocation struct {
 }
 
 type OpenapiContainerApp_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -63,14 +63,14 @@ type OpenapiContainerApp_Properties_Configuration_Dapr struct {
 }
 
 type OpenapiContainerApp_Properties_Configuration_IdentitySettings struct {
-	Identity any
+	Identity  any
 	Lifecycle any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_AdditionalPortMappings struct {
 	ExposedPort any
-	External any
-	TargetPort any
+	External    any
+	TargetPort  any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicy struct {
@@ -89,16 +89,16 @@ type OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicy struct {
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_CustomDomains struct {
-	BindingType any
+	BindingType   any
 	CertificateId any
-	Name any
+	Name          any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_IpSecurityRestrictions struct {
-	Action any
-	Description any
+	Action         any
+	Description    any
 	IpAddressRange any
-	Name any
+	Name           any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_StickySessions struct {
@@ -107,10 +107,10 @@ type OpenapiContainerApp_Properties_Configuration_Ingress_StickySessions struct 
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress_Traffic struct {
-	Label any
+	Label          any
 	LatestRevision any
-	RevisionName any
-	Weight any
+	RevisionName   any
+	Weight         any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Ingress struct {
@@ -143,10 +143,10 @@ type OpenapiContainerApp_Properties_Configuration_Ingress struct {
 }
 
 type OpenapiContainerApp_Properties_Configuration_Registries struct {
-	Identity any
+	Identity          any
 	PasswordSecretRef any
-	Server any
-	Username any
+	Server            any
+	Username          any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Runtime_Java struct {
@@ -160,10 +160,10 @@ type OpenapiContainerApp_Properties_Configuration_Runtime struct {
 }
 
 type OpenapiContainerApp_Properties_Configuration_Secrets struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
-	Name any
-	Value any
+	Name        any
+	Value       any
 }
 
 type OpenapiContainerApp_Properties_Configuration_Service struct {
@@ -193,16 +193,16 @@ type OpenapiContainerApp_Properties_Configuration struct {
 }
 
 type OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet struct {
-	Host any
+	Host        any
 	HttpHeaders any
-	Path any
-	Port any
-	Scheme any
+	Path        any
+	Port        any
+	Scheme      any
 }
 
 type OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocket struct {
@@ -211,15 +211,15 @@ type OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocket struct 
 }
 
 type OpenapiContainerApp_Properties_Template_Containers_Probes struct {
-	FailureThreshold any
-	HttpGet any
-	InitialDelaySeconds any
-	PeriodSeconds any
-	SuccessThreshold any
-	TcpSocket any
+	FailureThreshold              any
+	HttpGet                       any
+	InitialDelaySeconds           any
+	PeriodSeconds                 any
+	SuccessThreshold              any
+	TcpSocket                     any
 	TerminationGracePeriodSeconds any
-	TimeoutSeconds any
-	Type any
+	TimeoutSeconds                any
+	Type                          any
 }
 
 type OpenapiContainerApp_Properties_Template_Containers struct {
@@ -227,65 +227,65 @@ type OpenapiContainerApp_Properties_Template_Containers struct {
 }
 
 type OpenapiContainerApp_Properties_Template_InitContainers_Env struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiContainerApp_Properties_Template_InitContainers_Resources struct {
-	Cpu any
+	Cpu              any
 	EphemeralStorage any
-	Memory any
+	Memory           any
 }
 
 type OpenapiContainerApp_Properties_Template_InitContainers_VolumeMounts struct {
-	MountPath any
-	SubPath any
+	MountPath  any
+	SubPath    any
 	VolumeName any
 }
 
 type OpenapiContainerApp_Properties_Template_InitContainers struct {
-	Args any
-	Command any
-	Env any
-	Image any
-	Name any
-	Resources any
+	Args         any
+	Command      any
+	Env          any
+	Image        any
+	Name         any
+	Resources    any
 	VolumeMounts any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_Auth struct {
-	SecretRef any
+	SecretRef        any
 	TriggerParameter any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue struct {
 	AccountName any
-	Auth any
-	Identity any
+	Auth        any
+	Identity    any
 	QueueLength any
-	QueueName any
+	QueueName   any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules_Custom struct {
-	Auth any
+	Auth     any
 	Identity any
 	Metadata any
-	Type any
+	Type     any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules_Http struct {
-	Auth any
+	Auth     any
 	Identity any
 	Metadata any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale_Rules struct {
 	AzureQueue any
-	Custom any
-	Http any
-	Name any
-	Tcp any
+	Custom     any
+	Http       any
+	Name       any
+	Tcp        any
 }
 
 type OpenapiContainerApp_Properties_Template_Scale struct {
@@ -302,21 +302,21 @@ type OpenapiContainerApp_Properties_Template_Scale struct {
 }
 
 type OpenapiContainerApp_Properties_Template_ServiceBinds struct {
-	Name any
+	Name      any
 	ServiceId any
 }
 
 type OpenapiContainerApp_Properties_Template_Volumes_Secrets struct {
-	Path any
+	Path      any
 	SecretRef any
 }
 
 type OpenapiContainerApp_Properties_Template_Volumes struct {
 	MountOptions any
-	Name any
-	Secrets any
-	StorageName any
-	StorageType any
+	Name         any
+	Secrets      any
+	StorageName  any
+	StorageType  any
 }
 
 type OpenapiContainerApp_Properties_Template struct {
@@ -366,444 +366,444 @@ type OpenapiContainerApp_Properties struct {
 }
 
 var OpenapiContainerApp_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiContainerApp_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiContainerApp_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiContainerApp_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiContainerApp_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiContainerApp_Properties_Configuration_Dapr_AppHealthFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"ProbeIntervalSeconds": ubx.FieldSpec{WireName: "probe_interval_seconds"},
-		"ProbeTimeoutMilliseconds": ubx.FieldSpec{WireName: "probe_timeout_milliseconds"},
-		"Threshold": ubx.FieldSpec{WireName: "threshold"},
-	}
+	"Enabled":                  ubx.FieldSpec{WireName: "enabled"},
+	"Path":                     ubx.FieldSpec{WireName: "path"},
+	"ProbeIntervalSeconds":     ubx.FieldSpec{WireName: "probe_interval_seconds"},
+	"ProbeTimeoutMilliseconds": ubx.FieldSpec{WireName: "probe_timeout_milliseconds"},
+	"Threshold":                ubx.FieldSpec{WireName: "threshold"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_DaprFields = ubx.FieldMap{
-		"AppHealth": ubx.FieldSpec{
-			WireName: "app_health",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Configuration_Dapr_AppHealthFields,
-		},
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"AppPort": ubx.FieldSpec{WireName: "app_port"},
-		"AppProtocol": ubx.FieldSpec{WireName: "app_protocol"},
-		"EnableApiLogging": ubx.FieldSpec{WireName: "enable_api_logging"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"HttpMaxRequestSize": ubx.FieldSpec{WireName: "http_max_request_size"},
-		"HttpReadBufferSize": ubx.FieldSpec{WireName: "http_read_buffer_size"},
-		"LogLevel": ubx.FieldSpec{WireName: "log_level"},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-	}
+	"AppHealth": ubx.FieldSpec{
+		WireName: "app_health",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Configuration_Dapr_AppHealthFields,
+	},
+	"AppId":              ubx.FieldSpec{WireName: "app_id"},
+	"AppPort":            ubx.FieldSpec{WireName: "app_port"},
+	"AppProtocol":        ubx.FieldSpec{WireName: "app_protocol"},
+	"EnableApiLogging":   ubx.FieldSpec{WireName: "enable_api_logging"},
+	"Enabled":            ubx.FieldSpec{WireName: "enabled"},
+	"HttpMaxRequestSize": ubx.FieldSpec{WireName: "http_max_request_size"},
+	"HttpReadBufferSize": ubx.FieldSpec{WireName: "http_read_buffer_size"},
+	"LogLevel":           ubx.FieldSpec{WireName: "log_level"},
+	"MaxConcurrency":     ubx.FieldSpec{WireName: "max_concurrency"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_IdentitySettingsFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"Lifecycle": ubx.FieldSpec{WireName: "lifecycle"},
-	}
+	"Identity":  ubx.FieldSpec{WireName: "identity"},
+	"Lifecycle": ubx.FieldSpec{WireName: "lifecycle"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_Ingress_AdditionalPortMappingsFields = ubx.FieldMap{
-		"ExposedPort": ubx.FieldSpec{WireName: "exposed_port"},
-		"External": ubx.FieldSpec{WireName: "external"},
-		"TargetPort": ubx.FieldSpec{WireName: "target_port"},
-	}
+	"ExposedPort": ubx.FieldSpec{WireName: "exposed_port"},
+	"External":    ubx.FieldSpec{WireName: "external"},
+	"TargetPort":  ubx.FieldSpec{WireName: "target_port"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicyFields = ubx.FieldMap{
-		"AllowCredentials": ubx.FieldSpec{WireName: "allow_credentials"},
-		"AllowedHeaders": ubx.FieldSpec{WireName: "allowed_headers"},
-		"AllowedMethods": ubx.FieldSpec{WireName: "allowed_methods"},
-		"AllowedOrigins": ubx.FieldSpec{WireName: "allowed_origins"},
-		"ExposeHeaders": ubx.FieldSpec{WireName: "expose_headers"},
-		"MaxAge": ubx.FieldSpec{WireName: "max_age"},
-	}
+	"AllowCredentials": ubx.FieldSpec{WireName: "allow_credentials"},
+	"AllowedHeaders":   ubx.FieldSpec{WireName: "allowed_headers"},
+	"AllowedMethods":   ubx.FieldSpec{WireName: "allowed_methods"},
+	"AllowedOrigins":   ubx.FieldSpec{WireName: "allowed_origins"},
+	"ExposeHeaders":    ubx.FieldSpec{WireName: "expose_headers"},
+	"MaxAge":           ubx.FieldSpec{WireName: "max_age"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_Ingress_CustomDomainsFields = ubx.FieldMap{
-		"BindingType": ubx.FieldSpec{WireName: "binding_type"},
-		"CertificateId": ubx.FieldSpec{WireName: "certificate_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"BindingType":   ubx.FieldSpec{WireName: "binding_type"},
+	"CertificateId": ubx.FieldSpec{WireName: "certificate_id"},
+	"Name":          ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_Ingress_IpSecurityRestrictionsFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IpAddressRange": ubx.FieldSpec{WireName: "ip_address_range"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Action":         ubx.FieldSpec{WireName: "action"},
+	"Description":    ubx.FieldSpec{WireName: "description"},
+	"IpAddressRange": ubx.FieldSpec{WireName: "ip_address_range"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_Ingress_StickySessionsFields = ubx.FieldMap{
-		"Affinity": ubx.FieldSpec{WireName: "affinity"},
-	}
+	"Affinity": ubx.FieldSpec{WireName: "affinity"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_Ingress_TrafficFields = ubx.FieldMap{
-		"Label": ubx.FieldSpec{WireName: "label"},
-		"LatestRevision": ubx.FieldSpec{WireName: "latest_revision"},
-		"RevisionName": ubx.FieldSpec{WireName: "revision_name"},
-		"Weight": ubx.FieldSpec{WireName: "weight"},
-	}
+	"Label":          ubx.FieldSpec{WireName: "label"},
+	"LatestRevision": ubx.FieldSpec{WireName: "latest_revision"},
+	"RevisionName":   ubx.FieldSpec{WireName: "revision_name"},
+	"Weight":         ubx.FieldSpec{WireName: "weight"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_IngressFields = ubx.FieldMap{
-		"AdditionalPortMappings": ubx.FieldSpec{
-			WireName: "additional_port_mappings",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Configuration_Ingress_AdditionalPortMappingsFields,
-		},
-		"AllowInsecure": ubx.FieldSpec{WireName: "allow_insecure"},
-		"ClientCertificateMode": ubx.FieldSpec{WireName: "client_certificate_mode"},
-		"CorsPolicy": ubx.FieldSpec{
-			WireName: "cors_policy",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicyFields,
-		},
-		"CustomDomains": ubx.FieldSpec{
-			WireName: "custom_domains",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Configuration_Ingress_CustomDomainsFields,
-		},
-		"ExposedPort": ubx.FieldSpec{WireName: "exposed_port"},
-		"External": ubx.FieldSpec{WireName: "external"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IpSecurityRestrictions": ubx.FieldSpec{
-			WireName: "ip_security_restrictions",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Configuration_Ingress_IpSecurityRestrictionsFields,
-		},
-		"StickySessions": ubx.FieldSpec{
-			WireName: "sticky_sessions",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Configuration_Ingress_StickySessionsFields,
-		},
-		"TargetPort": ubx.FieldSpec{WireName: "target_port"},
-		"Traffic": ubx.FieldSpec{
-			WireName: "traffic",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Configuration_Ingress_TrafficFields,
-		},
-		"Transport": ubx.FieldSpec{WireName: "transport"},
-	}
+	"AdditionalPortMappings": ubx.FieldSpec{
+		WireName: "additional_port_mappings",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Configuration_Ingress_AdditionalPortMappingsFields,
+	},
+	"AllowInsecure":         ubx.FieldSpec{WireName: "allow_insecure"},
+	"ClientCertificateMode": ubx.FieldSpec{WireName: "client_certificate_mode"},
+	"CorsPolicy": ubx.FieldSpec{
+		WireName: "cors_policy",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Configuration_Ingress_CorsPolicyFields,
+	},
+	"CustomDomains": ubx.FieldSpec{
+		WireName: "custom_domains",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Configuration_Ingress_CustomDomainsFields,
+	},
+	"ExposedPort": ubx.FieldSpec{WireName: "exposed_port"},
+	"External":    ubx.FieldSpec{WireName: "external"},
+	"Fqdn":        ubx.FieldSpec{WireName: "fqdn"},
+	"IpSecurityRestrictions": ubx.FieldSpec{
+		WireName: "ip_security_restrictions",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Configuration_Ingress_IpSecurityRestrictionsFields,
+	},
+	"StickySessions": ubx.FieldSpec{
+		WireName: "sticky_sessions",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Configuration_Ingress_StickySessionsFields,
+	},
+	"TargetPort": ubx.FieldSpec{WireName: "target_port"},
+	"Traffic": ubx.FieldSpec{
+		WireName: "traffic",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Configuration_Ingress_TrafficFields,
+	},
+	"Transport": ubx.FieldSpec{WireName: "transport"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_RegistriesFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"PasswordSecretRef": ubx.FieldSpec{WireName: "password_secret_ref"},
-		"Server": ubx.FieldSpec{WireName: "server"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Identity":          ubx.FieldSpec{WireName: "identity"},
+	"PasswordSecretRef": ubx.FieldSpec{WireName: "password_secret_ref"},
+	"Server":            ubx.FieldSpec{WireName: "server"},
+	"Username":          ubx.FieldSpec{WireName: "username"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_Runtime_JavaFields = ubx.FieldMap{
-		"EnableMetrics": ubx.FieldSpec{WireName: "enable_metrics"},
-	}
+	"EnableMetrics": ubx.FieldSpec{WireName: "enable_metrics"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_RuntimeFields = ubx.FieldMap{
-		"Java": ubx.FieldSpec{
-			WireName: "java",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Configuration_Runtime_JavaFields,
-		},
-	}
+	"Java": ubx.FieldSpec{
+		WireName: "java",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Configuration_Runtime_JavaFields,
+	},
+}
 
 var OpenapiContainerApp_Properties_Configuration_SecretsFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+	"Value":       ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiContainerApp_Properties_Configuration_ServiceFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiContainerApp_Properties_ConfigurationFields = ubx.FieldMap{
-		"ActiveRevisionsMode": ubx.FieldSpec{WireName: "active_revisions_mode"},
-		"Dapr": ubx.FieldSpec{
-			WireName: "dapr",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Configuration_DaprFields,
-		},
-		"IdentitySettings": ubx.FieldSpec{
-			WireName: "identity_settings",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Configuration_IdentitySettingsFields,
-		},
-		"Ingress": ubx.FieldSpec{
-			WireName: "ingress",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Configuration_IngressFields,
-		},
-		"MaxInactiveRevisions": ubx.FieldSpec{WireName: "max_inactive_revisions"},
-		"Registries": ubx.FieldSpec{
-			WireName: "registries",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Configuration_RegistriesFields,
-		},
-		"Runtime": ubx.FieldSpec{
-			WireName: "runtime",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Configuration_RuntimeFields,
-		},
-		"Secrets": ubx.FieldSpec{
-			WireName: "secrets",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Configuration_SecretsFields,
-		},
-		"Service": ubx.FieldSpec{
-			WireName: "service",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Configuration_ServiceFields,
-		},
-	}
+	"ActiveRevisionsMode": ubx.FieldSpec{WireName: "active_revisions_mode"},
+	"Dapr": ubx.FieldSpec{
+		WireName: "dapr",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Configuration_DaprFields,
+	},
+	"IdentitySettings": ubx.FieldSpec{
+		WireName: "identity_settings",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Configuration_IdentitySettingsFields,
+	},
+	"Ingress": ubx.FieldSpec{
+		WireName: "ingress",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Configuration_IngressFields,
+	},
+	"MaxInactiveRevisions": ubx.FieldSpec{WireName: "max_inactive_revisions"},
+	"Registries": ubx.FieldSpec{
+		WireName: "registries",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Configuration_RegistriesFields,
+	},
+	"Runtime": ubx.FieldSpec{
+		WireName: "runtime",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Configuration_RuntimeFields,
+	},
+	"Secrets": ubx.FieldSpec{
+		WireName: "secrets",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Configuration_SecretsFields,
+	},
+	"Service": ubx.FieldSpec{
+		WireName: "service",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Configuration_ServiceFields,
+	},
+}
 
 var OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeadersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGetFields = ubx.FieldMap{
-		"Host": ubx.FieldSpec{WireName: "host"},
-		"HttpHeaders": ubx.FieldSpec{
-			WireName: "http_headers",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeadersFields,
-		},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Scheme": ubx.FieldSpec{WireName: "scheme"},
-	}
+	"Host": ubx.FieldSpec{WireName: "host"},
+	"HttpHeaders": ubx.FieldSpec{
+		WireName: "http_headers",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGet_HttpHeadersFields,
+	},
+	"Path":   ubx.FieldSpec{WireName: "path"},
+	"Port":   ubx.FieldSpec{WireName: "port"},
+	"Scheme": ubx.FieldSpec{WireName: "scheme"},
+}
 
 var OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocketFields = ubx.FieldMap{
-		"Host": ubx.FieldSpec{WireName: "host"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-	}
+	"Host": ubx.FieldSpec{WireName: "host"},
+	"Port": ubx.FieldSpec{WireName: "port"},
+}
 
 var OpenapiContainerApp_Properties_Template_Containers_ProbesFields = ubx.FieldMap{
-		"FailureThreshold": ubx.FieldSpec{WireName: "failure_threshold"},
-		"HttpGet": ubx.FieldSpec{
-			WireName: "http_get",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGetFields,
-		},
-		"InitialDelaySeconds": ubx.FieldSpec{WireName: "initial_delay_seconds"},
-		"PeriodSeconds": ubx.FieldSpec{WireName: "period_seconds"},
-		"SuccessThreshold": ubx.FieldSpec{WireName: "success_threshold"},
-		"TcpSocket": ubx.FieldSpec{
-			WireName: "tcp_socket",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocketFields,
-		},
-		"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
-		"TimeoutSeconds": ubx.FieldSpec{WireName: "timeout_seconds"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"FailureThreshold": ubx.FieldSpec{WireName: "failure_threshold"},
+	"HttpGet": ubx.FieldSpec{
+		WireName: "http_get",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Template_Containers_Probes_HttpGetFields,
+	},
+	"InitialDelaySeconds": ubx.FieldSpec{WireName: "initial_delay_seconds"},
+	"PeriodSeconds":       ubx.FieldSpec{WireName: "period_seconds"},
+	"SuccessThreshold":    ubx.FieldSpec{WireName: "success_threshold"},
+	"TcpSocket": ubx.FieldSpec{
+		WireName: "tcp_socket",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Template_Containers_Probes_TcpSocketFields,
+	},
+	"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
+	"TimeoutSeconds":                ubx.FieldSpec{WireName: "timeout_seconds"},
+	"Type":                          ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiContainerApp_Properties_Template_ContainersFields = ubx.FieldMap{
-		"Probes": ubx.FieldSpec{
-			WireName: "probes",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_Containers_ProbesFields,
-		},
-	}
+	"Probes": ubx.FieldSpec{
+		WireName: "probes",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_Containers_ProbesFields,
+	},
+}
 
 var OpenapiContainerApp_Properties_Template_InitContainers_EnvFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiContainerApp_Properties_Template_InitContainers_ResourcesFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"EphemeralStorage": ubx.FieldSpec{WireName: "ephemeral_storage"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":              ubx.FieldSpec{WireName: "cpu"},
+	"EphemeralStorage": ubx.FieldSpec{WireName: "ephemeral_storage"},
+	"Memory":           ubx.FieldSpec{WireName: "memory"},
+}
 
 var OpenapiContainerApp_Properties_Template_InitContainers_VolumeMountsFields = ubx.FieldMap{
-		"MountPath": ubx.FieldSpec{WireName: "mount_path"},
-		"SubPath": ubx.FieldSpec{WireName: "sub_path"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
-	}
+	"MountPath":  ubx.FieldSpec{WireName: "mount_path"},
+	"SubPath":    ubx.FieldSpec{WireName: "sub_path"},
+	"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+}
 
 var OpenapiContainerApp_Properties_Template_InitContainersFields = ubx.FieldMap{
-		"Args": ubx.FieldSpec{WireName: "args"},
-		"Command": ubx.FieldSpec{WireName: "command"},
-		"Env": ubx.FieldSpec{
-			WireName: "env",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_InitContainers_EnvFields,
-		},
-		"Image": ubx.FieldSpec{WireName: "image"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Resources": ubx.FieldSpec{
-			WireName: "resources",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Template_InitContainers_ResourcesFields,
-		},
-		"VolumeMounts": ubx.FieldSpec{
-			WireName: "volume_mounts",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_InitContainers_VolumeMountsFields,
-		},
-	}
+	"Args":    ubx.FieldSpec{WireName: "args"},
+	"Command": ubx.FieldSpec{WireName: "command"},
+	"Env": ubx.FieldSpec{
+		WireName: "env",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_InitContainers_EnvFields,
+	},
+	"Image": ubx.FieldSpec{WireName: "image"},
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Resources": ubx.FieldSpec{
+		WireName: "resources",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Template_InitContainers_ResourcesFields,
+	},
+	"VolumeMounts": ubx.FieldSpec{
+		WireName: "volume_mounts",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_InitContainers_VolumeMountsFields,
+	},
+}
 
 var OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_AuthFields = ubx.FieldMap{
-		"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
-		"TriggerParameter": ubx.FieldSpec{WireName: "trigger_parameter"},
-	}
+	"SecretRef":        ubx.FieldSpec{WireName: "secret_ref"},
+	"TriggerParameter": ubx.FieldSpec{WireName: "trigger_parameter"},
+}
 
 var OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueueFields = ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"Auth": ubx.FieldSpec{
-			WireName: "auth",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_AuthFields,
-		},
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"QueueLength": ubx.FieldSpec{WireName: "queue_length"},
-		"QueueName": ubx.FieldSpec{WireName: "queue_name"},
-	}
+	"AccountName": ubx.FieldSpec{WireName: "account_name"},
+	"Auth": ubx.FieldSpec{
+		WireName: "auth",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_AuthFields,
+	},
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"QueueLength": ubx.FieldSpec{WireName: "queue_length"},
+	"QueueName":   ubx.FieldSpec{WireName: "queue_name"},
+}
 
 var OpenapiContainerApp_Properties_Template_Scale_Rules_CustomFields = ubx.FieldMap{
-		"Auth": ubx.FieldSpec{
-			WireName: "auth",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_AuthFields,
-		},
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Auth": ubx.FieldSpec{
+		WireName: "auth",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_AuthFields,
+	},
+	"Identity": ubx.FieldSpec{WireName: "identity"},
+	"Metadata": ubx.FieldSpec{WireName: "metadata"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiContainerApp_Properties_Template_Scale_Rules_HttpFields = ubx.FieldMap{
-		"Auth": ubx.FieldSpec{
-			WireName: "auth",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_AuthFields,
-		},
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-	}
+	"Auth": ubx.FieldSpec{
+		WireName: "auth",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueue_AuthFields,
+	},
+	"Identity": ubx.FieldSpec{WireName: "identity"},
+	"Metadata": ubx.FieldSpec{WireName: "metadata"},
+}
 
 var OpenapiContainerApp_Properties_Template_Scale_RulesFields = ubx.FieldMap{
-		"AzureQueue": ubx.FieldSpec{
-			WireName: "azure_queue",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueueFields,
-		},
-		"Custom": ubx.FieldSpec{
-			WireName: "custom",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Template_Scale_Rules_CustomFields,
-		},
-		"Http": ubx.FieldSpec{
-			WireName: "http",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Template_Scale_Rules_HttpFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tcp": ubx.FieldSpec{
-			WireName: "tcp",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Template_Scale_Rules_HttpFields,
-		},
-	}
+	"AzureQueue": ubx.FieldSpec{
+		WireName: "azure_queue",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Template_Scale_Rules_AzureQueueFields,
+	},
+	"Custom": ubx.FieldSpec{
+		WireName: "custom",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Template_Scale_Rules_CustomFields,
+	},
+	"Http": ubx.FieldSpec{
+		WireName: "http",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Template_Scale_Rules_HttpFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tcp": ubx.FieldSpec{
+		WireName: "tcp",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Template_Scale_Rules_HttpFields,
+	},
+}
 
 var OpenapiContainerApp_Properties_Template_ScaleFields = ubx.FieldMap{
-		"CooldownPeriod": ubx.FieldSpec{WireName: "cooldown_period"},
-		"MaxReplicas": ubx.FieldSpec{WireName: "max_replicas"},
-		"MinReplicas": ubx.FieldSpec{WireName: "min_replicas"},
-		"PollingInterval": ubx.FieldSpec{WireName: "polling_interval"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_Scale_RulesFields,
-		},
-	}
+	"CooldownPeriod":  ubx.FieldSpec{WireName: "cooldown_period"},
+	"MaxReplicas":     ubx.FieldSpec{WireName: "max_replicas"},
+	"MinReplicas":     ubx.FieldSpec{WireName: "min_replicas"},
+	"PollingInterval": ubx.FieldSpec{WireName: "polling_interval"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_Scale_RulesFields,
+	},
+}
 
 var OpenapiContainerApp_Properties_Template_ServiceBindsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ServiceId": ubx.FieldSpec{WireName: "service_id"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"ServiceId": ubx.FieldSpec{WireName: "service_id"},
+}
 
 var OpenapiContainerApp_Properties_Template_Volumes_SecretsFields = ubx.FieldMap{
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
-	}
+	"Path":      ubx.FieldSpec{WireName: "path"},
+	"SecretRef": ubx.FieldSpec{WireName: "secret_ref"},
+}
 
 var OpenapiContainerApp_Properties_Template_VolumesFields = ubx.FieldMap{
-		"MountOptions": ubx.FieldSpec{WireName: "mount_options"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Secrets": ubx.FieldSpec{
-			WireName: "secrets",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_Volumes_SecretsFields,
-		},
-		"StorageName": ubx.FieldSpec{WireName: "storage_name"},
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-	}
+	"MountOptions": ubx.FieldSpec{WireName: "mount_options"},
+	"Name":         ubx.FieldSpec{WireName: "name"},
+	"Secrets": ubx.FieldSpec{
+		WireName: "secrets",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_Volumes_SecretsFields,
+	},
+	"StorageName": ubx.FieldSpec{WireName: "storage_name"},
+	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+}
 
 var OpenapiContainerApp_Properties_TemplateFields = ubx.FieldMap{
-		"Containers": ubx.FieldSpec{
-			WireName: "containers",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_ContainersFields,
-		},
-		"InitContainers": ubx.FieldSpec{
-			WireName: "init_containers",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_InitContainersFields,
-		},
-		"RevisionSuffix": ubx.FieldSpec{WireName: "revision_suffix"},
-		"Scale": ubx.FieldSpec{
-			WireName: "scale",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_Template_ScaleFields,
-		},
-		"ServiceBinds": ubx.FieldSpec{
-			WireName: "service_binds",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_ServiceBindsFields,
-		},
-		"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
-		"Volumes": ubx.FieldSpec{
-			WireName: "volumes",
-			Kind: "list",
-			Fields: OpenapiContainerApp_Properties_Template_VolumesFields,
-		},
-	}
+	"Containers": ubx.FieldSpec{
+		WireName: "containers",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_ContainersFields,
+	},
+	"InitContainers": ubx.FieldSpec{
+		WireName: "init_containers",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_InitContainersFields,
+	},
+	"RevisionSuffix": ubx.FieldSpec{WireName: "revision_suffix"},
+	"Scale": ubx.FieldSpec{
+		WireName: "scale",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_Template_ScaleFields,
+	},
+	"ServiceBinds": ubx.FieldSpec{
+		WireName: "service_binds",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_ServiceBindsFields,
+	},
+	"TerminationGracePeriodSeconds": ubx.FieldSpec{WireName: "termination_grace_period_seconds"},
+	"Volumes": ubx.FieldSpec{
+		WireName: "volumes",
+		Kind:     "list",
+		Fields:   OpenapiContainerApp_Properties_Template_VolumesFields,
+	},
+}
 
 var OpenapiContainerApp_PropertiesFields = ubx.FieldMap{
-		"Configuration": ubx.FieldSpec{
-			WireName: "configuration",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_ConfigurationFields,
-		},
-		"CustomDomainVerificationId": ubx.FieldSpec{WireName: "custom_domain_verification_id"},
-		"EnvironmentId": ubx.FieldSpec{WireName: "environment_id"},
-		"EventStreamEndpoint": ubx.FieldSpec{WireName: "event_stream_endpoint"},
-		"LatestReadyRevisionName": ubx.FieldSpec{WireName: "latest_ready_revision_name"},
-		"LatestRevisionFqdn": ubx.FieldSpec{WireName: "latest_revision_fqdn"},
-		"LatestRevisionName": ubx.FieldSpec{WireName: "latest_revision_name"},
-		"ManagedEnvironmentId": ubx.FieldSpec{WireName: "managed_environment_id"},
-		"OutboundIpAddresses": ubx.FieldSpec{WireName: "outbound_ip_addresses"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RunningStatus": ubx.FieldSpec{WireName: "running_status"},
-		"Template": ubx.FieldSpec{
-			WireName: "template",
-			Kind: "object",
-			Fields: OpenapiContainerApp_Properties_TemplateFields,
-		},
-		"WorkloadProfileName": ubx.FieldSpec{WireName: "workload_profile_name"},
-	}
+	"Configuration": ubx.FieldSpec{
+		WireName: "configuration",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_ConfigurationFields,
+	},
+	"CustomDomainVerificationId": ubx.FieldSpec{WireName: "custom_domain_verification_id"},
+	"EnvironmentId":              ubx.FieldSpec{WireName: "environment_id"},
+	"EventStreamEndpoint":        ubx.FieldSpec{WireName: "event_stream_endpoint"},
+	"LatestReadyRevisionName":    ubx.FieldSpec{WireName: "latest_ready_revision_name"},
+	"LatestRevisionFqdn":         ubx.FieldSpec{WireName: "latest_revision_fqdn"},
+	"LatestRevisionName":         ubx.FieldSpec{WireName: "latest_revision_name"},
+	"ManagedEnvironmentId":       ubx.FieldSpec{WireName: "managed_environment_id"},
+	"OutboundIpAddresses":        ubx.FieldSpec{WireName: "outbound_ip_addresses"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"RunningStatus":              ubx.FieldSpec{WireName: "running_status"},
+	"Template": ubx.FieldSpec{
+		WireName: "template",
+		Kind:     "object",
+		Fields:   OpenapiContainerApp_Properties_TemplateFields,
+	},
+	"WorkloadProfileName": ubx.FieldSpec{WireName: "workload_profile_name"},
+}
 
 type OpenapiContainerAppConfig struct {
 	// The complex type of the extended location.
@@ -836,20 +836,20 @@ var OpenapiContainerApp = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: OpenapiContainerApp_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   OpenapiContainerApp_ExtendedLocationFields,
 		},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiContainerApp_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiContainerApp_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":      ubx.FieldSpec{WireName: "kind"},
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiContainerApp_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiContainerApp_PropertiesFields,
 		},
 	},
 }

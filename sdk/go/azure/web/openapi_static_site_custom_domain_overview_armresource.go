@@ -4,13 +4,27 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteCustomDomainOverviewArmresource_Properties struct {
+	// The date and time on which the custom domain was created for the static site.
+	CreatedOn any
+	// The domain name for the static site custom domain.
+	DomainName   any
+	ErrorMessage any
+	// The status of the custom domain
+	Status any
 	// Validation method for adding a custom domain
 	ValidationMethod any
+	// The TXT record validation token
+	ValidationToken any
 }
 
 var OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields = ubx.FieldMap{
-		"ValidationMethod": ubx.FieldSpec{WireName: "validation_method"},
-	}
+	"CreatedOn":        ubx.FieldSpec{WireName: "created_on"},
+	"DomainName":       ubx.FieldSpec{WireName: "domain_name"},
+	"ErrorMessage":     ubx.FieldSpec{WireName: "error_message"},
+	"Status":           ubx.FieldSpec{WireName: "status"},
+	"ValidationMethod": ubx.FieldSpec{WireName: "validation_method"},
+	"ValidationToken":  ubx.FieldSpec{WireName: "validation_token"},
+}
 
 type OpenapiStaticSiteCustomDomainOverviewArmresourceConfig struct {
 	// StaticSiteCustomDomainRequestPropertiesARMResource resource specific properties
@@ -33,8 +47,8 @@ var OpenapiStaticSiteCustomDomainOverviewArmresource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

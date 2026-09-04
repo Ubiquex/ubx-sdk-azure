@@ -9,15 +9,15 @@ type ApimportalconfigsPortalConfigContract_Value_Properties_Cors struct {
 
 type ApimportalconfigsPortalConfigContract_Value_Properties_Csp struct {
 	AllowedSources any
-	Mode any
-	ReportUri any
+	Mode           any
+	ReportUri      any
 }
 
 type ApimportalconfigsPortalConfigContract_Value_Properties_Delegation struct {
 	DelegateRegistration any
 	DelegateSubscription any
-	DelegationUrl any
-	ValidationKey any
+	DelegationUrl        any
+	ValidationKey        any
 }
 
 type ApimportalconfigsPortalConfigContract_Value_Properties_Signin struct {
@@ -26,7 +26,7 @@ type ApimportalconfigsPortalConfigContract_Value_Properties_Signin struct {
 
 type ApimportalconfigsPortalConfigContract_Value_Properties_Signup_TermsOfService struct {
 	RequireConsent any
-	Text any
+	Text           any
 }
 
 type ApimportalconfigsPortalConfigContract_Value_Properties_Signup struct {
@@ -34,12 +34,12 @@ type ApimportalconfigsPortalConfigContract_Value_Properties_Signup struct {
 }
 
 type ApimportalconfigsPortalConfigContract_Value_Properties struct {
-	Cors any
-	Csp any
-	Delegation any
+	Cors            any
+	Csp             any
+	Delegation      any
 	EnableBasicAuth any
-	Signin any
-	Signup any
+	Signin          any
+	Signup          any
 }
 
 type ApimportalconfigsPortalConfigContract_Value struct {
@@ -58,6 +58,5 @@ type ApimportalconfigsPortalConfigContractAttrs struct {
 
 var ApimportalconfigsPortalConfigContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimportalconfigs_portal_config_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

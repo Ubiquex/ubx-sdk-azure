@@ -4,7 +4,7 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Account_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -60,16 +60,16 @@ type Account_Properties_ApiProperties struct {
 
 type Account_Properties_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path any
+	Path   any
 }
 
 type Account_Properties_CallRateLimit_Rules struct {
-	Count any
+	Count                    any
 	DynamicThrottlingEnabled any
-	Key any
-	MatchPatterns any
-	MinCount any
-	RenewalPeriod any
+	Key                      any
+	MatchPatterns            any
+	MinCount                 any
+	RenewalPeriod            any
 }
 
 type Account_Properties_CallRateLimit struct {
@@ -77,16 +77,16 @@ type Account_Properties_CallRateLimit struct {
 	Count any
 	// The renewal period in seconds of Call Rate Limit.
 	RenewalPeriod any
-	Rules any
+	Rules         any
 }
 
 type Account_Properties_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Account_Properties_CommitmentPlanAssociations struct {
-	CommitmentPlanId any
+	CommitmentPlanId       any
 	CommitmentPlanLocation any
 }
 
@@ -109,8 +109,8 @@ type Account_Properties_Encryption struct {
 
 type Account_Properties_Locations_Regions struct {
 	Customsubdomain any
-	Name any
-	Value any
+	Name            any
+	Value           any
 }
 
 type Account_Properties_Locations struct {
@@ -124,9 +124,9 @@ type Account_Properties_NetworkAcls_IpRules struct {
 }
 
 type Account_Properties_NetworkAcls_VirtualNetworkRules struct {
-	Id any
+	Id                               any
 	IgnoreMissingVnetServiceEndpoint any
-	State any
+	State                            any
 }
 
 type Account_Properties_NetworkAcls struct {
@@ -141,8 +141,8 @@ type Account_Properties_NetworkAcls struct {
 }
 
 type Account_Properties_NetworkInjections struct {
-	Scenario any
-	SubnetArmId any
+	Scenario                   any
+	SubnetArmId                any
 	UseMicrosoftManagedNetwork any
 }
 
@@ -152,20 +152,20 @@ type Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint st
 
 type Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Account_Properties_PrivateEndpointConnections struct {
-	Etag any
-	Location any
+	Etag       any
+	Location   any
 	Properties any
 }
 
@@ -190,7 +190,7 @@ type Account_Properties struct {
 	AbusePenalty any
 	// Specifies whether this resource support project management as child resources, used as containers for access management, data isolation and cost in AI Foundry.
 	AllowProjectManagement any
-	AllowedFqdnList any
+	AllowedFqdnList        any
 	// The user owned AML account for Cognitive Services account.
 	AmlWorkspace any
 	// The api properties for special APIs.
@@ -210,7 +210,7 @@ type Account_Properties struct {
 	// Specifies the project, by project name, that is targeted when data plane endpoints are called without a project parameter.
 	DefaultProject any
 	// The deletion date, only available for deleted account.
-	DeletionDate any
+	DeletionDate     any
 	DisableLocalAuth any
 	// The flag to enable dynamic throttling.
 	DynamicThrottlingEnabled any
@@ -229,7 +229,7 @@ type Account_Properties struct {
 	// Resource migration token.
 	MigrationToken any
 	// A set of rules governing the network accessibility.
-	NetworkAcls any
+	NetworkAcls       any
 	NetworkInjections any
 	// The private endpoint connection associated with the Cognitive Services account.
 	PrivateEndpointConnections any
@@ -237,10 +237,10 @@ type Account_Properties struct {
 	ProvisioningState any
 	// Whether or not public endpoint access is allowed for this account.
 	PublicNetworkAccess any
-	QuotaLimit any
+	QuotaLimit          any
 	// Cognitive Services Rai Monitor Config.
-	RaiMonitorConfig any
-	Restore any
+	RaiMonitorConfig              any
+	Restore                       any
 	RestrictOutboundNetworkAccess any
 	// The scheduled purge date, only available for deleted account.
 	ScheduledPurgeDate any
@@ -266,300 +266,298 @@ type Account_Sku struct {
 }
 
 var Account_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Account_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Account_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Account_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Account_Properties_AbusePenaltyFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Expiration": ubx.FieldSpec{WireName: "expiration"},
-		"RateLimitPercentage": ubx.FieldSpec{WireName: "rate_limit_percentage"},
-	}
+	"Action":              ubx.FieldSpec{WireName: "action"},
+	"Expiration":          ubx.FieldSpec{WireName: "expiration"},
+	"RateLimitPercentage": ubx.FieldSpec{WireName: "rate_limit_percentage"},
+}
 
 var Account_Properties_AmlWorkspaceFields = ubx.FieldMap{
-		"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
+	"ResourceId":       ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var Account_Properties_ApiPropertiesFields = ubx.FieldMap{
-		"AadClientId": ubx.FieldSpec{WireName: "aad_client_id"},
-		"AadTenantId": ubx.FieldSpec{WireName: "aad_tenant_id"},
-		"EventHubConnectionString": ubx.FieldSpec{WireName: "event_hub_connection_string"},
-		"QnaAzureSearchEndpointId": ubx.FieldSpec{WireName: "qna_azure_search_endpoint_id"},
-		"QnaAzureSearchEndpointKey": ubx.FieldSpec{WireName: "qna_azure_search_endpoint_key"},
-		"QnaRuntimeEndpoint": ubx.FieldSpec{WireName: "qna_runtime_endpoint"},
-		"StatisticsEnabled": ubx.FieldSpec{WireName: "statistics_enabled"},
-		"StorageAccountConnectionString": ubx.FieldSpec{WireName: "storage_account_connection_string"},
-		"SuperUser": ubx.FieldSpec{WireName: "super_user"},
-		"WebsiteName": ubx.FieldSpec{WireName: "website_name"},
-	}
+	"AadClientId":                    ubx.FieldSpec{WireName: "aad_client_id"},
+	"AadTenantId":                    ubx.FieldSpec{WireName: "aad_tenant_id"},
+	"EventHubConnectionString":       ubx.FieldSpec{WireName: "event_hub_connection_string"},
+	"QnaAzureSearchEndpointId":       ubx.FieldSpec{WireName: "qna_azure_search_endpoint_id"},
+	"QnaAzureSearchEndpointKey":      ubx.FieldSpec{WireName: "qna_azure_search_endpoint_key"},
+	"QnaRuntimeEndpoint":             ubx.FieldSpec{WireName: "qna_runtime_endpoint"},
+	"StatisticsEnabled":              ubx.FieldSpec{WireName: "statistics_enabled"},
+	"StorageAccountConnectionString": ubx.FieldSpec{WireName: "storage_account_connection_string"},
+	"SuperUser":                      ubx.FieldSpec{WireName: "super_user"},
+	"WebsiteName":                    ubx.FieldSpec{WireName: "website_name"},
+}
 
 var Account_Properties_CallRateLimit_Rules_MatchPatternsFields = ubx.FieldMap{
-		"Method": ubx.FieldSpec{WireName: "method"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-	}
+	"Method": ubx.FieldSpec{WireName: "method"},
+	"Path":   ubx.FieldSpec{WireName: "path"},
+}
 
 var Account_Properties_CallRateLimit_RulesFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"DynamicThrottlingEnabled": ubx.FieldSpec{WireName: "dynamic_throttling_enabled"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"MatchPatterns": ubx.FieldSpec{
-			WireName: "match_patterns",
-			Kind: "list",
-			Fields: Account_Properties_CallRateLimit_Rules_MatchPatternsFields,
-		},
-		"MinCount": ubx.FieldSpec{WireName: "min_count"},
-		"RenewalPeriod": ubx.FieldSpec{WireName: "renewal_period"},
-	}
+	"Count":                    ubx.FieldSpec{WireName: "count"},
+	"DynamicThrottlingEnabled": ubx.FieldSpec{WireName: "dynamic_throttling_enabled"},
+	"Key":                      ubx.FieldSpec{WireName: "key"},
+	"MatchPatterns": ubx.FieldSpec{
+		WireName: "match_patterns",
+		Kind:     "list",
+		Fields:   Account_Properties_CallRateLimit_Rules_MatchPatternsFields,
+	},
+	"MinCount":      ubx.FieldSpec{WireName: "min_count"},
+	"RenewalPeriod": ubx.FieldSpec{WireName: "renewal_period"},
+}
 
 var Account_Properties_CallRateLimitFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"RenewalPeriod": ubx.FieldSpec{WireName: "renewal_period"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: Account_Properties_CallRateLimit_RulesFields,
-		},
-	}
+	"Count":         ubx.FieldSpec{WireName: "count"},
+	"RenewalPeriod": ubx.FieldSpec{WireName: "renewal_period"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   Account_Properties_CallRateLimit_RulesFields,
+	},
+}
 
 var Account_Properties_CapabilitiesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Account_Properties_CommitmentPlanAssociationsFields = ubx.FieldMap{
-		"CommitmentPlanId": ubx.FieldSpec{WireName: "commitment_plan_id"},
-		"CommitmentPlanLocation": ubx.FieldSpec{WireName: "commitment_plan_location"},
-	}
+	"CommitmentPlanId":       ubx.FieldSpec{WireName: "commitment_plan_id"},
+	"CommitmentPlanLocation": ubx.FieldSpec{WireName: "commitment_plan_location"},
+}
 
 var Account_Properties_Encryption_KeyVaultPropertiesFields = ubx.FieldMap{
-		"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-	}
+	"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
+	"KeyName":          ubx.FieldSpec{WireName: "key_name"},
+	"KeyVaultUri":      ubx.FieldSpec{WireName: "key_vault_uri"},
+	"KeyVersion":       ubx.FieldSpec{WireName: "key_version"},
+}
 
 var Account_Properties_EncryptionFields = ubx.FieldMap{
-		"KeySource": ubx.FieldSpec{WireName: "key_source"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: Account_Properties_Encryption_KeyVaultPropertiesFields,
-		},
-	}
+	"KeySource": ubx.FieldSpec{WireName: "key_source"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   Account_Properties_Encryption_KeyVaultPropertiesFields,
+	},
+}
 
 var Account_Properties_Locations_RegionsFields = ubx.FieldMap{
-		"Customsubdomain": ubx.FieldSpec{WireName: "customsubdomain"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Customsubdomain": ubx.FieldSpec{WireName: "customsubdomain"},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+	"Value":           ubx.FieldSpec{WireName: "value"},
+}
 
 var Account_Properties_LocationsFields = ubx.FieldMap{
-		"Regions": ubx.FieldSpec{
-			WireName: "regions",
-			Kind: "list",
-			Fields: Account_Properties_Locations_RegionsFields,
-		},
-		"RoutingMethod": ubx.FieldSpec{WireName: "routing_method"},
-	}
+	"Regions": ubx.FieldSpec{
+		WireName: "regions",
+		Kind:     "list",
+		Fields:   Account_Properties_Locations_RegionsFields,
+	},
+	"RoutingMethod": ubx.FieldSpec{WireName: "routing_method"},
+}
 
 var Account_Properties_NetworkAcls_IpRulesFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Account_Properties_NetworkAcls_VirtualNetworkRulesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"IgnoreMissingVnetServiceEndpoint": ubx.FieldSpec{WireName: "ignore_missing_vnet_service_endpoint"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"Id":                               ubx.FieldSpec{WireName: "id"},
+	"IgnoreMissingVnetServiceEndpoint": ubx.FieldSpec{WireName: "ignore_missing_vnet_service_endpoint"},
+	"State":                            ubx.FieldSpec{WireName: "state"},
+}
 
 var Account_Properties_NetworkAclsFields = ubx.FieldMap{
-		"Bypass": ubx.FieldSpec{WireName: "bypass"},
-		"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: Account_Properties_NetworkAcls_IpRulesFields,
-		},
-		"VirtualNetworkRules": ubx.FieldSpec{
-			WireName: "virtual_network_rules",
-			Kind: "list",
-			Fields: Account_Properties_NetworkAcls_VirtualNetworkRulesFields,
-		},
-	}
+	"Bypass":        ubx.FieldSpec{WireName: "bypass"},
+	"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   Account_Properties_NetworkAcls_IpRulesFields,
+	},
+	"VirtualNetworkRules": ubx.FieldSpec{
+		WireName: "virtual_network_rules",
+		Kind:     "list",
+		Fields:   Account_Properties_NetworkAcls_VirtualNetworkRulesFields,
+	},
+}
 
 var Account_Properties_NetworkInjectionsFields = ubx.FieldMap{
-		"Scenario": ubx.FieldSpec{WireName: "scenario"},
-		"SubnetArmId": ubx.FieldSpec{WireName: "subnet_arm_id"},
-		"UseMicrosoftManagedNetwork": ubx.FieldSpec{WireName: "use_microsoft_managed_network"},
-	}
+	"Scenario":                   ubx.FieldSpec{WireName: "scenario"},
+	"SubnetArmId":                ubx.FieldSpec{WireName: "subnet_arm_id"},
+	"UseMicrosoftManagedNetwork": ubx.FieldSpec{WireName: "use_microsoft_managed_network"},
+}
 
 var Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var Account_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Account_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Account_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag":     ubx.FieldSpec{WireName: "etag"},
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Account_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Account_Properties_RaiMonitorConfigFields = ubx.FieldMap{
-		"AdxStorageResourceId": ubx.FieldSpec{WireName: "adx_storage_resource_id"},
-		"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
-	}
+	"AdxStorageResourceId": ubx.FieldSpec{WireName: "adx_storage_resource_id"},
+	"IdentityClientId":     ubx.FieldSpec{WireName: "identity_client_id"},
+}
 
 var Account_Properties_SkuChangeInfoFields = ubx.FieldMap{
-		"CountOfDowngrades": ubx.FieldSpec{WireName: "count_of_downgrades"},
-		"CountOfUpgradesAfterDowngrades": ubx.FieldSpec{WireName: "count_of_upgrades_after_downgrades"},
-		"LastChangeDate": ubx.FieldSpec{WireName: "last_change_date"},
-	}
+	"CountOfDowngrades":              ubx.FieldSpec{WireName: "count_of_downgrades"},
+	"CountOfUpgradesAfterDowngrades": ubx.FieldSpec{WireName: "count_of_upgrades_after_downgrades"},
+	"LastChangeDate":                 ubx.FieldSpec{WireName: "last_change_date"},
+}
 
 var Account_PropertiesFields = ubx.FieldMap{
-		"AbusePenalty": ubx.FieldSpec{
-			WireName: "abuse_penalty",
-			Kind: "object",
-			Fields: Account_Properties_AbusePenaltyFields,
-		},
-		"AllowProjectManagement": ubx.FieldSpec{WireName: "allow_project_management"},
-		"AllowedFqdnList": ubx.FieldSpec{WireName: "allowed_fqdn_list"},
-		"AmlWorkspace": ubx.FieldSpec{
-			WireName: "aml_workspace",
-			Kind: "object",
-			Fields: Account_Properties_AmlWorkspaceFields,
-		},
-		"ApiProperties": ubx.FieldSpec{
-			WireName: "api_properties",
-			Kind: "object",
-			Fields: Account_Properties_ApiPropertiesFields,
-		},
-		"AssociatedProjects": ubx.FieldSpec{WireName: "associated_projects"},
-		"CallRateLimit": ubx.FieldSpec{
-			WireName: "call_rate_limit",
-			Kind: "object",
-			Fields: Account_Properties_CallRateLimitFields,
-		},
-		"Capabilities": ubx.FieldSpec{
-			WireName: "capabilities",
-			Kind: "list",
-			Fields: Account_Properties_CapabilitiesFields,
-		},
-		"CommitmentPlanAssociations": ubx.FieldSpec{
-			WireName: "commitment_plan_associations",
-			Kind: "list",
-			Fields: Account_Properties_CommitmentPlanAssociationsFields,
-		},
-		"CustomSubDomainName": ubx.FieldSpec{WireName: "custom_sub_domain_name"},
-		"DateCreated": ubx.FieldSpec{WireName: "date_created"},
-		"DefaultProject": ubx.FieldSpec{WireName: "default_project"},
-		"DeletionDate": ubx.FieldSpec{WireName: "deletion_date"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"DynamicThrottlingEnabled": ubx.FieldSpec{WireName: "dynamic_throttling_enabled"},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: Account_Properties_EncryptionFields,
-		},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"Endpoints": ubx.FieldSpec{WireName: "endpoints"},
-		"InternalId": ubx.FieldSpec{WireName: "internal_id"},
-		"IsMigrated": ubx.FieldSpec{WireName: "is_migrated"},
-		"Locations": ubx.FieldSpec{
-			WireName: "locations",
-			Kind: "object",
-			Fields: Account_Properties_LocationsFields,
-		},
-		"MigrationToken": ubx.FieldSpec{WireName: "migration_token"},
-		"NetworkAcls": ubx.FieldSpec{
-			WireName: "network_acls",
-			Kind: "object",
-			Fields: Account_Properties_NetworkAclsFields,
-		},
-		"NetworkInjections": ubx.FieldSpec{
-			WireName: "network_injections",
-			Kind: "list",
-			Fields: Account_Properties_NetworkInjectionsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Account_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"QuotaLimit": ubx.FieldSpec{
-			WireName: "quota_limit",
-			Kind: "object",
-			Fields: Account_Properties_CallRateLimitFields,
-		},
-		"RaiMonitorConfig": ubx.FieldSpec{
-			WireName: "rai_monitor_config",
-			Kind: "object",
-			Fields: Account_Properties_RaiMonitorConfigFields,
-		},
-		"Restore": ubx.FieldSpec{WireName: "restore"},
-		"RestrictOutboundNetworkAccess": ubx.FieldSpec{WireName: "restrict_outbound_network_access"},
-		"ScheduledPurgeDate": ubx.FieldSpec{WireName: "scheduled_purge_date"},
-		"SkuChangeInfo": ubx.FieldSpec{
-			WireName: "sku_change_info",
-			Kind: "object",
-			Fields: Account_Properties_SkuChangeInfoFields,
-		},
-		"StoredCompletionsDisabled": ubx.FieldSpec{WireName: "stored_completions_disabled"},
-		"UserOwnedStorage": ubx.FieldSpec{
-			WireName: "user_owned_storage",
-			Kind: "list",
-			Fields: Account_Properties_AmlWorkspaceFields,
-		},
-	}
+	"AbusePenalty": ubx.FieldSpec{
+		WireName: "abuse_penalty",
+		Kind:     "object",
+		Fields:   Account_Properties_AbusePenaltyFields,
+	},
+	"AllowProjectManagement": ubx.FieldSpec{WireName: "allow_project_management"},
+	"AllowedFqdnList":        ubx.FieldSpec{WireName: "allowed_fqdn_list"},
+	"AmlWorkspace": ubx.FieldSpec{
+		WireName: "aml_workspace",
+		Kind:     "object",
+		Fields:   Account_Properties_AmlWorkspaceFields,
+	},
+	"ApiProperties": ubx.FieldSpec{
+		WireName: "api_properties",
+		Kind:     "object",
+		Fields:   Account_Properties_ApiPropertiesFields,
+	},
+	"AssociatedProjects": ubx.FieldSpec{WireName: "associated_projects"},
+	"CallRateLimit": ubx.FieldSpec{
+		WireName: "call_rate_limit",
+		Kind:     "object",
+		Fields:   Account_Properties_CallRateLimitFields,
+	},
+	"Capabilities": ubx.FieldSpec{
+		WireName: "capabilities",
+		Kind:     "list",
+		Fields:   Account_Properties_CapabilitiesFields,
+	},
+	"CommitmentPlanAssociations": ubx.FieldSpec{
+		WireName: "commitment_plan_associations",
+		Kind:     "list",
+		Fields:   Account_Properties_CommitmentPlanAssociationsFields,
+	},
+	"CustomSubDomainName":      ubx.FieldSpec{WireName: "custom_sub_domain_name"},
+	"DateCreated":              ubx.FieldSpec{WireName: "date_created"},
+	"DefaultProject":           ubx.FieldSpec{WireName: "default_project"},
+	"DeletionDate":             ubx.FieldSpec{WireName: "deletion_date"},
+	"DisableLocalAuth":         ubx.FieldSpec{WireName: "disable_local_auth"},
+	"DynamicThrottlingEnabled": ubx.FieldSpec{WireName: "dynamic_throttling_enabled"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   Account_Properties_EncryptionFields,
+	},
+	"Endpoint":   ubx.FieldSpec{WireName: "endpoint"},
+	"Endpoints":  ubx.FieldSpec{WireName: "endpoints"},
+	"InternalId": ubx.FieldSpec{WireName: "internal_id"},
+	"IsMigrated": ubx.FieldSpec{WireName: "is_migrated"},
+	"Locations": ubx.FieldSpec{
+		WireName: "locations",
+		Kind:     "object",
+		Fields:   Account_Properties_LocationsFields,
+	},
+	"MigrationToken": ubx.FieldSpec{WireName: "migration_token"},
+	"NetworkAcls": ubx.FieldSpec{
+		WireName: "network_acls",
+		Kind:     "object",
+		Fields:   Account_Properties_NetworkAclsFields,
+	},
+	"NetworkInjections": ubx.FieldSpec{
+		WireName: "network_injections",
+		Kind:     "list",
+		Fields:   Account_Properties_NetworkInjectionsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Account_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"QuotaLimit": ubx.FieldSpec{
+		WireName: "quota_limit",
+		Kind:     "object",
+		Fields:   Account_Properties_CallRateLimitFields,
+	},
+	"RaiMonitorConfig": ubx.FieldSpec{
+		WireName: "rai_monitor_config",
+		Kind:     "object",
+		Fields:   Account_Properties_RaiMonitorConfigFields,
+	},
+	"Restore":                       ubx.FieldSpec{WireName: "restore"},
+	"RestrictOutboundNetworkAccess": ubx.FieldSpec{WireName: "restrict_outbound_network_access"},
+	"ScheduledPurgeDate":            ubx.FieldSpec{WireName: "scheduled_purge_date"},
+	"SkuChangeInfo": ubx.FieldSpec{
+		WireName: "sku_change_info",
+		Kind:     "object",
+		Fields:   Account_Properties_SkuChangeInfoFields,
+	},
+	"StoredCompletionsDisabled": ubx.FieldSpec{WireName: "stored_completions_disabled"},
+	"UserOwnedStorage": ubx.FieldSpec{
+		WireName: "user_owned_storage",
+		Kind:     "list",
+		Fields:   Account_Properties_AmlWorkspaceFields,
+	},
+}
 
 var Account_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type AccountConfig struct {
-	// Resource Etag.
-	Etag any
 	// Identity for the resource.
 	Identity any
 	// The kind (type) of cognitive service account.
@@ -594,23 +592,22 @@ type AccountAttrs struct {
 var Account = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_account",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Account_IdentityFields,
+			Kind:     "object",
+			Fields:   Account_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Account_PropertiesFields,
+			Kind:     "object",
+			Fields:   Account_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Account_SkuFields,
+			Kind:     "object",
+			Fields:   Account_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -19,6 +19,11 @@ class Group_Properties_Children:
     type: Any = None
 
 @dataclasses.dataclass
+class Group_Properties_Details_ManagementGroupAncestorsChain:
+    display_name: Any = None
+    name: Any = None
+
+@dataclasses.dataclass
 class Group_Properties_Details_Parent:
     # The friendly name of the parent management group.
     display_name: Any = None
@@ -29,8 +34,14 @@ class Group_Properties_Details_Parent:
 
 @dataclasses.dataclass
 class Group_Properties_Details:
+    # The ancestors of the management group.
+    management_group_ancestors: Any = None
+    # The ancestors of the management group displayed in reversed order, from immediate parent to the root.
+    management_group_ancestors_chain: Any = None
     # (Optional) The ID of the parent management group used during creation.
     parent: Any = None
+    # The path from the root to the current group.
+    path: Any = None
     # The identity of the principal or process that updated the object.
     updated_by: Any = None
     # The date and time when this object was last updated.
@@ -64,6 +75,11 @@ _Group_Properties_ChildrenFields = {
     "type": ubx.FieldSpec(wire_name="type"),
 }
 
+_Group_Properties_Details_ManagementGroupAncestorsChainFields = {
+    "display_name": ubx.FieldSpec(wire_name="display_name"),
+    "name": ubx.FieldSpec(wire_name="name"),
+}
+
 _Group_Properties_Details_ParentFields = {
     "display_name": ubx.FieldSpec(wire_name="display_name"),
     "id": ubx.FieldSpec(wire_name="id"),
@@ -71,10 +87,21 @@ _Group_Properties_Details_ParentFields = {
 }
 
 _Group_Properties_DetailsFields = {
+    "management_group_ancestors": ubx.FieldSpec(wire_name="management_group_ancestors"),
+    "management_group_ancestors_chain": ubx.FieldSpec(
+        wire_name="management_group_ancestors_chain",
+        kind="list",
+        fields=_Group_Properties_Details_ManagementGroupAncestorsChainFields,
+    ),
     "parent": ubx.FieldSpec(
         wire_name="parent",
         kind="object",
         fields=_Group_Properties_Details_ParentFields,
+    ),
+    "path": ubx.FieldSpec(
+        wire_name="path",
+        kind="list",
+        fields=_Group_Properties_Details_ManagementGroupAncestorsChainFields,
     ),
     "updated_by": ubx.FieldSpec(wire_name="updated_by"),
     "updated_time": ubx.FieldSpec(wire_name="updated_time"),

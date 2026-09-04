@@ -4,38 +4,38 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciArcSetting_Value_Properties_ConnectivityProperties_ServiceConfigurations struct {
-	Port any
+	Port        any
 	ServiceName any
 }
 
 type HciArcSetting_Value_Properties_ConnectivityProperties struct {
-	Enabled any
+	Enabled               any
 	ServiceConfigurations any
 }
 
 type HciArcSetting_Value_Properties_DefaultExtensions struct {
-	Category any
+	Category    any
 	ConsentTime any
 }
 
 type HciArcSetting_Value_Properties_PerNodeDetails struct {
-	ArcInstance any
+	ArcInstance                     any
 	ArcNodeServicePrincipalObjectId any
-	Name any
-	State any
+	Name                            any
+	State                           any
 }
 
 type HciArcSetting_Value_Properties struct {
-	AggregateState any
-	ArcApplicationClientId any
-	ArcApplicationObjectId any
-	ArcApplicationTenantId any
-	ArcInstanceResourceGroup any
+	AggregateState              any
+	ArcApplicationClientId      any
+	ArcApplicationObjectId      any
+	ArcApplicationTenantId      any
+	ArcInstanceResourceGroup    any
 	ArcServicePrincipalObjectId any
-	ConnectivityProperties any
-	DefaultExtensions any
-	PerNodeDetails any
-	ProvisioningState any
+	ConnectivityProperties      any
+	DefaultExtensions           any
+	PerNodeDetails              any
+	ProvisioningState           any
 }
 
 type HciArcSetting_Value struct {

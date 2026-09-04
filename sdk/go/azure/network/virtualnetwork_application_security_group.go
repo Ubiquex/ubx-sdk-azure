@@ -11,13 +11,11 @@ type VirtualnetworkApplicationSecurityGroup_Properties struct {
 }
 
 var VirtualnetworkApplicationSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type VirtualnetworkApplicationSecurityGroupConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Application security group properties.
 	Properties any
 }
@@ -32,11 +30,10 @@ type VirtualnetworkApplicationSecurityGroupAttrs struct {
 var VirtualnetworkApplicationSecurityGroup = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_application_security_group",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkApplicationSecurityGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkApplicationSecurityGroup_PropertiesFields,
 		},
 	},
 }

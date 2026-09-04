@@ -15,12 +15,12 @@ type OpenapiFileShare_Properties_FileSharePaidBursting struct {
 type OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicy struct {
 	ExpiryTime any
 	Permission any
-	StartTime any
+	StartTime  any
 }
 
 type OpenapiFileShare_Properties_SignedIdentifiers struct {
 	AccessPolicy any
-	Id any
+	Id           any
 }
 
 type OpenapiFileShare_Properties struct {
@@ -79,66 +79,64 @@ type OpenapiFileShare_Properties struct {
 }
 
 var OpenapiFileShare_Properties_FileSharePaidBurstingFields = ubx.FieldMap{
-		"PaidBurstingEnabled": ubx.FieldSpec{WireName: "paid_bursting_enabled"},
-		"PaidBurstingMaxBandwidthMibps": ubx.FieldSpec{WireName: "paid_bursting_max_bandwidth_mibps"},
-		"PaidBurstingMaxIops": ubx.FieldSpec{WireName: "paid_bursting_max_iops"},
-	}
+	"PaidBurstingEnabled":           ubx.FieldSpec{WireName: "paid_bursting_enabled"},
+	"PaidBurstingMaxBandwidthMibps": ubx.FieldSpec{WireName: "paid_bursting_max_bandwidth_mibps"},
+	"PaidBurstingMaxIops":           ubx.FieldSpec{WireName: "paid_bursting_max_iops"},
+}
 
 var OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicyFields = ubx.FieldMap{
-		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
-		"Permission": ubx.FieldSpec{WireName: "permission"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-	}
+	"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
+	"Permission": ubx.FieldSpec{WireName: "permission"},
+	"StartTime":  ubx.FieldSpec{WireName: "start_time"},
+}
 
 var OpenapiFileShare_Properties_SignedIdentifiersFields = ubx.FieldMap{
-		"AccessPolicy": ubx.FieldSpec{
-			WireName: "access_policy",
-			Kind: "object",
-			Fields: OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicyFields,
-		},
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"AccessPolicy": ubx.FieldSpec{
+		WireName: "access_policy",
+		Kind:     "object",
+		Fields:   OpenapiFileShare_Properties_SignedIdentifiers_AccessPolicyFields,
+	},
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiFileShare_PropertiesFields = ubx.FieldMap{
-		"AccessTier": ubx.FieldSpec{WireName: "access_tier"},
-		"AccessTierChangeTime": ubx.FieldSpec{WireName: "access_tier_change_time"},
-		"AccessTierStatus": ubx.FieldSpec{WireName: "access_tier_status"},
-		"Deleted": ubx.FieldSpec{WireName: "deleted"},
-		"DeletedTime": ubx.FieldSpec{WireName: "deleted_time"},
-		"EnabledProtocols": ubx.FieldSpec{WireName: "enabled_protocols"},
-		"FileSharePaidBursting": ubx.FieldSpec{
-			WireName: "file_share_paid_bursting",
-			Kind: "object",
-			Fields: OpenapiFileShare_Properties_FileSharePaidBurstingFields,
-		},
-		"IncludedBurstIops": ubx.FieldSpec{WireName: "included_burst_iops"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"LeaseDuration": ubx.FieldSpec{WireName: "lease_duration"},
-		"LeaseState": ubx.FieldSpec{WireName: "lease_state"},
-		"LeaseStatus": ubx.FieldSpec{WireName: "lease_status"},
-		"MaxBurstCreditsForIops": ubx.FieldSpec{WireName: "max_burst_credits_for_iops"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"NextAllowedProvisionedBandwidthDowngradeTime": ubx.FieldSpec{WireName: "next_allowed_provisioned_bandwidth_downgrade_time"},
-		"NextAllowedProvisionedIopsDowngradeTime": ubx.FieldSpec{WireName: "next_allowed_provisioned_iops_downgrade_time"},
-		"NextAllowedQuotaDowngradeTime": ubx.FieldSpec{WireName: "next_allowed_quota_downgrade_time"},
-		"ProvisionedBandwidthMibps": ubx.FieldSpec{WireName: "provisioned_bandwidth_mibps"},
-		"ProvisionedIops": ubx.FieldSpec{WireName: "provisioned_iops"},
-		"RemainingRetentionDays": ubx.FieldSpec{WireName: "remaining_retention_days"},
-		"RootSquash": ubx.FieldSpec{WireName: "root_squash"},
-		"ShareQuota": ubx.FieldSpec{WireName: "share_quota"},
-		"ShareUsageBytes": ubx.FieldSpec{WireName: "share_usage_bytes"},
-		"SignedIdentifiers": ubx.FieldSpec{
-			WireName: "signed_identifiers",
-			Kind: "list",
-			Fields: OpenapiFileShare_Properties_SignedIdentifiersFields,
-		},
-		"SnapshotTime": ubx.FieldSpec{WireName: "snapshot_time"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"AccessTier":           ubx.FieldSpec{WireName: "access_tier"},
+	"AccessTierChangeTime": ubx.FieldSpec{WireName: "access_tier_change_time"},
+	"AccessTierStatus":     ubx.FieldSpec{WireName: "access_tier_status"},
+	"Deleted":              ubx.FieldSpec{WireName: "deleted"},
+	"DeletedTime":          ubx.FieldSpec{WireName: "deleted_time"},
+	"EnabledProtocols":     ubx.FieldSpec{WireName: "enabled_protocols"},
+	"FileSharePaidBursting": ubx.FieldSpec{
+		WireName: "file_share_paid_bursting",
+		Kind:     "object",
+		Fields:   OpenapiFileShare_Properties_FileSharePaidBurstingFields,
+	},
+	"IncludedBurstIops":      ubx.FieldSpec{WireName: "included_burst_iops"},
+	"LastModifiedTime":       ubx.FieldSpec{WireName: "last_modified_time"},
+	"LeaseDuration":          ubx.FieldSpec{WireName: "lease_duration"},
+	"LeaseState":             ubx.FieldSpec{WireName: "lease_state"},
+	"LeaseStatus":            ubx.FieldSpec{WireName: "lease_status"},
+	"MaxBurstCreditsForIops": ubx.FieldSpec{WireName: "max_burst_credits_for_iops"},
+	"Metadata":               ubx.FieldSpec{WireName: "metadata"},
+	"NextAllowedProvisionedBandwidthDowngradeTime": ubx.FieldSpec{WireName: "next_allowed_provisioned_bandwidth_downgrade_time"},
+	"NextAllowedProvisionedIopsDowngradeTime":      ubx.FieldSpec{WireName: "next_allowed_provisioned_iops_downgrade_time"},
+	"NextAllowedQuotaDowngradeTime":                ubx.FieldSpec{WireName: "next_allowed_quota_downgrade_time"},
+	"ProvisionedBandwidthMibps":                    ubx.FieldSpec{WireName: "provisioned_bandwidth_mibps"},
+	"ProvisionedIops":                              ubx.FieldSpec{WireName: "provisioned_iops"},
+	"RemainingRetentionDays":                       ubx.FieldSpec{WireName: "remaining_retention_days"},
+	"RootSquash":                                   ubx.FieldSpec{WireName: "root_squash"},
+	"ShareQuota":                                   ubx.FieldSpec{WireName: "share_quota"},
+	"ShareUsageBytes":                              ubx.FieldSpec{WireName: "share_usage_bytes"},
+	"SignedIdentifiers": ubx.FieldSpec{
+		WireName: "signed_identifiers",
+		Kind:     "list",
+		Fields:   OpenapiFileShare_Properties_SignedIdentifiersFields,
+	},
+	"SnapshotTime": ubx.FieldSpec{WireName: "snapshot_time"},
+	"Version":      ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiFileShareConfig struct {
-	// Resource Etag.
-	Etag any
 	// The properties of the file share.
 	Properties any
 }
@@ -153,11 +151,10 @@ type OpenapiFileShareAttrs struct {
 var OpenapiFileShare = ubx.ResourceBinding{
 	WireType: "azure_storage_openapi_file_share",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiFileShare_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiFileShare_PropertiesFields,
 		},
 	},
 }

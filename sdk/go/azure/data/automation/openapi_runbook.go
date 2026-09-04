@@ -5,52 +5,52 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRunbook_Value_Properties_Draft_DraftContentLink_ContentHash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type OpenapiRunbook_Value_Properties_Draft_DraftContentLink struct {
 	ContentHash any
-	Uri any
-	Version any
+	Uri         any
+	Version     any
 }
 
 type OpenapiRunbook_Value_Properties_Draft_Parameters struct {
 	DefaultValue any
-	IsMandatory any
-	Position any
-	Type any
+	IsMandatory  any
+	Position     any
+	Type         any
 }
 
 type OpenapiRunbook_Value_Properties_Draft struct {
-	CreationTime any
+	CreationTime     any
 	DraftContentLink any
-	InEdit any
+	InEdit           any
 	LastModifiedTime any
-	OutputTypes any
-	Parameters any
+	OutputTypes      any
+	Parameters       any
 }
 
 type OpenapiRunbook_Value_Properties struct {
-	CreationTime any
-	Description any
-	Draft any
-	JobCount any
-	LastModifiedBy any
-	LastModifiedTime any
-	LogActivityTrace any
-	LogProgress any
-	LogVerbose any
-	OutputTypes any
-	Parameters any
-	ProvisioningState any
+	CreationTime       any
+	Description        any
+	Draft              any
+	JobCount           any
+	LastModifiedBy     any
+	LastModifiedTime   any
+	LogActivityTrace   any
+	LogProgress        any
+	LogVerbose         any
+	OutputTypes        any
+	Parameters         any
+	ProvisioningState  any
 	PublishContentLink any
-	RunbookType any
+	RunbookType        any
 	RuntimeEnvironment any
-	State any
+	State              any
 }
 
 type OpenapiRunbook_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

@@ -4,8 +4,8 @@ package databricks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiGroupIdInformation_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
@@ -21,7 +21,7 @@ type OpenapiGroupIdInformationAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The GroupIdInformation items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

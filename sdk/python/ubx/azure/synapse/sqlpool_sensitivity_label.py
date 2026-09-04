@@ -40,8 +40,6 @@ _SqlpoolSensitivityLabel_PropertiesFields = {
 
 @dataclasses.dataclass
 class SqlpoolSensitivityLabelConfig:
-    # managed by
-    managed_by: Any = None
     # Properties of a sensitivity label.
     properties: Any = None
 
@@ -55,7 +53,6 @@ class SqlpoolSensitivityLabelAttrs:
 SqlpoolSensitivityLabel = ubx.ResourceBinding(
     wire_type="azure_synapse_sqlpool_sensitivity_label",
     fields={
-        "managed_by": ubx.FieldSpec(wire_name="managed_by"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

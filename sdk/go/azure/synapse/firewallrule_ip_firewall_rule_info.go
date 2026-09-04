@@ -13,10 +13,10 @@ type FirewallruleIpFirewallRuleInfo_Properties struct {
 }
 
 var FirewallruleIpFirewallRuleInfo_PropertiesFields = ubx.FieldMap{
-		"EndIpAddress": ubx.FieldSpec{WireName: "end_ip_address"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StartIpAddress": ubx.FieldSpec{WireName: "start_ip_address"},
-	}
+	"EndIpAddress":      ubx.FieldSpec{WireName: "end_ip_address"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"StartIpAddress":    ubx.FieldSpec{WireName: "start_ip_address"},
+}
 
 type FirewallruleIpFirewallRuleInfoConfig struct {
 	// IP firewall rule properties
@@ -33,8 +33,8 @@ var FirewallruleIpFirewallRuleInfo = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FirewallruleIpFirewallRuleInfo_PropertiesFields,
+			Kind:     "object",
+			Fields:   FirewallruleIpFirewallRuleInfo_PropertiesFields,
 		},
 	},
 }

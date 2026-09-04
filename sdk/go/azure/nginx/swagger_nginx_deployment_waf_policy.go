@@ -26,26 +26,26 @@ type SwaggerNginxDeploymentWafPolicy_Properties struct {
 }
 
 var SwaggerNginxDeploymentWafPolicy_Properties_ApplyingStateFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var SwaggerNginxDeploymentWafPolicy_PropertiesFields = ubx.FieldMap{
-		"ApplyingState": ubx.FieldSpec{
-			WireName: "applying_state",
-			Kind: "object",
-			Fields: SwaggerNginxDeploymentWafPolicy_Properties_ApplyingStateFields,
-		},
-		"CompilingState": ubx.FieldSpec{
-			WireName: "compiling_state",
-			Kind: "object",
-			Fields: SwaggerNginxDeploymentWafPolicy_Properties_ApplyingStateFields,
-		},
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"Filepath": ubx.FieldSpec{WireName: "filepath"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ApplyingState": ubx.FieldSpec{
+		WireName: "applying_state",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeploymentWafPolicy_Properties_ApplyingStateFields,
+	},
+	"CompilingState": ubx.FieldSpec{
+		WireName: "compiling_state",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeploymentWafPolicy_Properties_ApplyingStateFields,
+	},
+	"Content":           ubx.FieldSpec{WireName: "content"},
+	"Filepath":          ubx.FieldSpec{WireName: "filepath"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type SwaggerNginxDeploymentWafPolicyConfig struct {
 	// Nginx Deployment Waf Policy Properties
@@ -62,8 +62,8 @@ var SwaggerNginxDeploymentWafPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SwaggerNginxDeploymentWafPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   SwaggerNginxDeploymentWafPolicy_PropertiesFields,
 		},
 	},
 }

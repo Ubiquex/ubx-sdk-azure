@@ -11938,8 +11938,6 @@ _VirtualnetworkSubnet_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkSubnetConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the subnet.
     properties: Any = None
 
@@ -11953,7 +11951,6 @@ class VirtualnetworkSubnetAttrs:
 VirtualnetworkSubnet = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_subnet",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

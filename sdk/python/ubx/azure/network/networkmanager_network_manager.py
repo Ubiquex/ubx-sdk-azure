@@ -77,23 +77,10 @@ _NetworkmanagerNetworkManager_PropertiesFields = {
     "resource_guid": ubx.FieldSpec(wire_name="resource_guid"),
 }
 
-_NetworkmanagerNetworkManager_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class NetworkmanagerNetworkManagerConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of Managed Network
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class NetworkmanagerNetworkManagerAttrs:
@@ -107,16 +94,10 @@ class NetworkmanagerNetworkManagerAttrs:
 NetworkmanagerNetworkManager = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_network_manager",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NetworkmanagerNetworkManager_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_NetworkmanagerNetworkManager_SystemDataFields,
         ),
     },
 )

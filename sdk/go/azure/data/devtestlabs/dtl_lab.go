@@ -4,47 +4,47 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlLab_Value_Properties_Announcement struct {
-	Enabled any
-	ExpirationDate any
-	Expired any
-	Markdown any
+	Enabled           any
+	ExpirationDate    any
+	Expired           any
+	Markdown          any
 	ProvisioningState any
-	Title any
-	UniqueIdentifier any
+	Title             any
+	UniqueIdentifier  any
 }
 
 type DtlLab_Value_Properties_Support struct {
-	Enabled any
+	Enabled  any
 	Markdown any
 }
 
 type DtlLab_Value_Properties struct {
-	Announcement any
-	ArtifactsStorageAccount any
-	CreatedDate any
-	DefaultPremiumStorageAccount any
-	DefaultStorageAccount any
-	EnvironmentPermission any
-	ExtendedProperties any
-	LabStorageType any
-	LoadBalancerId any
-	MandatoryArtifactsResourceIdsLinux any
+	Announcement                         any
+	ArtifactsStorageAccount              any
+	CreatedDate                          any
+	DefaultPremiumStorageAccount         any
+	DefaultStorageAccount                any
+	EnvironmentPermission                any
+	ExtendedProperties                   any
+	LabStorageType                       any
+	LoadBalancerId                       any
+	MandatoryArtifactsResourceIdsLinux   any
 	MandatoryArtifactsResourceIdsWindows any
-	NetworkSecurityGroupId any
-	PremiumDataDiskStorageAccount any
-	PremiumDataDisks any
-	ProvisioningState any
-	PublicIpId any
-	Support any
-	UniqueIdentifier any
-	VaultName any
-	VmCreationResourceGroup any
+	NetworkSecurityGroupId               any
+	PremiumDataDiskStorageAccount        any
+	PremiumDataDisks                     any
+	ProvisioningState                    any
+	PublicIpId                           any
+	Support                              any
+	UniqueIdentifier                     any
+	VaultName                            any
+	VmCreationResourceGroup              any
 }
 
 type DtlLab_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlLabConfig struct {
@@ -59,6 +59,5 @@ type DtlLabAttrs struct {
 
 var DtlLab = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_lab",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

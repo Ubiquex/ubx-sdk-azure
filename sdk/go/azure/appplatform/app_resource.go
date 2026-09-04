@@ -4,7 +4,7 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AppResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -21,15 +21,15 @@ type AppResource_Identity struct {
 
 type AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskProperties struct {
 	EnableSubPath any
-	MountOptions any
-	MountPath any
-	ReadOnly any
-	Type any
+	MountOptions  any
+	MountPath     any
+	ReadOnly      any
+	Type          any
 }
 
 type AppResource_Properties_CustomPersistentDisks struct {
 	CustomPersistentDiskProperties any
-	StorageId any
+	StorageId                      any
 }
 
 type AppResource_Properties_IngressSettings_ClientAuth struct {
@@ -54,7 +54,7 @@ type AppResource_Properties_IngressSettings struct {
 
 type AppResource_Properties_LoadedCertificates struct {
 	LoadTrustStore any
-	ResourceId any
+	ResourceId     any
 }
 
 type AppResource_Properties_PersistentDisk struct {
@@ -110,115 +110,115 @@ type AppResource_Properties struct {
 }
 
 var AppResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var AppResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: AppResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   AppResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskPropertiesFields = ubx.FieldMap{
-		"EnableSubPath": ubx.FieldSpec{WireName: "enable_sub_path"},
-		"MountOptions": ubx.FieldSpec{WireName: "mount_options"},
-		"MountPath": ubx.FieldSpec{WireName: "mount_path"},
-		"ReadOnly": ubx.FieldSpec{WireName: "read_only"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"EnableSubPath": ubx.FieldSpec{WireName: "enable_sub_path"},
+	"MountOptions":  ubx.FieldSpec{WireName: "mount_options"},
+	"MountPath":     ubx.FieldSpec{WireName: "mount_path"},
+	"ReadOnly":      ubx.FieldSpec{WireName: "read_only"},
+	"Type":          ubx.FieldSpec{WireName: "type"},
+}
 
 var AppResource_Properties_CustomPersistentDisksFields = ubx.FieldMap{
-		"CustomPersistentDiskProperties": ubx.FieldSpec{
-			WireName: "custom_persistent_disk_properties",
-			Kind: "object",
-			Fields: AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskPropertiesFields,
-		},
-		"StorageId": ubx.FieldSpec{WireName: "storage_id"},
-	}
+	"CustomPersistentDiskProperties": ubx.FieldSpec{
+		WireName: "custom_persistent_disk_properties",
+		Kind:     "object",
+		Fields:   AppResource_Properties_CustomPersistentDisks_CustomPersistentDiskPropertiesFields,
+	},
+	"StorageId": ubx.FieldSpec{WireName: "storage_id"},
+}
 
 var AppResource_Properties_IngressSettings_ClientAuthFields = ubx.FieldMap{
-		"Certificates": ubx.FieldSpec{WireName: "certificates"},
-	}
+	"Certificates": ubx.FieldSpec{WireName: "certificates"},
+}
 
 var AppResource_Properties_IngressSettingsFields = ubx.FieldMap{
-		"BackendProtocol": ubx.FieldSpec{WireName: "backend_protocol"},
-		"ClientAuth": ubx.FieldSpec{
-			WireName: "client_auth",
-			Kind: "object",
-			Fields: AppResource_Properties_IngressSettings_ClientAuthFields,
-		},
-		"ReadTimeoutInSeconds": ubx.FieldSpec{WireName: "read_timeout_in_seconds"},
-		"SendTimeoutInSeconds": ubx.FieldSpec{WireName: "send_timeout_in_seconds"},
-		"SessionAffinity": ubx.FieldSpec{WireName: "session_affinity"},
-		"SessionCookieMaxAge": ubx.FieldSpec{WireName: "session_cookie_max_age"},
-	}
+	"BackendProtocol": ubx.FieldSpec{WireName: "backend_protocol"},
+	"ClientAuth": ubx.FieldSpec{
+		WireName: "client_auth",
+		Kind:     "object",
+		Fields:   AppResource_Properties_IngressSettings_ClientAuthFields,
+	},
+	"ReadTimeoutInSeconds": ubx.FieldSpec{WireName: "read_timeout_in_seconds"},
+	"SendTimeoutInSeconds": ubx.FieldSpec{WireName: "send_timeout_in_seconds"},
+	"SessionAffinity":      ubx.FieldSpec{WireName: "session_affinity"},
+	"SessionCookieMaxAge":  ubx.FieldSpec{WireName: "session_cookie_max_age"},
+}
 
 var AppResource_Properties_LoadedCertificatesFields = ubx.FieldMap{
-		"LoadTrustStore": ubx.FieldSpec{WireName: "load_trust_store"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"LoadTrustStore": ubx.FieldSpec{WireName: "load_trust_store"},
+	"ResourceId":     ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var AppResource_Properties_PersistentDiskFields = ubx.FieldMap{
-		"MountPath": ubx.FieldSpec{WireName: "mount_path"},
-		"SizeInGb": ubx.FieldSpec{WireName: "size_in_gb"},
-		"UsedInGb": ubx.FieldSpec{WireName: "used_in_gb"},
-	}
+	"MountPath": ubx.FieldSpec{WireName: "mount_path"},
+	"SizeInGb":  ubx.FieldSpec{WireName: "size_in_gb"},
+	"UsedInGb":  ubx.FieldSpec{WireName: "used_in_gb"},
+}
 
 var AppResource_Properties_TemporaryDiskFields = ubx.FieldMap{
-		"MountPath": ubx.FieldSpec{WireName: "mount_path"},
-		"SizeInGb": ubx.FieldSpec{WireName: "size_in_gb"},
-	}
+	"MountPath": ubx.FieldSpec{WireName: "mount_path"},
+	"SizeInGb":  ubx.FieldSpec{WireName: "size_in_gb"},
+}
 
 var AppResource_Properties_VnetAddonsFields = ubx.FieldMap{
-		"PublicEndpoint": ubx.FieldSpec{WireName: "public_endpoint"},
-		"PublicEndpointUrl": ubx.FieldSpec{WireName: "public_endpoint_url"},
-	}
+	"PublicEndpoint":    ubx.FieldSpec{WireName: "public_endpoint"},
+	"PublicEndpointUrl": ubx.FieldSpec{WireName: "public_endpoint_url"},
+}
 
 var AppResource_PropertiesFields = ubx.FieldMap{
-		"AddonConfigs": ubx.FieldSpec{WireName: "addon_configs"},
-		"CustomPersistentDisks": ubx.FieldSpec{
-			WireName: "custom_persistent_disks",
-			Kind: "list",
-			Fields: AppResource_Properties_CustomPersistentDisksFields,
-		},
-		"EnableEndToEndTls": ubx.FieldSpec{WireName: "enable_end_to_end_tls"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"HttpsOnly": ubx.FieldSpec{WireName: "https_only"},
-		"IngressSettings": ubx.FieldSpec{
-			WireName: "ingress_settings",
-			Kind: "object",
-			Fields: AppResource_Properties_IngressSettingsFields,
-		},
-		"LoadedCertificates": ubx.FieldSpec{
-			WireName: "loaded_certificates",
-			Kind: "list",
-			Fields: AppResource_Properties_LoadedCertificatesFields,
-		},
-		"PersistentDisk": ubx.FieldSpec{
-			WireName: "persistent_disk",
-			Kind: "object",
-			Fields: AppResource_Properties_PersistentDiskFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Public": ubx.FieldSpec{WireName: "public"},
-		"TemporaryDisk": ubx.FieldSpec{
-			WireName: "temporary_disk",
-			Kind: "object",
-			Fields: AppResource_Properties_TemporaryDiskFields,
-		},
-		"Url": ubx.FieldSpec{WireName: "url"},
-		"VnetAddons": ubx.FieldSpec{
-			WireName: "vnet_addons",
-			Kind: "object",
-			Fields: AppResource_Properties_VnetAddonsFields,
-		},
-	}
+	"AddonConfigs": ubx.FieldSpec{WireName: "addon_configs"},
+	"CustomPersistentDisks": ubx.FieldSpec{
+		WireName: "custom_persistent_disks",
+		Kind:     "list",
+		Fields:   AppResource_Properties_CustomPersistentDisksFields,
+	},
+	"EnableEndToEndTls": ubx.FieldSpec{WireName: "enable_end_to_end_tls"},
+	"Fqdn":              ubx.FieldSpec{WireName: "fqdn"},
+	"HttpsOnly":         ubx.FieldSpec{WireName: "https_only"},
+	"IngressSettings": ubx.FieldSpec{
+		WireName: "ingress_settings",
+		Kind:     "object",
+		Fields:   AppResource_Properties_IngressSettingsFields,
+	},
+	"LoadedCertificates": ubx.FieldSpec{
+		WireName: "loaded_certificates",
+		Kind:     "list",
+		Fields:   AppResource_Properties_LoadedCertificatesFields,
+	},
+	"PersistentDisk": ubx.FieldSpec{
+		WireName: "persistent_disk",
+		Kind:     "object",
+		Fields:   AppResource_Properties_PersistentDiskFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Public":            ubx.FieldSpec{WireName: "public"},
+	"TemporaryDisk": ubx.FieldSpec{
+		WireName: "temporary_disk",
+		Kind:     "object",
+		Fields:   AppResource_Properties_TemporaryDiskFields,
+	},
+	"Url": ubx.FieldSpec{WireName: "url"},
+	"VnetAddons": ubx.FieldSpec{
+		WireName: "vnet_addons",
+		Kind:     "object",
+		Fields:   AppResource_Properties_VnetAddonsFields,
+	},
+}
 
 type AppResourceConfig struct {
 	// Managed identity properties retrieved from ARM request headers.
@@ -243,14 +243,14 @@ var AppResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: AppResource_IdentityFields,
+			Kind:     "object",
+			Fields:   AppResource_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AppResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   AppResource_PropertiesFields,
 		},
 	},
 }

@@ -5,64 +5,64 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFunctionAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_LinuxRuntimeSettings_AppInsightsSettings struct {
 	IsDefaultOff any
-	IsSupported any
+	IsSupported  any
 }
 
 type OpenapiFunctionAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_LinuxRuntimeSettings_GitHubActionSettings struct {
-	IsSupported any
+	IsSupported      any
 	SupportedVersion any
 }
 
 type OpenapiFunctionAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_LinuxRuntimeSettings_SiteConfigPropertiesDictionary struct {
-	JavaVersion any
-	LinuxFxVersion any
-	PowerShellVersion any
+	JavaVersion           any
+	LinuxFxVersion        any
+	PowerShellVersion     any
 	Use32BitWorkerProcess any
 }
 
 type OpenapiFunctionAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings_LinuxRuntimeSettings struct {
-	AppInsightsSettings any
-	AppSettingsDictionary any
-	EndOfLifeDate any
-	GitHubActionSettings any
-	IsAutoUpdate any
-	IsDefault any
-	IsDeprecated any
-	IsEarlyAccess any
-	IsHidden any
-	IsPreview any
-	RemoteDebuggingSupported any
-	RuntimeVersion any
-	SiteConfigPropertiesDictionary any
+	AppInsightsSettings                 any
+	AppSettingsDictionary               any
+	EndOfLifeDate                       any
+	GitHubActionSettings                any
+	IsAutoUpdate                        any
+	IsDefault                           any
+	IsDeprecated                        any
+	IsEarlyAccess                       any
+	IsHidden                            any
+	IsPreview                           any
+	RemoteDebuggingSupported            any
+	RuntimeVersion                      any
+	SiteConfigPropertiesDictionary      any
 	SupportedFunctionsExtensionVersions any
 }
 
 type OpenapiFunctionAppStack_Value_Properties_MajorVersions_MinorVersions_StackSettings struct {
-	LinuxRuntimeSettings any
+	LinuxRuntimeSettings   any
 	WindowsRuntimeSettings any
 }
 
 type OpenapiFunctionAppStack_Value_Properties_MajorVersions_MinorVersions struct {
-	DisplayText any
+	DisplayText   any
 	StackSettings any
-	Value any
+	Value         any
 }
 
 type OpenapiFunctionAppStack_Value_Properties_MajorVersions struct {
-	DisplayText any
+	DisplayText   any
 	MinorVersions any
-	Value any
+	Value         any
 }
 
 type OpenapiFunctionAppStack_Value_Properties struct {
-	DisplayText any
+	DisplayText   any
 	MajorVersions any
-	PreferredOs any
-	Value any
+	PreferredOs   any
+	Value         any
 }
 
 type OpenapiFunctionAppStack_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -72,7 +72,7 @@ type OpenapiFunctionAppStackConfig struct {
 
 type OpenapiFunctionAppStackAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	StackOsType any
 	// The FunctionAppStack items on this page
 	Value any

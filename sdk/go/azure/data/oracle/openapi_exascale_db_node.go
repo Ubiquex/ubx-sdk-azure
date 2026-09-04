@@ -4,19 +4,19 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExascaleDbNode_Value_Properties struct {
-	AdditionalDetails any
-	CpuCoreCount any
-	DbNodeStorageSizeInGbs any
-	FaultDomain any
-	Hostname any
-	LifecycleState any
-	MaintenanceType any
-	MemorySizeInGbs any
-	Ocid any
-	SoftwareStorageSizeInGb any
-	TimeMaintenanceWindowEnd any
+	AdditionalDetails          any
+	CpuCoreCount               any
+	DbNodeStorageSizeInGbs     any
+	FaultDomain                any
+	Hostname                   any
+	LifecycleState             any
+	MaintenanceType            any
+	MemorySizeInGbs            any
+	Ocid                       any
+	SoftwareStorageSizeInGb    any
+	TimeMaintenanceWindowEnd   any
 	TimeMaintenanceWindowStart any
-	TotalCpuCoreCount any
+	TotalCpuCoreCount          any
 }
 
 type OpenapiExascaleDbNode_Value struct {

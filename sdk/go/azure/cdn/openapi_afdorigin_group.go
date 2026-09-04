@@ -41,7 +41,7 @@ type OpenapiAfdoriginGroup_Properties_LoadBalancingSettings struct {
 
 type OpenapiAfdoriginGroup_Properties struct {
 	// The JSON object that contains the properties of the origin authentication settings.
-	Authentication any
+	Authentication   any
 	DeploymentStatus any
 	// The JSON object that contains the properties to send health probes to origin.
 	HealthProbeSettings any
@@ -58,55 +58,55 @@ type OpenapiAfdoriginGroup_Properties struct {
 }
 
 var OpenapiAfdoriginGroup_Properties_Authentication_UserAssignedIdentityFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiAfdoriginGroup_Properties_AuthenticationFields = ubx.FieldMap{
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"TokenDestinationHeader": ubx.FieldSpec{WireName: "token_destination_header"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentity": ubx.FieldSpec{
-			WireName: "user_assigned_identity",
-			Kind: "object",
-			Fields: OpenapiAfdoriginGroup_Properties_Authentication_UserAssignedIdentityFields,
-		},
-	}
+	"Scope":                  ubx.FieldSpec{WireName: "scope"},
+	"TokenDestinationHeader": ubx.FieldSpec{WireName: "token_destination_header"},
+	"Type":                   ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentity": ubx.FieldSpec{
+		WireName: "user_assigned_identity",
+		Kind:     "object",
+		Fields:   OpenapiAfdoriginGroup_Properties_Authentication_UserAssignedIdentityFields,
+	},
+}
 
 var OpenapiAfdoriginGroup_Properties_HealthProbeSettingsFields = ubx.FieldMap{
-		"ProbeIntervalInSeconds": ubx.FieldSpec{WireName: "probe_interval_in_seconds"},
-		"ProbePath": ubx.FieldSpec{WireName: "probe_path"},
-		"ProbeProtocol": ubx.FieldSpec{WireName: "probe_protocol"},
-		"ProbeRequestType": ubx.FieldSpec{WireName: "probe_request_type"},
-	}
+	"ProbeIntervalInSeconds": ubx.FieldSpec{WireName: "probe_interval_in_seconds"},
+	"ProbePath":              ubx.FieldSpec{WireName: "probe_path"},
+	"ProbeProtocol":          ubx.FieldSpec{WireName: "probe_protocol"},
+	"ProbeRequestType":       ubx.FieldSpec{WireName: "probe_request_type"},
+}
 
 var OpenapiAfdoriginGroup_Properties_LoadBalancingSettingsFields = ubx.FieldMap{
-		"AdditionalLatencyInMilliseconds": ubx.FieldSpec{WireName: "additional_latency_in_milliseconds"},
-		"SampleSize": ubx.FieldSpec{WireName: "sample_size"},
-		"SuccessfulSamplesRequired": ubx.FieldSpec{WireName: "successful_samples_required"},
-	}
+	"AdditionalLatencyInMilliseconds": ubx.FieldSpec{WireName: "additional_latency_in_milliseconds"},
+	"SampleSize":                      ubx.FieldSpec{WireName: "sample_size"},
+	"SuccessfulSamplesRequired":       ubx.FieldSpec{WireName: "successful_samples_required"},
+}
 
 var OpenapiAfdoriginGroup_PropertiesFields = ubx.FieldMap{
-		"Authentication": ubx.FieldSpec{
-			WireName: "authentication",
-			Kind: "object",
-			Fields: OpenapiAfdoriginGroup_Properties_AuthenticationFields,
-		},
-		"DeploymentStatus": ubx.FieldSpec{WireName: "deployment_status"},
-		"HealthProbeSettings": ubx.FieldSpec{
-			WireName: "health_probe_settings",
-			Kind: "object",
-			Fields: OpenapiAfdoriginGroup_Properties_HealthProbeSettingsFields,
-		},
-		"LoadBalancingSettings": ubx.FieldSpec{
-			WireName: "load_balancing_settings",
-			Kind: "object",
-			Fields: OpenapiAfdoriginGroup_Properties_LoadBalancingSettingsFields,
-		},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SessionAffinityState": ubx.FieldSpec{WireName: "session_affinity_state"},
-		"TrafficRestorationTimeToHealedOrNewEndpointsInMinutes": ubx.FieldSpec{WireName: "traffic_restoration_time_to_healed_or_new_endpoints_in_minutes"},
-	}
+	"Authentication": ubx.FieldSpec{
+		WireName: "authentication",
+		Kind:     "object",
+		Fields:   OpenapiAfdoriginGroup_Properties_AuthenticationFields,
+	},
+	"DeploymentStatus": ubx.FieldSpec{WireName: "deployment_status"},
+	"HealthProbeSettings": ubx.FieldSpec{
+		WireName: "health_probe_settings",
+		Kind:     "object",
+		Fields:   OpenapiAfdoriginGroup_Properties_HealthProbeSettingsFields,
+	},
+	"LoadBalancingSettings": ubx.FieldSpec{
+		WireName: "load_balancing_settings",
+		Kind:     "object",
+		Fields:   OpenapiAfdoriginGroup_Properties_LoadBalancingSettingsFields,
+	},
+	"ProfileName":          ubx.FieldSpec{WireName: "profile_name"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"SessionAffinityState": ubx.FieldSpec{WireName: "session_affinity_state"},
+	"TrafficRestorationTimeToHealedOrNewEndpointsInMinutes": ubx.FieldSpec{WireName: "traffic_restoration_time_to_healed_or_new_endpoints_in_minutes"},
+}
 
 type OpenapiAfdoriginGroupConfig struct {
 	// The JSON object that contains the properties of the origin group.
@@ -123,8 +123,8 @@ var OpenapiAfdoriginGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAfdoriginGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAfdoriginGroup_PropertiesFields,
 		},
 	},
 }

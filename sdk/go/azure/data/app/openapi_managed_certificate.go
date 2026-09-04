@@ -5,10 +5,10 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedCertificate_Value_Properties struct {
 	DomainControlValidation any
-	Error any
-	ProvisioningState any
-	SubjectName any
-	ValidationToken any
+	Error                   any
+	ProvisioningState       any
+	SubjectName             any
+	ValidationToken         any
 }
 
 type OpenapiManagedCertificate_Value struct {

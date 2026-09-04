@@ -4,14 +4,14 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BindingResource_Value_Properties struct {
-	BindingParameters any
-	CreatedAt any
+	BindingParameters   any
+	CreatedAt           any
 	GeneratedProperties any
-	Key any
-	ResourceId any
-	ResourceName any
-	ResourceType any
-	UpdatedAt any
+	Key                 any
+	ResourceId          any
+	ResourceName        any
+	ResourceType        any
+	UpdatedAt           any
 }
 
 type BindingResource_Value struct {
@@ -19,21 +19,21 @@ type BindingResource_Value struct {
 }
 
 type BindingResourceConfig struct {
-	ApiVersion any
-	AppName any
+	ApiVersion        any
+	AppName           any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type BindingResourceAttrs struct {
 	ApiVersion any
-	AppName any
+	AppName    any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of Binding resources
 	Value any
 }
@@ -41,10 +41,10 @@ type BindingResourceAttrs struct {
 var BindingResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_binding_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"AppName": ubx.FieldSpec{WireName: "app_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"AppName":           ubx.FieldSpec{WireName: "app_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

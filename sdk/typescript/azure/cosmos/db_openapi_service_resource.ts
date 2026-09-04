@@ -2,18 +2,24 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface DbOpenapiServiceResource_Properties {
+  /** Time of the last state change (ISO-8601 format). */
+  creationTime?: string | Computed<string>;
   /** Instance count for the service. */
   instanceCount?: number | Computed<number>;
   /** Instance type for the service. */
   instanceSize?: string | Computed<string>;
   /** ServiceType for the service. */
   serviceType: string | Computed<string>;
+  /** Describes the status of a service. */
+  status?: string | Computed<string>;
 }
 
 const DbOpenapiServiceResource_PropertiesFields: FieldMap = {
+  creationTime: "creation_time",
   instanceCount: "instance_count",
   instanceSize: "instance_size",
   serviceType: "service_type",
+  status: "status",
 };
 
 export interface DbOpenapiServiceResourceConfig {

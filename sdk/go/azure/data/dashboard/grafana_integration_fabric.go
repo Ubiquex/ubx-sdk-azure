@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GrafanaIntegrationFabric_Value_Properties struct {
 	DataSourceResourceId any
-	ProvisioningState any
-	Scenarios any
-	TargetResourceId any
+	ProvisioningState    any
+	Scenarios            any
+	TargetResourceId     any
 }
 
 type GrafanaIntegrationFabric_Value struct {
@@ -22,7 +22,7 @@ type GrafanaIntegrationFabricAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The IntegrationFabric items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

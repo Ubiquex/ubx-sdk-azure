@@ -33,20 +33,20 @@ type OpenapiFunctionEnvelope_Properties struct {
 }
 
 var OpenapiFunctionEnvelope_PropertiesFields = ubx.FieldMap{
-		"Config": ubx.FieldSpec{WireName: "config"},
-		"ConfigHref": ubx.FieldSpec{WireName: "config_href"},
-		"Files": ubx.FieldSpec{WireName: "files"},
-		"FunctionAppId": ubx.FieldSpec{WireName: "function_app_id"},
-		"Href": ubx.FieldSpec{WireName: "href"},
-		"InvokeUrlTemplate": ubx.FieldSpec{WireName: "invoke_url_template"},
-		"IsDisabled": ubx.FieldSpec{WireName: "is_disabled"},
-		"Language": ubx.FieldSpec{WireName: "language"},
-		"ScriptHref": ubx.FieldSpec{WireName: "script_href"},
-		"ScriptRootPathHref": ubx.FieldSpec{WireName: "script_root_path_href"},
-		"SecretsFileHref": ubx.FieldSpec{WireName: "secrets_file_href"},
-		"TestData": ubx.FieldSpec{WireName: "test_data"},
-		"TestDataHref": ubx.FieldSpec{WireName: "test_data_href"},
-	}
+	"Config":             ubx.FieldSpec{WireName: "config"},
+	"ConfigHref":         ubx.FieldSpec{WireName: "config_href"},
+	"Files":              ubx.FieldSpec{WireName: "files"},
+	"FunctionAppId":      ubx.FieldSpec{WireName: "function_app_id"},
+	"Href":               ubx.FieldSpec{WireName: "href"},
+	"InvokeUrlTemplate":  ubx.FieldSpec{WireName: "invoke_url_template"},
+	"IsDisabled":         ubx.FieldSpec{WireName: "is_disabled"},
+	"Language":           ubx.FieldSpec{WireName: "language"},
+	"ScriptHref":         ubx.FieldSpec{WireName: "script_href"},
+	"ScriptRootPathHref": ubx.FieldSpec{WireName: "script_root_path_href"},
+	"SecretsFileHref":    ubx.FieldSpec{WireName: "secrets_file_href"},
+	"TestData":           ubx.FieldSpec{WireName: "test_data"},
+	"TestDataHref":       ubx.FieldSpec{WireName: "test_data_href"},
+}
 
 type OpenapiFunctionEnvelopeConfig struct {
 	// Kind of resource.
@@ -72,8 +72,8 @@ var OpenapiFunctionEnvelope = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiFunctionEnvelope_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiFunctionEnvelope_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

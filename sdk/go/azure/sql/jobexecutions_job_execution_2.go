@@ -51,6 +51,5 @@ type JobexecutionsJobExecution2Attrs struct {
 
 var JobexecutionsJobExecution2 = ubx.ResourceBinding{
 	WireType: "azure_sql_jobexecutions_job_execution_2",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

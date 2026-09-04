@@ -4,36 +4,36 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProfile_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiProfile_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiProfile_Value_Properties_LogScrubbing_ScrubbingRules struct {
-	MatchVariable any
-	Selector any
+	MatchVariable         any
+	Selector              any
 	SelectorMatchOperator any
-	State any
+	State                 any
 }
 
 type OpenapiProfile_Value_Properties_LogScrubbing struct {
 	ScrubbingRules any
-	State any
+	State          any
 }
 
 type OpenapiProfile_Value_Properties struct {
-	ExtendedProperties any
-	FrontDoorId any
-	LogScrubbing any
+	ExtendedProperties           any
+	FrontDoorId                  any
+	LogScrubbing                 any
 	OriginResponseTimeoutSeconds any
-	ProvisioningState any
-	ResourceState any
+	ProvisioningState            any
+	ResourceState                any
 }
 
 type OpenapiProfile_Value_Sku struct {
@@ -41,10 +41,10 @@ type OpenapiProfile_Value_Sku struct {
 }
 
 type OpenapiProfile_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiProfileConfig struct {
@@ -59,6 +59,5 @@ type OpenapiProfileAttrs struct {
 
 var OpenapiProfile = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_profile",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -16,8 +16,8 @@ type VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_Propagated
 }
 
 type VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutes struct {
-	AddressPrefixes any
-	Name any
+	AddressPrefixes  any
+	Name             any
 	NextHopIpAddress any
 }
 
@@ -70,93 +70,93 @@ type VirtualwanExpressRouteConnection_Properties struct {
 }
 
 var VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields = ubx.FieldMap{
-		"Ids": ubx.FieldSpec{
-			WireName: "ids",
-			Kind: "list",
-			Fields: VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
-		},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-	}
+	"Ids": ubx.FieldSpec{
+		WireName: "ids",
+		Kind:     "list",
+		Fields:   VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
+	},
+	"Labels": ubx.FieldSpec{WireName: "labels"},
+}
 
 var VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-	}
+	"AddressPrefixes":  ubx.FieldSpec{WireName: "address_prefixes"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
+}
 
 var VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields = ubx.FieldMap{
-		"PropagateStaticRoutes": ubx.FieldSpec{WireName: "propagate_static_routes"},
-		"VnetLocalRouteOverrideCriteria": ubx.FieldSpec{WireName: "vnet_local_route_override_criteria"},
-	}
+	"PropagateStaticRoutes":          ubx.FieldSpec{WireName: "propagate_static_routes"},
+	"VnetLocalRouteOverrideCriteria": ubx.FieldSpec{WireName: "vnet_local_route_override_criteria"},
+}
 
 var VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutesFields = ubx.FieldMap{
-		"BgpConnections": ubx.FieldSpec{
-			WireName: "bgp_connections",
-			Kind: "list",
-			Fields: VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
-		},
-		"StaticRoutes": ubx.FieldSpec{
-			WireName: "static_routes",
-			Kind: "list",
-			Fields: VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields,
-		},
-		"StaticRoutesConfig": ubx.FieldSpec{
-			WireName: "static_routes_config",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields,
-		},
-	}
+	"BgpConnections": ubx.FieldSpec{
+		WireName: "bgp_connections",
+		Kind:     "list",
+		Fields:   VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
+	},
+	"StaticRoutes": ubx.FieldSpec{
+		WireName: "static_routes",
+		Kind:     "list",
+		Fields:   VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields,
+	},
+	"StaticRoutesConfig": ubx.FieldSpec{
+		WireName: "static_routes_config",
+		Kind:     "object",
+		Fields:   VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields,
+	},
+}
 
 var VirtualwanExpressRouteConnection_Properties_RoutingConfigurationFields = ubx.FieldMap{
-		"AssociatedRouteTable": ubx.FieldSpec{
-			WireName: "associated_route_table",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
-		},
-		"InboundRouteMap": ubx.FieldSpec{
-			WireName: "inbound_route_map",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
-		},
-		"OutboundRouteMap": ubx.FieldSpec{
-			WireName: "outbound_route_map",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
-		},
-		"PropagatedRouteTables": ubx.FieldSpec{
-			WireName: "propagated_route_tables",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields,
-		},
-		"VnetRoutes": ubx.FieldSpec{
-			WireName: "vnet_routes",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutesFields,
-		},
-	}
+	"AssociatedRouteTable": ubx.FieldSpec{
+		WireName: "associated_route_table",
+		Kind:     "object",
+		Fields:   VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
+	},
+	"InboundRouteMap": ubx.FieldSpec{
+		WireName: "inbound_route_map",
+		Kind:     "object",
+		Fields:   VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
+	},
+	"OutboundRouteMap": ubx.FieldSpec{
+		WireName: "outbound_route_map",
+		Kind:     "object",
+		Fields:   VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
+	},
+	"PropagatedRouteTables": ubx.FieldSpec{
+		WireName: "propagated_route_tables",
+		Kind:     "object",
+		Fields:   VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields,
+	},
+	"VnetRoutes": ubx.FieldSpec{
+		WireName: "vnet_routes",
+		Kind:     "object",
+		Fields:   VirtualwanExpressRouteConnection_Properties_RoutingConfiguration_VnetRoutesFields,
+	},
+}
 
 var VirtualwanExpressRouteConnection_PropertiesFields = ubx.FieldMap{
-		"AuthorizationKey": ubx.FieldSpec{WireName: "authorization_key"},
-		"EnableInternetSecurity": ubx.FieldSpec{WireName: "enable_internet_security"},
-		"EnablePrivateLinkFastPath": ubx.FieldSpec{WireName: "enable_private_link_fast_path"},
-		"ExpressRouteCircuitPeering": ubx.FieldSpec{
-			WireName: "express_route_circuit_peering",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
-		},
-		"ExpressRouteGatewayBypass": ubx.FieldSpec{WireName: "express_route_gateway_bypass"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoutingConfiguration": ubx.FieldSpec{
-			WireName: "routing_configuration",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_Properties_RoutingConfigurationFields,
-		},
-		"RoutingWeight": ubx.FieldSpec{WireName: "routing_weight"},
-	}
+	"AuthorizationKey":          ubx.FieldSpec{WireName: "authorization_key"},
+	"EnableInternetSecurity":    ubx.FieldSpec{WireName: "enable_internet_security"},
+	"EnablePrivateLinkFastPath": ubx.FieldSpec{WireName: "enable_private_link_fast_path"},
+	"ExpressRouteCircuitPeering": ubx.FieldSpec{
+		WireName: "express_route_circuit_peering",
+		Kind:     "object",
+		Fields:   VirtualwanExpressRouteConnection_Properties_ExpressRouteCircuitPeeringFields,
+	},
+	"ExpressRouteGatewayBypass": ubx.FieldSpec{WireName: "express_route_gateway_bypass"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoutingConfiguration": ubx.FieldSpec{
+		WireName: "routing_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanExpressRouteConnection_Properties_RoutingConfigurationFields,
+	},
+	"RoutingWeight": ubx.FieldSpec{WireName: "routing_weight"},
+}
 
 type VirtualwanExpressRouteConnectionConfig struct {
 	// The name of the resource.
@@ -178,8 +178,8 @@ var VirtualwanExpressRouteConnection = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanExpressRouteConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanExpressRouteConnection_PropertiesFields,
 		},
 	},
 }

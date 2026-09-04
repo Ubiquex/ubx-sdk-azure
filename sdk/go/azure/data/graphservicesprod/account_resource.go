@@ -4,15 +4,15 @@ package graphservicesprod
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AccountResource_Value_Properties struct {
-	AppId any
-	BillingPlanId any
+	AppId             any
+	BillingPlanId     any
 	ProvisioningState any
 }
 
 type AccountResource_Value_SystemData struct {
-	CreatedAt any
-	CreatedByType any
-	LastModifiedAt any
+	CreatedAt          any
+	CreatedByType      any
+	LastModifiedAt     any
 	LastModifiedByType any
 }
 
@@ -33,6 +33,5 @@ type AccountResourceAttrs struct {
 
 var AccountResource = ubx.DataSourceBinding{
 	WireType: "azure_graphservicesprod_account_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

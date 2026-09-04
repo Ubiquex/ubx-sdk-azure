@@ -4,7 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerSecurityUserRule_Properties_Destinations struct {
-	AddressPrefix any
+	AddressPrefix     any
 	AddressPrefixType any
 }
 
@@ -45,44 +45,33 @@ type NetworkmanagerSecurityUserRule_SystemData struct {
 }
 
 var NetworkmanagerSecurityUserRule_Properties_DestinationsFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixType": ubx.FieldSpec{WireName: "address_prefix_type"},
-	}
+	"AddressPrefix":     ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixType": ubx.FieldSpec{WireName: "address_prefix_type"},
+}
 
 var NetworkmanagerSecurityUserRule_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
-		"Destinations": ubx.FieldSpec{
-			WireName: "destinations",
-			Kind: "list",
-			Fields: NetworkmanagerSecurityUserRule_Properties_DestinationsFields,
-		},
-		"Direction": ubx.FieldSpec{WireName: "direction"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
-		"Sources": ubx.FieldSpec{
-			WireName: "sources",
-			Kind: "list",
-			Fields: NetworkmanagerSecurityUserRule_Properties_DestinationsFields,
-		},
-	}
-
-var NetworkmanagerSecurityUserRule_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
+	"Destinations": ubx.FieldSpec{
+		WireName: "destinations",
+		Kind:     "list",
+		Fields:   NetworkmanagerSecurityUserRule_Properties_DestinationsFields,
+	},
+	"Direction":         ubx.FieldSpec{WireName: "direction"},
+	"Protocol":          ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SourcePortRanges":  ubx.FieldSpec{WireName: "source_port_ranges"},
+	"Sources": ubx.FieldSpec{
+		WireName: "sources",
+		Kind:     "list",
+		Fields:   NetworkmanagerSecurityUserRule_Properties_DestinationsFields,
+	},
+}
 
 type NetworkmanagerSecurityUserRuleConfig struct {
 	// Security rule resource.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerSecurityUserRuleAttrs struct {
@@ -97,13 +86,8 @@ var NetworkmanagerSecurityUserRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerSecurityUserRule_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerSecurityUserRule_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerSecurityUserRule_PropertiesFields,
 		},
 	},
 }

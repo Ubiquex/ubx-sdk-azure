@@ -7,14 +7,14 @@ type SqlpoolSqlPoolTable_Value struct {
 }
 
 type SqlpoolSqlPoolTableConfig struct {
-	SchemaName any
+	SchemaName  any
 	SqlPoolName any
 }
 
 type SqlpoolSqlPoolTableAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
-	SchemaName any
+	NextLink    any
+	SchemaName  any
 	SqlPoolName any
 	// Array of results.
 	Value any
@@ -23,7 +23,7 @@ type SqlpoolSqlPoolTableAttrs struct {
 var SqlpoolSqlPoolTable = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool_table",
 	Fields: ubx.FieldMap{
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
+		"SchemaName":  ubx.FieldSpec{WireName: "schema_name"},
 		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

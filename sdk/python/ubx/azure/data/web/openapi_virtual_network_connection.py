@@ -9,17 +9,14 @@ import ubx_sdk as ubx
 @dataclasses.dataclass
 class OpenapiVirtualNetworkConnectionConfig:
     name: Any = None
-    vnet_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiVirtualNetworkConnectionAttrs:
     name: Any = None
-    vnet_name: Any = None
 
 OpenapiVirtualNetworkConnection = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_virtual_network_connection",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
-        "vnet_name": ubx.FieldSpec(wire_name="vnet_name"),
     },
 )

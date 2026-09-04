@@ -20,9 +20,143 @@ class ReservationOrderResponse_Properties_AppliedScopeProperties:
     tenant_id: Any = None
 
 @dataclasses.dataclass
-class ReservationOrderResponse_Properties_ReservedResourceProperties:
-    # Turning this on will apply the reservation discount to other VMs in the same VM size group. Only specify for VirtualMachines reserved resource type.
+class ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal:
+    amount: Any = None
+    # The ISO 4217 3-letter currency code for the currency used by this purchase record.
+    currency_code: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfo:
+    message: Any = None
+    status_code: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_PlanInformation_Transactions:
+    billing_account: Any = None
+    billing_currency_total: Any = None
+    due_date: Any = None
+    extended_status_info: Any = None
+    payment_date: Any = None
+    pricing_currency_total: Any = None
+    status: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_PlanInformation:
+    # For recurring billing plans, indicates the date when next payment will be processed. Null when total is paid off.
+    next_payment_due_date: Any = None
+    # Pricing information containing the amount and the currency code
+    pricing_currency_total: Any = None
+    # Date when the billing plan has started.
+    start_date: Any = None
+    transactions: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_MergeProperties:
+    merge_destination: Any = None
+    merge_sources: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties:
     instance_flexibility: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties:
+    applied_scope_properties: Any = None
+    applied_scope_type: Any = None
+    applied_scopes: Any = None
+    billing_plan: Any = None
+    billing_scope_id: Any = None
+    display_name: Any = None
+    quantity: Any = None
+    renew: Any = None
+    reserved_resource_properties: Any = None
+    reserved_resource_type: Any = None
+    review_date_time: Any = None
+    term: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku:
+    name: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties:
+    location: Any = None
+    properties: Any = None
+    sku: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties:
+    billing_currency_total: Any = None
+    pricing_currency_total: Any = None
+    purchase_properties: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_SplitProperties:
+    split_destinations: Any = None
+    split_source: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_SwapProperties:
+    swap_destination: Any = None
+    swap_source: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_Utilization_Aggregates:
+    grain: Any = None
+    grain_unit: Any = None
+    value: Any = None
+    value_unit: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties_Utilization:
+    aggregates: Any = None
+    trend: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations_Properties:
+    applied_scope_properties: Any = None
+    applied_scope_type: Any = None
+    applied_scopes: Any = None
+    archived: Any = None
+    benefit_start_time: Any = None
+    billing_plan: Any = None
+    billing_scope_id: Any = None
+    capabilities: Any = None
+    display_name: Any = None
+    display_provisioning_state: Any = None
+    effective_date_time: Any = None
+    expiry_date: Any = None
+    expiry_date_time: Any = None
+    extended_status_info: Any = None
+    instance_flexibility: Any = None
+    last_updated_date_time: Any = None
+    merge_properties: Any = None
+    provisioning_state: Any = None
+    provisioning_sub_state: Any = None
+    purchase_date: Any = None
+    purchase_date_time: Any = None
+    quantity: Any = None
+    renew: Any = None
+    renew_destination: Any = None
+    renew_properties: Any = None
+    renew_source: Any = None
+    reserved_resource_type: Any = None
+    review_date_time: Any = None
+    sku_description: Any = None
+    split_properties: Any = None
+    swap_properties: Any = None
+    term: Any = None
+    user_friendly_applied_scope_type: Any = None
+    user_friendly_renew_state: Any = None
+    utilization: Any = None
+
+@dataclasses.dataclass
+class ReservationOrderResponse_Properties_Reservations:
+    etag: Any = None
+    kind: Any = None
+    location: Any = None
+    properties: Any = None
+    sku: Any = None
 
 @dataclasses.dataclass
 class ReservationOrderResponse_Properties:
@@ -32,16 +166,33 @@ class ReservationOrderResponse_Properties:
     applied_scope_type: Any = None
     # List of the subscriptions that the benefit will be applied. Do not specify if AppliedScopeType is Shared. This property will be deprecated and replaced by appliedScopeProperties instead for Single AppliedScopeType.
     applied_scopes: Any = None
+    # This is the DateTime when the reservation benefit started.
+    benefit_start_time: Any = None
     # Represent the billing plans.
     billing_plan: Any = None
     # Subscription that will be charged for purchasing reservation or savings plan
     billing_scope_id: Any = None
+    # This is the DateTime when the reservation was created.
+    created_date_time: Any = None
     # Friendly name of the reservation
     display_name: Any = None
+    # This is the date when the reservation will expire.
+    expiry_date: Any = None
+    # This is the date-time when the reservation will expire.
+    expiry_date_time: Any = None
+    # Total Quantity of the skus purchased in the reservation.
+    original_quantity: Any = None
+    # Information describing the type of billing plan for this reservation.
+    plan_information: Any = None
+    # Represent the current state of the Reservation.
+    provisioning_state: Any = None
     # Quantity of the skus that are part of the reservation.
     quantity: Any = None
     # Setting this to true will automatically purchase a new reservation on the expiration date time.
     renew: Any = None
+    # This is the DateTime when the reservation was initially requested for purchase.
+    request_date_time: Any = None
+    reservations: Any = None
     # Properties specific to each reserved resource type. Not required if not applicable.
     reserved_resource_properties: Any = None
     # The type of the resource that is being reserved. In addition to below types we have also added the following: OpenAIPTU, MDC, Sentinel.
@@ -51,10 +202,6 @@ class ReservationOrderResponse_Properties:
     # Represent the term of reservation.
     term: Any = None
 
-@dataclasses.dataclass
-class ReservationOrderResponse_Sku:
-    name: Any = None
-
 _ReservationOrderResponse_Properties_AppliedScopePropertiesFields = {
     "display_name": ubx.FieldSpec(wire_name="display_name"),
     "management_group_id": ubx.FieldSpec(wire_name="management_group_id"),
@@ -63,11 +210,63 @@ _ReservationOrderResponse_Properties_AppliedScopePropertiesFields = {
     "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
 }
 
-_ReservationOrderResponse_Properties_ReservedResourcePropertiesFields = {
+_ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields = {
+    "amount": ubx.FieldSpec(wire_name="amount"),
+    "currency_code": ubx.FieldSpec(wire_name="currency_code"),
+}
+
+_ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfoFields = {
+    "message": ubx.FieldSpec(wire_name="message"),
+    "status_code": ubx.FieldSpec(wire_name="status_code"),
+}
+
+_ReservationOrderResponse_Properties_PlanInformation_TransactionsFields = {
+    "billing_account": ubx.FieldSpec(wire_name="billing_account"),
+    "billing_currency_total": ubx.FieldSpec(
+        wire_name="billing_currency_total",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+    ),
+    "due_date": ubx.FieldSpec(wire_name="due_date"),
+    "extended_status_info": ubx.FieldSpec(
+        wire_name="extended_status_info",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfoFields,
+    ),
+    "payment_date": ubx.FieldSpec(wire_name="payment_date"),
+    "pricing_currency_total": ubx.FieldSpec(
+        wire_name="pricing_currency_total",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+    ),
+    "status": ubx.FieldSpec(wire_name="status"),
+}
+
+_ReservationOrderResponse_Properties_PlanInformationFields = {
+    "next_payment_due_date": ubx.FieldSpec(wire_name="next_payment_due_date"),
+    "pricing_currency_total": ubx.FieldSpec(
+        wire_name="pricing_currency_total",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+    ),
+    "start_date": ubx.FieldSpec(wire_name="start_date"),
+    "transactions": ubx.FieldSpec(
+        wire_name="transactions",
+        kind="list",
+        fields=_ReservationOrderResponse_Properties_PlanInformation_TransactionsFields,
+    ),
+}
+
+_ReservationOrderResponse_Properties_Reservations_Properties_MergePropertiesFields = {
+    "merge_destination": ubx.FieldSpec(wire_name="merge_destination"),
+    "merge_sources": ubx.FieldSpec(wire_name="merge_sources"),
+}
+
+_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourcePropertiesFields = {
     "instance_flexibility": ubx.FieldSpec(wire_name="instance_flexibility"),
 }
 
-_ReservationOrderResponse_PropertiesFields = {
+_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_PropertiesFields = {
     "applied_scope_properties": ubx.FieldSpec(
         wire_name="applied_scope_properties",
         kind="object",
@@ -83,15 +282,195 @@ _ReservationOrderResponse_PropertiesFields = {
     "reserved_resource_properties": ubx.FieldSpec(
         wire_name="reserved_resource_properties",
         kind="object",
-        fields=_ReservationOrderResponse_Properties_ReservedResourcePropertiesFields,
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourcePropertiesFields,
     ),
     "reserved_resource_type": ubx.FieldSpec(wire_name="reserved_resource_type"),
     "review_date_time": ubx.FieldSpec(wire_name="review_date_time"),
     "term": ubx.FieldSpec(wire_name="term"),
 }
 
-_ReservationOrderResponse_SkuFields = {
+_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_SkuFields = {
     "name": ubx.FieldSpec(wire_name="name"),
+}
+
+_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchasePropertiesFields = {
+    "location": ubx.FieldSpec(wire_name="location"),
+    "properties": ubx.FieldSpec(
+        wire_name="properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_PropertiesFields,
+    ),
+    "sku": ubx.FieldSpec(
+        wire_name="sku",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_SkuFields,
+    ),
+}
+
+_ReservationOrderResponse_Properties_Reservations_Properties_RenewPropertiesFields = {
+    "billing_currency_total": ubx.FieldSpec(
+        wire_name="billing_currency_total",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+    ),
+    "pricing_currency_total": ubx.FieldSpec(
+        wire_name="pricing_currency_total",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+    ),
+    "purchase_properties": ubx.FieldSpec(
+        wire_name="purchase_properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchasePropertiesFields,
+    ),
+}
+
+_ReservationOrderResponse_Properties_Reservations_Properties_SplitPropertiesFields = {
+    "split_destinations": ubx.FieldSpec(wire_name="split_destinations"),
+    "split_source": ubx.FieldSpec(wire_name="split_source"),
+}
+
+_ReservationOrderResponse_Properties_Reservations_Properties_SwapPropertiesFields = {
+    "swap_destination": ubx.FieldSpec(wire_name="swap_destination"),
+    "swap_source": ubx.FieldSpec(wire_name="swap_source"),
+}
+
+_ReservationOrderResponse_Properties_Reservations_Properties_Utilization_AggregatesFields = {
+    "grain": ubx.FieldSpec(wire_name="grain"),
+    "grain_unit": ubx.FieldSpec(wire_name="grain_unit"),
+    "value": ubx.FieldSpec(wire_name="value"),
+    "value_unit": ubx.FieldSpec(wire_name="value_unit"),
+}
+
+_ReservationOrderResponse_Properties_Reservations_Properties_UtilizationFields = {
+    "aggregates": ubx.FieldSpec(
+        wire_name="aggregates",
+        kind="list",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_Utilization_AggregatesFields,
+    ),
+    "trend": ubx.FieldSpec(wire_name="trend"),
+}
+
+_ReservationOrderResponse_Properties_Reservations_PropertiesFields = {
+    "applied_scope_properties": ubx.FieldSpec(
+        wire_name="applied_scope_properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_AppliedScopePropertiesFields,
+    ),
+    "applied_scope_type": ubx.FieldSpec(wire_name="applied_scope_type"),
+    "applied_scopes": ubx.FieldSpec(wire_name="applied_scopes"),
+    "archived": ubx.FieldSpec(wire_name="archived"),
+    "benefit_start_time": ubx.FieldSpec(wire_name="benefit_start_time"),
+    "billing_plan": ubx.FieldSpec(wire_name="billing_plan"),
+    "billing_scope_id": ubx.FieldSpec(wire_name="billing_scope_id"),
+    "capabilities": ubx.FieldSpec(wire_name="capabilities"),
+    "display_name": ubx.FieldSpec(wire_name="display_name"),
+    "display_provisioning_state": ubx.FieldSpec(wire_name="display_provisioning_state"),
+    "effective_date_time": ubx.FieldSpec(wire_name="effective_date_time"),
+    "expiry_date": ubx.FieldSpec(wire_name="expiry_date"),
+    "expiry_date_time": ubx.FieldSpec(wire_name="expiry_date_time"),
+    "extended_status_info": ubx.FieldSpec(
+        wire_name="extended_status_info",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfoFields,
+    ),
+    "instance_flexibility": ubx.FieldSpec(wire_name="instance_flexibility"),
+    "last_updated_date_time": ubx.FieldSpec(wire_name="last_updated_date_time"),
+    "merge_properties": ubx.FieldSpec(
+        wire_name="merge_properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_MergePropertiesFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "provisioning_sub_state": ubx.FieldSpec(wire_name="provisioning_sub_state"),
+    "purchase_date": ubx.FieldSpec(wire_name="purchase_date"),
+    "purchase_date_time": ubx.FieldSpec(wire_name="purchase_date_time"),
+    "quantity": ubx.FieldSpec(wire_name="quantity"),
+    "renew": ubx.FieldSpec(wire_name="renew"),
+    "renew_destination": ubx.FieldSpec(wire_name="renew_destination"),
+    "renew_properties": ubx.FieldSpec(
+        wire_name="renew_properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_RenewPropertiesFields,
+    ),
+    "renew_source": ubx.FieldSpec(wire_name="renew_source"),
+    "reserved_resource_type": ubx.FieldSpec(wire_name="reserved_resource_type"),
+    "review_date_time": ubx.FieldSpec(wire_name="review_date_time"),
+    "sku_description": ubx.FieldSpec(wire_name="sku_description"),
+    "split_properties": ubx.FieldSpec(
+        wire_name="split_properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_SplitPropertiesFields,
+    ),
+    "swap_properties": ubx.FieldSpec(
+        wire_name="swap_properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_SwapPropertiesFields,
+    ),
+    "term": ubx.FieldSpec(wire_name="term"),
+    "user_friendly_applied_scope_type": ubx.FieldSpec(wire_name="user_friendly_applied_scope_type"),
+    "user_friendly_renew_state": ubx.FieldSpec(wire_name="user_friendly_renew_state"),
+    "utilization": ubx.FieldSpec(
+        wire_name="utilization",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_UtilizationFields,
+    ),
+}
+
+_ReservationOrderResponse_Properties_ReservationsFields = {
+    "etag": ubx.FieldSpec(wire_name="etag"),
+    "kind": ubx.FieldSpec(wire_name="kind"),
+    "location": ubx.FieldSpec(wire_name="location"),
+    "properties": ubx.FieldSpec(
+        wire_name="properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_PropertiesFields,
+    ),
+    "sku": ubx.FieldSpec(
+        wire_name="sku",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_SkuFields,
+    ),
+}
+
+_ReservationOrderResponse_PropertiesFields = {
+    "applied_scope_properties": ubx.FieldSpec(
+        wire_name="applied_scope_properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_AppliedScopePropertiesFields,
+    ),
+    "applied_scope_type": ubx.FieldSpec(wire_name="applied_scope_type"),
+    "applied_scopes": ubx.FieldSpec(wire_name="applied_scopes"),
+    "benefit_start_time": ubx.FieldSpec(wire_name="benefit_start_time"),
+    "billing_plan": ubx.FieldSpec(wire_name="billing_plan"),
+    "billing_scope_id": ubx.FieldSpec(wire_name="billing_scope_id"),
+    "created_date_time": ubx.FieldSpec(wire_name="created_date_time"),
+    "display_name": ubx.FieldSpec(wire_name="display_name"),
+    "expiry_date": ubx.FieldSpec(wire_name="expiry_date"),
+    "expiry_date_time": ubx.FieldSpec(wire_name="expiry_date_time"),
+    "original_quantity": ubx.FieldSpec(wire_name="original_quantity"),
+    "plan_information": ubx.FieldSpec(
+        wire_name="plan_information",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_PlanInformationFields,
+    ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
+    "quantity": ubx.FieldSpec(wire_name="quantity"),
+    "renew": ubx.FieldSpec(wire_name="renew"),
+    "request_date_time": ubx.FieldSpec(wire_name="request_date_time"),
+    "reservations": ubx.FieldSpec(
+        wire_name="reservations",
+        kind="list",
+        fields=_ReservationOrderResponse_Properties_ReservationsFields,
+    ),
+    "reserved_resource_properties": ubx.FieldSpec(
+        wire_name="reserved_resource_properties",
+        kind="object",
+        fields=_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourcePropertiesFields,
+    ),
+    "reserved_resource_type": ubx.FieldSpec(wire_name="reserved_resource_type"),
+    "review_date_time": ubx.FieldSpec(wire_name="review_date_time"),
+    "term": ubx.FieldSpec(wire_name="term"),
 }
 
 @dataclasses.dataclass
@@ -125,7 +504,7 @@ ReservationOrderResponse = ubx.ResourceBinding(
         "sku": ubx.FieldSpec(
             wire_name="sku",
             kind="object",
-            fields=_ReservationOrderResponse_SkuFields,
+            fields=_ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_SkuFields,
         ),
     },
 )

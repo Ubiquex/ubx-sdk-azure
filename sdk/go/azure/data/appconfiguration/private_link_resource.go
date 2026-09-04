@@ -4,32 +4,32 @@ package appconfiguration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResource_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type PrivateLinkResource_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type PrivateLinkResourceConfig struct {
-	ApiVersion any
-	ConfigStoreName any
+	ApiVersion        any
+	ConfigStoreName   any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type PrivateLinkResourceAttrs struct {
-	ApiVersion any
+	ApiVersion      any
 	ConfigStoreName any
 	// The URI that can be used to request the next set of paged results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The collection value.
 	Value any
 }
@@ -37,9 +37,9 @@ type PrivateLinkResourceAttrs struct {
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_appconfiguration_private_link_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ConfigStoreName": ubx.FieldSpec{WireName: "config_store_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ConfigStoreName":   ubx.FieldSpec{WireName: "config_store_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

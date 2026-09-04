@@ -4,12 +4,12 @@ package nginx
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxConfigurationResponse_Value_Properties_Files struct {
-	Content any
+	Content     any
 	VirtualPath any
 }
 
 type SwaggerNginxConfigurationResponse_Value_Properties_Package struct {
-	Data any
+	Data           any
 	ProtectedFiles any
 }
 
@@ -19,11 +19,11 @@ type SwaggerNginxConfigurationResponse_Value_Properties_ProtectedFiles struct {
 }
 
 type SwaggerNginxConfigurationResponse_Value_Properties struct {
-	Files any
-	Package any
-	ProtectedFiles any
+	Files             any
+	Package           any
+	ProtectedFiles    any
 	ProvisioningState any
-	RootFile any
+	RootFile          any
 }
 
 type SwaggerNginxConfigurationResponse_Value struct {

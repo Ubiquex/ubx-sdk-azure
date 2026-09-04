@@ -16,7 +16,6 @@ type Image_Properties_SourceVirtualMachine struct {
 }
 
 type Image_Properties_StorageProfile_DataDisks struct {
-	// The logical unit number (LUN) for the data disk, which uniquely identifies the disk within the virtual machine. (AI-inferred)
 	Lun any
 }
 
@@ -40,59 +39,58 @@ type Image_Properties struct {
 	// Specifies the HyperVGeneration Type
 	HyperVgeneration any
 	// The provisioning state.
-	ProvisioningState any
-	// The virtual machine from which this image is created. (AI-inferred)
+	ProvisioningState    any
 	SourceVirtualMachine any
 	// Describes a storage profile.
 	StorageProfile any
 }
 
 var Image_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var Image_Properties_SourceVirtualMachineFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Image_Properties_StorageProfile_DataDisksFields = ubx.FieldMap{
-		"Lun": ubx.FieldSpec{WireName: "lun"},
-	}
+	"Lun": ubx.FieldSpec{WireName: "lun"},
+}
 
 var Image_Properties_StorageProfile_OsDiskFields = ubx.FieldMap{
-		"OsState": ubx.FieldSpec{WireName: "os_state"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-	}
+	"OsState": ubx.FieldSpec{WireName: "os_state"},
+	"OsType":  ubx.FieldSpec{WireName: "os_type"},
+}
 
 var Image_Properties_StorageProfileFields = ubx.FieldMap{
-		"DataDisks": ubx.FieldSpec{
-			WireName: "data_disks",
-			Kind: "list",
-			Fields: Image_Properties_StorageProfile_DataDisksFields,
-		},
-		"OsDisk": ubx.FieldSpec{
-			WireName: "os_disk",
-			Kind: "object",
-			Fields: Image_Properties_StorageProfile_OsDiskFields,
-		},
-		"ZoneResilient": ubx.FieldSpec{WireName: "zone_resilient"},
-	}
+	"DataDisks": ubx.FieldSpec{
+		WireName: "data_disks",
+		Kind:     "list",
+		Fields:   Image_Properties_StorageProfile_DataDisksFields,
+	},
+	"OsDisk": ubx.FieldSpec{
+		WireName: "os_disk",
+		Kind:     "object",
+		Fields:   Image_Properties_StorageProfile_OsDiskFields,
+	},
+	"ZoneResilient": ubx.FieldSpec{WireName: "zone_resilient"},
+}
 
 var Image_PropertiesFields = ubx.FieldMap{
-		"HyperVgeneration": ubx.FieldSpec{WireName: "hyper_vgeneration"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SourceVirtualMachine": ubx.FieldSpec{
-			WireName: "source_virtual_machine",
-			Kind: "object",
-			Fields: Image_Properties_SourceVirtualMachineFields,
-		},
-		"StorageProfile": ubx.FieldSpec{
-			WireName: "storage_profile",
-			Kind: "object",
-			Fields: Image_Properties_StorageProfileFields,
-		},
-	}
+	"HyperVgeneration":  ubx.FieldSpec{WireName: "hyper_vgeneration"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceVirtualMachine": ubx.FieldSpec{
+		WireName: "source_virtual_machine",
+		Kind:     "object",
+		Fields:   Image_Properties_SourceVirtualMachineFields,
+	},
+	"StorageProfile": ubx.FieldSpec{
+		WireName: "storage_profile",
+		Kind:     "object",
+		Fields:   Image_Properties_StorageProfileFields,
+	},
+}
 
 type ImageConfig struct {
 	// The complex type of the extended location.
@@ -113,13 +111,13 @@ var Image = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: Image_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   Image_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Image_PropertiesFields,
+			Kind:     "object",
+			Fields:   Image_PropertiesFields,
 		},
 	},
 }

@@ -4,19 +4,19 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PermissionBinding_Value_Properties struct {
-	ClientGroupName any
-	Description any
-	Permission any
+	ClientGroupName   any
+	Description       any
+	Permission        any
 	ProvisioningState any
-	TopicSpaceName any
+	TopicSpaceName    any
 }
 
 type PermissionBinding_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -26,19 +26,19 @@ type PermissionBinding_Value struct {
 }
 
 type PermissionBindingConfig struct {
-	ApiVersion any
-	NamespaceName any
+	ApiVersion        any
+	NamespaceName     any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type PermissionBindingAttrs struct {
-	ApiVersion any
+	ApiVersion    any
 	NamespaceName any
 	// A link for the next page of Permission Binding.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// A collection of Permission Binding.
 	Value any
 }
@@ -46,9 +46,9 @@ type PermissionBindingAttrs struct {
 var PermissionBinding = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_permission_binding",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"NamespaceName":     ubx.FieldSpec{WireName: "namespace_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

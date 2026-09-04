@@ -8,22 +8,144 @@ type ServiceFabric_Properties_CustomDetails struct {
 	InstanceType any
 }
 
+type ServiceFabric_Properties_EncryptionDetails struct {
+	// The key encryption key certificate expiry date.
+	KekCertExpiryDate any
+	// The key encryption key certificate thumbprint.
+	KekCertThumbprint any
+	// The key encryption key state for the Vmm.
+	KekState any
+}
+
+type ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrors struct {
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
+	RecoveryProviderErrorMessage any
+	SummaryMessage               any
+}
+
+type ServiceFabric_Properties_HealthErrorDetails struct {
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
+	RecoveryProviderErrorMessage any
+	SummaryMessage               any
+}
+
 type ServiceFabric_Properties struct {
+	// BCDR state of the fabric.
+	BcdrState any
 	// Fabric provider specific settings.
 	CustomDetails any
+	// Encryption details for the fabric.
+	EncryptionDetails any
+	// Friendly name of the fabric.
+	FriendlyName any
+	// Health of fabric.
+	Health any
+	// Fabric health error details.
+	HealthErrorDetails any
+	// Dra Registration Id.
+	InternalIdentifier any
+	// Encryption details for the fabric.
+	RolloverEncryptionDetails any
 }
 
 var ServiceFabric_Properties_CustomDetailsFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
+
+var ServiceFabric_Properties_EncryptionDetailsFields = ubx.FieldMap{
+	"KekCertExpiryDate": ubx.FieldSpec{WireName: "kek_cert_expiry_date"},
+	"KekCertThumbprint": ubx.FieldSpec{WireName: "kek_cert_thumbprint"},
+	"KekState":          ubx.FieldSpec{WireName: "kek_state"},
+}
+
+var ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrorsFields = ubx.FieldMap{
+	"CreationTimeUtc":              ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability":        ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":                     ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":                ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":                    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":                      ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":                   ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":                 ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":                  ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":                    ubx.FieldSpec{WireName: "error_type"},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
+
+var ServiceFabric_Properties_HealthErrorDetailsFields = ubx.FieldMap{
+	"CreationTimeUtc":       ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":              ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":         ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":             ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":               ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":            ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":          ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":           ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":             ubx.FieldSpec{WireName: "error_type"},
+	"InnerHealthErrors": ubx.FieldSpec{
+		WireName: "inner_health_errors",
+		Kind:     "list",
+		Fields:   ServiceFabric_Properties_HealthErrorDetails_InnerHealthErrorsFields,
+	},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
 
 var ServiceFabric_PropertiesFields = ubx.FieldMap{
-		"CustomDetails": ubx.FieldSpec{
-			WireName: "custom_details",
-			Kind: "object",
-			Fields: ServiceFabric_Properties_CustomDetailsFields,
-		},
-	}
+	"BcdrState": ubx.FieldSpec{WireName: "bcdr_state"},
+	"CustomDetails": ubx.FieldSpec{
+		WireName: "custom_details",
+		Kind:     "object",
+		Fields:   ServiceFabric_Properties_CustomDetailsFields,
+	},
+	"EncryptionDetails": ubx.FieldSpec{
+		WireName: "encryption_details",
+		Kind:     "object",
+		Fields:   ServiceFabric_Properties_EncryptionDetailsFields,
+	},
+	"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
+	"Health":       ubx.FieldSpec{WireName: "health"},
+	"HealthErrorDetails": ubx.FieldSpec{
+		WireName: "health_error_details",
+		Kind:     "list",
+		Fields:   ServiceFabric_Properties_HealthErrorDetailsFields,
+	},
+	"InternalIdentifier": ubx.FieldSpec{WireName: "internal_identifier"},
+	"RolloverEncryptionDetails": ubx.FieldSpec{
+		WireName: "rollover_encryption_details",
+		Kind:     "object",
+		Fields:   ServiceFabric_Properties_EncryptionDetailsFields,
+	},
+}
 
 type ServiceFabricConfig struct {
 	// Properties of site details provided during the time of site creation.
@@ -42,8 +164,8 @@ var ServiceFabric = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceFabric_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceFabric_PropertiesFields,
 		},
 	},
 }

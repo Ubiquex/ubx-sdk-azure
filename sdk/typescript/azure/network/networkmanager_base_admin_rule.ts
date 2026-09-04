@@ -16,20 +16,9 @@ export interface NetworkmanagerBaseAdminRule_SystemData {
   lastModifiedByType?: string | Computed<string>;
 }
 
-const NetworkmanagerBaseAdminRule_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerBaseAdminRuleConfig {
   /** Whether the rule is custom or default. */
   kind: string | Computed<string>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerBaseAdminRule_SystemData | Computed<NetworkmanagerBaseAdminRule_SystemData>;
 }
 
 export interface NetworkmanagerBaseAdminRuleAttrs {
@@ -43,10 +32,5 @@ export const NetworkmanagerBaseAdminRule: ResourceBinding<NetworkmanagerBaseAdmi
   wireType: "azure_network_networkmanager_base_admin_rule",
   fields: {
     kind: "kind",
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerBaseAdminRule_SystemDataFields,
-    },
   },
 };

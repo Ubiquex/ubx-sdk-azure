@@ -92,37 +92,37 @@ type FluxconfigurationFluxConfiguration_Properties_GitRepository struct {
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFrom struct {
-	Kind any
-	Name any
+	Kind     any
+	Name     any
 	Optional any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild struct {
-	Substitute any
+	Substitute     any
 	SubstituteFrom any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Kustomizations struct {
-	DependsOn any
-	Force any
-	Name any
-	Path any
-	PostBuild any
-	Prune any
+	DependsOn              any
+	Force                  any
+	Name                   any
+	Path                   any
+	PostBuild              any
+	Prune                  any
 	RetryIntervalInSeconds any
-	SyncIntervalInSeconds any
-	TimeoutInSeconds any
-	Wait any
+	SyncIntervalInSeconds  any
+	TimeoutInSeconds       any
+	Wait                   any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedBy struct {
-	Name any
+	Name      any
 	Namespace any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleaseProperties struct {
-	FailureCount any
-	HelmChartRef any
+	FailureCount        any
+	HelmChartRef        any
 	InstallFailureCount any
 	LastRevisionApplied any
 	UpgradeFailureCount any
@@ -130,20 +130,20 @@ type FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleasePropertie
 
 type FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditions struct {
 	LastTransitionTime any
-	Message any
-	Reason any
-	Status any
-	Type any
+	Message            any
+	Reason             any
+	Status             any
+	Type               any
 }
 
 type FluxconfigurationFluxConfiguration_Properties_Statuses struct {
-	AppliedBy any
-	ComplianceState any
+	AppliedBy             any
+	ComplianceState       any
 	HelmReleaseProperties any
-	Kind any
-	Name any
-	Namespace any
-	StatusConditions any
+	Kind                  any
+	Name                  any
+	Namespace             any
+	StatusConditions      any
 }
 
 type FluxconfigurationFluxConfiguration_Properties struct {
@@ -203,205 +203,194 @@ type FluxconfigurationFluxConfiguration_SystemData struct {
 }
 
 var FluxconfigurationFluxConfiguration_Properties_AzureBlob_ManagedIdentityFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-	}
+	"ClientId": ubx.FieldSpec{WireName: "client_id"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_AzureBlob_ServicePrincipalFields = ubx.FieldMap{
-		"ClientCertificate": ubx.FieldSpec{WireName: "client_certificate"},
-		"ClientCertificatePassword": ubx.FieldSpec{WireName: "client_certificate_password"},
-		"ClientCertificateSendChain": ubx.FieldSpec{WireName: "client_certificate_send_chain"},
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ClientCertificate":          ubx.FieldSpec{WireName: "client_certificate"},
+	"ClientCertificatePassword":  ubx.FieldSpec{WireName: "client_certificate_password"},
+	"ClientCertificateSendChain": ubx.FieldSpec{WireName: "client_certificate_send_chain"},
+	"ClientId":                   ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret":               ubx.FieldSpec{WireName: "client_secret"},
+	"TenantId":                   ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_AzureBlobFields = ubx.FieldMap{
-		"AccountKey": ubx.FieldSpec{WireName: "account_key"},
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"LocalAuthRef": ubx.FieldSpec{WireName: "local_auth_ref"},
-		"ManagedIdentity": ubx.FieldSpec{
-			WireName: "managed_identity",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_AzureBlob_ManagedIdentityFields,
-		},
-		"SasToken": ubx.FieldSpec{WireName: "sas_token"},
-		"ServicePrincipal": ubx.FieldSpec{
-			WireName: "service_principal",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_AzureBlob_ServicePrincipalFields,
-		},
-		"SyncIntervalInSeconds": ubx.FieldSpec{WireName: "sync_interval_in_seconds"},
-		"TimeoutInSeconds": ubx.FieldSpec{WireName: "timeout_in_seconds"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"AccountKey":    ubx.FieldSpec{WireName: "account_key"},
+	"ContainerName": ubx.FieldSpec{WireName: "container_name"},
+	"LocalAuthRef":  ubx.FieldSpec{WireName: "local_auth_ref"},
+	"ManagedIdentity": ubx.FieldSpec{
+		WireName: "managed_identity",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_AzureBlob_ManagedIdentityFields,
+	},
+	"SasToken": ubx.FieldSpec{WireName: "sas_token"},
+	"ServicePrincipal": ubx.FieldSpec{
+		WireName: "service_principal",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_AzureBlob_ServicePrincipalFields,
+	},
+	"SyncIntervalInSeconds": ubx.FieldSpec{WireName: "sync_interval_in_seconds"},
+	"TimeoutInSeconds":      ubx.FieldSpec{WireName: "timeout_in_seconds"},
+	"Url":                   ubx.FieldSpec{WireName: "url"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_BucketFields = ubx.FieldMap{
-		"AccessKey": ubx.FieldSpec{WireName: "access_key"},
-		"BucketName": ubx.FieldSpec{WireName: "bucket_name"},
-		"Insecure": ubx.FieldSpec{WireName: "insecure"},
-		"LocalAuthRef": ubx.FieldSpec{WireName: "local_auth_ref"},
-		"SyncIntervalInSeconds": ubx.FieldSpec{WireName: "sync_interval_in_seconds"},
-		"TimeoutInSeconds": ubx.FieldSpec{WireName: "timeout_in_seconds"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"AccessKey":             ubx.FieldSpec{WireName: "access_key"},
+	"BucketName":            ubx.FieldSpec{WireName: "bucket_name"},
+	"Insecure":              ubx.FieldSpec{WireName: "insecure"},
+	"LocalAuthRef":          ubx.FieldSpec{WireName: "local_auth_ref"},
+	"SyncIntervalInSeconds": ubx.FieldSpec{WireName: "sync_interval_in_seconds"},
+	"TimeoutInSeconds":      ubx.FieldSpec{WireName: "timeout_in_seconds"},
+	"Url":                   ubx.FieldSpec{WireName: "url"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_GitRepository_RepositoryRefFields = ubx.FieldMap{
-		"Branch": ubx.FieldSpec{WireName: "branch"},
-		"Commit": ubx.FieldSpec{WireName: "commit"},
-		"Semver": ubx.FieldSpec{WireName: "semver"},
-		"Tag": ubx.FieldSpec{WireName: "tag"},
-	}
+	"Branch": ubx.FieldSpec{WireName: "branch"},
+	"Commit": ubx.FieldSpec{WireName: "commit"},
+	"Semver": ubx.FieldSpec{WireName: "semver"},
+	"Tag":    ubx.FieldSpec{WireName: "tag"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_GitRepositoryFields = ubx.FieldMap{
-		"HttpsCacert": ubx.FieldSpec{WireName: "https_cacert"},
-		"HttpsUser": ubx.FieldSpec{WireName: "https_user"},
-		"LocalAuthRef": ubx.FieldSpec{WireName: "local_auth_ref"},
-		"RepositoryRef": ubx.FieldSpec{
-			WireName: "repository_ref",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_GitRepository_RepositoryRefFields,
-		},
-		"SshKnownHosts": ubx.FieldSpec{WireName: "ssh_known_hosts"},
-		"SyncIntervalInSeconds": ubx.FieldSpec{WireName: "sync_interval_in_seconds"},
-		"TimeoutInSeconds": ubx.FieldSpec{WireName: "timeout_in_seconds"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"HttpsCacert":  ubx.FieldSpec{WireName: "https_cacert"},
+	"HttpsUser":    ubx.FieldSpec{WireName: "https_user"},
+	"LocalAuthRef": ubx.FieldSpec{WireName: "local_auth_ref"},
+	"RepositoryRef": ubx.FieldSpec{
+		WireName: "repository_ref",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_GitRepository_RepositoryRefFields,
+	},
+	"SshKnownHosts":         ubx.FieldSpec{WireName: "ssh_known_hosts"},
+	"SyncIntervalInSeconds": ubx.FieldSpec{WireName: "sync_interval_in_seconds"},
+	"TimeoutInSeconds":      ubx.FieldSpec{WireName: "timeout_in_seconds"},
+	"Url":                   ubx.FieldSpec{WireName: "url"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFromFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Optional": ubx.FieldSpec{WireName: "optional"},
-	}
+	"Kind":     ubx.FieldSpec{WireName: "kind"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Optional": ubx.FieldSpec{WireName: "optional"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuildFields = ubx.FieldMap{
-		"Substitute": ubx.FieldSpec{WireName: "substitute"},
-		"SubstituteFrom": ubx.FieldSpec{
-			WireName: "substitute_from",
-			Kind: "list",
-			Fields: FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFromFields,
-		},
-	}
+	"Substitute": ubx.FieldSpec{WireName: "substitute"},
+	"SubstituteFrom": ubx.FieldSpec{
+		WireName: "substitute_from",
+		Kind:     "list",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuild_SubstituteFromFields,
+	},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_KustomizationsFields = ubx.FieldMap{
-		"DependsOn": ubx.FieldSpec{WireName: "depends_on"},
-		"Force": ubx.FieldSpec{WireName: "force"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"PostBuild": ubx.FieldSpec{
-			WireName: "post_build",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuildFields,
-		},
-		"Prune": ubx.FieldSpec{WireName: "prune"},
-		"RetryIntervalInSeconds": ubx.FieldSpec{WireName: "retry_interval_in_seconds"},
-		"SyncIntervalInSeconds": ubx.FieldSpec{WireName: "sync_interval_in_seconds"},
-		"TimeoutInSeconds": ubx.FieldSpec{WireName: "timeout_in_seconds"},
-		"Wait": ubx.FieldSpec{WireName: "wait"},
-	}
+	"DependsOn": ubx.FieldSpec{WireName: "depends_on"},
+	"Force":     ubx.FieldSpec{WireName: "force"},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Path":      ubx.FieldSpec{WireName: "path"},
+	"PostBuild": ubx.FieldSpec{
+		WireName: "post_build",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_Kustomizations_PostBuildFields,
+	},
+	"Prune":                  ubx.FieldSpec{WireName: "prune"},
+	"RetryIntervalInSeconds": ubx.FieldSpec{WireName: "retry_interval_in_seconds"},
+	"SyncIntervalInSeconds":  ubx.FieldSpec{WireName: "sync_interval_in_seconds"},
+	"TimeoutInSeconds":       ubx.FieldSpec{WireName: "timeout_in_seconds"},
+	"Wait":                   ubx.FieldSpec{WireName: "wait"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedByFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Namespace": ubx.FieldSpec{WireName: "namespace"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Namespace": ubx.FieldSpec{WireName: "namespace"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleasePropertiesFields = ubx.FieldMap{
-		"FailureCount": ubx.FieldSpec{WireName: "failure_count"},
-		"HelmChartRef": ubx.FieldSpec{
-			WireName: "helm_chart_ref",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedByFields,
-		},
-		"InstallFailureCount": ubx.FieldSpec{WireName: "install_failure_count"},
-		"LastRevisionApplied": ubx.FieldSpec{WireName: "last_revision_applied"},
-		"UpgradeFailureCount": ubx.FieldSpec{WireName: "upgrade_failure_count"},
-	}
+	"FailureCount": ubx.FieldSpec{WireName: "failure_count"},
+	"HelmChartRef": ubx.FieldSpec{
+		WireName: "helm_chart_ref",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedByFields,
+	},
+	"InstallFailureCount": ubx.FieldSpec{WireName: "install_failure_count"},
+	"LastRevisionApplied": ubx.FieldSpec{WireName: "last_revision_applied"},
+	"UpgradeFailureCount": ubx.FieldSpec{WireName: "upgrade_failure_count"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditionsFields = ubx.FieldMap{
-		"LastTransitionTime": ubx.FieldSpec{WireName: "last_transition_time"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Reason": ubx.FieldSpec{WireName: "reason"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"LastTransitionTime": ubx.FieldSpec{WireName: "last_transition_time"},
+	"Message":            ubx.FieldSpec{WireName: "message"},
+	"Reason":             ubx.FieldSpec{WireName: "reason"},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+	"Type":               ubx.FieldSpec{WireName: "type"},
+}
 
 var FluxconfigurationFluxConfiguration_Properties_StatusesFields = ubx.FieldMap{
-		"AppliedBy": ubx.FieldSpec{
-			WireName: "applied_by",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedByFields,
-		},
-		"ComplianceState": ubx.FieldSpec{WireName: "compliance_state"},
-		"HelmReleaseProperties": ubx.FieldSpec{
-			WireName: "helm_release_properties",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleasePropertiesFields,
-		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Namespace": ubx.FieldSpec{WireName: "namespace"},
-		"StatusConditions": ubx.FieldSpec{
-			WireName: "status_conditions",
-			Kind: "list",
-			Fields: FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditionsFields,
-		},
-	}
+	"AppliedBy": ubx.FieldSpec{
+		WireName: "applied_by",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_Statuses_AppliedByFields,
+	},
+	"ComplianceState": ubx.FieldSpec{WireName: "compliance_state"},
+	"HelmReleaseProperties": ubx.FieldSpec{
+		WireName: "helm_release_properties",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_Statuses_HelmReleasePropertiesFields,
+	},
+	"Kind":      ubx.FieldSpec{WireName: "kind"},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Namespace": ubx.FieldSpec{WireName: "namespace"},
+	"StatusConditions": ubx.FieldSpec{
+		WireName: "status_conditions",
+		Kind:     "list",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_Statuses_StatusConditionsFields,
+	},
+}
 
 var FluxconfigurationFluxConfiguration_PropertiesFields = ubx.FieldMap{
-		"AzureBlob": ubx.FieldSpec{
-			WireName: "azure_blob",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_AzureBlobFields,
-		},
-		"Bucket": ubx.FieldSpec{
-			WireName: "bucket",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_BucketFields,
-		},
-		"ComplianceState": ubx.FieldSpec{WireName: "compliance_state"},
-		"ConfigurationProtectedSettings": ubx.FieldSpec{WireName: "configuration_protected_settings"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"GitRepository": ubx.FieldSpec{
-			WireName: "git_repository",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_Properties_GitRepositoryFields,
-		},
-		"Kustomizations": ubx.FieldSpec{
-			WireName: "kustomizations",
-			Kind: "map",
-			Fields: FluxconfigurationFluxConfiguration_Properties_KustomizationsFields,
-		},
-		"Namespace": ubx.FieldSpec{WireName: "namespace"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ReconciliationWaitDuration": ubx.FieldSpec{WireName: "reconciliation_wait_duration"},
-		"RepositoryPublicKey": ubx.FieldSpec{WireName: "repository_public_key"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"SourceKind": ubx.FieldSpec{WireName: "source_kind"},
-		"SourceSyncedCommitId": ubx.FieldSpec{WireName: "source_synced_commit_id"},
-		"SourceUpdatedAt": ubx.FieldSpec{WireName: "source_updated_at"},
-		"StatusUpdatedAt": ubx.FieldSpec{WireName: "status_updated_at"},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: FluxconfigurationFluxConfiguration_Properties_StatusesFields,
-		},
-		"Suspend": ubx.FieldSpec{WireName: "suspend"},
-		"WaitForReconciliation": ubx.FieldSpec{WireName: "wait_for_reconciliation"},
-	}
-
-var FluxconfigurationFluxConfiguration_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"AzureBlob": ubx.FieldSpec{
+		WireName: "azure_blob",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_AzureBlobFields,
+	},
+	"Bucket": ubx.FieldSpec{
+		WireName: "bucket",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_BucketFields,
+	},
+	"ComplianceState":                ubx.FieldSpec{WireName: "compliance_state"},
+	"ConfigurationProtectedSettings": ubx.FieldSpec{WireName: "configuration_protected_settings"},
+	"ErrorMessage":                   ubx.FieldSpec{WireName: "error_message"},
+	"GitRepository": ubx.FieldSpec{
+		WireName: "git_repository",
+		Kind:     "object",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_GitRepositoryFields,
+	},
+	"Kustomizations": ubx.FieldSpec{
+		WireName: "kustomizations",
+		Kind:     "map",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_KustomizationsFields,
+	},
+	"Namespace":                  ubx.FieldSpec{WireName: "namespace"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"ReconciliationWaitDuration": ubx.FieldSpec{WireName: "reconciliation_wait_duration"},
+	"RepositoryPublicKey":        ubx.FieldSpec{WireName: "repository_public_key"},
+	"Scope":                      ubx.FieldSpec{WireName: "scope"},
+	"SourceKind":                 ubx.FieldSpec{WireName: "source_kind"},
+	"SourceSyncedCommitId":       ubx.FieldSpec{WireName: "source_synced_commit_id"},
+	"SourceUpdatedAt":            ubx.FieldSpec{WireName: "source_updated_at"},
+	"StatusUpdatedAt":            ubx.FieldSpec{WireName: "status_updated_at"},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   FluxconfigurationFluxConfiguration_Properties_StatusesFields,
+	},
+	"Suspend":               ubx.FieldSpec{WireName: "suspend"},
+	"WaitForReconciliation": ubx.FieldSpec{WireName: "wait_for_reconciliation"},
+}
 
 type FluxconfigurationFluxConfigurationConfig struct {
 	// Properties to create a Flux Configuration resource
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type FluxconfigurationFluxConfigurationAttrs struct {
@@ -416,13 +405,8 @@ var FluxconfigurationFluxConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: FluxconfigurationFluxConfiguration_SystemDataFields,
+			Kind:     "object",
+			Fields:   FluxconfigurationFluxConfiguration_PropertiesFields,
 		},
 	},
 }

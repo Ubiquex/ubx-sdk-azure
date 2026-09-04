@@ -15,32 +15,29 @@ type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Pr
 }
 
 var ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_PropertiesFields = ubx.FieldMap{
-		"DefaultHostname": ubx.FieldSpec{WireName: "default_hostname"},
-		"Hostnames": ubx.FieldSpec{WireName: "hostnames"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SourceId": ubx.FieldSpec{WireName: "source_id"},
-	}
+	"DefaultHostname":   ubx.FieldSpec{WireName: "default_hostname"},
+	"Hostnames":         ubx.FieldSpec{WireName: "hostnames"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceId":          ubx.FieldSpec{WireName: "source_id"},
+}
 
 type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceConfig struct {
-	// ETag of the resource.
-	Etag any
 	Properties any
 }
 
 type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceAttrs struct {
 	// ETag of the resource.
-	Etag any
+	Etag       any
 	Properties any
 }
 
 var ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource = ubx.ResourceBinding{
 	WireType: "azure_apimanagement_apimgatewayconfigconnections_api_management_gateway_config_connection_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_PropertiesFields,
 		},
 	},
 }

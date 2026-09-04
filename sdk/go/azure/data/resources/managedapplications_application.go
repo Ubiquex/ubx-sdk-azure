@@ -5,32 +5,32 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedapplicationsApplication_Value_Identity_UserAssignedIdentities struct {
 	PrincipalId any
-	TenantId any
+	TenantId    any
 }
 
 type ManagedapplicationsApplication_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ManagedapplicationsApplication_Value_Plan struct {
-	Name any
-	Product any
+	Name          any
+	Product       any
 	PromotionCode any
-	Publisher any
-	Version any
+	Publisher     any
+	Version       any
 }
 
 type ManagedapplicationsApplication_Value_Properties_Artifacts struct {
 	Name any
 	Type any
-	Uri any
+	Uri  any
 }
 
 type ManagedapplicationsApplication_Value_Properties_Authorizations struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
@@ -40,68 +40,68 @@ type ManagedapplicationsApplication_Value_Properties_BillingDetails struct {
 
 type ManagedapplicationsApplication_Value_Properties_CreatedBy struct {
 	ApplicationId any
-	Oid any
-	Puid any
+	Oid           any
+	Puid          any
 }
 
 type ManagedapplicationsApplication_Value_Properties_CustomerSupport struct {
 	ContactName any
-	Email any
-	Phone any
+	Email       any
+	Phone       any
 }
 
 type ManagedapplicationsApplication_Value_Properties_JitAccessPolicy_JitApprovers struct {
 	DisplayName any
-	Id any
-	Type any
+	Id          any
+	Type        any
 }
 
 type ManagedapplicationsApplication_Value_Properties_JitAccessPolicy struct {
-	JitAccessEnabled any
-	JitApprovalMode any
-	JitApprovers any
+	JitAccessEnabled         any
+	JitApprovalMode          any
+	JitApprovers             any
 	MaximumJitAccessDuration any
 }
 
 type ManagedapplicationsApplication_Value_Properties_SupportUrls struct {
 	GovernmentCloud any
-	PublicAzure any
+	PublicAzure     any
 }
 
 type ManagedapplicationsApplication_Value_Properties struct {
 	ApplicationDefinitionId any
-	Artifacts any
-	Authorizations any
-	BillingDetails any
-	CreatedBy any
-	CustomerSupport any
-	JitAccessPolicy any
-	ManagedResourceGroupId any
-	ManagementMode any
-	Outputs any
-	Parameters any
-	ProvisioningState any
-	PublisherTenantId any
-	SupportUrls any
-	UpdatedBy any
+	Artifacts               any
+	Authorizations          any
+	BillingDetails          any
+	CreatedBy               any
+	CustomerSupport         any
+	JitAccessPolicy         any
+	ManagedResourceGroupId  any
+	ManagementMode          any
+	Outputs                 any
+	Parameters              any
+	ProvisioningState       any
+	PublisherTenantId       any
+	SupportUrls             any
+	UpdatedBy               any
 }
 
 type ManagedapplicationsApplication_Value struct {
-	Identity any
-	Kind any
-	Plan any
+	Identity   any
+	Kind       any
+	Plan       any
 	Properties any
 }
 
 type ManagedapplicationsApplicationConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ManagedapplicationsApplicationAttrs struct {
 	ApiVersion any
 	// The URL to use for getting the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The array of managed applications.
 	Value any
@@ -110,7 +110,7 @@ type ManagedapplicationsApplicationAttrs struct {
 var ManagedapplicationsApplication = ubx.DataSourceBinding{
 	WireType: "azure_resources_managedapplications_application",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

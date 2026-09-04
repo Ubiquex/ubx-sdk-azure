@@ -58,57 +58,55 @@ type CommitmentPlan_Sku struct {
 }
 
 var CommitmentPlan_Properties_Current_QuotaFields = ubx.FieldMap{
-		"Quantity": ubx.FieldSpec{WireName: "quantity"},
-		"Unit": ubx.FieldSpec{WireName: "unit"},
-	}
+	"Quantity": ubx.FieldSpec{WireName: "quantity"},
+	"Unit":     ubx.FieldSpec{WireName: "unit"},
+}
 
 var CommitmentPlan_Properties_CurrentFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"EndDate": ubx.FieldSpec{WireName: "end_date"},
-		"Quota": ubx.FieldSpec{
-			WireName: "quota",
-			Kind: "object",
-			Fields: CommitmentPlan_Properties_Current_QuotaFields,
-		},
-		"StartDate": ubx.FieldSpec{WireName: "start_date"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Count":   ubx.FieldSpec{WireName: "count"},
+	"EndDate": ubx.FieldSpec{WireName: "end_date"},
+	"Quota": ubx.FieldSpec{
+		WireName: "quota",
+		Kind:     "object",
+		Fields:   CommitmentPlan_Properties_Current_QuotaFields,
+	},
+	"StartDate": ubx.FieldSpec{WireName: "start_date"},
+	"Tier":      ubx.FieldSpec{WireName: "tier"},
+}
 
 var CommitmentPlan_PropertiesFields = ubx.FieldMap{
-		"AutoRenew": ubx.FieldSpec{WireName: "auto_renew"},
-		"CommitmentPlanGuid": ubx.FieldSpec{WireName: "commitment_plan_guid"},
-		"Current": ubx.FieldSpec{
-			WireName: "current",
-			Kind: "object",
-			Fields: CommitmentPlan_Properties_CurrentFields,
-		},
-		"HostingModel": ubx.FieldSpec{WireName: "hosting_model"},
-		"Last": ubx.FieldSpec{
-			WireName: "last",
-			Kind: "object",
-			Fields: CommitmentPlan_Properties_CurrentFields,
-		},
-		"Next": ubx.FieldSpec{
-			WireName: "next",
-			Kind: "object",
-			Fields: CommitmentPlan_Properties_CurrentFields,
-		},
-		"PlanType": ubx.FieldSpec{WireName: "plan_type"},
-		"ProvisioningIssues": ubx.FieldSpec{WireName: "provisioning_issues"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AutoRenew":          ubx.FieldSpec{WireName: "auto_renew"},
+	"CommitmentPlanGuid": ubx.FieldSpec{WireName: "commitment_plan_guid"},
+	"Current": ubx.FieldSpec{
+		WireName: "current",
+		Kind:     "object",
+		Fields:   CommitmentPlan_Properties_CurrentFields,
+	},
+	"HostingModel": ubx.FieldSpec{WireName: "hosting_model"},
+	"Last": ubx.FieldSpec{
+		WireName: "last",
+		Kind:     "object",
+		Fields:   CommitmentPlan_Properties_CurrentFields,
+	},
+	"Next": ubx.FieldSpec{
+		WireName: "next",
+		Kind:     "object",
+		Fields:   CommitmentPlan_Properties_CurrentFields,
+	},
+	"PlanType":           ubx.FieldSpec{WireName: "plan_type"},
+	"ProvisioningIssues": ubx.FieldSpec{WireName: "provisioning_issues"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var CommitmentPlan_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type CommitmentPlanConfig struct {
-	// Resource Etag.
-	Etag any
 	// The kind (type) of cognitive service account.
 	Kind any
 	// The geo-location where the resource lives
@@ -139,18 +137,17 @@ type CommitmentPlanAttrs struct {
 var CommitmentPlan = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_commitment_plan",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CommitmentPlan_PropertiesFields,
+			Kind:     "object",
+			Fields:   CommitmentPlan_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: CommitmentPlan_SkuFields,
+			Kind:     "object",
+			Fields:   CommitmentPlan_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

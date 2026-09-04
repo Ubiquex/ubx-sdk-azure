@@ -5,16 +5,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExtensionsExtension_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type ExtensionsExtension_Value_Plan struct {
-	Name any
-	Product any
+	Name          any
+	Product       any
 	PromotionCode any
-	Publisher any
-	Version any
+	Publisher     any
+	Version       any
 }
 
 type ExtensionsExtension_Value_Properties_ErrorInfo_AdditionalInfo struct {
@@ -27,18 +27,18 @@ type ExtensionsExtension_Value_Properties_ErrorInfo_Details_Details struct {
 
 type ExtensionsExtension_Value_Properties_ErrorInfo_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ExtensionsExtension_Value_Properties_ErrorInfo struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ExtensionsExtension_Value_Properties_Scope_Cluster struct {
@@ -50,48 +50,48 @@ type ExtensionsExtension_Value_Properties_Scope_Namespace struct {
 }
 
 type ExtensionsExtension_Value_Properties_Scope struct {
-	Cluster any
+	Cluster   any
 	Namespace any
 }
 
 type ExtensionsExtension_Value_Properties_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type ExtensionsExtension_Value_Properties struct {
-	AksAssignedIdentity any
-	AutoUpgradeMinorVersion any
+	AksAssignedIdentity            any
+	AutoUpgradeMinorVersion        any
 	ConfigurationProtectedSettings any
-	ConfigurationSettings any
-	CurrentVersion any
-	CustomLocationSettings any
-	ErrorInfo any
-	ExtensionType any
-	IsSystemExtension any
-	PackageUri any
-	ProvisioningState any
-	ReleaseTrain any
-	Scope any
-	Statuses any
-	Version any
+	ConfigurationSettings          any
+	CurrentVersion                 any
+	CustomLocationSettings         any
+	ErrorInfo                      any
+	ExtensionType                  any
+	IsSystemExtension              any
+	PackageUri                     any
+	ProvisioningState              any
+	ReleaseTrain                   any
+	Scope                          any
+	Statuses                       any
+	Version                        any
 }
 
 type ExtensionsExtension_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ExtensionsExtension_Value struct {
-	Identity any
-	Plan any
+	Identity   any
+	Plan       any
 	Properties any
 	SystemData any
 }
@@ -108,6 +108,5 @@ type ExtensionsExtensionAttrs struct {
 
 var ExtensionsExtension = ubx.DataSourceBinding{
 	WireType: "azure_kubernetesconfiguration_extensions_extension",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,7 +4,7 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLicense_Properties_LicenseDetails_VolumeLicenseDetails struct {
-	InvoiceId any
+	InvoiceId   any
 	ProgramYear any
 }
 
@@ -39,35 +39,35 @@ type OpenapiLicense_Properties struct {
 }
 
 var OpenapiLicense_Properties_LicenseDetails_VolumeLicenseDetailsFields = ubx.FieldMap{
-		"InvoiceId": ubx.FieldSpec{WireName: "invoice_id"},
-		"ProgramYear": ubx.FieldSpec{WireName: "program_year"},
-	}
+	"InvoiceId":   ubx.FieldSpec{WireName: "invoice_id"},
+	"ProgramYear": ubx.FieldSpec{WireName: "program_year"},
+}
 
 var OpenapiLicense_Properties_LicenseDetailsFields = ubx.FieldMap{
-		"AssignedLicenses": ubx.FieldSpec{WireName: "assigned_licenses"},
-		"Edition": ubx.FieldSpec{WireName: "edition"},
-		"ImmutableId": ubx.FieldSpec{WireName: "immutable_id"},
-		"Processors": ubx.FieldSpec{WireName: "processors"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"VolumeLicenseDetails": ubx.FieldSpec{
-			WireName: "volume_license_details",
-			Kind: "list",
-			Fields: OpenapiLicense_Properties_LicenseDetails_VolumeLicenseDetailsFields,
-		},
-	}
+	"AssignedLicenses": ubx.FieldSpec{WireName: "assigned_licenses"},
+	"Edition":          ubx.FieldSpec{WireName: "edition"},
+	"ImmutableId":      ubx.FieldSpec{WireName: "immutable_id"},
+	"Processors":       ubx.FieldSpec{WireName: "processors"},
+	"State":            ubx.FieldSpec{WireName: "state"},
+	"Target":           ubx.FieldSpec{WireName: "target"},
+	"Type":             ubx.FieldSpec{WireName: "type"},
+	"VolumeLicenseDetails": ubx.FieldSpec{
+		WireName: "volume_license_details",
+		Kind:     "list",
+		Fields:   OpenapiLicense_Properties_LicenseDetails_VolumeLicenseDetailsFields,
+	},
+}
 
 var OpenapiLicense_PropertiesFields = ubx.FieldMap{
-		"LicenseDetails": ubx.FieldSpec{
-			WireName: "license_details",
-			Kind: "object",
-			Fields: OpenapiLicense_Properties_LicenseDetailsFields,
-		},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"LicenseDetails": ubx.FieldSpec{
+		WireName: "license_details",
+		Kind:     "object",
+		Fields:   OpenapiLicense_Properties_LicenseDetailsFields,
+	},
+	"LicenseType":       ubx.FieldSpec{WireName: "license_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TenantId":          ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type OpenapiLicenseConfig struct {
 	// Describes the properties of a License Profile.
@@ -84,8 +84,8 @@ var OpenapiLicense = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLicense_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLicense_PropertiesFields,
 		},
 	},
 }

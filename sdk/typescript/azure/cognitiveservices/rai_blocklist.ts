@@ -11,8 +11,6 @@ const RaiBlocklist_PropertiesFields: FieldMap = {
 };
 
 export interface RaiBlocklistConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** RAI Custom Blocklist properties. */
   properties?: RaiBlocklist_Properties | Computed<RaiBlocklist_Properties>;
   /** Resource tags. */
@@ -31,7 +29,6 @@ export interface RaiBlocklistAttrs {
 export const RaiBlocklist: ResourceBinding<RaiBlocklistConfig, RaiBlocklistAttrs> = {
   wireType: "azure_cognitiveservices_rai_blocklist",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -29,10 +29,6 @@ const ServerkeysServerKey_PropertiesFields: FieldMap = {
 };
 
 export interface ServerkeysServerKeyConfig {
-  /** Kind of encryption protector. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
-  /** Resource location. */
-  location?: string | Computed<string>;
   /** Properties for a server key execution. */
   properties?: ServerkeysServerKey_Properties | Computed<ServerkeysServerKey_Properties>;
 }
@@ -49,8 +45,6 @@ export interface ServerkeysServerKeyAttrs {
 export const ServerkeysServerKey: ResourceBinding<ServerkeysServerKeyConfig, ServerkeysServerKeyAttrs> = {
   wireType: "azure_sql_serverkeys_server_key",
   fields: {
-    kind: "kind",
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

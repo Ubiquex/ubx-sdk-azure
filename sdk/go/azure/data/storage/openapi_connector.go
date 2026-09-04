@@ -8,14 +8,14 @@ type OpenapiConnector_Value_Properties_Source struct {
 }
 
 type OpenapiConnector_Value_Properties struct {
-	CreationTime any
-	DataSourceType any
-	Description any
+	CreationTime      any
+	DataSourceType    any
+	Description       any
 	ProvisioningState any
-	Source any
-	State any
-	TestConnection any
-	UniqueId any
+	Source            any
+	State             any
+	TestConnection    any
+	UniqueId          any
 }
 
 type OpenapiConnector_Value struct {

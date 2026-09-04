@@ -29,16 +29,8 @@ const CertificateDescription_PropertiesFields: FieldMap = {
 };
 
 export interface CertificateDescriptionConfig {
-  /** The entity tag. */
-  etag?: string | Computed<string>;
-  /** The resource identifier. */
-  id?: string | Computed<string>;
-  /** The name of the certificate. */
-  name?: string | Computed<string>;
   /** The description of an X509 CA Certificate. */
   properties?: CertificateDescription_Properties | Computed<CertificateDescription_Properties>;
-  /** The resource type. */
-  type?: string | Computed<string>;
 }
 
 export interface CertificateDescriptionAttrs {
@@ -57,14 +49,10 @@ export interface CertificateDescriptionAttrs {
 export const CertificateDescription: ResourceBinding<CertificateDescriptionConfig, CertificateDescriptionAttrs> = {
   wireType: "azure_iothub_certificate_description",
   fields: {
-    etag: "etag",
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: CertificateDescription_PropertiesFields,
     },
-    type: "type",
   },
 };

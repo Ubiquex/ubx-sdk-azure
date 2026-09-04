@@ -4,13 +4,13 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFeaturesetVersion_Value_Properties_MaterializationSettings_Notification_Webhooks struct {
-	EventType any
+	EventType   any
 	WebhookType any
 }
 
 type OpenapiFeaturesetVersion_Value_Properties_MaterializationSettings_Notification struct {
-	EmailOn any
-	Emails any
+	EmailOn  any
+	Emails   any
 	Webhooks any
 }
 
@@ -19,24 +19,24 @@ type OpenapiFeaturesetVersion_Value_Properties_MaterializationSettings_Resource 
 }
 
 type OpenapiFeaturesetVersion_Value_Properties_MaterializationSettings_Schedule_Schedule struct {
-	Hours any
-	Minutes any
+	Hours     any
+	Minutes   any
 	MonthDays any
-	WeekDays any
+	WeekDays  any
 }
 
 type OpenapiFeaturesetVersion_Value_Properties_MaterializationSettings_Schedule struct {
 	Frequency any
-	Interval any
-	Schedule any
+	Interval  any
+	Schedule  any
 }
 
 type OpenapiFeaturesetVersion_Value_Properties_MaterializationSettings struct {
-	Notification any
-	Resource any
-	Schedule any
+	Notification       any
+	Resource           any
+	Schedule           any
 	SparkConfiguration any
-	StoreType any
+	StoreType          any
 }
 
 type OpenapiFeaturesetVersion_Value_Properties_Specification struct {
@@ -44,11 +44,11 @@ type OpenapiFeaturesetVersion_Value_Properties_Specification struct {
 }
 
 type OpenapiFeaturesetVersion_Value_Properties struct {
-	Entities any
+	Entities                any
 	MaterializationSettings any
-	ProvisioningState any
-	Specification any
-	Stage any
+	ProvisioningState       any
+	Specification           any
+	Stage                   any
 }
 
 type OpenapiFeaturesetVersion_Value struct {
@@ -56,47 +56,47 @@ type OpenapiFeaturesetVersion_Value struct {
 }
 
 type OpenapiFeaturesetVersionConfig struct {
-	CreatedBy any
-	Description any
-	ListViewType any
-	Name any
-	PageSize any
-	Stage any
-	Tags any
-	Version any
-	VersionName any
+	CreatedBy     any
+	Description   any
+	ListViewType  any
+	Name          any
+	PageSize      any
+	Stage         any
+	Tags          any
+	Version       any
+	VersionName   any
 	WorkspaceName any
 }
 
 type OpenapiFeaturesetVersionAttrs struct {
-	CreatedBy any
-	Description any
+	CreatedBy    any
+	Description  any
 	ListViewType any
-	Name any
+	Name         any
 	// The link to the next page of items
 	NextLink any
 	PageSize any
-	Stage any
-	Tags any
+	Stage    any
+	Tags     any
 	// The FeaturesetVersion items on this page
-	Value any
-	Version any
-	VersionName any
+	Value         any
+	Version       any
+	VersionName   any
 	WorkspaceName any
 }
 
 var OpenapiFeaturesetVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_featureset_version",
 	Fields: ubx.FieldMap{
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PageSize": ubx.FieldSpec{WireName: "page_size"},
-		"Stage": ubx.FieldSpec{WireName: "stage"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-		"VersionName": ubx.FieldSpec{WireName: "version_name"},
+		"CreatedBy":     ubx.FieldSpec{WireName: "created_by"},
+		"Description":   ubx.FieldSpec{WireName: "description"},
+		"ListViewType":  ubx.FieldSpec{WireName: "list_view_type"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"PageSize":      ubx.FieldSpec{WireName: "page_size"},
+		"Stage":         ubx.FieldSpec{WireName: "stage"},
+		"Tags":          ubx.FieldSpec{WireName: "tags"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
+		"VersionName":   ubx.FieldSpec{WireName: "version_name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

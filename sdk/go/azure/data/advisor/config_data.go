@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConfigData_Value_Properties_Digests struct {
 	ActionGroupResourceId any
-	Categories any
-	Frequency any
-	Language any
-	Name any
-	State any
+	Categories            any
+	Frequency             any
+	Language              any
+	Name                  any
+	State                 any
 }
 
 type ConfigData_Value_Properties struct {
-	Digests any
-	Duration any
-	Exclude any
+	Digests         any
+	Duration        any
+	Exclude         any
 	LowCpuThreshold any
 }
 
@@ -24,14 +24,14 @@ type ConfigData_Value struct {
 }
 
 type ConfigDataConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ConfigDataAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of configurations.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The list of configurations.
 	Value any
@@ -40,7 +40,7 @@ type ConfigDataAttrs struct {
 var ConfigData = ubx.DataSourceBinding{
 	WireType: "azure_advisor_config_data",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

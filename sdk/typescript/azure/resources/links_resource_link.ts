@@ -17,14 +17,8 @@ const LinksResourceLink_PropertiesFields: FieldMap = {
 };
 
 export interface LinksResourceLinkConfig {
-  /** The fully qualified ID of the resource link. */
-  id?: string | Computed<string>;
-  /** The name of the resource link. */
-  name?: string | Computed<string>;
   /** The resource link properties. */
   properties?: LinksResourceLink_Properties | Computed<LinksResourceLink_Properties>;
-  /** The resource link object. */
-  type?: unknown | Computed<unknown>;
 }
 
 export interface LinksResourceLinkAttrs {
@@ -41,13 +35,10 @@ export interface LinksResourceLinkAttrs {
 export const LinksResourceLink: ResourceBinding<LinksResourceLinkConfig, LinksResourceLinkAttrs> = {
   wireType: "azure_resources_links_resource_link",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: LinksResourceLink_PropertiesFields,
     },
-    type: "type",
   },
 };

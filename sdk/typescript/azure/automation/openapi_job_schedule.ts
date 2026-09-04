@@ -7,6 +7,8 @@ export interface OpenapiJobSchedule_Properties_Runbook {
 }
 
 export interface OpenapiJobSchedule_Properties {
+  /** Gets or sets the id of job schedule. */
+  jobScheduleId?: string | Computed<string>;
   /** Gets or sets a list of job properties. */
   parameters?: Record<string, string> | Computed<Record<string, string>>;
   /** Gets or sets the hybrid worker group that the scheduled job should run on. */
@@ -22,6 +24,7 @@ const OpenapiJobSchedule_Properties_RunbookFields: FieldMap = {
 };
 
 const OpenapiJobSchedule_PropertiesFields: FieldMap = {
+  jobScheduleId: "job_schedule_id",
   parameters: "parameters",
   runOn: "run_on",
   runbook: {

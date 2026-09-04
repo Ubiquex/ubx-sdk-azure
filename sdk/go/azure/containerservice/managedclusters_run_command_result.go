@@ -44,7 +44,7 @@ var ManagedclustersRunCommandResult = ubx.ResourceBinding{
 	WireType: "azure_containerservice_managedclusters_run_command_result",
 	Fields: ubx.FieldMap{
 		"ClusterToken": ubx.FieldSpec{WireName: "cluster_token"},
-		"Command": ubx.FieldSpec{WireName: "command"},
-		"Context": ubx.FieldSpec{WireName: "context"},
+		"Command":      ubx.FieldSpec{WireName: "command"},
+		"Context":      ubx.FieldSpec{WireName: "context"},
 	},
 }

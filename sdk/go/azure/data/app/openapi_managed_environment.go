@@ -4,41 +4,41 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedEnvironment_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiManagedEnvironment_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_AppLogsConfiguration_LogAnalyticsConfiguration struct {
 	CustomerId any
-	SharedKey any
+	SharedKey  any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_AppLogsConfiguration struct {
-	Destination any
+	Destination               any
 	LogAnalyticsConfiguration any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_CustomDomainConfiguration_CertificateKeyVaultProperties struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_CustomDomainConfiguration struct {
 	CertificateKeyVaultProperties any
-	CertificatePassword any
-	CertificateValue any
-	CustomDomainVerificationId any
-	DnsSuffix any
-	ExpirationDate any
-	SubjectName any
-	Thumbprint any
+	CertificatePassword           any
+	CertificateValue              any
+	CustomDomainVerificationId    any
+	DnsSuffix                     any
+	ExpirationDate                any
+	SubjectName                   any
+	Thumbprint                    any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_DaprConfiguration struct {
@@ -46,10 +46,10 @@ type OpenapiManagedEnvironment_Value_Properties_DaprConfiguration struct {
 }
 
 type OpenapiManagedEnvironment_Value_Properties_IngressConfiguration struct {
-	HeaderCountLimit any
-	RequestIdleTimeout any
+	HeaderCountLimit              any
+	RequestIdleTimeout            any
 	TerminationGracePeriodSeconds any
-	WorkloadProfileName any
+	WorkloadProfileName           any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_PeerAuthentication_Mtls struct {
@@ -70,15 +70,15 @@ type OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections_Prope
 
 type OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections struct {
@@ -86,46 +86,46 @@ type OpenapiManagedEnvironment_Value_Properties_PrivateEndpointConnections struc
 }
 
 type OpenapiManagedEnvironment_Value_Properties_VnetConfiguration struct {
-	DockerBridgeCidr any
+	DockerBridgeCidr       any
 	InfrastructureSubnetId any
-	Internal any
-	PlatformReservedCidr any
-	PlatformReservedDnsIp any
+	Internal               any
+	PlatformReservedCidr   any
+	PlatformReservedDnsIp  any
 }
 
 type OpenapiManagedEnvironment_Value_Properties_WorkloadProfiles struct {
-	MaximumCount any
-	MinimumCount any
-	Name any
+	MaximumCount        any
+	MinimumCount        any
+	Name                any
 	WorkloadProfileType any
 }
 
 type OpenapiManagedEnvironment_Value_Properties struct {
-	AppLogsConfiguration any
-	CustomDomainConfiguration any
-	DaprAiconnectionString any
-	DaprAiinstrumentationKey any
-	DaprConfiguration any
-	DefaultDomain any
-	DeploymentErrors any
-	EventStreamEndpoint any
+	AppLogsConfiguration        any
+	CustomDomainConfiguration   any
+	DaprAiconnectionString      any
+	DaprAiinstrumentationKey    any
+	DaprConfiguration           any
+	DefaultDomain               any
+	DeploymentErrors            any
+	EventStreamEndpoint         any
 	InfrastructureResourceGroup any
-	IngressConfiguration any
-	KedaConfiguration any
-	PeerAuthentication any
-	PeerTrafficConfiguration any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	StaticIp any
-	VnetConfiguration any
-	WorkloadProfiles any
-	ZoneRedundant any
+	IngressConfiguration        any
+	KedaConfiguration           any
+	PeerAuthentication          any
+	PeerTrafficConfiguration    any
+	PrivateEndpointConnections  any
+	ProvisioningState           any
+	PublicNetworkAccess         any
+	StaticIp                    any
+	VnetConfiguration           any
+	WorkloadProfiles            any
+	ZoneRedundant               any
 }
 
 type OpenapiManagedEnvironment_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
 }
 
@@ -141,6 +141,5 @@ type OpenapiManagedEnvironmentAttrs struct {
 
 var OpenapiManagedEnvironment = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_managed_environment",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

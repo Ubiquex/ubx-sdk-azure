@@ -15,16 +15,16 @@ type DbOpenapiPercentileMetric_Value_MetricValues struct {
 
 type DbOpenapiPercentileMetric_Value_Name struct {
 	LocalizedValue any
-	Value any
+	Value          any
 }
 
 type DbOpenapiPercentileMetric_Value struct {
-	EndTime any
+	EndTime      any
 	MetricValues any
-	Name any
-	StartTime any
-	TimeGrain any
-	Unit any
+	Name         any
+	StartTime    any
+	TimeGrain    any
+	Unit         any
 }
 
 type DbOpenapiPercentileMetricConfig struct {
@@ -33,7 +33,7 @@ type DbOpenapiPercentileMetricConfig struct {
 
 type DbOpenapiPercentileMetricAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// The list of percentile metrics for the account.
 	Value any
 }

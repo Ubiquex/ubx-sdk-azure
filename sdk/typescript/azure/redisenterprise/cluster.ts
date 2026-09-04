@@ -57,8 +57,6 @@ const Cluster_SkuFields: FieldMap = {
 export interface ClusterConfig {
   /** Managed service identity (system assigned and/or user assigned identities) */
   identity?: Cluster_Identity | Computed<Cluster_Identity>;
-  /** Distinguishes the kind of cluster. Read-only. */
-  kind?: string | Computed<string>;
   /** Properties of Redis Enterprise clusters for create operations */
   properties?: Cluster_Properties | Computed<Cluster_Properties>;
   /** SKU parameters supplied to the create Redis Enterprise cluster operation. */
@@ -88,7 +86,6 @@ export const Cluster: ResourceBinding<ClusterConfig, ClusterAttrs> = {
       kind: "object",
       fields: Cluster_IdentityFields,
     },
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

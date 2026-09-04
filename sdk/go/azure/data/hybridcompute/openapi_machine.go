@@ -4,41 +4,41 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMachine_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiMachine_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiMachine_Value_Properties_AgentConfiguration_ExtensionsAllowList struct {
 	Publisher any
-	Type any
+	Type      any
 }
 
 type OpenapiMachine_Value_Properties_AgentConfiguration struct {
-	ConfigMode any
-	ExtensionsAllowList any
-	ExtensionsBlockList any
-	ExtensionsEnabled any
+	ConfigMode                any
+	ExtensionsAllowList       any
+	ExtensionsBlockList       any
+	ExtensionsEnabled         any
 	GuestConfigurationEnabled any
-	IncomingConnectionsPorts any
-	ProxyBypass any
-	ProxyUrl any
+	IncomingConnectionsPorts  any
+	ProxyBypass               any
+	ProxyUrl                  any
 }
 
 type OpenapiMachine_Value_Properties_AgentUpgrade struct {
-	CorrelationId any
-	DesiredVersion any
-	EnableAutomaticUpgrade any
+	CorrelationId             any
+	DesiredVersion            any
+	EnableAutomaticUpgrade    any
 	LastAttemptDesiredVersion any
-	LastAttemptMessage any
-	LastAttemptStatus any
-	LastAttemptTimestamp any
+	LastAttemptMessage        any
+	LastAttemptStatus         any
+	LastAttemptTimestamp      any
 }
 
 type OpenapiMachine_Value_Properties_CloudMetadata struct {
@@ -55,72 +55,72 @@ type OpenapiMachine_Value_Properties_ErrorDetails_Details_Details struct {
 
 type OpenapiMachine_Value_Properties_ErrorDetails_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiMachine_Value_Properties_ErrorDetails struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type OpenapiMachine_Value_Properties_Extensions_Status struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type OpenapiMachine_Value_Properties_Extensions struct {
-	Name any
-	Status any
-	Type any
+	Name               any
+	Status             any
+	Type               any
 	TypeHandlerVersion any
 }
 
 type OpenapiMachine_Value_Properties_FirmwareProfile struct {
 	SerialNumber any
-	Type any
+	Type         any
 }
 
 type OpenapiMachine_Value_Properties_HardwareProfile_Processors struct {
-	Name any
+	Name          any
 	NumberOfCores any
 }
 
 type OpenapiMachine_Value_Properties_HardwareProfile struct {
-	NumberOfCpuSockets any
-	Processors any
+	NumberOfCpuSockets         any
+	Processors                 any
 	TotalPhysicalMemoryInBytes any
 }
 
 type OpenapiMachine_Value_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails_VolumeLicenseDetails struct {
-	InvoiceId any
+	InvoiceId   any
 	ProgramYear any
 }
 
 type OpenapiMachine_Value_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties_LicenseDetails struct {
-	AssignedLicenses any
-	Edition any
-	ImmutableId any
-	Processors any
-	State any
-	Target any
-	Type any
+	AssignedLicenses     any
+	Edition              any
+	ImmutableId          any
+	Processors           any
+	State                any
+	Target               any
+	Type                 any
 	VolumeLicenseDetails any
 }
 
 type OpenapiMachine_Value_Properties_LicenseProfile_EsuProfile_AssignedLicense_Properties struct {
-	LicenseDetails any
-	LicenseType any
+	LicenseDetails    any
+	LicenseType       any
 	ProvisioningState any
-	TenantId any
+	TenantId          any
 }
 
 type OpenapiMachine_Value_Properties_LicenseProfile_EsuProfile_AssignedLicense struct {
@@ -128,28 +128,28 @@ type OpenapiMachine_Value_Properties_LicenseProfile_EsuProfile_AssignedLicense s
 }
 
 type OpenapiMachine_Value_Properties_LicenseProfile_EsuProfile struct {
-	AssignedLicense any
+	AssignedLicense        any
 	LicenseAssignmentState any
 }
 
 type OpenapiMachine_Value_Properties_LicenseProfile_ProductProfile_ProductFeatures struct {
-	BillingEndDate any
-	BillingStartDate any
-	DisenrollmentDate any
-	EnrollmentDate any
-	Error any
-	Name any
+	BillingEndDate     any
+	BillingStartDate   any
+	DisenrollmentDate  any
+	EnrollmentDate     any
+	Error              any
+	Name               any
 	SubscriptionStatus any
 }
 
 type OpenapiMachine_Value_Properties_LicenseProfile_ProductProfile struct {
-	BillingEndDate any
-	BillingStartDate any
-	DisenrollmentDate any
-	EnrollmentDate any
-	Error any
-	ProductFeatures any
-	ProductType any
+	BillingEndDate     any
+	BillingStartDate   any
+	DisenrollmentDate  any
+	EnrollmentDate     any
+	Error              any
+	ProductFeatures    any
+	ProductType        any
 	SubscriptionStatus any
 }
 
@@ -158,18 +158,18 @@ type OpenapiMachine_Value_Properties_LicenseProfile_SoftwareAssurance struct {
 }
 
 type OpenapiMachine_Value_Properties_LicenseProfile struct {
-	EsuProfile any
-	LicenseChannel any
-	LicenseStatus any
-	ProductProfile any
+	EsuProfile        any
+	LicenseChannel    any
+	LicenseStatus     any
+	ProductProfile    any
 	SoftwareAssurance any
 }
 
 type OpenapiMachine_Value_Properties_LocationData struct {
-	City any
+	City            any
 	CountryOrRegion any
-	District any
-	Name any
+	District        any
+	Name            any
 }
 
 type OpenapiMachine_Value_Properties_NetworkProfile_NetworkInterfaces_IpAddresses_Subnet struct {
@@ -177,16 +177,16 @@ type OpenapiMachine_Value_Properties_NetworkProfile_NetworkInterfaces_IpAddresse
 }
 
 type OpenapiMachine_Value_Properties_NetworkProfile_NetworkInterfaces_IpAddresses struct {
-	Address any
+	Address          any
 	IpAddressVersion any
-	Subnet any
+	Subnet           any
 }
 
 type OpenapiMachine_Value_Properties_NetworkProfile_NetworkInterfaces struct {
-	Id any
+	Id          any
 	IpAddresses any
-	MacAddress any
-	Name any
+	MacAddress  any
+	Name        any
 }
 
 type OpenapiMachine_Value_Properties_NetworkProfile struct {
@@ -194,15 +194,15 @@ type OpenapiMachine_Value_Properties_NetworkProfile struct {
 }
 
 type OpenapiMachine_Value_Properties_OsProfile_LinuxConfiguration_PatchSettings_Status struct {
-	Error any
+	Error                    any
 	HotpatchEnablementStatus any
 }
 
 type OpenapiMachine_Value_Properties_OsProfile_LinuxConfiguration_PatchSettings struct {
-	AssessmentMode any
+	AssessmentMode    any
 	EnableHotpatching any
-	PatchMode any
-	Status any
+	PatchMode         any
+	Status            any
 }
 
 type OpenapiMachine_Value_Properties_OsProfile_LinuxConfiguration struct {
@@ -210,28 +210,28 @@ type OpenapiMachine_Value_Properties_OsProfile_LinuxConfiguration struct {
 }
 
 type OpenapiMachine_Value_Properties_OsProfile struct {
-	ComputerName any
-	LinuxConfiguration any
+	ComputerName         any
+	LinuxConfiguration   any
 	WindowsConfiguration any
 }
 
 type OpenapiMachine_Value_Properties_ServiceStatuses_ExtensionService struct {
 	StartupType any
-	Status any
+	Status      any
 }
 
 type OpenapiMachine_Value_Properties_ServiceStatuses struct {
-	ExtensionService any
+	ExtensionService          any
 	GuestConfigurationService any
 }
 
 type OpenapiMachine_Value_Properties_StorageProfile_Disks struct {
-	DiskType any
-	GeneratedId any
-	Id any
-	MaxSizeInBytes any
-	Name any
-	Path any
+	DiskType         any
+	GeneratedId      any
+	Id               any
+	MaxSizeInBytes   any
+	Name             any
+	Path             any
 	UsedSpaceInBytes any
 }
 
@@ -240,57 +240,57 @@ type OpenapiMachine_Value_Properties_StorageProfile struct {
 }
 
 type OpenapiMachine_Value_Properties struct {
-	AdFqdn any
-	AgentConfiguration any
-	AgentUpgrade any
-	AgentVersion any
-	ClientPublicKey any
-	CloudMetadata any
-	DetectedProperties any
-	DisplayName any
-	DnsFqdn any
-	DomainName any
-	ErrorDetails any
-	Extensions any
-	FirmwareProfile any
-	HardwareProfile any
-	HardwareResourceId any
-	IdentityKeyStore any
-	LastStatusChange any
-	LicenseProfile any
-	LocationData any
-	MachineFqdn any
-	MssqlDiscovered any
-	NetworkProfile any
-	OsEdition any
-	OsName any
-	OsProfile any
-	OsSku any
-	OsType any
-	OsVersion any
-	ParentClusterResourceId any
+	AdFqdn                     any
+	AgentConfiguration         any
+	AgentUpgrade               any
+	AgentVersion               any
+	ClientPublicKey            any
+	CloudMetadata              any
+	DetectedProperties         any
+	DisplayName                any
+	DnsFqdn                    any
+	DomainName                 any
+	ErrorDetails               any
+	Extensions                 any
+	FirmwareProfile            any
+	HardwareProfile            any
+	HardwareResourceId         any
+	IdentityKeyStore           any
+	LastStatusChange           any
+	LicenseProfile             any
+	LocationData               any
+	MachineFqdn                any
+	MssqlDiscovered            any
+	NetworkProfile             any
+	OsEdition                  any
+	OsName                     any
+	OsProfile                  any
+	OsSku                      any
+	OsType                     any
+	OsVersion                  any
+	ParentClusterResourceId    any
 	PrivateLinkScopeResourceId any
-	ProvisioningState any
-	ServiceStatuses any
-	Status any
-	StatusReason any
-	StorageProfile any
-	TpmEkCertificate any
-	VmId any
-	VmUuid any
+	ProvisioningState          any
+	ServiceStatuses            any
+	Status                     any
+	StatusReason               any
+	StorageProfile             any
+	TpmEkCertificate           any
+	VmId                       any
+	VmUuid                     any
 }
 
 type OpenapiMachine_Value_Resources_Properties struct {
 	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	ForceUpdateTag any
-	InstanceView any
-	ProtectedSettings any
-	ProvisioningState any
-	Publisher any
-	Settings any
-	Type any
-	TypeHandlerVersion any
+	EnableAutomaticUpgrade  any
+	ForceUpdateTag          any
+	InstanceView            any
+	ProtectedSettings       any
+	ProvisioningState       any
+	Publisher               any
+	Settings                any
+	Type                    any
+	TypeHandlerVersion      any
 }
 
 type OpenapiMachine_Value_Resources struct {
@@ -298,10 +298,10 @@ type OpenapiMachine_Value_Resources struct {
 }
 
 type OpenapiMachine_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Resources any
+	Resources  any
 }
 
 type OpenapiMachineConfig struct {
@@ -316,6 +316,5 @@ type OpenapiMachineAttrs struct {
 
 var OpenapiMachine = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_machine",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

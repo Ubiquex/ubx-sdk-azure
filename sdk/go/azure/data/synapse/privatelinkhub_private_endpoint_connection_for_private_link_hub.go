@@ -9,21 +9,21 @@ type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHub_Value_Properties_P
 
 type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHub_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHub_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHub_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHubConfig struct {
@@ -31,11 +31,10 @@ type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHubConfig struct {
 
 type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHubAttrs struct {
 	NextLink any
-	Value any
+	Value    any
 }
 
 var PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHub = ubx.DataSourceBinding{
 	WireType: "azure_synapse_privatelinkhub_private_endpoint_connection_for_private_link_hub",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

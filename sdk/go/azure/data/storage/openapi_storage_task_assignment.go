@@ -5,24 +5,24 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStorageTaskAssignment_Value_Properties_ExecutionContext_Target struct {
 	ExcludePrefix any
-	Prefix any
+	Prefix        any
 }
 
 type OpenapiStorageTaskAssignment_Value_Properties_ExecutionContext_Trigger_Parameters struct {
-	EndBy any
-	Interval any
+	EndBy        any
+	Interval     any
 	IntervalUnit any
-	StartFrom any
-	StartOn any
+	StartFrom    any
+	StartOn      any
 }
 
 type OpenapiStorageTaskAssignment_Value_Properties_ExecutionContext_Trigger struct {
 	Parameters any
-	Type any
+	Type       any
 }
 
 type OpenapiStorageTaskAssignment_Value_Properties_ExecutionContext struct {
-	Target any
+	Target  any
 	Trigger any
 }
 
@@ -31,30 +31,30 @@ type OpenapiStorageTaskAssignment_Value_Properties_Report struct {
 }
 
 type OpenapiStorageTaskAssignment_Value_Properties_RunStatus struct {
-	FinishTime any
-	ObjectFailedCount any
+	FinishTime             any
+	ObjectFailedCount      any
 	ObjectsOperatedOnCount any
-	ObjectsSucceededCount any
-	ObjectsTargetedCount any
-	RunResult any
-	RunStatusEnum any
-	RunStatusError any
-	StartTime any
-	StorageAccountId any
-	SummaryReportPath any
-	TaskAssignmentId any
-	TaskId any
-	TaskVersion any
+	ObjectsSucceededCount  any
+	ObjectsTargetedCount   any
+	RunResult              any
+	RunStatusEnum          any
+	RunStatusError         any
+	StartTime              any
+	StorageAccountId       any
+	SummaryReportPath      any
+	TaskAssignmentId       any
+	TaskId                 any
+	TaskVersion            any
 }
 
 type OpenapiStorageTaskAssignment_Value_Properties struct {
-	Description any
-	Enabled any
-	ExecutionContext any
+	Description       any
+	Enabled           any
+	ExecutionContext  any
 	ProvisioningState any
-	Report any
-	RunStatus any
-	TaskId any
+	Report            any
+	RunStatus         any
+	TaskId            any
 }
 
 type OpenapiStorageTaskAssignment_Value struct {

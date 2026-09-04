@@ -9,6 +9,8 @@ type OpenapiJobSchedule_Properties_Runbook struct {
 }
 
 type OpenapiJobSchedule_Properties struct {
+	// Gets or sets the id of job schedule.
+	JobScheduleId any
 	// Gets or sets a list of job properties.
 	Parameters any
 	// Gets or sets the hybrid worker group that the scheduled job should run on.
@@ -20,23 +22,24 @@ type OpenapiJobSchedule_Properties struct {
 }
 
 var OpenapiJobSchedule_Properties_RunbookFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiJobSchedule_PropertiesFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"RunOn": ubx.FieldSpec{WireName: "run_on"},
-		"Runbook": ubx.FieldSpec{
-			WireName: "runbook",
-			Kind: "object",
-			Fields: OpenapiJobSchedule_Properties_RunbookFields,
-		},
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "object",
-			Fields: OpenapiJobSchedule_Properties_RunbookFields,
-		},
-	}
+	"JobScheduleId": ubx.FieldSpec{WireName: "job_schedule_id"},
+	"Parameters":    ubx.FieldSpec{WireName: "parameters"},
+	"RunOn":         ubx.FieldSpec{WireName: "run_on"},
+	"Runbook": ubx.FieldSpec{
+		WireName: "runbook",
+		Kind:     "object",
+		Fields:   OpenapiJobSchedule_Properties_RunbookFields,
+	},
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "object",
+		Fields:   OpenapiJobSchedule_Properties_RunbookFields,
+	},
+}
 
 type OpenapiJobScheduleConfig struct {
 	// The parameters supplied to the create job schedule operation.
@@ -53,8 +56,8 @@ var OpenapiJobSchedule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiJobSchedule_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiJobSchedule_PropertiesFields,
 		},
 	},
 }

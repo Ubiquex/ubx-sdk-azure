@@ -89,8 +89,6 @@ const VirtualnetworkDdosCustomPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkDdosCustomPolicyConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** DDoS custom policy properties. */
   properties?: VirtualnetworkDdosCustomPolicy_Properties | Computed<VirtualnetworkDdosCustomPolicy_Properties>;
 }
@@ -105,7 +103,6 @@ export interface VirtualnetworkDdosCustomPolicyAttrs {
 export const VirtualnetworkDdosCustomPolicy: ResourceBinding<VirtualnetworkDdosCustomPolicyConfig, VirtualnetworkDdosCustomPolicyAttrs> = {
   wireType: "azure_network_virtualnetwork_ddos_custom_policy",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

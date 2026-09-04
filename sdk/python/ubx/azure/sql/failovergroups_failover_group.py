@@ -83,8 +83,6 @@ _FailovergroupsFailoverGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class FailovergroupsFailoverGroupConfig:
-    # Resource location.
-    location: Any = None
     # Properties of a failover group.
     properties: Any = None
     # Resource tags.
@@ -102,7 +100,6 @@ class FailovergroupsFailoverGroupAttrs:
 FailovergroupsFailoverGroup = ubx.ResourceBinding(
     wire_type="azure_sql_failovergroups_failover_group",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

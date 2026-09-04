@@ -42,43 +42,32 @@ type HealthcareApisIotConnector_SystemData struct {
 }
 
 var HealthcareApisIotConnector_Properties_DeviceMappingFields = ubx.FieldMap{
-		"Content": ubx.FieldSpec{WireName: "content"},
-	}
+	"Content": ubx.FieldSpec{WireName: "content"},
+}
 
 var HealthcareApisIotConnector_Properties_IngestionEndpointConfigurationFields = ubx.FieldMap{
-		"ConsumerGroup": ubx.FieldSpec{WireName: "consumer_group"},
-		"EventHubName": ubx.FieldSpec{WireName: "event_hub_name"},
-		"FullyQualifiedEventHubNamespace": ubx.FieldSpec{WireName: "fully_qualified_event_hub_namespace"},
-	}
+	"ConsumerGroup":                   ubx.FieldSpec{WireName: "consumer_group"},
+	"EventHubName":                    ubx.FieldSpec{WireName: "event_hub_name"},
+	"FullyQualifiedEventHubNamespace": ubx.FieldSpec{WireName: "fully_qualified_event_hub_namespace"},
+}
 
 var HealthcareApisIotConnector_PropertiesFields = ubx.FieldMap{
-		"DeviceMapping": ubx.FieldSpec{
-			WireName: "device_mapping",
-			Kind: "object",
-			Fields: HealthcareApisIotConnector_Properties_DeviceMappingFields,
-		},
-		"IngestionEndpointConfiguration": ubx.FieldSpec{
-			WireName: "ingestion_endpoint_configuration",
-			Kind: "object",
-			Fields: HealthcareApisIotConnector_Properties_IngestionEndpointConfigurationFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
-
-var HealthcareApisIotConnector_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"DeviceMapping": ubx.FieldSpec{
+		WireName: "device_mapping",
+		Kind:     "object",
+		Fields:   HealthcareApisIotConnector_Properties_DeviceMappingFields,
+	},
+	"IngestionEndpointConfiguration": ubx.FieldSpec{
+		WireName: "ingestion_endpoint_configuration",
+		Kind:     "object",
+		Fields:   HealthcareApisIotConnector_Properties_IngestionEndpointConfigurationFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type HealthcareApisIotConnectorConfig struct {
 	// IoT Connector properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type HealthcareApisIotConnectorAttrs struct {
@@ -93,13 +82,8 @@ var HealthcareApisIotConnector = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HealthcareApisIotConnector_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: HealthcareApisIotConnector_SystemDataFields,
+			Kind:     "object",
+			Fields:   HealthcareApisIotConnector_PropertiesFields,
 		},
 	},
 }

@@ -42,35 +42,35 @@ type ScriptExecution_Properties struct {
 }
 
 var ScriptExecution_Properties_HiddenParametersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ScriptExecution_PropertiesFields = ubx.FieldMap{
-		"Errors": ubx.FieldSpec{WireName: "errors"},
-		"FailureReason": ubx.FieldSpec{WireName: "failure_reason"},
-		"FinishedAt": ubx.FieldSpec{WireName: "finished_at"},
-		"HiddenParameters": ubx.FieldSpec{
-			WireName: "hidden_parameters",
-			Kind: "list",
-			Fields: ScriptExecution_Properties_HiddenParametersFields,
-		},
-		"Information": ubx.FieldSpec{WireName: "information"},
-		"NamedOutputs": ubx.FieldSpec{WireName: "named_outputs"},
-		"Output": ubx.FieldSpec{WireName: "output"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: ScriptExecution_Properties_HiddenParametersFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Retention": ubx.FieldSpec{WireName: "retention"},
-		"ScriptCmdletId": ubx.FieldSpec{WireName: "script_cmdlet_id"},
-		"StartedAt": ubx.FieldSpec{WireName: "started_at"},
-		"SubmittedAt": ubx.FieldSpec{WireName: "submitted_at"},
-		"Timeout": ubx.FieldSpec{WireName: "timeout"},
-		"Warnings": ubx.FieldSpec{WireName: "warnings"},
-	}
+	"Errors":        ubx.FieldSpec{WireName: "errors"},
+	"FailureReason": ubx.FieldSpec{WireName: "failure_reason"},
+	"FinishedAt":    ubx.FieldSpec{WireName: "finished_at"},
+	"HiddenParameters": ubx.FieldSpec{
+		WireName: "hidden_parameters",
+		Kind:     "list",
+		Fields:   ScriptExecution_Properties_HiddenParametersFields,
+	},
+	"Information":  ubx.FieldSpec{WireName: "information"},
+	"NamedOutputs": ubx.FieldSpec{WireName: "named_outputs"},
+	"Output":       ubx.FieldSpec{WireName: "output"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   ScriptExecution_Properties_HiddenParametersFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Retention":         ubx.FieldSpec{WireName: "retention"},
+	"ScriptCmdletId":    ubx.FieldSpec{WireName: "script_cmdlet_id"},
+	"StartedAt":         ubx.FieldSpec{WireName: "started_at"},
+	"SubmittedAt":       ubx.FieldSpec{WireName: "submitted_at"},
+	"Timeout":           ubx.FieldSpec{WireName: "timeout"},
+	"Warnings":          ubx.FieldSpec{WireName: "warnings"},
+}
 
 type ScriptExecutionConfig struct {
 	// Properties of a user-invoked script
@@ -87,8 +87,8 @@ var ScriptExecution = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ScriptExecution_PropertiesFields,
+			Kind:     "object",
+			Fields:   ScriptExecution_PropertiesFields,
 		},
 	},
 }

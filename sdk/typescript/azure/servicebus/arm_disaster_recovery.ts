@@ -23,8 +23,6 @@ const ArmDisasterRecovery_PropertiesFields: FieldMap = {
 };
 
 export interface ArmDisasterRecoveryConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties required to the Create Or Update Alias(Disaster Recovery configurations) */
   properties?: ArmDisasterRecovery_Properties | Computed<ArmDisasterRecovery_Properties>;
   /** path parameter, not part of the API's own resource representation */
@@ -43,7 +41,6 @@ export interface ArmDisasterRecoveryAttrs {
 export const ArmDisasterRecovery: ResourceBinding<ArmDisasterRecoveryConfig, ArmDisasterRecoveryAttrs> = {
   wireType: "azure_servicebus_arm_disaster_recovery",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

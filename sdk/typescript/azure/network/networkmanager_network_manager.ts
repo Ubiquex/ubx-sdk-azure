@@ -72,22 +72,9 @@ const NetworkmanagerNetworkManager_PropertiesFields: FieldMap = {
   resourceGuid: "resource_guid",
 };
 
-const NetworkmanagerNetworkManager_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerNetworkManagerConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of Managed Network */
   properties?: NetworkmanagerNetworkManager_Properties | Computed<NetworkmanagerNetworkManager_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerNetworkManager_SystemData | Computed<NetworkmanagerNetworkManager_SystemData>;
 }
 
 export interface NetworkmanagerNetworkManagerAttrs {
@@ -102,16 +89,10 @@ export interface NetworkmanagerNetworkManagerAttrs {
 export const NetworkmanagerNetworkManager: ResourceBinding<NetworkmanagerNetworkManagerConfig, NetworkmanagerNetworkManagerAttrs> = {
   wireType: "azure_network_networkmanager_network_manager",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerNetworkManager_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerNetworkManager_SystemDataFields,
     },
   },
 };

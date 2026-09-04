@@ -4,59 +4,59 @@ package iothub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IotHubDescription_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type IotHubDescription_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type IotHubDescription_Value_Properties_AuthorizationPolicies struct {
-	KeyName any
-	PrimaryKey any
-	Rights any
+	KeyName      any
+	PrimaryKey   any
+	Rights       any
 	SecondaryKey any
 }
 
 type IotHubDescription_Value_Properties_CloudToDevice_Feedback struct {
 	LockDurationAsIso8601 any
-	MaxDeliveryCount any
-	TtlAsIso8601 any
+	MaxDeliveryCount      any
+	TtlAsIso8601          any
 }
 
 type IotHubDescription_Value_Properties_CloudToDevice struct {
 	DefaultTtlAsIso8601 any
-	Feedback any
-	MaxDeliveryCount any
+	Feedback            any
+	MaxDeliveryCount    any
 }
 
 type IotHubDescription_Value_Properties_EventHubEndpoints struct {
-	Endpoint any
-	PartitionCount any
-	PartitionIds any
-	Path any
+	Endpoint            any
+	PartitionCount      any
+	PartitionIds        any
+	Path                any
 	RetentionTimeInDays any
 }
 
 type IotHubDescription_Value_Properties_IpFilterRules struct {
-	Action any
+	Action     any
 	FilterName any
-	IpMask any
+	IpMask     any
 }
 
 type IotHubDescription_Value_Properties_Locations struct {
 	Location any
-	Role any
+	Role     any
 }
 
 type IotHubDescription_Value_Properties_NetworkRuleSets struct {
 	ApplyToBuiltInEventHubEndpoint any
-	DefaultAction any
-	IpRules any
+	DefaultAction                  any
+	IpRules                        any
 }
 
 type IotHubDescription_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -65,20 +65,20 @@ type IotHubDescription_Value_Properties_PrivateEndpointConnections_Properties_Pr
 
 type IotHubDescription_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type IotHubDescription_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
 }
 
 type IotHubDescription_Value_Properties_PrivateEndpointConnections struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type IotHubDescription_Value_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity struct {
@@ -86,145 +86,145 @@ type IotHubDescription_Value_Properties_Routing_Endpoints_CosmosDbsqlContainers_
 }
 
 type IotHubDescription_Value_Properties_Routing_Endpoints_CosmosDbsqlContainers struct {
-	AuthenticationType any
-	ContainerName any
-	DatabaseName any
-	EndpointUri any
-	Id any
-	Identity any
-	Name any
-	PartitionKeyName any
+	AuthenticationType   any
+	ContainerName        any
+	DatabaseName         any
+	EndpointUri          any
+	Id                   any
+	Identity             any
+	Name                 any
+	PartitionKeyName     any
 	PartitionKeyTemplate any
-	PrimaryKey any
-	ResourceGroup any
-	SecondaryKey any
-	SubscriptionId any
+	PrimaryKey           any
+	ResourceGroup        any
+	SecondaryKey         any
+	SubscriptionId       any
 }
 
 type IotHubDescription_Value_Properties_Routing_Endpoints_EventHubs struct {
 	AuthenticationType any
-	ConnectionString any
-	EndpointUri any
-	EntityPath any
-	Id any
-	Identity any
-	Name any
-	ResourceGroup any
-	SubscriptionId any
+	ConnectionString   any
+	EndpointUri        any
+	EntityPath         any
+	Id                 any
+	Identity           any
+	Name               any
+	ResourceGroup      any
+	SubscriptionId     any
 }
 
 type IotHubDescription_Value_Properties_Routing_Endpoints_StorageContainers struct {
-	AuthenticationType any
+	AuthenticationType      any
 	BatchFrequencyInSeconds any
-	ConnectionString any
-	ContainerName any
-	Encoding any
-	EndpointUri any
-	FileNameFormat any
-	Id any
-	Identity any
-	MaxChunkSizeInBytes any
-	Name any
-	ResourceGroup any
-	SubscriptionId any
+	ConnectionString        any
+	ContainerName           any
+	Encoding                any
+	EndpointUri             any
+	FileNameFormat          any
+	Id                      any
+	Identity                any
+	MaxChunkSizeInBytes     any
+	Name                    any
+	ResourceGroup           any
+	SubscriptionId          any
 }
 
 type IotHubDescription_Value_Properties_Routing_Endpoints struct {
 	CosmosDbsqlContainers any
-	EventHubs any
-	ServiceBusQueues any
-	ServiceBusTopics any
-	StorageContainers any
+	EventHubs             any
+	ServiceBusQueues      any
+	ServiceBusTopics      any
+	StorageContainers     any
 }
 
 type IotHubDescription_Value_Properties_Routing_Enrichments struct {
 	EndpointNames any
-	Key any
-	Value any
+	Key           any
+	Value         any
 }
 
 type IotHubDescription_Value_Properties_Routing_FallbackRoute struct {
-	Condition any
+	Condition     any
 	EndpointNames any
-	IsEnabled any
-	Name any
-	Source any
+	IsEnabled     any
+	Name          any
+	Source        any
 }
 
 type IotHubDescription_Value_Properties_Routing struct {
-	Endpoints any
-	Enrichments any
+	Endpoints     any
+	Enrichments   any
 	FallbackRoute any
-	Routes any
+	Routes        any
 }
 
 type IotHubDescription_Value_Properties_StorageEndpoints struct {
 	AuthenticationType any
-	ConnectionString any
-	ContainerName any
-	Identity any
-	SasTtlAsIso8601 any
+	ConnectionString   any
+	ContainerName      any
+	Identity           any
+	SasTtlAsIso8601    any
 }
 
 type IotHubDescription_Value_Properties struct {
-	AllowedFqdnList any
-	AuthorizationPolicies any
-	CloudToDevice any
-	Comments any
-	DisableDeviceSas any
-	DisableLocalAuth any
-	DisableModuleSas any
-	EnableDataResidency any
+	AllowedFqdnList               any
+	AuthorizationPolicies         any
+	CloudToDevice                 any
+	Comments                      any
+	DisableDeviceSas              any
+	DisableLocalAuth              any
+	DisableModuleSas              any
+	EnableDataResidency           any
 	EnableFileUploadNotifications any
-	EventHubEndpoints any
-	Features any
-	HostName any
-	IpFilterRules any
-	Locations any
-	MessagingEndpoints any
-	MinTlsVersion any
-	NetworkRuleSets any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	EventHubEndpoints             any
+	Features                      any
+	HostName                      any
+	IpFilterRules                 any
+	Locations                     any
+	MessagingEndpoints            any
+	MinTlsVersion                 any
+	NetworkRuleSets               any
+	PrivateEndpointConnections    any
+	ProvisioningState             any
+	PublicNetworkAccess           any
 	RestrictOutboundNetworkAccess any
-	Routing any
-	State any
-	StorageEndpoints any
+	Routing                       any
+	State                         any
+	StorageEndpoints              any
 }
 
 type IotHubDescription_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type IotHubDescription_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type IotHubDescription_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 	SystemData any
 }
 
 type IotHubDescriptionConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type IotHubDescriptionAttrs struct {
 	ApiVersion any
 	// The next link.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The array of IotHubDescription objects.
 	Value any
@@ -233,7 +233,7 @@ type IotHubDescriptionAttrs struct {
 var IotHubDescription = ubx.DataSourceBinding{
 	WireType: "azure_iothub_iot_hub_description",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -11,15 +11,11 @@ type MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentity struct {
 }
 
 type MachineDiagnosticRunCommand_Properties_InstanceView_Statuses struct {
-	// The status code for the instance view status, indicating the state of the diagnostic run command. (AI-inferred)
-	Code any
+	Code          any
 	DisplayStatus any
-	// The severity level of the instance view status. Possible values are 'Info', 'Warning', and 'Error'. (AI-inferred)
-	Level any
-	// The message that provides additional details about the status of the diagnostic run command, such as error information or execution progress. (AI-inferred)
-	Message any
-	// The timestamp when the status was recorded, in ISO 8601 format. (AI-inferred)
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type MachineDiagnosticRunCommand_Properties_InstanceView struct {
@@ -42,8 +38,7 @@ type MachineDiagnosticRunCommand_Properties_InstanceView struct {
 }
 
 type MachineDiagnosticRunCommand_Properties_Parameters struct {
-	Name any
-	// The value of the parameter to pass to the diagnostic run command. (AI-inferred)
+	Name  any
 	Value any
 }
 
@@ -94,91 +89,91 @@ type MachineDiagnosticRunCommand_Properties struct {
 }
 
 var MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentityFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-	}
+	"ClientId": ubx.FieldSpec{WireName: "client_id"},
+	"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+}
 
 var MachineDiagnosticRunCommand_Properties_InstanceView_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var MachineDiagnosticRunCommand_Properties_InstanceViewFields = ubx.FieldMap{
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Error": ubx.FieldSpec{WireName: "error"},
-		"ExecutionMessage": ubx.FieldSpec{WireName: "execution_message"},
-		"ExecutionState": ubx.FieldSpec{WireName: "execution_state"},
-		"ExitCode": ubx.FieldSpec{WireName: "exit_code"},
-		"Output": ubx.FieldSpec{WireName: "output"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: MachineDiagnosticRunCommand_Properties_InstanceView_StatusesFields,
-		},
-	}
+	"EndTime":          ubx.FieldSpec{WireName: "end_time"},
+	"Error":            ubx.FieldSpec{WireName: "error"},
+	"ExecutionMessage": ubx.FieldSpec{WireName: "execution_message"},
+	"ExecutionState":   ubx.FieldSpec{WireName: "execution_state"},
+	"ExitCode":         ubx.FieldSpec{WireName: "exit_code"},
+	"Output":           ubx.FieldSpec{WireName: "output"},
+	"StartTime":        ubx.FieldSpec{WireName: "start_time"},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   MachineDiagnosticRunCommand_Properties_InstanceView_StatusesFields,
+	},
+}
 
 var MachineDiagnosticRunCommand_Properties_ParametersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var MachineDiagnosticRunCommand_Properties_SourceFields = ubx.FieldMap{
-		"CommandId": ubx.FieldSpec{WireName: "command_id"},
-		"GalleryScriptReferenceId": ubx.FieldSpec{WireName: "gallery_script_reference_id"},
-		"Script": ubx.FieldSpec{WireName: "script"},
-		"ScriptShell": ubx.FieldSpec{WireName: "script_shell"},
-		"ScriptUri": ubx.FieldSpec{WireName: "script_uri"},
-		"ScriptUriManagedIdentity": ubx.FieldSpec{
-			WireName: "script_uri_managed_identity",
-			Kind: "object",
-			Fields: MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentityFields,
-		},
-	}
+	"CommandId":                ubx.FieldSpec{WireName: "command_id"},
+	"GalleryScriptReferenceId": ubx.FieldSpec{WireName: "gallery_script_reference_id"},
+	"Script":                   ubx.FieldSpec{WireName: "script"},
+	"ScriptShell":              ubx.FieldSpec{WireName: "script_shell"},
+	"ScriptUri":                ubx.FieldSpec{WireName: "script_uri"},
+	"ScriptUriManagedIdentity": ubx.FieldSpec{
+		WireName: "script_uri_managed_identity",
+		Kind:     "object",
+		Fields:   MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentityFields,
+	},
+}
 
 var MachineDiagnosticRunCommand_PropertiesFields = ubx.FieldMap{
-		"AsyncExecution": ubx.FieldSpec{WireName: "async_execution"},
-		"ErrorBlobManagedIdentity": ubx.FieldSpec{
-			WireName: "error_blob_managed_identity",
-			Kind: "object",
-			Fields: MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentityFields,
-		},
-		"ErrorBlobUri": ubx.FieldSpec{WireName: "error_blob_uri"},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: MachineDiagnosticRunCommand_Properties_InstanceViewFields,
-		},
-		"OutputBlobManagedIdentity": ubx.FieldSpec{
-			WireName: "output_blob_managed_identity",
-			Kind: "object",
-			Fields: MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentityFields,
-		},
-		"OutputBlobUri": ubx.FieldSpec{WireName: "output_blob_uri"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: MachineDiagnosticRunCommand_Properties_ParametersFields,
-		},
-		"ProtectedParameters": ubx.FieldSpec{
-			WireName: "protected_parameters",
-			Kind: "list",
-			Fields: MachineDiagnosticRunCommand_Properties_ParametersFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RunAsPassword": ubx.FieldSpec{WireName: "run_as_password"},
-		"RunAsUser": ubx.FieldSpec{WireName: "run_as_user"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: MachineDiagnosticRunCommand_Properties_SourceFields,
-		},
-		"TimeoutInSeconds": ubx.FieldSpec{WireName: "timeout_in_seconds"},
-		"TreatFailureAsDeploymentFailure": ubx.FieldSpec{WireName: "treat_failure_as_deployment_failure"},
-	}
+	"AsyncExecution": ubx.FieldSpec{WireName: "async_execution"},
+	"ErrorBlobManagedIdentity": ubx.FieldSpec{
+		WireName: "error_blob_managed_identity",
+		Kind:     "object",
+		Fields:   MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentityFields,
+	},
+	"ErrorBlobUri": ubx.FieldSpec{WireName: "error_blob_uri"},
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   MachineDiagnosticRunCommand_Properties_InstanceViewFields,
+	},
+	"OutputBlobManagedIdentity": ubx.FieldSpec{
+		WireName: "output_blob_managed_identity",
+		Kind:     "object",
+		Fields:   MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentityFields,
+	},
+	"OutputBlobUri": ubx.FieldSpec{WireName: "output_blob_uri"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   MachineDiagnosticRunCommand_Properties_ParametersFields,
+	},
+	"ProtectedParameters": ubx.FieldSpec{
+		WireName: "protected_parameters",
+		Kind:     "list",
+		Fields:   MachineDiagnosticRunCommand_Properties_ParametersFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RunAsPassword":     ubx.FieldSpec{WireName: "run_as_password"},
+	"RunAsUser":         ubx.FieldSpec{WireName: "run_as_user"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   MachineDiagnosticRunCommand_Properties_SourceFields,
+	},
+	"TimeoutInSeconds":                ubx.FieldSpec{WireName: "timeout_in_seconds"},
+	"TreatFailureAsDeploymentFailure": ubx.FieldSpec{WireName: "treat_failure_as_deployment_failure"},
+}
 
 type MachineDiagnosticRunCommandConfig struct {
 	// Describes the properties of a Virtual Machine run command.
@@ -195,8 +190,8 @@ var MachineDiagnosticRunCommand = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MachineDiagnosticRunCommand_PropertiesFields,
+			Kind:     "object",
+			Fields:   MachineDiagnosticRunCommand_PropertiesFields,
 		},
 	},
 }

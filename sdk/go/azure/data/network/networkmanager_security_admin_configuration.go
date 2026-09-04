@@ -4,19 +4,19 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerSecurityAdminConfiguration_Value_Properties struct {
-	ApplyOnNetworkIntentPolicyBasedServices any
-	Description any
+	ApplyOnNetworkIntentPolicyBasedServices   any
+	Description                               any
 	NetworkGroupAddressSpaceAggregationOption any
-	ProvisioningState any
-	ResourceGuid any
+	ProvisioningState                         any
+	ResourceGuid                              any
 }
 
 type NetworkmanagerSecurityAdminConfiguration_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 

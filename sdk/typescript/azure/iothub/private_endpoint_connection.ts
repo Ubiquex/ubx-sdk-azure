@@ -46,14 +46,8 @@ const PrivateEndpointConnection_PropertiesFields: FieldMap = {
 };
 
 export interface PrivateEndpointConnectionConfig {
-  /** The resource identifier. */
-  id?: string | Computed<string>;
-  /** The resource name. */
-  name?: string | Computed<string>;
   /** The properties of a private endpoint connection */
   properties: PrivateEndpointConnection_Properties | Computed<PrivateEndpointConnection_Properties>;
-  /** The resource type. */
-  type?: string | Computed<string>;
 }
 
 export interface PrivateEndpointConnectionAttrs {
@@ -70,13 +64,10 @@ export interface PrivateEndpointConnectionAttrs {
 export const PrivateEndpointConnection: ResourceBinding<PrivateEndpointConnectionConfig, PrivateEndpointConnectionAttrs> = {
   wireType: "azure_iothub_private_endpoint_connection",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: PrivateEndpointConnection_PropertiesFields,
     },
-    type: "type",
   },
 };

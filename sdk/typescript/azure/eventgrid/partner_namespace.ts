@@ -121,20 +121,9 @@ const PartnerNamespace_PropertiesFields: FieldMap = {
   publicNetworkAccess: "public_network_access",
 };
 
-const PartnerNamespace_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface PartnerNamespaceConfig {
   /** Properties of the partner namespace. */
   properties?: PartnerNamespace_Properties | Computed<PartnerNamespace_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: PartnerNamespace_SystemData | Computed<PartnerNamespace_SystemData>;
 }
 
 export interface PartnerNamespaceAttrs {
@@ -151,11 +140,6 @@ export const PartnerNamespace: ResourceBinding<PartnerNamespaceConfig, PartnerNa
       wireName: "properties",
       kind: "object",
       fields: PartnerNamespace_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: PartnerNamespace_SystemDataFields,
     },
   },
 };

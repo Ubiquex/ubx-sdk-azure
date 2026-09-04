@@ -4,20 +4,20 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEndpoint_Value_Properties_CustomDomains_Properties struct {
-	HostName any
+	HostName       any
 	ValidationData any
 }
 
 type OpenapiEndpoint_Value_Properties_CustomDomains struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiEndpoint_Value_Properties_OriginGroups_Properties_HealthProbeSettings struct {
 	ProbeIntervalInSeconds any
-	ProbePath any
-	ProbeProtocol any
-	ProbeRequestType any
+	ProbePath              any
+	ProbeProtocol          any
+	ProbeRequestType       any
 }
 
 type OpenapiEndpoint_Value_Properties_OriginGroups_Properties_Origins struct {
@@ -26,54 +26,54 @@ type OpenapiEndpoint_Value_Properties_OriginGroups_Properties_Origins struct {
 
 type OpenapiEndpoint_Value_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings_HttpErrorRanges struct {
 	Begin any
-	End any
+	End   any
 }
 
 type OpenapiEndpoint_Value_Properties_OriginGroups_Properties_ResponseBasedOriginErrorDetectionSettings struct {
-	HttpErrorRanges any
-	ResponseBasedDetectedErrorTypes any
+	HttpErrorRanges                          any
+	ResponseBasedDetectedErrorTypes          any
 	ResponseBasedFailoverThresholdPercentage any
 }
 
 type OpenapiEndpoint_Value_Properties_OriginGroups_Properties struct {
-	HealthProbeSettings any
-	Origins any
-	ResponseBasedOriginErrorDetectionSettings any
+	HealthProbeSettings                                   any
+	Origins                                               any
+	ResponseBasedOriginErrorDetectionSettings             any
 	TrafficRestorationTimeToHealedOrNewEndpointsInMinutes any
 }
 
 type OpenapiEndpoint_Value_Properties_OriginGroups struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiEndpoint_Value_Properties_Origins_Properties struct {
-	Enabled any
-	HostName any
-	HttpPort any
-	HttpsPort any
-	OriginHostHeader any
-	Priority any
-	PrivateEndpointStatus any
-	PrivateLinkAlias any
+	Enabled                    any
+	HostName                   any
+	HttpPort                   any
+	HttpsPort                  any
+	OriginHostHeader           any
+	Priority                   any
+	PrivateEndpointStatus      any
+	PrivateLinkAlias           any
 	PrivateLinkApprovalMessage any
-	PrivateLinkLocation any
-	PrivateLinkResourceId any
-	Weight any
+	PrivateLinkLocation        any
+	PrivateLinkResourceId      any
+	Weight                     any
 }
 
 type OpenapiEndpoint_Value_Properties_Origins struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiEndpoint_Value_Properties struct {
-	CustomDomains any
-	HostName any
-	OriginGroups any
-	Origins any
+	CustomDomains     any
+	HostName          any
+	OriginGroups      any
+	Origins           any
 	ProvisioningState any
-	ResourceState any
+	ResourceState     any
 }
 
 type OpenapiEndpoint_Value struct {
@@ -86,7 +86,7 @@ type OpenapiEndpointConfig struct {
 
 type OpenapiEndpointAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The Endpoint items on this page
 	Value any

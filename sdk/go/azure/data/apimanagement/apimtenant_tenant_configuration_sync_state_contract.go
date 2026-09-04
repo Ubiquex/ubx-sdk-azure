@@ -32,6 +32,5 @@ type ApimtenantTenantConfigurationSyncStateContractAttrs struct {
 
 var ApimtenantTenantConfigurationSyncStateContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimtenant_tenant_configuration_sync_state_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

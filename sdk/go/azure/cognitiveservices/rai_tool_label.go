@@ -10,7 +10,7 @@ type RaiToolLabel_Properties_AccountScope struct {
 
 type RaiToolLabel_Properties_ProjectScopes struct {
 	LabelValues any
-	Project any
+	Project     any
 }
 
 type RaiToolLabel_Properties struct {
@@ -23,31 +23,29 @@ type RaiToolLabel_Properties struct {
 }
 
 var RaiToolLabel_Properties_AccountScopeFields = ubx.FieldMap{
-		"LabelValues": ubx.FieldSpec{WireName: "label_values"},
-	}
+	"LabelValues": ubx.FieldSpec{WireName: "label_values"},
+}
 
 var RaiToolLabel_Properties_ProjectScopesFields = ubx.FieldMap{
-		"LabelValues": ubx.FieldSpec{WireName: "label_values"},
-		"Project": ubx.FieldSpec{WireName: "project"},
-	}
+	"LabelValues": ubx.FieldSpec{WireName: "label_values"},
+	"Project":     ubx.FieldSpec{WireName: "project"},
+}
 
 var RaiToolLabel_PropertiesFields = ubx.FieldMap{
-		"AccountScope": ubx.FieldSpec{
-			WireName: "account_scope",
-			Kind: "object",
-			Fields: RaiToolLabel_Properties_AccountScopeFields,
-		},
-		"ProjectScopes": ubx.FieldSpec{
-			WireName: "project_scopes",
-			Kind: "list",
-			Fields: RaiToolLabel_Properties_ProjectScopesFields,
-		},
-		"ToolConnectionName": ubx.FieldSpec{WireName: "tool_connection_name"},
-	}
+	"AccountScope": ubx.FieldSpec{
+		WireName: "account_scope",
+		Kind:     "object",
+		Fields:   RaiToolLabel_Properties_AccountScopeFields,
+	},
+	"ProjectScopes": ubx.FieldSpec{
+		WireName: "project_scopes",
+		Kind:     "list",
+		Fields:   RaiToolLabel_Properties_ProjectScopesFields,
+	},
+	"ToolConnectionName": ubx.FieldSpec{WireName: "tool_connection_name"},
+}
 
 type RaiToolLabelConfig struct {
-	// Resource Etag.
-	Etag any
 	// RAI Tool Label properties.
 	Properties any
 	// Resource tags.
@@ -66,11 +64,10 @@ type RaiToolLabelAttrs struct {
 var RaiToolLabel = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_rai_tool_label",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RaiToolLabel_PropertiesFields,
+			Kind:     "object",
+			Fields:   RaiToolLabel_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -19,10 +19,10 @@ type OpenapiBackupItem_Properties_BackupSchedule struct {
 }
 
 type OpenapiBackupItem_Properties_Databases struct {
-	ConnectionString any
+	ConnectionString     any
 	ConnectionStringName any
-	DatabaseType any
-	Name any
+	DatabaseType         any
+	Name                 any
 }
 
 type OpenapiBackupItem_Properties struct {
@@ -30,45 +30,81 @@ type OpenapiBackupItem_Properties struct {
 	BackupName any
 	// Description of a backup schedule. Describes how often should be the backup performed and what should be the retention policy.
 	BackupSchedule any
+	// Name of the blob which contains data for this backup.
+	BlobName any
+	// Unique correlation identifier. Please use this along with the timestamp while communicating with Azure support.
+	CorrelationId any
+	// Timestamp of the backup creation.
+	Created any
 	// Databases included in the backup.
 	Databases any
 	// True if the backup schedule is enabled (must be included in that case), false if the backup schedule should be disabled.
 	Enabled any
+	// Timestamp when this backup finished.
+	FinishedTimeStamp any
+	// Id of the backup.
+	Id any
+	// Timestamp of a last restore operation which used this backup.
+	LastRestoreTimeStamp any
+	// Details regarding this backup. Might contain an error message.
+	Log any
+	// Name of this backup.
+	Name any
+	// True if this backup has been created due to a schedule being triggered.
+	Scheduled any
+	// Size of the backup in bytes.
+	SizeInBytes any
+	// Backup status.
+	Status any
 	// SAS URL to the container.
 	StorageAccountUrl any
+	// Size of the original web app which has been backed up.
+	WebsiteSizeInBytes any
 }
 
 var OpenapiBackupItem_Properties_BackupScheduleFields = ubx.FieldMap{
-		"FrequencyInterval": ubx.FieldSpec{WireName: "frequency_interval"},
-		"FrequencyUnit": ubx.FieldSpec{WireName: "frequency_unit"},
-		"KeepAtLeastOneBackup": ubx.FieldSpec{WireName: "keep_at_least_one_backup"},
-		"LastExecutionTime": ubx.FieldSpec{WireName: "last_execution_time"},
-		"RetentionPeriodInDays": ubx.FieldSpec{WireName: "retention_period_in_days"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-	}
+	"FrequencyInterval":     ubx.FieldSpec{WireName: "frequency_interval"},
+	"FrequencyUnit":         ubx.FieldSpec{WireName: "frequency_unit"},
+	"KeepAtLeastOneBackup":  ubx.FieldSpec{WireName: "keep_at_least_one_backup"},
+	"LastExecutionTime":     ubx.FieldSpec{WireName: "last_execution_time"},
+	"RetentionPeriodInDays": ubx.FieldSpec{WireName: "retention_period_in_days"},
+	"StartTime":             ubx.FieldSpec{WireName: "start_time"},
+}
 
 var OpenapiBackupItem_Properties_DatabasesFields = ubx.FieldMap{
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"ConnectionStringName": ubx.FieldSpec{WireName: "connection_string_name"},
-		"DatabaseType": ubx.FieldSpec{WireName: "database_type"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"ConnectionString":     ubx.FieldSpec{WireName: "connection_string"},
+	"ConnectionStringName": ubx.FieldSpec{WireName: "connection_string_name"},
+	"DatabaseType":         ubx.FieldSpec{WireName: "database_type"},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiBackupItem_PropertiesFields = ubx.FieldMap{
-		"BackupName": ubx.FieldSpec{WireName: "backup_name"},
-		"BackupSchedule": ubx.FieldSpec{
-			WireName: "backup_schedule",
-			Kind: "object",
-			Fields: OpenapiBackupItem_Properties_BackupScheduleFields,
-		},
-		"Databases": ubx.FieldSpec{
-			WireName: "databases",
-			Kind: "list",
-			Fields: OpenapiBackupItem_Properties_DatabasesFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"StorageAccountUrl": ubx.FieldSpec{WireName: "storage_account_url"},
-	}
+	"BackupName": ubx.FieldSpec{WireName: "backup_name"},
+	"BackupSchedule": ubx.FieldSpec{
+		WireName: "backup_schedule",
+		Kind:     "object",
+		Fields:   OpenapiBackupItem_Properties_BackupScheduleFields,
+	},
+	"BlobName":      ubx.FieldSpec{WireName: "blob_name"},
+	"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
+	"Created":       ubx.FieldSpec{WireName: "created"},
+	"Databases": ubx.FieldSpec{
+		WireName: "databases",
+		Kind:     "list",
+		Fields:   OpenapiBackupItem_Properties_DatabasesFields,
+	},
+	"Enabled":              ubx.FieldSpec{WireName: "enabled"},
+	"FinishedTimeStamp":    ubx.FieldSpec{WireName: "finished_time_stamp"},
+	"Id":                   ubx.FieldSpec{WireName: "id"},
+	"LastRestoreTimeStamp": ubx.FieldSpec{WireName: "last_restore_time_stamp"},
+	"Log":                  ubx.FieldSpec{WireName: "log"},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+	"Scheduled":            ubx.FieldSpec{WireName: "scheduled"},
+	"SizeInBytes":          ubx.FieldSpec{WireName: "size_in_bytes"},
+	"Status":               ubx.FieldSpec{WireName: "status"},
+	"StorageAccountUrl":    ubx.FieldSpec{WireName: "storage_account_url"},
+	"WebsiteSizeInBytes":   ubx.FieldSpec{WireName: "website_size_in_bytes"},
+}
 
 type OpenapiBackupItemConfig struct {
 	// BackupRequest resource specific properties
@@ -91,8 +127,8 @@ var OpenapiBackupItem = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBackupItem_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBackupItem_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

@@ -32,39 +32,22 @@ type LocksManagementLockObject_SystemData struct {
 }
 
 var LocksManagementLockObject_Properties_OwnersFields = ubx.FieldMap{
-		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-	}
+	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+}
 
 var LocksManagementLockObject_PropertiesFields = ubx.FieldMap{
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Notes": ubx.FieldSpec{WireName: "notes"},
-		"Owners": ubx.FieldSpec{
-			WireName: "owners",
-			Kind: "list",
-			Fields: LocksManagementLockObject_Properties_OwnersFields,
-		},
-	}
-
-var LocksManagementLockObject_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Level": ubx.FieldSpec{WireName: "level"},
+	"Notes": ubx.FieldSpec{WireName: "notes"},
+	"Owners": ubx.FieldSpec{
+		WireName: "owners",
+		Kind:     "list",
+		Fields:   LocksManagementLockObject_Properties_OwnersFields,
+	},
+}
 
 type LocksManagementLockObjectConfig struct {
-	// The resource ID of the lock.
-	Id any
-	// The name of the lock.
-	Name any
 	// The lock properties.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
-	// The resource type of the lock - Microsoft.Authorization/locks.
-	Type any
 }
 
 type LocksManagementLockObjectAttrs struct {
@@ -83,18 +66,10 @@ type LocksManagementLockObjectAttrs struct {
 var LocksManagementLockObject = ubx.ResourceBinding{
 	WireType: "azure_resources_locks_management_lock_object",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: LocksManagementLockObject_PropertiesFields,
+			Kind:     "object",
+			Fields:   LocksManagementLockObject_PropertiesFields,
 		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: LocksManagementLockObject_SystemDataFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

@@ -4,36 +4,36 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTriggeredWebJob_Value_Properties_LatestRun struct {
-	Duration any
-	EndTime any
-	ErrorUrl any
-	JobName any
-	OutputUrl any
-	StartTime any
-	Status any
-	Trigger any
-	Url any
-	WebJobId any
+	Duration   any
+	EndTime    any
+	ErrorUrl   any
+	JobName    any
+	OutputUrl  any
+	StartTime  any
+	Status     any
+	Trigger    any
+	Url        any
+	WebJobId   any
 	WebJobName any
 }
 
 type OpenapiTriggeredWebJob_Value_Properties struct {
-	Error any
-	ExtraInfoUrl any
-	HistoryUrl any
-	LatestRun any
-	PublicNetworkAccess any
-	RunCommand any
-	SchedulerLogsUrl any
-	Settings any
+	Error                  any
+	ExtraInfoUrl           any
+	HistoryUrl             any
+	LatestRun              any
+	PublicNetworkAccess    any
+	RunCommand             any
+	SchedulerLogsUrl       any
+	Settings               any
 	StorageAccountRequired any
-	Url any
-	UsingSdk any
-	WebJobType any
+	Url                    any
+	UsingSdk               any
+	WebJobType             any
 }
 
 type OpenapiTriggeredWebJob_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -46,7 +46,7 @@ type OpenapiTriggeredWebJobAttrs struct {
 	Name any
 	// The link to the next page of items
 	NextLink any
-	Slot any
+	Slot     any
 	// The TriggeredWebJob items on this page
 	Value any
 }

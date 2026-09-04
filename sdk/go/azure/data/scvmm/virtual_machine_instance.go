@@ -9,52 +9,52 @@ type VirtualMachineInstance_Value_ExtendedLocation struct {
 }
 
 type VirtualMachineInstance_Value_Properties_AvailabilitySets struct {
-	Id any
+	Id   any
 	Name any
 }
 
 type VirtualMachineInstance_Value_Properties_HardwareProfile struct {
-	CpuCount any
+	CpuCount             any
 	DynamicMemoryEnabled any
-	DynamicMemoryMaxMb any
-	DynamicMemoryMinMb any
-	IsHighlyAvailable any
+	DynamicMemoryMaxMb   any
+	DynamicMemoryMinMb   any
+	IsHighlyAvailable    any
 	LimitCpuForMigration any
-	MemoryMb any
+	MemoryMb             any
 }
 
 type VirtualMachineInstance_Value_Properties_InfrastructureProfile_Checkpoints struct {
-	CheckpointId any
-	Description any
-	Name any
+	CheckpointId       any
+	Description        any
+	Name               any
 	ParentCheckpointId any
 }
 
 type VirtualMachineInstance_Value_Properties_InfrastructureProfile struct {
-	BiosGuid any
-	CheckpointType any
-	Checkpoints any
-	CloudId any
-	Generation any
-	InventoryItemId any
+	BiosGuid                 any
+	CheckpointType           any
+	Checkpoints              any
+	CloudId                  any
+	Generation               any
+	InventoryItemId          any
 	LastRestoredVmcheckpoint any
-	TemplateId any
-	Uuid any
-	VmName any
-	VmmServerId any
+	TemplateId               any
+	Uuid                     any
+	VmName                   any
+	VmmServerId              any
 }
 
 type VirtualMachineInstance_Value_Properties_NetworkProfile_NetworkInterfaces struct {
-	DisplayName any
-	Ipv4AddressType any
-	Ipv4Addresses any
-	Ipv6AddressType any
-	Ipv6Addresses any
-	MacAddress any
-	MacAddressType any
-	Name any
-	NetworkName any
-	NicId any
+	DisplayName      any
+	Ipv4AddressType  any
+	Ipv4Addresses    any
+	Ipv6AddressType  any
+	Ipv6Addresses    any
+	MacAddress       any
+	MacAddressType   any
+	Name             any
+	NetworkName      any
+	NicId            any
 	VirtualNetworkId any
 }
 
@@ -63,36 +63,36 @@ type VirtualMachineInstance_Value_Properties_NetworkProfile struct {
 }
 
 type VirtualMachineInstance_Value_Properties_OsProfile struct {
-	AdminPassword any
-	AdminUsername any
-	ComputerName any
-	DomainName any
-	DomainPassword any
-	DomainUsername any
-	OsSku any
-	OsType any
-	OsVersion any
-	ProductKey any
+	AdminPassword   any
+	AdminUsername   any
+	ComputerName    any
+	DomainName      any
+	DomainPassword  any
+	DomainUsername  any
+	OsSku           any
+	OsType          any
+	OsVersion       any
+	ProductKey      any
 	RunOnceCommands any
-	Timezone any
-	Workgroup any
+	Timezone        any
+	Workgroup       any
 }
 
 type VirtualMachineInstance_Value_Properties_StorageProfile_Disks struct {
-	Bus any
-	BusType any
-	CreateDiffDisk any
-	DiskId any
-	DiskSizeGb any
-	DisplayName any
-	Lun any
-	MaxDiskSizeGb any
-	Name any
+	Bus              any
+	BusType          any
+	CreateDiffDisk   any
+	DiskId           any
+	DiskSizeGb       any
+	DisplayName      any
+	Lun              any
+	MaxDiskSizeGb    any
+	Name             any
 	StorageQoSpolicy any
-	TemplateDiskId any
-	VhdFormatType any
-	VhdType any
-	VolumeType any
+	TemplateDiskId   any
+	VhdFormatType    any
+	VhdType          any
+	VolumeType       any
 }
 
 type VirtualMachineInstance_Value_Properties_StorageProfile struct {
@@ -100,19 +100,19 @@ type VirtualMachineInstance_Value_Properties_StorageProfile struct {
 }
 
 type VirtualMachineInstance_Value_Properties struct {
-	AvailabilitySets any
-	HardwareProfile any
+	AvailabilitySets      any
+	HardwareProfile       any
 	InfrastructureProfile any
-	NetworkProfile any
-	OsProfile any
-	PowerState any
-	ProvisioningState any
-	StorageProfile any
+	NetworkProfile        any
+	OsProfile             any
+	PowerState            any
+	ProvisioningState     any
+	StorageProfile        any
 }
 
 type VirtualMachineInstance_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualMachineInstanceConfig struct {
@@ -121,7 +121,7 @@ type VirtualMachineInstanceConfig struct {
 
 type VirtualMachineInstanceAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ResourceUri any
 	// The VirtualMachineInstance items on this page
 	Value any

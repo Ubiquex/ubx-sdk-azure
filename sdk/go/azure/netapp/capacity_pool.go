@@ -27,21 +27,19 @@ type CapacityPool_Properties struct {
 }
 
 var CapacityPool_PropertiesFields = ubx.FieldMap{
-		"CoolAccess": ubx.FieldSpec{WireName: "cool_access"},
-		"CustomThroughputMibps": ubx.FieldSpec{WireName: "custom_throughput_mibps"},
-		"EncryptionType": ubx.FieldSpec{WireName: "encryption_type"},
-		"PoolId": ubx.FieldSpec{WireName: "pool_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"QosType": ubx.FieldSpec{WireName: "qos_type"},
-		"ServiceLevel": ubx.FieldSpec{WireName: "service_level"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"TotalThroughputMibps": ubx.FieldSpec{WireName: "total_throughput_mibps"},
-		"UtilizedThroughputMibps": ubx.FieldSpec{WireName: "utilized_throughput_mibps"},
-	}
+	"CoolAccess":              ubx.FieldSpec{WireName: "cool_access"},
+	"CustomThroughputMibps":   ubx.FieldSpec{WireName: "custom_throughput_mibps"},
+	"EncryptionType":          ubx.FieldSpec{WireName: "encryption_type"},
+	"PoolId":                  ubx.FieldSpec{WireName: "pool_id"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"QosType":                 ubx.FieldSpec{WireName: "qos_type"},
+	"ServiceLevel":            ubx.FieldSpec{WireName: "service_level"},
+	"Size":                    ubx.FieldSpec{WireName: "size"},
+	"TotalThroughputMibps":    ubx.FieldSpec{WireName: "total_throughput_mibps"},
+	"UtilizedThroughputMibps": ubx.FieldSpec{WireName: "utilized_throughput_mibps"},
+}
 
 type CapacityPoolConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Pool properties
 	Properties any
 }
@@ -56,11 +54,10 @@ type CapacityPoolAttrs struct {
 var CapacityPool = ubx.ResourceBinding{
 	WireType: "azure_netapp_capacity_pool",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CapacityPool_PropertiesFields,
+			Kind:     "object",
+			Fields:   CapacityPool_PropertiesFields,
 		},
 	},
 }

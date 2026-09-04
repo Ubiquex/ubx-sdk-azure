@@ -27,16 +27,28 @@ export interface OpenapiDscConfiguration_Properties_Source {
 }
 
 export interface OpenapiDscConfiguration_Properties {
+  /** Gets or sets the creation time. */
+  creationTime?: string | Computed<string>;
   /** Gets or sets the description of the configuration. */
   description?: string | Computed<string>;
+  /** Gets or sets the job count of the configuration. */
+  jobCount?: number | Computed<number>;
+  /** Gets or sets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
   /** Gets or sets progress log option. */
   logProgress?: boolean | Computed<boolean>;
   /** Gets or sets verbose log option. */
   logVerbose?: boolean | Computed<boolean>;
+  /** Gets the number of compiled node configurations. */
+  nodeConfigurationCount?: number | Computed<number>;
   /** Gets or sets the configuration parameters. */
   parameters?: Record<string, OpenapiDscConfiguration_Properties_Parameters> | Computed<Record<string, OpenapiDscConfiguration_Properties_Parameters>>;
+  /** Gets or sets the provisioning state of the configuration. */
+  provisioningState?: string | Computed<string>;
   /** Definition of the content source. */
   source: OpenapiDscConfiguration_Properties_Source | Computed<OpenapiDscConfiguration_Properties_Source>;
+  /** Gets or sets the state of the configuration. */
+  state?: string | Computed<string>;
 }
 
 const OpenapiDscConfiguration_Properties_ParametersFields: FieldMap = {
@@ -63,19 +75,25 @@ const OpenapiDscConfiguration_Properties_SourceFields: FieldMap = {
 };
 
 const OpenapiDscConfiguration_PropertiesFields: FieldMap = {
+  creationTime: "creation_time",
   description: "description",
+  jobCount: "job_count",
+  lastModifiedTime: "last_modified_time",
   logProgress: "log_progress",
   logVerbose: "log_verbose",
+  nodeConfigurationCount: "node_configuration_count",
   parameters: {
     wireName: "parameters",
     kind: "map",
     fields: OpenapiDscConfiguration_Properties_ParametersFields,
   },
+  provisioningState: "provisioning_state",
   source: {
     wireName: "source",
     kind: "object",
     fields: OpenapiDscConfiguration_Properties_SourceFields,
   },
+  state: "state",
 };
 
 export interface OpenapiDscConfigurationConfig {

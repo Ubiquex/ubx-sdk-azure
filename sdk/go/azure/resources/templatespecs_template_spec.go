@@ -4,8 +4,8 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TemplatespecsTemplateSpec_Properties_Versions struct {
-	Description any
-	TimeCreated any
+	Description  any
+	TimeCreated  any
 	TimeModified any
 }
 
@@ -21,21 +21,21 @@ type TemplatespecsTemplateSpec_Properties struct {
 }
 
 var TemplatespecsTemplateSpec_Properties_VersionsFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-		"TimeModified": ubx.FieldSpec{WireName: "time_modified"},
-	}
+	"Description":  ubx.FieldSpec{WireName: "description"},
+	"TimeCreated":  ubx.FieldSpec{WireName: "time_created"},
+	"TimeModified": ubx.FieldSpec{WireName: "time_modified"},
+}
 
 var TemplatespecsTemplateSpec_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"Versions": ubx.FieldSpec{
-			WireName: "versions",
-			Kind: "map",
-			Fields: TemplatespecsTemplateSpec_Properties_VersionsFields,
-		},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Metadata":    ubx.FieldSpec{WireName: "metadata"},
+	"Versions": ubx.FieldSpec{
+		WireName: "versions",
+		Kind:     "map",
+		Fields:   TemplatespecsTemplateSpec_Properties_VersionsFields,
+	},
+}
 
 type TemplatespecsTemplateSpecConfig struct {
 	// The location of the Template Spec. It cannot be changed after Template Spec creation. It must be one of the supported Azure locations.
@@ -61,8 +61,8 @@ var TemplatespecsTemplateSpec = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: TemplatespecsTemplateSpec_PropertiesFields,
+			Kind:     "object",
+			Fields:   TemplatespecsTemplateSpec_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

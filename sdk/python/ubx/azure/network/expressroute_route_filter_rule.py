@@ -26,8 +26,6 @@ _ExpressrouteRouteFilterRule_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteRouteFilterRuleConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Resource location.
     location: Any = None
     # The name of the resource that is unique within a resource group. This name can be used to access the resource.
@@ -49,7 +47,6 @@ class ExpressrouteRouteFilterRuleAttrs:
 ExpressrouteRouteFilterRule = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_route_filter_rule",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "location": ubx.FieldSpec(wire_name="location"),
         "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(

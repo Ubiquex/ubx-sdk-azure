@@ -4,51 +4,51 @@ package paloaltonetworks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwLocalRulesResource_Value_Properties_Category struct {
-	Feeds any
+	Feeds     any
 	UrlCustom any
 }
 
 type CloudngfwLocalRulesResource_Value_Properties_Destination struct {
-	Cidrs any
-	Countries any
-	Feeds any
-	FqdnLists any
+	Cidrs       any
+	Countries   any
+	Feeds       any
+	FqdnLists   any
 	PrefixLists any
 }
 
 type CloudngfwLocalRulesResource_Value_Properties_Source struct {
-	Cidrs any
-	Countries any
-	Feeds any
+	Cidrs       any
+	Countries   any
+	Feeds       any
 	PrefixLists any
 }
 
 type CloudngfwLocalRulesResource_Value_Properties_Tags struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type CloudngfwLocalRulesResource_Value_Properties struct {
-	ActionType any
-	Applications any
-	AuditComment any
-	Category any
-	DecryptionRuleType any
-	Description any
-	Destination any
-	EnableLogging any
-	Etag any
+	ActionType                   any
+	Applications                 any
+	AuditComment                 any
+	Category                     any
+	DecryptionRuleType           any
+	Description                  any
+	Destination                  any
+	EnableLogging                any
+	Etag                         any
 	InboundInspectionCertificate any
-	NegateDestination any
-	NegateSource any
-	Priority any
-	Protocol any
-	ProtocolPortList any
-	ProvisioningState any
-	RuleName any
-	RuleState any
-	Source any
-	Tags any
+	NegateDestination            any
+	NegateSource                 any
+	Priority                     any
+	Protocol                     any
+	ProtocolPortList             any
+	ProvisioningState            any
+	RuleName                     any
+	RuleState                    any
+	Source                       any
+	Tags                         any
 }
 
 type CloudngfwLocalRulesResource_Value struct {

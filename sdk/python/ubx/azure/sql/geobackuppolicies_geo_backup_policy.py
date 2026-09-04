@@ -20,10 +20,6 @@ _GeobackuppoliciesGeoBackupPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class GeobackuppoliciesGeoBackupPolicyConfig:
-    # Kind of geo backup policy. This is metadata used for the Azure portal experience.
-    kind: Any = None
-    # Backup policy location.
-    location: Any = None
     # The properties of the geo backup policy.
     properties: Any = None
 
@@ -39,8 +35,6 @@ class GeobackuppoliciesGeoBackupPolicyAttrs:
 GeobackuppoliciesGeoBackupPolicy = ubx.ResourceBinding(
     wire_type="azure_sql_geobackuppolicies_geo_backup_policy",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

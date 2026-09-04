@@ -13,7 +13,7 @@ type ManagedapplicationsJitRequestDefinition_Properties_CreatedBy struct {
 }
 
 type ManagedapplicationsJitRequestDefinition_Properties_JitAuthorizationPolicies struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
@@ -45,48 +45,48 @@ type ManagedapplicationsJitRequestDefinition_Properties struct {
 }
 
 var ManagedapplicationsJitRequestDefinition_Properties_CreatedByFields = ubx.FieldMap{
-		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-		"Oid": ubx.FieldSpec{WireName: "oid"},
-		"Puid": ubx.FieldSpec{WireName: "puid"},
-	}
+	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+	"Oid":           ubx.FieldSpec{WireName: "oid"},
+	"Puid":          ubx.FieldSpec{WireName: "puid"},
+}
 
 var ManagedapplicationsJitRequestDefinition_Properties_JitAuthorizationPoliciesFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-	}
+	"PrincipalId":      ubx.FieldSpec{WireName: "principal_id"},
+	"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
+}
 
 var ManagedapplicationsJitRequestDefinition_Properties_JitSchedulingPolicyFields = ubx.FieldMap{
-		"Duration": ubx.FieldSpec{WireName: "duration"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Duration":  ubx.FieldSpec{WireName: "duration"},
+	"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagedapplicationsJitRequestDefinition_PropertiesFields = ubx.FieldMap{
-		"ApplicationResourceId": ubx.FieldSpec{WireName: "application_resource_id"},
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: ManagedapplicationsJitRequestDefinition_Properties_CreatedByFields,
-		},
-		"JitAuthorizationPolicies": ubx.FieldSpec{
-			WireName: "jit_authorization_policies",
-			Kind: "list",
-			Fields: ManagedapplicationsJitRequestDefinition_Properties_JitAuthorizationPoliciesFields,
-		},
-		"JitRequestState": ubx.FieldSpec{WireName: "jit_request_state"},
-		"JitSchedulingPolicy": ubx.FieldSpec{
-			WireName: "jit_scheduling_policy",
-			Kind: "object",
-			Fields: ManagedapplicationsJitRequestDefinition_Properties_JitSchedulingPolicyFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublisherTenantId": ubx.FieldSpec{WireName: "publisher_tenant_id"},
-		"UpdatedBy": ubx.FieldSpec{
-			WireName: "updated_by",
-			Kind: "object",
-			Fields: ManagedapplicationsJitRequestDefinition_Properties_CreatedByFields,
-		},
-	}
+	"ApplicationResourceId": ubx.FieldSpec{WireName: "application_resource_id"},
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   ManagedapplicationsJitRequestDefinition_Properties_CreatedByFields,
+	},
+	"JitAuthorizationPolicies": ubx.FieldSpec{
+		WireName: "jit_authorization_policies",
+		Kind:     "list",
+		Fields:   ManagedapplicationsJitRequestDefinition_Properties_JitAuthorizationPoliciesFields,
+	},
+	"JitRequestState": ubx.FieldSpec{WireName: "jit_request_state"},
+	"JitSchedulingPolicy": ubx.FieldSpec{
+		WireName: "jit_scheduling_policy",
+		Kind:     "object",
+		Fields:   ManagedapplicationsJitRequestDefinition_Properties_JitSchedulingPolicyFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublisherTenantId": ubx.FieldSpec{WireName: "publisher_tenant_id"},
+	"UpdatedBy": ubx.FieldSpec{
+		WireName: "updated_by",
+		Kind:     "object",
+		Fields:   ManagedapplicationsJitRequestDefinition_Properties_CreatedByFields,
+	},
+}
 
 type ManagedapplicationsJitRequestDefinitionConfig struct {
 	// Information about JIT request properties
@@ -103,8 +103,8 @@ var ManagedapplicationsJitRequestDefinition = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedapplicationsJitRequestDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedapplicationsJitRequestDefinition_PropertiesFields,
 		},
 	},
 }

@@ -4,19 +4,19 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRelation_Value_Properties struct {
-	RelatedResourceId any
+	RelatedResourceId   any
 	RelatedResourceKind any
 	RelatedResourceName any
 	RelatedResourceType any
 }
 
 type OpenapiRelation_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type OpenapiRelationConfig struct {
-	IncidentId any
+	IncidentId    any
 	WorkspaceName any
 }
 
@@ -25,14 +25,14 @@ type OpenapiRelationAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The Relation items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiRelation = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_relation",
 	Fields: ubx.FieldMap{
-		"IncidentId": ubx.FieldSpec{WireName: "incident_id"},
+		"IncidentId":    ubx.FieldSpec{WireName: "incident_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

@@ -11,14 +11,14 @@ type ManagedclustersManagedCluster_ExtendedLocation struct {
 }
 
 type ManagedclustersManagedCluster_Identity_DelegatedResources struct {
-	Location any
+	Location         any
 	ReferralResource any
-	ResourceId any
-	TenantId any
+	ResourceId       any
+	TenantId         any
 }
 
 type ManagedclustersManagedCluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -53,14 +53,14 @@ type ManagedclustersManagedCluster_Properties_AadProfile struct {
 }
 
 type ManagedclustersManagedCluster_Properties_AddonProfiles_Identity struct {
-	ClientId any
-	ObjectId any
+	ClientId   any
+	ObjectId   any
 	ResourceId any
 }
 
 type ManagedclustersManagedCluster_Properties_AddonProfiles struct {
-	Config any
-	Enabled any
+	Config   any
+	Enabled  any
 	Identity any
 }
 
@@ -402,10 +402,10 @@ type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIde
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error struct {
-	Code any
+	Code    any
 	Details any
 	Message any
-	Target any
+	Target  any
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error struct {
@@ -417,16 +417,16 @@ type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIde
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities struct {
-	BindingSelector any
-	Identity any
-	Name any
-	Namespace any
-	ProvisioningInfo any
+	BindingSelector   any
+	Identity          any
+	Name              any
+	Namespace         any
+	ProvisioningInfo  any
 	ProvisioningState any
 }
 
 type ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentityExceptions struct {
-	Name any
+	Name      any
 	Namespace any
 	PodLabels any
 }
@@ -448,12 +448,12 @@ type ManagedclustersManagedCluster_Properties_PowerState struct {
 }
 
 type ManagedclustersManagedCluster_Properties_PrivateLinkResources struct {
-	GroupId any
-	Id any
-	Name any
+	GroupId              any
+	Id                   any
+	Name                 any
 	PrivateLinkServiceId any
-	RequiredMembers any
-	Type any
+	RequiredMembers      any
+	Type                 any
 }
 
 type ManagedclustersManagedCluster_Properties_SchedulerProfile_Upstream struct {
@@ -479,7 +479,7 @@ type ManagedclustersManagedCluster_Properties_SecurityProfile_AzureKeyVaultKms s
 
 type ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating_Identities struct {
 	AzureContainerRegistry any
-	Identity any
+	Identity               any
 }
 
 type ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating struct {
@@ -539,15 +539,15 @@ type ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Certifica
 }
 
 type ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_EgressGateways struct {
-	Enabled any
+	Enabled                  any
 	GatewayConfigurationName any
-	Name any
-	Namespace any
+	Name                     any
+	Namespace                any
 }
 
 type ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_IngressGateways struct {
 	Enabled any
-	Mode any
+	Mode    any
 }
 
 type ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components struct {
@@ -589,10 +589,10 @@ type ManagedclustersManagedCluster_Properties_Status_ProvisioningError_Additiona
 
 type ManagedclustersManagedCluster_Properties_Status_ProvisioningError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ManagedclustersManagedCluster_Properties_Status_ProvisioningError struct {
@@ -770,934 +770,931 @@ type ManagedclustersManagedCluster_Sku struct {
 }
 
 var ManagedclustersManagedCluster_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagedclustersManagedCluster_Identity_DelegatedResourcesFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ReferralResource": ubx.FieldSpec{WireName: "referral_resource"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"Location":         ubx.FieldSpec{WireName: "location"},
+	"ReferralResource": ubx.FieldSpec{WireName: "referral_resource"},
+	"ResourceId":       ubx.FieldSpec{WireName: "resource_id"},
+	"TenantId":         ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var ManagedclustersManagedCluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var ManagedclustersManagedCluster_IdentityFields = ubx.FieldMap{
-		"DelegatedResources": ubx.FieldSpec{
-			WireName: "delegated_resources",
-			Kind: "map",
-			Fields: ManagedclustersManagedCluster_Identity_DelegatedResourcesFields,
-		},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ManagedclustersManagedCluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"DelegatedResources": ubx.FieldSpec{
+		WireName: "delegated_resources",
+		Kind:     "map",
+		Fields:   ManagedclustersManagedCluster_Identity_DelegatedResourcesFields,
+	},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ManagedclustersManagedCluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_AadProfileFields = ubx.FieldMap{
-		"AdminGroupObjectIds": ubx.FieldSpec{WireName: "admin_group_object_ids"},
-		"ClientAppId": ubx.FieldSpec{WireName: "client_app_id"},
-		"EnableAzureRbac": ubx.FieldSpec{WireName: "enable_azure_rbac"},
-		"Managed": ubx.FieldSpec{WireName: "managed"},
-		"ServerAppId": ubx.FieldSpec{WireName: "server_app_id"},
-		"ServerAppSecret": ubx.FieldSpec{WireName: "server_app_secret"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AdminGroupObjectIds": ubx.FieldSpec{WireName: "admin_group_object_ids"},
+	"ClientAppId":         ubx.FieldSpec{WireName: "client_app_id"},
+	"EnableAzureRbac":     ubx.FieldSpec{WireName: "enable_azure_rbac"},
+	"Managed":             ubx.FieldSpec{WireName: "managed"},
+	"ServerAppId":         ubx.FieldSpec{WireName: "server_app_id"},
+	"ServerAppSecret":     ubx.FieldSpec{WireName: "server_app_secret"},
+	"TenantId":            ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ClientId":   ubx.FieldSpec{WireName: "client_id"},
+	"ObjectId":   ubx.FieldSpec{WireName: "object_id"},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var ManagedclustersManagedCluster_Properties_AddonProfilesFields = ubx.FieldMap{
-		"Config": ubx.FieldSpec{WireName: "config"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
-		},
-	}
+	"Config":  ubx.FieldSpec{WireName: "config"},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_AgentPoolProfilesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var ManagedclustersManagedCluster_Properties_ApiServerAccessProfileFields = ubx.FieldMap{
-		"AuthorizedIpranges": ubx.FieldSpec{WireName: "authorized_ipranges"},
-		"DisableRunCommand": ubx.FieldSpec{WireName: "disable_run_command"},
-		"EnablePrivateCluster": ubx.FieldSpec{WireName: "enable_private_cluster"},
-		"EnablePrivateClusterPublicFqdn": ubx.FieldSpec{WireName: "enable_private_cluster_public_fqdn"},
-		"EnableVnetIntegration": ubx.FieldSpec{WireName: "enable_vnet_integration"},
-		"PrivateDnszone": ubx.FieldSpec{WireName: "private_dnszone"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-	}
+	"AuthorizedIpranges":             ubx.FieldSpec{WireName: "authorized_ipranges"},
+	"DisableRunCommand":              ubx.FieldSpec{WireName: "disable_run_command"},
+	"EnablePrivateCluster":           ubx.FieldSpec{WireName: "enable_private_cluster"},
+	"EnablePrivateClusterPublicFqdn": ubx.FieldSpec{WireName: "enable_private_cluster_public_fqdn"},
+	"EnableVnetIntegration":          ubx.FieldSpec{WireName: "enable_vnet_integration"},
+	"PrivateDnszone":                 ubx.FieldSpec{WireName: "private_dnszone"},
+	"SubnetId":                       ubx.FieldSpec{WireName: "subnet_id"},
+}
 
 var ManagedclustersManagedCluster_Properties_AutoScalerProfileFields = ubx.FieldMap{
-		"BalanceSimilarNodeGroups": ubx.FieldSpec{WireName: "balance_similar_node_groups"},
-		"DaemonsetEvictionForEmptyNodes": ubx.FieldSpec{WireName: "daemonset_eviction_for_empty_nodes"},
-		"DaemonsetEvictionForOccupiedNodes": ubx.FieldSpec{WireName: "daemonset_eviction_for_occupied_nodes"},
-		"Expander": ubx.FieldSpec{WireName: "expander"},
-		"IgnoreDaemonsetsUtilization": ubx.FieldSpec{WireName: "ignore_daemonsets_utilization"},
-		"MaxEmptyBulkDelete": ubx.FieldSpec{WireName: "max_empty_bulk_delete"},
-		"MaxGracefulTerminationSec": ubx.FieldSpec{WireName: "max_graceful_termination_sec"},
-		"MaxNodeProvisionTime": ubx.FieldSpec{WireName: "max_node_provision_time"},
-		"MaxTotalUnreadyPercentage": ubx.FieldSpec{WireName: "max_total_unready_percentage"},
-		"NewPodScaleUpDelay": ubx.FieldSpec{WireName: "new_pod_scale_up_delay"},
-		"OkTotalUnreadyCount": ubx.FieldSpec{WireName: "ok_total_unready_count"},
-		"ScaleDownDelayAfterAdd": ubx.FieldSpec{WireName: "scale_down_delay_after_add"},
-		"ScaleDownDelayAfterDelete": ubx.FieldSpec{WireName: "scale_down_delay_after_delete"},
-		"ScaleDownDelayAfterFailure": ubx.FieldSpec{WireName: "scale_down_delay_after_failure"},
-		"ScaleDownUnneededTime": ubx.FieldSpec{WireName: "scale_down_unneeded_time"},
-		"ScaleDownUnreadyTime": ubx.FieldSpec{WireName: "scale_down_unready_time"},
-		"ScaleDownUtilizationThreshold": ubx.FieldSpec{WireName: "scale_down_utilization_threshold"},
-		"ScanInterval": ubx.FieldSpec{WireName: "scan_interval"},
-		"SkipNodesWithLocalStorage": ubx.FieldSpec{WireName: "skip_nodes_with_local_storage"},
-		"SkipNodesWithSystemPods": ubx.FieldSpec{WireName: "skip_nodes_with_system_pods"},
-	}
+	"BalanceSimilarNodeGroups":          ubx.FieldSpec{WireName: "balance_similar_node_groups"},
+	"DaemonsetEvictionForEmptyNodes":    ubx.FieldSpec{WireName: "daemonset_eviction_for_empty_nodes"},
+	"DaemonsetEvictionForOccupiedNodes": ubx.FieldSpec{WireName: "daemonset_eviction_for_occupied_nodes"},
+	"Expander":                          ubx.FieldSpec{WireName: "expander"},
+	"IgnoreDaemonsetsUtilization":       ubx.FieldSpec{WireName: "ignore_daemonsets_utilization"},
+	"MaxEmptyBulkDelete":                ubx.FieldSpec{WireName: "max_empty_bulk_delete"},
+	"MaxGracefulTerminationSec":         ubx.FieldSpec{WireName: "max_graceful_termination_sec"},
+	"MaxNodeProvisionTime":              ubx.FieldSpec{WireName: "max_node_provision_time"},
+	"MaxTotalUnreadyPercentage":         ubx.FieldSpec{WireName: "max_total_unready_percentage"},
+	"NewPodScaleUpDelay":                ubx.FieldSpec{WireName: "new_pod_scale_up_delay"},
+	"OkTotalUnreadyCount":               ubx.FieldSpec{WireName: "ok_total_unready_count"},
+	"ScaleDownDelayAfterAdd":            ubx.FieldSpec{WireName: "scale_down_delay_after_add"},
+	"ScaleDownDelayAfterDelete":         ubx.FieldSpec{WireName: "scale_down_delay_after_delete"},
+	"ScaleDownDelayAfterFailure":        ubx.FieldSpec{WireName: "scale_down_delay_after_failure"},
+	"ScaleDownUnneededTime":             ubx.FieldSpec{WireName: "scale_down_unneeded_time"},
+	"ScaleDownUnreadyTime":              ubx.FieldSpec{WireName: "scale_down_unready_time"},
+	"ScaleDownUtilizationThreshold":     ubx.FieldSpec{WireName: "scale_down_utilization_threshold"},
+	"ScanInterval":                      ubx.FieldSpec{WireName: "scan_interval"},
+	"SkipNodesWithLocalStorage":         ubx.FieldSpec{WireName: "skip_nodes_with_local_storage"},
+	"SkipNodesWithSystemPods":           ubx.FieldSpec{WireName: "skip_nodes_with_system_pods"},
+}
 
 var ManagedclustersManagedCluster_Properties_AutoUpgradeProfileFields = ubx.FieldMap{
-		"NodeOsupgradeChannel": ubx.FieldSpec{WireName: "node_osupgrade_channel"},
-		"UpgradeChannel": ubx.FieldSpec{WireName: "upgrade_channel"},
-	}
+	"NodeOsupgradeChannel": ubx.FieldSpec{WireName: "node_osupgrade_channel"},
+	"UpgradeChannel":       ubx.FieldSpec{WireName: "upgrade_channel"},
+}
 
 var ManagedclustersManagedCluster_Properties_AzureMonitorProfile_AppMonitoringFields = ubx.FieldMap{
-		"AutoInstrumentation": ubx.FieldSpec{
-			WireName: "auto_instrumentation",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-	}
+	"AutoInstrumentation": ubx.FieldSpec{
+		WireName: "auto_instrumentation",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_AzureMonitorProfile_Metrics_KubeStateMetricsFields = ubx.FieldMap{
-		"MetricAnnotationsAllowList": ubx.FieldSpec{WireName: "metric_annotations_allow_list"},
-		"MetricLabelsAllowlist": ubx.FieldSpec{WireName: "metric_labels_allowlist"},
-	}
+	"MetricAnnotationsAllowList": ubx.FieldSpec{WireName: "metric_annotations_allow_list"},
+	"MetricLabelsAllowlist":      ubx.FieldSpec{WireName: "metric_labels_allowlist"},
+}
 
 var ManagedclustersManagedCluster_Properties_AzureMonitorProfile_MetricsFields = ubx.FieldMap{
-		"ControlPlane": ubx.FieldSpec{
-			WireName: "control_plane",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"KubeStateMetrics": ubx.FieldSpec{
-			WireName: "kube_state_metrics",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AzureMonitorProfile_Metrics_KubeStateMetricsFields,
-		},
-	}
+	"ControlPlane": ubx.FieldSpec{
+		WireName: "control_plane",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"KubeStateMetrics": ubx.FieldSpec{
+		WireName: "kube_state_metrics",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AzureMonitorProfile_Metrics_KubeStateMetricsFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_AzureMonitorProfileFields = ubx.FieldMap{
-		"AppMonitoring": ubx.FieldSpec{
-			WireName: "app_monitoring",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AzureMonitorProfile_AppMonitoringFields,
-		},
-		"Metrics": ubx.FieldSpec{
-			WireName: "metrics",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AzureMonitorProfile_MetricsFields,
-		},
-	}
+	"AppMonitoring": ubx.FieldSpec{
+		WireName: "app_monitoring",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AzureMonitorProfile_AppMonitoringFields,
+	},
+	"Metrics": ubx.FieldSpec{
+		WireName: "metrics",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AzureMonitorProfile_MetricsFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_BootstrapProfileFields = ubx.FieldMap{
-		"ArtifactSource": ubx.FieldSpec{WireName: "artifact_source"},
-		"ContainerRegistryId": ubx.FieldSpec{WireName: "container_registry_id"},
-	}
+	"ArtifactSource":      ubx.FieldSpec{WireName: "artifact_source"},
+	"ContainerRegistryId": ubx.FieldSpec{WireName: "container_registry_id"},
+}
 
 var ManagedclustersManagedCluster_Properties_HostedSystemProfileFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"NodeSubnetId": ubx.FieldSpec{WireName: "node_subnet_id"},
-		"SystemNodeSubnetId": ubx.FieldSpec{WireName: "system_node_subnet_id"},
-	}
+	"Enabled":            ubx.FieldSpec{WireName: "enabled"},
+	"NodeSubnetId":       ubx.FieldSpec{WireName: "node_subnet_id"},
+	"SystemNodeSubnetId": ubx.FieldSpec{WireName: "system_node_subnet_id"},
+}
 
 var ManagedclustersManagedCluster_Properties_HttpProxyConfigFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"HttpProxy": ubx.FieldSpec{WireName: "http_proxy"},
-		"HttpsProxy": ubx.FieldSpec{WireName: "https_proxy"},
-		"NoProxy": ubx.FieldSpec{WireName: "no_proxy"},
-		"TrustedCa": ubx.FieldSpec{WireName: "trusted_ca"},
-	}
+	"Enabled":    ubx.FieldSpec{WireName: "enabled"},
+	"HttpProxy":  ubx.FieldSpec{WireName: "http_proxy"},
+	"HttpsProxy": ubx.FieldSpec{WireName: "https_proxy"},
+	"NoProxy":    ubx.FieldSpec{WireName: "no_proxy"},
+	"TrustedCa":  ubx.FieldSpec{WireName: "trusted_ca"},
+}
 
 var ManagedclustersManagedCluster_Properties_IngressProfile_GatewayApiFields = ubx.FieldMap{
-		"Installation": ubx.FieldSpec{WireName: "installation"},
-	}
+	"Installation": ubx.FieldSpec{WireName: "installation"},
+}
 
 var ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_GatewayApiimplementations_AppRoutingIstioFields = ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+}
 
 var ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_GatewayApiimplementationsFields = ubx.FieldMap{
-		"AppRoutingIstio": ubx.FieldSpec{
-			WireName: "app_routing_istio",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_GatewayApiimplementations_AppRoutingIstioFields,
-		},
-	}
+	"AppRoutingIstio": ubx.FieldSpec{
+		WireName: "app_routing_istio",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_GatewayApiimplementations_AppRoutingIstioFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_NginxFields = ubx.FieldMap{
-		"DefaultIngressControllerType": ubx.FieldSpec{WireName: "default_ingress_controller_type"},
-	}
+	"DefaultIngressControllerType": ubx.FieldSpec{WireName: "default_ingress_controller_type"},
+}
 
 var ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRoutingFields = ubx.FieldMap{
-		"DnsZoneResourceIds": ubx.FieldSpec{WireName: "dns_zone_resource_ids"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"GatewayApiimplementations": ubx.FieldSpec{
-			WireName: "gateway_apiimplementations",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_GatewayApiimplementationsFields,
-		},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
-		},
-		"Nginx": ubx.FieldSpec{
-			WireName: "nginx",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_NginxFields,
-		},
-	}
+	"DnsZoneResourceIds": ubx.FieldSpec{WireName: "dns_zone_resource_ids"},
+	"Enabled":            ubx.FieldSpec{WireName: "enabled"},
+	"GatewayApiimplementations": ubx.FieldSpec{
+		WireName: "gateway_apiimplementations",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_GatewayApiimplementationsFields,
+	},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
+	},
+	"Nginx": ubx.FieldSpec{
+		WireName: "nginx",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRouting_NginxFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_IngressProfileFields = ubx.FieldMap{
-		"GatewayApi": ubx.FieldSpec{
-			WireName: "gateway_api",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_IngressProfile_GatewayApiFields,
-		},
-		"WebAppRouting": ubx.FieldSpec{
-			WireName: "web_app_routing",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRoutingFields,
-		},
-	}
+	"GatewayApi": ubx.FieldSpec{
+		WireName: "gateway_api",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_IngressProfile_GatewayApiFields,
+	},
+	"WebAppRouting": ubx.FieldSpec{
+		WireName: "web_app_routing",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_IngressProfile_WebAppRoutingFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_LinuxProfile_Ssh_PublicKeysFields = ubx.FieldMap{
-		"KeyData": ubx.FieldSpec{WireName: "key_data"},
-	}
+	"KeyData": ubx.FieldSpec{WireName: "key_data"},
+}
 
 var ManagedclustersManagedCluster_Properties_LinuxProfile_SshFields = ubx.FieldMap{
-		"PublicKeys": ubx.FieldSpec{
-			WireName: "public_keys",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_LinuxProfile_Ssh_PublicKeysFields,
-		},
-	}
+	"PublicKeys": ubx.FieldSpec{
+		WireName: "public_keys",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_LinuxProfile_Ssh_PublicKeysFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_LinuxProfileFields = ubx.FieldMap{
-		"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
-		"Ssh": ubx.FieldSpec{
-			WireName: "ssh",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_LinuxProfile_SshFields,
-		},
-	}
+	"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
+	"Ssh": ubx.FieldSpec{
+		WireName: "ssh",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_LinuxProfile_SshFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_MetricsProfileFields = ubx.FieldMap{
-		"CostAnalysis": ubx.FieldSpec{
-			WireName: "cost_analysis",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-	}
+	"CostAnalysis": ubx.FieldSpec{
+		WireName: "cost_analysis",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_PerformanceFields = ubx.FieldMap{
-		"AccelerationMode": ubx.FieldSpec{WireName: "acceleration_mode"},
-	}
+	"AccelerationMode": ubx.FieldSpec{WireName: "acceleration_mode"},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_Security_TransitEncryptionFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_SecurityFields = ubx.FieldMap{
-		"AdvancedNetworkPolicies": ubx.FieldSpec{WireName: "advanced_network_policies"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"TransitEncryption": ubx.FieldSpec{
-			WireName: "transit_encryption",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_Security_TransitEncryptionFields,
-		},
-	}
+	"AdvancedNetworkPolicies": ubx.FieldSpec{WireName: "advanced_network_policies"},
+	"Enabled":                 ubx.FieldSpec{WireName: "enabled"},
+	"TransitEncryption": ubx.FieldSpec{
+		WireName: "transit_encryption",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_Security_TransitEncryptionFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworkingFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Observability": ubx.FieldSpec{
-			WireName: "observability",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-		"Performance": ubx.FieldSpec{
-			WireName: "performance",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_PerformanceFields,
-		},
-		"Security": ubx.FieldSpec{
-			WireName: "security",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_SecurityFields,
-		},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Observability": ubx.FieldSpec{
+		WireName: "observability",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+	"Performance": ubx.FieldSpec{
+		WireName: "performance",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_PerformanceFields,
+	},
+	"Security": ubx.FieldSpec{
+		WireName: "security",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworking_SecurityFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_ManagedOutboundIpsFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"CountIpv6": ubx.FieldSpec{WireName: "count_ipv6"},
-	}
+	"Count":     ubx.FieldSpec{WireName: "count"},
+	"CountIpv6": ubx.FieldSpec{WireName: "count_ipv6"},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_OutboundIpprefixesFields = ubx.FieldMap{
-		"PublicIpprefixes": ubx.FieldSpec{
-			WireName: "public_ipprefixes",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
-		},
-	}
+	"PublicIpprefixes": ubx.FieldSpec{
+		WireName: "public_ipprefixes",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_OutboundIpsFields = ubx.FieldMap{
-		"PublicIps": ubx.FieldSpec{
-			WireName: "public_ips",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
-		},
-	}
+	"PublicIps": ubx.FieldSpec{
+		WireName: "public_ips",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfileFields = ubx.FieldMap{
-		"AllocatedOutboundPorts": ubx.FieldSpec{WireName: "allocated_outbound_ports"},
-		"BackendPoolType": ubx.FieldSpec{WireName: "backend_pool_type"},
-		"EffectiveOutboundIps": ubx.FieldSpec{
-			WireName: "effective_outbound_ips",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
-		},
-		"EnableMultipleStandardLoadBalancers": ubx.FieldSpec{WireName: "enable_multiple_standard_load_balancers"},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"ManagedOutboundIps": ubx.FieldSpec{
-			WireName: "managed_outbound_ips",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_ManagedOutboundIpsFields,
-		},
-		"OutboundIpprefixes": ubx.FieldSpec{
-			WireName: "outbound_ipprefixes",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_OutboundIpprefixesFields,
-		},
-		"OutboundIps": ubx.FieldSpec{
-			WireName: "outbound_ips",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_OutboundIpsFields,
-		},
-	}
+	"AllocatedOutboundPorts": ubx.FieldSpec{WireName: "allocated_outbound_ports"},
+	"BackendPoolType":        ubx.FieldSpec{WireName: "backend_pool_type"},
+	"EffectiveOutboundIps": ubx.FieldSpec{
+		WireName: "effective_outbound_ips",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
+	},
+	"EnableMultipleStandardLoadBalancers": ubx.FieldSpec{WireName: "enable_multiple_standard_load_balancers"},
+	"IdleTimeoutInMinutes":                ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"ManagedOutboundIps": ubx.FieldSpec{
+		WireName: "managed_outbound_ips",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_ManagedOutboundIpsFields,
+	},
+	"OutboundIpprefixes": ubx.FieldSpec{
+		WireName: "outbound_ipprefixes",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_OutboundIpprefixesFields,
+	},
+	"OutboundIps": ubx.FieldSpec{
+		WireName: "outbound_ips",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_OutboundIpsFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_NatGatewayProfile_ManagedOutboundIpprofileFields = ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-	}
+	"Count": ubx.FieldSpec{WireName: "count"},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfile_NatGatewayProfileFields = ubx.FieldMap{
-		"EffectiveOutboundIps": ubx.FieldSpec{
-			WireName: "effective_outbound_ips",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"ManagedOutboundIpprofile": ubx.FieldSpec{
-			WireName: "managed_outbound_ipprofile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_NatGatewayProfile_ManagedOutboundIpprofileFields,
-		},
-	}
+	"EffectiveOutboundIps": ubx.FieldSpec{
+		WireName: "effective_outbound_ips",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfile_EffectiveOutboundIpsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"ManagedOutboundIpprofile": ubx.FieldSpec{
+		WireName: "managed_outbound_ipprofile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_NatGatewayProfile_ManagedOutboundIpprofileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_NetworkProfileFields = ubx.FieldMap{
-		"AdvancedNetworking": ubx.FieldSpec{
-			WireName: "advanced_networking",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworkingFields,
-		},
-		"DnsServiceIp": ubx.FieldSpec{WireName: "dns_service_ip"},
-		"IpFamilies": ubx.FieldSpec{WireName: "ip_families"},
-		"LoadBalancerProfile": ubx.FieldSpec{
-			WireName: "load_balancer_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfileFields,
-		},
-		"LoadBalancerSku": ubx.FieldSpec{WireName: "load_balancer_sku"},
-		"NatGatewayProfile": ubx.FieldSpec{
-			WireName: "nat_gateway_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfile_NatGatewayProfileFields,
-		},
-		"NetworkDataplane": ubx.FieldSpec{WireName: "network_dataplane"},
-		"NetworkMode": ubx.FieldSpec{WireName: "network_mode"},
-		"NetworkPlugin": ubx.FieldSpec{WireName: "network_plugin"},
-		"NetworkPluginMode": ubx.FieldSpec{WireName: "network_plugin_mode"},
-		"NetworkPolicy": ubx.FieldSpec{WireName: "network_policy"},
-		"OutboundType": ubx.FieldSpec{WireName: "outbound_type"},
-		"PodCidr": ubx.FieldSpec{WireName: "pod_cidr"},
-		"PodCidrs": ubx.FieldSpec{WireName: "pod_cidrs"},
-		"ServiceCidr": ubx.FieldSpec{WireName: "service_cidr"},
-		"ServiceCidrs": ubx.FieldSpec{WireName: "service_cidrs"},
-		"StaticEgressGatewayProfile": ubx.FieldSpec{
-			WireName: "static_egress_gateway_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-	}
+	"AdvancedNetworking": ubx.FieldSpec{
+		WireName: "advanced_networking",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_AdvancedNetworkingFields,
+	},
+	"DnsServiceIp": ubx.FieldSpec{WireName: "dns_service_ip"},
+	"IpFamilies":   ubx.FieldSpec{WireName: "ip_families"},
+	"LoadBalancerProfile": ubx.FieldSpec{
+		WireName: "load_balancer_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_LoadBalancerProfileFields,
+	},
+	"LoadBalancerSku": ubx.FieldSpec{WireName: "load_balancer_sku"},
+	"NatGatewayProfile": ubx.FieldSpec{
+		WireName: "nat_gateway_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfile_NatGatewayProfileFields,
+	},
+	"NetworkDataplane":  ubx.FieldSpec{WireName: "network_dataplane"},
+	"NetworkMode":       ubx.FieldSpec{WireName: "network_mode"},
+	"NetworkPlugin":     ubx.FieldSpec{WireName: "network_plugin"},
+	"NetworkPluginMode": ubx.FieldSpec{WireName: "network_plugin_mode"},
+	"NetworkPolicy":     ubx.FieldSpec{WireName: "network_policy"},
+	"OutboundType":      ubx.FieldSpec{WireName: "outbound_type"},
+	"PodCidr":           ubx.FieldSpec{WireName: "pod_cidr"},
+	"PodCidrs":          ubx.FieldSpec{WireName: "pod_cidrs"},
+	"ServiceCidr":       ubx.FieldSpec{WireName: "service_cidr"},
+	"ServiceCidrs":      ubx.FieldSpec{WireName: "service_cidrs"},
+	"StaticEgressGatewayProfile": ubx.FieldSpec{
+		WireName: "static_egress_gateway_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_NodeProvisioningProfileFields = ubx.FieldMap{
-		"DefaultNodePools": ubx.FieldSpec{WireName: "default_node_pools"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"DefaultNodePools": ubx.FieldSpec{WireName: "default_node_pools"},
+	"Mode":             ubx.FieldSpec{WireName: "mode"},
+}
 
 var ManagedclustersManagedCluster_Properties_NodeResourceGroupProfileFields = ubx.FieldMap{
-		"RestrictionLevel": ubx.FieldSpec{WireName: "restriction_level"},
-	}
+	"RestrictionLevel": ubx.FieldSpec{WireName: "restriction_level"},
+}
 
 var ManagedclustersManagedCluster_Properties_OidcIssuerProfileFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"IssuerUrl": ubx.FieldSpec{WireName: "issuer_url"},
-	}
+	"Enabled":   ubx.FieldSpec{WireName: "enabled"},
+	"IssuerUrl": ubx.FieldSpec{WireName: "issuer_url"},
+}
 
-var ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_DetailsFields = ubx.FieldMap{
-	}
+var ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_DetailsFields = ubx.FieldMap{}
 
 var ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_ErrorFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_ErrorFields = ubx.FieldMap{
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_ErrorFields,
-		},
-	}
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_ErrorFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfoFields = ubx.FieldMap{
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_ErrorFields,
-		},
-	}
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_ErrorFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"BindingSelector": ubx.FieldSpec{WireName: "binding_selector"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Namespace": ubx.FieldSpec{WireName: "namespace"},
-		"ProvisioningInfo": ubx.FieldSpec{
-			WireName: "provisioning_info",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfoFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BindingSelector": ubx.FieldSpec{WireName: "binding_selector"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
+	},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Namespace": ubx.FieldSpec{WireName: "namespace"},
+	"ProvisioningInfo": ubx.FieldSpec{
+		WireName: "provisioning_info",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfoFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentityExceptionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Namespace": ubx.FieldSpec{WireName: "namespace"},
-		"PodLabels": ubx.FieldSpec{WireName: "pod_labels"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Namespace": ubx.FieldSpec{WireName: "namespace"},
+	"PodLabels": ubx.FieldSpec{WireName: "pod_labels"},
+}
 
 var ManagedclustersManagedCluster_Properties_PodIdentityProfileFields = ubx.FieldMap{
-		"AllowNetworkPluginKubenet": ubx.FieldSpec{WireName: "allow_network_plugin_kubenet"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentitiesFields,
-		},
-		"UserAssignedIdentityExceptions": ubx.FieldSpec{
-			WireName: "user_assigned_identity_exceptions",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentityExceptionsFields,
-		},
-	}
+	"AllowNetworkPluginKubenet": ubx.FieldSpec{WireName: "allow_network_plugin_kubenet"},
+	"Enabled":                   ubx.FieldSpec{WireName: "enabled"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentitiesFields,
+	},
+	"UserAssignedIdentityExceptions": ubx.FieldSpec{
+		WireName: "user_assigned_identity_exceptions",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentityExceptionsFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_PowerStateFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+}
 
 var ManagedclustersManagedCluster_Properties_PrivateLinkResourcesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PrivateLinkServiceId": ubx.FieldSpec{WireName: "private_link_service_id"},
-		"RequiredMembers": ubx.FieldSpec{WireName: "required_members"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"GroupId":              ubx.FieldSpec{WireName: "group_id"},
+	"Id":                   ubx.FieldSpec{WireName: "id"},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+	"PrivateLinkServiceId": ubx.FieldSpec{WireName: "private_link_service_id"},
+	"RequiredMembers":      ubx.FieldSpec{WireName: "required_members"},
+	"Type":                 ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagedclustersManagedCluster_Properties_SchedulerProfile_UpstreamFields = ubx.FieldMap{
-		"SchedulerConfigMode": ubx.FieldSpec{WireName: "scheduler_config_mode"},
-	}
+	"SchedulerConfigMode": ubx.FieldSpec{WireName: "scheduler_config_mode"},
+}
 
 var ManagedclustersManagedCluster_Properties_SchedulerProfileFields = ubx.FieldMap{
-		"Upstream": ubx.FieldSpec{
-			WireName: "upstream",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_SchedulerProfile_UpstreamFields,
-		},
-	}
+	"Upstream": ubx.FieldSpec{
+		WireName: "upstream",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_SchedulerProfile_UpstreamFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_SecurityProfile_AzureKeyVaultKmsFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"KeyId": ubx.FieldSpec{WireName: "key_id"},
-		"KeyVaultNetworkAccess": ubx.FieldSpec{WireName: "key_vault_network_access"},
-		"KeyVaultResourceId": ubx.FieldSpec{WireName: "key_vault_resource_id"},
-	}
+	"Enabled":               ubx.FieldSpec{WireName: "enabled"},
+	"KeyId":                 ubx.FieldSpec{WireName: "key_id"},
+	"KeyVaultNetworkAccess": ubx.FieldSpec{WireName: "key_vault_network_access"},
+	"KeyVaultResourceId":    ubx.FieldSpec{WireName: "key_vault_resource_id"},
+}
 
 var ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating_IdentitiesFields = ubx.FieldMap{
-		"AzureContainerRegistry": ubx.FieldSpec{WireName: "azure_container_registry"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
-		},
-	}
+	"AzureContainerRegistry": ubx.FieldSpec{WireName: "azure_container_registry"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGatingFields = ubx.FieldMap{
-		"AllowSecretAccess": ubx.FieldSpec{WireName: "allow_secret_access"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Identities": ubx.FieldSpec{
-			WireName: "identities",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating_IdentitiesFields,
-		},
-	}
+	"AllowSecretAccess": ubx.FieldSpec{WireName: "allow_secret_access"},
+	"Enabled":           ubx.FieldSpec{WireName: "enabled"},
+	"Identities": ubx.FieldSpec{
+		WireName: "identities",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGating_IdentitiesFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_SecurityProfile_DefenderFields = ubx.FieldMap{
-		"LogAnalyticsWorkspaceResourceId": ubx.FieldSpec{WireName: "log_analytics_workspace_resource_id"},
-		"SecurityGating": ubx.FieldSpec{
-			WireName: "security_gating",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGatingFields,
-		},
-		"SecurityMonitoring": ubx.FieldSpec{
-			WireName: "security_monitoring",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-	}
+	"LogAnalyticsWorkspaceResourceId": ubx.FieldSpec{WireName: "log_analytics_workspace_resource_id"},
+	"SecurityGating": ubx.FieldSpec{
+		WireName: "security_gating",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_SecurityProfile_Defender_SecurityGatingFields,
+	},
+	"SecurityMonitoring": ubx.FieldSpec{
+		WireName: "security_monitoring",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_SecurityProfile_ImageCleanerFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"IntervalHours": ubx.FieldSpec{WireName: "interval_hours"},
-	}
+	"Enabled":       ubx.FieldSpec{WireName: "enabled"},
+	"IntervalHours": ubx.FieldSpec{WireName: "interval_hours"},
+}
 
 var ManagedclustersManagedCluster_Properties_SecurityProfileFields = ubx.FieldMap{
-		"AzureKeyVaultKms": ubx.FieldSpec{
-			WireName: "azure_key_vault_kms",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_SecurityProfile_AzureKeyVaultKmsFields,
-		},
-		"CustomCatrustCertificates": ubx.FieldSpec{WireName: "custom_catrust_certificates"},
-		"Defender": ubx.FieldSpec{
-			WireName: "defender",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_SecurityProfile_DefenderFields,
-		},
-		"ImageCleaner": ubx.FieldSpec{
-			WireName: "image_cleaner",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_SecurityProfile_ImageCleanerFields,
-		},
-		"WorkloadIdentity": ubx.FieldSpec{
-			WireName: "workload_identity",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-	}
+	"AzureKeyVaultKms": ubx.FieldSpec{
+		WireName: "azure_key_vault_kms",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_SecurityProfile_AzureKeyVaultKmsFields,
+	},
+	"CustomCatrustCertificates": ubx.FieldSpec{WireName: "custom_catrust_certificates"},
+	"Defender": ubx.FieldSpec{
+		WireName: "defender",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_SecurityProfile_DefenderFields,
+	},
+	"ImageCleaner": ubx.FieldSpec{
+		WireName: "image_cleaner",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_SecurityProfile_ImageCleanerFields,
+	},
+	"WorkloadIdentity": ubx.FieldSpec{
+		WireName: "workload_identity",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_CertificateAuthority_PluginFields = ubx.FieldMap{
-		"CertChainObjectName": ubx.FieldSpec{WireName: "cert_chain_object_name"},
-		"CertObjectName": ubx.FieldSpec{WireName: "cert_object_name"},
-		"KeyObjectName": ubx.FieldSpec{WireName: "key_object_name"},
-		"KeyVaultId": ubx.FieldSpec{WireName: "key_vault_id"},
-		"RootCertObjectName": ubx.FieldSpec{WireName: "root_cert_object_name"},
-	}
+	"CertChainObjectName": ubx.FieldSpec{WireName: "cert_chain_object_name"},
+	"CertObjectName":      ubx.FieldSpec{WireName: "cert_object_name"},
+	"KeyObjectName":       ubx.FieldSpec{WireName: "key_object_name"},
+	"KeyVaultId":          ubx.FieldSpec{WireName: "key_vault_id"},
+	"RootCertObjectName":  ubx.FieldSpec{WireName: "root_cert_object_name"},
+}
 
 var ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_CertificateAuthorityFields = ubx.FieldMap{
-		"Plugin": ubx.FieldSpec{
-			WireName: "plugin",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_CertificateAuthority_PluginFields,
-		},
-	}
+	"Plugin": ubx.FieldSpec{
+		WireName: "plugin",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_CertificateAuthority_PluginFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_EgressGatewaysFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"GatewayConfigurationName": ubx.FieldSpec{WireName: "gateway_configuration_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Namespace": ubx.FieldSpec{WireName: "namespace"},
-	}
+	"Enabled":                  ubx.FieldSpec{WireName: "enabled"},
+	"GatewayConfigurationName": ubx.FieldSpec{WireName: "gateway_configuration_name"},
+	"Name":                     ubx.FieldSpec{WireName: "name"},
+	"Namespace":                ubx.FieldSpec{WireName: "namespace"},
+}
 
 var ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_IngressGatewaysFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Mode":    ubx.FieldSpec{WireName: "mode"},
+}
 
 var ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_ComponentsFields = ubx.FieldMap{
-		"EgressGateways": ubx.FieldSpec{
-			WireName: "egress_gateways",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_EgressGatewaysFields,
-		},
-		"IngressGateways": ubx.FieldSpec{
-			WireName: "ingress_gateways",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_IngressGatewaysFields,
-		},
-		"ProxyRedirectionMechanism": ubx.FieldSpec{WireName: "proxy_redirection_mechanism"},
-	}
+	"EgressGateways": ubx.FieldSpec{
+		WireName: "egress_gateways",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_EgressGatewaysFields,
+	},
+	"IngressGateways": ubx.FieldSpec{
+		WireName: "ingress_gateways",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_Components_IngressGatewaysFields,
+	},
+	"ProxyRedirectionMechanism": ubx.FieldSpec{WireName: "proxy_redirection_mechanism"},
+}
 
 var ManagedclustersManagedCluster_Properties_ServiceMeshProfile_IstioFields = ubx.FieldMap{
-		"CertificateAuthority": ubx.FieldSpec{
-			WireName: "certificate_authority",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_CertificateAuthorityFields,
-		},
-		"Components": ubx.FieldSpec{
-			WireName: "components",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_ComponentsFields,
-		},
-		"Revisions": ubx.FieldSpec{WireName: "revisions"},
-	}
+	"CertificateAuthority": ubx.FieldSpec{
+		WireName: "certificate_authority",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_CertificateAuthorityFields,
+	},
+	"Components": ubx.FieldSpec{
+		WireName: "components",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_ServiceMeshProfile_Istio_ComponentsFields,
+	},
+	"Revisions": ubx.FieldSpec{WireName: "revisions"},
+}
 
 var ManagedclustersManagedCluster_Properties_ServiceMeshProfileFields = ubx.FieldMap{
-		"Istio": ubx.FieldSpec{
-			WireName: "istio",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_ServiceMeshProfile_IstioFields,
-		},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"Istio": ubx.FieldSpec{
+		WireName: "istio",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_ServiceMeshProfile_IstioFields,
+	},
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+}
 
 var ManagedclustersManagedCluster_Properties_ServicePrincipalProfileFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"Secret": ubx.FieldSpec{WireName: "secret"},
-	}
+	"ClientId": ubx.FieldSpec{WireName: "client_id"},
+	"Secret":   ubx.FieldSpec{WireName: "secret"},
+}
 
 var ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagedclustersManagedCluster_Properties_Status_ProvisioningError_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_PodIdentityProfile_UserAssignedIdentities_ProvisioningInfo_Error_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var ManagedclustersManagedCluster_Properties_Status_ProvisioningErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_Status_ProvisioningError_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_Status_ProvisioningError_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_Status_ProvisioningError_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var ManagedclustersManagedCluster_Properties_StatusFields = ubx.FieldMap{
-		"ProvisioningError": ubx.FieldSpec{
-			WireName: "provisioning_error",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_Status_ProvisioningErrorFields,
-		},
-	}
+	"ProvisioningError": ubx.FieldSpec{
+		WireName: "provisioning_error",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_Status_ProvisioningErrorFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_StorageProfileFields = ubx.FieldMap{
-		"BlobCsidriver": ubx.FieldSpec{
-			WireName: "blob_csidriver",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-		"DiskCsidriver": ubx.FieldSpec{
-			WireName: "disk_csidriver",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-		"FileCsidriver": ubx.FieldSpec{
-			WireName: "file_csidriver",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-		"SnapshotController": ubx.FieldSpec{
-			WireName: "snapshot_controller",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-	}
+	"BlobCsidriver": ubx.FieldSpec{
+		WireName: "blob_csidriver",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+	"DiskCsidriver": ubx.FieldSpec{
+		WireName: "disk_csidriver",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+	"FileCsidriver": ubx.FieldSpec{
+		WireName: "file_csidriver",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+	"SnapshotController": ubx.FieldSpec{
+		WireName: "snapshot_controller",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_UpgradeSettings_OverrideSettingsFields = ubx.FieldMap{
-		"ForceUpgrade": ubx.FieldSpec{WireName: "force_upgrade"},
-		"Until": ubx.FieldSpec{WireName: "until"},
-	}
+	"ForceUpgrade": ubx.FieldSpec{WireName: "force_upgrade"},
+	"Until":        ubx.FieldSpec{WireName: "until"},
+}
 
 var ManagedclustersManagedCluster_Properties_UpgradeSettingsFields = ubx.FieldMap{
-		"OverrideSettings": ubx.FieldSpec{
-			WireName: "override_settings",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_UpgradeSettings_OverrideSettingsFields,
-		},
-	}
+	"OverrideSettings": ubx.FieldSpec{
+		WireName: "override_settings",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_UpgradeSettings_OverrideSettingsFields,
+	},
+}
 
 var ManagedclustersManagedCluster_Properties_WindowsProfile_GmsaProfileFields = ubx.FieldMap{
-		"DnsServer": ubx.FieldSpec{WireName: "dns_server"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"RootDomainName": ubx.FieldSpec{WireName: "root_domain_name"},
-	}
+	"DnsServer":      ubx.FieldSpec{WireName: "dns_server"},
+	"Enabled":        ubx.FieldSpec{WireName: "enabled"},
+	"RootDomainName": ubx.FieldSpec{WireName: "root_domain_name"},
+}
 
 var ManagedclustersManagedCluster_Properties_WindowsProfileFields = ubx.FieldMap{
-		"AdminPassword": ubx.FieldSpec{WireName: "admin_password"},
-		"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
-		"EnableCsiproxy": ubx.FieldSpec{WireName: "enable_csiproxy"},
-		"GmsaProfile": ubx.FieldSpec{
-			WireName: "gmsa_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_WindowsProfile_GmsaProfileFields,
-		},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-	}
+	"AdminPassword":  ubx.FieldSpec{WireName: "admin_password"},
+	"AdminUsername":  ubx.FieldSpec{WireName: "admin_username"},
+	"EnableCsiproxy": ubx.FieldSpec{WireName: "enable_csiproxy"},
+	"GmsaProfile": ubx.FieldSpec{
+		WireName: "gmsa_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_WindowsProfile_GmsaProfileFields,
+	},
+	"LicenseType": ubx.FieldSpec{WireName: "license_type"},
+}
 
 var ManagedclustersManagedCluster_Properties_WorkloadAutoScalerProfileFields = ubx.FieldMap{
-		"Keda": ubx.FieldSpec{
-			WireName: "keda",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-		"VerticalPodAutoscaler": ubx.FieldSpec{
-			WireName: "vertical_pod_autoscaler",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-	}
+	"Keda": ubx.FieldSpec{
+		WireName: "keda",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+	"VerticalPodAutoscaler": ubx.FieldSpec{
+		WireName: "vertical_pod_autoscaler",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_PropertiesFields = ubx.FieldMap{
-		"AadProfile": ubx.FieldSpec{
-			WireName: "aad_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AadProfileFields,
-		},
-		"AddonProfiles": ubx.FieldSpec{
-			WireName: "addon_profiles",
-			Kind: "map",
-			Fields: ManagedclustersManagedCluster_Properties_AddonProfilesFields,
-		},
-		"AgentPoolProfiles": ubx.FieldSpec{
-			WireName: "agent_pool_profiles",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_AgentPoolProfilesFields,
-		},
-		"AiToolchainOperatorProfile": ubx.FieldSpec{
-			WireName: "ai_toolchain_operator_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
-		},
-		"ApiServerAccessProfile": ubx.FieldSpec{
-			WireName: "api_server_access_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_ApiServerAccessProfileFields,
-		},
-		"AutoScalerProfile": ubx.FieldSpec{
-			WireName: "auto_scaler_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AutoScalerProfileFields,
-		},
-		"AutoUpgradeProfile": ubx.FieldSpec{
-			WireName: "auto_upgrade_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AutoUpgradeProfileFields,
-		},
-		"AzureMonitorProfile": ubx.FieldSpec{
-			WireName: "azure_monitor_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_AzureMonitorProfileFields,
-		},
-		"AzurePortalFqdn": ubx.FieldSpec{WireName: "azure_portal_fqdn"},
-		"BootstrapProfile": ubx.FieldSpec{
-			WireName: "bootstrap_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_BootstrapProfileFields,
-		},
-		"CurrentKubernetesVersion": ubx.FieldSpec{WireName: "current_kubernetes_version"},
-		"DisableLocalAccounts": ubx.FieldSpec{WireName: "disable_local_accounts"},
-		"DiskEncryptionSetId": ubx.FieldSpec{WireName: "disk_encryption_set_id"},
-		"DnsPrefix": ubx.FieldSpec{WireName: "dns_prefix"},
-		"EnableRbac": ubx.FieldSpec{WireName: "enable_rbac"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"FqdnSubdomain": ubx.FieldSpec{WireName: "fqdn_subdomain"},
-		"HostedSystemProfile": ubx.FieldSpec{
-			WireName: "hosted_system_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_HostedSystemProfileFields,
-		},
-		"HttpProxyConfig": ubx.FieldSpec{
-			WireName: "http_proxy_config",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_HttpProxyConfigFields,
-		},
-		"IdentityProfile": ubx.FieldSpec{
-			WireName: "identity_profile",
-			Kind: "map",
-			Fields: ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
-		},
-		"IngressProfile": ubx.FieldSpec{
-			WireName: "ingress_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_IngressProfileFields,
-		},
-		"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
-		"LinuxProfile": ubx.FieldSpec{
-			WireName: "linux_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_LinuxProfileFields,
-		},
-		"MaxAgentPools": ubx.FieldSpec{WireName: "max_agent_pools"},
-		"MetricsProfile": ubx.FieldSpec{
-			WireName: "metrics_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_MetricsProfileFields,
-		},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NetworkProfileFields,
-		},
-		"NodeProvisioningProfile": ubx.FieldSpec{
-			WireName: "node_provisioning_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NodeProvisioningProfileFields,
-		},
-		"NodeResourceGroup": ubx.FieldSpec{WireName: "node_resource_group"},
-		"NodeResourceGroupProfile": ubx.FieldSpec{
-			WireName: "node_resource_group_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_NodeResourceGroupProfileFields,
-		},
-		"OidcIssuerProfile": ubx.FieldSpec{
-			WireName: "oidc_issuer_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_OidcIssuerProfileFields,
-		},
-		"PodIdentityProfile": ubx.FieldSpec{
-			WireName: "pod_identity_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_PodIdentityProfileFields,
-		},
-		"PowerState": ubx.FieldSpec{
-			WireName: "power_state",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_PowerStateFields,
-		},
-		"PrivateFqdn": ubx.FieldSpec{WireName: "private_fqdn"},
-		"PrivateLinkResources": ubx.FieldSpec{
-			WireName: "private_link_resources",
-			Kind: "list",
-			Fields: ManagedclustersManagedCluster_Properties_PrivateLinkResourcesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"ResourceUid": ubx.FieldSpec{WireName: "resource_uid"},
-		"SchedulerProfile": ubx.FieldSpec{
-			WireName: "scheduler_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_SchedulerProfileFields,
-		},
-		"SecurityProfile": ubx.FieldSpec{
-			WireName: "security_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_SecurityProfileFields,
-		},
-		"ServiceMeshProfile": ubx.FieldSpec{
-			WireName: "service_mesh_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_ServiceMeshProfileFields,
-		},
-		"ServicePrincipalProfile": ubx.FieldSpec{
-			WireName: "service_principal_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_ServicePrincipalProfileFields,
-		},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_StatusFields,
-		},
-		"StorageProfile": ubx.FieldSpec{
-			WireName: "storage_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_StorageProfileFields,
-		},
-		"SupportPlan": ubx.FieldSpec{WireName: "support_plan"},
-		"UpgradeSettings": ubx.FieldSpec{
-			WireName: "upgrade_settings",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_UpgradeSettingsFields,
-		},
-		"WindowsProfile": ubx.FieldSpec{
-			WireName: "windows_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_WindowsProfileFields,
-		},
-		"WorkloadAutoScalerProfile": ubx.FieldSpec{
-			WireName: "workload_auto_scaler_profile",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_Properties_WorkloadAutoScalerProfileFields,
-		},
-	}
+	"AadProfile": ubx.FieldSpec{
+		WireName: "aad_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AadProfileFields,
+	},
+	"AddonProfiles": ubx.FieldSpec{
+		WireName: "addon_profiles",
+		Kind:     "map",
+		Fields:   ManagedclustersManagedCluster_Properties_AddonProfilesFields,
+	},
+	"AgentPoolProfiles": ubx.FieldSpec{
+		WireName: "agent_pool_profiles",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_AgentPoolProfilesFields,
+	},
+	"AiToolchainOperatorProfile": ubx.FieldSpec{
+		WireName: "ai_toolchain_operator_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AiToolchainOperatorProfileFields,
+	},
+	"ApiServerAccessProfile": ubx.FieldSpec{
+		WireName: "api_server_access_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_ApiServerAccessProfileFields,
+	},
+	"AutoScalerProfile": ubx.FieldSpec{
+		WireName: "auto_scaler_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AutoScalerProfileFields,
+	},
+	"AutoUpgradeProfile": ubx.FieldSpec{
+		WireName: "auto_upgrade_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AutoUpgradeProfileFields,
+	},
+	"AzureMonitorProfile": ubx.FieldSpec{
+		WireName: "azure_monitor_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_AzureMonitorProfileFields,
+	},
+	"AzurePortalFqdn": ubx.FieldSpec{WireName: "azure_portal_fqdn"},
+	"BootstrapProfile": ubx.FieldSpec{
+		WireName: "bootstrap_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_BootstrapProfileFields,
+	},
+	"CurrentKubernetesVersion": ubx.FieldSpec{WireName: "current_kubernetes_version"},
+	"DisableLocalAccounts":     ubx.FieldSpec{WireName: "disable_local_accounts"},
+	"DiskEncryptionSetId":      ubx.FieldSpec{WireName: "disk_encryption_set_id"},
+	"DnsPrefix":                ubx.FieldSpec{WireName: "dns_prefix"},
+	"EnableRbac":               ubx.FieldSpec{WireName: "enable_rbac"},
+	"Fqdn":                     ubx.FieldSpec{WireName: "fqdn"},
+	"FqdnSubdomain":            ubx.FieldSpec{WireName: "fqdn_subdomain"},
+	"HostedSystemProfile": ubx.FieldSpec{
+		WireName: "hosted_system_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_HostedSystemProfileFields,
+	},
+	"HttpProxyConfig": ubx.FieldSpec{
+		WireName: "http_proxy_config",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_HttpProxyConfigFields,
+	},
+	"IdentityProfile": ubx.FieldSpec{
+		WireName: "identity_profile",
+		Kind:     "map",
+		Fields:   ManagedclustersManagedCluster_Properties_AddonProfiles_IdentityFields,
+	},
+	"IngressProfile": ubx.FieldSpec{
+		WireName: "ingress_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_IngressProfileFields,
+	},
+	"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
+	"LinuxProfile": ubx.FieldSpec{
+		WireName: "linux_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_LinuxProfileFields,
+	},
+	"MaxAgentPools": ubx.FieldSpec{WireName: "max_agent_pools"},
+	"MetricsProfile": ubx.FieldSpec{
+		WireName: "metrics_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_MetricsProfileFields,
+	},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NetworkProfileFields,
+	},
+	"NodeProvisioningProfile": ubx.FieldSpec{
+		WireName: "node_provisioning_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NodeProvisioningProfileFields,
+	},
+	"NodeResourceGroup": ubx.FieldSpec{WireName: "node_resource_group"},
+	"NodeResourceGroupProfile": ubx.FieldSpec{
+		WireName: "node_resource_group_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_NodeResourceGroupProfileFields,
+	},
+	"OidcIssuerProfile": ubx.FieldSpec{
+		WireName: "oidc_issuer_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_OidcIssuerProfileFields,
+	},
+	"PodIdentityProfile": ubx.FieldSpec{
+		WireName: "pod_identity_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_PodIdentityProfileFields,
+	},
+	"PowerState": ubx.FieldSpec{
+		WireName: "power_state",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_PowerStateFields,
+	},
+	"PrivateFqdn": ubx.FieldSpec{WireName: "private_fqdn"},
+	"PrivateLinkResources": ubx.FieldSpec{
+		WireName: "private_link_resources",
+		Kind:     "list",
+		Fields:   ManagedclustersManagedCluster_Properties_PrivateLinkResourcesFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"ResourceUid":         ubx.FieldSpec{WireName: "resource_uid"},
+	"SchedulerProfile": ubx.FieldSpec{
+		WireName: "scheduler_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_SchedulerProfileFields,
+	},
+	"SecurityProfile": ubx.FieldSpec{
+		WireName: "security_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_SecurityProfileFields,
+	},
+	"ServiceMeshProfile": ubx.FieldSpec{
+		WireName: "service_mesh_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_ServiceMeshProfileFields,
+	},
+	"ServicePrincipalProfile": ubx.FieldSpec{
+		WireName: "service_principal_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_ServicePrincipalProfileFields,
+	},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_StatusFields,
+	},
+	"StorageProfile": ubx.FieldSpec{
+		WireName: "storage_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_StorageProfileFields,
+	},
+	"SupportPlan": ubx.FieldSpec{WireName: "support_plan"},
+	"UpgradeSettings": ubx.FieldSpec{
+		WireName: "upgrade_settings",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_UpgradeSettingsFields,
+	},
+	"WindowsProfile": ubx.FieldSpec{
+		WireName: "windows_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_WindowsProfileFields,
+	},
+	"WorkloadAutoScalerProfile": ubx.FieldSpec{
+		WireName: "workload_auto_scaler_profile",
+		Kind:     "object",
+		Fields:   ManagedclustersManagedCluster_Properties_WorkloadAutoScalerProfileFields,
+	},
+}
 
 var ManagedclustersManagedCluster_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type ManagedclustersManagedClusterConfig struct {
-	// If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-	ETag any
 	// The complex type of the extended location.
 	ExtendedLocation any
 	// Identity for the managed cluster.
@@ -1728,27 +1725,26 @@ type ManagedclustersManagedClusterAttrs struct {
 var ManagedclustersManagedCluster = ubx.ResourceBinding{
 	WireType: "azure_containerservice_managedclusters_managed_cluster",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   ManagedclustersManagedCluster_ExtendedLocationFields,
 		},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_IdentityFields,
+			Kind:     "object",
+			Fields:   ManagedclustersManagedCluster_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedclustersManagedCluster_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ManagedclustersManagedCluster_SkuFields,
+			Kind:     "object",
+			Fields:   ManagedclustersManagedCluster_SkuFields,
 		},
 	},
 }

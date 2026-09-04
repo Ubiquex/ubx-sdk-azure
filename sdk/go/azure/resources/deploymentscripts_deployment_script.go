@@ -4,7 +4,7 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DeploymentscriptsDeploymentScript_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -18,19 +18,19 @@ type DeploymentscriptsDeploymentScript_Identity struct {
 }
 
 var DeploymentscriptsDeploymentScript_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var DeploymentscriptsDeploymentScript_IdentityFields = ubx.FieldMap{
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: DeploymentscriptsDeploymentScript_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   DeploymentscriptsDeploymentScript_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 type DeploymentscriptsDeploymentScriptConfig struct {
 	// Describes the managed identities for an Azure resource.
@@ -51,8 +51,8 @@ var DeploymentscriptsDeploymentScript = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DeploymentscriptsDeploymentScript_IdentityFields,
+			Kind:     "object",
+			Fields:   DeploymentscriptsDeploymentScript_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 	},

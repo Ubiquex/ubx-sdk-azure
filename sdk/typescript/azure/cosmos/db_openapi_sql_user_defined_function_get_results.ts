@@ -29,6 +29,12 @@ export interface DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Options {
 }
 
 export interface DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Resource {
+  /** A system generated property representing the resource etag required for optimistic concurrency control. */
+  etag?: string | Computed<string>;
+  /** A system generated property. A unique identifier. */
+  rid?: string | Computed<string>;
+  /** A system generated property that denotes the last updated timestamp of the resource. */
+  ts?: number | Computed<number>;
   /** Body of the User Defined Function */
   body?: string | Computed<string>;
   /** Name of the Cosmos DB SQL userDefinedFunction */
@@ -56,6 +62,9 @@ const DbOpenapiSqlUserDefinedFunctionGetResults_Properties_OptionsFields: FieldM
 };
 
 const DbOpenapiSqlUserDefinedFunctionGetResults_Properties_ResourceFields: FieldMap = {
+  etag: "_etag",
+  rid: "_rid",
+  ts: "_ts",
   body: "body",
   id: "id",
 };

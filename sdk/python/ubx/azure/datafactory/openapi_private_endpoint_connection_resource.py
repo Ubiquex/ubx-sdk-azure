@@ -26,6 +26,7 @@ class OpenapiPrivateEndpointConnectionResource_Properties:
     private_endpoint: Any = None
     # The state of a private link connection
     private_link_service_connection_state: Any = None
+    provisioning_state: Any = None
 
 _OpenapiPrivateEndpointConnectionResource_Properties_PrivateEndpointFields = {
     "id": ubx.FieldSpec(wire_name="id"),
@@ -48,6 +49,7 @@ _OpenapiPrivateEndpointConnectionResource_PropertiesFields = {
         kind="object",
         fields=_OpenapiPrivateEndpointConnectionResource_Properties_PrivateLinkServiceConnectionStateFields,
     ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
 }
 
 @dataclasses.dataclass

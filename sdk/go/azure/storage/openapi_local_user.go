@@ -4,14 +4,14 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLocalUser_Properties_PermissionScopes struct {
-	Permissions any
+	Permissions  any
 	ResourceName any
-	Service any
+	Service      any
 }
 
 type OpenapiLocalUser_Properties_SshAuthorizedKeys struct {
 	Description any
-	Key any
+	Key         any
 }
 
 type OpenapiLocalUser_Properties struct {
@@ -42,38 +42,38 @@ type OpenapiLocalUser_Properties struct {
 }
 
 var OpenapiLocalUser_Properties_PermissionScopesFields = ubx.FieldMap{
-		"Permissions": ubx.FieldSpec{WireName: "permissions"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"Service": ubx.FieldSpec{WireName: "service"},
-	}
+	"Permissions":  ubx.FieldSpec{WireName: "permissions"},
+	"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+	"Service":      ubx.FieldSpec{WireName: "service"},
+}
 
 var OpenapiLocalUser_Properties_SshAuthorizedKeysFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Key":         ubx.FieldSpec{WireName: "key"},
+}
 
 var OpenapiLocalUser_PropertiesFields = ubx.FieldMap{
-		"AllowAclAuthorization": ubx.FieldSpec{WireName: "allow_acl_authorization"},
-		"ExtendedGroups": ubx.FieldSpec{WireName: "extended_groups"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"HasSharedKey": ubx.FieldSpec{WireName: "has_shared_key"},
-		"HasSshKey": ubx.FieldSpec{WireName: "has_ssh_key"},
-		"HasSshPassword": ubx.FieldSpec{WireName: "has_ssh_password"},
-		"HomeDirectory": ubx.FieldSpec{WireName: "home_directory"},
-		"IsNfsv3Enabled": ubx.FieldSpec{WireName: "is_nfsv3_enabled"},
-		"PermissionScopes": ubx.FieldSpec{
-			WireName: "permission_scopes",
-			Kind: "list",
-			Fields: OpenapiLocalUser_Properties_PermissionScopesFields,
-		},
-		"Sid": ubx.FieldSpec{WireName: "sid"},
-		"SshAuthorizedKeys": ubx.FieldSpec{
-			WireName: "ssh_authorized_keys",
-			Kind: "list",
-			Fields: OpenapiLocalUser_Properties_SshAuthorizedKeysFields,
-		},
-		"UserId": ubx.FieldSpec{WireName: "user_id"},
-	}
+	"AllowAclAuthorization": ubx.FieldSpec{WireName: "allow_acl_authorization"},
+	"ExtendedGroups":        ubx.FieldSpec{WireName: "extended_groups"},
+	"GroupId":               ubx.FieldSpec{WireName: "group_id"},
+	"HasSharedKey":          ubx.FieldSpec{WireName: "has_shared_key"},
+	"HasSshKey":             ubx.FieldSpec{WireName: "has_ssh_key"},
+	"HasSshPassword":        ubx.FieldSpec{WireName: "has_ssh_password"},
+	"HomeDirectory":         ubx.FieldSpec{WireName: "home_directory"},
+	"IsNfsv3Enabled":        ubx.FieldSpec{WireName: "is_nfsv3_enabled"},
+	"PermissionScopes": ubx.FieldSpec{
+		WireName: "permission_scopes",
+		Kind:     "list",
+		Fields:   OpenapiLocalUser_Properties_PermissionScopesFields,
+	},
+	"Sid": ubx.FieldSpec{WireName: "sid"},
+	"SshAuthorizedKeys": ubx.FieldSpec{
+		WireName: "ssh_authorized_keys",
+		Kind:     "list",
+		Fields:   OpenapiLocalUser_Properties_SshAuthorizedKeysFields,
+	},
+	"UserId": ubx.FieldSpec{WireName: "user_id"},
+}
 
 type OpenapiLocalUserConfig struct {
 	// The Storage Account Local User properties.
@@ -94,8 +94,8 @@ var OpenapiLocalUser = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLocalUser_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLocalUser_PropertiesFields,
 		},
 		"Username": ubx.FieldSpec{WireName: "username"},
 	},

@@ -4,21 +4,21 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TopicTypeInfo_Value_Properties_AdditionalEnforcedPermissions struct {
-	IsDataAction any
+	IsDataAction   any
 	PermissionName any
 }
 
 type TopicTypeInfo_Value_Properties struct {
-	AdditionalEnforcedPermissions any
+	AdditionalEnforcedPermissions        any
 	AreRegionalAndGlobalSourcesSupported any
-	Description any
-	DisplayName any
-	Provider any
-	ProvisioningState any
-	ResourceRegionType any
-	SourceResourceFormat any
-	SupportedLocations any
-	SupportedScopesForSource any
+	Description                          any
+	DisplayName                          any
+	Provider                             any
+	ProvisioningState                    any
+	ResourceRegionType                   any
+	SourceResourceFormat                 any
+	SupportedLocations                   any
+	SupportedScopesForSource             any
 }
 
 type TopicTypeInfo_Value struct {

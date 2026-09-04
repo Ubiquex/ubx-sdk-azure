@@ -4,29 +4,29 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AttachedDatabaseConfiguration_Value_Properties_TableLevelSharingProperties struct {
-	ExternalTablesToExclude any
-	ExternalTablesToInclude any
-	FunctionsToExclude any
-	FunctionsToInclude any
+	ExternalTablesToExclude    any
+	ExternalTablesToInclude    any
+	FunctionsToExclude         any
+	FunctionsToInclude         any
 	MaterializedViewsToExclude any
 	MaterializedViewsToInclude any
-	TablesToExclude any
-	TablesToInclude any
+	TablesToExclude            any
+	TablesToInclude            any
 }
 
 type AttachedDatabaseConfiguration_Value_Properties struct {
-	AttachedDatabaseNames any
-	ClusterResourceId any
-	DatabaseName any
-	DatabaseNameOverride any
-	DatabaseNamePrefix any
+	AttachedDatabaseNames             any
+	ClusterResourceId                 any
+	DatabaseName                      any
+	DatabaseNameOverride              any
+	DatabaseNamePrefix                any
 	DefaultPrincipalsModificationKind any
-	ProvisioningState any
-	TableLevelSharingProperties any
+	ProvisioningState                 any
+	TableLevelSharingProperties       any
 }
 
 type AttachedDatabaseConfiguration_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

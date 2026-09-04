@@ -4,7 +4,7 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationServiceEnvironment_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -97,118 +97,118 @@ type IntegrationServiceEnvironment_Sku struct {
 }
 
 var IntegrationServiceEnvironment_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var IntegrationServiceEnvironment_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: IntegrationServiceEnvironment_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   IntegrationServiceEnvironment_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var IntegrationServiceEnvironment_Properties_EncryptionConfiguration_EncryptionKeyReference_KeyVaultFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var IntegrationServiceEnvironment_Properties_EncryptionConfiguration_EncryptionKeyReferenceFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVault": ubx.FieldSpec{
-			WireName: "key_vault",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_Properties_EncryptionConfiguration_EncryptionKeyReference_KeyVaultFields,
-		},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-	}
+	"KeyName": ubx.FieldSpec{WireName: "key_name"},
+	"KeyVault": ubx.FieldSpec{
+		WireName: "key_vault",
+		Kind:     "object",
+		Fields:   IntegrationServiceEnvironment_Properties_EncryptionConfiguration_EncryptionKeyReference_KeyVaultFields,
+	},
+	"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
+}
 
 var IntegrationServiceEnvironment_Properties_EncryptionConfigurationFields = ubx.FieldMap{
-		"EncryptionKeyReference": ubx.FieldSpec{
-			WireName: "encryption_key_reference",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_Properties_EncryptionConfiguration_EncryptionKeyReferenceFields,
-		},
-	}
+	"EncryptionKeyReference": ubx.FieldSpec{
+		WireName: "encryption_key_reference",
+		Kind:     "object",
+		Fields:   IntegrationServiceEnvironment_Properties_EncryptionConfiguration_EncryptionKeyReferenceFields,
+	},
+}
 
 var IntegrationServiceEnvironment_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-	}
+	"Address": ubx.FieldSpec{WireName: "address"},
+}
 
 var IntegrationServiceEnvironment_Properties_EndpointsConfiguration_ConnectorFields = ubx.FieldMap{
-		"AccessEndpointIpAddresses": ubx.FieldSpec{
-			WireName: "access_endpoint_ip_addresses",
-			Kind: "list",
-			Fields: IntegrationServiceEnvironment_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields,
-		},
-		"OutgoingIpAddresses": ubx.FieldSpec{
-			WireName: "outgoing_ip_addresses",
-			Kind: "list",
-			Fields: IntegrationServiceEnvironment_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields,
-		},
-	}
+	"AccessEndpointIpAddresses": ubx.FieldSpec{
+		WireName: "access_endpoint_ip_addresses",
+		Kind:     "list",
+		Fields:   IntegrationServiceEnvironment_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields,
+	},
+	"OutgoingIpAddresses": ubx.FieldSpec{
+		WireName: "outgoing_ip_addresses",
+		Kind:     "list",
+		Fields:   IntegrationServiceEnvironment_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields,
+	},
+}
 
 var IntegrationServiceEnvironment_Properties_EndpointsConfigurationFields = ubx.FieldMap{
-		"Connector": ubx.FieldSpec{
-			WireName: "connector",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_Properties_EndpointsConfiguration_ConnectorFields,
-		},
-		"Workflow": ubx.FieldSpec{
-			WireName: "workflow",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_Properties_EndpointsConfiguration_ConnectorFields,
-		},
-	}
+	"Connector": ubx.FieldSpec{
+		WireName: "connector",
+		Kind:     "object",
+		Fields:   IntegrationServiceEnvironment_Properties_EndpointsConfiguration_ConnectorFields,
+	},
+	"Workflow": ubx.FieldSpec{
+		WireName: "workflow",
+		Kind:     "object",
+		Fields:   IntegrationServiceEnvironment_Properties_EndpointsConfiguration_ConnectorFields,
+	},
+}
 
 var IntegrationServiceEnvironment_Properties_NetworkConfiguration_AccessEndpointFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var IntegrationServiceEnvironment_Properties_NetworkConfigurationFields = ubx.FieldMap{
-		"AccessEndpoint": ubx.FieldSpec{
-			WireName: "access_endpoint",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_Properties_NetworkConfiguration_AccessEndpointFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: IntegrationServiceEnvironment_Properties_EncryptionConfiguration_EncryptionKeyReference_KeyVaultFields,
-		},
-		"VirtualNetworkAddressSpace": ubx.FieldSpec{WireName: "virtual_network_address_space"},
-	}
+	"AccessEndpoint": ubx.FieldSpec{
+		WireName: "access_endpoint",
+		Kind:     "object",
+		Fields:   IntegrationServiceEnvironment_Properties_NetworkConfiguration_AccessEndpointFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   IntegrationServiceEnvironment_Properties_EncryptionConfiguration_EncryptionKeyReference_KeyVaultFields,
+	},
+	"VirtualNetworkAddressSpace": ubx.FieldSpec{WireName: "virtual_network_address_space"},
+}
 
 var IntegrationServiceEnvironment_PropertiesFields = ubx.FieldMap{
-		"EncryptionConfiguration": ubx.FieldSpec{
-			WireName: "encryption_configuration",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_Properties_EncryptionConfigurationFields,
-		},
-		"EndpointsConfiguration": ubx.FieldSpec{
-			WireName: "endpoints_configuration",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_Properties_EndpointsConfigurationFields,
-		},
-		"IntegrationServiceEnvironmentId": ubx.FieldSpec{WireName: "integration_service_environment_id"},
-		"NetworkConfiguration": ubx.FieldSpec{
-			WireName: "network_configuration",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_Properties_NetworkConfigurationFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"EncryptionConfiguration": ubx.FieldSpec{
+		WireName: "encryption_configuration",
+		Kind:     "object",
+		Fields:   IntegrationServiceEnvironment_Properties_EncryptionConfigurationFields,
+	},
+	"EndpointsConfiguration": ubx.FieldSpec{
+		WireName: "endpoints_configuration",
+		Kind:     "object",
+		Fields:   IntegrationServiceEnvironment_Properties_EndpointsConfigurationFields,
+	},
+	"IntegrationServiceEnvironmentId": ubx.FieldSpec{WireName: "integration_service_environment_id"},
+	"NetworkConfiguration": ubx.FieldSpec{
+		WireName: "network_configuration",
+		Kind:     "object",
+		Fields:   IntegrationServiceEnvironment_Properties_NetworkConfigurationFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+}
 
 var IntegrationServiceEnvironment_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 type IntegrationServiceEnvironmentConfig struct {
 	// Managed service identity properties.
@@ -233,18 +233,18 @@ var IntegrationServiceEnvironment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_IdentityFields,
+			Kind:     "object",
+			Fields:   IntegrationServiceEnvironment_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationServiceEnvironment_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: IntegrationServiceEnvironment_SkuFields,
+			Kind:     "object",
+			Fields:   IntegrationServiceEnvironment_SkuFields,
 		},
 	},
 }

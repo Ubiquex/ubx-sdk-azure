@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiCassandraKeyspaceGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -31,6 +31,12 @@ type DbOpenapiCassandraKeyspaceGetResults_Properties_Options struct {
 }
 
 type DbOpenapiCassandraKeyspaceGetResults_Properties_Resource struct {
+	// A system generated property representing the resource etag required for optimistic concurrency control.
+	Etag any
+	// A system generated property. A unique identifier.
+	Rid any
+	// A system generated property that denotes the last updated timestamp of the resource.
+	Ts any
 	// Name of the Cosmos DB Cassandra keyspace
 	Id any
 }
@@ -43,34 +49,37 @@ type DbOpenapiCassandraKeyspaceGetResults_Properties struct {
 }
 
 var DbOpenapiCassandraKeyspaceGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiCassandraKeyspaceGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiCassandraKeyspaceGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiCassandraKeyspaceGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiCassandraKeyspaceGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "_etag"},
+	"Rid":  ubx.FieldSpec{WireName: "_rid"},
+	"Ts":   ubx.FieldSpec{WireName: "_ts"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+}
 
 var DbOpenapiCassandraKeyspaceGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiCassandraKeyspaceGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiCassandraKeyspaceGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiCassandraKeyspaceGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiCassandraKeyspaceGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiCassandraKeyspaceGetResultsConfig struct {
 	// Properties to create and update Azure Cosmos DB Cassandra keyspace.
@@ -93,8 +102,8 @@ var DbOpenapiCassandraKeyspaceGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiCassandraKeyspaceGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiCassandraKeyspaceGetResults_PropertiesFields,
 		},
 	},
 }

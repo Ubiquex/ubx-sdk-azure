@@ -224,8 +224,6 @@ const Deployment_SkuFields: FieldMap = {
 };
 
 export interface DeploymentConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** Properties of Cognitive Services account deployment. */
   properties?: Deployment_Properties | Computed<Deployment_Properties>;
   /** The resource model definition representing SKU */
@@ -248,7 +246,6 @@ export interface DeploymentAttrs {
 export const Deployment: ResourceBinding<DeploymentConfig, DeploymentAttrs> = {
   wireType: "azure_cognitiveservices_deployment",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

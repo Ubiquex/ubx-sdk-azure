@@ -4,12 +4,12 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolWorkloadClassifier_Value_Properties struct {
-	Context any
-	EndTime any
+	Context    any
+	EndTime    any
 	Importance any
-	Label any
+	Label      any
 	MemberName any
-	StartTime any
+	StartTime  any
 }
 
 type SqlpoolWorkloadClassifier_Value struct {
@@ -17,23 +17,23 @@ type SqlpoolWorkloadClassifier_Value struct {
 }
 
 type SqlpoolWorkloadClassifierConfig struct {
-	SqlPoolName any
+	SqlPoolName       any
 	WorkloadGroupName any
 }
 
 type SqlpoolWorkloadClassifierAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink    any
 	SqlPoolName any
 	// Array of results.
-	Value any
+	Value             any
 	WorkloadGroupName any
 }
 
 var SqlpoolWorkloadClassifier = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_workload_classifier",
 	Fields: ubx.FieldMap{
-		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
+		"SqlPoolName":       ubx.FieldSpec{WireName: "sql_pool_name"},
 		"WorkloadGroupName": ubx.FieldSpec{WireName: "workload_group_name"},
 	},
 }

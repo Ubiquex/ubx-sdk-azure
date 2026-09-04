@@ -10,28 +10,28 @@ type DbOpenapiMetricDefinition_Value_MetricAvailabilities struct {
 
 type DbOpenapiMetricDefinition_Value_Name struct {
 	LocalizedValue any
-	Value any
+	Value          any
 }
 
 type DbOpenapiMetricDefinition_Value struct {
-	MetricAvailabilities any
-	Name any
+	MetricAvailabilities   any
+	Name                   any
 	PrimaryAggregationType any
-	ResourceUri any
-	Unit any
+	ResourceUri            any
+	Unit                   any
 }
 
 type DbOpenapiMetricDefinitionConfig struct {
-	AccountName any
+	AccountName   any
 	CollectionRid any
-	DatabaseRid any
+	DatabaseRid   any
 }
 
 type DbOpenapiMetricDefinitionAttrs struct {
-	AccountName any
+	AccountName   any
 	CollectionRid any
-	DatabaseRid any
-	NextLink any
+	DatabaseRid   any
+	NextLink      any
 	// The list of metric definitions for the account.
 	Value any
 }
@@ -39,8 +39,8 @@ type DbOpenapiMetricDefinitionAttrs struct {
 var DbOpenapiMetricDefinition = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_metric_definition",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":   ubx.FieldSpec{WireName: "account_name"},
 		"CollectionRid": ubx.FieldSpec{WireName: "collection_rid"},
-		"DatabaseRid": ubx.FieldSpec{WireName: "database_rid"},
+		"DatabaseRid":   ubx.FieldSpec{WireName: "database_rid"},
 	},
 }

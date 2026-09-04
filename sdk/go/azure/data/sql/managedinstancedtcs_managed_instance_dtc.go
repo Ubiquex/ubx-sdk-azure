@@ -4,25 +4,25 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstancedtcsManagedInstanceDtc_Value_Properties_SecuritySettings_TransactionManagerCommunicationSettings struct {
-	AllowInboundEnabled any
+	AllowInboundEnabled  any
 	AllowOutboundEnabled any
-	Authentication any
+	Authentication       any
 }
 
 type ManagedinstancedtcsManagedInstanceDtc_Value_Properties_SecuritySettings struct {
-	SnaLu6point2TransactionsEnabled any
+	SnaLu6point2TransactionsEnabled         any
 	TransactionManagerCommunicationSettings any
-	XaTransactionsDefaultTimeout any
-	XaTransactionsEnabled any
-	XaTransactionsMaximumTimeout any
+	XaTransactionsDefaultTimeout            any
+	XaTransactionsEnabled                   any
+	XaTransactionsMaximumTimeout            any
 }
 
 type ManagedinstancedtcsManagedInstanceDtc_Value_Properties struct {
-	DtcEnabled any
-	DtcHostNameDnsSuffix any
+	DtcEnabled                  any
+	DtcHostNameDnsSuffix        any
 	ExternalDnsSuffixSearchList any
-	ProvisioningState any
-	SecuritySettings any
+	ProvisioningState           any
+	SecuritySettings            any
 }
 
 type ManagedinstancedtcsManagedInstanceDtc_Value struct {

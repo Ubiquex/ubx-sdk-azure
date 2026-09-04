@@ -23,8 +23,6 @@ const HybridConnection_PropertiesFields: FieldMap = {
 };
 
 export interface HybridConnectionConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties of the HybridConnection. */
   properties?: HybridConnection_Properties | Computed<HybridConnection_Properties>;
 }
@@ -39,7 +37,6 @@ export interface HybridConnectionAttrs {
 export const HybridConnection: ResourceBinding<HybridConnectionConfig, HybridConnectionAttrs> = {
   wireType: "azure_relay_hybrid_connection",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

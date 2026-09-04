@@ -19,13 +19,13 @@ type OpenapiGateway_Properties struct {
 }
 
 var OpenapiGateway_PropertiesFields = ubx.FieldMap{
-		"AllowedFeatures": ubx.FieldSpec{WireName: "allowed_features"},
-		"GatewayBypass": ubx.FieldSpec{WireName: "gateway_bypass"},
-		"GatewayEndpoint": ubx.FieldSpec{WireName: "gateway_endpoint"},
-		"GatewayId": ubx.FieldSpec{WireName: "gateway_id"},
-		"GatewayType": ubx.FieldSpec{WireName: "gateway_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AllowedFeatures":   ubx.FieldSpec{WireName: "allowed_features"},
+	"GatewayBypass":     ubx.FieldSpec{WireName: "gateway_bypass"},
+	"GatewayEndpoint":   ubx.FieldSpec{WireName: "gateway_endpoint"},
+	"GatewayId":         ubx.FieldSpec{WireName: "gateway_id"},
+	"GatewayType":       ubx.FieldSpec{WireName: "gateway_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiGatewayConfig struct {
 	// Describes the properties of a Gateway Profile.
@@ -42,8 +42,8 @@ var OpenapiGateway = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiGateway_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiGateway_PropertiesFields,
 		},
 	},
 }

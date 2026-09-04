@@ -7,28 +7,197 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ServiceMigrationItem_Properties_CriticalJobHistory:
+    job_id: Any = None
+    job_name: Any = None
+    job_status: Any = None
+    start_time: Any = None
+
+@dataclasses.dataclass
+class ServiceMigrationItem_Properties_CurrentJob:
+    # The ARM Id of the job being executed.
+    job_id: Any = None
+    # The job name.
+    job_name: Any = None
+    # The start time of the job.
+    start_time: Any = None
+
+@dataclasses.dataclass
+class ServiceMigrationItem_Properties_HealthErrors_InnerHealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
+class ServiceMigrationItem_Properties_HealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    inner_health_errors: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
 class ServiceMigrationItem_Properties_ProviderSpecificDetails:
     # The class type.
     instance_type: Any = None
 
 @dataclasses.dataclass
 class ServiceMigrationItem_Properties:
+    # The allowed operations on the migration item based on the current migration state of the item.
+    allowed_operations: Any = None
+    # The critical past job details.
+    critical_job_history: Any = None
+    # Current job details of the migration item.
+    current_job: Any = None
+    # The correlation Id for events associated with this migration item.
+    event_correlation_id: Any = None
+    # The health.
+    health: Any = None
+    # The list of health errors.
+    health_errors: Any = None
+    # The status of the last migration.
+    last_migration_status: Any = None
+    # The last migration time.
+    last_migration_time: Any = None
+    # The status of the last test migration.
+    last_test_migration_status: Any = None
+    # The last test migration time.
+    last_test_migration_time: Any = None
+    # The on-premise virtual machine name.
+    machine_name: Any = None
+    # The migration status.
+    migration_state: Any = None
+    # The migration state description.
+    migration_state_description: Any = None
+    # The name of policy governing this item.
+    policy_friendly_name: Any = None
     # The policy Id.
     policy_id: Any = None
     # Enable migration provider specific input.
     provider_specific_details: Any = None
+    # The recovery services provider ARM Id.
+    recovery_services_provider_id: Any = None
+    # The replication status.
+    replication_status: Any = None
+    # The test migrate state.
+    test_migrate_state: Any = None
+    # The test migrate state description.
+    test_migrate_state_description: Any = None
+
+_ServiceMigrationItem_Properties_CriticalJobHistoryFields = {
+    "job_id": ubx.FieldSpec(wire_name="job_id"),
+    "job_name": ubx.FieldSpec(wire_name="job_name"),
+    "job_status": ubx.FieldSpec(wire_name="job_status"),
+    "start_time": ubx.FieldSpec(wire_name="start_time"),
+}
+
+_ServiceMigrationItem_Properties_CurrentJobFields = {
+    "job_id": ubx.FieldSpec(wire_name="job_id"),
+    "job_name": ubx.FieldSpec(wire_name="job_name"),
+    "start_time": ubx.FieldSpec(wire_name="start_time"),
+}
+
+_ServiceMigrationItem_Properties_HealthErrors_InnerHealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
+_ServiceMigrationItem_Properties_HealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "inner_health_errors": ubx.FieldSpec(
+        wire_name="inner_health_errors",
+        kind="list",
+        fields=_ServiceMigrationItem_Properties_HealthErrors_InnerHealthErrorsFields,
+    ),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
 
 _ServiceMigrationItem_Properties_ProviderSpecificDetailsFields = {
     "instance_type": ubx.FieldSpec(wire_name="instance_type"),
 }
 
 _ServiceMigrationItem_PropertiesFields = {
+    "allowed_operations": ubx.FieldSpec(wire_name="allowed_operations"),
+    "critical_job_history": ubx.FieldSpec(
+        wire_name="critical_job_history",
+        kind="list",
+        fields=_ServiceMigrationItem_Properties_CriticalJobHistoryFields,
+    ),
+    "current_job": ubx.FieldSpec(
+        wire_name="current_job",
+        kind="object",
+        fields=_ServiceMigrationItem_Properties_CurrentJobFields,
+    ),
+    "event_correlation_id": ubx.FieldSpec(wire_name="event_correlation_id"),
+    "health": ubx.FieldSpec(wire_name="health"),
+    "health_errors": ubx.FieldSpec(
+        wire_name="health_errors",
+        kind="list",
+        fields=_ServiceMigrationItem_Properties_HealthErrorsFields,
+    ),
+    "last_migration_status": ubx.FieldSpec(wire_name="last_migration_status"),
+    "last_migration_time": ubx.FieldSpec(wire_name="last_migration_time"),
+    "last_test_migration_status": ubx.FieldSpec(wire_name="last_test_migration_status"),
+    "last_test_migration_time": ubx.FieldSpec(wire_name="last_test_migration_time"),
+    "machine_name": ubx.FieldSpec(wire_name="machine_name"),
+    "migration_state": ubx.FieldSpec(wire_name="migration_state"),
+    "migration_state_description": ubx.FieldSpec(wire_name="migration_state_description"),
+    "policy_friendly_name": ubx.FieldSpec(wire_name="policy_friendly_name"),
     "policy_id": ubx.FieldSpec(wire_name="policy_id"),
     "provider_specific_details": ubx.FieldSpec(
         wire_name="provider_specific_details",
         kind="object",
         fields=_ServiceMigrationItem_Properties_ProviderSpecificDetailsFields,
     ),
+    "recovery_services_provider_id": ubx.FieldSpec(wire_name="recovery_services_provider_id"),
+    "replication_status": ubx.FieldSpec(wire_name="replication_status"),
+    "test_migrate_state": ubx.FieldSpec(wire_name="test_migrate_state"),
+    "test_migrate_state_description": ubx.FieldSpec(wire_name="test_migrate_state_description"),
 }
 
 @dataclasses.dataclass

@@ -23,8 +23,6 @@ _VirtualnetworkVirtualRouterPeering_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkVirtualRouterPeeringConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the rule group.
     properties: Any = None
 
@@ -38,7 +36,6 @@ class VirtualnetworkVirtualRouterPeeringAttrs:
 VirtualnetworkVirtualRouterPeering = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_virtual_router_peering",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

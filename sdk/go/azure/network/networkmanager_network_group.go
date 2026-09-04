@@ -30,26 +30,15 @@ type NetworkmanagerNetworkGroup_SystemData struct {
 }
 
 var NetworkmanagerNetworkGroup_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"MemberType": ubx.FieldSpec{WireName: "member_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
-
-var NetworkmanagerNetworkGroup_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"MemberType":        ubx.FieldSpec{WireName: "member_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkmanagerNetworkGroupConfig struct {
 	// Properties of network group
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerNetworkGroupAttrs struct {
@@ -64,13 +53,8 @@ var NetworkmanagerNetworkGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerNetworkGroup_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerNetworkGroup_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerNetworkGroup_PropertiesFields,
 		},
 	},
 }

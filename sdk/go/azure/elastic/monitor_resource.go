@@ -97,7 +97,7 @@ type MonitorResource_Properties struct {
 	// Flag to determine if User API Key has to be generated and shared.
 	GenerateApiKey any
 	// Hosting type of the monitor resource - either Hosted deployments or Serverless Projects.
-	HostingType any
+	HostingType           any
 	LiftrResourceCategory any
 	// The priority of the resource.
 	LiftrResourcePreference any
@@ -129,110 +129,110 @@ type MonitorResource_Sku struct {
 }
 
 var MonitorResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var MonitorResource_Properties_ElasticProperties_ElasticCloudDeploymentFields = ubx.FieldMap{
-		"AzureSubscriptionId": ubx.FieldSpec{WireName: "azure_subscription_id"},
-		"DeploymentId": ubx.FieldSpec{WireName: "deployment_id"},
-		"ElasticsearchRegion": ubx.FieldSpec{WireName: "elasticsearch_region"},
-		"ElasticsearchServiceUrl": ubx.FieldSpec{WireName: "elasticsearch_service_url"},
-		"KibanaServiceUrl": ubx.FieldSpec{WireName: "kibana_service_url"},
-		"KibanaSsoUrl": ubx.FieldSpec{WireName: "kibana_sso_url"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AzureSubscriptionId":     ubx.FieldSpec{WireName: "azure_subscription_id"},
+	"DeploymentId":            ubx.FieldSpec{WireName: "deployment_id"},
+	"ElasticsearchRegion":     ubx.FieldSpec{WireName: "elasticsearch_region"},
+	"ElasticsearchServiceUrl": ubx.FieldSpec{WireName: "elasticsearch_service_url"},
+	"KibanaServiceUrl":        ubx.FieldSpec{WireName: "kibana_service_url"},
+	"KibanaSsoUrl":            ubx.FieldSpec{WireName: "kibana_sso_url"},
+	"Name":                    ubx.FieldSpec{WireName: "name"},
+}
 
 var MonitorResource_Properties_ElasticProperties_ElasticCloudUserFields = ubx.FieldMap{
-		"ElasticCloudSsoDefaultUrl": ubx.FieldSpec{WireName: "elastic_cloud_sso_default_url"},
-		"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"ElasticCloudSsoDefaultUrl": ubx.FieldSpec{WireName: "elastic_cloud_sso_default_url"},
+	"EmailAddress":              ubx.FieldSpec{WireName: "email_address"},
+	"Id":                        ubx.FieldSpec{WireName: "id"},
+}
 
 var MonitorResource_Properties_ElasticPropertiesFields = ubx.FieldMap{
-		"ElasticCloudDeployment": ubx.FieldSpec{
-			WireName: "elastic_cloud_deployment",
-			Kind: "object",
-			Fields: MonitorResource_Properties_ElasticProperties_ElasticCloudDeploymentFields,
-		},
-		"ElasticCloudUser": ubx.FieldSpec{
-			WireName: "elastic_cloud_user",
-			Kind: "object",
-			Fields: MonitorResource_Properties_ElasticProperties_ElasticCloudUserFields,
-		},
-	}
+	"ElasticCloudDeployment": ubx.FieldSpec{
+		WireName: "elastic_cloud_deployment",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_ElasticProperties_ElasticCloudDeploymentFields,
+	},
+	"ElasticCloudUser": ubx.FieldSpec{
+		WireName: "elastic_cloud_user",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_ElasticProperties_ElasticCloudUserFields,
+	},
+}
 
 var MonitorResource_Properties_PlanDetailsFields = ubx.FieldMap{
-		"OfferId": ubx.FieldSpec{WireName: "offer_id"},
-		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
-		"PlanName": ubx.FieldSpec{WireName: "plan_name"},
-		"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
-		"TermId": ubx.FieldSpec{WireName: "term_id"},
-	}
+	"OfferId":     ubx.FieldSpec{WireName: "offer_id"},
+	"PlanId":      ubx.FieldSpec{WireName: "plan_id"},
+	"PlanName":    ubx.FieldSpec{WireName: "plan_name"},
+	"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
+	"TermId":      ubx.FieldSpec{WireName: "term_id"},
+}
 
 var MonitorResource_Properties_ProjectDetailsFields = ubx.FieldMap{
-		"ConfigurationType": ubx.FieldSpec{WireName: "configuration_type"},
-		"ProjectType": ubx.FieldSpec{WireName: "project_type"},
-	}
+	"ConfigurationType": ubx.FieldSpec{WireName: "configuration_type"},
+	"ProjectType":       ubx.FieldSpec{WireName: "project_type"},
+}
 
 var MonitorResource_Properties_UserInfo_CompanyInfoFields = ubx.FieldMap{
-		"Business": ubx.FieldSpec{WireName: "business"},
-		"Country": ubx.FieldSpec{WireName: "country"},
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"EmployeesNumber": ubx.FieldSpec{WireName: "employees_number"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"Business":        ubx.FieldSpec{WireName: "business"},
+	"Country":         ubx.FieldSpec{WireName: "country"},
+	"Domain":          ubx.FieldSpec{WireName: "domain"},
+	"EmployeesNumber": ubx.FieldSpec{WireName: "employees_number"},
+	"State":           ubx.FieldSpec{WireName: "state"},
+}
 
 var MonitorResource_Properties_UserInfoFields = ubx.FieldMap{
-		"CompanyInfo": ubx.FieldSpec{
-			WireName: "company_info",
-			Kind: "object",
-			Fields: MonitorResource_Properties_UserInfo_CompanyInfoFields,
-		},
-		"CompanyName": ubx.FieldSpec{WireName: "company_name"},
-		"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
-		"FirstName": ubx.FieldSpec{WireName: "first_name"},
-		"LastName": ubx.FieldSpec{WireName: "last_name"},
-	}
+	"CompanyInfo": ubx.FieldSpec{
+		WireName: "company_info",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_UserInfo_CompanyInfoFields,
+	},
+	"CompanyName":  ubx.FieldSpec{WireName: "company_name"},
+	"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
+	"FirstName":    ubx.FieldSpec{WireName: "first_name"},
+	"LastName":     ubx.FieldSpec{WireName: "last_name"},
+}
 
 var MonitorResource_PropertiesFields = ubx.FieldMap{
-		"ElasticProperties": ubx.FieldSpec{
-			WireName: "elastic_properties",
-			Kind: "object",
-			Fields: MonitorResource_Properties_ElasticPropertiesFields,
-		},
-		"GenerateApiKey": ubx.FieldSpec{WireName: "generate_api_key"},
-		"HostingType": ubx.FieldSpec{WireName: "hosting_type"},
-		"LiftrResourceCategory": ubx.FieldSpec{WireName: "liftr_resource_category"},
-		"LiftrResourcePreference": ubx.FieldSpec{WireName: "liftr_resource_preference"},
-		"MonitoringStatus": ubx.FieldSpec{WireName: "monitoring_status"},
-		"PlanDetails": ubx.FieldSpec{
-			WireName: "plan_details",
-			Kind: "object",
-			Fields: MonitorResource_Properties_PlanDetailsFields,
-		},
-		"ProjectDetails": ubx.FieldSpec{
-			WireName: "project_details",
-			Kind: "object",
-			Fields: MonitorResource_Properties_ProjectDetailsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SaaSazureSubscriptionStatus": ubx.FieldSpec{WireName: "saa_sazure_subscription_status"},
-		"SourceCampaignId": ubx.FieldSpec{WireName: "source_campaign_id"},
-		"SourceCampaignName": ubx.FieldSpec{WireName: "source_campaign_name"},
-		"SubscriptionState": ubx.FieldSpec{WireName: "subscription_state"},
-		"UserInfo": ubx.FieldSpec{
-			WireName: "user_info",
-			Kind: "object",
-			Fields: MonitorResource_Properties_UserInfoFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ElasticProperties": ubx.FieldSpec{
+		WireName: "elastic_properties",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_ElasticPropertiesFields,
+	},
+	"GenerateApiKey":          ubx.FieldSpec{WireName: "generate_api_key"},
+	"HostingType":             ubx.FieldSpec{WireName: "hosting_type"},
+	"LiftrResourceCategory":   ubx.FieldSpec{WireName: "liftr_resource_category"},
+	"LiftrResourcePreference": ubx.FieldSpec{WireName: "liftr_resource_preference"},
+	"MonitoringStatus":        ubx.FieldSpec{WireName: "monitoring_status"},
+	"PlanDetails": ubx.FieldSpec{
+		WireName: "plan_details",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_PlanDetailsFields,
+	},
+	"ProjectDetails": ubx.FieldSpec{
+		WireName: "project_details",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_ProjectDetailsFields,
+	},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"SaaSazureSubscriptionStatus": ubx.FieldSpec{WireName: "saa_sazure_subscription_status"},
+	"SourceCampaignId":            ubx.FieldSpec{WireName: "source_campaign_id"},
+	"SourceCampaignName":          ubx.FieldSpec{WireName: "source_campaign_name"},
+	"SubscriptionState":           ubx.FieldSpec{WireName: "subscription_state"},
+	"UserInfo": ubx.FieldSpec{
+		WireName: "user_info",
+		Kind:     "object",
+		Fields:   MonitorResource_Properties_UserInfoFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var MonitorResource_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type MonitorResourceConfig struct {
 	// Identity properties.
@@ -261,19 +261,19 @@ var MonitorResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: MonitorResource_IdentityFields,
+			Kind:     "object",
+			Fields:   MonitorResource_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MonitorResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   MonitorResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: MonitorResource_SkuFields,
+			Kind:     "object",
+			Fields:   MonitorResource_SkuFields,
 		},
 	},
 }

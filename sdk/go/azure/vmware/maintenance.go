@@ -4,21 +4,21 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources_Errors struct {
-	ActionRequired any
-	Details any
-	ErrorCode any
-	Name any
+	ActionRequired  any
+	Details         any
+	ErrorCode       any
+	Name            any
 	ResolutionSteps any
 }
 
 type Maintenance_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources struct {
 	Errors any
-	Id any
+	Id     any
 }
 
 type Maintenance_Properties_MaintenanceReadiness_FailedChecks struct {
 	ImpactedResources any
-	Name any
+	Name              any
 }
 
 type Maintenance_Properties_MaintenanceReadiness struct {
@@ -86,6 +86,5 @@ type MaintenanceAttrs struct {
 
 var Maintenance = ubx.ResourceBinding{
 	WireType: "azure_vmware_maintenance",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

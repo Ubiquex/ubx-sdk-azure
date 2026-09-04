@@ -9,12 +9,10 @@ type SqlpoolTransparentDataEncryption_Properties struct {
 }
 
 var SqlpoolTransparentDataEncryption_PropertiesFields = ubx.FieldMap{
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 type SqlpoolTransparentDataEncryptionConfig struct {
-	// Resource location.
-	Location any
 	// Represents the properties of a database transparent data encryption.
 	Properties any
 }
@@ -29,11 +27,10 @@ type SqlpoolTransparentDataEncryptionAttrs struct {
 var SqlpoolTransparentDataEncryption = ubx.ResourceBinding{
 	WireType: "azure_synapse_sqlpool_transparent_data_encryption",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolTransparentDataEncryption_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolTransparentDataEncryption_PropertiesFields,
 		},
 	},
 }

@@ -29,10 +29,6 @@ const EncryptionprotectorsEncryptionProtector_PropertiesFields: FieldMap = {
 };
 
 export interface EncryptionprotectorsEncryptionProtectorConfig {
-  /** Kind of encryption protector. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
-  /** Resource location. */
-  location?: string | Computed<string>;
   /** Properties for an encryption protector execution. */
   properties?: EncryptionprotectorsEncryptionProtector_Properties | Computed<EncryptionprotectorsEncryptionProtector_Properties>;
 }
@@ -49,8 +45,6 @@ export interface EncryptionprotectorsEncryptionProtectorAttrs {
 export const EncryptionprotectorsEncryptionProtector: ResourceBinding<EncryptionprotectorsEncryptionProtectorConfig, EncryptionprotectorsEncryptionProtectorAttrs> = {
   wireType: "azure_sql_encryptionprotectors_encryption_protector",
   fields: {
-    kind: "kind",
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

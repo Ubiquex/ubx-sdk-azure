@@ -4,11 +4,11 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GatewayResource_Value_Properties_ApiMetadataProperties struct {
-	Description any
+	Description   any
 	Documentation any
-	ServerUrl any
-	Title any
-	Version any
+	ServerUrl     any
+	Title         any
+	Version       any
 }
 
 type GatewayResource_Value_Properties_Apms struct {
@@ -17,93 +17,93 @@ type GatewayResource_Value_Properties_Apms struct {
 
 type GatewayResource_Value_Properties_ClientAuth struct {
 	CertificateVerification any
-	Certificates any
+	Certificates            any
 }
 
 type GatewayResource_Value_Properties_CorsProperties struct {
-	AllowCredentials any
-	AllowedHeaders any
-	AllowedMethods any
+	AllowCredentials      any
+	AllowedHeaders        any
+	AllowedMethods        any
 	AllowedOriginPatterns any
-	AllowedOrigins any
-	ExposedHeaders any
-	MaxAge any
+	AllowedOrigins        any
+	ExposedHeaders        any
+	MaxAge                any
 }
 
 type GatewayResource_Value_Properties_EnvironmentVariables struct {
 	Properties any
-	Secrets any
+	Secrets    any
 }
 
 type GatewayResource_Value_Properties_Instances struct {
-	Name any
+	Name   any
 	Status any
 }
 
 type GatewayResource_Value_Properties_OperatorProperties_ResourceRequests struct {
-	Cpu any
+	Cpu           any
 	InstanceCount any
-	Memory any
+	Memory        any
 }
 
 type GatewayResource_Value_Properties_OperatorProperties struct {
-	Instances any
+	Instances        any
 	ResourceRequests any
 }
 
 type GatewayResource_Value_Properties_ResourceRequests struct {
-	Cpu any
+	Cpu    any
 	Memory any
 }
 
 type GatewayResource_Value_Properties_SsoProperties struct {
-	ClientId any
+	ClientId     any
 	ClientSecret any
-	IssuerUri any
-	Scope any
+	IssuerUri    any
+	Scope        any
 }
 
 type GatewayResource_Value_Properties struct {
 	ApiMetadataProperties any
-	Apms any
-	ClientAuth any
-	CorsProperties any
-	EnvironmentVariables any
-	HttpsOnly any
-	Instances any
-	OperatorProperties any
-	ProvisioningState any
-	Public any
-	ResourceRequests any
-	SsoProperties any
-	Url any
+	Apms                  any
+	ClientAuth            any
+	CorsProperties        any
+	EnvironmentVariables  any
+	HttpsOnly             any
+	Instances             any
+	OperatorProperties    any
+	ProvisioningState     any
+	Public                any
+	ResourceRequests      any
+	SsoProperties         any
+	Url                   any
 }
 
 type GatewayResource_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type GatewayResource_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type GatewayResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type GatewayResourceAttrs struct {
 	ApiVersion any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of gateway resources
 	Value any
 }
@@ -111,9 +111,9 @@ type GatewayResourceAttrs struct {
 var GatewayResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_gateway_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

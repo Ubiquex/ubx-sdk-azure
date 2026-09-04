@@ -28,28 +28,11 @@ const Replica_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const Replica_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ReplicaConfig {
-  /** The resource ID. */
-  id?: string | Computed<string>;
   /** The location of the replica. */
   location?: string | Computed<string>;
-  /** The name of the replica. */
-  name?: string | Computed<string>;
   /** All replica properties. */
   properties?: Replica_Properties | Computed<Replica_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: Replica_SystemData | Computed<Replica_SystemData>;
-  /** The type of the resource. */
-  type?: string | Computed<string>;
 }
 
 export interface ReplicaAttrs {
@@ -70,19 +53,11 @@ export interface ReplicaAttrs {
 export const Replica: ResourceBinding<ReplicaConfig, ReplicaAttrs> = {
   wireType: "azure_appconfiguration_replica",
   fields: {
-    id: "id",
     location: "location",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Replica_PropertiesFields,
     },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: Replica_SystemDataFields,
-    },
-    type: "type",
   },
 };

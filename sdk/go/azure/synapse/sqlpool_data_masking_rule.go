@@ -31,25 +31,21 @@ type SqlpoolDataMaskingRule_Properties struct {
 }
 
 var SqlpoolDataMaskingRule_PropertiesFields = ubx.FieldMap{
-		"AliasName": ubx.FieldSpec{WireName: "alias_name"},
-		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"MaskingFunction": ubx.FieldSpec{WireName: "masking_function"},
-		"NumberFrom": ubx.FieldSpec{WireName: "number_from"},
-		"NumberTo": ubx.FieldSpec{WireName: "number_to"},
-		"PrefixSize": ubx.FieldSpec{WireName: "prefix_size"},
-		"ReplacementString": ubx.FieldSpec{WireName: "replacement_string"},
-		"RuleState": ubx.FieldSpec{WireName: "rule_state"},
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
-		"SuffixSize": ubx.FieldSpec{WireName: "suffix_size"},
-		"TableName": ubx.FieldSpec{WireName: "table_name"},
-	}
+	"AliasName":         ubx.FieldSpec{WireName: "alias_name"},
+	"ColumnName":        ubx.FieldSpec{WireName: "column_name"},
+	"Id":                ubx.FieldSpec{WireName: "id"},
+	"MaskingFunction":   ubx.FieldSpec{WireName: "masking_function"},
+	"NumberFrom":        ubx.FieldSpec{WireName: "number_from"},
+	"NumberTo":          ubx.FieldSpec{WireName: "number_to"},
+	"PrefixSize":        ubx.FieldSpec{WireName: "prefix_size"},
+	"ReplacementString": ubx.FieldSpec{WireName: "replacement_string"},
+	"RuleState":         ubx.FieldSpec{WireName: "rule_state"},
+	"SchemaName":        ubx.FieldSpec{WireName: "schema_name"},
+	"SuffixSize":        ubx.FieldSpec{WireName: "suffix_size"},
+	"TableName":         ubx.FieldSpec{WireName: "table_name"},
+}
 
 type SqlpoolDataMaskingRuleConfig struct {
-	// The kind of Data Masking Rule. Metadata, used for Azure portal.
-	Kind any
-	// The location of the data masking rule.
-	Location any
 	// The properties of a Sql pool data masking rule.
 	Properties any
 }
@@ -66,12 +62,10 @@ type SqlpoolDataMaskingRuleAttrs struct {
 var SqlpoolDataMaskingRule = ubx.ResourceBinding{
 	WireType: "azure_synapse_sqlpool_data_masking_rule",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolDataMaskingRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolDataMaskingRule_PropertiesFields,
 		},
 	},
 }

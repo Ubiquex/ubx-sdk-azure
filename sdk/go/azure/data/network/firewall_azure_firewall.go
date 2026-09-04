@@ -17,30 +17,30 @@ type FirewallAzureFirewall_Value_Properties_ApplicationRuleCollections_Propertie
 }
 
 type FirewallAzureFirewall_Value_Properties_ApplicationRuleCollections_Properties_Rules_Protocols struct {
-	Port any
+	Port         any
 	ProtocolType any
 }
 
 type FirewallAzureFirewall_Value_Properties_ApplicationRuleCollections_Properties_Rules struct {
-	Description any
-	FqdnTags any
-	Name any
-	Protocols any
+	Description     any
+	FqdnTags        any
+	Name            any
+	Protocols       any
 	SourceAddresses any
-	SourceIpGroups any
-	TargetFqdns any
+	SourceIpGroups  any
+	TargetFqdns     any
 }
 
 type FirewallAzureFirewall_Value_Properties_ApplicationRuleCollections_Properties struct {
-	Action any
-	Priority any
+	Action            any
+	Priority          any
 	ProvisioningState any
-	Rules any
+	Rules             any
 }
 
 type FirewallAzureFirewall_Value_Properties_ApplicationRuleCollections struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
@@ -59,81 +59,81 @@ type FirewallAzureFirewall_Value_Properties_HubIpaddresses_PublicIps_Addresses s
 
 type FirewallAzureFirewall_Value_Properties_HubIpaddresses_PublicIps struct {
 	Addresses any
-	Count any
+	Count     any
 }
 
 type FirewallAzureFirewall_Value_Properties_HubIpaddresses struct {
 	PrivateIpaddress any
-	PublicIps any
+	PublicIps        any
 }
 
 type FirewallAzureFirewall_Value_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress  any
 	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	PublicIpaddress   any
+	Subnet            any
 }
 
 type FirewallAzureFirewall_Value_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type FirewallAzureFirewall_Value_Properties_IpGroups struct {
 	ChangeNumber any
-	Id any
+	Id           any
 }
 
 type FirewallAzureFirewall_Value_Properties_NatRuleCollections_Properties_Rules struct {
-	Description any
+	Description          any
 	DestinationAddresses any
-	DestinationPorts any
-	Name any
-	Protocols any
-	SourceAddresses any
-	SourceIpGroups any
-	TranslatedAddress any
-	TranslatedFqdn any
-	TranslatedPort any
+	DestinationPorts     any
+	Name                 any
+	Protocols            any
+	SourceAddresses      any
+	SourceIpGroups       any
+	TranslatedAddress    any
+	TranslatedFqdn       any
+	TranslatedPort       any
 }
 
 type FirewallAzureFirewall_Value_Properties_NatRuleCollections_Properties struct {
-	Action any
-	Priority any
+	Action            any
+	Priority          any
 	ProvisioningState any
-	Rules any
+	Rules             any
 }
 
 type FirewallAzureFirewall_Value_Properties_NatRuleCollections struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type FirewallAzureFirewall_Value_Properties_NetworkRuleCollections_Properties_Rules struct {
-	Description any
+	Description          any
 	DestinationAddresses any
-	DestinationFqdns any
-	DestinationIpGroups any
-	DestinationPorts any
-	Name any
-	Protocols any
-	SourceAddresses any
-	SourceIpGroups any
+	DestinationFqdns     any
+	DestinationIpGroups  any
+	DestinationPorts     any
+	Name                 any
+	Protocols            any
+	SourceAddresses      any
+	SourceIpGroups       any
 }
 
 type FirewallAzureFirewall_Value_Properties_NetworkRuleCollections_Properties struct {
-	Action any
-	Priority any
+	Action            any
+	Priority          any
 	ProvisioningState any
-	Rules any
+	Rules             any
 }
 
 type FirewallAzureFirewall_Value_Properties_NetworkRuleCollections struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
@@ -143,28 +143,28 @@ type FirewallAzureFirewall_Value_Properties_Sku struct {
 }
 
 type FirewallAzureFirewall_Value_Properties struct {
-	AdditionalProperties any
-	AfcConfiguration any
+	AdditionalProperties       any
+	AfcConfiguration           any
 	ApplicationRuleCollections any
-	AutoscaleConfiguration any
-	FirewallPolicy any
-	HubIpaddresses any
-	IpConfigurations any
-	IpGroups any
-	ManagementIpConfiguration any
-	NatRuleCollections any
-	NetworkRuleCollections any
-	ProvisioningState any
-	Sku any
-	ThreatIntelMode any
-	VirtualHub any
+	AutoscaleConfiguration     any
+	FirewallPolicy             any
+	HubIpaddresses             any
+	IpConfigurations           any
+	IpGroups                   any
+	ManagementIpConfiguration  any
+	NatRuleCollections         any
+	NetworkRuleCollections     any
+	ProvisioningState          any
+	Sku                        any
+	ThreatIntelMode            any
+	VirtualHub                 any
 }
 
 type FirewallAzureFirewall_Value struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Zones any
+	Properties       any
+	Zones            any
 }
 
 type FirewallAzureFirewallConfig struct {
@@ -179,6 +179,5 @@ type FirewallAzureFirewallAttrs struct {
 
 var FirewallAzureFirewall = ubx.DataSourceBinding{
 	WireType: "azure_network_firewall_azure_firewall",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

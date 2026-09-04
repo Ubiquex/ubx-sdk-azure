@@ -4,20 +4,20 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteCrossConnectionPeering_Value_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix any
-	Signature any
-	ValidationId any
+	Prefix          any
+	Signature       any
+	ValidationId    any
 	ValidationState any
 }
 
 type ExpressrouteExpressRouteCrossConnectionPeering_Value_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig struct {
-	AdvertisedCommunities any
-	AdvertisedPublicPrefixInfo any
-	AdvertisedPublicPrefixes any
+	AdvertisedCommunities         any
+	AdvertisedPublicPrefixInfo    any
+	AdvertisedPublicPrefixes      any
 	AdvertisedPublicPrefixesState any
-	CustomerAsn any
-	LegacyMode any
-	RoutingRegistryName any
+	CustomerAsn                   any
+	LegacyMode                    any
+	RoutingRegistryName           any
 }
 
 type ExpressrouteExpressRouteCrossConnectionPeering_Value_Properties_Ipv6PeeringConfig_RouteFilter struct {
@@ -25,34 +25,34 @@ type ExpressrouteExpressRouteCrossConnectionPeering_Value_Properties_Ipv6Peering
 }
 
 type ExpressrouteExpressRouteCrossConnectionPeering_Value_Properties_Ipv6PeeringConfig struct {
-	MicrosoftPeeringConfig any
-	PrimaryPeerAddressPrefix any
-	RouteFilter any
+	MicrosoftPeeringConfig     any
+	PrimaryPeerAddressPrefix   any
+	RouteFilter                any
 	SecondaryPeerAddressPrefix any
-	State any
+	State                      any
 }
 
 type ExpressrouteExpressRouteCrossConnectionPeering_Value_Properties struct {
-	AzureAsn any
-	GatewayManagerEtag any
-	Ipv6PeeringConfig any
-	LastModifiedBy any
-	MicrosoftPeeringConfig any
-	PeerAsn any
-	PeeringType any
-	PrimaryAzurePort any
-	PrimaryPeerAddressPrefix any
-	ProvisioningState any
-	SecondaryAzurePort any
+	AzureAsn                   any
+	GatewayManagerEtag         any
+	Ipv6PeeringConfig          any
+	LastModifiedBy             any
+	MicrosoftPeeringConfig     any
+	PeerAsn                    any
+	PeeringType                any
+	PrimaryAzurePort           any
+	PrimaryPeerAddressPrefix   any
+	ProvisioningState          any
+	SecondaryAzurePort         any
 	SecondaryPeerAddressPrefix any
-	SharedKey any
-	State any
-	VlanId any
+	SharedKey                  any
+	State                      any
+	VlanId                     any
 }
 
 type ExpressrouteExpressRouteCrossConnectionPeering_Value struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 

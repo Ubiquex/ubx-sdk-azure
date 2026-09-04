@@ -4,10 +4,10 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoMiroleAssignmentResource_Value_Properties struct {
-	PrincipalId any
+	PrincipalId       any
 	ProvisioningState any
-	RoleDefinitionId any
-	Scope any
+	RoleDefinitionId  any
+	Scope             any
 }
 
 type DbOpenapiMongoMiroleAssignmentResource_Value struct {

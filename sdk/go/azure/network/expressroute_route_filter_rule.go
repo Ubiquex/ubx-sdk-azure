@@ -15,15 +15,13 @@ type ExpressrouteRouteFilterRule_Properties struct {
 }
 
 var ExpressrouteRouteFilterRule_PropertiesFields = ubx.FieldMap{
-		"Access": ubx.FieldSpec{WireName: "access"},
-		"Communities": ubx.FieldSpec{WireName: "communities"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RouteFilterRuleType": ubx.FieldSpec{WireName: "route_filter_rule_type"},
-	}
+	"Access":              ubx.FieldSpec{WireName: "access"},
+	"Communities":         ubx.FieldSpec{WireName: "communities"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"RouteFilterRuleType": ubx.FieldSpec{WireName: "route_filter_rule_type"},
+}
 
 type ExpressrouteRouteFilterRuleConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Resource location.
 	Location any
 	// The name of the resource that is unique within a resource group. This name can be used to access the resource.
@@ -46,13 +44,12 @@ type ExpressrouteRouteFilterRuleAttrs struct {
 var ExpressrouteRouteFilterRule = ubx.ResourceBinding{
 	WireType: "azure_network_expressroute_route_filter_rule",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteRouteFilterRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteRouteFilterRule_PropertiesFields,
 		},
 	},
 }

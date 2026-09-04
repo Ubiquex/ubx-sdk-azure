@@ -4,7 +4,7 @@ package mongocluster
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MongoCluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -76,15 +76,15 @@ type MongoCluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoi
 
 type MongoCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type MongoCluster_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type MongoCluster_Properties_PrivateEndpointConnections struct {
@@ -174,202 +174,202 @@ type MongoCluster_Properties struct {
 }
 
 var MongoCluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var MongoCluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: MongoCluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   MongoCluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var MongoCluster_Properties_AdministratorFields = ubx.FieldMap{
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-	}
+	"Password": ubx.FieldSpec{WireName: "password"},
+	"UserName": ubx.FieldSpec{WireName: "user_name"},
+}
 
 var MongoCluster_Properties_AuthConfigFields = ubx.FieldMap{
-		"AllowedModes": ubx.FieldSpec{WireName: "allowed_modes"},
-	}
+	"AllowedModes": ubx.FieldSpec{WireName: "allowed_modes"},
+}
 
 var MongoCluster_Properties_BackupFields = ubx.FieldMap{
-		"EarliestRestoreTime": ubx.FieldSpec{WireName: "earliest_restore_time"},
-	}
+	"EarliestRestoreTime": ubx.FieldSpec{WireName: "earliest_restore_time"},
+}
 
 var MongoCluster_Properties_ComputeFields = ubx.FieldMap{
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 var MongoCluster_Properties_DataApiFields = ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+}
 
 var MongoCluster_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields = ubx.FieldMap{
-		"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
-		"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
-	}
+	"IdentityType":                   ubx.FieldSpec{WireName: "identity_type"},
+	"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
+}
 
 var MongoCluster_Properties_Encryption_CustomerManagedKeyEncryptionFields = ubx.FieldMap{
-		"KeyEncryptionKeyIdentity": ubx.FieldSpec{
-			WireName: "key_encryption_key_identity",
-			Kind: "object",
-			Fields: MongoCluster_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields,
-		},
-		"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
-	}
+	"KeyEncryptionKeyIdentity": ubx.FieldSpec{
+		WireName: "key_encryption_key_identity",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields,
+	},
+	"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
+}
 
 var MongoCluster_Properties_EncryptionFields = ubx.FieldMap{
-		"CustomerManagedKeyEncryption": ubx.FieldSpec{
-			WireName: "customer_managed_key_encryption",
-			Kind: "object",
-			Fields: MongoCluster_Properties_Encryption_CustomerManagedKeyEncryptionFields,
-		},
-	}
+	"CustomerManagedKeyEncryption": ubx.FieldSpec{
+		WireName: "customer_managed_key_encryption",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_Encryption_CustomerManagedKeyEncryptionFields,
+	},
+}
 
 var MongoCluster_Properties_HighAvailabilityFields = ubx.FieldMap{
-		"TargetMode": ubx.FieldSpec{WireName: "target_mode"},
-	}
+	"TargetMode": ubx.FieldSpec{WireName: "target_mode"},
+}
 
 var MongoCluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var MongoCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var MongoCluster_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: MongoCluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: MongoCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var MongoCluster_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: MongoCluster_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var MongoCluster_Properties_ReplicaFields = ubx.FieldMap{
-		"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
-		"Role": ubx.FieldSpec{WireName: "role"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
+	"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
+	"Role":             ubx.FieldSpec{WireName: "role"},
+	"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 var MongoCluster_Properties_ReplicaParametersFields = ubx.FieldMap{
-		"SourceLocation": ubx.FieldSpec{WireName: "source_location"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
+	"SourceLocation":   ubx.FieldSpec{WireName: "source_location"},
+	"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 var MongoCluster_Properties_RestoreParametersFields = ubx.FieldMap{
-		"PointInTimeUtc": ubx.FieldSpec{WireName: "point_in_time_utc"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
+	"PointInTimeUtc":   ubx.FieldSpec{WireName: "point_in_time_utc"},
+	"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 var MongoCluster_Properties_ShardingFields = ubx.FieldMap{
-		"ShardCount": ubx.FieldSpec{WireName: "shard_count"},
-	}
+	"ShardCount": ubx.FieldSpec{WireName: "shard_count"},
+}
 
 var MongoCluster_Properties_StorageFields = ubx.FieldMap{
-		"SizeGb": ubx.FieldSpec{WireName: "size_gb"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"SizeGb": ubx.FieldSpec{WireName: "size_gb"},
+	"Type":   ubx.FieldSpec{WireName: "type"},
+}
 
 var MongoCluster_PropertiesFields = ubx.FieldMap{
-		"Administrator": ubx.FieldSpec{
-			WireName: "administrator",
-			Kind: "object",
-			Fields: MongoCluster_Properties_AdministratorFields,
-		},
-		"AuthConfig": ubx.FieldSpec{
-			WireName: "auth_config",
-			Kind: "object",
-			Fields: MongoCluster_Properties_AuthConfigFields,
-		},
-		"Backup": ubx.FieldSpec{
-			WireName: "backup",
-			Kind: "object",
-			Fields: MongoCluster_Properties_BackupFields,
-		},
-		"ClusterStatus": ubx.FieldSpec{WireName: "cluster_status"},
-		"Compute": ubx.FieldSpec{
-			WireName: "compute",
-			Kind: "object",
-			Fields: MongoCluster_Properties_ComputeFields,
-		},
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"DataApi": ubx.FieldSpec{
-			WireName: "data_api",
-			Kind: "object",
-			Fields: MongoCluster_Properties_DataApiFields,
-		},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: MongoCluster_Properties_EncryptionFields,
-		},
-		"HighAvailability": ubx.FieldSpec{
-			WireName: "high_availability",
-			Kind: "object",
-			Fields: MongoCluster_Properties_HighAvailabilityFields,
-		},
-		"InfrastructureVersion": ubx.FieldSpec{WireName: "infrastructure_version"},
-		"NetworkBypassMode": ubx.FieldSpec{WireName: "network_bypass_mode"},
-		"PreviewFeatures": ubx.FieldSpec{WireName: "preview_features"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: MongoCluster_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"Replica": ubx.FieldSpec{
-			WireName: "replica",
-			Kind: "object",
-			Fields: MongoCluster_Properties_ReplicaFields,
-		},
-		"ReplicaParameters": ubx.FieldSpec{
-			WireName: "replica_parameters",
-			Kind: "object",
-			Fields: MongoCluster_Properties_ReplicaParametersFields,
-		},
-		"RestoreParameters": ubx.FieldSpec{
-			WireName: "restore_parameters",
-			Kind: "object",
-			Fields: MongoCluster_Properties_RestoreParametersFields,
-		},
-		"ServerVersion": ubx.FieldSpec{WireName: "server_version"},
-		"Sharding": ubx.FieldSpec{
-			WireName: "sharding",
-			Kind: "object",
-			Fields: MongoCluster_Properties_ShardingFields,
-		},
-		"Storage": ubx.FieldSpec{
-			WireName: "storage",
-			Kind: "object",
-			Fields: MongoCluster_Properties_StorageFields,
-		},
-	}
+	"Administrator": ubx.FieldSpec{
+		WireName: "administrator",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_AdministratorFields,
+	},
+	"AuthConfig": ubx.FieldSpec{
+		WireName: "auth_config",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_AuthConfigFields,
+	},
+	"Backup": ubx.FieldSpec{
+		WireName: "backup",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_BackupFields,
+	},
+	"ClusterStatus": ubx.FieldSpec{WireName: "cluster_status"},
+	"Compute": ubx.FieldSpec{
+		WireName: "compute",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_ComputeFields,
+	},
+	"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
+	"CreateMode":       ubx.FieldSpec{WireName: "create_mode"},
+	"DataApi": ubx.FieldSpec{
+		WireName: "data_api",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_DataApiFields,
+	},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_EncryptionFields,
+	},
+	"HighAvailability": ubx.FieldSpec{
+		WireName: "high_availability",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_HighAvailabilityFields,
+	},
+	"InfrastructureVersion": ubx.FieldSpec{WireName: "infrastructure_version"},
+	"NetworkBypassMode":     ubx.FieldSpec{WireName: "network_bypass_mode"},
+	"PreviewFeatures":       ubx.FieldSpec{WireName: "preview_features"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   MongoCluster_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"Replica": ubx.FieldSpec{
+		WireName: "replica",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_ReplicaFields,
+	},
+	"ReplicaParameters": ubx.FieldSpec{
+		WireName: "replica_parameters",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_ReplicaParametersFields,
+	},
+	"RestoreParameters": ubx.FieldSpec{
+		WireName: "restore_parameters",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_RestoreParametersFields,
+	},
+	"ServerVersion": ubx.FieldSpec{WireName: "server_version"},
+	"Sharding": ubx.FieldSpec{
+		WireName: "sharding",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_ShardingFields,
+	},
+	"Storage": ubx.FieldSpec{
+		WireName: "storage",
+		Kind:     "object",
+		Fields:   MongoCluster_Properties_StorageFields,
+	},
+}
 
 type MongoClusterConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -390,13 +390,13 @@ var MongoCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: MongoCluster_IdentityFields,
+			Kind:     "object",
+			Fields:   MongoCluster_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MongoCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   MongoCluster_PropertiesFields,
 		},
 	},
 }

@@ -4,7 +4,7 @@ package webpubsub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WebPubSubResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -21,7 +21,7 @@ type WebPubSubResource_Identity struct {
 
 type WebPubSubResource_Properties_LiveTraceConfiguration_Categories struct {
 	Enabled any
-	Name any
+	Name    any
 }
 
 type WebPubSubResource_Properties_LiveTraceConfiguration struct {
@@ -33,7 +33,7 @@ type WebPubSubResource_Properties_LiveTraceConfiguration struct {
 
 type WebPubSubResource_Properties_NetworkAcls_IpRules struct {
 	Action any
-	Value any
+	Value  any
 }
 
 type WebPubSubResource_Properties_NetworkAcls_PrivateEndpoints struct {
@@ -64,15 +64,15 @@ type WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateE
 
 type WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type WebPubSubResource_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type WebPubSubResource_Properties_PrivateEndpointConnections struct {
@@ -85,11 +85,11 @@ type WebPubSubResource_Properties_ResourceLogConfiguration struct {
 }
 
 type WebPubSubResource_Properties_SharedPrivateLinkResources_Properties struct {
-	GroupId any
+	GroupId               any
 	PrivateLinkResourceId any
-	ProvisioningState any
-	RequestMessage any
-	Status any
+	ProvisioningState     any
+	RequestMessage        any
+	Status                any
 }
 
 type WebPubSubResource_Properties_SharedPrivateLinkResources struct {
@@ -161,190 +161,190 @@ type WebPubSubResource_Sku struct {
 }
 
 var WebPubSubResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var WebPubSubResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: WebPubSubResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   WebPubSubResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var WebPubSubResource_Properties_LiveTraceConfiguration_CategoriesFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Name":    ubx.FieldSpec{WireName: "name"},
+}
 
 var WebPubSubResource_Properties_LiveTraceConfigurationFields = ubx.FieldMap{
-		"Categories": ubx.FieldSpec{
-			WireName: "categories",
-			Kind: "list",
-			Fields: WebPubSubResource_Properties_LiveTraceConfiguration_CategoriesFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Categories": ubx.FieldSpec{
+		WireName: "categories",
+		Kind:     "list",
+		Fields:   WebPubSubResource_Properties_LiveTraceConfiguration_CategoriesFields,
+	},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var WebPubSubResource_Properties_NetworkAcls_IpRulesFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Action": ubx.FieldSpec{WireName: "action"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var WebPubSubResource_Properties_NetworkAcls_PrivateEndpointsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var WebPubSubResource_Properties_NetworkAcls_PublicNetworkFields = ubx.FieldMap{
-		"Allow": ubx.FieldSpec{WireName: "allow"},
-		"Deny": ubx.FieldSpec{WireName: "deny"},
-	}
+	"Allow": ubx.FieldSpec{WireName: "allow"},
+	"Deny":  ubx.FieldSpec{WireName: "deny"},
+}
 
 var WebPubSubResource_Properties_NetworkAclsFields = ubx.FieldMap{
-		"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: WebPubSubResource_Properties_NetworkAcls_IpRulesFields,
-		},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: WebPubSubResource_Properties_NetworkAcls_PrivateEndpointsFields,
-		},
-		"PublicNetwork": ubx.FieldSpec{
-			WireName: "public_network",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_NetworkAcls_PublicNetworkFields,
-		},
-	}
+	"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   WebPubSubResource_Properties_NetworkAcls_IpRulesFields,
+	},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   WebPubSubResource_Properties_NetworkAcls_PrivateEndpointsFields,
+	},
+	"PublicNetwork": ubx.FieldSpec{
+		WireName: "public_network",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_NetworkAcls_PublicNetworkFields,
+	},
+}
 
 var WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var WebPubSubResource_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var WebPubSubResource_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var WebPubSubResource_Properties_ResourceLogConfigurationFields = ubx.FieldMap{
-		"Categories": ubx.FieldSpec{
-			WireName: "categories",
-			Kind: "list",
-			Fields: WebPubSubResource_Properties_LiveTraceConfiguration_CategoriesFields,
-		},
-	}
+	"Categories": ubx.FieldSpec{
+		WireName: "categories",
+		Kind:     "list",
+		Fields:   WebPubSubResource_Properties_LiveTraceConfiguration_CategoriesFields,
+	},
+}
 
 var WebPubSubResource_Properties_SharedPrivateLinkResources_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"GroupId":               ubx.FieldSpec{WireName: "group_id"},
+	"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestMessage":        ubx.FieldSpec{WireName: "request_message"},
+	"Status":                ubx.FieldSpec{WireName: "status"},
+}
 
 var WebPubSubResource_Properties_SharedPrivateLinkResourcesFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_SharedPrivateLinkResources_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_SharedPrivateLinkResources_PropertiesFields,
+	},
+}
 
 var WebPubSubResource_Properties_SocketIoFields = ubx.FieldMap{
-		"ServiceMode": ubx.FieldSpec{WireName: "service_mode"},
-	}
+	"ServiceMode": ubx.FieldSpec{WireName: "service_mode"},
+}
 
 var WebPubSubResource_Properties_TlsFields = ubx.FieldMap{
-		"ClientCertEnabled": ubx.FieldSpec{WireName: "client_cert_enabled"},
-	}
+	"ClientCertEnabled": ubx.FieldSpec{WireName: "client_cert_enabled"},
+}
 
 var WebPubSubResource_PropertiesFields = ubx.FieldMap{
-		"DisableAadAuth": ubx.FieldSpec{WireName: "disable_aad_auth"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"ExternalIp": ubx.FieldSpec{WireName: "external_ip"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"HostNamePrefix": ubx.FieldSpec{WireName: "host_name_prefix"},
-		"LiveTraceConfiguration": ubx.FieldSpec{
-			WireName: "live_trace_configuration",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_LiveTraceConfigurationFields,
-		},
-		"NetworkAcls": ubx.FieldSpec{
-			WireName: "network_acls",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_NetworkAclsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: WebPubSubResource_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"PublicPort": ubx.FieldSpec{WireName: "public_port"},
-		"RegionEndpointEnabled": ubx.FieldSpec{WireName: "region_endpoint_enabled"},
-		"ResourceLogConfiguration": ubx.FieldSpec{
-			WireName: "resource_log_configuration",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_ResourceLogConfigurationFields,
-		},
-		"ResourceStopped": ubx.FieldSpec{WireName: "resource_stopped"},
-		"ServerPort": ubx.FieldSpec{WireName: "server_port"},
-		"SharedPrivateLinkResources": ubx.FieldSpec{
-			WireName: "shared_private_link_resources",
-			Kind: "list",
-			Fields: WebPubSubResource_Properties_SharedPrivateLinkResourcesFields,
-		},
-		"SocketIo": ubx.FieldSpec{
-			WireName: "socket_io",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_SocketIoFields,
-		},
-		"Tls": ubx.FieldSpec{
-			WireName: "tls",
-			Kind: "object",
-			Fields: WebPubSubResource_Properties_TlsFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"DisableAadAuth":   ubx.FieldSpec{WireName: "disable_aad_auth"},
+	"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
+	"ExternalIp":       ubx.FieldSpec{WireName: "external_ip"},
+	"HostName":         ubx.FieldSpec{WireName: "host_name"},
+	"HostNamePrefix":   ubx.FieldSpec{WireName: "host_name_prefix"},
+	"LiveTraceConfiguration": ubx.FieldSpec{
+		WireName: "live_trace_configuration",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_LiveTraceConfigurationFields,
+	},
+	"NetworkAcls": ubx.FieldSpec{
+		WireName: "network_acls",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_NetworkAclsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   WebPubSubResource_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess":   ubx.FieldSpec{WireName: "public_network_access"},
+	"PublicPort":            ubx.FieldSpec{WireName: "public_port"},
+	"RegionEndpointEnabled": ubx.FieldSpec{WireName: "region_endpoint_enabled"},
+	"ResourceLogConfiguration": ubx.FieldSpec{
+		WireName: "resource_log_configuration",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_ResourceLogConfigurationFields,
+	},
+	"ResourceStopped": ubx.FieldSpec{WireName: "resource_stopped"},
+	"ServerPort":      ubx.FieldSpec{WireName: "server_port"},
+	"SharedPrivateLinkResources": ubx.FieldSpec{
+		WireName: "shared_private_link_resources",
+		Kind:     "list",
+		Fields:   WebPubSubResource_Properties_SharedPrivateLinkResourcesFields,
+	},
+	"SocketIo": ubx.FieldSpec{
+		WireName: "socket_io",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_SocketIoFields,
+	},
+	"Tls": ubx.FieldSpec{
+		WireName: "tls",
+		Kind:     "object",
+		Fields:   WebPubSubResource_Properties_TlsFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var WebPubSubResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type WebPubSubResourceConfig struct {
 	// A class represent managed identities used for request and response
@@ -373,19 +373,19 @@ var WebPubSubResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: WebPubSubResource_IdentityFields,
+			Kind:     "object",
+			Fields:   WebPubSubResource_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WebPubSubResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   WebPubSubResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: WebPubSubResource_SkuFields,
+			Kind:     "object",
+			Fields:   WebPubSubResource_SkuFields,
 		},
 	},
 }

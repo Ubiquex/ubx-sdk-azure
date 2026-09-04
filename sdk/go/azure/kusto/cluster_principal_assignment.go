@@ -23,15 +23,15 @@ type ClusterPrincipalAssignment_Properties struct {
 }
 
 var ClusterPrincipalAssignment_PropertiesFields = ubx.FieldMap{
-		"AadObjectId": ubx.FieldSpec{WireName: "aad_object_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"PrincipalName": ubx.FieldSpec{WireName: "principal_name"},
-		"PrincipalType": ubx.FieldSpec{WireName: "principal_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Role": ubx.FieldSpec{WireName: "role"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"TenantName": ubx.FieldSpec{WireName: "tenant_name"},
-	}
+	"AadObjectId":       ubx.FieldSpec{WireName: "aad_object_id"},
+	"PrincipalId":       ubx.FieldSpec{WireName: "principal_id"},
+	"PrincipalName":     ubx.FieldSpec{WireName: "principal_name"},
+	"PrincipalType":     ubx.FieldSpec{WireName: "principal_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Role":              ubx.FieldSpec{WireName: "role"},
+	"TenantId":          ubx.FieldSpec{WireName: "tenant_id"},
+	"TenantName":        ubx.FieldSpec{WireName: "tenant_name"},
+}
 
 type ClusterPrincipalAssignmentConfig struct {
 	// A class representing cluster principal property.
@@ -48,8 +48,8 @@ var ClusterPrincipalAssignment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ClusterPrincipalAssignment_PropertiesFields,
+			Kind:     "object",
+			Fields:   ClusterPrincipalAssignment_PropertiesFields,
 		},
 	},
 }

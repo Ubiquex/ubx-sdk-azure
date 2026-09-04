@@ -9,42 +9,39 @@ type OpenapiSchemaGroup_Properties struct {
 	// The ETag value.
 	ETag any
 	// dictionary object for SchemaGroup group properties
-	GroupProperties any
+	GroupProperties     any
 	SchemaCompatibility any
-	SchemaType any
+	SchemaType          any
 	// Exact time the Schema Group was updated
 	UpdatedAtUtc any
 }
 
 var OpenapiSchemaGroup_PropertiesFields = ubx.FieldMap{
-		"CreatedAtUtc": ubx.FieldSpec{WireName: "created_at_utc"},
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
-		"GroupProperties": ubx.FieldSpec{WireName: "group_properties"},
-		"SchemaCompatibility": ubx.FieldSpec{WireName: "schema_compatibility"},
-		"SchemaType": ubx.FieldSpec{WireName: "schema_type"},
-		"UpdatedAtUtc": ubx.FieldSpec{WireName: "updated_at_utc"},
-	}
+	"CreatedAtUtc":        ubx.FieldSpec{WireName: "created_at_utc"},
+	"ETag":                ubx.FieldSpec{WireName: "e_tag"},
+	"GroupProperties":     ubx.FieldSpec{WireName: "group_properties"},
+	"SchemaCompatibility": ubx.FieldSpec{WireName: "schema_compatibility"},
+	"SchemaType":          ubx.FieldSpec{WireName: "schema_type"},
+	"UpdatedAtUtc":        ubx.FieldSpec{WireName: "updated_at_utc"},
+}
 
 type OpenapiSchemaGroupConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	Properties any
 }
 
 type OpenapiSchemaGroupAttrs struct {
 	// The geo-location where the resource lives
-	Location any
+	Location   any
 	Properties any
 }
 
 var OpenapiSchemaGroup = ubx.ResourceBinding{
 	WireType: "azure_eventhub_openapi_schema_group",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSchemaGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSchemaGroup_PropertiesFields,
 		},
 	},
 }

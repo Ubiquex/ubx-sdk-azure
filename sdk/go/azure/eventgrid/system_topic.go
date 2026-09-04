@@ -4,7 +4,7 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SystemTopic_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -46,44 +46,33 @@ type SystemTopic_SystemData struct {
 }
 
 var SystemTopic_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var SystemTopic_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: SystemTopic_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   SystemTopic_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var SystemTopic_PropertiesFields = ubx.FieldMap{
-		"MetricResourceId": ubx.FieldSpec{WireName: "metric_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"TopicType": ubx.FieldSpec{WireName: "topic_type"},
-	}
-
-var SystemTopic_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"MetricResourceId":  ubx.FieldSpec{WireName: "metric_resource_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Source":            ubx.FieldSpec{WireName: "source"},
+	"TopicType":         ubx.FieldSpec{WireName: "topic_type"},
+}
 
 type SystemTopicConfig struct {
 	// The identity information for the resource.
 	Identity any
 	// Properties of the System Topic.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type SystemTopicAttrs struct {
@@ -100,18 +89,13 @@ var SystemTopic = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: SystemTopic_IdentityFields,
+			Kind:     "object",
+			Fields:   SystemTopic_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SystemTopic_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: SystemTopic_SystemDataFields,
+			Kind:     "object",
+			Fields:   SystemTopic_PropertiesFields,
 		},
 	},
 }

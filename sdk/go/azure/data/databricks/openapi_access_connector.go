@@ -4,24 +4,24 @@ package databricks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAccessConnector_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiAccessConnector_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiAccessConnector_Value_Properties struct {
 	ProvisioningState any
-	ReferedBy any
+	ReferedBy         any
 }
 
 type OpenapiAccessConnector_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -37,6 +37,5 @@ type OpenapiAccessConnectorAttrs struct {
 
 var OpenapiAccessConnector = ubx.DataSourceBinding{
 	WireType: "azure_databricks_openapi_access_connector",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

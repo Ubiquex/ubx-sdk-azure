@@ -16,17 +16,17 @@ type OpenapiSecurityPolicy_Properties struct {
 }
 
 var OpenapiSecurityPolicy_Properties_ParametersFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiSecurityPolicy_PropertiesFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "object",
-			Fields: OpenapiSecurityPolicy_Properties_ParametersFields,
-		},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-	}
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "object",
+		Fields:   OpenapiSecurityPolicy_Properties_ParametersFields,
+	},
+	"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+}
 
 type OpenapiSecurityPolicyConfig struct {
 	// The json object that contains properties required to create a security policy
@@ -43,8 +43,8 @@ var OpenapiSecurityPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSecurityPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSecurityPolicy_PropertiesFields,
 		},
 	},
 }

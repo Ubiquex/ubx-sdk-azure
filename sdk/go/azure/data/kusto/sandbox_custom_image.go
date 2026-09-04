@@ -4,10 +4,10 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SandboxCustomImage_Value_Properties struct {
-	BaseImageName any
-	Language any
-	LanguageVersion any
-	ProvisioningState any
+	BaseImageName           any
+	Language                any
+	LanguageVersion         any
+	ProvisioningState       any
 	RequirementsFileContent any
 }
 

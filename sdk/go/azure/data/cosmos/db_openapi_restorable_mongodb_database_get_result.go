@@ -4,13 +4,13 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableMongodbDatabaseGetResult_Value_Properties_Resource struct {
-	Rid any
-	CanUndelete any
+	Rid               any
+	CanUndelete       any
 	CanUndeleteReason any
-	EventTimestamp any
-	OperationType any
-	OwnerId any
-	OwnerResourceId any
+	EventTimestamp    any
+	OperationType     any
+	OwnerId           any
+	OwnerResourceId   any
 }
 
 type DbOpenapiRestorableMongodbDatabaseGetResult_Value_Properties struct {
@@ -18,21 +18,21 @@ type DbOpenapiRestorableMongodbDatabaseGetResult_Value_Properties struct {
 }
 
 type DbOpenapiRestorableMongodbDatabaseGetResult_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type DbOpenapiRestorableMongodbDatabaseGetResultConfig struct {
 	InstanceId any
-	Location any
+	Location   any
 }
 
 type DbOpenapiRestorableMongodbDatabaseGetResultAttrs struct {
 	InstanceId any
-	Location any
-	NextLink any
+	Location   any
+	NextLink   any
 	// List of MongoDB database events and their properties.
 	Value any
 }
@@ -41,6 +41,6 @@ var DbOpenapiRestorableMongodbDatabaseGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_mongodb_database_get_result",
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"Location":   ubx.FieldSpec{WireName: "location"},
 	},
 }

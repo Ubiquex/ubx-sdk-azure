@@ -31,8 +31,6 @@ const OpenapiApplicationGroup_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiApplicationGroupConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   properties?: OpenapiApplicationGroup_Properties | Computed<OpenapiApplicationGroup_Properties>;
 }
 
@@ -45,7 +43,6 @@ export interface OpenapiApplicationGroupAttrs {
 export const OpenapiApplicationGroup: ResourceBinding<OpenapiApplicationGroupConfig, OpenapiApplicationGroupAttrs> = {
   wireType: "azure_eventhub_openapi_application_group",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

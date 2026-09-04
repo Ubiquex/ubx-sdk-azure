@@ -31,20 +31,9 @@ const NetworkmanagerStaticMember_PropertiesFields: FieldMap = {
   resourceId: "resource_id",
 };
 
-const NetworkmanagerStaticMember_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerStaticMemberConfig {
   /** Properties of static member. */
   properties?: NetworkmanagerStaticMember_Properties | Computed<NetworkmanagerStaticMember_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerStaticMember_SystemData | Computed<NetworkmanagerStaticMember_SystemData>;
 }
 
 export interface NetworkmanagerStaticMemberAttrs {
@@ -61,11 +50,6 @@ export const NetworkmanagerStaticMember: ResourceBinding<NetworkmanagerStaticMem
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerStaticMember_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerStaticMember_SystemDataFields,
     },
   },
 };

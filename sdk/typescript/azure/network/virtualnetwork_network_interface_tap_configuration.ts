@@ -5884,8 +5884,6 @@ const VirtualnetworkNetworkInterfaceTapConfiguration_PropertiesFields: FieldMap 
 };
 
 export interface VirtualnetworkNetworkInterfaceTapConfigurationConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of Virtual Network Tap configuration. */
   properties?: VirtualnetworkNetworkInterfaceTapConfiguration_Properties | Computed<VirtualnetworkNetworkInterfaceTapConfiguration_Properties>;
 }
@@ -5900,7 +5898,6 @@ export interface VirtualnetworkNetworkInterfaceTapConfigurationAttrs {
 export const VirtualnetworkNetworkInterfaceTapConfiguration: ResourceBinding<VirtualnetworkNetworkInterfaceTapConfigurationConfig, VirtualnetworkNetworkInterfaceTapConfigurationAttrs> = {
   wireType: "azure_network_virtualnetwork_network_interface_tap_configuration",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

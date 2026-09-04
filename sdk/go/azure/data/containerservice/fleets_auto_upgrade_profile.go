@@ -13,25 +13,25 @@ type FleetsAutoUpgradeProfile_Value_Properties_AutoUpgradeProfileStatus_LastTrig
 
 type FleetsAutoUpgradeProfile_Value_Properties_AutoUpgradeProfileStatus_LastTriggerError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsAutoUpgradeProfile_Value_Properties_AutoUpgradeProfileStatus_LastTriggerError struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsAutoUpgradeProfile_Value_Properties_AutoUpgradeProfileStatus struct {
-	LastTriggerError any
-	LastTriggerStatus any
+	LastTriggerError           any
+	LastTriggerStatus          any
 	LastTriggerUpgradeVersions any
-	LastTriggeredAt any
+	LastTriggeredAt            any
 }
 
 type FleetsAutoUpgradeProfile_Value_Properties_NodeImageSelection struct {
@@ -40,17 +40,17 @@ type FleetsAutoUpgradeProfile_Value_Properties_NodeImageSelection struct {
 
 type FleetsAutoUpgradeProfile_Value_Properties struct {
 	AutoUpgradeProfileStatus any
-	Channel any
-	Disabled any
-	LongTermSupport any
-	NodeImageSelection any
-	ProvisioningState any
-	TargetKubernetesVersion any
-	UpdateStrategyId any
+	Channel                  any
+	Disabled                 any
+	LongTermSupport          any
+	NodeImageSelection       any
+	ProvisioningState        any
+	TargetKubernetesVersion  any
+	UpdateStrategyId         any
 }
 
 type FleetsAutoUpgradeProfile_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 

@@ -2,6 +2,8 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiAdministratorMicrosoftEntra_Properties {
+  /** Object identifier of the Microsoft Entra principal. */
+  objectId?: string | Computed<string>;
   /** Name of the Microsoft Entra principal. */
   principalName?: string | Computed<string>;
   /** Type of Microsoft Entra principal to which the server administrator is associated. */
@@ -11,6 +13,7 @@ export interface OpenapiAdministratorMicrosoftEntra_Properties {
 }
 
 const OpenapiAdministratorMicrosoftEntra_PropertiesFields: FieldMap = {
+  objectId: "object_id",
   principalName: "principal_name",
   principalType: "principal_type",
   tenantId: "tenant_id",

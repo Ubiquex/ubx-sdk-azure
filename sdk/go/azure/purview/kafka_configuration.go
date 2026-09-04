@@ -17,7 +17,7 @@ type KafkaConfiguration_Properties struct {
 	Credentials any
 	// Optional partition Id for notification event hub. If not set, all partitions will be leveraged.
 	EventHubPartitionId any
-	EventHubResourceId any
+	EventHubResourceId  any
 	// The event hub type.
 	EventHubType any
 	// The state of the event streaming service
@@ -27,23 +27,23 @@ type KafkaConfiguration_Properties struct {
 }
 
 var KafkaConfiguration_Properties_CredentialsFields = ubx.FieldMap{
-		"IdentityId": ubx.FieldSpec{WireName: "identity_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"IdentityId": ubx.FieldSpec{WireName: "identity_id"},
+	"Type":       ubx.FieldSpec{WireName: "type"},
+}
 
 var KafkaConfiguration_PropertiesFields = ubx.FieldMap{
-		"ConsumerGroup": ubx.FieldSpec{WireName: "consumer_group"},
-		"Credentials": ubx.FieldSpec{
-			WireName: "credentials",
-			Kind: "object",
-			Fields: KafkaConfiguration_Properties_CredentialsFields,
-		},
-		"EventHubPartitionId": ubx.FieldSpec{WireName: "event_hub_partition_id"},
-		"EventHubResourceId": ubx.FieldSpec{WireName: "event_hub_resource_id"},
-		"EventHubType": ubx.FieldSpec{WireName: "event_hub_type"},
-		"EventStreamingState": ubx.FieldSpec{WireName: "event_streaming_state"},
-		"EventStreamingType": ubx.FieldSpec{WireName: "event_streaming_type"},
-	}
+	"ConsumerGroup": ubx.FieldSpec{WireName: "consumer_group"},
+	"Credentials": ubx.FieldSpec{
+		WireName: "credentials",
+		Kind:     "object",
+		Fields:   KafkaConfiguration_Properties_CredentialsFields,
+	},
+	"EventHubPartitionId": ubx.FieldSpec{WireName: "event_hub_partition_id"},
+	"EventHubResourceId":  ubx.FieldSpec{WireName: "event_hub_resource_id"},
+	"EventHubType":        ubx.FieldSpec{WireName: "event_hub_type"},
+	"EventStreamingState": ubx.FieldSpec{WireName: "event_streaming_state"},
+	"EventStreamingType":  ubx.FieldSpec{WireName: "event_streaming_type"},
+}
 
 type KafkaConfigurationConfig struct {
 	// The kafka configuration properties of the event streaming service attached to the Purview account for kafka notifications.
@@ -60,8 +60,8 @@ var KafkaConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: KafkaConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   KafkaConfiguration_PropertiesFields,
 		},
 	},
 }

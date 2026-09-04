@@ -4,37 +4,37 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProcessInfo_Value_Properties_Modules_Properties struct {
-	BaseAddress any
-	FileDescription any
-	FileName any
-	FilePath any
-	FileVersion any
-	Href any
-	IsDebug any
-	Language any
+	BaseAddress      any
+	FileDescription  any
+	FileName         any
+	FilePath         any
+	FileVersion      any
+	Href             any
+	IsDebug          any
+	Language         any
 	ModuleMemorySize any
-	Product any
-	ProductVersion any
+	Product          any
+	ProductVersion   any
 }
 
 type OpenapiProcessInfo_Value_Properties_Modules struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiProcessInfo_Value_Properties_Threads_Properties struct {
-	BasePriority any
-	CurrentPriority any
-	Href any
-	Identifier any
-	PriorityLevel any
-	Process any
-	StartAddress any
-	StartTime any
-	State any
+	BasePriority       any
+	CurrentPriority    any
+	Href               any
+	Identifier         any
+	PriorityLevel      any
+	Process            any
+	StartAddress       any
+	StartTime          any
+	State              any
 	TotalProcessorTime any
-	UserProcessorTime any
-	WaitReason any
+	UserProcessorTime  any
+	WaitReason         any
 }
 
 type OpenapiProcessInfo_Value_Properties_Threads struct {
@@ -42,57 +42,57 @@ type OpenapiProcessInfo_Value_Properties_Threads struct {
 }
 
 type OpenapiProcessInfo_Value_Properties struct {
-	Children any
-	CommandLine any
-	DeploymentName any
-	Description any
-	EnvironmentVariables any
-	FileName any
-	HandleCount any
-	Href any
-	Identifier any
+	Children                   any
+	CommandLine                any
+	DeploymentName             any
+	Description                any
+	EnvironmentVariables       any
+	FileName                   any
+	HandleCount                any
+	Href                       any
+	Identifier                 any
 	IisProfileTimeoutInSeconds any
-	IsIisProfileRunning any
-	IsProfileRunning any
-	IsScmSite any
-	IsWebjob any
-	Minidump any
-	ModuleCount any
-	Modules any
-	NonPagedSystemMemory any
-	OpenFileHandles any
-	PagedMemory any
-	PagedSystemMemory any
-	Parent any
-	PeakPagedMemory any
-	PeakVirtualMemory any
-	PeakWorkingSet any
-	PrivateMemory any
-	PrivilegedCpuTime any
-	StartTime any
-	ThreadCount any
-	Threads any
-	TimeStamp any
-	TotalCpuTime any
-	UserCpuTime any
-	UserName any
-	VirtualMemory any
-	WorkingSet any
+	IsIisProfileRunning        any
+	IsProfileRunning           any
+	IsScmSite                  any
+	IsWebjob                   any
+	Minidump                   any
+	ModuleCount                any
+	Modules                    any
+	NonPagedSystemMemory       any
+	OpenFileHandles            any
+	PagedMemory                any
+	PagedSystemMemory          any
+	Parent                     any
+	PeakPagedMemory            any
+	PeakVirtualMemory          any
+	PeakWorkingSet             any
+	PrivateMemory              any
+	PrivilegedCpuTime          any
+	StartTime                  any
+	ThreadCount                any
+	Threads                    any
+	TimeStamp                  any
+	TotalCpuTime               any
+	UserCpuTime                any
+	UserName                   any
+	VirtualMemory              any
+	WorkingSet                 any
 }
 
 type OpenapiProcessInfo_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiProcessInfoConfig struct {
 	InstanceId any
-	Name any
+	Name       any
 }
 
 type OpenapiProcessInfoAttrs struct {
 	InstanceId any
-	Name any
+	Name       any
 	// The link to the next page of items
 	NextLink any
 	// The ProcessInfo items on this page
@@ -103,6 +103,6 @@ var OpenapiProcessInfo = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_process_info",
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
 	},
 }

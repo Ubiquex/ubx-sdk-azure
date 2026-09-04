@@ -5,42 +5,42 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConnectedclustersConnectedCluster_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type ConnectedclustersConnectedCluster_Value_Properties_AadProfile struct {
 	AdminGroupObjectIds any
-	EnableAzureRbac any
-	TenantId any
+	EnableAzureRbac     any
+	TenantId            any
 }
 
 type ConnectedclustersConnectedCluster_Value_Properties_ArcAgentProfile_AgentErrors struct {
 	Component any
-	Message any
-	Severity any
-	Time any
+	Message   any
+	Severity  any
+	Time      any
 }
 
 type ConnectedclustersConnectedCluster_Value_Properties_ArcAgentProfile_SystemComponents struct {
-	CurrentVersion any
-	MajorVersion any
-	Type any
+	CurrentVersion       any
+	MajorVersion         any
+	Type                 any
 	UserSpecifiedVersion any
 }
 
 type ConnectedclustersConnectedCluster_Value_Properties_ArcAgentProfile struct {
-	AgentAutoUpgrade any
-	AgentErrors any
-	AgentState any
+	AgentAutoUpgrade    any
+	AgentErrors         any
+	AgentState          any
 	DesiredAgentVersion any
-	SystemComponents any
+	SystemComponents    any
 }
 
 type ConnectedclustersConnectedCluster_Value_Properties_ArcAgentryConfigurations struct {
-	Feature any
+	Feature           any
 	ProtectedSettings any
-	Settings any
+	Settings          any
 }
 
 type ConnectedclustersConnectedCluster_Value_Properties_Gateway struct {
@@ -48,8 +48,8 @@ type ConnectedclustersConnectedCluster_Value_Properties_Gateway struct {
 }
 
 type ConnectedclustersConnectedCluster_Value_Properties_OidcIssuerProfile struct {
-	Enabled any
-	IssuerUrl any
+	Enabled             any
+	IssuerUrl           any
 	SelfHostedIssuerUrl any
 }
 
@@ -58,34 +58,34 @@ type ConnectedclustersConnectedCluster_Value_Properties_SecurityProfile struct {
 }
 
 type ConnectedclustersConnectedCluster_Value_Properties struct {
-	AadProfile any
-	AgentPublicKeyCertificate any
-	AgentVersion any
-	ArcAgentProfile any
-	ArcAgentryConfigurations any
-	AzureHybridBenefit any
-	ConnectivityStatus any
-	Distribution any
-	DistributionVersion any
-	Gateway any
-	Infrastructure any
-	KubernetesVersion any
-	LastConnectivityTime any
+	AadProfile                               any
+	AgentPublicKeyCertificate                any
+	AgentVersion                             any
+	ArcAgentProfile                          any
+	ArcAgentryConfigurations                 any
+	AzureHybridBenefit                       any
+	ConnectivityStatus                       any
+	Distribution                             any
+	DistributionVersion                      any
+	Gateway                                  any
+	Infrastructure                           any
+	KubernetesVersion                        any
+	LastConnectivityTime                     any
 	ManagedIdentityCertificateExpirationTime any
-	MiscellaneousProperties any
-	Offering any
-	OidcIssuerProfile any
-	PrivateLinkScopeResourceId any
-	PrivateLinkState any
-	ProvisioningState any
-	SecurityProfile any
-	TotalCoreCount any
-	TotalNodeCount any
+	MiscellaneousProperties                  any
+	Offering                                 any
+	OidcIssuerProfile                        any
+	PrivateLinkScopeResourceId               any
+	PrivateLinkState                         any
+	ProvisioningState                        any
+	SecurityProfile                          any
+	TotalCoreCount                           any
+	TotalNodeCount                           any
 }
 
 type ConnectedclustersConnectedCluster_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
 }
 
@@ -101,6 +101,5 @@ type ConnectedclustersConnectedClusterAttrs struct {
 
 var ConnectedclustersConnectedCluster = ubx.DataSourceBinding{
 	WireType: "azure_hybridkubernetes_connectedclusters_connected_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

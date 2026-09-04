@@ -5,19 +5,19 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitoringTagRules_Value_Properties_AgentRules_FilteringTags struct {
 	Action any
-	Name any
-	Value any
+	Name   any
+	Value  any
 }
 
 type MonitoringTagRules_Value_Properties_AgentRules struct {
 	EnableAgentMonitoring any
-	FilteringTags any
+	FilteringTags         any
 }
 
 type MonitoringTagRules_Value_Properties_LogRules struct {
-	FilteringTags any
-	SendAadLogs any
-	SendResourceLogs any
+	FilteringTags        any
+	SendAadLogs          any
+	SendResourceLogs     any
 	SendSubscriptionLogs any
 }
 
@@ -26,11 +26,11 @@ type MonitoringTagRules_Value_Properties_MetricRules struct {
 }
 
 type MonitoringTagRules_Value_Properties struct {
-	AgentRules any
-	Automuting any
-	CustomMetrics any
-	LogRules any
-	MetricRules any
+	AgentRules        any
+	Automuting        any
+	CustomMetrics     any
+	LogRules          any
+	MetricRules       any
 	ProvisioningState any
 }
 

@@ -4,12 +4,12 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkInboundSecurityRule_Properties_Rules struct {
-	AppliesOn any
-	DestinationPortRange any
+	AppliesOn             any
+	DestinationPortRange  any
 	DestinationPortRanges any
-	Name any
-	Protocol any
-	SourceAddressPrefix any
+	Name                  any
+	Protocol              any
+	SourceAddressPrefix   any
 }
 
 type VirtualnetworkInboundSecurityRule_Properties struct {
@@ -22,27 +22,25 @@ type VirtualnetworkInboundSecurityRule_Properties struct {
 }
 
 var VirtualnetworkInboundSecurityRule_Properties_RulesFields = ubx.FieldMap{
-		"AppliesOn": ubx.FieldSpec{WireName: "applies_on"},
-		"DestinationPortRange": ubx.FieldSpec{WireName: "destination_port_range"},
-		"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"SourceAddressPrefix": ubx.FieldSpec{WireName: "source_address_prefix"},
-	}
+	"AppliesOn":             ubx.FieldSpec{WireName: "applies_on"},
+	"DestinationPortRange":  ubx.FieldSpec{WireName: "destination_port_range"},
+	"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
+	"Name":                  ubx.FieldSpec{WireName: "name"},
+	"Protocol":              ubx.FieldSpec{WireName: "protocol"},
+	"SourceAddressPrefix":   ubx.FieldSpec{WireName: "source_address_prefix"},
+}
 
 var VirtualnetworkInboundSecurityRule_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuleType": ubx.FieldSpec{WireName: "rule_type"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: VirtualnetworkInboundSecurityRule_Properties_RulesFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuleType":          ubx.FieldSpec{WireName: "rule_type"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   VirtualnetworkInboundSecurityRule_Properties_RulesFields,
+	},
+}
 
 type VirtualnetworkInboundSecurityRuleConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of the Inbound Security Rules resource.
 	Properties any
 }
@@ -57,11 +55,10 @@ type VirtualnetworkInboundSecurityRuleAttrs struct {
 var VirtualnetworkInboundSecurityRule = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_inbound_security_rule",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkInboundSecurityRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkInboundSecurityRule_PropertiesFields,
 		},
 	},
 }

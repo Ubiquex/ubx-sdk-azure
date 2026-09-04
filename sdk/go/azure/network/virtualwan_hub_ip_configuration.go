@@ -57,39 +57,39 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties struct {
-	Actions any
+	Actions           any
 	ProvisioningState any
-	ServiceName any
+	ServiceName       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurations struct {
@@ -97,62 +97,62 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_Properties struct {
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties struct {
-	Access any
-	Description any
-	DestinationAddressPrefix any
-	DestinationAddressPrefixes any
+	Access                               any
+	Description                          any
+	DestinationAddressPrefix             any
+	DestinationAddressPrefixes           any
 	DestinationApplicationSecurityGroups any
-	DestinationPortRange any
-	DestinationPortRanges any
-	Direction any
-	Priority any
-	Protocol any
-	ProvisioningState any
-	SourceAddressPrefix any
-	SourceAddressPrefixes any
-	SourceApplicationSecurityGroups any
-	SourcePortRange any
-	SourcePortRanges any
+	DestinationPortRange                 any
+	DestinationPortRanges                any
+	Direction                            any
+	Priority                             any
+	Protocol                             any
+	ProvisioningState                    any
+	SourceAddressPrefix                  any
+	SourceAddressPrefixes                any
+	SourceApplicationSecurityGroups      any
+	SourcePortRange                      any
+	SourcePortRanges                     any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration struct {
-	Enabled any
+	Enabled                  any
 	TrafficAnalyticsInterval any
-	WorkspaceId any
-	WorkspaceRegion any
-	WorkspaceResourceId any
+	WorkspaceId              any
+	WorkspaceRegion          any
+	WorkspaceResourceId      any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration struct {
@@ -160,136 +160,136 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format struct {
-	Type any
+	Type    any
 	Version any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy struct {
-	Days any
+	Days    any
 	Enabled any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties struct {
-	Enabled any
-	EnabledFilteringCriteria any
+	Enabled                    any
+	EnabledFilteringCriteria   any
 	FlowAnalyticsConfiguration any
-	Format any
-	ProvisioningState any
-	RecordTypes any
-	RetentionPolicy any
-	StorageId any
-	TargetResourceGuid any
-	TargetResourceId any
+	Format                     any
+	ProvisioningState          any
+	RecordTypes                any
+	RetentionPolicy            any
+	StorageId                  any
+	TargetResourceGuid         any
+	TargetResourceId           any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings struct {
-	AppliedDnsServers any
-	DnsServers any
-	InternalDnsNameLabel any
+	AppliedDnsServers        any
+	DnsServers               any
+	InternalDnsNameLabel     any
 	InternalDomainNameSuffix any
-	InternalFqdn any
+	InternalFqdn             any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses struct {
-	Fqdn any
+	Fqdn      any
 	IpAddress any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties struct {
-	BackendAddresses any
+	BackendAddresses        any
 	BackendIpconfigurations any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping struct {
-	BackendPort any
-	FrontendPort any
+	BackendPort        any
+	FrontendPort       any
 	InboundNatRuleName any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties struct {
-	AdminState any
-	InboundNatRulesPortMapping any
-	IpAddress any
+	AdminState                          any
+	InboundNatRulesPortMapping          any
+	IpAddress                           any
 	LoadBalancerFrontendIpconfiguration any
-	NetworkInterfaceIpconfiguration any
-	Subnet any
-	VirtualNetwork any
+	NetworkInterfaceIpconfiguration     any
+	Subnet                              any
+	VirtualNetwork                      any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces struct {
 	Identifier any
-	Port any
-	Protocol any
-	Type any
+	Port       any
+	Protocol   any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties struct {
-	BackendIpconfigurations any
-	DrainPeriodInSeconds any
-	InboundNatRules any
+	BackendIpconfigurations      any
+	DrainPeriodInSeconds         any
+	InboundNatRules              any
 	LoadBalancerBackendAddresses any
-	LoadBalancingRules any
-	Location any
-	OutboundRule any
-	OutboundRules any
-	ProvisioningState any
-	SyncMode any
-	TunnelInterfaces any
-	VirtualNetwork any
+	LoadBalancingRules           any
+	Location                     any
+	OutboundRule                 any
+	OutboundRules                any
+	ProvisioningState            any
+	SyncMode                     any
+	TunnelInterfaces             any
+	VirtualNetwork               any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties struct {
-	BackendAddressPool any
-	BackendIpconfiguration any
-	BackendPort any
-	EnableFloatingIp any
-	EnableTcpReset any
+	BackendAddressPool      any
+	BackendIpconfiguration  any
+	BackendPort             any
+	EnableFloatingIp        any
+	EnableTcpReset          any
 	FrontendIpconfiguration any
-	FrontendPort any
-	FrontendPortRangeEnd any
-	FrontendPortRangeStart any
-	IdleTimeoutInMinutes any
-	Protocol any
-	ProvisioningState any
+	FrontendPort            any
+	FrontendPortRangeEnd    any
+	FrontendPortRangeStart  any
+	IdleTimeoutInMinutes    any
+	Protocol                any
+	ProvisioningState       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties struct {
-	Fqdns any
-	GroupId any
+	Fqdns              any
+	GroupId            any
 	RequiredMemberName any
 }
 
@@ -298,26 +298,26 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties struct {
-	DdosSettings any
-	EnableConnectionTracking any
-	GatewayLoadBalancer any
-	InboundNatPools any
-	InboundNatRules any
-	LoadBalancingRules any
-	OutboundRules any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	DdosSettings              any
+	EnableConnectionTracking  any
+	GatewayLoadBalancer       any
+	InboundNatPools           any
+	InboundNatRules           any
+	LoadBalancingRules        any
+	OutboundRules             any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	PublicIpprefix any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	PublicIpprefix            any
+	Subnet                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_Properties struct {
@@ -326,104 +326,104 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs struct {
-	Fqdn any
+	Fqdn        any
 	IpAddresses any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties struct {
-	GroupId any
-	MemberName any
+	GroupId          any
+	MemberName       any
 	PrivateIpaddress any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties struct {
-	GroupIds any
+	GroupIds                          any
 	PrivateLinkServiceConnectionState any
-	PrivateLinkServiceId any
-	ProvisioningState any
-	RequestMessage any
+	PrivateLinkServiceId              any
+	ProvisioningState                 any
+	RequestMessage                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval struct {
@@ -431,142 +431,142 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	Primary                   any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_Properties struct {
-	BackendAddresses any
+	BackendAddresses        any
 	BackendIpconfigurations any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_Properties struct {
-	BackendIpconfigurations any
-	DrainPeriodInSeconds any
-	InboundNatRules any
+	BackendIpconfigurations      any
+	DrainPeriodInSeconds         any
+	InboundNatRules              any
 	LoadBalancerBackendAddresses any
-	LoadBalancingRules any
-	Location any
-	OutboundRule any
-	OutboundRules any
-	ProvisioningState any
-	SyncMode any
-	TunnelInterfaces any
-	VirtualNetwork any
+	LoadBalancingRules           any
+	Location                     any
+	OutboundRule                 any
+	OutboundRules                any
+	ProvisioningState            any
+	SyncMode                     any
+	TunnelInterfaces             any
+	VirtualNetwork               any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_Properties struct {
-	BackendAddressPool any
-	BackendIpconfiguration any
-	BackendPort any
-	EnableFloatingIp any
-	EnableTcpReset any
+	BackendAddressPool      any
+	BackendIpconfiguration  any
+	BackendPort             any
+	EnableFloatingIp        any
+	EnableTcpReset          any
 	FrontendIpconfiguration any
-	FrontendPort any
-	FrontendPortRangeEnd any
-	FrontendPortRangeStart any
-	IdleTimeoutInMinutes any
-	Protocol any
-	ProvisioningState any
+	FrontendPort            any
+	FrontendPortRangeEnd    any
+	FrontendPortRangeStart  any
+	IdleTimeoutInMinutes    any
+	Protocol                any
+	ProvisioningState       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -576,40 +576,40 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
@@ -640,118 +640,118 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties struct {
-	Link any
+	Link               any
 	LinkedResourceType any
-	ProvisioningState any
+	ProvisioningState  any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop struct {
@@ -759,16 +759,16 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties struct {
-	AddressPrefix any
-	HasBgpOverride any
-	NextHop any
-	NextHopIpAddress any
-	NextHopType any
+	AddressPrefix     any
+	HasBgpOverride    any
+	NextHop           any
+	NextHopIpAddress  any
+	NextHopType       any
 	ProvisioningState any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -795,52 +795,52 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties struct {
-	AllowDelete any
-	Link any
+	AllowDelete        any
+	Link               any
 	LinkedResourceType any
-	Locations any
-	ProvisioningState any
+	Locations          any
+	ProvisioningState  any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties struct {
-	Description any
+	Description       any
 	ProvisioningState any
-	Service any
-	ServiceResources any
+	Service           any
+	ServiceResources  any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties struct {
 	ContextualServiceEndpointPolicies any
-	ProvisioningState any
-	ResourceGuid any
-	ServiceAlias any
-	ServiceEndpointPolicyDefinitions any
-	Subnets any
+	ProvisioningState                 any
+	ResourceGuid                      any
+	ServiceAlias                      any
+	ServiceEndpointPolicyDefinitions  any
+	Subnets                           any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies struct {
-	Etag any
-	Kind any
+	Etag       any
+	Kind       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints struct {
-	Locations any
+	Locations         any
 	NetworkIdentifier any
 	ProvisioningState any
-	Service any
+	Service           any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties struct {
@@ -923,8 +923,8 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfig
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTags struct {
 	FirstPartyServiceTagId any
-	IpTagType any
-	Tag any
+	IpTagType              any
+	Tag                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGateway_Properties struct {
@@ -1020,306 +1020,306 @@ type VirtualwanHubIpConfiguration_Properties_PublicIpaddress struct {
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties struct {
-	DdosSettings any
-	EnableConnectionTracking any
-	GatewayLoadBalancer any
-	InboundNatPools any
-	InboundNatRules any
-	LoadBalancingRules any
-	OutboundRules any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	DdosSettings              any
+	EnableConnectionTracking  any
+	GatewayLoadBalancer       any
+	InboundNatPools           any
+	InboundNatRules           any
+	LoadBalancingRules        any
+	OutboundRules             any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	PublicIpprefix any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	PublicIpprefix            any
+	Subnet                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	Primary                   any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -1329,40 +1329,40 @@ type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGr
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
@@ -1393,91 +1393,91 @@ type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGr
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_RouteTable_Properties struct {
@@ -1504,16 +1504,16 @@ type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_RouteTable struct
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties struct {
 	ContextualServiceEndpointPolicies any
-	ProvisioningState any
-	ResourceGuid any
-	ServiceAlias any
-	ServiceEndpointPolicyDefinitions any
-	Subnets any
+	ProvisioningState                 any
+	ResourceGuid                      any
+	ServiceAlias                      any
+	ServiceEndpointPolicyDefinitions  any
+	Subnets                           any
 }
 
 type VirtualwanHubIpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies struct {
-	Etag any
-	Kind any
+	Etag       any
+	Kind       any
 	Properties any
 }
 
@@ -1587,2989 +1587,2986 @@ type VirtualwanHubIpConfiguration_Properties struct {
 }
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields = ubx.FieldMap{
-		"DdosCustomPolicy": ubx.FieldSpec{
-			WireName: "ddos_custom_policy",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"DdosProtectionPlan": ubx.FieldSpec{
-			WireName: "ddos_protection_plan",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ProtectionMode": ubx.FieldSpec{WireName: "protection_mode"},
-	}
+	"DdosCustomPolicy": ubx.FieldSpec{
+		WireName: "ddos_custom_policy",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"DdosProtectionPlan": ubx.FieldSpec{
+		WireName: "ddos_protection_plan",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ProtectionMode": ubx.FieldSpec{WireName: "protection_mode"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields = ubx.FieldMap{
-		"DomainNameLabel": ubx.FieldSpec{WireName: "domain_name_label"},
-		"DomainNameLabelScope": ubx.FieldSpec{WireName: "domain_name_label_scope"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"ReverseFqdn": ubx.FieldSpec{WireName: "reverse_fqdn"},
-	}
+	"DomainNameLabel":      ubx.FieldSpec{WireName: "domain_name_label"},
+	"DomainNameLabelScope": ubx.FieldSpec{WireName: "domain_name_label_scope"},
+	"Fqdn":                 ubx.FieldSpec{WireName: "fqdn"},
+	"ReverseFqdn":          ubx.FieldSpec{WireName: "reverse_fqdn"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{WireName: "properties"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_PropertiesFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{WireName: "actions"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-	}
+	"Actions":           ubx.FieldSpec{WireName: "actions"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields = ubx.FieldMap{
-	}
+var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields = ubx.FieldMap{}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields = ubx.FieldMap{
-		"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
-		"NumberOfIpAddresses": ubx.FieldSpec{WireName: "number_of_ip_addresses"},
-		"Pool": ubx.FieldSpec{
-			WireName: "pool",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-	}
+	"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
+	"NumberOfIpAddresses":      ubx.FieldSpec{WireName: "number_of_ip_addresses"},
+	"Pool": ubx.FieldSpec{
+		WireName: "pool",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_PropertiesFields = ubx.FieldMap{
-		"Access": ubx.FieldSpec{WireName: "access"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DestinationAddressPrefix": ubx.FieldSpec{WireName: "destination_address_prefix"},
-		"DestinationAddressPrefixes": ubx.FieldSpec{WireName: "destination_address_prefixes"},
-		"DestinationApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "destination_application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"DestinationPortRange": ubx.FieldSpec{WireName: "destination_port_range"},
-		"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
-		"Direction": ubx.FieldSpec{WireName: "direction"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SourceAddressPrefix": ubx.FieldSpec{WireName: "source_address_prefix"},
-		"SourceAddressPrefixes": ubx.FieldSpec{WireName: "source_address_prefixes"},
-		"SourceApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "source_application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"SourcePortRange": ubx.FieldSpec{WireName: "source_port_range"},
-		"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
-	}
+	"Access":                     ubx.FieldSpec{WireName: "access"},
+	"Description":                ubx.FieldSpec{WireName: "description"},
+	"DestinationAddressPrefix":   ubx.FieldSpec{WireName: "destination_address_prefix"},
+	"DestinationAddressPrefixes": ubx.FieldSpec{WireName: "destination_address_prefixes"},
+	"DestinationApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "destination_application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"DestinationPortRange":  ubx.FieldSpec{WireName: "destination_port_range"},
+	"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
+	"Direction":             ubx.FieldSpec{WireName: "direction"},
+	"Priority":              ubx.FieldSpec{WireName: "priority"},
+	"Protocol":              ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceAddressPrefix":   ubx.FieldSpec{WireName: "source_address_prefix"},
+	"SourceAddressPrefixes": ubx.FieldSpec{WireName: "source_address_prefixes"},
+	"SourceApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "source_application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"SourcePortRange":  ubx.FieldSpec{WireName: "source_port_range"},
+	"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"TrafficAnalyticsInterval": ubx.FieldSpec{WireName: "traffic_analytics_interval"},
-		"WorkspaceId": ubx.FieldSpec{WireName: "workspace_id"},
-		"WorkspaceRegion": ubx.FieldSpec{WireName: "workspace_region"},
-		"WorkspaceResourceId": ubx.FieldSpec{WireName: "workspace_resource_id"},
-	}
+	"Enabled":                  ubx.FieldSpec{WireName: "enabled"},
+	"TrafficAnalyticsInterval": ubx.FieldSpec{WireName: "traffic_analytics_interval"},
+	"WorkspaceId":              ubx.FieldSpec{WireName: "workspace_id"},
+	"WorkspaceRegion":          ubx.FieldSpec{WireName: "workspace_region"},
+	"WorkspaceResourceId":      ubx.FieldSpec{WireName: "workspace_resource_id"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfigurationFields = ubx.FieldMap{
-		"NetworkWatcherFlowAnalyticsConfiguration": ubx.FieldSpec{
-			WireName: "network_watcher_flow_analytics_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields,
-		},
-	}
+	"NetworkWatcherFlowAnalyticsConfiguration": ubx.FieldSpec{
+		WireName: "network_watcher_flow_analytics_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FormatFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Type":    ubx.FieldSpec{WireName: "type"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicyFields = ubx.FieldMap{
-		"Days": ubx.FieldSpec{WireName: "days"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Days":    ubx.FieldSpec{WireName: "days"},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_PropertiesFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"EnabledFilteringCriteria": ubx.FieldSpec{WireName: "enabled_filtering_criteria"},
-		"FlowAnalyticsConfiguration": ubx.FieldSpec{
-			WireName: "flow_analytics_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfigurationFields,
-		},
-		"Format": ubx.FieldSpec{
-			WireName: "format",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FormatFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RecordTypes": ubx.FieldSpec{WireName: "record_types"},
-		"RetentionPolicy": ubx.FieldSpec{
-			WireName: "retention_policy",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicyFields,
-		},
-		"StorageId": ubx.FieldSpec{WireName: "storage_id"},
-		"TargetResourceGuid": ubx.FieldSpec{WireName: "target_resource_guid"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-	}
+	"Enabled":                  ubx.FieldSpec{WireName: "enabled"},
+	"EnabledFilteringCriteria": ubx.FieldSpec{WireName: "enabled_filtering_criteria"},
+	"FlowAnalyticsConfiguration": ubx.FieldSpec{
+		WireName: "flow_analytics_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfigurationFields,
+	},
+	"Format": ubx.FieldSpec{
+		WireName: "format",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FormatFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RecordTypes":       ubx.FieldSpec{WireName: "record_types"},
+	"RetentionPolicy": ubx.FieldSpec{
+		WireName: "retention_policy",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicyFields,
+	},
+	"StorageId":          ubx.FieldSpec{WireName: "storage_id"},
+	"TargetResourceGuid": ubx.FieldSpec{WireName: "target_resource_guid"},
+	"TargetResourceId":   ubx.FieldSpec{WireName: "target_resource_id"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_IdentityFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_IdentityFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields = ubx.FieldMap{
-		"AppliedDnsServers": ubx.FieldSpec{WireName: "applied_dns_servers"},
-		"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
-		"InternalDnsNameLabel": ubx.FieldSpec{WireName: "internal_dns_name_label"},
-		"InternalDomainNameSuffix": ubx.FieldSpec{WireName: "internal_domain_name_suffix"},
-		"InternalFqdn": ubx.FieldSpec{WireName: "internal_fqdn"},
-	}
+	"AppliedDnsServers":        ubx.FieldSpec{WireName: "applied_dns_servers"},
+	"DnsServers":               ubx.FieldSpec{WireName: "dns_servers"},
+	"InternalDnsNameLabel":     ubx.FieldSpec{WireName: "internal_dns_name_label"},
+	"InternalDomainNameSuffix": ubx.FieldSpec{WireName: "internal_domain_name_suffix"},
+	"InternalFqdn":             ubx.FieldSpec{WireName: "internal_fqdn"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddressesFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-	}
+	"Fqdn":      ubx.FieldSpec{WireName: "fqdn"},
+	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-	}
+	"Etag":       ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{WireName: "properties"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendAddresses": ubx.FieldSpec{
-			WireName: "backend_addresses",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddressesFields,
-		},
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddresses": ubx.FieldSpec{
+		WireName: "backend_addresses",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddressesFields,
+	},
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMappingFields = ubx.FieldMap{
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"FrontendPort": ubx.FieldSpec{WireName: "frontend_port"},
-		"InboundNatRuleName": ubx.FieldSpec{WireName: "inbound_nat_rule_name"},
-	}
+	"BackendPort":        ubx.FieldSpec{WireName: "backend_port"},
+	"FrontendPort":       ubx.FieldSpec{WireName: "frontend_port"},
+	"InboundNatRuleName": ubx.FieldSpec{WireName: "inbound_nat_rule_name"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_PropertiesFields = ubx.FieldMap{
-		"AdminState": ubx.FieldSpec{WireName: "admin_state"},
-		"InboundNatRulesPortMapping": ubx.FieldSpec{
-			WireName: "inbound_nat_rules_port_mapping",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMappingFields,
-		},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"LoadBalancerFrontendIpconfiguration": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"NetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-	}
+	"AdminState": ubx.FieldSpec{WireName: "admin_state"},
+	"InboundNatRulesPortMapping": ubx.FieldSpec{
+		WireName: "inbound_nat_rules_port_mapping",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMappingFields,
+	},
+	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+	"LoadBalancerFrontendIpconfiguration": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"NetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields = ubx.FieldMap{
-		"Identifier": ubx.FieldSpec{WireName: "identifier"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Identifier": ubx.FieldSpec{WireName: "identifier"},
+	"Port":       ubx.FieldSpec{WireName: "port"},
+	"Protocol":   ubx.FieldSpec{WireName: "protocol"},
+	"Type":       ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"DrainPeriodInSeconds": ubx.FieldSpec{WireName: "drain_period_in_seconds"},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"LoadBalancerBackendAddresses": ubx.FieldSpec{
-			WireName: "load_balancer_backend_addresses",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"OutboundRule": ubx.FieldSpec{
-			WireName: "outbound_rule",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SyncMode": ubx.FieldSpec{WireName: "sync_mode"},
-		"TunnelInterfaces": ubx.FieldSpec{
-			WireName: "tunnel_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields,
-		},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-	}
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"DrainPeriodInSeconds": ubx.FieldSpec{WireName: "drain_period_in_seconds"},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"LoadBalancerBackendAddresses": ubx.FieldSpec{
+		WireName: "load_balancer_backend_addresses",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"OutboundRule": ubx.FieldSpec{
+		WireName: "outbound_rule",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SyncMode":          ubx.FieldSpec{WireName: "sync_mode"},
+	"TunnelInterfaces": ubx.FieldSpec{
+		WireName: "tunnel_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields,
+	},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields = ubx.FieldMap{
-		"BackendAddressPool": ubx.FieldSpec{
-			WireName: "backend_address_pool",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"BackendIpconfiguration": ubx.FieldSpec{
-			WireName: "backend_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"EnableFloatingIp": ubx.FieldSpec{WireName: "enable_floating_ip"},
-		"EnableTcpReset": ubx.FieldSpec{WireName: "enable_tcp_reset"},
-		"FrontendIpconfiguration": ubx.FieldSpec{
-			WireName: "frontend_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"FrontendPort": ubx.FieldSpec{WireName: "frontend_port"},
-		"FrontendPortRangeEnd": ubx.FieldSpec{WireName: "frontend_port_range_end"},
-		"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddressPool": ubx.FieldSpec{
+		WireName: "backend_address_pool",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"BackendIpconfiguration": ubx.FieldSpec{
+		WireName: "backend_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"BackendPort":      ubx.FieldSpec{WireName: "backend_port"},
+	"EnableFloatingIp": ubx.FieldSpec{WireName: "enable_floating_ip"},
+	"EnableTcpReset":   ubx.FieldSpec{WireName: "enable_tcp_reset"},
+	"FrontendIpconfiguration": ubx.FieldSpec{
+		WireName: "frontend_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"FrontendPort":           ubx.FieldSpec{WireName: "frontend_port"},
+	"FrontendPortRangeEnd":   ubx.FieldSpec{WireName: "frontend_port_range_end"},
+	"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
+	"IdleTimeoutInMinutes":   ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"Protocol":               ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields = ubx.FieldMap{
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"RequiredMemberName": ubx.FieldSpec{WireName: "required_member_name"},
-	}
+	"Fqdns":              ubx.FieldSpec{WireName: "fqdns"},
+	"GroupId":            ubx.FieldSpec{WireName: "group_id"},
+	"RequiredMemberName": ubx.FieldSpec{WireName: "required_member_name"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettingsFields = ubx.FieldMap{
-		"DdosCustomPolicy": ubx.FieldSpec{
-			WireName: "ddos_custom_policy",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-	}
+	"DdosCustomPolicy": ubx.FieldSpec{
+		WireName: "ddos_custom_policy",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettingsFields,
-		},
-		"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"InboundNatPools": ubx.FieldSpec{
-			WireName: "inbound_nat_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{WireName: "public_ipaddress"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettingsFields,
+	},
+	"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"InboundNatPools": ubx.FieldSpec{
+		WireName: "inbound_nat_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress":           ubx.FieldSpec{WireName: "public_ipaddress"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkTap": ubx.FieldSpec{WireName: "virtual_network_tap"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkTap": ubx.FieldSpec{WireName: "virtual_network_tap"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
-	}
+	"Fqdn":        ubx.FieldSpec{WireName: "fqdn"},
+	"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"MemberName": ubx.FieldSpec{WireName: "member_name"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-	}
+	"GroupId":          ubx.FieldSpec{WireName: "group_id"},
+	"MemberName":       ubx.FieldSpec{WireName: "member_name"},
+	"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"PrivateLinkServiceId": ubx.FieldSpec{WireName: "private_link_service_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"PrivateLinkServiceId": ubx.FieldSpec{WireName: "private_link_service_id"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestMessage":       ubx.FieldSpec{WireName: "request_message"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields = ubx.FieldMap{
-		"Subscriptions": ubx.FieldSpec{WireName: "subscriptions"},
-	}
+	"Subscriptions": ubx.FieldSpec{WireName: "subscriptions"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"Primary":                   ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":                    ubx.FieldSpec{WireName: "subnet"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendAddresses": ubx.FieldSpec{
-			WireName: "backend_addresses",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddressesFields,
-		},
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddresses": ubx.FieldSpec{
+		WireName: "backend_addresses",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddressesFields,
+	},
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"DrainPeriodInSeconds": ubx.FieldSpec{WireName: "drain_period_in_seconds"},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"LoadBalancerBackendAddresses": ubx.FieldSpec{
-			WireName: "load_balancer_backend_addresses",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"OutboundRule": ubx.FieldSpec{
-			WireName: "outbound_rule",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SyncMode": ubx.FieldSpec{WireName: "sync_mode"},
-		"TunnelInterfaces": ubx.FieldSpec{
-			WireName: "tunnel_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields,
-		},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-	}
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"DrainPeriodInSeconds": ubx.FieldSpec{WireName: "drain_period_in_seconds"},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"LoadBalancerBackendAddresses": ubx.FieldSpec{
+		WireName: "load_balancer_backend_addresses",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"OutboundRule": ubx.FieldSpec{
+		WireName: "outbound_rule",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SyncMode":          ubx.FieldSpec{WireName: "sync_mode"},
+	"TunnelInterfaces": ubx.FieldSpec{
+		WireName: "tunnel_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields,
+	},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_PropertiesFields = ubx.FieldMap{
-		"BackendAddressPool": ubx.FieldSpec{
-			WireName: "backend_address_pool",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"BackendIpconfiguration": ubx.FieldSpec{WireName: "backend_ipconfiguration"},
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"EnableFloatingIp": ubx.FieldSpec{WireName: "enable_floating_ip"},
-		"EnableTcpReset": ubx.FieldSpec{WireName: "enable_tcp_reset"},
-		"FrontendIpconfiguration": ubx.FieldSpec{
-			WireName: "frontend_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"FrontendPort": ubx.FieldSpec{WireName: "frontend_port"},
-		"FrontendPortRangeEnd": ubx.FieldSpec{WireName: "frontend_port_range_end"},
-		"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddressPool": ubx.FieldSpec{
+		WireName: "backend_address_pool",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"BackendIpconfiguration": ubx.FieldSpec{WireName: "backend_ipconfiguration"},
+	"BackendPort":            ubx.FieldSpec{WireName: "backend_port"},
+	"EnableFloatingIp":       ubx.FieldSpec{WireName: "enable_floating_ip"},
+	"EnableTcpReset":         ubx.FieldSpec{WireName: "enable_tcp_reset"},
+	"FrontendIpconfiguration": ubx.FieldSpec{
+		WireName: "frontend_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"FrontendPort":           ubx.FieldSpec{WireName: "frontend_port"},
+	"FrontendPortRangeEnd":   ubx.FieldSpec{WireName: "frontend_port_range_end"},
+	"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
+	"IdleTimeoutInMinutes":   ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"Protocol":               ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields,
-		},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields,
+	},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkTap": ubx.FieldSpec{
-			WireName: "virtual_network_tap",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkTap": ubx.FieldSpec{
+		WireName: "virtual_network_tap",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":           ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase":       ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
+	"NicType":              ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":              ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
-		"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
-		"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkIdentifier":          ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint":         ubx.FieldSpec{WireName: "private_endpoint"},
+	"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":     ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"NicType":         ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":         ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_PropertiesFields = ubx.FieldMap{
-		"Link": ubx.FieldSpec{WireName: "link"},
-		"LinkedResourceType": ubx.FieldSpec{WireName: "linked_resource_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Link":               ubx.FieldSpec{WireName: "link"},
+	"LinkedResourceType": ubx.FieldSpec{WireName: "linked_resource_type"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHopFields = ubx.FieldMap{
-		"NextHopIpAddresses": ubx.FieldSpec{WireName: "next_hop_ip_addresses"},
-	}
+	"NextHopIpAddresses": ubx.FieldSpec{WireName: "next_hop_ip_addresses"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"HasBgpOverride": ubx.FieldSpec{WireName: "has_bgp_override"},
-		"NextHop": ubx.FieldSpec{
-			WireName: "next_hop",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHopFields,
-		},
-		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-		"NextHopType": ubx.FieldSpec{WireName: "next_hop_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefix":  ubx.FieldSpec{WireName: "address_prefix"},
+	"HasBgpOverride": ubx.FieldSpec{WireName: "has_bgp_override"},
+	"NextHop": ubx.FieldSpec{
+		WireName: "next_hop",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHopFields,
+	},
+	"NextHopIpAddress":  ubx.FieldSpec{WireName: "next_hop_ip_address"},
+	"NextHopType":       ubx.FieldSpec{WireName: "next_hop_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields = ubx.FieldMap{
-		"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
-		"DisablePeeringRoute": ubx.FieldSpec{WireName: "disable_peering_route"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-	}
+	"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
+	"DisablePeeringRoute":        ubx.FieldSpec{WireName: "disable_peering_route"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":               ubx.FieldSpec{WireName: "resource_guid"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_PropertiesFields = ubx.FieldMap{
-		"AllowDelete": ubx.FieldSpec{WireName: "allow_delete"},
-		"Link": ubx.FieldSpec{WireName: "link"},
-		"LinkedResourceType": ubx.FieldSpec{WireName: "linked_resource_type"},
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AllowDelete":        ubx.FieldSpec{WireName: "allow_delete"},
+	"Link":               ubx.FieldSpec{WireName: "link"},
+	"LinkedResourceType": ubx.FieldSpec{WireName: "linked_resource_type"},
+	"Locations":          ubx.FieldSpec{WireName: "locations"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Service": ubx.FieldSpec{WireName: "service"},
-		"ServiceResources": ubx.FieldSpec{WireName: "service_resources"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Service":           ubx.FieldSpec{WireName: "service"},
+	"ServiceResources":  ubx.FieldSpec{WireName: "service_resources"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields = ubx.FieldMap{
-		"ContextualServiceEndpointPolicies": ubx.FieldSpec{WireName: "contextual_service_endpoint_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServiceAlias": ubx.FieldSpec{WireName: "service_alias"},
-		"ServiceEndpointPolicyDefinitions": ubx.FieldSpec{
-			WireName: "service_endpoint_policy_definitions",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"ContextualServiceEndpointPolicies": ubx.FieldSpec{WireName: "contextual_service_endpoint_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":                      ubx.FieldSpec{WireName: "resource_guid"},
+	"ServiceAlias":                      ubx.FieldSpec{WireName: "service_alias"},
+	"ServiceEndpointPolicyDefinitions": ubx.FieldSpec{
+		WireName: "service_endpoint_policy_definitions",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields = ubx.FieldMap{
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"NetworkIdentifier": ubx.FieldSpec{
-			WireName: "network_identifier",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Service": ubx.FieldSpec{WireName: "service"},
-	}
+	"Locations": ubx.FieldSpec{WireName: "locations"},
+	"NetworkIdentifier": ubx.FieldSpec{
+		WireName: "network_identifier",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Service":           ubx.FieldSpec{WireName: "service"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields = ubx.FieldMap{
-		"FirstPartyServiceTagId": ubx.FieldSpec{WireName: "first_party_service_tag_id"},
-		"IpTagType": ubx.FieldSpec{WireName: "ip_tag_type"},
-		"Tag": ubx.FieldSpec{WireName: "tag"},
-	}
+	"FirstPartyServiceTagId": ubx.FieldSpec{WireName: "first_party_service_tag_id"},
+	"IpTagType":              ubx.FieldSpec{WireName: "ip_tag_type"},
+	"Tag":                    ubx.FieldSpec{WireName: "tag"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGateway_PropertiesFields = ubx.FieldMap{
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"Nat64": ubx.FieldSpec{WireName: "nat64"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpAddresses": ubx.FieldSpec{
-			WireName: "public_ip_addresses",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"PublicIpAddressesV6": ubx.FieldSpec{
-			WireName: "public_ip_addresses_v6",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"PublicIpPrefixes": ubx.FieldSpec{
-			WireName: "public_ip_prefixes",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"PublicIpPrefixesV6": ubx.FieldSpec{
-			WireName: "public_ip_prefixes_v6",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"SourceVirtualNetwork": ubx.FieldSpec{
-			WireName: "source_virtual_network",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-	}
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"Nat64":                ubx.FieldSpec{WireName: "nat64"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpAddresses": ubx.FieldSpec{
+		WireName: "public_ip_addresses",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"PublicIpAddressesV6": ubx.FieldSpec{
+		WireName: "public_ip_addresses_v6",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"PublicIpPrefixes": ubx.FieldSpec{
+		WireName: "public_ip_prefixes",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"PublicIpPrefixesV6": ubx.FieldSpec{
+		WireName: "public_ip_prefixes_v6",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"SourceVirtualNetwork": ubx.FieldSpec{
+		WireName: "source_virtual_network",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGateway_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGateway_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGateway_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGateway_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGateway_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{
-			WireName: "linked_public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{
-			WireName: "service_public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{
+		WireName: "linked_public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{
+		WireName: "service_public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{WireName: "ip_configuration"},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration":      ubx.FieldSpec{WireName: "ip_configuration"},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
+	"MigrationPhase":        ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ResourceGuid":           ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
+	"UpgradedToV2":           ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{WireName: "public_ipaddress"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress":           ubx.FieldSpec{WireName: "public_ipaddress"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
+	"MigrationPhase":        ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ResourceGuid":           ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
+	"UpgradedToV2":           ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{
-			WireName: "linked_public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{
-			WireName: "service_public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{
+		WireName: "linked_public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{
+		WireName: "service_public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettingsFields,
-		},
-		"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"InboundNatPools": ubx.FieldSpec{
-			WireName: "inbound_nat_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields,
-		},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_DdosSettingsFields,
+	},
+	"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"InboundNatPools": ubx.FieldSpec{
+		WireName: "inbound_nat_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields,
+	},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"Primary":                   ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields,
-		},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields,
+	},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkTap": ubx.FieldSpec{
-			WireName: "virtual_network_tap",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkTap": ubx.FieldSpec{
+		WireName: "virtual_network_tap",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":           ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase":       ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
+	"NicType":              ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":              ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":     ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"NicType":         ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":         ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields = ubx.FieldMap{
-		"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
-		"DisablePeeringRoute": ubx.FieldSpec{WireName: "disable_peering_route"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
+	"DisablePeeringRoute":        ubx.FieldSpec{WireName: "disable_peering_route"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":               ubx.FieldSpec{WireName: "resource_guid"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_RouteTableFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields = ubx.FieldMap{
-		"ContextualServiceEndpointPolicies": ubx.FieldSpec{WireName: "contextual_service_endpoint_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServiceAlias": ubx.FieldSpec{WireName: "service_alias"},
-		"ServiceEndpointPolicyDefinitions": ubx.FieldSpec{
-			WireName: "service_endpoint_policy_definitions",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-	}
+	"ContextualServiceEndpointPolicies": ubx.FieldSpec{WireName: "contextual_service_endpoint_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":                      ubx.FieldSpec{WireName: "resource_guid"},
+	"ServiceAlias":                      ubx.FieldSpec{WireName: "service_alias"},
+	"ServiceEndpointPolicyDefinitions": ubx.FieldSpec{
+		WireName: "service_endpoint_policy_definitions",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddress_Properties_DdosSettings_DdosCustomPolicyFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var VirtualwanHubIpConfiguration_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var VirtualwanHubIpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_Properties_SubnetFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualwanHubIpConfiguration_Properties_SubnetFields,
+	},
+}
 
 type VirtualwanHubIpConfigurationConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of IP configuration.
 	Properties any
 }
@@ -4584,11 +4581,10 @@ type VirtualwanHubIpConfigurationAttrs struct {
 var VirtualwanHubIpConfiguration = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_hub_ip_configuration",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubIpConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanHubIpConfiguration_PropertiesFields,
 		},
 	},
 }

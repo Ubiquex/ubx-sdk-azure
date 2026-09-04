@@ -29,6 +29,12 @@ export interface DbOpenapiSqlTriggerGetResults_Properties_Options {
 }
 
 export interface DbOpenapiSqlTriggerGetResults_Properties_Resource {
+  /** A system generated property representing the resource etag required for optimistic concurrency control. */
+  etag?: string | Computed<string>;
+  /** A system generated property. A unique identifier. */
+  rid?: string | Computed<string>;
+  /** A system generated property that denotes the last updated timestamp of the resource. */
+  ts?: number | Computed<number>;
   /** Body of the Trigger */
   body?: string | Computed<string>;
   /** Name of the Cosmos DB SQL trigger */
@@ -60,6 +66,9 @@ const DbOpenapiSqlTriggerGetResults_Properties_OptionsFields: FieldMap = {
 };
 
 const DbOpenapiSqlTriggerGetResults_Properties_ResourceFields: FieldMap = {
+  etag: "_etag",
+  rid: "_rid",
+  ts: "_ts",
   body: "body",
   id: "id",
   triggerOperation: "trigger_operation",

@@ -11,9 +11,9 @@ type ApimpoliciesPolicyContract2_Properties struct {
 }
 
 var ApimpoliciesPolicyContract2_PropertiesFields = ubx.FieldMap{
-		"Format": ubx.FieldSpec{WireName: "format"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Format": ubx.FieldSpec{WireName: "format"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 type ApimpoliciesPolicyContract2Config struct {
 	// Policy contract Properties.
@@ -30,8 +30,8 @@ var ApimpoliciesPolicyContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimpoliciesPolicyContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimpoliciesPolicyContract2_PropertiesFields,
 		},
 	},
 }

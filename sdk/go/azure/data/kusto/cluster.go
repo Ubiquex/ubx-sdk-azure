@@ -4,14 +4,14 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cluster_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type Cluster_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,43 +20,43 @@ type Cluster_Value_Properties_AcceptedAudiences struct {
 }
 
 type Cluster_Value_Properties_CalloutPolicies struct {
-	CalloutId any
-	CalloutType any
+	CalloutId       any
+	CalloutType     any
 	CalloutUriRegex any
-	OutboundAccess any
+	OutboundAccess  any
 }
 
 type Cluster_Value_Properties_KeyVaultProperties struct {
 	FederatedIdentityClientId any
-	KeyName any
-	KeyVaultUri any
-	KeyVersion any
-	UserIdentity any
+	KeyName                   any
+	KeyVaultUri               any
+	KeyVersion                any
+	UserIdentity              any
 }
 
 type Cluster_Value_Properties_LanguageExtensions_Value struct {
 	LanguageExtensionCustomImageName any
-	LanguageExtensionImageName any
-	LanguageExtensionName any
+	LanguageExtensionImageName       any
+	LanguageExtensionName            any
 }
 
 type Cluster_Value_Properties_LanguageExtensions struct {
 	NextLink any
-	Value any
+	Value    any
 }
 
 type Cluster_Value_Properties_MigrationCluster struct {
 	DataIngestionUri any
-	Id any
-	Role any
-	Uri any
+	Id               any
+	Role             any
+	Uri              any
 }
 
 type Cluster_Value_Properties_OptimizedAutoscale struct {
 	IsEnabled any
-	Maximum any
-	Minimum any
-	Version any
+	Maximum   any
+	Minimum   any
+	Version   any
 }
 
 type Cluster_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -65,15 +65,15 @@ type Cluster_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpo
 
 type Cluster_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Cluster_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupId any
-	PrivateEndpoint any
+	GroupId                           any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Cluster_Value_Properties_PrivateEndpointConnections struct {
@@ -82,53 +82,53 @@ type Cluster_Value_Properties_PrivateEndpointConnections struct {
 
 type Cluster_Value_Properties_VirtualNetworkConfiguration struct {
 	DataManagementPublicIpId any
-	EnginePublicIpId any
-	State any
-	SubnetId any
+	EnginePublicIpId         any
+	State                    any
+	SubnetId                 any
 }
 
 type Cluster_Value_Properties struct {
-	AcceptedAudiences any
-	AllowedFqdnList any
-	AllowedIpRangeList any
-	CalloutPolicies any
-	DataIngestionUri any
-	EnableAutoStop any
-	EnableDiskEncryption any
-	EnableDoubleEncryption any
-	EnablePurge any
-	EnableStreamingIngest any
-	EngineType any
-	KeyVaultProperties any
-	LanguageExtensions any
-	MigrationCluster any
-	OptimizedAutoscale any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicIptype any
-	PublicNetworkAccess any
-	RestrictOutboundNetworkAccess any
-	State any
-	StateReason any
-	TrustedExternalTenants any
-	Uri any
+	AcceptedAudiences                  any
+	AllowedFqdnList                    any
+	AllowedIpRangeList                 any
+	CalloutPolicies                    any
+	DataIngestionUri                   any
+	EnableAutoStop                     any
+	EnableDiskEncryption               any
+	EnableDoubleEncryption             any
+	EnablePurge                        any
+	EnableStreamingIngest              any
+	EngineType                         any
+	KeyVaultProperties                 any
+	LanguageExtensions                 any
+	MigrationCluster                   any
+	OptimizedAutoscale                 any
+	PrivateEndpointConnections         any
+	ProvisioningState                  any
+	PublicIptype                       any
+	PublicNetworkAccess                any
+	RestrictOutboundNetworkAccess      any
+	State                              any
+	StateReason                        any
+	TrustedExternalTenants             any
+	Uri                                any
 	VirtualClusterGraduationProperties any
-	VirtualNetworkConfiguration any
-	ZoneStatus any
+	VirtualNetworkConfiguration        any
+	ZoneStatus                         any
 }
 
 type Cluster_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type Cluster_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type ClusterConfig struct {
@@ -143,6 +143,5 @@ type ClusterAttrs struct {
 
 var Cluster = ubx.DataSourceBinding{
 	WireType: "azure_kusto_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

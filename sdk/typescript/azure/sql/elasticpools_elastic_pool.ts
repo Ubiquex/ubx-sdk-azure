@@ -84,8 +84,6 @@ const ElasticpoolsElasticPool_SkuFields: FieldMap = {
 };
 
 export interface ElasticpoolsElasticPoolConfig {
-  /** Kind of elastic pool. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
   /** Properties of an elastic pool */
   properties?: ElasticpoolsElasticPool_Properties | Computed<ElasticpoolsElasticPool_Properties>;
   /** An ARM Resource SKU. */
@@ -104,7 +102,6 @@ export interface ElasticpoolsElasticPoolAttrs {
 export const ElasticpoolsElasticPool: ResourceBinding<ElasticpoolsElasticPoolConfig, ElasticpoolsElasticPoolAttrs> = {
   wireType: "azure_sql_elasticpools_elastic_pool",
   fields: {
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

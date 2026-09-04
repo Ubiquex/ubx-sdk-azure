@@ -53,41 +53,39 @@ type ElasticpoolsElasticPool_Sku struct {
 }
 
 var ElasticpoolsElasticPool_Properties_PerDatabaseSettingsFields = ubx.FieldMap{
-		"AutoPauseDelay": ubx.FieldSpec{WireName: "auto_pause_delay"},
-		"MaxCapacity": ubx.FieldSpec{WireName: "max_capacity"},
-		"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
-	}
+	"AutoPauseDelay": ubx.FieldSpec{WireName: "auto_pause_delay"},
+	"MaxCapacity":    ubx.FieldSpec{WireName: "max_capacity"},
+	"MinCapacity":    ubx.FieldSpec{WireName: "min_capacity"},
+}
 
 var ElasticpoolsElasticPool_PropertiesFields = ubx.FieldMap{
-		"AutoPauseDelay": ubx.FieldSpec{WireName: "auto_pause_delay"},
-		"AvailabilityZone": ubx.FieldSpec{WireName: "availability_zone"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"HighAvailabilityReplicaCount": ubx.FieldSpec{WireName: "high_availability_replica_count"},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-		"MaintenanceConfigurationId": ubx.FieldSpec{WireName: "maintenance_configuration_id"},
-		"MaxSizeBytes": ubx.FieldSpec{WireName: "max_size_bytes"},
-		"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
-		"PerDatabaseSettings": ubx.FieldSpec{
-			WireName: "per_database_settings",
-			Kind: "object",
-			Fields: ElasticpoolsElasticPool_Properties_PerDatabaseSettingsFields,
-		},
-		"PreferredEnclaveType": ubx.FieldSpec{WireName: "preferred_enclave_type"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-	}
+	"AutoPauseDelay":               ubx.FieldSpec{WireName: "auto_pause_delay"},
+	"AvailabilityZone":             ubx.FieldSpec{WireName: "availability_zone"},
+	"CreationDate":                 ubx.FieldSpec{WireName: "creation_date"},
+	"HighAvailabilityReplicaCount": ubx.FieldSpec{WireName: "high_availability_replica_count"},
+	"LicenseType":                  ubx.FieldSpec{WireName: "license_type"},
+	"MaintenanceConfigurationId":   ubx.FieldSpec{WireName: "maintenance_configuration_id"},
+	"MaxSizeBytes":                 ubx.FieldSpec{WireName: "max_size_bytes"},
+	"MinCapacity":                  ubx.FieldSpec{WireName: "min_capacity"},
+	"PerDatabaseSettings": ubx.FieldSpec{
+		WireName: "per_database_settings",
+		Kind:     "object",
+		Fields:   ElasticpoolsElasticPool_Properties_PerDatabaseSettingsFields,
+	},
+	"PreferredEnclaveType": ubx.FieldSpec{WireName: "preferred_enclave_type"},
+	"State":                ubx.FieldSpec{WireName: "state"},
+	"ZoneRedundant":        ubx.FieldSpec{WireName: "zone_redundant"},
+}
 
 var ElasticpoolsElasticPool_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ElasticpoolsElasticPoolConfig struct {
-	// Kind of elastic pool. This is metadata used for the Azure portal experience.
-	Kind any
 	// Properties of an elastic pool
 	Properties any
 	// An ARM Resource SKU.
@@ -106,16 +104,15 @@ type ElasticpoolsElasticPoolAttrs struct {
 var ElasticpoolsElasticPool = ubx.ResourceBinding{
 	WireType: "azure_sql_elasticpools_elastic_pool",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ElasticpoolsElasticPool_PropertiesFields,
+			Kind:     "object",
+			Fields:   ElasticpoolsElasticPool_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ElasticpoolsElasticPool_SkuFields,
+			Kind:     "object",
+			Fields:   ElasticpoolsElasticPool_SkuFields,
 		},
 	},
 }

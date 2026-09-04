@@ -4,23 +4,23 @@ package codesigning
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CodesigningaccountCertificateProfile_Properties_Certificates_Revocation struct {
-	EffectiveAt any
+	EffectiveAt   any
 	FailureReason any
-	Reason any
-	Remarks any
-	RequestedAt any
-	Status any
+	Reason        any
+	Remarks       any
+	RequestedAt   any
+	Status        any
 }
 
 type CodesigningaccountCertificateProfile_Properties_Certificates struct {
-	CreatedDate any
+	CreatedDate      any
 	EnhancedKeyUsage any
-	ExpiryDate any
-	Revocation any
-	SerialNumber any
-	Status any
-	SubjectName any
-	Thumbprint any
+	ExpiryDate       any
+	Revocation       any
+	SerialNumber     any
+	Status           any
+	SubjectName      any
+	Thumbprint       any
 }
 
 type CodesigningaccountCertificateProfile_Properties struct {
@@ -47,45 +47,45 @@ type CodesigningaccountCertificateProfile_Properties struct {
 }
 
 var CodesigningaccountCertificateProfile_Properties_Certificates_RevocationFields = ubx.FieldMap{
-		"EffectiveAt": ubx.FieldSpec{WireName: "effective_at"},
-		"FailureReason": ubx.FieldSpec{WireName: "failure_reason"},
-		"Reason": ubx.FieldSpec{WireName: "reason"},
-		"Remarks": ubx.FieldSpec{WireName: "remarks"},
-		"RequestedAt": ubx.FieldSpec{WireName: "requested_at"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"EffectiveAt":   ubx.FieldSpec{WireName: "effective_at"},
+	"FailureReason": ubx.FieldSpec{WireName: "failure_reason"},
+	"Reason":        ubx.FieldSpec{WireName: "reason"},
+	"Remarks":       ubx.FieldSpec{WireName: "remarks"},
+	"RequestedAt":   ubx.FieldSpec{WireName: "requested_at"},
+	"Status":        ubx.FieldSpec{WireName: "status"},
+}
 
 var CodesigningaccountCertificateProfile_Properties_CertificatesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"EnhancedKeyUsage": ubx.FieldSpec{WireName: "enhanced_key_usage"},
-		"ExpiryDate": ubx.FieldSpec{WireName: "expiry_date"},
-		"Revocation": ubx.FieldSpec{
-			WireName: "revocation",
-			Kind: "object",
-			Fields: CodesigningaccountCertificateProfile_Properties_Certificates_RevocationFields,
-		},
-		"SerialNumber": ubx.FieldSpec{WireName: "serial_number"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"SubjectName": ubx.FieldSpec{WireName: "subject_name"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"CreatedDate":      ubx.FieldSpec{WireName: "created_date"},
+	"EnhancedKeyUsage": ubx.FieldSpec{WireName: "enhanced_key_usage"},
+	"ExpiryDate":       ubx.FieldSpec{WireName: "expiry_date"},
+	"Revocation": ubx.FieldSpec{
+		WireName: "revocation",
+		Kind:     "object",
+		Fields:   CodesigningaccountCertificateProfile_Properties_Certificates_RevocationFields,
+	},
+	"SerialNumber": ubx.FieldSpec{WireName: "serial_number"},
+	"Status":       ubx.FieldSpec{WireName: "status"},
+	"SubjectName":  ubx.FieldSpec{WireName: "subject_name"},
+	"Thumbprint":   ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 var CodesigningaccountCertificateProfile_PropertiesFields = ubx.FieldMap{
-		"Certificates": ubx.FieldSpec{
-			WireName: "certificates",
-			Kind: "list",
-			Fields: CodesigningaccountCertificateProfile_Properties_CertificatesFields,
-		},
-		"IdentityValidationId": ubx.FieldSpec{WireName: "identity_validation_id"},
-		"IncludeCity": ubx.FieldSpec{WireName: "include_city"},
-		"IncludeCountry": ubx.FieldSpec{WireName: "include_country"},
-		"IncludePostalCode": ubx.FieldSpec{WireName: "include_postal_code"},
-		"IncludeState": ubx.FieldSpec{WireName: "include_state"},
-		"IncludeStreetAddress": ubx.FieldSpec{WireName: "include_street_address"},
-		"ProfileType": ubx.FieldSpec{WireName: "profile_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Certificates": ubx.FieldSpec{
+		WireName: "certificates",
+		Kind:     "list",
+		Fields:   CodesigningaccountCertificateProfile_Properties_CertificatesFields,
+	},
+	"IdentityValidationId": ubx.FieldSpec{WireName: "identity_validation_id"},
+	"IncludeCity":          ubx.FieldSpec{WireName: "include_city"},
+	"IncludeCountry":       ubx.FieldSpec{WireName: "include_country"},
+	"IncludePostalCode":    ubx.FieldSpec{WireName: "include_postal_code"},
+	"IncludeState":         ubx.FieldSpec{WireName: "include_state"},
+	"IncludeStreetAddress": ubx.FieldSpec{WireName: "include_street_address"},
+	"ProfileType":          ubx.FieldSpec{WireName: "profile_type"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":               ubx.FieldSpec{WireName: "status"},
+}
 
 type CodesigningaccountCertificateProfileConfig struct {
 	// Properties of the certificate profile.
@@ -102,8 +102,8 @@ var CodesigningaccountCertificateProfile = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CodesigningaccountCertificateProfile_PropertiesFields,
+			Kind:     "object",
+			Fields:   CodesigningaccountCertificateProfile_PropertiesFields,
 		},
 	},
 }

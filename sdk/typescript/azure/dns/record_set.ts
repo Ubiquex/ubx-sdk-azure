@@ -220,14 +220,8 @@ const RecordSet_PropertiesFields: FieldMap = {
 export interface RecordSetConfig {
   /** The etag of the record set. */
   etag?: string | Computed<string>;
-  /** The ID of the record set. */
-  id?: string | Computed<string>;
-  /** The name of the record set. */
-  name?: string | Computed<string>;
   /** Represents the properties of the records in the record set. */
   properties?: RecordSet_Properties | Computed<RecordSet_Properties>;
-  /** The type of the record set. */
-  type?: string | Computed<string>;
 }
 
 export interface RecordSetAttrs {
@@ -247,13 +241,10 @@ export const RecordSet: ResourceBinding<RecordSetConfig, RecordSetAttrs> = {
   wireType: "azure_dns_record_set",
   fields: {
     etag: "etag",
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: RecordSet_PropertiesFields,
     },
-    type: "type",
   },
 };

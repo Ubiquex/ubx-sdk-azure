@@ -4,7 +4,7 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSoftwareUpdateConfigurationMachineRun_Value_Properties_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
@@ -17,27 +17,27 @@ type OpenapiSoftwareUpdateConfigurationMachineRun_Value_Properties_SoftwareUpdat
 }
 
 type OpenapiSoftwareUpdateConfigurationMachineRun_Value_Properties struct {
-	ConfiguredDuration any
-	CorrelationId any
-	CreatedBy any
-	CreationTime any
-	EndTime any
-	Error any
-	Job any
-	LastModifiedBy any
-	LastModifiedTime any
-	OsType any
+	ConfiguredDuration          any
+	CorrelationId               any
+	CreatedBy                   any
+	CreationTime                any
+	EndTime                     any
+	Error                       any
+	Job                         any
+	LastModifiedBy              any
+	LastModifiedTime            any
+	OsType                      any
 	SoftwareUpdateConfiguration any
-	SourceComputerId any
-	StartTime any
-	Status any
-	TargetComputer any
-	TargetComputerType any
+	SourceComputerId            any
+	StartTime                   any
+	Status                      any
+	TargetComputer              any
+	TargetComputerType          any
 }
 
 type OpenapiSoftwareUpdateConfigurationMachineRun_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 }
 

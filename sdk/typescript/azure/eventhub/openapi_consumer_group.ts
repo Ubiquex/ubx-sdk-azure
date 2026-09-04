@@ -17,8 +17,6 @@ const OpenapiConsumerGroup_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiConsumerGroupConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Single item in List or Get Consumer group operation */
   properties?: OpenapiConsumerGroup_Properties | Computed<OpenapiConsumerGroup_Properties>;
 }
@@ -33,7 +31,6 @@ export interface OpenapiConsumerGroupAttrs {
 export const OpenapiConsumerGroup: ResourceBinding<OpenapiConsumerGroupConfig, OpenapiConsumerGroupAttrs> = {
   wireType: "azure_eventhub_openapi_consumer_group",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

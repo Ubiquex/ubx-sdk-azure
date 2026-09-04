@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerNetworkManager_Properties_NetworkManagerScopes_CrossTenantScopes struct {
 	ManagementGroups any
-	Subscriptions any
-	TenantId any
+	Subscriptions    any
+	TenantId         any
 }
 
 type NetworkmanagerNetworkManager_Properties_NetworkManagerScopes struct {
@@ -47,49 +47,36 @@ type NetworkmanagerNetworkManager_SystemData struct {
 }
 
 var NetworkmanagerNetworkManager_Properties_NetworkManagerScopes_CrossTenantScopesFields = ubx.FieldMap{
-		"ManagementGroups": ubx.FieldSpec{WireName: "management_groups"},
-		"Subscriptions": ubx.FieldSpec{WireName: "subscriptions"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ManagementGroups": ubx.FieldSpec{WireName: "management_groups"},
+	"Subscriptions":    ubx.FieldSpec{WireName: "subscriptions"},
+	"TenantId":         ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var NetworkmanagerNetworkManager_Properties_NetworkManagerScopesFields = ubx.FieldMap{
-		"CrossTenantScopes": ubx.FieldSpec{
-			WireName: "cross_tenant_scopes",
-			Kind: "list",
-			Fields: NetworkmanagerNetworkManager_Properties_NetworkManagerScopes_CrossTenantScopesFields,
-		},
-		"ManagementGroups": ubx.FieldSpec{WireName: "management_groups"},
-		"Subscriptions": ubx.FieldSpec{WireName: "subscriptions"},
-	}
+	"CrossTenantScopes": ubx.FieldSpec{
+		WireName: "cross_tenant_scopes",
+		Kind:     "list",
+		Fields:   NetworkmanagerNetworkManager_Properties_NetworkManagerScopes_CrossTenantScopesFields,
+	},
+	"ManagementGroups": ubx.FieldSpec{WireName: "management_groups"},
+	"Subscriptions":    ubx.FieldSpec{WireName: "subscriptions"},
+}
 
 var NetworkmanagerNetworkManager_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"NetworkManagerScopeAccesses": ubx.FieldSpec{WireName: "network_manager_scope_accesses"},
-		"NetworkManagerScopes": ubx.FieldSpec{
-			WireName: "network_manager_scopes",
-			Kind: "object",
-			Fields: NetworkmanagerNetworkManager_Properties_NetworkManagerScopesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
-
-var NetworkmanagerNetworkManager_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Description":                 ubx.FieldSpec{WireName: "description"},
+	"NetworkManagerScopeAccesses": ubx.FieldSpec{WireName: "network_manager_scope_accesses"},
+	"NetworkManagerScopes": ubx.FieldSpec{
+		WireName: "network_manager_scopes",
+		Kind:     "object",
+		Fields:   NetworkmanagerNetworkManager_Properties_NetworkManagerScopesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkmanagerNetworkManagerConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of Managed Network
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerNetworkManagerAttrs struct {
@@ -104,16 +91,10 @@ type NetworkmanagerNetworkManagerAttrs struct {
 var NetworkmanagerNetworkManager = ubx.ResourceBinding{
 	WireType: "azure_network_networkmanager_network_manager",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerNetworkManager_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerNetworkManager_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerNetworkManager_PropertiesFields,
 		},
 	},
 }

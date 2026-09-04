@@ -4,7 +4,7 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SreagentAgent_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -104,102 +104,102 @@ type SreagentAgent_Properties struct {
 }
 
 var SreagentAgent_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var SreagentAgent_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: SreagentAgent_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   SreagentAgent_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var SreagentAgent_Properties_ActionConfigurationFields = ubx.FieldMap{
-		"AccessLevel": ubx.FieldSpec{WireName: "access_level"},
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-	}
+	"AccessLevel": ubx.FieldSpec{WireName: "access_level"},
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"Mode":        ubx.FieldSpec{WireName: "mode"},
+}
 
 var SreagentAgent_Properties_AgentIdentityFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"InitialSponsorGroupId": ubx.FieldSpec{WireName: "initial_sponsor_group_id"},
-	}
+	"ClientId":              ubx.FieldSpec{WireName: "client_id"},
+	"Enabled":               ubx.FieldSpec{WireName: "enabled"},
+	"InitialSponsorGroupId": ubx.FieldSpec{WireName: "initial_sponsor_group_id"},
+}
 
 var SreagentAgent_Properties_DefaultModelFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Provider": ubx.FieldSpec{WireName: "provider"},
-	}
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Provider": ubx.FieldSpec{WireName: "provider"},
+}
 
 var SreagentAgent_Properties_IncidentManagementConfigurationFields = ubx.FieldMap{
-		"ConnectionKey": ubx.FieldSpec{WireName: "connection_key"},
-		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"ConnectionUrl": ubx.FieldSpec{WireName: "connection_url"},
-		"OboUser": ubx.FieldSpec{WireName: "obo_user"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ConnectionKey":  ubx.FieldSpec{WireName: "connection_key"},
+	"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
+	"ConnectionUrl":  ubx.FieldSpec{WireName: "connection_url"},
+	"OboUser":        ubx.FieldSpec{WireName: "obo_user"},
+	"Type":           ubx.FieldSpec{WireName: "type"},
+}
 
 var SreagentAgent_Properties_KnowledgeGraphConfigurationFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"ManagedResources": ubx.FieldSpec{WireName: "managed_resources"},
-	}
+	"Identity":         ubx.FieldSpec{WireName: "identity"},
+	"ManagedResources": ubx.FieldSpec{WireName: "managed_resources"},
+}
 
 var SreagentAgent_Properties_LogConfiguration_ApplicationInsightsConfigurationFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-	}
+	"AppId":            ubx.FieldSpec{WireName: "app_id"},
+	"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
+}
 
 var SreagentAgent_Properties_LogConfigurationFields = ubx.FieldMap{
-		"ApplicationInsightsConfiguration": ubx.FieldSpec{
-			WireName: "application_insights_configuration",
-			Kind: "object",
-			Fields: SreagentAgent_Properties_LogConfiguration_ApplicationInsightsConfigurationFields,
-		},
-	}
+	"ApplicationInsightsConfiguration": ubx.FieldSpec{
+		WireName: "application_insights_configuration",
+		Kind:     "object",
+		Fields:   SreagentAgent_Properties_LogConfiguration_ApplicationInsightsConfigurationFields,
+	},
+}
 
 var SreagentAgent_PropertiesFields = ubx.FieldMap{
-		"ActionConfiguration": ubx.FieldSpec{
-			WireName: "action_configuration",
-			Kind: "object",
-			Fields: SreagentAgent_Properties_ActionConfigurationFields,
-		},
-		"AgentEndpoint": ubx.FieldSpec{WireName: "agent_endpoint"},
-		"AgentIdentity": ubx.FieldSpec{
-			WireName: "agent_identity",
-			Kind: "object",
-			Fields: SreagentAgent_Properties_AgentIdentityFields,
-		},
-		"AgentSpaceId": ubx.FieldSpec{WireName: "agent_space_id"},
-		"DefaultModel": ubx.FieldSpec{
-			WireName: "default_model",
-			Kind: "object",
-			Fields: SreagentAgent_Properties_DefaultModelFields,
-		},
-		"IncidentManagementConfiguration": ubx.FieldSpec{
-			WireName: "incident_management_configuration",
-			Kind: "object",
-			Fields: SreagentAgent_Properties_IncidentManagementConfigurationFields,
-		},
-		"KnowledgeGraphConfiguration": ubx.FieldSpec{
-			WireName: "knowledge_graph_configuration",
-			Kind: "object",
-			Fields: SreagentAgent_Properties_KnowledgeGraphConfigurationFields,
-		},
-		"LogConfiguration": ubx.FieldSpec{
-			WireName: "log_configuration",
-			Kind: "object",
-			Fields: SreagentAgent_Properties_LogConfigurationFields,
-		},
-		"PowerState": ubx.FieldSpec{WireName: "power_state"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RunningState": ubx.FieldSpec{WireName: "running_state"},
-		"UpgradeChannel": ubx.FieldSpec{WireName: "upgrade_channel"},
-	}
+	"ActionConfiguration": ubx.FieldSpec{
+		WireName: "action_configuration",
+		Kind:     "object",
+		Fields:   SreagentAgent_Properties_ActionConfigurationFields,
+	},
+	"AgentEndpoint": ubx.FieldSpec{WireName: "agent_endpoint"},
+	"AgentIdentity": ubx.FieldSpec{
+		WireName: "agent_identity",
+		Kind:     "object",
+		Fields:   SreagentAgent_Properties_AgentIdentityFields,
+	},
+	"AgentSpaceId": ubx.FieldSpec{WireName: "agent_space_id"},
+	"DefaultModel": ubx.FieldSpec{
+		WireName: "default_model",
+		Kind:     "object",
+		Fields:   SreagentAgent_Properties_DefaultModelFields,
+	},
+	"IncidentManagementConfiguration": ubx.FieldSpec{
+		WireName: "incident_management_configuration",
+		Kind:     "object",
+		Fields:   SreagentAgent_Properties_IncidentManagementConfigurationFields,
+	},
+	"KnowledgeGraphConfiguration": ubx.FieldSpec{
+		WireName: "knowledge_graph_configuration",
+		Kind:     "object",
+		Fields:   SreagentAgent_Properties_KnowledgeGraphConfigurationFields,
+	},
+	"LogConfiguration": ubx.FieldSpec{
+		WireName: "log_configuration",
+		Kind:     "object",
+		Fields:   SreagentAgent_Properties_LogConfigurationFields,
+	},
+	"PowerState":        ubx.FieldSpec{WireName: "power_state"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RunningState":      ubx.FieldSpec{WireName: "running_state"},
+	"UpgradeChannel":    ubx.FieldSpec{WireName: "upgrade_channel"},
+}
 
 type SreagentAgentConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -220,13 +220,13 @@ var SreagentAgent = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: SreagentAgent_IdentityFields,
+			Kind:     "object",
+			Fields:   SreagentAgent_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SreagentAgent_PropertiesFields,
+			Kind:     "object",
+			Fields:   SreagentAgent_PropertiesFields,
 		},
 	},
 }

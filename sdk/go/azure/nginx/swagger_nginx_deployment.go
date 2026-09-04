@@ -4,13 +4,13 @@ package nginx
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxDeployment_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type SwaggerNginxDeployment_Identity struct {
 	PrincipalId any
-	TenantId any
+	TenantId    any
 	// Identity Type
 	Type any
 	// Dictionary of <UserIdentityProperties>
@@ -23,7 +23,7 @@ type SwaggerNginxDeployment_Properties_AutoUpgradeProfile struct {
 }
 
 type SwaggerNginxDeployment_Properties_Logging_StorageAccount struct {
-	AccountName any
+	AccountName   any
 	ContainerName any
 }
 
@@ -33,9 +33,9 @@ type SwaggerNginxDeployment_Properties_Logging struct {
 }
 
 type SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddresses struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	SubnetId any
+	SubnetId                  any
 }
 
 type SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddresses struct {
@@ -44,7 +44,7 @@ type SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_Pu
 
 type SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration struct {
 	PrivateIpaddresses any
-	PublicIpaddresses any
+	PublicIpaddresses  any
 }
 
 type SwaggerNginxDeployment_Properties_NetworkProfile_NetworkInterfaceConfiguration struct {
@@ -104,7 +104,7 @@ type SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profi
 
 type SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings struct {
@@ -114,7 +114,7 @@ type SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings struc
 type SwaggerNginxDeployment_Properties_ScalingProperties struct {
 	// The settings for enabling automatic scaling of the deployment. If this field is specified, 'scale.capacity' must be empty.
 	AutoScaleSettings any
-	Capacity any
+	Capacity          any
 }
 
 type SwaggerNginxDeployment_Properties_UserProfile struct {
@@ -126,7 +126,7 @@ type SwaggerNginxDeployment_Properties struct {
 	// Autoupgrade settings of a deployment.
 	AutoUpgradeProfile any
 	// Dataplane API endpoint for the caller to update the NGINX state of the deployment.
-	DataplaneApiEndpoint any
+	DataplaneApiEndpoint     any
 	EnableDiagnosticsSupport any
 	// The IP address of the deployment.
 	IpAddress any
@@ -136,7 +136,7 @@ type SwaggerNginxDeployment_Properties struct {
 	NetworkProfile any
 	// Settings for NGINX App Protect (NAP)
 	NginxAppProtect any
-	NginxVersion any
+	NginxVersion    any
 	// Provisioning State
 	ProvisioningState any
 	// Information on how the deployment will be scaled.
@@ -151,205 +151,205 @@ type SwaggerNginxDeployment_Sku struct {
 }
 
 var SwaggerNginxDeployment_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var SwaggerNginxDeployment_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: SwaggerNginxDeployment_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   SwaggerNginxDeployment_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var SwaggerNginxDeployment_Properties_AutoUpgradeProfileFields = ubx.FieldMap{
-		"UpgradeChannel": ubx.FieldSpec{WireName: "upgrade_channel"},
-	}
+	"UpgradeChannel": ubx.FieldSpec{WireName: "upgrade_channel"},
+}
 
 var SwaggerNginxDeployment_Properties_Logging_StorageAccountFields = ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-	}
+	"AccountName":   ubx.FieldSpec{WireName: "account_name"},
+	"ContainerName": ubx.FieldSpec{WireName: "container_name"},
+}
 
 var SwaggerNginxDeployment_Properties_LoggingFields = ubx.FieldMap{
-		"StorageAccount": ubx.FieldSpec{
-			WireName: "storage_account",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_Logging_StorageAccountFields,
-		},
-	}
+	"StorageAccount": ubx.FieldSpec{
+		WireName: "storage_account",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_Logging_StorageAccountFields,
+	},
+}
 
 var SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddressesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"SubnetId":                  ubx.FieldSpec{WireName: "subnet_id"},
+}
 
 var SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddressesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfigurationFields = ubx.FieldMap{
-		"PrivateIpaddresses": ubx.FieldSpec{
-			WireName: "private_ipaddresses",
-			Kind: "list",
-			Fields: SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddressesFields,
-		},
-		"PublicIpaddresses": ubx.FieldSpec{
-			WireName: "public_ipaddresses",
-			Kind: "list",
-			Fields: SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddressesFields,
-		},
-	}
+	"PrivateIpaddresses": ubx.FieldSpec{
+		WireName: "private_ipaddresses",
+		Kind:     "list",
+		Fields:   SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddressesFields,
+	},
+	"PublicIpaddresses": ubx.FieldSpec{
+		WireName: "public_ipaddresses",
+		Kind:     "list",
+		Fields:   SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddressesFields,
+	},
+}
 
 var SwaggerNginxDeployment_Properties_NetworkProfile_NetworkInterfaceConfigurationFields = ubx.FieldMap{
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-	}
+	"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
+}
 
 var SwaggerNginxDeployment_Properties_NetworkProfileFields = ubx.FieldMap{
-		"FrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "front_end_ipconfiguration",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfigurationFields,
-		},
-		"NetworkInterfaceConfiguration": ubx.FieldSpec{
-			WireName: "network_interface_configuration",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NetworkProfile_NetworkInterfaceConfigurationFields,
-		},
-	}
+	"FrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NetworkProfile_FrontEndIpconfigurationFields,
+	},
+	"NetworkInterfaceConfiguration": ubx.FieldSpec{
+		WireName: "network_interface_configuration",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NetworkProfile_NetworkInterfaceConfigurationFields,
+	},
+}
 
 var SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallSettingsFields = ubx.FieldMap{
-		"ActivationState": ubx.FieldSpec{WireName: "activation_state"},
-	}
+	"ActivationState": ubx.FieldSpec{WireName: "activation_state"},
+}
 
 var SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_AttackSignaturesPackageFields = ubx.FieldMap{
-		"RevisionDatetime": ubx.FieldSpec{WireName: "revision_datetime"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"RevisionDatetime": ubx.FieldSpec{WireName: "revision_datetime"},
+	"Version":          ubx.FieldSpec{WireName: "version"},
+}
 
 var SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_ComponentVersionsFields = ubx.FieldMap{
-		"WafEngineVersion": ubx.FieldSpec{WireName: "waf_engine_version"},
-		"WafNginxVersion": ubx.FieldSpec{WireName: "waf_nginx_version"},
-	}
+	"WafEngineVersion": ubx.FieldSpec{WireName: "waf_engine_version"},
+	"WafNginxVersion":  ubx.FieldSpec{WireName: "waf_nginx_version"},
+}
 
 var SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatusFields = ubx.FieldMap{
-		"AttackSignaturesPackage": ubx.FieldSpec{
-			WireName: "attack_signatures_package",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_AttackSignaturesPackageFields,
-		},
-		"BotSignaturesPackage": ubx.FieldSpec{
-			WireName: "bot_signatures_package",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_AttackSignaturesPackageFields,
-		},
-		"ComponentVersions": ubx.FieldSpec{
-			WireName: "component_versions",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_ComponentVersionsFields,
-		},
-		"ThreatCampaignsPackage": ubx.FieldSpec{
-			WireName: "threat_campaigns_package",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_AttackSignaturesPackageFields,
-		},
-		"WafRelease": ubx.FieldSpec{WireName: "waf_release"},
-	}
+	"AttackSignaturesPackage": ubx.FieldSpec{
+		WireName: "attack_signatures_package",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_AttackSignaturesPackageFields,
+	},
+	"BotSignaturesPackage": ubx.FieldSpec{
+		WireName: "bot_signatures_package",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_AttackSignaturesPackageFields,
+	},
+	"ComponentVersions": ubx.FieldSpec{
+		WireName: "component_versions",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_ComponentVersionsFields,
+	},
+	"ThreatCampaignsPackage": ubx.FieldSpec{
+		WireName: "threat_campaigns_package",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatus_AttackSignaturesPackageFields,
+	},
+	"WafRelease": ubx.FieldSpec{WireName: "waf_release"},
+}
 
 var SwaggerNginxDeployment_Properties_NginxAppProtectFields = ubx.FieldMap{
-		"WebApplicationFirewallSettings": ubx.FieldSpec{
-			WireName: "web_application_firewall_settings",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallSettingsFields,
-		},
-		"WebApplicationFirewallStatus": ubx.FieldSpec{
-			WireName: "web_application_firewall_status",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatusFields,
-		},
-	}
+	"WebApplicationFirewallSettings": ubx.FieldSpec{
+		WireName: "web_application_firewall_settings",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallSettingsFields,
+	},
+	"WebApplicationFirewallStatus": ubx.FieldSpec{
+		WireName: "web_application_firewall_status",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NginxAppProtect_WebApplicationFirewallStatusFields,
+	},
+}
 
 var SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles_CapacityFields = ubx.FieldMap{
-		"Max": ubx.FieldSpec{WireName: "max"},
-		"Min": ubx.FieldSpec{WireName: "min"},
-	}
+	"Max": ubx.FieldSpec{WireName: "max"},
+	"Min": ubx.FieldSpec{WireName: "min"},
+}
 
 var SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_ProfilesFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{
-			WireName: "capacity",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles_CapacityFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{
+		WireName: "capacity",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_Profiles_CapacityFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettingsFields = ubx.FieldMap{
-		"Profiles": ubx.FieldSpec{
-			WireName: "profiles",
-			Kind: "list",
-			Fields: SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_ProfilesFields,
-		},
-	}
+	"Profiles": ubx.FieldSpec{
+		WireName: "profiles",
+		Kind:     "list",
+		Fields:   SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettings_ProfilesFields,
+	},
+}
 
 var SwaggerNginxDeployment_Properties_ScalingPropertiesFields = ubx.FieldMap{
-		"AutoScaleSettings": ubx.FieldSpec{
-			WireName: "auto_scale_settings",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettingsFields,
-		},
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	}
+	"AutoScaleSettings": ubx.FieldSpec{
+		WireName: "auto_scale_settings",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_ScalingProperties_AutoScaleSettingsFields,
+	},
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+}
 
 var SwaggerNginxDeployment_Properties_UserProfileFields = ubx.FieldMap{
-		"PreferredEmail": ubx.FieldSpec{WireName: "preferred_email"},
-	}
+	"PreferredEmail": ubx.FieldSpec{WireName: "preferred_email"},
+}
 
 var SwaggerNginxDeployment_PropertiesFields = ubx.FieldMap{
-		"AutoUpgradeProfile": ubx.FieldSpec{
-			WireName: "auto_upgrade_profile",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_AutoUpgradeProfileFields,
-		},
-		"DataplaneApiEndpoint": ubx.FieldSpec{WireName: "dataplane_api_endpoint"},
-		"EnableDiagnosticsSupport": ubx.FieldSpec{WireName: "enable_diagnostics_support"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"Logging": ubx.FieldSpec{
-			WireName: "logging",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_LoggingFields,
-		},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NetworkProfileFields,
-		},
-		"NginxAppProtect": ubx.FieldSpec{
-			WireName: "nginx_app_protect",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_NginxAppProtectFields,
-		},
-		"NginxVersion": ubx.FieldSpec{WireName: "nginx_version"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ScalingProperties": ubx.FieldSpec{
-			WireName: "scaling_properties",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_ScalingPropertiesFields,
-		},
-		"UserProfile": ubx.FieldSpec{
-			WireName: "user_profile",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_Properties_UserProfileFields,
-		},
-	}
+	"AutoUpgradeProfile": ubx.FieldSpec{
+		WireName: "auto_upgrade_profile",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_AutoUpgradeProfileFields,
+	},
+	"DataplaneApiEndpoint":     ubx.FieldSpec{WireName: "dataplane_api_endpoint"},
+	"EnableDiagnosticsSupport": ubx.FieldSpec{WireName: "enable_diagnostics_support"},
+	"IpAddress":                ubx.FieldSpec{WireName: "ip_address"},
+	"Logging": ubx.FieldSpec{
+		WireName: "logging",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_LoggingFields,
+	},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NetworkProfileFields,
+	},
+	"NginxAppProtect": ubx.FieldSpec{
+		WireName: "nginx_app_protect",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_NginxAppProtectFields,
+	},
+	"NginxVersion":      ubx.FieldSpec{WireName: "nginx_version"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ScalingProperties": ubx.FieldSpec{
+		WireName: "scaling_properties",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_ScalingPropertiesFields,
+	},
+	"UserProfile": ubx.FieldSpec{
+		WireName: "user_profile",
+		Kind:     "object",
+		Fields:   SwaggerNginxDeployment_Properties_UserProfileFields,
+	},
+}
 
 var SwaggerNginxDeployment_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type SwaggerNginxDeploymentConfig struct {
 	// Identity Properties
@@ -374,18 +374,18 @@ var SwaggerNginxDeployment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_IdentityFields,
+			Kind:     "object",
+			Fields:   SwaggerNginxDeployment_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_PropertiesFields,
+			Kind:     "object",
+			Fields:   SwaggerNginxDeployment_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: SwaggerNginxDeployment_SkuFields,
+			Kind:     "object",
+			Fields:   SwaggerNginxDeployment_SkuFields,
 		},
 	},
 }

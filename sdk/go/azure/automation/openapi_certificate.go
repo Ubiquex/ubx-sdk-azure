@@ -6,20 +6,29 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiCertificate_Properties struct {
 	// Gets or sets the base64 encoded value of the certificate.
 	Base64Value any
+	// Gets the creation time.
+	CreationTime any
 	// Gets or sets the description of the certificate.
 	Description any
+	// Gets the expiry time of the certificate.
+	ExpiryTime any
 	// Gets or sets the is exportable flag of the certificate.
 	IsExportable any
+	// Gets the last modified time.
+	LastModifiedTime any
 	// Gets or sets the thumbprint of the certificate.
 	Thumbprint any
 }
 
 var OpenapiCertificate_PropertiesFields = ubx.FieldMap{
-		"Base64Value": ubx.FieldSpec{WireName: "base64_value"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IsExportable": ubx.FieldSpec{WireName: "is_exportable"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"Base64Value":      ubx.FieldSpec{WireName: "base64_value"},
+	"CreationTime":     ubx.FieldSpec{WireName: "creation_time"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"ExpiryTime":       ubx.FieldSpec{WireName: "expiry_time"},
+	"IsExportable":     ubx.FieldSpec{WireName: "is_exportable"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"Thumbprint":       ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 type OpenapiCertificateConfig struct {
 	// Gets or sets the name of the certificate.
@@ -41,8 +50,8 @@ var OpenapiCertificate = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCertificate_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCertificate_PropertiesFields,
 		},
 	},
 }

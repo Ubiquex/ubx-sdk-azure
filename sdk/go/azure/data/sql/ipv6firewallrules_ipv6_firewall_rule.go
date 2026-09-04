@@ -4,7 +4,7 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Ipv6firewallrulesIpv6FirewallRule_Value_Properties struct {
-	EndIpv6Address any
+	EndIpv6Address   any
 	StartIpv6Address any
 }
 
@@ -18,7 +18,7 @@ type Ipv6firewallrulesIpv6FirewallRuleConfig struct {
 
 type Ipv6firewallrulesIpv6FirewallRuleAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The IPv6FirewallRule items on this page
 	Value any

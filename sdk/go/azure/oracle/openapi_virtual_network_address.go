@@ -23,15 +23,15 @@ type OpenapiVirtualNetworkAddress_Properties struct {
 }
 
 var OpenapiVirtualNetworkAddress_PropertiesFields = ubx.FieldMap{
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
-		"LifecycleState": ubx.FieldSpec{WireName: "lifecycle_state"},
-		"Ocid": ubx.FieldSpec{WireName: "ocid"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TimeAssigned": ubx.FieldSpec{WireName: "time_assigned"},
-		"VmOcid": ubx.FieldSpec{WireName: "vm_ocid"},
-	}
+	"Domain":            ubx.FieldSpec{WireName: "domain"},
+	"IpAddress":         ubx.FieldSpec{WireName: "ip_address"},
+	"LifecycleDetails":  ubx.FieldSpec{WireName: "lifecycle_details"},
+	"LifecycleState":    ubx.FieldSpec{WireName: "lifecycle_state"},
+	"Ocid":              ubx.FieldSpec{WireName: "ocid"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TimeAssigned":      ubx.FieldSpec{WireName: "time_assigned"},
+	"VmOcid":            ubx.FieldSpec{WireName: "vm_ocid"},
+}
 
 type OpenapiVirtualNetworkAddressConfig struct {
 	// virtualNetworkAddress resource properties
@@ -56,10 +56,10 @@ var OpenapiVirtualNetworkAddress = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVirtualNetworkAddress_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiVirtualNetworkAddress_PropertiesFields,
 		},
-		"Cloudvmclustername": ubx.FieldSpec{WireName: "cloudvmclustername"},
+		"Cloudvmclustername":        ubx.FieldSpec{WireName: "cloudvmclustername"},
 		"Virtualnetworkaddressname": ubx.FieldSpec{WireName: "virtualnetworkaddressname"},
 	},
 }

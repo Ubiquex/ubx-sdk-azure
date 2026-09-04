@@ -4,13 +4,13 @@ package digitaltwins
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TimeSeriesDatabaseConnection_Value_Properties_Identity struct {
-	Type any
+	Type                 any
 	UserAssignedIdentity any
 }
 
 type TimeSeriesDatabaseConnection_Value_Properties struct {
-	ConnectionType any
-	Identity any
+	ConnectionType    any
+	Identity          any
 	ProvisioningState any
 }
 
@@ -19,19 +19,19 @@ type TimeSeriesDatabaseConnection_Value struct {
 }
 
 type TimeSeriesDatabaseConnectionConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type TimeSeriesDatabaseConnectionAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// A list of time series database connection resources.
 	Value any
 }
@@ -39,9 +39,9 @@ type TimeSeriesDatabaseConnectionAttrs struct {
 var TimeSeriesDatabaseConnection = ubx.DataSourceBinding{
 	WireType: "azure_digitaltwins_time_series_database_connection",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

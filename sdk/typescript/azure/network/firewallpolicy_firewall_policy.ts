@@ -392,8 +392,6 @@ const FirewallpolicyFirewallPolicy_PropertiesFields: FieldMap = {
 };
 
 export interface FirewallpolicyFirewallPolicyConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: FirewallpolicyFirewallPolicy_Identity | Computed<FirewallpolicyFirewallPolicy_Identity>;
   /** Firewall Policy definition. */
@@ -412,7 +410,6 @@ export interface FirewallpolicyFirewallPolicyAttrs {
 export const FirewallpolicyFirewallPolicy: ResourceBinding<FirewallpolicyFirewallPolicyConfig, FirewallpolicyFirewallPolicyAttrs> = {
   wireType: "azure_network_firewallpolicy_firewall_policy",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",

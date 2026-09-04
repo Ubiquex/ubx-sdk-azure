@@ -210,20 +210,9 @@ const Subscription_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const Subscription_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface SubscriptionConfig {
   /** Properties of the event subscription. */
   properties?: Subscription_Properties | Computed<Subscription_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: Subscription_SystemData | Computed<Subscription_SystemData>;
 }
 
 export interface SubscriptionAttrs {
@@ -240,11 +229,6 @@ export const Subscription: ResourceBinding<SubscriptionConfig, SubscriptionAttrs
       wireName: "properties",
       kind: "object",
       fields: Subscription_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: Subscription_SystemDataFields,
     },
   },
 };

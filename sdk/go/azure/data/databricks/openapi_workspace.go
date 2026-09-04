@@ -4,20 +4,20 @@ package databricks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkspace_Value_Properties_AccessConnector struct {
-	Id any
-	IdentityType any
+	Id                     any
+	IdentityType           any
 	UserAssignedIdentityId any
 }
 
 type OpenapiWorkspace_Value_Properties_Authorizations struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
 type OpenapiWorkspace_Value_Properties_CreatedBy struct {
 	ApplicationId any
-	Oid any
-	Puid any
+	Oid           any
+	Puid          any
 }
 
 type OpenapiWorkspace_Value_Properties_DefaultCatalog struct {
@@ -26,24 +26,24 @@ type OpenapiWorkspace_Value_Properties_DefaultCatalog struct {
 }
 
 type OpenapiWorkspace_Value_Properties_Encryption_Entities_ManagedDisk_KeyVaultProperties struct {
-	KeyName any
+	KeyName     any
 	KeyVaultUri any
-	KeyVersion any
+	KeyVersion  any
 }
 
 type OpenapiWorkspace_Value_Properties_Encryption_Entities_ManagedDisk struct {
-	KeySource any
-	KeyVaultProperties any
+	KeySource                         any
+	KeyVaultProperties                any
 	RotationToLatestKeyVersionEnabled any
 }
 
 type OpenapiWorkspace_Value_Properties_Encryption_Entities_ManagedServices struct {
-	KeySource any
+	KeySource          any
 	KeyVaultProperties any
 }
 
 type OpenapiWorkspace_Value_Properties_Encryption_Entities struct {
-	ManagedDisk any
+	ManagedDisk     any
 	ManagedServices any
 }
 
@@ -57,65 +57,65 @@ type OpenapiWorkspace_Value_Properties_EnhancedSecurityCompliance_AutomaticClust
 
 type OpenapiWorkspace_Value_Properties_EnhancedSecurityCompliance_ComplianceSecurityProfile struct {
 	ComplianceStandards any
-	Value any
+	Value               any
 }
 
 type OpenapiWorkspace_Value_Properties_EnhancedSecurityCompliance struct {
-	AutomaticClusterUpdate any
-	ComplianceSecurityProfile any
+	AutomaticClusterUpdate     any
+	ComplianceSecurityProfile  any
 	EnhancedSecurityMonitoring any
 }
 
 type OpenapiWorkspace_Value_Properties_ManagedDiskIdentity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type OpenapiWorkspace_Value_Properties_Parameters_AmlWorkspaceId struct {
-	Type any
+	Type  any
 	Value any
 }
 
 type OpenapiWorkspace_Value_Properties_Parameters_EnableNoPublicIp struct {
-	Type any
+	Type  any
 	Value any
 }
 
 type OpenapiWorkspace_Value_Properties_Parameters_Encryption_Value struct {
-	KeyName any
-	KeySource any
+	KeyName     any
+	KeySource   any
 	Keyvaulturi any
-	Keyversion any
+	Keyversion  any
 }
 
 type OpenapiWorkspace_Value_Properties_Parameters_Encryption struct {
-	Type any
+	Type  any
 	Value any
 }
 
 type OpenapiWorkspace_Value_Properties_Parameters_ResourceTags struct {
-	Type any
+	Type  any
 	Value any
 }
 
 type OpenapiWorkspace_Value_Properties_Parameters struct {
-	AmlWorkspaceId any
-	CustomPrivateSubnetName any
-	CustomPublicSubnetName any
-	CustomVirtualNetworkId any
-	EnableNoPublicIp any
-	Encryption any
-	LoadBalancerBackendPoolName any
-	LoadBalancerId any
-	NatGatewayName any
-	PrepareEncryption any
-	PublicIpName any
+	AmlWorkspaceId                  any
+	CustomPrivateSubnetName         any
+	CustomPublicSubnetName          any
+	CustomVirtualNetworkId          any
+	EnableNoPublicIp                any
+	Encryption                      any
+	LoadBalancerBackendPoolName     any
+	LoadBalancerId                  any
+	NatGatewayName                  any
+	PrepareEncryption               any
+	PublicIpName                    any
 	RequireInfrastructureEncryption any
-	ResourceTags any
-	StorageAccountName any
-	StorageAccountSkuName any
-	VnetAddressPrefix any
+	ResourceTags                    any
+	StorageAccountName              any
+	StorageAccountSkuName           any
+	VnetAddressPrefix               any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -124,15 +124,15 @@ type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections_Properties_Pri
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections struct {
@@ -140,29 +140,29 @@ type OpenapiWorkspace_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type OpenapiWorkspace_Value_Properties struct {
-	AccessConnector any
-	Authorizations any
-	ComputeMode any
-	CreatedBy any
-	CreatedDateTime any
-	DefaultCatalog any
-	DefaultStorageFirewall any
-	DiskEncryptionSetId any
-	Encryption any
+	AccessConnector            any
+	Authorizations             any
+	ComputeMode                any
+	CreatedBy                  any
+	CreatedDateTime            any
+	DefaultCatalog             any
+	DefaultStorageFirewall     any
+	DiskEncryptionSetId        any
+	Encryption                 any
 	EnhancedSecurityCompliance any
-	IsUcEnabled any
-	ManagedDiskIdentity any
-	ManagedResourceGroupId any
-	Parameters any
+	IsUcEnabled                any
+	ManagedDiskIdentity        any
+	ManagedResourceGroupId     any
+	Parameters                 any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	RequiredNsgRules any
-	StorageAccountIdentity any
-	UiDefinitionUri any
-	UpdatedBy any
-	WorkspaceId any
-	WorkspaceUrl any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	RequiredNsgRules           any
+	StorageAccountIdentity     any
+	UiDefinitionUri            any
+	UpdatedBy                  any
+	WorkspaceId                any
+	WorkspaceUrl               any
 }
 
 type OpenapiWorkspace_Value_Sku struct {
@@ -172,7 +172,7 @@ type OpenapiWorkspace_Value_Sku struct {
 
 type OpenapiWorkspace_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiWorkspaceConfig struct {
@@ -187,6 +187,5 @@ type OpenapiWorkspaceAttrs struct {
 
 var OpenapiWorkspace = ubx.DataSourceBinding{
 	WireType: "azure_databricks_openapi_workspace",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

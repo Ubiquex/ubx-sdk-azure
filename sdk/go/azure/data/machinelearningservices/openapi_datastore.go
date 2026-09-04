@@ -8,9 +8,9 @@ type OpenapiDatastore_Value_Properties_Credentials struct {
 }
 
 type OpenapiDatastore_Value_Properties struct {
-	Credentials any
+	Credentials   any
 	DatastoreType any
-	IsDefault any
+	IsDefault     any
 }
 
 type OpenapiDatastore_Value struct {
@@ -18,38 +18,38 @@ type OpenapiDatastore_Value struct {
 }
 
 type OpenapiDatastoreConfig struct {
-	Count any
-	IsDefault any
-	Names any
-	OrderBy any
-	OrderByAsc any
-	SearchText any
+	Count         any
+	IsDefault     any
+	Names         any
+	OrderBy       any
+	OrderByAsc    any
+	SearchText    any
 	WorkspaceName any
 }
 
 type OpenapiDatastoreAttrs struct {
-	Count any
+	Count     any
 	IsDefault any
-	Names any
+	Names     any
 	// The link to the next page of items
-	NextLink any
-	OrderBy any
+	NextLink   any
+	OrderBy    any
 	OrderByAsc any
 	SearchText any
 	// The Datastore items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiDatastore = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_datastore",
 	Fields: ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
-		"Names": ubx.FieldSpec{WireName: "names"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"OrderByAsc": ubx.FieldSpec{WireName: "order_by_asc"},
-		"SearchText": ubx.FieldSpec{WireName: "search_text"},
+		"Count":         ubx.FieldSpec{WireName: "count"},
+		"IsDefault":     ubx.FieldSpec{WireName: "is_default"},
+		"Names":         ubx.FieldSpec{WireName: "names"},
+		"OrderBy":       ubx.FieldSpec{WireName: "order_by"},
+		"OrderByAsc":    ubx.FieldSpec{WireName: "order_by_asc"},
+		"SearchText":    ubx.FieldSpec{WireName: "search_text"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

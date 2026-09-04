@@ -4,50 +4,50 @@ package servicefabric
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ApplicationResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ApplicationResource_Value_Properties struct {
 	ProvisioningState any
-	TypeName any
+	TypeName          any
 }
 
 type ApplicationResource_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
 type ApplicationResourceConfig struct {
-	ApiVersion any
-	ClusterName any
+	ApiVersion        any
+	ClusterName       any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type ApplicationResourceAttrs struct {
-	ApiVersion any
+	ApiVersion  any
 	ClusterName any
 	// URL to get the next set of application list results if there are any.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
-	Value any
+	SubscriptionId    any
+	Value             any
 }
 
 var ApplicationResource = ubx.DataSourceBinding{
 	WireType: "azure_servicefabric_application_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ClusterName":       ubx.FieldSpec{WireName: "cluster_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

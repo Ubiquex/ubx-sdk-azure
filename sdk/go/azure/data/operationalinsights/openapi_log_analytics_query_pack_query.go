@@ -4,21 +4,21 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLogAnalyticsQueryPackQuery_Value_Properties_Related struct {
-	Categories any
+	Categories    any
 	ResourceTypes any
-	Solutions any
+	Solutions     any
 }
 
 type OpenapiLogAnalyticsQueryPackQuery_Value_Properties struct {
-	Author any
-	Body any
-	Description any
-	DisplayName any
-	Id any
-	Properties any
-	Related any
-	Tags any
-	TimeCreated any
+	Author       any
+	Body         any
+	Description  any
+	DisplayName  any
+	Id           any
+	Properties   any
+	Related      any
+	Tags         any
+	TimeCreated  any
 	TimeModified any
 }
 
@@ -27,14 +27,14 @@ type OpenapiLogAnalyticsQueryPackQuery_Value struct {
 }
 
 type OpenapiLogAnalyticsQueryPackQueryConfig struct {
-	IncludeBody any
+	IncludeBody   any
 	QueryPackName any
 }
 
 type OpenapiLogAnalyticsQueryPackQueryAttrs struct {
 	IncludeBody any
 	// The link to the next page of items
-	NextLink any
+	NextLink      any
 	QueryPackName any
 	// The LogAnalyticsQueryPackQuery items on this page
 	Value any
@@ -43,7 +43,7 @@ type OpenapiLogAnalyticsQueryPackQueryAttrs struct {
 var OpenapiLogAnalyticsQueryPackQuery = ubx.DataSourceBinding{
 	WireType: "azure_operationalinsights_openapi_log_analytics_query_pack_query",
 	Fields: ubx.FieldMap{
-		"IncludeBody": ubx.FieldSpec{WireName: "include_body"},
+		"IncludeBody":   ubx.FieldSpec{WireName: "include_body"},
 		"QueryPackName": ubx.FieldSpec{WireName: "query_pack_name"},
 	},
 }

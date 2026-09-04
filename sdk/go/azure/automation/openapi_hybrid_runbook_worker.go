@@ -4,13 +4,28 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiHybridRunbookWorker_Properties struct {
+	// Gets or sets the assigned machine IP address.
+	Ip any
+	// Last Heartbeat from the Worker
+	LastSeenDateTime any
+	// Gets or sets the registration time of the worker machine.
+	RegisteredDateTime any
 	// Azure Resource Manager Id for a virtual machine.
 	VmResourceId any
+	// Name of the HybridWorker.
+	WorkerName any
+	// Type of the HybridWorker.
+	WorkerType any
 }
 
 var OpenapiHybridRunbookWorker_PropertiesFields = ubx.FieldMap{
-		"VmResourceId": ubx.FieldSpec{WireName: "vm_resource_id"},
-	}
+	"Ip":                 ubx.FieldSpec{WireName: "ip"},
+	"LastSeenDateTime":   ubx.FieldSpec{WireName: "last_seen_date_time"},
+	"RegisteredDateTime": ubx.FieldSpec{WireName: "registered_date_time"},
+	"VmResourceId":       ubx.FieldSpec{WireName: "vm_resource_id"},
+	"WorkerName":         ubx.FieldSpec{WireName: "worker_name"},
+	"WorkerType":         ubx.FieldSpec{WireName: "worker_type"},
+}
 
 type OpenapiHybridRunbookWorkerConfig struct {
 	// The parameters supplied to the create or update hybrid runbook worker operation.
@@ -29,8 +44,8 @@ var OpenapiHybridRunbookWorker = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiHybridRunbookWorker_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiHybridRunbookWorker_PropertiesFields,
 		},
 	},
 }

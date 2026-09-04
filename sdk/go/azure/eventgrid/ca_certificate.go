@@ -32,27 +32,16 @@ type CaCertificate_SystemData struct {
 }
 
 var CaCertificate_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"EncodedCertificate": ubx.FieldSpec{WireName: "encoded_certificate"},
-		"ExpiryTimeInUtc": ubx.FieldSpec{WireName: "expiry_time_in_utc"},
-		"IssueTimeInUtc": ubx.FieldSpec{WireName: "issue_time_in_utc"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
-
-var CaCertificate_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Description":        ubx.FieldSpec{WireName: "description"},
+	"EncodedCertificate": ubx.FieldSpec{WireName: "encoded_certificate"},
+	"ExpiryTimeInUtc":    ubx.FieldSpec{WireName: "expiry_time_in_utc"},
+	"IssueTimeInUtc":     ubx.FieldSpec{WireName: "issue_time_in_utc"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type CaCertificateConfig struct {
 	// The properties of CA certificate.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type CaCertificateAttrs struct {
@@ -67,13 +56,8 @@ var CaCertificate = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CaCertificate_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: CaCertificate_SystemDataFields,
+			Kind:     "object",
+			Fields:   CaCertificate_PropertiesFields,
 		},
 	},
 }

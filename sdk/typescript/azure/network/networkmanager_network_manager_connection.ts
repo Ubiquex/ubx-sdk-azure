@@ -31,20 +31,9 @@ const NetworkmanagerNetworkManagerConnection_PropertiesFields: FieldMap = {
   networkManagerId: "network_manager_id",
 };
 
-const NetworkmanagerNetworkManagerConnection_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerNetworkManagerConnectionConfig {
   /** Information about the network manager connection. */
   properties?: NetworkmanagerNetworkManagerConnection_Properties | Computed<NetworkmanagerNetworkManagerConnection_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerNetworkManagerConnection_SystemData | Computed<NetworkmanagerNetworkManagerConnection_SystemData>;
 }
 
 export interface NetworkmanagerNetworkManagerConnectionAttrs {
@@ -61,11 +50,6 @@ export const NetworkmanagerNetworkManagerConnection: ResourceBinding<Networkmana
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerNetworkManagerConnection_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerNetworkManagerConnection_SystemDataFields,
     },
   },
 };

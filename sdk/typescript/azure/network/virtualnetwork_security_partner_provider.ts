@@ -33,8 +33,6 @@ const VirtualnetworkSecurityPartnerProvider_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkSecurityPartnerProviderConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the Security Partner Provider. */
   properties?: VirtualnetworkSecurityPartnerProvider_Properties | Computed<VirtualnetworkSecurityPartnerProvider_Properties>;
 }
@@ -49,7 +47,6 @@ export interface VirtualnetworkSecurityPartnerProviderAttrs {
 export const VirtualnetworkSecurityPartnerProvider: ResourceBinding<VirtualnetworkSecurityPartnerProviderConfig, VirtualnetworkSecurityPartnerProviderAttrs> = {
   wireType: "azure_network_virtualnetwork_security_partner_provider",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -17,7 +17,7 @@ type OpenapiComponentContainerConfig struct {
 
 type OpenapiComponentContainerAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	RegistryName any
 	// The ComponentContainer items on this page
 	Value any

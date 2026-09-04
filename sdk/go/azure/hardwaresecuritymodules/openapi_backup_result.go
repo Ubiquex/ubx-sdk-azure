@@ -20,6 +20,5 @@ type OpenapiBackupResultAttrs struct {
 
 var OpenapiBackupResult = ubx.ResourceBinding{
 	WireType: "azure_hardwaresecuritymodules_openapi_backup_result",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,31 +4,31 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBackupItem_Value_Properties_Databases struct {
-	ConnectionString any
+	ConnectionString     any
 	ConnectionStringName any
-	DatabaseType any
-	Name any
+	DatabaseType         any
+	Name                 any
 }
 
 type OpenapiBackupItem_Value_Properties struct {
-	BlobName any
-	CorrelationId any
-	Created any
-	Databases any
-	FinishedTimeStamp any
-	Id any
+	BlobName             any
+	CorrelationId        any
+	Created              any
+	Databases            any
+	FinishedTimeStamp    any
+	Id                   any
 	LastRestoreTimeStamp any
-	Log any
-	Name any
-	Scheduled any
-	SizeInBytes any
-	Status any
-	StorageAccountUrl any
-	WebsiteSizeInBytes any
+	Log                  any
+	Name                 any
+	Scheduled            any
+	SizeInBytes          any
+	Status               any
+	StorageAccountUrl    any
+	WebsiteSizeInBytes   any
 }
 
 type OpenapiBackupItem_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

@@ -5,11 +5,17 @@ export interface PrivatelinksPrivateLinkAssociation_Properties {
   /** The rmpl Resource ID. */
   privateLink?: string | Computed<string>;
   publicNetworkAccess?: string | Computed<string>;
+  /** The scope of the private link association. */
+  scope?: string | Computed<string>;
+  /** The TenantID. */
+  tenantId?: string | Computed<string>;
 }
 
 const PrivatelinksPrivateLinkAssociation_PropertiesFields: FieldMap = {
   privateLink: "private_link",
   publicNetworkAccess: "public_network_access",
+  scope: "scope",
+  tenantId: "tenant_id",
 };
 
 export interface PrivatelinksPrivateLinkAssociationConfig {

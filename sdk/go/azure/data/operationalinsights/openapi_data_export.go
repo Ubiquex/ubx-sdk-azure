@@ -8,18 +8,18 @@ type OpenapiDataExport_Value_Properties_Destination_MetaData struct {
 }
 
 type OpenapiDataExport_Value_Properties_Destination struct {
-	MetaData any
+	MetaData   any
 	ResourceId any
-	Type any
+	Type       any
 }
 
 type OpenapiDataExport_Value_Properties struct {
-	CreatedDate any
-	DataExportId any
-	Destination any
-	Enable any
+	CreatedDate      any
+	DataExportId     any
+	Destination      any
+	Enable           any
 	LastModifiedDate any
-	TableNames any
+	TableNames       any
 }
 
 type OpenapiDataExport_Value struct {
@@ -34,7 +34,7 @@ type OpenapiDataExportAttrs struct {
 	// The URL to get the next set of results.
 	NextLink any
 	// List of data export instances within a workspace..
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

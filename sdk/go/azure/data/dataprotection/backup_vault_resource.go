@@ -4,14 +4,14 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupVaultResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type BackupVaultResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -24,7 +24,7 @@ type BackupVaultResource_Value_Properties_FeatureSettings_CrossRegionRestoreSett
 }
 
 type BackupVaultResource_Value_Properties_FeatureSettings struct {
-	CrossRegionRestoreSettings any
+	CrossRegionRestoreSettings       any
 	CrossSubscriptionRestoreSettings any
 }
 
@@ -37,15 +37,15 @@ type BackupVaultResource_Value_Properties_MonitoringSettings struct {
 }
 
 type BackupVaultResource_Value_Properties_ResourceMoveDetails struct {
-	CompletionTimeUtc any
-	OperationId any
+	CompletionTimeUtc  any
+	OperationId        any
 	SourceResourcePath any
-	StartTimeUtc any
+	StartTimeUtc       any
 	TargetResourcePath any
 }
 
 type BackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings_KekIdentity struct {
-	IdentityId any
+	IdentityId   any
 	IdentityType any
 }
 
@@ -55,46 +55,46 @@ type BackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings_Ke
 
 type BackupVaultResource_Value_Properties_SecuritySettings_EncryptionSettings struct {
 	InfrastructureEncryption any
-	KekIdentity any
-	KeyVaultProperties any
-	State any
+	KekIdentity              any
+	KeyVaultProperties       any
+	State                    any
 }
 
 type BackupVaultResource_Value_Properties_SecuritySettings_SoftDeleteSettings struct {
 	RetentionDurationInDays any
-	State any
+	State                   any
 }
 
 type BackupVaultResource_Value_Properties_SecuritySettings struct {
-	EncryptionSettings any
+	EncryptionSettings   any
 	ImmutabilitySettings any
-	SoftDeleteSettings any
+	SoftDeleteSettings   any
 }
 
 type BackupVaultResource_Value_Properties_StorageSettings struct {
 	DatastoreType any
-	Type any
+	Type          any
 }
 
 type BackupVaultResource_Value_Properties struct {
-	BcdrSecurityLevel any
-	CostManagementSettings any
-	FeatureSettings any
+	BcdrSecurityLevel               any
+	CostManagementSettings          any
+	FeatureSettings                 any
 	IsVaultProtectedByResourceGuard any
-	MonitoringSettings any
-	ProvisioningState any
-	ReplicatedRegions any
-	ResourceGuardOperationRequests any
-	ResourceMoveDetails any
-	ResourceMoveState any
-	SecureScore any
-	SecuritySettings any
-	StorageSettings any
+	MonitoringSettings              any
+	ProvisioningState               any
+	ReplicatedRegions               any
+	ResourceGuardOperationRequests  any
+	ResourceMoveDetails             any
+	ResourceMoveState               any
+	SecureScore                     any
+	SecuritySettings                any
+	StorageSettings                 any
 }
 
 type BackupVaultResource_Value struct {
-	ETag any
-	Identity any
+	ETag       any
+	Identity   any
 	Properties any
 }
 
@@ -108,6 +108,5 @@ type BackupVaultResourceAttrs struct {
 
 var BackupVaultResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_backup_vault_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

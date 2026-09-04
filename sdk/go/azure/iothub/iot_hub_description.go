@@ -4,7 +4,7 @@ package iothub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IotHubDescription_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -14,14 +14,14 @@ type IotHubDescription_Identity struct {
 	// Tenant Id
 	TenantId any
 	// The type of identity used for the resource. The type 'SystemAssigned, UserAssigned' includes both an implicitly created identity and a set of user assigned identities. The type 'None' will remove any identities from the service.
-	Type any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type IotHubDescription_Properties_AuthorizationPolicies struct {
-	KeyName any
-	PrimaryKey any
-	Rights any
+	KeyName      any
+	PrimaryKey   any
+	Rights       any
 	SecondaryKey any
 }
 
@@ -44,22 +44,22 @@ type IotHubDescription_Properties_CloudToDevice struct {
 }
 
 type IotHubDescription_Properties_EventHubEndpoints struct {
-	Endpoint any
-	PartitionCount any
-	PartitionIds any
-	Path any
+	Endpoint            any
+	PartitionCount      any
+	PartitionIds        any
+	Path                any
 	RetentionTimeInDays any
 }
 
 type IotHubDescription_Properties_IpFilterRules struct {
-	Action any
+	Action     any
 	FilterName any
-	IpMask any
+	IpMask     any
 }
 
 type IotHubDescription_Properties_Locations struct {
 	Location any
-	Role any
+	Role     any
 }
 
 type IotHubDescription_Properties_NetworkRuleSets struct {
@@ -77,20 +77,20 @@ type IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateE
 
 type IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type IotHubDescription_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
 }
 
 type IotHubDescription_Properties_PrivateEndpointConnections struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identity struct {
@@ -98,47 +98,47 @@ type IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_Identi
 }
 
 type IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers struct {
-	AuthenticationType any
-	ContainerName any
-	DatabaseName any
-	EndpointUri any
-	Id any
-	Identity any
-	Name any
-	PartitionKeyName any
+	AuthenticationType   any
+	ContainerName        any
+	DatabaseName         any
+	EndpointUri          any
+	Id                   any
+	Identity             any
+	Name                 any
+	PartitionKeyName     any
 	PartitionKeyTemplate any
-	PrimaryKey any
-	ResourceGroup any
-	SecondaryKey any
-	SubscriptionId any
+	PrimaryKey           any
+	ResourceGroup        any
+	SecondaryKey         any
+	SubscriptionId       any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints_EventHubs struct {
 	AuthenticationType any
-	ConnectionString any
-	EndpointUri any
-	EntityPath any
-	Id any
-	Identity any
-	Name any
-	ResourceGroup any
-	SubscriptionId any
+	ConnectionString   any
+	EndpointUri        any
+	EntityPath         any
+	Id                 any
+	Identity           any
+	Name               any
+	ResourceGroup      any
+	SubscriptionId     any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints_StorageContainers struct {
-	AuthenticationType any
+	AuthenticationType      any
 	BatchFrequencyInSeconds any
-	ConnectionString any
-	ContainerName any
-	Encoding any
-	EndpointUri any
-	FileNameFormat any
-	Id any
-	Identity any
-	MaxChunkSizeInBytes any
-	Name any
-	ResourceGroup any
-	SubscriptionId any
+	ConnectionString        any
+	ContainerName           any
+	Encoding                any
+	EndpointUri             any
+	FileNameFormat          any
+	Id                      any
+	Identity                any
+	MaxChunkSizeInBytes     any
+	Name                    any
+	ResourceGroup           any
+	SubscriptionId          any
 }
 
 type IotHubDescription_Properties_Routing_Endpoints struct {
@@ -156,8 +156,8 @@ type IotHubDescription_Properties_Routing_Endpoints struct {
 
 type IotHubDescription_Properties_Routing_Enrichments struct {
 	EndpointNames any
-	Key any
-	Value any
+	Key           any
+	Value         any
 }
 
 type IotHubDescription_Properties_Routing_FallbackRoute struct {
@@ -186,10 +186,10 @@ type IotHubDescription_Properties_Routing struct {
 
 type IotHubDescription_Properties_StorageEndpoints struct {
 	AuthenticationType any
-	ConnectionString any
-	ContainerName any
-	Identity any
-	SasTtlAsIso8601 any
+	ConnectionString   any
+	ContainerName      any
+	Identity           any
+	SasTtlAsIso8601    any
 }
 
 type IotHubDescription_Properties struct {
@@ -268,341 +268,330 @@ type IotHubDescription_SystemData struct {
 }
 
 var IotHubDescription_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var IotHubDescription_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: IotHubDescription_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   IotHubDescription_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var IotHubDescription_Properties_AuthorizationPoliciesFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"PrimaryKey": ubx.FieldSpec{WireName: "primary_key"},
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-		"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
-	}
+	"KeyName":      ubx.FieldSpec{WireName: "key_name"},
+	"PrimaryKey":   ubx.FieldSpec{WireName: "primary_key"},
+	"Rights":       ubx.FieldSpec{WireName: "rights"},
+	"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
+}
 
 var IotHubDescription_Properties_CloudToDevice_FeedbackFields = ubx.FieldMap{
-		"LockDurationAsIso8601": ubx.FieldSpec{WireName: "lock_duration_as_iso8601"},
-		"MaxDeliveryCount": ubx.FieldSpec{WireName: "max_delivery_count"},
-		"TtlAsIso8601": ubx.FieldSpec{WireName: "ttl_as_iso8601"},
-	}
+	"LockDurationAsIso8601": ubx.FieldSpec{WireName: "lock_duration_as_iso8601"},
+	"MaxDeliveryCount":      ubx.FieldSpec{WireName: "max_delivery_count"},
+	"TtlAsIso8601":          ubx.FieldSpec{WireName: "ttl_as_iso8601"},
+}
 
 var IotHubDescription_Properties_CloudToDeviceFields = ubx.FieldMap{
-		"DefaultTtlAsIso8601": ubx.FieldSpec{WireName: "default_ttl_as_iso8601"},
-		"Feedback": ubx.FieldSpec{
-			WireName: "feedback",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_CloudToDevice_FeedbackFields,
-		},
-		"MaxDeliveryCount": ubx.FieldSpec{WireName: "max_delivery_count"},
-	}
+	"DefaultTtlAsIso8601": ubx.FieldSpec{WireName: "default_ttl_as_iso8601"},
+	"Feedback": ubx.FieldSpec{
+		WireName: "feedback",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_CloudToDevice_FeedbackFields,
+	},
+	"MaxDeliveryCount": ubx.FieldSpec{WireName: "max_delivery_count"},
+}
 
 var IotHubDescription_Properties_EventHubEndpointsFields = ubx.FieldMap{
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"PartitionCount": ubx.FieldSpec{WireName: "partition_count"},
-		"PartitionIds": ubx.FieldSpec{WireName: "partition_ids"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"RetentionTimeInDays": ubx.FieldSpec{WireName: "retention_time_in_days"},
-	}
+	"Endpoint":            ubx.FieldSpec{WireName: "endpoint"},
+	"PartitionCount":      ubx.FieldSpec{WireName: "partition_count"},
+	"PartitionIds":        ubx.FieldSpec{WireName: "partition_ids"},
+	"Path":                ubx.FieldSpec{WireName: "path"},
+	"RetentionTimeInDays": ubx.FieldSpec{WireName: "retention_time_in_days"},
+}
 
 var IotHubDescription_Properties_IpFilterRulesFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"FilterName": ubx.FieldSpec{WireName: "filter_name"},
-		"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
-	}
+	"Action":     ubx.FieldSpec{WireName: "action"},
+	"FilterName": ubx.FieldSpec{WireName: "filter_name"},
+	"IpMask":     ubx.FieldSpec{WireName: "ip_mask"},
+}
 
 var IotHubDescription_Properties_LocationsFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Role": ubx.FieldSpec{WireName: "role"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Role":     ubx.FieldSpec{WireName: "role"},
+}
 
 var IotHubDescription_Properties_NetworkRuleSetsFields = ubx.FieldMap{
-		"ApplyToBuiltInEventHubEndpoint": ubx.FieldSpec{WireName: "apply_to_built_in_event_hub_endpoint"},
-		"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_IpFilterRulesFields,
-		},
-	}
+	"ApplyToBuiltInEventHubEndpoint": ubx.FieldSpec{WireName: "apply_to_built_in_event_hub_endpoint"},
+	"DefaultAction":                  ubx.FieldSpec{WireName: "default_action"},
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_IpFilterRulesFields,
+	},
+}
 
 var IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var IotHubDescription_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+}
 
 var IotHubDescription_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields = ubx.FieldMap{
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainersFields = ubx.FieldMap{
-		"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"EndpointUri": ubx.FieldSpec{WireName: "endpoint_uri"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PartitionKeyName": ubx.FieldSpec{WireName: "partition_key_name"},
-		"PartitionKeyTemplate": ubx.FieldSpec{WireName: "partition_key_template"},
-		"PrimaryKey": ubx.FieldSpec{WireName: "primary_key"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-	}
+	"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
+	"ContainerName":      ubx.FieldSpec{WireName: "container_name"},
+	"DatabaseName":       ubx.FieldSpec{WireName: "database_name"},
+	"EndpointUri":        ubx.FieldSpec{WireName: "endpoint_uri"},
+	"Id":                 ubx.FieldSpec{WireName: "id"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields,
+	},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+	"PartitionKeyName":     ubx.FieldSpec{WireName: "partition_key_name"},
+	"PartitionKeyTemplate": ubx.FieldSpec{WireName: "partition_key_template"},
+	"PrimaryKey":           ubx.FieldSpec{WireName: "primary_key"},
+	"ResourceGroup":        ubx.FieldSpec{WireName: "resource_group"},
+	"SecondaryKey":         ubx.FieldSpec{WireName: "secondary_key"},
+	"SubscriptionId":       ubx.FieldSpec{WireName: "subscription_id"},
+}
 
 var IotHubDescription_Properties_Routing_Endpoints_EventHubsFields = ubx.FieldMap{
-		"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"EndpointUri": ubx.FieldSpec{WireName: "endpoint_uri"},
-		"EntityPath": ubx.FieldSpec{WireName: "entity_path"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-	}
+	"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
+	"ConnectionString":   ubx.FieldSpec{WireName: "connection_string"},
+	"EndpointUri":        ubx.FieldSpec{WireName: "endpoint_uri"},
+	"EntityPath":         ubx.FieldSpec{WireName: "entity_path"},
+	"Id":                 ubx.FieldSpec{WireName: "id"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields,
+	},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+	"ResourceGroup":  ubx.FieldSpec{WireName: "resource_group"},
+	"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+}
 
 var IotHubDescription_Properties_Routing_Endpoints_StorageContainersFields = ubx.FieldMap{
-		"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
-		"BatchFrequencyInSeconds": ubx.FieldSpec{WireName: "batch_frequency_in_seconds"},
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"Encoding": ubx.FieldSpec{WireName: "encoding"},
-		"EndpointUri": ubx.FieldSpec{WireName: "endpoint_uri"},
-		"FileNameFormat": ubx.FieldSpec{WireName: "file_name_format"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields,
-		},
-		"MaxChunkSizeInBytes": ubx.FieldSpec{WireName: "max_chunk_size_in_bytes"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-	}
+	"AuthenticationType":      ubx.FieldSpec{WireName: "authentication_type"},
+	"BatchFrequencyInSeconds": ubx.FieldSpec{WireName: "batch_frequency_in_seconds"},
+	"ConnectionString":        ubx.FieldSpec{WireName: "connection_string"},
+	"ContainerName":           ubx.FieldSpec{WireName: "container_name"},
+	"Encoding":                ubx.FieldSpec{WireName: "encoding"},
+	"EndpointUri":             ubx.FieldSpec{WireName: "endpoint_uri"},
+	"FileNameFormat":          ubx.FieldSpec{WireName: "file_name_format"},
+	"Id":                      ubx.FieldSpec{WireName: "id"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields,
+	},
+	"MaxChunkSizeInBytes": ubx.FieldSpec{WireName: "max_chunk_size_in_bytes"},
+	"Name":                ubx.FieldSpec{WireName: "name"},
+	"ResourceGroup":       ubx.FieldSpec{WireName: "resource_group"},
+	"SubscriptionId":      ubx.FieldSpec{WireName: "subscription_id"},
+}
 
 var IotHubDescription_Properties_Routing_EndpointsFields = ubx.FieldMap{
-		"CosmosDbsqlContainers": ubx.FieldSpec{
-			WireName: "cosmos_dbsql_containers",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainersFields,
-		},
-		"EventHubs": ubx.FieldSpec{
-			WireName: "event_hubs",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_EventHubsFields,
-		},
-		"ServiceBusQueues": ubx.FieldSpec{
-			WireName: "service_bus_queues",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_EventHubsFields,
-		},
-		"ServiceBusTopics": ubx.FieldSpec{
-			WireName: "service_bus_topics",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_EventHubsFields,
-		},
-		"StorageContainers": ubx.FieldSpec{
-			WireName: "storage_containers",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_StorageContainersFields,
-		},
-	}
+	"CosmosDbsqlContainers": ubx.FieldSpec{
+		WireName: "cosmos_dbsql_containers",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainersFields,
+	},
+	"EventHubs": ubx.FieldSpec{
+		WireName: "event_hubs",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_EventHubsFields,
+	},
+	"ServiceBusQueues": ubx.FieldSpec{
+		WireName: "service_bus_queues",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_EventHubsFields,
+	},
+	"ServiceBusTopics": ubx.FieldSpec{
+		WireName: "service_bus_topics",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_EventHubsFields,
+	},
+	"StorageContainers": ubx.FieldSpec{
+		WireName: "storage_containers",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_StorageContainersFields,
+	},
+}
 
 var IotHubDescription_Properties_Routing_EnrichmentsFields = ubx.FieldMap{
-		"EndpointNames": ubx.FieldSpec{WireName: "endpoint_names"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"EndpointNames": ubx.FieldSpec{WireName: "endpoint_names"},
+	"Key":           ubx.FieldSpec{WireName: "key"},
+	"Value":         ubx.FieldSpec{WireName: "value"},
+}
 
 var IotHubDescription_Properties_Routing_FallbackRouteFields = ubx.FieldMap{
-		"Condition": ubx.FieldSpec{WireName: "condition"},
-		"EndpointNames": ubx.FieldSpec{WireName: "endpoint_names"},
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"Condition":     ubx.FieldSpec{WireName: "condition"},
+	"EndpointNames": ubx.FieldSpec{WireName: "endpoint_names"},
+	"IsEnabled":     ubx.FieldSpec{WireName: "is_enabled"},
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"Source":        ubx.FieldSpec{WireName: "source"},
+}
 
 var IotHubDescription_Properties_RoutingFields = ubx.FieldMap{
-		"Endpoints": ubx.FieldSpec{
-			WireName: "endpoints",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_Routing_EndpointsFields,
-		},
-		"Enrichments": ubx.FieldSpec{
-			WireName: "enrichments",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_Routing_EnrichmentsFields,
-		},
-		"FallbackRoute": ubx.FieldSpec{
-			WireName: "fallback_route",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_Routing_FallbackRouteFields,
-		},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_Routing_FallbackRouteFields,
-		},
-	}
+	"Endpoints": ubx.FieldSpec{
+		WireName: "endpoints",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_Routing_EndpointsFields,
+	},
+	"Enrichments": ubx.FieldSpec{
+		WireName: "enrichments",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_Routing_EnrichmentsFields,
+	},
+	"FallbackRoute": ubx.FieldSpec{
+		WireName: "fallback_route",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_Routing_FallbackRouteFields,
+	},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_Routing_FallbackRouteFields,
+	},
+}
 
 var IotHubDescription_Properties_StorageEndpointsFields = ubx.FieldMap{
-		"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields,
-		},
-		"SasTtlAsIso8601": ubx.FieldSpec{WireName: "sas_ttl_as_iso8601"},
-	}
+	"AuthenticationType": ubx.FieldSpec{WireName: "authentication_type"},
+	"ConnectionString":   ubx.FieldSpec{WireName: "connection_string"},
+	"ContainerName":      ubx.FieldSpec{WireName: "container_name"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_Routing_Endpoints_CosmosDbsqlContainers_IdentityFields,
+	},
+	"SasTtlAsIso8601": ubx.FieldSpec{WireName: "sas_ttl_as_iso8601"},
+}
 
 var IotHubDescription_PropertiesFields = ubx.FieldMap{
-		"AllowedFqdnList": ubx.FieldSpec{WireName: "allowed_fqdn_list"},
-		"AuthorizationPolicies": ubx.FieldSpec{
-			WireName: "authorization_policies",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_AuthorizationPoliciesFields,
-		},
-		"CloudToDevice": ubx.FieldSpec{
-			WireName: "cloud_to_device",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_CloudToDeviceFields,
-		},
-		"Comments": ubx.FieldSpec{WireName: "comments"},
-		"DisableDeviceSas": ubx.FieldSpec{WireName: "disable_device_sas"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"DisableModuleSas": ubx.FieldSpec{WireName: "disable_module_sas"},
-		"EnableDataResidency": ubx.FieldSpec{WireName: "enable_data_residency"},
-		"EnableFileUploadNotifications": ubx.FieldSpec{WireName: "enable_file_upload_notifications"},
-		"EventHubEndpoints": ubx.FieldSpec{
-			WireName: "event_hub_endpoints",
-			Kind: "map",
-			Fields: IotHubDescription_Properties_EventHubEndpointsFields,
-		},
-		"Features": ubx.FieldSpec{WireName: "features"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"IpFilterRules": ubx.FieldSpec{
-			WireName: "ip_filter_rules",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_IpFilterRulesFields,
-		},
-		"Locations": ubx.FieldSpec{
-			WireName: "locations",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_LocationsFields,
-		},
-		"MessagingEndpoints": ubx.FieldSpec{
-			WireName: "messaging_endpoints",
-			Kind: "map",
-			Fields: IotHubDescription_Properties_CloudToDevice_FeedbackFields,
-		},
-		"MinTlsVersion": ubx.FieldSpec{WireName: "min_tls_version"},
-		"NetworkRuleSets": ubx.FieldSpec{
-			WireName: "network_rule_sets",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_NetworkRuleSetsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: IotHubDescription_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"RestrictOutboundNetworkAccess": ubx.FieldSpec{WireName: "restrict_outbound_network_access"},
-		"Routing": ubx.FieldSpec{
-			WireName: "routing",
-			Kind: "object",
-			Fields: IotHubDescription_Properties_RoutingFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageEndpoints": ubx.FieldSpec{
-			WireName: "storage_endpoints",
-			Kind: "map",
-			Fields: IotHubDescription_Properties_StorageEndpointsFields,
-		},
-	}
+	"AllowedFqdnList": ubx.FieldSpec{WireName: "allowed_fqdn_list"},
+	"AuthorizationPolicies": ubx.FieldSpec{
+		WireName: "authorization_policies",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_AuthorizationPoliciesFields,
+	},
+	"CloudToDevice": ubx.FieldSpec{
+		WireName: "cloud_to_device",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_CloudToDeviceFields,
+	},
+	"Comments":                      ubx.FieldSpec{WireName: "comments"},
+	"DisableDeviceSas":              ubx.FieldSpec{WireName: "disable_device_sas"},
+	"DisableLocalAuth":              ubx.FieldSpec{WireName: "disable_local_auth"},
+	"DisableModuleSas":              ubx.FieldSpec{WireName: "disable_module_sas"},
+	"EnableDataResidency":           ubx.FieldSpec{WireName: "enable_data_residency"},
+	"EnableFileUploadNotifications": ubx.FieldSpec{WireName: "enable_file_upload_notifications"},
+	"EventHubEndpoints": ubx.FieldSpec{
+		WireName: "event_hub_endpoints",
+		Kind:     "map",
+		Fields:   IotHubDescription_Properties_EventHubEndpointsFields,
+	},
+	"Features": ubx.FieldSpec{WireName: "features"},
+	"HostName": ubx.FieldSpec{WireName: "host_name"},
+	"IpFilterRules": ubx.FieldSpec{
+		WireName: "ip_filter_rules",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_IpFilterRulesFields,
+	},
+	"Locations": ubx.FieldSpec{
+		WireName: "locations",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_LocationsFields,
+	},
+	"MessagingEndpoints": ubx.FieldSpec{
+		WireName: "messaging_endpoints",
+		Kind:     "map",
+		Fields:   IotHubDescription_Properties_CloudToDevice_FeedbackFields,
+	},
+	"MinTlsVersion": ubx.FieldSpec{WireName: "min_tls_version"},
+	"NetworkRuleSets": ubx.FieldSpec{
+		WireName: "network_rule_sets",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_NetworkRuleSetsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   IotHubDescription_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":             ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess":           ubx.FieldSpec{WireName: "public_network_access"},
+	"RestrictOutboundNetworkAccess": ubx.FieldSpec{WireName: "restrict_outbound_network_access"},
+	"Routing": ubx.FieldSpec{
+		WireName: "routing",
+		Kind:     "object",
+		Fields:   IotHubDescription_Properties_RoutingFields,
+	},
+	"State": ubx.FieldSpec{WireName: "state"},
+	"StorageEndpoints": ubx.FieldSpec{
+		WireName: "storage_endpoints",
+		Kind:     "map",
+		Fields:   IotHubDescription_Properties_StorageEndpointsFields,
+	},
+}
 
 var IotHubDescription_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
-
-var IotHubDescription_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type IotHubDescriptionConfig struct {
 	// The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
-	Etag any
+	Etag     any
 	Identity any
 	// The properties of an IoT hub.
 	Properties any
 	// Information about the SKU of the IoT hub.
 	Sku any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type IotHubDescriptionAttrs struct {
 	// The Etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal ETag convention.
-	Etag any
+	Etag     any
 	Identity any
 	// The properties of an IoT hub.
 	Properties any
@@ -618,23 +607,18 @@ var IotHubDescription = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: IotHubDescription_IdentityFields,
+			Kind:     "object",
+			Fields:   IotHubDescription_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IotHubDescription_PropertiesFields,
+			Kind:     "object",
+			Fields:   IotHubDescription_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: IotHubDescription_SkuFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: IotHubDescription_SystemDataFields,
+			Kind:     "object",
+			Fields:   IotHubDescription_SkuFields,
 		},
 	},
 }

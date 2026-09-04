@@ -9,17 +9,14 @@ import ubx_sdk as ubx
 @dataclasses.dataclass
 class TypeConfig:
     publisher_name: Any = None
-    type: Any = None
 
 @dataclasses.dataclass
 class TypeAttrs:
     publisher_name: Any = None
-    type: Any = None
 
 Type = ubx.DataSourceBinding(
     wire_type="azure_type",
     fields={
         "publisher_name": ubx.FieldSpec(wire_name="publisher_name"),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

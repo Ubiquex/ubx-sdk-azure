@@ -4,20 +4,20 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CapacityPool_Value_Properties struct {
-	CoolAccess any
-	CustomThroughputMibps any
-	EncryptionType any
-	PoolId any
-	ProvisioningState any
-	QosType any
-	ServiceLevel any
-	Size any
-	TotalThroughputMibps any
+	CoolAccess              any
+	CustomThroughputMibps   any
+	EncryptionType          any
+	PoolId                  any
+	ProvisioningState       any
+	QosType                 any
+	ServiceLevel            any
+	Size                    any
+	TotalThroughputMibps    any
 	UtilizedThroughputMibps any
 }
 
 type CapacityPool_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

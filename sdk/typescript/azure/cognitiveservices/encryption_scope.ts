@@ -14,8 +14,6 @@ const EncryptionScope_PropertiesFields: FieldMap = {
 };
 
 export interface EncryptionScopeConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** Properties to EncryptionScope */
   properties?: EncryptionScope_Properties | Computed<EncryptionScope_Properties>;
   /** Resource tags. */
@@ -34,7 +32,6 @@ export interface EncryptionScopeAttrs {
 export const EncryptionScope: ResourceBinding<EncryptionScopeConfig, EncryptionScopeAttrs> = {
   wireType: "azure_cognitiveservices_encryption_scope",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

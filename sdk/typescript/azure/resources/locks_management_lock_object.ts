@@ -43,26 +43,9 @@ const LocksManagementLockObject_PropertiesFields: FieldMap = {
   },
 };
 
-const LocksManagementLockObject_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface LocksManagementLockObjectConfig {
-  /** The resource ID of the lock. */
-  id?: string | Computed<string>;
-  /** The name of the lock. */
-  name?: string | Computed<string>;
   /** The lock properties. */
   properties: LocksManagementLockObject_Properties | Computed<LocksManagementLockObject_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: LocksManagementLockObject_SystemData | Computed<LocksManagementLockObject_SystemData>;
-  /** The resource type of the lock - Microsoft.Authorization/locks. */
-  type?: string | Computed<string>;
 }
 
 export interface LocksManagementLockObjectAttrs {
@@ -81,18 +64,10 @@ export interface LocksManagementLockObjectAttrs {
 export const LocksManagementLockObject: ResourceBinding<LocksManagementLockObjectConfig, LocksManagementLockObjectAttrs> = {
   wireType: "azure_resources_locks_management_lock_object",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: LocksManagementLockObject_PropertiesFields,
     },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: LocksManagementLockObject_SystemDataFields,
-    },
-    type: "type",
   },
 };

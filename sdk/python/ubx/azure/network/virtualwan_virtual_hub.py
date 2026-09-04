@@ -221,10 +221,6 @@ _VirtualwanVirtualHub_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanVirtualHubConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
-    # Kind of service virtual hub. This is metadata used for the Azure portal experience for Route Server.
-    kind: Any = None
     # Parameters for VirtualHub.
     properties: Any = None
 
@@ -240,8 +236,6 @@ class VirtualwanVirtualHubAttrs:
 VirtualwanVirtualHub = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_virtual_hub",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

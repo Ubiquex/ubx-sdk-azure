@@ -33,31 +33,31 @@ type ConfigurationAssignment_Properties struct {
 }
 
 var ConfigurationAssignment_Properties_Filter_TagSettingsFields = ubx.FieldMap{
-		"FilterOperator": ubx.FieldSpec{WireName: "filter_operator"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"FilterOperator": ubx.FieldSpec{WireName: "filter_operator"},
+	"Tags":           ubx.FieldSpec{WireName: "tags"},
+}
 
 var ConfigurationAssignment_Properties_FilterFields = ubx.FieldMap{
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"OsTypes": ubx.FieldSpec{WireName: "os_types"},
-		"ResourceGroups": ubx.FieldSpec{WireName: "resource_groups"},
-		"ResourceTypes": ubx.FieldSpec{WireName: "resource_types"},
-		"TagSettings": ubx.FieldSpec{
-			WireName: "tag_settings",
-			Kind: "object",
-			Fields: ConfigurationAssignment_Properties_Filter_TagSettingsFields,
-		},
-	}
+	"Locations":      ubx.FieldSpec{WireName: "locations"},
+	"OsTypes":        ubx.FieldSpec{WireName: "os_types"},
+	"ResourceGroups": ubx.FieldSpec{WireName: "resource_groups"},
+	"ResourceTypes":  ubx.FieldSpec{WireName: "resource_types"},
+	"TagSettings": ubx.FieldSpec{
+		WireName: "tag_settings",
+		Kind:     "object",
+		Fields:   ConfigurationAssignment_Properties_Filter_TagSettingsFields,
+	},
+}
 
 var ConfigurationAssignment_PropertiesFields = ubx.FieldMap{
-		"Filter": ubx.FieldSpec{
-			WireName: "filter",
-			Kind: "object",
-			Fields: ConfigurationAssignment_Properties_FilterFields,
-		},
-		"MaintenanceConfigurationId": ubx.FieldSpec{WireName: "maintenance_configuration_id"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"Filter": ubx.FieldSpec{
+		WireName: "filter",
+		Kind:     "object",
+		Fields:   ConfigurationAssignment_Properties_FilterFields,
+	},
+	"MaintenanceConfigurationId": ubx.FieldSpec{WireName: "maintenance_configuration_id"},
+	"ResourceId":                 ubx.FieldSpec{WireName: "resource_id"},
+}
 
 type ConfigurationAssignmentConfig struct {
 	// Location of the resource
@@ -79,8 +79,8 @@ var ConfigurationAssignment = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ConfigurationAssignment_PropertiesFields,
+			Kind:     "object",
+			Fields:   ConfigurationAssignment_PropertiesFields,
 		},
 	},
 }

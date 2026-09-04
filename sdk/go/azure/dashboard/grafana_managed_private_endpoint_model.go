@@ -23,30 +23,30 @@ type GrafanaManagedPrivateEndpointModel_Properties struct {
 	PrivateLinkServicePrivateIp any
 	// The URL of the data store behind the private link service. It would be the URL in the Grafana data source configuration page without the protocol and port.
 	PrivateLinkServiceUrl any
-	ProvisioningState any
+	ProvisioningState     any
 	// User input request message of the managed private endpoint.
 	RequestMessage any
 }
 
 var GrafanaManagedPrivateEndpointModel_Properties_ConnectionStateFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var GrafanaManagedPrivateEndpointModel_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{
-			WireName: "connection_state",
-			Kind: "object",
-			Fields: GrafanaManagedPrivateEndpointModel_Properties_ConnectionStateFields,
-		},
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"PrivateLinkResourceRegion": ubx.FieldSpec{WireName: "private_link_resource_region"},
-		"PrivateLinkServicePrivateIp": ubx.FieldSpec{WireName: "private_link_service_private_ip"},
-		"PrivateLinkServiceUrl": ubx.FieldSpec{WireName: "private_link_service_url"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-	}
+	"ConnectionState": ubx.FieldSpec{
+		WireName: "connection_state",
+		Kind:     "object",
+		Fields:   GrafanaManagedPrivateEndpointModel_Properties_ConnectionStateFields,
+	},
+	"GroupIds":                    ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateLinkResourceId":       ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"PrivateLinkResourceRegion":   ubx.FieldSpec{WireName: "private_link_resource_region"},
+	"PrivateLinkServicePrivateIp": ubx.FieldSpec{WireName: "private_link_service_private_ip"},
+	"PrivateLinkServiceUrl":       ubx.FieldSpec{WireName: "private_link_service_url"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestMessage":              ubx.FieldSpec{WireName: "request_message"},
+}
 
 type GrafanaManagedPrivateEndpointModelConfig struct {
 	// Properties specific to the managed private endpoint.
@@ -63,8 +63,8 @@ var GrafanaManagedPrivateEndpointModel = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GrafanaManagedPrivateEndpointModel_PropertiesFields,
+			Kind:     "object",
+			Fields:   GrafanaManagedPrivateEndpointModel_PropertiesFields,
 		},
 	},
 }

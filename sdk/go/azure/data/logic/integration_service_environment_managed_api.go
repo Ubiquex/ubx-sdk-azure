@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationServiceEnvironmentManagedApi_Value_Properties_DeploymentParameters_ContentLinkDefinition_ContentHash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type IntegrationServiceEnvironmentManagedApi_Value_Properties_DeploymentParameters_ContentLinkDefinition struct {
-	ContentHash any
-	ContentSize any
+	ContentHash    any
+	ContentSize    any
 	ContentVersion any
-	Metadata any
-	Uri any
+	Metadata       any
+	Uri            any
 }
 
 type IntegrationServiceEnvironmentManagedApi_Value_Properties_DeploymentParameters struct {
@@ -29,18 +29,18 @@ type IntegrationServiceEnvironmentManagedApi_Value struct {
 }
 
 type IntegrationServiceEnvironmentManagedApiConfig struct {
-	ApiVersion any
+	ApiVersion                        any
 	IntegrationServiceEnvironmentName any
-	ResourceGroup any
-	SubscriptionId any
+	ResourceGroup                     any
+	SubscriptionId                    any
 }
 
 type IntegrationServiceEnvironmentManagedApiAttrs struct {
-	ApiVersion any
+	ApiVersion                        any
 	IntegrationServiceEnvironmentName any
 	// The URL to get the next set of results.
-	NextLink any
-	ResourceGroup any
+	NextLink       any
+	ResourceGroup  any
 	SubscriptionId any
 	// The integration service environment managed APIs.
 	Value any
@@ -49,9 +49,9 @@ type IntegrationServiceEnvironmentManagedApiAttrs struct {
 var IntegrationServiceEnvironmentManagedApi = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_service_environment_managed_api",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":                        ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationServiceEnvironmentName": ubx.FieldSpec{WireName: "integration_service_environment_name"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroup":                     ubx.FieldSpec{WireName: "resource_group"},
+		"SubscriptionId":                    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -4,9 +4,9 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DeploymentstacksDeploymentStack_Value_Properties_ActionOnUnmanage struct {
-	ManagementGroups any
-	ResourceGroups any
-	Resources any
+	ManagementGroups              any
+	ResourceGroups                any
+	Resources                     any
 	ResourcesWithoutDeleteSupport any
 }
 
@@ -19,37 +19,37 @@ type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources_Extension
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources_Extension_Config_KeyVaultReference struct {
-	KeyVault any
-	SecretName any
+	KeyVault      any
+	SecretName    any
 	SecretVersion any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources_Extension_Config struct {
 	KeyVaultReference any
-	Type any
-	Value any
+	Type              any
+	Value             any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources_Extension struct {
-	Config any
+	Config   any
 	ConfigId any
-	Name any
-	Version any
+	Name     any
+	Version  any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources struct {
-	ApiVersion any
-	Extension any
-	Id any
+	ApiVersion  any
+	Extension   any
+	Id          any
 	Identifiers any
-	Type any
+	Type        any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_DenySettings struct {
 	ApplyToChildScopes any
-	ExcludedActions any
+	ExcludedActions    any
 	ExcludedPrincipals any
-	Mode any
+	Mode               any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_Error_AdditionalInfo struct {
@@ -62,23 +62,23 @@ type DeploymentstacksDeploymentStack_Value_Properties_Error_Details_Details stru
 
 type DeploymentstacksDeploymentStack_Value_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_ExternalInputDefinitions struct {
 	Config any
-	Kind any
+	Kind   any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_ExternalInputs struct {
@@ -86,71 +86,71 @@ type DeploymentstacksDeploymentStack_Value_Properties_ExternalInputs struct {
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_FailedResources struct {
-	ApiVersion any
-	Error any
-	Extension any
-	Id any
+	ApiVersion  any
+	Error       any
+	Extension   any
+	Id          any
 	Identifiers any
-	Type any
+	Type        any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_Parameters struct {
 	Expression any
-	Reference any
-	Type any
-	Value any
+	Reference  any
+	Type       any
+	Value      any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_ParametersLink struct {
 	ContentVersion any
-	Uri any
+	Uri            any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_Resources struct {
 	DenyStatus any
-	Status any
+	Status     any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties_TemplateLink struct {
 	ContentVersion any
-	Id any
-	QueryString any
-	RelativePath any
-	Uri any
+	Id             any
+	QueryString    any
+	RelativePath   any
+	Uri            any
 }
 
 type DeploymentstacksDeploymentStack_Value_Properties struct {
-	ActionOnUnmanage any
+	ActionOnUnmanage          any
 	BypassStackOutOfSyncError any
-	CorrelationId any
-	DebugSetting any
-	DeletedResources any
-	DenySettings any
-	DeploymentExtensions any
-	DeploymentId any
-	DeploymentScope any
-	Description any
-	DetachedResources any
-	Duration any
-	Error any
-	ExtensionConfigs any
-	ExternalInputDefinitions any
-	ExternalInputs any
-	FailedResources any
-	Outputs any
-	Parameters any
-	ParametersLink any
-	ProvisioningState any
-	Resources any
-	Template any
-	TemplateLink any
-	ValidationLevel any
+	CorrelationId             any
+	DebugSetting              any
+	DeletedResources          any
+	DenySettings              any
+	DeploymentExtensions      any
+	DeploymentId              any
+	DeploymentScope           any
+	Description               any
+	DetachedResources         any
+	Duration                  any
+	Error                     any
+	ExtensionConfigs          any
+	ExternalInputDefinitions  any
+	ExternalInputs            any
+	FailedResources           any
+	Outputs                   any
+	Parameters                any
+	ParametersLink            any
+	ProvisioningState         any
+	Resources                 any
+	Template                  any
+	TemplateLink              any
+	ValidationLevel           any
 }
 
 type DeploymentstacksDeploymentStack_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DeploymentstacksDeploymentStackConfig struct {

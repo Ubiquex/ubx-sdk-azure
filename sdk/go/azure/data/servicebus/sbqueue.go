@@ -4,41 +4,41 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Sbqueue_Value_Properties_CountDetails struct {
-	ActiveMessageCount any
-	DeadLetterMessageCount any
-	ScheduledMessageCount any
+	ActiveMessageCount             any
+	DeadLetterMessageCount         any
+	ScheduledMessageCount          any
 	TransferDeadLetterMessageCount any
-	TransferMessageCount any
+	TransferMessageCount           any
 }
 
 type Sbqueue_Value_Properties struct {
-	AccessedAt any
-	AutoDeleteOnIdle any
-	CountDetails any
-	CreatedAt any
-	DeadLetteringOnMessageExpiration any
-	DefaultMessageTimeToLive any
+	AccessedAt                          any
+	AutoDeleteOnIdle                    any
+	CountDetails                        any
+	CreatedAt                           any
+	DeadLetteringOnMessageExpiration    any
+	DefaultMessageTimeToLive            any
 	DuplicateDetectionHistoryTimeWindow any
-	EnableBatchedOperations any
-	EnableExpress any
-	EnablePartitioning any
-	ForwardDeadLetteredMessagesTo any
-	ForwardTo any
-	LockDuration any
-	MaxDeliveryCount any
-	MaxMessageSizeInKilobytes any
-	MaxSizeInMegabytes any
-	MessageCount any
-	RequiresDuplicateDetection any
-	RequiresSession any
-	SizeInBytes any
-	Status any
-	UpdatedAt any
-	UserMetadata any
+	EnableBatchedOperations             any
+	EnableExpress                       any
+	EnablePartitioning                  any
+	ForwardDeadLetteredMessagesTo       any
+	ForwardTo                           any
+	LockDuration                        any
+	MaxDeliveryCount                    any
+	MaxMessageSizeInKilobytes           any
+	MaxSizeInMegabytes                  any
+	MessageCount                        any
+	RequiresDuplicateDetection          any
+	RequiresSession                     any
+	SizeInBytes                         any
+	Status                              any
+	UpdatedAt                           any
+	UserMetadata                        any
 }
 
 type Sbqueue_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

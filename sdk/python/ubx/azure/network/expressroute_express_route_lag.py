@@ -192,16 +192,10 @@ _ExpressrouteExpressRouteLag_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLagConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
-    # The unique identifier of the resource.
-    id: Any = None
     # Identity for the resource.
     identity: Any = None
     # Properties specific to ExpressRouteLag resources.
     properties: Any = None
-    # The type of the resource.
-    type: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteLagAttrs:
@@ -219,8 +213,6 @@ class ExpressrouteExpressRouteLagAttrs:
 ExpressrouteExpressRouteLag = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_express_route_lag",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
-        "id": ubx.FieldSpec(wire_name="id"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",
@@ -231,6 +223,5 @@ ExpressrouteExpressRouteLag = ubx.ResourceBinding(
             kind="object",
             fields=_ExpressrouteExpressRouteLag_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

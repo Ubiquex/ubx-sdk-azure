@@ -4,7 +4,7 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiGremlinDatabaseGetResults_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -31,12 +31,18 @@ type DbOpenapiGremlinDatabaseGetResults_Properties_Options struct {
 }
 
 type DbOpenapiGremlinDatabaseGetResults_Properties_Resource_RestoreParameters struct {
-	RestoreSource any
-	RestoreTimestampInUtc any
+	RestoreSource          any
+	RestoreTimestampInUtc  any
 	RestoreWithTtlDisabled any
 }
 
 type DbOpenapiGremlinDatabaseGetResults_Properties_Resource struct {
+	// A system generated property representing the resource etag required for optimistic concurrency control.
+	Etag any
+	// A system generated property. A unique identifier.
+	Rid any
+	// A system generated property that denotes the last updated timestamp of the resource.
+	Ts any
 	// Enum to indicate the mode of resource creation.
 	CreateMode any
 	// Name of the Cosmos DB Gremlin database
@@ -53,46 +59,49 @@ type DbOpenapiGremlinDatabaseGetResults_Properties struct {
 }
 
 var DbOpenapiGremlinDatabaseGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_Properties_Resource_RestoreParametersFields = ubx.FieldMap{
-		"RestoreSource": ubx.FieldSpec{WireName: "restore_source"},
-		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
-		"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
-	}
+	"RestoreSource":          ubx.FieldSpec{WireName: "restore_source"},
+	"RestoreTimestampInUtc":  ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
+	"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"RestoreParameters": ubx.FieldSpec{
-			WireName: "restore_parameters",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Properties_Resource_RestoreParametersFields,
-		},
-	}
+	"Etag":       ubx.FieldSpec{WireName: "_etag"},
+	"Rid":        ubx.FieldSpec{WireName: "_rid"},
+	"Ts":         ubx.FieldSpec{WireName: "_ts"},
+	"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
+	"Id":         ubx.FieldSpec{WireName: "id"},
+	"RestoreParameters": ubx.FieldSpec{
+		WireName: "restore_parameters",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Properties_Resource_RestoreParametersFields,
+	},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiGremlinDatabaseGetResultsConfig struct {
 	// Properties to create and update Azure Cosmos DB Gremlin database.
@@ -115,8 +124,8 @@ var DbOpenapiGremlinDatabaseGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiGremlinDatabaseGetResults_PropertiesFields,
 		},
 	},
 }

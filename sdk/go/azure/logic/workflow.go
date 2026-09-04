@@ -4,7 +4,7 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Workflow_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -24,13 +24,13 @@ type Workflow_Properties_AccessControl_Actions_AllowedCallerIpAddresses struct {
 }
 
 type Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies struct {
 	Claims any
-	Type any
+	Type   any
 }
 
 type Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies struct {
@@ -85,9 +85,9 @@ type Workflow_Properties_IntegrationAccount struct {
 
 type Workflow_Properties_Parameters struct {
 	Description any
-	Metadata any
-	Type any
-	Value any
+	Metadata    any
+	Type        any
+	Value       any
 }
 
 type Workflow_Properties_Sku struct {
@@ -106,7 +106,7 @@ type Workflow_Properties struct {
 	ChangedTime any
 	// Gets the created time.
 	CreatedTime any
-	Definition any
+	Definition  any
 	// The endpoints configuration.
 	EndpointsConfiguration any
 	// The resource reference.
@@ -126,174 +126,174 @@ type Workflow_Properties struct {
 }
 
 var Workflow_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Workflow_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Workflow_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Workflow_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Workflow_Properties_AccessControl_Actions_AllowedCallerIpAddressesFields = ubx.FieldMap{
-		"AddressRange": ubx.FieldSpec{WireName: "address_range"},
-	}
+	"AddressRange": ubx.FieldSpec{WireName: "address_range"},
+}
 
 var Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_ClaimsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_PoliciesFields = ubx.FieldMap{
-		"Claims": ubx.FieldSpec{
-			WireName: "claims",
-			Kind: "list",
-			Fields: Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_ClaimsFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Claims": ubx.FieldSpec{
+		WireName: "claims",
+		Kind:     "list",
+		Fields:   Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_ClaimsFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var Workflow_Properties_AccessControl_Actions_OpenAuthenticationPoliciesFields = ubx.FieldMap{
-		"Policies": ubx.FieldSpec{
-			WireName: "policies",
-			Kind: "map",
-			Fields: Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_PoliciesFields,
-		},
-	}
+	"Policies": ubx.FieldSpec{
+		WireName: "policies",
+		Kind:     "map",
+		Fields:   Workflow_Properties_AccessControl_Actions_OpenAuthenticationPolicies_PoliciesFields,
+	},
+}
 
 var Workflow_Properties_AccessControl_ActionsFields = ubx.FieldMap{
-		"AllowedCallerIpAddresses": ubx.FieldSpec{
-			WireName: "allowed_caller_ip_addresses",
-			Kind: "list",
-			Fields: Workflow_Properties_AccessControl_Actions_AllowedCallerIpAddressesFields,
-		},
-		"OpenAuthenticationPolicies": ubx.FieldSpec{
-			WireName: "open_authentication_policies",
-			Kind: "object",
-			Fields: Workflow_Properties_AccessControl_Actions_OpenAuthenticationPoliciesFields,
-		},
-	}
+	"AllowedCallerIpAddresses": ubx.FieldSpec{
+		WireName: "allowed_caller_ip_addresses",
+		Kind:     "list",
+		Fields:   Workflow_Properties_AccessControl_Actions_AllowedCallerIpAddressesFields,
+	},
+	"OpenAuthenticationPolicies": ubx.FieldSpec{
+		WireName: "open_authentication_policies",
+		Kind:     "object",
+		Fields:   Workflow_Properties_AccessControl_Actions_OpenAuthenticationPoliciesFields,
+	},
+}
 
 var Workflow_Properties_AccessControlFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{
-			WireName: "actions",
-			Kind: "object",
-			Fields: Workflow_Properties_AccessControl_ActionsFields,
-		},
-		"Contents": ubx.FieldSpec{
-			WireName: "contents",
-			Kind: "object",
-			Fields: Workflow_Properties_AccessControl_ActionsFields,
-		},
-		"Triggers": ubx.FieldSpec{
-			WireName: "triggers",
-			Kind: "object",
-			Fields: Workflow_Properties_AccessControl_ActionsFields,
-		},
-		"WorkflowManagement": ubx.FieldSpec{
-			WireName: "workflow_management",
-			Kind: "object",
-			Fields: Workflow_Properties_AccessControl_ActionsFields,
-		},
-	}
+	"Actions": ubx.FieldSpec{
+		WireName: "actions",
+		Kind:     "object",
+		Fields:   Workflow_Properties_AccessControl_ActionsFields,
+	},
+	"Contents": ubx.FieldSpec{
+		WireName: "contents",
+		Kind:     "object",
+		Fields:   Workflow_Properties_AccessControl_ActionsFields,
+	},
+	"Triggers": ubx.FieldSpec{
+		WireName: "triggers",
+		Kind:     "object",
+		Fields:   Workflow_Properties_AccessControl_ActionsFields,
+	},
+	"WorkflowManagement": ubx.FieldSpec{
+		WireName: "workflow_management",
+		Kind:     "object",
+		Fields:   Workflow_Properties_AccessControl_ActionsFields,
+	},
+}
 
 var Workflow_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-	}
+	"Address": ubx.FieldSpec{WireName: "address"},
+}
 
 var Workflow_Properties_EndpointsConfiguration_ConnectorFields = ubx.FieldMap{
-		"AccessEndpointIpAddresses": ubx.FieldSpec{
-			WireName: "access_endpoint_ip_addresses",
-			Kind: "list",
-			Fields: Workflow_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields,
-		},
-		"OutgoingIpAddresses": ubx.FieldSpec{
-			WireName: "outgoing_ip_addresses",
-			Kind: "list",
-			Fields: Workflow_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields,
-		},
-	}
+	"AccessEndpointIpAddresses": ubx.FieldSpec{
+		WireName: "access_endpoint_ip_addresses",
+		Kind:     "list",
+		Fields:   Workflow_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields,
+	},
+	"OutgoingIpAddresses": ubx.FieldSpec{
+		WireName: "outgoing_ip_addresses",
+		Kind:     "list",
+		Fields:   Workflow_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddressesFields,
+	},
+}
 
 var Workflow_Properties_EndpointsConfigurationFields = ubx.FieldMap{
-		"Connector": ubx.FieldSpec{
-			WireName: "connector",
-			Kind: "object",
-			Fields: Workflow_Properties_EndpointsConfiguration_ConnectorFields,
-		},
-		"Workflow": ubx.FieldSpec{
-			WireName: "workflow",
-			Kind: "object",
-			Fields: Workflow_Properties_EndpointsConfiguration_ConnectorFields,
-		},
-	}
+	"Connector": ubx.FieldSpec{
+		WireName: "connector",
+		Kind:     "object",
+		Fields:   Workflow_Properties_EndpointsConfiguration_ConnectorFields,
+	},
+	"Workflow": ubx.FieldSpec{
+		WireName: "workflow",
+		Kind:     "object",
+		Fields:   Workflow_Properties_EndpointsConfiguration_ConnectorFields,
+	},
+}
 
 var Workflow_Properties_IntegrationAccountFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var Workflow_Properties_ParametersFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Metadata":    ubx.FieldSpec{WireName: "metadata"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"Value":       ubx.FieldSpec{WireName: "value"},
+}
 
 var Workflow_Properties_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Plan": ubx.FieldSpec{
-			WireName: "plan",
-			Kind: "object",
-			Fields: Workflow_Properties_IntegrationAccountFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Plan": ubx.FieldSpec{
+		WireName: "plan",
+		Kind:     "object",
+		Fields:   Workflow_Properties_IntegrationAccountFields,
+	},
+}
 
 var Workflow_PropertiesFields = ubx.FieldMap{
-		"AccessControl": ubx.FieldSpec{
-			WireName: "access_control",
-			Kind: "object",
-			Fields: Workflow_Properties_AccessControlFields,
-		},
-		"AccessEndpoint": ubx.FieldSpec{WireName: "access_endpoint"},
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"Definition": ubx.FieldSpec{WireName: "definition"},
-		"EndpointsConfiguration": ubx.FieldSpec{
-			WireName: "endpoints_configuration",
-			Kind: "object",
-			Fields: Workflow_Properties_EndpointsConfigurationFields,
-		},
-		"IntegrationAccount": ubx.FieldSpec{
-			WireName: "integration_account",
-			Kind: "object",
-			Fields: Workflow_Properties_IntegrationAccountFields,
-		},
-		"IntegrationServiceEnvironment": ubx.FieldSpec{
-			WireName: "integration_service_environment",
-			Kind: "object",
-			Fields: Workflow_Properties_IntegrationAccountFields,
-		},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: Workflow_Properties_ParametersFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: Workflow_Properties_SkuFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"AccessControl": ubx.FieldSpec{
+		WireName: "access_control",
+		Kind:     "object",
+		Fields:   Workflow_Properties_AccessControlFields,
+	},
+	"AccessEndpoint": ubx.FieldSpec{WireName: "access_endpoint"},
+	"ChangedTime":    ubx.FieldSpec{WireName: "changed_time"},
+	"CreatedTime":    ubx.FieldSpec{WireName: "created_time"},
+	"Definition":     ubx.FieldSpec{WireName: "definition"},
+	"EndpointsConfiguration": ubx.FieldSpec{
+		WireName: "endpoints_configuration",
+		Kind:     "object",
+		Fields:   Workflow_Properties_EndpointsConfigurationFields,
+	},
+	"IntegrationAccount": ubx.FieldSpec{
+		WireName: "integration_account",
+		Kind:     "object",
+		Fields:   Workflow_Properties_IntegrationAccountFields,
+	},
+	"IntegrationServiceEnvironment": ubx.FieldSpec{
+		WireName: "integration_service_environment",
+		Kind:     "object",
+		Fields:   Workflow_Properties_IntegrationAccountFields,
+	},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   Workflow_Properties_ParametersFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   Workflow_Properties_SkuFields,
+	},
+	"State":   ubx.FieldSpec{WireName: "state"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 type WorkflowConfig struct {
 	// Managed service identity properties.
@@ -314,13 +314,13 @@ var Workflow = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Workflow_IdentityFields,
+			Kind:     "object",
+			Fields:   Workflow_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Workflow_PropertiesFields,
+			Kind:     "object",
+			Fields:   Workflow_PropertiesFields,
 		},
 	},
 }

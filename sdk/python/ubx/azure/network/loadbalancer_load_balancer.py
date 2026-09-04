@@ -8248,8 +8248,6 @@ _LoadbalancerLoadBalancer_PropertiesFields = {
 
 @dataclasses.dataclass
 class LoadbalancerLoadBalancerConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
     # Properties of the load balancer.
@@ -8271,7 +8269,6 @@ class LoadbalancerLoadBalancerAttrs:
 LoadbalancerLoadBalancer = ubx.ResourceBinding(
     wire_type="azure_network_loadbalancer_load_balancer",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "extended_location": ubx.FieldSpec(
             wire_name="extended_location",
             kind="object",

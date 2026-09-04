@@ -17,15 +17,15 @@ type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Proper
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	Direction any
+	AddressPrefixes           any
+	Direction                 any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	Subscriptions any
+	Subscriptions             any
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -42,15 +42,15 @@ type NetworkSecurityPerimeterConfiguration_Properties_Profile struct {
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -84,6 +84,5 @@ type NetworkSecurityPerimeterConfigurationAttrs struct {
 
 var NetworkSecurityPerimeterConfiguration = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_network_security_perimeter_configuration",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

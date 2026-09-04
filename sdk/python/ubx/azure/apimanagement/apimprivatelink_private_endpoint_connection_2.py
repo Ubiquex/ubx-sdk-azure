@@ -7,6 +7,11 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateEndpoint:
+    # The ARM identifier for Private Endpoint
+    id: Any = None
+
+@dataclasses.dataclass
 class ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConnectionState:
     # A message indicating if changes on the service provider require any updates on the consumer.
     actions_required: Any = None
@@ -17,8 +22,16 @@ class ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceCon
 
 @dataclasses.dataclass
 class ApimprivatelinkPrivateEndpointConnection2_Properties:
+    # The Private Endpoint resource.
+    private_endpoint: Any = None
     # A collection of information about the state of the connection between service consumer and provider.
     private_link_service_connection_state: Any = None
+    # The current provisioning state.
+    provisioning_state: Any = None
+
+_ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateEndpointFields = {
+    "id": ubx.FieldSpec(wire_name="id"),
+}
 
 _ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConnectionStateFields = {
     "actions_required": ubx.FieldSpec(wire_name="actions_required"),
@@ -27,11 +40,17 @@ _ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConnecti
 }
 
 _ApimprivatelinkPrivateEndpointConnection2_PropertiesFields = {
+    "private_endpoint": ubx.FieldSpec(
+        wire_name="private_endpoint",
+        kind="object",
+        fields=_ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateEndpointFields,
+    ),
     "private_link_service_connection_state": ubx.FieldSpec(
         wire_name="private_link_service_connection_state",
         kind="object",
         fields=_ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConnectionStateFields,
     ),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
 }
 
 @dataclasses.dataclass

@@ -55,14 +55,8 @@ const Snapshot_PropertiesFields: FieldMap = {
 };
 
 export interface SnapshotConfig {
-  /** The resource ID. */
-  id?: string | Computed<string>;
-  /** The name of the snapshot. */
-  name?: string | Computed<string>;
   /** All snapshot properties. */
   properties?: Snapshot_Properties | Computed<Snapshot_Properties>;
-  /** The type of the resource. */
-  type?: string | Computed<string>;
 }
 
 export interface SnapshotAttrs {
@@ -79,13 +73,10 @@ export interface SnapshotAttrs {
 export const Snapshot: ResourceBinding<SnapshotConfig, SnapshotAttrs> = {
   wireType: "azure_appconfiguration_snapshot",
   fields: {
-    id: "id",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: Snapshot_PropertiesFields,
     },
-    type: "type",
   },
 };

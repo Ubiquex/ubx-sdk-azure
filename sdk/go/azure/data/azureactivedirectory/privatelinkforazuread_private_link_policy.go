@@ -4,25 +4,25 @@ package azureactivedirectory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivatelinkforazureadPrivateLinkPolicy_Value struct {
-	AllTenants any
-	Name any
-	OwnerTenantId any
-	ResourceGroup any
-	ResourceName any
+	AllTenants     any
+	Name           any
+	OwnerTenantId  any
+	ResourceGroup  any
+	ResourceName   any
 	SubscriptionId any
-	Tags any
-	Tenants any
+	Tags           any
+	Tenants        any
 }
 
 type PrivatelinkforazureadPrivateLinkPolicyConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type PrivatelinkforazureadPrivateLinkPolicyAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of operations.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// Array of private link policies
 	Value any
@@ -31,7 +31,7 @@ type PrivatelinkforazureadPrivateLinkPolicyAttrs struct {
 var PrivatelinkforazureadPrivateLinkPolicy = ubx.DataSourceBinding{
 	WireType: "azure_azureactivedirectory_privatelinkforazuread_private_link_policy",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

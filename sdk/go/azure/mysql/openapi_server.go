@@ -4,7 +4,7 @@ package mysql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiServer_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -96,15 +96,15 @@ type OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateEndpo
 
 type OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiServer_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiServer_Properties_PrivateEndpointConnections struct {
@@ -183,175 +183,175 @@ type OpenapiServer_Sku struct {
 }
 
 var OpenapiServer_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiServer_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiServer_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiServer_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiServer_Properties_BackupFields = ubx.FieldMap{
-		"BackupIntervalHours": ubx.FieldSpec{WireName: "backup_interval_hours"},
-		"BackupRetentionDays": ubx.FieldSpec{WireName: "backup_retention_days"},
-		"EarliestRestoreDate": ubx.FieldSpec{WireName: "earliest_restore_date"},
-		"GeoRedundantBackup": ubx.FieldSpec{WireName: "geo_redundant_backup"},
-	}
+	"BackupIntervalHours": ubx.FieldSpec{WireName: "backup_interval_hours"},
+	"BackupRetentionDays": ubx.FieldSpec{WireName: "backup_retention_days"},
+	"EarliestRestoreDate": ubx.FieldSpec{WireName: "earliest_restore_date"},
+	"GeoRedundantBackup":  ubx.FieldSpec{WireName: "geo_redundant_backup"},
+}
 
 var OpenapiServer_Properties_DataEncryptionFields = ubx.FieldMap{
-		"GeoBackupKeyUri": ubx.FieldSpec{WireName: "geo_backup_key_uri"},
-		"GeoBackupUserAssignedIdentityId": ubx.FieldSpec{WireName: "geo_backup_user_assigned_identity_id"},
-		"PrimaryKeyUri": ubx.FieldSpec{WireName: "primary_key_uri"},
-		"PrimaryUserAssignedIdentityId": ubx.FieldSpec{WireName: "primary_user_assigned_identity_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"GeoBackupKeyUri":                 ubx.FieldSpec{WireName: "geo_backup_key_uri"},
+	"GeoBackupUserAssignedIdentityId": ubx.FieldSpec{WireName: "geo_backup_user_assigned_identity_id"},
+	"PrimaryKeyUri":                   ubx.FieldSpec{WireName: "primary_key_uri"},
+	"PrimaryUserAssignedIdentityId":   ubx.FieldSpec{WireName: "primary_user_assigned_identity_id"},
+	"Type":                            ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiServer_Properties_HighAvailabilityFields = ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"StandbyAvailabilityZone": ubx.FieldSpec{WireName: "standby_availability_zone"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"Mode":                    ubx.FieldSpec{WireName: "mode"},
+	"StandbyAvailabilityZone": ubx.FieldSpec{WireName: "standby_availability_zone"},
+	"State":                   ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiServer_Properties_ImportSourcePropertiesFields = ubx.FieldMap{
-		"DataDirPath": ubx.FieldSpec{WireName: "data_dir_path"},
-		"SasToken": ubx.FieldSpec{WireName: "sas_token"},
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-		"StorageUrl": ubx.FieldSpec{WireName: "storage_url"},
-	}
+	"DataDirPath": ubx.FieldSpec{WireName: "data_dir_path"},
+	"SasToken":    ubx.FieldSpec{WireName: "sas_token"},
+	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+	"StorageUrl":  ubx.FieldSpec{WireName: "storage_url"},
+}
 
 var OpenapiServer_Properties_MaintenancePolicyFields = ubx.FieldMap{
-		"PatchStrategy": ubx.FieldSpec{WireName: "patch_strategy"},
-	}
+	"PatchStrategy": ubx.FieldSpec{WireName: "patch_strategy"},
+}
 
 var OpenapiServer_Properties_MaintenanceWindowFields = ubx.FieldMap{
-		"BatchOfMaintenance": ubx.FieldSpec{WireName: "batch_of_maintenance"},
-		"CustomWindow": ubx.FieldSpec{WireName: "custom_window"},
-		"DayOfWeek": ubx.FieldSpec{WireName: "day_of_week"},
-		"StartHour": ubx.FieldSpec{WireName: "start_hour"},
-		"StartMinute": ubx.FieldSpec{WireName: "start_minute"},
-	}
+	"BatchOfMaintenance": ubx.FieldSpec{WireName: "batch_of_maintenance"},
+	"CustomWindow":       ubx.FieldSpec{WireName: "custom_window"},
+	"DayOfWeek":          ubx.FieldSpec{WireName: "day_of_week"},
+	"StartHour":          ubx.FieldSpec{WireName: "start_hour"},
+	"StartMinute":        ubx.FieldSpec{WireName: "start_minute"},
+}
 
 var OpenapiServer_Properties_NetworkFields = ubx.FieldMap{
-		"DelegatedSubnetResourceId": ubx.FieldSpec{WireName: "delegated_subnet_resource_id"},
-		"PrivateDnsZoneResourceId": ubx.FieldSpec{WireName: "private_dns_zone_resource_id"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	}
+	"DelegatedSubnetResourceId": ubx.FieldSpec{WireName: "delegated_subnet_resource_id"},
+	"PrivateDnsZoneResourceId":  ubx.FieldSpec{WireName: "private_dns_zone_resource_id"},
+	"PublicNetworkAccess":       ubx.FieldSpec{WireName: "public_network_access"},
+}
 
 var OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiServer_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiServer_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var OpenapiServer_Properties_StorageFields = ubx.FieldMap{
-		"AutoGrow": ubx.FieldSpec{WireName: "auto_grow"},
-		"AutoIoScaling": ubx.FieldSpec{WireName: "auto_io_scaling"},
-		"Iops": ubx.FieldSpec{WireName: "iops"},
-		"LogOnDisk": ubx.FieldSpec{WireName: "log_on_disk"},
-		"StorageRedundancy": ubx.FieldSpec{WireName: "storage_redundancy"},
-		"StorageSizeGb": ubx.FieldSpec{WireName: "storage_size_gb"},
-		"StorageSku": ubx.FieldSpec{WireName: "storage_sku"},
-	}
+	"AutoGrow":          ubx.FieldSpec{WireName: "auto_grow"},
+	"AutoIoScaling":     ubx.FieldSpec{WireName: "auto_io_scaling"},
+	"Iops":              ubx.FieldSpec{WireName: "iops"},
+	"LogOnDisk":         ubx.FieldSpec{WireName: "log_on_disk"},
+	"StorageRedundancy": ubx.FieldSpec{WireName: "storage_redundancy"},
+	"StorageSizeGb":     ubx.FieldSpec{WireName: "storage_size_gb"},
+	"StorageSku":        ubx.FieldSpec{WireName: "storage_sku"},
+}
 
 var OpenapiServer_PropertiesFields = ubx.FieldMap{
-		"AdministratorLogin": ubx.FieldSpec{WireName: "administrator_login"},
-		"AdministratorLoginPassword": ubx.FieldSpec{WireName: "administrator_login_password"},
-		"AvailabilityZone": ubx.FieldSpec{WireName: "availability_zone"},
-		"Backup": ubx.FieldSpec{
-			WireName: "backup",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_BackupFields,
-		},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"DataEncryption": ubx.FieldSpec{
-			WireName: "data_encryption",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_DataEncryptionFields,
-		},
-		"DatabasePort": ubx.FieldSpec{WireName: "database_port"},
-		"FullVersion": ubx.FieldSpec{WireName: "full_version"},
-		"FullyQualifiedDomainName": ubx.FieldSpec{WireName: "fully_qualified_domain_name"},
-		"HighAvailability": ubx.FieldSpec{
-			WireName: "high_availability",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_HighAvailabilityFields,
-		},
-		"ImportSourceProperties": ubx.FieldSpec{
-			WireName: "import_source_properties",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_ImportSourcePropertiesFields,
-		},
-		"MaintenancePolicy": ubx.FieldSpec{
-			WireName: "maintenance_policy",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_MaintenancePolicyFields,
-		},
-		"MaintenanceWindow": ubx.FieldSpec{
-			WireName: "maintenance_window",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_MaintenanceWindowFields,
-		},
-		"Network": ubx.FieldSpec{
-			WireName: "network",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_NetworkFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiServer_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ReplicaCapacity": ubx.FieldSpec{WireName: "replica_capacity"},
-		"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
-		"RestorePointInTime": ubx.FieldSpec{WireName: "restore_point_in_time"},
-		"SourceServerResourceId": ubx.FieldSpec{WireName: "source_server_resource_id"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Storage": ubx.FieldSpec{
-			WireName: "storage",
-			Kind: "object",
-			Fields: OpenapiServer_Properties_StorageFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"AdministratorLogin":         ubx.FieldSpec{WireName: "administrator_login"},
+	"AdministratorLoginPassword": ubx.FieldSpec{WireName: "administrator_login_password"},
+	"AvailabilityZone":           ubx.FieldSpec{WireName: "availability_zone"},
+	"Backup": ubx.FieldSpec{
+		WireName: "backup",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_BackupFields,
+	},
+	"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
+	"DataEncryption": ubx.FieldSpec{
+		WireName: "data_encryption",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_DataEncryptionFields,
+	},
+	"DatabasePort":             ubx.FieldSpec{WireName: "database_port"},
+	"FullVersion":              ubx.FieldSpec{WireName: "full_version"},
+	"FullyQualifiedDomainName": ubx.FieldSpec{WireName: "fully_qualified_domain_name"},
+	"HighAvailability": ubx.FieldSpec{
+		WireName: "high_availability",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_HighAvailabilityFields,
+	},
+	"ImportSourceProperties": ubx.FieldSpec{
+		WireName: "import_source_properties",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_ImportSourcePropertiesFields,
+	},
+	"MaintenancePolicy": ubx.FieldSpec{
+		WireName: "maintenance_policy",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_MaintenancePolicyFields,
+	},
+	"MaintenanceWindow": ubx.FieldSpec{
+		WireName: "maintenance_window",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_MaintenanceWindowFields,
+	},
+	"Network": ubx.FieldSpec{
+		WireName: "network",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_NetworkFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiServer_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ReplicaCapacity":        ubx.FieldSpec{WireName: "replica_capacity"},
+	"ReplicationRole":        ubx.FieldSpec{WireName: "replication_role"},
+	"RestorePointInTime":     ubx.FieldSpec{WireName: "restore_point_in_time"},
+	"SourceServerResourceId": ubx.FieldSpec{WireName: "source_server_resource_id"},
+	"State":                  ubx.FieldSpec{WireName: "state"},
+	"Storage": ubx.FieldSpec{
+		WireName: "storage",
+		Kind:     "object",
+		Fields:   OpenapiServer_Properties_StorageFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiServer_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiServerConfig struct {
 	// Properties to configure Identity for Bring your Own Keys
@@ -376,18 +376,18 @@ var OpenapiServer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiServer_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiServer_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiServer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiServer_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiServer_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiServer_SkuFields,
 		},
 	},
 }

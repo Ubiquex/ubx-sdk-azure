@@ -4,14 +4,14 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVirtualNetworkAddress_Value_Properties struct {
-	Domain any
-	IpAddress any
-	LifecycleDetails any
-	LifecycleState any
-	Ocid any
+	Domain            any
+	IpAddress         any
+	LifecycleDetails  any
+	LifecycleState    any
+	Ocid              any
 	ProvisioningState any
-	TimeAssigned any
-	VmOcid any
+	TimeAssigned      any
+	VmOcid            any
 }
 
 type OpenapiVirtualNetworkAddress_Value struct {

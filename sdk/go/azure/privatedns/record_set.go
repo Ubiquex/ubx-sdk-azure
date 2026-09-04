@@ -17,7 +17,7 @@ type RecordSet_Properties_CnameRecord struct {
 }
 
 type RecordSet_Properties_MxRecords struct {
-	Exchange any
+	Exchange   any
 	Preference any
 }
 
@@ -43,10 +43,10 @@ type RecordSet_Properties_SoaRecord struct {
 }
 
 type RecordSet_Properties_SrvRecords struct {
-	Port any
+	Port     any
 	Priority any
-	Target any
-	Weight any
+	Target   any
+	Weight   any
 }
 
 type RecordSet_Properties_TxtRecords struct {
@@ -81,93 +81,93 @@ type RecordSet_Properties struct {
 }
 
 var RecordSet_Properties_ARecordsFields = ubx.FieldMap{
-		"Ipv4Address": ubx.FieldSpec{WireName: "ipv4_address"},
-	}
+	"Ipv4Address": ubx.FieldSpec{WireName: "ipv4_address"},
+}
 
 var RecordSet_Properties_AaaaRecordsFields = ubx.FieldMap{
-		"Ipv6Address": ubx.FieldSpec{WireName: "ipv6_address"},
-	}
+	"Ipv6Address": ubx.FieldSpec{WireName: "ipv6_address"},
+}
 
 var RecordSet_Properties_CnameRecordFields = ubx.FieldMap{
-		"Cname": ubx.FieldSpec{WireName: "cname"},
-	}
+	"Cname": ubx.FieldSpec{WireName: "cname"},
+}
 
 var RecordSet_Properties_MxRecordsFields = ubx.FieldMap{
-		"Exchange": ubx.FieldSpec{WireName: "exchange"},
-		"Preference": ubx.FieldSpec{WireName: "preference"},
-	}
+	"Exchange":   ubx.FieldSpec{WireName: "exchange"},
+	"Preference": ubx.FieldSpec{WireName: "preference"},
+}
 
 var RecordSet_Properties_PtrRecordsFields = ubx.FieldMap{
-		"Ptrdname": ubx.FieldSpec{WireName: "ptrdname"},
-	}
+	"Ptrdname": ubx.FieldSpec{WireName: "ptrdname"},
+}
 
 var RecordSet_Properties_SoaRecordFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"ExpireTime": ubx.FieldSpec{WireName: "expire_time"},
-		"Host": ubx.FieldSpec{WireName: "host"},
-		"MinimumTtl": ubx.FieldSpec{WireName: "minimum_ttl"},
-		"RefreshTime": ubx.FieldSpec{WireName: "refresh_time"},
-		"RetryTime": ubx.FieldSpec{WireName: "retry_time"},
-		"SerialNumber": ubx.FieldSpec{WireName: "serial_number"},
-	}
+	"Email":        ubx.FieldSpec{WireName: "email"},
+	"ExpireTime":   ubx.FieldSpec{WireName: "expire_time"},
+	"Host":         ubx.FieldSpec{WireName: "host"},
+	"MinimumTtl":   ubx.FieldSpec{WireName: "minimum_ttl"},
+	"RefreshTime":  ubx.FieldSpec{WireName: "refresh_time"},
+	"RetryTime":    ubx.FieldSpec{WireName: "retry_time"},
+	"SerialNumber": ubx.FieldSpec{WireName: "serial_number"},
+}
 
 var RecordSet_Properties_SrvRecordsFields = ubx.FieldMap{
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-		"Weight": ubx.FieldSpec{WireName: "weight"},
-	}
+	"Port":     ubx.FieldSpec{WireName: "port"},
+	"Priority": ubx.FieldSpec{WireName: "priority"},
+	"Target":   ubx.FieldSpec{WireName: "target"},
+	"Weight":   ubx.FieldSpec{WireName: "weight"},
+}
 
 var RecordSet_Properties_TxtRecordsFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var RecordSet_PropertiesFields = ubx.FieldMap{
-		"ARecords": ubx.FieldSpec{
-			WireName: "a_records",
-			Kind: "list",
-			Fields: RecordSet_Properties_ARecordsFields,
-		},
-		"AaaaRecords": ubx.FieldSpec{
-			WireName: "aaaa_records",
-			Kind: "list",
-			Fields: RecordSet_Properties_AaaaRecordsFields,
-		},
-		"CnameRecord": ubx.FieldSpec{
-			WireName: "cname_record",
-			Kind: "object",
-			Fields: RecordSet_Properties_CnameRecordFields,
-		},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IsAutoRegistered": ubx.FieldSpec{WireName: "is_auto_registered"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"MxRecords": ubx.FieldSpec{
-			WireName: "mx_records",
-			Kind: "list",
-			Fields: RecordSet_Properties_MxRecordsFields,
-		},
-		"PtrRecords": ubx.FieldSpec{
-			WireName: "ptr_records",
-			Kind: "list",
-			Fields: RecordSet_Properties_PtrRecordsFields,
-		},
-		"SoaRecord": ubx.FieldSpec{
-			WireName: "soa_record",
-			Kind: "object",
-			Fields: RecordSet_Properties_SoaRecordFields,
-		},
-		"SrvRecords": ubx.FieldSpec{
-			WireName: "srv_records",
-			Kind: "list",
-			Fields: RecordSet_Properties_SrvRecordsFields,
-		},
-		"Ttl": ubx.FieldSpec{WireName: "ttl"},
-		"TxtRecords": ubx.FieldSpec{
-			WireName: "txt_records",
-			Kind: "list",
-			Fields: RecordSet_Properties_TxtRecordsFields,
-		},
-	}
+	"ARecords": ubx.FieldSpec{
+		WireName: "a_records",
+		Kind:     "list",
+		Fields:   RecordSet_Properties_ARecordsFields,
+	},
+	"AaaaRecords": ubx.FieldSpec{
+		WireName: "aaaa_records",
+		Kind:     "list",
+		Fields:   RecordSet_Properties_AaaaRecordsFields,
+	},
+	"CnameRecord": ubx.FieldSpec{
+		WireName: "cname_record",
+		Kind:     "object",
+		Fields:   RecordSet_Properties_CnameRecordFields,
+	},
+	"Fqdn":             ubx.FieldSpec{WireName: "fqdn"},
+	"IsAutoRegistered": ubx.FieldSpec{WireName: "is_auto_registered"},
+	"Metadata":         ubx.FieldSpec{WireName: "metadata"},
+	"MxRecords": ubx.FieldSpec{
+		WireName: "mx_records",
+		Kind:     "list",
+		Fields:   RecordSet_Properties_MxRecordsFields,
+	},
+	"PtrRecords": ubx.FieldSpec{
+		WireName: "ptr_records",
+		Kind:     "list",
+		Fields:   RecordSet_Properties_PtrRecordsFields,
+	},
+	"SoaRecord": ubx.FieldSpec{
+		WireName: "soa_record",
+		Kind:     "object",
+		Fields:   RecordSet_Properties_SoaRecordFields,
+	},
+	"SrvRecords": ubx.FieldSpec{
+		WireName: "srv_records",
+		Kind:     "list",
+		Fields:   RecordSet_Properties_SrvRecordsFields,
+	},
+	"Ttl": ubx.FieldSpec{WireName: "ttl"},
+	"TxtRecords": ubx.FieldSpec{
+		WireName: "txt_records",
+		Kind:     "list",
+		Fields:   RecordSet_Properties_TxtRecordsFields,
+	},
+}
 
 type RecordSetConfig struct {
 	// The ETag of the record set.
@@ -189,8 +189,8 @@ var RecordSet = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RecordSet_PropertiesFields,
+			Kind:     "object",
+			Fields:   RecordSet_PropertiesFields,
 		},
 	},
 }

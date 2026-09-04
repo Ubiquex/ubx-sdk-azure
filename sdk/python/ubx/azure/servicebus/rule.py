@@ -89,8 +89,6 @@ _Rule_PropertiesFields = {
 
 @dataclasses.dataclass
 class RuleConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Description of Rule Resource.
     properties: Any = None
 
@@ -104,7 +102,6 @@ class RuleAttrs:
 Rule = ubx.ResourceBinding(
     wire_type="azure_servicebus_rule",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

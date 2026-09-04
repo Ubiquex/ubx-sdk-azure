@@ -4,7 +4,7 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApiPortalResource_Properties_Instances struct {
-	Name any
+	Name   any
 	Status any
 }
 
@@ -59,52 +59,52 @@ type ApiPortalResource_Sku struct {
 }
 
 var ApiPortalResource_Properties_InstancesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var ApiPortalResource_Properties_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":    ubx.FieldSpec{WireName: "cpu"},
+	"Memory": ubx.FieldSpec{WireName: "memory"},
+}
 
 var ApiPortalResource_Properties_SsoPropertiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-		"IssuerUri": ubx.FieldSpec{WireName: "issuer_uri"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+	"IssuerUri":    ubx.FieldSpec{WireName: "issuer_uri"},
+	"Scope":        ubx.FieldSpec{WireName: "scope"},
+}
 
 var ApiPortalResource_PropertiesFields = ubx.FieldMap{
-		"ApiTryOutEnabledState": ubx.FieldSpec{WireName: "api_try_out_enabled_state"},
-		"GatewayIds": ubx.FieldSpec{WireName: "gateway_ids"},
-		"HttpsOnly": ubx.FieldSpec{WireName: "https_only"},
-		"Instances": ubx.FieldSpec{
-			WireName: "instances",
-			Kind: "list",
-			Fields: ApiPortalResource_Properties_InstancesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Public": ubx.FieldSpec{WireName: "public"},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: ApiPortalResource_Properties_ResourceRequestsFields,
-		},
-		"SourceUrls": ubx.FieldSpec{WireName: "source_urls"},
-		"SsoProperties": ubx.FieldSpec{
-			WireName: "sso_properties",
-			Kind: "object",
-			Fields: ApiPortalResource_Properties_SsoPropertiesFields,
-		},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"ApiTryOutEnabledState": ubx.FieldSpec{WireName: "api_try_out_enabled_state"},
+	"GatewayIds":            ubx.FieldSpec{WireName: "gateway_ids"},
+	"HttpsOnly":             ubx.FieldSpec{WireName: "https_only"},
+	"Instances": ubx.FieldSpec{
+		WireName: "instances",
+		Kind:     "list",
+		Fields:   ApiPortalResource_Properties_InstancesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Public":            ubx.FieldSpec{WireName: "public"},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   ApiPortalResource_Properties_ResourceRequestsFields,
+	},
+	"SourceUrls": ubx.FieldSpec{WireName: "source_urls"},
+	"SsoProperties": ubx.FieldSpec{
+		WireName: "sso_properties",
+		Kind:     "object",
+		Fields:   ApiPortalResource_Properties_SsoPropertiesFields,
+	},
+	"Url": ubx.FieldSpec{WireName: "url"},
+}
 
 var ApiPortalResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ApiPortalResourceConfig struct {
 	// API portal properties payload
@@ -125,13 +125,13 @@ var ApiPortalResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApiPortalResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApiPortalResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ApiPortalResource_SkuFields,
+			Kind:     "object",
+			Fields:   ApiPortalResource_SkuFields,
 		},
 	},
 }

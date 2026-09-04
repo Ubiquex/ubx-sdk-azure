@@ -13,20 +13,14 @@ type LinksResourceLink_Properties struct {
 }
 
 var LinksResourceLink_PropertiesFields = ubx.FieldMap{
-		"Notes": ubx.FieldSpec{WireName: "notes"},
-		"SourceId": ubx.FieldSpec{WireName: "source_id"},
-		"TargetId": ubx.FieldSpec{WireName: "target_id"},
-	}
+	"Notes":    ubx.FieldSpec{WireName: "notes"},
+	"SourceId": ubx.FieldSpec{WireName: "source_id"},
+	"TargetId": ubx.FieldSpec{WireName: "target_id"},
+}
 
 type LinksResourceLinkConfig struct {
-	// The fully qualified ID of the resource link.
-	Id any
-	// The name of the resource link.
-	Name any
 	// The resource link properties.
 	Properties any
-	// The resource link object.
-	Type any
 }
 
 type LinksResourceLinkAttrs struct {
@@ -43,13 +37,10 @@ type LinksResourceLinkAttrs struct {
 var LinksResourceLink = ubx.ResourceBinding{
 	WireType: "azure_resources_links_resource_link",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: LinksResourceLink_PropertiesFields,
+			Kind:     "object",
+			Fields:   LinksResourceLink_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

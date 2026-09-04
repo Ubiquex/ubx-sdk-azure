@@ -21,26 +21,18 @@ type CertificateDescription_Properties struct {
 }
 
 var CertificateDescription_PropertiesFields = ubx.FieldMap{
-		"Certificate": ubx.FieldSpec{WireName: "certificate"},
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"Expiry": ubx.FieldSpec{WireName: "expiry"},
-		"IsVerified": ubx.FieldSpec{WireName: "is_verified"},
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-	}
+	"Certificate": ubx.FieldSpec{WireName: "certificate"},
+	"Created":     ubx.FieldSpec{WireName: "created"},
+	"Expiry":      ubx.FieldSpec{WireName: "expiry"},
+	"IsVerified":  ubx.FieldSpec{WireName: "is_verified"},
+	"Subject":     ubx.FieldSpec{WireName: "subject"},
+	"Thumbprint":  ubx.FieldSpec{WireName: "thumbprint"},
+	"Updated":     ubx.FieldSpec{WireName: "updated"},
+}
 
 type CertificateDescriptionConfig struct {
-	// The entity tag.
-	Etag any
-	// The resource identifier.
-	Id any
-	// The name of the certificate.
-	Name any
 	// The description of an X509 CA Certificate.
 	Properties any
-	// The resource type.
-	Type any
 }
 
 type CertificateDescriptionAttrs struct {
@@ -59,14 +51,10 @@ type CertificateDescriptionAttrs struct {
 var CertificateDescription = ubx.ResourceBinding{
 	WireType: "azure_iothub_certificate_description",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CertificateDescription_PropertiesFields,
+			Kind:     "object",
+			Fields:   CertificateDescription_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

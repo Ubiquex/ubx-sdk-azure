@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimcachesCacheContract_Value_Properties struct {
 	ConnectionString any
-	Description any
-	ResourceId any
-	UseFromLocation any
+	Description      any
+	ResourceId       any
+	UseFromLocation  any
 }
 
 type ApimcachesCacheContract_Value struct {
@@ -28,6 +28,5 @@ type ApimcachesCacheContractAttrs struct {
 
 var ApimcachesCacheContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimcaches_cache_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

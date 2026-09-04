@@ -4,10 +4,10 @@ package paloaltonetworks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwFqdnListGlobalRulestackResource_Value_Properties struct {
-	AuditComment any
-	Description any
-	Etag any
-	FqdnList any
+	AuditComment      any
+	Description       any
+	Etag              any
+	FqdnList          any
 	ProvisioningState any
 }
 

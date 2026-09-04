@@ -334,8 +334,6 @@ const ExpressrouteRouteFilter_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteRouteFilterConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Route Filter Resource. */
   properties?: ExpressrouteRouteFilter_Properties | Computed<ExpressrouteRouteFilter_Properties>;
 }
@@ -350,7 +348,6 @@ export interface ExpressrouteRouteFilterAttrs {
 export const ExpressrouteRouteFilter: ResourceBinding<ExpressrouteRouteFilterConfig, ExpressrouteRouteFilterAttrs> = {
   wireType: "azure_network_expressroute_route_filter",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

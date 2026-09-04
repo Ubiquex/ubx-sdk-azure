@@ -22,20 +22,20 @@ type VirtualNetworkLink_Properties struct {
 }
 
 var VirtualNetworkLink_Properties_VirtualNetworkFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualNetworkLink_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RegistrationEnabled": ubx.FieldSpec{WireName: "registration_enabled"},
-		"ResolutionPolicy": ubx.FieldSpec{WireName: "resolution_policy"},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: VirtualNetworkLink_Properties_VirtualNetworkFields,
-		},
-		"VirtualNetworkLinkState": ubx.FieldSpec{WireName: "virtual_network_link_state"},
-	}
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"RegistrationEnabled": ubx.FieldSpec{WireName: "registration_enabled"},
+	"ResolutionPolicy":    ubx.FieldSpec{WireName: "resolution_policy"},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   VirtualNetworkLink_Properties_VirtualNetworkFields,
+	},
+	"VirtualNetworkLinkState": ubx.FieldSpec{WireName: "virtual_network_link_state"},
+}
 
 type VirtualNetworkLinkConfig struct {
 	// The ETag of the virtual network link.
@@ -62,12 +62,12 @@ type VirtualNetworkLinkAttrs struct {
 var VirtualNetworkLink = ubx.ResourceBinding{
 	WireType: "azure_privatedns_virtual_network_link",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualNetworkLink_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualNetworkLink_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

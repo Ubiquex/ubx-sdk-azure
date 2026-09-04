@@ -92,8 +92,6 @@ _VirtualwanRouteMap_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanRouteMapConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of RouteMap resource
     properties: Any = None
 
@@ -107,7 +105,6 @@ class VirtualwanRouteMapAttrs:
 VirtualwanRouteMap = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_route_map",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

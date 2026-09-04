@@ -48,33 +48,33 @@ type SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Properties s
 }
 
 var SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Properties_AuthorizationProfileFields = ubx.FieldMap{
-		"ApprovedTime": ubx.FieldSpec{WireName: "approved_time"},
-		"Approver": ubx.FieldSpec{WireName: "approver"},
-		"RequestedTime": ubx.FieldSpec{WireName: "requested_time"},
-		"Requester": ubx.FieldSpec{WireName: "requester"},
-		"RequesterObjectId": ubx.FieldSpec{WireName: "requester_object_id"},
-	}
+	"ApprovedTime":      ubx.FieldSpec{WireName: "approved_time"},
+	"Approver":          ubx.FieldSpec{WireName: "approver"},
+	"RequestedTime":     ubx.FieldSpec{WireName: "requested_time"},
+	"Requester":         ubx.FieldSpec{WireName: "requester"},
+	"RequesterObjectId": ubx.FieldSpec{WireName: "requester_object_id"},
+}
 
 var SubscriptionfeatureregistrationSubscriptionFeatureRegistration_PropertiesFields = ubx.FieldMap{
-		"ApprovalType": ubx.FieldSpec{WireName: "approval_type"},
-		"AuthorizationProfile": ubx.FieldSpec{
-			WireName: "authorization_profile",
-			Kind: "object",
-			Fields: SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Properties_AuthorizationProfileFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"DocumentationLink": ubx.FieldSpec{WireName: "documentation_link"},
-		"FeatureName": ubx.FieldSpec{WireName: "feature_name"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"ProviderNamespace": ubx.FieldSpec{WireName: "provider_namespace"},
-		"RegistrationDate": ubx.FieldSpec{WireName: "registration_date"},
-		"ReleaseDate": ubx.FieldSpec{WireName: "release_date"},
-		"ShouldFeatureDisplayInPortal": ubx.FieldSpec{WireName: "should_feature_display_in_portal"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ApprovalType": ubx.FieldSpec{WireName: "approval_type"},
+	"AuthorizationProfile": ubx.FieldSpec{
+		WireName: "authorization_profile",
+		Kind:     "object",
+		Fields:   SubscriptionfeatureregistrationSubscriptionFeatureRegistration_Properties_AuthorizationProfileFields,
+	},
+	"Description":                  ubx.FieldSpec{WireName: "description"},
+	"DisplayName":                  ubx.FieldSpec{WireName: "display_name"},
+	"DocumentationLink":            ubx.FieldSpec{WireName: "documentation_link"},
+	"FeatureName":                  ubx.FieldSpec{WireName: "feature_name"},
+	"Metadata":                     ubx.FieldSpec{WireName: "metadata"},
+	"ProviderNamespace":            ubx.FieldSpec{WireName: "provider_namespace"},
+	"RegistrationDate":             ubx.FieldSpec{WireName: "registration_date"},
+	"ReleaseDate":                  ubx.FieldSpec{WireName: "release_date"},
+	"ShouldFeatureDisplayInPortal": ubx.FieldSpec{WireName: "should_feature_display_in_portal"},
+	"State":                        ubx.FieldSpec{WireName: "state"},
+	"SubscriptionId":               ubx.FieldSpec{WireName: "subscription_id"},
+	"TenantId":                     ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type SubscriptionfeatureregistrationSubscriptionFeatureRegistrationConfig struct {
 	Properties any
@@ -89,8 +89,8 @@ var SubscriptionfeatureregistrationSubscriptionFeatureRegistration = ubx.Resourc
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SubscriptionfeatureregistrationSubscriptionFeatureRegistration_PropertiesFields,
+			Kind:     "object",
+			Fields:   SubscriptionfeatureregistrationSubscriptionFeatureRegistration_PropertiesFields,
 		},
 	},
 }

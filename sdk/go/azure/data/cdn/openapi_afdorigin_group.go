@@ -8,33 +8,33 @@ type OpenapiAfdoriginGroup_Value_Properties_Authentication_UserAssignedIdentity 
 }
 
 type OpenapiAfdoriginGroup_Value_Properties_Authentication struct {
-	Scope any
+	Scope                  any
 	TokenDestinationHeader any
-	Type any
-	UserAssignedIdentity any
+	Type                   any
+	UserAssignedIdentity   any
 }
 
 type OpenapiAfdoriginGroup_Value_Properties_HealthProbeSettings struct {
 	ProbeIntervalInSeconds any
-	ProbePath any
-	ProbeProtocol any
-	ProbeRequestType any
+	ProbePath              any
+	ProbeProtocol          any
+	ProbeRequestType       any
 }
 
 type OpenapiAfdoriginGroup_Value_Properties_LoadBalancingSettings struct {
 	AdditionalLatencyInMilliseconds any
-	SampleSize any
-	SuccessfulSamplesRequired any
+	SampleSize                      any
+	SuccessfulSamplesRequired       any
 }
 
 type OpenapiAfdoriginGroup_Value_Properties struct {
-	Authentication any
-	DeploymentStatus any
-	HealthProbeSettings any
-	LoadBalancingSettings any
-	ProfileName any
-	ProvisioningState any
-	SessionAffinityState any
+	Authentication                                        any
+	DeploymentStatus                                      any
+	HealthProbeSettings                                   any
+	LoadBalancingSettings                                 any
+	ProfileName                                           any
+	ProvisioningState                                     any
+	SessionAffinityState                                  any
 	TrafficRestorationTimeToHealedOrNewEndpointsInMinutes any
 }
 
@@ -48,7 +48,7 @@ type OpenapiAfdoriginGroupConfig struct {
 
 type OpenapiAfdoriginGroupAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The AFDOriginGroup items on this page
 	Value any

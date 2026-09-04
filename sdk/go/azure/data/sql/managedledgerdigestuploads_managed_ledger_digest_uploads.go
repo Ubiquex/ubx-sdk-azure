@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedledgerdigestuploadsManagedLedgerDigestUploads_Value_Properties struct {
 	DigestStorageEndpoint any
-	State any
+	State                 any
 }
 
 type ManagedledgerdigestuploadsManagedLedgerDigestUploads_Value struct {
@@ -13,12 +13,12 @@ type ManagedledgerdigestuploadsManagedLedgerDigestUploads_Value struct {
 }
 
 type ManagedledgerdigestuploadsManagedLedgerDigestUploadsConfig struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 }
 
 type ManagedledgerdigestuploadsManagedLedgerDigestUploadsAttrs struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 	// The link to the next page of items
 	NextLink any
@@ -29,7 +29,7 @@ type ManagedledgerdigestuploadsManagedLedgerDigestUploadsAttrs struct {
 var ManagedledgerdigestuploadsManagedLedgerDigestUploads = ubx.DataSourceBinding{
 	WireType: "azure_sql_managedledgerdigestuploads_managed_ledger_digest_uploads",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":        ubx.FieldSpec{WireName: "database_name"},
 		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
 	},
 }

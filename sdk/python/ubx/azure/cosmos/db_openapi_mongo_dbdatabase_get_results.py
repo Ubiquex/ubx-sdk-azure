@@ -41,6 +41,12 @@ class DbOpenapiMongoDbdatabaseGetResults_Properties_Resource_RestoreParameters:
 
 @dataclasses.dataclass
 class DbOpenapiMongoDbdatabaseGetResults_Properties_Resource:
+    # A system generated property representing the resource etag required for optimistic concurrency control.
+    etag: Any = None
+    # A system generated property. A unique identifier.
+    rid: Any = None
+    # A system generated property that denotes the last updated timestamp of the resource.
+    ts: Any = None
     # Enum to indicate the mode of account creation.
     create_mode: Any = None
     # Name of the Cosmos DB MongoDB database
@@ -75,6 +81,9 @@ _DbOpenapiMongoDbdatabaseGetResults_Properties_Resource_RestoreParametersFields 
 }
 
 _DbOpenapiMongoDbdatabaseGetResults_Properties_ResourceFields = {
+    "etag": ubx.FieldSpec(wire_name="_etag"),
+    "rid": ubx.FieldSpec(wire_name="_rid"),
+    "ts": ubx.FieldSpec(wire_name="_ts"),
     "create_mode": ubx.FieldSpec(wire_name="create_mode"),
     "id": ubx.FieldSpec(wire_name="id"),
     "restore_parameters": ubx.FieldSpec(

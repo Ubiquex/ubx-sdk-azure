@@ -37,41 +37,41 @@ type OpenapiVirtualNetworkPeering_Properties struct {
 }
 
 var OpenapiVirtualNetworkPeering_Properties_DatabricksAddressSpaceFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-	}
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+}
 
 var OpenapiVirtualNetworkPeering_Properties_DatabricksVirtualNetworkFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiVirtualNetworkPeering_PropertiesFields = ubx.FieldMap{
-		"AllowForwardedTraffic": ubx.FieldSpec{WireName: "allow_forwarded_traffic"},
-		"AllowGatewayTransit": ubx.FieldSpec{WireName: "allow_gateway_transit"},
-		"AllowVirtualNetworkAccess": ubx.FieldSpec{WireName: "allow_virtual_network_access"},
-		"DatabricksAddressSpace": ubx.FieldSpec{
-			WireName: "databricks_address_space",
-			Kind: "object",
-			Fields: OpenapiVirtualNetworkPeering_Properties_DatabricksAddressSpaceFields,
-		},
-		"DatabricksVirtualNetwork": ubx.FieldSpec{
-			WireName: "databricks_virtual_network",
-			Kind: "object",
-			Fields: OpenapiVirtualNetworkPeering_Properties_DatabricksVirtualNetworkFields,
-		},
-		"PeeringState": ubx.FieldSpec{WireName: "peering_state"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RemoteAddressSpace": ubx.FieldSpec{
-			WireName: "remote_address_space",
-			Kind: "object",
-			Fields: OpenapiVirtualNetworkPeering_Properties_DatabricksAddressSpaceFields,
-		},
-		"RemoteVirtualNetwork": ubx.FieldSpec{
-			WireName: "remote_virtual_network",
-			Kind: "object",
-			Fields: OpenapiVirtualNetworkPeering_Properties_DatabricksVirtualNetworkFields,
-		},
-		"UseRemoteGateways": ubx.FieldSpec{WireName: "use_remote_gateways"},
-	}
+	"AllowForwardedTraffic":     ubx.FieldSpec{WireName: "allow_forwarded_traffic"},
+	"AllowGatewayTransit":       ubx.FieldSpec{WireName: "allow_gateway_transit"},
+	"AllowVirtualNetworkAccess": ubx.FieldSpec{WireName: "allow_virtual_network_access"},
+	"DatabricksAddressSpace": ubx.FieldSpec{
+		WireName: "databricks_address_space",
+		Kind:     "object",
+		Fields:   OpenapiVirtualNetworkPeering_Properties_DatabricksAddressSpaceFields,
+	},
+	"DatabricksVirtualNetwork": ubx.FieldSpec{
+		WireName: "databricks_virtual_network",
+		Kind:     "object",
+		Fields:   OpenapiVirtualNetworkPeering_Properties_DatabricksVirtualNetworkFields,
+	},
+	"PeeringState":      ubx.FieldSpec{WireName: "peering_state"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RemoteAddressSpace": ubx.FieldSpec{
+		WireName: "remote_address_space",
+		Kind:     "object",
+		Fields:   OpenapiVirtualNetworkPeering_Properties_DatabricksAddressSpaceFields,
+	},
+	"RemoteVirtualNetwork": ubx.FieldSpec{
+		WireName: "remote_virtual_network",
+		Kind:     "object",
+		Fields:   OpenapiVirtualNetworkPeering_Properties_DatabricksVirtualNetworkFields,
+	},
+	"UseRemoteGateways": ubx.FieldSpec{WireName: "use_remote_gateways"},
+}
 
 type OpenapiVirtualNetworkPeeringConfig struct {
 	// Properties of the virtual network peering.
@@ -88,8 +88,8 @@ var OpenapiVirtualNetworkPeering = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVirtualNetworkPeering_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiVirtualNetworkPeering_PropertiesFields,
 		},
 	},
 }

@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOnlineDeployment_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,10 +20,10 @@ type OpenapiOnlineDeployment_Identity struct {
 }
 
 type OpenapiOnlineDeployment_Properties_DataCollector_Collections struct {
-	ClientId any
+	ClientId           any
 	DataCollectionMode any
-	DataId any
-	SamplingRate any
+	DataId             any
+	SamplingRate       any
 }
 
 type OpenapiOnlineDeployment_Properties_DataCollector_RequestLogging struct {
@@ -33,7 +33,7 @@ type OpenapiOnlineDeployment_Properties_DataCollector_RequestLogging struct {
 
 type OpenapiOnlineDeployment_Properties_DataCollector struct {
 	// [Required] The collection configuration. Each collection has it own configuration to collect model data and the name of collection can be arbitrary string. Model data collector can be used for either payload logging or custom logging or both of them. Collection request and response are reserved for payload logging, others are for custom logging.
-	Collections any
+	Collections    any
 	RequestLogging any
 	// When model data is collected to blob storage, we need to roll the data to different path to avoid logging all of them in a single blob file. If the rolling rate is hour, all data will be collected in the blob path /yyyy/MM/dd/HH/. If it's day, all data will be collected in blob path /yyyy/MM/dd/. The other benefit of rolling path is that model monitoring ui is able to select a time range of data very quickly.
 	RollingRate any
@@ -68,7 +68,7 @@ type OpenapiOnlineDeployment_Properties_ScaleSettings struct {
 type OpenapiOnlineDeployment_Properties struct {
 	// If true, enables Application Insights logging.
 	AppInsightsEnabled any
-	DataCollector any
+	DataCollector      any
 	// Enum to determine whether PublicNetworkAccess is Enabled or Disabled for egress of a deployment.
 	EgressPublicNetworkAccess any
 	// Enum to determine endpoint compute type.
@@ -107,117 +107,117 @@ type OpenapiOnlineDeployment_Sku struct {
 }
 
 var OpenapiOnlineDeployment_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiOnlineDeployment_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiOnlineDeployment_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiOnlineDeployment_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiOnlineDeployment_Properties_DataCollector_CollectionsFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"DataCollectionMode": ubx.FieldSpec{WireName: "data_collection_mode"},
-		"DataId": ubx.FieldSpec{WireName: "data_id"},
-		"SamplingRate": ubx.FieldSpec{WireName: "sampling_rate"},
-	}
+	"ClientId":           ubx.FieldSpec{WireName: "client_id"},
+	"DataCollectionMode": ubx.FieldSpec{WireName: "data_collection_mode"},
+	"DataId":             ubx.FieldSpec{WireName: "data_id"},
+	"SamplingRate":       ubx.FieldSpec{WireName: "sampling_rate"},
+}
 
 var OpenapiOnlineDeployment_Properties_DataCollector_RequestLoggingFields = ubx.FieldMap{
-		"CaptureHeaders": ubx.FieldSpec{WireName: "capture_headers"},
-	}
+	"CaptureHeaders": ubx.FieldSpec{WireName: "capture_headers"},
+}
 
 var OpenapiOnlineDeployment_Properties_DataCollectorFields = ubx.FieldMap{
-		"Collections": ubx.FieldSpec{
-			WireName: "collections",
-			Kind: "map",
-			Fields: OpenapiOnlineDeployment_Properties_DataCollector_CollectionsFields,
-		},
-		"RequestLogging": ubx.FieldSpec{
-			WireName: "request_logging",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_Properties_DataCollector_RequestLoggingFields,
-		},
-		"RollingRate": ubx.FieldSpec{WireName: "rolling_rate"},
-	}
+	"Collections": ubx.FieldSpec{
+		WireName: "collections",
+		Kind:     "map",
+		Fields:   OpenapiOnlineDeployment_Properties_DataCollector_CollectionsFields,
+	},
+	"RequestLogging": ubx.FieldSpec{
+		WireName: "request_logging",
+		Kind:     "object",
+		Fields:   OpenapiOnlineDeployment_Properties_DataCollector_RequestLoggingFields,
+	},
+	"RollingRate": ubx.FieldSpec{WireName: "rolling_rate"},
+}
 
 var OpenapiOnlineDeployment_Properties_LivenessProbeFields = ubx.FieldMap{
-		"FailureThreshold": ubx.FieldSpec{WireName: "failure_threshold"},
-		"InitialDelay": ubx.FieldSpec{WireName: "initial_delay"},
-		"Period": ubx.FieldSpec{WireName: "period"},
-		"SuccessThreshold": ubx.FieldSpec{WireName: "success_threshold"},
-		"Timeout": ubx.FieldSpec{WireName: "timeout"},
-	}
+	"FailureThreshold": ubx.FieldSpec{WireName: "failure_threshold"},
+	"InitialDelay":     ubx.FieldSpec{WireName: "initial_delay"},
+	"Period":           ubx.FieldSpec{WireName: "period"},
+	"SuccessThreshold": ubx.FieldSpec{WireName: "success_threshold"},
+	"Timeout":          ubx.FieldSpec{WireName: "timeout"},
+}
 
 var OpenapiOnlineDeployment_Properties_RequestSettingsFields = ubx.FieldMap{
-		"MaxConcurrentRequestsPerInstance": ubx.FieldSpec{WireName: "max_concurrent_requests_per_instance"},
-		"MaxQueueWait": ubx.FieldSpec{WireName: "max_queue_wait"},
-		"RequestTimeout": ubx.FieldSpec{WireName: "request_timeout"},
-	}
+	"MaxConcurrentRequestsPerInstance": ubx.FieldSpec{WireName: "max_concurrent_requests_per_instance"},
+	"MaxQueueWait":                     ubx.FieldSpec{WireName: "max_queue_wait"},
+	"RequestTimeout":                   ubx.FieldSpec{WireName: "request_timeout"},
+}
 
 var OpenapiOnlineDeployment_Properties_ScaleSettingsFields = ubx.FieldMap{
-		"ScaleType": ubx.FieldSpec{WireName: "scale_type"},
-	}
+	"ScaleType": ubx.FieldSpec{WireName: "scale_type"},
+}
 
 var OpenapiOnlineDeployment_PropertiesFields = ubx.FieldMap{
-		"AppInsightsEnabled": ubx.FieldSpec{WireName: "app_insights_enabled"},
-		"DataCollector": ubx.FieldSpec{
-			WireName: "data_collector",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_Properties_DataCollectorFields,
-		},
-		"EgressPublicNetworkAccess": ubx.FieldSpec{WireName: "egress_public_network_access"},
-		"EndpointComputeType": ubx.FieldSpec{WireName: "endpoint_compute_type"},
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-		"LivenessProbe": ubx.FieldSpec{
-			WireName: "liveness_probe",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_Properties_LivenessProbeFields,
-		},
-		"Model": ubx.FieldSpec{WireName: "model"},
-		"ModelMountPath": ubx.FieldSpec{WireName: "model_mount_path"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ReadinessProbe": ubx.FieldSpec{
-			WireName: "readiness_probe",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_Properties_LivenessProbeFields,
-		},
-		"RequestSettings": ubx.FieldSpec{
-			WireName: "request_settings",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_Properties_RequestSettingsFields,
-		},
-		"ScaleSettings": ubx.FieldSpec{
-			WireName: "scale_settings",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_Properties_ScaleSettingsFields,
-		},
-		"StartupProbe": ubx.FieldSpec{
-			WireName: "startup_probe",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_Properties_LivenessProbeFields,
-		},
-	}
+	"AppInsightsEnabled": ubx.FieldSpec{WireName: "app_insights_enabled"},
+	"DataCollector": ubx.FieldSpec{
+		WireName: "data_collector",
+		Kind:     "object",
+		Fields:   OpenapiOnlineDeployment_Properties_DataCollectorFields,
+	},
+	"EgressPublicNetworkAccess": ubx.FieldSpec{WireName: "egress_public_network_access"},
+	"EndpointComputeType":       ubx.FieldSpec{WireName: "endpoint_compute_type"},
+	"InstanceType":              ubx.FieldSpec{WireName: "instance_type"},
+	"LivenessProbe": ubx.FieldSpec{
+		WireName: "liveness_probe",
+		Kind:     "object",
+		Fields:   OpenapiOnlineDeployment_Properties_LivenessProbeFields,
+	},
+	"Model":             ubx.FieldSpec{WireName: "model"},
+	"ModelMountPath":    ubx.FieldSpec{WireName: "model_mount_path"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ReadinessProbe": ubx.FieldSpec{
+		WireName: "readiness_probe",
+		Kind:     "object",
+		Fields:   OpenapiOnlineDeployment_Properties_LivenessProbeFields,
+	},
+	"RequestSettings": ubx.FieldSpec{
+		WireName: "request_settings",
+		Kind:     "object",
+		Fields:   OpenapiOnlineDeployment_Properties_RequestSettingsFields,
+	},
+	"ScaleSettings": ubx.FieldSpec{
+		WireName: "scale_settings",
+		Kind:     "object",
+		Fields:   OpenapiOnlineDeployment_Properties_ScaleSettingsFields,
+	},
+	"StartupProbe": ubx.FieldSpec{
+		WireName: "startup_probe",
+		Kind:     "object",
+		Fields:   OpenapiOnlineDeployment_Properties_LivenessProbeFields,
+	},
+}
 
 var OpenapiOnlineDeployment_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiOnlineDeploymentConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
-	Kind any
+	Kind       any
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
@@ -227,7 +227,7 @@ type OpenapiOnlineDeploymentAttrs struct {
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// Metadata used by portal/tooling/etc to render different UX experiences for resources of the same type.
-	Kind any
+	Kind       any
 	Properties any
 	// The resource model definition representing SKU
 	Sku any
@@ -238,19 +238,19 @@ var OpenapiOnlineDeployment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiOnlineDeployment_IdentityFields,
 		},
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiOnlineDeployment_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiOnlineDeployment_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiOnlineDeployment_SkuFields,
 		},
 	},
 }

@@ -26,22 +26,22 @@ type QuotaTier_Properties struct {
 }
 
 var QuotaTier_Properties_TierUpgradeEligibilityInfoFields = ubx.FieldMap{
-		"NextTierName": ubx.FieldSpec{WireName: "next_tier_name"},
-		"UpgradeApplicableDate": ubx.FieldSpec{WireName: "upgrade_applicable_date"},
-		"UpgradeAvailabilityStatus": ubx.FieldSpec{WireName: "upgrade_availability_status"},
-		"UpgradeUnavailabilityReason": ubx.FieldSpec{WireName: "upgrade_unavailability_reason"},
-	}
+	"NextTierName":                ubx.FieldSpec{WireName: "next_tier_name"},
+	"UpgradeApplicableDate":       ubx.FieldSpec{WireName: "upgrade_applicable_date"},
+	"UpgradeAvailabilityStatus":   ubx.FieldSpec{WireName: "upgrade_availability_status"},
+	"UpgradeUnavailabilityReason": ubx.FieldSpec{WireName: "upgrade_unavailability_reason"},
+}
 
 var QuotaTier_PropertiesFields = ubx.FieldMap{
-		"AssignmentDate": ubx.FieldSpec{WireName: "assignment_date"},
-		"CurrentTierName": ubx.FieldSpec{WireName: "current_tier_name"},
-		"TierUpgradeEligibilityInfo": ubx.FieldSpec{
-			WireName: "tier_upgrade_eligibility_info",
-			Kind: "object",
-			Fields: QuotaTier_Properties_TierUpgradeEligibilityInfoFields,
-		},
-		"TierUpgradePolicy": ubx.FieldSpec{WireName: "tier_upgrade_policy"},
-	}
+	"AssignmentDate":  ubx.FieldSpec{WireName: "assignment_date"},
+	"CurrentTierName": ubx.FieldSpec{WireName: "current_tier_name"},
+	"TierUpgradeEligibilityInfo": ubx.FieldSpec{
+		WireName: "tier_upgrade_eligibility_info",
+		Kind:     "object",
+		Fields:   QuotaTier_Properties_TierUpgradeEligibilityInfoFields,
+	},
+	"TierUpgradePolicy": ubx.FieldSpec{WireName: "tier_upgrade_policy"},
+}
 
 type QuotaTierConfig struct {
 	// Properties of Quota Tier resource'.
@@ -62,8 +62,8 @@ var QuotaTier = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: QuotaTier_PropertiesFields,
+			Kind:     "object",
+			Fields:   QuotaTier_PropertiesFields,
 		},
 		"Default": ubx.FieldSpec{WireName: "default"},
 	},

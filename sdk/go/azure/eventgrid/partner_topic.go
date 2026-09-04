@@ -4,7 +4,7 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PartnerTopic_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,9 +20,9 @@ type PartnerTopic_Identity struct {
 }
 
 type PartnerTopic_Properties_EventTypeInfo_InlineEventTypes struct {
-	DataSchemaUrl any
-	Description any
-	DisplayName any
+	DataSchemaUrl    any
+	Description      any
+	DisplayName      any
 	DocumentationUrl any
 }
 
@@ -68,68 +68,57 @@ type PartnerTopic_SystemData struct {
 }
 
 var PartnerTopic_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var PartnerTopic_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: PartnerTopic_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   PartnerTopic_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var PartnerTopic_Properties_EventTypeInfo_InlineEventTypesFields = ubx.FieldMap{
-		"DataSchemaUrl": ubx.FieldSpec{WireName: "data_schema_url"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"DocumentationUrl": ubx.FieldSpec{WireName: "documentation_url"},
-	}
+	"DataSchemaUrl":    ubx.FieldSpec{WireName: "data_schema_url"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
+	"DocumentationUrl": ubx.FieldSpec{WireName: "documentation_url"},
+}
 
 var PartnerTopic_Properties_EventTypeInfoFields = ubx.FieldMap{
-		"InlineEventTypes": ubx.FieldSpec{
-			WireName: "inline_event_types",
-			Kind: "map",
-			Fields: PartnerTopic_Properties_EventTypeInfo_InlineEventTypesFields,
-		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-	}
+	"InlineEventTypes": ubx.FieldSpec{
+		WireName: "inline_event_types",
+		Kind:     "map",
+		Fields:   PartnerTopic_Properties_EventTypeInfo_InlineEventTypesFields,
+	},
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+}
 
 var PartnerTopic_PropertiesFields = ubx.FieldMap{
-		"ActivationState": ubx.FieldSpec{WireName: "activation_state"},
-		"EventTypeInfo": ubx.FieldSpec{
-			WireName: "event_type_info",
-			Kind: "object",
-			Fields: PartnerTopic_Properties_EventTypeInfoFields,
-		},
-		"ExpirationTimeIfNotActivatedUtc": ubx.FieldSpec{WireName: "expiration_time_if_not_activated_utc"},
-		"MessageForActivation": ubx.FieldSpec{WireName: "message_for_activation"},
-		"PartnerRegistrationImmutableId": ubx.FieldSpec{WireName: "partner_registration_immutable_id"},
-		"PartnerTopicFriendlyDescription": ubx.FieldSpec{WireName: "partner_topic_friendly_description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
-
-var PartnerTopic_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ActivationState": ubx.FieldSpec{WireName: "activation_state"},
+	"EventTypeInfo": ubx.FieldSpec{
+		WireName: "event_type_info",
+		Kind:     "object",
+		Fields:   PartnerTopic_Properties_EventTypeInfoFields,
+	},
+	"ExpirationTimeIfNotActivatedUtc": ubx.FieldSpec{WireName: "expiration_time_if_not_activated_utc"},
+	"MessageForActivation":            ubx.FieldSpec{WireName: "message_for_activation"},
+	"PartnerRegistrationImmutableId":  ubx.FieldSpec{WireName: "partner_registration_immutable_id"},
+	"PartnerTopicFriendlyDescription": ubx.FieldSpec{WireName: "partner_topic_friendly_description"},
+	"ProvisioningState":               ubx.FieldSpec{WireName: "provisioning_state"},
+	"Source":                          ubx.FieldSpec{WireName: "source"},
+}
 
 type PartnerTopicConfig struct {
 	// The identity information for the resource.
 	Identity any
 	// Properties of the Partner Topic.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type PartnerTopicAttrs struct {
@@ -146,18 +135,13 @@ var PartnerTopic = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: PartnerTopic_IdentityFields,
+			Kind:     "object",
+			Fields:   PartnerTopic_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PartnerTopic_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: PartnerTopic_SystemDataFields,
+			Kind:     "object",
+			Fields:   PartnerTopic_PropertiesFields,
 		},
 	},
 }

@@ -4,16 +4,16 @@ package newrelic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PlanDataResource_Value_Properties_PlanData struct {
-	BillingCycle any
+	BillingCycle  any
 	EffectiveDate any
-	PlanDetails any
-	UsageType any
+	PlanDetails   any
+	UsageType     any
 }
 
 type PlanDataResource_Value_Properties struct {
 	AccountCreationSource any
-	OrgCreationSource any
-	PlanData any
+	OrgCreationSource     any
+	PlanData              any
 }
 
 type PlanDataResource_Value struct {
@@ -21,14 +21,14 @@ type PlanDataResource_Value struct {
 }
 
 type PlanDataResourceConfig struct {
-	AccountId any
+	AccountId      any
 	OrganizationId any
 }
 
 type PlanDataResourceAttrs struct {
 	AccountId any
 	// The link to the next page of items
-	NextLink any
+	NextLink       any
 	OrganizationId any
 	// The PlanDataResource items on this page
 	Value any
@@ -37,7 +37,7 @@ type PlanDataResourceAttrs struct {
 var PlanDataResource = ubx.DataSourceBinding{
 	WireType: "azure_newrelic_plan_data_resource",
 	Fields: ubx.FieldMap{
-		"AccountId": ubx.FieldSpec{WireName: "account_id"},
+		"AccountId":      ubx.FieldSpec{WireName: "account_id"},
 		"OrganizationId": ubx.FieldSpec{WireName: "organization_id"},
 	},
 }

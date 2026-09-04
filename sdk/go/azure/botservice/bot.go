@@ -9,15 +9,15 @@ type Bot_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct
 
 type Bot_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Bot_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Bot_Properties_PrivateEndpointConnections struct {
@@ -98,79 +98,79 @@ type Bot_Properties struct {
 }
 
 var Bot_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Bot_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var Bot_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Bot_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Bot_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Bot_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Bot_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Bot_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Bot_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Bot_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Bot_PropertiesFields = ubx.FieldMap{
-		"AllSettings": ubx.FieldSpec{WireName: "all_settings"},
-		"AppPasswordHint": ubx.FieldSpec{WireName: "app_password_hint"},
-		"CmekEncryptionStatus": ubx.FieldSpec{WireName: "cmek_encryption_status"},
-		"CmekKeyVaultUrl": ubx.FieldSpec{WireName: "cmek_key_vault_url"},
-		"ConfiguredChannels": ubx.FieldSpec{WireName: "configured_channels"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DeveloperAppInsightKey": ubx.FieldSpec{WireName: "developer_app_insight_key"},
-		"DeveloperAppInsightsApiKey": ubx.FieldSpec{WireName: "developer_app_insights_api_key"},
-		"DeveloperAppInsightsApplicationId": ubx.FieldSpec{WireName: "developer_app_insights_application_id"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"EnabledChannels": ubx.FieldSpec{WireName: "enabled_channels"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"EndpointVersion": ubx.FieldSpec{WireName: "endpoint_version"},
-		"IconUrl": ubx.FieldSpec{WireName: "icon_url"},
-		"IsCmekEnabled": ubx.FieldSpec{WireName: "is_cmek_enabled"},
-		"IsDeveloperAppInsightsApiKeySet": ubx.FieldSpec{WireName: "is_developer_app_insights_api_key_set"},
-		"IsStreamingSupported": ubx.FieldSpec{WireName: "is_streaming_supported"},
-		"LuisAppIds": ubx.FieldSpec{WireName: "luis_app_ids"},
-		"LuisKey": ubx.FieldSpec{WireName: "luis_key"},
-		"ManifestUrl": ubx.FieldSpec{WireName: "manifest_url"},
-		"MigrationToken": ubx.FieldSpec{WireName: "migration_token"},
-		"MsaAppId": ubx.FieldSpec{WireName: "msa_app_id"},
-		"MsaAppMsiresourceId": ubx.FieldSpec{WireName: "msa_app_msiresource_id"},
-		"MsaAppTenantId": ubx.FieldSpec{WireName: "msa_app_tenant_id"},
-		"MsaAppType": ubx.FieldSpec{WireName: "msa_app_type"},
-		"OpenWithHint": ubx.FieldSpec{WireName: "open_with_hint"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Bot_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"PublishingCredentials": ubx.FieldSpec{WireName: "publishing_credentials"},
-		"SchemaTransformationVersion": ubx.FieldSpec{WireName: "schema_transformation_version"},
-		"StorageResourceId": ubx.FieldSpec{WireName: "storage_resource_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AllSettings":                       ubx.FieldSpec{WireName: "all_settings"},
+	"AppPasswordHint":                   ubx.FieldSpec{WireName: "app_password_hint"},
+	"CmekEncryptionStatus":              ubx.FieldSpec{WireName: "cmek_encryption_status"},
+	"CmekKeyVaultUrl":                   ubx.FieldSpec{WireName: "cmek_key_vault_url"},
+	"ConfiguredChannels":                ubx.FieldSpec{WireName: "configured_channels"},
+	"Description":                       ubx.FieldSpec{WireName: "description"},
+	"DeveloperAppInsightKey":            ubx.FieldSpec{WireName: "developer_app_insight_key"},
+	"DeveloperAppInsightsApiKey":        ubx.FieldSpec{WireName: "developer_app_insights_api_key"},
+	"DeveloperAppInsightsApplicationId": ubx.FieldSpec{WireName: "developer_app_insights_application_id"},
+	"DisableLocalAuth":                  ubx.FieldSpec{WireName: "disable_local_auth"},
+	"DisplayName":                       ubx.FieldSpec{WireName: "display_name"},
+	"EnabledChannels":                   ubx.FieldSpec{WireName: "enabled_channels"},
+	"Endpoint":                          ubx.FieldSpec{WireName: "endpoint"},
+	"EndpointVersion":                   ubx.FieldSpec{WireName: "endpoint_version"},
+	"IconUrl":                           ubx.FieldSpec{WireName: "icon_url"},
+	"IsCmekEnabled":                     ubx.FieldSpec{WireName: "is_cmek_enabled"},
+	"IsDeveloperAppInsightsApiKeySet":   ubx.FieldSpec{WireName: "is_developer_app_insights_api_key_set"},
+	"IsStreamingSupported":              ubx.FieldSpec{WireName: "is_streaming_supported"},
+	"LuisAppIds":                        ubx.FieldSpec{WireName: "luis_app_ids"},
+	"LuisKey":                           ubx.FieldSpec{WireName: "luis_key"},
+	"ManifestUrl":                       ubx.FieldSpec{WireName: "manifest_url"},
+	"MigrationToken":                    ubx.FieldSpec{WireName: "migration_token"},
+	"MsaAppId":                          ubx.FieldSpec{WireName: "msa_app_id"},
+	"MsaAppMsiresourceId":               ubx.FieldSpec{WireName: "msa_app_msiresource_id"},
+	"MsaAppTenantId":                    ubx.FieldSpec{WireName: "msa_app_tenant_id"},
+	"MsaAppType":                        ubx.FieldSpec{WireName: "msa_app_type"},
+	"OpenWithHint":                      ubx.FieldSpec{WireName: "open_with_hint"},
+	"Parameters":                        ubx.FieldSpec{WireName: "parameters"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Bot_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess":         ubx.FieldSpec{WireName: "public_network_access"},
+	"PublishingCredentials":       ubx.FieldSpec{WireName: "publishing_credentials"},
+	"SchemaTransformationVersion": ubx.FieldSpec{WireName: "schema_transformation_version"},
+	"StorageResourceId":           ubx.FieldSpec{WireName: "storage_resource_id"},
+	"TenantId":                    ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type BotConfig struct {
 	// The parameters to provide for the Bot.
@@ -187,8 +187,8 @@ var Bot = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Bot_PropertiesFields,
+			Kind:     "object",
+			Fields:   Bot_PropertiesFields,
 		},
 	},
 }

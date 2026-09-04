@@ -3,7 +3,7 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInput struct {
+type ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetails struct {
 	// The base authority for Azure Active Directory authentication.
 	AadAuthority any
 	// The application/client Id for the service principal with which the on-premise management/data plane components would communicate with our Azure services.
@@ -16,49 +16,209 @@ type ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInput stru
 	TenantId any
 }
 
+type ServiceRecoveryServicesProvider_Properties_HealthErrorDetails_InnerHealthErrors struct {
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
+	RecoveryProviderErrorMessage any
+	SummaryMessage               any
+}
+
+type ServiceRecoveryServicesProvider_Properties_HealthErrorDetails struct {
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
+	RecoveryProviderErrorMessage any
+	SummaryMessage               any
+}
+
+type ServiceRecoveryServicesProvider_Properties_ProviderVersionDetails struct {
+	// Version expiry date.
+	ExpiryDate any
+	// A value indicating whether security update required.
+	Status any
+	// The agent version.
+	Version any
+}
+
 type ServiceRecoveryServicesProvider_Properties struct {
+	// The scenarios allowed on this provider.
+	AllowedScenarios any
+	// Identity provider details.
+	AuthenticationIdentityDetails any
 	// Identity provider input.
 	AuthenticationIdentityInput any
 	// The Bios Id of the machine.
 	BiosId any
+	// A value indicating whether DRA is responsive.
+	ConnectionStatus any
+	// Identity provider details.
+	DataPlaneAuthenticationIdentityDetails any
 	// Identity provider input.
 	DataPlaneAuthenticationIdentityInput any
+	// The DRA Id.
+	DraIdentifier any
+	// The fabric friendly name.
+	FabricFriendlyName any
+	// Type of the site.
+	FabricType any
+	// Friendly name of the DRA.
+	FriendlyName any
+	// The recovery services provider health error details.
+	HealthErrorDetails any
+	// Time when last heartbeat was sent by the DRA.
+	LastHeartBeat any
 	// The Id of the machine where the provider is getting added.
 	MachineId any
 	// The name of the machine where the provider is getting added.
 	MachineName any
+	// Number of protected VMs currently managed by the DRA.
+	ProtectedItemCount any
+	// The provider version.
+	ProviderVersion any
+	// Version related details.
+	ProviderVersionDetails any
+	// Expiry date of the version.
+	ProviderVersionExpiryDate any
+	// DRA version status.
+	ProviderVersionState any
+	// Identity provider details.
+	ResourceAccessIdentityDetails any
 	// Identity provider input.
 	ResourceAccessIdentityInput any
+	// The fabric provider.
+	ServerVersion any
 }
 
-var ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields = ubx.FieldMap{
-		"AadAuthority": ubx.FieldSpec{WireName: "aad_authority"},
-		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-		"Audience": ubx.FieldSpec{WireName: "audience"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+var ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields = ubx.FieldMap{
+	"AadAuthority":  ubx.FieldSpec{WireName: "aad_authority"},
+	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+	"Audience":      ubx.FieldSpec{WireName: "audience"},
+	"ObjectId":      ubx.FieldSpec{WireName: "object_id"},
+	"TenantId":      ubx.FieldSpec{WireName: "tenant_id"},
+}
+
+var ServiceRecoveryServicesProvider_Properties_HealthErrorDetails_InnerHealthErrorsFields = ubx.FieldMap{
+	"CreationTimeUtc":              ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability":        ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":                     ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":                ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":                    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":                      ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":                   ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":                 ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":                  ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":                    ubx.FieldSpec{WireName: "error_type"},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
+
+var ServiceRecoveryServicesProvider_Properties_HealthErrorDetailsFields = ubx.FieldMap{
+	"CreationTimeUtc":       ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":              ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":         ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":             ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":               ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":            ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":          ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":           ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":             ubx.FieldSpec{WireName: "error_type"},
+	"InnerHealthErrors": ubx.FieldSpec{
+		WireName: "inner_health_errors",
+		Kind:     "list",
+		Fields:   ServiceRecoveryServicesProvider_Properties_HealthErrorDetails_InnerHealthErrorsFields,
+	},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
+
+var ServiceRecoveryServicesProvider_Properties_ProviderVersionDetailsFields = ubx.FieldMap{
+	"ExpiryDate": ubx.FieldSpec{WireName: "expiry_date"},
+	"Status":     ubx.FieldSpec{WireName: "status"},
+	"Version":    ubx.FieldSpec{WireName: "version"},
+}
 
 var ServiceRecoveryServicesProvider_PropertiesFields = ubx.FieldMap{
-		"AuthenticationIdentityInput": ubx.FieldSpec{
-			WireName: "authentication_identity_input",
-			Kind: "object",
-			Fields: ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields,
-		},
-		"BiosId": ubx.FieldSpec{WireName: "bios_id"},
-		"DataPlaneAuthenticationIdentityInput": ubx.FieldSpec{
-			WireName: "data_plane_authentication_identity_input",
-			Kind: "object",
-			Fields: ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields,
-		},
-		"MachineId": ubx.FieldSpec{WireName: "machine_id"},
-		"MachineName": ubx.FieldSpec{WireName: "machine_name"},
-		"ResourceAccessIdentityInput": ubx.FieldSpec{
-			WireName: "resource_access_identity_input",
-			Kind: "object",
-			Fields: ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityInputFields,
-		},
-	}
+	"AllowedScenarios": ubx.FieldSpec{WireName: "allowed_scenarios"},
+	"AuthenticationIdentityDetails": ubx.FieldSpec{
+		WireName: "authentication_identity_details",
+		Kind:     "object",
+		Fields:   ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+	},
+	"AuthenticationIdentityInput": ubx.FieldSpec{
+		WireName: "authentication_identity_input",
+		Kind:     "object",
+		Fields:   ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+	},
+	"BiosId":           ubx.FieldSpec{WireName: "bios_id"},
+	"ConnectionStatus": ubx.FieldSpec{WireName: "connection_status"},
+	"DataPlaneAuthenticationIdentityDetails": ubx.FieldSpec{
+		WireName: "data_plane_authentication_identity_details",
+		Kind:     "object",
+		Fields:   ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+	},
+	"DataPlaneAuthenticationIdentityInput": ubx.FieldSpec{
+		WireName: "data_plane_authentication_identity_input",
+		Kind:     "object",
+		Fields:   ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+	},
+	"DraIdentifier":      ubx.FieldSpec{WireName: "dra_identifier"},
+	"FabricFriendlyName": ubx.FieldSpec{WireName: "fabric_friendly_name"},
+	"FabricType":         ubx.FieldSpec{WireName: "fabric_type"},
+	"FriendlyName":       ubx.FieldSpec{WireName: "friendly_name"},
+	"HealthErrorDetails": ubx.FieldSpec{
+		WireName: "health_error_details",
+		Kind:     "list",
+		Fields:   ServiceRecoveryServicesProvider_Properties_HealthErrorDetailsFields,
+	},
+	"LastHeartBeat":      ubx.FieldSpec{WireName: "last_heart_beat"},
+	"MachineId":          ubx.FieldSpec{WireName: "machine_id"},
+	"MachineName":        ubx.FieldSpec{WireName: "machine_name"},
+	"ProtectedItemCount": ubx.FieldSpec{WireName: "protected_item_count"},
+	"ProviderVersion":    ubx.FieldSpec{WireName: "provider_version"},
+	"ProviderVersionDetails": ubx.FieldSpec{
+		WireName: "provider_version_details",
+		Kind:     "object",
+		Fields:   ServiceRecoveryServicesProvider_Properties_ProviderVersionDetailsFields,
+	},
+	"ProviderVersionExpiryDate": ubx.FieldSpec{WireName: "provider_version_expiry_date"},
+	"ProviderVersionState":      ubx.FieldSpec{WireName: "provider_version_state"},
+	"ResourceAccessIdentityDetails": ubx.FieldSpec{
+		WireName: "resource_access_identity_details",
+		Kind:     "object",
+		Fields:   ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+	},
+	"ResourceAccessIdentityInput": ubx.FieldSpec{
+		WireName: "resource_access_identity_input",
+		Kind:     "object",
+		Fields:   ServiceRecoveryServicesProvider_Properties_AuthenticationIdentityDetailsFields,
+	},
+	"ServerVersion": ubx.FieldSpec{WireName: "server_version"},
+}
 
 type ServiceRecoveryServicesProviderConfig struct {
 	// The properties of an add provider request.
@@ -77,8 +237,8 @@ var ServiceRecoveryServicesProvider = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceRecoveryServicesProvider_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceRecoveryServicesProvider_PropertiesFields,
 		},
 	},
 }

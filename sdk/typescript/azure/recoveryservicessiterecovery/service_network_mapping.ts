@@ -9,10 +9,26 @@ export interface ServiceNetworkMapping_Properties_FabricSpecificDetails {
 export interface ServiceNetworkMapping_Properties {
   /** Input details specific to fabrics during Network Mapping. */
   fabricSpecificDetails?: ServiceNetworkMapping_Properties_FabricSpecificDetails | Computed<ServiceNetworkMapping_Properties_FabricSpecificDetails>;
+  /** Network Mapping fabric specific settings. */
+  fabricSpecificSettings?: ServiceNetworkMapping_Properties_FabricSpecificDetails | Computed<ServiceNetworkMapping_Properties_FabricSpecificDetails>;
+  /** The primary fabric friendly name. */
+  primaryFabricFriendlyName?: string | Computed<string>;
+  /** The primary network friendly name. */
+  primaryNetworkFriendlyName?: string | Computed<string>;
+  /** The primary network id for network mapping. */
+  primaryNetworkId?: string | Computed<string>;
+  /** The recovery fabric ARM id. */
+  recoveryFabricArmId?: string | Computed<string>;
+  /** The recovery fabric friendly name. */
+  recoveryFabricFriendlyName?: string | Computed<string>;
   /** Recovery fabric Name. */
   recoveryFabricName?: string | Computed<string>;
+  /** The recovery network friendly name. */
+  recoveryNetworkFriendlyName?: string | Computed<string>;
   /** Recovery network Id. */
   recoveryNetworkId: string | Computed<string>;
+  /** The pairing state for network mapping. */
+  state?: string | Computed<string>;
 }
 
 const ServiceNetworkMapping_Properties_FabricSpecificDetailsFields: FieldMap = {
@@ -25,8 +41,20 @@ const ServiceNetworkMapping_PropertiesFields: FieldMap = {
     kind: "object",
     fields: ServiceNetworkMapping_Properties_FabricSpecificDetailsFields,
   },
+  fabricSpecificSettings: {
+    wireName: "fabric_specific_settings",
+    kind: "object",
+    fields: ServiceNetworkMapping_Properties_FabricSpecificDetailsFields,
+  },
+  primaryFabricFriendlyName: "primary_fabric_friendly_name",
+  primaryNetworkFriendlyName: "primary_network_friendly_name",
+  primaryNetworkId: "primary_network_id",
+  recoveryFabricArmId: "recovery_fabric_arm_id",
+  recoveryFabricFriendlyName: "recovery_fabric_friendly_name",
   recoveryFabricName: "recovery_fabric_name",
+  recoveryNetworkFriendlyName: "recovery_network_friendly_name",
   recoveryNetworkId: "recovery_network_id",
+  state: "state",
 };
 
 export interface ServiceNetworkMappingConfig {

@@ -4,17 +4,17 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiGremlinRoleDefinitionResource_Value_Properties_Permissions struct {
-	DataActions any
-	Id any
+	DataActions    any
+	Id             any
 	NotDataActions any
 }
 
 type DbOpenapiGremlinRoleDefinitionResource_Value_Properties struct {
 	AssignableScopes any
-	Id any
-	Permissions any
-	RoleName any
-	Type any
+	Id               any
+	Permissions      any
+	RoleName         any
+	Type             any
 }
 
 type DbOpenapiGremlinRoleDefinitionResource_Value struct {

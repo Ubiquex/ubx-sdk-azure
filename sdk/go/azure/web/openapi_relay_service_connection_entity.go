@@ -4,24 +4,24 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRelayServiceConnectionEntity_Properties struct {
-	BiztalkUri any
-	EntityConnectionString any
-	EntityName any
-	Hostname any
-	Port any
+	BiztalkUri               any
+	EntityConnectionString   any
+	EntityName               any
+	Hostname                 any
+	Port                     any
 	ResourceConnectionString any
-	ResourceType any
+	ResourceType             any
 }
 
 var OpenapiRelayServiceConnectionEntity_PropertiesFields = ubx.FieldMap{
-		"BiztalkUri": ubx.FieldSpec{WireName: "biztalk_uri"},
-		"EntityConnectionString": ubx.FieldSpec{WireName: "entity_connection_string"},
-		"EntityName": ubx.FieldSpec{WireName: "entity_name"},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ResourceConnectionString": ubx.FieldSpec{WireName: "resource_connection_string"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-	}
+	"BiztalkUri":               ubx.FieldSpec{WireName: "biztalk_uri"},
+	"EntityConnectionString":   ubx.FieldSpec{WireName: "entity_connection_string"},
+	"EntityName":               ubx.FieldSpec{WireName: "entity_name"},
+	"Hostname":                 ubx.FieldSpec{WireName: "hostname"},
+	"Port":                     ubx.FieldSpec{WireName: "port"},
+	"ResourceConnectionString": ubx.FieldSpec{WireName: "resource_connection_string"},
+	"ResourceType":             ubx.FieldSpec{WireName: "resource_type"},
+}
 
 type OpenapiRelayServiceConnectionEntityConfig struct {
 	// Kind of resource.
@@ -47,8 +47,8 @@ var OpenapiRelayServiceConnectionEntity = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRelayServiceConnectionEntity_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRelayServiceConnectionEntity_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

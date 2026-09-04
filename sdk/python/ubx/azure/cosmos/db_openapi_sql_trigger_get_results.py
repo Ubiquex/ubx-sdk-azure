@@ -35,6 +35,12 @@ class DbOpenapiSqlTriggerGetResults_Properties_Options:
 
 @dataclasses.dataclass
 class DbOpenapiSqlTriggerGetResults_Properties_Resource:
+    # A system generated property representing the resource etag required for optimistic concurrency control.
+    etag: Any = None
+    # A system generated property. A unique identifier.
+    rid: Any = None
+    # A system generated property that denotes the last updated timestamp of the resource.
+    ts: Any = None
     # Body of the Trigger
     body: Any = None
     # Name of the Cosmos DB SQL trigger
@@ -65,6 +71,9 @@ _DbOpenapiSqlTriggerGetResults_Properties_OptionsFields = {
 }
 
 _DbOpenapiSqlTriggerGetResults_Properties_ResourceFields = {
+    "etag": ubx.FieldSpec(wire_name="_etag"),
+    "rid": ubx.FieldSpec(wire_name="_rid"),
+    "ts": ubx.FieldSpec(wire_name="_ts"),
     "body": ubx.FieldSpec(wire_name="body"),
     "id": ubx.FieldSpec(wire_name="id"),
     "trigger_operation": ubx.FieldSpec(wire_name="trigger_operation"),

@@ -4,31 +4,31 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTransferDetails_Value_Properties_DetailedTransferStatus_ErrorDetails struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type OpenapiTransferDetails_Value_Properties_DetailedTransferStatus struct {
-	ErrorDetails any
-	ProductId any
-	ProductName any
-	ProductType any
+	ErrorDetails   any
+	ProductId      any
+	ProductName    any
+	ProductType    any
 	SkuDescription any
 	TransferStatus any
 }
 
 type OpenapiTransferDetails_Value_Properties struct {
-	CanceledBy any
+	CanceledBy             any
 	DetailedTransferStatus any
-	ExpirationTime any
-	InitiatorEmailId any
-	RecipientEmailId any
-	TransferStatus any
+	ExpirationTime         any
+	InitiatorEmailId       any
+	RecipientEmailId       any
+	TransferStatus         any
 }
 
 type OpenapiTransferDetails_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiTransferDetailsConfig struct {

@@ -7,30 +7,139 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ServiceProtectionContainerMapping_Properties_ProviderSpecificInput:
-    # The class type.
+class ServiceProtectionContainerMapping_Properties_HealthErrorDetails_InnerHealthErrors:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
+class ServiceProtectionContainerMapping_Properties_HealthErrorDetails:
+    creation_time_utc: Any = None
+    customer_resolvability: Any = None
+    entity_id: Any = None
+    error_category: Any = None
+    error_code: Any = None
+    error_id: Any = None
+    error_level: Any = None
+    error_message: Any = None
+    error_source: Any = None
+    error_type: Any = None
+    inner_health_errors: Any = None
+    possible_causes: Any = None
+    recommended_action: Any = None
+    recovery_provider_error_message: Any = None
+    summary_message: Any = None
+
+@dataclasses.dataclass
+class ServiceProtectionContainerMapping_Properties_ProviderSpecificDetails:
+    # Gets the class type. Overridden in derived classes.
     instance_type: Any = None
 
 @dataclasses.dataclass
 class ServiceProtectionContainerMapping_Properties:
+    # Health of pairing.
+    health: Any = None
+    # Health error.
+    health_error_details: Any = None
+    # Friendly name of replication policy.
+    policy_friendly_name: Any = None
     # Applicable policy.
     policy_id: Any = None
+    # Container mapping provider specific details.
+    provider_specific_details: Any = None
     # Provider specific input for pairing operations.
     provider_specific_input: Any = None
+    # Friendly name of source fabric.
+    source_fabric_friendly_name: Any = None
+    # Friendly name of source protection container.
+    source_protection_container_friendly_name: Any = None
+    # Association Status.
+    state: Any = None
+    # Friendly name of target fabric.
+    target_fabric_friendly_name: Any = None
+    # Friendly name of paired container.
+    target_protection_container_friendly_name: Any = None
     # The target unique protection container name.
     target_protection_container_id: Any = None
 
-_ServiceProtectionContainerMapping_Properties_ProviderSpecificInputFields = {
+_ServiceProtectionContainerMapping_Properties_HealthErrorDetails_InnerHealthErrorsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
+_ServiceProtectionContainerMapping_Properties_HealthErrorDetailsFields = {
+    "creation_time_utc": ubx.FieldSpec(wire_name="creation_time_utc"),
+    "customer_resolvability": ubx.FieldSpec(wire_name="customer_resolvability"),
+    "entity_id": ubx.FieldSpec(wire_name="entity_id"),
+    "error_category": ubx.FieldSpec(wire_name="error_category"),
+    "error_code": ubx.FieldSpec(wire_name="error_code"),
+    "error_id": ubx.FieldSpec(wire_name="error_id"),
+    "error_level": ubx.FieldSpec(wire_name="error_level"),
+    "error_message": ubx.FieldSpec(wire_name="error_message"),
+    "error_source": ubx.FieldSpec(wire_name="error_source"),
+    "error_type": ubx.FieldSpec(wire_name="error_type"),
+    "inner_health_errors": ubx.FieldSpec(
+        wire_name="inner_health_errors",
+        kind="list",
+        fields=_ServiceProtectionContainerMapping_Properties_HealthErrorDetails_InnerHealthErrorsFields,
+    ),
+    "possible_causes": ubx.FieldSpec(wire_name="possible_causes"),
+    "recommended_action": ubx.FieldSpec(wire_name="recommended_action"),
+    "recovery_provider_error_message": ubx.FieldSpec(wire_name="recovery_provider_error_message"),
+    "summary_message": ubx.FieldSpec(wire_name="summary_message"),
+}
+
+_ServiceProtectionContainerMapping_Properties_ProviderSpecificDetailsFields = {
     "instance_type": ubx.FieldSpec(wire_name="instance_type"),
 }
 
 _ServiceProtectionContainerMapping_PropertiesFields = {
+    "health": ubx.FieldSpec(wire_name="health"),
+    "health_error_details": ubx.FieldSpec(
+        wire_name="health_error_details",
+        kind="list",
+        fields=_ServiceProtectionContainerMapping_Properties_HealthErrorDetailsFields,
+    ),
+    "policy_friendly_name": ubx.FieldSpec(wire_name="policy_friendly_name"),
     "policy_id": ubx.FieldSpec(wire_name="policy_id"),
+    "provider_specific_details": ubx.FieldSpec(
+        wire_name="provider_specific_details",
+        kind="object",
+        fields=_ServiceProtectionContainerMapping_Properties_ProviderSpecificDetailsFields,
+    ),
     "provider_specific_input": ubx.FieldSpec(
         wire_name="provider_specific_input",
         kind="object",
-        fields=_ServiceProtectionContainerMapping_Properties_ProviderSpecificInputFields,
+        fields=_ServiceProtectionContainerMapping_Properties_ProviderSpecificDetailsFields,
     ),
+    "source_fabric_friendly_name": ubx.FieldSpec(wire_name="source_fabric_friendly_name"),
+    "source_protection_container_friendly_name": ubx.FieldSpec(wire_name="source_protection_container_friendly_name"),
+    "state": ubx.FieldSpec(wire_name="state"),
+    "target_fabric_friendly_name": ubx.FieldSpec(wire_name="target_fabric_friendly_name"),
+    "target_protection_container_friendly_name": ubx.FieldSpec(wire_name="target_protection_container_friendly_name"),
     "target_protection_container_id": ubx.FieldSpec(wire_name="target_protection_container_id"),
 }
 

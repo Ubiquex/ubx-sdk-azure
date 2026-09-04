@@ -9,8 +9,8 @@ type Cluster_Properties_ApplicationTypeVersionsCleanupPolicy struct {
 }
 
 type Cluster_Properties_AvailableClusterVersions struct {
-	CodeVersion any
-	Environment any
+	CodeVersion      any
+	Environment      any
 	SupportExpiryUtc any
 }
 
@@ -33,7 +33,7 @@ type Cluster_Properties_Certificate struct {
 }
 
 type Cluster_Properties_CertificateCommonNames_CommonNames struct {
-	CertificateCommonName any
+	CertificateCommonName       any
 	CertificateIssuerThumbprint any
 }
 
@@ -45,14 +45,14 @@ type Cluster_Properties_CertificateCommonNames struct {
 }
 
 type Cluster_Properties_ClientCertificateCommonNames struct {
-	CertificateCommonName any
+	CertificateCommonName       any
 	CertificateIssuerThumbprint any
-	IsAdmin any
+	IsAdmin                     any
 }
 
 type Cluster_Properties_ClientCertificateThumbprints struct {
 	CertificateThumbprint any
-	IsAdmin any
+	IsAdmin               any
 }
 
 type Cluster_Properties_DiagnosticsStorageAccountConfig struct {
@@ -71,46 +71,46 @@ type Cluster_Properties_DiagnosticsStorageAccountConfig struct {
 }
 
 type Cluster_Properties_FabricSettings_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Cluster_Properties_FabricSettings struct {
-	Name any
+	Name       any
 	Parameters any
 }
 
 type Cluster_Properties_NodeTypes_ApplicationPorts struct {
-	EndPort any
+	EndPort   any
 	StartPort any
 }
 
 type Cluster_Properties_NodeTypes struct {
-	ApplicationPorts any
-	Capacities any
+	ApplicationPorts             any
+	Capacities                   any
 	ClientConnectionEndpointPort any
-	DurabilityLevel any
-	EphemeralPorts any
-	HttpGatewayEndpointPort any
-	IsPrimary any
-	IsStateless any
-	MultipleAvailabilityZones any
-	Name any
-	PlacementProperties any
-	ReverseProxyEndpointPort any
-	VmInstanceCount any
+	DurabilityLevel              any
+	EphemeralPorts               any
+	HttpGatewayEndpointPort      any
+	IsPrimary                    any
+	IsStateless                  any
+	MultipleAvailabilityZones    any
+	Name                         any
+	PlacementProperties          any
+	ReverseProxyEndpointPort     any
+	VmInstanceCount              any
 }
 
 type Cluster_Properties_Notifications_NotificationTargets struct {
 	NotificationChannel any
-	Receivers any
+	Receivers           any
 }
 
 type Cluster_Properties_Notifications struct {
-	IsEnabled any
+	IsEnabled            any
 	NotificationCategory any
-	NotificationLevel any
-	NotificationTargets any
+	NotificationLevel    any
+	NotificationTargets  any
 }
 
 type Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicy struct {
@@ -119,7 +119,7 @@ type Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHea
 
 type Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies struct {
 	DefaultServiceTypeDeltaHealthPolicy any
-	ServiceTypeDeltaHealthPolicies any
+	ServiceTypeDeltaHealthPolicies      any
 }
 
 type Cluster_Properties_UpgradeDescription_DeltaHealthPolicy struct {
@@ -139,7 +139,7 @@ type Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicie
 
 type Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies struct {
 	DefaultServiceTypeHealthPolicy any
-	ServiceTypeHealthPolicies any
+	ServiceTypeHealthPolicies      any
 }
 
 type Cluster_Properties_UpgradeDescription_HealthPolicy struct {
@@ -174,7 +174,7 @@ type Cluster_Properties_UpgradeDescription struct {
 
 type Cluster_Properties struct {
 	// The list of add-on features to enable in the cluster.
-	AddOnFeatures any
+	AddOnFeatures                        any
 	ApplicationTypeVersionsCleanupPolicy any
 	// The Service Fabric runtime versions available for this cluster.
 	AvailableClusterVersions any
@@ -239,285 +239,285 @@ type Cluster_Properties struct {
 }
 
 var Cluster_Properties_ApplicationTypeVersionsCleanupPolicyFields = ubx.FieldMap{
-		"MaxUnusedVersionsToKeep": ubx.FieldSpec{WireName: "max_unused_versions_to_keep"},
-	}
+	"MaxUnusedVersionsToKeep": ubx.FieldSpec{WireName: "max_unused_versions_to_keep"},
+}
 
 var Cluster_Properties_AvailableClusterVersionsFields = ubx.FieldMap{
-		"CodeVersion": ubx.FieldSpec{WireName: "code_version"},
-		"Environment": ubx.FieldSpec{WireName: "environment"},
-		"SupportExpiryUtc": ubx.FieldSpec{WireName: "support_expiry_utc"},
-	}
+	"CodeVersion":      ubx.FieldSpec{WireName: "code_version"},
+	"Environment":      ubx.FieldSpec{WireName: "environment"},
+	"SupportExpiryUtc": ubx.FieldSpec{WireName: "support_expiry_utc"},
+}
 
 var Cluster_Properties_AzureActiveDirectoryFields = ubx.FieldMap{
-		"ClientApplication": ubx.FieldSpec{WireName: "client_application"},
-		"ClusterApplication": ubx.FieldSpec{WireName: "cluster_application"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ClientApplication":  ubx.FieldSpec{WireName: "client_application"},
+	"ClusterApplication": ubx.FieldSpec{WireName: "cluster_application"},
+	"TenantId":           ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var Cluster_Properties_CertificateFields = ubx.FieldMap{
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"ThumbprintSecondary": ubx.FieldSpec{WireName: "thumbprint_secondary"},
-		"X509StoreName": ubx.FieldSpec{WireName: "x509_store_name"},
-	}
+	"Thumbprint":          ubx.FieldSpec{WireName: "thumbprint"},
+	"ThumbprintSecondary": ubx.FieldSpec{WireName: "thumbprint_secondary"},
+	"X509StoreName":       ubx.FieldSpec{WireName: "x509_store_name"},
+}
 
 var Cluster_Properties_CertificateCommonNames_CommonNamesFields = ubx.FieldMap{
-		"CertificateCommonName": ubx.FieldSpec{WireName: "certificate_common_name"},
-		"CertificateIssuerThumbprint": ubx.FieldSpec{WireName: "certificate_issuer_thumbprint"},
-	}
+	"CertificateCommonName":       ubx.FieldSpec{WireName: "certificate_common_name"},
+	"CertificateIssuerThumbprint": ubx.FieldSpec{WireName: "certificate_issuer_thumbprint"},
+}
 
 var Cluster_Properties_CertificateCommonNamesFields = ubx.FieldMap{
-		"CommonNames": ubx.FieldSpec{
-			WireName: "common_names",
-			Kind: "list",
-			Fields: Cluster_Properties_CertificateCommonNames_CommonNamesFields,
-		},
-		"X509StoreName": ubx.FieldSpec{WireName: "x509_store_name"},
-	}
+	"CommonNames": ubx.FieldSpec{
+		WireName: "common_names",
+		Kind:     "list",
+		Fields:   Cluster_Properties_CertificateCommonNames_CommonNamesFields,
+	},
+	"X509StoreName": ubx.FieldSpec{WireName: "x509_store_name"},
+}
 
 var Cluster_Properties_ClientCertificateCommonNamesFields = ubx.FieldMap{
-		"CertificateCommonName": ubx.FieldSpec{WireName: "certificate_common_name"},
-		"CertificateIssuerThumbprint": ubx.FieldSpec{WireName: "certificate_issuer_thumbprint"},
-		"IsAdmin": ubx.FieldSpec{WireName: "is_admin"},
-	}
+	"CertificateCommonName":       ubx.FieldSpec{WireName: "certificate_common_name"},
+	"CertificateIssuerThumbprint": ubx.FieldSpec{WireName: "certificate_issuer_thumbprint"},
+	"IsAdmin":                     ubx.FieldSpec{WireName: "is_admin"},
+}
 
 var Cluster_Properties_ClientCertificateThumbprintsFields = ubx.FieldMap{
-		"CertificateThumbprint": ubx.FieldSpec{WireName: "certificate_thumbprint"},
-		"IsAdmin": ubx.FieldSpec{WireName: "is_admin"},
-	}
+	"CertificateThumbprint": ubx.FieldSpec{WireName: "certificate_thumbprint"},
+	"IsAdmin":               ubx.FieldSpec{WireName: "is_admin"},
+}
 
 var Cluster_Properties_DiagnosticsStorageAccountConfigFields = ubx.FieldMap{
-		"BlobEndpoint": ubx.FieldSpec{WireName: "blob_endpoint"},
-		"ProtectedAccountKeyName": ubx.FieldSpec{WireName: "protected_account_key_name"},
-		"ProtectedAccountKeyName2": ubx.FieldSpec{WireName: "protected_account_key_name2"},
-		"QueueEndpoint": ubx.FieldSpec{WireName: "queue_endpoint"},
-		"StorageAccountName": ubx.FieldSpec{WireName: "storage_account_name"},
-		"TableEndpoint": ubx.FieldSpec{WireName: "table_endpoint"},
-	}
+	"BlobEndpoint":             ubx.FieldSpec{WireName: "blob_endpoint"},
+	"ProtectedAccountKeyName":  ubx.FieldSpec{WireName: "protected_account_key_name"},
+	"ProtectedAccountKeyName2": ubx.FieldSpec{WireName: "protected_account_key_name2"},
+	"QueueEndpoint":            ubx.FieldSpec{WireName: "queue_endpoint"},
+	"StorageAccountName":       ubx.FieldSpec{WireName: "storage_account_name"},
+	"TableEndpoint":            ubx.FieldSpec{WireName: "table_endpoint"},
+}
 
 var Cluster_Properties_FabricSettings_ParametersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Cluster_Properties_FabricSettingsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: Cluster_Properties_FabricSettings_ParametersFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   Cluster_Properties_FabricSettings_ParametersFields,
+	},
+}
 
 var Cluster_Properties_NodeTypes_ApplicationPortsFields = ubx.FieldMap{
-		"EndPort": ubx.FieldSpec{WireName: "end_port"},
-		"StartPort": ubx.FieldSpec{WireName: "start_port"},
-	}
+	"EndPort":   ubx.FieldSpec{WireName: "end_port"},
+	"StartPort": ubx.FieldSpec{WireName: "start_port"},
+}
 
 var Cluster_Properties_NodeTypesFields = ubx.FieldMap{
-		"ApplicationPorts": ubx.FieldSpec{
-			WireName: "application_ports",
-			Kind: "object",
-			Fields: Cluster_Properties_NodeTypes_ApplicationPortsFields,
-		},
-		"Capacities": ubx.FieldSpec{WireName: "capacities"},
-		"ClientConnectionEndpointPort": ubx.FieldSpec{WireName: "client_connection_endpoint_port"},
-		"DurabilityLevel": ubx.FieldSpec{WireName: "durability_level"},
-		"EphemeralPorts": ubx.FieldSpec{
-			WireName: "ephemeral_ports",
-			Kind: "object",
-			Fields: Cluster_Properties_NodeTypes_ApplicationPortsFields,
-		},
-		"HttpGatewayEndpointPort": ubx.FieldSpec{WireName: "http_gateway_endpoint_port"},
-		"IsPrimary": ubx.FieldSpec{WireName: "is_primary"},
-		"IsStateless": ubx.FieldSpec{WireName: "is_stateless"},
-		"MultipleAvailabilityZones": ubx.FieldSpec{WireName: "multiple_availability_zones"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PlacementProperties": ubx.FieldSpec{WireName: "placement_properties"},
-		"ReverseProxyEndpointPort": ubx.FieldSpec{WireName: "reverse_proxy_endpoint_port"},
-		"VmInstanceCount": ubx.FieldSpec{WireName: "vm_instance_count"},
-	}
+	"ApplicationPorts": ubx.FieldSpec{
+		WireName: "application_ports",
+		Kind:     "object",
+		Fields:   Cluster_Properties_NodeTypes_ApplicationPortsFields,
+	},
+	"Capacities":                   ubx.FieldSpec{WireName: "capacities"},
+	"ClientConnectionEndpointPort": ubx.FieldSpec{WireName: "client_connection_endpoint_port"},
+	"DurabilityLevel":              ubx.FieldSpec{WireName: "durability_level"},
+	"EphemeralPorts": ubx.FieldSpec{
+		WireName: "ephemeral_ports",
+		Kind:     "object",
+		Fields:   Cluster_Properties_NodeTypes_ApplicationPortsFields,
+	},
+	"HttpGatewayEndpointPort":   ubx.FieldSpec{WireName: "http_gateway_endpoint_port"},
+	"IsPrimary":                 ubx.FieldSpec{WireName: "is_primary"},
+	"IsStateless":               ubx.FieldSpec{WireName: "is_stateless"},
+	"MultipleAvailabilityZones": ubx.FieldSpec{WireName: "multiple_availability_zones"},
+	"Name":                      ubx.FieldSpec{WireName: "name"},
+	"PlacementProperties":       ubx.FieldSpec{WireName: "placement_properties"},
+	"ReverseProxyEndpointPort":  ubx.FieldSpec{WireName: "reverse_proxy_endpoint_port"},
+	"VmInstanceCount":           ubx.FieldSpec{WireName: "vm_instance_count"},
+}
 
 var Cluster_Properties_Notifications_NotificationTargetsFields = ubx.FieldMap{
-		"NotificationChannel": ubx.FieldSpec{WireName: "notification_channel"},
-		"Receivers": ubx.FieldSpec{WireName: "receivers"},
-	}
+	"NotificationChannel": ubx.FieldSpec{WireName: "notification_channel"},
+	"Receivers":           ubx.FieldSpec{WireName: "receivers"},
+}
 
 var Cluster_Properties_NotificationsFields = ubx.FieldMap{
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"NotificationCategory": ubx.FieldSpec{WireName: "notification_category"},
-		"NotificationLevel": ubx.FieldSpec{WireName: "notification_level"},
-		"NotificationTargets": ubx.FieldSpec{
-			WireName: "notification_targets",
-			Kind: "list",
-			Fields: Cluster_Properties_Notifications_NotificationTargetsFields,
-		},
-	}
+	"IsEnabled":            ubx.FieldSpec{WireName: "is_enabled"},
+	"NotificationCategory": ubx.FieldSpec{WireName: "notification_category"},
+	"NotificationLevel":    ubx.FieldSpec{WireName: "notification_level"},
+	"NotificationTargets": ubx.FieldSpec{
+		WireName: "notification_targets",
+		Kind:     "list",
+		Fields:   Cluster_Properties_Notifications_NotificationTargetsFields,
+	},
+}
 
 var Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicyFields = ubx.FieldMap{
-		"MaxPercentDeltaUnhealthyServices": ubx.FieldSpec{WireName: "max_percent_delta_unhealthy_services"},
-	}
+	"MaxPercentDeltaUnhealthyServices": ubx.FieldSpec{WireName: "max_percent_delta_unhealthy_services"},
+}
 
 var Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPoliciesFields = ubx.FieldMap{
-		"DefaultServiceTypeDeltaHealthPolicy": ubx.FieldSpec{
-			WireName: "default_service_type_delta_health_policy",
-			Kind: "object",
-			Fields: Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicyFields,
-		},
-		"ServiceTypeDeltaHealthPolicies": ubx.FieldSpec{
-			WireName: "service_type_delta_health_policies",
-			Kind: "map",
-			Fields: Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicyFields,
-		},
-	}
+	"DefaultServiceTypeDeltaHealthPolicy": ubx.FieldSpec{
+		WireName: "default_service_type_delta_health_policy",
+		Kind:     "object",
+		Fields:   Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicyFields,
+	},
+	"ServiceTypeDeltaHealthPolicies": ubx.FieldSpec{
+		WireName: "service_type_delta_health_policies",
+		Kind:     "map",
+		Fields:   Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPolicies_DefaultServiceTypeDeltaHealthPolicyFields,
+	},
+}
 
 var Cluster_Properties_UpgradeDescription_DeltaHealthPolicyFields = ubx.FieldMap{
-		"ApplicationDeltaHealthPolicies": ubx.FieldSpec{
-			WireName: "application_delta_health_policies",
-			Kind: "map",
-			Fields: Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPoliciesFields,
-		},
-		"MaxPercentDeltaUnhealthyApplications": ubx.FieldSpec{WireName: "max_percent_delta_unhealthy_applications"},
-		"MaxPercentDeltaUnhealthyNodes": ubx.FieldSpec{WireName: "max_percent_delta_unhealthy_nodes"},
-		"MaxPercentUpgradeDomainDeltaUnhealthyNodes": ubx.FieldSpec{WireName: "max_percent_upgrade_domain_delta_unhealthy_nodes"},
-	}
+	"ApplicationDeltaHealthPolicies": ubx.FieldSpec{
+		WireName: "application_delta_health_policies",
+		Kind:     "map",
+		Fields:   Cluster_Properties_UpgradeDescription_DeltaHealthPolicy_ApplicationDeltaHealthPoliciesFields,
+	},
+	"MaxPercentDeltaUnhealthyApplications":       ubx.FieldSpec{WireName: "max_percent_delta_unhealthy_applications"},
+	"MaxPercentDeltaUnhealthyNodes":              ubx.FieldSpec{WireName: "max_percent_delta_unhealthy_nodes"},
+	"MaxPercentUpgradeDomainDeltaUnhealthyNodes": ubx.FieldSpec{WireName: "max_percent_upgrade_domain_delta_unhealthy_nodes"},
+}
 
 var Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicyFields = ubx.FieldMap{
-		"MaxPercentUnhealthyServices": ubx.FieldSpec{WireName: "max_percent_unhealthy_services"},
-	}
+	"MaxPercentUnhealthyServices": ubx.FieldSpec{WireName: "max_percent_unhealthy_services"},
+}
 
 var Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPoliciesFields = ubx.FieldMap{
-		"DefaultServiceTypeHealthPolicy": ubx.FieldSpec{
-			WireName: "default_service_type_health_policy",
-			Kind: "object",
-			Fields: Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicyFields,
-		},
-		"ServiceTypeHealthPolicies": ubx.FieldSpec{
-			WireName: "service_type_health_policies",
-			Kind: "map",
-			Fields: Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicyFields,
-		},
-	}
+	"DefaultServiceTypeHealthPolicy": ubx.FieldSpec{
+		WireName: "default_service_type_health_policy",
+		Kind:     "object",
+		Fields:   Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicyFields,
+	},
+	"ServiceTypeHealthPolicies": ubx.FieldSpec{
+		WireName: "service_type_health_policies",
+		Kind:     "map",
+		Fields:   Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPolicies_DefaultServiceTypeHealthPolicyFields,
+	},
+}
 
 var Cluster_Properties_UpgradeDescription_HealthPolicyFields = ubx.FieldMap{
-		"ApplicationHealthPolicies": ubx.FieldSpec{
-			WireName: "application_health_policies",
-			Kind: "map",
-			Fields: Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPoliciesFields,
-		},
-		"MaxPercentUnhealthyApplications": ubx.FieldSpec{WireName: "max_percent_unhealthy_applications"},
-		"MaxPercentUnhealthyNodes": ubx.FieldSpec{WireName: "max_percent_unhealthy_nodes"},
-	}
+	"ApplicationHealthPolicies": ubx.FieldSpec{
+		WireName: "application_health_policies",
+		Kind:     "map",
+		Fields:   Cluster_Properties_UpgradeDescription_HealthPolicy_ApplicationHealthPoliciesFields,
+	},
+	"MaxPercentUnhealthyApplications": ubx.FieldSpec{WireName: "max_percent_unhealthy_applications"},
+	"MaxPercentUnhealthyNodes":        ubx.FieldSpec{WireName: "max_percent_unhealthy_nodes"},
+}
 
 var Cluster_Properties_UpgradeDescriptionFields = ubx.FieldMap{
-		"DeltaHealthPolicy": ubx.FieldSpec{
-			WireName: "delta_health_policy",
-			Kind: "object",
-			Fields: Cluster_Properties_UpgradeDescription_DeltaHealthPolicyFields,
-		},
-		"ForceRestart": ubx.FieldSpec{WireName: "force_restart"},
-		"HealthCheckRetryTimeout": ubx.FieldSpec{WireName: "health_check_retry_timeout"},
-		"HealthCheckStableDuration": ubx.FieldSpec{WireName: "health_check_stable_duration"},
-		"HealthCheckWaitDuration": ubx.FieldSpec{WireName: "health_check_wait_duration"},
-		"HealthPolicy": ubx.FieldSpec{
-			WireName: "health_policy",
-			Kind: "object",
-			Fields: Cluster_Properties_UpgradeDescription_HealthPolicyFields,
-		},
-		"UpgradeDomainTimeout": ubx.FieldSpec{WireName: "upgrade_domain_timeout"},
-		"UpgradeReplicaSetCheckTimeout": ubx.FieldSpec{WireName: "upgrade_replica_set_check_timeout"},
-		"UpgradeTimeout": ubx.FieldSpec{WireName: "upgrade_timeout"},
-	}
+	"DeltaHealthPolicy": ubx.FieldSpec{
+		WireName: "delta_health_policy",
+		Kind:     "object",
+		Fields:   Cluster_Properties_UpgradeDescription_DeltaHealthPolicyFields,
+	},
+	"ForceRestart":              ubx.FieldSpec{WireName: "force_restart"},
+	"HealthCheckRetryTimeout":   ubx.FieldSpec{WireName: "health_check_retry_timeout"},
+	"HealthCheckStableDuration": ubx.FieldSpec{WireName: "health_check_stable_duration"},
+	"HealthCheckWaitDuration":   ubx.FieldSpec{WireName: "health_check_wait_duration"},
+	"HealthPolicy": ubx.FieldSpec{
+		WireName: "health_policy",
+		Kind:     "object",
+		Fields:   Cluster_Properties_UpgradeDescription_HealthPolicyFields,
+	},
+	"UpgradeDomainTimeout":          ubx.FieldSpec{WireName: "upgrade_domain_timeout"},
+	"UpgradeReplicaSetCheckTimeout": ubx.FieldSpec{WireName: "upgrade_replica_set_check_timeout"},
+	"UpgradeTimeout":                ubx.FieldSpec{WireName: "upgrade_timeout"},
+}
 
 var Cluster_PropertiesFields = ubx.FieldMap{
-		"AddOnFeatures": ubx.FieldSpec{WireName: "add_on_features"},
-		"ApplicationTypeVersionsCleanupPolicy": ubx.FieldSpec{
-			WireName: "application_type_versions_cleanup_policy",
-			Kind: "object",
-			Fields: Cluster_Properties_ApplicationTypeVersionsCleanupPolicyFields,
-		},
-		"AvailableClusterVersions": ubx.FieldSpec{
-			WireName: "available_cluster_versions",
-			Kind: "list",
-			Fields: Cluster_Properties_AvailableClusterVersionsFields,
-		},
-		"AzureActiveDirectory": ubx.FieldSpec{
-			WireName: "azure_active_directory",
-			Kind: "object",
-			Fields: Cluster_Properties_AzureActiveDirectoryFields,
-		},
-		"Certificate": ubx.FieldSpec{
-			WireName: "certificate",
-			Kind: "object",
-			Fields: Cluster_Properties_CertificateFields,
-		},
-		"CertificateCommonNames": ubx.FieldSpec{
-			WireName: "certificate_common_names",
-			Kind: "object",
-			Fields: Cluster_Properties_CertificateCommonNamesFields,
-		},
-		"ClientCertificateCommonNames": ubx.FieldSpec{
-			WireName: "client_certificate_common_names",
-			Kind: "list",
-			Fields: Cluster_Properties_ClientCertificateCommonNamesFields,
-		},
-		"ClientCertificateThumbprints": ubx.FieldSpec{
-			WireName: "client_certificate_thumbprints",
-			Kind: "list",
-			Fields: Cluster_Properties_ClientCertificateThumbprintsFields,
-		},
-		"ClusterCodeVersion": ubx.FieldSpec{WireName: "cluster_code_version"},
-		"ClusterEndpoint": ubx.FieldSpec{WireName: "cluster_endpoint"},
-		"ClusterId": ubx.FieldSpec{WireName: "cluster_id"},
-		"ClusterState": ubx.FieldSpec{WireName: "cluster_state"},
-		"DiagnosticsStorageAccountConfig": ubx.FieldSpec{
-			WireName: "diagnostics_storage_account_config",
-			Kind: "object",
-			Fields: Cluster_Properties_DiagnosticsStorageAccountConfigFields,
-		},
-		"EventStoreServiceEnabled": ubx.FieldSpec{WireName: "event_store_service_enabled"},
-		"FabricSettings": ubx.FieldSpec{
-			WireName: "fabric_settings",
-			Kind: "list",
-			Fields: Cluster_Properties_FabricSettingsFields,
-		},
-		"InfrastructureServiceManager": ubx.FieldSpec{WireName: "infrastructure_service_manager"},
-		"ManagementEndpoint": ubx.FieldSpec{WireName: "management_endpoint"},
-		"NodeTypes": ubx.FieldSpec{
-			WireName: "node_types",
-			Kind: "list",
-			Fields: Cluster_Properties_NodeTypesFields,
-		},
-		"Notifications": ubx.FieldSpec{
-			WireName: "notifications",
-			Kind: "list",
-			Fields: Cluster_Properties_NotificationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ReliabilityLevel": ubx.FieldSpec{WireName: "reliability_level"},
-		"ReverseProxyCertificate": ubx.FieldSpec{
-			WireName: "reverse_proxy_certificate",
-			Kind: "object",
-			Fields: Cluster_Properties_CertificateFields,
-		},
-		"ReverseProxyCertificateCommonNames": ubx.FieldSpec{
-			WireName: "reverse_proxy_certificate_common_names",
-			Kind: "object",
-			Fields: Cluster_Properties_CertificateCommonNamesFields,
-		},
-		"SfZonalUpgradeMode": ubx.FieldSpec{WireName: "sf_zonal_upgrade_mode"},
-		"UpgradeDescription": ubx.FieldSpec{
-			WireName: "upgrade_description",
-			Kind: "object",
-			Fields: Cluster_Properties_UpgradeDescriptionFields,
-		},
-		"UpgradeMode": ubx.FieldSpec{WireName: "upgrade_mode"},
-		"UpgradePauseEndTimestampUtc": ubx.FieldSpec{WireName: "upgrade_pause_end_timestamp_utc"},
-		"UpgradePauseStartTimestampUtc": ubx.FieldSpec{WireName: "upgrade_pause_start_timestamp_utc"},
-		"UpgradeWave": ubx.FieldSpec{WireName: "upgrade_wave"},
-		"VmImage": ubx.FieldSpec{WireName: "vm_image"},
-		"VmssZonalUpgradeMode": ubx.FieldSpec{WireName: "vmss_zonal_upgrade_mode"},
-		"WaveUpgradePaused": ubx.FieldSpec{WireName: "wave_upgrade_paused"},
-	}
+	"AddOnFeatures": ubx.FieldSpec{WireName: "add_on_features"},
+	"ApplicationTypeVersionsCleanupPolicy": ubx.FieldSpec{
+		WireName: "application_type_versions_cleanup_policy",
+		Kind:     "object",
+		Fields:   Cluster_Properties_ApplicationTypeVersionsCleanupPolicyFields,
+	},
+	"AvailableClusterVersions": ubx.FieldSpec{
+		WireName: "available_cluster_versions",
+		Kind:     "list",
+		Fields:   Cluster_Properties_AvailableClusterVersionsFields,
+	},
+	"AzureActiveDirectory": ubx.FieldSpec{
+		WireName: "azure_active_directory",
+		Kind:     "object",
+		Fields:   Cluster_Properties_AzureActiveDirectoryFields,
+	},
+	"Certificate": ubx.FieldSpec{
+		WireName: "certificate",
+		Kind:     "object",
+		Fields:   Cluster_Properties_CertificateFields,
+	},
+	"CertificateCommonNames": ubx.FieldSpec{
+		WireName: "certificate_common_names",
+		Kind:     "object",
+		Fields:   Cluster_Properties_CertificateCommonNamesFields,
+	},
+	"ClientCertificateCommonNames": ubx.FieldSpec{
+		WireName: "client_certificate_common_names",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ClientCertificateCommonNamesFields,
+	},
+	"ClientCertificateThumbprints": ubx.FieldSpec{
+		WireName: "client_certificate_thumbprints",
+		Kind:     "list",
+		Fields:   Cluster_Properties_ClientCertificateThumbprintsFields,
+	},
+	"ClusterCodeVersion": ubx.FieldSpec{WireName: "cluster_code_version"},
+	"ClusterEndpoint":    ubx.FieldSpec{WireName: "cluster_endpoint"},
+	"ClusterId":          ubx.FieldSpec{WireName: "cluster_id"},
+	"ClusterState":       ubx.FieldSpec{WireName: "cluster_state"},
+	"DiagnosticsStorageAccountConfig": ubx.FieldSpec{
+		WireName: "diagnostics_storage_account_config",
+		Kind:     "object",
+		Fields:   Cluster_Properties_DiagnosticsStorageAccountConfigFields,
+	},
+	"EventStoreServiceEnabled": ubx.FieldSpec{WireName: "event_store_service_enabled"},
+	"FabricSettings": ubx.FieldSpec{
+		WireName: "fabric_settings",
+		Kind:     "list",
+		Fields:   Cluster_Properties_FabricSettingsFields,
+	},
+	"InfrastructureServiceManager": ubx.FieldSpec{WireName: "infrastructure_service_manager"},
+	"ManagementEndpoint":           ubx.FieldSpec{WireName: "management_endpoint"},
+	"NodeTypes": ubx.FieldSpec{
+		WireName: "node_types",
+		Kind:     "list",
+		Fields:   Cluster_Properties_NodeTypesFields,
+	},
+	"Notifications": ubx.FieldSpec{
+		WireName: "notifications",
+		Kind:     "list",
+		Fields:   Cluster_Properties_NotificationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ReliabilityLevel":  ubx.FieldSpec{WireName: "reliability_level"},
+	"ReverseProxyCertificate": ubx.FieldSpec{
+		WireName: "reverse_proxy_certificate",
+		Kind:     "object",
+		Fields:   Cluster_Properties_CertificateFields,
+	},
+	"ReverseProxyCertificateCommonNames": ubx.FieldSpec{
+		WireName: "reverse_proxy_certificate_common_names",
+		Kind:     "object",
+		Fields:   Cluster_Properties_CertificateCommonNamesFields,
+	},
+	"SfZonalUpgradeMode": ubx.FieldSpec{WireName: "sf_zonal_upgrade_mode"},
+	"UpgradeDescription": ubx.FieldSpec{
+		WireName: "upgrade_description",
+		Kind:     "object",
+		Fields:   Cluster_Properties_UpgradeDescriptionFields,
+	},
+	"UpgradeMode":                   ubx.FieldSpec{WireName: "upgrade_mode"},
+	"UpgradePauseEndTimestampUtc":   ubx.FieldSpec{WireName: "upgrade_pause_end_timestamp_utc"},
+	"UpgradePauseStartTimestampUtc": ubx.FieldSpec{WireName: "upgrade_pause_start_timestamp_utc"},
+	"UpgradeWave":                   ubx.FieldSpec{WireName: "upgrade_wave"},
+	"VmImage":                       ubx.FieldSpec{WireName: "vm_image"},
+	"VmssZonalUpgradeMode":          ubx.FieldSpec{WireName: "vmss_zonal_upgrade_mode"},
+	"WaveUpgradePaused":             ubx.FieldSpec{WireName: "wave_upgrade_paused"},
+}
 
 type ClusterConfig struct {
 	// Describes the cluster resource properties.
@@ -534,8 +534,8 @@ var Cluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Cluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   Cluster_PropertiesFields,
 		},
 	},
 }

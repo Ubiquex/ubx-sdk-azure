@@ -4,36 +4,36 @@ package loadtestservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type LoadTestResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type LoadTestResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type LoadTestResource_Value_Properties_Encryption_Identity struct {
 	ResourceId any
-	Type any
+	Type       any
 }
 
 type LoadTestResource_Value_Properties_Encryption struct {
 	Identity any
-	KeyUrl any
+	KeyUrl   any
 }
 
 type LoadTestResource_Value_Properties struct {
-	DataPlaneUri any
-	Description any
-	Encryption any
+	DataPlaneUri      any
+	Description       any
+	Encryption        any
 	ProvisioningState any
 }
 
 type LoadTestResource_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -49,6 +49,5 @@ type LoadTestResourceAttrs struct {
 
 var LoadTestResource = ubx.DataSourceBinding{
 	WireType: "azure_loadtestservice_load_test_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,14 +4,14 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRegistry_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiRegistry_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -29,8 +29,8 @@ type OpenapiRegistry_Value_Properties_ManagedResourceGroupSettings struct {
 
 type OpenapiRegistry_Value_Properties_RegionDetails_AcrDetails_SystemCreatedAcrAccount struct {
 	AcrAccountName any
-	AcrAccountSku any
-	ArmResourceId any
+	AcrAccountSku  any
+	ArmResourceId  any
 }
 
 type OpenapiRegistry_Value_Properties_RegionDetails_AcrDetails struct {
@@ -38,11 +38,11 @@ type OpenapiRegistry_Value_Properties_RegionDetails_AcrDetails struct {
 }
 
 type OpenapiRegistry_Value_Properties_RegionDetails_StorageAccountDetails_SystemCreatedStorageAccount struct {
-	AllowBlobPublicAccess any
-	ArmResourceId any
+	AllowBlobPublicAccess    any
+	ArmResourceId            any
 	StorageAccountHnsEnabled any
-	StorageAccountName any
-	StorageAccountType any
+	StorageAccountName       any
+	StorageAccountType       any
 }
 
 type OpenapiRegistry_Value_Properties_RegionDetails_StorageAccountDetails struct {
@@ -50,8 +50,8 @@ type OpenapiRegistry_Value_Properties_RegionDetails_StorageAccountDetails struct
 }
 
 type OpenapiRegistry_Value_Properties_RegionDetails struct {
-	AcrDetails any
-	Location any
+	AcrDetails            any
+	Location              any
 	StorageAccountDetails any
 }
 
@@ -61,47 +61,47 @@ type OpenapiRegistry_Value_Properties_RegistryPrivateEndpointConnections_Propert
 
 type OpenapiRegistry_Value_Properties_RegistryPrivateEndpointConnections_Properties_RegistryPrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiRegistry_Value_Properties_RegistryPrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
-	ProvisioningState any
+	GroupIds                                  any
+	PrivateEndpoint                           any
+	ProvisioningState                         any
 	RegistryPrivateLinkServiceConnectionState any
 }
 
 type OpenapiRegistry_Value_Properties_RegistryPrivateEndpointConnections struct {
-	Id any
-	Location any
+	Id         any
+	Location   any
 	Properties any
 }
 
 type OpenapiRegistry_Value_Properties struct {
-	DiscoveryUrl any
-	IntellectualPropertyPublisher any
-	ManagedResourceGroup any
-	ManagedResourceGroupSettings any
-	MlFlowRegistryUri any
-	PublicNetworkAccess any
-	RegionDetails any
+	DiscoveryUrl                       any
+	IntellectualPropertyPublisher      any
+	ManagedResourceGroup               any
+	ManagedResourceGroupSettings       any
+	MlFlowRegistryUri                  any
+	PublicNetworkAccess                any
+	RegionDetails                      any
 	RegistryPrivateEndpointConnections any
 }
 
 type OpenapiRegistry_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiRegistry_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiRegistryConfig struct {
@@ -116,6 +116,5 @@ type OpenapiRegistryAttrs struct {
 
 var OpenapiRegistry = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_registry",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,17 +4,17 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPool_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiPool_Value_Identity struct {
-	Type any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiPool_Value_Properties_ApplicationPackages struct {
-	Id any
+	Id      any
 	Version any
 }
 
@@ -22,15 +22,15 @@ type OpenapiPool_Value_Properties_AutoScaleRun_Error_Details struct {
 }
 
 type OpenapiPool_Value_Properties_AutoScaleRun_Error struct {
-	Code any
+	Code    any
 	Details any
 	Message any
 }
 
 type OpenapiPool_Value_Properties_AutoScaleRun struct {
-	Error any
+	Error          any
 	EvaluationTime any
-	Results any
+	Results        any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries_IdentityReference struct {
@@ -39,15 +39,15 @@ type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfigur
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration_ContainerRegistries struct {
 	IdentityReference any
-	Password any
-	RegistryServer any
-	Username any
+	Password          any
+	RegistryServer    any
+	Username          any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ContainerConfiguration struct {
 	ContainerImageNames any
 	ContainerRegistries any
-	Type any
+	Type                any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_DiskEncryptionSet struct {
@@ -55,54 +55,54 @@ type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfigur
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk_SecurityProfile struct {
-	DiskEncryptionSet any
+	DiskEncryptionSet      any
 	SecurityEncryptionType any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks_ManagedDisk struct {
-	DiskEncryptionSet any
-	SecurityProfile any
+	DiskEncryptionSet  any
+	SecurityProfile    any
 	StorageAccountType any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DataDisks struct {
-	Caching any
-	DiskSizeGb any
-	Lun any
+	Caching     any
+	DiskSizeGb  any
+	Lun         any
 	ManagedDisk any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DiskEncryptionConfiguration_CustomerManagedKey struct {
-	IdentityReference any
-	KeyUrl any
+	IdentityReference                 any
+	KeyUrl                            any
 	RotationToLatestKeyVersionEnabled any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_DiskEncryptionConfiguration struct {
 	CustomerManagedKey any
-	Targets any
+	Targets            any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_Extensions struct {
-	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	Name any
-	ProtectedSettings any
+	AutoUpgradeMinorVersion  any
+	EnableAutomaticUpgrade   any
+	Name                     any
+	ProtectedSettings        any
 	ProvisionAfterExtensions any
-	Publisher any
-	Settings any
-	Type any
-	TypeHandlerVersion any
+	Publisher                any
+	Settings                 any
+	Type                     any
+	TypeHandlerVersion       any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_ImageReference struct {
 	CommunityGalleryImageId any
-	Id any
-	Offer any
-	Publisher any
-	SharedGalleryImageId any
-	Sku any
-	Version any
+	Id                      any
+	Offer                   any
+	Publisher               any
+	SharedGalleryImageId    any
+	Sku                     any
+	Version                 any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_NodePlacementConfiguration struct {
@@ -114,34 +114,34 @@ type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfigur
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_OsDisk struct {
-	Caching any
-	DiskSizeGb any
+	Caching                 any
+	DiskSizeGb              any
 	EphemeralOsdiskSettings any
-	ManagedDisk any
+	ManagedDisk             any
 	WriteAcceleratorEnabled any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettings_Imds struct {
 	InVmaccessControlProfileReferenceId any
-	Mode any
+	Mode                                any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_ProxyAgentSettings struct {
-	Enabled any
-	Imds any
+	Enabled    any
+	Imds       any
 	WireServer any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile_UefiSettings struct {
 	SecureBootEnabled any
-	VTpmEnabled any
+	VTpmEnabled       any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_SecurityProfile struct {
-	EncryptionAtHost any
+	EncryptionAtHost   any
 	ProxyAgentSettings any
-	SecurityType any
-	UefiSettings any
+	SecurityType       any
+	UefiSettings       any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration_WindowsConfiguration struct {
@@ -149,18 +149,18 @@ type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfigur
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration_VirtualMachineConfiguration struct {
-	ContainerConfiguration any
-	DataDisks any
+	ContainerConfiguration      any
+	DataDisks                   any
 	DiskEncryptionConfiguration any
-	Extensions any
-	ImageReference any
-	LicenseType any
-	NodeAgentSkuId any
-	NodePlacementConfiguration any
-	OsDisk any
-	SecurityProfile any
-	ServiceArtifactReference any
-	WindowsConfiguration any
+	Extensions                  any
+	ImageReference              any
+	LicenseType                 any
+	NodeAgentSkuId              any
+	NodePlacementConfiguration  any
+	OsDisk                      any
+	SecurityProfile             any
+	ServiceArtifactReference    any
+	WindowsConfiguration        any
 }
 
 type OpenapiPool_Value_Properties_DeploymentConfiguration struct {
@@ -168,63 +168,63 @@ type OpenapiPool_Value_Properties_DeploymentConfiguration struct {
 }
 
 type OpenapiPool_Value_Properties_Metadata struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiPool_Value_Properties_MountConfiguration_AzureBlobFileSystemConfiguration struct {
-	AccountKey any
-	AccountName any
-	BlobfuseOptions any
-	ContainerName any
+	AccountKey        any
+	AccountName       any
+	BlobfuseOptions   any
+	ContainerName     any
 	IdentityReference any
 	RelativeMountPath any
-	SasKey any
+	SasKey            any
 }
 
 type OpenapiPool_Value_Properties_MountConfiguration_AzureFileShareConfiguration struct {
-	AccountKey any
-	AccountName any
-	AzureFileUrl any
-	MountOptions any
+	AccountKey        any
+	AccountName       any
+	AzureFileUrl      any
+	MountOptions      any
 	RelativeMountPath any
 }
 
 type OpenapiPool_Value_Properties_MountConfiguration_CifsMountConfiguration struct {
-	MountOptions any
-	Password any
+	MountOptions      any
+	Password          any
 	RelativeMountPath any
-	Source any
-	UserName any
+	Source            any
+	UserName          any
 }
 
 type OpenapiPool_Value_Properties_MountConfiguration_NfsMountConfiguration struct {
-	MountOptions any
+	MountOptions      any
 	RelativeMountPath any
-	Source any
+	Source            any
 }
 
 type OpenapiPool_Value_Properties_MountConfiguration struct {
 	AzureBlobFileSystemConfiguration any
-	AzureFileShareConfiguration any
-	CifsMountConfiguration any
-	NfsMountConfiguration any
+	AzureFileShareConfiguration      any
+	CifsMountConfiguration           any
+	NfsMountConfiguration            any
 }
 
 type OpenapiPool_Value_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools_NetworkSecurityGroupRules struct {
-	Access any
-	Priority any
+	Access              any
+	Priority            any
 	SourceAddressPrefix any
-	SourcePortRanges any
+	SourcePortRanges    any
 }
 
 type OpenapiPool_Value_Properties_NetworkConfiguration_EndpointConfiguration_InboundNatPools struct {
-	BackendPort any
-	FrontendPortRangeEnd any
-	FrontendPortRangeStart any
-	Name any
+	BackendPort               any
+	FrontendPortRangeEnd      any
+	FrontendPortRangeStart    any
+	Name                      any
 	NetworkSecurityGroupRules any
-	Protocol any
+	Protocol                  any
 }
 
 type OpenapiPool_Value_Properties_NetworkConfiguration_EndpointConfiguration struct {
@@ -233,76 +233,76 @@ type OpenapiPool_Value_Properties_NetworkConfiguration_EndpointConfiguration str
 
 type OpenapiPool_Value_Properties_NetworkConfiguration_PublicIpaddressConfiguration_IpTags struct {
 	IpTagType any
-	Tag any
+	Tag       any
 }
 
 type OpenapiPool_Value_Properties_NetworkConfiguration_PublicIpaddressConfiguration struct {
 	IpAddressIds any
-	IpFamilies any
-	IpTags any
-	Provision any
+	IpFamilies   any
+	IpTags       any
+	Provision    any
 }
 
 type OpenapiPool_Value_Properties_NetworkConfiguration struct {
-	DynamicVnetAssignmentScope any
-	EnableAcceleratedNetworking any
-	EndpointConfiguration any
+	DynamicVnetAssignmentScope   any
+	EnableAcceleratedNetworking  any
+	EndpointConfiguration        any
 	PublicIpaddressConfiguration any
-	SubnetId any
+	SubnetId                     any
 }
 
 type OpenapiPool_Value_Properties_ResizeOperationStatus struct {
-	Errors any
+	Errors                 any
 	NodeDeallocationOption any
-	ResizeTimeout any
-	StartTime any
-	TargetDedicatedNodes any
+	ResizeTimeout          any
+	StartTime              any
+	TargetDedicatedNodes   any
 	TargetLowPriorityNodes any
 }
 
 type OpenapiPool_Value_Properties_ScaleSettings_AutoScale struct {
 	EvaluationInterval any
-	Formula any
+	Formula            any
 }
 
 type OpenapiPool_Value_Properties_ScaleSettings_FixedScale struct {
 	NodeDeallocationOption any
-	ResizeTimeout any
-	TargetDedicatedNodes any
+	ResizeTimeout          any
+	TargetDedicatedNodes   any
 	TargetLowPriorityNodes any
 }
 
 type OpenapiPool_Value_Properties_ScaleSettings struct {
-	AutoScale any
+	AutoScale  any
 	FixedScale any
 }
 
 type OpenapiPool_Value_Properties_StartTask_ContainerSettings_ContainerHostBatchBindMounts struct {
 	IsReadOnly any
-	Source any
+	Source     any
 }
 
 type OpenapiPool_Value_Properties_StartTask_ContainerSettings struct {
 	ContainerHostBatchBindMounts any
-	ContainerRunOptions any
-	ImageName any
-	Registry any
-	WorkingDirectory any
+	ContainerRunOptions          any
+	ImageName                    any
+	Registry                     any
+	WorkingDirectory             any
 }
 
 type OpenapiPool_Value_Properties_StartTask_ResourceFiles struct {
 	AutoStorageContainerName any
-	BlobPrefix any
-	FileMode any
-	FilePath any
-	HttpUrl any
-	IdentityReference any
-	StorageContainerUrl any
+	BlobPrefix               any
+	FileMode                 any
+	FilePath                 any
+	HttpUrl                  any
+	IdentityReference        any
+	StorageContainerUrl      any
 }
 
 type OpenapiPool_Value_Properties_StartTask_UserIdentity_AutoUser struct {
 	ElevationLevel any
-	Scope any
+	Scope          any
 }
 
 type OpenapiPool_Value_Properties_StartTask_UserIdentity struct {
@@ -311,47 +311,47 @@ type OpenapiPool_Value_Properties_StartTask_UserIdentity struct {
 }
 
 type OpenapiPool_Value_Properties_StartTask struct {
-	CommandLine any
-	ContainerSettings any
+	CommandLine         any
+	ContainerSettings   any
 	EnvironmentSettings any
-	MaxTaskRetryCount any
-	ResourceFiles any
-	UserIdentity any
-	WaitForSuccess any
+	MaxTaskRetryCount   any
+	ResourceFiles       any
+	UserIdentity        any
+	WaitForSuccess      any
 }
 
 type OpenapiPool_Value_Properties_TaskSchedulingPolicy struct {
 	JobDefaultOrder any
-	NodeFillType any
+	NodeFillType    any
 }
 
 type OpenapiPool_Value_Properties_UpgradePolicy_AutomaticOsupgradePolicy struct {
 	DisableAutomaticRollback any
 	EnableAutomaticOsupgrade any
 	OsRollingUpgradeDeferral any
-	UseRollingUpgradePolicy any
+	UseRollingUpgradePolicy  any
 }
 
 type OpenapiPool_Value_Properties_UpgradePolicy_RollingUpgradePolicy struct {
-	EnableCrossZoneUpgrade any
-	MaxBatchInstancePercent any
-	MaxUnhealthyInstancePercent any
-	MaxUnhealthyUpgradedInstancePercent any
-	PauseTimeBetweenBatches any
-	PrioritizeUnhealthyInstances any
+	EnableCrossZoneUpgrade                any
+	MaxBatchInstancePercent               any
+	MaxUnhealthyInstancePercent           any
+	MaxUnhealthyUpgradedInstancePercent   any
+	PauseTimeBetweenBatches               any
+	PrioritizeUnhealthyInstances          any
 	RollbackFailedInstancesOnPolicyBreach any
 }
 
 type OpenapiPool_Value_Properties_UpgradePolicy struct {
 	AutomaticOsupgradePolicy any
-	Mode any
-	RollingUpgradePolicy any
+	Mode                     any
+	RollingUpgradePolicy     any
 }
 
 type OpenapiPool_Value_Properties_UserAccounts_LinuxUserConfiguration struct {
-	Gid any
+	Gid           any
 	SshPrivateKey any
-	Uid any
+	Uid           any
 }
 
 type OpenapiPool_Value_Properties_UserAccounts_WindowsUserConfiguration struct {
@@ -359,55 +359,55 @@ type OpenapiPool_Value_Properties_UserAccounts_WindowsUserConfiguration struct {
 }
 
 type OpenapiPool_Value_Properties_UserAccounts struct {
-	ElevationLevel any
-	LinuxUserConfiguration any
-	Name any
-	Password any
+	ElevationLevel           any
+	LinuxUserConfiguration   any
+	Name                     any
+	Password                 any
 	WindowsUserConfiguration any
 }
 
 type OpenapiPool_Value_Properties struct {
-	AllocationState any
-	AllocationStateTransitionTime any
-	ApplicationPackages any
-	AutoScaleRun any
-	CreationTime any
-	CurrentDedicatedNodes any
-	CurrentLowPriorityNodes any
-	DeploymentConfiguration any
-	DisplayName any
-	InterNodeCommunication any
-	LastModified any
-	Metadata any
-	MountConfiguration any
-	NetworkConfiguration any
-	ProvisioningState any
+	AllocationState                 any
+	AllocationStateTransitionTime   any
+	ApplicationPackages             any
+	AutoScaleRun                    any
+	CreationTime                    any
+	CurrentDedicatedNodes           any
+	CurrentLowPriorityNodes         any
+	DeploymentConfiguration         any
+	DisplayName                     any
+	InterNodeCommunication          any
+	LastModified                    any
+	Metadata                        any
+	MountConfiguration              any
+	NetworkConfiguration            any
+	ProvisioningState               any
 	ProvisioningStateTransitionTime any
-	ResizeOperationStatus any
-	ScaleSettings any
-	StartTask any
-	TaskSchedulingPolicy any
-	TaskSlotsPerNode any
-	UpgradePolicy any
-	UserAccounts any
-	VmSize any
+	ResizeOperationStatus           any
+	ScaleSettings                   any
+	StartTask                       any
+	TaskSchedulingPolicy            any
+	TaskSlotsPerNode                any
+	UpgradePolicy                   any
+	UserAccounts                    any
+	VmSize                          any
 }
 
 type OpenapiPool_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiPoolConfig struct {
 	AccountName any
-	Maxresults any
+	Maxresults  any
 }
 
 type OpenapiPoolAttrs struct {
 	AccountName any
-	Maxresults any
+	Maxresults  any
 	// The link to the next page of items
 	NextLink any
 	// The Pool items on this page
@@ -418,6 +418,6 @@ var OpenapiPool = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_pool",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"Maxresults": ubx.FieldSpec{WireName: "maxresults"},
+		"Maxresults":  ubx.FieldSpec{WireName: "maxresults"},
 	},
 }

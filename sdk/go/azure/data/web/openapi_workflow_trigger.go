@@ -4,43 +4,43 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkflowTrigger_Value_Properties_Recurrence_Schedule_MonthlyOccurrences struct {
-	Day any
+	Day        any
 	Occurrence any
 }
 
 type OpenapiWorkflowTrigger_Value_Properties_Recurrence_Schedule struct {
-	Hours any
-	Minutes any
-	MonthDays any
+	Hours              any
+	Minutes            any
+	MonthDays          any
 	MonthlyOccurrences any
-	WeekDays any
+	WeekDays           any
 }
 
 type OpenapiWorkflowTrigger_Value_Properties_Recurrence struct {
-	EndTime any
+	EndTime   any
 	Frequency any
-	Interval any
-	Schedule any
+	Interval  any
+	Schedule  any
 	StartTime any
-	TimeZone any
+	TimeZone  any
 }
 
 type OpenapiWorkflowTrigger_Value_Properties_Workflow struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type OpenapiWorkflowTrigger_Value_Properties struct {
-	ChangedTime any
-	CreatedTime any
+	ChangedTime       any
+	CreatedTime       any
 	LastExecutionTime any
 	NextExecutionTime any
 	ProvisioningState any
-	Recurrence any
-	State any
-	Status any
-	Workflow any
+	Recurrence        any
+	State             any
+	Status            any
+	Workflow          any
 }
 
 type OpenapiWorkflowTrigger_Value struct {
@@ -48,7 +48,7 @@ type OpenapiWorkflowTrigger_Value struct {
 }
 
 type OpenapiWorkflowTriggerConfig struct {
-	Name any
+	Name         any
 	WorkflowName any
 }
 
@@ -57,14 +57,14 @@ type OpenapiWorkflowTriggerAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The WorkflowTrigger items on this page
-	Value any
+	Value        any
 	WorkflowName any
 }
 
 var OpenapiWorkflowTrigger = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_trigger",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

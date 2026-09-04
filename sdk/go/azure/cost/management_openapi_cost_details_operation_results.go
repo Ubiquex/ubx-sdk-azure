@@ -11,7 +11,7 @@ type ManagementOpenapiCostDetailsOperationResults_Error struct {
 }
 
 type ManagementOpenapiCostDetailsOperationResults_Manifest_Blobs struct {
-	BlobLink any
+	BlobLink  any
 	ByteCount any
 }
 
@@ -58,9 +58,9 @@ type ManagementOpenapiCostDetailsOperationResults_Manifest struct {
 }
 
 var ManagementOpenapiCostDetailsOperationResults_Manifest_RequestContext_RequestBody_TimePeriodFields = ubx.FieldMap{
-		"End": ubx.FieldSpec{WireName: "end"},
-		"Start": ubx.FieldSpec{WireName: "start"},
-	}
+	"End":   ubx.FieldSpec{WireName: "end"},
+	"Start": ubx.FieldSpec{WireName: "start"},
+}
 
 type ManagementOpenapiCostDetailsOperationResultsConfig struct {
 	// This parameter can be used only by Enterprise Agreement customers. Use the YearMonth(e.g. 202008) format. This parameter cannot be used alongside either the invoiceId or timePeriod parameters. If a timePeriod, invoiceId or billingPeriod parameter is not provided in the request body the API will return the current month's cost.
@@ -106,12 +106,12 @@ var ManagementOpenapiCostDetailsOperationResults = ubx.ResourceBinding{
 	WireType: "azure_cost_management_openapi_cost_details_operation_results",
 	Fields: ubx.FieldMap{
 		"BillingPeriod": ubx.FieldSpec{WireName: "billing_period"},
-		"InvoiceId": ubx.FieldSpec{WireName: "invoice_id"},
-		"Metric": ubx.FieldSpec{WireName: "metric"},
+		"InvoiceId":     ubx.FieldSpec{WireName: "invoice_id"},
+		"Metric":        ubx.FieldSpec{WireName: "metric"},
 		"TimePeriod": ubx.FieldSpec{
 			WireName: "time_period",
-			Kind: "object",
-			Fields: ManagementOpenapiCostDetailsOperationResults_Manifest_RequestContext_RequestBody_TimePeriodFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiCostDetailsOperationResults_Manifest_RequestContext_RequestBody_TimePeriodFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

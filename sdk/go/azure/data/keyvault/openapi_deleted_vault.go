@@ -4,12 +4,12 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDeletedVault_Value_Properties struct {
-	DeletionDate any
-	Location any
+	DeletionDate           any
+	Location               any
 	PurgeProtectionEnabled any
-	ScheduledPurgeDate any
-	Tags any
-	VaultId any
+	ScheduledPurgeDate     any
+	Tags                   any
+	VaultId                any
 }
 
 type OpenapiDeletedVault_Value struct {
@@ -28,6 +28,5 @@ type OpenapiDeletedVaultAttrs struct {
 
 var OpenapiDeletedVault = ubx.DataSourceBinding{
 	WireType: "azure_keyvault_openapi_deleted_vault",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

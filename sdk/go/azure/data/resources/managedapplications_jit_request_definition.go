@@ -5,30 +5,30 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedapplicationsJitRequestDefinition_Value_Properties_CreatedBy struct {
 	ApplicationId any
-	Oid any
-	Puid any
+	Oid           any
+	Puid          any
 }
 
 type ManagedapplicationsJitRequestDefinition_Value_Properties_JitAuthorizationPolicies struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
 type ManagedapplicationsJitRequestDefinition_Value_Properties_JitSchedulingPolicy struct {
-	Duration any
+	Duration  any
 	StartTime any
-	Type any
+	Type      any
 }
 
 type ManagedapplicationsJitRequestDefinition_Value_Properties struct {
-	ApplicationResourceId any
-	CreatedBy any
+	ApplicationResourceId    any
+	CreatedBy                any
 	JitAuthorizationPolicies any
-	JitRequestState any
-	JitSchedulingPolicy any
-	ProvisioningState any
-	PublisherTenantId any
-	UpdatedBy any
+	JitRequestState          any
+	JitSchedulingPolicy      any
+	ProvisioningState        any
+	PublisherTenantId        any
+	UpdatedBy                any
 }
 
 type ManagedapplicationsJitRequestDefinition_Value struct {
@@ -36,14 +36,14 @@ type ManagedapplicationsJitRequestDefinition_Value struct {
 }
 
 type ManagedapplicationsJitRequestDefinitionConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ManagedapplicationsJitRequestDefinitionAttrs struct {
 	ApiVersion any
 	// The URL to use for getting the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The array of Jit request definition.
 	Value any
@@ -52,7 +52,7 @@ type ManagedapplicationsJitRequestDefinitionAttrs struct {
 var ManagedapplicationsJitRequestDefinition = ubx.DataSourceBinding{
 	WireType: "azure_resources_managedapplications_jit_request_definition",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

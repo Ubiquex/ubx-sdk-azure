@@ -4,17 +4,17 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BlobauditingExtendedDatabaseBlobAuditingPolicy_Value_Properties struct {
-	AuditActionsAndGroups any
-	IsAzureMonitorTargetEnabled any
-	IsManagedIdentityInUse any
-	IsStorageSecondaryKeyInUse any
-	PredicateExpression any
-	QueueDelayMs any
-	RetentionDays any
-	State any
-	StorageAccountAccessKey any
+	AuditActionsAndGroups        any
+	IsAzureMonitorTargetEnabled  any
+	IsManagedIdentityInUse       any
+	IsStorageSecondaryKeyInUse   any
+	PredicateExpression          any
+	QueueDelayMs                 any
+	RetentionDays                any
+	State                        any
+	StorageAccountAccessKey      any
 	StorageAccountSubscriptionId any
-	StorageEndpoint any
+	StorageEndpoint              any
 }
 
 type BlobauditingExtendedDatabaseBlobAuditingPolicy_Value struct {
@@ -23,13 +23,13 @@ type BlobauditingExtendedDatabaseBlobAuditingPolicy_Value struct {
 
 type BlobauditingExtendedDatabaseBlobAuditingPolicyConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type BlobauditingExtendedDatabaseBlobAuditingPolicyAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The ExtendedDatabaseBlobAuditingPolicy items on this page
 	Value any
@@ -39,6 +39,6 @@ var BlobauditingExtendedDatabaseBlobAuditingPolicy = ubx.DataSourceBinding{
 	WireType: "azure_sql_blobauditing_extended_database_blob_auditing_policy",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

@@ -39,23 +39,10 @@ _NetworkmanagerScopeConnection_PropertiesFields = {
     "tenant_id": ubx.FieldSpec(wire_name="tenant_id"),
 }
 
-_NetworkmanagerScopeConnection_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class NetworkmanagerScopeConnectionConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Scope connection.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class NetworkmanagerScopeConnectionAttrs:
@@ -69,16 +56,10 @@ class NetworkmanagerScopeConnectionAttrs:
 NetworkmanagerScopeConnection = ubx.ResourceBinding(
     wire_type="azure_network_networkmanager_scope_connection",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_NetworkmanagerScopeConnection_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_NetworkmanagerScopeConnection_SystemDataFields,
         ),
     },
 )

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationAccountPartner_Value_Properties_Content_B2b_BusinessIdentities struct {
 	Qualifier any
-	Value any
+	Value     any
 }
 
 type IntegrationAccountPartner_Value_Properties_Content_B2b struct {
@@ -18,9 +18,9 @@ type IntegrationAccountPartner_Value_Properties_Content struct {
 
 type IntegrationAccountPartner_Value_Properties struct {
 	ChangedTime any
-	Content any
+	Content     any
 	CreatedTime any
-	Metadata any
+	Metadata    any
 	PartnerType any
 }
 
@@ -29,19 +29,19 @@ type IntegrationAccountPartner_Value struct {
 }
 
 type IntegrationAccountPartnerConfig struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName      any
+	SubscriptionId         any
 }
 
 type IntegrationAccountPartnerAttrs struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The list of integration account partners.
 	Value any
 }
@@ -49,9 +49,9 @@ type IntegrationAccountPartnerAttrs struct {
 var IntegrationAccountPartner = ubx.DataSourceBinding{
 	WireType: "azure_logic_integration_account_partner",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":             ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationAccountName": ubx.FieldSpec{WireName: "integration_account_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":      ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":         ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

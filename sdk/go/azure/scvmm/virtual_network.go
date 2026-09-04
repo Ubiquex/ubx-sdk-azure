@@ -24,17 +24,17 @@ type VirtualNetwork_Properties struct {
 }
 
 var VirtualNetwork_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualNetwork_PropertiesFields = ubx.FieldMap{
-		"InventoryItemId": ubx.FieldSpec{WireName: "inventory_item_id"},
-		"NetworkName": ubx.FieldSpec{WireName: "network_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Uuid": ubx.FieldSpec{WireName: "uuid"},
-		"VmmServerId": ubx.FieldSpec{WireName: "vmm_server_id"},
-	}
+	"InventoryItemId":   ubx.FieldSpec{WireName: "inventory_item_id"},
+	"NetworkName":       ubx.FieldSpec{WireName: "network_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Uuid":              ubx.FieldSpec{WireName: "uuid"},
+	"VmmServerId":       ubx.FieldSpec{WireName: "vmm_server_id"},
+}
 
 type VirtualNetworkConfig struct {
 	// The extended location.
@@ -55,13 +55,13 @@ var VirtualNetwork = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualNetwork_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   VirtualNetwork_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualNetwork_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualNetwork_PropertiesFields,
 		},
 	},
 }

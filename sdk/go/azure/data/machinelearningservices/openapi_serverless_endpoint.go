@@ -4,14 +4,14 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiServerlessEndpoint_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiServerlessEndpoint_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,7 +21,7 @@ type OpenapiServerlessEndpoint_Value_Properties_ContentSafety struct {
 
 type OpenapiServerlessEndpoint_Value_Properties_InferenceEndpoint struct {
 	Headers any
-	Uri any
+	Uri     any
 }
 
 type OpenapiServerlessEndpoint_Value_Properties_ModelSettings struct {
@@ -29,28 +29,28 @@ type OpenapiServerlessEndpoint_Value_Properties_ModelSettings struct {
 }
 
 type OpenapiServerlessEndpoint_Value_Properties struct {
-	AuthMode any
-	ContentSafety any
-	EndpointState any
-	InferenceEndpoint any
+	AuthMode                  any
+	ContentSafety             any
+	EndpointState             any
+	InferenceEndpoint         any
 	MarketplaceSubscriptionId any
-	ModelSettings any
-	ProvisioningState any
+	ModelSettings             any
+	ProvisioningState         any
 }
 
 type OpenapiServerlessEndpoint_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiServerlessEndpoint_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiServerlessEndpointConfig struct {
@@ -61,7 +61,7 @@ type OpenapiServerlessEndpointAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The ServerlessEndpoint items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

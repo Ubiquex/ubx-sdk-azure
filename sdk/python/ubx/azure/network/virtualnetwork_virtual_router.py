@@ -53,8 +53,6 @@ _VirtualnetworkVirtualRouter_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkVirtualRouterConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Virtual Router definition.
     properties: Any = None
 
@@ -68,7 +66,6 @@ class VirtualnetworkVirtualRouterAttrs:
 VirtualnetworkVirtualRouter = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_virtual_router",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

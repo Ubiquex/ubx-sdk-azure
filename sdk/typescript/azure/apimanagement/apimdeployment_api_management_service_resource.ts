@@ -72,18 +72,7 @@ const ApimdeploymentApiManagementServiceResource_SkuFields: FieldMap = {
   name: "name",
 };
 
-const ApimdeploymentApiManagementServiceResource_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ApimdeploymentApiManagementServiceResourceConfig {
-  /** ETag of the resource. */
-  etag?: string | Computed<string>;
   /** Identity properties of the Api Management service resource. */
   identity?: ApimdeploymentApiManagementServiceResource_Identity | Computed<ApimdeploymentApiManagementServiceResource_Identity>;
   /** Resource location. */
@@ -92,8 +81,6 @@ export interface ApimdeploymentApiManagementServiceResourceConfig {
   properties: ApimdeploymentApiManagementServiceResource_Properties | Computed<ApimdeploymentApiManagementServiceResource_Properties>;
   /** API Management service resource SKU properties. */
   sku: ApimdeploymentApiManagementServiceResource_Sku | Computed<ApimdeploymentApiManagementServiceResource_Sku>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ApimdeploymentApiManagementServiceResource_SystemData | Computed<ApimdeploymentApiManagementServiceResource_SystemData>;
   /** A list of availability zones denoting where the resource needs to come from. */
   zones?: string[] | Computed<string[]>;
 }
@@ -118,7 +105,6 @@ export interface ApimdeploymentApiManagementServiceResourceAttrs {
 export const ApimdeploymentApiManagementServiceResource: ResourceBinding<ApimdeploymentApiManagementServiceResourceConfig, ApimdeploymentApiManagementServiceResourceAttrs> = {
   wireType: "azure_apimanagement_apimdeployment_api_management_service_resource",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",
@@ -134,11 +120,6 @@ export const ApimdeploymentApiManagementServiceResource: ResourceBinding<Apimdep
       wireName: "sku",
       kind: "object",
       fields: ApimdeploymentApiManagementServiceResource_SkuFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ApimdeploymentApiManagementServiceResource_SystemDataFields,
     },
     zones: "zones",
   },

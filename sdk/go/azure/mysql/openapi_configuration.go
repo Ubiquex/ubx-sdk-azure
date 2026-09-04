@@ -29,18 +29,18 @@ type OpenapiConfiguration_Properties struct {
 }
 
 var OpenapiConfiguration_PropertiesFields = ubx.FieldMap{
-		"AllowedValues": ubx.FieldSpec{WireName: "allowed_values"},
-		"CurrentValue": ubx.FieldSpec{WireName: "current_value"},
-		"DataType": ubx.FieldSpec{WireName: "data_type"},
-		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DocumentationLink": ubx.FieldSpec{WireName: "documentation_link"},
-		"IsConfigPendingRestart": ubx.FieldSpec{WireName: "is_config_pending_restart"},
-		"IsDynamicConfig": ubx.FieldSpec{WireName: "is_dynamic_config"},
-		"IsReadOnly": ubx.FieldSpec{WireName: "is_read_only"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"AllowedValues":          ubx.FieldSpec{WireName: "allowed_values"},
+	"CurrentValue":           ubx.FieldSpec{WireName: "current_value"},
+	"DataType":               ubx.FieldSpec{WireName: "data_type"},
+	"DefaultValue":           ubx.FieldSpec{WireName: "default_value"},
+	"Description":            ubx.FieldSpec{WireName: "description"},
+	"DocumentationLink":      ubx.FieldSpec{WireName: "documentation_link"},
+	"IsConfigPendingRestart": ubx.FieldSpec{WireName: "is_config_pending_restart"},
+	"IsDynamicConfig":        ubx.FieldSpec{WireName: "is_dynamic_config"},
+	"IsReadOnly":             ubx.FieldSpec{WireName: "is_read_only"},
+	"Source":                 ubx.FieldSpec{WireName: "source"},
+	"Value":                  ubx.FieldSpec{WireName: "value"},
+}
 
 type OpenapiConfigurationConfig struct {
 	// The properties of a configuration.
@@ -57,8 +57,8 @@ var OpenapiConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiConfiguration_PropertiesFields,
 		},
 	},
 }

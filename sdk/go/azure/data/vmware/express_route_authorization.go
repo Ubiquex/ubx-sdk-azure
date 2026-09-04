@@ -4,10 +4,10 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressRouteAuthorization_Value_Properties struct {
-	ExpressRouteAuthorizationId any
+	ExpressRouteAuthorizationId  any
 	ExpressRouteAuthorizationKey any
-	ExpressRouteId any
-	ProvisioningState any
+	ExpressRouteId               any
+	ProvisioningState            any
 }
 
 type ExpressRouteAuthorization_Value struct {
@@ -20,7 +20,7 @@ type ExpressRouteAuthorizationConfig struct {
 
 type ExpressRouteAuthorizationAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The ExpressRouteAuthorization items on this page
 	Value any

@@ -8,13 +8,13 @@ type OutboundEnvironmentEndpoint_Value_Endpoints_EndpointDetails struct {
 }
 
 type OutboundEnvironmentEndpoint_Value_Endpoints struct {
-	Description any
-	DomainName any
+	Description     any
+	DomainName      any
 	EndpointDetails any
 }
 
 type OutboundEnvironmentEndpoint_Value struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 

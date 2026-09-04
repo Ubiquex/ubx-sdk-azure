@@ -141,8 +141,6 @@ _OpenapiFileShare_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiFileShareConfig:
-    # Resource Etag.
-    etag: Any = None
     # The properties of the file share.
     properties: Any = None
 
@@ -156,7 +154,6 @@ class OpenapiFileShareAttrs:
 OpenapiFileShare = ubx.ResourceBinding(
     wire_type="azure_storage_openapi_file_share",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

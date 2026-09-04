@@ -4,31 +4,31 @@ package communication
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCommunicationServiceResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiCommunicationServiceResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiCommunicationServiceResource_Value_Properties struct {
-	DataLocation any
-	DisableLocalAuth any
-	HostName any
+	DataLocation        any
+	DisableLocalAuth    any
+	HostName            any
 	ImmutableResourceId any
-	LinkedDomains any
-	NotificationHubId any
-	ProvisioningState any
+	LinkedDomains       any
+	NotificationHubId   any
+	ProvisioningState   any
 	PublicNetworkAccess any
-	Version any
+	Version             any
 }
 
 type OpenapiCommunicationServiceResource_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -44,6 +44,5 @@ type OpenapiCommunicationServiceResourceAttrs struct {
 
 var OpenapiCommunicationServiceResource = ubx.DataSourceBinding{
 	WireType: "azure_communication_openapi_communication_service_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

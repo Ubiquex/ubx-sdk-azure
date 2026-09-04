@@ -38,8 +38,6 @@ _WcfRelay_PropertiesFields = {
 
 @dataclasses.dataclass
 class WcfRelayConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Properties of the WCF relay.
     properties: Any = None
 
@@ -53,7 +51,6 @@ class WcfRelayAttrs:
 WcfRelay = ubx.ResourceBinding(
     wire_type="azure_relay_wcf_relay",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

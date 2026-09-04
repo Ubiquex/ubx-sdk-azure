@@ -5,19 +5,19 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiExport_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type ManagementOpenapiExport_Value_Properties_Schedule_RecurrencePeriod struct {
 	From any
-	To any
+	To   any
 }
 
 type ManagementOpenapiExport_Value_Properties_Schedule struct {
-	Recurrence any
+	Recurrence       any
 	RecurrencePeriod any
-	Status any
+	Status           any
 }
 
 type ManagementOpenapiExport_Value_Properties struct {
@@ -25,9 +25,9 @@ type ManagementOpenapiExport_Value_Properties struct {
 }
 
 type ManagementOpenapiExport_Value struct {
-	ETag any
-	Identity any
-	Location any
+	ETag       any
+	Identity   any
+	Location   any
 	Properties any
 }
 

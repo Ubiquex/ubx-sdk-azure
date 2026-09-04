@@ -4,12 +4,12 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RaiPolicy_Value_Properties_ContentFilters struct {
-	Action any
-	Blocking any
-	Enabled any
-	Name any
+	Action            any
+	Blocking          any
+	Enabled           any
+	Name              any
 	SeverityThreshold any
-	Source any
+	Source            any
 }
 
 type RaiPolicy_Value_Properties_CustomBlocklists struct {
@@ -17,18 +17,18 @@ type RaiPolicy_Value_Properties_CustomBlocklists struct {
 }
 
 type RaiPolicy_Value_Properties struct {
-	BasePolicyName any
-	ContentFilters any
+	BasePolicyName   any
+	ContentFilters   any
 	CustomBlocklists any
-	Mode any
-	SafetyProviders any
-	Type any
+	Mode             any
+	SafetyProviders  any
+	Type             any
 }
 
 type RaiPolicy_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type RaiPolicyConfig struct {

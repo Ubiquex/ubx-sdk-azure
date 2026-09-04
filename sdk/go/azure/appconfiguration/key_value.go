@@ -23,25 +23,19 @@ type KeyValue_Properties struct {
 }
 
 var KeyValue_PropertiesFields = ubx.FieldMap{
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Label": ubx.FieldSpec{WireName: "label"},
-		"LastModified": ubx.FieldSpec{WireName: "last_modified"},
-		"Locked": ubx.FieldSpec{WireName: "locked"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"ContentType":  ubx.FieldSpec{WireName: "content_type"},
+	"ETag":         ubx.FieldSpec{WireName: "e_tag"},
+	"Key":          ubx.FieldSpec{WireName: "key"},
+	"Label":        ubx.FieldSpec{WireName: "label"},
+	"LastModified": ubx.FieldSpec{WireName: "last_modified"},
+	"Locked":       ubx.FieldSpec{WireName: "locked"},
+	"Tags":         ubx.FieldSpec{WireName: "tags"},
+	"Value":        ubx.FieldSpec{WireName: "value"},
+}
 
 type KeyValueConfig struct {
-	// The resource ID.
-	Id any
-	// The name of the resource.
-	Name any
 	// All key-value properties.
 	Properties any
-	// The type of the resource.
-	Type any
 }
 
 type KeyValueAttrs struct {
@@ -58,13 +52,10 @@ type KeyValueAttrs struct {
 var KeyValue = ubx.ResourceBinding{
 	WireType: "azure_appconfiguration_key_value",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: KeyValue_PropertiesFields,
+			Kind:     "object",
+			Fields:   KeyValue_PropertiesFields,
 		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 	},
 }

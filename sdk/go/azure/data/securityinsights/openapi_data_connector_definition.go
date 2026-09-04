@@ -16,7 +16,7 @@ type OpenapiDataConnectorDefinitionAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// List of data connector definitions.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

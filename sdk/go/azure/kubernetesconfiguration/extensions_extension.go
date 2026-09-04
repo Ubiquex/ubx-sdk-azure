@@ -35,10 +35,10 @@ type ExtensionsExtension_Properties_ErrorInfo_Details_Details struct {
 
 type ExtensionsExtension_Properties_ErrorInfo_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type ExtensionsExtension_Properties_ErrorInfo struct {
@@ -72,11 +72,11 @@ type ExtensionsExtension_Properties_Scope struct {
 }
 
 type ExtensionsExtension_Properties_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type ExtensionsExtension_Properties struct {
@@ -128,130 +128,120 @@ type ExtensionsExtension_SystemData struct {
 }
 
 var ExtensionsExtension_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var ExtensionsExtension_PlanFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Product": ubx.FieldSpec{WireName: "product"},
-		"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Name":          ubx.FieldSpec{WireName: "name"},
+	"Product":       ubx.FieldSpec{WireName: "product"},
+	"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
+	"Publisher":     ubx.FieldSpec{WireName: "publisher"},
+	"Version":       ubx.FieldSpec{WireName: "version"},
+}
 
 var ExtensionsExtension_Properties_ErrorInfo_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var ExtensionsExtension_Properties_ErrorInfo_Details_DetailsFields = ubx.FieldMap{
-	}
+var ExtensionsExtension_Properties_ErrorInfo_Details_DetailsFields = ubx.FieldMap{}
 
 var ExtensionsExtension_Properties_ErrorInfo_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: ExtensionsExtension_Properties_ErrorInfo_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: ExtensionsExtension_Properties_ErrorInfo_Details_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   ExtensionsExtension_Properties_ErrorInfo_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   ExtensionsExtension_Properties_ErrorInfo_Details_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var ExtensionsExtension_Properties_ErrorInfoFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: ExtensionsExtension_Properties_ErrorInfo_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: ExtensionsExtension_Properties_ErrorInfo_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   ExtensionsExtension_Properties_ErrorInfo_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   ExtensionsExtension_Properties_ErrorInfo_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var ExtensionsExtension_Properties_Scope_ClusterFields = ubx.FieldMap{
-		"ReleaseNamespace": ubx.FieldSpec{WireName: "release_namespace"},
-	}
+	"ReleaseNamespace": ubx.FieldSpec{WireName: "release_namespace"},
+}
 
 var ExtensionsExtension_Properties_Scope_NamespaceFields = ubx.FieldMap{
-		"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
-	}
+	"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
+}
 
 var ExtensionsExtension_Properties_ScopeFields = ubx.FieldMap{
-		"Cluster": ubx.FieldSpec{
-			WireName: "cluster",
-			Kind: "object",
-			Fields: ExtensionsExtension_Properties_Scope_ClusterFields,
-		},
-		"Namespace": ubx.FieldSpec{
-			WireName: "namespace",
-			Kind: "object",
-			Fields: ExtensionsExtension_Properties_Scope_NamespaceFields,
-		},
-	}
+	"Cluster": ubx.FieldSpec{
+		WireName: "cluster",
+		Kind:     "object",
+		Fields:   ExtensionsExtension_Properties_Scope_ClusterFields,
+	},
+	"Namespace": ubx.FieldSpec{
+		WireName: "namespace",
+		Kind:     "object",
+		Fields:   ExtensionsExtension_Properties_Scope_NamespaceFields,
+	},
+}
 
 var ExtensionsExtension_Properties_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var ExtensionsExtension_PropertiesFields = ubx.FieldMap{
-		"AksAssignedIdentity": ubx.FieldSpec{
-			WireName: "aks_assigned_identity",
-			Kind: "object",
-			Fields: ExtensionsExtension_IdentityFields,
-		},
-		"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
-		"ConfigurationProtectedSettings": ubx.FieldSpec{WireName: "configuration_protected_settings"},
-		"ConfigurationSettings": ubx.FieldSpec{WireName: "configuration_settings"},
-		"CurrentVersion": ubx.FieldSpec{WireName: "current_version"},
-		"CustomLocationSettings": ubx.FieldSpec{WireName: "custom_location_settings"},
-		"ErrorInfo": ubx.FieldSpec{
-			WireName: "error_info",
-			Kind: "object",
-			Fields: ExtensionsExtension_Properties_ErrorInfoFields,
-		},
-		"ExtensionType": ubx.FieldSpec{WireName: "extension_type"},
-		"IsSystemExtension": ubx.FieldSpec{WireName: "is_system_extension"},
-		"PackageUri": ubx.FieldSpec{WireName: "package_uri"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ReleaseTrain": ubx.FieldSpec{WireName: "release_train"},
-		"Scope": ubx.FieldSpec{
-			WireName: "scope",
-			Kind: "object",
-			Fields: ExtensionsExtension_Properties_ScopeFields,
-		},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: ExtensionsExtension_Properties_StatusesFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
-
-var ExtensionsExtension_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"AksAssignedIdentity": ubx.FieldSpec{
+		WireName: "aks_assigned_identity",
+		Kind:     "object",
+		Fields:   ExtensionsExtension_IdentityFields,
+	},
+	"AutoUpgradeMinorVersion":        ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
+	"ConfigurationProtectedSettings": ubx.FieldSpec{WireName: "configuration_protected_settings"},
+	"ConfigurationSettings":          ubx.FieldSpec{WireName: "configuration_settings"},
+	"CurrentVersion":                 ubx.FieldSpec{WireName: "current_version"},
+	"CustomLocationSettings":         ubx.FieldSpec{WireName: "custom_location_settings"},
+	"ErrorInfo": ubx.FieldSpec{
+		WireName: "error_info",
+		Kind:     "object",
+		Fields:   ExtensionsExtension_Properties_ErrorInfoFields,
+	},
+	"ExtensionType":     ubx.FieldSpec{WireName: "extension_type"},
+	"IsSystemExtension": ubx.FieldSpec{WireName: "is_system_extension"},
+	"PackageUri":        ubx.FieldSpec{WireName: "package_uri"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ReleaseTrain":      ubx.FieldSpec{WireName: "release_train"},
+	"Scope": ubx.FieldSpec{
+		WireName: "scope",
+		Kind:     "object",
+		Fields:   ExtensionsExtension_Properties_ScopeFields,
+	},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   ExtensionsExtension_Properties_StatusesFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 type ExtensionsExtensionConfig struct {
 	// Identity for the resource.
@@ -260,8 +250,6 @@ type ExtensionsExtensionConfig struct {
 	Plan any
 	// Properties of an Extension resource
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type ExtensionsExtensionAttrs struct {
@@ -280,23 +268,18 @@ var ExtensionsExtension = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ExtensionsExtension_IdentityFields,
+			Kind:     "object",
+			Fields:   ExtensionsExtension_IdentityFields,
 		},
 		"Plan": ubx.FieldSpec{
 			WireName: "plan",
-			Kind: "object",
-			Fields: ExtensionsExtension_PlanFields,
+			Kind:     "object",
+			Fields:   ExtensionsExtension_PlanFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExtensionsExtension_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: ExtensionsExtension_SystemDataFields,
+			Kind:     "object",
+			Fields:   ExtensionsExtension_PropertiesFields,
 		},
 	},
 }

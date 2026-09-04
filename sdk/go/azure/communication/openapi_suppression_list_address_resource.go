@@ -19,13 +19,13 @@ type OpenapiSuppressionListAddressResource_Properties struct {
 }
 
 var OpenapiSuppressionListAddressResource_PropertiesFields = ubx.FieldMap{
-		"DataLocation": ubx.FieldSpec{WireName: "data_location"},
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"FirstName": ubx.FieldSpec{WireName: "first_name"},
-		"LastModified": ubx.FieldSpec{WireName: "last_modified"},
-		"LastName": ubx.FieldSpec{WireName: "last_name"},
-		"Notes": ubx.FieldSpec{WireName: "notes"},
-	}
+	"DataLocation": ubx.FieldSpec{WireName: "data_location"},
+	"Email":        ubx.FieldSpec{WireName: "email"},
+	"FirstName":    ubx.FieldSpec{WireName: "first_name"},
+	"LastModified": ubx.FieldSpec{WireName: "last_modified"},
+	"LastName":     ubx.FieldSpec{WireName: "last_name"},
+	"Notes":        ubx.FieldSpec{WireName: "notes"},
+}
 
 type OpenapiSuppressionListAddressResourceConfig struct {
 	// A class that describes the properties of a SuppressionListAddress resource.
@@ -42,8 +42,8 @@ var OpenapiSuppressionListAddressResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSuppressionListAddressResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSuppressionListAddressResource_PropertiesFields,
 		},
 	},
 }

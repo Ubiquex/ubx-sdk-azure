@@ -15,11 +15,11 @@ type OpenapiStaticSiteLinkedBackendArmresource_Properties struct {
 }
 
 var OpenapiStaticSiteLinkedBackendArmresource_PropertiesFields = ubx.FieldMap{
-		"BackendResourceId": ubx.FieldSpec{WireName: "backend_resource_id"},
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-	}
+	"BackendResourceId": ubx.FieldSpec{WireName: "backend_resource_id"},
+	"CreatedOn":         ubx.FieldSpec{WireName: "created_on"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Region":            ubx.FieldSpec{WireName: "region"},
+}
 
 type OpenapiStaticSiteLinkedBackendArmresourceConfig struct {
 	// Kind of resource.
@@ -45,8 +45,8 @@ var OpenapiStaticSiteLinkedBackendArmresource = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteLinkedBackendArmresource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiStaticSiteLinkedBackendArmresource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

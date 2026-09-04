@@ -52,7 +52,7 @@ type GatewayResource_Properties_EnvironmentVariables struct {
 }
 
 type GatewayResource_Properties_Instances struct {
-	Name any
+	Name   any
 	Status any
 }
 
@@ -129,130 +129,130 @@ type GatewayResource_Sku struct {
 }
 
 var GatewayResource_Properties_ApiMetadataPropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Documentation": ubx.FieldSpec{WireName: "documentation"},
-		"ServerUrl": ubx.FieldSpec{WireName: "server_url"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Description":   ubx.FieldSpec{WireName: "description"},
+	"Documentation": ubx.FieldSpec{WireName: "documentation"},
+	"ServerUrl":     ubx.FieldSpec{WireName: "server_url"},
+	"Title":         ubx.FieldSpec{WireName: "title"},
+	"Version":       ubx.FieldSpec{WireName: "version"},
+}
 
 var GatewayResource_Properties_ApmsFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var GatewayResource_Properties_ClientAuthFields = ubx.FieldMap{
-		"CertificateVerification": ubx.FieldSpec{WireName: "certificate_verification"},
-		"Certificates": ubx.FieldSpec{WireName: "certificates"},
-	}
+	"CertificateVerification": ubx.FieldSpec{WireName: "certificate_verification"},
+	"Certificates":            ubx.FieldSpec{WireName: "certificates"},
+}
 
 var GatewayResource_Properties_CorsPropertiesFields = ubx.FieldMap{
-		"AllowCredentials": ubx.FieldSpec{WireName: "allow_credentials"},
-		"AllowedHeaders": ubx.FieldSpec{WireName: "allowed_headers"},
-		"AllowedMethods": ubx.FieldSpec{WireName: "allowed_methods"},
-		"AllowedOriginPatterns": ubx.FieldSpec{WireName: "allowed_origin_patterns"},
-		"AllowedOrigins": ubx.FieldSpec{WireName: "allowed_origins"},
-		"ExposedHeaders": ubx.FieldSpec{WireName: "exposed_headers"},
-		"MaxAge": ubx.FieldSpec{WireName: "max_age"},
-	}
+	"AllowCredentials":      ubx.FieldSpec{WireName: "allow_credentials"},
+	"AllowedHeaders":        ubx.FieldSpec{WireName: "allowed_headers"},
+	"AllowedMethods":        ubx.FieldSpec{WireName: "allowed_methods"},
+	"AllowedOriginPatterns": ubx.FieldSpec{WireName: "allowed_origin_patterns"},
+	"AllowedOrigins":        ubx.FieldSpec{WireName: "allowed_origins"},
+	"ExposedHeaders":        ubx.FieldSpec{WireName: "exposed_headers"},
+	"MaxAge":                ubx.FieldSpec{WireName: "max_age"},
+}
 
 var GatewayResource_Properties_EnvironmentVariablesFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Secrets": ubx.FieldSpec{WireName: "secrets"},
-	}
+	"Properties": ubx.FieldSpec{WireName: "properties"},
+	"Secrets":    ubx.FieldSpec{WireName: "secrets"},
+}
 
 var GatewayResource_Properties_InstancesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var GatewayResource_Properties_OperatorProperties_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":           ubx.FieldSpec{WireName: "cpu"},
+	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+	"Memory":        ubx.FieldSpec{WireName: "memory"},
+}
 
 var GatewayResource_Properties_OperatorPropertiesFields = ubx.FieldMap{
-		"Instances": ubx.FieldSpec{
-			WireName: "instances",
-			Kind: "list",
-			Fields: GatewayResource_Properties_InstancesFields,
-		},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: GatewayResource_Properties_OperatorProperties_ResourceRequestsFields,
-		},
-	}
+	"Instances": ubx.FieldSpec{
+		WireName: "instances",
+		Kind:     "list",
+		Fields:   GatewayResource_Properties_InstancesFields,
+	},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   GatewayResource_Properties_OperatorProperties_ResourceRequestsFields,
+	},
+}
 
 var GatewayResource_Properties_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":    ubx.FieldSpec{WireName: "cpu"},
+	"Memory": ubx.FieldSpec{WireName: "memory"},
+}
 
 var GatewayResource_Properties_SsoPropertiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-		"IssuerUri": ubx.FieldSpec{WireName: "issuer_uri"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+	"IssuerUri":    ubx.FieldSpec{WireName: "issuer_uri"},
+	"Scope":        ubx.FieldSpec{WireName: "scope"},
+}
 
 var GatewayResource_PropertiesFields = ubx.FieldMap{
-		"ApiMetadataProperties": ubx.FieldSpec{
-			WireName: "api_metadata_properties",
-			Kind: "object",
-			Fields: GatewayResource_Properties_ApiMetadataPropertiesFields,
-		},
-		"Apms": ubx.FieldSpec{
-			WireName: "apms",
-			Kind: "list",
-			Fields: GatewayResource_Properties_ApmsFields,
-		},
-		"ClientAuth": ubx.FieldSpec{
-			WireName: "client_auth",
-			Kind: "object",
-			Fields: GatewayResource_Properties_ClientAuthFields,
-		},
-		"CorsProperties": ubx.FieldSpec{
-			WireName: "cors_properties",
-			Kind: "object",
-			Fields: GatewayResource_Properties_CorsPropertiesFields,
-		},
-		"EnvironmentVariables": ubx.FieldSpec{
-			WireName: "environment_variables",
-			Kind: "object",
-			Fields: GatewayResource_Properties_EnvironmentVariablesFields,
-		},
-		"HttpsOnly": ubx.FieldSpec{WireName: "https_only"},
-		"Instances": ubx.FieldSpec{
-			WireName: "instances",
-			Kind: "list",
-			Fields: GatewayResource_Properties_InstancesFields,
-		},
-		"OperatorProperties": ubx.FieldSpec{
-			WireName: "operator_properties",
-			Kind: "object",
-			Fields: GatewayResource_Properties_OperatorPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Public": ubx.FieldSpec{WireName: "public"},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: GatewayResource_Properties_ResourceRequestsFields,
-		},
-		"SsoProperties": ubx.FieldSpec{
-			WireName: "sso_properties",
-			Kind: "object",
-			Fields: GatewayResource_Properties_SsoPropertiesFields,
-		},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"ApiMetadataProperties": ubx.FieldSpec{
+		WireName: "api_metadata_properties",
+		Kind:     "object",
+		Fields:   GatewayResource_Properties_ApiMetadataPropertiesFields,
+	},
+	"Apms": ubx.FieldSpec{
+		WireName: "apms",
+		Kind:     "list",
+		Fields:   GatewayResource_Properties_ApmsFields,
+	},
+	"ClientAuth": ubx.FieldSpec{
+		WireName: "client_auth",
+		Kind:     "object",
+		Fields:   GatewayResource_Properties_ClientAuthFields,
+	},
+	"CorsProperties": ubx.FieldSpec{
+		WireName: "cors_properties",
+		Kind:     "object",
+		Fields:   GatewayResource_Properties_CorsPropertiesFields,
+	},
+	"EnvironmentVariables": ubx.FieldSpec{
+		WireName: "environment_variables",
+		Kind:     "object",
+		Fields:   GatewayResource_Properties_EnvironmentVariablesFields,
+	},
+	"HttpsOnly": ubx.FieldSpec{WireName: "https_only"},
+	"Instances": ubx.FieldSpec{
+		WireName: "instances",
+		Kind:     "list",
+		Fields:   GatewayResource_Properties_InstancesFields,
+	},
+	"OperatorProperties": ubx.FieldSpec{
+		WireName: "operator_properties",
+		Kind:     "object",
+		Fields:   GatewayResource_Properties_OperatorPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Public":            ubx.FieldSpec{WireName: "public"},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   GatewayResource_Properties_ResourceRequestsFields,
+	},
+	"SsoProperties": ubx.FieldSpec{
+		WireName: "sso_properties",
+		Kind:     "object",
+		Fields:   GatewayResource_Properties_SsoPropertiesFields,
+	},
+	"Url": ubx.FieldSpec{WireName: "url"},
+}
 
 var GatewayResource_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type GatewayResourceConfig struct {
 	// Spring Cloud Gateway properties payload
@@ -273,13 +273,13 @@ var GatewayResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GatewayResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   GatewayResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: GatewayResource_SkuFields,
+			Kind:     "object",
+			Fields:   GatewayResource_SkuFields,
 		},
 	},
 }

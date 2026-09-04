@@ -13,9 +13,9 @@ type OpenapiExadbVmCluster_Properties_DataCollectionOptions struct {
 }
 
 type OpenapiExadbVmCluster_Properties_IormConfigCache_DbPlans struct {
-	DbName any
+	DbName          any
 	FlashCacheLimit any
-	Share any
+	Share           any
 }
 
 type OpenapiExadbVmCluster_Properties_IormConfigCache struct {
@@ -36,7 +36,7 @@ type OpenapiExadbVmCluster_Properties_NsgCidrs_DestinationPortRange struct {
 
 type OpenapiExadbVmCluster_Properties_NsgCidrs struct {
 	DestinationPortRange any
-	Source any
+	Source               any
 }
 
 type OpenapiExadbVmCluster_Properties_SnapshotFileSystemStorage struct {
@@ -136,116 +136,116 @@ type OpenapiExadbVmCluster_Properties struct {
 }
 
 var OpenapiExadbVmCluster_Properties_DataCollectionOptionsFields = ubx.FieldMap{
-		"IsDiagnosticsEventsEnabled": ubx.FieldSpec{WireName: "is_diagnostics_events_enabled"},
-		"IsHealthMonitoringEnabled": ubx.FieldSpec{WireName: "is_health_monitoring_enabled"},
-		"IsIncidentLogsEnabled": ubx.FieldSpec{WireName: "is_incident_logs_enabled"},
-	}
+	"IsDiagnosticsEventsEnabled": ubx.FieldSpec{WireName: "is_diagnostics_events_enabled"},
+	"IsHealthMonitoringEnabled":  ubx.FieldSpec{WireName: "is_health_monitoring_enabled"},
+	"IsIncidentLogsEnabled":      ubx.FieldSpec{WireName: "is_incident_logs_enabled"},
+}
 
 var OpenapiExadbVmCluster_Properties_IormConfigCache_DbPlansFields = ubx.FieldMap{
-		"DbName": ubx.FieldSpec{WireName: "db_name"},
-		"FlashCacheLimit": ubx.FieldSpec{WireName: "flash_cache_limit"},
-		"Share": ubx.FieldSpec{WireName: "share"},
-	}
+	"DbName":          ubx.FieldSpec{WireName: "db_name"},
+	"FlashCacheLimit": ubx.FieldSpec{WireName: "flash_cache_limit"},
+	"Share":           ubx.FieldSpec{WireName: "share"},
+}
 
 var OpenapiExadbVmCluster_Properties_IormConfigCacheFields = ubx.FieldMap{
-		"DbPlans": ubx.FieldSpec{
-			WireName: "db_plans",
-			Kind: "list",
-			Fields: OpenapiExadbVmCluster_Properties_IormConfigCache_DbPlansFields,
-		},
-		"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
-		"LifecycleState": ubx.FieldSpec{WireName: "lifecycle_state"},
-		"Objective": ubx.FieldSpec{WireName: "objective"},
-	}
+	"DbPlans": ubx.FieldSpec{
+		WireName: "db_plans",
+		Kind:     "list",
+		Fields:   OpenapiExadbVmCluster_Properties_IormConfigCache_DbPlansFields,
+	},
+	"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
+	"LifecycleState":   ubx.FieldSpec{WireName: "lifecycle_state"},
+	"Objective":        ubx.FieldSpec{WireName: "objective"},
+}
 
 var OpenapiExadbVmCluster_Properties_NsgCidrs_DestinationPortRangeFields = ubx.FieldMap{
-		"Max": ubx.FieldSpec{WireName: "max"},
-		"Min": ubx.FieldSpec{WireName: "min"},
-	}
+	"Max": ubx.FieldSpec{WireName: "max"},
+	"Min": ubx.FieldSpec{WireName: "min"},
+}
 
 var OpenapiExadbVmCluster_Properties_NsgCidrsFields = ubx.FieldMap{
-		"DestinationPortRange": ubx.FieldSpec{
-			WireName: "destination_port_range",
-			Kind: "object",
-			Fields: OpenapiExadbVmCluster_Properties_NsgCidrs_DestinationPortRangeFields,
-		},
-		"Source": ubx.FieldSpec{WireName: "source"},
-	}
+	"DestinationPortRange": ubx.FieldSpec{
+		WireName: "destination_port_range",
+		Kind:     "object",
+		Fields:   OpenapiExadbVmCluster_Properties_NsgCidrs_DestinationPortRangeFields,
+	},
+	"Source": ubx.FieldSpec{WireName: "source"},
+}
 
 var OpenapiExadbVmCluster_Properties_SnapshotFileSystemStorageFields = ubx.FieldMap{
-		"TotalSizeInGbs": ubx.FieldSpec{WireName: "total_size_in_gbs"},
-	}
+	"TotalSizeInGbs": ubx.FieldSpec{WireName: "total_size_in_gbs"},
+}
 
 var OpenapiExadbVmCluster_PropertiesFields = ubx.FieldMap{
-		"BackupSubnetCidr": ubx.FieldSpec{WireName: "backup_subnet_cidr"},
-		"BackupSubnetOcid": ubx.FieldSpec{WireName: "backup_subnet_ocid"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"DataCollectionOptions": ubx.FieldSpec{
-			WireName: "data_collection_options",
-			Kind: "object",
-			Fields: OpenapiExadbVmCluster_Properties_DataCollectionOptionsFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"EnabledEcpuCount": ubx.FieldSpec{WireName: "enabled_ecpu_count"},
-		"ExascaleDbStorageVaultId": ubx.FieldSpec{WireName: "exascale_db_storage_vault_id"},
-		"GiVersion": ubx.FieldSpec{WireName: "gi_version"},
-		"GridImageOcid": ubx.FieldSpec{WireName: "grid_image_ocid"},
-		"GridImageType": ubx.FieldSpec{WireName: "grid_image_type"},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"IormConfigCache": ubx.FieldSpec{
-			WireName: "iorm_config_cache",
-			Kind: "object",
-			Fields: OpenapiExadbVmCluster_Properties_IormConfigCacheFields,
-		},
-		"LicenseModel": ubx.FieldSpec{WireName: "license_model"},
-		"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
-		"LifecycleState": ubx.FieldSpec{WireName: "lifecycle_state"},
-		"ListenerPort": ubx.FieldSpec{WireName: "listener_port"},
-		"MemorySizeInGbs": ubx.FieldSpec{WireName: "memory_size_in_gbs"},
-		"NodeCount": ubx.FieldSpec{WireName: "node_count"},
-		"NsgCidrs": ubx.FieldSpec{
-			WireName: "nsg_cidrs",
-			Kind: "list",
-			Fields: OpenapiExadbVmCluster_Properties_NsgCidrsFields,
-		},
-		"NsgUrl": ubx.FieldSpec{WireName: "nsg_url"},
-		"OciUrl": ubx.FieldSpec{WireName: "oci_url"},
-		"Ocid": ubx.FieldSpec{WireName: "ocid"},
-		"PrivateZoneOcid": ubx.FieldSpec{WireName: "private_zone_ocid"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ScanDnsName": ubx.FieldSpec{WireName: "scan_dns_name"},
-		"ScanDnsRecordId": ubx.FieldSpec{WireName: "scan_dns_record_id"},
-		"ScanIpIds": ubx.FieldSpec{WireName: "scan_ip_ids"},
-		"ScanListenerPortTcp": ubx.FieldSpec{WireName: "scan_listener_port_tcp"},
-		"ScanListenerPortTcpSsl": ubx.FieldSpec{WireName: "scan_listener_port_tcp_ssl"},
-		"Shape": ubx.FieldSpec{WireName: "shape"},
-		"ShapeAttribute": ubx.FieldSpec{WireName: "shape_attribute"},
-		"SnapshotFileSystemStorage": ubx.FieldSpec{
-			WireName: "snapshot_file_system_storage",
-			Kind: "object",
-			Fields: OpenapiExadbVmCluster_Properties_SnapshotFileSystemStorageFields,
-		},
-		"SshPublicKeys": ubx.FieldSpec{WireName: "ssh_public_keys"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"SubnetOcid": ubx.FieldSpec{WireName: "subnet_ocid"},
-		"SystemVersion": ubx.FieldSpec{WireName: "system_version"},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-		"TotalEcpuCount": ubx.FieldSpec{WireName: "total_ecpu_count"},
-		"TotalFileSystemStorage": ubx.FieldSpec{
-			WireName: "total_file_system_storage",
-			Kind: "object",
-			Fields: OpenapiExadbVmCluster_Properties_SnapshotFileSystemStorageFields,
-		},
-		"VipIds": ubx.FieldSpec{WireName: "vip_ids"},
-		"VmFileSystemStorage": ubx.FieldSpec{
-			WireName: "vm_file_system_storage",
-			Kind: "object",
-			Fields: OpenapiExadbVmCluster_Properties_SnapshotFileSystemStorageFields,
-		},
-		"VnetId": ubx.FieldSpec{WireName: "vnet_id"},
-		"ZoneOcid": ubx.FieldSpec{WireName: "zone_ocid"},
-	}
+	"BackupSubnetCidr": ubx.FieldSpec{WireName: "backup_subnet_cidr"},
+	"BackupSubnetOcid": ubx.FieldSpec{WireName: "backup_subnet_ocid"},
+	"ClusterName":      ubx.FieldSpec{WireName: "cluster_name"},
+	"DataCollectionOptions": ubx.FieldSpec{
+		WireName: "data_collection_options",
+		Kind:     "object",
+		Fields:   OpenapiExadbVmCluster_Properties_DataCollectionOptionsFields,
+	},
+	"DisplayName":              ubx.FieldSpec{WireName: "display_name"},
+	"Domain":                   ubx.FieldSpec{WireName: "domain"},
+	"EnabledEcpuCount":         ubx.FieldSpec{WireName: "enabled_ecpu_count"},
+	"ExascaleDbStorageVaultId": ubx.FieldSpec{WireName: "exascale_db_storage_vault_id"},
+	"GiVersion":                ubx.FieldSpec{WireName: "gi_version"},
+	"GridImageOcid":            ubx.FieldSpec{WireName: "grid_image_ocid"},
+	"GridImageType":            ubx.FieldSpec{WireName: "grid_image_type"},
+	"Hostname":                 ubx.FieldSpec{WireName: "hostname"},
+	"IormConfigCache": ubx.FieldSpec{
+		WireName: "iorm_config_cache",
+		Kind:     "object",
+		Fields:   OpenapiExadbVmCluster_Properties_IormConfigCacheFields,
+	},
+	"LicenseModel":     ubx.FieldSpec{WireName: "license_model"},
+	"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
+	"LifecycleState":   ubx.FieldSpec{WireName: "lifecycle_state"},
+	"ListenerPort":     ubx.FieldSpec{WireName: "listener_port"},
+	"MemorySizeInGbs":  ubx.FieldSpec{WireName: "memory_size_in_gbs"},
+	"NodeCount":        ubx.FieldSpec{WireName: "node_count"},
+	"NsgCidrs": ubx.FieldSpec{
+		WireName: "nsg_cidrs",
+		Kind:     "list",
+		Fields:   OpenapiExadbVmCluster_Properties_NsgCidrsFields,
+	},
+	"NsgUrl":                 ubx.FieldSpec{WireName: "nsg_url"},
+	"OciUrl":                 ubx.FieldSpec{WireName: "oci_url"},
+	"Ocid":                   ubx.FieldSpec{WireName: "ocid"},
+	"PrivateZoneOcid":        ubx.FieldSpec{WireName: "private_zone_ocid"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"ScanDnsName":            ubx.FieldSpec{WireName: "scan_dns_name"},
+	"ScanDnsRecordId":        ubx.FieldSpec{WireName: "scan_dns_record_id"},
+	"ScanIpIds":              ubx.FieldSpec{WireName: "scan_ip_ids"},
+	"ScanListenerPortTcp":    ubx.FieldSpec{WireName: "scan_listener_port_tcp"},
+	"ScanListenerPortTcpSsl": ubx.FieldSpec{WireName: "scan_listener_port_tcp_ssl"},
+	"Shape":                  ubx.FieldSpec{WireName: "shape"},
+	"ShapeAttribute":         ubx.FieldSpec{WireName: "shape_attribute"},
+	"SnapshotFileSystemStorage": ubx.FieldSpec{
+		WireName: "snapshot_file_system_storage",
+		Kind:     "object",
+		Fields:   OpenapiExadbVmCluster_Properties_SnapshotFileSystemStorageFields,
+	},
+	"SshPublicKeys":  ubx.FieldSpec{WireName: "ssh_public_keys"},
+	"SubnetId":       ubx.FieldSpec{WireName: "subnet_id"},
+	"SubnetOcid":     ubx.FieldSpec{WireName: "subnet_ocid"},
+	"SystemVersion":  ubx.FieldSpec{WireName: "system_version"},
+	"TimeZone":       ubx.FieldSpec{WireName: "time_zone"},
+	"TotalEcpuCount": ubx.FieldSpec{WireName: "total_ecpu_count"},
+	"TotalFileSystemStorage": ubx.FieldSpec{
+		WireName: "total_file_system_storage",
+		Kind:     "object",
+		Fields:   OpenapiExadbVmCluster_Properties_SnapshotFileSystemStorageFields,
+	},
+	"VipIds": ubx.FieldSpec{WireName: "vip_ids"},
+	"VmFileSystemStorage": ubx.FieldSpec{
+		WireName: "vm_file_system_storage",
+		Kind:     "object",
+		Fields:   OpenapiExadbVmCluster_Properties_SnapshotFileSystemStorageFields,
+	},
+	"VnetId":   ubx.FieldSpec{WireName: "vnet_id"},
+	"ZoneOcid": ubx.FieldSpec{WireName: "zone_ocid"},
+}
 
 type OpenapiExadbVmClusterConfig struct {
 	// ExadbVmCluster resource model
@@ -266,8 +266,8 @@ var OpenapiExadbVmCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiExadbVmCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiExadbVmCluster_PropertiesFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

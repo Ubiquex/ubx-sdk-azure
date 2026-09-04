@@ -5,64 +5,64 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTable_Value_Properties_RestoredLogs struct {
 	AzureAsyncOperationId any
-	EndRestoreTime any
-	SourceTable any
-	StartRestoreTime any
+	EndRestoreTime        any
+	SourceTable           any
+	StartRestoreTime      any
 }
 
 type OpenapiTable_Value_Properties_ResultStatistics struct {
 	IngestedRecords any
-	Progress any
-	ScannedGb any
+	Progress        any
+	ScannedGb       any
 }
 
 type OpenapiTable_Value_Properties_Schema_Columns struct {
-	DataTypeHint any
-	Description any
-	DisplayName any
+	DataTypeHint     any
+	Description      any
+	DisplayName      any
 	IsDefaultDisplay any
-	IsHidden any
-	Name any
-	Type any
+	IsHidden         any
+	Name             any
+	Type             any
 }
 
 type OpenapiTable_Value_Properties_Schema struct {
-	Categories any
-	Columns any
-	Description any
-	DisplayName any
-	Labels any
-	Name any
-	Solutions any
-	Source any
+	Categories      any
+	Columns         any
+	Description     any
+	DisplayName     any
+	Labels          any
+	Name            any
+	Solutions       any
+	Source          any
 	StandardColumns any
-	TableSubType any
-	TableType any
+	TableSubType    any
+	TableType       any
 }
 
 type OpenapiTable_Value_Properties_SearchResults struct {
 	AzureAsyncOperationId any
-	Description any
-	EndSearchTime any
-	Limit any
-	Query any
-	SourceTable any
-	StartSearchTime any
+	Description           any
+	EndSearchTime         any
+	Limit                 any
+	Query                 any
+	SourceTable           any
+	StartSearchTime       any
 }
 
 type OpenapiTable_Value_Properties struct {
-	ArchiveRetentionInDays any
-	LastPlanModifiedDate any
-	Plan any
-	ProtectionLevel any
-	ProvisioningState any
-	RestoredLogs any
-	ResultStatistics any
-	RetentionInDays any
-	RetentionInDaysAsDefault any
-	Schema any
-	SearchResults any
-	TotalRetentionInDays any
+	ArchiveRetentionInDays        any
+	LastPlanModifiedDate          any
+	Plan                          any
+	ProtectionLevel               any
+	ProvisioningState             any
+	RestoredLogs                  any
+	ResultStatistics              any
+	RetentionInDays               any
+	RetentionInDaysAsDefault      any
+	Schema                        any
+	SearchResults                 any
+	TotalRetentionInDays          any
 	TotalRetentionInDaysAsDefault any
 }
 
@@ -78,7 +78,7 @@ type OpenapiTableAttrs struct {
 	// The URL to get the next set of results.
 	NextLink any
 	// A list of data tables.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

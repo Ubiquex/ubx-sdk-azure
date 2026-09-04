@@ -21,20 +21,16 @@ type EncryptionprotectorsEncryptionProtector_Properties struct {
 }
 
 var EncryptionprotectorsEncryptionProtector_PropertiesFields = ubx.FieldMap{
-		"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"ServerKeyName": ubx.FieldSpec{WireName: "server_key_name"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Subregion": ubx.FieldSpec{WireName: "subregion"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
+	"KeyVersion":          ubx.FieldSpec{WireName: "key_version"},
+	"ServerKeyName":       ubx.FieldSpec{WireName: "server_key_name"},
+	"ServerKeyType":       ubx.FieldSpec{WireName: "server_key_type"},
+	"Subregion":           ubx.FieldSpec{WireName: "subregion"},
+	"Thumbprint":          ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":                 ubx.FieldSpec{WireName: "uri"},
+}
 
 type EncryptionprotectorsEncryptionProtectorConfig struct {
-	// Kind of encryption protector. This is metadata used for the Azure portal experience.
-	Kind any
-	// Resource location.
-	Location any
 	// Properties for an encryption protector execution.
 	Properties any
 }
@@ -51,12 +47,10 @@ type EncryptionprotectorsEncryptionProtectorAttrs struct {
 var EncryptionprotectorsEncryptionProtector = ubx.ResourceBinding{
 	WireType: "azure_sql_encryptionprotectors_encryption_protector",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: EncryptionprotectorsEncryptionProtector_PropertiesFields,
+			Kind:     "object",
+			Fields:   EncryptionprotectorsEncryptionProtector_PropertiesFields,
 		},
 	},
 }

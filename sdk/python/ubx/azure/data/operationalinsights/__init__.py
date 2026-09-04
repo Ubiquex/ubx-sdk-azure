@@ -4,9 +4,11 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
+from .openapi_available_service_tier import OpenapiAvailableServiceTier, OpenapiAvailableServiceTierConfig
 from .openapi_cluster import OpenapiCluster, OpenapiClusterConfig
 from .openapi_data_export import OpenapiDataExport, OpenapiDataExportConfig
 from .openapi_data_source import OpenapiDataSource, OpenapiDataSourceConfig
+from .openapi_intelligence_pack import OpenapiIntelligencePack, OpenapiIntelligencePackConfig
 from .openapi_linked_service import OpenapiLinkedService, OpenapiLinkedServiceConfig
 from .openapi_linked_storage_accounts_resource import OpenapiLinkedStorageAccountsResource, OpenapiLinkedStorageAccountsResourceConfig
 from .openapi_log_analytics_query_pack import OpenapiLogAnalyticsQueryPack, OpenapiLogAnalyticsQueryPackConfig

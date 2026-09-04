@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimdocumentationsDocumentationContract_Value_Properties struct {
 	Content any
-	Title any
+	Title   any
 }
 
 type ApimdocumentationsDocumentationContract_Value struct {
@@ -24,6 +24,5 @@ type ApimdocumentationsDocumentationContractAttrs struct {
 
 var ApimdocumentationsDocumentationContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimdocumentations_documentation_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

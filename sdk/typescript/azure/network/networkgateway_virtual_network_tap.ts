@@ -10010,8 +10010,6 @@ const NetworkgatewayVirtualNetworkTap_PropertiesFields: FieldMap = {
 };
 
 export interface NetworkgatewayVirtualNetworkTapConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Virtual Network Tap properties. */
   properties?: NetworkgatewayVirtualNetworkTap_Properties | Computed<NetworkgatewayVirtualNetworkTap_Properties>;
 }
@@ -10026,7 +10024,6 @@ export interface NetworkgatewayVirtualNetworkTapAttrs {
 export const NetworkgatewayVirtualNetworkTap: ResourceBinding<NetworkgatewayVirtualNetworkTapConfig, NetworkgatewayVirtualNetworkTapAttrs> = {
   wireType: "azure_network_networkgateway_virtual_network_tap",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -861,31 +861,6 @@ _OpenapiMachine_PropertiesFields = {
     "vm_uuid": ubx.FieldSpec(wire_name="vm_uuid"),
 }
 
-_OpenapiMachine_Resources_PropertiesFields = {
-    "auto_upgrade_minor_version": ubx.FieldSpec(wire_name="auto_upgrade_minor_version"),
-    "enable_automatic_upgrade": ubx.FieldSpec(wire_name="enable_automatic_upgrade"),
-    "force_update_tag": ubx.FieldSpec(wire_name="force_update_tag"),
-    "instance_view": ubx.FieldSpec(
-        wire_name="instance_view",
-        kind="object",
-        fields=_OpenapiMachine_Properties_ExtensionsFields,
-    ),
-    "protected_settings": ubx.FieldSpec(wire_name="protected_settings"),
-    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
-    "publisher": ubx.FieldSpec(wire_name="publisher"),
-    "settings": ubx.FieldSpec(wire_name="settings"),
-    "type": ubx.FieldSpec(wire_name="type"),
-    "type_handler_version": ubx.FieldSpec(wire_name="type_handler_version"),
-}
-
-_OpenapiMachine_ResourcesFields = {
-    "properties": ubx.FieldSpec(
-        wire_name="properties",
-        kind="object",
-        fields=_OpenapiMachine_Resources_PropertiesFields,
-    ),
-}
-
 @dataclasses.dataclass
 class OpenapiMachineConfig:
     # Managed service identity (system assigned and/or user assigned identities)
@@ -894,8 +869,6 @@ class OpenapiMachineConfig:
     kind: Any = None
     # Describes the properties of a hybrid machine.
     properties: Any = None
-    # The list of extensions affiliated to the machine
-    resources: Any = None
 
 @dataclasses.dataclass
 class OpenapiMachineAttrs:
@@ -921,11 +894,6 @@ OpenapiMachine = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_OpenapiMachine_PropertiesFields,
-        ),
-        "resources": ubx.FieldSpec(
-            wire_name="resources",
-            kind="list",
-            fields=_OpenapiMachine_ResourcesFields,
         ),
     },
 )

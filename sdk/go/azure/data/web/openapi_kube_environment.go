@@ -10,11 +10,11 @@ type OpenapiKubeEnvironment_Value_ExtendedLocation struct {
 
 type OpenapiKubeEnvironment_Value_Properties_AppLogsConfiguration_LogAnalyticsConfiguration struct {
 	CustomerId any
-	SharedKey any
+	SharedKey  any
 }
 
 type OpenapiKubeEnvironment_Value_Properties_AppLogsConfiguration struct {
-	Destination any
+	Destination               any
 	LogAnalyticsConfiguration any
 }
 
@@ -23,41 +23,41 @@ type OpenapiKubeEnvironment_Value_Properties_ArcConfiguration_FrontEndServiceCon
 }
 
 type OpenapiKubeEnvironment_Value_Properties_ArcConfiguration struct {
-	ArtifactStorageAccessMode any
-	ArtifactStorageClassName any
-	ArtifactStorageMountPath any
-	ArtifactStorageNodeName any
-	ArtifactsStorageType any
+	ArtifactStorageAccessMode    any
+	ArtifactStorageClassName     any
+	ArtifactStorageMountPath     any
+	ArtifactStorageNodeName      any
+	ArtifactsStorageType         any
 	FrontEndServiceConfiguration any
-	KubeConfig any
+	KubeConfig                   any
 }
 
 type OpenapiKubeEnvironment_Value_Properties_ContainerAppsConfiguration struct {
-	AppSubnetResourceId any
+	AppSubnetResourceId          any
 	ControlPlaneSubnetResourceId any
-	DaprAiinstrumentationKey any
-	DockerBridgeCidr any
-	PlatformReservedCidr any
-	PlatformReservedDnsIp any
+	DaprAiinstrumentationKey     any
+	DockerBridgeCidr             any
+	PlatformReservedCidr         any
+	PlatformReservedDnsIp        any
 }
 
 type OpenapiKubeEnvironment_Value_Properties struct {
-	AksResourceId any
-	AppLogsConfiguration any
-	ArcConfiguration any
-	ContainerAppsConfiguration any
-	DefaultDomain any
-	DeploymentErrors any
-	EnvironmentType any
+	AksResourceId               any
+	AppLogsConfiguration        any
+	ArcConfiguration            any
+	ContainerAppsConfiguration  any
+	DefaultDomain               any
+	DeploymentErrors            any
+	EnvironmentType             any
 	InternalLoadBalancerEnabled any
-	ProvisioningState any
-	StaticIp any
+	ProvisioningState           any
+	StaticIp                    any
 }
 
 type OpenapiKubeEnvironment_Value struct {
 	ExtendedLocation any
-	Kind any
-	Properties any
+	Kind             any
+	Properties       any
 }
 
 type OpenapiKubeEnvironmentConfig struct {
@@ -72,6 +72,5 @@ type OpenapiKubeEnvironmentAttrs struct {
 
 var OpenapiKubeEnvironment = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_kube_environment",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

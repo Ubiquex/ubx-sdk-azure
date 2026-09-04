@@ -7,9 +7,20 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ApimcertificatesCertificateContract2_Properties_KeyVault_LastStatus:
+    # Last status code for sync and refresh of secret from key vault.
+    code: Any = None
+    # Details of the error else empty.
+    message: Any = None
+    # Last time secret was accessed. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    time_stamp_utc: Any = None
+
+@dataclasses.dataclass
 class ApimcertificatesCertificateContract2_Properties_KeyVault:
     # Null for SystemAssignedIdentity or Client Id for UserAssignedIdentity , which will be used to access key vault secret.
     identity_client_id: Any = None
+    # Issue contract Update Properties.
+    last_status: Any = None
     # Key vault secret identifier for fetching secret. Providing a versioned secret will prevent auto-refresh. This requires API Management service to be configured with aka.ms/apimmsi
     secret_identifier: Any = None
 
@@ -17,24 +28,44 @@ class ApimcertificatesCertificateContract2_Properties_KeyVault:
 class ApimcertificatesCertificateContract2_Properties:
     # Base 64 encoded certificate using the application/x-pkcs12 representation.
     data: Any = None
+    # Expiration date of the certificate. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    expiration_date: Any = None
     # Create keyVault contract details.
     key_vault: Any = None
     # Password for the Certificate
     password: Any = None
+    # Subject attribute of the certificate.
+    subject: Any = None
+    # Thumbprint of the certificate.
+    thumbprint: Any = None
+
+_ApimcertificatesCertificateContract2_Properties_KeyVault_LastStatusFields = {
+    "code": ubx.FieldSpec(wire_name="code"),
+    "message": ubx.FieldSpec(wire_name="message"),
+    "time_stamp_utc": ubx.FieldSpec(wire_name="time_stamp_utc"),
+}
 
 _ApimcertificatesCertificateContract2_Properties_KeyVaultFields = {
     "identity_client_id": ubx.FieldSpec(wire_name="identity_client_id"),
+    "last_status": ubx.FieldSpec(
+        wire_name="last_status",
+        kind="object",
+        fields=_ApimcertificatesCertificateContract2_Properties_KeyVault_LastStatusFields,
+    ),
     "secret_identifier": ubx.FieldSpec(wire_name="secret_identifier"),
 }
 
 _ApimcertificatesCertificateContract2_PropertiesFields = {
     "data": ubx.FieldSpec(wire_name="data"),
+    "expiration_date": ubx.FieldSpec(wire_name="expiration_date"),
     "key_vault": ubx.FieldSpec(
         wire_name="key_vault",
         kind="object",
         fields=_ApimcertificatesCertificateContract2_Properties_KeyVaultFields,
     ),
     "password": ubx.FieldSpec(wire_name="password"),
+    "subject": ubx.FieldSpec(wire_name="subject"),
+    "thumbprint": ubx.FieldSpec(wire_name="thumbprint"),
 }
 
 @dataclasses.dataclass

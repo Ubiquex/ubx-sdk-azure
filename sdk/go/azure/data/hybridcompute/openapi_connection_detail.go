@@ -4,10 +4,10 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConnectionDetail_ConnectionDetails struct {
-	GroupId any
-	Id any
-	LinkIdentifier any
-	MemberName any
+	GroupId          any
+	Id               any
+	LinkIdentifier   any
+	MemberName       any
 	PrivateIpAddress any
 }
 
@@ -19,7 +19,7 @@ type OpenapiConnectionDetailAttrs struct {
 	// List of Private Endpoint Connection details.
 	ConnectionDetails any
 	// Azure resource Id
-	Id any
+	Id                 any
 	PrivateLinkScopeId any
 	// Indicates whether machines associated with the private link scope can also use public Azure Arc service endpoints.
 	PublicNetworkAccess any

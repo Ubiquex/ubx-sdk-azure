@@ -4,24 +4,24 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiKey_Value_Properties_Attributes struct {
-	Created any
-	Enabled any
-	Exp any
-	Exportable any
-	Nbf any
+	Created       any
+	Enabled       any
+	Exp           any
+	Exportable    any
+	Nbf           any
 	RecoveryLevel any
-	Updated any
+	Updated       any
 }
 
 type OpenapiKey_Value_Properties_ReleasePolicy struct {
 	ContentType any
-	Data any
+	Data        any
 }
 
 type OpenapiKey_Value_Properties_RotationPolicy_Attributes struct {
-	Created any
+	Created    any
 	ExpiryTime any
-	Updated any
+	Updated    any
 }
 
 type OpenapiKey_Value_Properties_RotationPolicy_LifetimeActions_Action struct {
@@ -29,36 +29,36 @@ type OpenapiKey_Value_Properties_RotationPolicy_LifetimeActions_Action struct {
 }
 
 type OpenapiKey_Value_Properties_RotationPolicy_LifetimeActions_Trigger struct {
-	TimeAfterCreate any
+	TimeAfterCreate  any
 	TimeBeforeExpiry any
 }
 
 type OpenapiKey_Value_Properties_RotationPolicy_LifetimeActions struct {
-	Action any
+	Action  any
 	Trigger any
 }
 
 type OpenapiKey_Value_Properties_RotationPolicy struct {
-	Attributes any
+	Attributes      any
 	LifetimeActions any
 }
 
 type OpenapiKey_Value_Properties struct {
-	Attributes any
-	CurveName any
-	KeyOps any
-	KeySize any
-	KeyUri any
+	Attributes        any
+	CurveName         any
+	KeyOps            any
+	KeySize           any
+	KeyUri            any
 	KeyUriWithVersion any
-	Kty any
-	ReleasePolicy any
-	RotationPolicy any
+	Kty               any
+	ReleasePolicy     any
+	RotationPolicy    any
 }
 
 type OpenapiKey_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiKeyConfig struct {
@@ -69,7 +69,7 @@ type OpenapiKeyAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The Key items on this page
-	Value any
+	Value     any
 	VaultName any
 }
 

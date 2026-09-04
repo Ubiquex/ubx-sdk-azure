@@ -67,91 +67,91 @@ type OpenapiDomainResource_Properties struct {
 }
 
 var OpenapiDomainResource_Properties_VerificationRecords_DkimFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Ttl": ubx.FieldSpec{WireName: "ttl"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Ttl":   ubx.FieldSpec{WireName: "ttl"},
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiDomainResource_Properties_VerificationRecordsFields = ubx.FieldMap{
-		"Dkim": ubx.FieldSpec{
-			WireName: "dkim",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
-		},
-		"Dkim2": ubx.FieldSpec{
-			WireName: "dkim2",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
-		},
-		"Dmarc": ubx.FieldSpec{
-			WireName: "dmarc",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
-		},
-		"Domain": ubx.FieldSpec{
-			WireName: "domain",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
-		},
-		"Spf": ubx.FieldSpec{
-			WireName: "spf",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
-		},
-	}
+	"Dkim": ubx.FieldSpec{
+		WireName: "dkim",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
+	},
+	"Dkim2": ubx.FieldSpec{
+		WireName: "dkim2",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
+	},
+	"Dmarc": ubx.FieldSpec{
+		WireName: "dmarc",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
+	},
+	"Domain": ubx.FieldSpec{
+		WireName: "domain",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
+	},
+	"Spf": ubx.FieldSpec{
+		WireName: "spf",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationRecords_DkimFields,
+	},
+}
 
 var OpenapiDomainResource_Properties_VerificationStates_DkimFields = ubx.FieldMap{
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
+	"Status":    ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiDomainResource_Properties_VerificationStatesFields = ubx.FieldMap{
-		"Dkim": ubx.FieldSpec{
-			WireName: "dkim",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationStates_DkimFields,
-		},
-		"Dkim2": ubx.FieldSpec{
-			WireName: "dkim2",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationStates_DkimFields,
-		},
-		"Dmarc": ubx.FieldSpec{
-			WireName: "dmarc",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationStates_DkimFields,
-		},
-		"Domain": ubx.FieldSpec{
-			WireName: "domain",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationStates_DkimFields,
-		},
-		"Spf": ubx.FieldSpec{
-			WireName: "spf",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationStates_DkimFields,
-		},
-	}
+	"Dkim": ubx.FieldSpec{
+		WireName: "dkim",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationStates_DkimFields,
+	},
+	"Dkim2": ubx.FieldSpec{
+		WireName: "dkim2",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationStates_DkimFields,
+	},
+	"Dmarc": ubx.FieldSpec{
+		WireName: "dmarc",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationStates_DkimFields,
+	},
+	"Domain": ubx.FieldSpec{
+		WireName: "domain",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationStates_DkimFields,
+	},
+	"Spf": ubx.FieldSpec{
+		WireName: "spf",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationStates_DkimFields,
+	},
+}
 
 var OpenapiDomainResource_PropertiesFields = ubx.FieldMap{
-		"DataLocation": ubx.FieldSpec{WireName: "data_location"},
-		"DomainManagement": ubx.FieldSpec{WireName: "domain_management"},
-		"FromSenderDomain": ubx.FieldSpec{WireName: "from_sender_domain"},
-		"MailFromSenderDomain": ubx.FieldSpec{WireName: "mail_from_sender_domain"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"UserEngagementTracking": ubx.FieldSpec{WireName: "user_engagement_tracking"},
-		"VerificationRecords": ubx.FieldSpec{
-			WireName: "verification_records",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationRecordsFields,
-		},
-		"VerificationStates": ubx.FieldSpec{
-			WireName: "verification_states",
-			Kind: "object",
-			Fields: OpenapiDomainResource_Properties_VerificationStatesFields,
-		},
-	}
+	"DataLocation":           ubx.FieldSpec{WireName: "data_location"},
+	"DomainManagement":       ubx.FieldSpec{WireName: "domain_management"},
+	"FromSenderDomain":       ubx.FieldSpec{WireName: "from_sender_domain"},
+	"MailFromSenderDomain":   ubx.FieldSpec{WireName: "mail_from_sender_domain"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"UserEngagementTracking": ubx.FieldSpec{WireName: "user_engagement_tracking"},
+	"VerificationRecords": ubx.FieldSpec{
+		WireName: "verification_records",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationRecordsFields,
+	},
+	"VerificationStates": ubx.FieldSpec{
+		WireName: "verification_states",
+		Kind:     "object",
+		Fields:   OpenapiDomainResource_Properties_VerificationStatesFields,
+	},
+}
 
 type OpenapiDomainResourceConfig struct {
 	// A class that describes the properties of a Domains resource.
@@ -168,8 +168,8 @@ var OpenapiDomainResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDomainResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDomainResource_PropertiesFields,
 		},
 	},
 }

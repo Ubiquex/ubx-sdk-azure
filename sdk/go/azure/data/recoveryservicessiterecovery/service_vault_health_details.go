@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceVaultHealthDetails_Properties_ContainersHealth_Issues struct {
 	AffectedResourceCorrelationIds any
-	AffectedResourceSubtype any
-	AffectedResourceType any
-	Category any
-	Severity any
-	SummaryCode any
-	SummaryMessage any
+	AffectedResourceSubtype        any
+	AffectedResourceType           any
+	Category                       any
+	Severity                       any
+	SummaryCode                    any
+	SummaryMessage                 any
 }
 
 type ServiceVaultHealthDetails_Properties_ContainersHealth struct {
@@ -23,38 +23,38 @@ type ServiceVaultHealthDetails_Properties_ContainersHealth struct {
 }
 
 type ServiceVaultHealthDetails_Properties_VaultErrors_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceVaultHealthDetails_Properties_VaultErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceVaultHealthDetails_Properties struct {
@@ -76,7 +76,7 @@ type ServiceVaultHealthDetailsAttrs struct {
 	// Resource Location
 	Location any
 	// class to define the health summary of the Vault.
-	Properties any
+	Properties   any
 	ResourceName any
 }
 

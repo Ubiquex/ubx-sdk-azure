@@ -69,53 +69,51 @@ type Sbsubscription_Properties struct {
 }
 
 var Sbsubscription_Properties_ClientAffinePropertiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"IsDurable": ubx.FieldSpec{WireName: "is_durable"},
-		"IsShared": ubx.FieldSpec{WireName: "is_shared"},
-	}
+	"ClientId":  ubx.FieldSpec{WireName: "client_id"},
+	"IsDurable": ubx.FieldSpec{WireName: "is_durable"},
+	"IsShared":  ubx.FieldSpec{WireName: "is_shared"},
+}
 
 var Sbsubscription_Properties_CountDetailsFields = ubx.FieldMap{
-		"ActiveMessageCount": ubx.FieldSpec{WireName: "active_message_count"},
-		"DeadLetterMessageCount": ubx.FieldSpec{WireName: "dead_letter_message_count"},
-		"ScheduledMessageCount": ubx.FieldSpec{WireName: "scheduled_message_count"},
-		"TransferDeadLetterMessageCount": ubx.FieldSpec{WireName: "transfer_dead_letter_message_count"},
-		"TransferMessageCount": ubx.FieldSpec{WireName: "transfer_message_count"},
-	}
+	"ActiveMessageCount":             ubx.FieldSpec{WireName: "active_message_count"},
+	"DeadLetterMessageCount":         ubx.FieldSpec{WireName: "dead_letter_message_count"},
+	"ScheduledMessageCount":          ubx.FieldSpec{WireName: "scheduled_message_count"},
+	"TransferDeadLetterMessageCount": ubx.FieldSpec{WireName: "transfer_dead_letter_message_count"},
+	"TransferMessageCount":           ubx.FieldSpec{WireName: "transfer_message_count"},
+}
 
 var Sbsubscription_PropertiesFields = ubx.FieldMap{
-		"AccessedAt": ubx.FieldSpec{WireName: "accessed_at"},
-		"AutoDeleteOnIdle": ubx.FieldSpec{WireName: "auto_delete_on_idle"},
-		"ClientAffineProperties": ubx.FieldSpec{
-			WireName: "client_affine_properties",
-			Kind: "object",
-			Fields: Sbsubscription_Properties_ClientAffinePropertiesFields,
-		},
-		"CountDetails": ubx.FieldSpec{
-			WireName: "count_details",
-			Kind: "object",
-			Fields: Sbsubscription_Properties_CountDetailsFields,
-		},
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"DeadLetteringOnFilterEvaluationExceptions": ubx.FieldSpec{WireName: "dead_lettering_on_filter_evaluation_exceptions"},
-		"DeadLetteringOnMessageExpiration": ubx.FieldSpec{WireName: "dead_lettering_on_message_expiration"},
-		"DefaultMessageTimeToLive": ubx.FieldSpec{WireName: "default_message_time_to_live"},
-		"DuplicateDetectionHistoryTimeWindow": ubx.FieldSpec{WireName: "duplicate_detection_history_time_window"},
-		"EnableBatchedOperations": ubx.FieldSpec{WireName: "enable_batched_operations"},
-		"ForwardDeadLetteredMessagesTo": ubx.FieldSpec{WireName: "forward_dead_lettered_messages_to"},
-		"ForwardTo": ubx.FieldSpec{WireName: "forward_to"},
-		"IsClientAffine": ubx.FieldSpec{WireName: "is_client_affine"},
-		"LockDuration": ubx.FieldSpec{WireName: "lock_duration"},
-		"MaxDeliveryCount": ubx.FieldSpec{WireName: "max_delivery_count"},
-		"MessageCount": ubx.FieldSpec{WireName: "message_count"},
-		"RequiresSession": ubx.FieldSpec{WireName: "requires_session"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
-	}
+	"AccessedAt":       ubx.FieldSpec{WireName: "accessed_at"},
+	"AutoDeleteOnIdle": ubx.FieldSpec{WireName: "auto_delete_on_idle"},
+	"ClientAffineProperties": ubx.FieldSpec{
+		WireName: "client_affine_properties",
+		Kind:     "object",
+		Fields:   Sbsubscription_Properties_ClientAffinePropertiesFields,
+	},
+	"CountDetails": ubx.FieldSpec{
+		WireName: "count_details",
+		Kind:     "object",
+		Fields:   Sbsubscription_Properties_CountDetailsFields,
+	},
+	"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
+	"DeadLetteringOnFilterEvaluationExceptions": ubx.FieldSpec{WireName: "dead_lettering_on_filter_evaluation_exceptions"},
+	"DeadLetteringOnMessageExpiration":          ubx.FieldSpec{WireName: "dead_lettering_on_message_expiration"},
+	"DefaultMessageTimeToLive":                  ubx.FieldSpec{WireName: "default_message_time_to_live"},
+	"DuplicateDetectionHistoryTimeWindow":       ubx.FieldSpec{WireName: "duplicate_detection_history_time_window"},
+	"EnableBatchedOperations":                   ubx.FieldSpec{WireName: "enable_batched_operations"},
+	"ForwardDeadLetteredMessagesTo":             ubx.FieldSpec{WireName: "forward_dead_lettered_messages_to"},
+	"ForwardTo":                                 ubx.FieldSpec{WireName: "forward_to"},
+	"IsClientAffine":                            ubx.FieldSpec{WireName: "is_client_affine"},
+	"LockDuration":                              ubx.FieldSpec{WireName: "lock_duration"},
+	"MaxDeliveryCount":                          ubx.FieldSpec{WireName: "max_delivery_count"},
+	"MessageCount":                              ubx.FieldSpec{WireName: "message_count"},
+	"RequiresSession":                           ubx.FieldSpec{WireName: "requires_session"},
+	"Status":                                    ubx.FieldSpec{WireName: "status"},
+	"UpdatedAt":                                 ubx.FieldSpec{WireName: "updated_at"},
+	"UserMetadata":                              ubx.FieldSpec{WireName: "user_metadata"},
+}
 
 type SbsubscriptionConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// Description of Subscription Resource.
 	Properties any
 }
@@ -130,11 +128,10 @@ type SbsubscriptionAttrs struct {
 var Sbsubscription = ubx.ResourceBinding{
 	WireType: "azure_servicebus_sbsubscription",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Sbsubscription_PropertiesFields,
+			Kind:     "object",
+			Fields:   Sbsubscription_PropertiesFields,
 		},
 	},
 }

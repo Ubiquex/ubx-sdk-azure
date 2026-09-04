@@ -14,19 +14,19 @@ type VmmServer_Value_Properties_Credentials struct {
 }
 
 type VmmServer_Value_Properties struct {
-	ConnectionStatus any
-	Credentials any
-	ErrorMessage any
-	Fqdn any
-	Port any
+	ConnectionStatus  any
+	Credentials       any
+	ErrorMessage      any
+	Fqdn              any
+	Port              any
 	ProvisioningState any
-	Uuid any
-	Version any
+	Uuid              any
+	Version           any
 }
 
 type VmmServer_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VmmServerConfig struct {
@@ -41,6 +41,5 @@ type VmmServerAttrs struct {
 
 var VmmServer = ubx.DataSourceBinding{
 	WireType: "azure_scvmm_vmm_server",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

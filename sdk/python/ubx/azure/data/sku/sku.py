@@ -11,14 +11,12 @@ class SkuConfig:
     edge_zone: Any = None
     offer: Any = None
     publisher_name: Any = None
-    skus: Any = None
 
 @dataclasses.dataclass
 class SkuAttrs:
     edge_zone: Any = None
     offer: Any = None
     publisher_name: Any = None
-    skus: Any = None
 
 Sku = ubx.DataSourceBinding(
     wire_type="azure_sku",
@@ -26,6 +24,5 @@ Sku = ubx.DataSourceBinding(
         "edge_zone": ubx.FieldSpec(wire_name="edge_zone"),
         "offer": ubx.FieldSpec(wire_name="offer"),
         "publisher_name": ubx.FieldSpec(wire_name="publisher_name"),
-        "skus": ubx.FieldSpec(wire_name="skus"),
     },
 )

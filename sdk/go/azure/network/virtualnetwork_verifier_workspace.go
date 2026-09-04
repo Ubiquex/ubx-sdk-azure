@@ -25,26 +25,13 @@ type VirtualnetworkVerifierWorkspace_SystemData struct {
 }
 
 var VirtualnetworkVerifierWorkspace_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
-
-var VirtualnetworkVerifierWorkspace_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkVerifierWorkspaceConfig struct {
-	// String representing unique etag for the resource document.
-	Etag any
 	// Properties of Verifier Workspace resource.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type VirtualnetworkVerifierWorkspaceAttrs struct {
@@ -59,16 +46,10 @@ type VirtualnetworkVerifierWorkspaceAttrs struct {
 var VirtualnetworkVerifierWorkspace = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_verifier_workspace",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkVerifierWorkspace_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: VirtualnetworkVerifierWorkspace_SystemDataFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkVerifierWorkspace_PropertiesFields,
 		},
 	},
 }

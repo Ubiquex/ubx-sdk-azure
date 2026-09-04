@@ -13,10 +13,10 @@ type ManagedidentityFederatedIdentityCredential_Properties struct {
 }
 
 var ManagedidentityFederatedIdentityCredential_PropertiesFields = ubx.FieldMap{
-		"Audiences": ubx.FieldSpec{WireName: "audiences"},
-		"Issuer": ubx.FieldSpec{WireName: "issuer"},
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-	}
+	"Audiences": ubx.FieldSpec{WireName: "audiences"},
+	"Issuer":    ubx.FieldSpec{WireName: "issuer"},
+	"Subject":   ubx.FieldSpec{WireName: "subject"},
+}
 
 type ManagedidentityFederatedIdentityCredentialConfig struct {
 	// The properties associated with a federated identity credential.
@@ -33,8 +33,8 @@ var ManagedidentityFederatedIdentityCredential = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedidentityFederatedIdentityCredential_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedidentityFederatedIdentityCredential_PropertiesFields,
 		},
 	},
 }

@@ -55,8 +55,6 @@ _VirtualnetworkIpAllocation_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkIpAllocationConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Properties of the IpAllocation.
     properties: Any = None
 
@@ -70,7 +68,6 @@ class VirtualnetworkIpAllocationAttrs:
 VirtualnetworkIpAllocation = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_ip_allocation",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

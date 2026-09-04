@@ -4,14 +4,14 @@ package maps
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementMapsAccount_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ManagementMapsAccount_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -24,33 +24,33 @@ type ManagementMapsAccount_Value_Properties_Cors struct {
 }
 
 type ManagementMapsAccount_Value_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentity struct {
-	DelegatedIdentityClientId any
-	IdentityType any
+	DelegatedIdentityClientId      any
+	IdentityType                   any
 	UserAssignedIdentityResourceId any
 }
 
 type ManagementMapsAccount_Value_Properties_Encryption_CustomerManagedKeyEncryption struct {
 	KeyEncryptionKeyIdentity any
-	KeyEncryptionKeyUrl any
+	KeyEncryptionKeyUrl      any
 }
 
 type ManagementMapsAccount_Value_Properties_Encryption struct {
 	CustomerManagedKeyEncryption any
-	InfrastructureEncryption any
+	InfrastructureEncryption     any
 }
 
 type ManagementMapsAccount_Value_Properties_LinkedResources struct {
-	Id any
+	Id         any
 	UniqueName any
 }
 
 type ManagementMapsAccount_Value_Properties struct {
-	Cors any
-	DisableLocalAuth any
-	Encryption any
-	LinkedResources any
+	Cors              any
+	DisableLocalAuth  any
+	Encryption        any
+	LinkedResources   any
 	ProvisioningState any
-	UniqueId any
+	UniqueId          any
 }
 
 type ManagementMapsAccount_Value_Sku struct {
@@ -59,19 +59,19 @@ type ManagementMapsAccount_Value_Sku struct {
 }
 
 type ManagementMapsAccount_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ManagementMapsAccount_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 	SystemData any
 }
 
@@ -87,6 +87,5 @@ type ManagementMapsAccountAttrs struct {
 
 var ManagementMapsAccount = ubx.DataSourceBinding{
 	WireType: "azure_maps_management_maps_account",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

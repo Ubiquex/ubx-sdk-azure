@@ -4,29 +4,29 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDaprComponent_Value_Properties_Metadata struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiDaprComponent_Value_Properties_Secrets struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
-	Name any
-	Value any
+	Name        any
+	Value       any
 }
 
 type OpenapiDaprComponent_Value_Properties struct {
-	ComponentType any
-	DeploymentErrors any
-	IgnoreErrors any
-	InitTimeout any
-	Metadata any
-	ProvisioningState any
-	Scopes any
+	ComponentType        any
+	DeploymentErrors     any
+	IgnoreErrors         any
+	InitTimeout          any
+	Metadata             any
+	ProvisioningState    any
+	Scopes               any
 	SecretStoreComponent any
-	Secrets any
-	Version any
+	Secrets              any
+	Version              any
 }
 
 type OpenapiDaprComponent_Value struct {

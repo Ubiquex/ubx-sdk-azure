@@ -25,16 +25,16 @@ type OpenapiWatcher_Properties struct {
 }
 
 var OpenapiWatcher_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ExecutionFrequencyInSeconds": ubx.FieldSpec{WireName: "execution_frequency_in_seconds"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"ScriptName": ubx.FieldSpec{WireName: "script_name"},
-		"ScriptParameters": ubx.FieldSpec{WireName: "script_parameters"},
-		"ScriptRunOn": ubx.FieldSpec{WireName: "script_run_on"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"CreationTime":                ubx.FieldSpec{WireName: "creation_time"},
+	"Description":                 ubx.FieldSpec{WireName: "description"},
+	"ExecutionFrequencyInSeconds": ubx.FieldSpec{WireName: "execution_frequency_in_seconds"},
+	"LastModifiedBy":              ubx.FieldSpec{WireName: "last_modified_by"},
+	"LastModifiedTime":            ubx.FieldSpec{WireName: "last_modified_time"},
+	"ScriptName":                  ubx.FieldSpec{WireName: "script_name"},
+	"ScriptParameters":            ubx.FieldSpec{WireName: "script_parameters"},
+	"ScriptRunOn":                 ubx.FieldSpec{WireName: "script_run_on"},
+	"Status":                      ubx.FieldSpec{WireName: "status"},
+}
 
 type OpenapiWatcherConfig struct {
 	// Gets or sets the etag of the resource.
@@ -61,12 +61,12 @@ type OpenapiWatcherAttrs struct {
 var OpenapiWatcher = ubx.ResourceBinding{
 	WireType: "azure_automation_openapi_watcher",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiWatcher_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiWatcher_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

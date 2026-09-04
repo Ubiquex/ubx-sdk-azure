@@ -7,6 +7,14 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class ApimusersUserContract2_Properties_Groups:
+    built_in: Any = None
+    description: Any = None
+    display_name: Any = None
+    external_id: Any = None
+    type: Any = None
+
+@dataclasses.dataclass
 class ApimusersUserContract2_Properties:
     # Determines the type of application which send the create user request. Default is legacy portal.
     app_type: Any = None
@@ -16,18 +24,36 @@ class ApimusersUserContract2_Properties:
     email: Any = None
     # First name.
     first_name: Any = None
+    # Collection of groups user is part of.
+    groups: Any = None
     # Last name.
     last_name: Any = None
     # User Password. If no value is provided, a default password is generated.
     password: Any = None
+    # Date of user registration. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.
+    registration_date: Any = None
+
+_ApimusersUserContract2_Properties_GroupsFields = {
+    "built_in": ubx.FieldSpec(wire_name="built_in"),
+    "description": ubx.FieldSpec(wire_name="description"),
+    "display_name": ubx.FieldSpec(wire_name="display_name"),
+    "external_id": ubx.FieldSpec(wire_name="external_id"),
+    "type": ubx.FieldSpec(wire_name="type"),
+}
 
 _ApimusersUserContract2_PropertiesFields = {
     "app_type": ubx.FieldSpec(wire_name="app_type"),
     "confirmation": ubx.FieldSpec(wire_name="confirmation"),
     "email": ubx.FieldSpec(wire_name="email"),
     "first_name": ubx.FieldSpec(wire_name="first_name"),
+    "groups": ubx.FieldSpec(
+        wire_name="groups",
+        kind="list",
+        fields=_ApimusersUserContract2_Properties_GroupsFields,
+    ),
     "last_name": ubx.FieldSpec(wire_name="last_name"),
     "password": ubx.FieldSpec(wire_name="password"),
+    "registration_date": ubx.FieldSpec(wire_name="registration_date"),
 }
 
 @dataclasses.dataclass

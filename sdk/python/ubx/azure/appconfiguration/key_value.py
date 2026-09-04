@@ -38,14 +38,8 @@ _KeyValue_PropertiesFields = {
 
 @dataclasses.dataclass
 class KeyValueConfig:
-    # The resource ID.
-    id: Any = None
-    # The name of the resource.
-    name: Any = None
     # All key-value properties.
     properties: Any = None
-    # The type of the resource.
-    type: Any = None
 
 @dataclasses.dataclass
 class KeyValueAttrs:
@@ -61,13 +55,10 @@ class KeyValueAttrs:
 KeyValue = ubx.ResourceBinding(
     wire_type="azure_appconfiguration_key_value",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_KeyValue_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

@@ -62,8 +62,6 @@ const ExpressrouteExpressRouteCircuitConnection_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteExpressRouteCircuitConnectionConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of the express route circuit connection. */
   properties?: ExpressrouteExpressRouteCircuitConnection_Properties | Computed<ExpressrouteExpressRouteCircuitConnection_Properties>;
 }
@@ -78,7 +76,6 @@ export interface ExpressrouteExpressRouteCircuitConnectionAttrs {
 export const ExpressrouteExpressRouteCircuitConnection: ResourceBinding<ExpressrouteExpressRouteCircuitConnectionConfig, ExpressrouteExpressRouteCircuitConnectionAttrs> = {
   wireType: "azure_network_expressroute_express_route_circuit_connection",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

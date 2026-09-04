@@ -18,16 +18,30 @@ export interface OpenapiSchedule_Properties_AdvancedSchedule {
 export interface OpenapiSchedule_Properties {
   /** The properties of the create Advanced Schedule. */
   advancedSchedule?: OpenapiSchedule_Properties_AdvancedSchedule | Computed<OpenapiSchedule_Properties_AdvancedSchedule>;
+  /** Gets or sets the creation time. */
+  creationTime?: string | Computed<string>;
   /** Gets or sets the description of the schedule. */
   description?: string | Computed<string>;
   /** Gets or sets the end time of the schedule. */
   expiryTime?: string | Computed<string>;
+  /** Gets or sets the expiry time's offset in minutes. */
+  expiryTimeOffsetMinutes?: number | Computed<number>;
   /** Gets or sets the frequency of the schedule. */
   frequency: string | Computed<string>;
   /** Gets or sets the interval of the schedule. */
   interval?: unknown | Computed<unknown>;
+  /** Gets or sets a value indicating whether this schedule is enabled. */
+  isEnabled?: boolean | Computed<boolean>;
+  /** Gets or sets the last modified time. */
+  lastModifiedTime?: string | Computed<string>;
+  /** Gets or sets the next run time of the schedule. */
+  nextRun?: string | Computed<string>;
+  /** Gets or sets the next run time's offset in minutes. */
+  nextRunOffsetMinutes?: number | Computed<number>;
   /** Gets or sets the start time of the schedule. */
   startTime: string | Computed<string>;
+  /** Gets the start time's offset in minutes. */
+  startTimeOffsetMinutes?: number | Computed<number>;
   /** Gets or sets the time zone of the schedule. */
   timeZone?: string | Computed<string>;
 }
@@ -53,11 +67,18 @@ const OpenapiSchedule_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiSchedule_Properties_AdvancedScheduleFields,
   },
+  creationTime: "creation_time",
   description: "description",
   expiryTime: "expiry_time",
+  expiryTimeOffsetMinutes: "expiry_time_offset_minutes",
   frequency: "frequency",
   interval: "interval",
+  isEnabled: "is_enabled",
+  lastModifiedTime: "last_modified_time",
+  nextRun: "next_run",
+  nextRunOffsetMinutes: "next_run_offset_minutes",
   startTime: "start_time",
+  startTimeOffsetMinutes: "start_time_offset_minutes",
   timeZone: "time_zone",
 };
 

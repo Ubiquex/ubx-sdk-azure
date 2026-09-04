@@ -4,9 +4,9 @@ package botservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BotChannel_Value_Properties struct {
-	ChannelName any
-	Etag any
-	Location any
+	ChannelName       any
+	Etag              any
+	Location          any
 	ProvisioningState any
 }
 
@@ -15,19 +15,19 @@ type BotChannel_Value struct {
 }
 
 type BotChannelConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type BotChannelAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of bot service channel resources.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// Gets the list of bot service channel results and their properties.
 	Value any
 }
@@ -35,9 +35,9 @@ type BotChannelAttrs struct {
 var BotChannel = ubx.DataSourceBinding{
 	WireType: "azure_botservice_bot_channel",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

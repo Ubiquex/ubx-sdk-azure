@@ -39,8 +39,6 @@ const VirtualnetworkRoute_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkRouteConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Route resource. */
   properties?: VirtualnetworkRoute_Properties | Computed<VirtualnetworkRoute_Properties>;
 }
@@ -55,7 +53,6 @@ export interface VirtualnetworkRouteAttrs {
 export const VirtualnetworkRoute: ResourceBinding<VirtualnetworkRouteConfig, VirtualnetworkRouteAttrs> = {
   wireType: "azure_network_virtualnetwork_route",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

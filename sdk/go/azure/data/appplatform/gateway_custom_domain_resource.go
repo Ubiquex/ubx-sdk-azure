@@ -12,21 +12,21 @@ type GatewayCustomDomainResource_Value struct {
 }
 
 type GatewayCustomDomainResourceConfig struct {
-	ApiVersion any
-	GatewayName any
+	ApiVersion        any
+	GatewayName       any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type GatewayCustomDomainResourceAttrs struct {
-	ApiVersion any
+	ApiVersion  any
 	GatewayName any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of Spring Cloud Gateway custom domain resources
 	Value any
 }
@@ -34,10 +34,10 @@ type GatewayCustomDomainResourceAttrs struct {
 var GatewayCustomDomainResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_gateway_custom_domain_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"GatewayName":       ubx.FieldSpec{WireName: "gateway_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

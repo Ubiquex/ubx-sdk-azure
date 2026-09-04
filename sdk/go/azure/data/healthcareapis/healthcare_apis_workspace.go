@@ -9,14 +9,14 @@ type HealthcareApisWorkspace_Value_Properties_PrivateEndpointConnections_Propert
 
 type HealthcareApisWorkspace_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type HealthcareApisWorkspace_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type HealthcareApisWorkspace_Value_Properties_PrivateEndpointConnections struct {
@@ -25,16 +25,16 @@ type HealthcareApisWorkspace_Value_Properties_PrivateEndpointConnections struct 
 
 type HealthcareApisWorkspace_Value_Properties struct {
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	ProvisioningState          any
+	PublicNetworkAccess        any
 }
 
 type HealthcareApisWorkspace_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -55,6 +55,5 @@ type HealthcareApisWorkspaceAttrs struct {
 
 var HealthcareApisWorkspace = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_workspace",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

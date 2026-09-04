@@ -4,14 +4,14 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoDbdatabaseGetResults_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DbOpenapiMongoDbdatabaseGetResults_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,25 +21,25 @@ type DbOpenapiMongoDbdatabaseGetResults_Value_Properties_Options_AutoscaleSettin
 
 type DbOpenapiMongoDbdatabaseGetResults_Value_Properties_Options struct {
 	AutoscaleSettings any
-	Throughput any
+	Throughput        any
 }
 
 type DbOpenapiMongoDbdatabaseGetResults_Value_Properties_Resource struct {
 	Etag any
-	Rid any
-	Ts any
+	Rid  any
+	Ts   any
 }
 
 type DbOpenapiMongoDbdatabaseGetResults_Value_Properties struct {
-	Options any
+	Options  any
 	Resource any
 }
 
 type DbOpenapiMongoDbdatabaseGetResults_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiMongoDbdatabaseGetResultsConfig struct {
@@ -48,7 +48,7 @@ type DbOpenapiMongoDbdatabaseGetResultsConfig struct {
 
 type DbOpenapiMongoDbdatabaseGetResultsAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of MongoDB databases and their properties.
 	Value any
 }

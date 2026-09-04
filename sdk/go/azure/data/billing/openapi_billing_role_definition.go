@@ -4,19 +4,19 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingRoleDefinition_Value_Properties_Permissions struct {
-	Actions any
+	Actions    any
 	NotActions any
 }
 
 type OpenapiBillingRoleDefinition_Value_Properties struct {
 	Description any
 	Permissions any
-	RoleName any
+	RoleName    any
 }
 
 type OpenapiBillingRoleDefinition_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiBillingRoleDefinitionConfig struct {

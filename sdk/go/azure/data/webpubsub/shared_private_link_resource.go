@@ -4,11 +4,11 @@ package webpubsub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SharedPrivateLinkResource_Value_Properties struct {
-	GroupId any
+	GroupId               any
 	PrivateLinkResourceId any
-	ProvisioningState any
-	RequestMessage any
-	Status any
+	ProvisioningState     any
+	RequestMessage        any
+	Status                any
 }
 
 type SharedPrivateLinkResource_Value struct {
@@ -16,14 +16,14 @@ type SharedPrivateLinkResource_Value struct {
 }
 
 type SharedPrivateLinkResourceConfig struct {
-	ReplicaName any
+	ReplicaName  any
 	ResourceName any
 }
 
 type SharedPrivateLinkResourceAttrs struct {
 	// Request URL that can be used to query next page of private endpoint connections. Returned when the total number of requested private endpoint connections exceed maximum page size.
-	NextLink any
-	ReplicaName any
+	NextLink     any
+	ReplicaName  any
 	ResourceName any
 	// The list of the shared private link resources
 	Value any
@@ -32,7 +32,7 @@ type SharedPrivateLinkResourceAttrs struct {
 var SharedPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_webpubsub_shared_private_link_resource",
 	Fields: ubx.FieldMap{
-		"ReplicaName": ubx.FieldSpec{WireName: "replica_name"},
+		"ReplicaName":  ubx.FieldSpec{WireName: "replica_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

@@ -74,22 +74,11 @@ const CustomlocationsCustomLocation_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const CustomlocationsCustomLocation_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface CustomlocationsCustomLocationConfig {
   /** Identity for the resource. */
   identity?: CustomlocationsCustomLocation_Identity | Computed<CustomlocationsCustomLocation_Identity>;
   /** Properties for a custom location. */
   properties?: CustomlocationsCustomLocation_Properties | Computed<CustomlocationsCustomLocation_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: CustomlocationsCustomLocation_SystemData | Computed<CustomlocationsCustomLocation_SystemData>;
 }
 
 export interface CustomlocationsCustomLocationAttrs {
@@ -113,11 +102,6 @@ export const CustomlocationsCustomLocation: ResourceBinding<CustomlocationsCusto
       wireName: "properties",
       kind: "object",
       fields: CustomlocationsCustomLocation_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: CustomlocationsCustomLocation_SystemDataFields,
     },
   },
 };

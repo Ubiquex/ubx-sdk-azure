@@ -7,15 +7,47 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
+class BmsRecoveryPointResource_Properties_ThreatInfo:
+    last_updated_time: Any = None
+    threat_description: Any = None
+    threat_end_time: Any = None
+    threat_severity: Any = None
+    threat_start_time: Any = None
+    threat_state: Any = None
+    threat_title: Any = None
+    threat_uri: Any = None
+
+@dataclasses.dataclass
 class BmsRecoveryPointResource_Properties:
     # This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.
     object_type: Any = None
     # ResourceGuardOperationRequests on which LAC check will be performed
     resource_guard_operation_requests: Any = None
+    # Recovery point threat information.
+    threat_info: Any = None
+    # Threat status of the recovery point
+    threat_status: Any = None
+
+_BmsRecoveryPointResource_Properties_ThreatInfoFields = {
+    "last_updated_time": ubx.FieldSpec(wire_name="last_updated_time"),
+    "threat_description": ubx.FieldSpec(wire_name="threat_description"),
+    "threat_end_time": ubx.FieldSpec(wire_name="threat_end_time"),
+    "threat_severity": ubx.FieldSpec(wire_name="threat_severity"),
+    "threat_start_time": ubx.FieldSpec(wire_name="threat_start_time"),
+    "threat_state": ubx.FieldSpec(wire_name="threat_state"),
+    "threat_title": ubx.FieldSpec(wire_name="threat_title"),
+    "threat_uri": ubx.FieldSpec(wire_name="threat_uri"),
+}
 
 _BmsRecoveryPointResource_PropertiesFields = {
     "object_type": ubx.FieldSpec(wire_name="object_type"),
     "resource_guard_operation_requests": ubx.FieldSpec(wire_name="resource_guard_operation_requests"),
+    "threat_info": ubx.FieldSpec(
+        wire_name="threat_info",
+        kind="list",
+        fields=_BmsRecoveryPointResource_Properties_ThreatInfoFields,
+    ),
+    "threat_status": ubx.FieldSpec(wire_name="threat_status"),
 }
 
 @dataclasses.dataclass

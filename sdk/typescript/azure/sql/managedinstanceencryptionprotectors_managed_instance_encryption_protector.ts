@@ -23,8 +23,6 @@ const ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_Prop
 };
 
 export interface ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorConfig {
-  /** Kind of encryption protector. This is metadata used for the Azure portal experience. */
-  kind?: string | Computed<string>;
   /** Properties for an encryption protector execution. */
   properties?: ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_Properties | Computed<ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_Properties>;
 }
@@ -39,7 +37,6 @@ export interface ManagedinstanceencryptionprotectorsManagedInstanceEncryptionPro
 export const ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector: ResourceBinding<ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorConfig, ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorAttrs> = {
   wireType: "azure_sql_managedinstanceencryptionprotectors_managed_instance_encryption_protector",
   fields: {
-    kind: "kind",
     properties: {
       wireName: "properties",
       kind: "object",

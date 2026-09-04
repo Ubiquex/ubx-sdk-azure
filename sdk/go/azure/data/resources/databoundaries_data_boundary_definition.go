@@ -12,20 +12,20 @@ type DataboundariesDataBoundaryDefinition_Properties struct {
 
 type DataboundariesDataBoundaryDefinitionConfig struct {
 	Default any
-	Scope any
+	Scope   any
 }
 
 type DataboundariesDataBoundaryDefinitionAttrs struct {
 	Default any
 	// Data boundary properties
 	Properties any
-	Scope any
+	Scope      any
 }
 
 var DataboundariesDataBoundaryDefinition = ubx.DataSourceBinding{
 	WireType: "azure_resources_databoundaries_data_boundary_definition",
 	Fields: ubx.FieldMap{
 		"Default": ubx.FieldSpec{WireName: "default"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"Scope":   ubx.FieldSpec{WireName: "scope"},
 	},
 }

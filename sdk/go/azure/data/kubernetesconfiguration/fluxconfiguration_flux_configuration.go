@@ -8,86 +8,86 @@ type FluxconfigurationFluxConfiguration_Value_Properties_AzureBlob_ManagedIdenti
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_AzureBlob_ServicePrincipal struct {
-	ClientCertificate any
-	ClientCertificatePassword any
+	ClientCertificate          any
+	ClientCertificatePassword  any
 	ClientCertificateSendChain any
-	ClientId any
-	ClientSecret any
-	TenantId any
+	ClientId                   any
+	ClientSecret               any
+	TenantId                   any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_AzureBlob struct {
-	AccountKey any
-	ContainerName any
-	LocalAuthRef any
-	ManagedIdentity any
-	SasToken any
-	ServicePrincipal any
+	AccountKey            any
+	ContainerName         any
+	LocalAuthRef          any
+	ManagedIdentity       any
+	SasToken              any
+	ServicePrincipal      any
 	SyncIntervalInSeconds any
-	TimeoutInSeconds any
-	Url any
+	TimeoutInSeconds      any
+	Url                   any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_Bucket struct {
-	AccessKey any
-	BucketName any
-	Insecure any
-	LocalAuthRef any
+	AccessKey             any
+	BucketName            any
+	Insecure              any
+	LocalAuthRef          any
 	SyncIntervalInSeconds any
-	TimeoutInSeconds any
-	Url any
+	TimeoutInSeconds      any
+	Url                   any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_GitRepository_RepositoryRef struct {
 	Branch any
 	Commit any
 	Semver any
-	Tag any
+	Tag    any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_GitRepository struct {
-	HttpsCacert any
-	HttpsUser any
-	LocalAuthRef any
-	RepositoryRef any
-	SshKnownHosts any
+	HttpsCacert           any
+	HttpsUser             any
+	LocalAuthRef          any
+	RepositoryRef         any
+	SshKnownHosts         any
 	SyncIntervalInSeconds any
-	TimeoutInSeconds any
-	Url any
+	TimeoutInSeconds      any
+	Url                   any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_Kustomizations_PostBuild_SubstituteFrom struct {
-	Kind any
-	Name any
+	Kind     any
+	Name     any
 	Optional any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_Kustomizations_PostBuild struct {
-	Substitute any
+	Substitute     any
 	SubstituteFrom any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_Kustomizations struct {
-	DependsOn any
-	Force any
-	Name any
-	Path any
-	PostBuild any
-	Prune any
+	DependsOn              any
+	Force                  any
+	Name                   any
+	Path                   any
+	PostBuild              any
+	Prune                  any
 	RetryIntervalInSeconds any
-	SyncIntervalInSeconds any
-	TimeoutInSeconds any
-	Wait any
+	SyncIntervalInSeconds  any
+	TimeoutInSeconds       any
+	Wait                   any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_Statuses_AppliedBy struct {
-	Name any
+	Name      any
 	Namespace any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_Statuses_HelmReleaseProperties struct {
-	FailureCount any
-	HelmChartRef any
+	FailureCount        any
+	HelmChartRef        any
 	InstallFailureCount any
 	LastRevisionApplied any
 	UpgradeFailureCount any
@@ -95,50 +95,50 @@ type FluxconfigurationFluxConfiguration_Value_Properties_Statuses_HelmReleasePro
 
 type FluxconfigurationFluxConfiguration_Value_Properties_Statuses_StatusConditions struct {
 	LastTransitionTime any
-	Message any
-	Reason any
-	Status any
-	Type any
+	Message            any
+	Reason             any
+	Status             any
+	Type               any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties_Statuses struct {
-	AppliedBy any
-	ComplianceState any
+	AppliedBy             any
+	ComplianceState       any
 	HelmReleaseProperties any
-	Kind any
-	Name any
-	Namespace any
-	StatusConditions any
+	Kind                  any
+	Name                  any
+	Namespace             any
+	StatusConditions      any
 }
 
 type FluxconfigurationFluxConfiguration_Value_Properties struct {
-	AzureBlob any
-	Bucket any
-	ComplianceState any
+	AzureBlob                      any
+	Bucket                         any
+	ComplianceState                any
 	ConfigurationProtectedSettings any
-	ErrorMessage any
-	GitRepository any
-	Kustomizations any
-	Namespace any
-	ProvisioningState any
-	ReconciliationWaitDuration any
-	RepositoryPublicKey any
-	Scope any
-	SourceKind any
-	SourceSyncedCommitId any
-	SourceUpdatedAt any
-	StatusUpdatedAt any
-	Statuses any
-	Suspend any
-	WaitForReconciliation any
+	ErrorMessage                   any
+	GitRepository                  any
+	Kustomizations                 any
+	Namespace                      any
+	ProvisioningState              any
+	ReconciliationWaitDuration     any
+	RepositoryPublicKey            any
+	Scope                          any
+	SourceKind                     any
+	SourceSyncedCommitId           any
+	SourceUpdatedAt                any
+	StatusUpdatedAt                any
+	Statuses                       any
+	Suspend                        any
+	WaitForReconciliation          any
 }
 
 type FluxconfigurationFluxConfiguration_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -159,6 +159,5 @@ type FluxconfigurationFluxConfigurationAttrs struct {
 
 var FluxconfigurationFluxConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_kubernetesconfiguration_fluxconfiguration_flux_configuration",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

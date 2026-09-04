@@ -12,36 +12,36 @@ type DtlSchedule_Value_Properties_HourlyRecurrence struct {
 }
 
 type DtlSchedule_Value_Properties_NotificationSettings struct {
-	EmailRecipient any
+	EmailRecipient     any
 	NotificationLocale any
-	Status any
-	TimeInMinutes any
-	WebhookUrl any
+	Status             any
+	TimeInMinutes      any
+	WebhookUrl         any
 }
 
 type DtlSchedule_Value_Properties_WeeklyRecurrence struct {
-	Time any
+	Time     any
 	Weekdays any
 }
 
 type DtlSchedule_Value_Properties struct {
-	CreatedDate any
-	DailyRecurrence any
-	HourlyRecurrence any
+	CreatedDate          any
+	DailyRecurrence      any
+	HourlyRecurrence     any
 	NotificationSettings any
-	ProvisioningState any
-	Status any
-	TargetResourceId any
-	TaskType any
-	TimeZoneId any
-	UniqueIdentifier any
-	WeeklyRecurrence any
+	ProvisioningState    any
+	Status               any
+	TargetResourceId     any
+	TaskType             any
+	TimeZoneId           any
+	UniqueIdentifier     any
+	WeeklyRecurrence     any
 }
 
 type DtlSchedule_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlScheduleConfig struct {
@@ -56,6 +56,5 @@ type DtlScheduleAttrs struct {
 
 var DtlSchedule = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_schedule",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

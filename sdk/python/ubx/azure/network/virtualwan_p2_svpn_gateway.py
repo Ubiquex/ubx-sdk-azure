@@ -306,8 +306,6 @@ _VirtualwanP2SvpnGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualwanP2SvpnGatewayConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Parameters for P2SVpnGateway.
     properties: Any = None
 
@@ -321,7 +319,6 @@ class VirtualwanP2SvpnGatewayAttrs:
 VirtualwanP2SvpnGateway = ubx.ResourceBinding(
     wire_type="azure_network_virtualwan_p2_svpn_gateway",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

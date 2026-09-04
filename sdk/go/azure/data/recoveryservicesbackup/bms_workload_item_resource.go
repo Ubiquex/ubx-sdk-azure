@@ -5,30 +5,30 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsWorkloadItemResource_Value_Properties struct {
 	BackupManagementType any
-	FriendlyName any
-	ProtectionState any
-	WorkloadItemType any
-	WorkloadType any
+	FriendlyName         any
+	ProtectionState      any
+	WorkloadItemType     any
+	WorkloadType         any
 }
 
 type BmsWorkloadItemResource_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsWorkloadItemResourceConfig struct {
 	ContainerName any
-	FabricName any
-	VaultName any
+	FabricName    any
+	VaultName     any
 }
 
 type BmsWorkloadItemResourceAttrs struct {
 	ContainerName any
-	FabricName any
+	FabricName    any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 
@@ -36,7 +36,7 @@ var BmsWorkloadItemResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_workload_item_resource",
 	Fields: ubx.FieldMap{
 		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"FabricName":    ubx.FieldSpec{WireName: "fabric_name"},
+		"VaultName":     ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

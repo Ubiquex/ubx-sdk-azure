@@ -4,7 +4,7 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetAppAccount_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,35 +20,35 @@ type NetAppAccount_Identity struct {
 }
 
 type NetAppAccount_Properties_ActiveDirectories_LdapSearchScope struct {
-	GroupDn any
+	GroupDn               any
 	GroupMembershipFilter any
-	UserDn any
+	UserDn                any
 }
 
 type NetAppAccount_Properties_ActiveDirectories struct {
-	ActiveDirectoryId any
-	AdName any
-	Administrators any
-	AesEncryption any
-	AllowLocalNfsUsersWithLdap any
-	BackupOperators any
-	Dns any
-	Domain any
-	EncryptDcconnections any
-	KdcIp any
-	LdapOverTls any
-	LdapSearchScope any
-	LdapSigning any
-	OrganizationalUnit any
-	Password any
+	ActiveDirectoryId             any
+	AdName                        any
+	Administrators                any
+	AesEncryption                 any
+	AllowLocalNfsUsersWithLdap    any
+	BackupOperators               any
+	Dns                           any
+	Domain                        any
+	EncryptDcconnections          any
+	KdcIp                         any
+	LdapOverTls                   any
+	LdapSearchScope               any
+	LdapSigning                   any
+	OrganizationalUnit            any
+	Password                      any
 	PreferredServersForLdapClient any
-	SecurityOperators any
-	ServerRootCacertificate any
-	Site any
-	SmbServerName any
-	Status any
-	StatusDetails any
-	Username any
+	SecurityOperators             any
+	ServerRootCacertificate       any
+	Site                          any
+	SmbServerName                 any
+	Status                        any
+	StatusDetails                 any
+	Username                      any
 }
 
 type NetAppAccount_Properties_Encryption_Identity struct {
@@ -97,105 +97,103 @@ type NetAppAccount_Properties struct {
 }
 
 var NetAppAccount_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var NetAppAccount_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: NetAppAccount_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   NetAppAccount_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var NetAppAccount_Properties_ActiveDirectories_LdapSearchScopeFields = ubx.FieldMap{
-		"GroupDn": ubx.FieldSpec{WireName: "group_dn"},
-		"GroupMembershipFilter": ubx.FieldSpec{WireName: "group_membership_filter"},
-		"UserDn": ubx.FieldSpec{WireName: "user_dn"},
-	}
+	"GroupDn":               ubx.FieldSpec{WireName: "group_dn"},
+	"GroupMembershipFilter": ubx.FieldSpec{WireName: "group_membership_filter"},
+	"UserDn":                ubx.FieldSpec{WireName: "user_dn"},
+}
 
 var NetAppAccount_Properties_ActiveDirectoriesFields = ubx.FieldMap{
-		"ActiveDirectoryId": ubx.FieldSpec{WireName: "active_directory_id"},
-		"AdName": ubx.FieldSpec{WireName: "ad_name"},
-		"Administrators": ubx.FieldSpec{WireName: "administrators"},
-		"AesEncryption": ubx.FieldSpec{WireName: "aes_encryption"},
-		"AllowLocalNfsUsersWithLdap": ubx.FieldSpec{WireName: "allow_local_nfs_users_with_ldap"},
-		"BackupOperators": ubx.FieldSpec{WireName: "backup_operators"},
-		"Dns": ubx.FieldSpec{WireName: "dns"},
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"EncryptDcconnections": ubx.FieldSpec{WireName: "encrypt_dcconnections"},
-		"KdcIp": ubx.FieldSpec{WireName: "kdc_ip"},
-		"LdapOverTls": ubx.FieldSpec{WireName: "ldap_over_tls"},
-		"LdapSearchScope": ubx.FieldSpec{
-			WireName: "ldap_search_scope",
-			Kind: "object",
-			Fields: NetAppAccount_Properties_ActiveDirectories_LdapSearchScopeFields,
-		},
-		"LdapSigning": ubx.FieldSpec{WireName: "ldap_signing"},
-		"OrganizationalUnit": ubx.FieldSpec{WireName: "organizational_unit"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"PreferredServersForLdapClient": ubx.FieldSpec{WireName: "preferred_servers_for_ldap_client"},
-		"SecurityOperators": ubx.FieldSpec{WireName: "security_operators"},
-		"ServerRootCacertificate": ubx.FieldSpec{WireName: "server_root_cacertificate"},
-		"Site": ubx.FieldSpec{WireName: "site"},
-		"SmbServerName": ubx.FieldSpec{WireName: "smb_server_name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StatusDetails": ubx.FieldSpec{WireName: "status_details"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"ActiveDirectoryId":          ubx.FieldSpec{WireName: "active_directory_id"},
+	"AdName":                     ubx.FieldSpec{WireName: "ad_name"},
+	"Administrators":             ubx.FieldSpec{WireName: "administrators"},
+	"AesEncryption":              ubx.FieldSpec{WireName: "aes_encryption"},
+	"AllowLocalNfsUsersWithLdap": ubx.FieldSpec{WireName: "allow_local_nfs_users_with_ldap"},
+	"BackupOperators":            ubx.FieldSpec{WireName: "backup_operators"},
+	"Dns":                        ubx.FieldSpec{WireName: "dns"},
+	"Domain":                     ubx.FieldSpec{WireName: "domain"},
+	"EncryptDcconnections":       ubx.FieldSpec{WireName: "encrypt_dcconnections"},
+	"KdcIp":                      ubx.FieldSpec{WireName: "kdc_ip"},
+	"LdapOverTls":                ubx.FieldSpec{WireName: "ldap_over_tls"},
+	"LdapSearchScope": ubx.FieldSpec{
+		WireName: "ldap_search_scope",
+		Kind:     "object",
+		Fields:   NetAppAccount_Properties_ActiveDirectories_LdapSearchScopeFields,
+	},
+	"LdapSigning":                   ubx.FieldSpec{WireName: "ldap_signing"},
+	"OrganizationalUnit":            ubx.FieldSpec{WireName: "organizational_unit"},
+	"Password":                      ubx.FieldSpec{WireName: "password"},
+	"PreferredServersForLdapClient": ubx.FieldSpec{WireName: "preferred_servers_for_ldap_client"},
+	"SecurityOperators":             ubx.FieldSpec{WireName: "security_operators"},
+	"ServerRootCacertificate":       ubx.FieldSpec{WireName: "server_root_cacertificate"},
+	"Site":                          ubx.FieldSpec{WireName: "site"},
+	"SmbServerName":                 ubx.FieldSpec{WireName: "smb_server_name"},
+	"Status":                        ubx.FieldSpec{WireName: "status"},
+	"StatusDetails":                 ubx.FieldSpec{WireName: "status_details"},
+	"Username":                      ubx.FieldSpec{WireName: "username"},
+}
 
 var NetAppAccount_Properties_Encryption_IdentityFields = ubx.FieldMap{
-		"FederatedClientId": ubx.FieldSpec{WireName: "federated_client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"FederatedClientId":    ubx.FieldSpec{WireName: "federated_client_id"},
+	"PrincipalId":          ubx.FieldSpec{WireName: "principal_id"},
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var NetAppAccount_Properties_Encryption_KeyVaultPropertiesFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVaultId": ubx.FieldSpec{WireName: "key_vault_id"},
-		"KeyVaultResourceId": ubx.FieldSpec{WireName: "key_vault_resource_id"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"KeyName":            ubx.FieldSpec{WireName: "key_name"},
+	"KeyVaultId":         ubx.FieldSpec{WireName: "key_vault_id"},
+	"KeyVaultResourceId": ubx.FieldSpec{WireName: "key_vault_resource_id"},
+	"KeyVaultUri":        ubx.FieldSpec{WireName: "key_vault_uri"},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+}
 
 var NetAppAccount_Properties_EncryptionFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: NetAppAccount_Properties_Encryption_IdentityFields,
-		},
-		"KeySource": ubx.FieldSpec{WireName: "key_source"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: NetAppAccount_Properties_Encryption_KeyVaultPropertiesFields,
-		},
-	}
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   NetAppAccount_Properties_Encryption_IdentityFields,
+	},
+	"KeySource": ubx.FieldSpec{WireName: "key_source"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   NetAppAccount_Properties_Encryption_KeyVaultPropertiesFields,
+	},
+}
 
 var NetAppAccount_PropertiesFields = ubx.FieldMap{
-		"ActiveDirectories": ubx.FieldSpec{
-			WireName: "active_directories",
-			Kind: "list",
-			Fields: NetAppAccount_Properties_ActiveDirectoriesFields,
-		},
-		"DisableShowmount": ubx.FieldSpec{WireName: "disable_showmount"},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: NetAppAccount_Properties_EncryptionFields,
-		},
-		"MultiAdStatus": ubx.FieldSpec{WireName: "multi_ad_status"},
-		"NfsV4Iddomain": ubx.FieldSpec{WireName: "nfs_v4_iddomain"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ActiveDirectories": ubx.FieldSpec{
+		WireName: "active_directories",
+		Kind:     "list",
+		Fields:   NetAppAccount_Properties_ActiveDirectoriesFields,
+	},
+	"DisableShowmount": ubx.FieldSpec{WireName: "disable_showmount"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   NetAppAccount_Properties_EncryptionFields,
+	},
+	"MultiAdStatus":     ubx.FieldSpec{WireName: "multi_ad_status"},
+	"NfsV4Iddomain":     ubx.FieldSpec{WireName: "nfs_v4_iddomain"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type NetAppAccountConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
 	// NetApp account properties
@@ -214,16 +212,15 @@ type NetAppAccountAttrs struct {
 var NetAppAccount = ubx.ResourceBinding{
 	WireType: "azure_netapp_net_app_account",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: NetAppAccount_IdentityFields,
+			Kind:     "object",
+			Fields:   NetAppAccount_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetAppAccount_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetAppAccount_PropertiesFields,
 		},
 	},
 }

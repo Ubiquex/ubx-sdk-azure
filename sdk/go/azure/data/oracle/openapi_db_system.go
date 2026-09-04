@@ -4,15 +4,15 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDbSystem_Value_Properties struct {
-	AdminPassword any
+	AdminPassword   any
 	DatabaseEdition any
-	DbVersion any
-	PdbName any
+	DbVersion       any
+	PdbName         any
 }
 
 type OpenapiDbSystem_Value struct {
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type OpenapiDbSystemConfig struct {
@@ -27,6 +27,5 @@ type OpenapiDbSystemAttrs struct {
 
 var OpenapiDbSystem = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_db_system",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,35 +4,25 @@ package restore
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Point_Properties_ExcludeDisks struct {
-	// The ARM resource ID of the disk to exclude from the restore point. (AI-inferred)
 	Id any
 }
 
 type Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_Status struct {
-	// The status code for the replication of a disk restore point, indicating the current state of the replication process. (AI-inferred)
-	Code any
-	// A human-readable description of the current replication status for the disk restore point. (AI-inferred)
+	Code          any
 	DisplayStatus any
-	// The severity level of the replication status. Possible values are 'Info', 'Warning', and 'Error'. (AI-inferred)
-	Level any
-	// A human-readable message providing additional details about the current replication status. (AI-inferred)
-	Message any
-	// The time, in ISO 8601 format, when the replication status was last updated. (AI-inferred)
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus struct {
-	// The percentage of replication completed for the disk restore point. (AI-inferred)
 	CompletionPercent any
-	// The replication status of the disk restore point, providing information about the progress and current state of the replication operation. (AI-inferred)
-	Status any
+	Status            any
 }
 
 type Point_Properties_InstanceView_DiskRestorePoints struct {
-	// The unique Azure Resource Manager resource ID of the disk restore point. (AI-inferred)
-	Id any
-	ReplicationStatus any
-	// Indicates the access state of the snapshot for the disk restore point. Possible values are Unknown, Pending, Available, InstantAccess, and AvailableWithInstantAccess. (AI-inferred)
+	Id                  any
+	ReplicationStatus   any
 	SnapshotAccessState any
 }
 
@@ -88,10 +78,8 @@ type Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings 
 }
 
 type Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeys struct {
-	// The SSH public key data, in OpenSSH format (e.g., 'ssh-rsa AAAA...'), used to authenticate to the Linux VM. The key must be at least 2048-bit and in ssh-rsa format. (AI-inferred)
 	KeyData any
-	// The full file path on the virtual machine where the SSH public key will be stored, such as `/home/{username}/.ssh/authorized_keys`. (AI-inferred)
-	Path any
+	Path    any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh struct {
@@ -113,28 +101,20 @@ type Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration struct {
 }
 
 type Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificates struct {
-	// The name of the certificate store on the virtual machine where the certificate is added. This property is required for Windows virtual machines. (AI-inferred)
 	CertificateStore any
-	// The URL of the Azure Key Vault secret which contains the certificate. (AI-inferred)
-	CertificateUrl any
+	CertificateUrl   any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_Secrets struct {
-	// The Key Vault where the certificate or secret is stored. (AI-inferred)
-	SourceVault any
-	// A list of certificates to be installed on the virtual machine from an Azure Key Vault, referenced within the OS profile's secret configuration. (AI-inferred)
+	SourceVault       any
 	VaultCertificates any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContent struct {
-	// Specifies the name of the component to configure, such as 'Microsoft-Windows-Shell-Setup', for which the additional unattend content applies. (AI-inferred)
 	ComponentName any
-	// The XML formatted content that is added to the unattend.xml file for the specified pass and component. This content is included during the Windows installation process. (AI-inferred)
-	Content any
-	// The pass name for the unattended content. For this field, the allowed value is 'OobeSystem', indicating the Windows Out-of-Box Experience pass in the additional unattended content configuration. (AI-inferred)
-	PassName any
-	// Specifies the name of the setting that the unattended content applies to. Allowed values are 'AutoLogon' and 'FirstLogonCommands'. (AI-inferred)
-	SettingName any
+	Content       any
+	PassName      any
+	SettingName   any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettings struct {
@@ -149,10 +129,8 @@ type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSetting
 }
 
 type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_Listeners struct {
-	// The URL to a certificate stored in Azure Key Vault that is used for the WinRM HTTPS listener. This is required when the listener protocol is HTTPS. (AI-inferred)
 	CertificateUrl any
-	// Specifies the protocol used by the WinRM listener, which can be either Http or Https. (AI-inferred)
-	Protocol any
+	Protocol       any
 }
 
 type Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm struct {
@@ -248,45 +226,31 @@ type Point_Properties_SourceMetadata_SecurityProfile struct {
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_Encryption struct {
-	// The customer-managed disk encryption set used to encrypt the disk. This is a reference to a Microsoft.Compute/diskEncryptionSets resource, typically containing its resource ID. (AI-inferred)
 	DiskEncryptionSet any
-	// The type of encryption applied to the disk restore point. Allowed values: EncryptionAtRestWithPlatformKey, EncryptionAtRestWithCustomerKey, EncryptionAtRestWithPlatformAndCustomerKeys. (AI-inferred)
-	Type any
+	Type              any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint struct {
-	Encryption any
-	// A reference to the source disk restore point from which this disk restore point was created, typically used when the restore point is copied or replicated across regions. (AI-inferred)
+	Encryption             any
 	SourceDiskRestorePoint any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy struct {
-	// Specifies the action to be taken when a disk delay occurs. Allowed values are 'None' and 'AutomaticReattach'. 'AutomaticReattach' automatically reattaches the disk after the delay is cleared. (AI-inferred)
 	ActionOnDiskDelay any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties struct {
-	AvailabilityPolicy any
-	// Specifies whether bursting is enabled for the managed disk. When enabled, the disk can burst beyond its provisioned performance limits. (AI-inferred)
-	BurstingEnabled any
-	// The resource ID of the Disk Access resource associated with the managed disk. (AI-inferred)
-	DiskAccessId any
-	// The number of read-only IOPS (input/output operations per second) that the managed disk can support. (AI-inferred)
-	DiskIopsreadOnly any
-	// The maximum read-only bandwidth (in MB/s) allowed for this managed disk as part of its performance configuration. (AI-inferred)
-	DiskMbpsReadOnly any
-	// The logical sector size of the managed disk, in bytes. Common values are 512 and 4096, depending on the disk type and configuration. (AI-inferred)
-	LogicalSectorSize any
-	// The maximum number of virtual machines that can concurrently attach to the shared managed disk. The minimum allowed value is 1. (AI-inferred)
-	MaxShares any
-	// Specifies the network access policy for the managed disk. Valid values are `AllowAll` (allow public access), `AllowPrivate` (restrict to private endpoints), and `DenyAll` (deny all network access). (AI-inferred)
-	NetworkAccessPolicy any
-	// Indicates whether the managed disk is optimized for frequent attach/detach operations. When set to true, the disk is optimized for scenarios involving frequent attaching and detaching, though this may come at the cost of reduced performance in other aspects. (AI-inferred)
+	AvailabilityPolicy         any
+	BurstingEnabled            any
+	DiskAccessId               any
+	DiskIopsreadOnly           any
+	DiskMbpsReadOnly           any
+	LogicalSectorSize          any
+	MaxShares                  any
+	NetworkAccessPolicy        any
 	OptimizedForFrequentAttach any
-	// Indicates whether performance plus is enabled for the managed disk, which allows the disk to achieve higher IOPS and throughput limits rather than being constrained to standard performance tiers. (AI-inferred)
-	PerformancePlus any
-	// The SKU tier of the Azure managed disk, indicating its performance class (e.g., Standard or Premium). (AI-inferred)
-	Tier any
+	PerformancePlus            any
+	Tier                       any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties struct {
@@ -294,50 +258,36 @@ type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_Additi
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfile struct {
-	// Specifies the disk encryption set to use for encrypting the managed disk at rest with customer-managed keys. This is a reference object containing the resource ID of the Disk Encryption Set. (AI-inferred)
-	DiskEncryptionSet any
-	// Specifies the security encryption type for the managed disk. Allowed values: VMGuestStateOnly (encrypts only the VM guest state), DiskWithVMGuestState (encrypts both the disk and VM guest state), and NonPersistedTPM (uses non-persisted TPM). (AI-inferred)
+	DiskEncryptionSet      any
 	SecurityEncryptionType any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk struct {
 	AdditionalDiskProperties any
-	// The disk encryption set associated with the managed disk, used for encryption with customer-managed keys. (AI-inferred)
-	DiskEncryptionSet any
-	// Security-related configuration for the managed disk, including its security type (e.g., TrustedLaunch, ConfidentialVM) and associated encryption settings. (AI-inferred)
-	SecurityProfile any
-	// The storage account type for the managed disk. Possible values are: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, and PremiumV2_LRS. (AI-inferred)
-	StorageAccountType any
+	DiskEncryptionSet        any
+	SecurityProfile          any
+	StorageAccountType       any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_DataDisks struct {
-	// Specifies the caching mode for the disk. Possible values are None, ReadOnly, and ReadWrite. (AI-inferred)
-	Caching any
-	// Contains the resource identifier of the disk restore point corresponding to this data disk in the restore point. (AI-inferred)
-	DiskRestorePoint any
-	// The size of the data disk in gigabytes. (AI-inferred)
-	DiskSizeGb any
-	// The Logical Unit Number (LUN) that identifies this data disk in the virtual machine's storage configuration. (AI-inferred)
-	Lun any
-	// The managed disk configuration for the data disk, including properties such as the disk resource ID and associated encryption settings. (AI-inferred)
-	ManagedDisk any
-	// The name of the data disk in the storage profile. (AI-inferred)
-	Name any
-	// Specifies whether Write Accelerator is enabled for this data disk. When enabled, the disk uses Azure Write Accelerator to reduce I/O latency for small writes. (AI-inferred)
+	Caching                 any
+	DiskRestorePoint        any
+	DiskSizeGb              any
+	Lun                     any
+	ManagedDisk             any
+	Name                    any
 	WriteAcceleratorEnabled any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKey struct {
 	// The URL referencing a secret in a Key Vault.
-	SecretUrl any
-	// Reference to the Azure Key Vault that holds the disk encryption key or secret used for encrypting the OS disk. This required object identifies the source vault via its resource ID. (AI-inferred)
+	SecretUrl   any
 	SourceVault any
 }
 
 type Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKey struct {
 	// The URL referencing a key encryption key in Key Vault.
-	KeyUrl any
-	// The Azure Key Vault that contains the key encryption key (KEK). This is a reference to the Key Vault resource. (AI-inferred)
+	KeyUrl      any
 	SourceVault any
 }
 
@@ -421,494 +371,494 @@ type Point_Properties struct {
 }
 
 var Point_Properties_ExcludeDisksFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_StatusFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatusFields = ubx.FieldMap{
-		"CompletionPercent": ubx.FieldSpec{WireName: "completion_percent"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_StatusFields,
-		},
-	}
+	"CompletionPercent": ubx.FieldSpec{WireName: "completion_percent"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_StatusFields,
+	},
+}
 
 var Point_Properties_InstanceView_DiskRestorePointsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"ReplicationStatus": ubx.FieldSpec{
-			WireName: "replication_status",
-			Kind: "object",
-			Fields: Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatusFields,
-		},
-		"SnapshotAccessState": ubx.FieldSpec{WireName: "snapshot_access_state"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+	"ReplicationStatus": ubx.FieldSpec{
+		WireName: "replication_status",
+		Kind:     "object",
+		Fields:   Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatusFields,
+	},
+	"SnapshotAccessState": ubx.FieldSpec{WireName: "snapshot_access_state"},
+}
 
 var Point_Properties_InstanceViewFields = ubx.FieldMap{
-		"DiskRestorePoints": ubx.FieldSpec{
-			WireName: "disk_restore_points",
-			Kind: "list",
-			Fields: Point_Properties_InstanceView_DiskRestorePointsFields,
-		},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_StatusFields,
-		},
-	}
+	"DiskRestorePoints": ubx.FieldSpec{
+		WireName: "disk_restore_points",
+		Kind:     "list",
+		Fields:   Point_Properties_InstanceView_DiskRestorePointsFields,
+	},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   Point_Properties_InstanceView_DiskRestorePoints_ReplicationStatus_StatusFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_DiagnosticsProfile_BootDiagnosticsFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"StorageUri": ubx.FieldSpec{WireName: "storage_uri"},
-	}
+	"Enabled":    ubx.FieldSpec{WireName: "enabled"},
+	"StorageUri": ubx.FieldSpec{WireName: "storage_uri"},
+}
 
 var Point_Properties_SourceMetadata_DiagnosticsProfileFields = ubx.FieldMap{
-		"BootDiagnostics": ubx.FieldSpec{
-			WireName: "boot_diagnostics",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_DiagnosticsProfile_BootDiagnosticsFields,
-		},
-	}
+	"BootDiagnostics": ubx.FieldSpec{
+		WireName: "boot_diagnostics",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_DiagnosticsProfile_BootDiagnosticsFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_HardwareProfile_VmSizePropertiesFields = ubx.FieldMap{
-		"VCpusAvailable": ubx.FieldSpec{WireName: "v_cpus_available"},
-		"VCpusPerCore": ubx.FieldSpec{WireName: "v_cpus_per_core"},
-	}
+	"VCpusAvailable": ubx.FieldSpec{WireName: "v_cpus_available"},
+	"VCpusPerCore":   ubx.FieldSpec{WireName: "v_cpus_per_core"},
+}
 
 var Point_Properties_SourceMetadata_HardwareProfileFields = ubx.FieldMap{
-		"ProcessorMode": ubx.FieldSpec{WireName: "processor_mode"},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-		"VmSizeProperties": ubx.FieldSpec{
-			WireName: "vm_size_properties",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_HardwareProfile_VmSizePropertiesFields,
-		},
-	}
+	"ProcessorMode": ubx.FieldSpec{WireName: "processor_mode"},
+	"VmSize":        ubx.FieldSpec{WireName: "vm_size"},
+	"VmSizeProperties": ubx.FieldSpec{
+		WireName: "vm_size_properties",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_HardwareProfile_VmSizePropertiesFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields = ubx.FieldMap{
-		"BypassPlatformSafetyChecksOnUserSchedule": ubx.FieldSpec{WireName: "bypass_platform_safety_checks_on_user_schedule"},
-		"RebootSetting": ubx.FieldSpec{WireName: "reboot_setting"},
-	}
+	"BypassPlatformSafetyChecksOnUserSchedule": ubx.FieldSpec{WireName: "bypass_platform_safety_checks_on_user_schedule"},
+	"RebootSetting": ubx.FieldSpec{WireName: "reboot_setting"},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettingsFields = ubx.FieldMap{
-		"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
-		"AutomaticByPlatformSettings": ubx.FieldSpec{
-			WireName: "automatic_by_platform_settings",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields,
-		},
-		"PatchMode": ubx.FieldSpec{WireName: "patch_mode"},
-	}
+	"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
+	"AutomaticByPlatformSettings": ubx.FieldSpec{
+		WireName: "automatic_by_platform_settings",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields,
+	},
+	"PatchMode": ubx.FieldSpec{WireName: "patch_mode"},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeysFields = ubx.FieldMap{
-		"KeyData": ubx.FieldSpec{WireName: "key_data"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-	}
+	"KeyData": ubx.FieldSpec{WireName: "key_data"},
+	"Path":    ubx.FieldSpec{WireName: "path"},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_SshFields = ubx.FieldMap{
-		"PublicKeys": ubx.FieldSpec{
-			WireName: "public_keys",
-			Kind: "list",
-			Fields: Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeysFields,
-		},
-	}
+	"PublicKeys": ubx.FieldSpec{
+		WireName: "public_keys",
+		Kind:     "list",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_Ssh_PublicKeysFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_LinuxConfigurationFields = ubx.FieldMap{
-		"DisablePasswordAuthentication": ubx.FieldSpec{WireName: "disable_password_authentication"},
-		"EnableVmagentPlatformUpdates": ubx.FieldSpec{WireName: "enable_vmagent_platform_updates"},
-		"PatchSettings": ubx.FieldSpec{
-			WireName: "patch_settings",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettingsFields,
-		},
-		"ProvisionVmagent": ubx.FieldSpec{WireName: "provision_vmagent"},
-		"Ssh": ubx.FieldSpec{
-			WireName: "ssh",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_SshFields,
-		},
-	}
+	"DisablePasswordAuthentication": ubx.FieldSpec{WireName: "disable_password_authentication"},
+	"EnableVmagentPlatformUpdates":  ubx.FieldSpec{WireName: "enable_vmagent_platform_updates"},
+	"PatchSettings": ubx.FieldSpec{
+		WireName: "patch_settings",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettingsFields,
+	},
+	"ProvisionVmagent": ubx.FieldSpec{WireName: "provision_vmagent"},
+	"Ssh": ubx.FieldSpec{
+		WireName: "ssh",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_SshFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificatesFields = ubx.FieldMap{
-		"CertificateStore": ubx.FieldSpec{WireName: "certificate_store"},
-		"CertificateUrl": ubx.FieldSpec{WireName: "certificate_url"},
-	}
+	"CertificateStore": ubx.FieldSpec{WireName: "certificate_store"},
+	"CertificateUrl":   ubx.FieldSpec{WireName: "certificate_url"},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_SecretsFields = ubx.FieldMap{
-		"SourceVault": ubx.FieldSpec{
-			WireName: "source_vault",
-			Kind: "object",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-		"VaultCertificates": ubx.FieldSpec{
-			WireName: "vault_certificates",
-			Kind: "list",
-			Fields: Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificatesFields,
-		},
-	}
+	"SourceVault": ubx.FieldSpec{
+		WireName: "source_vault",
+		Kind:     "object",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+	"VaultCertificates": ubx.FieldSpec{
+		WireName: "vault_certificates",
+		Kind:     "list",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_Secrets_VaultCertificatesFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContentFields = ubx.FieldMap{
-		"ComponentName": ubx.FieldSpec{WireName: "component_name"},
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"PassName": ubx.FieldSpec{WireName: "pass_name"},
-		"SettingName": ubx.FieldSpec{WireName: "setting_name"},
-	}
+	"ComponentName": ubx.FieldSpec{WireName: "component_name"},
+	"Content":       ubx.FieldSpec{WireName: "content"},
+	"PassName":      ubx.FieldSpec{WireName: "pass_name"},
+	"SettingName":   ubx.FieldSpec{WireName: "setting_name"},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettingsFields = ubx.FieldMap{
-		"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
-		"AutomaticByPlatformSettings": ubx.FieldSpec{
-			WireName: "automatic_by_platform_settings",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields,
-		},
-		"EnableHotpatching": ubx.FieldSpec{WireName: "enable_hotpatching"},
-		"PatchMode": ubx.FieldSpec{WireName: "patch_mode"},
-	}
+	"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
+	"AutomaticByPlatformSettings": ubx.FieldSpec{
+		WireName: "automatic_by_platform_settings",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields,
+	},
+	"EnableHotpatching": ubx.FieldSpec{WireName: "enable_hotpatching"},
+	"PatchMode":         ubx.FieldSpec{WireName: "patch_mode"},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_ListenersFields = ubx.FieldMap{
-		"CertificateUrl": ubx.FieldSpec{WireName: "certificate_url"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-	}
+	"CertificateUrl": ubx.FieldSpec{WireName: "certificate_url"},
+	"Protocol":       ubx.FieldSpec{WireName: "protocol"},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRmFields = ubx.FieldMap{
-		"Listeners": ubx.FieldSpec{
-			WireName: "listeners",
-			Kind: "list",
-			Fields: Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_ListenersFields,
-		},
-	}
+	"Listeners": ubx.FieldSpec{
+		WireName: "listeners",
+		Kind:     "list",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRm_ListenersFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_OsProfile_WindowsConfigurationFields = ubx.FieldMap{
-		"AdditionalUnattendContent": ubx.FieldSpec{
-			WireName: "additional_unattend_content",
-			Kind: "list",
-			Fields: Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContentFields,
-		},
-		"EnableAutomaticUpdates": ubx.FieldSpec{WireName: "enable_automatic_updates"},
-		"EnableVmagentPlatformUpdates": ubx.FieldSpec{WireName: "enable_vmagent_platform_updates"},
-		"PatchSettings": ubx.FieldSpec{
-			WireName: "patch_settings",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettingsFields,
-		},
-		"ProvisionVmagent": ubx.FieldSpec{WireName: "provision_vmagent"},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-		"WinRm": ubx.FieldSpec{
-			WireName: "win_rm",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRmFields,
-		},
-	}
+	"AdditionalUnattendContent": ubx.FieldSpec{
+		WireName: "additional_unattend_content",
+		Kind:     "list",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_AdditionalUnattendContentFields,
+	},
+	"EnableAutomaticUpdates":       ubx.FieldSpec{WireName: "enable_automatic_updates"},
+	"EnableVmagentPlatformUpdates": ubx.FieldSpec{WireName: "enable_vmagent_platform_updates"},
+	"PatchSettings": ubx.FieldSpec{
+		WireName: "patch_settings",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_PatchSettingsFields,
+	},
+	"ProvisionVmagent": ubx.FieldSpec{WireName: "provision_vmagent"},
+	"TimeZone":         ubx.FieldSpec{WireName: "time_zone"},
+	"WinRm": ubx.FieldSpec{
+		WireName: "win_rm",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_WindowsConfiguration_WinRmFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_OsProfileFields = ubx.FieldMap{
-		"AdminPassword": ubx.FieldSpec{WireName: "admin_password"},
-		"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
-		"AllowExtensionOperations": ubx.FieldSpec{WireName: "allow_extension_operations"},
-		"ComputerName": ubx.FieldSpec{WireName: "computer_name"},
-		"CustomData": ubx.FieldSpec{WireName: "custom_data"},
-		"LinuxConfiguration": ubx.FieldSpec{
-			WireName: "linux_configuration",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfile_LinuxConfigurationFields,
-		},
-		"RequireGuestProvisionSignal": ubx.FieldSpec{WireName: "require_guest_provision_signal"},
-		"Secrets": ubx.FieldSpec{
-			WireName: "secrets",
-			Kind: "list",
-			Fields: Point_Properties_SourceMetadata_OsProfile_SecretsFields,
-		},
-		"WindowsConfiguration": ubx.FieldSpec{
-			WireName: "windows_configuration",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfile_WindowsConfigurationFields,
-		},
-	}
+	"AdminPassword":            ubx.FieldSpec{WireName: "admin_password"},
+	"AdminUsername":            ubx.FieldSpec{WireName: "admin_username"},
+	"AllowExtensionOperations": ubx.FieldSpec{WireName: "allow_extension_operations"},
+	"ComputerName":             ubx.FieldSpec{WireName: "computer_name"},
+	"CustomData":               ubx.FieldSpec{WireName: "custom_data"},
+	"LinuxConfiguration": ubx.FieldSpec{
+		WireName: "linux_configuration",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_LinuxConfigurationFields,
+	},
+	"RequireGuestProvisionSignal": ubx.FieldSpec{WireName: "require_guest_provision_signal"},
+	"Secrets": ubx.FieldSpec{
+		WireName: "secrets",
+		Kind:     "list",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_SecretsFields,
+	},
+	"WindowsConfiguration": ubx.FieldSpec{
+		WireName: "windows_configuration",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfile_WindowsConfigurationFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_SecurityProfile_EncryptionIdentityFields = ubx.FieldMap{
-		"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
-	}
+	"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
+}
 
 var Point_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_ImdsFields = ubx.FieldMap{
-		"InVmaccessControlProfileReferenceId": ubx.FieldSpec{WireName: "in_vmaccess_control_profile_reference_id"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"UseLocalFileRules": ubx.FieldSpec{WireName: "use_local_file_rules"},
-	}
+	"InVmaccessControlProfileReferenceId": ubx.FieldSpec{WireName: "in_vmaccess_control_profile_reference_id"},
+	"Mode":                                ubx.FieldSpec{WireName: "mode"},
+	"UseLocalFileRules":                   ubx.FieldSpec{WireName: "use_local_file_rules"},
+}
 
 var Point_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettingsFields = ubx.FieldMap{
-		"AddProxyAgentExtension": ubx.FieldSpec{WireName: "add_proxy_agent_extension"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Imds": ubx.FieldSpec{
-			WireName: "imds",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_ImdsFields,
-		},
-		"KeyIncarnationId": ubx.FieldSpec{WireName: "key_incarnation_id"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"WireServer": ubx.FieldSpec{
-			WireName: "wire_server",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_ImdsFields,
-		},
-	}
+	"AddProxyAgentExtension": ubx.FieldSpec{WireName: "add_proxy_agent_extension"},
+	"Enabled":                ubx.FieldSpec{WireName: "enabled"},
+	"Imds": ubx.FieldSpec{
+		WireName: "imds",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_ImdsFields,
+	},
+	"KeyIncarnationId": ubx.FieldSpec{WireName: "key_incarnation_id"},
+	"Mode":             ubx.FieldSpec{WireName: "mode"},
+	"WireServer": ubx.FieldSpec{
+		WireName: "wire_server",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettings_ImdsFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_SecurityProfile_UefiSettingsFields = ubx.FieldMap{
-		"SecureBootEnabled": ubx.FieldSpec{WireName: "secure_boot_enabled"},
-		"VTpmEnabled": ubx.FieldSpec{WireName: "v_tpm_enabled"},
-	}
+	"SecureBootEnabled": ubx.FieldSpec{WireName: "secure_boot_enabled"},
+	"VTpmEnabled":       ubx.FieldSpec{WireName: "v_tpm_enabled"},
+}
 
 var Point_Properties_SourceMetadata_SecurityProfileFields = ubx.FieldMap{
-		"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
-		"EncryptionIdentity": ubx.FieldSpec{
-			WireName: "encryption_identity",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_SecurityProfile_EncryptionIdentityFields,
-		},
-		"ProxyAgentSettings": ubx.FieldSpec{
-			WireName: "proxy_agent_settings",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettingsFields,
-		},
-		"SecurityType": ubx.FieldSpec{WireName: "security_type"},
-		"UefiSettings": ubx.FieldSpec{
-			WireName: "uefi_settings",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_SecurityProfile_UefiSettingsFields,
-		},
-	}
+	"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
+	"EncryptionIdentity": ubx.FieldSpec{
+		WireName: "encryption_identity",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_SecurityProfile_EncryptionIdentityFields,
+	},
+	"ProxyAgentSettings": ubx.FieldSpec{
+		WireName: "proxy_agent_settings",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_SecurityProfile_ProxyAgentSettingsFields,
+	},
+	"SecurityType": ubx.FieldSpec{WireName: "security_type"},
+	"UefiSettings": ubx.FieldSpec{
+		WireName: "uefi_settings",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_SecurityProfile_UefiSettingsFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_EncryptionFields = ubx.FieldMap{
-		"DiskEncryptionSet": ubx.FieldSpec{
-			WireName: "disk_encryption_set",
-			Kind: "object",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DiskEncryptionSet": ubx.FieldSpec{
+		WireName: "disk_encryption_set",
+		Kind:     "object",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePointFields = ubx.FieldMap{
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_EncryptionFields,
-		},
-		"SourceDiskRestorePoint": ubx.FieldSpec{
-			WireName: "source_disk_restore_point",
-			Kind: "object",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-	}
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePoint_EncryptionFields,
+	},
+	"SourceDiskRestorePoint": ubx.FieldSpec{
+		WireName: "source_disk_restore_point",
+		Kind:     "object",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicyFields = ubx.FieldMap{
-		"ActionOnDiskDelay": ubx.FieldSpec{WireName: "action_on_disk_delay"},
-	}
+	"ActionOnDiskDelay": ubx.FieldSpec{WireName: "action_on_disk_delay"},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskPropertiesFields = ubx.FieldMap{
-		"AvailabilityPolicy": ubx.FieldSpec{
-			WireName: "availability_policy",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicyFields,
-		},
-		"BurstingEnabled": ubx.FieldSpec{WireName: "bursting_enabled"},
-		"DiskAccessId": ubx.FieldSpec{WireName: "disk_access_id"},
-		"DiskIopsreadOnly": ubx.FieldSpec{WireName: "disk_iopsread_only"},
-		"DiskMbpsReadOnly": ubx.FieldSpec{WireName: "disk_mbps_read_only"},
-		"LogicalSectorSize": ubx.FieldSpec{WireName: "logical_sector_size"},
-		"MaxShares": ubx.FieldSpec{WireName: "max_shares"},
-		"NetworkAccessPolicy": ubx.FieldSpec{WireName: "network_access_policy"},
-		"OptimizedForFrequentAttach": ubx.FieldSpec{WireName: "optimized_for_frequent_attach"},
-		"PerformancePlus": ubx.FieldSpec{WireName: "performance_plus"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"AvailabilityPolicy": ubx.FieldSpec{
+		WireName: "availability_policy",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicyFields,
+	},
+	"BurstingEnabled":            ubx.FieldSpec{WireName: "bursting_enabled"},
+	"DiskAccessId":               ubx.FieldSpec{WireName: "disk_access_id"},
+	"DiskIopsreadOnly":           ubx.FieldSpec{WireName: "disk_iopsread_only"},
+	"DiskMbpsReadOnly":           ubx.FieldSpec{WireName: "disk_mbps_read_only"},
+	"LogicalSectorSize":          ubx.FieldSpec{WireName: "logical_sector_size"},
+	"MaxShares":                  ubx.FieldSpec{WireName: "max_shares"},
+	"NetworkAccessPolicy":        ubx.FieldSpec{WireName: "network_access_policy"},
+	"OptimizedForFrequentAttach": ubx.FieldSpec{WireName: "optimized_for_frequent_attach"},
+	"PerformancePlus":            ubx.FieldSpec{WireName: "performance_plus"},
+	"Tier":                       ubx.FieldSpec{WireName: "tier"},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskPropertiesFields = ubx.FieldMap{
-		"ManagedDiskProperties": ubx.FieldSpec{
-			WireName: "managed_disk_properties",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskPropertiesFields,
-		},
-	}
+	"ManagedDiskProperties": ubx.FieldSpec{
+		WireName: "managed_disk_properties",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskPropertiesFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfileFields = ubx.FieldMap{
-		"DiskEncryptionSet": ubx.FieldSpec{
-			WireName: "disk_encryption_set",
-			Kind: "object",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-		"SecurityEncryptionType": ubx.FieldSpec{WireName: "security_encryption_type"},
-	}
+	"DiskEncryptionSet": ubx.FieldSpec{
+		WireName: "disk_encryption_set",
+		Kind:     "object",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+	"SecurityEncryptionType": ubx.FieldSpec{WireName: "security_encryption_type"},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDiskFields = ubx.FieldMap{
-		"AdditionalDiskProperties": ubx.FieldSpec{
-			WireName: "additional_disk_properties",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskPropertiesFields,
-		},
-		"DiskEncryptionSet": ubx.FieldSpec{
-			WireName: "disk_encryption_set",
-			Kind: "object",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-		"SecurityProfile": ubx.FieldSpec{
-			WireName: "security_profile",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfileFields,
-		},
-		"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
-	}
+	"AdditionalDiskProperties": ubx.FieldSpec{
+		WireName: "additional_disk_properties",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskPropertiesFields,
+	},
+	"DiskEncryptionSet": ubx.FieldSpec{
+		WireName: "disk_encryption_set",
+		Kind:     "object",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+	"SecurityProfile": ubx.FieldSpec{
+		WireName: "security_profile",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDisk_SecurityProfileFields,
+	},
+	"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_DataDisksFields = ubx.FieldMap{
-		"Caching": ubx.FieldSpec{WireName: "caching"},
-		"DiskRestorePoint": ubx.FieldSpec{
-			WireName: "disk_restore_point",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePointFields,
-		},
-		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-		"Lun": ubx.FieldSpec{WireName: "lun"},
-		"ManagedDisk": ubx.FieldSpec{
-			WireName: "managed_disk",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDiskFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
-	}
+	"Caching": ubx.FieldSpec{WireName: "caching"},
+	"DiskRestorePoint": ubx.FieldSpec{
+		WireName: "disk_restore_point",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePointFields,
+	},
+	"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
+	"Lun":        ubx.FieldSpec{WireName: "lun"},
+	"ManagedDisk": ubx.FieldSpec{
+		WireName: "managed_disk",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDiskFields,
+	},
+	"Name":                    ubx.FieldSpec{WireName: "name"},
+	"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKeyFields = ubx.FieldMap{
-		"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
-		"SourceVault": ubx.FieldSpec{
-			WireName: "source_vault",
-			Kind: "object",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-	}
+	"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
+	"SourceVault": ubx.FieldSpec{
+		WireName: "source_vault",
+		Kind:     "object",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKeyFields = ubx.FieldMap{
-		"KeyUrl": ubx.FieldSpec{WireName: "key_url"},
-		"SourceVault": ubx.FieldSpec{
-			WireName: "source_vault",
-			Kind: "object",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-	}
+	"KeyUrl": ubx.FieldSpec{WireName: "key_url"},
+	"SourceVault": ubx.FieldSpec{
+		WireName: "source_vault",
+		Kind:     "object",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettingsFields = ubx.FieldMap{
-		"DiskEncryptionKey": ubx.FieldSpec{
-			WireName: "disk_encryption_key",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKeyFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"KeyEncryptionKey": ubx.FieldSpec{
-			WireName: "key_encryption_key",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKeyFields,
-		},
-	}
+	"DiskEncryptionKey": ubx.FieldSpec{
+		WireName: "disk_encryption_key",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_DiskEncryptionKeyFields,
+	},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"KeyEncryptionKey": ubx.FieldSpec{
+		WireName: "key_encryption_key",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettings_KeyEncryptionKeyFields,
+	},
+}
 
 var Point_Properties_SourceMetadata_StorageProfile_OsDiskFields = ubx.FieldMap{
-		"Caching": ubx.FieldSpec{WireName: "caching"},
-		"DiskRestorePoint": ubx.FieldSpec{
-			WireName: "disk_restore_point",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePointFields,
-		},
-		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-		"EncryptionSettings": ubx.FieldSpec{
-			WireName: "encryption_settings",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettingsFields,
-		},
-		"ManagedDisk": ubx.FieldSpec{
-			WireName: "managed_disk",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDiskFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
-		"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
-	}
+	"Caching": ubx.FieldSpec{WireName: "caching"},
+	"DiskRestorePoint": ubx.FieldSpec{
+		WireName: "disk_restore_point",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_DiskRestorePointFields,
+	},
+	"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
+	"EncryptionSettings": ubx.FieldSpec{
+		WireName: "encryption_settings",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_OsDisk_EncryptionSettingsFields,
+	},
+	"ManagedDisk": ubx.FieldSpec{
+		WireName: "managed_disk",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisks_ManagedDiskFields,
+	},
+	"Name":                    ubx.FieldSpec{WireName: "name"},
+	"OsType":                  ubx.FieldSpec{WireName: "os_type"},
+	"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
+}
 
 var Point_Properties_SourceMetadata_StorageProfileFields = ubx.FieldMap{
-		"DataDisks": ubx.FieldSpec{
-			WireName: "data_disks",
-			Kind: "list",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_DataDisksFields,
-		},
-		"DiskControllerType": ubx.FieldSpec{WireName: "disk_controller_type"},
-		"OsDisk": ubx.FieldSpec{
-			WireName: "os_disk",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfile_OsDiskFields,
-		},
-	}
+	"DataDisks": ubx.FieldSpec{
+		WireName: "data_disks",
+		Kind:     "list",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_DataDisksFields,
+	},
+	"DiskControllerType": ubx.FieldSpec{WireName: "disk_controller_type"},
+	"OsDisk": ubx.FieldSpec{
+		WireName: "os_disk",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfile_OsDiskFields,
+	},
+}
 
 var Point_Properties_SourceMetadataFields = ubx.FieldMap{
-		"DiagnosticsProfile": ubx.FieldSpec{
-			WireName: "diagnostics_profile",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_DiagnosticsProfileFields,
-		},
-		"HardwareProfile": ubx.FieldSpec{
-			WireName: "hardware_profile",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_HardwareProfileFields,
-		},
-		"HyperVgeneration": ubx.FieldSpec{WireName: "hyper_vgeneration"},
-		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"OsProfile": ubx.FieldSpec{
-			WireName: "os_profile",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_OsProfileFields,
-		},
-		"SecurityProfile": ubx.FieldSpec{
-			WireName: "security_profile",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_SecurityProfileFields,
-		},
-		"StorageProfile": ubx.FieldSpec{
-			WireName: "storage_profile",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadata_StorageProfileFields,
-		},
-		"UserData": ubx.FieldSpec{WireName: "user_data"},
-		"VmId": ubx.FieldSpec{WireName: "vm_id"},
-	}
+	"DiagnosticsProfile": ubx.FieldSpec{
+		WireName: "diagnostics_profile",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_DiagnosticsProfileFields,
+	},
+	"HardwareProfile": ubx.FieldSpec{
+		WireName: "hardware_profile",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_HardwareProfileFields,
+	},
+	"HyperVgeneration": ubx.FieldSpec{WireName: "hyper_vgeneration"},
+	"LicenseType":      ubx.FieldSpec{WireName: "license_type"},
+	"Location":         ubx.FieldSpec{WireName: "location"},
+	"OsProfile": ubx.FieldSpec{
+		WireName: "os_profile",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_OsProfileFields,
+	},
+	"SecurityProfile": ubx.FieldSpec{
+		WireName: "security_profile",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_SecurityProfileFields,
+	},
+	"StorageProfile": ubx.FieldSpec{
+		WireName: "storage_profile",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadata_StorageProfileFields,
+	},
+	"UserData": ubx.FieldSpec{WireName: "user_data"},
+	"VmId":     ubx.FieldSpec{WireName: "vm_id"},
+}
 
 var Point_PropertiesFields = ubx.FieldMap{
-		"ConsistencyMode": ubx.FieldSpec{WireName: "consistency_mode"},
-		"ExcludeDisks": ubx.FieldSpec{
-			WireName: "exclude_disks",
-			Kind: "list",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: Point_Properties_InstanceViewFields,
-		},
-		"InstantAccessDurationMinutes": ubx.FieldSpec{WireName: "instant_access_duration_minutes"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SourceMetadata": ubx.FieldSpec{
-			WireName: "source_metadata",
-			Kind: "object",
-			Fields: Point_Properties_SourceMetadataFields,
-		},
-		"SourceRestorePoint": ubx.FieldSpec{
-			WireName: "source_restore_point",
-			Kind: "object",
-			Fields: Point_Properties_ExcludeDisksFields,
-		},
-		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-	}
+	"ConsistencyMode": ubx.FieldSpec{WireName: "consistency_mode"},
+	"ExcludeDisks": ubx.FieldSpec{
+		WireName: "exclude_disks",
+		Kind:     "list",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   Point_Properties_InstanceViewFields,
+	},
+	"InstantAccessDurationMinutes": ubx.FieldSpec{WireName: "instant_access_duration_minutes"},
+	"ProvisioningState":            ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceMetadata": ubx.FieldSpec{
+		WireName: "source_metadata",
+		Kind:     "object",
+		Fields:   Point_Properties_SourceMetadataFields,
+	},
+	"SourceRestorePoint": ubx.FieldSpec{
+		WireName: "source_restore_point",
+		Kind:     "object",
+		Fields:   Point_Properties_ExcludeDisksFields,
+	},
+	"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
+}
 
 type PointConfig struct {
 	// The restore point properties.
@@ -925,8 +875,8 @@ var Point = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Point_PropertiesFields,
+			Kind:     "object",
+			Fields:   Point_PropertiesFields,
 		},
 	},
 }

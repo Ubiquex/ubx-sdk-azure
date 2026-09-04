@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_NetworkInterfaces struct {
 	PrivateIpAddress any
-	ResourceId any
+	ResourceId       any
 }
 
 type OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_Subnet struct {
@@ -39,46 +39,46 @@ type OpenapiDedicatedHsm_Sku struct {
 }
 
 var OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_NetworkInterfacesFields = ubx.FieldMap{
-		"PrivateIpAddress": ubx.FieldSpec{WireName: "private_ip_address"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"PrivateIpAddress": ubx.FieldSpec{WireName: "private_ip_address"},
+	"ResourceId":       ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_SubnetFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var OpenapiDedicatedHsm_Properties_ManagementNetworkProfileFields = ubx.FieldMap{
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_NetworkInterfacesFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_SubnetFields,
-		},
-	}
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_NetworkInterfacesFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   OpenapiDedicatedHsm_Properties_ManagementNetworkProfile_SubnetFields,
+	},
+}
 
 var OpenapiDedicatedHsm_PropertiesFields = ubx.FieldMap{
-		"ManagementNetworkProfile": ubx.FieldSpec{
-			WireName: "management_network_profile",
-			Kind: "object",
-			Fields: OpenapiDedicatedHsm_Properties_ManagementNetworkProfileFields,
-		},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: OpenapiDedicatedHsm_Properties_ManagementNetworkProfileFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StampId": ubx.FieldSpec{WireName: "stamp_id"},
-		"StatusMessage": ubx.FieldSpec{WireName: "status_message"},
-	}
+	"ManagementNetworkProfile": ubx.FieldSpec{
+		WireName: "management_network_profile",
+		Kind:     "object",
+		Fields:   OpenapiDedicatedHsm_Properties_ManagementNetworkProfileFields,
+	},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   OpenapiDedicatedHsm_Properties_ManagementNetworkProfileFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"StampId":           ubx.FieldSpec{WireName: "stamp_id"},
+	"StatusMessage":     ubx.FieldSpec{WireName: "status_message"},
+}
 
 var OpenapiDedicatedHsm_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type OpenapiDedicatedHsmConfig struct {
 	// Properties of the dedicated hsm
@@ -107,15 +107,15 @@ var OpenapiDedicatedHsm = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDedicatedHsm_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDedicatedHsm_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiDedicatedHsm_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiDedicatedHsm_SkuFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":  ubx.FieldSpec{WireName: "name"},
 	},
 }

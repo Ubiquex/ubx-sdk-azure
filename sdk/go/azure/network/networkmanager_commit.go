@@ -38,30 +38,19 @@ type NetworkmanagerCommit_SystemData struct {
 }
 
 var NetworkmanagerCommit_PropertiesFields = ubx.FieldMap{
-		"ActiveLocations": ubx.FieldSpec{WireName: "active_locations"},
-		"CommitType": ubx.FieldSpec{WireName: "commit_type"},
-		"ConfigurationIds": ubx.FieldSpec{WireName: "configuration_ids"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ForceUpdateTag": ubx.FieldSpec{WireName: "force_update_tag"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TargetLocations": ubx.FieldSpec{WireName: "target_locations"},
-	}
-
-var NetworkmanagerCommit_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"ActiveLocations":   ubx.FieldSpec{WireName: "active_locations"},
+	"CommitType":        ubx.FieldSpec{WireName: "commit_type"},
+	"ConfigurationIds":  ubx.FieldSpec{WireName: "configuration_ids"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ForceUpdateTag":    ubx.FieldSpec{WireName: "force_update_tag"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TargetLocations":   ubx.FieldSpec{WireName: "target_locations"},
+}
 
 type NetworkmanagerCommitConfig struct {
 	// Properties of commit
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
 }
 
 type NetworkmanagerCommitAttrs struct {
@@ -76,13 +65,8 @@ var NetworkmanagerCommit = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerCommit_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: NetworkmanagerCommit_SystemDataFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerCommit_PropertiesFields,
 		},
 	},
 }

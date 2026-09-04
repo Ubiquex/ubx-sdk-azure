@@ -9,8 +9,8 @@ type OpenapiIdentifier_Properties struct {
 }
 
 var OpenapiIdentifier_PropertiesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 type OpenapiIdentifierConfig struct {
 	// Kind of resource.
@@ -36,8 +36,8 @@ var OpenapiIdentifier = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiIdentifier_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiIdentifier_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

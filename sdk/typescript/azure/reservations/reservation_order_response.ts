@@ -14,9 +14,143 @@ export interface ReservationOrderResponse_Properties_AppliedScopeProperties {
   tenantId?: string | Computed<string>;
 }
 
-export interface ReservationOrderResponse_Properties_ReservedResourceProperties {
-  /** Turning this on will apply the reservation discount to other VMs in the same VM size group. Only specify for VirtualMachines reserved resource type. */
+export interface ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal {
+  amount?: number | Computed<number>;
+  /** The ISO 4217 3-letter currency code for the currency used by this purchase record. */
+  currencyCode?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfo {
+  message?: string | Computed<string>;
+  statusCode?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_PlanInformation_Transactions {
+  billingAccount?: string | Computed<string>;
+  billingCurrencyTotal?: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal | Computed<ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal>;
+  dueDate?: string | Computed<string>;
+  extendedStatusInfo?: ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfo | Computed<ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfo>;
+  paymentDate?: string | Computed<string>;
+  pricingCurrencyTotal?: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal | Computed<ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal>;
+  status?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_PlanInformation {
+  /** For recurring billing plans, indicates the date when next payment will be processed. Null when total is paid off. */
+  nextPaymentDueDate?: string | Computed<string>;
+  /** Pricing information containing the amount and the currency code */
+  pricingCurrencyTotal?: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal | Computed<ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal>;
+  /** Date when the billing plan has started. */
+  startDate?: string | Computed<string>;
+  transactions?: ReservationOrderResponse_Properties_PlanInformation_Transactions[] | Computed<ReservationOrderResponse_Properties_PlanInformation_Transactions[]>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_MergeProperties {
+  mergeDestination?: string | Computed<string>;
+  mergeSources?: string[] | Computed<string[]>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties {
   instanceFlexibility?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties {
+  appliedScopeProperties?: ReservationOrderResponse_Properties_AppliedScopeProperties | Computed<ReservationOrderResponse_Properties_AppliedScopeProperties>;
+  appliedScopeType?: string | Computed<string>;
+  appliedScopes?: string[] | Computed<string[]>;
+  billingPlan?: string | Computed<string>;
+  billingScopeId?: string | Computed<string>;
+  displayName?: string | Computed<string>;
+  quantity?: number | Computed<number>;
+  renew?: boolean | Computed<boolean>;
+  reservedResourceProperties?: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties | Computed<ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties>;
+  reservedResourceType?: string | Computed<string>;
+  reviewDateTime?: string | Computed<string>;
+  term?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku {
+  name?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties {
+  location?: string | Computed<string>;
+  properties?: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties | Computed<ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties>;
+  sku?: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku | Computed<ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties {
+  billingCurrencyTotal?: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal | Computed<ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal>;
+  pricingCurrencyTotal?: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal | Computed<ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotal>;
+  purchaseProperties?: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties | Computed<ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_SplitProperties {
+  splitDestinations?: string[] | Computed<string[]>;
+  splitSource?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_SwapProperties {
+  swapDestination?: string | Computed<string>;
+  swapSource?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_Utilization_Aggregates {
+  grain?: number | Computed<number>;
+  grainUnit?: string | Computed<string>;
+  value?: number | Computed<number>;
+  valueUnit?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties_Utilization {
+  aggregates?: ReservationOrderResponse_Properties_Reservations_Properties_Utilization_Aggregates[] | Computed<ReservationOrderResponse_Properties_Reservations_Properties_Utilization_Aggregates[]>;
+  trend?: string | Computed<string>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations_Properties {
+  appliedScopeProperties?: ReservationOrderResponse_Properties_AppliedScopeProperties | Computed<ReservationOrderResponse_Properties_AppliedScopeProperties>;
+  appliedScopeType?: string | Computed<string>;
+  appliedScopes?: string[] | Computed<string[]>;
+  archived?: boolean | Computed<boolean>;
+  benefitStartTime?: string | Computed<string>;
+  billingPlan?: string | Computed<string>;
+  billingScopeId?: string | Computed<string>;
+  capabilities?: string | Computed<string>;
+  displayName?: string | Computed<string>;
+  displayProvisioningState?: string | Computed<string>;
+  effectiveDateTime?: string | Computed<string>;
+  expiryDate?: string | Computed<string>;
+  expiryDateTime?: string | Computed<string>;
+  extendedStatusInfo?: ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfo | Computed<ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfo>;
+  instanceFlexibility?: string | Computed<string>;
+  lastUpdatedDateTime?: string | Computed<string>;
+  mergeProperties?: ReservationOrderResponse_Properties_Reservations_Properties_MergeProperties | Computed<ReservationOrderResponse_Properties_Reservations_Properties_MergeProperties>;
+  provisioningState?: string | Computed<string>;
+  provisioningSubState?: string | Computed<string>;
+  purchaseDate?: string | Computed<string>;
+  purchaseDateTime?: string | Computed<string>;
+  quantity?: number | Computed<number>;
+  renew?: boolean | Computed<boolean>;
+  renewDestination?: string | Computed<string>;
+  renewProperties?: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties | Computed<ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties>;
+  renewSource?: string | Computed<string>;
+  reservedResourceType?: string | Computed<string>;
+  reviewDateTime?: string | Computed<string>;
+  skuDescription?: string | Computed<string>;
+  splitProperties?: ReservationOrderResponse_Properties_Reservations_Properties_SplitProperties | Computed<ReservationOrderResponse_Properties_Reservations_Properties_SplitProperties>;
+  swapProperties?: ReservationOrderResponse_Properties_Reservations_Properties_SwapProperties | Computed<ReservationOrderResponse_Properties_Reservations_Properties_SwapProperties>;
+  term?: string | Computed<string>;
+  userFriendlyAppliedScopeType?: string | Computed<string>;
+  userFriendlyRenewState?: string | Computed<string>;
+  utilization?: ReservationOrderResponse_Properties_Reservations_Properties_Utilization | Computed<ReservationOrderResponse_Properties_Reservations_Properties_Utilization>;
+}
+
+export interface ReservationOrderResponse_Properties_Reservations {
+  etag?: number | Computed<number>;
+  kind?: string | Computed<string>;
+  location?: string | Computed<string>;
+  properties?: ReservationOrderResponse_Properties_Reservations_Properties | Computed<ReservationOrderResponse_Properties_Reservations_Properties>;
+  sku?: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku | Computed<ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku>;
 }
 
 export interface ReservationOrderResponse_Properties {
@@ -26,28 +160,41 @@ export interface ReservationOrderResponse_Properties {
   appliedScopeType?: string | Computed<string>;
   /** List of the subscriptions that the benefit will be applied. Do not specify if AppliedScopeType is Shared. This property will be deprecated and replaced by appliedScopeProperties instead for Single AppliedScopeType. */
   appliedScopes?: string[] | Computed<string[]>;
+  /** This is the DateTime when the reservation benefit started. */
+  benefitStartTime?: string | Computed<string>;
   /** Represent the billing plans. */
   billingPlan?: string | Computed<string>;
   /** Subscription that will be charged for purchasing reservation or savings plan */
   billingScopeId?: string | Computed<string>;
+  /** This is the DateTime when the reservation was created. */
+  createdDateTime?: string | Computed<string>;
   /** Friendly name of the reservation */
   displayName?: string | Computed<string>;
+  /** This is the date when the reservation will expire. */
+  expiryDate?: string | Computed<string>;
+  /** This is the date-time when the reservation will expire. */
+  expiryDateTime?: string | Computed<string>;
+  /** Total Quantity of the skus purchased in the reservation. */
+  originalQuantity?: number | Computed<number>;
+  /** Information describing the type of billing plan for this reservation. */
+  planInformation?: ReservationOrderResponse_Properties_PlanInformation | Computed<ReservationOrderResponse_Properties_PlanInformation>;
+  /** Represent the current state of the Reservation. */
+  provisioningState?: string | Computed<string>;
   /** Quantity of the skus that are part of the reservation. */
   quantity?: number | Computed<number>;
   /** Setting this to true will automatically purchase a new reservation on the expiration date time. */
   renew?: boolean | Computed<boolean>;
+  /** This is the DateTime when the reservation was initially requested for purchase. */
+  requestDateTime?: string | Computed<string>;
+  reservations?: ReservationOrderResponse_Properties_Reservations[] | Computed<ReservationOrderResponse_Properties_Reservations[]>;
   /** Properties specific to each reserved resource type. Not required if not applicable. */
-  reservedResourceProperties?: ReservationOrderResponse_Properties_ReservedResourceProperties | Computed<ReservationOrderResponse_Properties_ReservedResourceProperties>;
+  reservedResourceProperties?: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties | Computed<ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties>;
   /** The type of the resource that is being reserved. In addition to below types we have also added the following: OpenAIPTU, MDC, Sentinel. */
   reservedResourceType?: string | Computed<string>;
   /** This is the date-time when the Azure hybrid benefit needs to be reviewed. */
   reviewDateTime?: string | Computed<string>;
   /** Represent the term of reservation. */
   term?: string | Computed<string>;
-}
-
-export interface ReservationOrderResponse_Sku {
-  name?: string | Computed<string>;
 }
 
 const ReservationOrderResponse_Properties_AppliedScopePropertiesFields: FieldMap = {
@@ -58,11 +205,63 @@ const ReservationOrderResponse_Properties_AppliedScopePropertiesFields: FieldMap
   tenantId: "tenant_id",
 };
 
-const ReservationOrderResponse_Properties_ReservedResourcePropertiesFields: FieldMap = {
+const ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields: FieldMap = {
+  amount: "amount",
+  currencyCode: "currency_code",
+};
+
+const ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfoFields: FieldMap = {
+  message: "message",
+  statusCode: "status_code",
+};
+
+const ReservationOrderResponse_Properties_PlanInformation_TransactionsFields: FieldMap = {
+  billingAccount: "billing_account",
+  billingCurrencyTotal: {
+    wireName: "billing_currency_total",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+  },
+  dueDate: "due_date",
+  extendedStatusInfo: {
+    wireName: "extended_status_info",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfoFields,
+  },
+  paymentDate: "payment_date",
+  pricingCurrencyTotal: {
+    wireName: "pricing_currency_total",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+  },
+  status: "status",
+};
+
+const ReservationOrderResponse_Properties_PlanInformationFields: FieldMap = {
+  nextPaymentDueDate: "next_payment_due_date",
+  pricingCurrencyTotal: {
+    wireName: "pricing_currency_total",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+  },
+  startDate: "start_date",
+  transactions: {
+    wireName: "transactions",
+    kind: "list",
+    fields: ReservationOrderResponse_Properties_PlanInformation_TransactionsFields,
+  },
+};
+
+const ReservationOrderResponse_Properties_Reservations_Properties_MergePropertiesFields: FieldMap = {
+  mergeDestination: "merge_destination",
+  mergeSources: "merge_sources",
+};
+
+const ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourcePropertiesFields: FieldMap = {
   instanceFlexibility: "instance_flexibility",
 };
 
-const ReservationOrderResponse_PropertiesFields: FieldMap = {
+const ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_PropertiesFields: FieldMap = {
   appliedScopeProperties: {
     wireName: "applied_scope_properties",
     kind: "object",
@@ -78,15 +277,195 @@ const ReservationOrderResponse_PropertiesFields: FieldMap = {
   reservedResourceProperties: {
     wireName: "reserved_resource_properties",
     kind: "object",
-    fields: ReservationOrderResponse_Properties_ReservedResourcePropertiesFields,
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourcePropertiesFields,
   },
   reservedResourceType: "reserved_resource_type",
   reviewDateTime: "review_date_time",
   term: "term",
 };
 
-const ReservationOrderResponse_SkuFields: FieldMap = {
+const ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_SkuFields: FieldMap = {
   name: "name",
+};
+
+const ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchasePropertiesFields: FieldMap = {
+  location: "location",
+  properties: {
+    wireName: "properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_PropertiesFields,
+  },
+  sku: {
+    wireName: "sku",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_SkuFields,
+  },
+};
+
+const ReservationOrderResponse_Properties_Reservations_Properties_RenewPropertiesFields: FieldMap = {
+  billingCurrencyTotal: {
+    wireName: "billing_currency_total",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+  },
+  pricingCurrencyTotal: {
+    wireName: "pricing_currency_total",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_PlanInformation_PricingCurrencyTotalFields,
+  },
+  purchaseProperties: {
+    wireName: "purchase_properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchasePropertiesFields,
+  },
+};
+
+const ReservationOrderResponse_Properties_Reservations_Properties_SplitPropertiesFields: FieldMap = {
+  splitDestinations: "split_destinations",
+  splitSource: "split_source",
+};
+
+const ReservationOrderResponse_Properties_Reservations_Properties_SwapPropertiesFields: FieldMap = {
+  swapDestination: "swap_destination",
+  swapSource: "swap_source",
+};
+
+const ReservationOrderResponse_Properties_Reservations_Properties_Utilization_AggregatesFields: FieldMap = {
+  grain: "grain",
+  grainUnit: "grain_unit",
+  value: "value",
+  valueUnit: "value_unit",
+};
+
+const ReservationOrderResponse_Properties_Reservations_Properties_UtilizationFields: FieldMap = {
+  aggregates: {
+    wireName: "aggregates",
+    kind: "list",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_Utilization_AggregatesFields,
+  },
+  trend: "trend",
+};
+
+const ReservationOrderResponse_Properties_Reservations_PropertiesFields: FieldMap = {
+  appliedScopeProperties: {
+    wireName: "applied_scope_properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_AppliedScopePropertiesFields,
+  },
+  appliedScopeType: "applied_scope_type",
+  appliedScopes: "applied_scopes",
+  archived: "archived",
+  benefitStartTime: "benefit_start_time",
+  billingPlan: "billing_plan",
+  billingScopeId: "billing_scope_id",
+  capabilities: "capabilities",
+  displayName: "display_name",
+  displayProvisioningState: "display_provisioning_state",
+  effectiveDateTime: "effective_date_time",
+  expiryDate: "expiry_date",
+  expiryDateTime: "expiry_date_time",
+  extendedStatusInfo: {
+    wireName: "extended_status_info",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_PlanInformation_Transactions_ExtendedStatusInfoFields,
+  },
+  instanceFlexibility: "instance_flexibility",
+  lastUpdatedDateTime: "last_updated_date_time",
+  mergeProperties: {
+    wireName: "merge_properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_MergePropertiesFields,
+  },
+  provisioningState: "provisioning_state",
+  provisioningSubState: "provisioning_sub_state",
+  purchaseDate: "purchase_date",
+  purchaseDateTime: "purchase_date_time",
+  quantity: "quantity",
+  renew: "renew",
+  renewDestination: "renew_destination",
+  renewProperties: {
+    wireName: "renew_properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_RenewPropertiesFields,
+  },
+  renewSource: "renew_source",
+  reservedResourceType: "reserved_resource_type",
+  reviewDateTime: "review_date_time",
+  skuDescription: "sku_description",
+  splitProperties: {
+    wireName: "split_properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_SplitPropertiesFields,
+  },
+  swapProperties: {
+    wireName: "swap_properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_SwapPropertiesFields,
+  },
+  term: "term",
+  userFriendlyAppliedScopeType: "user_friendly_applied_scope_type",
+  userFriendlyRenewState: "user_friendly_renew_state",
+  utilization: {
+    wireName: "utilization",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_UtilizationFields,
+  },
+};
+
+const ReservationOrderResponse_Properties_ReservationsFields: FieldMap = {
+  etag: "etag",
+  kind: "kind",
+  location: "location",
+  properties: {
+    wireName: "properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_PropertiesFields,
+  },
+  sku: {
+    wireName: "sku",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_SkuFields,
+  },
+};
+
+const ReservationOrderResponse_PropertiesFields: FieldMap = {
+  appliedScopeProperties: {
+    wireName: "applied_scope_properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_AppliedScopePropertiesFields,
+  },
+  appliedScopeType: "applied_scope_type",
+  appliedScopes: "applied_scopes",
+  benefitStartTime: "benefit_start_time",
+  billingPlan: "billing_plan",
+  billingScopeId: "billing_scope_id",
+  createdDateTime: "created_date_time",
+  displayName: "display_name",
+  expiryDate: "expiry_date",
+  expiryDateTime: "expiry_date_time",
+  originalQuantity: "original_quantity",
+  planInformation: {
+    wireName: "plan_information",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_PlanInformationFields,
+  },
+  provisioningState: "provisioning_state",
+  quantity: "quantity",
+  renew: "renew",
+  requestDateTime: "request_date_time",
+  reservations: {
+    wireName: "reservations",
+    kind: "list",
+    fields: ReservationOrderResponse_Properties_ReservationsFields,
+  },
+  reservedResourceProperties: {
+    wireName: "reserved_resource_properties",
+    kind: "object",
+    fields: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourcePropertiesFields,
+  },
+  reservedResourceType: "reserved_resource_type",
+  reviewDateTime: "review_date_time",
+  term: "term",
 };
 
 export interface ReservationOrderResponseConfig {
@@ -95,7 +474,7 @@ export interface ReservationOrderResponseConfig {
   /** Properties of reservation purchase request */
   properties?: ReservationOrderResponse_Properties | Computed<ReservationOrderResponse_Properties>;
   /** The name of sku */
-  sku?: ReservationOrderResponse_Sku | Computed<ReservationOrderResponse_Sku>;
+  sku?: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku | Computed<ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku>;
 }
 
 export interface ReservationOrderResponseAttrs {
@@ -105,7 +484,7 @@ export interface ReservationOrderResponseAttrs {
   /** Properties of reservation purchase request */
   properties: ReservationOrderResponse_Properties;
   /** The name of sku */
-  sku: ReservationOrderResponse_Sku;
+  sku: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku;
 }
 
 export const ReservationOrderResponse: ResourceBinding<ReservationOrderResponseConfig, ReservationOrderResponseAttrs> = {
@@ -120,7 +499,7 @@ export const ReservationOrderResponse: ResourceBinding<ReservationOrderResponseC
     sku: {
       wireName: "sku",
       kind: "object",
-      fields: ReservationOrderResponse_SkuFields,
+      fields: ReservationOrderResponse_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_SkuFields,
     },
   },
 };

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IntegrationruntimeIntegrationRuntimeResource_Value_Properties struct {
 	Description any
-	Type any
+	Type        any
 }
 
 type IntegrationruntimeIntegrationRuntimeResource_Value struct {
@@ -24,6 +24,5 @@ type IntegrationruntimeIntegrationRuntimeResourceAttrs struct {
 
 var IntegrationruntimeIntegrationRuntimeResource = ubx.DataSourceBinding{
 	WireType: "azure_synapse_integrationruntime_integration_runtime_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

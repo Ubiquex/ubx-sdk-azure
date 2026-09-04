@@ -5,34 +5,34 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CertificateDescription_Value_Properties struct {
 	Certificate any
-	Created any
-	Expiry any
-	IsVerified any
-	Subject any
-	Thumbprint any
-	Updated any
+	Created     any
+	Expiry      any
+	IsVerified  any
+	Subject     any
+	Thumbprint  any
+	Updated     any
 }
 
 type CertificateDescription_Value struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type CertificateDescriptionConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type CertificateDescriptionAttrs struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// The array of Certificate objects.
 	Value any
 }
@@ -40,9 +40,9 @@ type CertificateDescriptionAttrs struct {
 var CertificateDescription = ubx.DataSourceBinding{
 	WireType: "azure_iothub_certificate_description",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

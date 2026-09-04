@@ -17,18 +17,14 @@ type SqlserverEncryptionProtector_Properties struct {
 }
 
 var SqlserverEncryptionProtector_PropertiesFields = ubx.FieldMap{
-		"ServerKeyName": ubx.FieldSpec{WireName: "server_key_name"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Subregion": ubx.FieldSpec{WireName: "subregion"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ServerKeyName": ubx.FieldSpec{WireName: "server_key_name"},
+	"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
+	"Subregion":     ubx.FieldSpec{WireName: "subregion"},
+	"Thumbprint":    ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":           ubx.FieldSpec{WireName: "uri"},
+}
 
 type SqlserverEncryptionProtectorConfig struct {
-	// Kind of encryption protector. This is metadata used for the Azure portal experience.
-	Kind any
-	// Resource location.
-	Location any
 	// Properties for an encryption protector execution.
 	Properties any
 }
@@ -45,12 +41,10 @@ type SqlserverEncryptionProtectorAttrs struct {
 var SqlserverEncryptionProtector = ubx.ResourceBinding{
 	WireType: "azure_synapse_sqlserver_encryption_protector",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlserverEncryptionProtector_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlserverEncryptionProtector_PropertiesFields,
 		},
 	},
 }

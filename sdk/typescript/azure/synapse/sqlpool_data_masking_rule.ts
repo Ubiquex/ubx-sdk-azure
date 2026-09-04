@@ -44,10 +44,6 @@ const SqlpoolDataMaskingRule_PropertiesFields: FieldMap = {
 };
 
 export interface SqlpoolDataMaskingRuleConfig {
-  /** The kind of Data Masking Rule. Metadata, used for Azure portal. */
-  kind?: string | Computed<string>;
-  /** The location of the data masking rule. */
-  location?: string | Computed<string>;
   /** The properties of a Sql pool data masking rule. */
   properties?: SqlpoolDataMaskingRule_Properties | Computed<SqlpoolDataMaskingRule_Properties>;
 }
@@ -64,8 +60,6 @@ export interface SqlpoolDataMaskingRuleAttrs {
 export const SqlpoolDataMaskingRule: ResourceBinding<SqlpoolDataMaskingRuleConfig, SqlpoolDataMaskingRuleAttrs> = {
   wireType: "azure_synapse_sqlpool_data_masking_rule",
   fields: {
-    kind: "kind",
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

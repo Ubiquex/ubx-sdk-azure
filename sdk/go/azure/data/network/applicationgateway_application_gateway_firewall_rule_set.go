@@ -4,26 +4,26 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationgatewayApplicationGatewayFirewallRuleSet_Value_Properties_RuleGroups_Rules struct {
-	Action any
-	Description any
-	RuleId any
+	Action       any
+	Description  any
+	RuleId       any
 	RuleIdString any
-	Sensitivity any
-	State any
+	Sensitivity  any
+	State        any
 }
 
 type ApplicationgatewayApplicationGatewayFirewallRuleSet_Value_Properties_RuleGroups struct {
-	Description any
+	Description   any
 	RuleGroupName any
-	Rules any
+	Rules         any
 }
 
 type ApplicationgatewayApplicationGatewayFirewallRuleSet_Value_Properties struct {
 	ProvisioningState any
-	RuleGroups any
-	RuleSetType any
-	RuleSetVersion any
-	Tiers any
+	RuleGroups        any
+	RuleSetType       any
+	RuleSetVersion    any
+	Tiers             any
 }
 
 type ApplicationgatewayApplicationGatewayFirewallRuleSet_Value struct {
@@ -40,6 +40,5 @@ type ApplicationgatewayApplicationGatewayFirewallRuleSetAttrs struct {
 
 var ApplicationgatewayApplicationGatewayFirewallRuleSet = ubx.DataSourceBinding{
 	WireType: "azure_network_applicationgateway_application_gateway_firewall_rule_set",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

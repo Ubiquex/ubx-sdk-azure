@@ -4,17 +4,17 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWebJob_Value_Properties struct {
-	Error any
+	Error        any
 	ExtraInfoUrl any
-	RunCommand any
-	Settings any
-	Url any
-	UsingSdk any
-	WebJobType any
+	RunCommand   any
+	Settings     any
+	Url          any
+	UsingSdk     any
+	WebJobType   any
 }
 
 type OpenapiWebJob_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -27,7 +27,7 @@ type OpenapiWebJobAttrs struct {
 	Name any
 	// The link to the next page of items
 	NextLink any
-	Slot any
+	Slot     any
 	// The WebJob items on this page
 	Value any
 }

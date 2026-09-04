@@ -4,38 +4,38 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceProtectionContainerMapping_Value_Properties_HealthErrorDetails_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceProtectionContainerMapping_Value_Properties_HealthErrorDetails struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceProtectionContainerMapping_Value_Properties_ProviderSpecificDetails struct {
@@ -43,36 +43,36 @@ type ServiceProtectionContainerMapping_Value_Properties_ProviderSpecificDetails 
 }
 
 type ServiceProtectionContainerMapping_Value_Properties struct {
-	Health any
-	HealthErrorDetails any
-	PolicyFriendlyName any
-	PolicyId any
-	ProviderSpecificDetails any
-	SourceFabricFriendlyName any
+	Health                                any
+	HealthErrorDetails                    any
+	PolicyFriendlyName                    any
+	PolicyId                              any
+	ProviderSpecificDetails               any
+	SourceFabricFriendlyName              any
 	SourceProtectionContainerFriendlyName any
-	State any
-	TargetFabricFriendlyName any
+	State                                 any
+	TargetFabricFriendlyName              any
 	TargetProtectionContainerFriendlyName any
-	TargetProtectionContainerId any
+	TargetProtectionContainerId           any
 }
 
 type ServiceProtectionContainerMapping_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceProtectionContainerMappingConfig struct {
-	FabricName any
+	FabricName              any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 }
 
 type ServiceProtectionContainerMappingAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
+	NextLink                any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 	// The ProtectionContainerMapping items on this page
 	Value any
 }
@@ -80,8 +80,8 @@ type ServiceProtectionContainerMappingAttrs struct {
 var ServiceProtectionContainerMapping = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_protection_container_mapping",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"FabricName":              ubx.FieldSpec{WireName: "fabric_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":            ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

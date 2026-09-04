@@ -2,12 +2,26 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface OpenapiStaticSiteCustomDomainOverviewArmresource_Properties {
+  /** The date and time on which the custom domain was created for the static site. */
+  createdOn?: string | Computed<string>;
+  /** The domain name for the static site custom domain. */
+  domainName?: string | Computed<string>;
+  errorMessage?: string | Computed<string>;
+  /** The status of the custom domain */
+  status?: string | Computed<string>;
   /** Validation method for adding a custom domain */
   validationMethod?: string | Computed<string>;
+  /** The TXT record validation token */
+  validationToken?: string | Computed<string>;
 }
 
 const OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields: FieldMap = {
+  createdOn: "created_on",
+  domainName: "domain_name",
+  errorMessage: "error_message",
+  status: "status",
   validationMethod: "validation_method",
+  validationToken: "validation_token",
 };
 
 export interface OpenapiStaticSiteCustomDomainOverviewArmresourceConfig {

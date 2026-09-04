@@ -4,36 +4,36 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets_RuleGroups_Rules struct {
-	Action any
-	Description any
-	RuleId any
+	Action       any
+	Description  any
+	RuleId       any
 	RuleIdString any
-	Sensitivity any
-	State any
+	Sensitivity  any
+	State        any
 }
 
 type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets_RuleGroups struct {
-	Description any
+	Description   any
 	RuleGroupName any
-	Rules any
+	Rules         any
 }
 
 type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets struct {
-	RuleGroups any
-	RuleSetType any
+	RuleGroups     any
+	RuleSetType    any
 	RuleSetVersion any
-	Status any
-	Tiers any
+	Status         any
+	Tiers          any
 }
 
 type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_DefaultRuleSet struct {
-	RuleSetType any
+	RuleSetType    any
 	RuleSetVersion any
 }
 
 type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties struct {
 	AvailableRuleSets any
-	DefaultRuleSet any
+	DefaultRuleSet    any
 }
 
 type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value struct {

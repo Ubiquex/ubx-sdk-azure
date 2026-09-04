@@ -50,10 +50,6 @@ _SqlpoolDataMaskingRule_PropertiesFields = {
 
 @dataclasses.dataclass
 class SqlpoolDataMaskingRuleConfig:
-    # The kind of Data Masking Rule. Metadata, used for Azure portal.
-    kind: Any = None
-    # The location of the data masking rule.
-    location: Any = None
     # The properties of a Sql pool data masking rule.
     properties: Any = None
 
@@ -69,8 +65,6 @@ class SqlpoolDataMaskingRuleAttrs:
 SqlpoolDataMaskingRule = ubx.ResourceBinding(
     wire_type="azure_synapse_sqlpool_data_masking_rule",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

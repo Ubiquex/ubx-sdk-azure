@@ -4,104 +4,104 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingProfile_Value_Properties_BillTo struct {
-	AddressLine1 any
-	AddressLine2 any
-	AddressLine3 any
-	City any
-	CompanyName any
-	Country any
-	District any
-	Email any
-	FirstName any
+	AddressLine1   any
+	AddressLine2   any
+	AddressLine3   any
+	City           any
+	CompanyName    any
+	Country        any
+	District       any
+	Email          any
+	FirstName      any
 	IsValidAddress any
-	LastName any
-	MiddleName any
-	PhoneNumber any
-	PostalCode any
-	Region any
+	LastName       any
+	MiddleName     any
+	PhoneNumber    any
+	PostalCode     any
+	Region         any
 }
 
 type OpenapiBillingProfile_Value_Properties_CurrentPaymentTerm struct {
-	EndDate any
+	EndDate   any
 	IsDefault any
 	StartDate any
-	Term any
+	Term      any
 }
 
 type OpenapiBillingProfile_Value_Properties_EnabledAzurePlans struct {
-	ProductId any
+	ProductId      any
 	SkuDescription any
-	SkuId any
+	SkuId          any
 }
 
 type OpenapiBillingProfile_Value_Properties_IndirectRelationshipInfo struct {
 	BillingAccountName any
 	BillingProfileName any
-	DisplayName any
+	DisplayName        any
 }
 
 type OpenapiBillingProfile_Value_Properties_SpendingLimitDetails struct {
-	Amount any
-	Currency any
-	EndDate any
+	Amount    any
+	Currency  any
+	EndDate   any
 	StartDate any
-	Status any
-	Type any
+	Status    any
+	Type      any
 }
 
 type OpenapiBillingProfile_Value_Properties struct {
-	BillTo any
-	BillingRelationshipType any
-	Currency any
-	CurrentPaymentTerm any
-	DisplayName any
-	EnabledAzurePlans any
-	HasReadAccess any
+	BillTo                   any
+	BillingRelationshipType  any
+	Currency                 any
+	CurrentPaymentTerm       any
+	DisplayName              any
+	EnabledAzurePlans        any
+	HasReadAccess            any
 	IndirectRelationshipInfo any
-	InvoiceDay any
-	InvoiceEmailOptIn any
-	InvoiceRecipients any
-	OtherPaymentTerms any
-	PoNumber any
-	ProvisioningState any
-	ShipTo any
-	SoldTo any
-	SpendingLimit any
-	SpendingLimitDetails any
-	Status any
-	StatusReasonCode any
-	SystemId any
-	Tags any
-	TargetClouds any
+	InvoiceDay               any
+	InvoiceEmailOptIn        any
+	InvoiceRecipients        any
+	OtherPaymentTerms        any
+	PoNumber                 any
+	ProvisioningState        any
+	ShipTo                   any
+	SoldTo                   any
+	SpendingLimit            any
+	SpendingLimitDetails     any
+	Status                   any
+	StatusReasonCode         any
+	SystemId                 any
+	Tags                     any
+	TargetClouds             any
 }
 
 type OpenapiBillingProfile_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiBillingProfileConfig struct {
 	BillingAccountName any
-	Count any
-	Filter any
-	IncludeDeleted any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	Count              any
+	Filter             any
+	IncludeDeleted     any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiBillingProfileAttrs struct {
 	BillingAccountName any
-	Count any
-	Filter any
-	IncludeDeleted any
+	Count              any
+	Filter             any
+	IncludeDeleted     any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The BillingProfile items on this page
 	Value any
 }
@@ -110,12 +110,12 @@ var OpenapiBillingProfile = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_billing_profile",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"IncludeDeleted": ubx.FieldSpec{WireName: "include_deleted"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"IncludeDeleted":     ubx.FieldSpec{WireName: "include_deleted"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

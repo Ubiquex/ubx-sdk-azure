@@ -6,17 +6,23 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type ApimapisTagDescriptionContract2_Properties struct {
 	// Description of the Tag.
 	Description any
+	// Tag name.
+	DisplayName any
 	// Description of the external resources describing the tag.
 	ExternalDocsDescription any
 	// Absolute URL of external resources describing the tag.
 	ExternalDocsUrl any
+	// Identifier of the tag in the form of /tags/{tagId}
+	TagId any
 }
 
 var ApimapisTagDescriptionContract2_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ExternalDocsDescription": ubx.FieldSpec{WireName: "external_docs_description"},
-		"ExternalDocsUrl": ubx.FieldSpec{WireName: "external_docs_url"},
-	}
+	"Description":             ubx.FieldSpec{WireName: "description"},
+	"DisplayName":             ubx.FieldSpec{WireName: "display_name"},
+	"ExternalDocsDescription": ubx.FieldSpec{WireName: "external_docs_description"},
+	"ExternalDocsUrl":         ubx.FieldSpec{WireName: "external_docs_url"},
+	"TagId":                   ubx.FieldSpec{WireName: "tag_id"},
+}
 
 type ApimapisTagDescriptionContract2Config struct {
 	// Parameters supplied to the Create TagDescription operation.
@@ -33,8 +39,8 @@ var ApimapisTagDescriptionContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimapisTagDescriptionContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimapisTagDescriptionContract2_PropertiesFields,
 		},
 	},
 }

@@ -5,10 +5,10 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDbVersion_Value_Properties struct {
 	IsLatestForMajorVersion any
-	IsPreviewDbVersion any
-	IsUpgradeSupported any
-	SupportsPdb any
-	Version any
+	IsPreviewDbVersion      any
+	IsUpgradeSupported      any
+	SupportsPdb             any
+	Version                 any
 }
 
 type OpenapiDbVersion_Value struct {
@@ -16,22 +16,22 @@ type OpenapiDbVersion_Value struct {
 }
 
 type OpenapiDbVersionConfig struct {
-	DbSystemId any
-	DbSystemShape any
+	DbSystemId                       any
+	DbSystemShape                    any
 	IsDatabaseSoftwareImageSupported any
-	IsUpgradeSupported any
-	ShapeFamily any
-	StorageManagement any
+	IsUpgradeSupported               any
+	ShapeFamily                      any
+	StorageManagement                any
 }
 
 type OpenapiDbVersionAttrs struct {
-	DbSystemId any
-	DbSystemShape any
+	DbSystemId                       any
+	DbSystemShape                    any
 	IsDatabaseSoftwareImageSupported any
-	IsUpgradeSupported any
+	IsUpgradeSupported               any
 	// The link to the next page of items
-	NextLink any
-	ShapeFamily any
+	NextLink          any
+	ShapeFamily       any
 	StorageManagement any
 	// The DbVersion items on this page
 	Value any
@@ -40,11 +40,11 @@ type OpenapiDbVersionAttrs struct {
 var OpenapiDbVersion = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_db_version",
 	Fields: ubx.FieldMap{
-		"DbSystemId": ubx.FieldSpec{WireName: "db_system_id"},
-		"DbSystemShape": ubx.FieldSpec{WireName: "db_system_shape"},
+		"DbSystemId":                       ubx.FieldSpec{WireName: "db_system_id"},
+		"DbSystemShape":                    ubx.FieldSpec{WireName: "db_system_shape"},
 		"IsDatabaseSoftwareImageSupported": ubx.FieldSpec{WireName: "is_database_software_image_supported"},
-		"IsUpgradeSupported": ubx.FieldSpec{WireName: "is_upgrade_supported"},
-		"ShapeFamily": ubx.FieldSpec{WireName: "shape_family"},
-		"StorageManagement": ubx.FieldSpec{WireName: "storage_management"},
+		"IsUpgradeSupported":               ubx.FieldSpec{WireName: "is_upgrade_supported"},
+		"ShapeFamily":                      ubx.FieldSpec{WireName: "shape_family"},
+		"StorageManagement":                ubx.FieldSpec{WireName: "storage_management"},
 	},
 }

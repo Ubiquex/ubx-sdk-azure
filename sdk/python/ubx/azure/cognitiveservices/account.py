@@ -562,8 +562,6 @@ _Account_SkuFields = {
 
 @dataclasses.dataclass
 class AccountConfig:
-    # Resource Etag.
-    etag: Any = None
     # Identity for the resource.
     identity: Any = None
     # The kind (type) of cognitive service account.
@@ -597,7 +595,6 @@ class AccountAttrs:
 Account = ubx.ResourceBinding(
     wire_type="azure_cognitiveservices_account",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",

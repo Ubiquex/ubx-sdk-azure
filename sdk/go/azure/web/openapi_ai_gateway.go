@@ -9,8 +9,8 @@ type OpenapiAiGateway_Properties struct {
 }
 
 var OpenapiAiGateway_PropertiesFields = ubx.FieldMap{
-		"AiGatewayId": ubx.FieldSpec{WireName: "ai_gateway_id"},
-	}
+	"AiGatewayId": ubx.FieldSpec{WireName: "ai_gateway_id"},
+}
 
 type OpenapiAiGatewayConfig struct {
 	// The properties of an AI gateway.
@@ -31,8 +31,8 @@ var OpenapiAiGateway = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAiGateway_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAiGateway_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

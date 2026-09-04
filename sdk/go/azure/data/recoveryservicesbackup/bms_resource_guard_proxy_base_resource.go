@@ -9,17 +9,17 @@ type BmsResourceGuardProxyBaseResource_Value_Properties_ResourceGuardOperationDe
 }
 
 type BmsResourceGuardProxyBaseResource_Value_Properties struct {
-	Description any
-	LastUpdatedTime any
+	Description                   any
+	LastUpdatedTime               any
 	ResourceGuardOperationDetails any
-	ResourceGuardResourceId any
+	ResourceGuardResourceId       any
 }
 
 type BmsResourceGuardProxyBaseResource_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsResourceGuardProxyBaseResourceConfig struct {
@@ -28,7 +28,7 @@ type BmsResourceGuardProxyBaseResourceConfig struct {
 
 type BmsResourceGuardProxyBaseResourceAttrs struct {
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

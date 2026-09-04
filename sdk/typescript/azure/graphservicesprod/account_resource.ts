@@ -27,18 +27,9 @@ const AccountResource_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const AccountResource_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface AccountResourceConfig {
   /** Property bag from billing account */
   properties: AccountResource_Properties | Computed<AccountResource_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: AccountResource_SystemData | Computed<AccountResource_SystemData>;
 }
 
 export interface AccountResourceAttrs {
@@ -55,11 +46,6 @@ export const AccountResource: ResourceBinding<AccountResourceConfig, AccountReso
       wireName: "properties",
       kind: "object",
       fields: AccountResource_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: AccountResource_SystemDataFields,
     },
   },
 };

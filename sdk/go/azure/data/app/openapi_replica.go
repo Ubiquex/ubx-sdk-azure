@@ -4,22 +4,22 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiReplica_Value_Properties_Containers struct {
-	ContainerId any
-	ExecEndpoint any
-	LogStreamEndpoint any
-	Name any
-	Ready any
-	RestartCount any
-	RunningState any
+	ContainerId         any
+	ExecEndpoint        any
+	LogStreamEndpoint   any
+	Name                any
+	Ready               any
+	RestartCount        any
+	RunningState        any
 	RunningStateDetails any
-	Started any
+	Started             any
 }
 
 type OpenapiReplica_Value_Properties struct {
-	Containers any
-	CreatedTime any
-	InitContainers any
-	RunningState any
+	Containers          any
+	CreatedTime         any
+	InitContainers      any
+	RunningState        any
 	RunningStateDetails any
 }
 
@@ -29,12 +29,12 @@ type OpenapiReplica_Value struct {
 
 type OpenapiReplicaConfig struct {
 	ContainerAppName any
-	RevisionName any
+	RevisionName     any
 }
 
 type OpenapiReplicaAttrs struct {
 	ContainerAppName any
-	RevisionName any
+	RevisionName     any
 	// Collection of resources.
 	Value any
 }
@@ -43,6 +43,6 @@ var OpenapiReplica = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_replica",
 	Fields: ubx.FieldMap{
 		"ContainerAppName": ubx.FieldSpec{WireName: "container_app_name"},
-		"RevisionName": ubx.FieldSpec{WireName: "revision_name"},
+		"RevisionName":     ubx.FieldSpec{WireName: "revision_name"},
 	},
 }

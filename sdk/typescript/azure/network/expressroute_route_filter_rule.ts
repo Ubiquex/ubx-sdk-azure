@@ -20,8 +20,6 @@ const ExpressrouteRouteFilterRule_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteRouteFilterRuleConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Resource location. */
   location?: string | Computed<string>;
   /** The name of the resource that is unique within a resource group. This name can be used to access the resource. */
@@ -44,7 +42,6 @@ export interface ExpressrouteRouteFilterRuleAttrs {
 export const ExpressrouteRouteFilterRule: ResourceBinding<ExpressrouteRouteFilterRuleConfig, ExpressrouteRouteFilterRuleAttrs> = {
   wireType: "azure_network_expressroute_route_filter_rule",
   fields: {
-    etag: "etag",
     location: "location",
     name: "name",
     properties: {

@@ -40,29 +40,29 @@ type OpenapiCertificate_Properties struct {
 }
 
 var OpenapiCertificate_Properties_CertificateKeyVaultPropertiesFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-	}
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+}
 
 var OpenapiCertificate_PropertiesFields = ubx.FieldMap{
-		"CertificateKeyVaultProperties": ubx.FieldSpec{
-			WireName: "certificate_key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiCertificate_Properties_CertificateKeyVaultPropertiesFields,
-		},
-		"DeploymentErrors": ubx.FieldSpec{WireName: "deployment_errors"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"IssueDate": ubx.FieldSpec{WireName: "issue_date"},
-		"Issuer": ubx.FieldSpec{WireName: "issuer"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicKeyHash": ubx.FieldSpec{WireName: "public_key_hash"},
-		"SubjectAlternativeNames": ubx.FieldSpec{WireName: "subject_alternative_names"},
-		"SubjectName": ubx.FieldSpec{WireName: "subject_name"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Valid": ubx.FieldSpec{WireName: "valid"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"CertificateKeyVaultProperties": ubx.FieldSpec{
+		WireName: "certificate_key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiCertificate_Properties_CertificateKeyVaultPropertiesFields,
+	},
+	"DeploymentErrors":        ubx.FieldSpec{WireName: "deployment_errors"},
+	"ExpirationDate":          ubx.FieldSpec{WireName: "expiration_date"},
+	"IssueDate":               ubx.FieldSpec{WireName: "issue_date"},
+	"Issuer":                  ubx.FieldSpec{WireName: "issuer"},
+	"Password":                ubx.FieldSpec{WireName: "password"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicKeyHash":           ubx.FieldSpec{WireName: "public_key_hash"},
+	"SubjectAlternativeNames": ubx.FieldSpec{WireName: "subject_alternative_names"},
+	"SubjectName":             ubx.FieldSpec{WireName: "subject_name"},
+	"Thumbprint":              ubx.FieldSpec{WireName: "thumbprint"},
+	"Valid":                   ubx.FieldSpec{WireName: "valid"},
+	"Value":                   ubx.FieldSpec{WireName: "value"},
+}
 
 type OpenapiCertificateConfig struct {
 	// Certificate resource specific properties
@@ -79,8 +79,8 @@ var OpenapiCertificate = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCertificate_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCertificate_PropertiesFields,
 		},
 	},
 }

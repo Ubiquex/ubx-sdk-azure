@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProduct_Properties_LastCharge struct {
 	Currency any
-	Value any
+	Value    any
 }
 
 type OpenapiProduct_Properties_Reseller struct {
 	Description any
-	ResellerId any
+	ResellerId  any
 }
 
 type OpenapiProduct_Properties struct {

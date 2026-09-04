@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiStaticSiteFunctionOverviewArmresource_Value_Properties struct {
 	FunctionName any
-	TriggerType any
+	TriggerType  any
 }
 
 type OpenapiStaticSiteFunctionOverviewArmresource_Value struct {
@@ -14,12 +14,12 @@ type OpenapiStaticSiteFunctionOverviewArmresource_Value struct {
 
 type OpenapiStaticSiteFunctionOverviewArmresourceConfig struct {
 	EnvironmentName any
-	Name any
+	Name            any
 }
 
 type OpenapiStaticSiteFunctionOverviewArmresourceAttrs struct {
 	EnvironmentName any
-	Name any
+	Name            any
 	// The link to the next page of items
 	NextLink any
 	// The StaticSiteFunctionOverviewARMResource items on this page
@@ -30,6 +30,6 @@ var OpenapiStaticSiteFunctionOverviewArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_function_overview_armresource",
 	Fields: ubx.FieldMap{
 		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 	},
 }

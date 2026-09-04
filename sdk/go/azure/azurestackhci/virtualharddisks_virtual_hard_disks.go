@@ -21,7 +21,7 @@ type VirtualharddisksVirtualHardDisks_Properties_Status struct {
 	// VirtualHardDisk provisioning error code
 	ErrorCode any
 	// Descriptive error message
-	ErrorMessage any
+	ErrorMessage       any
 	ProvisioningStatus any
 }
 
@@ -36,8 +36,8 @@ type VirtualharddisksVirtualHardDisks_Properties struct {
 	// Boolean for enabling dynamic sizing on the virtual hard disk
 	Dynamic any
 	// The hypervisor generation of the Virtual Machine [V1, V2]
-	HyperVgeneration any
-	LogicalSectorBytes any
+	HyperVgeneration    any
+	LogicalSectorBytes  any
 	PhysicalSectorBytes any
 	// Provisioning state of the virtual hard disk.
 	ProvisioningState any
@@ -46,41 +46,41 @@ type VirtualharddisksVirtualHardDisks_Properties struct {
 }
 
 var VirtualharddisksVirtualHardDisks_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualharddisksVirtualHardDisks_Properties_Status_ProvisioningStatusFields = ubx.FieldMap{
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"OperationId": ubx.FieldSpec{WireName: "operation_id"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var VirtualharddisksVirtualHardDisks_Properties_StatusFields = ubx.FieldMap{
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ProvisioningStatus": ubx.FieldSpec{
-			WireName: "provisioning_status",
-			Kind: "object",
-			Fields: VirtualharddisksVirtualHardDisks_Properties_Status_ProvisioningStatusFields,
-		},
-	}
+	"ErrorCode":    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
+	"ProvisioningStatus": ubx.FieldSpec{
+		WireName: "provisioning_status",
+		Kind:     "object",
+		Fields:   VirtualharddisksVirtualHardDisks_Properties_Status_ProvisioningStatusFields,
+	},
+}
 
 var VirtualharddisksVirtualHardDisks_PropertiesFields = ubx.FieldMap{
-		"BlockSizeBytes": ubx.FieldSpec{WireName: "block_size_bytes"},
-		"ContainerId": ubx.FieldSpec{WireName: "container_id"},
-		"DiskFileFormat": ubx.FieldSpec{WireName: "disk_file_format"},
-		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-		"Dynamic": ubx.FieldSpec{WireName: "dynamic"},
-		"HyperVgeneration": ubx.FieldSpec{WireName: "hyper_vgeneration"},
-		"LogicalSectorBytes": ubx.FieldSpec{WireName: "logical_sector_bytes"},
-		"PhysicalSectorBytes": ubx.FieldSpec{WireName: "physical_sector_bytes"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: VirtualharddisksVirtualHardDisks_Properties_StatusFields,
-		},
-	}
+	"BlockSizeBytes":      ubx.FieldSpec{WireName: "block_size_bytes"},
+	"ContainerId":         ubx.FieldSpec{WireName: "container_id"},
+	"DiskFileFormat":      ubx.FieldSpec{WireName: "disk_file_format"},
+	"DiskSizeGb":          ubx.FieldSpec{WireName: "disk_size_gb"},
+	"Dynamic":             ubx.FieldSpec{WireName: "dynamic"},
+	"HyperVgeneration":    ubx.FieldSpec{WireName: "hyper_vgeneration"},
+	"LogicalSectorBytes":  ubx.FieldSpec{WireName: "logical_sector_bytes"},
+	"PhysicalSectorBytes": ubx.FieldSpec{WireName: "physical_sector_bytes"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   VirtualharddisksVirtualHardDisks_Properties_StatusFields,
+	},
+}
 
 type VirtualharddisksVirtualHardDisksConfig struct {
 	// The complex type of the extended location.
@@ -101,13 +101,13 @@ var VirtualharddisksVirtualHardDisks = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: VirtualharddisksVirtualHardDisks_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   VirtualharddisksVirtualHardDisks_ExtendedLocationFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualharddisksVirtualHardDisks_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualharddisksVirtualHardDisks_PropertiesFields,
 		},
 	},
 }

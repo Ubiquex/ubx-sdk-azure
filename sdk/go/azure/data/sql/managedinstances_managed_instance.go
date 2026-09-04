@@ -4,24 +4,24 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstancesManagedInstance_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ManagedinstancesManagedInstance_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ManagedinstancesManagedInstance_Value_Properties_Administrators struct {
-	AdministratorType any
+	AdministratorType         any
 	AzureAdonlyAuthentication any
-	Login any
-	PrincipalType any
-	Sid any
-	TenantId any
+	Login                     any
+	PrincipalType             any
+	Sid                       any
+	TenantId                  any
 }
 
 type ManagedinstancesManagedInstance_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -30,85 +30,85 @@ type ManagedinstancesManagedInstance_Value_Properties_PrivateEndpointConnections
 
 type ManagedinstancesManagedInstance_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type ManagedinstancesManagedInstance_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ManagedinstancesManagedInstance_Value_Properties_PrivateEndpointConnections struct {
-	Id any
+	Id         any
 	Properties any
 }
 
 type ManagedinstancesManagedInstance_Value_Properties_ServicePrincipal struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type ManagedinstancesManagedInstance_Value_Properties struct {
-	AdministratorLogin any
-	AdministratorLoginPassword any
-	Administrators any
-	AuthenticationMetadata any
-	Collation any
-	CreateTime any
-	CurrentBackupStorageRedundancy any
-	DatabaseFormat any
-	DnsZone any
-	DnsZonePartner any
-	ExternalGovernanceStatus any
-	FullyQualifiedDomainName any
-	HybridSecondaryUsage any
-	HybridSecondaryUsageDetected any
-	InstancePoolId any
-	IsGeneralPurposeV2 any
-	KeyId any
-	LicenseType any
-	MaintenanceConfigurationId any
-	ManagedInstanceCreateMode any
-	MemorySizeInGb any
-	MinimalTlsVersion any
-	PricingModel any
-	PrimaryUserAssignedIdentityId any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	ProxyOverride any
-	PublicDataEndpointEnabled any
+	AdministratorLogin               any
+	AdministratorLoginPassword       any
+	Administrators                   any
+	AuthenticationMetadata           any
+	Collation                        any
+	CreateTime                       any
+	CurrentBackupStorageRedundancy   any
+	DatabaseFormat                   any
+	DnsZone                          any
+	DnsZonePartner                   any
+	ExternalGovernanceStatus         any
+	FullyQualifiedDomainName         any
+	HybridSecondaryUsage             any
+	HybridSecondaryUsageDetected     any
+	InstancePoolId                   any
+	IsGeneralPurposeV2               any
+	KeyId                            any
+	LicenseType                      any
+	MaintenanceConfigurationId       any
+	ManagedInstanceCreateMode        any
+	MemorySizeInGb                   any
+	MinimalTlsVersion                any
+	PricingModel                     any
+	PrimaryUserAssignedIdentityId    any
+	PrivateEndpointConnections       any
+	ProvisioningState                any
+	ProxyOverride                    any
+	PublicDataEndpointEnabled        any
 	RequestedBackupStorageRedundancy any
 	RequestedLogicalAvailabilityZone any
-	RestorePointInTime any
-	ServicePrincipal any
-	SourceManagedInstanceId any
-	State any
-	StorageIops any
-	StorageSizeInGb any
-	StorageThroughputMbps any
-	SubnetId any
-	TimezoneId any
-	VCores any
-	VirtualClusterId any
-	ZoneRedundant any
+	RestorePointInTime               any
+	ServicePrincipal                 any
+	SourceManagedInstanceId          any
+	State                            any
+	StorageIops                      any
+	StorageSizeInGb                  any
+	StorageThroughputMbps            any
+	SubnetId                         any
+	TimezoneId                       any
+	VCores                           any
+	VirtualClusterId                 any
+	ZoneRedundant                    any
 }
 
 type ManagedinstancesManagedInstance_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type ManagedinstancesManagedInstance_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type ManagedinstancesManagedInstanceConfig struct {
@@ -123,6 +123,5 @@ type ManagedinstancesManagedInstanceAttrs struct {
 
 var ManagedinstancesManagedInstance = ubx.DataSourceBinding{
 	WireType: "azure_sql_managedinstances_managed_instance",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

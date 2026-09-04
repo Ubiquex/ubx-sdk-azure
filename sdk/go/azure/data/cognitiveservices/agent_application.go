@@ -4,17 +4,17 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AgentApplication_Value_Properties_AgentIdentityBlueprint struct {
-	ClientId any
-	Kind any
-	PrincipalId any
+	ClientId          any
+	Kind              any
+	PrincipalId       any
 	ProvisioningState any
-	Subject any
-	TenantId any
-	Type any
+	Subject           any
+	TenantId          any
+	Type              any
 }
 
 type AgentApplication_Value_Properties_Agents struct {
-	AgentId any
+	AgentId   any
 	AgentName any
 }
 
@@ -23,27 +23,27 @@ type AgentApplication_Value_Properties_AuthorizationPolicy struct {
 }
 
 type AgentApplication_Value_Properties_TrafficRoutingPolicy_Rules struct {
-	DeploymentId any
-	Description any
-	RuleId any
+	DeploymentId      any
+	Description       any
+	RuleId            any
 	TrafficPercentage any
 }
 
 type AgentApplication_Value_Properties_TrafficRoutingPolicy struct {
 	Protocol any
-	Rules any
+	Rules    any
 }
 
 type AgentApplication_Value_Properties struct {
-	AgentIdentityBlueprint any
-	Agents any
-	AuthorizationPolicy any
-	BaseUrl any
+	AgentIdentityBlueprint  any
+	Agents                  any
+	AuthorizationPolicy     any
+	BaseUrl                 any
 	DefaultInstanceIdentity any
-	DisplayName any
-	IsEnabled any
-	ProvisioningState any
-	TrafficRoutingPolicy any
+	DisplayName             any
+	IsEnabled               any
+	ProvisioningState       any
+	TrafficRoutingPolicy    any
 }
 
 type AgentApplication_Value struct {
@@ -52,24 +52,24 @@ type AgentApplication_Value struct {
 
 type AgentApplicationConfig struct {
 	AccountName any
-	Count any
-	Names any
-	OrderBy any
-	OrderByAsc any
+	Count       any
+	Names       any
+	OrderBy     any
+	OrderByAsc  any
 	ProjectName any
-	SearchText any
+	SearchText  any
 }
 
 type AgentApplicationAttrs struct {
 	AccountName any
-	Count any
-	Names any
+	Count       any
+	Names       any
 	// The link to the next page of Agent Application objects. If null, there are no additional pages.
-	NextLink any
-	OrderBy any
-	OrderByAsc any
+	NextLink    any
+	OrderBy     any
+	OrderByAsc  any
 	ProjectName any
-	SearchText any
+	SearchText  any
 	// An array of objects of type Agent Application.
 	Value any
 }
@@ -78,11 +78,11 @@ var AgentApplication = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_agent_application",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Names": ubx.FieldSpec{WireName: "names"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"OrderByAsc": ubx.FieldSpec{WireName: "order_by_asc"},
+		"Count":       ubx.FieldSpec{WireName: "count"},
+		"Names":       ubx.FieldSpec{WireName: "names"},
+		"OrderBy":     ubx.FieldSpec{WireName: "order_by"},
+		"OrderByAsc":  ubx.FieldSpec{WireName: "order_by_asc"},
 		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
-		"SearchText": ubx.FieldSpec{WireName: "search_text"},
+		"SearchText":  ubx.FieldSpec{WireName: "search_text"},
 	},
 }

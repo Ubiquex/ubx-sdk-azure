@@ -6,11 +6,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiActionResponse_Properties struct {
 	// Logic App Callback URL for this specific workflow.
 	TriggerUri any
+	// The name of the logic app's workflow.
+	WorkflowId any
 }
 
 var OpenapiActionResponse_PropertiesFields = ubx.FieldMap{
-		"TriggerUri": ubx.FieldSpec{WireName: "trigger_uri"},
-	}
+	"TriggerUri": ubx.FieldSpec{WireName: "trigger_uri"},
+	"WorkflowId": ubx.FieldSpec{WireName: "workflow_id"},
+}
 
 type OpenapiActionResponseConfig struct {
 	// Action property bag.
@@ -29,8 +32,8 @@ var OpenapiActionResponse = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiActionResponse_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiActionResponse_PropertiesFields,
 		},
 	},
 }

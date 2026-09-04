@@ -4,7 +4,7 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupVaultResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -97,7 +97,7 @@ type BackupVaultResource_Properties_SecuritySettings struct {
 
 type BackupVaultResource_Properties_StorageSettings struct {
 	DatastoreType any
-	Type any
+	Type          any
 }
 
 type BackupVaultResource_Properties struct {
@@ -130,153 +130,153 @@ type BackupVaultResource_Properties struct {
 }
 
 var BackupVaultResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var BackupVaultResource_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: BackupVaultResource_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   BackupVaultResource_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var BackupVaultResource_Properties_CostManagementSettingsFields = ubx.FieldMap{
-		"GranularityLevel": ubx.FieldSpec{WireName: "granularity_level"},
-	}
+	"GranularityLevel": ubx.FieldSpec{WireName: "granularity_level"},
+}
 
 var BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettingsFields = ubx.FieldMap{
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 var BackupVaultResource_Properties_FeatureSettingsFields = ubx.FieldMap{
-		"CrossRegionRestoreSettings": ubx.FieldSpec{
-			WireName: "cross_region_restore_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettingsFields,
-		},
-		"CrossSubscriptionRestoreSettings": ubx.FieldSpec{
-			WireName: "cross_subscription_restore_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettingsFields,
-		},
-	}
+	"CrossRegionRestoreSettings": ubx.FieldSpec{
+		WireName: "cross_region_restore_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettingsFields,
+	},
+	"CrossSubscriptionRestoreSettings": ubx.FieldSpec{
+		WireName: "cross_subscription_restore_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettingsFields,
+	},
+}
 
 var BackupVaultResource_Properties_MonitoringSettings_AzureMonitorAlertSettingsFields = ubx.FieldMap{
-		"AlertsForAllJobFailures": ubx.FieldSpec{WireName: "alerts_for_all_job_failures"},
-	}
+	"AlertsForAllJobFailures": ubx.FieldSpec{WireName: "alerts_for_all_job_failures"},
+}
 
 var BackupVaultResource_Properties_MonitoringSettingsFields = ubx.FieldMap{
-		"AzureMonitorAlertSettings": ubx.FieldSpec{
-			WireName: "azure_monitor_alert_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_MonitoringSettings_AzureMonitorAlertSettingsFields,
-		},
-	}
+	"AzureMonitorAlertSettings": ubx.FieldSpec{
+		WireName: "azure_monitor_alert_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_MonitoringSettings_AzureMonitorAlertSettingsFields,
+	},
+}
 
 var BackupVaultResource_Properties_ResourceMoveDetailsFields = ubx.FieldMap{
-		"CompletionTimeUtc": ubx.FieldSpec{WireName: "completion_time_utc"},
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"SourceResourcePath": ubx.FieldSpec{WireName: "source_resource_path"},
-		"StartTimeUtc": ubx.FieldSpec{WireName: "start_time_utc"},
-		"TargetResourcePath": ubx.FieldSpec{WireName: "target_resource_path"},
-	}
+	"CompletionTimeUtc":  ubx.FieldSpec{WireName: "completion_time_utc"},
+	"OperationId":        ubx.FieldSpec{WireName: "operation_id"},
+	"SourceResourcePath": ubx.FieldSpec{WireName: "source_resource_path"},
+	"StartTimeUtc":       ubx.FieldSpec{WireName: "start_time_utc"},
+	"TargetResourcePath": ubx.FieldSpec{WireName: "target_resource_path"},
+}
 
 var BackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KekIdentityFields = ubx.FieldMap{
-		"IdentityId": ubx.FieldSpec{WireName: "identity_id"},
-		"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
-	}
+	"IdentityId":   ubx.FieldSpec{WireName: "identity_id"},
+	"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
+}
 
 var BackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KeyVaultPropertiesFields = ubx.FieldMap{
-		"KeyUri": ubx.FieldSpec{WireName: "key_uri"},
-	}
+	"KeyUri": ubx.FieldSpec{WireName: "key_uri"},
+}
 
 var BackupVaultResource_Properties_SecuritySettings_EncryptionSettingsFields = ubx.FieldMap{
-		"InfrastructureEncryption": ubx.FieldSpec{WireName: "infrastructure_encryption"},
-		"KekIdentity": ubx.FieldSpec{
-			WireName: "kek_identity",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KekIdentityFields,
-		},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KeyVaultPropertiesFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"InfrastructureEncryption": ubx.FieldSpec{WireName: "infrastructure_encryption"},
+	"KekIdentity": ubx.FieldSpec{
+		WireName: "kek_identity",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KekIdentityFields,
+	},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_SecuritySettings_EncryptionSettings_KeyVaultPropertiesFields,
+	},
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 var BackupVaultResource_Properties_SecuritySettings_SoftDeleteSettingsFields = ubx.FieldMap{
-		"RetentionDurationInDays": ubx.FieldSpec{WireName: "retention_duration_in_days"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"RetentionDurationInDays": ubx.FieldSpec{WireName: "retention_duration_in_days"},
+	"State":                   ubx.FieldSpec{WireName: "state"},
+}
 
 var BackupVaultResource_Properties_SecuritySettingsFields = ubx.FieldMap{
-		"EncryptionSettings": ubx.FieldSpec{
-			WireName: "encryption_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_SecuritySettings_EncryptionSettingsFields,
-		},
-		"ImmutabilitySettings": ubx.FieldSpec{
-			WireName: "immutability_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettingsFields,
-		},
-		"SoftDeleteSettings": ubx.FieldSpec{
-			WireName: "soft_delete_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_SecuritySettings_SoftDeleteSettingsFields,
-		},
-	}
+	"EncryptionSettings": ubx.FieldSpec{
+		WireName: "encryption_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_SecuritySettings_EncryptionSettingsFields,
+	},
+	"ImmutabilitySettings": ubx.FieldSpec{
+		WireName: "immutability_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_FeatureSettings_CrossRegionRestoreSettingsFields,
+	},
+	"SoftDeleteSettings": ubx.FieldSpec{
+		WireName: "soft_delete_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_SecuritySettings_SoftDeleteSettingsFields,
+	},
+}
 
 var BackupVaultResource_Properties_StorageSettingsFields = ubx.FieldMap{
-		"DatastoreType": ubx.FieldSpec{WireName: "datastore_type"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DatastoreType": ubx.FieldSpec{WireName: "datastore_type"},
+	"Type":          ubx.FieldSpec{WireName: "type"},
+}
 
 var BackupVaultResource_PropertiesFields = ubx.FieldMap{
-		"BcdrSecurityLevel": ubx.FieldSpec{WireName: "bcdr_security_level"},
-		"CostManagementSettings": ubx.FieldSpec{
-			WireName: "cost_management_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_CostManagementSettingsFields,
-		},
-		"FeatureSettings": ubx.FieldSpec{
-			WireName: "feature_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_FeatureSettingsFields,
-		},
-		"IsVaultProtectedByResourceGuard": ubx.FieldSpec{WireName: "is_vault_protected_by_resource_guard"},
-		"MonitoringSettings": ubx.FieldSpec{
-			WireName: "monitoring_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_MonitoringSettingsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ReplicatedRegions": ubx.FieldSpec{WireName: "replicated_regions"},
-		"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
-		"ResourceMoveDetails": ubx.FieldSpec{
-			WireName: "resource_move_details",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_ResourceMoveDetailsFields,
-		},
-		"ResourceMoveState": ubx.FieldSpec{WireName: "resource_move_state"},
-		"SecureScore": ubx.FieldSpec{WireName: "secure_score"},
-		"SecuritySettings": ubx.FieldSpec{
-			WireName: "security_settings",
-			Kind: "object",
-			Fields: BackupVaultResource_Properties_SecuritySettingsFields,
-		},
-		"StorageSettings": ubx.FieldSpec{
-			WireName: "storage_settings",
-			Kind: "list",
-			Fields: BackupVaultResource_Properties_StorageSettingsFields,
-		},
-	}
+	"BcdrSecurityLevel": ubx.FieldSpec{WireName: "bcdr_security_level"},
+	"CostManagementSettings": ubx.FieldSpec{
+		WireName: "cost_management_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_CostManagementSettingsFields,
+	},
+	"FeatureSettings": ubx.FieldSpec{
+		WireName: "feature_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_FeatureSettingsFields,
+	},
+	"IsVaultProtectedByResourceGuard": ubx.FieldSpec{WireName: "is_vault_protected_by_resource_guard"},
+	"MonitoringSettings": ubx.FieldSpec{
+		WireName: "monitoring_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_MonitoringSettingsFields,
+	},
+	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
+	"ReplicatedRegions":              ubx.FieldSpec{WireName: "replicated_regions"},
+	"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
+	"ResourceMoveDetails": ubx.FieldSpec{
+		WireName: "resource_move_details",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_ResourceMoveDetailsFields,
+	},
+	"ResourceMoveState": ubx.FieldSpec{WireName: "resource_move_state"},
+	"SecureScore":       ubx.FieldSpec{WireName: "secure_score"},
+	"SecuritySettings": ubx.FieldSpec{
+		WireName: "security_settings",
+		Kind:     "object",
+		Fields:   BackupVaultResource_Properties_SecuritySettingsFields,
+	},
+	"StorageSettings": ubx.FieldSpec{
+		WireName: "storage_settings",
+		Kind:     "list",
+		Fields:   BackupVaultResource_Properties_StorageSettingsFields,
+	},
+}
 
 type BackupVaultResourceConfig struct {
 	// Optional ETag.
@@ -302,13 +302,13 @@ var BackupVaultResource = ubx.ResourceBinding{
 		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: BackupVaultResource_IdentityFields,
+			Kind:     "object",
+			Fields:   BackupVaultResource_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BackupVaultResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BackupVaultResource_PropertiesFields,
 		},
 	},
 }

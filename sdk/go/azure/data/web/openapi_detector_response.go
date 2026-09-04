@@ -4,86 +4,86 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDetectorResponse_Value_Properties_DataProvidersMetadata_PropertyBag struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type OpenapiDetectorResponse_Value_Properties_DataProvidersMetadata struct {
-	PropertyBag any
+	PropertyBag  any
 	ProviderName any
 }
 
 type OpenapiDetectorResponse_Value_Properties_Dataset_RenderingProperties struct {
 	Description any
-	Title any
-	Type any
+	Title       any
+	Type        any
 }
 
 type OpenapiDetectorResponse_Value_Properties_Dataset_Table_Columns struct {
 	ColumnName any
 	ColumnType any
-	DataType any
+	DataType   any
 }
 
 type OpenapiDetectorResponse_Value_Properties_Dataset_Table struct {
-	Columns any
-	Rows any
+	Columns   any
+	Rows      any
 	TableName any
 }
 
 type OpenapiDetectorResponse_Value_Properties_Dataset struct {
 	RenderingProperties any
-	Table any
+	Table               any
 }
 
 type OpenapiDetectorResponse_Value_Properties_Metadata_SupportTopicList struct {
-	Id any
+	Id    any
 	PesId any
 }
 
 type OpenapiDetectorResponse_Value_Properties_Metadata struct {
-	AnalysisType any
-	Author any
-	Category any
-	Description any
-	Id any
-	Name any
-	Score any
+	AnalysisType     any
+	Author           any
+	Category         any
+	Description      any
+	Id               any
+	Name             any
+	Score            any
 	SupportTopicList any
-	Type any
+	Type             any
 }
 
 type OpenapiDetectorResponse_Value_Properties_Status struct {
-	Message any
+	Message  any
 	StatusId any
 }
 
 type OpenapiDetectorResponse_Value_Properties_SuggestedUtterances_Results_SampleUtterance struct {
 	Links any
-	Qid any
-	Text any
+	Qid   any
+	Text  any
 }
 
 type OpenapiDetectorResponse_Value_Properties_SuggestedUtterances_Results struct {
 	SampleUtterance any
-	Score any
+	Score           any
 }
 
 type OpenapiDetectorResponse_Value_Properties_SuggestedUtterances struct {
-	Query any
+	Query   any
 	Results any
 }
 
 type OpenapiDetectorResponse_Value_Properties struct {
 	DataProvidersMetadata any
-	Dataset any
-	Metadata any
-	Status any
-	SuggestedUtterances any
+	Dataset               any
+	Metadata              any
+	Status                any
+	SuggestedUtterances   any
 }
 
 type OpenapiDetectorResponse_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

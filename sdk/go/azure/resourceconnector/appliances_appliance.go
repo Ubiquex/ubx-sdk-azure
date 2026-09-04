@@ -33,27 +33,27 @@ type AppliancesAppliance_Properties struct {
 }
 
 var AppliancesAppliance_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var AppliancesAppliance_Properties_InfrastructureConfigFields = ubx.FieldMap{
-		"Provider": ubx.FieldSpec{WireName: "provider"},
-	}
+	"Provider": ubx.FieldSpec{WireName: "provider"},
+}
 
 var AppliancesAppliance_PropertiesFields = ubx.FieldMap{
-		"Distro": ubx.FieldSpec{WireName: "distro"},
-		"InfrastructureConfig": ubx.FieldSpec{
-			WireName: "infrastructure_config",
-			Kind: "object",
-			Fields: AppliancesAppliance_Properties_InfrastructureConfigFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicKey": ubx.FieldSpec{WireName: "public_key"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Distro": ubx.FieldSpec{WireName: "distro"},
+	"InfrastructureConfig": ubx.FieldSpec{
+		WireName: "infrastructure_config",
+		Kind:     "object",
+		Fields:   AppliancesAppliance_Properties_InfrastructureConfigFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicKey":         ubx.FieldSpec{WireName: "public_key"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"Version":           ubx.FieldSpec{WireName: "version"},
+}
 
 type AppliancesApplianceConfig struct {
 	// Identity for the resource.
@@ -74,13 +74,13 @@ var AppliancesAppliance = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: AppliancesAppliance_IdentityFields,
+			Kind:     "object",
+			Fields:   AppliancesAppliance_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AppliancesAppliance_PropertiesFields,
+			Kind:     "object",
+			Fields:   AppliancesAppliance_PropertiesFields,
 		},
 	},
 }

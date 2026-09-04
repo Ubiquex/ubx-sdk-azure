@@ -15,11 +15,11 @@ type OpenapiLogAnalyticsQueryPack_Properties struct {
 }
 
 var OpenapiLogAnalyticsQueryPack_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"QueryPackId": ubx.FieldSpec{WireName: "query_pack_id"},
-		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-		"TimeModified": ubx.FieldSpec{WireName: "time_modified"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"QueryPackId":       ubx.FieldSpec{WireName: "query_pack_id"},
+	"TimeCreated":       ubx.FieldSpec{WireName: "time_created"},
+	"TimeModified":      ubx.FieldSpec{WireName: "time_modified"},
+}
 
 type OpenapiLogAnalyticsQueryPackConfig struct {
 	// Properties that define a Log Analytics QueryPack resource.
@@ -36,8 +36,8 @@ var OpenapiLogAnalyticsQueryPack = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLogAnalyticsQueryPack_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLogAnalyticsQueryPack_PropertiesFields,
 		},
 	},
 }

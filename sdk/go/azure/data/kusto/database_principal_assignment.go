@@ -4,14 +4,14 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatabasePrincipalAssignment_Value_Properties struct {
-	AadObjectId any
-	PrincipalId any
-	PrincipalName any
-	PrincipalType any
+	AadObjectId       any
+	PrincipalId       any
+	PrincipalName     any
+	PrincipalType     any
 	ProvisioningState any
-	Role any
-	TenantId any
-	TenantName any
+	Role              any
+	TenantId          any
+	TenantName        any
 }
 
 type DatabasePrincipalAssignment_Value struct {
@@ -19,12 +19,12 @@ type DatabasePrincipalAssignment_Value struct {
 }
 
 type DatabasePrincipalAssignmentConfig struct {
-	ClusterName any
+	ClusterName  any
 	DatabaseName any
 }
 
 type DatabasePrincipalAssignmentAttrs struct {
-	ClusterName any
+	ClusterName  any
 	DatabaseName any
 	// Link to the next page of results.
 	NextLink any
@@ -35,7 +35,7 @@ type DatabasePrincipalAssignmentAttrs struct {
 var DatabasePrincipalAssignment = ubx.DataSourceBinding{
 	WireType: "azure_kusto_database_principal_assignment",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":  ubx.FieldSpec{WireName: "cluster_name"},
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 	},
 }

@@ -4,14 +4,14 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimauthorizationserversAuthorizationServerContract_Value_Properties struct {
-	AuthorizationEndpoint any
-	ClientId any
+	AuthorizationEndpoint      any
+	ClientId                   any
 	ClientRegistrationEndpoint any
-	ClientSecret any
-	DisplayName any
-	GrantTypes any
-	UseInApiDocumentation any
-	UseInTestConsole any
+	ClientSecret               any
+	DisplayName                any
+	GrantTypes                 any
+	UseInApiDocumentation      any
+	UseInTestConsole           any
 }
 
 type ApimauthorizationserversAuthorizationServerContract_Value struct {
@@ -32,6 +32,5 @@ type ApimauthorizationserversAuthorizationServerContractAttrs struct {
 
 var ApimauthorizationserversAuthorizationServerContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimauthorizationservers_authorization_server_contract",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

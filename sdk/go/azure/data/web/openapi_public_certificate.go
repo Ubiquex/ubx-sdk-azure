@@ -4,13 +4,13 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPublicCertificate_Value_Properties struct {
-	Blob any
+	Blob                      any
 	PublicCertificateLocation any
-	Thumbprint any
+	Thumbprint                any
 }
 
 type OpenapiPublicCertificate_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

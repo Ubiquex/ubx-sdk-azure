@@ -61,14 +61,8 @@ _Snapshot_PropertiesFields = {
 
 @dataclasses.dataclass
 class SnapshotConfig:
-    # The resource ID.
-    id: Any = None
-    # The name of the snapshot.
-    name: Any = None
     # All snapshot properties.
     properties: Any = None
-    # The type of the resource.
-    type: Any = None
 
 @dataclasses.dataclass
 class SnapshotAttrs:
@@ -84,13 +78,10 @@ class SnapshotAttrs:
 Snapshot = ubx.ResourceBinding(
     wire_type="azure_appconfiguration_snapshot",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_Snapshot_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

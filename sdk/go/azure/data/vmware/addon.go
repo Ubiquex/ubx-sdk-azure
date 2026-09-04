@@ -4,7 +4,7 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Addon_Value_Properties struct {
-	AddonType any
+	AddonType         any
 	ProvisioningState any
 }
 
@@ -18,7 +18,7 @@ type AddonConfig struct {
 
 type AddonAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The Addon items on this page
 	Value any

@@ -4,14 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicy_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,62 +20,62 @@ type FirewallpolicyFirewallPolicy_Value_Properties_BasePolicy struct {
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_DnsSettings struct {
-	EnableProxy any
+	EnableProxy                 any
 	RequireProxyForNetworkRules any
-	Servers any
+	Servers                     any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_ExplicitProxy struct {
 	EnableExplicitProxy any
-	EnablePacFile any
-	HttpPort any
-	HttpsPort any
-	PacFile any
-	PacFilePort any
+	EnablePacFile       any
+	HttpPort            any
+	HttpsPort           any
+	PacFile             any
+	PacFilePort         any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_Insights_LogAnalyticsResources_Workspaces struct {
-	Region any
+	Region      any
 	WorkspaceId any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_Insights_LogAnalyticsResources struct {
 	DefaultWorkspaceId any
-	Workspaces any
+	Workspaces         any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_Insights struct {
-	IsEnabled any
+	IsEnabled             any
 	LogAnalyticsResources any
-	RetentionDays any
+	RetentionDays         any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_IntrusionDetection_Configuration_BypassTrafficSettings struct {
-	Description any
+	Description          any
 	DestinationAddresses any
-	DestinationIpGroups any
-	DestinationPorts any
-	Name any
-	Protocol any
-	SourceAddresses any
-	SourceIpGroups any
+	DestinationIpGroups  any
+	DestinationPorts     any
+	Name                 any
+	Protocol             any
+	SourceAddresses      any
+	SourceIpGroups       any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_IntrusionDetection_Configuration_SignatureOverrides struct {
-	Id any
+	Id   any
 	Mode any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_IntrusionDetection_Configuration struct {
 	BypassTrafficSettings any
-	PrivateRanges any
-	SignatureOverrides any
+	PrivateRanges         any
+	SignatureOverrides    any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_IntrusionDetection struct {
 	Configuration any
-	Mode any
-	Profile any
+	Mode          any
+	Profile       any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_Sku struct {
@@ -84,7 +84,7 @@ type FirewallpolicyFirewallPolicy_Value_Properties_Sku struct {
 
 type FirewallpolicyFirewallPolicy_Value_Properties_Snat struct {
 	AutoLearnPrivateRanges any
-	PrivateRanges any
+	PrivateRanges          any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_Sql struct {
@@ -92,13 +92,13 @@ type FirewallpolicyFirewallPolicy_Value_Properties_Sql struct {
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_ThreatIntelWhitelist struct {
-	Fqdns any
+	Fqdns       any
 	IpAddresses any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_TransportSecurity_CertificateAuthority struct {
 	KeyVaultSecretId any
-	Name any
+	Name             any
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties_TransportSecurity struct {
@@ -106,29 +106,29 @@ type FirewallpolicyFirewallPolicy_Value_Properties_TransportSecurity struct {
 }
 
 type FirewallpolicyFirewallPolicy_Value_Properties struct {
-	AfcManaged any
-	BasePolicy any
-	ChildPolicies any
-	DnsSettings any
-	ExplicitProxy any
-	Firewalls any
-	Insights any
-	IntrusionDetection any
-	KubeSelectorGroups any
-	ProvisioningState any
+	AfcManaged           any
+	BasePolicy           any
+	ChildPolicies        any
+	DnsSettings          any
+	ExplicitProxy        any
+	Firewalls            any
+	Insights             any
+	IntrusionDetection   any
+	KubeSelectorGroups   any
+	ProvisioningState    any
 	RuleCollectionGroups any
-	Size any
-	Sku any
-	Snat any
-	Sql any
-	ThreatIntelMode any
+	Size                 any
+	Sku                  any
+	Snat                 any
+	Sql                  any
+	ThreatIntelMode      any
 	ThreatIntelWhitelist any
-	TransportSecurity any
+	TransportSecurity    any
 }
 
 type FirewallpolicyFirewallPolicy_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
@@ -144,6 +144,5 @@ type FirewallpolicyFirewallPolicyAttrs struct {
 
 var FirewallpolicyFirewallPolicy = ubx.DataSourceBinding{
 	WireType: "azure_network_firewallpolicy_firewall_policy",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,27 +4,27 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type LinksResourceLink_Value_Properties struct {
-	Notes any
+	Notes    any
 	SourceId any
 	TargetId any
 }
 
 type LinksResourceLink_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LinksResourceLinkConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type LinksResourceLinkAttrs struct {
 	ApiVersion any
 	// The URL to use for getting the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// An array of resource links.
 	Value any
@@ -33,7 +33,7 @@ type LinksResourceLinkAttrs struct {
 var LinksResourceLink = ubx.DataSourceBinding{
 	WireType: "azure_resources_links_resource_link",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAdvancedThreatProtectionSettingsModel_Value_Properties struct {
 	CreationTime any
-	State any
+	State        any
 }
 
 type OpenapiAdvancedThreatProtectionSettingsModel_Value struct {
@@ -18,7 +18,7 @@ type OpenapiAdvancedThreatProtectionSettingsModelConfig struct {
 
 type OpenapiAdvancedThreatProtectionSettingsModelAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The AdvancedThreatProtectionSettingsModel items on this page
 	Value any

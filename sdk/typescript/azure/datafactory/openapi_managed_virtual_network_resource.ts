@@ -14,8 +14,6 @@ const OpenapiManagedVirtualNetworkResource_PropertiesFields: FieldMap = {
 };
 
 export interface OpenapiManagedVirtualNetworkResourceConfig {
-  /** "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.") */
-  etag?: string | Computed<string>;
   /** A managed Virtual Network associated with the Azure Data Factory */
   properties: OpenapiManagedVirtualNetworkResource_Properties | Computed<OpenapiManagedVirtualNetworkResource_Properties>;
 }
@@ -30,7 +28,6 @@ export interface OpenapiManagedVirtualNetworkResourceAttrs {
 export const OpenapiManagedVirtualNetworkResource: ResourceBinding<OpenapiManagedVirtualNetworkResourceConfig, OpenapiManagedVirtualNetworkResourceAttrs> = {
   wireType: "azure_datafactory_openapi_managed_virtual_network_resource",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -4,10 +4,10 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiQueueServiceProperties_Value_Properties_Cors_CorsRules struct {
-	AllowedHeaders any
-	AllowedMethods any
-	AllowedOrigins any
-	ExposedHeaders any
+	AllowedHeaders  any
+	AllowedMethods  any
+	AllowedOrigins  any
+	ExposedHeaders  any
 	MaxAgeInSeconds any
 }
 

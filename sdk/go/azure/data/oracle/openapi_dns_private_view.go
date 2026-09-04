@@ -4,14 +4,14 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDnsPrivateView_Value_Properties struct {
-	DisplayName any
-	IsProtected any
-	LifecycleState any
-	Ocid any
+	DisplayName       any
+	IsProtected       any
+	LifecycleState    any
+	Ocid              any
 	ProvisioningState any
-	Self any
-	TimeCreated any
-	TimeUpdated any
+	Self              any
+	TimeCreated       any
+	TimeUpdated       any
 }
 
 type OpenapiDnsPrivateView_Value struct {
@@ -30,6 +30,5 @@ type OpenapiDnsPrivateViewAttrs struct {
 
 var OpenapiDnsPrivateView = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_dns_private_view",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

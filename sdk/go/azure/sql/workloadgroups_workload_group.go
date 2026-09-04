@@ -19,13 +19,13 @@ type WorkloadgroupsWorkloadGroup_Properties struct {
 }
 
 var WorkloadgroupsWorkloadGroup_PropertiesFields = ubx.FieldMap{
-		"Importance": ubx.FieldSpec{WireName: "importance"},
-		"MaxResourcePercent": ubx.FieldSpec{WireName: "max_resource_percent"},
-		"MaxResourcePercentPerRequest": ubx.FieldSpec{WireName: "max_resource_percent_per_request"},
-		"MinResourcePercent": ubx.FieldSpec{WireName: "min_resource_percent"},
-		"MinResourcePercentPerRequest": ubx.FieldSpec{WireName: "min_resource_percent_per_request"},
-		"QueryExecutionTimeout": ubx.FieldSpec{WireName: "query_execution_timeout"},
-	}
+	"Importance":                   ubx.FieldSpec{WireName: "importance"},
+	"MaxResourcePercent":           ubx.FieldSpec{WireName: "max_resource_percent"},
+	"MaxResourcePercentPerRequest": ubx.FieldSpec{WireName: "max_resource_percent_per_request"},
+	"MinResourcePercent":           ubx.FieldSpec{WireName: "min_resource_percent"},
+	"MinResourcePercentPerRequest": ubx.FieldSpec{WireName: "min_resource_percent_per_request"},
+	"QueryExecutionTimeout":        ubx.FieldSpec{WireName: "query_execution_timeout"},
+}
 
 type WorkloadgroupsWorkloadGroupConfig struct {
 	// Workload group definition. For more information look at sys.workload_management_workload_groups (DMV).
@@ -42,8 +42,8 @@ var WorkloadgroupsWorkloadGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WorkloadgroupsWorkloadGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   WorkloadgroupsWorkloadGroup_PropertiesFields,
 		},
 	},
 }

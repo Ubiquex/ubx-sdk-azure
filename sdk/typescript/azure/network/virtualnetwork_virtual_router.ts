@@ -47,8 +47,6 @@ const VirtualnetworkVirtualRouter_PropertiesFields: FieldMap = {
 };
 
 export interface VirtualnetworkVirtualRouterConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Virtual Router definition. */
   properties?: VirtualnetworkVirtualRouter_Properties | Computed<VirtualnetworkVirtualRouter_Properties>;
 }
@@ -63,7 +61,6 @@ export interface VirtualnetworkVirtualRouterAttrs {
 export const VirtualnetworkVirtualRouter: ResourceBinding<VirtualnetworkVirtualRouterConfig, VirtualnetworkVirtualRouterAttrs> = {
   wireType: "azure_network_virtualnetwork_virtual_router",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

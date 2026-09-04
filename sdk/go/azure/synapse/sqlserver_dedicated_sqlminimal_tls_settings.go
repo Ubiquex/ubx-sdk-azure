@@ -9,12 +9,10 @@ type SqlserverDedicatedSqlminimalTlsSettings_Properties struct {
 }
 
 var SqlserverDedicatedSqlminimalTlsSettings_PropertiesFields = ubx.FieldMap{
-		"MinimalTlsVersion": ubx.FieldSpec{WireName: "minimal_tls_version"},
-	}
+	"MinimalTlsVersion": ubx.FieldSpec{WireName: "minimal_tls_version"},
+}
 
 type SqlserverDedicatedSqlminimalTlsSettingsConfig struct {
-	// Resource location.
-	Location any
 	// Properties of a dedicated sql minimal tls settings.
 	Properties any
 }
@@ -29,11 +27,10 @@ type SqlserverDedicatedSqlminimalTlsSettingsAttrs struct {
 var SqlserverDedicatedSqlminimalTlsSettings = ubx.ResourceBinding{
 	WireType: "azure_synapse_sqlserver_dedicated_sqlminimal_tls_settings",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlserverDedicatedSqlminimalTlsSettings_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlserverDedicatedSqlminimalTlsSettings_PropertiesFields,
 		},
 	},
 }

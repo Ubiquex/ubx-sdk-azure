@@ -3,6 +3,11 @@ package apimanagement
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
+type ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateEndpoint struct {
+	// The ARM identifier for Private Endpoint
+	Id any
+}
+
 type ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConnectionState struct {
 	// A message indicating if changes on the service provider require any updates on the consumer.
 	ActionsRequired any
@@ -13,23 +18,37 @@ type ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConn
 }
 
 type ApimprivatelinkPrivateEndpointConnection2_Properties struct {
+	// The Private Endpoint resource.
+	PrivateEndpoint any
 	// A collection of information about the state of the connection between service consumer and provider.
 	PrivateLinkServiceConnectionState any
+	// The current provisioning state.
+	ProvisioningState any
+}
+
+var ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateEndpointFields = ubx.FieldMap{
+	"Id": ubx.FieldSpec{WireName: "id"},
 }
 
 var ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var ApimprivatelinkPrivateEndpointConnection2_PropertiesFields = ubx.FieldMap{
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ApimprivatelinkPrivateEndpointConnection2_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ApimprivatelinkPrivateEndpointConnection2Config struct {
 	// Private Endpoint Connection Resource Id.
@@ -51,8 +70,8 @@ var ApimprivatelinkPrivateEndpointConnection2 = ubx.ResourceBinding{
 		"Id": ubx.FieldSpec{WireName: "id"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimprivatelinkPrivateEndpointConnection2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimprivatelinkPrivateEndpointConnection2_PropertiesFields,
 		},
 	},
 }

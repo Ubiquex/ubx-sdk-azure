@@ -63,20 +63,9 @@ const HealthcareApisIotConnector_PropertiesFields: FieldMap = {
   provisioningState: "provisioning_state",
 };
 
-const HealthcareApisIotConnector_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface HealthcareApisIotConnectorConfig {
   /** IoT Connector properties. */
   properties?: HealthcareApisIotConnector_Properties | Computed<HealthcareApisIotConnector_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: HealthcareApisIotConnector_SystemData | Computed<HealthcareApisIotConnector_SystemData>;
 }
 
 export interface HealthcareApisIotConnectorAttrs {
@@ -93,11 +82,6 @@ export const HealthcareApisIotConnector: ResourceBinding<HealthcareApisIotConnec
       wireName: "properties",
       kind: "object",
       fields: HealthcareApisIotConnector_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: HealthcareApisIotConnector_SystemDataFields,
     },
   },
 };

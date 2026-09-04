@@ -4,9 +4,9 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressions struct {
-	Key any
+	Key      any
 	Operator any
-	Values any
+	Values   any
 }
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector struct {
@@ -26,37 +26,35 @@ type FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties struct {
 }
 
 var FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressionsFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Operator": ubx.FieldSpec{WireName: "operator"},
-		"Values": ubx.FieldSpec{WireName: "values"},
-	}
+	"Key":      ubx.FieldSpec{WireName: "key"},
+	"Operator": ubx.FieldSpec{WireName: "operator"},
+	"Values":   ubx.FieldSpec{WireName: "values"},
+}
 
 var FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields = ubx.FieldMap{
-		"MatchExpressions": ubx.FieldSpec{
-			WireName: "match_expressions",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressionsFields,
-		},
-		"MatchLabels": ubx.FieldSpec{WireName: "match_labels"},
-	}
+	"MatchExpressions": ubx.FieldSpec{
+		WireName: "match_expressions",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressionsFields,
+	},
+	"MatchLabels": ubx.FieldSpec{WireName: "match_labels"},
+}
 
 var FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields = ubx.FieldMap{
-		"NamespaceSelector": ubx.FieldSpec{
-			WireName: "namespace_selector",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields,
-		},
-		"PodSelector": ubx.FieldSpec{
-			WireName: "pod_selector",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"NamespaceSelector": ubx.FieldSpec{
+		WireName: "namespace_selector",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields,
+	},
+	"PodSelector": ubx.FieldSpec{
+		WireName: "pod_selector",
+		Kind:     "object",
+		Fields:   FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroupConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of the Kubernetes Selector Group.
 	Properties any
 }
@@ -71,11 +69,10 @@ type FirewallpolicyFirewallPolicyKubeSelectorGroupAttrs struct {
 var FirewallpolicyFirewallPolicyKubeSelectorGroup = ubx.ResourceBinding{
 	WireType: "azure_network_firewallpolicy_firewall_policy_kube_selector_group",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields,
 		},
 	},
 }

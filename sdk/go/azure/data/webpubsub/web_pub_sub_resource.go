@@ -4,30 +4,30 @@ package webpubsub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WebPubSubResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type WebPubSubResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type WebPubSubResource_Value_Properties_LiveTraceConfiguration_Categories struct {
 	Enabled any
-	Name any
+	Name    any
 }
 
 type WebPubSubResource_Value_Properties_LiveTraceConfiguration struct {
 	Categories any
-	Enabled any
+	Enabled    any
 }
 
 type WebPubSubResource_Value_Properties_NetworkAcls_IpRules struct {
 	Action any
-	Value any
+	Value  any
 }
 
 type WebPubSubResource_Value_Properties_NetworkAcls_PrivateEndpoints struct {
@@ -36,14 +36,14 @@ type WebPubSubResource_Value_Properties_NetworkAcls_PrivateEndpoints struct {
 
 type WebPubSubResource_Value_Properties_NetworkAcls_PublicNetwork struct {
 	Allow any
-	Deny any
+	Deny  any
 }
 
 type WebPubSubResource_Value_Properties_NetworkAcls struct {
-	DefaultAction any
-	IpRules any
+	DefaultAction    any
+	IpRules          any
 	PrivateEndpoints any
-	PublicNetwork any
+	PublicNetwork    any
 }
 
 type WebPubSubResource_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -52,15 +52,15 @@ type WebPubSubResource_Value_Properties_PrivateEndpointConnections_Properties_Pr
 
 type WebPubSubResource_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type WebPubSubResource_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type WebPubSubResource_Value_Properties_PrivateEndpointConnections struct {
@@ -72,11 +72,11 @@ type WebPubSubResource_Value_Properties_ResourceLogConfiguration struct {
 }
 
 type WebPubSubResource_Value_Properties_SharedPrivateLinkResources_Properties struct {
-	GroupId any
+	GroupId               any
 	PrivateLinkResourceId any
-	ProvisioningState any
-	RequestMessage any
-	Status any
+	ProvisioningState     any
+	RequestMessage        any
+	Status                any
 }
 
 type WebPubSubResource_Value_Properties_SharedPrivateLinkResources struct {
@@ -92,40 +92,40 @@ type WebPubSubResource_Value_Properties_Tls struct {
 }
 
 type WebPubSubResource_Value_Properties struct {
-	DisableAadAuth any
-	DisableLocalAuth any
-	ExternalIp any
-	HostName any
-	HostNamePrefix any
-	LiveTraceConfiguration any
-	NetworkAcls any
+	DisableAadAuth             any
+	DisableLocalAuth           any
+	ExternalIp                 any
+	HostName                   any
+	HostNamePrefix             any
+	LiveTraceConfiguration     any
+	NetworkAcls                any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	PublicPort any
-	RegionEndpointEnabled any
-	ResourceLogConfiguration any
-	ResourceStopped any
-	ServerPort any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	PublicPort                 any
+	RegionEndpointEnabled      any
+	ResourceLogConfiguration   any
+	ResourceStopped            any
+	ServerPort                 any
 	SharedPrivateLinkResources any
-	SocketIo any
-	Tls any
-	Version any
+	SocketIo                   any
+	Tls                        any
+	Version                    any
 }
 
 type WebPubSubResource_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type WebPubSubResource_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type WebPubSubResourceConfig struct {
@@ -140,6 +140,5 @@ type WebPubSubResourceAttrs struct {
 
 var WebPubSubResource = ubx.DataSourceBinding{
 	WireType: "azure_webpubsub_web_pub_sub_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

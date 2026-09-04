@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupStatusConfig struct {
 	AccountName any
-	PoolName any
-	VolumeName any
+	PoolName    any
+	VolumeName  any
 }
 
 type BackupStatusAttrs struct {
@@ -21,7 +21,7 @@ type BackupStatusAttrs struct {
 	LastTransferType any
 	// The status of the replication
 	MirrorState any
-	PoolName any
+	PoolName    any
 	// Status of the volume backup relationship
 	RelationshipStatus any
 	// Displays the total bytes transferred
@@ -30,14 +30,14 @@ type BackupStatusAttrs struct {
 	TransferProgressBytes any
 	// Reason for the unhealthy backup relationship
 	UnhealthyReason any
-	VolumeName any
+	VolumeName      any
 }
 
 var BackupStatus = ubx.DataSourceBinding{
 	WireType: "azure_netapp_backup_status",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
+		"VolumeName":  ubx.FieldSpec{WireName: "volume_name"},
 	},
 }

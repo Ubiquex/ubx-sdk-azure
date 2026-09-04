@@ -5,16 +5,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_Resource struct {
 	Collection any
-	Db any
+	Db         any
 }
 
 type DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges struct {
-	Actions any
+	Actions  any
 	Resource any
 }
 
 type DbOpenapiMongoRoleDefinitionGetResults_Properties_Roles struct {
-	Db any
+	Db   any
 	Role any
 }
 
@@ -32,39 +32,39 @@ type DbOpenapiMongoRoleDefinitionGetResults_Properties struct {
 }
 
 var DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_ResourceFields = ubx.FieldMap{
-		"Collection": ubx.FieldSpec{WireName: "collection"},
-		"Db": ubx.FieldSpec{WireName: "db"},
-	}
+	"Collection": ubx.FieldSpec{WireName: "collection"},
+	"Db":         ubx.FieldSpec{WireName: "db"},
+}
 
 var DbOpenapiMongoRoleDefinitionGetResults_Properties_PrivilegesFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{WireName: "actions"},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_ResourceFields,
-		},
-	}
+	"Actions": ubx.FieldSpec{WireName: "actions"},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiMongoRoleDefinitionGetResults_Properties_Privileges_ResourceFields,
+	},
+}
 
 var DbOpenapiMongoRoleDefinitionGetResults_Properties_RolesFields = ubx.FieldMap{
-		"Db": ubx.FieldSpec{WireName: "db"},
-		"Role": ubx.FieldSpec{WireName: "role"},
-	}
+	"Db":   ubx.FieldSpec{WireName: "db"},
+	"Role": ubx.FieldSpec{WireName: "role"},
+}
 
 var DbOpenapiMongoRoleDefinitionGetResults_PropertiesFields = ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"Privileges": ubx.FieldSpec{
-			WireName: "privileges",
-			Kind: "list",
-			Fields: DbOpenapiMongoRoleDefinitionGetResults_Properties_PrivilegesFields,
-		},
-		"RoleName": ubx.FieldSpec{WireName: "role_name"},
-		"Roles": ubx.FieldSpec{
-			WireName: "roles",
-			Kind: "list",
-			Fields: DbOpenapiMongoRoleDefinitionGetResults_Properties_RolesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+	"Privileges": ubx.FieldSpec{
+		WireName: "privileges",
+		Kind:     "list",
+		Fields:   DbOpenapiMongoRoleDefinitionGetResults_Properties_PrivilegesFields,
+	},
+	"RoleName": ubx.FieldSpec{WireName: "role_name"},
+	"Roles": ubx.FieldSpec{
+		WireName: "roles",
+		Kind:     "list",
+		Fields:   DbOpenapiMongoRoleDefinitionGetResults_Properties_RolesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 type DbOpenapiMongoRoleDefinitionGetResultsConfig struct {
 	// Azure Cosmos DB Mongo Role Definition resource object.
@@ -81,8 +81,8 @@ var DbOpenapiMongoRoleDefinitionGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiMongoRoleDefinitionGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiMongoRoleDefinitionGetResults_PropertiesFields,
 		},
 	},
 }

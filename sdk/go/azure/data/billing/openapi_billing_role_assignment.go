@@ -4,59 +4,59 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingRoleAssignment_Value_Properties struct {
-	BillingAccountDisplayName any
-	BillingAccountId any
-	BillingProfileDisplayName any
-	BillingProfileId any
-	BillingRequestId any
-	CreatedByPrincipalId any
-	CreatedByPrincipalPuid any
-	CreatedByPrincipalTenantId any
-	CreatedByUserEmailAddress any
-	CreatedOn any
-	CustomerDisplayName any
-	CustomerId any
-	InvoiceSectionDisplayName any
-	InvoiceSectionId any
-	ModifiedByPrincipalId any
-	ModifiedByPrincipalPuid any
+	BillingAccountDisplayName   any
+	BillingAccountId            any
+	BillingProfileDisplayName   any
+	BillingProfileId            any
+	BillingRequestId            any
+	CreatedByPrincipalId        any
+	CreatedByPrincipalPuid      any
+	CreatedByPrincipalTenantId  any
+	CreatedByUserEmailAddress   any
+	CreatedOn                   any
+	CustomerDisplayName         any
+	CustomerId                  any
+	InvoiceSectionDisplayName   any
+	InvoiceSectionId            any
+	ModifiedByPrincipalId       any
+	ModifiedByPrincipalPuid     any
 	ModifiedByPrincipalTenantId any
-	ModifiedByUserEmailAddress any
-	ModifiedOn any
-	PrincipalDisplayName any
-	PrincipalId any
-	PrincipalPuid any
-	PrincipalTenantId any
-	PrincipalTenantName any
-	PrincipalType any
-	ProvisioningState any
-	RoleDefinitionId any
-	Scope any
-	UserAuthenticationType any
-	UserEmailAddress any
+	ModifiedByUserEmailAddress  any
+	ModifiedOn                  any
+	PrincipalDisplayName        any
+	PrincipalId                 any
+	PrincipalPuid               any
+	PrincipalTenantId           any
+	PrincipalTenantName         any
+	PrincipalType               any
+	ProvisioningState           any
+	RoleDefinitionId            any
+	Scope                       any
+	UserAuthenticationType      any
+	UserEmailAddress            any
 }
 
 type OpenapiBillingRoleAssignment_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiBillingRoleAssignmentConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	Filter any
-	Skip any
-	Top any
+	Filter             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiBillingRoleAssignmentAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	Filter any
+	Filter             any
 	// The link to the next page of items
 	NextLink any
-	Skip any
-	Top any
+	Skip     any
+	Top      any
 	// The BillingRoleAssignment items on this page
 	Value any
 }
@@ -66,8 +66,8 @@ var OpenapiBillingRoleAssignment = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

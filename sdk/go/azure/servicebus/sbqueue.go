@@ -66,46 +66,44 @@ type Sbqueue_Properties struct {
 }
 
 var Sbqueue_Properties_CountDetailsFields = ubx.FieldMap{
-		"ActiveMessageCount": ubx.FieldSpec{WireName: "active_message_count"},
-		"DeadLetterMessageCount": ubx.FieldSpec{WireName: "dead_letter_message_count"},
-		"ScheduledMessageCount": ubx.FieldSpec{WireName: "scheduled_message_count"},
-		"TransferDeadLetterMessageCount": ubx.FieldSpec{WireName: "transfer_dead_letter_message_count"},
-		"TransferMessageCount": ubx.FieldSpec{WireName: "transfer_message_count"},
-	}
+	"ActiveMessageCount":             ubx.FieldSpec{WireName: "active_message_count"},
+	"DeadLetterMessageCount":         ubx.FieldSpec{WireName: "dead_letter_message_count"},
+	"ScheduledMessageCount":          ubx.FieldSpec{WireName: "scheduled_message_count"},
+	"TransferDeadLetterMessageCount": ubx.FieldSpec{WireName: "transfer_dead_letter_message_count"},
+	"TransferMessageCount":           ubx.FieldSpec{WireName: "transfer_message_count"},
+}
 
 var Sbqueue_PropertiesFields = ubx.FieldMap{
-		"AccessedAt": ubx.FieldSpec{WireName: "accessed_at"},
-		"AutoDeleteOnIdle": ubx.FieldSpec{WireName: "auto_delete_on_idle"},
-		"CountDetails": ubx.FieldSpec{
-			WireName: "count_details",
-			Kind: "object",
-			Fields: Sbqueue_Properties_CountDetailsFields,
-		},
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"DeadLetteringOnMessageExpiration": ubx.FieldSpec{WireName: "dead_lettering_on_message_expiration"},
-		"DefaultMessageTimeToLive": ubx.FieldSpec{WireName: "default_message_time_to_live"},
-		"DuplicateDetectionHistoryTimeWindow": ubx.FieldSpec{WireName: "duplicate_detection_history_time_window"},
-		"EnableBatchedOperations": ubx.FieldSpec{WireName: "enable_batched_operations"},
-		"EnableExpress": ubx.FieldSpec{WireName: "enable_express"},
-		"EnablePartitioning": ubx.FieldSpec{WireName: "enable_partitioning"},
-		"ForwardDeadLetteredMessagesTo": ubx.FieldSpec{WireName: "forward_dead_lettered_messages_to"},
-		"ForwardTo": ubx.FieldSpec{WireName: "forward_to"},
-		"LockDuration": ubx.FieldSpec{WireName: "lock_duration"},
-		"MaxDeliveryCount": ubx.FieldSpec{WireName: "max_delivery_count"},
-		"MaxMessageSizeInKilobytes": ubx.FieldSpec{WireName: "max_message_size_in_kilobytes"},
-		"MaxSizeInMegabytes": ubx.FieldSpec{WireName: "max_size_in_megabytes"},
-		"MessageCount": ubx.FieldSpec{WireName: "message_count"},
-		"RequiresDuplicateDetection": ubx.FieldSpec{WireName: "requires_duplicate_detection"},
-		"RequiresSession": ubx.FieldSpec{WireName: "requires_session"},
-		"SizeInBytes": ubx.FieldSpec{WireName: "size_in_bytes"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
-	}
+	"AccessedAt":       ubx.FieldSpec{WireName: "accessed_at"},
+	"AutoDeleteOnIdle": ubx.FieldSpec{WireName: "auto_delete_on_idle"},
+	"CountDetails": ubx.FieldSpec{
+		WireName: "count_details",
+		Kind:     "object",
+		Fields:   Sbqueue_Properties_CountDetailsFields,
+	},
+	"CreatedAt":                           ubx.FieldSpec{WireName: "created_at"},
+	"DeadLetteringOnMessageExpiration":    ubx.FieldSpec{WireName: "dead_lettering_on_message_expiration"},
+	"DefaultMessageTimeToLive":            ubx.FieldSpec{WireName: "default_message_time_to_live"},
+	"DuplicateDetectionHistoryTimeWindow": ubx.FieldSpec{WireName: "duplicate_detection_history_time_window"},
+	"EnableBatchedOperations":             ubx.FieldSpec{WireName: "enable_batched_operations"},
+	"EnableExpress":                       ubx.FieldSpec{WireName: "enable_express"},
+	"EnablePartitioning":                  ubx.FieldSpec{WireName: "enable_partitioning"},
+	"ForwardDeadLetteredMessagesTo":       ubx.FieldSpec{WireName: "forward_dead_lettered_messages_to"},
+	"ForwardTo":                           ubx.FieldSpec{WireName: "forward_to"},
+	"LockDuration":                        ubx.FieldSpec{WireName: "lock_duration"},
+	"MaxDeliveryCount":                    ubx.FieldSpec{WireName: "max_delivery_count"},
+	"MaxMessageSizeInKilobytes":           ubx.FieldSpec{WireName: "max_message_size_in_kilobytes"},
+	"MaxSizeInMegabytes":                  ubx.FieldSpec{WireName: "max_size_in_megabytes"},
+	"MessageCount":                        ubx.FieldSpec{WireName: "message_count"},
+	"RequiresDuplicateDetection":          ubx.FieldSpec{WireName: "requires_duplicate_detection"},
+	"RequiresSession":                     ubx.FieldSpec{WireName: "requires_session"},
+	"SizeInBytes":                         ubx.FieldSpec{WireName: "size_in_bytes"},
+	"Status":                              ubx.FieldSpec{WireName: "status"},
+	"UpdatedAt":                           ubx.FieldSpec{WireName: "updated_at"},
+	"UserMetadata":                        ubx.FieldSpec{WireName: "user_metadata"},
+}
 
 type SbqueueConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	// The Queue Properties definition.
 	Properties any
 }
@@ -120,11 +118,10 @@ type SbqueueAttrs struct {
 var Sbqueue = ubx.ResourceBinding{
 	WireType: "azure_servicebus_sbqueue",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Sbqueue_PropertiesFields,
+			Kind:     "object",
+			Fields:   Sbqueue_PropertiesFields,
 		},
 	},
 }

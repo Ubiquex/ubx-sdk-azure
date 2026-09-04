@@ -4,15 +4,11 @@ package proximity
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PlacementGroup_Properties_AvailabilitySets_ColocationStatus struct {
-	// The machine-readable status code for the colocation status of the availability set within the proximity placement group. (AI-inferred)
-	Code any
+	Code          any
 	DisplayStatus any
-	// The severity level of the colocation status, indicating whether the message is informational (Info), a warning (Warning), or an error (Error). (AI-inferred)
-	Level any
-	// A human-readable message providing details about the colocation status of the availability set. (AI-inferred)
-	Message any
-	// The time (in UTC) when the colocation status was last observed, typically in ISO 8601 format. (AI-inferred)
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type PlacementGroup_Properties_AvailabilitySets struct {
@@ -40,53 +36,53 @@ type PlacementGroup_Properties struct {
 }
 
 var PlacementGroup_Properties_AvailabilitySets_ColocationStatusFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var PlacementGroup_Properties_AvailabilitySetsFields = ubx.FieldMap{
-		"ColocationStatus": ubx.FieldSpec{
-			WireName: "colocation_status",
-			Kind: "object",
-			Fields: PlacementGroup_Properties_AvailabilitySets_ColocationStatusFields,
-		},
-	}
+	"ColocationStatus": ubx.FieldSpec{
+		WireName: "colocation_status",
+		Kind:     "object",
+		Fields:   PlacementGroup_Properties_AvailabilitySets_ColocationStatusFields,
+	},
+}
 
 var PlacementGroup_Properties_IntentFields = ubx.FieldMap{
-		"VmSizes": ubx.FieldSpec{WireName: "vm_sizes"},
-	}
+	"VmSizes": ubx.FieldSpec{WireName: "vm_sizes"},
+}
 
 var PlacementGroup_PropertiesFields = ubx.FieldMap{
-		"AvailabilitySets": ubx.FieldSpec{
-			WireName: "availability_sets",
-			Kind: "list",
-			Fields: PlacementGroup_Properties_AvailabilitySetsFields,
-		},
-		"ColocationStatus": ubx.FieldSpec{
-			WireName: "colocation_status",
-			Kind: "object",
-			Fields: PlacementGroup_Properties_AvailabilitySets_ColocationStatusFields,
-		},
-		"Intent": ubx.FieldSpec{
-			WireName: "intent",
-			Kind: "object",
-			Fields: PlacementGroup_Properties_IntentFields,
-		},
-		"ProximityPlacementGroupType": ubx.FieldSpec{WireName: "proximity_placement_group_type"},
-		"VirtualMachineScaleSets": ubx.FieldSpec{
-			WireName: "virtual_machine_scale_sets",
-			Kind: "list",
-			Fields: PlacementGroup_Properties_AvailabilitySetsFields,
-		},
-		"VirtualMachines": ubx.FieldSpec{
-			WireName: "virtual_machines",
-			Kind: "list",
-			Fields: PlacementGroup_Properties_AvailabilitySetsFields,
-		},
-	}
+	"AvailabilitySets": ubx.FieldSpec{
+		WireName: "availability_sets",
+		Kind:     "list",
+		Fields:   PlacementGroup_Properties_AvailabilitySetsFields,
+	},
+	"ColocationStatus": ubx.FieldSpec{
+		WireName: "colocation_status",
+		Kind:     "object",
+		Fields:   PlacementGroup_Properties_AvailabilitySets_ColocationStatusFields,
+	},
+	"Intent": ubx.FieldSpec{
+		WireName: "intent",
+		Kind:     "object",
+		Fields:   PlacementGroup_Properties_IntentFields,
+	},
+	"ProximityPlacementGroupType": ubx.FieldSpec{WireName: "proximity_placement_group_type"},
+	"VirtualMachineScaleSets": ubx.FieldSpec{
+		WireName: "virtual_machine_scale_sets",
+		Kind:     "list",
+		Fields:   PlacementGroup_Properties_AvailabilitySetsFields,
+	},
+	"VirtualMachines": ubx.FieldSpec{
+		WireName: "virtual_machines",
+		Kind:     "list",
+		Fields:   PlacementGroup_Properties_AvailabilitySetsFields,
+	},
+}
 
 type PlacementGroupConfig struct {
 	// Describes the properties of a Proximity Placement Group.
@@ -107,8 +103,8 @@ var PlacementGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PlacementGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   PlacementGroup_PropertiesFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

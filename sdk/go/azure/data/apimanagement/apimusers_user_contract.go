@@ -4,18 +4,18 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimusersUserContract_Value_Properties_Groups struct {
-	BuiltIn any
+	BuiltIn     any
 	Description any
 	DisplayName any
-	ExternalId any
-	Type any
+	ExternalId  any
+	Type        any
 }
 
 type ApimusersUserContract_Value_Properties struct {
-	Email any
-	FirstName any
-	Groups any
-	LastName any
+	Email            any
+	FirstName        any
+	Groups           any
+	LastName         any
 	RegistrationDate any
 }
 
@@ -29,7 +29,7 @@ type ApimusersUserContractConfig struct {
 
 type ApimusersUserContractAttrs struct {
 	// Total record count number across all pages.
-	Count any
+	Count        any
 	ExpandGroups any
 	// Next page link if any.
 	NextLink any

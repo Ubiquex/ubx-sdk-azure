@@ -4,15 +4,15 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSiteContainer_Properties_EnvironmentVariables struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiSiteContainer_Properties_VolumeMounts struct {
 	ContainerMountPath any
-	Data any
-	ReadOnly any
-	VolumeSubPath any
+	Data               any
+	ReadOnly           any
+	VolumeSubPath      any
 }
 
 type OpenapiSiteContainer_Properties struct {
@@ -45,40 +45,40 @@ type OpenapiSiteContainer_Properties struct {
 }
 
 var OpenapiSiteContainer_Properties_EnvironmentVariablesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiSiteContainer_Properties_VolumeMountsFields = ubx.FieldMap{
-		"ContainerMountPath": ubx.FieldSpec{WireName: "container_mount_path"},
-		"Data": ubx.FieldSpec{WireName: "data"},
-		"ReadOnly": ubx.FieldSpec{WireName: "read_only"},
-		"VolumeSubPath": ubx.FieldSpec{WireName: "volume_sub_path"},
-	}
+	"ContainerMountPath": ubx.FieldSpec{WireName: "container_mount_path"},
+	"Data":               ubx.FieldSpec{WireName: "data"},
+	"ReadOnly":           ubx.FieldSpec{WireName: "read_only"},
+	"VolumeSubPath":      ubx.FieldSpec{WireName: "volume_sub_path"},
+}
 
 var OpenapiSiteContainer_PropertiesFields = ubx.FieldMap{
-		"AuthType": ubx.FieldSpec{WireName: "auth_type"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"EnvironmentVariables": ubx.FieldSpec{
-			WireName: "environment_variables",
-			Kind: "list",
-			Fields: OpenapiSiteContainer_Properties_EnvironmentVariablesFields,
-		},
-		"Image": ubx.FieldSpec{WireName: "image"},
-		"InheritAppSettingsAndConnectionStrings": ubx.FieldSpec{WireName: "inherit_app_settings_and_connection_strings"},
-		"IsMain": ubx.FieldSpec{WireName: "is_main"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"PasswordSecret": ubx.FieldSpec{WireName: "password_secret"},
-		"StartUpCommand": ubx.FieldSpec{WireName: "start_up_command"},
-		"TargetPort": ubx.FieldSpec{WireName: "target_port"},
-		"UserManagedIdentityClientId": ubx.FieldSpec{WireName: "user_managed_identity_client_id"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-		"VolumeMounts": ubx.FieldSpec{
-			WireName: "volume_mounts",
-			Kind: "list",
-			Fields: OpenapiSiteContainer_Properties_VolumeMountsFields,
-		},
-	}
+	"AuthType":    ubx.FieldSpec{WireName: "auth_type"},
+	"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
+	"EnvironmentVariables": ubx.FieldSpec{
+		WireName: "environment_variables",
+		Kind:     "list",
+		Fields:   OpenapiSiteContainer_Properties_EnvironmentVariablesFields,
+	},
+	"Image":                                  ubx.FieldSpec{WireName: "image"},
+	"InheritAppSettingsAndConnectionStrings": ubx.FieldSpec{WireName: "inherit_app_settings_and_connection_strings"},
+	"IsMain":                                 ubx.FieldSpec{WireName: "is_main"},
+	"LastModifiedTime":                       ubx.FieldSpec{WireName: "last_modified_time"},
+	"PasswordSecret":                         ubx.FieldSpec{WireName: "password_secret"},
+	"StartUpCommand":                         ubx.FieldSpec{WireName: "start_up_command"},
+	"TargetPort":                             ubx.FieldSpec{WireName: "target_port"},
+	"UserManagedIdentityClientId":            ubx.FieldSpec{WireName: "user_managed_identity_client_id"},
+	"UserName":                               ubx.FieldSpec{WireName: "user_name"},
+	"VolumeMounts": ubx.FieldSpec{
+		WireName: "volume_mounts",
+		Kind:     "list",
+		Fields:   OpenapiSiteContainer_Properties_VolumeMountsFields,
+	},
+}
 
 type OpenapiSiteContainerConfig struct {
 	// Kind of resource.
@@ -104,8 +104,8 @@ var OpenapiSiteContainer = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSiteContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSiteContainer_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

@@ -4,82 +4,82 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteLag_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ExpressrouteExpressRouteLag_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ExpressrouteExpressRouteLag_Value_Properties_Links_Properties_MacSecConfig struct {
 	CakSecretIdentifier any
-	Cipher any
+	Cipher              any
 	CknSecretIdentifier any
-	SciState any
+	SciState            any
 }
 
 type ExpressrouteExpressRouteLag_Value_Properties_Links_Properties_Members_Properties struct {
-	AdminState any
-	ColoLocation any
-	ConnectorType any
-	InterfaceName any
-	PatchPanelId any
+	AdminState        any
+	ColoLocation      any
+	ConnectorType     any
+	InterfaceName     any
+	PatchPanelId      any
 	ProvisioningState any
-	RackId any
+	RackId            any
 }
 
 type ExpressrouteExpressRouteLag_Value_Properties_Links_Properties_Members struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ExpressrouteExpressRouteLag_Value_Properties_Links_Properties struct {
-	AdminState any
-	InterfaceName any
-	MacSecConfig any
-	Members any
+	AdminState        any
+	InterfaceName     any
+	MacSecConfig      any
+	Members           any
 	ProvisioningState any
-	RouterName any
+	RouterName        any
 }
 
 type ExpressrouteExpressRouteLag_Value_Properties_Links struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ExpressrouteExpressRouteLag_Value_Properties struct {
-	AllocationDate any
-	BandwidthInGbps any
-	BillingType any
-	Encapsulation any
-	EtherType any
-	LacpTimer any
-	Links any
+	AllocationDate             any
+	BandwidthInGbps            any
+	BillingType                any
+	Encapsulation              any
+	EtherType                  any
+	LacpTimer                  any
+	Links                      any
 	MinimumActivePortsRequired any
-	Mtu any
-	NumberOfPorts any
-	PeeringLocation any
+	Mtu                        any
+	NumberOfPorts              any
+	PeeringLocation            any
 	ProvisionedBandwidthInGbps any
-	ProvisioningState any
-	ResourceGuid any
+	ProvisioningState          any
+	ResourceGuid               any
 }
 
 type ExpressrouteExpressRouteLag_Value struct {
-	Etag any
-	Id any
-	Identity any
+	Etag       any
+	Id         any
+	Identity   any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ExpressrouteExpressRouteLagConfig struct {
@@ -94,6 +94,5 @@ type ExpressrouteExpressRouteLagAttrs struct {
 
 var ExpressrouteExpressRouteLag = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_lag",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

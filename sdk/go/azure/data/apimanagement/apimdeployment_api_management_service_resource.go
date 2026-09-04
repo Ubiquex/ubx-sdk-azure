@@ -4,44 +4,44 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimdeploymentApiManagementServiceResource_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ApimdeploymentApiManagementServiceResource_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ApimdeploymentApiManagementServiceResource_Value_Properties struct {
 	PublisherEmail any
-	PublisherName any
+	PublisherName  any
 }
 
 type ApimdeploymentApiManagementServiceResource_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type ApimdeploymentApiManagementServiceResource_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ApimdeploymentApiManagementServiceResource_Value struct {
-	Etag any
-	Identity any
-	Location any
+	Etag       any
+	Identity   any
+	Location   any
 	Properties any
-	Sku any
+	Sku        any
 	SystemData any
-	Zones any
+	Zones      any
 }
 
 type ApimdeploymentApiManagementServiceResourceConfig struct {
@@ -56,6 +56,5 @@ type ApimdeploymentApiManagementServiceResourceAttrs struct {
 
 var ApimdeploymentApiManagementServiceResource = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimdeployment_api_management_service_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

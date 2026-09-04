@@ -21,14 +21,14 @@ type WorkloadNetworkDnsZone_Properties struct {
 }
 
 var WorkloadNetworkDnsZone_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"DnsServerIps": ubx.FieldSpec{WireName: "dns_server_ips"},
-		"DnsServices": ubx.FieldSpec{WireName: "dns_services"},
-		"Domain": ubx.FieldSpec{WireName: "domain"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Revision": ubx.FieldSpec{WireName: "revision"},
-		"SourceIp": ubx.FieldSpec{WireName: "source_ip"},
-	}
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"DnsServerIps":      ubx.FieldSpec{WireName: "dns_server_ips"},
+	"DnsServices":       ubx.FieldSpec{WireName: "dns_services"},
+	"Domain":            ubx.FieldSpec{WireName: "domain"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Revision":          ubx.FieldSpec{WireName: "revision"},
+	"SourceIp":          ubx.FieldSpec{WireName: "source_ip"},
+}
 
 type WorkloadNetworkDnsZoneConfig struct {
 	// NSX DNS Zone Properties
@@ -45,8 +45,8 @@ var WorkloadNetworkDnsZone = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WorkloadNetworkDnsZone_PropertiesFields,
+			Kind:     "object",
+			Fields:   WorkloadNetworkDnsZone_PropertiesFields,
 		},
 	},
 }

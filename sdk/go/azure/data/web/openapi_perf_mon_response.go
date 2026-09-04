@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPerfMonResponse_Value_Data_Values struct {
 	InstanceName any
-	Time any
-	Value any
+	Time         any
+	Value        any
 }
 
 type OpenapiPerfMonResponse_Value_Data struct {
-	EndTime any
-	Name any
+	EndTime   any
+	Name      any
 	StartTime any
 	TimeGrain any
-	Values any
+	Values    any
 }
 
 type OpenapiPerfMonResponse_Value struct {
-	Code any
-	Data any
+	Code    any
+	Data    any
 	Message any
 }
 

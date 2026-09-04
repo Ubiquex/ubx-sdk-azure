@@ -13,13 +13,13 @@ type AzureBackupRecoveryPointResource_Value struct {
 
 type AzureBackupRecoveryPointResourceConfig struct {
 	BackupInstanceName any
-	VaultName any
+	VaultName          any
 }
 
 type AzureBackupRecoveryPointResourceAttrs struct {
 	BackupInstanceName any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 
@@ -27,6 +27,6 @@ var AzureBackupRecoveryPointResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_azure_backup_recovery_point_resource",
 	Fields: ubx.FieldMap{
 		"BackupInstanceName": ubx.FieldSpec{WireName: "backup_instance_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":          ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

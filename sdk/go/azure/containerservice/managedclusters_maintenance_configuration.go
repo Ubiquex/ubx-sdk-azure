@@ -4,7 +4,7 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDates struct {
-	End any
+	End   any
 	Start any
 }
 
@@ -63,7 +63,7 @@ type ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow struct
 }
 
 type ManagedclustersMaintenanceConfiguration_Properties_TimeInWeek struct {
-	Day any
+	Day       any
 	HourSlots any
 }
 
@@ -77,92 +77,92 @@ type ManagedclustersMaintenanceConfiguration_Properties struct {
 }
 
 var ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDatesFields = ubx.FieldMap{
-		"End": ubx.FieldSpec{WireName: "end"},
-		"Start": ubx.FieldSpec{WireName: "start"},
-	}
+	"End":   ubx.FieldSpec{WireName: "end"},
+	"Start": ubx.FieldSpec{WireName: "start"},
+}
 
 var ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_AbsoluteMonthlyFields = ubx.FieldMap{
-		"DayOfMonth": ubx.FieldSpec{WireName: "day_of_month"},
-		"IntervalMonths": ubx.FieldSpec{WireName: "interval_months"},
-	}
+	"DayOfMonth":     ubx.FieldSpec{WireName: "day_of_month"},
+	"IntervalMonths": ubx.FieldSpec{WireName: "interval_months"},
+}
 
 var ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_DailyFields = ubx.FieldMap{
-		"IntervalDays": ubx.FieldSpec{WireName: "interval_days"},
-	}
+	"IntervalDays": ubx.FieldSpec{WireName: "interval_days"},
+}
 
 var ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_RelativeMonthlyFields = ubx.FieldMap{
-		"DayOfWeek": ubx.FieldSpec{WireName: "day_of_week"},
-		"IntervalMonths": ubx.FieldSpec{WireName: "interval_months"},
-		"WeekIndex": ubx.FieldSpec{WireName: "week_index"},
-	}
+	"DayOfWeek":      ubx.FieldSpec{WireName: "day_of_week"},
+	"IntervalMonths": ubx.FieldSpec{WireName: "interval_months"},
+	"WeekIndex":      ubx.FieldSpec{WireName: "week_index"},
+}
 
 var ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_WeeklyFields = ubx.FieldMap{
-		"DayOfWeek": ubx.FieldSpec{WireName: "day_of_week"},
-		"IntervalWeeks": ubx.FieldSpec{WireName: "interval_weeks"},
-	}
+	"DayOfWeek":     ubx.FieldSpec{WireName: "day_of_week"},
+	"IntervalWeeks": ubx.FieldSpec{WireName: "interval_weeks"},
+}
 
 var ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_ScheduleFields = ubx.FieldMap{
-		"AbsoluteMonthly": ubx.FieldSpec{
-			WireName: "absolute_monthly",
-			Kind: "object",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_AbsoluteMonthlyFields,
-		},
-		"Daily": ubx.FieldSpec{
-			WireName: "daily",
-			Kind: "object",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_DailyFields,
-		},
-		"RelativeMonthly": ubx.FieldSpec{
-			WireName: "relative_monthly",
-			Kind: "object",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_RelativeMonthlyFields,
-		},
-		"Weekly": ubx.FieldSpec{
-			WireName: "weekly",
-			Kind: "object",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_WeeklyFields,
-		},
-	}
+	"AbsoluteMonthly": ubx.FieldSpec{
+		WireName: "absolute_monthly",
+		Kind:     "object",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_AbsoluteMonthlyFields,
+	},
+	"Daily": ubx.FieldSpec{
+		WireName: "daily",
+		Kind:     "object",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_DailyFields,
+	},
+	"RelativeMonthly": ubx.FieldSpec{
+		WireName: "relative_monthly",
+		Kind:     "object",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_RelativeMonthlyFields,
+	},
+	"Weekly": ubx.FieldSpec{
+		WireName: "weekly",
+		Kind:     "object",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_Schedule_WeeklyFields,
+	},
+}
 
 var ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindowFields = ubx.FieldMap{
-		"DurationHours": ubx.FieldSpec{WireName: "duration_hours"},
-		"NotAllowedDates": ubx.FieldSpec{
-			WireName: "not_allowed_dates",
-			Kind: "list",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDatesFields,
-		},
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "object",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_ScheduleFields,
-		},
-		"StartDate": ubx.FieldSpec{WireName: "start_date"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"UtcOffset": ubx.FieldSpec{WireName: "utc_offset"},
-	}
+	"DurationHours": ubx.FieldSpec{WireName: "duration_hours"},
+	"NotAllowedDates": ubx.FieldSpec{
+		WireName: "not_allowed_dates",
+		Kind:     "list",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDatesFields,
+	},
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "object",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_ScheduleFields,
+	},
+	"StartDate": ubx.FieldSpec{WireName: "start_date"},
+	"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	"UtcOffset": ubx.FieldSpec{WireName: "utc_offset"},
+}
 
 var ManagedclustersMaintenanceConfiguration_Properties_TimeInWeekFields = ubx.FieldMap{
-		"Day": ubx.FieldSpec{WireName: "day"},
-		"HourSlots": ubx.FieldSpec{WireName: "hour_slots"},
-	}
+	"Day":       ubx.FieldSpec{WireName: "day"},
+	"HourSlots": ubx.FieldSpec{WireName: "hour_slots"},
+}
 
 var ManagedclustersMaintenanceConfiguration_PropertiesFields = ubx.FieldMap{
-		"MaintenanceWindow": ubx.FieldSpec{
-			WireName: "maintenance_window",
-			Kind: "object",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindowFields,
-		},
-		"NotAllowedTime": ubx.FieldSpec{
-			WireName: "not_allowed_time",
-			Kind: "list",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDatesFields,
-		},
-		"TimeInWeek": ubx.FieldSpec{
-			WireName: "time_in_week",
-			Kind: "list",
-			Fields: ManagedclustersMaintenanceConfiguration_Properties_TimeInWeekFields,
-		},
-	}
+	"MaintenanceWindow": ubx.FieldSpec{
+		WireName: "maintenance_window",
+		Kind:     "object",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindowFields,
+	},
+	"NotAllowedTime": ubx.FieldSpec{
+		WireName: "not_allowed_time",
+		Kind:     "list",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_MaintenanceWindow_NotAllowedDatesFields,
+	},
+	"TimeInWeek": ubx.FieldSpec{
+		WireName: "time_in_week",
+		Kind:     "list",
+		Fields:   ManagedclustersMaintenanceConfiguration_Properties_TimeInWeekFields,
+	},
+}
 
 type ManagedclustersMaintenanceConfigurationConfig struct {
 	// Properties used to configure planned maintenance for a Managed Cluster.
@@ -179,8 +179,8 @@ var ManagedclustersMaintenanceConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedclustersMaintenanceConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedclustersMaintenanceConfiguration_PropertiesFields,
 		},
 	},
 }

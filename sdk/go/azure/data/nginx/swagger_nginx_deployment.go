@@ -4,14 +4,14 @@ package nginx
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxDeployment_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type SwaggerNginxDeployment_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,7 +20,7 @@ type SwaggerNginxDeployment_Value_Properties_AutoUpgradeProfile struct {
 }
 
 type SwaggerNginxDeployment_Value_Properties_Logging_StorageAccount struct {
-	AccountName any
+	AccountName   any
 	ContainerName any
 }
 
@@ -29,9 +29,9 @@ type SwaggerNginxDeployment_Value_Properties_Logging struct {
 }
 
 type SwaggerNginxDeployment_Value_Properties_NetworkProfile_FrontEndIpconfiguration_PrivateIpaddresses struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	SubnetId any
+	SubnetId                  any
 }
 
 type SwaggerNginxDeployment_Value_Properties_NetworkProfile_FrontEndIpconfiguration_PublicIpaddresses struct {
@@ -40,7 +40,7 @@ type SwaggerNginxDeployment_Value_Properties_NetworkProfile_FrontEndIpconfigurat
 
 type SwaggerNginxDeployment_Value_Properties_NetworkProfile_FrontEndIpconfiguration struct {
 	PrivateIpaddresses any
-	PublicIpaddresses any
+	PublicIpaddresses  any
 }
 
 type SwaggerNginxDeployment_Value_Properties_NetworkProfile_NetworkInterfaceConfiguration struct {
@@ -48,7 +48,7 @@ type SwaggerNginxDeployment_Value_Properties_NetworkProfile_NetworkInterfaceConf
 }
 
 type SwaggerNginxDeployment_Value_Properties_NetworkProfile struct {
-	FrontEndIpconfiguration any
+	FrontEndIpconfiguration       any
 	NetworkInterfaceConfiguration any
 }
 
@@ -58,25 +58,25 @@ type SwaggerNginxDeployment_Value_Properties_NginxAppProtect_WebApplicationFirew
 
 type SwaggerNginxDeployment_Value_Properties_NginxAppProtect_WebApplicationFirewallStatus_AttackSignaturesPackage struct {
 	RevisionDatetime any
-	Version any
+	Version          any
 }
 
 type SwaggerNginxDeployment_Value_Properties_NginxAppProtect_WebApplicationFirewallStatus_ComponentVersions struct {
 	WafEngineVersion any
-	WafNginxVersion any
+	WafNginxVersion  any
 }
 
 type SwaggerNginxDeployment_Value_Properties_NginxAppProtect_WebApplicationFirewallStatus struct {
 	AttackSignaturesPackage any
-	BotSignaturesPackage any
-	ComponentVersions any
-	ThreatCampaignsPackage any
-	WafRelease any
+	BotSignaturesPackage    any
+	ComponentVersions       any
+	ThreatCampaignsPackage  any
+	WafRelease              any
 }
 
 type SwaggerNginxDeployment_Value_Properties_NginxAppProtect struct {
 	WebApplicationFirewallSettings any
-	WebApplicationFirewallStatus any
+	WebApplicationFirewallStatus   any
 }
 
 type SwaggerNginxDeployment_Value_Properties_ScalingProperties_AutoScaleSettings_Profiles_Capacity struct {
@@ -86,7 +86,7 @@ type SwaggerNginxDeployment_Value_Properties_ScalingProperties_AutoScaleSettings
 
 type SwaggerNginxDeployment_Value_Properties_ScalingProperties_AutoScaleSettings_Profiles struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type SwaggerNginxDeployment_Value_Properties_ScalingProperties_AutoScaleSettings struct {
@@ -95,7 +95,7 @@ type SwaggerNginxDeployment_Value_Properties_ScalingProperties_AutoScaleSettings
 
 type SwaggerNginxDeployment_Value_Properties_ScalingProperties struct {
 	AutoScaleSettings any
-	Capacity any
+	Capacity          any
 }
 
 type SwaggerNginxDeployment_Value_Properties_UserProfile struct {
@@ -103,17 +103,17 @@ type SwaggerNginxDeployment_Value_Properties_UserProfile struct {
 }
 
 type SwaggerNginxDeployment_Value_Properties struct {
-	AutoUpgradeProfile any
-	DataplaneApiEndpoint any
+	AutoUpgradeProfile       any
+	DataplaneApiEndpoint     any
 	EnableDiagnosticsSupport any
-	IpAddress any
-	Logging any
-	NetworkProfile any
-	NginxAppProtect any
-	NginxVersion any
-	ProvisioningState any
-	ScalingProperties any
-	UserProfile any
+	IpAddress                any
+	Logging                  any
+	NetworkProfile           any
+	NginxAppProtect          any
+	NginxVersion             any
+	ProvisioningState        any
+	ScalingProperties        any
+	UserProfile              any
 }
 
 type SwaggerNginxDeployment_Value_Sku struct {
@@ -121,9 +121,9 @@ type SwaggerNginxDeployment_Value_Sku struct {
 }
 
 type SwaggerNginxDeployment_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type SwaggerNginxDeploymentConfig struct {
@@ -138,6 +138,5 @@ type SwaggerNginxDeploymentAttrs struct {
 
 var SwaggerNginxDeployment = ubx.DataSourceBinding{
 	WireType: "azure_nginx_swagger_nginx_deployment",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

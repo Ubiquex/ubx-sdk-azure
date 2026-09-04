@@ -46,8 +46,6 @@ const PrivateEndpointConnection_PropertiesFields: FieldMap = {
 };
 
 export interface PrivateEndpointConnectionConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Properties of the private endpoint connection resource. */
   properties?: PrivateEndpointConnection_Properties | Computed<PrivateEndpointConnection_Properties>;
 }
@@ -62,7 +60,6 @@ export interface PrivateEndpointConnectionAttrs {
 export const PrivateEndpointConnection: ResourceBinding<PrivateEndpointConnectionConfig, PrivateEndpointConnectionAttrs> = {
   wireType: "azure_relay_private_endpoint_connection",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

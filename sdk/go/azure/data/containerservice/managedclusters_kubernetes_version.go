@@ -12,11 +12,11 @@ type ManagedclustersKubernetesVersion_Values_PatchVersions struct {
 }
 
 type ManagedclustersKubernetesVersion_Values struct {
-	Capabilities any
-	IsDefault any
-	IsPreview any
+	Capabilities  any
+	IsDefault     any
+	IsPreview     any
 	PatchVersions any
-	Version any
+	Version       any
 }
 
 type ManagedclustersKubernetesVersionConfig struct {
@@ -29,6 +29,5 @@ type ManagedclustersKubernetesVersionAttrs struct {
 
 var ManagedclustersKubernetesVersion = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_kubernetes_version",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

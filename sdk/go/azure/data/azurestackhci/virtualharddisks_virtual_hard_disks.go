@@ -10,31 +10,31 @@ type VirtualharddisksVirtualHardDisks_Value_ExtendedLocation struct {
 
 type VirtualharddisksVirtualHardDisks_Value_Properties_Status_ProvisioningStatus struct {
 	OperationId any
-	Status any
+	Status      any
 }
 
 type VirtualharddisksVirtualHardDisks_Value_Properties_Status struct {
-	ErrorCode any
-	ErrorMessage any
+	ErrorCode          any
+	ErrorMessage       any
 	ProvisioningStatus any
 }
 
 type VirtualharddisksVirtualHardDisks_Value_Properties struct {
-	BlockSizeBytes any
-	ContainerId any
-	DiskFileFormat any
-	DiskSizeGb any
-	Dynamic any
-	HyperVgeneration any
-	LogicalSectorBytes any
+	BlockSizeBytes      any
+	ContainerId         any
+	DiskFileFormat      any
+	DiskSizeGb          any
+	Dynamic             any
+	HyperVgeneration    any
+	LogicalSectorBytes  any
 	PhysicalSectorBytes any
-	ProvisioningState any
-	Status any
+	ProvisioningState   any
+	Status              any
 }
 
 type VirtualharddisksVirtualHardDisks_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type VirtualharddisksVirtualHardDisksConfig struct {
@@ -42,11 +42,10 @@ type VirtualharddisksVirtualHardDisksConfig struct {
 
 type VirtualharddisksVirtualHardDisksAttrs struct {
 	NextLink any
-	Value any
+	Value    any
 }
 
 var VirtualharddisksVirtualHardDisks = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_virtualharddisks_virtual_hard_disks",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

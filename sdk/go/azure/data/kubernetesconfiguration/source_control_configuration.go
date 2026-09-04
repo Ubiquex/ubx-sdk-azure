@@ -4,39 +4,39 @@ package kubernetesconfiguration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SourceControlConfiguration_Value_Properties_ComplianceStatus struct {
-	ComplianceState any
+	ComplianceState   any
 	LastConfigApplied any
-	Message any
-	MessageLevel any
+	Message           any
+	MessageLevel      any
 }
 
 type SourceControlConfiguration_Value_Properties_HelmOperatorProperties struct {
-	ChartValues any
+	ChartValues  any
 	ChartVersion any
 }
 
 type SourceControlConfiguration_Value_Properties struct {
-	ComplianceStatus any
+	ComplianceStatus               any
 	ConfigurationProtectedSettings any
-	EnableHelmOperator any
-	HelmOperatorProperties any
-	OperatorInstanceName any
-	OperatorNamespace any
-	OperatorParams any
-	OperatorScope any
-	OperatorType any
-	ProvisioningState any
-	RepositoryPublicKey any
-	RepositoryUrl any
-	SshKnownHostsContents any
+	EnableHelmOperator             any
+	HelmOperatorProperties         any
+	OperatorInstanceName           any
+	OperatorNamespace              any
+	OperatorParams                 any
+	OperatorScope                  any
+	OperatorType                   any
+	ProvisioningState              any
+	RepositoryPublicKey            any
+	RepositoryUrl                  any
+	SshKnownHostsContents          any
 }
 
 type SourceControlConfiguration_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -57,6 +57,5 @@ type SourceControlConfigurationAttrs struct {
 
 var SourceControlConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_kubernetesconfiguration_source_control_configuration",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

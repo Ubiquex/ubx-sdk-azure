@@ -105,8 +105,6 @@ const CommitmentPlan_SkuFields: FieldMap = {
 };
 
 export interface CommitmentPlanConfig {
-  /** Resource Etag. */
-  etag?: string | Computed<string>;
   /** The kind (type) of cognitive service account. */
   kind?: string | Computed<string>;
   /** The geo-location where the resource lives */
@@ -137,7 +135,6 @@ export interface CommitmentPlanAttrs {
 export const CommitmentPlan: ResourceBinding<CommitmentPlanConfig, CommitmentPlanAttrs> = {
   wireType: "azure_cognitiveservices_commitment_plan",
   fields: {
-    etag: "etag",
     kind: "kind",
     location: "location",
     properties: {

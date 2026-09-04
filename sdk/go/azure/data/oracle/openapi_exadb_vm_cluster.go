@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExadbVmCluster_Value_Properties_DataCollectionOptions struct {
 	IsDiagnosticsEventsEnabled any
-	IsHealthMonitoringEnabled any
-	IsIncidentLogsEnabled any
+	IsHealthMonitoringEnabled  any
+	IsIncidentLogsEnabled      any
 }
 
 type OpenapiExadbVmCluster_Value_Properties_IormConfigCache_DbPlans struct {
-	DbName any
+	DbName          any
 	FlashCacheLimit any
-	Share any
+	Share           any
 }
 
 type OpenapiExadbVmCluster_Value_Properties_IormConfigCache struct {
-	DbPlans any
+	DbPlans          any
 	LifecycleDetails any
-	LifecycleState any
-	Objective any
+	LifecycleState   any
+	Objective        any
 }
 
 type OpenapiExadbVmCluster_Value_Properties_NsgCidrs_DestinationPortRange struct {
@@ -29,7 +29,7 @@ type OpenapiExadbVmCluster_Value_Properties_NsgCidrs_DestinationPortRange struct
 
 type OpenapiExadbVmCluster_Value_Properties_NsgCidrs struct {
 	DestinationPortRange any
-	Source any
+	Source               any
 }
 
 type OpenapiExadbVmCluster_Value_Properties_SnapshotFileSystemStorage struct {
@@ -37,55 +37,55 @@ type OpenapiExadbVmCluster_Value_Properties_SnapshotFileSystemStorage struct {
 }
 
 type OpenapiExadbVmCluster_Value_Properties struct {
-	BackupSubnetCidr any
-	BackupSubnetOcid any
-	ClusterName any
-	DataCollectionOptions any
-	DisplayName any
-	Domain any
-	EnabledEcpuCount any
-	ExascaleDbStorageVaultId any
-	GiVersion any
-	GridImageOcid any
-	GridImageType any
-	Hostname any
-	IormConfigCache any
-	LicenseModel any
-	LifecycleDetails any
-	LifecycleState any
-	ListenerPort any
-	MemorySizeInGbs any
-	NodeCount any
-	NsgCidrs any
-	NsgUrl any
-	OciUrl any
-	Ocid any
-	PrivateZoneOcid any
-	ProvisioningState any
-	ScanDnsName any
-	ScanDnsRecordId any
-	ScanIpIds any
-	ScanListenerPortTcp any
-	ScanListenerPortTcpSsl any
-	Shape any
-	ShapeAttribute any
+	BackupSubnetCidr          any
+	BackupSubnetOcid          any
+	ClusterName               any
+	DataCollectionOptions     any
+	DisplayName               any
+	Domain                    any
+	EnabledEcpuCount          any
+	ExascaleDbStorageVaultId  any
+	GiVersion                 any
+	GridImageOcid             any
+	GridImageType             any
+	Hostname                  any
+	IormConfigCache           any
+	LicenseModel              any
+	LifecycleDetails          any
+	LifecycleState            any
+	ListenerPort              any
+	MemorySizeInGbs           any
+	NodeCount                 any
+	NsgCidrs                  any
+	NsgUrl                    any
+	OciUrl                    any
+	Ocid                      any
+	PrivateZoneOcid           any
+	ProvisioningState         any
+	ScanDnsName               any
+	ScanDnsRecordId           any
+	ScanIpIds                 any
+	ScanListenerPortTcp       any
+	ScanListenerPortTcpSsl    any
+	Shape                     any
+	ShapeAttribute            any
 	SnapshotFileSystemStorage any
-	SshPublicKeys any
-	SubnetId any
-	SubnetOcid any
-	SystemVersion any
-	TimeZone any
-	TotalEcpuCount any
-	TotalFileSystemStorage any
-	VipIds any
-	VmFileSystemStorage any
-	VnetId any
-	ZoneOcid any
+	SshPublicKeys             any
+	SubnetId                  any
+	SubnetOcid                any
+	SystemVersion             any
+	TimeZone                  any
+	TotalEcpuCount            any
+	TotalFileSystemStorage    any
+	VipIds                    any
+	VmFileSystemStorage       any
+	VnetId                    any
+	ZoneOcid                  any
 }
 
 type OpenapiExadbVmCluster_Value struct {
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type OpenapiExadbVmClusterConfig struct {
@@ -100,6 +100,5 @@ type OpenapiExadbVmClusterAttrs struct {
 
 var OpenapiExadbVmCluster = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_exadb_vm_cluster",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

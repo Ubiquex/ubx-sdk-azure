@@ -4,11 +4,11 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RequestApprovalResource_Properties_PlansDetails struct {
-	Justification any
-	PlanId any
-	RequestDate any
-	Status any
-	SubscriptionId any
+	Justification    any
+	PlanId           any
+	RequestDate      any
+	Status           any
+	SubscriptionId   any
 	SubscriptionName any
 }
 
@@ -28,26 +28,26 @@ type RequestApprovalResource_Properties struct {
 }
 
 var RequestApprovalResource_Properties_PlansDetailsFields = ubx.FieldMap{
-		"Justification": ubx.FieldSpec{WireName: "justification"},
-		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
-		"RequestDate": ubx.FieldSpec{WireName: "request_date"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"SubscriptionName": ubx.FieldSpec{WireName: "subscription_name"},
-	}
+	"Justification":    ubx.FieldSpec{WireName: "justification"},
+	"PlanId":           ubx.FieldSpec{WireName: "plan_id"},
+	"RequestDate":      ubx.FieldSpec{WireName: "request_date"},
+	"Status":           ubx.FieldSpec{WireName: "status"},
+	"SubscriptionId":   ubx.FieldSpec{WireName: "subscription_id"},
+	"SubscriptionName": ubx.FieldSpec{WireName: "subscription_name"},
+}
 
 var RequestApprovalResource_PropertiesFields = ubx.FieldMap{
-		"IsClosed": ubx.FieldSpec{WireName: "is_closed"},
-		"MessageCode": ubx.FieldSpec{WireName: "message_code"},
-		"OfferDisplayName": ubx.FieldSpec{WireName: "offer_display_name"},
-		"OfferId": ubx.FieldSpec{WireName: "offer_id"},
-		"PlansDetails": ubx.FieldSpec{
-			WireName: "plans_details",
-			Kind: "list",
-			Fields: RequestApprovalResource_Properties_PlansDetailsFields,
-		},
-		"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
-	}
+	"IsClosed":         ubx.FieldSpec{WireName: "is_closed"},
+	"MessageCode":      ubx.FieldSpec{WireName: "message_code"},
+	"OfferDisplayName": ubx.FieldSpec{WireName: "offer_display_name"},
+	"OfferId":          ubx.FieldSpec{WireName: "offer_id"},
+	"PlansDetails": ubx.FieldSpec{
+		WireName: "plans_details",
+		Kind:     "list",
+		Fields:   RequestApprovalResource_Properties_PlansDetailsFields,
+	},
+	"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
+}
 
 type RequestApprovalResourceConfig struct {
 	// Approval request resource properties
@@ -64,8 +64,8 @@ var RequestApprovalResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RequestApprovalResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   RequestApprovalResource_PropertiesFields,
 		},
 	},
 }

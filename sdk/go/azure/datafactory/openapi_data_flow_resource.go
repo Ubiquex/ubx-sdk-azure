@@ -20,23 +20,21 @@ type OpenapiDataFlowResource_Properties struct {
 }
 
 var OpenapiDataFlowResource_Properties_FolderFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiDataFlowResource_PropertiesFields = ubx.FieldMap{
-		"Annotations": ubx.FieldSpec{WireName: "annotations"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Folder": ubx.FieldSpec{
-			WireName: "folder",
-			Kind: "object",
-			Fields: OpenapiDataFlowResource_Properties_FolderFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Annotations": ubx.FieldSpec{WireName: "annotations"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Folder": ubx.FieldSpec{
+		WireName: "folder",
+		Kind:     "object",
+		Fields:   OpenapiDataFlowResource_Properties_FolderFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiDataFlowResourceConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Azure Data Factory nested object which contains a flow with data movements and transformations.
 	Properties any
 }
@@ -51,11 +49,10 @@ type OpenapiDataFlowResourceAttrs struct {
 var OpenapiDataFlowResource = ubx.ResourceBinding{
 	WireType: "azure_datafactory_openapi_data_flow_resource",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDataFlowResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDataFlowResource_PropertiesFields,
 		},
 	},
 }

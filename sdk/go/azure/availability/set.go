@@ -27,7 +27,7 @@ type Set_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTar
 
 type Set_Properties_ScheduledEventsPolicy struct {
 	// Specifies if Scheduled Events should be auto-approved when all instances are down.
-	AllInstancesDown any
+	AllInstancesDown                           any
 	ScheduledEventsAdditionalPublishingTargets any
 	// Specifies Reboot related Scheduled Event related configurations.
 	UserInitiatedReboot any
@@ -36,29 +36,23 @@ type Set_Properties_ScheduledEventsPolicy struct {
 }
 
 type Set_Properties_Statuses struct {
-	// The status code that identifies the current state of the availability set, such as 'ProvisioningState/succeeded'. (AI-inferred)
-	Code any
-	// A human-readable, user-facing description of the current status of the availability set, as part of a list of status objects that may also include a code, level, and timestamp. (AI-inferred)
+	Code          any
 	DisplayStatus any
-	// The severity level of the status, which can be one of Info, Warning, or Error. It indicates the impact or importance of the status message. (AI-inferred)
-	Level any
-	// The message provides additional information or details about the status of the availability set. (AI-inferred)
-	Message any
-	// The timestamp when the status was recorded. (AI-inferred)
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type Set_Properties_VirtualMachineScaleSetMigrationInfo_DefaultVirtualMachineScaleSetInfo struct {
 	// Indicates if the the maximum capacity of the default migrated Virtual Machine Scale Set after its migration will be constrained to a limited number of VMs.
-	ConstrainedMaximumCapacity any
-	// The default virtual machine scale set that serves as the primary target when migrating the availability set to a scale set. (AI-inferred)
+	ConstrainedMaximumCapacity    any
 	DefaultVirtualMachineScaleSet any
 }
 
 type Set_Properties_VirtualMachineScaleSetMigrationInfo struct {
 	// Indicates the target Virtual Machine ScaleSet properties upon triggering a seamless migration without downtime of the VMs via the ConvertToVirtualMachineScaleSet API.
 	DefaultVirtualMachineScaleSetInfo any
-	MigrateToVirtualMachineScaleSet any
+	MigrateToVirtualMachineScaleSet   any
 }
 
 type Set_Properties struct {
@@ -66,8 +60,7 @@ type Set_Properties struct {
 	PlatformFaultDomainCount any
 	// Update Domain count.
 	PlatformUpdateDomainCount any
-	// Specifies the proximity placement group that the availability set should be associated with, enabling co-location of resources for low network latency. (AI-inferred)
-	ProximityPlacementGroup any
+	ProximityPlacementGroup   any
 	// Specifies Redeploy, Reboot and ScheduledEventsAdditionalPublishingTargets Scheduled Event related configurations.
 	ScheduledEventsPolicy any
 	// The resource status information.
@@ -88,114 +81,114 @@ type Set_Sku struct {
 }
 
 var Set_Properties_ProximityPlacementGroupFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Set_Properties_ScheduledEventsPolicy_AllInstancesDownFields = ubx.FieldMap{
-		"AutomaticallyApprove": ubx.FieldSpec{WireName: "automatically_approve"},
-	}
+	"AutomaticallyApprove": ubx.FieldSpec{WireName: "automatically_approve"},
+}
 
 var Set_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargets_EventGridAndResourceGraphFields = ubx.FieldMap{
-		"Enable": ubx.FieldSpec{WireName: "enable"},
-		"ScheduledEventsApiVersion": ubx.FieldSpec{WireName: "scheduled_events_api_version"},
-	}
+	"Enable":                    ubx.FieldSpec{WireName: "enable"},
+	"ScheduledEventsApiVersion": ubx.FieldSpec{WireName: "scheduled_events_api_version"},
+}
 
 var Set_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargetsFields = ubx.FieldMap{
-		"EventGridAndResourceGraph": ubx.FieldSpec{
-			WireName: "event_grid_and_resource_graph",
-			Kind: "object",
-			Fields: Set_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargets_EventGridAndResourceGraphFields,
-		},
-	}
+	"EventGridAndResourceGraph": ubx.FieldSpec{
+		WireName: "event_grid_and_resource_graph",
+		Kind:     "object",
+		Fields:   Set_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargets_EventGridAndResourceGraphFields,
+	},
+}
 
 var Set_Properties_ScheduledEventsPolicyFields = ubx.FieldMap{
-		"AllInstancesDown": ubx.FieldSpec{
-			WireName: "all_instances_down",
-			Kind: "object",
-			Fields: Set_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
-		},
-		"ScheduledEventsAdditionalPublishingTargets": ubx.FieldSpec{
-			WireName: "scheduled_events_additional_publishing_targets",
-			Kind: "object",
-			Fields: Set_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargetsFields,
-		},
-		"UserInitiatedReboot": ubx.FieldSpec{
-			WireName: "user_initiated_reboot",
-			Kind: "object",
-			Fields: Set_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
-		},
-		"UserInitiatedRedeploy": ubx.FieldSpec{
-			WireName: "user_initiated_redeploy",
-			Kind: "object",
-			Fields: Set_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
-		},
-	}
+	"AllInstancesDown": ubx.FieldSpec{
+		WireName: "all_instances_down",
+		Kind:     "object",
+		Fields:   Set_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
+	},
+	"ScheduledEventsAdditionalPublishingTargets": ubx.FieldSpec{
+		WireName: "scheduled_events_additional_publishing_targets",
+		Kind:     "object",
+		Fields:   Set_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargetsFields,
+	},
+	"UserInitiatedReboot": ubx.FieldSpec{
+		WireName: "user_initiated_reboot",
+		Kind:     "object",
+		Fields:   Set_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
+	},
+	"UserInitiatedRedeploy": ubx.FieldSpec{
+		WireName: "user_initiated_redeploy",
+		Kind:     "object",
+		Fields:   Set_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
+	},
+}
 
 var Set_Properties_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var Set_Properties_VirtualMachineScaleSetMigrationInfo_DefaultVirtualMachineScaleSetInfoFields = ubx.FieldMap{
-		"ConstrainedMaximumCapacity": ubx.FieldSpec{WireName: "constrained_maximum_capacity"},
-		"DefaultVirtualMachineScaleSet": ubx.FieldSpec{
-			WireName: "default_virtual_machine_scale_set",
-			Kind: "object",
-			Fields: Set_Properties_ProximityPlacementGroupFields,
-		},
-	}
+	"ConstrainedMaximumCapacity": ubx.FieldSpec{WireName: "constrained_maximum_capacity"},
+	"DefaultVirtualMachineScaleSet": ubx.FieldSpec{
+		WireName: "default_virtual_machine_scale_set",
+		Kind:     "object",
+		Fields:   Set_Properties_ProximityPlacementGroupFields,
+	},
+}
 
 var Set_Properties_VirtualMachineScaleSetMigrationInfoFields = ubx.FieldMap{
-		"DefaultVirtualMachineScaleSetInfo": ubx.FieldSpec{
-			WireName: "default_virtual_machine_scale_set_info",
-			Kind: "object",
-			Fields: Set_Properties_VirtualMachineScaleSetMigrationInfo_DefaultVirtualMachineScaleSetInfoFields,
-		},
-		"MigrateToVirtualMachineScaleSet": ubx.FieldSpec{
-			WireName: "migrate_to_virtual_machine_scale_set",
-			Kind: "object",
-			Fields: Set_Properties_ProximityPlacementGroupFields,
-		},
-	}
+	"DefaultVirtualMachineScaleSetInfo": ubx.FieldSpec{
+		WireName: "default_virtual_machine_scale_set_info",
+		Kind:     "object",
+		Fields:   Set_Properties_VirtualMachineScaleSetMigrationInfo_DefaultVirtualMachineScaleSetInfoFields,
+	},
+	"MigrateToVirtualMachineScaleSet": ubx.FieldSpec{
+		WireName: "migrate_to_virtual_machine_scale_set",
+		Kind:     "object",
+		Fields:   Set_Properties_ProximityPlacementGroupFields,
+	},
+}
 
 var Set_PropertiesFields = ubx.FieldMap{
-		"PlatformFaultDomainCount": ubx.FieldSpec{WireName: "platform_fault_domain_count"},
-		"PlatformUpdateDomainCount": ubx.FieldSpec{WireName: "platform_update_domain_count"},
-		"ProximityPlacementGroup": ubx.FieldSpec{
-			WireName: "proximity_placement_group",
-			Kind: "object",
-			Fields: Set_Properties_ProximityPlacementGroupFields,
-		},
-		"ScheduledEventsPolicy": ubx.FieldSpec{
-			WireName: "scheduled_events_policy",
-			Kind: "object",
-			Fields: Set_Properties_ScheduledEventsPolicyFields,
-		},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: Set_Properties_StatusesFields,
-		},
-		"VirtualMachineScaleSetMigrationInfo": ubx.FieldSpec{
-			WireName: "virtual_machine_scale_set_migration_info",
-			Kind: "object",
-			Fields: Set_Properties_VirtualMachineScaleSetMigrationInfoFields,
-		},
-		"VirtualMachines": ubx.FieldSpec{
-			WireName: "virtual_machines",
-			Kind: "list",
-			Fields: Set_Properties_ProximityPlacementGroupFields,
-		},
-	}
+	"PlatformFaultDomainCount":  ubx.FieldSpec{WireName: "platform_fault_domain_count"},
+	"PlatformUpdateDomainCount": ubx.FieldSpec{WireName: "platform_update_domain_count"},
+	"ProximityPlacementGroup": ubx.FieldSpec{
+		WireName: "proximity_placement_group",
+		Kind:     "object",
+		Fields:   Set_Properties_ProximityPlacementGroupFields,
+	},
+	"ScheduledEventsPolicy": ubx.FieldSpec{
+		WireName: "scheduled_events_policy",
+		Kind:     "object",
+		Fields:   Set_Properties_ScheduledEventsPolicyFields,
+	},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   Set_Properties_StatusesFields,
+	},
+	"VirtualMachineScaleSetMigrationInfo": ubx.FieldSpec{
+		WireName: "virtual_machine_scale_set_migration_info",
+		Kind:     "object",
+		Fields:   Set_Properties_VirtualMachineScaleSetMigrationInfoFields,
+	},
+	"VirtualMachines": ubx.FieldSpec{
+		WireName: "virtual_machines",
+		Kind:     "list",
+		Fields:   Set_Properties_ProximityPlacementGroupFields,
+	},
+}
 
 var Set_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type SetConfig struct {
 	// The instance view of a resource.
@@ -216,13 +209,13 @@ var Set = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Set_PropertiesFields,
+			Kind:     "object",
+			Fields:   Set_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Set_SkuFields,
+			Kind:     "object",
+			Fields:   Set_SkuFields,
 		},
 	},
 }

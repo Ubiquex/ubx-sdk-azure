@@ -5,121 +5,121 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DomainService_Value_Properties_ConfigDiagnostics_ValidatorResults_Issues struct {
 	DescriptionParams any
-	Id any
+	Id                any
 }
 
 type DomainService_Value_Properties_ConfigDiagnostics_ValidatorResults struct {
-	Issues any
+	Issues                      any
 	ReplicaSetSubnetDisplayName any
-	Status any
-	ValidatorId any
+	Status                      any
+	ValidatorId                 any
 }
 
 type DomainService_Value_Properties_ConfigDiagnostics struct {
-	LastExecuted any
+	LastExecuted     any
 	ValidatorResults any
 }
 
 type DomainService_Value_Properties_DomainSecuritySettings struct {
-	ChannelBinding any
-	KerberosArmoring any
+	ChannelBinding        any
+	KerberosArmoring      any
 	KerberosRc4Encryption any
-	LdapSigning any
-	NtlmV1 any
+	LdapSigning           any
+	NtlmV1                any
 	SyncKerberosPasswords any
-	SyncNtlmPasswords any
-	SyncOnPremPasswords any
-	TlsV1 any
+	SyncNtlmPasswords     any
+	SyncOnPremPasswords   any
+	TlsV1                 any
 }
 
 type DomainService_Value_Properties_LdapsSettings struct {
-	CertificateNotAfter any
-	CertificateThumbprint any
-	ExternalAccess any
-	Ldaps any
-	PfxCertificate any
+	CertificateNotAfter    any
+	CertificateThumbprint  any
+	ExternalAccess         any
+	Ldaps                  any
+	PfxCertificate         any
 	PfxCertificatePassword any
-	PublicCertificate any
+	PublicCertificate      any
 }
 
 type DomainService_Value_Properties_MigrationProperties_MigrationProgress struct {
 	CompletionPercentage any
-	ProgressMessage any
+	ProgressMessage      any
 }
 
 type DomainService_Value_Properties_MigrationProperties struct {
 	MigrationProgress any
-	OldSubnetId any
-	OldVnetSiteId any
+	OldSubnetId       any
+	OldVnetSiteId     any
 }
 
 type DomainService_Value_Properties_NotificationSettings struct {
 	AdditionalRecipients any
-	NotifyDcAdmins any
-	NotifyGlobalAdmins any
+	NotifyDcAdmins       any
+	NotifyGlobalAdmins   any
 }
 
 type DomainService_Value_Properties_ReplicaSets_HealthAlerts struct {
-	Id any
-	Issue any
-	LastDetected any
-	Name any
-	Raised any
+	Id            any
+	Issue         any
+	LastDetected  any
+	Name          any
+	Raised        any
 	ResolutionUri any
-	Severity any
+	Severity      any
 }
 
 type DomainService_Value_Properties_ReplicaSets_HealthMonitors struct {
 	Details any
-	Id any
-	Name any
+	Id      any
+	Name    any
 }
 
 type DomainService_Value_Properties_ReplicaSets struct {
 	DomainControllerIpAddress any
-	ExternalAccessIpAddress any
-	HealthAlerts any
-	HealthLastEvaluated any
-	HealthMonitors any
-	Location any
-	ReplicaSetId any
-	ServiceStatus any
-	SubnetId any
-	VnetSiteId any
+	ExternalAccessIpAddress   any
+	HealthAlerts              any
+	HealthLastEvaluated       any
+	HealthMonitors            any
+	Location                  any
+	ReplicaSetId              any
+	ServiceStatus             any
+	SubnetId                  any
+	VnetSiteId                any
 }
 
 type DomainService_Value_Properties_ResourceForestSettings_Settings struct {
-	FriendlyName any
-	RemoteDnsIps any
-	TrustDirection any
-	TrustPassword any
+	FriendlyName      any
+	RemoteDnsIps      any
+	TrustDirection    any
+	TrustPassword     any
 	TrustedDomainFqdn any
 }
 
 type DomainService_Value_Properties_ResourceForestSettings struct {
 	ResourceForest any
-	Settings any
+	Settings       any
 }
 
 type DomainService_Value_Properties struct {
-	ConfigDiagnostics any
-	DeploymentId any
+	ConfigDiagnostics       any
+	DeploymentId            any
 	DomainConfigurationType any
-	DomainName any
-	DomainSecuritySettings any
-	FilteredSync any
-	LdapsSettings any
-	MigrationProperties any
-	NotificationSettings any
-	ProvisioningState any
-	ReplicaSets any
-	ResourceForestSettings any
-	Sku any
-	SyncApplicationId any
-	SyncOwner any
-	SyncScope any
-	TenantId any
-	Version any
+	DomainName              any
+	DomainSecuritySettings  any
+	FilteredSync            any
+	LdapsSettings           any
+	MigrationProperties     any
+	NotificationSettings    any
+	ProvisioningState       any
+	ReplicaSets             any
+	ResourceForestSettings  any
+	Sku                     any
+	SyncApplicationId       any
+	SyncOwner               any
+	SyncScope               any
+	TenantId                any
+	Version                 any
 }
 
 type DomainService_Value struct {
@@ -127,14 +127,14 @@ type DomainService_Value struct {
 }
 
 type DomainServiceConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type DomainServiceAttrs struct {
 	ApiVersion any
 	// The continuation token for the next page of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// the list of domain services.
 	Value any
@@ -143,7 +143,7 @@ type DomainServiceAttrs struct {
 var DomainService = ubx.DataSourceBinding{
 	WireType: "azure_domainservices_domain_service",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

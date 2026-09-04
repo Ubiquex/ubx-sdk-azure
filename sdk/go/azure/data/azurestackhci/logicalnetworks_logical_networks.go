@@ -14,12 +14,12 @@ type LogicalnetworksLogicalNetworks_Value_Properties_DhcpOptions struct {
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Status_ProvisioningStatus struct {
 	OperationId any
-	Status any
+	Status      any
 }
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Status struct {
-	ErrorCode any
-	ErrorMessage any
+	ErrorCode          any
+	ErrorMessage       any
 	ProvisioningStatus any
 }
 
@@ -29,24 +29,24 @@ type LogicalnetworksLogicalNetworks_Value_Properties_Subnets_Properties_IpConfig
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Subnets_Properties_IpPools_Info struct {
 	Available any
-	Used any
+	Used      any
 }
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Subnets_Properties_IpPools struct {
-	End any
-	Info any
+	End        any
+	Info       any
 	IpPoolType any
-	Name any
-	Start any
+	Name       any
+	Start      any
 }
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Subnets_Properties_RouteTable_Properties_Routes_Properties struct {
-	AddressPrefix any
+	AddressPrefix    any
 	NextHopIpAddress any
 }
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Subnets_Properties_RouteTable_Properties_Routes struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -55,38 +55,38 @@ type LogicalnetworksLogicalNetworks_Value_Properties_Subnets_Properties_RouteTab
 }
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Subnets_Properties_RouteTable struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Subnets_Properties struct {
-	AddressPrefix any
-	AddressPrefixes any
-	IpAllocationMethod any
+	AddressPrefix             any
+	AddressPrefixes           any
+	IpAllocationMethod        any
 	IpConfigurationReferences any
-	IpPools any
-	RouteTable any
-	Vlan any
+	IpPools                   any
+	RouteTable                any
+	Vlan                      any
 }
 
 type LogicalnetworksLogicalNetworks_Value_Properties_Subnets struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type LogicalnetworksLogicalNetworks_Value_Properties struct {
-	DhcpOptions any
+	DhcpOptions       any
 	ProvisioningState any
-	Status any
-	Subnets any
-	VmSwitchName any
+	Status            any
+	Subnets           any
+	VmSwitchName      any
 }
 
 type LogicalnetworksLogicalNetworks_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LogicalnetworksLogicalNetworksConfig struct {
@@ -94,11 +94,10 @@ type LogicalnetworksLogicalNetworksConfig struct {
 
 type LogicalnetworksLogicalNetworksAttrs struct {
 	NextLink any
-	Value any
+	Value    any
 }
 
 var LogicalnetworksLogicalNetworks = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_logicalnetworks_logical_networks",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,38 +4,38 @@ package consumption
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMarketplace_Value_Properties struct {
-	AccountName any
-	AdditionalInfo any
+	AccountName          any
+	AdditionalInfo       any
 	AdditionalProperties any
-	BillingPeriodId any
-	ConsumedQuantity any
-	ConsumedService any
-	CostCenter any
-	Currency any
-	DepartmentName any
-	InstanceId any
-	InstanceName any
-	IsEstimated any
-	IsRecurringCharge any
-	MeterId any
-	OfferName any
-	OrderNumber any
-	PlanName any
-	PretaxCost any
-	PublisherName any
-	ResourceGroup any
-	ResourceRate any
-	SubscriptionGuid any
-	SubscriptionName any
-	UnitOfMeasure any
-	UsageEnd any
-	UsageStart any
+	BillingPeriodId      any
+	ConsumedQuantity     any
+	ConsumedService      any
+	CostCenter           any
+	Currency             any
+	DepartmentName       any
+	InstanceId           any
+	InstanceName         any
+	IsEstimated          any
+	IsRecurringCharge    any
+	MeterId              any
+	OfferName            any
+	OrderNumber          any
+	PlanName             any
+	PretaxCost           any
+	PublisherName        any
+	ResourceGroup        any
+	ResourceRate         any
+	SubscriptionGuid     any
+	SubscriptionName     any
+	UnitOfMeasure        any
+	UsageEnd             any
+	UsageStart           any
 }
 
 type OpenapiMarketplace_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiMarketplaceConfig struct {
@@ -45,7 +45,7 @@ type OpenapiMarketplaceConfig struct {
 type OpenapiMarketplaceAttrs struct {
 	// The link (url) to the next page of results.
 	NextLink any
-	Scope any
+	Scope    any
 	// The list of marketplaces.
 	Value any
 }

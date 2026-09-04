@@ -398,8 +398,6 @@ _FirewallpolicyFirewallPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class FirewallpolicyFirewallPolicyConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Identity for the resource.
     identity: Any = None
     # Firewall Policy definition.
@@ -417,7 +415,6 @@ class FirewallpolicyFirewallPolicyAttrs:
 FirewallpolicyFirewallPolicy = ubx.ResourceBinding(
     wire_type="azure_network_firewallpolicy_firewall_policy",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",

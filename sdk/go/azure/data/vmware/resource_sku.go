@@ -4,43 +4,43 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceSku_Value_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type ResourceSku_Value_LocationInfo_ZoneDetails struct {
 	Capabilities any
-	Name any
+	Name         any
 }
 
 type ResourceSku_Value_LocationInfo struct {
-	Location any
+	Location    any
 	ZoneDetails any
-	Zones any
+	Zones       any
 }
 
 type ResourceSku_Value_Restrictions_RestrictionInfo struct {
 	Locations any
-	Zones any
+	Zones     any
 }
 
 type ResourceSku_Value_Restrictions struct {
-	ReasonCode any
+	ReasonCode      any
 	RestrictionInfo any
-	Type any
-	Values any
+	Type            any
+	Values          any
 }
 
 type ResourceSku_Value struct {
 	Capabilities any
-	Family any
+	Family       any
 	LocationInfo any
-	Locations any
-	Name any
+	Locations    any
+	Name         any
 	ResourceType any
 	Restrictions any
-	Size any
-	Tier any
+	Size         any
+	Tier         any
 }
 
 type ResourceSkuConfig struct {
@@ -55,6 +55,5 @@ type ResourceSkuAttrs struct {
 
 var ResourceSku = ubx.DataSourceBinding{
 	WireType: "azure_vmware_resource_sku",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

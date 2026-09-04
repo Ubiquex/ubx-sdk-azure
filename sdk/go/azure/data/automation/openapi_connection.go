@@ -8,11 +8,11 @@ type OpenapiConnection_Value_Properties_ConnectionType struct {
 }
 
 type OpenapiConnection_Value_Properties struct {
-	ConnectionType any
-	CreationTime any
-	Description any
+	ConnectionType        any
+	CreationTime          any
+	Description           any
 	FieldDefinitionValues any
-	LastModifiedTime any
+	LastModifiedTime      any
 }
 
 type OpenapiConnection_Value struct {

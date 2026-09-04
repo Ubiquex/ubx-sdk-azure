@@ -2,9 +2,7 @@
 import type { Computed, FieldMap, ResourceBinding } from "@ubx/sdk";
 
 export interface MachineScaleSetVm_Identity_UserAssignedIdentities {
-  /** The client ID (GUID) of the user-assigned managed identity, used to identify it when requesting tokens. (AI-inferred) */
   clientId?: string | Computed<string>;
-  /** The principal ID of the user-assigned identity assigned to the virtual machine scale set VM. (AI-inferred) */
   principalId?: string | Computed<string>;
 }
 
@@ -45,7 +43,6 @@ export interface MachineScaleSetVm_Properties_AvailabilitySet {
 }
 
 export interface MachineScaleSetVm_Properties_CapacityReservation {
-  /** Specifies the capacity reservation group to associate with the virtual machine scale set VM. This allows the VM to use reserved capacity from the specified group. (AI-inferred) */
   capacityReservationGroup?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
   /** Specifies whether the virtual machine is explicitly opted out from being associated with any capacity reservation. When set to true, the virtual machine will not be allowed to implicitly or explicitly associate with any type of capacity reservation and will consume capacity from the publicly available capacity. Minimum api-version: 2026-04-01. */
   disableCapacityReservationAssignment?: boolean | Computed<boolean>;
@@ -102,48 +99,33 @@ export interface MachineScaleSetVm_Properties_InstanceView_BootDiagnostics {
 }
 
 export interface MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKey {
-  /** The secret URL of the disk encryption key in the Key Vault. This URL points to the secret containing the encryption key used for disk encryption. (AI-inferred) */
   secretUrl?: string | Computed<string>;
-  /** Specifies the Azure Key Vault that contains the disk encryption key used for encrypting the disk. (AI-inferred) */
   sourceVault?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
 }
 
 export interface MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_KeyEncryptionKey {
-  /** The URL of the key encryption key (KEK) used to wrap the disk encryption key. (AI-inferred) */
   keyUrl?: string | Computed<string>;
-  /** The Key Vault that contains the key encryption key used for disk encryption. (AI-inferred) */
   sourceVault?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
 }
 
 export interface MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings {
-  /** The disk encryption key used for encrypting the disk, containing a reference to the Azure Key Vault secret (secret URL and source vault). (AI-inferred) */
   diskEncryptionKey?: MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKey | Computed<MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKey>;
-  /** Indicates whether encryption is enabled for the disk. (AI-inferred) */
   enabled?: boolean | Computed<boolean>;
-  /** Represents the Key Encryption Key (KEK) used to wrap the disk encryption key. Includes the key URL and the source vault reference. (AI-inferred) */
   keyEncryptionKey?: MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_KeyEncryptionKey | Computed<MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_KeyEncryptionKey>;
 }
 
 export interface MachineScaleSetVm_Properties_InstanceView_Disks {
-  /** The encryption settings for the disk, as observed in the instance view. Each object represents the encryption configuration applied to this disk, typically including encryption status and key references. (AI-inferred) */
   encryptionSettings?: MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings[] | Computed<MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings[]>;
   name?: string | Computed<string>;
-  /** A list of statuses reported for the disk, with each status containing details such as code, level, display status, and message. (AI-inferred) */
   statuses?: MachineScaleSetVm_Properties_InstanceView_BootDiagnostics_Status[] | Computed<MachineScaleSetVm_Properties_InstanceView_BootDiagnostics_Status[]>;
-  /** The storage alignment status of the disk. Possible values are 'Aligned' and 'Unaligned'. (AI-inferred) */
   storageAlignmentStatus?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_InstanceView_Extensions {
-  /** The name of the virtual machine extension as reported in the instance view. (AI-inferred) */
   name?: string | Computed<string>;
-  /** The list of statuses for the extension instance view, including status code, level, display status, message, and time. (AI-inferred) */
   statuses?: MachineScaleSetVm_Properties_InstanceView_BootDiagnostics_Status[] | Computed<MachineScaleSetVm_Properties_InstanceView_BootDiagnostics_Status[]>;
-  /** The list of sub-statuses for the extension instance view, providing additional status information beyond the primary status. (AI-inferred) */
   substatuses?: MachineScaleSetVm_Properties_InstanceView_BootDiagnostics_Status[] | Computed<MachineScaleSetVm_Properties_InstanceView_BootDiagnostics_Status[]>;
-  /** The type of the virtual machine extension, specifying the publisher and extension type (e.g., Microsoft.Azure.Extensions.CustomScript). (AI-inferred) */
   type?: string | Computed<string>;
-  /** The version number of the extension handler running on the VM instance. (AI-inferred) */
   typeHandlerVersion?: string | Computed<string>;
 }
 
@@ -170,11 +152,8 @@ export interface MachineScaleSetVm_Properties_InstanceView_MaintenanceRedeploySt
 }
 
 export interface MachineScaleSetVm_Properties_InstanceView_VmAgent_ExtensionHandlers {
-  /** The status of the extension handler, containing properties such as code, level (e.g., Info, Warning, Error), displayStatus, message, and time. (AI-inferred) */
   status?: MachineScaleSetVm_Properties_InstanceView_BootDiagnostics_Status | Computed<MachineScaleSetVm_Properties_InstanceView_BootDiagnostics_Status>;
-  /** The type of the extension handler, such as Microsoft.Compute.CustomScriptExtension. (AI-inferred) */
   type?: string | Computed<string>;
-  /** The version of the extension handler type installed on the virtual machine. (AI-inferred) */
   typeHandlerVersion?: string | Computed<string>;
 }
 
@@ -243,124 +222,84 @@ export interface MachineScaleSetVm_Properties_NetworkProfile_InterconnectGroupPr
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettings {
-  /** Specifies the list of custom DNS server IP addresses to use for the network interface. (AI-inferred) */
   dnsServers?: string[] | Computed<string[]>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettings {
-  /** The domain name label for the DNS settings of the public IP address. This label is used to construct the FQDN as <label>.<region>.cloudapp.azure.com. (AI-inferred) */
   domainNameLabel?: string | Computed<string>;
-  /** Specifies the scope of domain name label reuse. Allowed values are TenantReuse, SubscriptionReuse, ResourceGroupReuse, and NoReuse, which indicate whether the label can be reused at the tenant, subscription, resource group, or not at all. (AI-inferred) */
   domainNameLabelScope?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTags {
-  /** The unique identifier of the first-party service tag associated with this IP tag. (AI-inferred) */
   firstPartyServiceTagId?: string | Computed<string>;
-  /** The type of the IP tag, which indicates the category or purpose of the tag (e.g., 'FirstPartyUsage' for first-party services). (AI-inferred) */
   ipTagType?: string | Computed<string>;
-  /** The value of the IP tag. This is paired with the IP tag type to specify a classification for the public IP address, such as routing preference or usage category. (AI-inferred) */
   tag?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties {
-  /** Specifies whether the public IP address is deleted or detached when the VM is deleted. Allowed values: 'Delete' (delete the public IP) and 'Detach' (retain the public IP, but detach it from the VM). (AI-inferred) */
   deleteOption?: string | Computed<string>;
-  /** Configuration for DNS settings on the public IP address, including domain name label and fully qualified domain name (FQDN). (AI-inferred) */
   dnsSettings?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettings | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettings>;
-  /** The idle timeout in minutes for the public IP address. This specifies how long a connection can remain idle before being closed by Azure; valid values are typically between 4 and 30 minutes. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
-  /** A list of IP tags to associate with the public IP address. Each IP tag is used to classify traffic for Microsoft and partner services, typically containing a tag type and a tag value. (AI-inferred) */
   ipTags?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTags[] | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTags[]>;
-  /** The IP version of the public IP address. Valid values are 'IPv4' and 'IPv6'. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
-  /** Specifies the public IP address allocation method. Allowed values are 'Dynamic' (the IP address can change) and 'Static' (a fixed IP address is assigned). (AI-inferred) */
   publicIpallocationMethod?: string | Computed<string>;
-  /** The public IP prefix resource to associate with the public IP address. This allows the IP address to be allocated from a predefined range. (AI-inferred) */
   publicIpprefix?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Sku {
-  /** The SKU name for the public IP address. Allowed values are Basic and Standard. (AI-inferred) */
   name?: string | Computed<string>;
-  /** The tier of the public IP address SKU. Allowed values are 'Regional' or 'Global'. (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration {
   name?: string | Computed<string>;
   properties?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties>;
-  /** The SKU (stock keeping unit) for the public IP address configuration, defining the pricing tier and available features. (AI-inferred) */
   sku?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Sku | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Sku>;
-  /** A map of key-value pairs used to tag the public IP address configuration for management and organization purposes. (AI-inferred) */
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties {
-  /** A list of references to backend address pools of an Azure Application Gateway. Each entry is a SubResource containing the resource ID of the backend pool. The IP configuration is associated with these pools so that the VM can receive traffic routed by the application gateway. (AI-inferred) */
   applicationGatewayBackendAddressPools?: MachineScaleSetVm_Properties_AvailabilitySet[] | Computed<MachineScaleSetVm_Properties_AvailabilitySet[]>;
-  /** The list of Application Security Groups (ASGs) associated with the IP configuration. Each object references an ASG by its resource ID, enabling the grouping of virtual machines for security policy enforcement. (AI-inferred) */
   applicationSecurityGroups?: MachineScaleSetVm_Properties_AvailabilitySet[] | Computed<MachineScaleSetVm_Properties_AvailabilitySet[]>;
-  /** Specifies the backend address pools of a load balancer to which this IP configuration is associated. In Azure, this is typically an array of references (resource IDs) to the load balancer's backend address pools. (AI-inferred) */
   loadBalancerBackendAddressPools?: MachineScaleSetVm_Properties_AvailabilitySet[] | Computed<MachineScaleSetVm_Properties_AvailabilitySet[]>;
-  /** Indicates whether this IP configuration is the primary configuration for the network interface. When true, this configuration is the primary IP configuration. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
-  /** The private IP address version for the IP configuration, either IPv4 or IPv6. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
   publicIpaddressConfiguration?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration>;
-  /** A reference to the subnet resource within the virtual network to which this IP configuration is attached. (AI-inferred) */
   subnet?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations {
-  /** The name of the IP configuration. This name must be unique within the network interface. (AI-inferred) */
   name?: string | Computed<string>;
   properties?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties {
-  /** Specifies the auxiliary mode of the network interface configuration. Allowed values: `None`, `AcceleratedConnections`, and `Floating`. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
-  /** The SKU for the auxiliary mode of the network interface configuration. Allowed values are 'None', 'A1', 'A2', 'A4', and 'A8'. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
-  /** Specifies whether the network interface is deleted or detached when the virtual machine scale set VM is deleted. Allowed values: 'Delete' (delete the NIC) and 'Detach' (keep the NIC, remove association). (AI-inferred) */
   deleteOption?: string | Computed<string>;
-  /** Whether TCP state tracking is disabled on this network interface configuration. Set to true to disable the Azure platform's TCP state tracking, typically for network virtual appliances that manage their own connection state. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
-  /** DNS settings for the network interface configuration, used to specify custom DNS server IP addresses for the VMSS instance's network interface. (AI-inferred) */
   dnsSettings?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettings | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettings>;
-  /** The DSCP configuration associated with this network interface. This is a reference object containing the resource ID of an existing DSCP configuration. (AI-inferred) */
   dscpConfiguration?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
-  /** Indicates whether accelerated networking is enabled on the network interface. When enabled, this enables single root I/O virtualization (SR-IOV) for the VM, which can improve network performance. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
-  /** Whether to enable FPGA-based network acceleration on this network interface. When true, the interface uses FPGA (Field-Programmable Gate Array) capabilities to offload network processing. (AI-inferred) */
   enableFpga?: boolean | Computed<boolean>;
-  /** Enables IP forwarding on this network interface, allowing the VM to forward traffic from other network interfaces or sources, commonly used for network virtual appliances. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
-  /** A list of IP configurations for this network interface configuration. Each IP configuration defines the private IP address, subnet, and optional public IP address for the virtual machine scale set VM. (AI-inferred) */
   ipConfigurations?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations[] | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations[]>;
-  /** The network security group (NSG) associated with this network interface configuration within the virtual machine scale set. (AI-inferred) */
   networkSecurityGroup?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
-  /** Specifies whether this network interface is the primary network interface for the virtual machine. Only one network interface configuration in the scale set can be marked as primary. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations {
-  /** The name of the network interface configuration. This name is used to identify the NIC configuration within the network profile of the VM scale set instance. (AI-inferred) */
   name?: string | Computed<string>;
   properties?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties>;
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaces_Properties {
-  /** Specifies whether the network interface should be deleted or detached when the VM is deleted. 'Delete' removes the NIC, while 'Detach' keeps it but removes the association. (AI-inferred) */
   deleteOption?: string | Computed<string>;
-  /** Indicates whether this is the primary network interface for the virtual machine. One network interface must be marked as primary. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaces {
-  /** The configuration properties of the network interface, including its IP configurations and whether it is the primary network interface. (AI-inferred) */
   properties?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaces_Properties | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaces_Properties>;
 }
 
@@ -376,77 +315,48 @@ export interface MachineScaleSetVm_Properties_NetworkProfile {
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties {
-  /** Specifies the behavior for the public IP address when the VM is deleted. Allowed values are "Delete" (the public IP is deleted along with the VM) and "Detach" (the public IP is detached and remains in the subscription). (AI-inferred) */
   deleteOption?: string | Computed<string>;
-  /** DNS settings for the public IP address, including the domain name label, fully qualified domain name (FQDN), and reverse FQDN. (AI-inferred) */
   dnsSettings?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettings | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettings>;
-  /** The number of minutes that a connection to the public IP address can remain idle before it is terminated by Azure. (AI-inferred) */
   idleTimeoutInMinutes?: number | Computed<number>;
-  /** A list of IP tags for the public IP address. Each tag is an object containing a tag type and a tag value. (AI-inferred) */
   ipTags?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTags[] | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTags[]>;
-  /** The version of the public IP address assigned to this IP configuration. Allowed values are IPv4 or IPv6. (AI-inferred) */
   publicIpaddressVersion?: string | Computed<string>;
-  /** Specifies the public IP prefix from which the public IP address is allocated. This is a reference to a public IP prefix resource. (AI-inferred) */
   publicIpprefix?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration {
-  /** The name of the public IP address configuration within the IP configuration of a network interface. (AI-inferred) */
   name?: string | Computed<string>;
   properties?: MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties | Computed<MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties>;
-  /** The SKU of the public IP address, defining its tier and performance characteristics. (AI-inferred) */
   sku?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Sku | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Sku>;
-  /** A mapping of user-defined key-value pairs to attach to the public IP address in this configuration. These tags can be used for categorizing and organizing Azure resources. (AI-inferred) */
   tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties {
-  /** Specifies the list of application gateway backend address pools associated with this IP configuration. Each object in the list represents a reference to a backend address pool resource. (AI-inferred) */
   applicationGatewayBackendAddressPools?: MachineScaleSetVm_Properties_AvailabilitySet[] | Computed<MachineScaleSetVm_Properties_AvailabilitySet[]>;
-  /** Specifies the application security groups that the network interface IP configuration belongs to. Each item contains the resource ID of an application security group. (AI-inferred) */
   applicationSecurityGroups?: MachineScaleSetVm_Properties_AvailabilitySet[] | Computed<MachineScaleSetVm_Properties_AvailabilitySet[]>;
-  /** Specifies the list of load balancer backend address pools to which this IP configuration is assigned, enabling the virtual machine to receive inbound traffic from a load balancer. Each item is a reference to an existing backend pool in the associated load balancer. (AI-inferred) */
   loadBalancerBackendAddressPools?: MachineScaleSetVm_Properties_AvailabilitySet[] | Computed<MachineScaleSetVm_Properties_AvailabilitySet[]>;
-  /** List of references to load balancer inbound NAT pools associated with this IP configuration. Each element specifies a load balancer inbound NAT pool to use for port forwarding or traffic routing. (AI-inferred) */
   loadBalancerInboundNatPools?: MachineScaleSetVm_Properties_AvailabilitySet[] | Computed<MachineScaleSetVm_Properties_AvailabilitySet[]>;
-  /** Specifies whether this IP configuration is the primary IP configuration for the network interface. Only one IP configuration per network interface can be set as primary. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
-  /** The IP version of the private IP address, either IPv4 or IPv6. (AI-inferred) */
   privateIpaddressVersion?: string | Computed<string>;
-  /** The public IP address configuration for this IP configuration, used to define settings for the public IP address assigned to the network interface in the virtual machine scale set. (AI-inferred) */
   publicIpaddressConfiguration?: MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration | Computed<MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration>;
-  /** Specifies the subnet to which the IP configuration is attached. This is a reference object containing the resource ID of the subnet within a virtual network. (AI-inferred) */
   subnet?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations {
   name?: string | Computed<string>;
-  /** The specific configuration properties for this IP configuration, including settings such as the subnet, private IP address allocation, and any associated load balancer backend pools. (AI-inferred) */
   properties?: MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties | Computed<MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties>;
 }
 
 export interface MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties {
-  /** Specifies the auxiliary mode for the network interface configuration. Possible values are: None, AcceleratedConnections, and Floating. (AI-inferred) */
   auxiliaryMode?: string | Computed<string>;
-  /** Specifies the auxiliary SKU for the network interface, which determines the auxiliary network capability. Allowed values are None (no auxiliary SKU) and A1, A2, A4, A8, with higher values indicating increased auxiliary network configuration. (AI-inferred) */
   auxiliarySku?: string | Computed<string>;
-  /** Determines whether the network interface is deleted or detached when the virtual machine is deleted. Allowed values: 'Delete' or 'Detach'. (AI-inferred) */
   deleteOption?: string | Computed<string>;
-  /** Indicates whether TCP state tracking is disabled for the IP configuration. When set to true, the network interface does not track TCP connection state, which can be useful for asymmetric routing scenarios. (AI-inferred) */
   disableTcpStateTracking?: boolean | Computed<boolean>;
-  /** DNS settings for the network interface, including DNS servers and internal DNS name label. (AI-inferred) */
   dnsSettings?: MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettings | Computed<MachineScaleSetVm_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettings>;
-  /** Enables accelerated networking on the network interface, which uses Single Root I/O Virtualization (SR-IOV) to provide higher networking performance and lower latency. Set to true to enable, false to disable. (AI-inferred) */
   enableAcceleratedNetworking?: boolean | Computed<boolean>;
-  /** Whether to enable FPGA (Field Programmable Gate Array) acceleration on this network interface configuration. Set to true only for VM sizes that support FPGA-accelerated networking. (AI-inferred) */
   enableFpga?: boolean | Computed<boolean>;
-  /** Indicates whether IP forwarding is enabled on this network interface. When enabled, the virtual machine can forward packets not addressed to itself, which is useful for scenarios such as routing or network virtual appliances. (AI-inferred) */
   enableIpforwarding?: boolean | Computed<boolean>;
-  /** Specifies the IP configurations for the network interface. Each IP configuration defines settings such as subnet, private IP address allocation, and associated public IP address. (AI-inferred) */
   ipConfigurations?: MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations[] | Computed<MachineScaleSetVm_Properties_NetworkProfileConfiguration_NetworkInterfaceConfigurations_Properties_IpConfigurations[]>;
-  /** The network security group (NSG) to associate with this network interface configuration. This is a reference to an existing NSG resource, typically specified via its resource ID. (AI-inferred) */
   networkSecurityGroup?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
-  /** Indicates whether this network interface is the primary NIC for the virtual machine scale set VM. When multiple network interfaces are configured, one must be marked as primary. (AI-inferred) */
   primary?: boolean | Computed<boolean>;
 }
 
@@ -480,9 +390,7 @@ export interface MachineScaleSetVm_Properties_OsProfile_LinuxConfiguration_Patch
 }
 
 export interface MachineScaleSetVm_Properties_OsProfile_LinuxConfiguration_Ssh_PublicKeys {
-  /** The SSH public key data, typically the contents of a public key file in PEM format, used for authenticating to the virtual machine. (AI-inferred) */
   keyData?: string | Computed<string>;
-  /** The full path on the Linux VM where the SSH public key is placed, typically ending in .ssh/authorized_keys for a specific user. (AI-inferred) */
   path?: string | Computed<string>;
 }
 
@@ -505,27 +413,19 @@ export interface MachineScaleSetVm_Properties_OsProfile_LinuxConfiguration {
 }
 
 export interface MachineScaleSetVm_Properties_OsProfile_Secrets_VaultCertificates {
-  /** The name of the certificate store on the Windows virtual machine where the certificate is added, such as 'My' or 'Root'. This is used when installing certificates from Azure Key Vault. (AI-inferred) */
   certificateStore?: string | Computed<string>;
-  /** The URL of the certificate in the Azure Key Vault, including the certificate version. This URL identifies the certificate to install on the virtual machine. (AI-inferred) */
   certificateUrl?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_OsProfile_Secrets {
-  /** The Azure Key Vault that contains the certificates to be installed. Each secret in the OS profile must specify a source vault, and the certificates are referenced by their URLs within that vault. (AI-inferred) */
   sourceVault?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
-  /** A list of Key Vault certificates to be installed on the virtual machine. Each item references a certificate URL in Azure Key Vault. (AI-inferred) */
   vaultCertificates?: MachineScaleSetVm_Properties_OsProfile_Secrets_VaultCertificates[] | Computed<MachineScaleSetVm_Properties_OsProfile_Secrets_VaultCertificates[]>;
 }
 
 export interface MachineScaleSetVm_Properties_OsProfile_WindowsConfiguration_AdditionalUnattendContent {
-  /** The name of the Windows component to configure during unattended installation. The only allowed value is 'Microsoft-Windows-Shell-Setup'. (AI-inferred) */
   componentName?: string | Computed<string>;
-  /** Specifies the XML formatted content that is added to the unattend.xml file for the Windows configuration. (AI-inferred) */
   content?: string | Computed<string>;
-  /** The name of the Windows unattend pass for the additional unattended content. The allowed value is 'OobeSystem', which specifies the Out-of-Box Experience pass. (AI-inferred) */
   passName?: string | Computed<string>;
-  /** Specifies the name of the additional Unattended Content setting. Allowed values: AutoLogon, FirstLogonCommands. (AI-inferred) */
   settingName?: string | Computed<string>;
 }
 
@@ -541,9 +441,7 @@ export interface MachineScaleSetVm_Properties_OsProfile_WindowsConfiguration_Pat
 }
 
 export interface MachineScaleSetVm_Properties_OsProfile_WindowsConfiguration_WinRm_Listeners {
-  /** The URL of the certificate in Azure Key Vault used for the HTTPS WinRM listener on the virtual machine. (AI-inferred) */
   certificateUrl?: string | Computed<string>;
-  /** Specifies the protocol used by the WinRM listener. Allowed values are 'Http' and 'Https'. (AI-inferred) */
   protocol?: string | Computed<string>;
 }
 
@@ -647,35 +545,24 @@ export interface MachineScaleSetVm_Properties_SecurityProfile {
 }
 
 export interface MachineScaleSetVm_Properties_StorageProfile_DataDisks_Image {
-  /** The URI of the virtual hard disk (VHD) blob used as the image for the data disk. This applies to unmanaged disks, where the image is referenced by its blob storage URI. (AI-inferred) */
   uri?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy {
-  /** The action to take when a disk delay is detected. Allowed values are 'None' (no action) and 'AutomaticReattach' (automatically reattach the disk). (AI-inferred) */
   actionOnDiskDelay?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties {
   availabilityPolicy?: MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy | Computed<MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicy>;
-  /** Whether performance bursting is enabled for the managed disk, allowing it to exceed its provisioned performance limits temporarily. (AI-inferred) */
   burstingEnabled?: boolean | Computed<boolean>;
-  /** Specifies the Azure resource ID of the DiskAccess resource to associate with the managed disk for enabling private endpoint access to the disk. (AI-inferred) */
   diskAccessId?: string | Computed<string>;
-  /** The provisioned read-only IOPS limit for the managed disk, expressed in operations per second. This value applies to scenarios where the disk is used in a read-only or shared configuration. (AI-inferred) */
   diskIopsreadOnly?: number | Computed<number>;
-  /** The maximum read throughput, in MB/s, that the managed disk can support when mounted in read-only mode. This performance limit applies to certain disk types (e.g., Ultra disks or Premium SSD v2) within the VMSS VM's data disk configuration. (AI-inferred) */
   diskMbpsReadOnly?: number | Computed<number>;
   logicalSectorSize?: number | Computed<number>;
-  /** The maximum number of VMs that can share the disk. The value must be at least 1. (AI-inferred) */
   maxShares?: number | Computed<number>;
-  /** The network access policy for the managed data disk. Allowed values are 'AllowAll' (allow all network access), 'AllowPrivate' (allow only private network access), and 'DenyAll' (deny all network access). (AI-inferred) */
   networkAccessPolicy?: string | Computed<string>;
-  /** Boolean flag indicating whether the managed disk is optimized for frequent attach/detach operations. When true, the disk is configured to reduce the time for attaching and detaching, which is useful for scenarios like cluster failover. (AI-inferred) */
   optimizedForFrequentAttach?: boolean | Computed<boolean>;
-  /** Specifies whether to enable Azure Managed Disk Performance Plus, which provides higher IOPS and throughput limits on the disk for an additional cost. (AI-inferred) */
   performancePlus?: boolean | Computed<boolean>;
-  /** Specifies the performance tier of the managed disk (e.g., P10, E10). (AI-inferred) */
   tier?: string | Computed<string>;
 }
 
@@ -684,50 +571,33 @@ export interface MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDi
 }
 
 export interface MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_SecurityProfile {
-  /** The disk encryption set used to encrypt this managed disk at rest using customer-managed keys. (AI-inferred) */
   diskEncryptionSet?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
-  /** Specifies the security encryption type for the managed disk. Allowed values: VMGuestStateOnly (encrypts only the VM guest state), DiskWithVMGuestState (encrypts both the disk and the VM guest state), NonPersistedTPM (uses a non-persisted TPM). (AI-inferred) */
   securityEncryptionType?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk {
   additionalDiskProperties?: MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties | Computed<MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties>;
-  /** Specifies the customer-managed disk encryption set to use for encrypting this managed data disk. Provide the resource ID of the disk encryption set in the 'id' property. (AI-inferred) */
   diskEncryptionSet?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
-  /** The security profile of the managed data disk, used to configure disk-level security options such as Trusted Launch or confidential VM disk encryption. (AI-inferred) */
   securityProfile?: MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_SecurityProfile | Computed<MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk_SecurityProfile>;
-  /** Specifies the storage account type for the managed disk. Allowed values are Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, and PremiumV2_LRS. (AI-inferred) */
   storageAccountType?: string | Computed<string>;
 }
 
 export interface MachineScaleSetVm_Properties_StorageProfile_DataDisks {
-  /** Specifies the caching requirements for the data disk. Possible values are None, ReadOnly, and ReadWrite. (AI-inferred) */
   caching?: string | Computed<string>;
-  /** Specifies how the data disk should be created. Allowed values are `FromImage` (use the data disk from the image), `Empty` (create a new blank disk), `Attach` (attach an existing managed disk), `Copy` (create the disk by copying from an existing disk or snapshot), and `Restore` (create the disk from a restore point). (AI-inferred) */
   createOption?: string | Computed<string>;
-  /** Specifies the behavior of the data disk when the VM is deleted. When set to 'Delete', the disk is deleted along with the VM; when set to 'Detach', the disk is detached and retained. (AI-inferred) */
   deleteOption?: string | Computed<string>;
-  /** Specifies the detach option for the data disk. The only supported value is 'ForceDetach', which allows detaching the disk even if it is currently in use or has pending operations. (AI-inferred) */
   detachOption?: string | Computed<string>;
-  /** The number of I/O operations per second (IOPS) that the disk can support for both read and write operations. This is configurable for certain disk types, such as Ultra disks. (AI-inferred) */
   diskIopsreadWrite?: number | Computed<number>;
-  /** The maximum read/write throughput in megabytes per second (MB/s) that the data disk can sustain. This value is used to define the performance tier of the disk. (AI-inferred) */
   diskMbpsReadWrite?: number | Computed<number>;
   diskSizeGb?: number | Computed<number>;
-  /** Specifies the image reference for the data disk, containing the URI to a VHD in a storage account. Used when the disk is created from an image (createOption = 'FromImage'). (AI-inferred) */
   image?: MachineScaleSetVm_Properties_StorageProfile_DataDisks_Image | Computed<MachineScaleSetVm_Properties_StorageProfile_DataDisks_Image>;
-  /** The Logical Unit Number (LUN) assigned to the data disk. This value uniquely identifies the disk within the virtual machine and is used by the operating system to address the disk. (AI-inferred) */
   lun?: number | Computed<number>;
   managedDisk?: MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk | Computed<MachineScaleSetVm_Properties_StorageProfile_DataDisks_ManagedDisk>;
   name?: string | Computed<string>;
   sourceResource?: MachineScaleSetVm_Properties_AvailabilitySet | Computed<MachineScaleSetVm_Properties_AvailabilitySet>;
-  /** Specifies the fault domain alignment mode for the data disk. Possible values are 'Aligned' (disk is placed in the same fault domain as the VM) and 'BestEffortAligned' (alignment is attempted but not guaranteed). (AI-inferred) */
   storageFaultDomainAlignment?: string | Computed<string>;
-  /** Specifies whether the data disk should be detached from the virtual machine instead of being deleted when the VM is deleted. Set to true to detach the disk, false to delete it with the VM. (AI-inferred) */
   toBeDetached?: boolean | Computed<boolean>;
-  /** The virtual hard disk (VHD) settings for the data disk, typically containing the URI of the VHD blob that backs the disk when using unmanaged storage. (AI-inferred) */
   vhd?: MachineScaleSetVm_Properties_StorageProfile_DataDisks_Image | Computed<MachineScaleSetVm_Properties_StorageProfile_DataDisks_Image>;
-  /** Specifies whether write accelerator is enabled for this data disk. (AI-inferred) */
   writeAcceleratorEnabled?: boolean | Computed<boolean>;
 }
 
@@ -848,31 +718,18 @@ export interface MachineScaleSetVm_Properties {
 }
 
 export interface MachineScaleSetVm_Resources_Properties {
-  /** Specifies whether the virtual machine automatically upgrades to the latest minor version of the operating system image when it becomes available. (AI-inferred) */
   autoUpgradeMinorVersion?: boolean | Computed<boolean>;
-  /** Enable or disable automatic upgrades for this virtual machine scale set VM instance. (AI-inferred) */
   enableAutomaticUpgrade?: boolean | Computed<boolean>;
-  /** A user-specified tag value that, when changed, forces the virtual machine instance to be updated or reimaged even if it already has the latest scale set model. (AI-inferred) */
   forceUpdateTag?: string | Computed<string>;
-  /** Contains the runtime state and status of the virtual machine instance, including health statuses, disk and extension statuses, as viewed by Azure. (AI-inferred) */
   instanceView?: MachineScaleSetVm_Properties_InstanceView_Extensions | Computed<MachineScaleSetVm_Properties_InstanceView_Extensions>;
-  /** The protected settings for the VM extension, containing sensitive configuration that is encrypted and not visible in plaintext. These settings are transmitted securely to the VM. (AI-inferred) */
   protectedSettings?: unknown | Computed<unknown>;
-  /** Specifies a reference to an Azure Key Vault secret that contains the protected settings for the extension. This allows sensitive configuration data to be stored securely in Key Vault rather than being exposed in the template. (AI-inferred) */
   protectedSettingsFromKeyVault?: MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKey | Computed<MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKey>;
-  /** Specifies the names of extensions that must be provisioned before this extension. This extension will only be provisioned after all referenced extensions have been successfully provisioned. (AI-inferred) */
   provisionAfterExtensions?: string[] | Computed<string[]>;
-  /** The current provisioning state of the virtual machine scale set instance, indicating whether the VM has been successfully provisioned or is still in progress. (AI-inferred) */
   provisioningState?: string | Computed<string>;
-  /** The publisher of the VM extension, such as Microsoft.Compute or Microsoft.Azure.Extensions. (AI-inferred) */
   publisher?: string | Computed<string>;
-  /** The configuration settings for the virtual machine scale set VM extension. This dynamic JSON object contains extension-specific properties, and its structure and valid values depend on the extension publisher and type. (AI-inferred) */
   settings?: unknown | Computed<unknown>;
-  /** Indicates whether failures reported by the extension should be suppressed. When true, an extension failure does not mark the virtual machine as failed; when false or omitted, the failure affects the VM's provisioning state. (AI-inferred) */
   suppressFailures?: boolean | Computed<boolean>;
-  /** The type of the resource or extension defined in the properties block, e.g., 'CustomScriptExtension' for a VM extension. (AI-inferred) */
   type?: string | Computed<string>;
-  /** Specifies the version of the extension handler that is used by the VM extension. (AI-inferred) */
   typeHandlerVersion?: string | Computed<string>;
 }
 
@@ -1901,38 +1758,6 @@ const MachineScaleSetVm_PropertiesFields: FieldMap = {
   vmId: "vm_id",
 };
 
-const MachineScaleSetVm_Resources_PropertiesFields: FieldMap = {
-  autoUpgradeMinorVersion: "auto_upgrade_minor_version",
-  enableAutomaticUpgrade: "enable_automatic_upgrade",
-  forceUpdateTag: "force_update_tag",
-  instanceView: {
-    wireName: "instance_view",
-    kind: "object",
-    fields: MachineScaleSetVm_Properties_InstanceView_ExtensionsFields,
-  },
-  protectedSettings: "protected_settings",
-  protectedSettingsFromKeyVault: {
-    wireName: "protected_settings_from_key_vault",
-    kind: "object",
-    fields: MachineScaleSetVm_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKeyFields,
-  },
-  provisionAfterExtensions: "provision_after_extensions",
-  provisioningState: "provisioning_state",
-  publisher: "publisher",
-  settings: "settings",
-  suppressFailures: "suppress_failures",
-  type: "type",
-  typeHandlerVersion: "type_handler_version",
-};
-
-const MachineScaleSetVm_ResourcesFields: FieldMap = {
-  properties: {
-    wireName: "properties",
-    kind: "object",
-    fields: MachineScaleSetVm_Resources_PropertiesFields,
-  },
-};
-
 const MachineScaleSetVm_SkuFields: FieldMap = {
   capacity: "capacity",
   name: "name",
@@ -1940,22 +1765,14 @@ const MachineScaleSetVm_SkuFields: FieldMap = {
 };
 
 export interface MachineScaleSetVmConfig {
-  /** Etag is property returned in Update/Get response of the VMSS VM, so that customer can supply it in the header to ensure optimistic updates. */
-  etag?: string | Computed<string>;
   /** Identity for the virtual machine. */
   identity?: MachineScaleSetVm_Identity | Computed<MachineScaleSetVm_Identity>;
-  /** The virtual machine instance ID. */
-  instanceId?: string | Computed<string>;
   /** Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use. In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**. */
   plan?: MachineScaleSetVm_Plan | Computed<MachineScaleSetVm_Plan>;
   /** Describes the properties of a virtual machine scale set virtual machine. */
   properties?: MachineScaleSetVm_Properties | Computed<MachineScaleSetVm_Properties>;
-  /** The virtual machine child extension resources. */
-  resources?: MachineScaleSetVm_Resources[] | Computed<MachineScaleSetVm_Resources[]>;
   /** Describes a virtual machine scale set sku. NOTE: If the new VM SKU is not supported on the hardware the scale set is currently on, you need to deallocate the VMs in the scale set before you modify the SKU name. */
   sku?: MachineScaleSetVm_Sku | Computed<MachineScaleSetVm_Sku>;
-  /** The virtual machine zones. */
-  zones?: string[] | Computed<string[]>;
 }
 
 export interface MachineScaleSetVmAttrs {
@@ -1980,13 +1797,11 @@ export interface MachineScaleSetVmAttrs {
 export const MachineScaleSetVm: ResourceBinding<MachineScaleSetVmConfig, MachineScaleSetVmAttrs> = {
   wireType: "azure_virtual_machine_scale_set_vm",
   fields: {
-    etag: "etag",
     identity: {
       wireName: "identity",
       kind: "object",
       fields: MachineScaleSetVm_IdentityFields,
     },
-    instanceId: "instance_id",
     plan: {
       wireName: "plan",
       kind: "object",
@@ -1997,16 +1812,10 @@ export const MachineScaleSetVm: ResourceBinding<MachineScaleSetVmConfig, Machine
       kind: "object",
       fields: MachineScaleSetVm_PropertiesFields,
     },
-    resources: {
-      wireName: "resources",
-      kind: "list",
-      fields: MachineScaleSetVm_ResourcesFields,
-    },
     sku: {
       wireName: "sku",
       kind: "object",
       fields: MachineScaleSetVm_SkuFields,
     },
-    zones: "zones",
   },
 };

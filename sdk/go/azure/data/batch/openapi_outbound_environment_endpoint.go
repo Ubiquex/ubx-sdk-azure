@@ -8,13 +8,13 @@ type OpenapiOutboundEnvironmentEndpoint_Value_Endpoints_EndpointDetails struct {
 }
 
 type OpenapiOutboundEnvironmentEndpoint_Value_Endpoints struct {
-	Description any
-	DomainName any
+	Description     any
+	DomainName      any
 	EndpointDetails any
 }
 
 type OpenapiOutboundEnvironmentEndpoint_Value struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 

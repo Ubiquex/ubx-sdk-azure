@@ -8,9 +8,9 @@ type InputsInput_Value_Properties_Compression struct {
 }
 
 type InputsInput_Value_Properties_Diagnostics_Conditions struct {
-	Code any
+	Code    any
 	Message any
-	Since any
+	Since   any
 }
 
 type InputsInput_Value_Properties_Diagnostics struct {
@@ -18,12 +18,12 @@ type InputsInput_Value_Properties_Diagnostics struct {
 }
 
 type InputsInput_Value_Properties struct {
-	Compression any
-	Diagnostics any
-	Etag any
-	PartitionKey any
+	Compression   any
+	Diagnostics   any
+	Etag          any
+	PartitionKey  any
 	Serialization any
-	Type any
+	Type          any
 }
 
 type InputsInput_Value struct {
@@ -42,6 +42,5 @@ type InputsInputAttrs struct {
 
 var InputsInput = ubx.DataSourceBinding{
 	WireType: "azure_streamanalytics_inputs_input",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

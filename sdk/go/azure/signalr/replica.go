@@ -26,18 +26,18 @@ type Replica_Sku struct {
 }
 
 var Replica_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RegionEndpointEnabled": ubx.FieldSpec{WireName: "region_endpoint_enabled"},
-		"ResourceStopped": ubx.FieldSpec{WireName: "resource_stopped"},
-	}
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"RegionEndpointEnabled": ubx.FieldSpec{WireName: "region_endpoint_enabled"},
+	"ResourceStopped":       ubx.FieldSpec{WireName: "resource_stopped"},
+}
 
 var Replica_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ReplicaConfig struct {
 	Properties any
@@ -56,13 +56,13 @@ var Replica = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Replica_PropertiesFields,
+			Kind:     "object",
+			Fields:   Replica_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Replica_SkuFields,
+			Kind:     "object",
+			Fields:   Replica_SkuFields,
 		},
 	},
 }

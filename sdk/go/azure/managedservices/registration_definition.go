@@ -16,27 +16,27 @@ type RegistrationDefinition_Plan struct {
 
 type RegistrationDefinition_Properties_Authorizations struct {
 	DelegatedRoleDefinitionIds any
-	PrincipalId any
-	PrincipalIdDisplayName any
-	RoleDefinitionId any
+	PrincipalId                any
+	PrincipalIdDisplayName     any
+	RoleDefinitionId           any
 }
 
 type RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers struct {
-	PrincipalId any
+	PrincipalId            any
 	PrincipalIdDisplayName any
 }
 
 type RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy struct {
-	ManagedByTenantApprovers any
+	ManagedByTenantApprovers  any
 	MaximumActivationDuration any
-	MultiFactorAuthProvider any
+	MultiFactorAuthProvider   any
 }
 
 type RegistrationDefinition_Properties_EligibleAuthorizations struct {
 	JustInTimeAccessPolicy any
-	PrincipalId any
+	PrincipalId            any
 	PrincipalIdDisplayName any
-	RoleDefinitionId any
+	RoleDefinitionId       any
 }
 
 type RegistrationDefinition_Properties struct {
@@ -76,87 +76,70 @@ type RegistrationDefinition_SystemData struct {
 }
 
 var RegistrationDefinition_PlanFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Product": ubx.FieldSpec{WireName: "product"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Name":      ubx.FieldSpec{WireName: "name"},
+	"Product":   ubx.FieldSpec{WireName: "product"},
+	"Publisher": ubx.FieldSpec{WireName: "publisher"},
+	"Version":   ubx.FieldSpec{WireName: "version"},
+}
 
 var RegistrationDefinition_Properties_AuthorizationsFields = ubx.FieldMap{
-		"DelegatedRoleDefinitionIds": ubx.FieldSpec{WireName: "delegated_role_definition_ids"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"PrincipalIdDisplayName": ubx.FieldSpec{WireName: "principal_id_display_name"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-	}
+	"DelegatedRoleDefinitionIds": ubx.FieldSpec{WireName: "delegated_role_definition_ids"},
+	"PrincipalId":                ubx.FieldSpec{WireName: "principal_id"},
+	"PrincipalIdDisplayName":     ubx.FieldSpec{WireName: "principal_id_display_name"},
+	"RoleDefinitionId":           ubx.FieldSpec{WireName: "role_definition_id"},
+}
 
 var RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApproversFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"PrincipalIdDisplayName": ubx.FieldSpec{WireName: "principal_id_display_name"},
-	}
+	"PrincipalId":            ubx.FieldSpec{WireName: "principal_id"},
+	"PrincipalIdDisplayName": ubx.FieldSpec{WireName: "principal_id_display_name"},
+}
 
 var RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicyFields = ubx.FieldMap{
-		"ManagedByTenantApprovers": ubx.FieldSpec{
-			WireName: "managed_by_tenant_approvers",
-			Kind: "list",
-			Fields: RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApproversFields,
-		},
-		"MaximumActivationDuration": ubx.FieldSpec{WireName: "maximum_activation_duration"},
-		"MultiFactorAuthProvider": ubx.FieldSpec{WireName: "multi_factor_auth_provider"},
-	}
+	"ManagedByTenantApprovers": ubx.FieldSpec{
+		WireName: "managed_by_tenant_approvers",
+		Kind:     "list",
+		Fields:   RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApproversFields,
+	},
+	"MaximumActivationDuration": ubx.FieldSpec{WireName: "maximum_activation_duration"},
+	"MultiFactorAuthProvider":   ubx.FieldSpec{WireName: "multi_factor_auth_provider"},
+}
 
 var RegistrationDefinition_Properties_EligibleAuthorizationsFields = ubx.FieldMap{
-		"JustInTimeAccessPolicy": ubx.FieldSpec{
-			WireName: "just_in_time_access_policy",
-			Kind: "object",
-			Fields: RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicyFields,
-		},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"PrincipalIdDisplayName": ubx.FieldSpec{WireName: "principal_id_display_name"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-	}
+	"JustInTimeAccessPolicy": ubx.FieldSpec{
+		WireName: "just_in_time_access_policy",
+		Kind:     "object",
+		Fields:   RegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicyFields,
+	},
+	"PrincipalId":            ubx.FieldSpec{WireName: "principal_id"},
+	"PrincipalIdDisplayName": ubx.FieldSpec{WireName: "principal_id_display_name"},
+	"RoleDefinitionId":       ubx.FieldSpec{WireName: "role_definition_id"},
+}
 
 var RegistrationDefinition_PropertiesFields = ubx.FieldMap{
-		"Authorizations": ubx.FieldSpec{
-			WireName: "authorizations",
-			Kind: "list",
-			Fields: RegistrationDefinition_Properties_AuthorizationsFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"EligibleAuthorizations": ubx.FieldSpec{
-			WireName: "eligible_authorizations",
-			Kind: "list",
-			Fields: RegistrationDefinition_Properties_EligibleAuthorizationsFields,
-		},
-		"ManagedByTenantId": ubx.FieldSpec{WireName: "managed_by_tenant_id"},
-		"ManagedByTenantName": ubx.FieldSpec{WireName: "managed_by_tenant_name"},
-		"ManageeTenantId": ubx.FieldSpec{WireName: "managee_tenant_id"},
-		"ManageeTenantName": ubx.FieldSpec{WireName: "managee_tenant_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RegistrationDefinitionName": ubx.FieldSpec{WireName: "registration_definition_name"},
-	}
-
-var RegistrationDefinition_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"Authorizations": ubx.FieldSpec{
+		WireName: "authorizations",
+		Kind:     "list",
+		Fields:   RegistrationDefinition_Properties_AuthorizationsFields,
+	},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"EligibleAuthorizations": ubx.FieldSpec{
+		WireName: "eligible_authorizations",
+		Kind:     "list",
+		Fields:   RegistrationDefinition_Properties_EligibleAuthorizationsFields,
+	},
+	"ManagedByTenantId":          ubx.FieldSpec{WireName: "managed_by_tenant_id"},
+	"ManagedByTenantName":        ubx.FieldSpec{WireName: "managed_by_tenant_name"},
+	"ManageeTenantId":            ubx.FieldSpec{WireName: "managee_tenant_id"},
+	"ManageeTenantName":          ubx.FieldSpec{WireName: "managee_tenant_name"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"RegistrationDefinitionName": ubx.FieldSpec{WireName: "registration_definition_name"},
+}
 
 type RegistrationDefinitionConfig struct {
-	// The fully qualified path of the registration definition.
-	Id any
-	// The name of the registration definition.
-	Name any
 	// The details for the Managed Services offer’s plan in Azure Marketplace.
 	Plan any
 	// The properties of a registration definition.
 	Properties any
-	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
-	// The type of the Azure resource (Microsoft.ManagedServices/registrationDefinitions).
-	Type any
 	// path parameter, not part of the API's own resource representation
 	Scope any
 }
@@ -181,24 +164,16 @@ type RegistrationDefinitionAttrs struct {
 var RegistrationDefinition = ubx.ResourceBinding{
 	WireType: "azure_managedservices_registration_definition",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
 		"Plan": ubx.FieldSpec{
 			WireName: "plan",
-			Kind: "object",
-			Fields: RegistrationDefinition_PlanFields,
+			Kind:     "object",
+			Fields:   RegistrationDefinition_PlanFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RegistrationDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   RegistrationDefinition_PropertiesFields,
 		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: RegistrationDefinition_SystemDataFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},
 }

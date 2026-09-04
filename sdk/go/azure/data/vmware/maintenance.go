@@ -4,29 +4,29 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Maintenance_Value_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources_Errors struct {
-	ActionRequired any
-	Details any
-	ErrorCode any
-	Name any
+	ActionRequired  any
+	Details         any
+	ErrorCode       any
+	Name            any
 	ResolutionSteps any
 }
 
 type Maintenance_Value_Properties_MaintenanceReadiness_FailedChecks_ImpactedResources struct {
 	Errors any
-	Id any
+	Id     any
 }
 
 type Maintenance_Value_Properties_MaintenanceReadiness_FailedChecks struct {
 	ImpactedResources any
-	Name any
+	Name              any
 }
 
 type Maintenance_Value_Properties_MaintenanceReadiness struct {
 	FailedChecks any
-	LastUpdated any
-	Message any
-	Status any
-	Type any
+	LastUpdated  any
+	Message      any
+	Status       any
+	Type         any
 }
 
 type Maintenance_Value_Properties_Operations struct {
@@ -34,25 +34,25 @@ type Maintenance_Value_Properties_Operations struct {
 }
 
 type Maintenance_Value_Properties_State struct {
-	EndedAt any
-	Message any
-	Name any
+	EndedAt   any
+	Message   any
+	Name      any
 	StartedAt any
 }
 
 type Maintenance_Value_Properties struct {
-	ClusterId any
-	Component any
-	DisplayName any
+	ClusterId                  any
+	Component                  any
+	DisplayName                any
 	EstimatedDurationInMinutes any
-	Impact any
-	InfoLink any
-	MaintenanceReadiness any
-	Operations any
-	ProvisioningState any
-	ScheduledByMicrosoft any
-	ScheduledStartTime any
-	State any
+	Impact                     any
+	InfoLink                   any
+	MaintenanceReadiness       any
+	Operations                 any
+	ProvisioningState          any
+	ScheduledByMicrosoft       any
+	ScheduledStartTime         any
+	State                      any
 }
 
 type Maintenance_Value struct {
@@ -60,21 +60,21 @@ type Maintenance_Value struct {
 }
 
 type MaintenanceConfig struct {
-	From any
+	From             any
 	PrivateCloudName any
-	StateName any
-	Status any
-	To any
+	StateName        any
+	Status           any
+	To               any
 }
 
 type MaintenanceAttrs struct {
 	From any
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
-	StateName any
-	Status any
-	To any
+	StateName        any
+	Status           any
+	To               any
 	// The Maintenance items on this page
 	Value any
 }
@@ -82,10 +82,10 @@ type MaintenanceAttrs struct {
 var Maintenance = ubx.DataSourceBinding{
 	WireType: "azure_vmware_maintenance",
 	Fields: ubx.FieldMap{
-		"From": ubx.FieldSpec{WireName: "from"},
+		"From":             ubx.FieldSpec{WireName: "from"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
-		"StateName": ubx.FieldSpec{WireName: "state_name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"To": ubx.FieldSpec{WireName: "to"},
+		"StateName":        ubx.FieldSpec{WireName: "state_name"},
+		"Status":           ubx.FieldSpec{WireName: "status"},
+		"To":               ubx.FieldSpec{WireName: "to"},
 	},
 }

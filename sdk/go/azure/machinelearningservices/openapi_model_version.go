@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiModelVersion_Properties_Datasets struct {
-	Id any
+	Id   any
 	Name any
 }
 
@@ -30,31 +30,31 @@ type OpenapiModelVersion_Properties struct {
 }
 
 var OpenapiModelVersion_Properties_DatasetsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiModelVersion_Properties_FlavorsFields = ubx.FieldMap{
-		"Data": ubx.FieldSpec{WireName: "data"},
-	}
+	"Data": ubx.FieldSpec{WireName: "data"},
+}
 
 var OpenapiModelVersion_PropertiesFields = ubx.FieldMap{
-		"Datasets": ubx.FieldSpec{
-			WireName: "datasets",
-			Kind: "list",
-			Fields: OpenapiModelVersion_Properties_DatasetsFields,
-		},
-		"Flavors": ubx.FieldSpec{
-			WireName: "flavors",
-			Kind: "map",
-			Fields: OpenapiModelVersion_Properties_FlavorsFields,
-		},
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
-		"ModelType": ubx.FieldSpec{WireName: "model_type"},
-		"ModelUri": ubx.FieldSpec{WireName: "model_uri"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Stage": ubx.FieldSpec{WireName: "stage"},
-	}
+	"Datasets": ubx.FieldSpec{
+		WireName: "datasets",
+		Kind:     "list",
+		Fields:   OpenapiModelVersion_Properties_DatasetsFields,
+	},
+	"Flavors": ubx.FieldSpec{
+		WireName: "flavors",
+		Kind:     "map",
+		Fields:   OpenapiModelVersion_Properties_FlavorsFields,
+	},
+	"JobName":           ubx.FieldSpec{WireName: "job_name"},
+	"ModelType":         ubx.FieldSpec{WireName: "model_type"},
+	"ModelUri":          ubx.FieldSpec{WireName: "model_uri"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Stage":             ubx.FieldSpec{WireName: "stage"},
+}
 
 type OpenapiModelVersionConfig struct {
 	// Model asset version details.
@@ -75,8 +75,8 @@ var OpenapiModelVersion = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiModelVersion_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiModelVersion_PropertiesFields,
 		},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},

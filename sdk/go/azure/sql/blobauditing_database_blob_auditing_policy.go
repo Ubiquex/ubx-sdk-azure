@@ -27,21 +27,19 @@ type BlobauditingDatabaseBlobAuditingPolicy_Properties struct {
 }
 
 var BlobauditingDatabaseBlobAuditingPolicy_PropertiesFields = ubx.FieldMap{
-		"AuditActionsAndGroups": ubx.FieldSpec{WireName: "audit_actions_and_groups"},
-		"IsAzureMonitorTargetEnabled": ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
-		"IsManagedIdentityInUse": ubx.FieldSpec{WireName: "is_managed_identity_in_use"},
-		"IsStorageSecondaryKeyInUse": ubx.FieldSpec{WireName: "is_storage_secondary_key_in_use"},
-		"QueueDelayMs": ubx.FieldSpec{WireName: "queue_delay_ms"},
-		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageAccountAccessKey": ubx.FieldSpec{WireName: "storage_account_access_key"},
-		"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
-		"StorageEndpoint": ubx.FieldSpec{WireName: "storage_endpoint"},
-	}
+	"AuditActionsAndGroups":        ubx.FieldSpec{WireName: "audit_actions_and_groups"},
+	"IsAzureMonitorTargetEnabled":  ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
+	"IsManagedIdentityInUse":       ubx.FieldSpec{WireName: "is_managed_identity_in_use"},
+	"IsStorageSecondaryKeyInUse":   ubx.FieldSpec{WireName: "is_storage_secondary_key_in_use"},
+	"QueueDelayMs":                 ubx.FieldSpec{WireName: "queue_delay_ms"},
+	"RetentionDays":                ubx.FieldSpec{WireName: "retention_days"},
+	"State":                        ubx.FieldSpec{WireName: "state"},
+	"StorageAccountAccessKey":      ubx.FieldSpec{WireName: "storage_account_access_key"},
+	"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
+	"StorageEndpoint":              ubx.FieldSpec{WireName: "storage_endpoint"},
+}
 
 type BlobauditingDatabaseBlobAuditingPolicyConfig struct {
-	// Resource kind.
-	Kind any
 	// Properties of a database blob auditing policy.
 	Properties any
 }
@@ -56,11 +54,10 @@ type BlobauditingDatabaseBlobAuditingPolicyAttrs struct {
 var BlobauditingDatabaseBlobAuditingPolicy = ubx.ResourceBinding{
 	WireType: "azure_sql_blobauditing_database_blob_auditing_policy",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BlobauditingDatabaseBlobAuditingPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   BlobauditingDatabaseBlobAuditingPolicy_PropertiesFields,
 		},
 	},
 }

@@ -13,10 +13,10 @@ type ApimapisIssueAttachmentContract2_Properties struct {
 }
 
 var ApimapisIssueAttachmentContract2_PropertiesFields = ubx.FieldMap{
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"ContentFormat": ubx.FieldSpec{WireName: "content_format"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"Content":       ubx.FieldSpec{WireName: "content"},
+	"ContentFormat": ubx.FieldSpec{WireName: "content_format"},
+	"Title":         ubx.FieldSpec{WireName: "title"},
+}
 
 type ApimapisIssueAttachmentContract2Config struct {
 	// Issue Attachment contract Properties.
@@ -33,8 +33,8 @@ var ApimapisIssueAttachmentContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimapisIssueAttachmentContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimapisIssueAttachmentContract2_PropertiesFields,
 		},
 	},
 }

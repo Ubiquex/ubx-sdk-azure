@@ -9,7 +9,6 @@ import ubx_sdk as ubx
 @dataclasses.dataclass
 class SubscriptionsAcceptOwnershipStatusResponseConfig:
     api_version: Any = None
-    subscription_id: Any = None
 
 @dataclasses.dataclass
 class SubscriptionsAcceptOwnershipStatusResponseAttrs:
@@ -32,6 +31,5 @@ SubscriptionsAcceptOwnershipStatusResponse = ubx.DataSourceBinding(
     wire_type="azure_subscription_subscriptions_accept_ownership_status_response",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
-        "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },
 )

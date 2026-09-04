@@ -9,30 +9,30 @@ type OpenapiAppServicePlan_Value_ExtendedLocation struct {
 }
 
 type OpenapiAppServicePlan_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiAppServicePlan_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiAppServicePlan_Value_Properties_HostingEnvironmentProfile struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type OpenapiAppServicePlan_Value_Properties_InstallScripts_Source struct {
 	SourceUri any
-	Type any
+	Type      any
 }
 
 type OpenapiAppServicePlan_Value_Properties_InstallScripts struct {
-	Name any
+	Name   any
 	Source any
 }
 
@@ -41,94 +41,94 @@ type OpenapiAppServicePlan_Value_Properties_Network struct {
 }
 
 type OpenapiAppServicePlan_Value_Properties_PlanDefaultIdentity struct {
-	IdentityType any
+	IdentityType                   any
 	UserAssignedIdentityResourceId any
 }
 
 type OpenapiAppServicePlan_Value_Properties_RegistryAdapters_KeyVaultSecretReference struct {
 	ReferenceStatus any
-	SecretUri any
+	SecretUri       any
 }
 
 type OpenapiAppServicePlan_Value_Properties_RegistryAdapters struct {
 	KeyVaultSecretReference any
-	RegistryKey any
-	Type any
+	RegistryKey             any
+	Type                    any
 }
 
 type OpenapiAppServicePlan_Value_Properties_StorageMounts struct {
 	CredentialsKeyVaultReference any
-	DestinationPath any
-	Name any
-	Source any
-	Type any
+	DestinationPath              any
+	Name                         any
+	Source                       any
+	Type                         any
 }
 
 type OpenapiAppServicePlan_Value_Properties struct {
-	AsyncScalingEnabled any
-	ElasticScaleEnabled any
-	FreeOfferExpirationTime any
-	GeoRegion any
+	AsyncScalingEnabled       any
+	ElasticScaleEnabled       any
+	FreeOfferExpirationTime   any
+	GeoRegion                 any
 	HostingEnvironmentProfile any
-	HyperV any
-	InstallScripts any
-	IsCustomMode any
-	IsSpot any
-	IsXenon any
-	KubeEnvironmentProfile any
+	HyperV                    any
+	InstallScripts            any
+	IsCustomMode              any
+	IsSpot                    any
+	IsXenon                   any
+	KubeEnvironmentProfile    any
 	MaximumElasticWorkerCount any
-	MaximumNumberOfWorkers any
-	Network any
-	NumberOfSites any
-	NumberOfWorkers any
-	PerSiteScaling any
-	PlanDefaultIdentity any
-	ProvisioningState any
-	RdpEnabled any
-	RegistryAdapters any
-	Reserved any
-	ResourceGroup any
-	SpotExpirationTime any
-	Status any
-	StorageMounts any
-	Subscription any
-	TargetWorkerCount any
-	TargetWorkerSizeId any
-	WorkerTierName any
-	ZoneRedundant any
+	MaximumNumberOfWorkers    any
+	Network                   any
+	NumberOfSites             any
+	NumberOfWorkers           any
+	PerSiteScaling            any
+	PlanDefaultIdentity       any
+	ProvisioningState         any
+	RdpEnabled                any
+	RegistryAdapters          any
+	Reserved                  any
+	ResourceGroup             any
+	SpotExpirationTime        any
+	Status                    any
+	StorageMounts             any
+	Subscription              any
+	TargetWorkerCount         any
+	TargetWorkerSizeId        any
+	WorkerTierName            any
+	ZoneRedundant             any
 }
 
 type OpenapiAppServicePlan_Value_Sku_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiAppServicePlan_Value_Sku_SkuCapacity struct {
-	Default any
+	Default        any
 	ElasticMaximum any
-	Maximum any
-	Minimum any
-	ScaleType any
+	Maximum        any
+	Minimum        any
+	ScaleType      any
 }
 
 type OpenapiAppServicePlan_Value_Sku struct {
 	Capabilities any
-	Capacity any
-	Family any
-	Locations any
-	Name any
-	Size any
-	SkuCapacity any
-	Tier any
+	Capacity     any
+	Family       any
+	Locations    any
+	Name         any
+	Size         any
+	SkuCapacity  any
+	Tier         any
 }
 
 type OpenapiAppServicePlan_Value struct {
 	ExtendedLocation any
-	Identity any
-	Kind any
-	Properties any
-	Sku any
+	Identity         any
+	Kind             any
+	Properties       any
+	Sku              any
 }
 
 type OpenapiAppServicePlanConfig struct {

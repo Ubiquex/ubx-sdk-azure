@@ -4,26 +4,26 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiObjectRecommendation_Value_Properties_AnalyzedWorkload struct {
-	EndTime any
+	EndTime    any
 	QueryCount any
-	StartTime any
+	StartTime  any
 }
 
 type OpenapiObjectRecommendation_Value_Properties_Details struct {
-	DatabaseName any
+	DatabaseName    any
 	IncludedColumns any
-	IndexColumns any
-	IndexName any
-	IndexType any
-	Schema any
-	Table any
+	IndexColumns    any
+	IndexName       any
+	IndexType       any
+	Schema          any
+	Table           any
 }
 
 type OpenapiObjectRecommendation_Value_Properties_EstimatedImpact struct {
 	AbsoluteValue any
 	DimensionName any
-	QueryId any
-	Unit any
+	QueryId       any
+	Unit          any
 }
 
 type OpenapiObjectRecommendation_Value_Properties_ImplementationDetails struct {
@@ -32,36 +32,36 @@ type OpenapiObjectRecommendation_Value_Properties_ImplementationDetails struct {
 }
 
 type OpenapiObjectRecommendation_Value_Properties struct {
-	AnalyzedWorkload any
-	CurrentState any
-	Details any
-	EstimatedImpact any
-	ImplementationDetails any
-	ImprovedQueryIds any
+	AnalyzedWorkload       any
+	CurrentState           any
+	Details                any
+	EstimatedImpact        any
+	ImplementationDetails  any
+	ImprovedQueryIds       any
 	InitialRecommendedTime any
-	LastRecommendedTime any
-	RecommendationReason any
-	RecommendationType any
-	TimesRecommended any
+	LastRecommendedTime    any
+	RecommendationReason   any
+	RecommendationType     any
+	TimesRecommended       any
 }
 
 type OpenapiObjectRecommendation_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiObjectRecommendationConfig struct {
 	RecommendationType any
-	ServerName any
-	TuningOption any
+	ServerName         any
+	TuningOption       any
 }
 
 type OpenapiObjectRecommendationAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink           any
 	RecommendationType any
-	ServerName any
-	TuningOption any
+	ServerName         any
+	TuningOption       any
 	// The ObjectRecommendation items on this page
 	Value any
 }
@@ -70,7 +70,7 @@ var OpenapiObjectRecommendation = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_object_recommendation",
 	Fields: ubx.FieldMap{
 		"RecommendationType": ubx.FieldSpec{WireName: "recommendation_type"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"TuningOption": ubx.FieldSpec{WireName: "tuning_option"},
+		"ServerName":         ubx.FieldSpec{WireName: "server_name"},
+		"TuningOption":       ubx.FieldSpec{WireName: "tuning_option"},
 	},
 }

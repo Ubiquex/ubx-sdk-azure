@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTransactionSummaryConfig struct {
 	BillingAccountName any
-	Filter any
-	InvoiceName any
-	Search any
+	Filter             any
+	InvoiceName        any
+	Search             any
 }
 
 type OpenapiTransactionSummaryAttrs struct {
@@ -18,9 +18,9 @@ type OpenapiTransactionSummaryAttrs struct {
 	BillingCurrency any
 	// The total Microsoft Azure Consumption Commitment (MACC) decrement through the invoice.
 	ConsumptionCommitmentDecremented any
-	Filter any
-	InvoiceName any
-	Search any
+	Filter                           any
+	InvoiceName                      any
+	Search                           any
 	// The total pre-tax charged amount.
 	SubTotal any
 	// The total tax amount applied.
@@ -33,8 +33,8 @@ var OpenapiTransactionSummary = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_transaction_summary",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"InvoiceName": ubx.FieldSpec{WireName: "invoice_name"},
-		"Search": ubx.FieldSpec{WireName: "search"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"InvoiceName":        ubx.FieldSpec{WireName: "invoice_name"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
 	},
 }

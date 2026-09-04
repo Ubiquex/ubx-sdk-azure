@@ -4,38 +4,38 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ActionOnUnmanage struct {
-	ManagementGroups any
-	ResourceGroups any
-	Resources any
+	ManagementGroups              any
+	ResourceGroups                any
+	Resources                     any
 	ResourcesWithoutDeleteSupport any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_After struct {
 	ApplyToChildScopes any
-	ExcludedActions any
+	ExcludedActions    any
 	ExcludedPrincipals any
-	Mode any
+	Mode               any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_Delta_Children struct {
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange_Delta struct {
-	After any
-	Before any
+	After      any
+	Before     any
 	ChangeType any
-	Children any
-	Path any
+	Children   any
+	Path       any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DenySettingsChange struct {
-	After any
+	After  any
 	Before any
-	Delta any
+	Delta  any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_DeploymentScopeChange struct {
-	After any
+	After  any
 	Before any
 }
 
@@ -44,50 +44,50 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_Resou
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference struct {
-	KeyVault any
-	SecretName any
+	KeyVault      any
+	SecretName    any
 	SecretVersion any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension_Config struct {
 	KeyVaultReference any
-	Type any
-	Value any
+	Type              any
+	Value             any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_Extension struct {
-	Config any
+	Config   any
 	ConfigId any
-	Name any
-	Version any
+	Name     any
+	Version  any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges_ResourceConfigurationChanges struct {
-	After any
+	After  any
 	Before any
-	Delta any
+	Delta  any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes_ResourceChanges struct {
-	ApiVersion any
-	ChangeCertainty any
-	ChangeType any
-	DenyStatusChange any
-	DeploymentId any
-	Extension any
-	Id any
-	Identifiers any
-	ManagementStatusChange any
+	ApiVersion                   any
+	ChangeCertainty              any
+	ChangeType                   any
+	DenyStatusChange             any
+	DeploymentId                 any
+	Extension                    any
+	Id                           any
+	Identifiers                  any
+	ManagementStatusChange       any
 	ResourceConfigurationChanges any
-	SymbolicName any
-	Type any
-	UnsupportedReason any
+	SymbolicName                 any
+	Type                         any
+	UnsupportedReason            any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Changes struct {
-	DenySettingsChange any
+	DenySettingsChange    any
 	DeploymentScopeChange any
-	ResourceChanges any
+	ResourceChanges       any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_DebugSetting struct {
@@ -101,31 +101,31 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Diagnostics_A
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Diagnostics struct {
 	AdditionalInfo any
-	Code any
-	Level any
-	Message any
-	Target any
+	Code           any
+	Level          any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Error struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ExternalInputDefinitions struct {
 	Config any
-	Kind any
+	Kind   any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ExternalInputs struct {
@@ -134,52 +134,52 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ExternalInput
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_Parameters struct {
 	Expression any
-	Reference any
-	Type any
-	Value any
+	Reference  any
+	Type       any
+	Value      any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_ParametersLink struct {
 	ContentVersion any
-	Uri any
+	Uri            any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties_TemplateLink struct {
 	ContentVersion any
-	Id any
-	QueryString any
-	RelativePath any
-	Uri any
+	Id             any
+	QueryString    any
+	RelativePath   any
+	Uri            any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value_Properties struct {
-	ActionOnUnmanage any
-	Changes any
-	CorrelationId any
-	DebugSetting any
-	DenySettings any
-	DeploymentScope any
+	ActionOnUnmanage            any
+	Changes                     any
+	CorrelationId               any
+	DebugSetting                any
+	DenySettings                any
+	DeploymentScope             any
 	DeploymentStackLastModified any
-	DeploymentStackResourceId any
-	Description any
-	Diagnostics any
-	Error any
-	ExtensionConfigs any
-	ExternalInputDefinitions any
-	ExternalInputs any
-	Parameters any
-	ParametersLink any
-	ProvisioningState any
-	RetentionInterval any
-	Template any
-	TemplateLink any
-	ValidationLevel any
+	DeploymentStackResourceId   any
+	Description                 any
+	Diagnostics                 any
+	Error                       any
+	ExtensionConfigs            any
+	ExternalInputDefinitions    any
+	ExternalInputs              any
+	Parameters                  any
+	ParametersLink              any
+	ProvisioningState           any
+	RetentionInterval           any
+	Template                    any
+	TemplateLink                any
+	ValidationLevel             any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResultConfig struct {

@@ -4,13 +4,13 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingMeter_Value_Properties struct {
-	Category any
+	Category    any
 	DisplayName any
-	MeterType any
+	MeterType   any
 }
 
 type OpenapiBillingMeter_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -24,6 +24,5 @@ type OpenapiBillingMeterAttrs struct {
 
 var OpenapiBillingMeter = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_billing_meter",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

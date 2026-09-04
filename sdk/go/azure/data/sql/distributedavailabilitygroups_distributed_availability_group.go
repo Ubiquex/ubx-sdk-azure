@@ -5,45 +5,45 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DistributedavailabilitygroupsDistributedAvailabilityGroup_Value_Properties_Databases_PartnerAuthCertValidity struct {
 	CertificateName any
-	ExpiryDate any
+	ExpiryDate      any
 }
 
 type DistributedavailabilitygroupsDistributedAvailabilityGroup_Value_Properties_Databases struct {
-	ConnectedState any
-	DatabaseName any
+	ConnectedState                    any
+	DatabaseName                      any
 	InstanceRedoReplicationLagSeconds any
-	InstanceReplicaId any
+	InstanceReplicaId                 any
 	InstanceSendReplicationLagSeconds any
-	LastBackupLsn any
-	LastBackupTime any
-	LastCommitLsn any
-	LastCommitTime any
-	LastHardenedLsn any
-	LastHardenedTime any
-	LastReceivedLsn any
-	LastReceivedTime any
-	LastSentLsn any
-	LastSentTime any
-	MostRecentLinkError any
-	PartnerAuthCertValidity any
-	PartnerReplicaId any
-	ReplicaState any
-	SeedingProgress any
-	SynchronizationHealth any
+	LastBackupLsn                     any
+	LastBackupTime                    any
+	LastCommitLsn                     any
+	LastCommitTime                    any
+	LastHardenedLsn                   any
+	LastHardenedTime                  any
+	LastReceivedLsn                   any
+	LastReceivedTime                  any
+	LastSentLsn                       any
+	LastSentTime                      any
+	MostRecentLinkError               any
+	PartnerAuthCertValidity           any
+	PartnerReplicaId                  any
+	ReplicaState                      any
+	SeedingProgress                   any
+	SynchronizationHealth             any
 }
 
 type DistributedavailabilitygroupsDistributedAvailabilityGroup_Value_Properties struct {
-	Databases any
-	DistributedAvailabilityGroupId any
+	Databases                        any
+	DistributedAvailabilityGroupId   any
 	DistributedAvailabilityGroupName any
-	FailoverMode any
-	InstanceAvailabilityGroupName any
-	InstanceLinkRole any
-	PartnerAvailabilityGroupName any
-	PartnerEndpoint any
-	PartnerLinkRole any
-	ReplicationMode any
-	SeedingMode any
+	FailoverMode                     any
+	InstanceAvailabilityGroupName    any
+	InstanceLinkRole                 any
+	PartnerAvailabilityGroupName     any
+	PartnerEndpoint                  any
+	PartnerLinkRole                  any
+	ReplicationMode                  any
+	SeedingMode                      any
 }
 
 type DistributedavailabilitygroupsDistributedAvailabilityGroup_Value struct {

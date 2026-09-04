@@ -28,12 +28,36 @@ export interface OpenapiBackupItem_Properties {
   backupName?: string | Computed<string>;
   /** Description of a backup schedule. Describes how often should be the backup performed and what should be the retention policy. */
   backupSchedule?: OpenapiBackupItem_Properties_BackupSchedule | Computed<OpenapiBackupItem_Properties_BackupSchedule>;
+  /** Name of the blob which contains data for this backup. */
+  blobName?: string | Computed<string>;
+  /** Unique correlation identifier. Please use this along with the timestamp while communicating with Azure support. */
+  correlationId?: string | Computed<string>;
+  /** Timestamp of the backup creation. */
+  created?: string | Computed<string>;
   /** Databases included in the backup. */
   databases?: OpenapiBackupItem_Properties_Databases[] | Computed<OpenapiBackupItem_Properties_Databases[]>;
   /** True if the backup schedule is enabled (must be included in that case), false if the backup schedule should be disabled. */
   enabled?: boolean | Computed<boolean>;
+  /** Timestamp when this backup finished. */
+  finishedTimeStamp?: string | Computed<string>;
+  /** Id of the backup. */
+  id?: number | Computed<number>;
+  /** Timestamp of a last restore operation which used this backup. */
+  lastRestoreTimeStamp?: string | Computed<string>;
+  /** Details regarding this backup. Might contain an error message. */
+  log?: string | Computed<string>;
+  /** Name of this backup. */
+  name?: string | Computed<string>;
+  /** True if this backup has been created due to a schedule being triggered. */
+  scheduled?: boolean | Computed<boolean>;
+  /** Size of the backup in bytes. */
+  sizeInBytes?: number | Computed<number>;
+  /** Backup status. */
+  status?: string | Computed<string>;
   /** SAS URL to the container. */
-  storageAccountUrl: string | Computed<string>;
+  storageAccountUrl?: string | Computed<string>;
+  /** Size of the original web app which has been backed up. */
+  websiteSizeInBytes?: number | Computed<number>;
 }
 
 const OpenapiBackupItem_Properties_BackupScheduleFields: FieldMap = {
@@ -59,13 +83,25 @@ const OpenapiBackupItem_PropertiesFields: FieldMap = {
     kind: "object",
     fields: OpenapiBackupItem_Properties_BackupScheduleFields,
   },
+  blobName: "blob_name",
+  correlationId: "correlation_id",
+  created: "created",
   databases: {
     wireName: "databases",
     kind: "list",
     fields: OpenapiBackupItem_Properties_DatabasesFields,
   },
   enabled: "enabled",
+  finishedTimeStamp: "finished_time_stamp",
+  id: "id",
+  lastRestoreTimeStamp: "last_restore_time_stamp",
+  log: "log",
+  name: "name",
+  scheduled: "scheduled",
+  sizeInBytes: "size_in_bytes",
+  status: "status",
   storageAccountUrl: "storage_account_url",
+  websiteSizeInBytes: "website_size_in_bytes",
 };
 
 export interface OpenapiBackupItemConfig {

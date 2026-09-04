@@ -8,7 +8,7 @@ type OpenapiAuthorizationRule_Value_Properties struct {
 }
 
 type OpenapiAuthorizationRule_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

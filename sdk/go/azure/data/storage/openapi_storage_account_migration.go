@@ -15,12 +15,12 @@ type OpenapiStorageAccountMigration_Properties struct {
 }
 
 type OpenapiStorageAccountMigrationConfig struct {
-	AccountName any
+	AccountName   any
 	MigrationName any
 }
 
 type OpenapiStorageAccountMigrationAttrs struct {
-	AccountName any
+	AccountName   any
 	MigrationName any
 	// The properties of a storage account's ongoing or enqueued migration.
 	Properties any
@@ -29,7 +29,7 @@ type OpenapiStorageAccountMigrationAttrs struct {
 var OpenapiStorageAccountMigration = ubx.DataSourceBinding{
 	WireType: "azure_storage_openapi_storage_account_migration",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":   ubx.FieldSpec{WireName: "account_name"},
 		"MigrationName": ubx.FieldSpec{WireName: "migration_name"},
 	},
 }

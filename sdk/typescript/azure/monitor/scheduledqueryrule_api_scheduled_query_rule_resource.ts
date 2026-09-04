@@ -225,36 +225,17 @@ const ScheduledqueryruleApiScheduledQueryRuleResource_PropertiesFields: FieldMap
   windowSize: "window_size",
 };
 
-const ScheduledqueryruleApiScheduledQueryRuleResource_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ScheduledqueryruleApiScheduledQueryRuleResourceConfig {
-  /** The etag field is *not* required. If it is provided in the response body, it must also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields. */
-  etag?: string | Computed<string>;
-  /** Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} */
-  id?: string | Computed<string>;
   /** Identity for the resource. */
   identity?: ScheduledqueryruleApiScheduledQueryRuleResource_Identity | Computed<ScheduledqueryruleApiScheduledQueryRuleResource_Identity>;
   /** Indicates the type of scheduled query rule. The default is LogAlert. */
   kind?: string | Computed<string>;
   /** The geo-location where the resource lives */
   location: string | Computed<string>;
-  /** The name of the resource */
-  name?: string | Computed<string>;
   /** scheduled query rule Definition */
   properties: ScheduledqueryruleApiScheduledQueryRuleResource_Properties | Computed<ScheduledqueryruleApiScheduledQueryRuleResource_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ScheduledqueryruleApiScheduledQueryRuleResource_SystemData | Computed<ScheduledqueryruleApiScheduledQueryRuleResource_SystemData>;
   /** Resource tags. */
   tags?: Record<string, string> | Computed<Record<string, string>>;
-  /** The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts" */
-  type?: string | Computed<string>;
 }
 
 export interface ScheduledqueryruleApiScheduledQueryRuleResourceAttrs {
@@ -283,8 +264,6 @@ export interface ScheduledqueryruleApiScheduledQueryRuleResourceAttrs {
 export const ScheduledqueryruleApiScheduledQueryRuleResource: ResourceBinding<ScheduledqueryruleApiScheduledQueryRuleResourceConfig, ScheduledqueryruleApiScheduledQueryRuleResourceAttrs> = {
   wireType: "azure_monitor_scheduledqueryrule_api_scheduled_query_rule_resource",
   fields: {
-    etag: "etag",
-    id: "id",
     identity: {
       wireName: "identity",
       kind: "object",
@@ -292,18 +271,11 @@ export const ScheduledqueryruleApiScheduledQueryRuleResource: ResourceBinding<Sc
     },
     kind: "kind",
     location: "location",
-    name: "name",
     properties: {
       wireName: "properties",
       kind: "object",
       fields: ScheduledqueryruleApiScheduledQueryRuleResource_PropertiesFields,
     },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ScheduledqueryruleApiScheduledQueryRuleResource_SystemDataFields,
-    },
     tags: "tags",
-    type: "type",
   },
 };

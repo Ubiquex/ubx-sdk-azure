@@ -5,35 +5,35 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConfidentialLedger_Value_Properties_AadBasedSecurityPrincipals struct {
 	LedgerRoleName any
-	PrincipalId any
-	TenantId any
+	PrincipalId    any
+	TenantId       any
 }
 
 type OpenapiConfidentialLedger_Value_Properties_CertBasedSecurityPrincipals struct {
-	Cert any
+	Cert           any
 	LedgerRoleName any
 }
 
 type OpenapiConfidentialLedger_Value_Properties struct {
-	AadBasedSecurityPrincipals any
-	ApplicationType any
+	AadBasedSecurityPrincipals  any
+	ApplicationType             any
 	CertBasedSecurityPrincipals any
-	EnclavePlatform any
-	HostLevel any
-	IdentityServiceUri any
-	LedgerInternalNamespace any
-	LedgerName any
-	LedgerSku any
-	LedgerType any
-	LedgerUri any
-	MaxBodySizeInMb any
-	NodeCount any
-	ProvisioningState any
-	RunningState any
-	ScittConfiguration any
-	SubjectName any
-	WorkerThreads any
-	WriteLbaddressPrefix any
+	EnclavePlatform             any
+	HostLevel                   any
+	IdentityServiceUri          any
+	LedgerInternalNamespace     any
+	LedgerName                  any
+	LedgerSku                   any
+	LedgerType                  any
+	LedgerUri                   any
+	MaxBodySizeInMb             any
+	NodeCount                   any
+	ProvisioningState           any
+	RunningState                any
+	ScittConfiguration          any
+	SubjectName                 any
+	WorkerThreads               any
+	WriteLbaddressPrefix        any
 }
 
 type OpenapiConfidentialLedger_Value struct {
@@ -52,6 +52,5 @@ type OpenapiConfidentialLedgerAttrs struct {
 
 var OpenapiConfidentialLedger = ubx.DataSourceBinding{
 	WireType: "azure_confidentialledger_openapi_confidential_ledger",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

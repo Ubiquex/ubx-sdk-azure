@@ -36,8 +36,6 @@ const SensitivitylabelsSensitivityLabel2_PropertiesFields: FieldMap = {
 };
 
 export interface SensitivitylabelsSensitivityLabel2Config {
-  /** Resource that manages the sensitivity label. */
-  managedBy?: string | Computed<string>;
   /** Properties of a sensitivity label. */
   properties?: SensitivitylabelsSensitivityLabel2_Properties | Computed<SensitivitylabelsSensitivityLabel2_Properties>;
 }
@@ -52,7 +50,6 @@ export interface SensitivitylabelsSensitivityLabel2Attrs {
 export const SensitivitylabelsSensitivityLabel2: ResourceBinding<SensitivitylabelsSensitivityLabel2Config, SensitivitylabelsSensitivityLabel2Attrs> = {
   wireType: "azure_sql_sensitivitylabels_sensitivity_label_2",
   fields: {
-    managedBy: "managed_by",
     properties: {
       wireName: "properties",
       kind: "object",

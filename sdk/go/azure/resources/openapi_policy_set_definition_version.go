@@ -5,25 +5,25 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicySetDefinitionVersion_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionGroups struct {
 	AdditionalMetadataId any
-	Category any
-	Description any
-	DisplayName any
-	Name any
+	Category             any
+	Description          any
+	DisplayName          any
+	Name                 any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters struct {
@@ -31,12 +31,12 @@ type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters s
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions struct {
-	DefinitionVersion any
-	EffectiveDefinitionVersion any
-	GroupNames any
-	LatestDefinitionVersion any
-	Parameters any
-	PolicyDefinitionId any
+	DefinitionVersion           any
+	EffectiveDefinitionVersion  any
+	GroupNames                  any
+	LatestDefinitionVersion     any
+	Parameters                  any
+	PolicyDefinitionId          any
 	PolicyDefinitionReferenceId any
 }
 
@@ -60,72 +60,72 @@ type OpenapiPolicySetDefinitionVersion_Properties struct {
 }
 
 var OpenapiPolicySetDefinitionVersion_Properties_Parameters_MetadataFields = ubx.FieldMap{
-		"AssignPermissions": ubx.FieldSpec{WireName: "assign_permissions"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"StrongType": ubx.FieldSpec{WireName: "strong_type"},
-	}
+	"AssignPermissions": ubx.FieldSpec{WireName: "assign_permissions"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"StrongType":        ubx.FieldSpec{WireName: "strong_type"},
+}
 
 var OpenapiPolicySetDefinitionVersion_Properties_ParametersFields = ubx.FieldMap{
-		"AllowedValues": ubx.FieldSpec{WireName: "allowed_values"},
-		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-		"Metadata": ubx.FieldSpec{
-			WireName: "metadata",
-			Kind: "object",
-			Fields: OpenapiPolicySetDefinitionVersion_Properties_Parameters_MetadataFields,
-		},
-		"Schema": ubx.FieldSpec{WireName: "schema"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"AllowedValues": ubx.FieldSpec{WireName: "allowed_values"},
+	"DefaultValue":  ubx.FieldSpec{WireName: "default_value"},
+	"Metadata": ubx.FieldSpec{
+		WireName: "metadata",
+		Kind:     "object",
+		Fields:   OpenapiPolicySetDefinitionVersion_Properties_Parameters_MetadataFields,
+	},
+	"Schema": ubx.FieldSpec{WireName: "schema"},
+	"Type":   ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionGroupsFields = ubx.FieldMap{
-		"AdditionalMetadataId": ubx.FieldSpec{WireName: "additional_metadata_id"},
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AdditionalMetadataId": ubx.FieldSpec{WireName: "additional_metadata_id"},
+	"Category":             ubx.FieldSpec{WireName: "category"},
+	"Description":          ubx.FieldSpec{WireName: "description"},
+	"DisplayName":          ubx.FieldSpec{WireName: "display_name"},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_ParametersFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionsFields = ubx.FieldMap{
-		"DefinitionVersion": ubx.FieldSpec{WireName: "definition_version"},
-		"EffectiveDefinitionVersion": ubx.FieldSpec{WireName: "effective_definition_version"},
-		"GroupNames": ubx.FieldSpec{WireName: "group_names"},
-		"LatestDefinitionVersion": ubx.FieldSpec{WireName: "latest_definition_version"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_ParametersFields,
-		},
-		"PolicyDefinitionId": ubx.FieldSpec{WireName: "policy_definition_id"},
-		"PolicyDefinitionReferenceId": ubx.FieldSpec{WireName: "policy_definition_reference_id"},
-	}
+	"DefinitionVersion":          ubx.FieldSpec{WireName: "definition_version"},
+	"EffectiveDefinitionVersion": ubx.FieldSpec{WireName: "effective_definition_version"},
+	"GroupNames":                 ubx.FieldSpec{WireName: "group_names"},
+	"LatestDefinitionVersion":    ubx.FieldSpec{WireName: "latest_definition_version"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_ParametersFields,
+	},
+	"PolicyDefinitionId":          ubx.FieldSpec{WireName: "policy_definition_id"},
+	"PolicyDefinitionReferenceId": ubx.FieldSpec{WireName: "policy_definition_reference_id"},
+}
 
 var OpenapiPolicySetDefinitionVersion_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: OpenapiPolicySetDefinitionVersion_Properties_ParametersFields,
-		},
-		"PolicyDefinitionGroups": ubx.FieldSpec{
-			WireName: "policy_definition_groups",
-			Kind: "list",
-			Fields: OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionGroupsFields,
-		},
-		"PolicyDefinitions": ubx.FieldSpec{
-			WireName: "policy_definitions",
-			Kind: "list",
-			Fields: OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionsFields,
-		},
-		"PolicyType": ubx.FieldSpec{WireName: "policy_type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Metadata":    ubx.FieldSpec{WireName: "metadata"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiPolicySetDefinitionVersion_Properties_ParametersFields,
+	},
+	"PolicyDefinitionGroups": ubx.FieldSpec{
+		WireName: "policy_definition_groups",
+		Kind:     "list",
+		Fields:   OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionGroupsFields,
+	},
+	"PolicyDefinitions": ubx.FieldSpec{
+		WireName: "policy_definitions",
+		Kind:     "list",
+		Fields:   OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionsFields,
+	},
+	"PolicyType": ubx.FieldSpec{WireName: "policy_type"},
+	"Version":    ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiPolicySetDefinitionVersionConfig struct {
 	// The policy set definition properties.
@@ -142,8 +142,8 @@ var OpenapiPolicySetDefinitionVersion = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPolicySetDefinitionVersion_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPolicySetDefinitionVersion_PropertiesFields,
 		},
 	},
 }

@@ -3,27 +3,37 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServicePolicy_Properties_ProviderSpecificInput struct {
-	// The class type.
+type ServicePolicy_Properties_ProviderSpecificDetails struct {
+	// Gets the class type. Overridden in derived classes.
 	InstanceType any
 }
 
 type ServicePolicy_Properties struct {
+	// The FriendlyName.
+	FriendlyName any
+	// Base class for Provider specific details for policies.
+	ProviderSpecificDetails any
 	// Base class for provider specific input.
 	ProviderSpecificInput any
 }
 
-var ServicePolicy_Properties_ProviderSpecificInputFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+var ServicePolicy_Properties_ProviderSpecificDetailsFields = ubx.FieldMap{
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var ServicePolicy_PropertiesFields = ubx.FieldMap{
-		"ProviderSpecificInput": ubx.FieldSpec{
-			WireName: "provider_specific_input",
-			Kind: "object",
-			Fields: ServicePolicy_Properties_ProviderSpecificInputFields,
-		},
-	}
+	"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
+	"ProviderSpecificDetails": ubx.FieldSpec{
+		WireName: "provider_specific_details",
+		Kind:     "object",
+		Fields:   ServicePolicy_Properties_ProviderSpecificDetailsFields,
+	},
+	"ProviderSpecificInput": ubx.FieldSpec{
+		WireName: "provider_specific_input",
+		Kind:     "object",
+		Fields:   ServicePolicy_Properties_ProviderSpecificDetailsFields,
+	},
+}
 
 type ServicePolicyConfig struct {
 	// Policy creation properties.
@@ -42,8 +52,8 @@ var ServicePolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServicePolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServicePolicy_PropertiesFields,
 		},
 	},
 }

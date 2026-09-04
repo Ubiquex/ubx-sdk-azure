@@ -45,8 +45,6 @@ const OpenapiSecret_PropertiesFields: FieldMap = {
 export interface OpenapiSecretConfig {
   /** Properties of the secret */
   properties: OpenapiSecret_Properties | Computed<OpenapiSecret_Properties>;
-  /** The tags that will be assigned to the secret. */
-  tags?: Record<string, string> | Computed<Record<string, string>>;
 }
 
 export interface OpenapiSecretAttrs {
@@ -66,6 +64,5 @@ export const OpenapiSecret: ResourceBinding<OpenapiSecretConfig, OpenapiSecretAt
       kind: "object",
       fields: OpenapiSecret_PropertiesFields,
     },
-    tags: "tags",
   },
 };

@@ -4,24 +4,24 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type InstancepoolsInstancePool_Value_Properties struct {
-	DnsZone any
-	LicenseType any
+	DnsZone                    any
+	LicenseType                any
 	MaintenanceConfigurationId any
-	SubnetId any
-	VCores any
+	SubnetId                   any
+	VCores                     any
 }
 
 type InstancepoolsInstancePool_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type InstancepoolsInstancePool_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type InstancepoolsInstancePoolConfig struct {
@@ -36,6 +36,5 @@ type InstancepoolsInstancePoolAttrs struct {
 
 var InstancepoolsInstancePool = ubx.DataSourceBinding{
 	WireType: "azure_sql_instancepools_instance_pool",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

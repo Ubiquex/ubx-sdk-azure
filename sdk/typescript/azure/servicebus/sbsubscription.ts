@@ -112,8 +112,6 @@ const Sbsubscription_PropertiesFields: FieldMap = {
 };
 
 export interface SbsubscriptionConfig {
-  /** The geo-location where the resource lives */
-  location?: string | Computed<string>;
   /** Description of Subscription Resource. */
   properties?: Sbsubscription_Properties | Computed<Sbsubscription_Properties>;
 }
@@ -128,7 +126,6 @@ export interface SbsubscriptionAttrs {
 export const Sbsubscription: ResourceBinding<SbsubscriptionConfig, SbsubscriptionAttrs> = {
   wireType: "azure_servicebus_sbsubscription",
   fields: {
-    location: "location",
     properties: {
       wireName: "properties",
       kind: "object",

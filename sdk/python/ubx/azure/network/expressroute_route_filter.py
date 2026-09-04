@@ -340,8 +340,6 @@ _ExpressrouteRouteFilter_PropertiesFields = {
 
 @dataclasses.dataclass
 class ExpressrouteRouteFilterConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Route Filter Resource.
     properties: Any = None
 
@@ -355,7 +353,6 @@ class ExpressrouteRouteFilterAttrs:
 ExpressrouteRouteFilter = ubx.ResourceBinding(
     wire_type="azure_network_expressroute_route_filter",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

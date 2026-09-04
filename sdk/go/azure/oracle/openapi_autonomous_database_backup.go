@@ -39,23 +39,23 @@ type OpenapiAutonomousDatabaseBackup_Properties struct {
 }
 
 var OpenapiAutonomousDatabaseBackup_PropertiesFields = ubx.FieldMap{
-		"AutonomousDatabaseOcid": ubx.FieldSpec{WireName: "autonomous_database_ocid"},
-		"BackupType": ubx.FieldSpec{WireName: "backup_type"},
-		"DatabaseSizeInTbs": ubx.FieldSpec{WireName: "database_size_in_tbs"},
-		"DbVersion": ubx.FieldSpec{WireName: "db_version"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"IsAutomatic": ubx.FieldSpec{WireName: "is_automatic"},
-		"IsRestorable": ubx.FieldSpec{WireName: "is_restorable"},
-		"LifecycleDetails": ubx.FieldSpec{WireName: "lifecycle_details"},
-		"LifecycleState": ubx.FieldSpec{WireName: "lifecycle_state"},
-		"Ocid": ubx.FieldSpec{WireName: "ocid"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RetentionPeriodInDays": ubx.FieldSpec{WireName: "retention_period_in_days"},
-		"SizeInTbs": ubx.FieldSpec{WireName: "size_in_tbs"},
-		"TimeAvailableTil": ubx.FieldSpec{WireName: "time_available_til"},
-		"TimeEnded": ubx.FieldSpec{WireName: "time_ended"},
-		"TimeStarted": ubx.FieldSpec{WireName: "time_started"},
-	}
+	"AutonomousDatabaseOcid": ubx.FieldSpec{WireName: "autonomous_database_ocid"},
+	"BackupType":             ubx.FieldSpec{WireName: "backup_type"},
+	"DatabaseSizeInTbs":      ubx.FieldSpec{WireName: "database_size_in_tbs"},
+	"DbVersion":              ubx.FieldSpec{WireName: "db_version"},
+	"DisplayName":            ubx.FieldSpec{WireName: "display_name"},
+	"IsAutomatic":            ubx.FieldSpec{WireName: "is_automatic"},
+	"IsRestorable":           ubx.FieldSpec{WireName: "is_restorable"},
+	"LifecycleDetails":       ubx.FieldSpec{WireName: "lifecycle_details"},
+	"LifecycleState":         ubx.FieldSpec{WireName: "lifecycle_state"},
+	"Ocid":                   ubx.FieldSpec{WireName: "ocid"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"RetentionPeriodInDays":  ubx.FieldSpec{WireName: "retention_period_in_days"},
+	"SizeInTbs":              ubx.FieldSpec{WireName: "size_in_tbs"},
+	"TimeAvailableTil":       ubx.FieldSpec{WireName: "time_available_til"},
+	"TimeEnded":              ubx.FieldSpec{WireName: "time_ended"},
+	"TimeStarted":            ubx.FieldSpec{WireName: "time_started"},
+}
 
 type OpenapiAutonomousDatabaseBackupConfig struct {
 	// AutonomousDatabaseBackup resource model
@@ -80,10 +80,10 @@ var OpenapiAutonomousDatabaseBackup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAutonomousDatabaseBackup_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAutonomousDatabaseBackup_PropertiesFields,
 		},
 		"Autonomousdatabasename": ubx.FieldSpec{WireName: "autonomousdatabasename"},
-		"Adbbackupid": ubx.FieldSpec{WireName: "adbbackupid"},
+		"Adbbackupid":            ubx.FieldSpec{WireName: "adbbackupid"},
 	},
 }

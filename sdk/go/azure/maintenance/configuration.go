@@ -61,56 +61,56 @@ type Configuration_Properties struct {
 }
 
 var Configuration_Properties_InstallPatches_LinuxParametersFields = ubx.FieldMap{
-		"ClassificationsToInclude": ubx.FieldSpec{WireName: "classifications_to_include"},
-		"PackageNameMasksToExclude": ubx.FieldSpec{WireName: "package_name_masks_to_exclude"},
-		"PackageNameMasksToInclude": ubx.FieldSpec{WireName: "package_name_masks_to_include"},
-	}
+	"ClassificationsToInclude":  ubx.FieldSpec{WireName: "classifications_to_include"},
+	"PackageNameMasksToExclude": ubx.FieldSpec{WireName: "package_name_masks_to_exclude"},
+	"PackageNameMasksToInclude": ubx.FieldSpec{WireName: "package_name_masks_to_include"},
+}
 
 var Configuration_Properties_InstallPatches_WindowsParametersFields = ubx.FieldMap{
-		"ClassificationsToInclude": ubx.FieldSpec{WireName: "classifications_to_include"},
-		"ExcludeKbsRequiringReboot": ubx.FieldSpec{WireName: "exclude_kbs_requiring_reboot"},
-		"KbNumbersToExclude": ubx.FieldSpec{WireName: "kb_numbers_to_exclude"},
-		"KbNumbersToInclude": ubx.FieldSpec{WireName: "kb_numbers_to_include"},
-	}
+	"ClassificationsToInclude":  ubx.FieldSpec{WireName: "classifications_to_include"},
+	"ExcludeKbsRequiringReboot": ubx.FieldSpec{WireName: "exclude_kbs_requiring_reboot"},
+	"KbNumbersToExclude":        ubx.FieldSpec{WireName: "kb_numbers_to_exclude"},
+	"KbNumbersToInclude":        ubx.FieldSpec{WireName: "kb_numbers_to_include"},
+}
 
 var Configuration_Properties_InstallPatchesFields = ubx.FieldMap{
-		"LinuxParameters": ubx.FieldSpec{
-			WireName: "linux_parameters",
-			Kind: "object",
-			Fields: Configuration_Properties_InstallPatches_LinuxParametersFields,
-		},
-		"RebootSetting": ubx.FieldSpec{WireName: "reboot_setting"},
-		"WindowsParameters": ubx.FieldSpec{
-			WireName: "windows_parameters",
-			Kind: "object",
-			Fields: Configuration_Properties_InstallPatches_WindowsParametersFields,
-		},
-	}
+	"LinuxParameters": ubx.FieldSpec{
+		WireName: "linux_parameters",
+		Kind:     "object",
+		Fields:   Configuration_Properties_InstallPatches_LinuxParametersFields,
+	},
+	"RebootSetting": ubx.FieldSpec{WireName: "reboot_setting"},
+	"WindowsParameters": ubx.FieldSpec{
+		WireName: "windows_parameters",
+		Kind:     "object",
+		Fields:   Configuration_Properties_InstallPatches_WindowsParametersFields,
+	},
+}
 
 var Configuration_Properties_MaintenanceWindowFields = ubx.FieldMap{
-		"Duration": ubx.FieldSpec{WireName: "duration"},
-		"ExpirationDateTime": ubx.FieldSpec{WireName: "expiration_date_time"},
-		"RecurEvery": ubx.FieldSpec{WireName: "recur_every"},
-		"StartDateTime": ubx.FieldSpec{WireName: "start_date_time"},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-	}
+	"Duration":           ubx.FieldSpec{WireName: "duration"},
+	"ExpirationDateTime": ubx.FieldSpec{WireName: "expiration_date_time"},
+	"RecurEvery":         ubx.FieldSpec{WireName: "recur_every"},
+	"StartDateTime":      ubx.FieldSpec{WireName: "start_date_time"},
+	"TimeZone":           ubx.FieldSpec{WireName: "time_zone"},
+}
 
 var Configuration_PropertiesFields = ubx.FieldMap{
-		"ExtensionProperties": ubx.FieldSpec{WireName: "extension_properties"},
-		"InstallPatches": ubx.FieldSpec{
-			WireName: "install_patches",
-			Kind: "object",
-			Fields: Configuration_Properties_InstallPatchesFields,
-		},
-		"MaintenanceScope": ubx.FieldSpec{WireName: "maintenance_scope"},
-		"MaintenanceWindow": ubx.FieldSpec{
-			WireName: "maintenance_window",
-			Kind: "object",
-			Fields: Configuration_Properties_MaintenanceWindowFields,
-		},
-		"Namespace": ubx.FieldSpec{WireName: "namespace"},
-		"Visibility": ubx.FieldSpec{WireName: "visibility"},
-	}
+	"ExtensionProperties": ubx.FieldSpec{WireName: "extension_properties"},
+	"InstallPatches": ubx.FieldSpec{
+		WireName: "install_patches",
+		Kind:     "object",
+		Fields:   Configuration_Properties_InstallPatchesFields,
+	},
+	"MaintenanceScope": ubx.FieldSpec{WireName: "maintenance_scope"},
+	"MaintenanceWindow": ubx.FieldSpec{
+		WireName: "maintenance_window",
+		Kind:     "object",
+		Fields:   Configuration_Properties_MaintenanceWindowFields,
+	},
+	"Namespace":  ubx.FieldSpec{WireName: "namespace"},
+	"Visibility": ubx.FieldSpec{WireName: "visibility"},
+}
 
 type ConfigurationConfig struct {
 	// Gets or sets location of the resource
@@ -136,8 +136,8 @@ var Configuration = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Configuration_PropertiesFields,
+			Kind:     "object",
+			Fields:   Configuration_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

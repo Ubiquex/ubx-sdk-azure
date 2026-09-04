@@ -12,16 +12,16 @@ type OpenapiVirtualNetworkPeering_Value_Properties_DatabricksVirtualNetwork stru
 }
 
 type OpenapiVirtualNetworkPeering_Value_Properties struct {
-	AllowForwardedTraffic any
-	AllowGatewayTransit any
+	AllowForwardedTraffic     any
+	AllowGatewayTransit       any
 	AllowVirtualNetworkAccess any
-	DatabricksAddressSpace any
-	DatabricksVirtualNetwork any
-	PeeringState any
-	ProvisioningState any
-	RemoteAddressSpace any
-	RemoteVirtualNetwork any
-	UseRemoteGateways any
+	DatabricksAddressSpace    any
+	DatabricksVirtualNetwork  any
+	PeeringState              any
+	ProvisioningState         any
+	RemoteAddressSpace        any
+	RemoteVirtualNetwork      any
+	UseRemoteGateways         any
 }
 
 type OpenapiVirtualNetworkPeering_Value struct {
@@ -36,7 +36,7 @@ type OpenapiVirtualNetworkPeeringAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The VirtualNetworkPeering items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

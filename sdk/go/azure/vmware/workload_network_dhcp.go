@@ -17,12 +17,12 @@ type WorkloadNetworkDhcp_Properties struct {
 }
 
 var WorkloadNetworkDhcp_PropertiesFields = ubx.FieldMap{
-		"DhcpType": ubx.FieldSpec{WireName: "dhcp_type"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Revision": ubx.FieldSpec{WireName: "revision"},
-		"Segments": ubx.FieldSpec{WireName: "segments"},
-	}
+	"DhcpType":          ubx.FieldSpec{WireName: "dhcp_type"},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Revision":          ubx.FieldSpec{WireName: "revision"},
+	"Segments":          ubx.FieldSpec{WireName: "segments"},
+}
 
 type WorkloadNetworkDhcpConfig struct {
 	// Base class for WorkloadNetworkDhcpServer and WorkloadNetworkDhcpRelay to inherit from
@@ -39,8 +39,8 @@ var WorkloadNetworkDhcp = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WorkloadNetworkDhcp_PropertiesFields,
+			Kind:     "object",
+			Fields:   WorkloadNetworkDhcp_PropertiesFields,
 		},
 	},
 }

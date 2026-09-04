@@ -15,11 +15,11 @@ type AssemblyDefinition_Properties struct {
 }
 
 var AssemblyDefinition_PropertiesFields = ubx.FieldMap{
-		"AssemblyCulture": ubx.FieldSpec{WireName: "assembly_culture"},
-		"AssemblyName": ubx.FieldSpec{WireName: "assembly_name"},
-		"AssemblyPublicKeyToken": ubx.FieldSpec{WireName: "assembly_public_key_token"},
-		"AssemblyVersion": ubx.FieldSpec{WireName: "assembly_version"},
-	}
+	"AssemblyCulture":        ubx.FieldSpec{WireName: "assembly_culture"},
+	"AssemblyName":           ubx.FieldSpec{WireName: "assembly_name"},
+	"AssemblyPublicKeyToken": ubx.FieldSpec{WireName: "assembly_public_key_token"},
+	"AssemblyVersion":        ubx.FieldSpec{WireName: "assembly_version"},
+}
 
 type AssemblyDefinitionConfig struct {
 	// The assembly properties definition.
@@ -36,8 +36,8 @@ var AssemblyDefinition = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AssemblyDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   AssemblyDefinition_PropertiesFields,
 		},
 	},
 }

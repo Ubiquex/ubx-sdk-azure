@@ -4,7 +4,7 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type IscsiPath_Value_Properties struct {
-	NetworkBlock any
+	NetworkBlock      any
 	ProvisioningState any
 }
 
@@ -18,7 +18,7 @@ type IscsiPathConfig struct {
 
 type IscsiPathAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The IscsiPath items on this page
 	Value any

@@ -9,8 +9,8 @@ type ServerazureadonlyauthenticationsServerAzureAdonlyAuthentication_Properties 
 }
 
 var ServerazureadonlyauthenticationsServerAzureAdonlyAuthentication_PropertiesFields = ubx.FieldMap{
-		"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
-	}
+	"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
+}
 
 type ServerazureadonlyauthenticationsServerAzureAdonlyAuthenticationConfig struct {
 	// Properties of a active directory only authentication.
@@ -27,8 +27,8 @@ var ServerazureadonlyauthenticationsServerAzureAdonlyAuthentication = ubx.Resour
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServerazureadonlyauthenticationsServerAzureAdonlyAuthentication_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServerazureadonlyauthenticationsServerAzureAdonlyAuthentication_PropertiesFields,
 		},
 	},
 }

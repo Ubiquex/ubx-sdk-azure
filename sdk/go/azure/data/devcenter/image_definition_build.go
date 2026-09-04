@@ -4,21 +4,21 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ImageDefinitionBuild_Value_Properties_ErrorDetails struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type ImageDefinitionBuild_Value_Properties_ImageReference struct {
 	ExactVersion any
-	Id any
+	Id           any
 }
 
 type ImageDefinitionBuild_Value_Properties struct {
-	EndTime any
-	ErrorDetails any
+	EndTime        any
+	ErrorDetails   any
 	ImageReference any
-	StartTime any
-	Status any
+	StartTime      any
+	Status         any
 }
 
 type ImageDefinitionBuild_Value struct {
@@ -37,6 +37,5 @@ type ImageDefinitionBuildAttrs struct {
 
 var ImageDefinitionBuild = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image_definition_build",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

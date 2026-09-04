@@ -8,9 +8,9 @@ type TrafficcontrollerSecurityPolicy_Value_Properties_WafPolicy struct {
 }
 
 type TrafficcontrollerSecurityPolicy_Value_Properties struct {
-	PolicyType any
+	PolicyType        any
 	ProvisioningState any
-	WafPolicy any
+	WafPolicy         any
 }
 
 type TrafficcontrollerSecurityPolicy_Value struct {
@@ -23,7 +23,7 @@ type TrafficcontrollerSecurityPolicyConfig struct {
 
 type TrafficcontrollerSecurityPolicyAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink              any
 	TrafficControllerName any
 	// The SecurityPolicy items on this page
 	Value any

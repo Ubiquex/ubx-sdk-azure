@@ -17,12 +17,12 @@ type OpenapiPremierAddOn_Properties struct {
 }
 
 var OpenapiPremierAddOn_PropertiesFields = ubx.FieldMap{
-		"MarketplaceOffer": ubx.FieldSpec{WireName: "marketplace_offer"},
-		"MarketplacePublisher": ubx.FieldSpec{WireName: "marketplace_publisher"},
-		"Product": ubx.FieldSpec{WireName: "product"},
-		"Sku": ubx.FieldSpec{WireName: "sku"},
-		"Vendor": ubx.FieldSpec{WireName: "vendor"},
-	}
+	"MarketplaceOffer":     ubx.FieldSpec{WireName: "marketplace_offer"},
+	"MarketplacePublisher": ubx.FieldSpec{WireName: "marketplace_publisher"},
+	"Product":              ubx.FieldSpec{WireName: "product"},
+	"Sku":                  ubx.FieldSpec{WireName: "sku"},
+	"Vendor":               ubx.FieldSpec{WireName: "vendor"},
+}
 
 type OpenapiPremierAddOnConfig struct {
 	// Kind of resource.
@@ -48,8 +48,8 @@ var OpenapiPremierAddOn = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPremierAddOn_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPremierAddOn_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

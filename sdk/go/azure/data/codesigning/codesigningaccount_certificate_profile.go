@@ -4,36 +4,36 @@ package codesigning
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CodesigningaccountCertificateProfile_Value_Properties_Certificates_Revocation struct {
-	EffectiveAt any
+	EffectiveAt   any
 	FailureReason any
-	Reason any
-	Remarks any
-	RequestedAt any
-	Status any
+	Reason        any
+	Remarks       any
+	RequestedAt   any
+	Status        any
 }
 
 type CodesigningaccountCertificateProfile_Value_Properties_Certificates struct {
-	CreatedDate any
+	CreatedDate      any
 	EnhancedKeyUsage any
-	ExpiryDate any
-	Revocation any
-	SerialNumber any
-	Status any
-	SubjectName any
-	Thumbprint any
+	ExpiryDate       any
+	Revocation       any
+	SerialNumber     any
+	Status           any
+	SubjectName      any
+	Thumbprint       any
 }
 
 type CodesigningaccountCertificateProfile_Value_Properties struct {
-	Certificates any
+	Certificates         any
 	IdentityValidationId any
-	IncludeCity any
-	IncludeCountry any
-	IncludePostalCode any
-	IncludeState any
+	IncludeCity          any
+	IncludeCountry       any
+	IncludePostalCode    any
+	IncludeState         any
 	IncludeStreetAddress any
-	ProfileType any
-	ProvisioningState any
-	Status any
+	ProfileType          any
+	ProvisioningState    any
+	Status               any
 }
 
 type CodesigningaccountCertificateProfile_Value struct {

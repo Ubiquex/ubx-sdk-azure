@@ -55,14 +55,8 @@ _PrivateEndpointConnection_PropertiesFields = {
 
 @dataclasses.dataclass
 class PrivateEndpointConnectionConfig:
-    # The resource ID.
-    id: Any = None
-    # The name of the resource.
-    name: Any = None
     # Properties of a private endpoint connection.
     properties: Any = None
-    # The type of the resource.
-    type: Any = None
 
 @dataclasses.dataclass
 class PrivateEndpointConnectionAttrs:
@@ -78,13 +72,10 @@ class PrivateEndpointConnectionAttrs:
 PrivateEndpointConnection = ubx.ResourceBinding(
     wire_type="azure_appconfiguration_private_endpoint_connection",
     fields={
-        "id": ubx.FieldSpec(wire_name="id"),
-        "name": ubx.FieldSpec(wire_name="name"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",
             fields=_PrivateEndpointConnection_PropertiesFields,
         ),
-        "type": ubx.FieldSpec(wire_name="type"),
     },
 )

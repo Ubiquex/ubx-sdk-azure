@@ -18,40 +18,37 @@ type OpenapiApplicationGroup_Properties struct {
 }
 
 var OpenapiApplicationGroup_Properties_PoliciesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiApplicationGroup_PropertiesFields = ubx.FieldMap{
-		"ClientAppGroupIdentifier": ubx.FieldSpec{WireName: "client_app_group_identifier"},
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"Policies": ubx.FieldSpec{
-			WireName: "policies",
-			Kind: "list",
-			Fields: OpenapiApplicationGroup_Properties_PoliciesFields,
-		},
-	}
+	"ClientAppGroupIdentifier": ubx.FieldSpec{WireName: "client_app_group_identifier"},
+	"IsEnabled":                ubx.FieldSpec{WireName: "is_enabled"},
+	"Policies": ubx.FieldSpec{
+		WireName: "policies",
+		Kind:     "list",
+		Fields:   OpenapiApplicationGroup_Properties_PoliciesFields,
+	},
+}
 
 type OpenapiApplicationGroupConfig struct {
-	// The geo-location where the resource lives
-	Location any
 	Properties any
 }
 
 type OpenapiApplicationGroupAttrs struct {
 	// The geo-location where the resource lives
-	Location any
+	Location   any
 	Properties any
 }
 
 var OpenapiApplicationGroup = ubx.ResourceBinding{
 	WireType: "azure_eventhub_openapi_application_group",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiApplicationGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiApplicationGroup_PropertiesFields,
 		},
 	},
 }

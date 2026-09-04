@@ -5,68 +5,68 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProduct_Value_Properties_LastCharge struct {
 	Currency any
-	Value any
+	Value    any
 }
 
 type OpenapiProduct_Value_Properties_Reseller struct {
 	Description any
-	ResellerId any
+	ResellerId  any
 }
 
 type OpenapiProduct_Value_Properties struct {
-	AutoRenew any
-	AvailabilityId any
-	BillingFrequency any
+	AutoRenew                 any
+	AvailabilityId            any
+	BillingFrequency          any
 	BillingProfileDisplayName any
-	BillingProfileId any
-	CustomerDisplayName any
-	CustomerId any
-	DisplayName any
-	EndDate any
+	BillingProfileId          any
+	CustomerDisplayName       any
+	CustomerId                any
+	DisplayName               any
+	EndDate                   any
 	InvoiceSectionDisplayName any
-	InvoiceSectionId any
-	LastCharge any
-	LastChargeDate any
-	ProductType any
-	ProductTypeId any
-	PurchaseDate any
-	Quantity any
-	Reseller any
-	SkuDescription any
-	SkuId any
-	Status any
-	TenantId any
+	InvoiceSectionId          any
+	LastCharge                any
+	LastChargeDate            any
+	ProductType               any
+	ProductTypeId             any
+	PurchaseDate              any
+	Quantity                  any
+	Reseller                  any
+	SkuDescription            any
+	SkuId                     any
+	Status                    any
+	TenantId                  any
 }
 
 type OpenapiProduct_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiProductConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Filter any
+	Count              any
+	Filter             any
 	InvoiceSectionName any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy            any
+	Search             any
+	Skip               any
+	Top                any
 }
 
 type OpenapiProductAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	Count any
-	Filter any
+	Count              any
+	Filter             any
 	InvoiceSectionName any
 	// The link to the next page of items
 	NextLink any
-	OrderBy any
-	Search any
-	Skip any
-	Top any
+	OrderBy  any
+	Search   any
+	Skip     any
+	Top      any
 	// The Product items on this page
 	Value any
 }
@@ -76,12 +76,12 @@ var OpenapiProduct = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
+		"Count":              ubx.FieldSpec{WireName: "count"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
 		"InvoiceSectionName": ubx.FieldSpec{WireName: "invoice_section_name"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Search": ubx.FieldSpec{WireName: "search"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"Top": ubx.FieldSpec{WireName: "top"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Search":             ubx.FieldSpec{WireName: "search"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
 	},
 }

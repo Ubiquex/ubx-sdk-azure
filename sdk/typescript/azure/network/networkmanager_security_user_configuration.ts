@@ -31,20 +31,9 @@ const NetworkmanagerSecurityUserConfiguration_PropertiesFields: FieldMap = {
   resourceGuid: "resource_guid",
 };
 
-const NetworkmanagerSecurityUserConfiguration_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface NetworkmanagerSecurityUserConfigurationConfig {
   /** Defines the security user configuration properties. */
   properties?: NetworkmanagerSecurityUserConfiguration_Properties | Computed<NetworkmanagerSecurityUserConfiguration_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: NetworkmanagerSecurityUserConfiguration_SystemData | Computed<NetworkmanagerSecurityUserConfiguration_SystemData>;
 }
 
 export interface NetworkmanagerSecurityUserConfigurationAttrs {
@@ -61,11 +50,6 @@ export const NetworkmanagerSecurityUserConfiguration: ResourceBinding<Networkman
       wireName: "properties",
       kind: "object",
       fields: NetworkmanagerSecurityUserConfiguration_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: NetworkmanagerSecurityUserConfiguration_SystemDataFields,
     },
   },
 };

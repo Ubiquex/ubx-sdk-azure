@@ -9,69 +9,69 @@ type OpenapiContainerApp_Value_ExtendedLocation struct {
 }
 
 type OpenapiContainerApp_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiContainerApp_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Dapr_AppHealth struct {
-	Enabled any
-	Path any
-	ProbeIntervalSeconds any
+	Enabled                  any
+	Path                     any
+	ProbeIntervalSeconds     any
 	ProbeTimeoutMilliseconds any
-	Threshold any
+	Threshold                any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Dapr struct {
-	AppHealth any
-	AppId any
-	AppPort any
-	AppProtocol any
-	EnableApiLogging any
-	Enabled any
+	AppHealth          any
+	AppId              any
+	AppPort            any
+	AppProtocol        any
+	EnableApiLogging   any
+	Enabled            any
 	HttpMaxRequestSize any
 	HttpReadBufferSize any
-	LogLevel any
-	MaxConcurrency any
+	LogLevel           any
+	MaxConcurrency     any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_IdentitySettings struct {
-	Identity any
+	Identity  any
 	Lifecycle any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Ingress_AdditionalPortMappings struct {
 	ExposedPort any
-	External any
-	TargetPort any
+	External    any
+	TargetPort  any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Ingress_CorsPolicy struct {
 	AllowCredentials any
-	AllowedHeaders any
-	AllowedMethods any
-	AllowedOrigins any
-	ExposeHeaders any
-	MaxAge any
+	AllowedHeaders   any
+	AllowedMethods   any
+	AllowedOrigins   any
+	ExposeHeaders    any
+	MaxAge           any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Ingress_CustomDomains struct {
-	BindingType any
+	BindingType   any
 	CertificateId any
-	Name any
+	Name          any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Ingress_IpSecurityRestrictions struct {
-	Action any
-	Description any
+	Action         any
+	Description    any
 	IpAddressRange any
-	Name any
+	Name           any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Ingress_StickySessions struct {
@@ -79,33 +79,33 @@ type OpenapiContainerApp_Value_Properties_Configuration_Ingress_StickySessions s
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Ingress_Traffic struct {
-	Label any
+	Label          any
 	LatestRevision any
-	RevisionName any
-	Weight any
+	RevisionName   any
+	Weight         any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Ingress struct {
 	AdditionalPortMappings any
-	AllowInsecure any
-	ClientCertificateMode any
-	CorsPolicy any
-	CustomDomains any
-	ExposedPort any
-	External any
-	Fqdn any
+	AllowInsecure          any
+	ClientCertificateMode  any
+	CorsPolicy             any
+	CustomDomains          any
+	ExposedPort            any
+	External               any
+	Fqdn                   any
 	IpSecurityRestrictions any
-	StickySessions any
-	TargetPort any
-	Traffic any
-	Transport any
+	StickySessions         any
+	TargetPort             any
+	Traffic                any
+	Transport              any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Registries struct {
-	Identity any
+	Identity          any
 	PasswordSecretRef any
-	Server any
-	Username any
+	Server            any
+	Username          any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Runtime_Java struct {
@@ -117,10 +117,10 @@ type OpenapiContainerApp_Value_Properties_Configuration_Runtime struct {
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Secrets struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
-	Name any
-	Value any
+	Name        any
+	Value       any
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration_Service struct {
@@ -128,28 +128,28 @@ type OpenapiContainerApp_Value_Properties_Configuration_Service struct {
 }
 
 type OpenapiContainerApp_Value_Properties_Configuration struct {
-	ActiveRevisionsMode any
-	Dapr any
-	IdentitySettings any
-	Ingress any
+	ActiveRevisionsMode  any
+	Dapr                 any
+	IdentitySettings     any
+	Ingress              any
 	MaxInactiveRevisions any
-	Registries any
-	Runtime any
-	Secrets any
-	Service any
+	Registries           any
+	Runtime              any
+	Secrets              any
+	Service              any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Containers_Probes_HttpGet struct {
-	Host any
+	Host        any
 	HttpHeaders any
-	Path any
-	Port any
-	Scheme any
+	Path        any
+	Port        any
+	Scheme      any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Containers_Probes_TcpSocket struct {
@@ -158,15 +158,15 @@ type OpenapiContainerApp_Value_Properties_Template_Containers_Probes_TcpSocket s
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Containers_Probes struct {
-	FailureThreshold any
-	HttpGet any
-	InitialDelaySeconds any
-	PeriodSeconds any
-	SuccessThreshold any
-	TcpSocket any
+	FailureThreshold              any
+	HttpGet                       any
+	InitialDelaySeconds           any
+	PeriodSeconds                 any
+	SuccessThreshold              any
+	TcpSocket                     any
 	TerminationGracePeriodSeconds any
-	TimeoutSeconds any
-	Type any
+	TimeoutSeconds                any
+	Type                          any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Containers struct {
@@ -174,125 +174,125 @@ type OpenapiContainerApp_Value_Properties_Template_Containers struct {
 }
 
 type OpenapiContainerApp_Value_Properties_Template_InitContainers_Env struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_InitContainers_Resources struct {
-	Cpu any
+	Cpu              any
 	EphemeralStorage any
-	Memory any
+	Memory           any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_InitContainers_VolumeMounts struct {
-	MountPath any
-	SubPath any
+	MountPath  any
+	SubPath    any
 	VolumeName any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_InitContainers struct {
-	Args any
-	Command any
-	Env any
-	Image any
-	Name any
-	Resources any
+	Args         any
+	Command      any
+	Env          any
+	Image        any
+	Name         any
+	Resources    any
 	VolumeMounts any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Scale_Rules_AzureQueue_Auth struct {
-	SecretRef any
+	SecretRef        any
 	TriggerParameter any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Scale_Rules_AzureQueue struct {
 	AccountName any
-	Auth any
-	Identity any
+	Auth        any
+	Identity    any
 	QueueLength any
-	QueueName any
+	QueueName   any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Scale_Rules_Custom struct {
-	Auth any
+	Auth     any
 	Identity any
 	Metadata any
-	Type any
+	Type     any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Scale_Rules_Http struct {
-	Auth any
+	Auth     any
 	Identity any
 	Metadata any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Scale_Rules struct {
 	AzureQueue any
-	Custom any
-	Http any
-	Name any
-	Tcp any
+	Custom     any
+	Http       any
+	Name       any
+	Tcp        any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Scale struct {
-	CooldownPeriod any
-	MaxReplicas any
-	MinReplicas any
+	CooldownPeriod  any
+	MaxReplicas     any
+	MinReplicas     any
 	PollingInterval any
-	Rules any
+	Rules           any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_ServiceBinds struct {
-	Name any
+	Name      any
 	ServiceId any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Volumes_Secrets struct {
-	Path any
+	Path      any
 	SecretRef any
 }
 
 type OpenapiContainerApp_Value_Properties_Template_Volumes struct {
 	MountOptions any
-	Name any
-	Secrets any
-	StorageName any
-	StorageType any
+	Name         any
+	Secrets      any
+	StorageName  any
+	StorageType  any
 }
 
 type OpenapiContainerApp_Value_Properties_Template struct {
-	Containers any
-	InitContainers any
-	RevisionSuffix any
-	Scale any
-	ServiceBinds any
+	Containers                    any
+	InitContainers                any
+	RevisionSuffix                any
+	Scale                         any
+	ServiceBinds                  any
 	TerminationGracePeriodSeconds any
-	Volumes any
+	Volumes                       any
 }
 
 type OpenapiContainerApp_Value_Properties struct {
-	Configuration any
+	Configuration              any
 	CustomDomainVerificationId any
-	EnvironmentId any
-	EventStreamEndpoint any
-	LatestReadyRevisionName any
-	LatestRevisionFqdn any
-	LatestRevisionName any
-	ManagedEnvironmentId any
-	OutboundIpAddresses any
-	ProvisioningState any
-	RunningStatus any
-	Template any
-	WorkloadProfileName any
+	EnvironmentId              any
+	EventStreamEndpoint        any
+	LatestReadyRevisionName    any
+	LatestRevisionFqdn         any
+	LatestRevisionName         any
+	ManagedEnvironmentId       any
+	OutboundIpAddresses        any
+	ProvisioningState          any
+	RunningStatus              any
+	Template                   any
+	WorkloadProfileName        any
 }
 
 type OpenapiContainerApp_Value struct {
 	ExtendedLocation any
-	Identity any
-	Kind any
-	ManagedBy any
-	Properties any
+	Identity         any
+	Kind             any
+	ManagedBy        any
+	Properties       any
 }
 
 type OpenapiContainerAppConfig struct {
@@ -307,6 +307,5 @@ type OpenapiContainerAppAttrs struct {
 
 var OpenapiContainerApp = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_container_app",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

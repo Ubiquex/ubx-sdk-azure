@@ -20,8 +20,6 @@ const ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields: FieldMap = {
 };
 
 export interface ExpressrouteServiceEndpointPolicyDefinitionConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Service Endpoint policy definition resource. */
   properties?: ExpressrouteServiceEndpointPolicyDefinition_Properties | Computed<ExpressrouteServiceEndpointPolicyDefinition_Properties>;
 }
@@ -36,7 +34,6 @@ export interface ExpressrouteServiceEndpointPolicyDefinitionAttrs {
 export const ExpressrouteServiceEndpointPolicyDefinition: ResourceBinding<ExpressrouteServiceEndpointPolicyDefinitionConfig, ExpressrouteServiceEndpointPolicyDefinitionAttrs> = {
   wireType: "azure_network_expressroute_service_endpoint_policy_definition",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

@@ -36,21 +36,10 @@ _NetworkmanagerStaticMember_PropertiesFields = {
     "resource_id": ubx.FieldSpec(wire_name="resource_id"),
 }
 
-_NetworkmanagerStaticMember_SystemDataFields = {
-    "created_at": ubx.FieldSpec(wire_name="created_at"),
-    "created_by": ubx.FieldSpec(wire_name="created_by"),
-    "created_by_type": ubx.FieldSpec(wire_name="created_by_type"),
-    "last_modified_at": ubx.FieldSpec(wire_name="last_modified_at"),
-    "last_modified_by": ubx.FieldSpec(wire_name="last_modified_by"),
-    "last_modified_by_type": ubx.FieldSpec(wire_name="last_modified_by_type"),
-}
-
 @dataclasses.dataclass
 class NetworkmanagerStaticMemberConfig:
     # Properties of static member.
     properties: Any = None
-    # Metadata pertaining to creation and last modification of the resource.
-    system_data: Any = None
 
 @dataclasses.dataclass
 class NetworkmanagerStaticMemberAttrs:
@@ -66,11 +55,6 @@ NetworkmanagerStaticMember = ubx.ResourceBinding(
             wire_name="properties",
             kind="object",
             fields=_NetworkmanagerStaticMember_PropertiesFields,
-        ),
-        "system_data": ubx.FieldSpec(
-            wire_name="system_data",
-            kind="object",
-            fields=_NetworkmanagerStaticMember_SystemDataFields,
         ),
     },
 )

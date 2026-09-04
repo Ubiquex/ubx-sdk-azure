@@ -26,10 +26,6 @@ _DatamaskingpoliciesDataMaskingPolicy_PropertiesFields = {
 
 @dataclasses.dataclass
 class DatamaskingpoliciesDataMaskingPolicyConfig:
-    # The kind of Data Masking Policy. Metadata, used for Azure portal.
-    kind: Any = None
-    # The location of the data masking policy.
-    location: Any = None
     # The properties of a database data masking policy.
     properties: Any = None
 
@@ -45,8 +41,6 @@ class DatamaskingpoliciesDataMaskingPolicyAttrs:
 DatamaskingpoliciesDataMaskingPolicy = ubx.ResourceBinding(
     wire_type="azure_sql_datamaskingpolicies_data_masking_policy",
     fields={
-        "kind": ubx.FieldSpec(wire_name="kind"),
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

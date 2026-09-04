@@ -8,62 +8,62 @@ type CustomizedAcceleratorResource_Value_Properties_GitRepository_AuthSetting st
 }
 
 type CustomizedAcceleratorResource_Value_Properties_GitRepository struct {
-	AuthSetting any
-	Branch any
-	Commit any
-	GitTag any
+	AuthSetting       any
+	Branch            any
+	Commit            any
+	GitTag            any
 	IntervalInSeconds any
-	SubPath any
-	Url any
+	SubPath           any
+	Url               any
 }
 
 type CustomizedAcceleratorResource_Value_Properties struct {
-	AcceleratorTags any
-	AcceleratorType any
-	Description any
-	DisplayName any
-	GitRepository any
-	IconUrl any
-	Imports any
+	AcceleratorTags   any
+	AcceleratorType   any
+	Description       any
+	DisplayName       any
+	GitRepository     any
+	IconUrl           any
+	Imports           any
 	ProvisioningState any
 }
 
 type CustomizedAcceleratorResource_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type CustomizedAcceleratorResource_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type CustomizedAcceleratorResourceConfig struct {
-	ApiVersion any
+	ApiVersion                 any
 	ApplicationAcceleratorName any
-	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ResourceGroupName          any
+	ServiceName                any
+	SubscriptionId             any
 }
 
 type CustomizedAcceleratorResourceAttrs struct {
-	ApiVersion any
+	ApiVersion                 any
 	ApplicationAcceleratorName any
-	NextLink any
-	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
-	Value any
+	NextLink                   any
+	ResourceGroupName          any
+	ServiceName                any
+	SubscriptionId             any
+	Value                      any
 }
 
 var CustomizedAcceleratorResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_customized_accelerator_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":                 ubx.FieldSpec{WireName: "api_version"},
 		"ApplicationAcceleratorName": ubx.FieldSpec{WireName: "application_accelerator_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":          ubx.FieldSpec{WireName: "resource_group_name"},
+		"ServiceName":                ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":             ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

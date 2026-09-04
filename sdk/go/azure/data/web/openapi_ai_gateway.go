@@ -23,6 +23,5 @@ type OpenapiAiGatewayAttrs struct {
 
 var OpenapiAiGateway = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_ai_gateway",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

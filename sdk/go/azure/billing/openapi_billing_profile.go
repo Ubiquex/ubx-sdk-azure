@@ -4,49 +4,49 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingProfile_Properties_BillTo struct {
-	AddressLine1 any
-	AddressLine2 any
-	AddressLine3 any
-	City any
-	CompanyName any
-	Country any
-	District any
-	Email any
-	FirstName any
+	AddressLine1   any
+	AddressLine2   any
+	AddressLine3   any
+	City           any
+	CompanyName    any
+	Country        any
+	District       any
+	Email          any
+	FirstName      any
 	IsValidAddress any
-	LastName any
-	MiddleName any
-	PhoneNumber any
-	PostalCode any
-	Region any
+	LastName       any
+	MiddleName     any
+	PhoneNumber    any
+	PostalCode     any
+	Region         any
 }
 
 type OpenapiBillingProfile_Properties_CurrentPaymentTerm struct {
-	EndDate any
+	EndDate   any
 	IsDefault any
 	StartDate any
-	Term any
+	Term      any
 }
 
 type OpenapiBillingProfile_Properties_EnabledAzurePlans struct {
-	ProductId any
+	ProductId      any
 	SkuDescription any
-	SkuId any
+	SkuId          any
 }
 
 type OpenapiBillingProfile_Properties_IndirectRelationshipInfo struct {
 	BillingAccountName any
 	BillingProfileName any
-	DisplayName any
+	DisplayName        any
 }
 
 type OpenapiBillingProfile_Properties_SpendingLimitDetails struct {
-	Amount any
-	Currency any
-	EndDate any
+	Amount    any
+	Currency  any
+	EndDate   any
 	StartDate any
-	Status any
-	Type any
+	Status    any
+	Type      any
 }
 
 type OpenapiBillingProfile_Properties struct {
@@ -99,108 +99,108 @@ type OpenapiBillingProfile_Properties struct {
 }
 
 var OpenapiBillingProfile_Properties_BillToFields = ubx.FieldMap{
-		"AddressLine1": ubx.FieldSpec{WireName: "address_line1"},
-		"AddressLine2": ubx.FieldSpec{WireName: "address_line2"},
-		"AddressLine3": ubx.FieldSpec{WireName: "address_line3"},
-		"City": ubx.FieldSpec{WireName: "city"},
-		"CompanyName": ubx.FieldSpec{WireName: "company_name"},
-		"Country": ubx.FieldSpec{WireName: "country"},
-		"District": ubx.FieldSpec{WireName: "district"},
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"FirstName": ubx.FieldSpec{WireName: "first_name"},
-		"IsValidAddress": ubx.FieldSpec{WireName: "is_valid_address"},
-		"LastName": ubx.FieldSpec{WireName: "last_name"},
-		"MiddleName": ubx.FieldSpec{WireName: "middle_name"},
-		"PhoneNumber": ubx.FieldSpec{WireName: "phone_number"},
-		"PostalCode": ubx.FieldSpec{WireName: "postal_code"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-	}
+	"AddressLine1":   ubx.FieldSpec{WireName: "address_line1"},
+	"AddressLine2":   ubx.FieldSpec{WireName: "address_line2"},
+	"AddressLine3":   ubx.FieldSpec{WireName: "address_line3"},
+	"City":           ubx.FieldSpec{WireName: "city"},
+	"CompanyName":    ubx.FieldSpec{WireName: "company_name"},
+	"Country":        ubx.FieldSpec{WireName: "country"},
+	"District":       ubx.FieldSpec{WireName: "district"},
+	"Email":          ubx.FieldSpec{WireName: "email"},
+	"FirstName":      ubx.FieldSpec{WireName: "first_name"},
+	"IsValidAddress": ubx.FieldSpec{WireName: "is_valid_address"},
+	"LastName":       ubx.FieldSpec{WireName: "last_name"},
+	"MiddleName":     ubx.FieldSpec{WireName: "middle_name"},
+	"PhoneNumber":    ubx.FieldSpec{WireName: "phone_number"},
+	"PostalCode":     ubx.FieldSpec{WireName: "postal_code"},
+	"Region":         ubx.FieldSpec{WireName: "region"},
+}
 
 var OpenapiBillingProfile_Properties_CurrentPaymentTermFields = ubx.FieldMap{
-		"EndDate": ubx.FieldSpec{WireName: "end_date"},
-		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
-		"StartDate": ubx.FieldSpec{WireName: "start_date"},
-		"Term": ubx.FieldSpec{WireName: "term"},
-	}
+	"EndDate":   ubx.FieldSpec{WireName: "end_date"},
+	"IsDefault": ubx.FieldSpec{WireName: "is_default"},
+	"StartDate": ubx.FieldSpec{WireName: "start_date"},
+	"Term":      ubx.FieldSpec{WireName: "term"},
+}
 
 var OpenapiBillingProfile_Properties_EnabledAzurePlansFields = ubx.FieldMap{
-		"ProductId": ubx.FieldSpec{WireName: "product_id"},
-		"SkuDescription": ubx.FieldSpec{WireName: "sku_description"},
-		"SkuId": ubx.FieldSpec{WireName: "sku_id"},
-	}
+	"ProductId":      ubx.FieldSpec{WireName: "product_id"},
+	"SkuDescription": ubx.FieldSpec{WireName: "sku_description"},
+	"SkuId":          ubx.FieldSpec{WireName: "sku_id"},
+}
 
 var OpenapiBillingProfile_Properties_IndirectRelationshipInfoFields = ubx.FieldMap{
-		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
+	"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
+	"DisplayName":        ubx.FieldSpec{WireName: "display_name"},
+}
 
 var OpenapiBillingProfile_Properties_SpendingLimitDetailsFields = ubx.FieldMap{
-		"Amount": ubx.FieldSpec{WireName: "amount"},
-		"Currency": ubx.FieldSpec{WireName: "currency"},
-		"EndDate": ubx.FieldSpec{WireName: "end_date"},
-		"StartDate": ubx.FieldSpec{WireName: "start_date"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Amount":    ubx.FieldSpec{WireName: "amount"},
+	"Currency":  ubx.FieldSpec{WireName: "currency"},
+	"EndDate":   ubx.FieldSpec{WireName: "end_date"},
+	"StartDate": ubx.FieldSpec{WireName: "start_date"},
+	"Status":    ubx.FieldSpec{WireName: "status"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiBillingProfile_PropertiesFields = ubx.FieldMap{
-		"BillTo": ubx.FieldSpec{
-			WireName: "bill_to",
-			Kind: "object",
-			Fields: OpenapiBillingProfile_Properties_BillToFields,
-		},
-		"BillingRelationshipType": ubx.FieldSpec{WireName: "billing_relationship_type"},
-		"Currency": ubx.FieldSpec{WireName: "currency"},
-		"CurrentPaymentTerm": ubx.FieldSpec{
-			WireName: "current_payment_term",
-			Kind: "object",
-			Fields: OpenapiBillingProfile_Properties_CurrentPaymentTermFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"EnabledAzurePlans": ubx.FieldSpec{
-			WireName: "enabled_azure_plans",
-			Kind: "list",
-			Fields: OpenapiBillingProfile_Properties_EnabledAzurePlansFields,
-		},
-		"HasReadAccess": ubx.FieldSpec{WireName: "has_read_access"},
-		"IndirectRelationshipInfo": ubx.FieldSpec{
-			WireName: "indirect_relationship_info",
-			Kind: "object",
-			Fields: OpenapiBillingProfile_Properties_IndirectRelationshipInfoFields,
-		},
-		"InvoiceDay": ubx.FieldSpec{WireName: "invoice_day"},
-		"InvoiceEmailOptIn": ubx.FieldSpec{WireName: "invoice_email_opt_in"},
-		"InvoiceRecipients": ubx.FieldSpec{WireName: "invoice_recipients"},
-		"OtherPaymentTerms": ubx.FieldSpec{
-			WireName: "other_payment_terms",
-			Kind: "list",
-			Fields: OpenapiBillingProfile_Properties_CurrentPaymentTermFields,
-		},
-		"PoNumber": ubx.FieldSpec{WireName: "po_number"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ShipTo": ubx.FieldSpec{
-			WireName: "ship_to",
-			Kind: "object",
-			Fields: OpenapiBillingProfile_Properties_BillToFields,
-		},
-		"SoldTo": ubx.FieldSpec{
-			WireName: "sold_to",
-			Kind: "object",
-			Fields: OpenapiBillingProfile_Properties_BillToFields,
-		},
-		"SpendingLimit": ubx.FieldSpec{WireName: "spending_limit"},
-		"SpendingLimitDetails": ubx.FieldSpec{
-			WireName: "spending_limit_details",
-			Kind: "list",
-			Fields: OpenapiBillingProfile_Properties_SpendingLimitDetailsFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StatusReasonCode": ubx.FieldSpec{WireName: "status_reason_code"},
-		"SystemId": ubx.FieldSpec{WireName: "system_id"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"TargetClouds": ubx.FieldSpec{WireName: "target_clouds"},
-	}
+	"BillTo": ubx.FieldSpec{
+		WireName: "bill_to",
+		Kind:     "object",
+		Fields:   OpenapiBillingProfile_Properties_BillToFields,
+	},
+	"BillingRelationshipType": ubx.FieldSpec{WireName: "billing_relationship_type"},
+	"Currency":                ubx.FieldSpec{WireName: "currency"},
+	"CurrentPaymentTerm": ubx.FieldSpec{
+		WireName: "current_payment_term",
+		Kind:     "object",
+		Fields:   OpenapiBillingProfile_Properties_CurrentPaymentTermFields,
+	},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"EnabledAzurePlans": ubx.FieldSpec{
+		WireName: "enabled_azure_plans",
+		Kind:     "list",
+		Fields:   OpenapiBillingProfile_Properties_EnabledAzurePlansFields,
+	},
+	"HasReadAccess": ubx.FieldSpec{WireName: "has_read_access"},
+	"IndirectRelationshipInfo": ubx.FieldSpec{
+		WireName: "indirect_relationship_info",
+		Kind:     "object",
+		Fields:   OpenapiBillingProfile_Properties_IndirectRelationshipInfoFields,
+	},
+	"InvoiceDay":        ubx.FieldSpec{WireName: "invoice_day"},
+	"InvoiceEmailOptIn": ubx.FieldSpec{WireName: "invoice_email_opt_in"},
+	"InvoiceRecipients": ubx.FieldSpec{WireName: "invoice_recipients"},
+	"OtherPaymentTerms": ubx.FieldSpec{
+		WireName: "other_payment_terms",
+		Kind:     "list",
+		Fields:   OpenapiBillingProfile_Properties_CurrentPaymentTermFields,
+	},
+	"PoNumber":          ubx.FieldSpec{WireName: "po_number"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ShipTo": ubx.FieldSpec{
+		WireName: "ship_to",
+		Kind:     "object",
+		Fields:   OpenapiBillingProfile_Properties_BillToFields,
+	},
+	"SoldTo": ubx.FieldSpec{
+		WireName: "sold_to",
+		Kind:     "object",
+		Fields:   OpenapiBillingProfile_Properties_BillToFields,
+	},
+	"SpendingLimit": ubx.FieldSpec{WireName: "spending_limit"},
+	"SpendingLimitDetails": ubx.FieldSpec{
+		WireName: "spending_limit_details",
+		Kind:     "list",
+		Fields:   OpenapiBillingProfile_Properties_SpendingLimitDetailsFields,
+	},
+	"Status":           ubx.FieldSpec{WireName: "status"},
+	"StatusReasonCode": ubx.FieldSpec{WireName: "status_reason_code"},
+	"SystemId":         ubx.FieldSpec{WireName: "system_id"},
+	"Tags":             ubx.FieldSpec{WireName: "tags"},
+	"TargetClouds":     ubx.FieldSpec{WireName: "target_clouds"},
+}
 
 type OpenapiBillingProfileConfig struct {
 	// A billing profile.
@@ -221,8 +221,8 @@ var OpenapiBillingProfile = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBillingProfile_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBillingProfile_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

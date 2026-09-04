@@ -4,7 +4,7 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Cluster_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -24,10 +24,10 @@ type Cluster_Properties_AcceptedAudiences struct {
 }
 
 type Cluster_Properties_CalloutPolicies struct {
-	CalloutId any
-	CalloutType any
+	CalloutId       any
+	CalloutType     any
 	CalloutUriRegex any
-	OutboundAccess any
+	OutboundAccess  any
 }
 
 type Cluster_Properties_KeyVaultProperties struct {
@@ -45,8 +45,8 @@ type Cluster_Properties_KeyVaultProperties struct {
 
 type Cluster_Properties_LanguageExtensions_Value struct {
 	LanguageExtensionCustomImageName any
-	LanguageExtensionImageName any
-	LanguageExtensionName any
+	LanguageExtensionImageName       any
+	LanguageExtensionName            any
 }
 
 type Cluster_Properties_LanguageExtensions struct {
@@ -84,15 +84,15 @@ type Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint st
 
 type Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Cluster_Properties_PrivateEndpointConnections_Properties struct {
-	GroupId any
-	PrivateEndpoint any
+	GroupId                           any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Cluster_Properties_PrivateEndpointConnections struct {
@@ -177,184 +177,182 @@ type Cluster_Sku struct {
 }
 
 var Cluster_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Cluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Cluster_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Cluster_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Cluster_Properties_AcceptedAudiencesFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Cluster_Properties_CalloutPoliciesFields = ubx.FieldMap{
-		"CalloutId": ubx.FieldSpec{WireName: "callout_id"},
-		"CalloutType": ubx.FieldSpec{WireName: "callout_type"},
-		"CalloutUriRegex": ubx.FieldSpec{WireName: "callout_uri_regex"},
-		"OutboundAccess": ubx.FieldSpec{WireName: "outbound_access"},
-	}
+	"CalloutId":       ubx.FieldSpec{WireName: "callout_id"},
+	"CalloutType":     ubx.FieldSpec{WireName: "callout_type"},
+	"CalloutUriRegex": ubx.FieldSpec{WireName: "callout_uri_regex"},
+	"OutboundAccess":  ubx.FieldSpec{WireName: "outbound_access"},
+}
 
 var Cluster_Properties_KeyVaultPropertiesFields = ubx.FieldMap{
-		"FederatedIdentityClientId": ubx.FieldSpec{WireName: "federated_identity_client_id"},
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"UserIdentity": ubx.FieldSpec{WireName: "user_identity"},
-	}
+	"FederatedIdentityClientId": ubx.FieldSpec{WireName: "federated_identity_client_id"},
+	"KeyName":                   ubx.FieldSpec{WireName: "key_name"},
+	"KeyVaultUri":               ubx.FieldSpec{WireName: "key_vault_uri"},
+	"KeyVersion":                ubx.FieldSpec{WireName: "key_version"},
+	"UserIdentity":              ubx.FieldSpec{WireName: "user_identity"},
+}
 
 var Cluster_Properties_LanguageExtensions_ValueFields = ubx.FieldMap{
-		"LanguageExtensionCustomImageName": ubx.FieldSpec{WireName: "language_extension_custom_image_name"},
-		"LanguageExtensionImageName": ubx.FieldSpec{WireName: "language_extension_image_name"},
-		"LanguageExtensionName": ubx.FieldSpec{WireName: "language_extension_name"},
-	}
+	"LanguageExtensionCustomImageName": ubx.FieldSpec{WireName: "language_extension_custom_image_name"},
+	"LanguageExtensionImageName":       ubx.FieldSpec{WireName: "language_extension_image_name"},
+	"LanguageExtensionName":            ubx.FieldSpec{WireName: "language_extension_name"},
+}
 
 var Cluster_Properties_LanguageExtensionsFields = ubx.FieldMap{
-		"NextLink": ubx.FieldSpec{WireName: "next_link"},
-		"Value": ubx.FieldSpec{
-			WireName: "value",
-			Kind: "list",
-			Fields: Cluster_Properties_LanguageExtensions_ValueFields,
-		},
-	}
+	"NextLink": ubx.FieldSpec{WireName: "next_link"},
+	"Value": ubx.FieldSpec{
+		WireName: "value",
+		Kind:     "list",
+		Fields:   Cluster_Properties_LanguageExtensions_ValueFields,
+	},
+}
 
 var Cluster_Properties_MigrationClusterFields = ubx.FieldMap{
-		"DataIngestionUri": ubx.FieldSpec{WireName: "data_ingestion_uri"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Role": ubx.FieldSpec{WireName: "role"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"DataIngestionUri": ubx.FieldSpec{WireName: "data_ingestion_uri"},
+	"Id":               ubx.FieldSpec{WireName: "id"},
+	"Role":             ubx.FieldSpec{WireName: "role"},
+	"Uri":              ubx.FieldSpec{WireName: "uri"},
+}
 
 var Cluster_Properties_OptimizedAutoscaleFields = ubx.FieldMap{
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"Maximum": ubx.FieldSpec{WireName: "maximum"},
-		"Minimum": ubx.FieldSpec{WireName: "minimum"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
+	"Maximum":   ubx.FieldSpec{WireName: "maximum"},
+	"Minimum":   ubx.FieldSpec{WireName: "minimum"},
+	"Version":   ubx.FieldSpec{WireName: "version"},
+}
 
 var Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var Cluster_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupId": ubx.FieldSpec{WireName: "group_id"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Cluster_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Cluster_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Cluster_Properties_VirtualNetworkConfigurationFields = ubx.FieldMap{
-		"DataManagementPublicIpId": ubx.FieldSpec{WireName: "data_management_public_ip_id"},
-		"EnginePublicIpId": ubx.FieldSpec{WireName: "engine_public_ip_id"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-	}
+	"DataManagementPublicIpId": ubx.FieldSpec{WireName: "data_management_public_ip_id"},
+	"EnginePublicIpId":         ubx.FieldSpec{WireName: "engine_public_ip_id"},
+	"State":                    ubx.FieldSpec{WireName: "state"},
+	"SubnetId":                 ubx.FieldSpec{WireName: "subnet_id"},
+}
 
 var Cluster_PropertiesFields = ubx.FieldMap{
-		"AcceptedAudiences": ubx.FieldSpec{
-			WireName: "accepted_audiences",
-			Kind: "list",
-			Fields: Cluster_Properties_AcceptedAudiencesFields,
-		},
-		"AllowedFqdnList": ubx.FieldSpec{WireName: "allowed_fqdn_list"},
-		"AllowedIpRangeList": ubx.FieldSpec{WireName: "allowed_ip_range_list"},
-		"CalloutPolicies": ubx.FieldSpec{
-			WireName: "callout_policies",
-			Kind: "list",
-			Fields: Cluster_Properties_CalloutPoliciesFields,
-		},
-		"DataIngestionUri": ubx.FieldSpec{WireName: "data_ingestion_uri"},
-		"EnableAutoStop": ubx.FieldSpec{WireName: "enable_auto_stop"},
-		"EnableDiskEncryption": ubx.FieldSpec{WireName: "enable_disk_encryption"},
-		"EnableDoubleEncryption": ubx.FieldSpec{WireName: "enable_double_encryption"},
-		"EnablePurge": ubx.FieldSpec{WireName: "enable_purge"},
-		"EnableStreamingIngest": ubx.FieldSpec{WireName: "enable_streaming_ingest"},
-		"EngineType": ubx.FieldSpec{WireName: "engine_type"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: Cluster_Properties_KeyVaultPropertiesFields,
-		},
-		"LanguageExtensions": ubx.FieldSpec{
-			WireName: "language_extensions",
-			Kind: "object",
-			Fields: Cluster_Properties_LanguageExtensionsFields,
-		},
-		"MigrationCluster": ubx.FieldSpec{
-			WireName: "migration_cluster",
-			Kind: "object",
-			Fields: Cluster_Properties_MigrationClusterFields,
-		},
-		"OptimizedAutoscale": ubx.FieldSpec{
-			WireName: "optimized_autoscale",
-			Kind: "object",
-			Fields: Cluster_Properties_OptimizedAutoscaleFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Cluster_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIptype": ubx.FieldSpec{WireName: "public_iptype"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"RestrictOutboundNetworkAccess": ubx.FieldSpec{WireName: "restrict_outbound_network_access"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StateReason": ubx.FieldSpec{WireName: "state_reason"},
-		"TrustedExternalTenants": ubx.FieldSpec{
-			WireName: "trusted_external_tenants",
-			Kind: "list",
-			Fields: Cluster_Properties_AcceptedAudiencesFields,
-		},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-		"VirtualClusterGraduationProperties": ubx.FieldSpec{WireName: "virtual_cluster_graduation_properties"},
-		"VirtualNetworkConfiguration": ubx.FieldSpec{
-			WireName: "virtual_network_configuration",
-			Kind: "object",
-			Fields: Cluster_Properties_VirtualNetworkConfigurationFields,
-		},
-		"ZoneStatus": ubx.FieldSpec{WireName: "zone_status"},
-	}
+	"AcceptedAudiences": ubx.FieldSpec{
+		WireName: "accepted_audiences",
+		Kind:     "list",
+		Fields:   Cluster_Properties_AcceptedAudiencesFields,
+	},
+	"AllowedFqdnList":    ubx.FieldSpec{WireName: "allowed_fqdn_list"},
+	"AllowedIpRangeList": ubx.FieldSpec{WireName: "allowed_ip_range_list"},
+	"CalloutPolicies": ubx.FieldSpec{
+		WireName: "callout_policies",
+		Kind:     "list",
+		Fields:   Cluster_Properties_CalloutPoliciesFields,
+	},
+	"DataIngestionUri":       ubx.FieldSpec{WireName: "data_ingestion_uri"},
+	"EnableAutoStop":         ubx.FieldSpec{WireName: "enable_auto_stop"},
+	"EnableDiskEncryption":   ubx.FieldSpec{WireName: "enable_disk_encryption"},
+	"EnableDoubleEncryption": ubx.FieldSpec{WireName: "enable_double_encryption"},
+	"EnablePurge":            ubx.FieldSpec{WireName: "enable_purge"},
+	"EnableStreamingIngest":  ubx.FieldSpec{WireName: "enable_streaming_ingest"},
+	"EngineType":             ubx.FieldSpec{WireName: "engine_type"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   Cluster_Properties_KeyVaultPropertiesFields,
+	},
+	"LanguageExtensions": ubx.FieldSpec{
+		WireName: "language_extensions",
+		Kind:     "object",
+		Fields:   Cluster_Properties_LanguageExtensionsFields,
+	},
+	"MigrationCluster": ubx.FieldSpec{
+		WireName: "migration_cluster",
+		Kind:     "object",
+		Fields:   Cluster_Properties_MigrationClusterFields,
+	},
+	"OptimizedAutoscale": ubx.FieldSpec{
+		WireName: "optimized_autoscale",
+		Kind:     "object",
+		Fields:   Cluster_Properties_OptimizedAutoscaleFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Cluster_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":             ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIptype":                  ubx.FieldSpec{WireName: "public_iptype"},
+	"PublicNetworkAccess":           ubx.FieldSpec{WireName: "public_network_access"},
+	"RestrictOutboundNetworkAccess": ubx.FieldSpec{WireName: "restrict_outbound_network_access"},
+	"State":                         ubx.FieldSpec{WireName: "state"},
+	"StateReason":                   ubx.FieldSpec{WireName: "state_reason"},
+	"TrustedExternalTenants": ubx.FieldSpec{
+		WireName: "trusted_external_tenants",
+		Kind:     "list",
+		Fields:   Cluster_Properties_AcceptedAudiencesFields,
+	},
+	"Uri":                                ubx.FieldSpec{WireName: "uri"},
+	"VirtualClusterGraduationProperties": ubx.FieldSpec{WireName: "virtual_cluster_graduation_properties"},
+	"VirtualNetworkConfiguration": ubx.FieldSpec{
+		WireName: "virtual_network_configuration",
+		Kind:     "object",
+		Fields:   Cluster_Properties_VirtualNetworkConfigurationFields,
+	},
+	"ZoneStatus": ubx.FieldSpec{WireName: "zone_status"},
+}
 
 var Cluster_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type ClusterConfig struct {
-	// "If etag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.")
-	Etag any
 	// Identity for the resource.
 	Identity any
 	// Class representing the Kusto cluster properties.
@@ -381,21 +379,20 @@ type ClusterAttrs struct {
 var Cluster = ubx.ResourceBinding{
 	WireType: "azure_kusto_cluster",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Cluster_IdentityFields,
+			Kind:     "object",
+			Fields:   Cluster_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Cluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   Cluster_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Cluster_SkuFields,
+			Kind:     "object",
+			Fields:   Cluster_SkuFields,
 		},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},

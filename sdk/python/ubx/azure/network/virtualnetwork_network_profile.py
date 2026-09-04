@@ -12085,8 +12085,6 @@ _VirtualnetworkNetworkProfile_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkNetworkProfileConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Network profile properties.
     properties: Any = None
 
@@ -12100,7 +12098,6 @@ class VirtualnetworkNetworkProfileAttrs:
 VirtualnetworkNetworkProfile = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_network_profile",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

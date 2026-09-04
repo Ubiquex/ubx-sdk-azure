@@ -242,15 +242,6 @@ const ExtensionsExtension_PropertiesFields: FieldMap = {
   version: "version",
 };
 
-const ExtensionsExtension_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface ExtensionsExtensionConfig {
   /** Identity for the resource. */
   identity?: ExtensionsExtension_Identity | Computed<ExtensionsExtension_Identity>;
@@ -258,8 +249,6 @@ export interface ExtensionsExtensionConfig {
   plan?: ExtensionsExtension_Plan | Computed<ExtensionsExtension_Plan>;
   /** Properties of an Extension resource */
   properties?: ExtensionsExtension_Properties | Computed<ExtensionsExtension_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: ExtensionsExtension_SystemData | Computed<ExtensionsExtension_SystemData>;
 }
 
 export interface ExtensionsExtensionAttrs {
@@ -290,11 +279,6 @@ export const ExtensionsExtension: ResourceBinding<ExtensionsExtensionConfig, Ext
       wireName: "properties",
       kind: "object",
       fields: ExtensionsExtension_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: ExtensionsExtension_SystemDataFields,
     },
   },
 };

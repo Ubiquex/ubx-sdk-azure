@@ -9,18 +9,18 @@ type PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properti
 
 type PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections struct {
-	Id any
+	Id         any
 	Properties any
 }
 
@@ -32,46 +32,46 @@ type PrivatelinkhubPrivateLinkHub_Properties struct {
 }
 
 var PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var PrivatelinkhubPrivateLinkHub_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   PrivatelinkhubPrivateLinkHub_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type PrivatelinkhubPrivateLinkHubConfig struct {
 	// PrivateLinkHub properties
@@ -88,8 +88,8 @@ var PrivatelinkhubPrivateLinkHub = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivatelinkhubPrivateLinkHub_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivatelinkhubPrivateLinkHub_PropertiesFields,
 		},
 	},
 }

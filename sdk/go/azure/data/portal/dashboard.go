@@ -8,11 +8,11 @@ type Dashboard_Value_Properties_Lenses_Parts_Metadata struct {
 }
 
 type Dashboard_Value_Properties_Lenses_Parts_Position struct {
-	ColSpan any
+	ColSpan  any
 	Metadata any
-	RowSpan any
-	X any
-	Y any
+	RowSpan  any
+	X        any
+	Y        any
 }
 
 type Dashboard_Value_Properties_Lenses_Parts struct {
@@ -22,13 +22,13 @@ type Dashboard_Value_Properties_Lenses_Parts struct {
 
 type Dashboard_Value_Properties_Lenses struct {
 	Metadata any
-	Order any
-	Parts any
+	Order    any
+	Parts    any
 }
 
 type Dashboard_Value_Properties struct {
-	Lenses any
-	Metadata any
+	Lenses            any
+	Metadata          any
 	ProvisioningState any
 }
 
@@ -48,6 +48,5 @@ type DashboardAttrs struct {
 
 var Dashboard = ubx.DataSourceBinding{
 	WireType: "azure_portal_dashboard",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

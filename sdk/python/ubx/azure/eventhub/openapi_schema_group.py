@@ -30,8 +30,6 @@ _OpenapiSchemaGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiSchemaGroupConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
@@ -43,7 +41,6 @@ class OpenapiSchemaGroupAttrs:
 OpenapiSchemaGroup = ubx.ResourceBinding(
     wire_type="azure_eventhub_openapi_schema_group",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

@@ -133,22 +133,11 @@ const FluidRelayServer_PropertiesFields: FieldMap = {
   storagesku: "storagesku",
 };
 
-const FluidRelayServer_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface FluidRelayServerConfig {
   /** Identity for the resource. */
   identity?: FluidRelayServer_Identity | Computed<FluidRelayServer_Identity>;
   /** The properties of a Fluid Relay Service resource. */
   properties?: FluidRelayServer_Properties | Computed<FluidRelayServer_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: FluidRelayServer_SystemData | Computed<FluidRelayServer_SystemData>;
 }
 
 export interface FluidRelayServerAttrs {
@@ -172,11 +161,6 @@ export const FluidRelayServer: ResourceBinding<FluidRelayServerConfig, FluidRela
       wireName: "properties",
       kind: "object",
       fields: FluidRelayServer_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: FluidRelayServer_SystemDataFields,
     },
   },
 };

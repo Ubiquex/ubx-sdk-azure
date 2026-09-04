@@ -23,8 +23,6 @@ _OpenapiConsumerGroup_PropertiesFields = {
 
 @dataclasses.dataclass
 class OpenapiConsumerGroupConfig:
-    # The geo-location where the resource lives
-    location: Any = None
     # Single item in List or Get Consumer group operation
     properties: Any = None
 
@@ -38,7 +36,6 @@ class OpenapiConsumerGroupAttrs:
 OpenapiConsumerGroup = ubx.ResourceBinding(
     wire_type="azure_eventhub_openapi_consumer_group",
     fields={
-        "location": ubx.FieldSpec(wire_name="location"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

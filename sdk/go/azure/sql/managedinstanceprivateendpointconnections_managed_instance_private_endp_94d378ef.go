@@ -18,35 +18,35 @@ type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConn
 }
 
 type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
 	// State of the Private Endpoint Connection.
 	ProvisioningState any
 }
 
 var ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_PropertiesFields = ubx.FieldMap{
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnectionConfig struct {
 	// Properties of a private endpoint connection.
@@ -63,8 +63,8 @@ var ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConne
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstanceprivateendpointconnectionsManagedInstancePrivateEndpointConnection_PropertiesFields,
 		},
 	},
 }

@@ -4,22 +4,22 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapisApiContract_Value_Properties_ApiVersionSet struct {
-	Description any
-	Id any
-	Name any
+	Description       any
+	Id                any
+	Name              any
 	VersionHeaderName any
-	VersionQueryName any
-	VersioningScheme any
+	VersionQueryName  any
+	VersioningScheme  any
 }
 
 type ApimapisApiContract_Value_Properties struct {
-	ApiVersionSet any
-	DisplayName any
-	Path any
-	Protocols any
+	ApiVersionSet     any
+	DisplayName       any
+	Path              any
+	Protocols         any
 	ProvisioningState any
-	ServiceUrl any
-	SourceApiId any
+	ServiceUrl        any
+	SourceApiId       any
 }
 
 type ApimapisApiContract_Value struct {
@@ -28,16 +28,16 @@ type ApimapisApiContract_Value struct {
 
 type ApimapisApiContractConfig struct {
 	ExpandApiVersionSet any
-	Tags any
+	Tags                any
 }
 
 type ApimapisApiContractAttrs struct {
 	// Total record count number across all pages.
-	Count any
+	Count               any
 	ExpandApiVersionSet any
 	// Next page link if any.
 	NextLink any
-	Tags any
+	Tags     any
 	// Page values.
 	Value any
 }
@@ -46,6 +46,6 @@ var ApimapisApiContract = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_api_contract",
 	Fields: ubx.FieldMap{
 		"ExpandApiVersionSet": ubx.FieldSpec{WireName: "expand_api_version_set"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Tags":                ubx.FieldSpec{WireName: "tags"},
 	},
 }

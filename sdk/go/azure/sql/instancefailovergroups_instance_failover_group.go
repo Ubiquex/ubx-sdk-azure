@@ -9,7 +9,7 @@ type InstancefailovergroupsInstanceFailoverGroup_Properties_ManagedInstancePairs
 }
 
 type InstancefailovergroupsInstanceFailoverGroup_Properties_PartnerRegions struct {
-	Location any
+	Location        any
 	ReplicationRole any
 }
 
@@ -43,49 +43,49 @@ type InstancefailovergroupsInstanceFailoverGroup_Properties struct {
 }
 
 var InstancefailovergroupsInstanceFailoverGroup_Properties_ManagedInstancePairsFields = ubx.FieldMap{
-		"PartnerManagedInstanceId": ubx.FieldSpec{WireName: "partner_managed_instance_id"},
-		"PrimaryManagedInstanceId": ubx.FieldSpec{WireName: "primary_managed_instance_id"},
-	}
+	"PartnerManagedInstanceId": ubx.FieldSpec{WireName: "partner_managed_instance_id"},
+	"PrimaryManagedInstanceId": ubx.FieldSpec{WireName: "primary_managed_instance_id"},
+}
 
 var InstancefailovergroupsInstanceFailoverGroup_Properties_PartnerRegionsFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
-	}
+	"Location":        ubx.FieldSpec{WireName: "location"},
+	"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
+}
 
 var InstancefailovergroupsInstanceFailoverGroup_Properties_ReadOnlyEndpointFields = ubx.FieldMap{
-		"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
-	}
+	"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
+}
 
 var InstancefailovergroupsInstanceFailoverGroup_Properties_ReadWriteEndpointFields = ubx.FieldMap{
-		"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
-		"FailoverWithDataLossGracePeriodMinutes": ubx.FieldSpec{WireName: "failover_with_data_loss_grace_period_minutes"},
-	}
+	"FailoverPolicy":                         ubx.FieldSpec{WireName: "failover_policy"},
+	"FailoverWithDataLossGracePeriodMinutes": ubx.FieldSpec{WireName: "failover_with_data_loss_grace_period_minutes"},
+}
 
 var InstancefailovergroupsInstanceFailoverGroup_PropertiesFields = ubx.FieldMap{
-		"ManagedInstancePairs": ubx.FieldSpec{
-			WireName: "managed_instance_pairs",
-			Kind: "list",
-			Fields: InstancefailovergroupsInstanceFailoverGroup_Properties_ManagedInstancePairsFields,
-		},
-		"PartnerRegions": ubx.FieldSpec{
-			WireName: "partner_regions",
-			Kind: "list",
-			Fields: InstancefailovergroupsInstanceFailoverGroup_Properties_PartnerRegionsFields,
-		},
-		"ReadOnlyEndpoint": ubx.FieldSpec{
-			WireName: "read_only_endpoint",
-			Kind: "object",
-			Fields: InstancefailovergroupsInstanceFailoverGroup_Properties_ReadOnlyEndpointFields,
-		},
-		"ReadWriteEndpoint": ubx.FieldSpec{
-			WireName: "read_write_endpoint",
-			Kind: "object",
-			Fields: InstancefailovergroupsInstanceFailoverGroup_Properties_ReadWriteEndpointFields,
-		},
-		"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
-		"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
-		"SecondaryType": ubx.FieldSpec{WireName: "secondary_type"},
-	}
+	"ManagedInstancePairs": ubx.FieldSpec{
+		WireName: "managed_instance_pairs",
+		Kind:     "list",
+		Fields:   InstancefailovergroupsInstanceFailoverGroup_Properties_ManagedInstancePairsFields,
+	},
+	"PartnerRegions": ubx.FieldSpec{
+		WireName: "partner_regions",
+		Kind:     "list",
+		Fields:   InstancefailovergroupsInstanceFailoverGroup_Properties_PartnerRegionsFields,
+	},
+	"ReadOnlyEndpoint": ubx.FieldSpec{
+		WireName: "read_only_endpoint",
+		Kind:     "object",
+		Fields:   InstancefailovergroupsInstanceFailoverGroup_Properties_ReadOnlyEndpointFields,
+	},
+	"ReadWriteEndpoint": ubx.FieldSpec{
+		WireName: "read_write_endpoint",
+		Kind:     "object",
+		Fields:   InstancefailovergroupsInstanceFailoverGroup_Properties_ReadWriteEndpointFields,
+	},
+	"ReplicationRole":  ubx.FieldSpec{WireName: "replication_role"},
+	"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
+	"SecondaryType":    ubx.FieldSpec{WireName: "secondary_type"},
+}
 
 type InstancefailovergroupsInstanceFailoverGroupConfig struct {
 	// Properties of a instance failover group.
@@ -102,8 +102,8 @@ var InstancefailovergroupsInstanceFailoverGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: InstancefailovergroupsInstanceFailoverGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   InstancefailovergroupsInstanceFailoverGroup_PropertiesFields,
 		},
 	},
 }

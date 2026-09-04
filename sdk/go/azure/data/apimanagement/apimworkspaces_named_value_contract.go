@@ -4,8 +4,8 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimworkspacesNamedValueContract_Value_Properties_KeyVault_LastStatus struct {
-	Code any
-	Message any
+	Code         any
+	Message      any
 	TimeStampUtc any
 }
 
@@ -14,10 +14,10 @@ type ApimworkspacesNamedValueContract_Value_Properties_KeyVault struct {
 }
 
 type ApimworkspacesNamedValueContract_Value_Properties struct {
-	DisplayName any
-	KeyVault any
+	DisplayName       any
+	KeyVault          any
 	ProvisioningState any
-	Value any
+	Value             any
 }
 
 type ApimworkspacesNamedValueContract_Value struct {
@@ -30,7 +30,7 @@ type ApimworkspacesNamedValueContractConfig struct {
 
 type ApimworkspacesNamedValueContractAttrs struct {
 	// Total record count number across all pages.
-	Count any
+	Count                   any
 	IsKeyVaultRefreshFailed any
 	// Next page link if any.
 	NextLink any

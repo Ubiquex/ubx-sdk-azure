@@ -4,42 +4,42 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSourceControl_Value_Properties_LastDeploymentInfo_Deployment struct {
-	DeploymentId any
+	DeploymentId      any
 	DeploymentLogsUrl any
-	DeploymentResult any
-	DeploymentState any
-	DeploymentTime any
+	DeploymentResult  any
+	DeploymentState   any
+	DeploymentTime    any
 }
 
 type OpenapiSourceControl_Value_Properties_LastDeploymentInfo struct {
-	Deployment any
+	Deployment            any
 	DeploymentFetchStatus any
-	Message any
+	Message               any
 }
 
 type OpenapiSourceControl_Value_Properties_PullRequest struct {
 	State any
-	Url any
+	Url   any
 }
 
 type OpenapiSourceControl_Value_Properties_Repository struct {
-	Branch any
+	Branch            any
 	DeploymentLogsUrl any
-	DisplayUrl any
-	Url any
+	DisplayUrl        any
+	Url               any
 }
 
 type OpenapiSourceControl_Value_Properties_RepositoryAccess struct {
-	ClientId any
-	Code any
+	ClientId       any
+	Code           any
 	InstallationId any
-	Kind any
-	State any
-	Token any
+	Kind           any
+	State          any
+	Token          any
 }
 
 type OpenapiSourceControl_Value_Properties_RepositoryResourceInfo_AzureDevOpsResourceInfo struct {
-	PipelineId any
+	PipelineId          any
 	ServiceConnectionId any
 }
 
@@ -48,51 +48,51 @@ type OpenapiSourceControl_Value_Properties_RepositoryResourceInfo_GitHubResource
 }
 
 type OpenapiSourceControl_Value_Properties_RepositoryResourceInfo_Webhook struct {
-	RotateWebhookSecret any
-	WebhookId any
+	RotateWebhookSecret     any
+	WebhookId               any
 	WebhookSecretUpdateTime any
-	WebhookUrl any
+	WebhookUrl              any
 }
 
 type OpenapiSourceControl_Value_Properties_RepositoryResourceInfo struct {
 	AzureDevOpsResourceInfo any
-	GitHubResourceInfo any
-	Webhook any
+	GitHubResourceInfo      any
+	Webhook                 any
 }
 
 type OpenapiSourceControl_Value_Properties_ServicePrincipal struct {
-	AppId any
+	AppId               any
 	CredentialsExpireOn any
-	Id any
-	TenantId any
+	Id                  any
+	TenantId            any
 }
 
 type OpenapiSourceControl_Value_Properties_WorkloadIdentityFederation struct {
-	AppId any
-	Id any
-	Issuer any
-	Subject any
+	AppId    any
+	Id       any
+	Issuer   any
+	Subject  any
 	TenantId any
 }
 
 type OpenapiSourceControl_Value_Properties struct {
-	ContentTypes any
-	Description any
-	DisplayName any
-	Id any
-	LastDeploymentInfo any
-	PullRequest any
-	RepoType any
-	Repository any
-	RepositoryAccess any
-	RepositoryResourceInfo any
-	ServicePrincipal any
-	Version any
+	ContentTypes               any
+	Description                any
+	DisplayName                any
+	Id                         any
+	LastDeploymentInfo         any
+	PullRequest                any
+	RepoType                   any
+	Repository                 any
+	RepositoryAccess           any
+	RepositoryResourceInfo     any
+	ServicePrincipal           any
+	Version                    any
 	WorkloadIdentityFederation any
 }
 
 type OpenapiSourceControl_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -104,7 +104,7 @@ type OpenapiSourceControlAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The SourceControl items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

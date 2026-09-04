@@ -4,53 +4,53 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
-	Id any
-	Location any
+	Id            any
+	Location      any
 	PerimeterGuid any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
 	AddressPrefixes any
-	Direction any
+	Direction       any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
-	AccessRules any
-	AccessRulesVersion any
+	AccessRules               any
+	AccessRulesVersion        any
 	DiagnosticSettingsVersion any
-	EnabledLogCategories any
-	Name any
+	EnabledLogCategories      any
+	Name                      any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
 	AccessMode any
-	Name any
+	Name       any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties struct {
 	NetworkSecurityPerimeter any
-	Profile any
-	ProvisioningIssues any
-	ProvisioningState any
-	ResourceAssociation any
+	Profile                  any
+	ProvisioningIssues       any
+	ProvisioningState        any
+	ResourceAssociation      any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Value struct {
@@ -63,7 +63,7 @@ type OpenapiNetworkSecurityPerimeterConfigurationConfig struct {
 
 type OpenapiNetworkSecurityPerimeterConfigurationAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink  any
 	ScopeName any
 	// The NetworkSecurityPerimeterConfiguration items on this page
 	Value any

@@ -8,8 +8,8 @@ type GrafanaManagedDashboard_Properties struct {
 }
 
 var GrafanaManagedDashboard_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type GrafanaManagedDashboardConfig struct {
 	// Properties specific to the grafana resource.
@@ -26,8 +26,8 @@ var GrafanaManagedDashboard = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GrafanaManagedDashboard_PropertiesFields,
+			Kind:     "object",
+			Fields:   GrafanaManagedDashboard_PropertiesFields,
 		},
 	},
 }

@@ -25,16 +25,16 @@ type OpenapiCapabilityHost_Properties struct {
 }
 
 var OpenapiCapabilityHost_PropertiesFields = ubx.FieldMap{
-		"AcaEnvironmentConnections": ubx.FieldSpec{WireName: "aca_environment_connections"},
-		"AiServicesConnections": ubx.FieldSpec{WireName: "ai_services_connections"},
-		"CapabilityHostKind": ubx.FieldSpec{WireName: "capability_host_kind"},
-		"CustomerSubnet": ubx.FieldSpec{WireName: "customer_subnet"},
-		"Messages": ubx.FieldSpec{WireName: "messages"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StorageConnections": ubx.FieldSpec{WireName: "storage_connections"},
-		"ThreadStorageConnections": ubx.FieldSpec{WireName: "thread_storage_connections"},
-		"VectorStoreConnections": ubx.FieldSpec{WireName: "vector_store_connections"},
-	}
+	"AcaEnvironmentConnections": ubx.FieldSpec{WireName: "aca_environment_connections"},
+	"AiServicesConnections":     ubx.FieldSpec{WireName: "ai_services_connections"},
+	"CapabilityHostKind":        ubx.FieldSpec{WireName: "capability_host_kind"},
+	"CustomerSubnet":            ubx.FieldSpec{WireName: "customer_subnet"},
+	"Messages":                  ubx.FieldSpec{WireName: "messages"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"StorageConnections":        ubx.FieldSpec{WireName: "storage_connections"},
+	"ThreadStorageConnections":  ubx.FieldSpec{WireName: "thread_storage_connections"},
+	"VectorStoreConnections":    ubx.FieldSpec{WireName: "vector_store_connections"},
+}
 
 type OpenapiCapabilityHostConfig struct {
 	Properties any
@@ -53,8 +53,8 @@ var OpenapiCapabilityHost = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCapabilityHost_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCapabilityHost_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

@@ -13,53 +13,53 @@ type OpenapiWorkflowRun_Value_Properties_Outputs struct {
 
 type OpenapiWorkflowRun_Value_Properties_Response_InputsLink_ContentHash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type OpenapiWorkflowRun_Value_Properties_Response_InputsLink struct {
-	ContentHash any
-	ContentSize any
+	ContentHash    any
+	ContentSize    any
 	ContentVersion any
-	Metadata any
-	Uri any
+	Metadata       any
+	Uri            any
 }
 
 type OpenapiWorkflowRun_Value_Properties_Response struct {
-	Code any
-	Correlation any
-	EndTime any
-	Error any
-	Inputs any
-	InputsLink any
-	Name any
-	Outputs any
-	OutputsLink any
-	ScheduledTime any
-	StartTime any
-	Status any
+	Code              any
+	Correlation       any
+	EndTime           any
+	Error             any
+	Inputs            any
+	InputsLink        any
+	Name              any
+	Outputs           any
+	OutputsLink       any
+	ScheduledTime     any
+	StartTime         any
+	Status            any
 	TrackedProperties any
-	TrackingId any
+	TrackingId        any
 }
 
 type OpenapiWorkflowRun_Value_Properties_Workflow struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type OpenapiWorkflowRun_Value_Properties struct {
-	Code any
-	Correlation any
+	Code          any
+	Correlation   any
 	CorrelationId any
-	EndTime any
-	Error any
-	Outputs any
-	Response any
-	StartTime any
-	Status any
-	Trigger any
-	WaitEndTime any
-	Workflow any
+	EndTime       any
+	Error         any
+	Outputs       any
+	Response      any
+	StartTime     any
+	Status        any
+	Trigger       any
+	WaitEndTime   any
+	Workflow      any
 }
 
 type OpenapiWorkflowRun_Value struct {
@@ -67,7 +67,7 @@ type OpenapiWorkflowRun_Value struct {
 }
 
 type OpenapiWorkflowRunConfig struct {
-	Name any
+	Name         any
 	WorkflowName any
 }
 
@@ -76,14 +76,14 @@ type OpenapiWorkflowRunAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The WorkflowRun items on this page
-	Value any
+	Value        any
 	WorkflowName any
 }
 
 var OpenapiWorkflowRun = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_run",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

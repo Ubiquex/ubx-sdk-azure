@@ -19,16 +19,30 @@ class SubscriptionsSubscriptionAliasResponse_Properties_AdditionalProperties:
 
 @dataclasses.dataclass
 class SubscriptionsSubscriptionAliasResponse_Properties:
+    # The accept ownership state of the resource.
+    accept_ownership_state: Any = None
+    # Url to accept ownership of the subscription.
+    accept_ownership_url: Any = None
     # Put subscription additional properties.
     additional_properties: Any = None
     # Billing scope of the subscription. For CustomerLed and FieldLed - /billingAccounts/{billingAccountName}/billingProfiles/{billingProfileName}/invoiceSections/{invoiceSectionName} For PartnerLed - /billingAccounts/{billingAccountName}/customers/{customerName} For Legacy EA - /billingAccounts/{billingAccountName}/enrollmentAccounts/{enrollmentAccountName}
     billing_scope: Any = None
+    # Created Time
+    created_time: Any = None
     # The friendly name of the subscription.
     display_name: Any = None
+    # The Management Group Id.
+    management_group_id: Any = None
+    # The provisioning state of the resource.
+    provisioning_state: Any = None
     # Reseller Id
     reseller_id: Any = None
     # This parameter can be used to create alias for existing subscription Id
     subscription_id: Any = None
+    # Owner Id of the subscription
+    subscription_owner_id: Any = None
+    # Tags for the subscription
+    tags: Any = None
     # The workload type of the subscription. It can be either Production or DevTest.
     workload: Any = None
 
@@ -55,15 +69,22 @@ _SubscriptionsSubscriptionAliasResponse_Properties_AdditionalPropertiesFields = 
 }
 
 _SubscriptionsSubscriptionAliasResponse_PropertiesFields = {
+    "accept_ownership_state": ubx.FieldSpec(wire_name="accept_ownership_state"),
+    "accept_ownership_url": ubx.FieldSpec(wire_name="accept_ownership_url"),
     "additional_properties": ubx.FieldSpec(
         wire_name="additional_properties",
         kind="object",
         fields=_SubscriptionsSubscriptionAliasResponse_Properties_AdditionalPropertiesFields,
     ),
     "billing_scope": ubx.FieldSpec(wire_name="billing_scope"),
+    "created_time": ubx.FieldSpec(wire_name="created_time"),
     "display_name": ubx.FieldSpec(wire_name="display_name"),
+    "management_group_id": ubx.FieldSpec(wire_name="management_group_id"),
+    "provisioning_state": ubx.FieldSpec(wire_name="provisioning_state"),
     "reseller_id": ubx.FieldSpec(wire_name="reseller_id"),
     "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
+    "subscription_owner_id": ubx.FieldSpec(wire_name="subscription_owner_id"),
+    "tags": ubx.FieldSpec(wire_name="tags"),
     "workload": ubx.FieldSpec(wire_name="workload"),
 }
 

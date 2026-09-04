@@ -146,8 +146,6 @@ _NetworkwatcherFlowLog_PropertiesFields = {
 
 @dataclasses.dataclass
 class NetworkwatcherFlowLogConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Identity for the resource.
     identity: Any = None
     # Parameters that define the configuration of flow log.
@@ -165,7 +163,6 @@ class NetworkwatcherFlowLogAttrs:
 NetworkwatcherFlowLog = ubx.ResourceBinding(
     wire_type="azure_network_networkwatcher_flow_log",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",

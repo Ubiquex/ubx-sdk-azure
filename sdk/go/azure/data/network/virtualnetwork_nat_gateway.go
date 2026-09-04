@@ -9,16 +9,16 @@ type VirtualnetworkNatGateway_Value_Properties_PublicIpAddresses struct {
 
 type VirtualnetworkNatGateway_Value_Properties struct {
 	IdleTimeoutInMinutes any
-	Nat64 any
-	ProvisioningState any
-	PublicIpAddresses any
-	PublicIpAddressesV6 any
-	PublicIpPrefixes any
-	PublicIpPrefixesV6 any
-	ResourceGuid any
-	ServiceGateway any
+	Nat64                any
+	ProvisioningState    any
+	PublicIpAddresses    any
+	PublicIpAddressesV6  any
+	PublicIpPrefixes     any
+	PublicIpPrefixesV6   any
+	ResourceGuid         any
+	ServiceGateway       any
 	SourceVirtualNetwork any
-	Subnets any
+	Subnets              any
 }
 
 type VirtualnetworkNatGateway_Value_Sku struct {
@@ -26,10 +26,10 @@ type VirtualnetworkNatGateway_Value_Sku struct {
 }
 
 type VirtualnetworkNatGateway_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type VirtualnetworkNatGatewayConfig struct {
@@ -44,6 +44,5 @@ type VirtualnetworkNatGatewayAttrs struct {
 
 var VirtualnetworkNatGateway = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_nat_gateway",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

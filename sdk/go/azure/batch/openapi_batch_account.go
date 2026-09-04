@@ -4,7 +4,7 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBatchAccount_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -27,10 +27,17 @@ type OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReference struct {
 type OpenapiBatchAccount_Properties_AutoStorage struct {
 	// The authentication mode which the Batch service will use to manage the auto-storage account.
 	AuthenticationMode any
+	// The UTC time at which storage keys were last synchronized with the Batch account.
+	LastKeySync any
 	// The reference to a user assigned identity associated with the Batch pool which a compute node will use.
 	NodeIdentityReference any
 	// The resource ID of the storage account to be used for auto-storage account.
 	StorageAccountId any
+}
+
+type OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamily struct {
+	CoreQuota any
+	Name      any
 }
 
 type OpenapiBatchAccount_Properties_Encryption_KeyVaultProperties struct {
@@ -54,7 +61,7 @@ type OpenapiBatchAccount_Properties_KeyVaultReference struct {
 
 type OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess_IpRules struct {
 	Action any
-	Value any
+	Value  any
 }
 
 type OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess struct {
@@ -71,123 +78,225 @@ type OpenapiBatchAccount_Properties_NetworkProfile struct {
 	NodeManagementAccess any
 }
 
+type OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+	Id any
+}
+
+type OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+	ActionsRequired any
+	Description     any
+	Status          any
+}
+
+type OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties struct {
+	GroupIds                          any
+	PrivateEndpoint                   any
+	PrivateLinkServiceConnectionState any
+	ProvisioningState                 any
+}
+
+type OpenapiBatchAccount_Properties_PrivateEndpointConnections struct {
+	Etag       any
+	Properties any
+	Tags       any
+}
+
 type OpenapiBatchAccount_Properties struct {
+	// The account endpoint used to interact with the Batch service.
+	AccountEndpoint any
+	// The active job and job schedule quota for the Batch account.
+	ActiveJobAndJobScheduleQuota any
 	// List of allowed authentication modes for the Batch account that can be used to authenticate with the data plane. This does not affect authentication with the control plane.
 	AllowedAuthenticationModes any
 	// The properties related to the auto-storage account.
 	AutoStorage any
+	// For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned.
+	DedicatedCoreQuota any
+	// A list of the dedicated core quota per Virtual Machine family for the Batch account. For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned.
+	DedicatedCoreQuotaPerVmfamily any
+	// If this flag is true, dedicated core quota is enforced via both the dedicatedCoreQuotaPerVMFamily and dedicatedCoreQuota properties on the account. If this flag is false, dedicated core quota is enforced only via the dedicatedCoreQuota property on the account and does not consider Virtual Machine family.
+	DedicatedCoreQuotaPerVmfamilyEnforced any
 	// Configures how customer data is encrypted inside the Batch account. By default, accounts are encrypted using a Microsoft managed key. For additional control, a customer-managed key can be used instead.
 	Encryption any
 	// Identifies the Azure key vault associated with a Batch account.
 	KeyVaultReference any
+	// For accounts with PoolAllocationMode set to UserSubscription, quota is managed on the subscription so this value is not returned.
+	LowPriorityCoreQuota any
 	// Network profile for Batch account, which contains network rule settings for each endpoint.
 	NetworkProfile any
+	// The endpoint used by compute node to connect to the Batch node management service.
+	NodeManagementEndpoint any
 	// The allocation mode for creating pools in the Batch account.
 	PoolAllocationMode any
+	// The pool quota for the Batch account.
+	PoolQuota any
+	// List of private endpoint connections associated with the Batch account
+	PrivateEndpointConnections any
+	// The provisioned state of the resource
+	ProvisioningState any
 	// The network access type for operating on the resources in the Batch account.
 	PublicNetworkAccess any
 }
 
 var OpenapiBatchAccount_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiBatchAccount_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiBatchAccount_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiBatchAccount_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReferenceFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var OpenapiBatchAccount_Properties_AutoStorageFields = ubx.FieldMap{
-		"AuthenticationMode": ubx.FieldSpec{WireName: "authentication_mode"},
-		"NodeIdentityReference": ubx.FieldSpec{
-			WireName: "node_identity_reference",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReferenceFields,
-		},
-		"StorageAccountId": ubx.FieldSpec{WireName: "storage_account_id"},
-	}
+	"AuthenticationMode": ubx.FieldSpec{WireName: "authentication_mode"},
+	"LastKeySync":        ubx.FieldSpec{WireName: "last_key_sync"},
+	"NodeIdentityReference": ubx.FieldSpec{
+		WireName: "node_identity_reference",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_AutoStorage_NodeIdentityReferenceFields,
+	},
+	"StorageAccountId": ubx.FieldSpec{WireName: "storage_account_id"},
+}
+
+var OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamilyFields = ubx.FieldMap{
+	"CoreQuota": ubx.FieldSpec{WireName: "core_quota"},
+	"Name":      ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiBatchAccount_Properties_Encryption_KeyVaultPropertiesFields = ubx.FieldMap{
-		"KeyIdentifier": ubx.FieldSpec{WireName: "key_identifier"},
-	}
+	"KeyIdentifier": ubx.FieldSpec{WireName: "key_identifier"},
+}
 
 var OpenapiBatchAccount_Properties_EncryptionFields = ubx.FieldMap{
-		"KeySource": ubx.FieldSpec{WireName: "key_source"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_Properties_Encryption_KeyVaultPropertiesFields,
-		},
-	}
+	"KeySource": ubx.FieldSpec{WireName: "key_source"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_Encryption_KeyVaultPropertiesFields,
+	},
+}
 
 var OpenapiBatchAccount_Properties_KeyVaultReferenceFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"Id":  ubx.FieldSpec{WireName: "id"},
+	"Url": ubx.FieldSpec{WireName: "url"},
+}
 
 var OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess_IpRulesFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Action": ubx.FieldSpec{WireName: "action"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiBatchAccount_Properties_NetworkProfile_AccountAccessFields = ubx.FieldMap{
-		"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess_IpRulesFields,
-		},
-	}
+	"DefaultAction": ubx.FieldSpec{WireName: "default_action"},
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   OpenapiBatchAccount_Properties_NetworkProfile_AccountAccess_IpRulesFields,
+	},
+}
 
 var OpenapiBatchAccount_Properties_NetworkProfileFields = ubx.FieldMap{
-		"AccountAccess": ubx.FieldSpec{
-			WireName: "account_access",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_Properties_NetworkProfile_AccountAccessFields,
-		},
-		"NodeManagementAccess": ubx.FieldSpec{
-			WireName: "node_management_access",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_Properties_NetworkProfile_AccountAccessFields,
-		},
-	}
+	"AccountAccess": ubx.FieldSpec{
+		WireName: "account_access",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_NetworkProfile_AccountAccessFields,
+	},
+	"NodeManagementAccess": ubx.FieldSpec{
+		WireName: "node_management_access",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_NetworkProfile_AccountAccessFields,
+	},
+}
+
+var OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
+
+var OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
+
+var OpenapiBatchAccount_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
+
+var OpenapiBatchAccount_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+	"Tags": ubx.FieldSpec{WireName: "tags"},
+}
 
 var OpenapiBatchAccount_PropertiesFields = ubx.FieldMap{
-		"AllowedAuthenticationModes": ubx.FieldSpec{WireName: "allowed_authentication_modes"},
-		"AutoStorage": ubx.FieldSpec{
-			WireName: "auto_storage",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_Properties_AutoStorageFields,
-		},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_Properties_EncryptionFields,
-		},
-		"KeyVaultReference": ubx.FieldSpec{
-			WireName: "key_vault_reference",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_Properties_KeyVaultReferenceFields,
-		},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_Properties_NetworkProfileFields,
-		},
-		"PoolAllocationMode": ubx.FieldSpec{WireName: "pool_allocation_mode"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	}
+	"AccountEndpoint":              ubx.FieldSpec{WireName: "account_endpoint"},
+	"ActiveJobAndJobScheduleQuota": ubx.FieldSpec{WireName: "active_job_and_job_schedule_quota"},
+	"AllowedAuthenticationModes":   ubx.FieldSpec{WireName: "allowed_authentication_modes"},
+	"AutoStorage": ubx.FieldSpec{
+		WireName: "auto_storage",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_AutoStorageFields,
+	},
+	"DedicatedCoreQuota": ubx.FieldSpec{WireName: "dedicated_core_quota"},
+	"DedicatedCoreQuotaPerVmfamily": ubx.FieldSpec{
+		WireName: "dedicated_core_quota_per_vmfamily",
+		Kind:     "list",
+		Fields:   OpenapiBatchAccount_Properties_DedicatedCoreQuotaPerVmfamilyFields,
+	},
+	"DedicatedCoreQuotaPerVmfamilyEnforced": ubx.FieldSpec{WireName: "dedicated_core_quota_per_vmfamily_enforced"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_EncryptionFields,
+	},
+	"KeyVaultReference": ubx.FieldSpec{
+		WireName: "key_vault_reference",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_KeyVaultReferenceFields,
+	},
+	"LowPriorityCoreQuota": ubx.FieldSpec{WireName: "low_priority_core_quota"},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   OpenapiBatchAccount_Properties_NetworkProfileFields,
+	},
+	"NodeManagementEndpoint": ubx.FieldSpec{WireName: "node_management_endpoint"},
+	"PoolAllocationMode":     ubx.FieldSpec{WireName: "pool_allocation_mode"},
+	"PoolQuota":              ubx.FieldSpec{WireName: "pool_quota"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiBatchAccount_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+}
 
 type OpenapiBatchAccountConfig struct {
 	// The identity of the Batch account, if configured. This is used when the user specifies 'Microsoft.KeyVault' as their Batch account encryption configuration or when `ManagedIdentity` is selected as the auto-storage authentication mode.
@@ -216,14 +325,14 @@ var OpenapiBatchAccount = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiBatchAccount_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBatchAccount_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBatchAccount_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

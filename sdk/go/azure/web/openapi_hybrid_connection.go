@@ -23,15 +23,15 @@ type OpenapiHybridConnection_Properties struct {
 }
 
 var OpenapiHybridConnection_PropertiesFields = ubx.FieldMap{
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"RelayArmUri": ubx.FieldSpec{WireName: "relay_arm_uri"},
-		"RelayName": ubx.FieldSpec{WireName: "relay_name"},
-		"SendKeyName": ubx.FieldSpec{WireName: "send_key_name"},
-		"SendKeyValue": ubx.FieldSpec{WireName: "send_key_value"},
-		"ServiceBusNamespace": ubx.FieldSpec{WireName: "service_bus_namespace"},
-		"ServiceBusSuffix": ubx.FieldSpec{WireName: "service_bus_suffix"},
-	}
+	"Hostname":            ubx.FieldSpec{WireName: "hostname"},
+	"Port":                ubx.FieldSpec{WireName: "port"},
+	"RelayArmUri":         ubx.FieldSpec{WireName: "relay_arm_uri"},
+	"RelayName":           ubx.FieldSpec{WireName: "relay_name"},
+	"SendKeyName":         ubx.FieldSpec{WireName: "send_key_name"},
+	"SendKeyValue":        ubx.FieldSpec{WireName: "send_key_value"},
+	"ServiceBusNamespace": ubx.FieldSpec{WireName: "service_bus_namespace"},
+	"ServiceBusSuffix":    ubx.FieldSpec{WireName: "service_bus_suffix"},
+}
 
 type OpenapiHybridConnectionConfig struct {
 	// Kind of resource.
@@ -57,8 +57,8 @@ var OpenapiHybridConnection = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiHybridConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiHybridConnection_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

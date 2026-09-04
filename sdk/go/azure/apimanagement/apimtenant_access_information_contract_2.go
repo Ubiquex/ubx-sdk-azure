@@ -6,6 +6,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type ApimtenantAccessInformationContract2_Properties struct {
 	// Determines whether direct access is enabled.
 	Enabled any
+	// Access Information type ('access' or 'gitAccess')
+	Id any
 	// Primary access key. This property will not be filled on 'GET' operations! Use '/listSecrets' POST request to get the value.
 	PrimaryKey any
 	// Principal (User) Identifier.
@@ -15,11 +17,12 @@ type ApimtenantAccessInformationContract2_Properties struct {
 }
 
 var ApimtenantAccessInformationContract2_PropertiesFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"PrimaryKey": ubx.FieldSpec{WireName: "primary_key"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
-	}
+	"Enabled":      ubx.FieldSpec{WireName: "enabled"},
+	"Id":           ubx.FieldSpec{WireName: "id"},
+	"PrimaryKey":   ubx.FieldSpec{WireName: "primary_key"},
+	"PrincipalId":  ubx.FieldSpec{WireName: "principal_id"},
+	"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
+}
 
 type ApimtenantAccessInformationContract2Config struct {
 	// Tenant access information update parameters of the API Management service
@@ -36,8 +39,8 @@ var ApimtenantAccessInformationContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimtenantAccessInformationContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimtenantAccessInformationContract2_PropertiesFields,
 		},
 	},
 }

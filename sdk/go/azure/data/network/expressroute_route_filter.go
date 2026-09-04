@@ -8,123 +8,123 @@ type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_Connection
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_Connections_Properties_Ipv6CircuitConnectionConfig struct {
-	AddressPrefix any
+	AddressPrefix           any
 	CircuitConnectionStatus any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_Connections_Properties struct {
-	AddressPrefix any
-	AuthorizationKey any
-	CircuitConnectionStatus any
-	ExpressRouteCircuitPeering any
-	Ipv6CircuitConnectionConfig any
+	AddressPrefix                  any
+	AuthorizationKey               any
+	CircuitConnectionStatus        any
+	ExpressRouteCircuitPeering     any
+	Ipv6CircuitConnectionConfig    any
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_Connections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig_AdvertisedPublicPrefixInfo struct {
-	Prefix any
-	Signature any
-	ValidationId any
+	Prefix          any
+	Signature       any
+	ValidationId    any
 	ValidationState any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_Ipv6PeeringConfig_MicrosoftPeeringConfig struct {
-	AdvertisedCommunities any
-	AdvertisedPublicPrefixInfo any
-	AdvertisedPublicPrefixes any
+	AdvertisedCommunities         any
+	AdvertisedPublicPrefixInfo    any
+	AdvertisedPublicPrefixes      any
 	AdvertisedPublicPrefixesState any
-	CustomerAsn any
-	LegacyMode any
-	RoutingRegistryName any
+	CustomerAsn                   any
+	LegacyMode                    any
+	RoutingRegistryName           any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_Ipv6PeeringConfig struct {
-	MicrosoftPeeringConfig any
-	PrimaryPeerAddressPrefix any
-	RouteFilter any
+	MicrosoftPeeringConfig     any
+	PrimaryPeerAddressPrefix   any
+	RouteFilter                any
 	SecondaryPeerAddressPrefix any
-	State any
+	State                      any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_PeeredConnections_Properties struct {
-	AddressPrefix any
-	AuthResourceGuid any
-	CircuitConnectionStatus any
-	ConnectionName any
-	ExpressRouteCircuitPeering any
+	AddressPrefix                  any
+	AuthResourceGuid               any
+	CircuitConnectionStatus        any
+	ConnectionName                 any
+	ExpressRouteCircuitPeering     any
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_PeeredConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties_Stats struct {
-	PrimarybytesIn any
-	PrimarybytesOut any
-	SecondarybytesIn any
+	PrimarybytesIn    any
+	PrimarybytesOut   any
+	SecondarybytesIn  any
 	SecondarybytesOut any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings_Properties struct {
-	AzureAsn any
-	Connections any
-	ExpressRouteConnection any
-	GatewayManagerEtag any
-	Ipv6PeeringConfig any
-	LastModifiedBy any
-	MicrosoftPeeringConfig any
-	PeerAsn any
-	PeeredConnections any
-	PeeringType any
-	PrimaryAzurePort any
-	PrimaryPeerAddressPrefix any
-	ProvisioningState any
-	RouteFilter any
-	SecondaryAzurePort any
+	AzureAsn                   any
+	Connections                any
+	ExpressRouteConnection     any
+	GatewayManagerEtag         any
+	Ipv6PeeringConfig          any
+	LastModifiedBy             any
+	MicrosoftPeeringConfig     any
+	PeerAsn                    any
+	PeeredConnections          any
+	PeeringType                any
+	PrimaryAzurePort           any
+	PrimaryPeerAddressPrefix   any
+	ProvisioningState          any
+	RouteFilter                any
+	SecondaryAzurePort         any
 	SecondaryPeerAddressPrefix any
-	SharedKey any
-	State any
-	Stats any
-	VlanId any
+	SharedKey                  any
+	State                      any
+	Stats                      any
+	VlanId                     any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Ipv6Peerings struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Rules_Properties struct {
-	Access any
-	Communities any
-	ProvisioningState any
+	Access              any
+	Communities         any
+	ProvisioningState   any
 	RouteFilterRuleType any
 }
 
 type ExpressrouteRouteFilter_Value_Properties_Rules struct {
-	Etag any
-	Location any
-	Name any
+	Etag       any
+	Location   any
+	Name       any
 	Properties any
 }
 
 type ExpressrouteRouteFilter_Value_Properties struct {
-	Ipv6Peerings any
-	Peerings any
+	Ipv6Peerings      any
+	Peerings          any
 	ProvisioningState any
-	Rules any
+	Rules             any
 }
 
 type ExpressrouteRouteFilter_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -140,6 +140,5 @@ type ExpressrouteRouteFilterAttrs struct {
 
 var ExpressrouteRouteFilter = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_route_filter",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

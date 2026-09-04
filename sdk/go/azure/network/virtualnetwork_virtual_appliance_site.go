@@ -27,32 +27,30 @@ type VirtualnetworkVirtualApplianceSite_Properties struct {
 }
 
 var VirtualnetworkVirtualApplianceSite_Properties_O365Policy_BreakOutCategoriesFields = ubx.FieldMap{
-		"Allow": ubx.FieldSpec{WireName: "allow"},
-		"Default": ubx.FieldSpec{WireName: "default"},
-		"Optimize": ubx.FieldSpec{WireName: "optimize"},
-	}
+	"Allow":    ubx.FieldSpec{WireName: "allow"},
+	"Default":  ubx.FieldSpec{WireName: "default"},
+	"Optimize": ubx.FieldSpec{WireName: "optimize"},
+}
 
 var VirtualnetworkVirtualApplianceSite_Properties_O365PolicyFields = ubx.FieldMap{
-		"BreakOutCategories": ubx.FieldSpec{
-			WireName: "break_out_categories",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualApplianceSite_Properties_O365Policy_BreakOutCategoriesFields,
-		},
-	}
+	"BreakOutCategories": ubx.FieldSpec{
+		WireName: "break_out_categories",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualApplianceSite_Properties_O365Policy_BreakOutCategoriesFields,
+	},
+}
 
 var VirtualnetworkVirtualApplianceSite_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"O365Policy": ubx.FieldSpec{
-			WireName: "o365_policy",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualApplianceSite_Properties_O365PolicyFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
+	"O365Policy": ubx.FieldSpec{
+		WireName: "o365_policy",
+		Kind:     "object",
+		Fields:   VirtualnetworkVirtualApplianceSite_Properties_O365PolicyFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkVirtualApplianceSiteConfig struct {
-	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
 	// Properties of the rule group.
 	Properties any
 }
@@ -67,11 +65,10 @@ type VirtualnetworkVirtualApplianceSiteAttrs struct {
 var VirtualnetworkVirtualApplianceSite = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_virtual_appliance_site",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualApplianceSite_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkVirtualApplianceSite_PropertiesFields,
 		},
 	},
 }

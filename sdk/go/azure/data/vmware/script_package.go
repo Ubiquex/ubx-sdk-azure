@@ -4,11 +4,11 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ScriptPackage_Value_Properties struct {
-	Company any
-	Description any
+	Company           any
+	Description       any
 	ProvisioningState any
-	Uri any
-	Version any
+	Uri               any
+	Version           any
 }
 
 type ScriptPackage_Value struct {
@@ -21,7 +21,7 @@ type ScriptPackageConfig struct {
 
 type ScriptPackageAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The ScriptPackage items on this page
 	Value any

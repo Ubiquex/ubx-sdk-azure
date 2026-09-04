@@ -4,8 +4,8 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiGremlinRoleDefinitionResource_Properties_Permissions struct {
-	DataActions any
-	Id any
+	DataActions    any
+	Id             any
 	NotDataActions any
 }
 
@@ -23,22 +23,22 @@ type DbOpenapiGremlinRoleDefinitionResource_Properties struct {
 }
 
 var DbOpenapiGremlinRoleDefinitionResource_Properties_PermissionsFields = ubx.FieldMap{
-		"DataActions": ubx.FieldSpec{WireName: "data_actions"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
-	}
+	"DataActions":    ubx.FieldSpec{WireName: "data_actions"},
+	"Id":             ubx.FieldSpec{WireName: "id"},
+	"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
+}
 
 var DbOpenapiGremlinRoleDefinitionResource_PropertiesFields = ubx.FieldMap{
-		"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Permissions": ubx.FieldSpec{
-			WireName: "permissions",
-			Kind: "list",
-			Fields: DbOpenapiGremlinRoleDefinitionResource_Properties_PermissionsFields,
-		},
-		"RoleName": ubx.FieldSpec{WireName: "role_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
+	"Id":               ubx.FieldSpec{WireName: "id"},
+	"Permissions": ubx.FieldSpec{
+		WireName: "permissions",
+		Kind:     "list",
+		Fields:   DbOpenapiGremlinRoleDefinitionResource_Properties_PermissionsFields,
+	},
+	"RoleName": ubx.FieldSpec{WireName: "role_name"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+}
 
 type DbOpenapiGremlinRoleDefinitionResourceConfig struct {
 	// Azure Cosmos DB Gremlin Role Definition resource object.
@@ -55,8 +55,8 @@ var DbOpenapiGremlinRoleDefinitionResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiGremlinRoleDefinitionResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiGremlinRoleDefinitionResource_PropertiesFields,
 		},
 	},
 }

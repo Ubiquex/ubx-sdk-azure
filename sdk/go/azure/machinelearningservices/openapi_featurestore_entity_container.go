@@ -9,8 +9,8 @@ type OpenapiFeaturestoreEntityContainer_Properties struct {
 }
 
 var OpenapiFeaturestoreEntityContainer_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiFeaturestoreEntityContainerConfig struct {
 	// DTO object representing feature entity
@@ -31,8 +31,8 @@ var OpenapiFeaturestoreEntityContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiFeaturestoreEntityContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiFeaturestoreEntityContainer_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

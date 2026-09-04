@@ -15,11 +15,11 @@ type OpenapiSuppressionListResource_Properties struct {
 }
 
 var OpenapiSuppressionListResource_PropertiesFields = ubx.FieldMap{
-		"CreatedTimeStamp": ubx.FieldSpec{WireName: "created_time_stamp"},
-		"DataLocation": ubx.FieldSpec{WireName: "data_location"},
-		"LastUpdatedTimeStamp": ubx.FieldSpec{WireName: "last_updated_time_stamp"},
-		"ListName": ubx.FieldSpec{WireName: "list_name"},
-	}
+	"CreatedTimeStamp":     ubx.FieldSpec{WireName: "created_time_stamp"},
+	"DataLocation":         ubx.FieldSpec{WireName: "data_location"},
+	"LastUpdatedTimeStamp": ubx.FieldSpec{WireName: "last_updated_time_stamp"},
+	"ListName":             ubx.FieldSpec{WireName: "list_name"},
+}
 
 type OpenapiSuppressionListResourceConfig struct {
 	// A class that describes the properties of a SuppressionList resource.
@@ -36,8 +36,8 @@ var OpenapiSuppressionListResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSuppressionListResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSuppressionListResource_PropertiesFields,
 		},
 	},
 }

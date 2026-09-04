@@ -4,27 +4,27 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLinkedServiceResource_Value_Properties_ConnectVia struct {
-	Parameters any
+	Parameters    any
 	ReferenceName any
-	Type any
+	Type          any
 }
 
 type OpenapiLinkedServiceResource_Value_Properties_Parameters struct {
 	DefaultValue any
-	Type any
+	Type         any
 }
 
 type OpenapiLinkedServiceResource_Value_Properties struct {
 	Annotations any
-	ConnectVia any
+	ConnectVia  any
 	Description any
-	Parameters any
-	Type any
-	Version any
+	Parameters  any
+	Type        any
+	Version     any
 }
 
 type OpenapiLinkedServiceResource_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

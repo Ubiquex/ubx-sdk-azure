@@ -20,8 +20,6 @@ const ExpressrouteExpressRouteCircuitAuthorization_PropertiesFields: FieldMap = 
 };
 
 export interface ExpressrouteExpressRouteCircuitAuthorizationConfig {
-  /** A unique read-only string that changes whenever the resource is updated. */
-  etag?: string | Computed<string>;
   /** Properties of ExpressRouteCircuitAuthorization. */
   properties?: ExpressrouteExpressRouteCircuitAuthorization_Properties | Computed<ExpressrouteExpressRouteCircuitAuthorization_Properties>;
 }
@@ -36,7 +34,6 @@ export interface ExpressrouteExpressRouteCircuitAuthorizationAttrs {
 export const ExpressrouteExpressRouteCircuitAuthorization: ResourceBinding<ExpressrouteExpressRouteCircuitAuthorizationConfig, ExpressrouteExpressRouteCircuitAuthorizationAttrs> = {
   wireType: "azure_network_expressroute_express_route_circuit_authorization",
   fields: {
-    etag: "etag",
     properties: {
       wireName: "properties",
       kind: "object",

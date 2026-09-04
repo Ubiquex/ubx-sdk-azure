@@ -4,14 +4,14 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDefaultErrorResponse_Error_Details struct {
-	Code any
+	Code    any
 	Message any
-	Target any
+	Target  any
 }
 
 type OpenapiDefaultErrorResponse_Error struct {
 	// Standardized string to programmatically identify the error.
-	Code any
+	Code    any
 	Details any
 	// More information to debug error.
 	Innererror any

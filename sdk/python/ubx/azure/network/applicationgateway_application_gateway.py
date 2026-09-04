@@ -9384,8 +9384,6 @@ _ApplicationgatewayApplicationGateway_PropertiesFields = {
 
 @dataclasses.dataclass
 class ApplicationgatewayApplicationGatewayConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # Identity for the resource.
     identity: Any = None
     # Properties of the application gateway.
@@ -9407,7 +9405,6 @@ class ApplicationgatewayApplicationGatewayAttrs:
 ApplicationgatewayApplicationGateway = ubx.ResourceBinding(
     wire_type="azure_network_applicationgateway_application_gateway",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "identity": ubx.FieldSpec(
             wire_name="identity",
             kind="object",

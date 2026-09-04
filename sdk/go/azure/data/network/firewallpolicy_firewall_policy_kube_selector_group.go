@@ -4,24 +4,24 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroup_Value_Properties_NamespaceSelector_MatchExpressions struct {
-	Key any
+	Key      any
 	Operator any
-	Values any
+	Values   any
 }
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroup_Value_Properties_NamespaceSelector struct {
 	MatchExpressions any
-	MatchLabels any
+	MatchLabels      any
 }
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroup_Value_Properties struct {
 	NamespaceSelector any
-	PodSelector any
+	PodSelector       any
 	ProvisioningState any
 }
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroup_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

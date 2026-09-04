@@ -4,27 +4,27 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FleetsGate_Value_Properties_Target_UpdateRunProperties struct {
-	Group any
-	Name any
-	Stage any
+	Group  any
+	Name   any
+	Stage  any
 	Timing any
 }
 
 type FleetsGate_Value_Properties_Target struct {
-	Id any
+	Id                  any
 	UpdateRunProperties any
 }
 
 type FleetsGate_Value_Properties struct {
-	DisplayName any
-	GateType any
+	DisplayName       any
+	GateType          any
 	ProvisioningState any
-	State any
-	Target any
+	State             any
+	Target            any
 }
 
 type FleetsGate_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 

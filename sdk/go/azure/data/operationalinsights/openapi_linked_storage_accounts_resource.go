@@ -4,7 +4,7 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLinkedStorageAccountsResource_Value_Properties struct {
-	DataSourceType any
+	DataSourceType    any
 	StorageAccountIds any
 }
 
@@ -20,7 +20,7 @@ type OpenapiLinkedStorageAccountsResourceAttrs struct {
 	// The URL to get the next set of results.
 	NextLink any
 	// A list of linked storage accounts instances.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

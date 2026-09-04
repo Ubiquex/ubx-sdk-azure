@@ -20,7 +20,7 @@ type ApimtagsTagContractAttrs struct {
 	Count any
 	// Next page link if any.
 	NextLink any
-	Scope any
+	Scope    any
 	// Page values.
 	Value any
 }

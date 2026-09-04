@@ -9,17 +9,17 @@ type PrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
 
 type PrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
 	Description any
-	Status any
+	Status      any
 }
 
 type PrivateEndpointConnection_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivateEndpointConnection_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AzureadonlyauthenticationAzureAdonlyAuthentication_Value_Properties struct {
 	AzureAdonlyAuthentication any
-	CreationDate any
-	State any
+	CreationDate              any
+	State                     any
 }
 
 type AzureadonlyauthenticationAzureAdonlyAuthentication_Value struct {
@@ -25,6 +25,5 @@ type AzureadonlyauthenticationAzureAdonlyAuthenticationAttrs struct {
 
 var AzureadonlyauthenticationAzureAdonlyAuthentication = ubx.DataSourceBinding{
 	WireType: "azure_synapse_azureadonlyauthentication_azure_adonly_authentication",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

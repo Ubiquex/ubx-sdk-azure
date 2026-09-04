@@ -4,16 +4,16 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetails_ListOfCopyProgressDetails struct {
-	CopyDuration any
-	CopyStart any
-	CopyThroughput any
-	DataRead any
-	DataWritten any
-	ParallelCopyType any
-	RowsCopied any
-	RowsRead any
-	Status any
-	TableName any
+	CopyDuration       any
+	CopyStart          any
+	CopyThroughput     any
+	DataRead           any
+	DataWritten        any
+	ParallelCopyType   any
+	RowsCopied         any
+	RowsRead           any
+	Status             any
+	TableName          any
 	UsedParallelCopies any
 }
 
@@ -58,60 +58,60 @@ type SqlmigrationDatabaseMigrationSqlDb_Properties struct {
 }
 
 var SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetails_ListOfCopyProgressDetailsFields = ubx.FieldMap{
-		"CopyDuration": ubx.FieldSpec{WireName: "copy_duration"},
-		"CopyStart": ubx.FieldSpec{WireName: "copy_start"},
-		"CopyThroughput": ubx.FieldSpec{WireName: "copy_throughput"},
-		"DataRead": ubx.FieldSpec{WireName: "data_read"},
-		"DataWritten": ubx.FieldSpec{WireName: "data_written"},
-		"ParallelCopyType": ubx.FieldSpec{WireName: "parallel_copy_type"},
-		"RowsCopied": ubx.FieldSpec{WireName: "rows_copied"},
-		"RowsRead": ubx.FieldSpec{WireName: "rows_read"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TableName": ubx.FieldSpec{WireName: "table_name"},
-		"UsedParallelCopies": ubx.FieldSpec{WireName: "used_parallel_copies"},
-	}
+	"CopyDuration":       ubx.FieldSpec{WireName: "copy_duration"},
+	"CopyStart":          ubx.FieldSpec{WireName: "copy_start"},
+	"CopyThroughput":     ubx.FieldSpec{WireName: "copy_throughput"},
+	"DataRead":           ubx.FieldSpec{WireName: "data_read"},
+	"DataWritten":        ubx.FieldSpec{WireName: "data_written"},
+	"ParallelCopyType":   ubx.FieldSpec{WireName: "parallel_copy_type"},
+	"RowsCopied":         ubx.FieldSpec{WireName: "rows_copied"},
+	"RowsRead":           ubx.FieldSpec{WireName: "rows_read"},
+	"Status":             ubx.FieldSpec{WireName: "status"},
+	"TableName":          ubx.FieldSpec{WireName: "table_name"},
+	"UsedParallelCopies": ubx.FieldSpec{WireName: "used_parallel_copies"},
+}
 
 var SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetailsFields = ubx.FieldMap{
-		"ListOfCopyProgressDetails": ubx.FieldSpec{
-			WireName: "list_of_copy_progress_details",
-			Kind: "list",
-			Fields: SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetails_ListOfCopyProgressDetailsFields,
-		},
-		"MigrationState": ubx.FieldSpec{WireName: "migration_state"},
-		"SqlDataCopyErrors": ubx.FieldSpec{WireName: "sql_data_copy_errors"},
-	}
+	"ListOfCopyProgressDetails": ubx.FieldSpec{
+		WireName: "list_of_copy_progress_details",
+		Kind:     "list",
+		Fields:   SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetails_ListOfCopyProgressDetailsFields,
+	},
+	"MigrationState":    ubx.FieldSpec{WireName: "migration_state"},
+	"SqlDataCopyErrors": ubx.FieldSpec{WireName: "sql_data_copy_errors"},
+}
 
 var SqlmigrationDatabaseMigrationSqlDb_Properties_OfflineConfigurationFields = ubx.FieldMap{
-		"Offline": ubx.FieldSpec{WireName: "offline"},
-	}
+	"Offline": ubx.FieldSpec{WireName: "offline"},
+}
 
 var SqlmigrationDatabaseMigrationSqlDb_Properties_TargetSqlConnectionFields = ubx.FieldMap{
-		"Authentication": ubx.FieldSpec{WireName: "authentication"},
-		"DataSource": ubx.FieldSpec{WireName: "data_source"},
-		"EncryptConnection": ubx.FieldSpec{WireName: "encrypt_connection"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"TrustServerCertificate": ubx.FieldSpec{WireName: "trust_server_certificate"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
-	}
+	"Authentication":         ubx.FieldSpec{WireName: "authentication"},
+	"DataSource":             ubx.FieldSpec{WireName: "data_source"},
+	"EncryptConnection":      ubx.FieldSpec{WireName: "encrypt_connection"},
+	"Password":               ubx.FieldSpec{WireName: "password"},
+	"TrustServerCertificate": ubx.FieldSpec{WireName: "trust_server_certificate"},
+	"UserName":               ubx.FieldSpec{WireName: "user_name"},
+}
 
 var SqlmigrationDatabaseMigrationSqlDb_PropertiesFields = ubx.FieldMap{
-		"MigrationStatusDetails": ubx.FieldSpec{
-			WireName: "migration_status_details",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetailsFields,
-		},
-		"OfflineConfiguration": ubx.FieldSpec{
-			WireName: "offline_configuration",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlDb_Properties_OfflineConfigurationFields,
-		},
-		"TableList": ubx.FieldSpec{WireName: "table_list"},
-		"TargetSqlConnection": ubx.FieldSpec{
-			WireName: "target_sql_connection",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlDb_Properties_TargetSqlConnectionFields,
-		},
-	}
+	"MigrationStatusDetails": ubx.FieldSpec{
+		WireName: "migration_status_details",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlDb_Properties_MigrationStatusDetailsFields,
+	},
+	"OfflineConfiguration": ubx.FieldSpec{
+		WireName: "offline_configuration",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlDb_Properties_OfflineConfigurationFields,
+	},
+	"TableList": ubx.FieldSpec{WireName: "table_list"},
+	"TargetSqlConnection": ubx.FieldSpec{
+		WireName: "target_sql_connection",
+		Kind:     "object",
+		Fields:   SqlmigrationDatabaseMigrationSqlDb_Properties_TargetSqlConnectionFields,
+	},
+}
 
 type SqlmigrationDatabaseMigrationSqlDbConfig struct {
 	// Database Migration Resource properties for SQL database.
@@ -128,8 +128,8 @@ var SqlmigrationDatabaseMigrationSqlDb = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlmigrationDatabaseMigrationSqlDb_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlmigrationDatabaseMigrationSqlDb_PropertiesFields,
 		},
 	},
 }

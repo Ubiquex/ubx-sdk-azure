@@ -4,7 +4,7 @@ package consumption
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBalance_Properties_AdjustmentDetails struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -44,12 +44,12 @@ type OpenapiBalance_Properties struct {
 }
 
 type OpenapiBalanceConfig struct {
-	BillingAccountId any
+	BillingAccountId  any
 	BillingPeriodName any
 }
 
 type OpenapiBalanceAttrs struct {
-	BillingAccountId any
+	BillingAccountId  any
 	BillingPeriodName any
 	// The etag for the resource.
 	Etag any
@@ -62,7 +62,7 @@ type OpenapiBalanceAttrs struct {
 var OpenapiBalance = ubx.DataSourceBinding{
 	WireType: "azure_consumption_openapi_balance",
 	Fields: ubx.FieldMap{
-		"BillingAccountId": ubx.FieldSpec{WireName: "billing_account_id"},
+		"BillingAccountId":  ubx.FieldSpec{WireName: "billing_account_id"},
 		"BillingPeriodName": ubx.FieldSpec{WireName: "billing_period_name"},
 	},
 }

@@ -4,21 +4,21 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBlobServiceProperties_Value_Properties_ChangeFeed struct {
-	Enabled any
+	Enabled         any
 	RetentionInDays any
 }
 
 type OpenapiBlobServiceProperties_Value_Properties_ContainerDeleteRetentionPolicy struct {
 	AllowPermanentDelete any
-	Days any
-	Enabled any
+	Days                 any
+	Enabled              any
 }
 
 type OpenapiBlobServiceProperties_Value_Properties_Cors_CorsRules struct {
-	AllowedHeaders any
-	AllowedMethods any
-	AllowedOrigins any
-	ExposedHeaders any
+	AllowedHeaders  any
+	AllowedMethods  any
+	AllowedOrigins  any
+	ExposedHeaders  any
 	MaxAgeInSeconds any
 }
 
@@ -27,37 +27,37 @@ type OpenapiBlobServiceProperties_Value_Properties_Cors struct {
 }
 
 type OpenapiBlobServiceProperties_Value_Properties_LastAccessTimeTrackingPolicy struct {
-	BlobType any
-	Enable any
-	Name any
+	BlobType                  any
+	Enable                    any
+	Name                      any
 	TrackingGranularityInDays any
 }
 
 type OpenapiBlobServiceProperties_Value_Properties_RestorePolicy struct {
-	Days any
-	Enabled any
+	Days            any
+	Enabled         any
 	LastEnabledTime any
-	MinRestoreTime any
+	MinRestoreTime  any
 }
 
 type OpenapiBlobServiceProperties_Value_Properties_StaticWebsite struct {
 	DefaultIndexDocumentPath any
-	Enabled any
-	ErrorDocument404Path any
-	IndexDocument any
+	Enabled                  any
+	ErrorDocument404Path     any
+	IndexDocument            any
 }
 
 type OpenapiBlobServiceProperties_Value_Properties struct {
 	AutomaticSnapshotPolicyEnabled any
-	ChangeFeed any
+	ChangeFeed                     any
 	ContainerDeleteRetentionPolicy any
-	Cors any
-	DefaultServiceVersion any
-	DeleteRetentionPolicy any
-	IsVersioningEnabled any
-	LastAccessTimeTrackingPolicy any
-	RestorePolicy any
-	StaticWebsite any
+	Cors                           any
+	DefaultServiceVersion          any
+	DeleteRetentionPolicy          any
+	IsVersioningEnabled            any
+	LastAccessTimeTrackingPolicy   any
+	RestorePolicy                  any
+	StaticWebsite                  any
 }
 
 type OpenapiBlobServiceProperties_Value_Sku struct {
@@ -67,7 +67,7 @@ type OpenapiBlobServiceProperties_Value_Sku struct {
 
 type OpenapiBlobServiceProperties_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiBlobServicePropertiesConfig struct {
@@ -76,7 +76,7 @@ type OpenapiBlobServicePropertiesConfig struct {
 
 type OpenapiBlobServicePropertiesAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of blob services returned.
 	Value any
 }

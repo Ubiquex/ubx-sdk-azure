@@ -11961,8 +11961,6 @@ _VirtualnetworkPublicIpaddress_PropertiesFields = {
 
 @dataclasses.dataclass
 class VirtualnetworkPublicIpaddressConfig:
-    # A unique read-only string that changes whenever the resource is updated.
-    etag: Any = None
     # ExtendedLocation complex type.
     extended_location: Any = None
     # Public IP address properties.
@@ -11988,7 +11986,6 @@ class VirtualnetworkPublicIpaddressAttrs:
 VirtualnetworkPublicIpaddress = ubx.ResourceBinding(
     wire_type="azure_network_virtualnetwork_public_ipaddress",
     fields={
-        "etag": ubx.FieldSpec(wire_name="etag"),
         "extended_location": ubx.FieldSpec(
             wire_name="extended_location",
             kind="object",

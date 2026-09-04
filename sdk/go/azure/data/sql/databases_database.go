@@ -4,89 +4,89 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatabasesDatabase_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DatabasesDatabase_Value_Identity struct {
-	TenantId any
-	Type any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type DatabasesDatabase_Value_Properties_CurrentSku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type DatabasesDatabase_Value_Properties_Keys struct {
 	CreationDate any
-	KeyVersion any
-	Subregion any
-	Thumbprint any
-	Type any
+	KeyVersion   any
+	Subregion    any
+	Thumbprint   any
+	Type         any
 }
 
 type DatabasesDatabase_Value_Properties struct {
-	AutoPauseDelay any
-	AvailabilityZone any
-	CatalogCollation any
-	Collation any
-	CreateMode any
-	CreationDate any
-	CurrentBackupStorageRedundancy any
-	CurrentServiceObjectiveName any
-	CurrentSku any
-	DatabaseId any
-	DefaultSecondaryLocation any
-	EarliestRestoreDate any
-	ElasticPoolId any
-	EncryptionProtector any
-	EncryptionProtectorAutoRotation any
-	FailoverGroupId any
-	FederatedClientId any
-	FreeLimitExhaustionBehavior any
-	HighAvailabilityReplicaCount any
-	IsInfraEncryptionEnabled any
-	IsLedgerOn any
-	Keys any
-	LicenseType any
+	AutoPauseDelay                    any
+	AvailabilityZone                  any
+	CatalogCollation                  any
+	Collation                         any
+	CreateMode                        any
+	CreationDate                      any
+	CurrentBackupStorageRedundancy    any
+	CurrentServiceObjectiveName       any
+	CurrentSku                        any
+	DatabaseId                        any
+	DefaultSecondaryLocation          any
+	EarliestRestoreDate               any
+	ElasticPoolId                     any
+	EncryptionProtector               any
+	EncryptionProtectorAutoRotation   any
+	FailoverGroupId                   any
+	FederatedClientId                 any
+	FreeLimitExhaustionBehavior       any
+	HighAvailabilityReplicaCount      any
+	IsInfraEncryptionEnabled          any
+	IsLedgerOn                        any
+	Keys                              any
+	LicenseType                       any
 	LongTermRetentionBackupResourceId any
-	MaintenanceConfigurationId any
-	ManualCutover any
-	MaxLogSizeBytes any
-	MaxSizeBytes any
-	MinCapacity any
-	PausedDate any
-	PerformCutover any
-	PreferredEnclaveType any
-	ReadScale any
-	RecoverableDatabaseId any
-	RecoveryServicesRecoveryPointId any
-	RequestedBackupStorageRedundancy any
-	RequestedServiceObjectiveName any
-	RestorableDroppedDatabaseId any
-	RestorePointInTime any
-	ResumedDate any
-	SampleName any
-	SecondaryType any
-	SourceDatabaseDeletionDate any
-	SourceDatabaseId any
-	SourceResourceId any
-	Status any
-	UseFreeLimit any
-	ZoneRedundant any
+	MaintenanceConfigurationId        any
+	ManualCutover                     any
+	MaxLogSizeBytes                   any
+	MaxSizeBytes                      any
+	MinCapacity                       any
+	PausedDate                        any
+	PerformCutover                    any
+	PreferredEnclaveType              any
+	ReadScale                         any
+	RecoverableDatabaseId             any
+	RecoveryServicesRecoveryPointId   any
+	RequestedBackupStorageRedundancy  any
+	RequestedServiceObjectiveName     any
+	RestorableDroppedDatabaseId       any
+	RestorePointInTime                any
+	ResumedDate                       any
+	SampleName                        any
+	SecondaryType                     any
+	SourceDatabaseDeletionDate        any
+	SourceDatabaseId                  any
+	SourceResourceId                  any
+	Status                            any
+	UseFreeLimit                      any
+	ZoneRedundant                     any
 }
 
 type DatabasesDatabase_Value struct {
-	Identity any
-	Kind any
-	ManagedBy any
+	Identity   any
+	Kind       any
+	ManagedBy  any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type DatabasesDatabaseConfig struct {
@@ -95,7 +95,7 @@ type DatabasesDatabaseConfig struct {
 
 type DatabasesDatabaseAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The Database items on this page
 	Value any

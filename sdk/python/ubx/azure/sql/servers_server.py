@@ -190,8 +190,6 @@ _ServersServer_PropertiesFields = {
 class ServersServerConfig:
     # Azure Active Directory identity configuration for a resource.
     identity: Any = None
-    # Kind of sql server. This is metadata used for the Azure portal experience.
-    kind: Any = None
     # The properties of a server.
     properties: Any = None
 
@@ -212,7 +210,6 @@ ServersServer = ubx.ResourceBinding(
             kind="object",
             fields=_ServersServer_IdentityFields,
         ),
-        "kind": ubx.FieldSpec(wire_name="kind"),
         "properties": ubx.FieldSpec(
             wire_name="properties",
             kind="object",

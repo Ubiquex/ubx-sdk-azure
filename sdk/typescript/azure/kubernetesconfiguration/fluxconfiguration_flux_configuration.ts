@@ -386,20 +386,9 @@ const FluxconfigurationFluxConfiguration_PropertiesFields: FieldMap = {
   waitForReconciliation: "wait_for_reconciliation",
 };
 
-const FluxconfigurationFluxConfiguration_SystemDataFields: FieldMap = {
-  createdAt: "created_at",
-  createdBy: "created_by",
-  createdByType: "created_by_type",
-  lastModifiedAt: "last_modified_at",
-  lastModifiedBy: "last_modified_by",
-  lastModifiedByType: "last_modified_by_type",
-};
-
 export interface FluxconfigurationFluxConfigurationConfig {
   /** Properties to create a Flux Configuration resource */
   properties?: FluxconfigurationFluxConfiguration_Properties | Computed<FluxconfigurationFluxConfiguration_Properties>;
-  /** Metadata pertaining to creation and last modification of the resource. */
-  systemData?: FluxconfigurationFluxConfiguration_SystemData | Computed<FluxconfigurationFluxConfiguration_SystemData>;
 }
 
 export interface FluxconfigurationFluxConfigurationAttrs {
@@ -416,11 +405,6 @@ export const FluxconfigurationFluxConfiguration: ResourceBinding<Fluxconfigurati
       wireName: "properties",
       kind: "object",
       fields: FluxconfigurationFluxConfiguration_PropertiesFields,
-    },
-    systemData: {
-      wireName: "system_data",
-      kind: "object",
-      fields: FluxconfigurationFluxConfiguration_SystemDataFields,
     },
   },
 };

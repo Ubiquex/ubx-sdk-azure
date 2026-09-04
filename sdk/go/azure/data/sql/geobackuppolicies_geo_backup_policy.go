@@ -4,25 +4,25 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GeobackuppoliciesGeoBackupPolicy_Value_Properties struct {
-	State any
+	State       any
 	StorageType any
 }
 
 type GeobackuppoliciesGeoBackupPolicy_Value struct {
-	Kind any
-	Location any
+	Kind       any
+	Location   any
 	Properties any
 }
 
 type GeobackuppoliciesGeoBackupPolicyConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type GeobackuppoliciesGeoBackupPolicyAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The GeoBackupPolicy items on this page
 	Value any
@@ -32,6 +32,6 @@ var GeobackuppoliciesGeoBackupPolicy = ubx.DataSourceBinding{
 	WireType: "azure_sql_geobackuppolicies_geo_backup_policy",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }
