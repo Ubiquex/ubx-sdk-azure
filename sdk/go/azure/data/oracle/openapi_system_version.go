@@ -3,25 +3,24 @@ package oracle
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiSystemVersion_Value_Properties struct {
+type OpenapiSystemVersion_Properties struct {
+	// A valid Oracle System Version
 	SystemVersion any
 }
 
-type OpenapiSystemVersion_Value struct {
-	Properties any
-}
-
 type OpenapiSystemVersionConfig struct {
+	Systemversionname any
 }
 
 type OpenapiSystemVersionAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The SystemVersion items on this page
-	Value any
+	// System Version Resource model
+	Properties any
+	Systemversionname any
 }
 
 var OpenapiSystemVersion = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_system_version",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"Systemversionname": ubx.FieldSpec{WireName: "systemversionname"},
+	},
 }

@@ -124,109 +124,109 @@ type Topic_SystemData struct {
 }
 
 var Topic_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var Topic_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   Topic_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: Topic_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var Topic_Properties_EventTypeInfo_InlineEventTypesFields = ubx.FieldMap{
-	"DataSchemaUrl":    ubx.FieldSpec{WireName: "data_schema_url"},
-	"Description":      ubx.FieldSpec{WireName: "description"},
-	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
-	"DocumentationUrl": ubx.FieldSpec{WireName: "documentation_url"},
-}
+		"DataSchemaUrl": ubx.FieldSpec{WireName: "data_schema_url"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"DocumentationUrl": ubx.FieldSpec{WireName: "documentation_url"},
+	}
 
 var Topic_Properties_EventTypeInfoFields = ubx.FieldMap{
-	"InlineEventTypes": ubx.FieldSpec{
-		WireName: "inline_event_types",
-		Kind:     "map",
-		Fields:   Topic_Properties_EventTypeInfo_InlineEventTypesFields,
-	},
-	"Kind": ubx.FieldSpec{WireName: "kind"},
-}
+		"InlineEventTypes": ubx.FieldSpec{
+			WireName: "inline_event_types",
+			Kind: "map",
+			Fields: Topic_Properties_EventTypeInfo_InlineEventTypesFields,
+		},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
+	}
 
 var Topic_Properties_InboundIpRulesFields = ubx.FieldMap{
-	"Action": ubx.FieldSpec{WireName: "action"},
-	"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
-}
+		"Action": ubx.FieldSpec{WireName: "action"},
+		"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
+	}
 
 var Topic_Properties_InputSchemaMappingFields = ubx.FieldMap{
-	"InputSchemaMappingType": ubx.FieldSpec{WireName: "input_schema_mapping_type"},
-}
+		"InputSchemaMappingType": ubx.FieldSpec{WireName: "input_schema_mapping_type"},
+	}
 
 var Topic_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var Topic_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-	"Description":     ubx.FieldSpec{WireName: "description"},
-	"Status":          ubx.FieldSpec{WireName: "status"},
-}
+		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+	}
 
 var Topic_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-	"PrivateEndpoint": ubx.FieldSpec{
-		WireName: "private_endpoint",
-		Kind:     "object",
-		Fields:   Topic_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-	},
-	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-		WireName: "private_link_service_connection_state",
-		Kind:     "object",
-		Fields:   Topic_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+		"PrivateEndpoint": ubx.FieldSpec{
+			WireName: "private_endpoint",
+			Kind: "object",
+			Fields: Topic_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+		},
+		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+			WireName: "private_link_service_connection_state",
+			Kind: "object",
+			Fields: Topic_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 var Topic_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   Topic_Properties_PrivateEndpointConnections_PropertiesFields,
-	},
-}
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: Topic_Properties_PrivateEndpointConnections_PropertiesFields,
+		},
+	}
 
 var Topic_PropertiesFields = ubx.FieldMap{
-	"DataResidencyBoundary": ubx.FieldSpec{WireName: "data_residency_boundary"},
-	"DisableLocalAuth":      ubx.FieldSpec{WireName: "disable_local_auth"},
-	"Endpoint":              ubx.FieldSpec{WireName: "endpoint"},
-	"EventTypeInfo": ubx.FieldSpec{
-		WireName: "event_type_info",
-		Kind:     "object",
-		Fields:   Topic_Properties_EventTypeInfoFields,
-	},
-	"InboundIpRules": ubx.FieldSpec{
-		WireName: "inbound_ip_rules",
-		Kind:     "list",
-		Fields:   Topic_Properties_InboundIpRulesFields,
-	},
-	"InputSchema": ubx.FieldSpec{WireName: "input_schema"},
-	"InputSchemaMapping": ubx.FieldSpec{
-		WireName: "input_schema_mapping",
-		Kind:     "object",
-		Fields:   Topic_Properties_InputSchemaMappingFields,
-	},
-	"MetricResourceId":         ubx.FieldSpec{WireName: "metric_resource_id"},
-	"MinimumTlsVersionAllowed": ubx.FieldSpec{WireName: "minimum_tls_version_allowed"},
-	"PrivateEndpointConnections": ubx.FieldSpec{
-		WireName: "private_endpoint_connections",
-		Kind:     "list",
-		Fields:   Topic_Properties_PrivateEndpointConnectionsFields,
-	},
-	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
-	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-}
+		"DataResidencyBoundary": ubx.FieldSpec{WireName: "data_residency_boundary"},
+		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
+		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
+		"EventTypeInfo": ubx.FieldSpec{
+			WireName: "event_type_info",
+			Kind: "object",
+			Fields: Topic_Properties_EventTypeInfoFields,
+		},
+		"InboundIpRules": ubx.FieldSpec{
+			WireName: "inbound_ip_rules",
+			Kind: "list",
+			Fields: Topic_Properties_InboundIpRulesFields,
+		},
+		"InputSchema": ubx.FieldSpec{WireName: "input_schema"},
+		"InputSchemaMapping": ubx.FieldSpec{
+			WireName: "input_schema_mapping",
+			Kind: "object",
+			Fields: Topic_Properties_InputSchemaMappingFields,
+		},
+		"MetricResourceId": ubx.FieldSpec{WireName: "metric_resource_id"},
+		"MinimumTlsVersionAllowed": ubx.FieldSpec{WireName: "minimum_tls_version_allowed"},
+		"PrivateEndpointConnections": ubx.FieldSpec{
+			WireName: "private_endpoint_connections",
+			Kind: "list",
+			Fields: Topic_Properties_PrivateEndpointConnectionsFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	}
 
 type TopicConfig struct {
 	// The identity information for the resource.
@@ -257,14 +257,14 @@ var Topic = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   Topic_IdentityFields,
+			Kind: "object",
+			Fields: Topic_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   Topic_PropertiesFields,
+			Kind: "object",
+			Fields: Topic_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

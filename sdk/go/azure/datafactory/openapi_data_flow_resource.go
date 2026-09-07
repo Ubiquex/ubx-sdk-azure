@@ -20,19 +20,19 @@ type OpenapiDataFlowResource_Properties struct {
 }
 
 var OpenapiDataFlowResource_Properties_FolderFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiDataFlowResource_PropertiesFields = ubx.FieldMap{
-	"Annotations": ubx.FieldSpec{WireName: "annotations"},
-	"Description": ubx.FieldSpec{WireName: "description"},
-	"Folder": ubx.FieldSpec{
-		WireName: "folder",
-		Kind:     "object",
-		Fields:   OpenapiDataFlowResource_Properties_FolderFields,
-	},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Annotations": ubx.FieldSpec{WireName: "annotations"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Folder": ubx.FieldSpec{
+			WireName: "folder",
+			Kind: "object",
+			Fields: OpenapiDataFlowResource_Properties_FolderFields,
+		},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 type OpenapiDataFlowResourceConfig struct {
 	// Azure Data Factory nested object which contains a flow with data movements and transformations.
@@ -51,8 +51,8 @@ var OpenapiDataFlowResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiDataFlowResource_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiDataFlowResource_PropertiesFields,
 		},
 	},
 }

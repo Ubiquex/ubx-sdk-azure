@@ -24,21 +24,21 @@ type OpenapiMarketplaceSubscription_Properties struct {
 }
 
 var OpenapiMarketplaceSubscription_Properties_MarketplacePlanFields = ubx.FieldMap{
-	"OfferId":     ubx.FieldSpec{WireName: "offer_id"},
-	"PlanId":      ubx.FieldSpec{WireName: "plan_id"},
-	"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
-}
+		"OfferId": ubx.FieldSpec{WireName: "offer_id"},
+		"PlanId": ubx.FieldSpec{WireName: "plan_id"},
+		"PublisherId": ubx.FieldSpec{WireName: "publisher_id"},
+	}
 
 var OpenapiMarketplaceSubscription_PropertiesFields = ubx.FieldMap{
-	"MarketplacePlan": ubx.FieldSpec{
-		WireName: "marketplace_plan",
-		Kind:     "object",
-		Fields:   OpenapiMarketplaceSubscription_Properties_MarketplacePlanFields,
-	},
-	"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
-	"ModelId":                       ubx.FieldSpec{WireName: "model_id"},
-	"ProvisioningState":             ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"MarketplacePlan": ubx.FieldSpec{
+			WireName: "marketplace_plan",
+			Kind: "object",
+			Fields: OpenapiMarketplaceSubscription_Properties_MarketplacePlanFields,
+		},
+		"MarketplaceSubscriptionStatus": ubx.FieldSpec{WireName: "marketplace_subscription_status"},
+		"ModelId": ubx.FieldSpec{WireName: "model_id"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type OpenapiMarketplaceSubscriptionConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -59,8 +59,8 @@ var OpenapiMarketplaceSubscription = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiMarketplaceSubscription_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiMarketplaceSubscription_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

@@ -7,28 +7,26 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiCodeContainer_Value_Properties:
+class OpenapiCodeContainer_Properties:
+    # Provisioning state of registry asset.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class OpenapiCodeContainer_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiCodeContainerConfig:
-    registry_name: Any = None
+    name: Any = None
+    workspace_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiCodeContainerAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    registry_name: Any = None
-    # The CodeContainer items on this page
-    value: Any = None
+    name: Any = None
+    # Container for code asset versions.
+    properties: Any = None
+    workspace_name: Any = None
 
 OpenapiCodeContainer = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_code_container",
     fields={
-        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
+        "name": ubx.FieldSpec(wire_name="name"),
+        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

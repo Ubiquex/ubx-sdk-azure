@@ -15,11 +15,11 @@ type OpenapiTriggerResource_Properties struct {
 }
 
 var OpenapiTriggerResource_PropertiesFields = ubx.FieldMap{
-	"Annotations":  ubx.FieldSpec{WireName: "annotations"},
-	"Description":  ubx.FieldSpec{WireName: "description"},
-	"RuntimeState": ubx.FieldSpec{WireName: "runtime_state"},
-	"Type":         ubx.FieldSpec{WireName: "type"},
-}
+		"Annotations": ubx.FieldSpec{WireName: "annotations"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"RuntimeState": ubx.FieldSpec{WireName: "runtime_state"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 type OpenapiTriggerResourceConfig struct {
 	// Azure data factory nested object which contains information about creating pipeline run
@@ -38,8 +38,8 @@ var OpenapiTriggerResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiTriggerResource_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiTriggerResource_PropertiesFields,
 		},
 	},
 }

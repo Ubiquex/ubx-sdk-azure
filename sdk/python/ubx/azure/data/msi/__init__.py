@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .managedidentity_federated_identity_credential import ManagedidentityFederatedIdentityCredential, ManagedidentityFederatedIdentityCredentialConfig
-from .managedidentity_identity import ManagedidentityIdentity, ManagedidentityIdentityConfig
+from .managedidentity_federated_identity_credential_list import ManagedidentityFederatedIdentityCredentialList, ManagedidentityFederatedIdentityCredentialListConfig
+from .managedidentity_identity_list import ManagedidentityIdentityList, ManagedidentityIdentityListConfig
 from .managedidentity_system_assigned_identity import ManagedidentitySystemAssignedIdentity, ManagedidentitySystemAssignedIdentityConfig

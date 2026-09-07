@@ -106,127 +106,127 @@ type VirtualwanVirtualHub_Properties struct {
 }
 
 var VirtualwanVirtualHub_Properties_AzureFirewallFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var VirtualwanVirtualHub_Properties_RouteTable_RoutesFields = ubx.FieldMap{
-	"AddressPrefixes":  ubx.FieldSpec{WireName: "address_prefixes"},
-	"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-}
+		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
+	}
 
 var VirtualwanVirtualHub_Properties_RouteTableFields = ubx.FieldMap{
-	"Routes": ubx.FieldSpec{
-		WireName: "routes",
-		Kind:     "list",
-		Fields:   VirtualwanVirtualHub_Properties_RouteTable_RoutesFields,
-	},
-}
+		"Routes": ubx.FieldSpec{
+			WireName: "routes",
+			Kind: "list",
+			Fields: VirtualwanVirtualHub_Properties_RouteTable_RoutesFields,
+		},
+	}
 
 var VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties_RoutesFields = ubx.FieldMap{
-	"DestinationType": ubx.FieldSpec{WireName: "destination_type"},
-	"Destinations":    ubx.FieldSpec{WireName: "destinations"},
-	"NextHopType":     ubx.FieldSpec{WireName: "next_hop_type"},
-	"NextHops":        ubx.FieldSpec{WireName: "next_hops"},
-}
+		"DestinationType": ubx.FieldSpec{WireName: "destination_type"},
+		"Destinations": ubx.FieldSpec{WireName: "destinations"},
+		"NextHopType": ubx.FieldSpec{WireName: "next_hop_type"},
+		"NextHops": ubx.FieldSpec{WireName: "next_hops"},
+	}
 
 var VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_PropertiesFields = ubx.FieldMap{
-	"AttachedConnections": ubx.FieldSpec{WireName: "attached_connections"},
-	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
-	"Routes": ubx.FieldSpec{
-		WireName: "routes",
-		Kind:     "list",
-		Fields:   VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties_RoutesFields,
-	},
-}
+		"AttachedConnections": ubx.FieldSpec{WireName: "attached_connections"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Routes": ubx.FieldSpec{
+			WireName: "routes",
+			Kind: "list",
+			Fields: VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_Properties_RoutesFields,
+		},
+	}
 
 var VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2sFields = ubx.FieldMap{
-	"Etag": ubx.FieldSpec{WireName: "etag"},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_PropertiesFields,
-	},
-}
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2s_PropertiesFields,
+		},
+	}
 
 var VirtualwanVirtualHub_Properties_VirtualRouterAutoScaleConfigurationFields = ubx.FieldMap{
-	"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
-}
+		"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
+	}
 
 var VirtualwanVirtualHub_PropertiesFields = ubx.FieldMap{
-	"AddressPrefix":              ubx.FieldSpec{WireName: "address_prefix"},
-	"AddressPrefixV6":            ubx.FieldSpec{WireName: "address_prefix_v6"},
-	"AllowBranchToBranchTraffic": ubx.FieldSpec{WireName: "allow_branch_to_branch_traffic"},
-	"AzureFirewall": ubx.FieldSpec{
-		WireName: "azure_firewall",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-	"BgpConnections": ubx.FieldSpec{
-		WireName: "bgp_connections",
-		Kind:     "list",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-	"ExpressRouteGateway": ubx.FieldSpec{
-		WireName: "express_route_gateway",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-	"HubRoutingPreference": ubx.FieldSpec{WireName: "hub_routing_preference"},
-	"IpConfigurations": ubx.FieldSpec{
-		WireName: "ip_configurations",
-		Kind:     "list",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-	"P2SvpnGateway": ubx.FieldSpec{
-		WireName: "p2_svpn_gateway",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-	"PreferredRoutingGateway": ubx.FieldSpec{WireName: "preferred_routing_gateway"},
-	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
-	"RouteMaps": ubx.FieldSpec{
-		WireName: "route_maps",
-		Kind:     "list",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-	"RouteTable": ubx.FieldSpec{
-		WireName: "route_table",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_RouteTableFields,
-	},
-	"RoutingState": ubx.FieldSpec{WireName: "routing_state"},
-	"SecurityPartnerProvider": ubx.FieldSpec{
-		WireName: "security_partner_provider",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-	"SecurityProviderName": ubx.FieldSpec{WireName: "security_provider_name"},
-	"Sku":                  ubx.FieldSpec{WireName: "sku"},
-	"VirtualHubRouteTableV2s": ubx.FieldSpec{
-		WireName: "virtual_hub_route_table_v2s",
-		Kind:     "list",
-		Fields:   VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2sFields,
-	},
-	"VirtualRouterAsn": ubx.FieldSpec{WireName: "virtual_router_asn"},
-	"VirtualRouterAutoScaleConfiguration": ubx.FieldSpec{
-		WireName: "virtual_router_auto_scale_configuration",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_VirtualRouterAutoScaleConfigurationFields,
-	},
-	"VirtualRouterIps":   ubx.FieldSpec{WireName: "virtual_router_ips"},
-	"VirtualRouterIpsV6": ubx.FieldSpec{WireName: "virtual_router_ips_v6"},
-	"VirtualWan": ubx.FieldSpec{
-		WireName: "virtual_wan",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-	"VpnGateway": ubx.FieldSpec{
-		WireName: "vpn_gateway",
-		Kind:     "object",
-		Fields:   VirtualwanVirtualHub_Properties_AzureFirewallFields,
-	},
-}
+		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
+		"AddressPrefixV6": ubx.FieldSpec{WireName: "address_prefix_v6"},
+		"AllowBranchToBranchTraffic": ubx.FieldSpec{WireName: "allow_branch_to_branch_traffic"},
+		"AzureFirewall": ubx.FieldSpec{
+			WireName: "azure_firewall",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+		"BgpConnections": ubx.FieldSpec{
+			WireName: "bgp_connections",
+			Kind: "list",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+		"ExpressRouteGateway": ubx.FieldSpec{
+			WireName: "express_route_gateway",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+		"HubRoutingPreference": ubx.FieldSpec{WireName: "hub_routing_preference"},
+		"IpConfigurations": ubx.FieldSpec{
+			WireName: "ip_configurations",
+			Kind: "list",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+		"P2SvpnGateway": ubx.FieldSpec{
+			WireName: "p2_svpn_gateway",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+		"PreferredRoutingGateway": ubx.FieldSpec{WireName: "preferred_routing_gateway"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"RouteMaps": ubx.FieldSpec{
+			WireName: "route_maps",
+			Kind: "list",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+		"RouteTable": ubx.FieldSpec{
+			WireName: "route_table",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_RouteTableFields,
+		},
+		"RoutingState": ubx.FieldSpec{WireName: "routing_state"},
+		"SecurityPartnerProvider": ubx.FieldSpec{
+			WireName: "security_partner_provider",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+		"SecurityProviderName": ubx.FieldSpec{WireName: "security_provider_name"},
+		"Sku": ubx.FieldSpec{WireName: "sku"},
+		"VirtualHubRouteTableV2s": ubx.FieldSpec{
+			WireName: "virtual_hub_route_table_v2s",
+			Kind: "list",
+			Fields: VirtualwanVirtualHub_Properties_VirtualHubRouteTableV2sFields,
+		},
+		"VirtualRouterAsn": ubx.FieldSpec{WireName: "virtual_router_asn"},
+		"VirtualRouterAutoScaleConfiguration": ubx.FieldSpec{
+			WireName: "virtual_router_auto_scale_configuration",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_VirtualRouterAutoScaleConfigurationFields,
+		},
+		"VirtualRouterIps": ubx.FieldSpec{WireName: "virtual_router_ips"},
+		"VirtualRouterIpsV6": ubx.FieldSpec{WireName: "virtual_router_ips_v6"},
+		"VirtualWan": ubx.FieldSpec{
+			WireName: "virtual_wan",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+		"VpnGateway": ubx.FieldSpec{
+			WireName: "vpn_gateway",
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_Properties_AzureFirewallFields,
+		},
+	}
 
 type VirtualwanVirtualHubConfig struct {
 	// Resource ID.
@@ -261,12 +261,12 @@ type VirtualwanVirtualHubAttrs struct {
 var VirtualwanVirtualHub = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_virtual_hub",
 	Fields: ubx.FieldMap{
-		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualwanVirtualHub_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualwanVirtualHub_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

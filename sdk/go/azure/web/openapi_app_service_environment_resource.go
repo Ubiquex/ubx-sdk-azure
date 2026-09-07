@@ -111,92 +111,92 @@ type OpenapiAppServiceEnvironmentResource_Properties struct {
 }
 
 var OpenapiAppServiceEnvironmentResource_Properties_ClusterSettingsFields = ubx.FieldMap{
-	"Name":  ubx.FieldSpec{WireName: "name"},
-	"Value": ubx.FieldSpec{WireName: "value"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfiguration_PropertiesFields = ubx.FieldMap{
-	"CertificateUrl":            ubx.FieldSpec{WireName: "certificate_url"},
-	"DnsSuffix":                 ubx.FieldSpec{WireName: "dns_suffix"},
-	"KeyVaultReferenceIdentity": ubx.FieldSpec{WireName: "key_vault_reference_identity"},
-	"ProvisioningDetails":       ubx.FieldSpec{WireName: "provisioning_details"},
-	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"CertificateUrl": ubx.FieldSpec{WireName: "certificate_url"},
+		"DnsSuffix": ubx.FieldSpec{WireName: "dns_suffix"},
+		"KeyVaultReferenceIdentity": ubx.FieldSpec{WireName: "key_vault_reference_identity"},
+		"ProvisioningDetails": ubx.FieldSpec{WireName: "provisioning_details"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 var OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfigurationFields = ubx.FieldMap{
-	"Kind": ubx.FieldSpec{WireName: "kind"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfiguration_PropertiesFields,
-	},
-}
+		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfiguration_PropertiesFields,
+		},
+	}
 
 var OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfiguration_PropertiesFields = ubx.FieldMap{
-	"AllowNewPrivateEndpointConnections": ubx.FieldSpec{WireName: "allow_new_private_endpoint_connections"},
-	"ExternalInboundIpAddresses":         ubx.FieldSpec{WireName: "external_inbound_ip_addresses"},
-	"FtpEnabled":                         ubx.FieldSpec{WireName: "ftp_enabled"},
-	"InboundIpAddressOverride":           ubx.FieldSpec{WireName: "inbound_ip_address_override"},
-	"InternalInboundIpAddresses":         ubx.FieldSpec{WireName: "internal_inbound_ip_addresses"},
-	"LinuxOutboundIpAddresses":           ubx.FieldSpec{WireName: "linux_outbound_ip_addresses"},
-	"RemoteDebugEnabled":                 ubx.FieldSpec{WireName: "remote_debug_enabled"},
-	"WindowsOutboundIpAddresses":         ubx.FieldSpec{WireName: "windows_outbound_ip_addresses"},
-}
+		"AllowNewPrivateEndpointConnections": ubx.FieldSpec{WireName: "allow_new_private_endpoint_connections"},
+		"ExternalInboundIpAddresses": ubx.FieldSpec{WireName: "external_inbound_ip_addresses"},
+		"FtpEnabled": ubx.FieldSpec{WireName: "ftp_enabled"},
+		"InboundIpAddressOverride": ubx.FieldSpec{WireName: "inbound_ip_address_override"},
+		"InternalInboundIpAddresses": ubx.FieldSpec{WireName: "internal_inbound_ip_addresses"},
+		"LinuxOutboundIpAddresses": ubx.FieldSpec{WireName: "linux_outbound_ip_addresses"},
+		"RemoteDebugEnabled": ubx.FieldSpec{WireName: "remote_debug_enabled"},
+		"WindowsOutboundIpAddresses": ubx.FieldSpec{WireName: "windows_outbound_ip_addresses"},
+	}
 
 var OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfigurationFields = ubx.FieldMap{
-	"Kind": ubx.FieldSpec{WireName: "kind"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfiguration_PropertiesFields,
-	},
-}
+		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfiguration_PropertiesFields,
+		},
+	}
 
 var OpenapiAppServiceEnvironmentResource_Properties_VirtualNetworkFields = ubx.FieldMap{
-	"Id":     ubx.FieldSpec{WireName: "id"},
-	"Name":   ubx.FieldSpec{WireName: "name"},
-	"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	"Type":   ubx.FieldSpec{WireName: "type"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Subnet": ubx.FieldSpec{WireName: "subnet"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiAppServiceEnvironmentResource_PropertiesFields = ubx.FieldMap{
-	"ClusterSettings": ubx.FieldSpec{
-		WireName: "cluster_settings",
-		Kind:     "list",
-		Fields:   OpenapiAppServiceEnvironmentResource_Properties_ClusterSettingsFields,
-	},
-	"CustomDnsSuffixConfiguration": ubx.FieldSpec{
-		WireName: "custom_dns_suffix_configuration",
-		Kind:     "object",
-		Fields:   OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfigurationFields,
-	},
-	"DedicatedHostCount":        ubx.FieldSpec{WireName: "dedicated_host_count"},
-	"DnsSuffix":                 ubx.FieldSpec{WireName: "dns_suffix"},
-	"FrontEndScaleFactor":       ubx.FieldSpec{WireName: "front_end_scale_factor"},
-	"HasLinuxWorkers":           ubx.FieldSpec{WireName: "has_linux_workers"},
-	"InternalLoadBalancingMode": ubx.FieldSpec{WireName: "internal_load_balancing_mode"},
-	"IpsslAddressCount":         ubx.FieldSpec{WireName: "ipssl_address_count"},
-	"MaximumNumberOfMachines":   ubx.FieldSpec{WireName: "maximum_number_of_machines"},
-	"MultiRoleCount":            ubx.FieldSpec{WireName: "multi_role_count"},
-	"MultiSize":                 ubx.FieldSpec{WireName: "multi_size"},
-	"NetworkingConfiguration": ubx.FieldSpec{
-		WireName: "networking_configuration",
-		Kind:     "object",
-		Fields:   OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfigurationFields,
-	},
-	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
-	"Status":                  ubx.FieldSpec{WireName: "status"},
-	"Suspended":               ubx.FieldSpec{WireName: "suspended"},
-	"UpgradeAvailability":     ubx.FieldSpec{WireName: "upgrade_availability"},
-	"UpgradePreference":       ubx.FieldSpec{WireName: "upgrade_preference"},
-	"UserWhitelistedIpRanges": ubx.FieldSpec{WireName: "user_whitelisted_ip_ranges"},
-	"VirtualNetwork": ubx.FieldSpec{
-		WireName: "virtual_network",
-		Kind:     "object",
-		Fields:   OpenapiAppServiceEnvironmentResource_Properties_VirtualNetworkFields,
-	},
-	"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
-}
+		"ClusterSettings": ubx.FieldSpec{
+			WireName: "cluster_settings",
+			Kind: "list",
+			Fields: OpenapiAppServiceEnvironmentResource_Properties_ClusterSettingsFields,
+		},
+		"CustomDnsSuffixConfiguration": ubx.FieldSpec{
+			WireName: "custom_dns_suffix_configuration",
+			Kind: "object",
+			Fields: OpenapiAppServiceEnvironmentResource_Properties_CustomDnsSuffixConfigurationFields,
+		},
+		"DedicatedHostCount": ubx.FieldSpec{WireName: "dedicated_host_count"},
+		"DnsSuffix": ubx.FieldSpec{WireName: "dns_suffix"},
+		"FrontEndScaleFactor": ubx.FieldSpec{WireName: "front_end_scale_factor"},
+		"HasLinuxWorkers": ubx.FieldSpec{WireName: "has_linux_workers"},
+		"InternalLoadBalancingMode": ubx.FieldSpec{WireName: "internal_load_balancing_mode"},
+		"IpsslAddressCount": ubx.FieldSpec{WireName: "ipssl_address_count"},
+		"MaximumNumberOfMachines": ubx.FieldSpec{WireName: "maximum_number_of_machines"},
+		"MultiRoleCount": ubx.FieldSpec{WireName: "multi_role_count"},
+		"MultiSize": ubx.FieldSpec{WireName: "multi_size"},
+		"NetworkingConfiguration": ubx.FieldSpec{
+			WireName: "networking_configuration",
+			Kind: "object",
+			Fields: OpenapiAppServiceEnvironmentResource_Properties_NetworkingConfigurationFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+		"Suspended": ubx.FieldSpec{WireName: "suspended"},
+		"UpgradeAvailability": ubx.FieldSpec{WireName: "upgrade_availability"},
+		"UpgradePreference": ubx.FieldSpec{WireName: "upgrade_preference"},
+		"UserWhitelistedIpRanges": ubx.FieldSpec{WireName: "user_whitelisted_ip_ranges"},
+		"VirtualNetwork": ubx.FieldSpec{
+			WireName: "virtual_network",
+			Kind: "object",
+			Fields: OpenapiAppServiceEnvironmentResource_Properties_VirtualNetworkFields,
+		},
+		"ZoneRedundant": ubx.FieldSpec{WireName: "zone_redundant"},
+	}
 
 type OpenapiAppServiceEnvironmentResourceConfig struct {
 	// Kind of resource. If the resource is an app, you can refer to https://github.com/Azure/app-service-linux-docs/blob/master/Things_You_Should_Know/kind_property.md#app-service-resource-kind-reference for details supported values for kind.
@@ -227,12 +227,12 @@ type OpenapiAppServiceEnvironmentResourceAttrs struct {
 var OpenapiAppServiceEnvironmentResource = ubx.ResourceBinding{
 	WireType: "azure_web_openapi_app_service_environment_resource",
 	Fields: ubx.FieldMap{
-		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiAppServiceEnvironmentResource_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiAppServiceEnvironmentResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

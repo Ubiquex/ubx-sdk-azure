@@ -41,22 +41,22 @@ type Client_SystemData struct {
 }
 
 var Client_Properties_ClientCertificateAuthenticationFields = ubx.FieldMap{
-	"AllowedThumbprints": ubx.FieldSpec{WireName: "allowed_thumbprints"},
-	"ValidationScheme":   ubx.FieldSpec{WireName: "validation_scheme"},
-}
+		"AllowedThumbprints": ubx.FieldSpec{WireName: "allowed_thumbprints"},
+		"ValidationScheme": ubx.FieldSpec{WireName: "validation_scheme"},
+	}
 
 var Client_PropertiesFields = ubx.FieldMap{
-	"Attributes":         ubx.FieldSpec{WireName: "attributes"},
-	"AuthenticationName": ubx.FieldSpec{WireName: "authentication_name"},
-	"ClientCertificateAuthentication": ubx.FieldSpec{
-		WireName: "client_certificate_authentication",
-		Kind:     "object",
-		Fields:   Client_Properties_ClientCertificateAuthenticationFields,
-	},
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"State":             ubx.FieldSpec{WireName: "state"},
-}
+		"Attributes": ubx.FieldSpec{WireName: "attributes"},
+		"AuthenticationName": ubx.FieldSpec{WireName: "authentication_name"},
+		"ClientCertificateAuthentication": ubx.FieldSpec{
+			WireName: "client_certificate_authentication",
+			Kind: "object",
+			Fields: Client_Properties_ClientCertificateAuthenticationFields,
+		},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"State": ubx.FieldSpec{WireName: "state"},
+	}
 
 type ClientConfig struct {
 	// The properties of client.
@@ -81,8 +81,8 @@ var Client = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   Client_PropertiesFields,
+			Kind: "object",
+			Fields: Client_PropertiesFields,
 		},
 	},
 }

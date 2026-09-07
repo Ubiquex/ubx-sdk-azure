@@ -31,5 +31,6 @@ type OpenapiSitePhpErrorLogFlagAttrs struct {
 
 var OpenapiSitePhpErrorLogFlag = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_site_php_error_log_flag",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

@@ -26,22 +26,22 @@ type OpenapiConnectionType_Properties struct {
 }
 
 var OpenapiConnectionType_Properties_FieldDefinitionsFields = ubx.FieldMap{
-	"IsEncrypted": ubx.FieldSpec{WireName: "is_encrypted"},
-	"IsOptional":  ubx.FieldSpec{WireName: "is_optional"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-}
+		"IsEncrypted": ubx.FieldSpec{WireName: "is_encrypted"},
+		"IsOptional": ubx.FieldSpec{WireName: "is_optional"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiConnectionType_PropertiesFields = ubx.FieldMap{
-	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-	"Description":  ubx.FieldSpec{WireName: "description"},
-	"FieldDefinitions": ubx.FieldSpec{
-		WireName: "field_definitions",
-		Kind:     "map",
-		Fields:   OpenapiConnectionType_Properties_FieldDefinitionsFields,
-	},
-	"IsGlobal":         ubx.FieldSpec{WireName: "is_global"},
-	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-}
+		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"FieldDefinitions": ubx.FieldSpec{
+			WireName: "field_definitions",
+			Kind: "map",
+			Fields: OpenapiConnectionType_Properties_FieldDefinitionsFields,
+		},
+		"IsGlobal": ubx.FieldSpec{WireName: "is_global"},
+		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	}
 
 type OpenapiConnectionTypeConfig struct {
 	// Gets or sets the name of the connection type.
@@ -63,8 +63,8 @@ var OpenapiConnectionType = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiConnectionType_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiConnectionType_PropertiesFields,
 		},
 	},
 }

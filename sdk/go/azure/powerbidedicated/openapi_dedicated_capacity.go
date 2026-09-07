@@ -20,15 +20,15 @@ type OpenapiDedicatedCapacity_Sku struct {
 }
 
 var OpenapiDedicatedCapacity_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"State":             ubx.FieldSpec{WireName: "state"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"State": ubx.FieldSpec{WireName: "state"},
+	}
 
 var OpenapiDedicatedCapacity_SkuFields = ubx.FieldMap{
-	"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Tier":     ubx.FieldSpec{WireName: "tier"},
-}
+		"Capacity": ubx.FieldSpec{WireName: "capacity"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 type OpenapiDedicatedCapacityConfig struct {
 	// The geo-location where the resource lives
@@ -58,13 +58,13 @@ var OpenapiDedicatedCapacity = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiDedicatedCapacity_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiDedicatedCapacity_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   OpenapiDedicatedCapacity_SkuFields,
+			Kind: "object",
+			Fields: OpenapiDedicatedCapacity_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -66,71 +66,71 @@ type OpenapiExperiment_Properties struct {
 }
 
 var OpenapiExperiment_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var OpenapiExperiment_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   OpenapiExperiment_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: OpenapiExperiment_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var OpenapiExperiment_Properties_Selectors_FilterFields = ubx.FieldMap{
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiExperiment_Properties_SelectorsFields = ubx.FieldMap{
-	"Filter": ubx.FieldSpec{
-		WireName: "filter",
-		Kind:     "object",
-		Fields:   OpenapiExperiment_Properties_Selectors_FilterFields,
-	},
-	"Id":   ubx.FieldSpec{WireName: "id"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Filter": ubx.FieldSpec{
+			WireName: "filter",
+			Kind: "object",
+			Fields: OpenapiExperiment_Properties_Selectors_FilterFields,
+		},
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiExperiment_Properties_Steps_Branches_ActionsFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiExperiment_Properties_Steps_BranchesFields = ubx.FieldMap{
-	"Actions": ubx.FieldSpec{
-		WireName: "actions",
-		Kind:     "list",
-		Fields:   OpenapiExperiment_Properties_Steps_Branches_ActionsFields,
-	},
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Actions": ubx.FieldSpec{
+			WireName: "actions",
+			Kind: "list",
+			Fields: OpenapiExperiment_Properties_Steps_Branches_ActionsFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiExperiment_Properties_StepsFields = ubx.FieldMap{
-	"Branches": ubx.FieldSpec{
-		WireName: "branches",
-		Kind:     "list",
-		Fields:   OpenapiExperiment_Properties_Steps_BranchesFields,
-	},
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Branches": ubx.FieldSpec{
+			WireName: "branches",
+			Kind: "list",
+			Fields: OpenapiExperiment_Properties_Steps_BranchesFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiExperiment_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Selectors": ubx.FieldSpec{
-		WireName: "selectors",
-		Kind:     "list",
-		Fields:   OpenapiExperiment_Properties_SelectorsFields,
-	},
-	"Steps": ubx.FieldSpec{
-		WireName: "steps",
-		Kind:     "list",
-		Fields:   OpenapiExperiment_Properties_StepsFields,
-	},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Selectors": ubx.FieldSpec{
+			WireName: "selectors",
+			Kind: "list",
+			Fields: OpenapiExperiment_Properties_SelectorsFields,
+		},
+		"Steps": ubx.FieldSpec{
+			WireName: "steps",
+			Kind: "list",
+			Fields: OpenapiExperiment_Properties_StepsFields,
+		},
+	}
 
 type OpenapiExperimentConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -159,14 +159,14 @@ var OpenapiExperiment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   OpenapiExperiment_IdentityFields,
+			Kind: "object",
+			Fields: OpenapiExperiment_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiExperiment_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiExperiment_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

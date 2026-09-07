@@ -39,38 +39,38 @@ type RaiPolicy_Properties struct {
 }
 
 var RaiPolicy_Properties_ContentFiltersFields = ubx.FieldMap{
-	"Action":            ubx.FieldSpec{WireName: "action"},
-	"Blocking":          ubx.FieldSpec{WireName: "blocking"},
-	"Enabled":           ubx.FieldSpec{WireName: "enabled"},
-	"Name":              ubx.FieldSpec{WireName: "name"},
-	"SeverityThreshold": ubx.FieldSpec{WireName: "severity_threshold"},
-	"Source":            ubx.FieldSpec{WireName: "source"},
-}
+		"Action": ubx.FieldSpec{WireName: "action"},
+		"Blocking": ubx.FieldSpec{WireName: "blocking"},
+		"Enabled": ubx.FieldSpec{WireName: "enabled"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"SeverityThreshold": ubx.FieldSpec{WireName: "severity_threshold"},
+		"Source": ubx.FieldSpec{WireName: "source"},
+	}
 
 var RaiPolicy_Properties_CustomBlocklistsFields = ubx.FieldMap{
-	"Source": ubx.FieldSpec{WireName: "source"},
-}
+		"Source": ubx.FieldSpec{WireName: "source"},
+	}
 
 var RaiPolicy_PropertiesFields = ubx.FieldMap{
-	"BasePolicyName": ubx.FieldSpec{WireName: "base_policy_name"},
-	"ContentFilters": ubx.FieldSpec{
-		WireName: "content_filters",
-		Kind:     "list",
-		Fields:   RaiPolicy_Properties_ContentFiltersFields,
-	},
-	"CustomBlocklists": ubx.FieldSpec{
-		WireName: "custom_blocklists",
-		Kind:     "list",
-		Fields:   RaiPolicy_Properties_CustomBlocklistsFields,
-	},
-	"Mode": ubx.FieldSpec{WireName: "mode"},
-	"SafetyProviders": ubx.FieldSpec{
-		WireName: "safety_providers",
-		Kind:     "list",
-		Fields:   RaiPolicy_Properties_CustomBlocklistsFields,
-	},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"BasePolicyName": ubx.FieldSpec{WireName: "base_policy_name"},
+		"ContentFilters": ubx.FieldSpec{
+			WireName: "content_filters",
+			Kind: "list",
+			Fields: RaiPolicy_Properties_ContentFiltersFields,
+		},
+		"CustomBlocklists": ubx.FieldSpec{
+			WireName: "custom_blocklists",
+			Kind: "list",
+			Fields: RaiPolicy_Properties_CustomBlocklistsFields,
+		},
+		"Mode": ubx.FieldSpec{WireName: "mode"},
+		"SafetyProviders": ubx.FieldSpec{
+			WireName: "safety_providers",
+			Kind: "list",
+			Fields: RaiPolicy_Properties_CustomBlocklistsFields,
+		},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 type RaiPolicyConfig struct {
 	// Azure OpenAI Content Filters properties.
@@ -93,8 +93,8 @@ var RaiPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   RaiPolicy_PropertiesFields,
+			Kind: "object",
+			Fields: RaiPolicy_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

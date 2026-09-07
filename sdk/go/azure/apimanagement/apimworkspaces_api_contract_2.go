@@ -53,41 +53,41 @@ type ApimworkspacesApiContract2_Properties struct {
 }
 
 var ApimworkspacesApiContract2_Properties_ApiVersionSetFields = ubx.FieldMap{
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"Id":                ubx.FieldSpec{WireName: "id"},
-	"Name":              ubx.FieldSpec{WireName: "name"},
-	"VersionHeaderName": ubx.FieldSpec{WireName: "version_header_name"},
-	"VersionQueryName":  ubx.FieldSpec{WireName: "version_query_name"},
-	"VersioningScheme":  ubx.FieldSpec{WireName: "versioning_scheme"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"VersionHeaderName": ubx.FieldSpec{WireName: "version_header_name"},
+		"VersionQueryName": ubx.FieldSpec{WireName: "version_query_name"},
+		"VersioningScheme": ubx.FieldSpec{WireName: "versioning_scheme"},
+	}
 
 var ApimworkspacesApiContract2_Properties_WsdlSelectorFields = ubx.FieldMap{
-	"WsdlEndpointName": ubx.FieldSpec{WireName: "wsdl_endpoint_name"},
-	"WsdlServiceName":  ubx.FieldSpec{WireName: "wsdl_service_name"},
-}
+		"WsdlEndpointName": ubx.FieldSpec{WireName: "wsdl_endpoint_name"},
+		"WsdlServiceName": ubx.FieldSpec{WireName: "wsdl_service_name"},
+	}
 
 var ApimworkspacesApiContract2_PropertiesFields = ubx.FieldMap{
-	"ApiType": ubx.FieldSpec{WireName: "api_type"},
-	"ApiVersionSet": ubx.FieldSpec{
-		WireName: "api_version_set",
-		Kind:     "object",
-		Fields:   ApimworkspacesApiContract2_Properties_ApiVersionSetFields,
-	},
-	"DisplayName":                      ubx.FieldSpec{WireName: "display_name"},
-	"Format":                           ubx.FieldSpec{WireName: "format"},
-	"Path":                             ubx.FieldSpec{WireName: "path"},
-	"Protocols":                        ubx.FieldSpec{WireName: "protocols"},
-	"ProvisioningState":                ubx.FieldSpec{WireName: "provisioning_state"},
-	"ServiceUrl":                       ubx.FieldSpec{WireName: "service_url"},
-	"SourceApiId":                      ubx.FieldSpec{WireName: "source_api_id"},
-	"TranslateRequiredQueryParameters": ubx.FieldSpec{WireName: "translate_required_query_parameters"},
-	"Value":                            ubx.FieldSpec{WireName: "value"},
-	"WsdlSelector": ubx.FieldSpec{
-		WireName: "wsdl_selector",
-		Kind:     "object",
-		Fields:   ApimworkspacesApiContract2_Properties_WsdlSelectorFields,
-	},
-}
+		"ApiType": ubx.FieldSpec{WireName: "api_type"},
+		"ApiVersionSet": ubx.FieldSpec{
+			WireName: "api_version_set",
+			Kind: "object",
+			Fields: ApimworkspacesApiContract2_Properties_ApiVersionSetFields,
+		},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"Format": ubx.FieldSpec{WireName: "format"},
+		"Path": ubx.FieldSpec{WireName: "path"},
+		"Protocols": ubx.FieldSpec{WireName: "protocols"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ServiceUrl": ubx.FieldSpec{WireName: "service_url"},
+		"SourceApiId": ubx.FieldSpec{WireName: "source_api_id"},
+		"TranslateRequiredQueryParameters": ubx.FieldSpec{WireName: "translate_required_query_parameters"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+		"WsdlSelector": ubx.FieldSpec{
+			WireName: "wsdl_selector",
+			Kind: "object",
+			Fields: ApimworkspacesApiContract2_Properties_WsdlSelectorFields,
+		},
+	}
 
 type ApimworkspacesApiContract2Config struct {
 	// API Create or Update Properties.
@@ -104,8 +104,8 @@ var ApimworkspacesApiContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ApimworkspacesApiContract2_PropertiesFields,
+			Kind: "object",
+			Fields: ApimworkspacesApiContract2_PropertiesFields,
 		},
 	},
 }

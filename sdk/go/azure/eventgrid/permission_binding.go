@@ -32,12 +32,12 @@ type PermissionBinding_SystemData struct {
 }
 
 var PermissionBinding_PropertiesFields = ubx.FieldMap{
-	"ClientGroupName":   ubx.FieldSpec{WireName: "client_group_name"},
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"Permission":        ubx.FieldSpec{WireName: "permission"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"TopicSpaceName":    ubx.FieldSpec{WireName: "topic_space_name"},
-}
+		"ClientGroupName": ubx.FieldSpec{WireName: "client_group_name"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Permission": ubx.FieldSpec{WireName: "permission"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"TopicSpaceName": ubx.FieldSpec{WireName: "topic_space_name"},
+	}
 
 type PermissionBindingConfig struct {
 	// The properties of permission binding.
@@ -62,8 +62,8 @@ var PermissionBinding = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   PermissionBinding_PropertiesFields,
+			Kind: "object",
+			Fields: PermissionBinding_PropertiesFields,
 		},
 	},
 }

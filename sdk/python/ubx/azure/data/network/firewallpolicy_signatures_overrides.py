@@ -7,12 +7,9 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class FirewallpolicySignaturesOverrides_Value_Properties:
+class FirewallpolicySignaturesOverrides_Properties:
+    # Dictionary of <string>
     signatures: Any = None
-
-@dataclasses.dataclass
-class FirewallpolicySignaturesOverrides_Value:
-    properties: Any = None
 
 @dataclasses.dataclass
 class FirewallpolicySignaturesOverridesConfig:
@@ -21,8 +18,14 @@ class FirewallpolicySignaturesOverridesConfig:
 @dataclasses.dataclass
 class FirewallpolicySignaturesOverridesAttrs:
     firewall_policy_name: Any = None
-    # Describes a list consisting exactly one item describing the policy's signature override status
-    value: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource name.
+    name: Any = None
+    # Will contain the properties of the resource (the actual signature overrides)
+    properties: Any = None
+    # Resource type.
+    type: Any = None
 
 FirewallpolicySignaturesOverrides = ubx.DataSourceBinding(
     wire_type="azure_network_firewallpolicy_signatures_overrides",

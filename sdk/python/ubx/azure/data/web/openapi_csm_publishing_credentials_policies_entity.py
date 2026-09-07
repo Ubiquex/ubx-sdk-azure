@@ -7,13 +7,9 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiCsmPublishingCredentialsPoliciesEntity_Value_Properties:
+class OpenapiCsmPublishingCredentialsPoliciesEntity_Properties:
+    # <code>true</code> to allow access to a publishing method; otherwise, <code>false</code>.
     allow: Any = None
-
-@dataclasses.dataclass
-class OpenapiCsmPublishingCredentialsPoliciesEntity_Value:
-    kind: Any = None
-    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiCsmPublishingCredentialsPoliciesEntityConfig:
@@ -21,11 +17,11 @@ class OpenapiCsmPublishingCredentialsPoliciesEntityConfig:
 
 @dataclasses.dataclass
 class OpenapiCsmPublishingCredentialsPoliciesEntityAttrs:
+    # Kind of resource.
+    kind: Any = None
     name: Any = None
-    # The link to the next page of items
-    next_link: Any = None
-    # The CsmPublishingCredentialsPoliciesEntity items on this page
-    value: Any = None
+    # CsmPublishingCredentialsPoliciesEntity resource specific properties
+    properties: Any = None
 
 OpenapiCsmPublishingCredentialsPoliciesEntity = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_csm_publishing_credentials_policies_entity",

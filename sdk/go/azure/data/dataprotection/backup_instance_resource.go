@@ -3,104 +3,143 @@ package dataprotection
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type BackupInstanceResource_Value_Properties_DataSourceInfo_ResourceProperties struct {
+type BackupInstanceResource_Properties_DataSourceInfo_ResourceProperties struct {
+	// Type of the specific object - used for deserializing
 	ObjectType any
 }
 
-type BackupInstanceResource_Value_Properties_DataSourceInfo struct {
-	DatasourceType     any
-	ObjectType         any
-	ResourceId         any
-	ResourceLocation   any
-	ResourceName       any
+type BackupInstanceResource_Properties_DataSourceInfo struct {
+	// DatasourceType of the resource.
+	DatasourceType any
+	// Type of Datasource object, used to initialize the right inherited type
+	ObjectType any
+	// Full ARM ID of the resource. For azure resources, this is ARM ID. For non azure resources, this will be the ID created by backup service via Fabric/Vault.
+	ResourceId any
+	// Location of datasource.
+	ResourceLocation any
+	// Unique identifier of the resource in the context of parent.
+	ResourceName any
+	// Properties which are specific to datasource/datasourceSets
 	ResourceProperties any
-	ResourceType       any
-	ResourceUri        any
+	// Resource Type of Datasource.
+	ResourceType any
+	// Uri of the resource.
+	ResourceUri any
 }
 
-type BackupInstanceResource_Value_Properties_IdentityDetails struct {
-	UseSystemAssignedIdentity  any
+type BackupInstanceResource_Properties_IdentityDetails struct {
+	// Specifies if the BI is protected by System Identity.
+	UseSystemAssignedIdentity any
+	// ARM URL for User Assigned Identity.
 	UserAssignedIdentityArmUrl any
 }
 
-type BackupInstanceResource_Value_Properties_PolicyInfo_PolicyParameters_DataStoreParametersList struct {
+type BackupInstanceResource_Properties_PolicyInfo_PolicyParameters_DataStoreParametersList struct {
 	DataStoreType any
-	ObjectType    any
+	ObjectType any
 }
 
-type BackupInstanceResource_Value_Properties_PolicyInfo_PolicyParameters struct {
+type BackupInstanceResource_Properties_PolicyInfo_PolicyParameters struct {
+	// Gets or sets the Backup Data Source Parameters
 	BackupDatasourceParametersList any
-	DataStoreParametersList        any
+	// Gets or sets the DataStore Parameters
+	DataStoreParametersList any
 }
 
-type BackupInstanceResource_Value_Properties_PolicyInfo struct {
-	PolicyId         any
+type BackupInstanceResource_Properties_PolicyInfo struct {
+	PolicyId any
+	// Parameters in Policy
 	PolicyParameters any
-	PolicyVersion    any
+	PolicyVersion any
 }
 
-type BackupInstanceResource_Value_Properties_ProtectionErrorDetails_Details struct {
+type BackupInstanceResource_Properties_ProtectionErrorDetails_Details struct {
 }
 
-type BackupInstanceResource_Value_Properties_ProtectionErrorDetails_InnerError struct {
-	AdditionalInfo     any
-	Code               any
+type BackupInstanceResource_Properties_ProtectionErrorDetails_InnerError struct {
+	// Any Key value pairs that can be provided to the client for additional verbose information.
+	AdditionalInfo any
+	// Unique code for this error
+	Code any
+	// Inner Error
 	EmbeddedInnerError any
 }
 
-type BackupInstanceResource_Value_Properties_ProtectionErrorDetails struct {
-	Code              any
-	Details           any
-	InnerError        any
-	IsRetryable       any
-	IsUserError       any
-	Message           any
-	Properties        any
-	RecommendedAction any
-	Target            any
-}
-
-type BackupInstanceResource_Value_Properties_ProtectionStatus struct {
-	ErrorDetails any
-	Status       any
-}
-
-type BackupInstanceResource_Value_Properties struct {
-	CurrentProtectionState         any
-	DataSourceInfo                 any
-	DataSourceSetInfo              any
-	DatasourceAuthCredentials      any
-	FriendlyName                   any
-	IdentityDetails                any
-	ObjectType                     any
-	PolicyInfo                     any
-	ProtectionErrorDetails         any
-	ProtectionStatus               any
-	ProvisioningState              any
-	ResourceGuardOperationRequests any
-	ValidationType                 any
-}
-
-type BackupInstanceResource_Value struct {
+type BackupInstanceResource_Properties_ProtectionErrorDetails struct {
+	// Unique code for this error
+	Code any
+	// Additional related Errors
+	Details any
+	// Inner Error
+	InnerError any
+	// Whether the operation will be retryable or not
+	IsRetryable any
+	// Whether the operation is due to a user error or service error
+	IsUserError any
+	Message any
+	// Any key value pairs that can be injected inside error object
 	Properties any
-	Tags       any
+	// RecommendedAction � localized.
+	RecommendedAction any
+	// Target of the error.
+	Target any
+}
+
+type BackupInstanceResource_Properties_ProtectionStatus struct {
+	// Error object used by layers that have access to localized content, and propagate that to user
+	ErrorDetails any
+	// Specifies the protection status of the resource
+	Status any
+}
+
+type BackupInstanceResource_Properties struct {
+	// Specifies the current protection state of the resource
+	CurrentProtectionState any
+	// Datasource to be backed up
+	DataSourceInfo any
+	// DatasourceSet details of datasource to be backed up
+	DataSourceSetInfo any
+	// Base class for different types of authentication credentials.
+	DatasourceAuthCredentials any
+	// Gets or sets the Backup Instance friendly name.
+	FriendlyName any
+	IdentityDetails any
+	ObjectType any
+	// Policy Info in backupInstance
+	PolicyInfo any
+	// Error object used by layers that have access to localized content, and propagate that to user
+	ProtectionErrorDetails any
+	// Protection status details
+	ProtectionStatus any
+	// Specifies the provisioning state of the resource i.e. provisioning/updating/Succeeded/Failed
+	ProvisioningState any
+	// ResourceGuardOperationRequests on which LAC check will be performed
+	ResourceGuardOperationRequests any
+	// Specifies the type of validation. In case of DeepValidation, all validations from /validateForBackup API will run again.
+	ValidationType any
 }
 
 type BackupInstanceResourceConfig struct {
+	BackupInstanceName any
+	OperationId any
 	VaultName any
 }
 
 type BackupInstanceResourceAttrs struct {
-	// The uri to fetch the next page of resources. Call ListNext() fetches next page of resources.
-	NextLink any
-	// List of resources.
-	Value     any
+	BackupInstanceName any
+	OperationId any
+	// Backup Instance
+	Properties any
+	// Proxy Resource tags.
+	Tags any
 	VaultName any
 }
 
 var BackupInstanceResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_backup_instance_resource",
 	Fields: ubx.FieldMap{
+		"BackupInstanceName": ubx.FieldSpec{WireName: "backup_instance_name"},
+		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
 		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

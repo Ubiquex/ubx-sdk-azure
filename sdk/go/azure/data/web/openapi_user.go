@@ -28,5 +28,6 @@ type OpenapiUserAttrs struct {
 
 var OpenapiUser = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_user",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

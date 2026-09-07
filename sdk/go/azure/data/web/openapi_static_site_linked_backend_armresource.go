@@ -3,36 +3,35 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiStaticSiteLinkedBackendArmresource_Value_Properties struct {
+type OpenapiStaticSiteLinkedBackendArmresource_Properties struct {
+	// The resource id of the backend linked to the static site
 	BackendResourceId any
-	CreatedOn         any
+	// The date and time on which the backend was linked to the static site.
+	CreatedOn any
+	// The provisioning state of the linking process.
 	ProvisioningState any
-	Region            any
-}
-
-type OpenapiStaticSiteLinkedBackendArmresource_Value struct {
-	Kind       any
-	Properties any
+	// The region of the backend linked to the static site
+	Region any
 }
 
 type OpenapiStaticSiteLinkedBackendArmresourceConfig struct {
-	EnvironmentName any
-	Name            any
+	LinkedBackendName any
+	Name any
 }
 
 type OpenapiStaticSiteLinkedBackendArmresourceAttrs struct {
-	EnvironmentName any
-	Name            any
-	// The link to the next page of items
-	NextLink any
-	// The StaticSiteLinkedBackendARMResource items on this page
-	Value any
+	// Kind of resource.
+	Kind any
+	LinkedBackendName any
+	Name any
+	// StaticSiteLinkedBackendARMResource resource specific properties
+	Properties any
 }
 
 var OpenapiStaticSiteLinkedBackendArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_linked_backend_armresource",
 	Fields: ubx.FieldMap{
-		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
-		"Name":            ubx.FieldSpec{WireName: "name"},
+		"LinkedBackendName": ubx.FieldSpec{WireName: "linked_backend_name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

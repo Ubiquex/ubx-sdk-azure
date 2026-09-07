@@ -3,13 +3,11 @@ package datadog
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type CreateResourceSupportedResponse_Value_Properties struct {
+type CreateResourceSupportedResponse_Properties struct {
+	// Indicates if selected subscription supports Datadog resource creation, if not it is already being monitored for the selected organization via multi subscription feature.
 	CreationSupported any
-	Name              any
-}
-
-type CreateResourceSupportedResponse_Value struct {
-	Properties any
+	// The ARM id of the subscription.
+	Name any
 }
 
 type CreateResourceSupportedResponseConfig struct {
@@ -18,10 +16,8 @@ type CreateResourceSupportedResponseConfig struct {
 
 type CreateResourceSupportedResponseAttrs struct {
 	DatadogOrganizationId any
-	// The link to the next page of items
-	NextLink any
-	// The CreateResourceSupportedResponse items on this page
-	Value any
+	// Datadog resource can be created or not properties.
+	Properties any
 }
 
 var CreateResourceSupportedResponse = ubx.DataSourceBinding{

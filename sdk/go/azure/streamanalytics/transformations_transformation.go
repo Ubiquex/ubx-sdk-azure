@@ -15,11 +15,11 @@ type TransformationsTransformation_Properties struct {
 }
 
 var TransformationsTransformation_PropertiesFields = ubx.FieldMap{
-	"Etag":                ubx.FieldSpec{WireName: "etag"},
-	"Query":               ubx.FieldSpec{WireName: "query"},
-	"StreamingUnits":      ubx.FieldSpec{WireName: "streaming_units"},
-	"ValidStreamingUnits": ubx.FieldSpec{WireName: "valid_streaming_units"},
-}
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Query": ubx.FieldSpec{WireName: "query"},
+		"StreamingUnits": ubx.FieldSpec{WireName: "streaming_units"},
+		"ValidStreamingUnits": ubx.FieldSpec{WireName: "valid_streaming_units"},
+	}
 
 type TransformationsTransformationConfig struct {
 	// Resource name
@@ -45,8 +45,8 @@ var TransformationsTransformation = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   TransformationsTransformation_PropertiesFields,
+			Kind: "object",
+			Fields: TransformationsTransformation_PropertiesFields,
 		},
 	},
 }

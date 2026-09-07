@@ -3,41 +3,48 @@ package devtestlabs
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DtlArtifact_Value_Properties struct {
-	CreatedDate  any
-	Description  any
-	FilePath     any
-	Icon         any
-	Parameters   any
-	Publisher    any
+type DtlArtifact_Properties struct {
+	// The artifact's creation date.
+	CreatedDate any
+	// The artifact's description.
+	Description any
+	// The file path to the artifact.
+	FilePath any
+	// The URI to the artifact icon.
+	Icon any
+	// The artifact's parameters.
+	Parameters any
+	// The artifact's publisher.
+	Publisher any
+	// The artifact's target OS.
 	TargetOsType any
-	Title        any
-}
-
-type DtlArtifact_Value struct {
-	Location   any
-	Properties any
-	Tags       any
+	// The artifact's title.
+	Title any
 }
 
 type DtlArtifactConfig struct {
 	ArtifactSourceName any
-	LabName            any
+	LabName any
+	Name any
 }
 
 type DtlArtifactAttrs struct {
 	ArtifactSourceName any
-	LabName            any
-	// The link to the next page of items
-	NextLink any
-	// The Artifact items on this page
-	Value any
+	LabName any
+	// The geo-location where the resource lives
+	Location any
+	Name any
+	// Properties of an artifact.
+	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var DtlArtifact = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_artifact",
 	Fields: ubx.FieldMap{
 		"ArtifactSourceName": ubx.FieldSpec{WireName: "artifact_source_name"},
-		"LabName":            ubx.FieldSpec{WireName: "lab_name"},
+		"LabName": ubx.FieldSpec{WireName: "lab_name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

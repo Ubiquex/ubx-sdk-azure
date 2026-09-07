@@ -7,25 +7,44 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint:
+class OpenapiPrivateEndpointConnection_Properties_PrivateEndpoint:
+    # The ARM identifier for private endpoint.
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState:
+class OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState:
+    # A message indicating if changes on the service provider require any updates on the consumer.
     actions_required: Any = None
+    # The reason for approval/rejection of the connection.
     description: Any = None
+    # The private endpoint connection status.
     status: Any = None
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Value_Properties:
+class OpenapiPrivateEndpointConnection_Properties:
+    # The group ids for the private endpoint resource.
     group_ids: Any = None
+    # The private endpoint resource.
     private_endpoint: Any = None
+    # A collection of information about the state of the connection between service consumer and provider.
     private_link_service_connection_state: Any = None
+    # The current provisioning state.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class OpenapiPrivateEndpointConnection_Value:
-    properties: Any = None
+class OpenapiPrivateEndpointConnection_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
 
 @dataclasses.dataclass
 class OpenapiPrivateEndpointConnectionConfig:
@@ -33,11 +52,17 @@ class OpenapiPrivateEndpointConnectionConfig:
 
 @dataclasses.dataclass
 class OpenapiPrivateEndpointConnectionAttrs:
-    # The link to the next page of items
-    next_link: Any = None
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
+    # Properties of the private endpoint connection.
+    properties: Any = None
     server_name: Any = None
-    # The PrivateEndpointConnection items on this page
-    value: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 OpenapiPrivateEndpointConnection = ubx.DataSourceBinding(
     wire_type="azure_postgresql_openapi_private_endpoint_connection",

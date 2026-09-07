@@ -25,27 +25,27 @@ type RaiToolLabel_Properties struct {
 }
 
 var RaiToolLabel_Properties_AccountScopeFields = ubx.FieldMap{
-	"LabelValues": ubx.FieldSpec{WireName: "label_values"},
-}
+		"LabelValues": ubx.FieldSpec{WireName: "label_values"},
+	}
 
 var RaiToolLabel_Properties_ProjectScopesFields = ubx.FieldMap{
-	"LabelValues": ubx.FieldSpec{WireName: "label_values"},
-	"Project":     ubx.FieldSpec{WireName: "project"},
-}
+		"LabelValues": ubx.FieldSpec{WireName: "label_values"},
+		"Project": ubx.FieldSpec{WireName: "project"},
+	}
 
 var RaiToolLabel_PropertiesFields = ubx.FieldMap{
-	"AccountScope": ubx.FieldSpec{
-		WireName: "account_scope",
-		Kind:     "object",
-		Fields:   RaiToolLabel_Properties_AccountScopeFields,
-	},
-	"ProjectScopes": ubx.FieldSpec{
-		WireName: "project_scopes",
-		Kind:     "list",
-		Fields:   RaiToolLabel_Properties_ProjectScopesFields,
-	},
-	"ToolConnectionName": ubx.FieldSpec{WireName: "tool_connection_name"},
-}
+		"AccountScope": ubx.FieldSpec{
+			WireName: "account_scope",
+			Kind: "object",
+			Fields: RaiToolLabel_Properties_AccountScopeFields,
+		},
+		"ProjectScopes": ubx.FieldSpec{
+			WireName: "project_scopes",
+			Kind: "list",
+			Fields: RaiToolLabel_Properties_ProjectScopesFields,
+		},
+		"ToolConnectionName": ubx.FieldSpec{WireName: "tool_connection_name"},
+	}
 
 type RaiToolLabelConfig struct {
 	// RAI Tool Label properties.
@@ -68,8 +68,8 @@ var RaiToolLabel = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   RaiToolLabel_PropertiesFields,
+			Kind: "object",
+			Fields: RaiToolLabel_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

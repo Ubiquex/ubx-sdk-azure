@@ -32,12 +32,12 @@ type CaCertificate_SystemData struct {
 }
 
 var CaCertificate_PropertiesFields = ubx.FieldMap{
-	"Description":        ubx.FieldSpec{WireName: "description"},
-	"EncodedCertificate": ubx.FieldSpec{WireName: "encoded_certificate"},
-	"ExpiryTimeInUtc":    ubx.FieldSpec{WireName: "expiry_time_in_utc"},
-	"IssueTimeInUtc":     ubx.FieldSpec{WireName: "issue_time_in_utc"},
-	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"EncodedCertificate": ubx.FieldSpec{WireName: "encoded_certificate"},
+		"ExpiryTimeInUtc": ubx.FieldSpec{WireName: "expiry_time_in_utc"},
+		"IssueTimeInUtc": ubx.FieldSpec{WireName: "issue_time_in_utc"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type CaCertificateConfig struct {
 	// The properties of CA certificate.
@@ -62,8 +62,8 @@ var CaCertificate = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   CaCertificate_PropertiesFields,
+			Kind: "object",
+			Fields: CaCertificate_PropertiesFields,
 		},
 	},
 }

@@ -7,33 +7,39 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class BmsProtectionPolicyResource_Value_Properties:
+class BmsProtectionPolicyResource_Properties:
+    # This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.
     backup_management_type: Any = None
+    # Number of items associated with this policy.
     protected_items_count: Any = None
+    # ResourceGuard Operation Requests
     resource_guard_operation_requests: Any = None
 
 @dataclasses.dataclass
-class BmsProtectionPolicyResource_Value:
-    e_tag: Any = None
-    location: Any = None
-    properties: Any = None
-    tags: Any = None
-
-@dataclasses.dataclass
 class BmsProtectionPolicyResourceConfig:
+    operation_id: Any = None
+    policy_name: Any = None
     vault_name: Any = None
 
 @dataclasses.dataclass
 class BmsProtectionPolicyResourceAttrs:
-    # The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
-    next_link: Any = None
-    # List of resources.
-    value: Any = None
+    # Optional ETag.
+    e_tag: Any = None
+    # Represents an Azure geography region where supported resource providers live.
+    location: Any = None
+    operation_id: Any = None
+    policy_name: Any = None
+    # Base class for backup policy. Workload-specific backup policies are derived from this class.
+    properties: Any = None
+    # Resource tags.
+    tags: Any = None
     vault_name: Any = None
 
 BmsProtectionPolicyResource = ubx.DataSourceBinding(
     wire_type="azure_recoveryservicesbackup_bms_protection_policy_resource",
     fields={
+        "operation_id": ubx.FieldSpec(wire_name="operation_id"),
+        "policy_name": ubx.FieldSpec(wire_name="policy_name"),
         "vault_name": ubx.FieldSpec(wire_name="vault_name"),
     },
 )

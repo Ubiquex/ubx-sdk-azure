@@ -3,107 +3,164 @@ package solutions
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ManagedapplicationsApplication_Value_Identity_UserAssignedIdentities struct {
+type ManagedapplicationsApplication_Identity_UserAssignedIdentities struct {
 	PrincipalId any
-	TenantId    any
+	TenantId any
 }
 
-type ManagedapplicationsApplication_Value_Identity struct {
-	PrincipalId            any
-	TenantId               any
-	Type                   any
+type ManagedapplicationsApplication_Identity struct {
+	// The principal ID of resource identity.
+	PrincipalId any
+	// The tenant ID of resource.
+	TenantId any
+	// The identity type.
+	Type any
+	// The list of user identities associated with the resource. The user identity dictionary key references will be resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
 	UserAssignedIdentities any
 }
 
-type ManagedapplicationsApplication_Value_Plan struct {
-	Name          any
-	Product       any
+type ManagedapplicationsApplication_Plan struct {
+	// The plan name.
+	Name any
+	// The product code.
+	Product any
+	// The promotion code.
 	PromotionCode any
-	Publisher     any
-	Version       any
+	// The publisher ID.
+	Publisher any
+	// The plan's version.
+	Version any
 }
 
-type ManagedapplicationsApplication_Value_Properties_Artifacts struct {
+type ManagedapplicationsApplication_Properties_Artifacts struct {
 	Name any
 	Type any
-	Uri  any
+	Uri any
 }
 
-type ManagedapplicationsApplication_Value_Properties_Authorizations struct {
-	PrincipalId      any
+type ManagedapplicationsApplication_Properties_Authorizations struct {
+	PrincipalId any
 	RoleDefinitionId any
 }
 
-type ManagedapplicationsApplication_Value_Properties_BillingDetails struct {
+type ManagedapplicationsApplication_Properties_BillingDetails struct {
+	// The managed application resource usage Id.
 	ResourceUsageId any
 }
 
-type ManagedapplicationsApplication_Value_Properties_CreatedBy struct {
+type ManagedapplicationsApplication_Properties_CreatedBy struct {
+	// The client application Id.
 	ApplicationId any
-	Oid           any
-	Puid          any
+	// The client Oid.
+	Oid any
+	// The client Puid
+	Puid any
 }
 
-type ManagedapplicationsApplication_Value_Properties_CustomerSupport struct {
+type ManagedapplicationsApplication_Properties_CustomerSupport struct {
+	// The contact name.
 	ContactName any
-	Email       any
-	Phone       any
+	// The contact email.
+	Email any
+	// The contact phone number.
+	Phone any
 }
 
-type ManagedapplicationsApplication_Value_Properties_JitAccessPolicy_JitApprovers struct {
+type ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApprovers struct {
 	DisplayName any
-	Id          any
-	Type        any
+	Id any
+	Type any
 }
 
-type ManagedapplicationsApplication_Value_Properties_JitAccessPolicy struct {
-	JitAccessEnabled         any
-	JitApprovalMode          any
-	JitApprovers             any
+type ManagedapplicationsApplication_Properties_JitAccessPolicy struct {
+	// Whether the JIT access is enabled.
+	JitAccessEnabled any
+	// The Jit approval mode.
+	JitApprovalMode any
+	// The JIT approvers
+	JitApprovers any
+	// The maximum duration JIT access is granted. This is an ISO8601 time period value.
 	MaximumJitAccessDuration any
 }
 
-type ManagedapplicationsApplication_Value_Properties_SupportUrls struct {
+type ManagedapplicationsApplication_Properties_SupportUrls struct {
+	// The government cloud support URL.
 	GovernmentCloud any
-	PublicAzure     any
+	// The public azure support URL.
+	PublicAzure any
 }
 
-type ManagedapplicationsApplication_Value_Properties struct {
+type ManagedapplicationsApplication_Properties struct {
+	// The fully qualified path of managed application definition Id.
 	ApplicationDefinitionId any
-	Artifacts               any
-	Authorizations          any
-	BillingDetails          any
-	CreatedBy               any
-	CustomerSupport         any
-	JitAccessPolicy         any
-	ManagedResourceGroupId  any
-	ManagementMode          any
-	Outputs                 any
-	Parameters              any
-	ProvisioningState       any
-	PublisherTenantId       any
-	SupportUrls             any
-	UpdatedBy               any
+	// The collection of managed application artifacts.
+	Artifacts any
+	// The read-only authorizations property that is retrieved from the application package.
+	Authorizations any
+	// Managed application billing details definition.
+	BillingDetails any
+	// The application client details to track the entity creating/updating the managed app resource.
+	CreatedBy any
+	// The application package contact information.
+	CustomerSupport any
+	// Managed application Jit access policy.
+	JitAccessPolicy any
+	// The managed resource group Id.
+	ManagedResourceGroupId any
+	// The management mode.
+	ManagementMode any
+	// Name and value pairs that define the managed application outputs.
+	Outputs any
+	// Name and value pairs that define the managed application parameters. It can be a JObject or a well formed JSON string.
+	Parameters any
+	// Provisioning status of the managed application.
+	ProvisioningState any
+	// The publisher tenant Id.
+	PublisherTenantId any
+	// The appliance package support URLs.
+	SupportUrls any
+	// The application client details to track the entity creating/updating the managed app resource.
+	UpdatedBy any
 }
 
-type ManagedapplicationsApplication_Value struct {
-	Identity   any
-	Kind       any
-	Plan       any
-	Properties any
+type ManagedapplicationsApplication_Sku struct {
+	// The SKU capacity.
+	Capacity any
+	// The SKU family.
+	Family any
+	// The SKU model.
+	Model any
+	// The SKU name.
+	Name any
+	// The SKU size.
+	Size any
+	// The SKU tier.
+	Tier any
 }
 
 type ManagedapplicationsApplicationConfig struct {
+	ApplicationId any
 }
 
 type ManagedapplicationsApplicationAttrs struct {
-	// The URL to use for getting the next set of results.
-	NextLink any
-	// The array of managed applications.
-	Value any
+	ApplicationId any
+	// Identity for the resource.
+	Identity any
+	// The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog.
+	Kind any
+	// ID of the resource that manages this resource.
+	ManagedBy any
+	// Plan for the managed application.
+	Plan any
+	// The managed application properties.
+	Properties any
+	// SKU for the resource.
+	Sku any
 }
 
 var ManagedapplicationsApplication = ubx.DataSourceBinding{
 	WireType: "azure_solutions_managedapplications_application",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+	},
 }

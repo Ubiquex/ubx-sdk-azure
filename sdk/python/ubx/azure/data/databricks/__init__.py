@@ -4,9 +4,10 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .openapi_access_connector import OpenapiAccessConnector, OpenapiAccessConnectorConfig
+from .openapi_access_connector_list import OpenapiAccessConnectorList, OpenapiAccessConnectorListConfig
 from .openapi_group_id_information import OpenapiGroupIdInformation, OpenapiGroupIdInformationConfig
+from .openapi_group_id_information_list import OpenapiGroupIdInformationList, OpenapiGroupIdInformationListConfig
 from .openapi_outbound_environment_endpoint_collection import OpenapiOutboundEnvironmentEndpointCollection, OpenapiOutboundEnvironmentEndpointCollectionConfig
-from .openapi_private_endpoint_connection import OpenapiPrivateEndpointConnection, OpenapiPrivateEndpointConnectionConfig
-from .openapi_virtual_network_peering import OpenapiVirtualNetworkPeering, OpenapiVirtualNetworkPeeringConfig
-from .openapi_workspace import OpenapiWorkspace, OpenapiWorkspaceConfig
+from .openapi_private_endpoint_connection_list import OpenapiPrivateEndpointConnectionList, OpenapiPrivateEndpointConnectionListConfig
+from .openapi_virtual_network_peering_list import OpenapiVirtualNetworkPeeringList, OpenapiVirtualNetworkPeeringListConfig
+from .openapi_workspace_list import OpenapiWorkspaceList, OpenapiWorkspaceListConfig

@@ -15,11 +15,11 @@ type GrafanaIntegrationFabric_Properties struct {
 }
 
 var GrafanaIntegrationFabric_PropertiesFields = ubx.FieldMap{
-	"DataSourceResourceId": ubx.FieldSpec{WireName: "data_source_resource_id"},
-	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
-	"Scenarios":            ubx.FieldSpec{WireName: "scenarios"},
-	"TargetResourceId":     ubx.FieldSpec{WireName: "target_resource_id"},
-}
+		"DataSourceResourceId": ubx.FieldSpec{WireName: "data_source_resource_id"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Scenarios": ubx.FieldSpec{WireName: "scenarios"},
+		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
+	}
 
 type GrafanaIntegrationFabricConfig struct {
 	// The geo-location where the resource lives
@@ -45,8 +45,8 @@ var GrafanaIntegrationFabric = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   GrafanaIntegrationFabric_PropertiesFields,
+			Kind: "object",
+			Fields: GrafanaIntegrationFabric_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

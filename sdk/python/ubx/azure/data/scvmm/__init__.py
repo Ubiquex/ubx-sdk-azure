@@ -4,12 +4,15 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .availability_set import AvailabilitySet, AvailabilitySetConfig
-from .cloud import Cloud, CloudConfig
+from .availability_set_list import AvailabilitySetList, AvailabilitySetListConfig
+from .cloud_list import CloudList, CloudListConfig
 from .guest_agent import GuestAgent, GuestAgentConfig
-from .inventory_item import InventoryItem, InventoryItemConfig
+from .guest_agent_list import GuestAgentList, GuestAgentListConfig
+from .inventory_item_list import InventoryItemList, InventoryItemListConfig
 from .virtual_machine_instance import VirtualMachineInstance, VirtualMachineInstanceConfig
-from .virtual_machine_template import VirtualMachineTemplate, VirtualMachineTemplateConfig
-from .virtual_network import VirtualNetwork, VirtualNetworkConfig
+from .virtual_machine_instance_list import VirtualMachineInstanceList, VirtualMachineInstanceListConfig
+from .virtual_machine_template_list import VirtualMachineTemplateList, VirtualMachineTemplateListConfig
+from .virtual_network_list import VirtualNetworkList, VirtualNetworkListConfig
 from .vm_instance_hybrid_identity_metadata import VmInstanceHybridIdentityMetadata, VmInstanceHybridIdentityMetadataConfig
-from .vmm_server import VmmServer, VmmServerConfig
+from .vm_instance_hybrid_identity_metadata_list import VmInstanceHybridIdentityMetadataList, VmInstanceHybridIdentityMetadataListConfig
+from .vmm_server_list import VmmServerList, VmmServerListConfig

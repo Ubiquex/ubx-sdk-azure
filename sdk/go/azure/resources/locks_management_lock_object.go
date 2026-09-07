@@ -33,18 +33,18 @@ type LocksManagementLockObject_SystemData struct {
 }
 
 var LocksManagementLockObject_Properties_OwnersFields = ubx.FieldMap{
-	"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
-}
+		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
+	}
 
 var LocksManagementLockObject_PropertiesFields = ubx.FieldMap{
-	"Level": ubx.FieldSpec{WireName: "level"},
-	"Notes": ubx.FieldSpec{WireName: "notes"},
-	"Owners": ubx.FieldSpec{
-		WireName: "owners",
-		Kind:     "list",
-		Fields:   LocksManagementLockObject_Properties_OwnersFields,
-	},
-}
+		"Level": ubx.FieldSpec{WireName: "level"},
+		"Notes": ubx.FieldSpec{WireName: "notes"},
+		"Owners": ubx.FieldSpec{
+			WireName: "owners",
+			Kind: "list",
+			Fields: LocksManagementLockObject_Properties_OwnersFields,
+		},
+	}
 
 type LocksManagementLockObjectConfig struct {
 	// The lock properties.
@@ -69,8 +69,8 @@ var LocksManagementLockObject = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   LocksManagementLockObject_PropertiesFields,
+			Kind: "object",
+			Fields: LocksManagementLockObject_PropertiesFields,
 		},
 	},
 }

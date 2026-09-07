@@ -9,8 +9,8 @@ type VirtualnetworkSwapResource_Properties struct {
 }
 
 var VirtualnetworkSwapResource_PropertiesFields = ubx.FieldMap{
-	"SlotType": ubx.FieldSpec{WireName: "slot_type"},
-}
+		"SlotType": ubx.FieldSpec{WireName: "slot_type"},
+	}
 
 type VirtualnetworkSwapResourceConfig struct {
 	// Swap resource properties
@@ -33,8 +33,8 @@ var VirtualnetworkSwapResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkSwapResource_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkSwapResource_PropertiesFields,
 		},
 	},
 }

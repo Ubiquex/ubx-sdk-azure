@@ -35,40 +35,40 @@ type VirtualwanVpnGatewayNatRule_Properties struct {
 }
 
 var VirtualwanVpnGatewayNatRule_Properties_EgressVpnSiteLinkConnectionsFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var VirtualwanVpnGatewayNatRule_Properties_ExternalMappingsFields = ubx.FieldMap{
-	"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
-	"PortRange":    ubx.FieldSpec{WireName: "port_range"},
-}
+		"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
+		"PortRange": ubx.FieldSpec{WireName: "port_range"},
+	}
 
 var VirtualwanVpnGatewayNatRule_PropertiesFields = ubx.FieldMap{
-	"EgressVpnSiteLinkConnections": ubx.FieldSpec{
-		WireName: "egress_vpn_site_link_connections",
-		Kind:     "list",
-		Fields:   VirtualwanVpnGatewayNatRule_Properties_EgressVpnSiteLinkConnectionsFields,
-	},
-	"ExternalMappings": ubx.FieldSpec{
-		WireName: "external_mappings",
-		Kind:     "list",
-		Fields:   VirtualwanVpnGatewayNatRule_Properties_ExternalMappingsFields,
-	},
-	"IngressVpnSiteLinkConnections": ubx.FieldSpec{
-		WireName: "ingress_vpn_site_link_connections",
-		Kind:     "list",
-		Fields:   VirtualwanVpnGatewayNatRule_Properties_EgressVpnSiteLinkConnectionsFields,
-	},
-	"InternalMappings": ubx.FieldSpec{
-		WireName: "internal_mappings",
-		Kind:     "list",
-		Fields:   VirtualwanVpnGatewayNatRule_Properties_ExternalMappingsFields,
-	},
-	"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
-	"Mode":              ubx.FieldSpec{WireName: "mode"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Type":              ubx.FieldSpec{WireName: "type"},
-}
+		"EgressVpnSiteLinkConnections": ubx.FieldSpec{
+			WireName: "egress_vpn_site_link_connections",
+			Kind: "list",
+			Fields: VirtualwanVpnGatewayNatRule_Properties_EgressVpnSiteLinkConnectionsFields,
+		},
+		"ExternalMappings": ubx.FieldSpec{
+			WireName: "external_mappings",
+			Kind: "list",
+			Fields: VirtualwanVpnGatewayNatRule_Properties_ExternalMappingsFields,
+		},
+		"IngressVpnSiteLinkConnections": ubx.FieldSpec{
+			WireName: "ingress_vpn_site_link_connections",
+			Kind: "list",
+			Fields: VirtualwanVpnGatewayNatRule_Properties_EgressVpnSiteLinkConnectionsFields,
+		},
+		"InternalMappings": ubx.FieldSpec{
+			WireName: "internal_mappings",
+			Kind: "list",
+			Fields: VirtualwanVpnGatewayNatRule_Properties_ExternalMappingsFields,
+		},
+		"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
+		"Mode": ubx.FieldSpec{WireName: "mode"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 type VirtualwanVpnGatewayNatRuleConfig struct {
 	// Name of the resource.
@@ -94,8 +94,8 @@ var VirtualwanVpnGatewayNatRule = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualwanVpnGatewayNatRule_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualwanVpnGatewayNatRule_PropertiesFields,
 		},
 	},
 }

@@ -15,11 +15,11 @@ type PrivatelinksPrivateLinkAssociation_Properties struct {
 }
 
 var PrivatelinksPrivateLinkAssociation_PropertiesFields = ubx.FieldMap{
-	"PrivateLink":         ubx.FieldSpec{WireName: "private_link"},
-	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	"Scope":               ubx.FieldSpec{WireName: "scope"},
-	"TenantId":            ubx.FieldSpec{WireName: "tenant_id"},
-}
+		"PrivateLink": ubx.FieldSpec{WireName: "private_link"},
+		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+	}
 
 type PrivatelinksPrivateLinkAssociationConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -42,8 +42,8 @@ var PrivatelinksPrivateLinkAssociation = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   PrivatelinksPrivateLinkAssociation_PropertiesFields,
+			Kind: "object",
+			Fields: PrivatelinksPrivateLinkAssociation_PropertiesFields,
 		},
 	},
 }

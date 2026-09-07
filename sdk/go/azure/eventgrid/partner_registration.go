@@ -26,9 +26,9 @@ type PartnerRegistration_SystemData struct {
 }
 
 var PartnerRegistration_PropertiesFields = ubx.FieldMap{
-	"PartnerRegistrationImmutableId": ubx.FieldSpec{WireName: "partner_registration_immutable_id"},
-	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"PartnerRegistrationImmutableId": ubx.FieldSpec{WireName: "partner_registration_immutable_id"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type PartnerRegistrationConfig struct {
 	// Location of the resource.
@@ -56,8 +56,8 @@ var PartnerRegistration = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   PartnerRegistration_PropertiesFields,
+			Kind: "object",
+			Fields: PartnerRegistration_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

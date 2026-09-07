@@ -7,34 +7,49 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ExpressrouteExpressRouteProviderPort_Value_Properties:
+class ExpressrouteExpressRouteProviderPort_Properties:
+    # Overprovisioning factor for the port pair.
     overprovision_factor: Any = None
+    # The peering location of the port pair.
     peering_location: Any = None
+    # Bandwidth of the port in Mbps
     port_bandwidth_in_mbps: Any = None
+    # The name of the port pair.
     port_pair_descriptor: Any = None
+    # The name of the primary port.
     primary_azure_port: Any = None
+    # Remaining Bandwidth of the port in Mbps
     remaining_bandwidth_in_mbps: Any = None
+    # The name of the secondary port.
     secondary_azure_port: Any = None
+    # Used Bandwidth of the port in Mbps
     used_bandwidth_in_mbps: Any = None
 
 @dataclasses.dataclass
-class ExpressrouteExpressRouteProviderPort_Value:
-    etag: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
 class ExpressrouteExpressRouteProviderPortConfig:
-    pass
+    providerport: Any = None
 
 @dataclasses.dataclass
 class ExpressrouteExpressRouteProviderPortAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The ExpressRouteProviderPort items on this page
-    value: Any = None
+    # A unique read-only string that changes whenever the resource is updated.
+    etag: Any = None
+    # Resource ID.
+    id: Any = None
+    # Resource location.
+    location: Any = None
+    # Resource name.
+    name: Any = None
+    # Properties of ExpressRouteProviderPort.
+    properties: Any = None
+    providerport: Any = None
+    # Resource tags.
+    tags: Any = None
+    # Resource type.
+    type: Any = None
 
 ExpressrouteExpressRouteProviderPort = ubx.DataSourceBinding(
     wire_type="azure_network_expressroute_express_route_provider_port",
     fields={
+        "providerport": ubx.FieldSpec(wire_name="providerport"),
     },
 )

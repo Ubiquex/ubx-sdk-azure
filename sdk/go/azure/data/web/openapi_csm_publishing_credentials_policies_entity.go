@@ -3,13 +3,9 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiCsmPublishingCredentialsPoliciesEntity_Value_Properties struct {
+type OpenapiCsmPublishingCredentialsPoliciesEntity_Properties struct {
+	// <code>true</code> to allow access to a publishing method; otherwise, <code>false</code>.
 	Allow any
-}
-
-type OpenapiCsmPublishingCredentialsPoliciesEntity_Value struct {
-	Kind       any
-	Properties any
 }
 
 type OpenapiCsmPublishingCredentialsPoliciesEntityConfig struct {
@@ -17,11 +13,11 @@ type OpenapiCsmPublishingCredentialsPoliciesEntityConfig struct {
 }
 
 type OpenapiCsmPublishingCredentialsPoliciesEntityAttrs struct {
+	// Kind of resource.
+	Kind any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	// The CsmPublishingCredentialsPoliciesEntity items on this page
-	Value any
+	// CsmPublishingCredentialsPoliciesEntity resource specific properties
+	Properties any
 }
 
 var OpenapiCsmPublishingCredentialsPoliciesEntity = ubx.DataSourceBinding{

@@ -20,19 +20,19 @@ type VirtualnetworkSecurityPartnerProvider_Properties struct {
 }
 
 var VirtualnetworkSecurityPartnerProvider_Properties_VirtualHubFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var VirtualnetworkSecurityPartnerProvider_PropertiesFields = ubx.FieldMap{
-	"ConnectionStatus":     ubx.FieldSpec{WireName: "connection_status"},
-	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
-	"SecurityProviderName": ubx.FieldSpec{WireName: "security_provider_name"},
-	"VirtualHub": ubx.FieldSpec{
-		WireName: "virtual_hub",
-		Kind:     "object",
-		Fields:   VirtualnetworkSecurityPartnerProvider_Properties_VirtualHubFields,
-	},
-}
+		"ConnectionStatus": ubx.FieldSpec{WireName: "connection_status"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"SecurityProviderName": ubx.FieldSpec{WireName: "security_provider_name"},
+		"VirtualHub": ubx.FieldSpec{
+			WireName: "virtual_hub",
+			Kind: "object",
+			Fields: VirtualnetworkSecurityPartnerProvider_Properties_VirtualHubFields,
+		},
+	}
 
 type VirtualnetworkSecurityPartnerProviderConfig struct {
 	// Resource ID.
@@ -65,12 +65,12 @@ type VirtualnetworkSecurityPartnerProviderAttrs struct {
 var VirtualnetworkSecurityPartnerProvider = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_security_partner_provider",
 	Fields: ubx.FieldMap{
-		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkSecurityPartnerProvider_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkSecurityPartnerProvider_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

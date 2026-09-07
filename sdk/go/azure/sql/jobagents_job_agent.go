@@ -40,32 +40,32 @@ type JobagentsJobAgent_Sku struct {
 }
 
 var JobagentsJobAgent_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var JobagentsJobAgent_IdentityFields = ubx.FieldMap{
-	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":     ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   JobagentsJobAgent_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: JobagentsJobAgent_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var JobagentsJobAgent_PropertiesFields = ubx.FieldMap{
-	"DatabaseId": ubx.FieldSpec{WireName: "database_id"},
-	"State":      ubx.FieldSpec{WireName: "state"},
-}
+		"DatabaseId": ubx.FieldSpec{WireName: "database_id"},
+		"State": ubx.FieldSpec{WireName: "state"},
+	}
 
 var JobagentsJobAgent_SkuFields = ubx.FieldMap{
-	"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	"Family":   ubx.FieldSpec{WireName: "family"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Size":     ubx.FieldSpec{WireName: "size"},
-	"Tier":     ubx.FieldSpec{WireName: "tier"},
-}
+		"Capacity": ubx.FieldSpec{WireName: "capacity"},
+		"Family": ubx.FieldSpec{WireName: "family"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Size": ubx.FieldSpec{WireName: "size"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 type JobagentsJobAgentConfig struct {
 	// Azure Active Directory identity configuration for a resource.
@@ -98,19 +98,19 @@ var JobagentsJobAgent = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   JobagentsJobAgent_IdentityFields,
+			Kind: "object",
+			Fields: JobagentsJobAgent_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   JobagentsJobAgent_PropertiesFields,
+			Kind: "object",
+			Fields: JobagentsJobAgent_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   JobagentsJobAgent_SkuFields,
+			Kind: "object",
+			Fields: JobagentsJobAgent_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

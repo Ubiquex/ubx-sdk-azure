@@ -249,269 +249,269 @@ type FirewallAzureFirewall_Properties struct {
 }
 
 var FirewallAzureFirewall_ExtendedLocationFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var FirewallAzureFirewall_Properties_AfcConfigurationFields = ubx.FieldMap{
-	"ServiceEndpoint": ubx.FieldSpec{WireName: "service_endpoint"},
-}
+		"ServiceEndpoint": ubx.FieldSpec{WireName: "service_endpoint"},
+	}
 
 var FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_ActionFields = ubx.FieldMap{
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules_ProtocolsFields = ubx.FieldMap{
-	"Port":         ubx.FieldSpec{WireName: "port"},
-	"ProtocolType": ubx.FieldSpec{WireName: "protocol_type"},
-}
+		"Port": ubx.FieldSpec{WireName: "port"},
+		"ProtocolType": ubx.FieldSpec{WireName: "protocol_type"},
+	}
 
 var FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_RulesFields = ubx.FieldMap{
-	"Description": ubx.FieldSpec{WireName: "description"},
-	"FqdnTags":    ubx.FieldSpec{WireName: "fqdn_tags"},
-	"Name":        ubx.FieldSpec{WireName: "name"},
-	"Protocols": ubx.FieldSpec{
-		WireName: "protocols",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules_ProtocolsFields,
-	},
-	"SourceAddresses": ubx.FieldSpec{WireName: "source_addresses"},
-	"SourceIpGroups":  ubx.FieldSpec{WireName: "source_ip_groups"},
-	"TargetFqdns":     ubx.FieldSpec{WireName: "target_fqdns"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"FqdnTags": ubx.FieldSpec{WireName: "fqdn_tags"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Protocols": ubx.FieldSpec{
+			WireName: "protocols",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_Rules_ProtocolsFields,
+		},
+		"SourceAddresses": ubx.FieldSpec{WireName: "source_addresses"},
+		"SourceIpGroups": ubx.FieldSpec{WireName: "source_ip_groups"},
+		"TargetFqdns": ubx.FieldSpec{WireName: "target_fqdns"},
+	}
 
 var FirewallAzureFirewall_Properties_ApplicationRuleCollections_PropertiesFields = ubx.FieldMap{
-	"Action": ubx.FieldSpec{
-		WireName: "action",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_ActionFields,
-	},
-	"Priority":          ubx.FieldSpec{WireName: "priority"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Rules": ubx.FieldSpec{
-		WireName: "rules",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_RulesFields,
-	},
-}
+		"Action": ubx.FieldSpec{
+			WireName: "action",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_ActionFields,
+		},
+		"Priority": ubx.FieldSpec{WireName: "priority"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Rules": ubx.FieldSpec{
+			WireName: "rules",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_RulesFields,
+		},
+	}
 
 var FirewallAzureFirewall_Properties_ApplicationRuleCollectionsFields = ubx.FieldMap{
-	"Etag": ubx.FieldSpec{WireName: "etag"},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_ApplicationRuleCollections_PropertiesFields,
-	},
-}
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_ApplicationRuleCollections_PropertiesFields,
+		},
+	}
 
 var FirewallAzureFirewall_Properties_AutoscaleConfigurationFields = ubx.FieldMap{
-	"MaxCapacity": ubx.FieldSpec{WireName: "max_capacity"},
-	"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
-}
+		"MaxCapacity": ubx.FieldSpec{WireName: "max_capacity"},
+		"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
+	}
 
 var FirewallAzureFirewall_Properties_FirewallPolicyFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var FirewallAzureFirewall_Properties_HubIpaddresses_PublicIps_AddressesFields = ubx.FieldMap{
-	"Address": ubx.FieldSpec{WireName: "address"},
-}
+		"Address": ubx.FieldSpec{WireName: "address"},
+	}
 
 var FirewallAzureFirewall_Properties_HubIpaddresses_PublicIpsFields = ubx.FieldMap{
-	"Addresses": ubx.FieldSpec{
-		WireName: "addresses",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_HubIpaddresses_PublicIps_AddressesFields,
-	},
-	"Count": ubx.FieldSpec{WireName: "count"},
-}
+		"Addresses": ubx.FieldSpec{
+			WireName: "addresses",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_HubIpaddresses_PublicIps_AddressesFields,
+		},
+		"Count": ubx.FieldSpec{WireName: "count"},
+	}
 
 var FirewallAzureFirewall_Properties_HubIpaddressesFields = ubx.FieldMap{
-	"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-	"PublicIps": ubx.FieldSpec{
-		WireName: "public_ips",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_HubIpaddresses_PublicIpsFields,
-	},
-}
+		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
+		"PublicIps": ubx.FieldSpec{
+			WireName: "public_ips",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_HubIpaddresses_PublicIpsFields,
+		},
+	}
 
 var FirewallAzureFirewall_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-	"PrivateIpaddress":  ubx.FieldSpec{WireName: "private_ipaddress"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"PublicIpaddress": ubx.FieldSpec{
-		WireName: "public_ipaddress",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_FirewallPolicyFields,
-	},
-	"Subnet": ubx.FieldSpec{
-		WireName: "subnet",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_FirewallPolicyFields,
-	},
-}
+		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"PublicIpaddress": ubx.FieldSpec{
+			WireName: "public_ipaddress",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_FirewallPolicyFields,
+		},
+		"Subnet": ubx.FieldSpec{
+			WireName: "subnet",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_FirewallPolicyFields,
+		},
+	}
 
 var FirewallAzureFirewall_Properties_IpConfigurationsFields = ubx.FieldMap{
-	"Etag": ubx.FieldSpec{WireName: "etag"},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_IpConfigurations_PropertiesFields,
-	},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_IpConfigurations_PropertiesFields,
+		},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var FirewallAzureFirewall_Properties_IpGroupsFields = ubx.FieldMap{
-	"ChangeNumber": ubx.FieldSpec{WireName: "change_number"},
-	"Id":           ubx.FieldSpec{WireName: "id"},
-}
+		"ChangeNumber": ubx.FieldSpec{WireName: "change_number"},
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var FirewallAzureFirewall_Properties_NatRuleCollections_Properties_RulesFields = ubx.FieldMap{
-	"Description":          ubx.FieldSpec{WireName: "description"},
-	"DestinationAddresses": ubx.FieldSpec{WireName: "destination_addresses"},
-	"DestinationPorts":     ubx.FieldSpec{WireName: "destination_ports"},
-	"Name":                 ubx.FieldSpec{WireName: "name"},
-	"Protocols":            ubx.FieldSpec{WireName: "protocols"},
-	"SourceAddresses":      ubx.FieldSpec{WireName: "source_addresses"},
-	"SourceIpGroups":       ubx.FieldSpec{WireName: "source_ip_groups"},
-	"TranslatedAddress":    ubx.FieldSpec{WireName: "translated_address"},
-	"TranslatedFqdn":       ubx.FieldSpec{WireName: "translated_fqdn"},
-	"TranslatedPort":       ubx.FieldSpec{WireName: "translated_port"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DestinationAddresses": ubx.FieldSpec{WireName: "destination_addresses"},
+		"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Protocols": ubx.FieldSpec{WireName: "protocols"},
+		"SourceAddresses": ubx.FieldSpec{WireName: "source_addresses"},
+		"SourceIpGroups": ubx.FieldSpec{WireName: "source_ip_groups"},
+		"TranslatedAddress": ubx.FieldSpec{WireName: "translated_address"},
+		"TranslatedFqdn": ubx.FieldSpec{WireName: "translated_fqdn"},
+		"TranslatedPort": ubx.FieldSpec{WireName: "translated_port"},
+	}
 
 var FirewallAzureFirewall_Properties_NatRuleCollections_PropertiesFields = ubx.FieldMap{
-	"Action": ubx.FieldSpec{
-		WireName: "action",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_ActionFields,
-	},
-	"Priority":          ubx.FieldSpec{WireName: "priority"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Rules": ubx.FieldSpec{
-		WireName: "rules",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_NatRuleCollections_Properties_RulesFields,
-	},
-}
+		"Action": ubx.FieldSpec{
+			WireName: "action",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_ActionFields,
+		},
+		"Priority": ubx.FieldSpec{WireName: "priority"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Rules": ubx.FieldSpec{
+			WireName: "rules",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_NatRuleCollections_Properties_RulesFields,
+		},
+	}
 
 var FirewallAzureFirewall_Properties_NatRuleCollectionsFields = ubx.FieldMap{
-	"Etag": ubx.FieldSpec{WireName: "etag"},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_NatRuleCollections_PropertiesFields,
-	},
-}
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_NatRuleCollections_PropertiesFields,
+		},
+	}
 
 var FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties_RulesFields = ubx.FieldMap{
-	"Description":          ubx.FieldSpec{WireName: "description"},
-	"DestinationAddresses": ubx.FieldSpec{WireName: "destination_addresses"},
-	"DestinationFqdns":     ubx.FieldSpec{WireName: "destination_fqdns"},
-	"DestinationIpGroups":  ubx.FieldSpec{WireName: "destination_ip_groups"},
-	"DestinationPorts":     ubx.FieldSpec{WireName: "destination_ports"},
-	"Name":                 ubx.FieldSpec{WireName: "name"},
-	"Protocols":            ubx.FieldSpec{WireName: "protocols"},
-	"SourceAddresses":      ubx.FieldSpec{WireName: "source_addresses"},
-	"SourceIpGroups":       ubx.FieldSpec{WireName: "source_ip_groups"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DestinationAddresses": ubx.FieldSpec{WireName: "destination_addresses"},
+		"DestinationFqdns": ubx.FieldSpec{WireName: "destination_fqdns"},
+		"DestinationIpGroups": ubx.FieldSpec{WireName: "destination_ip_groups"},
+		"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Protocols": ubx.FieldSpec{WireName: "protocols"},
+		"SourceAddresses": ubx.FieldSpec{WireName: "source_addresses"},
+		"SourceIpGroups": ubx.FieldSpec{WireName: "source_ip_groups"},
+	}
 
 var FirewallAzureFirewall_Properties_NetworkRuleCollections_PropertiesFields = ubx.FieldMap{
-	"Action": ubx.FieldSpec{
-		WireName: "action",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_ActionFields,
-	},
-	"Priority":          ubx.FieldSpec{WireName: "priority"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Rules": ubx.FieldSpec{
-		WireName: "rules",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties_RulesFields,
-	},
-}
+		"Action": ubx.FieldSpec{
+			WireName: "action",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_ApplicationRuleCollections_Properties_ActionFields,
+		},
+		"Priority": ubx.FieldSpec{WireName: "priority"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Rules": ubx.FieldSpec{
+			WireName: "rules",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_NetworkRuleCollections_Properties_RulesFields,
+		},
+	}
 
 var FirewallAzureFirewall_Properties_NetworkRuleCollectionsFields = ubx.FieldMap{
-	"Etag": ubx.FieldSpec{WireName: "etag"},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_NetworkRuleCollections_PropertiesFields,
-	},
-}
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_NetworkRuleCollections_PropertiesFields,
+		},
+	}
 
 var FirewallAzureFirewall_Properties_SkuFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Tier": ubx.FieldSpec{WireName: "tier"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 var FirewallAzureFirewall_PropertiesFields = ubx.FieldMap{
-	"AdditionalProperties": ubx.FieldSpec{WireName: "additional_properties"},
-	"AfcConfiguration": ubx.FieldSpec{
-		WireName: "afc_configuration",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_AfcConfigurationFields,
-	},
-	"ApplicationRuleCollections": ubx.FieldSpec{
-		WireName: "application_rule_collections",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_ApplicationRuleCollectionsFields,
-	},
-	"AutoscaleConfiguration": ubx.FieldSpec{
-		WireName: "autoscale_configuration",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_AutoscaleConfigurationFields,
-	},
-	"FirewallPolicy": ubx.FieldSpec{
-		WireName: "firewall_policy",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_FirewallPolicyFields,
-	},
-	"HubIpaddresses": ubx.FieldSpec{
-		WireName: "hub_ipaddresses",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_HubIpaddressesFields,
-	},
-	"IpConfigurations": ubx.FieldSpec{
-		WireName: "ip_configurations",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_IpConfigurationsFields,
-	},
-	"IpGroups": ubx.FieldSpec{
-		WireName: "ip_groups",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_IpGroupsFields,
-	},
-	"ManagementIpConfiguration": ubx.FieldSpec{
-		WireName: "management_ip_configuration",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_IpConfigurationsFields,
-	},
-	"NatRuleCollections": ubx.FieldSpec{
-		WireName: "nat_rule_collections",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_NatRuleCollectionsFields,
-	},
-	"NetworkRuleCollections": ubx.FieldSpec{
-		WireName: "network_rule_collections",
-		Kind:     "list",
-		Fields:   FirewallAzureFirewall_Properties_NetworkRuleCollectionsFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Sku": ubx.FieldSpec{
-		WireName: "sku",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_SkuFields,
-	},
-	"ThreatIntelMode": ubx.FieldSpec{WireName: "threat_intel_mode"},
-	"VirtualHub": ubx.FieldSpec{
-		WireName: "virtual_hub",
-		Kind:     "object",
-		Fields:   FirewallAzureFirewall_Properties_FirewallPolicyFields,
-	},
-}
+		"AdditionalProperties": ubx.FieldSpec{WireName: "additional_properties"},
+		"AfcConfiguration": ubx.FieldSpec{
+			WireName: "afc_configuration",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_AfcConfigurationFields,
+		},
+		"ApplicationRuleCollections": ubx.FieldSpec{
+			WireName: "application_rule_collections",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_ApplicationRuleCollectionsFields,
+		},
+		"AutoscaleConfiguration": ubx.FieldSpec{
+			WireName: "autoscale_configuration",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_AutoscaleConfigurationFields,
+		},
+		"FirewallPolicy": ubx.FieldSpec{
+			WireName: "firewall_policy",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_FirewallPolicyFields,
+		},
+		"HubIpaddresses": ubx.FieldSpec{
+			WireName: "hub_ipaddresses",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_HubIpaddressesFields,
+		},
+		"IpConfigurations": ubx.FieldSpec{
+			WireName: "ip_configurations",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_IpConfigurationsFields,
+		},
+		"IpGroups": ubx.FieldSpec{
+			WireName: "ip_groups",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_IpGroupsFields,
+		},
+		"ManagementIpConfiguration": ubx.FieldSpec{
+			WireName: "management_ip_configuration",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_IpConfigurationsFields,
+		},
+		"NatRuleCollections": ubx.FieldSpec{
+			WireName: "nat_rule_collections",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_NatRuleCollectionsFields,
+		},
+		"NetworkRuleCollections": ubx.FieldSpec{
+			WireName: "network_rule_collections",
+			Kind: "list",
+			Fields: FirewallAzureFirewall_Properties_NetworkRuleCollectionsFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_SkuFields,
+		},
+		"ThreatIntelMode": ubx.FieldSpec{WireName: "threat_intel_mode"},
+		"VirtualHub": ubx.FieldSpec{
+			WireName: "virtual_hub",
+			Kind: "object",
+			Fields: FirewallAzureFirewall_Properties_FirewallPolicyFields,
+		},
+	}
 
 type FirewallAzureFirewallConfig struct {
 	// ExtendedLocation complex type.
@@ -554,17 +554,17 @@ var FirewallAzureFirewall = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind:     "object",
-			Fields:   FirewallAzureFirewall_ExtendedLocationFields,
+			Kind: "object",
+			Fields: FirewallAzureFirewall_ExtendedLocationFields,
 		},
-		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   FirewallAzureFirewall_PropertiesFields,
+			Kind: "object",
+			Fields: FirewallAzureFirewall_PropertiesFields,
 		},
-		"Tags":  ubx.FieldSpec{WireName: "tags"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

@@ -3,84 +3,96 @@ package search
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
-	Id            any
-	Location      any
+type NetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter struct {
+	// Fully qualified Azure resource ID of the NSP resource
+	Id any
+	// Location of the network security perimeter
+	Location any
+	// Universal unique ID (UUID) of the network security perimeter
 	PerimeterGuid any
 }
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties_Subscriptions struct {
+type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions struct {
 	Id any
 }
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes           any
-	Direction                 any
-	EmailAddresses            any
+type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
+	AddressPrefixes any
+	Direction any
+	EmailAddresses any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	PhoneNumbers              any
-	Subscriptions             any
+	PhoneNumbers any
+	Subscriptions any
 }
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
-	Name       any
+type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
+	Name any
 	Properties any
 }
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
-	AccessRules               any
-	AccessRulesVersion        any
+type NetworkSecurityPerimeterConfiguration_Properties_Profile struct {
+	// List of Access Rules
+	AccessRules any
+	// Current access rules version
+	AccessRulesVersion any
+	// Current diagnostic settings version
 	DiagnosticSettingsVersion any
-	EnabledLogCategories      any
-	Name                      any
+	// List of log categories that are enabled
+	EnabledLogCategories any
+	// Name of the profile
+	Name any
 }
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
-	Description          any
-	IssueType            any
-	Severity             any
+type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
+	Description any
+	IssueType any
+	Severity any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
-	Name       any
+type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
+	Name any
 	Properties any
 }
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
+type NetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation struct {
+	// Access mode of the resource association
 	AccessMode any
-	Name       any
+	// Name of the resource association
+	Name any
 }
 
-type NetworkSecurityPerimeterConfiguration_Value_Properties struct {
+type NetworkSecurityPerimeterConfiguration_Properties struct {
+	// Information about a network security perimeter (NSP)
 	NetworkSecurityPerimeter any
-	Profile                  any
-	ProvisioningIssues       any
-	ProvisioningState        any
-	ResourceAssociation      any
-}
-
-type NetworkSecurityPerimeterConfiguration_Value struct {
-	Properties any
+	// Network security perimeter configuration profile
+	Profile any
+	// List of provisioning issues, if any
+	ProvisioningIssues any
+	// Provisioning state of a network security perimeter configuration that is being created or updated.
+	ProvisioningState any
+	// Information about resource association
+	ResourceAssociation any
 }
 
 type NetworkSecurityPerimeterConfigurationConfig struct {
+	NspConfigName any
 	SearchServiceName any
 }
 
 type NetworkSecurityPerimeterConfigurationAttrs struct {
-	// The link to the next page of items
-	NextLink          any
+	NspConfigName any
+	// Network security configuration properties.
+	Properties any
 	SearchServiceName any
-	// The NetworkSecurityPerimeterConfiguration items on this page
-	Value any
 }
 
 var NetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_search_network_security_perimeter_configuration",
 	Fields: ubx.FieldMap{
+		"NspConfigName": ubx.FieldSpec{WireName: "nsp_config_name"},
 		"SearchServiceName": ubx.FieldSpec{WireName: "search_service_name"},
 	},
 }

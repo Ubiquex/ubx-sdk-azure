@@ -17,12 +17,12 @@ type DbOpenapiServiceResource_Properties struct {
 }
 
 var DbOpenapiServiceResource_PropertiesFields = ubx.FieldMap{
-	"CreationTime":  ubx.FieldSpec{WireName: "creation_time"},
-	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-	"InstanceSize":  ubx.FieldSpec{WireName: "instance_size"},
-	"ServiceType":   ubx.FieldSpec{WireName: "service_type"},
-	"Status":        ubx.FieldSpec{WireName: "status"},
-}
+		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+		"InstanceSize": ubx.FieldSpec{WireName: "instance_size"},
+		"ServiceType": ubx.FieldSpec{WireName: "service_type"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+	}
 
 type DbOpenapiServiceResourceConfig struct {
 	// Properties in ServiceResourceCreateUpdateParameters.
@@ -39,8 +39,8 @@ var DbOpenapiServiceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   DbOpenapiServiceResource_PropertiesFields,
+			Kind: "object",
+			Fields: DbOpenapiServiceResource_PropertiesFields,
 		},
 	},
 }

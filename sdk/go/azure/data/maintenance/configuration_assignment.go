@@ -3,46 +3,82 @@ package maintenance
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ConfigurationAssignment_Value_Properties_Filter_TagSettings struct {
+type ConfigurationAssignment_Properties_Filter_TagSettings struct {
+	// Filter VMs by Any or All specified tags.
 	FilterOperator any
-	Tags           any
+	// Dictionary of tags with its list of values.
+	Tags any
 }
 
-type ConfigurationAssignment_Value_Properties_Filter struct {
-	Locations      any
-	OsTypes        any
+type ConfigurationAssignment_Properties_Filter struct {
+	// List of locations to scope the query to.
+	Locations any
+	// List of allowed operating systems.
+	OsTypes any
+	// List of allowed resource groups.
 	ResourceGroups any
-	ResourceTypes  any
-	TagSettings    any
+	// List of allowed resources.
+	ResourceTypes any
+	// Tag filter information for the VM.
+	TagSettings any
 }
 
-type ConfigurationAssignment_Value_Properties struct {
-	Filter                     any
+type ConfigurationAssignment_Properties struct {
+	// Azure query for the update configuration.
+	Filter any
+	// The maintenance configuration Id
 	MaintenanceConfigurationId any
-	ResourceId                 any
+	// The unique resourceId
+	ResourceId any
 }
 
-type ConfigurationAssignment_Value struct {
-	Location   any
-	Properties any
+type ConfigurationAssignment_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type ConfigurationAssignmentConfig struct {
-	ApiVersion     any
+	ApiVersion any
+	ConfigurationAssignmentName any
+	ResourceGroupName any
 	SubscriptionId any
 }
 
 type ConfigurationAssignmentAttrs struct {
-	ApiVersion     any
+	ApiVersion any
+	ConfigurationAssignmentName any
+	// Fully qualified identifier of the resource
+	Id any
+	// Location of the resource
+	Location any
+	// Name of the resource
+	Name any
+	// Properties for configuration assignment
+	Properties any
+	ResourceGroupName any
 	SubscriptionId any
-	// The list of configuration Assignments
-	Value any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Type of the resource
+	Type any
 }
 
 var ConfigurationAssignment = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_configuration_assignment",
 	Fields: ubx.FieldMap{
-		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ConfigurationAssignmentName": ubx.FieldSpec{WireName: "configuration_assignment_name"},
+		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

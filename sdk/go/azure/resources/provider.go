@@ -97,8 +97,8 @@ type Provider_ThirdPartyProviderConsent struct {
 }
 
 var Provider_ThirdPartyProviderConsentFields = ubx.FieldMap{
-	"ConsentToAuthorization": ubx.FieldSpec{WireName: "consent_to_authorization"},
-}
+		"ConsentToAuthorization": ubx.FieldSpec{WireName: "consent_to_authorization"},
+	}
 
 type ProviderConfig struct {
 	// The provider consent.
@@ -127,8 +127,8 @@ var Provider = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ThirdPartyProviderConsent": ubx.FieldSpec{
 			WireName: "third_party_provider_consent",
-			Kind:     "object",
-			Fields:   Provider_ThirdPartyProviderConsentFields,
+			Kind: "object",
+			Fields: Provider_ThirdPartyProviderConsentFields,
 		},
 	},
 }

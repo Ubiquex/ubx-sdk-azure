@@ -4,8 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .openapi_cloud_hsm_cluster import OpenapiCloudHsmCluster, OpenapiCloudHsmClusterConfig
-from .openapi_dedicated_hsm import OpenapiDedicatedHsm, OpenapiDedicatedHsmConfig
-from .openapi_outbound_environment_endpoint import OpenapiOutboundEnvironmentEndpoint, OpenapiOutboundEnvironmentEndpointConfig
-from .openapi_private_endpoint_connection import OpenapiPrivateEndpointConnection, OpenapiPrivateEndpointConnectionConfig
-from .openapi_private_link_resource import OpenapiPrivateLinkResource, OpenapiPrivateLinkResourceConfig
+from .openapi_cloud_hsm_cluster_list import OpenapiCloudHsmClusterList, OpenapiCloudHsmClusterListConfig
+from .openapi_dedicated_hsm_list import OpenapiDedicatedHsmList, OpenapiDedicatedHsmListConfig
+from .openapi_outbound_environment_endpoint_list import OpenapiOutboundEnvironmentEndpointList, OpenapiOutboundEnvironmentEndpointListConfig
+from .openapi_private_endpoint_connection_list import OpenapiPrivateEndpointConnectionList, OpenapiPrivateEndpointConnectionListConfig
+from .openapi_private_link_resource_list import OpenapiPrivateLinkResourceList, OpenapiPrivateLinkResourceListConfig

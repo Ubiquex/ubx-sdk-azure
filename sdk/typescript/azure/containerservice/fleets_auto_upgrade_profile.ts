@@ -66,7 +66,7 @@ export interface FleetsAutoUpgradeProfile_Properties {
   nodeImageSelection?: FleetsAutoUpgradeProfile_Properties_NodeImageSelection | Computed<FleetsAutoUpgradeProfile_Properties_NodeImageSelection>;
   /** The provisioning state of the AutoUpgradeProfile resource. */
   provisioningState?: string | Computed<string>;
-  /** This is the target Kubernetes version for auto-upgrade. The format must be `{major version}.{minor version}`. For example, "1.30". By default, this is empty. If upgrade channel is set to TargetKubernetesVersion, this field must not be empty. If upgrade channel is Rapid, Stable or NodeImage, this field must be empty. */
+  /** This is the target Kubernetes version for auto-upgrade. The format must be `{major version}.{minor version}`. For example, "1.30". By default, this is empty. If upgrade channel is set to TargetKubernetesVersion, this field must not be empty. If upgrade channel is not TargetKubernetesVersion, this field must be empty. */
   targetKubernetesVersion?: string | Computed<string>;
   /** A type definition that refers the id to an Azure Resource Manager resource. */
   updateStrategyId?: string | Computed<string>;

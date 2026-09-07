@@ -28,10 +28,10 @@ type SwaggerNginxDeploymentApiKeyResponse_SystemData struct {
 }
 
 var SwaggerNginxDeploymentApiKeyResponse_PropertiesFields = ubx.FieldMap{
-	"EndDateTime": ubx.FieldSpec{WireName: "end_date_time"},
-	"Hint":        ubx.FieldSpec{WireName: "hint"},
-	"SecretText":  ubx.FieldSpec{WireName: "secret_text"},
-}
+		"EndDateTime": ubx.FieldSpec{WireName: "end_date_time"},
+		"Hint": ubx.FieldSpec{WireName: "hint"},
+		"SecretText": ubx.FieldSpec{WireName: "secret_text"},
+	}
 
 type SwaggerNginxDeploymentApiKeyResponseConfig struct {
 	// Nginx Deployment Api Key Request Properties
@@ -56,8 +56,8 @@ var SwaggerNginxDeploymentApiKeyResponse = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   SwaggerNginxDeploymentApiKeyResponse_PropertiesFields,
+			Kind: "object",
+			Fields: SwaggerNginxDeploymentApiKeyResponse_PropertiesFields,
 		},
 	},
 }

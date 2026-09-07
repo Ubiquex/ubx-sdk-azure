@@ -3,27 +3,30 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ApplicationgatewayApplicationGatewaySslPredefinedPolicy_Value_Properties struct {
-	CipherSuites       any
+type ApplicationgatewayApplicationGatewaySslPredefinedPolicy_Properties struct {
+	// Ssl cipher suites to be enabled in the specified order for application gateway.
+	CipherSuites any
+	// Ssl protocol enums.
 	MinProtocolVersion any
 }
 
-type ApplicationgatewayApplicationGatewaySslPredefinedPolicy_Value struct {
-	Name       any
-	Properties any
-}
-
 type ApplicationgatewayApplicationGatewaySslPredefinedPolicyConfig struct {
+	PredefinedPolicyName any
 }
 
 type ApplicationgatewayApplicationGatewaySslPredefinedPolicyAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The ApplicationGatewaySslPredefinedPolicy items on this page
-	Value any
+	// Resource ID.
+	Id any
+	// Name of the Ssl predefined policy.
+	Name any
+	PredefinedPolicyName any
+	// Properties of ApplicationGatewaySslPredefinedPolicy.
+	Properties any
 }
 
 var ApplicationgatewayApplicationGatewaySslPredefinedPolicy = ubx.DataSourceBinding{
 	WireType: "azure_network_applicationgateway_application_gateway_ssl_predefined_policy",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"PredefinedPolicyName": ubx.FieldSpec{WireName: "predefined_policy_name"},
+	},
 }

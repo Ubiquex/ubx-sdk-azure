@@ -3,33 +3,32 @@ package machinelearningservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiComponentVersion_Value_Properties struct {
-	ComponentSpec     any
+type OpenapiComponentVersion_Properties struct {
+	// Defines Component definition details. <see href="https://docs.microsoft.com/en-us/azure/machine-learning/reference-yaml-component-command" />
+	ComponentSpec any
+	// Provisioning state of registry asset.
 	ProvisioningState any
 }
 
-type OpenapiComponentVersion_Value struct {
-	Properties any
-}
-
 type OpenapiComponentVersionConfig struct {
-	ComponentName any
-	RegistryName  any
+	Name any
+	Version any
+	WorkspaceName any
 }
 
 type OpenapiComponentVersionAttrs struct {
-	ComponentName any
-	// The link to the next page of items
-	NextLink     any
-	RegistryName any
-	// The ComponentVersion items on this page
-	Value any
+	Name any
+	// Definition of a component version: defines resources that span component types.
+	Properties any
+	Version any
+	WorkspaceName any
 }
 
 var OpenapiComponentVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_component_version",
 	Fields: ubx.FieldMap{
-		"ComponentName": ubx.FieldSpec{WireName: "component_name"},
-		"RegistryName":  ubx.FieldSpec{WireName: "registry_name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

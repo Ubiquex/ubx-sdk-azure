@@ -11,9 +11,9 @@ type OpenapiManagedVirtualNetworkResource_Properties struct {
 }
 
 var OpenapiManagedVirtualNetworkResource_PropertiesFields = ubx.FieldMap{
-	"Alias":  ubx.FieldSpec{WireName: "alias"},
-	"VNetId": ubx.FieldSpec{WireName: "v_net_id"},
-}
+		"Alias": ubx.FieldSpec{WireName: "alias"},
+		"VNetId": ubx.FieldSpec{WireName: "v_net_id"},
+	}
 
 type OpenapiManagedVirtualNetworkResourceConfig struct {
 	// A managed Virtual Network associated with the Azure Data Factory
@@ -32,8 +32,8 @@ var OpenapiManagedVirtualNetworkResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiManagedVirtualNetworkResource_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiManagedVirtualNetworkResource_PropertiesFields,
 		},
 	},
 }

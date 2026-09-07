@@ -3,30 +3,34 @@ package oracle
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiAutonomousDbVersion_Value_Properties struct {
-	DbWorkload        any
-	IsDefaultForFree  any
-	IsDefaultForPaid  any
+type OpenapiAutonomousDbVersion_Properties struct {
+	// WorkloadType enum
+	DbWorkload any
+	// True if this version of the Oracle Database software's default is free.
+	IsDefaultForFree any
+	// True if this version of the Oracle Database software's default is paid.
+	IsDefaultForPaid any
+	// True if this version of the Oracle Database software can be used for Always-Free Autonomous Databases.
 	IsFreeTierEnabled any
-	IsPaidEnabled     any
-	Version           any
-}
-
-type OpenapiAutonomousDbVersion_Value struct {
-	Properties any
+	// True if this version of the Oracle Database software has payments enabled.
+	IsPaidEnabled any
+	// Supported Autonomous Db versions.
+	Version any
 }
 
 type OpenapiAutonomousDbVersionConfig struct {
+	Autonomousdbversionsname any
 }
 
 type OpenapiAutonomousDbVersionAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The AutonomousDbVersion items on this page
-	Value any
+	Autonomousdbversionsname any
+	// AutonomousDbVersion resource model
+	Properties any
 }
 
 var OpenapiAutonomousDbVersion = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_autonomous_db_version",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"Autonomousdbversionsname": ubx.FieldSpec{WireName: "autonomousdbversionsname"},
+	},
 }

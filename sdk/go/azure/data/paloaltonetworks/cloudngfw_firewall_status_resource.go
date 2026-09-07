@@ -3,28 +3,35 @@ package paloaltonetworks
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type CloudngfwFirewallStatusResource_Value_Properties_PanoramaStatus struct {
+type CloudngfwFirewallStatusResource_Properties_PanoramaStatus struct {
+	// Connectivity Status for Panorama Server
 	PanoramaServer2Status any
-	PanoramaServerStatus  any
+	// Connectivity Status for Panorama Server
+	PanoramaServerStatus any
 }
 
-type CloudngfwFirewallStatusResource_Value_Properties_StrataCloudManagerInfo struct {
+type CloudngfwFirewallStatusResource_Properties_StrataCloudManagerInfo struct {
+	// Strata Cloud Manager folder in which this firewall has been placed
 	FolderName any
-	HubUrl     any
+	// URL for Strata Cloud Manager
+	HubUrl any
 }
 
-type CloudngfwFirewallStatusResource_Value_Properties struct {
-	HealthReason           any
-	HealthStatus           any
-	IsPanoramaManaged      any
-	IsStrataCloudManaged   any
-	PanoramaStatus         any
-	ProvisioningState      any
+type CloudngfwFirewallStatusResource_Properties struct {
+	// Detail description of current health of the Firewall
+	HealthReason any
+	// Status Codes for the Firewall
+	HealthStatus any
+	// Boolean Enum
+	IsPanoramaManaged any
+	// Boolean Enum
+	IsStrataCloudManaged any
+	// Panorama connectivity information
+	PanoramaStatus any
+	// Provisioning state of the firewall resource.
+	ProvisioningState any
+	// Strata Cloud Manager Info
 	StrataCloudManagerInfo any
-}
-
-type CloudngfwFirewallStatusResource_Value struct {
-	Properties any
 }
 
 type CloudngfwFirewallStatusResourceConfig struct {
@@ -33,10 +40,8 @@ type CloudngfwFirewallStatusResourceConfig struct {
 
 type CloudngfwFirewallStatusResourceAttrs struct {
 	FirewallName any
-	// The link to the next page of items
-	NextLink any
-	// The FirewallStatusResource items on this page
-	Value any
+	// Firewall Status
+	Properties any
 }
 
 var CloudngfwFirewallStatusResource = ubx.DataSourceBinding{

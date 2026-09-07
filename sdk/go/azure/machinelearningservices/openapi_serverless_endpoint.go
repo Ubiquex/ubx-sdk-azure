@@ -69,63 +69,63 @@ type OpenapiServerlessEndpoint_Sku struct {
 }
 
 var OpenapiServerlessEndpoint_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var OpenapiServerlessEndpoint_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   OpenapiServerlessEndpoint_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: OpenapiServerlessEndpoint_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var OpenapiServerlessEndpoint_Properties_ContentSafetyFields = ubx.FieldMap{
-	"ContentSafetyStatus": ubx.FieldSpec{WireName: "content_safety_status"},
-}
+		"ContentSafetyStatus": ubx.FieldSpec{WireName: "content_safety_status"},
+	}
 
 var OpenapiServerlessEndpoint_Properties_InferenceEndpointFields = ubx.FieldMap{
-	"Headers": ubx.FieldSpec{WireName: "headers"},
-	"Uri":     ubx.FieldSpec{WireName: "uri"},
-}
+		"Headers": ubx.FieldSpec{WireName: "headers"},
+		"Uri": ubx.FieldSpec{WireName: "uri"},
+	}
 
 var OpenapiServerlessEndpoint_Properties_ModelSettingsFields = ubx.FieldMap{
-	"ModelId": ubx.FieldSpec{WireName: "model_id"},
-}
+		"ModelId": ubx.FieldSpec{WireName: "model_id"},
+	}
 
 var OpenapiServerlessEndpoint_PropertiesFields = ubx.FieldMap{
-	"AuthMode": ubx.FieldSpec{WireName: "auth_mode"},
-	"ContentSafety": ubx.FieldSpec{
-		WireName: "content_safety",
-		Kind:     "object",
-		Fields:   OpenapiServerlessEndpoint_Properties_ContentSafetyFields,
-	},
-	"EndpointState": ubx.FieldSpec{WireName: "endpoint_state"},
-	"InferenceEndpoint": ubx.FieldSpec{
-		WireName: "inference_endpoint",
-		Kind:     "object",
-		Fields:   OpenapiServerlessEndpoint_Properties_InferenceEndpointFields,
-	},
-	"MarketplaceSubscriptionId": ubx.FieldSpec{WireName: "marketplace_subscription_id"},
-	"ModelSettings": ubx.FieldSpec{
-		WireName: "model_settings",
-		Kind:     "object",
-		Fields:   OpenapiServerlessEndpoint_Properties_ModelSettingsFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"AuthMode": ubx.FieldSpec{WireName: "auth_mode"},
+		"ContentSafety": ubx.FieldSpec{
+			WireName: "content_safety",
+			Kind: "object",
+			Fields: OpenapiServerlessEndpoint_Properties_ContentSafetyFields,
+		},
+		"EndpointState": ubx.FieldSpec{WireName: "endpoint_state"},
+		"InferenceEndpoint": ubx.FieldSpec{
+			WireName: "inference_endpoint",
+			Kind: "object",
+			Fields: OpenapiServerlessEndpoint_Properties_InferenceEndpointFields,
+		},
+		"MarketplaceSubscriptionId": ubx.FieldSpec{WireName: "marketplace_subscription_id"},
+		"ModelSettings": ubx.FieldSpec{
+			WireName: "model_settings",
+			Kind: "object",
+			Fields: OpenapiServerlessEndpoint_Properties_ModelSettingsFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 var OpenapiServerlessEndpoint_SkuFields = ubx.FieldMap{
-	"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	"Family":   ubx.FieldSpec{WireName: "family"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Size":     ubx.FieldSpec{WireName: "size"},
-	"Tier":     ubx.FieldSpec{WireName: "tier"},
-}
+		"Capacity": ubx.FieldSpec{WireName: "capacity"},
+		"Family": ubx.FieldSpec{WireName: "family"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Size": ubx.FieldSpec{WireName: "size"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 type OpenapiServerlessEndpointConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -166,20 +166,20 @@ var OpenapiServerlessEndpoint = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   OpenapiServerlessEndpoint_IdentityFields,
+			Kind: "object",
+			Fields: OpenapiServerlessEndpoint_IdentityFields,
 		},
-		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiServerlessEndpoint_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiServerlessEndpoint_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   OpenapiServerlessEndpoint_SkuFields,
+			Kind: "object",
+			Fields: OpenapiServerlessEndpoint_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

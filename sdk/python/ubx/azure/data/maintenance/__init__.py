@@ -7,4 +7,6 @@ SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 from .apply_update import ApplyUpdate, ApplyUpdateConfig
 from .configuration import Configuration, ConfigurationConfig
 from .configuration_assignment import ConfigurationAssignment, ConfigurationAssignmentConfig
-from .update import Update, UpdateConfig
+from .configuration_assignment_list import ConfigurationAssignmentList, ConfigurationAssignmentListConfig
+from .configuration_list import ConfigurationList, ConfigurationListConfig
+from .update_list import UpdateList, UpdateListConfig

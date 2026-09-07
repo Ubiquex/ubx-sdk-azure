@@ -22,20 +22,20 @@ type ResourceGuardProxyBaseResource_Properties struct {
 }
 
 var ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields = ubx.FieldMap{
-	"DefaultResourceRequest": ubx.FieldSpec{WireName: "default_resource_request"},
-	"VaultCriticalOperation": ubx.FieldSpec{WireName: "vault_critical_operation"},
-}
+		"DefaultResourceRequest": ubx.FieldSpec{WireName: "default_resource_request"},
+		"VaultCriticalOperation": ubx.FieldSpec{WireName: "vault_critical_operation"},
+	}
 
 var ResourceGuardProxyBaseResource_PropertiesFields = ubx.FieldMap{
-	"Description":     ubx.FieldSpec{WireName: "description"},
-	"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
-	"ResourceGuardOperationDetails": ubx.FieldSpec{
-		WireName: "resource_guard_operation_details",
-		Kind:     "list",
-		Fields:   ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields,
-	},
-	"ResourceGuardResourceId": ubx.FieldSpec{WireName: "resource_guard_resource_id"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
+		"ResourceGuardOperationDetails": ubx.FieldSpec{
+			WireName: "resource_guard_operation_details",
+			Kind: "list",
+			Fields: ResourceGuardProxyBaseResource_Properties_ResourceGuardOperationDetailsFields,
+		},
+		"ResourceGuardResourceId": ubx.FieldSpec{WireName: "resource_guard_resource_id"},
+	}
 
 type ResourceGuardProxyBaseResourceConfig struct {
 	// ResourceGuardProxyBase object, used in ResourceGuardProxyBaseResource
@@ -52,8 +52,8 @@ var ResourceGuardProxyBaseResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ResourceGuardProxyBaseResource_PropertiesFields,
+			Kind: "object",
+			Fields: ResourceGuardProxyBaseResource_PropertiesFields,
 		},
 	},
 }

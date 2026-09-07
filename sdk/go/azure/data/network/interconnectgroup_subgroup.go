@@ -3,36 +3,42 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type InterconnectgroupSubgroup_Value_Properties_InterconnectBlock struct {
+type InterconnectgroupSubgroup_Properties_InterconnectBlock struct {
+	// Resource ID.
 	Id any
 }
 
-type InterconnectgroupSubgroup_Value_Properties struct {
-	InterconnectBlock  any
+type InterconnectgroupSubgroup_Properties struct {
+	// Reference to another subresource.
+	InterconnectBlock any
+	// The unique identifier of the subgroup.
 	InternalSubgroupId any
-	ProvisioningState  any
-	VirtualMachines    any
-}
-
-type InterconnectgroupSubgroup_Value struct {
-	Properties any
+	// Provisioning states of a resource.
+	ProvisioningState any
+	// A list of virtual machine references.
+	VirtualMachines any
 }
 
 type InterconnectgroupSubgroupConfig struct {
 	InterconnectGroupName any
+	SubgroupName any
 }
 
 type InterconnectgroupSubgroupAttrs struct {
 	InterconnectGroupName any
-	// The link to the next page of items
-	NextLink any
-	// The Subgroup items on this page
-	Value any
+	// Name of the resource.
+	Name any
+	// Properties of subgroup.
+	Properties any
+	SubgroupName any
+	// Resource type.
+	Type any
 }
 
 var InterconnectgroupSubgroup = ubx.DataSourceBinding{
 	WireType: "azure_network_interconnectgroup_subgroup",
 	Fields: ubx.FieldMap{
 		"InterconnectGroupName": ubx.FieldSpec{WireName: "interconnect_group_name"},
+		"SubgroupName": ubx.FieldSpec{WireName: "subgroup_name"},
 	},
 }

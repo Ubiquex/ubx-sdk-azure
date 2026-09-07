@@ -3,105 +3,134 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions_AllowedCallerIpAddresses struct {
+type OpenapiWorkflowVersion_Properties_AccessControl_Actions_AllowedCallerIpAddresses struct {
 	AddressRange any
 }
 
-type OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims struct {
-	Name  any
+type OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims struct {
+	Name any
 	Value any
 }
 
-type OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies struct {
+type OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies struct {
 	Claims any
-	Type   any
-}
-
-type OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies struct {
-	Policies any
-}
-
-type OpenapiWorkflowVersion_Value_Properties_AccessControl_Actions struct {
-	AllowedCallerIpAddresses   any
-	OpenAuthenticationPolicies any
-}
-
-type OpenapiWorkflowVersion_Value_Properties_AccessControl struct {
-	Actions            any
-	Contents           any
-	Triggers           any
-	WorkflowManagement any
-}
-
-type OpenapiWorkflowVersion_Value_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses struct {
-	Address any
-}
-
-type OpenapiWorkflowVersion_Value_Properties_EndpointsConfiguration_Connector struct {
-	AccessEndpointIpAddresses any
-	OutgoingIpAddresses       any
-}
-
-type OpenapiWorkflowVersion_Value_Properties_EndpointsConfiguration struct {
-	Connector any
-	Workflow  any
-}
-
-type OpenapiWorkflowVersion_Value_Properties_IntegrationAccount struct {
-	Id   any
-	Name any
 	Type any
 }
 
-type OpenapiWorkflowVersion_Value_Properties_Parameters struct {
-	Description any
-	Metadata    any
-	Type        any
-	Value       any
+type OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies struct {
+	// Open authentication policies.
+	Policies any
 }
 
-type OpenapiWorkflowVersion_Value_Properties_Sku struct {
+type OpenapiWorkflowVersion_Properties_AccessControl_Actions struct {
+	// The allowed caller IP address ranges.
+	AllowedCallerIpAddresses any
+	// AuthenticationPolicy of type Open.
+	OpenAuthenticationPolicies any
+}
+
+type OpenapiWorkflowVersion_Properties_AccessControl struct {
+	// The access control configuration policy.
+	Actions any
+	// The access control configuration policy.
+	Contents any
+	// The access control configuration policy.
+	Triggers any
+	// The access control configuration policy.
+	WorkflowManagement any
+}
+
+type OpenapiWorkflowVersion_Properties_EndpointsConfiguration_Connector_AccessEndpointIpAddresses struct {
+	Address any
+}
+
+type OpenapiWorkflowVersion_Properties_EndpointsConfiguration_Connector struct {
+	// The access endpoint ip address.
+	AccessEndpointIpAddresses any
+	// The outgoing ip address.
+	OutgoingIpAddresses any
+}
+
+type OpenapiWorkflowVersion_Properties_EndpointsConfiguration struct {
+	// The flow endpoints configuration.
+	Connector any
+	// The flow endpoints configuration.
+	Workflow any
+}
+
+type OpenapiWorkflowVersion_Properties_IntegrationAccount struct {
+	// The resource id.
+	Id any
+	// Gets the resource name.
 	Name any
+	// Gets the resource type.
+	Type any
+}
+
+type OpenapiWorkflowVersion_Properties_Parameters struct {
+	Description any
+	Metadata any
+	Type any
+	Value any
+}
+
+type OpenapiWorkflowVersion_Properties_Sku struct {
+	// The sku name.
+	Name any
+	// The resource reference.
 	Plan any
 }
 
-type OpenapiWorkflowVersion_Value_Properties struct {
-	AccessControl          any
-	AccessEndpoint         any
-	ChangedTime            any
-	CreatedTime            any
-	Definition             any
+type OpenapiWorkflowVersion_Properties struct {
+	// The access control configuration.
+	AccessControl any
+	// Gets the access endpoint.
+	AccessEndpoint any
+	// Gets the changed time.
+	ChangedTime any
+	// Gets the created time.
+	CreatedTime any
+	// The definition.
+	Definition any
+	// The endpoints configuration.
 	EndpointsConfiguration any
-	IntegrationAccount     any
-	Parameters             any
-	ProvisioningState      any
-	Sku                    any
-	State                  any
-	Version                any
-}
-
-type OpenapiWorkflowVersion_Value struct {
-	Properties any
+	// The resource reference.
+	IntegrationAccount any
+	// The parameters.
+	Parameters any
+	// The workflow provisioning state.
+	ProvisioningState any
+	// The sku type.
+	Sku any
+	// The workflow state.
+	State any
+	// Gets the version.
+	Version any
 }
 
 type OpenapiWorkflowVersionConfig struct {
-	Name         any
+	Name any
+	VersionId any
 	WorkflowName any
 }
 
 type OpenapiWorkflowVersionAttrs struct {
+	// The geo-location where the resource lives
+	Location any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	// The WorkflowVersion items on this page
-	Value        any
+	// The workflow version properties.
+	Properties any
+	// Resource tags.
+	Tags any
+	VersionId any
 	WorkflowName any
 }
 
 var OpenapiWorkflowVersion = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_version",
 	Fields: ubx.FieldMap{
-		"Name":         ubx.FieldSpec{WireName: "name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"VersionId": ubx.FieldSpec{WireName: "version_id"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

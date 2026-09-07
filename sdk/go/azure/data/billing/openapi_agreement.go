@@ -3,56 +3,61 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiAgreement_Value_Properties_BillingProfileInfo struct {
-	BillingAccountId                     any
-	BillingProfileDisplayName            any
-	BillingProfileId                     any
-	BillingProfileSystemId               any
+type OpenapiAgreement_Properties_BillingProfileInfo struct {
+	BillingAccountId any
+	BillingProfileDisplayName any
+	BillingProfileId any
+	BillingProfileSystemId any
 	IndirectRelationshipOrganizationName any
 }
 
-type OpenapiAgreement_Value_Properties_Participants struct {
-	Email      any
-	Status     any
+type OpenapiAgreement_Properties_Participants struct {
+	Email any
+	Status any
 	StatusDate any
 }
 
-type OpenapiAgreement_Value_Properties struct {
-	AcceptanceMode         any
-	AgreementLink          any
-	BillingProfileInfo     any
-	Category               any
-	DisplayName            any
-	EffectiveDate          any
-	ExpirationDate         any
+type OpenapiAgreement_Properties struct {
+	// The mode of acceptance for an agreement.
+	AcceptanceMode any
+	// The URL to download the agreement.
+	AgreementLink any
+	// The list of billing profiles associated with agreement and present only for specific agreements.
+	BillingProfileInfo any
+	// The category of the agreement.
+	Category any
+	// The name of the agreement signed by a customer.
+	DisplayName any
+	// The date from which the agreement is effective.
+	EffectiveDate any
+	// The date when the agreement expires.
+	ExpirationDate any
+	// The ID of the lead billing account if this agreement is part of the Customer Affiliate Purchase Terms.
 	LeadBillingAccountName any
-	Participants           any
-	Status                 any
-}
-
-type OpenapiAgreement_Value struct {
-	Properties any
-	Tags       any
+	// The list of participants that participates in acceptance of an agreement.
+	Participants any
+	// The current status of the agreement.
+	Status any
 }
 
 type OpenapiAgreementConfig struct {
+	AgreementName any
 	BillingAccountName any
-	Expand             any
 }
 
 type OpenapiAgreementAttrs struct {
+	AgreementName any
 	BillingAccountName any
-	Expand             any
-	// The link to the next page of items
-	NextLink any
-	// The Agreement items on this page
-	Value any
+	// An agreement.
+	Properties any
+	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
+	Tags any
 }
 
 var OpenapiAgreement = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_agreement",
 	Fields: ubx.FieldMap{
+		"AgreementName": ubx.FieldSpec{WireName: "agreement_name"},
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Expand":             ubx.FieldSpec{WireName: "expand"},
 	},
 }

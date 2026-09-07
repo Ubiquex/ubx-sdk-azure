@@ -15,11 +15,11 @@ type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_Pr
 }
 
 var ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_PropertiesFields = ubx.FieldMap{
-	"DefaultHostname":   ubx.FieldSpec{WireName: "default_hostname"},
-	"Hostnames":         ubx.FieldSpec{WireName: "hostnames"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"SourceId":          ubx.FieldSpec{WireName: "source_id"},
-}
+		"DefaultHostname": ubx.FieldSpec{WireName: "default_hostname"},
+		"Hostnames": ubx.FieldSpec{WireName: "hostnames"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"SourceId": ubx.FieldSpec{WireName: "source_id"},
+	}
 
 type ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResourceConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -38,8 +38,8 @@ var ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource = u
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_PropertiesFields,
+			Kind: "object",
+			Fields: ApimgatewayconfigconnectionsApiManagementGatewayConfigConnectionResource_PropertiesFields,
 		},
 	},
 }

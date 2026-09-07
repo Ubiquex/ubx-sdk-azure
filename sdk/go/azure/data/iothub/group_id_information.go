@@ -3,41 +3,46 @@ package iothub
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type GroupIdInformation_Value_Properties struct {
-	GroupId           any
-	RequiredMembers   any
+type GroupIdInformation_Properties struct {
+	// The group id
+	GroupId any
+	// The required members for a specific group id
+	RequiredMembers any
+	// The required DNS zones for a specific group id
 	RequiredZoneNames any
 }
 
-type GroupIdInformation_Value struct {
-	Id         any
-	Name       any
-	Properties any
-	Type       any
-}
-
 type GroupIdInformationConfig struct {
-	ApiVersion        any
+	ApiVersion any
+	GroupId any
 	ResourceGroupName any
-	ResourceName      any
-	SubscriptionId    any
+	ResourceName any
+	SubscriptionId any
 }
 
 type GroupIdInformationAttrs struct {
-	ApiVersion        any
+	ApiVersion any
+	GroupId any
+	// The resource identifier.
+	Id any
+	// The resource name.
+	Name any
+	// The properties for a group information object
+	Properties any
 	ResourceGroupName any
-	ResourceName      any
-	SubscriptionId    any
-	// The list of available private link resources for an IotHub
-	Value any
+	ResourceName any
+	SubscriptionId any
+	// The resource type.
+	Type any
 }
 
 var GroupIdInformation = ubx.DataSourceBinding{
 	WireType: "azure_iothub_group_id_information",
 	Fields: ubx.FieldMap{
-		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"GroupId": ubx.FieldSpec{WireName: "group_id"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

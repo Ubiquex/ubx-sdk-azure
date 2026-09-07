@@ -3,88 +3,105 @@ package logic
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkflowRunAction_Value_Properties_Correlation struct {
+type WorkflowRunAction_Properties_Correlation struct {
+	// The action tracking identifier.
 	ActionTrackingId any
 }
 
-type WorkflowRunAction_Value_Properties_InputsLink_ContentHash struct {
+type WorkflowRunAction_Properties_InputsLink_ContentHash struct {
+	// The algorithm of the content hash.
 	Algorithm any
-	Value     any
+	// The value of the content hash.
+	Value any
 }
 
-type WorkflowRunAction_Value_Properties_InputsLink struct {
-	ContentHash    any
-	ContentSize    any
+type WorkflowRunAction_Properties_InputsLink struct {
+	// The content hash.
+	ContentHash any
+	// The content size.
+	ContentSize any
+	// The content version.
 	ContentVersion any
-	Metadata       any
-	Uri            any
+	Metadata any
+	// The content link URI.
+	Uri any
 }
 
-type WorkflowRunAction_Value_Properties_RetryHistory_Error_Error struct {
-	Code    any
+type WorkflowRunAction_Properties_RetryHistory_Error_Error struct {
+	Code any
 	Message any
 }
 
-type WorkflowRunAction_Value_Properties_RetryHistory_Error struct {
+type WorkflowRunAction_Properties_RetryHistory_Error struct {
 	Error any
 }
 
-type WorkflowRunAction_Value_Properties_RetryHistory struct {
-	ClientRequestId  any
-	Code             any
-	EndTime          any
-	Error            any
+type WorkflowRunAction_Properties_RetryHistory struct {
+	ClientRequestId any
+	Code any
+	EndTime any
+	Error any
 	ServiceRequestId any
-	StartTime        any
+	StartTime any
 }
 
-type WorkflowRunAction_Value_Properties struct {
-	Code              any
-	Correlation       any
-	EndTime           any
-	Error             any
-	InputsLink        any
-	OutputsLink       any
-	RetryHistory      any
-	StartTime         any
-	Status            any
+type WorkflowRunAction_Properties struct {
+	// Gets the code.
+	Code any
+	// The workflow run action correlation properties.
+	Correlation any
+	// Gets the end time.
+	EndTime any
+	Error any
+	// The content link.
+	InputsLink any
+	// The content link.
+	OutputsLink any
+	// Gets the retry histories.
+	RetryHistory any
+	// Gets the start time.
+	StartTime any
+	// The workflow status.
+	Status any
 	TrackedProperties any
-	TrackingId        any
-}
-
-type WorkflowRunAction_Value struct {
-	Name       any
-	Properties any
-	Type       any
+	// Gets the tracking id.
+	TrackingId any
 }
 
 type WorkflowRunActionConfig struct {
-	ApiVersion        any
+	ActionName any
+	ApiVersion any
 	ResourceGroupName any
-	RunName           any
-	SubscriptionId    any
-	WorkflowName      any
+	RunName any
+	SubscriptionId any
+	WorkflowName any
 }
 
 type WorkflowRunActionAttrs struct {
+	ActionName any
 	ApiVersion any
-	// The URL to get the next set of results.
-	NextLink          any
+	// The resource id.
+	Id any
+	// Gets the workflow run action name.
+	Name any
+	// The workflow run action properties.
+	Properties any
 	ResourceGroupName any
-	RunName           any
-	SubscriptionId    any
-	// A list of workflow run actions.
-	Value        any
+	RunName any
+	SubscriptionId any
+	// Gets the workflow run action type.
+	Type any
 	WorkflowName any
 }
 
 var WorkflowRunAction = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_run_action",
 	Fields: ubx.FieldMap{
-		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ActionName": ubx.FieldSpec{WireName: "action_name"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"RunName":           ubx.FieldSpec{WireName: "run_name"},
-		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
+		"RunName": ubx.FieldSpec{WireName: "run_name"},
+		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

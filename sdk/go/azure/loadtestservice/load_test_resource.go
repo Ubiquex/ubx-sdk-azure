@@ -47,45 +47,45 @@ type LoadTestResource_Properties struct {
 }
 
 var LoadTestResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var LoadTestResource_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   LoadTestResource_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: LoadTestResource_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var LoadTestResource_Properties_Encryption_IdentityFields = ubx.FieldMap{
-	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	"Type":       ubx.FieldSpec{WireName: "type"},
-}
+		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var LoadTestResource_Properties_EncryptionFields = ubx.FieldMap{
-	"Identity": ubx.FieldSpec{
-		WireName: "identity",
-		Kind:     "object",
-		Fields:   LoadTestResource_Properties_Encryption_IdentityFields,
-	},
-	"KeyUrl": ubx.FieldSpec{WireName: "key_url"},
-}
+		"Identity": ubx.FieldSpec{
+			WireName: "identity",
+			Kind: "object",
+			Fields: LoadTestResource_Properties_Encryption_IdentityFields,
+		},
+		"KeyUrl": ubx.FieldSpec{WireName: "key_url"},
+	}
 
 var LoadTestResource_PropertiesFields = ubx.FieldMap{
-	"DataPlaneUri": ubx.FieldSpec{WireName: "data_plane_uri"},
-	"Description":  ubx.FieldSpec{WireName: "description"},
-	"Encryption": ubx.FieldSpec{
-		WireName: "encryption",
-		Kind:     "object",
-		Fields:   LoadTestResource_Properties_EncryptionFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"DataPlaneUri": ubx.FieldSpec{WireName: "data_plane_uri"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Encryption": ubx.FieldSpec{
+			WireName: "encryption",
+			Kind: "object",
+			Fields: LoadTestResource_Properties_EncryptionFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type LoadTestResourceConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -114,14 +114,14 @@ var LoadTestResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   LoadTestResource_IdentityFields,
+			Kind: "object",
+			Fields: LoadTestResource_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   LoadTestResource_PropertiesFields,
+			Kind: "object",
+			Fields: LoadTestResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

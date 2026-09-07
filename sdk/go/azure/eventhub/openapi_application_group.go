@@ -20,19 +20,19 @@ type OpenapiApplicationGroup_Properties struct {
 }
 
 var OpenapiApplicationGroup_Properties_PoliciesFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiApplicationGroup_PropertiesFields = ubx.FieldMap{
-	"ClientAppGroupIdentifier": ubx.FieldSpec{WireName: "client_app_group_identifier"},
-	"IsEnabled":                ubx.FieldSpec{WireName: "is_enabled"},
-	"Policies": ubx.FieldSpec{
-		WireName: "policies",
-		Kind:     "list",
-		Fields:   OpenapiApplicationGroup_Properties_PoliciesFields,
-	},
-}
+		"ClientAppGroupIdentifier": ubx.FieldSpec{WireName: "client_app_group_identifier"},
+		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
+		"Policies": ubx.FieldSpec{
+			WireName: "policies",
+			Kind: "list",
+			Fields: OpenapiApplicationGroup_Properties_PoliciesFields,
+		},
+	}
 
 type OpenapiApplicationGroupConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -51,8 +51,8 @@ var OpenapiApplicationGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiApplicationGroup_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiApplicationGroup_PropertiesFields,
 		},
 	},
 }

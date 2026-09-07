@@ -3,47 +3,51 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceClusterRecoveryPoint_Value_Properties_ProviderSpecificDetails struct {
+type ServiceClusterRecoveryPoint_Properties_ProviderSpecificDetails struct {
+	// Gets the provider type.
 	InstanceType any
 }
 
-type ServiceClusterRecoveryPoint_Value_Properties struct {
+type ServiceClusterRecoveryPoint_Properties struct {
+	// Replication provider specific cluster recovery point details.
 	ProviderSpecificDetails any
-	RecoveryPointTime       any
-	RecoveryPointType       any
-}
-
-type ServiceClusterRecoveryPoint_Value struct {
-	Id         any
-	Name       any
-	Properties any
-	Type       any
+	// The recovery point time.
+	RecoveryPointTime any
+	// The recovery point type.
+	RecoveryPointType any
 }
 
 type ServiceClusterRecoveryPointConfig struct {
-	FabricName                       any
-	ProtectionContainerName          any
+	FabricName any
+	ProtectionContainerName any
+	RecoveryPointName any
 	ReplicationProtectionClusterName any
-	ResourceName                     any
+	ResourceName any
 }
 
 type ServiceClusterRecoveryPointAttrs struct {
 	FabricName any
-	// The link to the next page of items
-	NextLink                         any
-	ProtectionContainerName          any
+	// The recovery point Id.
+	Id any
+	// The recovery point name.
+	Name any
+	// Cluster recovery point properties.
+	Properties any
+	ProtectionContainerName any
+	RecoveryPointName any
 	ReplicationProtectionClusterName any
-	ResourceName                     any
-	// The ClusterRecoveryPoint items on this page
-	Value any
+	ResourceName any
+	// The resource type.
+	Type any
 }
 
 var ServiceClusterRecoveryPoint = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_cluster_recovery_point",
 	Fields: ubx.FieldMap{
-		"FabricName":                       ubx.FieldSpec{WireName: "fabric_name"},
-		"ProtectionContainerName":          ubx.FieldSpec{WireName: "protection_container_name"},
+		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
+		"RecoveryPointName": ubx.FieldSpec{WireName: "recovery_point_name"},
 		"ReplicationProtectionClusterName": ubx.FieldSpec{WireName: "replication_protection_cluster_name"},
-		"ResourceName":                     ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

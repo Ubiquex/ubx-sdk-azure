@@ -29,5 +29,6 @@ type DeletedBackupInstanceResourceAttrs struct {
 
 var DeletedBackupInstanceResource = ubx.ResourceBinding{
 	WireType: "azure_dataprotection_deleted_backup_instance_resource",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

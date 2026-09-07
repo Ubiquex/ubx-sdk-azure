@@ -3,219 +3,293 @@ package cognitiveservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Account_Value_Identity_UserAssignedIdentities struct {
-	ClientId    any
+type Account_Identity_UserAssignedIdentities struct {
+	ClientId any
 	PrincipalId any
 }
 
-type Account_Value_Identity struct {
-	PrincipalId            any
-	TenantId               any
-	Type                   any
+type Account_Identity struct {
+	// The principal ID of resource identity.
+	PrincipalId any
+	// The tenant ID of resource.
+	TenantId any
+	// The identity type.
+	Type any
+	// The list of user assigned identities associated with the resource. The user identity dictionary key references will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}
 	UserAssignedIdentities any
 }
 
-type Account_Value_Properties_AbusePenalty struct {
-	Action              any
-	Expiration          any
+type Account_Properties_AbusePenalty struct {
+	// The action of AbusePenalty.
+	Action any
+	// The datetime of expiration of the AbusePenalty.
+	Expiration any
+	// The percentage of rate limit.
 	RateLimitPercentage any
 }
 
-type Account_Value_Properties_AmlWorkspace struct {
+type Account_Properties_AmlWorkspace struct {
+	// Identity Client id of a AML account resource.
 	IdentityClientId any
-	ResourceId       any
+	// Full resource id of a AML account resource.
+	ResourceId any
 }
 
-type Account_Value_Properties_ApiProperties struct {
-	AadClientId                    any
-	AadTenantId                    any
-	EventHubConnectionString       any
-	QnaAzureSearchEndpointId       any
-	QnaAzureSearchEndpointKey      any
-	QnaRuntimeEndpoint             any
-	StatisticsEnabled              any
+type Account_Properties_ApiProperties struct {
+	// (Metrics Advisor Only) The Azure AD Client Id (Application Id).
+	AadClientId any
+	// (Metrics Advisor Only) The Azure AD Tenant Id.
+	AadTenantId any
+	// (Personalization Only) The flag to enable statistics of Bing Search.
+	EventHubConnectionString any
+	// (QnAMaker Only) The Azure Search endpoint id of QnAMaker.
+	QnaAzureSearchEndpointId any
+	// (QnAMaker Only) The Azure Search endpoint key of QnAMaker.
+	QnaAzureSearchEndpointKey any
+	// (QnAMaker Only) The runtime endpoint of QnAMaker.
+	QnaRuntimeEndpoint any
+	// (Bing Search Only) The flag to enable statistics of Bing Search.
+	StatisticsEnabled any
+	// (Personalization Only) The storage account connection string.
 	StorageAccountConnectionString any
-	SuperUser                      any
-	WebsiteName                    any
+	// (Metrics Advisor Only) The super user of Metrics Advisor.
+	SuperUser any
+	// (Metrics Advisor Only) The website name of Metrics Advisor.
+	WebsiteName any
 }
 
-type Account_Value_Properties_CallRateLimit_Rules_MatchPatterns struct {
+type Account_Properties_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path   any
+	Path any
 }
 
-type Account_Value_Properties_CallRateLimit_Rules struct {
-	Count                    any
+type Account_Properties_CallRateLimit_Rules struct {
+	Count any
 	DynamicThrottlingEnabled any
-	Key                      any
-	MatchPatterns            any
-	MinCount                 any
-	RenewalPeriod            any
-}
-
-type Account_Value_Properties_CallRateLimit struct {
-	Count         any
+	Key any
+	MatchPatterns any
+	MinCount any
 	RenewalPeriod any
-	Rules         any
 }
 
-type Account_Value_Properties_Capabilities struct {
-	Name  any
+type Account_Properties_CallRateLimit struct {
+	// The count value of Call Rate Limit.
+	Count any
+	// The renewal period in seconds of Call Rate Limit.
+	RenewalPeriod any
+	Rules any
+}
+
+type Account_Properties_Capabilities struct {
+	Name any
 	Value any
 }
 
-type Account_Value_Properties_CommitmentPlanAssociations struct {
-	CommitmentPlanId       any
+type Account_Properties_CommitmentPlanAssociations struct {
+	CommitmentPlanId any
 	CommitmentPlanLocation any
 }
 
-type Account_Value_Properties_Encryption_KeyVaultProperties struct {
+type Account_Properties_Encryption_KeyVaultProperties struct {
 	IdentityClientId any
-	KeyName          any
-	KeyVaultUri      any
-	KeyVersion       any
+	// Name of the Key from KeyVault
+	KeyName any
+	// Uri of KeyVault
+	KeyVaultUri any
+	// Version of the Key from KeyVault
+	KeyVersion any
 }
 
-type Account_Value_Properties_Encryption struct {
-	KeySource          any
+type Account_Properties_Encryption struct {
+	// Enumerates the possible value of keySource for Encryption
+	KeySource any
+	// Properties to configure keyVault Properties
 	KeyVaultProperties any
 }
 
-type Account_Value_Properties_Locations_Regions struct {
+type Account_Properties_Locations_Regions struct {
 	Customsubdomain any
-	Name            any
-	Value           any
+	Name any
+	Value any
 }
 
-type Account_Value_Properties_Locations struct {
-	Regions       any
+type Account_Properties_Locations struct {
+	Regions any
+	// Multiregion routing methods.
 	RoutingMethod any
 }
 
-type Account_Value_Properties_NetworkAcls_IpRules struct {
+type Account_Properties_NetworkAcls_IpRules struct {
 	Value any
 }
 
-type Account_Value_Properties_NetworkAcls_VirtualNetworkRules struct {
-	Id                               any
+type Account_Properties_NetworkAcls_VirtualNetworkRules struct {
+	Id any
 	IgnoreMissingVnetServiceEndpoint any
-	State                            any
+	State any
 }
 
-type Account_Value_Properties_NetworkAcls struct {
-	Bypass              any
-	DefaultAction       any
-	IpRules             any
+type Account_Properties_NetworkAcls struct {
+	// Setting for trusted services.
+	Bypass any
+	// The default action when no rule from ipRules and from virtualNetworkRules match. This is only used after the bypass property has been evaluated.
+	DefaultAction any
+	// The list of IP address rules.
+	IpRules any
+	// The list of virtual network rules.
 	VirtualNetworkRules any
 }
 
-type Account_Value_Properties_NetworkInjections struct {
-	Scenario                   any
-	SubnetArmId                any
+type Account_Properties_NetworkInjections struct {
+	Scenario any
+	SubnetArmId any
 	UseMicrosoftManagedNetwork any
 }
 
-type Account_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
+type Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
 	Id any
 }
 
-type Account_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
+type Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description     any
-	Status          any
+	Description any
+	Status any
 }
 
-type Account_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds                          any
-	PrivateEndpoint                   any
+type Account_Properties_PrivateEndpointConnections_Properties struct {
+	GroupIds any
+	PrivateEndpoint any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	ProvisioningState any
 }
 
-type Account_Value_Properties_PrivateEndpointConnections struct {
-	Etag       any
-	Location   any
+type Account_Properties_PrivateEndpointConnections struct {
+	Etag any
+	Location any
 	Properties any
 }
 
-type Account_Value_Properties_RaiMonitorConfig struct {
+type Account_Properties_RaiMonitorConfig struct {
+	// The storage resource Id.
 	AdxStorageResourceId any
-	IdentityClientId     any
+	// The identity client Id to access the storage.
+	IdentityClientId any
 }
 
-type Account_Value_Properties_SkuChangeInfo struct {
-	CountOfDowngrades              any
+type Account_Properties_SkuChangeInfo struct {
+	// Gets the count of downgrades.
+	CountOfDowngrades any
+	// Gets the count of upgrades after downgrades.
 	CountOfUpgradesAfterDowngrades any
-	LastChangeDate                 any
+	// Gets the last change date.
+	LastChangeDate any
 }
 
-type Account_Value_Properties struct {
-	AbusePenalty                  any
-	AllowProjectManagement        any
-	AllowedFqdnList               any
-	AmlWorkspace                  any
-	ApiProperties                 any
-	AssociatedProjects            any
-	CallRateLimit                 any
-	Capabilities                  any
-	CommitmentPlanAssociations    any
-	CustomSubDomainName           any
-	DateCreated                   any
-	DefaultProject                any
-	DeletionDate                  any
-	DisableLocalAuth              any
-	DynamicThrottlingEnabled      any
-	Encryption                    any
-	Endpoint                      any
-	Endpoints                     any
-	InternalId                    any
-	IsMigrated                    any
-	Locations                     any
-	MigrationToken                any
-	NetworkAcls                   any
-	NetworkInjections             any
-	PrivateEndpointConnections    any
-	ProvisioningState             any
-	PublicNetworkAccess           any
-	QuotaLimit                    any
-	RaiMonitorConfig              any
-	Restore                       any
+type Account_Properties struct {
+	// The abuse penalty.
+	AbusePenalty any
+	// Specifies whether this resource support project management as child resources, used as containers for access management, data isolation and cost in AI Foundry.
+	AllowProjectManagement any
+	AllowedFqdnList any
+	// The user owned AML account for Cognitive Services account.
+	AmlWorkspace any
+	// The api properties for special APIs.
+	ApiProperties any
+	// Specifies the projects, by project name, that are associated with this resource.
+	AssociatedProjects any
+	// The call rate limit Cognitive Services account.
+	CallRateLimit any
+	// Gets the capabilities of the cognitive services account. Each item indicates the capability of a specific feature. The values are read-only and for reference only.
+	Capabilities any
+	// The commitment plan associations of Cognitive Services account.
+	CommitmentPlanAssociations any
+	// Optional subdomain name used for token-based authentication.
+	CustomSubDomainName any
+	// Gets the date of cognitive services account creation.
+	DateCreated any
+	// Specifies the project, by project name, that is targeted when data plane endpoints are called without a project parameter.
+	DefaultProject any
+	// The deletion date, only available for deleted account.
+	DeletionDate any
+	DisableLocalAuth any
+	// The flag to enable dynamic throttling.
+	DynamicThrottlingEnabled any
+	// Properties to configure Encryption
+	Encryption any
+	// Endpoint of the created account.
+	Endpoint any
+	// Dictionary of <string>
+	Endpoints any
+	// The internal identifier (deprecated, do not use this property).
+	InternalId any
+	// If the resource is migrated from an existing key.
+	IsMigrated any
+	// The multiregion settings Cognitive Services account.
+	Locations any
+	// Resource migration token.
+	MigrationToken any
+	// A set of rules governing the network accessibility.
+	NetworkAcls any
+	NetworkInjections any
+	// The private endpoint connection associated with the Cognitive Services account.
+	PrivateEndpointConnections any
+	// Gets the status of the cognitive services account at the time the operation was called.
+	ProvisioningState any
+	// Whether or not public endpoint access is allowed for this account.
+	PublicNetworkAccess any
+	QuotaLimit any
+	// Cognitive Services Rai Monitor Config.
+	RaiMonitorConfig any
+	Restore any
 	RestrictOutboundNetworkAccess any
-	ScheduledPurgeDate            any
-	SkuChangeInfo                 any
-	StoredCompletionsDisabled     any
-	UserOwnedStorage              any
+	// The scheduled purge date, only available for deleted account.
+	ScheduledPurgeDate any
+	// Sku change info of account.
+	SkuChangeInfo any
+	// The flag to disable stored completions.
+	StoredCompletionsDisabled any
+	// The storage accounts for this resource.
+	UserOwnedStorage any
 }
 
-type Account_Value_Sku struct {
+type Account_Sku struct {
+	// If the SKU supports scale out/in then the capacity integer should be included. If scale out/in is not possible for the resource this may be omitted.
 	Capacity any
-	Family   any
-	Name     any
-	Size     any
-	Tier     any
-}
-
-type Account_Value struct {
-	Etag       any
-	Identity   any
-	Kind       any
-	Location   any
-	Properties any
-	Sku        any
-	Tags       any
+	// If the service has different generations of hardware, for the same SKU, then that can be captured here.
+	Family any
+	// The name of the SKU. Ex - P3. It is typically a letter+number code
+	Name any
+	// The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code.
+	Size any
+	// This field is required to be implemented by the Resource Provider if the service has more than one tier, but is not required on a PUT.
+	Tier any
 }
 
 type AccountConfig struct {
+	AccountName any
 }
 
 type AccountAttrs struct {
-	// The link used to get the next page of accounts.
-	NextLink any
-	// Gets the list of Cognitive Services accounts and their properties.
-	Value any
+	AccountName any
+	// Resource Etag.
+	Etag any
+	// Identity for the resource.
+	Identity any
+	// The kind (type) of cognitive service account.
+	Kind any
+	// The geo-location where the resource lives
+	Location any
+	// Properties of Cognitive Services account.
+	Properties any
+	// The resource model definition representing SKU
+	Sku any
+	// Resource tags.
+	Tags any
 }
 
 var Account = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_account",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+	},
 }

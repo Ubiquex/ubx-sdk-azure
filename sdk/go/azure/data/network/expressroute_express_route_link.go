@@ -3,46 +3,60 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ExpressrouteExpressRouteLink_Value_Properties_MacSecConfig struct {
+type ExpressrouteExpressRouteLink_Properties_MacSecConfig struct {
+	// Keyvault Secret Identifier URL containing Mac security CAK key.
 	CakSecretIdentifier any
-	Cipher              any
+	// Mac security cipher.
+	Cipher any
+	// Keyvault Secret Identifier URL containing Mac security CKN key.
 	CknSecretIdentifier any
-	SciState            any
+	// Sci mode enabled/disabled.
+	SciState any
 }
 
-type ExpressrouteExpressRouteLink_Value_Properties struct {
-	AdminState        any
-	ColoLocation      any
-	ConnectorType     any
-	InterfaceName     any
-	MacSecConfig      any
-	PatchPanelId      any
+type ExpressrouteExpressRouteLink_Properties struct {
+	// Administrative state of the physical port.
+	AdminState any
+	// Cololocation for ExpressRoute Hybrid Direct.
+	ColoLocation any
+	// Physical fiber port type.
+	ConnectorType any
+	// Name of Azure router interface.
+	InterfaceName any
+	// ExpressRouteLink Mac Security Configuration.
+	MacSecConfig any
+	// Mapping between physical port to patch panel port.
+	PatchPanelId any
+	// Provisioning states of a resource.
 	ProvisioningState any
-	RackId            any
-	RouterName        any
-}
-
-type ExpressrouteExpressRouteLink_Value struct {
-	Etag       any
-	Name       any
-	Properties any
+	// Mapping of physical patch panel to rack.
+	RackId any
+	// Name of Azure router associated with physical port.
+	RouterName any
 }
 
 type ExpressrouteExpressRouteLinkConfig struct {
 	ExpressRoutePortName any
+	LinkName any
 }
 
 type ExpressrouteExpressRouteLinkAttrs struct {
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
 	ExpressRoutePortName any
-	// The link to the next page of items
-	NextLink any
-	// The ExpressRouteLink items on this page
-	Value any
+	// Resource ID.
+	Id any
+	LinkName any
+	// Name of child port resource that is unique among child port resources of the parent.
+	Name any
+	// Properties specific to ExpressRouteLink resources.
+	Properties any
 }
 
 var ExpressrouteExpressRouteLink = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_link",
 	Fields: ubx.FieldMap{
 		"ExpressRoutePortName": ubx.FieldSpec{WireName: "express_route_port_name"},
+		"LinkName": ubx.FieldSpec{WireName: "link_name"},
 	},
 }

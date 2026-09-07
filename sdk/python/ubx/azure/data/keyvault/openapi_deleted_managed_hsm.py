@@ -7,31 +7,33 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDeletedManagedHsm_Value_Properties:
+class OpenapiDeletedManagedHsm_Properties:
+    # The deleted date.
     deletion_date: Any = None
+    # The location of the original managed HSM.
     location: Any = None
+    # The resource id of the original managed HSM.
     mhsm_id: Any = None
+    # Purge protection status of the original managed HSM.
     purge_protection_enabled: Any = None
+    # The scheduled purged date.
     scheduled_purge_date: Any = None
+    # Tags of the original managed HSM.
     tags: Any = None
 
 @dataclasses.dataclass
-class OpenapiDeletedManagedHsm_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiDeletedManagedHsmConfig:
-    pass
+    name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDeletedManagedHsmAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The DeletedManagedHsm items on this page
-    value: Any = None
+    name: Any = None
+    # Properties of the deleted managed HSM.
+    properties: Any = None
 
 OpenapiDeletedManagedHsm = ubx.DataSourceBinding(
     wire_type="azure_keyvault_openapi_deleted_managed_hsm",
     fields={
+        "name": ubx.FieldSpec(wire_name="name"),
     },
 )

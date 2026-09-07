@@ -3,41 +3,41 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets_RuleGroups_Rules struct {
-	Action       any
-	Description  any
-	RuleId       any
+type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_AvailableRuleSets_RuleGroups_Rules struct {
+	Action any
+	Description any
+	RuleId any
 	RuleIdString any
-	Sensitivity  any
-	State        any
+	Sensitivity any
+	State any
 }
 
-type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets_RuleGroups struct {
-	Description   any
+type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_AvailableRuleSets_RuleGroups struct {
+	Description any
 	RuleGroupName any
-	Rules         any
+	Rules any
 }
 
-type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_AvailableRuleSets struct {
-	RuleGroups     any
-	RuleSetType    any
+type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_AvailableRuleSets struct {
+	RuleGroups any
+	RuleSetType any
 	RuleSetVersion any
-	Status         any
-	Tiers          any
+	Status any
+	Tiers any
 }
 
-type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties_DefaultRuleSet struct {
-	RuleSetType    any
+type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties_DefaultRuleSet struct {
+	// The type of the web application firewall rule set.
+	RuleSetType any
+	// The version of the web application firewall rule set type.
 	RuleSetVersion any
 }
 
-type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value_Properties struct {
+type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Properties struct {
+	// The available rulesets.
 	AvailableRuleSets any
-	DefaultRuleSet    any
-}
-
-type ApplicationgatewayApplicationGatewayWafDynamicManifestResult_Value struct {
-	Properties any
+	// the default web application firewall rule set.
+	DefaultRuleSet any
 }
 
 type ApplicationgatewayApplicationGatewayWafDynamicManifestResultConfig struct {
@@ -45,11 +45,15 @@ type ApplicationgatewayApplicationGatewayWafDynamicManifestResultConfig struct {
 }
 
 type ApplicationgatewayApplicationGatewayWafDynamicManifestResultAttrs struct {
+	// Resource ID.
+	Id any
 	Location any
-	// The link to the next page of items
-	NextLink any
-	// The ApplicationGatewayWafDynamicManifestResult items on this page
-	Value any
+	// Resource name.
+	Name any
+	// Properties of ApplicationGatewayWafDynamicManifest.
+	Properties any
+	// Resource type.
+	Type any
 }
 
 var ApplicationgatewayApplicationGatewayWafDynamicManifestResult = ubx.DataSourceBinding{

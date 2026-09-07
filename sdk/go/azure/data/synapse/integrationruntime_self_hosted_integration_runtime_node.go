@@ -15,7 +15,7 @@ type IntegrationruntimeSelfHostedIntegrationRuntimeNodeAttrs struct {
 	// The time at which the integration runtime will expire in ISO8601 format.
 	ExpiryTime any
 	// URI for the host machine of the integration runtime.
-	HostServiceUri         any
+	HostServiceUri any
 	IntegrationRuntimeName any
 	// Indicates whether this node is the active dispatcher for integration runtime requests.
 	IsActiveDispatcher any
@@ -35,7 +35,7 @@ type IntegrationruntimeSelfHostedIntegrationRuntimeNodeAttrs struct {
 	MachineName any
 	// The maximum concurrent jobs in this integration runtime.
 	MaxConcurrentJobs any
-	NodeName          any
+	NodeName any
 	// The time at which the integration runtime node was registered in ISO8601 format.
 	RegisterTime any
 	// Status of the integration runtime node.

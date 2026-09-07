@@ -5,7 +5,12 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .best_practice import BestPractice, BestPracticeConfig
+from .best_practice_list import BestPracticeList, BestPracticeListConfig
 from .configuration_profile import ConfigurationProfile, ConfigurationProfileConfig
 from .configuration_profile_assignment import ConfigurationProfileAssignment, ConfigurationProfileAssignmentConfig
+from .configuration_profile_assignment_list import ConfigurationProfileAssignmentList, ConfigurationProfileAssignmentListConfig
+from .configuration_profile_list import ConfigurationProfileList, ConfigurationProfileListConfig
 from .report import Report, ReportConfig
+from .report_list import ReportList, ReportListConfig
 from .service_principal import ServicePrincipal, ServicePrincipalConfig
+from .service_principal_list import ServicePrincipalList, ServicePrincipalListConfig

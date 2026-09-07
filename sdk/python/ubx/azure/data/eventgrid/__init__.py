@@ -4,25 +4,29 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .ca_certificate import CaCertificate, CaCertificateConfig
-from .channel import Channel, ChannelConfig
-from .client import Client, ClientConfig
-from .client_group import ClientGroup, ClientGroupConfig
-from .domain import Domain, DomainConfig
-from .domain_topic import DomainTopic, DomainTopicConfig
+from .ca_certificate_list import CaCertificateList, CaCertificateListConfig
+from .channel_list import ChannelList, ChannelListConfig
+from .client_group_list import ClientGroupList, ClientGroupListConfig
+from .client_list import ClientList, ClientListConfig
+from .domain_list import DomainList, DomainListConfig
+from .domain_topic_list import DomainTopicList, DomainTopicListConfig
 from .extension_topic import ExtensionTopic, ExtensionTopicConfig
-from .namespace import Namespace, NamespaceConfig
-from .namespace_topic import NamespaceTopic, NamespaceTopicConfig
+from .namespace_list import NamespaceList, NamespaceListConfig
+from .namespace_topic_list import NamespaceTopicList, NamespaceTopicListConfig
 from .partner_configuration import PartnerConfiguration, PartnerConfigurationConfig
-from .partner_namespace import PartnerNamespace, PartnerNamespaceConfig
-from .partner_registration import PartnerRegistration, PartnerRegistrationConfig
-from .partner_topic import PartnerTopic, PartnerTopicConfig
-from .permission_binding import PermissionBinding, PermissionBindingConfig
-from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .partner_configuration_list import PartnerConfigurationList, PartnerConfigurationListConfig
+from .partner_namespace_list import PartnerNamespaceList, PartnerNamespaceListConfig
+from .partner_registration_list import PartnerRegistrationList, PartnerRegistrationListConfig
+from .partner_topic_list import PartnerTopicList, PartnerTopicListConfig
+from .permission_binding_list import PermissionBindingList, PermissionBindingListConfig
+from .private_endpoint_connection_list import PrivateEndpointConnectionList, PrivateEndpointConnectionListConfig
 from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .subscription import Subscription, SubscriptionConfig
-from .system_topic import SystemTopic, SystemTopicConfig
-from .topic import Topic, TopicConfig
-from .topic_space import TopicSpace, TopicSpaceConfig
+from .private_link_resource_list import PrivateLinkResourceList, PrivateLinkResourceListConfig
+from .subscription_list import SubscriptionList, SubscriptionListConfig
+from .system_topic_list import SystemTopicList, SystemTopicListConfig
+from .topic_list import TopicList, TopicListConfig
+from .topic_space_list import TopicSpaceList, TopicSpaceListConfig
 from .topic_type_info import TopicTypeInfo, TopicTypeInfoConfig
+from .topic_type_info_list import TopicTypeInfoList, TopicTypeInfoListConfig
 from .verified_partner import VerifiedPartner, VerifiedPartnerConfig
+from .verified_partner_list import VerifiedPartnerList, VerifiedPartnerListConfig

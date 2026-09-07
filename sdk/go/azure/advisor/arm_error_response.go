@@ -20,5 +20,6 @@ type ArmErrorResponseAttrs struct {
 
 var ArmErrorResponse = ubx.ResourceBinding{
 	WireType: "azure_advisor_arm_error_response",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

@@ -21,14 +21,14 @@ type OpenapiCertificate_Properties struct {
 }
 
 var OpenapiCertificate_PropertiesFields = ubx.FieldMap{
-	"Base64Value":      ubx.FieldSpec{WireName: "base64_value"},
-	"CreationTime":     ubx.FieldSpec{WireName: "creation_time"},
-	"Description":      ubx.FieldSpec{WireName: "description"},
-	"ExpiryTime":       ubx.FieldSpec{WireName: "expiry_time"},
-	"IsExportable":     ubx.FieldSpec{WireName: "is_exportable"},
-	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-	"Thumbprint":       ubx.FieldSpec{WireName: "thumbprint"},
-}
+		"Base64Value": ubx.FieldSpec{WireName: "base64_value"},
+		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
+		"IsExportable": ubx.FieldSpec{WireName: "is_exportable"},
+		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
+	}
 
 type OpenapiCertificateConfig struct {
 	// Gets or sets the name of the certificate.
@@ -50,8 +50,8 @@ var OpenapiCertificate = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiCertificate_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiCertificate_PropertiesFields,
 		},
 	},
 }

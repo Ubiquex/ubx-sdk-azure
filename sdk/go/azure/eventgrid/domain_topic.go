@@ -41,5 +41,6 @@ type DomainTopicAttrs struct {
 
 var DomainTopic = ubx.ResourceBinding{
 	WireType: "azure_eventgrid_domain_topic",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

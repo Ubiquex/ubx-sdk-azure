@@ -7,34 +7,61 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class HealthcareApisPrivateEndpointConnectionDescription_Value_SystemData:
-    created_at: Any = None
-    created_by: Any = None
-    created_by_type: Any = None
-    last_modified_at: Any = None
-    last_modified_by: Any = None
-    last_modified_by_type: Any = None
+class HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateEndpoint:
+    # The ARM identifier for Private Endpoint
+    id: Any = None
 
 @dataclasses.dataclass
-class HealthcareApisPrivateEndpointConnectionDescription_Value:
-    system_data: Any = None
+class HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateLinkServiceConnectionState:
+    # A message indicating if changes on the service provider require any updates on the consumer.
+    actions_required: Any = None
+    # The reason for approval/rejection of the connection.
+    description: Any = None
+    # The private endpoint connection status.
+    status: Any = None
+
+@dataclasses.dataclass
+class HealthcareApisPrivateEndpointConnectionDescription_Properties:
+    # The Private Endpoint resource.
+    private_endpoint: Any = None
+    # A collection of information about the state of the connection between service consumer and provider.
+    private_link_service_connection_state: Any = None
+    # The current provisioning state.
+    provisioning_state: Any = None
+
+@dataclasses.dataclass
+class HealthcareApisPrivateEndpointConnectionDescription_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisPrivateEndpointConnectionDescriptionConfig:
     resource_group_name: Any = None
-    resource_name: Any = None
+    workspace_name: Any = None
 
 @dataclasses.dataclass
 class HealthcareApisPrivateEndpointConnectionDescriptionAttrs:
+    # Properties of the PrivateEndpointConnectProperties.
+    properties: Any = None
     resource_group_name: Any = None
-    resource_name: Any = None
-    # Array of private endpoint connections
-    value: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    workspace_name: Any = None
 
 HealthcareApisPrivateEndpointConnectionDescription = ubx.DataSourceBinding(
     wire_type="azure_healthcareapis_healthcare_apis_private_endpoint_connection_description",
     fields={
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
-        "resource_name": ubx.FieldSpec(wire_name="resource_name"),
+        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

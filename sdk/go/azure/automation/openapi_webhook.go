@@ -34,26 +34,26 @@ type OpenapiWebhook_Properties struct {
 }
 
 var OpenapiWebhook_Properties_RunbookFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiWebhook_PropertiesFields = ubx.FieldMap{
-	"CreationTime":     ubx.FieldSpec{WireName: "creation_time"},
-	"Description":      ubx.FieldSpec{WireName: "description"},
-	"ExpiryTime":       ubx.FieldSpec{WireName: "expiry_time"},
-	"IsEnabled":        ubx.FieldSpec{WireName: "is_enabled"},
-	"LastInvokedTime":  ubx.FieldSpec{WireName: "last_invoked_time"},
-	"LastModifiedBy":   ubx.FieldSpec{WireName: "last_modified_by"},
-	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-	"Parameters":       ubx.FieldSpec{WireName: "parameters"},
-	"RunOn":            ubx.FieldSpec{WireName: "run_on"},
-	"Runbook": ubx.FieldSpec{
-		WireName: "runbook",
-		Kind:     "object",
-		Fields:   OpenapiWebhook_Properties_RunbookFields,
-	},
-	"Uri": ubx.FieldSpec{WireName: "uri"},
-}
+		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
+		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
+		"LastInvokedTime": ubx.FieldSpec{WireName: "last_invoked_time"},
+		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
+		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+		"Parameters": ubx.FieldSpec{WireName: "parameters"},
+		"RunOn": ubx.FieldSpec{WireName: "run_on"},
+		"Runbook": ubx.FieldSpec{
+			WireName: "runbook",
+			Kind: "object",
+			Fields: OpenapiWebhook_Properties_RunbookFields,
+		},
+		"Uri": ubx.FieldSpec{WireName: "uri"},
+	}
 
 type OpenapiWebhookConfig struct {
 	// Gets or sets the name of the webhook.
@@ -75,8 +75,8 @@ var OpenapiWebhook = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiWebhook_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiWebhook_PropertiesFields,
 		},
 	},
 }

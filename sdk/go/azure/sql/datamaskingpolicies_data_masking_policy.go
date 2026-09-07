@@ -15,11 +15,11 @@ type DatamaskingpoliciesDataMaskingPolicy_Properties struct {
 }
 
 var DatamaskingpoliciesDataMaskingPolicy_PropertiesFields = ubx.FieldMap{
-	"ApplicationPrincipals": ubx.FieldSpec{WireName: "application_principals"},
-	"DataMaskingState":      ubx.FieldSpec{WireName: "data_masking_state"},
-	"ExemptPrincipals":      ubx.FieldSpec{WireName: "exempt_principals"},
-	"MaskingLevel":          ubx.FieldSpec{WireName: "masking_level"},
-}
+		"ApplicationPrincipals": ubx.FieldSpec{WireName: "application_principals"},
+		"DataMaskingState": ubx.FieldSpec{WireName: "data_masking_state"},
+		"ExemptPrincipals": ubx.FieldSpec{WireName: "exempt_principals"},
+		"MaskingLevel": ubx.FieldSpec{WireName: "masking_level"},
+	}
 
 type DatamaskingpoliciesDataMaskingPolicyConfig struct {
 	// The properties of a database data masking policy.
@@ -40,8 +40,8 @@ var DatamaskingpoliciesDataMaskingPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   DatamaskingpoliciesDataMaskingPolicy_PropertiesFields,
+			Kind: "object",
+			Fields: DatamaskingpoliciesDataMaskingPolicy_PropertiesFields,
 		},
 	},
 }

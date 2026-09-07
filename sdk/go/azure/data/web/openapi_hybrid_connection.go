@@ -3,37 +3,46 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiHybridConnection_Value_Properties struct {
-	Hostname            any
-	Port                any
-	RelayArmUri         any
-	RelayName           any
-	SendKeyName         any
-	SendKeyValue        any
+type OpenapiHybridConnection_Properties struct {
+	// The hostname of the endpoint.
+	Hostname any
+	// The port of the endpoint.
+	Port any
+	// The ARM URI to the Service Bus relay.
+	RelayArmUri any
+	// The name of the Service Bus relay.
+	RelayName any
+	// The name of the Service Bus key which has Send permissions. This is used to authenticate to Service Bus.
+	SendKeyName any
+	// The value of the Service Bus key. This is used to authenticate to Service Bus. In ARM this key will not be returned normally, use the POST /listKeys API instead.
+	SendKeyValue any
+	// The name of the Service Bus namespace.
 	ServiceBusNamespace any
-	ServiceBusSuffix    any
-}
-
-type OpenapiHybridConnection_Value struct {
-	Kind       any
-	Properties any
+	// The suffix for the service bus endpoint. By default this is .servicebus.windows.net
+	ServiceBusSuffix any
 }
 
 type OpenapiHybridConnectionConfig struct {
 	Name any
+	NamespaceName any
+	RelayName any
 }
 
 type OpenapiHybridConnectionAttrs struct {
+	// Kind of resource.
+	Kind any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	// The HybridConnection items on this page
-	Value any
+	NamespaceName any
+	// HybridConnection resource specific properties
+	Properties any
+	RelayName any
 }
 
 var OpenapiHybridConnection = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_hybrid_connection",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
+		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"RelayName": ubx.FieldSpec{WireName: "relay_name"},
 	},
 }

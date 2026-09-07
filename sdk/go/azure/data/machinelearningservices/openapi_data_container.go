@@ -3,32 +3,27 @@ package machinelearningservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDataContainer_Value_Properties struct {
+type OpenapiDataContainer_Properties struct {
+	// Enum to determine the type of data.
 	DataType any
 }
 
-type OpenapiDataContainer_Value struct {
-	Properties any
-}
-
 type OpenapiDataContainerConfig struct {
-	ListViewType any
-	RegistryName any
+	Name any
+	WorkspaceName any
 }
 
 type OpenapiDataContainerAttrs struct {
-	ListViewType any
-	// The link to the next page of items
-	NextLink     any
-	RegistryName any
-	// The DataContainer items on this page
-	Value any
+	Name any
+	// Container for data asset versions.
+	Properties any
+	WorkspaceName any
 }
 
 var OpenapiDataContainer = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_data_container",
 	Fields: ubx.FieldMap{
-		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

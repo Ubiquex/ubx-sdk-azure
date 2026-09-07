@@ -3,37 +3,61 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VdiHealthCheckStatusDetails_Value_Properties_HealthChecks struct {
+type VdiHealthCheckStatusDetails_Properties_HealthChecks struct {
 	AdditionalDetails any
-	DisplayName       any
-	EndDateTime       any
-	ErrorType         any
+	DisplayName any
+	EndDateTime any
+	ErrorType any
 	RecommendedAction any
-	StartDateTime     any
-	Status            any
+	StartDateTime any
+	Status any
 }
 
-type VdiHealthCheckStatusDetails_Value_Properties struct {
-	EndDateTime   any
-	HealthChecks  any
+type VdiHealthCheckStatusDetails_Properties struct {
+	// End time of last execution of the health checks.
+	EndDateTime any
+	// Details for each health check item.
+	HealthChecks any
+	// Start time of last execution of the health checks.
 	StartDateTime any
 }
 
-type VdiHealthCheckStatusDetails_Value struct {
-	Properties any
+type VdiHealthCheckStatusDetails_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type VdiHealthCheckStatusDetailsConfig struct {
+	NetworkConnectionName any
 }
 
 type VdiHealthCheckStatusDetailsAttrs struct {
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
+	NetworkConnectionName any
+	// Health Check properties.
+	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var VdiHealthCheckStatusDetails = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_vdi_health_check_status_details",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"NetworkConnectionName": ubx.FieldSpec{WireName: "network_connection_name"},
+	},
 }

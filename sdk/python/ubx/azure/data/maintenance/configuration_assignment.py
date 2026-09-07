@@ -7,45 +7,81 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ConfigurationAssignment_Value_Properties_Filter_TagSettings:
+class ConfigurationAssignment_Properties_Filter_TagSettings:
+    # Filter VMs by Any or All specified tags.
     filter_operator: Any = None
+    # Dictionary of tags with its list of values.
     tags: Any = None
 
 @dataclasses.dataclass
-class ConfigurationAssignment_Value_Properties_Filter:
+class ConfigurationAssignment_Properties_Filter:
+    # List of locations to scope the query to.
     locations: Any = None
+    # List of allowed operating systems.
     os_types: Any = None
+    # List of allowed resource groups.
     resource_groups: Any = None
+    # List of allowed resources.
     resource_types: Any = None
+    # Tag filter information for the VM.
     tag_settings: Any = None
 
 @dataclasses.dataclass
-class ConfigurationAssignment_Value_Properties:
+class ConfigurationAssignment_Properties:
+    # Azure query for the update configuration.
     filter: Any = None
+    # The maintenance configuration Id
     maintenance_configuration_id: Any = None
+    # The unique resourceId
     resource_id: Any = None
 
 @dataclasses.dataclass
-class ConfigurationAssignment_Value:
-    location: Any = None
-    properties: Any = None
+class ConfigurationAssignment_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
 
 @dataclasses.dataclass
 class ConfigurationAssignmentConfig:
     api_version: Any = None
+    configuration_assignment_name: Any = None
+    resource_group_name: Any = None
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class ConfigurationAssignmentAttrs:
     api_version: Any = None
+    configuration_assignment_name: Any = None
+    # Fully qualified identifier of the resource
+    id: Any = None
+    # Location of the resource
+    location: Any = None
+    # Name of the resource
+    name: Any = None
+    # Properties for configuration assignment
+    properties: Any = None
+    resource_group_name: Any = None
     subscription_id: Any = None
-    # The list of configuration Assignments
-    value: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Type of the resource
+    type: Any = None
 
 ConfigurationAssignment = ubx.DataSourceBinding(
     wire_type="azure_maintenance_configuration_assignment",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
+        "configuration_assignment_name": ubx.FieldSpec(wire_name="configuration_assignment_name"),
+        "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },
 )

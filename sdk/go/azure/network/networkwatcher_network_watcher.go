@@ -9,8 +9,8 @@ type NetworkwatcherNetworkWatcher_Properties struct {
 }
 
 var NetworkwatcherNetworkWatcher_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type NetworkwatcherNetworkWatcherConfig struct {
 	// Resource ID.
@@ -43,12 +43,12 @@ type NetworkwatcherNetworkWatcherAttrs struct {
 var NetworkwatcherNetworkWatcher = ubx.ResourceBinding{
 	WireType: "azure_network_networkwatcher_network_watcher",
 	Fields: ubx.FieldMap{
-		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NetworkwatcherNetworkWatcher_PropertiesFields,
+			Kind: "object",
+			Fields: NetworkwatcherNetworkWatcher_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

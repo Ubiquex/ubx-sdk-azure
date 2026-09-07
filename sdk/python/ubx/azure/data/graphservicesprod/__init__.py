@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .account_resource import AccountResource, AccountResourceConfig
+from .account_resource_list import AccountResourceList, AccountResourceListConfig

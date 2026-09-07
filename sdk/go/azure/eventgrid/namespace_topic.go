@@ -30,11 +30,11 @@ type NamespaceTopic_SystemData struct {
 }
 
 var NamespaceTopic_PropertiesFields = ubx.FieldMap{
-	"EventRetentionInDays": ubx.FieldSpec{WireName: "event_retention_in_days"},
-	"InputSchema":          ubx.FieldSpec{WireName: "input_schema"},
-	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
-	"PublisherType":        ubx.FieldSpec{WireName: "publisher_type"},
-}
+		"EventRetentionInDays": ubx.FieldSpec{WireName: "event_retention_in_days"},
+		"InputSchema": ubx.FieldSpec{WireName: "input_schema"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"PublisherType": ubx.FieldSpec{WireName: "publisher_type"},
+	}
 
 type NamespaceTopicConfig struct {
 	// Properties of the namespace topic.
@@ -59,8 +59,8 @@ var NamespaceTopic = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NamespaceTopic_PropertiesFields,
+			Kind: "object",
+			Fields: NamespaceTopic_PropertiesFields,
 		},
 	},
 }

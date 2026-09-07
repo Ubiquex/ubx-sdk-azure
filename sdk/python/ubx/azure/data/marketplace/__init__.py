@@ -4,8 +4,8 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .admin_request_approvals_resource import AdminRequestApprovalsResource, AdminRequestApprovalsResourceConfig
-from .collection import Collection, CollectionConfig
-from .offer import Offer, OfferConfig
-from .private_store import PrivateStore, PrivateStoreConfig
-from .request_approval_resource import RequestApprovalResource, RequestApprovalResourceConfig
+from .admin_request_approvals_resource_list import AdminRequestApprovalsResourceList, AdminRequestApprovalsResourceListConfig
+from .collection_list import CollectionList, CollectionListConfig
+from .offer_list import OfferList, OfferListConfig
+from .private_store_list import PrivateStoreList, PrivateStoreListConfig
+from .request_approval_resource_list import RequestApprovalResourceList, RequestApprovalResourceListConfig

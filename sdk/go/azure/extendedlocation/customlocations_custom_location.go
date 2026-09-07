@@ -52,29 +52,29 @@ type CustomlocationsCustomLocation_SystemData struct {
 }
 
 var CustomlocationsCustomLocation_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var CustomlocationsCustomLocation_Properties_AuthenticationFields = ubx.FieldMap{
-	"Type":  ubx.FieldSpec{WireName: "type"},
-	"Value": ubx.FieldSpec{WireName: "value"},
-}
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var CustomlocationsCustomLocation_PropertiesFields = ubx.FieldMap{
-	"Authentication": ubx.FieldSpec{
-		WireName: "authentication",
-		Kind:     "object",
-		Fields:   CustomlocationsCustomLocation_Properties_AuthenticationFields,
-	},
-	"ClusterExtensionIds": ubx.FieldSpec{WireName: "cluster_extension_ids"},
-	"DisplayName":         ubx.FieldSpec{WireName: "display_name"},
-	"HostResourceId":      ubx.FieldSpec{WireName: "host_resource_id"},
-	"HostType":            ubx.FieldSpec{WireName: "host_type"},
-	"Namespace":           ubx.FieldSpec{WireName: "namespace"},
-	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"Authentication": ubx.FieldSpec{
+			WireName: "authentication",
+			Kind: "object",
+			Fields: CustomlocationsCustomLocation_Properties_AuthenticationFields,
+		},
+		"ClusterExtensionIds": ubx.FieldSpec{WireName: "cluster_extension_ids"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"HostResourceId": ubx.FieldSpec{WireName: "host_resource_id"},
+		"HostType": ubx.FieldSpec{WireName: "host_type"},
+		"Namespace": ubx.FieldSpec{WireName: "namespace"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type CustomlocationsCustomLocationConfig struct {
 	// Identity for the resource.
@@ -105,14 +105,14 @@ var CustomlocationsCustomLocation = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   CustomlocationsCustomLocation_IdentityFields,
+			Kind: "object",
+			Fields: CustomlocationsCustomLocation_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   CustomlocationsCustomLocation_PropertiesFields,
+			Kind: "object",
+			Fields: CustomlocationsCustomLocation_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

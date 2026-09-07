@@ -7,31 +7,32 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class MonitorsSapLandscapeMonitor_Value_Properties_Grouping_Landscape:
+class MonitorsSapLandscapeMonitor_Properties_Grouping_Landscape:
     name: Any = None
     top_sid: Any = None
 
 @dataclasses.dataclass
-class MonitorsSapLandscapeMonitor_Value_Properties_Grouping:
+class MonitorsSapLandscapeMonitor_Properties_Grouping:
+    # Gets or sets the list of landscape to SID mappings.
     landscape: Any = None
+    # Gets or sets the list of Sap Applications to SID mappings.
     sap_application: Any = None
 
 @dataclasses.dataclass
-class MonitorsSapLandscapeMonitor_Value_Properties_TopMetricsThresholds:
+class MonitorsSapLandscapeMonitor_Properties_TopMetricsThresholds:
     green: Any = None
     name: Any = None
     red: Any = None
     yellow: Any = None
 
 @dataclasses.dataclass
-class MonitorsSapLandscapeMonitor_Value_Properties:
+class MonitorsSapLandscapeMonitor_Properties:
+    # Gets or sets the SID groupings by landscape and Environment.
     grouping: Any = None
+    # State of provisioning of the SAP monitor.
     provisioning_state: Any = None
+    # Gets or sets the list Top Metric Thresholds for SAP Landscape Monitor Dashboard
     top_metrics_thresholds: Any = None
-
-@dataclasses.dataclass
-class MonitorsSapLandscapeMonitor_Value:
-    properties: Any = None
 
 @dataclasses.dataclass
 class MonitorsSapLandscapeMonitorConfig:
@@ -40,10 +41,8 @@ class MonitorsSapLandscapeMonitorConfig:
 @dataclasses.dataclass
 class MonitorsSapLandscapeMonitorAttrs:
     monitor_name: Any = None
-    # The URL to get the next set of SAP Landscape Monitor Dashboard.
-    next_link: Any = None
-    # The list of Sap Landscape Monitor configuration.
-    value: Any = None
+    # Gets or sets the properties for Sap Landscape Monitor Dashboard.
+    properties: Any = None
 
 MonitorsSapLandscapeMonitor = ubx.DataSourceBinding(
     wire_type="azure_workloads_monitors_sap_landscape_monitor",

@@ -3,37 +3,38 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VirtualwanConnectionSharedKeyResult_Value_Properties struct {
+type VirtualwanConnectionSharedKeyResult_Properties struct {
+	// Provisioning states of a resource.
 	ProvisioningState any
-	SharedKey         any
-	SharedKeyLength   any
-}
-
-type VirtualwanConnectionSharedKeyResult_Value struct {
-	Properties any
+	// The value of the shared key for the vpn link connection.
+	SharedKey any
+	// The length of the shared key for the vpn link connection.
+	SharedKeyLength any
 }
 
 type VirtualwanConnectionSharedKeyResultConfig struct {
-	ConnectionName     any
-	GatewayName        any
+	ConnectionName any
+	GatewayName any
 	LinkConnectionName any
 }
 
 type VirtualwanConnectionSharedKeyResultAttrs struct {
-	ConnectionName     any
-	GatewayName        any
+	ConnectionName any
+	GatewayName any
 	LinkConnectionName any
-	// The link to the next page of items
-	NextLink any
-	// The ConnectionSharedKeyResult items on this page
-	Value any
+	// Name of the resource.
+	Name any
+	// Parameters for SharedKey.
+	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanConnectionSharedKeyResult = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_connection_shared_key_result",
 	Fields: ubx.FieldMap{
-		"ConnectionName":     ubx.FieldSpec{WireName: "connection_name"},
-		"GatewayName":        ubx.FieldSpec{WireName: "gateway_name"},
+		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
+		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
 		"LinkConnectionName": ubx.FieldSpec{WireName: "link_connection_name"},
 	},
 }

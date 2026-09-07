@@ -3,70 +3,80 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPolicySetDefinition_Value_Properties_Parameters_Metadata struct {
+type OpenapiPolicySetDefinition_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description       any
-	DisplayName       any
-	StrongType        any
+	Description any
+	DisplayName any
+	StrongType any
 }
 
-type OpenapiPolicySetDefinition_Value_Properties_Parameters struct {
+type OpenapiPolicySetDefinition_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue  any
-	Metadata      any
-	Schema        any
-	Type          any
+	DefaultValue any
+	Metadata any
+	Schema any
+	Type any
 }
 
-type OpenapiPolicySetDefinition_Value_Properties_PolicyDefinitionGroups struct {
+type OpenapiPolicySetDefinition_Properties_PolicyDefinitionGroups struct {
 	AdditionalMetadataId any
-	Category             any
-	Description          any
-	DisplayName          any
-	Name                 any
+	Category any
+	Description any
+	DisplayName any
+	Name any
 }
 
-type OpenapiPolicySetDefinition_Value_Properties_PolicyDefinitions_Parameters struct {
+type OpenapiPolicySetDefinition_Properties_PolicyDefinitions_Parameters struct {
 	Value any
 }
 
-type OpenapiPolicySetDefinition_Value_Properties_PolicyDefinitions struct {
-	DefinitionVersion           any
-	EffectiveDefinitionVersion  any
-	GroupNames                  any
-	LatestDefinitionVersion     any
-	Parameters                  any
-	PolicyDefinitionId          any
+type OpenapiPolicySetDefinition_Properties_PolicyDefinitions struct {
+	DefinitionVersion any
+	EffectiveDefinitionVersion any
+	GroupNames any
+	LatestDefinitionVersion any
+	Parameters any
+	PolicyDefinitionId any
 	PolicyDefinitionReferenceId any
 }
 
-type OpenapiPolicySetDefinition_Value_Properties struct {
-	Description            any
-	DisplayName            any
-	Metadata               any
-	Parameters             any
+type OpenapiPolicySetDefinition_Properties struct {
+	// The policy set definition description.
+	Description any
+	// The display name of the policy set definition.
+	DisplayName any
+	// The policy set definition metadata. Metadata is an open ended object and is typically a collection of key value pairs.
+	Metadata any
+	// The policy set definition parameters that can be used in policy definition references.
+	Parameters any
+	// The metadata describing groups of policy definition references within the policy set definition.
 	PolicyDefinitionGroups any
-	PolicyDefinitions      any
-	PolicyType             any
-	Version                any
-	Versions               any
-}
-
-type OpenapiPolicySetDefinition_Value struct {
-	Properties any
+	// An array of policy definition references.
+	PolicyDefinitions any
+	// The type of policy definition. Possible values are NotSpecified, BuiltIn, Custom, and Static.
+	PolicyType any
+	// The policy set definition version in #.#.# format.
+	Version any
+	// A list of available versions for this policy set definition.
+	Versions any
 }
 
 type OpenapiPolicySetDefinitionConfig struct {
+	ManagementGroupId any
+	PolicySetDefinitionName any
 }
 
 type OpenapiPolicySetDefinitionAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The PolicySetDefinition items on this page
-	Value any
+	ManagementGroupId any
+	PolicySetDefinitionName any
+	// The policy set definition properties.
+	Properties any
 }
 
 var OpenapiPolicySetDefinition = ubx.DataSourceBinding{
 	WireType: "azure_resources_openapi_policy_set_definition",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
+		"PolicySetDefinitionName": ubx.FieldSpec{WireName: "policy_set_definition_name"},
+	},
 }

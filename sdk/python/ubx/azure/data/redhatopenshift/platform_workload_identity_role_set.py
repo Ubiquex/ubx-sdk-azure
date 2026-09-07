@@ -7,33 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class PlatformWorkloadIdentityRoleSet_Value_Properties_PlatformWorkloadIdentityRoles:
+class PlatformWorkloadIdentityRoleSet_Properties_PlatformWorkloadIdentityRoles:
     operator_name: Any = None
     role_definition_id: Any = None
     role_definition_name: Any = None
 
 @dataclasses.dataclass
-class PlatformWorkloadIdentityRoleSet_Value_Properties:
+class PlatformWorkloadIdentityRoleSet_Properties:
+    # OpenShiftVersion represents the version associated with this set of roles.
     open_shift_version: Any = None
+    # PlatformWorkloadIdentityRoles represents the set of roles associated with this version.
     platform_workload_identity_roles: Any = None
 
 @dataclasses.dataclass
-class PlatformWorkloadIdentityRoleSet_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class PlatformWorkloadIdentityRoleSetConfig:
-    pass
+    open_shift_minor_version: Any = None
 
 @dataclasses.dataclass
 class PlatformWorkloadIdentityRoleSetAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The PlatformWorkloadIdentityRoleSet items on this page
-    value: Any = None
+    open_shift_minor_version: Any = None
+    # PlatformWorkloadIdentityRoleSetProperties represents the properties of a PlatformWorkloadIdentityRoleSet resource.
+    properties: Any = None
 
 PlatformWorkloadIdentityRoleSet = ubx.DataSourceBinding(
     wire_type="azure_redhatopenshift_platform_workload_identity_role_set",
     fields={
+        "open_shift_minor_version": ubx.FieldSpec(wire_name="open_shift_minor_version"),
     },
 )

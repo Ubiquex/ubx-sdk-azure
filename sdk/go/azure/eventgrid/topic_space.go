@@ -28,10 +28,10 @@ type TopicSpace_SystemData struct {
 }
 
 var TopicSpace_PropertiesFields = ubx.FieldMap{
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"TopicTemplates":    ubx.FieldSpec{WireName: "topic_templates"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"TopicTemplates": ubx.FieldSpec{WireName: "topic_templates"},
+	}
 
 type TopicSpaceConfig struct {
 	// The properties of topic space.
@@ -56,8 +56,8 @@ var TopicSpace = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   TopicSpace_PropertiesFields,
+			Kind: "object",
+			Fields: TopicSpace_PropertiesFields,
 		},
 	},
 }

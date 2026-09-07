@@ -4,6 +4,6 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .load_test_resource import LoadTestResource, LoadTestResourceConfig
-from .outbound_environment_endpoint import OutboundEnvironmentEndpoint, OutboundEnvironmentEndpointConfig
-from .playwright_workspace import PlaywrightWorkspace, PlaywrightWorkspaceConfig
+from .load_test_resource_list import LoadTestResourceList, LoadTestResourceListConfig
+from .outbound_environment_endpoint_list import OutboundEnvironmentEndpointList, OutboundEnvironmentEndpointListConfig
+from .playwright_workspace_list import PlaywrightWorkspaceList, PlaywrightWorkspaceListConfig

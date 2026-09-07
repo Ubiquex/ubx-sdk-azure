@@ -7,55 +7,64 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiWorkflowEnvelope_Value_Properties_Health_Error_Details:
+class OpenapiWorkflowEnvelope_Properties_Health_Error_Details:
     pass
 
 @dataclasses.dataclass
-class OpenapiWorkflowEnvelope_Value_Properties_Health_Error:
+class OpenapiWorkflowEnvelope_Properties_Health_Error:
+    # Basic error code.
     code: Any = None
+    # Error Details.
     details: Any = None
+    # Type of error.
     extended_code: Any = None
+    # Inner errors.
     inner_errors: Any = None
+    # Any details of the error.
     message: Any = None
+    # Message template.
     message_template: Any = None
+    # Parameters for the template.
     parameters: Any = None
+    # The error target.
     target: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowEnvelope_Value_Properties_Health:
+class OpenapiWorkflowEnvelope_Properties_Health:
+    # Body of the error response returned from the API.
     error: Any = None
+    # Gets or sets the workflow health state.
     state: Any = None
 
 @dataclasses.dataclass
-class OpenapiWorkflowEnvelope_Value_Properties:
+class OpenapiWorkflowEnvelope_Properties:
+    # Gets or sets the files.
     files: Any = None
+    # The workflow state.
     flow_state: Any = None
+    # Represents the workflow health.
     health: Any = None
-
-@dataclasses.dataclass
-class OpenapiWorkflowEnvelope_Value:
-    kind: Any = None
-    location: Any = None
-    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkflowEnvelopeConfig:
     name: Any = None
-    slot: Any = None
+    workflow_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiWorkflowEnvelopeAttrs:
+    # The resource kind.
+    kind: Any = None
+    # The resource location.
+    location: Any = None
     name: Any = None
-    # The link to the next page of items
-    next_link: Any = None
-    slot: Any = None
-    # The WorkflowEnvelope items on this page
-    value: Any = None
+    # Additional workflow properties.
+    properties: Any = None
+    workflow_name: Any = None
 
 OpenapiWorkflowEnvelope = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_workflow_envelope",
     fields={
         "name": ubx.FieldSpec(wire_name="name"),
-        "slot": ubx.FieldSpec(wire_name="slot"),
+        "workflow_name": ubx.FieldSpec(wire_name="workflow_name"),
     },
 )

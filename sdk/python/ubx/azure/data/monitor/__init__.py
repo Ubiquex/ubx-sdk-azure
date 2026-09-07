@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .scheduledqueryrule_api_scheduled_query_rule_resource import ScheduledqueryruleApiScheduledQueryRuleResource, ScheduledqueryruleApiScheduledQueryRuleResourceConfig
+from .scheduledqueryrule_api_scheduled_query_rule_resource_list import ScheduledqueryruleApiScheduledQueryRuleResourceList, ScheduledqueryruleApiScheduledQueryRuleResourceListConfig

@@ -51,30 +51,30 @@ type ApimdeploymentApiManagementServiceResource_SystemData struct {
 }
 
 var ApimdeploymentApiManagementServiceResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var ApimdeploymentApiManagementServiceResource_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   ApimdeploymentApiManagementServiceResource_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: ApimdeploymentApiManagementServiceResource_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var ApimdeploymentApiManagementServiceResource_PropertiesFields = ubx.FieldMap{
-	"PublisherEmail": ubx.FieldSpec{WireName: "publisher_email"},
-	"PublisherName":  ubx.FieldSpec{WireName: "publisher_name"},
-}
+		"PublisherEmail": ubx.FieldSpec{WireName: "publisher_email"},
+		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
+	}
 
 var ApimdeploymentApiManagementServiceResource_SkuFields = ubx.FieldMap{
-	"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-}
+		"Capacity": ubx.FieldSpec{WireName: "capacity"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 type ApimdeploymentApiManagementServiceResourceConfig struct {
 	// Identity properties of the Api Management service resource.
@@ -121,21 +121,21 @@ var ApimdeploymentApiManagementServiceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   ApimdeploymentApiManagementServiceResource_IdentityFields,
+			Kind: "object",
+			Fields: ApimdeploymentApiManagementServiceResource_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ApimdeploymentApiManagementServiceResource_PropertiesFields,
+			Kind: "object",
+			Fields: ApimdeploymentApiManagementServiceResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   ApimdeploymentApiManagementServiceResource_SkuFields,
+			Kind: "object",
+			Fields: ApimdeploymentApiManagementServiceResource_SkuFields,
 		},
-		"Tags":  ubx.FieldSpec{WireName: "tags"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

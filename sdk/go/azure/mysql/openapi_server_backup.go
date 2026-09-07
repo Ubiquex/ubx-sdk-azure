@@ -22,5 +22,6 @@ type OpenapiServerBackupAttrs struct {
 
 var OpenapiServerBackup = ubx.ResourceBinding{
 	WireType: "azure_mysql_openapi_server_backup",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

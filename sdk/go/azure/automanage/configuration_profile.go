@@ -24,8 +24,8 @@ type ConfigurationProfile_SystemData struct {
 }
 
 var ConfigurationProfile_PropertiesFields = ubx.FieldMap{
-	"Configuration": ubx.FieldSpec{WireName: "configuration"},
-}
+		"Configuration": ubx.FieldSpec{WireName: "configuration"},
+	}
 
 type ConfigurationProfileConfig struct {
 	// The geo-location where the resource lives
@@ -53,8 +53,8 @@ var ConfigurationProfile = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ConfigurationProfile_PropertiesFields,
+			Kind: "object",
+			Fields: ConfigurationProfile_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -30,24 +30,24 @@ type OpenapiCustomDomain_Properties struct {
 }
 
 var OpenapiCustomDomain_Properties_CustomHttpsParametersFields = ubx.FieldMap{
-	"CertificateSource": ubx.FieldSpec{WireName: "certificate_source"},
-	"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
-	"ProtocolType":      ubx.FieldSpec{WireName: "protocol_type"},
-}
+		"CertificateSource": ubx.FieldSpec{WireName: "certificate_source"},
+		"MinimumTlsVersion": ubx.FieldSpec{WireName: "minimum_tls_version"},
+		"ProtocolType": ubx.FieldSpec{WireName: "protocol_type"},
+	}
 
 var OpenapiCustomDomain_PropertiesFields = ubx.FieldMap{
-	"CustomHttpsParameters": ubx.FieldSpec{
-		WireName: "custom_https_parameters",
-		Kind:     "object",
-		Fields:   OpenapiCustomDomain_Properties_CustomHttpsParametersFields,
-	},
-	"CustomHttpsProvisioningState":    ubx.FieldSpec{WireName: "custom_https_provisioning_state"},
-	"CustomHttpsProvisioningSubstate": ubx.FieldSpec{WireName: "custom_https_provisioning_substate"},
-	"HostName":                        ubx.FieldSpec{WireName: "host_name"},
-	"ProvisioningState":               ubx.FieldSpec{WireName: "provisioning_state"},
-	"ResourceState":                   ubx.FieldSpec{WireName: "resource_state"},
-	"ValidationData":                  ubx.FieldSpec{WireName: "validation_data"},
-}
+		"CustomHttpsParameters": ubx.FieldSpec{
+			WireName: "custom_https_parameters",
+			Kind: "object",
+			Fields: OpenapiCustomDomain_Properties_CustomHttpsParametersFields,
+		},
+		"CustomHttpsProvisioningState": ubx.FieldSpec{WireName: "custom_https_provisioning_state"},
+		"CustomHttpsProvisioningSubstate": ubx.FieldSpec{WireName: "custom_https_provisioning_substate"},
+		"HostName": ubx.FieldSpec{WireName: "host_name"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ResourceState": ubx.FieldSpec{WireName: "resource_state"},
+		"ValidationData": ubx.FieldSpec{WireName: "validation_data"},
+	}
 
 type OpenapiCustomDomainConfig struct {
 	// The JSON object that contains the properties of the custom domain to create.
@@ -64,8 +64,8 @@ var OpenapiCustomDomain = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiCustomDomain_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiCustomDomain_PropertiesFields,
 		},
 	},
 }

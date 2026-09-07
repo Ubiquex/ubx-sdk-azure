@@ -45,5 +45,6 @@ type ApplyUpdateAttrs struct {
 
 var ApplyUpdate = ubx.ResourceBinding{
 	WireType: "azure_maintenance_apply_update",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

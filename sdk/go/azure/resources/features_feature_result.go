@@ -24,5 +24,6 @@ type FeaturesFeatureResultAttrs struct {
 
 var FeaturesFeatureResult = ubx.ResourceBinding{
 	WireType: "azure_resources_features_feature_result",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

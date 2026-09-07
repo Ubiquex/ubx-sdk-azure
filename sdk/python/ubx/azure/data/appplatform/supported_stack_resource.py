@@ -7,13 +7,11 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class SupportedStackResource_Value_Properties:
+class SupportedStackResource_Properties:
+    # The id of supported stack
     stack_id: Any = None
+    # The version of supported stack
     version: Any = None
-
-@dataclasses.dataclass
-class SupportedStackResource_Value:
-    properties: Any = None
 
 @dataclasses.dataclass
 class SupportedStackResourceConfig:
@@ -21,19 +19,19 @@ class SupportedStackResourceConfig:
     build_service_name: Any = None
     resource_group_name: Any = None
     service_name: Any = None
+    stack_name: Any = None
     subscription_id: Any = None
 
 @dataclasses.dataclass
 class SupportedStackResourceAttrs:
     api_version: Any = None
     build_service_name: Any = None
-    # URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-    next_link: Any = None
+    # Supported stack resource properties
+    properties: Any = None
     resource_group_name: Any = None
     service_name: Any = None
+    stack_name: Any = None
     subscription_id: Any = None
-    # Collection of supported stacks resources
-    value: Any = None
 
 SupportedStackResource = ubx.DataSourceBinding(
     wire_type="azure_appplatform_supported_stack_resource",
@@ -42,6 +40,7 @@ SupportedStackResource = ubx.DataSourceBinding(
         "build_service_name": ubx.FieldSpec(wire_name="build_service_name"),
         "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
         "service_name": ubx.FieldSpec(wire_name="service_name"),
+        "stack_name": ubx.FieldSpec(wire_name="stack_name"),
         "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
     },
 )

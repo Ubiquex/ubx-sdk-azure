@@ -3,41 +3,56 @@ package eventgrid
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type TopicTypeInfo_Value_Properties_AdditionalEnforcedPermissions struct {
-	IsDataAction   any
+type TopicTypeInfo_Properties_AdditionalEnforcedPermissions struct {
+	IsDataAction any
 	PermissionName any
 }
 
-type TopicTypeInfo_Value_Properties struct {
-	AdditionalEnforcedPermissions        any
+type TopicTypeInfo_Properties struct {
+	// Permissions which are enforced for creating and updating system topics of this this topic type.
+	AdditionalEnforcedPermissions any
+	// Flag to indicate that a topic type can support both regional or global system topics.
 	AreRegionalAndGlobalSourcesSupported any
-	Description                          any
-	DisplayName                          any
-	Provider                             any
-	ProvisioningState                    any
-	ResourceRegionType                   any
-	SourceResourceFormat                 any
-	SupportedLocations                   any
-	SupportedScopesForSource             any
-}
-
-type TopicTypeInfo_Value struct {
-	Properties any
+	// Description of the topic type.
+	Description any
+	// Display Name for the topic type.
+	DisplayName any
+	// Namespace of the provider of the topic type.
+	Provider any
+	// Provisioning state of the topic type.
+	ProvisioningState any
+	// Region type of the resource.
+	ResourceRegionType any
+	// Source resource format.
+	SourceResourceFormat any
+	// List of locations supported by this topic type.
+	SupportedLocations any
+	// Supported source scopes.
+	SupportedScopesForSource any
 }
 
 type TopicTypeInfoConfig struct {
 	ApiVersion any
+	TopicTypeName any
 }
 
 type TopicTypeInfoAttrs struct {
 	ApiVersion any
-	// A collection of topic types
-	Value any
+	// Fully qualified identifier of the resource.
+	Id any
+	// Name of the resource.
+	Name any
+	// Properties of a topic type.
+	Properties any
+	TopicTypeName any
+	// Type of the resource.
+	Type any
 }
 
 var TopicTypeInfo = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_topic_type_info",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"TopicTypeName": ubx.FieldSpec{WireName: "topic_type_name"},
 	},
 }

@@ -3,39 +3,47 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiContinuousWebJob_Value_Properties struct {
+type OpenapiContinuousWebJob_Properties struct {
+	// Detailed status.
 	DetailedStatus any
-	Error          any
-	ExtraInfoUrl   any
-	LogUrl         any
-	RunCommand     any
-	Settings       any
-	Status         any
-	Url            any
-	UsingSdk       any
-	WebJobType     any
-}
-
-type OpenapiContinuousWebJob_Value struct {
-	Kind       any
-	Properties any
+	// Error information.
+	Error any
+	// Extra Info URL.
+	ExtraInfoUrl any
+	// Log URL.
+	LogUrl any
+	// Run command.
+	RunCommand any
+	// Job settings.
+	Settings any
+	// Job status.
+	Status any
+	// Job URL.
+	Url any
+	// Using SDK?
+	UsingSdk any
+	// Job type.
+	WebJobType any
 }
 
 type OpenapiContinuousWebJobConfig struct {
 	Name any
+	WebJobName any
 }
 
 type OpenapiContinuousWebJobAttrs struct {
+	// Kind of resource.
+	Kind any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	// The ContinuousWebJob items on this page
-	Value any
+	// ContinuousWebJob resource specific properties
+	Properties any
+	WebJobName any
 }
 
 var OpenapiContinuousWebJob = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_continuous_web_job",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
+		"WebJobName": ubx.FieldSpec{WireName: "web_job_name"},
 	},
 }

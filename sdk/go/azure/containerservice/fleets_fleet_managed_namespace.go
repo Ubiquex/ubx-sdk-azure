@@ -184,214 +184,215 @@ type FleetsFleetManagedNamespace_Properties struct {
 }
 
 var FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperties_DefaultNetworkPolicyFields = ubx.FieldMap{
-	"Egress":  ubx.FieldSpec{WireName: "egress"},
-	"Ingress": ubx.FieldSpec{WireName: "ingress"},
-}
+		"Egress": ubx.FieldSpec{WireName: "egress"},
+		"Ingress": ubx.FieldSpec{WireName: "ingress"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperties_DefaultResourceQuotaFields = ubx.FieldMap{
-	"CpuLimit":      ubx.FieldSpec{WireName: "cpu_limit"},
-	"CpuRequest":    ubx.FieldSpec{WireName: "cpu_request"},
-	"MemoryLimit":   ubx.FieldSpec{WireName: "memory_limit"},
-	"MemoryRequest": ubx.FieldSpec{WireName: "memory_request"},
-}
+		"CpuLimit": ubx.FieldSpec{WireName: "cpu_limit"},
+		"CpuRequest": ubx.FieldSpec{WireName: "cpu_request"},
+		"MemoryLimit": ubx.FieldSpec{WireName: "memory_limit"},
+		"MemoryRequest": ubx.FieldSpec{WireName: "memory_request"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_ManagedNamespacePropertiesFields = ubx.FieldMap{
-	"Annotations": ubx.FieldSpec{WireName: "annotations"},
-	"DefaultNetworkPolicy": ubx.FieldSpec{
-		WireName: "default_network_policy",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperties_DefaultNetworkPolicyFields,
-	},
-	"DefaultResourceQuota": ubx.FieldSpec{
-		WireName: "default_resource_quota",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperties_DefaultResourceQuotaFields,
-	},
-	"Labels": ubx.FieldSpec{WireName: "labels"},
-}
+		"Annotations": ubx.FieldSpec{WireName: "annotations"},
+		"DefaultNetworkPolicy": ubx.FieldSpec{
+			WireName: "default_network_policy",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperties_DefaultNetworkPolicyFields,
+		},
+		"DefaultResourceQuota": ubx.FieldSpec{
+			WireName: "default_resource_quota",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_ManagedNamespaceProperties_DefaultResourceQuotaFields,
+		},
+		"Labels": ubx.FieldSpec{WireName: "labels"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressionsFields = ubx.FieldMap{
-	"Key":      ubx.FieldSpec{WireName: "key"},
-	"Operator": ubx.FieldSpec{WireName: "operator"},
-	"Values":   ubx.FieldSpec{WireName: "values"},
-}
+		"Key": ubx.FieldSpec{WireName: "key"},
+		"Operator": ubx.FieldSpec{WireName: "operator"},
+		"Values": ubx.FieldSpec{WireName: "values"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelectorFields = ubx.FieldMap{
-	"MatchExpressions": ubx.FieldSpec{
-		WireName: "match_expressions",
-		Kind:     "list",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressionsFields,
-	},
-	"MatchLabels": ubx.FieldSpec{WireName: "match_labels"},
-}
+		"MatchExpressions": ubx.FieldSpec{
+			WireName: "match_expressions",
+			Kind: "list",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelector_MatchExpressionsFields,
+		},
+		"MatchLabels": ubx.FieldSpec{WireName: "match_labels"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressionsFields = ubx.FieldMap{
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Operator": ubx.FieldSpec{WireName: "operator"},
-	"Values":   ubx.FieldSpec{WireName: "values"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Operator": ubx.FieldSpec{WireName: "operator"},
+		"Values": ubx.FieldSpec{WireName: "values"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelectorFields = ubx.FieldMap{
-	"MatchExpressions": ubx.FieldSpec{
-		WireName: "match_expressions",
-		Kind:     "list",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressionsFields,
-	},
-}
+		"MatchExpressions": ubx.FieldSpec{
+			WireName: "match_expressions",
+			Kind: "list",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelector_MatchExpressionsFields,
+		},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTermsFields = ubx.FieldMap{
-	"LabelSelector": ubx.FieldSpec{
-		WireName: "label_selector",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelectorFields,
-	},
-	"PropertySelector": ubx.FieldSpec{
-		WireName: "property_selector",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelectorFields,
-	},
-}
+		"LabelSelector": ubx.FieldSpec{
+			WireName: "label_selector",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_LabelSelectorFields,
+		},
+		"PropertySelector": ubx.FieldSpec{
+			WireName: "property_selector",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTerms_PropertySelectorFields,
+		},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecutionFields = ubx.FieldMap{
-	"ClusterSelectorTerms": ubx.FieldSpec{
-		WireName: "cluster_selector_terms",
-		Kind:     "list",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTermsFields,
-	},
-}
+		"ClusterSelectorTerms": ubx.FieldSpec{
+			WireName: "cluster_selector_terms",
+			Kind: "list",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecution_ClusterSelectorTermsFields,
+		},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinityFields = ubx.FieldMap{
-	"RequiredDuringSchedulingIgnoredDuringExecution": ubx.FieldSpec{
-		WireName: "required_during_scheduling_ignored_during_execution",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecutionFields,
-	},
-}
+		"RequiredDuringSchedulingIgnoredDuringExecution": ubx.FieldSpec{
+			WireName: "required_during_scheduling_ignored_during_execution",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinity_RequiredDuringSchedulingIgnoredDuringExecutionFields,
+		},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_AffinityFields = ubx.FieldMap{
-	"ClusterAffinity": ubx.FieldSpec{
-		WireName: "cluster_affinity",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinityFields,
-	},
-}
+		"ClusterAffinity": ubx.FieldSpec{
+			WireName: "cluster_affinity",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_Affinity_ClusterAffinityFields,
+		},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_TolerationsFields = ubx.FieldMap{
-	"Effect":   ubx.FieldSpec{WireName: "effect"},
-	"Key":      ubx.FieldSpec{WireName: "key"},
-	"Operator": ubx.FieldSpec{WireName: "operator"},
-	"Value":    ubx.FieldSpec{WireName: "value"},
-}
+		"Effect": ubx.FieldSpec{WireName: "effect"},
+		"Key": ubx.FieldSpec{WireName: "key"},
+		"Operator": ubx.FieldSpec{WireName: "operator"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_PolicyFields = ubx.FieldMap{
-	"Affinity": ubx.FieldSpec{
-		WireName: "affinity",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_AffinityFields,
-	},
-	"ClusterNames":  ubx.FieldSpec{WireName: "cluster_names"},
-	"PlacementType": ubx.FieldSpec{WireName: "placement_type"},
-	"Tolerations": ubx.FieldSpec{
-		WireName: "tolerations",
-		Kind:     "list",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_TolerationsFields,
-	},
-}
+		"Affinity": ubx.FieldSpec{
+			WireName: "affinity",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_AffinityFields,
+		},
+		"ClusterNames": ubx.FieldSpec{WireName: "cluster_names"},
+		"PlacementType": ubx.FieldSpec{WireName: "placement_type"},
+		"Tolerations": ubx.FieldSpec{
+			WireName: "tolerations",
+			Kind: "list",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_Policy_TolerationsFields,
+		},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacementFields = ubx.FieldMap{
-	"Policy": ubx.FieldSpec{
-		WireName: "policy",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_PolicyFields,
-	},
-}
+		"Policy": ubx.FieldSpec{
+			WireName: "policy",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacement_PolicyFields,
+		},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfileFields = ubx.FieldMap{
-	"DefaultClusterResourcePlacement": ubx.FieldSpec{
-		WireName: "default_cluster_resource_placement",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacementFields,
-	},
-}
+		"DefaultClusterResourcePlacement": ubx.FieldSpec{
+			WireName: "default_cluster_resource_placement",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfile_DefaultClusterResourcePlacementFields,
+		},
+	}
 
 var FleetsFleetManagedNamespace_Properties_PropagationPolicyFields = ubx.FieldMap{
-	"PlacementProfile": ubx.FieldSpec{
-		WireName: "placement_profile",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfileFields,
-	},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"PlacementProfile": ubx.FieldSpec{
+			WireName: "placement_profile",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicy_PlacementProfileFields,
+		},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfoFields = ubx.FieldMap{
-	"Info": ubx.FieldSpec{WireName: "info"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Info": ubx.FieldSpec{WireName: "info"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
-var FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details_DetailsFields = ubx.FieldMap{}
+var FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details_DetailsFields = ubx.FieldMap{
+	}
 
 var FleetsFleetManagedNamespace_Properties_Status_LastOperationError_DetailsFields = ubx.FieldMap{
-	"AdditionalInfo": ubx.FieldSpec{
-		WireName: "additional_info",
-		Kind:     "list",
-		Fields:   FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfoFields,
-	},
-	"Code": ubx.FieldSpec{WireName: "code"},
-	"Details": ubx.FieldSpec{
-		WireName: "details",
-		Kind:     "list",
-		Fields:   FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details_DetailsFields,
-	},
-	"Message": ubx.FieldSpec{WireName: "message"},
-	"Target":  ubx.FieldSpec{WireName: "target"},
-}
+		"AdditionalInfo": ubx.FieldSpec{
+			WireName: "additional_info",
+			Kind: "list",
+			Fields: FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfoFields,
+		},
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Details": ubx.FieldSpec{
+			WireName: "details",
+			Kind: "list",
+			Fields: FleetsFleetManagedNamespace_Properties_Status_LastOperationError_Details_DetailsFields,
+		},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Target": ubx.FieldSpec{WireName: "target"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_Status_LastOperationErrorFields = ubx.FieldMap{
-	"AdditionalInfo": ubx.FieldSpec{
-		WireName: "additional_info",
-		Kind:     "list",
-		Fields:   FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfoFields,
-	},
-	"Code": ubx.FieldSpec{WireName: "code"},
-	"Details": ubx.FieldSpec{
-		WireName: "details",
-		Kind:     "list",
-		Fields:   FleetsFleetManagedNamespace_Properties_Status_LastOperationError_DetailsFields,
-	},
-	"Message": ubx.FieldSpec{WireName: "message"},
-	"Target":  ubx.FieldSpec{WireName: "target"},
-}
+		"AdditionalInfo": ubx.FieldSpec{
+			WireName: "additional_info",
+			Kind: "list",
+			Fields: FleetsFleetManagedNamespace_Properties_Status_LastOperationError_AdditionalInfoFields,
+		},
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Details": ubx.FieldSpec{
+			WireName: "details",
+			Kind: "list",
+			Fields: FleetsFleetManagedNamespace_Properties_Status_LastOperationError_DetailsFields,
+		},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Target": ubx.FieldSpec{WireName: "target"},
+	}
 
 var FleetsFleetManagedNamespace_Properties_StatusFields = ubx.FieldMap{
-	"LastOperationError": ubx.FieldSpec{
-		WireName: "last_operation_error",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_Status_LastOperationErrorFields,
-	},
-	"LastOperationId": ubx.FieldSpec{WireName: "last_operation_id"},
-}
+		"LastOperationError": ubx.FieldSpec{
+			WireName: "last_operation_error",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_Status_LastOperationErrorFields,
+		},
+		"LastOperationId": ubx.FieldSpec{WireName: "last_operation_id"},
+	}
 
 var FleetsFleetManagedNamespace_PropertiesFields = ubx.FieldMap{
-	"AdoptionPolicy": ubx.FieldSpec{WireName: "adoption_policy"},
-	"DeletePolicy":   ubx.FieldSpec{WireName: "delete_policy"},
-	"ManagedNamespaceProperties": ubx.FieldSpec{
-		WireName: "managed_namespace_properties",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_ManagedNamespacePropertiesFields,
-	},
-	"PortalFqdn": ubx.FieldSpec{WireName: "portal_fqdn"},
-	"PropagationPolicy": ubx.FieldSpec{
-		WireName: "propagation_policy",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_PropagationPolicyFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Status": ubx.FieldSpec{
-		WireName: "status",
-		Kind:     "object",
-		Fields:   FleetsFleetManagedNamespace_Properties_StatusFields,
-	},
-}
+		"AdoptionPolicy": ubx.FieldSpec{WireName: "adoption_policy"},
+		"DeletePolicy": ubx.FieldSpec{WireName: "delete_policy"},
+		"ManagedNamespaceProperties": ubx.FieldSpec{
+			WireName: "managed_namespace_properties",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_ManagedNamespacePropertiesFields,
+		},
+		"PortalFqdn": ubx.FieldSpec{WireName: "portal_fqdn"},
+		"PropagationPolicy": ubx.FieldSpec{
+			WireName: "propagation_policy",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_PropagationPolicyFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Status": ubx.FieldSpec{
+			WireName: "status",
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_Properties_StatusFields,
+		},
+	}
 
 type FleetsFleetManagedNamespaceConfig struct {
 	// The geo-location where the resource lives
@@ -419,8 +420,8 @@ var FleetsFleetManagedNamespace = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   FleetsFleetManagedNamespace_PropertiesFields,
+			Kind: "object",
+			Fields: FleetsFleetManagedNamespace_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

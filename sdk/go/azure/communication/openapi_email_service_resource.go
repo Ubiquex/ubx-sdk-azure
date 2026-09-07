@@ -11,9 +11,9 @@ type OpenapiEmailServiceResource_Properties struct {
 }
 
 var OpenapiEmailServiceResource_PropertiesFields = ubx.FieldMap{
-	"DataLocation":      ubx.FieldSpec{WireName: "data_location"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"DataLocation": ubx.FieldSpec{WireName: "data_location"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type OpenapiEmailServiceResourceConfig struct {
 	// The geo-location where the resource lives
@@ -39,8 +39,8 @@ var OpenapiEmailServiceResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiEmailServiceResource_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiEmailServiceResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

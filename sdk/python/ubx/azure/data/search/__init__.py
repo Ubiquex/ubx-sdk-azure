@@ -5,7 +5,8 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .network_security_perimeter_configuration import NetworkSecurityPerimeterConfiguration, NetworkSecurityPerimeterConfigurationConfig
-from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
-from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .service import Service, ServiceConfig
-from .shared_private_link_resource import SharedPrivateLinkResource, SharedPrivateLinkResourceConfig
+from .network_security_perimeter_configuration_list import NetworkSecurityPerimeterConfigurationList, NetworkSecurityPerimeterConfigurationListConfig
+from .private_endpoint_connection_list import PrivateEndpointConnectionList, PrivateEndpointConnectionListConfig
+from .private_link_resource_list import PrivateLinkResourceList, PrivateLinkResourceListConfig
+from .service_list import ServiceList, ServiceListConfig
+from .shared_private_link_resource_list import SharedPrivateLinkResourceList, SharedPrivateLinkResourceListConfig

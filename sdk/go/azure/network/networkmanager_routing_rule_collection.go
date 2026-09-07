@@ -37,20 +37,20 @@ type NetworkmanagerRoutingRuleCollection_SystemData struct {
 }
 
 var NetworkmanagerRoutingRuleCollection_Properties_AppliesToFields = ubx.FieldMap{
-	"NetworkGroupId": ubx.FieldSpec{WireName: "network_group_id"},
-}
+		"NetworkGroupId": ubx.FieldSpec{WireName: "network_group_id"},
+	}
 
 var NetworkmanagerRoutingRuleCollection_PropertiesFields = ubx.FieldMap{
-	"AppliesTo": ubx.FieldSpec{
-		WireName: "applies_to",
-		Kind:     "list",
-		Fields:   NetworkmanagerRoutingRuleCollection_Properties_AppliesToFields,
-	},
-	"Description":                ubx.FieldSpec{WireName: "description"},
-	"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
-	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
-	"ResourceGuid":               ubx.FieldSpec{WireName: "resource_guid"},
-}
+		"AppliesTo": ubx.FieldSpec{
+			WireName: "applies_to",
+			Kind: "list",
+			Fields: NetworkmanagerRoutingRuleCollection_Properties_AppliesToFields,
+		},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	}
 
 type NetworkmanagerRoutingRuleCollectionConfig struct {
 	// Defines the routing rule collection properties.
@@ -77,8 +77,8 @@ var NetworkmanagerRoutingRuleCollection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NetworkmanagerRoutingRuleCollection_PropertiesFields,
+			Kind: "object",
+			Fields: NetworkmanagerRoutingRuleCollection_PropertiesFields,
 		},
 	},
 }

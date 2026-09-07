@@ -11,9 +11,9 @@ type GeobackuppoliciesGeoBackupPolicy_Properties struct {
 }
 
 var GeobackuppoliciesGeoBackupPolicy_PropertiesFields = ubx.FieldMap{
-	"State":       ubx.FieldSpec{WireName: "state"},
-	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-}
+		"State": ubx.FieldSpec{WireName: "state"},
+		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+	}
 
 type GeobackuppoliciesGeoBackupPolicyConfig struct {
 	// The properties of the geo backup policy.
@@ -34,8 +34,8 @@ var GeobackuppoliciesGeoBackupPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   GeobackuppoliciesGeoBackupPolicy_PropertiesFields,
+			Kind: "object",
+			Fields: GeobackuppoliciesGeoBackupPolicy_PropertiesFields,
 		},
 	},
 }

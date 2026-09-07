@@ -4,6 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .openapi_experiment import OpenapiExperiment, OpenapiExperimentConfig
-from .openapi_target import OpenapiTarget, OpenapiTargetConfig
+from .openapi_experiment_list import OpenapiExperimentList, OpenapiExperimentListConfig
+from .openapi_target_list import OpenapiTargetList, OpenapiTargetListConfig
 from .openapi_target_type import OpenapiTargetType, OpenapiTargetTypeConfig
+from .openapi_target_type_list import OpenapiTargetTypeList, OpenapiTargetTypeListConfig

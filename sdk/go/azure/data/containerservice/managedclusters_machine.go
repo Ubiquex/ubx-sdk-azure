@@ -3,43 +3,44 @@ package containerservice
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ManagedclustersMachine_Value_Properties_Network_IpAddresses struct {
+type ManagedclustersMachine_Properties_Network_IpAddresses struct {
 	Family any
-	Ip     any
+	Ip any
 }
 
-type ManagedclustersMachine_Value_Properties_Network struct {
+type ManagedclustersMachine_Properties_Network struct {
+	// IPv4, IPv6 addresses of the machine
 	IpAddresses any
 }
 
-type ManagedclustersMachine_Value_Properties struct {
-	Network    any
+type ManagedclustersMachine_Properties struct {
+	// network properties of the machine
+	Network any
+	// Azure resource id of the machine. It can be used to GET underlying VM Instance
 	ResourceId any
-}
-
-type ManagedclustersMachine_Value struct {
-	Properties any
-	Zones      any
 }
 
 type ManagedclustersMachineConfig struct {
 	AgentPoolName any
-	ResourceName  any
+	MachineName any
+	ResourceName any
 }
 
 type ManagedclustersMachineAttrs struct {
 	AgentPoolName any
-	// The link to the next page of items
-	NextLink     any
+	MachineName any
+	// The properties of the machine
+	Properties any
 	ResourceName any
-	// The Machine items on this page
-	Value any
+	// The Availability zone in which machine is located.
+	Zones any
 }
 
 var ManagedclustersMachine = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_machine",
 	Fields: ubx.FieldMap{
 		"AgentPoolName": ubx.FieldSpec{WireName: "agent_pool_name"},
-		"ResourceName":  ubx.FieldSpec{WireName: "resource_name"},
+		"MachineName": ubx.FieldSpec{WireName: "machine_name"},
+		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

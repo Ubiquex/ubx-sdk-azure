@@ -33,20 +33,20 @@ type ApimsubscriptionsSubscriptionContract2_Properties struct {
 }
 
 var ApimsubscriptionsSubscriptionContract2_PropertiesFields = ubx.FieldMap{
-	"AllowTracing":     ubx.FieldSpec{WireName: "allow_tracing"},
-	"CreatedDate":      ubx.FieldSpec{WireName: "created_date"},
-	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
-	"EndDate":          ubx.FieldSpec{WireName: "end_date"},
-	"ExpirationDate":   ubx.FieldSpec{WireName: "expiration_date"},
-	"NotificationDate": ubx.FieldSpec{WireName: "notification_date"},
-	"OwnerId":          ubx.FieldSpec{WireName: "owner_id"},
-	"PrimaryKey":       ubx.FieldSpec{WireName: "primary_key"},
-	"Scope":            ubx.FieldSpec{WireName: "scope"},
-	"SecondaryKey":     ubx.FieldSpec{WireName: "secondary_key"},
-	"StartDate":        ubx.FieldSpec{WireName: "start_date"},
-	"State":            ubx.FieldSpec{WireName: "state"},
-	"StateComment":     ubx.FieldSpec{WireName: "state_comment"},
-}
+		"AllowTracing": ubx.FieldSpec{WireName: "allow_tracing"},
+		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"EndDate": ubx.FieldSpec{WireName: "end_date"},
+		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
+		"NotificationDate": ubx.FieldSpec{WireName: "notification_date"},
+		"OwnerId": ubx.FieldSpec{WireName: "owner_id"},
+		"PrimaryKey": ubx.FieldSpec{WireName: "primary_key"},
+		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"SecondaryKey": ubx.FieldSpec{WireName: "secondary_key"},
+		"StartDate": ubx.FieldSpec{WireName: "start_date"},
+		"State": ubx.FieldSpec{WireName: "state"},
+		"StateComment": ubx.FieldSpec{WireName: "state_comment"},
+	}
 
 type ApimsubscriptionsSubscriptionContract2Config struct {
 	// Parameters supplied to the Create subscription operation.
@@ -67,8 +67,8 @@ var ApimsubscriptionsSubscriptionContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ApimsubscriptionsSubscriptionContract2_PropertiesFields,
+			Kind: "object",
+			Fields: ApimsubscriptionsSubscriptionContract2_PropertiesFields,
 		},
 		"Sid": ubx.FieldSpec{WireName: "sid"},
 	},

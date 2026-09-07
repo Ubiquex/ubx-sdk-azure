@@ -3,39 +3,47 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DevBoxDefinition_Value_Properties_ActiveImageReference struct {
+type DevBoxDefinition_Properties_ActiveImageReference struct {
+	// The actual version of the image after use. When id references a gallery image latest version, this will indicate the actual version in use.
 	ExactVersion any
-	Id           any
+	// Image ID, or Image version ID. When Image ID is provided, its latest version will be used.
+	Id any
 }
 
-type DevBoxDefinition_Value_Properties_ImageValidationErrorDetails struct {
-	Code    any
+type DevBoxDefinition_Properties_ImageValidationErrorDetails struct {
+	// An identifier for the error.
+	Code any
+	// A message describing the error.
 	Message any
 }
 
-type DevBoxDefinition_Value_Properties struct {
-	ActiveImageReference        any
+type DevBoxDefinition_Properties struct {
+	// Image reference information
+	ActiveImageReference any
+	// Image validation error details
 	ImageValidationErrorDetails any
-	ImageValidationStatus       any
-	ProvisioningState           any
-	ValidationStatus            any
-}
-
-type DevBoxDefinition_Value struct {
-	Properties any
+	// Image validation status
+	ImageValidationStatus any
+	// Provisioning state of the resource.
+	ProvisioningState any
+	// Catalog resource validation status
+	ValidationStatus any
 }
 
 type DevBoxDefinitionConfig struct {
 }
 
 type DevBoxDefinitionAttrs struct {
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	// The geo-location where the resource lives
+	Location any
+	// Properties of a Dev Box definition.
+	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var DevBoxDefinition = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_dev_box_definition",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

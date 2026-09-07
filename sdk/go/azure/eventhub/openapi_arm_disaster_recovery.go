@@ -17,12 +17,12 @@ type OpenapiArmDisasterRecovery_Properties struct {
 }
 
 var OpenapiArmDisasterRecovery_PropertiesFields = ubx.FieldMap{
-	"AlternateName":                     ubx.FieldSpec{WireName: "alternate_name"},
-	"PartnerNamespace":                  ubx.FieldSpec{WireName: "partner_namespace"},
-	"PendingReplicationOperationsCount": ubx.FieldSpec{WireName: "pending_replication_operations_count"},
-	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
-	"Role":                              ubx.FieldSpec{WireName: "role"},
-}
+		"AlternateName": ubx.FieldSpec{WireName: "alternate_name"},
+		"PartnerNamespace": ubx.FieldSpec{WireName: "partner_namespace"},
+		"PendingReplicationOperationsCount": ubx.FieldSpec{WireName: "pending_replication_operations_count"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Role": ubx.FieldSpec{WireName: "role"},
+	}
 
 type OpenapiArmDisasterRecoveryConfig struct {
 	// Properties required to the Create Or Update Alias(Disaster Recovery configurations)
@@ -45,8 +45,8 @@ var OpenapiArmDisasterRecovery = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiArmDisasterRecovery_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiArmDisasterRecovery_PropertiesFields,
 		},
 		"Alias": ubx.FieldSpec{WireName: "alias"},
 	},

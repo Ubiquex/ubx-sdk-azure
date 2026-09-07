@@ -20,5 +20,6 @@ type ApimworkspacesPolicyContract2Attrs struct {
 
 var ApimworkspacesPolicyContract2 = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimworkspaces_policy_contract_2",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

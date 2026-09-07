@@ -18,5 +18,6 @@ type UserMetricsModelAttrs struct {
 
 var UserMetricsModel = ubx.DataSourceBinding{
 	WireType: "azure_trafficmanager_user_metrics_model",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

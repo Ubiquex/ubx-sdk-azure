@@ -72,67 +72,67 @@ type ConfigurationServiceResource_Properties struct {
 }
 
 var ConfigurationServiceResource_Properties_InstancesFields = ubx.FieldMap{
-	"Name":   ubx.FieldSpec{WireName: "name"},
-	"Status": ubx.FieldSpec{WireName: "status"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+	}
 
 var ConfigurationServiceResource_Properties_ResourceRequestsFields = ubx.FieldMap{
-	"Cpu":           ubx.FieldSpec{WireName: "cpu"},
-	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-	"Memory":        ubx.FieldSpec{WireName: "memory"},
-}
+		"Cpu": ubx.FieldSpec{WireName: "cpu"},
+		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+		"Memory": ubx.FieldSpec{WireName: "memory"},
+	}
 
 var ConfigurationServiceResource_Properties_Settings_GitProperty_RepositoriesFields = ubx.FieldMap{
-	"CaCertResourceId":      ubx.FieldSpec{WireName: "ca_cert_resource_id"},
-	"GitImplementation":     ubx.FieldSpec{WireName: "git_implementation"},
-	"HostKey":               ubx.FieldSpec{WireName: "host_key"},
-	"HostKeyAlgorithm":      ubx.FieldSpec{WireName: "host_key_algorithm"},
-	"Label":                 ubx.FieldSpec{WireName: "label"},
-	"Name":                  ubx.FieldSpec{WireName: "name"},
-	"Password":              ubx.FieldSpec{WireName: "password"},
-	"Patterns":              ubx.FieldSpec{WireName: "patterns"},
-	"PrivateKey":            ubx.FieldSpec{WireName: "private_key"},
-	"SearchPaths":           ubx.FieldSpec{WireName: "search_paths"},
-	"StrictHostKeyChecking": ubx.FieldSpec{WireName: "strict_host_key_checking"},
-	"Uri":                   ubx.FieldSpec{WireName: "uri"},
-	"Username":              ubx.FieldSpec{WireName: "username"},
-}
+		"CaCertResourceId": ubx.FieldSpec{WireName: "ca_cert_resource_id"},
+		"GitImplementation": ubx.FieldSpec{WireName: "git_implementation"},
+		"HostKey": ubx.FieldSpec{WireName: "host_key"},
+		"HostKeyAlgorithm": ubx.FieldSpec{WireName: "host_key_algorithm"},
+		"Label": ubx.FieldSpec{WireName: "label"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Password": ubx.FieldSpec{WireName: "password"},
+		"Patterns": ubx.FieldSpec{WireName: "patterns"},
+		"PrivateKey": ubx.FieldSpec{WireName: "private_key"},
+		"SearchPaths": ubx.FieldSpec{WireName: "search_paths"},
+		"StrictHostKeyChecking": ubx.FieldSpec{WireName: "strict_host_key_checking"},
+		"Uri": ubx.FieldSpec{WireName: "uri"},
+		"Username": ubx.FieldSpec{WireName: "username"},
+	}
 
 var ConfigurationServiceResource_Properties_Settings_GitPropertyFields = ubx.FieldMap{
-	"Repositories": ubx.FieldSpec{
-		WireName: "repositories",
-		Kind:     "list",
-		Fields:   ConfigurationServiceResource_Properties_Settings_GitProperty_RepositoriesFields,
-	},
-}
+		"Repositories": ubx.FieldSpec{
+			WireName: "repositories",
+			Kind: "list",
+			Fields: ConfigurationServiceResource_Properties_Settings_GitProperty_RepositoriesFields,
+		},
+	}
 
 var ConfigurationServiceResource_Properties_SettingsFields = ubx.FieldMap{
-	"GitProperty": ubx.FieldSpec{
-		WireName: "git_property",
-		Kind:     "object",
-		Fields:   ConfigurationServiceResource_Properties_Settings_GitPropertyFields,
-	},
-}
+		"GitProperty": ubx.FieldSpec{
+			WireName: "git_property",
+			Kind: "object",
+			Fields: ConfigurationServiceResource_Properties_Settings_GitPropertyFields,
+		},
+	}
 
 var ConfigurationServiceResource_PropertiesFields = ubx.FieldMap{
-	"Generation": ubx.FieldSpec{WireName: "generation"},
-	"Instances": ubx.FieldSpec{
-		WireName: "instances",
-		Kind:     "list",
-		Fields:   ConfigurationServiceResource_Properties_InstancesFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"ResourceRequests": ubx.FieldSpec{
-		WireName: "resource_requests",
-		Kind:     "object",
-		Fields:   ConfigurationServiceResource_Properties_ResourceRequestsFields,
-	},
-	"Settings": ubx.FieldSpec{
-		WireName: "settings",
-		Kind:     "object",
-		Fields:   ConfigurationServiceResource_Properties_SettingsFields,
-	},
-}
+		"Generation": ubx.FieldSpec{WireName: "generation"},
+		"Instances": ubx.FieldSpec{
+			WireName: "instances",
+			Kind: "list",
+			Fields: ConfigurationServiceResource_Properties_InstancesFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ResourceRequests": ubx.FieldSpec{
+			WireName: "resource_requests",
+			Kind: "object",
+			Fields: ConfigurationServiceResource_Properties_ResourceRequestsFields,
+		},
+		"Settings": ubx.FieldSpec{
+			WireName: "settings",
+			Kind: "object",
+			Fields: ConfigurationServiceResource_Properties_SettingsFields,
+		},
+	}
 
 type ConfigurationServiceResourceConfig struct {
 	// Application Configuration Service properties payload
@@ -149,8 +149,8 @@ var ConfigurationServiceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ConfigurationServiceResource_PropertiesFields,
+			Kind: "object",
+			Fields: ConfigurationServiceResource_PropertiesFields,
 		},
 	},
 }

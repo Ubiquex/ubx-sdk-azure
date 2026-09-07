@@ -3,55 +3,64 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWorkflowEnvelope_Value_Properties_Health_Error_Details struct {
+type OpenapiWorkflowEnvelope_Properties_Health_Error_Details struct {
 }
 
-type OpenapiWorkflowEnvelope_Value_Properties_Health_Error struct {
-	Code            any
-	Details         any
-	ExtendedCode    any
-	InnerErrors     any
-	Message         any
+type OpenapiWorkflowEnvelope_Properties_Health_Error struct {
+	// Basic error code.
+	Code any
+	// Error Details.
+	Details any
+	// Type of error.
+	ExtendedCode any
+	// Inner errors.
+	InnerErrors any
+	// Any details of the error.
+	Message any
+	// Message template.
 	MessageTemplate any
-	Parameters      any
-	Target          any
+	// Parameters for the template.
+	Parameters any
+	// The error target.
+	Target any
 }
 
-type OpenapiWorkflowEnvelope_Value_Properties_Health struct {
+type OpenapiWorkflowEnvelope_Properties_Health struct {
+	// Body of the error response returned from the API.
 	Error any
+	// Gets or sets the workflow health state.
 	State any
 }
 
-type OpenapiWorkflowEnvelope_Value_Properties struct {
-	Files     any
+type OpenapiWorkflowEnvelope_Properties struct {
+	// Gets or sets the files.
+	Files any
+	// The workflow state.
 	FlowState any
-	Health    any
-}
-
-type OpenapiWorkflowEnvelope_Value struct {
-	Kind       any
-	Location   any
-	Properties any
+	// Represents the workflow health.
+	Health any
 }
 
 type OpenapiWorkflowEnvelopeConfig struct {
 	Name any
-	Slot any
+	WorkflowName any
 }
 
 type OpenapiWorkflowEnvelopeAttrs struct {
+	// The resource kind.
+	Kind any
+	// The resource location.
+	Location any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	Slot     any
-	// The WorkflowEnvelope items on this page
-	Value any
+	// Additional workflow properties.
+	Properties any
+	WorkflowName any
 }
 
 var OpenapiWorkflowEnvelope = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_envelope",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

@@ -26,9 +26,9 @@ type VirtualnetworkVerifierWorkspace_SystemData struct {
 }
 
 var VirtualnetworkVerifierWorkspace_PropertiesFields = ubx.FieldMap{
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type VirtualnetworkVerifierWorkspaceConfig struct {
 	// The geo-location where the resource lives
@@ -58,8 +58,8 @@ var VirtualnetworkVerifierWorkspace = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkVerifierWorkspace_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkVerifierWorkspace_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -3,30 +3,29 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDiagnosticCategory_Value_Properties struct {
+type OpenapiDiagnosticCategory_Properties struct {
+	// Description of the diagnostic category
 	Description any
 }
 
-type OpenapiDiagnosticCategory_Value struct {
-	Kind       any
-	Properties any
-}
-
 type OpenapiDiagnosticCategoryConfig struct {
+	DiagnosticCategory any
 	SiteName any
 }
 
 type OpenapiDiagnosticCategoryAttrs struct {
-	// The link to the next page of items
-	NextLink any
+	DiagnosticCategory any
+	// Kind of resource.
+	Kind any
+	// DiagnosticCategory resource specific properties
+	Properties any
 	SiteName any
-	// The DiagnosticCategory items on this page
-	Value any
 }
 
 var OpenapiDiagnosticCategory = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_diagnostic_category",
 	Fields: ubx.FieldMap{
+		"DiagnosticCategory": ubx.FieldSpec{WireName: "diagnostic_category"},
 		"SiteName": ubx.FieldSpec{WireName: "site_name"},
 	},
 }

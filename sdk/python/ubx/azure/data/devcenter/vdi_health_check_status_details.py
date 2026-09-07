@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class VdiHealthCheckStatusDetails_Value_Properties_HealthChecks:
+class VdiHealthCheckStatusDetails_Properties_HealthChecks:
     additional_details: Any = None
     display_name: Any = None
     end_date_time: Any = None
@@ -17,28 +17,50 @@ class VdiHealthCheckStatusDetails_Value_Properties_HealthChecks:
     status: Any = None
 
 @dataclasses.dataclass
-class VdiHealthCheckStatusDetails_Value_Properties:
+class VdiHealthCheckStatusDetails_Properties:
+    # End time of last execution of the health checks.
     end_date_time: Any = None
+    # Details for each health check item.
     health_checks: Any = None
+    # Start time of last execution of the health checks.
     start_date_time: Any = None
 
 @dataclasses.dataclass
-class VdiHealthCheckStatusDetails_Value:
-    properties: Any = None
+class VdiHealthCheckStatusDetails_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
 
 @dataclasses.dataclass
 class VdiHealthCheckStatusDetailsConfig:
-    pass
+    network_connection_name: Any = None
 
 @dataclasses.dataclass
 class VdiHealthCheckStatusDetailsAttrs:
-    # URL to get the next set of results if there are any.
-    next_link: Any = None
-    # Current page of results.
-    value: Any = None
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
+    network_connection_name: Any = None
+    # Health Check properties.
+    properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 VdiHealthCheckStatusDetails = ubx.DataSourceBinding(
     wire_type="azure_devcenter_vdi_health_check_status_details",
     fields={
+        "network_connection_name": ubx.FieldSpec(wire_name="network_connection_name"),
     },
 )

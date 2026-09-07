@@ -73,69 +73,69 @@ type Host_Sku struct {
 }
 
 var Host_Properties_InstanceView_AvailableCapacity_AllocatableVmsFields = ubx.FieldMap{
-	"Count":  ubx.FieldSpec{WireName: "count"},
-	"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-}
+		"Count": ubx.FieldSpec{WireName: "count"},
+		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
+	}
 
 var Host_Properties_InstanceView_AvailableCapacityFields = ubx.FieldMap{
-	"AllocatableVms": ubx.FieldSpec{
-		WireName: "allocatable_vms",
-		Kind:     "list",
-		Fields:   Host_Properties_InstanceView_AvailableCapacity_AllocatableVmsFields,
-	},
-}
+		"AllocatableVms": ubx.FieldSpec{
+			WireName: "allocatable_vms",
+			Kind: "list",
+			Fields: Host_Properties_InstanceView_AvailableCapacity_AllocatableVmsFields,
+		},
+	}
 
 var Host_Properties_InstanceView_StatusesFields = ubx.FieldMap{
-	"Code":          ubx.FieldSpec{WireName: "code"},
-	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-	"Level":         ubx.FieldSpec{WireName: "level"},
-	"Message":       ubx.FieldSpec{WireName: "message"},
-	"Time":          ubx.FieldSpec{WireName: "time"},
-}
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+		"Level": ubx.FieldSpec{WireName: "level"},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Time": ubx.FieldSpec{WireName: "time"},
+	}
 
 var Host_Properties_InstanceViewFields = ubx.FieldMap{
-	"AssetId": ubx.FieldSpec{WireName: "asset_id"},
-	"AvailableCapacity": ubx.FieldSpec{
-		WireName: "available_capacity",
-		Kind:     "object",
-		Fields:   Host_Properties_InstanceView_AvailableCapacityFields,
-	},
-	"Statuses": ubx.FieldSpec{
-		WireName: "statuses",
-		Kind:     "list",
-		Fields:   Host_Properties_InstanceView_StatusesFields,
-	},
-}
+		"AssetId": ubx.FieldSpec{WireName: "asset_id"},
+		"AvailableCapacity": ubx.FieldSpec{
+			WireName: "available_capacity",
+			Kind: "object",
+			Fields: Host_Properties_InstanceView_AvailableCapacityFields,
+		},
+		"Statuses": ubx.FieldSpec{
+			WireName: "statuses",
+			Kind: "list",
+			Fields: Host_Properties_InstanceView_StatusesFields,
+		},
+	}
 
 var Host_Properties_VirtualMachinesFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var Host_PropertiesFields = ubx.FieldMap{
-	"AutoReplaceOnFailure": ubx.FieldSpec{WireName: "auto_replace_on_failure"},
-	"HostId":               ubx.FieldSpec{WireName: "host_id"},
-	"InstanceView": ubx.FieldSpec{
-		WireName: "instance_view",
-		Kind:     "object",
-		Fields:   Host_Properties_InstanceViewFields,
-	},
-	"LicenseType":         ubx.FieldSpec{WireName: "license_type"},
-	"PlatformFaultDomain": ubx.FieldSpec{WireName: "platform_fault_domain"},
-	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
-	"ProvisioningTime":    ubx.FieldSpec{WireName: "provisioning_time"},
-	"TimeCreated":         ubx.FieldSpec{WireName: "time_created"},
-	"VirtualMachines": ubx.FieldSpec{
-		WireName: "virtual_machines",
-		Kind:     "list",
-		Fields:   Host_Properties_VirtualMachinesFields,
-	},
-}
+		"AutoReplaceOnFailure": ubx.FieldSpec{WireName: "auto_replace_on_failure"},
+		"HostId": ubx.FieldSpec{WireName: "host_id"},
+		"InstanceView": ubx.FieldSpec{
+			WireName: "instance_view",
+			Kind: "object",
+			Fields: Host_Properties_InstanceViewFields,
+		},
+		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
+		"PlatformFaultDomain": ubx.FieldSpec{WireName: "platform_fault_domain"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ProvisioningTime": ubx.FieldSpec{WireName: "provisioning_time"},
+		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
+		"VirtualMachines": ubx.FieldSpec{
+			WireName: "virtual_machines",
+			Kind: "list",
+			Fields: Host_Properties_VirtualMachinesFields,
+		},
+	}
 
 var Host_SkuFields = ubx.FieldMap{
-	"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Tier":     ubx.FieldSpec{WireName: "tier"},
-}
+		"Capacity": ubx.FieldSpec{WireName: "capacity"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 type HostConfig struct {
 	// The geo-location where the resource lives
@@ -165,13 +165,13 @@ var Host = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   Host_PropertiesFields,
+			Kind: "object",
+			Fields: Host_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   Host_SkuFields,
+			Kind: "object",
+			Fields: Host_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

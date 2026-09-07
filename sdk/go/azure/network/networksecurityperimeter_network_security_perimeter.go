@@ -11,9 +11,9 @@ type NetworksecurityperimeterNetworkSecurityPerimeter_Properties struct {
 }
 
 var NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields = ubx.FieldMap{
-	"PerimeterGuid":     ubx.FieldSpec{WireName: "perimeter_guid"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"PerimeterGuid": ubx.FieldSpec{WireName: "perimeter_guid"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type NetworksecurityperimeterNetworkSecurityPerimeterConfig struct {
 	// The geo-location where the resource lives
@@ -39,8 +39,8 @@ var NetworksecurityperimeterNetworkSecurityPerimeter = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields,
+			Kind: "object",
+			Fields: NetworksecurityperimeterNetworkSecurityPerimeter_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

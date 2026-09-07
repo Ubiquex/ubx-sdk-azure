@@ -3,25 +3,44 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPrivateEndpointConnection_Value_Properties_PrivateEndpoint struct {
+type OpenapiPrivateEndpointConnection_Properties_PrivateEndpoint struct {
+	// The ARM identifier for private endpoint.
 	Id any
 }
 
-type OpenapiPrivateEndpointConnection_Value_Properties_PrivateLinkServiceConnectionState struct {
+type OpenapiPrivateEndpointConnection_Properties_PrivateLinkServiceConnectionState struct {
+	// A message indicating if changes on the service provider require any updates on the consumer.
 	ActionsRequired any
-	Description     any
-	Status          any
+	// The reason for approval/rejection of the connection.
+	Description any
+	// The private endpoint connection status.
+	Status any
 }
 
-type OpenapiPrivateEndpointConnection_Value_Properties struct {
-	GroupIds                          any
-	PrivateEndpoint                   any
+type OpenapiPrivateEndpointConnection_Properties struct {
+	// The group ids for the private endpoint resource.
+	GroupIds any
+	// The private endpoint resource.
+	PrivateEndpoint any
+	// A collection of information about the state of the connection between service consumer and provider.
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
+	// The current provisioning state.
+	ProvisioningState any
 }
 
-type OpenapiPrivateEndpointConnection_Value struct {
-	Properties any
+type OpenapiPrivateEndpointConnection_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type OpenapiPrivateEndpointConnectionConfig struct {
@@ -29,11 +48,17 @@ type OpenapiPrivateEndpointConnectionConfig struct {
 }
 
 type OpenapiPrivateEndpointConnectionAttrs struct {
-	// The link to the next page of items
-	NextLink   any
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
+	// Properties of the private endpoint connection.
+	Properties any
 	ServerName any
-	// The PrivateEndpointConnection items on this page
-	Value any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var OpenapiPrivateEndpointConnection = ubx.DataSourceBinding{

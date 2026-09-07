@@ -5,4 +5,5 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .fluid_relay_container import FluidRelayContainer, FluidRelayContainerConfig
-from .fluid_relay_server import FluidRelayServer, FluidRelayServerConfig
+from .fluid_relay_container_list import FluidRelayContainerList, FluidRelayContainerListConfig
+from .fluid_relay_server_list import FluidRelayServerList, FluidRelayServerListConfig

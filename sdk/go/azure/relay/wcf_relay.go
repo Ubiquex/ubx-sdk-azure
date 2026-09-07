@@ -23,15 +23,15 @@ type WcfRelay_Properties struct {
 }
 
 var WcfRelay_PropertiesFields = ubx.FieldMap{
-	"CreatedAt":                   ubx.FieldSpec{WireName: "created_at"},
-	"IsDynamic":                   ubx.FieldSpec{WireName: "is_dynamic"},
-	"ListenerCount":               ubx.FieldSpec{WireName: "listener_count"},
-	"RelayType":                   ubx.FieldSpec{WireName: "relay_type"},
-	"RequiresClientAuthorization": ubx.FieldSpec{WireName: "requires_client_authorization"},
-	"RequiresTransportSecurity":   ubx.FieldSpec{WireName: "requires_transport_security"},
-	"UpdatedAt":                   ubx.FieldSpec{WireName: "updated_at"},
-	"UserMetadata":                ubx.FieldSpec{WireName: "user_metadata"},
-}
+		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
+		"IsDynamic": ubx.FieldSpec{WireName: "is_dynamic"},
+		"ListenerCount": ubx.FieldSpec{WireName: "listener_count"},
+		"RelayType": ubx.FieldSpec{WireName: "relay_type"},
+		"RequiresClientAuthorization": ubx.FieldSpec{WireName: "requires_client_authorization"},
+		"RequiresTransportSecurity": ubx.FieldSpec{WireName: "requires_transport_security"},
+		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
+		"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
+	}
 
 type WcfRelayConfig struct {
 	// Properties of the WCF relay.
@@ -50,8 +50,8 @@ var WcfRelay = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   WcfRelay_PropertiesFields,
+			Kind: "object",
+			Fields: WcfRelay_PropertiesFields,
 		},
 	},
 }

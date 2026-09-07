@@ -29,33 +29,33 @@ type FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties struct {
 }
 
 var FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressionsFields = ubx.FieldMap{
-	"Key":      ubx.FieldSpec{WireName: "key"},
-	"Operator": ubx.FieldSpec{WireName: "operator"},
-	"Values":   ubx.FieldSpec{WireName: "values"},
-}
+		"Key": ubx.FieldSpec{WireName: "key"},
+		"Operator": ubx.FieldSpec{WireName: "operator"},
+		"Values": ubx.FieldSpec{WireName: "values"},
+	}
 
 var FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields = ubx.FieldMap{
-	"MatchExpressions": ubx.FieldSpec{
-		WireName: "match_expressions",
-		Kind:     "list",
-		Fields:   FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressionsFields,
-	},
-	"MatchLabels": ubx.FieldSpec{WireName: "match_labels"},
-}
+		"MatchExpressions": ubx.FieldSpec{
+			WireName: "match_expressions",
+			Kind: "list",
+			Fields: FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelector_MatchExpressionsFields,
+		},
+		"MatchLabels": ubx.FieldSpec{WireName: "match_labels"},
+	}
 
 var FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields = ubx.FieldMap{
-	"NamespaceSelector": ubx.FieldSpec{
-		WireName: "namespace_selector",
-		Kind:     "object",
-		Fields:   FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields,
-	},
-	"PodSelector": ubx.FieldSpec{
-		WireName: "pod_selector",
-		Kind:     "object",
-		Fields:   FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"NamespaceSelector": ubx.FieldSpec{
+			WireName: "namespace_selector",
+			Kind: "object",
+			Fields: FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields,
+		},
+		"PodSelector": ubx.FieldSpec{
+			WireName: "pod_selector",
+			Kind: "object",
+			Fields: FirewallpolicyFirewallPolicyKubeSelectorGroup_Properties_NamespaceSelectorFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type FirewallpolicyFirewallPolicyKubeSelectorGroupConfig struct {
 	// Name of the resource.
@@ -81,8 +81,8 @@ var FirewallpolicyFirewallPolicyKubeSelectorGroup = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields,
+			Kind: "object",
+			Fields: FirewallpolicyFirewallPolicyKubeSelectorGroup_PropertiesFields,
 		},
 	},
 }

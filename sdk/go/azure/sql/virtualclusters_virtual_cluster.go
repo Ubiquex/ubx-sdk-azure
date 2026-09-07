@@ -13,10 +13,10 @@ type VirtualclustersVirtualCluster_Properties struct {
 }
 
 var VirtualclustersVirtualCluster_PropertiesFields = ubx.FieldMap{
-	"ChildResources": ubx.FieldSpec{WireName: "child_resources"},
-	"SubnetId":       ubx.FieldSpec{WireName: "subnet_id"},
-	"Version":        ubx.FieldSpec{WireName: "version"},
-}
+		"ChildResources": ubx.FieldSpec{WireName: "child_resources"},
+		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+	}
 
 type VirtualclustersVirtualClusterConfig struct {
 	// The geo-location where the resource lives
@@ -42,8 +42,8 @@ var VirtualclustersVirtualCluster = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualclustersVirtualCluster_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualclustersVirtualCluster_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

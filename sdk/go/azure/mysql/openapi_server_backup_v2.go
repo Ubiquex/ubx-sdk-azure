@@ -17,12 +17,12 @@ type OpenapiServerBackupV2_Properties struct {
 }
 
 var OpenapiServerBackupV2_PropertiesFields = ubx.FieldMap{
-	"BackupNameV2":      ubx.FieldSpec{WireName: "backup_name_v2"},
-	"BackupType":        ubx.FieldSpec{WireName: "backup_type"},
-	"CompletedTime":     ubx.FieldSpec{WireName: "completed_time"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Source":            ubx.FieldSpec{WireName: "source"},
-}
+		"BackupNameV2": ubx.FieldSpec{WireName: "backup_name_v2"},
+		"BackupType": ubx.FieldSpec{WireName: "backup_type"},
+		"CompletedTime": ubx.FieldSpec{WireName: "completed_time"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Source": ubx.FieldSpec{WireName: "source"},
+	}
 
 type OpenapiServerBackupV2Config struct {
 	// The properties of a server backup.
@@ -39,8 +39,8 @@ var OpenapiServerBackupV2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiServerBackupV2_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiServerBackupV2_PropertiesFields,
 		},
 	},
 }

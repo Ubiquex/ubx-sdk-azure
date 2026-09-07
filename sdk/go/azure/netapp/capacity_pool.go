@@ -27,17 +27,17 @@ type CapacityPool_Properties struct {
 }
 
 var CapacityPool_PropertiesFields = ubx.FieldMap{
-	"CoolAccess":              ubx.FieldSpec{WireName: "cool_access"},
-	"CustomThroughputMibps":   ubx.FieldSpec{WireName: "custom_throughput_mibps"},
-	"EncryptionType":          ubx.FieldSpec{WireName: "encryption_type"},
-	"PoolId":                  ubx.FieldSpec{WireName: "pool_id"},
-	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
-	"QosType":                 ubx.FieldSpec{WireName: "qos_type"},
-	"ServiceLevel":            ubx.FieldSpec{WireName: "service_level"},
-	"Size":                    ubx.FieldSpec{WireName: "size"},
-	"TotalThroughputMibps":    ubx.FieldSpec{WireName: "total_throughput_mibps"},
-	"UtilizedThroughputMibps": ubx.FieldSpec{WireName: "utilized_throughput_mibps"},
-}
+		"CoolAccess": ubx.FieldSpec{WireName: "cool_access"},
+		"CustomThroughputMibps": ubx.FieldSpec{WireName: "custom_throughput_mibps"},
+		"EncryptionType": ubx.FieldSpec{WireName: "encryption_type"},
+		"PoolId": ubx.FieldSpec{WireName: "pool_id"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"QosType": ubx.FieldSpec{WireName: "qos_type"},
+		"ServiceLevel": ubx.FieldSpec{WireName: "service_level"},
+		"Size": ubx.FieldSpec{WireName: "size"},
+		"TotalThroughputMibps": ubx.FieldSpec{WireName: "total_throughput_mibps"},
+		"UtilizedThroughputMibps": ubx.FieldSpec{WireName: "utilized_throughput_mibps"},
+	}
 
 type CapacityPoolConfig struct {
 	// The geo-location where the resource lives
@@ -65,8 +65,8 @@ var CapacityPool = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   CapacityPool_PropertiesFields,
+			Kind: "object",
+			Fields: CapacityPool_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

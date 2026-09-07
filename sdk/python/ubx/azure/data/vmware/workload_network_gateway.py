@@ -7,30 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class WorkloadNetworkGateway_Value_Properties:
+class WorkloadNetworkGateway_Properties:
+    # Display name of the DHCP entity.
     display_name: Any = None
+    # NSX Gateway Path.
     path: Any = None
+    # base Workload Network provisioning state
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class WorkloadNetworkGateway_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class WorkloadNetworkGatewayConfig:
+    gateway_id: Any = None
     private_cloud_name: Any = None
 
 @dataclasses.dataclass
 class WorkloadNetworkGatewayAttrs:
-    # The link to the next page of items
-    next_link: Any = None
+    gateway_id: Any = None
     private_cloud_name: Any = None
-    # The WorkloadNetworkGateway items on this page
-    value: Any = None
+    # Properties of a NSX Gateway.
+    properties: Any = None
 
 WorkloadNetworkGateway = ubx.DataSourceBinding(
     wire_type="azure_vmware_workload_network_gateway",
     fields={
+        "gateway_id": ubx.FieldSpec(wire_name="gateway_id"),
         "private_cloud_name": ubx.FieldSpec(wire_name="private_cloud_name"),
     },
 )

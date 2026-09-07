@@ -3,44 +3,55 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VirtualwanVpnSiteLink_Value_Properties_BgpProperties struct {
-	Asn               any
+type VirtualwanVpnSiteLink_Properties_BgpProperties struct {
+	// The BGP speaker's ASN.
+	Asn any
+	// The BGP peering address and BGP identifier of this BGP speaker.
 	BgpPeeringAddress any
 }
 
-type VirtualwanVpnSiteLink_Value_Properties_LinkProperties struct {
+type VirtualwanVpnSiteLink_Properties_LinkProperties struct {
+	// Name of the link provider.
 	LinkProviderName any
-	LinkSpeedInMbps  any
+	// Link speed.
+	LinkSpeedInMbps any
 }
 
-type VirtualwanVpnSiteLink_Value_Properties struct {
-	BgpProperties     any
-	Fqdn              any
-	IpAddress         any
-	LinkProperties    any
+type VirtualwanVpnSiteLink_Properties struct {
+	// BGP settings details for a link.
+	BgpProperties any
+	// FQDN of vpn-site-link.
+	Fqdn any
+	// The ip-address for the vpn-site-link.
+	IpAddress any
+	// List of properties of a link provider.
+	LinkProperties any
+	// Provisioning states of a resource.
 	ProvisioningState any
 }
 
-type VirtualwanVpnSiteLink_Value struct {
-	Etag       any
-	Properties any
-}
-
 type VirtualwanVpnSiteLinkConfig struct {
+	VpnSiteLinkName any
 	VpnSiteName any
 }
 
 type VirtualwanVpnSiteLinkAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The VpnSiteLink items on this page
-	Value       any
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// Name of the resource.
+	Name any
+	// Parameters for VpnSite.
+	Properties any
+	// Resource type.
+	Type any
+	VpnSiteLinkName any
 	VpnSiteName any
 }
 
 var VirtualwanVpnSiteLink = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_vpn_site_link",
 	Fields: ubx.FieldMap{
+		"VpnSiteLinkName": ubx.FieldSpec{WireName: "vpn_site_link_name"},
 		"VpnSiteName": ubx.FieldSpec{WireName: "vpn_site_name"},
 	},
 }

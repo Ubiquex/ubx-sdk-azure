@@ -4,19 +4,21 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .machine import Machine, MachineConfig
 from .machine_diagnostic_run_command import MachineDiagnosticRunCommand, MachineDiagnosticRunCommandConfig
-from .machine_extension import MachineExtension, MachineExtensionConfig
+from .machine_diagnostic_run_command_list import MachineDiagnosticRunCommandList, MachineDiagnosticRunCommandListConfig
 from .machine_extension_image import MachineExtensionImage, MachineExtensionImageConfig
+from .machine_extension_list import MachineExtensionList, MachineExtensionListConfig
 from .machine_image import MachineImage, MachineImageConfig
-from .machine_image_resource import MachineImageResource, MachineImageResourceConfig
+from .machine_image_resource_list import MachineImageResourceList, MachineImageResourceListConfig
 from .machine_instance_view import MachineInstanceView, MachineInstanceViewConfig
+from .machine_list import MachineList, MachineListConfig
 from .machine_run_command import MachineRunCommand, MachineRunCommandConfig
-from .machine_scale_set import MachineScaleSet, MachineScaleSetConfig
-from .machine_scale_set_extension import MachineScaleSetExtension, MachineScaleSetExtensionConfig
+from .machine_run_command_list import MachineRunCommandList, MachineRunCommandListConfig
+from .machine_scale_set_extension_list import MachineScaleSetExtensionList, MachineScaleSetExtensionListConfig
 from .machine_scale_set_instance_view import MachineScaleSetInstanceView, MachineScaleSetInstanceViewConfig
-from .machine_scale_set_sku import MachineScaleSetSku, MachineScaleSetSkuConfig
-from .machine_scale_set_vm import MachineScaleSetVm, MachineScaleSetVmConfig
-from .machine_scale_set_vmextension import MachineScaleSetVmextension, MachineScaleSetVmextensionConfig
+from .machine_scale_set_list import MachineScaleSetList, MachineScaleSetListConfig
+from .machine_scale_set_sku_list import MachineScaleSetSkuList, MachineScaleSetSkuListConfig
+from .machine_scale_set_vm_list import MachineScaleSetVmList, MachineScaleSetVmListConfig
+from .machine_scale_set_vmextension_list import MachineScaleSetVmextensionList, MachineScaleSetVmextensionListConfig
 from .machine_scale_set_vminstance_view import MachineScaleSetVminstanceView, MachineScaleSetVminstanceViewConfig
-from .machine_size import MachineSize, MachineSizeConfig
+from .machine_size_list import MachineSizeList, MachineSizeListConfig

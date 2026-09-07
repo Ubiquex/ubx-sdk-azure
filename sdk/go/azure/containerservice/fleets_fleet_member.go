@@ -60,64 +60,65 @@ type FleetsFleetMember_Properties struct {
 }
 
 var FleetsFleetMember_Properties_Status_LastOperationError_AdditionalInfoFields = ubx.FieldMap{
-	"Info": ubx.FieldSpec{WireName: "info"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Info": ubx.FieldSpec{WireName: "info"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
-var FleetsFleetMember_Properties_Status_LastOperationError_Details_DetailsFields = ubx.FieldMap{}
+var FleetsFleetMember_Properties_Status_LastOperationError_Details_DetailsFields = ubx.FieldMap{
+	}
 
 var FleetsFleetMember_Properties_Status_LastOperationError_DetailsFields = ubx.FieldMap{
-	"AdditionalInfo": ubx.FieldSpec{
-		WireName: "additional_info",
-		Kind:     "list",
-		Fields:   FleetsFleetMember_Properties_Status_LastOperationError_AdditionalInfoFields,
-	},
-	"Code": ubx.FieldSpec{WireName: "code"},
-	"Details": ubx.FieldSpec{
-		WireName: "details",
-		Kind:     "list",
-		Fields:   FleetsFleetMember_Properties_Status_LastOperationError_Details_DetailsFields,
-	},
-	"Message": ubx.FieldSpec{WireName: "message"},
-	"Target":  ubx.FieldSpec{WireName: "target"},
-}
+		"AdditionalInfo": ubx.FieldSpec{
+			WireName: "additional_info",
+			Kind: "list",
+			Fields: FleetsFleetMember_Properties_Status_LastOperationError_AdditionalInfoFields,
+		},
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Details": ubx.FieldSpec{
+			WireName: "details",
+			Kind: "list",
+			Fields: FleetsFleetMember_Properties_Status_LastOperationError_Details_DetailsFields,
+		},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Target": ubx.FieldSpec{WireName: "target"},
+	}
 
 var FleetsFleetMember_Properties_Status_LastOperationErrorFields = ubx.FieldMap{
-	"AdditionalInfo": ubx.FieldSpec{
-		WireName: "additional_info",
-		Kind:     "list",
-		Fields:   FleetsFleetMember_Properties_Status_LastOperationError_AdditionalInfoFields,
-	},
-	"Code": ubx.FieldSpec{WireName: "code"},
-	"Details": ubx.FieldSpec{
-		WireName: "details",
-		Kind:     "list",
-		Fields:   FleetsFleetMember_Properties_Status_LastOperationError_DetailsFields,
-	},
-	"Message": ubx.FieldSpec{WireName: "message"},
-	"Target":  ubx.FieldSpec{WireName: "target"},
-}
+		"AdditionalInfo": ubx.FieldSpec{
+			WireName: "additional_info",
+			Kind: "list",
+			Fields: FleetsFleetMember_Properties_Status_LastOperationError_AdditionalInfoFields,
+		},
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Details": ubx.FieldSpec{
+			WireName: "details",
+			Kind: "list",
+			Fields: FleetsFleetMember_Properties_Status_LastOperationError_DetailsFields,
+		},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Target": ubx.FieldSpec{WireName: "target"},
+	}
 
 var FleetsFleetMember_Properties_StatusFields = ubx.FieldMap{
-	"LastOperationError": ubx.FieldSpec{
-		WireName: "last_operation_error",
-		Kind:     "object",
-		Fields:   FleetsFleetMember_Properties_Status_LastOperationErrorFields,
-	},
-	"LastOperationId": ubx.FieldSpec{WireName: "last_operation_id"},
-}
+		"LastOperationError": ubx.FieldSpec{
+			WireName: "last_operation_error",
+			Kind: "object",
+			Fields: FleetsFleetMember_Properties_Status_LastOperationErrorFields,
+		},
+		"LastOperationId": ubx.FieldSpec{WireName: "last_operation_id"},
+	}
 
 var FleetsFleetMember_PropertiesFields = ubx.FieldMap{
-	"ClusterResourceId": ubx.FieldSpec{WireName: "cluster_resource_id"},
-	"Group":             ubx.FieldSpec{WireName: "group"},
-	"Labels":            ubx.FieldSpec{WireName: "labels"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Status": ubx.FieldSpec{
-		WireName: "status",
-		Kind:     "object",
-		Fields:   FleetsFleetMember_Properties_StatusFields,
-	},
-}
+		"ClusterResourceId": ubx.FieldSpec{WireName: "cluster_resource_id"},
+		"Group": ubx.FieldSpec{WireName: "group"},
+		"Labels": ubx.FieldSpec{WireName: "labels"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Status": ubx.FieldSpec{
+			WireName: "status",
+			Kind: "object",
+			Fields: FleetsFleetMember_Properties_StatusFields,
+		},
+	}
 
 type FleetsFleetMemberConfig struct {
 	// A member of the Fleet. It contains a reference to an existing Kubernetes cluster on Azure.
@@ -136,8 +137,8 @@ var FleetsFleetMember = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   FleetsFleetMember_PropertiesFields,
+			Kind: "object",
+			Fields: FleetsFleetMember_PropertiesFields,
 		},
 	},
 }

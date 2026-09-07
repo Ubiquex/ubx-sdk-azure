@@ -4,18 +4,19 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .attached_database_configuration import AttachedDatabaseConfiguration, AttachedDatabaseConfigurationConfig
-from .azure_resource_sku import AzureResourceSku, AzureResourceSkuConfig
-from .cluster import Cluster, ClusterConfig
-from .cluster_principal_assignment import ClusterPrincipalAssignment, ClusterPrincipalAssignmentConfig
-from .data_connection import DataConnection, DataConnectionConfig
-from .database import Database, DatabaseConfig
-from .database_principal_assignment import DatabasePrincipalAssignment, DatabasePrincipalAssignmentConfig
-from .follower_database_definition_get import FollowerDatabaseDefinitionGet, FollowerDatabaseDefinitionGetConfig
-from .managed_private_endpoint import ManagedPrivateEndpoint, ManagedPrivateEndpointConfig
-from .outbound_network_dependencies_endpoint import OutboundNetworkDependenciesEndpoint, OutboundNetworkDependenciesEndpointConfig
-from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .attached_database_configuration_list import AttachedDatabaseConfigurationList, AttachedDatabaseConfigurationListConfig
+from .azure_resource_sku_list import AzureResourceSkuList, AzureResourceSkuListConfig
+from .cluster_list import ClusterList, ClusterListConfig
+from .cluster_principal_assignment_list import ClusterPrincipalAssignmentList, ClusterPrincipalAssignmentListConfig
+from .data_connection_list import DataConnectionList, DataConnectionListConfig
+from .database_list import DatabaseList, DatabaseListConfig
+from .database_principal_assignment_list import DatabasePrincipalAssignmentList, DatabasePrincipalAssignmentListConfig
+from .follower_database_definition_get_list import FollowerDatabaseDefinitionGetList, FollowerDatabaseDefinitionGetListConfig
+from .managed_private_endpoint_list import ManagedPrivateEndpointList, ManagedPrivateEndpointListConfig
+from .outbound_network_dependencies_endpoint_list import OutboundNetworkDependenciesEndpointList, OutboundNetworkDependenciesEndpointListConfig
+from .private_endpoint_connection_list import PrivateEndpointConnectionList, PrivateEndpointConnectionListConfig
 from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .sandbox_custom_image import SandboxCustomImage, SandboxCustomImageConfig
-from .script import Script, ScriptConfig
-from .sku_description import SkuDescription, SkuDescriptionConfig
+from .private_link_resource_list import PrivateLinkResourceList, PrivateLinkResourceListConfig
+from .sandbox_custom_image_list import SandboxCustomImageList, SandboxCustomImageListConfig
+from .script_list import ScriptList, ScriptListConfig
+from .sku_description_list import SkuDescriptionList, SkuDescriptionListConfig

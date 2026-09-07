@@ -3,27 +3,28 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiResourceHealthMetadata_Value_Properties struct {
-	Category           any
+type OpenapiResourceHealthMetadata_Properties struct {
+	// The category that the resource matches in the RHC Policy File
+	Category any
+	// Is there a health signal for the resource
 	SignalAvailability any
 }
 
-type OpenapiResourceHealthMetadata_Value struct {
-	Kind       any
-	Properties any
-}
-
 type OpenapiResourceHealthMetadataConfig struct {
+	Name any
 }
 
 type OpenapiResourceHealthMetadataAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The ResourceHealthMetadata items on this page
-	Value any
+	// Kind of resource.
+	Kind any
+	Name any
+	// ResourceHealthMetadata resource specific properties
+	Properties any
 }
 
 var OpenapiResourceHealthMetadata = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_resource_health_metadata",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"Name": ubx.FieldSpec{WireName: "name"},
+	},
 }

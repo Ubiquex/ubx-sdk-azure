@@ -97,83 +97,83 @@ type Account_SystemData struct {
 }
 
 var Account_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var Account_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   Account_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: Account_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var Account_Properties_OpenAiServicesFields = ubx.FieldMap{
-	"ResourceId":           ubx.FieldSpec{WireName: "resource_id"},
-	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-}
+		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+	}
 
 var Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-	"Description":     ubx.FieldSpec{WireName: "description"},
-	"Status":          ubx.FieldSpec{WireName: "status"},
-}
+		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+	}
 
 var Account_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-	"PrivateEndpoint": ubx.FieldSpec{
-		WireName: "private_endpoint",
-		Kind:     "object",
-		Fields:   Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-	},
-	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-		WireName: "private_link_service_connection_state",
-		Kind:     "object",
-		Fields:   Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+		"PrivateEndpoint": ubx.FieldSpec{
+			WireName: "private_endpoint",
+			Kind: "object",
+			Fields: Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+		},
+		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+			WireName: "private_link_service_connection_state",
+			Kind: "object",
+			Fields: Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 var Account_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   Account_Properties_PrivateEndpointConnections_PropertiesFields,
-	},
-}
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: Account_Properties_PrivateEndpointConnections_PropertiesFields,
+		},
+	}
 
 var Account_PropertiesFields = ubx.FieldMap{
-	"AccountId":   ubx.FieldSpec{WireName: "account_id"},
-	"AccountName": ubx.FieldSpec{WireName: "account_name"},
-	"OpenAiServices": ubx.FieldSpec{
-		WireName: "open_ai_services",
-		Kind:     "object",
-		Fields:   Account_Properties_OpenAiServicesFields,
-	},
-	"PrivateEndpointConnections": ubx.FieldSpec{
-		WireName: "private_endpoint_connections",
-		Kind:     "list",
-		Fields:   Account_Properties_PrivateEndpointConnectionsFields,
-	},
-	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
-	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	"StorageServices": ubx.FieldSpec{
-		WireName: "storage_services",
-		Kind:     "object",
-		Fields:   Account_Properties_OpenAiServicesFields,
-	},
-	"TenantId":            ubx.FieldSpec{WireName: "tenant_id"},
-	"TotalMinutesIndexed": ubx.FieldSpec{WireName: "total_minutes_indexed"},
-	"TotalSecondsIndexed": ubx.FieldSpec{WireName: "total_seconds_indexed"},
-}
+		"AccountId": ubx.FieldSpec{WireName: "account_id"},
+		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"OpenAiServices": ubx.FieldSpec{
+			WireName: "open_ai_services",
+			Kind: "object",
+			Fields: Account_Properties_OpenAiServicesFields,
+		},
+		"PrivateEndpointConnections": ubx.FieldSpec{
+			WireName: "private_endpoint_connections",
+			Kind: "list",
+			Fields: Account_Properties_PrivateEndpointConnectionsFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+		"StorageServices": ubx.FieldSpec{
+			WireName: "storage_services",
+			Kind: "object",
+			Fields: Account_Properties_OpenAiServicesFields,
+		},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"TotalMinutesIndexed": ubx.FieldSpec{WireName: "total_minutes_indexed"},
+		"TotalSecondsIndexed": ubx.FieldSpec{WireName: "total_seconds_indexed"},
+	}
 
 type AccountConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -204,14 +204,14 @@ var Account = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   Account_IdentityFields,
+			Kind: "object",
+			Fields: Account_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   Account_PropertiesFields,
+			Kind: "object",
+			Fields: Account_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -3,24 +3,22 @@ package storage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiQueueServiceProperties_Value_Properties_Cors_CorsRules struct {
-	AllowedHeaders  any
-	AllowedMethods  any
-	AllowedOrigins  any
-	ExposedHeaders  any
+type OpenapiQueueServiceProperties_Properties_Cors_CorsRules struct {
+	AllowedHeaders any
+	AllowedMethods any
+	AllowedOrigins any
+	ExposedHeaders any
 	MaxAgeInSeconds any
 }
 
-type OpenapiQueueServiceProperties_Value_Properties_Cors struct {
+type OpenapiQueueServiceProperties_Properties_Cors struct {
+	// The List of CORS rules. You can include up to five CorsRule elements in the request.
 	CorsRules any
 }
 
-type OpenapiQueueServiceProperties_Value_Properties struct {
+type OpenapiQueueServiceProperties_Properties struct {
+	// Sets the CORS rules. You can include up to five CorsRule elements in the request.
 	Cors any
-}
-
-type OpenapiQueueServiceProperties_Value struct {
-	Properties any
 }
 
 type OpenapiQueueServicePropertiesConfig struct {
@@ -29,8 +27,8 @@ type OpenapiQueueServicePropertiesConfig struct {
 
 type OpenapiQueueServicePropertiesAttrs struct {
 	AccountName any
-	// List of queue services returned.
-	Value any
+	// The properties of a storage account’s Queue service.
+	Properties any
 }
 
 var OpenapiQueueServiceProperties = ubx.DataSourceBinding{

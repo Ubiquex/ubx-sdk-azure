@@ -7,36 +7,48 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ImageDefinition_Value_Properties_ActiveImageReference:
+class ImageDefinition_Properties_ActiveImageReference:
+    # The actual version of the image after use. When id references a gallery image latest version, this will indicate the actual version in use.
     exact_version: Any = None
+    # Image ID, or Image version ID. When Image ID is provided, its latest version will be used.
     id: Any = None
 
 @dataclasses.dataclass
-class ImageDefinition_Value_Properties_ImageValidationErrorDetails:
+class ImageDefinition_Properties_ImageValidationErrorDetails:
+    # An identifier for the error.
     code: Any = None
+    # A message describing the error.
     message: Any = None
 
 @dataclasses.dataclass
-class ImageDefinition_Value_Properties_LatestBuild:
+class ImageDefinition_Properties_LatestBuild:
+    # End time of the task group.
     end_time: Any = None
+    # Identifier of a build.
     name: Any = None
+    # Start time of the task group.
     start_time: Any = None
+    # The state of an Image Definition Build.
     status: Any = None
 
 @dataclasses.dataclass
-class ImageDefinition_Value_Properties:
+class ImageDefinition_Properties:
+    # Image reference information
     active_image_reference: Any = None
+    # Indicates whether auto image build is enabled/disabled.
     auto_image_build: Any = None
+    # The URL to the repository file containing the image definition.
     file_url: Any = None
+    # Image reference information
     image_reference: Any = None
+    # Image validation error details
     image_validation_error_details: Any = None
+    # Image validation status
     image_validation_status: Any = None
+    # Details about the latest build.
     latest_build: Any = None
+    # Catalog resource validation status
     validation_status: Any = None
-
-@dataclasses.dataclass
-class ImageDefinition_Value:
-    properties: Any = None
 
 @dataclasses.dataclass
 class ImageDefinitionConfig:
@@ -44,10 +56,8 @@ class ImageDefinitionConfig:
 
 @dataclasses.dataclass
 class ImageDefinitionAttrs:
-    # URL to get the next set of results if there are any.
-    next_link: Any = None
-    # Current page of results.
-    value: Any = None
+    # Properties of an Image Definition.
+    properties: Any = None
 
 ImageDefinition = ubx.DataSourceBinding(
     wire_type="azure_devcenter_image_definition",

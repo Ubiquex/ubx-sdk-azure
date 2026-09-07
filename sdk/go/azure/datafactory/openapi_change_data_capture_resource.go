@@ -157,190 +157,190 @@ type OpenapiChangeDataCaptureResource_Properties struct {
 }
 
 var OpenapiChangeDataCaptureResource_Properties_FolderFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_Policy_RecurrenceFields = ubx.FieldMap{
-	"Frequency": ubx.FieldSpec{WireName: "frequency"},
-	"Interval":  ubx.FieldSpec{WireName: "interval"},
-}
+		"Frequency": ubx.FieldSpec{WireName: "frequency"},
+		"Interval": ubx.FieldSpec{WireName: "interval"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_PolicyFields = ubx.FieldMap{
-	"Mode": ubx.FieldSpec{WireName: "mode"},
-	"Recurrence": ubx.FieldSpec{
-		WireName: "recurrence",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_Policy_RecurrenceFields,
-	},
-}
+		"Mode": ubx.FieldSpec{WireName: "mode"},
+		"Recurrence": ubx.FieldSpec{
+			WireName: "recurrence",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_Policy_RecurrenceFields,
+		},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorPropertiesFields = ubx.FieldMap{
-	"Name":  ubx.FieldSpec{WireName: "name"},
-	"Value": ubx.FieldSpec{WireName: "value"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_LinkedServiceFields = ubx.FieldMap{
-	"Parameters":    ubx.FieldSpec{WireName: "parameters"},
-	"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
-	"Type":          ubx.FieldSpec{WireName: "type"},
-}
+		"Parameters": ubx.FieldSpec{WireName: "parameters"},
+		"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_ConnectionFields = ubx.FieldMap{
-	"CommonDslConnectorProperties": ubx.FieldSpec{
-		WireName: "common_dsl_connector_properties",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorPropertiesFields,
-	},
-	"IsInlineDataset": ubx.FieldSpec{WireName: "is_inline_dataset"},
-	"LinkedService": ubx.FieldSpec{
-		WireName: "linked_service",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_LinkedServiceFields,
-	},
-	"LinkedServiceType": ubx.FieldSpec{WireName: "linked_service_type"},
-	"Type":              ubx.FieldSpec{WireName: "type"},
-}
+		"CommonDslConnectorProperties": ubx.FieldSpec{
+			WireName: "common_dsl_connector_properties",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorPropertiesFields,
+		},
+		"IsInlineDataset": ubx.FieldSpec{WireName: "is_inline_dataset"},
+		"LinkedService": ubx.FieldSpec{
+			WireName: "linked_service",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_LinkedServiceFields,
+		},
+		"LinkedServiceType": ubx.FieldSpec{WireName: "linked_service_type"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties_SchemaFields = ubx.FieldMap{
-	"DataType": ubx.FieldSpec{WireName: "data_type"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-}
+		"DataType": ubx.FieldSpec{WireName: "data_type"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_PropertiesFields = ubx.FieldMap{
-	"DslConnectorProperties": ubx.FieldSpec{
-		WireName: "dsl_connector_properties",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorPropertiesFields,
-	},
-	"Schema": ubx.FieldSpec{
-		WireName: "schema",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties_SchemaFields,
-	},
-}
+		"DslConnectorProperties": ubx.FieldSpec{
+			WireName: "dsl_connector_properties",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_Connection_CommonDslConnectorPropertiesFields,
+		},
+		"Schema": ubx.FieldSpec{
+			WireName: "schema",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_Properties_SchemaFields,
+		},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntitiesFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_PropertiesFields,
-	},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntities_PropertiesFields,
+		},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfoFields = ubx.FieldMap{
-	"Connection": ubx.FieldSpec{
-		WireName: "connection",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_ConnectionFields,
-	},
-	"SourceEntities": ubx.FieldSpec{
-		WireName: "source_entities",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntitiesFields,
-	},
-}
+		"Connection": ubx.FieldSpec{
+			WireName: "connection",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_ConnectionFields,
+		},
+		"SourceEntities": ubx.FieldSpec{
+			WireName: "source_entities",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntitiesFields,
+		},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReferenceFields = ubx.FieldMap{
-	"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-	"Type":           ubx.FieldSpec{WireName: "type"},
-}
+		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReferenceFields = ubx.FieldMap{
-	"Entity": ubx.FieldSpec{WireName: "entity"},
-	"EntityConnectionReference": ubx.FieldSpec{
-		WireName: "entity_connection_reference",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReferenceFields,
-	},
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Entity": ubx.FieldSpec{WireName: "entity"},
+		"EntityConnectionReference": ubx.FieldSpec{
+			WireName: "entity_connection_reference",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReferenceFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappingsFields = ubx.FieldMap{
-	"AttributeReference": ubx.FieldSpec{
-		WireName: "attribute_reference",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReferenceFields,
-	},
-	"AttributeReferences": ubx.FieldSpec{
-		WireName: "attribute_references",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReferenceFields,
-	},
-	"Expression":   ubx.FieldSpec{WireName: "expression"},
-	"FunctionName": ubx.FieldSpec{WireName: "function_name"},
-	"Name":         ubx.FieldSpec{WireName: "name"},
-	"Type":         ubx.FieldSpec{WireName: "type"},
-}
+		"AttributeReference": ubx.FieldSpec{
+			WireName: "attribute_reference",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReferenceFields,
+		},
+		"AttributeReferences": ubx.FieldSpec{
+			WireName: "attribute_references",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReferenceFields,
+		},
+		"Expression": ubx.FieldSpec{WireName: "expression"},
+		"FunctionName": ubx.FieldSpec{WireName: "function_name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfoFields = ubx.FieldMap{
-	"AttributeMappings": ubx.FieldSpec{
-		WireName: "attribute_mappings",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappingsFields,
-	},
-}
+		"AttributeMappings": ubx.FieldSpec{
+			WireName: "attribute_mappings",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappingsFields,
+		},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappingsFields = ubx.FieldMap{
-	"AttributeMappingInfo": ubx.FieldSpec{
-		WireName: "attribute_mapping_info",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfoFields,
-	},
-	"SourceConnectionReference": ubx.FieldSpec{
-		WireName: "source_connection_reference",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReferenceFields,
-	},
-	"SourceDenormalizeInfo": ubx.FieldSpec{WireName: "source_denormalize_info"},
-	"SourceEntityName":      ubx.FieldSpec{WireName: "source_entity_name"},
-	"TargetEntityName":      ubx.FieldSpec{WireName: "target_entity_name"},
-}
+		"AttributeMappingInfo": ubx.FieldSpec{
+			WireName: "attribute_mapping_info",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfoFields,
+		},
+		"SourceConnectionReference": ubx.FieldSpec{
+			WireName: "source_connection_reference",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappings_AttributeMappingInfo_AttributeMappings_AttributeReference_EntityConnectionReferenceFields,
+		},
+		"SourceDenormalizeInfo": ubx.FieldSpec{WireName: "source_denormalize_info"},
+		"SourceEntityName": ubx.FieldSpec{WireName: "source_entity_name"},
+		"TargetEntityName": ubx.FieldSpec{WireName: "target_entity_name"},
+	}
 
 var OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfoFields = ubx.FieldMap{
-	"Connection": ubx.FieldSpec{
-		WireName: "connection",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_ConnectionFields,
-	},
-	"DataMapperMappings": ubx.FieldSpec{
-		WireName: "data_mapper_mappings",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappingsFields,
-	},
-	"Relationships": ubx.FieldSpec{WireName: "relationships"},
-	"TargetEntities": ubx.FieldSpec{
-		WireName: "target_entities",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntitiesFields,
-	},
-}
+		"Connection": ubx.FieldSpec{
+			WireName: "connection",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_ConnectionFields,
+		},
+		"DataMapperMappings": ubx.FieldSpec{
+			WireName: "data_mapper_mappings",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfo_DataMapperMappingsFields,
+		},
+		"Relationships": ubx.FieldSpec{WireName: "relationships"},
+		"TargetEntities": ubx.FieldSpec{
+			WireName: "target_entities",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfo_SourceEntitiesFields,
+		},
+	}
 
 var OpenapiChangeDataCaptureResource_PropertiesFields = ubx.FieldMap{
-	"AllowVnetOverride": ubx.FieldSpec{WireName: "allow_vnet_override"},
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"Folder": ubx.FieldSpec{
-		WireName: "folder",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_FolderFields,
-	},
-	"Policy": ubx.FieldSpec{
-		WireName: "policy",
-		Kind:     "object",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_PolicyFields,
-	},
-	"SourceConnectionsInfo": ubx.FieldSpec{
-		WireName: "source_connections_info",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfoFields,
-	},
-	"Status": ubx.FieldSpec{WireName: "status"},
-	"TargetConnectionsInfo": ubx.FieldSpec{
-		WireName: "target_connections_info",
-		Kind:     "list",
-		Fields:   OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfoFields,
-	},
-}
+		"AllowVnetOverride": ubx.FieldSpec{WireName: "allow_vnet_override"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Folder": ubx.FieldSpec{
+			WireName: "folder",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_FolderFields,
+		},
+		"Policy": ubx.FieldSpec{
+			WireName: "policy",
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_Properties_PolicyFields,
+		},
+		"SourceConnectionsInfo": ubx.FieldSpec{
+			WireName: "source_connections_info",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_SourceConnectionsInfoFields,
+		},
+		"Status": ubx.FieldSpec{WireName: "status"},
+		"TargetConnectionsInfo": ubx.FieldSpec{
+			WireName: "target_connections_info",
+			Kind: "list",
+			Fields: OpenapiChangeDataCaptureResource_Properties_TargetConnectionsInfoFields,
+		},
+	}
 
 type OpenapiChangeDataCaptureResourceConfig struct {
 	// A Azure Data Factory object which automatically detects data changes at the source and then sends the updated data to the destination.
@@ -359,8 +359,8 @@ var OpenapiChangeDataCaptureResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiChangeDataCaptureResource_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiChangeDataCaptureResource_PropertiesFields,
 		},
 	},
 }

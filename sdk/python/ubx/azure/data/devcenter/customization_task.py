@@ -7,20 +7,19 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class CustomizationTask_Value_Properties_Inputs:
+class CustomizationTask_Properties_Inputs:
     description: Any = None
     required: Any = None
     type: Any = None
 
 @dataclasses.dataclass
-class CustomizationTask_Value_Properties:
+class CustomizationTask_Properties:
+    # Inputs to the task.
     inputs: Any = None
+    # The default timeout for the task.
     timeout: Any = None
+    # Catalog resource validation status
     validation_status: Any = None
-
-@dataclasses.dataclass
-class CustomizationTask_Value:
-    properties: Any = None
 
 @dataclasses.dataclass
 class CustomizationTaskConfig:
@@ -28,10 +27,8 @@ class CustomizationTaskConfig:
 
 @dataclasses.dataclass
 class CustomizationTaskAttrs:
-    # URL to get the next set of results if there are any.
-    next_link: Any = None
-    # Current page of results.
-    value: Any = None
+    # Properties of a Task.
+    properties: Any = None
 
 CustomizationTask = ubx.DataSourceBinding(
     wire_type="azure_devcenter_customization_task",

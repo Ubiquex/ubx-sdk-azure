@@ -3,54 +3,62 @@ package azurestackhci
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HciUpdateSummaries_Value_Properties_HealthCheckResult_Tags struct {
-	Key   any
+type HciUpdateSummaries_Properties_HealthCheckResult_Tags struct {
+	Key any
 	Value any
 }
 
-type HciUpdateSummaries_Value_Properties_HealthCheckResult struct {
-	AdditionalData     any
-	Description        any
-	DisplayName        any
-	HealthCheckSource  any
-	HealthCheckTags    any
-	Name               any
-	Remediation        any
-	Severity           any
-	Status             any
-	Tags               any
-	TargetResourceId   any
+type HciUpdateSummaries_Properties_HealthCheckResult struct {
+	AdditionalData any
+	Description any
+	DisplayName any
+	HealthCheckSource any
+	HealthCheckTags any
+	Name any
+	Remediation any
+	Severity any
+	Status any
+	Tags any
+	TargetResourceId any
 	TargetResourceName any
 	TargetResourceType any
-	Timestamp          any
-	Title              any
+	Timestamp any
+	Title any
 }
 
-type HciUpdateSummaries_Value_Properties_PackageVersions struct {
+type HciUpdateSummaries_Properties_PackageVersions struct {
 	LastUpdated any
 	PackageType any
-	Version     any
+	Version any
 }
 
-type HciUpdateSummaries_Value_Properties struct {
+type HciUpdateSummaries_Properties struct {
+	// Current OEM Version.
 	CurrentOemVersion any
+	// Current Sbe version of the stamp.
 	CurrentSbeVersion any
-	CurrentVersion    any
-	HardwareModel     any
-	HealthCheckDate   any
+	// Current Solution Bundle version of the stamp.
+	CurrentVersion any
+	// Name of the hardware model.
+	HardwareModel any
+	// Last time the package-specific checks were run.
+	HealthCheckDate any
+	// An array of pre-check result objects.
 	HealthCheckResult any
-	HealthState       any
-	LastChecked       any
-	LastUpdated       any
-	OemFamily         any
-	PackageVersions   any
+	// Overall health state for update-specific health checks. Indicates whether the system is functioning correctly, has warnings or errors, or is undergoing a health evaluation.
+	HealthState any
+	// Last time the update service successfully checked for updates
+	LastChecked any
+	// Last time an update installation completed successfully.
+	LastUpdated any
+	// OEM family name.
+	OemFamily any
+	// Current version of each updatable component.
+	PackageVersions any
+	// Provisioning state of the ArcSetting proxy resource.
 	ProvisioningState any
-	State             any
-}
-
-type HciUpdateSummaries_Value struct {
-	Location   any
-	Properties any
+	// Overall update state of the stamp. Indicates the current status of update deployment across the stamp, including preparation, application, and any issues encountered.
+	State any
 }
 
 type HciUpdateSummariesConfig struct {
@@ -59,10 +67,10 @@ type HciUpdateSummariesConfig struct {
 
 type HciUpdateSummariesAttrs struct {
 	ClusterName any
-	// The link to the next page of items
-	NextLink any
-	// The UpdateSummaries items on this page
-	Value any
+	// The geo-location where the resource lives
+	Location any
+	// Properties of Update summaries
+	Properties any
 }
 
 var HciUpdateSummaries = ubx.DataSourceBinding{

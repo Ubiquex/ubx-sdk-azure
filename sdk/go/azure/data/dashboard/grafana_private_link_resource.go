@@ -3,32 +3,32 @@ package dashboard
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type GrafanaPrivateLinkResource_Value_Properties struct {
-	GroupId           any
+type GrafanaPrivateLinkResource_Properties struct {
+	// The private link resource group id.
+	GroupId any
 	ProvisioningState any
-	RequiredMembers   any
+	// The private link resource required member names.
+	RequiredMembers any
+	// The private link resource Private link DNS zone name.
 	RequiredZoneNames any
 }
 
-type GrafanaPrivateLinkResource_Value struct {
-	Properties any
-}
-
 type GrafanaPrivateLinkResourceConfig struct {
+	PrivateLinkResourceName any
 	WorkspaceName any
 }
 
 type GrafanaPrivateLinkResourceAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The PrivateLinkResource items on this page
-	Value         any
+	PrivateLinkResourceName any
+	// Properties of a private link resource.
+	Properties any
 	WorkspaceName any
 }
 
 var GrafanaPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_dashboard_grafana_private_link_resource",
 	Fields: ubx.FieldMap{
+		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

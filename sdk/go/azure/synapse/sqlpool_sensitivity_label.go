@@ -25,16 +25,16 @@ type SqlpoolSensitivityLabel_Properties struct {
 }
 
 var SqlpoolSensitivityLabel_PropertiesFields = ubx.FieldMap{
-	"ColumnName":        ubx.FieldSpec{WireName: "column_name"},
-	"InformationType":   ubx.FieldSpec{WireName: "information_type"},
-	"InformationTypeId": ubx.FieldSpec{WireName: "information_type_id"},
-	"IsDisabled":        ubx.FieldSpec{WireName: "is_disabled"},
-	"LabelId":           ubx.FieldSpec{WireName: "label_id"},
-	"LabelName":         ubx.FieldSpec{WireName: "label_name"},
-	"Rank":              ubx.FieldSpec{WireName: "rank"},
-	"SchemaName":        ubx.FieldSpec{WireName: "schema_name"},
-	"TableName":         ubx.FieldSpec{WireName: "table_name"},
-}
+		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
+		"InformationType": ubx.FieldSpec{WireName: "information_type"},
+		"InformationTypeId": ubx.FieldSpec{WireName: "information_type_id"},
+		"IsDisabled": ubx.FieldSpec{WireName: "is_disabled"},
+		"LabelId": ubx.FieldSpec{WireName: "label_id"},
+		"LabelName": ubx.FieldSpec{WireName: "label_name"},
+		"Rank": ubx.FieldSpec{WireName: "rank"},
+		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
+		"TableName": ubx.FieldSpec{WireName: "table_name"},
+	}
 
 type SqlpoolSensitivityLabelConfig struct {
 	// Properties of a sensitivity label.
@@ -53,8 +53,8 @@ var SqlpoolSensitivityLabel = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   SqlpoolSensitivityLabel_PropertiesFields,
+			Kind: "object",
+			Fields: SqlpoolSensitivityLabel_PropertiesFields,
 		},
 	},
 }

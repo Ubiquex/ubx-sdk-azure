@@ -35,28 +35,28 @@ type Project_Properties struct {
 }
 
 var Project_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var Project_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   Project_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: Project_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var Project_PropertiesFields = ubx.FieldMap{
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
-	"Endpoints":         ubx.FieldSpec{WireName: "endpoints"},
-	"IsDefault":         ubx.FieldSpec{WireName: "is_default"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"Endpoints": ubx.FieldSpec{WireName: "endpoints"},
+		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type ProjectConfig struct {
 	// Identity for the resource.
@@ -87,14 +87,14 @@ var Project = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   Project_IdentityFields,
+			Kind: "object",
+			Fields: Project_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   Project_PropertiesFields,
+			Kind: "object",
+			Fields: Project_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

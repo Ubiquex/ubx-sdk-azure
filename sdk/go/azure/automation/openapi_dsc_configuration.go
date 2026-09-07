@@ -58,49 +58,49 @@ type OpenapiDscConfiguration_Properties struct {
 }
 
 var OpenapiDscConfiguration_Properties_ParametersFields = ubx.FieldMap{
-	"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-	"IsMandatory":  ubx.FieldSpec{WireName: "is_mandatory"},
-	"Position":     ubx.FieldSpec{WireName: "position"},
-	"Type":         ubx.FieldSpec{WireName: "type"},
-}
+		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
+		"IsMandatory": ubx.FieldSpec{WireName: "is_mandatory"},
+		"Position": ubx.FieldSpec{WireName: "position"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiDscConfiguration_Properties_Source_HashFields = ubx.FieldMap{
-	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-	"Value":     ubx.FieldSpec{WireName: "value"},
-}
+		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var OpenapiDscConfiguration_Properties_SourceFields = ubx.FieldMap{
-	"Hash": ubx.FieldSpec{
-		WireName: "hash",
-		Kind:     "object",
-		Fields:   OpenapiDscConfiguration_Properties_Source_HashFields,
-	},
-	"Type":    ubx.FieldSpec{WireName: "type"},
-	"Value":   ubx.FieldSpec{WireName: "value"},
-	"Version": ubx.FieldSpec{WireName: "version"},
-}
+		"Hash": ubx.FieldSpec{
+			WireName: "hash",
+			Kind: "object",
+			Fields: OpenapiDscConfiguration_Properties_Source_HashFields,
+		},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+	}
 
 var OpenapiDscConfiguration_PropertiesFields = ubx.FieldMap{
-	"CreationTime":           ubx.FieldSpec{WireName: "creation_time"},
-	"Description":            ubx.FieldSpec{WireName: "description"},
-	"JobCount":               ubx.FieldSpec{WireName: "job_count"},
-	"LastModifiedTime":       ubx.FieldSpec{WireName: "last_modified_time"},
-	"LogProgress":            ubx.FieldSpec{WireName: "log_progress"},
-	"LogVerbose":             ubx.FieldSpec{WireName: "log_verbose"},
-	"NodeConfigurationCount": ubx.FieldSpec{WireName: "node_configuration_count"},
-	"Parameters": ubx.FieldSpec{
-		WireName: "parameters",
-		Kind:     "map",
-		Fields:   OpenapiDscConfiguration_Properties_ParametersFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Source": ubx.FieldSpec{
-		WireName: "source",
-		Kind:     "object",
-		Fields:   OpenapiDscConfiguration_Properties_SourceFields,
-	},
-	"State": ubx.FieldSpec{WireName: "state"},
-}
+		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"JobCount": ubx.FieldSpec{WireName: "job_count"},
+		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+		"LogProgress": ubx.FieldSpec{WireName: "log_progress"},
+		"LogVerbose": ubx.FieldSpec{WireName: "log_verbose"},
+		"NodeConfigurationCount": ubx.FieldSpec{WireName: "node_configuration_count"},
+		"Parameters": ubx.FieldSpec{
+			WireName: "parameters",
+			Kind: "map",
+			Fields: OpenapiDscConfiguration_Properties_ParametersFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Source": ubx.FieldSpec{
+			WireName: "source",
+			Kind: "object",
+			Fields: OpenapiDscConfiguration_Properties_SourceFields,
+		},
+		"State": ubx.FieldSpec{WireName: "state"},
+	}
 
 type OpenapiDscConfigurationConfig struct {
 	// Gets or sets the location of the resource.
@@ -130,11 +130,11 @@ var OpenapiDscConfiguration = ubx.ResourceBinding{
 	WireType: "azure_automation_openapi_dsc_configuration",
 	Fields: ubx.FieldMap{
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name":     ubx.FieldSpec{WireName: "name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiDscConfiguration_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiDscConfiguration_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

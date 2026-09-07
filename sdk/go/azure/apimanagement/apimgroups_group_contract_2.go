@@ -17,12 +17,12 @@ type ApimgroupsGroupContract2_Properties struct {
 }
 
 var ApimgroupsGroupContract2_PropertiesFields = ubx.FieldMap{
-	"BuiltIn":     ubx.FieldSpec{WireName: "built_in"},
-	"Description": ubx.FieldSpec{WireName: "description"},
-	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	"ExternalId":  ubx.FieldSpec{WireName: "external_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-}
+		"BuiltIn": ubx.FieldSpec{WireName: "built_in"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"ExternalId": ubx.FieldSpec{WireName: "external_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 type ApimgroupsGroupContract2Config struct {
 	// Parameters supplied to the Create Group operation.
@@ -39,8 +39,8 @@ var ApimgroupsGroupContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ApimgroupsGroupContract2_PropertiesFields,
+			Kind: "object",
+			Fields: ApimgroupsGroupContract2_PropertiesFields,
 		},
 	},
 }

@@ -39,21 +39,21 @@ type TemplatespecsTemplateSpecVersion_SystemData struct {
 }
 
 var TemplatespecsTemplateSpecVersion_Properties_LinkedTemplatesFields = ubx.FieldMap{
-	"Path":     ubx.FieldSpec{WireName: "path"},
-	"Template": ubx.FieldSpec{WireName: "template"},
-}
+		"Path": ubx.FieldSpec{WireName: "path"},
+		"Template": ubx.FieldSpec{WireName: "template"},
+	}
 
 var TemplatespecsTemplateSpecVersion_PropertiesFields = ubx.FieldMap{
-	"Description": ubx.FieldSpec{WireName: "description"},
-	"LinkedTemplates": ubx.FieldSpec{
-		WireName: "linked_templates",
-		Kind:     "list",
-		Fields:   TemplatespecsTemplateSpecVersion_Properties_LinkedTemplatesFields,
-	},
-	"MainTemplate":     ubx.FieldSpec{WireName: "main_template"},
-	"Metadata":         ubx.FieldSpec{WireName: "metadata"},
-	"UiFormDefinition": ubx.FieldSpec{WireName: "ui_form_definition"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"LinkedTemplates": ubx.FieldSpec{
+			WireName: "linked_templates",
+			Kind: "list",
+			Fields: TemplatespecsTemplateSpecVersion_Properties_LinkedTemplatesFields,
+		},
+		"MainTemplate": ubx.FieldSpec{WireName: "main_template"},
+		"Metadata": ubx.FieldSpec{WireName: "metadata"},
+		"UiFormDefinition": ubx.FieldSpec{WireName: "ui_form_definition"},
+	}
 
 type TemplatespecsTemplateSpecVersionConfig struct {
 	// The location of the Template Spec Version. It must match the location of the parent Template Spec.
@@ -87,8 +87,8 @@ var TemplatespecsTemplateSpecVersion = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   TemplatespecsTemplateSpecVersion_PropertiesFields,
+			Kind: "object",
+			Fields: TemplatespecsTemplateSpecVersion_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

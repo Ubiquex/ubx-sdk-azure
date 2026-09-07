@@ -34,37 +34,37 @@ type IntegrationServiceEnvironmentManagedApi_Properties struct {
 }
 
 var IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParameters_ContentLinkDefinition_ContentHashFields = ubx.FieldMap{
-	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-	"Value":     ubx.FieldSpec{WireName: "value"},
-}
+		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParameters_ContentLinkDefinitionFields = ubx.FieldMap{
-	"ContentHash": ubx.FieldSpec{
-		WireName: "content_hash",
-		Kind:     "object",
-		Fields:   IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParameters_ContentLinkDefinition_ContentHashFields,
-	},
-	"ContentSize":    ubx.FieldSpec{WireName: "content_size"},
-	"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
-	"Metadata":       ubx.FieldSpec{WireName: "metadata"},
-	"Uri":            ubx.FieldSpec{WireName: "uri"},
-}
+		"ContentHash": ubx.FieldSpec{
+			WireName: "content_hash",
+			Kind: "object",
+			Fields: IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParameters_ContentLinkDefinition_ContentHashFields,
+		},
+		"ContentSize": ubx.FieldSpec{WireName: "content_size"},
+		"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
+		"Metadata": ubx.FieldSpec{WireName: "metadata"},
+		"Uri": ubx.FieldSpec{WireName: "uri"},
+	}
 
 var IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParametersFields = ubx.FieldMap{
-	"ContentLinkDefinition": ubx.FieldSpec{
-		WireName: "content_link_definition",
-		Kind:     "object",
-		Fields:   IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParameters_ContentLinkDefinitionFields,
-	},
-}
+		"ContentLinkDefinition": ubx.FieldSpec{
+			WireName: "content_link_definition",
+			Kind: "object",
+			Fields: IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParameters_ContentLinkDefinitionFields,
+		},
+	}
 
 var IntegrationServiceEnvironmentManagedApi_PropertiesFields = ubx.FieldMap{
-	"DeploymentParameters": ubx.FieldSpec{
-		WireName: "deployment_parameters",
-		Kind:     "object",
-		Fields:   IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParametersFields,
-	},
-}
+		"DeploymentParameters": ubx.FieldSpec{
+			WireName: "deployment_parameters",
+			Kind: "object",
+			Fields: IntegrationServiceEnvironmentManagedApi_Properties_DeploymentParametersFields,
+		},
+	}
 
 type IntegrationServiceEnvironmentManagedApiConfig struct {
 	// The resource location.
@@ -96,8 +96,8 @@ var IntegrationServiceEnvironmentManagedApi = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   IntegrationServiceEnvironmentManagedApi_PropertiesFields,
+			Kind: "object",
+			Fields: IntegrationServiceEnvironmentManagedApi_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

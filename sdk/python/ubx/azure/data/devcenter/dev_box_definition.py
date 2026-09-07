@@ -7,26 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class DevBoxDefinition_Value_Properties_ActiveImageReference:
+class DevBoxDefinition_Properties_ActiveImageReference:
+    # The actual version of the image after use. When id references a gallery image latest version, this will indicate the actual version in use.
     exact_version: Any = None
+    # Image ID, or Image version ID. When Image ID is provided, its latest version will be used.
     id: Any = None
 
 @dataclasses.dataclass
-class DevBoxDefinition_Value_Properties_ImageValidationErrorDetails:
+class DevBoxDefinition_Properties_ImageValidationErrorDetails:
+    # An identifier for the error.
     code: Any = None
+    # A message describing the error.
     message: Any = None
 
 @dataclasses.dataclass
-class DevBoxDefinition_Value_Properties:
+class DevBoxDefinition_Properties:
+    # Image reference information
     active_image_reference: Any = None
+    # Image validation error details
     image_validation_error_details: Any = None
+    # Image validation status
     image_validation_status: Any = None
+    # Provisioning state of the resource.
     provisioning_state: Any = None
+    # Catalog resource validation status
     validation_status: Any = None
-
-@dataclasses.dataclass
-class DevBoxDefinition_Value:
-    properties: Any = None
 
 @dataclasses.dataclass
 class DevBoxDefinitionConfig:
@@ -34,10 +39,12 @@ class DevBoxDefinitionConfig:
 
 @dataclasses.dataclass
 class DevBoxDefinitionAttrs:
-    # URL to get the next set of results if there are any.
-    next_link: Any = None
-    # Current page of results.
-    value: Any = None
+    # The geo-location where the resource lives
+    location: Any = None
+    # Properties of a Dev Box definition.
+    properties: Any = None
+    # Resource tags.
+    tags: Any = None
 
 DevBoxDefinition = ubx.DataSourceBinding(
     wire_type="azure_devcenter_dev_box_definition",

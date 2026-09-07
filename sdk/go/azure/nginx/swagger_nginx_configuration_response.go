@@ -55,40 +55,40 @@ type SwaggerNginxConfigurationResponse_SystemData struct {
 }
 
 var SwaggerNginxConfigurationResponse_Properties_FilesFields = ubx.FieldMap{
-	"Content":     ubx.FieldSpec{WireName: "content"},
-	"VirtualPath": ubx.FieldSpec{WireName: "virtual_path"},
-}
+		"Content": ubx.FieldSpec{WireName: "content"},
+		"VirtualPath": ubx.FieldSpec{WireName: "virtual_path"},
+	}
 
 var SwaggerNginxConfigurationResponse_Properties_PackageFields = ubx.FieldMap{
-	"Data":           ubx.FieldSpec{WireName: "data"},
-	"ProtectedFiles": ubx.FieldSpec{WireName: "protected_files"},
-}
+		"Data": ubx.FieldSpec{WireName: "data"},
+		"ProtectedFiles": ubx.FieldSpec{WireName: "protected_files"},
+	}
 
 var SwaggerNginxConfigurationResponse_Properties_ProtectedFilesFields = ubx.FieldMap{
-	"Content":     ubx.FieldSpec{WireName: "content"},
-	"ContentHash": ubx.FieldSpec{WireName: "content_hash"},
-	"VirtualPath": ubx.FieldSpec{WireName: "virtual_path"},
-}
+		"Content": ubx.FieldSpec{WireName: "content"},
+		"ContentHash": ubx.FieldSpec{WireName: "content_hash"},
+		"VirtualPath": ubx.FieldSpec{WireName: "virtual_path"},
+	}
 
 var SwaggerNginxConfigurationResponse_PropertiesFields = ubx.FieldMap{
-	"Files": ubx.FieldSpec{
-		WireName: "files",
-		Kind:     "list",
-		Fields:   SwaggerNginxConfigurationResponse_Properties_FilesFields,
-	},
-	"Package": ubx.FieldSpec{
-		WireName: "package",
-		Kind:     "object",
-		Fields:   SwaggerNginxConfigurationResponse_Properties_PackageFields,
-	},
-	"ProtectedFiles": ubx.FieldSpec{
-		WireName: "protected_files",
-		Kind:     "list",
-		Fields:   SwaggerNginxConfigurationResponse_Properties_ProtectedFilesFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"RootFile":          ubx.FieldSpec{WireName: "root_file"},
-}
+		"Files": ubx.FieldSpec{
+			WireName: "files",
+			Kind: "list",
+			Fields: SwaggerNginxConfigurationResponse_Properties_FilesFields,
+		},
+		"Package": ubx.FieldSpec{
+			WireName: "package",
+			Kind: "object",
+			Fields: SwaggerNginxConfigurationResponse_Properties_PackageFields,
+		},
+		"ProtectedFiles": ubx.FieldSpec{
+			WireName: "protected_files",
+			Kind: "list",
+			Fields: SwaggerNginxConfigurationResponse_Properties_ProtectedFilesFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"RootFile": ubx.FieldSpec{WireName: "root_file"},
+	}
 
 type SwaggerNginxConfigurationResponseConfig struct {
 	// Nginx Configuration Request Properties
@@ -113,8 +113,8 @@ var SwaggerNginxConfigurationResponse = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   SwaggerNginxConfigurationResponse_PropertiesFields,
+			Kind: "object",
+			Fields: SwaggerNginxConfigurationResponse_PropertiesFields,
 		},
 	},
 }

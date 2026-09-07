@@ -44,42 +44,42 @@ type OpenapiDatasetResource_Properties struct {
 }
 
 var OpenapiDatasetResource_Properties_FolderFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiDatasetResource_Properties_LinkedServiceNameFields = ubx.FieldMap{
-	"Parameters":    ubx.FieldSpec{WireName: "parameters"},
-	"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
-	"Type":          ubx.FieldSpec{WireName: "type"},
-}
+		"Parameters": ubx.FieldSpec{WireName: "parameters"},
+		"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiDatasetResource_Properties_ParametersFields = ubx.FieldMap{
-	"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-	"Type":         ubx.FieldSpec{WireName: "type"},
-}
+		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var OpenapiDatasetResource_PropertiesFields = ubx.FieldMap{
-	"Annotations": ubx.FieldSpec{WireName: "annotations"},
-	"Description": ubx.FieldSpec{WireName: "description"},
-	"Folder": ubx.FieldSpec{
-		WireName: "folder",
-		Kind:     "object",
-		Fields:   OpenapiDatasetResource_Properties_FolderFields,
-	},
-	"LinkedServiceName": ubx.FieldSpec{
-		WireName: "linked_service_name",
-		Kind:     "object",
-		Fields:   OpenapiDatasetResource_Properties_LinkedServiceNameFields,
-	},
-	"Parameters": ubx.FieldSpec{
-		WireName: "parameters",
-		Kind:     "map",
-		Fields:   OpenapiDatasetResource_Properties_ParametersFields,
-	},
-	"Schema":    ubx.FieldSpec{WireName: "schema"},
-	"Structure": ubx.FieldSpec{WireName: "structure"},
-	"Type":      ubx.FieldSpec{WireName: "type"},
-}
+		"Annotations": ubx.FieldSpec{WireName: "annotations"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Folder": ubx.FieldSpec{
+			WireName: "folder",
+			Kind: "object",
+			Fields: OpenapiDatasetResource_Properties_FolderFields,
+		},
+		"LinkedServiceName": ubx.FieldSpec{
+			WireName: "linked_service_name",
+			Kind: "object",
+			Fields: OpenapiDatasetResource_Properties_LinkedServiceNameFields,
+		},
+		"Parameters": ubx.FieldSpec{
+			WireName: "parameters",
+			Kind: "map",
+			Fields: OpenapiDatasetResource_Properties_ParametersFields,
+		},
+		"Schema": ubx.FieldSpec{WireName: "schema"},
+		"Structure": ubx.FieldSpec{WireName: "structure"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 type OpenapiDatasetResourceConfig struct {
 	// The Azure Data Factory nested object which identifies data within different data stores, such as tables, files, folders, and documents.
@@ -98,8 +98,8 @@ var OpenapiDatasetResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiDatasetResource_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiDatasetResource_PropertiesFields,
 		},
 	},
 }

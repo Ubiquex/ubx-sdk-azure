@@ -41,35 +41,35 @@ type ManagedclustersManagedNamespace_Properties struct {
 }
 
 var ManagedclustersManagedNamespace_Properties_DefaultNetworkPolicyFields = ubx.FieldMap{
-	"Egress":  ubx.FieldSpec{WireName: "egress"},
-	"Ingress": ubx.FieldSpec{WireName: "ingress"},
-}
+		"Egress": ubx.FieldSpec{WireName: "egress"},
+		"Ingress": ubx.FieldSpec{WireName: "ingress"},
+	}
 
 var ManagedclustersManagedNamespace_Properties_DefaultResourceQuotaFields = ubx.FieldMap{
-	"CpuLimit":      ubx.FieldSpec{WireName: "cpu_limit"},
-	"CpuRequest":    ubx.FieldSpec{WireName: "cpu_request"},
-	"MemoryLimit":   ubx.FieldSpec{WireName: "memory_limit"},
-	"MemoryRequest": ubx.FieldSpec{WireName: "memory_request"},
-}
+		"CpuLimit": ubx.FieldSpec{WireName: "cpu_limit"},
+		"CpuRequest": ubx.FieldSpec{WireName: "cpu_request"},
+		"MemoryLimit": ubx.FieldSpec{WireName: "memory_limit"},
+		"MemoryRequest": ubx.FieldSpec{WireName: "memory_request"},
+	}
 
 var ManagedclustersManagedNamespace_PropertiesFields = ubx.FieldMap{
-	"AdoptionPolicy": ubx.FieldSpec{WireName: "adoption_policy"},
-	"Annotations":    ubx.FieldSpec{WireName: "annotations"},
-	"DefaultNetworkPolicy": ubx.FieldSpec{
-		WireName: "default_network_policy",
-		Kind:     "object",
-		Fields:   ManagedclustersManagedNamespace_Properties_DefaultNetworkPolicyFields,
-	},
-	"DefaultResourceQuota": ubx.FieldSpec{
-		WireName: "default_resource_quota",
-		Kind:     "object",
-		Fields:   ManagedclustersManagedNamespace_Properties_DefaultResourceQuotaFields,
-	},
-	"DeletePolicy":      ubx.FieldSpec{WireName: "delete_policy"},
-	"Labels":            ubx.FieldSpec{WireName: "labels"},
-	"PortalFqdn":        ubx.FieldSpec{WireName: "portal_fqdn"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"AdoptionPolicy": ubx.FieldSpec{WireName: "adoption_policy"},
+		"Annotations": ubx.FieldSpec{WireName: "annotations"},
+		"DefaultNetworkPolicy": ubx.FieldSpec{
+			WireName: "default_network_policy",
+			Kind: "object",
+			Fields: ManagedclustersManagedNamespace_Properties_DefaultNetworkPolicyFields,
+		},
+		"DefaultResourceQuota": ubx.FieldSpec{
+			WireName: "default_resource_quota",
+			Kind: "object",
+			Fields: ManagedclustersManagedNamespace_Properties_DefaultResourceQuotaFields,
+		},
+		"DeletePolicy": ubx.FieldSpec{WireName: "delete_policy"},
+		"Labels": ubx.FieldSpec{WireName: "labels"},
+		"PortalFqdn": ubx.FieldSpec{WireName: "portal_fqdn"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type ManagedclustersManagedNamespaceConfig struct {
 	// The geo-location where the resource lives
@@ -97,8 +97,8 @@ var ManagedclustersManagedNamespace = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ManagedclustersManagedNamespace_PropertiesFields,
+			Kind: "object",
+			Fields: ManagedclustersManagedNamespace_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

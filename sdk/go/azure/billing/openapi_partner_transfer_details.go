@@ -4,15 +4,15 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPartnerTransferDetails_Properties_DetailedTransferStatus_ErrorDetails struct {
-	Code    any
+	Code any
 	Message any
 }
 
 type OpenapiPartnerTransferDetails_Properties_DetailedTransferStatus struct {
-	ErrorDetails   any
-	ProductId      any
-	ProductName    any
-	ProductType    any
+	ErrorDetails any
+	ProductId any
+	ProductName any
+	ProductType any
 	SkuDescription any
 	TransferStatus any
 }
@@ -39,38 +39,38 @@ type OpenapiPartnerTransferDetails_Properties struct {
 }
 
 var OpenapiPartnerTransferDetails_Properties_DetailedTransferStatus_ErrorDetailsFields = ubx.FieldMap{
-	"Code":    ubx.FieldSpec{WireName: "code"},
-	"Message": ubx.FieldSpec{WireName: "message"},
-}
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Message": ubx.FieldSpec{WireName: "message"},
+	}
 
 var OpenapiPartnerTransferDetails_Properties_DetailedTransferStatusFields = ubx.FieldMap{
-	"ErrorDetails": ubx.FieldSpec{
-		WireName: "error_details",
-		Kind:     "object",
-		Fields:   OpenapiPartnerTransferDetails_Properties_DetailedTransferStatus_ErrorDetailsFields,
-	},
-	"ProductId":      ubx.FieldSpec{WireName: "product_id"},
-	"ProductName":    ubx.FieldSpec{WireName: "product_name"},
-	"ProductType":    ubx.FieldSpec{WireName: "product_type"},
-	"SkuDescription": ubx.FieldSpec{WireName: "sku_description"},
-	"TransferStatus": ubx.FieldSpec{WireName: "transfer_status"},
-}
+		"ErrorDetails": ubx.FieldSpec{
+			WireName: "error_details",
+			Kind: "object",
+			Fields: OpenapiPartnerTransferDetails_Properties_DetailedTransferStatus_ErrorDetailsFields,
+		},
+		"ProductId": ubx.FieldSpec{WireName: "product_id"},
+		"ProductName": ubx.FieldSpec{WireName: "product_name"},
+		"ProductType": ubx.FieldSpec{WireName: "product_type"},
+		"SkuDescription": ubx.FieldSpec{WireName: "sku_description"},
+		"TransferStatus": ubx.FieldSpec{WireName: "transfer_status"},
+	}
 
 var OpenapiPartnerTransferDetails_PropertiesFields = ubx.FieldMap{
-	"CanceledBy": ubx.FieldSpec{WireName: "canceled_by"},
-	"DetailedTransferStatus": ubx.FieldSpec{
-		WireName: "detailed_transfer_status",
-		Kind:     "list",
-		Fields:   OpenapiPartnerTransferDetails_Properties_DetailedTransferStatusFields,
-	},
-	"ExpirationTime":        ubx.FieldSpec{WireName: "expiration_time"},
-	"InitiatorCustomerType": ubx.FieldSpec{WireName: "initiator_customer_type"},
-	"InitiatorEmailId":      ubx.FieldSpec{WireName: "initiator_email_id"},
-	"RecipientEmailId":      ubx.FieldSpec{WireName: "recipient_email_id"},
-	"ResellerId":            ubx.FieldSpec{WireName: "reseller_id"},
-	"ResellerName":          ubx.FieldSpec{WireName: "reseller_name"},
-	"TransferStatus":        ubx.FieldSpec{WireName: "transfer_status"},
-}
+		"CanceledBy": ubx.FieldSpec{WireName: "canceled_by"},
+		"DetailedTransferStatus": ubx.FieldSpec{
+			WireName: "detailed_transfer_status",
+			Kind: "list",
+			Fields: OpenapiPartnerTransferDetails_Properties_DetailedTransferStatusFields,
+		},
+		"ExpirationTime": ubx.FieldSpec{WireName: "expiration_time"},
+		"InitiatorCustomerType": ubx.FieldSpec{WireName: "initiator_customer_type"},
+		"InitiatorEmailId": ubx.FieldSpec{WireName: "initiator_email_id"},
+		"RecipientEmailId": ubx.FieldSpec{WireName: "recipient_email_id"},
+		"ResellerId": ubx.FieldSpec{WireName: "reseller_id"},
+		"ResellerName": ubx.FieldSpec{WireName: "reseller_name"},
+		"TransferStatus": ubx.FieldSpec{WireName: "transfer_status"},
+	}
 
 type OpenapiPartnerTransferDetailsConfig struct {
 	// Request parameters to initiate transfer.
@@ -89,8 +89,8 @@ var OpenapiPartnerTransferDetails = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiPartnerTransferDetails_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiPartnerTransferDetails_PropertiesFields,
 		},
 	},
 }

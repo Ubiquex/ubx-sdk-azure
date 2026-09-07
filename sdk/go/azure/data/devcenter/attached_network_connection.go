@@ -3,33 +3,58 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type AttachedNetworkConnection_Value_Properties struct {
-	DomainJoinType            any
-	HealthCheckStatus         any
-	NetworkConnectionId       any
+type AttachedNetworkConnection_Properties struct {
+	// Active Directory join type
+	DomainJoinType any
+	// Health check status values
+	HealthCheckStatus any
+	// The resource ID of the NetworkConnection you want to attach.
+	NetworkConnectionId any
+	// The geo-location where the NetworkConnection resource specified in 'networkConnectionResourceId' property lives.
 	NetworkConnectionLocation any
-	ProvisioningState         any
+	// Provisioning state of the resource.
+	ProvisioningState any
 }
 
-type AttachedNetworkConnection_Value struct {
-	Properties any
+type AttachedNetworkConnection_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type AttachedNetworkConnectionConfig struct {
-	DevCenterName any
+	AttachedNetworkConnectionName any
+	ProjectName any
 }
 
 type AttachedNetworkConnectionAttrs struct {
-	DevCenterName any
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	AttachedNetworkConnectionName any
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
+	ProjectName any
+	// Properties of an attached NetworkConnection.
+	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var AttachedNetworkConnection = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_attached_network_connection",
 	Fields: ubx.FieldMap{
-		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
+		"AttachedNetworkConnectionName": ubx.FieldSpec{WireName: "attached_network_connection_name"},
+		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
 	},
 }

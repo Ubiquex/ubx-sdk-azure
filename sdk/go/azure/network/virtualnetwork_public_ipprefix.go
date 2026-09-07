@@ -98,119 +98,119 @@ type VirtualnetworkPublicIpprefix_Sku struct {
 }
 
 var VirtualnetworkPublicIpprefix_ExtendedLocationFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var VirtualnetworkPublicIpprefix_Properties_IpTagsFields = ubx.FieldMap{
-	"FirstPartyServiceTagId": ubx.FieldSpec{WireName: "first_party_service_tag_id"},
-	"IpTagType":              ubx.FieldSpec{WireName: "ip_tag_type"},
-	"Tag":                    ubx.FieldSpec{WireName: "tag"},
-}
+		"FirstPartyServiceTagId": ubx.FieldSpec{WireName: "first_party_service_tag_id"},
+		"IpTagType": ubx.FieldSpec{WireName: "ip_tag_type"},
+		"Tag": ubx.FieldSpec{WireName: "tag"},
+	}
 
 var VirtualnetworkPublicIpprefix_Properties_NatGateway_PropertiesFields = ubx.FieldMap{
-	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-	"Nat64":                ubx.FieldSpec{WireName: "nat64"},
-	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
-	"PublicIpAddresses": ubx.FieldSpec{
-		WireName: "public_ip_addresses",
-		Kind:     "list",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"PublicIpAddressesV6": ubx.FieldSpec{
-		WireName: "public_ip_addresses_v6",
-		Kind:     "list",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"PublicIpPrefixes": ubx.FieldSpec{
-		WireName: "public_ip_prefixes",
-		Kind:     "list",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"PublicIpPrefixesV6": ubx.FieldSpec{
-		WireName: "public_ip_prefixes_v6",
-		Kind:     "list",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	"ServiceGateway": ubx.FieldSpec{
-		WireName: "service_gateway",
-		Kind:     "object",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"SourceVirtualNetwork": ubx.FieldSpec{
-		WireName: "source_virtual_network",
-		Kind:     "object",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"Subnets": ubx.FieldSpec{
-		WireName: "subnets",
-		Kind:     "list",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-}
+		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+		"Nat64": ubx.FieldSpec{WireName: "nat64"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"PublicIpAddresses": ubx.FieldSpec{
+			WireName: "public_ip_addresses",
+			Kind: "list",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"PublicIpAddressesV6": ubx.FieldSpec{
+			WireName: "public_ip_addresses_v6",
+			Kind: "list",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"PublicIpPrefixes": ubx.FieldSpec{
+			WireName: "public_ip_prefixes",
+			Kind: "list",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"PublicIpPrefixesV6": ubx.FieldSpec{
+			WireName: "public_ip_prefixes_v6",
+			Kind: "list",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+		"ServiceGateway": ubx.FieldSpec{
+			WireName: "service_gateway",
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"SourceVirtualNetwork": ubx.FieldSpec{
+			WireName: "source_virtual_network",
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"Subnets": ubx.FieldSpec{
+			WireName: "subnets",
+			Kind: "list",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+	}
 
 var VirtualnetworkPublicIpprefix_Properties_NatGateway_SkuFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var VirtualnetworkPublicIpprefix_Properties_NatGatewayFields = ubx.FieldMap{
-	"Etag": ubx.FieldSpec{WireName: "etag"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_NatGateway_PropertiesFields,
-	},
-	"Sku": ubx.FieldSpec{
-		WireName: "sku",
-		Kind:     "object",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_NatGateway_SkuFields,
-	},
-	"Zones": ubx.FieldSpec{WireName: "zones"},
-}
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_Properties_NatGateway_PropertiesFields,
+		},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_Properties_NatGateway_SkuFields,
+		},
+		"Zones": ubx.FieldSpec{WireName: "zones"},
+	}
 
 var VirtualnetworkPublicIpprefix_PropertiesFields = ubx.FieldMap{
-	"CustomIpprefix": ubx.FieldSpec{
-		WireName: "custom_ipprefix",
-		Kind:     "object",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"IpPrefix": ubx.FieldSpec{WireName: "ip_prefix"},
-	"IpTags": ubx.FieldSpec{
-		WireName: "ip_tags",
-		Kind:     "list",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_IpTagsFields,
-	},
-	"LoadBalancerFrontendIpConfiguration": ubx.FieldSpec{
-		WireName: "load_balancer_frontend_ip_configuration",
-		Kind:     "object",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"NatGateway": ubx.FieldSpec{
-		WireName: "nat_gateway",
-		Kind:     "object",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_NatGatewayFields,
-	},
-	"PrefixLength":           ubx.FieldSpec{WireName: "prefix_length"},
-	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
-	"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-	"PublicIpaddresses": ubx.FieldSpec{
-		WireName: "public_ipaddresses",
-		Kind:     "list",
-		Fields:   VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
-	},
-	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-}
+		"CustomIpprefix": ubx.FieldSpec{
+			WireName: "custom_ipprefix",
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"IpPrefix": ubx.FieldSpec{WireName: "ip_prefix"},
+		"IpTags": ubx.FieldSpec{
+			WireName: "ip_tags",
+			Kind: "list",
+			Fields: VirtualnetworkPublicIpprefix_Properties_IpTagsFields,
+		},
+		"LoadBalancerFrontendIpConfiguration": ubx.FieldSpec{
+			WireName: "load_balancer_frontend_ip_configuration",
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"NatGateway": ubx.FieldSpec{
+			WireName: "nat_gateway",
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_Properties_NatGatewayFields,
+		},
+		"PrefixLength": ubx.FieldSpec{WireName: "prefix_length"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
+		"PublicIpaddresses": ubx.FieldSpec{
+			WireName: "public_ipaddresses",
+			Kind: "list",
+			Fields: VirtualnetworkPublicIpprefix_Properties_CustomIpprefixFields,
+		},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
+	}
 
 var VirtualnetworkPublicIpprefix_SkuFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Tier": ubx.FieldSpec{WireName: "tier"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 type VirtualnetworkPublicIpprefixConfig struct {
 	// ExtendedLocation complex type.
@@ -257,22 +257,22 @@ var VirtualnetworkPublicIpprefix = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind:     "object",
-			Fields:   VirtualnetworkPublicIpprefix_ExtendedLocationFields,
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_ExtendedLocationFields,
 		},
-		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkPublicIpprefix_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   VirtualnetworkPublicIpprefix_SkuFields,
+			Kind: "object",
+			Fields: VirtualnetworkPublicIpprefix_SkuFields,
 		},
-		"Tags":  ubx.FieldSpec{WireName: "tags"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

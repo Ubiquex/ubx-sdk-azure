@@ -65,45 +65,45 @@ type Channel_SystemData struct {
 }
 
 var Channel_Properties_PartnerTopicInfo_EventTypeInfo_InlineEventTypesFields = ubx.FieldMap{
-	"DataSchemaUrl":    ubx.FieldSpec{WireName: "data_schema_url"},
-	"Description":      ubx.FieldSpec{WireName: "description"},
-	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
-	"DocumentationUrl": ubx.FieldSpec{WireName: "documentation_url"},
-}
+		"DataSchemaUrl": ubx.FieldSpec{WireName: "data_schema_url"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"DocumentationUrl": ubx.FieldSpec{WireName: "documentation_url"},
+	}
 
 var Channel_Properties_PartnerTopicInfo_EventTypeInfoFields = ubx.FieldMap{
-	"InlineEventTypes": ubx.FieldSpec{
-		WireName: "inline_event_types",
-		Kind:     "map",
-		Fields:   Channel_Properties_PartnerTopicInfo_EventTypeInfo_InlineEventTypesFields,
-	},
-	"Kind": ubx.FieldSpec{WireName: "kind"},
-}
+		"InlineEventTypes": ubx.FieldSpec{
+			WireName: "inline_event_types",
+			Kind: "map",
+			Fields: Channel_Properties_PartnerTopicInfo_EventTypeInfo_InlineEventTypesFields,
+		},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
+	}
 
 var Channel_Properties_PartnerTopicInfoFields = ubx.FieldMap{
-	"AzureSubscriptionId": ubx.FieldSpec{WireName: "azure_subscription_id"},
-	"EventTypeInfo": ubx.FieldSpec{
-		WireName: "event_type_info",
-		Kind:     "object",
-		Fields:   Channel_Properties_PartnerTopicInfo_EventTypeInfoFields,
-	},
-	"Name":              ubx.FieldSpec{WireName: "name"},
-	"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-	"Source":            ubx.FieldSpec{WireName: "source"},
-}
+		"AzureSubscriptionId": ubx.FieldSpec{WireName: "azure_subscription_id"},
+		"EventTypeInfo": ubx.FieldSpec{
+			WireName: "event_type_info",
+			Kind: "object",
+			Fields: Channel_Properties_PartnerTopicInfo_EventTypeInfoFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
+		"Source": ubx.FieldSpec{WireName: "source"},
+	}
 
 var Channel_PropertiesFields = ubx.FieldMap{
-	"ChannelType":                     ubx.FieldSpec{WireName: "channel_type"},
-	"ExpirationTimeIfNotActivatedUtc": ubx.FieldSpec{WireName: "expiration_time_if_not_activated_utc"},
-	"MessageForActivation":            ubx.FieldSpec{WireName: "message_for_activation"},
-	"PartnerTopicInfo": ubx.FieldSpec{
-		WireName: "partner_topic_info",
-		Kind:     "object",
-		Fields:   Channel_Properties_PartnerTopicInfoFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"ReadinessState":    ubx.FieldSpec{WireName: "readiness_state"},
-}
+		"ChannelType": ubx.FieldSpec{WireName: "channel_type"},
+		"ExpirationTimeIfNotActivatedUtc": ubx.FieldSpec{WireName: "expiration_time_if_not_activated_utc"},
+		"MessageForActivation": ubx.FieldSpec{WireName: "message_for_activation"},
+		"PartnerTopicInfo": ubx.FieldSpec{
+			WireName: "partner_topic_info",
+			Kind: "object",
+			Fields: Channel_Properties_PartnerTopicInfoFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ReadinessState": ubx.FieldSpec{WireName: "readiness_state"},
+	}
 
 type ChannelConfig struct {
 	// Properties of the Channel.
@@ -128,8 +128,8 @@ var Channel = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   Channel_PropertiesFields,
+			Kind: "object",
+			Fields: Channel_PropertiesFields,
 		},
 	},
 }

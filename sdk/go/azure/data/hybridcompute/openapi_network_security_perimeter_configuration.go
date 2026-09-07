@@ -3,75 +3,87 @@ package hybridcompute
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter struct {
-	Id            any
-	Location      any
+type OpenapiNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter struct {
+	// Azure resource Id
+	Id any
+	// Regional location of the perimeter
+	Location any
+	// Guid of the Network Security Perimeter
 	PerimeterGuid any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
 	AddressPrefixes any
-	Direction       any
+	Direction any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules struct {
-	Name       any
+type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
+	Name any
 	Properties any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile struct {
-	AccessRules               any
-	AccessRulesVersion        any
+type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
+	// Collection of access rules for the profile
+	AccessRules any
+	// Access rules version number
+	AccessRulesVersion any
+	// Diagnostic settings version number
 	DiagnosticSettingsVersion any
-	EnabledLogCategories      any
-	Name                      any
+	// Collection of enabled log categories for the profile
+	EnabledLogCategories any
+	// Name of the resource
+	Name any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties struct {
-	Description          any
-	IssueType            any
-	Severity             any
+type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
+	Description any
+	IssueType any
+	Severity any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues struct {
-	Name       any
+type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
+	Name any
 	Properties any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation struct {
+	// Property that impacts a resource's logging behavior and its connectivity with other resources and public networks.
 	AccessMode any
-	Name       any
+	// Name of the Resource Association
+	Name any
 }
 
-type OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties struct {
+type OpenapiNetworkSecurityPerimeterConfiguration_Properties struct {
+	// Properties that define a Network Security Perimeter resource.
 	NetworkSecurityPerimeter any
-	Profile                  any
-	ProvisioningIssues       any
-	ProvisioningState        any
-	ResourceAssociation      any
-}
-
-type OpenapiNetworkSecurityPerimeterConfiguration_Value struct {
-	Properties any
+	// Network Security Perimeter profile
+	Profile any
+	// Provisioning issues.
+	ProvisioningIssues any
+	// Current state of this NetworkSecurityPerimeter: whether or not is has been provisioned within the resource group it is defined. Users cannot change this value but are able to read from it. Values will include Provisioning ,Succeeded, Canceled and Failed.
+	ProvisioningState any
+	// Properties that define a Resource Association.
+	ResourceAssociation any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationConfig struct {
+	PerimeterName any
 	ScopeName any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationAttrs struct {
-	// The link to the next page of items
-	NextLink  any
+	PerimeterName any
+	// Properties that define a Network Security Perimeter resource.
+	Properties any
 	ScopeName any
-	// The NetworkSecurityPerimeterConfiguration items on this page
-	Value any
 }
 
 var OpenapiNetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_network_security_perimeter_configuration",
 	Fields: ubx.FieldMap{
+		"PerimeterName": ubx.FieldSpec{WireName: "perimeter_name"},
 		"ScopeName": ubx.FieldSpec{WireName: "scope_name"},
 	},
 }

@@ -31,19 +31,19 @@ type SqlpoolDataMaskingRule_Properties struct {
 }
 
 var SqlpoolDataMaskingRule_PropertiesFields = ubx.FieldMap{
-	"AliasName":         ubx.FieldSpec{WireName: "alias_name"},
-	"ColumnName":        ubx.FieldSpec{WireName: "column_name"},
-	"Id":                ubx.FieldSpec{WireName: "id"},
-	"MaskingFunction":   ubx.FieldSpec{WireName: "masking_function"},
-	"NumberFrom":        ubx.FieldSpec{WireName: "number_from"},
-	"NumberTo":          ubx.FieldSpec{WireName: "number_to"},
-	"PrefixSize":        ubx.FieldSpec{WireName: "prefix_size"},
-	"ReplacementString": ubx.FieldSpec{WireName: "replacement_string"},
-	"RuleState":         ubx.FieldSpec{WireName: "rule_state"},
-	"SchemaName":        ubx.FieldSpec{WireName: "schema_name"},
-	"SuffixSize":        ubx.FieldSpec{WireName: "suffix_size"},
-	"TableName":         ubx.FieldSpec{WireName: "table_name"},
-}
+		"AliasName": ubx.FieldSpec{WireName: "alias_name"},
+		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"MaskingFunction": ubx.FieldSpec{WireName: "masking_function"},
+		"NumberFrom": ubx.FieldSpec{WireName: "number_from"},
+		"NumberTo": ubx.FieldSpec{WireName: "number_to"},
+		"PrefixSize": ubx.FieldSpec{WireName: "prefix_size"},
+		"ReplacementString": ubx.FieldSpec{WireName: "replacement_string"},
+		"RuleState": ubx.FieldSpec{WireName: "rule_state"},
+		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
+		"SuffixSize": ubx.FieldSpec{WireName: "suffix_size"},
+		"TableName": ubx.FieldSpec{WireName: "table_name"},
+	}
 
 type SqlpoolDataMaskingRuleConfig struct {
 	// The properties of a Sql pool data masking rule.
@@ -64,8 +64,8 @@ var SqlpoolDataMaskingRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   SqlpoolDataMaskingRule_PropertiesFields,
+			Kind: "object",
+			Fields: SqlpoolDataMaskingRule_PropertiesFields,
 		},
 	},
 }

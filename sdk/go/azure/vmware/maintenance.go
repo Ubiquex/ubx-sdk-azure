@@ -96,5 +96,6 @@ type MaintenanceAttrs struct {
 
 var Maintenance = ubx.ResourceBinding{
 	WireType: "azure_vmware_maintenance",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

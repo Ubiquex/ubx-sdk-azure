@@ -3,56 +3,72 @@ package eventgrid
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PartnerConfiguration_Value_Properties_PartnerAuthorization_AuthorizedPartnersList struct {
+type PartnerConfiguration_Properties_PartnerAuthorization_AuthorizedPartnersList struct {
 	AuthorizationExpirationTimeInUtc any
-	PartnerName                      any
-	PartnerRegistrationImmutableId   any
+	PartnerName any
+	PartnerRegistrationImmutableId any
 }
 
-type PartnerConfiguration_Value_Properties_PartnerAuthorization struct {
-	AuthorizedPartnersList             any
+type PartnerConfiguration_Properties_PartnerAuthorization struct {
+	// The list of authorized partners.
+	AuthorizedPartnersList any
+	// Time used to validate the authorization expiration time for each authorized partner. If DefaultMaximumExpirationTimeInDays is not specified, the default is 7 days. Otherwise, allowed values are between 1 and 365 days.
 	DefaultMaximumExpirationTimeInDays any
 }
 
-type PartnerConfiguration_Value_Properties struct {
+type PartnerConfiguration_Properties struct {
+	// The partner authorization details.
 	PartnerAuthorization any
-	ProvisioningState    any
+	// Provisioning state of the partner configuration.
+	ProvisioningState any
 }
 
-type PartnerConfiguration_Value_SystemData struct {
-	CreatedAt          any
-	CreatedBy          any
-	CreatedByType      any
-	LastModifiedAt     any
-	LastModifiedBy     any
+type PartnerConfiguration_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
 	LastModifiedByType any
 }
 
-type PartnerConfiguration_Value struct {
-	Location   any
-	Properties any
-	SystemData any
-	Tags       any
-}
-
 type PartnerConfigurationConfig struct {
-	ApiVersion     any
+	ApiVersion any
+	ResourceGroupName any
 	SubscriptionId any
 }
 
 type PartnerConfigurationAttrs struct {
 	ApiVersion any
-	// A link for the next page of partner configurations.
-	NextLink       any
+	// Fully qualified identifier of the resource.
+	Id any
+	// Location of the resource.
+	Location any
+	// Name of the resource.
+	Name any
+	// Properties of the partner configuration.
+	Properties any
+	ResourceGroupName any
 	SubscriptionId any
-	// A collection of partner configurations.
-	Value any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Tags of the resource.
+	Tags any
+	// Type of the resource.
+	Type any
 }
 
 var PartnerConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_partner_configuration",
 	Fields: ubx.FieldMap{
-		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

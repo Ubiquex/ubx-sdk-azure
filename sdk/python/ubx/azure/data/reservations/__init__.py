@@ -5,6 +5,7 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .applied_reservations import AppliedReservations, AppliedReservationsConfig
-from .catalog import Catalog, CatalogConfig
-from .reservation_order_response import ReservationOrderResponse, ReservationOrderResponseConfig
+from .catalog_list import CatalogList, CatalogListConfig
+from .reservation_order_response_list import ReservationOrderResponseList, ReservationOrderResponseListConfig
 from .reservation_response import ReservationResponse, ReservationResponseConfig
+from .reservation_response_list import ReservationResponseList, ReservationResponseListConfig

@@ -7,31 +7,30 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiAnalysisDefinition_Value_Properties:
+class OpenapiAnalysisDefinition_Properties:
+    # Description of the Analysis
     description: Any = None
 
 @dataclasses.dataclass
-class OpenapiAnalysisDefinition_Value:
-    kind: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiAnalysisDefinitionConfig:
+    analysis_name: Any = None
     diagnostic_category: Any = None
     site_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiAnalysisDefinitionAttrs:
+    analysis_name: Any = None
     diagnostic_category: Any = None
-    # The link to the next page of items
-    next_link: Any = None
+    # Kind of resource.
+    kind: Any = None
+    # AnalysisDefinition resource specific properties
+    properties: Any = None
     site_name: Any = None
-    # The AnalysisDefinition items on this page
-    value: Any = None
 
 OpenapiAnalysisDefinition = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_analysis_definition",
     fields={
+        "analysis_name": ubx.FieldSpec(wire_name="analysis_name"),
         "diagnostic_category": ubx.FieldSpec(wire_name="diagnostic_category"),
         "site_name": ubx.FieldSpec(wire_name="site_name"),
     },

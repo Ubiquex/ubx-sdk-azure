@@ -9,8 +9,8 @@ type OpenapiAiGateway_Properties struct {
 }
 
 var OpenapiAiGateway_PropertiesFields = ubx.FieldMap{
-	"AiGatewayId": ubx.FieldSpec{WireName: "ai_gateway_id"},
-}
+		"AiGatewayId": ubx.FieldSpec{WireName: "ai_gateway_id"},
+	}
 
 type OpenapiAiGatewayConfig struct {
 	// The geo-location where the resource lives
@@ -40,8 +40,8 @@ var OpenapiAiGateway = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiAiGateway_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiAiGateway_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

@@ -9,8 +9,8 @@ type ResourceGroup_Properties struct {
 }
 
 var ResourceGroup_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type ResourceGroupConfig struct {
 	// The geo-location where the resource lives
@@ -37,12 +37,12 @@ type ResourceGroupAttrs struct {
 var ResourceGroup = ubx.ResourceBinding{
 	WireType: "azure_resources_resource_group",
 	Fields: ubx.FieldMap{
-		"Location":  ubx.FieldSpec{WireName: "location"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ResourceGroup_PropertiesFields,
+			Kind: "object",
+			Fields: ResourceGroup_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

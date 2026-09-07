@@ -3,48 +3,57 @@ package logic
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkflowRunActionRepetitionDefinition_Value_Properties_RepetitionIndexes struct {
+type WorkflowRunActionRepetitionDefinition_Properties_RepetitionIndexes struct {
 	ItemIndex any
 	ScopeName any
 }
 
-type WorkflowRunActionRepetitionDefinition_Value_Properties struct {
+type WorkflowRunActionRepetitionDefinition_Properties struct {
+	// The repetition indexes.
 	RepetitionIndexes any
 }
 
-type WorkflowRunActionRepetitionDefinition_Value struct {
-	Properties any
-}
-
 type WorkflowRunActionRepetitionDefinitionConfig struct {
-	ActionName        any
-	ApiVersion        any
+	ActionName any
+	ApiVersion any
+	RepetitionName any
 	ResourceGroupName any
-	RunName           any
-	SubscriptionId    any
-	WorkflowName      any
+	RunName any
+	SubscriptionId any
+	WorkflowName any
 }
 
 type WorkflowRunActionRepetitionDefinitionAttrs struct {
 	ActionName any
 	ApiVersion any
-	// The link used to get the next page of recommendations.
-	NextLink          any
+	// The resource id.
+	Id any
+	// The resource location.
+	Location any
+	// Gets the resource name.
+	Name any
+	// The workflow run action repetition properties definition.
+	Properties any
+	RepetitionName any
 	ResourceGroupName any
-	RunName           any
-	SubscriptionId    any
-	Value             any
-	WorkflowName      any
+	RunName any
+	SubscriptionId any
+	// The resource tags.
+	Tags any
+	// Gets the resource type.
+	Type any
+	WorkflowName any
 }
 
 var WorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_run_action_repetition_definition",
 	Fields: ubx.FieldMap{
-		"ActionName":        ubx.FieldSpec{WireName: "action_name"},
-		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ActionName": ubx.FieldSpec{WireName: "action_name"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"RepetitionName": ubx.FieldSpec{WireName: "repetition_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"RunName":           ubx.FieldSpec{WireName: "run_name"},
-		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
+		"RunName": ubx.FieldSpec{WireName: "run_name"},
+		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }
