@@ -4,9 +4,9 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .firewall_rule import FirewallRule, FirewallRuleConfig
-from .mongo_cluster import MongoCluster, MongoClusterConfig
-from .private_endpoint_connection_resource import PrivateEndpointConnectionResource, PrivateEndpointConnectionResourceConfig
-from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .replica import Replica, ReplicaConfig
-from .user import User, UserConfig
+from .firewall_rule_list import FirewallRuleList, FirewallRuleListConfig
+from .mongo_cluster_list import MongoClusterList, MongoClusterListConfig
+from .private_endpoint_connection_resource_list import PrivateEndpointConnectionResourceList, PrivateEndpointConnectionResourceListConfig
+from .private_link_resource_list import PrivateLinkResourceList, PrivateLinkResourceListConfig
+from .replica_list import ReplicaList, ReplicaListConfig
+from .user_list import UserList, UserListConfig

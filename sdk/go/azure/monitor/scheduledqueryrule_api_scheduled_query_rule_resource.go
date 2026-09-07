@@ -144,108 +144,108 @@ type ScheduledqueryruleApiScheduledQueryRuleResource_SystemData struct {
 }
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_Properties_ActionsFields = ubx.FieldMap{
-	"ActionGroups":     ubx.FieldSpec{WireName: "action_groups"},
-	"ActionProperties": ubx.FieldSpec{WireName: "action_properties"},
-	"CustomProperties": ubx.FieldSpec{WireName: "custom_properties"},
-}
+		"ActionGroups": ubx.FieldSpec{WireName: "action_groups"},
+		"ActionProperties": ubx.FieldSpec{WireName: "action_properties"},
+		"CustomProperties": ubx.FieldSpec{WireName: "custom_properties"},
+	}
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_DimensionsFields = ubx.FieldMap{
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Operator": ubx.FieldSpec{WireName: "operator"},
-	"Values":   ubx.FieldSpec{WireName: "values"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Operator": ubx.FieldSpec{WireName: "operator"},
+		"Values": ubx.FieldSpec{WireName: "values"},
+	}
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_FailingPeriodsFields = ubx.FieldMap{
-	"MinFailingPeriodsToAlert":  ubx.FieldSpec{WireName: "min_failing_periods_to_alert"},
-	"NumberOfEvaluationPeriods": ubx.FieldSpec{WireName: "number_of_evaluation_periods"},
-}
+		"MinFailingPeriodsToAlert": ubx.FieldSpec{WireName: "min_failing_periods_to_alert"},
+		"NumberOfEvaluationPeriods": ubx.FieldSpec{WireName: "number_of_evaluation_periods"},
+	}
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOfFields = ubx.FieldMap{
-	"AlertSensitivity": ubx.FieldSpec{WireName: "alert_sensitivity"},
-	"CriterionType":    ubx.FieldSpec{WireName: "criterion_type"},
-	"Dimensions": ubx.FieldSpec{
-		WireName: "dimensions",
-		Kind:     "list",
-		Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_DimensionsFields,
-	},
-	"FailingPeriods": ubx.FieldSpec{
-		WireName: "failing_periods",
-		Kind:     "object",
-		Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_FailingPeriodsFields,
-	},
-	"IgnoreDataBefore":    ubx.FieldSpec{WireName: "ignore_data_before"},
-	"MetricMeasureColumn": ubx.FieldSpec{WireName: "metric_measure_column"},
-	"MetricName":          ubx.FieldSpec{WireName: "metric_name"},
-	"MinRecurrenceCount":  ubx.FieldSpec{WireName: "min_recurrence_count"},
-	"Operator":            ubx.FieldSpec{WireName: "operator"},
-	"Query":               ubx.FieldSpec{WireName: "query"},
-	"ResourceIdColumn":    ubx.FieldSpec{WireName: "resource_id_column"},
-	"Threshold":           ubx.FieldSpec{WireName: "threshold"},
-	"TimeAggregation":     ubx.FieldSpec{WireName: "time_aggregation"},
-}
+		"AlertSensitivity": ubx.FieldSpec{WireName: "alert_sensitivity"},
+		"CriterionType": ubx.FieldSpec{WireName: "criterion_type"},
+		"Dimensions": ubx.FieldSpec{
+			WireName: "dimensions",
+			Kind: "list",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_DimensionsFields,
+		},
+		"FailingPeriods": ubx.FieldSpec{
+			WireName: "failing_periods",
+			Kind: "object",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOf_FailingPeriodsFields,
+		},
+		"IgnoreDataBefore": ubx.FieldSpec{WireName: "ignore_data_before"},
+		"MetricMeasureColumn": ubx.FieldSpec{WireName: "metric_measure_column"},
+		"MetricName": ubx.FieldSpec{WireName: "metric_name"},
+		"MinRecurrenceCount": ubx.FieldSpec{WireName: "min_recurrence_count"},
+		"Operator": ubx.FieldSpec{WireName: "operator"},
+		"Query": ubx.FieldSpec{WireName: "query"},
+		"ResourceIdColumn": ubx.FieldSpec{WireName: "resource_id_column"},
+		"Threshold": ubx.FieldSpec{WireName: "threshold"},
+		"TimeAggregation": ubx.FieldSpec{WireName: "time_aggregation"},
+	}
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_Properties_CriteriaFields = ubx.FieldMap{
-	"AllOf": ubx.FieldSpec{
-		WireName: "all_of",
-		Kind:     "list",
-		Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOfFields,
-	},
-}
+		"AllOf": ubx.FieldSpec{
+			WireName: "all_of",
+			Kind: "list",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_Properties_Criteria_AllOfFields,
+		},
+	}
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_Properties_ResolveConfigurationFields = ubx.FieldMap{
-	"AutoResolved":  ubx.FieldSpec{WireName: "auto_resolved"},
-	"TimeToResolve": ubx.FieldSpec{WireName: "time_to_resolve"},
-}
+		"AutoResolved": ubx.FieldSpec{WireName: "auto_resolved"},
+		"TimeToResolve": ubx.FieldSpec{WireName: "time_to_resolve"},
+	}
 
 var ScheduledqueryruleApiScheduledQueryRuleResource_PropertiesFields = ubx.FieldMap{
-	"Actions": ubx.FieldSpec{
-		WireName: "actions",
-		Kind:     "object",
-		Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_Properties_ActionsFields,
-	},
-	"AutoMitigate":                          ubx.FieldSpec{WireName: "auto_mitigate"},
-	"CheckWorkspaceAlertsStorageConfigured": ubx.FieldSpec{WireName: "check_workspace_alerts_storage_configured"},
-	"CreatedWithApiVersion":                 ubx.FieldSpec{WireName: "created_with_api_version"},
-	"Criteria": ubx.FieldSpec{
-		WireName: "criteria",
-		Kind:     "object",
-		Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_Properties_CriteriaFields,
-	},
-	"Description":                        ubx.FieldSpec{WireName: "description"},
-	"DisplayName":                        ubx.FieldSpec{WireName: "display_name"},
-	"Enabled":                            ubx.FieldSpec{WireName: "enabled"},
-	"EvaluationFrequency":                ubx.FieldSpec{WireName: "evaluation_frequency"},
-	"IsLegacyLogAnalyticsRule":           ubx.FieldSpec{WireName: "is_legacy_log_analytics_rule"},
-	"IsWorkspaceAlertsStorageConfigured": ubx.FieldSpec{WireName: "is_workspace_alerts_storage_configured"},
-	"MuteActionsDuration":                ubx.FieldSpec{WireName: "mute_actions_duration"},
-	"OverrideQueryTimeRange":             ubx.FieldSpec{WireName: "override_query_time_range"},
-	"ResolveConfiguration": ubx.FieldSpec{
-		WireName: "resolve_configuration",
-		Kind:     "object",
-		Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_Properties_ResolveConfigurationFields,
-	},
-	"Scopes":              ubx.FieldSpec{WireName: "scopes"},
-	"Severity":            ubx.FieldSpec{WireName: "severity"},
-	"SkipQueryValidation": ubx.FieldSpec{WireName: "skip_query_validation"},
-	"TargetResourceTypes": ubx.FieldSpec{WireName: "target_resource_types"},
-	"WindowSize":          ubx.FieldSpec{WireName: "window_size"},
-}
+		"Actions": ubx.FieldSpec{
+			WireName: "actions",
+			Kind: "object",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_Properties_ActionsFields,
+		},
+		"AutoMitigate": ubx.FieldSpec{WireName: "auto_mitigate"},
+		"CheckWorkspaceAlertsStorageConfigured": ubx.FieldSpec{WireName: "check_workspace_alerts_storage_configured"},
+		"CreatedWithApiVersion": ubx.FieldSpec{WireName: "created_with_api_version"},
+		"Criteria": ubx.FieldSpec{
+			WireName: "criteria",
+			Kind: "object",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_Properties_CriteriaFields,
+		},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"Enabled": ubx.FieldSpec{WireName: "enabled"},
+		"EvaluationFrequency": ubx.FieldSpec{WireName: "evaluation_frequency"},
+		"IsLegacyLogAnalyticsRule": ubx.FieldSpec{WireName: "is_legacy_log_analytics_rule"},
+		"IsWorkspaceAlertsStorageConfigured": ubx.FieldSpec{WireName: "is_workspace_alerts_storage_configured"},
+		"MuteActionsDuration": ubx.FieldSpec{WireName: "mute_actions_duration"},
+		"OverrideQueryTimeRange": ubx.FieldSpec{WireName: "override_query_time_range"},
+		"ResolveConfiguration": ubx.FieldSpec{
+			WireName: "resolve_configuration",
+			Kind: "object",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_Properties_ResolveConfigurationFields,
+		},
+		"Scopes": ubx.FieldSpec{WireName: "scopes"},
+		"Severity": ubx.FieldSpec{WireName: "severity"},
+		"SkipQueryValidation": ubx.FieldSpec{WireName: "skip_query_validation"},
+		"TargetResourceTypes": ubx.FieldSpec{WireName: "target_resource_types"},
+		"WindowSize": ubx.FieldSpec{WireName: "window_size"},
+	}
 
 type ScheduledqueryruleApiScheduledQueryRuleResourceConfig struct {
 	// Identity for the resource.
@@ -288,15 +288,15 @@ var ScheduledqueryruleApiScheduledQueryRuleResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_IdentityFields,
+			Kind: "object",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_IdentityFields,
 		},
-		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ScheduledqueryruleApiScheduledQueryRuleResource_PropertiesFields,
+			Kind: "object",
+			Fields: ScheduledqueryruleApiScheduledQueryRuleResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

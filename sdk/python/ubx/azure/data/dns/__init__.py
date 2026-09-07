@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .record_set import RecordSet, RecordSetConfig
+from .record_set_list import RecordSetList, RecordSetListConfig

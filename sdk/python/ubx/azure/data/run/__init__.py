@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .command_document_base import CommandDocumentBase, CommandDocumentBaseConfig
-from .command_parameter_definition import CommandParameterDefinition, CommandParameterDefinitionConfig
+from .command_document_base_list import CommandDocumentBaseList, CommandDocumentBaseListConfig
+from .command_parameter_definition_list import CommandParameterDefinitionList, CommandParameterDefinitionListConfig

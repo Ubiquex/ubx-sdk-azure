@@ -3,44 +3,77 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Catalog_Value_Properties_LastSyncStats struct {
-	Added                  any
-	Removed                any
+type Catalog_Properties_LastSyncStats struct {
+	// Count of catalog items added during synchronization.
+	Added any
+	// Count of catalog items removed during synchronization.
+	Removed any
+	// Indicates catalog item types that were synced.
 	SyncedCatalogItemTypes any
-	SynchronizationErrors  any
-	Unchanged              any
-	Updated                any
-	ValidationErrors       any
+	// Count of synchronization errors that occured during synchronization.
+	SynchronizationErrors any
+	// Count of catalog items that were unchanged during synchronization.
+	Unchanged any
+	// Count of catalog items updated during synchronization.
+	Updated any
+	// Count of catalog items that had validation errors during synchronization.
+	ValidationErrors any
 }
 
-type Catalog_Value_Properties struct {
-	ConnectionState    any
+type Catalog_Properties struct {
+	// The connection state of the catalog.
+	ConnectionState any
+	// When the catalog was last connected.
 	LastConnectionTime any
-	LastSyncStats      any
-	LastSyncTime       any
-	ProvisioningState  any
-	SyncState          any
+	// Stats of the synchronization.
+	LastSyncStats any
+	// When the catalog was last synced.
+	LastSyncTime any
+	// Provisioning state of the resource.
+	ProvisioningState any
+	// The synchronization state of the catalog.
+	SyncState any
 }
 
-type Catalog_Value struct {
-	Properties any
+type Catalog_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type CatalogConfig struct {
-	DevCenterName any
+	CatalogName any
+	ProjectName any
 }
 
 type CatalogAttrs struct {
-	DevCenterName any
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	CatalogName any
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
+	ProjectName any
+	// Properties of a catalog.
+	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var Catalog = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_catalog",
 	Fields: ubx.FieldMap{
-		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
+		"CatalogName": ubx.FieldSpec{WireName: "catalog_name"},
+		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
 	},
 }

@@ -3,33 +3,48 @@ package automanage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ConfigurationProfile_Value_Properties struct {
+type ConfigurationProfile_Properties struct {
+	// The custom configuration for configuration profile. Name and value pairs that define the configuration details of the configuration profile.
 	Configuration any
 }
 
-type ConfigurationProfile_Value_SystemData struct {
-	CreatedAt          any
-	CreatedBy          any
-	CreatedByType      any
-	LastModifiedAt     any
-	LastModifiedBy     any
+type ConfigurationProfile_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
 	LastModifiedByType any
 }
 
-type ConfigurationProfile_Value struct {
-	Properties any
-	SystemData any
-}
-
 type ConfigurationProfileConfig struct {
+	ConfigurationProfileName any
+	VersionName any
 }
 
 type ConfigurationProfileAttrs struct {
-	// Result of the list ConfigurationProfile operation.
-	Value any
+	ConfigurationProfileName any
+	// The geo-location where the resource lives
+	Location any
+	// Automanage configuration profile properties.
+	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Resource tags.
+	Tags any
+	VersionName any
 }
 
 var ConfigurationProfile = ubx.DataSourceBinding{
 	WireType: "azure_automanage_configuration_profile",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"ConfigurationProfileName": ubx.FieldSpec{WireName: "configuration_profile_name"},
+		"VersionName": ubx.FieldSpec{WireName: "version_name"},
+	},
 }

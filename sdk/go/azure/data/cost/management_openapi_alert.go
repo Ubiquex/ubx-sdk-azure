@@ -3,74 +3,105 @@ package cost
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ManagementOpenapiAlert_Value_Properties_Definition struct {
+type ManagementOpenapiAlert_Properties_Definition struct {
+	// Alert category
 	Category any
+	// Criteria that triggered alert
 	Criteria any
-	Type     any
+	// type of alert
+	Type any
 }
 
-type ManagementOpenapiAlert_Value_Properties_Details struct {
-	Amount              any
-	CompanyName         any
-	ContactEmails       any
-	ContactGroups       any
-	ContactRoles        any
-	CurrentSpend        any
-	DepartmentName      any
-	EnrollmentEndDate   any
-	EnrollmentNumber    any
+type ManagementOpenapiAlert_Properties_Details struct {
+	// budget threshold amount
+	Amount any
+	// company name
+	CompanyName any
+	// list of emails to contact
+	ContactEmails any
+	// list of action groups to broadcast to
+	ContactGroups any
+	// list of contact roles
+	ContactRoles any
+	// current spend
+	CurrentSpend any
+	// department name
+	DepartmentName any
+	// datetime of enrollmentEndDate
+	EnrollmentEndDate any
+	// enrollment number
+	EnrollmentNumber any
+	// datetime of enrollmentStartDate
 	EnrollmentStartDate any
-	InvoicingThreshold  any
-	MeterFilter         any
-	Operator            any
-	OverridingAlert     any
-	PeriodStartDate     any
-	ResourceFilter      any
+	// invoicing threshold
+	InvoicingThreshold any
+	// array of meters to filter by
+	MeterFilter any
+	// operator used to compare currentSpend with amount
+	Operator any
+	// overriding alert
+	OverridingAlert any
+	// datetime of periodStartDate
+	PeriodStartDate any
+	// array of resources to filter by
+	ResourceFilter any
+	// array of resourceGroups to filter by
 	ResourceGroupFilter any
-	TagFilter           any
-	Threshold           any
-	TimeGrainType       any
-	TriggeredBy         any
-	Unit                any
+	// tags to filter by
+	TagFilter any
+	// notification threshold percentage as a decimal which activated this alert
+	Threshold any
+	// Type of timegrain cadence
+	TimeGrainType any
+	// notificationId that triggered this alert
+	TriggeredBy any
+	// unit of currency being used
+	Unit any
 }
 
-type ManagementOpenapiAlert_Value_Properties struct {
-	CloseTime                  any
-	CostEntityId               any
-	CreationTime               any
-	Definition                 any
-	Description                any
-	Details                    any
-	ModificationTime           any
-	Source                     any
-	Status                     any
-	StatusModificationTime     any
+type ManagementOpenapiAlert_Properties struct {
+	// dateTime in which alert was closed
+	CloseTime any
+	// related budget
+	CostEntityId any
+	// dateTime in which alert was created
+	CreationTime any
+	// defines the type of alert
+	Definition any
+	// Alert description
+	Description any
+	// Alert details
+	Details any
+	// dateTime in which alert was last modified
+	ModificationTime any
+	// Source of alert
+	Source any
+	// alert status
+	Status any
+	// dateTime in which the alert status was last modified
+	StatusModificationTime any
+	// User who last modified the alert
 	StatusModificationUserName any
 }
 
-type ManagementOpenapiAlert_Value struct {
-	ETag       any
-	Properties any
-}
-
 type ManagementOpenapiAlertConfig struct {
-	ExternalCloudProviderId   any
-	ExternalCloudProviderType any
+	AlertId any
+	Scope any
 }
 
 type ManagementOpenapiAlertAttrs struct {
-	ExternalCloudProviderId   any
-	ExternalCloudProviderType any
-	// URL to get the next set of alerts results if there are any.
-	NextLink any
-	// List of alerts.
-	Value any
+	AlertId any
+	// The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
+	ETag any
+	// Alert properties.
+	Properties any
+	Scope any
 }
 
 var ManagementOpenapiAlert = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_alert",
 	Fields: ubx.FieldMap{
-		"ExternalCloudProviderId":   ubx.FieldSpec{WireName: "external_cloud_provider_id"},
-		"ExternalCloudProviderType": ubx.FieldSpec{WireName: "external_cloud_provider_type"},
+		"AlertId": ubx.FieldSpec{WireName: "alert_id"},
+		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},
 }

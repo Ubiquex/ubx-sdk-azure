@@ -7,31 +7,33 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDeletedVault_Value_Properties:
+class OpenapiDeletedVault_Properties:
+    # The deleted date.
     deletion_date: Any = None
+    # The location of the original vault.
     location: Any = None
+    # Purge protection status of the original vault.
     purge_protection_enabled: Any = None
+    # The scheduled purged date.
     scheduled_purge_date: Any = None
+    # Tags of the original vault.
     tags: Any = None
+    # The resource id of the original vault.
     vault_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiDeletedVault_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiDeletedVaultConfig:
-    pass
+    vault_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDeletedVaultAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The DeletedVault items on this page
-    value: Any = None
+    # Properties of the deleted vault.
+    properties: Any = None
+    vault_name: Any = None
 
 OpenapiDeletedVault = ubx.DataSourceBinding(
     wire_type="azure_keyvault_openapi_deleted_vault",
     fields={
+        "vault_name": ubx.FieldSpec(wire_name="vault_name"),
     },
 )

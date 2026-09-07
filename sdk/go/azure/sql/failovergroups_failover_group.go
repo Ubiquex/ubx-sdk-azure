@@ -44,42 +44,42 @@ type FailovergroupsFailoverGroup_Properties struct {
 }
 
 var FailovergroupsFailoverGroup_Properties_PartnerServersFields = ubx.FieldMap{
-	"Id":              ubx.FieldSpec{WireName: "id"},
-	"Location":        ubx.FieldSpec{WireName: "location"},
-	"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Location": ubx.FieldSpec{WireName: "location"},
+		"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
+	}
 
 var FailovergroupsFailoverGroup_Properties_ReadOnlyEndpointFields = ubx.FieldMap{
-	"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
-	"TargetServer":   ubx.FieldSpec{WireName: "target_server"},
-}
+		"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
+		"TargetServer": ubx.FieldSpec{WireName: "target_server"},
+	}
 
 var FailovergroupsFailoverGroup_Properties_ReadWriteEndpointFields = ubx.FieldMap{
-	"FailoverPolicy":                         ubx.FieldSpec{WireName: "failover_policy"},
-	"FailoverWithDataLossGracePeriodMinutes": ubx.FieldSpec{WireName: "failover_with_data_loss_grace_period_minutes"},
-}
+		"FailoverPolicy": ubx.FieldSpec{WireName: "failover_policy"},
+		"FailoverWithDataLossGracePeriodMinutes": ubx.FieldSpec{WireName: "failover_with_data_loss_grace_period_minutes"},
+	}
 
 var FailovergroupsFailoverGroup_PropertiesFields = ubx.FieldMap{
-	"Databases": ubx.FieldSpec{WireName: "databases"},
-	"PartnerServers": ubx.FieldSpec{
-		WireName: "partner_servers",
-		Kind:     "list",
-		Fields:   FailovergroupsFailoverGroup_Properties_PartnerServersFields,
-	},
-	"ReadOnlyEndpoint": ubx.FieldSpec{
-		WireName: "read_only_endpoint",
-		Kind:     "object",
-		Fields:   FailovergroupsFailoverGroup_Properties_ReadOnlyEndpointFields,
-	},
-	"ReadWriteEndpoint": ubx.FieldSpec{
-		WireName: "read_write_endpoint",
-		Kind:     "object",
-		Fields:   FailovergroupsFailoverGroup_Properties_ReadWriteEndpointFields,
-	},
-	"ReplicationRole":  ubx.FieldSpec{WireName: "replication_role"},
-	"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
-	"SecondaryType":    ubx.FieldSpec{WireName: "secondary_type"},
-}
+		"Databases": ubx.FieldSpec{WireName: "databases"},
+		"PartnerServers": ubx.FieldSpec{
+			WireName: "partner_servers",
+			Kind: "list",
+			Fields: FailovergroupsFailoverGroup_Properties_PartnerServersFields,
+		},
+		"ReadOnlyEndpoint": ubx.FieldSpec{
+			WireName: "read_only_endpoint",
+			Kind: "object",
+			Fields: FailovergroupsFailoverGroup_Properties_ReadOnlyEndpointFields,
+		},
+		"ReadWriteEndpoint": ubx.FieldSpec{
+			WireName: "read_write_endpoint",
+			Kind: "object",
+			Fields: FailovergroupsFailoverGroup_Properties_ReadWriteEndpointFields,
+		},
+		"ReplicationRole": ubx.FieldSpec{WireName: "replication_role"},
+		"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
+		"SecondaryType": ubx.FieldSpec{WireName: "secondary_type"},
+	}
 
 type FailovergroupsFailoverGroupConfig struct {
 	// Properties of a failover group.
@@ -102,8 +102,8 @@ var FailovergroupsFailoverGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   FailovergroupsFailoverGroup_PropertiesFields,
+			Kind: "object",
+			Fields: FailovergroupsFailoverGroup_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

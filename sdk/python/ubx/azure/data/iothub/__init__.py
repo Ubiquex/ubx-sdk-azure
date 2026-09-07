@@ -4,11 +4,12 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .certificate_description import CertificateDescription, CertificateDescriptionConfig
-from .endpoint_health_data import EndpointHealthData, EndpointHealthDataConfig
+from .certificate_description_list import CertificateDescriptionList, CertificateDescriptionListConfig
+from .endpoint_health_data_list import EndpointHealthDataList, EndpointHealthDataListConfig
 from .group_id_information import GroupIdInformation, GroupIdInformationConfig
-from .iot_hub_description import IotHubDescription, IotHubDescriptionConfig
-from .iot_hub_sku_description import IotHubSkuDescription, IotHubSkuDescriptionConfig
-from .job_response import JobResponse, JobResponseConfig
+from .group_id_information_list import GroupIdInformationList, GroupIdInformationListConfig
+from .iot_hub_description_list import IotHubDescriptionList, IotHubDescriptionListConfig
+from .iot_hub_sku_description_list import IotHubSkuDescriptionList, IotHubSkuDescriptionListConfig
+from .job_response_list import JobResponseList, JobResponseListConfig
 from .private_endpoint_connections_list import PrivateEndpointConnectionsList, PrivateEndpointConnectionsListConfig
 from .registry_statistics import RegistryStatistics, RegistryStatisticsConfig

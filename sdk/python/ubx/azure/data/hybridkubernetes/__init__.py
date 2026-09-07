@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .connectedclusters_connected_cluster import ConnectedclustersConnectedCluster, ConnectedclustersConnectedClusterConfig
+from .connectedclusters_connected_cluster_list import ConnectedclustersConnectedClusterList, ConnectedclustersConnectedClusterListConfig

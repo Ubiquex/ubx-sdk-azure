@@ -3,43 +3,47 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiRemotePrivateEndpointConnectionArmresource_Value_Properties_PrivateEndpoint struct {
+type OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateEndpoint struct {
 	Id any
 }
 
-type OpenapiRemotePrivateEndpointConnectionArmresource_Value_Properties_PrivateLinkServiceConnectionState struct {
+type OpenapiRemotePrivateEndpointConnectionArmresource_Properties_PrivateLinkServiceConnectionState struct {
+	// ActionsRequired for a private link connection
 	ActionsRequired any
-	Description     any
-	Status          any
+	// Description of a private link connection
+	Description any
+	// Status of a private link connection
+	Status any
 }
 
-type OpenapiRemotePrivateEndpointConnectionArmresource_Value_Properties struct {
-	IpAddresses                       any
-	PrivateEndpoint                   any
+type OpenapiRemotePrivateEndpointConnectionArmresource_Properties struct {
+	// Private IPAddresses mapped to the remote private endpoint
+	IpAddresses any
+	// A wrapper for an ARM resource id
+	PrivateEndpoint any
+	// The state of a private link connection
 	PrivateLinkServiceConnectionState any
-	ProvisioningState                 any
-}
-
-type OpenapiRemotePrivateEndpointConnectionArmresource_Value struct {
-	Kind       any
-	Properties any
+	ProvisioningState any
 }
 
 type OpenapiRemotePrivateEndpointConnectionArmresourceConfig struct {
 	Name any
+	PrivateEndpointConnectionName any
 }
 
 type OpenapiRemotePrivateEndpointConnectionArmresourceAttrs struct {
+	// Kind of resource.
+	Kind any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	// The RemotePrivateEndpointConnectionARMResource items on this page
-	Value any
+	PrivateEndpointConnectionName any
+	// RemotePrivateEndpointConnectionARMResource resource specific properties
+	Properties any
 }
 
 var OpenapiRemotePrivateEndpointConnectionArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_remote_private_endpoint_connection_armresource",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
+		"PrivateEndpointConnectionName": ubx.FieldSpec{WireName: "private_endpoint_connection_name"},
 	},
 }

@@ -123,127 +123,127 @@ type OpenapiCdnWebApplicationFirewallPolicy_Sku struct {
 }
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules_MatchConditionsFields = ubx.FieldMap{
-	"MatchValue":      ubx.FieldSpec{WireName: "match_value"},
-	"MatchVariable":   ubx.FieldSpec{WireName: "match_variable"},
-	"NegateCondition": ubx.FieldSpec{WireName: "negate_condition"},
-	"Operator":        ubx.FieldSpec{WireName: "operator"},
-	"Selector":        ubx.FieldSpec{WireName: "selector"},
-	"Transforms":      ubx.FieldSpec{WireName: "transforms"},
-}
+		"MatchValue": ubx.FieldSpec{WireName: "match_value"},
+		"MatchVariable": ubx.FieldSpec{WireName: "match_variable"},
+		"NegateCondition": ubx.FieldSpec{WireName: "negate_condition"},
+		"Operator": ubx.FieldSpec{WireName: "operator"},
+		"Selector": ubx.FieldSpec{WireName: "selector"},
+		"Transforms": ubx.FieldSpec{WireName: "transforms"},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_RulesFields = ubx.FieldMap{
-	"Action":       ubx.FieldSpec{WireName: "action"},
-	"EnabledState": ubx.FieldSpec{WireName: "enabled_state"},
-	"MatchConditions": ubx.FieldSpec{
-		WireName: "match_conditions",
-		Kind:     "list",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules_MatchConditionsFields,
-	},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Priority": ubx.FieldSpec{WireName: "priority"},
-}
+		"Action": ubx.FieldSpec{WireName: "action"},
+		"EnabledState": ubx.FieldSpec{WireName: "enabled_state"},
+		"MatchConditions": ubx.FieldSpec{
+			WireName: "match_conditions",
+			Kind: "list",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_Rules_MatchConditionsFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Priority": ubx.FieldSpec{WireName: "priority"},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRulesFields = ubx.FieldMap{
-	"Rules": ubx.FieldSpec{
-		WireName: "rules",
-		Kind:     "list",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_RulesFields,
-	},
-}
+		"Rules": ubx.FieldSpec{
+			WireName: "rules",
+			Kind: "list",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRules_RulesFields,
+		},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_EndpointLinksFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_RulesFields = ubx.FieldMap{
-	"Action":       ubx.FieldSpec{WireName: "action"},
-	"EnabledState": ubx.FieldSpec{WireName: "enabled_state"},
-	"RuleId":       ubx.FieldSpec{WireName: "rule_id"},
-}
+		"Action": ubx.FieldSpec{WireName: "action"},
+		"EnabledState": ubx.FieldSpec{WireName: "enabled_state"},
+		"RuleId": ubx.FieldSpec{WireName: "rule_id"},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverridesFields = ubx.FieldMap{
-	"RuleGroupName": ubx.FieldSpec{WireName: "rule_group_name"},
-	"Rules": ubx.FieldSpec{
-		WireName: "rules",
-		Kind:     "list",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_RulesFields,
-	},
-}
+		"RuleGroupName": ubx.FieldSpec{WireName: "rule_group_name"},
+		"Rules": ubx.FieldSpec{
+			WireName: "rules",
+			Kind: "list",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverrides_RulesFields,
+		},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSetsFields = ubx.FieldMap{
-	"AnomalyScore": ubx.FieldSpec{WireName: "anomaly_score"},
-	"RuleGroupOverrides": ubx.FieldSpec{
-		WireName: "rule_group_overrides",
-		Kind:     "list",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverridesFields,
-	},
-	"RuleSetType":    ubx.FieldSpec{WireName: "rule_set_type"},
-	"RuleSetVersion": ubx.FieldSpec{WireName: "rule_set_version"},
-}
+		"AnomalyScore": ubx.FieldSpec{WireName: "anomaly_score"},
+		"RuleGroupOverrides": ubx.FieldSpec{
+			WireName: "rule_group_overrides",
+			Kind: "list",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSets_RuleGroupOverridesFields,
+		},
+		"RuleSetType": ubx.FieldSpec{WireName: "rule_set_type"},
+		"RuleSetVersion": ubx.FieldSpec{WireName: "rule_set_version"},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRulesFields = ubx.FieldMap{
-	"ManagedRuleSets": ubx.FieldSpec{
-		WireName: "managed_rule_sets",
-		Kind:     "list",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSetsFields,
-	},
-}
+		"ManagedRuleSets": ubx.FieldSpec{
+			WireName: "managed_rule_sets",
+			Kind: "list",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRules_ManagedRuleSetsFields,
+		},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_PolicySettingsFields = ubx.FieldMap{
-	"DefaultCustomBlockResponseBody":       ubx.FieldSpec{WireName: "default_custom_block_response_body"},
-	"DefaultCustomBlockResponseStatusCode": ubx.FieldSpec{WireName: "default_custom_block_response_status_code"},
-	"DefaultRedirectUrl":                   ubx.FieldSpec{WireName: "default_redirect_url"},
-	"EnabledState":                         ubx.FieldSpec{WireName: "enabled_state"},
-	"Mode":                                 ubx.FieldSpec{WireName: "mode"},
-}
+		"DefaultCustomBlockResponseBody": ubx.FieldSpec{WireName: "default_custom_block_response_body"},
+		"DefaultCustomBlockResponseStatusCode": ubx.FieldSpec{WireName: "default_custom_block_response_status_code"},
+		"DefaultRedirectUrl": ubx.FieldSpec{WireName: "default_redirect_url"},
+		"EnabledState": ubx.FieldSpec{WireName: "enabled_state"},
+		"Mode": ubx.FieldSpec{WireName: "mode"},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRules_RulesFields = ubx.FieldMap{
-	"RateLimitDurationInMinutes": ubx.FieldSpec{WireName: "rate_limit_duration_in_minutes"},
-	"RateLimitThreshold":         ubx.FieldSpec{WireName: "rate_limit_threshold"},
-}
+		"RateLimitDurationInMinutes": ubx.FieldSpec{WireName: "rate_limit_duration_in_minutes"},
+		"RateLimitThreshold": ubx.FieldSpec{WireName: "rate_limit_threshold"},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRulesFields = ubx.FieldMap{
-	"Rules": ubx.FieldSpec{
-		WireName: "rules",
-		Kind:     "list",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRules_RulesFields,
-	},
-}
+		"Rules": ubx.FieldSpec{
+			WireName: "rules",
+			Kind: "list",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRules_RulesFields,
+		},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_PropertiesFields = ubx.FieldMap{
-	"CustomRules": ubx.FieldSpec{
-		WireName: "custom_rules",
-		Kind:     "object",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRulesFields,
-	},
-	"EndpointLinks": ubx.FieldSpec{
-		WireName: "endpoint_links",
-		Kind:     "list",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_EndpointLinksFields,
-	},
-	"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
-	"ManagedRules": ubx.FieldSpec{
-		WireName: "managed_rules",
-		Kind:     "object",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRulesFields,
-	},
-	"PolicySettings": ubx.FieldSpec{
-		WireName: "policy_settings",
-		Kind:     "object",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_PolicySettingsFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"RateLimitRules": ubx.FieldSpec{
-		WireName: "rate_limit_rules",
-		Kind:     "object",
-		Fields:   OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRulesFields,
-	},
-	"ResourceState": ubx.FieldSpec{WireName: "resource_state"},
-}
+		"CustomRules": ubx.FieldSpec{
+			WireName: "custom_rules",
+			Kind: "object",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_CustomRulesFields,
+		},
+		"EndpointLinks": ubx.FieldSpec{
+			WireName: "endpoint_links",
+			Kind: "list",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_EndpointLinksFields,
+		},
+		"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
+		"ManagedRules": ubx.FieldSpec{
+			WireName: "managed_rules",
+			Kind: "object",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_ManagedRulesFields,
+		},
+		"PolicySettings": ubx.FieldSpec{
+			WireName: "policy_settings",
+			Kind: "object",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_PolicySettingsFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"RateLimitRules": ubx.FieldSpec{
+			WireName: "rate_limit_rules",
+			Kind: "object",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_Properties_RateLimitRulesFields,
+		},
+		"ResourceState": ubx.FieldSpec{WireName: "resource_state"},
+	}
 
 var OpenapiCdnWebApplicationFirewallPolicy_SkuFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 type OpenapiCdnWebApplicationFirewallPolicyConfig struct {
 	// Gets a unique read-only string that changes whenever the resource is updated.
@@ -274,17 +274,17 @@ type OpenapiCdnWebApplicationFirewallPolicyAttrs struct {
 var OpenapiCdnWebApplicationFirewallPolicy = ubx.ResourceBinding{
 	WireType: "azure_cdn_openapi_cdn_web_application_firewall_policy",
 	Fields: ubx.FieldMap{
-		"Etag":     ubx.FieldSpec{WireName: "etag"},
+		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiCdnWebApplicationFirewallPolicy_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   OpenapiCdnWebApplicationFirewallPolicy_SkuFields,
+			Kind: "object",
+			Fields: OpenapiCdnWebApplicationFirewallPolicy_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

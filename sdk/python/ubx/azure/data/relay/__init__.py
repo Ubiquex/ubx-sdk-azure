@@ -5,9 +5,11 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .authorization_rule import AuthorizationRule, AuthorizationRuleConfig
-from .hybrid_connection import HybridConnection, HybridConnectionConfig
-from .namespace import Namespace, NamespaceConfig
+from .authorization_rule_list import AuthorizationRuleList, AuthorizationRuleListConfig
+from .hybrid_connection_list import HybridConnectionList, HybridConnectionListConfig
+from .namespace_list import NamespaceList, NamespaceListConfig
 from .network_rule_set import NetworkRuleSet, NetworkRuleSetConfig
-from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
+from .private_endpoint_connection_list import PrivateEndpointConnectionList, PrivateEndpointConnectionListConfig
 from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .wcf_relay import WcfRelay, WcfRelayConfig
+from .private_link_resource_list import PrivateLinkResourceList, PrivateLinkResourceListConfig
+from .wcf_relay_list import WcfRelayList, WcfRelayListConfig

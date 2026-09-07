@@ -7,42 +7,75 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class TemplatespecsTemplateSpecVersion_Value_Properties_LinkedTemplates:
+class TemplatespecsTemplateSpecVersion_Properties_LinkedTemplates:
     path: Any = None
     template: Any = None
 
 @dataclasses.dataclass
-class TemplatespecsTemplateSpecVersion_Value_Properties:
+class TemplatespecsTemplateSpecVersion_Properties:
+    # Template Spec version description.
     description: Any = None
+    # An array of linked template artifacts.
     linked_templates: Any = None
+    # The main Azure Resource Manager template content.
     main_template: Any = None
+    # The version metadata. Metadata is an open-ended object and is typically a collection of key-value pairs.
     metadata: Any = None
+    # The Azure Resource Manager template UI definition content.
     ui_form_definition: Any = None
 
 @dataclasses.dataclass
-class TemplatespecsTemplateSpecVersion_Value:
-    location: Any = None
-    properties: Any = None
-    tags: Any = None
+class TemplatespecsTemplateSpecVersion_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecVersionConfig:
     api_version: Any = None
+    resource_group_name: Any = None
+    subscription_id: Any = None
     template_spec_name: Any = None
+    template_spec_version: Any = None
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecVersionAttrs:
     api_version: Any = None
-    # The URL to use for getting the next set of results.
-    next_link: Any = None
+    # String Id used to locate any resource on Azure.
+    id: Any = None
+    # The location of the Template Spec Version. It must match the location of the parent Template Spec.
+    location: Any = None
+    # Name of this resource.
+    name: Any = None
+    # Template Spec Version properties.
+    properties: Any = None
+    resource_group_name: Any = None
+    subscription_id: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Resource tags.
+    tags: Any = None
     template_spec_name: Any = None
-    # An array of Template Spec versions.
-    value: Any = None
+    template_spec_version: Any = None
+    # Type of this resource.
+    type: Any = None
 
 TemplatespecsTemplateSpecVersion = ubx.DataSourceBinding(
     wire_type="azure_resources_templatespecs_template_spec_version",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
+        "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
+        "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
         "template_spec_name": ubx.FieldSpec(wire_name="template_spec_name"),
+        "template_spec_version": ubx.FieldSpec(wire_name="template_spec_version"),
     },
 )

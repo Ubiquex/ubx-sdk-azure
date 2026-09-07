@@ -7,32 +7,31 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiCodeVersion_Value_Properties:
+class OpenapiCodeVersion_Properties:
+    # Uri where code is located
     code_uri: Any = None
+    # Provisioning state of registry asset.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class OpenapiCodeVersion_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiCodeVersionConfig:
-    code_name: Any = None
-    registry_name: Any = None
+    name: Any = None
+    version: Any = None
+    workspace_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiCodeVersionAttrs:
-    code_name: Any = None
-    # The link to the next page of items
-    next_link: Any = None
-    registry_name: Any = None
-    # The CodeVersion items on this page
-    value: Any = None
+    name: Any = None
+    # Code asset version details.
+    properties: Any = None
+    version: Any = None
+    workspace_name: Any = None
 
 OpenapiCodeVersion = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_code_version",
     fields={
-        "code_name": ubx.FieldSpec(wire_name="code_name"),
-        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
+        "name": ubx.FieldSpec(wire_name="name"),
+        "version": ubx.FieldSpec(wire_name="version"),
+        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

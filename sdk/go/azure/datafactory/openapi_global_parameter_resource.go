@@ -11,9 +11,9 @@ type OpenapiGlobalParameterResource_Properties struct {
 }
 
 var OpenapiGlobalParameterResource_PropertiesFields = ubx.FieldMap{
-	"Type":  ubx.FieldSpec{WireName: "type"},
-	"Value": ubx.FieldSpec{WireName: "value"},
-}
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 type OpenapiGlobalParameterResourceConfig struct {
 	// Properties of the global parameter.
@@ -32,8 +32,8 @@ var OpenapiGlobalParameterResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "map",
-			Fields:   OpenapiGlobalParameterResource_PropertiesFields,
+			Kind: "map",
+			Fields: OpenapiGlobalParameterResource_PropertiesFields,
 		},
 	},
 }

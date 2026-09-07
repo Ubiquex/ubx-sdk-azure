@@ -4,5 +4,5 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .codesigningaccount_certificate_profile import CodesigningaccountCertificateProfile, CodesigningaccountCertificateProfileConfig
-from .codesigningaccount_code_signing_account import CodesigningaccountCodeSigningAccount, CodesigningaccountCodeSigningAccountConfig
+from .codesigningaccount_certificate_profile_list import CodesigningaccountCertificateProfileList, CodesigningaccountCertificateProfileListConfig
+from .codesigningaccount_code_signing_account_list import CodesigningaccountCodeSigningAccountList, CodesigningaccountCodeSigningAccountListConfig

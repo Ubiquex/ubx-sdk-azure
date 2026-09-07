@@ -7,35 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiStaticSiteLinkedBackendArmresource_Value_Properties:
+class OpenapiStaticSiteLinkedBackendArmresource_Properties:
+    # The resource id of the backend linked to the static site
     backend_resource_id: Any = None
+    # The date and time on which the backend was linked to the static site.
     created_on: Any = None
+    # The provisioning state of the linking process.
     provisioning_state: Any = None
+    # The region of the backend linked to the static site
     region: Any = None
 
 @dataclasses.dataclass
-class OpenapiStaticSiteLinkedBackendArmresource_Value:
-    kind: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiStaticSiteLinkedBackendArmresourceConfig:
-    environment_name: Any = None
+    linked_backend_name: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiStaticSiteLinkedBackendArmresourceAttrs:
-    environment_name: Any = None
+    # Kind of resource.
+    kind: Any = None
+    linked_backend_name: Any = None
     name: Any = None
-    # The link to the next page of items
-    next_link: Any = None
-    # The StaticSiteLinkedBackendARMResource items on this page
-    value: Any = None
+    # StaticSiteLinkedBackendARMResource resource specific properties
+    properties: Any = None
 
 OpenapiStaticSiteLinkedBackendArmresource = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_static_site_linked_backend_armresource",
     fields={
-        "environment_name": ubx.FieldSpec(wire_name="environment_name"),
+        "linked_backend_name": ubx.FieldSpec(wire_name="linked_backend_name"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

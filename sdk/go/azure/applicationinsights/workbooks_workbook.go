@@ -47,34 +47,34 @@ type WorkbooksWorkbook_Properties struct {
 }
 
 var WorkbooksWorkbook_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var WorkbooksWorkbook_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   WorkbooksWorkbook_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: WorkbooksWorkbook_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var WorkbooksWorkbook_PropertiesFields = ubx.FieldMap{
-	"Category":       ubx.FieldSpec{WireName: "category"},
-	"Description":    ubx.FieldSpec{WireName: "description"},
-	"DisplayName":    ubx.FieldSpec{WireName: "display_name"},
-	"Revision":       ubx.FieldSpec{WireName: "revision"},
-	"SerializedData": ubx.FieldSpec{WireName: "serialized_data"},
-	"SourceId":       ubx.FieldSpec{WireName: "source_id"},
-	"StorageUri":     ubx.FieldSpec{WireName: "storage_uri"},
-	"Tags":           ubx.FieldSpec{WireName: "tags"},
-	"TimeModified":   ubx.FieldSpec{WireName: "time_modified"},
-	"UserId":         ubx.FieldSpec{WireName: "user_id"},
-	"Version":        ubx.FieldSpec{WireName: "version"},
-}
+		"Category": ubx.FieldSpec{WireName: "category"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"Revision": ubx.FieldSpec{WireName: "revision"},
+		"SerializedData": ubx.FieldSpec{WireName: "serialized_data"},
+		"SourceId": ubx.FieldSpec{WireName: "source_id"},
+		"StorageUri": ubx.FieldSpec{WireName: "storage_uri"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"TimeModified": ubx.FieldSpec{WireName: "time_modified"},
+		"UserId": ubx.FieldSpec{WireName: "user_id"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+	}
 
 type WorkbooksWorkbookConfig struct {
 	// Resource etag
@@ -112,15 +112,15 @@ var WorkbooksWorkbook = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   WorkbooksWorkbook_IdentityFields,
+			Kind: "object",
+			Fields: WorkbooksWorkbook_IdentityFields,
 		},
-		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   WorkbooksWorkbook_PropertiesFields,
+			Kind: "object",
+			Fields: WorkbooksWorkbook_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

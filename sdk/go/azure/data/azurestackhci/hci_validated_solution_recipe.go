@@ -3,77 +3,84 @@ package azurestackhci
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Capabilities_ClusterCapabilities struct {
+type HciValidatedSolutionRecipe_Properties_RecipeContent_Capabilities_ClusterCapabilities struct {
 	CapabilityName any
 }
 
-type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Capabilities struct {
+type HciValidatedSolutionRecipe_Properties_RecipeContent_Capabilities struct {
+	// Represents the cluster capabilities.
 	ClusterCapabilities any
-	NodeCapabilities    any
+	// Represents the node capabilities.
+	NodeCapabilities any
 }
 
-type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Metadata struct {
-	Catalog                any
+type HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Metadata struct {
+	Catalog any
 	EnableAutomaticUpgrade any
-	ExpectedHash           any
-	ExtensionType          any
-	LcmUpdate              any
-	Link                   any
-	Name                   any
-	PreviewSource          any
-	Publisher              any
-	ReleaseTrain           any
-	Ring                   any
+	ExpectedHash any
+	ExtensionType any
+	LcmUpdate any
+	Link any
+	Name any
+	PreviewSource any
+	Publisher any
+	ReleaseTrain any
+	Ring any
 }
 
-type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Payloads struct {
-	FileName   any
-	Hash       any
+type HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Payloads struct {
+	FileName any
+	Hash any
 	Identifier any
-	Url        any
+	Url any
 }
 
-type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components struct {
-	InstallOrder    any
-	Metadata        any
-	Name            any
-	Payloads        any
+type HciValidatedSolutionRecipe_Properties_RecipeContent_Components struct {
+	InstallOrder any
+	Metadata any
+	Name any
+	Payloads any
 	RequiredVersion any
-	Tags            any
-	Type            any
+	Tags any
+	Type any
 }
 
-type HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Info struct {
+type HciValidatedSolutionRecipe_Properties_RecipeContent_Info struct {
+	// Represents the solution type for which this validated solution recipe is applicable.
 	SolutionType any
-	Version      any
+	// Represents the version for which this validated solution recipe is applicable.
+	Version any
 }
 
-type HciValidatedSolutionRecipe_Value_Properties_RecipeContent struct {
+type HciValidatedSolutionRecipe_Properties_RecipeContent struct {
+	// Represents capabilities available in a validated solution recipe.
 	Capabilities any
-	Components   any
-	Info         any
+	// Represents components available in a validated solution recipe.
+	Components any
+	// Represents information about a validated solution recipe.
+	Info any
 }
 
-type HciValidatedSolutionRecipe_Value_Properties struct {
+type HciValidatedSolutionRecipe_Properties struct {
+	// Represents contents of a validated solution recipe resource.
 	RecipeContent any
-	Signature     any
-}
-
-type HciValidatedSolutionRecipe_Value struct {
-	Properties any
+	// Represents the signature of the recipe, to be used for ensuring its integrity.
+	Signature any
 }
 
 type HciValidatedSolutionRecipeConfig struct {
+	ValidatedSolutionRecipeName any
 }
 
 type HciValidatedSolutionRecipeAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The ValidatedSolutionRecipe items on this page
-	Value any
+	// Represents properties of a validated solution recipe resource.
+	Properties any
+	ValidatedSolutionRecipeName any
 }
 
 var HciValidatedSolutionRecipe = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_validated_solution_recipe",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"ValidatedSolutionRecipeName": ubx.FieldSpec{WireName: "validated_solution_recipe_name"},
+	},
 }

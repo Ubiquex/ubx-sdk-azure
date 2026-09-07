@@ -3,28 +3,35 @@ package scvmm
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type GuestAgent_Value_Properties_Credentials struct {
+type GuestAgent_Properties_Credentials struct {
+	// Gets or sets the password to connect with the guest.
 	Password any
+	// Gets or sets username to connect with the guest.
 	Username any
 }
 
-type GuestAgent_Value_Properties_HttpProxyConfig struct {
+type GuestAgent_Properties_HttpProxyConfig struct {
+	// Gets or sets httpsProxy url.
 	HttpsProxy any
 }
 
-type GuestAgent_Value_Properties struct {
-	Credentials                any
-	CustomResourceName         any
-	HttpProxyConfig            any
+type GuestAgent_Properties struct {
+	// Username / Password Credentials to connect to guest.
+	Credentials any
+	// Gets the name of the corresponding resource in Kubernetes.
+	CustomResourceName any
+	// HTTP Proxy configuration for the VM.
+	HttpProxyConfig any
+	// The resource id of the private link scope this machine is assigned to, if any.
 	PrivateLinkScopeResourceId any
-	ProvisioningAction         any
-	ProvisioningState          any
-	Status                     any
-	Uuid                       any
-}
-
-type GuestAgent_Value struct {
-	Properties any
+	// Guest agent provisioning action.
+	ProvisioningAction any
+	// The provisioning state of the resource.
+	ProvisioningState any
+	// Gets the guest agent status.
+	Status any
+	// Gets a unique identifier for this resource.
+	Uuid any
 }
 
 type GuestAgentConfig struct {
@@ -32,11 +39,9 @@ type GuestAgentConfig struct {
 }
 
 type GuestAgentAttrs struct {
-	// The link to the next page of items
-	NextLink    any
+	// Defines the resource properties.
+	Properties any
 	ResourceUri any
-	// The GuestAgent items on this page
-	Value any
 }
 
 var GuestAgent = ubx.DataSourceBinding{

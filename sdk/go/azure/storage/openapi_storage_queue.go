@@ -11,9 +11,9 @@ type OpenapiStorageQueue_Properties struct {
 }
 
 var OpenapiStorageQueue_PropertiesFields = ubx.FieldMap{
-	"ApproximateMessageCount": ubx.FieldSpec{WireName: "approximate_message_count"},
-	"Metadata":                ubx.FieldSpec{WireName: "metadata"},
-}
+		"ApproximateMessageCount": ubx.FieldSpec{WireName: "approximate_message_count"},
+		"Metadata": ubx.FieldSpec{WireName: "metadata"},
+	}
 
 type OpenapiStorageQueueConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -30,8 +30,8 @@ var OpenapiStorageQueue = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiStorageQueue_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiStorageQueue_PropertiesFields,
 		},
 	},
 }

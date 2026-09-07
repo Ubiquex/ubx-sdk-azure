@@ -7,32 +7,57 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class AttachedNetworkConnection_Value_Properties:
+class AttachedNetworkConnection_Properties:
+    # Active Directory join type
     domain_join_type: Any = None
+    # Health check status values
     health_check_status: Any = None
+    # The resource ID of the NetworkConnection you want to attach.
     network_connection_id: Any = None
+    # The geo-location where the NetworkConnection resource specified in 'networkConnectionResourceId' property lives.
     network_connection_location: Any = None
+    # Provisioning state of the resource.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class AttachedNetworkConnection_Value:
-    properties: Any = None
+class AttachedNetworkConnection_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
 
 @dataclasses.dataclass
 class AttachedNetworkConnectionConfig:
-    dev_center_name: Any = None
+    attached_network_connection_name: Any = None
+    project_name: Any = None
 
 @dataclasses.dataclass
 class AttachedNetworkConnectionAttrs:
-    dev_center_name: Any = None
-    # URL to get the next set of results if there are any.
-    next_link: Any = None
-    # Current page of results.
-    value: Any = None
+    attached_network_connection_name: Any = None
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
+    project_name: Any = None
+    # Properties of an attached NetworkConnection.
+    properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 AttachedNetworkConnection = ubx.DataSourceBinding(
     wire_type="azure_devcenter_attached_network_connection",
     fields={
-        "dev_center_name": ubx.FieldSpec(wire_name="dev_center_name"),
+        "attached_network_connection_name": ubx.FieldSpec(wire_name="attached_network_connection_name"),
+        "project_name": ubx.FieldSpec(wire_name="project_name"),
     },
 )

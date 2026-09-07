@@ -5,5 +5,6 @@
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
 from .marketplace_registration_definition import MarketplaceRegistrationDefinition, MarketplaceRegistrationDefinitionConfig
-from .registration_assignment import RegistrationAssignment, RegistrationAssignmentConfig
-from .registration_definition import RegistrationDefinition, RegistrationDefinitionConfig
+from .marketplace_registration_definition_list import MarketplaceRegistrationDefinitionList, MarketplaceRegistrationDefinitionListConfig
+from .registration_assignment_list import RegistrationAssignmentList, RegistrationAssignmentListConfig
+from .registration_definition_list import RegistrationDefinitionList, RegistrationDefinitionListConfig

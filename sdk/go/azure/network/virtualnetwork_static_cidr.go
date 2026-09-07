@@ -17,12 +17,12 @@ type VirtualnetworkStaticCidr_Properties struct {
 }
 
 var VirtualnetworkStaticCidr_PropertiesFields = ubx.FieldMap{
-	"AddressPrefixes":               ubx.FieldSpec{WireName: "address_prefixes"},
-	"Description":                   ubx.FieldSpec{WireName: "description"},
-	"NumberOfIpaddressesToAllocate": ubx.FieldSpec{WireName: "number_of_ipaddresses_to_allocate"},
-	"ProvisioningState":             ubx.FieldSpec{WireName: "provisioning_state"},
-	"TotalNumberOfIpaddresses":      ubx.FieldSpec{WireName: "total_number_of_ipaddresses"},
-}
+		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"NumberOfIpaddressesToAllocate": ubx.FieldSpec{WireName: "number_of_ipaddresses_to_allocate"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"TotalNumberOfIpaddresses": ubx.FieldSpec{WireName: "total_number_of_ipaddresses"},
+	}
 
 type VirtualnetworkStaticCidrConfig struct {
 	// Properties of static CIDR resource.
@@ -39,8 +39,8 @@ var VirtualnetworkStaticCidr = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkStaticCidr_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkStaticCidr_PropertiesFields,
 		},
 	},
 }

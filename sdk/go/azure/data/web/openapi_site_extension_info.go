@@ -3,49 +3,69 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiSiteExtensionInfo_Value_Properties struct {
-	Authors                    any
-	Comment                    any
-	Description                any
-	DownloadCount              any
-	ExtensionId                any
-	ExtensionType              any
-	ExtensionUrl               any
-	FeedUrl                    any
-	IconUrl                    any
-	InstalledDateTime          any
+type OpenapiSiteExtensionInfo_Properties struct {
+	// List of authors.
+	Authors any
+	// Site Extension comment.
+	Comment any
+	// Detailed description.
+	Description any
+	// Count of downloads.
+	DownloadCount any
+	// Site extension ID.
+	ExtensionId any
+	// Site extension type.
+	ExtensionType any
+	// Extension URL.
+	ExtensionUrl any
+	// Feed URL.
+	FeedUrl any
+	// Icon URL.
+	IconUrl any
+	// Installed timestamp.
+	InstalledDateTime any
+	// Installer command line parameters.
 	InstallerCommandLineParams any
-	LicenseUrl                 any
-	LocalIsLatestVersion       any
-	LocalPath                  any
-	ProjectUrl                 any
-	ProvisioningState          any
-	PublishedDateTime          any
-	Summary                    any
-	Title                      any
-	Version                    any
-}
-
-type OpenapiSiteExtensionInfo_Value struct {
-	Kind       any
-	Properties any
+	// License URL.
+	LicenseUrl any
+	// <code>true</code> if the local version is the latest version; <code>false</code> otherwise.
+	LocalIsLatestVersion any
+	// Local path.
+	LocalPath any
+	// Project URL.
+	ProjectUrl any
+	// Provisioning state.
+	ProvisioningState any
+	// Published timestamp.
+	PublishedDateTime any
+	// Summary description.
+	Summary any
+	Title any
+	// Version information.
+	Version any
 }
 
 type OpenapiSiteExtensionInfoConfig struct {
 	Name any
+	SiteExtensionId any
+	Slot any
 }
 
 type OpenapiSiteExtensionInfoAttrs struct {
+	// Kind of resource.
+	Kind any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	// The SiteExtensionInfo items on this page
-	Value any
+	// SiteExtensionInfo resource specific properties
+	Properties any
+	SiteExtensionId any
+	Slot any
 }
 
 var OpenapiSiteExtensionInfo = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_site_extension_info",
 	Fields: ubx.FieldMap{
 		"Name": ubx.FieldSpec{WireName: "name"},
+		"SiteExtensionId": ubx.FieldSpec{WireName: "site_extension_id"},
+		"Slot": ubx.FieldSpec{WireName: "slot"},
 	},
 }

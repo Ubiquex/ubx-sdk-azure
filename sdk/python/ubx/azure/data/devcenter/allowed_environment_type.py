@@ -7,29 +7,51 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class AllowedEnvironmentType_Value_Properties:
+class AllowedEnvironmentType_Properties:
+    # The display name of the allowed environment type.
     display_name: Any = None
+    # Provisioning state of the resource.
     provisioning_state: Any = None
 
 @dataclasses.dataclass
-class AllowedEnvironmentType_Value:
-    properties: Any = None
+class AllowedEnvironmentType_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
 
 @dataclasses.dataclass
 class AllowedEnvironmentTypeConfig:
+    environment_type_name: Any = None
     project_name: Any = None
 
 @dataclasses.dataclass
 class AllowedEnvironmentTypeAttrs:
-    # URL to get the next set of results if there are any.
-    next_link: Any = None
+    environment_type_name: Any = None
+    # Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+    id: Any = None
+    # The name of the resource
+    name: Any = None
     project_name: Any = None
-    # Current page of results.
-    value: Any = None
+    # Properties of an allowed environment type.
+    properties: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+    type: Any = None
 
 AllowedEnvironmentType = ubx.DataSourceBinding(
     wire_type="azure_devcenter_allowed_environment_type",
     fields={
+        "environment_type_name": ubx.FieldSpec(wire_name="environment_type_name"),
         "project_name": ubx.FieldSpec(wire_name="project_name"),
     },
 )

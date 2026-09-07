@@ -3,60 +3,69 @@ package applicationinsights
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkbooksWorkbook_Value_Identity_UserAssignedIdentities struct {
-	ClientId    any
+type WorkbooksWorkbook_Identity_UserAssignedIdentities struct {
+	ClientId any
 	PrincipalId any
 }
 
-type WorkbooksWorkbook_Value_Identity struct {
-	PrincipalId            any
-	TenantId               any
-	Type                   any
+type WorkbooksWorkbook_Identity struct {
+	PrincipalId any
+	TenantId any
+	Type any
 	UserAssignedIdentities any
 }
 
-type WorkbooksWorkbook_Value_Properties struct {
-	Category       any
-	Description    any
-	DisplayName    any
-	Revision       any
+type WorkbooksWorkbook_Properties struct {
+	// Workbook category, as defined by the user at creation time.
+	Category any
+	// The description of the workbook.
+	Description any
+	// The user-defined name (display name) of the workbook.
+	DisplayName any
+	// The unique revision id for this workbook definition
+	Revision any
+	// Configuration of this particular workbook. Configuration data is a string containing valid JSON
 	SerializedData any
-	SourceId       any
-	StorageUri     any
-	Tags           any
-	TimeModified   any
-	UserId         any
-	Version        any
-}
-
-type WorkbooksWorkbook_Value struct {
-	Etag       any
-	Identity   any
-	Kind       any
-	Properties any
+	// ResourceId for a source resource.
+	SourceId any
+	// The resourceId to the storage account when bring your own storage is used
+	StorageUri any
+	// Being deprecated, please use the other tags field
+	Tags any
+	// Date and time in UTC of the last modification that was made to this workbook definition.
+	TimeModified any
+	// Unique user id of the specific user that owns this workbook.
+	UserId any
+	// Workbook schema version format, like 'Notebook/1.0', which should match the workbook in serializedData
+	Version any
 }
 
 type WorkbooksWorkbookConfig struct {
-	CanFetchContent any
-	Category        any
-	Tags            any
+	ResourceName any
+	RevisionId any
 }
 
 type WorkbooksWorkbookAttrs struct {
-	CanFetchContent any
-	Category        any
-	// The link to the next page of results.
-	NextLink any
-	Tags     any
-	// An array of workbooks.
-	Value any
+	// Resource etag
+	Etag any
+	// Identity used for BYOS
+	Identity any
+	// The kind of workbook. Only valid value is shared.
+	Kind any
+	// The geo-location where the resource lives
+	Location any
+	// Properties that contain a workbook.
+	Properties any
+	ResourceName any
+	RevisionId any
+	// Resource tags.
+	Tags any
 }
 
 var WorkbooksWorkbook = ubx.DataSourceBinding{
 	WireType: "azure_applicationinsights_workbooks_workbook",
 	Fields: ubx.FieldMap{
-		"CanFetchContent": ubx.FieldSpec{WireName: "can_fetch_content"},
-		"Category":        ubx.FieldSpec{WireName: "category"},
-		"Tags":            ubx.FieldSpec{WireName: "tags"},
+		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"RevisionId": ubx.FieldSpec{WireName: "revision_id"},
 	},
 }

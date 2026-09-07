@@ -30,24 +30,24 @@ type SwaggerNginxCertificate_Properties struct {
 }
 
 var SwaggerNginxCertificate_Properties_CertificateErrorFields = ubx.FieldMap{
-	"Code":    ubx.FieldSpec{WireName: "code"},
-	"Message": ubx.FieldSpec{WireName: "message"},
-}
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Message": ubx.FieldSpec{WireName: "message"},
+	}
 
 var SwaggerNginxCertificate_PropertiesFields = ubx.FieldMap{
-	"CertificateError": ubx.FieldSpec{
-		WireName: "certificate_error",
-		Kind:     "object",
-		Fields:   SwaggerNginxCertificate_Properties_CertificateErrorFields,
-	},
-	"CertificateVirtualPath": ubx.FieldSpec{WireName: "certificate_virtual_path"},
-	"KeyVaultSecretCreated":  ubx.FieldSpec{WireName: "key_vault_secret_created"},
-	"KeyVaultSecretId":       ubx.FieldSpec{WireName: "key_vault_secret_id"},
-	"KeyVaultSecretVersion":  ubx.FieldSpec{WireName: "key_vault_secret_version"},
-	"KeyVirtualPath":         ubx.FieldSpec{WireName: "key_virtual_path"},
-	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
-	"Sha1Thumbprint":         ubx.FieldSpec{WireName: "sha1_thumbprint"},
-}
+		"CertificateError": ubx.FieldSpec{
+			WireName: "certificate_error",
+			Kind: "object",
+			Fields: SwaggerNginxCertificate_Properties_CertificateErrorFields,
+		},
+		"CertificateVirtualPath": ubx.FieldSpec{WireName: "certificate_virtual_path"},
+		"KeyVaultSecretCreated": ubx.FieldSpec{WireName: "key_vault_secret_created"},
+		"KeyVaultSecretId": ubx.FieldSpec{WireName: "key_vault_secret_id"},
+		"KeyVaultSecretVersion": ubx.FieldSpec{WireName: "key_vault_secret_version"},
+		"KeyVirtualPath": ubx.FieldSpec{WireName: "key_virtual_path"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Sha1Thumbprint": ubx.FieldSpec{WireName: "sha1_thumbprint"},
+	}
 
 type SwaggerNginxCertificateConfig struct {
 	// The geo-location where the resource lives
@@ -69,8 +69,8 @@ var SwaggerNginxCertificate = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   SwaggerNginxCertificate_PropertiesFields,
+			Kind: "object",
+			Fields: SwaggerNginxCertificate_PropertiesFields,
 		},
 	},
 }

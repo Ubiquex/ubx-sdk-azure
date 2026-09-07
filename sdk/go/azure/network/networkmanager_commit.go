@@ -38,15 +38,15 @@ type NetworkmanagerCommit_SystemData struct {
 }
 
 var NetworkmanagerCommit_PropertiesFields = ubx.FieldMap{
-	"ActiveLocations":   ubx.FieldSpec{WireName: "active_locations"},
-	"CommitType":        ubx.FieldSpec{WireName: "commit_type"},
-	"ConfigurationIds":  ubx.FieldSpec{WireName: "configuration_ids"},
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"ForceUpdateTag":    ubx.FieldSpec{WireName: "force_update_tag"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
-	"TargetLocations":   ubx.FieldSpec{WireName: "target_locations"},
-}
+		"ActiveLocations": ubx.FieldSpec{WireName: "active_locations"},
+		"CommitType": ubx.FieldSpec{WireName: "commit_type"},
+		"ConfigurationIds": ubx.FieldSpec{WireName: "configuration_ids"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ForceUpdateTag": ubx.FieldSpec{WireName: "force_update_tag"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+		"TargetLocations": ubx.FieldSpec{WireName: "target_locations"},
+	}
 
 type NetworkmanagerCommitConfig struct {
 	// Properties of commit
@@ -73,8 +73,8 @@ var NetworkmanagerCommit = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NetworkmanagerCommit_PropertiesFields,
+			Kind: "object",
+			Fields: NetworkmanagerCommit_PropertiesFields,
 		},
 	},
 }

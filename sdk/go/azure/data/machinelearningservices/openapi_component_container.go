@@ -3,29 +3,27 @@ package machinelearningservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiComponentContainer_Value_Properties struct {
+type OpenapiComponentContainer_Properties struct {
+	// Provisioning state of registry asset.
 	ProvisioningState any
 }
 
-type OpenapiComponentContainer_Value struct {
-	Properties any
-}
-
 type OpenapiComponentContainerConfig struct {
-	RegistryName any
+	Name any
+	WorkspaceName any
 }
 
 type OpenapiComponentContainerAttrs struct {
-	// The link to the next page of items
-	NextLink     any
-	RegistryName any
-	// The ComponentContainer items on this page
-	Value any
+	Name any
+	// Component container definition. <see href="https://docs.microsoft.com/en-us/azure/machine-learning/reference-yaml-component-command" />
+	Properties any
+	WorkspaceName any
 }
 
 var OpenapiComponentContainer = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_component_container",
 	Fields: ubx.FieldMap{
-		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

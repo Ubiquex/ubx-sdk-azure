@@ -4,9 +4,9 @@ package rolling
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type UpgradeStatusInfo_Properties_Error_Details struct {
-	Code    any
+	Code any
 	Message any
-	Target  any
+	Target any
 }
 
 type UpgradeStatusInfo_Properties_Error_Innererror struct {
@@ -91,7 +91,7 @@ type UpgradeStatusInfoAttrs struct {
 	// The status of the latest virtual machine scale set rolling upgrade.
 	Properties any
 	// Resource tags.
-	Tags           any
+	Tags any
 	VmScaleSetName any
 }
 

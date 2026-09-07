@@ -16,17 +16,17 @@ type OpenapiHybridRunbookWorkerGroup_Properties struct {
 }
 
 var OpenapiHybridRunbookWorkerGroup_Properties_CredentialFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiHybridRunbookWorkerGroup_PropertiesFields = ubx.FieldMap{
-	"Credential": ubx.FieldSpec{
-		WireName: "credential",
-		Kind:     "object",
-		Fields:   OpenapiHybridRunbookWorkerGroup_Properties_CredentialFields,
-	},
-	"GroupType": ubx.FieldSpec{WireName: "group_type"},
-}
+		"Credential": ubx.FieldSpec{
+			WireName: "credential",
+			Kind: "object",
+			Fields: OpenapiHybridRunbookWorkerGroup_Properties_CredentialFields,
+		},
+		"GroupType": ubx.FieldSpec{WireName: "group_type"},
+	}
 
 type OpenapiHybridRunbookWorkerGroupConfig struct {
 	// Gets or sets the name of the resource.
@@ -52,8 +52,8 @@ var OpenapiHybridRunbookWorkerGroup = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiHybridRunbookWorkerGroup_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiHybridRunbookWorkerGroup_PropertiesFields,
 		},
 	},
 }

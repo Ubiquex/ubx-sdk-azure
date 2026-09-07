@@ -25,11 +25,11 @@ type OpenapiSavingsPlanModelListResult_Summary struct {
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_AppliedScopeProperties struct {
-	DisplayName       any
+	DisplayName any
 	ManagementGroupId any
-	ResourceGroupId   any
-	SubscriptionId    any
-	TenantId          any
+	ResourceGroupId any
+	SubscriptionId any
+	TenantId any
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_Commitment struct {
@@ -41,20 +41,20 @@ type OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo_Prope
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_ExtendedStatusInfo struct {
-	Message    any
+	Message any
 	Properties any
 	StatusCode any
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Properties struct {
 	AppliedScopeProperties any
-	AppliedScopeType       any
-	BillingPlan            any
-	BillingScopeId         any
-	Commitment             any
-	DisplayName            any
-	Renew                  any
-	Term                   any
+	AppliedScopeType any
+	BillingPlan any
+	BillingScopeId any
+	Commitment any
+	DisplayName any
+	Renew any
+	Term any
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties_Sku struct {
@@ -63,7 +63,7 @@ type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_Purchase
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties_PurchaseProperties struct {
 	Properties any
-	Sku        any
+	Sku any
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties struct {
@@ -71,72 +71,72 @@ type OpenapiSavingsPlanModelListResult_Value_Properties_RenewProperties struct {
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_Utilization_Aggregates struct {
-	Grain     any
+	Grain any
 	GrainUnit any
-	Value     any
+	Value any
 	ValueUnit any
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties_Utilization struct {
 	Aggregates any
-	Trend      any
+	Trend any
 }
 
 type OpenapiSavingsPlanModelListResult_Value_Properties struct {
-	AppliedScopeProperties       any
-	AppliedScopeType             any
-	BenefitStartTime             any
-	BillingAccountId             any
-	BillingPlan                  any
-	BillingProfileId             any
-	BillingScopeId               any
-	Commitment                   any
-	CustomerId                   any
-	DisplayName                  any
-	DisplayProvisioningState     any
-	EffectiveDateTime            any
-	ExpiryDateTime               any
-	ExtendedStatusInfo           any
-	ProductCode                  any
-	ProvisioningState            any
-	PurchaseDateTime             any
-	Renew                        any
-	RenewDestination             any
-	RenewProperties              any
-	RenewSource                  any
-	Term                         any
+	AppliedScopeProperties any
+	AppliedScopeType any
+	BenefitStartTime any
+	BillingAccountId any
+	BillingPlan any
+	BillingProfileId any
+	BillingScopeId any
+	Commitment any
+	CustomerId any
+	DisplayName any
+	DisplayProvisioningState any
+	EffectiveDateTime any
+	ExpiryDateTime any
+	ExtendedStatusInfo any
+	ProductCode any
+	ProvisioningState any
+	PurchaseDateTime any
+	Renew any
+	RenewDestination any
+	RenewProperties any
+	RenewSource any
+	Term any
 	UserFriendlyAppliedScopeType any
-	Utilization                  any
+	Utilization any
 }
 
 type OpenapiSavingsPlanModelListResult_Value struct {
 	Properties any
-	Sku        any
-	Tags       any
+	Sku any
+	Tags any
 }
 
 type OpenapiSavingsPlanModelListResultConfig struct {
 	BillingAccountName any
-	Filter             any
-	OrderBy            any
-	RefreshSummary     any
-	SelectedState      any
-	Skiptoken          any
-	Take               any
+	Filter any
+	OrderBy any
+	RefreshSummary any
+	SelectedState any
+	Skiptoken any
+	Take any
 }
 
 type OpenapiSavingsPlanModelListResultAttrs struct {
 	BillingAccountName any
-	Filter             any
+	Filter any
 	// The link to the next page of items
-	NextLink       any
-	OrderBy        any
+	NextLink any
+	OrderBy any
 	RefreshSummary any
-	SelectedState  any
-	Skiptoken      any
+	SelectedState any
+	Skiptoken any
 	// The roll up count summary of savings plans in each state
 	Summary any
-	Take    any
+	Take any
 	// The SavingsPlanModel items on this page
 	Value any
 }
@@ -145,11 +145,11 @@ var OpenapiSavingsPlanModelListResult = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_savings_plan_model_list_result",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Filter":             ubx.FieldSpec{WireName: "filter"},
-		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
-		"RefreshSummary":     ubx.FieldSpec{WireName: "refresh_summary"},
-		"SelectedState":      ubx.FieldSpec{WireName: "selected_state"},
-		"Skiptoken":          ubx.FieldSpec{WireName: "skiptoken"},
-		"Take":               ubx.FieldSpec{WireName: "take"},
+		"Filter": ubx.FieldSpec{WireName: "filter"},
+		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
+		"RefreshSummary": ubx.FieldSpec{WireName: "refresh_summary"},
+		"SelectedState": ubx.FieldSpec{WireName: "selected_state"},
+		"Skiptoken": ubx.FieldSpec{WireName: "skiptoken"},
+		"Take": ubx.FieldSpec{WireName: "take"},
 	},
 }

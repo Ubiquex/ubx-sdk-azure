@@ -41,31 +41,31 @@ type ConnectionSetting_Sku struct {
 }
 
 var ConnectionSetting_Properties_ParametersFields = ubx.FieldMap{
-	"Key":   ubx.FieldSpec{WireName: "key"},
-	"Value": ubx.FieldSpec{WireName: "value"},
-}
+		"Key": ubx.FieldSpec{WireName: "key"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var ConnectionSetting_PropertiesFields = ubx.FieldMap{
-	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
-	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-	"Id":           ubx.FieldSpec{WireName: "id"},
-	"Name":         ubx.FieldSpec{WireName: "name"},
-	"Parameters": ubx.FieldSpec{
-		WireName: "parameters",
-		Kind:     "list",
-		Fields:   ConnectionSetting_Properties_ParametersFields,
-	},
-	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
-	"Scopes":                     ubx.FieldSpec{WireName: "scopes"},
-	"ServiceProviderDisplayName": ubx.FieldSpec{WireName: "service_provider_display_name"},
-	"ServiceProviderId":          ubx.FieldSpec{WireName: "service_provider_id"},
-	"SettingId":                  ubx.FieldSpec{WireName: "setting_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Parameters": ubx.FieldSpec{
+			WireName: "parameters",
+			Kind: "list",
+			Fields: ConnectionSetting_Properties_ParametersFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Scopes": ubx.FieldSpec{WireName: "scopes"},
+		"ServiceProviderDisplayName": ubx.FieldSpec{WireName: "service_provider_display_name"},
+		"ServiceProviderId": ubx.FieldSpec{WireName: "service_provider_id"},
+		"SettingId": ubx.FieldSpec{WireName: "setting_id"},
+	}
 
 var ConnectionSetting_SkuFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Tier": ubx.FieldSpec{WireName: "tier"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 type ConnectionSettingConfig struct {
 	// Entity Tag.
@@ -108,18 +108,18 @@ type ConnectionSettingAttrs struct {
 var ConnectionSetting = ubx.ResourceBinding{
 	WireType: "azure_botservice_connection_setting",
 	Fields: ubx.FieldMap{
-		"Etag":     ubx.FieldSpec{WireName: "etag"},
-		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Etag": ubx.FieldSpec{WireName: "etag"},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ConnectionSetting_PropertiesFields,
+			Kind: "object",
+			Fields: ConnectionSetting_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   ConnectionSetting_SkuFields,
+			Kind: "object",
+			Fields: ConnectionSetting_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

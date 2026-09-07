@@ -3,27 +3,28 @@ package cognitiveservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type RaiContentFilter_Value_Properties struct {
+type RaiContentFilter_Properties struct {
+	// If the Content Filter has multi severity levels(Low, Medium, or High).
 	IsMultiLevelFilter any
-	Name               any
-	Source             any
-}
-
-type RaiContentFilter_Value struct {
-	Properties any
+	// Name of Content Filter.
+	Name any
+	// Content source to apply the Content Filters.
+	Source any
 }
 
 type RaiContentFilterConfig struct {
+	FilterName any
 }
 
 type RaiContentFilterAttrs struct {
-	// The link used to get the next page of Content Filters.
-	NextLink any
-	// The list of RaiContentFilter.
-	Value any
+	FilterName any
+	// Azure OpenAI Content Filter Properties.
+	Properties any
 }
 
 var RaiContentFilter = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_rai_content_filter",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"FilterName": ubx.FieldSpec{WireName: "filter_name"},
+	},
 }

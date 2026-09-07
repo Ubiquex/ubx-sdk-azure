@@ -28,23 +28,23 @@ type VirtualnetworkInboundSecurityRule_Properties struct {
 }
 
 var VirtualnetworkInboundSecurityRule_Properties_RulesFields = ubx.FieldMap{
-	"AppliesOn":             ubx.FieldSpec{WireName: "applies_on"},
-	"DestinationPortRange":  ubx.FieldSpec{WireName: "destination_port_range"},
-	"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
-	"Name":                  ubx.FieldSpec{WireName: "name"},
-	"Protocol":              ubx.FieldSpec{WireName: "protocol"},
-	"SourceAddressPrefix":   ubx.FieldSpec{WireName: "source_address_prefix"},
-}
+		"AppliesOn": ubx.FieldSpec{WireName: "applies_on"},
+		"DestinationPortRange": ubx.FieldSpec{WireName: "destination_port_range"},
+		"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Protocol": ubx.FieldSpec{WireName: "protocol"},
+		"SourceAddressPrefix": ubx.FieldSpec{WireName: "source_address_prefix"},
+	}
 
 var VirtualnetworkInboundSecurityRule_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"RuleType":          ubx.FieldSpec{WireName: "rule_type"},
-	"Rules": ubx.FieldSpec{
-		WireName: "rules",
-		Kind:     "list",
-		Fields:   VirtualnetworkInboundSecurityRule_Properties_RulesFields,
-	},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"RuleType": ubx.FieldSpec{WireName: "rule_type"},
+		"Rules": ubx.FieldSpec{
+			WireName: "rules",
+			Kind: "list",
+			Fields: VirtualnetworkInboundSecurityRule_Properties_RulesFields,
+		},
+	}
 
 type VirtualnetworkInboundSecurityRuleConfig struct {
 	// Name of the resource.
@@ -70,8 +70,8 @@ var VirtualnetworkInboundSecurityRule = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkInboundSecurityRule_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkInboundSecurityRule_PropertiesFields,
 		},
 	},
 }

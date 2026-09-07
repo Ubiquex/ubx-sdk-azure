@@ -7,24 +7,21 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiAlertRuleTemplate_Value:
-    kind: Any = None
-
-@dataclasses.dataclass
 class OpenapiAlertRuleTemplateConfig:
+    alert_rule_template_id: Any = None
     workspace_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiAlertRuleTemplateAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The AlertRuleTemplate items on this page
-    value: Any = None
+    alert_rule_template_id: Any = None
+    # The kind of the alert rule
+    kind: Any = None
     workspace_name: Any = None
 
 OpenapiAlertRuleTemplate = ubx.DataSourceBinding(
     wire_type="azure_securityinsights_openapi_alert_rule_template",
     fields={
+        "alert_rule_template_id": ubx.FieldSpec(wire_name="alert_rule_template_id"),
         "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

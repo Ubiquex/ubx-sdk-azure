@@ -7,31 +7,26 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiDataContainer_Value_Properties:
+class OpenapiDataContainer_Properties:
+    # Enum to determine the type of data.
     data_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiDataContainer_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiDataContainerConfig:
-    list_view_type: Any = None
-    registry_name: Any = None
+    name: Any = None
+    workspace_name: Any = None
 
 @dataclasses.dataclass
 class OpenapiDataContainerAttrs:
-    list_view_type: Any = None
-    # The link to the next page of items
-    next_link: Any = None
-    registry_name: Any = None
-    # The DataContainer items on this page
-    value: Any = None
+    name: Any = None
+    # Container for data asset versions.
+    properties: Any = None
+    workspace_name: Any = None
 
 OpenapiDataContainer = ubx.DataSourceBinding(
     wire_type="azure_machinelearningservices_openapi_data_container",
     fields={
-        "list_view_type": ubx.FieldSpec(wire_name="list_view_type"),
-        "registry_name": ubx.FieldSpec(wire_name="registry_name"),
+        "name": ubx.FieldSpec(wire_name="name"),
+        "workspace_name": ubx.FieldSpec(wire_name="workspace_name"),
     },
 )

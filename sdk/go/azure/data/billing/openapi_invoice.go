@@ -3,135 +3,138 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiInvoice_Value_Properties_AmountDue struct {
+type OpenapiInvoice_Properties_AmountDue struct {
 	Currency any
-	Value    any
+	Value any
 }
 
-type OpenapiInvoice_Value_Properties_Documents struct {
+type OpenapiInvoice_Properties_Documents struct {
 	DocumentNumbers any
-	ExternalUrl     any
-	Kind            any
-	Name            any
-	Source          any
-	Url             any
+	ExternalUrl any
+	Kind any
+	Name any
+	Source any
+	Url any
 }
 
-type OpenapiInvoice_Value_Properties_FailedPayments struct {
-	Date                any
+type OpenapiInvoice_Properties_FailedPayments struct {
+	Date any
 	FailedPaymentReason any
 }
 
-type OpenapiInvoice_Value_Properties_Payments struct {
-	Amount              any
-	Date                any
+type OpenapiInvoice_Properties_Payments struct {
+	Amount any
+	Date any
 	PaymentMethodFamily any
-	PaymentMethodId     any
-	PaymentMethodType   any
-	PaymentType         any
+	PaymentMethodId any
+	PaymentMethodType any
+	PaymentType any
 }
 
-type OpenapiInvoice_Value_Properties_RebillDetails_RebillDetails struct {
+type OpenapiInvoice_Properties_RebillDetails_RebillDetails struct {
 	CreditNoteDocumentId any
-	InvoiceDocumentId    any
-	RebillDetails        any
+	InvoiceDocumentId any
+	RebillDetails any
 }
 
-type OpenapiInvoice_Value_Properties_RebillDetails struct {
+type OpenapiInvoice_Properties_RebillDetails struct {
 	CreditNoteDocumentId any
-	InvoiceDocumentId    any
-	RebillDetails        any
+	InvoiceDocumentId any
+	RebillDetails any
 }
 
-type OpenapiInvoice_Value_Properties_RefundDetails struct {
-	AmountRefunded    any
-	AmountRequested   any
-	ApprovedOn        any
-	CompletedOn       any
-	RebillInvoiceId   any
+type OpenapiInvoice_Properties_RefundDetails struct {
+	AmountRefunded any
+	AmountRequested any
+	ApprovedOn any
+	CompletedOn any
+	RebillInvoiceId any
 	RefundOperationId any
-	RefundReason      any
-	RefundStatus      any
-	RequestedOn       any
-	TransactionCount  any
+	RefundReason any
+	RefundStatus any
+	RequestedOn any
+	TransactionCount any
 }
 
-type OpenapiInvoice_Value_Properties struct {
-	AmountDue                 any
-	AzurePrepaymentApplied    any
-	BilledAmount              any
-	BilledDocumentId          any
+type OpenapiInvoice_Properties struct {
+	// The amount due as of now.
+	AmountDue any
+	// The amount of Azure prepayment applied to the charges. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
+	AzurePrepaymentApplied any
+	// The total charges for the invoice billing period.
+	BilledAmount any
+	// The Id of the active invoice which is originally billed after this invoice was voided. This field is applicable to the void invoices only.
+	BilledDocumentId any
+	// The name of the billing profile for which the invoice is generated.
 	BillingProfileDisplayName any
-	BillingProfileId          any
-	CreditAmount              any
-	CreditForDocumentId       any
-	DocumentType              any
-	Documents                 any
-	DueDate                   any
-	FailedPayments            any
-	FreeAzureCreditApplied    any
-	InvoiceDate               any
-	InvoicePeriodEndDate      any
-	InvoicePeriodStartDate    any
-	InvoiceType               any
-	IsMonthlyInvoice          any
-	Payments                  any
-	PurchaseOrderNumber       any
-	RebillDetails             any
-	RefundDetails             any
-	SpecialTaxationType       any
-	Status                    any
-	SubTotal                  any
-	SubscriptionDisplayName   any
-	SubscriptionId            any
-	TaxAmount                 any
-	TotalAmount               any
-}
-
-type OpenapiInvoice_Value struct {
-	Properties any
-	Tags       any
+	// The ID of the billing profile for which the invoice is generated.
+	BillingProfileId any
+	// The total refund for returns and cancellations during the invoice billing period. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
+	CreditAmount any
+	// The Id of the invoice which got voided and this credit note was issued as a result. This field is applicable to the credit notes only.
+	CreditForDocumentId any
+	// The type of the document.
+	DocumentType any
+	// List of documents available to download and view such as invoice, credit note, or tax receipt.
+	Documents any
+	// The due date for the invoice.
+	DueDate any
+	// List of failed payments.
+	FailedPayments any
+	// The amount of free Azure credits applied to the charges. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
+	FreeAzureCreditApplied any
+	// The date when the invoice was generated.
+	InvoiceDate any
+	// The end date of the billing period for which the invoice is generated. The date is in MM-DD-YYYY format.
+	InvoicePeriodEndDate any
+	// The start date of the billing period for which the invoice is generated. The date is in MM-DD-YYYY format.
+	InvoicePeriodStartDate any
+	// Invoice type.
+	InvoiceType any
+	// Specifies if the invoice is generated as part of monthly invoicing cycle or not. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
+	IsMonthlyInvoice any
+	// List of payments.
+	Payments any
+	// An optional purchase order number for the invoice.
+	PurchaseOrderNumber any
+	// Rebill details for an invoice.
+	RebillDetails any
+	// The details of a refund request.
+	RefundDetails any
+	// Identifies the type of tax calculation used for the invoice. The field is applicable only to invoices with special tax calculation logic.
+	SpecialTaxationType any
+	// The current status of the invoice.
+	Status any
+	// The pre-tax amount due. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
+	SubTotal any
+	// The name of the billing subscription for which the invoice is generated.
+	SubscriptionDisplayName any
+	// The ID of the subscription for which the invoice is generated.
+	SubscriptionId any
+	// The amount of tax charged for the billing period. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
+	TaxAmount any
+	// The amount due when the invoice was generated. This field is applicable to billing accounts with agreement type Microsoft Customer Agreement.
+	TotalAmount any
 }
 
 type OpenapiInvoiceConfig struct {
-	Count           any
-	Filter          any
-	OrderBy         any
-	PeriodEndDate   any
-	PeriodStartDate any
-	Search          any
-	Skip            any
-	SubscriptionId  any
-	Top             any
+	InvoiceName any
+	SubscriptionId any
 }
 
 type OpenapiInvoiceAttrs struct {
-	Count  any
-	Filter any
-	// The link to the next page of items
-	NextLink        any
-	OrderBy         any
-	PeriodEndDate   any
-	PeriodStartDate any
-	Search          any
-	Skip            any
-	SubscriptionId  any
-	Top             any
-	// The Invoice items on this page
-	Value any
+	InvoiceName any
+	// An invoice.
+	Properties any
+	SubscriptionId any
+	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
+	Tags any
 }
 
 var OpenapiInvoice = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_invoice",
 	Fields: ubx.FieldMap{
-		"Count":           ubx.FieldSpec{WireName: "count"},
-		"Filter":          ubx.FieldSpec{WireName: "filter"},
-		"OrderBy":         ubx.FieldSpec{WireName: "order_by"},
-		"PeriodEndDate":   ubx.FieldSpec{WireName: "period_end_date"},
-		"PeriodStartDate": ubx.FieldSpec{WireName: "period_start_date"},
-		"Search":          ubx.FieldSpec{WireName: "search"},
-		"Skip":            ubx.FieldSpec{WireName: "skip"},
-		"SubscriptionId":  ubx.FieldSpec{WireName: "subscription_id"},
-		"Top":             ubx.FieldSpec{WireName: "top"},
+		"InvoiceName": ubx.FieldSpec{WireName: "invoice_name"},
+		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

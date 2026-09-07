@@ -3,45 +3,47 @@ package recoveryservicessiterecovery
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ServiceRecoveryPoint_Value_Properties_ProviderSpecificDetails struct {
+type ServiceRecoveryPoint_Properties_ProviderSpecificDetails struct {
+	// Gets the provider type.
 	InstanceType any
 }
 
-type ServiceRecoveryPoint_Value_Properties struct {
+type ServiceRecoveryPoint_Properties struct {
+	// Replication provider specific recovery point details.
 	ProviderSpecificDetails any
-	RecoveryPointTime       any
-	RecoveryPointType       any
-}
-
-type ServiceRecoveryPoint_Value struct {
-	Location   any
-	Properties any
+	// The recovery point time.
+	RecoveryPointTime any
+	// The recovery point type: ApplicationConsistent, CrashConsistent.
+	RecoveryPointType any
 }
 
 type ServiceRecoveryPointConfig struct {
-	FabricName                  any
-	ProtectionContainerName     any
+	FabricName any
+	ProtectionContainerName any
+	RecoveryPointName any
 	ReplicatedProtectedItemName any
-	ResourceName                any
+	ResourceName any
 }
 
 type ServiceRecoveryPointAttrs struct {
 	FabricName any
-	// The link to the next page of items
-	NextLink                    any
-	ProtectionContainerName     any
+	// Resource Location
+	Location any
+	// Recovery point properties.
+	Properties any
+	ProtectionContainerName any
+	RecoveryPointName any
 	ReplicatedProtectedItemName any
-	ResourceName                any
-	// The RecoveryPoint items on this page
-	Value any
+	ResourceName any
 }
 
 var ServiceRecoveryPoint = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_recovery_point",
 	Fields: ubx.FieldMap{
-		"FabricName":                  ubx.FieldSpec{WireName: "fabric_name"},
-		"ProtectionContainerName":     ubx.FieldSpec{WireName: "protection_container_name"},
+		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
+		"RecoveryPointName": ubx.FieldSpec{WireName: "recovery_point_name"},
 		"ReplicatedProtectedItemName": ubx.FieldSpec{WireName: "replicated_protected_item_name"},
-		"ResourceName":                ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

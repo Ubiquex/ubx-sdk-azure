@@ -7,7 +7,7 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiTableServiceProperties_Value_Properties_Cors_CorsRules:
+class OpenapiTableServiceProperties_Properties_Cors_CorsRules:
     allowed_headers: Any = None
     allowed_methods: Any = None
     allowed_origins: Any = None
@@ -15,16 +15,14 @@ class OpenapiTableServiceProperties_Value_Properties_Cors_CorsRules:
     max_age_in_seconds: Any = None
 
 @dataclasses.dataclass
-class OpenapiTableServiceProperties_Value_Properties_Cors:
+class OpenapiTableServiceProperties_Properties_Cors:
+    # The List of CORS rules. You can include up to five CorsRule elements in the request.
     cors_rules: Any = None
 
 @dataclasses.dataclass
-class OpenapiTableServiceProperties_Value_Properties:
+class OpenapiTableServiceProperties_Properties:
+    # Sets the CORS rules. You can include up to five CorsRule elements in the request.
     cors: Any = None
-
-@dataclasses.dataclass
-class OpenapiTableServiceProperties_Value:
-    properties: Any = None
 
 @dataclasses.dataclass
 class OpenapiTableServicePropertiesConfig:
@@ -33,8 +31,8 @@ class OpenapiTableServicePropertiesConfig:
 @dataclasses.dataclass
 class OpenapiTableServicePropertiesAttrs:
     account_name: Any = None
-    # List of table services returned.
-    value: Any = None
+    # The properties of a storage account’s Table service.
+    properties: Any = None
 
 OpenapiTableServiceProperties = ubx.DataSourceBinding(
     wire_type="azure_storage_openapi_table_service_properties",

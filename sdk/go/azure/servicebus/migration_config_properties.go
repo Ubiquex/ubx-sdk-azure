@@ -17,12 +17,12 @@ type MigrationConfigProperties_Properties struct {
 }
 
 var MigrationConfigProperties_PropertiesFields = ubx.FieldMap{
-	"MigrationState":                    ubx.FieldSpec{WireName: "migration_state"},
-	"PendingReplicationOperationsCount": ubx.FieldSpec{WireName: "pending_replication_operations_count"},
-	"PostMigrationName":                 ubx.FieldSpec{WireName: "post_migration_name"},
-	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
-	"TargetNamespace":                   ubx.FieldSpec{WireName: "target_namespace"},
-}
+		"MigrationState": ubx.FieldSpec{WireName: "migration_state"},
+		"PendingReplicationOperationsCount": ubx.FieldSpec{WireName: "pending_replication_operations_count"},
+		"PostMigrationName": ubx.FieldSpec{WireName: "post_migration_name"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"TargetNamespace": ubx.FieldSpec{WireName: "target_namespace"},
+	}
 
 type MigrationConfigPropertiesConfig struct {
 	// Properties required to the Create Migration Configuration
@@ -41,8 +41,8 @@ var MigrationConfigProperties = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   MigrationConfigProperties_PropertiesFields,
+			Kind: "object",
+			Fields: MigrationConfigProperties_PropertiesFields,
 		},
 	},
 }

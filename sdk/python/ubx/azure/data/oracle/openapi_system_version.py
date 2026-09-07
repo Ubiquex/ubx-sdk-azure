@@ -7,26 +7,23 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiSystemVersion_Value_Properties:
+class OpenapiSystemVersion_Properties:
+    # A valid Oracle System Version
     system_version: Any = None
 
 @dataclasses.dataclass
-class OpenapiSystemVersion_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiSystemVersionConfig:
-    pass
+    systemversionname: Any = None
 
 @dataclasses.dataclass
 class OpenapiSystemVersionAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The SystemVersion items on this page
-    value: Any = None
+    # System Version Resource model
+    properties: Any = None
+    systemversionname: Any = None
 
 OpenapiSystemVersion = ubx.DataSourceBinding(
     wire_type="azure_oracle_openapi_system_version",
     fields={
+        "systemversionname": ubx.FieldSpec(wire_name="systemversionname"),
     },
 )

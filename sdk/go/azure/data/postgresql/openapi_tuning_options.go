@@ -3,29 +3,27 @@ package postgresql
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiTuningOptions_Value_Properties struct {
+type OpenapiTuningOptions_Properties struct {
+	// State of the tuning option.
 	State any
-}
-
-type OpenapiTuningOptions_Value struct {
-	Properties any
 }
 
 type OpenapiTuningOptionsConfig struct {
 	ServerName any
+	TuningOption any
 }
 
 type OpenapiTuningOptionsAttrs struct {
-	// The link to the next page of items
-	NextLink   any
+	// Properties of a tuning option.
+	Properties any
 	ServerName any
-	// The TuningOptions items on this page
-	Value any
+	TuningOption any
 }
 
 var OpenapiTuningOptions = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_tuning_options",
 	Fields: ubx.FieldMap{
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"TuningOption": ubx.FieldSpec{WireName: "tuning_option"},
 	},
 }

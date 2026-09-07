@@ -17,12 +17,12 @@ type OutboundRuleBasicResource_Properties struct {
 }
 
 var OutboundRuleBasicResource_PropertiesFields = ubx.FieldMap{
-	"Category":         ubx.FieldSpec{WireName: "category"},
-	"ErrorInformation": ubx.FieldSpec{WireName: "error_information"},
-	"ParentRuleNames":  ubx.FieldSpec{WireName: "parent_rule_names"},
-	"Status":           ubx.FieldSpec{WireName: "status"},
-	"Type":             ubx.FieldSpec{WireName: "type"},
-}
+		"Category": ubx.FieldSpec{WireName: "category"},
+		"ErrorInformation": ubx.FieldSpec{WireName: "error_information"},
+		"ParentRuleNames": ubx.FieldSpec{WireName: "parent_rule_names"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 type OutboundRuleBasicResourceConfig struct {
 	// Outbound Rule for the managed network of a cognitive services account.
@@ -39,8 +39,8 @@ var OutboundRuleBasicResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OutboundRuleBasicResource_PropertiesFields,
+			Kind: "object",
+			Fields: OutboundRuleBasicResource_PropertiesFields,
 		},
 	},
 }

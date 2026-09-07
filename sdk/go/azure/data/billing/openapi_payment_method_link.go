@@ -3,53 +3,69 @@ package billing
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiPaymentMethodLink_Value_Properties_Logos struct {
+type OpenapiPaymentMethodLink_Properties_Logos struct {
 	MimeType any
-	Url      any
+	Url any
 }
 
-type OpenapiPaymentMethodLink_Value_Properties_PaymentMethod struct {
+type OpenapiPaymentMethodLink_Properties_PaymentMethod struct {
+	// The account holder name for the payment method. This is only supported for payment methods with family CreditCard.
 	AccountHolderName any
-	DisplayName       any
-	Expiration        any
-	Family            any
-	Id                any
-	LastFourDigits    any
-	Logos             any
+	// The display name of the payment method.
+	DisplayName any
+	// The expiration month and year of the payment method. This is only supported for payment methods with family CreditCard.
+	Expiration any
+	// Payment on Account type.
+	Family any
+	// Id of payment method.
+	Id any
+	// Last four digits of payment method.
+	LastFourDigits any
+	// The list of logos for the payment method.
+	Logos any
+	// The type of payment method.
 	PaymentMethodType any
-	Status            any
+	// Status of the payment method.
+	Status any
 }
 
-type OpenapiPaymentMethodLink_Value_Properties struct {
+type OpenapiPaymentMethodLink_Properties struct {
+	// The account holder name for the payment method. This is only supported for payment methods with family CreditCard.
 	AccountHolderName any
-	DisplayName       any
-	Expiration        any
-	Family            any
-	LastFourDigits    any
-	Logos             any
-	PaymentMethod     any
-	PaymentMethodId   any
+	// The display name of the payment method.
+	DisplayName any
+	// The expiration month and year of the payment method. This is only supported for payment methods with family CreditCard.
+	Expiration any
+	// Payment on Account type.
+	Family any
+	// Last four digits of payment method.
+	LastFourDigits any
+	// The list of logos for the payment method.
+	Logos any
+	// The properties of a payment method.
+	PaymentMethod any
+	// Id of payment method. Example: /providers/Microsoft.Billing/paymentMethods/ABCDABCDABC0
+	PaymentMethodId any
+	// The type of payment method.
 	PaymentMethodType any
-	Status            any
-}
-
-type OpenapiPaymentMethodLink_Value struct {
-	Properties any
-	Tags       any
+	// Status of the payment method.
+	Status any
 }
 
 type OpenapiPaymentMethodLinkConfig struct {
 	BillingAccountName any
 	BillingProfileName any
+	PaymentMethodName any
 }
 
 type OpenapiPaymentMethodLinkAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	// The link to the next page of items
-	NextLink any
-	// The PaymentMethodLink items on this page
-	Value any
+	PaymentMethodName any
+	// The properties of a payment method link.
+	Properties any
+	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
+	Tags any
 }
 
 var OpenapiPaymentMethodLink = ubx.DataSourceBinding{
@@ -57,5 +73,6 @@ var OpenapiPaymentMethodLink = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
+		"PaymentMethodName": ubx.FieldSpec{WireName: "payment_method_name"},
 	},
 }

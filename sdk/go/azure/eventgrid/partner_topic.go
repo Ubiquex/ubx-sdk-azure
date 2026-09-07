@@ -74,51 +74,51 @@ type PartnerTopic_SystemData struct {
 }
 
 var PartnerTopic_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var PartnerTopic_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   PartnerTopic_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: PartnerTopic_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var PartnerTopic_Properties_EventTypeInfo_InlineEventTypesFields = ubx.FieldMap{
-	"DataSchemaUrl":    ubx.FieldSpec{WireName: "data_schema_url"},
-	"Description":      ubx.FieldSpec{WireName: "description"},
-	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
-	"DocumentationUrl": ubx.FieldSpec{WireName: "documentation_url"},
-}
+		"DataSchemaUrl": ubx.FieldSpec{WireName: "data_schema_url"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"DocumentationUrl": ubx.FieldSpec{WireName: "documentation_url"},
+	}
 
 var PartnerTopic_Properties_EventTypeInfoFields = ubx.FieldMap{
-	"InlineEventTypes": ubx.FieldSpec{
-		WireName: "inline_event_types",
-		Kind:     "map",
-		Fields:   PartnerTopic_Properties_EventTypeInfo_InlineEventTypesFields,
-	},
-	"Kind": ubx.FieldSpec{WireName: "kind"},
-}
+		"InlineEventTypes": ubx.FieldSpec{
+			WireName: "inline_event_types",
+			Kind: "map",
+			Fields: PartnerTopic_Properties_EventTypeInfo_InlineEventTypesFields,
+		},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
+	}
 
 var PartnerTopic_PropertiesFields = ubx.FieldMap{
-	"ActivationState": ubx.FieldSpec{WireName: "activation_state"},
-	"EventTypeInfo": ubx.FieldSpec{
-		WireName: "event_type_info",
-		Kind:     "object",
-		Fields:   PartnerTopic_Properties_EventTypeInfoFields,
-	},
-	"ExpirationTimeIfNotActivatedUtc": ubx.FieldSpec{WireName: "expiration_time_if_not_activated_utc"},
-	"MessageForActivation":            ubx.FieldSpec{WireName: "message_for_activation"},
-	"PartnerRegistrationImmutableId":  ubx.FieldSpec{WireName: "partner_registration_immutable_id"},
-	"PartnerTopicFriendlyDescription": ubx.FieldSpec{WireName: "partner_topic_friendly_description"},
-	"ProvisioningState":               ubx.FieldSpec{WireName: "provisioning_state"},
-	"Source":                          ubx.FieldSpec{WireName: "source"},
-}
+		"ActivationState": ubx.FieldSpec{WireName: "activation_state"},
+		"EventTypeInfo": ubx.FieldSpec{
+			WireName: "event_type_info",
+			Kind: "object",
+			Fields: PartnerTopic_Properties_EventTypeInfoFields,
+		},
+		"ExpirationTimeIfNotActivatedUtc": ubx.FieldSpec{WireName: "expiration_time_if_not_activated_utc"},
+		"MessageForActivation": ubx.FieldSpec{WireName: "message_for_activation"},
+		"PartnerRegistrationImmutableId": ubx.FieldSpec{WireName: "partner_registration_immutable_id"},
+		"PartnerTopicFriendlyDescription": ubx.FieldSpec{WireName: "partner_topic_friendly_description"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Source": ubx.FieldSpec{WireName: "source"},
+	}
 
 type PartnerTopicConfig struct {
 	// The identity information for the resource.
@@ -149,14 +149,14 @@ var PartnerTopic = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   PartnerTopic_IdentityFields,
+			Kind: "object",
+			Fields: PartnerTopic_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   PartnerTopic_PropertiesFields,
+			Kind: "object",
+			Fields: PartnerTopic_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -4,25 +4,25 @@ package version
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VersionConfig struct {
-	EdgeZone      any
-	Offer         any
+	EdgeZone any
+	Offer any
 	PublisherName any
-	Skus          any
+	Skus any
 }
 
 type VersionAttrs struct {
-	EdgeZone      any
-	Offer         any
+	EdgeZone any
+	Offer any
 	PublisherName any
-	Skus          any
+	Skus any
 }
 
 var Version = ubx.DataSourceBinding{
 	WireType: "azure_version",
 	Fields: ubx.FieldMap{
-		"EdgeZone":      ubx.FieldSpec{WireName: "edge_zone"},
-		"Offer":         ubx.FieldSpec{WireName: "offer"},
+		"EdgeZone": ubx.FieldSpec{WireName: "edge_zone"},
+		"Offer": ubx.FieldSpec{WireName: "offer"},
 		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
-		"Skus":          ubx.FieldSpec{WireName: "skus"},
+		"Skus": ubx.FieldSpec{WireName: "skus"},
 	},
 }

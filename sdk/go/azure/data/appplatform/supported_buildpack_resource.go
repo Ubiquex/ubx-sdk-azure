@@ -3,41 +3,39 @@ package appplatform
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SupportedBuildpackResource_Value_Properties struct {
+type SupportedBuildpackResource_Properties struct {
+	// The id of supported buildpack
 	BuildpackId any
 }
 
-type SupportedBuildpackResource_Value struct {
-	Properties any
-}
-
 type SupportedBuildpackResourceConfig struct {
-	ApiVersion        any
-	BuildServiceName  any
+	ApiVersion any
+	BuildServiceName any
+	BuildpackName any
 	ResourceGroupName any
-	ServiceName       any
-	SubscriptionId    any
+	ServiceName any
+	SubscriptionId any
 }
 
 type SupportedBuildpackResourceAttrs struct {
-	ApiVersion       any
+	ApiVersion any
 	BuildServiceName any
-	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink          any
+	BuildpackName any
+	// Supported buildpack resource properties
+	Properties any
 	ResourceGroupName any
-	ServiceName       any
-	SubscriptionId    any
-	// Collection of supported buildpacks resources
-	Value any
+	ServiceName any
+	SubscriptionId any
 }
 
 var SupportedBuildpackResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_supported_buildpack_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
-		"BuildServiceName":  ubx.FieldSpec{WireName: "build_service_name"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"BuildServiceName": ubx.FieldSpec{WireName: "build_service_name"},
+		"BuildpackName": ubx.FieldSpec{WireName: "buildpack_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

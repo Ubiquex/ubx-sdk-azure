@@ -3,32 +3,30 @@ package chaos
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiTargetType_Value_Properties struct {
-	Description      any
-	DisplayName      any
+type OpenapiTargetType_Properties struct {
+	// Localized string of the description.
+	Description any
+	// Localized string of the display name.
+	DisplayName any
+	// URL to retrieve JSON schema of the Target Type properties.
 	PropertiesSchema any
-	ResourceTypes    any
-}
-
-type OpenapiTargetType_Value struct {
-	Properties any
+	// List of resource types this Target Type can extend.
+	ResourceTypes any
 }
 
 type OpenapiTargetTypeConfig struct {
-	ContinuationToken any
+	TargetTypeName any
 }
 
 type OpenapiTargetTypeAttrs struct {
-	ContinuationToken any
-	// The link to the next page of items
-	NextLink any
-	// The TargetType items on this page
-	Value any
+	// Model that represents the base Target Type properties model.
+	Properties any
+	TargetTypeName any
 }
 
 var OpenapiTargetType = ubx.DataSourceBinding{
 	WireType: "azure_chaos_openapi_target_type",
 	Fields: ubx.FieldMap{
-		"ContinuationToken": ubx.FieldSpec{WireName: "continuation_token"},
+		"TargetTypeName": ubx.FieldSpec{WireName: "target_type_name"},
 	},
 }

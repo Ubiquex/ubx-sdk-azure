@@ -15,11 +15,11 @@ type OpenapiLogAnalyticsQueryPack_Properties struct {
 }
 
 var OpenapiLogAnalyticsQueryPack_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"QueryPackId":       ubx.FieldSpec{WireName: "query_pack_id"},
-	"TimeCreated":       ubx.FieldSpec{WireName: "time_created"},
-	"TimeModified":      ubx.FieldSpec{WireName: "time_modified"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"QueryPackId": ubx.FieldSpec{WireName: "query_pack_id"},
+		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
+		"TimeModified": ubx.FieldSpec{WireName: "time_modified"},
+	}
 
 type OpenapiLogAnalyticsQueryPackConfig struct {
 	// The geo-location where the resource lives
@@ -45,8 +45,8 @@ var OpenapiLogAnalyticsQueryPack = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiLogAnalyticsQueryPack_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiLogAnalyticsQueryPack_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

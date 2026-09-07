@@ -3,31 +3,31 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkloadNetworkGateway_Value_Properties struct {
-	DisplayName       any
-	Path              any
+type WorkloadNetworkGateway_Properties struct {
+	// Display name of the DHCP entity.
+	DisplayName any
+	// NSX Gateway Path.
+	Path any
+	// base Workload Network provisioning state
 	ProvisioningState any
 }
 
-type WorkloadNetworkGateway_Value struct {
-	Properties any
-}
-
 type WorkloadNetworkGatewayConfig struct {
+	GatewayId any
 	PrivateCloudName any
 }
 
 type WorkloadNetworkGatewayAttrs struct {
-	// The link to the next page of items
-	NextLink         any
+	GatewayId any
 	PrivateCloudName any
-	// The WorkloadNetworkGateway items on this page
-	Value any
+	// Properties of a NSX Gateway.
+	Properties any
 }
 
 var WorkloadNetworkGateway = ubx.DataSourceBinding{
 	WireType: "azure_vmware_workload_network_gateway",
 	Fields: ubx.FieldMap{
+		"GatewayId": ubx.FieldSpec{WireName: "gateway_id"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 	},
 }

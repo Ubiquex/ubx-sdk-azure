@@ -3,48 +3,56 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Image_Value_Properties_RecommendedMachineConfiguration_Memory struct {
+type Image_Properties_RecommendedMachineConfiguration_Memory struct {
+	// Maximum value.
 	Max any
+	// Minimum value.
 	Min any
 }
 
-type Image_Value_Properties_RecommendedMachineConfiguration struct {
+type Image_Properties_RecommendedMachineConfiguration struct {
+	// Properties for a range of values.
 	Memory any
-	VCpus  any
+	// Properties for a range of values.
+	VCpus any
 }
 
-type Image_Value_Properties struct {
-	Description                     any
-	HibernateSupport                any
-	Offer                           any
-	ProvisioningState               any
-	Publisher                       any
+type Image_Properties struct {
+	// The description of the image.
+	Description any
+	// Indicates whether hibernate is enabled/disabled.
+	HibernateSupport any
+	// The name of the image offer.
+	Offer any
+	// Provisioning state of the resource.
+	ProvisioningState any
+	// The publisher of the image.
+	Publisher any
+	// Properties for a recommended machine configuration.
 	RecommendedMachineConfiguration any
-	Sku                             any
-}
-
-type Image_Value struct {
-	Properties any
+	// The SKU name for the image.
+	Sku any
 }
 
 type ImageConfig struct {
 	DevCenterName any
-	GalleryName   any
+	GalleryName any
+	ImageName any
 }
 
 type ImageAttrs struct {
 	DevCenterName any
-	GalleryName   any
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	GalleryName any
+	ImageName any
+	// Properties of an image.
+	Properties any
 }
 
 var Image = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image",
 	Fields: ubx.FieldMap{
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
-		"GalleryName":   ubx.FieldSpec{WireName: "gallery_name"},
+		"GalleryName": ubx.FieldSpec{WireName: "gallery_name"},
+		"ImageName": ubx.FieldSpec{WireName: "image_name"},
 	},
 }

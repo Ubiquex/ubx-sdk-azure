@@ -28,10 +28,10 @@ type ApplicationTypeVersionResource_SystemData struct {
 }
 
 var ApplicationTypeVersionResource_PropertiesFields = ubx.FieldMap{
-	"AppPackageUrl":        ubx.FieldSpec{WireName: "app_package_url"},
-	"DefaultParameterList": ubx.FieldSpec{WireName: "default_parameter_list"},
-	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"AppPackageUrl": ubx.FieldSpec{WireName: "app_package_url"},
+		"DefaultParameterList": ubx.FieldSpec{WireName: "default_parameter_list"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type ApplicationTypeVersionResourceConfig struct {
 	// It will be deprecated in New API, resource location depends on the parent resource.
@@ -71,10 +71,10 @@ var ApplicationTypeVersionResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ApplicationTypeVersionResource_PropertiesFields,
+			Kind: "object",
+			Fields: ApplicationTypeVersionResource_PropertiesFields,
 		},
-		"Tags":    ubx.FieldSpec{WireName: "tags"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},
 }

@@ -3,64 +3,111 @@ package advisor
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ResourceRecommendationBase_Value_Properties_ResourceMetadata struct {
-	Action     any
-	Plural     any
+type ResourceRecommendationBase_Properties_ResourceMetadata struct {
+	// The action to view resource.
+	Action any
+	// The plural user friendly name of resource type. eg: virtual machines
+	Plural any
+	// Azure resource Id of the assessed resource
 	ResourceId any
-	Singular   any
-	Source     any
+	// The singular user friendly name of resource type. eg: virtual machine
+	Singular any
+	// Source from which recommendation is generated
+	Source any
 }
 
-type ResourceRecommendationBase_Value_Properties_ShortDescription struct {
-	Problem  any
+type ResourceRecommendationBase_Properties_ShortDescription struct {
+	// The issue or opportunity identified by the recommendation and proposed solution.
+	Problem any
+	// The issue or opportunity identified by the recommendation and proposed solution.
 	Solution any
 }
 
-type ResourceRecommendationBase_Value_Properties struct {
-	Actions                   any
-	Category                  any
-	Control                   any
-	Description               any
+type ResourceRecommendationBase_Properties struct {
+	// The list of recommended actions to implement recommendation.
+	Actions any
+	// The category of the recommendation.
+	Category any
+	// The sub-category of the recommendation.
+	Control any
+	// The detailed description of recommendation.
+	Description any
+	// The recommendation metadata properties exposed to customer to provide additional information.
 	ExposedMetadataProperties any
-	ExtendedProperties        any
-	Impact                    any
-	ImpactedField             any
-	ImpactedValue             any
-	Label                     any
-	LastUpdated               any
-	LearnMoreLink             any
-	Metadata                  any
-	PotentialBenefits         any
-	RecommendationTypeId      any
-	Remediation               any
-	ResourceMetadata          any
-	Risk                      any
-	ShortDescription          any
-	SuppressionIds            any
+	// Extended properties
+	ExtendedProperties any
+	// The business impact of the recommendation.
+	Impact any
+	// The resource type identified by Advisor.
+	ImpactedField any
+	// The resource identified by Advisor.
+	ImpactedValue any
+	// The label of recommendation.
+	Label any
+	// The most recent time that Advisor checked the validity of the recommendation.
+	LastUpdated any
+	// The link to learn more about recommendation and generation logic.
+	LearnMoreLink any
+	// The recommendation metadata.
+	Metadata any
+	// The potential benefit of implementing recommendation.
+	PotentialBenefits any
+	// The recommendation-type GUID.
+	RecommendationTypeId any
+	// The automated way to apply recommendation.
+	Remediation any
+	// Recommendation resource metadata
+	ResourceMetadata any
+	// The potential risk of not implementing the recommendation.
+	Risk any
+	// A summary of the recommendation.
+	ShortDescription any
+	// The list of snoozed and dismissed rules for the recommendation.
+	SuppressionIds any
 }
 
-type ResourceRecommendationBase_Value struct {
-	Properties any
+type ResourceRecommendationBase_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type ResourceRecommendationBaseConfig struct {
-	ApiVersion     any
-	SubscriptionId any
+	ApiVersion any
+	RecommendationId any
+	ResourceUri any
 }
 
 type ResourceRecommendationBaseAttrs struct {
 	ApiVersion any
-	// The link used to get the next page of recommendations.
-	NextLink       any
-	SubscriptionId any
-	// The list of recommendations.
-	Value any
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
+	// The properties of the recommendation.
+	Properties any
+	RecommendationId any
+	ResourceUri any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var ResourceRecommendationBase = ubx.DataSourceBinding{
 	WireType: "azure_advisor_resource_recommendation_base",
 	Fields: ubx.FieldMap{
-		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"RecommendationId": ubx.FieldSpec{WireName: "recommendation_id"},
+		"ResourceUri": ubx.FieldSpec{WireName: "resource_uri"},
 	},
 }

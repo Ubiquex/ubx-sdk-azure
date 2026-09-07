@@ -30,11 +30,11 @@ type NetworkmanagerNetworkGroup_SystemData struct {
 }
 
 var NetworkmanagerNetworkGroup_PropertiesFields = ubx.FieldMap{
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"MemberType":        ubx.FieldSpec{WireName: "member_type"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"MemberType": ubx.FieldSpec{WireName: "member_type"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	}
 
 type NetworkmanagerNetworkGroupConfig struct {
 	// Properties of network group
@@ -61,8 +61,8 @@ var NetworkmanagerNetworkGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NetworkmanagerNetworkGroup_PropertiesFields,
+			Kind: "object",
+			Fields: NetworkmanagerNetworkGroup_PropertiesFields,
 		},
 	},
 }

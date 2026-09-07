@@ -11,9 +11,9 @@ type BaseBackupPolicyResource_Properties struct {
 }
 
 var BaseBackupPolicyResource_PropertiesFields = ubx.FieldMap{
-	"DatasourceTypes": ubx.FieldSpec{WireName: "datasource_types"},
-	"ObjectType":      ubx.FieldSpec{WireName: "object_type"},
-}
+		"DatasourceTypes": ubx.FieldSpec{WireName: "datasource_types"},
+		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
+	}
 
 type BaseBackupPolicyResourceConfig struct {
 	// BackupPolicy base
@@ -30,8 +30,8 @@ var BaseBackupPolicyResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   BaseBackupPolicyResource_PropertiesFields,
+			Kind: "object",
+			Fields: BaseBackupPolicyResource_PropertiesFields,
 		},
 	},
 }

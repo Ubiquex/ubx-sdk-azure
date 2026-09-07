@@ -3,35 +3,62 @@ package healthcareapis
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HealthcareApisPrivateEndpointConnectionDescription_Value_SystemData struct {
-	CreatedAt          any
-	CreatedBy          any
-	CreatedByType      any
-	LastModifiedAt     any
-	LastModifiedBy     any
-	LastModifiedByType any
+type HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateEndpoint struct {
+	// The ARM identifier for Private Endpoint
+	Id any
 }
 
-type HealthcareApisPrivateEndpointConnectionDescription_Value struct {
-	SystemData any
+type HealthcareApisPrivateEndpointConnectionDescription_Properties_PrivateLinkServiceConnectionState struct {
+	// A message indicating if changes on the service provider require any updates on the consumer.
+	ActionsRequired any
+	// The reason for approval/rejection of the connection.
+	Description any
+	// The private endpoint connection status.
+	Status any
+}
+
+type HealthcareApisPrivateEndpointConnectionDescription_Properties struct {
+	// The Private Endpoint resource.
+	PrivateEndpoint any
+	// A collection of information about the state of the connection between service consumer and provider.
+	PrivateLinkServiceConnectionState any
+	// The current provisioning state.
+	ProvisioningState any
+}
+
+type HealthcareApisPrivateEndpointConnectionDescription_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type HealthcareApisPrivateEndpointConnectionDescriptionConfig struct {
 	ResourceGroupName any
-	ResourceName      any
+	WorkspaceName any
 }
 
 type HealthcareApisPrivateEndpointConnectionDescriptionAttrs struct {
+	// Properties of the PrivateEndpointConnectProperties.
+	Properties any
 	ResourceGroupName any
-	ResourceName      any
-	// Array of private endpoint connections
-	Value any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	WorkspaceName any
 }
 
 var HealthcareApisPrivateEndpointConnectionDescription = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_private_endpoint_connection_description",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

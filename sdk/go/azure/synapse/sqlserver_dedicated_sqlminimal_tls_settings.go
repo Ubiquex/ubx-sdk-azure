@@ -9,8 +9,8 @@ type SqlserverDedicatedSqlminimalTlsSettings_Properties struct {
 }
 
 var SqlserverDedicatedSqlminimalTlsSettings_PropertiesFields = ubx.FieldMap{
-	"MinimalTlsVersion": ubx.FieldSpec{WireName: "minimal_tls_version"},
-}
+		"MinimalTlsVersion": ubx.FieldSpec{WireName: "minimal_tls_version"},
+	}
 
 type SqlserverDedicatedSqlminimalTlsSettingsConfig struct {
 	// Properties of a dedicated sql minimal tls settings.
@@ -29,8 +29,8 @@ var SqlserverDedicatedSqlminimalTlsSettings = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   SqlserverDedicatedSqlminimalTlsSettings_PropertiesFields,
+			Kind: "object",
+			Fields: SqlserverDedicatedSqlminimalTlsSettings_PropertiesFields,
 		},
 	},
 }

@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDumpConfig struct {
 	InstanceId any
-	Name       any
-	ProcessId  any
+	Name any
+	ProcessId any
 }
 
 type OpenapiDumpAttrs struct {
 	InstanceId any
-	Name       any
-	ProcessId  any
+	Name any
+	ProcessId any
 }
 
 var OpenapiDump = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_dump",
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Name":       ubx.FieldSpec{WireName: "name"},
-		"ProcessId":  ubx.FieldSpec{WireName: "process_id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"ProcessId": ubx.FieldSpec{WireName: "process_id"},
 	},
 }

@@ -4,15 +4,18 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .arm_disaster_recovery import ArmDisasterRecovery, ArmDisasterRecoveryConfig
-from .migration_config_properties import MigrationConfigProperties, MigrationConfigPropertiesConfig
+from .arm_disaster_recovery_list import ArmDisasterRecoveryList, ArmDisasterRecoveryListConfig
+from .migration_config_properties_list import MigrationConfigPropertiesList, MigrationConfigPropertiesListConfig
 from .network_rule_set import NetworkRuleSet, NetworkRuleSetConfig
+from .network_rule_set_list import NetworkRuleSetList, NetworkRuleSetListConfig
 from .network_security_perimeter_configuration import NetworkSecurityPerimeterConfiguration, NetworkSecurityPerimeterConfigurationConfig
-from .private_endpoint_connection import PrivateEndpointConnection, PrivateEndpointConnectionConfig
-from .private_link_resource import PrivateLinkResource, PrivateLinkResourceConfig
-from .rule import Rule, RuleConfig
+from .network_security_perimeter_configuration_list import NetworkSecurityPerimeterConfigurationList, NetworkSecurityPerimeterConfigurationListConfig
+from .private_endpoint_connection_list import PrivateEndpointConnectionList, PrivateEndpointConnectionListConfig
+from .private_link_resource_list import PrivateLinkResourceList, PrivateLinkResourceListConfig
+from .rule_list import RuleList, RuleListConfig
 from .sbauthorization_rule import SbauthorizationRule, SbauthorizationRuleConfig
-from .sbnamespace import Sbnamespace, SbnamespaceConfig
-from .sbqueue import Sbqueue, SbqueueConfig
-from .sbsubscription import Sbsubscription, SbsubscriptionConfig
-from .sbtopic import Sbtopic, SbtopicConfig
+from .sbauthorization_rule_list import SbauthorizationRuleList, SbauthorizationRuleListConfig
+from .sbnamespace_list import SbnamespaceList, SbnamespaceListConfig
+from .sbqueue_list import SbqueueList, SbqueueListConfig
+from .sbsubscription_list import SbsubscriptionList, SbsubscriptionListConfig
+from .sbtopic_list import SbtopicList, SbtopicListConfig

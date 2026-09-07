@@ -29,12 +29,12 @@ type PrivateLinkResource2_SystemData struct {
 
 type PrivateLinkResource2Config struct {
 	AccountName any
-	GroupId     any
+	GroupId any
 }
 
 type PrivateLinkResource2Attrs struct {
 	AccountName any
-	GroupId     any
+	GroupId any
 	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
 	Id any
 	// The name of the resource
@@ -51,6 +51,6 @@ var PrivateLinkResource2 = ubx.DataSourceBinding{
 	WireType: "azure_vi_private_link_resource_2",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"GroupId":     ubx.FieldSpec{WireName: "group_id"},
+		"GroupId": ubx.FieldSpec{WireName: "group_id"},
 	},
 }

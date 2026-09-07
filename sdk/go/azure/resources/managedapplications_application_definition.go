@@ -102,100 +102,100 @@ type ManagedapplicationsApplicationDefinition_Sku struct {
 }
 
 var ManagedapplicationsApplicationDefinition_Properties_ArtifactsFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-	"Uri":  ubx.FieldSpec{WireName: "uri"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"Uri": ubx.FieldSpec{WireName: "uri"},
+	}
 
 var ManagedapplicationsApplicationDefinition_Properties_AuthorizationsFields = ubx.FieldMap{
-	"PrincipalId":      ubx.FieldSpec{WireName: "principal_id"},
-	"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
+	}
 
 var ManagedapplicationsApplicationDefinition_Properties_DeploymentPolicyFields = ubx.FieldMap{
-	"DeploymentMode": ubx.FieldSpec{WireName: "deployment_mode"},
-}
+		"DeploymentMode": ubx.FieldSpec{WireName: "deployment_mode"},
+	}
 
 var ManagedapplicationsApplicationDefinition_Properties_LockingPolicyFields = ubx.FieldMap{
-	"AllowedActions":     ubx.FieldSpec{WireName: "allowed_actions"},
-	"AllowedDataActions": ubx.FieldSpec{WireName: "allowed_data_actions"},
-}
+		"AllowedActions": ubx.FieldSpec{WireName: "allowed_actions"},
+		"AllowedDataActions": ubx.FieldSpec{WireName: "allowed_data_actions"},
+	}
 
 var ManagedapplicationsApplicationDefinition_Properties_ManagementPolicyFields = ubx.FieldMap{
-	"Mode": ubx.FieldSpec{WireName: "mode"},
-}
+		"Mode": ubx.FieldSpec{WireName: "mode"},
+	}
 
 var ManagedapplicationsApplicationDefinition_Properties_NotificationPolicy_NotificationEndpointsFields = ubx.FieldMap{
-	"Uri": ubx.FieldSpec{WireName: "uri"},
-}
+		"Uri": ubx.FieldSpec{WireName: "uri"},
+	}
 
 var ManagedapplicationsApplicationDefinition_Properties_NotificationPolicyFields = ubx.FieldMap{
-	"NotificationEndpoints": ubx.FieldSpec{
-		WireName: "notification_endpoints",
-		Kind:     "list",
-		Fields:   ManagedapplicationsApplicationDefinition_Properties_NotificationPolicy_NotificationEndpointsFields,
-	},
-}
+		"NotificationEndpoints": ubx.FieldSpec{
+			WireName: "notification_endpoints",
+			Kind: "list",
+			Fields: ManagedapplicationsApplicationDefinition_Properties_NotificationPolicy_NotificationEndpointsFields,
+		},
+	}
 
 var ManagedapplicationsApplicationDefinition_Properties_PoliciesFields = ubx.FieldMap{
-	"Name":               ubx.FieldSpec{WireName: "name"},
-	"Parameters":         ubx.FieldSpec{WireName: "parameters"},
-	"PolicyDefinitionId": ubx.FieldSpec{WireName: "policy_definition_id"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Parameters": ubx.FieldSpec{WireName: "parameters"},
+		"PolicyDefinitionId": ubx.FieldSpec{WireName: "policy_definition_id"},
+	}
 
 var ManagedapplicationsApplicationDefinition_PropertiesFields = ubx.FieldMap{
-	"Artifacts": ubx.FieldSpec{
-		WireName: "artifacts",
-		Kind:     "list",
-		Fields:   ManagedapplicationsApplicationDefinition_Properties_ArtifactsFields,
-	},
-	"Authorizations": ubx.FieldSpec{
-		WireName: "authorizations",
-		Kind:     "list",
-		Fields:   ManagedapplicationsApplicationDefinition_Properties_AuthorizationsFields,
-	},
-	"CreateUiDefinition": ubx.FieldSpec{WireName: "create_ui_definition"},
-	"DeploymentPolicy": ubx.FieldSpec{
-		WireName: "deployment_policy",
-		Kind:     "object",
-		Fields:   ManagedapplicationsApplicationDefinition_Properties_DeploymentPolicyFields,
-	},
-	"Description": ubx.FieldSpec{WireName: "description"},
-	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	"IsEnabled":   ubx.FieldSpec{WireName: "is_enabled"},
-	"LockLevel":   ubx.FieldSpec{WireName: "lock_level"},
-	"LockingPolicy": ubx.FieldSpec{
-		WireName: "locking_policy",
-		Kind:     "object",
-		Fields:   ManagedapplicationsApplicationDefinition_Properties_LockingPolicyFields,
-	},
-	"MainTemplate": ubx.FieldSpec{WireName: "main_template"},
-	"ManagementPolicy": ubx.FieldSpec{
-		WireName: "management_policy",
-		Kind:     "object",
-		Fields:   ManagedapplicationsApplicationDefinition_Properties_ManagementPolicyFields,
-	},
-	"NotificationPolicy": ubx.FieldSpec{
-		WireName: "notification_policy",
-		Kind:     "object",
-		Fields:   ManagedapplicationsApplicationDefinition_Properties_NotificationPolicyFields,
-	},
-	"PackageFileUri": ubx.FieldSpec{WireName: "package_file_uri"},
-	"Policies": ubx.FieldSpec{
-		WireName: "policies",
-		Kind:     "list",
-		Fields:   ManagedapplicationsApplicationDefinition_Properties_PoliciesFields,
-	},
-}
+		"Artifacts": ubx.FieldSpec{
+			WireName: "artifacts",
+			Kind: "list",
+			Fields: ManagedapplicationsApplicationDefinition_Properties_ArtifactsFields,
+		},
+		"Authorizations": ubx.FieldSpec{
+			WireName: "authorizations",
+			Kind: "list",
+			Fields: ManagedapplicationsApplicationDefinition_Properties_AuthorizationsFields,
+		},
+		"CreateUiDefinition": ubx.FieldSpec{WireName: "create_ui_definition"},
+		"DeploymentPolicy": ubx.FieldSpec{
+			WireName: "deployment_policy",
+			Kind: "object",
+			Fields: ManagedapplicationsApplicationDefinition_Properties_DeploymentPolicyFields,
+		},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
+		"LockLevel": ubx.FieldSpec{WireName: "lock_level"},
+		"LockingPolicy": ubx.FieldSpec{
+			WireName: "locking_policy",
+			Kind: "object",
+			Fields: ManagedapplicationsApplicationDefinition_Properties_LockingPolicyFields,
+		},
+		"MainTemplate": ubx.FieldSpec{WireName: "main_template"},
+		"ManagementPolicy": ubx.FieldSpec{
+			WireName: "management_policy",
+			Kind: "object",
+			Fields: ManagedapplicationsApplicationDefinition_Properties_ManagementPolicyFields,
+		},
+		"NotificationPolicy": ubx.FieldSpec{
+			WireName: "notification_policy",
+			Kind: "object",
+			Fields: ManagedapplicationsApplicationDefinition_Properties_NotificationPolicyFields,
+		},
+		"PackageFileUri": ubx.FieldSpec{WireName: "package_file_uri"},
+		"Policies": ubx.FieldSpec{
+			WireName: "policies",
+			Kind: "list",
+			Fields: ManagedapplicationsApplicationDefinition_Properties_PoliciesFields,
+		},
+	}
 
 var ManagedapplicationsApplicationDefinition_SkuFields = ubx.FieldMap{
-	"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	"Family":   ubx.FieldSpec{WireName: "family"},
-	"Model":    ubx.FieldSpec{WireName: "model"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Size":     ubx.FieldSpec{WireName: "size"},
-	"Tier":     ubx.FieldSpec{WireName: "tier"},
-}
+		"Capacity": ubx.FieldSpec{WireName: "capacity"},
+		"Family": ubx.FieldSpec{WireName: "family"},
+		"Model": ubx.FieldSpec{WireName: "model"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Size": ubx.FieldSpec{WireName: "size"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 type ManagedapplicationsApplicationDefinitionConfig struct {
 	// ID of the resource that manages this resource.
@@ -221,13 +221,13 @@ var ManagedapplicationsApplicationDefinition = ubx.ResourceBinding{
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ManagedapplicationsApplicationDefinition_PropertiesFields,
+			Kind: "object",
+			Fields: ManagedapplicationsApplicationDefinition_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   ManagedapplicationsApplicationDefinition_SkuFields,
+			Kind: "object",
+			Fields: ManagedapplicationsApplicationDefinition_SkuFields,
 		},
 	},
 }

@@ -83,7 +83,7 @@ type DbOpenapiSqlContainerGetResults_Properties_Resource_FullTextPolicy struct {
 
 type DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_CompositeIndexes struct {
 	Order any
-	Path  any
+	Path any
 }
 
 type DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_ExcludedPaths struct {
@@ -235,245 +235,245 @@ type DbOpenapiSqlContainerGetResults_Properties struct {
 }
 
 var DbOpenapiSqlContainerGetResults_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var DbOpenapiSqlContainerGetResults_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   DbOpenapiSqlContainerGetResults_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: DbOpenapiSqlContainerGetResults_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-}
+		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_OptionsFields = ubx.FieldMap{
-	"AutoscaleSettings": ubx.FieldSpec{
-		WireName: "autoscale_settings",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Options_AutoscaleSettingsFields,
-	},
-	"Throughput": ubx.FieldSpec{WireName: "throughput"},
-}
+		"AutoscaleSettings": ubx.FieldSpec{
+			WireName: "autoscale_settings",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Options_AutoscaleSettingsFields,
+		},
+		"Throughput": ubx.FieldSpec{WireName: "throughput"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_ClientEncryptionPolicy_IncludedPathsFields = ubx.FieldMap{
-	"ClientEncryptionKeyId": ubx.FieldSpec{WireName: "client_encryption_key_id"},
-	"EncryptionAlgorithm":   ubx.FieldSpec{WireName: "encryption_algorithm"},
-	"EncryptionType":        ubx.FieldSpec{WireName: "encryption_type"},
-	"Path":                  ubx.FieldSpec{WireName: "path"},
-}
+		"ClientEncryptionKeyId": ubx.FieldSpec{WireName: "client_encryption_key_id"},
+		"EncryptionAlgorithm": ubx.FieldSpec{WireName: "encryption_algorithm"},
+		"EncryptionType": ubx.FieldSpec{WireName: "encryption_type"},
+		"Path": ubx.FieldSpec{WireName: "path"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_ClientEncryptionPolicyFields = ubx.FieldMap{
-	"IncludedPaths": ubx.FieldSpec{
-		WireName: "included_paths",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_ClientEncryptionPolicy_IncludedPathsFields,
-	},
-	"PolicyFormatVersion": ubx.FieldSpec{WireName: "policy_format_version"},
-}
+		"IncludedPaths": ubx.FieldSpec{
+			WireName: "included_paths",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_ClientEncryptionPolicy_IncludedPathsFields,
+		},
+		"PolicyFormatVersion": ubx.FieldSpec{WireName: "policy_format_version"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_ComputedPropertiesFields = ubx.FieldMap{
-	"Name":  ubx.FieldSpec{WireName: "name"},
-	"Query": ubx.FieldSpec{WireName: "query"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Query": ubx.FieldSpec{WireName: "query"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_ConflictResolutionPolicyFields = ubx.FieldMap{
-	"ConflictResolutionPath":      ubx.FieldSpec{WireName: "conflict_resolution_path"},
-	"ConflictResolutionProcedure": ubx.FieldSpec{WireName: "conflict_resolution_procedure"},
-	"Mode":                        ubx.FieldSpec{WireName: "mode"},
-}
+		"ConflictResolutionPath": ubx.FieldSpec{WireName: "conflict_resolution_path"},
+		"ConflictResolutionProcedure": ubx.FieldSpec{WireName: "conflict_resolution_procedure"},
+		"Mode": ubx.FieldSpec{WireName: "mode"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_FullTextPolicy_FullTextPathsFields = ubx.FieldMap{
-	"Language": ubx.FieldSpec{WireName: "language"},
-	"Path":     ubx.FieldSpec{WireName: "path"},
-}
+		"Language": ubx.FieldSpec{WireName: "language"},
+		"Path": ubx.FieldSpec{WireName: "path"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_FullTextPolicyFields = ubx.FieldMap{
-	"DefaultLanguage": ubx.FieldSpec{WireName: "default_language"},
-	"FullTextPaths": ubx.FieldSpec{
-		WireName: "full_text_paths",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_FullTextPolicy_FullTextPathsFields,
-	},
-}
+		"DefaultLanguage": ubx.FieldSpec{WireName: "default_language"},
+		"FullTextPaths": ubx.FieldSpec{
+			WireName: "full_text_paths",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_FullTextPolicy_FullTextPathsFields,
+		},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields = ubx.FieldMap{
-	"Path": ubx.FieldSpec{WireName: "path"},
-}
+		"Path": ubx.FieldSpec{WireName: "path"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_IndexesFields = ubx.FieldMap{
-	"DataType":  ubx.FieldSpec{WireName: "data_type"},
-	"Kind":      ubx.FieldSpec{WireName: "kind"},
-	"Precision": ubx.FieldSpec{WireName: "precision"},
-}
+		"DataType": ubx.FieldSpec{WireName: "data_type"},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Precision": ubx.FieldSpec{WireName: "precision"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPathsFields = ubx.FieldMap{
-	"Indexes": ubx.FieldSpec{
-		WireName: "indexes",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_IndexesFields,
-	},
-	"Path": ubx.FieldSpec{WireName: "path"},
-}
+		"Indexes": ubx.FieldSpec{
+			WireName: "indexes",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPaths_IndexesFields,
+		},
+		"Path": ubx.FieldSpec{WireName: "path"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_SpatialIndexesFields = ubx.FieldMap{
-	"Path":  ubx.FieldSpec{WireName: "path"},
-	"Types": ubx.FieldSpec{WireName: "types"},
-}
+		"Path": ubx.FieldSpec{WireName: "path"},
+		"Types": ubx.FieldSpec{WireName: "types"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_VectorIndexesFields = ubx.FieldMap{
-	"IndexingSearchListSize": ubx.FieldSpec{WireName: "indexing_search_list_size"},
-	"Path":                   ubx.FieldSpec{WireName: "path"},
-	"QuantizationByteSize":   ubx.FieldSpec{WireName: "quantization_byte_size"},
-	"Type":                   ubx.FieldSpec{WireName: "type"},
-	"VectorIndexShardKey":    ubx.FieldSpec{WireName: "vector_index_shard_key"},
-}
+		"IndexingSearchListSize": ubx.FieldSpec{WireName: "indexing_search_list_size"},
+		"Path": ubx.FieldSpec{WireName: "path"},
+		"QuantizationByteSize": ubx.FieldSpec{WireName: "quantization_byte_size"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"VectorIndexShardKey": ubx.FieldSpec{WireName: "vector_index_shard_key"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicyFields = ubx.FieldMap{
-	"Automatic":        ubx.FieldSpec{WireName: "automatic"},
-	"CompositeIndexes": ubx.FieldSpec{WireName: "composite_indexes"},
-	"ExcludedPaths": ubx.FieldSpec{
-		WireName: "excluded_paths",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields,
-	},
-	"FullTextIndexes": ubx.FieldSpec{
-		WireName: "full_text_indexes",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields,
-	},
-	"IncludedPaths": ubx.FieldSpec{
-		WireName: "included_paths",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPathsFields,
-	},
-	"IndexingMode": ubx.FieldSpec{WireName: "indexing_mode"},
-	"SpatialIndexes": ubx.FieldSpec{
-		WireName: "spatial_indexes",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_SpatialIndexesFields,
-	},
-	"VectorIndexes": ubx.FieldSpec{
-		WireName: "vector_indexes",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_VectorIndexesFields,
-	},
-}
+		"Automatic": ubx.FieldSpec{WireName: "automatic"},
+		"CompositeIndexes": ubx.FieldSpec{WireName: "composite_indexes"},
+		"ExcludedPaths": ubx.FieldSpec{
+			WireName: "excluded_paths",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields,
+		},
+		"FullTextIndexes": ubx.FieldSpec{
+			WireName: "full_text_indexes",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_ExcludedPathsFields,
+		},
+		"IncludedPaths": ubx.FieldSpec{
+			WireName: "included_paths",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_IncludedPathsFields,
+		},
+		"IndexingMode": ubx.FieldSpec{WireName: "indexing_mode"},
+		"SpatialIndexes": ubx.FieldSpec{
+			WireName: "spatial_indexes",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_SpatialIndexesFields,
+		},
+		"VectorIndexes": ubx.FieldSpec{
+			WireName: "vector_indexes",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicy_VectorIndexesFields,
+		},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_PartitionKeyFields = ubx.FieldMap{
-	"Kind":      ubx.FieldSpec{WireName: "kind"},
-	"Paths":     ubx.FieldSpec{WireName: "paths"},
-	"SystemKey": ubx.FieldSpec{WireName: "system_key"},
-	"Version":   ubx.FieldSpec{WireName: "version"},
-}
+		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Paths": ubx.FieldSpec{WireName: "paths"},
+		"SystemKey": ubx.FieldSpec{WireName: "system_key"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_RestoreParametersFields = ubx.FieldMap{
-	"RestoreSource":          ubx.FieldSpec{WireName: "restore_source"},
-	"RestoreTimestampInUtc":  ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
-	"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
-}
+		"RestoreSource": ubx.FieldSpec{WireName: "restore_source"},
+		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
+		"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeysFields = ubx.FieldMap{
-	"Paths": ubx.FieldSpec{WireName: "paths"},
-}
+		"Paths": ubx.FieldSpec{WireName: "paths"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_UniqueKeyPolicyFields = ubx.FieldMap{
-	"UniqueKeys": ubx.FieldSpec{
-		WireName: "unique_keys",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeysFields,
-	},
-}
+		"UniqueKeys": ubx.FieldSpec{
+			WireName: "unique_keys",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_UniqueKeyPolicy_UniqueKeysFields,
+		},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicy_VectorEmbeddingsFields = ubx.FieldMap{
-	"DataType":         ubx.FieldSpec{WireName: "data_type"},
-	"Dimensions":       ubx.FieldSpec{WireName: "dimensions"},
-	"DistanceFunction": ubx.FieldSpec{WireName: "distance_function"},
-	"Path":             ubx.FieldSpec{WireName: "path"},
-}
+		"DataType": ubx.FieldSpec{WireName: "data_type"},
+		"Dimensions": ubx.FieldSpec{WireName: "dimensions"},
+		"DistanceFunction": ubx.FieldSpec{WireName: "distance_function"},
+		"Path": ubx.FieldSpec{WireName: "path"},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicyFields = ubx.FieldMap{
-	"VectorEmbeddings": ubx.FieldSpec{
-		WireName: "vector_embeddings",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicy_VectorEmbeddingsFields,
-	},
-}
+		"VectorEmbeddings": ubx.FieldSpec{
+			WireName: "vector_embeddings",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicy_VectorEmbeddingsFields,
+		},
+	}
 
 var DbOpenapiSqlContainerGetResults_Properties_ResourceFields = ubx.FieldMap{
-	"Etag":                 ubx.FieldSpec{WireName: "_etag"},
-	"Rid":                  ubx.FieldSpec{WireName: "_rid"},
-	"Ts":                   ubx.FieldSpec{WireName: "_ts"},
-	"AnalyticalStorageTtl": ubx.FieldSpec{WireName: "analytical_storage_ttl"},
-	"ClientEncryptionPolicy": ubx.FieldSpec{
-		WireName: "client_encryption_policy",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_ClientEncryptionPolicyFields,
-	},
-	"ComputedProperties": ubx.FieldSpec{
-		WireName: "computed_properties",
-		Kind:     "list",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_ComputedPropertiesFields,
-	},
-	"ConflictResolutionPolicy": ubx.FieldSpec{
-		WireName: "conflict_resolution_policy",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_ConflictResolutionPolicyFields,
-	},
-	"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-	"DefaultTtl": ubx.FieldSpec{WireName: "default_ttl"},
-	"FullTextPolicy": ubx.FieldSpec{
-		WireName: "full_text_policy",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_FullTextPolicyFields,
-	},
-	"Id": ubx.FieldSpec{WireName: "id"},
-	"IndexingPolicy": ubx.FieldSpec{
-		WireName: "indexing_policy",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicyFields,
-	},
-	"PartitionKey": ubx.FieldSpec{
-		WireName: "partition_key",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_PartitionKeyFields,
-	},
-	"RestoreParameters": ubx.FieldSpec{
-		WireName: "restore_parameters",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_RestoreParametersFields,
-	},
-	"UniqueKeyPolicy": ubx.FieldSpec{
-		WireName: "unique_key_policy",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_UniqueKeyPolicyFields,
-	},
-	"VectorEmbeddingPolicy": ubx.FieldSpec{
-		WireName: "vector_embedding_policy",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicyFields,
-	},
-}
+		"Etag": ubx.FieldSpec{WireName: "_etag"},
+		"Rid": ubx.FieldSpec{WireName: "_rid"},
+		"Ts": ubx.FieldSpec{WireName: "_ts"},
+		"AnalyticalStorageTtl": ubx.FieldSpec{WireName: "analytical_storage_ttl"},
+		"ClientEncryptionPolicy": ubx.FieldSpec{
+			WireName: "client_encryption_policy",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_ClientEncryptionPolicyFields,
+		},
+		"ComputedProperties": ubx.FieldSpec{
+			WireName: "computed_properties",
+			Kind: "list",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_ComputedPropertiesFields,
+		},
+		"ConflictResolutionPolicy": ubx.FieldSpec{
+			WireName: "conflict_resolution_policy",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_ConflictResolutionPolicyFields,
+		},
+		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
+		"DefaultTtl": ubx.FieldSpec{WireName: "default_ttl"},
+		"FullTextPolicy": ubx.FieldSpec{
+			WireName: "full_text_policy",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_FullTextPolicyFields,
+		},
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"IndexingPolicy": ubx.FieldSpec{
+			WireName: "indexing_policy",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_IndexingPolicyFields,
+		},
+		"PartitionKey": ubx.FieldSpec{
+			WireName: "partition_key",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_PartitionKeyFields,
+		},
+		"RestoreParameters": ubx.FieldSpec{
+			WireName: "restore_parameters",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_RestoreParametersFields,
+		},
+		"UniqueKeyPolicy": ubx.FieldSpec{
+			WireName: "unique_key_policy",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_UniqueKeyPolicyFields,
+		},
+		"VectorEmbeddingPolicy": ubx.FieldSpec{
+			WireName: "vector_embedding_policy",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_Resource_VectorEmbeddingPolicyFields,
+		},
+	}
 
 var DbOpenapiSqlContainerGetResults_PropertiesFields = ubx.FieldMap{
-	"Options": ubx.FieldSpec{
-		WireName: "options",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_OptionsFields,
-	},
-	"Resource": ubx.FieldSpec{
-		WireName: "resource",
-		Kind:     "object",
-		Fields:   DbOpenapiSqlContainerGetResults_Properties_ResourceFields,
-	},
-}
+		"Options": ubx.FieldSpec{
+			WireName: "options",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_OptionsFields,
+		},
+		"Resource": ubx.FieldSpec{
+			WireName: "resource",
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_Properties_ResourceFields,
+		},
+	}
 
 type DbOpenapiSqlContainerGetResultsConfig struct {
 	// Identity for the resource.
@@ -508,14 +508,14 @@ var DbOpenapiSqlContainerGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   DbOpenapiSqlContainerGetResults_IdentityFields,
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   DbOpenapiSqlContainerGetResults_PropertiesFields,
+			Kind: "object",
+			Fields: DbOpenapiSqlContainerGetResults_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

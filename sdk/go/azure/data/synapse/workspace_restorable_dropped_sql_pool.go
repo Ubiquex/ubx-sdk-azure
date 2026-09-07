@@ -3,31 +3,40 @@ package synapse
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkspaceRestorableDroppedSqlPool_Value_Properties struct {
-	CreationDate          any
-	DatabaseName          any
-	DeletionDate          any
-	EarliestRestoreDate   any
-	Edition               any
-	ElasticPoolName       any
-	MaxSizeBytes          any
+type WorkspaceRestorableDroppedSqlPool_Properties struct {
+	// The creation date of the database (ISO8601 format)
+	CreationDate any
+	// The name of the database
+	DatabaseName any
+	// The deletion date of the database (ISO8601 format)
+	DeletionDate any
+	// The earliest restore date of the database (ISO8601 format)
+	EarliestRestoreDate any
+	// The edition of the database
+	Edition any
+	// The elastic pool name of the database
+	ElasticPoolName any
+	// The max size in bytes of the database
+	MaxSizeBytes any
+	// The service level objective name of the database
 	ServiceLevelObjective any
 }
 
-type WorkspaceRestorableDroppedSqlPool_Value struct {
-	Location   any
-	Properties any
-}
-
 type WorkspaceRestorableDroppedSqlPoolConfig struct {
+	RestorableDroppedSqlPoolId any
 }
 
 type WorkspaceRestorableDroppedSqlPoolAttrs struct {
-	// A list of restorable dropped Sql pools
-	Value any
+	// The geo-location where the resource lives
+	Location any
+	// The properties of a restorable dropped Sql pool
+	Properties any
+	RestorableDroppedSqlPoolId any
 }
 
 var WorkspaceRestorableDroppedSqlPool = ubx.DataSourceBinding{
 	WireType: "azure_synapse_workspace_restorable_dropped_sql_pool",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"RestorableDroppedSqlPoolId": ubx.FieldSpec{WireName: "restorable_dropped_sql_pool_id"},
+	},
 }

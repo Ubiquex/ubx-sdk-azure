@@ -3,46 +3,49 @@ package azurestackhci
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type HciSku_Value_Properties_SkuMappings struct {
-	CatalogPlanId          any
-	MarketplaceSkuId       any
+type HciSku_Properties_SkuMappings struct {
+	CatalogPlanId any
+	MarketplaceSkuId any
 	MarketplaceSkuVersions any
 }
 
-type HciSku_Value_Properties struct {
-	Content           any
-	ContentVersion    any
-	OfferId           any
+type HciSku_Properties struct {
+	// JSON serialized catalog content of the sku offer
+	Content any
+	// The API version of the catalog service used to serve the catalog content
+	ContentVersion any
+	// Identifier of the Offer for the sku
+	OfferId any
+	// Provisioning State
 	ProvisioningState any
-	PublisherId       any
-	SkuMappings       any
-}
-
-type HciSku_Value struct {
-	Properties any
+	// Identifier of the Publisher for the offer
+	PublisherId any
+	// Array of SKU mappings
+	SkuMappings any
 }
 
 type HciSkuConfig struct {
-	ClusterName   any
-	OfferName     any
+	ClusterName any
+	OfferName any
 	PublisherName any
+	SkuName any
 }
 
 type HciSkuAttrs struct {
 	ClusterName any
-	// The link to the next page of items
-	NextLink      any
-	OfferName     any
+	OfferName any
+	// SKU properties.
+	Properties any
 	PublisherName any
-	// The Sku items on this page
-	Value any
+	SkuName any
 }
 
 var HciSku = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_sku",
 	Fields: ubx.FieldMap{
-		"ClusterName":   ubx.FieldSpec{WireName: "cluster_name"},
-		"OfferName":     ubx.FieldSpec{WireName: "offer_name"},
+		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"OfferName": ubx.FieldSpec{WireName: "offer_name"},
 		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
+		"SkuName": ubx.FieldSpec{WireName: "sku_name"},
 	},
 }

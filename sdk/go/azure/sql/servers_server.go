@@ -108,92 +108,92 @@ type ServersServer_Properties struct {
 }
 
 var ServersServer_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var ServersServer_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   ServersServer_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: ServersServer_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var ServersServer_Properties_AdministratorsFields = ubx.FieldMap{
-	"AdministratorType":         ubx.FieldSpec{WireName: "administrator_type"},
-	"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
-	"Login":                     ubx.FieldSpec{WireName: "login"},
-	"PrincipalType":             ubx.FieldSpec{WireName: "principal_type"},
-	"Sid":                       ubx.FieldSpec{WireName: "sid"},
-	"TenantId":                  ubx.FieldSpec{WireName: "tenant_id"},
-}
+		"AdministratorType": ubx.FieldSpec{WireName: "administrator_type"},
+		"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
+		"Login": ubx.FieldSpec{WireName: "login"},
+		"PrincipalType": ubx.FieldSpec{WireName: "principal_type"},
+		"Sid": ubx.FieldSpec{WireName: "sid"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+	}
 
 var ServersServer_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var ServersServer_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-	"Description":     ubx.FieldSpec{WireName: "description"},
-	"Status":          ubx.FieldSpec{WireName: "status"},
-}
+		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+	}
 
 var ServersServer_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-	"PrivateEndpoint": ubx.FieldSpec{
-		WireName: "private_endpoint",
-		Kind:     "object",
-		Fields:   ServersServer_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-	},
-	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-		WireName: "private_link_service_connection_state",
-		Kind:     "object",
-		Fields:   ServersServer_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+		"PrivateEndpoint": ubx.FieldSpec{
+			WireName: "private_endpoint",
+			Kind: "object",
+			Fields: ServersServer_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+		},
+		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+			WireName: "private_link_service_connection_state",
+			Kind: "object",
+			Fields: ServersServer_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 var ServersServer_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   ServersServer_Properties_PrivateEndpointConnections_PropertiesFields,
-	},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: ServersServer_Properties_PrivateEndpointConnections_PropertiesFields,
+		},
+	}
 
 var ServersServer_PropertiesFields = ubx.FieldMap{
-	"AdministratorLogin":         ubx.FieldSpec{WireName: "administrator_login"},
-	"AdministratorLoginPassword": ubx.FieldSpec{WireName: "administrator_login_password"},
-	"Administrators": ubx.FieldSpec{
-		WireName: "administrators",
-		Kind:     "object",
-		Fields:   ServersServer_Properties_AdministratorsFields,
-	},
-	"CreateMode":                    ubx.FieldSpec{WireName: "create_mode"},
-	"ExternalGovernanceStatus":      ubx.FieldSpec{WireName: "external_governance_status"},
-	"FederatedClientId":             ubx.FieldSpec{WireName: "federated_client_id"},
-	"FullyQualifiedDomainName":      ubx.FieldSpec{WireName: "fully_qualified_domain_name"},
-	"IsIpv6Enabled":                 ubx.FieldSpec{WireName: "is_ipv6_enabled"},
-	"KeyId":                         ubx.FieldSpec{WireName: "key_id"},
-	"MinimalTlsVersion":             ubx.FieldSpec{WireName: "minimal_tls_version"},
-	"PrimaryUserAssignedIdentityId": ubx.FieldSpec{WireName: "primary_user_assigned_identity_id"},
-	"PrivateEndpointConnections": ubx.FieldSpec{
-		WireName: "private_endpoint_connections",
-		Kind:     "list",
-		Fields:   ServersServer_Properties_PrivateEndpointConnectionsFields,
-	},
-	"PublicNetworkAccess":           ubx.FieldSpec{WireName: "public_network_access"},
-	"RestrictOutboundNetworkAccess": ubx.FieldSpec{WireName: "restrict_outbound_network_access"},
-	"RetentionDays":                 ubx.FieldSpec{WireName: "retention_days"},
-	"State":                         ubx.FieldSpec{WireName: "state"},
-	"Version":                       ubx.FieldSpec{WireName: "version"},
-	"WorkspaceFeature":              ubx.FieldSpec{WireName: "workspace_feature"},
-}
+		"AdministratorLogin": ubx.FieldSpec{WireName: "administrator_login"},
+		"AdministratorLoginPassword": ubx.FieldSpec{WireName: "administrator_login_password"},
+		"Administrators": ubx.FieldSpec{
+			WireName: "administrators",
+			Kind: "object",
+			Fields: ServersServer_Properties_AdministratorsFields,
+		},
+		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
+		"ExternalGovernanceStatus": ubx.FieldSpec{WireName: "external_governance_status"},
+		"FederatedClientId": ubx.FieldSpec{WireName: "federated_client_id"},
+		"FullyQualifiedDomainName": ubx.FieldSpec{WireName: "fully_qualified_domain_name"},
+		"IsIpv6Enabled": ubx.FieldSpec{WireName: "is_ipv6_enabled"},
+		"KeyId": ubx.FieldSpec{WireName: "key_id"},
+		"MinimalTlsVersion": ubx.FieldSpec{WireName: "minimal_tls_version"},
+		"PrimaryUserAssignedIdentityId": ubx.FieldSpec{WireName: "primary_user_assigned_identity_id"},
+		"PrivateEndpointConnections": ubx.FieldSpec{
+			WireName: "private_endpoint_connections",
+			Kind: "list",
+			Fields: ServersServer_Properties_PrivateEndpointConnectionsFields,
+		},
+		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+		"RestrictOutboundNetworkAccess": ubx.FieldSpec{WireName: "restrict_outbound_network_access"},
+		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
+		"State": ubx.FieldSpec{WireName: "state"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+		"WorkspaceFeature": ubx.FieldSpec{WireName: "workspace_feature"},
+	}
 
 type ServersServerConfig struct {
 	// Azure Active Directory identity configuration for a resource.
@@ -224,14 +224,14 @@ var ServersServer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   ServersServer_IdentityFields,
+			Kind: "object",
+			Fields: ServersServer_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ServersServer_PropertiesFields,
+			Kind: "object",
+			Fields: ServersServer_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

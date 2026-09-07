@@ -9,8 +9,8 @@ type AuthorizationRule_Properties struct {
 }
 
 var AuthorizationRule_PropertiesFields = ubx.FieldMap{
-	"Rights": ubx.FieldSpec{WireName: "rights"},
-}
+		"Rights": ubx.FieldSpec{WireName: "rights"},
+	}
 
 type AuthorizationRuleConfig struct {
 	// Properties supplied to create or update AuthorizationRule
@@ -29,8 +29,8 @@ var AuthorizationRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   AuthorizationRule_PropertiesFields,
+			Kind: "object",
+			Fields: AuthorizationRule_PropertiesFields,
 		},
 	},
 }

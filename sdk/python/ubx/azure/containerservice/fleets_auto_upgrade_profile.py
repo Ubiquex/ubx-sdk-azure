@@ -73,7 +73,7 @@ class FleetsAutoUpgradeProfile_Properties:
     node_image_selection: Any = None
     # The provisioning state of the AutoUpgradeProfile resource.
     provisioning_state: Any = None
-    # This is the target Kubernetes version for auto-upgrade. The format must be `{major version}.{minor version}`. For example, "1.30". By default, this is empty. If upgrade channel is set to TargetKubernetesVersion, this field must not be empty. If upgrade channel is Rapid, Stable or NodeImage, this field must be empty.
+    # This is the target Kubernetes version for auto-upgrade. The format must be `{major version}.{minor version}`. For example, "1.30". By default, this is empty. If upgrade channel is set to TargetKubernetesVersion, this field must not be empty. If upgrade channel is not TargetKubernetesVersion, this field must be empty.
     target_kubernetes_version: Any = None
     # A type definition that refers the id to an Azure Resource Manager resource.
     update_strategy_id: Any = None

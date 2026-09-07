@@ -19,13 +19,13 @@ type VirtualnetworkIpamPool_Properties struct {
 }
 
 var VirtualnetworkIpamPool_PropertiesFields = ubx.FieldMap{
-	"AddressPrefixes":   ubx.FieldSpec{WireName: "address_prefixes"},
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
-	"IpAddressType":     ubx.FieldSpec{WireName: "ip_address_type"},
-	"ParentPoolName":    ubx.FieldSpec{WireName: "parent_pool_name"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"IpAddressType": ubx.FieldSpec{WireName: "ip_address_type"},
+		"ParentPoolName": ubx.FieldSpec{WireName: "parent_pool_name"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type VirtualnetworkIpamPoolConfig struct {
 	// The geo-location where the resource lives
@@ -53,8 +53,8 @@ var VirtualnetworkIpamPool = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkIpamPool_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkIpamPool_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

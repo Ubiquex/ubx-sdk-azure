@@ -3,60 +3,66 @@ package machinelearningservices
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiEnvironmentVersion_Value_Properties_Build struct {
-	ContextUri     any
+type OpenapiEnvironmentVersion_Properties_Build struct {
+	// [Required] URI of the Docker build context used to build the image. Supports blob URIs on environment creation and may return blob or Git URIs. <seealso href="https://docs.docker.com/engine/reference/commandline/build/#extended-description" />
+	ContextUri any
+	// Path to the Dockerfile in the build context. <seealso href="https://docs.docker.com/engine/reference/builder/" />
 	DockerfilePath any
 }
 
-type OpenapiEnvironmentVersion_Value_Properties_InferenceConfig_LivenessRoute struct {
+type OpenapiEnvironmentVersion_Properties_InferenceConfig_LivenessRoute struct {
+	// [Required] The path for the route.
 	Path any
+	// [Required] The port for the route.
 	Port any
 }
 
-type OpenapiEnvironmentVersion_Value_Properties_InferenceConfig struct {
-	LivenessRoute  any
+type OpenapiEnvironmentVersion_Properties_InferenceConfig struct {
+	LivenessRoute any
 	ReadinessRoute any
-	ScoringRoute   any
-	StartupRoute   any
+	ScoringRoute any
+	StartupRoute any
 }
 
-type OpenapiEnvironmentVersion_Value_Properties struct {
-	AutoRebuild       any
-	Build             any
-	CondaFile         any
-	EnvironmentType   any
-	Image             any
-	InferenceConfig   any
-	OsType            any
+type OpenapiEnvironmentVersion_Properties struct {
+	// AutoRebuild setting for the derived image
+	AutoRebuild any
+	// Configuration settings for Docker build context
+	Build any
+	// Standard configuration file used by Conda that lets you install any kind of package, including Python, R, and C/C++ packages. <see href="https://repo2docker.readthedocs.io/en/latest/config_files.html#environment-yml-install-a-conda-environment" />
+	CondaFile any
+	// Environment type is either user created or curated by Azure ML service
+	EnvironmentType any
+	// Name of the image that will be used for the environment. <seealso href="https://docs.microsoft.com/en-us/azure/machine-learning/how-to-deploy-custom-docker-image#use-a-custom-base-image" />
+	Image any
+	InferenceConfig any
+	// The type of operating system.
+	OsType any
+	// Provisioning state of registry asset.
 	ProvisioningState any
-	Stage             any
-}
-
-type OpenapiEnvironmentVersion_Value struct {
-	Properties any
+	// Stage in the environment lifecycle assigned to this environment
+	Stage any
 }
 
 type OpenapiEnvironmentVersionConfig struct {
-	EnvironmentName any
-	ListViewType    any
-	RegistryName    any
+	Name any
+	Version any
+	WorkspaceName any
 }
 
 type OpenapiEnvironmentVersionAttrs struct {
-	EnvironmentName any
-	ListViewType    any
-	// The link to the next page of items
-	NextLink     any
-	RegistryName any
-	// The EnvironmentVersion items on this page
-	Value any
+	Name any
+	// Environment version details.
+	Properties any
+	Version any
+	WorkspaceName any
 }
 
 var OpenapiEnvironmentVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_environment_version",
 	Fields: ubx.FieldMap{
-		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
-		"ListViewType":    ubx.FieldSpec{WireName: "list_view_type"},
-		"RegistryName":    ubx.FieldSpec{WireName: "registry_name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

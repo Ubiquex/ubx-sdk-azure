@@ -3,43 +3,46 @@ package purview
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type PrivateLinkResource_Value_Properties struct {
-	GroupId           any
-	RequiredMembers   any
+type PrivateLinkResource_Properties struct {
+	// The private link resource group identifier.
+	GroupId any
+	// This translates to how many Private IPs should be created for each privately linkable resource.
+	RequiredMembers any
+	// The required zone names for private link resource.
 	RequiredZoneNames any
 }
 
-type PrivateLinkResource_Value struct {
-	Id         any
-	Name       any
-	Properties any
-	Type       any
-}
-
 type PrivateLinkResourceConfig struct {
-	AccountName       any
-	ApiVersion        any
+	AccountName any
+	ApiVersion any
+	GroupId any
 	ResourceGroupName any
-	SubscriptionId    any
+	SubscriptionId any
 }
 
 type PrivateLinkResourceAttrs struct {
 	AccountName any
-	ApiVersion  any
-	// The Url of next result page.
-	NextLink          any
+	ApiVersion any
+	GroupId any
+	// The private link resource identifier.
+	Id any
+	// The private link resource name.
+	Name any
+	// A privately linkable resource properties.
+	Properties any
 	ResourceGroupName any
-	SubscriptionId    any
-	// Collection of items of type results.
-	Value any
+	SubscriptionId any
+	// The private link resource type.
+	Type any
 }
 
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_purview_private_link_resource",
 	Fields: ubx.FieldMap{
-		"AccountName":       ubx.FieldSpec{WireName: "account_name"},
-		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"GroupId": ubx.FieldSpec{WireName: "group_id"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

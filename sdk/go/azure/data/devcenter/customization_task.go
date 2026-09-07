@@ -3,33 +3,31 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type CustomizationTask_Value_Properties_Inputs struct {
+type CustomizationTask_Properties_Inputs struct {
 	Description any
-	Required    any
-	Type        any
+	Required any
+	Type any
 }
 
-type CustomizationTask_Value_Properties struct {
-	Inputs           any
-	Timeout          any
+type CustomizationTask_Properties struct {
+	// Inputs to the task.
+	Inputs any
+	// The default timeout for the task.
+	Timeout any
+	// Catalog resource validation status
 	ValidationStatus any
-}
-
-type CustomizationTask_Value struct {
-	Properties any
 }
 
 type CustomizationTaskConfig struct {
 }
 
 type CustomizationTaskAttrs struct {
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	// Properties of a Task.
+	Properties any
 }
 
 var CustomizationTask = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_customization_task",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

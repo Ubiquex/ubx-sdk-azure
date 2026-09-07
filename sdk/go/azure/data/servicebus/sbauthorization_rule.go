@@ -3,30 +3,32 @@ package servicebus
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SbauthorizationRule_Value_Properties struct {
+type SbauthorizationRule_Properties struct {
+	// The rights associated with the rule.
 	Rights any
 }
 
-type SbauthorizationRule_Value struct {
-	Location   any
-	Properties any
-}
-
 type SbauthorizationRuleConfig struct {
+	Alias any
+	AuthorizationRuleName any
 	NamespaceName any
 }
 
 type SbauthorizationRuleAttrs struct {
+	Alias any
+	AuthorizationRuleName any
+	// The geo-location where the resource lives
+	Location any
 	NamespaceName any
-	// The link to the next page of items
-	NextLink any
-	// The SBAuthorizationRule items on this page
-	Value any
+	// AuthorizationRule properties.
+	Properties any
 }
 
 var SbauthorizationRule = ubx.DataSourceBinding{
 	WireType: "azure_servicebus_sbauthorization_rule",
 	Fields: ubx.FieldMap{
+		"Alias": ubx.FieldSpec{WireName: "alias"},
+		"AuthorizationRuleName": ubx.FieldSpec{WireName: "authorization_rule_name"},
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
 	},
 }

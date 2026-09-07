@@ -26,9 +26,9 @@ type ManagementCreator_SystemData struct {
 }
 
 var ManagementCreator_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"StorageUnits":      ubx.FieldSpec{WireName: "storage_units"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"StorageUnits": ubx.FieldSpec{WireName: "storage_units"},
+	}
 
 type ManagementCreatorConfig struct {
 	// The geo-location where the resource lives
@@ -56,8 +56,8 @@ var ManagementCreator = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ManagementCreator_PropertiesFields,
+			Kind: "object",
+			Fields: ManagementCreator_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

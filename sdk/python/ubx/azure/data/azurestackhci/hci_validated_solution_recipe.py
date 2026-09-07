@@ -7,16 +7,18 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Capabilities_ClusterCapabilities:
+class HciValidatedSolutionRecipe_Properties_RecipeContent_Capabilities_ClusterCapabilities:
     capability_name: Any = None
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Capabilities:
+class HciValidatedSolutionRecipe_Properties_RecipeContent_Capabilities:
+    # Represents the cluster capabilities.
     cluster_capabilities: Any = None
+    # Represents the node capabilities.
     node_capabilities: Any = None
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Metadata:
+class HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Metadata:
     catalog: Any = None
     enable_automatic_upgrade: Any = None
     expected_hash: Any = None
@@ -30,14 +32,14 @@ class HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Metad
     ring: Any = None
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components_Payloads:
+class HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Payloads:
     file_name: Any = None
     hash: Any = None
     identifier: Any = None
     url: Any = None
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components:
+class HciValidatedSolutionRecipe_Properties_RecipeContent_Components:
     install_order: Any = None
     metadata: Any = None
     name: Any = None
@@ -47,38 +49,41 @@ class HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Components:
     type: Any = None
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value_Properties_RecipeContent_Info:
+class HciValidatedSolutionRecipe_Properties_RecipeContent_Info:
+    # Represents the solution type for which this validated solution recipe is applicable.
     solution_type: Any = None
+    # Represents the version for which this validated solution recipe is applicable.
     version: Any = None
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value_Properties_RecipeContent:
+class HciValidatedSolutionRecipe_Properties_RecipeContent:
+    # Represents capabilities available in a validated solution recipe.
     capabilities: Any = None
+    # Represents components available in a validated solution recipe.
     components: Any = None
+    # Represents information about a validated solution recipe.
     info: Any = None
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value_Properties:
+class HciValidatedSolutionRecipe_Properties:
+    # Represents contents of a validated solution recipe resource.
     recipe_content: Any = None
+    # Represents the signature of the recipe, to be used for ensuring its integrity.
     signature: Any = None
 
 @dataclasses.dataclass
-class HciValidatedSolutionRecipe_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class HciValidatedSolutionRecipeConfig:
-    pass
+    validated_solution_recipe_name: Any = None
 
 @dataclasses.dataclass
 class HciValidatedSolutionRecipeAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The ValidatedSolutionRecipe items on this page
-    value: Any = None
+    # Represents properties of a validated solution recipe resource.
+    properties: Any = None
+    validated_solution_recipe_name: Any = None
 
 HciValidatedSolutionRecipe = ubx.DataSourceBinding(
     wire_type="azure_azurestackhci_hci_validated_solution_recipe",
     fields={
+        "validated_solution_recipe_name": ubx.FieldSpec(wire_name="validated_solution_recipe_name"),
     },
 )

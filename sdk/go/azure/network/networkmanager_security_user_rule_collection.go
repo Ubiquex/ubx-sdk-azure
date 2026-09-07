@@ -35,19 +35,19 @@ type NetworkmanagerSecurityUserRuleCollection_SystemData struct {
 }
 
 var NetworkmanagerSecurityUserRuleCollection_Properties_AppliesToGroupsFields = ubx.FieldMap{
-	"NetworkGroupId": ubx.FieldSpec{WireName: "network_group_id"},
-}
+		"NetworkGroupId": ubx.FieldSpec{WireName: "network_group_id"},
+	}
 
 var NetworkmanagerSecurityUserRuleCollection_PropertiesFields = ubx.FieldMap{
-	"AppliesToGroups": ubx.FieldSpec{
-		WireName: "applies_to_groups",
-		Kind:     "list",
-		Fields:   NetworkmanagerSecurityUserRuleCollection_Properties_AppliesToGroupsFields,
-	},
-	"Description":       ubx.FieldSpec{WireName: "description"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
-}
+		"AppliesToGroups": ubx.FieldSpec{
+			WireName: "applies_to_groups",
+			Kind: "list",
+			Fields: NetworkmanagerSecurityUserRuleCollection_Properties_AppliesToGroupsFields,
+		},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	}
 
 type NetworkmanagerSecurityUserRuleCollectionConfig struct {
 	// Defines the security user rule collection properties.
@@ -74,8 +74,8 @@ var NetworkmanagerSecurityUserRuleCollection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NetworkmanagerSecurityUserRuleCollection_PropertiesFields,
+			Kind: "object",
+			Fields: NetworkmanagerSecurityUserRuleCollection_PropertiesFields,
 		},
 	},
 }

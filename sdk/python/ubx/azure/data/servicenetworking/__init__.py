@@ -4,7 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .trafficcontroller_association import TrafficcontrollerAssociation, TrafficcontrollerAssociationConfig
-from .trafficcontroller_frontend import TrafficcontrollerFrontend, TrafficcontrollerFrontendConfig
-from .trafficcontroller_security_policy import TrafficcontrollerSecurityPolicy, TrafficcontrollerSecurityPolicyConfig
-from .trafficcontroller_traffic_controller import TrafficcontrollerTrafficController, TrafficcontrollerTrafficControllerConfig
+from .trafficcontroller_association_list import TrafficcontrollerAssociationList, TrafficcontrollerAssociationListConfig
+from .trafficcontroller_frontend_list import TrafficcontrollerFrontendList, TrafficcontrollerFrontendListConfig
+from .trafficcontroller_security_policy_list import TrafficcontrollerSecurityPolicyList, TrafficcontrollerSecurityPolicyListConfig
+from .trafficcontroller_traffic_controller_list import TrafficcontrollerTrafficControllerList, TrafficcontrollerTrafficControllerListConfig

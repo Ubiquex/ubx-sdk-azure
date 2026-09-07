@@ -63,51 +63,51 @@ type ApigatewayApiManagementGatewayResource_SystemData struct {
 }
 
 var ApigatewayApiManagementGatewayResource_Properties_Backend_SubnetFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var ApigatewayApiManagementGatewayResource_Properties_BackendFields = ubx.FieldMap{
-	"Subnet": ubx.FieldSpec{
-		WireName: "subnet",
-		Kind:     "object",
-		Fields:   ApigatewayApiManagementGatewayResource_Properties_Backend_SubnetFields,
-	},
-}
+		"Subnet": ubx.FieldSpec{
+			WireName: "subnet",
+			Kind: "object",
+			Fields: ApigatewayApiManagementGatewayResource_Properties_Backend_SubnetFields,
+		},
+	}
 
 var ApigatewayApiManagementGatewayResource_Properties_ConfigurationApiFields = ubx.FieldMap{
-	"Hostname": ubx.FieldSpec{WireName: "hostname"},
-}
+		"Hostname": ubx.FieldSpec{WireName: "hostname"},
+	}
 
 var ApigatewayApiManagementGatewayResource_Properties_FrontendFields = ubx.FieldMap{
-	"DefaultHostname": ubx.FieldSpec{WireName: "default_hostname"},
-}
+		"DefaultHostname": ubx.FieldSpec{WireName: "default_hostname"},
+	}
 
 var ApigatewayApiManagementGatewayResource_PropertiesFields = ubx.FieldMap{
-	"Backend": ubx.FieldSpec{
-		WireName: "backend",
-		Kind:     "object",
-		Fields:   ApigatewayApiManagementGatewayResource_Properties_BackendFields,
-	},
-	"ConfigurationApi": ubx.FieldSpec{
-		WireName: "configuration_api",
-		Kind:     "object",
-		Fields:   ApigatewayApiManagementGatewayResource_Properties_ConfigurationApiFields,
-	},
-	"CreatedAtUtc": ubx.FieldSpec{WireName: "created_at_utc"},
-	"Frontend": ubx.FieldSpec{
-		WireName: "frontend",
-		Kind:     "object",
-		Fields:   ApigatewayApiManagementGatewayResource_Properties_FrontendFields,
-	},
-	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
-	"TargetProvisioningState": ubx.FieldSpec{WireName: "target_provisioning_state"},
-	"VirtualNetworkType":      ubx.FieldSpec{WireName: "virtual_network_type"},
-}
+		"Backend": ubx.FieldSpec{
+			WireName: "backend",
+			Kind: "object",
+			Fields: ApigatewayApiManagementGatewayResource_Properties_BackendFields,
+		},
+		"ConfigurationApi": ubx.FieldSpec{
+			WireName: "configuration_api",
+			Kind: "object",
+			Fields: ApigatewayApiManagementGatewayResource_Properties_ConfigurationApiFields,
+		},
+		"CreatedAtUtc": ubx.FieldSpec{WireName: "created_at_utc"},
+		"Frontend": ubx.FieldSpec{
+			WireName: "frontend",
+			Kind: "object",
+			Fields: ApigatewayApiManagementGatewayResource_Properties_FrontendFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"TargetProvisioningState": ubx.FieldSpec{WireName: "target_provisioning_state"},
+		"VirtualNetworkType": ubx.FieldSpec{WireName: "virtual_network_type"},
+	}
 
 var ApigatewayApiManagementGatewayResource_SkuFields = ubx.FieldMap{
-	"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-}
+		"Capacity": ubx.FieldSpec{WireName: "capacity"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 type ApigatewayApiManagementGatewayResourceConfig struct {
 	// Resource location.
@@ -147,13 +147,13 @@ var ApigatewayApiManagementGatewayResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ApigatewayApiManagementGatewayResource_PropertiesFields,
+			Kind: "object",
+			Fields: ApigatewayApiManagementGatewayResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   ApigatewayApiManagementGatewayResource_SkuFields,
+			Kind: "object",
+			Fields: ApigatewayApiManagementGatewayResource_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

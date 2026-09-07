@@ -7,39 +7,71 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class TemplatespecsTemplateSpec_Value_Properties_Versions:
+class TemplatespecsTemplateSpec_Properties_Versions:
     description: Any = None
     time_created: Any = None
     time_modified: Any = None
 
 @dataclasses.dataclass
-class TemplatespecsTemplateSpec_Value_Properties:
+class TemplatespecsTemplateSpec_Properties:
+    # Template Spec description.
     description: Any = None
+    # Template Spec display name.
     display_name: Any = None
+    # The Template Spec metadata. Metadata is an open-ended object and is typically a collection of key-value pairs.
     metadata: Any = None
+    # High-level information about the versions within this Template Spec. The keys are the version names. Only populated if the $expand query parameter is set to 'versions'.
     versions: Any = None
 
 @dataclasses.dataclass
-class TemplatespecsTemplateSpec_Value:
-    location: Any = None
-    properties: Any = None
-    tags: Any = None
+class TemplatespecsTemplateSpec_SystemData:
+    # The timestamp of resource creation (UTC).
+    created_at: Any = None
+    # The identity that created the resource.
+    created_by: Any = None
+    # The type of identity that created the resource.
+    created_by_type: Any = None
+    # The timestamp of resource last modification (UTC)
+    last_modified_at: Any = None
+    # The identity that last modified the resource.
+    last_modified_by: Any = None
+    # The type of identity that last modified the resource.
+    last_modified_by_type: Any = None
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecConfig:
     api_version: Any = None
+    resource_group_name: Any = None
+    subscription_id: Any = None
+    template_spec_name: Any = None
 
 @dataclasses.dataclass
 class TemplatespecsTemplateSpecAttrs:
     api_version: Any = None
-    # The URL to use for getting the next set of results.
-    next_link: Any = None
-    # An array of Template Specs.
-    value: Any = None
+    # String Id used to locate any resource on Azure.
+    id: Any = None
+    # The location of the Template Spec. It cannot be changed after Template Spec creation. It must be one of the supported Azure locations.
+    location: Any = None
+    # Name of this resource.
+    name: Any = None
+    # Template Spec properties.
+    properties: Any = None
+    resource_group_name: Any = None
+    subscription_id: Any = None
+    # Metadata pertaining to creation and last modification of the resource.
+    system_data: Any = None
+    # Resource tags.
+    tags: Any = None
+    template_spec_name: Any = None
+    # Type of this resource.
+    type: Any = None
 
 TemplatespecsTemplateSpec = ubx.DataSourceBinding(
     wire_type="azure_resources_templatespecs_template_spec",
     fields={
         "api_version": ubx.FieldSpec(wire_name="api_version"),
+        "resource_group_name": ubx.FieldSpec(wire_name="resource_group_name"),
+        "subscription_id": ubx.FieldSpec(wire_name="subscription_id"),
+        "template_spec_name": ubx.FieldSpec(wire_name="template_spec_name"),
     },
 )

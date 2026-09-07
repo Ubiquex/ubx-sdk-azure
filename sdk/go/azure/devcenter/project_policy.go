@@ -24,8 +24,8 @@ type ProjectPolicy_SystemData struct {
 }
 
 var ProjectPolicy_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type ProjectPolicyConfig struct {
 	// Properties of an project policy.
@@ -50,8 +50,8 @@ var ProjectPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ProjectPolicy_PropertiesFields,
+			Kind: "object",
+			Fields: ProjectPolicy_PropertiesFields,
 		},
 	},
 }

@@ -3,81 +3,102 @@ package automanage
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type Report_Value_Properties_Error_AdditionalInfo struct {
+type Report_Properties_Error_AdditionalInfo struct {
 	Info any
 	Type any
 }
 
-type Report_Value_Properties_Error_Details_Details struct {
+type Report_Properties_Error_Details_Details struct {
 }
 
-type Report_Value_Properties_Error_Details struct {
+type Report_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	Code any
+	Details any
+	Message any
+	Target any
 }
 
-type Report_Value_Properties_Error struct {
+type Report_Properties_Error struct {
+	// The error additional info.
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// The error code.
+	Code any
+	// The error details.
+	Details any
+	// The error message.
+	Message any
+	// The error target.
+	Target any
 }
 
-type Report_Value_Properties_Resources struct {
-	Error  any
-	Id     any
-	Name   any
+type Report_Properties_Resources struct {
+	Error any
+	Id any
+	Name any
 	Status any
-	Type   any
+	Type any
 }
 
-type Report_Value_Properties struct {
+type Report_Properties struct {
+	// The configurationProfile linked to the assignment.
 	ConfigurationProfile any
-	Duration             any
-	EndTime              any
-	Error                any
-	LastModifiedTime     any
-	ReportFormatVersion  any
-	Resources            any
-	StartTime            any
-	Status               any
-	Type                 any
+	// Duration of the configuration profile assignment processing.
+	Duration any
+	// End time of the configuration profile assignment processing.
+	EndTime any
+	// The error detail.
+	Error any
+	// Last modified time of the configuration profile assignment processing.
+	LastModifiedTime any
+	// Version of the report format
+	ReportFormatVersion any
+	// List of resources processed by the configuration profile assignment.
+	Resources any
+	// Start time of the configuration profile assignment processing.
+	StartTime any
+	// The status of the configuration profile assignment.
+	Status any
+	// Type of the configuration profile assignment processing (Initial/Consistency).
+	Type any
 }
 
-type Report_Value_SystemData struct {
-	CreatedAt          any
-	CreatedBy          any
-	CreatedByType      any
-	LastModifiedAt     any
-	LastModifiedBy     any
+type Report_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
 	LastModifiedByType any
 }
 
-type Report_Value struct {
-	Properties any
-	SystemData any
-}
-
 type ReportConfig struct {
-	ClusterName                        any
+	ClusterName any
 	ConfigurationProfileAssignmentName any
+	ReportName any
 }
 
 type ReportAttrs struct {
-	ClusterName                        any
+	ClusterName any
 	ConfigurationProfileAssignmentName any
-	// Result of the list report operation.
-	Value any
+	// Data related to the report detail.
+	Properties any
+	ReportName any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
 }
 
 var Report = ubx.DataSourceBinding{
 	WireType: "azure_automanage_report",
 	Fields: ubx.FieldMap{
-		"ClusterName":                        ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
 		"ConfigurationProfileAssignmentName": ubx.FieldSpec{WireName: "configuration_profile_assignment_name"},
+		"ReportName": ubx.FieldSpec{WireName: "report_name"},
 	},
 }

@@ -3,27 +3,23 @@ package synapse
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SqlpoolSqlPoolTable_Value struct {
-}
-
 type SqlpoolSqlPoolTableConfig struct {
-	SchemaName  any
+	SchemaName any
 	SqlPoolName any
+	TableName any
 }
 
 type SqlpoolSqlPoolTableAttrs struct {
-	// Link to retrieve next page of results.
-	NextLink    any
-	SchemaName  any
+	SchemaName any
 	SqlPoolName any
-	// Array of results.
-	Value any
+	TableName any
 }
 
 var SqlpoolSqlPoolTable = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool_table",
 	Fields: ubx.FieldMap{
-		"SchemaName":  ubx.FieldSpec{WireName: "schema_name"},
+		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
 		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
+		"TableName": ubx.FieldSpec{WireName: "table_name"},
 	},
 }

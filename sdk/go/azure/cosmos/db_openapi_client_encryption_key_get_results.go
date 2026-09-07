@@ -37,33 +37,33 @@ type DbOpenapiClientEncryptionKeyGetResults_Properties struct {
 }
 
 var DbOpenapiClientEncryptionKeyGetResults_Properties_Resource_KeyWrapMetadataFields = ubx.FieldMap{
-	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-	"Name":      ubx.FieldSpec{WireName: "name"},
-	"Type":      ubx.FieldSpec{WireName: "type"},
-	"Value":     ubx.FieldSpec{WireName: "value"},
-}
+		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var DbOpenapiClientEncryptionKeyGetResults_Properties_ResourceFields = ubx.FieldMap{
-	"Etag":                ubx.FieldSpec{WireName: "_etag"},
-	"Rid":                 ubx.FieldSpec{WireName: "_rid"},
-	"Ts":                  ubx.FieldSpec{WireName: "_ts"},
-	"EncryptionAlgorithm": ubx.FieldSpec{WireName: "encryption_algorithm"},
-	"Id":                  ubx.FieldSpec{WireName: "id"},
-	"KeyWrapMetadata": ubx.FieldSpec{
-		WireName: "key_wrap_metadata",
-		Kind:     "object",
-		Fields:   DbOpenapiClientEncryptionKeyGetResults_Properties_Resource_KeyWrapMetadataFields,
-	},
-	"WrappedDataEncryptionKey": ubx.FieldSpec{WireName: "wrapped_data_encryption_key"},
-}
+		"Etag": ubx.FieldSpec{WireName: "_etag"},
+		"Rid": ubx.FieldSpec{WireName: "_rid"},
+		"Ts": ubx.FieldSpec{WireName: "_ts"},
+		"EncryptionAlgorithm": ubx.FieldSpec{WireName: "encryption_algorithm"},
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"KeyWrapMetadata": ubx.FieldSpec{
+			WireName: "key_wrap_metadata",
+			Kind: "object",
+			Fields: DbOpenapiClientEncryptionKeyGetResults_Properties_Resource_KeyWrapMetadataFields,
+		},
+		"WrappedDataEncryptionKey": ubx.FieldSpec{WireName: "wrapped_data_encryption_key"},
+	}
 
 var DbOpenapiClientEncryptionKeyGetResults_PropertiesFields = ubx.FieldMap{
-	"Resource": ubx.FieldSpec{
-		WireName: "resource",
-		Kind:     "object",
-		Fields:   DbOpenapiClientEncryptionKeyGetResults_Properties_ResourceFields,
-	},
-}
+		"Resource": ubx.FieldSpec{
+			WireName: "resource",
+			Kind: "object",
+			Fields: DbOpenapiClientEncryptionKeyGetResults_Properties_ResourceFields,
+		},
+	}
 
 type DbOpenapiClientEncryptionKeyGetResultsConfig struct {
 	// Properties to create and update ClientEncryptionKey.
@@ -80,8 +80,8 @@ var DbOpenapiClientEncryptionKeyGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   DbOpenapiClientEncryptionKeyGetResults_PropertiesFields,
+			Kind: "object",
+			Fields: DbOpenapiClientEncryptionKeyGetResults_PropertiesFields,
 		},
 	},
 }

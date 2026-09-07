@@ -3,46 +3,55 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiProcessModuleInfo_Value_Properties struct {
-	BaseAddress      any
-	FileDescription  any
-	FileName         any
-	FilePath         any
-	FileVersion      any
-	Href             any
-	IsDebug          any
-	Language         any
+type OpenapiProcessModuleInfo_Properties struct {
+	// Base address. Used as module identifier in ARM resource URI.
+	BaseAddress any
+	// File description.
+	FileDescription any
+	// File name.
+	FileName any
+	// File path.
+	FilePath any
+	// File version.
+	FileVersion any
+	// HRef URI.
+	Href any
+	// Is debug?
+	IsDebug any
+	// Module language (locale).
+	Language any
+	// Module memory size.
 	ModuleMemorySize any
-	Product          any
-	ProductVersion   any
-}
-
-type OpenapiProcessModuleInfo_Value struct {
-	Kind       any
-	Properties any
+	// Product name.
+	Product any
+	// Product version.
+	ProductVersion any
 }
 
 type OpenapiProcessModuleInfoConfig struct {
+	BaseAddress any
 	InstanceId any
-	Name       any
-	ProcessId  any
+	Name any
+	ProcessId any
 }
 
 type OpenapiProcessModuleInfoAttrs struct {
+	BaseAddress any
 	InstanceId any
-	Name       any
-	// The link to the next page of items
-	NextLink  any
+	// Kind of resource.
+	Kind any
+	Name any
 	ProcessId any
-	// The ProcessModuleInfo items on this page
-	Value any
+	// ProcessModuleInfo resource specific properties
+	Properties any
 }
 
 var OpenapiProcessModuleInfo = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_process_module_info",
 	Fields: ubx.FieldMap{
+		"BaseAddress": ubx.FieldSpec{WireName: "base_address"},
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Name":       ubx.FieldSpec{WireName: "name"},
-		"ProcessId":  ubx.FieldSpec{WireName: "process_id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"ProcessId": ubx.FieldSpec{WireName: "process_id"},
 	},
 }

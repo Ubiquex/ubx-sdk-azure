@@ -88,78 +88,78 @@ type OpenapiBatchDeployment_Sku struct {
 }
 
 var OpenapiBatchDeployment_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var OpenapiBatchDeployment_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   OpenapiBatchDeployment_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: OpenapiBatchDeployment_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var OpenapiBatchDeployment_Properties_DeploymentConfigurationFields = ubx.FieldMap{
-	"DeploymentConfigurationType": ubx.FieldSpec{WireName: "deployment_configuration_type"},
-}
+		"DeploymentConfigurationType": ubx.FieldSpec{WireName: "deployment_configuration_type"},
+	}
 
 var OpenapiBatchDeployment_Properties_ModelFields = ubx.FieldMap{
-	"ReferenceType": ubx.FieldSpec{WireName: "reference_type"},
-}
+		"ReferenceType": ubx.FieldSpec{WireName: "reference_type"},
+	}
 
 var OpenapiBatchDeployment_Properties_ResourcesFields = ubx.FieldMap{
-	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-	"InstanceType":  ubx.FieldSpec{WireName: "instance_type"},
-	"Properties":    ubx.FieldSpec{WireName: "properties"},
-}
+		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+		"Properties": ubx.FieldSpec{WireName: "properties"},
+	}
 
 var OpenapiBatchDeployment_Properties_RetrySettingsFields = ubx.FieldMap{
-	"MaxRetries": ubx.FieldSpec{WireName: "max_retries"},
-	"Timeout":    ubx.FieldSpec{WireName: "timeout"},
-}
+		"MaxRetries": ubx.FieldSpec{WireName: "max_retries"},
+		"Timeout": ubx.FieldSpec{WireName: "timeout"},
+	}
 
 var OpenapiBatchDeployment_PropertiesFields = ubx.FieldMap{
-	"Compute": ubx.FieldSpec{WireName: "compute"},
-	"DeploymentConfiguration": ubx.FieldSpec{
-		WireName: "deployment_configuration",
-		Kind:     "object",
-		Fields:   OpenapiBatchDeployment_Properties_DeploymentConfigurationFields,
-	},
-	"ErrorThreshold":            ubx.FieldSpec{WireName: "error_threshold"},
-	"LoggingLevel":              ubx.FieldSpec{WireName: "logging_level"},
-	"MaxConcurrencyPerInstance": ubx.FieldSpec{WireName: "max_concurrency_per_instance"},
-	"MiniBatchSize":             ubx.FieldSpec{WireName: "mini_batch_size"},
-	"Model": ubx.FieldSpec{
-		WireName: "model",
-		Kind:     "object",
-		Fields:   OpenapiBatchDeployment_Properties_ModelFields,
-	},
-	"OutputAction":      ubx.FieldSpec{WireName: "output_action"},
-	"OutputFileName":    ubx.FieldSpec{WireName: "output_file_name"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Resources": ubx.FieldSpec{
-		WireName: "resources",
-		Kind:     "object",
-		Fields:   OpenapiBatchDeployment_Properties_ResourcesFields,
-	},
-	"RetrySettings": ubx.FieldSpec{
-		WireName: "retry_settings",
-		Kind:     "object",
-		Fields:   OpenapiBatchDeployment_Properties_RetrySettingsFields,
-	},
-}
+		"Compute": ubx.FieldSpec{WireName: "compute"},
+		"DeploymentConfiguration": ubx.FieldSpec{
+			WireName: "deployment_configuration",
+			Kind: "object",
+			Fields: OpenapiBatchDeployment_Properties_DeploymentConfigurationFields,
+		},
+		"ErrorThreshold": ubx.FieldSpec{WireName: "error_threshold"},
+		"LoggingLevel": ubx.FieldSpec{WireName: "logging_level"},
+		"MaxConcurrencyPerInstance": ubx.FieldSpec{WireName: "max_concurrency_per_instance"},
+		"MiniBatchSize": ubx.FieldSpec{WireName: "mini_batch_size"},
+		"Model": ubx.FieldSpec{
+			WireName: "model",
+			Kind: "object",
+			Fields: OpenapiBatchDeployment_Properties_ModelFields,
+		},
+		"OutputAction": ubx.FieldSpec{WireName: "output_action"},
+		"OutputFileName": ubx.FieldSpec{WireName: "output_file_name"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Resources": ubx.FieldSpec{
+			WireName: "resources",
+			Kind: "object",
+			Fields: OpenapiBatchDeployment_Properties_ResourcesFields,
+		},
+		"RetrySettings": ubx.FieldSpec{
+			WireName: "retry_settings",
+			Kind: "object",
+			Fields: OpenapiBatchDeployment_Properties_RetrySettingsFields,
+		},
+	}
 
 var OpenapiBatchDeployment_SkuFields = ubx.FieldMap{
-	"Capacity": ubx.FieldSpec{WireName: "capacity"},
-	"Family":   ubx.FieldSpec{WireName: "family"},
-	"Name":     ubx.FieldSpec{WireName: "name"},
-	"Size":     ubx.FieldSpec{WireName: "size"},
-	"Tier":     ubx.FieldSpec{WireName: "tier"},
-}
+		"Capacity": ubx.FieldSpec{WireName: "capacity"},
+		"Family": ubx.FieldSpec{WireName: "family"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Size": ubx.FieldSpec{WireName: "size"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 type OpenapiBatchDeploymentConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -196,20 +196,20 @@ var OpenapiBatchDeployment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   OpenapiBatchDeployment_IdentityFields,
+			Kind: "object",
+			Fields: OpenapiBatchDeployment_IdentityFields,
 		},
-		"Kind":     ubx.FieldSpec{WireName: "kind"},
+		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiBatchDeployment_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiBatchDeployment_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   OpenapiBatchDeployment_SkuFields,
+			Kind: "object",
+			Fields: OpenapiBatchDeployment_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

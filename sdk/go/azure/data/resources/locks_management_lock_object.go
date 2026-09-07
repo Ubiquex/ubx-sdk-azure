@@ -3,48 +3,61 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type LocksManagementLockObject_Value_Properties_Owners struct {
+type LocksManagementLockObject_Properties_Owners struct {
 	ApplicationId any
 }
 
-type LocksManagementLockObject_Value_Properties struct {
-	Level  any
-	Notes  any
+type LocksManagementLockObject_Properties struct {
+	// The level of the lock. Possible values are: NotSpecified, CanNotDelete, ReadOnly. CanNotDelete means authorized users are able to read and modify the resources, but not delete. ReadOnly means authorized users can only read from a resource, but they can't modify or delete it.
+	Level any
+	// Notes about the lock. Maximum of 512 characters.
+	Notes any
+	// The owners of the lock.
 	Owners any
 }
 
-type LocksManagementLockObject_Value_SystemData struct {
-	CreatedAt          any
-	CreatedBy          any
-	CreatedByType      any
-	LastModifiedAt     any
-	LastModifiedBy     any
+type LocksManagementLockObject_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
 	LastModifiedByType any
 }
 
-type LocksManagementLockObject_Value struct {
-	Id         any
-	Name       any
-	Properties any
-	SystemData any
-	Type       any
-}
-
 type LocksManagementLockObjectConfig struct {
+	LockName any
+	ResourceGroupName any
 	SubscriptionId any
 }
 
 type LocksManagementLockObjectAttrs struct {
-	// The URL to use for getting the next set of results.
-	NextLink       any
+	// The resource ID of the lock.
+	Id any
+	LockName any
+	// The name of the lock.
+	Name any
+	// The lock properties.
+	Properties any
+	ResourceGroupName any
 	SubscriptionId any
-	// The list of locks.
-	Value any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The resource type of the lock - Microsoft.Authorization/locks.
+	Type any
 }
 
 var LocksManagementLockObject = ubx.DataSourceBinding{
 	WireType: "azure_resources_locks_management_lock_object",
 	Fields: ubx.FieldMap{
+		"LockName": ubx.FieldSpec{WireName: "lock_name"},
+		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

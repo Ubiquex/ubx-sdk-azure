@@ -25,23 +25,23 @@ type IntegrationAccount_Sku struct {
 }
 
 var IntegrationAccount_Properties_IntegrationServiceEnvironmentFields = ubx.FieldMap{
-	"Id":   ubx.FieldSpec{WireName: "id"},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var IntegrationAccount_PropertiesFields = ubx.FieldMap{
-	"IntegrationServiceEnvironment": ubx.FieldSpec{
-		WireName: "integration_service_environment",
-		Kind:     "object",
-		Fields:   IntegrationAccount_Properties_IntegrationServiceEnvironmentFields,
-	},
-	"State": ubx.FieldSpec{WireName: "state"},
-}
+		"IntegrationServiceEnvironment": ubx.FieldSpec{
+			WireName: "integration_service_environment",
+			Kind: "object",
+			Fields: IntegrationAccount_Properties_IntegrationServiceEnvironmentFields,
+		},
+		"State": ubx.FieldSpec{WireName: "state"},
+	}
 
 var IntegrationAccount_SkuFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 type IntegrationAccountConfig struct {
 	// The resource location.
@@ -77,13 +77,13 @@ var IntegrationAccount = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   IntegrationAccount_PropertiesFields,
+			Kind: "object",
+			Fields: IntegrationAccount_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   IntegrationAccount_SkuFields,
+			Kind: "object",
+			Fields: IntegrationAccount_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

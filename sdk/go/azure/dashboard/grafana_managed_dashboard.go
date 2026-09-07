@@ -9,8 +9,8 @@ type GrafanaManagedDashboard_Properties struct {
 }
 
 var GrafanaManagedDashboard_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type GrafanaManagedDashboardConfig struct {
 	// The geo-location where the resource lives
@@ -36,8 +36,8 @@ var GrafanaManagedDashboard = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   GrafanaManagedDashboard_PropertiesFields,
+			Kind: "object",
+			Fields: GrafanaManagedDashboard_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

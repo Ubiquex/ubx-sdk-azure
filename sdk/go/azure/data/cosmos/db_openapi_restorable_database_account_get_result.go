@@ -3,41 +3,44 @@ package cosmos
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DbOpenapiRestorableDatabaseAccountGetResult_Value_Properties_RestorableLocations struct {
-	CreationTime                      any
-	DeletionTime                      any
-	LocationName                      any
+type DbOpenapiRestorableDatabaseAccountGetResult_Properties_RestorableLocations struct {
+	CreationTime any
+	DeletionTime any
+	LocationName any
 	RegionalDatabaseAccountInstanceId any
 }
 
-type DbOpenapiRestorableDatabaseAccountGetResult_Value_Properties struct {
-	AccountName          any
-	ApiType              any
-	CreationTime         any
-	DeletionTime         any
+type DbOpenapiRestorableDatabaseAccountGetResult_Properties struct {
+	// The name of the global database account
+	AccountName any
+	// Enum to indicate the API type of the restorable database account.
+	ApiType any
+	// The creation time of the restorable database account (ISO-8601 format).
+	CreationTime any
+	// The time at which the restorable database account has been deleted (ISO-8601 format).
+	DeletionTime any
+	// The least recent time at which the database account can be restored to (ISO-8601 format).
 	OldestRestorableTime any
-	RestorableLocations  any
-}
-
-type DbOpenapiRestorableDatabaseAccountGetResult_Value struct {
-	Location   any
-	Properties any
+	// List of regions where the of the database account can be restored from.
+	RestorableLocations any
 }
 
 type DbOpenapiRestorableDatabaseAccountGetResultConfig struct {
+	InstanceId any
 	Location any
 }
 
 type DbOpenapiRestorableDatabaseAccountGetResultAttrs struct {
+	InstanceId any
 	Location any
-	NextLink any
-	// List of restorable database accounts and their properties.
-	Value any
+	// The properties of a restorable database account.
+	Properties any
 }
 
 var DbOpenapiRestorableDatabaseAccountGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_database_account_get_result",
 	Fields: ubx.FieldMap{
+		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 	},
 }

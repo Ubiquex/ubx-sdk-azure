@@ -19,13 +19,13 @@ type OpenapiHybridRunbookWorker_Properties struct {
 }
 
 var OpenapiHybridRunbookWorker_PropertiesFields = ubx.FieldMap{
-	"Ip":                 ubx.FieldSpec{WireName: "ip"},
-	"LastSeenDateTime":   ubx.FieldSpec{WireName: "last_seen_date_time"},
-	"RegisteredDateTime": ubx.FieldSpec{WireName: "registered_date_time"},
-	"VmResourceId":       ubx.FieldSpec{WireName: "vm_resource_id"},
-	"WorkerName":         ubx.FieldSpec{WireName: "worker_name"},
-	"WorkerType":         ubx.FieldSpec{WireName: "worker_type"},
-}
+		"Ip": ubx.FieldSpec{WireName: "ip"},
+		"LastSeenDateTime": ubx.FieldSpec{WireName: "last_seen_date_time"},
+		"RegisteredDateTime": ubx.FieldSpec{WireName: "registered_date_time"},
+		"VmResourceId": ubx.FieldSpec{WireName: "vm_resource_id"},
+		"WorkerName": ubx.FieldSpec{WireName: "worker_name"},
+		"WorkerType": ubx.FieldSpec{WireName: "worker_type"},
+	}
 
 type OpenapiHybridRunbookWorkerConfig struct {
 	// The parameters supplied to the create or update hybrid runbook worker operation.
@@ -48,8 +48,8 @@ var OpenapiHybridRunbookWorker = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiHybridRunbookWorker_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiHybridRunbookWorker_PropertiesFields,
 		},
 	},
 }

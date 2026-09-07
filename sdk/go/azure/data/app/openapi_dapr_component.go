@@ -3,51 +3,58 @@ package app
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiDaprComponent_Value_Properties_Metadata struct {
-	Name      any
+type OpenapiDaprComponent_Properties_Metadata struct {
+	Name any
 	SecretRef any
-	Value     any
+	Value any
 }
 
-type OpenapiDaprComponent_Value_Properties_Secrets struct {
-	Identity    any
+type OpenapiDaprComponent_Properties_Secrets struct {
+	Identity any
 	KeyVaultUrl any
-	Name        any
-	Value       any
+	Name any
+	Value any
 }
 
-type OpenapiDaprComponent_Value_Properties struct {
-	ComponentType        any
-	DeploymentErrors     any
-	IgnoreErrors         any
-	InitTimeout          any
-	Metadata             any
-	ProvisioningState    any
-	Scopes               any
+type OpenapiDaprComponent_Properties struct {
+	// Component type
+	ComponentType any
+	// Any errors that occurred during deployment or deployment validation
+	DeploymentErrors any
+	// Boolean describing if the component errors are ignores
+	IgnoreErrors any
+	// Initialization timeout
+	InitTimeout any
+	// Component metadata
+	Metadata any
+	// Provisioning state of the Connected Environment Dapr Component.
+	ProvisioningState any
+	// Names of container apps that can use this Dapr component
+	Scopes any
+	// Name of a Dapr component to retrieve component secrets from
 	SecretStoreComponent any
-	Secrets              any
-	Version              any
-}
-
-type OpenapiDaprComponent_Value struct {
-	Properties any
+	// Collection of secrets used by a Dapr component
+	Secrets any
+	// Component version
+	Version any
 }
 
 type OpenapiDaprComponentConfig struct {
-	ConnectedEnvironmentName any
+	ComponentName any
+	EnvironmentName any
 }
 
 type OpenapiDaprComponentAttrs struct {
-	ConnectedEnvironmentName any
-	// The link to the next page of items
-	NextLink any
-	// The DaprComponent items on this page
-	Value any
+	ComponentName any
+	EnvironmentName any
+	// Dapr Component resource specific properties
+	Properties any
 }
 
 var OpenapiDaprComponent = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_dapr_component",
 	Fields: ubx.FieldMap{
-		"ConnectedEnvironmentName": ubx.FieldSpec{WireName: "connected_environment_name"},
+		"ComponentName": ubx.FieldSpec{WireName: "component_name"},
+		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
 	},
 }

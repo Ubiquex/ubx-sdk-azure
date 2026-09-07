@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRunbookContentConfig struct {
 	AutomationAccountName any
-	JobName               any
+	JobName any
 }
 
 type OpenapiRunbookContentAttrs struct {
 	AutomationAccountName any
-	JobName               any
+	JobName any
 }
 
 var OpenapiRunbookContent = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_runbook_content",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"JobName":               ubx.FieldSpec{WireName: "job_name"},
+		"JobName": ubx.FieldSpec{WireName: "job_name"},
 	},
 }

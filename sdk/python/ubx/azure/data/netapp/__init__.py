@@ -4,19 +4,20 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .backup import Backup, BackupConfig
-from .backup_policy import BackupPolicy, BackupPolicyConfig
+from .backup_list import BackupList, BackupListConfig
+from .backup_policy_list import BackupPolicyList, BackupPolicyListConfig
 from .backup_status import BackupStatus, BackupStatusConfig
-from .backup_vault import BackupVault, BackupVaultConfig
-from .bucket import Bucket, BucketConfig
-from .cache import Cache, CacheConfig
-from .capacity_pool import CapacityPool, CapacityPoolConfig
-from .net_app_account import NetAppAccount, NetAppAccountConfig
+from .backup_vault_list import BackupVaultList, BackupVaultListConfig
+from .bucket_list import BucketList, BucketListConfig
+from .cache_list import CacheList, CacheListConfig
+from .capacity_pool_list import CapacityPoolList, CapacityPoolListConfig
+from .net_app_account_list import NetAppAccountList, NetAppAccountListConfig
 from .ransomware_report import RansomwareReport, RansomwareReportConfig
+from .ransomware_report_list import RansomwareReportList, RansomwareReportListConfig
 from .replication_status import ReplicationStatus, ReplicationStatusConfig
 from .restore_status import RestoreStatus, RestoreStatusConfig
-from .snapshot import Snapshot, SnapshotConfig
-from .snapshot_policy import SnapshotPolicy, SnapshotPolicyConfig
-from .subvolume_info import SubvolumeInfo, SubvolumeInfoConfig
-from .volume import Volume, VolumeConfig
-from .volume_group import VolumeGroup, VolumeGroupConfig
+from .snapshot_list import SnapshotList, SnapshotListConfig
+from .snapshot_policy_list import SnapshotPolicyList, SnapshotPolicyListConfig
+from .subvolume_info_list import SubvolumeInfoList, SubvolumeInfoListConfig
+from .volume_group_list import VolumeGroupList, VolumeGroupListConfig
+from .volume_list import VolumeList, VolumeListConfig

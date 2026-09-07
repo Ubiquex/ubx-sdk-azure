@@ -79,65 +79,65 @@ type DbOpenapiDataCenterResource_Properties struct {
 }
 
 var DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties_ServerCertificatesFields = ubx.FieldMap{
-	"Pem": ubx.FieldSpec{WireName: "pem"},
-}
+		"Pem": ubx.FieldSpec{WireName: "pem"},
+	}
 
 var DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapPropertiesFields = ubx.FieldMap{
-	"ConnectionTimeoutInMs":       ubx.FieldSpec{WireName: "connection_timeout_in_ms"},
-	"SearchBaseDistinguishedName": ubx.FieldSpec{WireName: "search_base_distinguished_name"},
-	"SearchFilterTemplate":        ubx.FieldSpec{WireName: "search_filter_template"},
-	"ServerCertificates": ubx.FieldSpec{
-		WireName: "server_certificates",
-		Kind:     "list",
-		Fields:   DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties_ServerCertificatesFields,
-	},
-	"ServerHostname":               ubx.FieldSpec{WireName: "server_hostname"},
-	"ServerPort":                   ubx.FieldSpec{WireName: "server_port"},
-	"ServiceUserDistinguishedName": ubx.FieldSpec{WireName: "service_user_distinguished_name"},
-	"ServiceUserPassword":          ubx.FieldSpec{WireName: "service_user_password"},
-}
+		"ConnectionTimeoutInMs": ubx.FieldSpec{WireName: "connection_timeout_in_ms"},
+		"SearchBaseDistinguishedName": ubx.FieldSpec{WireName: "search_base_distinguished_name"},
+		"SearchFilterTemplate": ubx.FieldSpec{WireName: "search_filter_template"},
+		"ServerCertificates": ubx.FieldSpec{
+			WireName: "server_certificates",
+			Kind: "list",
+			Fields: DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapProperties_ServerCertificatesFields,
+		},
+		"ServerHostname": ubx.FieldSpec{WireName: "server_hostname"},
+		"ServerPort": ubx.FieldSpec{WireName: "server_port"},
+		"ServiceUserDistinguishedName": ubx.FieldSpec{WireName: "service_user_distinguished_name"},
+		"ServiceUserPassword": ubx.FieldSpec{WireName: "service_user_password"},
+	}
 
 var DbOpenapiDataCenterResource_Properties_ProvisionErrorFields = ubx.FieldMap{
-	"AdditionalErrorInfo": ubx.FieldSpec{WireName: "additional_error_info"},
-	"Code":                ubx.FieldSpec{WireName: "code"},
-	"Message":             ubx.FieldSpec{WireName: "message"},
-	"Target":              ubx.FieldSpec{WireName: "target"},
-}
+		"AdditionalErrorInfo": ubx.FieldSpec{WireName: "additional_error_info"},
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Target": ubx.FieldSpec{WireName: "target"},
+	}
 
 var DbOpenapiDataCenterResource_Properties_SeedNodesFields = ubx.FieldMap{
-	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-}
+		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+	}
 
 var DbOpenapiDataCenterResource_PropertiesFields = ubx.FieldMap{
-	"AuthenticationMethodLdapProperties": ubx.FieldSpec{
-		WireName: "authentication_method_ldap_properties",
-		Kind:     "object",
-		Fields:   DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapPropertiesFields,
-	},
-	"AvailabilityZone":                   ubx.FieldSpec{WireName: "availability_zone"},
-	"BackupStorageCustomerKeyUri":        ubx.FieldSpec{WireName: "backup_storage_customer_key_uri"},
-	"Base64EncodedCassandraYamlFragment": ubx.FieldSpec{WireName: "base64_encoded_cassandra_yaml_fragment"},
-	"DataCenterLocation":                 ubx.FieldSpec{WireName: "data_center_location"},
-	"Deallocated":                        ubx.FieldSpec{WireName: "deallocated"},
-	"DelegatedSubnetId":                  ubx.FieldSpec{WireName: "delegated_subnet_id"},
-	"DiskCapacity":                       ubx.FieldSpec{WireName: "disk_capacity"},
-	"DiskSku":                            ubx.FieldSpec{WireName: "disk_sku"},
-	"ManagedDiskCustomerKeyUri":          ubx.FieldSpec{WireName: "managed_disk_customer_key_uri"},
-	"NodeCount":                          ubx.FieldSpec{WireName: "node_count"},
-	"PrivateEndpointIpAddress":           ubx.FieldSpec{WireName: "private_endpoint_ip_address"},
-	"ProvisionError": ubx.FieldSpec{
-		WireName: "provision_error",
-		Kind:     "object",
-		Fields:   DbOpenapiDataCenterResource_Properties_ProvisionErrorFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"SeedNodes": ubx.FieldSpec{
-		WireName: "seed_nodes",
-		Kind:     "list",
-		Fields:   DbOpenapiDataCenterResource_Properties_SeedNodesFields,
-	},
-	"Sku": ubx.FieldSpec{WireName: "sku"},
-}
+		"AuthenticationMethodLdapProperties": ubx.FieldSpec{
+			WireName: "authentication_method_ldap_properties",
+			Kind: "object",
+			Fields: DbOpenapiDataCenterResource_Properties_AuthenticationMethodLdapPropertiesFields,
+		},
+		"AvailabilityZone": ubx.FieldSpec{WireName: "availability_zone"},
+		"BackupStorageCustomerKeyUri": ubx.FieldSpec{WireName: "backup_storage_customer_key_uri"},
+		"Base64EncodedCassandraYamlFragment": ubx.FieldSpec{WireName: "base64_encoded_cassandra_yaml_fragment"},
+		"DataCenterLocation": ubx.FieldSpec{WireName: "data_center_location"},
+		"Deallocated": ubx.FieldSpec{WireName: "deallocated"},
+		"DelegatedSubnetId": ubx.FieldSpec{WireName: "delegated_subnet_id"},
+		"DiskCapacity": ubx.FieldSpec{WireName: "disk_capacity"},
+		"DiskSku": ubx.FieldSpec{WireName: "disk_sku"},
+		"ManagedDiskCustomerKeyUri": ubx.FieldSpec{WireName: "managed_disk_customer_key_uri"},
+		"NodeCount": ubx.FieldSpec{WireName: "node_count"},
+		"PrivateEndpointIpAddress": ubx.FieldSpec{WireName: "private_endpoint_ip_address"},
+		"ProvisionError": ubx.FieldSpec{
+			WireName: "provision_error",
+			Kind: "object",
+			Fields: DbOpenapiDataCenterResource_Properties_ProvisionErrorFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"SeedNodes": ubx.FieldSpec{
+			WireName: "seed_nodes",
+			Kind: "list",
+			Fields: DbOpenapiDataCenterResource_Properties_SeedNodesFields,
+		},
+		"Sku": ubx.FieldSpec{WireName: "sku"},
+	}
 
 type DbOpenapiDataCenterResourceConfig struct {
 	// Properties of a managed Cassandra data center.
@@ -154,8 +154,8 @@ var DbOpenapiDataCenterResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   DbOpenapiDataCenterResource_PropertiesFields,
+			Kind: "object",
+			Fields: DbOpenapiDataCenterResource_PropertiesFields,
 		},
 	},
 }

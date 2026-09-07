@@ -58,36 +58,36 @@ type VirtualnetworkReachabilityAnalysisRun_SystemData struct {
 }
 
 var VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_IpTrafficFields = ubx.FieldMap{
-	"DestinationIps":   ubx.FieldSpec{WireName: "destination_ips"},
-	"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
-	"Protocols":        ubx.FieldSpec{WireName: "protocols"},
-	"SourceIps":        ubx.FieldSpec{WireName: "source_ips"},
-	"SourcePorts":      ubx.FieldSpec{WireName: "source_ports"},
-}
+		"DestinationIps": ubx.FieldSpec{WireName: "destination_ips"},
+		"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
+		"Protocols": ubx.FieldSpec{WireName: "protocols"},
+		"SourceIps": ubx.FieldSpec{WireName: "source_ips"},
+		"SourcePorts": ubx.FieldSpec{WireName: "source_ports"},
+	}
 
 var VirtualnetworkReachabilityAnalysisRun_Properties_IntentContentFields = ubx.FieldMap{
-	"Description":           ubx.FieldSpec{WireName: "description"},
-	"DestinationResourceId": ubx.FieldSpec{WireName: "destination_resource_id"},
-	"IpTraffic": ubx.FieldSpec{
-		WireName: "ip_traffic",
-		Kind:     "object",
-		Fields:   VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_IpTrafficFields,
-	},
-	"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DestinationResourceId": ubx.FieldSpec{WireName: "destination_resource_id"},
+		"IpTraffic": ubx.FieldSpec{
+			WireName: "ip_traffic",
+			Kind: "object",
+			Fields: VirtualnetworkReachabilityAnalysisRun_Properties_IntentContent_IpTrafficFields,
+		},
+		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
+	}
 
 var VirtualnetworkReachabilityAnalysisRun_PropertiesFields = ubx.FieldMap{
-	"AnalysisResult": ubx.FieldSpec{WireName: "analysis_result"},
-	"Description":    ubx.FieldSpec{WireName: "description"},
-	"ErrorMessage":   ubx.FieldSpec{WireName: "error_message"},
-	"IntentContent": ubx.FieldSpec{
-		WireName: "intent_content",
-		Kind:     "object",
-		Fields:   VirtualnetworkReachabilityAnalysisRun_Properties_IntentContentFields,
-	},
-	"IntentId":          ubx.FieldSpec{WireName: "intent_id"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"AnalysisResult": ubx.FieldSpec{WireName: "analysis_result"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
+		"IntentContent": ubx.FieldSpec{
+			WireName: "intent_content",
+			Kind: "object",
+			Fields: VirtualnetworkReachabilityAnalysisRun_Properties_IntentContentFields,
+		},
+		"IntentId": ubx.FieldSpec{WireName: "intent_id"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type VirtualnetworkReachabilityAnalysisRunConfig struct {
 	// Represents the Reachability Analysis Run properties.
@@ -106,8 +106,8 @@ var VirtualnetworkReachabilityAnalysisRun = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkReachabilityAnalysisRun_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkReachabilityAnalysisRun_PropertiesFields,
 		},
 	},
 }

@@ -3,46 +3,62 @@ package app
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiCertificate_Value_Properties_CertificateKeyVaultProperties struct {
-	Identity    any
+type OpenapiCertificate_Properties_CertificateKeyVaultProperties struct {
+	// Resource ID of a managed identity to authenticate with Azure Key Vault, or System to use a system-assigned identity.
+	Identity any
+	// URL pointing to the Azure Key Vault secret that holds the certificate.
 	KeyVaultUrl any
 }
 
-type OpenapiCertificate_Value_Properties struct {
+type OpenapiCertificate_Properties struct {
+	// Properties for a certificate stored in a Key Vault.
 	CertificateKeyVaultProperties any
-	DeploymentErrors              any
-	ExpirationDate                any
-	IssueDate                     any
-	Issuer                        any
-	Password                      any
-	ProvisioningState             any
-	PublicKeyHash                 any
-	SubjectAlternativeNames       any
-	SubjectName                   any
-	Thumbprint                    any
-	Valid                         any
-	Value                         any
-}
-
-type OpenapiCertificate_Value struct {
-	Properties any
+	// Any errors that occurred during deployment or deployment validation
+	DeploymentErrors any
+	// Certificate expiration date.
+	ExpirationDate any
+	// Certificate issue Date.
+	IssueDate any
+	// Certificate issuer.
+	Issuer any
+	// Certificate password.
+	Password any
+	// Provisioning state of the certificate.
+	ProvisioningState any
+	// Public key hash.
+	PublicKeyHash any
+	// Subject alternative names the certificate applies to.
+	SubjectAlternativeNames any
+	// Subject name of the certificate.
+	SubjectName any
+	// Certificate thumbprint.
+	Thumbprint any
+	// Is the certificate valid?.
+	Valid any
+	// PFX or PEM blob
+	Value any
 }
 
 type OpenapiCertificateConfig struct {
-	ConnectedEnvironmentName any
+	CertificateName any
+	EnvironmentName any
 }
 
 type OpenapiCertificateAttrs struct {
-	ConnectedEnvironmentName any
-	// The link to the next page of items
-	NextLink any
-	// The Certificate items on this page
-	Value any
+	CertificateName any
+	EnvironmentName any
+	// The geo-location where the resource lives
+	Location any
+	// Certificate resource specific properties
+	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var OpenapiCertificate = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_certificate",
 	Fields: ubx.FieldMap{
-		"ConnectedEnvironmentName": ubx.FieldSpec{WireName: "connected_environment_name"},
+		"CertificateName": ubx.FieldSpec{WireName: "certificate_name"},
+		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
 	},
 }

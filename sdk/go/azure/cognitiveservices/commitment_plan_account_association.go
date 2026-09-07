@@ -9,8 +9,8 @@ type CommitmentPlanAccountAssociation_Properties struct {
 }
 
 var CommitmentPlanAccountAssociation_PropertiesFields = ubx.FieldMap{
-	"AccountId": ubx.FieldSpec{WireName: "account_id"},
-}
+		"AccountId": ubx.FieldSpec{WireName: "account_id"},
+	}
 
 type CommitmentPlanAccountAssociationConfig struct {
 	// The commitment plan account association properties.
@@ -33,8 +33,8 @@ var CommitmentPlanAccountAssociation = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   CommitmentPlanAccountAssociation_PropertiesFields,
+			Kind: "object",
+			Fields: CommitmentPlanAccountAssociation_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

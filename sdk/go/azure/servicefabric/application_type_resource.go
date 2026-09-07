@@ -24,8 +24,8 @@ type ApplicationTypeResource_SystemData struct {
 }
 
 var ApplicationTypeResource_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type ApplicationTypeResourceConfig struct {
 	// It will be deprecated in New API, resource location depends on the parent resource.
@@ -61,8 +61,8 @@ var ApplicationTypeResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ApplicationTypeResource_PropertiesFields,
+			Kind: "object",
+			Fields: ApplicationTypeResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

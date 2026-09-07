@@ -51,40 +51,40 @@ type OpenapiSchedule_Properties struct {
 }
 
 var OpenapiSchedule_Properties_AdvancedSchedule_MonthlyOccurrencesFields = ubx.FieldMap{
-	"Day":        ubx.FieldSpec{WireName: "day"},
-	"Occurrence": ubx.FieldSpec{WireName: "occurrence"},
-}
+		"Day": ubx.FieldSpec{WireName: "day"},
+		"Occurrence": ubx.FieldSpec{WireName: "occurrence"},
+	}
 
 var OpenapiSchedule_Properties_AdvancedScheduleFields = ubx.FieldMap{
-	"MonthDays": ubx.FieldSpec{WireName: "month_days"},
-	"MonthlyOccurrences": ubx.FieldSpec{
-		WireName: "monthly_occurrences",
-		Kind:     "list",
-		Fields:   OpenapiSchedule_Properties_AdvancedSchedule_MonthlyOccurrencesFields,
-	},
-	"WeekDays": ubx.FieldSpec{WireName: "week_days"},
-}
+		"MonthDays": ubx.FieldSpec{WireName: "month_days"},
+		"MonthlyOccurrences": ubx.FieldSpec{
+			WireName: "monthly_occurrences",
+			Kind: "list",
+			Fields: OpenapiSchedule_Properties_AdvancedSchedule_MonthlyOccurrencesFields,
+		},
+		"WeekDays": ubx.FieldSpec{WireName: "week_days"},
+	}
 
 var OpenapiSchedule_PropertiesFields = ubx.FieldMap{
-	"AdvancedSchedule": ubx.FieldSpec{
-		WireName: "advanced_schedule",
-		Kind:     "object",
-		Fields:   OpenapiSchedule_Properties_AdvancedScheduleFields,
-	},
-	"CreationTime":            ubx.FieldSpec{WireName: "creation_time"},
-	"Description":             ubx.FieldSpec{WireName: "description"},
-	"ExpiryTime":              ubx.FieldSpec{WireName: "expiry_time"},
-	"ExpiryTimeOffsetMinutes": ubx.FieldSpec{WireName: "expiry_time_offset_minutes"},
-	"Frequency":               ubx.FieldSpec{WireName: "frequency"},
-	"Interval":                ubx.FieldSpec{WireName: "interval"},
-	"IsEnabled":               ubx.FieldSpec{WireName: "is_enabled"},
-	"LastModifiedTime":        ubx.FieldSpec{WireName: "last_modified_time"},
-	"NextRun":                 ubx.FieldSpec{WireName: "next_run"},
-	"NextRunOffsetMinutes":    ubx.FieldSpec{WireName: "next_run_offset_minutes"},
-	"StartTime":               ubx.FieldSpec{WireName: "start_time"},
-	"StartTimeOffsetMinutes":  ubx.FieldSpec{WireName: "start_time_offset_minutes"},
-	"TimeZone":                ubx.FieldSpec{WireName: "time_zone"},
-}
+		"AdvancedSchedule": ubx.FieldSpec{
+			WireName: "advanced_schedule",
+			Kind: "object",
+			Fields: OpenapiSchedule_Properties_AdvancedScheduleFields,
+		},
+		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
+		"ExpiryTimeOffsetMinutes": ubx.FieldSpec{WireName: "expiry_time_offset_minutes"},
+		"Frequency": ubx.FieldSpec{WireName: "frequency"},
+		"Interval": ubx.FieldSpec{WireName: "interval"},
+		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
+		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+		"NextRun": ubx.FieldSpec{WireName: "next_run"},
+		"NextRunOffsetMinutes": ubx.FieldSpec{WireName: "next_run_offset_minutes"},
+		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+		"StartTimeOffsetMinutes": ubx.FieldSpec{WireName: "start_time_offset_minutes"},
+		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
+	}
 
 type OpenapiScheduleConfig struct {
 	// Gets or sets the name of the Schedule.
@@ -106,8 +106,8 @@ var OpenapiSchedule = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiSchedule_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiSchedule_PropertiesFields,
 		},
 	},
 }

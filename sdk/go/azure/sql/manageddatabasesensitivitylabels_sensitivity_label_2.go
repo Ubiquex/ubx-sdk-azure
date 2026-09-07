@@ -17,7 +17,7 @@ type ManageddatabasesensitivitylabelsSensitivityLabel2_Properties struct {
 	LabelId any
 	// The label name.
 	LabelName any
-	Rank      any
+	Rank any
 	// The schema name.
 	SchemaName any
 	// The table name.
@@ -25,17 +25,17 @@ type ManageddatabasesensitivitylabelsSensitivityLabel2_Properties struct {
 }
 
 var ManageddatabasesensitivitylabelsSensitivityLabel2_PropertiesFields = ubx.FieldMap{
-	"ClientClassificationSource": ubx.FieldSpec{WireName: "client_classification_source"},
-	"ColumnName":                 ubx.FieldSpec{WireName: "column_name"},
-	"InformationType":            ubx.FieldSpec{WireName: "information_type"},
-	"InformationTypeId":          ubx.FieldSpec{WireName: "information_type_id"},
-	"IsDisabled":                 ubx.FieldSpec{WireName: "is_disabled"},
-	"LabelId":                    ubx.FieldSpec{WireName: "label_id"},
-	"LabelName":                  ubx.FieldSpec{WireName: "label_name"},
-	"Rank":                       ubx.FieldSpec{WireName: "rank"},
-	"SchemaName":                 ubx.FieldSpec{WireName: "schema_name"},
-	"TableName":                  ubx.FieldSpec{WireName: "table_name"},
-}
+		"ClientClassificationSource": ubx.FieldSpec{WireName: "client_classification_source"},
+		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
+		"InformationType": ubx.FieldSpec{WireName: "information_type"},
+		"InformationTypeId": ubx.FieldSpec{WireName: "information_type_id"},
+		"IsDisabled": ubx.FieldSpec{WireName: "is_disabled"},
+		"LabelId": ubx.FieldSpec{WireName: "label_id"},
+		"LabelName": ubx.FieldSpec{WireName: "label_name"},
+		"Rank": ubx.FieldSpec{WireName: "rank"},
+		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
+		"TableName": ubx.FieldSpec{WireName: "table_name"},
+	}
 
 type ManageddatabasesensitivitylabelsSensitivityLabel2Config struct {
 	// Properties of a sensitivity label.
@@ -54,8 +54,8 @@ var ManageddatabasesensitivitylabelsSensitivityLabel2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ManageddatabasesensitivitylabelsSensitivityLabel2_PropertiesFields,
+			Kind: "object",
+			Fields: ManageddatabasesensitivitylabelsSensitivityLabel2_PropertiesFields,
 		},
 	},
 }

@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .openapi_confidential_ledger import OpenapiConfidentialLedger, OpenapiConfidentialLedgerConfig
+from .openapi_confidential_ledger_list import OpenapiConfidentialLedgerList, OpenapiConfidentialLedgerListConfig

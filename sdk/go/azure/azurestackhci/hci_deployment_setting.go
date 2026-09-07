@@ -415,427 +415,428 @@ type HciDeploymentSetting_Properties struct {
 }
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_PayloadFields = ubx.FieldMap{
-	"FileName":   ubx.FieldSpec{WireName: "file_name"},
-	"Hash":       ubx.FieldSpec{WireName: "hash"},
-	"Identifier": ubx.FieldSpec{WireName: "identifier"},
-	"Url":        ubx.FieldSpec{WireName: "url"},
-}
+		"FileName": ubx.FieldSpec{WireName: "file_name"},
+		"Hash": ubx.FieldSpec{WireName: "hash"},
+		"Identifier": ubx.FieldSpec{WireName: "identifier"},
+		"Url": ubx.FieldSpec{WireName: "url"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfoFields = ubx.FieldMap{
-	"PackageVersion": ubx.FieldSpec{WireName: "package_version"},
-	"Payload": ubx.FieldSpec{
-		WireName: "payload",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_PayloadFields,
-	},
-}
+		"PackageVersion": ubx.FieldSpec{WireName: "package_version"},
+		"Payload": ubx.FieldSpec{
+			WireName: "payload",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfo_PayloadFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_ClusterFields = ubx.FieldMap{
-	"AzureServiceEndpoint": ubx.FieldSpec{WireName: "azure_service_endpoint"},
-	"CloudAccountName":     ubx.FieldSpec{WireName: "cloud_account_name"},
-	"ClusterPattern":       ubx.FieldSpec{WireName: "cluster_pattern"},
-	"HardwareClass":        ubx.FieldSpec{WireName: "hardware_class"},
-	"Name":                 ubx.FieldSpec{WireName: "name"},
-	"WitnessPath":          ubx.FieldSpec{WireName: "witness_path"},
-	"WitnessType":          ubx.FieldSpec{WireName: "witness_type"},
-}
+		"AzureServiceEndpoint": ubx.FieldSpec{WireName: "azure_service_endpoint"},
+		"CloudAccountName": ubx.FieldSpec{WireName: "cloud_account_name"},
+		"ClusterPattern": ubx.FieldSpec{WireName: "cluster_pattern"},
+		"HardwareClass": ubx.FieldSpec{WireName: "hardware_class"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"WitnessPath": ubx.FieldSpec{WireName: "witness_path"},
+		"WitnessType": ubx.FieldSpec{WireName: "witness_type"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverridesFields = ubx.FieldMap{
-	"JumboPacket":             ubx.FieldSpec{WireName: "jumbo_packet"},
-	"NetworkDirect":           ubx.FieldSpec{WireName: "network_direct"},
-	"NetworkDirectTechnology": ubx.FieldSpec{WireName: "network_direct_technology"},
-}
+		"JumboPacket": ubx.FieldSpec{WireName: "jumbo_packet"},
+		"NetworkDirect": ubx.FieldSpec{WireName: "network_direct"},
+		"NetworkDirectTechnology": ubx.FieldSpec{WireName: "network_direct_technology"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverridesFields = ubx.FieldMap{
-	"BandwidthPercentageSmb":         ubx.FieldSpec{WireName: "bandwidth_percentage_smb"},
-	"PriorityValue8021ActionCluster": ubx.FieldSpec{WireName: "priority_value8021_action_cluster"},
-	"PriorityValue8021ActionSmb":     ubx.FieldSpec{WireName: "priority_value8021_action_smb"},
-}
+		"BandwidthPercentageSmb": ubx.FieldSpec{WireName: "bandwidth_percentage_smb"},
+		"PriorityValue8021ActionCluster": ubx.FieldSpec{WireName: "priority_value8021_action_cluster"},
+		"PriorityValue8021ActionSmb": ubx.FieldSpec{WireName: "priority_value8021_action_smb"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverridesFields = ubx.FieldMap{
-	"EnableIov":              ubx.FieldSpec{WireName: "enable_iov"},
-	"LoadBalancingAlgorithm": ubx.FieldSpec{WireName: "load_balancing_algorithm"},
-}
+		"EnableIov": ubx.FieldSpec{WireName: "enable_iov"},
+		"LoadBalancingAlgorithm": ubx.FieldSpec{WireName: "load_balancing_algorithm"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_IntentsFields = ubx.FieldMap{
-	"Adapter": ubx.FieldSpec{WireName: "adapter"},
-	"AdapterPropertyOverrides": ubx.FieldSpec{
-		WireName: "adapter_property_overrides",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverridesFields,
-	},
-	"Name":                               ubx.FieldSpec{WireName: "name"},
-	"OverrideAdapterProperty":            ubx.FieldSpec{WireName: "override_adapter_property"},
-	"OverrideQosPolicy":                  ubx.FieldSpec{WireName: "override_qos_policy"},
-	"OverrideVirtualSwitchConfiguration": ubx.FieldSpec{WireName: "override_virtual_switch_configuration"},
-	"QosPolicyOverrides": ubx.FieldSpec{
-		WireName: "qos_policy_overrides",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverridesFields,
-	},
-	"TrafficType": ubx.FieldSpec{WireName: "traffic_type"},
-	"VirtualSwitchConfigurationOverrides": ubx.FieldSpec{
-		WireName: "virtual_switch_configuration_overrides",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverridesFields,
-	},
-}
+		"Adapter": ubx.FieldSpec{WireName: "adapter"},
+		"AdapterPropertyOverrides": ubx.FieldSpec{
+			WireName: "adapter_property_overrides",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_AdapterPropertyOverridesFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"OverrideAdapterProperty": ubx.FieldSpec{WireName: "override_adapter_property"},
+		"OverrideQosPolicy": ubx.FieldSpec{WireName: "override_qos_policy"},
+		"OverrideVirtualSwitchConfiguration": ubx.FieldSpec{WireName: "override_virtual_switch_configuration"},
+		"QosPolicyOverrides": ubx.FieldSpec{
+			WireName: "qos_policy_overrides",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_QosPolicyOverridesFields,
+		},
+		"TrafficType": ubx.FieldSpec{WireName: "traffic_type"},
+		"VirtualSwitchConfigurationOverrides": ubx.FieldSpec{
+			WireName: "virtual_switch_configuration_overrides",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_Intents_VirtualSwitchConfigurationOverridesFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfigFields = ubx.FieldMap{
-	"AddressPrefix":      ubx.FieldSpec{WireName: "address_prefix"},
-	"Name":               ubx.FieldSpec{WireName: "name"},
-	"NetworkAdapterName": ubx.FieldSpec{WireName: "network_adapter_name"},
-	"VlanId":             ubx.FieldSpec{WireName: "vlan_id"},
-}
+		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"NetworkAdapterName": ubx.FieldSpec{WireName: "network_adapter_name"},
+		"VlanId": ubx.FieldSpec{WireName: "vlan_id"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterPropertiesFields = ubx.FieldMap{
-	"BandwidthPercentageSmb":         ubx.FieldSpec{WireName: "bandwidth_percentage_smb"},
-	"JumboPacket":                    ubx.FieldSpec{WireName: "jumbo_packet"},
-	"PriorityValue8021ActionCluster": ubx.FieldSpec{WireName: "priority_value8021_action_cluster"},
-	"PriorityValue8021ActionSmb":     ubx.FieldSpec{WireName: "priority_value8021_action_smb"},
-}
+		"BandwidthPercentageSmb": ubx.FieldSpec{WireName: "bandwidth_percentage_smb"},
+		"JumboPacket": ubx.FieldSpec{WireName: "jumbo_packet"},
+		"PriorityValue8021ActionCluster": ubx.FieldSpec{WireName: "priority_value8021_action_cluster"},
+		"PriorityValue8021ActionSmb": ubx.FieldSpec{WireName: "priority_value8021_action_smb"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfigFields = ubx.FieldMap{
-	"AdapterIpconfig": ubx.FieldSpec{
-		WireName: "adapter_ipconfig",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfigFields,
-	},
-	"AdapterProperties": ubx.FieldSpec{
-		WireName: "adapter_properties",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterPropertiesFields,
-	},
-}
+		"AdapterIpconfig": ubx.FieldSpec{
+			WireName: "adapter_ipconfig",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterIpconfigFields,
+		},
+		"AdapterProperties": ubx.FieldSpec{
+			WireName: "adapter_properties",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfig_AdapterPropertiesFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworksFields = ubx.FieldMap{
-	"ClusterNetworkConfig": ubx.FieldSpec{
-		WireName: "cluster_network_config",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfigFields,
-	},
-}
+		"ClusterNetworkConfig": ubx.FieldSpec{
+			WireName: "cluster_network_config",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworks_ClusterNetworkConfigFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfoFields = ubx.FieldMap{
-	"Ipv4Address":  ubx.FieldSpec{WireName: "ipv4_address"},
-	"PhysicalNode": ubx.FieldSpec{WireName: "physical_node"},
-	"SubnetMask":   ubx.FieldSpec{WireName: "subnet_mask"},
-}
+		"Ipv4Address": ubx.FieldSpec{WireName: "ipv4_address"},
+		"PhysicalNode": ubx.FieldSpec{WireName: "physical_node"},
+		"SubnetMask": ubx.FieldSpec{WireName: "subnet_mask"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworksFields = ubx.FieldMap{
-	"Name":               ubx.FieldSpec{WireName: "name"},
-	"NetworkAdapterName": ubx.FieldSpec{WireName: "network_adapter_name"},
-	"StorageAdapterIpinfo": ubx.FieldSpec{
-		WireName: "storage_adapter_ipinfo",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfoFields,
-	},
-	"VlanId": ubx.FieldSpec{WireName: "vlan_id"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"NetworkAdapterName": ubx.FieldSpec{WireName: "network_adapter_name"},
+		"StorageAdapterIpinfo": ubx.FieldSpec{
+			WireName: "storage_adapter_ipinfo",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworks_StorageAdapterIpinfoFields,
+		},
+		"VlanId": ubx.FieldSpec{WireName: "vlan_id"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetworkFields = ubx.FieldMap{
-	"EnableStorageAutoIp": ubx.FieldSpec{WireName: "enable_storage_auto_ip"},
-	"Intents": ubx.FieldSpec{
-		WireName: "intents",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_IntentsFields,
-	},
-	"SanNetworks": ubx.FieldSpec{
-		WireName: "san_networks",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworksFields,
-	},
-	"StorageConnectivitySwitchless": ubx.FieldSpec{WireName: "storage_connectivity_switchless"},
-	"StorageNetworks": ubx.FieldSpec{
-		WireName: "storage_networks",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworksFields,
-	},
-}
+		"EnableStorageAutoIp": ubx.FieldSpec{WireName: "enable_storage_auto_ip"},
+		"Intents": ubx.FieldSpec{
+			WireName: "intents",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_IntentsFields,
+		},
+		"SanNetworks": ubx.FieldSpec{
+			WireName: "san_networks",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_SanNetworksFields,
+		},
+		"StorageConnectivitySwitchless": ubx.FieldSpec{WireName: "storage_connectivity_switchless"},
+		"StorageNetworks": ubx.FieldSpec{
+			WireName: "storage_networks",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetwork_StorageNetworksFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZonesFields = ubx.FieldMap{
-	"DnsForwarder": ubx.FieldSpec{WireName: "dns_forwarder"},
-	"DnsZoneName":  ubx.FieldSpec{WireName: "dns_zone_name"},
-}
+		"DnsForwarder": ubx.FieldSpec{WireName: "dns_forwarder"},
+		"DnsZoneName": ubx.FieldSpec{WireName: "dns_zone_name"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPoolsFields = ubx.FieldMap{
-	"EndingAddress":   ubx.FieldSpec{WireName: "ending_address"},
-	"StartingAddress": ubx.FieldSpec{WireName: "starting_address"},
-}
+		"EndingAddress": ubx.FieldSpec{WireName: "ending_address"},
+		"StartingAddress": ubx.FieldSpec{WireName: "starting_address"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetworkFields = ubx.FieldMap{
-	"DnsServerConfig": ubx.FieldSpec{WireName: "dns_server_config"},
-	"DnsServers":      ubx.FieldSpec{WireName: "dns_servers"},
-	"DnsZones": ubx.FieldSpec{
-		WireName: "dns_zones",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZonesFields,
-	},
-	"Gateway": ubx.FieldSpec{WireName: "gateway"},
-	"IpPools": ubx.FieldSpec{
-		WireName: "ip_pools",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPoolsFields,
-	},
-	"SubnetMask": ubx.FieldSpec{WireName: "subnet_mask"},
-	"UseDhcp":    ubx.FieldSpec{WireName: "use_dhcp"},
-}
+		"DnsServerConfig": ubx.FieldSpec{WireName: "dns_server_config"},
+		"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
+		"DnsZones": ubx.FieldSpec{
+			WireName: "dns_zones",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_DnsZonesFields,
+		},
+		"Gateway": ubx.FieldSpec{WireName: "gateway"},
+		"IpPools": ubx.FieldSpec{
+			WireName: "ip_pools",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetwork_IpPoolsFields,
+		},
+		"SubnetMask": ubx.FieldSpec{WireName: "subnet_mask"},
+		"UseDhcp": ubx.FieldSpec{WireName: "use_dhcp"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZonesFields = ubx.FieldMap{
-	"LocalAvailabilityZoneName": ubx.FieldSpec{WireName: "local_availability_zone_name"},
-	"Nodes":                     ubx.FieldSpec{WireName: "nodes"},
-}
+		"LocalAvailabilityZoneName": ubx.FieldSpec{WireName: "local_availability_zone_name"},
+		"Nodes": ubx.FieldSpec{WireName: "nodes"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_ObservabilityFields = ubx.FieldMap{
-	"EpisodicDataUpload":  ubx.FieldSpec{WireName: "episodic_data_upload"},
-	"EuLocation":          ubx.FieldSpec{WireName: "eu_location"},
-	"StreamingDataClient": ubx.FieldSpec{WireName: "streaming_data_client"},
-}
+		"EpisodicDataUpload": ubx.FieldSpec{WireName: "episodic_data_upload"},
+		"EuLocation": ubx.FieldSpec{WireName: "eu_location"},
+		"StreamingDataClient": ubx.FieldSpec{WireName: "streaming_data_client"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_OptionalServicesFields = ubx.FieldMap{
-	"CustomLocation": ubx.FieldSpec{WireName: "custom_location"},
-}
+		"CustomLocation": ubx.FieldSpec{WireName: "custom_location"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodesFields = ubx.FieldMap{
-	"Ipv4Address": ubx.FieldSpec{WireName: "ipv4_address"},
-	"Name":        ubx.FieldSpec{WireName: "name"},
-}
+		"Ipv4Address": ubx.FieldSpec{WireName: "ipv4_address"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkControllerFields = ubx.FieldMap{
-	"MacAddressPoolStart":          ubx.FieldSpec{WireName: "mac_address_pool_start"},
-	"MacAddressPoolStop":           ubx.FieldSpec{WireName: "mac_address_pool_stop"},
-	"NetworkVirtualizationEnabled": ubx.FieldSpec{WireName: "network_virtualization_enabled"},
-}
+		"MacAddressPoolStart": ubx.FieldSpec{WireName: "mac_address_pool_start"},
+		"MacAddressPoolStop": ubx.FieldSpec{WireName: "mac_address_pool_stop"},
+		"NetworkVirtualizationEnabled": ubx.FieldSpec{WireName: "network_virtualization_enabled"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegrationFields = ubx.FieldMap{
-	"NetworkController": ubx.FieldSpec{
-		WireName: "network_controller",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkControllerFields,
-	},
-}
+		"NetworkController": ubx.FieldSpec{
+			WireName: "network_controller",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegration_NetworkControllerFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecretsFields = ubx.FieldMap{
-	"EceSecretName":  ubx.FieldSpec{WireName: "ece_secret_name"},
-	"SecretLocation": ubx.FieldSpec{WireName: "secret_location"},
-	"SecretName":     ubx.FieldSpec{WireName: "secret_name"},
-}
+		"EceSecretName": ubx.FieldSpec{WireName: "ece_secret_name"},
+		"SecretLocation": ubx.FieldSpec{WireName: "secret_location"},
+		"SecretName": ubx.FieldSpec{WireName: "secret_name"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettingsFields = ubx.FieldMap{
-	"BitlockerBootVolume":           ubx.FieldSpec{WireName: "bitlocker_boot_volume"},
-	"BitlockerDataVolumes":          ubx.FieldSpec{WireName: "bitlocker_data_volumes"},
-	"CredentialGuardEnforced":       ubx.FieldSpec{WireName: "credential_guard_enforced"},
-	"DriftControlEnforced":          ubx.FieldSpec{WireName: "drift_control_enforced"},
-	"DrtmProtection":                ubx.FieldSpec{WireName: "drtm_protection"},
-	"HvciProtection":                ubx.FieldSpec{WireName: "hvci_protection"},
-	"SideChannelMitigationEnforced": ubx.FieldSpec{WireName: "side_channel_mitigation_enforced"},
-	"SmbClusterEncryption":          ubx.FieldSpec{WireName: "smb_cluster_encryption"},
-	"SmbSigningEnforced":            ubx.FieldSpec{WireName: "smb_signing_enforced"},
-	"WdacEnforced":                  ubx.FieldSpec{WireName: "wdac_enforced"},
-}
+		"BitlockerBootVolume": ubx.FieldSpec{WireName: "bitlocker_boot_volume"},
+		"BitlockerDataVolumes": ubx.FieldSpec{WireName: "bitlocker_data_volumes"},
+		"CredentialGuardEnforced": ubx.FieldSpec{WireName: "credential_guard_enforced"},
+		"DriftControlEnforced": ubx.FieldSpec{WireName: "drift_control_enforced"},
+		"DrtmProtection": ubx.FieldSpec{WireName: "drtm_protection"},
+		"HvciProtection": ubx.FieldSpec{WireName: "hvci_protection"},
+		"SideChannelMitigationEnforced": ubx.FieldSpec{WireName: "side_channel_mitigation_enforced"},
+		"SmbClusterEncryption": ubx.FieldSpec{WireName: "smb_cluster_encryption"},
+		"SmbSigningEnforced": ubx.FieldSpec{WireName: "smb_signing_enforced"},
+		"WdacEnforced": ubx.FieldSpec{WireName: "wdac_enforced"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2dFields = ubx.FieldMap{
-	"OverprovisioningRatio": ubx.FieldSpec{WireName: "overprovisioning_ratio"},
-	"VolumeType":            ubx.FieldSpec{WireName: "volume_type"},
-}
+		"OverprovisioningRatio": ubx.FieldSpec{WireName: "overprovisioning_ratio"},
+		"VolumeType": ubx.FieldSpec{WireName: "volume_type"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_SanFields = ubx.FieldMap{
-	"InfraPerfLunId": ubx.FieldSpec{WireName: "infra_perf_lun_id"},
-	"InfraVolLunId":  ubx.FieldSpec{WireName: "infra_vol_lun_id"},
-}
+		"InfraPerfLunId": ubx.FieldSpec{WireName: "infra_perf_lun_id"},
+		"InfraVolLunId": ubx.FieldSpec{WireName: "infra_vol_lun_id"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_StorageFields = ubx.FieldMap{
-	"ConfigurationMode": ubx.FieldSpec{WireName: "configuration_mode"},
-	"S2d": ubx.FieldSpec{
-		WireName: "s2d",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2dFields,
-	},
-	"San": ubx.FieldSpec{
-		WireName: "san",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_SanFields,
-	},
-	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-}
+		"ConfigurationMode": ubx.FieldSpec{WireName: "configuration_mode"},
+		"S2d": ubx.FieldSpec{
+			WireName: "s2d",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_S2dFields,
+		},
+		"San": ubx.FieldSpec{
+			WireName: "san",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_Storage_SanFields,
+		},
+		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentDataFields = ubx.FieldMap{
-	"AdouPath": ubx.FieldSpec{WireName: "adou_path"},
-	"AssemblyInfo": ubx.FieldSpec{
-		WireName: "assembly_info",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfoFields,
-	},
-	"Cluster": ubx.FieldSpec{
-		WireName: "cluster",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_ClusterFields,
-	},
-	"DomainFqdn": ubx.FieldSpec{WireName: "domain_fqdn"},
-	"HostNetwork": ubx.FieldSpec{
-		WireName: "host_network",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetworkFields,
-	},
-	"IdentityProvider": ubx.FieldSpec{WireName: "identity_provider"},
-	"InfrastructureNetwork": ubx.FieldSpec{
-		WireName: "infrastructure_network",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetworkFields,
-	},
-	"IsManagementCluster": ubx.FieldSpec{WireName: "is_management_cluster"},
-	"LocalAvailabilityZones": ubx.FieldSpec{
-		WireName: "local_availability_zones",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZonesFields,
-	},
-	"NamingPrefix": ubx.FieldSpec{WireName: "naming_prefix"},
-	"Observability": ubx.FieldSpec{
-		WireName: "observability",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_ObservabilityFields,
-	},
-	"OptionalServices": ubx.FieldSpec{
-		WireName: "optional_services",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_OptionalServicesFields,
-	},
-	"PhysicalNodes": ubx.FieldSpec{
-		WireName: "physical_nodes",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodesFields,
-	},
-	"SdnIntegration": ubx.FieldSpec{
-		WireName: "sdn_integration",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegrationFields,
-	},
-	"Secrets": ubx.FieldSpec{
-		WireName: "secrets",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecretsFields,
-	},
-	"SecretsLocation": ubx.FieldSpec{WireName: "secrets_location"},
-	"SecuritySettings": ubx.FieldSpec{
-		WireName: "security_settings",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettingsFields,
-	},
-	"Storage": ubx.FieldSpec{
-		WireName: "storage",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_StorageFields,
-	},
-}
+		"AdouPath": ubx.FieldSpec{WireName: "adou_path"},
+		"AssemblyInfo": ubx.FieldSpec{
+			WireName: "assembly_info",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_AssemblyInfoFields,
+		},
+		"Cluster": ubx.FieldSpec{
+			WireName: "cluster",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_ClusterFields,
+		},
+		"DomainFqdn": ubx.FieldSpec{WireName: "domain_fqdn"},
+		"HostNetwork": ubx.FieldSpec{
+			WireName: "host_network",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_HostNetworkFields,
+		},
+		"IdentityProvider": ubx.FieldSpec{WireName: "identity_provider"},
+		"InfrastructureNetwork": ubx.FieldSpec{
+			WireName: "infrastructure_network",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_InfrastructureNetworkFields,
+		},
+		"IsManagementCluster": ubx.FieldSpec{WireName: "is_management_cluster"},
+		"LocalAvailabilityZones": ubx.FieldSpec{
+			WireName: "local_availability_zones",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_LocalAvailabilityZonesFields,
+		},
+		"NamingPrefix": ubx.FieldSpec{WireName: "naming_prefix"},
+		"Observability": ubx.FieldSpec{
+			WireName: "observability",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_ObservabilityFields,
+		},
+		"OptionalServices": ubx.FieldSpec{
+			WireName: "optional_services",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_OptionalServicesFields,
+		},
+		"PhysicalNodes": ubx.FieldSpec{
+			WireName: "physical_nodes",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_PhysicalNodesFields,
+		},
+		"SdnIntegration": ubx.FieldSpec{
+			WireName: "sdn_integration",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SdnIntegrationFields,
+		},
+		"Secrets": ubx.FieldSpec{
+			WireName: "secrets",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecretsFields,
+		},
+		"SecretsLocation": ubx.FieldSpec{WireName: "secrets_location"},
+		"SecuritySettings": ubx.FieldSpec{
+			WireName: "security_settings",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecuritySettingsFields,
+		},
+		"Storage": ubx.FieldSpec{
+			WireName: "storage",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_StorageFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerPropertiesFields = ubx.FieldMap{
-	"Name":  ubx.FieldSpec{WireName: "name"},
-	"Value": ubx.FieldSpec{WireName: "value"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfoFields = ubx.FieldMap{
-	"Family":                  ubx.FieldSpec{WireName: "family"},
-	"Publisher":               ubx.FieldSpec{WireName: "publisher"},
-	"SbeManifestCreationDate": ubx.FieldSpec{WireName: "sbe_manifest_creation_date"},
-	"SbeManifestSource":       ubx.FieldSpec{WireName: "sbe_manifest_source"},
-	"Version":                 ubx.FieldSpec{WireName: "version"},
-}
+		"Family": ubx.FieldSpec{WireName: "family"},
+		"Publisher": ubx.FieldSpec{WireName: "publisher"},
+		"SbeManifestCreationDate": ubx.FieldSpec{WireName: "sbe_manifest_creation_date"},
+		"SbeManifestSource": ubx.FieldSpec{WireName: "sbe_manifest_source"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfoFields = ubx.FieldMap{
-	"CredentialList": ubx.FieldSpec{
-		WireName: "credential_list",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecretsFields,
-	},
-	"PartnerProperties": ubx.FieldSpec{
-		WireName: "partner_properties",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerPropertiesFields,
-	},
-	"SbeDeploymentInfo": ubx.FieldSpec{
-		WireName: "sbe_deployment_info",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfoFields,
-	},
-}
+		"CredentialList": ubx.FieldSpec{
+			WireName: "credential_list",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentData_SecretsFields,
+		},
+		"PartnerProperties": ubx.FieldSpec{
+			WireName: "partner_properties",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_PartnerPropertiesFields,
+		},
+		"SbeDeploymentInfo": ubx.FieldSpec{
+			WireName: "sbe_deployment_info",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfo_SbeDeploymentInfoFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnitsFields = ubx.FieldMap{
-	"DeploymentData": ubx.FieldSpec{
-		WireName: "deployment_data",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentDataFields,
-	},
-	"SbePartnerInfo": ubx.FieldSpec{
-		WireName: "sbe_partner_info",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfoFields,
-	},
-}
+		"DeploymentData": ubx.FieldSpec{
+			WireName: "deployment_data",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_DeploymentDataFields,
+		},
+		"SbePartnerInfo": ubx.FieldSpec{
+			WireName: "sbe_partner_info",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnits_SbePartnerInfoFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_DeploymentConfigurationFields = ubx.FieldMap{
-	"ScaleUnits": ubx.FieldSpec{
-		WireName: "scale_units",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnitsFields,
-	},
-	"Version": ubx.FieldSpec{WireName: "version"},
-}
+		"ScaleUnits": ubx.FieldSpec{
+			WireName: "scale_units",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfiguration_ScaleUnitsFields,
+		},
+		"Version": ubx.FieldSpec{WireName: "version"},
+	}
 
-var HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps_StepsFields = ubx.FieldMap{}
+var HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps_StepsFields = ubx.FieldMap{
+	}
 
 var HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_StepsFields = ubx.FieldMap{
-	"Description":   ubx.FieldSpec{WireName: "description"},
-	"EndTimeUtc":    ubx.FieldSpec{WireName: "end_time_utc"},
-	"Exception":     ubx.FieldSpec{WireName: "exception"},
-	"FullStepIndex": ubx.FieldSpec{WireName: "full_step_index"},
-	"Name":          ubx.FieldSpec{WireName: "name"},
-	"StartTimeUtc":  ubx.FieldSpec{WireName: "start_time_utc"},
-	"Status":        ubx.FieldSpec{WireName: "status"},
-	"Steps": ubx.FieldSpec{
-		WireName: "steps",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps_StepsFields,
-	},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"EndTimeUtc": ubx.FieldSpec{WireName: "end_time_utc"},
+		"Exception": ubx.FieldSpec{WireName: "exception"},
+		"FullStepIndex": ubx.FieldSpec{WireName: "full_step_index"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"StartTimeUtc": ubx.FieldSpec{WireName: "start_time_utc"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+		"Steps": ubx.FieldSpec{
+			WireName: "steps",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_Steps_StepsFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatusFields = ubx.FieldMap{
-	"Status": ubx.FieldSpec{WireName: "status"},
-	"Steps": ubx.FieldSpec{
-		WireName: "steps",
-		Kind:     "list",
-		Fields:   HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_StepsFields,
-	},
-}
+		"Status": ubx.FieldSpec{WireName: "status"},
+		"Steps": ubx.FieldSpec{
+			WireName: "steps",
+			Kind: "list",
+			Fields: HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatus_StepsFields,
+		},
+	}
 
 var HciDeploymentSetting_Properties_ReportedPropertiesFields = ubx.FieldMap{
-	"DeploymentStatus": ubx.FieldSpec{
-		WireName: "deployment_status",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatusFields,
-	},
-	"ValidationStatus": ubx.FieldSpec{
-		WireName: "validation_status",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatusFields,
-	},
-}
+		"DeploymentStatus": ubx.FieldSpec{
+			WireName: "deployment_status",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatusFields,
+		},
+		"ValidationStatus": ubx.FieldSpec{
+			WireName: "validation_status",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_ReportedProperties_DeploymentStatusFields,
+		},
+	}
 
 var HciDeploymentSetting_PropertiesFields = ubx.FieldMap{
-	"ArcNodeResourceIds": ubx.FieldSpec{WireName: "arc_node_resource_ids"},
-	"DeploymentConfiguration": ubx.FieldSpec{
-		WireName: "deployment_configuration",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_DeploymentConfigurationFields,
-	},
-	"DeploymentMode":    ubx.FieldSpec{WireName: "deployment_mode"},
-	"OperationType":     ubx.FieldSpec{WireName: "operation_type"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"ReportedProperties": ubx.FieldSpec{
-		WireName: "reported_properties",
-		Kind:     "object",
-		Fields:   HciDeploymentSetting_Properties_ReportedPropertiesFields,
-	},
-}
+		"ArcNodeResourceIds": ubx.FieldSpec{WireName: "arc_node_resource_ids"},
+		"DeploymentConfiguration": ubx.FieldSpec{
+			WireName: "deployment_configuration",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_DeploymentConfigurationFields,
+		},
+		"DeploymentMode": ubx.FieldSpec{WireName: "deployment_mode"},
+		"OperationType": ubx.FieldSpec{WireName: "operation_type"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ReportedProperties": ubx.FieldSpec{
+			WireName: "reported_properties",
+			Kind: "object",
+			Fields: HciDeploymentSetting_Properties_ReportedPropertiesFields,
+		},
+	}
 
 type HciDeploymentSettingConfig struct {
 	// DeploymentSetting properties
@@ -852,8 +853,8 @@ var HciDeploymentSetting = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   HciDeploymentSetting_PropertiesFields,
+			Kind: "object",
+			Fields: HciDeploymentSetting_PropertiesFields,
 		},
 	},
 }

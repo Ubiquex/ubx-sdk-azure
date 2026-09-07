@@ -3,30 +3,32 @@ package eventhub
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiAuthorizationRule_Value_Properties struct {
+type OpenapiAuthorizationRule_Properties struct {
+	// The rights associated with the rule.
 	Rights any
 }
 
-type OpenapiAuthorizationRule_Value struct {
-	Location   any
-	Properties any
-}
-
 type OpenapiAuthorizationRuleConfig struct {
+	Alias any
+	AuthorizationRuleName any
 	NamespaceName any
 }
 
 type OpenapiAuthorizationRuleAttrs struct {
+	Alias any
+	AuthorizationRuleName any
+	// The geo-location where the resource lives
+	Location any
 	NamespaceName any
-	// The link to the next page of items
-	NextLink any
-	// The AuthorizationRule items on this page
-	Value any
+	// Properties supplied to create or update AuthorizationRule
+	Properties any
 }
 
 var OpenapiAuthorizationRule = ubx.DataSourceBinding{
 	WireType: "azure_eventhub_openapi_authorization_rule",
 	Fields: ubx.FieldMap{
+		"Alias": ubx.FieldSpec{WireName: "alias"},
+		"AuthorizationRuleName": ubx.FieldSpec{WireName: "authorization_rule_name"},
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
 	},
 }

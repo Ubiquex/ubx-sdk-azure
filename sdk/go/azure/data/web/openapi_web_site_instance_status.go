@@ -3,84 +3,88 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWebSiteInstanceStatus_Value_Properties_Containers_CurrentCpuStats_CpuUsage struct {
+type OpenapiWebSiteInstanceStatus_Properties_Containers_CurrentCpuStats_CpuUsage struct {
 	KernelModeUsage any
-	PerCpuUsage     any
-	TotalUsage      any
-	UserModeUsage   any
+	PerCpuUsage any
+	TotalUsage any
+	UserModeUsage any
 }
 
-type OpenapiWebSiteInstanceStatus_Value_Properties_Containers_CurrentCpuStats_ThrottlingData struct {
-	Periods          any
+type OpenapiWebSiteInstanceStatus_Properties_Containers_CurrentCpuStats_ThrottlingData struct {
+	Periods any
 	ThrottledPeriods any
-	ThrottledTime    any
+	ThrottledTime any
 }
 
-type OpenapiWebSiteInstanceStatus_Value_Properties_Containers_CurrentCpuStats struct {
-	CpuUsage       any
+type OpenapiWebSiteInstanceStatus_Properties_Containers_CurrentCpuStats struct {
+	CpuUsage any
 	OnlineCpuCount any
 	SystemCpuUsage any
 	ThrottlingData any
 }
 
-type OpenapiWebSiteInstanceStatus_Value_Properties_Containers_Eth0 struct {
-	RxBytes   any
+type OpenapiWebSiteInstanceStatus_Properties_Containers_Eth0 struct {
+	RxBytes any
 	RxDropped any
-	RxErrors  any
+	RxErrors any
 	RxPackets any
-	TxBytes   any
+	TxBytes any
 	TxDropped any
-	TxErrors  any
+	TxErrors any
 	TxPackets any
 }
 
-type OpenapiWebSiteInstanceStatus_Value_Properties_Containers_MemoryStats struct {
-	Limit    any
+type OpenapiWebSiteInstanceStatus_Properties_Containers_MemoryStats struct {
+	Limit any
 	MaxUsage any
-	Usage    any
+	Usage any
 }
 
-type OpenapiWebSiteInstanceStatus_Value_Properties_Containers struct {
-	CurrentCpuStats   any
-	CurrentTimeStamp  any
-	Eth0              any
-	Id                any
-	MemoryStats       any
-	Name              any
-	PreviousCpuStats  any
+type OpenapiWebSiteInstanceStatus_Properties_Containers struct {
+	CurrentCpuStats any
+	CurrentTimeStamp any
+	Eth0 any
+	Id any
+	MemoryStats any
+	Name any
+	PreviousCpuStats any
 	PreviousTimeStamp any
 }
 
-type OpenapiWebSiteInstanceStatus_Value_Properties struct {
-	ConsoleUrl     any
-	Containers     any
-	DetectorUrl    any
+type OpenapiWebSiteInstanceStatus_Properties struct {
+	// Link to the console to web app instance
+	ConsoleUrl any
+	// Dictionary of <ContainerInfo>
+	Containers any
+	// Link to the Diagnose and Solve Portal
+	DetectorUrl any
+	// Link to the console to web app instance
 	HealthCheckUrl any
-	PhysicalZone   any
-	State          any
-	StatusUrl      any
-}
-
-type OpenapiWebSiteInstanceStatus_Value struct {
-	Kind       any
-	Properties any
+	// The physical zone that the instance is in
+	PhysicalZone any
+	State any
+	// Link to the GetStatusApi in Kudu
+	StatusUrl any
 }
 
 type OpenapiWebSiteInstanceStatusConfig struct {
+	InstanceId any
 	Name any
 }
 
 type OpenapiWebSiteInstanceStatusAttrs struct {
+	InstanceId any
+	// Kind of resource.
+	Kind any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	// The WebSiteInstanceStatus items on this page
-	Value any
+	// WebSiteInstanceStatus resource specific properties
+	Properties any
 }
 
 var OpenapiWebSiteInstanceStatus = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_web_site_instance_status",
 	Fields: ubx.FieldMap{
+		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -74,79 +74,79 @@ type OpenapiHttpRouteConfig_Properties struct {
 }
 
 var OpenapiHttpRouteConfig_Properties_CustomDomainsFields = ubx.FieldMap{
-	"BindingType":   ubx.FieldSpec{WireName: "binding_type"},
-	"CertificateId": ubx.FieldSpec{WireName: "certificate_id"},
-	"Name":          ubx.FieldSpec{WireName: "name"},
-}
+		"BindingType": ubx.FieldSpec{WireName: "binding_type"},
+		"CertificateId": ubx.FieldSpec{WireName: "certificate_id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiHttpRouteConfig_Properties_ProvisioningErrorsFields = ubx.FieldMap{
-	"Message":   ubx.FieldSpec{WireName: "message"},
-	"Timestamp": ubx.FieldSpec{WireName: "timestamp"},
-}
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Timestamp": ubx.FieldSpec{WireName: "timestamp"},
+	}
 
 var OpenapiHttpRouteConfig_Properties_Rules_Routes_ActionFields = ubx.FieldMap{
-	"PrefixRewrite": ubx.FieldSpec{WireName: "prefix_rewrite"},
-}
+		"PrefixRewrite": ubx.FieldSpec{WireName: "prefix_rewrite"},
+	}
 
 var OpenapiHttpRouteConfig_Properties_Rules_Routes_MatchFields = ubx.FieldMap{
-	"CaseSensitive":       ubx.FieldSpec{WireName: "case_sensitive"},
-	"Path":                ubx.FieldSpec{WireName: "path"},
-	"PathSeparatedPrefix": ubx.FieldSpec{WireName: "path_separated_prefix"},
-	"Prefix":              ubx.FieldSpec{WireName: "prefix"},
-}
+		"CaseSensitive": ubx.FieldSpec{WireName: "case_sensitive"},
+		"Path": ubx.FieldSpec{WireName: "path"},
+		"PathSeparatedPrefix": ubx.FieldSpec{WireName: "path_separated_prefix"},
+		"Prefix": ubx.FieldSpec{WireName: "prefix"},
+	}
 
 var OpenapiHttpRouteConfig_Properties_Rules_RoutesFields = ubx.FieldMap{
-	"Action": ubx.FieldSpec{
-		WireName: "action",
-		Kind:     "object",
-		Fields:   OpenapiHttpRouteConfig_Properties_Rules_Routes_ActionFields,
-	},
-	"Match": ubx.FieldSpec{
-		WireName: "match",
-		Kind:     "object",
-		Fields:   OpenapiHttpRouteConfig_Properties_Rules_Routes_MatchFields,
-	},
-}
+		"Action": ubx.FieldSpec{
+			WireName: "action",
+			Kind: "object",
+			Fields: OpenapiHttpRouteConfig_Properties_Rules_Routes_ActionFields,
+		},
+		"Match": ubx.FieldSpec{
+			WireName: "match",
+			Kind: "object",
+			Fields: OpenapiHttpRouteConfig_Properties_Rules_Routes_MatchFields,
+		},
+	}
 
 var OpenapiHttpRouteConfig_Properties_Rules_TargetsFields = ubx.FieldMap{
-	"ContainerApp": ubx.FieldSpec{WireName: "container_app"},
-	"Label":        ubx.FieldSpec{WireName: "label"},
-	"Revision":     ubx.FieldSpec{WireName: "revision"},
-}
+		"ContainerApp": ubx.FieldSpec{WireName: "container_app"},
+		"Label": ubx.FieldSpec{WireName: "label"},
+		"Revision": ubx.FieldSpec{WireName: "revision"},
+	}
 
 var OpenapiHttpRouteConfig_Properties_RulesFields = ubx.FieldMap{
-	"Description": ubx.FieldSpec{WireName: "description"},
-	"Routes": ubx.FieldSpec{
-		WireName: "routes",
-		Kind:     "list",
-		Fields:   OpenapiHttpRouteConfig_Properties_Rules_RoutesFields,
-	},
-	"Targets": ubx.FieldSpec{
-		WireName: "targets",
-		Kind:     "list",
-		Fields:   OpenapiHttpRouteConfig_Properties_Rules_TargetsFields,
-	},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Routes": ubx.FieldSpec{
+			WireName: "routes",
+			Kind: "list",
+			Fields: OpenapiHttpRouteConfig_Properties_Rules_RoutesFields,
+		},
+		"Targets": ubx.FieldSpec{
+			WireName: "targets",
+			Kind: "list",
+			Fields: OpenapiHttpRouteConfig_Properties_Rules_TargetsFields,
+		},
+	}
 
 var OpenapiHttpRouteConfig_PropertiesFields = ubx.FieldMap{
-	"CustomDomains": ubx.FieldSpec{
-		WireName: "custom_domains",
-		Kind:     "list",
-		Fields:   OpenapiHttpRouteConfig_Properties_CustomDomainsFields,
-	},
-	"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-	"ProvisioningErrors": ubx.FieldSpec{
-		WireName: "provisioning_errors",
-		Kind:     "list",
-		Fields:   OpenapiHttpRouteConfig_Properties_ProvisioningErrorsFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Rules": ubx.FieldSpec{
-		WireName: "rules",
-		Kind:     "list",
-		Fields:   OpenapiHttpRouteConfig_Properties_RulesFields,
-	},
-}
+		"CustomDomains": ubx.FieldSpec{
+			WireName: "custom_domains",
+			Kind: "list",
+			Fields: OpenapiHttpRouteConfig_Properties_CustomDomainsFields,
+		},
+		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
+		"ProvisioningErrors": ubx.FieldSpec{
+			WireName: "provisioning_errors",
+			Kind: "list",
+			Fields: OpenapiHttpRouteConfig_Properties_ProvisioningErrorsFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Rules": ubx.FieldSpec{
+			WireName: "rules",
+			Kind: "list",
+			Fields: OpenapiHttpRouteConfig_Properties_RulesFields,
+		},
+	}
 
 type OpenapiHttpRouteConfigConfig struct {
 	// Http Route Config properties
@@ -163,8 +163,8 @@ var OpenapiHttpRouteConfig = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiHttpRouteConfig_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiHttpRouteConfig_PropertiesFields,
 		},
 	},
 }

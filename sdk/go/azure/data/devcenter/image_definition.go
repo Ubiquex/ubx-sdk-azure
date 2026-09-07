@@ -3,49 +3,60 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ImageDefinition_Value_Properties_ActiveImageReference struct {
+type ImageDefinition_Properties_ActiveImageReference struct {
+	// The actual version of the image after use. When id references a gallery image latest version, this will indicate the actual version in use.
 	ExactVersion any
-	Id           any
+	// Image ID, or Image version ID. When Image ID is provided, its latest version will be used.
+	Id any
 }
 
-type ImageDefinition_Value_Properties_ImageValidationErrorDetails struct {
-	Code    any
+type ImageDefinition_Properties_ImageValidationErrorDetails struct {
+	// An identifier for the error.
+	Code any
+	// A message describing the error.
 	Message any
 }
 
-type ImageDefinition_Value_Properties_LatestBuild struct {
-	EndTime   any
-	Name      any
+type ImageDefinition_Properties_LatestBuild struct {
+	// End time of the task group.
+	EndTime any
+	// Identifier of a build.
+	Name any
+	// Start time of the task group.
 	StartTime any
-	Status    any
+	// The state of an Image Definition Build.
+	Status any
 }
 
-type ImageDefinition_Value_Properties struct {
-	ActiveImageReference        any
-	AutoImageBuild              any
-	FileUrl                     any
-	ImageReference              any
+type ImageDefinition_Properties struct {
+	// Image reference information
+	ActiveImageReference any
+	// Indicates whether auto image build is enabled/disabled.
+	AutoImageBuild any
+	// The URL to the repository file containing the image definition.
+	FileUrl any
+	// Image reference information
+	ImageReference any
+	// Image validation error details
 	ImageValidationErrorDetails any
-	ImageValidationStatus       any
-	LatestBuild                 any
-	ValidationStatus            any
-}
-
-type ImageDefinition_Value struct {
-	Properties any
+	// Image validation status
+	ImageValidationStatus any
+	// Details about the latest build.
+	LatestBuild any
+	// Catalog resource validation status
+	ValidationStatus any
 }
 
 type ImageDefinitionConfig struct {
 }
 
 type ImageDefinitionAttrs struct {
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	// Properties of an Image Definition.
+	Properties any
 }
 
 var ImageDefinition = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image_definition",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

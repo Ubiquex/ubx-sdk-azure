@@ -3,31 +3,31 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkloadNetworkVirtualMachine_Value_Properties struct {
-	DisplayName       any
+type WorkloadNetworkVirtualMachine_Properties struct {
+	// Display name of the VM.
+	DisplayName any
+	// base Workload Network provisioning state
 	ProvisioningState any
-	VmType            any
-}
-
-type WorkloadNetworkVirtualMachine_Value struct {
-	Properties any
+	// VM type
+	VmType any
 }
 
 type WorkloadNetworkVirtualMachineConfig struct {
 	PrivateCloudName any
+	VirtualMachineId any
 }
 
 type WorkloadNetworkVirtualMachineAttrs struct {
-	// The link to the next page of items
-	NextLink         any
 	PrivateCloudName any
-	// The WorkloadNetworkVirtualMachine items on this page
-	Value any
+	// NSX Virtual Machine Properties
+	Properties any
+	VirtualMachineId any
 }
 
 var WorkloadNetworkVirtualMachine = ubx.DataSourceBinding{
 	WireType: "azure_vmware_workload_network_virtual_machine",
 	Fields: ubx.FieldMap{
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
+		"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
 	},
 }

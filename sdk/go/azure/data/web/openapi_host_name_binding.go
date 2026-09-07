@@ -3,38 +3,48 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiHostNameBinding_Value_Properties struct {
-	AzureResourceName           any
-	AzureResourceType           any
+type OpenapiHostNameBinding_Properties struct {
+	// Azure resource name.
+	AzureResourceName any
+	// Azure resource type.
+	AzureResourceType any
+	// Custom DNS record type.
 	CustomHostNameDnsRecordType any
-	DomainId                    any
-	HostNameType                any
-	SiteName                    any
-	SslState                    any
-	Thumbprint                  any
-	VirtualIp                   any
-}
-
-type OpenapiHostNameBinding_Value struct {
-	Kind       any
-	Properties any
+	// Fully qualified ARM domain resource URI.
+	DomainId any
+	// Hostname type.
+	HostNameType any
+	// App Service app name.
+	SiteName any
+	// SSL type
+	SslState any
+	// SSL certificate thumbprint
+	Thumbprint any
+	// Virtual IP address assigned to the hostname if IP based SSL is enabled.
+	VirtualIp any
 }
 
 type OpenapiHostNameBindingConfig struct {
+	HostName any
 	Name any
+	Slot any
 }
 
 type OpenapiHostNameBindingAttrs struct {
+	HostName any
+	// Kind of resource.
+	Kind any
 	Name any
-	// The link to the next page of items
-	NextLink any
-	// The HostNameBinding items on this page
-	Value any
+	// HostNameBinding resource specific properties
+	Properties any
+	Slot any
 }
 
 var OpenapiHostNameBinding = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_host_name_binding",
 	Fields: ubx.FieldMap{
+		"HostName": ubx.FieldSpec{WireName: "host_name"},
 		"Name": ubx.FieldSpec{WireName: "name"},
+		"Slot": ubx.FieldSpec{WireName: "slot"},
 	},
 }

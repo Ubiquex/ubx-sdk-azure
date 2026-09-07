@@ -7,37 +7,34 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class ManagedclustersMeshRevisionProfile_Value_Properties_MeshRevisions_CompatibleWith:
+class ManagedclustersMeshRevisionProfile_Properties_MeshRevisions_CompatibleWith:
     name: Any = None
     versions: Any = None
 
 @dataclasses.dataclass
-class ManagedclustersMeshRevisionProfile_Value_Properties_MeshRevisions:
+class ManagedclustersMeshRevisionProfile_Properties_MeshRevisions:
     compatible_with: Any = None
     revision: Any = None
     upgrades: Any = None
 
 @dataclasses.dataclass
-class ManagedclustersMeshRevisionProfile_Value_Properties:
+class ManagedclustersMeshRevisionProfile_Properties:
+    # Available mesh revisions.
     mesh_revisions: Any = None
 
 @dataclasses.dataclass
-class ManagedclustersMeshRevisionProfile_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class ManagedclustersMeshRevisionProfileConfig:
-    pass
+    mode: Any = None
 
 @dataclasses.dataclass
 class ManagedclustersMeshRevisionProfileAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The MeshRevisionProfile items on this page
-    value: Any = None
+    mode: Any = None
+    # Mesh revision profile properties for a mesh
+    properties: Any = None
 
 ManagedclustersMeshRevisionProfile = ubx.DataSourceBinding(
     wire_type="azure_containerservice_managedclusters_mesh_revision_profile",
     fields={
+        "mode": ubx.FieldSpec(wire_name="mode"),
     },
 )

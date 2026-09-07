@@ -30,11 +30,11 @@ type NetworkmanagerNetworkManagerRoutingConfiguration_SystemData struct {
 }
 
 var NetworkmanagerNetworkManagerRoutingConfiguration_PropertiesFields = ubx.FieldMap{
-	"Description":         ubx.FieldSpec{WireName: "description"},
-	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
-	"ResourceGuid":        ubx.FieldSpec{WireName: "resource_guid"},
-	"RouteTableUsageMode": ubx.FieldSpec{WireName: "route_table_usage_mode"},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+		"RouteTableUsageMode": ubx.FieldSpec{WireName: "route_table_usage_mode"},
+	}
 
 type NetworkmanagerNetworkManagerRoutingConfigurationConfig struct {
 	// Defines the routing configuration properties.
@@ -61,8 +61,8 @@ var NetworkmanagerNetworkManagerRoutingConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NetworkmanagerNetworkManagerRoutingConfiguration_PropertiesFields,
+			Kind: "object",
+			Fields: NetworkmanagerNetworkManagerRoutingConfiguration_PropertiesFields,
 		},
 	},
 }

@@ -26,22 +26,22 @@ type DbOpenapiMongoMiroleDefinitionResource_Properties struct {
 }
 
 var DbOpenapiMongoMiroleDefinitionResource_Properties_PermissionsFields = ubx.FieldMap{
-	"DataActions":    ubx.FieldSpec{WireName: "data_actions"},
-	"Id":             ubx.FieldSpec{WireName: "id"},
-	"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
-}
+		"DataActions": ubx.FieldSpec{WireName: "data_actions"},
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
+	}
 
 var DbOpenapiMongoMiroleDefinitionResource_PropertiesFields = ubx.FieldMap{
-	"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
-	"Id":               ubx.FieldSpec{WireName: "id"},
-	"Permissions": ubx.FieldSpec{
-		WireName: "permissions",
-		Kind:     "list",
-		Fields:   DbOpenapiMongoMiroleDefinitionResource_Properties_PermissionsFields,
-	},
-	"RoleName": ubx.FieldSpec{WireName: "role_name"},
-	"Type":     ubx.FieldSpec{WireName: "type"},
-}
+		"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Permissions": ubx.FieldSpec{
+			WireName: "permissions",
+			Kind: "list",
+			Fields: DbOpenapiMongoMiroleDefinitionResource_Properties_PermissionsFields,
+		},
+		"RoleName": ubx.FieldSpec{WireName: "role_name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 type DbOpenapiMongoMiroleDefinitionResourceConfig struct {
 	// Azure Cosmos DB MongoMI Role Definition resource object.
@@ -58,8 +58,8 @@ var DbOpenapiMongoMiroleDefinitionResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   DbOpenapiMongoMiroleDefinitionResource_PropertiesFields,
+			Kind: "object",
+			Fields: DbOpenapiMongoMiroleDefinitionResource_PropertiesFields,
 		},
 	},
 }

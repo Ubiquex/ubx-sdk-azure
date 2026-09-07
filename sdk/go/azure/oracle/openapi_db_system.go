@@ -15,11 +15,11 @@ type OpenapiDbSystem_Properties struct {
 }
 
 var OpenapiDbSystem_PropertiesFields = ubx.FieldMap{
-	"AdminPassword":   ubx.FieldSpec{WireName: "admin_password"},
-	"DatabaseEdition": ubx.FieldSpec{WireName: "database_edition"},
-	"DbVersion":       ubx.FieldSpec{WireName: "db_version"},
-	"PdbName":         ubx.FieldSpec{WireName: "pdb_name"},
-}
+		"AdminPassword": ubx.FieldSpec{WireName: "admin_password"},
+		"DatabaseEdition": ubx.FieldSpec{WireName: "database_edition"},
+		"DbVersion": ubx.FieldSpec{WireName: "db_version"},
+		"PdbName": ubx.FieldSpec{WireName: "pdb_name"},
+	}
 
 type OpenapiDbSystemConfig struct {
 	// The geo-location where the resource lives
@@ -49,10 +49,10 @@ var OpenapiDbSystem = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiDbSystem_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiDbSystem_PropertiesFields,
 		},
-		"Tags":  ubx.FieldSpec{WireName: "tags"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

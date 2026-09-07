@@ -22,20 +22,20 @@ type OpenapiConnection_Properties struct {
 }
 
 var OpenapiConnection_Properties_ConnectionTypeFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiConnection_PropertiesFields = ubx.FieldMap{
-	"ConnectionType": ubx.FieldSpec{
-		WireName: "connection_type",
-		Kind:     "object",
-		Fields:   OpenapiConnection_Properties_ConnectionTypeFields,
-	},
-	"CreationTime":          ubx.FieldSpec{WireName: "creation_time"},
-	"Description":           ubx.FieldSpec{WireName: "description"},
-	"FieldDefinitionValues": ubx.FieldSpec{WireName: "field_definition_values"},
-	"LastModifiedTime":      ubx.FieldSpec{WireName: "last_modified_time"},
-}
+		"ConnectionType": ubx.FieldSpec{
+			WireName: "connection_type",
+			Kind: "object",
+			Fields: OpenapiConnection_Properties_ConnectionTypeFields,
+		},
+		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"FieldDefinitionValues": ubx.FieldSpec{WireName: "field_definition_values"},
+		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	}
 
 type OpenapiConnectionConfig struct {
 	// Gets or sets the name of the connection.
@@ -57,8 +57,8 @@ var OpenapiConnection = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiConnection_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiConnection_PropertiesFields,
 		},
 	},
 }

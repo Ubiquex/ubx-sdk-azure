@@ -4,4 +4,4 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .job_resource import JobResource, JobResourceConfig
+from .job_resource_list import JobResourceList, JobResourceListConfig

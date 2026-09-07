@@ -17,12 +17,12 @@ type OpenapiApplicationPackage_Properties struct {
 }
 
 var OpenapiApplicationPackage_PropertiesFields = ubx.FieldMap{
-	"Format":             ubx.FieldSpec{WireName: "format"},
-	"LastActivationTime": ubx.FieldSpec{WireName: "last_activation_time"},
-	"State":              ubx.FieldSpec{WireName: "state"},
-	"StorageUrl":         ubx.FieldSpec{WireName: "storage_url"},
-	"StorageUrlExpiry":   ubx.FieldSpec{WireName: "storage_url_expiry"},
-}
+		"Format": ubx.FieldSpec{WireName: "format"},
+		"LastActivationTime": ubx.FieldSpec{WireName: "last_activation_time"},
+		"State": ubx.FieldSpec{WireName: "state"},
+		"StorageUrl": ubx.FieldSpec{WireName: "storage_url"},
+		"StorageUrlExpiry": ubx.FieldSpec{WireName: "storage_url_expiry"},
+	}
 
 type OpenapiApplicationPackageConfig struct {
 	// Properties of an application package
@@ -45,8 +45,8 @@ var OpenapiApplicationPackage = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiApplicationPackage_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiApplicationPackage_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -7,17 +7,20 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter:
+class NetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter:
+    # Fully qualified Azure resource ID of the NSP resource
     id: Any = None
+    # Location of the network security perimeter
     location: Any = None
+    # Universal unique ID (UUID) of the network security perimeter
     perimeter_guid: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties_Subscriptions:
+class NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions:
     id: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties:
+class NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties:
     address_prefixes: Any = None
     direction: Any = None
     email_addresses: Any = None
@@ -27,20 +30,25 @@ class NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules
     subscriptions: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules:
+class NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules:
     name: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties_Profile:
+class NetworkSecurityPerimeterConfiguration_Properties_Profile:
+    # List of Access Rules
     access_rules: Any = None
+    # Current access rules version
     access_rules_version: Any = None
+    # Current diagnostic settings version
     diagnostic_settings_version: Any = None
+    # List of log categories that are enabled
     enabled_log_categories: Any = None
+    # Name of the profile
     name: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties:
+class NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties:
     description: Any = None
     issue_type: Any = None
     severity: Any = None
@@ -48,42 +56,46 @@ class NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_
     suggested_resource_ids: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues:
+class NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues:
     name: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociation:
+class NetworkSecurityPerimeterConfiguration_Properties_ResourceAssociation:
+    # Access mode of the resource association
     access_mode: Any = None
+    # Name of the resource association
     name: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value_Properties:
+class NetworkSecurityPerimeterConfiguration_Properties:
+    # Information about a network security perimeter (NSP)
     network_security_perimeter: Any = None
+    # Network security perimeter configuration profile
     profile: Any = None
+    # List of provisioning issues, if any
     provisioning_issues: Any = None
+    # Provisioning state of a network security perimeter configuration that is being created or updated.
     provisioning_state: Any = None
+    # Information about resource association
     resource_association: Any = None
 
 @dataclasses.dataclass
-class NetworkSecurityPerimeterConfiguration_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class NetworkSecurityPerimeterConfigurationConfig:
+    nsp_config_name: Any = None
     search_service_name: Any = None
 
 @dataclasses.dataclass
 class NetworkSecurityPerimeterConfigurationAttrs:
-    # The link to the next page of items
-    next_link: Any = None
+    nsp_config_name: Any = None
+    # Network security configuration properties.
+    properties: Any = None
     search_service_name: Any = None
-    # The NetworkSecurityPerimeterConfiguration items on this page
-    value: Any = None
 
 NetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding(
     wire_type="azure_search_network_security_perimeter_configuration",
     fields={
+        "nsp_config_name": ubx.FieldSpec(wire_name="nsp_config_name"),
         "search_service_name": ubx.FieldSpec(wire_name="search_service_name"),
     },
 )

@@ -3,40 +3,49 @@ package synapse
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type SqlpoolReplicationLink_Value_Properties struct {
+type SqlpoolReplicationLink_Properties struct {
+	// Legacy value indicating whether termination is allowed. Currently always returns true.
 	IsTerminationAllowed any
-	PartnerDatabase      any
-	PartnerLocation      any
-	PartnerRole          any
-	PartnerServer        any
-	PercentComplete      any
-	ReplicationMode      any
-	ReplicationState     any
-	Role                 any
-	StartTime            any
-}
-
-type SqlpoolReplicationLink_Value struct {
-	Location   any
-	Properties any
-	Type       any
+	// The name of the partner Sql pool.
+	PartnerDatabase any
+	// The Azure Region of the partner Sql pool.
+	PartnerLocation any
+	// The role of the partner Sql pool in the replication link.
+	PartnerRole any
+	// The name of the workspace hosting the partner Sql pool.
+	PartnerServer any
+	// The percentage of seeding complete for the replication link.
+	PercentComplete any
+	// Replication mode of this replication link.
+	ReplicationMode any
+	// The replication state for the replication link.
+	ReplicationState any
+	// The role of the Sql pool in the replication link.
+	Role any
+	// The start time for the replication link.
+	StartTime any
 }
 
 type SqlpoolReplicationLinkConfig struct {
+	LinkId any
 	SqlPoolName any
 }
 
 type SqlpoolReplicationLinkAttrs struct {
-	// Link to retrieve next page of results.
-	NextLink    any
+	LinkId any
+	// Location of the workspace that contains this firewall rule.
+	Location any
+	// Represents the properties of a Sql pool replication link.
+	Properties any
 	SqlPoolName any
-	// The list of Sql pool replication links housed in the Sql pool.
-	Value any
+	// Type of resource this is.
+	Type any
 }
 
 var SqlpoolReplicationLink = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_replication_link",
 	Fields: ubx.FieldMap{
+		"LinkId": ubx.FieldSpec{WireName: "link_id"},
 		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

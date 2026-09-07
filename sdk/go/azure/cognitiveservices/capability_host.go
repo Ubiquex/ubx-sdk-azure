@@ -23,15 +23,15 @@ type CapabilityHost_Properties struct {
 }
 
 var CapabilityHost_PropertiesFields = ubx.FieldMap{
-	"AiServicesConnections":          ubx.FieldSpec{WireName: "ai_services_connections"},
-	"CapabilityHostKind":             ubx.FieldSpec{WireName: "capability_host_kind"},
-	"CustomerSubnet":                 ubx.FieldSpec{WireName: "customer_subnet"},
-	"EnablePublicHostingEnvironment": ubx.FieldSpec{WireName: "enable_public_hosting_environment"},
-	"ProvisioningState":              ubx.FieldSpec{WireName: "provisioning_state"},
-	"StorageConnections":             ubx.FieldSpec{WireName: "storage_connections"},
-	"ThreadStorageConnections":       ubx.FieldSpec{WireName: "thread_storage_connections"},
-	"VectorStoreConnections":         ubx.FieldSpec{WireName: "vector_store_connections"},
-}
+		"AiServicesConnections": ubx.FieldSpec{WireName: "ai_services_connections"},
+		"CapabilityHostKind": ubx.FieldSpec{WireName: "capability_host_kind"},
+		"CustomerSubnet": ubx.FieldSpec{WireName: "customer_subnet"},
+		"EnablePublicHostingEnvironment": ubx.FieldSpec{WireName: "enable_public_hosting_environment"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"StorageConnections": ubx.FieldSpec{WireName: "storage_connections"},
+		"ThreadStorageConnections": ubx.FieldSpec{WireName: "thread_storage_connections"},
+		"VectorStoreConnections": ubx.FieldSpec{WireName: "vector_store_connections"},
+	}
 
 type CapabilityHostConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -48,8 +48,8 @@ var CapabilityHost = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   CapabilityHost_PropertiesFields,
+			Kind: "object",
+			Fields: CapabilityHost_PropertiesFields,
 		},
 	},
 }

@@ -28,7 +28,7 @@ type OpenapiPrivateLinkResource2_SystemData struct {
 }
 
 type OpenapiPrivateLinkResource2Config struct {
-	GroupName  any
+	GroupName any
 	ServerName any
 }
 
@@ -50,7 +50,7 @@ type OpenapiPrivateLinkResource2Attrs struct {
 var OpenapiPrivateLinkResource2 = ubx.DataSourceBinding{
 	WireType: "azure_mysql_openapi_private_link_resource_2",
 	Fields: ubx.FieldMap{
-		"GroupName":  ubx.FieldSpec{WireName: "group_name"},
+		"GroupName": ubx.FieldSpec{WireName: "group_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

@@ -113,78 +113,78 @@ type VirtualMachineTemplate_Properties struct {
 }
 
 var VirtualMachineTemplate_ExtendedLocationFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var VirtualMachineTemplate_Properties_Disks_StorageQoSpolicyFields = ubx.FieldMap{
-	"Id":   ubx.FieldSpec{WireName: "id"},
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var VirtualMachineTemplate_Properties_DisksFields = ubx.FieldMap{
-	"Bus":            ubx.FieldSpec{WireName: "bus"},
-	"BusType":        ubx.FieldSpec{WireName: "bus_type"},
-	"CreateDiffDisk": ubx.FieldSpec{WireName: "create_diff_disk"},
-	"DiskId":         ubx.FieldSpec{WireName: "disk_id"},
-	"DiskSizeGb":     ubx.FieldSpec{WireName: "disk_size_gb"},
-	"DisplayName":    ubx.FieldSpec{WireName: "display_name"},
-	"Lun":            ubx.FieldSpec{WireName: "lun"},
-	"MaxDiskSizeGb":  ubx.FieldSpec{WireName: "max_disk_size_gb"},
-	"Name":           ubx.FieldSpec{WireName: "name"},
-	"StorageQoSpolicy": ubx.FieldSpec{
-		WireName: "storage_qo_spolicy",
-		Kind:     "object",
-		Fields:   VirtualMachineTemplate_Properties_Disks_StorageQoSpolicyFields,
-	},
-	"TemplateDiskId": ubx.FieldSpec{WireName: "template_disk_id"},
-	"VhdFormatType":  ubx.FieldSpec{WireName: "vhd_format_type"},
-	"VhdType":        ubx.FieldSpec{WireName: "vhd_type"},
-	"VolumeType":     ubx.FieldSpec{WireName: "volume_type"},
-}
+		"Bus": ubx.FieldSpec{WireName: "bus"},
+		"BusType": ubx.FieldSpec{WireName: "bus_type"},
+		"CreateDiffDisk": ubx.FieldSpec{WireName: "create_diff_disk"},
+		"DiskId": ubx.FieldSpec{WireName: "disk_id"},
+		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"Lun": ubx.FieldSpec{WireName: "lun"},
+		"MaxDiskSizeGb": ubx.FieldSpec{WireName: "max_disk_size_gb"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"StorageQoSpolicy": ubx.FieldSpec{
+			WireName: "storage_qo_spolicy",
+			Kind: "object",
+			Fields: VirtualMachineTemplate_Properties_Disks_StorageQoSpolicyFields,
+		},
+		"TemplateDiskId": ubx.FieldSpec{WireName: "template_disk_id"},
+		"VhdFormatType": ubx.FieldSpec{WireName: "vhd_format_type"},
+		"VhdType": ubx.FieldSpec{WireName: "vhd_type"},
+		"VolumeType": ubx.FieldSpec{WireName: "volume_type"},
+	}
 
 var VirtualMachineTemplate_Properties_NetworkInterfacesFields = ubx.FieldMap{
-	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
-	"Ipv4AddressType":  ubx.FieldSpec{WireName: "ipv4_address_type"},
-	"Ipv4Addresses":    ubx.FieldSpec{WireName: "ipv4_addresses"},
-	"Ipv6AddressType":  ubx.FieldSpec{WireName: "ipv6_address_type"},
-	"Ipv6Addresses":    ubx.FieldSpec{WireName: "ipv6_addresses"},
-	"MacAddress":       ubx.FieldSpec{WireName: "mac_address"},
-	"MacAddressType":   ubx.FieldSpec{WireName: "mac_address_type"},
-	"Name":             ubx.FieldSpec{WireName: "name"},
-	"NetworkName":      ubx.FieldSpec{WireName: "network_name"},
-	"NicId":            ubx.FieldSpec{WireName: "nic_id"},
-	"VirtualNetworkId": ubx.FieldSpec{WireName: "virtual_network_id"},
-}
+		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+		"Ipv4AddressType": ubx.FieldSpec{WireName: "ipv4_address_type"},
+		"Ipv4Addresses": ubx.FieldSpec{WireName: "ipv4_addresses"},
+		"Ipv6AddressType": ubx.FieldSpec{WireName: "ipv6_address_type"},
+		"Ipv6Addresses": ubx.FieldSpec{WireName: "ipv6_addresses"},
+		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
+		"MacAddressType": ubx.FieldSpec{WireName: "mac_address_type"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"NetworkName": ubx.FieldSpec{WireName: "network_name"},
+		"NicId": ubx.FieldSpec{WireName: "nic_id"},
+		"VirtualNetworkId": ubx.FieldSpec{WireName: "virtual_network_id"},
+	}
 
 var VirtualMachineTemplate_PropertiesFields = ubx.FieldMap{
-	"ComputerName": ubx.FieldSpec{WireName: "computer_name"},
-	"CpuCount":     ubx.FieldSpec{WireName: "cpu_count"},
-	"Disks": ubx.FieldSpec{
-		WireName: "disks",
-		Kind:     "list",
-		Fields:   VirtualMachineTemplate_Properties_DisksFields,
-	},
-	"DynamicMemoryEnabled": ubx.FieldSpec{WireName: "dynamic_memory_enabled"},
-	"DynamicMemoryMaxMb":   ubx.FieldSpec{WireName: "dynamic_memory_max_mb"},
-	"DynamicMemoryMinMb":   ubx.FieldSpec{WireName: "dynamic_memory_min_mb"},
-	"Generation":           ubx.FieldSpec{WireName: "generation"},
-	"InventoryItemId":      ubx.FieldSpec{WireName: "inventory_item_id"},
-	"IsCustomizable":       ubx.FieldSpec{WireName: "is_customizable"},
-	"IsHighlyAvailable":    ubx.FieldSpec{WireName: "is_highly_available"},
-	"LimitCpuForMigration": ubx.FieldSpec{WireName: "limit_cpu_for_migration"},
-	"MemoryMb":             ubx.FieldSpec{WireName: "memory_mb"},
-	"NetworkInterfaces": ubx.FieldSpec{
-		WireName: "network_interfaces",
-		Kind:     "list",
-		Fields:   VirtualMachineTemplate_Properties_NetworkInterfacesFields,
-	},
-	"OsName":            ubx.FieldSpec{WireName: "os_name"},
-	"OsType":            ubx.FieldSpec{WireName: "os_type"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"Uuid":              ubx.FieldSpec{WireName: "uuid"},
-	"VmmServerId":       ubx.FieldSpec{WireName: "vmm_server_id"},
-}
+		"ComputerName": ubx.FieldSpec{WireName: "computer_name"},
+		"CpuCount": ubx.FieldSpec{WireName: "cpu_count"},
+		"Disks": ubx.FieldSpec{
+			WireName: "disks",
+			Kind: "list",
+			Fields: VirtualMachineTemplate_Properties_DisksFields,
+		},
+		"DynamicMemoryEnabled": ubx.FieldSpec{WireName: "dynamic_memory_enabled"},
+		"DynamicMemoryMaxMb": ubx.FieldSpec{WireName: "dynamic_memory_max_mb"},
+		"DynamicMemoryMinMb": ubx.FieldSpec{WireName: "dynamic_memory_min_mb"},
+		"Generation": ubx.FieldSpec{WireName: "generation"},
+		"InventoryItemId": ubx.FieldSpec{WireName: "inventory_item_id"},
+		"IsCustomizable": ubx.FieldSpec{WireName: "is_customizable"},
+		"IsHighlyAvailable": ubx.FieldSpec{WireName: "is_highly_available"},
+		"LimitCpuForMigration": ubx.FieldSpec{WireName: "limit_cpu_for_migration"},
+		"MemoryMb": ubx.FieldSpec{WireName: "memory_mb"},
+		"NetworkInterfaces": ubx.FieldSpec{
+			WireName: "network_interfaces",
+			Kind: "list",
+			Fields: VirtualMachineTemplate_Properties_NetworkInterfacesFields,
+		},
+		"OsName": ubx.FieldSpec{WireName: "os_name"},
+		"OsType": ubx.FieldSpec{WireName: "os_type"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"Uuid": ubx.FieldSpec{WireName: "uuid"},
+		"VmmServerId": ubx.FieldSpec{WireName: "vmm_server_id"},
+	}
 
 type VirtualMachineTemplateConfig struct {
 	// The extended location.
@@ -213,14 +213,14 @@ var VirtualMachineTemplate = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind:     "object",
-			Fields:   VirtualMachineTemplate_ExtendedLocationFields,
+			Kind: "object",
+			Fields: VirtualMachineTemplate_ExtendedLocationFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualMachineTemplate_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualMachineTemplate_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

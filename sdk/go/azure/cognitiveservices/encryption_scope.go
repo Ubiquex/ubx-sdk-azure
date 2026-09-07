@@ -11,9 +11,9 @@ type EncryptionScope_Properties struct {
 }
 
 var EncryptionScope_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"State":             ubx.FieldSpec{WireName: "state"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"State": ubx.FieldSpec{WireName: "state"},
+	}
 
 type EncryptionScopeConfig struct {
 	// Properties to EncryptionScope
@@ -36,8 +36,8 @@ var EncryptionScope = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   EncryptionScope_PropertiesFields,
+			Kind: "object",
+			Fields: EncryptionScope_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

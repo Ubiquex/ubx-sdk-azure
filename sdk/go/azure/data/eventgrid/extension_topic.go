@@ -27,7 +27,7 @@ type ExtensionTopic_SystemData struct {
 
 type ExtensionTopicConfig struct {
 	ApiVersion any
-	Scope      any
+	Scope any
 }
 
 type ExtensionTopicAttrs struct {
@@ -38,7 +38,7 @@ type ExtensionTopicAttrs struct {
 	Name any
 	// Properties of the Extension Topic
 	Properties any
-	Scope      any
+	Scope any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// Type of the resource.
@@ -49,6 +49,6 @@ var ExtensionTopic = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_extension_topic",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"Scope":      ubx.FieldSpec{WireName: "scope"},
+		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},
 }

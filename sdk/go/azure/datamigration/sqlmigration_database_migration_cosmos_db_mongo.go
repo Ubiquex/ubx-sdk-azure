@@ -54,51 +54,51 @@ type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties struct {
 }
 
 var SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetailsFields = ubx.FieldMap{
-	"DurationInSeconds":      ubx.FieldSpec{WireName: "duration_in_seconds"},
-	"MigrationError":         ubx.FieldSpec{WireName: "migration_error"},
-	"MigrationStatus":        ubx.FieldSpec{WireName: "migration_status"},
-	"ProcessedDocumentCount": ubx.FieldSpec{WireName: "processed_document_count"},
-	"SourceDocumentCount":    ubx.FieldSpec{WireName: "source_document_count"},
-}
+		"DurationInSeconds": ubx.FieldSpec{WireName: "duration_in_seconds"},
+		"MigrationError": ubx.FieldSpec{WireName: "migration_error"},
+		"MigrationStatus": ubx.FieldSpec{WireName: "migration_status"},
+		"ProcessedDocumentCount": ubx.FieldSpec{WireName: "processed_document_count"},
+		"SourceDocumentCount": ubx.FieldSpec{WireName: "source_document_count"},
+	}
 
 var SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionListFields = ubx.FieldMap{
-	"MigrationProgressDetails": ubx.FieldSpec{
-		WireName: "migration_progress_details",
-		Kind:     "object",
-		Fields:   SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetailsFields,
-	},
-	"SourceCollection": ubx.FieldSpec{WireName: "source_collection"},
-	"SourceDatabase":   ubx.FieldSpec{WireName: "source_database"},
-	"TargetCollection": ubx.FieldSpec{WireName: "target_collection"},
-	"TargetDatabase":   ubx.FieldSpec{WireName: "target_database"},
-}
+		"MigrationProgressDetails": ubx.FieldSpec{
+			WireName: "migration_progress_details",
+			Kind: "object",
+			Fields: SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetailsFields,
+		},
+		"SourceCollection": ubx.FieldSpec{WireName: "source_collection"},
+		"SourceDatabase": ubx.FieldSpec{WireName: "source_database"},
+		"TargetCollection": ubx.FieldSpec{WireName: "target_collection"},
+		"TargetDatabase": ubx.FieldSpec{WireName: "target_database"},
+	}
 
 var SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_SourceMongoConnectionFields = ubx.FieldMap{
-	"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-	"Host":             ubx.FieldSpec{WireName: "host"},
-	"Password":         ubx.FieldSpec{WireName: "password"},
-	"Port":             ubx.FieldSpec{WireName: "port"},
-	"UseSsl":           ubx.FieldSpec{WireName: "use_ssl"},
-	"UserName":         ubx.FieldSpec{WireName: "user_name"},
-}
+		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
+		"Host": ubx.FieldSpec{WireName: "host"},
+		"Password": ubx.FieldSpec{WireName: "password"},
+		"Port": ubx.FieldSpec{WireName: "port"},
+		"UseSsl": ubx.FieldSpec{WireName: "use_ssl"},
+		"UserName": ubx.FieldSpec{WireName: "user_name"},
+	}
 
 var SqlmigrationDatabaseMigrationCosmosDbMongo_PropertiesFields = ubx.FieldMap{
-	"CollectionList": ubx.FieldSpec{
-		WireName: "collection_list",
-		Kind:     "list",
-		Fields:   SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionListFields,
-	},
-	"SourceMongoConnection": ubx.FieldSpec{
-		WireName: "source_mongo_connection",
-		Kind:     "object",
-		Fields:   SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_SourceMongoConnectionFields,
-	},
-	"TargetMongoConnection": ubx.FieldSpec{
-		WireName: "target_mongo_connection",
-		Kind:     "object",
-		Fields:   SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_SourceMongoConnectionFields,
-	},
-}
+		"CollectionList": ubx.FieldSpec{
+			WireName: "collection_list",
+			Kind: "list",
+			Fields: SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionListFields,
+		},
+		"SourceMongoConnection": ubx.FieldSpec{
+			WireName: "source_mongo_connection",
+			Kind: "object",
+			Fields: SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_SourceMongoConnectionFields,
+		},
+		"TargetMongoConnection": ubx.FieldSpec{
+			WireName: "target_mongo_connection",
+			Kind: "object",
+			Fields: SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_SourceMongoConnectionFields,
+		},
+	}
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoConfig struct {
 	// Database Migration Resource properties for CosmosDb for Mongo.
@@ -115,8 +115,8 @@ var SqlmigrationDatabaseMigrationCosmosDbMongo = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   SqlmigrationDatabaseMigrationCosmosDbMongo_PropertiesFields,
+			Kind: "object",
+			Fields: SqlmigrationDatabaseMigrationCosmosDbMongo_PropertiesFields,
 		},
 	},
 }

@@ -3,71 +3,92 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VirtualwanVpnSiteLinkConnection_Value_Properties_EgressNatRules struct {
+type VirtualwanVpnSiteLinkConnection_Properties_EgressNatRules struct {
 	Id any
 }
 
-type VirtualwanVpnSiteLinkConnection_Value_Properties_IpsecPolicies struct {
-	DhGroup             any
-	IkeEncryption       any
-	IkeIntegrity        any
-	IpsecEncryption     any
-	IpsecIntegrity      any
-	PfsGroup            any
+type VirtualwanVpnSiteLinkConnection_Properties_IpsecPolicies struct {
+	DhGroup any
+	IkeEncryption any
+	IkeIntegrity any
+	IpsecEncryption any
+	IpsecIntegrity any
+	PfsGroup any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds   any
+	SaLifeTimeSeconds any
 }
 
-type VirtualwanVpnSiteLinkConnection_Value_Properties_VpnGatewayCustomBgpAddresses struct {
+type VirtualwanVpnSiteLinkConnection_Properties_VpnGatewayCustomBgpAddresses struct {
 	CustomBgpIpAddress any
-	IpConfigurationId  any
+	IpConfigurationId any
 }
 
-type VirtualwanVpnSiteLinkConnection_Value_Properties struct {
-	ConnectionBandwidth            any
-	ConnectionStatus               any
-	DpdTimeoutSeconds              any
-	EgressBytesTransferred         any
-	EgressNatRules                 any
-	EnableBgp                      any
-	EnableRateLimiting             any
-	IngressBytesTransferred        any
-	IngressNatRules                any
-	IpsecPolicies                  any
-	ProvisioningState              any
-	RoutingWeight                  any
-	SharedKey                      any
-	UseLocalAzureIpAddress         any
+type VirtualwanVpnSiteLinkConnection_Properties struct {
+	// Expected bandwidth in MBPS.
+	ConnectionBandwidth any
+	// The current state of the vpn connection.
+	ConnectionStatus any
+	// Dead Peer Detection timeout in seconds for VpnLink connection.
+	DpdTimeoutSeconds any
+	// Egress bytes transferred.
+	EgressBytesTransferred any
+	// List of egress NatRules.
+	EgressNatRules any
+	// EnableBgp flag.
+	EnableBgp any
+	// EnableBgp flag.
+	EnableRateLimiting any
+	// Ingress bytes transferred.
+	IngressBytesTransferred any
+	// List of ingress NatRules.
+	IngressNatRules any
+	// The IPSec Policies to be considered by this connection.
+	IpsecPolicies any
+	// Provisioning states of a resource.
+	ProvisioningState any
+	// Routing weight for vpn connection.
+	RoutingWeight any
+	// SharedKey for the vpn link connection. We will no longer return sharedKey in any Create/Update/Get/List/UpdateTags VpnGateway/VpnConnection/VpnLinkConnection APIs response. Please use 'Vpn Link Connections - List Default Shared Key' API to fetch Vpn link connection sharedKey.
+	SharedKey any
+	// Use local azure ip to initiate connection.
+	UseLocalAzureIpAddress any
+	// Enable policy-based traffic selectors.
 	UsePolicyBasedTrafficSelectors any
-	VpnConnectionProtocolType      any
-	VpnGatewayCustomBgpAddresses   any
-	VpnLinkConnectionMode          any
-	VpnSiteLink                    any
-}
-
-type VirtualwanVpnSiteLinkConnection_Value struct {
-	Etag       any
-	Properties any
+	// Gateway connection protocol.
+	VpnConnectionProtocolType any
+	// vpnGatewayCustomBgpAddresses used by this connection.
+	VpnGatewayCustomBgpAddresses any
+	// Vpn link connection mode.
+	VpnLinkConnectionMode any
+	// Reference to another subresource.
+	VpnSiteLink any
 }
 
 type VirtualwanVpnSiteLinkConnectionConfig struct {
 	ConnectionName any
-	GatewayName    any
+	GatewayName any
+	LinkConnectionName any
 }
 
 type VirtualwanVpnSiteLinkConnectionAttrs struct {
 	ConnectionName any
-	GatewayName    any
-	// The link to the next page of items
-	NextLink any
-	// The VpnSiteLinkConnection items on this page
-	Value any
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	GatewayName any
+	LinkConnectionName any
+	// Name of the resource.
+	Name any
+	// Parameters for VpnConnection.
+	Properties any
+	// Resource type.
+	Type any
 }
 
 var VirtualwanVpnSiteLinkConnection = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_vpn_site_link_connection",
 	Fields: ubx.FieldMap{
 		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"GatewayName":    ubx.FieldSpec{WireName: "gateway_name"},
+		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
+		"LinkConnectionName": ubx.FieldSpec{WireName: "link_connection_name"},
 	},
 }

@@ -30,6 +30,6 @@ var OpenapiBackupResult = ubx.ResourceBinding{
 	WireType: "azure_hardwaresecuritymodules_openapi_backup_result",
 	Fields: ubx.FieldMap{
 		"AzureStorageBlobContainerUri": ubx.FieldSpec{WireName: "azure_storage_blob_container_uri"},
-		"Token":                        ubx.FieldSpec{WireName: "token"},
+		"Token": ubx.FieldSpec{WireName: "token"},
 	},
 }

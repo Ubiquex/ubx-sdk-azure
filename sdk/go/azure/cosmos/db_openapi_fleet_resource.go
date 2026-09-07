@@ -9,8 +9,8 @@ type DbOpenapiFleetResource_Properties struct {
 }
 
 var DbOpenapiFleetResource_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type DbOpenapiFleetResourceConfig struct {
 	// The geo-location where the resource lives
@@ -36,8 +36,8 @@ var DbOpenapiFleetResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   DbOpenapiFleetResource_PropertiesFields,
+			Kind: "object",
+			Fields: DbOpenapiFleetResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

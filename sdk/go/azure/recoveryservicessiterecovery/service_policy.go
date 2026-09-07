@@ -18,22 +18,22 @@ type ServicePolicy_Properties struct {
 }
 
 var ServicePolicy_Properties_ProviderSpecificDetailsFields = ubx.FieldMap{
-	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-}
+		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+	}
 
 var ServicePolicy_PropertiesFields = ubx.FieldMap{
-	"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-	"ProviderSpecificDetails": ubx.FieldSpec{
-		WireName: "provider_specific_details",
-		Kind:     "object",
-		Fields:   ServicePolicy_Properties_ProviderSpecificDetailsFields,
-	},
-	"ProviderSpecificInput": ubx.FieldSpec{
-		WireName: "provider_specific_input",
-		Kind:     "object",
-		Fields:   ServicePolicy_Properties_ProviderSpecificDetailsFields,
-	},
-}
+		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
+		"ProviderSpecificDetails": ubx.FieldSpec{
+			WireName: "provider_specific_details",
+			Kind: "object",
+			Fields: ServicePolicy_Properties_ProviderSpecificDetailsFields,
+		},
+		"ProviderSpecificInput": ubx.FieldSpec{
+			WireName: "provider_specific_input",
+			Kind: "object",
+			Fields: ServicePolicy_Properties_ProviderSpecificDetailsFields,
+		},
+	}
 
 type ServicePolicyConfig struct {
 	// Policy creation properties.
@@ -52,8 +52,8 @@ var ServicePolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ServicePolicy_PropertiesFields,
+			Kind: "object",
+			Fields: ServicePolicy_PropertiesFields,
 		},
 	},
 }

@@ -11,9 +11,9 @@ type OpenapiResourceAnchor_Properties struct {
 }
 
 var OpenapiResourceAnchor_PropertiesFields = ubx.FieldMap{
-	"LinkedCompartmentId": ubx.FieldSpec{WireName: "linked_compartment_id"},
-	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"LinkedCompartmentId": ubx.FieldSpec{WireName: "linked_compartment_id"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type OpenapiResourceAnchorConfig struct {
 	// The geo-location where the resource lives
@@ -39,8 +39,8 @@ var OpenapiResourceAnchor = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiResourceAnchor_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiResourceAnchor_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

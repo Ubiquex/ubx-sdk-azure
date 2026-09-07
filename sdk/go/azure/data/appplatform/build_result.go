@@ -3,61 +3,66 @@ package appplatform
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type BuildResult_Value_Properties_BuildStages struct {
+type BuildResult_Properties_BuildStages struct {
 	ExitCode any
-	Name     any
-	Reason   any
-	Status   any
+	Name any
+	Reason any
+	Status any
 }
 
-type BuildResult_Value_Properties_Error struct {
-	Code    any
+type BuildResult_Properties_Error struct {
+	// The code of error.
+	Code any
+	// The message of error.
 	Message any
 }
 
-type BuildResult_Value_Properties struct {
-	BuildPodName      any
-	BuildStages       any
-	Error             any
-	Image             any
-	Name              any
+type BuildResult_Properties struct {
+	// The build pod name which can be used to get the build log streaming.
+	BuildPodName any
+	// All of the build stage (init-container and container) resources in build pod.
+	BuildStages any
+	// The error code compose of code and message.
+	Error any
+	// The container registry image of this build result.
+	Image any
+	// The name of this build result
+	Name any
+	// Provisioning state of the KPack build result
 	ProvisioningState any
 }
 
-type BuildResult_Value struct {
-	Properties any
-}
-
 type BuildResultConfig struct {
-	ApiVersion        any
-	BuildName         any
-	BuildServiceName  any
+	ApiVersion any
+	BuildName any
+	BuildResultName any
+	BuildServiceName any
 	ResourceGroupName any
-	ServiceName       any
-	SubscriptionId    any
+	ServiceName any
+	SubscriptionId any
 }
 
 type BuildResultAttrs struct {
-	ApiVersion       any
-	BuildName        any
+	ApiVersion any
+	BuildName any
+	BuildResultName any
 	BuildServiceName any
-	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink          any
+	// Build result resource properties payload
+	Properties any
 	ResourceGroupName any
-	ServiceName       any
-	SubscriptionId    any
-	// Collection of Build result resources
-	Value any
+	ServiceName any
+	SubscriptionId any
 }
 
 var BuildResult = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_build_result",
 	Fields: ubx.FieldMap{
-		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
-		"BuildName":         ubx.FieldSpec{WireName: "build_name"},
-		"BuildServiceName":  ubx.FieldSpec{WireName: "build_service_name"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"BuildName": ubx.FieldSpec{WireName: "build_name"},
+		"BuildResultName": ubx.FieldSpec{WireName: "build_result_name"},
+		"BuildServiceName": ubx.FieldSpec{WireName: "build_service_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

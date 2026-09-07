@@ -9,8 +9,8 @@ type DefenderForAisetting_Properties struct {
 }
 
 var DefenderForAisetting_PropertiesFields = ubx.FieldMap{
-	"State": ubx.FieldSpec{WireName: "state"},
-}
+		"State": ubx.FieldSpec{WireName: "state"},
+	}
 
 type DefenderForAisettingConfig struct {
 	// The Defender for AI resource properties.
@@ -33,8 +33,8 @@ var DefenderForAisetting = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   DefenderForAisetting_PropertiesFields,
+			Kind: "object",
+			Fields: DefenderForAisetting_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

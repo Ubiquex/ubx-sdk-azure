@@ -17,12 +17,12 @@ type HybridConnection_Properties struct {
 }
 
 var HybridConnection_PropertiesFields = ubx.FieldMap{
-	"CreatedAt":                   ubx.FieldSpec{WireName: "created_at"},
-	"ListenerCount":               ubx.FieldSpec{WireName: "listener_count"},
-	"RequiresClientAuthorization": ubx.FieldSpec{WireName: "requires_client_authorization"},
-	"UpdatedAt":                   ubx.FieldSpec{WireName: "updated_at"},
-	"UserMetadata":                ubx.FieldSpec{WireName: "user_metadata"},
-}
+		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
+		"ListenerCount": ubx.FieldSpec{WireName: "listener_count"},
+		"RequiresClientAuthorization": ubx.FieldSpec{WireName: "requires_client_authorization"},
+		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
+		"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
+	}
 
 type HybridConnectionConfig struct {
 	// Properties of the HybridConnection.
@@ -41,8 +41,8 @@ var HybridConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   HybridConnection_PropertiesFields,
+			Kind: "object",
+			Fields: HybridConnection_PropertiesFields,
 		},
 	},
 }

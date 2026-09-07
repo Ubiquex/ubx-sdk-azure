@@ -27,28 +27,28 @@ type VirtualnetworkVirtualApplianceSite_Properties struct {
 }
 
 var VirtualnetworkVirtualApplianceSite_Properties_O365Policy_BreakOutCategoriesFields = ubx.FieldMap{
-	"Allow":    ubx.FieldSpec{WireName: "allow"},
-	"Default":  ubx.FieldSpec{WireName: "default"},
-	"Optimize": ubx.FieldSpec{WireName: "optimize"},
-}
+		"Allow": ubx.FieldSpec{WireName: "allow"},
+		"Default": ubx.FieldSpec{WireName: "default"},
+		"Optimize": ubx.FieldSpec{WireName: "optimize"},
+	}
 
 var VirtualnetworkVirtualApplianceSite_Properties_O365PolicyFields = ubx.FieldMap{
-	"BreakOutCategories": ubx.FieldSpec{
-		WireName: "break_out_categories",
-		Kind:     "object",
-		Fields:   VirtualnetworkVirtualApplianceSite_Properties_O365Policy_BreakOutCategoriesFields,
-	},
-}
+		"BreakOutCategories": ubx.FieldSpec{
+			WireName: "break_out_categories",
+			Kind: "object",
+			Fields: VirtualnetworkVirtualApplianceSite_Properties_O365Policy_BreakOutCategoriesFields,
+		},
+	}
 
 var VirtualnetworkVirtualApplianceSite_PropertiesFields = ubx.FieldMap{
-	"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-	"O365Policy": ubx.FieldSpec{
-		WireName: "o365_policy",
-		Kind:     "object",
-		Fields:   VirtualnetworkVirtualApplianceSite_Properties_O365PolicyFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
+		"O365Policy": ubx.FieldSpec{
+			WireName: "o365_policy",
+			Kind: "object",
+			Fields: VirtualnetworkVirtualApplianceSite_Properties_O365PolicyFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type VirtualnetworkVirtualApplianceSiteConfig struct {
 	// Name of the resource.
@@ -74,8 +74,8 @@ var VirtualnetworkVirtualApplianceSite = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkVirtualApplianceSite_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkVirtualApplianceSite_PropertiesFields,
 		},
 	},
 }

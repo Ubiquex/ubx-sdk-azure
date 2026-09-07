@@ -3,33 +3,50 @@ package network
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ExpressrouteExpressRouteProviderPort_Value_Properties struct {
-	OverprovisionFactor      any
-	PeeringLocation          any
-	PortBandwidthInMbps      any
-	PortPairDescriptor       any
-	PrimaryAzurePort         any
+type ExpressrouteExpressRouteProviderPort_Properties struct {
+	// Overprovisioning factor for the port pair.
+	OverprovisionFactor any
+	// The peering location of the port pair.
+	PeeringLocation any
+	// Bandwidth of the port in Mbps
+	PortBandwidthInMbps any
+	// The name of the port pair.
+	PortPairDescriptor any
+	// The name of the primary port.
+	PrimaryAzurePort any
+	// Remaining Bandwidth of the port in Mbps
 	RemainingBandwidthInMbps any
-	SecondaryAzurePort       any
-	UsedBandwidthInMbps      any
-}
-
-type ExpressrouteExpressRouteProviderPort_Value struct {
-	Etag       any
-	Properties any
+	// The name of the secondary port.
+	SecondaryAzurePort any
+	// Used Bandwidth of the port in Mbps
+	UsedBandwidthInMbps any
 }
 
 type ExpressrouteExpressRouteProviderPortConfig struct {
+	Providerport any
 }
 
 type ExpressrouteExpressRouteProviderPortAttrs struct {
-	// The link to the next page of items
-	NextLink any
-	// The ExpressRouteProviderPort items on this page
-	Value any
+	// A unique read-only string that changes whenever the resource is updated.
+	Etag any
+	// Resource ID.
+	Id any
+	// Resource location.
+	Location any
+	// Resource name.
+	Name any
+	// Properties of ExpressRouteProviderPort.
+	Properties any
+	Providerport any
+	// Resource tags.
+	Tags any
+	// Resource type.
+	Type any
 }
 
 var ExpressrouteExpressRouteProviderPort = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_provider_port",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+		"Providerport": ubx.FieldSpec{WireName: "providerport"},
+	},
 }

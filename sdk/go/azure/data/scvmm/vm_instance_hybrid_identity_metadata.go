@@ -3,14 +3,13 @@ package scvmm
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type VmInstanceHybridIdentityMetadata_Value_Properties struct {
+type VmInstanceHybridIdentityMetadata_Properties struct {
+	// The provisioning state of the resource.
 	ProvisioningState any
-	PublicKey         any
-	ResourceUid       any
-}
-
-type VmInstanceHybridIdentityMetadata_Value struct {
-	Properties any
+	// Gets or sets the Public Key.
+	PublicKey any
+	// The unique identifier for the resource.
+	ResourceUid any
 }
 
 type VmInstanceHybridIdentityMetadataConfig struct {
@@ -18,11 +17,9 @@ type VmInstanceHybridIdentityMetadataConfig struct {
 }
 
 type VmInstanceHybridIdentityMetadataAttrs struct {
-	// The link to the next page of items
-	NextLink    any
+	// Describes the properties of Hybrid Identity Metadata for a Virtual Machine.
+	Properties any
 	ResourceUri any
-	// The VmInstanceHybridIdentityMetadata items on this page
-	Value any
 }
 
 var VmInstanceHybridIdentityMetadata = ubx.DataSourceBinding{

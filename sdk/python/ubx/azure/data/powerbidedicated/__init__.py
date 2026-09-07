@@ -4,7 +4,7 @@
 # re-run `ubx sdk gen` to regenerate after a provider version bump.
 SOURCE_PROVENANCE = {"source": "azure", "version": "dynamic"}
 
-from .openapi_auto_scale_vcore import OpenapiAutoScaleVcore, OpenapiAutoScaleVcoreConfig
-from .openapi_capacity_sku import OpenapiCapacitySku, OpenapiCapacitySkuConfig
-from .openapi_dedicated_capacity import OpenapiDedicatedCapacity, OpenapiDedicatedCapacityConfig
-from .openapi_sku_details_for_existing_resource import OpenapiSkuDetailsForExistingResource, OpenapiSkuDetailsForExistingResourceConfig
+from .openapi_auto_scale_vcore_list import OpenapiAutoScaleVcoreList, OpenapiAutoScaleVcoreListConfig
+from .openapi_capacity_sku_list import OpenapiCapacitySkuList, OpenapiCapacitySkuListConfig
+from .openapi_dedicated_capacity_list import OpenapiDedicatedCapacityList, OpenapiDedicatedCapacityListConfig
+from .openapi_sku_details_for_existing_resource_list import OpenapiSkuDetailsForExistingResourceList, OpenapiSkuDetailsForExistingResourceListConfig

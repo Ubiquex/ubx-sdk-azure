@@ -4,8 +4,8 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceMigrationItem_Properties_CriticalJobHistory struct {
-	JobId     any
-	JobName   any
+	JobId any
+	JobName any
 	JobStatus any
 	StartTime any
 }
@@ -20,38 +20,38 @@ type ServiceMigrationItem_Properties_CurrentJob struct {
 }
 
 type ServiceMigrationItem_Properties_HealthErrors_InnerHealthErrors struct {
-	CreationTimeUtc              any
-	CustomerResolvability        any
-	EntityId                     any
-	ErrorCategory                any
-	ErrorCode                    any
-	ErrorId                      any
-	ErrorLevel                   any
-	ErrorMessage                 any
-	ErrorSource                  any
-	ErrorType                    any
-	PossibleCauses               any
-	RecommendedAction            any
+	CreationTimeUtc any
+	CustomerResolvability any
+	EntityId any
+	ErrorCategory any
+	ErrorCode any
+	ErrorId any
+	ErrorLevel any
+	ErrorMessage any
+	ErrorSource any
+	ErrorType any
+	PossibleCauses any
+	RecommendedAction any
 	RecoveryProviderErrorMessage any
-	SummaryMessage               any
+	SummaryMessage any
 }
 
 type ServiceMigrationItem_Properties_HealthErrors struct {
-	CreationTimeUtc              any
-	CustomerResolvability        any
-	EntityId                     any
-	ErrorCategory                any
-	ErrorCode                    any
-	ErrorId                      any
-	ErrorLevel                   any
-	ErrorMessage                 any
-	ErrorSource                  any
-	ErrorType                    any
-	InnerHealthErrors            any
-	PossibleCauses               any
-	RecommendedAction            any
+	CreationTimeUtc any
+	CustomerResolvability any
+	EntityId any
+	ErrorCategory any
+	ErrorCode any
+	ErrorId any
+	ErrorLevel any
+	ErrorMessage any
+	ErrorSource any
+	ErrorType any
+	InnerHealthErrors any
+	PossibleCauses any
+	RecommendedAction any
 	RecoveryProviderErrorMessage any
-	SummaryMessage               any
+	SummaryMessage any
 }
 
 type ServiceMigrationItem_Properties_ProviderSpecificDetails struct {
@@ -103,99 +103,99 @@ type ServiceMigrationItem_Properties struct {
 }
 
 var ServiceMigrationItem_Properties_CriticalJobHistoryFields = ubx.FieldMap{
-	"JobId":     ubx.FieldSpec{WireName: "job_id"},
-	"JobName":   ubx.FieldSpec{WireName: "job_name"},
-	"JobStatus": ubx.FieldSpec{WireName: "job_status"},
-	"StartTime": ubx.FieldSpec{WireName: "start_time"},
-}
+		"JobId": ubx.FieldSpec{WireName: "job_id"},
+		"JobName": ubx.FieldSpec{WireName: "job_name"},
+		"JobStatus": ubx.FieldSpec{WireName: "job_status"},
+		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	}
 
 var ServiceMigrationItem_Properties_CurrentJobFields = ubx.FieldMap{
-	"JobId":     ubx.FieldSpec{WireName: "job_id"},
-	"JobName":   ubx.FieldSpec{WireName: "job_name"},
-	"StartTime": ubx.FieldSpec{WireName: "start_time"},
-}
+		"JobId": ubx.FieldSpec{WireName: "job_id"},
+		"JobName": ubx.FieldSpec{WireName: "job_name"},
+		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	}
 
 var ServiceMigrationItem_Properties_HealthErrors_InnerHealthErrorsFields = ubx.FieldMap{
-	"CreationTimeUtc":              ubx.FieldSpec{WireName: "creation_time_utc"},
-	"CustomerResolvability":        ubx.FieldSpec{WireName: "customer_resolvability"},
-	"EntityId":                     ubx.FieldSpec{WireName: "entity_id"},
-	"ErrorCategory":                ubx.FieldSpec{WireName: "error_category"},
-	"ErrorCode":                    ubx.FieldSpec{WireName: "error_code"},
-	"ErrorId":                      ubx.FieldSpec{WireName: "error_id"},
-	"ErrorLevel":                   ubx.FieldSpec{WireName: "error_level"},
-	"ErrorMessage":                 ubx.FieldSpec{WireName: "error_message"},
-	"ErrorSource":                  ubx.FieldSpec{WireName: "error_source"},
-	"ErrorType":                    ubx.FieldSpec{WireName: "error_type"},
-	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
-	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
-	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
-	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
-}
+		"CreationTimeUtc": ubx.FieldSpec{WireName: "creation_time_utc"},
+		"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
+		"EntityId": ubx.FieldSpec{WireName: "entity_id"},
+		"ErrorCategory": ubx.FieldSpec{WireName: "error_category"},
+		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
+		"ErrorId": ubx.FieldSpec{WireName: "error_id"},
+		"ErrorLevel": ubx.FieldSpec{WireName: "error_level"},
+		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
+		"ErrorSource": ubx.FieldSpec{WireName: "error_source"},
+		"ErrorType": ubx.FieldSpec{WireName: "error_type"},
+		"PossibleCauses": ubx.FieldSpec{WireName: "possible_causes"},
+		"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
+		"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+		"SummaryMessage": ubx.FieldSpec{WireName: "summary_message"},
+	}
 
 var ServiceMigrationItem_Properties_HealthErrorsFields = ubx.FieldMap{
-	"CreationTimeUtc":       ubx.FieldSpec{WireName: "creation_time_utc"},
-	"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
-	"EntityId":              ubx.FieldSpec{WireName: "entity_id"},
-	"ErrorCategory":         ubx.FieldSpec{WireName: "error_category"},
-	"ErrorCode":             ubx.FieldSpec{WireName: "error_code"},
-	"ErrorId":               ubx.FieldSpec{WireName: "error_id"},
-	"ErrorLevel":            ubx.FieldSpec{WireName: "error_level"},
-	"ErrorMessage":          ubx.FieldSpec{WireName: "error_message"},
-	"ErrorSource":           ubx.FieldSpec{WireName: "error_source"},
-	"ErrorType":             ubx.FieldSpec{WireName: "error_type"},
-	"InnerHealthErrors": ubx.FieldSpec{
-		WireName: "inner_health_errors",
-		Kind:     "list",
-		Fields:   ServiceMigrationItem_Properties_HealthErrors_InnerHealthErrorsFields,
-	},
-	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
-	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
-	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
-	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
-}
+		"CreationTimeUtc": ubx.FieldSpec{WireName: "creation_time_utc"},
+		"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
+		"EntityId": ubx.FieldSpec{WireName: "entity_id"},
+		"ErrorCategory": ubx.FieldSpec{WireName: "error_category"},
+		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
+		"ErrorId": ubx.FieldSpec{WireName: "error_id"},
+		"ErrorLevel": ubx.FieldSpec{WireName: "error_level"},
+		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
+		"ErrorSource": ubx.FieldSpec{WireName: "error_source"},
+		"ErrorType": ubx.FieldSpec{WireName: "error_type"},
+		"InnerHealthErrors": ubx.FieldSpec{
+			WireName: "inner_health_errors",
+			Kind: "list",
+			Fields: ServiceMigrationItem_Properties_HealthErrors_InnerHealthErrorsFields,
+		},
+		"PossibleCauses": ubx.FieldSpec{WireName: "possible_causes"},
+		"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
+		"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+		"SummaryMessage": ubx.FieldSpec{WireName: "summary_message"},
+	}
 
 var ServiceMigrationItem_Properties_ProviderSpecificDetailsFields = ubx.FieldMap{
-	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-}
+		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+	}
 
 var ServiceMigrationItem_PropertiesFields = ubx.FieldMap{
-	"AllowedOperations": ubx.FieldSpec{WireName: "allowed_operations"},
-	"CriticalJobHistory": ubx.FieldSpec{
-		WireName: "critical_job_history",
-		Kind:     "list",
-		Fields:   ServiceMigrationItem_Properties_CriticalJobHistoryFields,
-	},
-	"CurrentJob": ubx.FieldSpec{
-		WireName: "current_job",
-		Kind:     "object",
-		Fields:   ServiceMigrationItem_Properties_CurrentJobFields,
-	},
-	"EventCorrelationId": ubx.FieldSpec{WireName: "event_correlation_id"},
-	"Health":             ubx.FieldSpec{WireName: "health"},
-	"HealthErrors": ubx.FieldSpec{
-		WireName: "health_errors",
-		Kind:     "list",
-		Fields:   ServiceMigrationItem_Properties_HealthErrorsFields,
-	},
-	"LastMigrationStatus":       ubx.FieldSpec{WireName: "last_migration_status"},
-	"LastMigrationTime":         ubx.FieldSpec{WireName: "last_migration_time"},
-	"LastTestMigrationStatus":   ubx.FieldSpec{WireName: "last_test_migration_status"},
-	"LastTestMigrationTime":     ubx.FieldSpec{WireName: "last_test_migration_time"},
-	"MachineName":               ubx.FieldSpec{WireName: "machine_name"},
-	"MigrationState":            ubx.FieldSpec{WireName: "migration_state"},
-	"MigrationStateDescription": ubx.FieldSpec{WireName: "migration_state_description"},
-	"PolicyFriendlyName":        ubx.FieldSpec{WireName: "policy_friendly_name"},
-	"PolicyId":                  ubx.FieldSpec{WireName: "policy_id"},
-	"ProviderSpecificDetails": ubx.FieldSpec{
-		WireName: "provider_specific_details",
-		Kind:     "object",
-		Fields:   ServiceMigrationItem_Properties_ProviderSpecificDetailsFields,
-	},
-	"RecoveryServicesProviderId":  ubx.FieldSpec{WireName: "recovery_services_provider_id"},
-	"ReplicationStatus":           ubx.FieldSpec{WireName: "replication_status"},
-	"TestMigrateState":            ubx.FieldSpec{WireName: "test_migrate_state"},
-	"TestMigrateStateDescription": ubx.FieldSpec{WireName: "test_migrate_state_description"},
-}
+		"AllowedOperations": ubx.FieldSpec{WireName: "allowed_operations"},
+		"CriticalJobHistory": ubx.FieldSpec{
+			WireName: "critical_job_history",
+			Kind: "list",
+			Fields: ServiceMigrationItem_Properties_CriticalJobHistoryFields,
+		},
+		"CurrentJob": ubx.FieldSpec{
+			WireName: "current_job",
+			Kind: "object",
+			Fields: ServiceMigrationItem_Properties_CurrentJobFields,
+		},
+		"EventCorrelationId": ubx.FieldSpec{WireName: "event_correlation_id"},
+		"Health": ubx.FieldSpec{WireName: "health"},
+		"HealthErrors": ubx.FieldSpec{
+			WireName: "health_errors",
+			Kind: "list",
+			Fields: ServiceMigrationItem_Properties_HealthErrorsFields,
+		},
+		"LastMigrationStatus": ubx.FieldSpec{WireName: "last_migration_status"},
+		"LastMigrationTime": ubx.FieldSpec{WireName: "last_migration_time"},
+		"LastTestMigrationStatus": ubx.FieldSpec{WireName: "last_test_migration_status"},
+		"LastTestMigrationTime": ubx.FieldSpec{WireName: "last_test_migration_time"},
+		"MachineName": ubx.FieldSpec{WireName: "machine_name"},
+		"MigrationState": ubx.FieldSpec{WireName: "migration_state"},
+		"MigrationStateDescription": ubx.FieldSpec{WireName: "migration_state_description"},
+		"PolicyFriendlyName": ubx.FieldSpec{WireName: "policy_friendly_name"},
+		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
+		"ProviderSpecificDetails": ubx.FieldSpec{
+			WireName: "provider_specific_details",
+			Kind: "object",
+			Fields: ServiceMigrationItem_Properties_ProviderSpecificDetailsFields,
+		},
+		"RecoveryServicesProviderId": ubx.FieldSpec{WireName: "recovery_services_provider_id"},
+		"ReplicationStatus": ubx.FieldSpec{WireName: "replication_status"},
+		"TestMigrateState": ubx.FieldSpec{WireName: "test_migrate_state"},
+		"TestMigrateStateDescription": ubx.FieldSpec{WireName: "test_migrate_state_description"},
+	}
 
 type ServiceMigrationItemConfig struct {
 	// Enable migration input properties.
@@ -214,8 +214,8 @@ var ServiceMigrationItem = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ServiceMigrationItem_PropertiesFields,
+			Kind: "object",
+			Fields: ServiceMigrationItem_PropertiesFields,
 		},
 	},
 }

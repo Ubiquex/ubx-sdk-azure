@@ -7,26 +7,23 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiAutonomousDatabaseCharacterSet_Value_Properties:
+class OpenapiAutonomousDatabaseCharacterSet_Properties:
+    # The Oracle Autonomous Database supported character sets.
     character_set: Any = None
 
 @dataclasses.dataclass
-class OpenapiAutonomousDatabaseCharacterSet_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiAutonomousDatabaseCharacterSetConfig:
-    pass
+    adbscharsetname: Any = None
 
 @dataclasses.dataclass
 class OpenapiAutonomousDatabaseCharacterSetAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    # The AutonomousDatabaseCharacterSet items on this page
-    value: Any = None
+    adbscharsetname: Any = None
+    # AutonomousDatabaseCharacterSet resource model
+    properties: Any = None
 
 OpenapiAutonomousDatabaseCharacterSet = ubx.DataSourceBinding(
     wire_type="azure_oracle_openapi_autonomous_database_character_set",
     fields={
+        "adbscharsetname": ubx.FieldSpec(wire_name="adbscharsetname"),
     },
 )

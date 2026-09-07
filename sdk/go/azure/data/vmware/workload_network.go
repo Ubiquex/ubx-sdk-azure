@@ -3,12 +3,9 @@ package vmware
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type WorkloadNetwork_Value_Properties struct {
+type WorkloadNetwork_Properties struct {
+	// base Workload Network provisioning state
 	ProvisioningState any
-}
-
-type WorkloadNetwork_Value struct {
-	Properties any
 }
 
 type WorkloadNetworkConfig struct {
@@ -16,11 +13,9 @@ type WorkloadNetworkConfig struct {
 }
 
 type WorkloadNetworkAttrs struct {
-	// The link to the next page of items
-	NextLink         any
 	PrivateCloudName any
-	// The WorkloadNetwork items on this page
-	Value any
+	// The properties of a workload network
+	Properties any
 }
 
 var WorkloadNetwork = ubx.DataSourceBinding{

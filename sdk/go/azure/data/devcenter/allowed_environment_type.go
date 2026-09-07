@@ -3,30 +3,52 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type AllowedEnvironmentType_Value_Properties struct {
-	DisplayName       any
+type AllowedEnvironmentType_Properties struct {
+	// The display name of the allowed environment type.
+	DisplayName any
+	// Provisioning state of the resource.
 	ProvisioningState any
 }
 
-type AllowedEnvironmentType_Value struct {
-	Properties any
+type AllowedEnvironmentType_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type AllowedEnvironmentTypeConfig struct {
+	EnvironmentTypeName any
 	ProjectName any
 }
 
 type AllowedEnvironmentTypeAttrs struct {
-	// URL to get the next set of results if there are any.
-	NextLink    any
+	EnvironmentTypeName any
+	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
+	Id any
+	// The name of the resource
+	Name any
 	ProjectName any
-	// Current page of results.
-	Value any
+	// Properties of an allowed environment type.
+	Properties any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
+	Type any
 }
 
 var AllowedEnvironmentType = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_allowed_environment_type",
 	Fields: ubx.FieldMap{
+		"EnvironmentTypeName": ubx.FieldSpec{WireName: "environment_type_name"},
 		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
 	},
 }

@@ -7,21 +7,26 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiApiKvreference_Value_Properties_IdentityType_UserAssignedIdentities:
+class OpenapiApiKvreference_Properties_IdentityType_UserAssignedIdentities:
     client_id: Any = None
     principal_id: Any = None
 
 @dataclasses.dataclass
-class OpenapiApiKvreference_Value_Properties_IdentityType:
+class OpenapiApiKvreference_Properties_IdentityType:
+    # Principal Id of managed service identity.
     principal_id: Any = None
+    # Tenant of managed service identity.
     tenant_id: Any = None
+    # Type of managed service identity.
     type: Any = None
+    # The list of user assigned identities associated with the resource. The user identity dictionary key references will be ARM resource ids in the form: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}
     user_assigned_identities: Any = None
 
 @dataclasses.dataclass
-class OpenapiApiKvreference_Value_Properties:
+class OpenapiApiKvreference_Properties:
     active_version: Any = None
     details: Any = None
+    # Managed service identity.
     identity_type: Any = None
     reference: Any = None
     secret_name: Any = None
@@ -31,25 +36,23 @@ class OpenapiApiKvreference_Value_Properties:
     vault_name: Any = None
 
 @dataclasses.dataclass
-class OpenapiApiKvreference_Value:
-    kind: Any = None
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiApiKvreferenceConfig:
+    app_setting_key: Any = None
     name: Any = None
 
 @dataclasses.dataclass
 class OpenapiApiKvreferenceAttrs:
+    app_setting_key: Any = None
+    # Kind of resource.
+    kind: Any = None
     name: Any = None
-    # The link to the next page of items
-    next_link: Any = None
-    # The ApiKVReference items on this page
-    value: Any = None
+    # ApiKVReference resource specific properties
+    properties: Any = None
 
 OpenapiApiKvreference = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_api_kvreference",
     fields={
+        "app_setting_key": ubx.FieldSpec(wire_name="app_setting_key"),
         "name": ubx.FieldSpec(wire_name="name"),
     },
 )

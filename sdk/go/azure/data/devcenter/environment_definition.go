@@ -3,44 +3,36 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type EnvironmentDefinition_Value_Properties_Parameters struct {
+type EnvironmentDefinition_Properties_Parameters struct {
 	Description any
-	Id          any
-	Name        any
-	ReadOnly    any
-	Required    any
-	Type        any
+	Id any
+	Name any
+	ReadOnly any
+	Required any
+	Type any
 }
 
-type EnvironmentDefinition_Value_Properties struct {
-	Description      any
-	Parameters       any
-	TemplatePath     any
+type EnvironmentDefinition_Properties struct {
+	// A short description of the environment definition.
+	Description any
+	// Input parameters passed to an environment.
+	Parameters any
+	// Path to the Environment Definition entrypoint file.
+	TemplatePath any
+	// Catalog resource validation status
 	ValidationStatus any
 }
 
-type EnvironmentDefinition_Value struct {
-	Properties any
-}
-
 type EnvironmentDefinitionConfig struct {
-	CatalogName   any
-	DevCenterName any
 }
 
 type EnvironmentDefinitionAttrs struct {
-	CatalogName   any
-	DevCenterName any
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	// Properties of an environment definition.
+	Properties any
 }
 
 var EnvironmentDefinition = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_environment_definition",
 	Fields: ubx.FieldMap{
-		"CatalogName":   ubx.FieldSpec{WireName: "catalog_name"},
-		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
 	},
 }

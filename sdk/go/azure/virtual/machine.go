@@ -66,7 +66,7 @@ type Machine_Properties_ApplicationProfile_GalleryApplications struct {
 	Order any
 	// The resource ID of the gallery application version to install on the virtual machine. (AI-inferred)
 	PackageReferenceId any
-	Tags               any
+	Tags any
 	// If set to true, a failure to install or run the gallery application will cause the virtual machine deployment to fail. If false, the failure is ignored and the deployment continues. (AI-inferred)
 	TreatFailureAsDeploymentFailure any
 }
@@ -169,7 +169,7 @@ type Machine_Properties_InstanceView_Disks_EncryptionSettings struct {
 type Machine_Properties_InstanceView_Disks struct {
 	// A list of encryption settings applied to the disk, including references to the disk encryption key and key encryption key. (AI-inferred)
 	EncryptionSettings any
-	Name               any
+	Name any
 	// A list of status objects representing the current state and health of the disk, such as provisioning or operational statuses. (AI-inferred)
 	Statuses any
 	// Shows the storage alignment status of the disk, either 'Unaligned' or 'Aligned'. (AI-inferred)
@@ -182,7 +182,7 @@ type Machine_Properties_InstanceView_Extensions struct {
 	Statuses any
 	// The collection of sub-status messages for the extension, offering supplementary information about the extension's state. (AI-inferred)
 	Substatuses any
-	Type        any
+	Type any
 	// The version of the extension handler installed on the virtual machine, as reported in the instance view. (AI-inferred)
 	TypeHandlerVersion any
 }
@@ -411,7 +411,7 @@ type Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties
 
 type Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration struct {
 	// The name of the public IP address configuration within the network interface's IP configuration. This is a user-defined identifier for the configuration. (AI-inferred)
-	Name       any
+	Name any
 	Properties any
 	// The SKU (Stock Keeping Unit) settings for the public IP address, which determine its tier and associated features. (AI-inferred)
 	Sku any
@@ -452,12 +452,12 @@ type Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties
 	DeleteOption any
 	// Boolean flag to disable TCP state tracking for this network interface configuration. When set to true, TCP state tracking is disabled, which can improve throughput but reduces stateful security monitoring; defaults to false. (AI-inferred)
 	DisableTcpStateTracking any
-	DnsSettings             any
+	DnsSettings any
 	// The DSCP (Differentiated Services Code Point) configuration applied to this network interface configuration for Quality of Service (QoS) traffic prioritization. (AI-inferred)
 	DscpConfiguration any
 	// Enables accelerated networking on the network interface, which uses SR-IOV to improve network performance and reduce latency. (AI-inferred)
 	EnableAcceleratedNetworking any
-	EnableFpga                  any
+	EnableFpga any
 	// Enable or disable IP forwarding on this network interface. When enabled, the virtual machine can forward traffic not destined to its own IP addresses, which is required for network virtual appliances. The default is false. (AI-inferred)
 	EnableIpforwarding any
 	// A list of IP configurations for the network interface. Each configuration defines settings such as private IP address allocation, associated subnet, and optional public IP address. (AI-inferred)
@@ -473,7 +473,7 @@ type Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations struct {
 	Name any
 	// Specifies the configuration details for a network interface, including primary interface designation, IP configurations, and optional network security group or application security group associations. (AI-inferred)
 	Properties any
-	Tags       any
+	Tags any
 }
 
 type Machine_Properties_NetworkProfile_NetworkInterfaces_Properties struct {
@@ -775,7 +775,7 @@ type Machine_Properties_StorageProfile_DataDisks_ManagedDisk struct {
 	AdditionalDiskProperties any
 	// The resource ID of the disk encryption set used to encrypt the managed disk with customer-managed keys. (AI-inferred)
 	DiskEncryptionSet any
-	SecurityProfile   any
+	SecurityProfile any
 	// The storage account type for the managed disk. Allowed values are: Standard_LRS, Premium_LRS, StandardSSD_LRS, UltraSSD_LRS, Premium_ZRS, StandardSSD_ZRS, PremiumV2_LRS. (AI-inferred)
 	StorageAccountType any
 }
@@ -798,9 +798,9 @@ type Machine_Properties_StorageProfile_DataDisks struct {
 	// The source user image (VHD) for the data disk, specified as an object containing the URI of the virtual hard disk. (AI-inferred)
 	Image any
 	// Specifies the logical unit number (LUN) for the data disk. This value uniquely identifies the data disk within the virtual machine. (AI-inferred)
-	Lun         any
+	Lun any
 	ManagedDisk any
-	Name        any
+	Name any
 	// The source disk, snapshot, or image from which this data disk is created. This property is used when creating a disk from an existing resource and contains the resource ID (e.g., '/subscriptions/.../resourceGroups/.../providers/Microsoft.Compute/disks/...'). (AI-inferred)
 	SourceResource any
 	// Specifies the fault domain alignment strategy for the data disk. Supported values are `Aligned` (strict alignment) and `BestEffortAligned` (best-effort alignment). (AI-inferred)
@@ -962,10 +962,10 @@ type Machine_Resources_Properties struct {
 	// The current provisioning state of the virtual machine, such as 'Succeeded', 'Updating', 'Failed', or 'Canceled'. This reflects the progress of resource creation or update operations. (AI-inferred)
 	ProvisioningState any
 	// The publisher of the image used to create the virtual machine, such as 'Canonical' or 'MicrosoftWindowsServer'. This is part of the image reference within the VM properties. (AI-inferred)
-	Publisher        any
-	Settings         any
+	Publisher any
+	Settings any
 	SuppressFailures any
-	Type             any
+	Type any
 	// Specifies the version of the extension handler that will be used to execute the extension. For example, '1.0' or '2.0'. (AI-inferred)
 	TypeHandlerVersion any
 }
@@ -975,1102 +975,1102 @@ type Machine_Resources struct {
 }
 
 var Machine_ExtendedLocationFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var Machine_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var Machine_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   Machine_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: Machine_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var Machine_PlacementFields = ubx.FieldMap{
-	"ExcludeZones":        ubx.FieldSpec{WireName: "exclude_zones"},
-	"IncludeZones":        ubx.FieldSpec{WireName: "include_zones"},
-	"ZonePlacementPolicy": ubx.FieldSpec{WireName: "zone_placement_policy"},
-}
+		"ExcludeZones": ubx.FieldSpec{WireName: "exclude_zones"},
+		"IncludeZones": ubx.FieldSpec{WireName: "include_zones"},
+		"ZonePlacementPolicy": ubx.FieldSpec{WireName: "zone_placement_policy"},
+	}
 
 var Machine_PlanFields = ubx.FieldMap{
-	"Name":          ubx.FieldSpec{WireName: "name"},
-	"Product":       ubx.FieldSpec{WireName: "product"},
-	"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
-	"Publisher":     ubx.FieldSpec{WireName: "publisher"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Product": ubx.FieldSpec{WireName: "product"},
+		"PromotionCode": ubx.FieldSpec{WireName: "promotion_code"},
+		"Publisher": ubx.FieldSpec{WireName: "publisher"},
+	}
 
 var Machine_Properties_AdditionalCapabilitiesFields = ubx.FieldMap{
-	"EnableFips1403Encryption": ubx.FieldSpec{WireName: "enable_fips1403_encryption"},
-	"HibernationEnabled":       ubx.FieldSpec{WireName: "hibernation_enabled"},
-	"UltraSsdenabled":          ubx.FieldSpec{WireName: "ultra_ssdenabled"},
-}
+		"EnableFips1403Encryption": ubx.FieldSpec{WireName: "enable_fips1403_encryption"},
+		"HibernationEnabled": ubx.FieldSpec{WireName: "hibernation_enabled"},
+		"UltraSsdenabled": ubx.FieldSpec{WireName: "ultra_ssdenabled"},
+	}
 
 var Machine_Properties_ApplicationProfile_GalleryApplicationsFields = ubx.FieldMap{
-	"ConfigurationReference":          ubx.FieldSpec{WireName: "configuration_reference"},
-	"EnableAutomaticUpgrade":          ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
-	"Order":                           ubx.FieldSpec{WireName: "order"},
-	"PackageReferenceId":              ubx.FieldSpec{WireName: "package_reference_id"},
-	"Tags":                            ubx.FieldSpec{WireName: "tags"},
-	"TreatFailureAsDeploymentFailure": ubx.FieldSpec{WireName: "treat_failure_as_deployment_failure"},
-}
+		"ConfigurationReference": ubx.FieldSpec{WireName: "configuration_reference"},
+		"EnableAutomaticUpgrade": ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
+		"Order": ubx.FieldSpec{WireName: "order"},
+		"PackageReferenceId": ubx.FieldSpec{WireName: "package_reference_id"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"TreatFailureAsDeploymentFailure": ubx.FieldSpec{WireName: "treat_failure_as_deployment_failure"},
+	}
 
 var Machine_Properties_ApplicationProfileFields = ubx.FieldMap{
-	"GalleryApplications": ubx.FieldSpec{
-		WireName: "gallery_applications",
-		Kind:     "list",
-		Fields:   Machine_Properties_ApplicationProfile_GalleryApplicationsFields,
-	},
-}
+		"GalleryApplications": ubx.FieldSpec{
+			WireName: "gallery_applications",
+			Kind: "list",
+			Fields: Machine_Properties_ApplicationProfile_GalleryApplicationsFields,
+		},
+	}
 
 var Machine_Properties_AvailabilitySetFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var Machine_Properties_BillingProfileFields = ubx.FieldMap{
-	"MaxPrice": ubx.FieldSpec{WireName: "max_price"},
-}
+		"MaxPrice": ubx.FieldSpec{WireName: "max_price"},
+	}
 
 var Machine_Properties_CapacityReservationFields = ubx.FieldMap{
-	"CapacityReservationGroup": ubx.FieldSpec{
-		WireName: "capacity_reservation_group",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"DisableCapacityReservationAssignment": ubx.FieldSpec{WireName: "disable_capacity_reservation_assignment"},
-}
+		"CapacityReservationGroup": ubx.FieldSpec{
+			WireName: "capacity_reservation_group",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"DisableCapacityReservationAssignment": ubx.FieldSpec{WireName: "disable_capacity_reservation_assignment"},
+	}
 
 var Machine_Properties_DiagnosticsProfile_BootDiagnosticsFields = ubx.FieldMap{
-	"Enabled":    ubx.FieldSpec{WireName: "enabled"},
-	"StorageUri": ubx.FieldSpec{WireName: "storage_uri"},
-}
+		"Enabled": ubx.FieldSpec{WireName: "enabled"},
+		"StorageUri": ubx.FieldSpec{WireName: "storage_uri"},
+	}
 
 var Machine_Properties_DiagnosticsProfileFields = ubx.FieldMap{
-	"BootDiagnostics": ubx.FieldSpec{
-		WireName: "boot_diagnostics",
-		Kind:     "object",
-		Fields:   Machine_Properties_DiagnosticsProfile_BootDiagnosticsFields,
-	},
-}
+		"BootDiagnostics": ubx.FieldSpec{
+			WireName: "boot_diagnostics",
+			Kind: "object",
+			Fields: Machine_Properties_DiagnosticsProfile_BootDiagnosticsFields,
+		},
+	}
 
 var Machine_Properties_HardwareProfile_VmSizePropertiesFields = ubx.FieldMap{
-	"VCpusAvailable": ubx.FieldSpec{WireName: "v_cpus_available"},
-	"VCpusPerCore":   ubx.FieldSpec{WireName: "v_cpus_per_core"},
-}
+		"VCpusAvailable": ubx.FieldSpec{WireName: "v_cpus_available"},
+		"VCpusPerCore": ubx.FieldSpec{WireName: "v_cpus_per_core"},
+	}
 
 var Machine_Properties_HardwareProfileFields = ubx.FieldMap{
-	"ProcessorMode": ubx.FieldSpec{WireName: "processor_mode"},
-	"VmSize":        ubx.FieldSpec{WireName: "vm_size"},
-	"VmSizeProperties": ubx.FieldSpec{
-		WireName: "vm_size_properties",
-		Kind:     "object",
-		Fields:   Machine_Properties_HardwareProfile_VmSizePropertiesFields,
-	},
-}
+		"ProcessorMode": ubx.FieldSpec{WireName: "processor_mode"},
+		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
+		"VmSizeProperties": ubx.FieldSpec{
+			WireName: "vm_size_properties",
+			Kind: "object",
+			Fields: Machine_Properties_HardwareProfile_VmSizePropertiesFields,
+		},
+	}
 
 var Machine_Properties_InstanceView_BootDiagnostics_StatusFields = ubx.FieldMap{
-	"Code":          ubx.FieldSpec{WireName: "code"},
-	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-	"Level":         ubx.FieldSpec{WireName: "level"},
-	"Message":       ubx.FieldSpec{WireName: "message"},
-	"Time":          ubx.FieldSpec{WireName: "time"},
-}
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+		"Level": ubx.FieldSpec{WireName: "level"},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Time": ubx.FieldSpec{WireName: "time"},
+	}
 
 var Machine_Properties_InstanceView_BootDiagnosticsFields = ubx.FieldMap{
-	"ConsoleScreenshotBlobUri": ubx.FieldSpec{WireName: "console_screenshot_blob_uri"},
-	"SerialConsoleLogBlobUri":  ubx.FieldSpec{WireName: "serial_console_log_blob_uri"},
-	"Status": ubx.FieldSpec{
-		WireName: "status",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-}
+		"ConsoleScreenshotBlobUri": ubx.FieldSpec{WireName: "console_screenshot_blob_uri"},
+		"SerialConsoleLogBlobUri": ubx.FieldSpec{WireName: "serial_console_log_blob_uri"},
+		"Status": ubx.FieldSpec{
+			WireName: "status",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+	}
 
 var Machine_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKeyFields = ubx.FieldMap{
-	"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
-	"SourceVault": ubx.FieldSpec{
-		WireName: "source_vault",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-}
+		"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
+		"SourceVault": ubx.FieldSpec{
+			WireName: "source_vault",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+	}
 
 var Machine_Properties_InstanceView_Disks_EncryptionSettings_KeyEncryptionKeyFields = ubx.FieldMap{
-	"KeyUrl": ubx.FieldSpec{WireName: "key_url"},
-	"SourceVault": ubx.FieldSpec{
-		WireName: "source_vault",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-}
+		"KeyUrl": ubx.FieldSpec{WireName: "key_url"},
+		"SourceVault": ubx.FieldSpec{
+			WireName: "source_vault",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+	}
 
 var Machine_Properties_InstanceView_Disks_EncryptionSettingsFields = ubx.FieldMap{
-	"DiskEncryptionKey": ubx.FieldSpec{
-		WireName: "disk_encryption_key",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKeyFields,
-	},
-	"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	"KeyEncryptionKey": ubx.FieldSpec{
-		WireName: "key_encryption_key",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_Disks_EncryptionSettings_KeyEncryptionKeyFields,
-	},
-}
+		"DiskEncryptionKey": ubx.FieldSpec{
+			WireName: "disk_encryption_key",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_Disks_EncryptionSettings_DiskEncryptionKeyFields,
+		},
+		"Enabled": ubx.FieldSpec{WireName: "enabled"},
+		"KeyEncryptionKey": ubx.FieldSpec{
+			WireName: "key_encryption_key",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_Disks_EncryptionSettings_KeyEncryptionKeyFields,
+		},
+	}
 
 var Machine_Properties_InstanceView_DisksFields = ubx.FieldMap{
-	"EncryptionSettings": ubx.FieldSpec{
-		WireName: "encryption_settings",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_Disks_EncryptionSettingsFields,
-	},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Statuses": ubx.FieldSpec{
-		WireName: "statuses",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-	"StorageAlignmentStatus": ubx.FieldSpec{WireName: "storage_alignment_status"},
-}
+		"EncryptionSettings": ubx.FieldSpec{
+			WireName: "encryption_settings",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_Disks_EncryptionSettingsFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Statuses": ubx.FieldSpec{
+			WireName: "statuses",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+		"StorageAlignmentStatus": ubx.FieldSpec{WireName: "storage_alignment_status"},
+	}
 
 var Machine_Properties_InstanceView_ExtensionsFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Statuses": ubx.FieldSpec{
-		WireName: "statuses",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-	"Substatuses": ubx.FieldSpec{
-		WireName: "substatuses",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-	"Type":               ubx.FieldSpec{WireName: "type"},
-	"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Statuses": ubx.FieldSpec{
+			WireName: "statuses",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+		"Substatuses": ubx.FieldSpec{
+			WireName: "substatuses",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
+	}
 
 var Machine_Properties_InstanceView_InterconnectInstanceViewFields = ubx.FieldMap{
-	"InterconnectSubgroupId": ubx.FieldSpec{WireName: "interconnect_subgroup_id"},
-}
+		"InterconnectSubgroupId": ubx.FieldSpec{WireName: "interconnect_subgroup_id"},
+	}
 
 var Machine_Properties_InstanceView_MaintenanceRedeployStatusFields = ubx.FieldMap{
-	"IsCustomerInitiatedMaintenanceAllowed": ubx.FieldSpec{WireName: "is_customer_initiated_maintenance_allowed"},
-	"LastOperationMessage":                  ubx.FieldSpec{WireName: "last_operation_message"},
-	"LastOperationResultCode":               ubx.FieldSpec{WireName: "last_operation_result_code"},
-	"MaintenanceWindowEndTime":              ubx.FieldSpec{WireName: "maintenance_window_end_time"},
-	"MaintenanceWindowStartTime":            ubx.FieldSpec{WireName: "maintenance_window_start_time"},
-	"PreMaintenanceWindowEndTime":           ubx.FieldSpec{WireName: "pre_maintenance_window_end_time"},
-	"PreMaintenanceWindowStartTime":         ubx.FieldSpec{WireName: "pre_maintenance_window_start_time"},
-}
+		"IsCustomerInitiatedMaintenanceAllowed": ubx.FieldSpec{WireName: "is_customer_initiated_maintenance_allowed"},
+		"LastOperationMessage": ubx.FieldSpec{WireName: "last_operation_message"},
+		"LastOperationResultCode": ubx.FieldSpec{WireName: "last_operation_result_code"},
+		"MaintenanceWindowEndTime": ubx.FieldSpec{WireName: "maintenance_window_end_time"},
+		"MaintenanceWindowStartTime": ubx.FieldSpec{WireName: "maintenance_window_start_time"},
+		"PreMaintenanceWindowEndTime": ubx.FieldSpec{WireName: "pre_maintenance_window_end_time"},
+		"PreMaintenanceWindowStartTime": ubx.FieldSpec{WireName: "pre_maintenance_window_start_time"},
+	}
 
 var Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_Error_DetailsFields = ubx.FieldMap{
-	"Code":    ubx.FieldSpec{WireName: "code"},
-	"Message": ubx.FieldSpec{WireName: "message"},
-	"Target":  ubx.FieldSpec{WireName: "target"},
-}
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Target": ubx.FieldSpec{WireName: "target"},
+	}
 
 var Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_Error_InnererrorFields = ubx.FieldMap{
-	"Errordetail":   ubx.FieldSpec{WireName: "errordetail"},
-	"Exceptiontype": ubx.FieldSpec{WireName: "exceptiontype"},
-}
+		"Errordetail": ubx.FieldSpec{WireName: "errordetail"},
+		"Exceptiontype": ubx.FieldSpec{WireName: "exceptiontype"},
+	}
 
 var Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_ErrorFields = ubx.FieldMap{
-	"Code": ubx.FieldSpec{WireName: "code"},
-	"Details": ubx.FieldSpec{
-		WireName: "details",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_Error_DetailsFields,
-	},
-	"Innererror": ubx.FieldSpec{
-		WireName: "innererror",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_Error_InnererrorFields,
-	},
-	"Message": ubx.FieldSpec{WireName: "message"},
-	"Target":  ubx.FieldSpec{WireName: "target"},
-}
+		"Code": ubx.FieldSpec{WireName: "code"},
+		"Details": ubx.FieldSpec{
+			WireName: "details",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_Error_DetailsFields,
+		},
+		"Innererror": ubx.FieldSpec{
+			WireName: "innererror",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_Error_InnererrorFields,
+		},
+		"Message": ubx.FieldSpec{WireName: "message"},
+		"Target": ubx.FieldSpec{WireName: "target"},
+	}
 
 var Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummaryFields = ubx.FieldMap{
-	"AssessmentActivityId":          ubx.FieldSpec{WireName: "assessment_activity_id"},
-	"CriticalAndSecurityPatchCount": ubx.FieldSpec{WireName: "critical_and_security_patch_count"},
-	"Error": ubx.FieldSpec{
-		WireName: "error",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_ErrorFields,
-	},
-	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-	"OtherPatchCount":  ubx.FieldSpec{WireName: "other_patch_count"},
-	"RebootPending":    ubx.FieldSpec{WireName: "reboot_pending"},
-	"StartTime":        ubx.FieldSpec{WireName: "start_time"},
-	"Status":           ubx.FieldSpec{WireName: "status"},
-}
+		"AssessmentActivityId": ubx.FieldSpec{WireName: "assessment_activity_id"},
+		"CriticalAndSecurityPatchCount": ubx.FieldSpec{WireName: "critical_and_security_patch_count"},
+		"Error": ubx.FieldSpec{
+			WireName: "error",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_ErrorFields,
+		},
+		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+		"OtherPatchCount": ubx.FieldSpec{WireName: "other_patch_count"},
+		"RebootPending": ubx.FieldSpec{WireName: "reboot_pending"},
+		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+	}
 
 var Machine_Properties_InstanceView_PatchStatus_LastPatchInstallationSummaryFields = ubx.FieldMap{
-	"Error": ubx.FieldSpec{
-		WireName: "error",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_ErrorFields,
-	},
-	"ExcludedPatchCount":        ubx.FieldSpec{WireName: "excluded_patch_count"},
-	"FailedPatchCount":          ubx.FieldSpec{WireName: "failed_patch_count"},
-	"InstallationActivityId":    ubx.FieldSpec{WireName: "installation_activity_id"},
-	"InstalledPatchCount":       ubx.FieldSpec{WireName: "installed_patch_count"},
-	"LastModifiedTime":          ubx.FieldSpec{WireName: "last_modified_time"},
-	"MaintenanceWindowExceeded": ubx.FieldSpec{WireName: "maintenance_window_exceeded"},
-	"NotSelectedPatchCount":     ubx.FieldSpec{WireName: "not_selected_patch_count"},
-	"PendingPatchCount":         ubx.FieldSpec{WireName: "pending_patch_count"},
-	"StartTime":                 ubx.FieldSpec{WireName: "start_time"},
-	"Status":                    ubx.FieldSpec{WireName: "status"},
-}
+		"Error": ubx.FieldSpec{
+			WireName: "error",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummary_ErrorFields,
+		},
+		"ExcludedPatchCount": ubx.FieldSpec{WireName: "excluded_patch_count"},
+		"FailedPatchCount": ubx.FieldSpec{WireName: "failed_patch_count"},
+		"InstallationActivityId": ubx.FieldSpec{WireName: "installation_activity_id"},
+		"InstalledPatchCount": ubx.FieldSpec{WireName: "installed_patch_count"},
+		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+		"MaintenanceWindowExceeded": ubx.FieldSpec{WireName: "maintenance_window_exceeded"},
+		"NotSelectedPatchCount": ubx.FieldSpec{WireName: "not_selected_patch_count"},
+		"PendingPatchCount": ubx.FieldSpec{WireName: "pending_patch_count"},
+		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+	}
 
 var Machine_Properties_InstanceView_PatchStatusFields = ubx.FieldMap{
-	"AvailablePatchSummary": ubx.FieldSpec{
-		WireName: "available_patch_summary",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummaryFields,
-	},
-	"ConfigurationStatuses": ubx.FieldSpec{
-		WireName: "configuration_statuses",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-	"LastPatchInstallationSummary": ubx.FieldSpec{
-		WireName: "last_patch_installation_summary",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_PatchStatus_LastPatchInstallationSummaryFields,
-	},
-}
+		"AvailablePatchSummary": ubx.FieldSpec{
+			WireName: "available_patch_summary",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_PatchStatus_AvailablePatchSummaryFields,
+		},
+		"ConfigurationStatuses": ubx.FieldSpec{
+			WireName: "configuration_statuses",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+		"LastPatchInstallationSummary": ubx.FieldSpec{
+			WireName: "last_patch_installation_summary",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_PatchStatus_LastPatchInstallationSummaryFields,
+		},
+	}
 
 var Machine_Properties_InstanceView_VmAgent_ExtensionHandlersFields = ubx.FieldMap{
-	"Status": ubx.FieldSpec{
-		WireName: "status",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-	"Type":               ubx.FieldSpec{WireName: "type"},
-	"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-}
+		"Status": ubx.FieldSpec{
+			WireName: "status",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
+	}
 
 var Machine_Properties_InstanceView_VmAgentFields = ubx.FieldMap{
-	"ExtensionHandlers": ubx.FieldSpec{
-		WireName: "extension_handlers",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_VmAgent_ExtensionHandlersFields,
-	},
-	"Statuses": ubx.FieldSpec{
-		WireName: "statuses",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-	"VmAgentVersion": ubx.FieldSpec{WireName: "vm_agent_version"},
-}
+		"ExtensionHandlers": ubx.FieldSpec{
+			WireName: "extension_handlers",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_VmAgent_ExtensionHandlersFields,
+		},
+		"Statuses": ubx.FieldSpec{
+			WireName: "statuses",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+		"VmAgentVersion": ubx.FieldSpec{WireName: "vm_agent_version"},
+	}
 
 var Machine_Properties_InstanceView_VmHealthFields = ubx.FieldMap{
-	"Status": ubx.FieldSpec{
-		WireName: "status",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-}
+		"Status": ubx.FieldSpec{
+			WireName: "status",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+	}
 
 var Machine_Properties_InstanceViewFields = ubx.FieldMap{
-	"AssignedHost": ubx.FieldSpec{WireName: "assigned_host"},
-	"BootDiagnostics": ubx.FieldSpec{
-		WireName: "boot_diagnostics",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_BootDiagnosticsFields,
-	},
-	"CapacityReservationType": ubx.FieldSpec{WireName: "capacity_reservation_type"},
-	"ComputerName":            ubx.FieldSpec{WireName: "computer_name"},
-	"Disks": ubx.FieldSpec{
-		WireName: "disks",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_DisksFields,
-	},
-	"Extensions": ubx.FieldSpec{
-		WireName: "extensions",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_ExtensionsFields,
-	},
-	"HyperVgeneration": ubx.FieldSpec{WireName: "hyper_vgeneration"},
-	"InterconnectInstanceView": ubx.FieldSpec{
-		WireName: "interconnect_instance_view",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_InterconnectInstanceViewFields,
-	},
-	"IsVminStandbyPool": ubx.FieldSpec{WireName: "is_vmin_standby_pool"},
-	"MaintenanceRedeployStatus": ubx.FieldSpec{
-		WireName: "maintenance_redeploy_status",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_MaintenanceRedeployStatusFields,
-	},
-	"OsName":    ubx.FieldSpec{WireName: "os_name"},
-	"OsVersion": ubx.FieldSpec{WireName: "os_version"},
-	"PatchStatus": ubx.FieldSpec{
-		WireName: "patch_status",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_PatchStatusFields,
-	},
-	"PlatformFaultDomain":  ubx.FieldSpec{WireName: "platform_fault_domain"},
-	"PlatformUpdateDomain": ubx.FieldSpec{WireName: "platform_update_domain"},
-	"RdpThumbPrint":        ubx.FieldSpec{WireName: "rdp_thumb_print"},
-	"Statuses": ubx.FieldSpec{
-		WireName: "statuses",
-		Kind:     "list",
-		Fields:   Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
-	},
-	"VmAgent": ubx.FieldSpec{
-		WireName: "vm_agent",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_VmAgentFields,
-	},
-	"VmHealth": ubx.FieldSpec{
-		WireName: "vm_health",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_VmHealthFields,
-	},
-}
+		"AssignedHost": ubx.FieldSpec{WireName: "assigned_host"},
+		"BootDiagnostics": ubx.FieldSpec{
+			WireName: "boot_diagnostics",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_BootDiagnosticsFields,
+		},
+		"CapacityReservationType": ubx.FieldSpec{WireName: "capacity_reservation_type"},
+		"ComputerName": ubx.FieldSpec{WireName: "computer_name"},
+		"Disks": ubx.FieldSpec{
+			WireName: "disks",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_DisksFields,
+		},
+		"Extensions": ubx.FieldSpec{
+			WireName: "extensions",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_ExtensionsFields,
+		},
+		"HyperVgeneration": ubx.FieldSpec{WireName: "hyper_vgeneration"},
+		"InterconnectInstanceView": ubx.FieldSpec{
+			WireName: "interconnect_instance_view",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_InterconnectInstanceViewFields,
+		},
+		"IsVminStandbyPool": ubx.FieldSpec{WireName: "is_vmin_standby_pool"},
+		"MaintenanceRedeployStatus": ubx.FieldSpec{
+			WireName: "maintenance_redeploy_status",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_MaintenanceRedeployStatusFields,
+		},
+		"OsName": ubx.FieldSpec{WireName: "os_name"},
+		"OsVersion": ubx.FieldSpec{WireName: "os_version"},
+		"PatchStatus": ubx.FieldSpec{
+			WireName: "patch_status",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_PatchStatusFields,
+		},
+		"PlatformFaultDomain": ubx.FieldSpec{WireName: "platform_fault_domain"},
+		"PlatformUpdateDomain": ubx.FieldSpec{WireName: "platform_update_domain"},
+		"RdpThumbPrint": ubx.FieldSpec{WireName: "rdp_thumb_print"},
+		"Statuses": ubx.FieldSpec{
+			WireName: "statuses",
+			Kind: "list",
+			Fields: Machine_Properties_InstanceView_BootDiagnostics_StatusFields,
+		},
+		"VmAgent": ubx.FieldSpec{
+			WireName: "vm_agent",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_VmAgentFields,
+		},
+		"VmHealth": ubx.FieldSpec{
+			WireName: "vm_health",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_VmHealthFields,
+		},
+	}
 
 var Machine_Properties_InterconnectBlockProfileFields = ubx.FieldMap{
-	"InterconnectBlock": ubx.FieldSpec{
-		WireName: "interconnect_block",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-}
+		"InterconnectBlock": ubx.FieldSpec{
+			WireName: "interconnect_block",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+	}
 
 var Machine_Properties_NetworkProfile_InterconnectGroupProfileFields = ubx.FieldMap{
-	"InterconnectGroup": ubx.FieldSpec{
-		WireName: "interconnect_group",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"Subgroups": ubx.FieldSpec{
-		WireName: "subgroups",
-		Kind:     "list",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-}
+		"InterconnectGroup": ubx.FieldSpec{
+			WireName: "interconnect_group",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"Subgroups": ubx.FieldSpec{
+			WireName: "subgroups",
+			Kind: "list",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettingsFields = ubx.FieldMap{
-	"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
-}
+		"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettingsFields = ubx.FieldMap{
-	"DomainNameLabel":      ubx.FieldSpec{WireName: "domain_name_label"},
-	"DomainNameLabelScope": ubx.FieldSpec{WireName: "domain_name_label_scope"},
-}
+		"DomainNameLabel": ubx.FieldSpec{WireName: "domain_name_label"},
+		"DomainNameLabelScope": ubx.FieldSpec{WireName: "domain_name_label_scope"},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTagsFields = ubx.FieldMap{
-	"FirstPartyServiceTagId": ubx.FieldSpec{WireName: "first_party_service_tag_id"},
-	"IpTagType":              ubx.FieldSpec{WireName: "ip_tag_type"},
-	"Tag":                    ubx.FieldSpec{WireName: "tag"},
-}
+		"FirstPartyServiceTagId": ubx.FieldSpec{WireName: "first_party_service_tag_id"},
+		"IpTagType": ubx.FieldSpec{WireName: "ip_tag_type"},
+		"Tag": ubx.FieldSpec{WireName: "tag"},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_PropertiesFields = ubx.FieldMap{
-	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-	"DnsSettings": ubx.FieldSpec{
-		WireName: "dns_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettingsFields,
-	},
-	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-	"IpTags": ubx.FieldSpec{
-		WireName: "ip_tags",
-		Kind:     "list",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTagsFields,
-	},
-	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
-	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-	"PublicIpprefix": ubx.FieldSpec{
-		WireName: "public_ipprefix",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-}
+		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+		"DnsSettings": ubx.FieldSpec{
+			WireName: "dns_settings",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_DnsSettingsFields,
+		},
+		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+		"IpTags": ubx.FieldSpec{
+			WireName: "ip_tags",
+			Kind: "list",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_Properties_IpTagsFields,
+		},
+		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
+		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+		"PublicIpprefix": ubx.FieldSpec{
+			WireName: "public_ipprefix",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_SkuFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Tier": ubx.FieldSpec{WireName: "tier"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfigurationFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_PropertiesFields,
-	},
-	"Sku": ubx.FieldSpec{
-		WireName: "sku",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_SkuFields,
-	},
-	"Tags": ubx.FieldSpec{WireName: "tags"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_PropertiesFields,
+		},
+		"Sku": ubx.FieldSpec{
+			WireName: "sku",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfiguration_SkuFields,
+		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-		WireName: "application_gateway_backend_address_pools",
-		Kind:     "list",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"ApplicationSecurityGroups": ubx.FieldSpec{
-		WireName: "application_security_groups",
-		Kind:     "list",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-		WireName: "load_balancer_backend_address_pools",
-		Kind:     "list",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"Primary":                 ubx.FieldSpec{WireName: "primary"},
-	"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-	"PublicIpaddressConfiguration": ubx.FieldSpec{
-		WireName: "public_ipaddress_configuration",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfigurationFields,
-	},
-	"Subnet": ubx.FieldSpec{
-		WireName: "subnet",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-}
+		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+			WireName: "application_gateway_backend_address_pools",
+			Kind: "list",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"ApplicationSecurityGroups": ubx.FieldSpec{
+			WireName: "application_security_groups",
+			Kind: "list",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+			WireName: "load_balancer_backend_address_pools",
+			Kind: "list",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"Primary": ubx.FieldSpec{WireName: "primary"},
+		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
+		"PublicIpaddressConfiguration": ubx.FieldSpec{
+			WireName: "public_ipaddress_configuration",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties_PublicIpaddressConfigurationFields,
+		},
+		"Subnet": ubx.FieldSpec{
+			WireName: "subnet",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurationsFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_PropertiesFields,
-	},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_PropertiesFields,
+		},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_PropertiesFields = ubx.FieldMap{
-	"AuxiliaryMode":           ubx.FieldSpec{WireName: "auxiliary_mode"},
-	"AuxiliarySku":            ubx.FieldSpec{WireName: "auxiliary_sku"},
-	"DeleteOption":            ubx.FieldSpec{WireName: "delete_option"},
-	"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-	"DnsSettings": ubx.FieldSpec{
-		WireName: "dns_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettingsFields,
-	},
-	"DscpConfiguration": ubx.FieldSpec{
-		WireName: "dscp_configuration",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-	"EnableFpga":                  ubx.FieldSpec{WireName: "enable_fpga"},
-	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
-	"IpConfigurations": ubx.FieldSpec{
-		WireName: "ip_configurations",
-		Kind:     "list",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurationsFields,
-	},
-	"NetworkSecurityGroup": ubx.FieldSpec{
-		WireName: "network_security_group",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"Primary": ubx.FieldSpec{WireName: "primary"},
-}
+		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
+		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
+		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+		"DnsSettings": ubx.FieldSpec{
+			WireName: "dns_settings",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_DnsSettingsFields,
+		},
+		"DscpConfiguration": ubx.FieldSpec{
+			WireName: "dscp_configuration",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+		"EnableFpga": ubx.FieldSpec{WireName: "enable_fpga"},
+		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
+		"IpConfigurations": ubx.FieldSpec{
+			WireName: "ip_configurations",
+			Kind: "list",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurationsFields,
+		},
+		"NetworkSecurityGroup": ubx.FieldSpec{
+			WireName: "network_security_group",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"Primary": ubx.FieldSpec{WireName: "primary"},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaceConfigurationsFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_PropertiesFields,
-	},
-	"Tags": ubx.FieldSpec{WireName: "tags"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurations_PropertiesFields,
+		},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-	"Primary":      ubx.FieldSpec{WireName: "primary"},
-}
+		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+		"Primary": ubx.FieldSpec{WireName: "primary"},
+	}
 
 var Machine_Properties_NetworkProfile_NetworkInterfacesFields = ubx.FieldMap{
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaces_PropertiesFields,
-	},
-}
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaces_PropertiesFields,
+		},
+	}
 
 var Machine_Properties_NetworkProfileFields = ubx.FieldMap{
-	"InterconnectGroupProfile": ubx.FieldSpec{
-		WireName: "interconnect_group_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfile_InterconnectGroupProfileFields,
-	},
-	"NetworkApiVersion": ubx.FieldSpec{WireName: "network_api_version"},
-	"NetworkInterfaceConfigurations": ubx.FieldSpec{
-		WireName: "network_interface_configurations",
-		Kind:     "list",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfaceConfigurationsFields,
-	},
-	"NetworkInterfaces": ubx.FieldSpec{
-		WireName: "network_interfaces",
-		Kind:     "list",
-		Fields:   Machine_Properties_NetworkProfile_NetworkInterfacesFields,
-	},
-}
+		"InterconnectGroupProfile": ubx.FieldSpec{
+			WireName: "interconnect_group_profile",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfile_InterconnectGroupProfileFields,
+		},
+		"NetworkApiVersion": ubx.FieldSpec{WireName: "network_api_version"},
+		"NetworkInterfaceConfigurations": ubx.FieldSpec{
+			WireName: "network_interface_configurations",
+			Kind: "list",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfaceConfigurationsFields,
+		},
+		"NetworkInterfaces": ubx.FieldSpec{
+			WireName: "network_interfaces",
+			Kind: "list",
+			Fields: Machine_Properties_NetworkProfile_NetworkInterfacesFields,
+		},
+	}
 
 var Machine_Properties_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields = ubx.FieldMap{
-	"BypassPlatformSafetyChecksOnUserSchedule": ubx.FieldSpec{WireName: "bypass_platform_safety_checks_on_user_schedule"},
-	"RebootSetting": ubx.FieldSpec{WireName: "reboot_setting"},
-}
+		"BypassPlatformSafetyChecksOnUserSchedule": ubx.FieldSpec{WireName: "bypass_platform_safety_checks_on_user_schedule"},
+		"RebootSetting": ubx.FieldSpec{WireName: "reboot_setting"},
+	}
 
 var Machine_Properties_OsProfile_LinuxConfiguration_PatchSettingsFields = ubx.FieldMap{
-	"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
-	"AutomaticByPlatformSettings": ubx.FieldSpec{
-		WireName: "automatic_by_platform_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields,
-	},
-	"PatchMode": ubx.FieldSpec{WireName: "patch_mode"},
-}
+		"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
+		"AutomaticByPlatformSettings": ubx.FieldSpec{
+			WireName: "automatic_by_platform_settings",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields,
+		},
+		"PatchMode": ubx.FieldSpec{WireName: "patch_mode"},
+	}
 
 var Machine_Properties_OsProfile_LinuxConfiguration_Ssh_PublicKeysFields = ubx.FieldMap{
-	"KeyData": ubx.FieldSpec{WireName: "key_data"},
-	"Path":    ubx.FieldSpec{WireName: "path"},
-}
+		"KeyData": ubx.FieldSpec{WireName: "key_data"},
+		"Path": ubx.FieldSpec{WireName: "path"},
+	}
 
 var Machine_Properties_OsProfile_LinuxConfiguration_SshFields = ubx.FieldMap{
-	"PublicKeys": ubx.FieldSpec{
-		WireName: "public_keys",
-		Kind:     "list",
-		Fields:   Machine_Properties_OsProfile_LinuxConfiguration_Ssh_PublicKeysFields,
-	},
-}
+		"PublicKeys": ubx.FieldSpec{
+			WireName: "public_keys",
+			Kind: "list",
+			Fields: Machine_Properties_OsProfile_LinuxConfiguration_Ssh_PublicKeysFields,
+		},
+	}
 
 var Machine_Properties_OsProfile_LinuxConfigurationFields = ubx.FieldMap{
-	"DisablePasswordAuthentication": ubx.FieldSpec{WireName: "disable_password_authentication"},
-	"EnableVmagentPlatformUpdates":  ubx.FieldSpec{WireName: "enable_vmagent_platform_updates"},
-	"PatchSettings": ubx.FieldSpec{
-		WireName: "patch_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfile_LinuxConfiguration_PatchSettingsFields,
-	},
-	"ProvisionVmagent": ubx.FieldSpec{WireName: "provision_vmagent"},
-	"Ssh": ubx.FieldSpec{
-		WireName: "ssh",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfile_LinuxConfiguration_SshFields,
-	},
-}
+		"DisablePasswordAuthentication": ubx.FieldSpec{WireName: "disable_password_authentication"},
+		"EnableVmagentPlatformUpdates": ubx.FieldSpec{WireName: "enable_vmagent_platform_updates"},
+		"PatchSettings": ubx.FieldSpec{
+			WireName: "patch_settings",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfile_LinuxConfiguration_PatchSettingsFields,
+		},
+		"ProvisionVmagent": ubx.FieldSpec{WireName: "provision_vmagent"},
+		"Ssh": ubx.FieldSpec{
+			WireName: "ssh",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfile_LinuxConfiguration_SshFields,
+		},
+	}
 
 var Machine_Properties_OsProfile_Secrets_VaultCertificatesFields = ubx.FieldMap{
-	"CertificateStore": ubx.FieldSpec{WireName: "certificate_store"},
-	"CertificateUrl":   ubx.FieldSpec{WireName: "certificate_url"},
-}
+		"CertificateStore": ubx.FieldSpec{WireName: "certificate_store"},
+		"CertificateUrl": ubx.FieldSpec{WireName: "certificate_url"},
+	}
 
 var Machine_Properties_OsProfile_SecretsFields = ubx.FieldMap{
-	"SourceVault": ubx.FieldSpec{
-		WireName: "source_vault",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"VaultCertificates": ubx.FieldSpec{
-		WireName: "vault_certificates",
-		Kind:     "list",
-		Fields:   Machine_Properties_OsProfile_Secrets_VaultCertificatesFields,
-	},
-}
+		"SourceVault": ubx.FieldSpec{
+			WireName: "source_vault",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"VaultCertificates": ubx.FieldSpec{
+			WireName: "vault_certificates",
+			Kind: "list",
+			Fields: Machine_Properties_OsProfile_Secrets_VaultCertificatesFields,
+		},
+	}
 
 var Machine_Properties_OsProfile_WindowsConfiguration_AdditionalUnattendContentFields = ubx.FieldMap{
-	"ComponentName": ubx.FieldSpec{WireName: "component_name"},
-	"Content":       ubx.FieldSpec{WireName: "content"},
-	"PassName":      ubx.FieldSpec{WireName: "pass_name"},
-	"SettingName":   ubx.FieldSpec{WireName: "setting_name"},
-}
+		"ComponentName": ubx.FieldSpec{WireName: "component_name"},
+		"Content": ubx.FieldSpec{WireName: "content"},
+		"PassName": ubx.FieldSpec{WireName: "pass_name"},
+		"SettingName": ubx.FieldSpec{WireName: "setting_name"},
+	}
 
 var Machine_Properties_OsProfile_WindowsConfiguration_PatchSettingsFields = ubx.FieldMap{
-	"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
-	"AutomaticByPlatformSettings": ubx.FieldSpec{
-		WireName: "automatic_by_platform_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields,
-	},
-	"EnableHotpatching": ubx.FieldSpec{WireName: "enable_hotpatching"},
-	"PatchMode":         ubx.FieldSpec{WireName: "patch_mode"},
-}
+		"AssessmentMode": ubx.FieldSpec{WireName: "assessment_mode"},
+		"AutomaticByPlatformSettings": ubx.FieldSpec{
+			WireName: "automatic_by_platform_settings",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfile_LinuxConfiguration_PatchSettings_AutomaticByPlatformSettingsFields,
+		},
+		"EnableHotpatching": ubx.FieldSpec{WireName: "enable_hotpatching"},
+		"PatchMode": ubx.FieldSpec{WireName: "patch_mode"},
+	}
 
 var Machine_Properties_OsProfile_WindowsConfiguration_WinRm_ListenersFields = ubx.FieldMap{
-	"CertificateUrl": ubx.FieldSpec{WireName: "certificate_url"},
-	"Protocol":       ubx.FieldSpec{WireName: "protocol"},
-}
+		"CertificateUrl": ubx.FieldSpec{WireName: "certificate_url"},
+		"Protocol": ubx.FieldSpec{WireName: "protocol"},
+	}
 
 var Machine_Properties_OsProfile_WindowsConfiguration_WinRmFields = ubx.FieldMap{
-	"Listeners": ubx.FieldSpec{
-		WireName: "listeners",
-		Kind:     "list",
-		Fields:   Machine_Properties_OsProfile_WindowsConfiguration_WinRm_ListenersFields,
-	},
-}
+		"Listeners": ubx.FieldSpec{
+			WireName: "listeners",
+			Kind: "list",
+			Fields: Machine_Properties_OsProfile_WindowsConfiguration_WinRm_ListenersFields,
+		},
+	}
 
 var Machine_Properties_OsProfile_WindowsConfigurationFields = ubx.FieldMap{
-	"AdditionalUnattendContent": ubx.FieldSpec{
-		WireName: "additional_unattend_content",
-		Kind:     "list",
-		Fields:   Machine_Properties_OsProfile_WindowsConfiguration_AdditionalUnattendContentFields,
-	},
-	"EnableAutomaticUpdates":       ubx.FieldSpec{WireName: "enable_automatic_updates"},
-	"EnableVmagentPlatformUpdates": ubx.FieldSpec{WireName: "enable_vmagent_platform_updates"},
-	"PatchSettings": ubx.FieldSpec{
-		WireName: "patch_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfile_WindowsConfiguration_PatchSettingsFields,
-	},
-	"ProvisionVmagent": ubx.FieldSpec{WireName: "provision_vmagent"},
-	"TimeZone":         ubx.FieldSpec{WireName: "time_zone"},
-	"WinRm": ubx.FieldSpec{
-		WireName: "win_rm",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfile_WindowsConfiguration_WinRmFields,
-	},
-}
+		"AdditionalUnattendContent": ubx.FieldSpec{
+			WireName: "additional_unattend_content",
+			Kind: "list",
+			Fields: Machine_Properties_OsProfile_WindowsConfiguration_AdditionalUnattendContentFields,
+		},
+		"EnableAutomaticUpdates": ubx.FieldSpec{WireName: "enable_automatic_updates"},
+		"EnableVmagentPlatformUpdates": ubx.FieldSpec{WireName: "enable_vmagent_platform_updates"},
+		"PatchSettings": ubx.FieldSpec{
+			WireName: "patch_settings",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfile_WindowsConfiguration_PatchSettingsFields,
+		},
+		"ProvisionVmagent": ubx.FieldSpec{WireName: "provision_vmagent"},
+		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
+		"WinRm": ubx.FieldSpec{
+			WireName: "win_rm",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfile_WindowsConfiguration_WinRmFields,
+		},
+	}
 
 var Machine_Properties_OsProfileFields = ubx.FieldMap{
-	"AdminPassword":            ubx.FieldSpec{WireName: "admin_password"},
-	"AdminUsername":            ubx.FieldSpec{WireName: "admin_username"},
-	"AllowExtensionOperations": ubx.FieldSpec{WireName: "allow_extension_operations"},
-	"ComputerName":             ubx.FieldSpec{WireName: "computer_name"},
-	"CustomData":               ubx.FieldSpec{WireName: "custom_data"},
-	"LinuxConfiguration": ubx.FieldSpec{
-		WireName: "linux_configuration",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfile_LinuxConfigurationFields,
-	},
-	"RequireGuestProvisionSignal": ubx.FieldSpec{WireName: "require_guest_provision_signal"},
-	"Secrets": ubx.FieldSpec{
-		WireName: "secrets",
-		Kind:     "list",
-		Fields:   Machine_Properties_OsProfile_SecretsFields,
-	},
-	"WindowsConfiguration": ubx.FieldSpec{
-		WireName: "windows_configuration",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfile_WindowsConfigurationFields,
-	},
-}
+		"AdminPassword": ubx.FieldSpec{WireName: "admin_password"},
+		"AdminUsername": ubx.FieldSpec{WireName: "admin_username"},
+		"AllowExtensionOperations": ubx.FieldSpec{WireName: "allow_extension_operations"},
+		"ComputerName": ubx.FieldSpec{WireName: "computer_name"},
+		"CustomData": ubx.FieldSpec{WireName: "custom_data"},
+		"LinuxConfiguration": ubx.FieldSpec{
+			WireName: "linux_configuration",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfile_LinuxConfigurationFields,
+		},
+		"RequireGuestProvisionSignal": ubx.FieldSpec{WireName: "require_guest_provision_signal"},
+		"Secrets": ubx.FieldSpec{
+			WireName: "secrets",
+			Kind: "list",
+			Fields: Machine_Properties_OsProfile_SecretsFields,
+		},
+		"WindowsConfiguration": ubx.FieldSpec{
+			WireName: "windows_configuration",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfile_WindowsConfigurationFields,
+		},
+	}
 
 var Machine_Properties_ResiliencyProfile_ZoneMovementFields = ubx.FieldMap{
-	"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-}
+		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
+	}
 
 var Machine_Properties_ResiliencyProfileFields = ubx.FieldMap{
-	"ZoneMovement": ubx.FieldSpec{
-		WireName: "zone_movement",
-		Kind:     "object",
-		Fields:   Machine_Properties_ResiliencyProfile_ZoneMovementFields,
-	},
-}
+		"ZoneMovement": ubx.FieldSpec{
+			WireName: "zone_movement",
+			Kind: "object",
+			Fields: Machine_Properties_ResiliencyProfile_ZoneMovementFields,
+		},
+	}
 
 var Machine_Properties_ScheduledEventsPolicy_AllInstancesDownFields = ubx.FieldMap{
-	"AutomaticallyApprove": ubx.FieldSpec{WireName: "automatically_approve"},
-}
+		"AutomaticallyApprove": ubx.FieldSpec{WireName: "automatically_approve"},
+	}
 
 var Machine_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargets_EventGridAndResourceGraphFields = ubx.FieldMap{
-	"Enable":                    ubx.FieldSpec{WireName: "enable"},
-	"ScheduledEventsApiVersion": ubx.FieldSpec{WireName: "scheduled_events_api_version"},
-}
+		"Enable": ubx.FieldSpec{WireName: "enable"},
+		"ScheduledEventsApiVersion": ubx.FieldSpec{WireName: "scheduled_events_api_version"},
+	}
 
 var Machine_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargetsFields = ubx.FieldMap{
-	"EventGridAndResourceGraph": ubx.FieldSpec{
-		WireName: "event_grid_and_resource_graph",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargets_EventGridAndResourceGraphFields,
-	},
-}
+		"EventGridAndResourceGraph": ubx.FieldSpec{
+			WireName: "event_grid_and_resource_graph",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargets_EventGridAndResourceGraphFields,
+		},
+	}
 
 var Machine_Properties_ScheduledEventsPolicyFields = ubx.FieldMap{
-	"AllInstancesDown": ubx.FieldSpec{
-		WireName: "all_instances_down",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
-	},
-	"ScheduledEventsAdditionalPublishingTargets": ubx.FieldSpec{
-		WireName: "scheduled_events_additional_publishing_targets",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargetsFields,
-	},
-	"UserInitiatedReboot": ubx.FieldSpec{
-		WireName: "user_initiated_reboot",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
-	},
-	"UserInitiatedRedeploy": ubx.FieldSpec{
-		WireName: "user_initiated_redeploy",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
-	},
-}
+		"AllInstancesDown": ubx.FieldSpec{
+			WireName: "all_instances_down",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
+		},
+		"ScheduledEventsAdditionalPublishingTargets": ubx.FieldSpec{
+			WireName: "scheduled_events_additional_publishing_targets",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargetsFields,
+		},
+		"UserInitiatedReboot": ubx.FieldSpec{
+			WireName: "user_initiated_reboot",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
+		},
+		"UserInitiatedRedeploy": ubx.FieldSpec{
+			WireName: "user_initiated_redeploy",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsPolicy_AllInstancesDownFields,
+		},
+	}
 
 var Machine_Properties_ScheduledEventsProfile_OsImageNotificationProfileFields = ubx.FieldMap{
-	"Enable":           ubx.FieldSpec{WireName: "enable"},
-	"NotBeforeTimeout": ubx.FieldSpec{WireName: "not_before_timeout"},
-}
+		"Enable": ubx.FieldSpec{WireName: "enable"},
+		"NotBeforeTimeout": ubx.FieldSpec{WireName: "not_before_timeout"},
+	}
 
 var Machine_Properties_ScheduledEventsProfileFields = ubx.FieldMap{
-	"OsImageNotificationProfile": ubx.FieldSpec{
-		WireName: "os_image_notification_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsProfile_OsImageNotificationProfileFields,
-	},
-	"TerminateNotificationProfile": ubx.FieldSpec{
-		WireName: "terminate_notification_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsProfile_OsImageNotificationProfileFields,
-	},
-}
+		"OsImageNotificationProfile": ubx.FieldSpec{
+			WireName: "os_image_notification_profile",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsProfile_OsImageNotificationProfileFields,
+		},
+		"TerminateNotificationProfile": ubx.FieldSpec{
+			WireName: "terminate_notification_profile",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsProfile_OsImageNotificationProfileFields,
+		},
+	}
 
 var Machine_Properties_SecurityProfile_EncryptionIdentityFields = ubx.FieldMap{
-	"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
-}
+		"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
+	}
 
 var Machine_Properties_SecurityProfile_ProxyAgentSettings_ImdsFields = ubx.FieldMap{
-	"InVmaccessControlProfileReferenceId": ubx.FieldSpec{WireName: "in_vmaccess_control_profile_reference_id"},
-	"Mode":                                ubx.FieldSpec{WireName: "mode"},
-	"UseLocalFileRules":                   ubx.FieldSpec{WireName: "use_local_file_rules"},
-}
+		"InVmaccessControlProfileReferenceId": ubx.FieldSpec{WireName: "in_vmaccess_control_profile_reference_id"},
+		"Mode": ubx.FieldSpec{WireName: "mode"},
+		"UseLocalFileRules": ubx.FieldSpec{WireName: "use_local_file_rules"},
+	}
 
 var Machine_Properties_SecurityProfile_ProxyAgentSettingsFields = ubx.FieldMap{
-	"AddProxyAgentExtension": ubx.FieldSpec{WireName: "add_proxy_agent_extension"},
-	"Enabled":                ubx.FieldSpec{WireName: "enabled"},
-	"Imds": ubx.FieldSpec{
-		WireName: "imds",
-		Kind:     "object",
-		Fields:   Machine_Properties_SecurityProfile_ProxyAgentSettings_ImdsFields,
-	},
-	"KeyIncarnationId": ubx.FieldSpec{WireName: "key_incarnation_id"},
-	"Mode":             ubx.FieldSpec{WireName: "mode"},
-	"WireServer": ubx.FieldSpec{
-		WireName: "wire_server",
-		Kind:     "object",
-		Fields:   Machine_Properties_SecurityProfile_ProxyAgentSettings_ImdsFields,
-	},
-}
+		"AddProxyAgentExtension": ubx.FieldSpec{WireName: "add_proxy_agent_extension"},
+		"Enabled": ubx.FieldSpec{WireName: "enabled"},
+		"Imds": ubx.FieldSpec{
+			WireName: "imds",
+			Kind: "object",
+			Fields: Machine_Properties_SecurityProfile_ProxyAgentSettings_ImdsFields,
+		},
+		"KeyIncarnationId": ubx.FieldSpec{WireName: "key_incarnation_id"},
+		"Mode": ubx.FieldSpec{WireName: "mode"},
+		"WireServer": ubx.FieldSpec{
+			WireName: "wire_server",
+			Kind: "object",
+			Fields: Machine_Properties_SecurityProfile_ProxyAgentSettings_ImdsFields,
+		},
+	}
 
 var Machine_Properties_SecurityProfile_UefiSettingsFields = ubx.FieldMap{
-	"SecureBootEnabled": ubx.FieldSpec{WireName: "secure_boot_enabled"},
-	"VTpmEnabled":       ubx.FieldSpec{WireName: "v_tpm_enabled"},
-}
+		"SecureBootEnabled": ubx.FieldSpec{WireName: "secure_boot_enabled"},
+		"VTpmEnabled": ubx.FieldSpec{WireName: "v_tpm_enabled"},
+	}
 
 var Machine_Properties_SecurityProfileFields = ubx.FieldMap{
-	"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
-	"EncryptionIdentity": ubx.FieldSpec{
-		WireName: "encryption_identity",
-		Kind:     "object",
-		Fields:   Machine_Properties_SecurityProfile_EncryptionIdentityFields,
-	},
-	"ProxyAgentSettings": ubx.FieldSpec{
-		WireName: "proxy_agent_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_SecurityProfile_ProxyAgentSettingsFields,
-	},
-	"SecurityType": ubx.FieldSpec{WireName: "security_type"},
-	"UefiSettings": ubx.FieldSpec{
-		WireName: "uefi_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_SecurityProfile_UefiSettingsFields,
-	},
-}
+		"EncryptionAtHost": ubx.FieldSpec{WireName: "encryption_at_host"},
+		"EncryptionIdentity": ubx.FieldSpec{
+			WireName: "encryption_identity",
+			Kind: "object",
+			Fields: Machine_Properties_SecurityProfile_EncryptionIdentityFields,
+		},
+		"ProxyAgentSettings": ubx.FieldSpec{
+			WireName: "proxy_agent_settings",
+			Kind: "object",
+			Fields: Machine_Properties_SecurityProfile_ProxyAgentSettingsFields,
+		},
+		"SecurityType": ubx.FieldSpec{WireName: "security_type"},
+		"UefiSettings": ubx.FieldSpec{
+			WireName: "uefi_settings",
+			Kind: "object",
+			Fields: Machine_Properties_SecurityProfile_UefiSettingsFields,
+		},
+	}
 
 var Machine_Properties_StorageProfile_DataDisks_ImageFields = ubx.FieldMap{
-	"Uri": ubx.FieldSpec{WireName: "uri"},
-}
+		"Uri": ubx.FieldSpec{WireName: "uri"},
+	}
 
 var Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicyFields = ubx.FieldMap{
-	"ActionOnDiskDelay": ubx.FieldSpec{WireName: "action_on_disk_delay"},
-}
+		"ActionOnDiskDelay": ubx.FieldSpec{WireName: "action_on_disk_delay"},
+	}
 
 var Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskPropertiesFields = ubx.FieldMap{
-	"AvailabilityPolicy": ubx.FieldSpec{
-		WireName: "availability_policy",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicyFields,
-	},
-	"BurstingEnabled":            ubx.FieldSpec{WireName: "bursting_enabled"},
-	"DiskAccessId":               ubx.FieldSpec{WireName: "disk_access_id"},
-	"DiskIopsreadOnly":           ubx.FieldSpec{WireName: "disk_iopsread_only"},
-	"DiskMbpsReadOnly":           ubx.FieldSpec{WireName: "disk_mbps_read_only"},
-	"LogicalSectorSize":          ubx.FieldSpec{WireName: "logical_sector_size"},
-	"MaxShares":                  ubx.FieldSpec{WireName: "max_shares"},
-	"NetworkAccessPolicy":        ubx.FieldSpec{WireName: "network_access_policy"},
-	"OptimizedForFrequentAttach": ubx.FieldSpec{WireName: "optimized_for_frequent_attach"},
-	"PerformancePlus":            ubx.FieldSpec{WireName: "performance_plus"},
-	"Tier":                       ubx.FieldSpec{WireName: "tier"},
-}
+		"AvailabilityPolicy": ubx.FieldSpec{
+			WireName: "availability_policy",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskProperties_AvailabilityPolicyFields,
+		},
+		"BurstingEnabled": ubx.FieldSpec{WireName: "bursting_enabled"},
+		"DiskAccessId": ubx.FieldSpec{WireName: "disk_access_id"},
+		"DiskIopsreadOnly": ubx.FieldSpec{WireName: "disk_iopsread_only"},
+		"DiskMbpsReadOnly": ubx.FieldSpec{WireName: "disk_mbps_read_only"},
+		"LogicalSectorSize": ubx.FieldSpec{WireName: "logical_sector_size"},
+		"MaxShares": ubx.FieldSpec{WireName: "max_shares"},
+		"NetworkAccessPolicy": ubx.FieldSpec{WireName: "network_access_policy"},
+		"OptimizedForFrequentAttach": ubx.FieldSpec{WireName: "optimized_for_frequent_attach"},
+		"PerformancePlus": ubx.FieldSpec{WireName: "performance_plus"},
+		"Tier": ubx.FieldSpec{WireName: "tier"},
+	}
 
 var Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskPropertiesFields = ubx.FieldMap{
-	"ManagedDiskProperties": ubx.FieldSpec{
-		WireName: "managed_disk_properties",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskPropertiesFields,
-	},
-}
+		"ManagedDiskProperties": ubx.FieldSpec{
+			WireName: "managed_disk_properties",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskProperties_ManagedDiskPropertiesFields,
+		},
+	}
 
 var Machine_Properties_StorageProfile_DataDisks_ManagedDisk_SecurityProfileFields = ubx.FieldMap{
-	"DiskEncryptionSet": ubx.FieldSpec{
-		WireName: "disk_encryption_set",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"SecurityEncryptionType": ubx.FieldSpec{WireName: "security_encryption_type"},
-}
+		"DiskEncryptionSet": ubx.FieldSpec{
+			WireName: "disk_encryption_set",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"SecurityEncryptionType": ubx.FieldSpec{WireName: "security_encryption_type"},
+	}
 
 var Machine_Properties_StorageProfile_DataDisks_ManagedDiskFields = ubx.FieldMap{
-	"AdditionalDiskProperties": ubx.FieldSpec{
-		WireName: "additional_disk_properties",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskPropertiesFields,
-	},
-	"DiskEncryptionSet": ubx.FieldSpec{
-		WireName: "disk_encryption_set",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"SecurityProfile": ubx.FieldSpec{
-		WireName: "security_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ManagedDisk_SecurityProfileFields,
-	},
-	"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
-}
+		"AdditionalDiskProperties": ubx.FieldSpec{
+			WireName: "additional_disk_properties",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ManagedDisk_AdditionalDiskPropertiesFields,
+		},
+		"DiskEncryptionSet": ubx.FieldSpec{
+			WireName: "disk_encryption_set",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"SecurityProfile": ubx.FieldSpec{
+			WireName: "security_profile",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ManagedDisk_SecurityProfileFields,
+		},
+		"StorageAccountType": ubx.FieldSpec{WireName: "storage_account_type"},
+	}
 
 var Machine_Properties_StorageProfile_DataDisksFields = ubx.FieldMap{
-	"Caching":           ubx.FieldSpec{WireName: "caching"},
-	"CreateOption":      ubx.FieldSpec{WireName: "create_option"},
-	"DeleteOption":      ubx.FieldSpec{WireName: "delete_option"},
-	"DetachOption":      ubx.FieldSpec{WireName: "detach_option"},
-	"DiskIopsreadWrite": ubx.FieldSpec{WireName: "disk_iopsread_write"},
-	"DiskMbpsReadWrite": ubx.FieldSpec{WireName: "disk_mbps_read_write"},
-	"DiskSizeGb":        ubx.FieldSpec{WireName: "disk_size_gb"},
-	"Image": ubx.FieldSpec{
-		WireName: "image",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ImageFields,
-	},
-	"Lun": ubx.FieldSpec{WireName: "lun"},
-	"ManagedDisk": ubx.FieldSpec{
-		WireName: "managed_disk",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ManagedDiskFields,
-	},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"SourceResource": ubx.FieldSpec{
-		WireName: "source_resource",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"StorageFaultDomainAlignment": ubx.FieldSpec{WireName: "storage_fault_domain_alignment"},
-	"ToBeDetached":                ubx.FieldSpec{WireName: "to_be_detached"},
-	"Vhd": ubx.FieldSpec{
-		WireName: "vhd",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ImageFields,
-	},
-	"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
-}
+		"Caching": ubx.FieldSpec{WireName: "caching"},
+		"CreateOption": ubx.FieldSpec{WireName: "create_option"},
+		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+		"DetachOption": ubx.FieldSpec{WireName: "detach_option"},
+		"DiskIopsreadWrite": ubx.FieldSpec{WireName: "disk_iopsread_write"},
+		"DiskMbpsReadWrite": ubx.FieldSpec{WireName: "disk_mbps_read_write"},
+		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
+		"Image": ubx.FieldSpec{
+			WireName: "image",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ImageFields,
+		},
+		"Lun": ubx.FieldSpec{WireName: "lun"},
+		"ManagedDisk": ubx.FieldSpec{
+			WireName: "managed_disk",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ManagedDiskFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"SourceResource": ubx.FieldSpec{
+			WireName: "source_resource",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"StorageFaultDomainAlignment": ubx.FieldSpec{WireName: "storage_fault_domain_alignment"},
+		"ToBeDetached": ubx.FieldSpec{WireName: "to_be_detached"},
+		"Vhd": ubx.FieldSpec{
+			WireName: "vhd",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ImageFields,
+		},
+		"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
+	}
 
 var Machine_Properties_StorageProfile_ImageReferenceFields = ubx.FieldMap{
-	"CommunityGalleryImageId": ubx.FieldSpec{WireName: "community_gallery_image_id"},
-	"ExactVersion":            ubx.FieldSpec{WireName: "exact_version"},
-	"Offer":                   ubx.FieldSpec{WireName: "offer"},
-	"Publisher":               ubx.FieldSpec{WireName: "publisher"},
-	"SharedGalleryImageId":    ubx.FieldSpec{WireName: "shared_gallery_image_id"},
-	"Sku":                     ubx.FieldSpec{WireName: "sku"},
-	"Version":                 ubx.FieldSpec{WireName: "version"},
-}
+		"CommunityGalleryImageId": ubx.FieldSpec{WireName: "community_gallery_image_id"},
+		"ExactVersion": ubx.FieldSpec{WireName: "exact_version"},
+		"Offer": ubx.FieldSpec{WireName: "offer"},
+		"Publisher": ubx.FieldSpec{WireName: "publisher"},
+		"SharedGalleryImageId": ubx.FieldSpec{WireName: "shared_gallery_image_id"},
+		"Sku": ubx.FieldSpec{WireName: "sku"},
+		"Version": ubx.FieldSpec{WireName: "version"},
+	}
 
 var Machine_Properties_StorageProfile_OsDisk_DiffDiskSettingsFields = ubx.FieldMap{
-	"EnableFullCaching": ubx.FieldSpec{WireName: "enable_full_caching"},
-	"Option":            ubx.FieldSpec{WireName: "option"},
-	"Placement":         ubx.FieldSpec{WireName: "placement"},
-}
+		"EnableFullCaching": ubx.FieldSpec{WireName: "enable_full_caching"},
+		"Option": ubx.FieldSpec{WireName: "option"},
+		"Placement": ubx.FieldSpec{WireName: "placement"},
+	}
 
 var Machine_Properties_StorageProfile_OsDiskFields = ubx.FieldMap{
-	"Caching":      ubx.FieldSpec{WireName: "caching"},
-	"CreateOption": ubx.FieldSpec{WireName: "create_option"},
-	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-	"DiffDiskSettings": ubx.FieldSpec{
-		WireName: "diff_disk_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_OsDisk_DiffDiskSettingsFields,
-	},
-	"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
-	"EncryptionSettings": ubx.FieldSpec{
-		WireName: "encryption_settings",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceView_Disks_EncryptionSettingsFields,
-	},
-	"Image": ubx.FieldSpec{
-		WireName: "image",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ImageFields,
-	},
-	"ManagedDisk": ubx.FieldSpec{
-		WireName: "managed_disk",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ManagedDiskFields,
-	},
-	"Name":                        ubx.FieldSpec{WireName: "name"},
-	"OsType":                      ubx.FieldSpec{WireName: "os_type"},
-	"StorageFaultDomainAlignment": ubx.FieldSpec{WireName: "storage_fault_domain_alignment"},
-	"Vhd": ubx.FieldSpec{
-		WireName: "vhd",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_DataDisks_ImageFields,
-	},
-	"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
-}
+		"Caching": ubx.FieldSpec{WireName: "caching"},
+		"CreateOption": ubx.FieldSpec{WireName: "create_option"},
+		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+		"DiffDiskSettings": ubx.FieldSpec{
+			WireName: "diff_disk_settings",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_OsDisk_DiffDiskSettingsFields,
+		},
+		"DiskSizeGb": ubx.FieldSpec{WireName: "disk_size_gb"},
+		"EncryptionSettings": ubx.FieldSpec{
+			WireName: "encryption_settings",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceView_Disks_EncryptionSettingsFields,
+		},
+		"Image": ubx.FieldSpec{
+			WireName: "image",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ImageFields,
+		},
+		"ManagedDisk": ubx.FieldSpec{
+			WireName: "managed_disk",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ManagedDiskFields,
+		},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"OsType": ubx.FieldSpec{WireName: "os_type"},
+		"StorageFaultDomainAlignment": ubx.FieldSpec{WireName: "storage_fault_domain_alignment"},
+		"Vhd": ubx.FieldSpec{
+			WireName: "vhd",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_DataDisks_ImageFields,
+		},
+		"WriteAcceleratorEnabled": ubx.FieldSpec{WireName: "write_accelerator_enabled"},
+	}
 
 var Machine_Properties_StorageProfileFields = ubx.FieldMap{
-	"AlignRegionalDisksToVmzone": ubx.FieldSpec{WireName: "align_regional_disks_to_vmzone"},
-	"DataDisks": ubx.FieldSpec{
-		WireName: "data_disks",
-		Kind:     "list",
-		Fields:   Machine_Properties_StorageProfile_DataDisksFields,
-	},
-	"DiskApiVersion":     ubx.FieldSpec{WireName: "disk_api_version"},
-	"DiskControllerType": ubx.FieldSpec{WireName: "disk_controller_type"},
-	"ImageReference": ubx.FieldSpec{
-		WireName: "image_reference",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_ImageReferenceFields,
-	},
-	"OsDisk": ubx.FieldSpec{
-		WireName: "os_disk",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfile_OsDiskFields,
-	},
-}
+		"AlignRegionalDisksToVmzone": ubx.FieldSpec{WireName: "align_regional_disks_to_vmzone"},
+		"DataDisks": ubx.FieldSpec{
+			WireName: "data_disks",
+			Kind: "list",
+			Fields: Machine_Properties_StorageProfile_DataDisksFields,
+		},
+		"DiskApiVersion": ubx.FieldSpec{WireName: "disk_api_version"},
+		"DiskControllerType": ubx.FieldSpec{WireName: "disk_controller_type"},
+		"ImageReference": ubx.FieldSpec{
+			WireName: "image_reference",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_ImageReferenceFields,
+		},
+		"OsDisk": ubx.FieldSpec{
+			WireName: "os_disk",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfile_OsDiskFields,
+		},
+	}
 
 var Machine_PropertiesFields = ubx.FieldMap{
-	"AdditionalCapabilities": ubx.FieldSpec{
-		WireName: "additional_capabilities",
-		Kind:     "object",
-		Fields:   Machine_Properties_AdditionalCapabilitiesFields,
-	},
-	"ApplicationProfile": ubx.FieldSpec{
-		WireName: "application_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_ApplicationProfileFields,
-	},
-	"AvailabilitySet": ubx.FieldSpec{
-		WireName: "availability_set",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"BillingProfile": ubx.FieldSpec{
-		WireName: "billing_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_BillingProfileFields,
-	},
-	"CapacityReservation": ubx.FieldSpec{
-		WireName: "capacity_reservation",
-		Kind:     "object",
-		Fields:   Machine_Properties_CapacityReservationFields,
-	},
-	"DiagnosticsProfile": ubx.FieldSpec{
-		WireName: "diagnostics_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_DiagnosticsProfileFields,
-	},
-	"EvictionPolicy":       ubx.FieldSpec{WireName: "eviction_policy"},
-	"ExtensionsTimeBudget": ubx.FieldSpec{WireName: "extensions_time_budget"},
-	"HardwareProfile": ubx.FieldSpec{
-		WireName: "hardware_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_HardwareProfileFields,
-	},
-	"Host": ubx.FieldSpec{
-		WireName: "host",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"HostGroup": ubx.FieldSpec{
-		WireName: "host_group",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"InstanceView": ubx.FieldSpec{
-		WireName: "instance_view",
-		Kind:     "object",
-		Fields:   Machine_Properties_InstanceViewFields,
-	},
-	"InterconnectBlockProfile": ubx.FieldSpec{
-		WireName: "interconnect_block_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_InterconnectBlockProfileFields,
-	},
-	"LicenseType": ubx.FieldSpec{WireName: "license_type"},
-	"NetworkProfile": ubx.FieldSpec{
-		WireName: "network_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_NetworkProfileFields,
-	},
-	"OsProfile": ubx.FieldSpec{
-		WireName: "os_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_OsProfileFields,
-	},
-	"PlatformFaultDomain": ubx.FieldSpec{WireName: "platform_fault_domain"},
-	"Priority":            ubx.FieldSpec{WireName: "priority"},
-	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
-	"ProximityPlacementGroup": ubx.FieldSpec{
-		WireName: "proximity_placement_group",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"ResiliencyProfile": ubx.FieldSpec{
-		WireName: "resiliency_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_ResiliencyProfileFields,
-	},
-	"ScheduledEventsPolicy": ubx.FieldSpec{
-		WireName: "scheduled_events_policy",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsPolicyFields,
-	},
-	"ScheduledEventsProfile": ubx.FieldSpec{
-		WireName: "scheduled_events_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_ScheduledEventsProfileFields,
-	},
-	"SecurityProfile": ubx.FieldSpec{
-		WireName: "security_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_SecurityProfileFields,
-	},
-	"StorageProfile": ubx.FieldSpec{
-		WireName: "storage_profile",
-		Kind:     "object",
-		Fields:   Machine_Properties_StorageProfileFields,
-	},
-	"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-	"UserData":    ubx.FieldSpec{WireName: "user_data"},
-	"VirtualMachineScaleSet": ubx.FieldSpec{
-		WireName: "virtual_machine_scale_set",
-		Kind:     "object",
-		Fields:   Machine_Properties_AvailabilitySetFields,
-	},
-	"VmId": ubx.FieldSpec{WireName: "vm_id"},
-}
+		"AdditionalCapabilities": ubx.FieldSpec{
+			WireName: "additional_capabilities",
+			Kind: "object",
+			Fields: Machine_Properties_AdditionalCapabilitiesFields,
+		},
+		"ApplicationProfile": ubx.FieldSpec{
+			WireName: "application_profile",
+			Kind: "object",
+			Fields: Machine_Properties_ApplicationProfileFields,
+		},
+		"AvailabilitySet": ubx.FieldSpec{
+			WireName: "availability_set",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"BillingProfile": ubx.FieldSpec{
+			WireName: "billing_profile",
+			Kind: "object",
+			Fields: Machine_Properties_BillingProfileFields,
+		},
+		"CapacityReservation": ubx.FieldSpec{
+			WireName: "capacity_reservation",
+			Kind: "object",
+			Fields: Machine_Properties_CapacityReservationFields,
+		},
+		"DiagnosticsProfile": ubx.FieldSpec{
+			WireName: "diagnostics_profile",
+			Kind: "object",
+			Fields: Machine_Properties_DiagnosticsProfileFields,
+		},
+		"EvictionPolicy": ubx.FieldSpec{WireName: "eviction_policy"},
+		"ExtensionsTimeBudget": ubx.FieldSpec{WireName: "extensions_time_budget"},
+		"HardwareProfile": ubx.FieldSpec{
+			WireName: "hardware_profile",
+			Kind: "object",
+			Fields: Machine_Properties_HardwareProfileFields,
+		},
+		"Host": ubx.FieldSpec{
+			WireName: "host",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"HostGroup": ubx.FieldSpec{
+			WireName: "host_group",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"InstanceView": ubx.FieldSpec{
+			WireName: "instance_view",
+			Kind: "object",
+			Fields: Machine_Properties_InstanceViewFields,
+		},
+		"InterconnectBlockProfile": ubx.FieldSpec{
+			WireName: "interconnect_block_profile",
+			Kind: "object",
+			Fields: Machine_Properties_InterconnectBlockProfileFields,
+		},
+		"LicenseType": ubx.FieldSpec{WireName: "license_type"},
+		"NetworkProfile": ubx.FieldSpec{
+			WireName: "network_profile",
+			Kind: "object",
+			Fields: Machine_Properties_NetworkProfileFields,
+		},
+		"OsProfile": ubx.FieldSpec{
+			WireName: "os_profile",
+			Kind: "object",
+			Fields: Machine_Properties_OsProfileFields,
+		},
+		"PlatformFaultDomain": ubx.FieldSpec{WireName: "platform_fault_domain"},
+		"Priority": ubx.FieldSpec{WireName: "priority"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ProximityPlacementGroup": ubx.FieldSpec{
+			WireName: "proximity_placement_group",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"ResiliencyProfile": ubx.FieldSpec{
+			WireName: "resiliency_profile",
+			Kind: "object",
+			Fields: Machine_Properties_ResiliencyProfileFields,
+		},
+		"ScheduledEventsPolicy": ubx.FieldSpec{
+			WireName: "scheduled_events_policy",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsPolicyFields,
+		},
+		"ScheduledEventsProfile": ubx.FieldSpec{
+			WireName: "scheduled_events_profile",
+			Kind: "object",
+			Fields: Machine_Properties_ScheduledEventsProfileFields,
+		},
+		"SecurityProfile": ubx.FieldSpec{
+			WireName: "security_profile",
+			Kind: "object",
+			Fields: Machine_Properties_SecurityProfileFields,
+		},
+		"StorageProfile": ubx.FieldSpec{
+			WireName: "storage_profile",
+			Kind: "object",
+			Fields: Machine_Properties_StorageProfileFields,
+		},
+		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
+		"UserData": ubx.FieldSpec{WireName: "user_data"},
+		"VirtualMachineScaleSet": ubx.FieldSpec{
+			WireName: "virtual_machine_scale_set",
+			Kind: "object",
+			Fields: Machine_Properties_AvailabilitySetFields,
+		},
+		"VmId": ubx.FieldSpec{WireName: "vm_id"},
+	}
 
 type MachineConfig struct {
 	// The complex type of the extended location.
@@ -2121,31 +2121,31 @@ var Machine = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind:     "object",
-			Fields:   Machine_ExtendedLocationFields,
+			Kind: "object",
+			Fields: Machine_ExtendedLocationFields,
 		},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   Machine_IdentityFields,
+			Kind: "object",
+			Fields: Machine_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Placement": ubx.FieldSpec{
 			WireName: "placement",
-			Kind:     "object",
-			Fields:   Machine_PlacementFields,
+			Kind: "object",
+			Fields: Machine_PlacementFields,
 		},
 		"Plan": ubx.FieldSpec{
 			WireName: "plan",
-			Kind:     "object",
-			Fields:   Machine_PlanFields,
+			Kind: "object",
+			Fields: Machine_PlanFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   Machine_PropertiesFields,
+			Kind: "object",
+			Fields: Machine_PropertiesFields,
 		},
-		"Tags":  ubx.FieldSpec{WireName: "tags"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

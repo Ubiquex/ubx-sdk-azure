@@ -15,11 +15,11 @@ type VolumeQuotaRule_Properties struct {
 }
 
 var VolumeQuotaRule_PropertiesFields = ubx.FieldMap{
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"QuotaSizeInKiBs":   ubx.FieldSpec{WireName: "quota_size_in_ki_bs"},
-	"QuotaTarget":       ubx.FieldSpec{WireName: "quota_target"},
-	"QuotaType":         ubx.FieldSpec{WireName: "quota_type"},
-}
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"QuotaSizeInKiBs": ubx.FieldSpec{WireName: "quota_size_in_ki_bs"},
+		"QuotaTarget": ubx.FieldSpec{WireName: "quota_target"},
+		"QuotaType": ubx.FieldSpec{WireName: "quota_type"},
+	}
 
 type VolumeQuotaRuleConfig struct {
 	// The geo-location where the resource lives
@@ -45,8 +45,8 @@ var VolumeQuotaRule = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VolumeQuotaRule_PropertiesFields,
+			Kind: "object",
+			Fields: VolumeQuotaRule_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -3,43 +3,76 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type TemplatespecsTemplateSpecVersion_Value_Properties_LinkedTemplates struct {
-	Path     any
+type TemplatespecsTemplateSpecVersion_Properties_LinkedTemplates struct {
+	Path any
 	Template any
 }
 
-type TemplatespecsTemplateSpecVersion_Value_Properties struct {
-	Description      any
-	LinkedTemplates  any
-	MainTemplate     any
-	Metadata         any
+type TemplatespecsTemplateSpecVersion_Properties struct {
+	// Template Spec version description.
+	Description any
+	// An array of linked template artifacts.
+	LinkedTemplates any
+	// The main Azure Resource Manager template content.
+	MainTemplate any
+	// The version metadata. Metadata is an open-ended object and is typically a collection of key-value pairs.
+	Metadata any
+	// The Azure Resource Manager template UI definition content.
 	UiFormDefinition any
 }
 
-type TemplatespecsTemplateSpecVersion_Value struct {
-	Location   any
-	Properties any
-	Tags       any
+type TemplatespecsTemplateSpecVersion_SystemData struct {
+	// The timestamp of resource creation (UTC).
+	CreatedAt any
+	// The identity that created the resource.
+	CreatedBy any
+	// The type of identity that created the resource.
+	CreatedByType any
+	// The timestamp of resource last modification (UTC)
+	LastModifiedAt any
+	// The identity that last modified the resource.
+	LastModifiedBy any
+	// The type of identity that last modified the resource.
+	LastModifiedByType any
 }
 
 type TemplatespecsTemplateSpecVersionConfig struct {
-	ApiVersion       any
+	ApiVersion any
+	ResourceGroupName any
+	SubscriptionId any
 	TemplateSpecName any
+	TemplateSpecVersion any
 }
 
 type TemplatespecsTemplateSpecVersionAttrs struct {
 	ApiVersion any
-	// The URL to use for getting the next set of results.
-	NextLink         any
+	// String Id used to locate any resource on Azure.
+	Id any
+	// The location of the Template Spec Version. It must match the location of the parent Template Spec.
+	Location any
+	// Name of this resource.
+	Name any
+	// Template Spec Version properties.
+	Properties any
+	ResourceGroupName any
+	SubscriptionId any
+	// Metadata pertaining to creation and last modification of the resource.
+	SystemData any
+	// Resource tags.
+	Tags any
 	TemplateSpecName any
-	// An array of Template Spec versions.
-	Value any
+	TemplateSpecVersion any
+	// Type of this resource.
+	Type any
 }
 
 var TemplatespecsTemplateSpecVersion = ubx.DataSourceBinding{
 	WireType: "azure_resources_templatespecs_template_spec_version",
 	Fields: ubx.FieldMap{
-		"ApiVersion":       ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 		"TemplateSpecName": ubx.FieldSpec{WireName: "template_spec_name"},
+		"TemplateSpecVersion": ubx.FieldSpec{WireName: "template_spec_version"},
 	},
 }

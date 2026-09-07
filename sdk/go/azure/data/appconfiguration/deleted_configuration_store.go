@@ -3,40 +3,49 @@ package appconfiguration
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DeletedConfigurationStore_Value_Properties struct {
-	ConfigurationStoreId   any
-	DeletionDate           any
-	Location               any
+type DeletedConfigurationStore_Properties struct {
+	// The resource id of the original configuration store.
+	ConfigurationStoreId any
+	// The deleted date.
+	DeletionDate any
+	// The location of the original configuration store.
+	Location any
+	// Purge protection status of the original configuration store.
 	PurgeProtectionEnabled any
-	ScheduledPurgeDate     any
-	Tags                   any
-}
-
-type DeletedConfigurationStore_Value struct {
-	Id         any
-	Name       any
-	Properties any
-	Type       any
+	// The scheduled purged date.
+	ScheduledPurgeDate any
+	// Tags of the original configuration store.
+	Tags any
 }
 
 type DeletedConfigurationStoreConfig struct {
-	ApiVersion     any
+	ApiVersion any
+	ConfigStoreName any
+	Location any
 	SubscriptionId any
 }
 
 type DeletedConfigurationStoreAttrs struct {
 	ApiVersion any
-	// The URL to get the next set of deleted configuration stores.
-	NextLink       any
+	ConfigStoreName any
+	// The resource ID for the deleted configuration store.
+	Id any
+	Location any
+	// The name of the configuration store.
+	Name any
+	// Properties of the deleted configuration store.
+	Properties any
 	SubscriptionId any
-	// The list of deleted configuration store.
-	Value any
+	// The resource type of the configuration store.
+	Type any
 }
 
 var DeletedConfigurationStore = ubx.DataSourceBinding{
 	WireType: "azure_appconfiguration_deleted_configuration_store",
 	Fields: ubx.FieldMap{
-		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ConfigStoreName": ubx.FieldSpec{WireName: "config_store_name"},
+		"Location": ubx.FieldSpec{WireName: "location"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

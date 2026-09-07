@@ -47,29 +47,29 @@ type NetworkmanagerSecurityUserRule_SystemData struct {
 }
 
 var NetworkmanagerSecurityUserRule_Properties_DestinationsFields = ubx.FieldMap{
-	"AddressPrefix":     ubx.FieldSpec{WireName: "address_prefix"},
-	"AddressPrefixType": ubx.FieldSpec{WireName: "address_prefix_type"},
-}
+		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
+		"AddressPrefixType": ubx.FieldSpec{WireName: "address_prefix_type"},
+	}
 
 var NetworkmanagerSecurityUserRule_PropertiesFields = ubx.FieldMap{
-	"Description":           ubx.FieldSpec{WireName: "description"},
-	"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
-	"Destinations": ubx.FieldSpec{
-		WireName: "destinations",
-		Kind:     "list",
-		Fields:   NetworkmanagerSecurityUserRule_Properties_DestinationsFields,
-	},
-	"Direction":         ubx.FieldSpec{WireName: "direction"},
-	"Protocol":          ubx.FieldSpec{WireName: "protocol"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
-	"SourcePortRanges":  ubx.FieldSpec{WireName: "source_port_ranges"},
-	"Sources": ubx.FieldSpec{
-		WireName: "sources",
-		Kind:     "list",
-		Fields:   NetworkmanagerSecurityUserRule_Properties_DestinationsFields,
-	},
-}
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
+		"Destinations": ubx.FieldSpec{
+			WireName: "destinations",
+			Kind: "list",
+			Fields: NetworkmanagerSecurityUserRule_Properties_DestinationsFields,
+		},
+		"Direction": ubx.FieldSpec{WireName: "direction"},
+		"Protocol": ubx.FieldSpec{WireName: "protocol"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+		"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
+		"Sources": ubx.FieldSpec{
+			WireName: "sources",
+			Kind: "list",
+			Fields: NetworkmanagerSecurityUserRule_Properties_DestinationsFields,
+		},
+	}
 
 type NetworkmanagerSecurityUserRuleConfig struct {
 	// Security rule resource.
@@ -96,8 +96,8 @@ var NetworkmanagerSecurityUserRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   NetworkmanagerSecurityUserRule_PropertiesFields,
+			Kind: "object",
+			Fields: NetworkmanagerSecurityUserRule_PropertiesFields,
 		},
 	},
 }

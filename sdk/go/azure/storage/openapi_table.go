@@ -27,28 +27,28 @@ type OpenapiTable_Properties struct {
 }
 
 var OpenapiTable_Properties_SignedIdentifiers_AccessPolicyFields = ubx.FieldMap{
-	"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
-	"Permission": ubx.FieldSpec{WireName: "permission"},
-	"StartTime":  ubx.FieldSpec{WireName: "start_time"},
-}
+		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
+		"Permission": ubx.FieldSpec{WireName: "permission"},
+		"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	}
 
 var OpenapiTable_Properties_SignedIdentifiersFields = ubx.FieldMap{
-	"AccessPolicy": ubx.FieldSpec{
-		WireName: "access_policy",
-		Kind:     "object",
-		Fields:   OpenapiTable_Properties_SignedIdentifiers_AccessPolicyFields,
-	},
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"AccessPolicy": ubx.FieldSpec{
+			WireName: "access_policy",
+			Kind: "object",
+			Fields: OpenapiTable_Properties_SignedIdentifiers_AccessPolicyFields,
+		},
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var OpenapiTable_PropertiesFields = ubx.FieldMap{
-	"SignedIdentifiers": ubx.FieldSpec{
-		WireName: "signed_identifiers",
-		Kind:     "list",
-		Fields:   OpenapiTable_Properties_SignedIdentifiersFields,
-	},
-	"TableName": ubx.FieldSpec{WireName: "table_name"},
-}
+		"SignedIdentifiers": ubx.FieldSpec{
+			WireName: "signed_identifiers",
+			Kind: "list",
+			Fields: OpenapiTable_Properties_SignedIdentifiersFields,
+		},
+		"TableName": ubx.FieldSpec{WireName: "table_name"},
+	}
 
 type OpenapiTableConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -65,8 +65,8 @@ var OpenapiTable = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiTable_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiTable_PropertiesFields,
 		},
 	},
 }

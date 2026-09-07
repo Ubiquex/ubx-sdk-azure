@@ -30,14 +30,15 @@ type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHub2Config struct {
 }
 
 type PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHub2Attrs struct {
-	Id   any
+	Id any
 	Name any
 	// Properties of a private endpoint connection.
 	Properties any
-	Type       any
+	Type any
 }
 
 var PrivatelinkhubPrivateEndpointConnectionForPrivateLinkHub2 = ubx.DataSourceBinding{
 	WireType: "azure_synapse_privatelinkhub_private_endpoint_connection_for_private_link_hub_2",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

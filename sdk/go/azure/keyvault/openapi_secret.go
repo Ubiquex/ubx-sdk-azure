@@ -30,24 +30,24 @@ type OpenapiSecret_Properties struct {
 }
 
 var OpenapiSecret_Properties_AttributesFields = ubx.FieldMap{
-	"Created": ubx.FieldSpec{WireName: "created"},
-	"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	"Exp":     ubx.FieldSpec{WireName: "exp"},
-	"Nbf":     ubx.FieldSpec{WireName: "nbf"},
-	"Updated": ubx.FieldSpec{WireName: "updated"},
-}
+		"Created": ubx.FieldSpec{WireName: "created"},
+		"Enabled": ubx.FieldSpec{WireName: "enabled"},
+		"Exp": ubx.FieldSpec{WireName: "exp"},
+		"Nbf": ubx.FieldSpec{WireName: "nbf"},
+		"Updated": ubx.FieldSpec{WireName: "updated"},
+	}
 
 var OpenapiSecret_PropertiesFields = ubx.FieldMap{
-	"Attributes": ubx.FieldSpec{
-		WireName: "attributes",
-		Kind:     "object",
-		Fields:   OpenapiSecret_Properties_AttributesFields,
-	},
-	"ContentType":          ubx.FieldSpec{WireName: "content_type"},
-	"SecretUri":            ubx.FieldSpec{WireName: "secret_uri"},
-	"SecretUriWithVersion": ubx.FieldSpec{WireName: "secret_uri_with_version"},
-	"Value":                ubx.FieldSpec{WireName: "value"},
-}
+		"Attributes": ubx.FieldSpec{
+			WireName: "attributes",
+			Kind: "object",
+			Fields: OpenapiSecret_Properties_AttributesFields,
+		},
+		"ContentType": ubx.FieldSpec{WireName: "content_type"},
+		"SecretUri": ubx.FieldSpec{WireName: "secret_uri"},
+		"SecretUriWithVersion": ubx.FieldSpec{WireName: "secret_uri_with_version"},
+		"Value": ubx.FieldSpec{WireName: "value"},
+	}
 
 type OpenapiSecretConfig struct {
 	// Properties of the secret
@@ -68,8 +68,8 @@ var OpenapiSecret = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiSecret_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiSecret_PropertiesFields,
 		},
 	},
 }

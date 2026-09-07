@@ -18,18 +18,18 @@ type TrafficcontrollerSecurityPolicy_Properties struct {
 }
 
 var TrafficcontrollerSecurityPolicy_Properties_WafPolicyFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var TrafficcontrollerSecurityPolicy_PropertiesFields = ubx.FieldMap{
-	"PolicyType":        ubx.FieldSpec{WireName: "policy_type"},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	"WafPolicy": ubx.FieldSpec{
-		WireName: "waf_policy",
-		Kind:     "object",
-		Fields:   TrafficcontrollerSecurityPolicy_Properties_WafPolicyFields,
-	},
-}
+		"PolicyType": ubx.FieldSpec{WireName: "policy_type"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"WafPolicy": ubx.FieldSpec{
+			WireName: "waf_policy",
+			Kind: "object",
+			Fields: TrafficcontrollerSecurityPolicy_Properties_WafPolicyFields,
+		},
+	}
 
 type TrafficcontrollerSecurityPolicyConfig struct {
 	// The geo-location where the resource lives
@@ -55,8 +55,8 @@ var TrafficcontrollerSecurityPolicy = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   TrafficcontrollerSecurityPolicy_PropertiesFields,
+			Kind: "object",
+			Fields: TrafficcontrollerSecurityPolicy_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

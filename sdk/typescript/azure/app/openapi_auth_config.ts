@@ -271,7 +271,7 @@ export interface OpenapiAuthConfig_Properties_Login_Routes {
 
 export interface OpenapiAuthConfig_Properties_Login_TokenStore_AzureBlobStorage {
   /** The name of the app secrets containing the SAS URL of the blob storage containing the tokens. */
-  sasUrlSettingName: string | Computed<string>;
+  sasUrlSettingName?: string | Computed<string>;
 }
 
 export interface OpenapiAuthConfig_Properties_Login_TokenStore {

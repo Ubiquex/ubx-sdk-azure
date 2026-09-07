@@ -7,34 +7,23 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiGiVersion_Value_Properties:
+class OpenapiGiVersion_Properties:
+    # A valid Oracle Grid Infrastructure (GI) software version.
     version: Any = None
 
 @dataclasses.dataclass
-class OpenapiGiVersion_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiGiVersionConfig:
-    shape: Any = None
-    shape_attribute: Any = None
-    zone: Any = None
+    giversionname: Any = None
 
 @dataclasses.dataclass
 class OpenapiGiVersionAttrs:
-    # The link to the next page of items
-    next_link: Any = None
-    shape: Any = None
-    shape_attribute: Any = None
-    # The GiVersion items on this page
-    value: Any = None
-    zone: Any = None
+    giversionname: Any = None
+    # GiVersion resource model
+    properties: Any = None
 
 OpenapiGiVersion = ubx.DataSourceBinding(
     wire_type="azure_oracle_openapi_gi_version",
     fields={
-        "shape": ubx.FieldSpec(wire_name="shape"),
-        "shape_attribute": ubx.FieldSpec(wire_name="shape_attribute"),
-        "zone": ubx.FieldSpec(wire_name="zone"),
+        "giversionname": ubx.FieldSpec(wire_name="giversionname"),
     },
 )

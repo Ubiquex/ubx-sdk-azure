@@ -3,30 +3,31 @@ package cosmos
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DbOpenapiPrivateLinkResource_Value_Properties struct {
-	GroupId           any
-	RequiredMembers   any
+type DbOpenapiPrivateLinkResource_Properties struct {
+	// The private link resource group id.
+	GroupId any
+	// The private link resource required member names.
+	RequiredMembers any
+	// The private link resource required zone names.
 	RequiredZoneNames any
-}
-
-type DbOpenapiPrivateLinkResource_Value struct {
-	Properties any
 }
 
 type DbOpenapiPrivateLinkResourceConfig struct {
 	AccountName any
+	GroupName any
 }
 
 type DbOpenapiPrivateLinkResourceAttrs struct {
 	AccountName any
-	NextLink    any
-	// Array of private link resources
-	Value any
+	GroupName any
+	// Properties of a private link resource.
+	Properties any
 }
 
 var DbOpenapiPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_private_link_resource",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"GroupName": ubx.FieldSpec{WireName: "group_name"},
 	},
 }

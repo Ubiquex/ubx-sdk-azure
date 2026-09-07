@@ -29,29 +29,29 @@ type ManagedclustersIdentityBinding_Properties struct {
 }
 
 var ManagedclustersIdentityBinding_Properties_ManagedIdentityFields = ubx.FieldMap{
-	"ClientId":   ubx.FieldSpec{WireName: "client_id"},
-	"ObjectId":   ubx.FieldSpec{WireName: "object_id"},
-	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	"TenantId":   ubx.FieldSpec{WireName: "tenant_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+	}
 
 var ManagedclustersIdentityBinding_Properties_OidcIssuerFields = ubx.FieldMap{
-	"OidcIssuerUrl": ubx.FieldSpec{WireName: "oidc_issuer_url"},
-}
+		"OidcIssuerUrl": ubx.FieldSpec{WireName: "oidc_issuer_url"},
+	}
 
 var ManagedclustersIdentityBinding_PropertiesFields = ubx.FieldMap{
-	"ManagedIdentity": ubx.FieldSpec{
-		WireName: "managed_identity",
-		Kind:     "object",
-		Fields:   ManagedclustersIdentityBinding_Properties_ManagedIdentityFields,
-	},
-	"OidcIssuer": ubx.FieldSpec{
-		WireName: "oidc_issuer",
-		Kind:     "object",
-		Fields:   ManagedclustersIdentityBinding_Properties_OidcIssuerFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"ManagedIdentity": ubx.FieldSpec{
+			WireName: "managed_identity",
+			Kind: "object",
+			Fields: ManagedclustersIdentityBinding_Properties_ManagedIdentityFields,
+		},
+		"OidcIssuer": ubx.FieldSpec{
+			WireName: "oidc_issuer",
+			Kind: "object",
+			Fields: ManagedclustersIdentityBinding_Properties_OidcIssuerFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 type ManagedclustersIdentityBindingConfig struct {
 	// IdentityBinding properties.
@@ -70,8 +70,8 @@ var ManagedclustersIdentityBinding = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ManagedclustersIdentityBinding_PropertiesFields,
+			Kind: "object",
+			Fields: ManagedclustersIdentityBinding_PropertiesFields,
 		},
 	},
 }

@@ -22,5 +22,6 @@ type OpenapiBackupAutomaticAndOnDemandAttrs struct {
 
 var OpenapiBackupAutomaticAndOnDemand = ubx.ResourceBinding{
 	WireType: "azure_postgresql_openapi_backup_automatic_and_on_demand",
-	Fields:   ubx.FieldMap{},
+	Fields: ubx.FieldMap{
+	},
 }

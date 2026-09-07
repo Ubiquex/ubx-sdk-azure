@@ -24,8 +24,8 @@ type ExternalidentitiesGuestUsagesResource_SystemData struct {
 }
 
 var ExternalidentitiesGuestUsagesResource_PropertiesFields = ubx.FieldMap{
-	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-}
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+	}
 
 type ExternalidentitiesGuestUsagesResourceConfig struct {
 	// Location of the Guest Usages resource.
@@ -59,8 +59,8 @@ var ExternalidentitiesGuestUsagesResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ExternalidentitiesGuestUsagesResource_PropertiesFields,
+			Kind: "object",
+			Fields: ExternalidentitiesGuestUsagesResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

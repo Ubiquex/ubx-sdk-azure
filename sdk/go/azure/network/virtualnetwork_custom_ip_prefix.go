@@ -49,43 +49,43 @@ type VirtualnetworkCustomIpPrefix_Properties struct {
 }
 
 var VirtualnetworkCustomIpPrefix_ExtendedLocationFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixesFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var VirtualnetworkCustomIpPrefix_PropertiesFields = ubx.FieldMap{
-	"Asn":                  ubx.FieldSpec{WireName: "asn"},
-	"AuthorizationMessage": ubx.FieldSpec{WireName: "authorization_message"},
-	"ChildCustomIpPrefixes": ubx.FieldSpec{
-		WireName: "child_custom_ip_prefixes",
-		Kind:     "list",
-		Fields:   VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixesFields,
-	},
-	"Cidr":              ubx.FieldSpec{WireName: "cidr"},
-	"CommissionedState": ubx.FieldSpec{WireName: "commissioned_state"},
-	"CustomIpPrefixParent": ubx.FieldSpec{
-		WireName: "custom_ip_prefix_parent",
-		Kind:     "object",
-		Fields:   VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixesFields,
-	},
-	"ExpressRouteAdvertise": ubx.FieldSpec{WireName: "express_route_advertise"},
-	"FailedReason":          ubx.FieldSpec{WireName: "failed_reason"},
-	"Geo":                   ubx.FieldSpec{WireName: "geo"},
-	"NoInternetAdvertise":   ubx.FieldSpec{WireName: "no_internet_advertise"},
-	"PrefixType":            ubx.FieldSpec{WireName: "prefix_type"},
-	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
-	"PublicIpPrefixes": ubx.FieldSpec{
-		WireName: "public_ip_prefixes",
-		Kind:     "list",
-		Fields:   VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixesFields,
-	},
-	"ResourceGuid":  ubx.FieldSpec{WireName: "resource_guid"},
-	"SignedMessage": ubx.FieldSpec{WireName: "signed_message"},
-}
+		"Asn": ubx.FieldSpec{WireName: "asn"},
+		"AuthorizationMessage": ubx.FieldSpec{WireName: "authorization_message"},
+		"ChildCustomIpPrefixes": ubx.FieldSpec{
+			WireName: "child_custom_ip_prefixes",
+			Kind: "list",
+			Fields: VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixesFields,
+		},
+		"Cidr": ubx.FieldSpec{WireName: "cidr"},
+		"CommissionedState": ubx.FieldSpec{WireName: "commissioned_state"},
+		"CustomIpPrefixParent": ubx.FieldSpec{
+			WireName: "custom_ip_prefix_parent",
+			Kind: "object",
+			Fields: VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixesFields,
+		},
+		"ExpressRouteAdvertise": ubx.FieldSpec{WireName: "express_route_advertise"},
+		"FailedReason": ubx.FieldSpec{WireName: "failed_reason"},
+		"Geo": ubx.FieldSpec{WireName: "geo"},
+		"NoInternetAdvertise": ubx.FieldSpec{WireName: "no_internet_advertise"},
+		"PrefixType": ubx.FieldSpec{WireName: "prefix_type"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"PublicIpPrefixes": ubx.FieldSpec{
+			WireName: "public_ip_prefixes",
+			Kind: "list",
+			Fields: VirtualnetworkCustomIpPrefix_Properties_ChildCustomIpPrefixesFields,
+		},
+		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+		"SignedMessage": ubx.FieldSpec{WireName: "signed_message"},
+	}
 
 type VirtualnetworkCustomIpPrefixConfig struct {
 	// ExtendedLocation complex type.
@@ -128,17 +128,17 @@ var VirtualnetworkCustomIpPrefix = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind:     "object",
-			Fields:   VirtualnetworkCustomIpPrefix_ExtendedLocationFields,
+			Kind: "object",
+			Fields: VirtualnetworkCustomIpPrefix_ExtendedLocationFields,
 		},
-		"Id":       ubx.FieldSpec{WireName: "id"},
+		"Id": ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   VirtualnetworkCustomIpPrefix_PropertiesFields,
+			Kind: "object",
+			Fields: VirtualnetworkCustomIpPrefix_PropertiesFields,
 		},
-		"Tags":  ubx.FieldSpec{WireName: "tags"},
+		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

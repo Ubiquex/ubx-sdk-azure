@@ -3,171 +3,213 @@ package resources
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type DeploymentstacksDeploymentStack_Value_Properties_ActionOnUnmanage struct {
-	ManagementGroups              any
-	ResourceGroups                any
-	Resources                     any
+type DeploymentstacksDeploymentStack_Properties_ActionOnUnmanage struct {
+	// Specifies an action for a newly unmanaged resource.
+	ManagementGroups any
+	// Specifies an action for a newly unmanaged resource group.
+	ResourceGroups any
+	// Specifies an action for a newly unmanaged resource.
+	Resources any
+	// Specifies an action for resources that do not support deletion.
 	ResourcesWithoutDeleteSupport any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_DebugSetting struct {
+type DeploymentstacksDeploymentStack_Properties_DebugSetting struct {
+	// Specifies the type of information to log for debugging. The permitted values are none, requestContent, responseContent, or both requestContent and responseContent separated by a comma. The default is none. When setting this value, carefully consider the type of information that is being passed in during deployment. By logging information about the request or response, sensitive data that is retrieved through the deployment operations could potentially be exposed.
 	DetailLevel any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources_Extension_Config_KeyVaultReference_KeyVault struct {
+type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference_KeyVault struct {
 	Id any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources_Extension_Config_KeyVaultReference struct {
-	KeyVault      any
-	SecretName    any
+type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference struct {
+	KeyVault any
+	SecretName any
 	SecretVersion any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources_Extension_Config struct {
+type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config struct {
 	KeyVaultReference any
-	Type              any
-	Value             any
+	Type any
+	Value any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources_Extension struct {
-	Config   any
+type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension struct {
+	Config any
 	ConfigId any
-	Name     any
-	Version  any
+	Name any
+	Version any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_DeletedResources struct {
-	ApiVersion  any
-	Extension   any
-	Id          any
+type DeploymentstacksDeploymentStack_Properties_DeletedResources struct {
+	ApiVersion any
+	Extension any
+	Id any
 	Identifiers any
-	Type        any
+	Type any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_DenySettings struct {
+type DeploymentstacksDeploymentStack_Properties_DenySettings struct {
+	// DenySettings will be applied to child resource scopes of every managed resource with a deny assignment.
 	ApplyToChildScopes any
-	ExcludedActions    any
+	// List of role-based management operations that are excluded from the denySettings. Up to 200 actions are permitted. If the denySetting mode is set to 'denyWriteAndDelete', then the following actions are automatically appended to 'excludedActions': '*\/read' and 'Microsoft.Authorization/locks/delete'. If the denySetting mode is set to 'denyDelete', then the following actions are automatically appended to 'excludedActions': 'Microsoft.Authorization/locks/delete'. Duplicate actions will be removed.
+	ExcludedActions any
+	// List of AAD principal IDs excluded from the lock. Up to 5 principals are permitted.
 	ExcludedPrincipals any
-	Mode               any
+	// denySettings Mode that defines denied actions.
+	Mode any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_Error_AdditionalInfo struct {
+type DeploymentstacksDeploymentStack_Properties_Error_AdditionalInfo struct {
 	Info any
 	Type any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_Error_Details_Details struct {
+type DeploymentstacksDeploymentStack_Properties_Error_Details_Details struct {
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_Error_Details struct {
+type DeploymentstacksDeploymentStack_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	Code any
+	Details any
+	Message any
+	Target any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_Error struct {
+type DeploymentstacksDeploymentStack_Properties_Error struct {
+	// The error additional info.
 	AdditionalInfo any
-	Code           any
-	Details        any
-	Message        any
-	Target         any
+	// The error code.
+	Code any
+	// The error details.
+	Details any
+	// The error message.
+	Message any
+	// The error target.
+	Target any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_ExternalInputDefinitions struct {
+type DeploymentstacksDeploymentStack_Properties_ExternalInputDefinitions struct {
 	Config any
-	Kind   any
+	Kind any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_ExternalInputs struct {
+type DeploymentstacksDeploymentStack_Properties_ExternalInputs struct {
 	Value any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_FailedResources struct {
-	ApiVersion  any
-	Error       any
-	Extension   any
-	Id          any
+type DeploymentstacksDeploymentStack_Properties_FailedResources struct {
+	ApiVersion any
+	Error any
+	Extension any
+	Id any
 	Identifiers any
-	Type        any
+	Type any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_Parameters struct {
+type DeploymentstacksDeploymentStack_Properties_Parameters struct {
 	Expression any
-	Reference  any
-	Type       any
-	Value      any
+	Reference any
+	Type any
+	Value any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_ParametersLink struct {
+type DeploymentstacksDeploymentStack_Properties_ParametersLink struct {
+	// If included, must match the ContentVersion in the template.
 	ContentVersion any
-	Uri            any
+	// The URI of the parameters file.
+	Uri any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_Resources struct {
+type DeploymentstacksDeploymentStack_Properties_Resources struct {
 	DenyStatus any
-	Status     any
+	Status any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties_TemplateLink struct {
+type DeploymentstacksDeploymentStack_Properties_TemplateLink struct {
+	// If included, must match the ContentVersion in the template.
 	ContentVersion any
-	Id             any
-	QueryString    any
-	RelativePath   any
-	Uri            any
+	// The resourceId of a Template Spec. Use either the id or uri property, but not both.
+	Id any
+	// The query string (for example, a SAS token) to be used with the templateLink URI.
+	QueryString any
+	// The relativePath property can be used to deploy a linked template at a location relative to the parent. If the parent template was linked with a TemplateSpec, this will reference an artifact in the TemplateSpec. If the parent was linked with a URI, the child deployment will be a combination of the parent and relativePath URIs.
+	RelativePath any
+	// The URI of the template to deploy. Use either the uri or id property, but not both.
+	Uri any
 }
 
-type DeploymentstacksDeploymentStack_Value_Properties struct {
-	ActionOnUnmanage          any
+type DeploymentstacksDeploymentStack_Properties struct {
+	// Defines the behavior of resources that are no longer managed after the stack is updated or deleted.
+	ActionOnUnmanage any
+	// Flag to bypass service errors that indicate the stack resource list is not correctly synchronized.
 	BypassStackOutOfSyncError any
-	CorrelationId             any
-	DebugSetting              any
-	DeletedResources          any
-	DenySettings              any
-	DeploymentExtensions      any
-	DeploymentId              any
-	DeploymentScope           any
-	Description               any
-	DetachedResources         any
-	Duration                  any
-	Error                     any
-	ExtensionConfigs          any
-	ExternalInputDefinitions  any
-	ExternalInputs            any
-	FailedResources           any
-	Outputs                   any
-	Parameters                any
-	ParametersLink            any
-	ProvisioningState         any
-	Resources                 any
-	Template                  any
-	TemplateLink              any
-	ValidationLevel           any
-}
-
-type DeploymentstacksDeploymentStack_Value struct {
-	Location   any
-	Properties any
-	Tags       any
+	// The correlation id of the last Deployment stack upsert or delete operation. It is in GUID format and is used for tracing.
+	CorrelationId any
+	// The debug setting.
+	DebugSetting any
+	// An array of resources that were deleted during the most recent Deployment stack update. Deleted means that the resource was removed from the template and relevant deletion operations were specified.
+	DeletedResources any
+	// Defines how resources deployed by the Deployment stack are locked.
+	DenySettings any
+	// The extensions used during deployment. Contains extension data for all extensible resources managed by the stack.
+	DeploymentExtensions any
+	// The resourceId of the deployment resource created by the deployment stack.
+	DeploymentId any
+	// The scope at which the initial deployment should be created. If a scope is not specified, it will default to the scope of the deployment stack. Valid scopes are: management group (format: '/providers/Microsoft.Management/managementGroups/{managementGroupId}'), subscription (format: '/subscriptions/{subscriptionId}'), resource group (format: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}').
+	DeploymentScope any
+	// Deployment stack description. Max length of 4096 characters.
+	Description any
+	// An array of resources that were detached during the most recent Deployment stack update. Detached means that the resource was removed from the template, but no relevant deletion operations were specified. So, the resource still exists while no longer being associated with the stack.
+	DetachedResources any
+	// The duration of the last successful Deployment stack update.
+	Duration any
+	// The error detail.
+	Error any
+	// The deployment extension configs. Keys of this object are extension aliases as defined in the deployment template.
+	ExtensionConfigs any
+	// External input definitions, used by external tooling to define expected external input values.
+	ExternalInputDefinitions any
+	// External input values, used by external tooling for parameter evaluation.
+	ExternalInputs any
+	// An array of resources that failed to reach goal state during the most recent update. Each resourceId is accompanied by an error message.
+	FailedResources any
+	// The outputs of the deployment resource created by the deployment stack.
+	Outputs any
+	// Name and value pairs that define the deployment parameters for the template. Use this element when providing the parameter values directly in the request, rather than linking to an existing parameter file. Use either the parametersLink property or the parameters property, but not both.
+	Parameters any
+	// Entity representing the reference to the deployment parameters.
+	ParametersLink any
+	// State of the deployment stack.
+	ProvisioningState any
+	// An array of resources currently managed by the deployment stack.
+	Resources any
+	// The template content. You use this element when you want to pass the template syntax directly in the request rather than link to an existing template. It can be a JObject or well-formed JSON string. Use either the templateLink property or the template property, but not both.
+	Template any
+	// Entity representing the reference to the template.
+	TemplateLink any
+	// The level of validation performed on the deployment.
+	ValidationLevel any
 }
 
 type DeploymentstacksDeploymentStackConfig struct {
-	ManagementGroupId any
+	DeploymentStackName any
 }
 
 type DeploymentstacksDeploymentStackAttrs struct {
-	ManagementGroupId any
-	// The link to the next page of items
-	NextLink any
-	// The DeploymentStack items on this page
-	Value any
+	DeploymentStackName any
+	// The geo-location where the resource lives. Required for subscription and management group scoped stacks. The location is inherited from the resource group for resource group scoped stacks.
+	Location any
+	// Deployment stack properties.
+	Properties any
+	// Resource tags.
+	Tags any
 }
 
 var DeploymentstacksDeploymentStack = ubx.DataSourceBinding{
 	WireType: "azure_resources_deploymentstacks_deployment_stack",
 	Fields: ubx.FieldMap{
-		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
+		"DeploymentStackName": ubx.FieldSpec{WireName: "deployment_stack_name"},
 	},
 }

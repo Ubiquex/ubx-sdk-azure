@@ -3,43 +3,45 @@ package web
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type OpenapiWorkflowRunActionRepetitionDefinition_Value_Properties_RepetitionIndexes struct {
+type OpenapiWorkflowRunActionRepetitionDefinition_Properties_RepetitionIndexes struct {
 	ItemIndex any
 	ScopeName any
 }
 
-type OpenapiWorkflowRunActionRepetitionDefinition_Value_Properties struct {
+type OpenapiWorkflowRunActionRepetitionDefinition_Properties struct {
+	// The repetition indexes.
 	RepetitionIndexes any
 }
 
-type OpenapiWorkflowRunActionRepetitionDefinition_Value struct {
-	Properties any
-}
-
 type OpenapiWorkflowRunActionRepetitionDefinitionConfig struct {
-	ActionName   any
-	Name         any
-	RunName      any
+	ActionName any
+	Name any
+	RepetitionName any
+	RunName any
 	WorkflowName any
 }
 
 type OpenapiWorkflowRunActionRepetitionDefinitionAttrs struct {
 	ActionName any
-	Name       any
-	// The link to the next page of items
-	NextLink any
-	RunName  any
-	// The WorkflowRunActionRepetitionDefinition items on this page
-	Value        any
+	// The geo-location where the resource lives
+	Location any
+	Name any
+	// The workflow run action repetition properties definition.
+	Properties any
+	RepetitionName any
+	RunName any
+	// Resource tags.
+	Tags any
 	WorkflowName any
 }
 
 var OpenapiWorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_run_action_repetition_definition",
 	Fields: ubx.FieldMap{
-		"ActionName":   ubx.FieldSpec{WireName: "action_name"},
-		"Name":         ubx.FieldSpec{WireName: "name"},
-		"RunName":      ubx.FieldSpec{WireName: "run_name"},
+		"ActionName": ubx.FieldSpec{WireName: "action_name"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"RepetitionName": ubx.FieldSpec{WireName: "repetition_name"},
+		"RunName": ubx.FieldSpec{WireName: "run_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

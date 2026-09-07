@@ -26,26 +26,26 @@ type OpenapiRule_Properties struct {
 }
 
 var OpenapiRule_Properties_ActionsFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 var OpenapiRule_PropertiesFields = ubx.FieldMap{
-	"Actions": ubx.FieldSpec{
-		WireName: "actions",
-		Kind:     "list",
-		Fields:   OpenapiRule_Properties_ActionsFields,
-	},
-	"Conditions": ubx.FieldSpec{
-		WireName: "conditions",
-		Kind:     "list",
-		Fields:   OpenapiRule_Properties_ActionsFields,
-	},
-	"DeploymentStatus":        ubx.FieldSpec{WireName: "deployment_status"},
-	"MatchProcessingBehavior": ubx.FieldSpec{WireName: "match_processing_behavior"},
-	"Order":                   ubx.FieldSpec{WireName: "order"},
-	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
-	"RuleSetName":             ubx.FieldSpec{WireName: "rule_set_name"},
-}
+		"Actions": ubx.FieldSpec{
+			WireName: "actions",
+			Kind: "list",
+			Fields: OpenapiRule_Properties_ActionsFields,
+		},
+		"Conditions": ubx.FieldSpec{
+			WireName: "conditions",
+			Kind: "list",
+			Fields: OpenapiRule_Properties_ActionsFields,
+		},
+		"DeploymentStatus": ubx.FieldSpec{WireName: "deployment_status"},
+		"MatchProcessingBehavior": ubx.FieldSpec{WireName: "match_processing_behavior"},
+		"Order": ubx.FieldSpec{WireName: "order"},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"RuleSetName": ubx.FieldSpec{WireName: "rule_set_name"},
+	}
 
 type OpenapiRuleConfig struct {
 	// The JSON object that contains the properties of the Rules to create.
@@ -62,8 +62,8 @@ var OpenapiRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   OpenapiRule_PropertiesFields,
+			Kind: "object",
+			Fields: OpenapiRule_PropertiesFields,
 		},
 	},
 }

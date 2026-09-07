@@ -3,39 +3,41 @@ package devcenter
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type ImageVersion_Value_Properties struct {
-	ExcludeFromLatest   any
-	Name                any
+type ImageVersion_Properties struct {
+	// If the version should be excluded from being treated as the latest version.
+	ExcludeFromLatest any
+	// The semantic version string.
+	Name any
+	// The size of the OS disk image, in GB.
 	OsDiskImageSizeInGb any
-	ProvisioningState   any
-	PublishedDate       any
-}
-
-type ImageVersion_Value struct {
-	Properties any
+	// Provisioning state of the resource.
+	ProvisioningState any
+	// The datetime that the backing image version was published.
+	PublishedDate any
 }
 
 type ImageVersionConfig struct {
 	DevCenterName any
-	GalleryName   any
-	ImageName     any
+	GalleryName any
+	ImageName any
+	VersionName any
 }
 
 type ImageVersionAttrs struct {
 	DevCenterName any
-	GalleryName   any
-	ImageName     any
-	// URL to get the next set of results if there are any.
-	NextLink any
-	// Current page of results.
-	Value any
+	GalleryName any
+	ImageName any
+	// Properties of an image version.
+	Properties any
+	VersionName any
 }
 
 var ImageVersion = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image_version",
 	Fields: ubx.FieldMap{
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
-		"GalleryName":   ubx.FieldSpec{WireName: "gallery_name"},
-		"ImageName":     ubx.FieldSpec{WireName: "image_name"},
+		"GalleryName": ubx.FieldSpec{WireName: "gallery_name"},
+		"ImageName": ubx.FieldSpec{WireName: "image_name"},
+		"VersionName": ubx.FieldSpec{WireName: "version_name"},
 	},
 }

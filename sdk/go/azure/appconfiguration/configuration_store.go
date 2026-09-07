@@ -122,104 +122,104 @@ type ConfigurationStore_SystemData struct {
 }
 
 var ConfigurationStore_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-}
+		"ClientId": ubx.FieldSpec{WireName: "client_id"},
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	}
 
 var ConfigurationStore_IdentityFields = ubx.FieldMap{
-	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
-	"Type":        ubx.FieldSpec{WireName: "type"},
-	"UserAssignedIdentities": ubx.FieldSpec{
-		WireName: "user_assigned_identities",
-		Kind:     "map",
-		Fields:   ConfigurationStore_Identity_UserAssignedIdentitiesFields,
-	},
-}
+		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Type": ubx.FieldSpec{WireName: "type"},
+		"UserAssignedIdentities": ubx.FieldSpec{
+			WireName: "user_assigned_identities",
+			Kind: "map",
+			Fields: ConfigurationStore_Identity_UserAssignedIdentitiesFields,
+		},
+	}
 
 var ConfigurationStore_Properties_DataPlaneProxyFields = ubx.FieldMap{
-	"AuthenticationMode":    ubx.FieldSpec{WireName: "authentication_mode"},
-	"PrivateLinkDelegation": ubx.FieldSpec{WireName: "private_link_delegation"},
-}
+		"AuthenticationMode": ubx.FieldSpec{WireName: "authentication_mode"},
+		"PrivateLinkDelegation": ubx.FieldSpec{WireName: "private_link_delegation"},
+	}
 
 var ConfigurationStore_Properties_Encryption_KeyVaultPropertiesFields = ubx.FieldMap{
-	"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
-	"KeyIdentifier":    ubx.FieldSpec{WireName: "key_identifier"},
-}
+		"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
+		"KeyIdentifier": ubx.FieldSpec{WireName: "key_identifier"},
+	}
 
 var ConfigurationStore_Properties_EncryptionFields = ubx.FieldMap{
-	"KeyVaultProperties": ubx.FieldSpec{
-		WireName: "key_vault_properties",
-		Kind:     "object",
-		Fields:   ConfigurationStore_Properties_Encryption_KeyVaultPropertiesFields,
-	},
-}
+		"KeyVaultProperties": ubx.FieldSpec{
+			WireName: "key_vault_properties",
+			Kind: "object",
+			Fields: ConfigurationStore_Properties_Encryption_KeyVaultPropertiesFields,
+		},
+	}
 
 var ConfigurationStore_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-	"Id": ubx.FieldSpec{WireName: "id"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+	}
 
 var ConfigurationStore_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-	"Description":     ubx.FieldSpec{WireName: "description"},
-	"Status":          ubx.FieldSpec{WireName: "status"},
-}
+		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+		"Description": ubx.FieldSpec{WireName: "description"},
+		"Status": ubx.FieldSpec{WireName: "status"},
+	}
 
 var ConfigurationStore_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-	"PrivateEndpoint": ubx.FieldSpec{
-		WireName: "private_endpoint",
-		Kind:     "object",
-		Fields:   ConfigurationStore_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-	},
-	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-		WireName: "private_link_service_connection_state",
-		Kind:     "object",
-		Fields:   ConfigurationStore_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-	},
-	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-}
+		"PrivateEndpoint": ubx.FieldSpec{
+			WireName: "private_endpoint",
+			Kind: "object",
+			Fields: ConfigurationStore_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+		},
+		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+			WireName: "private_link_service_connection_state",
+			Kind: "object",
+			Fields: ConfigurationStore_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	}
 
 var ConfigurationStore_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-	"Id":   ubx.FieldSpec{WireName: "id"},
-	"Name": ubx.FieldSpec{WireName: "name"},
-	"Properties": ubx.FieldSpec{
-		WireName: "properties",
-		Kind:     "object",
-		Fields:   ConfigurationStore_Properties_PrivateEndpointConnections_PropertiesFields,
-	},
-	"Type": ubx.FieldSpec{WireName: "type"},
-}
+		"Id": ubx.FieldSpec{WireName: "id"},
+		"Name": ubx.FieldSpec{WireName: "name"},
+		"Properties": ubx.FieldSpec{
+			WireName: "properties",
+			Kind: "object",
+			Fields: ConfigurationStore_Properties_PrivateEndpointConnections_PropertiesFields,
+		},
+		"Type": ubx.FieldSpec{WireName: "type"},
+	}
 
 var ConfigurationStore_PropertiesFields = ubx.FieldMap{
-	"CreateMode":   ubx.FieldSpec{WireName: "create_mode"},
-	"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-	"DataPlaneProxy": ubx.FieldSpec{
-		WireName: "data_plane_proxy",
-		Kind:     "object",
-		Fields:   ConfigurationStore_Properties_DataPlaneProxyFields,
-	},
-	"DefaultKeyValueRevisionRetentionPeriodInSeconds": ubx.FieldSpec{WireName: "default_key_value_revision_retention_period_in_seconds"},
-	"DisableLocalAuth":      ubx.FieldSpec{WireName: "disable_local_auth"},
-	"EnablePurgeProtection": ubx.FieldSpec{WireName: "enable_purge_protection"},
-	"Encryption": ubx.FieldSpec{
-		WireName: "encryption",
-		Kind:     "object",
-		Fields:   ConfigurationStore_Properties_EncryptionFields,
-	},
-	"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-	"PrivateEndpointConnections": ubx.FieldSpec{
-		WireName: "private_endpoint_connections",
-		Kind:     "list",
-		Fields:   ConfigurationStore_Properties_PrivateEndpointConnectionsFields,
-	},
-	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
-	"PublicNetworkAccess":       ubx.FieldSpec{WireName: "public_network_access"},
-	"SoftDeleteRetentionInDays": ubx.FieldSpec{WireName: "soft_delete_retention_in_days"},
-}
+		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
+		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
+		"DataPlaneProxy": ubx.FieldSpec{
+			WireName: "data_plane_proxy",
+			Kind: "object",
+			Fields: ConfigurationStore_Properties_DataPlaneProxyFields,
+		},
+		"DefaultKeyValueRevisionRetentionPeriodInSeconds": ubx.FieldSpec{WireName: "default_key_value_revision_retention_period_in_seconds"},
+		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
+		"EnablePurgeProtection": ubx.FieldSpec{WireName: "enable_purge_protection"},
+		"Encryption": ubx.FieldSpec{
+			WireName: "encryption",
+			Kind: "object",
+			Fields: ConfigurationStore_Properties_EncryptionFields,
+		},
+		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
+		"PrivateEndpointConnections": ubx.FieldSpec{
+			WireName: "private_endpoint_connections",
+			Kind: "list",
+			Fields: ConfigurationStore_Properties_PrivateEndpointConnectionsFields,
+		},
+		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+		"SoftDeleteRetentionInDays": ubx.FieldSpec{WireName: "soft_delete_retention_in_days"},
+	}
 
 var ConfigurationStore_SkuFields = ubx.FieldMap{
-	"Name": ubx.FieldSpec{WireName: "name"},
-}
+		"Name": ubx.FieldSpec{WireName: "name"},
+	}
 
 type ConfigurationStoreConfig struct {
 	// An identity that can be associated with a resource.
@@ -254,19 +254,19 @@ var ConfigurationStore = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind:     "object",
-			Fields:   ConfigurationStore_IdentityFields,
+			Kind: "object",
+			Fields: ConfigurationStore_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind:     "object",
-			Fields:   ConfigurationStore_PropertiesFields,
+			Kind: "object",
+			Fields: ConfigurationStore_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind:     "object",
-			Fields:   ConfigurationStore_SkuFields,
+			Kind: "object",
+			Fields: ConfigurationStore_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

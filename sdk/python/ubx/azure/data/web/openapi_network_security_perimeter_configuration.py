@@ -7,22 +7,25 @@ from typing import Any
 import ubx_sdk as ubx
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_NetworkSecurityPerimeter:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPerimeter:
+    # ARM URI of the Network Security Perimeter resource.
     id: Any = None
+    # Location where the Network Security Perimeter resource.
     location: Any = None
+    # GUID of the Network Security Perimeter resource.
     perimeter_guid: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties_AppliesTo:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_AppliesTo:
     features: Any = None
     resource_type: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties_Subscriptions:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_Subscriptions:
     id: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules_Properties:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties:
     address_prefixes: Any = None
     applies_to: Any = None
     direction: Any = None
@@ -34,20 +37,25 @@ class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_Acce
     subscriptions: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile_AccessRules:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules:
     name: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Profile:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile:
+    # Access Rules for the Network Security Perimeter Profile.
     access_rules: Any = None
+    # Access Rules Version for the Network Security Perimeter Profile.
     access_rules_version: Any = None
+    # Diagnostic Settings Version for the Network Security Perimeter Profile.
     diagnostic_settings_version: Any = None
+    # Enabled Log Categories for the Network Security Perimeter Profile.
     enabled_log_categories: Any = None
+    # Name of the Network Security Perimeter Profile.
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues_Properties:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties:
     description: Any = None
     issue_type: Any = None
     severity: Any = None
@@ -55,42 +63,50 @@ class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_Provisioning
     suggested_resource_ids: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ProvisioningIssues:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues:
     name: Any = None
     properties: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties_ResourceAssociations:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties_ResourceAssociations:
+    # Network Security Perimeter Association Access Mode (Learning/Enforced)
     access_mode: Any = None
+    # Network Security Perimeter Resource Association Name
     name: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value_Properties:
+class OpenapiNetworkSecurityPerimeterConfiguration_Properties:
+    # Network Security Perimeter
     network_security_perimeter: Any = None
+    # Network Security Perimeter Profile
     profile: Any = None
+    # Reflects any misconfigurations and failures detected while provisioning the association or while processing configuration changes.
     provisioning_issues: Any = None
+    # Reflects state of association persistence and configuration propagation to App Service Data Plane.
     provisioning_state: Any = None
+    # Network Security Perimeter Resource Association
     resource_associations: Any = None
 
 @dataclasses.dataclass
-class OpenapiNetworkSecurityPerimeterConfiguration_Value:
-    properties: Any = None
-
-@dataclasses.dataclass
 class OpenapiNetworkSecurityPerimeterConfigurationConfig:
-    name: Any = None
+    network_security_perimeter_reference: Any = None
 
 @dataclasses.dataclass
 class OpenapiNetworkSecurityPerimeterConfigurationAttrs:
+    # Resource Id.
+    id: Any = None
+    # Kind of resource.
+    kind: Any = None
     name: Any = None
-    # The link to the next page of items
-    next_link: Any = None
-    # The NetworkSecurityPerimeterConfiguration items on this page
-    value: Any = None
+    network_security_perimeter_reference: Any = None
+    # Network Security Perimeter Configuration Properties
+    properties: Any = None
+    # Resource type.
+    type: Any = None
 
 OpenapiNetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding(
     wire_type="azure_web_openapi_network_security_perimeter_configuration",
     fields={
-        "name": ubx.FieldSpec(wire_name="name"),
+        "network_security_perimeter_reference": ubx.FieldSpec(wire_name="network_security_perimeter_reference"),
     },
 )

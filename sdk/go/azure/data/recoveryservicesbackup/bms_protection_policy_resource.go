@@ -3,34 +3,40 @@ package recoveryservicesbackup
 
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
-type BmsProtectionPolicyResource_Value_Properties struct {
-	BackupManagementType           any
-	ProtectedItemsCount            any
+type BmsProtectionPolicyResource_Properties struct {
+	// This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.
+	BackupManagementType any
+	// Number of items associated with this policy.
+	ProtectedItemsCount any
+	// ResourceGuard Operation Requests
 	ResourceGuardOperationRequests any
 }
 
-type BmsProtectionPolicyResource_Value struct {
-	ETag       any
-	Location   any
-	Properties any
-	Tags       any
-}
-
 type BmsProtectionPolicyResourceConfig struct {
+	OperationId any
+	PolicyName any
 	VaultName any
 }
 
 type BmsProtectionPolicyResourceAttrs struct {
-	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
-	NextLink any
-	// List of resources.
-	Value     any
+	// Optional ETag.
+	ETag any
+	// Represents an Azure geography region where supported resource providers live.
+	Location any
+	OperationId any
+	PolicyName any
+	// Base class for backup policy. Workload-specific backup policies are derived from this class.
+	Properties any
+	// Resource tags.
+	Tags any
 	VaultName any
 }
 
 var BmsProtectionPolicyResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protection_policy_resource",
 	Fields: ubx.FieldMap{
+		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
+		"PolicyName": ubx.FieldSpec{WireName: "policy_name"},
 		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
 	},
 }
