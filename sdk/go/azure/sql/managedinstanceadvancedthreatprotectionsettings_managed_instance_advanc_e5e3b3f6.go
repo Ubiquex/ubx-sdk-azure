@@ -11,9 +11,9 @@ type ManagedinstanceadvancedthreatprotectionsettingsManagedInstanceAdvancedThrea
 }
 
 var ManagedinstanceadvancedthreatprotectionsettingsManagedInstanceAdvancedThreatProtection_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"State":        ubx.FieldSpec{WireName: "state"},
+}
 
 type ManagedinstanceadvancedthreatprotectionsettingsManagedInstanceAdvancedThreatProtectionConfig struct {
 	// Properties of an Advanced Threat Protection state.
@@ -30,8 +30,8 @@ var ManagedinstanceadvancedthreatprotectionsettingsManagedInstanceAdvancedThreat
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstanceadvancedthreatprotectionsettingsManagedInstanceAdvancedThreatProtection_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstanceadvancedthreatprotectionsettingsManagedInstanceAdvancedThreatProtection_PropertiesFields,
 		},
 	},
 }

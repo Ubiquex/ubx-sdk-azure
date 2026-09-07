@@ -8,9 +8,9 @@ type CommitmentPlanAccountAssociationList_Value_Properties struct {
 }
 
 type CommitmentPlanAccountAssociationList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type CommitmentPlanAccountAssociationListConfig struct {

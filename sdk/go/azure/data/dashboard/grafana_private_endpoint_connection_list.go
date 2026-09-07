@@ -9,15 +9,15 @@ type GrafanaPrivateEndpointConnectionList_Value_Properties_PrivateEndpoint struc
 
 type GrafanaPrivateEndpointConnectionList_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type GrafanaPrivateEndpointConnectionList_Value_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type GrafanaPrivateEndpointConnectionList_Value struct {
@@ -32,7 +32,7 @@ type GrafanaPrivateEndpointConnectionListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The PrivateEndpointConnection items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

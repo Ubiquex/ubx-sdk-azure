@@ -30,6 +30,5 @@ type TrafficManagerGeographicHierarchyAttrs struct {
 
 var TrafficManagerGeographicHierarchy = ubx.DataSourceBinding{
 	WireType: "azure_trafficmanager_traffic_manager_geographic_hierarchy",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

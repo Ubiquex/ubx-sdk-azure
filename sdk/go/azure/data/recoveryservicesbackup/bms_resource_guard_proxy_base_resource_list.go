@@ -9,17 +9,17 @@ type BmsResourceGuardProxyBaseResourceList_Value_Properties_ResourceGuardOperati
 }
 
 type BmsResourceGuardProxyBaseResourceList_Value_Properties struct {
-	Description any
-	LastUpdatedTime any
+	Description                   any
+	LastUpdatedTime               any
 	ResourceGuardOperationDetails any
-	ResourceGuardResourceId any
+	ResourceGuardResourceId       any
 }
 
 type BmsResourceGuardProxyBaseResourceList_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsResourceGuardProxyBaseResourceListConfig struct {
@@ -30,7 +30,7 @@ type BmsResourceGuardProxyBaseResourceListAttrs struct {
 	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

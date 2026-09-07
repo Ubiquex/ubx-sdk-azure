@@ -4,32 +4,32 @@ package purview
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResourceList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type PrivateLinkResourceList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type PrivateLinkResourceListConfig struct {
-	AccountName any
-	ApiVersion any
+	AccountName       any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type PrivateLinkResourceListAttrs struct {
 	AccountName any
-	ApiVersion any
+	ApiVersion  any
 	// The Url of next result page.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// Collection of items of type results.
 	Value any
 }
@@ -37,9 +37,9 @@ type PrivateLinkResourceListAttrs struct {
 var PrivateLinkResourceList = ubx.DataSourceBinding{
 	WireType: "azure_purview_private_link_resource_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"AccountName":       ubx.FieldSpec{WireName: "account_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

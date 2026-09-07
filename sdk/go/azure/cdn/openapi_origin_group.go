@@ -11,9 +11,9 @@ type OpenapiOriginGroup_Properties struct {
 }
 
 var OpenapiOriginGroup_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceState": ubx.FieldSpec{WireName: "resource_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceState":     ubx.FieldSpec{WireName: "resource_state"},
+}
 
 type OpenapiOriginGroupConfig struct {
 	// The JSON object that contains the properties of the origin group.
@@ -30,8 +30,8 @@ var OpenapiOriginGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiOriginGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiOriginGroup_PropertiesFields,
 		},
 	},
 }

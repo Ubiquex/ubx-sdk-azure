@@ -13,10 +13,10 @@ type VirtualnetworkVirtualRouterPeering_Properties struct {
 }
 
 var VirtualnetworkVirtualRouterPeering_PropertiesFields = ubx.FieldMap{
-		"PeerAsn": ubx.FieldSpec{WireName: "peer_asn"},
-		"PeerIp": ubx.FieldSpec{WireName: "peer_ip"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PeerAsn":           ubx.FieldSpec{WireName: "peer_asn"},
+	"PeerIp":            ubx.FieldSpec{WireName: "peer_ip"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkVirtualRouterPeeringConfig struct {
 	// Name of the resource.
@@ -42,8 +42,8 @@ var VirtualnetworkVirtualRouterPeering = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkVirtualRouterPeering_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkVirtualRouterPeering_PropertiesFields,
 		},
 	},
 }

@@ -4,7 +4,7 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedserverdnsaliasesManagedServerDnsAliasList_Value_Properties struct {
-	AzureDnsRecord any
+	AzureDnsRecord       any
 	PublicAzureDnsRecord any
 }
 

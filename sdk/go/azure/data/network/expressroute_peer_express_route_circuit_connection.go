@@ -26,18 +26,18 @@ type ExpressroutePeerExpressRouteCircuitConnection_Properties struct {
 }
 
 type ExpressroutePeerExpressRouteCircuitConnectionConfig struct {
-	CircuitName any
+	CircuitName    any
 	ConnectionName any
-	PeeringName any
+	PeeringName    any
 }
 
 type ExpressroutePeerExpressRouteCircuitConnectionAttrs struct {
-	CircuitName any
+	CircuitName    any
 	ConnectionName any
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
 	// Name of the resource.
-	Name any
+	Name        any
 	PeeringName any
 	// Properties of the peer express route circuit connection.
 	Properties any
@@ -48,8 +48,8 @@ type ExpressroutePeerExpressRouteCircuitConnectionAttrs struct {
 var ExpressroutePeerExpressRouteCircuitConnection = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_peer_express_route_circuit_connection",
 	Fields: ubx.FieldMap{
-		"CircuitName": ubx.FieldSpec{WireName: "circuit_name"},
+		"CircuitName":    ubx.FieldSpec{WireName: "circuit_name"},
 		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"PeeringName": ubx.FieldSpec{WireName: "peering_name"},
+		"PeeringName":    ubx.FieldSpec{WireName: "peering_name"},
 	},
 }

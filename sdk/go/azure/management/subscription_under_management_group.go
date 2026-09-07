@@ -29,6 +29,5 @@ type SubscriptionUnderManagementGroupAttrs struct {
 
 var SubscriptionUnderManagementGroup = ubx.ResourceBinding{
 	WireType: "azure_management_subscription_under_management_group",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

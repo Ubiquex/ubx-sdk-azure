@@ -14,7 +14,7 @@ type OpenapiNetworkRuleSet_Properties_VirtualNetworkRules_Subnet struct {
 
 type OpenapiNetworkRuleSet_Properties_VirtualNetworkRules struct {
 	IgnoreMissingVnetServiceEndpoint any
-	Subnet any
+	Subnet                           any
 }
 
 type OpenapiNetworkRuleSet_Properties struct {
@@ -36,7 +36,7 @@ type OpenapiNetworkRuleSetConfig struct {
 
 type OpenapiNetworkRuleSetAttrs struct {
 	// The geo-location where the resource lives
-	Location any
+	Location      any
 	NamespaceName any
 	// NetworkRuleSet properties
 	Properties any

@@ -9,15 +9,15 @@ type PrivateEndpointConnectionList_Value_Properties_PrivateEndpoint struct {
 
 type PrivateEndpointConnectionList_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateEndpointConnectionList_Value_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivateEndpointConnectionList_Value struct {
@@ -25,17 +25,17 @@ type PrivateEndpointConnectionList_Value struct {
 }
 
 type PrivateEndpointConnectionListConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type PrivateEndpointConnectionListAttrs struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// Array of private endpoint connections
 	Value any
 }
@@ -43,9 +43,9 @@ type PrivateEndpointConnectionListAttrs struct {
 var PrivateEndpointConnectionList = ubx.DataSourceBinding{
 	WireType: "azure_botservice_private_endpoint_connection_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

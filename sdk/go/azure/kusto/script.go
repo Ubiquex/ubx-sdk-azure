@@ -25,16 +25,16 @@ type Script_Properties struct {
 }
 
 var Script_PropertiesFields = ubx.FieldMap{
-		"ContinueOnErrors": ubx.FieldSpec{WireName: "continue_on_errors"},
-		"ForceUpdateTag": ubx.FieldSpec{WireName: "force_update_tag"},
-		"ManagedIdentityResourceId": ubx.FieldSpec{WireName: "managed_identity_resource_id"},
-		"PrincipalPermissionsAction": ubx.FieldSpec{WireName: "principal_permissions_action"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ScriptContent": ubx.FieldSpec{WireName: "script_content"},
-		"ScriptLevel": ubx.FieldSpec{WireName: "script_level"},
-		"ScriptUrl": ubx.FieldSpec{WireName: "script_url"},
-		"ScriptUrlSasToken": ubx.FieldSpec{WireName: "script_url_sas_token"},
-	}
+	"ContinueOnErrors":           ubx.FieldSpec{WireName: "continue_on_errors"},
+	"ForceUpdateTag":             ubx.FieldSpec{WireName: "force_update_tag"},
+	"ManagedIdentityResourceId":  ubx.FieldSpec{WireName: "managed_identity_resource_id"},
+	"PrincipalPermissionsAction": ubx.FieldSpec{WireName: "principal_permissions_action"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"ScriptContent":              ubx.FieldSpec{WireName: "script_content"},
+	"ScriptLevel":                ubx.FieldSpec{WireName: "script_level"},
+	"ScriptUrl":                  ubx.FieldSpec{WireName: "script_url"},
+	"ScriptUrlSasToken":          ubx.FieldSpec{WireName: "script_url_sas_token"},
+}
 
 type ScriptConfig struct {
 	// A class representing database script property.
@@ -51,8 +51,8 @@ var Script = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Script_PropertiesFields,
+			Kind:     "object",
+			Fields:   Script_PropertiesFields,
 		},
 	},
 }

@@ -4,10 +4,10 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCredentialList_Value_Properties struct {
-	CreationTime any
-	Description any
+	CreationTime     any
+	Description      any
 	LastModifiedTime any
-	UserName any
+	UserName         any
 }
 
 type OpenapiCredentialList_Value struct {

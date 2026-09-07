@@ -13,14 +13,14 @@ type VirtualwanConnectionSharedKeyResult_Properties struct {
 }
 
 type VirtualwanConnectionSharedKeyResultConfig struct {
-	ConnectionName any
-	GatewayName any
+	ConnectionName     any
+	GatewayName        any
 	LinkConnectionName any
 }
 
 type VirtualwanConnectionSharedKeyResultAttrs struct {
-	ConnectionName any
-	GatewayName any
+	ConnectionName     any
+	GatewayName        any
 	LinkConnectionName any
 	// Name of the resource.
 	Name any
@@ -33,8 +33,8 @@ type VirtualwanConnectionSharedKeyResultAttrs struct {
 var VirtualwanConnectionSharedKeyResult = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_connection_shared_key_result",
 	Fields: ubx.FieldMap{
-		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
+		"ConnectionName":     ubx.FieldSpec{WireName: "connection_name"},
+		"GatewayName":        ubx.FieldSpec{WireName: "gateway_name"},
 		"LinkConnectionName": ubx.FieldSpec{WireName: "link_connection_name"},
 	},
 }

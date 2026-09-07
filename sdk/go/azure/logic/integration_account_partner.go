@@ -34,37 +34,37 @@ type IntegrationAccountPartner_Properties struct {
 }
 
 var IntegrationAccountPartner_Properties_Content_B2b_BusinessIdentitiesFields = ubx.FieldMap{
-		"Qualifier": ubx.FieldSpec{WireName: "qualifier"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Qualifier": ubx.FieldSpec{WireName: "qualifier"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var IntegrationAccountPartner_Properties_Content_B2bFields = ubx.FieldMap{
-		"BusinessIdentities": ubx.FieldSpec{
-			WireName: "business_identities",
-			Kind: "list",
-			Fields: IntegrationAccountPartner_Properties_Content_B2b_BusinessIdentitiesFields,
-		},
-	}
+	"BusinessIdentities": ubx.FieldSpec{
+		WireName: "business_identities",
+		Kind:     "list",
+		Fields:   IntegrationAccountPartner_Properties_Content_B2b_BusinessIdentitiesFields,
+	},
+}
 
 var IntegrationAccountPartner_Properties_ContentFields = ubx.FieldMap{
-		"B2b": ubx.FieldSpec{
-			WireName: "b2b",
-			Kind: "object",
-			Fields: IntegrationAccountPartner_Properties_Content_B2bFields,
-		},
-	}
+	"B2b": ubx.FieldSpec{
+		WireName: "b2b",
+		Kind:     "object",
+		Fields:   IntegrationAccountPartner_Properties_Content_B2bFields,
+	},
+}
 
 var IntegrationAccountPartner_PropertiesFields = ubx.FieldMap{
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"Content": ubx.FieldSpec{
-			WireName: "content",
-			Kind: "object",
-			Fields: IntegrationAccountPartner_Properties_ContentFields,
-		},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"PartnerType": ubx.FieldSpec{WireName: "partner_type"},
-	}
+	"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
+	"Content": ubx.FieldSpec{
+		WireName: "content",
+		Kind:     "object",
+		Fields:   IntegrationAccountPartner_Properties_ContentFields,
+	},
+	"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
+	"Metadata":    ubx.FieldSpec{WireName: "metadata"},
+	"PartnerType": ubx.FieldSpec{WireName: "partner_type"},
+}
 
 type IntegrationAccountPartnerConfig struct {
 	// The resource location.
@@ -96,8 +96,8 @@ var IntegrationAccountPartner = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationAccountPartner_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationAccountPartner_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

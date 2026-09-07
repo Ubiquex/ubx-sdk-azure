@@ -4,10 +4,10 @@ package iothub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RegistryStatisticsConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type RegistryStatisticsAttrs struct {
@@ -16,9 +16,9 @@ type RegistryStatisticsAttrs struct {
 	DisabledDeviceCount any
 	// The count of enabled devices in the identity registry.
 	EnabledDeviceCount any
-	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceGroupName  any
+	ResourceName       any
+	SubscriptionId     any
 	// The total count of devices in the identity registry.
 	TotalDeviceCount any
 }
@@ -26,9 +26,9 @@ type RegistryStatisticsAttrs struct {
 var RegistryStatistics = ubx.DataSourceBinding{
 	WireType: "azure_iothub_registry_statistics",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

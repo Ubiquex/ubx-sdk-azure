@@ -13,10 +13,10 @@ type IntegrationAccountSession_Properties struct {
 }
 
 var IntegrationAccountSession_PropertiesFields = ubx.FieldMap{
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"Content": ubx.FieldSpec{WireName: "content"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-	}
+	"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
+	"Content":     ubx.FieldSpec{WireName: "content"},
+	"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
+}
 
 type IntegrationAccountSessionConfig struct {
 	// The resource location.
@@ -48,8 +48,8 @@ var IntegrationAccountSession = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationAccountSession_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationAccountSession_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

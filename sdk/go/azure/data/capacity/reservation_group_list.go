@@ -12,7 +12,7 @@ type ReservationGroupList_Value_Properties_InstanceView_CapacityReservations str
 }
 
 type ReservationGroupList_Value_Properties_InstanceView struct {
-	CapacityReservations any
+	CapacityReservations  any
 	SharedSubscriptionIds any
 }
 
@@ -21,16 +21,16 @@ type ReservationGroupList_Value_Properties_SharingProfile struct {
 }
 
 type ReservationGroupList_Value_Properties struct {
-	CapacityReservations any
-	InstanceView any
-	ReservationType any
-	SharingProfile any
+	CapacityReservations      any
+	InstanceView              any
+	ReservationType           any
+	SharingProfile            any
 	VirtualMachinesAssociated any
 }
 
 type ReservationGroupList_Value struct {
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type ReservationGroupListConfig struct {
@@ -39,7 +39,7 @@ type ReservationGroupListConfig struct {
 
 type ReservationGroupListAttrs struct {
 	// The URI to fetch the next page of capacity reservation groups. Call ListNext() with this URI to fetch the next page of capacity reservation groups.
-	NextLink any
+	NextLink        any
 	ResourceIdsOnly any
 	// The list of capacity reservation groups.
 	Value any

@@ -4,13 +4,13 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteServiceProviderList_Value_Properties_BandwidthsOffered struct {
-	OfferName any
+	OfferName   any
 	ValueInMbps any
 }
 
 type ExpressrouteExpressRouteServiceProviderList_Value_Properties struct {
 	BandwidthsOffered any
-	PeeringLocations any
+	PeeringLocations  any
 	ProvisioningState any
 }
 
@@ -30,6 +30,5 @@ type ExpressrouteExpressRouteServiceProviderListAttrs struct {
 
 var ExpressrouteExpressRouteServiceProviderList = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_service_provider_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

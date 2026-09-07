@@ -14,7 +14,7 @@ type OpenapiStaticSiteUserProvidedFunctionAppArmresource_Properties struct {
 
 type OpenapiStaticSiteUserProvidedFunctionAppArmresourceConfig struct {
 	FunctionAppName any
-	Name any
+	Name            any
 }
 
 type OpenapiStaticSiteUserProvidedFunctionAppArmresourceAttrs struct {
@@ -30,6 +30,6 @@ var OpenapiStaticSiteUserProvidedFunctionAppArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_user_provided_function_app_armresource",
 	Fields: ubx.FieldMap{
 		"FunctionAppName": ubx.FieldSpec{WireName: "function_app_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 	},
 }

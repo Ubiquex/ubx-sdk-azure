@@ -6,9 +6,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type ApimworkspaceloggersLoggerContractList_Value_Properties struct {
 	Credentials any
 	Description any
-	IsBuffered any
-	LoggerType any
-	ResourceId any
+	IsBuffered  any
+	LoggerType  any
+	ResourceId  any
 }
 
 type ApimworkspaceloggersLoggerContractList_Value struct {
@@ -29,6 +29,5 @@ type ApimworkspaceloggersLoggerContractListAttrs struct {
 
 var ApimworkspaceloggersLoggerContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimworkspaceloggers_logger_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

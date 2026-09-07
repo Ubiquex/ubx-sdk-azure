@@ -25,16 +25,16 @@ type CertificateResource_Properties struct {
 }
 
 var CertificateResource_PropertiesFields = ubx.FieldMap{
-		"ActivateDate": ubx.FieldSpec{WireName: "activate_date"},
-		"DnsNames": ubx.FieldSpec{WireName: "dns_names"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"IssuedDate": ubx.FieldSpec{WireName: "issued_date"},
-		"Issuer": ubx.FieldSpec{WireName: "issuer"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SubjectName": ubx.FieldSpec{WireName: "subject_name"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ActivateDate":      ubx.FieldSpec{WireName: "activate_date"},
+	"DnsNames":          ubx.FieldSpec{WireName: "dns_names"},
+	"ExpirationDate":    ubx.FieldSpec{WireName: "expiration_date"},
+	"IssuedDate":        ubx.FieldSpec{WireName: "issued_date"},
+	"Issuer":            ubx.FieldSpec{WireName: "issuer"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SubjectName":       ubx.FieldSpec{WireName: "subject_name"},
+	"Thumbprint":        ubx.FieldSpec{WireName: "thumbprint"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 type CertificateResourceConfig struct {
 	// Certificate resource payload.
@@ -51,8 +51,8 @@ var CertificateResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CertificateResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CertificateResource_PropertiesFields,
 		},
 	},
 }

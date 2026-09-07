@@ -28,10 +28,10 @@ type NetworkmanagerNetworkManagerConnection_SystemData struct {
 }
 
 var NetworkmanagerNetworkManagerConnection_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"NetworkManagerId": ubx.FieldSpec{WireName: "network_manager_id"},
-	}
+	"ConnectionState":  ubx.FieldSpec{WireName: "connection_state"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"NetworkManagerId": ubx.FieldSpec{WireName: "network_manager_id"},
+}
 
 type NetworkmanagerNetworkManagerConnectionConfig struct {
 	// Information about the network manager connection.
@@ -58,8 +58,8 @@ var NetworkmanagerNetworkManagerConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerNetworkManagerConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerNetworkManagerConnection_PropertiesFields,
 		},
 	},
 }

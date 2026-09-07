@@ -4,12 +4,12 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiGlobalParameterResourceList_Value_Properties struct {
-	Type any
+	Type  any
 	Value any
 }
 
 type OpenapiGlobalParameterResourceList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

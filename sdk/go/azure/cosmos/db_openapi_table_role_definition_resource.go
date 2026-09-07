@@ -26,22 +26,22 @@ type DbOpenapiTableRoleDefinitionResource_Properties struct {
 }
 
 var DbOpenapiTableRoleDefinitionResource_Properties_PermissionsFields = ubx.FieldMap{
-		"DataActions": ubx.FieldSpec{WireName: "data_actions"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
-	}
+	"DataActions":    ubx.FieldSpec{WireName: "data_actions"},
+	"Id":             ubx.FieldSpec{WireName: "id"},
+	"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
+}
 
 var DbOpenapiTableRoleDefinitionResource_PropertiesFields = ubx.FieldMap{
-		"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Permissions": ubx.FieldSpec{
-			WireName: "permissions",
-			Kind: "list",
-			Fields: DbOpenapiTableRoleDefinitionResource_Properties_PermissionsFields,
-		},
-		"RoleName": ubx.FieldSpec{WireName: "role_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
+	"Id":               ubx.FieldSpec{WireName: "id"},
+	"Permissions": ubx.FieldSpec{
+		WireName: "permissions",
+		Kind:     "list",
+		Fields:   DbOpenapiTableRoleDefinitionResource_Properties_PermissionsFields,
+	},
+	"RoleName": ubx.FieldSpec{WireName: "role_name"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+}
 
 type DbOpenapiTableRoleDefinitionResourceConfig struct {
 	// Azure Cosmos DB Table Role Definition resource object.
@@ -58,8 +58,8 @@ var DbOpenapiTableRoleDefinitionResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiTableRoleDefinitionResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiTableRoleDefinitionResource_PropertiesFields,
 		},
 	},
 }

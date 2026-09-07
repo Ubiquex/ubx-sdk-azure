@@ -11,9 +11,9 @@ type License_Properties struct {
 }
 
 var License_PropertiesFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Kind":              ubx.FieldSpec{WireName: "kind"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type LicenseConfig struct {
 	// The properties of a license
@@ -30,8 +30,8 @@ var License = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: License_PropertiesFields,
+			Kind:     "object",
+			Fields:   License_PropertiesFields,
 		},
 	},
 }

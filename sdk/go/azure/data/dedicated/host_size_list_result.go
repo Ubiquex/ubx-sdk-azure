@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HostSizeListResultConfig struct {
 	HostGroupName any
-	HostName any
+	HostName      any
 }
 
 type HostSizeListResultAttrs struct {
 	HostGroupName any
-	HostName any
+	HostName      any
 	// The link to the next page of items.
 	NextLink any
 	// The list of dedicated host sizes.
@@ -21,6 +21,6 @@ var HostSizeListResult = ubx.DataSourceBinding{
 	WireType: "azure_dedicated_host_size_list_result",
 	Fields: ubx.FieldMap{
 		"HostGroupName": ubx.FieldSpec{WireName: "host_group_name"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
+		"HostName":      ubx.FieldSpec{WireName: "host_name"},
 	},
 }

@@ -19,6 +19,5 @@ type NetworksecurityperimeterNspServiceTagsResourceListAttrs struct {
 
 var NetworksecurityperimeterNspServiceTagsResourceList = ubx.DataSourceBinding{
 	WireType: "azure_network_networksecurityperimeter_nsp_service_tags_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

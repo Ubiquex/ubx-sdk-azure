@@ -22,20 +22,20 @@ type ApimworkspacesSchemaContract2_Properties struct {
 }
 
 var ApimworkspacesSchemaContract2_Properties_DocumentFields = ubx.FieldMap{
-		"Components": ubx.FieldSpec{WireName: "components"},
-		"Definitions": ubx.FieldSpec{WireName: "definitions"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Components":  ubx.FieldSpec{WireName: "components"},
+	"Definitions": ubx.FieldSpec{WireName: "definitions"},
+	"Value":       ubx.FieldSpec{WireName: "value"},
+}
 
 var ApimworkspacesSchemaContract2_PropertiesFields = ubx.FieldMap{
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"Document": ubx.FieldSpec{
-			WireName: "document",
-			Kind: "object",
-			Fields: ApimworkspacesSchemaContract2_Properties_DocumentFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ContentType": ubx.FieldSpec{WireName: "content_type"},
+	"Document": ubx.FieldSpec{
+		WireName: "document",
+		Kind:     "object",
+		Fields:   ApimworkspacesSchemaContract2_Properties_DocumentFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ApimworkspacesSchemaContract2Config struct {
 	// API Schema create or update contract Properties.
@@ -52,8 +52,8 @@ var ApimworkspacesSchemaContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesSchemaContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesSchemaContract2_PropertiesFields,
 		},
 	},
 }

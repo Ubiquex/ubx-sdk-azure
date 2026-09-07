@@ -23,6 +23,5 @@ type DbOpenapiFleetResourceListAttrs struct {
 
 var DbOpenapiFleetResourceList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_fleet_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

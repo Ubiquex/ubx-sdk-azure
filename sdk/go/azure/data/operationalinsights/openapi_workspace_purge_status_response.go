@@ -4,21 +4,21 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWorkspacePurgeStatusResponseConfig struct {
-	PurgeId any
+	PurgeId       any
 	WorkspaceName any
 }
 
 type OpenapiWorkspacePurgeStatusResponseAttrs struct {
 	PurgeId any
 	// Status of the operation represented by the requested Id.
-	Status any
+	Status        any
 	WorkspaceName any
 }
 
 var OpenapiWorkspacePurgeStatusResponse = ubx.DataSourceBinding{
 	WireType: "azure_operationalinsights_openapi_workspace_purge_status_response",
 	Fields: ubx.FieldMap{
-		"PurgeId": ubx.FieldSpec{WireName: "purge_id"},
+		"PurgeId":       ubx.FieldSpec{WireName: "purge_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

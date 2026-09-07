@@ -4,7 +4,7 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimidentityproviderIdentityProviderContractList_Value_Properties struct {
-	ClientId any
+	ClientId     any
 	ClientSecret any
 }
 
@@ -26,6 +26,5 @@ type ApimidentityproviderIdentityProviderContractListAttrs struct {
 
 var ApimidentityproviderIdentityProviderContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimidentityprovider_identity_provider_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

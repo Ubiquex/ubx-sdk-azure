@@ -8,21 +8,21 @@ type ServiceStorageClassificationMappingList_Value_Properties struct {
 }
 
 type ServiceStorageClassificationMappingList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceStorageClassificationMappingListConfig struct {
-	FabricName any
-	ResourceName any
+	FabricName                any
+	ResourceName              any
 	StorageClassificationName any
 }
 
 type ServiceStorageClassificationMappingListAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
-	ResourceName any
+	NextLink                  any
+	ResourceName              any
 	StorageClassificationName any
 	// The StorageClassificationMapping items on this page
 	Value any
@@ -31,8 +31,8 @@ type ServiceStorageClassificationMappingListAttrs struct {
 var ServiceStorageClassificationMappingList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_storage_classification_mapping_list",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"FabricName":                ubx.FieldSpec{WireName: "fabric_name"},
+		"ResourceName":              ubx.FieldSpec{WireName: "resource_name"},
 		"StorageClassificationName": ubx.FieldSpec{WireName: "storage_classification_name"},
 	},
 }

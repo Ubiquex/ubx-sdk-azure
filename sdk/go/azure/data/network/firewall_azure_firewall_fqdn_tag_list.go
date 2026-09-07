@@ -4,12 +4,12 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallAzureFirewallFqdnTagList_Value_Properties struct {
-	FqdnTagName any
+	FqdnTagName       any
 	ProvisioningState any
 }
 
 type FirewallAzureFirewallFqdnTagList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -25,6 +25,5 @@ type FirewallAzureFirewallFqdnTagListAttrs struct {
 
 var FirewallAzureFirewallFqdnTagList = ubx.DataSourceBinding{
 	WireType: "azure_network_firewall_azure_firewall_fqdn_tag_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

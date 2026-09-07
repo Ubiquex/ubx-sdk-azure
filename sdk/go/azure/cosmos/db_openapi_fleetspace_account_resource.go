@@ -18,18 +18,18 @@ type DbOpenapiFleetspaceAccountResource_Properties struct {
 }
 
 var DbOpenapiFleetspaceAccountResource_Properties_GlobalDatabaseAccountPropertiesFields = ubx.FieldMap{
-		"ArmLocation": ubx.FieldSpec{WireName: "arm_location"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ArmLocation": ubx.FieldSpec{WireName: "arm_location"},
+	"ResourceId":  ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var DbOpenapiFleetspaceAccountResource_PropertiesFields = ubx.FieldMap{
-		"GlobalDatabaseAccountProperties": ubx.FieldSpec{
-			WireName: "global_database_account_properties",
-			Kind: "object",
-			Fields: DbOpenapiFleetspaceAccountResource_Properties_GlobalDatabaseAccountPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GlobalDatabaseAccountProperties": ubx.FieldSpec{
+		WireName: "global_database_account_properties",
+		Kind:     "object",
+		Fields:   DbOpenapiFleetspaceAccountResource_Properties_GlobalDatabaseAccountPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type DbOpenapiFleetspaceAccountResourceConfig struct {
 	// An Azure Cosmos DB Global Database Account which is part of a Fleetspace Account.
@@ -46,8 +46,8 @@ var DbOpenapiFleetspaceAccountResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiFleetspaceAccountResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiFleetspaceAccountResource_PropertiesFields,
 		},
 	},
 }

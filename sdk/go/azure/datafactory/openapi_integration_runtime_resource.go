@@ -11,9 +11,9 @@ type OpenapiIntegrationRuntimeResource_Properties struct {
 }
 
 var OpenapiIntegrationRuntimeResource_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiIntegrationRuntimeResourceConfig struct {
 	// Azure Data Factory nested object which serves as a compute resource for activities.
@@ -32,8 +32,8 @@ var OpenapiIntegrationRuntimeResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiIntegrationRuntimeResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiIntegrationRuntimeResource_PropertiesFields,
 		},
 	},
 }

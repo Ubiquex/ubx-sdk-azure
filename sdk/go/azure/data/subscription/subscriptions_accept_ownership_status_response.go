@@ -10,14 +10,14 @@ type SubscriptionsAcceptOwnershipStatusResponseConfig struct {
 type SubscriptionsAcceptOwnershipStatusResponseAttrs struct {
 	// The accept ownership state of the resource.
 	AcceptOwnershipState any
-	ApiVersion any
+	ApiVersion           any
 	// UPN of the billing owner
 	BillingOwner any
 	// The display name of the subscription.
 	DisplayName any
 	// The provisioning state of the resource.
 	ProvisioningState any
-	SubscriptionId any
+	SubscriptionId    any
 	// Tenant Id of the subscription
 	SubscriptionTenantId any
 	// Tags for the subscription

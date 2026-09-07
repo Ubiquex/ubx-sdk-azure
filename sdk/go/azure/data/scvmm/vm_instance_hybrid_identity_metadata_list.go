@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VmInstanceHybridIdentityMetadataList_Value_Properties struct {
 	ProvisioningState any
-	PublicKey any
-	ResourceUid any
+	PublicKey         any
+	ResourceUid       any
 }
 
 type VmInstanceHybridIdentityMetadataList_Value struct {
@@ -19,7 +19,7 @@ type VmInstanceHybridIdentityMetadataListConfig struct {
 
 type VmInstanceHybridIdentityMetadataListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ResourceUri any
 	// The VmInstanceHybridIdentityMetadata items on this page
 	Value any

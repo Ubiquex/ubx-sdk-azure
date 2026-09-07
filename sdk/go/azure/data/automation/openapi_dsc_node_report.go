@@ -4,12 +4,12 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDscNodeReport_Errors struct {
-	ErrorCode any
+	ErrorCode    any
 	ErrorDetails any
 	ErrorMessage any
-	ErrorSource any
-	Locale any
-	ResourceId any
+	ErrorSource  any
+	Locale       any
+	ResourceId   any
 }
 
 type OpenapiDscNodeReport_MetaConfiguration struct {
@@ -34,22 +34,22 @@ type OpenapiDscNodeReport_Resources_DependsOn struct {
 }
 
 type OpenapiDscNodeReport_Resources struct {
-	DependsOn any
+	DependsOn         any
 	DurationInSeconds any
-	Error any
-	ModuleName any
-	ModuleVersion any
-	ResourceId any
-	ResourceName any
-	SourceInfo any
-	StartDate any
-	Status any
+	Error             any
+	ModuleName        any
+	ModuleVersion     any
+	ResourceId        any
+	ResourceName      any
+	SourceInfo        any
+	StartDate         any
+	Status            any
 }
 
 type OpenapiDscNodeReportConfig struct {
 	AutomationAccountName any
-	NodeId any
-	ReportId any
+	NodeId                any
+	ReportId              any
 }
 
 type OpenapiDscNodeReportAttrs struct {
@@ -72,7 +72,7 @@ type OpenapiDscNodeReportAttrs struct {
 	LastModifiedTime any
 	// Definition of the DSC Meta Configuration.
 	MetaConfiguration any
-	NodeId any
+	NodeId            any
 	// Gets or sets the number of resource in the node report.
 	NumberOfResources any
 	// Gets or sets the unparsed errors for the node report.
@@ -83,7 +83,7 @@ type OpenapiDscNodeReportAttrs struct {
 	RefreshMode any
 	// Gets or sets the reportFormatVersion of the node report.
 	ReportFormatVersion any
-	ReportId any
+	ReportId            any
 	// Gets or sets the resource for the node report.
 	Resources any
 	// Gets or sets the start time of the node report.
@@ -98,7 +98,7 @@ var OpenapiDscNodeReport = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_dsc_node_report",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"NodeId": ubx.FieldSpec{WireName: "node_id"},
-		"ReportId": ubx.FieldSpec{WireName: "report_id"},
+		"NodeId":                ubx.FieldSpec{WireName: "node_id"},
+		"ReportId":              ubx.FieldSpec{WireName: "report_id"},
 	},
 }

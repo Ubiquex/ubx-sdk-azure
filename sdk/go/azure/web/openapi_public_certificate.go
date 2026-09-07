@@ -13,10 +13,10 @@ type OpenapiPublicCertificate_Properties struct {
 }
 
 var OpenapiPublicCertificate_PropertiesFields = ubx.FieldMap{
-		"Blob": ubx.FieldSpec{WireName: "blob"},
-		"PublicCertificateLocation": ubx.FieldSpec{WireName: "public_certificate_location"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"Blob":                      ubx.FieldSpec{WireName: "blob"},
+	"PublicCertificateLocation": ubx.FieldSpec{WireName: "public_certificate_location"},
+	"Thumbprint":                ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 type OpenapiPublicCertificateConfig struct {
 	// Kind of resource.
@@ -42,8 +42,8 @@ var OpenapiPublicCertificate = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPublicCertificate_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPublicCertificate_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

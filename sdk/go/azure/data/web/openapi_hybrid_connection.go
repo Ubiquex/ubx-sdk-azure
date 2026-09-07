@@ -23,26 +23,26 @@ type OpenapiHybridConnection_Properties struct {
 }
 
 type OpenapiHybridConnectionConfig struct {
-	Name any
+	Name          any
 	NamespaceName any
-	RelayName any
+	RelayName     any
 }
 
 type OpenapiHybridConnectionAttrs struct {
 	// Kind of resource.
-	Kind any
-	Name any
+	Kind          any
+	Name          any
 	NamespaceName any
 	// HybridConnection resource specific properties
 	Properties any
-	RelayName any
+	RelayName  any
 }
 
 var OpenapiHybridConnection = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_hybrid_connection",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
 		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
-		"RelayName": ubx.FieldSpec{WireName: "relay_name"},
+		"RelayName":     ubx.FieldSpec{WireName: "relay_name"},
 	},
 }

@@ -71,65 +71,65 @@ type MachineExtension_Properties struct {
 }
 
 var MachineExtension_Properties_InstanceView_StatusesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Code":          ubx.FieldSpec{WireName: "code"},
+	"DisplayStatus": ubx.FieldSpec{WireName: "display_status"},
+	"Level":         ubx.FieldSpec{WireName: "level"},
+	"Message":       ubx.FieldSpec{WireName: "message"},
+	"Time":          ubx.FieldSpec{WireName: "time"},
+}
 
 var MachineExtension_Properties_InstanceViewFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Statuses": ubx.FieldSpec{
-			WireName: "statuses",
-			Kind: "list",
-			Fields: MachineExtension_Properties_InstanceView_StatusesFields,
-		},
-		"Substatuses": ubx.FieldSpec{
-			WireName: "substatuses",
-			Kind: "list",
-			Fields: MachineExtension_Properties_InstanceView_StatusesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Statuses": ubx.FieldSpec{
+		WireName: "statuses",
+		Kind:     "list",
+		Fields:   MachineExtension_Properties_InstanceView_StatusesFields,
+	},
+	"Substatuses": ubx.FieldSpec{
+		WireName: "substatuses",
+		Kind:     "list",
+		Fields:   MachineExtension_Properties_InstanceView_StatusesFields,
+	},
+	"Type":               ubx.FieldSpec{WireName: "type"},
+	"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 var MachineExtension_Properties_ProtectedSettingsFromKeyVault_SourceVaultFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var MachineExtension_Properties_ProtectedSettingsFromKeyVaultFields = ubx.FieldMap{
-		"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
-		"SourceVault": ubx.FieldSpec{
-			WireName: "source_vault",
-			Kind: "object",
-			Fields: MachineExtension_Properties_ProtectedSettingsFromKeyVault_SourceVaultFields,
-		},
-	}
+	"SecretUrl": ubx.FieldSpec{WireName: "secret_url"},
+	"SourceVault": ubx.FieldSpec{
+		WireName: "source_vault",
+		Kind:     "object",
+		Fields:   MachineExtension_Properties_ProtectedSettingsFromKeyVault_SourceVaultFields,
+	},
+}
 
 var MachineExtension_PropertiesFields = ubx.FieldMap{
-		"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
-		"EnableAutomaticUpgrade": ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
-		"ForceUpdateTag": ubx.FieldSpec{WireName: "force_update_tag"},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: MachineExtension_Properties_InstanceViewFields,
-		},
-		"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
-		"ProtectedSettingsFromKeyVault": ubx.FieldSpec{
-			WireName: "protected_settings_from_key_vault",
-			Kind: "object",
-			Fields: MachineExtension_Properties_ProtectedSettingsFromKeyVaultFields,
-		},
-		"ProvisionAfterExtensions": ubx.FieldSpec{WireName: "provision_after_extensions"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Settings": ubx.FieldSpec{WireName: "settings"},
-		"SuppressFailures": ubx.FieldSpec{WireName: "suppress_failures"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"TypeHandlerVersion": ubx.FieldSpec{WireName: "type_handler_version"},
-	}
+	"AutoUpgradeMinorVersion": ubx.FieldSpec{WireName: "auto_upgrade_minor_version"},
+	"EnableAutomaticUpgrade":  ubx.FieldSpec{WireName: "enable_automatic_upgrade"},
+	"ForceUpdateTag":          ubx.FieldSpec{WireName: "force_update_tag"},
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   MachineExtension_Properties_InstanceViewFields,
+	},
+	"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
+	"ProtectedSettingsFromKeyVault": ubx.FieldSpec{
+		WireName: "protected_settings_from_key_vault",
+		Kind:     "object",
+		Fields:   MachineExtension_Properties_ProtectedSettingsFromKeyVaultFields,
+	},
+	"ProvisionAfterExtensions": ubx.FieldSpec{WireName: "provision_after_extensions"},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"Publisher":                ubx.FieldSpec{WireName: "publisher"},
+	"Settings":                 ubx.FieldSpec{WireName: "settings"},
+	"SuppressFailures":         ubx.FieldSpec{WireName: "suppress_failures"},
+	"Type":                     ubx.FieldSpec{WireName: "type"},
+	"TypeHandlerVersion":       ubx.FieldSpec{WireName: "type_handler_version"},
+}
 
 type MachineExtensionConfig struct {
 	// The geo-location where the resource lives
@@ -155,8 +155,8 @@ var MachineExtension = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MachineExtension_PropertiesFields,
+			Kind:     "object",
+			Fields:   MachineExtension_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

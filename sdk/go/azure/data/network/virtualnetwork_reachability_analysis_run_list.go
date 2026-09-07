@@ -4,35 +4,35 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkReachabilityAnalysisRunList_Value_Properties_IntentContent_IpTraffic struct {
-	DestinationIps any
+	DestinationIps   any
 	DestinationPorts any
-	Protocols any
-	SourceIps any
-	SourcePorts any
+	Protocols        any
+	SourceIps        any
+	SourcePorts      any
 }
 
 type VirtualnetworkReachabilityAnalysisRunList_Value_Properties_IntentContent struct {
-	Description any
+	Description           any
 	DestinationResourceId any
-	IpTraffic any
-	SourceResourceId any
+	IpTraffic             any
+	SourceResourceId      any
 }
 
 type VirtualnetworkReachabilityAnalysisRunList_Value_Properties struct {
-	AnalysisResult any
-	Description any
-	ErrorMessage any
-	IntentContent any
-	IntentId any
+	AnalysisResult    any
+	Description       any
+	ErrorMessage      any
+	IntentContent     any
+	IntentId          any
 	ProvisioningState any
 }
 
 type VirtualnetworkReachabilityAnalysisRunList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -43,25 +43,25 @@ type VirtualnetworkReachabilityAnalysisRunList_Value struct {
 
 type VirtualnetworkReachabilityAnalysisRunListConfig struct {
 	NetworkManagerName any
-	Skip any
-	SkipToken any
-	SortKey any
-	SortValue any
-	Top any
-	WorkspaceName any
+	Skip               any
+	SkipToken          any
+	SortKey            any
+	SortValue          any
+	Top                any
+	WorkspaceName      any
 }
 
 type VirtualnetworkReachabilityAnalysisRunListAttrs struct {
 	NetworkManagerName any
 	// The link to the next page of items
-	NextLink any
-	Skip any
+	NextLink  any
+	Skip      any
 	SkipToken any
-	SortKey any
+	SortKey   any
 	SortValue any
-	Top any
+	Top       any
 	// The ReachabilityAnalysisRun items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
@@ -69,11 +69,11 @@ var VirtualnetworkReachabilityAnalysisRunList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_reachability_analysis_run_list",
 	Fields: ubx.FieldMap{
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"SkipToken": ubx.FieldSpec{WireName: "skip_token"},
-		"SortKey": ubx.FieldSpec{WireName: "sort_key"},
-		"SortValue": ubx.FieldSpec{WireName: "sort_value"},
-		"Top": ubx.FieldSpec{WireName: "top"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"SkipToken":          ubx.FieldSpec{WireName: "skip_token"},
+		"SortKey":            ubx.FieldSpec{WireName: "sort_key"},
+		"SortValue":          ubx.FieldSpec{WireName: "sort_value"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
+		"WorkspaceName":      ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

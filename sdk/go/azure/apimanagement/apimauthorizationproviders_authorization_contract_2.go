@@ -24,21 +24,21 @@ type ApimauthorizationprovidersAuthorizationContract2_Properties struct {
 }
 
 var ApimauthorizationprovidersAuthorizationContract2_Properties_ErrorFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var ApimauthorizationprovidersAuthorizationContract2_PropertiesFields = ubx.FieldMap{
-		"AuthorizationType": ubx.FieldSpec{WireName: "authorization_type"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: ApimauthorizationprovidersAuthorizationContract2_Properties_ErrorFields,
-		},
-		"Oauth2grantType": ubx.FieldSpec{WireName: "oauth2grant_type"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"AuthorizationType": ubx.FieldSpec{WireName: "authorization_type"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   ApimauthorizationprovidersAuthorizationContract2_Properties_ErrorFields,
+	},
+	"Oauth2grantType": ubx.FieldSpec{WireName: "oauth2grant_type"},
+	"Parameters":      ubx.FieldSpec{WireName: "parameters"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 type ApimauthorizationprovidersAuthorizationContract2Config struct {
 	// Authorization details.
@@ -55,8 +55,8 @@ var ApimauthorizationprovidersAuthorizationContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimauthorizationprovidersAuthorizationContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimauthorizationprovidersAuthorizationContract2_PropertiesFields,
 		},
 	},
 }

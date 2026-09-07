@@ -33,20 +33,20 @@ type OpenapiWorkspaceConnectionPropertiesV2BasicResource_Properties struct {
 }
 
 var OpenapiWorkspaceConnectionPropertiesV2BasicResource_PropertiesFields = ubx.FieldMap{
-		"AuthType": ubx.FieldSpec{WireName: "auth_type"},
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"CreatedByWorkspaceArmId": ubx.FieldSpec{WireName: "created_by_workspace_arm_id"},
-		"Error": ubx.FieldSpec{WireName: "error"},
-		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
-		"Group": ubx.FieldSpec{WireName: "group"},
-		"IsSharedToAll": ubx.FieldSpec{WireName: "is_shared_to_all"},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"PeRequirement": ubx.FieldSpec{WireName: "pe_requirement"},
-		"PeStatus": ubx.FieldSpec{WireName: "pe_status"},
-		"SharedUserList": ubx.FieldSpec{WireName: "shared_user_list"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-		"UseWorkspaceManagedIdentity": ubx.FieldSpec{WireName: "use_workspace_managed_identity"},
-	}
+	"AuthType":                    ubx.FieldSpec{WireName: "auth_type"},
+	"Category":                    ubx.FieldSpec{WireName: "category"},
+	"CreatedByWorkspaceArmId":     ubx.FieldSpec{WireName: "created_by_workspace_arm_id"},
+	"Error":                       ubx.FieldSpec{WireName: "error"},
+	"ExpiryTime":                  ubx.FieldSpec{WireName: "expiry_time"},
+	"Group":                       ubx.FieldSpec{WireName: "group"},
+	"IsSharedToAll":               ubx.FieldSpec{WireName: "is_shared_to_all"},
+	"Metadata":                    ubx.FieldSpec{WireName: "metadata"},
+	"PeRequirement":               ubx.FieldSpec{WireName: "pe_requirement"},
+	"PeStatus":                    ubx.FieldSpec{WireName: "pe_status"},
+	"SharedUserList":              ubx.FieldSpec{WireName: "shared_user_list"},
+	"Target":                      ubx.FieldSpec{WireName: "target"},
+	"UseWorkspaceManagedIdentity": ubx.FieldSpec{WireName: "use_workspace_managed_identity"},
+}
 
 type OpenapiWorkspaceConnectionPropertiesV2BasicResourceConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -63,8 +63,8 @@ var OpenapiWorkspaceConnectionPropertiesV2BasicResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiWorkspaceConnectionPropertiesV2BasicResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiWorkspaceConnectionPropertiesV2BasicResource_PropertiesFields,
 		},
 	},
 }

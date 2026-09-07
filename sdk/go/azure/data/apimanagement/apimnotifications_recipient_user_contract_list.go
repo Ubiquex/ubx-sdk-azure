@@ -25,6 +25,5 @@ type ApimnotificationsRecipientUserContractListAttrs struct {
 
 var ApimnotificationsRecipientUserContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimnotifications_recipient_user_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

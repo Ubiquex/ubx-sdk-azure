@@ -22,16 +22,16 @@ type BotChannel_Sku struct {
 }
 
 var BotChannel_PropertiesFields = ubx.FieldMap{
-		"ChannelName": ubx.FieldSpec{WireName: "channel_name"},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ChannelName":       ubx.FieldSpec{WireName: "channel_name"},
+	"Etag":              ubx.FieldSpec{WireName: "etag"},
+	"Location":          ubx.FieldSpec{WireName: "location"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var BotChannel_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type BotChannelConfig struct {
 	// Entity Tag.
@@ -74,18 +74,18 @@ type BotChannelAttrs struct {
 var BotChannel = ubx.ResourceBinding{
 	WireType: "azure_botservice_bot_channel",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Etag":     ubx.FieldSpec{WireName: "etag"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BotChannel_PropertiesFields,
+			Kind:     "object",
+			Fields:   BotChannel_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: BotChannel_SkuFields,
+			Kind:     "object",
+			Fields:   BotChannel_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -8,18 +8,18 @@ type WorkloadNetworkSegmentList_Value_Properties_PortVif struct {
 }
 
 type WorkloadNetworkSegmentList_Value_Properties_Subnet struct {
-	DhcpRanges any
+	DhcpRanges     any
 	GatewayAddress any
 }
 
 type WorkloadNetworkSegmentList_Value_Properties struct {
-	ConnectedGateway any
-	DisplayName any
-	PortVif any
+	ConnectedGateway  any
+	DisplayName       any
+	PortVif           any
 	ProvisioningState any
-	Revision any
-	Status any
-	Subnet any
+	Revision          any
+	Status            any
+	Subnet            any
 }
 
 type WorkloadNetworkSegmentList_Value struct {
@@ -32,7 +32,7 @@ type WorkloadNetworkSegmentListConfig struct {
 
 type WorkloadNetworkSegmentListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetworkSegment items on this page
 	Value any

@@ -67,17 +67,17 @@ type OpenapiBillingRoleAssignment_Properties struct {
 }
 
 type OpenapiBillingRoleAssignmentConfig struct {
-	BillingAccountName any
-	BillingProfileName any
+	BillingAccountName        any
+	BillingProfileName        any
 	BillingRoleAssignmentName any
-	CustomerName any
+	CustomerName              any
 }
 
 type OpenapiBillingRoleAssignmentAttrs struct {
-	BillingAccountName any
-	BillingProfileName any
+	BillingAccountName        any
+	BillingProfileName        any
 	BillingRoleAssignmentName any
-	CustomerName any
+	CustomerName              any
 	// The properties of the billing role assignment.
 	Properties any
 	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
@@ -87,9 +87,9 @@ type OpenapiBillingRoleAssignmentAttrs struct {
 var OpenapiBillingRoleAssignment = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_billing_role_assignment",
 	Fields: ubx.FieldMap{
-		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
+		"BillingAccountName":        ubx.FieldSpec{WireName: "billing_account_name"},
+		"BillingProfileName":        ubx.FieldSpec{WireName: "billing_profile_name"},
 		"BillingRoleAssignmentName": ubx.FieldSpec{WireName: "billing_role_assignment_name"},
-		"CustomerName": ubx.FieldSpec{WireName: "customer_name"},
+		"CustomerName":              ubx.FieldSpec{WireName: "customer_name"},
 	},
 }

@@ -33,31 +33,31 @@ type OpenapiDataExport_Properties struct {
 }
 
 var OpenapiDataExport_Properties_Destination_MetaDataFields = ubx.FieldMap{
-		"EventHubName": ubx.FieldSpec{WireName: "event_hub_name"},
-	}
+	"EventHubName": ubx.FieldSpec{WireName: "event_hub_name"},
+}
 
 var OpenapiDataExport_Properties_DestinationFields = ubx.FieldMap{
-		"MetaData": ubx.FieldSpec{
-			WireName: "meta_data",
-			Kind: "object",
-			Fields: OpenapiDataExport_Properties_Destination_MetaDataFields,
-		},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"MetaData": ubx.FieldSpec{
+		WireName: "meta_data",
+		Kind:     "object",
+		Fields:   OpenapiDataExport_Properties_Destination_MetaDataFields,
+	},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+	"Type":       ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiDataExport_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"DataExportId": ubx.FieldSpec{WireName: "data_export_id"},
-		"Destination": ubx.FieldSpec{
-			WireName: "destination",
-			Kind: "object",
-			Fields: OpenapiDataExport_Properties_DestinationFields,
-		},
-		"Enable": ubx.FieldSpec{WireName: "enable"},
-		"LastModifiedDate": ubx.FieldSpec{WireName: "last_modified_date"},
-		"TableNames": ubx.FieldSpec{WireName: "table_names"},
-	}
+	"CreatedDate":  ubx.FieldSpec{WireName: "created_date"},
+	"DataExportId": ubx.FieldSpec{WireName: "data_export_id"},
+	"Destination": ubx.FieldSpec{
+		WireName: "destination",
+		Kind:     "object",
+		Fields:   OpenapiDataExport_Properties_DestinationFields,
+	},
+	"Enable":           ubx.FieldSpec{WireName: "enable"},
+	"LastModifiedDate": ubx.FieldSpec{WireName: "last_modified_date"},
+	"TableNames":       ubx.FieldSpec{WireName: "table_names"},
+}
 
 type OpenapiDataExportConfig struct {
 	// Data Export properties.
@@ -74,8 +74,8 @@ var OpenapiDataExport = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDataExport_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDataExport_PropertiesFields,
 		},
 	},
 }

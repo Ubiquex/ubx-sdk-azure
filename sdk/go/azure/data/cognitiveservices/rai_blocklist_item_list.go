@@ -9,20 +9,20 @@ type RaiBlocklistItemList_Value_Properties struct {
 }
 
 type RaiBlocklistItemList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type RaiBlocklistItemListConfig struct {
-	AccountName any
+	AccountName      any
 	RaiBlocklistName any
 }
 
 type RaiBlocklistItemListAttrs struct {
 	AccountName any
 	// The link used to get the next page of RaiBlocklistItems.
-	NextLink any
+	NextLink         any
 	RaiBlocklistName any
 	// The list of RaiBlocklistItems.
 	Value any
@@ -31,7 +31,7 @@ type RaiBlocklistItemListAttrs struct {
 var RaiBlocklistItemList = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_rai_blocklist_item_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":      ubx.FieldSpec{WireName: "account_name"},
 		"RaiBlocklistName": ubx.FieldSpec{WireName: "rai_blocklist_name"},
 	},
 }

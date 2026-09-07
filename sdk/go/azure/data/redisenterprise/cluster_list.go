@@ -4,14 +4,14 @@ package redisenterprise
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ClusterList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ClusterList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,15 +21,15 @@ type ClusterList_Value_Properties struct {
 
 type ClusterList_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type ClusterList_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type ClusterListConfig struct {
@@ -44,6 +44,5 @@ type ClusterListAttrs struct {
 
 var ClusterList = ubx.DataSourceBinding{
 	WireType: "azure_redisenterprise_cluster_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

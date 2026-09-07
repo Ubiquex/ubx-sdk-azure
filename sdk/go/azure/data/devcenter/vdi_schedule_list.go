@@ -23,6 +23,5 @@ type VdiScheduleListAttrs struct {
 
 var VdiScheduleList = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_vdi_schedule_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

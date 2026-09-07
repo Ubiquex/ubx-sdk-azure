@@ -4,18 +4,18 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimworkspacesUserContractList_Value_Properties_Groups struct {
-	BuiltIn any
+	BuiltIn     any
 	Description any
 	DisplayName any
-	ExternalId any
-	Type any
+	ExternalId  any
+	Type        any
 }
 
 type ApimworkspacesUserContractList_Value_Properties struct {
-	Email any
-	FirstName any
-	Groups any
-	LastName any
+	Email            any
+	FirstName        any
+	Groups           any
+	LastName         any
 	RegistrationDate any
 }
 
@@ -37,6 +37,5 @@ type ApimworkspacesUserContractListAttrs struct {
 
 var ApimworkspacesUserContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimworkspaces_user_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MetadataEntity_Properties_SupportedValues struct {
 	DisplayName any
-	Id any
+	Id          any
 }
 
 type MetadataEntity_Properties struct {
@@ -21,13 +21,13 @@ type MetadataEntity_Properties struct {
 
 type MetadataEntityConfig struct {
 	ApiVersion any
-	Name any
+	Name       any
 }
 
 type MetadataEntityAttrs struct {
 	ApiVersion any
 	// The resource Id of the metadata entity.
-	Id any
+	Id   any
 	Name any
 	// The metadata entity properties
 	Properties any
@@ -39,6 +39,6 @@ var MetadataEntity = ubx.DataSourceBinding{
 	WireType: "azure_advisor_metadata_entity",
 	Fields: ubx.FieldMap{
 		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
 	},
 }

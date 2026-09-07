@@ -24,6 +24,5 @@ type DeletedserversDeletedServerAttrs struct {
 
 var DeletedserversDeletedServer = ubx.ResourceBinding{
 	WireType: "azure_sql_deletedservers_deleted_server",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

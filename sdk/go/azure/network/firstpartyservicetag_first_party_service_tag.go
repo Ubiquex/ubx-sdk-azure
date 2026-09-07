@@ -15,11 +15,11 @@ type FirstpartyservicetagFirstPartyServiceTag_Properties struct {
 }
 
 var FirstpartyservicetagFirstPartyServiceTag_PropertiesFields = ubx.FieldMap{
-		"FailedReason": ubx.FieldSpec{WireName: "failed_reason"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"FailedReason":      ubx.FieldSpec{WireName: "failed_reason"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"Value":             ubx.FieldSpec{WireName: "value"},
+}
 
 type FirstpartyservicetagFirstPartyServiceTagConfig struct {
 	// Resource location.
@@ -53,8 +53,8 @@ var FirstpartyservicetagFirstPartyServiceTag = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
+			Kind:     "object",
+			Fields:   FirstpartyservicetagFirstPartyServiceTag_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

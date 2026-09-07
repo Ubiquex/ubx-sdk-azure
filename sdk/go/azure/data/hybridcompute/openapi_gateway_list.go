@@ -4,11 +4,11 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiGatewayList_Value_Properties struct {
-	AllowedFeatures any
-	GatewayBypass any
-	GatewayEndpoint any
-	GatewayId any
-	GatewayType any
+	AllowedFeatures   any
+	GatewayBypass     any
+	GatewayEndpoint   any
+	GatewayId         any
+	GatewayType       any
 	ProvisioningState any
 }
 
@@ -28,6 +28,5 @@ type OpenapiGatewayListAttrs struct {
 
 var OpenapiGatewayList = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_gateway_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

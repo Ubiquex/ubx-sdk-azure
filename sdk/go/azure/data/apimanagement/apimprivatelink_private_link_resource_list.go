@@ -4,8 +4,8 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimprivatelinkPrivateLinkResourceList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
@@ -23,6 +23,5 @@ type ApimprivatelinkPrivateLinkResourceListAttrs struct {
 
 var ApimprivatelinkPrivateLinkResourceList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimprivatelink_private_link_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

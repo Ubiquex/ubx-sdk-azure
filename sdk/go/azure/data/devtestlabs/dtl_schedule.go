@@ -59,31 +59,31 @@ type DtlSchedule_Properties struct {
 }
 
 type DtlScheduleConfig struct {
-	LabName any
-	Name any
+	LabName           any
+	Name              any
 	ServiceFabricName any
-	UserName any
+	UserName          any
 }
 
 type DtlScheduleAttrs struct {
 	LabName any
 	// The geo-location where the resource lives
 	Location any
-	Name any
+	Name     any
 	// Properties of a schedule.
-	Properties any
+	Properties        any
 	ServiceFabricName any
 	// Resource tags.
-	Tags any
+	Tags     any
 	UserName any
 }
 
 var DtlSchedule = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_schedule",
 	Fields: ubx.FieldMap{
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"LabName":           ubx.FieldSpec{WireName: "lab_name"},
+		"Name":              ubx.FieldSpec{WireName: "name"},
 		"ServiceFabricName": ubx.FieldSpec{WireName: "service_fabric_name"},
-		"UserName": ubx.FieldSpec{WireName: "user_name"},
+		"UserName":          ubx.FieldSpec{WireName: "user_name"},
 	},
 }

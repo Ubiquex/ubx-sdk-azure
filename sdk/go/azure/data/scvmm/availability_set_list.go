@@ -10,13 +10,13 @@ type AvailabilitySetList_Value_ExtendedLocation struct {
 
 type AvailabilitySetList_Value_Properties struct {
 	AvailabilitySetName any
-	ProvisioningState any
-	VmmServerId any
+	ProvisioningState   any
+	VmmServerId         any
 }
 
 type AvailabilitySetList_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type AvailabilitySetListConfig struct {
@@ -31,6 +31,5 @@ type AvailabilitySetListAttrs struct {
 
 var AvailabilitySetList = ubx.DataSourceBinding{
 	WireType: "azure_scvmm_availability_set_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

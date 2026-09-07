@@ -4,11 +4,11 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineSizeList_Value struct {
-	MaxDataDiskCount any
-	MemoryInMb any
-	Name any
-	NumberOfCores any
-	OsDiskSizeInMb any
+	MaxDataDiskCount     any
+	MemoryInMb           any
+	Name                 any
+	NumberOfCores        any
+	OsDiskSizeInMb       any
 	ResourceDiskSizeInMb any
 }
 
@@ -24,6 +24,5 @@ type MachineSizeListAttrs struct {
 
 var MachineSizeList = ubx.DataSourceBinding{
 	WireType: "azure_virtual_machine_size_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -8,19 +8,19 @@ type VirtualwanVpnSiteLinkConnection_Properties_EgressNatRules struct {
 }
 
 type VirtualwanVpnSiteLinkConnection_Properties_IpsecPolicies struct {
-	DhGroup any
-	IkeEncryption any
-	IkeIntegrity any
-	IpsecEncryption any
-	IpsecIntegrity any
-	PfsGroup any
+	DhGroup             any
+	IkeEncryption       any
+	IkeIntegrity        any
+	IpsecEncryption     any
+	IpsecIntegrity      any
+	PfsGroup            any
 	SaDataSizeKilobytes any
-	SaLifeTimeSeconds any
+	SaLifeTimeSeconds   any
 }
 
 type VirtualwanVpnSiteLinkConnection_Properties_VpnGatewayCustomBgpAddresses struct {
 	CustomBgpIpAddress any
-	IpConfigurationId any
+	IpConfigurationId  any
 }
 
 type VirtualwanVpnSiteLinkConnection_Properties struct {
@@ -65,16 +65,16 @@ type VirtualwanVpnSiteLinkConnection_Properties struct {
 }
 
 type VirtualwanVpnSiteLinkConnectionConfig struct {
-	ConnectionName any
-	GatewayName any
+	ConnectionName     any
+	GatewayName        any
 	LinkConnectionName any
 }
 
 type VirtualwanVpnSiteLinkConnectionAttrs struct {
 	ConnectionName any
 	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
-	GatewayName any
+	Etag               any
+	GatewayName        any
 	LinkConnectionName any
 	// Name of the resource.
 	Name any
@@ -87,8 +87,8 @@ type VirtualwanVpnSiteLinkConnectionAttrs struct {
 var VirtualwanVpnSiteLinkConnection = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_vpn_site_link_connection",
 	Fields: ubx.FieldMap{
-		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
+		"ConnectionName":     ubx.FieldSpec{WireName: "connection_name"},
+		"GatewayName":        ubx.FieldSpec{WireName: "gateway_name"},
 		"LinkConnectionName": ubx.FieldSpec{WireName: "link_connection_name"},
 	},
 }

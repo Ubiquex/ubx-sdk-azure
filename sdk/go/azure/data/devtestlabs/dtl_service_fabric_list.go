@@ -12,65 +12,65 @@ type DtlServiceFabricList_Value_Properties_ApplicableSchedule_Properties_LabVmsS
 }
 
 type DtlServiceFabricList_Value_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettings struct {
-	EmailRecipient any
+	EmailRecipient     any
 	NotificationLocale any
-	Status any
-	TimeInMinutes any
-	WebhookUrl any
+	Status             any
+	TimeInMinutes      any
+	WebhookUrl         any
 }
 
 type DtlServiceFabricList_Value_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrence struct {
-	Time any
+	Time     any
 	Weekdays any
 }
 
 type DtlServiceFabricList_Value_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties struct {
-	CreatedDate any
-	DailyRecurrence any
-	HourlyRecurrence any
+	CreatedDate          any
+	DailyRecurrence      any
+	HourlyRecurrence     any
 	NotificationSettings any
-	ProvisioningState any
-	Status any
-	TargetResourceId any
-	TaskType any
-	TimeZoneId any
-	UniqueIdentifier any
-	WeeklyRecurrence any
+	ProvisioningState    any
+	Status               any
+	TargetResourceId     any
+	TaskType             any
+	TimeZoneId           any
+	UniqueIdentifier     any
+	WeeklyRecurrence     any
 }
 
 type DtlServiceFabricList_Value_Properties_ApplicableSchedule_Properties_LabVmsShutdown struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlServiceFabricList_Value_Properties_ApplicableSchedule_Properties struct {
 	LabVmsShutdown any
-	LabVmsStartup any
+	LabVmsStartup  any
 }
 
 type DtlServiceFabricList_Value_Properties_ApplicableSchedule struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlServiceFabricList_Value_Properties struct {
-	ApplicableSchedule any
-	EnvironmentId any
+	ApplicableSchedule      any
+	EnvironmentId           any
 	ExternalServiceFabricId any
-	ProvisioningState any
-	UniqueIdentifier any
+	ProvisioningState       any
+	UniqueIdentifier        any
 }
 
 type DtlServiceFabricList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlServiceFabricListConfig struct {
-	LabName any
+	LabName  any
 	UserName any
 }
 
@@ -86,7 +86,7 @@ type DtlServiceFabricListAttrs struct {
 var DtlServiceFabricList = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_service_fabric_list",
 	Fields: ubx.FieldMap{
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
+		"LabName":  ubx.FieldSpec{WireName: "lab_name"},
 		"UserName": ubx.FieldSpec{WireName: "user_name"},
 	},
 }

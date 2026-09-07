@@ -53,52 +53,52 @@ type VirtualwanRouteMap_Properties struct {
 }
 
 var VirtualwanRouteMap_Properties_Rules_Actions_ParametersFields = ubx.FieldMap{
-		"AsPath": ubx.FieldSpec{WireName: "as_path"},
-		"Community": ubx.FieldSpec{WireName: "community"},
-		"RoutePrefix": ubx.FieldSpec{WireName: "route_prefix"},
-	}
+	"AsPath":      ubx.FieldSpec{WireName: "as_path"},
+	"Community":   ubx.FieldSpec{WireName: "community"},
+	"RoutePrefix": ubx.FieldSpec{WireName: "route_prefix"},
+}
 
 var VirtualwanRouteMap_Properties_Rules_ActionsFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: VirtualwanRouteMap_Properties_Rules_Actions_ParametersFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   VirtualwanRouteMap_Properties_Rules_Actions_ParametersFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualwanRouteMap_Properties_Rules_MatchCriteriaFields = ubx.FieldMap{
-		"AsPath": ubx.FieldSpec{WireName: "as_path"},
-		"Community": ubx.FieldSpec{WireName: "community"},
-		"MatchCondition": ubx.FieldSpec{WireName: "match_condition"},
-		"RoutePrefix": ubx.FieldSpec{WireName: "route_prefix"},
-	}
+	"AsPath":         ubx.FieldSpec{WireName: "as_path"},
+	"Community":      ubx.FieldSpec{WireName: "community"},
+	"MatchCondition": ubx.FieldSpec{WireName: "match_condition"},
+	"RoutePrefix":    ubx.FieldSpec{WireName: "route_prefix"},
+}
 
 var VirtualwanRouteMap_Properties_RulesFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{
-			WireName: "actions",
-			Kind: "list",
-			Fields: VirtualwanRouteMap_Properties_Rules_ActionsFields,
-		},
-		"MatchCriteria": ubx.FieldSpec{
-			WireName: "match_criteria",
-			Kind: "list",
-			Fields: VirtualwanRouteMap_Properties_Rules_MatchCriteriaFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextStepIfMatched": ubx.FieldSpec{WireName: "next_step_if_matched"},
-	}
+	"Actions": ubx.FieldSpec{
+		WireName: "actions",
+		Kind:     "list",
+		Fields:   VirtualwanRouteMap_Properties_Rules_ActionsFields,
+	},
+	"MatchCriteria": ubx.FieldSpec{
+		WireName: "match_criteria",
+		Kind:     "list",
+		Fields:   VirtualwanRouteMap_Properties_Rules_MatchCriteriaFields,
+	},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"NextStepIfMatched": ubx.FieldSpec{WireName: "next_step_if_matched"},
+}
 
 var VirtualwanRouteMap_PropertiesFields = ubx.FieldMap{
-		"AssociatedInboundConnections": ubx.FieldSpec{WireName: "associated_inbound_connections"},
-		"AssociatedOutboundConnections": ubx.FieldSpec{WireName: "associated_outbound_connections"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: VirtualwanRouteMap_Properties_RulesFields,
-		},
-	}
+	"AssociatedInboundConnections":  ubx.FieldSpec{WireName: "associated_inbound_connections"},
+	"AssociatedOutboundConnections": ubx.FieldSpec{WireName: "associated_outbound_connections"},
+	"ProvisioningState":             ubx.FieldSpec{WireName: "provisioning_state"},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   VirtualwanRouteMap_Properties_RulesFields,
+	},
+}
 
 type VirtualwanRouteMapConfig struct {
 	// Properties of RouteMap resource
@@ -123,8 +123,8 @@ var VirtualwanRouteMap = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanRouteMap_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanRouteMap_PropertiesFields,
 		},
 	},
 }

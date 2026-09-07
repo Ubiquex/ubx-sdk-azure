@@ -4,12 +4,12 @@ package workloads
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorsProviderInstanceList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type MonitorsProviderInstanceList_Value_Identity struct {
-	Type any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,19 +21,19 @@ type MonitorsProviderInstanceList_Value_Properties_Errors_Details_InnerError str
 }
 
 type MonitorsProviderInstanceList_Value_Properties_Errors_Details struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsProviderInstanceList_Value_Properties_Errors_InnerError_InnerError struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsProviderInstanceList_Value_Properties_Errors_InnerError struct {
@@ -41,11 +41,11 @@ type MonitorsProviderInstanceList_Value_Properties_Errors_InnerError struct {
 }
 
 type MonitorsProviderInstanceList_Value_Properties_Errors struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsProviderInstanceList_Value_Properties_ProviderSettings struct {
@@ -53,13 +53,13 @@ type MonitorsProviderInstanceList_Value_Properties_ProviderSettings struct {
 }
 
 type MonitorsProviderInstanceList_Value_Properties struct {
-	Errors any
-	ProviderSettings any
+	Errors            any
+	ProviderSettings  any
 	ProvisioningState any
 }
 
 type MonitorsProviderInstanceList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 

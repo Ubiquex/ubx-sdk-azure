@@ -4,10 +4,10 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VdiNetworkConnectionList_Value_Properties struct {
-	DomainJoinType any
-	HealthCheckStatus any
+	DomainJoinType              any
+	HealthCheckStatus           any
 	NetworkingResourceGroupName any
-	ProvisioningState any
+	ProvisioningState           any
 }
 
 type VdiNetworkConnectionList_Value struct {
@@ -26,6 +26,5 @@ type VdiNetworkConnectionListAttrs struct {
 
 var VdiNetworkConnectionList = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_vdi_network_connection_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -26,10 +26,10 @@ type ServiceProtectableItem_Properties struct {
 }
 
 type ServiceProtectableItemConfig struct {
-	FabricName any
-	ProtectableItemName any
+	FabricName              any
+	ProtectableItemName     any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 }
 
 type ServiceProtectableItemAttrs struct {
@@ -37,18 +37,18 @@ type ServiceProtectableItemAttrs struct {
 	// Resource Location
 	Location any
 	// Replication protected item custom data details.
-	Properties any
-	ProtectableItemName any
+	Properties              any
+	ProtectableItemName     any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 }
 
 var ServiceProtectableItem = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_protectable_item",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"ProtectableItemName": ubx.FieldSpec{WireName: "protectable_item_name"},
+		"FabricName":              ubx.FieldSpec{WireName: "fabric_name"},
+		"ProtectableItemName":     ubx.FieldSpec{WireName: "protectable_item_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":            ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

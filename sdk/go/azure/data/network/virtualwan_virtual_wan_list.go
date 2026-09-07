@@ -8,18 +8,18 @@ type VirtualwanVirtualWanList_Value_Properties_VirtualHubs struct {
 }
 
 type VirtualwanVirtualWanList_Value_Properties struct {
-	AllowBranchToBranchTraffic any
-	AllowVnetToVnetTraffic any
-	DisableVpnEncryption any
+	AllowBranchToBranchTraffic     any
+	AllowVnetToVnetTraffic         any
+	DisableVpnEncryption           any
 	Office365LocalBreakoutCategory any
-	ProvisioningState any
-	Type any
-	VirtualHubs any
-	VpnSites any
+	ProvisioningState              any
+	Type                           any
+	VirtualHubs                    any
+	VpnSites                       any
 }
 
 type VirtualwanVirtualWanList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -35,6 +35,5 @@ type VirtualwanVirtualWanListAttrs struct {
 
 var VirtualwanVirtualWanList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_virtual_wan_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,24 +4,24 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServersServerList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ServersServerList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ServersServerList_Value_Properties_Administrators struct {
-	AdministratorType any
+	AdministratorType         any
 	AzureAdonlyAuthentication any
-	Login any
-	PrincipalType any
-	Sid any
-	TenantId any
+	Login                     any
+	PrincipalType             any
+	Sid                       any
+	TenantId                  any
 }
 
 type ServersServerList_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -30,46 +30,46 @@ type ServersServerList_Value_Properties_PrivateEndpointConnections_Properties_Pr
 
 type ServersServerList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type ServersServerList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ServersServerList_Value_Properties_PrivateEndpointConnections struct {
-	Id any
+	Id         any
 	Properties any
 }
 
 type ServersServerList_Value_Properties struct {
-	AdministratorLogin any
-	AdministratorLoginPassword any
-	Administrators any
-	CreateMode any
-	ExternalGovernanceStatus any
-	FederatedClientId any
-	FullyQualifiedDomainName any
-	IsIpv6Enabled any
-	KeyId any
-	MinimalTlsVersion any
+	AdministratorLogin            any
+	AdministratorLoginPassword    any
+	Administrators                any
+	CreateMode                    any
+	ExternalGovernanceStatus      any
+	FederatedClientId             any
+	FullyQualifiedDomainName      any
+	IsIpv6Enabled                 any
+	KeyId                         any
+	MinimalTlsVersion             any
 	PrimaryUserAssignedIdentityId any
-	PrivateEndpointConnections any
-	PublicNetworkAccess any
+	PrivateEndpointConnections    any
+	PublicNetworkAccess           any
 	RestrictOutboundNetworkAccess any
-	RetentionDays any
-	State any
-	Version any
-	WorkspaceFeature any
+	RetentionDays                 any
+	State                         any
+	Version                       any
+	WorkspaceFeature              any
 }
 
 type ServersServerList_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
 }
 
@@ -85,6 +85,5 @@ type ServersServerListAttrs struct {
 
 var ServersServerList = ubx.DataSourceBinding{
 	WireType: "azure_sql_servers_server_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

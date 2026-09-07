@@ -8,9 +8,9 @@ type DefenderForAisettingList_Value_Properties struct {
 }
 
 type DefenderForAisettingList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DefenderForAisettingListConfig struct {

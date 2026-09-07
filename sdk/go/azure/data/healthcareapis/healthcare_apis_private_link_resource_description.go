@@ -28,17 +28,17 @@ type HealthcareApisPrivateLinkResourceDescription_SystemData struct {
 }
 
 type HealthcareApisPrivateLinkResourceDescriptionConfig struct {
-	GroupName any
+	GroupName         any
 	ResourceGroupName any
-	ResourceName any
+	ResourceName      any
 }
 
 type HealthcareApisPrivateLinkResourceDescriptionAttrs struct {
 	GroupName any
 	// Properties of a private link resource.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ResourceName any
+	ResourceName      any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 }
@@ -46,8 +46,8 @@ type HealthcareApisPrivateLinkResourceDescriptionAttrs struct {
 var HealthcareApisPrivateLinkResourceDescription = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_private_link_resource_description",
 	Fields: ubx.FieldMap{
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
+		"GroupName":         ubx.FieldSpec{WireName: "group_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

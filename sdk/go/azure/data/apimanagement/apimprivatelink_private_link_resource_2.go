@@ -20,7 +20,7 @@ type ApimprivatelinkPrivateLinkResource2Attrs struct {
 	// Fully qualified resource ID for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}
 	Id any
 	// The name of the resource
-	Name any
+	Name                       any
 	PrivateLinkSubResourceName any
 	// Properties of a private link resource.
 	Properties any

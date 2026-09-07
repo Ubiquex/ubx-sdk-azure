@@ -4,27 +4,27 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OfferList_Value_Properties_Plans struct {
-	Accessibility any
+	Accessibility     any
 	AltStackReference any
-	IsStopSell any
-	PlanDisplayName any
-	PlanId any
-	SkuId any
-	StackType any
+	IsStopSell        any
+	PlanDisplayName   any
+	PlanId            any
+	SkuId             any
+	StackType         any
 }
 
 type OfferList_Value_Properties struct {
-	CreatedAt any
-	ETag any
-	IconFileUris any
-	IsStopSell any
-	ModifiedAt any
-	OfferDisplayName any
-	Plans any
-	PrivateStoreId any
-	PublisherDisplayName any
-	SpecificPlanIdsLimitation any
-	UniqueOfferId any
+	CreatedAt                      any
+	ETag                           any
+	IconFileUris                   any
+	IsStopSell                     any
+	ModifiedAt                     any
+	OfferDisplayName               any
+	Plans                          any
+	PrivateStoreId                 any
+	PublisherDisplayName           any
+	SpecificPlanIdsLimitation      any
+	UniqueOfferId                  any
 	UpdateSuppressedDueIdempotence any
 }
 
@@ -33,14 +33,14 @@ type OfferList_Value struct {
 }
 
 type OfferListConfig struct {
-	CollectionId any
+	CollectionId   any
 	PrivateStoreId any
 }
 
 type OfferListAttrs struct {
 	CollectionId any
 	// The link to the next page of items
-	NextLink any
+	NextLink       any
 	PrivateStoreId any
 	// The Offer items on this page
 	Value any
@@ -49,7 +49,7 @@ type OfferListAttrs struct {
 var OfferList = ubx.DataSourceBinding{
 	WireType: "azure_marketplace_offer_list",
 	Fields: ubx.FieldMap{
-		"CollectionId": ubx.FieldSpec{WireName: "collection_id"},
+		"CollectionId":   ubx.FieldSpec{WireName: "collection_id"},
 		"PrivateStoreId": ubx.FieldSpec{WireName: "private_store_id"},
 	},
 }

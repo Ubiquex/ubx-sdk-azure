@@ -174,9 +174,9 @@ type AzureBackupJobResourceAttrs struct {
 var AzureBackupJobResource = ubx.ResourceBinding{
 	WireType: "azure_dataprotection_azure_backup_job_resource",
 	Fields: ubx.FieldMap{
-		"JobId": ubx.FieldSpec{WireName: "job_id"},
+		"JobId":               ubx.FieldSpec{WireName: "job_id"},
 		"SourceBackupVaultId": ubx.FieldSpec{WireName: "source_backup_vault_id"},
-		"SourceRegion": ubx.FieldSpec{WireName: "source_region"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"SourceRegion":        ubx.FieldSpec{WireName: "source_region"},
+		"Location":            ubx.FieldSpec{WireName: "location"},
 	},
 }

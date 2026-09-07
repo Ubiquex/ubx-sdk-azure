@@ -4,11 +4,11 @@ package healthcareapis
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HealthcareApisPrivateLinkResourceDescriptionList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -18,12 +18,12 @@ type HealthcareApisPrivateLinkResourceDescriptionList_Value struct {
 
 type HealthcareApisPrivateLinkResourceDescriptionListConfig struct {
 	ResourceGroupName any
-	ResourceName any
+	ResourceName      any
 }
 
 type HealthcareApisPrivateLinkResourceDescriptionListAttrs struct {
 	ResourceGroupName any
-	ResourceName any
+	ResourceName      any
 	// Array of private link resources
 	Value any
 }
@@ -32,6 +32,6 @@ var HealthcareApisPrivateLinkResourceDescriptionList = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_private_link_resource_description_list",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

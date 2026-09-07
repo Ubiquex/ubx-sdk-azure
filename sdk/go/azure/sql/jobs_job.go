@@ -26,22 +26,22 @@ type JobsJob_Properties struct {
 }
 
 var JobsJob_Properties_ScheduleFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Interval": ubx.FieldSpec{WireName: "interval"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Enabled":   ubx.FieldSpec{WireName: "enabled"},
+	"EndTime":   ubx.FieldSpec{WireName: "end_time"},
+	"Interval":  ubx.FieldSpec{WireName: "interval"},
+	"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+}
 
 var JobsJob_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "object",
-			Fields: JobsJob_Properties_ScheduleFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "object",
+		Fields:   JobsJob_Properties_ScheduleFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 type JobsJobConfig struct {
 	// Properties of a job.
@@ -58,8 +58,8 @@ var JobsJob = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: JobsJob_PropertiesFields,
+			Kind:     "object",
+			Fields:   JobsJob_PropertiesFields,
 		},
 	},
 }

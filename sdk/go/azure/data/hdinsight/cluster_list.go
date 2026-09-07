@@ -4,28 +4,28 @@ package hdinsight
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ClusterList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
-	TenantId any
+	TenantId    any
 }
 
 type ClusterList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ClusterList_Value_Properties_ClusterDefinition struct {
-	Blueprint any
+	Blueprint        any
 	ComponentVersion any
-	Configurations any
-	Kind any
+	Configurations   any
+	Kind             any
 }
 
 type ClusterList_Value_Properties_ComputeIsolationProperties struct {
 	EnableComputeIsolation any
-	HostSku any
+	HostSku                any
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles_Autoscale_Capacity struct {
@@ -36,11 +36,11 @@ type ClusterList_Value_Properties_ComputeProfile_Roles_Autoscale_Capacity struct
 type ClusterList_Value_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule_TimeAndCapacity struct {
 	MaxInstanceCount any
 	MinInstanceCount any
-	Time any
+	Time             any
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles_Autoscale_Recurrence_Schedule struct {
-	Days any
+	Days            any
 	TimeAndCapacity any
 }
 
@@ -50,13 +50,13 @@ type ClusterList_Value_Properties_ComputeProfile_Roles_Autoscale_Recurrence stru
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles_Autoscale struct {
-	Capacity any
+	Capacity   any
 	Recurrence any
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles_DataDisksGroups struct {
-	DiskSizeGb any
-	DisksPerNode any
+	DiskSizeGb         any
+	DisksPerNode       any
 	StorageAccountType any
 }
 
@@ -73,9 +73,9 @@ type ClusterList_Value_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingS
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles_OsProfile_LinuxOperatingSystemProfile struct {
-	Password any
+	Password   any
 	SshProfile any
-	Username any
+	Username   any
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles_OsProfile struct {
@@ -83,28 +83,28 @@ type ClusterList_Value_Properties_ComputeProfile_Roles_OsProfile struct {
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles_ScriptActions struct {
-	Name any
+	Name       any
 	Parameters any
-	Uri any
+	Uri        any
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles_VirtualNetworkProfile struct {
-	Id any
+	Id     any
 	Subnet any
 }
 
 type ClusterList_Value_Properties_ComputeProfile_Roles struct {
-	Autoscale any
-	DataDisksGroups any
-	EncryptDataDisks any
-	HardwareProfile any
-	MinInstanceCount any
-	Name any
-	OsProfile any
-	ScriptActions any
-	TargetInstanceCount any
+	Autoscale             any
+	DataDisksGroups       any
+	EncryptDataDisks      any
+	HardwareProfile       any
+	MinInstanceCount      any
+	Name                  any
+	OsProfile             any
+	ScriptActions         any
+	TargetInstanceCount   any
 	VirtualNetworkProfile any
-	VmgroupName any
+	VmgroupName           any
 }
 
 type ClusterList_Value_Properties_ComputeProfile struct {
@@ -112,20 +112,20 @@ type ClusterList_Value_Properties_ComputeProfile struct {
 }
 
 type ClusterList_Value_Properties_ConnectivityEndpoints struct {
-	Location any
-	Name any
-	Port any
+	Location         any
+	Name             any
+	Port             any
 	PrivateIpaddress any
-	Protocol any
+	Protocol         any
 }
 
 type ClusterList_Value_Properties_DiskEncryptionProperties struct {
 	EncryptionAlgorithm any
-	EncryptionAtHost any
-	KeyName any
-	KeyVersion any
-	MsiResourceId any
-	VaultUri any
+	EncryptionAtHost    any
+	KeyName             any
+	KeyVersion          any
+	MsiResourceId       any
+	VaultUri            any
 }
 
 type ClusterList_Value_Properties_EncryptionInTransitProperties struct {
@@ -133,27 +133,27 @@ type ClusterList_Value_Properties_EncryptionInTransitProperties struct {
 }
 
 type ClusterList_Value_Properties_Errors struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type ClusterList_Value_Properties_ExcludedServicesConfig struct {
 	ExcludedServicesConfigId any
-	ExcludedServicesList any
+	ExcludedServicesList     any
 }
 
 type ClusterList_Value_Properties_KafkaRestProperties_ClientGroupInfo struct {
-	GroupId any
+	GroupId   any
 	GroupName any
 }
 
 type ClusterList_Value_Properties_KafkaRestProperties struct {
-	ClientGroupInfo any
+	ClientGroupInfo       any
 	ConfigurationOverride any
 }
 
 type ClusterList_Value_Properties_NetworkProperties struct {
-	PrivateLink any
+	PrivateLink                any
 	ResourceProviderConnection any
 }
 
@@ -163,23 +163,23 @@ type ClusterList_Value_Properties_PrivateEndpointConnections_Properties_PrivateE
 
 type ClusterList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type ClusterList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ClusterList_Value_Properties_PrivateEndpointConnections_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -189,31 +189,31 @@ type ClusterList_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type ClusterList_Value_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
+	Primary                   any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type ClusterList_Value_Properties_PrivateLinkConfigurations_Properties_IpConfigurations struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ClusterList_Value_Properties_PrivateLinkConfigurations_Properties struct {
-	GroupId any
-	IpConfigurations any
+	GroupId           any
+	IpConfigurations  any
 	ProvisioningState any
 }
 
 type ClusterList_Value_Properties_PrivateLinkConfigurations struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ClusterList_Value_Properties_QuotaInfo struct {
@@ -221,27 +221,27 @@ type ClusterList_Value_Properties_QuotaInfo struct {
 }
 
 type ClusterList_Value_Properties_SecurityProfile struct {
-	AaddsResourceId any
+	AaddsResourceId      any
 	ClusterUsersGroupDns any
-	DirectoryType any
-	Domain any
-	DomainUserPassword any
-	DomainUsername any
-	LdapsUrls any
-	MsiResourceId any
+	DirectoryType        any
+	Domain               any
+	DomainUserPassword   any
+	DomainUsername       any
+	LdapsUrls            any
+	MsiResourceId        any
 	OrganizationalUnitDn any
 }
 
 type ClusterList_Value_Properties_StorageProfile_Storageaccounts struct {
-	Container any
-	FileSystem any
-	Fileshare any
-	IsDefault any
-	Key any
+	Container     any
+	FileSystem    any
+	Fileshare     any
+	IsDefault     any
+	Key           any
 	MsiResourceId any
-	Name any
-	ResourceId any
-	Saskey any
+	Name          any
+	ResourceId    any
+	Saskey        any
 }
 
 type ClusterList_Value_Properties_StorageProfile struct {
@@ -249,49 +249,49 @@ type ClusterList_Value_Properties_StorageProfile struct {
 }
 
 type ClusterList_Value_Properties struct {
-	ClusterDefinition any
-	ClusterHdpVersion any
-	ClusterId any
-	ClusterState any
-	ClusterVersion any
-	ComputeIsolationProperties any
-	ComputeProfile any
-	ConnectivityEndpoints any
-	CreatedDate any
-	DiskEncryptionProperties any
+	ClusterDefinition             any
+	ClusterHdpVersion             any
+	ClusterId                     any
+	ClusterState                  any
+	ClusterVersion                any
+	ComputeIsolationProperties    any
+	ComputeProfile                any
+	ConnectivityEndpoints         any
+	CreatedDate                   any
+	DiskEncryptionProperties      any
 	EncryptionInTransitProperties any
-	Errors any
-	ExcludedServicesConfig any
-	KafkaRestProperties any
-	MinSupportedTlsVersion any
-	NetworkProperties any
-	OsType any
-	PrivateEndpointConnections any
-	PrivateLinkConfigurations any
-	ProvisioningState any
-	QuotaInfo any
-	SecurityProfile any
-	StorageProfile any
-	Tier any
+	Errors                        any
+	ExcludedServicesConfig        any
+	KafkaRestProperties           any
+	MinSupportedTlsVersion        any
+	NetworkProperties             any
+	OsType                        any
+	PrivateEndpointConnections    any
+	PrivateLinkConfigurations     any
+	ProvisioningState             any
+	QuotaInfo                     any
+	SecurityProfile               any
+	StorageProfile                any
+	Tier                          any
 }
 
 type ClusterList_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 	SystemData any
-	Zones any
+	Zones      any
 }
 
 type ClusterListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ClusterListAttrs struct {
 	ApiVersion any
 	// The link (url) to the next page of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The list of Clusters.
 	Value any
@@ -300,7 +300,7 @@ type ClusterListAttrs struct {
 var ClusterList = ubx.DataSourceBinding{
 	WireType: "azure_hdinsight_cluster_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

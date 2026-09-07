@@ -30,24 +30,24 @@ type GrafanaManagedPrivateEndpointModel_Properties struct {
 }
 
 var GrafanaManagedPrivateEndpointModel_Properties_ConnectionStateFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var GrafanaManagedPrivateEndpointModel_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{
-			WireName: "connection_state",
-			Kind: "object",
-			Fields: GrafanaManagedPrivateEndpointModel_Properties_ConnectionStateFields,
-		},
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"PrivateLinkResourceRegion": ubx.FieldSpec{WireName: "private_link_resource_region"},
-		"PrivateLinkServicePrivateIp": ubx.FieldSpec{WireName: "private_link_service_private_ip"},
-		"PrivateLinkServiceUrl": ubx.FieldSpec{WireName: "private_link_service_url"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-	}
+	"ConnectionState": ubx.FieldSpec{
+		WireName: "connection_state",
+		Kind:     "object",
+		Fields:   GrafanaManagedPrivateEndpointModel_Properties_ConnectionStateFields,
+	},
+	"GroupIds":                    ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateLinkResourceId":       ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"PrivateLinkResourceRegion":   ubx.FieldSpec{WireName: "private_link_resource_region"},
+	"PrivateLinkServicePrivateIp": ubx.FieldSpec{WireName: "private_link_service_private_ip"},
+	"PrivateLinkServiceUrl":       ubx.FieldSpec{WireName: "private_link_service_url"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestMessage":              ubx.FieldSpec{WireName: "request_message"},
+}
 
 type GrafanaManagedPrivateEndpointModelConfig struct {
 	// The geo-location where the resource lives
@@ -73,8 +73,8 @@ var GrafanaManagedPrivateEndpointModel = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: GrafanaManagedPrivateEndpointModel_PropertiesFields,
+			Kind:     "object",
+			Fields:   GrafanaManagedPrivateEndpointModel_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

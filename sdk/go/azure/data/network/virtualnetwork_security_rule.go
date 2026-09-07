@@ -5,11 +5,11 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups_Properties struct {
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type VirtualnetworkSecurityRule_Properties_DestinationApplicationSecurityGroups struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -50,17 +50,17 @@ type VirtualnetworkSecurityRule_Properties struct {
 
 type VirtualnetworkSecurityRuleConfig struct {
 	NetworkSecurityGroupName any
-	SecurityRuleName any
+	SecurityRuleName         any
 }
 
 type VirtualnetworkSecurityRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
 	Etag any
 	// Name of the resource.
-	Name any
+	Name                     any
 	NetworkSecurityGroupName any
 	// Security rule resource.
-	Properties any
+	Properties       any
 	SecurityRuleName any
 	// Resource type.
 	Type any
@@ -70,6 +70,6 @@ var VirtualnetworkSecurityRule = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_security_rule",
 	Fields: ubx.FieldMap{
 		"NetworkSecurityGroupName": ubx.FieldSpec{WireName: "network_security_group_name"},
-		"SecurityRuleName": ubx.FieldSpec{WireName: "security_rule_name"},
+		"SecurityRuleName":         ubx.FieldSpec{WireName: "security_rule_name"},
 	},
 }

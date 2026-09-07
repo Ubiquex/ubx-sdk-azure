@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedapplicationsApplication_Identity_UserAssignedIdentities struct {
 	PrincipalId any
-	TenantId any
+	TenantId    any
 }
 
 type ManagedapplicationsApplication_Identity struct {
@@ -35,11 +35,11 @@ type ManagedapplicationsApplication_Plan struct {
 type ManagedapplicationsApplication_Properties_Artifacts struct {
 	Name any
 	Type any
-	Uri any
+	Uri  any
 }
 
 type ManagedapplicationsApplication_Properties_Authorizations struct {
-	PrincipalId any
+	PrincipalId      any
 	RoleDefinitionId any
 }
 
@@ -68,8 +68,8 @@ type ManagedapplicationsApplication_Properties_CustomerSupport struct {
 
 type ManagedapplicationsApplication_Properties_JitAccessPolicy_JitApprovers struct {
 	DisplayName any
-	Id any
-	Type any
+	Id          any
+	Type        any
 }
 
 type ManagedapplicationsApplication_Properties_JitAccessPolicy struct {
@@ -139,12 +139,12 @@ type ManagedapplicationsApplication_Sku struct {
 }
 
 type ManagedapplicationsApplicationConfig struct {
-	ApiVersion any
+	ApiVersion    any
 	ApplicationId any
 }
 
 type ManagedapplicationsApplicationAttrs struct {
-	ApiVersion any
+	ApiVersion    any
 	ApplicationId any
 	// Identity for the resource.
 	Identity any
@@ -163,7 +163,7 @@ type ManagedapplicationsApplicationAttrs struct {
 var ManagedapplicationsApplication = ubx.DataSourceBinding{
 	WireType: "azure_resources_managedapplications_application",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":    ubx.FieldSpec{WireName: "api_version"},
 		"ApplicationId": ubx.FieldSpec{WireName: "application_id"},
 	},
 }

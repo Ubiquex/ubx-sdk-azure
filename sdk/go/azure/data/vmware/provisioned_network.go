@@ -13,21 +13,21 @@ type ProvisionedNetwork_Properties struct {
 }
 
 type ProvisionedNetworkConfig struct {
-	PrivateCloudName any
+	PrivateCloudName       any
 	ProvisionedNetworkName any
 }
 
 type ProvisionedNetworkAttrs struct {
 	PrivateCloudName any
 	// The properties of a provisioned network.
-	Properties any
+	Properties             any
 	ProvisionedNetworkName any
 }
 
 var ProvisionedNetwork = ubx.DataSourceBinding{
 	WireType: "azure_vmware_provisioned_network",
 	Fields: ubx.FieldMap{
-		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
+		"PrivateCloudName":       ubx.FieldSpec{WireName: "private_cloud_name"},
 		"ProvisionedNetworkName": ubx.FieldSpec{WireName: "provisioned_network_name"},
 	},
 }

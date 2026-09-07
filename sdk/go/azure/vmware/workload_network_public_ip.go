@@ -15,11 +15,11 @@ type WorkloadNetworkPublicIp_Properties struct {
 }
 
 var WorkloadNetworkPublicIp_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"NumberOfPublicIps": ubx.FieldSpec{WireName: "number_of_public_ips"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpblock": ubx.FieldSpec{WireName: "public_ipblock"},
-	}
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"NumberOfPublicIps": ubx.FieldSpec{WireName: "number_of_public_ips"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpblock":     ubx.FieldSpec{WireName: "public_ipblock"},
+}
 
 type WorkloadNetworkPublicIpConfig struct {
 	// NSX Public IP Block Properties
@@ -36,8 +36,8 @@ var WorkloadNetworkPublicIp = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WorkloadNetworkPublicIp_PropertiesFields,
+			Kind:     "object",
+			Fields:   WorkloadNetworkPublicIp_PropertiesFields,
 		},
 	},
 }

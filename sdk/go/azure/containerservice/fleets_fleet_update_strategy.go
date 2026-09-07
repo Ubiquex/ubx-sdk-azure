@@ -49,62 +49,62 @@ type FleetsFleetUpdateStrategy_Properties struct {
 }
 
 var FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var FleetsFleetUpdateStrategy_Properties_Strategy_Stages_GroupsFields = ubx.FieldMap{
-		"AfterGates": ubx.FieldSpec{
-			WireName: "after_gates",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"BeforeGates": ubx.FieldSpec{
-			WireName: "before_gates",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AfterGates": ubx.FieldSpec{
+		WireName: "after_gates",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"BeforeGates": ubx.FieldSpec{
+		WireName: "before_gates",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var FleetsFleetUpdateStrategy_Properties_Strategy_StagesFields = ubx.FieldMap{
-		"AfterGates": ubx.FieldSpec{
-			WireName: "after_gates",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"AfterStageWaitInSeconds": ubx.FieldSpec{WireName: "after_stage_wait_in_seconds"},
-		"BeforeGates": ubx.FieldSpec{
-			WireName: "before_gates",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"Groups": ubx.FieldSpec{
-			WireName: "groups",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_Stages_GroupsFields,
-		},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AfterGates": ubx.FieldSpec{
+		WireName: "after_gates",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"AfterStageWaitInSeconds": ubx.FieldSpec{WireName: "after_stage_wait_in_seconds"},
+	"BeforeGates": ubx.FieldSpec{
+		WireName: "before_gates",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"Groups": ubx.FieldSpec{
+		WireName: "groups",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_Stages_GroupsFields,
+	},
+	"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var FleetsFleetUpdateStrategy_Properties_StrategyFields = ubx.FieldMap{
-		"Stages": ubx.FieldSpec{
-			WireName: "stages",
-			Kind: "list",
-			Fields: FleetsFleetUpdateStrategy_Properties_Strategy_StagesFields,
-		},
-	}
+	"Stages": ubx.FieldSpec{
+		WireName: "stages",
+		Kind:     "list",
+		Fields:   FleetsFleetUpdateStrategy_Properties_Strategy_StagesFields,
+	},
+}
 
 var FleetsFleetUpdateStrategy_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Strategy": ubx.FieldSpec{
-			WireName: "strategy",
-			Kind: "object",
-			Fields: FleetsFleetUpdateStrategy_Properties_StrategyFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Strategy": ubx.FieldSpec{
+		WireName: "strategy",
+		Kind:     "object",
+		Fields:   FleetsFleetUpdateStrategy_Properties_StrategyFields,
+	},
+}
 
 type FleetsFleetUpdateStrategyConfig struct {
 	// The properties of the UpdateStrategy.
@@ -123,8 +123,8 @@ var FleetsFleetUpdateStrategy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FleetsFleetUpdateStrategy_PropertiesFields,
+			Kind:     "object",
+			Fields:   FleetsFleetUpdateStrategy_PropertiesFields,
 		},
 	},
 }

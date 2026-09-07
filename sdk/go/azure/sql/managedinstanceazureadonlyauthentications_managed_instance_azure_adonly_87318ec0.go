@@ -9,8 +9,8 @@ type ManagedinstanceazureadonlyauthenticationsManagedInstanceAzureAdonlyAuthenti
 }
 
 var ManagedinstanceazureadonlyauthenticationsManagedInstanceAzureAdonlyAuthentication_PropertiesFields = ubx.FieldMap{
-		"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
-	}
+	"AzureAdonlyAuthentication": ubx.FieldSpec{WireName: "azure_adonly_authentication"},
+}
 
 type ManagedinstanceazureadonlyauthenticationsManagedInstanceAzureAdonlyAuthenticationConfig struct {
 	// Properties of a active directory only authentication for Managed Instance.
@@ -27,8 +27,8 @@ var ManagedinstanceazureadonlyauthenticationsManagedInstanceAzureAdonlyAuthentic
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstanceazureadonlyauthenticationsManagedInstanceAzureAdonlyAuthentication_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstanceazureadonlyauthenticationsManagedInstanceAzureAdonlyAuthentication_PropertiesFields,
 		},
 	},
 }

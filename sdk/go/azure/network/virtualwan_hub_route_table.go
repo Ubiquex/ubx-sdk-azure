@@ -30,24 +30,24 @@ type VirtualwanHubRouteTable_Properties struct {
 }
 
 var VirtualwanHubRouteTable_Properties_RoutesFields = ubx.FieldMap{
-		"DestinationType": ubx.FieldSpec{WireName: "destination_type"},
-		"Destinations": ubx.FieldSpec{WireName: "destinations"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextHop": ubx.FieldSpec{WireName: "next_hop"},
-		"NextHopType": ubx.FieldSpec{WireName: "next_hop_type"},
-	}
+	"DestinationType": ubx.FieldSpec{WireName: "destination_type"},
+	"Destinations":    ubx.FieldSpec{WireName: "destinations"},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+	"NextHop":         ubx.FieldSpec{WireName: "next_hop"},
+	"NextHopType":     ubx.FieldSpec{WireName: "next_hop_type"},
+}
 
 var VirtualwanHubRouteTable_PropertiesFields = ubx.FieldMap{
-		"AssociatedConnections": ubx.FieldSpec{WireName: "associated_connections"},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-		"PropagatingConnections": ubx.FieldSpec{WireName: "propagating_connections"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: VirtualwanHubRouteTable_Properties_RoutesFields,
-		},
-	}
+	"AssociatedConnections":  ubx.FieldSpec{WireName: "associated_connections"},
+	"Labels":                 ubx.FieldSpec{WireName: "labels"},
+	"PropagatingConnections": ubx.FieldSpec{WireName: "propagating_connections"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   VirtualwanHubRouteTable_Properties_RoutesFields,
+	},
+}
 
 type VirtualwanHubRouteTableConfig struct {
 	// Name of the resource.
@@ -73,8 +73,8 @@ var VirtualwanHubRouteTable = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanHubRouteTable_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanHubRouteTable_PropertiesFields,
 		},
 	},
 }

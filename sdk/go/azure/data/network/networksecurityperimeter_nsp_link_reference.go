@@ -27,12 +27,12 @@ type NetworksecurityperimeterNspLinkReference_Properties struct {
 }
 
 type NetworksecurityperimeterNspLinkReferenceConfig struct {
-	LinkReferenceName any
+	LinkReferenceName            any
 	NetworkSecurityPerimeterName any
 }
 
 type NetworksecurityperimeterNspLinkReferenceAttrs struct {
-	LinkReferenceName any
+	LinkReferenceName            any
 	NetworkSecurityPerimeterName any
 	// Properties of NSP LinkReference resource.
 	Properties any
@@ -41,7 +41,7 @@ type NetworksecurityperimeterNspLinkReferenceAttrs struct {
 var NetworksecurityperimeterNspLinkReference = ubx.DataSourceBinding{
 	WireType: "azure_network_networksecurityperimeter_nsp_link_reference",
 	Fields: ubx.FieldMap{
-		"LinkReferenceName": ubx.FieldSpec{WireName: "link_reference_name"},
+		"LinkReferenceName":            ubx.FieldSpec{WireName: "link_reference_name"},
 		"NetworkSecurityPerimeterName": ubx.FieldSpec{WireName: "network_security_perimeter_name"},
 	},
 }

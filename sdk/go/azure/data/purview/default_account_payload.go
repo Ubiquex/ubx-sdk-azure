@@ -4,21 +4,21 @@ package purview
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DefaultAccountPayloadConfig struct {
-	ApiVersion any
-	Scope any
+	ApiVersion    any
+	Scope         any
 	ScopeTenantId any
-	ScopeType any
+	ScopeType     any
 }
 
 type DefaultAccountPayloadAttrs struct {
 	// The name of the account that is set as the default.
 	AccountName any
-	ApiVersion any
+	ApiVersion  any
 	// The resource group name of the account that is set as the default.
 	ResourceGroupName any
-	Scope any
-	ScopeTenantId any
-	ScopeType any
+	Scope             any
+	ScopeTenantId     any
+	ScopeType         any
 	// The subscription ID of the account that is set as the default.
 	SubscriptionId any
 }
@@ -26,9 +26,9 @@ type DefaultAccountPayloadAttrs struct {
 var DefaultAccountPayload = ubx.DataSourceBinding{
 	WireType: "azure_purview_default_account_payload",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"ApiVersion":    ubx.FieldSpec{WireName: "api_version"},
+		"Scope":         ubx.FieldSpec{WireName: "scope"},
 		"ScopeTenantId": ubx.FieldSpec{WireName: "scope_tenant_id"},
-		"ScopeType": ubx.FieldSpec{WireName: "scope_type"},
+		"ScopeType":     ubx.FieldSpec{WireName: "scope_type"},
 	},
 }

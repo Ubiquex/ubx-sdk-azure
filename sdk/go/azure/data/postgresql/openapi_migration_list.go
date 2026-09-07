@@ -4,60 +4,60 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMigrationList_Value_Properties_CurrentStatus_CurrentSubStateDetails_DbDetails struct {
-	AppliedChanges any
-	CdcDeleteCounter any
-	CdcInsertCounter any
-	CdcUpdateCounter any
-	DatabaseName any
-	EndedOn any
+	AppliedChanges          any
+	CdcDeleteCounter        any
+	CdcInsertCounter        any
+	CdcUpdateCounter        any
+	DatabaseName            any
+	EndedOn                 any
 	FullLoadCompletedTables any
-	FullLoadErroredTables any
-	FullLoadLoadingTables any
-	FullLoadQueuedTables any
-	IncomingChanges any
-	Latency any
-	Message any
-	MigrationOperation any
-	MigrationState any
-	StartedOn any
+	FullLoadErroredTables   any
+	FullLoadLoadingTables   any
+	FullLoadQueuedTables    any
+	IncomingChanges         any
+	Latency                 any
+	Message                 any
+	MigrationOperation      any
+	MigrationState          any
+	StartedOn               any
 }
 
 type OpenapiMigrationList_Value_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary_Messages struct {
 	Message any
-	State any
+	State   any
 }
 
 type OpenapiMigrationList_Value_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails_Summary struct {
 	Messages any
-	State any
-	Type any
+	State    any
+	Type     any
 }
 
 type OpenapiMigrationList_Value_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails_DbLevelValidationDetails struct {
 	DatabaseName any
-	EndedOn any
-	StartedOn any
-	Summary any
+	EndedOn      any
+	StartedOn    any
+	Summary      any
 }
 
 type OpenapiMigrationList_Value_Properties_CurrentStatus_CurrentSubStateDetails_ValidationDetails struct {
-	DbLevelValidationDetails any
+	DbLevelValidationDetails     any
 	ServerLevelValidationDetails any
-	Status any
-	ValidationEndTimeInUtc any
-	ValidationStartTimeInUtc any
+	Status                       any
+	ValidationEndTimeInUtc       any
+	ValidationStartTimeInUtc     any
 }
 
 type OpenapiMigrationList_Value_Properties_CurrentStatus_CurrentSubStateDetails struct {
-	CurrentSubState any
-	DbDetails any
+	CurrentSubState   any
+	DbDetails         any
 	ValidationDetails any
 }
 
 type OpenapiMigrationList_Value_Properties_CurrentStatus struct {
 	CurrentSubStateDetails any
-	Error any
-	State any
+	Error                  any
+	State                  any
 }
 
 type OpenapiMigrationList_Value_Properties_SecretParameters_AdminCredentials struct {
@@ -66,7 +66,7 @@ type OpenapiMigrationList_Value_Properties_SecretParameters_AdminCredentials str
 }
 
 type OpenapiMigrationList_Value_Properties_SecretParameters struct {
-	AdminCredentials any
+	AdminCredentials     any
 	SourceServerUsername any
 	TargetServerUsername any
 }
@@ -77,38 +77,38 @@ type OpenapiMigrationList_Value_Properties_SourceDbServerMetadata_Sku struct {
 }
 
 type OpenapiMigrationList_Value_Properties_SourceDbServerMetadata struct {
-	Location any
-	Sku any
+	Location  any
+	Sku       any
 	StorageMb any
-	Version any
+	Version   any
 }
 
 type OpenapiMigrationList_Value_Properties struct {
-	Cancel any
-	CurrentStatus any
-	DbsToCancelMigrationOn any
-	DbsToMigrate any
-	DbsToTriggerCutoverOn any
-	MigrateRoles any
-	MigrationId any
-	MigrationInstanceResourceId any
-	MigrationMode any
-	MigrationOption any
-	MigrationWindowEndTimeInUtc any
-	MigrationWindowStartTimeInUtc any
-	OverwriteDbsInTarget any
-	SecretParameters any
+	Cancel                                    any
+	CurrentStatus                             any
+	DbsToCancelMigrationOn                    any
+	DbsToMigrate                              any
+	DbsToTriggerCutoverOn                     any
+	MigrateRoles                              any
+	MigrationId                               any
+	MigrationInstanceResourceId               any
+	MigrationMode                             any
+	MigrationOption                           any
+	MigrationWindowEndTimeInUtc               any
+	MigrationWindowStartTimeInUtc             any
+	OverwriteDbsInTarget                      any
+	SecretParameters                          any
 	SetupLogicalReplicationOnSourceDbIfNeeded any
-	SourceDbServerFullyQualifiedDomainName any
-	SourceDbServerMetadata any
-	SourceDbServerResourceId any
-	SourceType any
-	SslMode any
-	StartDataMigration any
-	TargetDbServerFullyQualifiedDomainName any
-	TargetDbServerMetadata any
-	TargetDbServerResourceId any
-	TriggerCutover any
+	SourceDbServerFullyQualifiedDomainName    any
+	SourceDbServerMetadata                    any
+	SourceDbServerResourceId                  any
+	SourceType                                any
+	SslMode                                   any
+	StartDataMigration                        any
+	TargetDbServerFullyQualifiedDomainName    any
+	TargetDbServerMetadata                    any
+	TargetDbServerResourceId                  any
+	TriggerCutover                            any
 }
 
 type OpenapiMigrationList_Value struct {
@@ -117,13 +117,13 @@ type OpenapiMigrationList_Value struct {
 
 type OpenapiMigrationListConfig struct {
 	MigrationListFilter any
-	ServerName any
+	ServerName          any
 }
 
 type OpenapiMigrationListAttrs struct {
 	MigrationListFilter any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The Migration items on this page
 	Value any
@@ -133,6 +133,6 @@ var OpenapiMigrationList = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_migration_list",
 	Fields: ubx.FieldMap{
 		"MigrationListFilter": ubx.FieldSpec{WireName: "migration_list_filter"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":          ubx.FieldSpec{WireName: "server_name"},
 	},
 }

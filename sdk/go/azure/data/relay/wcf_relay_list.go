@@ -4,18 +4,18 @@ package relay
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WcfRelayList_Value_Properties struct {
-	CreatedAt any
-	IsDynamic any
-	ListenerCount any
-	RelayType any
+	CreatedAt                   any
+	IsDynamic                   any
+	ListenerCount               any
+	RelayType                   any
 	RequiresClientAuthorization any
-	RequiresTransportSecurity any
-	UpdatedAt any
-	UserMetadata any
+	RequiresTransportSecurity   any
+	UpdatedAt                   any
+	UserMetadata                any
 }
 
 type WcfRelayList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

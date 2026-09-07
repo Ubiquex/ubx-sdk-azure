@@ -32,10 +32,10 @@ type LoadbalancerOutboundRuleConfig struct {
 
 type LoadbalancerOutboundRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
+	Etag             any
 	LoadBalancerName any
 	// Name of the resource.
-	Name any
+	Name             any
 	OutboundRuleName any
 	// Outbound rule of the load balancer.
 	Properties any

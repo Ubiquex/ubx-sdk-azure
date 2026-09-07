@@ -9,17 +9,17 @@ type AgentDeploymentList_Value_Properties_Agents struct {
 
 type AgentDeploymentList_Value_Properties_Protocols struct {
 	Protocol any
-	Version any
+	Version  any
 }
 
 type AgentDeploymentList_Value_Properties struct {
-	Agents any
-	DeploymentId any
-	DeploymentType any
-	DisplayName any
-	Protocols any
+	Agents            any
+	DeploymentId      any
+	DeploymentType    any
+	DisplayName       any
+	Protocols         any
 	ProvisioningState any
-	State any
+	State             any
 }
 
 type AgentDeploymentList_Value struct {
@@ -28,23 +28,23 @@ type AgentDeploymentList_Value struct {
 
 type AgentDeploymentListConfig struct {
 	AccountName any
-	AppName any
-	Count any
-	Names any
-	OrderBy any
-	OrderByAsc any
+	AppName     any
+	Count       any
+	Names       any
+	OrderBy     any
+	OrderByAsc  any
 	ProjectName any
 }
 
 type AgentDeploymentListAttrs struct {
 	AccountName any
-	AppName any
-	Count any
-	Names any
+	AppName     any
+	Count       any
+	Names       any
 	// The link to the next page of Agent Deployment objects. If null, there are no additional pages.
-	NextLink any
-	OrderBy any
-	OrderByAsc any
+	NextLink    any
+	OrderBy     any
+	OrderByAsc  any
 	ProjectName any
 	// An array of objects of type Agent Deployment.
 	Value any
@@ -54,11 +54,11 @@ var AgentDeploymentList = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_agent_deployment_list",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"AppName": ubx.FieldSpec{WireName: "app_name"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Names": ubx.FieldSpec{WireName: "names"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"OrderByAsc": ubx.FieldSpec{WireName: "order_by_asc"},
+		"AppName":     ubx.FieldSpec{WireName: "app_name"},
+		"Count":       ubx.FieldSpec{WireName: "count"},
+		"Names":       ubx.FieldSpec{WireName: "names"},
+		"OrderBy":     ubx.FieldSpec{WireName: "order_by"},
+		"OrderByAsc":  ubx.FieldSpec{WireName: "order_by_asc"},
 		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
 	},
 }

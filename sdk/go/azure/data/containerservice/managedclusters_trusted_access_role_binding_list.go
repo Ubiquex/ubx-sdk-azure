@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersTrustedAccessRoleBindingList_Value_Properties struct {
 	ProvisioningState any
-	Roles any
-	SourceResourceId any
+	Roles             any
+	SourceResourceId  any
 }
 
 type ManagedclustersTrustedAccessRoleBindingList_Value struct {
@@ -19,7 +19,7 @@ type ManagedclustersTrustedAccessRoleBindingListConfig struct {
 
 type ManagedclustersTrustedAccessRoleBindingListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The TrustedAccessRoleBinding items on this page
 	Value any

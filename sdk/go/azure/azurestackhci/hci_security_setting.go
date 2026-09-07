@@ -30,24 +30,24 @@ type HciSecuritySetting_Properties struct {
 }
 
 var HciSecuritySetting_Properties_SecurityComplianceStatusFields = ubx.FieldMap{
-		"DataAtRestEncrypted": ubx.FieldSpec{WireName: "data_at_rest_encrypted"},
-		"DataInTransitProtected": ubx.FieldSpec{WireName: "data_in_transit_protected"},
-		"LastUpdated": ubx.FieldSpec{WireName: "last_updated"},
-		"SecuredCoreCompliance": ubx.FieldSpec{WireName: "secured_core_compliance"},
-		"WdacCompliance": ubx.FieldSpec{WireName: "wdac_compliance"},
-	}
+	"DataAtRestEncrypted":    ubx.FieldSpec{WireName: "data_at_rest_encrypted"},
+	"DataInTransitProtected": ubx.FieldSpec{WireName: "data_in_transit_protected"},
+	"LastUpdated":            ubx.FieldSpec{WireName: "last_updated"},
+	"SecuredCoreCompliance":  ubx.FieldSpec{WireName: "secured_core_compliance"},
+	"WdacCompliance":         ubx.FieldSpec{WireName: "wdac_compliance"},
+}
 
 var HciSecuritySetting_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SecuredCoreComplianceAssignment": ubx.FieldSpec{WireName: "secured_core_compliance_assignment"},
-		"SecurityComplianceStatus": ubx.FieldSpec{
-			WireName: "security_compliance_status",
-			Kind: "object",
-			Fields: HciSecuritySetting_Properties_SecurityComplianceStatusFields,
-		},
-		"SmbEncryptionForIntraClusterTrafficComplianceAssignment": ubx.FieldSpec{WireName: "smb_encryption_for_intra_cluster_traffic_compliance_assignment"},
-		"WdacComplianceAssignment": ubx.FieldSpec{WireName: "wdac_compliance_assignment"},
-	}
+	"ProvisioningState":               ubx.FieldSpec{WireName: "provisioning_state"},
+	"SecuredCoreComplianceAssignment": ubx.FieldSpec{WireName: "secured_core_compliance_assignment"},
+	"SecurityComplianceStatus": ubx.FieldSpec{
+		WireName: "security_compliance_status",
+		Kind:     "object",
+		Fields:   HciSecuritySetting_Properties_SecurityComplianceStatusFields,
+	},
+	"SmbEncryptionForIntraClusterTrafficComplianceAssignment": ubx.FieldSpec{WireName: "smb_encryption_for_intra_cluster_traffic_compliance_assignment"},
+	"WdacComplianceAssignment":                                ubx.FieldSpec{WireName: "wdac_compliance_assignment"},
+}
 
 type HciSecuritySettingConfig struct {
 	// Security properties of the resource
@@ -64,8 +64,8 @@ var HciSecuritySetting = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HciSecuritySetting_PropertiesFields,
+			Kind:     "object",
+			Fields:   HciSecuritySetting_PropertiesFields,
 		},
 	},
 }

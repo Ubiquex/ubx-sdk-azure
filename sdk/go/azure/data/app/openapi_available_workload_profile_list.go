@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAvailableWorkloadProfileList_Value_Properties struct {
 	Applicability any
-	Category any
-	Cores any
-	DisplayName any
-	Gpus any
-	MemoryGiB any
+	Category      any
+	Cores         any
+	DisplayName   any
+	Gpus          any
+	MemoryGiB     any
 }
 
 type OpenapiAvailableWorkloadProfileList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -29,6 +29,5 @@ type OpenapiAvailableWorkloadProfileListAttrs struct {
 
 var OpenapiAvailableWorkloadProfileList = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_available_workload_profile_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

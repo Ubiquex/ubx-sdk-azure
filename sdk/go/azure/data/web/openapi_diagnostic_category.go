@@ -10,7 +10,7 @@ type OpenapiDiagnosticCategory_Properties struct {
 
 type OpenapiDiagnosticCategoryConfig struct {
 	DiagnosticCategory any
-	SiteName any
+	SiteName           any
 }
 
 type OpenapiDiagnosticCategoryAttrs struct {
@@ -19,13 +19,13 @@ type OpenapiDiagnosticCategoryAttrs struct {
 	Kind any
 	// DiagnosticCategory resource specific properties
 	Properties any
-	SiteName any
+	SiteName   any
 }
 
 var OpenapiDiagnosticCategory = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_diagnostic_category",
 	Fields: ubx.FieldMap{
 		"DiagnosticCategory": ubx.FieldSpec{WireName: "diagnostic_category"},
-		"SiteName": ubx.FieldSpec{WireName: "site_name"},
+		"SiteName":           ubx.FieldSpec{WireName: "site_name"},
 	},
 }

@@ -18,11 +18,11 @@ type ServiceClusterRecoveryPoint_Properties struct {
 }
 
 type ServiceClusterRecoveryPointConfig struct {
-	FabricName any
-	ProtectionContainerName any
-	RecoveryPointName any
+	FabricName                       any
+	ProtectionContainerName          any
+	RecoveryPointName                any
 	ReplicationProtectionClusterName any
-	ResourceName any
+	ResourceName                     any
 }
 
 type ServiceClusterRecoveryPointAttrs struct {
@@ -32,11 +32,11 @@ type ServiceClusterRecoveryPointAttrs struct {
 	// The recovery point name.
 	Name any
 	// Cluster recovery point properties.
-	Properties any
-	ProtectionContainerName any
-	RecoveryPointName any
+	Properties                       any
+	ProtectionContainerName          any
+	RecoveryPointName                any
 	ReplicationProtectionClusterName any
-	ResourceName any
+	ResourceName                     any
 	// The resource type.
 	Type any
 }
@@ -44,10 +44,10 @@ type ServiceClusterRecoveryPointAttrs struct {
 var ServiceClusterRecoveryPoint = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_cluster_recovery_point",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"RecoveryPointName": ubx.FieldSpec{WireName: "recovery_point_name"},
+		"FabricName":                       ubx.FieldSpec{WireName: "fabric_name"},
+		"ProtectionContainerName":          ubx.FieldSpec{WireName: "protection_container_name"},
+		"RecoveryPointName":                ubx.FieldSpec{WireName: "recovery_point_name"},
 		"ReplicationProtectionClusterName": ubx.FieldSpec{WireName: "replication_protection_cluster_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":                     ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

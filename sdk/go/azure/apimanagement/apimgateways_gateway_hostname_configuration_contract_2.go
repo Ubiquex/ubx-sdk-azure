@@ -19,13 +19,13 @@ type ApimgatewaysGatewayHostnameConfigurationContract2_Properties struct {
 }
 
 var ApimgatewaysGatewayHostnameConfigurationContract2_PropertiesFields = ubx.FieldMap{
-		"CertificateId": ubx.FieldSpec{WireName: "certificate_id"},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"Http2Enabled": ubx.FieldSpec{WireName: "http2_enabled"},
-		"NegotiateClientCertificate": ubx.FieldSpec{WireName: "negotiate_client_certificate"},
-		"Tls10Enabled": ubx.FieldSpec{WireName: "tls10_enabled"},
-		"Tls11Enabled": ubx.FieldSpec{WireName: "tls11_enabled"},
-	}
+	"CertificateId":              ubx.FieldSpec{WireName: "certificate_id"},
+	"Hostname":                   ubx.FieldSpec{WireName: "hostname"},
+	"Http2Enabled":               ubx.FieldSpec{WireName: "http2_enabled"},
+	"NegotiateClientCertificate": ubx.FieldSpec{WireName: "negotiate_client_certificate"},
+	"Tls10Enabled":               ubx.FieldSpec{WireName: "tls10_enabled"},
+	"Tls11Enabled":               ubx.FieldSpec{WireName: "tls11_enabled"},
+}
 
 type ApimgatewaysGatewayHostnameConfigurationContract2Config struct {
 	// Gateway hostname configuration details.
@@ -42,8 +42,8 @@ var ApimgatewaysGatewayHostnameConfigurationContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimgatewaysGatewayHostnameConfigurationContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimgatewaysGatewayHostnameConfigurationContract2_PropertiesFields,
 		},
 	},
 }

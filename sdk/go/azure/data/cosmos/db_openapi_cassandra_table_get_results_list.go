@@ -4,14 +4,14 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiCassandraTableGetResultsList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DbOpenapiCassandraTableGetResultsList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,36 +21,36 @@ type DbOpenapiCassandraTableGetResultsList_Value_Properties_Options_AutoscaleSet
 
 type DbOpenapiCassandraTableGetResultsList_Value_Properties_Options struct {
 	AutoscaleSettings any
-	Throughput any
+	Throughput        any
 }
 
 type DbOpenapiCassandraTableGetResultsList_Value_Properties_Resource struct {
 	Etag any
-	Rid any
-	Ts any
+	Rid  any
+	Ts   any
 }
 
 type DbOpenapiCassandraTableGetResultsList_Value_Properties struct {
-	Options any
+	Options  any
 	Resource any
 }
 
 type DbOpenapiCassandraTableGetResultsList_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiCassandraTableGetResultsListConfig struct {
-	AccountName any
+	AccountName  any
 	KeyspaceName any
 }
 
 type DbOpenapiCassandraTableGetResultsListAttrs struct {
-	AccountName any
+	AccountName  any
 	KeyspaceName any
-	NextLink any
+	NextLink     any
 	// List of Cassandra tables and their properties.
 	Value any
 }
@@ -58,7 +58,7 @@ type DbOpenapiCassandraTableGetResultsListAttrs struct {
 var DbOpenapiCassandraTableGetResultsList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_cassandra_table_get_results_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":  ubx.FieldSpec{WireName: "account_name"},
 		"KeyspaceName": ubx.FieldSpec{WireName: "keyspace_name"},
 	},
 }

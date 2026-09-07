@@ -4,18 +4,18 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDeletedSiteList_Value_Properties struct {
-	DeletedSiteId any
-	DeletedSiteName any
+	DeletedSiteId    any
+	DeletedSiteName  any
 	DeletedTimestamp any
-	GeoRegionName any
-	Kind any
-	ResourceGroup any
-	Slot any
-	Subscription any
+	GeoRegionName    any
+	Kind             any
+	ResourceGroup    any
+	Slot             any
+	Subscription     any
 }
 
 type OpenapiDeletedSiteList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -31,6 +31,5 @@ type OpenapiDeletedSiteListAttrs struct {
 
 var OpenapiDeletedSiteList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_deleted_site_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

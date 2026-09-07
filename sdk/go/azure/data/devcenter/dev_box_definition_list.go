@@ -5,20 +5,20 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DevBoxDefinitionList_Value_Properties_ActiveImageReference struct {
 	ExactVersion any
-	Id any
+	Id           any
 }
 
 type DevBoxDefinitionList_Value_Properties_ImageValidationErrorDetails struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type DevBoxDefinitionList_Value_Properties struct {
-	ActiveImageReference any
+	ActiveImageReference        any
 	ImageValidationErrorDetails any
-	ImageValidationStatus any
-	ProvisioningState any
-	ValidationStatus any
+	ImageValidationStatus       any
+	ProvisioningState           any
+	ValidationStatus            any
 }
 
 type DevBoxDefinitionList_Value struct {
@@ -37,6 +37,5 @@ type DevBoxDefinitionListAttrs struct {
 
 var DevBoxDefinitionList = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_dev_box_definition_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -169,163 +169,163 @@ type Namespace_SystemData struct {
 }
 
 var Namespace_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var Namespace_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: Namespace_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   Namespace_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var Namespace_Properties_InboundIpRulesFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
-	}
+	"Action": ubx.FieldSpec{WireName: "action"},
+	"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
+}
 
 var Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var Namespace_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   Namespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   Namespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var Namespace_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: Namespace_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   Namespace_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var Namespace_Properties_TopicSpacesConfiguration_CustomDomains_IdentityFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"Type":                 ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var Namespace_Properties_TopicSpacesConfiguration_CustomDomainsFields = ubx.FieldMap{
-		"CertificateUrl": ubx.FieldSpec{WireName: "certificate_url"},
-		"ExpectedTxtRecordName": ubx.FieldSpec{WireName: "expected_txt_record_name"},
-		"ExpectedTxtRecordValue": ubx.FieldSpec{WireName: "expected_txt_record_value"},
-		"FullyQualifiedDomainName": ubx.FieldSpec{WireName: "fully_qualified_domain_name"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: Namespace_Properties_TopicSpacesConfiguration_CustomDomains_IdentityFields,
-		},
-		"ValidationState": ubx.FieldSpec{WireName: "validation_state"},
-	}
+	"CertificateUrl":           ubx.FieldSpec{WireName: "certificate_url"},
+	"ExpectedTxtRecordName":    ubx.FieldSpec{WireName: "expected_txt_record_name"},
+	"ExpectedTxtRecordValue":   ubx.FieldSpec{WireName: "expected_txt_record_value"},
+	"FullyQualifiedDomainName": ubx.FieldSpec{WireName: "fully_qualified_domain_name"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   Namespace_Properties_TopicSpacesConfiguration_CustomDomains_IdentityFields,
+	},
+	"ValidationState": ubx.FieldSpec{WireName: "validation_state"},
+}
 
 var Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_DynamicFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Key":   ubx.FieldSpec{WireName: "key"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_StaticFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"ValueType": ubx.FieldSpec{WireName: "value_type"},
-	}
+	"Key":       ubx.FieldSpec{WireName: "key"},
+	"ValueType": ubx.FieldSpec{WireName: "value_type"},
+}
 
 var Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichmentsFields = ubx.FieldMap{
-		"Dynamic": ubx.FieldSpec{
-			WireName: "dynamic",
-			Kind: "list",
-			Fields: Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_DynamicFields,
-		},
-		"Static": ubx.FieldSpec{
-			WireName: "static",
-			Kind: "list",
-			Fields: Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_StaticFields,
-		},
-	}
+	"Dynamic": ubx.FieldSpec{
+		WireName: "dynamic",
+		Kind:     "list",
+		Fields:   Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_DynamicFields,
+	},
+	"Static": ubx.FieldSpec{
+		WireName: "static",
+		Kind:     "list",
+		Fields:   Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichments_StaticFields,
+	},
+}
 
 var Namespace_Properties_TopicSpacesConfigurationFields = ubx.FieldMap{
-		"CustomDomains": ubx.FieldSpec{
-			WireName: "custom_domains",
-			Kind: "list",
-			Fields: Namespace_Properties_TopicSpacesConfiguration_CustomDomainsFields,
-		},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-		"MaximumClientSessionsPerAuthenticationName": ubx.FieldSpec{WireName: "maximum_client_sessions_per_authentication_name"},
-		"MaximumSessionExpiryInHours": ubx.FieldSpec{WireName: "maximum_session_expiry_in_hours"},
-		"RouteTopicResourceId": ubx.FieldSpec{WireName: "route_topic_resource_id"},
-		"RoutingEnrichments": ubx.FieldSpec{
-			WireName: "routing_enrichments",
-			Kind: "object",
-			Fields: Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichmentsFields,
-		},
-		"RoutingIdentityInfo": ubx.FieldSpec{
-			WireName: "routing_identity_info",
-			Kind: "object",
-			Fields: Namespace_Properties_TopicSpacesConfiguration_CustomDomains_IdentityFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"CustomDomains": ubx.FieldSpec{
+		WireName: "custom_domains",
+		Kind:     "list",
+		Fields:   Namespace_Properties_TopicSpacesConfiguration_CustomDomainsFields,
+	},
+	"Hostname": ubx.FieldSpec{WireName: "hostname"},
+	"MaximumClientSessionsPerAuthenticationName": ubx.FieldSpec{WireName: "maximum_client_sessions_per_authentication_name"},
+	"MaximumSessionExpiryInHours":                ubx.FieldSpec{WireName: "maximum_session_expiry_in_hours"},
+	"RouteTopicResourceId":                       ubx.FieldSpec{WireName: "route_topic_resource_id"},
+	"RoutingEnrichments": ubx.FieldSpec{
+		WireName: "routing_enrichments",
+		Kind:     "object",
+		Fields:   Namespace_Properties_TopicSpacesConfiguration_RoutingEnrichmentsFields,
+	},
+	"RoutingIdentityInfo": ubx.FieldSpec{
+		WireName: "routing_identity_info",
+		Kind:     "object",
+		Fields:   Namespace_Properties_TopicSpacesConfiguration_CustomDomains_IdentityFields,
+	},
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 var Namespace_Properties_TopicsConfigurationFields = ubx.FieldMap{
-		"CustomDomains": ubx.FieldSpec{
-			WireName: "custom_domains",
-			Kind: "list",
-			Fields: Namespace_Properties_TopicSpacesConfiguration_CustomDomainsFields,
-		},
-		"Hostname": ubx.FieldSpec{WireName: "hostname"},
-	}
+	"CustomDomains": ubx.FieldSpec{
+		WireName: "custom_domains",
+		Kind:     "list",
+		Fields:   Namespace_Properties_TopicSpacesConfiguration_CustomDomainsFields,
+	},
+	"Hostname": ubx.FieldSpec{WireName: "hostname"},
+}
 
 var Namespace_PropertiesFields = ubx.FieldMap{
-		"InboundIpRules": ubx.FieldSpec{
-			WireName: "inbound_ip_rules",
-			Kind: "list",
-			Fields: Namespace_Properties_InboundIpRulesFields,
-		},
-		"IsZoneRedundant": ubx.FieldSpec{WireName: "is_zone_redundant"},
-		"MinimumTlsVersionAllowed": ubx.FieldSpec{WireName: "minimum_tls_version_allowed"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: Namespace_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"TopicSpacesConfiguration": ubx.FieldSpec{
-			WireName: "topic_spaces_configuration",
-			Kind: "object",
-			Fields: Namespace_Properties_TopicSpacesConfigurationFields,
-		},
-		"TopicsConfiguration": ubx.FieldSpec{
-			WireName: "topics_configuration",
-			Kind: "object",
-			Fields: Namespace_Properties_TopicsConfigurationFields,
-		},
-	}
+	"InboundIpRules": ubx.FieldSpec{
+		WireName: "inbound_ip_rules",
+		Kind:     "list",
+		Fields:   Namespace_Properties_InboundIpRulesFields,
+	},
+	"IsZoneRedundant":          ubx.FieldSpec{WireName: "is_zone_redundant"},
+	"MinimumTlsVersionAllowed": ubx.FieldSpec{WireName: "minimum_tls_version_allowed"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   Namespace_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"TopicSpacesConfiguration": ubx.FieldSpec{
+		WireName: "topic_spaces_configuration",
+		Kind:     "object",
+		Fields:   Namespace_Properties_TopicSpacesConfigurationFields,
+	},
+	"TopicsConfiguration": ubx.FieldSpec{
+		WireName: "topics_configuration",
+		Kind:     "object",
+		Fields:   Namespace_Properties_TopicsConfigurationFields,
+	},
+}
 
 var Namespace_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 type NamespaceConfig struct {
 	// The identity information for the resource.
@@ -360,19 +360,19 @@ var Namespace = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: Namespace_IdentityFields,
+			Kind:     "object",
+			Fields:   Namespace_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Namespace_PropertiesFields,
+			Kind:     "object",
+			Fields:   Namespace_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Namespace_SkuFields,
+			Kind:     "object",
+			Fields:   Namespace_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

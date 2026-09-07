@@ -8,11 +8,11 @@ type DomainTopicList_Value_Properties struct {
 }
 
 type DomainTopicList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -22,19 +22,19 @@ type DomainTopicList_Value struct {
 }
 
 type DomainTopicListConfig struct {
-	ApiVersion any
-	DomainName any
+	ApiVersion        any
+	DomainName        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type DomainTopicListAttrs struct {
 	ApiVersion any
 	DomainName any
 	// A link for the next page of domain topics.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// A collection of Domain Topics.
 	Value any
 }
@@ -42,9 +42,9 @@ type DomainTopicListAttrs struct {
 var DomainTopicList = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_domain_topic_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"DomainName": ubx.FieldSpec{WireName: "domain_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"DomainName":        ubx.FieldSpec{WireName: "domain_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

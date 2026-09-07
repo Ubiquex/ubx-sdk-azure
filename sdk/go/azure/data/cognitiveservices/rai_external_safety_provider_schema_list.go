@@ -4,21 +4,21 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RaiExternalSafetyProviderSchemaList_Value_Properties struct {
-	CreatedAt any
-	KeyVaultUri any
-	LastModifiedAt any
+	CreatedAt       any
+	KeyVaultUri     any
+	LastModifiedAt  any
 	ManagedIdentity any
-	Mode any
-	ProviderId any
-	ProviderName any
-	SecretName any
-	Url any
+	Mode            any
+	ProviderId      any
+	ProviderName    any
+	SecretName      any
+	Url             any
 }
 
 type RaiExternalSafetyProviderSchemaList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type RaiExternalSafetyProviderSchemaListConfig struct {
@@ -33,6 +33,5 @@ type RaiExternalSafetyProviderSchemaListAttrs struct {
 
 var RaiExternalSafetyProviderSchemaList = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_rai_external_safety_provider_schema_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

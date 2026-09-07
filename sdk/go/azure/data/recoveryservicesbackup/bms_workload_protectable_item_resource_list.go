@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsWorkloadProtectableItemResourceList_Value_Properties struct {
 	BackupManagementType any
-	FriendlyName any
-	ProtectableItemType any
-	ProtectionState any
-	WorkloadType any
+	FriendlyName         any
+	ProtectableItemType  any
+	ProtectionState      any
+	WorkloadType         any
 }
 
 type BmsWorkloadProtectableItemResourceList_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsWorkloadProtectableItemResourceListConfig struct {
@@ -26,7 +26,7 @@ type BmsWorkloadProtectableItemResourceListAttrs struct {
 	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

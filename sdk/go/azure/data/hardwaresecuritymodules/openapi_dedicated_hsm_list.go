@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDedicatedHsmList_Value_Properties_ManagementNetworkProfile_NetworkInterfaces struct {
 	PrivateIpAddress any
-	ResourceId any
+	ResourceId       any
 }
 
 type OpenapiDedicatedHsmList_Value_Properties_ManagementNetworkProfile_Subnet struct {
@@ -14,15 +14,15 @@ type OpenapiDedicatedHsmList_Value_Properties_ManagementNetworkProfile_Subnet st
 
 type OpenapiDedicatedHsmList_Value_Properties_ManagementNetworkProfile struct {
 	NetworkInterfaces any
-	Subnet any
+	Subnet            any
 }
 
 type OpenapiDedicatedHsmList_Value_Properties struct {
 	ManagementNetworkProfile any
-	NetworkProfile any
-	ProvisioningState any
-	StampId any
-	StatusMessage any
+	NetworkProfile           any
+	ProvisioningState        any
+	StampId                  any
+	StatusMessage            any
 }
 
 type OpenapiDedicatedHsmList_Value_Sku struct {
@@ -31,8 +31,8 @@ type OpenapiDedicatedHsmList_Value_Sku struct {
 
 type OpenapiDedicatedHsmList_Value struct {
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type OpenapiDedicatedHsmListConfig struct {
@@ -47,6 +47,5 @@ type OpenapiDedicatedHsmListAttrs struct {
 
 var OpenapiDedicatedHsmList = ubx.DataSourceBinding{
 	WireType: "azure_hardwaresecuritymodules_openapi_dedicated_hsm_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

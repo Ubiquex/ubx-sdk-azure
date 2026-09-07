@@ -4,14 +4,14 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedHsmList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiManagedHsmList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -28,71 +28,71 @@ type OpenapiManagedHsmList_Value_Properties_NetworkAcls_VirtualNetworkRules stru
 }
 
 type OpenapiManagedHsmList_Value_Properties_NetworkAcls struct {
-	Bypass any
-	DefaultAction any
-	IpRules any
-	ServiceTags any
+	Bypass              any
+	DefaultAction       any
+	IpRules             any
+	ServiceTags         any
 	VirtualNetworkRules any
 }
 
 type OpenapiManagedHsmList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiManagedHsmList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiManagedHsmList_Value_Properties_PrivateEndpointConnections struct {
-	Etag any
-	Id any
+	Etag       any
+	Id         any
 	Properties any
 }
 
 type OpenapiManagedHsmList_Value_Properties_Regions struct {
-	IsPrimary any
-	Name any
+	IsPrimary         any
+	Name              any
 	ProvisioningState any
 }
 
 type OpenapiManagedHsmList_Value_Properties_SecurityDomainProperties struct {
-	ActivationStatus any
+	ActivationStatus        any
 	ActivationStatusMessage any
 }
 
 type OpenapiManagedHsmList_Value_Properties struct {
-	CreateMode any
-	EnablePurgeProtection any
-	EnableSoftDelete any
-	HsmUri any
-	InitialAdminObjectIds any
-	NetworkAcls any
+	CreateMode                 any
+	EnablePurgeProtection      any
+	EnableSoftDelete           any
+	HsmUri                     any
+	InitialAdminObjectIds      any
+	NetworkAcls                any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	Regions any
-	ScheduledPurgeDate any
-	SecurityDomainProperties any
-	SoftDeleteRetentionInDays any
-	StatusMessage any
-	TenantId any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	Regions                    any
+	ScheduledPurgeDate         any
+	SecurityDomainProperties   any
+	SoftDeleteRetentionInDays  any
+	StatusMessage              any
+	TenantId                   any
 }
 
 type OpenapiManagedHsmList_Value_Sku struct {
 	Family any
-	Name any
+	Name   any
 }
 
 type OpenapiManagedHsmList_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiManagedHsmListConfig struct {
@@ -107,6 +107,5 @@ type OpenapiManagedHsmListAttrs struct {
 
 var OpenapiManagedHsmList = ubx.DataSourceBinding{
 	WireType: "azure_keyvault_openapi_managed_hsm_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

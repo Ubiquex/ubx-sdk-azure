@@ -4,8 +4,8 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type InterconnectgroupInterconnectGroupList_Value_Properties_SubgroupProfile struct {
-	Scope any
-	Size any
+	Scope  any
+	Size   any
 	VmSize any
 }
 
@@ -14,10 +14,10 @@ type InterconnectgroupInterconnectGroupList_Value_Properties_Subgroups_Propertie
 }
 
 type InterconnectgroupInterconnectGroupList_Value_Properties_Subgroups_Properties struct {
-	InterconnectBlock any
+	InterconnectBlock  any
 	InternalSubgroupId any
-	ProvisioningState any
-	VirtualMachines any
+	ProvisioningState  any
+	VirtualMachines    any
 }
 
 type InterconnectgroupInterconnectGroupList_Value_Properties_Subgroups struct {
@@ -26,14 +26,14 @@ type InterconnectgroupInterconnectGroupList_Value_Properties_Subgroups struct {
 
 type InterconnectgroupInterconnectGroupList_Value_Properties struct {
 	ProvisioningState any
-	ResourceGuid any
-	Scope any
-	SubgroupProfile any
-	Subgroups any
+	ResourceGuid      any
+	Scope             any
+	SubgroupProfile   any
+	Subgroups         any
 }
 
 type InterconnectgroupInterconnectGroupList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -49,6 +49,5 @@ type InterconnectgroupInterconnectGroupListAttrs struct {
 
 var InterconnectgroupInterconnectGroupList = ubx.DataSourceBinding{
 	WireType: "azure_network_interconnectgroup_interconnect_group_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -55,7 +55,7 @@ type OpenapiBillingSubscription_Properties_Reseller struct {
 
 type OpenapiBillingSubscription_Properties_SuspensionReasonDetails struct {
 	EffectiveDate any
-	Reason any
+	Reason        any
 }
 
 type OpenapiBillingSubscription_Properties_SystemOverrides struct {
@@ -157,15 +157,15 @@ type OpenapiBillingSubscription_Properties struct {
 }
 
 type OpenapiBillingSubscriptionConfig struct {
-	BillingAccountName any
+	BillingAccountName      any
 	BillingSubscriptionName any
-	Expand any
+	Expand                  any
 }
 
 type OpenapiBillingSubscriptionAttrs struct {
-	BillingAccountName any
+	BillingAccountName      any
 	BillingSubscriptionName any
-	Expand any
+	Expand                  any
 	// The billing properties of a subscription.
 	Properties any
 	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
@@ -175,8 +175,8 @@ type OpenapiBillingSubscriptionAttrs struct {
 var OpenapiBillingSubscription = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_billing_subscription",
 	Fields: ubx.FieldMap{
-		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
+		"BillingAccountName":      ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingSubscriptionName": ubx.FieldSpec{WireName: "billing_subscription_name"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
+		"Expand":                  ubx.FieldSpec{WireName: "expand"},
 	},
 }

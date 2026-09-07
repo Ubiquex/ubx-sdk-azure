@@ -4,10 +4,10 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatastoreList_Value_Properties_DiskPoolVolume struct {
-	LunName any
+	LunName     any
 	MountOption any
-	Path any
-	TargetId any
+	Path        any
+	TargetId    any
 }
 
 type DatastoreList_Value_Properties_ElasticSanVolume struct {
@@ -19,17 +19,17 @@ type DatastoreList_Value_Properties_NetAppVolume struct {
 }
 
 type DatastoreList_Value_Properties_PureStorageVolume struct {
-	SizeGb any
+	SizeGb        any
 	StoragePoolId any
 }
 
 type DatastoreList_Value_Properties struct {
-	DiskPoolVolume any
-	ElasticSanVolume any
-	NetAppVolume any
+	DiskPoolVolume    any
+	ElasticSanVolume  any
+	NetAppVolume      any
 	ProvisioningState any
 	PureStorageVolume any
-	Status any
+	Status            any
 }
 
 type DatastoreList_Value struct {
@@ -37,14 +37,14 @@ type DatastoreList_Value struct {
 }
 
 type DatastoreListConfig struct {
-	ClusterName any
+	ClusterName      any
 	PrivateCloudName any
 }
 
 type DatastoreListAttrs struct {
 	ClusterName any
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The Datastore items on this page
 	Value any
@@ -53,7 +53,7 @@ type DatastoreListAttrs struct {
 var DatastoreList = ubx.DataSourceBinding{
 	WireType: "azure_vmware_datastore_list",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":      ubx.FieldSpec{WireName: "cluster_name"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 	},
 }

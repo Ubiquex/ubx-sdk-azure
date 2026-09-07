@@ -134,120 +134,120 @@ type ConnectedclustersConnectedCluster_Properties struct {
 }
 
 var ConnectedclustersConnectedCluster_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var ConnectedclustersConnectedCluster_Properties_AadProfileFields = ubx.FieldMap{
-		"AdminGroupObjectIds": ubx.FieldSpec{WireName: "admin_group_object_ids"},
-		"EnableAzureRbac": ubx.FieldSpec{WireName: "enable_azure_rbac"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AdminGroupObjectIds": ubx.FieldSpec{WireName: "admin_group_object_ids"},
+	"EnableAzureRbac":     ubx.FieldSpec{WireName: "enable_azure_rbac"},
+	"TenantId":            ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_AgentErrorsFields = ubx.FieldMap{
-		"Component": ubx.FieldSpec{WireName: "component"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Severity": ubx.FieldSpec{WireName: "severity"},
-		"Time": ubx.FieldSpec{WireName: "time"},
-	}
+	"Component": ubx.FieldSpec{WireName: "component"},
+	"Message":   ubx.FieldSpec{WireName: "message"},
+	"Severity":  ubx.FieldSpec{WireName: "severity"},
+	"Time":      ubx.FieldSpec{WireName: "time"},
+}
 
 var ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_SystemComponentsFields = ubx.FieldMap{
-		"CurrentVersion": ubx.FieldSpec{WireName: "current_version"},
-		"MajorVersion": ubx.FieldSpec{WireName: "major_version"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserSpecifiedVersion": ubx.FieldSpec{WireName: "user_specified_version"},
-	}
+	"CurrentVersion":       ubx.FieldSpec{WireName: "current_version"},
+	"MajorVersion":         ubx.FieldSpec{WireName: "major_version"},
+	"Type":                 ubx.FieldSpec{WireName: "type"},
+	"UserSpecifiedVersion": ubx.FieldSpec{WireName: "user_specified_version"},
+}
 
 var ConnectedclustersConnectedCluster_Properties_ArcAgentProfileFields = ubx.FieldMap{
-		"AgentAutoUpgrade": ubx.FieldSpec{WireName: "agent_auto_upgrade"},
-		"AgentErrors": ubx.FieldSpec{
-			WireName: "agent_errors",
-			Kind: "list",
-			Fields: ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_AgentErrorsFields,
-		},
-		"AgentState": ubx.FieldSpec{WireName: "agent_state"},
-		"DesiredAgentVersion": ubx.FieldSpec{WireName: "desired_agent_version"},
-		"SystemComponents": ubx.FieldSpec{
-			WireName: "system_components",
-			Kind: "list",
-			Fields: ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_SystemComponentsFields,
-		},
-	}
+	"AgentAutoUpgrade": ubx.FieldSpec{WireName: "agent_auto_upgrade"},
+	"AgentErrors": ubx.FieldSpec{
+		WireName: "agent_errors",
+		Kind:     "list",
+		Fields:   ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_AgentErrorsFields,
+	},
+	"AgentState":          ubx.FieldSpec{WireName: "agent_state"},
+	"DesiredAgentVersion": ubx.FieldSpec{WireName: "desired_agent_version"},
+	"SystemComponents": ubx.FieldSpec{
+		WireName: "system_components",
+		Kind:     "list",
+		Fields:   ConnectedclustersConnectedCluster_Properties_ArcAgentProfile_SystemComponentsFields,
+	},
+}
 
 var ConnectedclustersConnectedCluster_Properties_ArcAgentryConfigurationsFields = ubx.FieldMap{
-		"Feature": ubx.FieldSpec{WireName: "feature"},
-		"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
-		"Settings": ubx.FieldSpec{WireName: "settings"},
-	}
+	"Feature":           ubx.FieldSpec{WireName: "feature"},
+	"ProtectedSettings": ubx.FieldSpec{WireName: "protected_settings"},
+	"Settings":          ubx.FieldSpec{WireName: "settings"},
+}
 
 var ConnectedclustersConnectedCluster_Properties_GatewayFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var ConnectedclustersConnectedCluster_Properties_OidcIssuerProfileFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"IssuerUrl": ubx.FieldSpec{WireName: "issuer_url"},
-		"SelfHostedIssuerUrl": ubx.FieldSpec{WireName: "self_hosted_issuer_url"},
-	}
+	"Enabled":             ubx.FieldSpec{WireName: "enabled"},
+	"IssuerUrl":           ubx.FieldSpec{WireName: "issuer_url"},
+	"SelfHostedIssuerUrl": ubx.FieldSpec{WireName: "self_hosted_issuer_url"},
+}
 
 var ConnectedclustersConnectedCluster_Properties_SecurityProfileFields = ubx.FieldMap{
-		"WorkloadIdentity": ubx.FieldSpec{
-			WireName: "workload_identity",
-			Kind: "object",
-			Fields: ConnectedclustersConnectedCluster_Properties_GatewayFields,
-		},
-	}
+	"WorkloadIdentity": ubx.FieldSpec{
+		WireName: "workload_identity",
+		Kind:     "object",
+		Fields:   ConnectedclustersConnectedCluster_Properties_GatewayFields,
+	},
+}
 
 var ConnectedclustersConnectedCluster_PropertiesFields = ubx.FieldMap{
-		"AadProfile": ubx.FieldSpec{
-			WireName: "aad_profile",
-			Kind: "object",
-			Fields: ConnectedclustersConnectedCluster_Properties_AadProfileFields,
-		},
-		"AgentPublicKeyCertificate": ubx.FieldSpec{WireName: "agent_public_key_certificate"},
-		"AgentVersion": ubx.FieldSpec{WireName: "agent_version"},
-		"ArcAgentProfile": ubx.FieldSpec{
-			WireName: "arc_agent_profile",
-			Kind: "object",
-			Fields: ConnectedclustersConnectedCluster_Properties_ArcAgentProfileFields,
-		},
-		"ArcAgentryConfigurations": ubx.FieldSpec{
-			WireName: "arc_agentry_configurations",
-			Kind: "list",
-			Fields: ConnectedclustersConnectedCluster_Properties_ArcAgentryConfigurationsFields,
-		},
-		"AzureHybridBenefit": ubx.FieldSpec{WireName: "azure_hybrid_benefit"},
-		"ConnectivityStatus": ubx.FieldSpec{WireName: "connectivity_status"},
-		"Distribution": ubx.FieldSpec{WireName: "distribution"},
-		"DistributionVersion": ubx.FieldSpec{WireName: "distribution_version"},
-		"Gateway": ubx.FieldSpec{
-			WireName: "gateway",
-			Kind: "object",
-			Fields: ConnectedclustersConnectedCluster_Properties_GatewayFields,
-		},
-		"Infrastructure": ubx.FieldSpec{WireName: "infrastructure"},
-		"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
-		"LastConnectivityTime": ubx.FieldSpec{WireName: "last_connectivity_time"},
-		"ManagedIdentityCertificateExpirationTime": ubx.FieldSpec{WireName: "managed_identity_certificate_expiration_time"},
-		"MiscellaneousProperties": ubx.FieldSpec{WireName: "miscellaneous_properties"},
-		"Offering": ubx.FieldSpec{WireName: "offering"},
-		"OidcIssuerProfile": ubx.FieldSpec{
-			WireName: "oidc_issuer_profile",
-			Kind: "object",
-			Fields: ConnectedclustersConnectedCluster_Properties_OidcIssuerProfileFields,
-		},
-		"PrivateLinkScopeResourceId": ubx.FieldSpec{WireName: "private_link_scope_resource_id"},
-		"PrivateLinkState": ubx.FieldSpec{WireName: "private_link_state"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SecurityProfile": ubx.FieldSpec{
-			WireName: "security_profile",
-			Kind: "object",
-			Fields: ConnectedclustersConnectedCluster_Properties_SecurityProfileFields,
-		},
-		"TotalCoreCount": ubx.FieldSpec{WireName: "total_core_count"},
-		"TotalNodeCount": ubx.FieldSpec{WireName: "total_node_count"},
-	}
+	"AadProfile": ubx.FieldSpec{
+		WireName: "aad_profile",
+		Kind:     "object",
+		Fields:   ConnectedclustersConnectedCluster_Properties_AadProfileFields,
+	},
+	"AgentPublicKeyCertificate": ubx.FieldSpec{WireName: "agent_public_key_certificate"},
+	"AgentVersion":              ubx.FieldSpec{WireName: "agent_version"},
+	"ArcAgentProfile": ubx.FieldSpec{
+		WireName: "arc_agent_profile",
+		Kind:     "object",
+		Fields:   ConnectedclustersConnectedCluster_Properties_ArcAgentProfileFields,
+	},
+	"ArcAgentryConfigurations": ubx.FieldSpec{
+		WireName: "arc_agentry_configurations",
+		Kind:     "list",
+		Fields:   ConnectedclustersConnectedCluster_Properties_ArcAgentryConfigurationsFields,
+	},
+	"AzureHybridBenefit":  ubx.FieldSpec{WireName: "azure_hybrid_benefit"},
+	"ConnectivityStatus":  ubx.FieldSpec{WireName: "connectivity_status"},
+	"Distribution":        ubx.FieldSpec{WireName: "distribution"},
+	"DistributionVersion": ubx.FieldSpec{WireName: "distribution_version"},
+	"Gateway": ubx.FieldSpec{
+		WireName: "gateway",
+		Kind:     "object",
+		Fields:   ConnectedclustersConnectedCluster_Properties_GatewayFields,
+	},
+	"Infrastructure":                           ubx.FieldSpec{WireName: "infrastructure"},
+	"KubernetesVersion":                        ubx.FieldSpec{WireName: "kubernetes_version"},
+	"LastConnectivityTime":                     ubx.FieldSpec{WireName: "last_connectivity_time"},
+	"ManagedIdentityCertificateExpirationTime": ubx.FieldSpec{WireName: "managed_identity_certificate_expiration_time"},
+	"MiscellaneousProperties":                  ubx.FieldSpec{WireName: "miscellaneous_properties"},
+	"Offering":                                 ubx.FieldSpec{WireName: "offering"},
+	"OidcIssuerProfile": ubx.FieldSpec{
+		WireName: "oidc_issuer_profile",
+		Kind:     "object",
+		Fields:   ConnectedclustersConnectedCluster_Properties_OidcIssuerProfileFields,
+	},
+	"PrivateLinkScopeResourceId": ubx.FieldSpec{WireName: "private_link_scope_resource_id"},
+	"PrivateLinkState":           ubx.FieldSpec{WireName: "private_link_state"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"SecurityProfile": ubx.FieldSpec{
+		WireName: "security_profile",
+		Kind:     "object",
+		Fields:   ConnectedclustersConnectedCluster_Properties_SecurityProfileFields,
+	},
+	"TotalCoreCount": ubx.FieldSpec{WireName: "total_core_count"},
+	"TotalNodeCount": ubx.FieldSpec{WireName: "total_node_count"},
+}
 
 type ConnectedclustersConnectedClusterConfig struct {
 	// Identity for the connected cluster.
@@ -280,15 +280,15 @@ var ConnectedclustersConnectedCluster = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ConnectedclustersConnectedCluster_IdentityFields,
+			Kind:     "object",
+			Fields:   ConnectedclustersConnectedCluster_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ConnectedclustersConnectedCluster_PropertiesFields,
+			Kind:     "object",
+			Fields:   ConnectedclustersConnectedCluster_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

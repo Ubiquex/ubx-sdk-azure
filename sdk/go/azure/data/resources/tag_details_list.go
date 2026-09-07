@@ -4,21 +4,21 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TagDetailsList_Value_Count struct {
-	Type any
+	Type  any
 	Value any
 }
 
 type TagDetailsList_Value_Values struct {
-	Count any
-	Id any
+	Count    any
+	Id       any
 	TagValue any
 }
 
 type TagDetailsList_Value struct {
-	Count any
-	Id any
+	Count   any
+	Id      any
 	TagName any
-	Values any
+	Values  any
 }
 
 type TagDetailsListConfig struct {
@@ -33,6 +33,5 @@ type TagDetailsListAttrs struct {
 
 var TagDetailsList = ubx.DataSourceBinding{
 	WireType: "azure_resources_tag_details_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

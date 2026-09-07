@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiChangeDataCaptureStatusResponseConfig struct {
 	ChangeDataCaptureName any
-	FactoryName any
+	FactoryName           any
 }
 
 type OpenapiChangeDataCaptureStatusResponseAttrs struct {
 	ChangeDataCaptureName any
-	FactoryName any
+	FactoryName           any
 }
 
 var OpenapiChangeDataCaptureStatusResponse = ubx.DataSourceBinding{
 	WireType: "azure_datafactory_openapi_change_data_capture_status_response",
 	Fields: ubx.FieldMap{
 		"ChangeDataCaptureName": ubx.FieldSpec{WireName: "change_data_capture_name"},
-		"FactoryName": ubx.FieldSpec{WireName: "factory_name"},
+		"FactoryName":           ubx.FieldSpec{WireName: "factory_name"},
 	},
 }

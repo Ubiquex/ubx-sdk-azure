@@ -5,19 +5,19 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResourceList_Value_Properties_ShareablePrivateLinkResourceTypes_Properties struct {
 	Description any
-	GroupId any
-	Type any
+	GroupId     any
+	Type        any
 }
 
 type PrivateLinkResourceList_Value_Properties_ShareablePrivateLinkResourceTypes struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type PrivateLinkResourceList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
-	RequiredZoneNames any
+	GroupId                           any
+	RequiredMembers                   any
+	RequiredZoneNames                 any
 	ShareablePrivateLinkResourceTypes any
 }
 
@@ -31,7 +31,7 @@ type PrivateLinkResourceListConfig struct {
 
 type PrivateLinkResourceListAttrs struct {
 	// The URL the client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// List of PrivateLinkResource
 	Value any

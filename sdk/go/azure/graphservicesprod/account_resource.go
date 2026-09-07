@@ -24,10 +24,10 @@ type AccountResource_SystemData struct {
 }
 
 var AccountResource_PropertiesFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"BillingPlanId": ubx.FieldSpec{WireName: "billing_plan_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AppId":             ubx.FieldSpec{WireName: "app_id"},
+	"BillingPlanId":     ubx.FieldSpec{WireName: "billing_plan_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type AccountResourceConfig struct {
 	// Location of the resource.
@@ -61,8 +61,8 @@ var AccountResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AccountResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   AccountResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

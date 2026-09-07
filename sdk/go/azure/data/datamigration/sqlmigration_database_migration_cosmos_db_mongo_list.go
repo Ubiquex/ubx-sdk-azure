@@ -4,32 +4,32 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoList_Value_Properties_CollectionList_MigrationProgressDetails struct {
-	DurationInSeconds any
-	MigrationError any
-	MigrationStatus any
+	DurationInSeconds      any
+	MigrationError         any
+	MigrationStatus        any
 	ProcessedDocumentCount any
-	SourceDocumentCount any
+	SourceDocumentCount    any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoList_Value_Properties_CollectionList struct {
 	MigrationProgressDetails any
-	SourceCollection any
-	SourceDatabase any
-	TargetCollection any
-	TargetDatabase any
+	SourceCollection         any
+	SourceDatabase           any
+	TargetCollection         any
+	TargetDatabase           any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoList_Value_Properties_SourceMongoConnection struct {
 	ConnectionString any
-	Host any
-	Password any
-	Port any
-	UseSsl any
-	UserName any
+	Host             any
+	Password         any
+	Port             any
+	UseSsl           any
+	UserName         any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoList_Value_Properties struct {
-	CollectionList any
+	CollectionList        any
 	SourceMongoConnection any
 	TargetMongoConnection any
 }
@@ -39,27 +39,27 @@ type SqlmigrationDatabaseMigrationCosmosDbMongoList_Value struct {
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoListConfig struct {
-	ApiVersion any
-	ResourceGroupName any
-	SubscriptionId any
+	ApiVersion         any
+	ResourceGroupName  any
+	SubscriptionId     any
 	TargetResourceName any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoListAttrs struct {
-	ApiVersion any
-	NextLink any
-	ResourceGroupName any
-	SubscriptionId any
+	ApiVersion         any
+	NextLink           any
+	ResourceGroupName  any
+	SubscriptionId     any
 	TargetResourceName any
-	Value any
+	Value              any
 }
 
 var SqlmigrationDatabaseMigrationCosmosDbMongoList = ubx.DataSourceBinding{
 	WireType: "azure_datamigration_sqlmigration_database_migration_cosmos_db_mongo_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ApiVersion":         ubx.FieldSpec{WireName: "api_version"},
+		"ResourceGroupName":  ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":     ubx.FieldSpec{WireName: "subscription_id"},
 		"TargetResourceName": ubx.FieldSpec{WireName: "target_resource_name"},
 	},
 }

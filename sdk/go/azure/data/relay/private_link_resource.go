@@ -13,12 +13,12 @@ type PrivateLinkResource_Properties struct {
 }
 
 type PrivateLinkResourceConfig struct {
-	NamespaceName any
+	NamespaceName           any
 	PrivateLinkResourceName any
 }
 
 type PrivateLinkResourceAttrs struct {
-	NamespaceName any
+	NamespaceName           any
 	PrivateLinkResourceName any
 	// Properties of PrivateLinkResource
 	Properties any
@@ -27,7 +27,7 @@ type PrivateLinkResourceAttrs struct {
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_relay_private_link_resource",
 	Fields: ubx.FieldMap{
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"NamespaceName":           ubx.FieldSpec{WireName: "namespace_name"},
 		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
 	},
 }

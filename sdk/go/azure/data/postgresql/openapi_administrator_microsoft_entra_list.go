@@ -4,10 +4,10 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAdministratorMicrosoftEntraList_Value_Properties struct {
-	ObjectId any
+	ObjectId      any
 	PrincipalName any
 	PrincipalType any
-	TenantId any
+	TenantId      any
 }
 
 type OpenapiAdministratorMicrosoftEntraList_Value struct {
@@ -20,7 +20,7 @@ type OpenapiAdministratorMicrosoftEntraListConfig struct {
 
 type OpenapiAdministratorMicrosoftEntraListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The AdministratorMicrosoftEntra items on this page
 	Value any

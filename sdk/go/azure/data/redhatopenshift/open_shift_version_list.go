@@ -23,6 +23,5 @@ type OpenShiftVersionListAttrs struct {
 
 var OpenShiftVersionList = ubx.DataSourceBinding{
 	WireType: "azure_redhatopenshift_open_shift_version_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

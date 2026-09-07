@@ -21,14 +21,14 @@ type CertificateDescription_Properties struct {
 }
 
 var CertificateDescription_PropertiesFields = ubx.FieldMap{
-		"Certificate": ubx.FieldSpec{WireName: "certificate"},
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"Expiry": ubx.FieldSpec{WireName: "expiry"},
-		"IsVerified": ubx.FieldSpec{WireName: "is_verified"},
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-	}
+	"Certificate": ubx.FieldSpec{WireName: "certificate"},
+	"Created":     ubx.FieldSpec{WireName: "created"},
+	"Expiry":      ubx.FieldSpec{WireName: "expiry"},
+	"IsVerified":  ubx.FieldSpec{WireName: "is_verified"},
+	"Subject":     ubx.FieldSpec{WireName: "subject"},
+	"Thumbprint":  ubx.FieldSpec{WireName: "thumbprint"},
+	"Updated":     ubx.FieldSpec{WireName: "updated"},
+}
 
 type CertificateDescriptionConfig struct {
 	// The description of an X509 CA Certificate.
@@ -53,8 +53,8 @@ var CertificateDescription = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CertificateDescription_PropertiesFields,
+			Kind:     "object",
+			Fields:   CertificateDescription_PropertiesFields,
 		},
 	},
 }

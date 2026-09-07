@@ -31,27 +31,27 @@ type MonitoringSettingResource_Properties struct {
 }
 
 type MonitoringSettingResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type MonitoringSettingResourceAttrs struct {
 	ApiVersion any
 	// Monitoring Setting properties payload
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 var MonitoringSettingResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_monitoring_setting_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

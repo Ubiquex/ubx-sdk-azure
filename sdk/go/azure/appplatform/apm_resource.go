@@ -15,11 +15,11 @@ type ApmResource_Properties struct {
 }
 
 var ApmResource_PropertiesFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Secrets": ubx.FieldSpec{WireName: "secrets"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Properties":        ubx.FieldSpec{WireName: "properties"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Secrets":           ubx.FieldSpec{WireName: "secrets"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 type ApmResourceConfig struct {
 	// Properties of an APM
@@ -36,8 +36,8 @@ var ApmResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApmResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApmResource_PropertiesFields,
 		},
 	},
 }

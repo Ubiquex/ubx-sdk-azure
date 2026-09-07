@@ -25,7 +25,7 @@ type MachineImage_Properties_Disallowed struct {
 }
 
 type MachineImage_Properties_Features struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -68,7 +68,7 @@ type MachineImage_Properties struct {
 	DataDiskImages any
 	// Specifies the disallowed configuration for a virtual machine image.
 	Disallowed any
-	Features any
+	Features   any
 	// Specifies the HyperVGeneration Type
 	HyperVgeneration any
 	// Describes image deprecation status properties on the image.
@@ -80,11 +80,11 @@ type MachineImage_Properties struct {
 }
 
 type MachineImageConfig struct {
-	EdgeZone any
-	Offer any
+	EdgeZone      any
+	Offer         any
 	PublisherName any
-	Skus any
-	Version any
+	Skus          any
+	Version       any
 }
 
 type MachineImageAttrs struct {
@@ -94,24 +94,24 @@ type MachineImageAttrs struct {
 	// The supported Azure location of the resource.
 	Location any
 	// The name of the resource.
-	Name any
+	Name  any
 	Offer any
 	// Describes the properties of a Virtual Machine Image.
-	Properties any
+	Properties    any
 	PublisherName any
-	Skus any
+	Skus          any
 	// Specifies the tags that are assigned to the virtual machine. For more information about using tags, see [Using tags to organize your Azure resources](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-using-tags.md).
-	Tags any
+	Tags    any
 	Version any
 }
 
 var MachineImage = ubx.DataSourceBinding{
 	WireType: "azure_virtual_machine_image",
 	Fields: ubx.FieldMap{
-		"EdgeZone": ubx.FieldSpec{WireName: "edge_zone"},
-		"Offer": ubx.FieldSpec{WireName: "offer"},
+		"EdgeZone":      ubx.FieldSpec{WireName: "edge_zone"},
+		"Offer":         ubx.FieldSpec{WireName: "offer"},
 		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
-		"Skus": ubx.FieldSpec{WireName: "skus"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"Skus":          ubx.FieldSpec{WireName: "skus"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
 	},
 }

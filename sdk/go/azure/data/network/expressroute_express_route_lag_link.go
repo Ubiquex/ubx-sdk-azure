@@ -15,21 +15,21 @@ type ExpressrouteExpressRouteLagLink_Properties_MacSecConfig struct {
 }
 
 type ExpressrouteExpressRouteLagLink_Properties_Members_Properties struct {
-	AdminState any
-	ColoLocation any
-	ConnectorType any
-	InterfaceName any
-	PatchPanelId any
+	AdminState        any
+	ColoLocation      any
+	ConnectorType     any
+	InterfaceName     any
+	PatchPanelId      any
 	ProvisioningState any
-	RackId any
+	RackId            any
 }
 
 type ExpressrouteExpressRouteLagLink_Properties_Members struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ExpressrouteExpressRouteLagLink_Properties struct {
@@ -49,15 +49,15 @@ type ExpressrouteExpressRouteLagLink_Properties struct {
 
 type ExpressrouteExpressRouteLagLinkConfig struct {
 	ExpressRouteLagName any
-	LinkName any
+	LinkName            any
 }
 
 type ExpressrouteExpressRouteLagLinkAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
+	Etag                any
 	ExpressRouteLagName any
 	// The unique identifier of the resource.
-	Id any
+	Id       any
 	LinkName any
 	// Name of child link resource that is unique among child link resources of the parent.
 	Name any
@@ -71,6 +71,6 @@ var ExpressrouteExpressRouteLagLink = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_lag_link",
 	Fields: ubx.FieldMap{
 		"ExpressRouteLagName": ubx.FieldSpec{WireName: "express_route_lag_name"},
-		"LinkName": ubx.FieldSpec{WireName: "link_name"},
+		"LinkName":            ubx.FieldSpec{WireName: "link_name"},
 	},
 }

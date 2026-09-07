@@ -13,35 +13,35 @@ type FleetsFleetMemberList_Value_Properties_Status_LastOperationError_Details_De
 
 type FleetsFleetMemberList_Value_Properties_Status_LastOperationError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsFleetMemberList_Value_Properties_Status_LastOperationError struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsFleetMemberList_Value_Properties_Status struct {
 	LastOperationError any
-	LastOperationId any
+	LastOperationId    any
 }
 
 type FleetsFleetMemberList_Value_Properties struct {
 	ClusterResourceId any
-	Group any
-	Labels any
+	Group             any
+	Labels            any
 	ProvisioningState any
-	Status any
+	Status            any
 }
 
 type FleetsFleetMemberList_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 

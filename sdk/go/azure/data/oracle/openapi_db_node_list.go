@@ -4,29 +4,29 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDbNodeList_Value_Properties struct {
-	AdditionalDetails any
-	BackupIpId any
-	BackupVnic2Id any
-	BackupVnicId any
-	CpuCoreCount any
-	DbNodeStorageSizeInGbs any
-	DbServerId any
-	DbSystemId any
-	FaultDomain any
-	HostIpId any
-	Hostname any
-	LifecycleDetails any
-	LifecycleState any
-	MaintenanceType any
-	MemorySizeInGbs any
-	Ocid any
-	ProvisioningState any
-	SoftwareStorageSizeInGb any
-	TimeCreated any
-	TimeMaintenanceWindowEnd any
+	AdditionalDetails          any
+	BackupIpId                 any
+	BackupVnic2Id              any
+	BackupVnicId               any
+	CpuCoreCount               any
+	DbNodeStorageSizeInGbs     any
+	DbServerId                 any
+	DbSystemId                 any
+	FaultDomain                any
+	HostIpId                   any
+	Hostname                   any
+	LifecycleDetails           any
+	LifecycleState             any
+	MaintenanceType            any
+	MemorySizeInGbs            any
+	Ocid                       any
+	ProvisioningState          any
+	SoftwareStorageSizeInGb    any
+	TimeCreated                any
+	TimeMaintenanceWindowEnd   any
 	TimeMaintenanceWindowStart any
-	Vnic2Id any
-	VnicId any
+	Vnic2Id                    any
+	VnicId                     any
 }
 
 type OpenapiDbNodeList_Value struct {

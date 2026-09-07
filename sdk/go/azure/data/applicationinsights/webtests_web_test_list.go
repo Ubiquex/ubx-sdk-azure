@@ -12,21 +12,21 @@ type WebtestsWebTestList_Value_Properties_Locations struct {
 }
 
 type WebtestsWebTestList_Value_Properties struct {
-	Configuration any
-	Description any
-	Enabled any
-	Frequency any
-	Kind any
-	Locations any
-	Name any
-	ProvisioningState any
-	RetryEnabled any
+	Configuration      any
+	Description        any
+	Enabled            any
+	Frequency          any
+	Kind               any
+	Locations          any
+	Name               any
+	ProvisioningState  any
+	RetryEnabled       any
 	SyntheticMonitorId any
-	Timeout any
+	Timeout            any
 }
 
 type WebtestsWebTestList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -42,6 +42,5 @@ type WebtestsWebTestListAttrs struct {
 
 var WebtestsWebTestList = ubx.DataSourceBinding{
 	WireType: "azure_applicationinsights_webtests_web_test_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

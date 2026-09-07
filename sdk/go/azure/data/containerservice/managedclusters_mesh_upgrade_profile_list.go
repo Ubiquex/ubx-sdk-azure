@@ -4,14 +4,14 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersMeshUpgradeProfileList_Value_Properties_CompatibleWith struct {
-	Name any
+	Name     any
 	Versions any
 }
 
 type ManagedclustersMeshUpgradeProfileList_Value_Properties struct {
 	CompatibleWith any
-	Revision any
-	Upgrades any
+	Revision       any
+	Upgrades       any
 }
 
 type ManagedclustersMeshUpgradeProfileList_Value struct {
@@ -24,7 +24,7 @@ type ManagedclustersMeshUpgradeProfileListConfig struct {
 
 type ManagedclustersMeshUpgradeProfileListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The MeshUpgradeProfile items on this page
 	Value any

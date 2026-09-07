@@ -4,10 +4,10 @@ package webpubsub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CustomCertificateList_Value_Properties struct {
-	KeyVaultBaseUri any
-	KeyVaultSecretName any
+	KeyVaultBaseUri       any
+	KeyVaultSecretName    any
 	KeyVaultSecretVersion any
-	ProvisioningState any
+	ProvisioningState     any
 }
 
 type CustomCertificateList_Value struct {
@@ -20,7 +20,7 @@ type CustomCertificateListConfig struct {
 
 type CustomCertificateListAttrs struct {
 	// The URL the client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// List of custom certificates of this resource.
 	Value any

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTrackedResourceList_Value struct {
 	Location any
-	Tags any
+	Tags     any
 }
 
 type OpenapiTrackedResourceListConfig struct {

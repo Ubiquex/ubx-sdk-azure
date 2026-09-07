@@ -4,39 +4,39 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsProtectedItemResourceList_Value_Properties_SourceSideScanInfo struct {
-	SourceSideScanStatus any
+	SourceSideScanStatus  any
 	SourceSideScanSummary any
 }
 
 type BmsProtectedItemResourceList_Value_Properties struct {
-	BackupManagementType any
-	BackupSetName any
-	ContainerName any
-	CreateMode any
-	DeferredDeleteTimeInUtc any
-	DeferredDeleteTimeRemaining any
-	IsArchiveEnabled any
+	BackupManagementType             any
+	BackupSetName                    any
+	ContainerName                    any
+	CreateMode                       any
+	DeferredDeleteTimeInUtc          any
+	DeferredDeleteTimeRemaining      any
+	IsArchiveEnabled                 any
 	IsDeferredDeleteScheduleUpcoming any
-	IsRehydrate any
-	IsScheduledForDeferredDelete any
-	LastRecoveryPoint any
-	PolicyId any
-	PolicyName any
-	ProtectedItemType any
-	ResourceGuardOperationRequests any
-	SoftDeleteRetentionPeriodInDays any
-	SourceLocation any
-	SourceResourceId any
-	SourceSideScanInfo any
-	VaultId any
-	WorkloadType any
+	IsRehydrate                      any
+	IsScheduledForDeferredDelete     any
+	LastRecoveryPoint                any
+	PolicyId                         any
+	PolicyName                       any
+	ProtectedItemType                any
+	ResourceGuardOperationRequests   any
+	SoftDeleteRetentionPeriodInDays  any
+	SourceLocation                   any
+	SourceResourceId                 any
+	SourceSideScanInfo               any
+	VaultId                          any
+	WorkloadType                     any
 }
 
 type BmsProtectedItemResourceList_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsProtectedItemResourceListConfig struct {
@@ -47,7 +47,7 @@ type BmsProtectedItemResourceListAttrs struct {
 	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

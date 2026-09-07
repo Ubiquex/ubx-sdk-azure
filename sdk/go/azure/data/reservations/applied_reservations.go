@@ -31,6 +31,5 @@ type AppliedReservationsAttrs struct {
 
 var AppliedReservations = ubx.DataSourceBinding{
 	WireType: "azure_reservations_applied_reservations",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

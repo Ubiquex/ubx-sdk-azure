@@ -4,25 +4,25 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_AdditionalNics struct {
 	HasPublicIp any
-	Name any
+	Name        any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_Delegation struct {
 	ProvisioningState any
-	ServiceName any
+	ServiceName       any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_InboundSecurityRules struct {
@@ -30,9 +30,9 @@ type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_InboundSecurityR
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_MigrationStatus struct {
-	MigrationPhase any
+	MigrationPhase       any
 	MigrationPhaseStatus any
-	MigrationType any
+	MigrationType        any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_Properties struct {
@@ -40,7 +40,7 @@ type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NetworkProfile_N
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -50,7 +50,7 @@ type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NetworkProfile_N
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NetworkProfile_NetworkInterfaceConfigurations struct {
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NetworkProfile struct {
@@ -58,64 +58,64 @@ type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NetworkProfile s
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NvaInterfaceConfigurations struct {
-	Name any
+	Name   any
 	Subnet any
-	Type any
+	Type   any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_NvaSku struct {
-	BundledScaleUnit any
+	BundledScaleUnit   any
 	MarketPlaceVersion any
-	Vendor any
+	Vendor             any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_PartnerManagedResource struct {
-	Id any
+	Id                     any
 	InternalLoadBalancerId any
 	StandardLoadBalancerId any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties_VirtualApplianceNics struct {
-	InstanceName any
-	Name any
-	NicType any
-	PrivateIpAddress any
+	InstanceName       any
+	Name               any
+	NicType            any
+	PrivateIpAddress   any
 	PrivateIpAddressV6 any
-	PublicIpAddress any
-	PublicIpAddressV6 any
+	PublicIpAddress    any
+	PublicIpAddressV6  any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value_Properties struct {
-	AdditionalNics any
-	AddressFamily any
-	AddressPrefix any
-	AddressPrefixV6 any
+	AdditionalNics              any
+	AddressFamily               any
+	AddressPrefix               any
+	AddressPrefixV6             any
 	BootStrapConfigurationBlobs any
-	CloudInitConfiguration any
+	CloudInitConfiguration      any
 	CloudInitConfigurationBlobs any
-	Delegation any
-	DeploymentType any
-	InboundSecurityRules any
-	InternetIngressPublicIps any
-	MigrationStatus any
-	NetworkProfile any
-	NvaInterfaceConfigurations any
-	NvaSku any
-	PartnerManagedResource any
-	PrivateIpAddress any
-	PrivateIpAddressV6 any
-	ProvisioningState any
-	SshPublicKey any
-	VirtualApplianceAsn any
+	Delegation                  any
+	DeploymentType              any
+	InboundSecurityRules        any
+	InternetIngressPublicIps    any
+	MigrationStatus             any
+	NetworkProfile              any
+	NvaInterfaceConfigurations  any
+	NvaSku                      any
+	PartnerManagedResource      any
+	PrivateIpAddress            any
+	PrivateIpAddressV6          any
+	ProvisioningState           any
+	SshPublicKey                any
+	VirtualApplianceAsn         any
 	VirtualApplianceConnections any
-	VirtualApplianceNics any
-	VirtualApplianceSites any
-	VirtualHub any
+	VirtualApplianceNics        any
+	VirtualApplianceSites       any
+	VirtualHub                  any
 }
 
 type VirtualnetworkNetworkVirtualApplianceList_Value struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
@@ -131,6 +131,5 @@ type VirtualnetworkNetworkVirtualApplianceListAttrs struct {
 
 var VirtualnetworkNetworkVirtualApplianceList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_network_virtual_appliance_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

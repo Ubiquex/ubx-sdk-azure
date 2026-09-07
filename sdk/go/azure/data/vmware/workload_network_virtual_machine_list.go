@@ -4,9 +4,9 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadNetworkVirtualMachineList_Value_Properties struct {
-	DisplayName any
+	DisplayName       any
 	ProvisioningState any
-	VmType any
+	VmType            any
 }
 
 type WorkloadNetworkVirtualMachineList_Value struct {
@@ -19,7 +19,7 @@ type WorkloadNetworkVirtualMachineListConfig struct {
 
 type WorkloadNetworkVirtualMachineListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetworkVirtualMachine items on this page
 	Value any

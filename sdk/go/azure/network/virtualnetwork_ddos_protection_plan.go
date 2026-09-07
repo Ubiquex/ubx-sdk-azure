@@ -20,23 +20,23 @@ type VirtualnetworkDdosProtectionPlan_Properties struct {
 }
 
 var VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkDdosProtectionPlan_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddresses": ubx.FieldSpec{
-			WireName: "public_ipaddresses",
-			Kind: "list",
-			Fields: VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"VirtualNetworks": ubx.FieldSpec{
-			WireName: "virtual_networks",
-			Kind: "list",
-			Fields: VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddresses": ubx.FieldSpec{
+		WireName: "public_ipaddresses",
+		Kind:     "list",
+		Fields:   VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"VirtualNetworks": ubx.FieldSpec{
+		WireName: "virtual_networks",
+		Kind:     "list",
+		Fields:   VirtualnetworkDdosProtectionPlan_Properties_PublicIpaddressesFields,
+	},
+}
 
 type VirtualnetworkDdosProtectionPlanConfig struct {
 	// Resource location.
@@ -70,8 +70,8 @@ var VirtualnetworkDdosProtectionPlan = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkDdosProtectionPlan_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkDdosProtectionPlan_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

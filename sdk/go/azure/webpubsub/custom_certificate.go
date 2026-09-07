@@ -15,11 +15,11 @@ type CustomCertificate_Properties struct {
 }
 
 var CustomCertificate_PropertiesFields = ubx.FieldMap{
-		"KeyVaultBaseUri": ubx.FieldSpec{WireName: "key_vault_base_uri"},
-		"KeyVaultSecretName": ubx.FieldSpec{WireName: "key_vault_secret_name"},
-		"KeyVaultSecretVersion": ubx.FieldSpec{WireName: "key_vault_secret_version"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"KeyVaultBaseUri":       ubx.FieldSpec{WireName: "key_vault_base_uri"},
+	"KeyVaultSecretName":    ubx.FieldSpec{WireName: "key_vault_secret_name"},
+	"KeyVaultSecretVersion": ubx.FieldSpec{WireName: "key_vault_secret_version"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type CustomCertificateConfig struct {
 	// Custom certificate properties.
@@ -36,8 +36,8 @@ var CustomCertificate = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CustomCertificate_PropertiesFields,
+			Kind:     "object",
+			Fields:   CustomCertificate_PropertiesFields,
 		},
 	},
 }

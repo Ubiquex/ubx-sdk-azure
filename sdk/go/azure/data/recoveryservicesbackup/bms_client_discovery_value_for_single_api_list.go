@@ -5,15 +5,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsClientDiscoveryValueForSingleApiList_Value_Display struct {
 	Description any
-	Operation any
-	Provider any
-	Resource any
+	Operation   any
+	Provider    any
+	Resource    any
 }
 
 type BmsClientDiscoveryValueForSingleApiList_Value_Properties_ServiceSpecification_LogSpecifications struct {
 	BlobDuration any
-	DisplayName any
-	Name any
+	DisplayName  any
+	Name         any
 }
 
 type BmsClientDiscoveryValueForSingleApiList_Value_Properties_ServiceSpecification struct {
@@ -25,9 +25,9 @@ type BmsClientDiscoveryValueForSingleApiList_Value_Properties struct {
 }
 
 type BmsClientDiscoveryValueForSingleApiList_Value struct {
-	Display any
-	Name any
-	Origin any
+	Display    any
+	Name       any
+	Origin     any
 	Properties any
 }
 
@@ -43,6 +43,5 @@ type BmsClientDiscoveryValueForSingleApiListAttrs struct {
 
 var BmsClientDiscoveryValueForSingleApiList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_client_discovery_value_for_single_api_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

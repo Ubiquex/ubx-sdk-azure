@@ -4,22 +4,22 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FollowerDatabaseDefinitionGetList_Value_Properties_TableLevelSharingProperties struct {
-	ExternalTablesToExclude any
-	ExternalTablesToInclude any
-	FunctionsToExclude any
-	FunctionsToInclude any
+	ExternalTablesToExclude    any
+	ExternalTablesToInclude    any
+	FunctionsToExclude         any
+	FunctionsToInclude         any
 	MaterializedViewsToExclude any
 	MaterializedViewsToInclude any
-	TablesToExclude any
-	TablesToInclude any
+	TablesToExclude            any
+	TablesToInclude            any
 }
 
 type FollowerDatabaseDefinitionGetList_Value_Properties struct {
 	AttachedDatabaseConfigurationName any
-	ClusterResourceId any
-	DatabaseName any
-	DatabaseShareOrigin any
-	TableLevelSharingProperties any
+	ClusterResourceId                 any
+	DatabaseName                      any
+	DatabaseShareOrigin               any
+	TableLevelSharingProperties       any
 }
 
 type FollowerDatabaseDefinitionGetList_Value struct {

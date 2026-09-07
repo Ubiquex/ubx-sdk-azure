@@ -29,25 +29,25 @@ type OpenapiAccessConnector_Properties struct {
 }
 
 var OpenapiAccessConnector_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiAccessConnector_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiAccessConnector_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiAccessConnector_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiAccessConnector_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ReferedBy": ubx.FieldSpec{WireName: "refered_by"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ReferedBy":         ubx.FieldSpec{WireName: "refered_by"},
+}
 
 type OpenapiAccessConnectorConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -76,14 +76,14 @@ var OpenapiAccessConnector = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiAccessConnector_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiAccessConnector_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAccessConnector_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAccessConnector_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

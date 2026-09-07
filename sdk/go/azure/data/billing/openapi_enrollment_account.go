@@ -27,14 +27,14 @@ type OpenapiEnrollmentAccount_Properties struct {
 }
 
 type OpenapiEnrollmentAccountConfig struct {
-	BillingAccountName any
-	DepartmentName any
+	BillingAccountName    any
+	DepartmentName        any
 	EnrollmentAccountName any
 }
 
 type OpenapiEnrollmentAccountAttrs struct {
-	BillingAccountName any
-	DepartmentName any
+	BillingAccountName    any
+	DepartmentName        any
 	EnrollmentAccountName any
 	// It is an organizational hierarchy within a billing account to administer and manage azure costs.
 	Properties any
@@ -45,8 +45,8 @@ type OpenapiEnrollmentAccountAttrs struct {
 var OpenapiEnrollmentAccount = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_enrollment_account",
 	Fields: ubx.FieldMap{
-		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"DepartmentName": ubx.FieldSpec{WireName: "department_name"},
+		"BillingAccountName":    ubx.FieldSpec{WireName: "billing_account_name"},
+		"DepartmentName":        ubx.FieldSpec{WireName: "department_name"},
 		"EnrollmentAccountName": ubx.FieldSpec{WireName: "enrollment_account_name"},
 	},
 }

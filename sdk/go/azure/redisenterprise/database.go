@@ -9,8 +9,8 @@ type Database_Properties struct {
 }
 
 var Database_PropertiesFields = ubx.FieldMap{
-		"AccessKeysAuthentication": ubx.FieldSpec{WireName: "access_keys_authentication"},
-	}
+	"AccessKeysAuthentication": ubx.FieldSpec{WireName: "access_keys_authentication"},
+}
 
 type DatabaseConfig struct {
 	// Properties for creating Redis Enterprise databases
@@ -27,8 +27,8 @@ var Database = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Database_PropertiesFields,
+			Kind:     "object",
+			Fields:   Database_PropertiesFields,
 		},
 	},
 }

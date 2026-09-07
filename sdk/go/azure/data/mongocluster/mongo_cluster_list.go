@@ -4,14 +4,14 @@ package mongocluster
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MongoClusterList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type MongoClusterList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -37,13 +37,13 @@ type MongoClusterList_Value_Properties_DataApi struct {
 }
 
 type MongoClusterList_Value_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentity struct {
-	IdentityType any
+	IdentityType                   any
 	UserAssignedIdentityResourceId any
 }
 
 type MongoClusterList_Value_Properties_Encryption_CustomerManagedKeyEncryption struct {
 	KeyEncryptionKeyIdentity any
-	KeyEncryptionKeyUrl any
+	KeyEncryptionKeyUrl      any
 }
 
 type MongoClusterList_Value_Properties_Encryption struct {
@@ -60,15 +60,15 @@ type MongoClusterList_Value_Properties_PrivateEndpointConnections_Properties_Pri
 
 type MongoClusterList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type MongoClusterList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type MongoClusterList_Value_Properties_PrivateEndpointConnections struct {
@@ -77,17 +77,17 @@ type MongoClusterList_Value_Properties_PrivateEndpointConnections struct {
 
 type MongoClusterList_Value_Properties_Replica struct {
 	ReplicationState any
-	Role any
+	Role             any
 	SourceResourceId any
 }
 
 type MongoClusterList_Value_Properties_ReplicaParameters struct {
-	SourceLocation any
+	SourceLocation   any
 	SourceResourceId any
 }
 
 type MongoClusterList_Value_Properties_RestoreParameters struct {
-	PointInTimeUtc any
+	PointInTimeUtc   any
 	SourceResourceId any
 }
 
@@ -97,36 +97,36 @@ type MongoClusterList_Value_Properties_Sharding struct {
 
 type MongoClusterList_Value_Properties_Storage struct {
 	SizeGb any
-	Type any
+	Type   any
 }
 
 type MongoClusterList_Value_Properties struct {
-	Administrator any
-	AuthConfig any
-	Backup any
-	ClusterStatus any
-	Compute any
-	ConnectionString any
-	CreateMode any
-	DataApi any
-	Encryption any
-	HighAvailability any
-	InfrastructureVersion any
-	NetworkBypassMode any
-	PreviewFeatures any
+	Administrator              any
+	AuthConfig                 any
+	Backup                     any
+	ClusterStatus              any
+	Compute                    any
+	ConnectionString           any
+	CreateMode                 any
+	DataApi                    any
+	Encryption                 any
+	HighAvailability           any
+	InfrastructureVersion      any
+	NetworkBypassMode          any
+	PreviewFeatures            any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	Replica any
-	ReplicaParameters any
-	RestoreParameters any
-	ServerVersion any
-	Sharding any
-	Storage any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	Replica                    any
+	ReplicaParameters          any
+	RestoreParameters          any
+	ServerVersion              any
+	Sharding                   any
+	Storage                    any
 }
 
 type MongoClusterList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -142,6 +142,5 @@ type MongoClusterListAttrs struct {
 
 var MongoClusterList = ubx.DataSourceBinding{
 	WireType: "azure_mongocluster_mongo_cluster_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

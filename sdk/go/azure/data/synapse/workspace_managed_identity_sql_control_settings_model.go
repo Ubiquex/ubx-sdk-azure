@@ -25,6 +25,5 @@ type WorkspaceManagedIdentitySqlControlSettingsModelAttrs struct {
 
 var WorkspaceManagedIdentitySqlControlSettingsModel = ubx.DataSourceBinding{
 	WireType: "azure_synapse_workspace_managed_identity_sql_control_settings_model",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

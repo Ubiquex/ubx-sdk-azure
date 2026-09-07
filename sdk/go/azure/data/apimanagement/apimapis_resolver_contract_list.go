@@ -6,7 +6,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type ApimapisResolverContractList_Value_Properties struct {
 	Description any
 	DisplayName any
-	Path any
+	Path        any
 }
 
 type ApimapisResolverContractList_Value struct {
@@ -27,6 +27,5 @@ type ApimapisResolverContractListAttrs struct {
 
 var ApimapisResolverContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_resolver_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

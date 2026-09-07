@@ -4,8 +4,8 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersAgentPoolAvailableVersions_Properties_AgentPoolVersions struct {
-	Default any
-	IsPreview any
+	Default           any
+	IsPreview         any
 	KubernetesVersion any
 }
 
@@ -24,7 +24,7 @@ type ManagedclustersAgentPoolAvailableVersionsAttrs struct {
 	// The name of the agent pool version list.
 	Name any
 	// The list of available agent pool versions.
-	Properties any
+	Properties   any
 	ResourceName any
 	// Type of the agent pool version list.
 	Type any

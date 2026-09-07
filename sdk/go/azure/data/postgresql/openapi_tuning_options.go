@@ -9,21 +9,21 @@ type OpenapiTuningOptions_Properties struct {
 }
 
 type OpenapiTuningOptionsConfig struct {
-	ServerName any
+	ServerName   any
 	TuningOption any
 }
 
 type OpenapiTuningOptionsAttrs struct {
 	// Properties of a tuning option.
-	Properties any
-	ServerName any
+	Properties   any
+	ServerName   any
 	TuningOption any
 }
 
 var OpenapiTuningOptions = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_tuning_options",
 	Fields: ubx.FieldMap{
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 		"TuningOption": ubx.FieldSpec{WireName: "tuning_option"},
 	},
 }

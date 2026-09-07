@@ -9,9 +9,9 @@ type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_ExtendedLocation
 }
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_Properties_Identifier struct {
-	Offer any
+	Offer     any
 	Publisher any
-	Sku any
+	Sku       any
 }
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_Properties_Status_DownloadStatus struct {
@@ -20,13 +20,13 @@ type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_Properties_Statu
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_Properties_Status_ProvisioningStatus struct {
 	OperationId any
-	Status any
+	Status      any
 }
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_Properties_Status struct {
-	DownloadStatus any
-	ErrorCode any
-	ErrorMessage any
+	DownloadStatus     any
+	ErrorCode          any
+	ErrorMessage       any
 	ProgressPercentage any
 	ProvisioningStatus any
 }
@@ -44,24 +44,24 @@ type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_Properties_Versi
 }
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_Properties_Version struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value_Properties struct {
 	CloudInitDataSource any
-	ContainerId any
-	HyperVgeneration any
-	Identifier any
-	OsType any
-	ProvisioningState any
-	Status any
-	Version any
+	ContainerId         any
+	HyperVgeneration    any
+	Identifier          any
+	OsType              any
+	ProvisioningState   any
+	Status              any
+	Version             any
 }
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesList_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesListConfig struct {
@@ -69,11 +69,10 @@ type MarketplacegalleryimagesMarketplaceGalleryImagesListConfig struct {
 
 type MarketplacegalleryimagesMarketplaceGalleryImagesListAttrs struct {
 	NextLink any
-	Value any
+	Value    any
 }
 
 var MarketplacegalleryimagesMarketplaceGalleryImagesList = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_marketplacegalleryimages_marketplace_gallery_images_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

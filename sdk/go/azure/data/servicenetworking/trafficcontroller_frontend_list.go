@@ -4,7 +4,7 @@ package servicenetworking
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TrafficcontrollerFrontendList_Value_Properties struct {
-	Fqdn any
+	Fqdn              any
 	ProvisioningState any
 }
 
@@ -18,7 +18,7 @@ type TrafficcontrollerFrontendListConfig struct {
 
 type TrafficcontrollerFrontendListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink              any
 	TrafficControllerName any
 	// The Frontend items on this page
 	Value any

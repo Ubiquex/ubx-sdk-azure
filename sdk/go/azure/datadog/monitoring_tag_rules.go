@@ -51,59 +51,59 @@ type MonitoringTagRules_Properties struct {
 }
 
 var MonitoringTagRules_Properties_AgentRules_FilteringTagsFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Action": ubx.FieldSpec{WireName: "action"},
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var MonitoringTagRules_Properties_AgentRulesFields = ubx.FieldMap{
-		"EnableAgentMonitoring": ubx.FieldSpec{WireName: "enable_agent_monitoring"},
-		"FilteringTags": ubx.FieldSpec{
-			WireName: "filtering_tags",
-			Kind: "list",
-			Fields: MonitoringTagRules_Properties_AgentRules_FilteringTagsFields,
-		},
-	}
+	"EnableAgentMonitoring": ubx.FieldSpec{WireName: "enable_agent_monitoring"},
+	"FilteringTags": ubx.FieldSpec{
+		WireName: "filtering_tags",
+		Kind:     "list",
+		Fields:   MonitoringTagRules_Properties_AgentRules_FilteringTagsFields,
+	},
+}
 
 var MonitoringTagRules_Properties_LogRulesFields = ubx.FieldMap{
-		"FilteringTags": ubx.FieldSpec{
-			WireName: "filtering_tags",
-			Kind: "list",
-			Fields: MonitoringTagRules_Properties_AgentRules_FilteringTagsFields,
-		},
-		"SendAadLogs": ubx.FieldSpec{WireName: "send_aad_logs"},
-		"SendResourceLogs": ubx.FieldSpec{WireName: "send_resource_logs"},
-		"SendSubscriptionLogs": ubx.FieldSpec{WireName: "send_subscription_logs"},
-	}
+	"FilteringTags": ubx.FieldSpec{
+		WireName: "filtering_tags",
+		Kind:     "list",
+		Fields:   MonitoringTagRules_Properties_AgentRules_FilteringTagsFields,
+	},
+	"SendAadLogs":          ubx.FieldSpec{WireName: "send_aad_logs"},
+	"SendResourceLogs":     ubx.FieldSpec{WireName: "send_resource_logs"},
+	"SendSubscriptionLogs": ubx.FieldSpec{WireName: "send_subscription_logs"},
+}
 
 var MonitoringTagRules_Properties_MetricRulesFields = ubx.FieldMap{
-		"FilteringTags": ubx.FieldSpec{
-			WireName: "filtering_tags",
-			Kind: "list",
-			Fields: MonitoringTagRules_Properties_AgentRules_FilteringTagsFields,
-		},
-	}
+	"FilteringTags": ubx.FieldSpec{
+		WireName: "filtering_tags",
+		Kind:     "list",
+		Fields:   MonitoringTagRules_Properties_AgentRules_FilteringTagsFields,
+	},
+}
 
 var MonitoringTagRules_PropertiesFields = ubx.FieldMap{
-		"AgentRules": ubx.FieldSpec{
-			WireName: "agent_rules",
-			Kind: "object",
-			Fields: MonitoringTagRules_Properties_AgentRulesFields,
-		},
-		"Automuting": ubx.FieldSpec{WireName: "automuting"},
-		"CustomMetrics": ubx.FieldSpec{WireName: "custom_metrics"},
-		"LogRules": ubx.FieldSpec{
-			WireName: "log_rules",
-			Kind: "object",
-			Fields: MonitoringTagRules_Properties_LogRulesFields,
-		},
-		"MetricRules": ubx.FieldSpec{
-			WireName: "metric_rules",
-			Kind: "object",
-			Fields: MonitoringTagRules_Properties_MetricRulesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AgentRules": ubx.FieldSpec{
+		WireName: "agent_rules",
+		Kind:     "object",
+		Fields:   MonitoringTagRules_Properties_AgentRulesFields,
+	},
+	"Automuting":    ubx.FieldSpec{WireName: "automuting"},
+	"CustomMetrics": ubx.FieldSpec{WireName: "custom_metrics"},
+	"LogRules": ubx.FieldSpec{
+		WireName: "log_rules",
+		Kind:     "object",
+		Fields:   MonitoringTagRules_Properties_LogRulesFields,
+	},
+	"MetricRules": ubx.FieldSpec{
+		WireName: "metric_rules",
+		Kind:     "object",
+		Fields:   MonitoringTagRules_Properties_MetricRulesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type MonitoringTagRulesConfig struct {
 	// Definition of the properties for a TagRules resource.
@@ -120,8 +120,8 @@ var MonitoringTagRules = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MonitoringTagRules_PropertiesFields,
+			Kind:     "object",
+			Fields:   MonitoringTagRules_PropertiesFields,
 		},
 	},
 }

@@ -11,24 +11,24 @@ type OpenapiComponentVersion_Properties struct {
 }
 
 type OpenapiComponentVersionConfig struct {
-	Name any
-	Version any
+	Name          any
+	Version       any
 	WorkspaceName any
 }
 
 type OpenapiComponentVersionAttrs struct {
 	Name any
 	// Definition of a component version: defines resources that span component types.
-	Properties any
-	Version any
+	Properties    any
+	Version       any
 	WorkspaceName any
 }
 
 var OpenapiComponentVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_component_version",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

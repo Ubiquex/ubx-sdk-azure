@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEdgeNodeList_Value_Properties_IpAddressGroups_Ipv4Addresses struct {
 	BaseIpAddress any
-	PrefixLength any
+	PrefixLength  any
 }
 
 type OpenapiEdgeNodeList_Value_Properties_IpAddressGroups struct {
 	DeliveryRegion any
-	Ipv4Addresses any
-	Ipv6Addresses any
+	Ipv4Addresses  any
+	Ipv6Addresses  any
 }
 
 type OpenapiEdgeNodeList_Value_Properties struct {
@@ -34,6 +34,5 @@ type OpenapiEdgeNodeListAttrs struct {
 
 var OpenapiEdgeNodeList = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_edge_node_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -19,13 +19,13 @@ type OpenapiAssociatedTenant_Properties struct {
 }
 
 var OpenapiAssociatedTenant_PropertiesFields = ubx.FieldMap{
-		"BillingManagementState": ubx.FieldSpec{WireName: "billing_management_state"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ProvisioningBillingRequestId": ubx.FieldSpec{WireName: "provisioning_billing_request_id"},
-		"ProvisioningManagementState": ubx.FieldSpec{WireName: "provisioning_management_state"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"BillingManagementState":       ubx.FieldSpec{WireName: "billing_management_state"},
+	"DisplayName":                  ubx.FieldSpec{WireName: "display_name"},
+	"ProvisioningBillingRequestId": ubx.FieldSpec{WireName: "provisioning_billing_request_id"},
+	"ProvisioningManagementState":  ubx.FieldSpec{WireName: "provisioning_management_state"},
+	"ProvisioningState":            ubx.FieldSpec{WireName: "provisioning_state"},
+	"TenantId":                     ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type OpenapiAssociatedTenantConfig struct {
 	// An associated tenant.
@@ -46,8 +46,8 @@ var OpenapiAssociatedTenant = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAssociatedTenant_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAssociatedTenant_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

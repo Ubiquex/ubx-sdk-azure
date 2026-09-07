@@ -9,13 +9,13 @@ type OpenapiPrivateEndpointConnectionList_Value_Properties_PrivateEndpoint struc
 
 type OpenapiPrivateEndpointConnectionList_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiPrivateEndpointConnectionList_Value_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
 }
 
@@ -29,7 +29,7 @@ type OpenapiPrivateEndpointConnectionListConfig struct {
 
 type OpenapiPrivateEndpointConnectionListAttrs struct {
 	AutomationAccountName any
-	NextLink any
+	NextLink              any
 	// Array of private endpoint connections
 	Value any
 }

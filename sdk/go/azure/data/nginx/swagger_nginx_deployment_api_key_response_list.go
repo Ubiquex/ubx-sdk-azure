@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SwaggerNginxDeploymentApiKeyResponseList_Value_Properties struct {
 	EndDateTime any
-	Hint any
+	Hint        any
 }
 
 type SwaggerNginxDeploymentApiKeyResponseList_Value struct {

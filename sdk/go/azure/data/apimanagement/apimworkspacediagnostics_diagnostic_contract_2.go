@@ -9,7 +9,7 @@ type ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_Body
 }
 
 type ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMasking_Headers struct {
-	Mode any
+	Mode  any
 	Value any
 }
 
@@ -22,7 +22,7 @@ type ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_Data
 
 type ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request struct {
 	// Body logging settings.
-	Body any
+	Body        any
 	DataMasking any
 	// Array of HTTP Headers to log.
 	Headers any
@@ -75,6 +75,5 @@ type ApimworkspacediagnosticsDiagnosticContract2Attrs struct {
 
 var ApimworkspacediagnosticsDiagnosticContract2 = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimworkspacediagnostics_diagnostic_contract_2",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

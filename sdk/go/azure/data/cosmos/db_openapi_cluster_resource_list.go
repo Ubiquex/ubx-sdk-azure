@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiClusterResourceList_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type DbOpenapiClusterResourceList_Value_Properties_BackupSchedules struct {
-	CronExpression any
+	CronExpression   any
 	RetentionInHours any
-	ScheduleName any
+	ScheduleName     any
 }
 
 type DbOpenapiClusterResourceList_Value_Properties_ClientCertificates struct {
@@ -25,44 +25,44 @@ type DbOpenapiClusterResourceList_Value_Properties_ExternalSeedNodes struct {
 
 type DbOpenapiClusterResourceList_Value_Properties_ProvisionError struct {
 	AdditionalErrorInfo any
-	Code any
-	Message any
-	Target any
+	Code                any
+	Message             any
+	Target              any
 }
 
 type DbOpenapiClusterResourceList_Value_Properties struct {
-	AuthenticationMethod any
-	AutoReplicate any
-	AzureConnectionMethod any
-	BackupSchedules any
-	CassandraAuditLoggingEnabled any
-	CassandraVersion any
-	ClientCertificates any
-	ClusterNameOverride any
-	Deallocated any
-	DelegatedManagementSubnetId any
-	Extensions any
-	ExternalDataCenters any
-	ExternalGossipCertificates any
-	ExternalSeedNodes any
-	GossipCertificates any
-	HoursBetweenBackups any
+	AuthenticationMethod          any
+	AutoReplicate                 any
+	AzureConnectionMethod         any
+	BackupSchedules               any
+	CassandraAuditLoggingEnabled  any
+	CassandraVersion              any
+	ClientCertificates            any
+	ClusterNameOverride           any
+	Deallocated                   any
+	DelegatedManagementSubnetId   any
+	Extensions                    any
+	ExternalDataCenters           any
+	ExternalGossipCertificates    any
+	ExternalSeedNodes             any
+	GossipCertificates            any
+	HoursBetweenBackups           any
 	InitialCassandraAdminPassword any
-	PrivateLinkResourceId any
-	PrometheusEndpoint any
-	ProvisionError any
-	ProvisioningState any
-	RepairEnabled any
-	RestoreFromBackupId any
-	ScheduledEventStrategy any
-	SeedNodes any
+	PrivateLinkResourceId         any
+	PrometheusEndpoint            any
+	ProvisionError                any
+	ProvisioningState             any
+	RepairEnabled                 any
+	RestoreFromBackupId           any
+	ScheduledEventStrategy        any
+	SeedNodes                     any
 }
 
 type DbOpenapiClusterResourceList_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiClusterResourceListConfig struct {
@@ -76,6 +76,5 @@ type DbOpenapiClusterResourceListAttrs struct {
 
 var DbOpenapiClusterResourceList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_cluster_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,7 +4,7 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingRoleDefinition_Properties_Permissions struct {
-	Actions any
+	Actions    any
 	NotActions any
 }
 
@@ -27,7 +27,7 @@ type OpenapiBillingRoleDefinitionAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
 	// The properties of a role definition.
-	Properties any
+	Properties         any
 	RoleDefinitionName any
 	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
 	Tags any

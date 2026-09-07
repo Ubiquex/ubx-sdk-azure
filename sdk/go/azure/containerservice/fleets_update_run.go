@@ -205,268 +205,267 @@ type FleetsUpdateRun_Properties struct {
 }
 
 var FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection_CustomNodeImageVersionsFields = ubx.FieldMap{
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelectionFields = ubx.FieldMap{
-		"CustomNodeImageVersions": ubx.FieldSpec{
-			WireName: "custom_node_image_versions",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection_CustomNodeImageVersionsFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"CustomNodeImageVersions": ubx.FieldSpec{
+		WireName: "custom_node_image_versions",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection_CustomNodeImageVersionsFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var FleetsUpdateRun_Properties_ManagedClusterUpdate_UpgradeFields = ubx.FieldMap{
-		"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 var FleetsUpdateRun_Properties_ManagedClusterUpdateFields = ubx.FieldMap{
-		"NodeImageSelection": ubx.FieldSpec{
-			WireName: "node_image_selection",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelectionFields,
-		},
-		"Upgrade": ubx.FieldSpec{
-			WireName: "upgrade",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_ManagedClusterUpdate_UpgradeFields,
-		},
-	}
+	"NodeImageSelection": ubx.FieldSpec{
+		WireName: "node_image_selection",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelectionFields,
+	},
+	"Upgrade": ubx.FieldSpec{
+		WireName: "upgrade",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_ManagedClusterUpdate_UpgradeFields,
+	},
+}
 
 var FleetsUpdateRun_Properties_Status_NodeImageSelectionFields = ubx.FieldMap{
-		"SelectedNodeImageVersions": ubx.FieldSpec{
-			WireName: "selected_node_image_versions",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection_CustomNodeImageVersionsFields,
-		},
-	}
+	"SelectedNodeImageVersions": ubx.FieldSpec{
+		WireName: "selected_node_image_versions",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_ManagedClusterUpdate_NodeImageSelection_CustomNodeImageVersionsFields,
+	},
+}
 
 var FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details_DetailsFields = ubx.FieldMap{
-	}
+var FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details_DetailsFields = ubx.FieldMap{}
 
 var FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_Details_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_ErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields = ubx.FieldMap{
-		"CompletedTime": ubx.FieldSpec{WireName: "completed_time"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_ErrorFields,
-		},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"CompletedTime": ubx.FieldSpec{WireName: "completed_time"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_Status_ErrorFields,
+	},
+	"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	"State":     ubx.FieldSpec{WireName: "state"},
+}
 
 var FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"GateId": ubx.FieldSpec{WireName: "gate_id"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
-		},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"GateId":      ubx.FieldSpec{WireName: "gate_id"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
+	},
+}
 
 var FleetsUpdateRun_Properties_Status_Stages_AfterStageWaitStatusFields = ubx.FieldMap{
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
-		},
-		"WaitDurationInSeconds": ubx.FieldSpec{WireName: "wait_duration_in_seconds"},
-	}
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
+	},
+	"WaitDurationInSeconds": ubx.FieldSpec{WireName: "wait_duration_in_seconds"},
+}
 
 var FleetsUpdateRun_Properties_Status_Stages_Groups_MembersFields = ubx.FieldMap{
-		"ClusterResourceId": ubx.FieldSpec{WireName: "cluster_resource_id"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
-		},
-	}
+	"ClusterResourceId": ubx.FieldSpec{WireName: "cluster_resource_id"},
+	"Message":           ubx.FieldSpec{WireName: "message"},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"OperationId":       ubx.FieldSpec{WireName: "operation_id"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
+	},
+}
 
 var FleetsUpdateRun_Properties_Status_Stages_GroupsFields = ubx.FieldMap{
-		"AfterGates": ubx.FieldSpec{
-			WireName: "after_gates",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields,
-		},
-		"BeforeGates": ubx.FieldSpec{
-			WireName: "before_gates",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields,
-		},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-		"Members": ubx.FieldSpec{
-			WireName: "members",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_Groups_MembersFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
-		},
-	}
+	"AfterGates": ubx.FieldSpec{
+		WireName: "after_gates",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields,
+	},
+	"BeforeGates": ubx.FieldSpec{
+		WireName: "before_gates",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields,
+	},
+	"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
+	"Members": ubx.FieldSpec{
+		WireName: "members",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_Groups_MembersFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
+	},
+}
 
 var FleetsUpdateRun_Properties_Status_StagesFields = ubx.FieldMap{
-		"AfterGates": ubx.FieldSpec{
-			WireName: "after_gates",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields,
-		},
-		"AfterStageWaitStatus": ubx.FieldSpec{
-			WireName: "after_stage_wait_status",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterStageWaitStatusFields,
-		},
-		"BeforeGates": ubx.FieldSpec{
-			WireName: "before_gates",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields,
-		},
-		"Groups": ubx.FieldSpec{
-			WireName: "groups",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_GroupsFields,
-		},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
-		},
-	}
+	"AfterGates": ubx.FieldSpec{
+		WireName: "after_gates",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields,
+	},
+	"AfterStageWaitStatus": ubx.FieldSpec{
+		WireName: "after_stage_wait_status",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterStageWaitStatusFields,
+	},
+	"BeforeGates": ubx.FieldSpec{
+		WireName: "before_gates",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGatesFields,
+	},
+	"Groups": ubx.FieldSpec{
+		WireName: "groups",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_GroupsFields,
+	},
+	"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
+	},
+}
 
 var FleetsUpdateRun_Properties_StatusFields = ubx.FieldMap{
-		"NodeImageSelection": ubx.FieldSpec{
-			WireName: "node_image_selection",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_NodeImageSelectionFields,
-		},
-		"Stages": ubx.FieldSpec{
-			WireName: "stages",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Status_StagesFields,
-		},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
-		},
-	}
+	"NodeImageSelection": ubx.FieldSpec{
+		WireName: "node_image_selection",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_NodeImageSelectionFields,
+	},
+	"Stages": ubx.FieldSpec{
+		WireName: "stages",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Status_StagesFields,
+	},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_Status_Stages_AfterGates_StatusFields,
+	},
+}
 
 var FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var FleetsUpdateRun_Properties_Strategy_Stages_GroupsFields = ubx.FieldMap{
-		"AfterGates": ubx.FieldSpec{
-			WireName: "after_gates",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"BeforeGates": ubx.FieldSpec{
-			WireName: "before_gates",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AfterGates": ubx.FieldSpec{
+		WireName: "after_gates",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"BeforeGates": ubx.FieldSpec{
+		WireName: "before_gates",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var FleetsUpdateRun_Properties_Strategy_StagesFields = ubx.FieldMap{
-		"AfterGates": ubx.FieldSpec{
-			WireName: "after_gates",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"AfterStageWaitInSeconds": ubx.FieldSpec{WireName: "after_stage_wait_in_seconds"},
-		"BeforeGates": ubx.FieldSpec{
-			WireName: "before_gates",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields,
-		},
-		"Groups": ubx.FieldSpec{
-			WireName: "groups",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Strategy_Stages_GroupsFields,
-		},
-		"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AfterGates": ubx.FieldSpec{
+		WireName: "after_gates",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"AfterStageWaitInSeconds": ubx.FieldSpec{WireName: "after_stage_wait_in_seconds"},
+	"BeforeGates": ubx.FieldSpec{
+		WireName: "before_gates",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Strategy_Stages_AfterGatesFields,
+	},
+	"Groups": ubx.FieldSpec{
+		WireName: "groups",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Strategy_Stages_GroupsFields,
+	},
+	"MaxConcurrency": ubx.FieldSpec{WireName: "max_concurrency"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var FleetsUpdateRun_Properties_StrategyFields = ubx.FieldMap{
-		"Stages": ubx.FieldSpec{
-			WireName: "stages",
-			Kind: "list",
-			Fields: FleetsUpdateRun_Properties_Strategy_StagesFields,
-		},
-	}
+	"Stages": ubx.FieldSpec{
+		WireName: "stages",
+		Kind:     "list",
+		Fields:   FleetsUpdateRun_Properties_Strategy_StagesFields,
+	},
+}
 
 var FleetsUpdateRun_PropertiesFields = ubx.FieldMap{
-		"AutoUpgradeProfileId": ubx.FieldSpec{WireName: "auto_upgrade_profile_id"},
-		"ManagedClusterUpdate": ubx.FieldSpec{
-			WireName: "managed_cluster_update",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_ManagedClusterUpdateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_StatusFields,
-		},
-		"Strategy": ubx.FieldSpec{
-			WireName: "strategy",
-			Kind: "object",
-			Fields: FleetsUpdateRun_Properties_StrategyFields,
-		},
-		"UpdateStrategyId": ubx.FieldSpec{WireName: "update_strategy_id"},
-	}
+	"AutoUpgradeProfileId": ubx.FieldSpec{WireName: "auto_upgrade_profile_id"},
+	"ManagedClusterUpdate": ubx.FieldSpec{
+		WireName: "managed_cluster_update",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_ManagedClusterUpdateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_StatusFields,
+	},
+	"Strategy": ubx.FieldSpec{
+		WireName: "strategy",
+		Kind:     "object",
+		Fields:   FleetsUpdateRun_Properties_StrategyFields,
+	},
+	"UpdateStrategyId": ubx.FieldSpec{WireName: "update_strategy_id"},
+}
 
 type FleetsUpdateRunConfig struct {
 	// The properties of the UpdateRun.
@@ -485,8 +484,8 @@ var FleetsUpdateRun = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FleetsUpdateRun_PropertiesFields,
+			Kind:     "object",
+			Fields:   FleetsUpdateRun_PropertiesFields,
 		},
 	},
 }

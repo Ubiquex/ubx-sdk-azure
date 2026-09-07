@@ -14,21 +14,21 @@ type BmsProtectionPolicyResource_Properties struct {
 
 type BmsProtectionPolicyResourceConfig struct {
 	OperationId any
-	PolicyName any
-	VaultName any
+	PolicyName  any
+	VaultName   any
 }
 
 type BmsProtectionPolicyResourceAttrs struct {
 	// Optional ETag.
 	ETag any
 	// Represents an Azure geography region where supported resource providers live.
-	Location any
+	Location    any
 	OperationId any
-	PolicyName any
+	PolicyName  any
 	// Base class for backup policy. Workload-specific backup policies are derived from this class.
 	Properties any
 	// Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 
@@ -36,7 +36,7 @@ var BmsProtectionPolicyResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protection_policy_resource",
 	Fields: ubx.FieldMap{
 		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"PolicyName": ubx.FieldSpec{WireName: "policy_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"PolicyName":  ubx.FieldSpec{WireName: "policy_name"},
+		"VaultName":   ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

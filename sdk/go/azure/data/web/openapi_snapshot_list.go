@@ -20,7 +20,7 @@ type OpenapiSnapshotListAttrs struct {
 	Name any
 	// The link to the next page of items
 	NextLink any
-	Slot any
+	Slot     any
 	// The Snapshot items on this page
 	Value any
 }

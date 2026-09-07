@@ -10,12 +10,12 @@ type OpenapiApplicationGroupList_Value_Properties_Policies struct {
 
 type OpenapiApplicationGroupList_Value_Properties struct {
 	ClientAppGroupIdentifier any
-	IsEnabled any
-	Policies any
+	IsEnabled                any
+	Policies                 any
 }
 
 type OpenapiApplicationGroupList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

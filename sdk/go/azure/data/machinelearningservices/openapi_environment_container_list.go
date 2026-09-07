@@ -19,7 +19,7 @@ type OpenapiEnvironmentContainerListConfig struct {
 type OpenapiEnvironmentContainerListAttrs struct {
 	ListViewType any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	RegistryName any
 	// The EnvironmentContainer items on this page
 	Value any

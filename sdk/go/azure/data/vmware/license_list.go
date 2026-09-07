@@ -4,7 +4,7 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type LicenseList_Value_Properties struct {
-	Kind any
+	Kind              any
 	ProvisioningState any
 }
 
@@ -18,7 +18,7 @@ type LicenseListConfig struct {
 
 type LicenseListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The License items on this page
 	Value any

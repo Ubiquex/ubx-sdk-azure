@@ -4,26 +4,26 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateStoreList_Value_Properties_NotificationsSettings_Recipients struct {
-	DisplayName any
+	DisplayName  any
 	EmailAddress any
-	PrincipalId any
+	PrincipalId  any
 }
 
 type PrivateStoreList_Value_Properties_NotificationsSettings struct {
-	Recipients any
+	Recipients                 any
 	SendToAllMarketplaceAdmins any
 }
 
 type PrivateStoreList_Value_Properties struct {
-	Availability any
-	Branding any
-	CollectionIds any
-	ETag any
-	IsGov any
+	Availability          any
+	Branding              any
+	CollectionIds         any
+	ETag                  any
+	IsGov                 any
 	NotificationsSettings any
-	PrivateStoreId any
-	PrivateStoreName any
-	TenantId any
+	PrivateStoreId        any
+	PrivateStoreName      any
+	TenantId              any
 }
 
 type PrivateStoreList_Value struct {

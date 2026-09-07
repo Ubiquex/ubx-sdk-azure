@@ -4,7 +4,7 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatabaseList_Value struct {
-	Kind any
+	Kind     any
 	Location any
 }
 

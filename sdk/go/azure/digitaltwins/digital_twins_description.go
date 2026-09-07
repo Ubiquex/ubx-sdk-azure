@@ -4,7 +4,7 @@ package digitaltwins
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DigitalTwinsDescription_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -88,83 +88,83 @@ type DigitalTwinsDescription_Properties struct {
 }
 
 var DigitalTwinsDescription_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var DigitalTwinsDescription_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: DigitalTwinsDescription_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   DigitalTwinsDescription_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var DigitalTwinsDescription_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   DigitalTwinsDescription_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var DigitalTwinsDescription_Properties_PrivateEndpointConnections_SystemDataFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"CreatedAt":          ubx.FieldSpec{WireName: "created_at"},
+	"CreatedBy":          ubx.FieldSpec{WireName: "created_by"},
+	"CreatedByType":      ubx.FieldSpec{WireName: "created_by_type"},
+	"LastModifiedAt":     ubx.FieldSpec{WireName: "last_modified_at"},
+	"LastModifiedBy":     ubx.FieldSpec{WireName: "last_modified_by"},
+	"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
+}
 
 var DigitalTwinsDescription_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: DigitalTwinsDescription_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-		"SystemData": ubx.FieldSpec{
-			WireName: "system_data",
-			Kind: "object",
-			Fields: DigitalTwinsDescription_Properties_PrivateEndpointConnections_SystemDataFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   DigitalTwinsDescription_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+	"SystemData": ubx.FieldSpec{
+		WireName: "system_data",
+		Kind:     "object",
+		Fields:   DigitalTwinsDescription_Properties_PrivateEndpointConnections_SystemDataFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var DigitalTwinsDescription_PropertiesFields = ubx.FieldMap{
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: DigitalTwinsDescription_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	}
+	"CreatedTime":     ubx.FieldSpec{WireName: "created_time"},
+	"HostName":        ubx.FieldSpec{WireName: "host_name"},
+	"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   DigitalTwinsDescription_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+}
 
 type DigitalTwinsDescriptionConfig struct {
 	// The managed identity for the DigitalTwinsInstance.
@@ -201,14 +201,14 @@ var DigitalTwinsDescription = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DigitalTwinsDescription_IdentityFields,
+			Kind:     "object",
+			Fields:   DigitalTwinsDescription_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DigitalTwinsDescription_PropertiesFields,
+			Kind:     "object",
+			Fields:   DigitalTwinsDescription_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

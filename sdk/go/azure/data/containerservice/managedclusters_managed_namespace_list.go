@@ -4,30 +4,30 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersManagedNamespaceList_Value_Properties_DefaultNetworkPolicy struct {
-	Egress any
+	Egress  any
 	Ingress any
 }
 
 type ManagedclustersManagedNamespaceList_Value_Properties_DefaultResourceQuota struct {
-	CpuLimit any
-	CpuRequest any
-	MemoryLimit any
+	CpuLimit      any
+	CpuRequest    any
+	MemoryLimit   any
 	MemoryRequest any
 }
 
 type ManagedclustersManagedNamespaceList_Value_Properties struct {
-	AdoptionPolicy any
-	Annotations any
+	AdoptionPolicy       any
+	Annotations          any
 	DefaultNetworkPolicy any
 	DefaultResourceQuota any
-	DeletePolicy any
-	Labels any
-	PortalFqdn any
-	ProvisioningState any
+	DeletePolicy         any
+	Labels               any
+	PortalFqdn           any
+	ProvisioningState    any
 }
 
 type ManagedclustersManagedNamespaceList_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 
@@ -37,7 +37,7 @@ type ManagedclustersManagedNamespaceListConfig struct {
 
 type ManagedclustersManagedNamespaceListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The ManagedNamespace items on this page
 	Value any

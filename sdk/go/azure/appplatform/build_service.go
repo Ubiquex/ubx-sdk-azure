@@ -22,20 +22,20 @@ type BuildService_Properties struct {
 }
 
 var BuildService_Properties_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":    ubx.FieldSpec{WireName: "cpu"},
+	"Memory": ubx.FieldSpec{WireName: "memory"},
+}
 
 var BuildService_PropertiesFields = ubx.FieldMap{
-		"ContainerRegistry": ubx.FieldSpec{WireName: "container_registry"},
-		"KPackVersion": ubx.FieldSpec{WireName: "k_pack_version"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: BuildService_Properties_ResourceRequestsFields,
-		},
-	}
+	"ContainerRegistry": ubx.FieldSpec{WireName: "container_registry"},
+	"KPackVersion":      ubx.FieldSpec{WireName: "k_pack_version"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   BuildService_Properties_ResourceRequestsFields,
+	},
+}
 
 type BuildServiceConfig struct {
 	// Build service resource properties payload
@@ -52,8 +52,8 @@ var BuildService = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BuildService_PropertiesFields,
+			Kind:     "object",
+			Fields:   BuildService_PropertiesFields,
 		},
 	},
 }

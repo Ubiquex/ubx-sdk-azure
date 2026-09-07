@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanConnectionSharedKeyResultList_Value_Properties struct {
 	ProvisioningState any
-	SharedKey any
-	SharedKeyLength any
+	SharedKey         any
+	SharedKeyLength   any
 }
 
 type VirtualwanConnectionSharedKeyResultList_Value struct {
@@ -14,14 +14,14 @@ type VirtualwanConnectionSharedKeyResultList_Value struct {
 }
 
 type VirtualwanConnectionSharedKeyResultListConfig struct {
-	ConnectionName any
-	GatewayName any
+	ConnectionName     any
+	GatewayName        any
 	LinkConnectionName any
 }
 
 type VirtualwanConnectionSharedKeyResultListAttrs struct {
-	ConnectionName any
-	GatewayName any
+	ConnectionName     any
+	GatewayName        any
 	LinkConnectionName any
 	// The link to the next page of items
 	NextLink any
@@ -32,8 +32,8 @@ type VirtualwanConnectionSharedKeyResultListAttrs struct {
 var VirtualwanConnectionSharedKeyResultList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_connection_shared_key_result_list",
 	Fields: ubx.FieldMap{
-		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"GatewayName": ubx.FieldSpec{WireName: "gateway_name"},
+		"ConnectionName":     ubx.FieldSpec{WireName: "connection_name"},
+		"GatewayName":        ubx.FieldSpec{WireName: "gateway_name"},
 		"LinkConnectionName": ubx.FieldSpec{WireName: "link_connection_name"},
 	},
 }

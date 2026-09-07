@@ -4,8 +4,8 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkloadNetworkGatewayList_Value_Properties struct {
-	DisplayName any
-	Path any
+	DisplayName       any
+	Path              any
 	ProvisioningState any
 }
 
@@ -19,7 +19,7 @@ type WorkloadNetworkGatewayListConfig struct {
 
 type WorkloadNetworkGatewayListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The WorkloadNetworkGateway items on this page
 	Value any

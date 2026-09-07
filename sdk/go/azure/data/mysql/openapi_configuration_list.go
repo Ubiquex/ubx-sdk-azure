@@ -4,17 +4,17 @@ package mysql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConfigurationList_Value_Properties struct {
-	AllowedValues any
-	CurrentValue any
-	DataType any
-	DefaultValue any
-	Description any
-	DocumentationLink any
+	AllowedValues          any
+	CurrentValue           any
+	DataType               any
+	DefaultValue           any
+	Description            any
+	DocumentationLink      any
 	IsConfigPendingRestart any
-	IsDynamicConfig any
-	IsReadOnly any
-	Source any
-	Value any
+	IsDynamicConfig        any
+	IsReadOnly             any
+	Source                 any
+	Value                  any
 }
 
 type OpenapiConfigurationList_Value struct {
@@ -22,21 +22,21 @@ type OpenapiConfigurationList_Value struct {
 }
 
 type OpenapiConfigurationListConfig struct {
-	Keyword any
-	Page any
-	PageSize any
+	Keyword    any
+	Page       any
+	PageSize   any
 	ServerName any
-	Tags any
+	Tags       any
 }
 
 type OpenapiConfigurationListAttrs struct {
 	Keyword any
 	// The link to the next page of items
-	NextLink any
-	Page any
-	PageSize any
+	NextLink   any
+	Page       any
+	PageSize   any
 	ServerName any
-	Tags any
+	Tags       any
 	// The Configuration items on this page
 	Value any
 }
@@ -44,10 +44,10 @@ type OpenapiConfigurationListAttrs struct {
 var OpenapiConfigurationList = ubx.DataSourceBinding{
 	WireType: "azure_mysql_openapi_configuration_list",
 	Fields: ubx.FieldMap{
-		"Keyword": ubx.FieldSpec{WireName: "keyword"},
-		"Page": ubx.FieldSpec{WireName: "page"},
-		"PageSize": ubx.FieldSpec{WireName: "page_size"},
+		"Keyword":    ubx.FieldSpec{WireName: "keyword"},
+		"Page":       ubx.FieldSpec{WireName: "page"},
+		"PageSize":   ubx.FieldSpec{WireName: "page_size"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Tags":       ubx.FieldSpec{WireName: "tags"},
 	},
 }

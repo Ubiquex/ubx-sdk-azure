@@ -17,12 +17,12 @@ type OpenapiCapability_Properties struct {
 }
 
 var OpenapiCapability_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ParametersSchema": ubx.FieldSpec{WireName: "parameters_schema"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"TargetType": ubx.FieldSpec{WireName: "target_type"},
-		"Urn": ubx.FieldSpec{WireName: "urn"},
-	}
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"ParametersSchema": ubx.FieldSpec{WireName: "parameters_schema"},
+	"Publisher":        ubx.FieldSpec{WireName: "publisher"},
+	"TargetType":       ubx.FieldSpec{WireName: "target_type"},
+	"Urn":              ubx.FieldSpec{WireName: "urn"},
+}
 
 type OpenapiCapabilityConfig struct {
 	// Model that represents the Capability properties model.
@@ -39,8 +39,8 @@ var OpenapiCapability = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCapability_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCapability_PropertiesFields,
 		},
 	},
 }

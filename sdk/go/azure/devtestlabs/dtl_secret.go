@@ -13,10 +13,10 @@ type DtlSecret_Properties struct {
 }
 
 var DtlSecret_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+	"Value":             ubx.FieldSpec{WireName: "value"},
+}
 
 type DtlSecretConfig struct {
 	// The geo-location where the resource lives
@@ -46,8 +46,8 @@ var DtlSecret = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlSecret_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlSecret_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

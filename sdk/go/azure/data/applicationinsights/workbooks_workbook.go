@@ -4,14 +4,14 @@ package applicationinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkbooksWorkbook_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type WorkbooksWorkbook_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -42,7 +42,7 @@ type WorkbooksWorkbook_Properties struct {
 
 type WorkbooksWorkbookConfig struct {
 	ResourceName any
-	RevisionId any
+	RevisionId   any
 }
 
 type WorkbooksWorkbookAttrs struct {
@@ -55,9 +55,9 @@ type WorkbooksWorkbookAttrs struct {
 	// The geo-location where the resource lives
 	Location any
 	// Properties that contain a workbook.
-	Properties any
+	Properties   any
 	ResourceName any
-	RevisionId any
+	RevisionId   any
 	// Resource tags.
 	Tags any
 }
@@ -66,6 +66,6 @@ var WorkbooksWorkbook = ubx.DataSourceBinding{
 	WireType: "azure_applicationinsights_workbooks_workbook",
 	Fields: ubx.FieldMap{
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"RevisionId": ubx.FieldSpec{WireName: "revision_id"},
+		"RevisionId":   ubx.FieldSpec{WireName: "revision_id"},
 	},
 }

@@ -4,7 +4,7 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiApiKvreference_Properties_IdentityType_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -21,20 +21,20 @@ type OpenapiApiKvreference_Properties_IdentityType struct {
 
 type OpenapiApiKvreference_Properties struct {
 	ActiveVersion any
-	Details any
+	Details       any
 	// Managed service identity.
-	IdentityType any
-	Reference any
-	SecretName any
+	IdentityType  any
+	Reference     any
+	SecretName    any
 	SecretVersion any
-	Source any
-	Status any
-	VaultName any
+	Source        any
+	Status        any
+	VaultName     any
 }
 
 type OpenapiApiKvreferenceConfig struct {
 	AppSettingKey any
-	Name any
+	Name          any
 }
 
 type OpenapiApiKvreferenceAttrs struct {
@@ -50,6 +50,6 @@ var OpenapiApiKvreference = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_api_kvreference",
 	Fields: ubx.FieldMap{
 		"AppSettingKey": ubx.FieldSpec{WireName: "app_setting_key"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -36,14 +36,14 @@ type Image_Properties struct {
 
 type ImageConfig struct {
 	DevCenterName any
-	GalleryName any
-	ImageName any
+	GalleryName   any
+	ImageName     any
 }
 
 type ImageAttrs struct {
 	DevCenterName any
-	GalleryName any
-	ImageName any
+	GalleryName   any
+	ImageName     any
 	// Properties of an image.
 	Properties any
 }
@@ -52,7 +52,7 @@ var Image = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image",
 	Fields: ubx.FieldMap{
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
-		"GalleryName": ubx.FieldSpec{WireName: "gallery_name"},
-		"ImageName": ubx.FieldSpec{WireName: "image_name"},
+		"GalleryName":   ubx.FieldSpec{WireName: "gallery_name"},
+		"ImageName":     ubx.FieldSpec{WireName: "image_name"},
 	},
 }

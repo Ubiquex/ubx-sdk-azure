@@ -17,21 +17,21 @@ type ScriptPackage_Properties struct {
 }
 
 type ScriptPackageConfig struct {
-	PrivateCloudName any
+	PrivateCloudName  any
 	ScriptPackageName any
 }
 
 type ScriptPackageAttrs struct {
 	PrivateCloudName any
 	// Properties of a Script Package subresource
-	Properties any
+	Properties        any
 	ScriptPackageName any
 }
 
 var ScriptPackage = ubx.DataSourceBinding{
 	WireType: "azure_vmware_script_package",
 	Fields: ubx.FieldMap{
-		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
+		"PrivateCloudName":  ubx.FieldSpec{WireName: "private_cloud_name"},
 		"ScriptPackageName": ubx.FieldSpec{WireName: "script_package_name"},
 	},
 }

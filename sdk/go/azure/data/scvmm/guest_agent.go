@@ -40,7 +40,7 @@ type GuestAgentConfig struct {
 
 type GuestAgentAttrs struct {
 	// Defines the resource properties.
-	Properties any
+	Properties  any
 	ResourceUri any
 }
 

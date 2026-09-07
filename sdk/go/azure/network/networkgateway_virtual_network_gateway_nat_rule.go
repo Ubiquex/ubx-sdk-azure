@@ -26,26 +26,26 @@ type NetworkgatewayVirtualNetworkGatewayNatRule_Properties struct {
 }
 
 var NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields = ubx.FieldMap{
-		"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
-		"PortRange": ubx.FieldSpec{WireName: "port_range"},
-	}
+	"AddressSpace": ubx.FieldSpec{WireName: "address_space"},
+	"PortRange":    ubx.FieldSpec{WireName: "port_range"},
+}
 
 var NetworkgatewayVirtualNetworkGatewayNatRule_PropertiesFields = ubx.FieldMap{
-		"ExternalMappings": ubx.FieldSpec{
-			WireName: "external_mappings",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields,
-		},
-		"InternalMappings": ubx.FieldSpec{
-			WireName: "internal_mappings",
-			Kind: "list",
-			Fields: NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields,
-		},
-		"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ExternalMappings": ubx.FieldSpec{
+		WireName: "external_mappings",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields,
+	},
+	"InternalMappings": ubx.FieldSpec{
+		WireName: "internal_mappings",
+		Kind:     "list",
+		Fields:   NetworkgatewayVirtualNetworkGatewayNatRule_Properties_ExternalMappingsFields,
+	},
+	"IpConfigurationId": ubx.FieldSpec{WireName: "ip_configuration_id"},
+	"Mode":              ubx.FieldSpec{WireName: "mode"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 type NetworkgatewayVirtualNetworkGatewayNatRuleConfig struct {
 	// Name of the resource.
@@ -71,8 +71,8 @@ var NetworkgatewayVirtualNetworkGatewayNatRule = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkgatewayVirtualNetworkGatewayNatRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkgatewayVirtualNetworkGatewayNatRule_PropertiesFields,
 		},
 	},
 }

@@ -4,9 +4,9 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateStore_Properties_NotificationsSettings_Recipients struct {
-	DisplayName any
+	DisplayName  any
 	EmailAddress any
-	PrincipalId any
+	PrincipalId  any
 }
 
 type PrivateStore_Properties_NotificationsSettings struct {
@@ -38,35 +38,35 @@ type PrivateStore_Properties struct {
 }
 
 var PrivateStore_Properties_NotificationsSettings_RecipientsFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"DisplayName":  ubx.FieldSpec{WireName: "display_name"},
+	"EmailAddress": ubx.FieldSpec{WireName: "email_address"},
+	"PrincipalId":  ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var PrivateStore_Properties_NotificationsSettingsFields = ubx.FieldMap{
-		"Recipients": ubx.FieldSpec{
-			WireName: "recipients",
-			Kind: "list",
-			Fields: PrivateStore_Properties_NotificationsSettings_RecipientsFields,
-		},
-		"SendToAllMarketplaceAdmins": ubx.FieldSpec{WireName: "send_to_all_marketplace_admins"},
-	}
+	"Recipients": ubx.FieldSpec{
+		WireName: "recipients",
+		Kind:     "list",
+		Fields:   PrivateStore_Properties_NotificationsSettings_RecipientsFields,
+	},
+	"SendToAllMarketplaceAdmins": ubx.FieldSpec{WireName: "send_to_all_marketplace_admins"},
+}
 
 var PrivateStore_PropertiesFields = ubx.FieldMap{
-		"Availability": ubx.FieldSpec{WireName: "availability"},
-		"Branding": ubx.FieldSpec{WireName: "branding"},
-		"CollectionIds": ubx.FieldSpec{WireName: "collection_ids"},
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
-		"IsGov": ubx.FieldSpec{WireName: "is_gov"},
-		"NotificationsSettings": ubx.FieldSpec{
-			WireName: "notifications_settings",
-			Kind: "object",
-			Fields: PrivateStore_Properties_NotificationsSettingsFields,
-		},
-		"PrivateStoreId": ubx.FieldSpec{WireName: "private_store_id"},
-		"PrivateStoreName": ubx.FieldSpec{WireName: "private_store_name"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"Availability":  ubx.FieldSpec{WireName: "availability"},
+	"Branding":      ubx.FieldSpec{WireName: "branding"},
+	"CollectionIds": ubx.FieldSpec{WireName: "collection_ids"},
+	"ETag":          ubx.FieldSpec{WireName: "e_tag"},
+	"IsGov":         ubx.FieldSpec{WireName: "is_gov"},
+	"NotificationsSettings": ubx.FieldSpec{
+		WireName: "notifications_settings",
+		Kind:     "object",
+		Fields:   PrivateStore_Properties_NotificationsSettingsFields,
+	},
+	"PrivateStoreId":   ubx.FieldSpec{WireName: "private_store_id"},
+	"PrivateStoreName": ubx.FieldSpec{WireName: "private_store_name"},
+	"TenantId":         ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type PrivateStoreConfig struct {
 	// Describes the json payload on whether or not the private store is enabled for a given tenant
@@ -83,8 +83,8 @@ var PrivateStore = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PrivateStore_PropertiesFields,
+			Kind:     "object",
+			Fields:   PrivateStore_PropertiesFields,
 		},
 	},
 }

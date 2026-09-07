@@ -5,10 +5,10 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ScriptCmdlet_Properties_Parameters struct {
 	Description any
-	Name any
-	Optional any
-	Type any
-	Visibility any
+	Name        any
+	Optional    any
+	Type        any
+	Visibility  any
 }
 
 type ScriptCmdlet_Properties struct {
@@ -25,24 +25,24 @@ type ScriptCmdlet_Properties struct {
 }
 
 type ScriptCmdletConfig struct {
-	PrivateCloudName any
-	ScriptCmdletName any
+	PrivateCloudName  any
+	ScriptCmdletName  any
 	ScriptPackageName any
 }
 
 type ScriptCmdletAttrs struct {
 	PrivateCloudName any
 	// Properties of a pre-canned script
-	Properties any
-	ScriptCmdletName any
+	Properties        any
+	ScriptCmdletName  any
 	ScriptPackageName any
 }
 
 var ScriptCmdlet = ubx.DataSourceBinding{
 	WireType: "azure_vmware_script_cmdlet",
 	Fields: ubx.FieldMap{
-		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
-		"ScriptCmdletName": ubx.FieldSpec{WireName: "script_cmdlet_name"},
+		"PrivateCloudName":  ubx.FieldSpec{WireName: "private_cloud_name"},
+		"ScriptCmdletName":  ubx.FieldSpec{WireName: "script_cmdlet_name"},
 		"ScriptPackageName": ubx.FieldSpec{WireName: "script_package_name"},
 	},
 }

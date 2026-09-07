@@ -17,17 +17,17 @@ type OpenapiNetworkSecurityPerimeterConfiguration2_Properties_Profile_AccessRule
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration2_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	Direction any
-	EmailAddresses any
+	AddressPrefixes           any
+	Direction                 any
+	EmailAddresses            any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	PhoneNumbers any
-	Subscriptions any
+	PhoneNumbers              any
+	Subscriptions             any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration2_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -45,15 +45,15 @@ type OpenapiNetworkSecurityPerimeterConfiguration2_Properties_Profile struct {
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration2_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration2_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -79,13 +79,13 @@ type OpenapiNetworkSecurityPerimeterConfiguration2_Properties struct {
 
 type OpenapiNetworkSecurityPerimeterConfiguration2Config struct {
 	NetworkSecurityPerimeterConfigurationName any
-	WorkspaceName any
+	WorkspaceName                             any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration2Attrs struct {
 	NetworkSecurityPerimeterConfigurationName any
 	// Network security configuration properties.
-	Properties any
+	Properties    any
 	WorkspaceName any
 }
 

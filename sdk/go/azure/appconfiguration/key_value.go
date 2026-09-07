@@ -23,15 +23,15 @@ type KeyValue_Properties struct {
 }
 
 var KeyValue_PropertiesFields = ubx.FieldMap{
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Label": ubx.FieldSpec{WireName: "label"},
-		"LastModified": ubx.FieldSpec{WireName: "last_modified"},
-		"Locked": ubx.FieldSpec{WireName: "locked"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"ContentType":  ubx.FieldSpec{WireName: "content_type"},
+	"ETag":         ubx.FieldSpec{WireName: "e_tag"},
+	"Key":          ubx.FieldSpec{WireName: "key"},
+	"Label":        ubx.FieldSpec{WireName: "label"},
+	"LastModified": ubx.FieldSpec{WireName: "last_modified"},
+	"Locked":       ubx.FieldSpec{WireName: "locked"},
+	"Tags":         ubx.FieldSpec{WireName: "tags"},
+	"Value":        ubx.FieldSpec{WireName: "value"},
+}
 
 type KeyValueConfig struct {
 	// All key-value properties.
@@ -54,8 +54,8 @@ var KeyValue = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: KeyValue_PropertiesFields,
+			Kind:     "object",
+			Fields:   KeyValue_PropertiesFields,
 		},
 	},
 }

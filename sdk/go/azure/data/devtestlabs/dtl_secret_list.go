@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlSecretList_Value_Properties struct {
 	ProvisioningState any
-	UniqueIdentifier any
-	Value any
+	UniqueIdentifier  any
+	Value             any
 }
 
 type DtlSecretList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlSecretListConfig struct {
-	LabName any
+	LabName  any
 	UserName any
 }
 
@@ -32,7 +32,7 @@ type DtlSecretListAttrs struct {
 var DtlSecretList = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_secret_list",
 	Fields: ubx.FieldMap{
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
+		"LabName":  ubx.FieldSpec{WireName: "lab_name"},
 		"UserName": ubx.FieldSpec{WireName: "user_name"},
 	},
 }

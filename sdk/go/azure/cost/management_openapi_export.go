@@ -34,33 +34,33 @@ type ManagementOpenapiExport_Properties struct {
 }
 
 var ManagementOpenapiExport_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var ManagementOpenapiExport_Properties_Schedule_RecurrencePeriodFields = ubx.FieldMap{
-		"From": ubx.FieldSpec{WireName: "from"},
-		"To": ubx.FieldSpec{WireName: "to"},
-	}
+	"From": ubx.FieldSpec{WireName: "from"},
+	"To":   ubx.FieldSpec{WireName: "to"},
+}
 
 var ManagementOpenapiExport_Properties_ScheduleFields = ubx.FieldMap{
-		"Recurrence": ubx.FieldSpec{WireName: "recurrence"},
-		"RecurrencePeriod": ubx.FieldSpec{
-			WireName: "recurrence_period",
-			Kind: "object",
-			Fields: ManagementOpenapiExport_Properties_Schedule_RecurrencePeriodFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Recurrence": ubx.FieldSpec{WireName: "recurrence"},
+	"RecurrencePeriod": ubx.FieldSpec{
+		WireName: "recurrence_period",
+		Kind:     "object",
+		Fields:   ManagementOpenapiExport_Properties_Schedule_RecurrencePeriodFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var ManagementOpenapiExport_PropertiesFields = ubx.FieldMap{
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "object",
-			Fields: ManagementOpenapiExport_Properties_ScheduleFields,
-		},
-	}
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "object",
+		Fields:   ManagementOpenapiExport_Properties_ScheduleFields,
+	},
+}
 
 type ManagementOpenapiExportConfig struct {
 	// The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
@@ -94,14 +94,14 @@ var ManagementOpenapiExport = ubx.ResourceBinding{
 		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ManagementOpenapiExport_IdentityFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiExport_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagementOpenapiExport_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiExport_PropertiesFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

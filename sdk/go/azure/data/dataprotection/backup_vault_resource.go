@@ -4,7 +4,7 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupVaultResource_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -97,7 +97,7 @@ type BackupVaultResource_Properties_SecuritySettings struct {
 
 type BackupVaultResource_Properties_StorageSettings struct {
 	DatastoreType any
-	Type any
+	Type          any
 }
 
 type BackupVaultResource_Properties struct {
@@ -131,7 +131,7 @@ type BackupVaultResource_Properties struct {
 
 type BackupVaultResourceConfig struct {
 	OperationId any
-	VaultName any
+	VaultName   any
 }
 
 type BackupVaultResourceAttrs struct {
@@ -140,12 +140,12 @@ type BackupVaultResourceAttrs struct {
 	// Identity details
 	Identity any
 	// The geo-location where the resource lives
-	Location any
+	Location    any
 	OperationId any
 	// Backup Vault
 	Properties any
 	// Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 
@@ -153,6 +153,6 @@ var BackupVaultResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_backup_vault_resource",
 	Fields: ubx.FieldMap{
 		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":   ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

@@ -4,9 +4,9 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceNetwork_Properties_Subnets struct {
-	AddressList any
+	AddressList  any
 	FriendlyName any
-	Name any
+	Name         any
 }
 
 type ServiceNetwork_Properties struct {
@@ -21,26 +21,26 @@ type ServiceNetwork_Properties struct {
 }
 
 type ServiceNetworkConfig struct {
-	FabricName any
-	NetworkName any
+	FabricName   any
+	NetworkName  any
 	ResourceName any
 }
 
 type ServiceNetworkAttrs struct {
 	FabricName any
 	// Resource Location
-	Location any
+	Location    any
 	NetworkName any
 	// Network Properties.
-	Properties any
+	Properties   any
 	ResourceName any
 }
 
 var ServiceNetwork = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_network",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"NetworkName": ubx.FieldSpec{WireName: "network_name"},
+		"FabricName":   ubx.FieldSpec{WireName: "fabric_name"},
+		"NetworkName":  ubx.FieldSpec{WireName: "network_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

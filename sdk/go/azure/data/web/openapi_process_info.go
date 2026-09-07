@@ -4,37 +4,37 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProcessInfo_Properties_Modules_Properties struct {
-	BaseAddress any
-	FileDescription any
-	FileName any
-	FilePath any
-	FileVersion any
-	Href any
-	IsDebug any
-	Language any
+	BaseAddress      any
+	FileDescription  any
+	FileName         any
+	FilePath         any
+	FileVersion      any
+	Href             any
+	IsDebug          any
+	Language         any
 	ModuleMemorySize any
-	Product any
-	ProductVersion any
+	Product          any
+	ProductVersion   any
 }
 
 type OpenapiProcessInfo_Properties_Modules struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiProcessInfo_Properties_Threads_Properties struct {
-	BasePriority any
-	CurrentPriority any
-	Href any
-	Identifier any
-	PriorityLevel any
-	Process any
-	StartAddress any
-	StartTime any
-	State any
+	BasePriority       any
+	CurrentPriority    any
+	Href               any
+	Identifier         any
+	PriorityLevel      any
+	Process            any
+	StartAddress       any
+	StartTime          any
+	State              any
 	TotalProcessorTime any
-	UserProcessorTime any
-	WaitReason any
+	UserProcessorTime  any
+	WaitReason         any
 }
 
 type OpenapiProcessInfo_Properties_Threads struct {
@@ -118,15 +118,15 @@ type OpenapiProcessInfo_Properties struct {
 
 type OpenapiProcessInfoConfig struct {
 	InstanceId any
-	Name any
-	ProcessId any
+	Name       any
+	ProcessId  any
 }
 
 type OpenapiProcessInfoAttrs struct {
 	InstanceId any
 	// Kind of resource.
-	Kind any
-	Name any
+	Kind      any
+	Name      any
 	ProcessId any
 	// ProcessInfo resource specific properties
 	Properties any
@@ -136,7 +136,7 @@ var OpenapiProcessInfo = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_process_info",
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ProcessId": ubx.FieldSpec{WireName: "process_id"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
+		"ProcessId":  ubx.FieldSpec{WireName: "process_id"},
 	},
 }

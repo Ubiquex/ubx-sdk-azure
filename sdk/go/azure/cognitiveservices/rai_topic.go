@@ -23,15 +23,15 @@ type RaiTopic_Properties struct {
 }
 
 var RaiTopic_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"FailedReason": ubx.FieldSpec{WireName: "failed_reason"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"SampleBlobUrl": ubx.FieldSpec{WireName: "sample_blob_url"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TopicId": ubx.FieldSpec{WireName: "topic_id"},
-		"TopicName": ubx.FieldSpec{WireName: "topic_name"},
-	}
+	"CreatedAt":      ubx.FieldSpec{WireName: "created_at"},
+	"Description":    ubx.FieldSpec{WireName: "description"},
+	"FailedReason":   ubx.FieldSpec{WireName: "failed_reason"},
+	"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
+	"SampleBlobUrl":  ubx.FieldSpec{WireName: "sample_blob_url"},
+	"Status":         ubx.FieldSpec{WireName: "status"},
+	"TopicId":        ubx.FieldSpec{WireName: "topic_id"},
+	"TopicName":      ubx.FieldSpec{WireName: "topic_name"},
+}
 
 type RaiTopicConfig struct {
 	// RAI Custom Topic properties.
@@ -54,8 +54,8 @@ var RaiTopic = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RaiTopic_PropertiesFields,
+			Kind:     "object",
+			Fields:   RaiTopic_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

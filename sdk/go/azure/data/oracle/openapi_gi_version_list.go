@@ -12,26 +12,26 @@ type OpenapiGiVersionList_Value struct {
 }
 
 type OpenapiGiVersionListConfig struct {
-	Shape any
+	Shape          any
 	ShapeAttribute any
-	Zone any
+	Zone           any
 }
 
 type OpenapiGiVersionListAttrs struct {
 	// The link to the next page of items
-	NextLink any
-	Shape any
+	NextLink       any
+	Shape          any
 	ShapeAttribute any
 	// The GiVersion items on this page
 	Value any
-	Zone any
+	Zone  any
 }
 
 var OpenapiGiVersionList = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_gi_version_list",
 	Fields: ubx.FieldMap{
-		"Shape": ubx.FieldSpec{WireName: "shape"},
+		"Shape":          ubx.FieldSpec{WireName: "shape"},
 		"ShapeAttribute": ubx.FieldSpec{WireName: "shape_attribute"},
-		"Zone": ubx.FieldSpec{WireName: "zone"},
+		"Zone":           ubx.FieldSpec{WireName: "zone"},
 	},
 }

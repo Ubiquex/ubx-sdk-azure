@@ -4,11 +4,11 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServerazureadadministratorsServerAzureAdadministratorList_Value_Properties struct {
-	AdministratorType any
+	AdministratorType         any
 	AzureAdonlyAuthentication any
-	Login any
-	Sid any
-	TenantId any
+	Login                     any
+	Sid                       any
+	TenantId                  any
 }
 
 type ServerazureadadministratorsServerAzureAdadministratorList_Value struct {
@@ -21,7 +21,7 @@ type ServerazureadadministratorsServerAzureAdadministratorListConfig struct {
 
 type ServerazureadadministratorsServerAzureAdadministratorListAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink   any
 	ServerName any
 	// Array of results.
 	Value any

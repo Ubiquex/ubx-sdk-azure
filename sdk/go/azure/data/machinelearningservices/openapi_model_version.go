@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiModelVersion_Properties_Datasets struct {
-	Id any
+	Id   any
 	Name any
 }
 
@@ -30,24 +30,24 @@ type OpenapiModelVersion_Properties struct {
 }
 
 type OpenapiModelVersionConfig struct {
-	Name any
-	Version any
+	Name          any
+	Version       any
 	WorkspaceName any
 }
 
 type OpenapiModelVersionAttrs struct {
 	Name any
 	// Model asset version details.
-	Properties any
-	Version any
+	Properties    any
+	Version       any
 	WorkspaceName any
 }
 
 var OpenapiModelVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_model_version",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

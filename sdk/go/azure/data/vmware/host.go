@@ -33,14 +33,14 @@ type Host_Sku struct {
 }
 
 type HostConfig struct {
-	ClusterName any
-	HostId any
+	ClusterName      any
+	HostId           any
 	PrivateCloudName any
 }
 
 type HostAttrs struct {
-	ClusterName any
-	HostId any
+	ClusterName      any
+	HostId           any
 	PrivateCloudName any
 	// The properties of a host.
 	Properties any
@@ -53,8 +53,8 @@ type HostAttrs struct {
 var Host = ubx.DataSourceBinding{
 	WireType: "azure_vmware_host",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"HostId": ubx.FieldSpec{WireName: "host_id"},
+		"ClusterName":      ubx.FieldSpec{WireName: "cluster_name"},
+		"HostId":           ubx.FieldSpec{WireName: "host_id"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 	},
 }

@@ -30,7 +30,7 @@ type OpenapiConfiguration_Properties struct {
 
 type OpenapiConfigurationConfig struct {
 	ConfigurationName any
-	ServerName any
+	ServerName        any
 }
 
 type OpenapiConfigurationAttrs struct {
@@ -44,6 +44,6 @@ var OpenapiConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_configuration",
 	Fields: ubx.FieldMap{
 		"ConfigurationName": ubx.FieldSpec{WireName: "configuration_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":        ubx.FieldSpec{WireName: "server_name"},
 	},
 }

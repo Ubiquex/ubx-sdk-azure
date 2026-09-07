@@ -37,57 +37,57 @@ type ReservationGroup_Properties struct {
 }
 
 var ReservationGroup_Properties_CapacityReservationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ReservationGroup_Properties_InstanceView_CapacityReservationsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var ReservationGroup_Properties_InstanceViewFields = ubx.FieldMap{
-		"CapacityReservations": ubx.FieldSpec{
-			WireName: "capacity_reservations",
-			Kind: "list",
-			Fields: ReservationGroup_Properties_InstanceView_CapacityReservationsFields,
-		},
-		"SharedSubscriptionIds": ubx.FieldSpec{
-			WireName: "shared_subscription_ids",
-			Kind: "list",
-			Fields: ReservationGroup_Properties_CapacityReservationsFields,
-		},
-	}
+	"CapacityReservations": ubx.FieldSpec{
+		WireName: "capacity_reservations",
+		Kind:     "list",
+		Fields:   ReservationGroup_Properties_InstanceView_CapacityReservationsFields,
+	},
+	"SharedSubscriptionIds": ubx.FieldSpec{
+		WireName: "shared_subscription_ids",
+		Kind:     "list",
+		Fields:   ReservationGroup_Properties_CapacityReservationsFields,
+	},
+}
 
 var ReservationGroup_Properties_SharingProfileFields = ubx.FieldMap{
-		"SubscriptionIds": ubx.FieldSpec{
-			WireName: "subscription_ids",
-			Kind: "list",
-			Fields: ReservationGroup_Properties_CapacityReservationsFields,
-		},
-	}
+	"SubscriptionIds": ubx.FieldSpec{
+		WireName: "subscription_ids",
+		Kind:     "list",
+		Fields:   ReservationGroup_Properties_CapacityReservationsFields,
+	},
+}
 
 var ReservationGroup_PropertiesFields = ubx.FieldMap{
-		"CapacityReservations": ubx.FieldSpec{
-			WireName: "capacity_reservations",
-			Kind: "list",
-			Fields: ReservationGroup_Properties_CapacityReservationsFields,
-		},
-		"InstanceView": ubx.FieldSpec{
-			WireName: "instance_view",
-			Kind: "object",
-			Fields: ReservationGroup_Properties_InstanceViewFields,
-		},
-		"ReservationType": ubx.FieldSpec{WireName: "reservation_type"},
-		"SharingProfile": ubx.FieldSpec{
-			WireName: "sharing_profile",
-			Kind: "object",
-			Fields: ReservationGroup_Properties_SharingProfileFields,
-		},
-		"VirtualMachinesAssociated": ubx.FieldSpec{
-			WireName: "virtual_machines_associated",
-			Kind: "list",
-			Fields: ReservationGroup_Properties_CapacityReservationsFields,
-		},
-	}
+	"CapacityReservations": ubx.FieldSpec{
+		WireName: "capacity_reservations",
+		Kind:     "list",
+		Fields:   ReservationGroup_Properties_CapacityReservationsFields,
+	},
+	"InstanceView": ubx.FieldSpec{
+		WireName: "instance_view",
+		Kind:     "object",
+		Fields:   ReservationGroup_Properties_InstanceViewFields,
+	},
+	"ReservationType": ubx.FieldSpec{WireName: "reservation_type"},
+	"SharingProfile": ubx.FieldSpec{
+		WireName: "sharing_profile",
+		Kind:     "object",
+		Fields:   ReservationGroup_Properties_SharingProfileFields,
+	},
+	"VirtualMachinesAssociated": ubx.FieldSpec{
+		WireName: "virtual_machines_associated",
+		Kind:     "list",
+		Fields:   ReservationGroup_Properties_CapacityReservationsFields,
+	},
+}
 
 type ReservationGroupConfig struct {
 	// The geo-location where the resource lives
@@ -117,10 +117,10 @@ var ReservationGroup = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ReservationGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   ReservationGroup_PropertiesFields,
 		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

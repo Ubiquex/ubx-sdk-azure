@@ -25,7 +25,7 @@ type OpenapiPremierAddOnAttrs struct {
 	Kind any
 	// The geo-location where the resource lives
 	Location any
-	Name any
+	Name     any
 	// PremierAddOn resource specific properties
 	Properties any
 	// Resource tags.

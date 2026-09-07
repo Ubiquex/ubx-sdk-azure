@@ -17,17 +17,17 @@ type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Proper
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	Direction any
-	EmailAddresses any
+	AddressPrefixes           any
+	Direction                 any
+	EmailAddresses            any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	PhoneNumbers any
-	Subscriptions any
+	PhoneNumbers              any
+	Subscriptions             any
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -45,15 +45,15 @@ type NetworkSecurityPerimeterConfiguration_Properties_Profile struct {
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type NetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -78,21 +78,21 @@ type NetworkSecurityPerimeterConfiguration_Properties struct {
 }
 
 type NetworkSecurityPerimeterConfigurationConfig struct {
-	NspConfigName any
+	NspConfigName     any
 	SearchServiceName any
 }
 
 type NetworkSecurityPerimeterConfigurationAttrs struct {
 	NspConfigName any
 	// Network security configuration properties.
-	Properties any
+	Properties        any
 	SearchServiceName any
 }
 
 var NetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_search_network_security_perimeter_configuration",
 	Fields: ubx.FieldMap{
-		"NspConfigName": ubx.FieldSpec{WireName: "nsp_config_name"},
+		"NspConfigName":     ubx.FieldSpec{WireName: "nsp_config_name"},
 		"SearchServiceName": ubx.FieldSpec{WireName: "search_service_name"},
 	},
 }

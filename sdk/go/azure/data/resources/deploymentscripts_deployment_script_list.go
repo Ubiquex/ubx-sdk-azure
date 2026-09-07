@@ -4,19 +4,19 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DeploymentscriptsDeploymentScriptList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DeploymentscriptsDeploymentScriptList_Value_Identity struct {
-	TenantId any
-	Type any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type DeploymentscriptsDeploymentScriptList_Value struct {
 	Identity any
-	Kind any
+	Kind     any
 }
 
 type DeploymentscriptsDeploymentScriptListConfig struct {
@@ -31,6 +31,5 @@ type DeploymentscriptsDeploymentScriptListAttrs struct {
 
 var DeploymentscriptsDeploymentScriptList = ubx.DataSourceBinding{
 	WireType: "azure_resources_deploymentscripts_deployment_script_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

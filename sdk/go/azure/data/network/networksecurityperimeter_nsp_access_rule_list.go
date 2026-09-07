@@ -4,8 +4,8 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterNspAccessRuleList_Value_Properties_NetworkSecurityPerimeters struct {
-	Id any
-	Location any
+	Id            any
+	Location      any
 	PerimeterGuid any
 }
 
@@ -14,15 +14,15 @@ type NetworksecurityperimeterNspAccessRuleList_Value_Properties_Subscriptions st
 }
 
 type NetworksecurityperimeterNspAccessRuleList_Value_Properties struct {
-	AddressPrefixes any
-	Direction any
-	EmailAddresses any
+	AddressPrefixes           any
+	Direction                 any
+	EmailAddresses            any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	PhoneNumbers any
-	ProvisioningState any
-	ServiceTags any
-	Subscriptions any
+	PhoneNumbers              any
+	ProvisioningState         any
+	ServiceTags               any
+	Subscriptions             any
 }
 
 type NetworksecurityperimeterNspAccessRuleList_Value struct {
@@ -31,13 +31,13 @@ type NetworksecurityperimeterNspAccessRuleList_Value struct {
 
 type NetworksecurityperimeterNspAccessRuleListConfig struct {
 	NetworkSecurityPerimeterName any
-	ProfileName any
+	ProfileName                  any
 }
 
 type NetworksecurityperimeterNspAccessRuleListAttrs struct {
 	NetworkSecurityPerimeterName any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The NspAccessRule items on this page
 	Value any
@@ -47,6 +47,6 @@ var NetworksecurityperimeterNspAccessRuleList = ubx.DataSourceBinding{
 	WireType: "azure_network_networksecurityperimeter_nsp_access_rule_list",
 	Fields: ubx.FieldMap{
 		"NetworkSecurityPerimeterName": ubx.FieldSpec{WireName: "network_security_perimeter_name"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+		"ProfileName":                  ubx.FieldSpec{WireName: "profile_name"},
 	},
 }

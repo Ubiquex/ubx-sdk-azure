@@ -10,8 +10,8 @@ type OpenapiCustomDnsSuffixConfiguration_Properties struct {
 	DnsSuffix any
 	// The user-assigned identity to use for resolving the key vault certificate reference. If not specified, the system-assigned ASE identity will be used if available.
 	KeyVaultReferenceIdentity any
-	ProvisioningDetails any
-	ProvisioningState any
+	ProvisioningDetails       any
+	ProvisioningState         any
 }
 
 type OpenapiCustomDnsSuffixConfigurationConfig struct {

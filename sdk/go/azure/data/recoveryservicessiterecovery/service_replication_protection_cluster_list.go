@@ -4,51 +4,51 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceReplicationProtectionClusterList_Value_Properties_ClusterRegisteredNodes struct {
-	BiosId any
-	ClusterNodeFqdn any
+	BiosId                  any
+	ClusterNodeFqdn         any
 	IsSharedDiskVirtualNode any
-	MachineId any
+	MachineId               any
 }
 
 type ServiceReplicationProtectionClusterList_Value_Properties_CurrentScenario struct {
-	JobId any
+	JobId        any
 	ScenarioName any
-	StartTime any
+	StartTime    any
 }
 
 type ServiceReplicationProtectionClusterList_Value_Properties_HealthErrors_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceReplicationProtectionClusterList_Value_Properties_HealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceReplicationProtectionClusterList_Value_Properties_ProviderSpecificDetails struct {
@@ -56,47 +56,47 @@ type ServiceReplicationProtectionClusterList_Value_Properties_ProviderSpecificDe
 }
 
 type ServiceReplicationProtectionClusterList_Value_Properties_SharedDiskProperties struct {
-	ActiveLocation any
-	AllowedOperations any
-	CurrentScenario any
-	HealthErrors any
-	ProtectionState any
-	ReplicationHealth any
+	ActiveLocation                    any
+	AllowedOperations                 any
+	CurrentScenario                   any
+	HealthErrors                      any
+	ProtectionState                   any
+	ReplicationHealth                 any
 	SharedDiskProviderSpecificDetails any
-	TestFailoverState any
+	TestFailoverState                 any
 }
 
 type ServiceReplicationProtectionClusterList_Value_Properties struct {
-	ActiveLocation any
-	AgentClusterId any
-	AllowedOperations any
-	AreAllClusterNodesRegistered any
-	ClusterFqdn any
-	ClusterNodeFqdns any
-	ClusterProtectedItemIds any
-	ClusterRegisteredNodes any
-	CurrentScenario any
-	HealthErrors any
-	LastSuccessfulFailoverTime any
-	LastSuccessfulTestFailoverTime any
-	PolicyFriendlyName any
-	PolicyId any
-	PrimaryFabricFriendlyName any
-	PrimaryFabricProvider any
-	PrimaryProtectionContainerFriendlyName any
-	ProtectionClusterType any
-	ProtectionState any
-	ProtectionStateDescription any
-	ProviderSpecificDetails any
-	ProvisioningState any
-	RecoveryContainerId any
-	RecoveryFabricFriendlyName any
-	RecoveryFabricId any
+	ActiveLocation                          any
+	AgentClusterId                          any
+	AllowedOperations                       any
+	AreAllClusterNodesRegistered            any
+	ClusterFqdn                             any
+	ClusterNodeFqdns                        any
+	ClusterProtectedItemIds                 any
+	ClusterRegisteredNodes                  any
+	CurrentScenario                         any
+	HealthErrors                            any
+	LastSuccessfulFailoverTime              any
+	LastSuccessfulTestFailoverTime          any
+	PolicyFriendlyName                      any
+	PolicyId                                any
+	PrimaryFabricFriendlyName               any
+	PrimaryFabricProvider                   any
+	PrimaryProtectionContainerFriendlyName  any
+	ProtectionClusterType                   any
+	ProtectionState                         any
+	ProtectionStateDescription              any
+	ProviderSpecificDetails                 any
+	ProvisioningState                       any
+	RecoveryContainerId                     any
+	RecoveryFabricFriendlyName              any
+	RecoveryFabricId                        any
 	RecoveryProtectionContainerFriendlyName any
-	ReplicationHealth any
-	SharedDiskProperties any
-	TestFailoverState any
-	TestFailoverStateDescription any
+	ReplicationHealth                       any
+	SharedDiskProperties                    any
+	TestFailoverState                       any
+	TestFailoverStateDescription            any
 }
 
 type ServiceReplicationProtectionClusterList_Value struct {
@@ -104,17 +104,17 @@ type ServiceReplicationProtectionClusterList_Value struct {
 }
 
 type ServiceReplicationProtectionClusterListConfig struct {
-	FabricName any
+	FabricName              any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 }
 
 type ServiceReplicationProtectionClusterListAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
+	NextLink                any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 	// The ReplicationProtectionCluster items on this page
 	Value any
 }
@@ -122,8 +122,8 @@ type ServiceReplicationProtectionClusterListAttrs struct {
 var ServiceReplicationProtectionClusterList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_replication_protection_cluster_list",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"FabricName":              ubx.FieldSpec{WireName: "fabric_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":            ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

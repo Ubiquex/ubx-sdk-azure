@@ -106,84 +106,84 @@ type OpenapiThreatIntelligenceInformation_Properties struct {
 }
 
 var OpenapiThreatIntelligenceInformation_Properties_ExternalReferencesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ExternalId": ubx.FieldSpec{WireName: "external_id"},
-		"Hashes": ubx.FieldSpec{WireName: "hashes"},
-		"SourceName": ubx.FieldSpec{WireName: "source_name"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"ExternalId":  ubx.FieldSpec{WireName: "external_id"},
+	"Hashes":      ubx.FieldSpec{WireName: "hashes"},
+	"SourceName":  ubx.FieldSpec{WireName: "source_name"},
+	"Url":         ubx.FieldSpec{WireName: "url"},
+}
 
 var OpenapiThreatIntelligenceInformation_Properties_GranularMarkingsFields = ubx.FieldMap{
-		"Language": ubx.FieldSpec{WireName: "language"},
-		"MarkingRef": ubx.FieldSpec{WireName: "marking_ref"},
-		"Selectors": ubx.FieldSpec{WireName: "selectors"},
-	}
+	"Language":   ubx.FieldSpec{WireName: "language"},
+	"MarkingRef": ubx.FieldSpec{WireName: "marking_ref"},
+	"Selectors":  ubx.FieldSpec{WireName: "selectors"},
+}
 
 var OpenapiThreatIntelligenceInformation_Properties_KillChainPhasesFields = ubx.FieldMap{
-		"KillChainName": ubx.FieldSpec{WireName: "kill_chain_name"},
-		"PhaseName": ubx.FieldSpec{WireName: "phase_name"},
-	}
+	"KillChainName": ubx.FieldSpec{WireName: "kill_chain_name"},
+	"PhaseName":     ubx.FieldSpec{WireName: "phase_name"},
+}
 
 var OpenapiThreatIntelligenceInformation_Properties_ParsedPattern_PatternTypeValuesFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-		"ValueType": ubx.FieldSpec{WireName: "value_type"},
-	}
+	"Value":     ubx.FieldSpec{WireName: "value"},
+	"ValueType": ubx.FieldSpec{WireName: "value_type"},
+}
 
 var OpenapiThreatIntelligenceInformation_Properties_ParsedPatternFields = ubx.FieldMap{
-		"PatternTypeKey": ubx.FieldSpec{WireName: "pattern_type_key"},
-		"PatternTypeValues": ubx.FieldSpec{
-			WireName: "pattern_type_values",
-			Kind: "list",
-			Fields: OpenapiThreatIntelligenceInformation_Properties_ParsedPattern_PatternTypeValuesFields,
-		},
-	}
+	"PatternTypeKey": ubx.FieldSpec{WireName: "pattern_type_key"},
+	"PatternTypeValues": ubx.FieldSpec{
+		WireName: "pattern_type_values",
+		Kind:     "list",
+		Fields:   OpenapiThreatIntelligenceInformation_Properties_ParsedPattern_PatternTypeValuesFields,
+	},
+}
 
 var OpenapiThreatIntelligenceInformation_PropertiesFields = ubx.FieldMap{
-		"Confidence": ubx.FieldSpec{WireName: "confidence"},
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"CreatedByRef": ubx.FieldSpec{WireName: "created_by_ref"},
-		"Defanged": ubx.FieldSpec{WireName: "defanged"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Extensions": ubx.FieldSpec{WireName: "extensions"},
-		"ExternalId": ubx.FieldSpec{WireName: "external_id"},
-		"ExternalLastUpdatedTimeUtc": ubx.FieldSpec{WireName: "external_last_updated_time_utc"},
-		"ExternalReferences": ubx.FieldSpec{
-			WireName: "external_references",
-			Kind: "list",
-			Fields: OpenapiThreatIntelligenceInformation_Properties_ExternalReferencesFields,
-		},
-		"GranularMarkings": ubx.FieldSpec{
-			WireName: "granular_markings",
-			Kind: "list",
-			Fields: OpenapiThreatIntelligenceInformation_Properties_GranularMarkingsFields,
-		},
-		"IndicatorTypes": ubx.FieldSpec{WireName: "indicator_types"},
-		"KillChainPhases": ubx.FieldSpec{
-			WireName: "kill_chain_phases",
-			Kind: "list",
-			Fields: OpenapiThreatIntelligenceInformation_Properties_KillChainPhasesFields,
-		},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-		"Language": ubx.FieldSpec{WireName: "language"},
-		"LastUpdatedTimeUtc": ubx.FieldSpec{WireName: "last_updated_time_utc"},
-		"Modified": ubx.FieldSpec{WireName: "modified"},
-		"ObjectMarkingRefs": ubx.FieldSpec{WireName: "object_marking_refs"},
-		"ParsedPattern": ubx.FieldSpec{
-			WireName: "parsed_pattern",
-			Kind: "list",
-			Fields: OpenapiThreatIntelligenceInformation_Properties_ParsedPatternFields,
-		},
-		"Pattern": ubx.FieldSpec{WireName: "pattern"},
-		"PatternType": ubx.FieldSpec{WireName: "pattern_type"},
-		"PatternVersion": ubx.FieldSpec{WireName: "pattern_version"},
-		"Revoked": ubx.FieldSpec{WireName: "revoked"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"ThreatIntelligenceTags": ubx.FieldSpec{WireName: "threat_intelligence_tags"},
-		"ThreatTypes": ubx.FieldSpec{WireName: "threat_types"},
-		"ValidFrom": ubx.FieldSpec{WireName: "valid_from"},
-		"ValidUntil": ubx.FieldSpec{WireName: "valid_until"},
-	}
+	"Confidence":                 ubx.FieldSpec{WireName: "confidence"},
+	"Created":                    ubx.FieldSpec{WireName: "created"},
+	"CreatedByRef":               ubx.FieldSpec{WireName: "created_by_ref"},
+	"Defanged":                   ubx.FieldSpec{WireName: "defanged"},
+	"Description":                ubx.FieldSpec{WireName: "description"},
+	"DisplayName":                ubx.FieldSpec{WireName: "display_name"},
+	"Extensions":                 ubx.FieldSpec{WireName: "extensions"},
+	"ExternalId":                 ubx.FieldSpec{WireName: "external_id"},
+	"ExternalLastUpdatedTimeUtc": ubx.FieldSpec{WireName: "external_last_updated_time_utc"},
+	"ExternalReferences": ubx.FieldSpec{
+		WireName: "external_references",
+		Kind:     "list",
+		Fields:   OpenapiThreatIntelligenceInformation_Properties_ExternalReferencesFields,
+	},
+	"GranularMarkings": ubx.FieldSpec{
+		WireName: "granular_markings",
+		Kind:     "list",
+		Fields:   OpenapiThreatIntelligenceInformation_Properties_GranularMarkingsFields,
+	},
+	"IndicatorTypes": ubx.FieldSpec{WireName: "indicator_types"},
+	"KillChainPhases": ubx.FieldSpec{
+		WireName: "kill_chain_phases",
+		Kind:     "list",
+		Fields:   OpenapiThreatIntelligenceInformation_Properties_KillChainPhasesFields,
+	},
+	"Labels":             ubx.FieldSpec{WireName: "labels"},
+	"Language":           ubx.FieldSpec{WireName: "language"},
+	"LastUpdatedTimeUtc": ubx.FieldSpec{WireName: "last_updated_time_utc"},
+	"Modified":           ubx.FieldSpec{WireName: "modified"},
+	"ObjectMarkingRefs":  ubx.FieldSpec{WireName: "object_marking_refs"},
+	"ParsedPattern": ubx.FieldSpec{
+		WireName: "parsed_pattern",
+		Kind:     "list",
+		Fields:   OpenapiThreatIntelligenceInformation_Properties_ParsedPatternFields,
+	},
+	"Pattern":                ubx.FieldSpec{WireName: "pattern"},
+	"PatternType":            ubx.FieldSpec{WireName: "pattern_type"},
+	"PatternVersion":         ubx.FieldSpec{WireName: "pattern_version"},
+	"Revoked":                ubx.FieldSpec{WireName: "revoked"},
+	"Source":                 ubx.FieldSpec{WireName: "source"},
+	"ThreatIntelligenceTags": ubx.FieldSpec{WireName: "threat_intelligence_tags"},
+	"ThreatTypes":            ubx.FieldSpec{WireName: "threat_types"},
+	"ValidFrom":              ubx.FieldSpec{WireName: "valid_from"},
+	"ValidUntil":             ubx.FieldSpec{WireName: "valid_until"},
+}
 
 type OpenapiThreatIntelligenceInformationConfig struct {
 	// Etag of the azure resource
@@ -214,8 +214,8 @@ var OpenapiThreatIntelligenceInformation = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiThreatIntelligenceInformation_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiThreatIntelligenceInformation_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

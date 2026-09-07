@@ -56,37 +56,37 @@ type BmsProtectedItemResource_Properties struct {
 }
 
 var BmsProtectedItemResource_Properties_SourceSideScanInfoFields = ubx.FieldMap{
-		"SourceSideScanStatus": ubx.FieldSpec{WireName: "source_side_scan_status"},
-		"SourceSideScanSummary": ubx.FieldSpec{WireName: "source_side_scan_summary"},
-	}
+	"SourceSideScanStatus":  ubx.FieldSpec{WireName: "source_side_scan_status"},
+	"SourceSideScanSummary": ubx.FieldSpec{WireName: "source_side_scan_summary"},
+}
 
 var BmsProtectedItemResource_PropertiesFields = ubx.FieldMap{
-		"BackupManagementType": ubx.FieldSpec{WireName: "backup_management_type"},
-		"BackupSetName": ubx.FieldSpec{WireName: "backup_set_name"},
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"DeferredDeleteTimeInUtc": ubx.FieldSpec{WireName: "deferred_delete_time_in_utc"},
-		"DeferredDeleteTimeRemaining": ubx.FieldSpec{WireName: "deferred_delete_time_remaining"},
-		"IsArchiveEnabled": ubx.FieldSpec{WireName: "is_archive_enabled"},
-		"IsDeferredDeleteScheduleUpcoming": ubx.FieldSpec{WireName: "is_deferred_delete_schedule_upcoming"},
-		"IsRehydrate": ubx.FieldSpec{WireName: "is_rehydrate"},
-		"IsScheduledForDeferredDelete": ubx.FieldSpec{WireName: "is_scheduled_for_deferred_delete"},
-		"LastRecoveryPoint": ubx.FieldSpec{WireName: "last_recovery_point"},
-		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
-		"PolicyName": ubx.FieldSpec{WireName: "policy_name"},
-		"ProtectedItemType": ubx.FieldSpec{WireName: "protected_item_type"},
-		"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
-		"SoftDeleteRetentionPeriodInDays": ubx.FieldSpec{WireName: "soft_delete_retention_period_in_days"},
-		"SourceLocation": ubx.FieldSpec{WireName: "source_location"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-		"SourceSideScanInfo": ubx.FieldSpec{
-			WireName: "source_side_scan_info",
-			Kind: "object",
-			Fields: BmsProtectedItemResource_Properties_SourceSideScanInfoFields,
-		},
-		"VaultId": ubx.FieldSpec{WireName: "vault_id"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"BackupManagementType":             ubx.FieldSpec{WireName: "backup_management_type"},
+	"BackupSetName":                    ubx.FieldSpec{WireName: "backup_set_name"},
+	"ContainerName":                    ubx.FieldSpec{WireName: "container_name"},
+	"CreateMode":                       ubx.FieldSpec{WireName: "create_mode"},
+	"DeferredDeleteTimeInUtc":          ubx.FieldSpec{WireName: "deferred_delete_time_in_utc"},
+	"DeferredDeleteTimeRemaining":      ubx.FieldSpec{WireName: "deferred_delete_time_remaining"},
+	"IsArchiveEnabled":                 ubx.FieldSpec{WireName: "is_archive_enabled"},
+	"IsDeferredDeleteScheduleUpcoming": ubx.FieldSpec{WireName: "is_deferred_delete_schedule_upcoming"},
+	"IsRehydrate":                      ubx.FieldSpec{WireName: "is_rehydrate"},
+	"IsScheduledForDeferredDelete":     ubx.FieldSpec{WireName: "is_scheduled_for_deferred_delete"},
+	"LastRecoveryPoint":                ubx.FieldSpec{WireName: "last_recovery_point"},
+	"PolicyId":                         ubx.FieldSpec{WireName: "policy_id"},
+	"PolicyName":                       ubx.FieldSpec{WireName: "policy_name"},
+	"ProtectedItemType":                ubx.FieldSpec{WireName: "protected_item_type"},
+	"ResourceGuardOperationRequests":   ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
+	"SoftDeleteRetentionPeriodInDays":  ubx.FieldSpec{WireName: "soft_delete_retention_period_in_days"},
+	"SourceLocation":                   ubx.FieldSpec{WireName: "source_location"},
+	"SourceResourceId":                 ubx.FieldSpec{WireName: "source_resource_id"},
+	"SourceSideScanInfo": ubx.FieldSpec{
+		WireName: "source_side_scan_info",
+		Kind:     "object",
+		Fields:   BmsProtectedItemResource_Properties_SourceSideScanInfoFields,
+	},
+	"VaultId":      ubx.FieldSpec{WireName: "vault_id"},
+	"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
+}
 
 type BmsProtectedItemResourceConfig struct {
 	// Optional ETag.
@@ -113,12 +113,12 @@ type BmsProtectedItemResourceAttrs struct {
 var BmsProtectedItemResource = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protected_item_resource",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
+		"ETag":     ubx.FieldSpec{WireName: "e_tag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BmsProtectedItemResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BmsProtectedItemResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

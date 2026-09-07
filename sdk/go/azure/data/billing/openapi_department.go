@@ -16,12 +16,12 @@ type OpenapiDepartment_Properties struct {
 
 type OpenapiDepartmentConfig struct {
 	BillingAccountName any
-	DepartmentName any
+	DepartmentName     any
 }
 
 type OpenapiDepartmentAttrs struct {
 	BillingAccountName any
-	DepartmentName any
+	DepartmentName     any
 	// Optional grouping of enrollment accounts to segment costs into logical groupings and set budgets.
 	Properties any
 	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
@@ -32,6 +32,6 @@ var OpenapiDepartment = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_department",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"DepartmentName": ubx.FieldSpec{WireName: "department_name"},
+		"DepartmentName":     ubx.FieldSpec{WireName: "department_name"},
 	},
 }

@@ -21,7 +21,7 @@ type OpenapiPrivateLinkResourceAttrs struct {
 	GroupName any
 	// Properties of a private link resource.
 	Properties any
-	ScopeName any
+	ScopeName  any
 }
 
 var OpenapiPrivateLinkResource = ubx.DataSourceBinding{

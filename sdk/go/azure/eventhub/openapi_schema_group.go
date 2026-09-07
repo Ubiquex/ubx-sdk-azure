@@ -19,13 +19,13 @@ type OpenapiSchemaGroup_Properties struct {
 }
 
 var OpenapiSchemaGroup_PropertiesFields = ubx.FieldMap{
-		"CreatedAtUtc": ubx.FieldSpec{WireName: "created_at_utc"},
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
-		"GroupProperties": ubx.FieldSpec{WireName: "group_properties"},
-		"SchemaCompatibility": ubx.FieldSpec{WireName: "schema_compatibility"},
-		"SchemaType": ubx.FieldSpec{WireName: "schema_type"},
-		"UpdatedAtUtc": ubx.FieldSpec{WireName: "updated_at_utc"},
-	}
+	"CreatedAtUtc":        ubx.FieldSpec{WireName: "created_at_utc"},
+	"ETag":                ubx.FieldSpec{WireName: "e_tag"},
+	"GroupProperties":     ubx.FieldSpec{WireName: "group_properties"},
+	"SchemaCompatibility": ubx.FieldSpec{WireName: "schema_compatibility"},
+	"SchemaType":          ubx.FieldSpec{WireName: "schema_type"},
+	"UpdatedAtUtc":        ubx.FieldSpec{WireName: "updated_at_utc"},
+}
 
 type OpenapiSchemaGroupConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -44,8 +44,8 @@ var OpenapiSchemaGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSchemaGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSchemaGroup_PropertiesFields,
 		},
 	},
 }

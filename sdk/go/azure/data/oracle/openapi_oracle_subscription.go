@@ -51,6 +51,5 @@ type OpenapiOracleSubscriptionAttrs struct {
 
 var OpenapiOracleSubscription = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_oracle_subscription",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

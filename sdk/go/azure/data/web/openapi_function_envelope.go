@@ -34,8 +34,8 @@ type OpenapiFunctionEnvelope_Properties struct {
 
 type OpenapiFunctionEnvelopeConfig struct {
 	FunctionName any
-	Name any
-	Slot any
+	Name         any
+	Slot         any
 }
 
 type OpenapiFunctionEnvelopeAttrs struct {
@@ -45,14 +45,14 @@ type OpenapiFunctionEnvelopeAttrs struct {
 	Name any
 	// FunctionEnvelope resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 }
 
 var OpenapiFunctionEnvelope = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_function_envelope",
 	Fields: ubx.FieldMap{
 		"FunctionName": ubx.FieldSpec{WireName: "function_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
+		"Slot":         ubx.FieldSpec{WireName: "slot"},
 	},
 }

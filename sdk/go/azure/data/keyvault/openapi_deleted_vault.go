@@ -25,7 +25,7 @@ type OpenapiDeletedVaultConfig struct {
 type OpenapiDeletedVaultAttrs struct {
 	// Properties of the deleted vault.
 	Properties any
-	VaultName any
+	VaultName  any
 }
 
 var OpenapiDeletedVault = ubx.DataSourceBinding{

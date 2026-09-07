@@ -9,21 +9,21 @@ type OpenapiEnvironmentContainer_Properties struct {
 }
 
 type OpenapiEnvironmentContainerConfig struct {
-	Name any
+	Name          any
 	WorkspaceName any
 }
 
 type OpenapiEnvironmentContainerAttrs struct {
 	Name any
 	// Container for environment specification versions.
-	Properties any
+	Properties    any
 	WorkspaceName any
 }
 
 var OpenapiEnvironmentContainer = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_environment_container",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

@@ -14,11 +14,11 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPeri
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
 	AddressPrefixes any
-	Direction any
+	Direction       any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -36,15 +36,15 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -70,20 +70,20 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties struct {
 
 type OpenapiNetworkSecurityPerimeterConfigurationConfig struct {
 	PerimeterName any
-	ScopeName any
+	ScopeName     any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationAttrs struct {
 	PerimeterName any
 	// Properties that define a Network Security Perimeter resource.
 	Properties any
-	ScopeName any
+	ScopeName  any
 }
 
 var OpenapiNetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_network_security_perimeter_configuration",
 	Fields: ubx.FieldMap{
 		"PerimeterName": ubx.FieldSpec{WireName: "perimeter_name"},
-		"ScopeName": ubx.FieldSpec{WireName: "scope_name"},
+		"ScopeName":     ubx.FieldSpec{WireName: "scope_name"},
 	},
 }

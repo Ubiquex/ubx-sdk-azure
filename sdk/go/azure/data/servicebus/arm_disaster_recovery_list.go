@@ -4,15 +4,15 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ArmDisasterRecoveryList_Value_Properties struct {
-	AlternateName any
-	PartnerNamespace any
+	AlternateName                     any
+	PartnerNamespace                  any
 	PendingReplicationOperationsCount any
-	ProvisioningState any
-	Role any
+	ProvisioningState                 any
+	Role                              any
 }
 
 type ArmDisasterRecoveryList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

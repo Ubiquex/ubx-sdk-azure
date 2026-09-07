@@ -7,7 +7,7 @@ type OpenapiStaticSiteCustomDomainOverviewArmresource_Properties struct {
 	// The date and time on which the custom domain was created for the static site.
 	CreatedOn any
 	// The domain name for the static site custom domain.
-	DomainName any
+	DomainName   any
 	ErrorMessage any
 	// The status of the custom domain
 	Status any
@@ -18,13 +18,13 @@ type OpenapiStaticSiteCustomDomainOverviewArmresource_Properties struct {
 }
 
 var OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields = ubx.FieldMap{
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"DomainName": ubx.FieldSpec{WireName: "domain_name"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"ValidationMethod": ubx.FieldSpec{WireName: "validation_method"},
-		"ValidationToken": ubx.FieldSpec{WireName: "validation_token"},
-	}
+	"CreatedOn":        ubx.FieldSpec{WireName: "created_on"},
+	"DomainName":       ubx.FieldSpec{WireName: "domain_name"},
+	"ErrorMessage":     ubx.FieldSpec{WireName: "error_message"},
+	"Status":           ubx.FieldSpec{WireName: "status"},
+	"ValidationMethod": ubx.FieldSpec{WireName: "validation_method"},
+	"ValidationToken":  ubx.FieldSpec{WireName: "validation_token"},
+}
 
 type OpenapiStaticSiteCustomDomainOverviewArmresourceConfig struct {
 	// Kind of resource.
@@ -52,8 +52,8 @@ var OpenapiStaticSiteCustomDomainOverviewArmresource = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiStaticSiteCustomDomainOverviewArmresource_PropertiesFields,
 		},
 	},
 }

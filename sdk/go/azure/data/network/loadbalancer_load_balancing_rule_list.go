@@ -8,24 +8,24 @@ type LoadbalancerLoadBalancingRuleList_Value_Properties_BackendAddressPool struc
 }
 
 type LoadbalancerLoadBalancingRuleList_Value_Properties struct {
-	BackendAddressPool any
-	BackendAddressPools any
-	BackendPort any
-	DisableOutboundSnat any
+	BackendAddressPool       any
+	BackendAddressPools      any
+	BackendPort              any
+	DisableOutboundSnat      any
 	EnableConnectionTracking any
-	EnableFloatingIp any
-	EnableTcpReset any
-	FrontendIpconfiguration any
-	FrontendPort any
-	IdleTimeoutInMinutes any
-	LoadDistribution any
-	Probe any
-	Protocol any
-	ProvisioningState any
+	EnableFloatingIp         any
+	EnableTcpReset           any
+	FrontendIpconfiguration  any
+	FrontendPort             any
+	IdleTimeoutInMinutes     any
+	LoadDistribution         any
+	Probe                    any
+	Protocol                 any
+	ProvisioningState        any
 }
 
 type LoadbalancerLoadBalancingRuleList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

@@ -9,14 +9,14 @@ type OpenapiChargeSummaryList_Value struct {
 }
 
 type OpenapiChargeSummaryListConfig struct {
-	EndDate any
-	Scope any
+	EndDate   any
+	Scope     any
 	StartDate any
 }
 
 type OpenapiChargeSummaryListAttrs struct {
-	EndDate any
-	Scope any
+	EndDate   any
+	Scope     any
 	StartDate any
 	// The list of charge summary
 	Value any
@@ -25,8 +25,8 @@ type OpenapiChargeSummaryListAttrs struct {
 var OpenapiChargeSummaryList = ubx.DataSourceBinding{
 	WireType: "azure_consumption_openapi_charge_summary_list",
 	Fields: ubx.FieldMap{
-		"EndDate": ubx.FieldSpec{WireName: "end_date"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"EndDate":   ubx.FieldSpec{WireName: "end_date"},
+		"Scope":     ubx.FieldSpec{WireName: "scope"},
 		"StartDate": ubx.FieldSpec{WireName: "start_date"},
 	},
 }

@@ -4,38 +4,38 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceProtectionContainerMapping_Properties_HealthErrorDetails_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceProtectionContainerMapping_Properties_HealthErrorDetails struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceProtectionContainerMapping_Properties_ProviderSpecificDetails struct {
@@ -71,74 +71,74 @@ type ServiceProtectionContainerMapping_Properties struct {
 }
 
 var ServiceProtectionContainerMapping_Properties_HealthErrorDetails_InnerHealthErrorsFields = ubx.FieldMap{
-		"CreationTimeUtc": ubx.FieldSpec{WireName: "creation_time_utc"},
-		"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
-		"EntityId": ubx.FieldSpec{WireName: "entity_id"},
-		"ErrorCategory": ubx.FieldSpec{WireName: "error_category"},
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorId": ubx.FieldSpec{WireName: "error_id"},
-		"ErrorLevel": ubx.FieldSpec{WireName: "error_level"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ErrorSource": ubx.FieldSpec{WireName: "error_source"},
-		"ErrorType": ubx.FieldSpec{WireName: "error_type"},
-		"PossibleCauses": ubx.FieldSpec{WireName: "possible_causes"},
-		"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
-		"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
-		"SummaryMessage": ubx.FieldSpec{WireName: "summary_message"},
-	}
+	"CreationTimeUtc":              ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability":        ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":                     ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":                ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":                    ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":                      ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":                   ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":                 ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":                  ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":                    ubx.FieldSpec{WireName: "error_type"},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
 
 var ServiceProtectionContainerMapping_Properties_HealthErrorDetailsFields = ubx.FieldMap{
-		"CreationTimeUtc": ubx.FieldSpec{WireName: "creation_time_utc"},
-		"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
-		"EntityId": ubx.FieldSpec{WireName: "entity_id"},
-		"ErrorCategory": ubx.FieldSpec{WireName: "error_category"},
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorId": ubx.FieldSpec{WireName: "error_id"},
-		"ErrorLevel": ubx.FieldSpec{WireName: "error_level"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ErrorSource": ubx.FieldSpec{WireName: "error_source"},
-		"ErrorType": ubx.FieldSpec{WireName: "error_type"},
-		"InnerHealthErrors": ubx.FieldSpec{
-			WireName: "inner_health_errors",
-			Kind: "list",
-			Fields: ServiceProtectionContainerMapping_Properties_HealthErrorDetails_InnerHealthErrorsFields,
-		},
-		"PossibleCauses": ubx.FieldSpec{WireName: "possible_causes"},
-		"RecommendedAction": ubx.FieldSpec{WireName: "recommended_action"},
-		"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
-		"SummaryMessage": ubx.FieldSpec{WireName: "summary_message"},
-	}
+	"CreationTimeUtc":       ubx.FieldSpec{WireName: "creation_time_utc"},
+	"CustomerResolvability": ubx.FieldSpec{WireName: "customer_resolvability"},
+	"EntityId":              ubx.FieldSpec{WireName: "entity_id"},
+	"ErrorCategory":         ubx.FieldSpec{WireName: "error_category"},
+	"ErrorCode":             ubx.FieldSpec{WireName: "error_code"},
+	"ErrorId":               ubx.FieldSpec{WireName: "error_id"},
+	"ErrorLevel":            ubx.FieldSpec{WireName: "error_level"},
+	"ErrorMessage":          ubx.FieldSpec{WireName: "error_message"},
+	"ErrorSource":           ubx.FieldSpec{WireName: "error_source"},
+	"ErrorType":             ubx.FieldSpec{WireName: "error_type"},
+	"InnerHealthErrors": ubx.FieldSpec{
+		WireName: "inner_health_errors",
+		Kind:     "list",
+		Fields:   ServiceProtectionContainerMapping_Properties_HealthErrorDetails_InnerHealthErrorsFields,
+	},
+	"PossibleCauses":               ubx.FieldSpec{WireName: "possible_causes"},
+	"RecommendedAction":            ubx.FieldSpec{WireName: "recommended_action"},
+	"RecoveryProviderErrorMessage": ubx.FieldSpec{WireName: "recovery_provider_error_message"},
+	"SummaryMessage":               ubx.FieldSpec{WireName: "summary_message"},
+}
 
 var ServiceProtectionContainerMapping_Properties_ProviderSpecificDetailsFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var ServiceProtectionContainerMapping_PropertiesFields = ubx.FieldMap{
-		"Health": ubx.FieldSpec{WireName: "health"},
-		"HealthErrorDetails": ubx.FieldSpec{
-			WireName: "health_error_details",
-			Kind: "list",
-			Fields: ServiceProtectionContainerMapping_Properties_HealthErrorDetailsFields,
-		},
-		"PolicyFriendlyName": ubx.FieldSpec{WireName: "policy_friendly_name"},
-		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
-		"ProviderSpecificDetails": ubx.FieldSpec{
-			WireName: "provider_specific_details",
-			Kind: "object",
-			Fields: ServiceProtectionContainerMapping_Properties_ProviderSpecificDetailsFields,
-		},
-		"ProviderSpecificInput": ubx.FieldSpec{
-			WireName: "provider_specific_input",
-			Kind: "object",
-			Fields: ServiceProtectionContainerMapping_Properties_ProviderSpecificDetailsFields,
-		},
-		"SourceFabricFriendlyName": ubx.FieldSpec{WireName: "source_fabric_friendly_name"},
-		"SourceProtectionContainerFriendlyName": ubx.FieldSpec{WireName: "source_protection_container_friendly_name"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"TargetFabricFriendlyName": ubx.FieldSpec{WireName: "target_fabric_friendly_name"},
-		"TargetProtectionContainerFriendlyName": ubx.FieldSpec{WireName: "target_protection_container_friendly_name"},
-		"TargetProtectionContainerId": ubx.FieldSpec{WireName: "target_protection_container_id"},
-	}
+	"Health": ubx.FieldSpec{WireName: "health"},
+	"HealthErrorDetails": ubx.FieldSpec{
+		WireName: "health_error_details",
+		Kind:     "list",
+		Fields:   ServiceProtectionContainerMapping_Properties_HealthErrorDetailsFields,
+	},
+	"PolicyFriendlyName": ubx.FieldSpec{WireName: "policy_friendly_name"},
+	"PolicyId":           ubx.FieldSpec{WireName: "policy_id"},
+	"ProviderSpecificDetails": ubx.FieldSpec{
+		WireName: "provider_specific_details",
+		Kind:     "object",
+		Fields:   ServiceProtectionContainerMapping_Properties_ProviderSpecificDetailsFields,
+	},
+	"ProviderSpecificInput": ubx.FieldSpec{
+		WireName: "provider_specific_input",
+		Kind:     "object",
+		Fields:   ServiceProtectionContainerMapping_Properties_ProviderSpecificDetailsFields,
+	},
+	"SourceFabricFriendlyName":              ubx.FieldSpec{WireName: "source_fabric_friendly_name"},
+	"SourceProtectionContainerFriendlyName": ubx.FieldSpec{WireName: "source_protection_container_friendly_name"},
+	"State":                                 ubx.FieldSpec{WireName: "state"},
+	"TargetFabricFriendlyName":              ubx.FieldSpec{WireName: "target_fabric_friendly_name"},
+	"TargetProtectionContainerFriendlyName": ubx.FieldSpec{WireName: "target_protection_container_friendly_name"},
+	"TargetProtectionContainerId":           ubx.FieldSpec{WireName: "target_protection_container_id"},
+}
 
 type ServiceProtectionContainerMappingConfig struct {
 	// Configure pairing input properties.
@@ -157,8 +157,8 @@ var ServiceProtectionContainerMapping = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceProtectionContainerMapping_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceProtectionContainerMapping_PropertiesFields,
 		},
 	},
 }

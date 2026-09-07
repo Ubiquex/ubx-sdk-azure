@@ -11,24 +11,24 @@ type OpenapiDataVersionBase_Properties struct {
 }
 
 type OpenapiDataVersionBaseConfig struct {
-	Name any
-	Version any
+	Name          any
+	Version       any
 	WorkspaceName any
 }
 
 type OpenapiDataVersionBaseAttrs struct {
 	Name any
 	// Data version base definition
-	Properties any
-	Version any
+	Properties    any
+	Version       any
 	WorkspaceName any
 }
 
 var OpenapiDataVersionBase = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_data_version_base",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

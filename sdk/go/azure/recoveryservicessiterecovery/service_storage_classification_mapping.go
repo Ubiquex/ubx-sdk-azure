@@ -9,8 +9,8 @@ type ServiceStorageClassificationMapping_Properties struct {
 }
 
 var ServiceStorageClassificationMapping_PropertiesFields = ubx.FieldMap{
-		"TargetStorageClassificationId": ubx.FieldSpec{WireName: "target_storage_classification_id"},
-	}
+	"TargetStorageClassificationId": ubx.FieldSpec{WireName: "target_storage_classification_id"},
+}
 
 type ServiceStorageClassificationMappingConfig struct {
 	// Storage mapping input properties.
@@ -29,8 +29,8 @@ var ServiceStorageClassificationMapping = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceStorageClassificationMapping_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceStorageClassificationMapping_PropertiesFields,
 		},
 	},
 }

@@ -9,7 +9,7 @@ type InstancefailovergroupsInstanceFailoverGroupList_Value_Properties_ManagedIns
 }
 
 type InstancefailovergroupsInstanceFailoverGroupList_Value_Properties_PartnerRegions struct {
-	Location any
+	Location        any
 	ReplicationRole any
 }
 
@@ -18,18 +18,18 @@ type InstancefailovergroupsInstanceFailoverGroupList_Value_Properties_ReadOnlyEn
 }
 
 type InstancefailovergroupsInstanceFailoverGroupList_Value_Properties_ReadWriteEndpoint struct {
-	FailoverPolicy any
+	FailoverPolicy                         any
 	FailoverWithDataLossGracePeriodMinutes any
 }
 
 type InstancefailovergroupsInstanceFailoverGroupList_Value_Properties struct {
 	ManagedInstancePairs any
-	PartnerRegions any
-	ReadOnlyEndpoint any
-	ReadWriteEndpoint any
-	ReplicationRole any
-	ReplicationState any
-	SecondaryType any
+	PartnerRegions       any
+	ReadOnlyEndpoint     any
+	ReadWriteEndpoint    any
+	ReplicationRole      any
+	ReplicationState     any
+	SecondaryType        any
 }
 
 type InstancefailovergroupsInstanceFailoverGroupList_Value struct {

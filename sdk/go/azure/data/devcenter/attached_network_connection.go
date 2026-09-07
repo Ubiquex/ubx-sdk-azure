@@ -33,7 +33,7 @@ type AttachedNetworkConnection_SystemData struct {
 
 type AttachedNetworkConnectionConfig struct {
 	AttachedNetworkConnectionName any
-	ProjectName any
+	ProjectName                   any
 }
 
 type AttachedNetworkConnectionAttrs struct {
@@ -41,7 +41,7 @@ type AttachedNetworkConnectionAttrs struct {
 	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
 	Id any
 	// The name of the resource
-	Name any
+	Name        any
 	ProjectName any
 	// Properties of an attached NetworkConnection.
 	Properties any
@@ -55,6 +55,6 @@ var AttachedNetworkConnection = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_attached_network_connection",
 	Fields: ubx.FieldMap{
 		"AttachedNetworkConnectionName": ubx.FieldSpec{WireName: "attached_network_connection_name"},
-		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
+		"ProjectName":                   ubx.FieldSpec{WireName: "project_name"},
 	},
 }

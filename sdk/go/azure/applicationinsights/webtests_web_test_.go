@@ -39,34 +39,34 @@ type WebtestsWebTest_Properties struct {
 }
 
 var WebtestsWebTest_Properties_ConfigurationFields = ubx.FieldMap{
-		"WebTest": ubx.FieldSpec{WireName: "web_test"},
-	}
+	"WebTest": ubx.FieldSpec{WireName: "web_test"},
+}
 
 var WebtestsWebTest_Properties_LocationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var WebtestsWebTest_PropertiesFields = ubx.FieldMap{
-		"Configuration": ubx.FieldSpec{
-			WireName: "configuration",
-			Kind: "object",
-			Fields: WebtestsWebTest_Properties_ConfigurationFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Frequency": ubx.FieldSpec{WireName: "frequency"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Locations": ubx.FieldSpec{
-			WireName: "locations",
-			Kind: "list",
-			Fields: WebtestsWebTest_Properties_LocationsFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RetryEnabled": ubx.FieldSpec{WireName: "retry_enabled"},
-		"SyntheticMonitorId": ubx.FieldSpec{WireName: "synthetic_monitor_id"},
-		"Timeout": ubx.FieldSpec{WireName: "timeout"},
-	}
+	"Configuration": ubx.FieldSpec{
+		WireName: "configuration",
+		Kind:     "object",
+		Fields:   WebtestsWebTest_Properties_ConfigurationFields,
+	},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Enabled":     ubx.FieldSpec{WireName: "enabled"},
+	"Frequency":   ubx.FieldSpec{WireName: "frequency"},
+	"Kind":        ubx.FieldSpec{WireName: "kind"},
+	"Locations": ubx.FieldSpec{
+		WireName: "locations",
+		Kind:     "list",
+		Fields:   WebtestsWebTest_Properties_LocationsFields,
+	},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+	"RetryEnabled":       ubx.FieldSpec{WireName: "retry_enabled"},
+	"SyntheticMonitorId": ubx.FieldSpec{WireName: "synthetic_monitor_id"},
+	"Timeout":            ubx.FieldSpec{WireName: "timeout"},
+}
 
 type WebtestsWebTestConfig struct {
 	// The kind of web test that this web test watches. Choices are ping and multistep.
@@ -99,12 +99,12 @@ type WebtestsWebTestAttrs struct {
 var WebtestsWebTest = ubx.ResourceBinding{
 	WireType: "azure_applicationinsights_webtests_web_test",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WebtestsWebTest_PropertiesFields,
+			Kind:     "object",
+			Fields:   WebtestsWebTest_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -51,55 +51,55 @@ type VirtualnetworkDdosCustomPolicy_Properties struct {
 }
 
 var VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties_TrafficDetectionRuleFields = ubx.FieldMap{
-		"PacketsPerSecond": ubx.FieldSpec{WireName: "packets_per_second"},
-		"TrafficType": ubx.FieldSpec{WireName: "traffic_type"},
-	}
+	"PacketsPerSecond": ubx.FieldSpec{WireName: "packets_per_second"},
+	"TrafficType":      ubx.FieldSpec{WireName: "traffic_type"},
+}
 
 var VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_PropertiesFields = ubx.FieldMap{
-		"DetectionMode": ubx.FieldSpec{WireName: "detection_mode"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TrafficDetectionRule": ubx.FieldSpec{
-			WireName: "traffic_detection_rule",
-			Kind: "object",
-			Fields: VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties_TrafficDetectionRuleFields,
-		},
-	}
+	"DetectionMode":     ubx.FieldSpec{WireName: "detection_mode"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"TrafficDetectionRule": ubx.FieldSpec{
+		WireName: "traffic_detection_rule",
+		Kind:     "object",
+		Fields:   VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_Properties_TrafficDetectionRuleFields,
+	},
+}
 
 var VirtualnetworkDdosCustomPolicy_Properties_DetectionRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualnetworkDdosCustomPolicy_Properties_DetectionRules_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualnetworkDdosCustomPolicy_Properties_FrontEndIpConfigurationFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkDdosCustomPolicy_PropertiesFields = ubx.FieldMap{
-		"DetectionRules": ubx.FieldSpec{
-			WireName: "detection_rules",
-			Kind: "list",
-			Fields: VirtualnetworkDdosCustomPolicy_Properties_DetectionRulesFields,
-		},
-		"FrontEndIpConfiguration": ubx.FieldSpec{
-			WireName: "front_end_ip_configuration",
-			Kind: "list",
-			Fields: VirtualnetworkDdosCustomPolicy_Properties_FrontEndIpConfigurationFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddresses": ubx.FieldSpec{
-			WireName: "public_ipaddresses",
-			Kind: "list",
-			Fields: VirtualnetworkDdosCustomPolicy_Properties_FrontEndIpConfigurationFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DetectionRules": ubx.FieldSpec{
+		WireName: "detection_rules",
+		Kind:     "list",
+		Fields:   VirtualnetworkDdosCustomPolicy_Properties_DetectionRulesFields,
+	},
+	"FrontEndIpConfiguration": ubx.FieldSpec{
+		WireName: "front_end_ip_configuration",
+		Kind:     "list",
+		Fields:   VirtualnetworkDdosCustomPolicy_Properties_FrontEndIpConfigurationFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddresses": ubx.FieldSpec{
+		WireName: "public_ipaddresses",
+		Kind:     "list",
+		Fields:   VirtualnetworkDdosCustomPolicy_Properties_FrontEndIpConfigurationFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type VirtualnetworkDdosCustomPolicyConfig struct {
 	// Resource ID.
@@ -132,12 +132,12 @@ type VirtualnetworkDdosCustomPolicyAttrs struct {
 var VirtualnetworkDdosCustomPolicy = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ddos_custom_policy",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
+		"Id":       ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkDdosCustomPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkDdosCustomPolicy_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

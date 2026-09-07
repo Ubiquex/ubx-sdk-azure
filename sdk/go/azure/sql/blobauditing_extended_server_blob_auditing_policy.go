@@ -31,19 +31,19 @@ type BlobauditingExtendedServerBlobAuditingPolicy_Properties struct {
 }
 
 var BlobauditingExtendedServerBlobAuditingPolicy_PropertiesFields = ubx.FieldMap{
-		"AuditActionsAndGroups": ubx.FieldSpec{WireName: "audit_actions_and_groups"},
-		"IsAzureMonitorTargetEnabled": ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
-		"IsDevopsAuditEnabled": ubx.FieldSpec{WireName: "is_devops_audit_enabled"},
-		"IsManagedIdentityInUse": ubx.FieldSpec{WireName: "is_managed_identity_in_use"},
-		"IsStorageSecondaryKeyInUse": ubx.FieldSpec{WireName: "is_storage_secondary_key_in_use"},
-		"PredicateExpression": ubx.FieldSpec{WireName: "predicate_expression"},
-		"QueueDelayMs": ubx.FieldSpec{WireName: "queue_delay_ms"},
-		"RetentionDays": ubx.FieldSpec{WireName: "retention_days"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageAccountAccessKey": ubx.FieldSpec{WireName: "storage_account_access_key"},
-		"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
-		"StorageEndpoint": ubx.FieldSpec{WireName: "storage_endpoint"},
-	}
+	"AuditActionsAndGroups":        ubx.FieldSpec{WireName: "audit_actions_and_groups"},
+	"IsAzureMonitorTargetEnabled":  ubx.FieldSpec{WireName: "is_azure_monitor_target_enabled"},
+	"IsDevopsAuditEnabled":         ubx.FieldSpec{WireName: "is_devops_audit_enabled"},
+	"IsManagedIdentityInUse":       ubx.FieldSpec{WireName: "is_managed_identity_in_use"},
+	"IsStorageSecondaryKeyInUse":   ubx.FieldSpec{WireName: "is_storage_secondary_key_in_use"},
+	"PredicateExpression":          ubx.FieldSpec{WireName: "predicate_expression"},
+	"QueueDelayMs":                 ubx.FieldSpec{WireName: "queue_delay_ms"},
+	"RetentionDays":                ubx.FieldSpec{WireName: "retention_days"},
+	"State":                        ubx.FieldSpec{WireName: "state"},
+	"StorageAccountAccessKey":      ubx.FieldSpec{WireName: "storage_account_access_key"},
+	"StorageAccountSubscriptionId": ubx.FieldSpec{WireName: "storage_account_subscription_id"},
+	"StorageEndpoint":              ubx.FieldSpec{WireName: "storage_endpoint"},
+}
 
 type BlobauditingExtendedServerBlobAuditingPolicyConfig struct {
 	// Properties of an extended server blob auditing policy.
@@ -60,8 +60,8 @@ var BlobauditingExtendedServerBlobAuditingPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BlobauditingExtendedServerBlobAuditingPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   BlobauditingExtendedServerBlobAuditingPolicy_PropertiesFields,
 		},
 	},
 }

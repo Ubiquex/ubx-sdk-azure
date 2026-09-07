@@ -59,7 +59,7 @@ type OpenapiCertificate_Properties struct {
 
 type OpenapiCertificateConfig struct {
 	CertificateName any
-	Name any
+	Name            any
 }
 
 type OpenapiCertificateAttrs struct {
@@ -68,7 +68,7 @@ type OpenapiCertificateAttrs struct {
 	Kind any
 	// The geo-location where the resource lives
 	Location any
-	Name any
+	Name     any
 	// Certificate resource specific properties
 	Properties any
 	// Resource tags.
@@ -79,6 +79,6 @@ var OpenapiCertificate = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_certificate",
 	Fields: ubx.FieldMap{
 		"CertificateName": ubx.FieldSpec{WireName: "certificate_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 	},
 }

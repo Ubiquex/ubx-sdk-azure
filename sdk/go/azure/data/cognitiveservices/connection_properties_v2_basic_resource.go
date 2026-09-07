@@ -11,31 +11,31 @@ type ConnectionPropertiesV2BasicResource_Properties struct {
 	// A type definition that refers the id to an Azure Resource Manager resource.
 	CreatedByWorkspaceArmId any
 	// Provides the error message if the connection fails
-	Error any
+	Error      any
 	ExpiryTime any
 	// Group based on connection category
-	Group any
+	Group         any
 	IsSharedToAll any
 	// Store user metadata for this connection
-	Metadata any
-	PeRequirement any
-	PeStatus any
+	Metadata       any
+	PeRequirement  any
+	PeStatus       any
 	SharedUserList any
 	// The connection URL to be used.
-	Target any
+	Target                      any
 	UseWorkspaceManagedIdentity any
 }
 
 type ConnectionPropertiesV2BasicResourceConfig struct {
-	AccountName any
+	AccountName    any
 	ConnectionName any
-	ProjectName any
+	ProjectName    any
 }
 
 type ConnectionPropertiesV2BasicResourceAttrs struct {
-	AccountName any
+	AccountName    any
 	ConnectionName any
-	ProjectName any
+	ProjectName    any
 	// Connection property base schema.
 	Properties any
 }
@@ -43,8 +43,8 @@ type ConnectionPropertiesV2BasicResourceAttrs struct {
 var ConnectionPropertiesV2BasicResource = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_connection_properties_v2_basic_resource",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":    ubx.FieldSpec{WireName: "account_name"},
 		"ConnectionName": ubx.FieldSpec{WireName: "connection_name"},
-		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
+		"ProjectName":    ubx.FieldSpec{WireName: "project_name"},
 	},
 }

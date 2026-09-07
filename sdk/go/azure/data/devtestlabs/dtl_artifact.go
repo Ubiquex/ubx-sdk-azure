@@ -24,16 +24,16 @@ type DtlArtifact_Properties struct {
 
 type DtlArtifactConfig struct {
 	ArtifactSourceName any
-	LabName any
-	Name any
+	LabName            any
+	Name               any
 }
 
 type DtlArtifactAttrs struct {
 	ArtifactSourceName any
-	LabName any
+	LabName            any
 	// The geo-location where the resource lives
 	Location any
-	Name any
+	Name     any
 	// Properties of an artifact.
 	Properties any
 	// Resource tags.
@@ -44,7 +44,7 @@ var DtlArtifact = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_artifact",
 	Fields: ubx.FieldMap{
 		"ArtifactSourceName": ubx.FieldSpec{WireName: "artifact_source_name"},
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"LabName":            ubx.FieldSpec{WireName: "lab_name"},
+		"Name":               ubx.FieldSpec{WireName: "name"},
 	},
 }

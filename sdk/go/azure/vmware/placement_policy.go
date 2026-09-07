@@ -15,11 +15,11 @@ type PlacementPolicy_Properties struct {
 }
 
 var PlacementPolicy_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 type PlacementPolicyConfig struct {
 	// Abstract placement policy properties
@@ -36,8 +36,8 @@ var PlacementPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PlacementPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   PlacementPolicy_PropertiesFields,
 		},
 	},
 }

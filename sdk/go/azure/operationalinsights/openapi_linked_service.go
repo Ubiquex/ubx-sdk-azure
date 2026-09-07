@@ -13,10 +13,10 @@ type OpenapiLinkedService_Properties struct {
 }
 
 var OpenapiLinkedService_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"WriteAccessResourceId": ubx.FieldSpec{WireName: "write_access_resource_id"},
-	}
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceId":            ubx.FieldSpec{WireName: "resource_id"},
+	"WriteAccessResourceId": ubx.FieldSpec{WireName: "write_access_resource_id"},
+}
 
 type OpenapiLinkedServiceConfig struct {
 	// Linked service properties.
@@ -37,8 +37,8 @@ var OpenapiLinkedService = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLinkedService_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLinkedService_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

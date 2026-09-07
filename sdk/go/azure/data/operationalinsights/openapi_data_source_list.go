@@ -4,10 +4,10 @@ package operationalinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDataSourceList_Value struct {
-	Etag any
-	Kind any
+	Etag       any
+	Kind       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiDataSourceListConfig struct {
@@ -18,7 +18,7 @@ type OpenapiDataSourceListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The DataSource items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

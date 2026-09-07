@@ -25,7 +25,7 @@ type OpenapiDeployment_Properties struct {
 }
 
 type OpenapiDeploymentConfig struct {
-	Id any
+	Id   any
 	Name any
 }
 
@@ -41,7 +41,7 @@ type OpenapiDeploymentAttrs struct {
 var OpenapiDeployment = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_deployment",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -29,7 +29,7 @@ type OpenapiWorkflowRunAction_Properties_InputsLink struct {
 }
 
 type OpenapiWorkflowRunAction_Properties_RetryHistory_Error_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
@@ -38,12 +38,12 @@ type OpenapiWorkflowRunAction_Properties_RetryHistory_Error struct {
 }
 
 type OpenapiWorkflowRunAction_Properties_RetryHistory struct {
-	ClientRequestId any
-	Code any
-	EndTime any
-	Error any
+	ClientRequestId  any
+	Code             any
+	EndTime          any
+	Error            any
 	ServiceRequestId any
-	StartTime any
+	StartTime        any
 }
 
 type OpenapiWorkflowRunAction_Properties struct {
@@ -72,27 +72,27 @@ type OpenapiWorkflowRunAction_Properties struct {
 }
 
 type OpenapiWorkflowRunActionConfig struct {
-	ActionName any
-	Name any
-	RunName any
+	ActionName   any
+	Name         any
+	RunName      any
 	WorkflowName any
 }
 
 type OpenapiWorkflowRunActionAttrs struct {
 	ActionName any
-	Name any
+	Name       any
 	// The workflow run action properties.
-	Properties any
-	RunName any
+	Properties   any
+	RunName      any
 	WorkflowName any
 }
 
 var OpenapiWorkflowRunAction = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_run_action",
 	Fields: ubx.FieldMap{
-		"ActionName": ubx.FieldSpec{WireName: "action_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
+		"ActionName":   ubx.FieldSpec{WireName: "action_name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
+		"RunName":      ubx.FieldSpec{WireName: "run_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

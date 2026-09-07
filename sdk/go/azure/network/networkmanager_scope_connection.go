@@ -30,11 +30,11 @@ type NetworkmanagerScopeConnection_SystemData struct {
 }
 
 var NetworkmanagerScopeConnection_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"ResourceId":      ubx.FieldSpec{WireName: "resource_id"},
+	"TenantId":        ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type NetworkmanagerScopeConnectionConfig struct {
 	// Scope connection.
@@ -61,8 +61,8 @@ var NetworkmanagerScopeConnection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerScopeConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerScopeConnection_PropertiesFields,
 		},
 	},
 }

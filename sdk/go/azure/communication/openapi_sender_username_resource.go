@@ -15,11 +15,11 @@ type OpenapiSenderUsernameResource_Properties struct {
 }
 
 var OpenapiSenderUsernameResource_PropertiesFields = ubx.FieldMap{
-		"DataLocation": ubx.FieldSpec{WireName: "data_location"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"DataLocation":      ubx.FieldSpec{WireName: "data_location"},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Username":          ubx.FieldSpec{WireName: "username"},
+}
 
 type OpenapiSenderUsernameResourceConfig struct {
 	// A class that describes the properties of a SenderUsername resource.
@@ -36,8 +36,8 @@ var OpenapiSenderUsernameResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSenderUsernameResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSenderUsernameResource_PropertiesFields,
 		},
 	},
 }

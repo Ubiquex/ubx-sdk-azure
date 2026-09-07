@@ -21,14 +21,14 @@ type ServerkeysServerKey_Properties struct {
 }
 
 var ServerkeysServerKey_PropertiesFields = ubx.FieldMap{
-		"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Subregion": ubx.FieldSpec{WireName: "subregion"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
+	"CreationDate":        ubx.FieldSpec{WireName: "creation_date"},
+	"KeyVersion":          ubx.FieldSpec{WireName: "key_version"},
+	"ServerKeyType":       ubx.FieldSpec{WireName: "server_key_type"},
+	"Subregion":           ubx.FieldSpec{WireName: "subregion"},
+	"Thumbprint":          ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":                 ubx.FieldSpec{WireName: "uri"},
+}
 
 type ServerkeysServerKeyConfig struct {
 	// Properties for a server key execution.
@@ -49,8 +49,8 @@ var ServerkeysServerKey = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServerkeysServerKey_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServerkeysServerKey_PropertiesFields,
 		},
 	},
 }

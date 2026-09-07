@@ -5,44 +5,44 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiCassandraClusterPublicStatus_ConnectionErrors struct {
 	ConnectionState any
-	Exception any
-	IPfrom any
-	IPto any
-	Port any
+	Exception       any
+	IPfrom          any
+	IPto            any
+	Port            any
 }
 
 type DbOpenapiCassandraClusterPublicStatus_DataCenters_Nodes struct {
-	Address any
-	CassandraProcessStatus any
-	CpuUsage any
-	DiskFreeKb any
-	DiskUsedKb any
-	HostId any
-	IsLatestModel any
-	Load any
+	Address                  any
+	CassandraProcessStatus   any
+	CpuUsage                 any
+	DiskFreeKb               any
+	DiskUsedKb               any
+	HostId                   any
+	IsLatestModel            any
+	Load                     any
 	MemoryBuffersAndCachedKb any
-	MemoryFreeKb any
-	MemoryTotalKb any
-	MemoryUsedKb any
-	Rack any
-	Size any
-	State any
-	Status any
-	Timestamp any
-	Tokens any
+	MemoryFreeKb             any
+	MemoryTotalKb            any
+	MemoryUsedKb             any
+	Rack                     any
+	Size                     any
+	State                    any
+	Status                   any
+	Timestamp                any
+	Tokens                   any
 }
 
 type DbOpenapiCassandraClusterPublicStatus_DataCenters struct {
-	Name any
-	Nodes any
+	Name      any
+	Nodes     any
 	SeedNodes any
 }
 
 type DbOpenapiCassandraClusterPublicStatus_Errors struct {
 	AdditionalErrorInfo any
-	Code any
-	Message any
-	Target any
+	Code                any
+	Message             any
+	Target              any
 }
 
 type DbOpenapiCassandraClusterPublicStatus_ReaperStatus struct {
@@ -63,9 +63,9 @@ type DbOpenapiCassandraClusterPublicStatusAttrs struct {
 	ConnectionErrors any
 	// List of the status of each datacenter in this cluster.
 	DataCenters any
-	ETag any
+	ETag        any
 	// List relevant information about any errors about cluster, data center and connection error.
-	Errors any
+	Errors       any
 	ReaperStatus any
 }
 

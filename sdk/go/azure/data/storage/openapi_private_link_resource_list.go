@@ -4,8 +4,8 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPrivateLinkResourceList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 

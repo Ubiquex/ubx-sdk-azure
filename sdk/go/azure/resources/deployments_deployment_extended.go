@@ -9,14 +9,14 @@ type DeploymentsDeploymentExtended_Properties_DebugSetting struct {
 }
 
 type DeploymentsDeploymentExtended_Properties_Dependencies_DependsOn struct {
-	Id any
+	Id           any
 	ResourceName any
 	ResourceType any
 }
 
 type DeploymentsDeploymentExtended_Properties_Dependencies struct {
-	DependsOn any
-	Id any
+	DependsOn    any
+	Id           any
 	ResourceName any
 	ResourceType any
 }
@@ -28,10 +28,10 @@ type DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfo struct 
 
 type DeploymentsDeploymentExtended_Properties_Diagnostics struct {
 	AdditionalInfo any
-	Code any
-	Level any
-	Message any
-	Target any
+	Code           any
+	Level          any
+	Message        any
+	Target         any
 }
 
 type DeploymentsDeploymentExtended_Properties_Error_Details struct {
@@ -60,23 +60,23 @@ type DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference
 }
 
 type DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference struct {
-	KeyVault any
-	SecretName any
+	KeyVault      any
+	SecretName    any
 	SecretVersion any
 }
 
 type DeploymentsDeploymentExtended_Properties_ExtensionConfigs struct {
 	KeyVaultReference any
-	Type any
-	Value any
+	Type              any
+	Value             any
 }
 
 type DeploymentsDeploymentExtended_Properties_Extensions struct {
-	Alias any
-	Config any
+	Alias    any
+	Config   any
 	ConfigId any
-	Name any
-	Version any
+	Name     any
+	Version  any
 }
 
 type DeploymentsDeploymentExtended_Properties_ExternalInputDefinitions struct {
@@ -101,10 +101,10 @@ type DeploymentsDeploymentExtended_Properties_OnErrorDeployment struct {
 }
 
 type DeploymentsDeploymentExtended_Properties_OutputResources struct {
-	ApiVersion any
-	Extension any
-	Id any
-	Identifiers any
+	ApiVersion   any
+	Extension    any
+	Id           any
+	Identifiers  any
 	ResourceType any
 }
 
@@ -126,67 +126,67 @@ type DeploymentsDeploymentExtended_Properties_ParametersLink struct {
 
 type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadata struct {
 	Attributes any
-	Type any
+	Type       any
 }
 
 type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPattern struct {
-	Phrase any
-	Type any
+	Phrase   any
+	Type     any
 	Variable any
 }
 
 type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_Paths struct {
 	ApiVersions any
-	Metadata any
-	Path any
-	Pattern any
+	Metadata    any
+	Path        any
+	Pattern     any
 }
 
 type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases struct {
 	DefaultMetadata any
-	DefaultPath any
-	DefaultPattern any
-	Name any
-	Paths any
-	Type any
+	DefaultPath     any
+	DefaultPattern  any
+	Name            any
+	Paths           any
+	Type            any
 }
 
 type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfiles struct {
-	ApiVersion any
+	ApiVersion     any
 	ProfileVersion any
 }
 
 type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappings struct {
 	ExtendedLocations any
-	Location any
-	Type any
+	Location          any
+	Type              any
 }
 
 type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappings struct {
 	Location any
-	Zones any
+	Zones    any
 }
 
 type DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes struct {
-	Aliases any
-	ApiProfiles any
-	ApiVersions any
-	Capabilities any
+	Aliases           any
+	ApiProfiles       any
+	ApiVersions       any
+	Capabilities      any
 	DefaultApiVersion any
-	LocationMappings any
-	Locations any
-	Properties any
-	ResourceType any
-	ZoneMappings any
+	LocationMappings  any
+	Locations         any
+	Properties        any
+	ResourceType      any
+	ZoneMappings      any
 }
 
 type DeploymentsDeploymentExtended_Properties_Providers struct {
-	Id any
-	Namespace any
+	Id                                any
+	Namespace                         any
 	ProviderAuthorizationConsentState any
-	RegistrationPolicy any
-	RegistrationState any
-	ResourceTypes any
+	RegistrationPolicy                any
+	RegistrationState                 any
+	ResourceTypes                     any
 }
 
 type DeploymentsDeploymentExtended_Properties_TemplateLink struct {
@@ -256,344 +256,343 @@ type DeploymentsDeploymentExtended_Properties struct {
 }
 
 var DeploymentsDeploymentExtended_Properties_DebugSettingFields = ubx.FieldMap{
-		"DetailLevel": ubx.FieldSpec{WireName: "detail_level"},
-	}
+	"DetailLevel": ubx.FieldSpec{WireName: "detail_level"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Dependencies_DependsOnFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-	}
+	"Id":           ubx.FieldSpec{WireName: "id"},
+	"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+	"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
+}
 
 var DeploymentsDeploymentExtended_Properties_DependenciesFields = ubx.FieldMap{
-		"DependsOn": ubx.FieldSpec{
-			WireName: "depends_on",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Dependencies_DependsOnFields,
-		},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-	}
+	"DependsOn": ubx.FieldSpec{
+		WireName: "depends_on",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Dependencies_DependsOnFields,
+	},
+	"Id":           ubx.FieldSpec{WireName: "id"},
+	"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+	"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var DeploymentsDeploymentExtended_Properties_DiagnosticsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Level": ubx.FieldSpec{WireName: "level"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields,
+	},
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Level":   ubx.FieldSpec{WireName: "level"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
-var DeploymentsDeploymentExtended_Properties_Error_DetailsFields = ubx.FieldMap{
-	}
+var DeploymentsDeploymentExtended_Properties_Error_DetailsFields = ubx.FieldMap{}
 
 var DeploymentsDeploymentExtended_Properties_ErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Error_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Diagnostics_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Error_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptionsFields = ubx.FieldMap{
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"Scope": ubx.FieldSpec{WireName: "scope"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference_KeyVaultFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenceFields = ubx.FieldMap{
-		"KeyVault": ubx.FieldSpec{
-			WireName: "key_vault",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference_KeyVaultFields,
-		},
-		"SecretName": ubx.FieldSpec{WireName: "secret_name"},
-		"SecretVersion": ubx.FieldSpec{WireName: "secret_version"},
-	}
+	"KeyVault": ubx.FieldSpec{
+		WireName: "key_vault",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReference_KeyVaultFields,
+	},
+	"SecretName":    ubx.FieldSpec{WireName: "secret_name"},
+	"SecretVersion": ubx.FieldSpec{WireName: "secret_version"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ExtensionConfigsFields = ubx.FieldMap{
-		"KeyVaultReference": ubx.FieldSpec{
-			WireName: "key_vault_reference",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenceFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"KeyVaultReference": ubx.FieldSpec{
+		WireName: "key_vault_reference",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenceFields,
+	},
+	"Type":  ubx.FieldSpec{WireName: "type"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ExtensionsFields = ubx.FieldMap{
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"Config": ubx.FieldSpec{
-			WireName: "config",
-			Kind: "map",
-			Fields: DeploymentsDeploymentExtended_Properties_ExtensionConfigsFields,
-		},
-		"ConfigId": ubx.FieldSpec{WireName: "config_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Alias": ubx.FieldSpec{WireName: "alias"},
+	"Config": ubx.FieldSpec{
+		WireName: "config",
+		Kind:     "map",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExtensionConfigsFields,
+	},
+	"ConfigId": ubx.FieldSpec{WireName: "config_id"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Version":  ubx.FieldSpec{WireName: "version"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ExternalInputDefinitionsFields = ubx.FieldMap{
-		"Config": ubx.FieldSpec{WireName: "config"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-	}
+	"Config": ubx.FieldSpec{WireName: "config"},
+	"Kind":   ubx.FieldSpec{WireName: "kind"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ExternalInputsFields = ubx.FieldMap{
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields = ubx.FieldMap{
-		"DeploymentName": ubx.FieldSpec{WireName: "deployment_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DeploymentName":    ubx.FieldSpec{WireName: "deployment_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 var DeploymentsDeploymentExtended_Properties_OutputResourcesFields = ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"Extension": ubx.FieldSpec{
-			WireName: "extension",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_ExtensionsFields,
-		},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Identifiers": ubx.FieldSpec{WireName: "identifiers"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-	}
+	"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+	"Extension": ubx.FieldSpec{
+		WireName: "extension",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExtensionsFields,
+	},
+	"Id":           ubx.FieldSpec{WireName: "id"},
+	"Identifiers":  ubx.FieldSpec{WireName: "identifiers"},
+	"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ParametersFields = ubx.FieldMap{
-		"Expression": ubx.FieldSpec{WireName: "expression"},
-		"Reference": ubx.FieldSpec{
-			WireName: "reference",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenceFields,
-		},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Expression": ubx.FieldSpec{WireName: "expression"},
+	"Reference": ubx.FieldSpec{
+		WireName: "reference",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExtensionConfigs_KeyVaultReferenceFields,
+	},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var DeploymentsDeploymentExtended_Properties_ParametersLinkFields = ubx.FieldMap{
-		"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
+	"Uri":            ubx.FieldSpec{WireName: "uri"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields = ubx.FieldMap{
-		"Attributes": ubx.FieldSpec{WireName: "attributes"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Attributes": ubx.FieldSpec{WireName: "attributes"},
+	"Type":       ubx.FieldSpec{WireName: "type"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields = ubx.FieldMap{
-		"Phrase": ubx.FieldSpec{WireName: "phrase"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Variable": ubx.FieldSpec{WireName: "variable"},
-	}
+	"Phrase":   ubx.FieldSpec{WireName: "phrase"},
+	"Type":     ubx.FieldSpec{WireName: "type"},
+	"Variable": ubx.FieldSpec{WireName: "variable"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_PathsFields = ubx.FieldMap{
-		"ApiVersions": ubx.FieldSpec{WireName: "api_versions"},
-		"Metadata": ubx.FieldSpec{
-			WireName: "metadata",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields,
-		},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Pattern": ubx.FieldSpec{
-			WireName: "pattern",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields,
-		},
-	}
+	"ApiVersions": ubx.FieldSpec{WireName: "api_versions"},
+	"Metadata": ubx.FieldSpec{
+		WireName: "metadata",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields,
+	},
+	"Path": ubx.FieldSpec{WireName: "path"},
+	"Pattern": ubx.FieldSpec{
+		WireName: "pattern",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields,
+	},
+}
 
 var DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_AliasesFields = ubx.FieldMap{
-		"DefaultMetadata": ubx.FieldSpec{
-			WireName: "default_metadata",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields,
-		},
-		"DefaultPath": ubx.FieldSpec{WireName: "default_path"},
-		"DefaultPattern": ubx.FieldSpec{
-			WireName: "default_pattern",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Paths": ubx.FieldSpec{
-			WireName: "paths",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_PathsFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DefaultMetadata": ubx.FieldSpec{
+		WireName: "default_metadata",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultMetadataFields,
+	},
+	"DefaultPath": ubx.FieldSpec{WireName: "default_path"},
+	"DefaultPattern": ubx.FieldSpec{
+		WireName: "default_pattern",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_DefaultPatternFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Paths": ubx.FieldSpec{
+		WireName: "paths",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_Aliases_PathsFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfilesFields = ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ProfileVersion": ubx.FieldSpec{WireName: "profile_version"},
-	}
+	"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
+	"ProfileVersion": ubx.FieldSpec{WireName: "profile_version"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappingsFields = ubx.FieldMap{
-		"ExtendedLocations": ubx.FieldSpec{WireName: "extended_locations"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ExtendedLocations": ubx.FieldSpec{WireName: "extended_locations"},
+	"Location":          ubx.FieldSpec{WireName: "location"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappingsFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Zones":    ubx.FieldSpec{WireName: "zones"},
+}
 
 var DeploymentsDeploymentExtended_Properties_Providers_ResourceTypesFields = ubx.FieldMap{
-		"Aliases": ubx.FieldSpec{
-			WireName: "aliases",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_AliasesFields,
-		},
-		"ApiProfiles": ubx.FieldSpec{
-			WireName: "api_profiles",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfilesFields,
-		},
-		"ApiVersions": ubx.FieldSpec{WireName: "api_versions"},
-		"Capabilities": ubx.FieldSpec{WireName: "capabilities"},
-		"DefaultApiVersion": ubx.FieldSpec{WireName: "default_api_version"},
-		"LocationMappings": ubx.FieldSpec{
-			WireName: "location_mappings",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappingsFields,
-		},
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-		"ZoneMappings": ubx.FieldSpec{
-			WireName: "zone_mappings",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappingsFields,
-		},
-	}
+	"Aliases": ubx.FieldSpec{
+		WireName: "aliases",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_AliasesFields,
+	},
+	"ApiProfiles": ubx.FieldSpec{
+		WireName: "api_profiles",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ApiProfilesFields,
+	},
+	"ApiVersions":       ubx.FieldSpec{WireName: "api_versions"},
+	"Capabilities":      ubx.FieldSpec{WireName: "capabilities"},
+	"DefaultApiVersion": ubx.FieldSpec{WireName: "default_api_version"},
+	"LocationMappings": ubx.FieldSpec{
+		WireName: "location_mappings",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_LocationMappingsFields,
+	},
+	"Locations":    ubx.FieldSpec{WireName: "locations"},
+	"Properties":   ubx.FieldSpec{WireName: "properties"},
+	"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
+	"ZoneMappings": ubx.FieldSpec{
+		WireName: "zone_mappings",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypes_ZoneMappingsFields,
+	},
+}
 
 var DeploymentsDeploymentExtended_Properties_ProvidersFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Namespace": ubx.FieldSpec{WireName: "namespace"},
-		"ProviderAuthorizationConsentState": ubx.FieldSpec{WireName: "provider_authorization_consent_state"},
-		"RegistrationPolicy": ubx.FieldSpec{WireName: "registration_policy"},
-		"RegistrationState": ubx.FieldSpec{WireName: "registration_state"},
-		"ResourceTypes": ubx.FieldSpec{
-			WireName: "resource_types",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_Providers_ResourceTypesFields,
-		},
-	}
+	"Id":                                ubx.FieldSpec{WireName: "id"},
+	"Namespace":                         ubx.FieldSpec{WireName: "namespace"},
+	"ProviderAuthorizationConsentState": ubx.FieldSpec{WireName: "provider_authorization_consent_state"},
+	"RegistrationPolicy":                ubx.FieldSpec{WireName: "registration_policy"},
+	"RegistrationState":                 ubx.FieldSpec{WireName: "registration_state"},
+	"ResourceTypes": ubx.FieldSpec{
+		WireName: "resource_types",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_Providers_ResourceTypesFields,
+	},
+}
 
 var DeploymentsDeploymentExtended_Properties_TemplateLinkFields = ubx.FieldMap{
-		"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"QueryString": ubx.FieldSpec{WireName: "query_string"},
-		"RelativePath": ubx.FieldSpec{WireName: "relative_path"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ContentVersion": ubx.FieldSpec{WireName: "content_version"},
+	"Id":             ubx.FieldSpec{WireName: "id"},
+	"QueryString":    ubx.FieldSpec{WireName: "query_string"},
+	"RelativePath":   ubx.FieldSpec{WireName: "relative_path"},
+	"Uri":            ubx.FieldSpec{WireName: "uri"},
+}
 
 var DeploymentsDeploymentExtended_PropertiesFields = ubx.FieldMap{
-		"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
-		"DebugSetting": ubx.FieldSpec{
-			WireName: "debug_setting",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_DebugSettingFields,
-		},
-		"Dependencies": ubx.FieldSpec{
-			WireName: "dependencies",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_DependenciesFields,
-		},
-		"Diagnostics": ubx.FieldSpec{
-			WireName: "diagnostics",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_DiagnosticsFields,
-		},
-		"Duration": ubx.FieldSpec{WireName: "duration"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_ErrorFields,
-		},
-		"ExpressionEvaluationOptions": ubx.FieldSpec{
-			WireName: "expression_evaluation_options",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptionsFields,
-		},
-		"ExtensionConfigs": ubx.FieldSpec{WireName: "extension_configs"},
-		"Extensions": ubx.FieldSpec{
-			WireName: "extensions",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_ExtensionsFields,
-		},
-		"ExternalInputDefinitions": ubx.FieldSpec{
-			WireName: "external_input_definitions",
-			Kind: "map",
-			Fields: DeploymentsDeploymentExtended_Properties_ExternalInputDefinitionsFields,
-		},
-		"ExternalInputs": ubx.FieldSpec{
-			WireName: "external_inputs",
-			Kind: "map",
-			Fields: DeploymentsDeploymentExtended_Properties_ExternalInputsFields,
-		},
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"OnErrorDeployment": ubx.FieldSpec{
-			WireName: "on_error_deployment",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields,
-		},
-		"OutputResources": ubx.FieldSpec{
-			WireName: "output_resources",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_OutputResourcesFields,
-		},
-		"Outputs": ubx.FieldSpec{WireName: "outputs"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: DeploymentsDeploymentExtended_Properties_ParametersFields,
-		},
-		"ParametersLink": ubx.FieldSpec{
-			WireName: "parameters_link",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_ParametersLinkFields,
-		},
-		"Providers": ubx.FieldSpec{
-			WireName: "providers",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_ProvidersFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Template": ubx.FieldSpec{WireName: "template"},
-		"TemplateHash": ubx.FieldSpec{WireName: "template_hash"},
-		"TemplateLink": ubx.FieldSpec{
-			WireName: "template_link",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_Properties_TemplateLinkFields,
-		},
-		"Timestamp": ubx.FieldSpec{WireName: "timestamp"},
-		"ValidatedResources": ubx.FieldSpec{
-			WireName: "validated_resources",
-			Kind: "list",
-			Fields: DeploymentsDeploymentExtended_Properties_OutputResourcesFields,
-		},
-		"ValidationLevel": ubx.FieldSpec{WireName: "validation_level"},
-	}
+	"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
+	"DebugSetting": ubx.FieldSpec{
+		WireName: "debug_setting",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_DebugSettingFields,
+	},
+	"Dependencies": ubx.FieldSpec{
+		WireName: "dependencies",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_DependenciesFields,
+	},
+	"Diagnostics": ubx.FieldSpec{
+		WireName: "diagnostics",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_DiagnosticsFields,
+	},
+	"Duration": ubx.FieldSpec{WireName: "duration"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_ErrorFields,
+	},
+	"ExpressionEvaluationOptions": ubx.FieldSpec{
+		WireName: "expression_evaluation_options",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExpressionEvaluationOptionsFields,
+	},
+	"ExtensionConfigs": ubx.FieldSpec{WireName: "extension_configs"},
+	"Extensions": ubx.FieldSpec{
+		WireName: "extensions",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExtensionsFields,
+	},
+	"ExternalInputDefinitions": ubx.FieldSpec{
+		WireName: "external_input_definitions",
+		Kind:     "map",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExternalInputDefinitionsFields,
+	},
+	"ExternalInputs": ubx.FieldSpec{
+		WireName: "external_inputs",
+		Kind:     "map",
+		Fields:   DeploymentsDeploymentExtended_Properties_ExternalInputsFields,
+	},
+	"Mode": ubx.FieldSpec{WireName: "mode"},
+	"OnErrorDeployment": ubx.FieldSpec{
+		WireName: "on_error_deployment",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_OnErrorDeploymentFields,
+	},
+	"OutputResources": ubx.FieldSpec{
+		WireName: "output_resources",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_OutputResourcesFields,
+	},
+	"Outputs": ubx.FieldSpec{WireName: "outputs"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   DeploymentsDeploymentExtended_Properties_ParametersFields,
+	},
+	"ParametersLink": ubx.FieldSpec{
+		WireName: "parameters_link",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_ParametersLinkFields,
+	},
+	"Providers": ubx.FieldSpec{
+		WireName: "providers",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_ProvidersFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Template":          ubx.FieldSpec{WireName: "template"},
+	"TemplateHash":      ubx.FieldSpec{WireName: "template_hash"},
+	"TemplateLink": ubx.FieldSpec{
+		WireName: "template_link",
+		Kind:     "object",
+		Fields:   DeploymentsDeploymentExtended_Properties_TemplateLinkFields,
+	},
+	"Timestamp": ubx.FieldSpec{WireName: "timestamp"},
+	"ValidatedResources": ubx.FieldSpec{
+		WireName: "validated_resources",
+		Kind:     "list",
+		Fields:   DeploymentsDeploymentExtended_Properties_OutputResourcesFields,
+	},
+	"ValidationLevel": ubx.FieldSpec{WireName: "validation_level"},
+}
 
 type DeploymentsDeploymentExtendedConfig struct {
 	// The location to store the deployment data.
@@ -619,8 +618,8 @@ var DeploymentsDeploymentExtended = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DeploymentsDeploymentExtended_PropertiesFields,
+			Kind:     "object",
+			Fields:   DeploymentsDeploymentExtended_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

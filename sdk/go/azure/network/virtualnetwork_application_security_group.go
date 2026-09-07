@@ -11,9 +11,9 @@ type VirtualnetworkApplicationSecurityGroup_Properties struct {
 }
 
 var VirtualnetworkApplicationSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type VirtualnetworkApplicationSecurityGroupConfig struct {
 	// Resource ID.
@@ -46,12 +46,12 @@ type VirtualnetworkApplicationSecurityGroupAttrs struct {
 var VirtualnetworkApplicationSecurityGroup = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_application_security_group",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
+		"Id":       ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkApplicationSecurityGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkApplicationSecurityGroup_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

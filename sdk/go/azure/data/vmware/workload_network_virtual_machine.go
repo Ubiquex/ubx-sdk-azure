@@ -20,7 +20,7 @@ type WorkloadNetworkVirtualMachineConfig struct {
 type WorkloadNetworkVirtualMachineAttrs struct {
 	PrivateCloudName any
 	// NSX Virtual Machine Properties
-	Properties any
+	Properties       any
 	VirtualMachineId any
 }
 

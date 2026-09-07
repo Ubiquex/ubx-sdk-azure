@@ -4,11 +4,11 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCapturedLogList_Value_Properties struct {
-	CreatedTime any
+	CreatedTime      any
 	LastModifiedTime any
-	SizeInKb any
-	Type any
-	Url any
+	SizeInKb         any
+	Type             any
+	Url              any
 }
 
 type OpenapiCapturedLogList_Value struct {
@@ -21,7 +21,7 @@ type OpenapiCapturedLogListConfig struct {
 
 type OpenapiCapturedLogListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The CapturedLog items on this page
 	Value any

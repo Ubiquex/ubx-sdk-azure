@@ -20,7 +20,7 @@ type OpenapiTargetAttrs struct {
 var OpenapiTarget = ubx.ResourceBinding{
 	WireType: "azure_chaos_openapi_target",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"Location":   ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{WireName: "properties"},
 	},
 }

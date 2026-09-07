@@ -4,21 +4,21 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlTriggerGetResultsList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DbOpenapiSqlTriggerGetResultsList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type DbOpenapiSqlTriggerGetResultsList_Value_Properties_Resource struct {
 	Etag any
-	Rid any
-	Ts any
+	Rid  any
+	Ts   any
 }
 
 type DbOpenapiSqlTriggerGetResultsList_Value_Properties struct {
@@ -26,23 +26,23 @@ type DbOpenapiSqlTriggerGetResultsList_Value_Properties struct {
 }
 
 type DbOpenapiSqlTriggerGetResultsList_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiSqlTriggerGetResultsListConfig struct {
-	AccountName any
+	AccountName   any
 	ContainerName any
-	DatabaseName any
+	DatabaseName  any
 }
 
 type DbOpenapiSqlTriggerGetResultsListAttrs struct {
-	AccountName any
+	AccountName   any
 	ContainerName any
-	DatabaseName any
-	NextLink any
+	DatabaseName  any
+	NextLink      any
 	// List of triggers and their properties.
 	Value any
 }
@@ -50,8 +50,8 @@ type DbOpenapiSqlTriggerGetResultsListAttrs struct {
 var DbOpenapiSqlTriggerGetResultsList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_sql_trigger_get_results_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":   ubx.FieldSpec{WireName: "account_name"},
 		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":  ubx.FieldSpec{WireName: "database_name"},
 	},
 }

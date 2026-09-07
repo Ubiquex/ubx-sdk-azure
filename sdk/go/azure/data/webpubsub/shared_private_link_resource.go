@@ -17,21 +17,21 @@ type SharedPrivateLinkResource_Properties struct {
 }
 
 type SharedPrivateLinkResourceConfig struct {
-	ResourceName any
+	ResourceName                  any
 	SharedPrivateLinkResourceName any
 }
 
 type SharedPrivateLinkResourceAttrs struct {
 	// Describes the properties of an existing Shared Private Link Resource
-	Properties any
-	ResourceName any
+	Properties                    any
+	ResourceName                  any
 	SharedPrivateLinkResourceName any
 }
 
 var SharedPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_webpubsub_shared_private_link_resource",
 	Fields: ubx.FieldMap{
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":                  ubx.FieldSpec{WireName: "resource_name"},
 		"SharedPrivateLinkResourceName": ubx.FieldSpec{WireName: "shared_private_link_resource_name"},
 	},
 }

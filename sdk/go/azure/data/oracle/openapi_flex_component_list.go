@@ -4,16 +4,16 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFlexComponentList_Value_Properties struct {
-	AvailableCoreCount any
-	AvailableDbStorageInGbs any
+	AvailableCoreCount         any
+	AvailableDbStorageInGbs    any
 	AvailableLocalStorageInGbs any
-	AvailableMemoryInGbs any
-	ComputeModel any
-	DescriptionSummary any
-	HardwareType any
-	MinimumCoreCount any
-	RuntimeMinimumCoreCount any
-	Shape any
+	AvailableMemoryInGbs       any
+	ComputeModel               any
+	DescriptionSummary         any
+	HardwareType               any
+	MinimumCoreCount           any
+	RuntimeMinimumCoreCount    any
+	Shape                      any
 }
 
 type OpenapiFlexComponentList_Value struct {
@@ -27,7 +27,7 @@ type OpenapiFlexComponentListConfig struct {
 type OpenapiFlexComponentListAttrs struct {
 	// The link to the next page of items
 	NextLink any
-	Shape any
+	Shape    any
 	// The FlexComponent items on this page
 	Value any
 }

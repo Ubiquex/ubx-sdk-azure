@@ -61,45 +61,45 @@ type OpenapiConfidentialLedger_Properties struct {
 }
 
 var OpenapiConfidentialLedger_Properties_AadBasedSecurityPrincipalsFields = ubx.FieldMap{
-		"LedgerRoleName": ubx.FieldSpec{WireName: "ledger_role_name"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"LedgerRoleName": ubx.FieldSpec{WireName: "ledger_role_name"},
+	"PrincipalId":    ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":       ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var OpenapiConfidentialLedger_Properties_CertBasedSecurityPrincipalsFields = ubx.FieldMap{
-		"Cert": ubx.FieldSpec{WireName: "cert"},
-		"LedgerRoleName": ubx.FieldSpec{WireName: "ledger_role_name"},
-	}
+	"Cert":           ubx.FieldSpec{WireName: "cert"},
+	"LedgerRoleName": ubx.FieldSpec{WireName: "ledger_role_name"},
+}
 
 var OpenapiConfidentialLedger_PropertiesFields = ubx.FieldMap{
-		"AadBasedSecurityPrincipals": ubx.FieldSpec{
-			WireName: "aad_based_security_principals",
-			Kind: "list",
-			Fields: OpenapiConfidentialLedger_Properties_AadBasedSecurityPrincipalsFields,
-		},
-		"ApplicationType": ubx.FieldSpec{WireName: "application_type"},
-		"CertBasedSecurityPrincipals": ubx.FieldSpec{
-			WireName: "cert_based_security_principals",
-			Kind: "list",
-			Fields: OpenapiConfidentialLedger_Properties_CertBasedSecurityPrincipalsFields,
-		},
-		"EnclavePlatform": ubx.FieldSpec{WireName: "enclave_platform"},
-		"HostLevel": ubx.FieldSpec{WireName: "host_level"},
-		"IdentityServiceUri": ubx.FieldSpec{WireName: "identity_service_uri"},
-		"LedgerInternalNamespace": ubx.FieldSpec{WireName: "ledger_internal_namespace"},
-		"LedgerName": ubx.FieldSpec{WireName: "ledger_name"},
-		"LedgerSku": ubx.FieldSpec{WireName: "ledger_sku"},
-		"LedgerType": ubx.FieldSpec{WireName: "ledger_type"},
-		"LedgerUri": ubx.FieldSpec{WireName: "ledger_uri"},
-		"MaxBodySizeInMb": ubx.FieldSpec{WireName: "max_body_size_in_mb"},
-		"NodeCount": ubx.FieldSpec{WireName: "node_count"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RunningState": ubx.FieldSpec{WireName: "running_state"},
-		"ScittConfiguration": ubx.FieldSpec{WireName: "scitt_configuration"},
-		"SubjectName": ubx.FieldSpec{WireName: "subject_name"},
-		"WorkerThreads": ubx.FieldSpec{WireName: "worker_threads"},
-		"WriteLbaddressPrefix": ubx.FieldSpec{WireName: "write_lbaddress_prefix"},
-	}
+	"AadBasedSecurityPrincipals": ubx.FieldSpec{
+		WireName: "aad_based_security_principals",
+		Kind:     "list",
+		Fields:   OpenapiConfidentialLedger_Properties_AadBasedSecurityPrincipalsFields,
+	},
+	"ApplicationType": ubx.FieldSpec{WireName: "application_type"},
+	"CertBasedSecurityPrincipals": ubx.FieldSpec{
+		WireName: "cert_based_security_principals",
+		Kind:     "list",
+		Fields:   OpenapiConfidentialLedger_Properties_CertBasedSecurityPrincipalsFields,
+	},
+	"EnclavePlatform":         ubx.FieldSpec{WireName: "enclave_platform"},
+	"HostLevel":               ubx.FieldSpec{WireName: "host_level"},
+	"IdentityServiceUri":      ubx.FieldSpec{WireName: "identity_service_uri"},
+	"LedgerInternalNamespace": ubx.FieldSpec{WireName: "ledger_internal_namespace"},
+	"LedgerName":              ubx.FieldSpec{WireName: "ledger_name"},
+	"LedgerSku":               ubx.FieldSpec{WireName: "ledger_sku"},
+	"LedgerType":              ubx.FieldSpec{WireName: "ledger_type"},
+	"LedgerUri":               ubx.FieldSpec{WireName: "ledger_uri"},
+	"MaxBodySizeInMb":         ubx.FieldSpec{WireName: "max_body_size_in_mb"},
+	"NodeCount":               ubx.FieldSpec{WireName: "node_count"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"RunningState":            ubx.FieldSpec{WireName: "running_state"},
+	"ScittConfiguration":      ubx.FieldSpec{WireName: "scitt_configuration"},
+	"SubjectName":             ubx.FieldSpec{WireName: "subject_name"},
+	"WorkerThreads":           ubx.FieldSpec{WireName: "worker_threads"},
+	"WriteLbaddressPrefix":    ubx.FieldSpec{WireName: "write_lbaddress_prefix"},
+}
 
 type OpenapiConfidentialLedgerConfig struct {
 	// The geo-location where the resource lives
@@ -125,8 +125,8 @@ var OpenapiConfidentialLedger = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiConfidentialLedger_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiConfidentialLedger_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

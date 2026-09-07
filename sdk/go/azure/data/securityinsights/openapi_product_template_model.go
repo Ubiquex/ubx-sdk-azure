@@ -113,7 +113,7 @@ type OpenapiProductTemplateModel_Properties struct {
 }
 
 type OpenapiProductTemplateModelConfig struct {
-	TemplateId any
+	TemplateId    any
 	WorkspaceName any
 }
 
@@ -121,15 +121,15 @@ type OpenapiProductTemplateModelAttrs struct {
 	// Etag of the azure resource
 	Etag any
 	// Template property bag.
-	Properties any
-	TemplateId any
+	Properties    any
+	TemplateId    any
 	WorkspaceName any
 }
 
 var OpenapiProductTemplateModel = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_product_template_model",
 	Fields: ubx.FieldMap{
-		"TemplateId": ubx.FieldSpec{WireName: "template_id"},
+		"TemplateId":    ubx.FieldSpec{WireName: "template_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

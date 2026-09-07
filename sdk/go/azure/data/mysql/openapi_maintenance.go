@@ -30,7 +30,7 @@ type OpenapiMaintenance_Properties struct {
 
 type OpenapiMaintenanceConfig struct {
 	MaintenanceName any
-	ServerName any
+	ServerName      any
 }
 
 type OpenapiMaintenanceAttrs struct {
@@ -44,6 +44,6 @@ var OpenapiMaintenance = ubx.DataSourceBinding{
 	WireType: "azure_mysql_openapi_maintenance",
 	Fields: ubx.FieldMap{
 		"MaintenanceName": ubx.FieldSpec{WireName: "maintenance_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":      ubx.FieldSpec{WireName: "server_name"},
 	},
 }

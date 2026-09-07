@@ -28,23 +28,23 @@ type OpenapiManagedPrivateEndpointResource_Properties struct {
 }
 
 var OpenapiManagedPrivateEndpointResource_Properties_ConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiManagedPrivateEndpointResource_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{
-			WireName: "connection_state",
-			Kind: "object",
-			Fields: OpenapiManagedPrivateEndpointResource_Properties_ConnectionStateFields,
-		},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"IsReserved": ubx.FieldSpec{WireName: "is_reserved"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ConnectionState": ubx.FieldSpec{
+		WireName: "connection_state",
+		Kind:     "object",
+		Fields:   OpenapiManagedPrivateEndpointResource_Properties_ConnectionStateFields,
+	},
+	"Fqdns":                 ubx.FieldSpec{WireName: "fqdns"},
+	"GroupId":               ubx.FieldSpec{WireName: "group_id"},
+	"IsReserved":            ubx.FieldSpec{WireName: "is_reserved"},
+	"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiManagedPrivateEndpointResourceConfig struct {
 	// Properties of a managed private endpoint
@@ -63,8 +63,8 @@ var OpenapiManagedPrivateEndpointResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedPrivateEndpointResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedPrivateEndpointResource_PropertiesFields,
 		},
 	},
 }

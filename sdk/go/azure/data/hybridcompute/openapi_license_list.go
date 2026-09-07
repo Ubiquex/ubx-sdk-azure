@@ -4,26 +4,26 @@ package hybridcompute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLicenseList_Value_Properties_LicenseDetails_VolumeLicenseDetails struct {
-	InvoiceId any
+	InvoiceId   any
 	ProgramYear any
 }
 
 type OpenapiLicenseList_Value_Properties_LicenseDetails struct {
-	AssignedLicenses any
-	Edition any
-	ImmutableId any
-	Processors any
-	State any
-	Target any
-	Type any
+	AssignedLicenses     any
+	Edition              any
+	ImmutableId          any
+	Processors           any
+	State                any
+	Target               any
+	Type                 any
 	VolumeLicenseDetails any
 }
 
 type OpenapiLicenseList_Value_Properties struct {
-	LicenseDetails any
-	LicenseType any
+	LicenseDetails    any
+	LicenseType       any
 	ProvisioningState any
-	TenantId any
+	TenantId          any
 }
 
 type OpenapiLicenseList_Value struct {
@@ -42,6 +42,5 @@ type OpenapiLicenseListAttrs struct {
 
 var OpenapiLicenseList = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_license_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -25,7 +25,7 @@ type ConfigurationProfile_SystemData struct {
 
 type ConfigurationProfileConfig struct {
 	ConfigurationProfileName any
-	VersionName any
+	VersionName              any
 }
 
 type ConfigurationProfileAttrs struct {
@@ -37,7 +37,7 @@ type ConfigurationProfileAttrs struct {
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// Resource tags.
-	Tags any
+	Tags        any
 	VersionName any
 }
 
@@ -45,6 +45,6 @@ var ConfigurationProfile = ubx.DataSourceBinding{
 	WireType: "azure_automanage_configuration_profile",
 	Fields: ubx.FieldMap{
 		"ConfigurationProfileName": ubx.FieldSpec{WireName: "configuration_profile_name"},
-		"VersionName": ubx.FieldSpec{WireName: "version_name"},
+		"VersionName":              ubx.FieldSpec{WireName: "version_name"},
 	},
 }

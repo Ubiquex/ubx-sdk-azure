@@ -11,9 +11,9 @@ type DataboundariesDataBoundaryDefinition_Properties struct {
 }
 
 var DataboundariesDataBoundaryDefinition_PropertiesFields = ubx.FieldMap{
-		"DataBoundary": ubx.FieldSpec{WireName: "data_boundary"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"DataBoundary":      ubx.FieldSpec{WireName: "data_boundary"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type DataboundariesDataBoundaryDefinitionConfig struct {
 	// Data boundary properties
@@ -34,8 +34,8 @@ var DataboundariesDataBoundaryDefinition = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DataboundariesDataBoundaryDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   DataboundariesDataBoundaryDefinition_PropertiesFields,
 		},
 		"Default": ubx.FieldSpec{WireName: "default"},
 	},

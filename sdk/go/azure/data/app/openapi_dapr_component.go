@@ -4,16 +4,16 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDaprComponent_Properties_Metadata struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiDaprComponent_Properties_Secrets struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
-	Name any
-	Value any
+	Name        any
+	Value       any
 }
 
 type OpenapiDaprComponent_Properties struct {
@@ -40,12 +40,12 @@ type OpenapiDaprComponent_Properties struct {
 }
 
 type OpenapiDaprComponentConfig struct {
-	ComponentName any
+	ComponentName   any
 	EnvironmentName any
 }
 
 type OpenapiDaprComponentAttrs struct {
-	ComponentName any
+	ComponentName   any
 	EnvironmentName any
 	// Dapr Component resource specific properties
 	Properties any
@@ -54,7 +54,7 @@ type OpenapiDaprComponentAttrs struct {
 var OpenapiDaprComponent = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_dapr_component",
 	Fields: ubx.FieldMap{
-		"ComponentName": ubx.FieldSpec{WireName: "component_name"},
+		"ComponentName":   ubx.FieldSpec{WireName: "component_name"},
 		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
 	},
 }

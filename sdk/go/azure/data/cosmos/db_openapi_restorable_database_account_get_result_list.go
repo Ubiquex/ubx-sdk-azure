@@ -4,23 +4,23 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableDatabaseAccountGetResultList_Value_Properties_RestorableLocations struct {
-	CreationTime any
-	DeletionTime any
-	LocationName any
+	CreationTime                      any
+	DeletionTime                      any
+	LocationName                      any
 	RegionalDatabaseAccountInstanceId any
 }
 
 type DbOpenapiRestorableDatabaseAccountGetResultList_Value_Properties struct {
-	AccountName any
-	ApiType any
-	CreationTime any
-	DeletionTime any
+	AccountName          any
+	ApiType              any
+	CreationTime         any
+	DeletionTime         any
 	OldestRestorableTime any
-	RestorableLocations any
+	RestorableLocations  any
 }
 
 type DbOpenapiRestorableDatabaseAccountGetResultList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

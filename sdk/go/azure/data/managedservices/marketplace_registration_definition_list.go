@@ -4,52 +4,52 @@ package managedservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MarketplaceRegistrationDefinitionList_Value_Plan struct {
-	Name any
-	Product any
+	Name      any
+	Product   any
 	Publisher any
-	Version any
+	Version   any
 }
 
 type MarketplaceRegistrationDefinitionList_Value_Properties_Authorizations struct {
 	DelegatedRoleDefinitionIds any
-	PrincipalId any
-	PrincipalIdDisplayName any
-	RoleDefinitionId any
+	PrincipalId                any
+	PrincipalIdDisplayName     any
+	RoleDefinitionId           any
 }
 
 type MarketplaceRegistrationDefinitionList_Value_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers struct {
-	PrincipalId any
+	PrincipalId            any
 	PrincipalIdDisplayName any
 }
 
 type MarketplaceRegistrationDefinitionList_Value_Properties_EligibleAuthorizations_JustInTimeAccessPolicy struct {
-	ManagedByTenantApprovers any
+	ManagedByTenantApprovers  any
 	MaximumActivationDuration any
-	MultiFactorAuthProvider any
+	MultiFactorAuthProvider   any
 }
 
 type MarketplaceRegistrationDefinitionList_Value_Properties_EligibleAuthorizations struct {
 	JustInTimeAccessPolicy any
-	PrincipalId any
+	PrincipalId            any
 	PrincipalIdDisplayName any
-	RoleDefinitionId any
+	RoleDefinitionId       any
 }
 
 type MarketplaceRegistrationDefinitionList_Value_Properties struct {
-	Authorizations any
+	Authorizations         any
 	EligibleAuthorizations any
-	ManagedByTenantId any
-	OfferDisplayName any
-	PlanDisplayName any
-	PublisherDisplayName any
+	ManagedByTenantId      any
+	OfferDisplayName       any
+	PlanDisplayName        any
+	PublisherDisplayName   any
 }
 
 type MarketplaceRegistrationDefinitionList_Value struct {
-	Id any
-	Name any
-	Plan any
+	Id         any
+	Name       any
+	Plan       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type MarketplaceRegistrationDefinitionListConfig struct {

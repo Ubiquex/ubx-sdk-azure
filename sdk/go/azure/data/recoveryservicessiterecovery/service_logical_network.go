@@ -15,26 +15,26 @@ type ServiceLogicalNetwork_Properties struct {
 }
 
 type ServiceLogicalNetworkConfig struct {
-	FabricName any
+	FabricName         any
 	LogicalNetworkName any
-	ResourceName any
+	ResourceName       any
 }
 
 type ServiceLogicalNetworkAttrs struct {
 	FabricName any
 	// Resource Location
-	Location any
+	Location           any
 	LogicalNetworkName any
 	// Logical Network Properties.
-	Properties any
+	Properties   any
 	ResourceName any
 }
 
 var ServiceLogicalNetwork = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_logical_network",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"FabricName":         ubx.FieldSpec{WireName: "fabric_name"},
 		"LogicalNetworkName": ubx.FieldSpec{WireName: "logical_network_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":       ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

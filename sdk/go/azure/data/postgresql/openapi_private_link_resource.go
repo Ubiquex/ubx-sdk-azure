@@ -13,7 +13,7 @@ type OpenapiPrivateLinkResource_Properties struct {
 }
 
 type OpenapiPrivateLinkResourceConfig struct {
-	GroupName any
+	GroupName  any
 	ServerName any
 }
 
@@ -27,7 +27,7 @@ type OpenapiPrivateLinkResourceAttrs struct {
 var OpenapiPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_private_link_resource",
 	Fields: ubx.FieldMap{
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
+		"GroupName":  ubx.FieldSpec{WireName: "group_name"},
 		"ServerName": ubx.FieldSpec{WireName: "server_name"},
 	},
 }

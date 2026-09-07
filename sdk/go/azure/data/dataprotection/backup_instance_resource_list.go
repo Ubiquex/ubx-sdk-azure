@@ -8,82 +8,82 @@ type BackupInstanceResourceList_Value_Properties_DataSourceInfo_ResourceProperti
 }
 
 type BackupInstanceResourceList_Value_Properties_DataSourceInfo struct {
-	DatasourceType any
-	ObjectType any
-	ResourceId any
-	ResourceLocation any
-	ResourceName any
+	DatasourceType     any
+	ObjectType         any
+	ResourceId         any
+	ResourceLocation   any
+	ResourceName       any
 	ResourceProperties any
-	ResourceType any
-	ResourceUri any
+	ResourceType       any
+	ResourceUri        any
 }
 
 type BackupInstanceResourceList_Value_Properties_IdentityDetails struct {
-	UseSystemAssignedIdentity any
+	UseSystemAssignedIdentity  any
 	UserAssignedIdentityArmUrl any
 }
 
 type BackupInstanceResourceList_Value_Properties_PolicyInfo_PolicyParameters_DataStoreParametersList struct {
 	DataStoreType any
-	ObjectType any
+	ObjectType    any
 }
 
 type BackupInstanceResourceList_Value_Properties_PolicyInfo_PolicyParameters struct {
 	BackupDatasourceParametersList any
-	DataStoreParametersList any
+	DataStoreParametersList        any
 }
 
 type BackupInstanceResourceList_Value_Properties_PolicyInfo struct {
-	PolicyId any
+	PolicyId         any
 	PolicyParameters any
-	PolicyVersion any
+	PolicyVersion    any
 }
 
 type BackupInstanceResourceList_Value_Properties_ProtectionErrorDetails_Details struct {
 }
 
 type BackupInstanceResourceList_Value_Properties_ProtectionErrorDetails_InnerError struct {
-	AdditionalInfo any
-	Code any
+	AdditionalInfo     any
+	Code               any
 	EmbeddedInnerError any
 }
 
 type BackupInstanceResourceList_Value_Properties_ProtectionErrorDetails struct {
-	Code any
-	Details any
-	InnerError any
-	IsRetryable any
-	IsUserError any
-	Message any
-	Properties any
+	Code              any
+	Details           any
+	InnerError        any
+	IsRetryable       any
+	IsUserError       any
+	Message           any
+	Properties        any
 	RecommendedAction any
-	Target any
+	Target            any
 }
 
 type BackupInstanceResourceList_Value_Properties_ProtectionStatus struct {
 	ErrorDetails any
-	Status any
+	Status       any
 }
 
 type BackupInstanceResourceList_Value_Properties struct {
-	CurrentProtectionState any
-	DataSourceInfo any
-	DataSourceSetInfo any
-	DatasourceAuthCredentials any
-	FriendlyName any
-	IdentityDetails any
-	ObjectType any
-	PolicyInfo any
-	ProtectionErrorDetails any
-	ProtectionStatus any
-	ProvisioningState any
+	CurrentProtectionState         any
+	DataSourceInfo                 any
+	DataSourceSetInfo              any
+	DatasourceAuthCredentials      any
+	FriendlyName                   any
+	IdentityDetails                any
+	ObjectType                     any
+	PolicyInfo                     any
+	ProtectionErrorDetails         any
+	ProtectionStatus               any
+	ProvisioningState              any
 	ResourceGuardOperationRequests any
-	ValidationType any
+	ValidationType                 any
 }
 
 type BackupInstanceResourceList_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BackupInstanceResourceListConfig struct {
@@ -94,7 +94,7 @@ type BackupInstanceResourceListAttrs struct {
 	// The uri to fetch the next page of resources. Call ListNext() fetches next page of resources.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

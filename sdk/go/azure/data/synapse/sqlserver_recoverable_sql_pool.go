@@ -20,7 +20,7 @@ type SqlserverRecoverableSqlPoolConfig struct {
 
 type SqlserverRecoverableSqlPoolAttrs struct {
 	// The properties of a recoverable sql pool
-	Properties any
+	Properties  any
 	SqlPoolName any
 }
 

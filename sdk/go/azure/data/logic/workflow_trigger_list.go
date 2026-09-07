@@ -4,75 +4,75 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkflowTriggerList_Value_Properties_Recurrence_Schedule_MonthlyOccurrences struct {
-	Day any
+	Day        any
 	Occurrence any
 }
 
 type WorkflowTriggerList_Value_Properties_Recurrence_Schedule struct {
-	Hours any
-	Minutes any
-	MonthDays any
+	Hours              any
+	Minutes            any
+	MonthDays          any
 	MonthlyOccurrences any
-	WeekDays any
+	WeekDays           any
 }
 
 type WorkflowTriggerList_Value_Properties_Recurrence struct {
-	EndTime any
+	EndTime   any
 	Frequency any
-	Interval any
-	Schedule any
+	Interval  any
+	Schedule  any
 	StartTime any
-	TimeZone any
+	TimeZone  any
 }
 
 type WorkflowTriggerList_Value_Properties_Workflow struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type WorkflowTriggerList_Value_Properties struct {
-	ChangedTime any
-	CreatedTime any
+	ChangedTime       any
+	CreatedTime       any
 	LastExecutionTime any
 	NextExecutionTime any
 	ProvisioningState any
-	Recurrence any
-	State any
-	Status any
-	Workflow any
+	Recurrence        any
+	State             any
+	Status            any
+	Workflow          any
 }
 
 type WorkflowTriggerList_Value struct {
-	Name any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type WorkflowTriggerListConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
-	WorkflowName any
+	SubscriptionId    any
+	WorkflowName      any
 }
 
 type WorkflowTriggerListAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// A list of workflow triggers.
-	Value any
+	Value        any
 	WorkflowName any
 }
 
 var WorkflowTriggerList = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_trigger_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

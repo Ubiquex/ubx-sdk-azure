@@ -4,28 +4,28 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolSqlPoolList_Value_Properties struct {
-	Collation any
-	CreateMode any
-	CreationDate any
-	MaxSizeBytes any
-	ProvisioningState any
-	RecoverableDatabaseId any
-	RestorePointInTime any
+	Collation                  any
+	CreateMode                 any
+	CreationDate               any
+	MaxSizeBytes               any
+	ProvisioningState          any
+	RecoverableDatabaseId      any
+	RestorePointInTime         any
 	SourceDatabaseDeletionDate any
-	SourceDatabaseId any
-	Status any
-	StorageAccountType any
+	SourceDatabaseId           any
+	Status                     any
+	StorageAccountType         any
 }
 
 type SqlpoolSqlPoolList_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type SqlpoolSqlPoolList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type SqlpoolSqlPoolListConfig struct {
@@ -40,6 +40,5 @@ type SqlpoolSqlPoolListAttrs struct {
 
 var SqlpoolSqlPoolList = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

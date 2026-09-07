@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExportJobsResultConfig struct {
 	OperationId any
-	VaultName any
+	VaultName   any
 }
 
 type ExportJobsResultAttrs struct {
@@ -17,14 +17,14 @@ type ExportJobsResultAttrs struct {
 	ExcelFileBlobSasKey any
 	// URL of the blob into which the ExcelFile is uploaded.
 	ExcelFileBlobUrl any
-	OperationId any
-	VaultName any
+	OperationId      any
+	VaultName        any
 }
 
 var ExportJobsResult = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_export_jobs_result",
 	Fields: ubx.FieldMap{
 		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":   ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

@@ -11,9 +11,9 @@ type OpenapiActionResponse_Properties struct {
 }
 
 var OpenapiActionResponse_PropertiesFields = ubx.FieldMap{
-		"TriggerUri": ubx.FieldSpec{WireName: "trigger_uri"},
-		"WorkflowId": ubx.FieldSpec{WireName: "workflow_id"},
-	}
+	"TriggerUri": ubx.FieldSpec{WireName: "trigger_uri"},
+	"WorkflowId": ubx.FieldSpec{WireName: "workflow_id"},
+}
 
 type OpenapiActionResponseConfig struct {
 	// Etag of the azure resource
@@ -35,8 +35,8 @@ var OpenapiActionResponse = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiActionResponse_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiActionResponse_PropertiesFields,
 		},
 	},
 }

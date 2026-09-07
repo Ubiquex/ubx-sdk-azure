@@ -6,11 +6,11 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiCredentialResourceList_Value_Properties struct {
 	Annotations any
 	Description any
-	Type any
+	Type        any
 }
 
 type OpenapiCredentialResourceList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

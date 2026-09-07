@@ -4,15 +4,15 @@ package servicebus
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MigrationConfigPropertiesList_Value_Properties struct {
-	MigrationState any
+	MigrationState                    any
 	PendingReplicationOperationsCount any
-	PostMigrationName any
-	ProvisioningState any
-	TargetNamespace any
+	PostMigrationName                 any
+	ProvisioningState                 any
+	TargetNamespace                   any
 }
 
 type MigrationConfigPropertiesList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

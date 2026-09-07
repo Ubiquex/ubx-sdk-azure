@@ -34,26 +34,26 @@ type BackupPolicy_Properties struct {
 }
 
 var BackupPolicy_Properties_VolumeBackupsFields = ubx.FieldMap{
-		"BackupsCount": ubx.FieldSpec{WireName: "backups_count"},
-		"PolicyEnabled": ubx.FieldSpec{WireName: "policy_enabled"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
-		"VolumeResourceId": ubx.FieldSpec{WireName: "volume_resource_id"},
-	}
+	"BackupsCount":     ubx.FieldSpec{WireName: "backups_count"},
+	"PolicyEnabled":    ubx.FieldSpec{WireName: "policy_enabled"},
+	"VolumeName":       ubx.FieldSpec{WireName: "volume_name"},
+	"VolumeResourceId": ubx.FieldSpec{WireName: "volume_resource_id"},
+}
 
 var BackupPolicy_PropertiesFields = ubx.FieldMap{
-		"BackupPolicyId": ubx.FieldSpec{WireName: "backup_policy_id"},
-		"DailyBackupsToKeep": ubx.FieldSpec{WireName: "daily_backups_to_keep"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"MonthlyBackupsToKeep": ubx.FieldSpec{WireName: "monthly_backups_to_keep"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VolumeBackups": ubx.FieldSpec{
-			WireName: "volume_backups",
-			Kind: "list",
-			Fields: BackupPolicy_Properties_VolumeBackupsFields,
-		},
-		"VolumesAssigned": ubx.FieldSpec{WireName: "volumes_assigned"},
-		"WeeklyBackupsToKeep": ubx.FieldSpec{WireName: "weekly_backups_to_keep"},
-	}
+	"BackupPolicyId":       ubx.FieldSpec{WireName: "backup_policy_id"},
+	"DailyBackupsToKeep":   ubx.FieldSpec{WireName: "daily_backups_to_keep"},
+	"Enabled":              ubx.FieldSpec{WireName: "enabled"},
+	"MonthlyBackupsToKeep": ubx.FieldSpec{WireName: "monthly_backups_to_keep"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"VolumeBackups": ubx.FieldSpec{
+		WireName: "volume_backups",
+		Kind:     "list",
+		Fields:   BackupPolicy_Properties_VolumeBackupsFields,
+	},
+	"VolumesAssigned":     ubx.FieldSpec{WireName: "volumes_assigned"},
+	"WeeklyBackupsToKeep": ubx.FieldSpec{WireName: "weekly_backups_to_keep"},
+}
 
 type BackupPolicyConfig struct {
 	// The geo-location where the resource lives
@@ -81,8 +81,8 @@ var BackupPolicy = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BackupPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   BackupPolicy_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

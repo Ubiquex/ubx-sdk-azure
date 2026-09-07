@@ -8,16 +8,16 @@ type VirtualnetworkRouteList_Value_Properties_NextHop struct {
 }
 
 type VirtualnetworkRouteList_Value_Properties struct {
-	AddressPrefix any
-	HasBgpOverride any
-	NextHop any
-	NextHopIpAddress any
-	NextHopType any
+	AddressPrefix     any
+	HasBgpOverride    any
+	NextHop           any
+	NextHopIpAddress  any
+	NextHopType       any
 	ProvisioningState any
 }
 
 type VirtualnetworkRouteList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -27,7 +27,7 @@ type VirtualnetworkRouteListConfig struct {
 
 type VirtualnetworkRouteListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink       any
 	RouteTableName any
 	// The Route items on this page
 	Value any

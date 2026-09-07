@@ -11,11 +11,11 @@ type MachineDiagnosticRunCommand_Properties_ErrorBlobManagedIdentity struct {
 }
 
 type MachineDiagnosticRunCommand_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type MachineDiagnosticRunCommand_Properties_InstanceView struct {
@@ -38,7 +38,7 @@ type MachineDiagnosticRunCommand_Properties_InstanceView struct {
 }
 
 type MachineDiagnosticRunCommand_Properties_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -90,17 +90,17 @@ type MachineDiagnosticRunCommand_Properties struct {
 
 type MachineDiagnosticRunCommandConfig struct {
 	RunCommandName any
-	VmName any
+	VmName         any
 }
 
 type MachineDiagnosticRunCommandAttrs struct {
 	// The geo-location where the resource lives
 	Location any
 	// Describes the properties of a Virtual Machine run command.
-	Properties any
+	Properties     any
 	RunCommandName any
 	// Resource tags.
-	Tags any
+	Tags   any
 	VmName any
 }
 
@@ -108,6 +108,6 @@ var MachineDiagnosticRunCommand = ubx.DataSourceBinding{
 	WireType: "azure_virtual_machine_diagnostic_run_command",
 	Fields: ubx.FieldMap{
 		"RunCommandName": ubx.FieldSpec{WireName: "run_command_name"},
-		"VmName": ubx.FieldSpec{WireName: "vm_name"},
+		"VmName":         ubx.FieldSpec{WireName: "vm_name"},
 	},
 }

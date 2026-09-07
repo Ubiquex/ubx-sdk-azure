@@ -90,7 +90,7 @@ type DeletedBackupVaultResource_Properties_SecuritySettings struct {
 
 type DeletedBackupVaultResource_Properties_StorageSettings struct {
 	DatastoreType any
-	Type any
+	Type          any
 }
 
 type DeletedBackupVaultResource_Properties struct {

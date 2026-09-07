@@ -9,8 +9,8 @@ type ManageddatabasetransparentdataencryptionManagedTransparentDataEncryption_Pr
 }
 
 var ManageddatabasetransparentdataencryptionManagedTransparentDataEncryption_PropertiesFields = ubx.FieldMap{
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 type ManageddatabasetransparentdataencryptionManagedTransparentDataEncryptionConfig struct {
 	// Properties of a transparent data encryption.
@@ -27,8 +27,8 @@ var ManageddatabasetransparentdataencryptionManagedTransparentDataEncryption = u
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManageddatabasetransparentdataencryptionManagedTransparentDataEncryption_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManageddatabasetransparentdataencryptionManagedTransparentDataEncryption_PropertiesFields,
 		},
 	},
 }

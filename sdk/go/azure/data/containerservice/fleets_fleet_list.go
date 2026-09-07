@@ -4,35 +4,35 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FleetsFleetList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type FleetsFleetList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type FleetsFleetList_Value_Properties_HubProfile_AgentProfile struct {
 	SubnetId any
-	VmSize any
+	VmSize   any
 }
 
 type FleetsFleetList_Value_Properties_HubProfile_ApiServerAccessProfile struct {
-	EnablePrivateCluster any
+	EnablePrivateCluster  any
 	EnableVnetIntegration any
-	SubnetId any
+	SubnetId              any
 }
 
 type FleetsFleetList_Value_Properties_HubProfile struct {
-	AgentProfile any
+	AgentProfile           any
 	ApiServerAccessProfile any
-	DnsPrefix any
-	Fqdn any
-	KubernetesVersion any
-	PortalFqdn any
+	DnsPrefix              any
+	Fqdn                   any
+	KubernetesVersion      any
+	PortalFqdn             any
 }
 
 type FleetsFleetList_Value_Properties_Status_LastOperationError_AdditionalInfo struct {
@@ -45,34 +45,34 @@ type FleetsFleetList_Value_Properties_Status_LastOperationError_Details_Details 
 
 type FleetsFleetList_Value_Properties_Status_LastOperationError_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsFleetList_Value_Properties_Status_LastOperationError struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type FleetsFleetList_Value_Properties_Status struct {
 	LastOperationError any
-	LastOperationId any
+	LastOperationId    any
 }
 
 type FleetsFleetList_Value_Properties struct {
-	HubProfile any
+	HubProfile        any
 	ProvisioningState any
-	Status any
+	Status            any
 }
 
 type FleetsFleetList_Value struct {
-	ETag any
-	Identity any
+	ETag       any
+	Identity   any
 	Properties any
 }
 
@@ -88,6 +88,5 @@ type FleetsFleetListAttrs struct {
 
 var FleetsFleetList = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_fleets_fleet_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

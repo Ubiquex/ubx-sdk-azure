@@ -13,10 +13,10 @@ type OpenapiAdvancedThreatProtection_Properties struct {
 }
 
 var OpenapiAdvancedThreatProtection_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"CreationTime":      ubx.FieldSpec{WireName: "creation_time"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+}
 
 type OpenapiAdvancedThreatProtectionConfig struct {
 	// Properties of an Advanced Threat Protection setting.
@@ -33,8 +33,8 @@ var OpenapiAdvancedThreatProtection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAdvancedThreatProtection_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAdvancedThreatProtection_PropertiesFields,
 		},
 	},
 }

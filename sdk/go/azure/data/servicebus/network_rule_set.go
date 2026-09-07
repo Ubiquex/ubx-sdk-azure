@@ -14,7 +14,7 @@ type NetworkRuleSet_Properties_VirtualNetworkRules_Subnet struct {
 
 type NetworkRuleSet_Properties_VirtualNetworkRules struct {
 	IgnoreMissingVnetServiceEndpoint any
-	Subnet any
+	Subnet                           any
 }
 
 type NetworkRuleSet_Properties struct {
@@ -36,7 +36,7 @@ type NetworkRuleSetConfig struct {
 
 type NetworkRuleSetAttrs struct {
 	// The geo-location where the resource lives
-	Location any
+	Location      any
 	NamespaceName any
 	// NetworkRuleSet properties
 	Properties any

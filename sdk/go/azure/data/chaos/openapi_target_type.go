@@ -20,7 +20,7 @@ type OpenapiTargetTypeConfig struct {
 
 type OpenapiTargetTypeAttrs struct {
 	// Model that represents the base Target Type properties model.
-	Properties any
+	Properties     any
 	TargetTypeName any
 }
 

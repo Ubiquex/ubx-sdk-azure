@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOutputConfig struct {
 	AutomationAccountName any
-	JobName any
+	JobName               any
 }
 
 type OpenapiOutputAttrs struct {
 	AutomationAccountName any
-	JobName any
+	JobName               any
 }
 
 var OpenapiOutput = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_output",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
+		"JobName":               ubx.FieldSpec{WireName: "job_name"},
 	},
 }

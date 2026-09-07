@@ -18,18 +18,18 @@ type OpenapiMaintenanceConfigurationResource_Properties struct {
 }
 
 var OpenapiMaintenanceConfigurationResource_Properties_ScheduledEntriesFields = ubx.FieldMap{
-		"DurationHours": ubx.FieldSpec{WireName: "duration_hours"},
-		"StartHourUtc": ubx.FieldSpec{WireName: "start_hour_utc"},
-		"WeekDay": ubx.FieldSpec{WireName: "week_day"},
-	}
+	"DurationHours": ubx.FieldSpec{WireName: "duration_hours"},
+	"StartHourUtc":  ubx.FieldSpec{WireName: "start_hour_utc"},
+	"WeekDay":       ubx.FieldSpec{WireName: "week_day"},
+}
 
 var OpenapiMaintenanceConfigurationResource_PropertiesFields = ubx.FieldMap{
-		"ScheduledEntries": ubx.FieldSpec{
-			WireName: "scheduled_entries",
-			Kind: "list",
-			Fields: OpenapiMaintenanceConfigurationResource_Properties_ScheduledEntriesFields,
-		},
-	}
+	"ScheduledEntries": ubx.FieldSpec{
+		WireName: "scheduled_entries",
+		Kind:     "list",
+		Fields:   OpenapiMaintenanceConfigurationResource_Properties_ScheduledEntriesFields,
+	},
+}
 
 type OpenapiMaintenanceConfigurationResourceConfig struct {
 	// List of maintenance schedules for a managed environment.
@@ -46,8 +46,8 @@ var OpenapiMaintenanceConfigurationResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiMaintenanceConfigurationResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiMaintenanceConfigurationResource_PropertiesFields,
 		},
 	},
 }

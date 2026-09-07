@@ -14,26 +14,26 @@ type OpenapiExtensionValue_Properties struct {
 
 type OpenapiExtensionValueConfig struct {
 	ExtensionType any
-	Location any
-	Publisher any
-	Version any
+	Location      any
+	Publisher     any
+	Version       any
 }
 
 type OpenapiExtensionValueAttrs struct {
 	ExtensionType any
-	Location any
+	Location      any
 	// Describes Extension Metadata properties
 	Properties any
-	Publisher any
-	Version any
+	Publisher  any
+	Version    any
 }
 
 var OpenapiExtensionValue = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_extension_value",
 	Fields: ubx.FieldMap{
 		"ExtensionType": ubx.FieldSpec{WireName: "extension_type"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"Location":      ubx.FieldSpec{WireName: "location"},
+		"Publisher":     ubx.FieldSpec{WireName: "publisher"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
 	},
 }

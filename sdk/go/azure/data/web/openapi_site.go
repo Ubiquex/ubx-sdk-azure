@@ -11,7 +11,7 @@ type OpenapiSite_ExtendedLocation struct {
 }
 
 type OpenapiSite_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -28,10 +28,10 @@ type OpenapiSite_Identity struct {
 
 type OpenapiSite_Properties_AiIntegration_Mcp_Servers struct {
 	Description any
-	Enabled any
-	Endpoint any
-	Name any
-	ToolList any
+	Enabled     any
+	Endpoint    any
+	Name        any
+	ToolList    any
 }
 
 type OpenapiSite_Properties_AiIntegration_Mcp struct {
@@ -150,7 +150,7 @@ type OpenapiSite_Properties_FunctionAppConfig_Runtime struct {
 
 type OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_AlwaysReady struct {
 	InstanceCount any
-	Name any
+	Name          any
 }
 
 type OpenapiSite_Properties_FunctionAppConfig_ScaleAndConcurrency_Triggers_Http struct {
@@ -191,12 +191,12 @@ type OpenapiSite_Properties_FunctionAppConfig struct {
 }
 
 type OpenapiSite_Properties_HostNameSslStates struct {
-	HostType any
-	Name any
-	SslState any
+	HostType   any
+	Name       any
+	SslState   any
 	Thumbprint any
-	ToUpdate any
-	VirtualIp any
+	ToUpdate   any
+	VirtualIp  any
 }
 
 type OpenapiSite_Properties_HostingEnvironmentProfile struct {
@@ -241,7 +241,7 @@ type OpenapiSite_Properties_SiteConfig_ApiManagementConfig struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_AppSettings struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -280,18 +280,18 @@ type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_SlowRequests struc
 }
 
 type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodes struct {
-	Count any
-	Path any
-	Status any
-	SubStatus any
+	Count        any
+	Path         any
+	Status       any
+	SubStatus    any
 	TimeInterval any
-	Win32Status any
+	Win32Status  any
 }
 
 type OpenapiSite_Properties_SiteConfig_AutoHealRules_Triggers_StatusCodesRange struct {
-	Count any
-	Path any
-	StatusCodes any
+	Count        any
+	Path         any
+	StatusCodes  any
 	TimeInterval any
 }
 
@@ -318,19 +318,19 @@ type OpenapiSite_Properties_SiteConfig_AutoHealRules struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_AzureStorageAccounts struct {
-	AccessKey any
+	AccessKey   any
 	AccountName any
-	MountPath any
-	Protocol any
-	ShareName any
-	State any
-	Type any
+	MountPath   any
+	Protocol    any
+	ShareName   any
+	State       any
+	Type        any
 }
 
 type OpenapiSite_Properties_SiteConfig_ConnectionStrings struct {
 	ConnectionString any
-	Name any
-	Type any
+	Name             any
+	Type             any
 }
 
 type OpenapiSite_Properties_SiteConfig_Cors struct {
@@ -341,14 +341,14 @@ type OpenapiSite_Properties_SiteConfig_Cors struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_Experiments_RampUpRules struct {
-	ActionHostName any
+	ActionHostName            any
 	ChangeDecisionCallbackUrl any
-	ChangeIntervalInMinutes any
-	ChangeStep any
-	MaxReroutePercentage any
-	MinReroutePercentage any
-	Name any
-	ReroutePercentage any
+	ChangeIntervalInMinutes   any
+	ChangeStep                any
+	MaxReroutePercentage      any
+	MinReroutePercentage      any
+	Name                      any
+	ReroutePercentage         any
 }
 
 type OpenapiSite_Properties_SiteConfig_Experiments struct {
@@ -357,23 +357,23 @@ type OpenapiSite_Properties_SiteConfig_Experiments struct {
 }
 
 type OpenapiSite_Properties_SiteConfig_HandlerMappings struct {
-	Arguments any
-	Extension any
+	Arguments       any
+	Extension       any
 	ScriptProcessor any
 }
 
 type OpenapiSite_Properties_SiteConfig_IpSecurityRestrictions struct {
-	Action any
-	Description any
-	Headers any
-	IpAddress any
-	Name any
-	Priority any
-	SubnetMask any
-	SubnetTrafficTag any
-	Tag any
+	Action               any
+	Description          any
+	Headers              any
+	IpAddress            any
+	Name                 any
+	Priority             any
+	SubnetMask           any
+	SubnetTrafficTag     any
+	Tag                  any
 	VnetSubnetResourceId any
-	VnetTrafficTag any
+	VnetTrafficTag       any
 }
 
 type OpenapiSite_Properties_SiteConfig_Limits struct {
@@ -414,14 +414,14 @@ type OpenapiSite_Properties_SiteConfig_Push struct {
 
 type OpenapiSite_Properties_SiteConfig_VirtualApplications_VirtualDirectories struct {
 	PhysicalPath any
-	VirtualPath any
+	VirtualPath  any
 }
 
 type OpenapiSite_Properties_SiteConfig_VirtualApplications struct {
-	PhysicalPath any
-	PreloadEnabled any
+	PhysicalPath       any
+	PreloadEnabled     any
 	VirtualDirectories any
-	VirtualPath any
+	VirtualPath        any
 }
 
 type OpenapiSite_Properties_SiteConfig struct {
@@ -612,7 +612,7 @@ type OpenapiSite_Properties struct {
 	// App Dapr configuration.
 	DaprConfig any
 	// Default hostname of the app. Read-only.
-	DefaultHostName any
+	DefaultHostName  any
 	DnsConfiguration any
 	// <code>true</code> if the app is enabled; otherwise, <code>false</code>. Setting this value to false disables the app (takes the app offline).
 	Enabled any
@@ -718,10 +718,10 @@ type OpenapiSiteAttrs struct {
 	Kind any
 	// The geo-location where the resource lives
 	Location any
-	Name any
+	Name     any
 	// Site resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 	// Resource tags.
 	Tags any
 }

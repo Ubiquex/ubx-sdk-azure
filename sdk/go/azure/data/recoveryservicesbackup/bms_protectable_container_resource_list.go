@@ -4,23 +4,23 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsProtectableContainerResourceList_Value_Properties struct {
-	BackupManagementType any
-	ContainerId any
-	FriendlyName any
-	HealthStatus any
+	BackupManagementType     any
+	ContainerId              any
+	FriendlyName             any
+	HealthStatus             any
 	ProtectableContainerType any
 }
 
 type BmsProtectableContainerResourceList_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsProtectableContainerResourceListConfig struct {
 	FabricName any
-	VaultName any
+	VaultName  any
 }
 
 type BmsProtectableContainerResourceListAttrs struct {
@@ -28,7 +28,7 @@ type BmsProtectableContainerResourceListAttrs struct {
 	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 
@@ -36,6 +36,6 @@ var BmsProtectableContainerResourceList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protectable_container_resource_list",
 	Fields: ubx.FieldMap{
 		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":  ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

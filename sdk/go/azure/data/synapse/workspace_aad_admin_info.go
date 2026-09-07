@@ -24,6 +24,5 @@ type WorkspaceAadAdminInfoAttrs struct {
 
 var WorkspaceAadAdminInfo = ubx.DataSourceBinding{
 	WireType: "azure_synapse_workspace_aad_admin_info",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

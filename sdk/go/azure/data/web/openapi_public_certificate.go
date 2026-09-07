@@ -13,9 +13,9 @@ type OpenapiPublicCertificate_Properties struct {
 }
 
 type OpenapiPublicCertificateConfig struct {
-	Name any
+	Name                  any
 	PublicCertificateName any
-	Slot any
+	Slot                  any
 }
 
 type OpenapiPublicCertificateAttrs struct {
@@ -23,16 +23,16 @@ type OpenapiPublicCertificateAttrs struct {
 	Kind any
 	Name any
 	// PublicCertificate resource specific properties
-	Properties any
+	Properties            any
 	PublicCertificateName any
-	Slot any
+	Slot                  any
 }
 
 var OpenapiPublicCertificate = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_public_certificate",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":                  ubx.FieldSpec{WireName: "name"},
 		"PublicCertificateName": ubx.FieldSpec{WireName: "public_certificate_name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Slot":                  ubx.FieldSpec{WireName: "slot"},
 	},
 }

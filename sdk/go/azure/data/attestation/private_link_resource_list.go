@@ -4,8 +4,8 @@ package attestation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResourceList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
@@ -19,7 +19,7 @@ type PrivateLinkResourceListConfig struct {
 
 type PrivateLinkResourceListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ProviderName any
 	// The PrivateLinkResource items on this page
 	Value any

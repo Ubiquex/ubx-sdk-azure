@@ -13,10 +13,10 @@ type BmsProtectionPolicyResource_Properties struct {
 }
 
 var BmsProtectionPolicyResource_PropertiesFields = ubx.FieldMap{
-		"BackupManagementType": ubx.FieldSpec{WireName: "backup_management_type"},
-		"ProtectedItemsCount": ubx.FieldSpec{WireName: "protected_items_count"},
-		"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
-	}
+	"BackupManagementType":           ubx.FieldSpec{WireName: "backup_management_type"},
+	"ProtectedItemsCount":            ubx.FieldSpec{WireName: "protected_items_count"},
+	"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
+}
 
 type BmsProtectionPolicyResourceConfig struct {
 	// Optional ETag.
@@ -43,12 +43,12 @@ type BmsProtectionPolicyResourceAttrs struct {
 var BmsProtectionPolicyResource = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protection_policy_resource",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
+		"ETag":     ubx.FieldSpec{WireName: "e_tag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BmsProtectionPolicyResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BmsProtectionPolicyResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

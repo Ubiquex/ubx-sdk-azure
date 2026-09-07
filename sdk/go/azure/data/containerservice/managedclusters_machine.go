@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersMachine_Properties_Network_IpAddresses struct {
 	Family any
-	Ip any
+	Ip     any
 }
 
 type ManagedclustersMachine_Properties_Network struct {
@@ -22,15 +22,15 @@ type ManagedclustersMachine_Properties struct {
 
 type ManagedclustersMachineConfig struct {
 	AgentPoolName any
-	MachineName any
-	ResourceName any
+	MachineName   any
+	ResourceName  any
 }
 
 type ManagedclustersMachineAttrs struct {
 	AgentPoolName any
-	MachineName any
+	MachineName   any
 	// The properties of the machine
-	Properties any
+	Properties   any
 	ResourceName any
 	// The Availability zone in which machine is located.
 	Zones any
@@ -40,7 +40,7 @@ var ManagedclustersMachine = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_machine",
 	Fields: ubx.FieldMap{
 		"AgentPoolName": ubx.FieldSpec{WireName: "agent_pool_name"},
-		"MachineName": ubx.FieldSpec{WireName: "machine_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"MachineName":   ubx.FieldSpec{WireName: "machine_name"},
+		"ResourceName":  ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

@@ -37,33 +37,33 @@ type OpenapiVnetInfoResource_Properties struct {
 }
 
 var OpenapiVnetInfoResource_Properties_Routes_PropertiesFields = ubx.FieldMap{
-		"EndAddress": ubx.FieldSpec{WireName: "end_address"},
-		"RouteType": ubx.FieldSpec{WireName: "route_type"},
-		"StartAddress": ubx.FieldSpec{WireName: "start_address"},
-	}
+	"EndAddress":   ubx.FieldSpec{WireName: "end_address"},
+	"RouteType":    ubx.FieldSpec{WireName: "route_type"},
+	"StartAddress": ubx.FieldSpec{WireName: "start_address"},
+}
 
 var OpenapiVnetInfoResource_Properties_RoutesFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVnetInfoResource_Properties_Routes_PropertiesFields,
-		},
-	}
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiVnetInfoResource_Properties_Routes_PropertiesFields,
+	},
+}
 
 var OpenapiVnetInfoResource_PropertiesFields = ubx.FieldMap{
-		"CertBlob": ubx.FieldSpec{WireName: "cert_blob"},
-		"CertThumbprint": ubx.FieldSpec{WireName: "cert_thumbprint"},
-		"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
-		"IsSwift": ubx.FieldSpec{WireName: "is_swift"},
-		"ResyncRequired": ubx.FieldSpec{WireName: "resync_required"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: OpenapiVnetInfoResource_Properties_RoutesFields,
-		},
-		"VnetResourceId": ubx.FieldSpec{WireName: "vnet_resource_id"},
-	}
+	"CertBlob":       ubx.FieldSpec{WireName: "cert_blob"},
+	"CertThumbprint": ubx.FieldSpec{WireName: "cert_thumbprint"},
+	"DnsServers":     ubx.FieldSpec{WireName: "dns_servers"},
+	"IsSwift":        ubx.FieldSpec{WireName: "is_swift"},
+	"ResyncRequired": ubx.FieldSpec{WireName: "resync_required"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   OpenapiVnetInfoResource_Properties_RoutesFields,
+	},
+	"VnetResourceId": ubx.FieldSpec{WireName: "vnet_resource_id"},
+}
 
 type OpenapiVnetInfoResourceConfig struct {
 	// Kind of resource.
@@ -89,8 +89,8 @@ var OpenapiVnetInfoResource = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVnetInfoResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiVnetInfoResource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

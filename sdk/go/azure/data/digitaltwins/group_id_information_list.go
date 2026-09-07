@@ -4,30 +4,30 @@ package digitaltwins
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GroupIdInformationList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type GroupIdInformationList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type GroupIdInformationListConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type GroupIdInformationListAttrs struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// The list of available private link resources for a Digital Twin.
 	Value any
 }
@@ -35,9 +35,9 @@ type GroupIdInformationListAttrs struct {
 var GroupIdInformationList = ubx.DataSourceBinding{
 	WireType: "azure_digitaltwins_group_id_information_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

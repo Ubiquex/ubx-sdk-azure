@@ -5,20 +5,20 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiHostingEnvironmentDiagnosticsConfig struct {
 	DiagnosticsName any
-	Name any
+	Name            any
 }
 
 type OpenapiHostingEnvironmentDiagnosticsAttrs struct {
 	DiagnosticsName any
 	// Diagnostics output.
 	DiagnosticsOutput any
-	Name any
+	Name              any
 }
 
 var OpenapiHostingEnvironmentDiagnostics = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_hosting_environment_diagnostics",
 	Fields: ubx.FieldMap{
 		"DiagnosticsName": ubx.FieldSpec{WireName: "diagnostics_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 	},
 }

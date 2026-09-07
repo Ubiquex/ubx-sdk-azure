@@ -26,8 +26,8 @@ type OpenapiHostNameBinding_Properties struct {
 
 type OpenapiHostNameBindingConfig struct {
 	HostName any
-	Name any
-	Slot any
+	Name     any
+	Slot     any
 }
 
 type OpenapiHostNameBindingAttrs struct {
@@ -37,14 +37,14 @@ type OpenapiHostNameBindingAttrs struct {
 	Name any
 	// HostNameBinding resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 }
 
 var OpenapiHostNameBinding = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_host_name_binding",
 	Fields: ubx.FieldMap{
 		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
+		"Slot":     ubx.FieldSpec{WireName: "slot"},
 	},
 }

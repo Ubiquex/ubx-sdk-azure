@@ -48,14 +48,14 @@ type ConfigurationAssignment_SystemData struct {
 }
 
 type ConfigurationAssignmentConfig struct {
-	ApiVersion any
+	ApiVersion                  any
 	ConfigurationAssignmentName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName           any
+	SubscriptionId              any
 }
 
 type ConfigurationAssignmentAttrs struct {
-	ApiVersion any
+	ApiVersion                  any
 	ConfigurationAssignmentName any
 	// Fully qualified identifier of the resource
 	Id any
@@ -64,9 +64,9 @@ type ConfigurationAssignmentAttrs struct {
 	// Name of the resource
 	Name any
 	// Properties for configuration assignment
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// Type of the resource
@@ -76,9 +76,9 @@ type ConfigurationAssignmentAttrs struct {
 var ConfigurationAssignment = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_configuration_assignment",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":                  ubx.FieldSpec{WireName: "api_version"},
 		"ConfigurationAssignmentName": ubx.FieldSpec{WireName: "configuration_assignment_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":           ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":              ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

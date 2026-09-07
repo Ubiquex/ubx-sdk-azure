@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAlertRuleTemplateConfig struct {
 	AlertRuleTemplateId any
-	WorkspaceName any
+	WorkspaceName       any
 }
 
 type OpenapiAlertRuleTemplateAttrs struct {
 	AlertRuleTemplateId any
 	// The kind of the alert rule
-	Kind any
+	Kind          any
 	WorkspaceName any
 }
 
@@ -19,6 +19,6 @@ var OpenapiAlertRuleTemplate = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_alert_rule_template",
 	Fields: ubx.FieldMap{
 		"AlertRuleTemplateId": ubx.FieldSpec{WireName: "alert_rule_template_id"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"WorkspaceName":       ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

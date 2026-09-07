@@ -4,7 +4,7 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TopicTypeInfo_Properties_AdditionalEnforcedPermissions struct {
-	IsDataAction any
+	IsDataAction   any
 	PermissionName any
 }
 
@@ -32,7 +32,7 @@ type TopicTypeInfo_Properties struct {
 }
 
 type TopicTypeInfoConfig struct {
-	ApiVersion any
+	ApiVersion    any
 	TopicTypeName any
 }
 
@@ -43,7 +43,7 @@ type TopicTypeInfoAttrs struct {
 	// Name of the resource.
 	Name any
 	// Properties of a topic type.
-	Properties any
+	Properties    any
 	TopicTypeName any
 	// Type of the resource.
 	Type any
@@ -52,7 +52,7 @@ type TopicTypeInfoAttrs struct {
 var TopicTypeInfo = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_topic_type_info",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":    ubx.FieldSpec{WireName: "api_version"},
 		"TopicTypeName": ubx.FieldSpec{WireName: "topic_type_name"},
 	},
 }

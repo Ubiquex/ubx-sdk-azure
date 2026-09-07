@@ -11,24 +11,24 @@ type OpenapiCodeVersion_Properties struct {
 }
 
 type OpenapiCodeVersionConfig struct {
-	Name any
-	Version any
+	Name          any
+	Version       any
 	WorkspaceName any
 }
 
 type OpenapiCodeVersionAttrs struct {
 	Name any
 	// Code asset version details.
-	Properties any
-	Version any
+	Properties    any
+	Version       any
 	WorkspaceName any
 }
 
 var OpenapiCodeVersion = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_code_version",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

@@ -7,7 +7,7 @@ type SapvirtualinstanceSapdatabaseInstanceList_Value_Properties_Errors_Propertie
 }
 
 type SapvirtualinstanceSapdatabaseInstanceList_Value_Properties_Errors_Properties struct {
-	Code any
+	Code    any
 	Details any
 	Message any
 }
@@ -21,21 +21,21 @@ type SapvirtualinstanceSapdatabaseInstanceList_Value_Properties_LoadBalancerDeta
 }
 
 type SapvirtualinstanceSapdatabaseInstanceList_Value_Properties_VmDetails struct {
-	Status any
-	StorageDetails any
+	Status           any
+	StorageDetails   any
 	VirtualMachineId any
 }
 
 type SapvirtualinstanceSapdatabaseInstanceList_Value_Properties struct {
-	DatabaseSid any
-	DatabaseType any
-	Errors any
-	IpAddress any
+	DatabaseSid         any
+	DatabaseType        any
+	Errors              any
+	IpAddress           any
 	LoadBalancerDetails any
-	ProvisioningState any
-	Status any
-	Subnet any
-	VmDetails any
+	ProvisioningState   any
+	Status              any
+	Subnet              any
+	VmDetails           any
 }
 
 type SapvirtualinstanceSapdatabaseInstanceList_Value struct {
@@ -48,7 +48,7 @@ type SapvirtualinstanceSapdatabaseInstanceListConfig struct {
 
 type SapvirtualinstanceSapdatabaseInstanceListAttrs struct {
 	// Gets the value of next link.
-	NextLink any
+	NextLink               any
 	SapVirtualInstanceName any
 	// Gets the list of SAP Database instances.
 	Value any

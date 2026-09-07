@@ -11,9 +11,9 @@ type OpenapiVnetGateway_Properties struct {
 }
 
 var OpenapiVnetGateway_PropertiesFields = ubx.FieldMap{
-		"VnetName": ubx.FieldSpec{WireName: "vnet_name"},
-		"VpnPackageUri": ubx.FieldSpec{WireName: "vpn_package_uri"},
-	}
+	"VnetName":      ubx.FieldSpec{WireName: "vnet_name"},
+	"VpnPackageUri": ubx.FieldSpec{WireName: "vpn_package_uri"},
+}
 
 type OpenapiVnetGatewayConfig struct {
 	// Kind of resource.
@@ -39,8 +39,8 @@ var OpenapiVnetGateway = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVnetGateway_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiVnetGateway_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

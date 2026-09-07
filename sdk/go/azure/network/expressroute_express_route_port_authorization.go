@@ -15,11 +15,11 @@ type ExpressrouteExpressRoutePortAuthorization_Properties struct {
 }
 
 var ExpressrouteExpressRoutePortAuthorization_PropertiesFields = ubx.FieldMap{
-		"AuthorizationKey": ubx.FieldSpec{WireName: "authorization_key"},
-		"AuthorizationUseStatus": ubx.FieldSpec{WireName: "authorization_use_status"},
-		"CircuitResourceUri": ubx.FieldSpec{WireName: "circuit_resource_uri"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AuthorizationKey":       ubx.FieldSpec{WireName: "authorization_key"},
+	"AuthorizationUseStatus": ubx.FieldSpec{WireName: "authorization_use_status"},
+	"CircuitResourceUri":     ubx.FieldSpec{WireName: "circuit_resource_uri"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ExpressrouteExpressRoutePortAuthorizationConfig struct {
 	// Name of the resource.
@@ -45,8 +45,8 @@ var ExpressrouteExpressRoutePortAuthorization = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRoutePortAuthorization_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteExpressRoutePortAuthorization_PropertiesFields,
 		},
 	},
 }

@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VdiHealthCheckStatusDetails_Properties_HealthChecks struct {
 	AdditionalDetails any
-	DisplayName any
-	EndDateTime any
-	ErrorType any
+	DisplayName       any
+	EndDateTime       any
+	ErrorType         any
 	RecommendedAction any
-	StartDateTime any
-	Status any
+	StartDateTime     any
+	Status            any
 }
 
 type VdiHealthCheckStatusDetails_Properties struct {
@@ -45,7 +45,7 @@ type VdiHealthCheckStatusDetailsAttrs struct {
 	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
 	Id any
 	// The name of the resource
-	Name any
+	Name                  any
 	NetworkConnectionName any
 	// Health Check properties.
 	Properties any

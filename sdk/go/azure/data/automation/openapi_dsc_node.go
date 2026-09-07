@@ -4,7 +4,7 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDscNode_Properties_ExtensionHandler struct {
-	Name any
+	Name    any
 	Version any
 }
 
@@ -38,12 +38,12 @@ type OpenapiDscNode_Properties struct {
 
 type OpenapiDscNodeConfig struct {
 	AutomationAccountName any
-	NodeId any
+	NodeId                any
 }
 
 type OpenapiDscNodeAttrs struct {
 	AutomationAccountName any
-	NodeId any
+	NodeId                any
 	// The properties of a DscNode
 	Properties any
 }
@@ -52,6 +52,6 @@ var OpenapiDscNode = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_dsc_node",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"NodeId": ubx.FieldSpec{WireName: "node_id"},
+		"NodeId":                ubx.FieldSpec{WireName: "node_id"},
 	},
 }

@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiView_Properties_Kpis struct {
 	Enabled any
-	Id any
-	Type any
+	Id      any
+	Type    any
 }
 
 type ManagementOpenapiView_Properties_Pivots struct {
@@ -16,7 +16,7 @@ type ManagementOpenapiView_Properties_Pivots struct {
 
 type ManagementOpenapiView_Properties_Query_DataSet_Aggregation struct {
 	Function any
-	Name any
+	Name     any
 }
 
 type ManagementOpenapiView_Properties_Query_DataSet_Configuration struct {
@@ -49,7 +49,7 @@ type ManagementOpenapiView_Properties_Query_DataSet_Filter struct {
 
 type ManagementOpenapiView_Properties_Query_DataSet_Sorting struct {
 	Direction any
-	Name any
+	Name      any
 }
 
 type ManagementOpenapiView_Properties_Query_DataSet struct {
@@ -115,7 +115,7 @@ type ManagementOpenapiView_Properties struct {
 }
 
 type ManagementOpenapiViewConfig struct {
-	Scope any
+	Scope    any
 	ViewName any
 }
 
@@ -124,14 +124,14 @@ type ManagementOpenapiViewAttrs struct {
 	ETag any
 	// The properties of the view.
 	Properties any
-	Scope any
-	ViewName any
+	Scope      any
+	ViewName   any
 }
 
 var ManagementOpenapiView = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_view",
 	Fields: ubx.FieldMap{
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"Scope":    ubx.FieldSpec{WireName: "scope"},
 		"ViewName": ubx.FieldSpec{WireName: "view_name"},
 	},
 }

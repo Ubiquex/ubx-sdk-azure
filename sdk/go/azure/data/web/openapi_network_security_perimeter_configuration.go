@@ -13,7 +13,7 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_NetworkSecurityPeri
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties_AppliesTo struct {
-	Features any
+	Features     any
 	ResourceType any
 }
 
@@ -22,19 +22,19 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	AppliesTo any
-	Direction any
-	EmailAddresses any
+	AddressPrefixes           any
+	AppliesTo                 any
+	Direction                 any
+	EmailAddresses            any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	PhoneNumbers any
-	ServiceTags any
-	Subscriptions any
+	PhoneNumbers              any
+	ServiceTags               any
+	Subscriptions             any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -52,15 +52,15 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -92,8 +92,8 @@ type OpenapiNetworkSecurityPerimeterConfigurationAttrs struct {
 	// Resource Id.
 	Id any
 	// Kind of resource.
-	Kind any
-	Name any
+	Kind                              any
+	Name                              any
 	NetworkSecurityPerimeterReference any
 	// Network Security Perimeter Configuration Properties
 	Properties any

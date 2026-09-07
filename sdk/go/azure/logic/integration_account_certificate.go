@@ -35,32 +35,32 @@ type IntegrationAccountCertificate_Properties struct {
 }
 
 var IntegrationAccountCertificate_Properties_Key_KeyVaultFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var IntegrationAccountCertificate_Properties_KeyFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVault": ubx.FieldSpec{
-			WireName: "key_vault",
-			Kind: "object",
-			Fields: IntegrationAccountCertificate_Properties_Key_KeyVaultFields,
-		},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-	}
+	"KeyName": ubx.FieldSpec{WireName: "key_name"},
+	"KeyVault": ubx.FieldSpec{
+		WireName: "key_vault",
+		Kind:     "object",
+		Fields:   IntegrationAccountCertificate_Properties_Key_KeyVaultFields,
+	},
+	"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
+}
 
 var IntegrationAccountCertificate_PropertiesFields = ubx.FieldMap{
-		"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
-		"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
-		"Key": ubx.FieldSpec{
-			WireName: "key",
-			Kind: "object",
-			Fields: IntegrationAccountCertificate_Properties_KeyFields,
-		},
-		"Metadata": ubx.FieldSpec{WireName: "metadata"},
-		"PublicCertificate": ubx.FieldSpec{WireName: "public_certificate"},
-	}
+	"ChangedTime": ubx.FieldSpec{WireName: "changed_time"},
+	"CreatedTime": ubx.FieldSpec{WireName: "created_time"},
+	"Key": ubx.FieldSpec{
+		WireName: "key",
+		Kind:     "object",
+		Fields:   IntegrationAccountCertificate_Properties_KeyFields,
+	},
+	"Metadata":          ubx.FieldSpec{WireName: "metadata"},
+	"PublicCertificate": ubx.FieldSpec{WireName: "public_certificate"},
+}
 
 type IntegrationAccountCertificateConfig struct {
 	// The resource location.
@@ -92,8 +92,8 @@ var IntegrationAccountCertificate = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationAccountCertificate_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationAccountCertificate_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

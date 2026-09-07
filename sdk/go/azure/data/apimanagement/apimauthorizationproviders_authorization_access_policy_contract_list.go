@@ -4,7 +4,7 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimauthorizationprovidersAuthorizationAccessPolicyContractList_Value_Properties struct {
-	AppIds any
+	AppIds   any
 	ObjectId any
 	TenantId any
 }
@@ -27,6 +27,5 @@ type ApimauthorizationprovidersAuthorizationAccessPolicyContractListAttrs struct
 
 var ApimauthorizationprovidersAuthorizationAccessPolicyContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimauthorizationproviders_authorization_access_policy_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

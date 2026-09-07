@@ -11,9 +11,9 @@ type ApimworkspacesWorkspaceContract2_Properties struct {
 }
 
 var ApimworkspacesWorkspaceContract2_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+}
 
 type ApimworkspacesWorkspaceContract2Config struct {
 	// Workspace entity properties.
@@ -30,8 +30,8 @@ var ApimworkspacesWorkspaceContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesWorkspaceContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesWorkspaceContract2_PropertiesFields,
 		},
 	},
 }

@@ -4,12 +4,12 @@ package paloaltonetworks
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwCertificateObjectGlobalRulestackResourceList_Value_Properties struct {
-	AuditComment any
-	CertificateSelfSigned any
+	AuditComment                any
+	CertificateSelfSigned       any
 	CertificateSignerResourceId any
-	Description any
-	Etag any
-	ProvisioningState any
+	Description                 any
+	Etag                        any
+	ProvisioningState           any
 }
 
 type CloudngfwCertificateObjectGlobalRulestackResourceList_Value struct {

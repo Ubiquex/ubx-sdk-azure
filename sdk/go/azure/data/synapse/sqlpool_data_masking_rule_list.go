@@ -4,34 +4,34 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolDataMaskingRuleList_Value_Properties struct {
-	AliasName any
-	ColumnName any
-	Id any
-	MaskingFunction any
-	NumberFrom any
-	NumberTo any
-	PrefixSize any
+	AliasName         any
+	ColumnName        any
+	Id                any
+	MaskingFunction   any
+	NumberFrom        any
+	NumberTo          any
+	PrefixSize        any
 	ReplacementString any
-	RuleState any
-	SchemaName any
-	SuffixSize any
-	TableName any
+	RuleState         any
+	SchemaName        any
+	SuffixSize        any
+	TableName         any
 }
 
 type SqlpoolDataMaskingRuleList_Value struct {
-	Kind any
-	Location any
+	Kind       any
+	Location   any
 	Properties any
 }
 
 type SqlpoolDataMaskingRuleListConfig struct {
 	DataMaskingPolicyName any
-	SqlPoolName any
+	SqlPoolName           any
 }
 
 type SqlpoolDataMaskingRuleListAttrs struct {
 	DataMaskingPolicyName any
-	SqlPoolName any
+	SqlPoolName           any
 	// The list of Sql pool data masking rules.
 	Value any
 }
@@ -40,6 +40,6 @@ var SqlpoolDataMaskingRuleList = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_data_masking_rule_list",
 	Fields: ubx.FieldMap{
 		"DataMaskingPolicyName": ubx.FieldSpec{WireName: "data_masking_policy_name"},
-		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
+		"SqlPoolName":           ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

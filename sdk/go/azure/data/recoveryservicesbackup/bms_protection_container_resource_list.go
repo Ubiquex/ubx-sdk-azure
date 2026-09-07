@@ -4,20 +4,20 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsProtectionContainerResourceList_Value_Properties struct {
-	BackupManagementType any
-	ContainerType any
-	FriendlyName any
-	HealthStatus any
+	BackupManagementType  any
+	ContainerType         any
+	FriendlyName          any
+	HealthStatus          any
 	ProtectableObjectType any
-	RegistrationStatus any
-	SourceLocation any
+	RegistrationStatus    any
+	SourceLocation        any
 }
 
 type BmsProtectionContainerResourceList_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsProtectionContainerResourceListConfig struct {
@@ -28,7 +28,7 @@ type BmsProtectionContainerResourceListAttrs struct {
 	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

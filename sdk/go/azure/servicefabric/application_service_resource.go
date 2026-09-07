@@ -39,21 +39,21 @@ type ApplicationServiceResource_SystemData struct {
 }
 
 var ApplicationServiceResource_Properties_PartitionDescriptionFields = ubx.FieldMap{
-		"PartitionScheme": ubx.FieldSpec{WireName: "partition_scheme"},
-	}
+	"PartitionScheme": ubx.FieldSpec{WireName: "partition_scheme"},
+}
 
 var ApplicationServiceResource_PropertiesFields = ubx.FieldMap{
-		"PartitionDescription": ubx.FieldSpec{
-			WireName: "partition_description",
-			Kind: "object",
-			Fields: ApplicationServiceResource_Properties_PartitionDescriptionFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceDnsName": ubx.FieldSpec{WireName: "service_dns_name"},
-		"ServiceKind": ubx.FieldSpec{WireName: "service_kind"},
-		"ServicePackageActivationMode": ubx.FieldSpec{WireName: "service_package_activation_mode"},
-		"ServiceTypeName": ubx.FieldSpec{WireName: "service_type_name"},
-	}
+	"PartitionDescription": ubx.FieldSpec{
+		WireName: "partition_description",
+		Kind:     "object",
+		Fields:   ApplicationServiceResource_Properties_PartitionDescriptionFields,
+	},
+	"ProvisioningState":            ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceDnsName":               ubx.FieldSpec{WireName: "service_dns_name"},
+	"ServiceKind":                  ubx.FieldSpec{WireName: "service_kind"},
+	"ServicePackageActivationMode": ubx.FieldSpec{WireName: "service_package_activation_mode"},
+	"ServiceTypeName":              ubx.FieldSpec{WireName: "service_type_name"},
+}
 
 type ApplicationServiceResourceConfig struct {
 	// It will be deprecated in New API, resource location depends on the parent resource.
@@ -89,8 +89,8 @@ var ApplicationServiceResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationServiceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApplicationServiceResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

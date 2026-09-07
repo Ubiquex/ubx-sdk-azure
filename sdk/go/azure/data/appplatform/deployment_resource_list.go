@@ -16,96 +16,96 @@ type DeploymentResourceList_Value_Properties_DeploymentSettings_LivenessProbe_Pr
 }
 
 type DeploymentResourceList_Value_Properties_DeploymentSettings_LivenessProbe struct {
-	DisableProbe any
-	FailureThreshold any
+	DisableProbe        any
+	FailureThreshold    any
 	InitialDelaySeconds any
-	PeriodSeconds any
-	ProbeAction any
-	SuccessThreshold any
-	TimeoutSeconds any
+	PeriodSeconds       any
+	ProbeAction         any
+	SuccessThreshold    any
+	TimeoutSeconds      any
 }
 
 type DeploymentResourceList_Value_Properties_DeploymentSettings_ResourceRequests struct {
-	Cpu any
+	Cpu    any
 	Memory any
 }
 
 type DeploymentResourceList_Value_Properties_DeploymentSettings struct {
-	AddonConfigs any
-	Apms any
-	ContainerProbeSettings any
-	EnvironmentVariables any
-	LivenessProbe any
-	ReadinessProbe any
-	ResourceRequests any
-	StartupProbe any
+	AddonConfigs                  any
+	Apms                          any
+	ContainerProbeSettings        any
+	EnvironmentVariables          any
+	LivenessProbe                 any
+	ReadinessProbe                any
+	ResourceRequests              any
+	StartupProbe                  any
 	TerminationGracePeriodSeconds any
 }
 
 type DeploymentResourceList_Value_Properties_Instances struct {
 	DiscoveryStatus any
-	Name any
-	Reason any
-	StartTime any
-	Status any
-	Zone any
+	Name            any
+	Reason          any
+	StartTime       any
+	Status          any
+	Zone            any
 }
 
 type DeploymentResourceList_Value_Properties_Source struct {
-	Type any
+	Type    any
 	Version any
 }
 
 type DeploymentResourceList_Value_Properties struct {
-	Active any
+	Active             any
 	DeploymentSettings any
-	Instances any
-	ProvisioningState any
-	Source any
-	Status any
+	Instances          any
+	ProvisioningState  any
+	Source             any
+	Status             any
 }
 
 type DeploymentResourceList_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type DeploymentResourceList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type DeploymentResourceListConfig struct {
-	ApiVersion any
-	AppName any
+	ApiVersion        any
+	AppName           any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
-	Version any
+	ServiceName       any
+	SubscriptionId    any
+	Version           any
 }
 
 type DeploymentResourceListAttrs struct {
 	ApiVersion any
-	AppName any
+	AppName    any
 	// URL client should use to fetch the next page (per server side paging). It's null for now, added for future use.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 	// Collection of Deployment resources
-	Value any
+	Value   any
 	Version any
 }
 
 var DeploymentResourceList = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_deployment_resource_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"AppName": ubx.FieldSpec{WireName: "app_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"AppName":           ubx.FieldSpec{WireName: "app_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"Version":           ubx.FieldSpec{WireName: "version"},
 	},
 }

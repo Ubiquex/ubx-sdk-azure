@@ -43,15 +43,15 @@ type HealthcareApisPrivateEndpointConnectionDescription_SystemData struct {
 
 type HealthcareApisPrivateEndpointConnectionDescriptionConfig struct {
 	ResourceGroupName any
-	WorkspaceName any
+	WorkspaceName     any
 }
 
 type HealthcareApisPrivateEndpointConnectionDescriptionAttrs struct {
 	// Properties of the PrivateEndpointConnectProperties.
-	Properties any
+	Properties        any
 	ResourceGroupName any
 	// Metadata pertaining to creation and last modification of the resource.
-	SystemData any
+	SystemData    any
 	WorkspaceName any
 }
 
@@ -59,6 +59,6 @@ var HealthcareApisPrivateEndpointConnectionDescription = ubx.DataSourceBinding{
 	WireType: "azure_healthcareapis_healthcare_apis_private_endpoint_connection_description",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"WorkspaceName":     ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

@@ -13,25 +13,25 @@ type GroupIdInformation_Properties struct {
 }
 
 type GroupIdInformationConfig struct {
-	ApiVersion any
-	GroupId any
+	ApiVersion        any
+	GroupId           any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type GroupIdInformationAttrs struct {
 	ApiVersion any
-	GroupId any
+	GroupId    any
 	// The resource identifier.
 	Id any
 	// The resource name.
 	Name any
 	// The properties for a group information object
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// The resource type.
 	Type any
 }
@@ -39,10 +39,10 @@ type GroupIdInformationAttrs struct {
 var GroupIdInformation = ubx.DataSourceBinding{
 	WireType: "azure_iothub_group_id_information",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"GroupId":           ubx.FieldSpec{WireName: "group_id"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

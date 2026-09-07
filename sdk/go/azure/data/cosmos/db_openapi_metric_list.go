@@ -4,39 +4,39 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiMetricList_Value_MetricValues struct {
-	Count any
-	Average any
-	Maximum any
-	Minimum any
+	Count     any
+	Average   any
+	Maximum   any
+	Minimum   any
 	Timestamp any
-	Total any
+	Total     any
 }
 
 type DbOpenapiMetricList_Value_Name struct {
 	LocalizedValue any
-	Value any
+	Value          any
 }
 
 type DbOpenapiMetricList_Value struct {
-	EndTime any
+	EndTime      any
 	MetricValues any
-	Name any
-	StartTime any
-	TimeGrain any
-	Unit any
+	Name         any
+	StartTime    any
+	TimeGrain    any
+	Unit         any
 }
 
 type DbOpenapiMetricListConfig struct {
-	AccountName any
+	AccountName   any
 	CollectionRid any
-	DatabaseRid any
+	DatabaseRid   any
 }
 
 type DbOpenapiMetricListAttrs struct {
-	AccountName any
+	AccountName   any
 	CollectionRid any
-	DatabaseRid any
-	NextLink any
+	DatabaseRid   any
+	NextLink      any
 	// The list of metrics for the account.
 	Value any
 }
@@ -44,8 +44,8 @@ type DbOpenapiMetricListAttrs struct {
 var DbOpenapiMetricList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_metric_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":   ubx.FieldSpec{WireName: "account_name"},
 		"CollectionRid": ubx.FieldSpec{WireName: "collection_rid"},
-		"DatabaseRid": ubx.FieldSpec{WireName: "database_rid"},
+		"DatabaseRid":   ubx.FieldSpec{WireName: "database_rid"},
 	},
 }

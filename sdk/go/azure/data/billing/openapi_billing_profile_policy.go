@@ -4,16 +4,16 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingProfilePolicy_Properties_EnterpriseAgreementPolicies struct {
-	AccountOwnerViewCharges any
-	AuthenticationType any
+	AccountOwnerViewCharges    any
+	AuthenticationType         any
 	DepartmentAdminViewCharges any
 }
 
 type OpenapiBillingProfilePolicy_Properties_Policies struct {
-	Name any
+	Name       any
 	PolicyType any
-	Scope any
-	Value any
+	Scope      any
+	Value      any
 }
 
 type OpenapiBillingProfilePolicy_Properties struct {

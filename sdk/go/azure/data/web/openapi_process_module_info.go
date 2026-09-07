@@ -30,17 +30,17 @@ type OpenapiProcessModuleInfo_Properties struct {
 
 type OpenapiProcessModuleInfoConfig struct {
 	BaseAddress any
-	InstanceId any
-	Name any
-	ProcessId any
+	InstanceId  any
+	Name        any
+	ProcessId   any
 }
 
 type OpenapiProcessModuleInfoAttrs struct {
 	BaseAddress any
-	InstanceId any
+	InstanceId  any
 	// Kind of resource.
-	Kind any
-	Name any
+	Kind      any
+	Name      any
 	ProcessId any
 	// ProcessModuleInfo resource specific properties
 	Properties any
@@ -50,8 +50,8 @@ var OpenapiProcessModuleInfo = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_process_module_info",
 	Fields: ubx.FieldMap{
 		"BaseAddress": ubx.FieldSpec{WireName: "base_address"},
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ProcessId": ubx.FieldSpec{WireName: "process_id"},
+		"InstanceId":  ubx.FieldSpec{WireName: "instance_id"},
+		"Name":        ubx.FieldSpec{WireName: "name"},
+		"ProcessId":   ubx.FieldSpec{WireName: "process_id"},
 	},
 }

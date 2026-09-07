@@ -4,17 +4,17 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TopicSpaceList_Value_Properties struct {
-	Description any
+	Description       any
 	ProvisioningState any
-	TopicTemplates any
+	TopicTemplates    any
 }
 
 type TopicSpaceList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -24,19 +24,19 @@ type TopicSpaceList_Value struct {
 }
 
 type TopicSpaceListConfig struct {
-	ApiVersion any
-	NamespaceName any
+	ApiVersion        any
+	NamespaceName     any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type TopicSpaceListAttrs struct {
-	ApiVersion any
+	ApiVersion    any
 	NamespaceName any
 	// A link for the next page of Topic Space.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// A collection of Topic Space.
 	Value any
 }
@@ -44,9 +44,9 @@ type TopicSpaceListAttrs struct {
 var TopicSpaceList = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_topic_space_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"NamespaceName":     ubx.FieldSpec{WireName: "namespace_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

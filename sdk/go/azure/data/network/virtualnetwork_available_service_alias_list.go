@@ -4,10 +4,10 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkAvailableServiceAliasList_Value struct {
-	Id any
-	Name any
+	Id           any
+	Name         any
 	ResourceName any
-	Type any
+	Type         any
 }
 
 type VirtualnetworkAvailableServiceAliasListConfig struct {
@@ -22,6 +22,5 @@ type VirtualnetworkAvailableServiceAliasListAttrs struct {
 
 var VirtualnetworkAvailableServiceAliasList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_available_service_alias_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

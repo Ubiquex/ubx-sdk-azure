@@ -37,33 +37,33 @@ type DtlUser_Properties struct {
 }
 
 var DtlUser_Properties_IdentityFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"PrincipalName": ubx.FieldSpec{WireName: "principal_name"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AppId":         ubx.FieldSpec{WireName: "app_id"},
+	"ObjectId":      ubx.FieldSpec{WireName: "object_id"},
+	"PrincipalId":   ubx.FieldSpec{WireName: "principal_id"},
+	"PrincipalName": ubx.FieldSpec{WireName: "principal_name"},
+	"TenantId":      ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var DtlUser_Properties_SecretStoreFields = ubx.FieldMap{
-		"KeyVaultId": ubx.FieldSpec{WireName: "key_vault_id"},
-		"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
-	}
+	"KeyVaultId":  ubx.FieldSpec{WireName: "key_vault_id"},
+	"KeyVaultUri": ubx.FieldSpec{WireName: "key_vault_uri"},
+}
 
 var DtlUser_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: DtlUser_Properties_IdentityFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SecretStore": ubx.FieldSpec{
-			WireName: "secret_store",
-			Kind: "object",
-			Fields: DtlUser_Properties_SecretStoreFields,
-		},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-	}
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   DtlUser_Properties_IdentityFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SecretStore": ubx.FieldSpec{
+		WireName: "secret_store",
+		Kind:     "object",
+		Fields:   DtlUser_Properties_SecretStoreFields,
+	},
+	"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
+}
 
 type DtlUserConfig struct {
 	// The geo-location where the resource lives
@@ -93,8 +93,8 @@ var DtlUser = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlUser_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlUser_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

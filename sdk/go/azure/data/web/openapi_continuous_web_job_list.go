@@ -5,19 +5,19 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiContinuousWebJobList_Value_Properties struct {
 	DetailedStatus any
-	Error any
-	ExtraInfoUrl any
-	LogUrl any
-	RunCommand any
-	Settings any
-	Status any
-	Url any
-	UsingSdk any
-	WebJobType any
+	Error          any
+	ExtraInfoUrl   any
+	LogUrl         any
+	RunCommand     any
+	Settings       any
+	Status         any
+	Url            any
+	UsingSdk       any
+	WebJobType     any
 }
 
 type OpenapiContinuousWebJobList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

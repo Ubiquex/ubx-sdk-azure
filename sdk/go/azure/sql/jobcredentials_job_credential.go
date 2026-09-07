@@ -11,9 +11,9 @@ type JobcredentialsJobCredential_Properties struct {
 }
 
 var JobcredentialsJobCredential_PropertiesFields = ubx.FieldMap{
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"Password": ubx.FieldSpec{WireName: "password"},
+	"Username": ubx.FieldSpec{WireName: "username"},
+}
 
 type JobcredentialsJobCredentialConfig struct {
 	// Properties of a job credential.
@@ -30,8 +30,8 @@ var JobcredentialsJobCredential = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: JobcredentialsJobCredential_PropertiesFields,
+			Kind:     "object",
+			Fields:   JobcredentialsJobCredential_PropertiesFields,
 		},
 	},
 }

@@ -4,18 +4,18 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineScaleSetVmextensionList_Value_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type MachineScaleSetVmextensionList_Value_Properties_InstanceView struct {
-	Name any
-	Statuses any
-	Substatuses any
-	Type any
+	Name               any
+	Statuses           any
+	Substatuses        any
+	Type               any
 	TypeHandlerVersion any
 }
 
@@ -24,49 +24,49 @@ type MachineScaleSetVmextensionList_Value_Properties_ProtectedSettingsFromKeyVau
 }
 
 type MachineScaleSetVmextensionList_Value_Properties_ProtectedSettingsFromKeyVault struct {
-	SecretUrl any
+	SecretUrl   any
 	SourceVault any
 }
 
 type MachineScaleSetVmextensionList_Value_Properties struct {
-	AutoUpgradeMinorVersion any
-	EnableAutomaticUpgrade any
-	ForceUpdateTag any
-	InstanceView any
-	ProtectedSettings any
+	AutoUpgradeMinorVersion       any
+	EnableAutomaticUpgrade        any
+	ForceUpdateTag                any
+	InstanceView                  any
+	ProtectedSettings             any
 	ProtectedSettingsFromKeyVault any
-	ProvisionAfterExtensions any
-	ProvisioningState any
-	Publisher any
-	Settings any
-	SuppressFailures any
-	Type any
-	TypeHandlerVersion any
+	ProvisionAfterExtensions      any
+	ProvisioningState             any
+	Publisher                     any
+	Settings                      any
+	SuppressFailures              any
+	Type                          any
+	TypeHandlerVersion            any
 }
 
 type MachineScaleSetVmextensionList_Value struct {
-	Location any
-	Name any
+	Location   any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type MachineScaleSetVmextensionListConfig struct {
-	InstanceId any
+	InstanceId     any
 	VmScaleSetName any
 }
 
 type MachineScaleSetVmextensionListAttrs struct {
 	InstanceId any
 	// The list of VMSS VM extensions
-	Value any
+	Value          any
 	VmScaleSetName any
 }
 
 var MachineScaleSetVmextensionList = ubx.DataSourceBinding{
 	WireType: "azure_virtual_machine_scale_set_vmextension_list",
 	Fields: ubx.FieldMap{
-		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
+		"InstanceId":     ubx.FieldSpec{WireName: "instance_id"},
 		"VmScaleSetName": ubx.FieldSpec{WireName: "vm_scale_set_name"},
 	},
 }

@@ -4,48 +4,48 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SystemTopicList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type SystemTopicList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type SystemTopicList_Value_Properties struct {
-	MetricResourceId any
+	MetricResourceId  any
 	ProvisioningState any
-	Source any
-	TopicType any
+	Source            any
+	TopicType         any
 }
 
 type SystemTopicList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type SystemTopicList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 	SystemData any
 }
 
 type SystemTopicListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type SystemTopicListAttrs struct {
 	ApiVersion any
 	// A link for the next page of topics.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A collection of system Topics.
 	Value any
@@ -54,7 +54,7 @@ type SystemTopicListAttrs struct {
 var SystemTopicList = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_system_topic_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

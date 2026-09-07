@@ -4,11 +4,11 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiServiceResourceList_Value_Properties struct {
-	CreationTime any
+	CreationTime  any
 	InstanceCount any
-	InstanceSize any
-	ServiceType any
-	Status any
+	InstanceSize  any
+	ServiceType   any
+	Status        any
 }
 
 type DbOpenapiServiceResourceList_Value struct {
@@ -21,7 +21,7 @@ type DbOpenapiServiceResourceListConfig struct {
 
 type DbOpenapiServiceResourceListAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of Service Resource and their properties.
 	Value any
 }

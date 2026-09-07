@@ -9,8 +9,8 @@ type BackupVault_Properties struct {
 }
 
 var BackupVault_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type BackupVaultConfig struct {
 	// The geo-location where the resource lives
@@ -36,8 +36,8 @@ var BackupVault = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BackupVault_PropertiesFields,
+			Kind:     "object",
+			Fields:   BackupVault_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

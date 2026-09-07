@@ -13,12 +13,12 @@ type PrivateLinkResource_Properties struct {
 }
 
 type PrivateLinkResourceConfig struct {
-	ClusterName any
+	ClusterName             any
 	PrivateLinkResourceName any
 }
 
 type PrivateLinkResourceAttrs struct {
-	ClusterName any
+	ClusterName             any
 	PrivateLinkResourceName any
 	// Properties of a private link resource.
 	Properties any
@@ -27,7 +27,7 @@ type PrivateLinkResourceAttrs struct {
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_kusto_private_link_resource",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":             ubx.FieldSpec{WireName: "cluster_name"},
 		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
 	},
 }

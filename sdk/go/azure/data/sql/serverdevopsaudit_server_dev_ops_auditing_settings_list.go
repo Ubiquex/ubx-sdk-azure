@@ -4,12 +4,12 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServerdevopsauditServerDevOpsAuditingSettingsList_Value_Properties struct {
-	IsAzureMonitorTargetEnabled any
-	IsManagedIdentityInUse any
-	State any
-	StorageAccountAccessKey any
+	IsAzureMonitorTargetEnabled  any
+	IsManagedIdentityInUse       any
+	State                        any
+	StorageAccountAccessKey      any
 	StorageAccountSubscriptionId any
-	StorageEndpoint any
+	StorageEndpoint              any
 }
 
 type ServerdevopsauditServerDevOpsAuditingSettingsList_Value struct {
@@ -22,7 +22,7 @@ type ServerdevopsauditServerDevOpsAuditingSettingsListConfig struct {
 
 type ServerdevopsauditServerDevOpsAuditingSettingsListAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink   any
 	ServerName any
 	// Array of results.
 	Value any

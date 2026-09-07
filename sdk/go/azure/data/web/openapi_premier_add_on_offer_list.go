@@ -4,15 +4,15 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPremierAddOnOfferList_Value_Properties struct {
-	LegalTermsUrl any
-	MarketplaceOffer any
-	MarketplacePublisher any
-	PrivacyPolicyUrl any
-	Product any
-	PromoCodeRequired any
-	Quota any
-	Sku any
-	Vendor any
+	LegalTermsUrl              any
+	MarketplaceOffer           any
+	MarketplacePublisher       any
+	PrivacyPolicyUrl           any
+	Product                    any
+	PromoCodeRequired          any
+	Quota                      any
+	Sku                        any
+	Vendor                     any
 	WebHostingPlanRestrictions any
 }
 
@@ -32,6 +32,5 @@ type OpenapiPremierAddOnOfferListAttrs struct {
 
 var OpenapiPremierAddOnOfferList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_premier_add_on_offer_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

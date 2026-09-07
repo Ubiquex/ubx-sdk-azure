@@ -4,32 +4,32 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersMeshUpgradeProfile_Properties_CompatibleWith struct {
-	Name any
+	Name     any
 	Versions any
 }
 
 type ManagedclustersMeshUpgradeProfile_Properties struct {
 	CompatibleWith any
-	Revision any
-	Upgrades any
+	Revision       any
+	Upgrades       any
 }
 
 type ManagedclustersMeshUpgradeProfileConfig struct {
-	Mode any
+	Mode         any
 	ResourceName any
 }
 
 type ManagedclustersMeshUpgradeProfileAttrs struct {
 	Mode any
 	// Mesh upgrade profile properties for a major.minor release.
-	Properties any
+	Properties   any
 	ResourceName any
 }
 
 var ManagedclustersMeshUpgradeProfile = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_mesh_upgrade_profile",
 	Fields: ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
+		"Mode":         ubx.FieldSpec{WireName: "mode"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

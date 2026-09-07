@@ -9,30 +9,30 @@ type NamespaceList_Value_Properties_PrivateEndpointConnections_Properties_Privat
 
 type NamespaceList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	Description any
-	Status any
+	Status      any
 }
 
 type NamespaceList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type NamespaceList_Value_Properties_PrivateEndpointConnections struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type NamespaceList_Value_Properties struct {
-	CreatedAt any
-	MetricId any
-	MinimumTlsVersion any
+	CreatedAt                  any
+	MetricId                   any
+	MinimumTlsVersion          any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ServiceBusEndpoint any
-	Status any
-	UpdatedAt any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	ServiceBusEndpoint         any
+	Status                     any
+	UpdatedAt                  any
 }
 
 type NamespaceList_Value_Sku struct {
@@ -42,7 +42,7 @@ type NamespaceList_Value_Sku struct {
 
 type NamespaceList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type NamespaceListConfig struct {
@@ -57,6 +57,5 @@ type NamespaceListAttrs struct {
 
 var NamespaceList = ubx.DataSourceBinding{
 	WireType: "azure_relay_namespace_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,10 +4,10 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBackupItem_Properties_Databases struct {
-	ConnectionString any
+	ConnectionString     any
 	ConnectionStringName any
-	DatabaseType any
-	Name any
+	DatabaseType         any
+	Name                 any
 }
 
 type OpenapiBackupItem_Properties struct {
@@ -43,8 +43,8 @@ type OpenapiBackupItem_Properties struct {
 
 type OpenapiBackupItemConfig struct {
 	BackupId any
-	Name any
-	Slot any
+	Name     any
+	Slot     any
 }
 
 type OpenapiBackupItemAttrs struct {
@@ -54,14 +54,14 @@ type OpenapiBackupItemAttrs struct {
 	Name any
 	// BackupItem resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 }
 
 var OpenapiBackupItem = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_backup_item",
 	Fields: ubx.FieldMap{
 		"BackupId": ubx.FieldSpec{WireName: "backup_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
+		"Slot":     ubx.FieldSpec{WireName: "slot"},
 	},
 }

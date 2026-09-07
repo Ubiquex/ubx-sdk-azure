@@ -22,23 +22,23 @@ type BmsProtectionContainerResource_Properties struct {
 
 type BmsProtectionContainerResourceConfig struct {
 	ContainerName any
-	FabricName any
-	OperationId any
-	VaultName any
+	FabricName    any
+	OperationId   any
+	VaultName     any
 }
 
 type BmsProtectionContainerResourceAttrs struct {
 	ContainerName any
 	// Optional ETag.
-	ETag any
+	ETag       any
 	FabricName any
 	// Represents an Azure geography region where supported resource providers live.
-	Location any
+	Location    any
 	OperationId any
 	// Base class for container with backup items. Containers with specific workloads are derived from this class.
 	Properties any
 	// Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 
@@ -46,8 +46,8 @@ var BmsProtectionContainerResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protection_container_resource",
 	Fields: ubx.FieldMap{
 		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"FabricName":    ubx.FieldSpec{WireName: "fabric_name"},
+		"OperationId":   ubx.FieldSpec{WireName: "operation_id"},
+		"VaultName":     ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

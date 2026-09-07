@@ -36,27 +36,27 @@ type OpenapiSourceControl_Properties struct {
 }
 
 var OpenapiSourceControl_Properties_SecurityTokenFields = ubx.FieldMap{
-		"AccessToken": ubx.FieldSpec{WireName: "access_token"},
-		"RefreshToken": ubx.FieldSpec{WireName: "refresh_token"},
-		"TokenType": ubx.FieldSpec{WireName: "token_type"},
-	}
+	"AccessToken":  ubx.FieldSpec{WireName: "access_token"},
+	"RefreshToken": ubx.FieldSpec{WireName: "refresh_token"},
+	"TokenType":    ubx.FieldSpec{WireName: "token_type"},
+}
 
 var OpenapiSourceControl_PropertiesFields = ubx.FieldMap{
-		"AutoSync": ubx.FieldSpec{WireName: "auto_sync"},
-		"Branch": ubx.FieldSpec{WireName: "branch"},
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"FolderPath": ubx.FieldSpec{WireName: "folder_path"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"PublishRunbook": ubx.FieldSpec{WireName: "publish_runbook"},
-		"RepoUrl": ubx.FieldSpec{WireName: "repo_url"},
-		"SecurityToken": ubx.FieldSpec{
-			WireName: "security_token",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_SecurityTokenFields,
-		},
-		"SourceType": ubx.FieldSpec{WireName: "source_type"},
-	}
+	"AutoSync":         ubx.FieldSpec{WireName: "auto_sync"},
+	"Branch":           ubx.FieldSpec{WireName: "branch"},
+	"CreationTime":     ubx.FieldSpec{WireName: "creation_time"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"FolderPath":       ubx.FieldSpec{WireName: "folder_path"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"PublishRunbook":   ubx.FieldSpec{WireName: "publish_runbook"},
+	"RepoUrl":          ubx.FieldSpec{WireName: "repo_url"},
+	"SecurityToken": ubx.FieldSpec{
+		WireName: "security_token",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_SecurityTokenFields,
+	},
+	"SourceType": ubx.FieldSpec{WireName: "source_type"},
+}
 
 type OpenapiSourceControlConfig struct {
 	// The properties of the create source control operation.
@@ -73,8 +73,8 @@ var OpenapiSourceControl = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSourceControl_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSourceControl_PropertiesFields,
 		},
 	},
 }

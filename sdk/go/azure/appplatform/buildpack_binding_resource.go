@@ -20,19 +20,19 @@ type BuildpackBindingResource_Properties struct {
 }
 
 var BuildpackBindingResource_Properties_LaunchPropertiesFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Secrets": ubx.FieldSpec{WireName: "secrets"},
-	}
+	"Properties": ubx.FieldSpec{WireName: "properties"},
+	"Secrets":    ubx.FieldSpec{WireName: "secrets"},
+}
 
 var BuildpackBindingResource_PropertiesFields = ubx.FieldMap{
-		"BindingType": ubx.FieldSpec{WireName: "binding_type"},
-		"LaunchProperties": ubx.FieldSpec{
-			WireName: "launch_properties",
-			Kind: "object",
-			Fields: BuildpackBindingResource_Properties_LaunchPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BindingType": ubx.FieldSpec{WireName: "binding_type"},
+	"LaunchProperties": ubx.FieldSpec{
+		WireName: "launch_properties",
+		Kind:     "object",
+		Fields:   BuildpackBindingResource_Properties_LaunchPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type BuildpackBindingResourceConfig struct {
 	// Properties of a buildpack binding
@@ -49,8 +49,8 @@ var BuildpackBindingResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BuildpackBindingResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BuildpackBindingResource_PropertiesFields,
 		},
 	},
 }

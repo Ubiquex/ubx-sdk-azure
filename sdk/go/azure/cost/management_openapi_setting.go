@@ -24,8 +24,8 @@ type ManagementOpenapiSettingAttrs struct {
 var ManagementOpenapiSetting = ubx.ResourceBinding{
 	WireType: "azure_cost_management_openapi_setting",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":  ubx.FieldSpec{WireName: "kind"},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"Type": ubx.FieldSpec{WireName: "type"},
+		"Type":  ubx.FieldSpec{WireName: "type"},
 	},
 }

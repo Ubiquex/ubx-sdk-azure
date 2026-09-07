@@ -30,15 +30,15 @@ type LoadbalancerProbe_Properties struct {
 
 type LoadbalancerProbeConfig struct {
 	LoadBalancerName any
-	ProbeName any
+	ProbeName        any
 }
 
 type LoadbalancerProbeAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
+	Etag             any
 	LoadBalancerName any
 	// Name of the resource.
-	Name any
+	Name      any
 	ProbeName any
 	// Load balancer probe resource.
 	Properties any
@@ -50,6 +50,6 @@ var LoadbalancerProbe = ubx.DataSourceBinding{
 	WireType: "azure_network_loadbalancer_probe",
 	Fields: ubx.FieldMap{
 		"LoadBalancerName": ubx.FieldSpec{WireName: "load_balancer_name"},
-		"ProbeName": ubx.FieldSpec{WireName: "probe_name"},
+		"ProbeName":        ubx.FieldSpec{WireName: "probe_name"},
 	},
 }

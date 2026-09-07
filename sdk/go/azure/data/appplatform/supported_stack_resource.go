@@ -11,33 +11,33 @@ type SupportedStackResource_Properties struct {
 }
 
 type SupportedStackResourceConfig struct {
-	ApiVersion any
-	BuildServiceName any
+	ApiVersion        any
+	BuildServiceName  any
 	ResourceGroupName any
-	ServiceName any
-	StackName any
-	SubscriptionId any
+	ServiceName       any
+	StackName         any
+	SubscriptionId    any
 }
 
 type SupportedStackResourceAttrs struct {
-	ApiVersion any
+	ApiVersion       any
 	BuildServiceName any
 	// Supported stack resource properties
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ServiceName any
-	StackName any
-	SubscriptionId any
+	ServiceName       any
+	StackName         any
+	SubscriptionId    any
 }
 
 var SupportedStackResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_supported_stack_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"BuildServiceName": ubx.FieldSpec{WireName: "build_service_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"BuildServiceName":  ubx.FieldSpec{WireName: "build_service_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"StackName": ubx.FieldSpec{WireName: "stack_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"StackName":         ubx.FieldSpec{WireName: "stack_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

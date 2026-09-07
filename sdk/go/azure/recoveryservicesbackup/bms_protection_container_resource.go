@@ -21,14 +21,14 @@ type BmsProtectionContainerResource_Properties struct {
 }
 
 var BmsProtectionContainerResource_PropertiesFields = ubx.FieldMap{
-		"BackupManagementType": ubx.FieldSpec{WireName: "backup_management_type"},
-		"ContainerType": ubx.FieldSpec{WireName: "container_type"},
-		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-		"HealthStatus": ubx.FieldSpec{WireName: "health_status"},
-		"ProtectableObjectType": ubx.FieldSpec{WireName: "protectable_object_type"},
-		"RegistrationStatus": ubx.FieldSpec{WireName: "registration_status"},
-		"SourceLocation": ubx.FieldSpec{WireName: "source_location"},
-	}
+	"BackupManagementType":  ubx.FieldSpec{WireName: "backup_management_type"},
+	"ContainerType":         ubx.FieldSpec{WireName: "container_type"},
+	"FriendlyName":          ubx.FieldSpec{WireName: "friendly_name"},
+	"HealthStatus":          ubx.FieldSpec{WireName: "health_status"},
+	"ProtectableObjectType": ubx.FieldSpec{WireName: "protectable_object_type"},
+	"RegistrationStatus":    ubx.FieldSpec{WireName: "registration_status"},
+	"SourceLocation":        ubx.FieldSpec{WireName: "source_location"},
+}
 
 type BmsProtectionContainerResourceConfig struct {
 	// Optional ETag.
@@ -55,12 +55,12 @@ type BmsProtectionContainerResourceAttrs struct {
 var BmsProtectionContainerResource = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protection_container_resource",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
+		"ETag":     ubx.FieldSpec{WireName: "e_tag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BmsProtectionContainerResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BmsProtectionContainerResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

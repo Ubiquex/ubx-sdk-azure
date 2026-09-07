@@ -37,6 +37,5 @@ type ServicePrincipalAttrs struct {
 
 var ServicePrincipal = ubx.DataSourceBinding{
 	WireType: "azure_automanage_service_principal",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

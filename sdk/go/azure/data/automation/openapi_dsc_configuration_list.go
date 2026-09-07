@@ -5,38 +5,38 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDscConfigurationList_Value_Properties_Parameters struct {
 	DefaultValue any
-	IsMandatory any
-	Position any
-	Type any
+	IsMandatory  any
+	Position     any
+	Type         any
 }
 
 type OpenapiDscConfigurationList_Value_Properties_Source_Hash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type OpenapiDscConfigurationList_Value_Properties_Source struct {
-	Hash any
-	Type any
-	Value any
+	Hash    any
+	Type    any
+	Value   any
 	Version any
 }
 
 type OpenapiDscConfigurationList_Value_Properties struct {
-	CreationTime any
-	Description any
-	JobCount any
-	LastModifiedTime any
-	LogVerbose any
+	CreationTime           any
+	Description            any
+	JobCount               any
+	LastModifiedTime       any
+	LogVerbose             any
 	NodeConfigurationCount any
-	Parameters any
-	ProvisioningState any
-	Source any
-	State any
+	Parameters             any
+	ProvisioningState      any
+	Source                 any
+	State                  any
 }
 
 type OpenapiDscConfigurationList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

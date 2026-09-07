@@ -6,17 +6,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiTableList_Value_Properties_SignedIdentifiers_AccessPolicy struct {
 	ExpiryTime any
 	Permission any
-	StartTime any
+	StartTime  any
 }
 
 type OpenapiTableList_Value_Properties_SignedIdentifiers struct {
 	AccessPolicy any
-	Id any
+	Id           any
 }
 
 type OpenapiTableList_Value_Properties struct {
 	SignedIdentifiers any
-	TableName any
+	TableName         any
 }
 
 type OpenapiTableList_Value struct {

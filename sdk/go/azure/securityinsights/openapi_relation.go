@@ -15,11 +15,11 @@ type OpenapiRelation_Properties struct {
 }
 
 var OpenapiRelation_PropertiesFields = ubx.FieldMap{
-		"RelatedResourceId": ubx.FieldSpec{WireName: "related_resource_id"},
-		"RelatedResourceKind": ubx.FieldSpec{WireName: "related_resource_kind"},
-		"RelatedResourceName": ubx.FieldSpec{WireName: "related_resource_name"},
-		"RelatedResourceType": ubx.FieldSpec{WireName: "related_resource_type"},
-	}
+	"RelatedResourceId":   ubx.FieldSpec{WireName: "related_resource_id"},
+	"RelatedResourceKind": ubx.FieldSpec{WireName: "related_resource_kind"},
+	"RelatedResourceName": ubx.FieldSpec{WireName: "related_resource_name"},
+	"RelatedResourceType": ubx.FieldSpec{WireName: "related_resource_type"},
+}
 
 type OpenapiRelationConfig struct {
 	// Etag of the azure resource
@@ -41,8 +41,8 @@ var OpenapiRelation = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRelation_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRelation_PropertiesFields,
 		},
 	},
 }

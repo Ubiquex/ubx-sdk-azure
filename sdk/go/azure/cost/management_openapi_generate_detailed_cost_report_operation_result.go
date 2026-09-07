@@ -20,9 +20,9 @@ type ManagementOpenapiGenerateDetailedCostReportOperationResult_TimePeriod struc
 }
 
 var ManagementOpenapiGenerateDetailedCostReportOperationResult_TimePeriodFields = ubx.FieldMap{
-		"End": ubx.FieldSpec{WireName: "end"},
-		"Start": ubx.FieldSpec{WireName: "start"},
-	}
+	"End":   ubx.FieldSpec{WireName: "end"},
+	"Start": ubx.FieldSpec{WireName: "start"},
+}
 
 type ManagementOpenapiGenerateDetailedCostReportOperationResultConfig struct {
 	// Billing period in YearMonth(e.g. 202008) format. Only for legacy enterprise customers can use this. Can only have one of either timePeriod or invoiceId or billingPeriod parameters. If none provided current month cost is provided.
@@ -60,13 +60,13 @@ var ManagementOpenapiGenerateDetailedCostReportOperationResult = ubx.ResourceBin
 	WireType: "azure_cost_management_openapi_generate_detailed_cost_report_operation_result",
 	Fields: ubx.FieldMap{
 		"BillingPeriod": ubx.FieldSpec{WireName: "billing_period"},
-		"CustomerId": ubx.FieldSpec{WireName: "customer_id"},
-		"InvoiceId": ubx.FieldSpec{WireName: "invoice_id"},
-		"Metric": ubx.FieldSpec{WireName: "metric"},
+		"CustomerId":    ubx.FieldSpec{WireName: "customer_id"},
+		"InvoiceId":     ubx.FieldSpec{WireName: "invoice_id"},
+		"Metric":        ubx.FieldSpec{WireName: "metric"},
 		"TimePeriod": ubx.FieldSpec{
 			WireName: "time_period",
-			Kind: "object",
-			Fields: ManagementOpenapiGenerateDetailedCostReportOperationResult_TimePeriodFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiGenerateDetailedCostReportOperationResult_TimePeriodFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

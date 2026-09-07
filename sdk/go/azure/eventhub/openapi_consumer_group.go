@@ -13,10 +13,10 @@ type OpenapiConsumerGroup_Properties struct {
 }
 
 var OpenapiConsumerGroup_PropertiesFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-		"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
-	}
+	"CreatedAt":    ubx.FieldSpec{WireName: "created_at"},
+	"UpdatedAt":    ubx.FieldSpec{WireName: "updated_at"},
+	"UserMetadata": ubx.FieldSpec{WireName: "user_metadata"},
+}
 
 type OpenapiConsumerGroupConfig struct {
 	// Single item in List or Get Consumer group operation
@@ -35,8 +35,8 @@ var OpenapiConsumerGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiConsumerGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiConsumerGroup_PropertiesFields,
 		},
 	},
 }

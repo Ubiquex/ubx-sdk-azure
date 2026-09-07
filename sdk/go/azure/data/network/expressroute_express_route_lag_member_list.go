@@ -4,31 +4,31 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteLagMemberList_Value_Properties struct {
-	AdminState any
-	ColoLocation any
-	ConnectorType any
-	InterfaceName any
-	PatchPanelId any
+	AdminState        any
+	ColoLocation      any
+	ConnectorType     any
+	InterfaceName     any
+	PatchPanelId      any
 	ProvisioningState any
-	RackId any
+	RackId            any
 }
 
 type ExpressrouteExpressRouteLagMemberList_Value struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ExpressrouteExpressRouteLagMemberListConfig struct {
 	ExpressRouteLagName any
-	LinkName any
+	LinkName            any
 }
 
 type ExpressrouteExpressRouteLagMemberListAttrs struct {
 	ExpressRouteLagName any
-	LinkName any
+	LinkName            any
 	// The link to the next page of items
 	NextLink any
 	// The ExpressRouteLagMember items on this page
@@ -39,6 +39,6 @@ var ExpressrouteExpressRouteLagMemberList = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_lag_member_list",
 	Fields: ubx.FieldMap{
 		"ExpressRouteLagName": ubx.FieldSpec{WireName: "express_route_lag_name"},
-		"LinkName": ubx.FieldSpec{WireName: "link_name"},
+		"LinkName":            ubx.FieldSpec{WireName: "link_name"},
 	},
 }

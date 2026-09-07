@@ -9,13 +9,13 @@ type HciEdgeDeviceJobList_Value struct {
 
 type HciEdgeDeviceJobListConfig struct {
 	EdgeDeviceName any
-	ResourceUri any
+	ResourceUri    any
 }
 
 type HciEdgeDeviceJobListAttrs struct {
 	EdgeDeviceName any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ResourceUri any
 	// The EdgeDeviceJob items on this page
 	Value any
@@ -25,6 +25,6 @@ var HciEdgeDeviceJobList = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_edge_device_job_list",
 	Fields: ubx.FieldMap{
 		"EdgeDeviceName": ubx.FieldSpec{WireName: "edge_device_name"},
-		"ResourceUri": ubx.FieldSpec{WireName: "resource_uri"},
+		"ResourceUri":    ubx.FieldSpec{WireName: "resource_uri"},
 	},
 }

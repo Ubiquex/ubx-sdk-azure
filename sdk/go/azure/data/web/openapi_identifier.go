@@ -10,8 +10,8 @@ type OpenapiIdentifier_Properties struct {
 
 type OpenapiIdentifierConfig struct {
 	DomainOwnershipIdentifierName any
-	Name any
-	Slot any
+	Name                          any
+	Slot                          any
 }
 
 type OpenapiIdentifierAttrs struct {
@@ -21,14 +21,14 @@ type OpenapiIdentifierAttrs struct {
 	Name any
 	// Identifier resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 }
 
 var OpenapiIdentifier = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_identifier",
 	Fields: ubx.FieldMap{
 		"DomainOwnershipIdentifierName": ubx.FieldSpec{WireName: "domain_ownership_identifier_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Name":                          ubx.FieldSpec{WireName: "name"},
+		"Slot":                          ubx.FieldSpec{WireName: "slot"},
 	},
 }

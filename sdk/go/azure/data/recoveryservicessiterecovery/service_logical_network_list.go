@@ -4,26 +4,26 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceLogicalNetworkList_Value_Properties struct {
-	FriendlyName any
+	FriendlyName                    any
 	LogicalNetworkDefinitionsStatus any
-	LogicalNetworkUsage any
-	NetworkVirtualizationStatus any
+	LogicalNetworkUsage             any
+	NetworkVirtualizationStatus     any
 }
 
 type ServiceLogicalNetworkList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceLogicalNetworkListConfig struct {
-	FabricName any
+	FabricName   any
 	ResourceName any
 }
 
 type ServiceLogicalNetworkListAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The LogicalNetwork items on this page
 	Value any
@@ -32,7 +32,7 @@ type ServiceLogicalNetworkListAttrs struct {
 var ServiceLogicalNetworkList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_logical_network_list",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"FabricName":   ubx.FieldSpec{WireName: "fabric_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

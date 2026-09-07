@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RestoreStatusConfig struct {
 	AccountName any
-	PoolName any
-	VolumeName any
+	PoolName    any
+	VolumeName  any
 }
 
 type RestoreStatusAttrs struct {
@@ -17,21 +17,21 @@ type RestoreStatusAttrs struct {
 	Healthy any
 	// The status of the replication
 	MirrorState any
-	PoolName any
+	PoolName    any
 	// Status of the volume restore relationship
 	RelationshipStatus any
 	// Displays the total bytes transferred
 	TotalTransferBytes any
 	// Reason for the unhealthy restore relationship
 	UnhealthyReason any
-	VolumeName any
+	VolumeName      any
 }
 
 var RestoreStatus = ubx.DataSourceBinding{
 	WireType: "azure_netapp_restore_status",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
+		"VolumeName":  ubx.FieldSpec{WireName: "volume_name"},
 	},
 }

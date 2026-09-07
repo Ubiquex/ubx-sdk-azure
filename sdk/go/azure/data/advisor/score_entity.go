@@ -20,7 +20,7 @@ type ScoreEntity_Properties_LastRefreshedScore struct {
 
 type ScoreEntity_Properties_TimeSeries struct {
 	AggregationLevel any
-	ScoreHistory any
+	ScoreHistory     any
 }
 
 type ScoreEntity_Properties struct {
@@ -31,24 +31,24 @@ type ScoreEntity_Properties struct {
 }
 
 type ScoreEntityConfig struct {
-	ApiVersion any
-	Name any
+	ApiVersion     any
+	Name           any
 	SubscriptionId any
 }
 
 type ScoreEntityAttrs struct {
 	ApiVersion any
-	Name any
+	Name       any
 	// The Advisor score data.
-	Properties any
+	Properties     any
 	SubscriptionId any
 }
 
 var ScoreEntity = ubx.DataSourceBinding{
 	WireType: "azure_advisor_score_entity",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
+		"Name":           ubx.FieldSpec{WireName: "name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

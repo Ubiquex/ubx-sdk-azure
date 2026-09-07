@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BuildResult_Properties_BuildStages struct {
 	ExitCode any
-	Name any
-	Reason any
-	Status any
+	Name     any
+	Reason   any
+	Status   any
 }
 
 type BuildResult_Properties_Error struct {
@@ -33,36 +33,36 @@ type BuildResult_Properties struct {
 }
 
 type BuildResultConfig struct {
-	ApiVersion any
-	BuildName any
-	BuildResultName any
-	BuildServiceName any
+	ApiVersion        any
+	BuildName         any
+	BuildResultName   any
+	BuildServiceName  any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type BuildResultAttrs struct {
-	ApiVersion any
-	BuildName any
-	BuildResultName any
+	ApiVersion       any
+	BuildName        any
+	BuildResultName  any
 	BuildServiceName any
 	// Build result resource properties payload
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 var BuildResult = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_build_result",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"BuildName": ubx.FieldSpec{WireName: "build_name"},
-		"BuildResultName": ubx.FieldSpec{WireName: "build_result_name"},
-		"BuildServiceName": ubx.FieldSpec{WireName: "build_service_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"BuildName":         ubx.FieldSpec{WireName: "build_name"},
+		"BuildResultName":   ubx.FieldSpec{WireName: "build_result_name"},
+		"BuildServiceName":  ubx.FieldSpec{WireName: "build_service_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

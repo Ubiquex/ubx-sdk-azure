@@ -50,13 +50,13 @@ type OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_P
 
 type OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
 }
 
@@ -99,108 +99,108 @@ type OpenapiAutomationAccount_Properties struct {
 }
 
 var OpenapiAutomationAccount_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiAutomationAccount_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiAutomationAccount_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiAutomationAccount_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiAutomationAccount_Properties_Encryption_IdentityFields = ubx.FieldMap{
-		"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
-	}
+	"UserAssignedIdentity": ubx.FieldSpec{WireName: "user_assigned_identity"},
+}
 
 var OpenapiAutomationAccount_Properties_Encryption_KeyVaultPropertiesFields = ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"KeyvaultUri": ubx.FieldSpec{WireName: "keyvault_uri"},
-	}
+	"KeyName":     ubx.FieldSpec{WireName: "key_name"},
+	"KeyVersion":  ubx.FieldSpec{WireName: "key_version"},
+	"KeyvaultUri": ubx.FieldSpec{WireName: "keyvault_uri"},
+}
 
 var OpenapiAutomationAccount_Properties_EncryptionFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_Properties_Encryption_IdentityFields,
-		},
-		"KeySource": ubx.FieldSpec{WireName: "key_source"},
-		"KeyVaultProperties": ubx.FieldSpec{
-			WireName: "key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_Properties_Encryption_KeyVaultPropertiesFields,
-		},
-	}
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   OpenapiAutomationAccount_Properties_Encryption_IdentityFields,
+	},
+	"KeySource": ubx.FieldSpec{WireName: "key_source"},
+	"KeyVaultProperties": ubx.FieldSpec{
+		WireName: "key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiAutomationAccount_Properties_Encryption_KeyVaultPropertiesFields,
+	},
+}
 
 var OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiAutomationAccount_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   OpenapiAutomationAccount_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+}
 
 var OpenapiAutomationAccount_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   OpenapiAutomationAccount_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var OpenapiAutomationAccount_Properties_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiAutomationAccount_PropertiesFields = ubx.FieldMap{
-		"AutomationHybridServiceUrl": ubx.FieldSpec{WireName: "automation_hybrid_service_url"},
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_Properties_EncryptionFields,
-		},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: OpenapiAutomationAccount_Properties_PrivateEndpointConnectionsFields,
-		},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_Properties_SkuFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"AutomationHybridServiceUrl": ubx.FieldSpec{WireName: "automation_hybrid_service_url"},
+	"CreationTime":               ubx.FieldSpec{WireName: "creation_time"},
+	"Description":                ubx.FieldSpec{WireName: "description"},
+	"DisableLocalAuth":           ubx.FieldSpec{WireName: "disable_local_auth"},
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   OpenapiAutomationAccount_Properties_EncryptionFields,
+	},
+	"LastModifiedBy":   ubx.FieldSpec{WireName: "last_modified_by"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   OpenapiAutomationAccount_Properties_PrivateEndpointConnectionsFields,
+	},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   OpenapiAutomationAccount_Properties_SkuFields,
+	},
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 type OpenapiAutomationAccountConfig struct {
 	// Identity for the resource.
@@ -235,15 +235,15 @@ var OpenapiAutomationAccount = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiAutomationAccount_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAutomationAccount_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAutomationAccount_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -4,27 +4,27 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ProjectEnvironmentTypeList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ProjectEnvironmentTypeList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ProjectEnvironmentTypeList_Value_Properties struct {
-	EnvironmentCount any
+	EnvironmentCount  any
 	ProvisioningState any
 }
 
 type ProjectEnvironmentTypeList_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type ProjectEnvironmentTypeListConfig struct {
@@ -33,7 +33,7 @@ type ProjectEnvironmentTypeListConfig struct {
 
 type ProjectEnvironmentTypeListAttrs struct {
 	// URL to get the next set of results if there are any.
-	NextLink any
+	NextLink    any
 	ProjectName any
 	// Current page of results.
 	Value any

@@ -16,27 +16,27 @@ type MarketplaceRegistrationDefinition_Plan struct {
 
 type MarketplaceRegistrationDefinition_Properties_Authorizations struct {
 	DelegatedRoleDefinitionIds any
-	PrincipalId any
-	PrincipalIdDisplayName any
-	RoleDefinitionId any
+	PrincipalId                any
+	PrincipalIdDisplayName     any
+	RoleDefinitionId           any
 }
 
 type MarketplaceRegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy_ManagedByTenantApprovers struct {
-	PrincipalId any
+	PrincipalId            any
 	PrincipalIdDisplayName any
 }
 
 type MarketplaceRegistrationDefinition_Properties_EligibleAuthorizations_JustInTimeAccessPolicy struct {
-	ManagedByTenantApprovers any
+	ManagedByTenantApprovers  any
 	MaximumActivationDuration any
-	MultiFactorAuthProvider any
+	MultiFactorAuthProvider   any
 }
 
 type MarketplaceRegistrationDefinition_Properties_EligibleAuthorizations struct {
 	JustInTimeAccessPolicy any
-	PrincipalId any
+	PrincipalId            any
 	PrincipalIdDisplayName any
-	RoleDefinitionId any
+	RoleDefinitionId       any
 }
 
 type MarketplaceRegistrationDefinition_Properties struct {
@@ -55,14 +55,14 @@ type MarketplaceRegistrationDefinition_Properties struct {
 }
 
 type MarketplaceRegistrationDefinitionConfig struct {
-	ApiVersion any
+	ApiVersion            any
 	MarketplaceIdentifier any
 }
 
 type MarketplaceRegistrationDefinitionAttrs struct {
 	ApiVersion any
 	// The fully qualified path of the marketplace registration definition.
-	Id any
+	Id                    any
 	MarketplaceIdentifier any
 	// The name of the marketplace registration definition.
 	Name any
@@ -77,7 +77,7 @@ type MarketplaceRegistrationDefinitionAttrs struct {
 var MarketplaceRegistrationDefinition = ubx.DataSourceBinding{
 	WireType: "azure_managedservices_marketplace_registration_definition",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":            ubx.FieldSpec{WireName: "api_version"},
 		"MarketplaceIdentifier": ubx.FieldSpec{WireName: "marketplace_identifier"},
 	},
 }

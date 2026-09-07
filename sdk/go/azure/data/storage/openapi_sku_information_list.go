@@ -4,30 +4,30 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSkuInformationList_Value_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiSkuInformationList_Value_LocationInfo struct {
 	Location any
-	Zones any
+	Zones    any
 }
 
 type OpenapiSkuInformationList_Value_Restrictions struct {
 	ReasonCode any
-	Type any
-	Values any
+	Type       any
+	Values     any
 }
 
 type OpenapiSkuInformationList_Value struct {
 	Capabilities any
-	Kind any
+	Kind         any
 	LocationInfo any
-	Locations any
-	Name any
+	Locations    any
+	Name         any
 	ResourceType any
 	Restrictions any
-	Tier any
+	Tier         any
 }
 
 type OpenapiSkuInformationListConfig struct {
@@ -41,6 +41,5 @@ type OpenapiSkuInformationListAttrs struct {
 
 var OpenapiSkuInformationList = ubx.DataSourceBinding{
 	WireType: "azure_storage_openapi_sku_information_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

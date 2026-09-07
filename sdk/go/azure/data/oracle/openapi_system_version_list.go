@@ -23,6 +23,5 @@ type OpenapiSystemVersionListAttrs struct {
 
 var OpenapiSystemVersionList = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_system_version_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

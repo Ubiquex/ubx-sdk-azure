@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExtensionValueList_Value_Properties struct {
 	ExtensionType any
-	Publisher any
-	Version any
+	Publisher     any
+	Version       any
 }
 
 type OpenapiExtensionValueList_Value struct {
@@ -15,15 +15,15 @@ type OpenapiExtensionValueList_Value struct {
 
 type OpenapiExtensionValueListConfig struct {
 	ExtensionType any
-	Location any
-	Publisher any
+	Location      any
+	Publisher     any
 }
 
 type OpenapiExtensionValueListAttrs struct {
 	ExtensionType any
-	Location any
+	Location      any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink  any
 	Publisher any
 	// The list of extension metadata
 	Value any
@@ -33,7 +33,7 @@ var OpenapiExtensionValueList = ubx.DataSourceBinding{
 	WireType: "azure_hybridcompute_openapi_extension_value_list",
 	Fields: ubx.FieldMap{
 		"ExtensionType": ubx.FieldSpec{WireName: "extension_type"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Publisher": ubx.FieldSpec{WireName: "publisher"},
+		"Location":      ubx.FieldSpec{WireName: "location"},
+		"Publisher":     ubx.FieldSpec{WireName: "publisher"},
 	},
 }

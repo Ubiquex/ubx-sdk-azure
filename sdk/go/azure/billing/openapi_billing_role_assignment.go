@@ -157,14 +157,14 @@ type OpenapiBillingRoleAssignmentAttrs struct {
 var OpenapiBillingRoleAssignment = ubx.ResourceBinding{
 	WireType: "azure_billing_openapi_billing_role_assignment",
 	Fields: ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"PrincipalPuid": ubx.FieldSpec{WireName: "principal_puid"},
-		"PrincipalTenantId": ubx.FieldSpec{WireName: "principal_tenant_id"},
-		"PrincipalType": ubx.FieldSpec{WireName: "principal_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"PrincipalId":            ubx.FieldSpec{WireName: "principal_id"},
+		"PrincipalPuid":          ubx.FieldSpec{WireName: "principal_puid"},
+		"PrincipalTenantId":      ubx.FieldSpec{WireName: "principal_tenant_id"},
+		"PrincipalType":          ubx.FieldSpec{WireName: "principal_type"},
+		"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+		"RoleDefinitionId":       ubx.FieldSpec{WireName: "role_definition_id"},
+		"Scope":                  ubx.FieldSpec{WireName: "scope"},
 		"UserAuthenticationType": ubx.FieldSpec{WireName: "user_authentication_type"},
-		"UserEmailAddress": ubx.FieldSpec{WireName: "user_email_address"},
+		"UserEmailAddress":       ubx.FieldSpec{WireName: "user_email_address"},
 	},
 }

@@ -9,8 +9,8 @@ type OpenapiAuthorizationRule_Properties struct {
 }
 
 var OpenapiAuthorizationRule_PropertiesFields = ubx.FieldMap{
-		"Rights": ubx.FieldSpec{WireName: "rights"},
-	}
+	"Rights": ubx.FieldSpec{WireName: "rights"},
+}
 
 type OpenapiAuthorizationRuleConfig struct {
 	// Properties supplied to create or update AuthorizationRule
@@ -29,8 +29,8 @@ var OpenapiAuthorizationRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAuthorizationRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAuthorizationRule_PropertiesFields,
 		},
 	},
 }

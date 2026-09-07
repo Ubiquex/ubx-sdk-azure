@@ -14,13 +14,13 @@ type WorkflowRunActionRepetitionDefinition_Properties struct {
 }
 
 type WorkflowRunActionRepetitionDefinitionConfig struct {
-	ActionName any
-	ApiVersion any
-	RepetitionName any
+	ActionName        any
+	ApiVersion        any
+	RepetitionName    any
 	ResourceGroupName any
-	RunName any
-	SubscriptionId any
-	WorkflowName any
+	RunName           any
+	SubscriptionId    any
+	WorkflowName      any
 }
 
 type WorkflowRunActionRepetitionDefinitionAttrs struct {
@@ -33,27 +33,27 @@ type WorkflowRunActionRepetitionDefinitionAttrs struct {
 	// Gets the resource name.
 	Name any
 	// The workflow run action repetition properties definition.
-	Properties any
-	RepetitionName any
+	Properties        any
+	RepetitionName    any
 	ResourceGroupName any
-	RunName any
-	SubscriptionId any
+	RunName           any
+	SubscriptionId    any
 	// The resource tags.
 	Tags any
 	// Gets the resource type.
-	Type any
+	Type         any
 	WorkflowName any
 }
 
 var WorkflowRunActionRepetitionDefinition = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_run_action_repetition_definition",
 	Fields: ubx.FieldMap{
-		"ActionName": ubx.FieldSpec{WireName: "action_name"},
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"RepetitionName": ubx.FieldSpec{WireName: "repetition_name"},
+		"ActionName":        ubx.FieldSpec{WireName: "action_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"RepetitionName":    ubx.FieldSpec{WireName: "repetition_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"RunName":           ubx.FieldSpec{WireName: "run_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

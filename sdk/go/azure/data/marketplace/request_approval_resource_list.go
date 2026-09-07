@@ -4,21 +4,21 @@ package marketplace
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RequestApprovalResourceList_Value_Properties_PlansDetails struct {
-	Justification any
-	PlanId any
-	RequestDate any
-	Status any
-	SubscriptionId any
+	Justification    any
+	PlanId           any
+	RequestDate      any
+	Status           any
+	SubscriptionId   any
 	SubscriptionName any
 }
 
 type RequestApprovalResourceList_Value_Properties struct {
-	IsClosed any
-	MessageCode any
+	IsClosed         any
+	MessageCode      any
 	OfferDisplayName any
-	OfferId any
-	PlansDetails any
-	PublisherId any
+	OfferId          any
+	PlansDetails     any
+	PublisherId      any
 }
 
 type RequestApprovalResourceList_Value struct {
@@ -31,9 +31,9 @@ type RequestApprovalResourceListConfig struct {
 
 type RequestApprovalResourceListAttrs struct {
 	// URL to get the next set of notifications list results if there are any.
-	NextLink any
+	NextLink       any
 	PrivateStoreId any
-	Value any
+	Value          any
 }
 
 var RequestApprovalResourceList = ubx.DataSourceBinding{

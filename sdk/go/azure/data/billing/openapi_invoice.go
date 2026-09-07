@@ -5,55 +5,55 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiInvoice_Properties_AmountDue struct {
 	Currency any
-	Value any
+	Value    any
 }
 
 type OpenapiInvoice_Properties_Documents struct {
 	DocumentNumbers any
-	ExternalUrl any
-	Kind any
-	Name any
-	Source any
-	Url any
+	ExternalUrl     any
+	Kind            any
+	Name            any
+	Source          any
+	Url             any
 }
 
 type OpenapiInvoice_Properties_FailedPayments struct {
-	Date any
+	Date                any
 	FailedPaymentReason any
 }
 
 type OpenapiInvoice_Properties_Payments struct {
-	Amount any
-	Date any
+	Amount              any
+	Date                any
 	PaymentMethodFamily any
-	PaymentMethodId any
-	PaymentMethodType any
-	PaymentType any
+	PaymentMethodId     any
+	PaymentMethodType   any
+	PaymentType         any
 }
 
 type OpenapiInvoice_Properties_RebillDetails_RebillDetails struct {
 	CreditNoteDocumentId any
-	InvoiceDocumentId any
-	RebillDetails any
+	InvoiceDocumentId    any
+	RebillDetails        any
 }
 
 type OpenapiInvoice_Properties_RebillDetails struct {
 	CreditNoteDocumentId any
-	InvoiceDocumentId any
-	RebillDetails any
+	InvoiceDocumentId    any
+	RebillDetails        any
 }
 
 type OpenapiInvoice_Properties_RefundDetails struct {
-	AmountRefunded any
-	AmountRequested any
-	ApprovedOn any
-	CompletedOn any
-	RebillInvoiceId any
+	AmountRefunded    any
+	AmountRequested   any
+	ApprovedOn        any
+	CompletedOn       any
+	RebillInvoiceId   any
 	RefundOperationId any
-	RefundReason any
-	RefundStatus any
-	RequestedOn any
-	TransactionCount any
+	RefundReason      any
+	RefundStatus      any
+	RequestedOn       any
+	TransactionCount  any
 }
 
 type OpenapiInvoice_Properties struct {
@@ -118,14 +118,14 @@ type OpenapiInvoice_Properties struct {
 }
 
 type OpenapiInvoiceConfig struct {
-	InvoiceName any
+	InvoiceName    any
 	SubscriptionId any
 }
 
 type OpenapiInvoiceAttrs struct {
 	InvoiceName any
 	// An invoice.
-	Properties any
+	Properties     any
 	SubscriptionId any
 	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
 	Tags any
@@ -134,7 +134,7 @@ type OpenapiInvoiceAttrs struct {
 var OpenapiInvoice = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_invoice",
 	Fields: ubx.FieldMap{
-		"InvoiceName": ubx.FieldSpec{WireName: "invoice_name"},
+		"InvoiceName":    ubx.FieldSpec{WireName: "invoice_name"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

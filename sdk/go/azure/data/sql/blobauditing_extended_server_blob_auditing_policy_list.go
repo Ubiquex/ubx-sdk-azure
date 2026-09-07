@@ -4,18 +4,18 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BlobauditingExtendedServerBlobAuditingPolicyList_Value_Properties struct {
-	AuditActionsAndGroups any
-	IsAzureMonitorTargetEnabled any
-	IsDevopsAuditEnabled any
-	IsManagedIdentityInUse any
-	IsStorageSecondaryKeyInUse any
-	PredicateExpression any
-	QueueDelayMs any
-	RetentionDays any
-	State any
-	StorageAccountAccessKey any
+	AuditActionsAndGroups        any
+	IsAzureMonitorTargetEnabled  any
+	IsDevopsAuditEnabled         any
+	IsManagedIdentityInUse       any
+	IsStorageSecondaryKeyInUse   any
+	PredicateExpression          any
+	QueueDelayMs                 any
+	RetentionDays                any
+	State                        any
+	StorageAccountAccessKey      any
 	StorageAccountSubscriptionId any
-	StorageEndpoint any
+	StorageEndpoint              any
 }
 
 type BlobauditingExtendedServerBlobAuditingPolicyList_Value struct {
@@ -28,7 +28,7 @@ type BlobauditingExtendedServerBlobAuditingPolicyListConfig struct {
 
 type BlobauditingExtendedServerBlobAuditingPolicyListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The ExtendedServerBlobAuditingPolicy items on this page
 	Value any

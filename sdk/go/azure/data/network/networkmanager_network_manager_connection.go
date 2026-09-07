@@ -37,7 +37,7 @@ type NetworkmanagerNetworkManagerConnectionAttrs struct {
 	// Resource ID.
 	Id any
 	// Resource name.
-	Name any
+	Name                         any
 	NetworkManagerConnectionName any
 	// Information about the network manager connection.
 	Properties any

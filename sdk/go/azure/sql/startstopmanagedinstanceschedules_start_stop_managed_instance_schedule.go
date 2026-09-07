@@ -28,23 +28,23 @@ type StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Propertie
 }
 
 var StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Properties_ScheduleListFields = ubx.FieldMap{
-		"StartDay": ubx.FieldSpec{WireName: "start_day"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"StopDay": ubx.FieldSpec{WireName: "stop_day"},
-		"StopTime": ubx.FieldSpec{WireName: "stop_time"},
-	}
+	"StartDay":  ubx.FieldSpec{WireName: "start_day"},
+	"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	"StopDay":   ubx.FieldSpec{WireName: "stop_day"},
+	"StopTime":  ubx.FieldSpec{WireName: "stop_time"},
+}
 
 var StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"NextExecutionTime": ubx.FieldSpec{WireName: "next_execution_time"},
-		"NextRunAction": ubx.FieldSpec{WireName: "next_run_action"},
-		"ScheduleList": ubx.FieldSpec{
-			WireName: "schedule_list",
-			Kind: "list",
-			Fields: StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Properties_ScheduleListFields,
-		},
-		"TimeZoneId": ubx.FieldSpec{WireName: "time_zone_id"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"NextExecutionTime": ubx.FieldSpec{WireName: "next_execution_time"},
+	"NextRunAction":     ubx.FieldSpec{WireName: "next_run_action"},
+	"ScheduleList": ubx.FieldSpec{
+		WireName: "schedule_list",
+		Kind:     "list",
+		Fields:   StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_Properties_ScheduleListFields,
+	},
+	"TimeZoneId": ubx.FieldSpec{WireName: "time_zone_id"},
+}
 
 type StartstopmanagedinstanceschedulesStartStopManagedInstanceScheduleConfig struct {
 	// Properties of managed instance's Start/Stop schedule.
@@ -61,8 +61,8 @@ var StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule = ubx.Reso
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_PropertiesFields,
+			Kind:     "object",
+			Fields:   StartstopmanagedinstanceschedulesStartStopManagedInstanceSchedule_PropertiesFields,
 		},
 	},
 }

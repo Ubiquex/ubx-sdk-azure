@@ -25,23 +25,23 @@ type Capacity_Sku struct {
 }
 
 var Capacity_Properties_AdministrationFields = ubx.FieldMap{
-		"Members": ubx.FieldSpec{WireName: "members"},
-	}
+	"Members": ubx.FieldSpec{WireName: "members"},
+}
 
 var Capacity_PropertiesFields = ubx.FieldMap{
-		"Administration": ubx.FieldSpec{
-			WireName: "administration",
-			Kind: "object",
-			Fields: Capacity_Properties_AdministrationFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"Administration": ubx.FieldSpec{
+		WireName: "administration",
+		Kind:     "object",
+		Fields:   Capacity_Properties_AdministrationFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+}
 
 var Capacity_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type CapacityConfig struct {
 	// The geo-location where the resource lives
@@ -71,13 +71,13 @@ var Capacity = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Capacity_PropertiesFields,
+			Kind:     "object",
+			Fields:   Capacity_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: Capacity_SkuFields,
+			Kind:     "object",
+			Fields:   Capacity_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

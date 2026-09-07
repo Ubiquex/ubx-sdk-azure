@@ -4,7 +4,7 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDatabaseList_Value_Properties struct {
-	Charset any
+	Charset   any
 	Collation any
 }
 
@@ -18,7 +18,7 @@ type OpenapiDatabaseListConfig struct {
 
 type OpenapiDatabaseListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The Database items on this page
 	Value any

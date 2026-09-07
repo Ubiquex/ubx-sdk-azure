@@ -62,39 +62,39 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_Properties struct {
-	Actions any
+	Actions           any
 	ProvisioningState any
-	ServiceName any
+	ServiceName       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurations struct {
@@ -102,62 +102,62 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups_Properties struct {
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties_DestinationApplicationSecurityGroups struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_Properties struct {
-	Access any
-	Description any
-	DestinationAddressPrefix any
-	DestinationAddressPrefixes any
+	Access                               any
+	Description                          any
+	DestinationAddressPrefix             any
+	DestinationAddressPrefixes           any
 	DestinationApplicationSecurityGroups any
-	DestinationPortRange any
-	DestinationPortRanges any
-	Direction any
-	Priority any
-	Protocol any
-	ProvisioningState any
-	SourceAddressPrefix any
-	SourceAddressPrefixes any
-	SourceApplicationSecurityGroups any
-	SourcePortRange any
-	SourcePortRanges any
+	DestinationPortRange                 any
+	DestinationPortRanges                any
+	Direction                            any
+	Priority                             any
+	Protocol                             any
+	ProvisioningState                    any
+	SourceAddressPrefix                  any
+	SourceAddressPrefixes                any
+	SourceApplicationSecurityGroups      any
+	SourcePortRange                      any
+	SourcePortRanges                     any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfiguration struct {
-	Enabled any
+	Enabled                  any
 	TrafficAnalyticsInterval any
-	WorkspaceId any
-	WorkspaceRegion any
-	WorkspaceResourceId any
+	WorkspaceId              any
+	WorkspaceRegion          any
+	WorkspaceResourceId      any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration struct {
@@ -165,160 +165,160 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_Format struct {
-	Type any
+	Type    any
 	Version any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicy struct {
-	Days any
+	Days    any
 	Enabled any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties struct {
-	Enabled any
-	EnabledFilteringCriteria any
+	Enabled                    any
+	EnabledFilteringCriteria   any
 	FlowAnalyticsConfiguration any
-	Format any
-	ProvisioningState any
-	RecordTypes any
-	RetentionPolicy any
-	StorageId any
-	TargetResourceGuid any
-	TargetResourceId any
+	Format                     any
+	ProvisioningState          any
+	RecordTypes                any
+	RetentionPolicy            any
+	StorageId                  any
+	TargetResourceGuid         any
+	TargetResourceId           any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs struct {
-	Etag any
-	Identity any
+	Etag       any
+	Identity   any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettings struct {
-	AppliedDnsServers any
-	DnsServers any
-	InternalDnsNameLabel any
+	AppliedDnsServers        any
+	DnsServers               any
+	InternalDnsNameLabel     any
 	InternalDomainNameSuffix any
-	InternalFqdn any
+	InternalFqdn             any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendAddresses struct {
-	Fqdn any
+	Fqdn      any
 	IpAddress any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties struct {
-	BackendAddresses any
+	BackendAddresses        any
 	BackendIpconfigurations any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMapping struct {
-	BackendPort any
-	FrontendPort any
+	BackendPort        any
+	FrontendPort       any
 	InboundNatRuleName any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties struct {
-	AdminState any
-	InboundNatRulesPortMapping any
-	IpAddress any
+	AdminState                          any
+	InboundNatRulesPortMapping          any
+	IpAddress                           any
 	LoadBalancerFrontendIpconfiguration any
-	NetworkInterfaceIpconfiguration any
-	Subnet any
-	VirtualNetwork any
+	NetworkInterfaceIpconfiguration     any
+	Subnet                              any
+	VirtualNetwork                      any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfaces struct {
 	Identifier any
-	Port any
-	Protocol any
-	Type any
+	Port       any
+	Protocol   any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_Properties struct {
-	BackendIpconfigurations any
-	DrainPeriodInSeconds any
-	InboundNatRules any
+	BackendIpconfigurations      any
+	DrainPeriodInSeconds         any
+	InboundNatRules              any
 	LoadBalancerBackendAddresses any
-	LoadBalancingRules any
-	Location any
-	OutboundRule any
-	OutboundRules any
-	ProvisioningState any
-	SyncMode any
-	TunnelInterfaces any
-	VirtualNetwork any
+	LoadBalancingRules           any
+	Location                     any
+	OutboundRule                 any
+	OutboundRules                any
+	ProvisioningState            any
+	SyncMode                     any
+	TunnelInterfaces             any
+	VirtualNetwork               any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_Properties struct {
-	BackendAddressPool any
-	BackendIpconfiguration any
-	BackendPort any
-	EnableFloatingIp any
-	EnableTcpReset any
+	BackendAddressPool      any
+	BackendIpconfiguration  any
+	BackendPort             any
+	EnableFloatingIp        any
+	EnableTcpReset          any
 	FrontendIpconfiguration any
-	FrontendPort any
-	FrontendPortRangeEnd any
-	FrontendPortRangeStart any
-	IdleTimeoutInMinutes any
-	Protocol any
-	ProvisioningState any
+	FrontendPort            any
+	FrontendPortRangeEnd    any
+	FrontendPortRangeStart  any
+	IdleTimeoutInMinutes    any
+	Protocol                any
+	ProvisioningState       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PrivateLinkConnectionProperties struct {
-	Fqdns any
-	GroupId any
+	Fqdns              any
+	GroupId            any
 	RequiredMemberName any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties struct {
-	DdosSettings any
-	EnableConnectionTracking any
-	GatewayLoadBalancer any
-	InboundNatPools any
-	InboundNatRules any
-	LoadBalancingRules any
-	OutboundRules any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	DdosSettings              any
+	EnableConnectionTracking  any
+	GatewayLoadBalancer       any
+	InboundNatPools           any
+	InboundNatRules           any
+	LoadBalancingRules        any
+	OutboundRules             any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	PublicIpprefix any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	PublicIpprefix            any
+	Subnet                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations_Properties struct {
@@ -327,104 +327,104 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_NetworkInterfaceTapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigs struct {
-	Fqdn any
+	Fqdn        any
 	IpAddresses any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_Properties struct {
-	GroupId any
-	MemberName any
+	GroupId          any
+	MemberName       any
 	PrivateIpaddress any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties struct {
-	GroupIds any
+	GroupIds                          any
 	PrivateLinkServiceConnectionState any
-	PrivateLinkServiceId any
-	ProvisioningState any
-	RequestMessage any
+	PrivateLinkServiceId              any
+	ProvisioningState                 any
+	RequestMessage                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApproval struct {
@@ -432,142 +432,142 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	Primary                   any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools_Properties struct {
-	BackendAddresses any
+	BackendAddresses        any
 	BackendIpconfigurations any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_ApplicationGatewayBackendAddressPools struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools_Properties struct {
-	BackendIpconfigurations any
-	DrainPeriodInSeconds any
-	InboundNatRules any
+	BackendIpconfigurations      any
+	DrainPeriodInSeconds         any
+	InboundNatRules              any
 	LoadBalancerBackendAddresses any
-	LoadBalancingRules any
-	Location any
-	OutboundRule any
-	OutboundRules any
-	ProvisioningState any
-	SyncMode any
-	TunnelInterfaces any
-	VirtualNetwork any
+	LoadBalancingRules           any
+	Location                     any
+	OutboundRule                 any
+	OutboundRules                any
+	ProvisioningState            any
+	SyncMode                     any
+	TunnelInterfaces             any
+	VirtualNetwork               any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerBackendAddressPools struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules_Properties struct {
-	BackendAddressPool any
-	BackendIpconfiguration any
-	BackendPort any
-	EnableFloatingIp any
-	EnableTcpReset any
+	BackendAddressPool      any
+	BackendIpconfiguration  any
+	BackendPort             any
+	EnableFloatingIp        any
+	EnableTcpReset          any
 	FrontendIpconfiguration any
-	FrontendPort any
-	FrontendPortRangeEnd any
-	FrontendPortRangeStart any
-	IdleTimeoutInMinutes any
-	Protocol any
-	ProvisioningState any
+	FrontendPort            any
+	FrontendPortRangeEnd    any
+	FrontendPortRangeStart  any
+	IdleTimeoutInMinutes    any
+	Protocol                any
+	ProvisioningState       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties_LoadBalancerInboundNatRules struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -577,40 +577,40 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
@@ -641,118 +641,118 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_Properties struct {
-	Link any
+	Link               any
 	LinkedResourceType any
-	ProvisioningState any
+	ProvisioningState  any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHop struct {
@@ -760,16 +760,16 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties struct {
-	AddressPrefix any
-	HasBgpOverride any
-	NextHop any
-	NextHopIpAddress any
-	NextHopType any
+	AddressPrefix     any
+	HasBgpOverride    any
+	NextHop           any
+	NextHopIpAddress  any
+	NextHopType       any
 	ProvisioningState any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -796,52 +796,52 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_Properties struct {
-	AllowDelete any
-	Link any
+	AllowDelete        any
+	Link               any
 	LinkedResourceType any
-	Locations any
-	ProvisioningState any
+	Locations          any
+	ProvisioningState  any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_Properties struct {
-	Description any
+	Description       any
 	ProvisioningState any
-	Service any
-	ServiceResources any
+	Service           any
+	ServiceResources  any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties struct {
 	ContextualServiceEndpointPolicies any
-	ProvisioningState any
-	ResourceGuid any
-	ServiceAlias any
-	ServiceEndpointPolicyDefinitions any
-	Subnets any
+	ProvisioningState                 any
+	ResourceGuid                      any
+	ServiceAlias                      any
+	ServiceEndpointPolicyDefinitions  any
+	Subnets                           any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies struct {
-	Etag any
-	Kind any
+	Etag       any
+	Kind       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpoints struct {
-	Locations any
+	Locations         any
 	NetworkIdentifier any
 	ProvisioningState any
-	Service any
+	Service           any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties struct {
@@ -924,8 +924,8 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_I
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_IpTags struct {
 	FirstPartyServiceTagId any
-	IpTagType any
-	Tag any
+	IpTagType              any
+	Tag                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress_Properties_NatGateway_Properties struct {
@@ -1021,306 +1021,306 @@ type LoadbalancerFrontendIpconfiguration_Properties_PublicIpaddress struct {
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_Properties struct {
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_IpConfigurations_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties struct {
-	PrivateIpaddress any
+	PrivateIpaddress          any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties struct {
-	DdosSettings any
-	DeleteOption any
-	DnsSettings any
-	IdleTimeoutInMinutes any
-	IpAddress any
-	IpConfiguration any
-	IpTags any
-	LinkedPublicIpaddress any
-	MigrationPhase any
-	NatGateway any
-	ProvisioningState any
-	PublicIpaddressVersion any
+	DdosSettings             any
+	DeleteOption             any
+	DnsSettings              any
+	IdleTimeoutInMinutes     any
+	IpAddress                any
+	IpConfiguration          any
+	IpTags                   any
+	LinkedPublicIpaddress    any
+	MigrationPhase           any
+	NatGateway               any
+	ProvisioningState        any
+	PublicIpaddressVersion   any
 	PublicIpallocationMethod any
-	PublicIpprefix any
-	ResourceGuid any
-	ServicePublicIpaddress any
-	UpgradedToV2 any
+	PublicIpprefix           any
+	ResourceGuid             any
+	ServicePublicIpaddress   any
+	UpgradedToV2             any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
-	Sku any
-	Zones any
+	Properties       any
+	Sku              any
+	Zones            any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties struct {
-	DdosSettings any
-	EnableConnectionTracking any
-	GatewayLoadBalancer any
-	InboundNatPools any
-	InboundNatRules any
-	LoadBalancingRules any
-	OutboundRules any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	DdosSettings              any
+	EnableConnectionTracking  any
+	GatewayLoadBalancer       any
+	InboundNatPools           any
+	InboundNatRules           any
+	LoadBalancingRules        any
+	OutboundRules             any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	PublicIpprefix any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	PublicIpprefix            any
+	Subnet                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_Properties struct {
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressVersion any
+	Primary                   any
+	PrivateIpaddress          any
+	PrivateIpaddressVersion   any
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	Subnet any
+	ProvisioningState         any
+	Subnet                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_Properties struct {
-	LinkIdentifier any
-	PrivateEndpoint any
-	PrivateEndpointLocation any
+	LinkIdentifier                    any
+	PrivateEndpoint                   any
+	PrivateEndpointLocation           any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_Properties struct {
 	ApplicationGatewayBackendAddressPools any
-	ApplicationSecurityGroups any
-	GatewayLoadBalancer any
-	LoadBalancerBackendAddressPools any
-	LoadBalancerInboundNatRules any
-	Primary any
-	PrivateIpaddress any
-	PrivateIpaddressPrefixLength any
-	PrivateIpaddressVersion any
-	PrivateIpallocationMethod any
-	PrivateLinkConnectionProperties any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
-	VirtualNetworkTaps any
+	ApplicationSecurityGroups             any
+	GatewayLoadBalancer                   any
+	LoadBalancerBackendAddressPools       any
+	LoadBalancerInboundNatRules           any
+	Primary                               any
+	PrivateIpaddress                      any
+	PrivateIpaddressPrefixLength          any
+	PrivateIpaddressVersion               any
+	PrivateIpallocationMethod             any
+	PrivateLinkConnectionProperties       any
+	ProvisioningState                     any
+	PublicIpaddress                       any
+	Subnet                                any
+	VirtualNetworkTaps                    any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties struct {
 	DestinationLoadBalancerFrontEndIpconfiguration any
-	DestinationNetworkInterfaceIpconfiguration any
-	DestinationPort any
-	NetworkInterfaceTapConfigurations any
-	ProvisioningState any
-	ResourceGuid any
+	DestinationNetworkInterfaceIpconfiguration     any
+	DestinationPort                                any
+	NetworkInterfaceTapConfigurations              any
+	ProvisioningState                              any
+	ResourceGuid                                   any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -1330,40 +1330,40 @@ type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSec
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties struct {
@@ -1394,91 +1394,91 @@ type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_NetworkSec
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties struct {
 	DefaultSecurityRules any
-	FlowLogs any
-	FlushConnection any
-	NetworkInterfaces any
-	ProvisioningState any
-	ResourceGuid any
-	SecurityRules any
-	Subnets any
+	FlowLogs             any
+	FlushConnection      any
+	NetworkInterfaces    any
+	ProvisioningState    any
+	ResourceGuid         any
+	SecurityRules        any
+	Subnets              any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties struct {
-	AccessMode any
-	Alias any
-	AutoApproval any
-	DestinationIpaddress any
-	EnableProxyProtocol any
-	Fqdns any
-	IpConfigurations any
+	AccessMode                           any
+	Alias                                any
+	AutoApproval                         any
+	DestinationIpaddress                 any
+	EnableProxyProtocol                  any
+	Fqdns                                any
+	IpConfigurations                     any
 	LoadBalancerFrontendIpConfigurations any
-	NetworkInterfaces any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	Visibility any
+	NetworkInterfaces                    any
+	PrivateEndpointConnections           any
+	ProvisioningState                    any
+	Visibility                           any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties struct {
-	AuxiliaryMode any
-	AuxiliarySku any
+	AuxiliaryMode                      any
+	AuxiliarySku                       any
 	DefaultOutboundConnectivityEnabled any
-	DisableTcpStateTracking any
-	DnsSettings any
-	DscpConfiguration any
-	EnableAcceleratedNetworking any
-	EnableIpforwarding any
-	HostedWorkloads any
-	IpConfigurations any
-	MacAddress any
-	MigrationPhase any
-	NetworkSecurityGroup any
-	NicType any
-	Primary any
-	PrivateEndpoint any
-	PrivateLinkService any
-	ProvisioningState any
-	ResourceGuid any
-	TapConfigurations any
-	VirtualMachine any
-	VnetEncryptionSupported any
-	WorkloadType any
+	DisableTcpStateTracking            any
+	DnsSettings                        any
+	DscpConfiguration                  any
+	EnableAcceleratedNetworking        any
+	EnableIpforwarding                 any
+	HostedWorkloads                    any
+	IpConfigurations                   any
+	MacAddress                         any
+	MigrationPhase                     any
+	NetworkSecurityGroup               any
+	NicType                            any
+	Primary                            any
+	PrivateEndpoint                    any
+	PrivateLinkService                 any
+	ProvisioningState                  any
+	ResourceGuid                       any
+	TapConfigurations                  any
+	VirtualMachine                     any
+	VnetEncryptionSupported            any
+	WorkloadType                       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties struct {
-	ApplicationSecurityGroups any
-	BillingSku any
-	CustomDnsConfigs any
-	CustomNetworkInterfaceName any
-	IpConfigurations any
-	IpVersionType any
+	ApplicationSecurityGroups           any
+	BillingSku                          any
+	CustomDnsConfigs                    any
+	CustomNetworkInterfaceName          any
+	IpConfigurations                    any
+	IpVersionType                       any
 	ManualPrivateLinkServiceConnections any
-	NetworkInterfaces any
-	PrivateLinkServiceConnections any
-	ProvisioningState any
-	Subnet any
+	NetworkInterfaces                   any
+	PrivateLinkServiceConnections       any
+	ProvisioningState                   any
+	Subnet                              any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints struct {
-	Etag any
+	Etag             any
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_RouteTable_Properties struct {
@@ -1505,16 +1505,16 @@ type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_RouteTable
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties struct {
 	ContextualServiceEndpointPolicies any
-	ProvisioningState any
-	ResourceGuid any
-	ServiceAlias any
-	ServiceEndpointPolicyDefinitions any
-	Subnets any
+	ProvisioningState                 any
+	ResourceGuid                      any
+	ServiceAlias                      any
+	ServiceEndpointPolicyDefinitions  any
+	Subnets                           any
 }
 
 type LoadbalancerFrontendIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies struct {
-	Etag any
-	Kind any
+	Etag       any
+	Kind       any
 	Properties any
 }
 
@@ -1607,14 +1607,14 @@ type LoadbalancerFrontendIpconfiguration_Properties struct {
 
 type LoadbalancerFrontendIpconfigurationConfig struct {
 	FrontendIpconfigurationName any
-	LoadBalancerName any
+	LoadBalancerName            any
 }
 
 type LoadbalancerFrontendIpconfigurationAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
+	Etag                        any
 	FrontendIpconfigurationName any
-	LoadBalancerName any
+	LoadBalancerName            any
 	// Name of the resource.
 	Name any
 	// Properties of Frontend IP Configuration of the load balancer.
@@ -1629,6 +1629,6 @@ var LoadbalancerFrontendIpconfiguration = ubx.DataSourceBinding{
 	WireType: "azure_network_loadbalancer_frontend_ipconfiguration",
 	Fields: ubx.FieldMap{
 		"FrontendIpconfigurationName": ubx.FieldSpec{WireName: "frontend_ipconfiguration_name"},
-		"LoadBalancerName": ubx.FieldSpec{WireName: "load_balancer_name"},
+		"LoadBalancerName":            ubx.FieldSpec{WireName: "load_balancer_name"},
 	},
 }

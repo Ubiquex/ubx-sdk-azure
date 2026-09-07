@@ -36,27 +36,27 @@ type OpenapiLogAnalyticsQueryPackQuery_Properties struct {
 }
 
 var OpenapiLogAnalyticsQueryPackQuery_Properties_RelatedFields = ubx.FieldMap{
-		"Categories": ubx.FieldSpec{WireName: "categories"},
-		"ResourceTypes": ubx.FieldSpec{WireName: "resource_types"},
-		"Solutions": ubx.FieldSpec{WireName: "solutions"},
-	}
+	"Categories":    ubx.FieldSpec{WireName: "categories"},
+	"ResourceTypes": ubx.FieldSpec{WireName: "resource_types"},
+	"Solutions":     ubx.FieldSpec{WireName: "solutions"},
+}
 
 var OpenapiLogAnalyticsQueryPackQuery_PropertiesFields = ubx.FieldMap{
-		"Author": ubx.FieldSpec{WireName: "author"},
-		"Body": ubx.FieldSpec{WireName: "body"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Related": ubx.FieldSpec{
-			WireName: "related",
-			Kind: "object",
-			Fields: OpenapiLogAnalyticsQueryPackQuery_Properties_RelatedFields,
-		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"TimeCreated": ubx.FieldSpec{WireName: "time_created"},
-		"TimeModified": ubx.FieldSpec{WireName: "time_modified"},
-	}
+	"Author":      ubx.FieldSpec{WireName: "author"},
+	"Body":        ubx.FieldSpec{WireName: "body"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"Properties":  ubx.FieldSpec{WireName: "properties"},
+	"Related": ubx.FieldSpec{
+		WireName: "related",
+		Kind:     "object",
+		Fields:   OpenapiLogAnalyticsQueryPackQuery_Properties_RelatedFields,
+	},
+	"Tags":         ubx.FieldSpec{WireName: "tags"},
+	"TimeCreated":  ubx.FieldSpec{WireName: "time_created"},
+	"TimeModified": ubx.FieldSpec{WireName: "time_modified"},
+}
 
 type OpenapiLogAnalyticsQueryPackQueryConfig struct {
 	// Properties that define an Log Analytics QueryPack-Query resource.
@@ -77,8 +77,8 @@ var OpenapiLogAnalyticsQueryPackQuery = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLogAnalyticsQueryPackQuery_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLogAnalyticsQueryPackQuery_PropertiesFields,
 		},
 		"Id": ubx.FieldSpec{WireName: "id"},
 	},

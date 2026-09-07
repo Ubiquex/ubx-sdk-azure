@@ -30,7 +30,7 @@ type WorkspaceRestorableDroppedSqlPoolAttrs struct {
 	// The geo-location where the resource lives
 	Location any
 	// The properties of a restorable dropped Sql pool
-	Properties any
+	Properties                 any
 	RestorableDroppedSqlPoolId any
 }
 

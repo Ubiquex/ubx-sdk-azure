@@ -13,10 +13,10 @@ type DatascannersDataScanner_Identity struct {
 }
 
 var DatascannersDataScanner_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 type DatascannersDataScannerConfig struct {
 	// Managed service identity (either system assigned, or none)
@@ -37,8 +37,8 @@ var DatascannersDataScanner = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DatascannersDataScanner_IdentityFields,
+			Kind:     "object",
+			Fields:   DatascannersDataScanner_IdentityFields,
 		},
 		"Properties": ubx.FieldSpec{WireName: "properties"},
 	},

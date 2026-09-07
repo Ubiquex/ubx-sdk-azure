@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimemailtemplatesEmailTemplateContract2_Properties_Parameters struct {
 	Description any
-	Name any
-	Title any
+	Name        any
+	Title       any
 }
 
 type ApimemailtemplatesEmailTemplateContract2_Properties struct {
@@ -25,23 +25,23 @@ type ApimemailtemplatesEmailTemplateContract2_Properties struct {
 }
 
 var ApimemailtemplatesEmailTemplateContract2_Properties_ParametersFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+	"Title":       ubx.FieldSpec{WireName: "title"},
+}
 
 var ApimemailtemplatesEmailTemplateContract2_PropertiesFields = ubx.FieldMap{
-		"Body": ubx.FieldSpec{WireName: "body"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "list",
-			Fields: ApimemailtemplatesEmailTemplateContract2_Properties_ParametersFields,
-		},
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"Body":        ubx.FieldSpec{WireName: "body"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"IsDefault":   ubx.FieldSpec{WireName: "is_default"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "list",
+		Fields:   ApimemailtemplatesEmailTemplateContract2_Properties_ParametersFields,
+	},
+	"Subject": ubx.FieldSpec{WireName: "subject"},
+	"Title":   ubx.FieldSpec{WireName: "title"},
+}
 
 type ApimemailtemplatesEmailTemplateContract2Config struct {
 	// Email Template Update Contract properties.
@@ -58,8 +58,8 @@ var ApimemailtemplatesEmailTemplateContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimemailtemplatesEmailTemplateContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimemailtemplatesEmailTemplateContract2_PropertiesFields,
 		},
 	},
 }

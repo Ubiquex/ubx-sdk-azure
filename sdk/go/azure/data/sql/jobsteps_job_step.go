@@ -61,29 +61,29 @@ type JobstepsJobStep_Properties struct {
 
 type JobstepsJobStepConfig struct {
 	JobAgentName any
-	JobName any
-	JobVersion any
-	ServerName any
-	StepName any
+	JobName      any
+	JobVersion   any
+	ServerName   any
+	StepName     any
 }
 
 type JobstepsJobStepAttrs struct {
 	JobAgentName any
-	JobName any
-	JobVersion any
+	JobName      any
+	JobVersion   any
 	// Properties of a job step.
 	Properties any
 	ServerName any
-	StepName any
+	StepName   any
 }
 
 var JobstepsJobStep = ubx.DataSourceBinding{
 	WireType: "azure_sql_jobsteps_job_step",
 	Fields: ubx.FieldMap{
 		"JobAgentName": ubx.FieldSpec{WireName: "job_agent_name"},
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
-		"JobVersion": ubx.FieldSpec{WireName: "job_version"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"StepName": ubx.FieldSpec{WireName: "step_name"},
+		"JobName":      ubx.FieldSpec{WireName: "job_name"},
+		"JobVersion":   ubx.FieldSpec{WireName: "job_version"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
+		"StepName":     ubx.FieldSpec{WireName: "step_name"},
 	},
 }

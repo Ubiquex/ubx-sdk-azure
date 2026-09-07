@@ -13,10 +13,10 @@ type ServertrustcertificatesServerTrustCertificate_Properties struct {
 }
 
 var ServertrustcertificatesServerTrustCertificate_PropertiesFields = ubx.FieldMap{
-		"CertificateName": ubx.FieldSpec{WireName: "certificate_name"},
-		"PublicBlob": ubx.FieldSpec{WireName: "public_blob"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"CertificateName": ubx.FieldSpec{WireName: "certificate_name"},
+	"PublicBlob":      ubx.FieldSpec{WireName: "public_blob"},
+	"Thumbprint":      ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 type ServertrustcertificatesServerTrustCertificateConfig struct {
 	// The properties of a server trust certificate.
@@ -33,8 +33,8 @@ var ServertrustcertificatesServerTrustCertificate = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServertrustcertificatesServerTrustCertificate_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServertrustcertificatesServerTrustCertificate_PropertiesFields,
 		},
 	},
 }

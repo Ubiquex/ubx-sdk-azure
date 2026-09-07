@@ -11,9 +11,9 @@ type RaiBlocklistItem_Properties struct {
 }
 
 var RaiBlocklistItem_PropertiesFields = ubx.FieldMap{
-		"IsRegex": ubx.FieldSpec{WireName: "is_regex"},
-		"Pattern": ubx.FieldSpec{WireName: "pattern"},
-	}
+	"IsRegex": ubx.FieldSpec{WireName: "is_regex"},
+	"Pattern": ubx.FieldSpec{WireName: "pattern"},
+}
 
 type RaiBlocklistItemConfig struct {
 	// RAI Custom Blocklist Item properties.
@@ -36,8 +36,8 @@ var RaiBlocklistItem = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RaiBlocklistItem_PropertiesFields,
+			Kind:     "object",
+			Fields:   RaiBlocklistItem_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

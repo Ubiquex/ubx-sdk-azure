@@ -13,10 +13,10 @@ type Snapshot_Properties struct {
 }
 
 var Snapshot_PropertiesFields = ubx.FieldMap{
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SnapshotId": ubx.FieldSpec{WireName: "snapshot_id"},
-	}
+	"Created":           ubx.FieldSpec{WireName: "created"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SnapshotId":        ubx.FieldSpec{WireName: "snapshot_id"},
+}
 
 type SnapshotConfig struct {
 	// Resource location
@@ -38,8 +38,8 @@ var Snapshot = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Snapshot_PropertiesFields,
+			Kind:     "object",
+			Fields:   Snapshot_PropertiesFields,
 		},
 	},
 }

@@ -8,29 +8,29 @@ type ServiceProtectionContainerList_Value_Properties_FabricSpecificDetails struc
 }
 
 type ServiceProtectionContainerList_Value_Properties struct {
-	FabricFriendlyName any
+	FabricFriendlyName    any
 	FabricSpecificDetails any
-	FabricType any
-	FriendlyName any
-	PairingStatus any
-	ProtectedItemCount any
-	Role any
+	FabricType            any
+	FriendlyName          any
+	PairingStatus         any
+	ProtectedItemCount    any
+	Role                  any
 }
 
 type ServiceProtectionContainerList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceProtectionContainerListConfig struct {
-	FabricName any
+	FabricName   any
 	ResourceName any
 }
 
 type ServiceProtectionContainerListAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The ProtectionContainer items on this page
 	Value any
@@ -39,7 +39,7 @@ type ServiceProtectionContainerListAttrs struct {
 var ServiceProtectionContainerList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_protection_container_list",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"FabricName":   ubx.FieldSpec{WireName: "fabric_name"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

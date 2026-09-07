@@ -24,21 +24,21 @@ type VirtualwanVirtualHubRouteTableV2_Properties struct {
 }
 
 var VirtualwanVirtualHubRouteTableV2_Properties_RoutesFields = ubx.FieldMap{
-		"DestinationType": ubx.FieldSpec{WireName: "destination_type"},
-		"Destinations": ubx.FieldSpec{WireName: "destinations"},
-		"NextHopType": ubx.FieldSpec{WireName: "next_hop_type"},
-		"NextHops": ubx.FieldSpec{WireName: "next_hops"},
-	}
+	"DestinationType": ubx.FieldSpec{WireName: "destination_type"},
+	"Destinations":    ubx.FieldSpec{WireName: "destinations"},
+	"NextHopType":     ubx.FieldSpec{WireName: "next_hop_type"},
+	"NextHops":        ubx.FieldSpec{WireName: "next_hops"},
+}
 
 var VirtualwanVirtualHubRouteTableV2_PropertiesFields = ubx.FieldMap{
-		"AttachedConnections": ubx.FieldSpec{WireName: "attached_connections"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: VirtualwanVirtualHubRouteTableV2_Properties_RoutesFields,
-		},
-	}
+	"AttachedConnections": ubx.FieldSpec{WireName: "attached_connections"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   VirtualwanVirtualHubRouteTableV2_Properties_RoutesFields,
+	},
+}
 
 type VirtualwanVirtualHubRouteTableV2Config struct {
 	// Resource ID.
@@ -63,12 +63,12 @@ type VirtualwanVirtualHubRouteTableV2Attrs struct {
 var VirtualwanVirtualHubRouteTableV2 = ubx.ResourceBinding{
 	WireType: "azure_network_virtualwan_virtual_hub_route_table_v2",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVirtualHubRouteTableV2_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanVirtualHubRouteTableV2_PropertiesFields,
 		},
 	},
 }

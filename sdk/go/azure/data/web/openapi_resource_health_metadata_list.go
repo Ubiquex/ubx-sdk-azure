@@ -4,12 +4,12 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiResourceHealthMetadataList_Value_Properties struct {
-	Category any
+	Category           any
 	SignalAvailability any
 }
 
 type OpenapiResourceHealthMetadataList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -25,6 +25,5 @@ type OpenapiResourceHealthMetadataListAttrs struct {
 
 var OpenapiResourceHealthMetadataList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_resource_health_metadata_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

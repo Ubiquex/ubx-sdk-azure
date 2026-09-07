@@ -9,16 +9,16 @@ type OpenapiAuthorizationRule_Properties struct {
 }
 
 type OpenapiAuthorizationRuleConfig struct {
-	Alias any
+	Alias                 any
 	AuthorizationRuleName any
-	NamespaceName any
+	NamespaceName         any
 }
 
 type OpenapiAuthorizationRuleAttrs struct {
-	Alias any
+	Alias                 any
 	AuthorizationRuleName any
 	// The geo-location where the resource lives
-	Location any
+	Location      any
 	NamespaceName any
 	// Properties supplied to create or update AuthorizationRule
 	Properties any
@@ -27,8 +27,8 @@ type OpenapiAuthorizationRuleAttrs struct {
 var OpenapiAuthorizationRule = ubx.DataSourceBinding{
 	WireType: "azure_eventhub_openapi_authorization_rule",
 	Fields: ubx.FieldMap{
-		"Alias": ubx.FieldSpec{WireName: "alias"},
+		"Alias":                 ubx.FieldSpec{WireName: "alias"},
 		"AuthorizationRuleName": ubx.FieldSpec{WireName: "authorization_rule_name"},
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"NamespaceName":         ubx.FieldSpec{WireName: "namespace_name"},
 	},
 }

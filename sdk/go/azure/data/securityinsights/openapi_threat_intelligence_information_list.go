@@ -16,7 +16,7 @@ type OpenapiThreatIntelligenceInformationListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The ThreatIntelligenceInformation items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

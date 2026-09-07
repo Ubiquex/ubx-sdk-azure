@@ -77,79 +77,79 @@ type VirtualnetworkBastionHost_Sku struct {
 }
 
 var VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkBastionHost_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-	}
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+}
 
 var VirtualnetworkBastionHost_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkBastionHost_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualnetworkBastionHost_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualnetworkBastionHost_Properties_NetworkAcls_IpRulesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-	}
+	"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
+}
 
 var VirtualnetworkBastionHost_Properties_NetworkAclsFields = ubx.FieldMap{
-		"IpRules": ubx.FieldSpec{
-			WireName: "ip_rules",
-			Kind: "list",
-			Fields: VirtualnetworkBastionHost_Properties_NetworkAcls_IpRulesFields,
-		},
-	}
+	"IpRules": ubx.FieldSpec{
+		WireName: "ip_rules",
+		Kind:     "list",
+		Fields:   VirtualnetworkBastionHost_Properties_NetworkAcls_IpRulesFields,
+	},
+}
 
 var VirtualnetworkBastionHost_PropertiesFields = ubx.FieldMap{
-		"DisableCopyPaste": ubx.FieldSpec{WireName: "disable_copy_paste"},
-		"DnsName": ubx.FieldSpec{WireName: "dns_name"},
-		"EnableFileCopy": ubx.FieldSpec{WireName: "enable_file_copy"},
-		"EnableIpConnect": ubx.FieldSpec{WireName: "enable_ip_connect"},
-		"EnableKerberos": ubx.FieldSpec{WireName: "enable_kerberos"},
-		"EnablePrivateOnlyBastion": ubx.FieldSpec{WireName: "enable_private_only_bastion"},
-		"EnableSessionRecording": ubx.FieldSpec{WireName: "enable_session_recording"},
-		"EnableShareableLink": ubx.FieldSpec{WireName: "enable_shareable_link"},
-		"EnableTunneling": ubx.FieldSpec{WireName: "enable_tunneling"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualnetworkBastionHost_Properties_IpConfigurationsFields,
-		},
-		"NetworkAcls": ubx.FieldSpec{
-			WireName: "network_acls",
-			Kind: "object",
-			Fields: VirtualnetworkBastionHost_Properties_NetworkAclsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ScaleUnits": ubx.FieldSpec{WireName: "scale_units"},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-	}
+	"DisableCopyPaste":         ubx.FieldSpec{WireName: "disable_copy_paste"},
+	"DnsName":                  ubx.FieldSpec{WireName: "dns_name"},
+	"EnableFileCopy":           ubx.FieldSpec{WireName: "enable_file_copy"},
+	"EnableIpConnect":          ubx.FieldSpec{WireName: "enable_ip_connect"},
+	"EnableKerberos":           ubx.FieldSpec{WireName: "enable_kerberos"},
+	"EnablePrivateOnlyBastion": ubx.FieldSpec{WireName: "enable_private_only_bastion"},
+	"EnableSessionRecording":   ubx.FieldSpec{WireName: "enable_session_recording"},
+	"EnableShareableLink":      ubx.FieldSpec{WireName: "enable_shareable_link"},
+	"EnableTunneling":          ubx.FieldSpec{WireName: "enable_tunneling"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualnetworkBastionHost_Properties_IpConfigurationsFields,
+	},
+	"NetworkAcls": ubx.FieldSpec{
+		WireName: "network_acls",
+		Kind:     "object",
+		Fields:   VirtualnetworkBastionHost_Properties_NetworkAclsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ScaleUnits":        ubx.FieldSpec{WireName: "scale_units"},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   VirtualnetworkBastionHost_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+}
 
 var VirtualnetworkBastionHost_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type VirtualnetworkBastionHostConfig struct {
 	// Resource ID.
@@ -190,19 +190,19 @@ type VirtualnetworkBastionHostAttrs struct {
 var VirtualnetworkBastionHost = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_bastion_host",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
+		"Id":       ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkBastionHost_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkBastionHost_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: VirtualnetworkBastionHost_SkuFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkBastionHost_SkuFields,
 		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

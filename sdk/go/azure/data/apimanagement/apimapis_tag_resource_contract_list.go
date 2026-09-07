@@ -4,34 +4,34 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapisTagResourceContractList_Value_Api struct {
-	Id any
-	Name any
-	Path any
-	Protocols any
+	Id         any
+	Name       any
+	Path       any
+	Protocols  any
 	ServiceUrl any
 }
 
 type ApimapisTagResourceContractList_Value_Operation struct {
-	ApiName any
+	ApiName     any
 	ApiRevision any
-	ApiVersion any
+	ApiVersion  any
 	Description any
-	Id any
-	Method any
-	Name any
+	Id          any
+	Method      any
+	Name        any
 	UrlTemplate any
 }
 
 type ApimapisTagResourceContractList_Value_Product struct {
-	Id any
+	Id   any
 	Name any
 }
 
 type ApimapisTagResourceContractList_Value struct {
-	Api any
+	Api       any
 	Operation any
-	Product any
-	Tag any
+	Product   any
+	Tag       any
 }
 
 type ApimapisTagResourceContractListConfig struct {
@@ -40,7 +40,7 @@ type ApimapisTagResourceContractListConfig struct {
 
 type ApimapisTagResourceContractListAttrs struct {
 	// Total record count number across all pages.
-	Count any
+	Count                      any
 	IncludeNotTaggedOperations any
 	// Next page link if any.
 	NextLink any

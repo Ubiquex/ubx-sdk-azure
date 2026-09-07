@@ -69,91 +69,91 @@ type VirtualwanBgpConnection_Properties struct {
 }
 
 var VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualwanBgpConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields = ubx.FieldMap{
-		"Ids": ubx.FieldSpec{
-			WireName: "ids",
-			Kind: "list",
-			Fields: VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
-		},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-	}
+	"Ids": ubx.FieldSpec{
+		WireName: "ids",
+		Kind:     "list",
+		Fields:   VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
+	},
+	"Labels": ubx.FieldSpec{WireName: "labels"},
+}
 
 var VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields = ubx.FieldMap{
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-	}
+	"AddressPrefixes":  ubx.FieldSpec{WireName: "address_prefixes"},
+	"Name":             ubx.FieldSpec{WireName: "name"},
+	"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
+}
 
 var VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields = ubx.FieldMap{
-		"PropagateStaticRoutes": ubx.FieldSpec{WireName: "propagate_static_routes"},
-		"VnetLocalRouteOverrideCriteria": ubx.FieldSpec{WireName: "vnet_local_route_override_criteria"},
-	}
+	"PropagateStaticRoutes":          ubx.FieldSpec{WireName: "propagate_static_routes"},
+	"VnetLocalRouteOverrideCriteria": ubx.FieldSpec{WireName: "vnet_local_route_override_criteria"},
+}
 
 var VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutesFields = ubx.FieldMap{
-		"BgpConnections": ubx.FieldSpec{
-			WireName: "bgp_connections",
-			Kind: "list",
-			Fields: VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
-		},
-		"StaticRoutes": ubx.FieldSpec{
-			WireName: "static_routes",
-			Kind: "list",
-			Fields: VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields,
-		},
-		"StaticRoutesConfig": ubx.FieldSpec{
-			WireName: "static_routes_config",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields,
-		},
-	}
+	"BgpConnections": ubx.FieldSpec{
+		WireName: "bgp_connections",
+		Kind:     "list",
+		Fields:   VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
+	},
+	"StaticRoutes": ubx.FieldSpec{
+		WireName: "static_routes",
+		Kind:     "list",
+		Fields:   VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesFields,
+	},
+	"StaticRoutesConfig": ubx.FieldSpec{
+		WireName: "static_routes_config",
+		Kind:     "object",
+		Fields:   VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutes_StaticRoutesConfigFields,
+	},
+}
 
 var VirtualwanBgpConnection_Properties_RoutingConfigurationFields = ubx.FieldMap{
-		"AssociatedRouteTable": ubx.FieldSpec{
-			WireName: "associated_route_table",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
-		},
-		"InboundRouteMap": ubx.FieldSpec{
-			WireName: "inbound_route_map",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
-		},
-		"OutboundRouteMap": ubx.FieldSpec{
-			WireName: "outbound_route_map",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
-		},
-		"PropagatedRouteTables": ubx.FieldSpec{
-			WireName: "propagated_route_tables",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields,
-		},
-		"VnetRoutes": ubx.FieldSpec{
-			WireName: "vnet_routes",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutesFields,
-		},
-	}
+	"AssociatedRouteTable": ubx.FieldSpec{
+		WireName: "associated_route_table",
+		Kind:     "object",
+		Fields:   VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
+	},
+	"InboundRouteMap": ubx.FieldSpec{
+		WireName: "inbound_route_map",
+		Kind:     "object",
+		Fields:   VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
+	},
+	"OutboundRouteMap": ubx.FieldSpec{
+		WireName: "outbound_route_map",
+		Kind:     "object",
+		Fields:   VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
+	},
+	"PropagatedRouteTables": ubx.FieldSpec{
+		WireName: "propagated_route_tables",
+		Kind:     "object",
+		Fields:   VirtualwanBgpConnection_Properties_RoutingConfiguration_PropagatedRouteTablesFields,
+	},
+	"VnetRoutes": ubx.FieldSpec{
+		WireName: "vnet_routes",
+		Kind:     "object",
+		Fields:   VirtualwanBgpConnection_Properties_RoutingConfiguration_VnetRoutesFields,
+	},
+}
 
 var VirtualwanBgpConnection_PropertiesFields = ubx.FieldMap{
-		"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
-		"HubVirtualNetworkConnection": ubx.FieldSpec{
-			WireName: "hub_virtual_network_connection",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
-		},
-		"PeerAsn": ubx.FieldSpec{WireName: "peer_asn"},
-		"PeerIp": ubx.FieldSpec{WireName: "peer_ip"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoutingConfiguration": ubx.FieldSpec{
-			WireName: "routing_configuration",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_Properties_RoutingConfigurationFields,
-		},
-	}
+	"ConnectionState": ubx.FieldSpec{WireName: "connection_state"},
+	"HubVirtualNetworkConnection": ubx.FieldSpec{
+		WireName: "hub_virtual_network_connection",
+		Kind:     "object",
+		Fields:   VirtualwanBgpConnection_Properties_HubVirtualNetworkConnectionFields,
+	},
+	"PeerAsn":           ubx.FieldSpec{WireName: "peer_asn"},
+	"PeerIp":            ubx.FieldSpec{WireName: "peer_ip"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoutingConfiguration": ubx.FieldSpec{
+		WireName: "routing_configuration",
+		Kind:     "object",
+		Fields:   VirtualwanBgpConnection_Properties_RoutingConfigurationFields,
+	},
+}
 
 type VirtualwanBgpConnectionConfig struct {
 	// Name of the resource.
@@ -179,8 +179,8 @@ var VirtualwanBgpConnection = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanBgpConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanBgpConnection_PropertiesFields,
 		},
 	},
 }

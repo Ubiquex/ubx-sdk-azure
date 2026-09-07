@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimemailtemplatesEmailTemplateContractList_Value_Properties_Parameters struct {
 	Description any
-	Name any
-	Title any
+	Name        any
+	Title       any
 }
 
 type ApimemailtemplatesEmailTemplateContractList_Value_Properties struct {
-	Body any
+	Body        any
 	Description any
-	IsDefault any
-	Parameters any
-	Subject any
-	Title any
+	IsDefault   any
+	Parameters  any
+	Subject     any
+	Title       any
 }
 
 type ApimemailtemplatesEmailTemplateContractList_Value struct {
@@ -36,6 +36,5 @@ type ApimemailtemplatesEmailTemplateContractListAttrs struct {
 
 var ApimemailtemplatesEmailTemplateContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimemailtemplates_email_template_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

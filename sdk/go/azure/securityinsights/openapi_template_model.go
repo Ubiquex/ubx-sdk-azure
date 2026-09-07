@@ -115,98 +115,97 @@ type OpenapiTemplateModel_Properties struct {
 }
 
 var OpenapiTemplateModel_Properties_AuthorFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Link": ubx.FieldSpec{WireName: "link"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Email": ubx.FieldSpec{WireName: "email"},
+	"Link":  ubx.FieldSpec{WireName: "link"},
+	"Name":  ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiTemplateModel_Properties_CategoriesFields = ubx.FieldMap{
-		"Domains": ubx.FieldSpec{WireName: "domains"},
-		"Verticals": ubx.FieldSpec{WireName: "verticals"},
-	}
+	"Domains":   ubx.FieldSpec{WireName: "domains"},
+	"Verticals": ubx.FieldSpec{WireName: "verticals"},
+}
 
-var OpenapiTemplateModel_Properties_DependantTemplatesFields = ubx.FieldMap{
-	}
+var OpenapiTemplateModel_Properties_DependantTemplatesFields = ubx.FieldMap{}
 
 var OpenapiTemplateModel_Properties_DependenciesFields = ubx.FieldMap{
-		"ContentId": ubx.FieldSpec{WireName: "content_id"},
-		"Criteria": ubx.FieldSpec{
-			WireName: "criteria",
-			Kind: "list",
-			Fields: OpenapiTemplateModel_Properties_DependantTemplatesFields,
-		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Operator": ubx.FieldSpec{WireName: "operator"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ContentId": ubx.FieldSpec{WireName: "content_id"},
+	"Criteria": ubx.FieldSpec{
+		WireName: "criteria",
+		Kind:     "list",
+		Fields:   OpenapiTemplateModel_Properties_DependantTemplatesFields,
+	},
+	"Kind":     ubx.FieldSpec{WireName: "kind"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Operator": ubx.FieldSpec{WireName: "operator"},
+	"Version":  ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiTemplateModel_Properties_SourceFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SourceId": ubx.FieldSpec{WireName: "source_id"},
-	}
+	"Kind":     ubx.FieldSpec{WireName: "kind"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"SourceId": ubx.FieldSpec{WireName: "source_id"},
+}
 
 var OpenapiTemplateModel_Properties_SupportFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Link": ubx.FieldSpec{WireName: "link"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Email": ubx.FieldSpec{WireName: "email"},
+	"Link":  ubx.FieldSpec{WireName: "link"},
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Tier":  ubx.FieldSpec{WireName: "tier"},
+}
 
 var OpenapiTemplateModel_PropertiesFields = ubx.FieldMap{
-		"Author": ubx.FieldSpec{
-			WireName: "author",
-			Kind: "object",
-			Fields: OpenapiTemplateModel_Properties_AuthorFields,
-		},
-		"Categories": ubx.FieldSpec{
-			WireName: "categories",
-			Kind: "object",
-			Fields: OpenapiTemplateModel_Properties_CategoriesFields,
-		},
-		"ContentId": ubx.FieldSpec{WireName: "content_id"},
-		"ContentKind": ubx.FieldSpec{WireName: "content_kind"},
-		"ContentProductId": ubx.FieldSpec{WireName: "content_product_id"},
-		"ContentSchemaVersion": ubx.FieldSpec{WireName: "content_schema_version"},
-		"CustomVersion": ubx.FieldSpec{WireName: "custom_version"},
-		"DependantTemplates": ubx.FieldSpec{
-			WireName: "dependant_templates",
-			Kind: "list",
-			Fields: OpenapiTemplateModel_Properties_DependantTemplatesFields,
-		},
-		"Dependencies": ubx.FieldSpec{
-			WireName: "dependencies",
-			Kind: "object",
-			Fields: OpenapiTemplateModel_Properties_DependenciesFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"FirstPublishDate": ubx.FieldSpec{WireName: "first_publish_date"},
-		"Icon": ubx.FieldSpec{WireName: "icon"},
-		"IsDeprecated": ubx.FieldSpec{WireName: "is_deprecated"},
-		"LastPublishDate": ubx.FieldSpec{WireName: "last_publish_date"},
-		"MainTemplate": ubx.FieldSpec{WireName: "main_template"},
-		"PackageId": ubx.FieldSpec{WireName: "package_id"},
-		"PackageKind": ubx.FieldSpec{WireName: "package_kind"},
-		"PackageName": ubx.FieldSpec{WireName: "package_name"},
-		"PackageVersion": ubx.FieldSpec{WireName: "package_version"},
-		"PreviewImages": ubx.FieldSpec{WireName: "preview_images"},
-		"PreviewImagesDark": ubx.FieldSpec{WireName: "preview_images_dark"},
-		"Providers": ubx.FieldSpec{WireName: "providers"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: OpenapiTemplateModel_Properties_SourceFields,
-		},
-		"Support": ubx.FieldSpec{
-			WireName: "support",
-			Kind: "object",
-			Fields: OpenapiTemplateModel_Properties_SupportFields,
-		},
-		"ThreatAnalysisTactics": ubx.FieldSpec{WireName: "threat_analysis_tactics"},
-		"ThreatAnalysisTechniques": ubx.FieldSpec{WireName: "threat_analysis_techniques"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Author": ubx.FieldSpec{
+		WireName: "author",
+		Kind:     "object",
+		Fields:   OpenapiTemplateModel_Properties_AuthorFields,
+	},
+	"Categories": ubx.FieldSpec{
+		WireName: "categories",
+		Kind:     "object",
+		Fields:   OpenapiTemplateModel_Properties_CategoriesFields,
+	},
+	"ContentId":            ubx.FieldSpec{WireName: "content_id"},
+	"ContentKind":          ubx.FieldSpec{WireName: "content_kind"},
+	"ContentProductId":     ubx.FieldSpec{WireName: "content_product_id"},
+	"ContentSchemaVersion": ubx.FieldSpec{WireName: "content_schema_version"},
+	"CustomVersion":        ubx.FieldSpec{WireName: "custom_version"},
+	"DependantTemplates": ubx.FieldSpec{
+		WireName: "dependant_templates",
+		Kind:     "list",
+		Fields:   OpenapiTemplateModel_Properties_DependantTemplatesFields,
+	},
+	"Dependencies": ubx.FieldSpec{
+		WireName: "dependencies",
+		Kind:     "object",
+		Fields:   OpenapiTemplateModel_Properties_DependenciesFields,
+	},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"FirstPublishDate":  ubx.FieldSpec{WireName: "first_publish_date"},
+	"Icon":              ubx.FieldSpec{WireName: "icon"},
+	"IsDeprecated":      ubx.FieldSpec{WireName: "is_deprecated"},
+	"LastPublishDate":   ubx.FieldSpec{WireName: "last_publish_date"},
+	"MainTemplate":      ubx.FieldSpec{WireName: "main_template"},
+	"PackageId":         ubx.FieldSpec{WireName: "package_id"},
+	"PackageKind":       ubx.FieldSpec{WireName: "package_kind"},
+	"PackageName":       ubx.FieldSpec{WireName: "package_name"},
+	"PackageVersion":    ubx.FieldSpec{WireName: "package_version"},
+	"PreviewImages":     ubx.FieldSpec{WireName: "preview_images"},
+	"PreviewImagesDark": ubx.FieldSpec{WireName: "preview_images_dark"},
+	"Providers":         ubx.FieldSpec{WireName: "providers"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   OpenapiTemplateModel_Properties_SourceFields,
+	},
+	"Support": ubx.FieldSpec{
+		WireName: "support",
+		Kind:     "object",
+		Fields:   OpenapiTemplateModel_Properties_SupportFields,
+	},
+	"ThreatAnalysisTactics":    ubx.FieldSpec{WireName: "threat_analysis_tactics"},
+	"ThreatAnalysisTechniques": ubx.FieldSpec{WireName: "threat_analysis_techniques"},
+	"Version":                  ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiTemplateModelConfig struct {
 	// Etag of the azure resource
@@ -228,8 +227,8 @@ var OpenapiTemplateModel = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiTemplateModel_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiTemplateModel_PropertiesFields,
 		},
 	},
 }

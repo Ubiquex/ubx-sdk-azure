@@ -32,12 +32,12 @@ type NetworkmanagerSecurityAdminConfiguration_SystemData struct {
 }
 
 var NetworkmanagerSecurityAdminConfiguration_PropertiesFields = ubx.FieldMap{
-		"ApplyOnNetworkIntentPolicyBasedServices": ubx.FieldSpec{WireName: "apply_on_network_intent_policy_based_services"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"NetworkGroupAddressSpaceAggregationOption": ubx.FieldSpec{WireName: "network_group_address_space_aggregation_option"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"ApplyOnNetworkIntentPolicyBasedServices": ubx.FieldSpec{WireName: "apply_on_network_intent_policy_based_services"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"NetworkGroupAddressSpaceAggregationOption": ubx.FieldSpec{WireName: "network_group_address_space_aggregation_option"},
+	"ProvisioningState":                         ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":                              ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkmanagerSecurityAdminConfigurationConfig struct {
 	// Defines the security admin configuration properties.
@@ -64,8 +64,8 @@ var NetworkmanagerSecurityAdminConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerSecurityAdminConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerSecurityAdminConfiguration_PropertiesFields,
 		},
 	},
 }

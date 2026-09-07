@@ -4,7 +4,7 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type Account_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -60,16 +60,16 @@ type Account_Properties_ApiProperties struct {
 
 type Account_Properties_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path any
+	Path   any
 }
 
 type Account_Properties_CallRateLimit_Rules struct {
-	Count any
+	Count                    any
 	DynamicThrottlingEnabled any
-	Key any
-	MatchPatterns any
-	MinCount any
-	RenewalPeriod any
+	Key                      any
+	MatchPatterns            any
+	MinCount                 any
+	RenewalPeriod            any
 }
 
 type Account_Properties_CallRateLimit struct {
@@ -77,16 +77,16 @@ type Account_Properties_CallRateLimit struct {
 	Count any
 	// The renewal period in seconds of Call Rate Limit.
 	RenewalPeriod any
-	Rules any
+	Rules         any
 }
 
 type Account_Properties_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type Account_Properties_CommitmentPlanAssociations struct {
-	CommitmentPlanId any
+	CommitmentPlanId       any
 	CommitmentPlanLocation any
 }
 
@@ -109,8 +109,8 @@ type Account_Properties_Encryption struct {
 
 type Account_Properties_Locations_Regions struct {
 	Customsubdomain any
-	Name any
-	Value any
+	Name            any
+	Value           any
 }
 
 type Account_Properties_Locations struct {
@@ -124,9 +124,9 @@ type Account_Properties_NetworkAcls_IpRules struct {
 }
 
 type Account_Properties_NetworkAcls_VirtualNetworkRules struct {
-	Id any
+	Id                               any
 	IgnoreMissingVnetServiceEndpoint any
-	State any
+	State                            any
 }
 
 type Account_Properties_NetworkAcls struct {
@@ -141,8 +141,8 @@ type Account_Properties_NetworkAcls struct {
 }
 
 type Account_Properties_NetworkInjections struct {
-	Scenario any
-	SubnetArmId any
+	Scenario                   any
+	SubnetArmId                any
 	UseMicrosoftManagedNetwork any
 }
 
@@ -152,20 +152,20 @@ type Account_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint st
 
 type Account_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Account_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Account_Properties_PrivateEndpointConnections struct {
-	Etag any
-	Location any
+	Etag       any
+	Location   any
 	Properties any
 }
 
@@ -190,7 +190,7 @@ type Account_Properties struct {
 	AbusePenalty any
 	// Specifies whether this resource support project management as child resources, used as containers for access management, data isolation and cost in AI Foundry.
 	AllowProjectManagement any
-	AllowedFqdnList any
+	AllowedFqdnList        any
 	// The user owned AML account for Cognitive Services account.
 	AmlWorkspace any
 	// The api properties for special APIs.
@@ -210,7 +210,7 @@ type Account_Properties struct {
 	// Specifies the project, by project name, that is targeted when data plane endpoints are called without a project parameter.
 	DefaultProject any
 	// The deletion date, only available for deleted account.
-	DeletionDate any
+	DeletionDate     any
 	DisableLocalAuth any
 	// The flag to enable dynamic throttling.
 	DynamicThrottlingEnabled any
@@ -229,7 +229,7 @@ type Account_Properties struct {
 	// Resource migration token.
 	MigrationToken any
 	// A set of rules governing the network accessibility.
-	NetworkAcls any
+	NetworkAcls       any
 	NetworkInjections any
 	// The private endpoint connection associated with the Cognitive Services account.
 	PrivateEndpointConnections any
@@ -237,10 +237,10 @@ type Account_Properties struct {
 	ProvisioningState any
 	// Whether or not public endpoint access is allowed for this account.
 	PublicNetworkAccess any
-	QuotaLimit any
+	QuotaLimit          any
 	// Cognitive Services Rai Monitor Config.
-	RaiMonitorConfig any
-	Restore any
+	RaiMonitorConfig              any
+	Restore                       any
 	RestrictOutboundNetworkAccess any
 	// The scheduled purge date, only available for deleted account.
 	ScheduledPurgeDate any

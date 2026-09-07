@@ -39,34 +39,34 @@ type ManagedinstancedtcsManagedInstanceDtc_Properties struct {
 }
 
 var ManagedinstancedtcsManagedInstanceDtc_Properties_SecuritySettings_TransactionManagerCommunicationSettingsFields = ubx.FieldMap{
-		"AllowInboundEnabled": ubx.FieldSpec{WireName: "allow_inbound_enabled"},
-		"AllowOutboundEnabled": ubx.FieldSpec{WireName: "allow_outbound_enabled"},
-		"Authentication": ubx.FieldSpec{WireName: "authentication"},
-	}
+	"AllowInboundEnabled":  ubx.FieldSpec{WireName: "allow_inbound_enabled"},
+	"AllowOutboundEnabled": ubx.FieldSpec{WireName: "allow_outbound_enabled"},
+	"Authentication":       ubx.FieldSpec{WireName: "authentication"},
+}
 
 var ManagedinstancedtcsManagedInstanceDtc_Properties_SecuritySettingsFields = ubx.FieldMap{
-		"SnaLu6point2TransactionsEnabled": ubx.FieldSpec{WireName: "sna_lu6point2_transactions_enabled"},
-		"TransactionManagerCommunicationSettings": ubx.FieldSpec{
-			WireName: "transaction_manager_communication_settings",
-			Kind: "object",
-			Fields: ManagedinstancedtcsManagedInstanceDtc_Properties_SecuritySettings_TransactionManagerCommunicationSettingsFields,
-		},
-		"XaTransactionsDefaultTimeout": ubx.FieldSpec{WireName: "xa_transactions_default_timeout"},
-		"XaTransactionsEnabled": ubx.FieldSpec{WireName: "xa_transactions_enabled"},
-		"XaTransactionsMaximumTimeout": ubx.FieldSpec{WireName: "xa_transactions_maximum_timeout"},
-	}
+	"SnaLu6point2TransactionsEnabled": ubx.FieldSpec{WireName: "sna_lu6point2_transactions_enabled"},
+	"TransactionManagerCommunicationSettings": ubx.FieldSpec{
+		WireName: "transaction_manager_communication_settings",
+		Kind:     "object",
+		Fields:   ManagedinstancedtcsManagedInstanceDtc_Properties_SecuritySettings_TransactionManagerCommunicationSettingsFields,
+	},
+	"XaTransactionsDefaultTimeout": ubx.FieldSpec{WireName: "xa_transactions_default_timeout"},
+	"XaTransactionsEnabled":        ubx.FieldSpec{WireName: "xa_transactions_enabled"},
+	"XaTransactionsMaximumTimeout": ubx.FieldSpec{WireName: "xa_transactions_maximum_timeout"},
+}
 
 var ManagedinstancedtcsManagedInstanceDtc_PropertiesFields = ubx.FieldMap{
-		"DtcEnabled": ubx.FieldSpec{WireName: "dtc_enabled"},
-		"DtcHostNameDnsSuffix": ubx.FieldSpec{WireName: "dtc_host_name_dns_suffix"},
-		"ExternalDnsSuffixSearchList": ubx.FieldSpec{WireName: "external_dns_suffix_search_list"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SecuritySettings": ubx.FieldSpec{
-			WireName: "security_settings",
-			Kind: "object",
-			Fields: ManagedinstancedtcsManagedInstanceDtc_Properties_SecuritySettingsFields,
-		},
-	}
+	"DtcEnabled":                  ubx.FieldSpec{WireName: "dtc_enabled"},
+	"DtcHostNameDnsSuffix":        ubx.FieldSpec{WireName: "dtc_host_name_dns_suffix"},
+	"ExternalDnsSuffixSearchList": ubx.FieldSpec{WireName: "external_dns_suffix_search_list"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"SecuritySettings": ubx.FieldSpec{
+		WireName: "security_settings",
+		Kind:     "object",
+		Fields:   ManagedinstancedtcsManagedInstanceDtc_Properties_SecuritySettingsFields,
+	},
+}
 
 type ManagedinstancedtcsManagedInstanceDtcConfig struct {
 	// The properties of managed instance DTC.
@@ -83,8 +83,8 @@ var ManagedinstancedtcsManagedInstanceDtc = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstancedtcsManagedInstanceDtc_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstancedtcsManagedInstanceDtc_PropertiesFields,
 		},
 	},
 }

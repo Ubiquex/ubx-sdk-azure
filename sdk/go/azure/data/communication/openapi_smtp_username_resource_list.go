@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSmtpUsernameResourceList_Value_Properties struct {
 	EntraApplicationId any
-	TenantId any
-	Username any
+	TenantId           any
+	Username           any
 }
 
 type OpenapiSmtpUsernameResourceList_Value struct {

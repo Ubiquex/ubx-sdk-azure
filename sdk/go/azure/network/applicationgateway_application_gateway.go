@@ -4912,6377 +4912,6376 @@ type ApplicationgatewayApplicationGateway_Properties struct {
 }
 
 var ApplicationgatewayApplicationGateway_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var ApplicationgatewayApplicationGateway_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: ApplicationgatewayApplicationGateway_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   ApplicationgatewayApplicationGateway_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_AuthenticationCertificates_PropertiesFields = ubx.FieldMap{
-		"Data": ubx.FieldSpec{WireName: "data"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Data":              ubx.FieldSpec{WireName: "data"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_AuthenticationCertificatesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_AuthenticationCertificates_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_AuthenticationCertificates_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_AutoscaleConfigurationFields = ubx.FieldMap{
-		"MaxCapacity": ubx.FieldSpec{WireName: "max_capacity"},
-		"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
-	}
+	"MaxCapacity": ubx.FieldSpec{WireName: "max_capacity"},
+	"MinCapacity": ubx.FieldSpec{WireName: "min_capacity"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendAddressesFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-	}
+	"Fqdn":      ubx.FieldSpec{WireName: "fqdn"},
+	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+}
 
-var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields = ubx.FieldMap{
-	}
+var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields = ubx.FieldMap{}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendAddresses": ubx.FieldSpec{
-			WireName: "backend_addresses",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendAddressesFields,
-		},
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddresses": ubx.FieldSpec{
+		WireName: "backend_addresses",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendAddressesFields,
+	},
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroups_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMappingFields = ubx.FieldMap{
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"FrontendPort": ubx.FieldSpec{WireName: "frontend_port"},
-		"InboundNatRuleName": ubx.FieldSpec{WireName: "inbound_nat_rule_name"},
-	}
+	"BackendPort":        ubx.FieldSpec{WireName: "backend_port"},
+	"FrontendPort":       ubx.FieldSpec{WireName: "frontend_port"},
+	"InboundNatRuleName": ubx.FieldSpec{WireName: "inbound_nat_rule_name"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_PropertiesFields = ubx.FieldMap{
-		"AdminState": ubx.FieldSpec{WireName: "admin_state"},
-		"InboundNatRulesPortMapping": ubx.FieldSpec{
-			WireName: "inbound_nat_rules_port_mapping",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMappingFields,
-		},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"LoadBalancerFrontendIpconfiguration": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"AdminState": ubx.FieldSpec{WireName: "admin_state"},
+	"InboundNatRulesPortMapping": ubx.FieldSpec{
+		WireName: "inbound_nat_rules_port_mapping",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_Properties_InboundNatRulesPortMappingFields,
+	},
+	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+	"LoadBalancerFrontendIpconfiguration": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddresses_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields = ubx.FieldMap{
-		"Identifier": ubx.FieldSpec{WireName: "identifier"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Identifier": ubx.FieldSpec{WireName: "identifier"},
+	"Port":       ubx.FieldSpec{WireName: "port"},
+	"Protocol":   ubx.FieldSpec{WireName: "protocol"},
+	"Type":       ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"DrainPeriodInSeconds": ubx.FieldSpec{WireName: "drain_period_in_seconds"},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancerBackendAddresses": ubx.FieldSpec{
-			WireName: "load_balancer_backend_addresses",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"OutboundRule": ubx.FieldSpec{
-			WireName: "outbound_rule",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SyncMode": ubx.FieldSpec{WireName: "sync_mode"},
-		"TunnelInterfaces": ubx.FieldSpec{
-			WireName: "tunnel_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields,
-		},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"DrainPeriodInSeconds": ubx.FieldSpec{WireName: "drain_period_in_seconds"},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancerBackendAddresses": ubx.FieldSpec{
+		WireName: "load_balancer_backend_addresses",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"OutboundRule": ubx.FieldSpec{
+		WireName: "outbound_rule",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SyncMode":          ubx.FieldSpec{WireName: "sync_mode"},
+	"TunnelInterfaces": ubx.FieldSpec{
+		WireName: "tunnel_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields,
+	},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields = ubx.FieldMap{
-		"BackendAddressPool": ubx.FieldSpec{
-			WireName: "backend_address_pool",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"BackendIpconfiguration": ubx.FieldSpec{WireName: "backend_ipconfiguration"},
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"EnableFloatingIp": ubx.FieldSpec{WireName: "enable_floating_ip"},
-		"EnableTcpReset": ubx.FieldSpec{WireName: "enable_tcp_reset"},
-		"FrontendIpconfiguration": ubx.FieldSpec{
-			WireName: "frontend_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"FrontendPort": ubx.FieldSpec{WireName: "frontend_port"},
-		"FrontendPortRangeEnd": ubx.FieldSpec{WireName: "frontend_port_range_end"},
-		"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddressPool": ubx.FieldSpec{
+		WireName: "backend_address_pool",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"BackendIpconfiguration": ubx.FieldSpec{WireName: "backend_ipconfiguration"},
+	"BackendPort":            ubx.FieldSpec{WireName: "backend_port"},
+	"EnableFloatingIp":       ubx.FieldSpec{WireName: "enable_floating_ip"},
+	"EnableTcpReset":         ubx.FieldSpec{WireName: "enable_tcp_reset"},
+	"FrontendIpconfiguration": ubx.FieldSpec{
+		WireName: "frontend_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"FrontendPort":           ubx.FieldSpec{WireName: "frontend_port"},
+	"FrontendPortRangeEnd":   ubx.FieldSpec{WireName: "frontend_port_range_end"},
+	"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
+	"IdleTimeoutInMinutes":   ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"Protocol":               ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields = ubx.FieldMap{
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"RequiredMemberName": ubx.FieldSpec{WireName: "required_member_name"},
-	}
+	"Fqdns":              ubx.FieldSpec{WireName: "fqdns"},
+	"GroupId":            ubx.FieldSpec{WireName: "group_id"},
+	"RequiredMemberName": ubx.FieldSpec{WireName: "required_member_name"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields = ubx.FieldMap{
-		"DdosCustomPolicy": ubx.FieldSpec{
-			WireName: "ddos_custom_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"DdosProtectionPlan": ubx.FieldSpec{
-			WireName: "ddos_protection_plan",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ProtectionMode": ubx.FieldSpec{WireName: "protection_mode"},
-	}
+	"DdosCustomPolicy": ubx.FieldSpec{
+		WireName: "ddos_custom_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"DdosProtectionPlan": ubx.FieldSpec{
+		WireName: "ddos_protection_plan",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ProtectionMode": ubx.FieldSpec{WireName: "protection_mode"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields = ubx.FieldMap{
-		"DomainNameLabel": ubx.FieldSpec{WireName: "domain_name_label"},
-		"DomainNameLabelScope": ubx.FieldSpec{WireName: "domain_name_label_scope"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"ReverseFqdn": ubx.FieldSpec{WireName: "reverse_fqdn"},
-	}
+	"DomainNameLabel":      ubx.FieldSpec{WireName: "domain_name_label"},
+	"DomainNameLabelScope": ubx.FieldSpec{WireName: "domain_name_label_scope"},
+	"Fqdn":                 ubx.FieldSpec{WireName: "fqdn"},
+	"ReverseFqdn":          ubx.FieldSpec{WireName: "reverse_fqdn"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_PropertiesFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{WireName: "actions"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-	}
+	"Actions":           ubx.FieldSpec{WireName: "actions"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_Delegations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields = ubx.FieldMap{
-		"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
-		"NumberOfIpAddresses": ubx.FieldSpec{WireName: "number_of_ip_addresses"},
-		"Pool": ubx.FieldSpec{
-			WireName: "pool",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"AllocatedAddressPrefixes": ubx.FieldSpec{WireName: "allocated_address_prefixes"},
+	"NumberOfIpAddresses":      ubx.FieldSpec{WireName: "number_of_ip_addresses"},
+	"Pool": ubx.FieldSpec{
+		WireName: "pool",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_PropertiesFields = ubx.FieldMap{
-		"Access": ubx.FieldSpec{WireName: "access"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DestinationAddressPrefix": ubx.FieldSpec{WireName: "destination_address_prefix"},
-		"DestinationAddressPrefixes": ubx.FieldSpec{WireName: "destination_address_prefixes"},
-		"DestinationApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "destination_application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"DestinationPortRange": ubx.FieldSpec{WireName: "destination_port_range"},
-		"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
-		"Direction": ubx.FieldSpec{WireName: "direction"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SourceAddressPrefix": ubx.FieldSpec{WireName: "source_address_prefix"},
-		"SourceAddressPrefixes": ubx.FieldSpec{WireName: "source_address_prefixes"},
-		"SourceApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "source_application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"SourcePortRange": ubx.FieldSpec{WireName: "source_port_range"},
-		"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
-	}
+	"Access":                     ubx.FieldSpec{WireName: "access"},
+	"Description":                ubx.FieldSpec{WireName: "description"},
+	"DestinationAddressPrefix":   ubx.FieldSpec{WireName: "destination_address_prefix"},
+	"DestinationAddressPrefixes": ubx.FieldSpec{WireName: "destination_address_prefixes"},
+	"DestinationApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "destination_application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"DestinationPortRange":  ubx.FieldSpec{WireName: "destination_port_range"},
+	"DestinationPortRanges": ubx.FieldSpec{WireName: "destination_port_ranges"},
+	"Direction":             ubx.FieldSpec{WireName: "direction"},
+	"Priority":              ubx.FieldSpec{WireName: "priority"},
+	"Protocol":              ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceAddressPrefix":   ubx.FieldSpec{WireName: "source_address_prefix"},
+	"SourceAddressPrefixes": ubx.FieldSpec{WireName: "source_address_prefixes"},
+	"SourceApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "source_application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"SourcePortRange":  ubx.FieldSpec{WireName: "source_port_range"},
+	"SourcePortRanges": ubx.FieldSpec{WireName: "source_port_ranges"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRules_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"TrafficAnalyticsInterval": ubx.FieldSpec{WireName: "traffic_analytics_interval"},
-		"WorkspaceId": ubx.FieldSpec{WireName: "workspace_id"},
-		"WorkspaceRegion": ubx.FieldSpec{WireName: "workspace_region"},
-		"WorkspaceResourceId": ubx.FieldSpec{WireName: "workspace_resource_id"},
-	}
+	"Enabled":                  ubx.FieldSpec{WireName: "enabled"},
+	"TrafficAnalyticsInterval": ubx.FieldSpec{WireName: "traffic_analytics_interval"},
+	"WorkspaceId":              ubx.FieldSpec{WireName: "workspace_id"},
+	"WorkspaceRegion":          ubx.FieldSpec{WireName: "workspace_region"},
+	"WorkspaceResourceId":      ubx.FieldSpec{WireName: "workspace_resource_id"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfigurationFields = ubx.FieldMap{
-		"NetworkWatcherFlowAnalyticsConfiguration": ubx.FieldSpec{
-			WireName: "network_watcher_flow_analytics_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields,
-		},
-	}
+	"NetworkWatcherFlowAnalyticsConfiguration": ubx.FieldSpec{
+		WireName: "network_watcher_flow_analytics_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfiguration_NetworkWatcherFlowAnalyticsConfigurationFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FormatFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Type":    ubx.FieldSpec{WireName: "type"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicyFields = ubx.FieldMap{
-		"Days": ubx.FieldSpec{WireName: "days"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Days":    ubx.FieldSpec{WireName: "days"},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_PropertiesFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"EnabledFilteringCriteria": ubx.FieldSpec{WireName: "enabled_filtering_criteria"},
-		"FlowAnalyticsConfiguration": ubx.FieldSpec{
-			WireName: "flow_analytics_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfigurationFields,
-		},
-		"Format": ubx.FieldSpec{
-			WireName: "format",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FormatFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RecordTypes": ubx.FieldSpec{WireName: "record_types"},
-		"RetentionPolicy": ubx.FieldSpec{
-			WireName: "retention_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicyFields,
-		},
-		"StorageId": ubx.FieldSpec{WireName: "storage_id"},
-		"TargetResourceGuid": ubx.FieldSpec{WireName: "target_resource_guid"},
-		"TargetResourceId": ubx.FieldSpec{WireName: "target_resource_id"},
-	}
+	"Enabled":                  ubx.FieldSpec{WireName: "enabled"},
+	"EnabledFilteringCriteria": ubx.FieldSpec{WireName: "enabled_filtering_criteria"},
+	"FlowAnalyticsConfiguration": ubx.FieldSpec{
+		WireName: "flow_analytics_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FlowAnalyticsConfigurationFields,
+	},
+	"Format": ubx.FieldSpec{
+		WireName: "format",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_FormatFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RecordTypes":       ubx.FieldSpec{WireName: "record_types"},
+	"RetentionPolicy": ubx.FieldSpec{
+		WireName: "retention_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_Properties_RetentionPolicyFields,
+	},
+	"StorageId":          ubx.FieldSpec{WireName: "storage_id"},
+	"TargetResourceGuid": ubx.FieldSpec{WireName: "target_resource_guid"},
+	"TargetResourceId":   ubx.FieldSpec{WireName: "target_resource_id"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Identity": ubx.FieldSpec{
-			WireName: "identity",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_IdentityFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Identity": ubx.FieldSpec{
+		WireName: "identity",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_IdentityFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogs_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields = ubx.FieldMap{
-		"AppliedDnsServers": ubx.FieldSpec{WireName: "applied_dns_servers"},
-		"DnsServers": ubx.FieldSpec{WireName: "dns_servers"},
-		"InternalDnsNameLabel": ubx.FieldSpec{WireName: "internal_dns_name_label"},
-		"InternalDomainNameSuffix": ubx.FieldSpec{WireName: "internal_domain_name_suffix"},
-		"InternalFqdn": ubx.FieldSpec{WireName: "internal_fqdn"},
-	}
+	"AppliedDnsServers":        ubx.FieldSpec{WireName: "applied_dns_servers"},
+	"DnsServers":               ubx.FieldSpec{WireName: "dns_servers"},
+	"InternalDnsNameLabel":     ubx.FieldSpec{WireName: "internal_dns_name_label"},
+	"InternalDomainNameSuffix": ubx.FieldSpec{WireName: "internal_domain_name_suffix"},
+	"InternalFqdn":             ubx.FieldSpec{WireName: "internal_fqdn"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-	}
+	"Etag":       ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{WireName: "properties"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
-	}
+	"Fqdn":        ubx.FieldSpec{WireName: "fqdn"},
+	"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"MemberName": ubx.FieldSpec{WireName: "member_name"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-	}
+	"GroupId":          ubx.FieldSpec{WireName: "group_id"},
+	"MemberName":       ubx.FieldSpec{WireName: "member_name"},
+	"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"PrivateLinkServiceId": ubx.FieldSpec{WireName: "private_link_service_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"PrivateLinkServiceId": ubx.FieldSpec{WireName: "private_link_service_id"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestMessage":       ubx.FieldSpec{WireName: "request_message"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields = ubx.FieldMap{
-		"Subscriptions": ubx.FieldSpec{WireName: "subscriptions"},
-	}
+	"Subscriptions": ubx.FieldSpec{WireName: "subscriptions"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"Primary":                   ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":                    ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields = ubx.FieldMap{
-		"DdosCustomPolicy": ubx.FieldSpec{
-			WireName: "ddos_custom_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"DdosCustomPolicy": ubx.FieldSpec{
+		WireName: "ddos_custom_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{WireName: "properties"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields,
-		},
-		"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"InboundNatPools": ubx.FieldSpec{
-			WireName: "inbound_nat_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields,
+	},
+	"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"InboundNatPools": ubx.FieldSpec{
+		WireName: "inbound_nat_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_PropertiesFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_PropertiesFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{WireName: "destination_network_interface_ipconfiguration"},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{WireName: "destination_network_interface_ipconfiguration"},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkTap": ubx.FieldSpec{
-			WireName: "virtual_network_tap",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkTap": ubx.FieldSpec{
+		WireName: "virtual_network_tap",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":           ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase":       ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
+	"NicType":              ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":              ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
-		"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
-		"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkIdentifier":          ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint":         ubx.FieldSpec{WireName: "private_endpoint"},
+	"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":     ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"NicType":         ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":         ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_PropertiesFields = ubx.FieldMap{
-		"Link": ubx.FieldSpec{WireName: "link"},
-		"LinkedResourceType": ubx.FieldSpec{WireName: "linked_resource_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Link":               ubx.FieldSpec{WireName: "link"},
+	"LinkedResourceType": ubx.FieldSpec{WireName: "linked_resource_type"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinks_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHopFields = ubx.FieldMap{
-		"NextHopIpAddresses": ubx.FieldSpec{WireName: "next_hop_ip_addresses"},
-	}
+	"NextHopIpAddresses": ubx.FieldSpec{WireName: "next_hop_ip_addresses"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"HasBgpOverride": ubx.FieldSpec{WireName: "has_bgp_override"},
-		"NextHop": ubx.FieldSpec{
-			WireName: "next_hop",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHopFields,
-		},
-		"NextHopIpAddress": ubx.FieldSpec{WireName: "next_hop_ip_address"},
-		"NextHopType": ubx.FieldSpec{WireName: "next_hop_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefix":  ubx.FieldSpec{WireName: "address_prefix"},
+	"HasBgpOverride": ubx.FieldSpec{WireName: "has_bgp_override"},
+	"NextHop": ubx.FieldSpec{
+		WireName: "next_hop",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_Properties_NextHopFields,
+	},
+	"NextHopIpAddress":  ubx.FieldSpec{WireName: "next_hop_ip_address"},
+	"NextHopType":       ubx.FieldSpec{WireName: "next_hop_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_Routes_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields = ubx.FieldMap{
-		"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
-		"DisablePeeringRoute": ubx.FieldSpec{WireName: "disable_peering_route"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
+	"DisablePeeringRoute":        ubx.FieldSpec{WireName: "disable_peering_route"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":               ubx.FieldSpec{WireName: "resource_guid"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_PropertiesFields = ubx.FieldMap{
-		"AllowDelete": ubx.FieldSpec{WireName: "allow_delete"},
-		"Link": ubx.FieldSpec{WireName: "link"},
-		"LinkedResourceType": ubx.FieldSpec{WireName: "linked_resource_type"},
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AllowDelete":        ubx.FieldSpec{WireName: "allow_delete"},
+	"Link":               ubx.FieldSpec{WireName: "link"},
+	"LinkedResourceType": ubx.FieldSpec{WireName: "linked_resource_type"},
+	"Locations":          ubx.FieldSpec{WireName: "locations"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinks_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Service": ubx.FieldSpec{WireName: "service"},
-		"ServiceResources": ubx.FieldSpec{WireName: "service_resources"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Service":           ubx.FieldSpec{WireName: "service"},
+	"ServiceResources":  ubx.FieldSpec{WireName: "service_resources"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitions_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields = ubx.FieldMap{
-		"ContextualServiceEndpointPolicies": ubx.FieldSpec{WireName: "contextual_service_endpoint_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServiceAlias": ubx.FieldSpec{WireName: "service_alias"},
-		"ServiceEndpointPolicyDefinitions": ubx.FieldSpec{
-			WireName: "service_endpoint_policy_definitions",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"ContextualServiceEndpointPolicies": ubx.FieldSpec{WireName: "contextual_service_endpoint_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":                      ubx.FieldSpec{WireName: "resource_guid"},
+	"ServiceAlias":                      ubx.FieldSpec{WireName: "service_alias"},
+	"ServiceEndpointPolicyDefinitions": ubx.FieldSpec{
+		WireName: "service_endpoint_policy_definitions",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields = ubx.FieldMap{
-		"Locations": ubx.FieldSpec{WireName: "locations"},
-		"NetworkIdentifier": ubx.FieldSpec{
-			WireName: "network_identifier",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Service": ubx.FieldSpec{WireName: "service"},
-	}
+	"Locations": ubx.FieldSpec{WireName: "locations"},
+	"NetworkIdentifier": ubx.FieldSpec{
+		WireName: "network_identifier",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Service":           ubx.FieldSpec{WireName: "service"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{WireName: "public_ipaddress"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress":           ubx.FieldSpec{WireName: "public_ipaddress"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields = ubx.FieldMap{
-		"FirstPartyServiceTagId": ubx.FieldSpec{WireName: "first_party_service_tag_id"},
-		"IpTagType": ubx.FieldSpec{WireName: "ip_tag_type"},
-		"Tag": ubx.FieldSpec{WireName: "tag"},
-	}
+	"FirstPartyServiceTagId": ubx.FieldSpec{WireName: "first_party_service_tag_id"},
+	"IpTagType":              ubx.FieldSpec{WireName: "ip_tag_type"},
+	"Tag":                    ubx.FieldSpec{WireName: "tag"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_PropertiesFields = ubx.FieldMap{
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"Nat64": ubx.FieldSpec{WireName: "nat64"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpAddresses": ubx.FieldSpec{
-			WireName: "public_ip_addresses",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"PublicIpAddressesV6": ubx.FieldSpec{
-			WireName: "public_ip_addresses_v6",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"PublicIpPrefixes": ubx.FieldSpec{
-			WireName: "public_ip_prefixes",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"PublicIpPrefixesV6": ubx.FieldSpec{
-			WireName: "public_ip_prefixes_v6",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SourceVirtualNetwork": ubx.FieldSpec{
-			WireName: "source_virtual_network",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"Nat64":                ubx.FieldSpec{WireName: "nat64"},
+	"ProvisioningState":    ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpAddresses": ubx.FieldSpec{
+		WireName: "public_ip_addresses",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"PublicIpAddressesV6": ubx.FieldSpec{
+		WireName: "public_ip_addresses_v6",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"PublicIpPrefixes": ubx.FieldSpec{
+		WireName: "public_ip_prefixes",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"PublicIpPrefixesV6": ubx.FieldSpec{
+		WireName: "public_ip_prefixes_v6",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SourceVirtualNetwork": ubx.FieldSpec{
+		WireName: "source_virtual_network",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGateway_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
+	"MigrationPhase":        ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ResourceGuid":           ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
+	"UpgradedToV2":           ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{WireName: "ip_configuration"},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration":      ubx.FieldSpec{WireName: "ip_configuration"},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
+	"MigrationPhase":        ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ResourceGuid":           ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
+	"UpgradedToV2":           ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{
-			WireName: "linked_public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{
-			WireName: "service_public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{
+		WireName: "linked_public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{
+		WireName: "service_public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields,
-		},
-		"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"InboundNatPools": ubx.FieldSpec{
-			WireName: "inbound_nat_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields,
+	},
+	"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"InboundNatPools": ubx.FieldSpec{
+		WireName: "inbound_nat_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_PropertiesFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_PropertiesFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{WireName: "destination_network_interface_ipconfiguration"},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{WireName: "destination_network_interface_ipconfiguration"},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkTap": ubx.FieldSpec{
-			WireName: "virtual_network_tap",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkTap": ubx.FieldSpec{
+		WireName: "virtual_network_tap",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":           ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase":       ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
+	"NicType":              ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":              ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":     ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"NicType":         ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":         ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpointsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkTap": ubx.FieldSpec{WireName: "virtual_network_tap"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkTap": ubx.FieldSpec{WireName: "virtual_network_tap"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":           ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase":       ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
+	"NicType":              ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":              ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":     ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"NicType":         ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":         ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{
-			WireName: "linked_public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{
-			WireName: "service_public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{
+		WireName: "linked_public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{
+		WireName: "service_public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfiles_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"Primary":                   ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":           ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase":       ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
+	"NicType":              ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":              ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":     ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"NicType":         ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":         ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{WireName: "private_endpoint"},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfacesFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpointsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields = ubx.FieldMap{
-		"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
-		"DisablePeeringRoute": ubx.FieldSpec{WireName: "disable_peering_route"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"Routes": ubx.FieldSpec{
-			WireName: "routes",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-	}
+	"DisableBgpRoutePropagation": ubx.FieldSpec{WireName: "disable_bgp_route_propagation"},
+	"DisablePeeringRoute":        ubx.FieldSpec{WireName: "disable_peering_route"},
+	"ProvisioningState":          ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":               ubx.FieldSpec{WireName: "resource_guid"},
+	"Routes": ubx.FieldSpec{
+		WireName: "routes",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTable_Properties_RoutesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTableFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTable_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields = ubx.FieldMap{
-		"ContextualServiceEndpointPolicies": ubx.FieldSpec{WireName: "contextual_service_endpoint_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServiceAlias": ubx.FieldSpec{WireName: "service_alias"},
-		"ServiceEndpointPolicyDefinitions": ubx.FieldSpec{
-			WireName: "service_endpoint_policy_definitions",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"ContextualServiceEndpointPolicies": ubx.FieldSpec{WireName: "contextual_service_endpoint_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":                      ubx.FieldSpec{WireName: "resource_guid"},
+	"ServiceAlias":                      ubx.FieldSpec{WireName: "service_alias"},
+	"ServiceEndpointPolicyDefinitions": ubx.FieldSpec{
+		WireName: "service_endpoint_policy_definitions",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_Properties_ServiceEndpointPolicyDefinitionsFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPolicies_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields,
-		},
-		"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"InboundNatPools": ubx.FieldSpec{
-			WireName: "inbound_nat_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields,
-		},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_SubnetFields,
-		},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields,
+	},
+	"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"InboundNatPools": ubx.FieldSpec{
+		WireName: "inbound_nat_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields,
+	},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_SubnetFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{WireName: "destination_network_interface_ipconfiguration"},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{WireName: "destination_network_interface_ipconfiguration"},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTapsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_SubnetFields,
-		},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTapsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_SubnetFields,
+	},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTapsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendAddresses": ubx.FieldSpec{
-			WireName: "backend_addresses",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendAddressesFields,
-		},
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddresses": ubx.FieldSpec{
+		WireName: "backend_addresses",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendAddressesFields,
+	},
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollection_Properties_ConnectionDrainingFields = ubx.FieldMap{
-		"DrainTimeoutInSec": ubx.FieldSpec{WireName: "drain_timeout_in_sec"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"DrainTimeoutInSec": ubx.FieldSpec{WireName: "drain_timeout_in_sec"},
+	"Enabled":           ubx.FieldSpec{WireName: "enabled"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollection_PropertiesFields = ubx.FieldMap{
-		"AffinityCookieName": ubx.FieldSpec{WireName: "affinity_cookie_name"},
-		"AuthenticationCertificates": ubx.FieldSpec{
-			WireName: "authentication_certificates",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ConnectionDraining": ubx.FieldSpec{
-			WireName: "connection_draining",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollection_Properties_ConnectionDrainingFields,
-		},
-		"CookieBasedAffinity": ubx.FieldSpec{WireName: "cookie_based_affinity"},
-		"DedicatedBackendConnection": ubx.FieldSpec{WireName: "dedicated_backend_connection"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"PickHostNameFromBackendAddress": ubx.FieldSpec{WireName: "pick_host_name_from_backend_address"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Probe": ubx.FieldSpec{
-			WireName: "probe",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ProbeEnabled": ubx.FieldSpec{WireName: "probe_enabled"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestTimeout": ubx.FieldSpec{WireName: "request_timeout"},
-		"SniName": ubx.FieldSpec{WireName: "sni_name"},
-		"TrustedRootCertificates": ubx.FieldSpec{
-			WireName: "trusted_root_certificates",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ValidateCertChainAndExpiry": ubx.FieldSpec{WireName: "validate_cert_chain_and_expiry"},
-		"ValidateSni": ubx.FieldSpec{WireName: "validate_sni"},
-	}
+	"AffinityCookieName": ubx.FieldSpec{WireName: "affinity_cookie_name"},
+	"AuthenticationCertificates": ubx.FieldSpec{
+		WireName: "authentication_certificates",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ConnectionDraining": ubx.FieldSpec{
+		WireName: "connection_draining",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollection_Properties_ConnectionDrainingFields,
+	},
+	"CookieBasedAffinity":            ubx.FieldSpec{WireName: "cookie_based_affinity"},
+	"DedicatedBackendConnection":     ubx.FieldSpec{WireName: "dedicated_backend_connection"},
+	"HostName":                       ubx.FieldSpec{WireName: "host_name"},
+	"Path":                           ubx.FieldSpec{WireName: "path"},
+	"PickHostNameFromBackendAddress": ubx.FieldSpec{WireName: "pick_host_name_from_backend_address"},
+	"Port":                           ubx.FieldSpec{WireName: "port"},
+	"Probe": ubx.FieldSpec{
+		WireName: "probe",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ProbeEnabled":      ubx.FieldSpec{WireName: "probe_enabled"},
+	"Protocol":          ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestTimeout":    ubx.FieldSpec{WireName: "request_timeout"},
+	"SniName":           ubx.FieldSpec{WireName: "sni_name"},
+	"TrustedRootCertificates": ubx.FieldSpec{
+		WireName: "trusted_root_certificates",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ValidateCertChainAndExpiry": ubx.FieldSpec{WireName: "validate_cert_chain_and_expiry"},
+	"ValidateSni":                ubx.FieldSpec{WireName: "validate_sni"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollectionFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollection_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollection_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendSettingsCollection_PropertiesFields = ubx.FieldMap{
-		"EnableL4ClientIpPreservation": ubx.FieldSpec{WireName: "enable_l4_client_ip_preservation"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"PickHostNameFromBackendAddress": ubx.FieldSpec{WireName: "pick_host_name_from_backend_address"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Probe": ubx.FieldSpec{
-			WireName: "probe",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Timeout": ubx.FieldSpec{WireName: "timeout"},
-		"TrustedRootCertificates": ubx.FieldSpec{
-			WireName: "trusted_root_certificates",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"EnableL4ClientIpPreservation":   ubx.FieldSpec{WireName: "enable_l4_client_ip_preservation"},
+	"HostName":                       ubx.FieldSpec{WireName: "host_name"},
+	"PickHostNameFromBackendAddress": ubx.FieldSpec{WireName: "pick_host_name_from_backend_address"},
+	"Port":                           ubx.FieldSpec{WireName: "port"},
+	"Probe": ubx.FieldSpec{
+		WireName: "probe",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Protocol":          ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Timeout":           ubx.FieldSpec{WireName: "timeout"},
+	"TrustedRootCertificates": ubx.FieldSpec{
+		WireName: "trusted_root_certificates",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_BackendSettingsCollectionFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendSettingsCollection_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendSettingsCollection_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_CustomErrorConfigurationsFields = ubx.FieldMap{
-		"CustomErrorPageUrl": ubx.FieldSpec{WireName: "custom_error_page_url"},
-		"StatusCode": ubx.FieldSpec{WireName: "status_code"},
-	}
+	"CustomErrorPageUrl": ubx.FieldSpec{WireName: "custom_error_page_url"},
+	"StatusCode":         ubx.FieldSpec{WireName: "status_code"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_EntraJwtvalidationConfigs_PropertiesFields = ubx.FieldMap{
-		"Audiences": ubx.FieldSpec{WireName: "audiences"},
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"UnAuthorizedRequestAction": ubx.FieldSpec{WireName: "un_authorized_request_action"},
-	}
+	"Audiences":                 ubx.FieldSpec{WireName: "audiences"},
+	"ClientId":                  ubx.FieldSpec{WireName: "client_id"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"TenantId":                  ubx.FieldSpec{WireName: "tenant_id"},
+	"UnAuthorizedRequestAction": ubx.FieldSpec{WireName: "un_authorized_request_action"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_EntraJwtvalidationConfigsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_EntraJwtvalidationConfigs_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_EntraJwtvalidationConfigs_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_FrontendIpconfigurations_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConfiguration": ubx.FieldSpec{
-			WireName: "private_link_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConfiguration": ubx.FieldSpec{
+		WireName: "private_link_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_FrontendIpconfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_FrontendIpconfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_FrontendIpconfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_FrontendPorts_PropertiesFields = ubx.FieldMap{
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Port":              ubx.FieldSpec{WireName: "port"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_FrontendPortsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_FrontendPorts_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_FrontendPorts_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_GlobalConfigurationFields = ubx.FieldMap{
-		"DisableDefaultServerHeaderInResponse": ubx.FieldSpec{WireName: "disable_default_server_header_in_response"},
-		"EnableRequestBuffering": ubx.FieldSpec{WireName: "enable_request_buffering"},
-		"EnableResponseBuffering": ubx.FieldSpec{WireName: "enable_response_buffering"},
-	}
+	"DisableDefaultServerHeaderInResponse": ubx.FieldSpec{WireName: "disable_default_server_header_in_response"},
+	"EnableRequestBuffering":               ubx.FieldSpec{WireName: "enable_request_buffering"},
+	"EnableResponseBuffering":              ubx.FieldSpec{WireName: "enable_response_buffering"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_HttpListeners_PropertiesFields = ubx.FieldMap{
-		"CustomErrorConfigurations": ubx.FieldSpec{
-			WireName: "custom_error_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_CustomErrorConfigurationsFields,
-		},
-		"FirewallPolicy": ubx.FieldSpec{
-			WireName: "firewall_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"FrontendIpconfiguration": ubx.FieldSpec{
-			WireName: "frontend_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"FrontendPort": ubx.FieldSpec{
-			WireName: "frontend_port",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"HostNames": ubx.FieldSpec{WireName: "host_names"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequireServerNameIndication": ubx.FieldSpec{WireName: "require_server_name_indication"},
-		"SslCertificate": ubx.FieldSpec{
-			WireName: "ssl_certificate",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SslProfile": ubx.FieldSpec{
-			WireName: "ssl_profile",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"CustomErrorConfigurations": ubx.FieldSpec{
+		WireName: "custom_error_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_CustomErrorConfigurationsFields,
+	},
+	"FirewallPolicy": ubx.FieldSpec{
+		WireName: "firewall_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"FrontendIpconfiguration": ubx.FieldSpec{
+		WireName: "frontend_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"FrontendPort": ubx.FieldSpec{
+		WireName: "frontend_port",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"HostName":                    ubx.FieldSpec{WireName: "host_name"},
+	"HostNames":                   ubx.FieldSpec{WireName: "host_names"},
+	"Protocol":                    ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequireServerNameIndication": ubx.FieldSpec{WireName: "require_server_name_indication"},
+	"SslCertificate": ubx.FieldSpec{
+		WireName: "ssl_certificate",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SslProfile": ubx.FieldSpec{
+		WireName: "ssl_profile",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_HttpListenersFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_HttpListeners_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_HttpListeners_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_Listeners_PropertiesFields = ubx.FieldMap{
-		"FrontendIpconfiguration": ubx.FieldSpec{
-			WireName: "frontend_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"FrontendPort": ubx.FieldSpec{
-			WireName: "frontend_port",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"HostNames": ubx.FieldSpec{WireName: "host_names"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SslCertificate": ubx.FieldSpec{
-			WireName: "ssl_certificate",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SslProfile": ubx.FieldSpec{
-			WireName: "ssl_profile",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"FrontendIpconfiguration": ubx.FieldSpec{
+		WireName: "frontend_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"FrontendPort": ubx.FieldSpec{
+		WireName: "frontend_port",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"HostNames":         ubx.FieldSpec{WireName: "host_names"},
+	"Protocol":          ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SslCertificate": ubx.FieldSpec{
+		WireName: "ssl_certificate",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SslProfile": ubx.FieldSpec{
+		WireName: "ssl_profile",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_ListenersFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_Listeners_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_Listeners_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets_PropertiesFields = ubx.FieldMap{
-		"BackendAddressPool": ubx.FieldSpec{
-			WireName: "backend_address_pool",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"WeightPerServer": ubx.FieldSpec{WireName: "weight_per_server"},
-	}
+	"BackendAddressPool": ubx.FieldSpec{
+		WireName: "backend_address_pool",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"WeightPerServer": ubx.FieldSpec{WireName: "weight_per_server"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargetsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargets_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_PropertiesFields = ubx.FieldMap{
-		"LoadDistributionAlgorithm": ubx.FieldSpec{WireName: "load_distribution_algorithm"},
-		"LoadDistributionTargets": ubx.FieldSpec{
-			WireName: "load_distribution_targets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargetsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LoadDistributionAlgorithm": ubx.FieldSpec{WireName: "load_distribution_algorithm"},
+	"LoadDistributionTargets": ubx.FieldSpec{
+		WireName: "load_distribution_targets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_Properties_LoadDistributionTargetsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_LoadDistributionPoliciesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_LoadDistributionPolicies_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendAddresses": ubx.FieldSpec{
-			WireName: "backend_addresses",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendAddressesFields,
-		},
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddresses": ubx.FieldSpec{
+		WireName: "backend_addresses",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendAddressesFields,
+	},
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPools_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields = ubx.FieldMap{
-		"BackendIpconfigurations": ubx.FieldSpec{
-			WireName: "backend_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"DrainPeriodInSeconds": ubx.FieldSpec{WireName: "drain_period_in_seconds"},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancerBackendAddresses": ubx.FieldSpec{
-			WireName: "load_balancer_backend_addresses",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"OutboundRule": ubx.FieldSpec{
-			WireName: "outbound_rule",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SyncMode": ubx.FieldSpec{WireName: "sync_mode"},
-		"TunnelInterfaces": ubx.FieldSpec{
-			WireName: "tunnel_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields,
-		},
-		"VirtualNetwork": ubx.FieldSpec{
-			WireName: "virtual_network",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"BackendIpconfigurations": ubx.FieldSpec{
+		WireName: "backend_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"DrainPeriodInSeconds": ubx.FieldSpec{WireName: "drain_period_in_seconds"},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancerBackendAddresses": ubx.FieldSpec{
+		WireName: "load_balancer_backend_addresses",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_LoadBalancerBackendAddressesFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"OutboundRule": ubx.FieldSpec{
+		WireName: "outbound_rule",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SyncMode":          ubx.FieldSpec{WireName: "sync_mode"},
+	"TunnelInterfaces": ubx.FieldSpec{
+		WireName: "tunnel_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPools_Properties_TunnelInterfacesFields,
+	},
+	"VirtualNetwork": ubx.FieldSpec{
+		WireName: "virtual_network",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPools_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields = ubx.FieldMap{
-		"BackendAddressPool": ubx.FieldSpec{
-			WireName: "backend_address_pool",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"BackendIpconfiguration": ubx.FieldSpec{
-			WireName: "backend_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"BackendPort": ubx.FieldSpec{WireName: "backend_port"},
-		"EnableFloatingIp": ubx.FieldSpec{WireName: "enable_floating_ip"},
-		"EnableTcpReset": ubx.FieldSpec{WireName: "enable_tcp_reset"},
-		"FrontendIpconfiguration": ubx.FieldSpec{
-			WireName: "frontend_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"FrontendPort": ubx.FieldSpec{WireName: "frontend_port"},
-		"FrontendPortRangeEnd": ubx.FieldSpec{WireName: "frontend_port_range_end"},
-		"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"BackendAddressPool": ubx.FieldSpec{
+		WireName: "backend_address_pool",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"BackendIpconfiguration": ubx.FieldSpec{
+		WireName: "backend_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"BackendPort":      ubx.FieldSpec{WireName: "backend_port"},
+	"EnableFloatingIp": ubx.FieldSpec{WireName: "enable_floating_ip"},
+	"EnableTcpReset":   ubx.FieldSpec{WireName: "enable_tcp_reset"},
+	"FrontendIpconfiguration": ubx.FieldSpec{
+		WireName: "frontend_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"FrontendPort":           ubx.FieldSpec{WireName: "frontend_port"},
+	"FrontendPortRangeEnd":   ubx.FieldSpec{WireName: "frontend_port_range_end"},
+	"FrontendPortRangeStart": ubx.FieldSpec{WireName: "frontend_port_range_start"},
+	"IdleTimeoutInMinutes":   ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"Protocol":               ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRules_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{WireName: "properties"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{WireName: "public_ipaddress"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress":           ubx.FieldSpec{WireName: "public_ipaddress"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
+	"MigrationPhase":        ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ResourceGuid":           ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
+	"UpgradedToV2":           ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
-		},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_SubnetFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{
-			WireName: "linked_public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{
-			WireName: "service_public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{
+		WireName: "linked_public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{
+		WireName: "service_public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_PrivateEndpoints_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields,
-		},
-		"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"InboundNatPools": ubx.FieldSpec{
-			WireName: "inbound_nat_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"InboundNatRules": ubx.FieldSpec{
-			WireName: "inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancingRules": ubx.FieldSpec{
-			WireName: "load_balancing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"OutboundRules": ubx.FieldSpec{
-			WireName: "outbound_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields,
-		},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_SubnetFields,
-		},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_DdosSettingsFields,
+	},
+	"EnableConnectionTracking": ubx.FieldSpec{WireName: "enable_connection_tracking"},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"InboundNatPools": ubx.FieldSpec{
+		WireName: "inbound_nat_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"InboundNatRules": ubx.FieldSpec{
+		WireName: "inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancingRules": ubx.FieldSpec{
+		WireName: "load_balancing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"OutboundRules": ubx.FieldSpec{
+		WireName: "outbound_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddressFields,
+	},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_SubnetFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_PropertiesFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields,
-		},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields,
+	},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup":           ubx.FieldSpec{WireName: "network_security_group"},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_SubnetsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_Subnets_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_SubnetsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_Properties_SubnetsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields,
-		},
-	}
+	"Primary":                   ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressVersion":   ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateEndpointLocation": ubx.FieldSpec{WireName: "private_endpoint_location"},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields,
-		},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_SubnetFields,
+	},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields,
-		},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfigurationFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields,
+	},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkTap": ubx.FieldSpec{
-			WireName: "virtual_network_tap",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkTap": ubx.FieldSpec{
+		WireName: "virtual_network_tap",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
-		},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":     ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_NetworkSecurityGroupFields,
+	},
+	"NicType": ubx.FieldSpec{WireName: "nic_type"},
+	"Primary": ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields = ubx.FieldMap{
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{WireName: "public_ipaddress"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-	}
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress":           ubx.FieldSpec{WireName: "public_ipaddress"},
+	"Subnet":                    ubx.FieldSpec{WireName: "subnet"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields = ubx.FieldMap{
-		"DdosSettings": ubx.FieldSpec{
-			WireName: "ddos_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
-		},
-		"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
-		},
-		"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"IpConfiguration": ubx.FieldSpec{
-			WireName: "ip_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
-		},
-		"IpTags": ubx.FieldSpec{
-			WireName: "ip_tags",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
-		},
-		"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddressVersion": ubx.FieldSpec{WireName: "public_ipaddress_version"},
-		"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
-		"PublicIpprefix": ubx.FieldSpec{
-			WireName: "public_ipprefix",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
-		"UpgradedToV2": ubx.FieldSpec{WireName: "upgraded_to_v2"},
-	}
+	"DdosSettings": ubx.FieldSpec{
+		WireName: "ddos_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DdosSettingsFields,
+	},
+	"DeleteOption": ubx.FieldSpec{WireName: "delete_option"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_DnsSettingsFields,
+	},
+	"IdleTimeoutInMinutes": ubx.FieldSpec{WireName: "idle_timeout_in_minutes"},
+	"IpAddress":            ubx.FieldSpec{WireName: "ip_address"},
+	"IpConfiguration": ubx.FieldSpec{
+		WireName: "ip_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfigurationFields,
+	},
+	"IpTags": ubx.FieldSpec{
+		WireName: "ip_tags",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpTagsFields,
+	},
+	"LinkedPublicIpaddress": ubx.FieldSpec{WireName: "linked_public_ipaddress"},
+	"MigrationPhase":        ubx.FieldSpec{WireName: "migration_phase"},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_NatGatewayFields,
+	},
+	"ProvisioningState":        ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddressVersion":   ubx.FieldSpec{WireName: "public_ipaddress_version"},
+	"PublicIpallocationMethod": ubx.FieldSpec{WireName: "public_ipallocation_method"},
+	"PublicIpprefix": ubx.FieldSpec{
+		WireName: "public_ipprefix",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ResourceGuid":           ubx.FieldSpec{WireName: "resource_guid"},
+	"ServicePublicIpaddress": ubx.FieldSpec{WireName: "service_public_ipaddress"},
+	"UpgradedToV2":           ubx.FieldSpec{WireName: "upgraded_to_v2"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
-		},
-		"Zones": ubx.FieldSpec{WireName: "zones"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_PropertiesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurations_Properties_PublicIpaddress_SkuFields,
+	},
+	"Zones": ubx.FieldSpec{WireName: "zones"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_VirtualNetworkTaps_Properties_DestinationLoadBalancerFrontEndIpconfiguration_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTaps_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_VirtualNetworkTapsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Alias": ubx.FieldSpec{WireName: "alias"},
-		"AutoApproval": ubx.FieldSpec{
-			WireName: "auto_approval",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-		"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
-		"EnableProxyProtocol": ubx.FieldSpec{WireName: "enable_proxy_protocol"},
-		"Fqdns": ubx.FieldSpec{WireName: "fqdns"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
-		},
-		"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
-			WireName: "load_balancer_frontend_ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Visibility": ubx.FieldSpec{
-			WireName: "visibility",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
-		},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Alias":      ubx.FieldSpec{WireName: "alias"},
+	"AutoApproval": ubx.FieldSpec{
+		WireName: "auto_approval",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+	"DestinationIpaddress": ubx.FieldSpec{WireName: "destination_ipaddress"},
+	"EnableProxyProtocol":  ubx.FieldSpec{WireName: "enable_proxy_protocol"},
+	"Fqdns":                ubx.FieldSpec{WireName: "fqdns"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_IpConfigurationsFields,
+	},
+	"LoadBalancerFrontendIpConfigurations": ubx.FieldSpec{
+		WireName: "load_balancer_frontend_ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Visibility": ubx.FieldSpec{
+		WireName: "visibility",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_AutoApprovalFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields = ubx.FieldMap{
-		"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
-			WireName: "application_gateway_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
-		},
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"GatewayLoadBalancer": ubx.FieldSpec{
-			WireName: "gateway_load_balancer",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadBalancerBackendAddressPools": ubx.FieldSpec{
-			WireName: "load_balancer_backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
-		},
-		"LoadBalancerInboundNatRules": ubx.FieldSpec{
-			WireName: "load_balancer_inbound_nat_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRulesFields,
-		},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
-		"PrivateIpaddressVersion": ubx.FieldSpec{WireName: "private_ipaddress_version"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"PrivateLinkConnectionProperties": ubx.FieldSpec{
-			WireName: "private_link_connection_properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpaddress": ubx.FieldSpec{
-			WireName: "public_ipaddress",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
-		},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-		"VirtualNetworkTaps": ubx.FieldSpec{
-			WireName: "virtual_network_taps",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"ApplicationGatewayBackendAddressPools": ubx.FieldSpec{
+		WireName: "application_gateway_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPoolsFields,
+	},
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"GatewayLoadBalancer": ubx.FieldSpec{
+		WireName: "gateway_load_balancer",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadBalancerBackendAddressPools": ubx.FieldSpec{
+		WireName: "load_balancer_backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerBackendAddressPoolsFields,
+	},
+	"LoadBalancerInboundNatRules": ubx.FieldSpec{
+		WireName: "load_balancer_inbound_nat_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_LoadBalancerInboundNatRulesFields,
+	},
+	"Primary":                      ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":             ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpaddressPrefixLength": ubx.FieldSpec{WireName: "private_ipaddress_prefix_length"},
+	"PrivateIpaddressVersion":      ubx.FieldSpec{WireName: "private_ipaddress_version"},
+	"PrivateIpallocationMethod":    ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"PrivateLinkConnectionProperties": ubx.FieldSpec{
+		WireName: "private_link_connection_properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PrivateLinkConnectionPropertiesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpaddress": ubx.FieldSpec{
+		WireName: "public_ipaddress",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddressFields,
+	},
+	"Subnet": ubx.FieldSpec{WireName: "subnet"},
+	"VirtualNetworkTaps": ubx.FieldSpec{
+		WireName: "virtual_network_taps",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfiguration_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields = ubx.FieldMap{
-		"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_load_balancer_front_end_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
-		},
-		"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
-			WireName: "destination_network_interface_ipconfiguration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields,
-		},
-		"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
-		"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"DestinationLoadBalancerFrontEndIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_load_balancer_front_end_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkService_Properties_LoadBalancerFrontendIpConfigurationsFields,
+	},
+	"DestinationNetworkInterfaceIpconfiguration": ubx.FieldSpec{
+		WireName: "destination_network_interface_ipconfiguration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_Properties_DestinationNetworkInterfaceIpconfigurationFields,
+	},
+	"DestinationPort": ubx.FieldSpec{WireName: "destination_port"},
+	"NetworkInterfaceTapConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTap_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"VirtualNetworkTap": ubx.FieldSpec{
-			WireName: "virtual_network_tap",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"VirtualNetworkTap": ubx.FieldSpec{
+		WireName: "virtual_network_tap",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_Properties_VirtualNetworkTapFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurations_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields = ubx.FieldMap{
-		"AuxiliaryMode": ubx.FieldSpec{WireName: "auxiliary_mode"},
-		"AuxiliarySku": ubx.FieldSpec{WireName: "auxiliary_sku"},
-		"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
-		"DisableTcpStateTracking": ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
-		"DnsSettings": ubx.FieldSpec{
-			WireName: "dns_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
-		},
-		"DscpConfiguration": ubx.FieldSpec{
-			WireName: "dscp_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
-		"EnableIpforwarding": ubx.FieldSpec{WireName: "enable_ipforwarding"},
-		"HostedWorkloads": ubx.FieldSpec{WireName: "hosted_workloads"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
-		},
-		"MacAddress": ubx.FieldSpec{WireName: "mac_address"},
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkService": ubx.FieldSpec{
-			WireName: "private_link_service",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"TapConfigurations": ubx.FieldSpec{
-			WireName: "tap_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
-		},
-		"VirtualMachine": ubx.FieldSpec{
-			WireName: "virtual_machine",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
-		"WorkloadType": ubx.FieldSpec{WireName: "workload_type"},
-	}
+	"AuxiliaryMode":                      ubx.FieldSpec{WireName: "auxiliary_mode"},
+	"AuxiliarySku":                       ubx.FieldSpec{WireName: "auxiliary_sku"},
+	"DefaultOutboundConnectivityEnabled": ubx.FieldSpec{WireName: "default_outbound_connectivity_enabled"},
+	"DisableTcpStateTracking":            ubx.FieldSpec{WireName: "disable_tcp_state_tracking"},
+	"DnsSettings": ubx.FieldSpec{
+		WireName: "dns_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_DnsSettingsFields,
+	},
+	"DscpConfiguration": ubx.FieldSpec{
+		WireName: "dscp_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EnableAcceleratedNetworking": ubx.FieldSpec{WireName: "enable_accelerated_networking"},
+	"EnableIpforwarding":          ubx.FieldSpec{WireName: "enable_ipforwarding"},
+	"HostedWorkloads":             ubx.FieldSpec{WireName: "hosted_workloads"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_IpConfigurationsFields,
+	},
+	"MacAddress":           ubx.FieldSpec{WireName: "mac_address"},
+	"MigrationPhase":       ubx.FieldSpec{WireName: "migration_phase"},
+	"NetworkSecurityGroup": ubx.FieldSpec{WireName: "network_security_group"},
+	"NicType":              ubx.FieldSpec{WireName: "nic_type"},
+	"Primary":              ubx.FieldSpec{WireName: "primary"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkService": ubx.FieldSpec{
+		WireName: "private_link_service",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateLinkServiceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"TapConfigurations": ubx.FieldSpec{
+		WireName: "tap_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_TapConfigurationsFields,
+	},
+	"VirtualMachine": ubx.FieldSpec{
+		WireName: "virtual_machine",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"VnetEncryptionSupported": ubx.FieldSpec{WireName: "vnet_encryption_supported"},
+	"WorkloadType":            ubx.FieldSpec{WireName: "workload_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields = ubx.FieldMap{
-		"DefaultSecurityRules": ubx.FieldSpec{
-			WireName: "default_security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"FlowLogs": ubx.FieldSpec{
-			WireName: "flow_logs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
-		},
-		"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"SecurityRules": ubx.FieldSpec{
-			WireName: "security_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
-		},
-		"Subnets": ubx.FieldSpec{
-			WireName: "subnets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
-		},
-	}
+	"DefaultSecurityRules": ubx.FieldSpec{
+		WireName: "default_security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"FlowLogs": ubx.FieldSpec{
+		WireName: "flow_logs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_FlowLogsFields,
+	},
+	"FlushConnection": ubx.FieldSpec{WireName: "flush_connection"},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfacesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+	"SecurityRules": ubx.FieldSpec{
+		WireName: "security_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_DefaultSecurityRulesFields,
+	},
+	"Subnets": ubx.FieldSpec{
+		WireName: "subnets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationGatewayBackendAddressPools_Properties_BackendIpconfigurationsFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroupFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroup_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
-		"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "application_gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
-		"Delegations": ubx.FieldSpec{
-			WireName: "delegations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
-		},
-		"IpAllocations": ubx.FieldSpec{
-			WireName: "ip_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"IpConfigurationProfiles": ubx.FieldSpec{
-			WireName: "ip_configuration_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
-		},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields,
-		},
-		"IpamPoolPrefixAllocations": ubx.FieldSpec{
-			WireName: "ipam_pool_prefix_allocations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
-		},
-		"NatGateway": ubx.FieldSpec{
-			WireName: "nat_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"NetworkSecurityGroup": ubx.FieldSpec{
-			WireName: "network_security_group",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroupFields,
-		},
-		"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
-		"PrivateEndpoints": ubx.FieldSpec{
-			WireName: "private_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
-		},
-		"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Purpose": ubx.FieldSpec{WireName: "purpose"},
-		"ResourceNavigationLinks": ubx.FieldSpec{
-			WireName: "resource_navigation_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
-		},
-		"RouteTable": ubx.FieldSpec{
-			WireName: "route_table",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
-		},
-		"ServiceAssociationLinks": ubx.FieldSpec{
-			WireName: "service_association_links",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
-		},
-		"ServiceEndpointPolicies": ubx.FieldSpec{
-			WireName: "service_endpoint_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
-		},
-		"ServiceEndpoints": ubx.FieldSpec{
-			WireName: "service_endpoints",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
-		},
-		"ServiceGateway": ubx.FieldSpec{
-			WireName: "service_gateway",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
-	}
+	"AddressPrefix":   ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixes": ubx.FieldSpec{WireName: "address_prefixes"},
+	"ApplicationGatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "application_gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"DefaultOutboundAccess": ubx.FieldSpec{WireName: "default_outbound_access"},
+	"Delegations": ubx.FieldSpec{
+		WireName: "delegations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_DelegationsFields,
+	},
+	"IpAllocations": ubx.FieldSpec{
+		WireName: "ip_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"IpConfigurationProfiles": ubx.FieldSpec{
+		WireName: "ip_configuration_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpConfigurationProfilesFields,
+	},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_Subnet_Properties_IpConfigurationsFields,
+	},
+	"IpamPoolPrefixAllocations": ubx.FieldSpec{
+		WireName: "ipam_pool_prefix_allocations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_IpamPoolPrefixAllocationsFields,
+	},
+	"NatGateway": ubx.FieldSpec{
+		WireName: "nat_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"NetworkSecurityGroup": ubx.FieldSpec{
+		WireName: "network_security_group",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_Properties_NetworkSecurityGroupFields,
+	},
+	"PrivateEndpointNetworkPolicies": ubx.FieldSpec{WireName: "private_endpoint_network_policies"},
+	"PrivateEndpoints": ubx.FieldSpec{
+		WireName: "private_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfaces_Properties_IpConfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_PrivateEndpointsFields,
+	},
+	"PrivateLinkServiceNetworkPolicies": ubx.FieldSpec{WireName: "private_link_service_network_policies"},
+	"ProvisioningState":                 ubx.FieldSpec{WireName: "provisioning_state"},
+	"Purpose":                           ubx.FieldSpec{WireName: "purpose"},
+	"ResourceNavigationLinks": ubx.FieldSpec{
+		WireName: "resource_navigation_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ResourceNavigationLinksFields,
+	},
+	"RouteTable": ubx.FieldSpec{
+		WireName: "route_table",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_RouteTableFields,
+	},
+	"ServiceAssociationLinks": ubx.FieldSpec{
+		WireName: "service_association_links",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceAssociationLinksFields,
+	},
+	"ServiceEndpointPolicies": ubx.FieldSpec{
+		WireName: "service_endpoint_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointPoliciesFields,
+	},
+	"ServiceEndpoints": ubx.FieldSpec{
+		WireName: "service_endpoints",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ServiceEndpointsFields,
+	},
+	"ServiceGateway": ubx.FieldSpec{
+		WireName: "service_gateway",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"SharingScope": ubx.FieldSpec{WireName: "sharing_scope"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_SubnetFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_Subnet_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_PropertiesFields = ubx.FieldMap{
-		"ApplicationSecurityGroups": ubx.FieldSpec{
-			WireName: "application_security_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
-		},
-		"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
-		"CustomDnsConfigs": ubx.FieldSpec{
-			WireName: "custom_dns_configs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
-		},
-		"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
-		},
-		"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
-		"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "manual_private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"NetworkInterfaces": ubx.FieldSpec{
-			WireName: "network_interfaces",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfacesFields,
-		},
-		"PrivateLinkServiceConnections": ubx.FieldSpec{
-			WireName: "private_link_service_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_SubnetFields,
-		},
-	}
+	"ApplicationSecurityGroups": ubx.FieldSpec{
+		WireName: "application_security_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_ApplicationSecurityGroupsFields,
+	},
+	"BillingSku": ubx.FieldSpec{WireName: "billing_sku"},
+	"CustomDnsConfigs": ubx.FieldSpec{
+		WireName: "custom_dns_configs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_CustomDnsConfigsFields,
+	},
+	"CustomNetworkInterfaceName": ubx.FieldSpec{WireName: "custom_network_interface_name"},
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_IpConfigurationsFields,
+	},
+	"IpVersionType": ubx.FieldSpec{WireName: "ip_version_type"},
+	"ManualPrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "manual_private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"NetworkInterfaces": ubx.FieldSpec{
+		WireName: "network_interfaces",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_NetworkInterfacesFields,
+	},
+	"PrivateLinkServiceConnections": ubx.FieldSpec{
+		WireName: "private_link_service_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnectionsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_Properties_SubnetFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"ExtendedLocation": ubx.FieldSpec{
-			WireName: "extended_location",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
-		},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"ExtendedLocation": ubx.FieldSpec{
+		WireName: "extended_location",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_ExtendedLocationFields,
+	},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LinkIdentifier": ubx.FieldSpec{WireName: "link_identifier"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_NetworkSecurityGroup_Properties_NetworkInterfaces_Properties_PrivateEndpoint_Properties_ManualPrivateLinkServiceConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-		"PrivateIpaddress": ubx.FieldSpec{WireName: "private_ipaddress"},
-		"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"Primary":                   ubx.FieldSpec{WireName: "primary"},
+	"PrivateIpaddress":          ubx.FieldSpec{WireName: "private_ipaddress"},
+	"PrivateIpallocationMethod": ubx.FieldSpec{WireName: "private_ipallocation_method"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_Properties_IpConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_PropertiesFields = ubx.FieldMap{
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_Properties_IpConfigurationsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_Probes_Properties_MatchFields = ubx.FieldMap{
-		"Body": ubx.FieldSpec{WireName: "body"},
-		"StatusCodes": ubx.FieldSpec{WireName: "status_codes"},
-	}
+	"Body":        ubx.FieldSpec{WireName: "body"},
+	"StatusCodes": ubx.FieldSpec{WireName: "status_codes"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_Probes_PropertiesFields = ubx.FieldMap{
-		"EnableProbeProxyProtocolHeader": ubx.FieldSpec{WireName: "enable_probe_proxy_protocol_header"},
-		"Host": ubx.FieldSpec{WireName: "host"},
-		"Interval": ubx.FieldSpec{WireName: "interval"},
-		"Match": ubx.FieldSpec{
-			WireName: "match",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_Probes_Properties_MatchFields,
-		},
-		"MinServers": ubx.FieldSpec{WireName: "min_servers"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"PickHostNameFromBackendHttpSettings": ubx.FieldSpec{WireName: "pick_host_name_from_backend_http_settings"},
-		"PickHostNameFromBackendSettings": ubx.FieldSpec{WireName: "pick_host_name_from_backend_settings"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Timeout": ubx.FieldSpec{WireName: "timeout"},
-		"UnhealthyThreshold": ubx.FieldSpec{WireName: "unhealthy_threshold"},
-	}
+	"EnableProbeProxyProtocolHeader": ubx.FieldSpec{WireName: "enable_probe_proxy_protocol_header"},
+	"Host":                           ubx.FieldSpec{WireName: "host"},
+	"Interval":                       ubx.FieldSpec{WireName: "interval"},
+	"Match": ubx.FieldSpec{
+		WireName: "match",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_Probes_Properties_MatchFields,
+	},
+	"MinServers":                          ubx.FieldSpec{WireName: "min_servers"},
+	"Path":                                ubx.FieldSpec{WireName: "path"},
+	"PickHostNameFromBackendHttpSettings": ubx.FieldSpec{WireName: "pick_host_name_from_backend_http_settings"},
+	"PickHostNameFromBackendSettings":     ubx.FieldSpec{WireName: "pick_host_name_from_backend_settings"},
+	"Port":                                ubx.FieldSpec{WireName: "port"},
+	"Protocol":                            ubx.FieldSpec{WireName: "protocol"},
+	"ProvisioningState":                   ubx.FieldSpec{WireName: "provisioning_state"},
+	"Timeout":                             ubx.FieldSpec{WireName: "timeout"},
+	"UnhealthyThreshold":                  ubx.FieldSpec{WireName: "unhealthy_threshold"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_ProbesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_Probes_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_Probes_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RedirectConfigurations_PropertiesFields = ubx.FieldMap{
-		"IncludePath": ubx.FieldSpec{WireName: "include_path"},
-		"IncludeQueryString": ubx.FieldSpec{WireName: "include_query_string"},
-		"PathRules": ubx.FieldSpec{
-			WireName: "path_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"RedirectType": ubx.FieldSpec{WireName: "redirect_type"},
-		"RequestRoutingRules": ubx.FieldSpec{
-			WireName: "request_routing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"TargetListener": ubx.FieldSpec{
-			WireName: "target_listener",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"TargetUrl": ubx.FieldSpec{WireName: "target_url"},
-		"UrlPathMaps": ubx.FieldSpec{
-			WireName: "url_path_maps",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"IncludePath":        ubx.FieldSpec{WireName: "include_path"},
+	"IncludeQueryString": ubx.FieldSpec{WireName: "include_query_string"},
+	"PathRules": ubx.FieldSpec{
+		WireName: "path_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"RedirectType": ubx.FieldSpec{WireName: "redirect_type"},
+	"RequestRoutingRules": ubx.FieldSpec{
+		WireName: "request_routing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"TargetListener": ubx.FieldSpec{
+		WireName: "target_listener",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"TargetUrl": ubx.FieldSpec{WireName: "target_url"},
+	"UrlPathMaps": ubx.FieldSpec{
+		WireName: "url_path_maps",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RedirectConfigurationsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RedirectConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RedirectConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RequestRoutingRules_PropertiesFields = ubx.FieldMap{
-		"BackendAddressPool": ubx.FieldSpec{
-			WireName: "backend_address_pool",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"BackendHttpSettings": ubx.FieldSpec{
-			WireName: "backend_http_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"EntraJwtvalidationConfig": ubx.FieldSpec{
-			WireName: "entra_jwtvalidation_config",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"HttpListener": ubx.FieldSpec{
-			WireName: "http_listener",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadDistributionPolicy": ubx.FieldSpec{
-			WireName: "load_distribution_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RedirectConfiguration": ubx.FieldSpec{
-			WireName: "redirect_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"RewriteRuleSet": ubx.FieldSpec{
-			WireName: "rewrite_rule_set",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"RuleType": ubx.FieldSpec{WireName: "rule_type"},
-		"UrlPathMap": ubx.FieldSpec{
-			WireName: "url_path_map",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"BackendAddressPool": ubx.FieldSpec{
+		WireName: "backend_address_pool",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"BackendHttpSettings": ubx.FieldSpec{
+		WireName: "backend_http_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"EntraJwtvalidationConfig": ubx.FieldSpec{
+		WireName: "entra_jwtvalidation_config",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"HttpListener": ubx.FieldSpec{
+		WireName: "http_listener",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadDistributionPolicy": ubx.FieldSpec{
+		WireName: "load_distribution_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Priority":          ubx.FieldSpec{WireName: "priority"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RedirectConfiguration": ubx.FieldSpec{
+		WireName: "redirect_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"RewriteRuleSet": ubx.FieldSpec{
+		WireName: "rewrite_rule_set",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"RuleType": ubx.FieldSpec{WireName: "rule_type"},
+	"UrlPathMap": ubx.FieldSpec{
+		WireName: "url_path_map",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RequestRoutingRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RequestRoutingRules_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RequestRoutingRules_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations_HeaderValueMatcherFields = ubx.FieldMap{
-		"IgnoreCase": ubx.FieldSpec{WireName: "ignore_case"},
-		"Negate": ubx.FieldSpec{WireName: "negate"},
-		"Pattern": ubx.FieldSpec{WireName: "pattern"},
-	}
+	"IgnoreCase": ubx.FieldSpec{WireName: "ignore_case"},
+	"Negate":     ubx.FieldSpec{WireName: "negate"},
+	"Pattern":    ubx.FieldSpec{WireName: "pattern"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurationsFields = ubx.FieldMap{
-		"HeaderName": ubx.FieldSpec{WireName: "header_name"},
-		"HeaderValue": ubx.FieldSpec{WireName: "header_value"},
-		"HeaderValueMatcher": ubx.FieldSpec{
-			WireName: "header_value_matcher",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations_HeaderValueMatcherFields,
-		},
-	}
+	"HeaderName":  ubx.FieldSpec{WireName: "header_name"},
+	"HeaderValue": ubx.FieldSpec{WireName: "header_value"},
+	"HeaderValueMatcher": ubx.FieldSpec{
+		WireName: "header_value_matcher",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurations_HeaderValueMatcherFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_UrlConfigurationFields = ubx.FieldMap{
-		"ModifiedPath": ubx.FieldSpec{WireName: "modified_path"},
-		"ModifiedQueryString": ubx.FieldSpec{WireName: "modified_query_string"},
-		"Reroute": ubx.FieldSpec{WireName: "reroute"},
-	}
+	"ModifiedPath":        ubx.FieldSpec{WireName: "modified_path"},
+	"ModifiedQueryString": ubx.FieldSpec{WireName: "modified_query_string"},
+	"Reroute":             ubx.FieldSpec{WireName: "reroute"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSetFields = ubx.FieldMap{
-		"RequestHeaderConfigurations": ubx.FieldSpec{
-			WireName: "request_header_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurationsFields,
-		},
-		"ResponseHeaderConfigurations": ubx.FieldSpec{
-			WireName: "response_header_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurationsFields,
-		},
-		"UrlConfiguration": ubx.FieldSpec{
-			WireName: "url_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_UrlConfigurationFields,
-		},
-	}
+	"RequestHeaderConfigurations": ubx.FieldSpec{
+		WireName: "request_header_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurationsFields,
+	},
+	"ResponseHeaderConfigurations": ubx.FieldSpec{
+		WireName: "response_header_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_RequestHeaderConfigurationsFields,
+	},
+	"UrlConfiguration": ubx.FieldSpec{
+		WireName: "url_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSet_UrlConfigurationFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ConditionsFields = ubx.FieldMap{
-		"IgnoreCase": ubx.FieldSpec{WireName: "ignore_case"},
-		"Negate": ubx.FieldSpec{WireName: "negate"},
-		"Pattern": ubx.FieldSpec{WireName: "pattern"},
-		"Variable": ubx.FieldSpec{WireName: "variable"},
-	}
+	"IgnoreCase": ubx.FieldSpec{WireName: "ignore_case"},
+	"Negate":     ubx.FieldSpec{WireName: "negate"},
+	"Pattern":    ubx.FieldSpec{WireName: "pattern"},
+	"Variable":   ubx.FieldSpec{WireName: "variable"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRulesFields = ubx.FieldMap{
-		"ActionSet": ubx.FieldSpec{
-			WireName: "action_set",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSetFields,
-		},
-		"Conditions": ubx.FieldSpec{
-			WireName: "conditions",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ConditionsFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"RuleSequence": ubx.FieldSpec{WireName: "rule_sequence"},
-	}
+	"ActionSet": ubx.FieldSpec{
+		WireName: "action_set",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ActionSetFields,
+	},
+	"Conditions": ubx.FieldSpec{
+		WireName: "conditions",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRules_ConditionsFields,
+	},
+	"Name":         ubx.FieldSpec{WireName: "name"},
+	"RuleSequence": ubx.FieldSpec{WireName: "rule_sequence"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RewriteRules": ubx.FieldSpec{
-			WireName: "rewrite_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRulesFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RewriteRules": ubx.FieldSpec{
+		WireName: "rewrite_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_Properties_RewriteRulesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RewriteRuleSetsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_PropertiesFields,
-		},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSets_PropertiesFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RoutingRules_PropertiesFields = ubx.FieldMap{
-		"BackendAddressPool": ubx.FieldSpec{
-			WireName: "backend_address_pool",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"BackendSettings": ubx.FieldSpec{
-			WireName: "backend_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Listener": ubx.FieldSpec{
-			WireName: "listener",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuleType": ubx.FieldSpec{WireName: "rule_type"},
-	}
+	"BackendAddressPool": ubx.FieldSpec{
+		WireName: "backend_address_pool",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"BackendSettings": ubx.FieldSpec{
+		WireName: "backend_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Listener": ubx.FieldSpec{
+		WireName: "listener",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Priority":          ubx.FieldSpec{WireName: "priority"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuleType":          ubx.FieldSpec{WireName: "rule_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_RoutingRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RoutingRules_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RoutingRules_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_SslCertificates_Properties_HsmFields = ubx.FieldMap{
-		"KeyId": ubx.FieldSpec{WireName: "key_id"},
-		"PublicCertData": ubx.FieldSpec{WireName: "public_cert_data"},
-	}
+	"KeyId":          ubx.FieldSpec{WireName: "key_id"},
+	"PublicCertData": ubx.FieldSpec{WireName: "public_cert_data"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_SslCertificates_PropertiesFields = ubx.FieldMap{
-		"Data": ubx.FieldSpec{WireName: "data"},
-		"Hsm": ubx.FieldSpec{
-			WireName: "hsm",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SslCertificates_Properties_HsmFields,
-		},
-		"KeyVaultSecretId": ubx.FieldSpec{WireName: "key_vault_secret_id"},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicCertData": ubx.FieldSpec{WireName: "public_cert_data"},
-	}
+	"Data": ubx.FieldSpec{WireName: "data"},
+	"Hsm": ubx.FieldSpec{
+		WireName: "hsm",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SslCertificates_Properties_HsmFields,
+	},
+	"KeyVaultSecretId":  ubx.FieldSpec{WireName: "key_vault_secret_id"},
+	"Password":          ubx.FieldSpec{WireName: "password"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicCertData":    ubx.FieldSpec{WireName: "public_cert_data"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_SslCertificatesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SslCertificates_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SslCertificates_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_SslPolicyFields = ubx.FieldMap{
-		"CipherSuites": ubx.FieldSpec{WireName: "cipher_suites"},
-		"DisabledSslProtocols": ubx.FieldSpec{WireName: "disabled_ssl_protocols"},
-		"MinProtocolVersion": ubx.FieldSpec{WireName: "min_protocol_version"},
-		"PolicyName": ubx.FieldSpec{WireName: "policy_name"},
-		"PolicyType": ubx.FieldSpec{WireName: "policy_type"},
-	}
+	"CipherSuites":         ubx.FieldSpec{WireName: "cipher_suites"},
+	"DisabledSslProtocols": ubx.FieldSpec{WireName: "disabled_ssl_protocols"},
+	"MinProtocolVersion":   ubx.FieldSpec{WireName: "min_protocol_version"},
+	"PolicyName":           ubx.FieldSpec{WireName: "policy_name"},
+	"PolicyType":           ubx.FieldSpec{WireName: "policy_type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_SslProfiles_Properties_ClientAuthConfigurationFields = ubx.FieldMap{
-		"VerifyClientAuthMode": ubx.FieldSpec{WireName: "verify_client_auth_mode"},
-		"VerifyClientCertIssuerDn": ubx.FieldSpec{WireName: "verify_client_cert_issuer_dn"},
-		"VerifyClientRevocation": ubx.FieldSpec{WireName: "verify_client_revocation"},
-	}
+	"VerifyClientAuthMode":     ubx.FieldSpec{WireName: "verify_client_auth_mode"},
+	"VerifyClientCertIssuerDn": ubx.FieldSpec{WireName: "verify_client_cert_issuer_dn"},
+	"VerifyClientRevocation":   ubx.FieldSpec{WireName: "verify_client_revocation"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_SslProfiles_PropertiesFields = ubx.FieldMap{
-		"ClientAuthConfiguration": ubx.FieldSpec{
-			WireName: "client_auth_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SslProfiles_Properties_ClientAuthConfigurationFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SslPolicy": ubx.FieldSpec{
-			WireName: "ssl_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SslPolicyFields,
-		},
-		"TrustedClientCertificates": ubx.FieldSpec{
-			WireName: "trusted_client_certificates",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"ClientAuthConfiguration": ubx.FieldSpec{
+		WireName: "client_auth_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SslProfiles_Properties_ClientAuthConfigurationFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SslPolicy": ubx.FieldSpec{
+		WireName: "ssl_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SslPolicyFields,
+	},
+	"TrustedClientCertificates": ubx.FieldSpec{
+		WireName: "trusted_client_certificates",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_SslProfilesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SslProfiles_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SslProfiles_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_TrustedClientCertificates_PropertiesFields = ubx.FieldMap{
-		"ClientCertIssuerDn": ubx.FieldSpec{WireName: "client_cert_issuer_dn"},
-		"Data": ubx.FieldSpec{WireName: "data"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ValidatedCertData": ubx.FieldSpec{WireName: "validated_cert_data"},
-	}
+	"ClientCertIssuerDn": ubx.FieldSpec{WireName: "client_cert_issuer_dn"},
+	"Data":               ubx.FieldSpec{WireName: "data"},
+	"ProvisioningState":  ubx.FieldSpec{WireName: "provisioning_state"},
+	"ValidatedCertData":  ubx.FieldSpec{WireName: "validated_cert_data"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_TrustedClientCertificatesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_TrustedClientCertificates_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_TrustedClientCertificates_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_TrustedRootCertificates_PropertiesFields = ubx.FieldMap{
-		"Data": ubx.FieldSpec{WireName: "data"},
-		"KeyVaultSecretId": ubx.FieldSpec{WireName: "key_vault_secret_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Data":              ubx.FieldSpec{WireName: "data"},
+	"KeyVaultSecretId":  ubx.FieldSpec{WireName: "key_vault_secret_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_TrustedRootCertificatesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_TrustedRootCertificates_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_TrustedRootCertificates_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_Properties_PathRules_PropertiesFields = ubx.FieldMap{
-		"BackendAddressPool": ubx.FieldSpec{
-			WireName: "backend_address_pool",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"BackendHttpSettings": ubx.FieldSpec{
-			WireName: "backend_http_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"FirewallPolicy": ubx.FieldSpec{
-			WireName: "firewall_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"LoadDistributionPolicy": ubx.FieldSpec{
-			WireName: "load_distribution_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"Paths": ubx.FieldSpec{WireName: "paths"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RedirectConfiguration": ubx.FieldSpec{
-			WireName: "redirect_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"RewriteRuleSet": ubx.FieldSpec{
-			WireName: "rewrite_rule_set",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-	}
+	"BackendAddressPool": ubx.FieldSpec{
+		WireName: "backend_address_pool",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"BackendHttpSettings": ubx.FieldSpec{
+		WireName: "backend_http_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"FirewallPolicy": ubx.FieldSpec{
+		WireName: "firewall_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"LoadDistributionPolicy": ubx.FieldSpec{
+		WireName: "load_distribution_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"Paths":             ubx.FieldSpec{WireName: "paths"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RedirectConfiguration": ubx.FieldSpec{
+		WireName: "redirect_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"RewriteRuleSet": ubx.FieldSpec{
+		WireName: "rewrite_rule_set",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_Properties_PathRulesFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_Properties_PathRules_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_Properties_PathRules_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_PropertiesFields = ubx.FieldMap{
-		"DefaultBackendAddressPool": ubx.FieldSpec{
-			WireName: "default_backend_address_pool",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"DefaultBackendHttpSettings": ubx.FieldSpec{
-			WireName: "default_backend_http_settings",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"DefaultLoadDistributionPolicy": ubx.FieldSpec{
-			WireName: "default_load_distribution_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"DefaultRedirectConfiguration": ubx.FieldSpec{
-			WireName: "default_redirect_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"DefaultRewriteRuleSet": ubx.FieldSpec{
-			WireName: "default_rewrite_rule_set",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"PathRules": ubx.FieldSpec{
-			WireName: "path_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_Properties_PathRulesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"DefaultBackendAddressPool": ubx.FieldSpec{
+		WireName: "default_backend_address_pool",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"DefaultBackendHttpSettings": ubx.FieldSpec{
+		WireName: "default_backend_http_settings",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"DefaultLoadDistributionPolicy": ubx.FieldSpec{
+		WireName: "default_load_distribution_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"DefaultRedirectConfiguration": ubx.FieldSpec{
+		WireName: "default_redirect_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"DefaultRewriteRuleSet": ubx.FieldSpec{
+		WireName: "default_rewrite_rule_set",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"PathRules": ubx.FieldSpec{
+		WireName: "path_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_Properties_PathRulesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_UrlPathMapsFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "etag"},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_UrlPathMaps_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfiguration_DisabledRuleGroupsFields = ubx.FieldMap{
-		"RuleGroupName": ubx.FieldSpec{WireName: "rule_group_name"},
-		"Rules": ubx.FieldSpec{WireName: "rules"},
-	}
+	"RuleGroupName": ubx.FieldSpec{WireName: "rule_group_name"},
+	"Rules":         ubx.FieldSpec{WireName: "rules"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfiguration_ExclusionsFields = ubx.FieldMap{
-		"MatchVariable": ubx.FieldSpec{WireName: "match_variable"},
-		"Selector": ubx.FieldSpec{WireName: "selector"},
-		"SelectorMatchOperator": ubx.FieldSpec{WireName: "selector_match_operator"},
-	}
+	"MatchVariable":         ubx.FieldSpec{WireName: "match_variable"},
+	"Selector":              ubx.FieldSpec{WireName: "selector"},
+	"SelectorMatchOperator": ubx.FieldSpec{WireName: "selector_match_operator"},
+}
 
 var ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfigurationFields = ubx.FieldMap{
-		"DisabledRuleGroups": ubx.FieldSpec{
-			WireName: "disabled_rule_groups",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfiguration_DisabledRuleGroupsFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Exclusions": ubx.FieldSpec{
-			WireName: "exclusions",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfiguration_ExclusionsFields,
-		},
-		"FileUploadLimitInMb": ubx.FieldSpec{WireName: "file_upload_limit_in_mb"},
-		"FirewallMode": ubx.FieldSpec{WireName: "firewall_mode"},
-		"MaxRequestBodySize": ubx.FieldSpec{WireName: "max_request_body_size"},
-		"MaxRequestBodySizeInKb": ubx.FieldSpec{WireName: "max_request_body_size_in_kb"},
-		"RequestBodyCheck": ubx.FieldSpec{WireName: "request_body_check"},
-		"RuleSetType": ubx.FieldSpec{WireName: "rule_set_type"},
-		"RuleSetVersion": ubx.FieldSpec{WireName: "rule_set_version"},
-	}
+	"DisabledRuleGroups": ubx.FieldSpec{
+		WireName: "disabled_rule_groups",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfiguration_DisabledRuleGroupsFields,
+	},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Exclusions": ubx.FieldSpec{
+		WireName: "exclusions",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfiguration_ExclusionsFields,
+	},
+	"FileUploadLimitInMb":    ubx.FieldSpec{WireName: "file_upload_limit_in_mb"},
+	"FirewallMode":           ubx.FieldSpec{WireName: "firewall_mode"},
+	"MaxRequestBodySize":     ubx.FieldSpec{WireName: "max_request_body_size"},
+	"MaxRequestBodySizeInKb": ubx.FieldSpec{WireName: "max_request_body_size_in_kb"},
+	"RequestBodyCheck":       ubx.FieldSpec{WireName: "request_body_check"},
+	"RuleSetType":            ubx.FieldSpec{WireName: "rule_set_type"},
+	"RuleSetVersion":         ubx.FieldSpec{WireName: "rule_set_version"},
+}
 
 var ApplicationgatewayApplicationGateway_PropertiesFields = ubx.FieldMap{
-		"AuthenticationCertificates": ubx.FieldSpec{
-			WireName: "authentication_certificates",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_AuthenticationCertificatesFields,
-		},
-		"AutoscaleConfiguration": ubx.FieldSpec{
-			WireName: "autoscale_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_AutoscaleConfigurationFields,
-		},
-		"BackendAddressPools": ubx.FieldSpec{
-			WireName: "backend_address_pools",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPoolsFields,
-		},
-		"BackendHttpSettingsCollection": ubx.FieldSpec{
-			WireName: "backend_http_settings_collection",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollectionFields,
-		},
-		"BackendSettingsCollection": ubx.FieldSpec{
-			WireName: "backend_settings_collection",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendSettingsCollectionFields,
-		},
-		"CustomErrorConfigurations": ubx.FieldSpec{
-			WireName: "custom_error_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_CustomErrorConfigurationsFields,
-		},
-		"DefaultPredefinedSslPolicy": ubx.FieldSpec{WireName: "default_predefined_ssl_policy"},
-		"EnableFips": ubx.FieldSpec{WireName: "enable_fips"},
-		"EnableHttp2": ubx.FieldSpec{WireName: "enable_http2"},
-		"EntraJwtvalidationConfigs": ubx.FieldSpec{
-			WireName: "entra_jwtvalidation_configs",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_EntraJwtvalidationConfigsFields,
-		},
-		"FirewallPolicy": ubx.FieldSpec{
-			WireName: "firewall_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
-		},
-		"ForceFirewallPolicyAssociation": ubx.FieldSpec{WireName: "force_firewall_policy_association"},
-		"FrontendIpconfigurations": ubx.FieldSpec{
-			WireName: "frontend_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_FrontendIpconfigurationsFields,
-		},
-		"FrontendPorts": ubx.FieldSpec{
-			WireName: "frontend_ports",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_FrontendPortsFields,
-		},
-		"GatewayIpconfigurations": ubx.FieldSpec{
-			WireName: "gateway_ipconfigurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
-		},
-		"GlobalConfiguration": ubx.FieldSpec{
-			WireName: "global_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_GlobalConfigurationFields,
-		},
-		"HttpListeners": ubx.FieldSpec{
-			WireName: "http_listeners",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_HttpListenersFields,
-		},
-		"Listeners": ubx.FieldSpec{
-			WireName: "listeners",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_ListenersFields,
-		},
-		"LoadDistributionPolicies": ubx.FieldSpec{
-			WireName: "load_distribution_policies",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_LoadDistributionPoliciesFields,
-		},
-		"OperationalState": ubx.FieldSpec{WireName: "operational_state"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnectionsFields,
-		},
-		"PrivateLinkConfigurations": ubx.FieldSpec{
-			WireName: "private_link_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurationsFields,
-		},
-		"Probes": ubx.FieldSpec{
-			WireName: "probes",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_ProbesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RedirectConfigurations": ubx.FieldSpec{
-			WireName: "redirect_configurations",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RedirectConfigurationsFields,
-		},
-		"RequestRoutingRules": ubx.FieldSpec{
-			WireName: "request_routing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RequestRoutingRulesFields,
-		},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-		"RewriteRuleSets": ubx.FieldSpec{
-			WireName: "rewrite_rule_sets",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RewriteRuleSetsFields,
-		},
-		"RoutingRules": ubx.FieldSpec{
-			WireName: "routing_rules",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_RoutingRulesFields,
-		},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SkuFields,
-		},
-		"SslCertificates": ubx.FieldSpec{
-			WireName: "ssl_certificates",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SslCertificatesFields,
-		},
-		"SslPolicy": ubx.FieldSpec{
-			WireName: "ssl_policy",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SslPolicyFields,
-		},
-		"SslProfiles": ubx.FieldSpec{
-			WireName: "ssl_profiles",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_SslProfilesFields,
-		},
-		"TrustedClientCertificates": ubx.FieldSpec{
-			WireName: "trusted_client_certificates",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_TrustedClientCertificatesFields,
-		},
-		"TrustedRootCertificates": ubx.FieldSpec{
-			WireName: "trusted_root_certificates",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_TrustedRootCertificatesFields,
-		},
-		"UrlPathMaps": ubx.FieldSpec{
-			WireName: "url_path_maps",
-			Kind: "list",
-			Fields: ApplicationgatewayApplicationGateway_Properties_UrlPathMapsFields,
-		},
-		"WebApplicationFirewallConfiguration": ubx.FieldSpec{
-			WireName: "web_application_firewall_configuration",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfigurationFields,
-		},
-	}
+	"AuthenticationCertificates": ubx.FieldSpec{
+		WireName: "authentication_certificates",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_AuthenticationCertificatesFields,
+	},
+	"AutoscaleConfiguration": ubx.FieldSpec{
+		WireName: "autoscale_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_AutoscaleConfigurationFields,
+	},
+	"BackendAddressPools": ubx.FieldSpec{
+		WireName: "backend_address_pools",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPoolsFields,
+	},
+	"BackendHttpSettingsCollection": ubx.FieldSpec{
+		WireName: "backend_http_settings_collection",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendHttpSettingsCollectionFields,
+	},
+	"BackendSettingsCollection": ubx.FieldSpec{
+		WireName: "backend_settings_collection",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendSettingsCollectionFields,
+	},
+	"CustomErrorConfigurations": ubx.FieldSpec{
+		WireName: "custom_error_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_CustomErrorConfigurationsFields,
+	},
+	"DefaultPredefinedSslPolicy": ubx.FieldSpec{WireName: "default_predefined_ssl_policy"},
+	"EnableFips":                 ubx.FieldSpec{WireName: "enable_fips"},
+	"EnableHttp2":                ubx.FieldSpec{WireName: "enable_http2"},
+	"EntraJwtvalidationConfigs": ubx.FieldSpec{
+		WireName: "entra_jwtvalidation_configs",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_EntraJwtvalidationConfigsFields,
+	},
+	"FirewallPolicy": ubx.FieldSpec{
+		WireName: "firewall_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_GatewayLoadBalancerFields,
+	},
+	"ForceFirewallPolicyAssociation": ubx.FieldSpec{WireName: "force_firewall_policy_association"},
+	"FrontendIpconfigurations": ubx.FieldSpec{
+		WireName: "frontend_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_FrontendIpconfigurationsFields,
+	},
+	"FrontendPorts": ubx.FieldSpec{
+		WireName: "frontend_ports",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_FrontendPortsFields,
+	},
+	"GatewayIpconfigurations": ubx.FieldSpec{
+		WireName: "gateway_ipconfigurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_BackendAddressPools_Properties_BackendIpconfigurations_Properties_PublicIpaddress_Properties_IpConfiguration_Properties_Subnet_Properties_ApplicationGatewayIpconfigurationsFields,
+	},
+	"GlobalConfiguration": ubx.FieldSpec{
+		WireName: "global_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_GlobalConfigurationFields,
+	},
+	"HttpListeners": ubx.FieldSpec{
+		WireName: "http_listeners",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_HttpListenersFields,
+	},
+	"Listeners": ubx.FieldSpec{
+		WireName: "listeners",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_ListenersFields,
+	},
+	"LoadDistributionPolicies": ubx.FieldSpec{
+		WireName: "load_distribution_policies",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_LoadDistributionPoliciesFields,
+	},
+	"OperationalState": ubx.FieldSpec{WireName: "operational_state"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateEndpointConnectionsFields,
+	},
+	"PrivateLinkConfigurations": ubx.FieldSpec{
+		WireName: "private_link_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_PrivateLinkConfigurationsFields,
+	},
+	"Probes": ubx.FieldSpec{
+		WireName: "probes",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_ProbesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RedirectConfigurations": ubx.FieldSpec{
+		WireName: "redirect_configurations",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RedirectConfigurationsFields,
+	},
+	"RequestRoutingRules": ubx.FieldSpec{
+		WireName: "request_routing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RequestRoutingRulesFields,
+	},
+	"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
+	"RewriteRuleSets": ubx.FieldSpec{
+		WireName: "rewrite_rule_sets",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RewriteRuleSetsFields,
+	},
+	"RoutingRules": ubx.FieldSpec{
+		WireName: "routing_rules",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_RoutingRulesFields,
+	},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SkuFields,
+	},
+	"SslCertificates": ubx.FieldSpec{
+		WireName: "ssl_certificates",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SslCertificatesFields,
+	},
+	"SslPolicy": ubx.FieldSpec{
+		WireName: "ssl_policy",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SslPolicyFields,
+	},
+	"SslProfiles": ubx.FieldSpec{
+		WireName: "ssl_profiles",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_SslProfilesFields,
+	},
+	"TrustedClientCertificates": ubx.FieldSpec{
+		WireName: "trusted_client_certificates",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_TrustedClientCertificatesFields,
+	},
+	"TrustedRootCertificates": ubx.FieldSpec{
+		WireName: "trusted_root_certificates",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_TrustedRootCertificatesFields,
+	},
+	"UrlPathMaps": ubx.FieldSpec{
+		WireName: "url_path_maps",
+		Kind:     "list",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_UrlPathMapsFields,
+	},
+	"WebApplicationFirewallConfiguration": ubx.FieldSpec{
+		WireName: "web_application_firewall_configuration",
+		Kind:     "object",
+		Fields:   ApplicationgatewayApplicationGateway_Properties_WebApplicationFirewallConfigurationFields,
+	},
+}
 
 type ApplicationgatewayApplicationGatewayConfig struct {
 	// Resource ID.
@@ -11326,16 +11325,16 @@ var ApplicationgatewayApplicationGateway = ubx.ResourceBinding{
 		"Id": ubx.FieldSpec{WireName: "id"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_IdentityFields,
+			Kind:     "object",
+			Fields:   ApplicationgatewayApplicationGateway_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationgatewayApplicationGateway_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApplicationgatewayApplicationGateway_PropertiesFields,
 		},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Tags":  ubx.FieldSpec{WireName: "tags"},
 		"Zones": ubx.FieldSpec{WireName: "zones"},
 	},
 }

@@ -4,58 +4,58 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SyncgroupsSyncGroupList_Value_Properties_Schema_Tables_Columns struct {
-	DataSize any
-	DataType any
+	DataSize   any
+	DataType   any
 	QuotedName any
 }
 
 type SyncgroupsSyncGroupList_Value_Properties_Schema_Tables struct {
-	Columns any
+	Columns    any
 	QuotedName any
 }
 
 type SyncgroupsSyncGroupList_Value_Properties_Schema struct {
 	MasterSyncMemberName any
-	Tables any
+	Tables               any
 }
 
 type SyncgroupsSyncGroupList_Value_Properties struct {
 	ConflictLoggingRetentionInDays any
-	ConflictResolutionPolicy any
-	EnableConflictLogging any
-	HubDatabasePassword any
-	HubDatabaseUserName any
-	Interval any
-	LastSyncTime any
-	PrivateEndpointName any
-	Schema any
-	SyncDatabaseId any
-	SyncState any
-	UsePrivateLinkConnection any
+	ConflictResolutionPolicy       any
+	EnableConflictLogging          any
+	HubDatabasePassword            any
+	HubDatabaseUserName            any
+	Interval                       any
+	LastSyncTime                   any
+	PrivateEndpointName            any
+	Schema                         any
+	SyncDatabaseId                 any
+	SyncState                      any
+	UsePrivateLinkConnection       any
 }
 
 type SyncgroupsSyncGroupList_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type SyncgroupsSyncGroupList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type SyncgroupsSyncGroupListConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type SyncgroupsSyncGroupListAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The SyncGroup items on this page
 	Value any
@@ -65,6 +65,6 @@ var SyncgroupsSyncGroupList = ubx.DataSourceBinding{
 	WireType: "azure_sql_syncgroups_sync_group_list",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

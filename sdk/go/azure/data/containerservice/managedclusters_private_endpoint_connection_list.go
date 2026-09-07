@@ -9,13 +9,13 @@ type ManagedclustersPrivateEndpointConnectionList_Value_Properties_PrivateEndpoi
 
 type ManagedclustersPrivateEndpointConnectionList_Value_Properties_PrivateLinkServiceConnectionState struct {
 	Description any
-	Status any
+	Status      any
 }
 
 type ManagedclustersPrivateEndpointConnectionList_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ManagedclustersPrivateEndpointConnectionList_Value struct {

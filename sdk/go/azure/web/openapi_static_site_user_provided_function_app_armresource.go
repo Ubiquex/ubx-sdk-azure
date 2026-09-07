@@ -13,10 +13,10 @@ type OpenapiStaticSiteUserProvidedFunctionAppArmresource_Properties struct {
 }
 
 var OpenapiStaticSiteUserProvidedFunctionAppArmresource_PropertiesFields = ubx.FieldMap{
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"FunctionAppRegion": ubx.FieldSpec{WireName: "function_app_region"},
-		"FunctionAppResourceId": ubx.FieldSpec{WireName: "function_app_resource_id"},
-	}
+	"CreatedOn":             ubx.FieldSpec{WireName: "created_on"},
+	"FunctionAppRegion":     ubx.FieldSpec{WireName: "function_app_region"},
+	"FunctionAppResourceId": ubx.FieldSpec{WireName: "function_app_resource_id"},
+}
 
 type OpenapiStaticSiteUserProvidedFunctionAppArmresourceConfig struct {
 	// Kind of resource.
@@ -42,8 +42,8 @@ var OpenapiStaticSiteUserProvidedFunctionAppArmresource = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStaticSiteUserProvidedFunctionAppArmresource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiStaticSiteUserProvidedFunctionAppArmresource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

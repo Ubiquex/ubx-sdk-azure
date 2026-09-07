@@ -4,19 +4,19 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList_MigrationProgressDetails struct {
-	DurationInSeconds any
-	MigrationError any
-	MigrationStatus any
+	DurationInSeconds      any
+	MigrationError         any
+	MigrationStatus        any
 	ProcessedDocumentCount any
-	SourceDocumentCount any
+	SourceDocumentCount    any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_CollectionList struct {
 	MigrationProgressDetails any
-	SourceCollection any
-	SourceDatabase any
-	TargetCollection any
-	TargetDatabase any
+	SourceCollection         any
+	SourceDatabase           any
+	TargetCollection         any
+	TargetDatabase           any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties_SourceMongoConnection struct {
@@ -44,30 +44,30 @@ type SqlmigrationDatabaseMigrationCosmosDbMongo_Properties struct {
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoConfig struct {
-	ApiVersion any
-	MigrationName any
-	ResourceGroupName any
-	SubscriptionId any
+	ApiVersion         any
+	MigrationName      any
+	ResourceGroupName  any
+	SubscriptionId     any
 	TargetResourceName any
 }
 
 type SqlmigrationDatabaseMigrationCosmosDbMongoAttrs struct {
-	ApiVersion any
+	ApiVersion    any
 	MigrationName any
 	// Database Migration Resource properties for CosmosDb for Mongo.
-	Properties any
-	ResourceGroupName any
-	SubscriptionId any
+	Properties         any
+	ResourceGroupName  any
+	SubscriptionId     any
 	TargetResourceName any
 }
 
 var SqlmigrationDatabaseMigrationCosmosDbMongo = ubx.DataSourceBinding{
 	WireType: "azure_datamigration_sqlmigration_database_migration_cosmos_db_mongo",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"MigrationName": ubx.FieldSpec{WireName: "migration_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ApiVersion":         ubx.FieldSpec{WireName: "api_version"},
+		"MigrationName":      ubx.FieldSpec{WireName: "migration_name"},
+		"ResourceGroupName":  ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":     ubx.FieldSpec{WireName: "subscription_id"},
 		"TargetResourceName": ubx.FieldSpec{WireName: "target_resource_name"},
 	},
 }

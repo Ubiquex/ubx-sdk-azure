@@ -4,27 +4,27 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkReachabilityAnalysisIntentList_Value_Properties_IpTraffic struct {
-	DestinationIps any
+	DestinationIps   any
 	DestinationPorts any
-	Protocols any
-	SourceIps any
-	SourcePorts any
+	Protocols        any
+	SourceIps        any
+	SourcePorts      any
 }
 
 type VirtualnetworkReachabilityAnalysisIntentList_Value_Properties struct {
-	Description any
+	Description           any
 	DestinationResourceId any
-	IpTraffic any
-	ProvisioningState any
-	SourceResourceId any
+	IpTraffic             any
+	ProvisioningState     any
+	SourceResourceId      any
 }
 
 type VirtualnetworkReachabilityAnalysisIntentList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -35,25 +35,25 @@ type VirtualnetworkReachabilityAnalysisIntentList_Value struct {
 
 type VirtualnetworkReachabilityAnalysisIntentListConfig struct {
 	NetworkManagerName any
-	Skip any
-	SkipToken any
-	SortKey any
-	SortValue any
-	Top any
-	WorkspaceName any
+	Skip               any
+	SkipToken          any
+	SortKey            any
+	SortValue          any
+	Top                any
+	WorkspaceName      any
 }
 
 type VirtualnetworkReachabilityAnalysisIntentListAttrs struct {
 	NetworkManagerName any
 	// The link to the next page of items
-	NextLink any
-	Skip any
+	NextLink  any
+	Skip      any
 	SkipToken any
-	SortKey any
+	SortKey   any
 	SortValue any
-	Top any
+	Top       any
 	// The ReachabilityAnalysisIntent items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
@@ -61,11 +61,11 @@ var VirtualnetworkReachabilityAnalysisIntentList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_reachability_analysis_intent_list",
 	Fields: ubx.FieldMap{
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
-		"Skip": ubx.FieldSpec{WireName: "skip"},
-		"SkipToken": ubx.FieldSpec{WireName: "skip_token"},
-		"SortKey": ubx.FieldSpec{WireName: "sort_key"},
-		"SortValue": ubx.FieldSpec{WireName: "sort_value"},
-		"Top": ubx.FieldSpec{WireName: "top"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"Skip":               ubx.FieldSpec{WireName: "skip"},
+		"SkipToken":          ubx.FieldSpec{WireName: "skip_token"},
+		"SortKey":            ubx.FieldSpec{WireName: "sort_key"},
+		"SortValue":          ubx.FieldSpec{WireName: "sort_value"},
+		"Top":                ubx.FieldSpec{WireName: "top"},
+		"WorkspaceName":      ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

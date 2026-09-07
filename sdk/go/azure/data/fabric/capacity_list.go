@@ -8,9 +8,9 @@ type CapacityList_Value_Properties_Administration struct {
 }
 
 type CapacityList_Value_Properties struct {
-	Administration any
+	Administration    any
 	ProvisioningState any
-	State any
+	State             any
 }
 
 type CapacityList_Value_Sku struct {
@@ -20,7 +20,7 @@ type CapacityList_Value_Sku struct {
 
 type CapacityList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type CapacityListConfig struct {
@@ -35,6 +35,5 @@ type CapacityListAttrs struct {
 
 var CapacityList = ubx.DataSourceBinding{
 	WireType: "azure_fabric_capacity_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

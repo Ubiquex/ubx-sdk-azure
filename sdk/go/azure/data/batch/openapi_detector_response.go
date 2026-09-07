@@ -10,12 +10,12 @@ type OpenapiDetectorResponse_Properties struct {
 
 type OpenapiDetectorResponseConfig struct {
 	AccountName any
-	DetectorId any
+	DetectorId  any
 }
 
 type OpenapiDetectorResponseAttrs struct {
 	AccountName any
-	DetectorId any
+	DetectorId  any
 	// The ETag of the resource, used for concurrency statements.
 	Etag any
 	// Detector response properties.
@@ -28,6 +28,6 @@ var OpenapiDetectorResponse = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_detector_response",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"DetectorId": ubx.FieldSpec{WireName: "detector_id"},
+		"DetectorId":  ubx.FieldSpec{WireName: "detector_id"},
 	},
 }

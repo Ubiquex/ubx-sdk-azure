@@ -5,26 +5,26 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiJobStreamList_Value_Properties struct {
 	JobStreamId any
-	StreamText any
-	StreamType any
-	Summary any
-	Time any
-	Value any
+	StreamText  any
+	StreamType  any
+	Summary     any
+	Time        any
+	Value       any
 }
 
 type OpenapiJobStreamList_Value struct {
-	Id any
+	Id         any
 	Properties any
 }
 
 type OpenapiJobStreamListConfig struct {
 	AutomationAccountName any
-	JobName any
+	JobName               any
 }
 
 type OpenapiJobStreamListAttrs struct {
 	AutomationAccountName any
-	JobName any
+	JobName               any
 	// The link to the next page of items
 	NextLink any
 	// The JobStream items on this page
@@ -35,6 +35,6 @@ var OpenapiJobStreamList = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_job_stream_list",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
+		"JobName":               ubx.FieldSpec{WireName: "job_name"},
 	},
 }

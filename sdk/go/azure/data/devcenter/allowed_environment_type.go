@@ -27,7 +27,7 @@ type AllowedEnvironmentType_SystemData struct {
 
 type AllowedEnvironmentTypeConfig struct {
 	EnvironmentTypeName any
-	ProjectName any
+	ProjectName         any
 }
 
 type AllowedEnvironmentTypeAttrs struct {
@@ -35,7 +35,7 @@ type AllowedEnvironmentTypeAttrs struct {
 	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
 	Id any
 	// The name of the resource
-	Name any
+	Name        any
 	ProjectName any
 	// Properties of an allowed environment type.
 	Properties any
@@ -49,6 +49,6 @@ var AllowedEnvironmentType = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_allowed_environment_type",
 	Fields: ubx.FieldMap{
 		"EnvironmentTypeName": ubx.FieldSpec{WireName: "environment_type_name"},
-		"ProjectName": ubx.FieldSpec{WireName: "project_name"},
+		"ProjectName":         ubx.FieldSpec{WireName: "project_name"},
 	},
 }

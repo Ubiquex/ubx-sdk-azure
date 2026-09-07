@@ -4,29 +4,29 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiIncidentTaskList_Value_Properties_CreatedBy struct {
-	Email any
-	Name any
-	ObjectId any
+	Email             any
+	Name              any
+	ObjectId          any
 	UserPrincipalName any
 }
 
 type OpenapiIncidentTaskList_Value_Properties struct {
-	CreatedBy any
-	CreatedTimeUtc any
-	Description any
-	LastModifiedBy any
+	CreatedBy           any
+	CreatedTimeUtc      any
+	Description         any
+	LastModifiedBy      any
 	LastModifiedTimeUtc any
-	Status any
-	Title any
+	Status              any
+	Title               any
 }
 
 type OpenapiIncidentTaskList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type OpenapiIncidentTaskListConfig struct {
-	IncidentId any
+	IncidentId    any
 	WorkspaceName any
 }
 
@@ -35,14 +35,14 @@ type OpenapiIncidentTaskListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// List of incident tasks.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiIncidentTaskList = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_incident_task_list",
 	Fields: ubx.FieldMap{
-		"IncidentId": ubx.FieldSpec{WireName: "incident_id"},
+		"IncidentId":    ubx.FieldSpec{WireName: "incident_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

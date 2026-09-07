@@ -4,14 +4,14 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCustomer_Properties_EnabledAzurePlans struct {
-	ProductId any
+	ProductId      any
 	SkuDescription any
-	SkuId any
+	SkuId          any
 }
 
 type OpenapiCustomer_Properties_Resellers struct {
 	Description any
-	ResellerId any
+	ResellerId  any
 }
 
 type OpenapiCustomer_Properties struct {
@@ -36,13 +36,13 @@ type OpenapiCustomer_Properties struct {
 type OpenapiCustomerConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	CustomerName any
+	CustomerName       any
 }
 
 type OpenapiCustomerAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	CustomerName any
+	CustomerName       any
 	// A partner's customer.
 	Properties any
 	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
@@ -54,6 +54,6 @@ var OpenapiCustomer = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"CustomerName": ubx.FieldSpec{WireName: "customer_name"},
+		"CustomerName":       ubx.FieldSpec{WireName: "customer_name"},
 	},
 }

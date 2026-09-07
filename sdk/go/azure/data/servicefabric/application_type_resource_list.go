@@ -12,28 +12,28 @@ type ApplicationTypeResourceList_Value struct {
 }
 
 type ApplicationTypeResourceListConfig struct {
-	ApiVersion any
-	ClusterName any
+	ApiVersion        any
+	ClusterName       any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type ApplicationTypeResourceListAttrs struct {
-	ApiVersion any
+	ApiVersion  any
 	ClusterName any
 	// URL to get the next set of application type list results if there are any.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
-	Value any
+	SubscriptionId    any
+	Value             any
 }
 
 var ApplicationTypeResourceList = ubx.DataSourceBinding{
 	WireType: "azure_servicefabric_application_type_resource_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ClusterName":       ubx.FieldSpec{WireName: "cluster_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

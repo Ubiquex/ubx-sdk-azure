@@ -7,22 +7,22 @@ type AccountList_Value_Properties_AccountStatus_ErrorDetails_Details_Details str
 }
 
 type AccountList_Value_Properties_AccountStatus_ErrorDetails_Details struct {
-	Code any
+	Code    any
 	Details any
 	Message any
-	Target any
+	Target  any
 }
 
 type AccountList_Value_Properties_AccountStatus_ErrorDetails struct {
-	Code any
+	Code    any
 	Details any
 	Message any
-	Target any
+	Target  any
 }
 
 type AccountList_Value_Properties_AccountStatus struct {
 	AccountProvisioningState any
-	ErrorDetails any
+	ErrorDetails             any
 }
 
 type AccountList_Value_Properties_CloudConnectors struct {
@@ -30,15 +30,15 @@ type AccountList_Value_Properties_CloudConnectors struct {
 }
 
 type AccountList_Value_Properties_Endpoints struct {
-	Catalog any
+	Catalog  any
 	Guardian any
-	Scan any
+	Scan     any
 }
 
 type AccountList_Value_Properties_ManagedResources struct {
 	EventHubNamespace any
-	ResourceGroup any
-	StorageAccount any
+	ResourceGroup     any
+	StorageAccount    any
 }
 
 type AccountList_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -47,14 +47,14 @@ type AccountList_Value_Properties_PrivateEndpointConnections_Properties_PrivateE
 
 type AccountList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type AccountList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type AccountList_Value_Properties_PrivateEndpointConnections struct {
@@ -62,34 +62,34 @@ type AccountList_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type AccountList_Value_Properties struct {
-	AccountStatus any
-	CloudConnectors any
-	CreatedAt any
-	CreatedBy any
-	CreatedByObjectId any
-	Endpoints any
-	FriendlyName any
-	ManagedEventHubState any
-	ManagedResourceGroupName any
-	ManagedResources any
+	AccountStatus                       any
+	CloudConnectors                     any
+	CreatedAt                           any
+	CreatedBy                           any
+	CreatedByObjectId                   any
+	Endpoints                           any
+	FriendlyName                        any
+	ManagedEventHubState                any
+	ManagedResourceGroupName            any
+	ManagedResources                    any
 	ManagedResourcesPublicNetworkAccess any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
+	PrivateEndpointConnections          any
+	ProvisioningState                   any
+	PublicNetworkAccess                 any
 }
 
 type AccountList_Value_Sku struct {
 	Capacity any
-	Name any
+	Name     any
 }
 
 type AccountList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type AccountListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
@@ -98,7 +98,7 @@ type AccountListAttrs struct {
 	// Total item count.
 	Count any
 	// The Url of next result page.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// Collection of items of type results.
 	Value any
@@ -107,7 +107,7 @@ type AccountListAttrs struct {
 var AccountList = ubx.DataSourceBinding{
 	WireType: "azure_purview_account_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -47,41 +47,41 @@ type OpenapiBatchEndpoint_Sku struct {
 }
 
 var OpenapiBatchEndpoint_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiBatchEndpoint_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiBatchEndpoint_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiBatchEndpoint_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiBatchEndpoint_Properties_DefaultsFields = ubx.FieldMap{
-		"DeploymentName": ubx.FieldSpec{WireName: "deployment_name"},
-	}
+	"DeploymentName": ubx.FieldSpec{WireName: "deployment_name"},
+}
 
 var OpenapiBatchEndpoint_PropertiesFields = ubx.FieldMap{
-		"Defaults": ubx.FieldSpec{
-			WireName: "defaults",
-			Kind: "object",
-			Fields: OpenapiBatchEndpoint_Properties_DefaultsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Defaults": ubx.FieldSpec{
+		WireName: "defaults",
+		Kind:     "object",
+		Fields:   OpenapiBatchEndpoint_Properties_DefaultsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiBatchEndpoint_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Family": ubx.FieldSpec{WireName: "family"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Family":   ubx.FieldSpec{WireName: "family"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Size":     ubx.FieldSpec{WireName: "size"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiBatchEndpointConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -118,20 +118,20 @@ var OpenapiBatchEndpoint = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiBatchEndpoint_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiBatchEndpoint_IdentityFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBatchEndpoint_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBatchEndpoint_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiBatchEndpoint_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiBatchEndpoint_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

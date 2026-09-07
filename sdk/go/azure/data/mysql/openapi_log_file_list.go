@@ -4,11 +4,11 @@ package mysql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiLogFileList_Value_Properties struct {
-	CreatedTime any
+	CreatedTime      any
 	LastModifiedTime any
-	SizeInKb any
-	Type any
-	Url any
+	SizeInKb         any
+	Type             any
+	Url              any
 }
 
 type OpenapiLogFileList_Value struct {
@@ -21,7 +21,7 @@ type OpenapiLogFileListConfig struct {
 
 type OpenapiLogFileListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The LogFile items on this page
 	Value any

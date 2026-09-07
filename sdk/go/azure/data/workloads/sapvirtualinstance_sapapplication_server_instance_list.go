@@ -7,7 +7,7 @@ type SapvirtualinstanceSapapplicationServerInstanceList_Value_Properties_Errors_
 }
 
 type SapvirtualinstanceSapapplicationServerInstanceList_Value_Properties_Errors_Properties struct {
-	Code any
+	Code    any
 	Details any
 	Message any
 }
@@ -21,27 +21,27 @@ type SapvirtualinstanceSapapplicationServerInstanceList_Value_Properties_LoadBal
 }
 
 type SapvirtualinstanceSapapplicationServerInstanceList_Value_Properties_VmDetails struct {
-	StorageDetails any
-	Type any
+	StorageDetails   any
+	Type             any
 	VirtualMachineId any
 }
 
 type SapvirtualinstanceSapapplicationServerInstanceList_Value_Properties struct {
-	Errors any
-	GatewayPort any
-	Health any
-	Hostname any
-	IcmHttpPort any
-	IcmHttpsPort any
-	InstanceNo any
-	IpAddress any
-	KernelPatch any
-	KernelVersion any
+	Errors              any
+	GatewayPort         any
+	Health              any
+	Hostname            any
+	IcmHttpPort         any
+	IcmHttpsPort        any
+	InstanceNo          any
+	IpAddress           any
+	KernelPatch         any
+	KernelVersion       any
 	LoadBalancerDetails any
-	ProvisioningState any
-	Status any
-	Subnet any
-	VmDetails any
+	ProvisioningState   any
+	Status              any
+	Subnet              any
+	VmDetails           any
 }
 
 type SapvirtualinstanceSapapplicationServerInstanceList_Value struct {
@@ -54,7 +54,7 @@ type SapvirtualinstanceSapapplicationServerInstanceListConfig struct {
 
 type SapvirtualinstanceSapapplicationServerInstanceListAttrs struct {
 	// Gets the value of next link.
-	NextLink any
+	NextLink               any
 	SapVirtualInstanceName any
 	// Gets the list of SAP Application Server instance resources.
 	Value any

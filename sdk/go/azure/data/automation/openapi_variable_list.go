@@ -4,11 +4,11 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVariableList_Value_Properties struct {
-	CreationTime any
-	Description any
-	IsEncrypted any
+	CreationTime     any
+	Description      any
+	IsEncrypted      any
 	LastModifiedTime any
-	Value any
+	Value            any
 }
 
 type OpenapiVariableList_Value struct {

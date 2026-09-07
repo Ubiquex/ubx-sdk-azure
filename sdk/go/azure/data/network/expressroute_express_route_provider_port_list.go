@@ -4,18 +4,18 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRouteProviderPortList_Value_Properties struct {
-	OverprovisionFactor any
-	PeeringLocation any
-	PortBandwidthInMbps any
-	PortPairDescriptor any
-	PrimaryAzurePort any
+	OverprovisionFactor      any
+	PeeringLocation          any
+	PortBandwidthInMbps      any
+	PortPairDescriptor       any
+	PrimaryAzurePort         any
 	RemainingBandwidthInMbps any
-	SecondaryAzurePort any
-	UsedBandwidthInMbps any
+	SecondaryAzurePort       any
+	UsedBandwidthInMbps      any
 }
 
 type ExpressrouteExpressRouteProviderPortList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -31,6 +31,5 @@ type ExpressrouteExpressRouteProviderPortListAttrs struct {
 
 var ExpressrouteExpressRouteProviderPortList = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_provider_port_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

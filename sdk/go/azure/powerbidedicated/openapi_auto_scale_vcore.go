@@ -20,15 +20,15 @@ type OpenapiAutoScaleVcore_Sku struct {
 }
 
 var OpenapiAutoScaleVcore_PropertiesFields = ubx.FieldMap{
-		"CapacityObjectId": ubx.FieldSpec{WireName: "capacity_object_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"CapacityObjectId":  ubx.FieldSpec{WireName: "capacity_object_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var OpenapiAutoScaleVcore_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 type OpenapiAutoScaleVcoreConfig struct {
 	// The geo-location where the resource lives
@@ -58,13 +58,13 @@ var OpenapiAutoScaleVcore = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAutoScaleVcore_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAutoScaleVcore_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiAutoScaleVcore_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiAutoScaleVcore_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

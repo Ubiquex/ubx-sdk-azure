@@ -8,14 +8,14 @@ type VirtualnetworkIpGroupList_Value_Properties_FirewallPolicies struct {
 }
 
 type VirtualnetworkIpGroupList_Value_Properties struct {
-	FirewallPolicies any
-	Firewalls any
-	IpAddresses any
+	FirewallPolicies  any
+	Firewalls         any
+	IpAddresses       any
 	ProvisioningState any
 }
 
 type VirtualnetworkIpGroupList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -31,6 +31,5 @@ type VirtualnetworkIpGroupListAttrs struct {
 
 var VirtualnetworkIpGroupList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_ip_group_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

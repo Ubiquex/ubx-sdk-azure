@@ -10,17 +10,17 @@ type ImageList_Value_Properties_RecommendedMachineConfiguration_Memory struct {
 
 type ImageList_Value_Properties_RecommendedMachineConfiguration struct {
 	Memory any
-	VCpus any
+	VCpus  any
 }
 
 type ImageList_Value_Properties struct {
-	Description any
-	HibernateSupport any
-	Offer any
-	ProvisioningState any
-	Publisher any
+	Description                     any
+	HibernateSupport                any
+	Offer                           any
+	ProvisioningState               any
+	Publisher                       any
 	RecommendedMachineConfiguration any
-	Sku any
+	Sku                             any
 }
 
 type ImageList_Value struct {
@@ -29,12 +29,12 @@ type ImageList_Value struct {
 
 type ImageListConfig struct {
 	DevCenterName any
-	GalleryName any
+	GalleryName   any
 }
 
 type ImageListAttrs struct {
 	DevCenterName any
-	GalleryName any
+	GalleryName   any
 	// URL to get the next set of results if there are any.
 	NextLink any
 	// Current page of results.
@@ -45,6 +45,6 @@ var ImageList = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image_list",
 	Fields: ubx.FieldMap{
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
-		"GalleryName": ubx.FieldSpec{WireName: "gallery_name"},
+		"GalleryName":   ubx.FieldSpec{WireName: "gallery_name"},
 	},
 }

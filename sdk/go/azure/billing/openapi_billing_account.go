@@ -149,6 +149,5 @@ type OpenapiBillingAccountAttrs struct {
 
 var OpenapiBillingAccount = ubx.ResourceBinding{
 	WireType: "azure_billing_openapi_billing_account",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

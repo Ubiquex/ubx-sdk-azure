@@ -4,38 +4,38 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPackageList_Value_Properties_AllOf struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type OpenapiPackageList_Value_Properties_ContentLink_ContentHash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type OpenapiPackageList_Value_Properties_ContentLink struct {
 	ContentHash any
-	Uri any
-	Version any
+	Uri         any
+	Version     any
 }
 
 type OpenapiPackageList_Value_Properties_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type OpenapiPackageList_Value_Properties struct {
-	AllOf any
-	ContentLink any
-	Default any
-	Error any
+	AllOf             any
+	ContentLink       any
+	Default           any
+	Error             any
 	ProvisioningState any
-	SizeInBytes any
-	Version any
+	SizeInBytes       any
+	Version           any
 }
 
 type OpenapiPackageList_Value struct {
@@ -43,14 +43,14 @@ type OpenapiPackageList_Value struct {
 }
 
 type OpenapiPackageListConfig struct {
-	AutomationAccountName any
+	AutomationAccountName  any
 	RuntimeEnvironmentName any
 }
 
 type OpenapiPackageListAttrs struct {
 	AutomationAccountName any
 	// The link to the next page of items
-	NextLink any
+	NextLink               any
 	RuntimeEnvironmentName any
 	// The Package items on this page
 	Value any
@@ -59,7 +59,7 @@ type OpenapiPackageListAttrs struct {
 var OpenapiPackageList = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_package_list",
 	Fields: ubx.FieldMap{
-		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
+		"AutomationAccountName":  ubx.FieldSpec{WireName: "automation_account_name"},
 		"RuntimeEnvironmentName": ubx.FieldSpec{WireName: "runtime_environment_name"},
 	},
 }

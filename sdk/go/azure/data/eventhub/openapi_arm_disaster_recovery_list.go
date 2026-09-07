@@ -4,15 +4,15 @@ package eventhub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiArmDisasterRecoveryList_Value_Properties struct {
-	AlternateName any
-	PartnerNamespace any
+	AlternateName                     any
+	PartnerNamespace                  any
 	PendingReplicationOperationsCount any
-	ProvisioningState any
-	Role any
+	ProvisioningState                 any
+	Role                              any
 }
 
 type OpenapiArmDisasterRecoveryList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

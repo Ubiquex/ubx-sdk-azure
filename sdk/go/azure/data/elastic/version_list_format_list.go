@@ -18,7 +18,7 @@ type VersionListFormatListConfig struct {
 type VersionListFormatListAttrs struct {
 	// The link to the next page of items
 	NextLink any
-	Region any
+	Region   any
 	// The ElasticVersionListFormat items on this page
 	Value any
 }

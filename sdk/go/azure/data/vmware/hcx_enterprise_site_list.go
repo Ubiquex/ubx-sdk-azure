@@ -4,9 +4,9 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HcxEnterpriseSiteList_Value_Properties struct {
-	ActivationKey any
+	ActivationKey     any
 	ProvisioningState any
-	Status any
+	Status            any
 }
 
 type HcxEnterpriseSiteList_Value struct {
@@ -19,7 +19,7 @@ type HcxEnterpriseSiteListConfig struct {
 
 type HcxEnterpriseSiteListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The HcxEnterpriseSite items on this page
 	Value any

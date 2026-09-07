@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AppliancesApplianceList_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type AppliancesApplianceList_Value_Properties_InfrastructureConfig struct {
@@ -14,16 +14,16 @@ type AppliancesApplianceList_Value_Properties_InfrastructureConfig struct {
 }
 
 type AppliancesApplianceList_Value_Properties struct {
-	Distro any
+	Distro               any
 	InfrastructureConfig any
-	ProvisioningState any
-	PublicKey any
-	Status any
-	Version any
+	ProvisioningState    any
+	PublicKey            any
+	Status               any
+	Version              any
 }
 
 type AppliancesApplianceList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -39,6 +39,5 @@ type AppliancesApplianceListAttrs struct {
 
 var AppliancesApplianceList = ubx.DataSourceBinding{
 	WireType: "azure_resourceconnector_appliances_appliance_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

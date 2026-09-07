@@ -17,18 +17,18 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	Direction any
+	AddressPrefixes           any
+	Direction                 any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	Subscriptions any
+	Subscriptions             any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
@@ -42,11 +42,11 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
 	Description any
-	IssueType any
+	IssueType   any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -79,23 +79,23 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties struct {
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationConfig struct {
-	NamespaceName any
+	NamespaceName           any
 	ResourceAssociationName any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationAttrs struct {
 	// The geo-location where the resource lives
-	Location any
+	Location      any
 	NamespaceName any
 	// Properties of NetworkSecurityPerimeterConfiguration
-	Properties any
+	Properties              any
 	ResourceAssociationName any
 }
 
 var OpenapiNetworkSecurityPerimeterConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_eventhub_openapi_network_security_perimeter_configuration",
 	Fields: ubx.FieldMap{
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"NamespaceName":           ubx.FieldSpec{WireName: "namespace_name"},
 		"ResourceAssociationName": ubx.FieldSpec{WireName: "resource_association_name"},
 	},
 }

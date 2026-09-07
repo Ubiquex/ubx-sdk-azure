@@ -4,16 +4,16 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAdvancedPlatformMetricsRuleList_Value_Properties_RuleConfig struct {
-	FilterType any
+	FilterType   any
 	FilterValues any
 }
 
 type OpenapiAdvancedPlatformMetricsRuleList_Value_Properties struct {
-	Enabled any
+	Enabled          any
 	LastModifiedTime any
-	MetricsEmitted any
-	RuleConfig any
-	RuleType any
+	MetricsEmitted   any
+	RuleConfig       any
+	RuleType         any
 }
 
 type OpenapiAdvancedPlatformMetricsRuleList_Value struct {

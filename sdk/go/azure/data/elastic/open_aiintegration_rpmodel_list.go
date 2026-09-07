@@ -4,11 +4,11 @@ package elastic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenAiintegrationRpmodelList_Value_Properties struct {
-	Key any
-	LastRefreshAt any
-	OpenAiconnectorId any
+	Key                    any
+	LastRefreshAt          any
+	OpenAiconnectorId      any
 	OpenAiresourceEndpoint any
-	OpenAiresourceId any
+	OpenAiresourceId       any
 }
 
 type OpenAiintegrationRpmodelList_Value struct {

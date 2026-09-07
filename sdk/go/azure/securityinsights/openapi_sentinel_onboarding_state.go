@@ -9,8 +9,8 @@ type OpenapiSentinelOnboardingState_Properties struct {
 }
 
 var OpenapiSentinelOnboardingState_PropertiesFields = ubx.FieldMap{
-		"CustomerManagedKey": ubx.FieldSpec{WireName: "customer_managed_key"},
-	}
+	"CustomerManagedKey": ubx.FieldSpec{WireName: "customer_managed_key"},
+}
 
 type OpenapiSentinelOnboardingStateConfig struct {
 	// Etag of the azure resource
@@ -32,8 +32,8 @@ var OpenapiSentinelOnboardingState = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSentinelOnboardingState_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSentinelOnboardingState_PropertiesFields,
 		},
 	},
 }

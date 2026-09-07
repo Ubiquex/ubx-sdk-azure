@@ -78,64 +78,64 @@ type FluidRelayServer_SystemData struct {
 }
 
 var FluidRelayServer_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var FluidRelayServer_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: FluidRelayServer_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   FluidRelayServer_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var FluidRelayServer_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields = ubx.FieldMap{
-		"IdentityType": ubx.FieldSpec{WireName: "identity_type"},
-		"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
-	}
+	"IdentityType":                   ubx.FieldSpec{WireName: "identity_type"},
+	"UserAssignedIdentityResourceId": ubx.FieldSpec{WireName: "user_assigned_identity_resource_id"},
+}
 
 var FluidRelayServer_Properties_Encryption_CustomerManagedKeyEncryptionFields = ubx.FieldMap{
-		"KeyEncryptionKeyIdentity": ubx.FieldSpec{
-			WireName: "key_encryption_key_identity",
-			Kind: "object",
-			Fields: FluidRelayServer_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields,
-		},
-		"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
-	}
+	"KeyEncryptionKeyIdentity": ubx.FieldSpec{
+		WireName: "key_encryption_key_identity",
+		Kind:     "object",
+		Fields:   FluidRelayServer_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentityFields,
+	},
+	"KeyEncryptionKeyUrl": ubx.FieldSpec{WireName: "key_encryption_key_url"},
+}
 
 var FluidRelayServer_Properties_EncryptionFields = ubx.FieldMap{
-		"CustomerManagedKeyEncryption": ubx.FieldSpec{
-			WireName: "customer_managed_key_encryption",
-			Kind: "object",
-			Fields: FluidRelayServer_Properties_Encryption_CustomerManagedKeyEncryptionFields,
-		},
-	}
+	"CustomerManagedKeyEncryption": ubx.FieldSpec{
+		WireName: "customer_managed_key_encryption",
+		Kind:     "object",
+		Fields:   FluidRelayServer_Properties_Encryption_CustomerManagedKeyEncryptionFields,
+	},
+}
 
 var FluidRelayServer_Properties_FluidRelayEndpointsFields = ubx.FieldMap{
-		"OrdererEndpoints": ubx.FieldSpec{WireName: "orderer_endpoints"},
-		"ServiceEndpoints": ubx.FieldSpec{WireName: "service_endpoints"},
-		"StorageEndpoints": ubx.FieldSpec{WireName: "storage_endpoints"},
-	}
+	"OrdererEndpoints": ubx.FieldSpec{WireName: "orderer_endpoints"},
+	"ServiceEndpoints": ubx.FieldSpec{WireName: "service_endpoints"},
+	"StorageEndpoints": ubx.FieldSpec{WireName: "storage_endpoints"},
+}
 
 var FluidRelayServer_PropertiesFields = ubx.FieldMap{
-		"Encryption": ubx.FieldSpec{
-			WireName: "encryption",
-			Kind: "object",
-			Fields: FluidRelayServer_Properties_EncryptionFields,
-		},
-		"FluidRelayEndpoints": ubx.FieldSpec{
-			WireName: "fluid_relay_endpoints",
-			Kind: "object",
-			Fields: FluidRelayServer_Properties_FluidRelayEndpointsFields,
-		},
-		"FrsTenantId": ubx.FieldSpec{WireName: "frs_tenant_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Storagesku": ubx.FieldSpec{WireName: "storagesku"},
-	}
+	"Encryption": ubx.FieldSpec{
+		WireName: "encryption",
+		Kind:     "object",
+		Fields:   FluidRelayServer_Properties_EncryptionFields,
+	},
+	"FluidRelayEndpoints": ubx.FieldSpec{
+		WireName: "fluid_relay_endpoints",
+		Kind:     "object",
+		Fields:   FluidRelayServer_Properties_FluidRelayEndpointsFields,
+	},
+	"FrsTenantId":       ubx.FieldSpec{WireName: "frs_tenant_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Storagesku":        ubx.FieldSpec{WireName: "storagesku"},
+}
 
 type FluidRelayServerConfig struct {
 	// Identity for the resource.
@@ -166,14 +166,14 @@ var FluidRelayServer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: FluidRelayServer_IdentityFields,
+			Kind:     "object",
+			Fields:   FluidRelayServer_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FluidRelayServer_PropertiesFields,
+			Kind:     "object",
+			Fields:   FluidRelayServer_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

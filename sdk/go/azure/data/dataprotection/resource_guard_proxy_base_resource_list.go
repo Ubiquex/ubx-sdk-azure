@@ -9,10 +9,10 @@ type ResourceGuardProxyBaseResourceList_Value_Properties_ResourceGuardOperationD
 }
 
 type ResourceGuardProxyBaseResourceList_Value_Properties struct {
-	Description any
-	LastUpdatedTime any
+	Description                   any
+	LastUpdatedTime               any
 	ResourceGuardOperationDetails any
-	ResourceGuardResourceId any
+	ResourceGuardResourceId       any
 }
 
 type ResourceGuardProxyBaseResourceList_Value struct {
@@ -27,7 +27,7 @@ type ResourceGuardProxyBaseResourceListAttrs struct {
 	// The uri to fetch the next page of resources. Call ListNext() fetches next page of resources.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

@@ -4,73 +4,73 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOnlineEndpointList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiOnlineEndpointList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiOnlineEndpointList_Value_Properties struct {
-	Compute any
-	MirrorTraffic any
-	ProvisioningState any
+	Compute             any
+	MirrorTraffic       any
+	ProvisioningState   any
 	PublicNetworkAccess any
-	Traffic any
+	Traffic             any
 }
 
 type OpenapiOnlineEndpointList_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiOnlineEndpointList_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiOnlineEndpointListConfig struct {
-	ComputeType any
-	Count any
-	Name any
-	OrderBy any
-	Properties any
-	Tags any
+	ComputeType   any
+	Count         any
+	Name          any
+	OrderBy       any
+	Properties    any
+	Tags          any
 	WorkspaceName any
 }
 
 type OpenapiOnlineEndpointListAttrs struct {
 	ComputeType any
-	Count any
-	Name any
+	Count       any
+	Name        any
 	// The link to the next page of items
-	NextLink any
-	OrderBy any
+	NextLink   any
+	OrderBy    any
 	Properties any
-	Tags any
+	Tags       any
 	// The OnlineEndpoint items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiOnlineEndpointList = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_online_endpoint_list",
 	Fields: ubx.FieldMap{
-		"ComputeType": ubx.FieldSpec{WireName: "compute_type"},
-		"Count": ubx.FieldSpec{WireName: "count"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"ComputeType":   ubx.FieldSpec{WireName: "compute_type"},
+		"Count":         ubx.FieldSpec{WireName: "count"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"OrderBy":       ubx.FieldSpec{WireName: "order_by"},
+		"Properties":    ubx.FieldSpec{WireName: "properties"},
+		"Tags":          ubx.FieldSpec{WireName: "tags"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

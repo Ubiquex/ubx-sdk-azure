@@ -15,11 +15,11 @@ type DtlServiceRunner_Identity struct {
 }
 
 var DtlServiceRunner_IdentityFields = ubx.FieldMap{
-		"ClientSecretUrl": ubx.FieldSpec{WireName: "client_secret_url"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"ClientSecretUrl": ubx.FieldSpec{WireName: "client_secret_url"},
+	"PrincipalId":     ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":        ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":            ubx.FieldSpec{WireName: "type"},
+}
 
 type DtlServiceRunnerConfig struct {
 	// Properties of a managed identity
@@ -48,11 +48,11 @@ var DtlServiceRunner = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DtlServiceRunner_IdentityFields,
+			Kind:     "object",
+			Fields:   DtlServiceRunner_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Tags":     ubx.FieldSpec{WireName: "tags"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
 	},
 }

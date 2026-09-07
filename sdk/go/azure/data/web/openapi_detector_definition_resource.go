@@ -15,26 +15,26 @@ type OpenapiDetectorDefinitionResource_Properties struct {
 }
 
 type OpenapiDetectorDefinitionResourceConfig struct {
-	DetectorName any
+	DetectorName       any
 	DiagnosticCategory any
-	SiteName any
+	SiteName           any
 }
 
 type OpenapiDetectorDefinitionResourceAttrs struct {
-	DetectorName any
+	DetectorName       any
 	DiagnosticCategory any
 	// Kind of resource.
 	Kind any
 	// Class representing detector definition
 	Properties any
-	SiteName any
+	SiteName   any
 }
 
 var OpenapiDetectorDefinitionResource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_detector_definition_resource",
 	Fields: ubx.FieldMap{
-		"DetectorName": ubx.FieldSpec{WireName: "detector_name"},
+		"DetectorName":       ubx.FieldSpec{WireName: "detector_name"},
 		"DiagnosticCategory": ubx.FieldSpec{WireName: "diagnostic_category"},
-		"SiteName": ubx.FieldSpec{WireName: "site_name"},
+		"SiteName":           ubx.FieldSpec{WireName: "site_name"},
 	},
 }

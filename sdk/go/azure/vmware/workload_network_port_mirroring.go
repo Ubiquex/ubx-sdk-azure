@@ -21,14 +21,14 @@ type WorkloadNetworkPortMirroring_Properties struct {
 }
 
 var WorkloadNetworkPortMirroring_PropertiesFields = ubx.FieldMap{
-		"Destination": ubx.FieldSpec{WireName: "destination"},
-		"Direction": ubx.FieldSpec{WireName: "direction"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Revision": ubx.FieldSpec{WireName: "revision"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Destination":       ubx.FieldSpec{WireName: "destination"},
+	"Direction":         ubx.FieldSpec{WireName: "direction"},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Revision":          ubx.FieldSpec{WireName: "revision"},
+	"Source":            ubx.FieldSpec{WireName: "source"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+}
 
 type WorkloadNetworkPortMirroringConfig struct {
 	// NSX Port Mirroring Properties
@@ -45,8 +45,8 @@ var WorkloadNetworkPortMirroring = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WorkloadNetworkPortMirroring_PropertiesFields,
+			Kind:     "object",
+			Fields:   WorkloadNetworkPortMirroring_PropertiesFields,
 		},
 	},
 }

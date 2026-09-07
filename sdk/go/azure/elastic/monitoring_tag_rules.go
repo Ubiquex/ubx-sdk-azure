@@ -31,30 +31,30 @@ type MonitoringTagRules_Properties struct {
 }
 
 var MonitoringTagRules_Properties_LogRules_FilteringTagsFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Action": ubx.FieldSpec{WireName: "action"},
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var MonitoringTagRules_Properties_LogRulesFields = ubx.FieldMap{
-		"FilteringTags": ubx.FieldSpec{
-			WireName: "filtering_tags",
-			Kind: "list",
-			Fields: MonitoringTagRules_Properties_LogRules_FilteringTagsFields,
-		},
-		"SendAadLogs": ubx.FieldSpec{WireName: "send_aad_logs"},
-		"SendActivityLogs": ubx.FieldSpec{WireName: "send_activity_logs"},
-		"SendSubscriptionLogs": ubx.FieldSpec{WireName: "send_subscription_logs"},
-	}
+	"FilteringTags": ubx.FieldSpec{
+		WireName: "filtering_tags",
+		Kind:     "list",
+		Fields:   MonitoringTagRules_Properties_LogRules_FilteringTagsFields,
+	},
+	"SendAadLogs":          ubx.FieldSpec{WireName: "send_aad_logs"},
+	"SendActivityLogs":     ubx.FieldSpec{WireName: "send_activity_logs"},
+	"SendSubscriptionLogs": ubx.FieldSpec{WireName: "send_subscription_logs"},
+}
 
 var MonitoringTagRules_PropertiesFields = ubx.FieldMap{
-		"LogRules": ubx.FieldSpec{
-			WireName: "log_rules",
-			Kind: "object",
-			Fields: MonitoringTagRules_Properties_LogRulesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"LogRules": ubx.FieldSpec{
+		WireName: "log_rules",
+		Kind:     "object",
+		Fields:   MonitoringTagRules_Properties_LogRulesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type MonitoringTagRulesConfig struct {
 	// Definition of the properties for a TagRules resource.
@@ -71,8 +71,8 @@ var MonitoringTagRules = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: MonitoringTagRules_PropertiesFields,
+			Kind:     "object",
+			Fields:   MonitoringTagRules_PropertiesFields,
 		},
 	},
 }

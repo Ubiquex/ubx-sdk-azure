@@ -4,39 +4,39 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SyncgroupsSyncFullSchemaPropertiesList_Value_Tables_Columns struct {
-	DataSize any
-	DataType any
-	ErrorId any
-	HasError any
+	DataSize     any
+	DataType     any
+	ErrorId      any
+	HasError     any
 	IsPrimaryKey any
-	Name any
-	QuotedName any
+	Name         any
+	QuotedName   any
 }
 
 type SyncgroupsSyncFullSchemaPropertiesList_Value_Tables struct {
-	Columns any
-	ErrorId any
-	HasError any
-	Name any
+	Columns    any
+	ErrorId    any
+	HasError   any
+	Name       any
 	QuotedName any
 }
 
 type SyncgroupsSyncFullSchemaPropertiesList_Value struct {
 	LastUpdateTime any
-	Tables any
+	Tables         any
 }
 
 type SyncgroupsSyncFullSchemaPropertiesListConfig struct {
-	DatabaseName any
-	ServerName any
+	DatabaseName  any
+	ServerName    any
 	SyncGroupName any
 }
 
 type SyncgroupsSyncFullSchemaPropertiesListAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
-	ServerName any
+	NextLink      any
+	ServerName    any
 	SyncGroupName any
 	// The SyncFullSchemaProperties items on this page
 	Value any
@@ -45,8 +45,8 @@ type SyncgroupsSyncFullSchemaPropertiesListAttrs struct {
 var SyncgroupsSyncFullSchemaPropertiesList = ubx.DataSourceBinding{
 	WireType: "azure_sql_syncgroups_sync_full_schema_properties_list",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"DatabaseName":  ubx.FieldSpec{WireName: "database_name"},
+		"ServerName":    ubx.FieldSpec{WireName: "server_name"},
 		"SyncGroupName": ubx.FieldSpec{WireName: "sync_group_name"},
 	},
 }

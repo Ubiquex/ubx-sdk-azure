@@ -4,19 +4,19 @@ package powerbidedicated
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAutoScaleVcoreList_Value_Properties struct {
-	CapacityObjectId any
+	CapacityObjectId  any
 	ProvisioningState any
 }
 
 type OpenapiAutoScaleVcoreList_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type OpenapiAutoScaleVcoreList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiAutoScaleVcoreListConfig struct {
@@ -30,6 +30,5 @@ type OpenapiAutoScaleVcoreListAttrs struct {
 
 var OpenapiAutoScaleVcoreList = ubx.DataSourceBinding{
 	WireType: "azure_powerbidedicated_openapi_auto_scale_vcore_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

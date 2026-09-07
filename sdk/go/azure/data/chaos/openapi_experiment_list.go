@@ -4,14 +4,14 @@ package chaos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiExperimentList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiExperimentList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,8 +21,8 @@ type OpenapiExperimentList_Value_Properties_Selectors_Filter struct {
 
 type OpenapiExperimentList_Value_Properties_Selectors struct {
 	Filter any
-	Id any
-	Type any
+	Id     any
+	Type   any
 }
 
 type OpenapiExperimentList_Value_Properties_Steps_Branches_Actions struct {
@@ -32,35 +32,35 @@ type OpenapiExperimentList_Value_Properties_Steps_Branches_Actions struct {
 
 type OpenapiExperimentList_Value_Properties_Steps_Branches struct {
 	Actions any
-	Name any
+	Name    any
 }
 
 type OpenapiExperimentList_Value_Properties_Steps struct {
 	Branches any
-	Name any
+	Name     any
 }
 
 type OpenapiExperimentList_Value_Properties struct {
 	ProvisioningState any
-	Selectors any
-	Steps any
+	Selectors         any
+	Steps             any
 }
 
 type OpenapiExperimentList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
 type OpenapiExperimentListConfig struct {
 	ContinuationToken any
-	Running any
+	Running           any
 }
 
 type OpenapiExperimentListAttrs struct {
 	ContinuationToken any
 	// The link to the next page of items
 	NextLink any
-	Running any
+	Running  any
 	// The Experiment items on this page
 	Value any
 }
@@ -69,6 +69,6 @@ var OpenapiExperimentList = ubx.DataSourceBinding{
 	WireType: "azure_chaos_openapi_experiment_list",
 	Fields: ubx.FieldMap{
 		"ContinuationToken": ubx.FieldSpec{WireName: "continuation_token"},
-		"Running": ubx.FieldSpec{WireName: "running"},
+		"Running":           ubx.FieldSpec{WireName: "running"},
 	},
 }

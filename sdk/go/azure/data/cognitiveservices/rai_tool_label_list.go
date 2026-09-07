@@ -9,19 +9,19 @@ type RaiToolLabelList_Value_Properties_AccountScope struct {
 
 type RaiToolLabelList_Value_Properties_ProjectScopes struct {
 	LabelValues any
-	Project any
+	Project     any
 }
 
 type RaiToolLabelList_Value_Properties struct {
-	AccountScope any
-	ProjectScopes any
+	AccountScope       any
+	ProjectScopes      any
 	ToolConnectionName any
 }
 
 type RaiToolLabelList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type RaiToolLabelListConfig struct {

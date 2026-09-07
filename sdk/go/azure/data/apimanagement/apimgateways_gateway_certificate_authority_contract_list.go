@@ -23,6 +23,5 @@ type ApimgatewaysGatewayCertificateAuthorityContractListAttrs struct {
 
 var ApimgatewaysGatewayCertificateAuthorityContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimgateways_gateway_certificate_authority_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

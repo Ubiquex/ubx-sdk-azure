@@ -4,10 +4,10 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceReplicationProtectionCluster_Properties_ClusterRegisteredNodes struct {
-	BiosId any
-	ClusterNodeFqdn any
+	BiosId                  any
+	ClusterNodeFqdn         any
 	IsSharedDiskVirtualNode any
-	MachineId any
+	MachineId               any
 }
 
 type ServiceReplicationProtectionCluster_Properties_CurrentScenario struct {
@@ -20,38 +20,38 @@ type ServiceReplicationProtectionCluster_Properties_CurrentScenario struct {
 }
 
 type ServiceReplicationProtectionCluster_Properties_HealthErrors_InnerHealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceReplicationProtectionCluster_Properties_HealthErrors struct {
-	CreationTimeUtc any
-	CustomerResolvability any
-	EntityId any
-	ErrorCategory any
-	ErrorCode any
-	ErrorId any
-	ErrorLevel any
-	ErrorMessage any
-	ErrorSource any
-	ErrorType any
-	InnerHealthErrors any
-	PossibleCauses any
-	RecommendedAction any
+	CreationTimeUtc              any
+	CustomerResolvability        any
+	EntityId                     any
+	ErrorCategory                any
+	ErrorCode                    any
+	ErrorId                      any
+	ErrorLevel                   any
+	ErrorMessage                 any
+	ErrorSource                  any
+	ErrorType                    any
+	InnerHealthErrors            any
+	PossibleCauses               any
+	RecommendedAction            any
 	RecoveryProviderErrorMessage any
-	SummaryMessage any
+	SummaryMessage               any
 }
 
 type ServiceReplicationProtectionCluster_Properties_ProviderSpecificDetails struct {
@@ -142,30 +142,30 @@ type ServiceReplicationProtectionCluster_Properties struct {
 }
 
 type ServiceReplicationProtectionClusterConfig struct {
-	FabricName any
-	JobId any
-	ProtectionContainerName any
+	FabricName                       any
+	JobId                            any
+	ProtectionContainerName          any
 	ReplicationProtectionClusterName any
-	ResourceName any
+	ResourceName                     any
 }
 
 type ServiceReplicationProtectionClusterAttrs struct {
 	FabricName any
-	JobId any
+	JobId      any
 	// Replication protection cluster custom data details.
-	Properties any
-	ProtectionContainerName any
+	Properties                       any
+	ProtectionContainerName          any
 	ReplicationProtectionClusterName any
-	ResourceName any
+	ResourceName                     any
 }
 
 var ServiceReplicationProtectionCluster = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_replication_protection_cluster",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"JobId": ubx.FieldSpec{WireName: "job_id"},
-		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
+		"FabricName":                       ubx.FieldSpec{WireName: "fabric_name"},
+		"JobId":                            ubx.FieldSpec{WireName: "job_id"},
+		"ProtectionContainerName":          ubx.FieldSpec{WireName: "protection_container_name"},
 		"ReplicationProtectionClusterName": ubx.FieldSpec{WireName: "replication_protection_cluster_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":                     ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

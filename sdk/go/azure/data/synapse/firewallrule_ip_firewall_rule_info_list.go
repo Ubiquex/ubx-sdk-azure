@@ -4,9 +4,9 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallruleIpFirewallRuleInfoList_Value_Properties struct {
-	EndIpAddress any
+	EndIpAddress      any
 	ProvisioningState any
-	StartIpAddress any
+	StartIpAddress    any
 }
 
 type FirewallruleIpFirewallRuleInfoList_Value struct {
@@ -25,6 +25,5 @@ type FirewallruleIpFirewallRuleInfoListAttrs struct {
 
 var FirewallruleIpFirewallRuleInfoList = ubx.DataSourceBinding{
 	WireType: "azure_synapse_firewallrule_ip_firewall_rule_info_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

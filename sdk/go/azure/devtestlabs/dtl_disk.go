@@ -29,18 +29,18 @@ type DtlDisk_Properties struct {
 }
 
 var DtlDisk_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"DiskBlobName": ubx.FieldSpec{WireName: "disk_blob_name"},
-		"DiskSizeGiB": ubx.FieldSpec{WireName: "disk_size_gi_b"},
-		"DiskType": ubx.FieldSpec{WireName: "disk_type"},
-		"DiskUri": ubx.FieldSpec{WireName: "disk_uri"},
-		"HostCaching": ubx.FieldSpec{WireName: "host_caching"},
-		"LeasedByLabVmId": ubx.FieldSpec{WireName: "leased_by_lab_vm_id"},
-		"ManagedDiskId": ubx.FieldSpec{WireName: "managed_disk_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StorageAccountId": ubx.FieldSpec{WireName: "storage_account_id"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-	}
+	"CreatedDate":       ubx.FieldSpec{WireName: "created_date"},
+	"DiskBlobName":      ubx.FieldSpec{WireName: "disk_blob_name"},
+	"DiskSizeGiB":       ubx.FieldSpec{WireName: "disk_size_gi_b"},
+	"DiskType":          ubx.FieldSpec{WireName: "disk_type"},
+	"DiskUri":           ubx.FieldSpec{WireName: "disk_uri"},
+	"HostCaching":       ubx.FieldSpec{WireName: "host_caching"},
+	"LeasedByLabVmId":   ubx.FieldSpec{WireName: "leased_by_lab_vm_id"},
+	"ManagedDiskId":     ubx.FieldSpec{WireName: "managed_disk_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"StorageAccountId":  ubx.FieldSpec{WireName: "storage_account_id"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+}
 
 type DtlDiskConfig struct {
 	// The geo-location where the resource lives
@@ -70,8 +70,8 @@ var DtlDisk = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlDisk_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlDisk_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

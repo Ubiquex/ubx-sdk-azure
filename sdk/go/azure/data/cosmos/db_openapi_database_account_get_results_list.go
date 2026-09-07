@@ -4,14 +4,14 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -24,14 +24,14 @@ type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_ApiProperties struc
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_BackupPolicy_MigrationState struct {
-	StartTime any
-	Status any
+	StartTime  any
+	Status     any
 	TargetType any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_BackupPolicy struct {
 	MigrationState any
-	Type any
+	Type           any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_Capabilities struct {
@@ -44,22 +44,22 @@ type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_Capacity struct {
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_ConsistencyPolicy struct {
 	DefaultConsistencyLevel any
-	MaxIntervalInSeconds any
-	MaxStalenessPrefix any
+	MaxIntervalInSeconds    any
+	MaxStalenessPrefix      any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_Cors struct {
-	AllowedHeaders any
-	AllowedMethods any
-	AllowedOrigins any
-	ExposedHeaders any
+	AllowedHeaders  any
+	AllowedMethods  any
+	AllowedOrigins  any
+	ExposedHeaders  any
 	MaxAgeInSeconds any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_FailoverPolicies struct {
 	FailoverPriority any
-	Id any
-	LocationName any
+	Id               any
+	LocationName     any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_IpRules struct {
@@ -71,18 +71,18 @@ type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_KeysMetadata_Primar
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_KeysMetadata struct {
-	PrimaryMasterKey any
-	PrimaryReadonlyMasterKey any
-	SecondaryMasterKey any
+	PrimaryMasterKey           any
+	PrimaryReadonlyMasterKey   any
+	SecondaryMasterKey         any
 	SecondaryReadonlyMasterKey any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_Locations struct {
-	DocumentEndpoint any
-	FailoverPriority any
-	Id any
-	IsZoneRedundant any
-	LocationName any
+	DocumentEndpoint  any
+	FailoverPriority  any
+	Id                any
+	IsZoneRedundant   any
+	LocationName      any
 	ProvisioningState any
 }
 
@@ -92,15 +92,15 @@ type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_PrivateEndpointConn
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupId any
-	PrivateEndpoint any
+	GroupId                           any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_PrivateEndpointConnections struct {
@@ -109,82 +109,82 @@ type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_PrivateEndpointConn
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_RestoreParameters_DatabasesToRestore struct {
 	CollectionNames any
-	DatabaseName any
+	DatabaseName    any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_RestoreParameters_GremlinDatabasesToRestore struct {
 	DatabaseName any
-	GraphNames any
+	GraphNames   any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_RestoreParameters struct {
-	DatabasesToRestore any
+	DatabasesToRestore        any
 	GremlinDatabasesToRestore any
-	RestoreMode any
-	RestoreSource any
-	RestoreTimestampInUtc any
-	SourceBackupLocation any
-	TablesToRestore any
+	RestoreMode               any
+	RestoreSource             any
+	RestoreTimestampInUtc     any
+	SourceBackupLocation      any
+	TablesToRestore           any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties_VirtualNetworkRules struct {
-	Id any
+	Id                               any
 	IgnoreMissingVnetServiceEndpoint any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value_Properties struct {
-	AnalyticalStorageConfiguration any
-	ApiProperties any
-	BackupPolicy any
-	Capabilities any
-	Capacity any
-	ConnectorOffer any
-	ConsistencyPolicy any
-	Cors any
-	CreateMode any
-	CustomerManagedKeyStatus any
-	DatabaseAccountOfferType any
-	DefaultIdentity any
-	DefaultPriorityLevel any
-	DisableKeyBasedMetadataWriteAccess any
-	DisableLocalAuth any
-	DocumentEndpoint any
-	EnableAnalyticalStorage any
-	EnableAutomaticFailover any
-	EnableBurstCapacity any
-	EnableCassandraConnector any
-	EnableFreeTier any
-	EnableMultipleWriteLocations any
-	EnablePartitionMerge any
-	EnablePerRegionPerPartitionAutoscale any
-	EnablePriorityBasedExecution any
+	AnalyticalStorageConfiguration             any
+	ApiProperties                              any
+	BackupPolicy                               any
+	Capabilities                               any
+	Capacity                                   any
+	ConnectorOffer                             any
+	ConsistencyPolicy                          any
+	Cors                                       any
+	CreateMode                                 any
+	CustomerManagedKeyStatus                   any
+	DatabaseAccountOfferType                   any
+	DefaultIdentity                            any
+	DefaultPriorityLevel                       any
+	DisableKeyBasedMetadataWriteAccess         any
+	DisableLocalAuth                           any
+	DocumentEndpoint                           any
+	EnableAnalyticalStorage                    any
+	EnableAutomaticFailover                    any
+	EnableBurstCapacity                        any
+	EnableCassandraConnector                   any
+	EnableFreeTier                             any
+	EnableMultipleWriteLocations               any
+	EnablePartitionMerge                       any
+	EnablePerRegionPerPartitionAutoscale       any
+	EnablePriorityBasedExecution               any
 	EnforceHierarchicalPartitionKeyIdLastLevel any
-	FailoverPolicies any
-	InstanceId any
-	IpRules any
-	IsVirtualNetworkFilterEnabled any
-	KeyVaultKeyUri any
-	KeyVaultKeyUriVersion any
-	KeysMetadata any
-	Locations any
-	MinimalTlsVersion any
-	NetworkAclBypass any
-	NetworkAclBypassResourceIds any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	ReadLocations any
-	RestoreParameters any
-	VirtualNetworkRules any
-	WriteLocations any
+	FailoverPolicies                           any
+	InstanceId                                 any
+	IpRules                                    any
+	IsVirtualNetworkFilterEnabled              any
+	KeyVaultKeyUri                             any
+	KeyVaultKeyUriVersion                      any
+	KeysMetadata                               any
+	Locations                                  any
+	MinimalTlsVersion                          any
+	NetworkAclBypass                           any
+	NetworkAclBypassResourceIds                any
+	PrivateEndpointConnections                 any
+	ProvisioningState                          any
+	PublicNetworkAccess                        any
+	ReadLocations                              any
+	RestoreParameters                          any
+	VirtualNetworkRules                        any
+	WriteLocations                             any
 }
 
 type DbOpenapiDatabaseAccountGetResultsList_Value struct {
-	Identity any
-	Kind any
-	Location any
+	Identity   any
+	Kind       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiDatabaseAccountGetResultsListConfig struct {
@@ -198,6 +198,5 @@ type DbOpenapiDatabaseAccountGetResultsListAttrs struct {
 
 var DbOpenapiDatabaseAccountGetResultsList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_database_account_get_results_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

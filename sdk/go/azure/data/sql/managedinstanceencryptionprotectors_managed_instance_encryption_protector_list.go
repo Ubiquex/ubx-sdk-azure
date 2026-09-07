@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorList_Value_Properties struct {
 	AutoRotationEnabled any
-	ServerKeyName any
-	ServerKeyType any
-	Thumbprint any
-	Uri any
+	ServerKeyName       any
+	ServerKeyType       any
+	Thumbprint          any
+	Uri                 any
 }
 
 type ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

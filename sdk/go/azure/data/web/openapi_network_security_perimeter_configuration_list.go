@@ -4,13 +4,13 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_NetworkSecurityPerimeter struct {
-	Id any
-	Location any
+	Id            any
+	Location      any
 	PerimeterGuid any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_Profile_AccessRules_Properties_AppliesTo struct {
-	Features any
+	Features     any
 	ResourceType any
 }
 
@@ -19,54 +19,54 @@ type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_Profile_A
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	AppliesTo any
-	Direction any
-	EmailAddresses any
+	AddressPrefixes           any
+	AppliesTo                 any
+	Direction                 any
+	EmailAddresses            any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	PhoneNumbers any
-	ServiceTags any
-	Subscriptions any
+	PhoneNumbers              any
+	ServiceTags               any
+	Subscriptions             any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_Profile struct {
-	AccessRules any
-	AccessRulesVersion any
+	AccessRules               any
+	AccessRulesVersion        any
 	DiagnosticSettingsVersion any
-	EnabledLogCategories any
-	Name any
+	EnabledLogCategories      any
+	Name                      any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_ProvisioningIssues_Properties struct {
-	Description any
-	IssueType any
-	Severity any
+	Description          any
+	IssueType            any
+	Severity             any
 	SuggestedAccessRules any
 	SuggestedResourceIds any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties_ResourceAssociations struct {
 	AccessMode any
-	Name any
+	Name       any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value_Properties struct {
 	NetworkSecurityPerimeter any
-	Profile any
-	ProvisioningIssues any
-	ProvisioningState any
-	ResourceAssociations any
+	Profile                  any
+	ProvisioningIssues       any
+	ProvisioningState        any
+	ResourceAssociations     any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationList_Value struct {

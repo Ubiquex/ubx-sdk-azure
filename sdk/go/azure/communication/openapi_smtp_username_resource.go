@@ -13,10 +13,10 @@ type OpenapiSmtpUsernameResource_Properties struct {
 }
 
 var OpenapiSmtpUsernameResource_PropertiesFields = ubx.FieldMap{
-		"EntraApplicationId": ubx.FieldSpec{WireName: "entra_application_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Username": ubx.FieldSpec{WireName: "username"},
-	}
+	"EntraApplicationId": ubx.FieldSpec{WireName: "entra_application_id"},
+	"TenantId":           ubx.FieldSpec{WireName: "tenant_id"},
+	"Username":           ubx.FieldSpec{WireName: "username"},
+}
 
 type OpenapiSmtpUsernameResourceConfig struct {
 	// A class that describes the properties of a SmtpUsername resource.
@@ -33,8 +33,8 @@ var OpenapiSmtpUsernameResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSmtpUsernameResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSmtpUsernameResource_PropertiesFields,
 		},
 	},
 }

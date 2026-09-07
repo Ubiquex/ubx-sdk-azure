@@ -20,19 +20,19 @@ type VirtualwanRoutingIntent_Properties struct {
 }
 
 var VirtualwanRoutingIntent_Properties_RoutingPoliciesFields = ubx.FieldMap{
-		"Destinations": ubx.FieldSpec{WireName: "destinations"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NextHop": ubx.FieldSpec{WireName: "next_hop"},
-	}
+	"Destinations": ubx.FieldSpec{WireName: "destinations"},
+	"Name":         ubx.FieldSpec{WireName: "name"},
+	"NextHop":      ubx.FieldSpec{WireName: "next_hop"},
+}
 
 var VirtualwanRoutingIntent_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoutingPolicies": ubx.FieldSpec{
-			WireName: "routing_policies",
-			Kind: "list",
-			Fields: VirtualwanRoutingIntent_Properties_RoutingPoliciesFields,
-		},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoutingPolicies": ubx.FieldSpec{
+		WireName: "routing_policies",
+		Kind:     "list",
+		Fields:   VirtualwanRoutingIntent_Properties_RoutingPoliciesFields,
+	},
+}
 
 type VirtualwanRoutingIntentConfig struct {
 	// Name of the resource.
@@ -58,8 +58,8 @@ var VirtualwanRoutingIntent = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanRoutingIntent_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanRoutingIntent_PropertiesFields,
 		},
 	},
 }

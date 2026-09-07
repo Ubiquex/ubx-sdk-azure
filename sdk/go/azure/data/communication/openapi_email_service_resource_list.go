@@ -4,7 +4,7 @@ package communication
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEmailServiceResourceList_Value_Properties struct {
-	DataLocation any
+	DataLocation      any
 	ProvisioningState any
 }
 
@@ -24,6 +24,5 @@ type OpenapiEmailServiceResourceListAttrs struct {
 
 var OpenapiEmailServiceResourceList = ubx.DataSourceBinding{
 	WireType: "azure_communication_openapi_email_service_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

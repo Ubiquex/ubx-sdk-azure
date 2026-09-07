@@ -4,32 +4,32 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BlobauditingDatabaseBlobAuditingPolicyList_Value_Properties struct {
-	AuditActionsAndGroups any
-	IsAzureMonitorTargetEnabled any
-	IsManagedIdentityInUse any
-	IsStorageSecondaryKeyInUse any
-	QueueDelayMs any
-	RetentionDays any
-	State any
-	StorageAccountAccessKey any
+	AuditActionsAndGroups        any
+	IsAzureMonitorTargetEnabled  any
+	IsManagedIdentityInUse       any
+	IsStorageSecondaryKeyInUse   any
+	QueueDelayMs                 any
+	RetentionDays                any
+	State                        any
+	StorageAccountAccessKey      any
 	StorageAccountSubscriptionId any
-	StorageEndpoint any
+	StorageEndpoint              any
 }
 
 type BlobauditingDatabaseBlobAuditingPolicyList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type BlobauditingDatabaseBlobAuditingPolicyListConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type BlobauditingDatabaseBlobAuditingPolicyListAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The DatabaseBlobAuditingPolicy items on this page
 	Value any
@@ -39,6 +39,6 @@ var BlobauditingDatabaseBlobAuditingPolicyList = ubx.DataSourceBinding{
 	WireType: "azure_sql_blobauditing_database_blob_auditing_policy_list",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

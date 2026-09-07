@@ -55,64 +55,63 @@ type SapvirtualinstanceSapdatabaseInstance_Properties struct {
 	VmDetails any
 }
 
-var SapvirtualinstanceSapdatabaseInstance_Properties_Errors_Properties_DetailsFields = ubx.FieldMap{
-	}
+var SapvirtualinstanceSapdatabaseInstance_Properties_Errors_Properties_DetailsFields = ubx.FieldMap{}
 
 var SapvirtualinstanceSapdatabaseInstance_Properties_Errors_PropertiesFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: SapvirtualinstanceSapdatabaseInstance_Properties_Errors_Properties_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   SapvirtualinstanceSapdatabaseInstance_Properties_Errors_Properties_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var SapvirtualinstanceSapdatabaseInstance_Properties_ErrorsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapdatabaseInstance_Properties_Errors_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapdatabaseInstance_Properties_Errors_PropertiesFields,
+	},
+}
 
 var SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetailsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var SapvirtualinstanceSapdatabaseInstance_Properties_VmDetailsFields = ubx.FieldMap{
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StorageDetails": ubx.FieldSpec{
-			WireName: "storage_details",
-			Kind: "list",
-			Fields: SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetailsFields,
-		},
-		"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
-	}
+	"Status": ubx.FieldSpec{WireName: "status"},
+	"StorageDetails": ubx.FieldSpec{
+		WireName: "storage_details",
+		Kind:     "list",
+		Fields:   SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetailsFields,
+	},
+	"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
+}
 
 var SapvirtualinstanceSapdatabaseInstance_PropertiesFields = ubx.FieldMap{
-		"DatabaseSid": ubx.FieldSpec{WireName: "database_sid"},
-		"DatabaseType": ubx.FieldSpec{WireName: "database_type"},
-		"Errors": ubx.FieldSpec{
-			WireName: "errors",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapdatabaseInstance_Properties_ErrorsFields,
-		},
-		"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
-		"LoadBalancerDetails": ubx.FieldSpec{
-			WireName: "load_balancer_details",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetailsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Subnet": ubx.FieldSpec{WireName: "subnet"},
-		"VmDetails": ubx.FieldSpec{
-			WireName: "vm_details",
-			Kind: "list",
-			Fields: SapvirtualinstanceSapdatabaseInstance_Properties_VmDetailsFields,
-		},
-	}
+	"DatabaseSid":  ubx.FieldSpec{WireName: "database_sid"},
+	"DatabaseType": ubx.FieldSpec{WireName: "database_type"},
+	"Errors": ubx.FieldSpec{
+		WireName: "errors",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapdatabaseInstance_Properties_ErrorsFields,
+	},
+	"IpAddress": ubx.FieldSpec{WireName: "ip_address"},
+	"LoadBalancerDetails": ubx.FieldSpec{
+		WireName: "load_balancer_details",
+		Kind:     "object",
+		Fields:   SapvirtualinstanceSapdatabaseInstance_Properties_LoadBalancerDetailsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"Subnet":            ubx.FieldSpec{WireName: "subnet"},
+	"VmDetails": ubx.FieldSpec{
+		WireName: "vm_details",
+		Kind:     "list",
+		Fields:   SapvirtualinstanceSapdatabaseInstance_Properties_VmDetailsFields,
+	},
+}
 
 type SapvirtualinstanceSapdatabaseInstanceConfig struct {
 	// The geo-location where the resource lives
@@ -138,8 +137,8 @@ var SapvirtualinstanceSapdatabaseInstance = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SapvirtualinstanceSapdatabaseInstance_PropertiesFields,
+			Kind:     "object",
+			Fields:   SapvirtualinstanceSapdatabaseInstance_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

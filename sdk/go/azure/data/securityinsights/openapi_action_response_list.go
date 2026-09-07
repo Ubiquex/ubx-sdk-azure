@@ -8,28 +8,28 @@ type OpenapiActionResponseList_Value_Properties struct {
 }
 
 type OpenapiActionResponseList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type OpenapiActionResponseListConfig struct {
-	RuleId any
+	RuleId        any
 	WorkspaceName any
 }
 
 type OpenapiActionResponseListAttrs struct {
 	// The link to the next page of items
 	NextLink any
-	RuleId any
+	RuleId   any
 	// The ActionResponse items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiActionResponseList = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_action_response_list",
 	Fields: ubx.FieldMap{
-		"RuleId": ubx.FieldSpec{WireName: "rule_id"},
+		"RuleId":        ubx.FieldSpec{WireName: "rule_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

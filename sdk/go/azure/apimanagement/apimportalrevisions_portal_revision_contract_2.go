@@ -21,14 +21,14 @@ type ApimportalrevisionsPortalRevisionContract2_Properties struct {
 }
 
 var ApimportalrevisionsPortalRevisionContract2_PropertiesFields = ubx.FieldMap{
-		"CreatedDateTime": ubx.FieldSpec{WireName: "created_date_time"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IsCurrent": ubx.FieldSpec{WireName: "is_current"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StatusDetails": ubx.FieldSpec{WireName: "status_details"},
-		"UpdatedDateTime": ubx.FieldSpec{WireName: "updated_date_time"},
-	}
+	"CreatedDateTime":   ubx.FieldSpec{WireName: "created_date_time"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"IsCurrent":         ubx.FieldSpec{WireName: "is_current"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"StatusDetails":     ubx.FieldSpec{WireName: "status_details"},
+	"UpdatedDateTime":   ubx.FieldSpec{WireName: "updated_date_time"},
+}
 
 type ApimportalrevisionsPortalRevisionContract2Config struct {
 	Properties any
@@ -43,8 +43,8 @@ var ApimportalrevisionsPortalRevisionContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimportalrevisionsPortalRevisionContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimportalrevisionsPortalRevisionContract2_PropertiesFields,
 		},
 	},
 }

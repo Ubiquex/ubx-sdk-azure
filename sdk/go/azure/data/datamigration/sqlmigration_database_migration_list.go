@@ -4,18 +4,18 @@ package datamigration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationDatabaseMigrationList_Value_Properties_SourceSqlConnection struct {
-	Authentication any
-	DataSource any
-	EncryptConnection any
-	Password any
+	Authentication         any
+	DataSource             any
+	EncryptConnection      any
+	Password               any
 	TrustServerCertificate any
-	UserName any
+	UserName               any
 }
 
 type SqlmigrationDatabaseMigrationList_Value_Properties struct {
-	SourceDatabaseName any
-	SourceServerName any
-	SourceSqlConnection any
+	SourceDatabaseName      any
+	SourceServerName        any
+	SourceSqlConnection     any
 	TargetDatabaseCollation any
 }
 
@@ -24,27 +24,27 @@ type SqlmigrationDatabaseMigrationList_Value struct {
 }
 
 type SqlmigrationDatabaseMigrationListConfig struct {
-	ApiVersion any
-	ResourceGroupName any
+	ApiVersion              any
+	ResourceGroupName       any
 	SqlMigrationServiceName any
-	SubscriptionId any
+	SubscriptionId          any
 }
 
 type SqlmigrationDatabaseMigrationListAttrs struct {
-	ApiVersion any
-	NextLink any
-	ResourceGroupName any
+	ApiVersion              any
+	NextLink                any
+	ResourceGroupName       any
 	SqlMigrationServiceName any
-	SubscriptionId any
-	Value any
+	SubscriptionId          any
+	Value                   any
 }
 
 var SqlmigrationDatabaseMigrationList = ubx.DataSourceBinding{
 	WireType: "azure_datamigration_sqlmigration_database_migration_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
+		"ApiVersion":              ubx.FieldSpec{WireName: "api_version"},
+		"ResourceGroupName":       ubx.FieldSpec{WireName: "resource_group_name"},
 		"SqlMigrationServiceName": ubx.FieldSpec{WireName: "sql_migration_service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":          ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -53,7 +53,7 @@ type BmsBackupEngineBaseResource_Properties struct {
 
 type BmsBackupEngineBaseResourceConfig struct {
 	BackupEngineName any
-	VaultName any
+	VaultName        any
 }
 
 type BmsBackupEngineBaseResourceAttrs struct {
@@ -65,7 +65,7 @@ type BmsBackupEngineBaseResourceAttrs struct {
 	// The base backup engine class. All workload specific backup engines derive from this class.
 	Properties any
 	// Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 
@@ -73,6 +73,6 @@ var BmsBackupEngineBaseResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_backup_engine_base_resource",
 	Fields: ubx.FieldMap{
 		"BackupEngineName": ubx.FieldSpec{WireName: "backup_engine_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":        ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

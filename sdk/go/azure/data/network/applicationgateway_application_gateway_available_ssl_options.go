@@ -38,6 +38,5 @@ type ApplicationgatewayApplicationGatewayAvailableSslOptionsAttrs struct {
 
 var ApplicationgatewayApplicationGatewayAvailableSslOptions = ubx.DataSourceBinding{
 	WireType: "azure_network_applicationgateway_application_gateway_available_ssl_options",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

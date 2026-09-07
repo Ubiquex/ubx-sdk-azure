@@ -5,25 +5,25 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicySetDefinitionList_Value_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicySetDefinitionList_Value_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicySetDefinitionList_Value_Properties_PolicyDefinitionGroups struct {
 	AdditionalMetadataId any
-	Category any
-	Description any
-	DisplayName any
-	Name any
+	Category             any
+	Description          any
+	DisplayName          any
+	Name                 any
 }
 
 type OpenapiPolicySetDefinitionList_Value_Properties_PolicyDefinitions_Parameters struct {
@@ -31,25 +31,25 @@ type OpenapiPolicySetDefinitionList_Value_Properties_PolicyDefinitions_Parameter
 }
 
 type OpenapiPolicySetDefinitionList_Value_Properties_PolicyDefinitions struct {
-	DefinitionVersion any
-	EffectiveDefinitionVersion any
-	GroupNames any
-	LatestDefinitionVersion any
-	Parameters any
-	PolicyDefinitionId any
+	DefinitionVersion           any
+	EffectiveDefinitionVersion  any
+	GroupNames                  any
+	LatestDefinitionVersion     any
+	Parameters                  any
+	PolicyDefinitionId          any
 	PolicyDefinitionReferenceId any
 }
 
 type OpenapiPolicySetDefinitionList_Value_Properties struct {
-	Description any
-	DisplayName any
-	Metadata any
-	Parameters any
+	Description            any
+	DisplayName            any
+	Metadata               any
+	Parameters             any
 	PolicyDefinitionGroups any
-	PolicyDefinitions any
-	PolicyType any
-	Version any
-	Versions any
+	PolicyDefinitions      any
+	PolicyType             any
+	Version                any
+	Versions               any
 }
 
 type OpenapiPolicySetDefinitionList_Value struct {
@@ -68,6 +68,5 @@ type OpenapiPolicySetDefinitionListAttrs struct {
 
 var OpenapiPolicySetDefinitionList = ubx.DataSourceBinding{
 	WireType: "azure_resources_openapi_policy_set_definition_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

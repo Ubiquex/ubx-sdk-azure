@@ -67,48 +67,48 @@ type OpenapiBackupItem_Properties struct {
 }
 
 var OpenapiBackupItem_Properties_BackupScheduleFields = ubx.FieldMap{
-		"FrequencyInterval": ubx.FieldSpec{WireName: "frequency_interval"},
-		"FrequencyUnit": ubx.FieldSpec{WireName: "frequency_unit"},
-		"KeepAtLeastOneBackup": ubx.FieldSpec{WireName: "keep_at_least_one_backup"},
-		"LastExecutionTime": ubx.FieldSpec{WireName: "last_execution_time"},
-		"RetentionPeriodInDays": ubx.FieldSpec{WireName: "retention_period_in_days"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-	}
+	"FrequencyInterval":     ubx.FieldSpec{WireName: "frequency_interval"},
+	"FrequencyUnit":         ubx.FieldSpec{WireName: "frequency_unit"},
+	"KeepAtLeastOneBackup":  ubx.FieldSpec{WireName: "keep_at_least_one_backup"},
+	"LastExecutionTime":     ubx.FieldSpec{WireName: "last_execution_time"},
+	"RetentionPeriodInDays": ubx.FieldSpec{WireName: "retention_period_in_days"},
+	"StartTime":             ubx.FieldSpec{WireName: "start_time"},
+}
 
 var OpenapiBackupItem_Properties_DatabasesFields = ubx.FieldMap{
-		"ConnectionString": ubx.FieldSpec{WireName: "connection_string"},
-		"ConnectionStringName": ubx.FieldSpec{WireName: "connection_string_name"},
-		"DatabaseType": ubx.FieldSpec{WireName: "database_type"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"ConnectionString":     ubx.FieldSpec{WireName: "connection_string"},
+	"ConnectionStringName": ubx.FieldSpec{WireName: "connection_string_name"},
+	"DatabaseType":         ubx.FieldSpec{WireName: "database_type"},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiBackupItem_PropertiesFields = ubx.FieldMap{
-		"BackupName": ubx.FieldSpec{WireName: "backup_name"},
-		"BackupSchedule": ubx.FieldSpec{
-			WireName: "backup_schedule",
-			Kind: "object",
-			Fields: OpenapiBackupItem_Properties_BackupScheduleFields,
-		},
-		"BlobName": ubx.FieldSpec{WireName: "blob_name"},
-		"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"Databases": ubx.FieldSpec{
-			WireName: "databases",
-			Kind: "list",
-			Fields: OpenapiBackupItem_Properties_DatabasesFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"FinishedTimeStamp": ubx.FieldSpec{WireName: "finished_time_stamp"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"LastRestoreTimeStamp": ubx.FieldSpec{WireName: "last_restore_time_stamp"},
-		"Log": ubx.FieldSpec{WireName: "log"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Scheduled": ubx.FieldSpec{WireName: "scheduled"},
-		"SizeInBytes": ubx.FieldSpec{WireName: "size_in_bytes"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StorageAccountUrl": ubx.FieldSpec{WireName: "storage_account_url"},
-		"WebsiteSizeInBytes": ubx.FieldSpec{WireName: "website_size_in_bytes"},
-	}
+	"BackupName": ubx.FieldSpec{WireName: "backup_name"},
+	"BackupSchedule": ubx.FieldSpec{
+		WireName: "backup_schedule",
+		Kind:     "object",
+		Fields:   OpenapiBackupItem_Properties_BackupScheduleFields,
+	},
+	"BlobName":      ubx.FieldSpec{WireName: "blob_name"},
+	"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
+	"Created":       ubx.FieldSpec{WireName: "created"},
+	"Databases": ubx.FieldSpec{
+		WireName: "databases",
+		Kind:     "list",
+		Fields:   OpenapiBackupItem_Properties_DatabasesFields,
+	},
+	"Enabled":              ubx.FieldSpec{WireName: "enabled"},
+	"FinishedTimeStamp":    ubx.FieldSpec{WireName: "finished_time_stamp"},
+	"Id":                   ubx.FieldSpec{WireName: "id"},
+	"LastRestoreTimeStamp": ubx.FieldSpec{WireName: "last_restore_time_stamp"},
+	"Log":                  ubx.FieldSpec{WireName: "log"},
+	"Name":                 ubx.FieldSpec{WireName: "name"},
+	"Scheduled":            ubx.FieldSpec{WireName: "scheduled"},
+	"SizeInBytes":          ubx.FieldSpec{WireName: "size_in_bytes"},
+	"Status":               ubx.FieldSpec{WireName: "status"},
+	"StorageAccountUrl":    ubx.FieldSpec{WireName: "storage_account_url"},
+	"WebsiteSizeInBytes":   ubx.FieldSpec{WireName: "website_size_in_bytes"},
+}
 
 type OpenapiBackupItemConfig struct {
 	// Kind of resource.
@@ -136,8 +136,8 @@ var OpenapiBackupItem = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiBackupItem_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiBackupItem_PropertiesFields,
 		},
 	},
 }

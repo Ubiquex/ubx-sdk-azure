@@ -26,15 +26,15 @@ type SharedAccessAuthorizationRuleResource_Properties struct {
 
 type SharedAccessAuthorizationRuleResourceConfig struct {
 	AuthorizationRuleName any
-	NamespaceName any
-	NotificationHubName any
+	NamespaceName         any
+	NotificationHubName   any
 }
 
 type SharedAccessAuthorizationRuleResourceAttrs struct {
 	AuthorizationRuleName any
 	// Deprecated - only for compatibility.
-	Location any
-	NamespaceName any
+	Location            any
+	NamespaceName       any
 	NotificationHubName any
 	// SharedAccessAuthorizationRule properties.
 	Properties any
@@ -46,7 +46,7 @@ var SharedAccessAuthorizationRuleResource = ubx.DataSourceBinding{
 	WireType: "azure_notificationhubs_shared_access_authorization_rule_resource",
 	Fields: ubx.FieldMap{
 		"AuthorizationRuleName": ubx.FieldSpec{WireName: "authorization_rule_name"},
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
-		"NotificationHubName": ubx.FieldSpec{WireName: "notification_hub_name"},
+		"NamespaceName":         ubx.FieldSpec{WireName: "namespace_name"},
+		"NotificationHubName":   ubx.FieldSpec{WireName: "notification_hub_name"},
 	},
 }

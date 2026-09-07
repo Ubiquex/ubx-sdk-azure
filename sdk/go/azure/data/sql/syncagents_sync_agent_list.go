@@ -4,13 +4,13 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SyncagentsSyncAgentList_Value_Properties struct {
-	ExpiryTime any
-	IsUpToDate any
-	LastAliveTime any
-	Name any
-	State any
+	ExpiryTime     any
+	IsUpToDate     any
+	LastAliveTime  any
+	Name           any
+	State          any
 	SyncDatabaseId any
-	Version any
+	Version        any
 }
 
 type SyncagentsSyncAgentList_Value struct {
@@ -23,7 +23,7 @@ type SyncagentsSyncAgentListConfig struct {
 
 type SyncagentsSyncAgentListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The SyncAgent items on this page
 	Value any

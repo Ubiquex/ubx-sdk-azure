@@ -13,10 +13,10 @@ type ApimapisIssueCommentContract2_Properties struct {
 }
 
 var ApimapisIssueCommentContract2_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Text": ubx.FieldSpec{WireName: "text"},
-		"UserId": ubx.FieldSpec{WireName: "user_id"},
-	}
+	"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
+	"Text":        ubx.FieldSpec{WireName: "text"},
+	"UserId":      ubx.FieldSpec{WireName: "user_id"},
+}
 
 type ApimapisIssueCommentContract2Config struct {
 	// Issue Comment contract Properties.
@@ -33,8 +33,8 @@ var ApimapisIssueCommentContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimapisIssueCommentContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimapisIssueCommentContract2_PropertiesFields,
 		},
 	},
 }

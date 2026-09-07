@@ -4,11 +4,11 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkAvailableDelegationList_Value struct {
-	Actions any
-	Id any
-	Name any
+	Actions     any
+	Id          any
+	Name        any
 	ServiceName any
-	Type any
+	Type        any
 }
 
 type VirtualnetworkAvailableDelegationListConfig struct {
@@ -23,6 +23,5 @@ type VirtualnetworkAvailableDelegationListAttrs struct {
 
 var VirtualnetworkAvailableDelegationList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_available_delegation_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

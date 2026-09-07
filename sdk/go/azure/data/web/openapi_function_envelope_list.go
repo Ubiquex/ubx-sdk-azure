@@ -4,23 +4,23 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFunctionEnvelopeList_Value_Properties struct {
-	Config any
-	ConfigHref any
-	Files any
-	FunctionAppId any
-	Href any
-	InvokeUrlTemplate any
-	IsDisabled any
-	Language any
-	ScriptHref any
+	Config             any
+	ConfigHref         any
+	Files              any
+	FunctionAppId      any
+	Href               any
+	InvokeUrlTemplate  any
+	IsDisabled         any
+	Language           any
+	ScriptHref         any
 	ScriptRootPathHref any
-	SecretsFileHref any
-	TestData any
-	TestDataHref any
+	SecretsFileHref    any
+	TestData           any
+	TestDataHref       any
 }
 
 type OpenapiFunctionEnvelopeList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

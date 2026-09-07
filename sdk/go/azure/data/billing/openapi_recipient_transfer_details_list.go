@@ -4,37 +4,37 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRecipientTransferDetailsList_Value_Properties_DetailedTransferStatus_ErrorDetails struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type OpenapiRecipientTransferDetailsList_Value_Properties_DetailedTransferStatus struct {
-	ErrorDetails any
-	ProductId any
-	ProductName any
-	ProductType any
+	ErrorDetails   any
+	ProductId      any
+	ProductName    any
+	ProductType    any
 	SkuDescription any
 	TransferStatus any
 }
 
 type OpenapiRecipientTransferDetailsList_Value_Properties struct {
-	AllowedProductType any
-	CanceledBy any
-	CustomerTenantId any
+	AllowedProductType     any
+	CanceledBy             any
+	CustomerTenantId       any
 	DetailedTransferStatus any
-	ExpirationTime any
-	InitiatorCustomerType any
-	InitiatorEmailId any
-	RecipientEmailId any
-	ResellerId any
-	ResellerName any
-	SupportedAccounts any
-	TransferStatus any
+	ExpirationTime         any
+	InitiatorCustomerType  any
+	InitiatorEmailId       any
+	RecipientEmailId       any
+	ResellerId             any
+	ResellerName           any
+	SupportedAccounts      any
+	TransferStatus         any
 }
 
 type OpenapiRecipientTransferDetailsList_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiRecipientTransferDetailsListConfig struct {
@@ -49,6 +49,5 @@ type OpenapiRecipientTransferDetailsListAttrs struct {
 
 var OpenapiRecipientTransferDetailsList = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_recipient_transfer_details_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

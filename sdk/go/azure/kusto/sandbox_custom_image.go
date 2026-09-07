@@ -17,12 +17,12 @@ type SandboxCustomImage_Properties struct {
 }
 
 var SandboxCustomImage_PropertiesFields = ubx.FieldMap{
-		"BaseImageName": ubx.FieldSpec{WireName: "base_image_name"},
-		"Language": ubx.FieldSpec{WireName: "language"},
-		"LanguageVersion": ubx.FieldSpec{WireName: "language_version"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequirementsFileContent": ubx.FieldSpec{WireName: "requirements_file_content"},
-	}
+	"BaseImageName":           ubx.FieldSpec{WireName: "base_image_name"},
+	"Language":                ubx.FieldSpec{WireName: "language"},
+	"LanguageVersion":         ubx.FieldSpec{WireName: "language_version"},
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequirementsFileContent": ubx.FieldSpec{WireName: "requirements_file_content"},
+}
 
 type SandboxCustomImageConfig struct {
 	// A class representing the properties of a sandbox custom image object.
@@ -39,8 +39,8 @@ var SandboxCustomImage = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SandboxCustomImage_PropertiesFields,
+			Kind:     "object",
+			Fields:   SandboxCustomImage_PropertiesFields,
 		},
 	},
 }

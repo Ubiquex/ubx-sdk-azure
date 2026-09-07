@@ -7,14 +7,14 @@ type OpenapiCsmDeploymentStatus_Properties_Errors_Details struct {
 }
 
 type OpenapiCsmDeploymentStatus_Properties_Errors struct {
-	Code any
-	Details any
-	ExtendedCode any
-	InnerErrors any
-	Message any
+	Code            any
+	Details         any
+	ExtendedCode    any
+	InnerErrors     any
+	Message         any
 	MessageTemplate any
-	Parameters any
-	Target any
+	Parameters      any
+	Target          any
 }
 
 type OpenapiCsmDeploymentStatus_Properties struct {
@@ -36,7 +36,7 @@ type OpenapiCsmDeploymentStatus_Properties struct {
 
 type OpenapiCsmDeploymentStatusConfig struct {
 	DeploymentStatusId any
-	Name any
+	Name               any
 }
 
 type OpenapiCsmDeploymentStatusAttrs struct {
@@ -52,6 +52,6 @@ var OpenapiCsmDeploymentStatus = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_csm_deployment_status",
 	Fields: ubx.FieldMap{
 		"DeploymentStatusId": ubx.FieldSpec{WireName: "deployment_status_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":               ubx.FieldSpec{WireName: "name"},
 	},
 }

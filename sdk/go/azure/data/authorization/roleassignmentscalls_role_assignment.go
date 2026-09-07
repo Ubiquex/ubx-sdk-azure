@@ -32,23 +32,23 @@ type RoleassignmentscallsRoleAssignment_Properties struct {
 
 type RoleassignmentscallsRoleAssignmentConfig struct {
 	RoleAssignmentName any
-	Scope any
-	TenantId any
+	Scope              any
+	TenantId           any
 }
 
 type RoleassignmentscallsRoleAssignmentAttrs struct {
 	// Role assignment properties.
-	Properties any
+	Properties         any
 	RoleAssignmentName any
-	Scope any
-	TenantId any
+	Scope              any
+	TenantId           any
 }
 
 var RoleassignmentscallsRoleAssignment = ubx.DataSourceBinding{
 	WireType: "azure_authorization_roleassignmentscalls_role_assignment",
 	Fields: ubx.FieldMap{
 		"RoleAssignmentName": ubx.FieldSpec{WireName: "role_assignment_name"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+		"Scope":              ubx.FieldSpec{WireName: "scope"},
+		"TenantId":           ubx.FieldSpec{WireName: "tenant_id"},
 	},
 }

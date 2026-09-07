@@ -44,6 +44,5 @@ type DevBoxDefinitionAttrs struct {
 
 var DevBoxDefinition = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_dev_box_definition",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

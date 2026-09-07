@@ -17,34 +17,34 @@ type WorkflowRunActionRepetitionDefinitionList_Value struct {
 }
 
 type WorkflowRunActionRepetitionDefinitionListConfig struct {
-	ActionName any
-	ApiVersion any
+	ActionName        any
+	ApiVersion        any
 	ResourceGroupName any
-	RunName any
-	SubscriptionId any
-	WorkflowName any
+	RunName           any
+	SubscriptionId    any
+	WorkflowName      any
 }
 
 type WorkflowRunActionRepetitionDefinitionListAttrs struct {
 	ActionName any
 	ApiVersion any
 	// The link used to get the next page of recommendations.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	RunName any
-	SubscriptionId any
-	Value any
-	WorkflowName any
+	RunName           any
+	SubscriptionId    any
+	Value             any
+	WorkflowName      any
 }
 
 var WorkflowRunActionRepetitionDefinitionList = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_run_action_repetition_definition_list",
 	Fields: ubx.FieldMap{
-		"ActionName": ubx.FieldSpec{WireName: "action_name"},
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ActionName":        ubx.FieldSpec{WireName: "action_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"RunName":           ubx.FieldSpec{WireName: "run_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

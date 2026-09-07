@@ -4,18 +4,18 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDeletedAutomationAccountList_Value_Properties struct {
-	AutomationAccountId any
+	AutomationAccountId         any
 	AutomationAccountResourceId any
-	DeletionTime any
-	Location any
+	DeletionTime                any
+	Location                    any
 }
 
 type OpenapiDeletedAutomationAccountList_Value struct {
-	Id any
-	Location any
-	Name any
+	Id         any
+	Location   any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type OpenapiDeletedAutomationAccountListConfig struct {
@@ -28,6 +28,5 @@ type OpenapiDeletedAutomationAccountListAttrs struct {
 
 var OpenapiDeletedAutomationAccountList = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_deleted_automation_account_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

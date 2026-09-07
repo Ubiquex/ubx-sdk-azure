@@ -16,7 +16,7 @@ type OpenapiSecurityMlanalyticsSettingListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The SecurityMLAnalyticsSetting items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

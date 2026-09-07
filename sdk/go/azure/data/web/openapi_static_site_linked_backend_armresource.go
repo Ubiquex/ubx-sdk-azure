@@ -16,14 +16,14 @@ type OpenapiStaticSiteLinkedBackendArmresource_Properties struct {
 
 type OpenapiStaticSiteLinkedBackendArmresourceConfig struct {
 	LinkedBackendName any
-	Name any
+	Name              any
 }
 
 type OpenapiStaticSiteLinkedBackendArmresourceAttrs struct {
 	// Kind of resource.
-	Kind any
+	Kind              any
 	LinkedBackendName any
-	Name any
+	Name              any
 	// StaticSiteLinkedBackendARMResource resource specific properties
 	Properties any
 }
@@ -32,6 +32,6 @@ var OpenapiStaticSiteLinkedBackendArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_linked_backend_armresource",
 	Fields: ubx.FieldMap{
 		"LinkedBackendName": ubx.FieldSpec{WireName: "linked_backend_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":              ubx.FieldSpec{WireName: "name"},
 	},
 }

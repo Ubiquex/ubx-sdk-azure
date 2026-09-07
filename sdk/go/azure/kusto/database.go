@@ -20,7 +20,7 @@ type DatabaseAttrs struct {
 var Database = ubx.ResourceBinding{
 	WireType: "azure_kusto_database",
 	Fields: ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 	},
 }

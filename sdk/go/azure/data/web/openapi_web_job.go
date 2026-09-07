@@ -21,8 +21,8 @@ type OpenapiWebJob_Properties struct {
 }
 
 type OpenapiWebJobConfig struct {
-	Name any
-	Slot any
+	Name       any
+	Slot       any
 	WebJobName any
 }
 
@@ -32,15 +32,15 @@ type OpenapiWebJobAttrs struct {
 	Name any
 	// WebJob resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 	WebJobName any
 }
 
 var OpenapiWebJob = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_web_job",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
+		"Slot":       ubx.FieldSpec{WireName: "slot"},
 		"WebJobName": ubx.FieldSpec{WireName: "web_job_name"},
 	},
 }

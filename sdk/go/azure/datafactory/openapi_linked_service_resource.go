@@ -35,32 +35,32 @@ type OpenapiLinkedServiceResource_Properties struct {
 }
 
 var OpenapiLinkedServiceResource_Properties_ConnectViaFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Parameters":    ubx.FieldSpec{WireName: "parameters"},
+	"ReferenceName": ubx.FieldSpec{WireName: "reference_name"},
+	"Type":          ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiLinkedServiceResource_Properties_ParametersFields = ubx.FieldMap{
-		"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DefaultValue": ubx.FieldSpec{WireName: "default_value"},
+	"Type":         ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiLinkedServiceResource_PropertiesFields = ubx.FieldMap{
-		"Annotations": ubx.FieldSpec{WireName: "annotations"},
-		"ConnectVia": ubx.FieldSpec{
-			WireName: "connect_via",
-			Kind: "object",
-			Fields: OpenapiLinkedServiceResource_Properties_ConnectViaFields,
-		},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "map",
-			Fields: OpenapiLinkedServiceResource_Properties_ParametersFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Annotations": ubx.FieldSpec{WireName: "annotations"},
+	"ConnectVia": ubx.FieldSpec{
+		WireName: "connect_via",
+		Kind:     "object",
+		Fields:   OpenapiLinkedServiceResource_Properties_ConnectViaFields,
+	},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "map",
+		Fields:   OpenapiLinkedServiceResource_Properties_ParametersFields,
+	},
+	"Type":    ubx.FieldSpec{WireName: "type"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiLinkedServiceResourceConfig struct {
 	// The nested object which contains the information and credential which can be used to connect with related store or compute resource.
@@ -79,8 +79,8 @@ var OpenapiLinkedServiceResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLinkedServiceResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLinkedServiceResource_PropertiesFields,
 		},
 	},
 }

@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GrafanaManagedPrivateEndpointModelList_Value_Properties_ConnectionState struct {
 	Description any
-	Status any
+	Status      any
 }
 
 type GrafanaManagedPrivateEndpointModelList_Value_Properties struct {
-	ConnectionState any
-	GroupIds any
-	PrivateLinkResourceId any
-	PrivateLinkResourceRegion any
+	ConnectionState             any
+	GroupIds                    any
+	PrivateLinkResourceId       any
+	PrivateLinkResourceRegion   any
 	PrivateLinkServicePrivateIp any
-	PrivateLinkServiceUrl any
-	ProvisioningState any
-	RequestMessage any
+	PrivateLinkServiceUrl       any
+	ProvisioningState           any
+	RequestMessage              any
 }
 
 type GrafanaManagedPrivateEndpointModelList_Value struct {
@@ -31,7 +31,7 @@ type GrafanaManagedPrivateEndpointModelListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The ManagedPrivateEndpointModel items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapisTagDescriptionContractList_Value_Properties struct {
 	DisplayName any
-	TagId any
+	TagId       any
 }
 
 type ApimapisTagDescriptionContractList_Value struct {
@@ -26,6 +26,5 @@ type ApimapisTagDescriptionContractListAttrs struct {
 
 var ApimapisTagDescriptionContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_tag_description_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

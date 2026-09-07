@@ -11,9 +11,9 @@ type Ipv6firewallrulesIpv6FirewallRule_Properties struct {
 }
 
 var Ipv6firewallrulesIpv6FirewallRule_PropertiesFields = ubx.FieldMap{
-		"EndIpv6Address": ubx.FieldSpec{WireName: "end_ipv6_address"},
-		"StartIpv6Address": ubx.FieldSpec{WireName: "start_ipv6_address"},
-	}
+	"EndIpv6Address":   ubx.FieldSpec{WireName: "end_ipv6_address"},
+	"StartIpv6Address": ubx.FieldSpec{WireName: "start_ipv6_address"},
+}
 
 type Ipv6firewallrulesIpv6FirewallRuleConfig struct {
 	// The properties of an IPv6 server firewall rule.
@@ -30,8 +30,8 @@ var Ipv6firewallrulesIpv6FirewallRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Ipv6firewallrulesIpv6FirewallRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   Ipv6firewallrulesIpv6FirewallRule_PropertiesFields,
 		},
 	},
 }

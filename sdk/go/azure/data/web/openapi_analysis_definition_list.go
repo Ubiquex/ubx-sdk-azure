@@ -8,13 +8,13 @@ type OpenapiAnalysisDefinitionList_Value_Properties struct {
 }
 
 type OpenapiAnalysisDefinitionList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiAnalysisDefinitionListConfig struct {
 	DiagnosticCategory any
-	SiteName any
+	SiteName           any
 }
 
 type OpenapiAnalysisDefinitionListAttrs struct {
@@ -30,6 +30,6 @@ var OpenapiAnalysisDefinitionList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_analysis_definition_list",
 	Fields: ubx.FieldMap{
 		"DiagnosticCategory": ubx.FieldSpec{WireName: "diagnostic_category"},
-		"SiteName": ubx.FieldSpec{WireName: "site_name"},
+		"SiteName":           ubx.FieldSpec{WireName: "site_name"},
 	},
 }

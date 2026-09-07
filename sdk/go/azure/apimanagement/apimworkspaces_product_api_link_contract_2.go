@@ -9,8 +9,8 @@ type ApimworkspacesProductApiLinkContract2_Properties struct {
 }
 
 var ApimworkspacesProductApiLinkContract2_PropertiesFields = ubx.FieldMap{
-		"ApiId": ubx.FieldSpec{WireName: "api_id"},
-	}
+	"ApiId": ubx.FieldSpec{WireName: "api_id"},
+}
 
 type ApimworkspacesProductApiLinkContract2Config struct {
 	// Product-API link entity properties.
@@ -27,8 +27,8 @@ var ApimworkspacesProductApiLinkContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesProductApiLinkContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesProductApiLinkContract2_PropertiesFields,
 		},
 	},
 }

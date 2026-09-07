@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPaymentMethodLink_Properties_Logos struct {
 	MimeType any
-	Url any
+	Url      any
 }
 
 type OpenapiPaymentMethodLink_Properties_PaymentMethod struct {
@@ -55,13 +55,13 @@ type OpenapiPaymentMethodLink_Properties struct {
 type OpenapiPaymentMethodLinkConfig struct {
 	BillingAccountName any
 	BillingProfileName any
-	PaymentMethodName any
+	PaymentMethodName  any
 }
 
 type OpenapiPaymentMethodLinkAttrs struct {
 	BillingAccountName any
 	BillingProfileName any
-	PaymentMethodName any
+	PaymentMethodName  any
 	// The properties of a payment method link.
 	Properties any
 	// Dictionary of metadata associated with the resource. It may not be populated for all resource types. Maximum key/value length supported of 256 characters. Keys/value should not empty value nor null. Keys can not contain < > % & \ ? /
@@ -73,6 +73,6 @@ var OpenapiPaymentMethodLink = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
 		"BillingProfileName": ubx.FieldSpec{WireName: "billing_profile_name"},
-		"PaymentMethodName": ubx.FieldSpec{WireName: "payment_method_name"},
+		"PaymentMethodName":  ubx.FieldSpec{WireName: "payment_method_name"},
 	},
 }

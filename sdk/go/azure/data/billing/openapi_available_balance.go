@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAvailableBalance_Properties_Amount struct {
 	Currency any
-	Value any
+	Value    any
 }
 
 type OpenapiAvailableBalance_Properties_PaymentsOnAccount struct {
-	Amount any
+	Amount                    any
 	BillingProfileDisplayName any
-	BillingProfileId any
-	Date any
-	InvoiceId any
-	InvoiceName any
-	PaymentMethodType any
+	BillingProfileId          any
+	Date                      any
+	InvoiceId                 any
+	InvoiceName               any
+	PaymentMethodType         any
 }
 
 type OpenapiAvailableBalance_Properties struct {

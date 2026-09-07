@@ -4,8 +4,8 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkVirtualApplianceSiteList_Value_Properties_O365Policy_BreakOutCategories struct {
-	Allow any
-	Default any
+	Allow    any
+	Default  any
 	Optimize any
 }
 
@@ -14,13 +14,13 @@ type VirtualnetworkVirtualApplianceSiteList_Value_Properties_O365Policy struct {
 }
 
 type VirtualnetworkVirtualApplianceSiteList_Value_Properties struct {
-	AddressPrefix any
-	O365Policy any
+	AddressPrefix     any
+	O365Policy        any
 	ProvisioningState any
 }
 
 type VirtualnetworkVirtualApplianceSiteList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

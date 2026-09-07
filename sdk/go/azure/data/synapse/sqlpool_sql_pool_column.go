@@ -11,27 +11,27 @@ type SqlpoolSqlPoolColumn_Properties struct {
 }
 
 type SqlpoolSqlPoolColumnConfig struct {
-	ColumnName any
-	SchemaName any
+	ColumnName  any
+	SchemaName  any
 	SqlPoolName any
-	TableName any
+	TableName   any
 }
 
 type SqlpoolSqlPoolColumnAttrs struct {
 	ColumnName any
 	// Sql pool column properties.
-	Properties any
-	SchemaName any
+	Properties  any
+	SchemaName  any
 	SqlPoolName any
-	TableName any
+	TableName   any
 }
 
 var SqlpoolSqlPoolColumn = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool_column",
 	Fields: ubx.FieldMap{
-		"ColumnName": ubx.FieldSpec{WireName: "column_name"},
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
+		"ColumnName":  ubx.FieldSpec{WireName: "column_name"},
+		"SchemaName":  ubx.FieldSpec{WireName: "schema_name"},
 		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
-		"TableName": ubx.FieldSpec{WireName: "table_name"},
+		"TableName":   ubx.FieldSpec{WireName: "table_name"},
 	},
 }

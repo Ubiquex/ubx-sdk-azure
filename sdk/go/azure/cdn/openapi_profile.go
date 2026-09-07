@@ -60,53 +60,53 @@ type OpenapiProfile_Sku struct {
 }
 
 var OpenapiProfile_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var OpenapiProfile_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: OpenapiProfile_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   OpenapiProfile_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var OpenapiProfile_Properties_LogScrubbing_ScrubbingRulesFields = ubx.FieldMap{
-		"MatchVariable": ubx.FieldSpec{WireName: "match_variable"},
-		"Selector": ubx.FieldSpec{WireName: "selector"},
-		"SelectorMatchOperator": ubx.FieldSpec{WireName: "selector_match_operator"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"MatchVariable":         ubx.FieldSpec{WireName: "match_variable"},
+	"Selector":              ubx.FieldSpec{WireName: "selector"},
+	"SelectorMatchOperator": ubx.FieldSpec{WireName: "selector_match_operator"},
+	"State":                 ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiProfile_Properties_LogScrubbingFields = ubx.FieldMap{
-		"ScrubbingRules": ubx.FieldSpec{
-			WireName: "scrubbing_rules",
-			Kind: "list",
-			Fields: OpenapiProfile_Properties_LogScrubbing_ScrubbingRulesFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"ScrubbingRules": ubx.FieldSpec{
+		WireName: "scrubbing_rules",
+		Kind:     "list",
+		Fields:   OpenapiProfile_Properties_LogScrubbing_ScrubbingRulesFields,
+	},
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiProfile_PropertiesFields = ubx.FieldMap{
-		"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
-		"FrontDoorId": ubx.FieldSpec{WireName: "front_door_id"},
-		"LogScrubbing": ubx.FieldSpec{
-			WireName: "log_scrubbing",
-			Kind: "object",
-			Fields: OpenapiProfile_Properties_LogScrubbingFields,
-		},
-		"OriginResponseTimeoutSeconds": ubx.FieldSpec{WireName: "origin_response_timeout_seconds"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceState": ubx.FieldSpec{WireName: "resource_state"},
-	}
+	"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
+	"FrontDoorId":        ubx.FieldSpec{WireName: "front_door_id"},
+	"LogScrubbing": ubx.FieldSpec{
+		WireName: "log_scrubbing",
+		Kind:     "object",
+		Fields:   OpenapiProfile_Properties_LogScrubbingFields,
+	},
+	"OriginResponseTimeoutSeconds": ubx.FieldSpec{WireName: "origin_response_timeout_seconds"},
+	"ProvisioningState":            ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceState":                ubx.FieldSpec{WireName: "resource_state"},
+}
 
 var OpenapiProfile_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type OpenapiProfileConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -141,19 +141,19 @@ var OpenapiProfile = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: OpenapiProfile_IdentityFields,
+			Kind:     "object",
+			Fields:   OpenapiProfile_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiProfile_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiProfile_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: OpenapiProfile_SkuFields,
+			Kind:     "object",
+			Fields:   OpenapiProfile_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

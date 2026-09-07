@@ -28,9 +28,9 @@ type OpenapiDataSourceAttrs struct {
 var OpenapiDataSource = ubx.ResourceBinding{
 	WireType: "azure_operationalinsights_openapi_data_source",
 	Fields: ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Etag":       ubx.FieldSpec{WireName: "etag"},
+		"Kind":       ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Tags":       ubx.FieldSpec{WireName: "tags"},
 	},
 }

@@ -5,29 +5,29 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkServiceTagInformationList_Value_Properties struct {
 	AddressPrefixes any
-	ChangeNumber any
-	Region any
-	State any
-	SystemService any
+	ChangeNumber    any
+	Region          any
+	State           any
+	SystemService   any
 }
 
 type VirtualnetworkServiceTagInformationList_Value struct {
-	Id any
-	Name any
-	Properties any
+	Id                     any
+	Name                   any
+	Properties             any
 	ServiceTagChangeNumber any
 }
 
 type VirtualnetworkServiceTagInformationListConfig struct {
 	NoAddressPrefixes any
-	TagName any
+	TagName           any
 }
 
 type VirtualnetworkServiceTagInformationListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink          any
 	NoAddressPrefixes any
-	TagName any
+	TagName           any
 	// The ServiceTagInformation items on this page
 	Value any
 }
@@ -36,6 +36,6 @@ var VirtualnetworkServiceTagInformationList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_service_tag_information_list",
 	Fields: ubx.FieldMap{
 		"NoAddressPrefixes": ubx.FieldSpec{WireName: "no_address_prefixes"},
-		"TagName": ubx.FieldSpec{WireName: "tag_name"},
+		"TagName":           ubx.FieldSpec{WireName: "tag_name"},
 	},
 }

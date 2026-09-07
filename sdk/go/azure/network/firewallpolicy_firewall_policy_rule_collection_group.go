@@ -24,21 +24,21 @@ type FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties struct {
 }
 
 var FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollectionsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"RuleCollectionType": ubx.FieldSpec{WireName: "rule_collection_type"},
-	}
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"Priority":           ubx.FieldSpec{WireName: "priority"},
+	"RuleCollectionType": ubx.FieldSpec{WireName: "rule_collection_type"},
+}
 
 var FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields = ubx.FieldMap{
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RuleCollections": ubx.FieldSpec{
-			WireName: "rule_collections",
-			Kind: "list",
-			Fields: FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollectionsFields,
-		},
-		"Size": ubx.FieldSpec{WireName: "size"},
-	}
+	"Priority":          ubx.FieldSpec{WireName: "priority"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RuleCollections": ubx.FieldSpec{
+		WireName: "rule_collections",
+		Kind:     "list",
+		Fields:   FirewallpolicyFirewallPolicyRuleCollectionGroup_Properties_RuleCollectionsFields,
+	},
+	"Size": ubx.FieldSpec{WireName: "size"},
+}
 
 type FirewallpolicyFirewallPolicyRuleCollectionGroupConfig struct {
 	// Name of the resource.
@@ -64,8 +64,8 @@ var FirewallpolicyFirewallPolicyRuleCollectionGroup = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   FirewallpolicyFirewallPolicyRuleCollectionGroup_PropertiesFields,
 		},
 	},
 }

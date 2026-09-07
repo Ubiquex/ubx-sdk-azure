@@ -4,21 +4,21 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsList_Value_Properties_Resource struct {
 	Etag any
-	Rid any
-	Ts any
+	Rid  any
+	Ts   any
 }
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsList_Value_Properties struct {
@@ -26,23 +26,23 @@ type DbOpenapiSqlUserDefinedFunctionGetResultsList_Value_Properties struct {
 }
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsList_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsListConfig struct {
-	AccountName any
+	AccountName   any
 	ContainerName any
-	DatabaseName any
+	DatabaseName  any
 }
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsListAttrs struct {
-	AccountName any
+	AccountName   any
 	ContainerName any
-	DatabaseName any
-	NextLink any
+	DatabaseName  any
+	NextLink      any
 	// List of userDefinedFunctions and their properties.
 	Value any
 }
@@ -50,8 +50,8 @@ type DbOpenapiSqlUserDefinedFunctionGetResultsListAttrs struct {
 var DbOpenapiSqlUserDefinedFunctionGetResultsList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_sql_user_defined_function_get_results_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":   ubx.FieldSpec{WireName: "account_name"},
 		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":  ubx.FieldSpec{WireName: "database_name"},
 	},
 }

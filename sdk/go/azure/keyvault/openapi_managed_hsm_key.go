@@ -84,84 +84,84 @@ type OpenapiManagedHsmKey_Properties struct {
 }
 
 var OpenapiManagedHsmKey_Properties_AttributesFields = ubx.FieldMap{
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Exp": ubx.FieldSpec{WireName: "exp"},
-		"Exportable": ubx.FieldSpec{WireName: "exportable"},
-		"Nbf": ubx.FieldSpec{WireName: "nbf"},
-		"RecoveryLevel": ubx.FieldSpec{WireName: "recovery_level"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-	}
+	"Created":       ubx.FieldSpec{WireName: "created"},
+	"Enabled":       ubx.FieldSpec{WireName: "enabled"},
+	"Exp":           ubx.FieldSpec{WireName: "exp"},
+	"Exportable":    ubx.FieldSpec{WireName: "exportable"},
+	"Nbf":           ubx.FieldSpec{WireName: "nbf"},
+	"RecoveryLevel": ubx.FieldSpec{WireName: "recovery_level"},
+	"Updated":       ubx.FieldSpec{WireName: "updated"},
+}
 
 var OpenapiManagedHsmKey_Properties_ReleasePolicyFields = ubx.FieldMap{
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"Data": ubx.FieldSpec{WireName: "data"},
-	}
+	"ContentType": ubx.FieldSpec{WireName: "content_type"},
+	"Data":        ubx.FieldSpec{WireName: "data"},
+}
 
 var OpenapiManagedHsmKey_Properties_RotationPolicy_AttributesFields = ubx.FieldMap{
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-	}
+	"Created":    ubx.FieldSpec{WireName: "created"},
+	"ExpiryTime": ubx.FieldSpec{WireName: "expiry_time"},
+	"Updated":    ubx.FieldSpec{WireName: "updated"},
+}
 
 var OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_ActionFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_TriggerFields = ubx.FieldMap{
-		"TimeAfterCreate": ubx.FieldSpec{WireName: "time_after_create"},
-		"TimeBeforeExpiry": ubx.FieldSpec{WireName: "time_before_expiry"},
-	}
+	"TimeAfterCreate":  ubx.FieldSpec{WireName: "time_after_create"},
+	"TimeBeforeExpiry": ubx.FieldSpec{WireName: "time_before_expiry"},
+}
 
 var OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActionsFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{
-			WireName: "action",
-			Kind: "object",
-			Fields: OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_ActionFields,
-		},
-		"Trigger": ubx.FieldSpec{
-			WireName: "trigger",
-			Kind: "object",
-			Fields: OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_TriggerFields,
-		},
-	}
+	"Action": ubx.FieldSpec{
+		WireName: "action",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_ActionFields,
+	},
+	"Trigger": ubx.FieldSpec{
+		WireName: "trigger",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_TriggerFields,
+	},
+}
 
 var OpenapiManagedHsmKey_Properties_RotationPolicyFields = ubx.FieldMap{
-		"Attributes": ubx.FieldSpec{
-			WireName: "attributes",
-			Kind: "object",
-			Fields: OpenapiManagedHsmKey_Properties_RotationPolicy_AttributesFields,
-		},
-		"LifetimeActions": ubx.FieldSpec{
-			WireName: "lifetime_actions",
-			Kind: "list",
-			Fields: OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActionsFields,
-		},
-	}
+	"Attributes": ubx.FieldSpec{
+		WireName: "attributes",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsmKey_Properties_RotationPolicy_AttributesFields,
+	},
+	"LifetimeActions": ubx.FieldSpec{
+		WireName: "lifetime_actions",
+		Kind:     "list",
+		Fields:   OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActionsFields,
+	},
+}
 
 var OpenapiManagedHsmKey_PropertiesFields = ubx.FieldMap{
-		"Attributes": ubx.FieldSpec{
-			WireName: "attributes",
-			Kind: "object",
-			Fields: OpenapiManagedHsmKey_Properties_AttributesFields,
-		},
-		"CurveName": ubx.FieldSpec{WireName: "curve_name"},
-		"KeyOps": ubx.FieldSpec{WireName: "key_ops"},
-		"KeySize": ubx.FieldSpec{WireName: "key_size"},
-		"KeyUri": ubx.FieldSpec{WireName: "key_uri"},
-		"KeyUriWithVersion": ubx.FieldSpec{WireName: "key_uri_with_version"},
-		"Kty": ubx.FieldSpec{WireName: "kty"},
-		"ReleasePolicy": ubx.FieldSpec{
-			WireName: "release_policy",
-			Kind: "object",
-			Fields: OpenapiManagedHsmKey_Properties_ReleasePolicyFields,
-		},
-		"RotationPolicy": ubx.FieldSpec{
-			WireName: "rotation_policy",
-			Kind: "object",
-			Fields: OpenapiManagedHsmKey_Properties_RotationPolicyFields,
-		},
-	}
+	"Attributes": ubx.FieldSpec{
+		WireName: "attributes",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsmKey_Properties_AttributesFields,
+	},
+	"CurveName":         ubx.FieldSpec{WireName: "curve_name"},
+	"KeyOps":            ubx.FieldSpec{WireName: "key_ops"},
+	"KeySize":           ubx.FieldSpec{WireName: "key_size"},
+	"KeyUri":            ubx.FieldSpec{WireName: "key_uri"},
+	"KeyUriWithVersion": ubx.FieldSpec{WireName: "key_uri_with_version"},
+	"Kty":               ubx.FieldSpec{WireName: "kty"},
+	"ReleasePolicy": ubx.FieldSpec{
+		WireName: "release_policy",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsmKey_Properties_ReleasePolicyFields,
+	},
+	"RotationPolicy": ubx.FieldSpec{
+		WireName: "rotation_policy",
+		Kind:     "object",
+		Fields:   OpenapiManagedHsmKey_Properties_RotationPolicyFields,
+	},
+}
 
 type OpenapiManagedHsmKeyConfig struct {
 	// The properties of the key.
@@ -186,8 +186,8 @@ var OpenapiManagedHsmKey = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedHsmKey_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedHsmKey_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},
