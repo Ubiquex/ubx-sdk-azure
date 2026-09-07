@@ -19,13 +19,13 @@ type SqlpoolWorkloadClassifier_Properties struct {
 }
 
 var SqlpoolWorkloadClassifier_PropertiesFields = ubx.FieldMap{
-		"Context": ubx.FieldSpec{WireName: "context"},
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Importance": ubx.FieldSpec{WireName: "importance"},
-		"Label": ubx.FieldSpec{WireName: "label"},
-		"MemberName": ubx.FieldSpec{WireName: "member_name"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-	}
+	"Context":    ubx.FieldSpec{WireName: "context"},
+	"EndTime":    ubx.FieldSpec{WireName: "end_time"},
+	"Importance": ubx.FieldSpec{WireName: "importance"},
+	"Label":      ubx.FieldSpec{WireName: "label"},
+	"MemberName": ubx.FieldSpec{WireName: "member_name"},
+	"StartTime":  ubx.FieldSpec{WireName: "start_time"},
+}
 
 type SqlpoolWorkloadClassifierConfig struct {
 	// Workload classifier definition. For more information look at sys.workload_management_workload_classifiers (DMV).
@@ -42,8 +42,8 @@ var SqlpoolWorkloadClassifier = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolWorkloadClassifier_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolWorkloadClassifier_PropertiesFields,
 		},
 	},
 }

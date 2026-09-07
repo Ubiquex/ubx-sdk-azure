@@ -23,17 +23,17 @@ type OpenapiPolicyDefinitionVersion_Properties_ExternalEvaluationEnforcementSett
 
 type OpenapiPolicyDefinitionVersion_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicyDefinitionVersion_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicyDefinitionVersion_Properties struct {
@@ -58,12 +58,12 @@ type OpenapiPolicyDefinitionVersion_Properties struct {
 }
 
 type OpenapiPolicyDefinitionVersionConfig struct {
-	PolicyDefinitionName any
+	PolicyDefinitionName    any
 	PolicyDefinitionVersion any
 }
 
 type OpenapiPolicyDefinitionVersionAttrs struct {
-	PolicyDefinitionName any
+	PolicyDefinitionName    any
 	PolicyDefinitionVersion any
 	// The policy definition properties.
 	Properties any
@@ -72,7 +72,7 @@ type OpenapiPolicyDefinitionVersionAttrs struct {
 var OpenapiPolicyDefinitionVersion = ubx.DataSourceBinding{
 	WireType: "azure_resources_openapi_policy_definition_version",
 	Fields: ubx.FieldMap{
-		"PolicyDefinitionName": ubx.FieldSpec{WireName: "policy_definition_name"},
+		"PolicyDefinitionName":    ubx.FieldSpec{WireName: "policy_definition_name"},
 		"PolicyDefinitionVersion": ubx.FieldSpec{WireName: "policy_definition_version"},
 	},
 }

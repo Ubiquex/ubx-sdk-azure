@@ -4,7 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkAddressPrefixSetList_Value_Properties struct {
-	AddressPrefixes any
+	AddressPrefixes   any
 	ProvisioningState any
 }
 

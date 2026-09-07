@@ -41,7 +41,7 @@ type VerifiedPartner_SystemData struct {
 }
 
 type VerifiedPartnerConfig struct {
-	ApiVersion any
+	ApiVersion          any
 	VerifiedPartnerName any
 }
 
@@ -56,14 +56,14 @@ type VerifiedPartnerAttrs struct {
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// Type of the resource.
-	Type any
+	Type                any
 	VerifiedPartnerName any
 }
 
 var VerifiedPartner = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_verified_partner",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":          ubx.FieldSpec{WireName: "api_version"},
 		"VerifiedPartnerName": ubx.FieldSpec{WireName: "verified_partner_name"},
 	},
 }

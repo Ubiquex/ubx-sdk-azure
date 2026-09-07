@@ -18,7 +18,7 @@ type ApplicationgatewayApplicationGatewaySslPredefinedPolicyAttrs struct {
 	// Resource ID.
 	Id any
 	// Name of the Ssl predefined policy.
-	Name any
+	Name                 any
 	PredefinedPolicyName any
 	// Properties of ApplicationGatewaySslPredefinedPolicy.
 	Properties any

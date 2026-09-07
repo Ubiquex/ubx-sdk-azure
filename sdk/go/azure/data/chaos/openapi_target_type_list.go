@@ -4,10 +4,10 @@ package chaos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiTargetTypeList_Value_Properties struct {
-	Description any
-	DisplayName any
+	Description      any
+	DisplayName      any
 	PropertiesSchema any
-	ResourceTypes any
+	ResourceTypes    any
 }
 
 type OpenapiTargetTypeList_Value struct {

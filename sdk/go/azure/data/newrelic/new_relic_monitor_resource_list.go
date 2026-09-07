@@ -4,21 +4,21 @@ package newrelic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NewRelicMonitorResourceList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type NewRelicMonitorResourceList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type NewRelicMonitorResourceList_Value_Properties_NewRelicAccountProperties_AccountInfo struct {
-	AccountId any
+	AccountId    any
 	IngestionKey any
-	Region any
+	Region       any
 }
 
 type NewRelicMonitorResourceList_Value_Properties_NewRelicAccountProperties_OrganizationInfo struct {
@@ -26,24 +26,24 @@ type NewRelicMonitorResourceList_Value_Properties_NewRelicAccountProperties_Orga
 }
 
 type NewRelicMonitorResourceList_Value_Properties_NewRelicAccountProperties_SingleSignOnProperties struct {
-	EnterpriseAppId any
+	EnterpriseAppId   any
 	ProvisioningState any
 	SingleSignOnState any
-	SingleSignOnUrl any
+	SingleSignOnUrl   any
 }
 
 type NewRelicMonitorResourceList_Value_Properties_NewRelicAccountProperties struct {
-	AccountInfo any
-	OrganizationInfo any
+	AccountInfo            any
+	OrganizationInfo       any
 	SingleSignOnProperties any
-	UserId any
+	UserId                 any
 }
 
 type NewRelicMonitorResourceList_Value_Properties_PlanData struct {
-	BillingCycle any
+	BillingCycle  any
 	EffectiveDate any
-	PlanDetails any
-	UsageType any
+	PlanDetails   any
+	UsageType     any
 }
 
 type NewRelicMonitorResourceList_Value_Properties_SaaSdata struct {
@@ -51,32 +51,32 @@ type NewRelicMonitorResourceList_Value_Properties_SaaSdata struct {
 }
 
 type NewRelicMonitorResourceList_Value_Properties_UserInfo struct {
-	Country any
+	Country      any
 	EmailAddress any
-	FirstName any
-	LastName any
-	PhoneNumber any
+	FirstName    any
+	LastName     any
+	PhoneNumber  any
 }
 
 type NewRelicMonitorResourceList_Value_Properties struct {
-	AccountCreationSource any
-	LiftrResourceCategory any
-	LiftrResourcePreference any
-	MarketplaceSubscriptionId any
+	AccountCreationSource         any
+	LiftrResourceCategory         any
+	LiftrResourcePreference       any
+	MarketplaceSubscriptionId     any
 	MarketplaceSubscriptionStatus any
-	MonitoringStatus any
-	NewRelicAccountProperties any
-	OrgCreationSource any
-	PlanData any
-	ProvisioningState any
-	SaaSazureSubscriptionStatus any
-	SaaSdata any
-	SubscriptionState any
-	UserInfo any
+	MonitoringStatus              any
+	NewRelicAccountProperties     any
+	OrgCreationSource             any
+	PlanData                      any
+	ProvisioningState             any
+	SaaSazureSubscriptionStatus   any
+	SaaSdata                      any
+	SubscriptionState             any
+	UserInfo                      any
 }
 
 type NewRelicMonitorResourceList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -92,6 +92,5 @@ type NewRelicMonitorResourceListAttrs struct {
 
 var NewRelicMonitorResourceList = ubx.DataSourceBinding{
 	WireType: "azure_newrelic_new_relic_monitor_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

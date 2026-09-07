@@ -17,15 +17,15 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules_Properties struct {
-	AddressPrefixes any
-	Direction any
+	AddressPrefixes           any
+	Direction                 any
 	FullyQualifiedDomainNames any
 	NetworkSecurityPerimeters any
-	Subscriptions any
+	Subscriptions             any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile_AccessRules struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -44,12 +44,12 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties_Profile struct {
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues_Properties struct {
 	Description any
-	IssueType any
-	Severity any
+	IssueType   any
+	Severity    any
 }
 
 type OpenapiNetworkSecurityPerimeterConfiguration_Properties_ProvisioningIssues struct {
-	Name any
+	Name       any
 	Properties any
 }
 
@@ -74,12 +74,12 @@ type OpenapiNetworkSecurityPerimeterConfiguration_Properties struct {
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationConfig struct {
-	AccountName any
+	AccountName                               any
 	NetworkSecurityPerimeterConfigurationName any
 }
 
 type OpenapiNetworkSecurityPerimeterConfigurationAttrs struct {
-	AccountName any
+	AccountName                               any
 	NetworkSecurityPerimeterConfigurationName any
 	// Properties of the Network Security Perimeter Configuration
 	Properties any

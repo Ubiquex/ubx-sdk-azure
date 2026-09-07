@@ -4,7 +4,7 @@ package mysql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFirewallRuleList_Value_Properties struct {
-	EndIpAddress any
+	EndIpAddress   any
 	StartIpAddress any
 }
 
@@ -18,7 +18,7 @@ type OpenapiFirewallRuleListConfig struct {
 
 type OpenapiFirewallRuleListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The FirewallRule items on this page
 	Value any

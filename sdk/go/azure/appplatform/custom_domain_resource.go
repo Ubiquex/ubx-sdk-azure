@@ -15,11 +15,11 @@ type CustomDomainResource_Properties struct {
 }
 
 var CustomDomainResource_PropertiesFields = ubx.FieldMap{
-		"AppName": ubx.FieldSpec{WireName: "app_name"},
-		"CertName": ubx.FieldSpec{WireName: "cert_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"AppName":           ubx.FieldSpec{WireName: "app_name"},
+	"CertName":          ubx.FieldSpec{WireName: "cert_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Thumbprint":        ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 type CustomDomainResourceConfig struct {
 	// Custom domain of app resource payload.
@@ -36,8 +36,8 @@ var CustomDomainResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CustomDomainResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CustomDomainResource_PropertiesFields,
 		},
 	},
 }

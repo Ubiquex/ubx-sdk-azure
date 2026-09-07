@@ -11,9 +11,9 @@ type OpenapiLinkedStorageAccountsResource_Properties struct {
 }
 
 var OpenapiLinkedStorageAccountsResource_PropertiesFields = ubx.FieldMap{
-		"DataSourceType": ubx.FieldSpec{WireName: "data_source_type"},
-		"StorageAccountIds": ubx.FieldSpec{WireName: "storage_account_ids"},
-	}
+	"DataSourceType":    ubx.FieldSpec{WireName: "data_source_type"},
+	"StorageAccountIds": ubx.FieldSpec{WireName: "storage_account_ids"},
+}
 
 type OpenapiLinkedStorageAccountsResourceConfig struct {
 	// Linked storage accounts properties.
@@ -30,8 +30,8 @@ var OpenapiLinkedStorageAccountsResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiLinkedStorageAccountsResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiLinkedStorageAccountsResource_PropertiesFields,
 		},
 	},
 }

@@ -9,8 +9,8 @@ type OpenapiDataContainer_Properties struct {
 }
 
 var OpenapiDataContainer_PropertiesFields = ubx.FieldMap{
-		"DataType": ubx.FieldSpec{WireName: "data_type"},
-	}
+	"DataType": ubx.FieldSpec{WireName: "data_type"},
+}
 
 type OpenapiDataContainerConfig struct {
 	// Container for data asset versions.
@@ -31,8 +31,8 @@ var OpenapiDataContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDataContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDataContainer_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

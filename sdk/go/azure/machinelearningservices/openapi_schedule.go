@@ -33,31 +33,31 @@ type OpenapiSchedule_Properties struct {
 }
 
 var OpenapiSchedule_Properties_ActionFields = ubx.FieldMap{
-		"ActionType": ubx.FieldSpec{WireName: "action_type"},
-	}
+	"ActionType": ubx.FieldSpec{WireName: "action_type"},
+}
 
 var OpenapiSchedule_Properties_TriggerFields = ubx.FieldMap{
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"TimeZone": ubx.FieldSpec{WireName: "time_zone"},
-		"TriggerType": ubx.FieldSpec{WireName: "trigger_type"},
-	}
+	"EndTime":     ubx.FieldSpec{WireName: "end_time"},
+	"StartTime":   ubx.FieldSpec{WireName: "start_time"},
+	"TimeZone":    ubx.FieldSpec{WireName: "time_zone"},
+	"TriggerType": ubx.FieldSpec{WireName: "trigger_type"},
+}
 
 var OpenapiSchedule_PropertiesFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{
-			WireName: "action",
-			Kind: "object",
-			Fields: OpenapiSchedule_Properties_ActionFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"IsEnabled": ubx.FieldSpec{WireName: "is_enabled"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Trigger": ubx.FieldSpec{
-			WireName: "trigger",
-			Kind: "object",
-			Fields: OpenapiSchedule_Properties_TriggerFields,
-		},
-	}
+	"Action": ubx.FieldSpec{
+		WireName: "action",
+		Kind:     "object",
+		Fields:   OpenapiSchedule_Properties_ActionFields,
+	},
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"IsEnabled":         ubx.FieldSpec{WireName: "is_enabled"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Trigger": ubx.FieldSpec{
+		WireName: "trigger",
+		Kind:     "object",
+		Fields:   OpenapiSchedule_Properties_TriggerFields,
+	},
+}
 
 type OpenapiScheduleConfig struct {
 	// Base definition of a schedule
@@ -78,8 +78,8 @@ var OpenapiSchedule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSchedule_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSchedule_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

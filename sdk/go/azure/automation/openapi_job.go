@@ -47,38 +47,38 @@ type OpenapiJob_Properties struct {
 }
 
 var OpenapiJob_Properties_JobRuntimeEnvironmentFields = ubx.FieldMap{
-		"RuntimeEnvironmentName": ubx.FieldSpec{WireName: "runtime_environment_name"},
-	}
+	"RuntimeEnvironmentName": ubx.FieldSpec{WireName: "runtime_environment_name"},
+}
 
 var OpenapiJob_Properties_RunbookFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var OpenapiJob_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Exception": ubx.FieldSpec{WireName: "exception"},
-		"JobId": ubx.FieldSpec{WireName: "job_id"},
-		"JobRuntimeEnvironment": ubx.FieldSpec{
-			WireName: "job_runtime_environment",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_JobRuntimeEnvironmentFields,
-		},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"LastStatusModifiedTime": ubx.FieldSpec{WireName: "last_status_modified_time"},
-		"Parameters": ubx.FieldSpec{WireName: "parameters"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RunOn": ubx.FieldSpec{WireName: "run_on"},
-		"Runbook": ubx.FieldSpec{
-			WireName: "runbook",
-			Kind: "object",
-			Fields: OpenapiJob_Properties_RunbookFields,
-		},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"StartedBy": ubx.FieldSpec{WireName: "started_by"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"StatusDetails": ubx.FieldSpec{WireName: "status_details"},
-	}
+	"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
+	"EndTime":      ubx.FieldSpec{WireName: "end_time"},
+	"Exception":    ubx.FieldSpec{WireName: "exception"},
+	"JobId":        ubx.FieldSpec{WireName: "job_id"},
+	"JobRuntimeEnvironment": ubx.FieldSpec{
+		WireName: "job_runtime_environment",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_JobRuntimeEnvironmentFields,
+	},
+	"LastModifiedTime":       ubx.FieldSpec{WireName: "last_modified_time"},
+	"LastStatusModifiedTime": ubx.FieldSpec{WireName: "last_status_modified_time"},
+	"Parameters":             ubx.FieldSpec{WireName: "parameters"},
+	"ProvisioningState":      ubx.FieldSpec{WireName: "provisioning_state"},
+	"RunOn":                  ubx.FieldSpec{WireName: "run_on"},
+	"Runbook": ubx.FieldSpec{
+		WireName: "runbook",
+		Kind:     "object",
+		Fields:   OpenapiJob_Properties_RunbookFields,
+	},
+	"StartTime":     ubx.FieldSpec{WireName: "start_time"},
+	"StartedBy":     ubx.FieldSpec{WireName: "started_by"},
+	"Status":        ubx.FieldSpec{WireName: "status"},
+	"StatusDetails": ubx.FieldSpec{WireName: "status_details"},
+}
 
 type OpenapiJobConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -95,8 +95,8 @@ var OpenapiJob = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiJob_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiJob_PropertiesFields,
 		},
 	},
 }

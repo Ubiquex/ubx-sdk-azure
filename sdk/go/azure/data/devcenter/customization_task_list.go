@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CustomizationTaskList_Value_Properties_Inputs struct {
 	Description any
-	Required any
-	Type any
+	Required    any
+	Type        any
 }
 
 type CustomizationTaskList_Value_Properties struct {
-	Inputs any
-	Timeout any
+	Inputs           any
+	Timeout          any
 	ValidationStatus any
 }
 
@@ -31,6 +31,5 @@ type CustomizationTaskListAttrs struct {
 
 var CustomizationTaskList = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_customization_task_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

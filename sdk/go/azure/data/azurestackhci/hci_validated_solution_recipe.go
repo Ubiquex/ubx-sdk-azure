@@ -15,34 +15,34 @@ type HciValidatedSolutionRecipe_Properties_RecipeContent_Capabilities struct {
 }
 
 type HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Metadata struct {
-	Catalog any
+	Catalog                any
 	EnableAutomaticUpgrade any
-	ExpectedHash any
-	ExtensionType any
-	LcmUpdate any
-	Link any
-	Name any
-	PreviewSource any
-	Publisher any
-	ReleaseTrain any
-	Ring any
+	ExpectedHash           any
+	ExtensionType          any
+	LcmUpdate              any
+	Link                   any
+	Name                   any
+	PreviewSource          any
+	Publisher              any
+	ReleaseTrain           any
+	Ring                   any
 }
 
 type HciValidatedSolutionRecipe_Properties_RecipeContent_Components_Payloads struct {
-	FileName any
-	Hash any
+	FileName   any
+	Hash       any
 	Identifier any
-	Url any
+	Url        any
 }
 
 type HciValidatedSolutionRecipe_Properties_RecipeContent_Components struct {
-	InstallOrder any
-	Metadata any
-	Name any
-	Payloads any
+	InstallOrder    any
+	Metadata        any
+	Name            any
+	Payloads        any
 	RequiredVersion any
-	Tags any
-	Type any
+	Tags            any
+	Type            any
 }
 
 type HciValidatedSolutionRecipe_Properties_RecipeContent_Info struct {
@@ -74,7 +74,7 @@ type HciValidatedSolutionRecipeConfig struct {
 
 type HciValidatedSolutionRecipeAttrs struct {
 	// Represents properties of a validated solution recipe resource.
-	Properties any
+	Properties                  any
 	ValidatedSolutionRecipeName any
 }
 

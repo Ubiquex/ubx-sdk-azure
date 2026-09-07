@@ -8,13 +8,13 @@ type OpenapiWorkflowVersion_Properties_AccessControl_Actions_AllowedCallerIpAddr
 }
 
 type OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies struct {
 	Claims any
-	Type any
+	Type   any
 }
 
 type OpenapiWorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies struct {
@@ -69,9 +69,9 @@ type OpenapiWorkflowVersion_Properties_IntegrationAccount struct {
 
 type OpenapiWorkflowVersion_Properties_Parameters struct {
 	Description any
-	Metadata any
-	Type any
-	Value any
+	Metadata    any
+	Type        any
+	Value       any
 }
 
 type OpenapiWorkflowVersion_Properties_Sku struct {
@@ -109,28 +109,28 @@ type OpenapiWorkflowVersion_Properties struct {
 }
 
 type OpenapiWorkflowVersionConfig struct {
-	Name any
-	VersionId any
+	Name         any
+	VersionId    any
 	WorkflowName any
 }
 
 type OpenapiWorkflowVersionAttrs struct {
 	// The geo-location where the resource lives
 	Location any
-	Name any
+	Name     any
 	// The workflow version properties.
 	Properties any
 	// Resource tags.
-	Tags any
-	VersionId any
+	Tags         any
+	VersionId    any
 	WorkflowName any
 }
 
 var OpenapiWorkflowVersion = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_version",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"VersionId": ubx.FieldSpec{WireName: "version_id"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
+		"VersionId":    ubx.FieldSpec{WireName: "version_id"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

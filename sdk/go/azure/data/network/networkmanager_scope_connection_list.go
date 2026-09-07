@@ -5,22 +5,22 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerScopeConnectionList_Value_Properties struct {
 	ConnectionState any
-	Description any
-	ResourceId any
-	TenantId any
+	Description     any
+	ResourceId      any
+	TenantId        any
 }
 
 type NetworkmanagerScopeConnectionList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type NetworkmanagerScopeConnectionList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 	SystemData any
 }

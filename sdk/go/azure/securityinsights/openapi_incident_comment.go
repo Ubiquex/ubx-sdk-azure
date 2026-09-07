@@ -26,22 +26,22 @@ type OpenapiIncidentComment_Properties struct {
 }
 
 var OpenapiIncidentComment_Properties_AuthorFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"UserPrincipalName": ubx.FieldSpec{WireName: "user_principal_name"},
-	}
+	"Email":             ubx.FieldSpec{WireName: "email"},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"ObjectId":          ubx.FieldSpec{WireName: "object_id"},
+	"UserPrincipalName": ubx.FieldSpec{WireName: "user_principal_name"},
+}
 
 var OpenapiIncidentComment_PropertiesFields = ubx.FieldMap{
-		"Author": ubx.FieldSpec{
-			WireName: "author",
-			Kind: "object",
-			Fields: OpenapiIncidentComment_Properties_AuthorFields,
-		},
-		"CreatedTimeUtc": ubx.FieldSpec{WireName: "created_time_utc"},
-		"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Author": ubx.FieldSpec{
+		WireName: "author",
+		Kind:     "object",
+		Fields:   OpenapiIncidentComment_Properties_AuthorFields,
+	},
+	"CreatedTimeUtc":      ubx.FieldSpec{WireName: "created_time_utc"},
+	"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
+	"Message":             ubx.FieldSpec{WireName: "message"},
+}
 
 type OpenapiIncidentCommentConfig struct {
 	// Etag of the azure resource
@@ -63,8 +63,8 @@ var OpenapiIncidentComment = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiIncidentComment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiIncidentComment_PropertiesFields,
 		},
 	},
 }

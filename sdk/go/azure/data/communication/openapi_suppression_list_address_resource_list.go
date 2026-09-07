@@ -5,11 +5,11 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSuppressionListAddressResourceList_Value_Properties struct {
 	DataLocation any
-	Email any
-	FirstName any
+	Email        any
+	FirstName    any
 	LastModified any
-	LastName any
-	Notes any
+	LastName     any
+	Notes        any
 }
 
 type OpenapiSuppressionListAddressResourceList_Value struct {
@@ -17,16 +17,16 @@ type OpenapiSuppressionListAddressResourceList_Value struct {
 }
 
 type OpenapiSuppressionListAddressResourceListConfig struct {
-	DomainName any
-	EmailServiceName any
+	DomainName          any
+	EmailServiceName    any
 	SuppressionListName any
 }
 
 type OpenapiSuppressionListAddressResourceListAttrs struct {
-	DomainName any
+	DomainName       any
 	EmailServiceName any
 	// The link to the next page of items
-	NextLink any
+	NextLink            any
 	SuppressionListName any
 	// The SuppressionListAddressResource items on this page
 	Value any
@@ -35,8 +35,8 @@ type OpenapiSuppressionListAddressResourceListAttrs struct {
 var OpenapiSuppressionListAddressResourceList = ubx.DataSourceBinding{
 	WireType: "azure_communication_openapi_suppression_list_address_resource_list",
 	Fields: ubx.FieldMap{
-		"DomainName": ubx.FieldSpec{WireName: "domain_name"},
-		"EmailServiceName": ubx.FieldSpec{WireName: "email_service_name"},
+		"DomainName":          ubx.FieldSpec{WireName: "domain_name"},
+		"EmailServiceName":    ubx.FieldSpec{WireName: "email_service_name"},
 		"SuppressionListName": ubx.FieldSpec{WireName: "suppression_list_name"},
 	},
 }

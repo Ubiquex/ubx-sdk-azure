@@ -20,23 +20,23 @@ type VirtualnetworkIpGroup_Properties struct {
 }
 
 var VirtualnetworkIpGroup_Properties_FirewallPoliciesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkIpGroup_PropertiesFields = ubx.FieldMap{
-		"FirewallPolicies": ubx.FieldSpec{
-			WireName: "firewall_policies",
-			Kind: "list",
-			Fields: VirtualnetworkIpGroup_Properties_FirewallPoliciesFields,
-		},
-		"Firewalls": ubx.FieldSpec{
-			WireName: "firewalls",
-			Kind: "list",
-			Fields: VirtualnetworkIpGroup_Properties_FirewallPoliciesFields,
-		},
-		"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"FirewallPolicies": ubx.FieldSpec{
+		WireName: "firewall_policies",
+		Kind:     "list",
+		Fields:   VirtualnetworkIpGroup_Properties_FirewallPoliciesFields,
+	},
+	"Firewalls": ubx.FieldSpec{
+		WireName: "firewalls",
+		Kind:     "list",
+		Fields:   VirtualnetworkIpGroup_Properties_FirewallPoliciesFields,
+	},
+	"IpAddresses":       ubx.FieldSpec{WireName: "ip_addresses"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkIpGroupConfig struct {
 	// Resource ID.
@@ -69,12 +69,12 @@ type VirtualnetworkIpGroupAttrs struct {
 var VirtualnetworkIpGroup = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_ip_group",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
+		"Id":       ubx.FieldSpec{WireName: "id"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkIpGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkIpGroup_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

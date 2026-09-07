@@ -4,27 +4,27 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlDiskList_Value_Properties struct {
-	CreatedDate any
-	DiskBlobName any
-	DiskSizeGiB any
-	DiskType any
-	DiskUri any
-	HostCaching any
-	LeasedByLabVmId any
-	ManagedDiskId any
+	CreatedDate       any
+	DiskBlobName      any
+	DiskSizeGiB       any
+	DiskType          any
+	DiskUri           any
+	HostCaching       any
+	LeasedByLabVmId   any
+	ManagedDiskId     any
 	ProvisioningState any
-	StorageAccountId any
-	UniqueIdentifier any
+	StorageAccountId  any
+	UniqueIdentifier  any
 }
 
 type DtlDiskList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlDiskListConfig struct {
-	LabName any
+	LabName  any
 	UserName any
 }
 
@@ -40,7 +40,7 @@ type DtlDiskListAttrs struct {
 var DtlDiskList = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_disk_list",
 	Fields: ubx.FieldMap{
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
+		"LabName":  ubx.FieldSpec{WireName: "lab_name"},
 		"UserName": ubx.FieldSpec{WireName: "user_name"},
 	},
 }

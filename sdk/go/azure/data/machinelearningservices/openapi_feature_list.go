@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiFeatureList_Value_Properties struct {
-	DataType any
+	DataType    any
 	FeatureName any
 }
 
@@ -13,41 +13,41 @@ type OpenapiFeatureList_Value struct {
 }
 
 type OpenapiFeatureListConfig struct {
-	Description any
-	FeatureName any
-	FeaturesetName any
+	Description       any
+	FeatureName       any
+	FeaturesetName    any
 	FeaturesetVersion any
-	ListViewType any
-	PageSize any
-	Tags any
-	WorkspaceName any
+	ListViewType      any
+	PageSize          any
+	Tags              any
+	WorkspaceName     any
 }
 
 type OpenapiFeatureListAttrs struct {
-	Description any
-	FeatureName any
-	FeaturesetName any
+	Description       any
+	FeatureName       any
+	FeaturesetName    any
 	FeaturesetVersion any
-	ListViewType any
+	ListViewType      any
 	// The link to the next page of items
 	NextLink any
 	PageSize any
-	Tags any
+	Tags     any
 	// The Feature items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiFeatureList = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_feature_list",
 	Fields: ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"FeatureName": ubx.FieldSpec{WireName: "feature_name"},
-		"FeaturesetName": ubx.FieldSpec{WireName: "featureset_name"},
+		"Description":       ubx.FieldSpec{WireName: "description"},
+		"FeatureName":       ubx.FieldSpec{WireName: "feature_name"},
+		"FeaturesetName":    ubx.FieldSpec{WireName: "featureset_name"},
 		"FeaturesetVersion": ubx.FieldSpec{WireName: "featureset_version"},
-		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"PageSize": ubx.FieldSpec{WireName: "page_size"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"ListViewType":      ubx.FieldSpec{WireName: "list_view_type"},
+		"PageSize":          ubx.FieldSpec{WireName: "page_size"},
+		"Tags":              ubx.FieldSpec{WireName: "tags"},
+		"WorkspaceName":     ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

@@ -4,25 +4,25 @@ package batch
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPrivateLinkResourceList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type OpenapiPrivateLinkResourceList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiPrivateLinkResourceListConfig struct {
 	AccountName any
-	Maxresults any
+	Maxresults  any
 }
 
 type OpenapiPrivateLinkResourceListAttrs struct {
 	AccountName any
-	Maxresults any
+	Maxresults  any
 	// The link to the next page of items
 	NextLink any
 	// The PrivateLinkResource items on this page
@@ -33,6 +33,6 @@ var OpenapiPrivateLinkResourceList = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_private_link_resource_list",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"Maxresults": ubx.FieldSpec{WireName: "maxresults"},
+		"Maxresults":  ubx.FieldSpec{WireName: "maxresults"},
 	},
 }

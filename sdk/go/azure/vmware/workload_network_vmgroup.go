@@ -17,12 +17,12 @@ type WorkloadNetworkVmgroup_Properties struct {
 }
 
 var WorkloadNetworkVmgroup_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Members": ubx.FieldSpec{WireName: "members"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Revision": ubx.FieldSpec{WireName: "revision"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"Members":           ubx.FieldSpec{WireName: "members"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Revision":          ubx.FieldSpec{WireName: "revision"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+}
 
 type WorkloadNetworkVmgroupConfig struct {
 	// NSX VM Group Properties
@@ -39,8 +39,8 @@ var WorkloadNetworkVmgroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: WorkloadNetworkVmgroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   WorkloadNetworkVmgroup_PropertiesFields,
 		},
 	},
 }

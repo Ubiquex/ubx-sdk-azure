@@ -144,136 +144,136 @@ type OpenapiSourceControl_Properties struct {
 }
 
 var OpenapiSourceControl_Properties_LastDeploymentInfo_DeploymentFields = ubx.FieldMap{
-		"DeploymentId": ubx.FieldSpec{WireName: "deployment_id"},
-		"DeploymentLogsUrl": ubx.FieldSpec{WireName: "deployment_logs_url"},
-		"DeploymentResult": ubx.FieldSpec{WireName: "deployment_result"},
-		"DeploymentState": ubx.FieldSpec{WireName: "deployment_state"},
-		"DeploymentTime": ubx.FieldSpec{WireName: "deployment_time"},
-	}
+	"DeploymentId":      ubx.FieldSpec{WireName: "deployment_id"},
+	"DeploymentLogsUrl": ubx.FieldSpec{WireName: "deployment_logs_url"},
+	"DeploymentResult":  ubx.FieldSpec{WireName: "deployment_result"},
+	"DeploymentState":   ubx.FieldSpec{WireName: "deployment_state"},
+	"DeploymentTime":    ubx.FieldSpec{WireName: "deployment_time"},
+}
 
 var OpenapiSourceControl_Properties_LastDeploymentInfoFields = ubx.FieldMap{
-		"Deployment": ubx.FieldSpec{
-			WireName: "deployment",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_LastDeploymentInfo_DeploymentFields,
-		},
-		"DeploymentFetchStatus": ubx.FieldSpec{WireName: "deployment_fetch_status"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Deployment": ubx.FieldSpec{
+		WireName: "deployment",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_LastDeploymentInfo_DeploymentFields,
+	},
+	"DeploymentFetchStatus": ubx.FieldSpec{WireName: "deployment_fetch_status"},
+	"Message":               ubx.FieldSpec{WireName: "message"},
+}
 
 var OpenapiSourceControl_Properties_PullRequestFields = ubx.FieldMap{
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"State": ubx.FieldSpec{WireName: "state"},
+	"Url":   ubx.FieldSpec{WireName: "url"},
+}
 
 var OpenapiSourceControl_Properties_RepositoryFields = ubx.FieldMap{
-		"Branch": ubx.FieldSpec{WireName: "branch"},
-		"DeploymentLogsUrl": ubx.FieldSpec{WireName: "deployment_logs_url"},
-		"DisplayUrl": ubx.FieldSpec{WireName: "display_url"},
-		"Url": ubx.FieldSpec{WireName: "url"},
-	}
+	"Branch":            ubx.FieldSpec{WireName: "branch"},
+	"DeploymentLogsUrl": ubx.FieldSpec{WireName: "deployment_logs_url"},
+	"DisplayUrl":        ubx.FieldSpec{WireName: "display_url"},
+	"Url":               ubx.FieldSpec{WireName: "url"},
+}
 
 var OpenapiSourceControl_Properties_RepositoryAccessFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"InstallationId": ubx.FieldSpec{WireName: "installation_id"},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"Token": ubx.FieldSpec{WireName: "token"},
-	}
+	"ClientId":       ubx.FieldSpec{WireName: "client_id"},
+	"Code":           ubx.FieldSpec{WireName: "code"},
+	"InstallationId": ubx.FieldSpec{WireName: "installation_id"},
+	"Kind":           ubx.FieldSpec{WireName: "kind"},
+	"State":          ubx.FieldSpec{WireName: "state"},
+	"Token":          ubx.FieldSpec{WireName: "token"},
+}
 
 var OpenapiSourceControl_Properties_RepositoryResourceInfo_AzureDevOpsResourceInfoFields = ubx.FieldMap{
-		"PipelineId": ubx.FieldSpec{WireName: "pipeline_id"},
-		"ServiceConnectionId": ubx.FieldSpec{WireName: "service_connection_id"},
-	}
+	"PipelineId":          ubx.FieldSpec{WireName: "pipeline_id"},
+	"ServiceConnectionId": ubx.FieldSpec{WireName: "service_connection_id"},
+}
 
 var OpenapiSourceControl_Properties_RepositoryResourceInfo_GitHubResourceInfoFields = ubx.FieldMap{
-		"AppInstallationId": ubx.FieldSpec{WireName: "app_installation_id"},
-	}
+	"AppInstallationId": ubx.FieldSpec{WireName: "app_installation_id"},
+}
 
 var OpenapiSourceControl_Properties_RepositoryResourceInfo_WebhookFields = ubx.FieldMap{
-		"RotateWebhookSecret": ubx.FieldSpec{WireName: "rotate_webhook_secret"},
-		"WebhookId": ubx.FieldSpec{WireName: "webhook_id"},
-		"WebhookSecretUpdateTime": ubx.FieldSpec{WireName: "webhook_secret_update_time"},
-		"WebhookUrl": ubx.FieldSpec{WireName: "webhook_url"},
-	}
+	"RotateWebhookSecret":     ubx.FieldSpec{WireName: "rotate_webhook_secret"},
+	"WebhookId":               ubx.FieldSpec{WireName: "webhook_id"},
+	"WebhookSecretUpdateTime": ubx.FieldSpec{WireName: "webhook_secret_update_time"},
+	"WebhookUrl":              ubx.FieldSpec{WireName: "webhook_url"},
+}
 
 var OpenapiSourceControl_Properties_RepositoryResourceInfoFields = ubx.FieldMap{
-		"AzureDevOpsResourceInfo": ubx.FieldSpec{
-			WireName: "azure_dev_ops_resource_info",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_RepositoryResourceInfo_AzureDevOpsResourceInfoFields,
-		},
-		"GitHubResourceInfo": ubx.FieldSpec{
-			WireName: "git_hub_resource_info",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_RepositoryResourceInfo_GitHubResourceInfoFields,
-		},
-		"Webhook": ubx.FieldSpec{
-			WireName: "webhook",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_RepositoryResourceInfo_WebhookFields,
-		},
-	}
+	"AzureDevOpsResourceInfo": ubx.FieldSpec{
+		WireName: "azure_dev_ops_resource_info",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_RepositoryResourceInfo_AzureDevOpsResourceInfoFields,
+	},
+	"GitHubResourceInfo": ubx.FieldSpec{
+		WireName: "git_hub_resource_info",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_RepositoryResourceInfo_GitHubResourceInfoFields,
+	},
+	"Webhook": ubx.FieldSpec{
+		WireName: "webhook",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_RepositoryResourceInfo_WebhookFields,
+	},
+}
 
 var OpenapiSourceControl_Properties_ServicePrincipalFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"CredentialsExpireOn": ubx.FieldSpec{WireName: "credentials_expire_on"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AppId":               ubx.FieldSpec{WireName: "app_id"},
+	"CredentialsExpireOn": ubx.FieldSpec{WireName: "credentials_expire_on"},
+	"Id":                  ubx.FieldSpec{WireName: "id"},
+	"TenantId":            ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var OpenapiSourceControl_Properties_WorkloadIdentityFederationFields = ubx.FieldMap{
-		"AppId": ubx.FieldSpec{WireName: "app_id"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Issuer": ubx.FieldSpec{WireName: "issuer"},
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AppId":    ubx.FieldSpec{WireName: "app_id"},
+	"Id":       ubx.FieldSpec{WireName: "id"},
+	"Issuer":   ubx.FieldSpec{WireName: "issuer"},
+	"Subject":  ubx.FieldSpec{WireName: "subject"},
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var OpenapiSourceControl_PropertiesFields = ubx.FieldMap{
-		"ContentTypes": ubx.FieldSpec{WireName: "content_types"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"LastDeploymentInfo": ubx.FieldSpec{
-			WireName: "last_deployment_info",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_LastDeploymentInfoFields,
-		},
-		"PullRequest": ubx.FieldSpec{
-			WireName: "pull_request",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_PullRequestFields,
-		},
-		"RepoType": ubx.FieldSpec{WireName: "repo_type"},
-		"Repository": ubx.FieldSpec{
-			WireName: "repository",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_RepositoryFields,
-		},
-		"RepositoryAccess": ubx.FieldSpec{
-			WireName: "repository_access",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_RepositoryAccessFields,
-		},
-		"RepositoryResourceInfo": ubx.FieldSpec{
-			WireName: "repository_resource_info",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_RepositoryResourceInfoFields,
-		},
-		"ServicePrincipal": ubx.FieldSpec{
-			WireName: "service_principal",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_ServicePrincipalFields,
-		},
-		"Version": ubx.FieldSpec{WireName: "version"},
-		"WorkloadIdentityFederation": ubx.FieldSpec{
-			WireName: "workload_identity_federation",
-			Kind: "object",
-			Fields: OpenapiSourceControl_Properties_WorkloadIdentityFederationFields,
-		},
-	}
+	"ContentTypes": ubx.FieldSpec{WireName: "content_types"},
+	"Description":  ubx.FieldSpec{WireName: "description"},
+	"DisplayName":  ubx.FieldSpec{WireName: "display_name"},
+	"Id":           ubx.FieldSpec{WireName: "id"},
+	"LastDeploymentInfo": ubx.FieldSpec{
+		WireName: "last_deployment_info",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_LastDeploymentInfoFields,
+	},
+	"PullRequest": ubx.FieldSpec{
+		WireName: "pull_request",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_PullRequestFields,
+	},
+	"RepoType": ubx.FieldSpec{WireName: "repo_type"},
+	"Repository": ubx.FieldSpec{
+		WireName: "repository",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_RepositoryFields,
+	},
+	"RepositoryAccess": ubx.FieldSpec{
+		WireName: "repository_access",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_RepositoryAccessFields,
+	},
+	"RepositoryResourceInfo": ubx.FieldSpec{
+		WireName: "repository_resource_info",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_RepositoryResourceInfoFields,
+	},
+	"ServicePrincipal": ubx.FieldSpec{
+		WireName: "service_principal",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_ServicePrincipalFields,
+	},
+	"Version": ubx.FieldSpec{WireName: "version"},
+	"WorkloadIdentityFederation": ubx.FieldSpec{
+		WireName: "workload_identity_federation",
+		Kind:     "object",
+		Fields:   OpenapiSourceControl_Properties_WorkloadIdentityFederationFields,
+	},
+}
 
 type OpenapiSourceControlConfig struct {
 	// Etag of the azure resource
@@ -295,8 +295,8 @@ var OpenapiSourceControl = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSourceControl_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSourceControl_PropertiesFields,
 		},
 	},
 }

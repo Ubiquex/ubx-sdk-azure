@@ -8,14 +8,14 @@ type VirtualnetworkSecurityPartnerProviderList_Value_Properties_VirtualHub struc
 }
 
 type VirtualnetworkSecurityPartnerProviderList_Value_Properties struct {
-	ConnectionStatus any
-	ProvisioningState any
+	ConnectionStatus     any
+	ProvisioningState    any
 	SecurityProviderName any
-	VirtualHub any
+	VirtualHub           any
 }
 
 type VirtualnetworkSecurityPartnerProviderList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -31,6 +31,5 @@ type VirtualnetworkSecurityPartnerProviderListAttrs struct {
 
 var VirtualnetworkSecurityPartnerProviderList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_security_partner_provider_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

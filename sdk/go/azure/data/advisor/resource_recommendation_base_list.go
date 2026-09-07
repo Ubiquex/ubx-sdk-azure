@@ -4,39 +4,39 @@ package advisor
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceRecommendationBaseList_Value_Properties_ResourceMetadata struct {
-	Action any
-	Plural any
+	Action     any
+	Plural     any
 	ResourceId any
-	Singular any
-	Source any
+	Singular   any
+	Source     any
 }
 
 type ResourceRecommendationBaseList_Value_Properties_ShortDescription struct {
-	Problem any
+	Problem  any
 	Solution any
 }
 
 type ResourceRecommendationBaseList_Value_Properties struct {
-	Actions any
-	Category any
-	Control any
-	Description any
+	Actions                   any
+	Category                  any
+	Control                   any
+	Description               any
 	ExposedMetadataProperties any
-	ExtendedProperties any
-	Impact any
-	ImpactedField any
-	ImpactedValue any
-	Label any
-	LastUpdated any
-	LearnMoreLink any
-	Metadata any
-	PotentialBenefits any
-	RecommendationTypeId any
-	Remediation any
-	ResourceMetadata any
-	Risk any
-	ShortDescription any
-	SuppressionIds any
+	ExtendedProperties        any
+	Impact                    any
+	ImpactedField             any
+	ImpactedValue             any
+	Label                     any
+	LastUpdated               any
+	LearnMoreLink             any
+	Metadata                  any
+	PotentialBenefits         any
+	RecommendationTypeId      any
+	Remediation               any
+	ResourceMetadata          any
+	Risk                      any
+	ShortDescription          any
+	SuppressionIds            any
 }
 
 type ResourceRecommendationBaseList_Value struct {
@@ -44,14 +44,14 @@ type ResourceRecommendationBaseList_Value struct {
 }
 
 type ResourceRecommendationBaseListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ResourceRecommendationBaseListAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of recommendations.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The list of recommendations.
 	Value any
@@ -60,7 +60,7 @@ type ResourceRecommendationBaseListAttrs struct {
 var ResourceRecommendationBaseList = ubx.DataSourceBinding{
 	WireType: "azure_advisor_resource_recommendation_base_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

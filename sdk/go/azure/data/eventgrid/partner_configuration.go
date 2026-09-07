@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PartnerConfiguration_Properties_PartnerAuthorization_AuthorizedPartnersList struct {
 	AuthorizationExpirationTimeInUtc any
-	PartnerName any
-	PartnerRegistrationImmutableId any
+	PartnerName                      any
+	PartnerRegistrationImmutableId   any
 }
 
 type PartnerConfiguration_Properties_PartnerAuthorization struct {
@@ -39,9 +39,9 @@ type PartnerConfiguration_SystemData struct {
 }
 
 type PartnerConfigurationConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type PartnerConfigurationAttrs struct {
@@ -53,9 +53,9 @@ type PartnerConfigurationAttrs struct {
 	// Name of the resource.
 	Name any
 	// Properties of the partner configuration.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// Tags of the resource.
@@ -67,8 +67,8 @@ type PartnerConfigurationAttrs struct {
 var PartnerConfiguration = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_partner_configuration",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

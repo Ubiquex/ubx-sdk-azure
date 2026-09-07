@@ -4,10 +4,10 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlserverRecoverableSqlPoolList_Value_Properties struct {
-	Edition any
-	ElasticPoolName any
+	Edition                 any
+	ElasticPoolName         any
 	LastAvailableBackupDate any
-	ServiceLevelObjective any
+	ServiceLevelObjective   any
 }
 
 type SqlserverRecoverableSqlPoolList_Value struct {
@@ -26,6 +26,5 @@ type SqlserverRecoverableSqlPoolListAttrs struct {
 
 var SqlserverRecoverableSqlPoolList = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlserver_recoverable_sql_pool_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

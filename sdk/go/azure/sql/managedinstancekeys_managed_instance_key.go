@@ -17,12 +17,12 @@ type ManagedinstancekeysManagedInstanceKey_Properties struct {
 }
 
 var ManagedinstancekeysManagedInstanceKey_PropertiesFields = ubx.FieldMap{
-		"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
-		"CreationDate": ubx.FieldSpec{WireName: "creation_date"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
+	"CreationDate":        ubx.FieldSpec{WireName: "creation_date"},
+	"ServerKeyType":       ubx.FieldSpec{WireName: "server_key_type"},
+	"Thumbprint":          ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":                 ubx.FieldSpec{WireName: "uri"},
+}
 
 type ManagedinstancekeysManagedInstanceKeyConfig struct {
 	// Properties for a key execution.
@@ -41,8 +41,8 @@ var ManagedinstancekeysManagedInstanceKey = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstancekeysManagedInstanceKey_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstancekeysManagedInstanceKey_PropertiesFields,
 		},
 	},
 }

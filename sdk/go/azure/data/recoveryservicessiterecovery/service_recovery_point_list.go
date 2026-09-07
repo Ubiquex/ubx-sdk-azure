@@ -9,29 +9,29 @@ type ServiceRecoveryPointList_Value_Properties_ProviderSpecificDetails struct {
 
 type ServiceRecoveryPointList_Value_Properties struct {
 	ProviderSpecificDetails any
-	RecoveryPointTime any
-	RecoveryPointType any
+	RecoveryPointTime       any
+	RecoveryPointType       any
 }
 
 type ServiceRecoveryPointList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceRecoveryPointListConfig struct {
-	FabricName any
-	ProtectionContainerName any
+	FabricName                  any
+	ProtectionContainerName     any
 	ReplicatedProtectedItemName any
-	ResourceName any
+	ResourceName                any
 }
 
 type ServiceRecoveryPointListAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
-	ProtectionContainerName any
+	NextLink                    any
+	ProtectionContainerName     any
 	ReplicatedProtectedItemName any
-	ResourceName any
+	ResourceName                any
 	// The RecoveryPoint items on this page
 	Value any
 }
@@ -39,9 +39,9 @@ type ServiceRecoveryPointListAttrs struct {
 var ServiceRecoveryPointList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_recovery_point_list",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
+		"FabricName":                  ubx.FieldSpec{WireName: "fabric_name"},
+		"ProtectionContainerName":     ubx.FieldSpec{WireName: "protection_container_name"},
 		"ReplicatedProtectedItemName": ubx.FieldSpec{WireName: "replicated_protected_item_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":                ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

@@ -4,16 +4,16 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRevision_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiRevision_Properties_Template_Containers_Probes_HttpGet struct {
-	Host any
+	Host        any
 	HttpHeaders any
-	Path any
-	Port any
-	Scheme any
+	Path        any
+	Port        any
+	Scheme      any
 }
 
 type OpenapiRevision_Properties_Template_Containers_Probes_TcpSocket struct {
@@ -22,15 +22,15 @@ type OpenapiRevision_Properties_Template_Containers_Probes_TcpSocket struct {
 }
 
 type OpenapiRevision_Properties_Template_Containers_Probes struct {
-	FailureThreshold any
-	HttpGet any
-	InitialDelaySeconds any
-	PeriodSeconds any
-	SuccessThreshold any
-	TcpSocket any
+	FailureThreshold              any
+	HttpGet                       any
+	InitialDelaySeconds           any
+	PeriodSeconds                 any
+	SuccessThreshold              any
+	TcpSocket                     any
 	TerminationGracePeriodSeconds any
-	TimeoutSeconds any
-	Type any
+	TimeoutSeconds                any
+	Type                          any
 }
 
 type OpenapiRevision_Properties_Template_Containers struct {
@@ -38,65 +38,65 @@ type OpenapiRevision_Properties_Template_Containers struct {
 }
 
 type OpenapiRevision_Properties_Template_InitContainers_Env struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiRevision_Properties_Template_InitContainers_Resources struct {
-	Cpu any
+	Cpu              any
 	EphemeralStorage any
-	Memory any
+	Memory           any
 }
 
 type OpenapiRevision_Properties_Template_InitContainers_VolumeMounts struct {
-	MountPath any
-	SubPath any
+	MountPath  any
+	SubPath    any
 	VolumeName any
 }
 
 type OpenapiRevision_Properties_Template_InitContainers struct {
-	Args any
-	Command any
-	Env any
-	Image any
-	Name any
-	Resources any
+	Args         any
+	Command      any
+	Env          any
+	Image        any
+	Name         any
+	Resources    any
 	VolumeMounts any
 }
 
 type OpenapiRevision_Properties_Template_Scale_Rules_AzureQueue_Auth struct {
-	SecretRef any
+	SecretRef        any
 	TriggerParameter any
 }
 
 type OpenapiRevision_Properties_Template_Scale_Rules_AzureQueue struct {
 	AccountName any
-	Auth any
-	Identity any
+	Auth        any
+	Identity    any
 	QueueLength any
-	QueueName any
+	QueueName   any
 }
 
 type OpenapiRevision_Properties_Template_Scale_Rules_Custom struct {
-	Auth any
+	Auth     any
 	Identity any
 	Metadata any
-	Type any
+	Type     any
 }
 
 type OpenapiRevision_Properties_Template_Scale_Rules_Http struct {
-	Auth any
+	Auth     any
 	Identity any
 	Metadata any
 }
 
 type OpenapiRevision_Properties_Template_Scale_Rules struct {
 	AzureQueue any
-	Custom any
-	Http any
-	Name any
-	Tcp any
+	Custom     any
+	Http       any
+	Name       any
+	Tcp        any
 }
 
 type OpenapiRevision_Properties_Template_Scale struct {
@@ -113,21 +113,21 @@ type OpenapiRevision_Properties_Template_Scale struct {
 }
 
 type OpenapiRevision_Properties_Template_ServiceBinds struct {
-	Name any
+	Name      any
 	ServiceId any
 }
 
 type OpenapiRevision_Properties_Template_Volumes_Secrets struct {
-	Path any
+	Path      any
 	SecretRef any
 }
 
 type OpenapiRevision_Properties_Template_Volumes struct {
 	MountOptions any
-	Name any
-	Secrets any
-	StorageName any
-	StorageType any
+	Name         any
+	Secrets      any
+	StorageName  any
+	StorageType  any
 }
 
 type OpenapiRevision_Properties_Template struct {
@@ -174,13 +174,13 @@ type OpenapiRevision_Properties struct {
 
 type OpenapiRevisionConfig struct {
 	ContainerAppName any
-	RevisionName any
+	RevisionName     any
 }
 
 type OpenapiRevisionAttrs struct {
 	ContainerAppName any
 	// Revision resource specific properties
-	Properties any
+	Properties   any
 	RevisionName any
 }
 
@@ -188,6 +188,6 @@ var OpenapiRevision = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_revision",
 	Fields: ubx.FieldMap{
 		"ContainerAppName": ubx.FieldSpec{WireName: "container_app_name"},
-		"RevisionName": ubx.FieldSpec{WireName: "revision_name"},
+		"RevisionName":     ubx.FieldSpec{WireName: "revision_name"},
 	},
 }

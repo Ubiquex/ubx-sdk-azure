@@ -4,25 +4,25 @@ package fluidrelay
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FluidRelayServerList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type FluidRelayServerList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type FluidRelayServerList_Value_Properties_Encryption_CustomerManagedKeyEncryption_KeyEncryptionKeyIdentity struct {
-	IdentityType any
+	IdentityType                   any
 	UserAssignedIdentityResourceId any
 }
 
 type FluidRelayServerList_Value_Properties_Encryption_CustomerManagedKeyEncryption struct {
 	KeyEncryptionKeyIdentity any
-	KeyEncryptionKeyUrl any
+	KeyEncryptionKeyUrl      any
 }
 
 type FluidRelayServerList_Value_Properties_Encryption struct {
@@ -36,24 +36,24 @@ type FluidRelayServerList_Value_Properties_FluidRelayEndpoints struct {
 }
 
 type FluidRelayServerList_Value_Properties struct {
-	Encryption any
+	Encryption          any
 	FluidRelayEndpoints any
-	FrsTenantId any
-	ProvisioningState any
-	Storagesku any
+	FrsTenantId         any
+	ProvisioningState   any
+	Storagesku          any
 }
 
 type FluidRelayServerList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type FluidRelayServerList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 	SystemData any
 }
@@ -64,7 +64,7 @@ type FluidRelayServerListConfig struct {
 
 type FluidRelayServerListAttrs struct {
 	// A link to the next page of results, if any.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A sequence of FluidRelay servers.
 	Value any

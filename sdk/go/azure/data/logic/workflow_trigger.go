@@ -4,7 +4,7 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkflowTrigger_Properties_Recurrence_Schedule_MonthlyOccurrences struct {
-	Day any
+	Day        any
 	Occurrence any
 }
 
@@ -67,11 +67,11 @@ type WorkflowTrigger_Properties struct {
 }
 
 type WorkflowTriggerConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
-	TriggerName any
-	WorkflowName any
+	SubscriptionId    any
+	TriggerName       any
+	WorkflowName      any
 }
 
 type WorkflowTriggerAttrs struct {
@@ -81,22 +81,22 @@ type WorkflowTriggerAttrs struct {
 	// Gets the workflow trigger name.
 	Name any
 	// The workflow trigger properties.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	SubscriptionId any
-	TriggerName any
+	SubscriptionId    any
+	TriggerName       any
 	// Gets the workflow trigger type.
-	Type any
+	Type         any
 	WorkflowName any
 }
 
 var WorkflowTrigger = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_trigger",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TriggerName": ubx.FieldSpec{WireName: "trigger_name"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"TriggerName":       ubx.FieldSpec{WireName: "trigger_name"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

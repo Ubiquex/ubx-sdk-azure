@@ -29,18 +29,18 @@ type DtlArtifactSource_Properties struct {
 }
 
 var DtlArtifactSource_PropertiesFields = ubx.FieldMap{
-		"ArmTemplateFolderPath": ubx.FieldSpec{WireName: "arm_template_folder_path"},
-		"BranchRef": ubx.FieldSpec{WireName: "branch_ref"},
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"FolderPath": ubx.FieldSpec{WireName: "folder_path"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SecurityToken": ubx.FieldSpec{WireName: "security_token"},
-		"SourceType": ubx.FieldSpec{WireName: "source_type"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ArmTemplateFolderPath": ubx.FieldSpec{WireName: "arm_template_folder_path"},
+	"BranchRef":             ubx.FieldSpec{WireName: "branch_ref"},
+	"CreatedDate":           ubx.FieldSpec{WireName: "created_date"},
+	"DisplayName":           ubx.FieldSpec{WireName: "display_name"},
+	"FolderPath":            ubx.FieldSpec{WireName: "folder_path"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"SecurityToken":         ubx.FieldSpec{WireName: "security_token"},
+	"SourceType":            ubx.FieldSpec{WireName: "source_type"},
+	"Status":                ubx.FieldSpec{WireName: "status"},
+	"UniqueIdentifier":      ubx.FieldSpec{WireName: "unique_identifier"},
+	"Uri":                   ubx.FieldSpec{WireName: "uri"},
+}
 
 type DtlArtifactSourceConfig struct {
 	// The geo-location where the resource lives
@@ -70,8 +70,8 @@ var DtlArtifactSource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlArtifactSource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlArtifactSource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

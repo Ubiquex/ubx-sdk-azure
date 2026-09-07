@@ -82,9 +82,9 @@ type ResourceRecommendationBase_SystemData struct {
 }
 
 type ResourceRecommendationBaseConfig struct {
-	ApiVersion any
+	ApiVersion       any
 	RecommendationId any
-	ResourceUri any
+	ResourceUri      any
 }
 
 type ResourceRecommendationBaseAttrs struct {
@@ -94,9 +94,9 @@ type ResourceRecommendationBaseAttrs struct {
 	// The name of the resource
 	Name any
 	// The properties of the recommendation.
-	Properties any
+	Properties       any
 	RecommendationId any
-	ResourceUri any
+	ResourceUri      any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// The type of the resource. E.g. "Microsoft.Compute/virtualMachines" or "Microsoft.Storage/storageAccounts"
@@ -106,8 +106,8 @@ type ResourceRecommendationBaseAttrs struct {
 var ResourceRecommendationBase = ubx.DataSourceBinding{
 	WireType: "azure_advisor_resource_recommendation_base",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":       ubx.FieldSpec{WireName: "api_version"},
 		"RecommendationId": ubx.FieldSpec{WireName: "recommendation_id"},
-		"ResourceUri": ubx.FieldSpec{WireName: "resource_uri"},
+		"ResourceUri":      ubx.FieldSpec{WireName: "resource_uri"},
 	},
 }

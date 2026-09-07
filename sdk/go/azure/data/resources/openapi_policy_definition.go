@@ -23,17 +23,17 @@ type OpenapiPolicyDefinition_Properties_ExternalEvaluationEnforcementSettings st
 
 type OpenapiPolicyDefinition_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicyDefinition_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicyDefinition_Properties struct {
@@ -60,12 +60,12 @@ type OpenapiPolicyDefinition_Properties struct {
 }
 
 type OpenapiPolicyDefinitionConfig struct {
-	ManagementGroupId any
+	ManagementGroupId    any
 	PolicyDefinitionName any
 }
 
 type OpenapiPolicyDefinitionAttrs struct {
-	ManagementGroupId any
+	ManagementGroupId    any
 	PolicyDefinitionName any
 	// The policy definition properties.
 	Properties any
@@ -74,7 +74,7 @@ type OpenapiPolicyDefinitionAttrs struct {
 var OpenapiPolicyDefinition = ubx.DataSourceBinding{
 	WireType: "azure_resources_openapi_policy_definition",
 	Fields: ubx.FieldMap{
-		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
+		"ManagementGroupId":    ubx.FieldSpec{WireName: "management_group_id"},
 		"PolicyDefinitionName": ubx.FieldSpec{WireName: "policy_definition_name"},
 	},
 }

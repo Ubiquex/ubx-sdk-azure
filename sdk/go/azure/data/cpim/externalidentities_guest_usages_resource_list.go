@@ -8,31 +8,31 @@ type ExternalidentitiesGuestUsagesResourceList_Value_Properties struct {
 }
 
 type ExternalidentitiesGuestUsagesResourceList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ExternalidentitiesGuestUsagesResourceList_Value struct {
-	Id any
-	Location any
-	Name any
+	Id         any
+	Location   any
+	Name       any
 	Properties any
 	SystemData any
-	Tags any
-	Type any
+	Tags       any
+	Type       any
 }
 
 type ExternalidentitiesGuestUsagesResourceListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ExternalidentitiesGuestUsagesResourceListAttrs struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 	// List of guest usages resources
 	Value any
@@ -41,7 +41,7 @@ type ExternalidentitiesGuestUsagesResourceListAttrs struct {
 var ExternalidentitiesGuestUsagesResourceList = ubx.DataSourceBinding{
 	WireType: "azure_cpim_externalidentities_guest_usages_resource_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

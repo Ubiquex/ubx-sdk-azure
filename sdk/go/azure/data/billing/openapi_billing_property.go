@@ -4,43 +4,43 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingProperty_Properties_BillingProfileSpendingLimitDetails struct {
-	Amount any
-	Currency any
-	EndDate any
+	Amount    any
+	Currency  any
+	EndDate   any
 	StartDate any
-	Status any
-	Type any
+	Status    any
+	Type      any
 }
 
 type OpenapiBillingProperty_Properties_EnrollmentDetails struct {
-	DepartmentDisplayName any
-	DepartmentId any
+	DepartmentDisplayName        any
+	DepartmentId                 any
 	EnrollmentAccountDisplayName any
-	EnrollmentAccountId any
-	EnrollmentAccountStatus any
+	EnrollmentAccountId          any
+	EnrollmentAccountStatus      any
 }
 
 type OpenapiBillingProperty_Properties_SubscriptionBillingStatusDetails struct {
 	EffectiveDate any
-	Reason any
+	Reason        any
 }
 
 type OpenapiBillingProperty_Properties_SubscriptionServiceUsageAddress struct {
-	AddressLine1 any
-	AddressLine2 any
-	AddressLine3 any
-	City any
-	CompanyName any
-	Country any
-	District any
-	Email any
-	FirstName any
+	AddressLine1   any
+	AddressLine2   any
+	AddressLine3   any
+	City           any
+	CompanyName    any
+	Country        any
+	District       any
+	Email          any
+	FirstName      any
 	IsValidAddress any
-	LastName any
-	MiddleName any
-	PhoneNumber any
-	PostalCode any
-	Region any
+	LastName       any
+	MiddleName     any
+	PhoneNumber    any
+	PostalCode     any
+	Region         any
 }
 
 type OpenapiBillingProperty_Properties struct {
@@ -125,12 +125,12 @@ type OpenapiBillingProperty_Properties struct {
 }
 
 type OpenapiBillingPropertyConfig struct {
-	IncludeBillingCountry any
+	IncludeBillingCountry   any
 	IncludeTransitionStatus any
 }
 
 type OpenapiBillingPropertyAttrs struct {
-	IncludeBillingCountry any
+	IncludeBillingCountry   any
 	IncludeTransitionStatus any
 	// A billing property.
 	Properties any
@@ -141,7 +141,7 @@ type OpenapiBillingPropertyAttrs struct {
 var OpenapiBillingProperty = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_billing_property",
 	Fields: ubx.FieldMap{
-		"IncludeBillingCountry": ubx.FieldSpec{WireName: "include_billing_country"},
+		"IncludeBillingCountry":   ubx.FieldSpec{WireName: "include_billing_country"},
 		"IncludeTransitionStatus": ubx.FieldSpec{WireName: "include_transition_status"},
 	},
 }

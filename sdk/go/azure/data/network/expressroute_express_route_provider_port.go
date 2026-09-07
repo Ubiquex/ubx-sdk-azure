@@ -36,7 +36,7 @@ type ExpressrouteExpressRouteProviderPortAttrs struct {
 	// Resource name.
 	Name any
 	// Properties of ExpressRouteProviderPort.
-	Properties any
+	Properties   any
 	Providerport any
 	// Resource tags.
 	Tags any

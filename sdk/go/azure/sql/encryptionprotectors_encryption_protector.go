@@ -21,14 +21,14 @@ type EncryptionprotectorsEncryptionProtector_Properties struct {
 }
 
 var EncryptionprotectorsEncryptionProtector_PropertiesFields = ubx.FieldMap{
-		"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
-		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"ServerKeyName": ubx.FieldSpec{WireName: "server_key_name"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Subregion": ubx.FieldSpec{WireName: "subregion"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
+	"KeyVersion":          ubx.FieldSpec{WireName: "key_version"},
+	"ServerKeyName":       ubx.FieldSpec{WireName: "server_key_name"},
+	"ServerKeyType":       ubx.FieldSpec{WireName: "server_key_type"},
+	"Subregion":           ubx.FieldSpec{WireName: "subregion"},
+	"Thumbprint":          ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":                 ubx.FieldSpec{WireName: "uri"},
+}
 
 type EncryptionprotectorsEncryptionProtectorConfig struct {
 	// Properties for an encryption protector execution.
@@ -49,8 +49,8 @@ var EncryptionprotectorsEncryptionProtector = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: EncryptionprotectorsEncryptionProtector_PropertiesFields,
+			Kind:     "object",
+			Fields:   EncryptionprotectorsEncryptionProtector_PropertiesFields,
 		},
 	},
 }

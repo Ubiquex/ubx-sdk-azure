@@ -6,27 +6,27 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiStaticSiteBuildArmresource_Properties_DatabaseConnections_ConfigurationFiles struct {
 	Contents any
 	FileName any
-	Type any
+	Type     any
 }
 
 type OpenapiStaticSiteBuildArmresource_Properties_DatabaseConnections struct {
 	ConfigurationFiles any
 	ConnectionIdentity any
-	Name any
-	Region any
-	ResourceId any
+	Name               any
+	Region             any
+	ResourceId         any
 }
 
 type OpenapiStaticSiteBuildArmresource_Properties_LinkedBackends struct {
 	BackendResourceId any
-	CreatedOn any
+	CreatedOn         any
 	ProvisioningState any
-	Region any
+	Region            any
 }
 
 type OpenapiStaticSiteBuildArmresource_Properties_UserProvidedFunctionApps_Properties struct {
-	CreatedOn any
-	FunctionAppRegion any
+	CreatedOn             any
+	FunctionAppRegion     any
 	FunctionAppResourceId any
 }
 
@@ -59,7 +59,7 @@ type OpenapiStaticSiteBuildArmresource_Properties struct {
 
 type OpenapiStaticSiteBuildArmresourceConfig struct {
 	EnvironmentName any
-	Name any
+	Name            any
 }
 
 type OpenapiStaticSiteBuildArmresourceAttrs struct {
@@ -75,6 +75,6 @@ var OpenapiStaticSiteBuildArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_static_site_build_armresource",
 	Fields: ubx.FieldMap{
 		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 	},
 }

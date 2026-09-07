@@ -4,14 +4,14 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RansomwareReport_Properties_Suspects_SuspectFiles struct {
-	FileTimestamp any
+	FileTimestamp   any
 	SuspectFileName any
 }
 
 type RansomwareReport_Properties_Suspects struct {
-	Extension any
-	FileCount any
-	Resolution any
+	Extension    any
+	FileCount    any
+	Resolution   any
 	SuspectFiles any
 }
 
@@ -33,27 +33,27 @@ type RansomwareReport_Properties struct {
 }
 
 type RansomwareReportConfig struct {
-	AccountName any
-	PoolName any
+	AccountName          any
+	PoolName             any
 	RansomwareReportName any
-	VolumeName any
+	VolumeName           any
 }
 
 type RansomwareReportAttrs struct {
 	AccountName any
-	PoolName any
+	PoolName    any
 	// Advanced Ransomware Protection (ARP) report properties. Evaluate the report to determine whether the activity is acceptable (false positive) or whether an attack seems malicious using the ClearSuspects operation. Advanced Ransomware Protection (ARP) creates snapshots named Anti_ransomware_backup when it detects a potential ransomware threat. You can use one of the ARP snapshots or another snapshot of your volume to restore data.
-	Properties any
+	Properties           any
 	RansomwareReportName any
-	VolumeName any
+	VolumeName           any
 }
 
 var RansomwareReport = ubx.DataSourceBinding{
 	WireType: "azure_netapp_ransomware_report",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
+		"AccountName":          ubx.FieldSpec{WireName: "account_name"},
+		"PoolName":             ubx.FieldSpec{WireName: "pool_name"},
 		"RansomwareReportName": ubx.FieldSpec{WireName: "ransomware_report_name"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+		"VolumeName":           ubx.FieldSpec{WireName: "volume_name"},
 	},
 }

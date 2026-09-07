@@ -9,8 +9,8 @@ type ServiceStorageClassification_Properties struct {
 }
 
 type ServiceStorageClassificationConfig struct {
-	FabricName any
-	ResourceName any
+	FabricName                any
+	ResourceName              any
 	StorageClassificationName any
 }
 
@@ -19,16 +19,16 @@ type ServiceStorageClassificationAttrs struct {
 	// Resource Location
 	Location any
 	// Storage object properties.
-	Properties any
-	ResourceName any
+	Properties                any
+	ResourceName              any
 	StorageClassificationName any
 }
 
 var ServiceStorageClassification = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_storage_classification",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"FabricName":                ubx.FieldSpec{WireName: "fabric_name"},
+		"ResourceName":              ubx.FieldSpec{WireName: "resource_name"},
 		"StorageClassificationName": ubx.FieldSpec{WireName: "storage_classification_name"},
 	},
 }

@@ -16,17 +16,17 @@ type OpenapiSecret_Properties struct {
 }
 
 var OpenapiSecret_Properties_ParametersFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiSecret_PropertiesFields = ubx.FieldMap{
-		"Parameters": ubx.FieldSpec{
-			WireName: "parameters",
-			Kind: "object",
-			Fields: OpenapiSecret_Properties_ParametersFields,
-		},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-	}
+	"Parameters": ubx.FieldSpec{
+		WireName: "parameters",
+		Kind:     "object",
+		Fields:   OpenapiSecret_Properties_ParametersFields,
+	},
+	"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+}
 
 type OpenapiSecretConfig struct {
 	// The JSON object that contains the properties of the Secret to create.
@@ -43,8 +43,8 @@ var OpenapiSecret = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiSecret_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiSecret_PropertiesFields,
 		},
 	},
 }

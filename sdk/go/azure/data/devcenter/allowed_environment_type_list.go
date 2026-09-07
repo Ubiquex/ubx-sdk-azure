@@ -4,7 +4,7 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AllowedEnvironmentTypeList_Value_Properties struct {
-	DisplayName any
+	DisplayName       any
 	ProvisioningState any
 }
 
@@ -18,7 +18,7 @@ type AllowedEnvironmentTypeListConfig struct {
 
 type AllowedEnvironmentTypeListAttrs struct {
 	// URL to get the next set of results if there are any.
-	NextLink any
+	NextLink    any
 	ProjectName any
 	// Current page of results.
 	Value any

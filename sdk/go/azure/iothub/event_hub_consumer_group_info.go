@@ -9,8 +9,8 @@ type EventHubConsumerGroupInfo_Properties struct {
 }
 
 var EventHubConsumerGroupInfo_PropertiesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 type EventHubConsumerGroupInfoConfig struct {
 	// The EventHub consumer group name.
@@ -35,8 +35,8 @@ var EventHubConsumerGroupInfo = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: EventHubConsumerGroupInfo_PropertiesFields,
+			Kind:     "object",
+			Fields:   EventHubConsumerGroupInfo_PropertiesFields,
 		},
 	},
 }

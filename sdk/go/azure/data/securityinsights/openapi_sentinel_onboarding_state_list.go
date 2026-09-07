@@ -8,7 +8,7 @@ type OpenapiSentinelOnboardingStateList_Value_Properties struct {
 }
 
 type OpenapiSentinelOnboardingStateList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -18,7 +18,7 @@ type OpenapiSentinelOnboardingStateListConfig struct {
 
 type OpenapiSentinelOnboardingStateListAttrs struct {
 	// Array of Sentinel onboarding states
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

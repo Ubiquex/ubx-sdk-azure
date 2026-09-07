@@ -17,12 +17,12 @@ type PlaywrightWorkspace_Properties struct {
 }
 
 var PlaywrightWorkspace_PropertiesFields = ubx.FieldMap{
-		"DataplaneUri": ubx.FieldSpec{WireName: "dataplane_uri"},
-		"LocalAuth": ubx.FieldSpec{WireName: "local_auth"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RegionalAffinity": ubx.FieldSpec{WireName: "regional_affinity"},
-		"WorkspaceId": ubx.FieldSpec{WireName: "workspace_id"},
-	}
+	"DataplaneUri":      ubx.FieldSpec{WireName: "dataplane_uri"},
+	"LocalAuth":         ubx.FieldSpec{WireName: "local_auth"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RegionalAffinity":  ubx.FieldSpec{WireName: "regional_affinity"},
+	"WorkspaceId":       ubx.FieldSpec{WireName: "workspace_id"},
+}
 
 type PlaywrightWorkspaceConfig struct {
 	// The geo-location where the resource lives
@@ -48,8 +48,8 @@ var PlaywrightWorkspace = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PlaywrightWorkspace_PropertiesFields,
+			Kind:     "object",
+			Fields:   PlaywrightWorkspace_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

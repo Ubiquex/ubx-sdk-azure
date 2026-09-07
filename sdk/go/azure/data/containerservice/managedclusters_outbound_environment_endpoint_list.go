@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersOutboundEnvironmentEndpointList_Value_Endpoints_EndpointDetails struct {
 	Description any
-	IpAddress any
-	Port any
-	Protocol any
+	IpAddress   any
+	Port        any
+	Protocol    any
 }
 
 type ManagedclustersOutboundEnvironmentEndpointList_Value_Endpoints struct {
-	DomainName any
+	DomainName      any
 	EndpointDetails any
 }
 
 type ManagedclustersOutboundEnvironmentEndpointList_Value struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 
@@ -26,7 +26,7 @@ type ManagedclustersOutboundEnvironmentEndpointListConfig struct {
 
 type ManagedclustersOutboundEnvironmentEndpointListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The OutboundEnvironmentEndpoint items on this page
 	Value any

@@ -4,22 +4,22 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimproductsApiContractList_Value_Properties_ApiVersionSet struct {
-	Description any
-	Id any
-	Name any
+	Description       any
+	Id                any
+	Name              any
 	VersionHeaderName any
-	VersionQueryName any
-	VersioningScheme any
+	VersionQueryName  any
+	VersioningScheme  any
 }
 
 type ApimproductsApiContractList_Value_Properties struct {
-	ApiVersionSet any
-	DisplayName any
-	Path any
-	Protocols any
+	ApiVersionSet     any
+	DisplayName       any
+	Path              any
+	Protocols         any
 	ProvisioningState any
-	ServiceUrl any
-	SourceApiId any
+	ServiceUrl        any
+	SourceApiId       any
 }
 
 type ApimproductsApiContractList_Value struct {
@@ -40,6 +40,5 @@ type ApimproductsApiContractListAttrs struct {
 
 var ApimproductsApiContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimproducts_api_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

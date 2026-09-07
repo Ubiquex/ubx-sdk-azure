@@ -15,11 +15,11 @@ type ExpressrouteServiceEndpointPolicyDefinition_Properties struct {
 }
 
 var ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Service": ubx.FieldSpec{WireName: "service"},
-		"ServiceResources": ubx.FieldSpec{WireName: "service_resources"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Service":           ubx.FieldSpec{WireName: "service"},
+	"ServiceResources":  ubx.FieldSpec{WireName: "service_resources"},
+}
 
 type ExpressrouteServiceEndpointPolicyDefinitionConfig struct {
 	// Name of the resource.
@@ -45,8 +45,8 @@ var ExpressrouteServiceEndpointPolicyDefinition = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteServiceEndpointPolicyDefinition_PropertiesFields,
 		},
 	},
 }

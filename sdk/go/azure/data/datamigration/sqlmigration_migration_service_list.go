@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlmigrationMigrationServiceList_Value_Properties struct {
 	IntegrationRuntimeState any
-	ProvisioningState any
+	ProvisioningState       any
 }
 
 type SqlmigrationMigrationServiceList_Value struct {
@@ -13,21 +13,21 @@ type SqlmigrationMigrationServiceList_Value struct {
 }
 
 type SqlmigrationMigrationServiceListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type SqlmigrationMigrationServiceListAttrs struct {
-	ApiVersion any
-	NextLink any
+	ApiVersion     any
+	NextLink       any
 	SubscriptionId any
-	Value any
+	Value          any
 }
 
 var SqlmigrationMigrationServiceList = ubx.DataSourceBinding{
 	WireType: "azure_datamigration_sqlmigration_migration_service_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

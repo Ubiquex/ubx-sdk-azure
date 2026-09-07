@@ -27,7 +27,7 @@ type OpenapiContinuousWebJob_Properties struct {
 }
 
 type OpenapiContinuousWebJobConfig struct {
-	Name any
+	Name       any
 	WebJobName any
 }
 
@@ -43,7 +43,7 @@ type OpenapiContinuousWebJobAttrs struct {
 var OpenapiContinuousWebJob = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_continuous_web_job",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
 		"WebJobName": ubx.FieldSpec{WireName: "web_job_name"},
 	},
 }

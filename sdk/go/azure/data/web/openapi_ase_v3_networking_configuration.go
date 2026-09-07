@@ -6,15 +6,15 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiAseV3NetworkingConfiguration_Properties struct {
 	// Property to enable and disable new private endpoint connection creation on ASE
 	AllowNewPrivateEndpointConnections any
-	ExternalInboundIpAddresses any
+	ExternalInboundIpAddresses         any
 	// Property to enable and disable FTP on ASEV3
 	FtpEnabled any
 	// Customer provided Inbound IP Address. Only able to be set on Ase create.
-	InboundIpAddressOverride any
+	InboundIpAddressOverride   any
 	InternalInboundIpAddresses any
-	LinuxOutboundIpAddresses any
+	LinuxOutboundIpAddresses   any
 	// Property to enable and disable Remote Debug on ASEV3
-	RemoteDebugEnabled any
+	RemoteDebugEnabled         any
 	WindowsOutboundIpAddresses any
 }
 

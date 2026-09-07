@@ -33,17 +33,17 @@ type FluidRelayContainer_SystemData struct {
 
 type FluidRelayContainerConfig struct {
 	FluidRelayContainerName any
-	FluidRelayServerName any
-	ResourceGroup any
-	SubscriptionId any
+	FluidRelayServerName    any
+	ResourceGroup           any
+	SubscriptionId          any
 }
 
 type FluidRelayContainerAttrs struct {
 	FluidRelayContainerName any
-	FluidRelayServerName any
+	FluidRelayServerName    any
 	// The properties of a Fluid Relay Container resource.
-	Properties any
-	ResourceGroup any
+	Properties     any
+	ResourceGroup  any
 	SubscriptionId any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
@@ -53,8 +53,8 @@ var FluidRelayContainer = ubx.DataSourceBinding{
 	WireType: "azure_fluidrelay_fluid_relay_container",
 	Fields: ubx.FieldMap{
 		"FluidRelayContainerName": ubx.FieldSpec{WireName: "fluid_relay_container_name"},
-		"FluidRelayServerName": ubx.FieldSpec{WireName: "fluid_relay_server_name"},
-		"ResourceGroup": ubx.FieldSpec{WireName: "resource_group"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"FluidRelayServerName":    ubx.FieldSpec{WireName: "fluid_relay_server_name"},
+		"ResourceGroup":           ubx.FieldSpec{WireName: "resource_group"},
+		"SubscriptionId":          ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

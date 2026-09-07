@@ -4,14 +4,14 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ClusterPrincipalAssignmentList_Value_Properties struct {
-	AadObjectId any
-	PrincipalId any
-	PrincipalName any
-	PrincipalType any
+	AadObjectId       any
+	PrincipalId       any
+	PrincipalName     any
+	PrincipalType     any
 	ProvisioningState any
-	Role any
-	TenantId any
-	TenantName any
+	Role              any
+	TenantId          any
+	TenantName        any
 }
 
 type ClusterPrincipalAssignmentList_Value struct {

@@ -95,88 +95,88 @@ type RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties struc
 }
 
 var RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties_PrincipalFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Email":       ubx.FieldSpec{WireName: "email"},
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties_RoleDefinitionFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Id":          ubx.FieldSpec{WireName: "id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedPropertiesFields = ubx.FieldMap{
-		"Principal": ubx.FieldSpec{
-			WireName: "principal",
-			Kind: "object",
-			Fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties_PrincipalFields,
-		},
-		"RoleDefinition": ubx.FieldSpec{
-			WireName: "role_definition",
-			Kind: "object",
-			Fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties_RoleDefinitionFields,
-		},
-		"Scope": ubx.FieldSpec{
-			WireName: "scope",
-			Kind: "object",
-			Fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties_RoleDefinitionFields,
-		},
-	}
+	"Principal": ubx.FieldSpec{
+		WireName: "principal",
+		Kind:     "object",
+		Fields:   RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties_PrincipalFields,
+	},
+	"RoleDefinition": ubx.FieldSpec{
+		WireName: "role_definition",
+		Kind:     "object",
+		Fields:   RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties_RoleDefinitionFields,
+	},
+	"Scope": ubx.FieldSpec{
+		WireName: "scope",
+		Kind:     "object",
+		Fields:   RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedProperties_RoleDefinitionFields,
+	},
+}
 
 var RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ScheduleInfo_ExpirationFields = ubx.FieldMap{
-		"Duration": ubx.FieldSpec{WireName: "duration"},
-		"EndDateTime": ubx.FieldSpec{WireName: "end_date_time"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Duration":    ubx.FieldSpec{WireName: "duration"},
+	"EndDateTime": ubx.FieldSpec{WireName: "end_date_time"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 var RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ScheduleInfoFields = ubx.FieldMap{
-		"Expiration": ubx.FieldSpec{
-			WireName: "expiration",
-			Kind: "object",
-			Fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ScheduleInfo_ExpirationFields,
-		},
-		"StartDateTime": ubx.FieldSpec{WireName: "start_date_time"},
-	}
+	"Expiration": ubx.FieldSpec{
+		WireName: "expiration",
+		Kind:     "object",
+		Fields:   RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ScheduleInfo_ExpirationFields,
+	},
+	"StartDateTime": ubx.FieldSpec{WireName: "start_date_time"},
+}
 
 var RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_TicketInfoFields = ubx.FieldMap{
-		"TicketNumber": ubx.FieldSpec{WireName: "ticket_number"},
-		"TicketSystem": ubx.FieldSpec{WireName: "ticket_system"},
-	}
+	"TicketNumber": ubx.FieldSpec{WireName: "ticket_number"},
+	"TicketSystem": ubx.FieldSpec{WireName: "ticket_system"},
+}
 
 var RoleassignmentschedulerequestRoleAssignmentScheduleRequest_PropertiesFields = ubx.FieldMap{
-		"ApprovalId": ubx.FieldSpec{WireName: "approval_id"},
-		"Condition": ubx.FieldSpec{WireName: "condition"},
-		"ConditionVersion": ubx.FieldSpec{WireName: "condition_version"},
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"ExpandedProperties": ubx.FieldSpec{
-			WireName: "expanded_properties",
-			Kind: "object",
-			Fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedPropertiesFields,
-		},
-		"Justification": ubx.FieldSpec{WireName: "justification"},
-		"LinkedRoleEligibilityScheduleId": ubx.FieldSpec{WireName: "linked_role_eligibility_schedule_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"PrincipalType": ubx.FieldSpec{WireName: "principal_type"},
-		"RequestType": ubx.FieldSpec{WireName: "request_type"},
-		"RequestorId": ubx.FieldSpec{WireName: "requestor_id"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-		"ScheduleInfo": ubx.FieldSpec{
-			WireName: "schedule_info",
-			Kind: "object",
-			Fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ScheduleInfoFields,
-		},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TargetRoleAssignmentScheduleId": ubx.FieldSpec{WireName: "target_role_assignment_schedule_id"},
-		"TargetRoleAssignmentScheduleInstanceId": ubx.FieldSpec{WireName: "target_role_assignment_schedule_instance_id"},
-		"TicketInfo": ubx.FieldSpec{
-			WireName: "ticket_info",
-			Kind: "object",
-			Fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_TicketInfoFields,
-		},
-	}
+	"ApprovalId":       ubx.FieldSpec{WireName: "approval_id"},
+	"Condition":        ubx.FieldSpec{WireName: "condition"},
+	"ConditionVersion": ubx.FieldSpec{WireName: "condition_version"},
+	"CreatedOn":        ubx.FieldSpec{WireName: "created_on"},
+	"ExpandedProperties": ubx.FieldSpec{
+		WireName: "expanded_properties",
+		Kind:     "object",
+		Fields:   RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ExpandedPropertiesFields,
+	},
+	"Justification":                   ubx.FieldSpec{WireName: "justification"},
+	"LinkedRoleEligibilityScheduleId": ubx.FieldSpec{WireName: "linked_role_eligibility_schedule_id"},
+	"PrincipalId":                     ubx.FieldSpec{WireName: "principal_id"},
+	"PrincipalType":                   ubx.FieldSpec{WireName: "principal_type"},
+	"RequestType":                     ubx.FieldSpec{WireName: "request_type"},
+	"RequestorId":                     ubx.FieldSpec{WireName: "requestor_id"},
+	"RoleDefinitionId":                ubx.FieldSpec{WireName: "role_definition_id"},
+	"ScheduleInfo": ubx.FieldSpec{
+		WireName: "schedule_info",
+		Kind:     "object",
+		Fields:   RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_ScheduleInfoFields,
+	},
+	"Scope":                                  ubx.FieldSpec{WireName: "scope"},
+	"Status":                                 ubx.FieldSpec{WireName: "status"},
+	"TargetRoleAssignmentScheduleId":         ubx.FieldSpec{WireName: "target_role_assignment_schedule_id"},
+	"TargetRoleAssignmentScheduleInstanceId": ubx.FieldSpec{WireName: "target_role_assignment_schedule_instance_id"},
+	"TicketInfo": ubx.FieldSpec{
+		WireName: "ticket_info",
+		Kind:     "object",
+		Fields:   RoleassignmentschedulerequestRoleAssignmentScheduleRequest_Properties_TicketInfoFields,
+	},
+}
 
 type RoleassignmentschedulerequestRoleAssignmentScheduleRequestConfig struct {
 	// Role assignment schedule request properties with scope.
@@ -203,8 +203,8 @@ var RoleassignmentschedulerequestRoleAssignmentScheduleRequest = ubx.ResourceBin
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RoleassignmentschedulerequestRoleAssignmentScheduleRequest_PropertiesFields,
+			Kind:     "object",
+			Fields:   RoleassignmentschedulerequestRoleAssignmentScheduleRequest_PropertiesFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

@@ -4,35 +4,35 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiProcessModuleInfoList_Value_Properties struct {
-	BaseAddress any
-	FileDescription any
-	FileName any
-	FilePath any
-	FileVersion any
-	Href any
-	IsDebug any
-	Language any
+	BaseAddress      any
+	FileDescription  any
+	FileName         any
+	FilePath         any
+	FileVersion      any
+	Href             any
+	IsDebug          any
+	Language         any
 	ModuleMemorySize any
-	Product any
-	ProductVersion any
+	Product          any
+	ProductVersion   any
 }
 
 type OpenapiProcessModuleInfoList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiProcessModuleInfoListConfig struct {
 	InstanceId any
-	Name any
-	ProcessId any
+	Name       any
+	ProcessId  any
 }
 
 type OpenapiProcessModuleInfoListAttrs struct {
 	InstanceId any
-	Name any
+	Name       any
 	// The link to the next page of items
-	NextLink any
+	NextLink  any
 	ProcessId any
 	// The ProcessModuleInfo items on this page
 	Value any
@@ -42,7 +42,7 @@ var OpenapiProcessModuleInfoList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_process_module_info_list",
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ProcessId": ubx.FieldSpec{WireName: "process_id"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
+		"ProcessId":  ubx.FieldSpec{WireName: "process_id"},
 	},
 }

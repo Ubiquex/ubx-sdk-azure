@@ -17,9 +17,9 @@ type OpenapiWorkerPoolResource_Properties struct {
 }
 
 type OpenapiWorkerPoolResource_Sku_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiWorkerPoolResource_Sku_SkuCapacity struct {

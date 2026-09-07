@@ -4,13 +4,13 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimworkspacesApiRevisionContractList_Value struct {
-	ApiId any
-	ApiRevision any
+	ApiId           any
+	ApiRevision     any
 	CreatedDateTime any
-	Description any
-	IsCurrent any
-	IsOnline any
-	PrivateUrl any
+	Description     any
+	IsCurrent       any
+	IsOnline        any
+	PrivateUrl      any
 	UpdatedDateTime any
 }
 
@@ -28,6 +28,5 @@ type ApimworkspacesApiRevisionContractListAttrs struct {
 
 var ApimworkspacesApiRevisionContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimworkspaces_api_revision_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

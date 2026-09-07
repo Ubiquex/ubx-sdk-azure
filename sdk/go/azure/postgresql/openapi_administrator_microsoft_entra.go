@@ -15,11 +15,11 @@ type OpenapiAdministratorMicrosoftEntra_Properties struct {
 }
 
 var OpenapiAdministratorMicrosoftEntra_PropertiesFields = ubx.FieldMap{
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"PrincipalName": ubx.FieldSpec{WireName: "principal_name"},
-		"PrincipalType": ubx.FieldSpec{WireName: "principal_type"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"ObjectId":      ubx.FieldSpec{WireName: "object_id"},
+	"PrincipalName": ubx.FieldSpec{WireName: "principal_name"},
+	"PrincipalType": ubx.FieldSpec{WireName: "principal_type"},
+	"TenantId":      ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type OpenapiAdministratorMicrosoftEntraConfig struct {
 	// Properties of a server administrator associated to a Microsoft Entra principal.
@@ -36,8 +36,8 @@ var OpenapiAdministratorMicrosoftEntra = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAdministratorMicrosoftEntra_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAdministratorMicrosoftEntra_PropertiesFields,
 		},
 	},
 }

@@ -8,31 +8,31 @@ type ServiceReplicationProtectionIntentList_Value_Properties_ProviderSpecificDet
 }
 
 type ServiceReplicationProtectionIntentList_Value_Properties struct {
-	CreationTimeUtc any
-	FriendlyName any
-	IsActive any
-	JobId any
-	JobState any
+	CreationTimeUtc         any
+	FriendlyName            any
+	IsActive                any
+	JobId                   any
+	JobState                any
 	ProviderSpecificDetails any
 }
 
 type ServiceReplicationProtectionIntentList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceReplicationProtectionIntentListConfig struct {
 	ResourceName any
-	SkipToken any
-	TakeToken any
+	SkipToken    any
+	TakeToken    any
 }
 
 type ServiceReplicationProtectionIntentListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
-	SkipToken any
-	TakeToken any
+	SkipToken    any
+	TakeToken    any
 	// The ReplicationProtectionIntent items on this page
 	Value any
 }
@@ -41,7 +41,7 @@ var ServiceReplicationProtectionIntentList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_replication_protection_intent_list",
 	Fields: ubx.FieldMap{
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SkipToken": ubx.FieldSpec{WireName: "skip_token"},
-		"TakeToken": ubx.FieldSpec{WireName: "take_token"},
+		"SkipToken":    ubx.FieldSpec{WireName: "skip_token"},
+		"TakeToken":    ubx.FieldSpec{WireName: "take_token"},
 	},
 }

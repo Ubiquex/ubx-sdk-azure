@@ -8,13 +8,13 @@ type WorkflowVersion_Properties_AccessControl_Actions_AllowedCallerIpAddresses s
 }
 
 type WorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type WorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies struct {
 	Claims any
-	Type any
+	Type   any
 }
 
 type WorkflowVersion_Properties_AccessControl_Actions_OpenAuthenticationPolicies struct {
@@ -69,9 +69,9 @@ type WorkflowVersion_Properties_IntegrationAccount struct {
 
 type WorkflowVersion_Properties_Parameters struct {
 	Description any
-	Metadata any
-	Type any
-	Value any
+	Metadata    any
+	Type        any
+	Value       any
 }
 
 type WorkflowVersion_Properties_Sku struct {
@@ -90,7 +90,7 @@ type WorkflowVersion_Properties struct {
 	ChangedTime any
 	// Gets the created time.
 	CreatedTime any
-	Definition any
+	Definition  any
 	// The endpoints configuration.
 	EndpointsConfiguration any
 	// The resource reference.
@@ -108,11 +108,11 @@ type WorkflowVersion_Properties struct {
 }
 
 type WorkflowVersionConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
-	VersionId any
-	WorkflowName any
+	SubscriptionId    any
+	VersionId         any
+	WorkflowName      any
 }
 
 type WorkflowVersionAttrs struct {
@@ -124,24 +124,24 @@ type WorkflowVersionAttrs struct {
 	// Gets the resource name.
 	Name any
 	// The workflow version properties.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The resource tags.
 	Tags any
 	// Gets the resource type.
-	Type any
-	VersionId any
+	Type         any
+	VersionId    any
 	WorkflowName any
 }
 
 var WorkflowVersion = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_version",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"VersionId": ubx.FieldSpec{WireName: "version_id"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"VersionId":         ubx.FieldSpec{WireName: "version_id"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

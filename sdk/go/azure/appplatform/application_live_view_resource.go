@@ -36,38 +36,38 @@ type ApplicationLiveViewResource_Properties struct {
 }
 
 var ApplicationLiveViewResource_Properties_Components_InstancesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Name":   ubx.FieldSpec{WireName: "name"},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 var ApplicationLiveViewResource_Properties_Components_ResourceRequestsFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-	}
+	"Cpu":           ubx.FieldSpec{WireName: "cpu"},
+	"InstanceCount": ubx.FieldSpec{WireName: "instance_count"},
+	"Memory":        ubx.FieldSpec{WireName: "memory"},
+}
 
 var ApplicationLiveViewResource_Properties_ComponentsFields = ubx.FieldMap{
-		"Instances": ubx.FieldSpec{
-			WireName: "instances",
-			Kind: "list",
-			Fields: ApplicationLiveViewResource_Properties_Components_InstancesFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ResourceRequests": ubx.FieldSpec{
-			WireName: "resource_requests",
-			Kind: "object",
-			Fields: ApplicationLiveViewResource_Properties_Components_ResourceRequestsFields,
-		},
-	}
+	"Instances": ubx.FieldSpec{
+		WireName: "instances",
+		Kind:     "list",
+		Fields:   ApplicationLiveViewResource_Properties_Components_InstancesFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"ResourceRequests": ubx.FieldSpec{
+		WireName: "resource_requests",
+		Kind:     "object",
+		Fields:   ApplicationLiveViewResource_Properties_Components_ResourceRequestsFields,
+	},
+}
 
 var ApplicationLiveViewResource_PropertiesFields = ubx.FieldMap{
-		"Components": ubx.FieldSpec{
-			WireName: "components",
-			Kind: "list",
-			Fields: ApplicationLiveViewResource_Properties_ComponentsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Components": ubx.FieldSpec{
+		WireName: "components",
+		Kind:     "list",
+		Fields:   ApplicationLiveViewResource_Properties_ComponentsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ApplicationLiveViewResourceConfig struct {
 	// Application Live View properties payload
@@ -84,8 +84,8 @@ var ApplicationLiveViewResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApplicationLiveViewResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApplicationLiveViewResource_PropertiesFields,
 		},
 	},
 }

@@ -4,35 +4,35 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSiteContainerList_Value_Properties_EnvironmentVariables struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiSiteContainerList_Value_Properties_VolumeMounts struct {
 	ContainerMountPath any
-	Data any
-	ReadOnly any
-	VolumeSubPath any
+	Data               any
+	ReadOnly           any
+	VolumeSubPath      any
 }
 
 type OpenapiSiteContainerList_Value_Properties struct {
-	AuthType any
-	CreatedTime any
-	EnvironmentVariables any
-	Image any
+	AuthType                               any
+	CreatedTime                            any
+	EnvironmentVariables                   any
+	Image                                  any
 	InheritAppSettingsAndConnectionStrings any
-	IsMain any
-	LastModifiedTime any
-	PasswordSecret any
-	StartUpCommand any
-	TargetPort any
-	UserManagedIdentityClientId any
-	UserName any
-	VolumeMounts any
+	IsMain                                 any
+	LastModifiedTime                       any
+	PasswordSecret                         any
+	StartUpCommand                         any
+	TargetPort                             any
+	UserManagedIdentityClientId            any
+	UserName                               any
+	VolumeMounts                           any
 }
 
 type OpenapiSiteContainerList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

@@ -28,10 +28,10 @@ type NetworkmanagerSecurityUserConfiguration_SystemData struct {
 }
 
 var NetworkmanagerSecurityUserConfiguration_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceGuid": ubx.FieldSpec{WireName: "resource_guid"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceGuid":      ubx.FieldSpec{WireName: "resource_guid"},
+}
 
 type NetworkmanagerSecurityUserConfigurationConfig struct {
 	// Defines the security user configuration properties.
@@ -58,8 +58,8 @@ var NetworkmanagerSecurityUserConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerSecurityUserConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerSecurityUserConfiguration_PropertiesFields,
 		},
 	},
 }

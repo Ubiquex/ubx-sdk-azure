@@ -4,50 +4,50 @@ package applicationinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkbooksWorkbookList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type WorkbooksWorkbookList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type WorkbooksWorkbookList_Value_Properties struct {
-	Category any
-	Description any
-	DisplayName any
-	Revision any
+	Category       any
+	Description    any
+	DisplayName    any
+	Revision       any
 	SerializedData any
-	SourceId any
-	StorageUri any
-	Tags any
-	TimeModified any
-	UserId any
-	Version any
+	SourceId       any
+	StorageUri     any
+	Tags           any
+	TimeModified   any
+	UserId         any
+	Version        any
 }
 
 type WorkbooksWorkbookList_Value struct {
-	Etag any
-	Identity any
-	Kind any
+	Etag       any
+	Identity   any
+	Kind       any
 	Properties any
 }
 
 type WorkbooksWorkbookListConfig struct {
 	CanFetchContent any
-	Category any
-	Tags any
+	Category        any
+	Tags            any
 }
 
 type WorkbooksWorkbookListAttrs struct {
 	CanFetchContent any
-	Category any
+	Category        any
 	// The link to the next page of results.
 	NextLink any
-	Tags any
+	Tags     any
 	// An array of workbooks.
 	Value any
 }
@@ -56,7 +56,7 @@ var WorkbooksWorkbookList = ubx.DataSourceBinding{
 	WireType: "azure_applicationinsights_workbooks_workbook_list",
 	Fields: ubx.FieldMap{
 		"CanFetchContent": ubx.FieldSpec{WireName: "can_fetch_content"},
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
+		"Category":        ubx.FieldSpec{WireName: "category"},
+		"Tags":            ubx.FieldSpec{WireName: "tags"},
 	},
 }

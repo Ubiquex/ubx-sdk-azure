@@ -5,25 +5,25 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicySetDefinition_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicySetDefinition_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicySetDefinition_Properties_PolicyDefinitionGroups struct {
 	AdditionalMetadataId any
-	Category any
-	Description any
-	DisplayName any
-	Name any
+	Category             any
+	Description          any
+	DisplayName          any
+	Name                 any
 }
 
 type OpenapiPolicySetDefinition_Properties_PolicyDefinitions_Parameters struct {
@@ -31,12 +31,12 @@ type OpenapiPolicySetDefinition_Properties_PolicyDefinitions_Parameters struct {
 }
 
 type OpenapiPolicySetDefinition_Properties_PolicyDefinitions struct {
-	DefinitionVersion any
-	EffectiveDefinitionVersion any
-	GroupNames any
-	LatestDefinitionVersion any
-	Parameters any
-	PolicyDefinitionId any
+	DefinitionVersion           any
+	EffectiveDefinitionVersion  any
+	GroupNames                  any
+	LatestDefinitionVersion     any
+	Parameters                  any
+	PolicyDefinitionId          any
 	PolicyDefinitionReferenceId any
 }
 
@@ -62,12 +62,12 @@ type OpenapiPolicySetDefinition_Properties struct {
 }
 
 type OpenapiPolicySetDefinitionConfig struct {
-	ManagementGroupId any
+	ManagementGroupId       any
 	PolicySetDefinitionName any
 }
 
 type OpenapiPolicySetDefinitionAttrs struct {
-	ManagementGroupId any
+	ManagementGroupId       any
 	PolicySetDefinitionName any
 	// The policy set definition properties.
 	Properties any
@@ -76,7 +76,7 @@ type OpenapiPolicySetDefinitionAttrs struct {
 var OpenapiPolicySetDefinition = ubx.DataSourceBinding{
 	WireType: "azure_resources_openapi_policy_set_definition",
 	Fields: ubx.FieldMap{
-		"ManagementGroupId": ubx.FieldSpec{WireName: "management_group_id"},
+		"ManagementGroupId":       ubx.FieldSpec{WireName: "management_group_id"},
 		"PolicySetDefinitionName": ubx.FieldSpec{WireName: "policy_set_definition_name"},
 	},
 }

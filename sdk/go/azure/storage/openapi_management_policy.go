@@ -107,148 +107,148 @@ type OpenapiManagementPolicy_Properties struct {
 }
 
 var OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields = ubx.FieldMap{
-		"DaysAfterCreationGreaterThan": ubx.FieldSpec{WireName: "days_after_creation_greater_than"},
-		"DaysAfterLastAccessTimeGreaterThan": ubx.FieldSpec{WireName: "days_after_last_access_time_greater_than"},
-		"DaysAfterLastTierChangeGreaterThan": ubx.FieldSpec{WireName: "days_after_last_tier_change_greater_than"},
-		"DaysAfterModificationGreaterThan": ubx.FieldSpec{WireName: "days_after_modification_greater_than"},
-	}
+	"DaysAfterCreationGreaterThan":       ubx.FieldSpec{WireName: "days_after_creation_greater_than"},
+	"DaysAfterLastAccessTimeGreaterThan": ubx.FieldSpec{WireName: "days_after_last_access_time_greater_than"},
+	"DaysAfterLastTierChangeGreaterThan": ubx.FieldSpec{WireName: "days_after_last_tier_change_greater_than"},
+	"DaysAfterModificationGreaterThan":   ubx.FieldSpec{WireName: "days_after_modification_greater_than"},
+}
 
 var OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlobFields = ubx.FieldMap{
-		"Delete": ubx.FieldSpec{
-			WireName: "delete",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
-		},
-		"EnableAutoTierToHotFromCool": ubx.FieldSpec{WireName: "enable_auto_tier_to_hot_from_cool"},
-		"TierToArchive": ubx.FieldSpec{
-			WireName: "tier_to_archive",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
-		},
-		"TierToCold": ubx.FieldSpec{
-			WireName: "tier_to_cold",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
-		},
-		"TierToCool": ubx.FieldSpec{
-			WireName: "tier_to_cool",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
-		},
-		"TierToHot": ubx.FieldSpec{
-			WireName: "tier_to_hot",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
-		},
-	}
+	"Delete": ubx.FieldSpec{
+		WireName: "delete",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
+	},
+	"EnableAutoTierToHotFromCool": ubx.FieldSpec{WireName: "enable_auto_tier_to_hot_from_cool"},
+	"TierToArchive": ubx.FieldSpec{
+		WireName: "tier_to_archive",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
+	},
+	"TierToCold": ubx.FieldSpec{
+		WireName: "tier_to_cold",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
+	},
+	"TierToCool": ubx.FieldSpec{
+		WireName: "tier_to_cool",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
+	},
+	"TierToHot": ubx.FieldSpec{
+		WireName: "tier_to_hot",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlob_DeleteFields,
+	},
+}
 
 var OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields = ubx.FieldMap{
-		"DaysAfterCreationGreaterThan": ubx.FieldSpec{WireName: "days_after_creation_greater_than"},
-		"DaysAfterLastTierChangeGreaterThan": ubx.FieldSpec{WireName: "days_after_last_tier_change_greater_than"},
-	}
+	"DaysAfterCreationGreaterThan":       ubx.FieldSpec{WireName: "days_after_creation_greater_than"},
+	"DaysAfterLastTierChangeGreaterThan": ubx.FieldSpec{WireName: "days_after_last_tier_change_greater_than"},
+}
 
 var OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_SnapshotFields = ubx.FieldMap{
-		"Delete": ubx.FieldSpec{
-			WireName: "delete",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
-		},
-		"TierToArchive": ubx.FieldSpec{
-			WireName: "tier_to_archive",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
-		},
-		"TierToCold": ubx.FieldSpec{
-			WireName: "tier_to_cold",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
-		},
-		"TierToCool": ubx.FieldSpec{
-			WireName: "tier_to_cool",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
-		},
-		"TierToHot": ubx.FieldSpec{
-			WireName: "tier_to_hot",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
-		},
-	}
+	"Delete": ubx.FieldSpec{
+		WireName: "delete",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
+	},
+	"TierToArchive": ubx.FieldSpec{
+		WireName: "tier_to_archive",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
+	},
+	"TierToCold": ubx.FieldSpec{
+		WireName: "tier_to_cold",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
+	},
+	"TierToCool": ubx.FieldSpec{
+		WireName: "tier_to_cool",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
+	},
+	"TierToHot": ubx.FieldSpec{
+		WireName: "tier_to_hot",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_Snapshot_DeleteFields,
+	},
+}
 
 var OpenapiManagementPolicy_Properties_Policy_Rules_Definition_ActionsFields = ubx.FieldMap{
-		"BaseBlob": ubx.FieldSpec{
-			WireName: "base_blob",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlobFields,
-		},
-		"Snapshot": ubx.FieldSpec{
-			WireName: "snapshot",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_SnapshotFields,
-		},
-		"Version": ubx.FieldSpec{
-			WireName: "version",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_SnapshotFields,
-		},
-	}
+	"BaseBlob": ubx.FieldSpec{
+		WireName: "base_blob",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_BaseBlobFields,
+	},
+	"Snapshot": ubx.FieldSpec{
+		WireName: "snapshot",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_SnapshotFields,
+	},
+	"Version": ubx.FieldSpec{
+		WireName: "version",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Actions_SnapshotFields,
+	},
+}
 
 var OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters_BlobIndexMatchFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Op": ubx.FieldSpec{WireName: "op"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Op":    ubx.FieldSpec{WireName: "op"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiManagementPolicy_Properties_Policy_Rules_Definition_FiltersFields = ubx.FieldMap{
-		"BlobIndexMatch": ubx.FieldSpec{
-			WireName: "blob_index_match",
-			Kind: "list",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters_BlobIndexMatchFields,
-		},
-		"BlobTypes": ubx.FieldSpec{WireName: "blob_types"},
-		"PrefixMatch": ubx.FieldSpec{WireName: "prefix_match"},
-	}
+	"BlobIndexMatch": ubx.FieldSpec{
+		WireName: "blob_index_match",
+		Kind:     "list",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_Filters_BlobIndexMatchFields,
+	},
+	"BlobTypes":   ubx.FieldSpec{WireName: "blob_types"},
+	"PrefixMatch": ubx.FieldSpec{WireName: "prefix_match"},
+}
 
 var OpenapiManagementPolicy_Properties_Policy_Rules_DefinitionFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{
-			WireName: "actions",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_ActionsFields,
-		},
-		"Filters": ubx.FieldSpec{
-			WireName: "filters",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_Definition_FiltersFields,
-		},
-	}
+	"Actions": ubx.FieldSpec{
+		WireName: "actions",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_ActionsFields,
+	},
+	"Filters": ubx.FieldSpec{
+		WireName: "filters",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_Definition_FiltersFields,
+	},
+}
 
 var OpenapiManagementPolicy_Properties_Policy_RulesFields = ubx.FieldMap{
-		"Definition": ubx.FieldSpec{
-			WireName: "definition",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_Policy_Rules_DefinitionFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Definition": ubx.FieldSpec{
+		WireName: "definition",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_Rules_DefinitionFields,
+	},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"Name":    ubx.FieldSpec{WireName: "name"},
+	"Type":    ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiManagementPolicy_Properties_PolicyFields = ubx.FieldMap{
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: OpenapiManagementPolicy_Properties_Policy_RulesFields,
-		},
-	}
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   OpenapiManagementPolicy_Properties_Policy_RulesFields,
+	},
+}
 
 var OpenapiManagementPolicy_PropertiesFields = ubx.FieldMap{
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"Policy": ubx.FieldSpec{
-			WireName: "policy",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_Properties_PolicyFields,
-		},
-	}
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"Policy": ubx.FieldSpec{
+		WireName: "policy",
+		Kind:     "object",
+		Fields:   OpenapiManagementPolicy_Properties_PolicyFields,
+	},
+}
 
 type OpenapiManagementPolicyConfig struct {
 	// The Storage Account ManagementPolicy properties.
@@ -265,8 +265,8 @@ var OpenapiManagementPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagementPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagementPolicy_PropertiesFields,
 		},
 	},
 }

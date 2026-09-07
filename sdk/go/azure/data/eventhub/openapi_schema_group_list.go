@@ -4,16 +4,16 @@ package eventhub
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSchemaGroupList_Value_Properties struct {
-	CreatedAtUtc any
-	ETag any
-	GroupProperties any
+	CreatedAtUtc        any
+	ETag                any
+	GroupProperties     any
 	SchemaCompatibility any
-	SchemaType any
-	UpdatedAtUtc any
+	SchemaType          any
+	UpdatedAtUtc        any
 }
 
 type OpenapiSchemaGroupList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

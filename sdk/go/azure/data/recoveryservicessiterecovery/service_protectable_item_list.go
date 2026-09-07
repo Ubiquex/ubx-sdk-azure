@@ -8,32 +8,32 @@ type ServiceProtectableItemList_Value_Properties_CustomDetails struct {
 }
 
 type ServiceProtectableItemList_Value_Properties struct {
-	CustomDetails any
-	FriendlyName any
-	ProtectionReadinessErrors any
-	ProtectionStatus any
-	RecoveryServicesProviderId any
-	ReplicationProtectedItemId any
+	CustomDetails                 any
+	FriendlyName                  any
+	ProtectionReadinessErrors     any
+	ProtectionStatus              any
+	RecoveryServicesProviderId    any
+	ReplicationProtectedItemId    any
 	SupportedReplicationProviders any
 }
 
 type ServiceProtectableItemList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type ServiceProtectableItemListConfig struct {
-	FabricName any
+	FabricName              any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 }
 
 type ServiceProtectableItemListAttrs struct {
 	FabricName any
 	// The link to the next page of items
-	NextLink any
+	NextLink                any
 	ProtectionContainerName any
-	ResourceName any
+	ResourceName            any
 	// The ProtectableItem items on this page
 	Value any
 }
@@ -41,8 +41,8 @@ type ServiceProtectableItemListAttrs struct {
 var ServiceProtectableItemList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicessiterecovery_service_protectable_item_list",
 	Fields: ubx.FieldMap{
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
+		"FabricName":              ubx.FieldSpec{WireName: "fabric_name"},
 		"ProtectionContainerName": ubx.FieldSpec{WireName: "protection_container_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":            ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

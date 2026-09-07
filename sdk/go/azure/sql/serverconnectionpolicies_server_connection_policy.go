@@ -9,8 +9,8 @@ type ServerconnectionpoliciesServerConnectionPolicy_Properties struct {
 }
 
 var ServerconnectionpoliciesServerConnectionPolicy_PropertiesFields = ubx.FieldMap{
-		"ConnectionType": ubx.FieldSpec{WireName: "connection_type"},
-	}
+	"ConnectionType": ubx.FieldSpec{WireName: "connection_type"},
+}
 
 type ServerconnectionpoliciesServerConnectionPolicyConfig struct {
 	// The properties of a server connection policy.
@@ -31,8 +31,8 @@ var ServerconnectionpoliciesServerConnectionPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServerconnectionpoliciesServerConnectionPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServerconnectionpoliciesServerConnectionPolicy_PropertiesFields,
 		},
 	},
 }

@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkwatcherConnectionMonitorResultList_Value_Properties struct {
 	ConnectionMonitorType any
-	MonitoringStatus any
-	ProvisioningState any
-	StartTime any
+	MonitoringStatus      any
+	ProvisioningState     any
+	StartTime             any
 }
 
 type NetworkwatcherConnectionMonitorResultList_Value struct {

@@ -4,22 +4,22 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerCommitList_Value_Properties struct {
-	ActiveLocations any
-	CommitType any
-	ConfigurationIds any
-	Description any
-	ForceUpdateTag any
+	ActiveLocations   any
+	CommitType        any
+	ConfigurationIds  any
+	Description       any
+	ForceUpdateTag    any
 	ProvisioningState any
-	ResourceGuid any
-	TargetLocations any
+	ResourceGuid      any
+	TargetLocations   any
 }
 
 type NetworkmanagerCommitList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 

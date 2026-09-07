@@ -13,21 +13,21 @@ type PrivateLinkResource_Properties struct {
 }
 
 type PrivateLinkResourceConfig struct {
-	NamespaceName any
+	NamespaceName   any
 	SubResourceName any
 }
 
 type PrivateLinkResourceAttrs struct {
 	NamespaceName any
 	// Represents properties of Private Link Resource.
-	Properties any
+	Properties      any
 	SubResourceName any
 }
 
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_notificationhubs_private_link_resource",
 	Fields: ubx.FieldMap{
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"NamespaceName":   ubx.FieldSpec{WireName: "namespace_name"},
 		"SubResourceName": ubx.FieldSpec{WireName: "sub_resource_name"},
 	},
 }

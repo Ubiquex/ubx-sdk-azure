@@ -31,30 +31,30 @@ type DevBoxDefinition_Properties struct {
 }
 
 var DevBoxDefinition_Properties_ActiveImageReferenceFields = ubx.FieldMap{
-		"ExactVersion": ubx.FieldSpec{WireName: "exact_version"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"ExactVersion": ubx.FieldSpec{WireName: "exact_version"},
+	"Id":           ubx.FieldSpec{WireName: "id"},
+}
 
 var DevBoxDefinition_Properties_ImageValidationErrorDetailsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var DevBoxDefinition_PropertiesFields = ubx.FieldMap{
-		"ActiveImageReference": ubx.FieldSpec{
-			WireName: "active_image_reference",
-			Kind: "object",
-			Fields: DevBoxDefinition_Properties_ActiveImageReferenceFields,
-		},
-		"ImageValidationErrorDetails": ubx.FieldSpec{
-			WireName: "image_validation_error_details",
-			Kind: "object",
-			Fields: DevBoxDefinition_Properties_ImageValidationErrorDetailsFields,
-		},
-		"ImageValidationStatus": ubx.FieldSpec{WireName: "image_validation_status"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ValidationStatus": ubx.FieldSpec{WireName: "validation_status"},
-	}
+	"ActiveImageReference": ubx.FieldSpec{
+		WireName: "active_image_reference",
+		Kind:     "object",
+		Fields:   DevBoxDefinition_Properties_ActiveImageReferenceFields,
+	},
+	"ImageValidationErrorDetails": ubx.FieldSpec{
+		WireName: "image_validation_error_details",
+		Kind:     "object",
+		Fields:   DevBoxDefinition_Properties_ImageValidationErrorDetailsFields,
+	},
+	"ImageValidationStatus": ubx.FieldSpec{WireName: "image_validation_status"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"ValidationStatus":      ubx.FieldSpec{WireName: "validation_status"},
+}
 
 type DevBoxDefinitionConfig struct {
 	// The geo-location where the resource lives
@@ -80,8 +80,8 @@ var DevBoxDefinition = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DevBoxDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   DevBoxDefinition_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

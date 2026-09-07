@@ -4,16 +4,16 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersTrustedAccessRoleList_Value_Rules struct {
-	ApiGroups any
+	ApiGroups       any
 	NonResourceUrls any
-	ResourceNames any
-	Resources any
-	Verbs any
+	ResourceNames   any
+	Resources       any
+	Verbs           any
 }
 
 type ManagedclustersTrustedAccessRoleList_Value struct {
-	Name any
-	Rules any
+	Name               any
+	Rules              any
 	SourceResourceType any
 }
 
@@ -29,6 +29,5 @@ type ManagedclustersTrustedAccessRoleListAttrs struct {
 
 var ManagedclustersTrustedAccessRoleList = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_trusted_access_role_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

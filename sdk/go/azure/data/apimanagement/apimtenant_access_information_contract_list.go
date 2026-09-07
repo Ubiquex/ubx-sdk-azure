@@ -4,8 +4,8 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimtenantAccessInformationContractList_Value_Properties struct {
-	Enabled any
-	Id any
+	Enabled     any
+	Id          any
 	PrincipalId any
 }
 
@@ -27,6 +27,5 @@ type ApimtenantAccessInformationContractListAttrs struct {
 
 var ApimtenantAccessInformationContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimtenant_access_information_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

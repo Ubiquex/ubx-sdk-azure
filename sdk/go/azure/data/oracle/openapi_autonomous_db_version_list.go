@@ -4,12 +4,12 @@ package oracle
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAutonomousDbVersionList_Value_Properties struct {
-	DbWorkload any
-	IsDefaultForFree any
-	IsDefaultForPaid any
+	DbWorkload        any
+	IsDefaultForFree  any
+	IsDefaultForPaid  any
 	IsFreeTierEnabled any
-	IsPaidEnabled any
-	Version any
+	IsPaidEnabled     any
+	Version           any
 }
 
 type OpenapiAutonomousDbVersionList_Value struct {
@@ -28,6 +28,5 @@ type OpenapiAutonomousDbVersionListAttrs struct {
 
 var OpenapiAutonomousDbVersionList = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_autonomous_db_version_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

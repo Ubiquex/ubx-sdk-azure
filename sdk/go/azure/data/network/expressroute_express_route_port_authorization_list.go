@@ -4,14 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteExpressRoutePortAuthorizationList_Value_Properties struct {
-	AuthorizationKey any
+	AuthorizationKey       any
 	AuthorizationUseStatus any
-	CircuitResourceUri any
-	ProvisioningState any
+	CircuitResourceUri     any
+	ProvisioningState      any
 }
 
 type ExpressrouteExpressRoutePortAuthorizationList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

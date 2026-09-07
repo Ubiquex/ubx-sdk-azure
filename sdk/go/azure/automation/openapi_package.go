@@ -66,60 +66,60 @@ type OpenapiPackage_Properties struct {
 }
 
 var OpenapiPackage_AllOfFields = ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"Location": ubx.FieldSpec{WireName: "location"},
+	"Tags":     ubx.FieldSpec{WireName: "tags"},
+}
 
 var OpenapiPackage_Properties_AllOfFields = ubx.FieldMap{
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedByType": ubx.FieldSpec{WireName: "created_by_type"},
-		"LastModifiedAt": ubx.FieldSpec{WireName: "last_modified_at"},
-		"LastModifiedBy": ubx.FieldSpec{WireName: "last_modified_by"},
-		"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
-	}
+	"CreatedAt":          ubx.FieldSpec{WireName: "created_at"},
+	"CreatedBy":          ubx.FieldSpec{WireName: "created_by"},
+	"CreatedByType":      ubx.FieldSpec{WireName: "created_by_type"},
+	"LastModifiedAt":     ubx.FieldSpec{WireName: "last_modified_at"},
+	"LastModifiedBy":     ubx.FieldSpec{WireName: "last_modified_by"},
+	"LastModifiedByType": ubx.FieldSpec{WireName: "last_modified_by_type"},
+}
 
 var OpenapiPackage_Properties_ContentLink_ContentHashFields = ubx.FieldMap{
-		"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Algorithm": ubx.FieldSpec{WireName: "algorithm"},
+	"Value":     ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiPackage_Properties_ContentLinkFields = ubx.FieldMap{
-		"ContentHash": ubx.FieldSpec{
-			WireName: "content_hash",
-			Kind: "object",
-			Fields: OpenapiPackage_Properties_ContentLink_ContentHashFields,
-		},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"ContentHash": ubx.FieldSpec{
+		WireName: "content_hash",
+		Kind:     "object",
+		Fields:   OpenapiPackage_Properties_ContentLink_ContentHashFields,
+	},
+	"Uri":     ubx.FieldSpec{WireName: "uri"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var OpenapiPackage_Properties_ErrorFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-	}
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+}
 
 var OpenapiPackage_PropertiesFields = ubx.FieldMap{
-		"AllOf": ubx.FieldSpec{
-			WireName: "all_of",
-			Kind: "object",
-			Fields: OpenapiPackage_Properties_AllOfFields,
-		},
-		"ContentLink": ubx.FieldSpec{
-			WireName: "content_link",
-			Kind: "object",
-			Fields: OpenapiPackage_Properties_ContentLinkFields,
-		},
-		"Default": ubx.FieldSpec{WireName: "default"},
-		"Error": ubx.FieldSpec{
-			WireName: "error",
-			Kind: "object",
-			Fields: OpenapiPackage_Properties_ErrorFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SizeInBytes": ubx.FieldSpec{WireName: "size_in_bytes"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"AllOf": ubx.FieldSpec{
+		WireName: "all_of",
+		Kind:     "object",
+		Fields:   OpenapiPackage_Properties_AllOfFields,
+	},
+	"ContentLink": ubx.FieldSpec{
+		WireName: "content_link",
+		Kind:     "object",
+		Fields:   OpenapiPackage_Properties_ContentLinkFields,
+	},
+	"Default": ubx.FieldSpec{WireName: "default"},
+	"Error": ubx.FieldSpec{
+		WireName: "error",
+		Kind:     "object",
+		Fields:   OpenapiPackage_Properties_ErrorFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SizeInBytes":       ubx.FieldSpec{WireName: "size_in_bytes"},
+	"Version":           ubx.FieldSpec{WireName: "version"},
+}
 
 type OpenapiPackageConfig struct {
 	// The resource model definition for an Azure Resource Manager tracked top level resource which has 'tags' and a 'location'
@@ -144,13 +144,13 @@ var OpenapiPackage = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"AllOf": ubx.FieldSpec{
 			WireName: "all_of",
-			Kind: "object",
-			Fields: OpenapiPackage_AllOfFields,
+			Kind:     "object",
+			Fields:   OpenapiPackage_AllOfFields,
 		},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiPackage_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiPackage_PropertiesFields,
 		},
 	},
 }

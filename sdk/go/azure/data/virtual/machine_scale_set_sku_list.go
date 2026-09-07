@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineScaleSetSkuList_Value_Capacity struct {
 	DefaultCapacity any
-	Maximum any
-	Minimum any
-	ScaleType any
+	Maximum         any
+	Minimum         any
+	ScaleType       any
 }
 
 type MachineScaleSetSkuList_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type MachineScaleSetSkuList_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type MachineScaleSetSkuListConfig struct {
@@ -30,7 +30,7 @@ type MachineScaleSetSkuListAttrs struct {
 	// The uri to fetch the next page of Virtual Machine Scale Set Skus. Call ListNext() with this to fetch the next page of VMSS Skus.
 	NextLink any
 	// The list of skus available for the virtual machine scale set.
-	Value any
+	Value          any
 	VmScaleSetName any
 }
 

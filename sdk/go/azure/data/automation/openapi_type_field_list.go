@@ -10,15 +10,15 @@ type OpenapiTypeFieldList_Value struct {
 
 type OpenapiTypeFieldListConfig struct {
 	AutomationAccountName any
-	ModuleName any
-	TypeName any
+	ModuleName            any
+	TypeName              any
 }
 
 type OpenapiTypeFieldListAttrs struct {
 	AutomationAccountName any
-	ModuleName any
-	NextLink any
-	TypeName any
+	ModuleName            any
+	NextLink              any
+	TypeName              any
 	// Gets or sets a list of fields.
 	Value any
 }
@@ -27,7 +27,7 @@ var OpenapiTypeFieldList = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_type_field_list",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"ModuleName": ubx.FieldSpec{WireName: "module_name"},
-		"TypeName": ubx.FieldSpec{WireName: "type_name"},
+		"ModuleName":            ubx.FieldSpec{WireName: "module_name"},
+		"TypeName":              ubx.FieldSpec{WireName: "type_name"},
 	},
 }

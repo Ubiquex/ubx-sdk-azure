@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceAlertList_Value_Properties struct {
 	CustomEmailAddresses any
-	Locale any
-	SendToOwners any
+	Locale               any
+	SendToOwners         any
 }
 
 type ServiceAlertList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -20,7 +20,7 @@ type ServiceAlertListConfig struct {
 
 type ServiceAlertListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The Alert items on this page
 	Value any

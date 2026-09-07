@@ -33,31 +33,31 @@ type ApimnamedvaluesNamedValueContract2_Properties struct {
 }
 
 var ApimnamedvaluesNamedValueContract2_Properties_KeyVault_LastStatusFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"TimeStampUtc": ubx.FieldSpec{WireName: "time_stamp_utc"},
-	}
+	"Code":         ubx.FieldSpec{WireName: "code"},
+	"Message":      ubx.FieldSpec{WireName: "message"},
+	"TimeStampUtc": ubx.FieldSpec{WireName: "time_stamp_utc"},
+}
 
 var ApimnamedvaluesNamedValueContract2_Properties_KeyVaultFields = ubx.FieldMap{
-		"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
-		"LastStatus": ubx.FieldSpec{
-			WireName: "last_status",
-			Kind: "object",
-			Fields: ApimnamedvaluesNamedValueContract2_Properties_KeyVault_LastStatusFields,
-		},
-		"SecretIdentifier": ubx.FieldSpec{WireName: "secret_identifier"},
-	}
+	"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
+	"LastStatus": ubx.FieldSpec{
+		WireName: "last_status",
+		Kind:     "object",
+		Fields:   ApimnamedvaluesNamedValueContract2_Properties_KeyVault_LastStatusFields,
+	},
+	"SecretIdentifier": ubx.FieldSpec{WireName: "secret_identifier"},
+}
 
 var ApimnamedvaluesNamedValueContract2_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"KeyVault": ubx.FieldSpec{
-			WireName: "key_vault",
-			Kind: "object",
-			Fields: ApimnamedvaluesNamedValueContract2_Properties_KeyVaultFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"KeyVault": ubx.FieldSpec{
+		WireName: "key_vault",
+		Kind:     "object",
+		Fields:   ApimnamedvaluesNamedValueContract2_Properties_KeyVaultFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Value":             ubx.FieldSpec{WireName: "value"},
+}
 
 type ApimnamedvaluesNamedValueContract2Config struct {
 	// NamedValue Contract properties.
@@ -74,8 +74,8 @@ var ApimnamedvaluesNamedValueContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimnamedvaluesNamedValueContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimnamedvaluesNamedValueContract2_PropertiesFields,
 		},
 	},
 }

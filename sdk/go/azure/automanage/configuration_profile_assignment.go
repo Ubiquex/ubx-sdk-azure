@@ -28,10 +28,10 @@ type ConfigurationProfileAssignment_SystemData struct {
 }
 
 var ConfigurationProfileAssignment_PropertiesFields = ubx.FieldMap{
-		"ConfigurationProfile": ubx.FieldSpec{WireName: "configuration_profile"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"TargetId": ubx.FieldSpec{WireName: "target_id"},
-	}
+	"ConfigurationProfile": ubx.FieldSpec{WireName: "configuration_profile"},
+	"Status":               ubx.FieldSpec{WireName: "status"},
+	"TargetId":             ubx.FieldSpec{WireName: "target_id"},
+}
 
 type ConfigurationProfileAssignmentConfig struct {
 	// Azure resource id. Indicates if this resource is managed by another Azure resource.
@@ -55,8 +55,8 @@ var ConfigurationProfileAssignment = ubx.ResourceBinding{
 		"ManagedBy": ubx.FieldSpec{WireName: "managed_by"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ConfigurationProfileAssignment_PropertiesFields,
+			Kind:     "object",
+			Fields:   ConfigurationProfileAssignment_PropertiesFields,
 		},
 	},
 }

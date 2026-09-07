@@ -179,7 +179,7 @@ type OpenapiBillingSubscriptionAttrs struct {
 var OpenapiBillingSubscription = ubx.ResourceBinding{
 	WireType: "azure_billing_openapi_billing_subscription",
 	Fields: ubx.FieldMap{
-		"Quantity": ubx.FieldSpec{WireName: "quantity"},
+		"Quantity":                      ubx.FieldSpec{WireName: "quantity"},
 		"TargetBillingSubscriptionName": ubx.FieldSpec{WireName: "target_billing_subscription_name"},
 	},
 }

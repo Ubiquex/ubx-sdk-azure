@@ -4,21 +4,21 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsJobResourceList_Value_Properties struct {
-	ActivityId any
+	ActivityId           any
 	BackupManagementType any
-	EndTime any
-	EntityFriendlyName any
-	JobType any
-	Operation any
-	StartTime any
-	Status any
+	EndTime              any
+	EntityFriendlyName   any
+	JobType              any
+	Operation            any
+	StartTime            any
+	Status               any
 }
 
 type BmsJobResourceList_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsJobResourceListConfig struct {
@@ -29,7 +29,7 @@ type BmsJobResourceListAttrs struct {
 	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

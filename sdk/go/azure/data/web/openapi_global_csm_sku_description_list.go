@@ -4,27 +4,27 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiGlobalCsmSkuDescriptionList_Skus_Capabilities struct {
-	Name any
+	Name   any
 	Reason any
-	Value any
+	Value  any
 }
 
 type OpenapiGlobalCsmSkuDescriptionList_Skus_Capacity struct {
-	Default any
+	Default        any
 	ElasticMaximum any
-	Maximum any
-	Minimum any
-	ScaleType any
+	Maximum        any
+	Minimum        any
+	ScaleType      any
 }
 
 type OpenapiGlobalCsmSkuDescriptionList_Skus struct {
 	Capabilities any
-	Capacity any
-	Family any
-	Locations any
-	Name any
-	Size any
-	Tier any
+	Capacity     any
+	Family       any
+	Locations    any
+	Name         any
+	Size         any
+	Tier         any
 }
 
 type OpenapiGlobalCsmSkuDescriptionListConfig struct {
@@ -39,6 +39,5 @@ type OpenapiGlobalCsmSkuDescriptionListAttrs struct {
 
 var OpenapiGlobalCsmSkuDescriptionList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_global_csm_sku_description_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

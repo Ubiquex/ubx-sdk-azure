@@ -4,14 +4,14 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBatchEndpointList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiBatchEndpointList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,27 +20,27 @@ type OpenapiBatchEndpointList_Value_Properties_Defaults struct {
 }
 
 type OpenapiBatchEndpointList_Value_Properties struct {
-	Defaults any
+	Defaults          any
 	ProvisioningState any
 }
 
 type OpenapiBatchEndpointList_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiBatchEndpointList_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiBatchEndpointListConfig struct {
-	Count any
+	Count         any
 	WorkspaceName any
 }
 
@@ -49,14 +49,14 @@ type OpenapiBatchEndpointListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The BatchEndpoint items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiBatchEndpointList = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_batch_endpoint_list",
 	Fields: ubx.FieldMap{
-		"Count": ubx.FieldSpec{WireName: "count"},
+		"Count":         ubx.FieldSpec{WireName: "count"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

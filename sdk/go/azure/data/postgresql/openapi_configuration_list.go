@@ -4,17 +4,17 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiConfigurationList_Value_Properties struct {
-	AllowedValues any
-	DataType any
-	DefaultValue any
-	Description any
-	DocumentationLink any
+	AllowedValues          any
+	DataType               any
+	DefaultValue           any
+	Description            any
+	DocumentationLink      any
 	IsConfigPendingRestart any
-	IsDynamicConfig any
-	IsReadOnly any
-	Source any
-	Unit any
-	Value any
+	IsDynamicConfig        any
+	IsReadOnly             any
+	Source                 any
+	Unit                   any
+	Value                  any
 }
 
 type OpenapiConfigurationList_Value struct {
@@ -27,7 +27,7 @@ type OpenapiConfigurationListConfig struct {
 
 type OpenapiConfigurationListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The Configuration items on this page
 	Value any

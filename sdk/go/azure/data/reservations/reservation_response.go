@@ -18,7 +18,7 @@ type ReservationResponse_Properties_AppliedScopeProperties struct {
 
 type ReservationResponse_Properties_ExtendedStatusInfo struct {
 	// The message giving detailed information about the status code.
-	Message any
+	Message    any
 	StatusCode any
 }
 
@@ -104,9 +104,9 @@ type ReservationResponse_Properties_SwapProperties struct {
 }
 
 type ReservationResponse_Properties_Utilization_Aggregates struct {
-	Grain any
+	Grain     any
 	GrainUnit any
-	Value any
+	Value     any
 	ValueUnit any
 }
 
@@ -143,7 +143,7 @@ type ReservationResponse_Properties struct {
 	// This is the date when the reservation will expire.
 	ExpiryDate any
 	// This is the date-time when the reservation will expire.
-	ExpiryDateTime any
+	ExpiryDateTime     any
 	ExtendedStatusInfo any
 	// Turning this on will apply the reservation discount to other VMs in the same VM size group. Only specify for VirtualMachines reserved resource type.
 	InstanceFlexibility any
@@ -190,7 +190,7 @@ type ReservationResponse_Properties struct {
 }
 
 type ReservationResponseConfig struct {
-	ReservationId any
+	ReservationId      any
 	ReservationOrderId any
 }
 
@@ -201,8 +201,8 @@ type ReservationResponseAttrs struct {
 	// The Azure region where the reserved resource lives.
 	Location any
 	// The properties of the reservations
-	Properties any
-	ReservationId any
+	Properties         any
+	ReservationId      any
 	ReservationOrderId any
 	// The name of sku
 	Sku any
@@ -211,7 +211,7 @@ type ReservationResponseAttrs struct {
 var ReservationResponse = ubx.DataSourceBinding{
 	WireType: "azure_reservations_reservation_response",
 	Fields: ubx.FieldMap{
-		"ReservationId": ubx.FieldSpec{WireName: "reservation_id"},
+		"ReservationId":      ubx.FieldSpec{WireName: "reservation_id"},
 		"ReservationOrderId": ubx.FieldSpec{WireName: "reservation_order_id"},
 	},
 }

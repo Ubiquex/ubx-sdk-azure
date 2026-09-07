@@ -56,7 +56,7 @@ type OpenapiSoftwareUpdateConfigurationMachineRun_Properties struct {
 }
 
 type OpenapiSoftwareUpdateConfigurationMachineRunConfig struct {
-	AutomationAccountName any
+	AutomationAccountName                   any
 	SoftwareUpdateConfigurationMachineRunId any
 }
 
@@ -67,14 +67,14 @@ type OpenapiSoftwareUpdateConfigurationMachineRunAttrs struct {
 	// Name of the software update configuration machine run
 	Name any
 	// Software update configuration machine run properties.
-	Properties any
+	Properties                              any
 	SoftwareUpdateConfigurationMachineRunId any
 }
 
 var OpenapiSoftwareUpdateConfigurationMachineRun = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_software_update_configuration_machine_run",
 	Fields: ubx.FieldMap{
-		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
+		"AutomationAccountName":                   ubx.FieldSpec{WireName: "automation_account_name"},
 		"SoftwareUpdateConfigurationMachineRunId": ubx.FieldSpec{WireName: "software_update_configuration_machine_run_id"},
 	},
 }

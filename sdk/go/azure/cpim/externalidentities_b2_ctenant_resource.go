@@ -49,33 +49,33 @@ type ExternalidentitiesB2CtenantResource_SystemData struct {
 }
 
 var ExternalidentitiesB2CtenantResource_Properties_BillingConfigFields = ubx.FieldMap{
-		"BillingType": ubx.FieldSpec{WireName: "billing_type"},
-		"EffectiveStartDateUtc": ubx.FieldSpec{WireName: "effective_start_date_utc"},
-	}
+	"BillingType":           ubx.FieldSpec{WireName: "billing_type"},
+	"EffectiveStartDateUtc": ubx.FieldSpec{WireName: "effective_start_date_utc"},
+}
 
 var ExternalidentitiesB2CtenantResource_Properties_CreateTenantPropertiesFields = ubx.FieldMap{
-		"CountryCode": ubx.FieldSpec{WireName: "country_code"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"CountryCode": ubx.FieldSpec{WireName: "country_code"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+}
 
 var ExternalidentitiesB2CtenantResource_PropertiesFields = ubx.FieldMap{
-		"BillingConfig": ubx.FieldSpec{
-			WireName: "billing_config",
-			Kind: "object",
-			Fields: ExternalidentitiesB2CtenantResource_Properties_BillingConfigFields,
-		},
-		"CreateTenantProperties": ubx.FieldSpec{
-			WireName: "create_tenant_properties",
-			Kind: "object",
-			Fields: ExternalidentitiesB2CtenantResource_Properties_CreateTenantPropertiesFields,
-		},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"BillingConfig": ubx.FieldSpec{
+		WireName: "billing_config",
+		Kind:     "object",
+		Fields:   ExternalidentitiesB2CtenantResource_Properties_BillingConfigFields,
+	},
+	"CreateTenantProperties": ubx.FieldSpec{
+		WireName: "create_tenant_properties",
+		Kind:     "object",
+		Fields:   ExternalidentitiesB2CtenantResource_Properties_CreateTenantPropertiesFields,
+	},
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 var ExternalidentitiesB2CtenantResource_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Tier": ubx.FieldSpec{WireName: "tier"},
+}
 
 type ExternalidentitiesB2CtenantResourceConfig struct {
 	// The location in which the resource is hosted and data resides. Can be one of 'United States', 'Europe', 'Asia Pacific', or 'Australia'. Refer to [this documentation](https://aka.ms/B2CDataResidency) for more information.
@@ -113,13 +113,13 @@ var ExternalidentitiesB2CtenantResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExternalidentitiesB2CtenantResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExternalidentitiesB2CtenantResource_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: ExternalidentitiesB2CtenantResource_SkuFields,
+			Kind:     "object",
+			Fields:   ExternalidentitiesB2CtenantResource_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

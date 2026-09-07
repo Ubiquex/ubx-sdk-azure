@@ -10,23 +10,23 @@ type DeploymentscriptsScriptLog_Properties struct {
 
 type DeploymentscriptsScriptLogConfig struct {
 	ResourceGroupName any
-	ScriptName any
-	Tail any
+	ScriptName        any
+	Tail              any
 }
 
 type DeploymentscriptsScriptLogAttrs struct {
 	// Script log properties.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ScriptName any
-	Tail any
+	ScriptName        any
+	Tail              any
 }
 
 var DeploymentscriptsScriptLog = ubx.DataSourceBinding{
 	WireType: "azure_resources_deploymentscripts_script_log",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ScriptName": ubx.FieldSpec{WireName: "script_name"},
-		"Tail": ubx.FieldSpec{WireName: "tail"},
+		"ScriptName":        ubx.FieldSpec{WireName: "script_name"},
+		"Tail":              ubx.FieldSpec{WireName: "tail"},
 	},
 }

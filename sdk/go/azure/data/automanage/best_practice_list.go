@@ -8,20 +8,20 @@ type BestPracticeList_Value_Properties struct {
 }
 
 type BestPracticeList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type BestPracticeList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type BestPracticeListConfig struct {
@@ -34,6 +34,5 @@ type BestPracticeListAttrs struct {
 
 var BestPracticeList = ubx.DataSourceBinding{
 	WireType: "azure_automanage_best_practice_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

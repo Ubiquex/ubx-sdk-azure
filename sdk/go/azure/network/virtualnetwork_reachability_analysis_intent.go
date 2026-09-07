@@ -45,24 +45,24 @@ type VirtualnetworkReachabilityAnalysisIntent_SystemData struct {
 }
 
 var VirtualnetworkReachabilityAnalysisIntent_Properties_IpTrafficFields = ubx.FieldMap{
-		"DestinationIps": ubx.FieldSpec{WireName: "destination_ips"},
-		"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
-		"Protocols": ubx.FieldSpec{WireName: "protocols"},
-		"SourceIps": ubx.FieldSpec{WireName: "source_ips"},
-		"SourcePorts": ubx.FieldSpec{WireName: "source_ports"},
-	}
+	"DestinationIps":   ubx.FieldSpec{WireName: "destination_ips"},
+	"DestinationPorts": ubx.FieldSpec{WireName: "destination_ports"},
+	"Protocols":        ubx.FieldSpec{WireName: "protocols"},
+	"SourceIps":        ubx.FieldSpec{WireName: "source_ips"},
+	"SourcePorts":      ubx.FieldSpec{WireName: "source_ports"},
+}
 
 var VirtualnetworkReachabilityAnalysisIntent_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DestinationResourceId": ubx.FieldSpec{WireName: "destination_resource_id"},
-		"IpTraffic": ubx.FieldSpec{
-			WireName: "ip_traffic",
-			Kind: "object",
-			Fields: VirtualnetworkReachabilityAnalysisIntent_Properties_IpTrafficFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"DestinationResourceId": ubx.FieldSpec{WireName: "destination_resource_id"},
+	"IpTraffic": ubx.FieldSpec{
+		WireName: "ip_traffic",
+		Kind:     "object",
+		Fields:   VirtualnetworkReachabilityAnalysisIntent_Properties_IpTrafficFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"SourceResourceId":  ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 type VirtualnetworkReachabilityAnalysisIntentConfig struct {
 	// Represents the Reachability Analysis Intent properties.
@@ -81,8 +81,8 @@ var VirtualnetworkReachabilityAnalysisIntent = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkReachabilityAnalysisIntent_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkReachabilityAnalysisIntent_PropertiesFields,
 		},
 	},
 }

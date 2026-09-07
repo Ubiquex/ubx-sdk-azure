@@ -4,12 +4,12 @@ package applicationinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ComponentsComponentPurgeStatusResponseConfig struct {
-	PurgeId any
+	PurgeId      any
 	ResourceName any
 }
 
 type ComponentsComponentPurgeStatusResponseAttrs struct {
-	PurgeId any
+	PurgeId      any
 	ResourceName any
 	// Status of the operation represented by the requested Id.
 	Status any
@@ -18,7 +18,7 @@ type ComponentsComponentPurgeStatusResponseAttrs struct {
 var ComponentsComponentPurgeStatusResponse = ubx.DataSourceBinding{
 	WireType: "azure_applicationinsights_components_component_purge_status_response",
 	Fields: ubx.FieldMap{
-		"PurgeId": ubx.FieldSpec{WireName: "purge_id"},
+		"PurgeId":      ubx.FieldSpec{WireName: "purge_id"},
 		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

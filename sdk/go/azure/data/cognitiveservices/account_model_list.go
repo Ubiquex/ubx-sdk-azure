@@ -5,91 +5,91 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AccountModelList_Value_BaseModel_CallRateLimit_Rules_MatchPatterns struct {
 	Method any
-	Path any
+	Path   any
 }
 
 type AccountModelList_Value_BaseModel_CallRateLimit_Rules struct {
-	Count any
+	Count                    any
 	DynamicThrottlingEnabled any
-	Key any
-	MatchPatterns any
-	MinCount any
-	RenewalPeriod any
+	Key                      any
+	MatchPatterns            any
+	MinCount                 any
+	RenewalPeriod            any
 }
 
 type AccountModelList_Value_BaseModel_CallRateLimit struct {
-	Count any
+	Count         any
 	RenewalPeriod any
-	Rules any
+	Rules         any
 }
 
 type AccountModelList_Value_BaseModel struct {
 	CallRateLimit any
-	Format any
-	Name any
-	Publisher any
-	Source any
+	Format        any
+	Name          any
+	Publisher     any
+	Source        any
 	SourceAccount any
-	Version any
+	Version       any
 }
 
 type AccountModelList_Value_Deprecation struct {
 	DeprecationStatus any
-	FineTune any
-	Inference any
+	FineTune          any
+	Inference         any
 }
 
 type AccountModelList_Value_ReplacementConfig struct {
-	AutoUpgradeStartDate any
-	TargetModelName any
-	TargetModelVersion any
+	AutoUpgradeStartDate        any
+	TargetModelName             any
+	TargetModelVersion          any
 	UpgradeOnExpiryLeadTimeDays any
 }
 
 type AccountModelList_Value_Skus_Capacity struct {
 	AllowedValues any
-	Default any
-	Maximum any
-	Minimum any
-	Step any
+	Default       any
+	Maximum       any
+	Minimum       any
+	Step          any
 }
 
 type AccountModelList_Value_Skus_Cost struct {
 	MeterId any
-	Name any
-	Unit any
+	Name    any
+	Unit    any
 }
 
 type AccountModelList_Value_Skus struct {
-	Capacity any
-	Cost any
+	Capacity        any
+	Cost            any
 	DeprecationDate any
-	Name any
-	RateLimits any
-	UsageName any
+	Name            any
+	RateLimits      any
+	UsageName       any
 }
 
 type AccountModelList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type AccountModelList_Value struct {
-	BaseModel any
-	Capabilities any
-	Deprecation any
+	BaseModel            any
+	Capabilities         any
+	Deprecation          any
 	FinetuneCapabilities any
-	IsDefaultVersion any
-	LifecycleStatus any
-	MaxCapacity any
-	ModelCatalogAssetId any
-	ReplacementConfig any
-	Skus any
-	SystemData any
+	IsDefaultVersion     any
+	LifecycleStatus      any
+	MaxCapacity          any
+	ModelCatalogAssetId  any
+	ReplacementConfig    any
+	Skus                 any
+	SystemData           any
 }
 
 type AccountModelListConfig struct {

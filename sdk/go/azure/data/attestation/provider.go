@@ -9,14 +9,14 @@ type Provider_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint s
 
 type Provider_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type Provider_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type Provider_Properties_PrivateEndpointConnections struct {
@@ -52,6 +52,5 @@ type ProviderAttrs struct {
 
 var Provider = ubx.DataSourceBinding{
 	WireType: "azure_attestation_provider",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

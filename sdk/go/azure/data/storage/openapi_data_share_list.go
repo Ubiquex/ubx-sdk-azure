@@ -4,23 +4,23 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDataShareList_Value_Properties_AccessPolicies struct {
-	Permission any
+	Permission  any
 	PrincipalId any
-	TenantId any
+	TenantId    any
 }
 
 type OpenapiDataShareList_Value_Properties_Assets struct {
-	AssetPath any
+	AssetPath   any
 	DisplayName any
 }
 
 type OpenapiDataShareList_Value_Properties struct {
-	AccessPolicies any
-	Assets any
+	AccessPolicies      any
+	Assets              any
 	DataShareIdentifier any
-	DataShareUri any
-	Description any
-	ProvisioningState any
+	DataShareUri        any
+	Description         any
+	ProvisioningState   any
 }
 
 type OpenapiDataShareList_Value struct {

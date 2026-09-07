@@ -176,190 +176,190 @@ type VirtualnetworkNetworkVirtualAppliance_Properties struct {
 }
 
 var VirtualnetworkNetworkVirtualAppliance_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_AdditionalNicsFields = ubx.FieldMap{
-		"HasPublicIp": ubx.FieldSpec{WireName: "has_public_ip"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"HasPublicIp": ubx.FieldSpec{WireName: "has_public_ip"},
+	"Name":        ubx.FieldSpec{WireName: "name"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_DelegationFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_MigrationStatusFields = ubx.FieldMap{
-		"MigrationPhase": ubx.FieldSpec{WireName: "migration_phase"},
-		"MigrationPhaseStatus": ubx.FieldSpec{WireName: "migration_phase_status"},
-		"MigrationType": ubx.FieldSpec{WireName: "migration_type"},
-	}
+	"MigrationPhase":       ubx.FieldSpec{WireName: "migration_phase"},
+	"MigrationPhaseStatus": ubx.FieldSpec{WireName: "migration_phase_status"},
+	"MigrationType":        ubx.FieldSpec{WireName: "migration_type"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_PropertiesFields = ubx.FieldMap{
-		"Primary": ubx.FieldSpec{WireName: "primary"},
-	}
+	"Primary": ubx.FieldSpec{WireName: "primary"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurationsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurations_PropertiesFields,
+	},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_PropertiesFields = ubx.FieldMap{
-		"IpConfigurations": ubx.FieldSpec{
-			WireName: "ip_configurations",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurationsFields,
-		},
-	}
+	"IpConfigurations": ubx.FieldSpec{
+		WireName: "ip_configurations",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_Properties_IpConfigurationsFields,
+	},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurationsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_PropertiesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurations_PropertiesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfileFields = ubx.FieldMap{
-		"NetworkInterfaceConfigurations": ubx.FieldSpec{
-			WireName: "network_interface_configurations",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurationsFields,
-		},
-	}
+	"NetworkInterfaceConfigurations": ubx.FieldSpec{
+		WireName: "network_interface_configurations",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfile_NetworkInterfaceConfigurationsFields,
+	},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_NvaInterfaceConfigurationsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Subnet": ubx.FieldSpec{
-			WireName: "subnet",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Subnet": ubx.FieldSpec{
+		WireName: "subnet",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_NvaSkuFields = ubx.FieldMap{
-		"BundledScaleUnit": ubx.FieldSpec{WireName: "bundled_scale_unit"},
-		"MarketPlaceVersion": ubx.FieldSpec{WireName: "market_place_version"},
-		"Vendor": ubx.FieldSpec{WireName: "vendor"},
-	}
+	"BundledScaleUnit":   ubx.FieldSpec{WireName: "bundled_scale_unit"},
+	"MarketPlaceVersion": ubx.FieldSpec{WireName: "market_place_version"},
+	"Vendor":             ubx.FieldSpec{WireName: "vendor"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_PartnerManagedResourceFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"InternalLoadBalancerId": ubx.FieldSpec{WireName: "internal_load_balancer_id"},
-		"StandardLoadBalancerId": ubx.FieldSpec{WireName: "standard_load_balancer_id"},
-	}
+	"Id":                     ubx.FieldSpec{WireName: "id"},
+	"InternalLoadBalancerId": ubx.FieldSpec{WireName: "internal_load_balancer_id"},
+	"StandardLoadBalancerId": ubx.FieldSpec{WireName: "standard_load_balancer_id"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_Properties_VirtualApplianceNicsFields = ubx.FieldMap{
-		"InstanceName": ubx.FieldSpec{WireName: "instance_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"NicType": ubx.FieldSpec{WireName: "nic_type"},
-		"PrivateIpAddress": ubx.FieldSpec{WireName: "private_ip_address"},
-		"PrivateIpAddressV6": ubx.FieldSpec{WireName: "private_ip_address_v6"},
-		"PublicIpAddress": ubx.FieldSpec{WireName: "public_ip_address"},
-		"PublicIpAddressV6": ubx.FieldSpec{WireName: "public_ip_address_v6"},
-	}
+	"InstanceName":       ubx.FieldSpec{WireName: "instance_name"},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"NicType":            ubx.FieldSpec{WireName: "nic_type"},
+	"PrivateIpAddress":   ubx.FieldSpec{WireName: "private_ip_address"},
+	"PrivateIpAddressV6": ubx.FieldSpec{WireName: "private_ip_address_v6"},
+	"PublicIpAddress":    ubx.FieldSpec{WireName: "public_ip_address"},
+	"PublicIpAddressV6":  ubx.FieldSpec{WireName: "public_ip_address_v6"},
+}
 
 var VirtualnetworkNetworkVirtualAppliance_PropertiesFields = ubx.FieldMap{
-		"AdditionalNics": ubx.FieldSpec{
-			WireName: "additional_nics",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_AdditionalNicsFields,
-		},
-		"AddressFamily": ubx.FieldSpec{WireName: "address_family"},
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AddressPrefixV6": ubx.FieldSpec{WireName: "address_prefix_v6"},
-		"BootStrapConfigurationBlobs": ubx.FieldSpec{WireName: "boot_strap_configuration_blobs"},
-		"CloudInitConfiguration": ubx.FieldSpec{WireName: "cloud_init_configuration"},
-		"CloudInitConfigurationBlobs": ubx.FieldSpec{WireName: "cloud_init_configuration_blobs"},
-		"Delegation": ubx.FieldSpec{
-			WireName: "delegation",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_DelegationFields,
-		},
-		"DeploymentType": ubx.FieldSpec{WireName: "deployment_type"},
-		"InboundSecurityRules": ubx.FieldSpec{
-			WireName: "inbound_security_rules",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
-		},
-		"InternetIngressPublicIps": ubx.FieldSpec{
-			WireName: "internet_ingress_public_ips",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
-		},
-		"MigrationStatus": ubx.FieldSpec{
-			WireName: "migration_status",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_MigrationStatusFields,
-		},
-		"NetworkProfile": ubx.FieldSpec{
-			WireName: "network_profile",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfileFields,
-		},
-		"NvaInterfaceConfigurations": ubx.FieldSpec{
-			WireName: "nva_interface_configurations",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_NvaInterfaceConfigurationsFields,
-		},
-		"NvaSku": ubx.FieldSpec{
-			WireName: "nva_sku",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_NvaSkuFields,
-		},
-		"PartnerManagedResource": ubx.FieldSpec{
-			WireName: "partner_managed_resource",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_PartnerManagedResourceFields,
-		},
-		"PrivateIpAddress": ubx.FieldSpec{WireName: "private_ip_address"},
-		"PrivateIpAddressV6": ubx.FieldSpec{WireName: "private_ip_address_v6"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SshPublicKey": ubx.FieldSpec{WireName: "ssh_public_key"},
-		"VirtualApplianceAsn": ubx.FieldSpec{WireName: "virtual_appliance_asn"},
-		"VirtualApplianceConnections": ubx.FieldSpec{
-			WireName: "virtual_appliance_connections",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
-		},
-		"VirtualApplianceNics": ubx.FieldSpec{
-			WireName: "virtual_appliance_nics",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_VirtualApplianceNicsFields,
-		},
-		"VirtualApplianceSites": ubx.FieldSpec{
-			WireName: "virtual_appliance_sites",
-			Kind: "list",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
-		},
-		"VirtualHub": ubx.FieldSpec{
-			WireName: "virtual_hub",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
-		},
-	}
+	"AdditionalNics": ubx.FieldSpec{
+		WireName: "additional_nics",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_AdditionalNicsFields,
+	},
+	"AddressFamily":               ubx.FieldSpec{WireName: "address_family"},
+	"AddressPrefix":               ubx.FieldSpec{WireName: "address_prefix"},
+	"AddressPrefixV6":             ubx.FieldSpec{WireName: "address_prefix_v6"},
+	"BootStrapConfigurationBlobs": ubx.FieldSpec{WireName: "boot_strap_configuration_blobs"},
+	"CloudInitConfiguration":      ubx.FieldSpec{WireName: "cloud_init_configuration"},
+	"CloudInitConfigurationBlobs": ubx.FieldSpec{WireName: "cloud_init_configuration_blobs"},
+	"Delegation": ubx.FieldSpec{
+		WireName: "delegation",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_DelegationFields,
+	},
+	"DeploymentType": ubx.FieldSpec{WireName: "deployment_type"},
+	"InboundSecurityRules": ubx.FieldSpec{
+		WireName: "inbound_security_rules",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
+	},
+	"InternetIngressPublicIps": ubx.FieldSpec{
+		WireName: "internet_ingress_public_ips",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
+	},
+	"MigrationStatus": ubx.FieldSpec{
+		WireName: "migration_status",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_MigrationStatusFields,
+	},
+	"NetworkProfile": ubx.FieldSpec{
+		WireName: "network_profile",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_NetworkProfileFields,
+	},
+	"NvaInterfaceConfigurations": ubx.FieldSpec{
+		WireName: "nva_interface_configurations",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_NvaInterfaceConfigurationsFields,
+	},
+	"NvaSku": ubx.FieldSpec{
+		WireName: "nva_sku",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_NvaSkuFields,
+	},
+	"PartnerManagedResource": ubx.FieldSpec{
+		WireName: "partner_managed_resource",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_PartnerManagedResourceFields,
+	},
+	"PrivateIpAddress":    ubx.FieldSpec{WireName: "private_ip_address"},
+	"PrivateIpAddressV6":  ubx.FieldSpec{WireName: "private_ip_address_v6"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"SshPublicKey":        ubx.FieldSpec{WireName: "ssh_public_key"},
+	"VirtualApplianceAsn": ubx.FieldSpec{WireName: "virtual_appliance_asn"},
+	"VirtualApplianceConnections": ubx.FieldSpec{
+		WireName: "virtual_appliance_connections",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
+	},
+	"VirtualApplianceNics": ubx.FieldSpec{
+		WireName: "virtual_appliance_nics",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_VirtualApplianceNicsFields,
+	},
+	"VirtualApplianceSites": ubx.FieldSpec{
+		WireName: "virtual_appliance_sites",
+		Kind:     "list",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
+	},
+	"VirtualHub": ubx.FieldSpec{
+		WireName: "virtual_hub",
+		Kind:     "object",
+		Fields:   VirtualnetworkNetworkVirtualAppliance_Properties_InboundSecurityRulesFields,
+	},
+}
 
 type VirtualnetworkNetworkVirtualApplianceConfig struct {
 	// Resource ID.
@@ -399,14 +399,14 @@ var VirtualnetworkNetworkVirtualAppliance = ubx.ResourceBinding{
 		"Id": ubx.FieldSpec{WireName: "id"},
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_IdentityFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkNetworkVirtualAppliance_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkNetworkVirtualAppliance_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkNetworkVirtualAppliance_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

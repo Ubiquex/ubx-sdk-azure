@@ -8,18 +8,18 @@ type NetworkmanagerSecurityUserRuleCollectionList_Value_Properties_AppliesToGrou
 }
 
 type NetworkmanagerSecurityUserRuleCollectionList_Value_Properties struct {
-	AppliesToGroups any
-	Description any
+	AppliesToGroups   any
+	Description       any
 	ProvisioningState any
-	ResourceGuid any
+	ResourceGuid      any
 }
 
 type NetworkmanagerSecurityUserRuleCollectionList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -29,12 +29,12 @@ type NetworkmanagerSecurityUserRuleCollectionList_Value struct {
 }
 
 type NetworkmanagerSecurityUserRuleCollectionListConfig struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 }
 
 type NetworkmanagerSecurityUserRuleCollectionListAttrs struct {
-	ConfigurationName any
+	ConfigurationName  any
 	NetworkManagerName any
 	// The link to the next page of items
 	NextLink any
@@ -45,7 +45,7 @@ type NetworkmanagerSecurityUserRuleCollectionListAttrs struct {
 var NetworkmanagerSecurityUserRuleCollectionList = ubx.DataSourceBinding{
 	WireType: "azure_network_networkmanager_security_user_rule_collection_list",
 	Fields: ubx.FieldMap{
-		"ConfigurationName": ubx.FieldSpec{WireName: "configuration_name"},
+		"ConfigurationName":  ubx.FieldSpec{WireName: "configuration_name"},
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
 	},
 }

@@ -5,11 +5,11 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type EnvironmentDefinition_Properties_Parameters struct {
 	Description any
-	Id any
-	Name any
-	ReadOnly any
-	Required any
-	Type any
+	Id          any
+	Name        any
+	ReadOnly    any
+	Required    any
+	Type        any
 }
 
 type EnvironmentDefinition_Properties struct {
@@ -33,6 +33,5 @@ type EnvironmentDefinitionAttrs struct {
 
 var EnvironmentDefinition = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_environment_definition",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

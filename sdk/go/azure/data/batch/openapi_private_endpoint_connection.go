@@ -29,14 +29,14 @@ type OpenapiPrivateEndpointConnection_Properties struct {
 }
 
 type OpenapiPrivateEndpointConnectionConfig struct {
-	AccountName any
+	AccountName                   any
 	PrivateEndpointConnectionName any
 }
 
 type OpenapiPrivateEndpointConnectionAttrs struct {
 	AccountName any
 	// The ETag of the resource, used for concurrency statements.
-	Etag any
+	Etag                          any
 	PrivateEndpointConnectionName any
 	// Private endpoint connection properties.
 	Properties any
@@ -47,7 +47,7 @@ type OpenapiPrivateEndpointConnectionAttrs struct {
 var OpenapiPrivateEndpointConnection = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_private_endpoint_connection",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":                   ubx.FieldSpec{WireName: "account_name"},
 		"PrivateEndpointConnectionName": ubx.FieldSpec{WireName: "private_endpoint_connection_name"},
 	},
 }

@@ -17,12 +17,12 @@ type ManagedPrivateEndpoint_Properties struct {
 }
 
 var ManagedPrivateEndpoint_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"PrivateLinkResourceId": ubx.FieldSpec{WireName: "private_link_resource_id"},
-		"PrivateLinkResourceRegion": ubx.FieldSpec{WireName: "private_link_resource_region"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-	}
+	"GroupId":                   ubx.FieldSpec{WireName: "group_id"},
+	"PrivateLinkResourceId":     ubx.FieldSpec{WireName: "private_link_resource_id"},
+	"PrivateLinkResourceRegion": ubx.FieldSpec{WireName: "private_link_resource_region"},
+	"ProvisioningState":         ubx.FieldSpec{WireName: "provisioning_state"},
+	"RequestMessage":            ubx.FieldSpec{WireName: "request_message"},
+}
 
 type ManagedPrivateEndpointConfig struct {
 	// A class representing the properties of a managed private endpoint object.
@@ -39,8 +39,8 @@ var ManagedPrivateEndpoint = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedPrivateEndpoint_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedPrivateEndpoint_PropertiesFields,
 		},
 	},
 }

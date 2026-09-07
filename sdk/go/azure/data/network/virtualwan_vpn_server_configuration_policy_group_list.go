@@ -8,21 +8,21 @@ type VirtualwanVpnServerConfigurationPolicyGroupList_Value_Properties_P2Sconnect
 }
 
 type VirtualwanVpnServerConfigurationPolicyGroupList_Value_Properties_PolicyMembers struct {
-	AttributeType any
+	AttributeType  any
 	AttributeValue any
-	Name any
+	Name           any
 }
 
 type VirtualwanVpnServerConfigurationPolicyGroupList_Value_Properties struct {
-	IsDefault any
+	IsDefault                   any
 	P2SconnectionConfigurations any
-	PolicyMembers any
-	Priority any
-	ProvisioningState any
+	PolicyMembers               any
+	Priority                    any
+	ProvisioningState           any
 }
 
 type VirtualwanVpnServerConfigurationPolicyGroupList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -34,7 +34,7 @@ type VirtualwanVpnServerConfigurationPolicyGroupListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The VpnServerConfigurationPolicyGroup items on this page
-	Value any
+	Value                      any
 	VpnServerConfigurationName any
 }
 

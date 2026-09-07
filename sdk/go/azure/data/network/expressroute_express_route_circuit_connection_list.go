@@ -8,22 +8,22 @@ type ExpressrouteExpressRouteCircuitConnectionList_Value_Properties_ExpressRoute
 }
 
 type ExpressrouteExpressRouteCircuitConnectionList_Value_Properties_Ipv6CircuitConnectionConfig struct {
-	AddressPrefix any
+	AddressPrefix           any
 	CircuitConnectionStatus any
 }
 
 type ExpressrouteExpressRouteCircuitConnectionList_Value_Properties struct {
-	AddressPrefix any
-	AuthorizationKey any
-	CircuitConnectionStatus any
-	ExpressRouteCircuitPeering any
-	Ipv6CircuitConnectionConfig any
+	AddressPrefix                  any
+	AuthorizationKey               any
+	CircuitConnectionStatus        any
+	ExpressRouteCircuitPeering     any
+	Ipv6CircuitConnectionConfig    any
 	PeerExpressRouteCircuitPeering any
-	ProvisioningState any
+	ProvisioningState              any
 }
 
 type ExpressrouteExpressRouteCircuitConnectionList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -35,7 +35,7 @@ type ExpressrouteExpressRouteCircuitConnectionListConfig struct {
 type ExpressrouteExpressRouteCircuitConnectionListAttrs struct {
 	CircuitName any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	PeeringName any
 	// The ExpressRouteCircuitConnection items on this page
 	Value any

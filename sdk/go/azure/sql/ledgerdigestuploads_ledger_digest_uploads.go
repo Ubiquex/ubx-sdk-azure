@@ -11,9 +11,9 @@ type LedgerdigestuploadsLedgerDigestUploads_Properties struct {
 }
 
 var LedgerdigestuploadsLedgerDigestUploads_PropertiesFields = ubx.FieldMap{
-		"DigestStorageEndpoint": ubx.FieldSpec{WireName: "digest_storage_endpoint"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"DigestStorageEndpoint": ubx.FieldSpec{WireName: "digest_storage_endpoint"},
+	"State":                 ubx.FieldSpec{WireName: "state"},
+}
 
 type LedgerdigestuploadsLedgerDigestUploadsConfig struct {
 	// The properties of a database ledger digest upload settings.
@@ -30,8 +30,8 @@ var LedgerdigestuploadsLedgerDigestUploads = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: LedgerdigestuploadsLedgerDigestUploads_PropertiesFields,
+			Kind:     "object",
+			Fields:   LedgerdigestuploadsLedgerDigestUploads_PropertiesFields,
 		},
 	},
 }

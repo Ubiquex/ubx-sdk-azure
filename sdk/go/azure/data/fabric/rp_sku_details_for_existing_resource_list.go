@@ -10,7 +10,7 @@ type RpSkuDetailsForExistingResourceList_Value_Sku struct {
 
 type RpSkuDetailsForExistingResourceList_Value struct {
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type RpSkuDetailsForExistingResourceListConfig struct {

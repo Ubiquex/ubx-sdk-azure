@@ -31,30 +31,30 @@ type VirtualwanVpnServerConfigurationPolicyGroup_Properties struct {
 }
 
 var VirtualwanVpnServerConfigurationPolicyGroup_Properties_P2SconnectionConfigurationsFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var VirtualwanVpnServerConfigurationPolicyGroup_Properties_PolicyMembersFields = ubx.FieldMap{
-		"AttributeType": ubx.FieldSpec{WireName: "attribute_type"},
-		"AttributeValue": ubx.FieldSpec{WireName: "attribute_value"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"AttributeType":  ubx.FieldSpec{WireName: "attribute_type"},
+	"AttributeValue": ubx.FieldSpec{WireName: "attribute_value"},
+	"Name":           ubx.FieldSpec{WireName: "name"},
+}
 
 var VirtualwanVpnServerConfigurationPolicyGroup_PropertiesFields = ubx.FieldMap{
-		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
-		"P2SconnectionConfigurations": ubx.FieldSpec{
-			WireName: "p2_sconnection_configurations",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfigurationPolicyGroup_Properties_P2SconnectionConfigurationsFields,
-		},
-		"PolicyMembers": ubx.FieldSpec{
-			WireName: "policy_members",
-			Kind: "list",
-			Fields: VirtualwanVpnServerConfigurationPolicyGroup_Properties_PolicyMembersFields,
-		},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"IsDefault": ubx.FieldSpec{WireName: "is_default"},
+	"P2SconnectionConfigurations": ubx.FieldSpec{
+		WireName: "p2_sconnection_configurations",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfigurationPolicyGroup_Properties_P2SconnectionConfigurationsFields,
+	},
+	"PolicyMembers": ubx.FieldSpec{
+		WireName: "policy_members",
+		Kind:     "list",
+		Fields:   VirtualwanVpnServerConfigurationPolicyGroup_Properties_PolicyMembersFields,
+	},
+	"Priority":          ubx.FieldSpec{WireName: "priority"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualwanVpnServerConfigurationPolicyGroupConfig struct {
 	// Name of the resource.
@@ -80,8 +80,8 @@ var VirtualwanVpnServerConfigurationPolicyGroup = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualwanVpnServerConfigurationPolicyGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualwanVpnServerConfigurationPolicyGroup_PropertiesFields,
 		},
 	},
 }

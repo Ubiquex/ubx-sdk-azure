@@ -72,9 +72,9 @@ type OpenapiSavingsPlanModel_Properties_RenewProperties struct {
 }
 
 type OpenapiSavingsPlanModel_Properties_Utilization_Aggregates struct {
-	Grain any
+	Grain     any
 	GrainUnit any
-	Value any
+	Value     any
 	ValueUnit any
 }
 
@@ -138,17 +138,17 @@ type OpenapiSavingsPlanModel_Properties struct {
 
 type OpenapiSavingsPlanModelConfig struct {
 	BillingAccountName any
-	Expand any
-	SavingsPlanId any
+	Expand             any
+	SavingsPlanId      any
 	SavingsPlanOrderId any
 }
 
 type OpenapiSavingsPlanModelAttrs struct {
 	BillingAccountName any
-	Expand any
+	Expand             any
 	// Savings plan properties
-	Properties any
-	SavingsPlanId any
+	Properties         any
+	SavingsPlanId      any
 	SavingsPlanOrderId any
 	// The SKU to be applied for this resource
 	Sku any
@@ -160,8 +160,8 @@ var OpenapiSavingsPlanModel = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_savings_plan_model",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
-		"SavingsPlanId": ubx.FieldSpec{WireName: "savings_plan_id"},
+		"Expand":             ubx.FieldSpec{WireName: "expand"},
+		"SavingsPlanId":      ubx.FieldSpec{WireName: "savings_plan_id"},
 		"SavingsPlanOrderId": ubx.FieldSpec{WireName: "savings_plan_order_id"},
 	},
 }

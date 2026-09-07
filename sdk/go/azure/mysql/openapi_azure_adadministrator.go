@@ -17,12 +17,12 @@ type OpenapiAzureAdadministrator_Properties struct {
 }
 
 var OpenapiAzureAdadministrator_PropertiesFields = ubx.FieldMap{
-		"AdministratorType": ubx.FieldSpec{WireName: "administrator_type"},
-		"IdentityResourceId": ubx.FieldSpec{WireName: "identity_resource_id"},
-		"Login": ubx.FieldSpec{WireName: "login"},
-		"Sid": ubx.FieldSpec{WireName: "sid"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AdministratorType":  ubx.FieldSpec{WireName: "administrator_type"},
+	"IdentityResourceId": ubx.FieldSpec{WireName: "identity_resource_id"},
+	"Login":              ubx.FieldSpec{WireName: "login"},
+	"Sid":                ubx.FieldSpec{WireName: "sid"},
+	"TenantId":           ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type OpenapiAzureAdadministratorConfig struct {
 	// The properties of an administrator.
@@ -39,8 +39,8 @@ var OpenapiAzureAdadministrator = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAzureAdadministrator_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAzureAdadministrator_PropertiesFields,
 		},
 	},
 }

@@ -4,19 +4,19 @@ package vi
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AccountList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type AccountList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type AccountList_Value_Properties_OpenAiServices struct {
-	ResourceId any
+	ResourceId           any
 	UserAssignedIdentity any
 }
 
@@ -26,15 +26,15 @@ type AccountList_Value_Properties_PrivateEndpointConnections_Properties_PrivateE
 
 type AccountList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type AccountList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type AccountList_Value_Properties_PrivateEndpointConnections struct {
@@ -42,29 +42,29 @@ type AccountList_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type AccountList_Value_Properties struct {
-	AccountId any
-	AccountName any
-	OpenAiServices any
+	AccountId                  any
+	AccountName                any
+	OpenAiServices             any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	StorageServices any
-	TenantId any
-	TotalMinutesIndexed any
-	TotalSecondsIndexed any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	StorageServices            any
+	TenantId                   any
+	TotalMinutesIndexed        any
+	TotalSecondsIndexed        any
 }
 
 type AccountList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type AccountList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 	SystemData any
 }
@@ -81,6 +81,5 @@ type AccountListAttrs struct {
 
 var AccountList = ubx.DataSourceBinding{
 	WireType: "azure_vi_account_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

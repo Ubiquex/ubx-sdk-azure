@@ -4,15 +4,15 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPrivateLinkResourceList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type OpenapiPrivateLinkResourceList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiPrivateLinkResourceListConfig struct {
@@ -21,7 +21,7 @@ type OpenapiPrivateLinkResourceListConfig struct {
 
 type OpenapiPrivateLinkResourceListAttrs struct {
 	// Array of private link resources
-	Value any
+	Value     any
 	VaultName any
 }
 

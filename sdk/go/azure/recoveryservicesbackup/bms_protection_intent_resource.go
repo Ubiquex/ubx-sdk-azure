@@ -19,13 +19,13 @@ type BmsProtectionIntentResource_Properties struct {
 }
 
 var BmsProtectionIntentResource_PropertiesFields = ubx.FieldMap{
-		"BackupManagementType": ubx.FieldSpec{WireName: "backup_management_type"},
-		"ItemId": ubx.FieldSpec{WireName: "item_id"},
-		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
-		"ProtectionIntentItemType": ubx.FieldSpec{WireName: "protection_intent_item_type"},
-		"ProtectionState": ubx.FieldSpec{WireName: "protection_state"},
-		"SourceResourceId": ubx.FieldSpec{WireName: "source_resource_id"},
-	}
+	"BackupManagementType":     ubx.FieldSpec{WireName: "backup_management_type"},
+	"ItemId":                   ubx.FieldSpec{WireName: "item_id"},
+	"PolicyId":                 ubx.FieldSpec{WireName: "policy_id"},
+	"ProtectionIntentItemType": ubx.FieldSpec{WireName: "protection_intent_item_type"},
+	"ProtectionState":          ubx.FieldSpec{WireName: "protection_state"},
+	"SourceResourceId":         ubx.FieldSpec{WireName: "source_resource_id"},
+}
 
 type BmsProtectionIntentResourceConfig struct {
 	// Optional ETag.
@@ -52,12 +52,12 @@ type BmsProtectionIntentResourceAttrs struct {
 var BmsProtectionIntentResource = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protection_intent_resource",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
+		"ETag":     ubx.FieldSpec{WireName: "e_tag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BmsProtectionIntentResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BmsProtectionIntentResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

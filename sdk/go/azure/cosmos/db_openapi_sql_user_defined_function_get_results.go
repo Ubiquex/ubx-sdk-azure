@@ -54,54 +54,54 @@ type DbOpenapiSqlUserDefinedFunctionGetResults_Properties struct {
 }
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "_etag"},
-		"Rid": ubx.FieldSpec{WireName: "_rid"},
-		"Ts": ubx.FieldSpec{WireName: "_ts"},
-		"Body": ubx.FieldSpec{WireName: "body"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Etag": ubx.FieldSpec{WireName: "_etag"},
+	"Rid":  ubx.FieldSpec{WireName: "_rid"},
+	"Ts":   ubx.FieldSpec{WireName: "_ts"},
+	"Body": ubx.FieldSpec{WireName: "body"},
+	"Id":   ubx.FieldSpec{WireName: "id"},
+}
 
 var DbOpenapiSqlUserDefinedFunctionGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiSqlUserDefinedFunctionGetResultsConfig struct {
 	// Identity for the resource.
@@ -136,14 +136,14 @@ var DbOpenapiSqlUserDefinedFunctionGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_IdentityFields,
+			Kind:     "object",
+			Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiSqlUserDefinedFunctionGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiSqlUserDefinedFunctionGetResults_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

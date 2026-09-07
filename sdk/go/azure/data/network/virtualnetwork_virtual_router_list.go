@@ -8,16 +8,16 @@ type VirtualnetworkVirtualRouterList_Value_Properties_HostedGateway struct {
 }
 
 type VirtualnetworkVirtualRouterList_Value_Properties struct {
-	HostedGateway any
-	HostedSubnet any
-	Peerings any
+	HostedGateway     any
+	HostedSubnet      any
+	Peerings          any
 	ProvisioningState any
-	VirtualRouterAsn any
-	VirtualRouterIps any
+	VirtualRouterAsn  any
+	VirtualRouterIps  any
 }
 
 type VirtualnetworkVirtualRouterList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -33,6 +33,5 @@ type VirtualnetworkVirtualRouterListAttrs struct {
 
 var VirtualnetworkVirtualRouterList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_virtual_router_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

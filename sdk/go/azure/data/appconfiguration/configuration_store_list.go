@@ -4,25 +4,25 @@ package appconfiguration
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConfigurationStoreList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type ConfigurationStoreList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type ConfigurationStoreList_Value_Properties_DataPlaneProxy struct {
-	AuthenticationMode any
+	AuthenticationMode    any
 	PrivateLinkDelegation any
 }
 
 type ConfigurationStoreList_Value_Properties_Encryption_KeyVaultProperties struct {
 	IdentityClientId any
-	KeyIdentifier any
+	KeyIdentifier    any
 }
 
 type ConfigurationStoreList_Value_Properties_Encryption struct {
@@ -35,36 +35,36 @@ type ConfigurationStoreList_Value_Properties_PrivateEndpointConnections_Properti
 
 type ConfigurationStoreList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type ConfigurationStoreList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type ConfigurationStoreList_Value_Properties_PrivateEndpointConnections struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ConfigurationStoreList_Value_Properties struct {
-	CreateMode any
-	CreationDate any
-	DataPlaneProxy any
+	CreateMode                                      any
+	CreationDate                                    any
+	DataPlaneProxy                                  any
 	DefaultKeyValueRevisionRetentionPeriodInSeconds any
-	DisableLocalAuth any
-	EnablePurgeProtection any
-	Encryption any
-	Endpoint any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	SoftDeleteRetentionInDays any
+	DisableLocalAuth                                any
+	EnablePurgeProtection                           any
+	Encryption                                      any
+	Endpoint                                        any
+	PrivateEndpointConnections                      any
+	ProvisioningState                               any
+	PublicNetworkAccess                             any
+	SoftDeleteRetentionInDays                       any
 }
 
 type ConfigurationStoreList_Value_Sku struct {
@@ -72,30 +72,30 @@ type ConfigurationStoreList_Value_Sku struct {
 }
 
 type ConfigurationStoreList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ConfigurationStoreList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 	SystemData any
 }
 
 type ConfigurationStoreListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ConfigurationStoreListAttrs struct {
 	ApiVersion any
 	// The URI that can be used to request the next set of paged results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The collection value.
 	Value any
@@ -104,7 +104,7 @@ type ConfigurationStoreListAttrs struct {
 var ConfigurationStoreList = ubx.DataSourceBinding{
 	WireType: "azure_appconfiguration_configuration_store_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

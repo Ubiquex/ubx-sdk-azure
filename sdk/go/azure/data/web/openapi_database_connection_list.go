@@ -6,30 +6,30 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiDatabaseConnectionList_Value_Properties_ConfigurationFiles struct {
 	Contents any
 	FileName any
-	Type any
+	Type     any
 }
 
 type OpenapiDatabaseConnectionList_Value_Properties struct {
 	ConfigurationFiles any
 	ConnectionIdentity any
-	ConnectionString any
-	Region any
-	ResourceId any
+	ConnectionString   any
+	Region             any
+	ResourceId         any
 }
 
 type OpenapiDatabaseConnectionList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
 type OpenapiDatabaseConnectionListConfig struct {
 	EnvironmentName any
-	Name any
+	Name            any
 }
 
 type OpenapiDatabaseConnectionListAttrs struct {
 	EnvironmentName any
-	Name any
+	Name            any
 	// The link to the next page of items
 	NextLink any
 	// The DatabaseConnection items on this page
@@ -40,6 +40,6 @@ var OpenapiDatabaseConnectionList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_database_connection_list",
 	Fields: ubx.FieldMap{
 		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManageddatabaseadvancedthreatprotectionsettingsManagedDatabaseAdvancedThreatProtectionList_Value_Properties struct {
 	CreationTime any
-	State any
+	State        any
 }
 
 type ManageddatabaseadvancedthreatprotectionsettingsManagedDatabaseAdvancedThreatProtectionList_Value struct {
@@ -13,12 +13,12 @@ type ManageddatabaseadvancedthreatprotectionsettingsManagedDatabaseAdvancedThrea
 }
 
 type ManageddatabaseadvancedthreatprotectionsettingsManagedDatabaseAdvancedThreatProtectionListConfig struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 }
 
 type ManageddatabaseadvancedthreatprotectionsettingsManagedDatabaseAdvancedThreatProtectionListAttrs struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 	// The link to the next page of items
 	NextLink any
@@ -29,7 +29,7 @@ type ManageddatabaseadvancedthreatprotectionsettingsManagedDatabaseAdvancedThrea
 var ManageddatabaseadvancedthreatprotectionsettingsManagedDatabaseAdvancedThreatProtectionList = ubx.DataSourceBinding{
 	WireType: "azure_sql_manageddatabaseadvancedthreatprotectionsettings_managed_database_advanced_threat_protection_list",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":        ubx.FieldSpec{WireName: "database_name"},
 		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
 	},
 }

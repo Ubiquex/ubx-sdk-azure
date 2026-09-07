@@ -23,15 +23,15 @@ type ApimauthorizationserversAuthorizationServerContract2_Properties struct {
 }
 
 var ApimauthorizationserversAuthorizationServerContract2_PropertiesFields = ubx.FieldMap{
-		"AuthorizationEndpoint": ubx.FieldSpec{WireName: "authorization_endpoint"},
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientRegistrationEndpoint": ubx.FieldSpec{WireName: "client_registration_endpoint"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"GrantTypes": ubx.FieldSpec{WireName: "grant_types"},
-		"UseInApiDocumentation": ubx.FieldSpec{WireName: "use_in_api_documentation"},
-		"UseInTestConsole": ubx.FieldSpec{WireName: "use_in_test_console"},
-	}
+	"AuthorizationEndpoint":      ubx.FieldSpec{WireName: "authorization_endpoint"},
+	"ClientId":                   ubx.FieldSpec{WireName: "client_id"},
+	"ClientRegistrationEndpoint": ubx.FieldSpec{WireName: "client_registration_endpoint"},
+	"ClientSecret":               ubx.FieldSpec{WireName: "client_secret"},
+	"DisplayName":                ubx.FieldSpec{WireName: "display_name"},
+	"GrantTypes":                 ubx.FieldSpec{WireName: "grant_types"},
+	"UseInApiDocumentation":      ubx.FieldSpec{WireName: "use_in_api_documentation"},
+	"UseInTestConsole":           ubx.FieldSpec{WireName: "use_in_test_console"},
+}
 
 type ApimauthorizationserversAuthorizationServerContract2Config struct {
 	// External OAuth authorization server settings Properties.
@@ -52,8 +52,8 @@ var ApimauthorizationserversAuthorizationServerContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimauthorizationserversAuthorizationServerContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimauthorizationserversAuthorizationServerContract2_PropertiesFields,
 		},
 		"Authsid": ubx.FieldSpec{WireName: "authsid"},
 	},

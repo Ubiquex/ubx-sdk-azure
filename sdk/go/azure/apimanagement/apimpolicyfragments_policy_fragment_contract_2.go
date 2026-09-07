@@ -15,11 +15,11 @@ type ApimpolicyfragmentsPolicyFragmentContract2_Properties struct {
 }
 
 var ApimpolicyfragmentsPolicyFragmentContract2_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Format": ubx.FieldSpec{WireName: "format"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"Format":            ubx.FieldSpec{WireName: "format"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Value":             ubx.FieldSpec{WireName: "value"},
+}
 
 type ApimpolicyfragmentsPolicyFragmentContract2Config struct {
 	// Policy fragment contract properties.
@@ -40,8 +40,8 @@ var ApimpolicyfragmentsPolicyFragmentContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimpolicyfragmentsPolicyFragmentContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimpolicyfragmentsPolicyFragmentContract2_PropertiesFields,
 		},
 		"Id": ubx.FieldSpec{WireName: "id"},
 	},

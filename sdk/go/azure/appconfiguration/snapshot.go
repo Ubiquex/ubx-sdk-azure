@@ -36,27 +36,27 @@ type Snapshot_Properties struct {
 }
 
 var Snapshot_Properties_FiltersFields = ubx.FieldMap{
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"Label": ubx.FieldSpec{WireName: "label"},
-	}
+	"Key":   ubx.FieldSpec{WireName: "key"},
+	"Label": ubx.FieldSpec{WireName: "label"},
+}
 
 var Snapshot_PropertiesFields = ubx.FieldMap{
-		"CompositionType": ubx.FieldSpec{WireName: "composition_type"},
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"Expires": ubx.FieldSpec{WireName: "expires"},
-		"Filters": ubx.FieldSpec{
-			WireName: "filters",
-			Kind: "list",
-			Fields: Snapshot_Properties_FiltersFields,
-		},
-		"ItemsCount": ubx.FieldSpec{WireName: "items_count"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RetentionPeriod": ubx.FieldSpec{WireName: "retention_period"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-	}
+	"CompositionType": ubx.FieldSpec{WireName: "composition_type"},
+	"Created":         ubx.FieldSpec{WireName: "created"},
+	"Etag":            ubx.FieldSpec{WireName: "etag"},
+	"Expires":         ubx.FieldSpec{WireName: "expires"},
+	"Filters": ubx.FieldSpec{
+		WireName: "filters",
+		Kind:     "list",
+		Fields:   Snapshot_Properties_FiltersFields,
+	},
+	"ItemsCount":        ubx.FieldSpec{WireName: "items_count"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RetentionPeriod":   ubx.FieldSpec{WireName: "retention_period"},
+	"Size":              ubx.FieldSpec{WireName: "size"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"Tags":              ubx.FieldSpec{WireName: "tags"},
+}
 
 type SnapshotConfig struct {
 	// All snapshot properties.
@@ -79,8 +79,8 @@ var Snapshot = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Snapshot_PropertiesFields,
+			Kind:     "object",
+			Fields:   Snapshot_PropertiesFields,
 		},
 	},
 }

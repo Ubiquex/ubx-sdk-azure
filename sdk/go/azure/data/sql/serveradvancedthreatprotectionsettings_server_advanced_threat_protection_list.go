@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtectionList_Value_Properties struct {
 	CreationTime any
-	State any
+	State        any
 }
 
 type ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtectionList_Value struct {
@@ -18,7 +18,7 @@ type ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtectionListCon
 
 type ServeradvancedthreatprotectionsettingsServerAdvancedThreatProtectionListAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink   any
 	ServerName any
 	// Array of results.
 	Value any

@@ -17,12 +17,12 @@ type ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_Prope
 }
 
 var ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_PropertiesFields = ubx.FieldMap{
-		"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
-		"ServerKeyName": ubx.FieldSpec{WireName: "server_key_name"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"AutoRotationEnabled": ubx.FieldSpec{WireName: "auto_rotation_enabled"},
+	"ServerKeyName":       ubx.FieldSpec{WireName: "server_key_name"},
+	"ServerKeyType":       ubx.FieldSpec{WireName: "server_key_type"},
+	"Thumbprint":          ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":                 ubx.FieldSpec{WireName: "uri"},
+}
 
 type ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtectorConfig struct {
 	// Properties for an encryption protector execution.
@@ -41,8 +41,8 @@ var ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector = ubx.
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagedinstanceencryptionprotectorsManagedInstanceEncryptionProtector_PropertiesFields,
 		},
 	},
 }

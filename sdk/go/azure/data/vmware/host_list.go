@@ -4,38 +4,38 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HostList_Value_Properties struct {
-	DisplayName any
-	FaultDomain any
-	Fqdn any
-	Kind any
-	Maintenance any
-	MoRefId any
+	DisplayName       any
+	FaultDomain       any
+	Fqdn              any
+	Kind              any
+	Maintenance       any
+	MoRefId           any
 	ProvisioningState any
 }
 
 type HostList_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type HostList_Value struct {
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type HostListConfig struct {
-	ClusterName any
+	ClusterName      any
 	PrivateCloudName any
 }
 
 type HostListAttrs struct {
 	ClusterName any
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The Host items on this page
 	Value any
@@ -44,7 +44,7 @@ type HostListAttrs struct {
 var HostList = ubx.DataSourceBinding{
 	WireType: "azure_vmware_host_list",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":      ubx.FieldSpec{WireName: "cluster_name"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 	},
 }

@@ -4,45 +4,45 @@ package cost
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagementOpenapiExportRunList_Value_Properties_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings_Definition_DataSet_Configuration_Filters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings_Definition_DataSet_Configuration struct {
-	Columns any
+	Columns     any
 	DataVersion any
-	Filters any
+	Filters     any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings_Definition_DataSet struct {
 	Configuration any
-	Granularity any
+	Granularity   any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings_Definition_TimePeriod struct {
 	From any
-	To any
+	To   any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings_Definition struct {
-	DataSet any
+	DataSet    any
 	TimePeriod any
-	Timeframe any
-	Type any
+	Timeframe  any
+	Type       any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings_DeliveryInfo_Destination struct {
-	Container any
-	ResourceId any
+	Container      any
+	ResourceId     any
 	RootFolderPath any
-	SasToken any
+	SasToken       any
 	StorageAccount any
-	Type any
+	Type           any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings_DeliveryInfo struct {
@@ -50,37 +50,37 @@ type ManagementOpenapiExportRunList_Value_Properties_RunSettings_DeliveryInfo st
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings_SystemSuspensionContext struct {
-	SuspensionCode any
+	SuspensionCode   any
 	SuspensionReason any
-	SuspensionTime any
+	SuspensionTime   any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties_RunSettings struct {
-	CompressionMode any
-	DataOverwriteBehavior any
-	Definition any
-	DeliveryInfo any
-	ExportDescription any
-	Format any
-	NextRunTimeEstimate any
-	PartitionData any
-	RunHistory any
+	CompressionMode         any
+	DataOverwriteBehavior   any
+	Definition              any
+	DeliveryInfo            any
+	ExportDescription       any
+	Format                  any
+	NextRunTimeEstimate     any
+	PartitionData           any
+	RunHistory              any
 	SystemSuspensionContext any
 }
 
 type ManagementOpenapiExportRunList_Value_Properties struct {
-	EndDate any
-	Error any
-	ExecutionType any
-	FileName any
-	ManifestFile any
-	ProcessingEndTime any
+	EndDate             any
+	Error               any
+	ExecutionType       any
+	FileName            any
+	ManifestFile        any
+	ProcessingEndTime   any
 	ProcessingStartTime any
-	RunSettings any
-	StartDate any
-	Status any
-	SubmittedBy any
-	SubmittedTime any
+	RunSettings         any
+	StartDate           any
+	Status              any
+	SubmittedBy         any
+	SubmittedTime       any
 }
 
 type ManagementOpenapiExportRunList_Value struct {
@@ -89,12 +89,12 @@ type ManagementOpenapiExportRunList_Value struct {
 
 type ManagementOpenapiExportRunListConfig struct {
 	ExportName any
-	Scope any
+	Scope      any
 }
 
 type ManagementOpenapiExportRunListAttrs struct {
 	ExportName any
-	Scope any
+	Scope      any
 	// A list of export runs.
 	Value any
 }
@@ -103,6 +103,6 @@ var ManagementOpenapiExportRunList = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_export_run_list",
 	Fields: ubx.FieldMap{
 		"ExportName": ubx.FieldSpec{WireName: "export_name"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"Scope":      ubx.FieldSpec{WireName: "scope"},
 	},
 }

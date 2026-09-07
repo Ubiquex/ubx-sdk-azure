@@ -8,20 +8,20 @@ type DtlNotificationChannelList_Value_Properties_Events struct {
 }
 
 type DtlNotificationChannelList_Value_Properties struct {
-	CreatedDate any
-	Description any
-	EmailRecipient any
-	Events any
+	CreatedDate        any
+	Description        any
+	EmailRecipient     any
+	Events             any
 	NotificationLocale any
-	ProvisioningState any
-	UniqueIdentifier any
-	WebHookUrl any
+	ProvisioningState  any
+	UniqueIdentifier   any
+	WebHookUrl         any
 }
 
 type DtlNotificationChannelList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlNotificationChannelListConfig struct {

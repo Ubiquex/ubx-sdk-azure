@@ -30,8 +30,8 @@ type ApikeysApplicationInsightsComponentApikeyAttrs struct {
 var ApikeysApplicationInsightsComponentApikey = ubx.ResourceBinding{
 	WireType: "azure_applicationinsights_apikeys_application_insights_component_apikey",
 	Fields: ubx.FieldMap{
-		"LinkedReadProperties": ubx.FieldSpec{WireName: "linked_read_properties"},
+		"LinkedReadProperties":  ubx.FieldSpec{WireName: "linked_read_properties"},
 		"LinkedWriteProperties": ubx.FieldSpec{WireName: "linked_write_properties"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":                  ubx.FieldSpec{WireName: "name"},
 	},
 }

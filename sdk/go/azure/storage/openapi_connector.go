@@ -28,23 +28,23 @@ type OpenapiConnector_Properties struct {
 }
 
 var OpenapiConnector_Properties_SourceFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiConnector_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"DataSourceType": ubx.FieldSpec{WireName: "data_source_type"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: OpenapiConnector_Properties_SourceFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"TestConnection": ubx.FieldSpec{WireName: "test_connection"},
-		"UniqueId": ubx.FieldSpec{WireName: "unique_id"},
-	}
+	"CreationTime":      ubx.FieldSpec{WireName: "creation_time"},
+	"DataSourceType":    ubx.FieldSpec{WireName: "data_source_type"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   OpenapiConnector_Properties_SourceFields,
+	},
+	"State":          ubx.FieldSpec{WireName: "state"},
+	"TestConnection": ubx.FieldSpec{WireName: "test_connection"},
+	"UniqueId":       ubx.FieldSpec{WireName: "unique_id"},
+}
 
 type OpenapiConnectorConfig struct {
 	// The geo-location where the resource lives
@@ -70,8 +70,8 @@ var OpenapiConnector = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiConnector_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiConnector_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

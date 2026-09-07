@@ -14,7 +14,7 @@ type OpenapiSystemVersionConfig struct {
 
 type OpenapiSystemVersionAttrs struct {
 	// System Version Resource model
-	Properties any
+	Properties        any
 	Systemversionname any
 }
 

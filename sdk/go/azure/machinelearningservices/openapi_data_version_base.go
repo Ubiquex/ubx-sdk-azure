@@ -11,9 +11,9 @@ type OpenapiDataVersionBase_Properties struct {
 }
 
 var OpenapiDataVersionBase_PropertiesFields = ubx.FieldMap{
-		"DataType": ubx.FieldSpec{WireName: "data_type"},
-		"DataUri": ubx.FieldSpec{WireName: "data_uri"},
-	}
+	"DataType": ubx.FieldSpec{WireName: "data_type"},
+	"DataUri":  ubx.FieldSpec{WireName: "data_uri"},
+}
 
 type OpenapiDataVersionBaseConfig struct {
 	// Data version base definition
@@ -38,10 +38,10 @@ var OpenapiDataVersionBase = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDataVersionBase_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDataVersionBase_PropertiesFields,
 		},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":    ubx.FieldSpec{WireName: "name"},
 		"Version": ubx.FieldSpec{WireName: "version"},
 	},
 }

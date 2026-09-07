@@ -5,20 +5,20 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkgatewayVirtualNetworkGatewayNatRuleList_Value_Properties_ExternalMappings struct {
 	AddressSpace any
-	PortRange any
+	PortRange    any
 }
 
 type NetworkgatewayVirtualNetworkGatewayNatRuleList_Value_Properties struct {
-	ExternalMappings any
-	InternalMappings any
+	ExternalMappings  any
+	InternalMappings  any
 	IpConfigurationId any
-	Mode any
+	Mode              any
 	ProvisioningState any
-	Type any
+	Type              any
 }
 
 type NetworkgatewayVirtualNetworkGatewayNatRuleList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -30,7 +30,7 @@ type NetworkgatewayVirtualNetworkGatewayNatRuleListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The VirtualNetworkGatewayNatRule items on this page
-	Value any
+	Value                     any
 	VirtualNetworkGatewayName any
 }
 

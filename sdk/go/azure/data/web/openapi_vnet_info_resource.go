@@ -4,13 +4,13 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiVnetInfoResource_Properties_Routes_Properties struct {
-	EndAddress any
-	RouteType any
+	EndAddress   any
+	RouteType    any
 	StartAddress any
 }
 
 type OpenapiVnetInfoResource_Properties_Routes struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -32,8 +32,8 @@ type OpenapiVnetInfoResource_Properties struct {
 }
 
 type OpenapiVnetInfoResourceConfig struct {
-	Name any
-	Slot any
+	Name     any
+	Slot     any
 	VnetName any
 }
 
@@ -43,15 +43,15 @@ type OpenapiVnetInfoResourceAttrs struct {
 	Name any
 	// Virtual Network information contract.
 	Properties any
-	Slot any
-	VnetName any
+	Slot       any
+	VnetName   any
 }
 
 var OpenapiVnetInfoResource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_vnet_info_resource",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
+		"Slot":     ubx.FieldSpec{WireName: "slot"},
 		"VnetName": ubx.FieldSpec{WireName: "vnet_name"},
 	},
 }

@@ -55,46 +55,46 @@ type OpenapiAfdorigin_Properties struct {
 }
 
 var OpenapiAfdorigin_Properties_AzureOriginFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var OpenapiAfdorigin_Properties_SharedPrivateLinkResourceFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-		"PrivateLink": ubx.FieldSpec{
-			WireName: "private_link",
-			Kind: "object",
-			Fields: OpenapiAfdorigin_Properties_AzureOriginFields,
-		},
-		"PrivateLinkLocation": ubx.FieldSpec{WireName: "private_link_location"},
-		"RequestMessage": ubx.FieldSpec{WireName: "request_message"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"GroupId": ubx.FieldSpec{WireName: "group_id"},
+	"PrivateLink": ubx.FieldSpec{
+		WireName: "private_link",
+		Kind:     "object",
+		Fields:   OpenapiAfdorigin_Properties_AzureOriginFields,
+	},
+	"PrivateLinkLocation": ubx.FieldSpec{WireName: "private_link_location"},
+	"RequestMessage":      ubx.FieldSpec{WireName: "request_message"},
+	"Status":              ubx.FieldSpec{WireName: "status"},
+}
 
 var OpenapiAfdorigin_PropertiesFields = ubx.FieldMap{
-		"AzureOrigin": ubx.FieldSpec{
-			WireName: "azure_origin",
-			Kind: "object",
-			Fields: OpenapiAfdorigin_Properties_AzureOriginFields,
-		},
-		"CertificateNameCheckValidationMode": ubx.FieldSpec{WireName: "certificate_name_check_validation_mode"},
-		"CustomCertificateSubjects": ubx.FieldSpec{WireName: "custom_certificate_subjects"},
-		"DeploymentStatus": ubx.FieldSpec{WireName: "deployment_status"},
-		"EnabledState": ubx.FieldSpec{WireName: "enabled_state"},
-		"EnforceCertificateNameCheck": ubx.FieldSpec{WireName: "enforce_certificate_name_check"},
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"HttpPort": ubx.FieldSpec{WireName: "http_port"},
-		"HttpsPort": ubx.FieldSpec{WireName: "https_port"},
-		"OriginGroupName": ubx.FieldSpec{WireName: "origin_group_name"},
-		"OriginHostHeader": ubx.FieldSpec{WireName: "origin_host_header"},
-		"Priority": ubx.FieldSpec{WireName: "priority"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"SharedPrivateLinkResource": ubx.FieldSpec{
-			WireName: "shared_private_link_resource",
-			Kind: "object",
-			Fields: OpenapiAfdorigin_Properties_SharedPrivateLinkResourceFields,
-		},
-		"Weight": ubx.FieldSpec{WireName: "weight"},
-	}
+	"AzureOrigin": ubx.FieldSpec{
+		WireName: "azure_origin",
+		Kind:     "object",
+		Fields:   OpenapiAfdorigin_Properties_AzureOriginFields,
+	},
+	"CertificateNameCheckValidationMode": ubx.FieldSpec{WireName: "certificate_name_check_validation_mode"},
+	"CustomCertificateSubjects":          ubx.FieldSpec{WireName: "custom_certificate_subjects"},
+	"DeploymentStatus":                   ubx.FieldSpec{WireName: "deployment_status"},
+	"EnabledState":                       ubx.FieldSpec{WireName: "enabled_state"},
+	"EnforceCertificateNameCheck":        ubx.FieldSpec{WireName: "enforce_certificate_name_check"},
+	"HostName":                           ubx.FieldSpec{WireName: "host_name"},
+	"HttpPort":                           ubx.FieldSpec{WireName: "http_port"},
+	"HttpsPort":                          ubx.FieldSpec{WireName: "https_port"},
+	"OriginGroupName":                    ubx.FieldSpec{WireName: "origin_group_name"},
+	"OriginHostHeader":                   ubx.FieldSpec{WireName: "origin_host_header"},
+	"Priority":                           ubx.FieldSpec{WireName: "priority"},
+	"ProvisioningState":                  ubx.FieldSpec{WireName: "provisioning_state"},
+	"SharedPrivateLinkResource": ubx.FieldSpec{
+		WireName: "shared_private_link_resource",
+		Kind:     "object",
+		Fields:   OpenapiAfdorigin_Properties_SharedPrivateLinkResourceFields,
+	},
+	"Weight": ubx.FieldSpec{WireName: "weight"},
+}
 
 type OpenapiAfdoriginConfig struct {
 	// The JSON object that contains the properties of the origin.
@@ -111,8 +111,8 @@ var OpenapiAfdorigin = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiAfdorigin_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiAfdorigin_PropertiesFields,
 		},
 	},
 }

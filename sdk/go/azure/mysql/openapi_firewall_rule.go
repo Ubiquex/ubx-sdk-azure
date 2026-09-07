@@ -11,9 +11,9 @@ type OpenapiFirewallRule_Properties struct {
 }
 
 var OpenapiFirewallRule_PropertiesFields = ubx.FieldMap{
-		"EndIpAddress": ubx.FieldSpec{WireName: "end_ip_address"},
-		"StartIpAddress": ubx.FieldSpec{WireName: "start_ip_address"},
-	}
+	"EndIpAddress":   ubx.FieldSpec{WireName: "end_ip_address"},
+	"StartIpAddress": ubx.FieldSpec{WireName: "start_ip_address"},
+}
 
 type OpenapiFirewallRuleConfig struct {
 	// The properties of a server firewall rule.
@@ -30,8 +30,8 @@ var OpenapiFirewallRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiFirewallRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiFirewallRule_PropertiesFields,
 		},
 	},
 }

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDataVersionBaseList_Value_Properties struct {
 	DataType any
-	DataUri any
+	DataUri  any
 }
 
 type OpenapiDataVersionBaseList_Value struct {
@@ -14,15 +14,15 @@ type OpenapiDataVersionBaseList_Value struct {
 
 type OpenapiDataVersionBaseListConfig struct {
 	ListViewType any
-	Name any
+	Name         any
 	RegistryName any
 }
 
 type OpenapiDataVersionBaseListAttrs struct {
 	ListViewType any
-	Name any
+	Name         any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	RegistryName any
 	// The DataVersionBase items on this page
 	Value any
@@ -32,7 +32,7 @@ var OpenapiDataVersionBaseList = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_data_version_base_list",
 	Fields: ubx.FieldMap{
 		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
 		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
 	},
 }

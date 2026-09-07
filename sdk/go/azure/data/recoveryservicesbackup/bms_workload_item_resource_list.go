@@ -5,32 +5,32 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsWorkloadItemResourceList_Value_Properties struct {
 	BackupManagementType any
-	FriendlyName any
-	ProtectionState any
-	WorkloadItemType any
-	WorkloadType any
+	FriendlyName         any
+	ProtectionState      any
+	WorkloadItemType     any
+	WorkloadType         any
 }
 
 type BmsWorkloadItemResourceList_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsWorkloadItemResourceListConfig struct {
 	ContainerName any
-	FabricName any
-	VaultName any
+	FabricName    any
+	VaultName     any
 }
 
 type BmsWorkloadItemResourceListAttrs struct {
 	ContainerName any
-	FabricName any
+	FabricName    any
 	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 
@@ -38,7 +38,7 @@ var BmsWorkloadItemResourceList = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_workload_item_resource_list",
 	Fields: ubx.FieldMap{
 		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"FabricName":    ubx.FieldSpec{WireName: "fabric_name"},
+		"VaultName":     ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

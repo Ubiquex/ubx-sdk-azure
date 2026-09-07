@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDataPolicyManifest_Properties_Effects struct {
 	DetailsSchema any
-	Name any
+	Name          any
 }
 
 type OpenapiDataPolicyManifest_Properties_ResourceFunctions_Custom struct {
-	AllowCustomProperties any
-	DefaultProperties any
+	AllowCustomProperties      any
+	DefaultProperties          any
 	FullyQualifiedResourceType any
-	Name any
+	Name                       any
 }
 
 type OpenapiDataPolicyManifest_Properties_ResourceFunctions struct {
@@ -24,33 +24,33 @@ type OpenapiDataPolicyManifest_Properties_ResourceFunctions struct {
 
 type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_DefaultMetadata struct {
 	Attributes any
-	Type any
+	Type       any
 }
 
 type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_DefaultPattern struct {
-	Phrase any
-	Type any
+	Phrase   any
+	Type     any
 	Variable any
 }
 
 type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases_Paths struct {
 	ApiVersions any
-	Metadata any
-	Path any
-	Pattern any
+	Metadata    any
+	Path        any
+	Pattern     any
 }
 
 type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases_Aliases struct {
 	DefaultMetadata any
-	DefaultPath any
-	DefaultPattern any
-	Name any
-	Paths any
-	Type any
+	DefaultPath     any
+	DefaultPattern  any
+	Name            any
+	Paths           any
+	Type            any
 }
 
 type OpenapiDataPolicyManifest_Properties_ResourceTypeAliases struct {
-	Aliases any
+	Aliases      any
 	ResourceType any
 }
 

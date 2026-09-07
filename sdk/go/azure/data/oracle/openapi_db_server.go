@@ -61,12 +61,12 @@ type OpenapiDbServer_Properties struct {
 
 type OpenapiDbServerConfig struct {
 	Cloudexadatainfrastructurename any
-	Dbserverocid any
+	Dbserverocid                   any
 }
 
 type OpenapiDbServerAttrs struct {
 	Cloudexadatainfrastructurename any
-	Dbserverocid any
+	Dbserverocid                   any
 	// DbServer resource properties
 	Properties any
 }
@@ -75,6 +75,6 @@ var OpenapiDbServer = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_db_server",
 	Fields: ubx.FieldMap{
 		"Cloudexadatainfrastructurename": ubx.FieldSpec{WireName: "cloudexadatainfrastructurename"},
-		"Dbserverocid": ubx.FieldSpec{WireName: "dbserverocid"},
+		"Dbserverocid":                   ubx.FieldSpec{WireName: "dbserverocid"},
 	},
 }

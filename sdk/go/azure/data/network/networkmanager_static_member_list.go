@@ -5,16 +5,16 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworkmanagerStaticMemberList_Value_Properties struct {
 	ProvisioningState any
-	Region any
-	ResourceId any
+	Region            any
+	ResourceId        any
 }
 
 type NetworkmanagerStaticMemberList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -24,12 +24,12 @@ type NetworkmanagerStaticMemberList_Value struct {
 }
 
 type NetworkmanagerStaticMemberListConfig struct {
-	NetworkGroupName any
+	NetworkGroupName   any
 	NetworkManagerName any
 }
 
 type NetworkmanagerStaticMemberListAttrs struct {
-	NetworkGroupName any
+	NetworkGroupName   any
 	NetworkManagerName any
 	// The link to the next page of items
 	NextLink any
@@ -40,7 +40,7 @@ type NetworkmanagerStaticMemberListAttrs struct {
 var NetworkmanagerStaticMemberList = ubx.DataSourceBinding{
 	WireType: "azure_network_networkmanager_static_member_list",
 	Fields: ubx.FieldMap{
-		"NetworkGroupName": ubx.FieldSpec{WireName: "network_group_name"},
+		"NetworkGroupName":   ubx.FieldSpec{WireName: "network_group_name"},
 		"NetworkManagerName": ubx.FieldSpec{WireName: "network_manager_name"},
 	},
 }

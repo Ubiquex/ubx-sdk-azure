@@ -13,10 +13,10 @@ type PureStoragePolicy_Properties struct {
 }
 
 var PureStoragePolicy_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StoragePolicyDefinition": ubx.FieldSpec{WireName: "storage_policy_definition"},
-		"StoragePoolId": ubx.FieldSpec{WireName: "storage_pool_id"},
-	}
+	"ProvisioningState":       ubx.FieldSpec{WireName: "provisioning_state"},
+	"StoragePolicyDefinition": ubx.FieldSpec{WireName: "storage_policy_definition"},
+	"StoragePoolId":           ubx.FieldSpec{WireName: "storage_pool_id"},
+}
 
 type PureStoragePolicyConfig struct {
 	// Properties of a Pure Storage Policy Based Management policy
@@ -33,8 +33,8 @@ var PureStoragePolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PureStoragePolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   PureStoragePolicy_PropertiesFields,
 		},
 	},
 }

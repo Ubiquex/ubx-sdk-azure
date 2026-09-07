@@ -4,15 +4,15 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersManagedClusterUpgradeProfile_Properties_AgentPoolProfiles_Upgrades struct {
-	IsPreview any
+	IsPreview         any
 	KubernetesVersion any
 }
 
 type ManagedclustersManagedClusterUpgradeProfile_Properties_AgentPoolProfiles struct {
 	KubernetesVersion any
-	Name any
-	OsType any
-	Upgrades any
+	Name              any
+	OsType            any
+	Upgrades          any
 }
 
 type ManagedclustersManagedClusterUpgradeProfile_Properties struct {
@@ -28,7 +28,7 @@ type ManagedclustersManagedClusterUpgradeProfileConfig struct {
 
 type ManagedclustersManagedClusterUpgradeProfileAttrs struct {
 	// Control plane and agent pool upgrade profiles.
-	Properties any
+	Properties   any
 	ResourceName any
 }
 

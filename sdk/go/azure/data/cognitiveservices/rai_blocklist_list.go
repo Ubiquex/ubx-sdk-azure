@@ -8,9 +8,9 @@ type RaiBlocklistList_Value_Properties struct {
 }
 
 type RaiBlocklistList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type RaiBlocklistListConfig struct {

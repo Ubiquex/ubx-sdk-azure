@@ -11,9 +11,9 @@ type IntegrationruntimeIntegrationRuntimeResource_Properties struct {
 }
 
 var IntegrationruntimeIntegrationRuntimeResource_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 type IntegrationruntimeIntegrationRuntimeResourceConfig struct {
 	// Azure Synapse nested object which serves as a compute resource for activities.
@@ -30,8 +30,8 @@ var IntegrationruntimeIntegrationRuntimeResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: IntegrationruntimeIntegrationRuntimeResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   IntegrationruntimeIntegrationRuntimeResource_PropertiesFields,
 		},
 	},
 }

@@ -36,27 +36,27 @@ type RoledefinitionscallsRoleDefinition_Properties struct {
 }
 
 var RoledefinitionscallsRoleDefinition_Properties_PermissionsFields = ubx.FieldMap{
-		"Actions": ubx.FieldSpec{WireName: "actions"},
-		"DataActions": ubx.FieldSpec{WireName: "data_actions"},
-		"NotActions": ubx.FieldSpec{WireName: "not_actions"},
-		"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
-	}
+	"Actions":        ubx.FieldSpec{WireName: "actions"},
+	"DataActions":    ubx.FieldSpec{WireName: "data_actions"},
+	"NotActions":     ubx.FieldSpec{WireName: "not_actions"},
+	"NotDataActions": ubx.FieldSpec{WireName: "not_data_actions"},
+}
 
 var RoledefinitionscallsRoleDefinition_PropertiesFields = ubx.FieldMap{
-		"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
-		"CreatedBy": ubx.FieldSpec{WireName: "created_by"},
-		"CreatedOn": ubx.FieldSpec{WireName: "created_on"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Permissions": ubx.FieldSpec{
-			WireName: "permissions",
-			Kind: "list",
-			Fields: RoledefinitionscallsRoleDefinition_Properties_PermissionsFields,
-		},
-		"RoleName": ubx.FieldSpec{WireName: "role_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UpdatedBy": ubx.FieldSpec{WireName: "updated_by"},
-		"UpdatedOn": ubx.FieldSpec{WireName: "updated_on"},
-	}
+	"AssignableScopes": ubx.FieldSpec{WireName: "assignable_scopes"},
+	"CreatedBy":        ubx.FieldSpec{WireName: "created_by"},
+	"CreatedOn":        ubx.FieldSpec{WireName: "created_on"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"Permissions": ubx.FieldSpec{
+		WireName: "permissions",
+		Kind:     "list",
+		Fields:   RoledefinitionscallsRoleDefinition_Properties_PermissionsFields,
+	},
+	"RoleName":  ubx.FieldSpec{WireName: "role_name"},
+	"Type":      ubx.FieldSpec{WireName: "type"},
+	"UpdatedBy": ubx.FieldSpec{WireName: "updated_by"},
+	"UpdatedOn": ubx.FieldSpec{WireName: "updated_on"},
+}
 
 type RoledefinitionscallsRoleDefinitionConfig struct {
 	// Role definition properties.
@@ -83,8 +83,8 @@ var RoledefinitionscallsRoleDefinition = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RoledefinitionscallsRoleDefinition_PropertiesFields,
+			Kind:     "object",
+			Fields:   RoledefinitionscallsRoleDefinition_PropertiesFields,
 		},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},

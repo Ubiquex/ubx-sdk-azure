@@ -15,11 +15,11 @@ type DbOpenapiTableRoleAssignmentResource_Properties struct {
 }
 
 var DbOpenapiTableRoleAssignmentResource_PropertiesFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RoleDefinitionId": ubx.FieldSpec{WireName: "role_definition_id"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"PrincipalId":       ubx.FieldSpec{WireName: "principal_id"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RoleDefinitionId":  ubx.FieldSpec{WireName: "role_definition_id"},
+	"Scope":             ubx.FieldSpec{WireName: "scope"},
+}
 
 type DbOpenapiTableRoleAssignmentResourceConfig struct {
 	// Azure Cosmos DB Table Role Assignment resource object.
@@ -36,8 +36,8 @@ var DbOpenapiTableRoleAssignmentResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiTableRoleAssignmentResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiTableRoleAssignmentResource_PropertiesFields,
 		},
 	},
 }

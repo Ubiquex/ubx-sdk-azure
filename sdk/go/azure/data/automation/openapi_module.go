@@ -53,7 +53,7 @@ type OpenapiModule_Properties struct {
 
 type OpenapiModuleConfig struct {
 	AutomationAccountName any
-	PackageName any
+	PackageName           any
 }
 
 type OpenapiModuleAttrs struct {
@@ -61,7 +61,7 @@ type OpenapiModuleAttrs struct {
 	// Gets or sets the etag of the resource.
 	Etag any
 	// The geo-location where the resource lives
-	Location any
+	Location    any
 	PackageName any
 	// Definition of the module property type.
 	Properties any
@@ -73,6 +73,6 @@ var OpenapiModule = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_module",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"PackageName": ubx.FieldSpec{WireName: "package_name"},
+		"PackageName":           ubx.FieldSpec{WireName: "package_name"},
 	},
 }

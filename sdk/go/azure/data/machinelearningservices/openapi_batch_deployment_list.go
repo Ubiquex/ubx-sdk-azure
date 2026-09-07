@@ -4,14 +4,14 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBatchDeploymentList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiBatchDeploymentList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -25,47 +25,47 @@ type OpenapiBatchDeploymentList_Value_Properties_Model struct {
 
 type OpenapiBatchDeploymentList_Value_Properties_Resources struct {
 	InstanceCount any
-	InstanceType any
-	Properties any
+	InstanceType  any
+	Properties    any
 }
 
 type OpenapiBatchDeploymentList_Value_Properties_RetrySettings struct {
 	MaxRetries any
-	Timeout any
+	Timeout    any
 }
 
 type OpenapiBatchDeploymentList_Value_Properties struct {
-	Compute any
-	DeploymentConfiguration any
-	ErrorThreshold any
-	LoggingLevel any
+	Compute                   any
+	DeploymentConfiguration   any
+	ErrorThreshold            any
+	LoggingLevel              any
 	MaxConcurrencyPerInstance any
-	MiniBatchSize any
-	Model any
-	OutputAction any
-	OutputFileName any
-	ProvisioningState any
-	Resources any
-	RetrySettings any
+	MiniBatchSize             any
+	Model                     any
+	OutputAction              any
+	OutputFileName            any
+	ProvisioningState         any
+	Resources                 any
+	RetrySettings             any
 }
 
 type OpenapiBatchDeploymentList_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiBatchDeploymentList_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiBatchDeploymentListConfig struct {
-	EndpointName any
+	EndpointName  any
 	WorkspaceName any
 }
 
@@ -74,14 +74,14 @@ type OpenapiBatchDeploymentListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The BatchDeployment items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiBatchDeploymentList = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_batch_deployment_list",
 	Fields: ubx.FieldMap{
-		"EndpointName": ubx.FieldSpec{WireName: "endpoint_name"},
+		"EndpointName":  ubx.FieldSpec{WireName: "endpoint_name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

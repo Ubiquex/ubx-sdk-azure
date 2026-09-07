@@ -60,43 +60,43 @@ type OpenapiWatchlist_Properties struct {
 }
 
 var OpenapiWatchlist_Properties_CreatedByFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-	}
+	"Email":    ubx.FieldSpec{WireName: "email"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+}
 
 var OpenapiWatchlist_PropertiesFields = ubx.FieldMap{
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"Created": ubx.FieldSpec{WireName: "created"},
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: OpenapiWatchlist_Properties_CreatedByFields,
-		},
-		"DefaultDuration": ubx.FieldSpec{WireName: "default_duration"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"IsDeleted": ubx.FieldSpec{WireName: "is_deleted"},
-		"ItemsSearchKey": ubx.FieldSpec{WireName: "items_search_key"},
-		"Labels": ubx.FieldSpec{WireName: "labels"},
-		"NumberOfLinesToSkip": ubx.FieldSpec{WireName: "number_of_lines_to_skip"},
-		"Provider": ubx.FieldSpec{WireName: "provider"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RawContent": ubx.FieldSpec{WireName: "raw_content"},
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"SourceType": ubx.FieldSpec{WireName: "source_type"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Updated": ubx.FieldSpec{WireName: "updated"},
-		"UpdatedBy": ubx.FieldSpec{
-			WireName: "updated_by",
-			Kind: "object",
-			Fields: OpenapiWatchlist_Properties_CreatedByFields,
-		},
-		"UploadStatus": ubx.FieldSpec{WireName: "upload_status"},
-		"WatchlistAlias": ubx.FieldSpec{WireName: "watchlist_alias"},
-		"WatchlistId": ubx.FieldSpec{WireName: "watchlist_id"},
-		"WatchlistType": ubx.FieldSpec{WireName: "watchlist_type"},
-	}
+	"ContentType": ubx.FieldSpec{WireName: "content_type"},
+	"Created":     ubx.FieldSpec{WireName: "created"},
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   OpenapiWatchlist_Properties_CreatedByFields,
+	},
+	"DefaultDuration":     ubx.FieldSpec{WireName: "default_duration"},
+	"Description":         ubx.FieldSpec{WireName: "description"},
+	"DisplayName":         ubx.FieldSpec{WireName: "display_name"},
+	"IsDeleted":           ubx.FieldSpec{WireName: "is_deleted"},
+	"ItemsSearchKey":      ubx.FieldSpec{WireName: "items_search_key"},
+	"Labels":              ubx.FieldSpec{WireName: "labels"},
+	"NumberOfLinesToSkip": ubx.FieldSpec{WireName: "number_of_lines_to_skip"},
+	"Provider":            ubx.FieldSpec{WireName: "provider"},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"RawContent":          ubx.FieldSpec{WireName: "raw_content"},
+	"Source":              ubx.FieldSpec{WireName: "source"},
+	"SourceType":          ubx.FieldSpec{WireName: "source_type"},
+	"TenantId":            ubx.FieldSpec{WireName: "tenant_id"},
+	"Updated":             ubx.FieldSpec{WireName: "updated"},
+	"UpdatedBy": ubx.FieldSpec{
+		WireName: "updated_by",
+		Kind:     "object",
+		Fields:   OpenapiWatchlist_Properties_CreatedByFields,
+	},
+	"UploadStatus":   ubx.FieldSpec{WireName: "upload_status"},
+	"WatchlistAlias": ubx.FieldSpec{WireName: "watchlist_alias"},
+	"WatchlistId":    ubx.FieldSpec{WireName: "watchlist_id"},
+	"WatchlistType":  ubx.FieldSpec{WireName: "watchlist_type"},
+}
 
 type OpenapiWatchlistConfig struct {
 	// Etag of the azure resource
@@ -118,8 +118,8 @@ var OpenapiWatchlist = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiWatchlist_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiWatchlist_PropertiesFields,
 		},
 	},
 }

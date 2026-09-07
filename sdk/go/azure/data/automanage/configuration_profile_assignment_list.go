@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConfigurationProfileAssignmentList_Value_Properties struct {
 	ConfigurationProfile any
-	Status any
-	TargetId any
+	Status               any
+	TargetId             any
 }
 
 type ConfigurationProfileAssignmentList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type ConfigurationProfileAssignmentList_Value struct {
-	ManagedBy any
+	ManagedBy  any
 	Properties any
 	SystemData any
 }
@@ -34,6 +34,5 @@ type ConfigurationProfileAssignmentListAttrs struct {
 
 var ConfigurationProfileAssignmentList = ubx.DataSourceBinding{
 	WireType: "azure_automanage_configuration_profile_assignment_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

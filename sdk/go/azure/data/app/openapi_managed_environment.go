@@ -4,7 +4,7 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedEnvironment_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -96,15 +96,15 @@ type OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_
 
 type OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiManagedEnvironment_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiManagedEnvironment_Properties_PrivateEndpointConnections struct {
@@ -125,9 +125,9 @@ type OpenapiManagedEnvironment_Properties_VnetConfiguration struct {
 }
 
 type OpenapiManagedEnvironment_Properties_WorkloadProfiles struct {
-	MaximumCount any
-	MinimumCount any
-	Name any
+	MaximumCount        any
+	MinimumCount        any
+	Name                any
 	WorkloadProfileType any
 }
 

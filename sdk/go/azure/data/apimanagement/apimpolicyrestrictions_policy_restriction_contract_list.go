@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimpolicyrestrictionsPolicyRestrictionContractList_Value_Properties struct {
 	RequireBase any
-	Scope any
+	Scope       any
 }
 
 type ApimpolicyrestrictionsPolicyRestrictionContractList_Value struct {
@@ -18,11 +18,10 @@ type ApimpolicyrestrictionsPolicyRestrictionContractListConfig struct {
 type ApimpolicyrestrictionsPolicyRestrictionContractListAttrs struct {
 	// Next page link if any.
 	NextLink any
-	Value any
+	Value    any
 }
 
 var ApimpolicyrestrictionsPolicyRestrictionContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimpolicyrestrictions_policy_restriction_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

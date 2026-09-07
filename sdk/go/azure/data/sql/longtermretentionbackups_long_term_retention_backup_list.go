@@ -4,19 +4,19 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type LongtermretentionbackupsLongTermRetentionBackupList_Value_Properties struct {
-	BackupExpirationTime any
-	BackupStorageAccessTier any
-	BackupStorageRedundancy any
-	BackupTime any
-	DatabaseDeletionTime any
-	DatabaseName any
-	IsBackupImmutable any
-	LegalHoldImmutability any
+	BackupExpirationTime             any
+	BackupStorageAccessTier          any
+	BackupStorageRedundancy          any
+	BackupTime                       any
+	DatabaseDeletionTime             any
+	DatabaseName                     any
+	IsBackupImmutable                any
+	LegalHoldImmutability            any
 	RequestedBackupStorageRedundancy any
-	ServerCreateTime any
-	ServerName any
-	TimeBasedImmutability any
-	TimeBasedImmutabilityMode any
+	ServerCreateTime                 any
+	ServerName                       any
+	TimeBasedImmutability            any
+	TimeBasedImmutabilityMode        any
 }
 
 type LongtermretentionbackupsLongTermRetentionBackupList_Value struct {
@@ -24,16 +24,16 @@ type LongtermretentionbackupsLongTermRetentionBackupList_Value struct {
 }
 
 type LongtermretentionbackupsLongTermRetentionBackupListConfig struct {
-	DatabaseState any
-	LocationName any
+	DatabaseState         any
+	LocationName          any
 	OnlyLatestPerDatabase any
 }
 
 type LongtermretentionbackupsLongTermRetentionBackupListAttrs struct {
 	DatabaseState any
-	LocationName any
+	LocationName  any
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink              any
 	OnlyLatestPerDatabase any
 	// Array of results.
 	Value any
@@ -42,8 +42,8 @@ type LongtermretentionbackupsLongTermRetentionBackupListAttrs struct {
 var LongtermretentionbackupsLongTermRetentionBackupList = ubx.DataSourceBinding{
 	WireType: "azure_sql_longtermretentionbackups_long_term_retention_backup_list",
 	Fields: ubx.FieldMap{
-		"DatabaseState": ubx.FieldSpec{WireName: "database_state"},
-		"LocationName": ubx.FieldSpec{WireName: "location_name"},
+		"DatabaseState":         ubx.FieldSpec{WireName: "database_state"},
+		"LocationName":          ubx.FieldSpec{WireName: "location_name"},
 		"OnlyLatestPerDatabase": ubx.FieldSpec{WireName: "only_latest_per_database"},
 	},
 }

@@ -4,22 +4,22 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiPartitionMetricList_Value struct {
-	PartitionId any
+	PartitionId         any
 	PartitionKeyRangeId any
 }
 
 type DbOpenapiPartitionMetricListConfig struct {
-	AccountName any
-	CollectionRid any
-	DatabaseRid any
+	AccountName         any
+	CollectionRid       any
+	DatabaseRid         any
 	PartitionKeyRangeId any
 }
 
 type DbOpenapiPartitionMetricListAttrs struct {
-	AccountName any
-	CollectionRid any
-	DatabaseRid any
-	NextLink any
+	AccountName         any
+	CollectionRid       any
+	DatabaseRid         any
+	NextLink            any
 	PartitionKeyRangeId any
 	// The list of partition-level metrics for the account.
 	Value any
@@ -28,9 +28,9 @@ type DbOpenapiPartitionMetricListAttrs struct {
 var DbOpenapiPartitionMetricList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_partition_metric_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"CollectionRid": ubx.FieldSpec{WireName: "collection_rid"},
-		"DatabaseRid": ubx.FieldSpec{WireName: "database_rid"},
+		"AccountName":         ubx.FieldSpec{WireName: "account_name"},
+		"CollectionRid":       ubx.FieldSpec{WireName: "collection_rid"},
+		"DatabaseRid":         ubx.FieldSpec{WireName: "database_rid"},
 		"PartitionKeyRangeId": ubx.FieldSpec{WireName: "partition_key_range_id"},
 	},
 }

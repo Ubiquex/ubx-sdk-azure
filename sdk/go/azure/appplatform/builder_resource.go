@@ -32,36 +32,36 @@ type BuilderResource_Properties struct {
 }
 
 var BuilderResource_Properties_BuildpackGroups_BuildpacksFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var BuilderResource_Properties_BuildpackGroupsFields = ubx.FieldMap{
-		"Buildpacks": ubx.FieldSpec{
-			WireName: "buildpacks",
-			Kind: "list",
-			Fields: BuilderResource_Properties_BuildpackGroups_BuildpacksFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Buildpacks": ubx.FieldSpec{
+		WireName: "buildpacks",
+		Kind:     "list",
+		Fields:   BuilderResource_Properties_BuildpackGroups_BuildpacksFields,
+	},
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var BuilderResource_Properties_StackFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Version": ubx.FieldSpec{WireName: "version"},
-	}
+	"Id":      ubx.FieldSpec{WireName: "id"},
+	"Version": ubx.FieldSpec{WireName: "version"},
+}
 
 var BuilderResource_PropertiesFields = ubx.FieldMap{
-		"BuildpackGroups": ubx.FieldSpec{
-			WireName: "buildpack_groups",
-			Kind: "list",
-			Fields: BuilderResource_Properties_BuildpackGroupsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Stack": ubx.FieldSpec{
-			WireName: "stack",
-			Kind: "object",
-			Fields: BuilderResource_Properties_StackFields,
-		},
-	}
+	"BuildpackGroups": ubx.FieldSpec{
+		WireName: "buildpack_groups",
+		Kind:     "list",
+		Fields:   BuilderResource_Properties_BuildpackGroupsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Stack": ubx.FieldSpec{
+		WireName: "stack",
+		Kind:     "object",
+		Fields:   BuilderResource_Properties_StackFields,
+	},
+}
 
 type BuilderResourceConfig struct {
 	// KPack Builder properties payload
@@ -78,8 +78,8 @@ var BuilderResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BuilderResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BuilderResource_PropertiesFields,
 		},
 	},
 }

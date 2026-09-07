@@ -23,18 +23,18 @@ type OpenapiRemotePrivateEndpointConnectionArmresource_Properties struct {
 	PrivateEndpoint any
 	// The state of a private link connection
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiRemotePrivateEndpointConnectionArmresourceConfig struct {
-	Name any
+	Name                          any
 	PrivateEndpointConnectionName any
 }
 
 type OpenapiRemotePrivateEndpointConnectionArmresourceAttrs struct {
 	// Kind of resource.
-	Kind any
-	Name any
+	Kind                          any
+	Name                          any
 	PrivateEndpointConnectionName any
 	// RemotePrivateEndpointConnectionARMResource resource specific properties
 	Properties any
@@ -43,7 +43,7 @@ type OpenapiRemotePrivateEndpointConnectionArmresourceAttrs struct {
 var OpenapiRemotePrivateEndpointConnectionArmresource = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_remote_private_endpoint_connection_armresource",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":                          ubx.FieldSpec{WireName: "name"},
 		"PrivateEndpointConnectionName": ubx.FieldSpec{WireName: "private_endpoint_connection_name"},
 	},
 }

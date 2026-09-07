@@ -4,22 +4,22 @@ package interconnect
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BlockList_Value_Placement struct {
-	ExcludeZones any
-	IncludeZones any
+	ExcludeZones        any
+	IncludeZones        any
 	ZonePlacementPolicy any
 }
 
 type BlockList_Value_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type BlockList_Value_Properties_InstanceView struct {
 	CurrentCapacity any
-	Statuses any
+	Statuses        any
 }
 
 type BlockList_Value_Properties_InterconnectGroup struct {
@@ -27,26 +27,26 @@ type BlockList_Value_Properties_InterconnectGroup struct {
 }
 
 type BlockList_Value_Properties struct {
-	InstanceView any
-	InterconnectBlockId any
-	InterconnectGroup any
-	ProvisioningState any
-	ProvisioningTime any
-	TimeCreated any
+	InstanceView              any
+	InterconnectBlockId       any
+	InterconnectGroup         any
+	ProvisioningState         any
+	ProvisioningTime          any
+	TimeCreated               any
 	VirtualMachinesAssociated any
 }
 
 type BlockList_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type BlockList_Value struct {
-	Placement any
+	Placement  any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type BlockListConfig struct {
@@ -61,6 +61,5 @@ type BlockListAttrs struct {
 
 var BlockList = ubx.DataSourceBinding{
 	WireType: "azure_interconnect_block_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

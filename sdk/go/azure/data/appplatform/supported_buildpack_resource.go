@@ -9,33 +9,33 @@ type SupportedBuildpackResource_Properties struct {
 }
 
 type SupportedBuildpackResourceConfig struct {
-	ApiVersion any
-	BuildServiceName any
-	BuildpackName any
+	ApiVersion        any
+	BuildServiceName  any
+	BuildpackName     any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type SupportedBuildpackResourceAttrs struct {
-	ApiVersion any
+	ApiVersion       any
 	BuildServiceName any
-	BuildpackName any
+	BuildpackName    any
 	// Supported buildpack resource properties
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 var SupportedBuildpackResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_supported_buildpack_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"BuildServiceName": ubx.FieldSpec{WireName: "build_service_name"},
-		"BuildpackName": ubx.FieldSpec{WireName: "buildpack_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"BuildServiceName":  ubx.FieldSpec{WireName: "build_service_name"},
+		"BuildpackName":     ubx.FieldSpec{WireName: "buildpack_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

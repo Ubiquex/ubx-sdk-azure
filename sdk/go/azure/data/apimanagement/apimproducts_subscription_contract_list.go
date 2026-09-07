@@ -4,19 +4,19 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimproductsSubscriptionContractList_Value_Properties struct {
-	AllowTracing any
-	CreatedDate any
-	DisplayName any
-	EndDate any
-	ExpirationDate any
+	AllowTracing     any
+	CreatedDate      any
+	DisplayName      any
+	EndDate          any
+	ExpirationDate   any
 	NotificationDate any
-	OwnerId any
-	PrimaryKey any
-	Scope any
-	SecondaryKey any
-	StartDate any
-	State any
-	StateComment any
+	OwnerId          any
+	PrimaryKey       any
+	Scope            any
+	SecondaryKey     any
+	StartDate        any
+	State            any
+	StateComment     any
 }
 
 type ApimproductsSubscriptionContractList_Value struct {
@@ -37,6 +37,5 @@ type ApimproductsSubscriptionContractListAttrs struct {
 
 var ApimproductsSubscriptionContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimproducts_subscription_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

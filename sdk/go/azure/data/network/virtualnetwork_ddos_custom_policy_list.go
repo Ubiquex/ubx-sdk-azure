@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkDdosCustomPolicyList_Value_Properties_DetectionRules_Properties_TrafficDetectionRule struct {
 	PacketsPerSecond any
-	TrafficType any
+	TrafficType      any
 }
 
 type VirtualnetworkDdosCustomPolicyList_Value_Properties_DetectionRules_Properties struct {
-	DetectionMode any
-	ProvisioningState any
+	DetectionMode        any
+	ProvisioningState    any
 	TrafficDetectionRule any
 }
 
 type VirtualnetworkDdosCustomPolicyList_Value_Properties_DetectionRules struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualnetworkDdosCustomPolicyList_Value_Properties_FrontEndIpConfiguration struct {
@@ -27,15 +27,15 @@ type VirtualnetworkDdosCustomPolicyList_Value_Properties_FrontEndIpConfiguration
 }
 
 type VirtualnetworkDdosCustomPolicyList_Value_Properties struct {
-	DetectionRules any
+	DetectionRules          any
 	FrontEndIpConfiguration any
-	ProvisioningState any
-	PublicIpaddresses any
-	ResourceGuid any
+	ProvisioningState       any
+	PublicIpaddresses       any
+	ResourceGuid            any
 }
 
 type VirtualnetworkDdosCustomPolicyList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -51,6 +51,5 @@ type VirtualnetworkDdosCustomPolicyListAttrs struct {
 
 var VirtualnetworkDdosCustomPolicyList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_ddos_custom_policy_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

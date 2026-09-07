@@ -9,15 +9,15 @@ type BotList_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpo
 
 type BotList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type BotList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type BotList_Value_Properties_PrivateEndpointConnections struct {
@@ -25,41 +25,41 @@ type BotList_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type BotList_Value_Properties struct {
-	AllSettings any
-	AppPasswordHint any
-	CmekEncryptionStatus any
-	CmekKeyVaultUrl any
-	ConfiguredChannels any
-	Description any
-	DeveloperAppInsightKey any
-	DeveloperAppInsightsApiKey any
+	AllSettings                       any
+	AppPasswordHint                   any
+	CmekEncryptionStatus              any
+	CmekKeyVaultUrl                   any
+	ConfiguredChannels                any
+	Description                       any
+	DeveloperAppInsightKey            any
+	DeveloperAppInsightsApiKey        any
 	DeveloperAppInsightsApplicationId any
-	DisableLocalAuth any
-	DisplayName any
-	EnabledChannels any
-	Endpoint any
-	EndpointVersion any
-	IconUrl any
-	IsCmekEnabled any
-	IsDeveloperAppInsightsApiKeySet any
-	IsStreamingSupported any
-	LuisAppIds any
-	LuisKey any
-	ManifestUrl any
-	MigrationToken any
-	MsaAppId any
-	MsaAppMsiresourceId any
-	MsaAppTenantId any
-	MsaAppType any
-	OpenWithHint any
-	Parameters any
-	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	PublishingCredentials any
-	SchemaTransformationVersion any
-	StorageResourceId any
-	TenantId any
+	DisableLocalAuth                  any
+	DisplayName                       any
+	EnabledChannels                   any
+	Endpoint                          any
+	EndpointVersion                   any
+	IconUrl                           any
+	IsCmekEnabled                     any
+	IsDeveloperAppInsightsApiKeySet   any
+	IsStreamingSupported              any
+	LuisAppIds                        any
+	LuisKey                           any
+	ManifestUrl                       any
+	MigrationToken                    any
+	MsaAppId                          any
+	MsaAppMsiresourceId               any
+	MsaAppTenantId                    any
+	MsaAppType                        any
+	OpenWithHint                      any
+	Parameters                        any
+	PrivateEndpointConnections        any
+	ProvisioningState                 any
+	PublicNetworkAccess               any
+	PublishingCredentials             any
+	SchemaTransformationVersion       any
+	StorageResourceId                 any
+	TenantId                          any
 }
 
 type BotList_Value struct {
@@ -67,14 +67,14 @@ type BotList_Value struct {
 }
 
 type BotListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type BotListAttrs struct {
 	ApiVersion any
 	// The link used to get the next page of bot service resources.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// Gets the list of bot service results and their properties.
 	Value any
@@ -83,7 +83,7 @@ type BotListAttrs struct {
 var BotList = ubx.DataSourceBinding{
 	WireType: "azure_botservice_bot_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -46,51 +46,51 @@ type OpenapiObjectReplicationPolicy_Properties struct {
 }
 
 var OpenapiObjectReplicationPolicy_Properties_MetricsFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-	}
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+}
 
 var OpenapiObjectReplicationPolicy_Properties_Rules_FiltersFields = ubx.FieldMap{
-		"MinCreationTime": ubx.FieldSpec{WireName: "min_creation_time"},
-		"PrefixMatch": ubx.FieldSpec{WireName: "prefix_match"},
-	}
+	"MinCreationTime": ubx.FieldSpec{WireName: "min_creation_time"},
+	"PrefixMatch":     ubx.FieldSpec{WireName: "prefix_match"},
+}
 
 var OpenapiObjectReplicationPolicy_Properties_RulesFields = ubx.FieldMap{
-		"DestinationContainer": ubx.FieldSpec{WireName: "destination_container"},
-		"Filters": ubx.FieldSpec{
-			WireName: "filters",
-			Kind: "object",
-			Fields: OpenapiObjectReplicationPolicy_Properties_Rules_FiltersFields,
-		},
-		"RuleId": ubx.FieldSpec{WireName: "rule_id"},
-		"SourceContainer": ubx.FieldSpec{WireName: "source_container"},
-	}
+	"DestinationContainer": ubx.FieldSpec{WireName: "destination_container"},
+	"Filters": ubx.FieldSpec{
+		WireName: "filters",
+		Kind:     "object",
+		Fields:   OpenapiObjectReplicationPolicy_Properties_Rules_FiltersFields,
+	},
+	"RuleId":          ubx.FieldSpec{WireName: "rule_id"},
+	"SourceContainer": ubx.FieldSpec{WireName: "source_container"},
+}
 
 var OpenapiObjectReplicationPolicy_PropertiesFields = ubx.FieldMap{
-		"DestinationAccount": ubx.FieldSpec{WireName: "destination_account"},
-		"EnabledTime": ubx.FieldSpec{WireName: "enabled_time"},
-		"Metrics": ubx.FieldSpec{
-			WireName: "metrics",
-			Kind: "object",
-			Fields: OpenapiObjectReplicationPolicy_Properties_MetricsFields,
-		},
-		"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
-		"PriorityReplication": ubx.FieldSpec{
-			WireName: "priority_replication",
-			Kind: "object",
-			Fields: OpenapiObjectReplicationPolicy_Properties_MetricsFields,
-		},
-		"Rules": ubx.FieldSpec{
-			WireName: "rules",
-			Kind: "list",
-			Fields: OpenapiObjectReplicationPolicy_Properties_RulesFields,
-		},
-		"SourceAccount": ubx.FieldSpec{WireName: "source_account"},
-		"TagsReplication": ubx.FieldSpec{
-			WireName: "tags_replication",
-			Kind: "object",
-			Fields: OpenapiObjectReplicationPolicy_Properties_MetricsFields,
-		},
-	}
+	"DestinationAccount": ubx.FieldSpec{WireName: "destination_account"},
+	"EnabledTime":        ubx.FieldSpec{WireName: "enabled_time"},
+	"Metrics": ubx.FieldSpec{
+		WireName: "metrics",
+		Kind:     "object",
+		Fields:   OpenapiObjectReplicationPolicy_Properties_MetricsFields,
+	},
+	"PolicyId": ubx.FieldSpec{WireName: "policy_id"},
+	"PriorityReplication": ubx.FieldSpec{
+		WireName: "priority_replication",
+		Kind:     "object",
+		Fields:   OpenapiObjectReplicationPolicy_Properties_MetricsFields,
+	},
+	"Rules": ubx.FieldSpec{
+		WireName: "rules",
+		Kind:     "list",
+		Fields:   OpenapiObjectReplicationPolicy_Properties_RulesFields,
+	},
+	"SourceAccount": ubx.FieldSpec{WireName: "source_account"},
+	"TagsReplication": ubx.FieldSpec{
+		WireName: "tags_replication",
+		Kind:     "object",
+		Fields:   OpenapiObjectReplicationPolicy_Properties_MetricsFields,
+	},
+}
 
 type OpenapiObjectReplicationPolicyConfig struct {
 	// The Storage Account ObjectReplicationPolicy properties.
@@ -107,8 +107,8 @@ var OpenapiObjectReplicationPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiObjectReplicationPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiObjectReplicationPolicy_PropertiesFields,
 		},
 	},
 }

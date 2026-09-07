@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwMetricsObjectFirewallResourceList_Value_Properties struct {
 	ApplicationInsightsConnectionString any
-	ApplicationInsightsResourceId any
-	PanEtag any
-	ProvisioningState any
+	ApplicationInsightsResourceId       any
+	PanEtag                             any
+	ProvisioningState                   any
 }
 
 type CloudngfwMetricsObjectFirewallResourceList_Value struct {

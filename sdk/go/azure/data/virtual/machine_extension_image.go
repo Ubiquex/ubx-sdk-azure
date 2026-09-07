@@ -4,7 +4,7 @@ package virtual
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MachineExtensionImage_Properties_ExtensionFeatureMetadata_ExtensionFeatureTags struct {
-	Key any
+	Key   any
 	Value any
 }
 
@@ -38,19 +38,19 @@ type MachineExtensionImage_Properties struct {
 
 type MachineExtensionImageConfig struct {
 	PublisherName any
-	Type any
-	Version any
+	Type          any
+	Version       any
 }
 
 type MachineExtensionImageAttrs struct {
 	// The geo-location where the resource lives
 	Location any
 	// Describes the properties of a Virtual Machine Extension Image.
-	Properties any
+	Properties    any
 	PublisherName any
 	// Resource tags.
-	Tags any
-	Type any
+	Tags    any
+	Type    any
 	Version any
 }
 
@@ -58,7 +58,7 @@ var MachineExtensionImage = ubx.DataSourceBinding{
 	WireType: "azure_virtual_machine_extension_image",
 	Fields: ubx.FieldMap{
 		"PublisherName": ubx.FieldSpec{WireName: "publisher_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Version": ubx.FieldSpec{WireName: "version"},
+		"Type":          ubx.FieldSpec{WireName: "type"},
+		"Version":       ubx.FieldSpec{WireName: "version"},
 	},
 }

@@ -4,15 +4,15 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPrivateAccess_Properties_VirtualNetworks_Subnets struct {
-	Key any
+	Key  any
 	Name any
 }
 
 type OpenapiPrivateAccess_Properties_VirtualNetworks struct {
-	Key any
-	Name any
+	Key        any
+	Name       any
 	ResourceId any
-	Subnets any
+	Subnets    any
 }
 
 type OpenapiPrivateAccess_Properties struct {

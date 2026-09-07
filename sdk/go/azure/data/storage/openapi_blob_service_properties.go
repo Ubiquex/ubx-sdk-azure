@@ -20,10 +20,10 @@ type OpenapiBlobServiceProperties_Properties_ContainerDeleteRetentionPolicy stru
 }
 
 type OpenapiBlobServiceProperties_Properties_Cors_CorsRules struct {
-	AllowedHeaders any
-	AllowedMethods any
-	AllowedOrigins any
-	ExposedHeaders any
+	AllowedHeaders  any
+	AllowedMethods  any
+	AllowedOrigins  any
+	ExposedHeaders  any
 	MaxAgeInSeconds any
 }
 

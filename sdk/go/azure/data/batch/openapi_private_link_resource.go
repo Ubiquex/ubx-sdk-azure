@@ -13,14 +13,14 @@ type OpenapiPrivateLinkResource_Properties struct {
 }
 
 type OpenapiPrivateLinkResourceConfig struct {
-	AccountName any
+	AccountName             any
 	PrivateLinkResourceName any
 }
 
 type OpenapiPrivateLinkResourceAttrs struct {
 	AccountName any
 	// The ETag of the resource, used for concurrency statements.
-	Etag any
+	Etag                    any
 	PrivateLinkResourceName any
 	// Private link resource properties.
 	Properties any
@@ -31,7 +31,7 @@ type OpenapiPrivateLinkResourceAttrs struct {
 var OpenapiPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_batch_openapi_private_link_resource",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":             ubx.FieldSpec{WireName: "account_name"},
 		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
 	},
 }

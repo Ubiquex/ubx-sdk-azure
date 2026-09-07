@@ -4,14 +4,14 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlserverServerSecurityAlertPolicyList_Value_Properties struct {
-	CreationTime any
-	DisabledAlerts any
-	EmailAccountAdmins any
-	EmailAddresses any
-	RetentionDays any
-	State any
+	CreationTime            any
+	DisabledAlerts          any
+	EmailAccountAdmins      any
+	EmailAddresses          any
+	RetentionDays           any
+	State                   any
 	StorageAccountAccessKey any
-	StorageEndpoint any
+	StorageEndpoint         any
 }
 
 type SqlserverServerSecurityAlertPolicyList_Value struct {
@@ -30,6 +30,5 @@ type SqlserverServerSecurityAlertPolicyListAttrs struct {
 
 var SqlserverServerSecurityAlertPolicyList = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlserver_server_security_alert_policy_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,25 +4,25 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualwanVpnSiteLinkList_Value_Properties_BgpProperties struct {
-	Asn any
+	Asn               any
 	BgpPeeringAddress any
 }
 
 type VirtualwanVpnSiteLinkList_Value_Properties_LinkProperties struct {
 	LinkProviderName any
-	LinkSpeedInMbps any
+	LinkSpeedInMbps  any
 }
 
 type VirtualwanVpnSiteLinkList_Value_Properties struct {
-	BgpProperties any
-	Fqdn any
-	IpAddress any
-	LinkProperties any
+	BgpProperties     any
+	Fqdn              any
+	IpAddress         any
+	LinkProperties    any
 	ProvisioningState any
 }
 
 type VirtualwanVpnSiteLinkList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -34,7 +34,7 @@ type VirtualwanVpnSiteLinkListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The VpnSiteLink items on this page
-	Value any
+	Value       any
 	VpnSiteName any
 }
 

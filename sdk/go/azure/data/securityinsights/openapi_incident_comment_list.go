@@ -4,26 +4,26 @@ package securityinsights
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiIncidentCommentList_Value_Properties_Author struct {
-	Email any
-	Name any
-	ObjectId any
+	Email             any
+	Name              any
+	ObjectId          any
 	UserPrincipalName any
 }
 
 type OpenapiIncidentCommentList_Value_Properties struct {
-	Author any
-	CreatedTimeUtc any
+	Author              any
+	CreatedTimeUtc      any
 	LastModifiedTimeUtc any
-	Message any
+	Message             any
 }
 
 type OpenapiIncidentCommentList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type OpenapiIncidentCommentListConfig struct {
-	IncidentId any
+	IncidentId    any
 	WorkspaceName any
 }
 
@@ -32,14 +32,14 @@ type OpenapiIncidentCommentListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The IncidentComment items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiIncidentCommentList = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_incident_comment_list",
 	Fields: ubx.FieldMap{
-		"IncidentId": ubx.FieldSpec{WireName: "incident_id"},
+		"IncidentId":    ubx.FieldSpec{WireName: "incident_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

@@ -4,8 +4,8 @@ package redhatopenshift
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PlatformWorkloadIdentityRoleSet_Properties_PlatformWorkloadIdentityRoles struct {
-	OperatorName any
-	RoleDefinitionId any
+	OperatorName       any
+	RoleDefinitionId   any
 	RoleDefinitionName any
 }
 

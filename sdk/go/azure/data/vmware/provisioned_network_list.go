@@ -4,8 +4,8 @@ package vmware
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ProvisionedNetworkList_Value_Properties struct {
-	AddressPrefix any
-	NetworkType any
+	AddressPrefix     any
+	NetworkType       any
 	ProvisioningState any
 }
 
@@ -19,7 +19,7 @@ type ProvisionedNetworkListConfig struct {
 
 type ProvisionedNetworkListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink         any
 	PrivateCloudName any
 	// The ProvisionedNetwork items on this page
 	Value any

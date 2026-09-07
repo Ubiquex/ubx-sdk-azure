@@ -17,12 +17,12 @@ type CloudngfwPrefixListResource_Properties struct {
 }
 
 var CloudngfwPrefixListResource_PropertiesFields = ubx.FieldMap{
-		"AuditComment": ubx.FieldSpec{WireName: "audit_comment"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"PrefixList": ubx.FieldSpec{WireName: "prefix_list"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AuditComment":      ubx.FieldSpec{WireName: "audit_comment"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"Etag":              ubx.FieldSpec{WireName: "etag"},
+	"PrefixList":        ubx.FieldSpec{WireName: "prefix_list"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type CloudngfwPrefixListResourceConfig struct {
 	// prefix entry
@@ -43,8 +43,8 @@ var CloudngfwPrefixListResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CloudngfwPrefixListResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   CloudngfwPrefixListResource_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

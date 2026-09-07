@@ -114,9 +114,9 @@ type OpenapiReservation_Properties_SwapProperties struct {
 }
 
 type OpenapiReservation_Properties_Utilization_Aggregates struct {
-	Grain any
+	Grain     any
 	GrainUnit any
-	Value any
+	Value     any
 	ValueUnit any
 }
 
@@ -204,20 +204,20 @@ type OpenapiReservation_Properties struct {
 
 type OpenapiReservationConfig struct {
 	BillingAccountName any
-	Expand any
-	ReservationId any
+	Expand             any
+	ReservationId      any
 	ReservationOrderId any
 }
 
 type OpenapiReservationAttrs struct {
 	BillingAccountName any
-	Etag any
-	Expand any
+	Etag               any
+	Expand             any
 	// The location of the reservation.
 	Location any
 	// The property of reservation object.
-	Properties any
-	ReservationId any
+	Properties         any
+	ReservationId      any
 	ReservationOrderId any
 	// The property of reservation sku object.
 	Sku any
@@ -229,8 +229,8 @@ var OpenapiReservation = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_reservation",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
-		"ReservationId": ubx.FieldSpec{WireName: "reservation_id"},
+		"Expand":             ubx.FieldSpec{WireName: "expand"},
+		"ReservationId":      ubx.FieldSpec{WireName: "reservation_id"},
 		"ReservationOrderId": ubx.FieldSpec{WireName: "reservation_order_id"},
 	},
 }

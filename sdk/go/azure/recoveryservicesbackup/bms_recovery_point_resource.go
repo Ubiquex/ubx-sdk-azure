@@ -4,14 +4,14 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsRecoveryPointResource_Properties_ThreatInfo struct {
-	LastUpdatedTime any
+	LastUpdatedTime   any
 	ThreatDescription any
-	ThreatEndTime any
-	ThreatSeverity any
-	ThreatStartTime any
-	ThreatState any
-	ThreatTitle any
-	ThreatUri any
+	ThreatEndTime     any
+	ThreatSeverity    any
+	ThreatStartTime   any
+	ThreatState       any
+	ThreatTitle       any
+	ThreatUri         any
 }
 
 type BmsRecoveryPointResource_Properties struct {
@@ -41,26 +41,26 @@ type BmsRecoveryPointResource_SystemData struct {
 }
 
 var BmsRecoveryPointResource_Properties_ThreatInfoFields = ubx.FieldMap{
-		"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
-		"ThreatDescription": ubx.FieldSpec{WireName: "threat_description"},
-		"ThreatEndTime": ubx.FieldSpec{WireName: "threat_end_time"},
-		"ThreatSeverity": ubx.FieldSpec{WireName: "threat_severity"},
-		"ThreatStartTime": ubx.FieldSpec{WireName: "threat_start_time"},
-		"ThreatState": ubx.FieldSpec{WireName: "threat_state"},
-		"ThreatTitle": ubx.FieldSpec{WireName: "threat_title"},
-		"ThreatUri": ubx.FieldSpec{WireName: "threat_uri"},
-	}
+	"LastUpdatedTime":   ubx.FieldSpec{WireName: "last_updated_time"},
+	"ThreatDescription": ubx.FieldSpec{WireName: "threat_description"},
+	"ThreatEndTime":     ubx.FieldSpec{WireName: "threat_end_time"},
+	"ThreatSeverity":    ubx.FieldSpec{WireName: "threat_severity"},
+	"ThreatStartTime":   ubx.FieldSpec{WireName: "threat_start_time"},
+	"ThreatState":       ubx.FieldSpec{WireName: "threat_state"},
+	"ThreatTitle":       ubx.FieldSpec{WireName: "threat_title"},
+	"ThreatUri":         ubx.FieldSpec{WireName: "threat_uri"},
+}
 
 var BmsRecoveryPointResource_PropertiesFields = ubx.FieldMap{
-		"ObjectType": ubx.FieldSpec{WireName: "object_type"},
-		"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
-		"ThreatInfo": ubx.FieldSpec{
-			WireName: "threat_info",
-			Kind: "list",
-			Fields: BmsRecoveryPointResource_Properties_ThreatInfoFields,
-		},
-		"ThreatStatus": ubx.FieldSpec{WireName: "threat_status"},
-	}
+	"ObjectType":                     ubx.FieldSpec{WireName: "object_type"},
+	"ResourceGuardOperationRequests": ubx.FieldSpec{WireName: "resource_guard_operation_requests"},
+	"ThreatInfo": ubx.FieldSpec{
+		WireName: "threat_info",
+		Kind:     "list",
+		Fields:   BmsRecoveryPointResource_Properties_ThreatInfoFields,
+	},
+	"ThreatStatus": ubx.FieldSpec{WireName: "threat_status"},
+}
 
 type BmsRecoveryPointResourceConfig struct {
 	// Optional ETag.
@@ -95,12 +95,12 @@ type BmsRecoveryPointResourceAttrs struct {
 var BmsRecoveryPointResource = ubx.ResourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_recovery_point_resource",
 	Fields: ubx.FieldMap{
-		"ETag": ubx.FieldSpec{WireName: "e_tag"},
+		"ETag":     ubx.FieldSpec{WireName: "e_tag"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BmsRecoveryPointResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BmsRecoveryPointResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -9,8 +9,8 @@ type OpenapiComponentContainer_Properties struct {
 }
 
 var OpenapiComponentContainer_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiComponentContainerConfig struct {
 	// Component container definition. <see href="https://docs.microsoft.com/en-us/azure/machine-learning/reference-yaml-component-command" />
@@ -27,8 +27,8 @@ var OpenapiComponentContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiComponentContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiComponentContainer_PropertiesFields,
 		},
 	},
 }

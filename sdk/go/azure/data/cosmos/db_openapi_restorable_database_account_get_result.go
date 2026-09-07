@@ -4,9 +4,9 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiRestorableDatabaseAccountGetResult_Properties_RestorableLocations struct {
-	CreationTime any
-	DeletionTime any
-	LocationName any
+	CreationTime                      any
+	DeletionTime                      any
+	LocationName                      any
 	RegionalDatabaseAccountInstanceId any
 }
 
@@ -27,12 +27,12 @@ type DbOpenapiRestorableDatabaseAccountGetResult_Properties struct {
 
 type DbOpenapiRestorableDatabaseAccountGetResultConfig struct {
 	InstanceId any
-	Location any
+	Location   any
 }
 
 type DbOpenapiRestorableDatabaseAccountGetResultAttrs struct {
 	InstanceId any
-	Location any
+	Location   any
 	// The properties of a restorable database account.
 	Properties any
 }
@@ -41,6 +41,6 @@ var DbOpenapiRestorableDatabaseAccountGetResult = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_restorable_database_account_get_result",
 	Fields: ubx.FieldMap{
 		"InstanceId": ubx.FieldSpec{WireName: "instance_id"},
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"Location":   ubx.FieldSpec{WireName: "location"},
 	},
 }

@@ -32,29 +32,29 @@ type OpenapiIncidentTask_Properties struct {
 }
 
 var OpenapiIncidentTask_Properties_CreatedByFields = ubx.FieldMap{
-		"Email": ubx.FieldSpec{WireName: "email"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"UserPrincipalName": ubx.FieldSpec{WireName: "user_principal_name"},
-	}
+	"Email":             ubx.FieldSpec{WireName: "email"},
+	"Name":              ubx.FieldSpec{WireName: "name"},
+	"ObjectId":          ubx.FieldSpec{WireName: "object_id"},
+	"UserPrincipalName": ubx.FieldSpec{WireName: "user_principal_name"},
+}
 
 var OpenapiIncidentTask_PropertiesFields = ubx.FieldMap{
-		"CreatedBy": ubx.FieldSpec{
-			WireName: "created_by",
-			Kind: "object",
-			Fields: OpenapiIncidentTask_Properties_CreatedByFields,
-		},
-		"CreatedTimeUtc": ubx.FieldSpec{WireName: "created_time_utc"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"LastModifiedBy": ubx.FieldSpec{
-			WireName: "last_modified_by",
-			Kind: "object",
-			Fields: OpenapiIncidentTask_Properties_CreatedByFields,
-		},
-		"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-	}
+	"CreatedBy": ubx.FieldSpec{
+		WireName: "created_by",
+		Kind:     "object",
+		Fields:   OpenapiIncidentTask_Properties_CreatedByFields,
+	},
+	"CreatedTimeUtc": ubx.FieldSpec{WireName: "created_time_utc"},
+	"Description":    ubx.FieldSpec{WireName: "description"},
+	"LastModifiedBy": ubx.FieldSpec{
+		WireName: "last_modified_by",
+		Kind:     "object",
+		Fields:   OpenapiIncidentTask_Properties_CreatedByFields,
+	},
+	"LastModifiedTimeUtc": ubx.FieldSpec{WireName: "last_modified_time_utc"},
+	"Status":              ubx.FieldSpec{WireName: "status"},
+	"Title":               ubx.FieldSpec{WireName: "title"},
+}
 
 type OpenapiIncidentTaskConfig struct {
 	// Etag of the azure resource
@@ -76,8 +76,8 @@ var OpenapiIncidentTask = ubx.ResourceBinding{
 		"Etag": ubx.FieldSpec{WireName: "etag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiIncidentTask_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiIncidentTask_PropertiesFields,
 		},
 	},
 }

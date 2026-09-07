@@ -4,19 +4,19 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciSecuritySettingList_Value_Properties_SecurityComplianceStatus struct {
-	DataAtRestEncrypted any
+	DataAtRestEncrypted    any
 	DataInTransitProtected any
-	LastUpdated any
-	SecuredCoreCompliance any
-	WdacCompliance any
+	LastUpdated            any
+	SecuredCoreCompliance  any
+	WdacCompliance         any
 }
 
 type HciSecuritySettingList_Value_Properties struct {
-	ProvisioningState any
-	SecuredCoreComplianceAssignment any
-	SecurityComplianceStatus any
+	ProvisioningState                                       any
+	SecuredCoreComplianceAssignment                         any
+	SecurityComplianceStatus                                any
 	SmbEncryptionForIntraClusterTrafficComplianceAssignment any
-	WdacComplianceAssignment any
+	WdacComplianceAssignment                                any
 }
 
 type HciSecuritySettingList_Value struct {

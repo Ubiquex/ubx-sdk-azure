@@ -4,17 +4,17 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteBgpServiceCommunityList_Value_Properties_BgpCommunities struct {
-	CommunityName any
-	CommunityPrefixes any
-	CommunityValue any
-	IsAuthorizedToUse any
-	ServiceGroup any
+	CommunityName          any
+	CommunityPrefixes      any
+	CommunityValue         any
+	IsAuthorizedToUse      any
+	ServiceGroup           any
 	ServiceSupportedRegion any
 }
 
 type ExpressrouteBgpServiceCommunityList_Value_Properties struct {
 	BgpCommunities any
-	ServiceName any
+	ServiceName    any
 }
 
 type ExpressrouteBgpServiceCommunityList_Value struct {
@@ -33,6 +33,5 @@ type ExpressrouteBgpServiceCommunityListAttrs struct {
 
 var ExpressrouteBgpServiceCommunityList = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_bgp_service_community_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

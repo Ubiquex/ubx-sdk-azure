@@ -6,21 +6,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiReservationDetailList_Value_Properties struct {
 	InstanceFlexibilityGroup any
 	InstanceFlexibilityRatio any
-	InstanceId any
-	Kind any
-	ReservationId any
-	ReservationOrderId any
-	ReservedHours any
-	SkuName any
-	TotalReservedQuantity any
-	UsageDate any
-	UsedHours any
+	InstanceId               any
+	Kind                     any
+	ReservationId            any
+	ReservationOrderId       any
+	ReservedHours            any
+	SkuName                  any
+	TotalReservedQuantity    any
+	UsageDate                any
+	UsedHours                any
 }
 
 type OpenapiReservationDetailList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type OpenapiReservationDetailListConfig struct {
@@ -29,7 +29,7 @@ type OpenapiReservationDetailListConfig struct {
 
 type OpenapiReservationDetailListAttrs struct {
 	// The link (url) to the next page of results.
-	NextLink any
+	NextLink           any
 	ReservationOrderId any
 	// The list of reservation details.
 	Value any

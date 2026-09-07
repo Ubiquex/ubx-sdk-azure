@@ -4,8 +4,8 @@ package newrelic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OrganizationResourceList_Value_Properties struct {
-	BillingSource any
-	OrganizationId any
+	BillingSource    any
+	OrganizationId   any
 	OrganizationName any
 }
 
@@ -14,14 +14,14 @@ type OrganizationResourceList_Value struct {
 }
 
 type OrganizationResourceListConfig struct {
-	Location any
+	Location  any
 	UserEmail any
 }
 
 type OrganizationResourceListAttrs struct {
 	Location any
 	// The link to the next page of items
-	NextLink any
+	NextLink  any
 	UserEmail any
 	// The OrganizationResource items on this page
 	Value any
@@ -30,7 +30,7 @@ type OrganizationResourceListAttrs struct {
 var OrganizationResourceList = ubx.DataSourceBinding{
 	WireType: "azure_newrelic_organization_resource_list",
 	Fields: ubx.FieldMap{
-		"Location": ubx.FieldSpec{WireName: "location"},
+		"Location":  ubx.FieldSpec{WireName: "location"},
 		"UserEmail": ubx.FieldSpec{WireName: "user_email"},
 	},
 }

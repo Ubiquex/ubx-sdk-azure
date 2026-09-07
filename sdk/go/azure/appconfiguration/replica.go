@@ -26,9 +26,9 @@ type Replica_SystemData struct {
 }
 
 var Replica_PropertiesFields = ubx.FieldMap{
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Endpoint":          ubx.FieldSpec{WireName: "endpoint"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ReplicaConfig struct {
 	// The location of the replica.
@@ -58,8 +58,8 @@ var Replica = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Replica_PropertiesFields,
+			Kind:     "object",
+			Fields:   Replica_PropertiesFields,
 		},
 	},
 }

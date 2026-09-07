@@ -8,47 +8,47 @@ type OpenapiSavingsPlanOrderModelList_Value_Properties_ExtendedStatusInfo_Proper
 }
 
 type OpenapiSavingsPlanOrderModelList_Value_Properties_ExtendedStatusInfo struct {
-	Message any
+	Message    any
 	Properties any
 	StatusCode any
 }
 
 type OpenapiSavingsPlanOrderModelList_Value_Properties_PlanInformation_PricingCurrencyTotal struct {
-	Amount any
+	Amount       any
 	CurrencyCode any
 }
 
 type OpenapiSavingsPlanOrderModelList_Value_Properties_PlanInformation_Transactions struct {
 	BillingCurrencyTotal any
-	DueDate any
-	ExtendedStatusInfo any
-	PaymentDate any
+	DueDate              any
+	ExtendedStatusInfo   any
+	PaymentDate          any
 	PricingCurrencyTotal any
-	Status any
+	Status               any
 }
 
 type OpenapiSavingsPlanOrderModelList_Value_Properties_PlanInformation struct {
-	NextPaymentDueDate any
+	NextPaymentDueDate   any
 	PricingCurrencyTotal any
-	StartDate any
-	Transactions any
+	StartDate            any
+	Transactions         any
 }
 
 type OpenapiSavingsPlanOrderModelList_Value_Properties struct {
-	BenefitStartTime any
-	BillingAccountId any
-	BillingPlan any
-	BillingProfileId any
-	BillingScopeId any
-	CustomerId any
-	DisplayName any
-	ExpiryDateTime any
+	BenefitStartTime   any
+	BillingAccountId   any
+	BillingPlan        any
+	BillingProfileId   any
+	BillingScopeId     any
+	CustomerId         any
+	DisplayName        any
+	ExpiryDateTime     any
 	ExtendedStatusInfo any
-	PlanInformation any
-	ProductCode any
-	ProvisioningState any
-	SavingsPlans any
-	Term any
+	PlanInformation    any
+	ProductCode        any
+	ProvisioningState  any
+	SavingsPlans       any
+	Term               any
 }
 
 type OpenapiSavingsPlanOrderModelList_Value_Sku struct {
@@ -57,23 +57,23 @@ type OpenapiSavingsPlanOrderModelList_Value_Sku struct {
 
 type OpenapiSavingsPlanOrderModelList_Value struct {
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiSavingsPlanOrderModelListConfig struct {
 	BillingAccountName any
-	Filter any
-	OrderBy any
-	Skiptoken any
+	Filter             any
+	OrderBy            any
+	Skiptoken          any
 }
 
 type OpenapiSavingsPlanOrderModelListAttrs struct {
 	BillingAccountName any
-	Filter any
+	Filter             any
 	// The link to the next page of items
-	NextLink any
-	OrderBy any
+	NextLink  any
+	OrderBy   any
 	Skiptoken any
 	// The SavingsPlanOrderModel items on this page
 	Value any
@@ -83,8 +83,8 @@ var OpenapiSavingsPlanOrderModelList = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_savings_plan_order_model_list",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"OrderBy": ubx.FieldSpec{WireName: "order_by"},
-		"Skiptoken": ubx.FieldSpec{WireName: "skiptoken"},
+		"Filter":             ubx.FieldSpec{WireName: "filter"},
+		"OrderBy":            ubx.FieldSpec{WireName: "order_by"},
+		"Skiptoken":          ubx.FieldSpec{WireName: "skiptoken"},
 	},
 }

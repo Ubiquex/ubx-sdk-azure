@@ -11,9 +11,9 @@ type SqlpoolGeoBackupPolicy_Properties struct {
 }
 
 var SqlpoolGeoBackupPolicy_PropertiesFields = ubx.FieldMap{
-		"State": ubx.FieldSpec{WireName: "state"},
-		"StorageType": ubx.FieldSpec{WireName: "storage_type"},
-	}
+	"State":       ubx.FieldSpec{WireName: "state"},
+	"StorageType": ubx.FieldSpec{WireName: "storage_type"},
+}
 
 type SqlpoolGeoBackupPolicyConfig struct {
 	// The properties of the geo backup policy.
@@ -34,8 +34,8 @@ var SqlpoolGeoBackupPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolGeoBackupPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolGeoBackupPolicy_PropertiesFields,
 		},
 	},
 }

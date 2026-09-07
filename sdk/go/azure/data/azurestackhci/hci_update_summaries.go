@@ -4,32 +4,32 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciUpdateSummaries_Properties_HealthCheckResult_Tags struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type HciUpdateSummaries_Properties_HealthCheckResult struct {
-	AdditionalData any
-	Description any
-	DisplayName any
-	HealthCheckSource any
-	HealthCheckTags any
-	Name any
-	Remediation any
-	Severity any
-	Status any
-	Tags any
-	TargetResourceId any
+	AdditionalData     any
+	Description        any
+	DisplayName        any
+	HealthCheckSource  any
+	HealthCheckTags    any
+	Name               any
+	Remediation        any
+	Severity           any
+	Status             any
+	Tags               any
+	TargetResourceId   any
 	TargetResourceName any
 	TargetResourceType any
-	Timestamp any
-	Title any
+	Timestamp          any
+	Title              any
 }
 
 type HciUpdateSummaries_Properties_PackageVersions struct {
 	LastUpdated any
 	PackageType any
-	Version any
+	Version     any
 }
 
 type HciUpdateSummaries_Properties struct {

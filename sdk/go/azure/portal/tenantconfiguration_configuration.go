@@ -11,9 +11,9 @@ type TenantconfigurationConfiguration_Properties struct {
 }
 
 var TenantconfigurationConfiguration_PropertiesFields = ubx.FieldMap{
-		"EnforcePrivateMarkdownStorage": ubx.FieldSpec{WireName: "enforce_private_markdown_storage"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"EnforcePrivateMarkdownStorage": ubx.FieldSpec{WireName: "enforce_private_markdown_storage"},
+	"ProvisioningState":             ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type TenantconfigurationConfigurationConfig struct {
 	// Tenant Configuration Properties with Provisioning state
@@ -30,8 +30,8 @@ var TenantconfigurationConfiguration = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: TenantconfigurationConfiguration_PropertiesFields,
+			Kind:     "object",
+			Fields:   TenantconfigurationConfiguration_PropertiesFields,
 		},
 	},
 }

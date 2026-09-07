@@ -5,45 +5,45 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PartnerConfigurationList_Value_Properties_PartnerAuthorization_AuthorizedPartnersList struct {
 	AuthorizationExpirationTimeInUtc any
-	PartnerName any
-	PartnerRegistrationImmutableId any
+	PartnerName                      any
+	PartnerRegistrationImmutableId   any
 }
 
 type PartnerConfigurationList_Value_Properties_PartnerAuthorization struct {
-	AuthorizedPartnersList any
+	AuthorizedPartnersList             any
 	DefaultMaximumExpirationTimeInDays any
 }
 
 type PartnerConfigurationList_Value_Properties struct {
 	PartnerAuthorization any
-	ProvisioningState any
+	ProvisioningState    any
 }
 
 type PartnerConfigurationList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type PartnerConfigurationList_Value struct {
-	Location any
+	Location   any
 	Properties any
 	SystemData any
-	Tags any
+	Tags       any
 }
 
 type PartnerConfigurationListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type PartnerConfigurationListAttrs struct {
 	ApiVersion any
 	// A link for the next page of partner configurations.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// A collection of partner configurations.
 	Value any
@@ -52,7 +52,7 @@ type PartnerConfigurationListAttrs struct {
 var PartnerConfigurationList = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_partner_configuration_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

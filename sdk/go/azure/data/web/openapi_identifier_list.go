@@ -8,7 +8,7 @@ type OpenapiIdentifierList_Value_Properties struct {
 }
 
 type OpenapiIdentifierList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

@@ -54,7 +54,7 @@ type OpenapiSoftwareUpdateConfigurationRun_Properties struct {
 }
 
 type OpenapiSoftwareUpdateConfigurationRunConfig struct {
-	AutomationAccountName any
+	AutomationAccountName            any
 	SoftwareUpdateConfigurationRunId any
 }
 
@@ -65,14 +65,14 @@ type OpenapiSoftwareUpdateConfigurationRunAttrs struct {
 	// Name of the software update configuration run.
 	Name any
 	// Software update configuration properties.
-	Properties any
+	Properties                       any
 	SoftwareUpdateConfigurationRunId any
 }
 
 var OpenapiSoftwareUpdateConfigurationRun = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_software_update_configuration_run",
 	Fields: ubx.FieldMap{
-		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
+		"AutomationAccountName":            ubx.FieldSpec{WireName: "automation_account_name"},
 		"SoftwareUpdateConfigurationRunId": ubx.FieldSpec{WireName: "software_update_configuration_run_id"},
 	},
 }

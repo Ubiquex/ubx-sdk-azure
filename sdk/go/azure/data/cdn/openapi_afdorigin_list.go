@@ -8,29 +8,29 @@ type OpenapiAfdoriginList_Value_Properties_AzureOrigin struct {
 }
 
 type OpenapiAfdoriginList_Value_Properties_SharedPrivateLinkResource struct {
-	GroupId any
-	PrivateLink any
+	GroupId             any
+	PrivateLink         any
 	PrivateLinkLocation any
-	RequestMessage any
-	Status any
+	RequestMessage      any
+	Status              any
 }
 
 type OpenapiAfdoriginList_Value_Properties struct {
-	AzureOrigin any
+	AzureOrigin                        any
 	CertificateNameCheckValidationMode any
-	CustomCertificateSubjects any
-	DeploymentStatus any
-	EnabledState any
-	EnforceCertificateNameCheck any
-	HostName any
-	HttpPort any
-	HttpsPort any
-	OriginGroupName any
-	OriginHostHeader any
-	Priority any
-	ProvisioningState any
-	SharedPrivateLinkResource any
-	Weight any
+	CustomCertificateSubjects          any
+	DeploymentStatus                   any
+	EnabledState                       any
+	EnforceCertificateNameCheck        any
+	HostName                           any
+	HttpPort                           any
+	HttpsPort                          any
+	OriginGroupName                    any
+	OriginHostHeader                   any
+	Priority                           any
+	ProvisioningState                  any
+	SharedPrivateLinkResource          any
+	Weight                             any
 }
 
 type OpenapiAfdoriginList_Value struct {
@@ -39,14 +39,14 @@ type OpenapiAfdoriginList_Value struct {
 
 type OpenapiAfdoriginListConfig struct {
 	OriginGroupName any
-	ProfileName any
+	ProfileName     any
 }
 
 type OpenapiAfdoriginListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink        any
 	OriginGroupName any
-	ProfileName any
+	ProfileName     any
 	// The AFDOrigin items on this page
 	Value any
 }
@@ -55,6 +55,6 @@ var OpenapiAfdoriginList = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_afdorigin_list",
 	Fields: ubx.FieldMap{
 		"OriginGroupName": ubx.FieldSpec{WireName: "origin_group_name"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+		"ProfileName":     ubx.FieldSpec{WireName: "profile_name"},
 	},
 }

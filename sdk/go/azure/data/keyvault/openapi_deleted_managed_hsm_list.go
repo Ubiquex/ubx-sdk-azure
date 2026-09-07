@@ -4,12 +4,12 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDeletedManagedHsmList_Value_Properties struct {
-	DeletionDate any
-	Location any
-	MhsmId any
+	DeletionDate           any
+	Location               any
+	MhsmId                 any
 	PurgeProtectionEnabled any
-	ScheduledPurgeDate any
-	Tags any
+	ScheduledPurgeDate     any
+	Tags                   any
 }
 
 type OpenapiDeletedManagedHsmList_Value struct {
@@ -28,6 +28,5 @@ type OpenapiDeletedManagedHsmListAttrs struct {
 
 var OpenapiDeletedManagedHsmList = ubx.DataSourceBinding{
 	WireType: "azure_keyvault_openapi_deleted_managed_hsm_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

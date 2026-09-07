@@ -13,6 +13,5 @@ type AppliancesApplianceGetTelemetryConfigResultAttrs struct {
 
 var AppliancesApplianceGetTelemetryConfigResult = ubx.DataSourceBinding{
 	WireType: "azure_resourceconnector_appliances_appliance_get_telemetry_config_result",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

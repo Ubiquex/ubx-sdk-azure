@@ -18,25 +18,25 @@ type List_Value_Properties_StorageProfile_DataDisks struct {
 
 type List_Value_Properties_StorageProfile_OsDisk struct {
 	OsState any
-	OsType any
+	OsType  any
 }
 
 type List_Value_Properties_StorageProfile struct {
-	DataDisks any
-	OsDisk any
+	DataDisks     any
+	OsDisk        any
 	ZoneResilient any
 }
 
 type List_Value_Properties struct {
-	HyperVgeneration any
-	ProvisioningState any
+	HyperVgeneration     any
+	ProvisioningState    any
 	SourceVirtualMachine any
-	StorageProfile any
+	StorageProfile       any
 }
 
 type List_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type ListConfig struct {
@@ -51,6 +51,5 @@ type ListAttrs struct {
 
 var List = ubx.DataSourceBinding{
 	WireType: "azure_image_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -13,10 +13,10 @@ type VirtualnetworkrulesVirtualNetworkRule_Properties struct {
 }
 
 var VirtualnetworkrulesVirtualNetworkRule_PropertiesFields = ubx.FieldMap{
-		"IgnoreMissingVnetServiceEndpoint": ubx.FieldSpec{WireName: "ignore_missing_vnet_service_endpoint"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"VirtualNetworkSubnetId": ubx.FieldSpec{WireName: "virtual_network_subnet_id"},
-	}
+	"IgnoreMissingVnetServiceEndpoint": ubx.FieldSpec{WireName: "ignore_missing_vnet_service_endpoint"},
+	"State":                            ubx.FieldSpec{WireName: "state"},
+	"VirtualNetworkSubnetId":           ubx.FieldSpec{WireName: "virtual_network_subnet_id"},
+}
 
 type VirtualnetworkrulesVirtualNetworkRuleConfig struct {
 	// Properties of a virtual network rule.
@@ -33,8 +33,8 @@ var VirtualnetworkrulesVirtualNetworkRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkrulesVirtualNetworkRule_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkrulesVirtualNetworkRule_PropertiesFields,
 		},
 	},
 }

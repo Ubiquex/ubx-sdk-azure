@@ -85,75 +85,75 @@ type OpenapiKubeEnvironment_Properties struct {
 }
 
 var OpenapiKubeEnvironment_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var OpenapiKubeEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfigurationFields = ubx.FieldMap{
-		"CustomerId": ubx.FieldSpec{WireName: "customer_id"},
-		"SharedKey": ubx.FieldSpec{WireName: "shared_key"},
-	}
+	"CustomerId": ubx.FieldSpec{WireName: "customer_id"},
+	"SharedKey":  ubx.FieldSpec{WireName: "shared_key"},
+}
 
 var OpenapiKubeEnvironment_Properties_AppLogsConfigurationFields = ubx.FieldMap{
-		"Destination": ubx.FieldSpec{WireName: "destination"},
-		"LogAnalyticsConfiguration": ubx.FieldSpec{
-			WireName: "log_analytics_configuration",
-			Kind: "object",
-			Fields: OpenapiKubeEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfigurationFields,
-		},
-	}
+	"Destination": ubx.FieldSpec{WireName: "destination"},
+	"LogAnalyticsConfiguration": ubx.FieldSpec{
+		WireName: "log_analytics_configuration",
+		Kind:     "object",
+		Fields:   OpenapiKubeEnvironment_Properties_AppLogsConfiguration_LogAnalyticsConfigurationFields,
+	},
+}
 
 var OpenapiKubeEnvironment_Properties_ArcConfiguration_FrontEndServiceConfigurationFields = ubx.FieldMap{
-		"Kind": ubx.FieldSpec{WireName: "kind"},
-	}
+	"Kind": ubx.FieldSpec{WireName: "kind"},
+}
 
 var OpenapiKubeEnvironment_Properties_ArcConfigurationFields = ubx.FieldMap{
-		"ArtifactStorageAccessMode": ubx.FieldSpec{WireName: "artifact_storage_access_mode"},
-		"ArtifactStorageClassName": ubx.FieldSpec{WireName: "artifact_storage_class_name"},
-		"ArtifactStorageMountPath": ubx.FieldSpec{WireName: "artifact_storage_mount_path"},
-		"ArtifactStorageNodeName": ubx.FieldSpec{WireName: "artifact_storage_node_name"},
-		"ArtifactsStorageType": ubx.FieldSpec{WireName: "artifacts_storage_type"},
-		"FrontEndServiceConfiguration": ubx.FieldSpec{
-			WireName: "front_end_service_configuration",
-			Kind: "object",
-			Fields: OpenapiKubeEnvironment_Properties_ArcConfiguration_FrontEndServiceConfigurationFields,
-		},
-		"KubeConfig": ubx.FieldSpec{WireName: "kube_config"},
-	}
+	"ArtifactStorageAccessMode": ubx.FieldSpec{WireName: "artifact_storage_access_mode"},
+	"ArtifactStorageClassName":  ubx.FieldSpec{WireName: "artifact_storage_class_name"},
+	"ArtifactStorageMountPath":  ubx.FieldSpec{WireName: "artifact_storage_mount_path"},
+	"ArtifactStorageNodeName":   ubx.FieldSpec{WireName: "artifact_storage_node_name"},
+	"ArtifactsStorageType":      ubx.FieldSpec{WireName: "artifacts_storage_type"},
+	"FrontEndServiceConfiguration": ubx.FieldSpec{
+		WireName: "front_end_service_configuration",
+		Kind:     "object",
+		Fields:   OpenapiKubeEnvironment_Properties_ArcConfiguration_FrontEndServiceConfigurationFields,
+	},
+	"KubeConfig": ubx.FieldSpec{WireName: "kube_config"},
+}
 
 var OpenapiKubeEnvironment_Properties_ContainerAppsConfigurationFields = ubx.FieldMap{
-		"AppSubnetResourceId": ubx.FieldSpec{WireName: "app_subnet_resource_id"},
-		"ControlPlaneSubnetResourceId": ubx.FieldSpec{WireName: "control_plane_subnet_resource_id"},
-		"DaprAiinstrumentationKey": ubx.FieldSpec{WireName: "dapr_aiinstrumentation_key"},
-		"DockerBridgeCidr": ubx.FieldSpec{WireName: "docker_bridge_cidr"},
-		"PlatformReservedCidr": ubx.FieldSpec{WireName: "platform_reserved_cidr"},
-		"PlatformReservedDnsIp": ubx.FieldSpec{WireName: "platform_reserved_dns_ip"},
-	}
+	"AppSubnetResourceId":          ubx.FieldSpec{WireName: "app_subnet_resource_id"},
+	"ControlPlaneSubnetResourceId": ubx.FieldSpec{WireName: "control_plane_subnet_resource_id"},
+	"DaprAiinstrumentationKey":     ubx.FieldSpec{WireName: "dapr_aiinstrumentation_key"},
+	"DockerBridgeCidr":             ubx.FieldSpec{WireName: "docker_bridge_cidr"},
+	"PlatformReservedCidr":         ubx.FieldSpec{WireName: "platform_reserved_cidr"},
+	"PlatformReservedDnsIp":        ubx.FieldSpec{WireName: "platform_reserved_dns_ip"},
+}
 
 var OpenapiKubeEnvironment_PropertiesFields = ubx.FieldMap{
-		"AksResourceId": ubx.FieldSpec{WireName: "aks_resource_id"},
-		"AppLogsConfiguration": ubx.FieldSpec{
-			WireName: "app_logs_configuration",
-			Kind: "object",
-			Fields: OpenapiKubeEnvironment_Properties_AppLogsConfigurationFields,
-		},
-		"ArcConfiguration": ubx.FieldSpec{
-			WireName: "arc_configuration",
-			Kind: "object",
-			Fields: OpenapiKubeEnvironment_Properties_ArcConfigurationFields,
-		},
-		"ContainerAppsConfiguration": ubx.FieldSpec{
-			WireName: "container_apps_configuration",
-			Kind: "object",
-			Fields: OpenapiKubeEnvironment_Properties_ContainerAppsConfigurationFields,
-		},
-		"DefaultDomain": ubx.FieldSpec{WireName: "default_domain"},
-		"DeploymentErrors": ubx.FieldSpec{WireName: "deployment_errors"},
-		"EnvironmentType": ubx.FieldSpec{WireName: "environment_type"},
-		"InternalLoadBalancerEnabled": ubx.FieldSpec{WireName: "internal_load_balancer_enabled"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"StaticIp": ubx.FieldSpec{WireName: "static_ip"},
-	}
+	"AksResourceId": ubx.FieldSpec{WireName: "aks_resource_id"},
+	"AppLogsConfiguration": ubx.FieldSpec{
+		WireName: "app_logs_configuration",
+		Kind:     "object",
+		Fields:   OpenapiKubeEnvironment_Properties_AppLogsConfigurationFields,
+	},
+	"ArcConfiguration": ubx.FieldSpec{
+		WireName: "arc_configuration",
+		Kind:     "object",
+		Fields:   OpenapiKubeEnvironment_Properties_ArcConfigurationFields,
+	},
+	"ContainerAppsConfiguration": ubx.FieldSpec{
+		WireName: "container_apps_configuration",
+		Kind:     "object",
+		Fields:   OpenapiKubeEnvironment_Properties_ContainerAppsConfigurationFields,
+	},
+	"DefaultDomain":               ubx.FieldSpec{WireName: "default_domain"},
+	"DeploymentErrors":            ubx.FieldSpec{WireName: "deployment_errors"},
+	"EnvironmentType":             ubx.FieldSpec{WireName: "environment_type"},
+	"InternalLoadBalancerEnabled": ubx.FieldSpec{WireName: "internal_load_balancer_enabled"},
+	"ProvisioningState":           ubx.FieldSpec{WireName: "provisioning_state"},
+	"StaticIp":                    ubx.FieldSpec{WireName: "static_ip"},
+}
 
 type OpenapiKubeEnvironmentConfig struct {
 	// Extended Location.
@@ -190,15 +190,15 @@ var OpenapiKubeEnvironment = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: OpenapiKubeEnvironment_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   OpenapiKubeEnvironment_ExtendedLocationFields,
 		},
-		"Kind": ubx.FieldSpec{WireName: "kind"},
+		"Kind":     ubx.FieldSpec{WireName: "kind"},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiKubeEnvironment_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiKubeEnvironment_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

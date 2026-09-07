@@ -9,8 +9,8 @@ type OpenapiModelContainer_Properties struct {
 }
 
 var OpenapiModelContainer_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiModelContainerConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -27,8 +27,8 @@ var OpenapiModelContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiModelContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiModelContainer_PropertiesFields,
 		},
 	},
 }

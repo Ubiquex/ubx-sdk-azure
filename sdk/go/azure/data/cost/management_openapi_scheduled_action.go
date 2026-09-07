@@ -58,7 +58,7 @@ type ManagementOpenapiScheduledAction_Properties struct {
 }
 
 type ManagementOpenapiScheduledActionConfig struct {
-	Name any
+	Name  any
 	Scope any
 }
 
@@ -70,13 +70,13 @@ type ManagementOpenapiScheduledActionAttrs struct {
 	Name any
 	// The properties of the scheduled action.
 	Properties any
-	Scope any
+	Scope      any
 }
 
 var ManagementOpenapiScheduledAction = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_scheduled_action",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":  ubx.FieldSpec{WireName: "name"},
 		"Scope": ubx.FieldSpec{WireName: "scope"},
 	},
 }

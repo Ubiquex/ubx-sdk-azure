@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiResourceAnchorList_Value_Properties struct {
 	LinkedCompartmentId any
-	ProvisioningState any
+	ProvisioningState   any
 }
 
 type OpenapiResourceAnchorList_Value struct {
@@ -24,6 +24,5 @@ type OpenapiResourceAnchorListAttrs struct {
 
 var OpenapiResourceAnchorList = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_resource_anchor_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

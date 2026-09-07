@@ -4,30 +4,30 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlUserList_Value_Properties_Identity struct {
-	AppId any
-	ObjectId any
-	PrincipalId any
+	AppId         any
+	ObjectId      any
+	PrincipalId   any
 	PrincipalName any
-	TenantId any
+	TenantId      any
 }
 
 type DtlUserList_Value_Properties_SecretStore struct {
-	KeyVaultId any
+	KeyVaultId  any
 	KeyVaultUri any
 }
 
 type DtlUserList_Value_Properties struct {
-	CreatedDate any
-	Identity any
+	CreatedDate       any
+	Identity          any
 	ProvisioningState any
-	SecretStore any
-	UniqueIdentifier any
+	SecretStore       any
+	UniqueIdentifier  any
 }
 
 type DtlUserList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlUserListConfig struct {

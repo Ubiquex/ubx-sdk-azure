@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DatascannersDataScannerList_Value_Identity struct {
 	PrincipalId any
-	TenantId any
-	Type any
+	TenantId    any
+	Type        any
 }
 
 type DatascannersDataScannerList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -21,7 +21,7 @@ type DatascannersDataScannerListConfig struct {
 type DatascannersDataScannerListAttrs struct {
 	// The URI to fetch the next page.
 	NextLink any
-	ScopeId any
+	ScopeId  any
 	// The list of data scanner resources.
 	Value any
 }

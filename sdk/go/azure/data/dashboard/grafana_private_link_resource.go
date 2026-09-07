@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type GrafanaPrivateLinkResource_Properties struct {
 	// The private link resource group id.
-	GroupId any
+	GroupId           any
 	ProvisioningState any
 	// The private link resource required member names.
 	RequiredMembers any
@@ -15,13 +15,13 @@ type GrafanaPrivateLinkResource_Properties struct {
 
 type GrafanaPrivateLinkResourceConfig struct {
 	PrivateLinkResourceName any
-	WorkspaceName any
+	WorkspaceName           any
 }
 
 type GrafanaPrivateLinkResourceAttrs struct {
 	PrivateLinkResourceName any
 	// Properties of a private link resource.
-	Properties any
+	Properties    any
 	WorkspaceName any
 }
 
@@ -29,6 +29,6 @@ var GrafanaPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_dashboard_grafana_private_link_resource",
 	Fields: ubx.FieldMap{
 		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"WorkspaceName":           ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

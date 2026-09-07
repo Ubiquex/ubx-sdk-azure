@@ -8,19 +8,19 @@ type LoadbalancerProbeList_Value_Properties_LoadBalancingRules struct {
 }
 
 type LoadbalancerProbeList_Value_Properties struct {
-	IntervalInSeconds any
-	LoadBalancingRules any
+	IntervalInSeconds         any
+	LoadBalancingRules        any
 	NoHealthyBackendsBehavior any
-	NumberOfProbes any
-	Port any
-	ProbeThreshold any
-	Protocol any
-	ProvisioningState any
-	RequestPath any
+	NumberOfProbes            any
+	Port                      any
+	ProbeThreshold            any
+	Protocol                  any
+	ProvisioningState         any
+	RequestPath               any
 }
 
 type LoadbalancerProbeList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

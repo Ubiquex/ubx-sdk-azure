@@ -5,17 +5,17 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VdiHealthCheckStatusDetailsList_Value_Properties_HealthChecks struct {
 	AdditionalDetails any
-	DisplayName any
-	EndDateTime any
-	ErrorType any
+	DisplayName       any
+	EndDateTime       any
+	ErrorType         any
 	RecommendedAction any
-	StartDateTime any
-	Status any
+	StartDateTime     any
+	Status            any
 }
 
 type VdiHealthCheckStatusDetailsList_Value_Properties struct {
-	EndDateTime any
-	HealthChecks any
+	EndDateTime   any
+	HealthChecks  any
 	StartDateTime any
 }
 
@@ -35,6 +35,5 @@ type VdiHealthCheckStatusDetailsListAttrs struct {
 
 var VdiHealthCheckStatusDetailsList = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_vdi_health_check_status_details_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAuthConfigList_Value_Properties_EncryptionSettings struct {
 	ContainerAppAuthEncryptionSecretName any
-	ContainerAppAuthSigningSecretName any
+	ContainerAppAuthSigningSecretName    any
 }
 
 type OpenapiAuthConfigList_Value_Properties_GlobalValidation struct {
-	ExcludedPaths any
-	RedirectToProvider any
+	ExcludedPaths               any
+	RedirectToProvider          any
 	UnauthenticatedClientAction any
 }
 
 type OpenapiAuthConfigList_Value_Properties_HttpSettings_ForwardProxy struct {
-	Convention any
-	CustomHostHeaderName any
+	Convention            any
+	CustomHostHeaderName  any
 	CustomProtoHeaderName any
 }
 
@@ -27,7 +27,7 @@ type OpenapiAuthConfigList_Value_Properties_HttpSettings_Routes struct {
 type OpenapiAuthConfigList_Value_Properties_HttpSettings struct {
 	ForwardProxy any
 	RequireHttps any
-	Routes any
+	Routes       any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Apple_Login struct {
@@ -35,57 +35,57 @@ type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Apple_Login struct
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Apple_Registration struct {
-	ClientId any
+	ClientId                any
 	ClientSecretSettingName any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Apple struct {
-	Enabled any
-	Login any
+	Enabled      any
+	Login        any
 	Registration any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureActiveDirectory_Login struct {
 	DisableWwwauthenticate any
-	LoginParameters any
+	LoginParameters        any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureActiveDirectory_Registration struct {
-	ClientId any
-	ClientSecretCertificateIssuer any
+	ClientId                                      any
+	ClientSecretCertificateIssuer                 any
 	ClientSecretCertificateSubjectAlternativeName any
-	ClientSecretCertificateThumbprint any
-	ClientSecretSettingName any
-	OpenIdIssuer any
+	ClientSecretCertificateThumbprint             any
+	ClientSecretSettingName                       any
+	OpenIdIssuer                                  any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureActiveDirectory_Validation_DefaultAuthorizationPolicy_AllowedPrincipals struct {
-	Groups any
+	Groups     any
 	Identities any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureActiveDirectory_Validation_DefaultAuthorizationPolicy struct {
 	AllowedApplications any
-	AllowedPrincipals any
+	AllowedPrincipals   any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureActiveDirectory_Validation_JwtClaimChecks struct {
 	AllowedClientApplications any
-	AllowedGroups any
+	AllowedGroups             any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureActiveDirectory_Validation struct {
-	AllowedAudiences any
+	AllowedAudiences           any
 	DefaultAuthorizationPolicy any
-	JwtClaimChecks any
+	JwtClaimChecks             any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureActiveDirectory struct {
-	Enabled any
+	Enabled           any
 	IsAutoProvisioned any
-	Login any
-	Registration any
-	Validation any
+	Login             any
+	Registration      any
+	Validation        any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureStaticWebApps_Registration struct {
@@ -93,50 +93,50 @@ type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureStaticWebApps
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_AzureStaticWebApps struct {
-	Enabled any
+	Enabled      any
 	Registration any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_CustomOpenIdConnectProviders_Login struct {
 	NameClaimType any
-	Scopes any
+	Scopes        any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_ClientCredential struct {
 	ClientSecretSettingName any
-	Method any
+	Method                  any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration_OpenIdConnectConfiguration struct {
-	AuthorizationEndpoint any
-	CertificationUri any
-	Issuer any
-	TokenEndpoint any
+	AuthorizationEndpoint        any
+	CertificationUri             any
+	Issuer                       any
+	TokenEndpoint                any
 	WellKnownOpenIdConfiguration any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_CustomOpenIdConnectProviders_Registration struct {
-	ClientCredential any
-	ClientId any
+	ClientCredential           any
+	ClientId                   any
 	OpenIdConnectConfiguration any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_CustomOpenIdConnectProviders struct {
-	Enabled any
-	Login any
+	Enabled      any
+	Login        any
 	Registration any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Facebook_Registration struct {
-	AppId any
+	AppId                any
 	AppSecretSettingName any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Facebook struct {
-	Enabled any
+	Enabled         any
 	GraphApiVersion any
-	Login any
-	Registration any
+	Login           any
+	Registration    any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Google_Validation struct {
@@ -144,41 +144,41 @@ type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Google_Validation 
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Google struct {
-	Enabled any
-	Login any
+	Enabled      any
+	Login        any
 	Registration any
-	Validation any
+	Validation   any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Twitter_Registration struct {
-	ConsumerKey any
+	ConsumerKey               any
 	ConsumerSecretSettingName any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders_Twitter struct {
-	Enabled any
+	Enabled      any
 	Registration any
 }
 
 type OpenapiAuthConfigList_Value_Properties_IdentityProviders struct {
-	Apple any
-	AzureActiveDirectory any
-	AzureStaticWebApps any
+	Apple                        any
+	AzureActiveDirectory         any
+	AzureStaticWebApps           any
 	CustomOpenIdConnectProviders any
-	Facebook any
-	GitHub any
-	Google any
-	Twitter any
+	Facebook                     any
+	GitHub                       any
+	Google                       any
+	Twitter                      any
 }
 
 type OpenapiAuthConfigList_Value_Properties_Login_CookieExpiration struct {
-	Convention any
+	Convention       any
 	TimeToExpiration any
 }
 
 type OpenapiAuthConfigList_Value_Properties_Login_Nonce struct {
 	NonceExpirationInterval any
-	ValidateNonce any
+	ValidateNonce           any
 }
 
 type OpenapiAuthConfigList_Value_Properties_Login_Routes struct {
@@ -190,32 +190,32 @@ type OpenapiAuthConfigList_Value_Properties_Login_TokenStore_AzureBlobStorage st
 }
 
 type OpenapiAuthConfigList_Value_Properties_Login_TokenStore struct {
-	AzureBlobStorage any
-	Enabled any
+	AzureBlobStorage           any
+	Enabled                    any
 	TokenRefreshExtensionHours any
 }
 
 type OpenapiAuthConfigList_Value_Properties_Login struct {
-	AllowedExternalRedirectUrls any
-	CookieExpiration any
-	Nonce any
+	AllowedExternalRedirectUrls   any
+	CookieExpiration              any
+	Nonce                         any
 	PreserveUrlFragmentsForLogins any
-	Routes any
-	TokenStore any
+	Routes                        any
+	TokenStore                    any
 }
 
 type OpenapiAuthConfigList_Value_Properties_Platform struct {
-	Enabled any
+	Enabled        any
 	RuntimeVersion any
 }
 
 type OpenapiAuthConfigList_Value_Properties struct {
 	EncryptionSettings any
-	GlobalValidation any
-	HttpSettings any
-	IdentityProviders any
-	Login any
-	Platform any
+	GlobalValidation   any
+	HttpSettings       any
+	IdentityProviders  any
+	Login              any
+	Platform           any
 }
 
 type OpenapiAuthConfigList_Value struct {

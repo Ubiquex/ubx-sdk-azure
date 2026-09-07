@@ -11,9 +11,9 @@ type TrafficcontrollerFrontend_Properties struct {
 }
 
 var TrafficcontrollerFrontend_PropertiesFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Fqdn":              ubx.FieldSpec{WireName: "fqdn"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type TrafficcontrollerFrontendConfig struct {
 	// The geo-location where the resource lives
@@ -39,8 +39,8 @@ var TrafficcontrollerFrontend = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: TrafficcontrollerFrontend_PropertiesFields,
+			Kind:     "object",
+			Fields:   TrafficcontrollerFrontend_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

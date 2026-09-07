@@ -17,23 +17,23 @@ type VirtualMachine_Properties struct {
 }
 
 type VirtualMachineConfig struct {
-	ClusterName any
+	ClusterName      any
 	PrivateCloudName any
 	VirtualMachineId any
 }
 
 type VirtualMachineAttrs struct {
-	ClusterName any
+	ClusterName      any
 	PrivateCloudName any
 	// Virtual Machine Properties
-	Properties any
+	Properties       any
 	VirtualMachineId any
 }
 
 var VirtualMachine = ubx.DataSourceBinding{
 	WireType: "azure_vmware_virtual_machine",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":      ubx.FieldSpec{WireName: "cluster_name"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 		"VirtualMachineId": ubx.FieldSpec{WireName: "virtual_machine_id"},
 	},

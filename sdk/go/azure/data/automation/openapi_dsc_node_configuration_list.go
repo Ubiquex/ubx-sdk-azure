@@ -8,12 +8,12 @@ type OpenapiDscNodeConfigurationList_Value_Properties_Configuration struct {
 }
 
 type OpenapiDscNodeConfigurationList_Value_Properties struct {
-	Configuration any
-	CreationTime any
+	Configuration                   any
+	CreationTime                    any
 	IncrementNodeConfigurationBuild any
-	LastModifiedTime any
-	NodeCount any
-	Source any
+	LastModifiedTime                any
+	NodeCount                       any
+	Source                          any
 }
 
 type OpenapiDscNodeConfigurationList_Value struct {

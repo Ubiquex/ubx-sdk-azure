@@ -5,10 +5,10 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimcontenttypesContentTypeContractList_Value_Properties struct {
 	Description any
-	Id any
-	Name any
-	Schema any
-	Version any
+	Id          any
+	Name        any
+	Schema      any
+	Version     any
 }
 
 type ApimcontenttypesContentTypeContractList_Value struct {
@@ -27,6 +27,5 @@ type ApimcontenttypesContentTypeContractListAttrs struct {
 
 var ApimcontenttypesContentTypeContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimcontenttypes_content_type_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

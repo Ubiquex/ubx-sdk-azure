@@ -13,10 +13,10 @@ type LinksResourceLink_Properties struct {
 }
 
 var LinksResourceLink_PropertiesFields = ubx.FieldMap{
-		"Notes": ubx.FieldSpec{WireName: "notes"},
-		"SourceId": ubx.FieldSpec{WireName: "source_id"},
-		"TargetId": ubx.FieldSpec{WireName: "target_id"},
-	}
+	"Notes":    ubx.FieldSpec{WireName: "notes"},
+	"SourceId": ubx.FieldSpec{WireName: "source_id"},
+	"TargetId": ubx.FieldSpec{WireName: "target_id"},
+}
 
 type LinksResourceLinkConfig struct {
 	// The resource link properties.
@@ -39,8 +39,8 @@ var LinksResourceLink = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: LinksResourceLink_PropertiesFields,
+			Kind:     "object",
+			Fields:   LinksResourceLink_PropertiesFields,
 		},
 	},
 }

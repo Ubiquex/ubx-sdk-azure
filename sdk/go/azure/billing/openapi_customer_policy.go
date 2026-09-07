@@ -24,21 +24,21 @@ type OpenapiCustomerPolicy_Properties struct {
 }
 
 var OpenapiCustomerPolicy_Properties_PoliciesFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PolicyType": ubx.FieldSpec{WireName: "policy_type"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"PolicyType": ubx.FieldSpec{WireName: "policy_type"},
+	"Scope":      ubx.FieldSpec{WireName: "scope"},
+	"Value":      ubx.FieldSpec{WireName: "value"},
+}
 
 var OpenapiCustomerPolicy_PropertiesFields = ubx.FieldMap{
-		"Policies": ubx.FieldSpec{
-			WireName: "policies",
-			Kind: "list",
-			Fields: OpenapiCustomerPolicy_Properties_PoliciesFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ViewCharges": ubx.FieldSpec{WireName: "view_charges"},
-	}
+	"Policies": ubx.FieldSpec{
+		WireName: "policies",
+		Kind:     "list",
+		Fields:   OpenapiCustomerPolicy_Properties_PoliciesFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ViewCharges":       ubx.FieldSpec{WireName: "view_charges"},
+}
 
 type OpenapiCustomerPolicyConfig struct {
 	// A policy at customer scope.
@@ -59,8 +59,8 @@ var OpenapiCustomerPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCustomerPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCustomerPolicy_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -5,18 +5,18 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiContentConfig struct {
 	AutomationAccountName any
-	ConfigurationName any
+	ConfigurationName     any
 }
 
 type OpenapiContentAttrs struct {
 	AutomationAccountName any
-	ConfigurationName any
+	ConfigurationName     any
 }
 
 var OpenapiContent = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_content",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"ConfigurationName": ubx.FieldSpec{WireName: "configuration_name"},
+		"ConfigurationName":     ubx.FieldSpec{WireName: "configuration_name"},
 	},
 }

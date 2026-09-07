@@ -4,61 +4,61 @@ package postgresql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiServerList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiServerList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiServerList_Value_Properties_AuthConfig struct {
 	ActiveDirectoryAuth any
-	PasswordAuth any
-	TenantId any
+	PasswordAuth        any
+	TenantId            any
 }
 
 type OpenapiServerList_Value_Properties_Backup struct {
 	BackupRetentionDays any
 	EarliestRestoreDate any
-	GeoRedundantBackup any
+	GeoRedundantBackup  any
 }
 
 type OpenapiServerList_Value_Properties_Cluster struct {
-	ClusterSize any
+	ClusterSize         any
 	DefaultDatabaseName any
 }
 
 type OpenapiServerList_Value_Properties_DataEncryption struct {
-	GeoBackupEncryptionKeyStatus any
-	GeoBackupKeyUri any
+	GeoBackupEncryptionKeyStatus    any
+	GeoBackupKeyUri                 any
 	GeoBackupUserAssignedIdentityId any
-	PrimaryEncryptionKeyStatus any
-	PrimaryKeyUri any
-	PrimaryUserAssignedIdentityId any
-	Type any
+	PrimaryEncryptionKeyStatus      any
+	PrimaryKeyUri                   any
+	PrimaryUserAssignedIdentityId   any
+	Type                            any
 }
 
 type OpenapiServerList_Value_Properties_HighAvailability struct {
-	Mode any
+	Mode                    any
 	StandbyAvailabilityZone any
-	State any
+	State                   any
 }
 
 type OpenapiServerList_Value_Properties_MaintenanceWindow struct {
 	CustomWindow any
-	DayOfWeek any
-	StartHour any
-	StartMinute any
+	DayOfWeek    any
+	StartHour    any
+	StartMinute  any
 }
 
 type OpenapiServerList_Value_Properties_Network struct {
-	DelegatedSubnetResourceId any
+	DelegatedSubnetResourceId   any
 	PrivateDnsZoneArmResourceId any
-	PublicNetworkAccess any
+	PublicNetworkAccess         any
 }
 
 type OpenapiServerList_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -67,15 +67,15 @@ type OpenapiServerList_Value_Properties_PrivateEndpointConnections_Properties_Pr
 
 type OpenapiServerList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiServerList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiServerList_Value_Properties_PrivateEndpointConnections struct {
@@ -83,45 +83,45 @@ type OpenapiServerList_Value_Properties_PrivateEndpointConnections struct {
 }
 
 type OpenapiServerList_Value_Properties_Replica struct {
-	Capacity any
-	PromoteMode any
-	PromoteOption any
+	Capacity         any
+	PromoteMode      any
+	PromoteOption    any
 	ReplicationState any
-	Role any
+	Role             any
 }
 
 type OpenapiServerList_Value_Properties_Storage struct {
-	AutoGrow any
-	Iops any
+	AutoGrow      any
+	Iops          any
 	StorageSizeGb any
-	Throughput any
-	Tier any
-	Type any
+	Throughput    any
+	Tier          any
+	Type          any
 }
 
 type OpenapiServerList_Value_Properties struct {
-	AdministratorLogin any
+	AdministratorLogin         any
 	AdministratorLoginPassword any
-	AuthConfig any
-	AvailabilityZone any
-	Backup any
-	Cluster any
-	CreateMode any
-	DataEncryption any
-	FullyQualifiedDomainName any
-	HighAvailability any
-	MaintenanceWindow any
-	MinorVersion any
-	Network any
-	PointInTimeUtc any
+	AuthConfig                 any
+	AvailabilityZone           any
+	Backup                     any
+	Cluster                    any
+	CreateMode                 any
+	DataEncryption             any
+	FullyQualifiedDomainName   any
+	HighAvailability           any
+	MaintenanceWindow          any
+	MinorVersion               any
+	Network                    any
+	PointInTimeUtc             any
 	PrivateEndpointConnections any
-	Replica any
-	ReplicaCapacity any
-	ReplicationRole any
-	SourceServerResourceId any
-	State any
-	Storage any
-	Version any
+	Replica                    any
+	ReplicaCapacity            any
+	ReplicationRole            any
+	SourceServerResourceId     any
+	State                      any
+	Storage                    any
+	Version                    any
 }
 
 type OpenapiServerList_Value_Sku struct {
@@ -130,9 +130,9 @@ type OpenapiServerList_Value_Sku struct {
 }
 
 type OpenapiServerList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiServerListConfig struct {
@@ -147,6 +147,5 @@ type OpenapiServerListAttrs struct {
 
 var OpenapiServerList = ubx.DataSourceBinding{
 	WireType: "azure_postgresql_openapi_server_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

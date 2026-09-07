@@ -56,8 +56,8 @@ type OpenapiTriggeredWebJob_Properties struct {
 }
 
 type OpenapiTriggeredWebJobConfig struct {
-	Name any
-	Slot any
+	Name       any
+	Slot       any
 	WebJobName any
 }
 
@@ -67,15 +67,15 @@ type OpenapiTriggeredWebJobAttrs struct {
 	Name any
 	// TriggeredWebJob resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 	WebJobName any
 }
 
 var OpenapiTriggeredWebJob = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_triggered_web_job",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
+		"Slot":       ubx.FieldSpec{WireName: "slot"},
 		"WebJobName": ubx.FieldSpec{WireName: "web_job_name"},
 	},
 }

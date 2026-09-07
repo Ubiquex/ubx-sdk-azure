@@ -4,15 +4,15 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSiteContainer_Properties_EnvironmentVariables struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiSiteContainer_Properties_VolumeMounts struct {
 	ContainerMountPath any
-	Data any
-	ReadOnly any
-	VolumeSubPath any
+	Data               any
+	ReadOnly           any
+	VolumeSubPath      any
 }
 
 type OpenapiSiteContainer_Properties struct {
@@ -46,8 +46,8 @@ type OpenapiSiteContainer_Properties struct {
 
 type OpenapiSiteContainerConfig struct {
 	ContainerName any
-	Name any
-	Slot any
+	Name          any
+	Slot          any
 }
 
 type OpenapiSiteContainerAttrs struct {
@@ -57,14 +57,14 @@ type OpenapiSiteContainerAttrs struct {
 	Name any
 	// SiteContainer resource specific properties
 	Properties any
-	Slot any
+	Slot       any
 }
 
 var OpenapiSiteContainer = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_site_container",
 	Fields: ubx.FieldMap{
 		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
+		"Slot":          ubx.FieldSpec{WireName: "slot"},
 	},
 }

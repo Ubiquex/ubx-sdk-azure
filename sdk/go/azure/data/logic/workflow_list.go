@@ -4,14 +4,14 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type WorkflowList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type WorkflowList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,13 +20,13 @@ type WorkflowList_Value_Properties_AccessControl_Actions_AllowedCallerIpAddresse
 }
 
 type WorkflowList_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies_Claims struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type WorkflowList_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies_Policies struct {
 	Claims any
-	Type any
+	Type   any
 }
 
 type WorkflowList_Value_Properties_AccessControl_Actions_OpenAuthenticationPolicies struct {
@@ -34,14 +34,14 @@ type WorkflowList_Value_Properties_AccessControl_Actions_OpenAuthenticationPolic
 }
 
 type WorkflowList_Value_Properties_AccessControl_Actions struct {
-	AllowedCallerIpAddresses any
+	AllowedCallerIpAddresses   any
 	OpenAuthenticationPolicies any
 }
 
 type WorkflowList_Value_Properties_AccessControl struct {
-	Actions any
-	Contents any
-	Triggers any
+	Actions            any
+	Contents           any
+	Triggers           any
 	WorkflowManagement any
 }
 
@@ -51,25 +51,25 @@ type WorkflowList_Value_Properties_EndpointsConfiguration_Connector_AccessEndpoi
 
 type WorkflowList_Value_Properties_EndpointsConfiguration_Connector struct {
 	AccessEndpointIpAddresses any
-	OutgoingIpAddresses any
+	OutgoingIpAddresses       any
 }
 
 type WorkflowList_Value_Properties_EndpointsConfiguration struct {
 	Connector any
-	Workflow any
+	Workflow  any
 }
 
 type WorkflowList_Value_Properties_IntegrationAccount struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type WorkflowList_Value_Properties_Parameters struct {
 	Description any
-	Metadata any
-	Type any
-	Value any
+	Metadata    any
+	Type        any
+	Value       any
 }
 
 type WorkflowList_Value_Properties_Sku struct {
@@ -78,35 +78,35 @@ type WorkflowList_Value_Properties_Sku struct {
 }
 
 type WorkflowList_Value_Properties struct {
-	AccessControl any
-	AccessEndpoint any
-	ChangedTime any
-	CreatedTime any
-	Definition any
-	EndpointsConfiguration any
-	IntegrationAccount any
+	AccessControl                 any
+	AccessEndpoint                any
+	ChangedTime                   any
+	CreatedTime                   any
+	Definition                    any
+	EndpointsConfiguration        any
+	IntegrationAccount            any
 	IntegrationServiceEnvironment any
-	Parameters any
-	ProvisioningState any
-	Sku any
-	State any
-	Version any
+	Parameters                    any
+	ProvisioningState             any
+	Sku                           any
+	State                         any
+	Version                       any
 }
 
 type WorkflowList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
 type WorkflowListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type WorkflowListAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// The list of workflows.
 	Value any
@@ -115,7 +115,7 @@ type WorkflowListAttrs struct {
 var WorkflowList = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

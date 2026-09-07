@@ -40,40 +40,40 @@ type VirtualnetworkPrivateDnsZoneGroup_Properties struct {
 }
 
 var VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties_RecordSetsFields = ubx.FieldMap{
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"IpAddresses": ubx.FieldSpec{WireName: "ip_addresses"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RecordSetName": ubx.FieldSpec{WireName: "record_set_name"},
-		"RecordType": ubx.FieldSpec{WireName: "record_type"},
-		"Ttl": ubx.FieldSpec{WireName: "ttl"},
-	}
+	"Fqdn":              ubx.FieldSpec{WireName: "fqdn"},
+	"IpAddresses":       ubx.FieldSpec{WireName: "ip_addresses"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"RecordSetName":     ubx.FieldSpec{WireName: "record_set_name"},
+	"RecordType":        ubx.FieldSpec{WireName: "record_type"},
+	"Ttl":               ubx.FieldSpec{WireName: "ttl"},
+}
 
 var VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_PropertiesFields = ubx.FieldMap{
-		"PrivateDnsZoneId": ubx.FieldSpec{WireName: "private_dns_zone_id"},
-		"RecordSets": ubx.FieldSpec{
-			WireName: "record_sets",
-			Kind: "list",
-			Fields: VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties_RecordSetsFields,
-		},
-	}
+	"PrivateDnsZoneId": ubx.FieldSpec{WireName: "private_dns_zone_id"},
+	"RecordSets": ubx.FieldSpec{
+		WireName: "record_sets",
+		Kind:     "list",
+		Fields:   VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_Properties_RecordSetsFields,
+	},
+}
 
 var VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigsFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_PropertiesFields,
-		},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigs_PropertiesFields,
+	},
+}
 
 var VirtualnetworkPrivateDnsZoneGroup_PropertiesFields = ubx.FieldMap{
-		"PrivateDnsZoneConfigs": ubx.FieldSpec{
-			WireName: "private_dns_zone_configs",
-			Kind: "list",
-			Fields: VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PrivateDnsZoneConfigs": ubx.FieldSpec{
+		WireName: "private_dns_zone_configs",
+		Kind:     "list",
+		Fields:   VirtualnetworkPrivateDnsZoneGroup_Properties_PrivateDnsZoneConfigsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type VirtualnetworkPrivateDnsZoneGroupConfig struct {
 	// Resource ID.
@@ -98,12 +98,12 @@ type VirtualnetworkPrivateDnsZoneGroupAttrs struct {
 var VirtualnetworkPrivateDnsZoneGroup = ubx.ResourceBinding{
 	WireType: "azure_network_virtualnetwork_private_dns_zone_group",
 	Fields: ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
+		"Id":   ubx.FieldSpec{WireName: "id"},
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: VirtualnetworkPrivateDnsZoneGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   VirtualnetworkPrivateDnsZoneGroup_PropertiesFields,
 		},
 	},
 }

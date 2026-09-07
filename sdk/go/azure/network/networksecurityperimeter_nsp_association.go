@@ -22,24 +22,24 @@ type NetworksecurityperimeterNspAssociation_Properties struct {
 }
 
 var NetworksecurityperimeterNspAssociation_Properties_PrivateLinkResourceFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var NetworksecurityperimeterNspAssociation_PropertiesFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"HasProvisioningIssues": ubx.FieldSpec{WireName: "has_provisioning_issues"},
-		"PrivateLinkResource": ubx.FieldSpec{
-			WireName: "private_link_resource",
-			Kind: "object",
-			Fields: NetworksecurityperimeterNspAssociation_Properties_PrivateLinkResourceFields,
-		},
-		"Profile": ubx.FieldSpec{
-			WireName: "profile",
-			Kind: "object",
-			Fields: NetworksecurityperimeterNspAssociation_Properties_PrivateLinkResourceFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AccessMode":            ubx.FieldSpec{WireName: "access_mode"},
+	"HasProvisioningIssues": ubx.FieldSpec{WireName: "has_provisioning_issues"},
+	"PrivateLinkResource": ubx.FieldSpec{
+		WireName: "private_link_resource",
+		Kind:     "object",
+		Fields:   NetworksecurityperimeterNspAssociation_Properties_PrivateLinkResourceFields,
+	},
+	"Profile": ubx.FieldSpec{
+		WireName: "profile",
+		Kind:     "object",
+		Fields:   NetworksecurityperimeterNspAssociation_Properties_PrivateLinkResourceFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type NetworksecurityperimeterNspAssociationConfig struct {
 	// The resource type-specific configuration for this resource, wrapping every field that isn't part of ARM's own standard envelope (id/name/type/location/tags). (AI-inferred)
@@ -56,8 +56,8 @@ var NetworksecurityperimeterNspAssociation = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworksecurityperimeterNspAssociation_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworksecurityperimeterNspAssociation_PropertiesFields,
 		},
 	},
 }

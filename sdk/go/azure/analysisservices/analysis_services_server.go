@@ -24,21 +24,21 @@ type AnalysisServicesServer_Properties struct {
 }
 
 var AnalysisServicesServer_Properties_SkuFields = ubx.FieldMap{
-		"Capacity": ubx.FieldSpec{WireName: "capacity"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Tier": ubx.FieldSpec{WireName: "tier"},
-	}
+	"Capacity": ubx.FieldSpec{WireName: "capacity"},
+	"Name":     ubx.FieldSpec{WireName: "name"},
+	"Tier":     ubx.FieldSpec{WireName: "tier"},
+}
 
 var AnalysisServicesServer_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ServerFullName": ubx.FieldSpec{WireName: "server_full_name"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: AnalysisServicesServer_Properties_SkuFields,
-		},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ServerFullName":    ubx.FieldSpec{WireName: "server_full_name"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   AnalysisServicesServer_Properties_SkuFields,
+	},
+	"State": ubx.FieldSpec{WireName: "state"},
+}
 
 type AnalysisServicesServerConfig struct {
 	// Location of the Analysis Services resource.
@@ -74,13 +74,13 @@ var AnalysisServicesServer = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: AnalysisServicesServer_PropertiesFields,
+			Kind:     "object",
+			Fields:   AnalysisServicesServer_PropertiesFields,
 		},
 		"Sku": ubx.FieldSpec{
 			WireName: "sku",
-			Kind: "object",
-			Fields: AnalysisServicesServer_Properties_SkuFields,
+			Kind:     "object",
+			Fields:   AnalysisServicesServer_Properties_SkuFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

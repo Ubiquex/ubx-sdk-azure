@@ -23,15 +23,15 @@ type ProactivedetectionApplicationInsightsComponentProactiveDetectionConfigurati
 }
 
 var ProactivedetectionApplicationInsightsComponentProactiveDetectionConfiguration_RuleDefinitionsFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"HelpUrl": ubx.FieldSpec{WireName: "help_url"},
-		"IsEnabledByDefault": ubx.FieldSpec{WireName: "is_enabled_by_default"},
-		"IsHidden": ubx.FieldSpec{WireName: "is_hidden"},
-		"IsInPreview": ubx.FieldSpec{WireName: "is_in_preview"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"SupportsEmailNotifications": ubx.FieldSpec{WireName: "supports_email_notifications"},
-	}
+	"Description":                ubx.FieldSpec{WireName: "description"},
+	"DisplayName":                ubx.FieldSpec{WireName: "display_name"},
+	"HelpUrl":                    ubx.FieldSpec{WireName: "help_url"},
+	"IsEnabledByDefault":         ubx.FieldSpec{WireName: "is_enabled_by_default"},
+	"IsHidden":                   ubx.FieldSpec{WireName: "is_hidden"},
+	"IsInPreview":                ubx.FieldSpec{WireName: "is_in_preview"},
+	"Name":                       ubx.FieldSpec{WireName: "name"},
+	"SupportsEmailNotifications": ubx.FieldSpec{WireName: "supports_email_notifications"},
+}
 
 type ProactivedetectionApplicationInsightsComponentProactiveDetectionConfigurationConfig struct {
 	// Custom email addresses for this rule notifications
@@ -66,14 +66,14 @@ type ProactivedetectionApplicationInsightsComponentProactiveDetectionConfigurati
 var ProactivedetectionApplicationInsightsComponentProactiveDetectionConfiguration = ubx.ResourceBinding{
 	WireType: "azure_applicationinsights_proactivedetection_application_insights_component_proactive_detection_configuration",
 	Fields: ubx.FieldMap{
-		"CustomEmails": ubx.FieldSpec{WireName: "custom_emails"},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
+		"CustomEmails":    ubx.FieldSpec{WireName: "custom_emails"},
+		"Enabled":         ubx.FieldSpec{WireName: "enabled"},
 		"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 		"RuleDefinitions": ubx.FieldSpec{
 			WireName: "rule_definitions",
-			Kind: "object",
-			Fields: ProactivedetectionApplicationInsightsComponentProactiveDetectionConfiguration_RuleDefinitionsFields,
+			Kind:     "object",
+			Fields:   ProactivedetectionApplicationInsightsComponentProactiveDetectionConfiguration_RuleDefinitionsFields,
 		},
 		"SendEmailsToSubscriptionOwners": ubx.FieldSpec{WireName: "send_emails_to_subscription_owners"},
 	},

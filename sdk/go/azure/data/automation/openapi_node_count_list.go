@@ -8,18 +8,18 @@ type OpenapiNodeCountList_Value_Properties struct {
 }
 
 type OpenapiNodeCountList_Value struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type OpenapiNodeCountListConfig struct {
 	AutomationAccountName any
-	CountType any
+	CountType             any
 }
 
 type OpenapiNodeCountListAttrs struct {
 	AutomationAccountName any
-	CountType any
+	CountType             any
 	// Gets the total number of records matching countType criteria.
 	TotalCount any
 	// Gets an array of counts
@@ -30,6 +30,6 @@ var OpenapiNodeCountList = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_node_count_list",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"CountType": ubx.FieldSpec{WireName: "count_type"},
+		"CountType":             ubx.FieldSpec{WireName: "count_type"},
 	},
 }

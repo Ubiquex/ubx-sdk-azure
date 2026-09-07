@@ -22,20 +22,20 @@ type ApimgatewaysGatewayContract2_Properties struct {
 }
 
 var ApimgatewaysGatewayContract2_Properties_LocationDataFields = ubx.FieldMap{
-		"City": ubx.FieldSpec{WireName: "city"},
-		"CountryOrRegion": ubx.FieldSpec{WireName: "country_or_region"},
-		"District": ubx.FieldSpec{WireName: "district"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"City":            ubx.FieldSpec{WireName: "city"},
+	"CountryOrRegion": ubx.FieldSpec{WireName: "country_or_region"},
+	"District":        ubx.FieldSpec{WireName: "district"},
+	"Name":            ubx.FieldSpec{WireName: "name"},
+}
 
 var ApimgatewaysGatewayContract2_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"LocationData": ubx.FieldSpec{
-			WireName: "location_data",
-			Kind: "object",
-			Fields: ApimgatewaysGatewayContract2_Properties_LocationDataFields,
-		},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"LocationData": ubx.FieldSpec{
+		WireName: "location_data",
+		Kind:     "object",
+		Fields:   ApimgatewaysGatewayContract2_Properties_LocationDataFields,
+	},
+}
 
 type ApimgatewaysGatewayContract2Config struct {
 	// Properties of the Gateway contract.
@@ -52,8 +52,8 @@ var ApimgatewaysGatewayContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimgatewaysGatewayContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimgatewaysGatewayContract2_PropertiesFields,
 		},
 	},
 }

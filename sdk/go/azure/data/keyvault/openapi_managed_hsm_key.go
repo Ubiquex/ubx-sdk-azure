@@ -41,12 +41,12 @@ type OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_Action struc
 }
 
 type OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions_Trigger struct {
-	TimeAfterCreate any
+	TimeAfterCreate  any
 	TimeBeforeExpiry any
 }
 
 type OpenapiManagedHsmKey_Properties_RotationPolicy_LifetimeActions struct {
-	Action any
+	Action  any
 	Trigger any
 }
 
@@ -61,7 +61,7 @@ type OpenapiManagedHsmKey_Properties struct {
 	Attributes any
 	// The elliptic curve name. For valid values, see JsonWebKeyCurveName. Default for EC and EC-HSM keys is P-256
 	CurveName any
-	KeyOps any
+	KeyOps    any
 	// The key size in bits. For example: 2048, 3072, or 4096 for RSA. Default for RSA and RSA-HSM keys is 2048. Exception made for bring your own key (BYOK), key exchange keys default to 4096.
 	KeySize any
 	// The URI to retrieve the current version of the key.
@@ -69,21 +69,21 @@ type OpenapiManagedHsmKey_Properties struct {
 	// The URI to retrieve the specific version of the key.
 	KeyUriWithVersion any
 	// The type of the key. For valid values, see JsonWebKeyType.
-	Kty any
-	ReleasePolicy any
+	Kty            any
+	ReleasePolicy  any
 	RotationPolicy any
 }
 
 type OpenapiManagedHsmKeyConfig struct {
-	KeyName any
+	KeyName    any
 	KeyVersion any
-	Name any
+	Name       any
 }
 
 type OpenapiManagedHsmKeyAttrs struct {
-	KeyName any
+	KeyName    any
 	KeyVersion any
-	Name any
+	Name       any
 	// The properties of the key.
 	Properties any
 	// Resource tags
@@ -93,8 +93,8 @@ type OpenapiManagedHsmKeyAttrs struct {
 var OpenapiManagedHsmKey = ubx.DataSourceBinding{
 	WireType: "azure_keyvault_openapi_managed_hsm_key",
 	Fields: ubx.FieldMap{
-		"KeyName": ubx.FieldSpec{WireName: "key_name"},
+		"KeyName":    ubx.FieldSpec{WireName: "key_name"},
 		"KeyVersion": ubx.FieldSpec{WireName: "key_version"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":       ubx.FieldSpec{WireName: "name"},
 	},
 }

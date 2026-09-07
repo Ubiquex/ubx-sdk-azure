@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type LedgerdigestuploadsLedgerDigestUploadsList_Value_Properties struct {
 	DigestStorageEndpoint any
-	State any
+	State                 any
 }
 
 type LedgerdigestuploadsLedgerDigestUploadsList_Value struct {
@@ -14,13 +14,13 @@ type LedgerdigestuploadsLedgerDigestUploadsList_Value struct {
 
 type LedgerdigestuploadsLedgerDigestUploadsListConfig struct {
 	DatabaseName any
-	ServerName any
+	ServerName   any
 }
 
 type LedgerdigestuploadsLedgerDigestUploadsListAttrs struct {
 	DatabaseName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The LedgerDigestUploads items on this page
 	Value any
@@ -30,6 +30,6 @@ var LedgerdigestuploadsLedgerDigestUploadsList = ubx.DataSourceBinding{
 	WireType: "azure_sql_ledgerdigestuploads_ledger_digest_uploads_list",
 	Fields: ubx.FieldMap{
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

@@ -23,27 +23,27 @@ type BmsJobResource_Properties struct {
 }
 
 type BmsJobResourceConfig struct {
-	JobName any
+	JobName   any
 	VaultName any
 }
 
 type BmsJobResourceAttrs struct {
 	// Optional ETag.
-	ETag any
+	ETag    any
 	JobName any
 	// Represents an Azure geography region where supported resource providers live.
 	Location any
 	// Defines workload agnostic properties for a job.
 	Properties any
 	// Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 
 var BmsJobResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_job_resource",
 	Fields: ubx.FieldMap{
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
+		"JobName":   ubx.FieldSpec{WireName: "job_name"},
 		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

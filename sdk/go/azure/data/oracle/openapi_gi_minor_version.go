@@ -12,12 +12,12 @@ type OpenapiGiMinorVersion_Properties struct {
 
 type OpenapiGiMinorVersionConfig struct {
 	GiMinorVersionName any
-	Giversionname any
+	Giversionname      any
 }
 
 type OpenapiGiMinorVersionAttrs struct {
 	GiMinorVersionName any
-	Giversionname any
+	Giversionname      any
 	// The Oracle Grid Infrastructure (GI) minor version properties
 	Properties any
 }
@@ -26,6 +26,6 @@ var OpenapiGiMinorVersion = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_gi_minor_version",
 	Fields: ubx.FieldMap{
 		"GiMinorVersionName": ubx.FieldSpec{WireName: "gi_minor_version_name"},
-		"Giversionname": ubx.FieldSpec{WireName: "giversionname"},
+		"Giversionname":      ubx.FieldSpec{WireName: "giversionname"},
 	},
 }

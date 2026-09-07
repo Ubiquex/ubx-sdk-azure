@@ -4,10 +4,10 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type AssemblyDefinitionList_Value_Properties struct {
-	AssemblyCulture any
-	AssemblyName any
+	AssemblyCulture        any
+	AssemblyName           any
 	AssemblyPublicKeyToken any
-	AssemblyVersion any
+	AssemblyVersion        any
 }
 
 type AssemblyDefinitionList_Value struct {
@@ -15,26 +15,26 @@ type AssemblyDefinitionList_Value struct {
 }
 
 type AssemblyDefinitionListConfig struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName      any
+	SubscriptionId         any
 }
 
 type AssemblyDefinitionListAttrs struct {
-	ApiVersion any
+	ApiVersion             any
 	IntegrationAccountName any
-	ResourceGroupName any
-	SubscriptionId any
-	Value any
+	ResourceGroupName      any
+	SubscriptionId         any
+	Value                  any
 }
 
 var AssemblyDefinitionList = ubx.DataSourceBinding{
 	WireType: "azure_logic_assembly_definition_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":             ubx.FieldSpec{WireName: "api_version"},
 		"IntegrationAccountName": ubx.FieldSpec{WireName: "integration_account_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":      ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":         ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

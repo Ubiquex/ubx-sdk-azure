@@ -32,21 +32,21 @@ type LocksManagementLockObject_SystemData struct {
 }
 
 type LocksManagementLockObjectConfig struct {
-	LockName any
+	LockName          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type LocksManagementLockObjectAttrs struct {
 	// The resource ID of the lock.
-	Id any
+	Id       any
 	LockName any
 	// The name of the lock.
 	Name any
 	// The lock properties.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// The resource type of the lock - Microsoft.Authorization/locks.
@@ -56,8 +56,8 @@ type LocksManagementLockObjectAttrs struct {
 var LocksManagementLockObject = ubx.DataSourceBinding{
 	WireType: "azure_resources_locks_management_lock_object",
 	Fields: ubx.FieldMap{
-		"LockName": ubx.FieldSpec{WireName: "lock_name"},
+		"LockName":          ubx.FieldSpec{WireName: "lock_name"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -33,17 +33,17 @@ type LongtermretentionbackupsLongTermRetentionBackup_Properties struct {
 }
 
 type LongtermretentionbackupsLongTermRetentionBackupConfig struct {
-	BackupName any
-	LocationName any
+	BackupName                    any
+	LocationName                  any
 	LongTermRetentionDatabaseName any
-	LongTermRetentionServerName any
+	LongTermRetentionServerName   any
 }
 
 type LongtermretentionbackupsLongTermRetentionBackupAttrs struct {
-	BackupName any
-	LocationName any
+	BackupName                    any
+	LocationName                  any
 	LongTermRetentionDatabaseName any
-	LongTermRetentionServerName any
+	LongTermRetentionServerName   any
 	// Properties of a long term retention backup
 	Properties any
 }
@@ -51,9 +51,9 @@ type LongtermretentionbackupsLongTermRetentionBackupAttrs struct {
 var LongtermretentionbackupsLongTermRetentionBackup = ubx.DataSourceBinding{
 	WireType: "azure_sql_longtermretentionbackups_long_term_retention_backup",
 	Fields: ubx.FieldMap{
-		"BackupName": ubx.FieldSpec{WireName: "backup_name"},
-		"LocationName": ubx.FieldSpec{WireName: "location_name"},
+		"BackupName":                    ubx.FieldSpec{WireName: "backup_name"},
+		"LocationName":                  ubx.FieldSpec{WireName: "location_name"},
 		"LongTermRetentionDatabaseName": ubx.FieldSpec{WireName: "long_term_retention_database_name"},
-		"LongTermRetentionServerName": ubx.FieldSpec{WireName: "long_term_retention_server_name"},
+		"LongTermRetentionServerName":   ubx.FieldSpec{WireName: "long_term_retention_server_name"},
 	},
 }

@@ -4,9 +4,9 @@ package mongocluster
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirewallRuleList_Value_Properties struct {
-	EndIpAddress any
+	EndIpAddress      any
 	ProvisioningState any
-	StartIpAddress any
+	StartIpAddress    any
 }
 
 type FirewallRuleList_Value struct {

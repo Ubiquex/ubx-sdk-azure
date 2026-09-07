@@ -25,6 +25,5 @@ type ApimworkspacesRecipientUserContractListAttrs struct {
 
 var ApimworkspacesRecipientUserContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimworkspaces_recipient_user_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

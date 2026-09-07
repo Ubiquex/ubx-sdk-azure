@@ -38,6 +38,5 @@ type ServiceRegistryResourceAttrs struct {
 
 var ServiceRegistryResource = ubx.ResourceBinding{
 	WireType: "azure_appplatform_service_registry_resource",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

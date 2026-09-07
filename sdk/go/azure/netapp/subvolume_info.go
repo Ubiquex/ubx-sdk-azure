@@ -15,11 +15,11 @@ type SubvolumeInfo_Properties struct {
 }
 
 var SubvolumeInfo_PropertiesFields = ubx.FieldMap{
-		"ParentPath": ubx.FieldSpec{WireName: "parent_path"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Size": ubx.FieldSpec{WireName: "size"},
-	}
+	"ParentPath":        ubx.FieldSpec{WireName: "parent_path"},
+	"Path":              ubx.FieldSpec{WireName: "path"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Size":              ubx.FieldSpec{WireName: "size"},
+}
 
 type SubvolumeInfoConfig struct {
 	// This represents path associated with the subvolume
@@ -36,8 +36,8 @@ var SubvolumeInfo = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SubvolumeInfo_PropertiesFields,
+			Kind:     "object",
+			Fields:   SubvolumeInfo_PropertiesFields,
 		},
 	},
 }

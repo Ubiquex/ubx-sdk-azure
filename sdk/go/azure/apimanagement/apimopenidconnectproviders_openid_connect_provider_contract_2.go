@@ -21,14 +21,14 @@ type ApimopenidconnectprovidersOpenidConnectProviderContract2_Properties struct 
 }
 
 var ApimopenidconnectprovidersOpenidConnectProviderContract2_PropertiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"MetadataEndpoint": ubx.FieldSpec{WireName: "metadata_endpoint"},
-		"UseInApiDocumentation": ubx.FieldSpec{WireName: "use_in_api_documentation"},
-		"UseInTestConsole": ubx.FieldSpec{WireName: "use_in_test_console"},
-	}
+	"ClientId":              ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret":          ubx.FieldSpec{WireName: "client_secret"},
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"DisplayName":           ubx.FieldSpec{WireName: "display_name"},
+	"MetadataEndpoint":      ubx.FieldSpec{WireName: "metadata_endpoint"},
+	"UseInApiDocumentation": ubx.FieldSpec{WireName: "use_in_api_documentation"},
+	"UseInTestConsole":      ubx.FieldSpec{WireName: "use_in_test_console"},
+}
 
 type ApimopenidconnectprovidersOpenidConnectProviderContract2Config struct {
 	// OpenID Connect Providers Contract.
@@ -49,8 +49,8 @@ var ApimopenidconnectprovidersOpenidConnectProviderContract2 = ubx.ResourceBindi
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimopenidconnectprovidersOpenidConnectProviderContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimopenidconnectprovidersOpenidConnectProviderContract2_PropertiesFields,
 		},
 		"Opid": ubx.FieldSpec{WireName: "opid"},
 	},

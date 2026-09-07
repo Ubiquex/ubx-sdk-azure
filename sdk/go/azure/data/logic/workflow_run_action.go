@@ -22,13 +22,13 @@ type WorkflowRunAction_Properties_InputsLink struct {
 	ContentSize any
 	// The content version.
 	ContentVersion any
-	Metadata any
+	Metadata       any
 	// The content link URI.
 	Uri any
 }
 
 type WorkflowRunAction_Properties_RetryHistory_Error_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
@@ -37,12 +37,12 @@ type WorkflowRunAction_Properties_RetryHistory_Error struct {
 }
 
 type WorkflowRunAction_Properties_RetryHistory struct {
-	ClientRequestId any
-	Code any
-	EndTime any
-	Error any
+	ClientRequestId  any
+	Code             any
+	EndTime          any
+	Error            any
 	ServiceRequestId any
-	StartTime any
+	StartTime        any
 }
 
 type WorkflowRunAction_Properties struct {
@@ -52,7 +52,7 @@ type WorkflowRunAction_Properties struct {
 	Correlation any
 	// Gets the end time.
 	EndTime any
-	Error any
+	Error   any
 	// The content link.
 	InputsLink any
 	// The content link.
@@ -62,19 +62,19 @@ type WorkflowRunAction_Properties struct {
 	// Gets the start time.
 	StartTime any
 	// The workflow status.
-	Status any
+	Status            any
 	TrackedProperties any
 	// Gets the tracking id.
 	TrackingId any
 }
 
 type WorkflowRunActionConfig struct {
-	ActionName any
-	ApiVersion any
+	ActionName        any
+	ApiVersion        any
 	ResourceGroupName any
-	RunName any
-	SubscriptionId any
-	WorkflowName any
+	RunName           any
+	SubscriptionId    any
+	WorkflowName      any
 }
 
 type WorkflowRunActionAttrs struct {
@@ -85,23 +85,23 @@ type WorkflowRunActionAttrs struct {
 	// Gets the workflow run action name.
 	Name any
 	// The workflow run action properties.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	RunName any
-	SubscriptionId any
+	RunName           any
+	SubscriptionId    any
 	// Gets the workflow run action type.
-	Type any
+	Type         any
 	WorkflowName any
 }
 
 var WorkflowRunAction = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_run_action",
 	Fields: ubx.FieldMap{
-		"ActionName": ubx.FieldSpec{WireName: "action_name"},
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ActionName":        ubx.FieldSpec{WireName: "action_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"RunName":           ubx.FieldSpec{WireName: "run_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

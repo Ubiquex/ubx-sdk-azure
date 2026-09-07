@@ -57,6 +57,5 @@ type ImageDefinitionAttrs struct {
 
 var ImageDefinition = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image_definition",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

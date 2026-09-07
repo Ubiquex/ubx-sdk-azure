@@ -24,30 +24,30 @@ type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Confi
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config_KeyVaultReference struct {
-	KeyVault any
-	SecretName any
+	KeyVault      any
+	SecretName    any
 	SecretVersion any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension_Config struct {
 	KeyVaultReference any
-	Type any
-	Value any
+	Type              any
+	Value             any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources_Extension struct {
-	Config any
+	Config   any
 	ConfigId any
-	Name any
-	Version any
+	Name     any
+	Version  any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DeletedResources struct {
-	ApiVersion any
-	Extension any
-	Id any
+	ApiVersion  any
+	Extension   any
+	Id          any
 	Identifiers any
-	Type any
+	Type        any
 }
 
 type DeploymentstacksDeploymentStack_Properties_DenySettings struct {
@@ -71,10 +71,10 @@ type DeploymentstacksDeploymentStack_Properties_Error_Details_Details struct {
 
 type DeploymentstacksDeploymentStack_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStack_Properties_Error struct {
@@ -92,7 +92,7 @@ type DeploymentstacksDeploymentStack_Properties_Error struct {
 
 type DeploymentstacksDeploymentStack_Properties_ExternalInputDefinitions struct {
 	Config any
-	Kind any
+	Kind   any
 }
 
 type DeploymentstacksDeploymentStack_Properties_ExternalInputs struct {
@@ -100,19 +100,19 @@ type DeploymentstacksDeploymentStack_Properties_ExternalInputs struct {
 }
 
 type DeploymentstacksDeploymentStack_Properties_FailedResources struct {
-	ApiVersion any
-	Error any
-	Extension any
-	Id any
+	ApiVersion  any
+	Error       any
+	Extension   any
+	Id          any
 	Identifiers any
-	Type any
+	Type        any
 }
 
 type DeploymentstacksDeploymentStack_Properties_Parameters struct {
 	Expression any
-	Reference any
-	Type any
-	Value any
+	Reference  any
+	Type       any
+	Value      any
 }
 
 type DeploymentstacksDeploymentStack_Properties_ParametersLink struct {
@@ -124,7 +124,7 @@ type DeploymentstacksDeploymentStack_Properties_ParametersLink struct {
 
 type DeploymentstacksDeploymentStack_Properties_Resources struct {
 	DenyStatus any
-	Status any
+	Status     any
 }
 
 type DeploymentstacksDeploymentStack_Properties_TemplateLink struct {

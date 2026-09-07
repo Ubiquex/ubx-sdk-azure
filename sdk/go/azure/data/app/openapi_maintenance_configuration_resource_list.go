@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMaintenanceConfigurationResourceList_Value_Properties_ScheduledEntries struct {
 	DurationHours any
-	StartHourUtc any
-	WeekDay any
+	StartHourUtc  any
+	WeekDay       any
 }
 
 type OpenapiMaintenanceConfigurationResourceList_Value_Properties struct {

@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolReplicationLinkList_Value_Properties struct {
 	IsTerminationAllowed any
-	PartnerDatabase any
-	PartnerLocation any
-	PartnerRole any
-	PartnerServer any
-	PercentComplete any
-	ReplicationMode any
-	ReplicationState any
-	Role any
-	StartTime any
+	PartnerDatabase      any
+	PartnerLocation      any
+	PartnerRole          any
+	PartnerServer        any
+	PercentComplete      any
+	ReplicationMode      any
+	ReplicationState     any
+	Role                 any
+	StartTime            any
 }
 
 type SqlpoolReplicationLinkList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Type any
+	Type       any
 }
 
 type SqlpoolReplicationLinkListConfig struct {
@@ -28,7 +28,7 @@ type SqlpoolReplicationLinkListConfig struct {
 
 type SqlpoolReplicationLinkListAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink    any
 	SqlPoolName any
 	// The list of Sql pool replication links housed in the Sql pool.
 	Value any

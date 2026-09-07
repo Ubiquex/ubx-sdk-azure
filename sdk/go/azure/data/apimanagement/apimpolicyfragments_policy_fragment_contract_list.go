@@ -4,10 +4,10 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimpolicyfragmentsPolicyFragmentContractList_Value_Properties struct {
-	Description any
-	Format any
+	Description       any
+	Format            any
 	ProvisioningState any
-	Value any
+	Value             any
 }
 
 type ApimpolicyfragmentsPolicyFragmentContractList_Value struct {
@@ -28,6 +28,5 @@ type ApimpolicyfragmentsPolicyFragmentContractListAttrs struct {
 
 var ApimpolicyfragmentsPolicyFragmentContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimpolicyfragments_policy_fragment_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

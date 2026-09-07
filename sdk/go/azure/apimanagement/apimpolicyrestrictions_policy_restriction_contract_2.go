@@ -11,9 +11,9 @@ type ApimpolicyrestrictionsPolicyRestrictionContract2_Properties struct {
 }
 
 var ApimpolicyrestrictionsPolicyRestrictionContract2_PropertiesFields = ubx.FieldMap{
-		"RequireBase": ubx.FieldSpec{WireName: "require_base"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-	}
+	"RequireBase": ubx.FieldSpec{WireName: "require_base"},
+	"Scope":       ubx.FieldSpec{WireName: "scope"},
+}
 
 type ApimpolicyrestrictionsPolicyRestrictionContract2Config struct {
 	// Policy restrictions contract properties.
@@ -30,8 +30,8 @@ var ApimpolicyrestrictionsPolicyRestrictionContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimpolicyrestrictionsPolicyRestrictionContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimpolicyrestrictionsPolicyRestrictionContract2_PropertiesFields,
 		},
 	},
 }

@@ -9,15 +9,15 @@ type PrivateEndpointConnectionList_Value_Properties_PrivateEndpoint struct {
 
 type PrivateEndpointConnectionList_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type PrivateEndpointConnectionList_Value_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type PrivateEndpointConnectionList_Value struct {
@@ -30,7 +30,7 @@ type PrivateEndpointConnectionListConfig struct {
 
 type PrivateEndpointConnectionListAttrs struct {
 	// Request URL that can be used to query next page of private endpoint connections. Returned when the total number of requested private endpoint connections exceed maximum page size.
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The list of the private endpoint connections
 	Value any

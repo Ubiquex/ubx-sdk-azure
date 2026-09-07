@@ -4,11 +4,11 @@ package proximity
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PlacementGroupList_Value_Properties_AvailabilitySets_ColocationStatus struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type PlacementGroupList_Value_Properties_AvailabilitySets struct {
@@ -20,17 +20,17 @@ type PlacementGroupList_Value_Properties_Intent struct {
 }
 
 type PlacementGroupList_Value_Properties struct {
-	AvailabilitySets any
-	ColocationStatus any
-	Intent any
+	AvailabilitySets            any
+	ColocationStatus            any
+	Intent                      any
 	ProximityPlacementGroupType any
-	VirtualMachineScaleSets any
-	VirtualMachines any
+	VirtualMachineScaleSets     any
+	VirtualMachines             any
 }
 
 type PlacementGroupList_Value struct {
 	Properties any
-	Zones any
+	Zones      any
 }
 
 type PlacementGroupListConfig struct {
@@ -45,6 +45,5 @@ type PlacementGroupListAttrs struct {
 
 var PlacementGroupList = ubx.DataSourceBinding{
 	WireType: "azure_proximity_placement_group_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

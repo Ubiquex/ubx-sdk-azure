@@ -4,13 +4,13 @@ package redhatopenshift
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PlatformWorkloadIdentityRoleSetList_Value_Properties_PlatformWorkloadIdentityRoles struct {
-	OperatorName any
-	RoleDefinitionId any
+	OperatorName       any
+	RoleDefinitionId   any
 	RoleDefinitionName any
 }
 
 type PlatformWorkloadIdentityRoleSetList_Value_Properties struct {
-	OpenShiftVersion any
+	OpenShiftVersion              any
 	PlatformWorkloadIdentityRoles any
 }
 
@@ -30,6 +30,5 @@ type PlatformWorkloadIdentityRoleSetListAttrs struct {
 
 var PlatformWorkloadIdentityRoleSetList = ubx.DataSourceBinding{
 	WireType: "azure_redhatopenshift_platform_workload_identity_role_set_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

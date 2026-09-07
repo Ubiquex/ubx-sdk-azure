@@ -9,7 +9,7 @@ type ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_Body
 }
 
 type ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMasking_Headers struct {
-	Mode any
+	Mode  any
 	Value any
 }
 
@@ -22,7 +22,7 @@ type ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_Data
 
 type ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request struct {
 	// Body logging settings.
-	Body any
+	Body        any
 	DataMasking any
 	// Array of HTTP Headers to log.
 	Headers any
@@ -66,83 +66,83 @@ type ApimworkspacediagnosticsDiagnosticContract2_Properties struct {
 }
 
 var ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_BodyFields = ubx.FieldMap{
-		"Bytes": ubx.FieldSpec{WireName: "bytes"},
-	}
+	"Bytes": ubx.FieldSpec{WireName: "bytes"},
+}
 
 var ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMasking_HeadersFields = ubx.FieldMap{
-		"Mode": ubx.FieldSpec{WireName: "mode"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Mode":  ubx.FieldSpec{WireName: "mode"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMaskingFields = ubx.FieldMap{
-		"Headers": ubx.FieldSpec{
-			WireName: "headers",
-			Kind: "list",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMasking_HeadersFields,
-		},
-		"QueryParams": ubx.FieldSpec{
-			WireName: "query_params",
-			Kind: "list",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMasking_HeadersFields,
-		},
-	}
+	"Headers": ubx.FieldSpec{
+		WireName: "headers",
+		Kind:     "list",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMasking_HeadersFields,
+	},
+	"QueryParams": ubx.FieldSpec{
+		WireName: "query_params",
+		Kind:     "list",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMasking_HeadersFields,
+	},
+}
 
 var ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_RequestFields = ubx.FieldMap{
-		"Body": ubx.FieldSpec{
-			WireName: "body",
-			Kind: "object",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_BodyFields,
-		},
-		"DataMasking": ubx.FieldSpec{
-			WireName: "data_masking",
-			Kind: "object",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMaskingFields,
-		},
-		"Headers": ubx.FieldSpec{WireName: "headers"},
-	}
+	"Body": ubx.FieldSpec{
+		WireName: "body",
+		Kind:     "object",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_BodyFields,
+	},
+	"DataMasking": ubx.FieldSpec{
+		WireName: "data_masking",
+		Kind:     "object",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_Request_DataMaskingFields,
+	},
+	"Headers": ubx.FieldSpec{WireName: "headers"},
+}
 
 var ApimworkspacediagnosticsDiagnosticContract2_Properties_BackendFields = ubx.FieldMap{
-		"Request": ubx.FieldSpec{
-			WireName: "request",
-			Kind: "object",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_RequestFields,
-		},
-		"Response": ubx.FieldSpec{
-			WireName: "response",
-			Kind: "object",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_RequestFields,
-		},
-	}
+	"Request": ubx.FieldSpec{
+		WireName: "request",
+		Kind:     "object",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_RequestFields,
+	},
+	"Response": ubx.FieldSpec{
+		WireName: "response",
+		Kind:     "object",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_Backend_RequestFields,
+	},
+}
 
 var ApimworkspacediagnosticsDiagnosticContract2_Properties_SamplingFields = ubx.FieldMap{
-		"Percentage": ubx.FieldSpec{WireName: "percentage"},
-		"SamplingType": ubx.FieldSpec{WireName: "sampling_type"},
-	}
+	"Percentage":   ubx.FieldSpec{WireName: "percentage"},
+	"SamplingType": ubx.FieldSpec{WireName: "sampling_type"},
+}
 
 var ApimworkspacediagnosticsDiagnosticContract2_PropertiesFields = ubx.FieldMap{
-		"AlwaysLog": ubx.FieldSpec{WireName: "always_log"},
-		"Backend": ubx.FieldSpec{
-			WireName: "backend",
-			Kind: "object",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_BackendFields,
-		},
-		"Frontend": ubx.FieldSpec{
-			WireName: "frontend",
-			Kind: "object",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_BackendFields,
-		},
-		"HttpCorrelationProtocol": ubx.FieldSpec{WireName: "http_correlation_protocol"},
-		"LogClientIp": ubx.FieldSpec{WireName: "log_client_ip"},
-		"LoggerId": ubx.FieldSpec{WireName: "logger_id"},
-		"Metrics": ubx.FieldSpec{WireName: "metrics"},
-		"OperationNameFormat": ubx.FieldSpec{WireName: "operation_name_format"},
-		"Sampling": ubx.FieldSpec{
-			WireName: "sampling",
-			Kind: "object",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_Properties_SamplingFields,
-		},
-		"Verbosity": ubx.FieldSpec{WireName: "verbosity"},
-	}
+	"AlwaysLog": ubx.FieldSpec{WireName: "always_log"},
+	"Backend": ubx.FieldSpec{
+		WireName: "backend",
+		Kind:     "object",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_BackendFields,
+	},
+	"Frontend": ubx.FieldSpec{
+		WireName: "frontend",
+		Kind:     "object",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_BackendFields,
+	},
+	"HttpCorrelationProtocol": ubx.FieldSpec{WireName: "http_correlation_protocol"},
+	"LogClientIp":             ubx.FieldSpec{WireName: "log_client_ip"},
+	"LoggerId":                ubx.FieldSpec{WireName: "logger_id"},
+	"Metrics":                 ubx.FieldSpec{WireName: "metrics"},
+	"OperationNameFormat":     ubx.FieldSpec{WireName: "operation_name_format"},
+	"Sampling": ubx.FieldSpec{
+		WireName: "sampling",
+		Kind:     "object",
+		Fields:   ApimworkspacediagnosticsDiagnosticContract2_Properties_SamplingFields,
+	},
+	"Verbosity": ubx.FieldSpec{WireName: "verbosity"},
+}
 
 type ApimworkspacediagnosticsDiagnosticContract2Config struct {
 	// Diagnostic Entity Properties
@@ -159,8 +159,8 @@ var ApimworkspacediagnosticsDiagnosticContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacediagnosticsDiagnosticContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacediagnosticsDiagnosticContract2_PropertiesFields,
 		},
 	},
 }

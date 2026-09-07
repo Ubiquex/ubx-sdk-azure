@@ -4,13 +4,13 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersAgentPoolUpgradeProfile_Properties_RecentlyUsedVersions struct {
-	NodeImageVersion any
+	NodeImageVersion    any
 	OrchestratorVersion any
-	Timestamp any
+	Timestamp           any
 }
 
 type ManagedclustersAgentPoolUpgradeProfile_Properties_Upgrades struct {
-	IsPreview any
+	IsPreview         any
 	KubernetesVersion any
 }
 
@@ -29,13 +29,13 @@ type ManagedclustersAgentPoolUpgradeProfile_Properties struct {
 
 type ManagedclustersAgentPoolUpgradeProfileConfig struct {
 	AgentPoolName any
-	ResourceName any
+	ResourceName  any
 }
 
 type ManagedclustersAgentPoolUpgradeProfileAttrs struct {
 	AgentPoolName any
 	// The list of available upgrade versions.
-	Properties any
+	Properties   any
 	ResourceName any
 }
 
@@ -43,6 +43,6 @@ var ManagedclustersAgentPoolUpgradeProfile = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_managedclusters_agent_pool_upgrade_profile",
 	Fields: ubx.FieldMap{
 		"AgentPoolName": ubx.FieldSpec{WireName: "agent_pool_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
+		"ResourceName":  ubx.FieldSpec{WireName: "resource_name"},
 	},
 }

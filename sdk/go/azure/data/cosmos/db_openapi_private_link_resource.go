@@ -14,12 +14,12 @@ type DbOpenapiPrivateLinkResource_Properties struct {
 
 type DbOpenapiPrivateLinkResourceConfig struct {
 	AccountName any
-	GroupName any
+	GroupName   any
 }
 
 type DbOpenapiPrivateLinkResourceAttrs struct {
 	AccountName any
-	GroupName any
+	GroupName   any
 	// Properties of a private link resource.
 	Properties any
 }
@@ -28,6 +28,6 @@ var DbOpenapiPrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_private_link_resource",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"GroupName": ubx.FieldSpec{WireName: "group_name"},
+		"GroupName":   ubx.FieldSpec{WireName: "group_name"},
 	},
 }

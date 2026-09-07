@@ -40,36 +40,36 @@ type StoragecontainersStorageContainers_Properties struct {
 }
 
 var StoragecontainersStorageContainers_ExtendedLocationFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var StoragecontainersStorageContainers_Properties_Status_ProvisioningStatusFields = ubx.FieldMap{
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"OperationId": ubx.FieldSpec{WireName: "operation_id"},
+	"Status":      ubx.FieldSpec{WireName: "status"},
+}
 
 var StoragecontainersStorageContainers_Properties_StatusFields = ubx.FieldMap{
-		"AvailableSizeMb": ubx.FieldSpec{WireName: "available_size_mb"},
-		"ContainerSizeMb": ubx.FieldSpec{WireName: "container_size_mb"},
-		"ErrorCode": ubx.FieldSpec{WireName: "error_code"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ProvisioningStatus": ubx.FieldSpec{
-			WireName: "provisioning_status",
-			Kind: "object",
-			Fields: StoragecontainersStorageContainers_Properties_Status_ProvisioningStatusFields,
-		},
-	}
+	"AvailableSizeMb": ubx.FieldSpec{WireName: "available_size_mb"},
+	"ContainerSizeMb": ubx.FieldSpec{WireName: "container_size_mb"},
+	"ErrorCode":       ubx.FieldSpec{WireName: "error_code"},
+	"ErrorMessage":    ubx.FieldSpec{WireName: "error_message"},
+	"ProvisioningStatus": ubx.FieldSpec{
+		WireName: "provisioning_status",
+		Kind:     "object",
+		Fields:   StoragecontainersStorageContainers_Properties_Status_ProvisioningStatusFields,
+	},
+}
 
 var StoragecontainersStorageContainers_PropertiesFields = ubx.FieldMap{
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: StoragecontainersStorageContainers_Properties_StatusFields,
-		},
-	}
+	"Path":              ubx.FieldSpec{WireName: "path"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   StoragecontainersStorageContainers_Properties_StatusFields,
+	},
+}
 
 type StoragecontainersStorageContainersConfig struct {
 	// The complex type of the extended location.
@@ -98,14 +98,14 @@ var StoragecontainersStorageContainers = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"ExtendedLocation": ubx.FieldSpec{
 			WireName: "extended_location",
-			Kind: "object",
-			Fields: StoragecontainersStorageContainers_ExtendedLocationFields,
+			Kind:     "object",
+			Fields:   StoragecontainersStorageContainers_ExtendedLocationFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: StoragecontainersStorageContainers_PropertiesFields,
+			Kind:     "object",
+			Fields:   StoragecontainersStorageContainers_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

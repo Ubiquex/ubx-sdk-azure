@@ -4,50 +4,50 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiWafRankingsResponseDataItemList_Data_Metrics struct {
-	Metric any
+	Metric     any
 	Percentage any
-	Value any
+	Value      any
 }
 
 type OpenapiWafRankingsResponseDataItemList_Data struct {
 	GroupValues any
-	Metrics any
+	Metrics     any
 }
 
 type OpenapiWafRankingsResponseDataItemListConfig struct {
-	Actions any
+	Actions       any
 	DateTimeBegin any
-	DateTimeEnd any
-	MaxRanking any
-	Metrics any
-	ProfileName any
-	Rankings any
-	RuleTypes any
+	DateTimeEnd   any
+	MaxRanking    any
+	Metrics       any
+	ProfileName   any
+	Rankings      any
+	RuleTypes     any
 }
 
 type OpenapiWafRankingsResponseDataItemListAttrs struct {
-	Actions any
-	Data any
+	Actions       any
+	Data          any
 	DateTimeBegin any
-	DateTimeEnd any
-	Groups any
-	MaxRanking any
-	Metrics any
-	ProfileName any
-	Rankings any
-	RuleTypes any
+	DateTimeEnd   any
+	Groups        any
+	MaxRanking    any
+	Metrics       any
+	ProfileName   any
+	Rankings      any
+	RuleTypes     any
 }
 
 var OpenapiWafRankingsResponseDataItemList = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_waf_rankings_response_data_item_list",
 	Fields: ubx.FieldMap{
-		"Actions": ubx.FieldSpec{WireName: "actions"},
+		"Actions":       ubx.FieldSpec{WireName: "actions"},
 		"DateTimeBegin": ubx.FieldSpec{WireName: "date_time_begin"},
-		"DateTimeEnd": ubx.FieldSpec{WireName: "date_time_end"},
-		"MaxRanking": ubx.FieldSpec{WireName: "max_ranking"},
-		"Metrics": ubx.FieldSpec{WireName: "metrics"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
-		"Rankings": ubx.FieldSpec{WireName: "rankings"},
-		"RuleTypes": ubx.FieldSpec{WireName: "rule_types"},
+		"DateTimeEnd":   ubx.FieldSpec{WireName: "date_time_end"},
+		"MaxRanking":    ubx.FieldSpec{WireName: "max_ranking"},
+		"Metrics":       ubx.FieldSpec{WireName: "metrics"},
+		"ProfileName":   ubx.FieldSpec{WireName: "profile_name"},
+		"Rankings":      ubx.FieldSpec{WireName: "rankings"},
+		"RuleTypes":     ubx.FieldSpec{WireName: "rule_types"},
 	},
 }

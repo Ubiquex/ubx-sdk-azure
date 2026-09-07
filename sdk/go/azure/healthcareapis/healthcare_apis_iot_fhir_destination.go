@@ -33,18 +33,18 @@ type HealthcareApisIotFhirDestination_SystemData struct {
 }
 
 var HealthcareApisIotFhirDestination_Properties_FhirMappingFields = ubx.FieldMap{
-		"Content": ubx.FieldSpec{WireName: "content"},
-	}
+	"Content": ubx.FieldSpec{WireName: "content"},
+}
 
 var HealthcareApisIotFhirDestination_PropertiesFields = ubx.FieldMap{
-		"FhirMapping": ubx.FieldSpec{
-			WireName: "fhir_mapping",
-			Kind: "object",
-			Fields: HealthcareApisIotFhirDestination_Properties_FhirMappingFields,
-		},
-		"FhirServiceResourceId": ubx.FieldSpec{WireName: "fhir_service_resource_id"},
-		"ResourceIdentityResolutionType": ubx.FieldSpec{WireName: "resource_identity_resolution_type"},
-	}
+	"FhirMapping": ubx.FieldSpec{
+		WireName: "fhir_mapping",
+		Kind:     "object",
+		Fields:   HealthcareApisIotFhirDestination_Properties_FhirMappingFields,
+	},
+	"FhirServiceResourceId":          ubx.FieldSpec{WireName: "fhir_service_resource_id"},
+	"ResourceIdentityResolutionType": ubx.FieldSpec{WireName: "resource_identity_resolution_type"},
+}
 
 type HealthcareApisIotFhirDestinationConfig struct {
 	// The resource location.
@@ -68,8 +68,8 @@ var HealthcareApisIotFhirDestination = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HealthcareApisIotFhirDestination_PropertiesFields,
+			Kind:     "object",
+			Fields:   HealthcareApisIotFhirDestination_PropertiesFields,
 		},
 	},
 }

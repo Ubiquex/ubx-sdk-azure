@@ -4,20 +4,20 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BackupList_Value_Properties struct {
-	BackupId any
+	BackupId               any
 	BackupPolicyResourceId any
-	BackupType any
-	CompletionDate any
-	CreationDate any
-	FailureReason any
-	IsLargeVolume any
-	Label any
-	ProvisioningState any
-	Size any
-	SnapshotCreationDate any
-	SnapshotName any
-	UseExistingSnapshot any
-	VolumeResourceId any
+	BackupType             any
+	CompletionDate         any
+	CreationDate           any
+	FailureReason          any
+	IsLargeVolume          any
+	Label                  any
+	ProvisioningState      any
+	Size                   any
+	SnapshotCreationDate   any
+	SnapshotName           any
+	UseExistingSnapshot    any
+	VolumeResourceId       any
 }
 
 type BackupList_Value struct {
@@ -25,12 +25,12 @@ type BackupList_Value struct {
 }
 
 type BackupListConfig struct {
-	AccountName any
+	AccountName     any
 	BackupVaultName any
 }
 
 type BackupListAttrs struct {
-	AccountName any
+	AccountName     any
 	BackupVaultName any
 	// The link to the next page of items
 	NextLink any
@@ -41,7 +41,7 @@ type BackupListAttrs struct {
 var BackupList = ubx.DataSourceBinding{
 	WireType: "azure_netapp_backup_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":     ubx.FieldSpec{WireName: "account_name"},
 		"BackupVaultName": ubx.FieldSpec{WireName: "backup_vault_name"},
 	},
 }

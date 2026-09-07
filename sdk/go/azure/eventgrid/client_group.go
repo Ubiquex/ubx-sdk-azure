@@ -28,10 +28,10 @@ type ClientGroup_SystemData struct {
 }
 
 var ClientGroup_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Query": ubx.FieldSpec{WireName: "query"},
-	}
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Query":             ubx.FieldSpec{WireName: "query"},
+}
 
 type ClientGroupConfig struct {
 	// The properties of client group.
@@ -56,8 +56,8 @@ var ClientGroup = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ClientGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   ClientGroup_PropertiesFields,
 		},
 	},
 }

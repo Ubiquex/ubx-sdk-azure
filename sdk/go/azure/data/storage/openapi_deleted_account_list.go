@@ -4,10 +4,10 @@ package storage
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDeletedAccountList_Value_Properties struct {
-	CreationTime any
-	DeletionTime any
-	Location any
-	RestoreReference any
+	CreationTime             any
+	DeletionTime             any
+	Location                 any
+	RestoreReference         any
 	StorageAccountResourceId any
 }
 
@@ -27,6 +27,5 @@ type OpenapiDeletedAccountListAttrs struct {
 
 var OpenapiDeletedAccountList = ubx.DataSourceBinding{
 	WireType: "azure_storage_openapi_deleted_account_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

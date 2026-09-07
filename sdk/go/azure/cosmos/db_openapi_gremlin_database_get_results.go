@@ -65,65 +65,65 @@ type DbOpenapiGremlinDatabaseGetResults_Properties struct {
 }
 
 var DbOpenapiGremlinDatabaseGetResults_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_Properties_Options_AutoscaleSettingsFields = ubx.FieldMap{
-		"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
-	}
+	"MaxThroughput": ubx.FieldSpec{WireName: "max_throughput"},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_Properties_OptionsFields = ubx.FieldMap{
-		"AutoscaleSettings": ubx.FieldSpec{
-			WireName: "autoscale_settings",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Properties_Options_AutoscaleSettingsFields,
-		},
-		"Throughput": ubx.FieldSpec{WireName: "throughput"},
-	}
+	"AutoscaleSettings": ubx.FieldSpec{
+		WireName: "autoscale_settings",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Properties_Options_AutoscaleSettingsFields,
+	},
+	"Throughput": ubx.FieldSpec{WireName: "throughput"},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_Properties_Resource_RestoreParametersFields = ubx.FieldMap{
-		"RestoreSource": ubx.FieldSpec{WireName: "restore_source"},
-		"RestoreTimestampInUtc": ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
-		"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
-	}
+	"RestoreSource":          ubx.FieldSpec{WireName: "restore_source"},
+	"RestoreTimestampInUtc":  ubx.FieldSpec{WireName: "restore_timestamp_in_utc"},
+	"RestoreWithTtlDisabled": ubx.FieldSpec{WireName: "restore_with_ttl_disabled"},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_Properties_ResourceFields = ubx.FieldMap{
-		"Etag": ubx.FieldSpec{WireName: "_etag"},
-		"Rid": ubx.FieldSpec{WireName: "_rid"},
-		"Ts": ubx.FieldSpec{WireName: "_ts"},
-		"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"RestoreParameters": ubx.FieldSpec{
-			WireName: "restore_parameters",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Properties_Resource_RestoreParametersFields,
-		},
-	}
+	"Etag":       ubx.FieldSpec{WireName: "_etag"},
+	"Rid":        ubx.FieldSpec{WireName: "_rid"},
+	"Ts":         ubx.FieldSpec{WireName: "_ts"},
+	"CreateMode": ubx.FieldSpec{WireName: "create_mode"},
+	"Id":         ubx.FieldSpec{WireName: "id"},
+	"RestoreParameters": ubx.FieldSpec{
+		WireName: "restore_parameters",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Properties_Resource_RestoreParametersFields,
+	},
+}
 
 var DbOpenapiGremlinDatabaseGetResults_PropertiesFields = ubx.FieldMap{
-		"Options": ubx.FieldSpec{
-			WireName: "options",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Properties_OptionsFields,
-		},
-		"Resource": ubx.FieldSpec{
-			WireName: "resource",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_Properties_ResourceFields,
-		},
-	}
+	"Options": ubx.FieldSpec{
+		WireName: "options",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Properties_OptionsFields,
+	},
+	"Resource": ubx.FieldSpec{
+		WireName: "resource",
+		Kind:     "object",
+		Fields:   DbOpenapiGremlinDatabaseGetResults_Properties_ResourceFields,
+	},
+}
 
 type DbOpenapiGremlinDatabaseGetResultsConfig struct {
 	// Identity for the resource.
@@ -158,14 +158,14 @@ var DbOpenapiGremlinDatabaseGetResults = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_IdentityFields,
+			Kind:     "object",
+			Fields:   DbOpenapiGremlinDatabaseGetResults_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DbOpenapiGremlinDatabaseGetResults_PropertiesFields,
+			Kind:     "object",
+			Fields:   DbOpenapiGremlinDatabaseGetResults_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

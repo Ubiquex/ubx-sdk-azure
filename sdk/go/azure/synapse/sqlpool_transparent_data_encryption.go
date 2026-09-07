@@ -9,8 +9,8 @@ type SqlpoolTransparentDataEncryption_Properties struct {
 }
 
 var SqlpoolTransparentDataEncryption_PropertiesFields = ubx.FieldMap{
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 type SqlpoolTransparentDataEncryptionConfig struct {
 	// Represents the properties of a database transparent data encryption.
@@ -29,8 +29,8 @@ var SqlpoolTransparentDataEncryption = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlpoolTransparentDataEncryption_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlpoolTransparentDataEncryption_PropertiesFields,
 		},
 	},
 }

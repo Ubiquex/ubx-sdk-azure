@@ -65,58 +65,58 @@ type SnapshotPolicy_Properties struct {
 }
 
 var SnapshotPolicy_Properties_DailyScheduleFields = ubx.FieldMap{
-		"Hour": ubx.FieldSpec{WireName: "hour"},
-		"Minute": ubx.FieldSpec{WireName: "minute"},
-		"SnapshotsToKeep": ubx.FieldSpec{WireName: "snapshots_to_keep"},
-		"UsedBytes": ubx.FieldSpec{WireName: "used_bytes"},
-	}
+	"Hour":            ubx.FieldSpec{WireName: "hour"},
+	"Minute":          ubx.FieldSpec{WireName: "minute"},
+	"SnapshotsToKeep": ubx.FieldSpec{WireName: "snapshots_to_keep"},
+	"UsedBytes":       ubx.FieldSpec{WireName: "used_bytes"},
+}
 
 var SnapshotPolicy_Properties_HourlyScheduleFields = ubx.FieldMap{
-		"Minute": ubx.FieldSpec{WireName: "minute"},
-		"SnapshotsToKeep": ubx.FieldSpec{WireName: "snapshots_to_keep"},
-		"UsedBytes": ubx.FieldSpec{WireName: "used_bytes"},
-	}
+	"Minute":          ubx.FieldSpec{WireName: "minute"},
+	"SnapshotsToKeep": ubx.FieldSpec{WireName: "snapshots_to_keep"},
+	"UsedBytes":       ubx.FieldSpec{WireName: "used_bytes"},
+}
 
 var SnapshotPolicy_Properties_MonthlyScheduleFields = ubx.FieldMap{
-		"DaysOfMonth": ubx.FieldSpec{WireName: "days_of_month"},
-		"Hour": ubx.FieldSpec{WireName: "hour"},
-		"Minute": ubx.FieldSpec{WireName: "minute"},
-		"SnapshotsToKeep": ubx.FieldSpec{WireName: "snapshots_to_keep"},
-		"UsedBytes": ubx.FieldSpec{WireName: "used_bytes"},
-	}
+	"DaysOfMonth":     ubx.FieldSpec{WireName: "days_of_month"},
+	"Hour":            ubx.FieldSpec{WireName: "hour"},
+	"Minute":          ubx.FieldSpec{WireName: "minute"},
+	"SnapshotsToKeep": ubx.FieldSpec{WireName: "snapshots_to_keep"},
+	"UsedBytes":       ubx.FieldSpec{WireName: "used_bytes"},
+}
 
 var SnapshotPolicy_Properties_WeeklyScheduleFields = ubx.FieldMap{
-		"Day": ubx.FieldSpec{WireName: "day"},
-		"Hour": ubx.FieldSpec{WireName: "hour"},
-		"Minute": ubx.FieldSpec{WireName: "minute"},
-		"SnapshotsToKeep": ubx.FieldSpec{WireName: "snapshots_to_keep"},
-		"UsedBytes": ubx.FieldSpec{WireName: "used_bytes"},
-	}
+	"Day":             ubx.FieldSpec{WireName: "day"},
+	"Hour":            ubx.FieldSpec{WireName: "hour"},
+	"Minute":          ubx.FieldSpec{WireName: "minute"},
+	"SnapshotsToKeep": ubx.FieldSpec{WireName: "snapshots_to_keep"},
+	"UsedBytes":       ubx.FieldSpec{WireName: "used_bytes"},
+}
 
 var SnapshotPolicy_PropertiesFields = ubx.FieldMap{
-		"DailySchedule": ubx.FieldSpec{
-			WireName: "daily_schedule",
-			Kind: "object",
-			Fields: SnapshotPolicy_Properties_DailyScheduleFields,
-		},
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"HourlySchedule": ubx.FieldSpec{
-			WireName: "hourly_schedule",
-			Kind: "object",
-			Fields: SnapshotPolicy_Properties_HourlyScheduleFields,
-		},
-		"MonthlySchedule": ubx.FieldSpec{
-			WireName: "monthly_schedule",
-			Kind: "object",
-			Fields: SnapshotPolicy_Properties_MonthlyScheduleFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"WeeklySchedule": ubx.FieldSpec{
-			WireName: "weekly_schedule",
-			Kind: "object",
-			Fields: SnapshotPolicy_Properties_WeeklyScheduleFields,
-		},
-	}
+	"DailySchedule": ubx.FieldSpec{
+		WireName: "daily_schedule",
+		Kind:     "object",
+		Fields:   SnapshotPolicy_Properties_DailyScheduleFields,
+	},
+	"Enabled": ubx.FieldSpec{WireName: "enabled"},
+	"HourlySchedule": ubx.FieldSpec{
+		WireName: "hourly_schedule",
+		Kind:     "object",
+		Fields:   SnapshotPolicy_Properties_HourlyScheduleFields,
+	},
+	"MonthlySchedule": ubx.FieldSpec{
+		WireName: "monthly_schedule",
+		Kind:     "object",
+		Fields:   SnapshotPolicy_Properties_MonthlyScheduleFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"WeeklySchedule": ubx.FieldSpec{
+		WireName: "weekly_schedule",
+		Kind:     "object",
+		Fields:   SnapshotPolicy_Properties_WeeklyScheduleFields,
+	},
+}
 
 type SnapshotPolicyConfig struct {
 	// The geo-location where the resource lives
@@ -144,8 +144,8 @@ var SnapshotPolicy = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SnapshotPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   SnapshotPolicy_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

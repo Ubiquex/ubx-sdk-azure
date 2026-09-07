@@ -13,10 +13,10 @@ type ApimapisOperationContract2_Properties struct {
 }
 
 var ApimapisOperationContract2_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Method": ubx.FieldSpec{WireName: "method"},
-		"UrlTemplate": ubx.FieldSpec{WireName: "url_template"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Method":      ubx.FieldSpec{WireName: "method"},
+	"UrlTemplate": ubx.FieldSpec{WireName: "url_template"},
+}
 
 type ApimapisOperationContract2Config struct {
 	// Operation Contract Properties
@@ -33,8 +33,8 @@ var ApimapisOperationContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimapisOperationContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimapisOperationContract2_PropertiesFields,
 		},
 	},
 }

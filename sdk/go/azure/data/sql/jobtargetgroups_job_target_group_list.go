@@ -4,13 +4,13 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobtargetgroupsJobTargetGroupList_Value_Properties_Members struct {
-	DatabaseName any
-	ElasticPoolName any
-	MembershipType any
+	DatabaseName      any
+	ElasticPoolName   any
+	MembershipType    any
 	RefreshCredential any
-	ServerName any
-	ShardMapName any
-	Type any
+	ServerName        any
+	ShardMapName      any
+	Type              any
 }
 
 type JobtargetgroupsJobTargetGroupList_Value_Properties struct {
@@ -23,13 +23,13 @@ type JobtargetgroupsJobTargetGroupList_Value struct {
 
 type JobtargetgroupsJobTargetGroupListConfig struct {
 	JobAgentName any
-	ServerName any
+	ServerName   any
 }
 
 type JobtargetgroupsJobTargetGroupListAttrs struct {
 	JobAgentName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The JobTargetGroup items on this page
 	Value any
@@ -39,6 +39,6 @@ var JobtargetgroupsJobTargetGroupList = ubx.DataSourceBinding{
 	WireType: "azure_sql_jobtargetgroups_job_target_group_list",
 	Fields: ubx.FieldMap{
 		"JobAgentName": ubx.FieldSpec{WireName: "job_agent_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

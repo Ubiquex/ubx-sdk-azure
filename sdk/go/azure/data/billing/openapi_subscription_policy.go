@@ -4,10 +4,10 @@ package billing
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSubscriptionPolicy_Properties_Policies struct {
-	Name any
+	Name       any
 	PolicyType any
-	Scope any
-	Value any
+	Scope      any
+	Value      any
 }
 
 type OpenapiSubscriptionPolicy_Properties struct {
@@ -29,6 +29,5 @@ type OpenapiSubscriptionPolicyAttrs struct {
 
 var OpenapiSubscriptionPolicy = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_subscription_policy",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

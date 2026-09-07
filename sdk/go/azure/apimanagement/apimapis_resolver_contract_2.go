@@ -13,10 +13,10 @@ type ApimapisResolverContract2_Properties struct {
 }
 
 var ApimapisResolverContract2_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Path":        ubx.FieldSpec{WireName: "path"},
+}
 
 type ApimapisResolverContract2Config struct {
 	// GraphQL API Resolver Entity Base Contract details.
@@ -33,8 +33,8 @@ var ApimapisResolverContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimapisResolverContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimapisResolverContract2_PropertiesFields,
 		},
 	},
 }

@@ -23,7 +23,7 @@ type OpenapiPipelineRunConfig struct {
 type OpenapiPipelineRunAttrs struct {
 	// The duration of a pipeline run.
 	DurationInMs any
-	FactoryName any
+	FactoryName  any
 	// Provides entity name and id that started the pipeline run.
 	InvokedBy any
 	// Indicates if the recovered pipeline run is the latest in its group.
@@ -42,7 +42,7 @@ type OpenapiPipelineRunAttrs struct {
 	RunEnd any
 	// Identifier that correlates all the recovery runs of a pipeline run.
 	RunGroupId any
-	RunId any
+	RunId      any
 	// The start time of a pipeline run in ISO8601 format.
 	RunStart any
 	// The status of a pipeline run. Possible values: Queued, InProgress, Succeeded, Failed, Canceling, Cancelled

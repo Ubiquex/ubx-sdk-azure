@@ -9,14 +9,14 @@ type DescendantInfoList_Value_Properties_Parent struct {
 
 type DescendantInfoList_Value_Properties struct {
 	DisplayName any
-	Parent any
+	Parent      any
 }
 
 type DescendantInfoList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type DescendantInfoListConfig struct {

@@ -4,13 +4,13 @@ package devcenter
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VdiDevCenterSkuList_Value_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type VdiDevCenterSkuList_Value struct {
 	Capabilities any
-	Locations any
+	Locations    any
 	ResourceType any
 }
 
@@ -26,6 +26,5 @@ type VdiDevCenterSkuListAttrs struct {
 
 var VdiDevCenterSkuList = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_vdi_dev_center_sku_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

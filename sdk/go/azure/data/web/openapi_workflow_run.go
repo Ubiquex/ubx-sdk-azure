@@ -100,24 +100,24 @@ type OpenapiWorkflowRun_Properties struct {
 }
 
 type OpenapiWorkflowRunConfig struct {
-	Name any
-	RunName any
+	Name         any
+	RunName      any
 	WorkflowName any
 }
 
 type OpenapiWorkflowRunAttrs struct {
 	Name any
 	// The workflow run properties.
-	Properties any
-	RunName any
+	Properties   any
+	RunName      any
 	WorkflowName any
 }
 
 var OpenapiWorkflowRun = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_run",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
+		"RunName":      ubx.FieldSpec{WireName: "run_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

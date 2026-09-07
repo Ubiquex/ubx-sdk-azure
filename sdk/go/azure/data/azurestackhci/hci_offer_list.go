@@ -4,17 +4,17 @@ package azurestackhci
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HciOfferList_Value_Properties_SkuMappings struct {
-	CatalogPlanId any
-	MarketplaceSkuId any
+	CatalogPlanId          any
+	MarketplaceSkuId       any
 	MarketplaceSkuVersions any
 }
 
 type HciOfferList_Value_Properties struct {
-	Content any
-	ContentVersion any
+	Content           any
+	ContentVersion    any
 	ProvisioningState any
-	PublisherId any
-	SkuMappings any
+	PublisherId       any
+	SkuMappings       any
 }
 
 type HciOfferList_Value struct {

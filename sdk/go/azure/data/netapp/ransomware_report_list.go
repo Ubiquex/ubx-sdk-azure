@@ -4,25 +4,25 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RansomwareReportList_Value_Properties_Suspects_SuspectFiles struct {
-	FileTimestamp any
+	FileTimestamp   any
 	SuspectFileName any
 }
 
 type RansomwareReportList_Value_Properties_Suspects struct {
-	Extension any
-	FileCount any
-	Resolution any
+	Extension    any
+	FileCount    any
+	Resolution   any
 	SuspectFiles any
 }
 
 type RansomwareReportList_Value_Properties struct {
-	ClearedCount any
-	EventTime any
+	ClearedCount      any
+	EventTime         any
 	ProvisioningState any
-	ReportedCount any
-	Severity any
-	State any
-	Suspects any
+	ReportedCount     any
+	Severity          any
+	State             any
+	Suspects          any
 }
 
 type RansomwareReportList_Value struct {
@@ -31,8 +31,8 @@ type RansomwareReportList_Value struct {
 
 type RansomwareReportListConfig struct {
 	AccountName any
-	PoolName any
-	VolumeName any
+	PoolName    any
+	VolumeName  any
 }
 
 type RansomwareReportListAttrs struct {
@@ -41,7 +41,7 @@ type RansomwareReportListAttrs struct {
 	NextLink any
 	PoolName any
 	// The RansomwareReport items on this page
-	Value any
+	Value      any
 	VolumeName any
 }
 
@@ -49,7 +49,7 @@ var RansomwareReportList = ubx.DataSourceBinding{
 	WireType: "azure_netapp_ransomware_report_list",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
+		"VolumeName":  ubx.FieldSpec{WireName: "volume_name"},
 	},
 }

@@ -5,26 +5,26 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCloudVmClusterList_Value_Properties_DataCollectionOptions struct {
 	IsDiagnosticsEventsEnabled any
-	IsHealthMonitoringEnabled any
-	IsIncidentLogsEnabled any
+	IsHealthMonitoringEnabled  any
+	IsIncidentLogsEnabled      any
 }
 
 type OpenapiCloudVmClusterList_Value_Properties_FileSystemConfigurationDetails struct {
 	FileSystemSizeGb any
-	MountPoint any
+	MountPoint       any
 }
 
 type OpenapiCloudVmClusterList_Value_Properties_IormConfigCache_DbPlans struct {
-	DbName any
+	DbName          any
 	FlashCacheLimit any
-	Share any
+	Share           any
 }
 
 type OpenapiCloudVmClusterList_Value_Properties_IormConfigCache struct {
-	DbPlans any
+	DbPlans          any
 	LifecycleDetails any
-	LifecycleState any
-	Objective any
+	LifecycleState   any
+	Objective        any
 }
 
 type OpenapiCloudVmClusterList_Value_Properties_NsgCidrs_DestinationPortRange struct {
@@ -34,62 +34,62 @@ type OpenapiCloudVmClusterList_Value_Properties_NsgCidrs_DestinationPortRange st
 
 type OpenapiCloudVmClusterList_Value_Properties_NsgCidrs struct {
 	DestinationPortRange any
-	Source any
+	Source               any
 }
 
 type OpenapiCloudVmClusterList_Value_Properties struct {
-	BackupSubnetCidr any
-	CloudExadataInfrastructureId any
-	ClusterName any
-	CompartmentId any
-	ComputeModel any
-	ComputeNodes any
-	CpuCoreCount any
-	DataCollectionOptions any
-	DataStoragePercentage any
-	DataStorageSizeInTbs any
-	DbNodeStorageSizeInGbs any
-	DbServers any
-	DiskRedundancy any
-	DisplayName any
-	Domain any
-	ExascaleDbStorageVaultId any
+	BackupSubnetCidr               any
+	CloudExadataInfrastructureId   any
+	ClusterName                    any
+	CompartmentId                  any
+	ComputeModel                   any
+	ComputeNodes                   any
+	CpuCoreCount                   any
+	DataCollectionOptions          any
+	DataStoragePercentage          any
+	DataStorageSizeInTbs           any
+	DbNodeStorageSizeInGbs         any
+	DbServers                      any
+	DiskRedundancy                 any
+	DisplayName                    any
+	Domain                         any
+	ExascaleDbStorageVaultId       any
 	FileSystemConfigurationDetails any
-	GiVersion any
-	Hostname any
-	IormConfigCache any
-	IsLocalBackupEnabled any
-	IsSparseDiskgroupEnabled any
-	LastUpdateHistoryEntryId any
-	LicenseModel any
-	LifecycleDetails any
-	LifecycleState any
-	ListenerPort any
-	MemorySizeInGbs any
-	NodeCount any
-	NsgCidrs any
-	NsgUrl any
-	OciUrl any
-	Ocid any
-	OcpuCount any
-	ProvisioningState any
-	ScanDnsName any
-	ScanDnsRecordId any
-	ScanIpIds any
-	ScanListenerPortTcp any
-	ScanListenerPortTcpSsl any
-	Shape any
-	SshPublicKeys any
-	StorageManagementType any
-	StorageSizeInGbs any
-	SubnetId any
-	SubnetOcid any
-	SystemVersion any
-	TimeCreated any
-	TimeZone any
-	VipIds any
-	VnetId any
-	ZoneId any
+	GiVersion                      any
+	Hostname                       any
+	IormConfigCache                any
+	IsLocalBackupEnabled           any
+	IsSparseDiskgroupEnabled       any
+	LastUpdateHistoryEntryId       any
+	LicenseModel                   any
+	LifecycleDetails               any
+	LifecycleState                 any
+	ListenerPort                   any
+	MemorySizeInGbs                any
+	NodeCount                      any
+	NsgCidrs                       any
+	NsgUrl                         any
+	OciUrl                         any
+	Ocid                           any
+	OcpuCount                      any
+	ProvisioningState              any
+	ScanDnsName                    any
+	ScanDnsRecordId                any
+	ScanIpIds                      any
+	ScanListenerPortTcp            any
+	ScanListenerPortTcpSsl         any
+	Shape                          any
+	SshPublicKeys                  any
+	StorageManagementType          any
+	StorageSizeInGbs               any
+	SubnetId                       any
+	SubnetOcid                     any
+	SystemVersion                  any
+	TimeCreated                    any
+	TimeZone                       any
+	VipIds                         any
+	VnetId                         any
+	ZoneId                         any
 }
 
 type OpenapiCloudVmClusterList_Value struct {
@@ -108,6 +108,5 @@ type OpenapiCloudVmClusterListAttrs struct {
 
 var OpenapiCloudVmClusterList = ubx.DataSourceBinding{
 	WireType: "azure_oracle_openapi_cloud_vm_cluster_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

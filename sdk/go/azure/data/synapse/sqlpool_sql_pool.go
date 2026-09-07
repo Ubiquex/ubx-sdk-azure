@@ -44,12 +44,12 @@ type SqlpoolSqlPoolConfig struct {
 
 type SqlpoolSqlPoolAttrs struct {
 	// The geo-location where the resource lives
-	Location any
+	Location    any
 	OperationId any
 	// Properties of a SQL Analytics pool
 	Properties any
 	// SQL pool SKU
-	Sku any
+	Sku         any
 	SqlPoolName any
 	// Resource tags.
 	Tags any

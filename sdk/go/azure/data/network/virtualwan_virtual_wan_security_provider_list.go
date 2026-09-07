@@ -6,7 +6,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type VirtualwanVirtualWanSecurityProviderList_SupportedProviders struct {
 	Name any
 	Type any
-	Url any
+	Url  any
 }
 
 type VirtualwanVirtualWanSecurityProviderListConfig struct {
@@ -16,7 +16,7 @@ type VirtualwanVirtualWanSecurityProviderListConfig struct {
 type VirtualwanVirtualWanSecurityProviderListAttrs struct {
 	// List of VirtualWAN security providers.
 	SupportedProviders any
-	VirtualWanname any
+	VirtualWanname     any
 }
 
 var VirtualwanVirtualWanSecurityProviderList = ubx.DataSourceBinding{

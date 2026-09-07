@@ -17,12 +17,12 @@ type OpenapiVariable_Properties struct {
 }
 
 var OpenapiVariable_PropertiesFields = ubx.FieldMap{
-		"CreationTime": ubx.FieldSpec{WireName: "creation_time"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"IsEncrypted": ubx.FieldSpec{WireName: "is_encrypted"},
-		"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"CreationTime":     ubx.FieldSpec{WireName: "creation_time"},
+	"Description":      ubx.FieldSpec{WireName: "description"},
+	"IsEncrypted":      ubx.FieldSpec{WireName: "is_encrypted"},
+	"LastModifiedTime": ubx.FieldSpec{WireName: "last_modified_time"},
+	"Value":            ubx.FieldSpec{WireName: "value"},
+}
 
 type OpenapiVariableConfig struct {
 	// Gets or sets the name of the variable.
@@ -44,8 +44,8 @@ var OpenapiVariable = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiVariable_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiVariable_PropertiesFields,
 		},
 	},
 }

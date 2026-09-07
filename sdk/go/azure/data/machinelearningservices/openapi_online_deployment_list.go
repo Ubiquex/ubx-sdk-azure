@@ -4,22 +4,22 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOnlineDeploymentList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiOnlineDeploymentList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type OpenapiOnlineDeploymentList_Value_Properties_DataCollector_Collections struct {
-	ClientId any
+	ClientId           any
 	DataCollectionMode any
-	DataId any
-	SamplingRate any
+	DataId             any
+	SamplingRate       any
 }
 
 type OpenapiOnlineDeploymentList_Value_Properties_DataCollector_RequestLogging struct {
@@ -27,23 +27,23 @@ type OpenapiOnlineDeploymentList_Value_Properties_DataCollector_RequestLogging s
 }
 
 type OpenapiOnlineDeploymentList_Value_Properties_DataCollector struct {
-	Collections any
+	Collections    any
 	RequestLogging any
-	RollingRate any
+	RollingRate    any
 }
 
 type OpenapiOnlineDeploymentList_Value_Properties_LivenessProbe struct {
 	FailureThreshold any
-	InitialDelay any
-	Period any
+	InitialDelay     any
+	Period           any
 	SuccessThreshold any
-	Timeout any
+	Timeout          any
 }
 
 type OpenapiOnlineDeploymentList_Value_Properties_RequestSettings struct {
 	MaxConcurrentRequestsPerInstance any
-	MaxQueueWait any
-	RequestTimeout any
+	MaxQueueWait                     any
+	RequestTimeout                   any
 }
 
 type OpenapiOnlineDeploymentList_Value_Properties_ScaleSettings struct {
@@ -51,38 +51,38 @@ type OpenapiOnlineDeploymentList_Value_Properties_ScaleSettings struct {
 }
 
 type OpenapiOnlineDeploymentList_Value_Properties struct {
-	AppInsightsEnabled any
-	DataCollector any
+	AppInsightsEnabled        any
+	DataCollector             any
 	EgressPublicNetworkAccess any
-	EndpointComputeType any
-	InstanceType any
-	LivenessProbe any
-	Model any
-	ModelMountPath any
-	ProvisioningState any
-	ReadinessProbe any
-	RequestSettings any
-	ScaleSettings any
-	StartupProbe any
+	EndpointComputeType       any
+	InstanceType              any
+	LivenessProbe             any
+	Model                     any
+	ModelMountPath            any
+	ProvisioningState         any
+	ReadinessProbe            any
+	RequestSettings           any
+	ScaleSettings             any
+	StartupProbe              any
 }
 
 type OpenapiOnlineDeploymentList_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type OpenapiOnlineDeploymentList_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiOnlineDeploymentListConfig struct {
-	EndpointName any
+	EndpointName  any
 	WorkspaceName any
 }
 
@@ -91,14 +91,14 @@ type OpenapiOnlineDeploymentListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// The OnlineDeployment items on this page
-	Value any
+	Value         any
 	WorkspaceName any
 }
 
 var OpenapiOnlineDeploymentList = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_online_deployment_list",
 	Fields: ubx.FieldMap{
-		"EndpointName": ubx.FieldSpec{WireName: "endpoint_name"},
+		"EndpointName":  ubx.FieldSpec{WireName: "endpoint_name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

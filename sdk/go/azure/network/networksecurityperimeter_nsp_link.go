@@ -27,17 +27,17 @@ type NetworksecurityperimeterNspLink_Properties struct {
 }
 
 var NetworksecurityperimeterNspLink_PropertiesFields = ubx.FieldMap{
-		"AutoApprovedRemotePerimeterResourceId": ubx.FieldSpec{WireName: "auto_approved_remote_perimeter_resource_id"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"LocalInboundProfiles": ubx.FieldSpec{WireName: "local_inbound_profiles"},
-		"LocalOutboundProfiles": ubx.FieldSpec{WireName: "local_outbound_profiles"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"RemoteInboundProfiles": ubx.FieldSpec{WireName: "remote_inbound_profiles"},
-		"RemoteOutboundProfiles": ubx.FieldSpec{WireName: "remote_outbound_profiles"},
-		"RemotePerimeterGuid": ubx.FieldSpec{WireName: "remote_perimeter_guid"},
-		"RemotePerimeterLocation": ubx.FieldSpec{WireName: "remote_perimeter_location"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"AutoApprovedRemotePerimeterResourceId": ubx.FieldSpec{WireName: "auto_approved_remote_perimeter_resource_id"},
+	"Description":                           ubx.FieldSpec{WireName: "description"},
+	"LocalInboundProfiles":                  ubx.FieldSpec{WireName: "local_inbound_profiles"},
+	"LocalOutboundProfiles":                 ubx.FieldSpec{WireName: "local_outbound_profiles"},
+	"ProvisioningState":                     ubx.FieldSpec{WireName: "provisioning_state"},
+	"RemoteInboundProfiles":                 ubx.FieldSpec{WireName: "remote_inbound_profiles"},
+	"RemoteOutboundProfiles":                ubx.FieldSpec{WireName: "remote_outbound_profiles"},
+	"RemotePerimeterGuid":                   ubx.FieldSpec{WireName: "remote_perimeter_guid"},
+	"RemotePerimeterLocation":               ubx.FieldSpec{WireName: "remote_perimeter_location"},
+	"Status":                                ubx.FieldSpec{WireName: "status"},
+}
 
 type NetworksecurityperimeterNspLinkConfig struct {
 	// Properties of NSP Link resource.
@@ -54,8 +54,8 @@ var NetworksecurityperimeterNspLink = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworksecurityperimeterNspLink_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworksecurityperimeterNspLink_PropertiesFields,
 		},
 	},
 }

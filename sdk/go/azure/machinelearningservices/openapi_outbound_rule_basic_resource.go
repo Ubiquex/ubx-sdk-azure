@@ -17,12 +17,12 @@ type OpenapiOutboundRuleBasicResource_Properties struct {
 }
 
 var OpenapiOutboundRuleBasicResource_PropertiesFields = ubx.FieldMap{
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"ErrorInformation": ubx.FieldSpec{WireName: "error_information"},
-		"ParentRuleNames": ubx.FieldSpec{WireName: "parent_rule_names"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Category":         ubx.FieldSpec{WireName: "category"},
+	"ErrorInformation": ubx.FieldSpec{WireName: "error_information"},
+	"ParentRuleNames":  ubx.FieldSpec{WireName: "parent_rule_names"},
+	"Status":           ubx.FieldSpec{WireName: "status"},
+	"Type":             ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiOutboundRuleBasicResourceConfig struct {
 	// Outbound Rule for the managed network of a machine learning workspace.
@@ -39,8 +39,8 @@ var OpenapiOutboundRuleBasicResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiOutboundRuleBasicResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiOutboundRuleBasicResource_PropertiesFields,
 		},
 	},
 }

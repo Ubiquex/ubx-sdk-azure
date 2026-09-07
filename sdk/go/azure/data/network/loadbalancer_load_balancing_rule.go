@@ -40,14 +40,14 @@ type LoadbalancerLoadBalancingRule_Properties struct {
 }
 
 type LoadbalancerLoadBalancingRuleConfig struct {
-	LoadBalancerName any
+	LoadBalancerName      any
 	LoadBalancingRuleName any
 }
 
 type LoadbalancerLoadBalancingRuleAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
-	LoadBalancerName any
+	Etag                  any
+	LoadBalancerName      any
 	LoadBalancingRuleName any
 	// Name of the resource.
 	Name any
@@ -60,7 +60,7 @@ type LoadbalancerLoadBalancingRuleAttrs struct {
 var LoadbalancerLoadBalancingRule = ubx.DataSourceBinding{
 	WireType: "azure_network_loadbalancer_load_balancing_rule",
 	Fields: ubx.FieldMap{
-		"LoadBalancerName": ubx.FieldSpec{WireName: "load_balancer_name"},
+		"LoadBalancerName":      ubx.FieldSpec{WireName: "load_balancer_name"},
 		"LoadBalancingRuleName": ubx.FieldSpec{WireName: "load_balancing_rule_name"},
 	},
 }

@@ -4,40 +4,40 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDetectorResponse_Properties_DataProvidersMetadata_PropertyBag struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type OpenapiDetectorResponse_Properties_DataProvidersMetadata struct {
-	PropertyBag any
+	PropertyBag  any
 	ProviderName any
 }
 
 type OpenapiDetectorResponse_Properties_Dataset_RenderingProperties struct {
 	Description any
-	Title any
-	Type any
+	Title       any
+	Type        any
 }
 
 type OpenapiDetectorResponse_Properties_Dataset_Table_Columns struct {
 	ColumnName any
 	ColumnType any
-	DataType any
+	DataType   any
 }
 
 type OpenapiDetectorResponse_Properties_Dataset_Table struct {
-	Columns any
-	Rows any
+	Columns   any
+	Rows      any
 	TableName any
 }
 
 type OpenapiDetectorResponse_Properties_Dataset struct {
 	RenderingProperties any
-	Table any
+	Table               any
 }
 
 type OpenapiDetectorResponse_Properties_Metadata_SupportTopicList struct {
-	Id any
+	Id    any
 	PesId any
 }
 
@@ -71,13 +71,13 @@ type OpenapiDetectorResponse_Properties_Status struct {
 
 type OpenapiDetectorResponse_Properties_SuggestedUtterances_Results_SampleUtterance struct {
 	Links any
-	Qid any
-	Text any
+	Qid   any
+	Text  any
 }
 
 type OpenapiDetectorResponse_Properties_SuggestedUtterances_Results struct {
 	SampleUtterance any
-	Score any
+	Score           any
 }
 
 type OpenapiDetectorResponse_Properties_SuggestedUtterances struct {
@@ -102,31 +102,31 @@ type OpenapiDetectorResponse_Properties struct {
 
 type OpenapiDetectorResponseConfig struct {
 	DetectorName any
-	EndTime any
-	Name any
-	StartTime any
-	TimeGrain any
+	EndTime      any
+	Name         any
+	StartTime    any
+	TimeGrain    any
 }
 
 type OpenapiDetectorResponseAttrs struct {
 	DetectorName any
-	EndTime any
+	EndTime      any
 	// Kind of resource.
 	Kind any
 	Name any
 	// DetectorResponse resource specific properties
 	Properties any
-	StartTime any
-	TimeGrain any
+	StartTime  any
+	TimeGrain  any
 }
 
 var OpenapiDetectorResponse = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_detector_response",
 	Fields: ubx.FieldMap{
 		"DetectorName": ubx.FieldSpec{WireName: "detector_name"},
-		"EndTime": ubx.FieldSpec{WireName: "end_time"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"TimeGrain": ubx.FieldSpec{WireName: "time_grain"},
+		"EndTime":      ubx.FieldSpec{WireName: "end_time"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
+		"StartTime":    ubx.FieldSpec{WireName: "start_time"},
+		"TimeGrain":    ubx.FieldSpec{WireName: "time_grain"},
 	},
 }

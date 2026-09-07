@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CloudngfwFirewallStatusResourceList_Value_Properties_PanoramaStatus struct {
 	PanoramaServer2Status any
-	PanoramaServerStatus any
+	PanoramaServerStatus  any
 }
 
 type CloudngfwFirewallStatusResourceList_Value_Properties_StrataCloudManagerInfo struct {
 	FolderName any
-	HubUrl any
+	HubUrl     any
 }
 
 type CloudngfwFirewallStatusResourceList_Value_Properties struct {
-	HealthReason any
-	HealthStatus any
-	IsPanoramaManaged any
-	IsStrataCloudManaged any
-	PanoramaStatus any
-	ProvisioningState any
+	HealthReason           any
+	HealthStatus           any
+	IsPanoramaManaged      any
+	IsStrataCloudManaged   any
+	PanoramaStatus         any
+	ProvisioningState      any
 	StrataCloudManagerInfo any
 }
 

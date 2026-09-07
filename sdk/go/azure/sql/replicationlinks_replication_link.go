@@ -31,19 +31,19 @@ type ReplicationlinksReplicationLink_Properties struct {
 }
 
 var ReplicationlinksReplicationLink_PropertiesFields = ubx.FieldMap{
-		"IsTerminationAllowed": ubx.FieldSpec{WireName: "is_termination_allowed"},
-		"LinkType": ubx.FieldSpec{WireName: "link_type"},
-		"PartnerDatabase": ubx.FieldSpec{WireName: "partner_database"},
-		"PartnerDatabaseId": ubx.FieldSpec{WireName: "partner_database_id"},
-		"PartnerLocation": ubx.FieldSpec{WireName: "partner_location"},
-		"PartnerRole": ubx.FieldSpec{WireName: "partner_role"},
-		"PartnerServer": ubx.FieldSpec{WireName: "partner_server"},
-		"PercentComplete": ubx.FieldSpec{WireName: "percent_complete"},
-		"ReplicationMode": ubx.FieldSpec{WireName: "replication_mode"},
-		"ReplicationState": ubx.FieldSpec{WireName: "replication_state"},
-		"Role": ubx.FieldSpec{WireName: "role"},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-	}
+	"IsTerminationAllowed": ubx.FieldSpec{WireName: "is_termination_allowed"},
+	"LinkType":             ubx.FieldSpec{WireName: "link_type"},
+	"PartnerDatabase":      ubx.FieldSpec{WireName: "partner_database"},
+	"PartnerDatabaseId":    ubx.FieldSpec{WireName: "partner_database_id"},
+	"PartnerLocation":      ubx.FieldSpec{WireName: "partner_location"},
+	"PartnerRole":          ubx.FieldSpec{WireName: "partner_role"},
+	"PartnerServer":        ubx.FieldSpec{WireName: "partner_server"},
+	"PercentComplete":      ubx.FieldSpec{WireName: "percent_complete"},
+	"ReplicationMode":      ubx.FieldSpec{WireName: "replication_mode"},
+	"ReplicationState":     ubx.FieldSpec{WireName: "replication_state"},
+	"Role":                 ubx.FieldSpec{WireName: "role"},
+	"StartTime":            ubx.FieldSpec{WireName: "start_time"},
+}
 
 type ReplicationlinksReplicationLinkConfig struct {
 	// Properties of a replication link.
@@ -60,8 +60,8 @@ var ReplicationlinksReplicationLink = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ReplicationlinksReplicationLink_PropertiesFields,
+			Kind:     "object",
+			Fields:   ReplicationlinksReplicationLink_PropertiesFields,
 		},
 	},
 }

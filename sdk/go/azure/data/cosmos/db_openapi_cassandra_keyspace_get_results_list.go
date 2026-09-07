@@ -4,14 +4,14 @@ package cosmos
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiCassandraKeyspaceGetResultsList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type DbOpenapiCassandraKeyspaceGetResultsList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,25 +21,25 @@ type DbOpenapiCassandraKeyspaceGetResultsList_Value_Properties_Options_Autoscale
 
 type DbOpenapiCassandraKeyspaceGetResultsList_Value_Properties_Options struct {
 	AutoscaleSettings any
-	Throughput any
+	Throughput        any
 }
 
 type DbOpenapiCassandraKeyspaceGetResultsList_Value_Properties_Resource struct {
 	Etag any
-	Rid any
-	Ts any
+	Rid  any
+	Ts   any
 }
 
 type DbOpenapiCassandraKeyspaceGetResultsList_Value_Properties struct {
-	Options any
+	Options  any
 	Resource any
 }
 
 type DbOpenapiCassandraKeyspaceGetResultsList_Value struct {
-	Identity any
-	Location any
+	Identity   any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DbOpenapiCassandraKeyspaceGetResultsListConfig struct {
@@ -48,7 +48,7 @@ type DbOpenapiCassandraKeyspaceGetResultsListConfig struct {
 
 type DbOpenapiCassandraKeyspaceGetResultsListAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// List of Cassandra keyspaces and their properties.
 	Value any
 }

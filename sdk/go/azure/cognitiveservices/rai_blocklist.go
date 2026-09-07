@@ -9,8 +9,8 @@ type RaiBlocklist_Properties struct {
 }
 
 var RaiBlocklist_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+}
 
 type RaiBlocklistConfig struct {
 	// RAI Custom Blocklist properties.
@@ -33,8 +33,8 @@ var RaiBlocklist = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: RaiBlocklist_PropertiesFields,
+			Kind:     "object",
+			Fields:   RaiBlocklist_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

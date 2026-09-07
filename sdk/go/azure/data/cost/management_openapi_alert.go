@@ -86,7 +86,7 @@ type ManagementOpenapiAlert_Properties struct {
 
 type ManagementOpenapiAlertConfig struct {
 	AlertId any
-	Scope any
+	Scope   any
 }
 
 type ManagementOpenapiAlertAttrs struct {
@@ -95,13 +95,13 @@ type ManagementOpenapiAlertAttrs struct {
 	ETag any
 	// Alert properties.
 	Properties any
-	Scope any
+	Scope      any
 }
 
 var ManagementOpenapiAlert = ubx.DataSourceBinding{
 	WireType: "azure_cost_management_openapi_alert",
 	Fields: ubx.FieldMap{
 		"AlertId": ubx.FieldSpec{WireName: "alert_id"},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
+		"Scope":   ubx.FieldSpec{WireName: "scope"},
 	},
 }

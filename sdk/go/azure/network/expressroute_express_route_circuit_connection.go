@@ -33,35 +33,35 @@ type ExpressrouteExpressRouteCircuitConnection_Properties struct {
 }
 
 var ExpressrouteExpressRouteCircuitConnection_Properties_ExpressRouteCircuitPeeringFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var ExpressrouteExpressRouteCircuitConnection_Properties_Ipv6CircuitConnectionConfigFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
-	}
+	"AddressPrefix":           ubx.FieldSpec{WireName: "address_prefix"},
+	"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
+}
 
 var ExpressrouteExpressRouteCircuitConnection_PropertiesFields = ubx.FieldMap{
-		"AddressPrefix": ubx.FieldSpec{WireName: "address_prefix"},
-		"AuthorizationKey": ubx.FieldSpec{WireName: "authorization_key"},
-		"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
-		"ExpressRouteCircuitPeering": ubx.FieldSpec{
-			WireName: "express_route_circuit_peering",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuitConnection_Properties_ExpressRouteCircuitPeeringFields,
-		},
-		"Ipv6CircuitConnectionConfig": ubx.FieldSpec{
-			WireName: "ipv6_circuit_connection_config",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuitConnection_Properties_Ipv6CircuitConnectionConfigFields,
-		},
-		"PeerExpressRouteCircuitPeering": ubx.FieldSpec{
-			WireName: "peer_express_route_circuit_peering",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuitConnection_Properties_ExpressRouteCircuitPeeringFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AddressPrefix":           ubx.FieldSpec{WireName: "address_prefix"},
+	"AuthorizationKey":        ubx.FieldSpec{WireName: "authorization_key"},
+	"CircuitConnectionStatus": ubx.FieldSpec{WireName: "circuit_connection_status"},
+	"ExpressRouteCircuitPeering": ubx.FieldSpec{
+		WireName: "express_route_circuit_peering",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuitConnection_Properties_ExpressRouteCircuitPeeringFields,
+	},
+	"Ipv6CircuitConnectionConfig": ubx.FieldSpec{
+		WireName: "ipv6_circuit_connection_config",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuitConnection_Properties_Ipv6CircuitConnectionConfigFields,
+	},
+	"PeerExpressRouteCircuitPeering": ubx.FieldSpec{
+		WireName: "peer_express_route_circuit_peering",
+		Kind:     "object",
+		Fields:   ExpressrouteExpressRouteCircuitConnection_Properties_ExpressRouteCircuitPeeringFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ExpressrouteExpressRouteCircuitConnectionConfig struct {
 	// Name of the resource.
@@ -87,8 +87,8 @@ var ExpressrouteExpressRouteCircuitConnection = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ExpressrouteExpressRouteCircuitConnection_PropertiesFields,
+			Kind:     "object",
+			Fields:   ExpressrouteExpressRouteCircuitConnection_PropertiesFields,
 		},
 	},
 }

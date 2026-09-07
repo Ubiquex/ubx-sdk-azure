@@ -4,32 +4,32 @@ package logic
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JsonSchemaConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
-	TriggerName any
-	WorkflowName any
+	SubscriptionId    any
+	TriggerName       any
+	WorkflowName      any
 }
 
 type JsonSchemaAttrs struct {
 	ApiVersion any
 	// The JSON content.
-	Content any
+	Content           any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The JSON title.
-	Title any
-	TriggerName any
+	Title        any
+	TriggerName  any
 	WorkflowName any
 }
 
 var JsonSchema = ubx.DataSourceBinding{
 	WireType: "azure_logic_json_schema",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TriggerName": ubx.FieldSpec{WireName: "trigger_name"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"TriggerName":       ubx.FieldSpec{WireName: "trigger_name"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

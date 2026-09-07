@@ -4,32 +4,32 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlPolicyList_Value_Properties struct {
-	CreatedDate any
-	Description any
-	EvaluatorType any
-	FactData any
-	FactName any
+	CreatedDate       any
+	Description       any
+	EvaluatorType     any
+	FactData          any
+	FactName          any
 	ProvisioningState any
-	Status any
-	Threshold any
-	UniqueIdentifier any
+	Status            any
+	Threshold         any
+	UniqueIdentifier  any
 }
 
 type DtlPolicyList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlPolicyListConfig struct {
-	LabName any
+	LabName       any
 	PolicySetName any
 }
 
 type DtlPolicyListAttrs struct {
 	LabName any
 	// The link to the next page of items
-	NextLink any
+	NextLink      any
 	PolicySetName any
 	// The Policy items on this page
 	Value any
@@ -38,7 +38,7 @@ type DtlPolicyListAttrs struct {
 var DtlPolicyList = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_policy_list",
 	Fields: ubx.FieldMap{
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
+		"LabName":       ubx.FieldSpec{WireName: "lab_name"},
 		"PolicySetName": ubx.FieldSpec{WireName: "policy_set_name"},
 	},
 }

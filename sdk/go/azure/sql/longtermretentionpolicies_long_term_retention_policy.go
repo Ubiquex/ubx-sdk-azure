@@ -19,13 +19,13 @@ type LongtermretentionpoliciesLongTermRetentionPolicy_Properties struct {
 }
 
 var LongtermretentionpoliciesLongTermRetentionPolicy_PropertiesFields = ubx.FieldMap{
-		"MonthlyRetention": ubx.FieldSpec{WireName: "monthly_retention"},
-		"TimeBasedImmutability": ubx.FieldSpec{WireName: "time_based_immutability"},
-		"TimeBasedImmutabilityMode": ubx.FieldSpec{WireName: "time_based_immutability_mode"},
-		"WeekOfYear": ubx.FieldSpec{WireName: "week_of_year"},
-		"WeeklyRetention": ubx.FieldSpec{WireName: "weekly_retention"},
-		"YearlyRetention": ubx.FieldSpec{WireName: "yearly_retention"},
-	}
+	"MonthlyRetention":          ubx.FieldSpec{WireName: "monthly_retention"},
+	"TimeBasedImmutability":     ubx.FieldSpec{WireName: "time_based_immutability"},
+	"TimeBasedImmutabilityMode": ubx.FieldSpec{WireName: "time_based_immutability_mode"},
+	"WeekOfYear":                ubx.FieldSpec{WireName: "week_of_year"},
+	"WeeklyRetention":           ubx.FieldSpec{WireName: "weekly_retention"},
+	"YearlyRetention":           ubx.FieldSpec{WireName: "yearly_retention"},
+}
 
 type LongtermretentionpoliciesLongTermRetentionPolicyConfig struct {
 	// Properties of a long term retention policy
@@ -42,8 +42,8 @@ var LongtermretentionpoliciesLongTermRetentionPolicy = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: LongtermretentionpoliciesLongTermRetentionPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   LongtermretentionpoliciesLongTermRetentionPolicy_PropertiesFields,
 		},
 	},
 }

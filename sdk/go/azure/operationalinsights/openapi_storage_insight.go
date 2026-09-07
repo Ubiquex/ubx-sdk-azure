@@ -29,29 +29,29 @@ type OpenapiStorageInsight_Properties struct {
 }
 
 var OpenapiStorageInsight_Properties_StatusFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"State": ubx.FieldSpec{WireName: "state"},
-	}
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"State":       ubx.FieldSpec{WireName: "state"},
+}
 
 var OpenapiStorageInsight_Properties_StorageAccountFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-	}
+	"Id":  ubx.FieldSpec{WireName: "id"},
+	"Key": ubx.FieldSpec{WireName: "key"},
+}
 
 var OpenapiStorageInsight_PropertiesFields = ubx.FieldMap{
-		"Containers": ubx.FieldSpec{WireName: "containers"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: OpenapiStorageInsight_Properties_StatusFields,
-		},
-		"StorageAccount": ubx.FieldSpec{
-			WireName: "storage_account",
-			Kind: "object",
-			Fields: OpenapiStorageInsight_Properties_StorageAccountFields,
-		},
-		"Tables": ubx.FieldSpec{WireName: "tables"},
-	}
+	"Containers": ubx.FieldSpec{WireName: "containers"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   OpenapiStorageInsight_Properties_StatusFields,
+	},
+	"StorageAccount": ubx.FieldSpec{
+		WireName: "storage_account",
+		Kind:     "object",
+		Fields:   OpenapiStorageInsight_Properties_StorageAccountFields,
+	},
+	"Tables": ubx.FieldSpec{WireName: "tables"},
+}
 
 type OpenapiStorageInsightConfig struct {
 	// The ETag of the storage insight.
@@ -77,8 +77,8 @@ var OpenapiStorageInsight = ubx.ResourceBinding{
 		"ETag": ubx.FieldSpec{WireName: "e_tag"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiStorageInsight_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiStorageInsight_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

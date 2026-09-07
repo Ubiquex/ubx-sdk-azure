@@ -4,14 +4,14 @@ package keyvault
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiMhsmprivateEndpointConnectionList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type OpenapiMhsmprivateEndpointConnectionList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,28 +21,28 @@ type OpenapiMhsmprivateEndpointConnectionList_Value_Properties_PrivateEndpoint s
 
 type OpenapiMhsmprivateEndpointConnectionList_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiMhsmprivateEndpointConnectionList_Value_Properties struct {
-	PrivateEndpoint any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiMhsmprivateEndpointConnectionList_Value_Sku struct {
 	Family any
-	Name any
+	Name   any
 }
 
 type OpenapiMhsmprivateEndpointConnectionList_Value struct {
-	Etag any
-	Identity any
-	Location any
+	Etag       any
+	Identity   any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiMhsmprivateEndpointConnectionListConfig struct {

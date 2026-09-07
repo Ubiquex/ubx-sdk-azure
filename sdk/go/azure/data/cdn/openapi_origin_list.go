@@ -4,10 +4,10 @@ package cdn
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiOriginList_Value_Properties struct {
-	HostName any
+	HostName              any
 	PrivateEndpointStatus any
-	ProvisioningState any
-	ResourceState any
+	ProvisioningState     any
+	ResourceState         any
 }
 
 type OpenapiOriginList_Value struct {
@@ -16,13 +16,13 @@ type OpenapiOriginList_Value struct {
 
 type OpenapiOriginListConfig struct {
 	EndpointName any
-	ProfileName any
+	ProfileName  any
 }
 
 type OpenapiOriginListAttrs struct {
 	EndpointName any
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The Origin items on this page
 	Value any
@@ -32,6 +32,6 @@ var OpenapiOriginList = ubx.DataSourceBinding{
 	WireType: "azure_cdn_openapi_origin_list",
 	Fields: ubx.FieldMap{
 		"EndpointName": ubx.FieldSpec{WireName: "endpoint_name"},
-		"ProfileName": ubx.FieldSpec{WireName: "profile_name"},
+		"ProfileName":  ubx.FieldSpec{WireName: "profile_name"},
 	},
 }

@@ -17,6 +17,5 @@ type OpenapiAvailableClusterListAttrs struct {
 
 var OpenapiAvailableClusterList = ubx.DataSourceBinding{
 	WireType: "azure_eventhub_openapi_available_cluster_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

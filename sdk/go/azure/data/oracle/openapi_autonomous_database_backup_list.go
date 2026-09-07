@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAutonomousDatabaseBackupList_Value_Properties struct {
 	AutonomousDatabaseOcid any
-	BackupType any
-	DatabaseSizeInTbs any
-	DbVersion any
-	DisplayName any
-	IsAutomatic any
-	IsRestorable any
-	LifecycleDetails any
-	LifecycleState any
-	Ocid any
-	ProvisioningState any
-	RetentionPeriodInDays any
-	SizeInTbs any
-	TimeAvailableTil any
-	TimeEnded any
-	TimeStarted any
+	BackupType             any
+	DatabaseSizeInTbs      any
+	DbVersion              any
+	DisplayName            any
+	IsAutomatic            any
+	IsRestorable           any
+	LifecycleDetails       any
+	LifecycleState         any
+	Ocid                   any
+	ProvisioningState      any
+	RetentionPeriodInDays  any
+	SizeInTbs              any
+	TimeAvailableTil       any
+	TimeEnded              any
+	TimeStarted            any
 }
 
 type OpenapiAutonomousDatabaseBackupList_Value struct {

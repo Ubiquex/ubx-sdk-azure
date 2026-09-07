@@ -13,7 +13,7 @@ type RecordSetList_Value_Properties_Arecords struct {
 
 type RecordSetList_Value_Properties_CaaRecords struct {
 	Flags any
-	Tag any
+	Tag   any
 	Value any
 }
 
@@ -22,7 +22,7 @@ type RecordSetList_Value_Properties_Cnamerecord struct {
 }
 
 type RecordSetList_Value_Properties_Mxrecords struct {
-	Exchange any
+	Exchange   any
 	Preference any
 }
 
@@ -35,20 +35,20 @@ type RecordSetList_Value_Properties_Ptrrecords struct {
 }
 
 type RecordSetList_Value_Properties_Soarecord struct {
-	Email any
-	ExpireTime any
-	Host any
-	MinimumTtl any
-	RefreshTime any
-	RetryTime any
+	Email        any
+	ExpireTime   any
+	Host         any
+	MinimumTtl   any
+	RefreshTime  any
+	RetryTime    any
 	SerialNumber any
 }
 
 type RecordSetList_Value_Properties_Srvrecords struct {
-	Port any
+	Port     any
 	Priority any
-	Target any
-	Weight any
+	Target   any
+	Weight   any
 }
 
 type RecordSetList_Value_Properties_TargetResource struct {
@@ -60,55 +60,55 @@ type RecordSetList_Value_Properties_Txtrecords struct {
 }
 
 type RecordSetList_Value_Properties struct {
-	Aaaarecords any
-	Arecords any
-	CaaRecords any
-	Cnamerecord any
-	Fqdn any
-	Metadata any
-	Mxrecords any
-	Nsrecords any
+	Aaaarecords       any
+	Arecords          any
+	CaaRecords        any
+	Cnamerecord       any
+	Fqdn              any
+	Metadata          any
+	Mxrecords         any
+	Nsrecords         any
 	ProvisioningState any
-	Ptrrecords any
-	Soarecord any
-	Srvrecords any
-	TargetResource any
-	Ttl any
-	Txtrecords any
+	Ptrrecords        any
+	Soarecord         any
+	Srvrecords        any
+	TargetResource    any
+	Ttl               any
+	Txtrecords        any
 }
 
 type RecordSetList_Value struct {
-	Etag any
-	Id any
-	Name any
+	Etag       any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type RecordSetListConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	SubscriptionId any
-	ZoneName any
+	SubscriptionId    any
+	ZoneName          any
 }
 
 type RecordSetListAttrs struct {
 	ApiVersion any
 	// The continuation token for the next page of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// Information about the record sets in the response.
-	Value any
+	Value    any
 	ZoneName any
 }
 
 var RecordSetList = ubx.DataSourceBinding{
 	WireType: "azure_dns_record_set_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"ZoneName": ubx.FieldSpec{WireName: "zone_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"ZoneName":          ubx.FieldSpec{WireName: "zone_name"},
 	},
 }

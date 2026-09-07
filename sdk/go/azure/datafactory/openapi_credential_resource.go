@@ -13,10 +13,10 @@ type OpenapiCredentialResource_Properties struct {
 }
 
 var OpenapiCredentialResource_PropertiesFields = ubx.FieldMap{
-		"Annotations": ubx.FieldSpec{WireName: "annotations"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Annotations": ubx.FieldSpec{WireName: "annotations"},
+	"Description": ubx.FieldSpec{WireName: "description"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+}
 
 type OpenapiCredentialResourceConfig struct {
 	// The Azure Data Factory nested object which contains the information and credential which can be used to connect with related store or compute resource.
@@ -35,8 +35,8 @@ var OpenapiCredentialResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiCredentialResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiCredentialResource_PropertiesFields,
 		},
 	},
 }

@@ -21,14 +21,14 @@ type OpenapiRunbookDraft_DraftContentLink struct {
 
 type OpenapiRunbookDraft_Parameters struct {
 	DefaultValue any
-	IsMandatory any
-	Position any
-	Type any
+	IsMandatory  any
+	Position     any
+	Type         any
 }
 
 type OpenapiRunbookDraftConfig struct {
 	AutomationAccountName any
-	RunbookName any
+	RunbookName           any
 }
 
 type OpenapiRunbookDraftAttrs struct {
@@ -44,7 +44,7 @@ type OpenapiRunbookDraftAttrs struct {
 	// Gets or sets the runbook output types.
 	OutputTypes any
 	// Gets or sets the runbook draft parameters.
-	Parameters any
+	Parameters  any
 	RunbookName any
 }
 
@@ -52,6 +52,6 @@ var OpenapiRunbookDraft = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_runbook_draft",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"RunbookName": ubx.FieldSpec{WireName: "runbook_name"},
+		"RunbookName":           ubx.FieldSpec{WireName: "runbook_name"},
 	},
 }

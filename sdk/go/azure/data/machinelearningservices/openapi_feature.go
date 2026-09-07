@@ -11,27 +11,27 @@ type OpenapiFeature_Properties struct {
 }
 
 type OpenapiFeatureConfig struct {
-	FeatureName any
-	FeaturesetName any
+	FeatureName       any
+	FeaturesetName    any
 	FeaturesetVersion any
-	WorkspaceName any
+	WorkspaceName     any
 }
 
 type OpenapiFeatureAttrs struct {
-	FeatureName any
-	FeaturesetName any
+	FeatureName       any
+	FeaturesetName    any
 	FeaturesetVersion any
 	// DTO object representing feature
-	Properties any
+	Properties    any
 	WorkspaceName any
 }
 
 var OpenapiFeature = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_feature",
 	Fields: ubx.FieldMap{
-		"FeatureName": ubx.FieldSpec{WireName: "feature_name"},
-		"FeaturesetName": ubx.FieldSpec{WireName: "featureset_name"},
+		"FeatureName":       ubx.FieldSpec{WireName: "feature_name"},
+		"FeaturesetName":    ubx.FieldSpec{WireName: "featureset_name"},
 		"FeaturesetVersion": ubx.FieldSpec{WireName: "featureset_version"},
-		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
+		"WorkspaceName":     ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

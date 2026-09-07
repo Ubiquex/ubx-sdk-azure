@@ -4,17 +4,17 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DataConnectionList_Value struct {
-	Kind any
+	Kind     any
 	Location any
 }
 
 type DataConnectionListConfig struct {
-	ClusterName any
+	ClusterName  any
 	DatabaseName any
 }
 
 type DataConnectionListAttrs struct {
-	ClusterName any
+	ClusterName  any
 	DatabaseName any
 	// Link to the next page of results.
 	NextLink any
@@ -25,7 +25,7 @@ type DataConnectionListAttrs struct {
 var DataConnectionList = ubx.DataSourceBinding{
 	WireType: "azure_kusto_data_connection_list",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":  ubx.FieldSpec{WireName: "cluster_name"},
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 	},
 }

@@ -13,10 +13,10 @@ type OpenapiApplication_Properties struct {
 }
 
 var OpenapiApplication_PropertiesFields = ubx.FieldMap{
-		"AllowUpdates": ubx.FieldSpec{WireName: "allow_updates"},
-		"DefaultVersion": ubx.FieldSpec{WireName: "default_version"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"AllowUpdates":   ubx.FieldSpec{WireName: "allow_updates"},
+	"DefaultVersion": ubx.FieldSpec{WireName: "default_version"},
+	"DisplayName":    ubx.FieldSpec{WireName: "display_name"},
+}
 
 type OpenapiApplicationConfig struct {
 	// The properties associated with the Application.
@@ -39,8 +39,8 @@ var OpenapiApplication = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiApplication_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiApplication_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

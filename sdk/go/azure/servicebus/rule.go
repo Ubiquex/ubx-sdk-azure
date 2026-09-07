@@ -47,42 +47,42 @@ type Rule_Properties struct {
 }
 
 var Rule_Properties_ActionFields = ubx.FieldMap{
-		"CompatibilityLevel": ubx.FieldSpec{WireName: "compatibility_level"},
-		"RequiresPreprocessing": ubx.FieldSpec{WireName: "requires_preprocessing"},
-		"SqlExpression": ubx.FieldSpec{WireName: "sql_expression"},
-	}
+	"CompatibilityLevel":    ubx.FieldSpec{WireName: "compatibility_level"},
+	"RequiresPreprocessing": ubx.FieldSpec{WireName: "requires_preprocessing"},
+	"SqlExpression":         ubx.FieldSpec{WireName: "sql_expression"},
+}
 
 var Rule_Properties_CorrelationFilterFields = ubx.FieldMap{
-		"ContentType": ubx.FieldSpec{WireName: "content_type"},
-		"CorrelationId": ubx.FieldSpec{WireName: "correlation_id"},
-		"Label": ubx.FieldSpec{WireName: "label"},
-		"MessageId": ubx.FieldSpec{WireName: "message_id"},
-		"Properties": ubx.FieldSpec{WireName: "properties"},
-		"ReplyTo": ubx.FieldSpec{WireName: "reply_to"},
-		"ReplyToSessionId": ubx.FieldSpec{WireName: "reply_to_session_id"},
-		"RequiresPreprocessing": ubx.FieldSpec{WireName: "requires_preprocessing"},
-		"SessionId": ubx.FieldSpec{WireName: "session_id"},
-		"To": ubx.FieldSpec{WireName: "to"},
-	}
+	"ContentType":           ubx.FieldSpec{WireName: "content_type"},
+	"CorrelationId":         ubx.FieldSpec{WireName: "correlation_id"},
+	"Label":                 ubx.FieldSpec{WireName: "label"},
+	"MessageId":             ubx.FieldSpec{WireName: "message_id"},
+	"Properties":            ubx.FieldSpec{WireName: "properties"},
+	"ReplyTo":               ubx.FieldSpec{WireName: "reply_to"},
+	"ReplyToSessionId":      ubx.FieldSpec{WireName: "reply_to_session_id"},
+	"RequiresPreprocessing": ubx.FieldSpec{WireName: "requires_preprocessing"},
+	"SessionId":             ubx.FieldSpec{WireName: "session_id"},
+	"To":                    ubx.FieldSpec{WireName: "to"},
+}
 
 var Rule_PropertiesFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{
-			WireName: "action",
-			Kind: "object",
-			Fields: Rule_Properties_ActionFields,
-		},
-		"CorrelationFilter": ubx.FieldSpec{
-			WireName: "correlation_filter",
-			Kind: "object",
-			Fields: Rule_Properties_CorrelationFilterFields,
-		},
-		"FilterType": ubx.FieldSpec{WireName: "filter_type"},
-		"SqlFilter": ubx.FieldSpec{
-			WireName: "sql_filter",
-			Kind: "object",
-			Fields: Rule_Properties_ActionFields,
-		},
-	}
+	"Action": ubx.FieldSpec{
+		WireName: "action",
+		Kind:     "object",
+		Fields:   Rule_Properties_ActionFields,
+	},
+	"CorrelationFilter": ubx.FieldSpec{
+		WireName: "correlation_filter",
+		Kind:     "object",
+		Fields:   Rule_Properties_CorrelationFilterFields,
+	},
+	"FilterType": ubx.FieldSpec{WireName: "filter_type"},
+	"SqlFilter": ubx.FieldSpec{
+		WireName: "sql_filter",
+		Kind:     "object",
+		Fields:   Rule_Properties_ActionFields,
+	},
+}
 
 type RuleConfig struct {
 	// Description of Rule Resource.
@@ -101,8 +101,8 @@ var Rule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Rule_PropertiesFields,
+			Kind:     "object",
+			Fields:   Rule_PropertiesFields,
 		},
 	},
 }

@@ -4,9 +4,9 @@ package authorization
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RoledefinitionscallsPermissionList_Value struct {
-	Actions any
-	DataActions any
-	NotActions any
+	Actions        any
+	DataActions    any
+	NotActions     any
 	NotDataActions any
 }
 
@@ -22,6 +22,5 @@ type RoledefinitionscallsPermissionListAttrs struct {
 
 var RoledefinitionscallsPermissionList = ubx.DataSourceBinding{
 	WireType: "azure_authorization_roledefinitionscalls_permission_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

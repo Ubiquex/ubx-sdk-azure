@@ -4,14 +4,14 @@ package signalr
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SignalRresourceList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type SignalRresourceList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -20,24 +20,24 @@ type SignalRresourceList_Value_Properties_Cors struct {
 }
 
 type SignalRresourceList_Value_Properties_Features struct {
-	Flag any
+	Flag       any
 	Properties any
-	Value any
+	Value      any
 }
 
 type SignalRresourceList_Value_Properties_LiveTraceConfiguration_Categories struct {
 	Enabled any
-	Name any
+	Name    any
 }
 
 type SignalRresourceList_Value_Properties_LiveTraceConfiguration struct {
 	Categories any
-	Enabled any
+	Enabled    any
 }
 
 type SignalRresourceList_Value_Properties_NetworkAcls_IpRules struct {
 	Action any
-	Value any
+	Value  any
 }
 
 type SignalRresourceList_Value_Properties_NetworkAcls_PrivateEndpoints struct {
@@ -46,14 +46,14 @@ type SignalRresourceList_Value_Properties_NetworkAcls_PrivateEndpoints struct {
 
 type SignalRresourceList_Value_Properties_NetworkAcls_PublicNetwork struct {
 	Allow any
-	Deny any
+	Deny  any
 }
 
 type SignalRresourceList_Value_Properties_NetworkAcls struct {
-	DefaultAction any
-	IpRules any
+	DefaultAction    any
+	IpRules          any
 	PrivateEndpoints any
-	PublicNetwork any
+	PublicNetwork    any
 }
 
 type SignalRresourceList_Value_Properties_PrivateEndpointConnections_Properties_PrivateEndpoint struct {
@@ -62,15 +62,15 @@ type SignalRresourceList_Value_Properties_PrivateEndpointConnections_Properties_
 
 type SignalRresourceList_Value_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type SignalRresourceList_Value_Properties_PrivateEndpointConnections_Properties struct {
-	GroupIds any
-	PrivateEndpoint any
+	GroupIds                          any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type SignalRresourceList_Value_Properties_PrivateEndpointConnections struct {
@@ -86,11 +86,11 @@ type SignalRresourceList_Value_Properties_Serverless struct {
 }
 
 type SignalRresourceList_Value_Properties_SharedPrivateLinkResources_Properties struct {
-	GroupId any
+	GroupId               any
 	PrivateLinkResourceId any
-	ProvisioningState any
-	RequestMessage any
-	Status any
+	ProvisioningState     any
+	RequestMessage        any
+	Status                any
 }
 
 type SignalRresourceList_Value_Properties_SharedPrivateLinkResources struct {
@@ -107,15 +107,15 @@ type SignalRresourceList_Value_Properties_Upstream_Templates_Auth_ManagedIdentit
 
 type SignalRresourceList_Value_Properties_Upstream_Templates_Auth struct {
 	ManagedIdentity any
-	Type any
+	Type            any
 }
 
 type SignalRresourceList_Value_Properties_Upstream_Templates struct {
-	Auth any
+	Auth            any
 	CategoryPattern any
-	EventPattern any
-	HubPattern any
-	UrlTemplate any
+	EventPattern    any
+	HubPattern      any
+	UrlTemplate     any
 }
 
 type SignalRresourceList_Value_Properties_Upstream struct {
@@ -123,43 +123,43 @@ type SignalRresourceList_Value_Properties_Upstream struct {
 }
 
 type SignalRresourceList_Value_Properties struct {
-	Cors any
-	DisableAadAuth any
-	DisableLocalAuth any
-	ExternalIp any
-	Features any
-	HostName any
-	HostNamePrefix any
-	LiveTraceConfiguration any
-	NetworkAcls any
+	Cors                       any
+	DisableAadAuth             any
+	DisableLocalAuth           any
+	ExternalIp                 any
+	Features                   any
+	HostName                   any
+	HostNamePrefix             any
+	LiveTraceConfiguration     any
+	NetworkAcls                any
 	PrivateEndpointConnections any
-	ProvisioningState any
-	PublicNetworkAccess any
-	PublicPort any
-	RegionEndpointEnabled any
-	ResourceLogConfiguration any
-	ResourceStopped any
-	ServerPort any
-	Serverless any
+	ProvisioningState          any
+	PublicNetworkAccess        any
+	PublicPort                 any
+	RegionEndpointEnabled      any
+	ResourceLogConfiguration   any
+	ResourceStopped            any
+	ServerPort                 any
+	Serverless                 any
 	SharedPrivateLinkResources any
-	Tls any
-	Upstream any
-	Version any
+	Tls                        any
+	Upstream                   any
+	Version                    any
 }
 
 type SignalRresourceList_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type SignalRresourceList_Value struct {
-	Identity any
-	Kind any
+	Identity   any
+	Kind       any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type SignalRresourceListConfig struct {
@@ -174,6 +174,5 @@ type SignalRresourceListAttrs struct {
 
 var SignalRresourceList = ubx.DataSourceBinding{
 	WireType: "azure_signalr_signal_rresource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

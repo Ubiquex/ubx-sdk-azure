@@ -4,9 +4,9 @@ package recoveryservicessiterecovery
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServiceRecoveryPlanList_Value_Properties_CurrentScenario struct {
-	JobId any
+	JobId        any
 	ScenarioName any
-	StartTime any
+	StartTime    any
 }
 
 type ServiceRecoveryPlanList_Value_Properties_Groups_EndGroupActions_CustomDetails struct {
@@ -14,45 +14,45 @@ type ServiceRecoveryPlanList_Value_Properties_Groups_EndGroupActions_CustomDetai
 }
 
 type ServiceRecoveryPlanList_Value_Properties_Groups_EndGroupActions struct {
-	ActionName any
-	CustomDetails any
+	ActionName         any
+	CustomDetails      any
 	FailoverDirections any
-	FailoverTypes any
+	FailoverTypes      any
 }
 
 type ServiceRecoveryPlanList_Value_Properties_Groups_ReplicationProtectedItems struct {
-	Id any
+	Id               any
 	VirtualMachineId any
 }
 
 type ServiceRecoveryPlanList_Value_Properties_Groups struct {
-	EndGroupActions any
-	GroupType any
+	EndGroupActions           any
+	GroupType                 any
 	ReplicationProtectedItems any
-	StartGroupActions any
+	StartGroupActions         any
 }
 
 type ServiceRecoveryPlanList_Value_Properties struct {
-	AllowedOperations any
-	CurrentScenario any
-	CurrentScenarioStatus any
+	AllowedOperations                any
+	CurrentScenario                  any
+	CurrentScenarioStatus            any
 	CurrentScenarioStatusDescription any
-	FailoverDeploymentModel any
-	FriendlyName any
-	Groups any
-	LastPlannedFailoverTime any
-	LastTestFailoverTime any
-	LastUnplannedFailoverTime any
-	PrimaryFabricFriendlyName any
-	PrimaryFabricId any
-	ProviderSpecificDetails any
-	RecoveryFabricFriendlyName any
-	RecoveryFabricId any
-	ReplicationProviders any
+	FailoverDeploymentModel          any
+	FriendlyName                     any
+	Groups                           any
+	LastPlannedFailoverTime          any
+	LastTestFailoverTime             any
+	LastUnplannedFailoverTime        any
+	PrimaryFabricFriendlyName        any
+	PrimaryFabricId                  any
+	ProviderSpecificDetails          any
+	RecoveryFabricFriendlyName       any
+	RecoveryFabricId                 any
+	ReplicationProviders             any
 }
 
 type ServiceRecoveryPlanList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -62,7 +62,7 @@ type ServiceRecoveryPlanListConfig struct {
 
 type ServiceRecoveryPlanListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The RecoveryPlan items on this page
 	Value any

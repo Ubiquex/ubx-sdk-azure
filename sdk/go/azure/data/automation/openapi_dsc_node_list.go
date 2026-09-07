@@ -4,7 +4,7 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDscNodeList_Value_Properties_ExtensionHandler struct {
-	Name any
+	Name    any
 	Version any
 }
 
@@ -13,16 +13,16 @@ type OpenapiDscNodeList_Value_Properties_NodeConfiguration struct {
 }
 
 type OpenapiDscNodeList_Value_Properties struct {
-	AccountId any
-	Etag any
-	ExtensionHandler any
-	Ip any
-	LastSeen any
+	AccountId         any
+	Etag              any
+	ExtensionHandler  any
+	Ip                any
+	LastSeen          any
 	NodeConfiguration any
-	NodeId any
-	RegistrationTime any
-	Status any
-	TotalCount any
+	NodeId            any
+	RegistrationTime  any
+	Status            any
+	TotalCount        any
 }
 
 type OpenapiDscNodeList_Value struct {

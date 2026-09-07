@@ -25,16 +25,16 @@ type DtlPolicy_Properties struct {
 }
 
 var DtlPolicy_PropertiesFields = ubx.FieldMap{
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"EvaluatorType": ubx.FieldSpec{WireName: "evaluator_type"},
-		"FactData": ubx.FieldSpec{WireName: "fact_data"},
-		"FactName": ubx.FieldSpec{WireName: "fact_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Threshold": ubx.FieldSpec{WireName: "threshold"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-	}
+	"CreatedDate":       ubx.FieldSpec{WireName: "created_date"},
+	"Description":       ubx.FieldSpec{WireName: "description"},
+	"EvaluatorType":     ubx.FieldSpec{WireName: "evaluator_type"},
+	"FactData":          ubx.FieldSpec{WireName: "fact_data"},
+	"FactName":          ubx.FieldSpec{WireName: "fact_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status":            ubx.FieldSpec{WireName: "status"},
+	"Threshold":         ubx.FieldSpec{WireName: "threshold"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+}
 
 type DtlPolicyConfig struct {
 	// The location of the resource.
@@ -64,8 +64,8 @@ var DtlPolicy = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlPolicy_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlPolicy_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

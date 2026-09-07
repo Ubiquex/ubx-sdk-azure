@@ -9,8 +9,8 @@ type PublicKeyResource_Properties struct {
 }
 
 var PublicKeyResource_PropertiesFields = ubx.FieldMap{
-		"PublicKey": ubx.FieldSpec{WireName: "public_key"},
-	}
+	"PublicKey": ubx.FieldSpec{WireName: "public_key"},
+}
 
 type PublicKeyResourceConfig struct {
 	// The geo-location where the resource lives
@@ -36,8 +36,8 @@ var PublicKeyResource = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PublicKeyResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   PublicKeyResource_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

@@ -8,7 +8,7 @@ type OpenapiSecurityPolicyList_Value_Properties_Parameters struct {
 }
 
 type OpenapiSecurityPolicyList_Value_Properties struct {
-	Parameters any
+	Parameters  any
 	ProfileName any
 }
 
@@ -22,7 +22,7 @@ type OpenapiSecurityPolicyListConfig struct {
 
 type OpenapiSecurityPolicyListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The SecurityPolicy items on this page
 	Value any

@@ -8,7 +8,7 @@ type AuthorizationRuleList_Value_Properties struct {
 }
 
 type AuthorizationRuleList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 

@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapisIssueCommentContractList_Value_Properties struct {
 	CreatedDate any
-	Text any
-	UserId any
+	Text        any
+	UserId      any
 }
 
 type ApimapisIssueCommentContractList_Value struct {
@@ -27,6 +27,5 @@ type ApimapisIssueCommentContractListAttrs struct {
 
 var ApimapisIssueCommentContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_issue_comment_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

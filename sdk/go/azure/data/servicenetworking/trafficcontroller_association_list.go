@@ -8,9 +8,9 @@ type TrafficcontrollerAssociationList_Value_Properties_Subnet struct {
 }
 
 type TrafficcontrollerAssociationList_Value_Properties struct {
-	AssociationType any
+	AssociationType   any
 	ProvisioningState any
-	Subnet any
+	Subnet            any
 }
 
 type TrafficcontrollerAssociationList_Value struct {
@@ -23,7 +23,7 @@ type TrafficcontrollerAssociationListConfig struct {
 
 type TrafficcontrollerAssociationListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink              any
 	TrafficControllerName any
 	// The Association items on this page
 	Value any

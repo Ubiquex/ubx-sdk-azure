@@ -19,22 +19,22 @@ type DeletedConfigurationStore_Properties struct {
 }
 
 type DeletedConfigurationStoreConfig struct {
-	ApiVersion any
+	ApiVersion      any
 	ConfigStoreName any
-	Location any
-	SubscriptionId any
+	Location        any
+	SubscriptionId  any
 }
 
 type DeletedConfigurationStoreAttrs struct {
-	ApiVersion any
+	ApiVersion      any
 	ConfigStoreName any
 	// The resource ID for the deleted configuration store.
-	Id any
+	Id       any
 	Location any
 	// The name of the configuration store.
 	Name any
 	// Properties of the deleted configuration store.
-	Properties any
+	Properties     any
 	SubscriptionId any
 	// The resource type of the configuration store.
 	Type any
@@ -43,9 +43,9 @@ type DeletedConfigurationStoreAttrs struct {
 var DeletedConfigurationStore = ubx.DataSourceBinding{
 	WireType: "azure_appconfiguration_deleted_configuration_store",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":      ubx.FieldSpec{WireName: "api_version"},
 		"ConfigStoreName": ubx.FieldSpec{WireName: "config_store_name"},
-		"Location": ubx.FieldSpec{WireName: "location"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"Location":        ubx.FieldSpec{WireName: "location"},
+		"SubscriptionId":  ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

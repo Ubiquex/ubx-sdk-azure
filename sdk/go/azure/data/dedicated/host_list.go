@@ -4,7 +4,7 @@ package dedicated
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HostList_Value_Properties_InstanceView_AvailableCapacity_AllocatableVms struct {
-	Count any
+	Count  any
 	VmSize any
 }
 
@@ -13,17 +13,17 @@ type HostList_Value_Properties_InstanceView_AvailableCapacity struct {
 }
 
 type HostList_Value_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type HostList_Value_Properties_InstanceView struct {
-	AssetId any
+	AssetId           any
 	AvailableCapacity any
-	Statuses any
+	Statuses          any
 }
 
 type HostList_Value_Properties_VirtualMachines struct {
@@ -32,25 +32,25 @@ type HostList_Value_Properties_VirtualMachines struct {
 
 type HostList_Value_Properties struct {
 	AutoReplaceOnFailure any
-	HostId any
-	InstanceView any
-	LicenseType any
-	PlatformFaultDomain any
-	ProvisioningState any
-	ProvisioningTime any
-	TimeCreated any
-	VirtualMachines any
+	HostId               any
+	InstanceView         any
+	LicenseType          any
+	PlatformFaultDomain  any
+	ProvisioningState    any
+	ProvisioningTime     any
+	TimeCreated          any
+	VirtualMachines      any
 }
 
 type HostList_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type HostList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type HostListConfig struct {

@@ -4,14 +4,14 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ExpressrouteServiceEndpointPolicyDefinitionList_Value_Properties struct {
-	Description any
+	Description       any
 	ProvisioningState any
-	Service any
-	ServiceResources any
+	Service           any
+	ServiceResources  any
 }
 
 type ExpressrouteServiceEndpointPolicyDefinitionList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -21,7 +21,7 @@ type ExpressrouteServiceEndpointPolicyDefinitionListConfig struct {
 
 type ExpressrouteServiceEndpointPolicyDefinitionListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink                  any
 	ServiceEndpointPolicyName any
 	// The ServiceEndpointPolicyDefinition items on this page
 	Value any

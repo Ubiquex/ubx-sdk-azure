@@ -18,18 +18,18 @@ type CodesigningaccountCodeSigningAccount_Properties struct {
 }
 
 var CodesigningaccountCodeSigningAccount_Properties_SkuFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Name": ubx.FieldSpec{WireName: "name"},
+}
 
 var CodesigningaccountCodeSigningAccount_PropertiesFields = ubx.FieldMap{
-		"AccountUri": ubx.FieldSpec{WireName: "account_uri"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Sku": ubx.FieldSpec{
-			WireName: "sku",
-			Kind: "object",
-			Fields: CodesigningaccountCodeSigningAccount_Properties_SkuFields,
-		},
-	}
+	"AccountUri":        ubx.FieldSpec{WireName: "account_uri"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Sku": ubx.FieldSpec{
+		WireName: "sku",
+		Kind:     "object",
+		Fields:   CodesigningaccountCodeSigningAccount_Properties_SkuFields,
+	},
+}
 
 type CodesigningaccountCodeSigningAccountConfig struct {
 	// The geo-location where the resource lives
@@ -55,8 +55,8 @@ var CodesigningaccountCodeSigningAccount = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: CodesigningaccountCodeSigningAccount_PropertiesFields,
+			Kind:     "object",
+			Fields:   CodesigningaccountCodeSigningAccount_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

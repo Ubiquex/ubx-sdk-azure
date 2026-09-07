@@ -28,27 +28,27 @@ type ServiceProtectionContainer_Properties struct {
 }
 
 var ServiceProtectionContainer_Properties_FabricSpecificDetailsFields = ubx.FieldMap{
-		"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
-	}
+	"InstanceType": ubx.FieldSpec{WireName: "instance_type"},
+}
 
 var ServiceProtectionContainer_PropertiesFields = ubx.FieldMap{
-		"FabricFriendlyName": ubx.FieldSpec{WireName: "fabric_friendly_name"},
-		"FabricSpecificDetails": ubx.FieldSpec{
-			WireName: "fabric_specific_details",
-			Kind: "object",
-			Fields: ServiceProtectionContainer_Properties_FabricSpecificDetailsFields,
-		},
-		"FabricType": ubx.FieldSpec{WireName: "fabric_type"},
-		"FriendlyName": ubx.FieldSpec{WireName: "friendly_name"},
-		"PairingStatus": ubx.FieldSpec{WireName: "pairing_status"},
-		"ProtectedItemCount": ubx.FieldSpec{WireName: "protected_item_count"},
-		"ProviderSpecificInput": ubx.FieldSpec{
-			WireName: "provider_specific_input",
-			Kind: "list",
-			Fields: ServiceProtectionContainer_Properties_FabricSpecificDetailsFields,
-		},
-		"Role": ubx.FieldSpec{WireName: "role"},
-	}
+	"FabricFriendlyName": ubx.FieldSpec{WireName: "fabric_friendly_name"},
+	"FabricSpecificDetails": ubx.FieldSpec{
+		WireName: "fabric_specific_details",
+		Kind:     "object",
+		Fields:   ServiceProtectionContainer_Properties_FabricSpecificDetailsFields,
+	},
+	"FabricType":         ubx.FieldSpec{WireName: "fabric_type"},
+	"FriendlyName":       ubx.FieldSpec{WireName: "friendly_name"},
+	"PairingStatus":      ubx.FieldSpec{WireName: "pairing_status"},
+	"ProtectedItemCount": ubx.FieldSpec{WireName: "protected_item_count"},
+	"ProviderSpecificInput": ubx.FieldSpec{
+		WireName: "provider_specific_input",
+		Kind:     "list",
+		Fields:   ServiceProtectionContainer_Properties_FabricSpecificDetailsFields,
+	},
+	"Role": ubx.FieldSpec{WireName: "role"},
+}
 
 type ServiceProtectionContainerConfig struct {
 	// Create protection container input properties.
@@ -67,8 +67,8 @@ var ServiceProtectionContainer = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServiceProtectionContainer_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServiceProtectionContainer_PropertiesFields,
 		},
 	},
 }

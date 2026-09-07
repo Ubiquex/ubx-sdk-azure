@@ -76,10 +76,10 @@ type Configuration_SystemData struct {
 }
 
 type ConfigurationConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type ConfigurationAttrs struct {
@@ -91,10 +91,10 @@ type ConfigurationAttrs struct {
 	// Name of the resource
 	Name any
 	// Properties for maintenance configuration
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ResourceName any
-	SubscriptionId any
+	ResourceName      any
+	SubscriptionId    any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// Gets or sets tags of the resource
@@ -106,9 +106,9 @@ type ConfigurationAttrs struct {
 var Configuration = ubx.DataSourceBinding{
 	WireType: "azure_maintenance_configuration",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

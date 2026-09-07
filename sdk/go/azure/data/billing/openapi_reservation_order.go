@@ -24,13 +24,13 @@ type OpenapiReservationOrder_Properties_PlanInformation_PricingCurrencyTotal str
 }
 
 type OpenapiReservationOrder_Properties_PlanInformation_Transactions struct {
-	BillingAccount any
+	BillingAccount       any
 	BillingCurrencyTotal any
-	DueDate any
-	ExtendedStatusInfo any
-	PaymentDate any
+	DueDate              any
+	ExtendedStatusInfo   any
+	PaymentDate          any
 	PricingCurrencyTotal any
-	Status any
+	Status               any
 }
 
 type OpenapiReservationOrder_Properties_PlanInformation struct {
@@ -39,21 +39,21 @@ type OpenapiReservationOrder_Properties_PlanInformation struct {
 	// The price.
 	PricingCurrencyTotal any
 	// Date when the billing plan has started.
-	StartDate any
+	StartDate    any
 	Transactions any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_AppliedScopeProperties struct {
-	DisplayName any
+	DisplayName       any
 	ManagementGroupId any
-	ResourceGroupId any
-	SubscriptionId any
-	TenantId any
+	ResourceGroupId   any
+	SubscriptionId    any
+	TenantId          any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_MergeProperties struct {
 	MergeDestination any
-	MergeSources any
+	MergeSources     any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties_ReservedResourceProperties struct {
@@ -61,19 +61,19 @@ type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Properties struct {
-	AppliedScopeProperties any
-	AppliedScopeType any
-	AppliedScopes any
-	BillingPlan any
-	BillingScopeId any
-	DisplayName any
-	InstanceFlexibility any
-	Quantity any
-	Renew any
+	AppliedScopeProperties     any
+	AppliedScopeType           any
+	AppliedScopes              any
+	BillingPlan                any
+	BillingScopeId             any
+	DisplayName                any
+	InstanceFlexibility        any
+	Quantity                   any
+	Renew                      any
 	ReservedResourceProperties any
-	ReservedResourceType any
-	ReviewDateTime any
-	Term any
+	ReservedResourceType       any
+	ReviewDateTime             any
+	Term                       any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties_Sku struct {
@@ -81,84 +81,84 @@ type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties_PurchaseProperties struct {
-	Location any
+	Location   any
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_RenewProperties struct {
 	BillingCurrencyTotal any
 	PricingCurrencyTotal any
-	PurchaseProperties any
+	PurchaseProperties   any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_SplitProperties struct {
 	SplitDestinations any
-	SplitSource any
+	SplitSource       any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_SwapProperties struct {
 	SwapDestination any
-	SwapSource any
+	SwapSource      any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_Utilization_Aggregates struct {
-	Grain any
+	Grain     any
 	GrainUnit any
-	Value any
+	Value     any
 	ValueUnit any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties_Utilization struct {
 	Aggregates any
-	Trend any
+	Trend      any
 }
 
 type OpenapiReservationOrder_Properties_Reservations_Properties struct {
-	AppliedScopeProperties any
-	AppliedScopeType any
-	AppliedScopes any
-	Archived any
-	BenefitStartTime any
-	BillingPlan any
-	BillingScopeId any
-	Capabilities any
-	DisplayName any
-	DisplayProvisioningState any
-	EffectiveDateTime any
-	ExpiryDate any
-	ExpiryDateTime any
-	ExtendedStatusInfo any
-	InstanceFlexibility any
-	LastUpdatedDateTime any
-	MergeProperties any
-	ProductCode any
-	ProvisioningState any
-	ProvisioningSubState any
-	PurchaseDate any
-	PurchaseDateTime any
-	Quantity any
-	Renew any
-	RenewDestination any
-	RenewProperties any
-	RenewSource any
-	ReservedResourceType any
-	ReviewDateTime any
-	SkuDescription any
-	SplitProperties any
-	SwapProperties any
-	Term any
+	AppliedScopeProperties       any
+	AppliedScopeType             any
+	AppliedScopes                any
+	Archived                     any
+	BenefitStartTime             any
+	BillingPlan                  any
+	BillingScopeId               any
+	Capabilities                 any
+	DisplayName                  any
+	DisplayProvisioningState     any
+	EffectiveDateTime            any
+	ExpiryDate                   any
+	ExpiryDateTime               any
+	ExtendedStatusInfo           any
+	InstanceFlexibility          any
+	LastUpdatedDateTime          any
+	MergeProperties              any
+	ProductCode                  any
+	ProvisioningState            any
+	ProvisioningSubState         any
+	PurchaseDate                 any
+	PurchaseDateTime             any
+	Quantity                     any
+	Renew                        any
+	RenewDestination             any
+	RenewProperties              any
+	RenewSource                  any
+	ReservedResourceType         any
+	ReviewDateTime               any
+	SkuDescription               any
+	SplitProperties              any
+	SwapProperties               any
+	Term                         any
 	UserFriendlyAppliedScopeType any
-	UserFriendlyRenewState any
-	Utilization any
+	UserFriendlyRenewState       any
+	Utilization                  any
 }
 
 type OpenapiReservationOrder_Properties_Reservations struct {
-	Etag any
-	Location any
+	Etag       any
+	Location   any
 	Properties any
-	Sku any
-	Tags any
+	Sku        any
+	Tags       any
 }
 
 type OpenapiReservationOrder_Properties struct {
@@ -194,7 +194,7 @@ type OpenapiReservationOrder_Properties struct {
 	ProvisioningState any
 	// This is the DateTime when the reservation order was initially requested for purchase.
 	RequestDateTime any
-	Reservations any
+	Reservations    any
 	// This is the date-time when the Azure Hybrid Benefit needs to be reviewed.
 	ReviewDateTime any
 	// The term of the reservation, e.g. P1Y
@@ -203,16 +203,16 @@ type OpenapiReservationOrder_Properties struct {
 
 type OpenapiReservationOrderConfig struct {
 	BillingAccountName any
-	Expand any
+	Expand             any
 	ReservationOrderId any
 }
 
 type OpenapiReservationOrderAttrs struct {
 	BillingAccountName any
-	Etag any
-	Expand any
+	Etag               any
+	Expand             any
 	// Properties of a reservation order.
-	Properties any
+	Properties         any
 	ReservationOrderId any
 	// Tags for this reservation
 	Tags any
@@ -222,7 +222,7 @@ var OpenapiReservationOrder = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_reservation_order",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
+		"Expand":             ubx.FieldSpec{WireName: "expand"},
 		"ReservationOrderId": ubx.FieldSpec{WireName: "reservation_order_id"},
 	},
 }

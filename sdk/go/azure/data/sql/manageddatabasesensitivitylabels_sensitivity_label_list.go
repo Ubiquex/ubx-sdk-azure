@@ -5,29 +5,29 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManageddatabasesensitivitylabelsSensitivityLabelList_Value_Properties struct {
 	ClientClassificationSource any
-	ColumnName any
-	InformationType any
-	InformationTypeId any
-	IsDisabled any
-	LabelId any
-	LabelName any
-	Rank any
-	SchemaName any
-	TableName any
+	ColumnName                 any
+	InformationType            any
+	InformationTypeId          any
+	IsDisabled                 any
+	LabelId                    any
+	LabelName                  any
+	Rank                       any
+	SchemaName                 any
+	TableName                  any
 }
 
 type ManageddatabasesensitivitylabelsSensitivityLabelList_Value struct {
-	ManagedBy any
+	ManagedBy  any
 	Properties any
 }
 
 type ManageddatabasesensitivitylabelsSensitivityLabelListConfig struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 }
 
 type ManageddatabasesensitivitylabelsSensitivityLabelListAttrs struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 	// The link to the next page of items
 	NextLink any
@@ -38,7 +38,7 @@ type ManageddatabasesensitivitylabelsSensitivityLabelListAttrs struct {
 var ManageddatabasesensitivitylabelsSensitivityLabelList = ubx.DataSourceBinding{
 	WireType: "azure_sql_manageddatabasesensitivitylabels_sensitivity_label_list",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":        ubx.FieldSpec{WireName: "database_name"},
 		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
 	},
 }

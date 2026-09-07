@@ -19,7 +19,7 @@ type OpenapiModelContainerListConfig struct {
 type OpenapiModelContainerListAttrs struct {
 	ListViewType any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	RegistryName any
 	// The ModelContainer items on this page
 	Value any

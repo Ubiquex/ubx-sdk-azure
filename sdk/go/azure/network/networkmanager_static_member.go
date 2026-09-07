@@ -28,10 +28,10 @@ type NetworkmanagerStaticMember_SystemData struct {
 }
 
 var NetworkmanagerStaticMember_PropertiesFields = ubx.FieldMap{
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Region": ubx.FieldSpec{WireName: "region"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Region":            ubx.FieldSpec{WireName: "region"},
+	"ResourceId":        ubx.FieldSpec{WireName: "resource_id"},
+}
 
 type NetworkmanagerStaticMemberConfig struct {
 	// Properties of static member.
@@ -58,8 +58,8 @@ var NetworkmanagerStaticMember = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkmanagerStaticMember_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkmanagerStaticMember_PropertiesFields,
 		},
 	},
 }

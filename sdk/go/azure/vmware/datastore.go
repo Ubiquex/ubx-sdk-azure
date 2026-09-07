@@ -47,49 +47,49 @@ type Datastore_Properties struct {
 }
 
 var Datastore_Properties_DiskPoolVolumeFields = ubx.FieldMap{
-		"LunName": ubx.FieldSpec{WireName: "lun_name"},
-		"MountOption": ubx.FieldSpec{WireName: "mount_option"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"TargetId": ubx.FieldSpec{WireName: "target_id"},
-	}
+	"LunName":     ubx.FieldSpec{WireName: "lun_name"},
+	"MountOption": ubx.FieldSpec{WireName: "mount_option"},
+	"Path":        ubx.FieldSpec{WireName: "path"},
+	"TargetId":    ubx.FieldSpec{WireName: "target_id"},
+}
 
 var Datastore_Properties_ElasticSanVolumeFields = ubx.FieldMap{
-		"TargetId": ubx.FieldSpec{WireName: "target_id"},
-	}
+	"TargetId": ubx.FieldSpec{WireName: "target_id"},
+}
 
 var Datastore_Properties_NetAppVolumeFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var Datastore_Properties_PureStorageVolumeFields = ubx.FieldMap{
-		"SizeGb": ubx.FieldSpec{WireName: "size_gb"},
-		"StoragePoolId": ubx.FieldSpec{WireName: "storage_pool_id"},
-	}
+	"SizeGb":        ubx.FieldSpec{WireName: "size_gb"},
+	"StoragePoolId": ubx.FieldSpec{WireName: "storage_pool_id"},
+}
 
 var Datastore_PropertiesFields = ubx.FieldMap{
-		"DiskPoolVolume": ubx.FieldSpec{
-			WireName: "disk_pool_volume",
-			Kind: "object",
-			Fields: Datastore_Properties_DiskPoolVolumeFields,
-		},
-		"ElasticSanVolume": ubx.FieldSpec{
-			WireName: "elastic_san_volume",
-			Kind: "object",
-			Fields: Datastore_Properties_ElasticSanVolumeFields,
-		},
-		"NetAppVolume": ubx.FieldSpec{
-			WireName: "net_app_volume",
-			Kind: "object",
-			Fields: Datastore_Properties_NetAppVolumeFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PureStorageVolume": ubx.FieldSpec{
-			WireName: "pure_storage_volume",
-			Kind: "object",
-			Fields: Datastore_Properties_PureStorageVolumeFields,
-		},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"DiskPoolVolume": ubx.FieldSpec{
+		WireName: "disk_pool_volume",
+		Kind:     "object",
+		Fields:   Datastore_Properties_DiskPoolVolumeFields,
+	},
+	"ElasticSanVolume": ubx.FieldSpec{
+		WireName: "elastic_san_volume",
+		Kind:     "object",
+		Fields:   Datastore_Properties_ElasticSanVolumeFields,
+	},
+	"NetAppVolume": ubx.FieldSpec{
+		WireName: "net_app_volume",
+		Kind:     "object",
+		Fields:   Datastore_Properties_NetAppVolumeFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"PureStorageVolume": ubx.FieldSpec{
+		WireName: "pure_storage_volume",
+		Kind:     "object",
+		Fields:   Datastore_Properties_PureStorageVolumeFields,
+	},
+	"Status": ubx.FieldSpec{WireName: "status"},
+}
 
 type DatastoreConfig struct {
 	// The properties of a datastore
@@ -106,8 +106,8 @@ var Datastore = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: Datastore_PropertiesFields,
+			Kind:     "object",
+			Fields:   Datastore_PropertiesFields,
 		},
 	},
 }

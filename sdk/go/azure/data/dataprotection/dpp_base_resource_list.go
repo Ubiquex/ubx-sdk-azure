@@ -12,7 +12,7 @@ type DppBaseResourceListConfig struct {
 
 type DppBaseResourceListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink           any
 	ResourceGuardsName any
 	// The DppBaseResource items on this page
 	Value any

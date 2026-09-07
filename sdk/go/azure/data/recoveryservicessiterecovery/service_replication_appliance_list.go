@@ -21,7 +21,7 @@ type ServiceReplicationApplianceListConfig struct {
 
 type ServiceReplicationApplianceListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	ResourceName any
 	// The ReplicationAppliance items on this page
 	Value any

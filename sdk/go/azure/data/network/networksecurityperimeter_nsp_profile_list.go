@@ -4,7 +4,7 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type NetworksecurityperimeterNspProfileList_Value_Properties struct {
-	AccessRulesVersion any
+	AccessRulesVersion        any
 	DiagnosticSettingsVersion any
 }
 

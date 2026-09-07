@@ -15,11 +15,11 @@ type OpenapiOrigin_Properties struct {
 }
 
 var OpenapiOrigin_PropertiesFields = ubx.FieldMap{
-		"HostName": ubx.FieldSpec{WireName: "host_name"},
-		"PrivateEndpointStatus": ubx.FieldSpec{WireName: "private_endpoint_status"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ResourceState": ubx.FieldSpec{WireName: "resource_state"},
-	}
+	"HostName":              ubx.FieldSpec{WireName: "host_name"},
+	"PrivateEndpointStatus": ubx.FieldSpec{WireName: "private_endpoint_status"},
+	"ProvisioningState":     ubx.FieldSpec{WireName: "provisioning_state"},
+	"ResourceState":         ubx.FieldSpec{WireName: "resource_state"},
+}
 
 type OpenapiOriginConfig struct {
 	// The JSON object that contains the properties of the origin.
@@ -36,8 +36,8 @@ var OpenapiOrigin = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiOrigin_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiOrigin_PropertiesFields,
 		},
 	},
 }

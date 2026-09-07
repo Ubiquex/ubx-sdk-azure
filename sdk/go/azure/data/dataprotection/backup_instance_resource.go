@@ -36,7 +36,7 @@ type BackupInstanceResource_Properties_IdentityDetails struct {
 
 type BackupInstanceResource_Properties_PolicyInfo_PolicyParameters_DataStoreParametersList struct {
 	DataStoreType any
-	ObjectType any
+	ObjectType    any
 }
 
 type BackupInstanceResource_Properties_PolicyInfo_PolicyParameters struct {
@@ -50,7 +50,7 @@ type BackupInstanceResource_Properties_PolicyInfo struct {
 	PolicyId any
 	// Parameters in Policy
 	PolicyParameters any
-	PolicyVersion any
+	PolicyVersion    any
 }
 
 type BackupInstanceResource_Properties_ProtectionErrorDetails_Details struct {
@@ -76,7 +76,7 @@ type BackupInstanceResource_Properties_ProtectionErrorDetails struct {
 	IsRetryable any
 	// Whether the operation is due to a user error or service error
 	IsUserError any
-	Message any
+	Message     any
 	// Any key value pairs that can be injected inside error object
 	Properties any
 	// RecommendedAction � localized.
@@ -102,9 +102,9 @@ type BackupInstanceResource_Properties struct {
 	// Base class for different types of authentication credentials.
 	DatasourceAuthCredentials any
 	// Gets or sets the Backup Instance friendly name.
-	FriendlyName any
+	FriendlyName    any
 	IdentityDetails any
-	ObjectType any
+	ObjectType      any
 	// Policy Info in backupInstance
 	PolicyInfo any
 	// Error object used by layers that have access to localized content, and propagate that to user
@@ -121,17 +121,17 @@ type BackupInstanceResource_Properties struct {
 
 type BackupInstanceResourceConfig struct {
 	BackupInstanceName any
-	OperationId any
-	VaultName any
+	OperationId        any
+	VaultName          any
 }
 
 type BackupInstanceResourceAttrs struct {
 	BackupInstanceName any
-	OperationId any
+	OperationId        any
 	// Backup Instance
 	Properties any
 	// Proxy Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 
@@ -139,7 +139,7 @@ var BackupInstanceResource = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_backup_instance_resource",
 	Fields: ubx.FieldMap{
 		"BackupInstanceName": ubx.FieldSpec{WireName: "backup_instance_name"},
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"OperationId":        ubx.FieldSpec{WireName: "operation_id"},
+		"VaultName":          ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

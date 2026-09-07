@@ -20,15 +20,15 @@ type OpenapiJobStream_Properties struct {
 
 type OpenapiJobStreamConfig struct {
 	AutomationAccountName any
-	JobName any
-	JobStreamId any
+	JobName               any
+	JobStreamId           any
 }
 
 type OpenapiJobStreamAttrs struct {
 	AutomationAccountName any
 	// Gets or sets the id of the resource.
-	Id any
-	JobName any
+	Id          any
+	JobName     any
 	JobStreamId any
 	// Definition of the job stream.
 	Properties any
@@ -38,7 +38,7 @@ var OpenapiJobStream = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_job_stream",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"JobName": ubx.FieldSpec{WireName: "job_name"},
-		"JobStreamId": ubx.FieldSpec{WireName: "job_stream_id"},
+		"JobName":               ubx.FieldSpec{WireName: "job_name"},
+		"JobStreamId":           ubx.FieldSpec{WireName: "job_stream_id"},
 	},
 }

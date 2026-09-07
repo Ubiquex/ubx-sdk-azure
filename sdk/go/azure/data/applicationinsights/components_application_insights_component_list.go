@@ -5,32 +5,32 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ComponentsApplicationInsightsComponentList_Value_Properties_PrivateLinkScopedResources struct {
 	ResourceId any
-	ScopeId any
+	ScopeId    any
 }
 
 type ComponentsApplicationInsightsComponentList_Value_Properties struct {
-	AppId any
-	ApplicationId any
-	ApplicationType any
-	ConnectionString any
-	CreationDate any
-	DisableIpMasking any
-	FlowType any
-	HockeyAppId any
-	HockeyAppToken any
+	AppId                      any
+	ApplicationId              any
+	ApplicationType            any
+	ConnectionString           any
+	CreationDate               any
+	DisableIpMasking           any
+	FlowType                   any
+	HockeyAppId                any
+	HockeyAppToken             any
 	ImmediatePurgeDataOn30Days any
-	IngestionMode any
-	InstrumentationKey any
+	IngestionMode              any
+	InstrumentationKey         any
 	PrivateLinkScopedResources any
-	ProvisioningState any
-	RequestSource any
-	RetentionInDays any
-	SamplingPercentage any
-	TenantId any
+	ProvisioningState          any
+	RequestSource              any
+	RetentionInDays            any
+	SamplingPercentage         any
+	TenantId                   any
 }
 
 type ComponentsApplicationInsightsComponentList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -46,6 +46,5 @@ type ComponentsApplicationInsightsComponentListAttrs struct {
 
 var ComponentsApplicationInsightsComponentList = ubx.DataSourceBinding{
 	WireType: "azure_applicationinsights_components_application_insights_component_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -9,14 +9,14 @@ type ApimauthorizationprovidersAuthorizationProviderContractList_Value_Propertie
 }
 
 type ApimauthorizationprovidersAuthorizationProviderContractList_Value_Properties_Oauth2 struct {
-	GrantTypes any
+	GrantTypes  any
 	RedirectUrl any
 }
 
 type ApimauthorizationprovidersAuthorizationProviderContractList_Value_Properties struct {
-	DisplayName any
+	DisplayName      any
 	IdentityProvider any
-	Oauth2 any
+	Oauth2           any
 }
 
 type ApimauthorizationprovidersAuthorizationProviderContractList_Value struct {
@@ -35,6 +35,5 @@ type ApimauthorizationprovidersAuthorizationProviderContractListAttrs struct {
 
 var ApimauthorizationprovidersAuthorizationProviderContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimauthorizationproviders_authorization_provider_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

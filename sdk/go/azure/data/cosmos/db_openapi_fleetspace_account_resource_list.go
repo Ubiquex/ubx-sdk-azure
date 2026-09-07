@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DbOpenapiFleetspaceAccountResourceList_Value_Properties_GlobalDatabaseAccountProperties struct {
 	ArmLocation any
-	ResourceId any
+	ResourceId  any
 }
 
 type DbOpenapiFleetspaceAccountResourceList_Value_Properties struct {
 	GlobalDatabaseAccountProperties any
-	ProvisioningState any
+	ProvisioningState               any
 }
 
 type DbOpenapiFleetspaceAccountResourceList_Value struct {
@@ -18,12 +18,12 @@ type DbOpenapiFleetspaceAccountResourceList_Value struct {
 }
 
 type DbOpenapiFleetspaceAccountResourceListConfig struct {
-	FleetName any
+	FleetName      any
 	FleetspaceName any
 }
 
 type DbOpenapiFleetspaceAccountResourceListAttrs struct {
-	FleetName any
+	FleetName      any
 	FleetspaceName any
 	// The link to the next page of items
 	NextLink any
@@ -34,7 +34,7 @@ type DbOpenapiFleetspaceAccountResourceListAttrs struct {
 var DbOpenapiFleetspaceAccountResourceList = ubx.DataSourceBinding{
 	WireType: "azure_cosmos_db_openapi_fleetspace_account_resource_list",
 	Fields: ubx.FieldMap{
-		"FleetName": ubx.FieldSpec{WireName: "fleet_name"},
+		"FleetName":      ubx.FieldSpec{WireName: "fleet_name"},
 		"FleetspaceName": ubx.FieldSpec{WireName: "fleetspace_name"},
 	},
 }

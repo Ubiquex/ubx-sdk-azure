@@ -9,20 +9,20 @@ type OpenapiModelContainer_Properties struct {
 }
 
 type OpenapiModelContainerConfig struct {
-	Name any
+	Name          any
 	WorkspaceName any
 }
 
 type OpenapiModelContainerAttrs struct {
-	Name any
-	Properties any
+	Name          any
+	Properties    any
 	WorkspaceName any
 }
 
 var OpenapiModelContainer = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_model_container",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

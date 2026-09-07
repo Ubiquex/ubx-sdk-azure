@@ -9,8 +9,8 @@ type ApimworkspacesProductContract2_Properties struct {
 }
 
 var ApimworkspacesProductContract2_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+}
 
 type ApimworkspacesProductContract2Config struct {
 	// Product profile.
@@ -27,8 +27,8 @@ var ApimworkspacesProductContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesProductContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesProductContract2_PropertiesFields,
 		},
 	},
 }

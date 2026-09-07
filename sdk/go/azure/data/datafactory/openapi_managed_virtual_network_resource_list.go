@@ -4,12 +4,12 @@ package datafactory
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedVirtualNetworkResourceList_Value_Properties struct {
-	Alias any
+	Alias  any
 	VNetId any
 }
 
 type OpenapiManagedVirtualNetworkResourceList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 

@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiSourceControlList_Value_Properties struct {
 	ExpirationTime any
-	RefreshToken any
-	Token any
-	TokenSecret any
+	RefreshToken   any
+	Token          any
+	TokenSecret    any
 }
 
 type OpenapiSourceControlList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -27,6 +27,5 @@ type OpenapiSourceControlListAttrs struct {
 
 var OpenapiSourceControlList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_source_control_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

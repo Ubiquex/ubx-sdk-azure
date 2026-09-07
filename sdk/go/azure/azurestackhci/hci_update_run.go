@@ -42,37 +42,36 @@ type HciUpdateRun_Properties struct {
 	TimeStarted any
 }
 
-var HciUpdateRun_Properties_Progress_StepsFields = ubx.FieldMap{
-	}
+var HciUpdateRun_Properties_Progress_StepsFields = ubx.FieldMap{}
 
 var HciUpdateRun_Properties_ProgressFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"EndTimeUtc": ubx.FieldSpec{WireName: "end_time_utc"},
-		"ErrorMessage": ubx.FieldSpec{WireName: "error_message"},
-		"ExpectedExecutionTime": ubx.FieldSpec{WireName: "expected_execution_time"},
-		"LastUpdatedTimeUtc": ubx.FieldSpec{WireName: "last_updated_time_utc"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"StartTimeUtc": ubx.FieldSpec{WireName: "start_time_utc"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"Steps": ubx.FieldSpec{
-			WireName: "steps",
-			Kind: "list",
-			Fields: HciUpdateRun_Properties_Progress_StepsFields,
-		},
-	}
+	"Description":           ubx.FieldSpec{WireName: "description"},
+	"EndTimeUtc":            ubx.FieldSpec{WireName: "end_time_utc"},
+	"ErrorMessage":          ubx.FieldSpec{WireName: "error_message"},
+	"ExpectedExecutionTime": ubx.FieldSpec{WireName: "expected_execution_time"},
+	"LastUpdatedTimeUtc":    ubx.FieldSpec{WireName: "last_updated_time_utc"},
+	"Name":                  ubx.FieldSpec{WireName: "name"},
+	"StartTimeUtc":          ubx.FieldSpec{WireName: "start_time_utc"},
+	"Status":                ubx.FieldSpec{WireName: "status"},
+	"Steps": ubx.FieldSpec{
+		WireName: "steps",
+		Kind:     "list",
+		Fields:   HciUpdateRun_Properties_Progress_StepsFields,
+	},
+}
 
 var HciUpdateRun_PropertiesFields = ubx.FieldMap{
-		"Duration": ubx.FieldSpec{WireName: "duration"},
-		"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
-		"Progress": ubx.FieldSpec{
-			WireName: "progress",
-			Kind: "object",
-			Fields: HciUpdateRun_Properties_ProgressFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"TimeStarted": ubx.FieldSpec{WireName: "time_started"},
-	}
+	"Duration":        ubx.FieldSpec{WireName: "duration"},
+	"LastUpdatedTime": ubx.FieldSpec{WireName: "last_updated_time"},
+	"Progress": ubx.FieldSpec{
+		WireName: "progress",
+		Kind:     "object",
+		Fields:   HciUpdateRun_Properties_ProgressFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+	"TimeStarted":       ubx.FieldSpec{WireName: "time_started"},
+}
 
 type HciUpdateRunConfig struct {
 	// The geo-location where the resource lives
@@ -94,8 +93,8 @@ var HciUpdateRun = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: HciUpdateRun_PropertiesFields,
+			Kind:     "object",
+			Fields:   HciUpdateRun_PropertiesFields,
 		},
 	},
 }

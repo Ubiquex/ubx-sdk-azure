@@ -12,14 +12,14 @@ type ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBack
 }
 
 type ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicyListConfig struct {
-	ManagedInstanceName any
+	ManagedInstanceName         any
 	RestorableDroppedDatabaseId any
 }
 
 type ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicyListAttrs struct {
 	ManagedInstanceName any
 	// The link to the next page of items
-	NextLink any
+	NextLink                    any
 	RestorableDroppedDatabaseId any
 	// The ManagedBackupShortTermRetentionPolicy items on this page
 	Value any
@@ -28,7 +28,7 @@ type ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBack
 var ManagedrestorabledroppeddatabasebackupshorttermretentionpoliciesManagedBackupShortTermRetentionPolicyList = ubx.DataSourceBinding{
 	WireType: "azure_sql_managedrestorabledroppeddatabasebackupshorttermretentionpolicies_managed_backup_short_term_retention_policy_list",
 	Fields: ubx.FieldMap{
-		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
+		"ManagedInstanceName":         ubx.FieldSpec{WireName: "managed_instance_name"},
 		"RestorableDroppedDatabaseId": ubx.FieldSpec{WireName: "restorable_dropped_database_id"},
 	},
 }

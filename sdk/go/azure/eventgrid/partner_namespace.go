@@ -77,62 +77,62 @@ type PartnerNamespace_SystemData struct {
 }
 
 var PartnerNamespace_Properties_InboundIpRulesFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{WireName: "action"},
-		"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
-	}
+	"Action": ubx.FieldSpec{WireName: "action"},
+	"IpMask": ubx.FieldSpec{WireName: "ip_mask"},
+}
 
 var PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields = ubx.FieldMap{
-		"Id": ubx.FieldSpec{WireName: "id"},
-	}
+	"Id": ubx.FieldSpec{WireName: "id"},
+}
 
 var PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields = ubx.FieldMap{
-		"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-	}
+	"ActionsRequired": ubx.FieldSpec{WireName: "actions_required"},
+	"Description":     ubx.FieldSpec{WireName: "description"},
+	"Status":          ubx.FieldSpec{WireName: "status"},
+}
 
 var PartnerNamespace_Properties_PrivateEndpointConnections_PropertiesFields = ubx.FieldMap{
-		"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
-		"PrivateEndpoint": ubx.FieldSpec{
-			WireName: "private_endpoint",
-			Kind: "object",
-			Fields: PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
-		},
-		"PrivateLinkServiceConnectionState": ubx.FieldSpec{
-			WireName: "private_link_service_connection_state",
-			Kind: "object",
-			Fields: PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"GroupIds": ubx.FieldSpec{WireName: "group_ids"},
+	"PrivateEndpoint": ubx.FieldSpec{
+		WireName: "private_endpoint",
+		Kind:     "object",
+		Fields:   PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateEndpointFields,
+	},
+	"PrivateLinkServiceConnectionState": ubx.FieldSpec{
+		WireName: "private_link_service_connection_state",
+		Kind:     "object",
+		Fields:   PartnerNamespace_Properties_PrivateEndpointConnections_Properties_PrivateLinkServiceConnectionStateFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 var PartnerNamespace_Properties_PrivateEndpointConnectionsFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: PartnerNamespace_Properties_PrivateEndpointConnections_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   PartnerNamespace_Properties_PrivateEndpointConnections_PropertiesFields,
+	},
+}
 
 var PartnerNamespace_PropertiesFields = ubx.FieldMap{
-		"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
-		"Endpoint": ubx.FieldSpec{WireName: "endpoint"},
-		"InboundIpRules": ubx.FieldSpec{
-			WireName: "inbound_ip_rules",
-			Kind: "list",
-			Fields: PartnerNamespace_Properties_InboundIpRulesFields,
-		},
-		"MinimumTlsVersionAllowed": ubx.FieldSpec{WireName: "minimum_tls_version_allowed"},
-		"PartnerRegistrationFullyQualifiedId": ubx.FieldSpec{WireName: "partner_registration_fully_qualified_id"},
-		"PartnerTopicRoutingMode": ubx.FieldSpec{WireName: "partner_topic_routing_mode"},
-		"PrivateEndpointConnections": ubx.FieldSpec{
-			WireName: "private_endpoint_connections",
-			Kind: "list",
-			Fields: PartnerNamespace_Properties_PrivateEndpointConnectionsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
-	}
+	"DisableLocalAuth": ubx.FieldSpec{WireName: "disable_local_auth"},
+	"Endpoint":         ubx.FieldSpec{WireName: "endpoint"},
+	"InboundIpRules": ubx.FieldSpec{
+		WireName: "inbound_ip_rules",
+		Kind:     "list",
+		Fields:   PartnerNamespace_Properties_InboundIpRulesFields,
+	},
+	"MinimumTlsVersionAllowed":            ubx.FieldSpec{WireName: "minimum_tls_version_allowed"},
+	"PartnerRegistrationFullyQualifiedId": ubx.FieldSpec{WireName: "partner_registration_fully_qualified_id"},
+	"PartnerTopicRoutingMode":             ubx.FieldSpec{WireName: "partner_topic_routing_mode"},
+	"PrivateEndpointConnections": ubx.FieldSpec{
+		WireName: "private_endpoint_connections",
+		Kind:     "list",
+		Fields:   PartnerNamespace_Properties_PrivateEndpointConnectionsFields,
+	},
+	"ProvisioningState":   ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicNetworkAccess": ubx.FieldSpec{WireName: "public_network_access"},
+}
 
 type PartnerNamespaceConfig struct {
 	// Location of the resource.
@@ -160,8 +160,8 @@ var PartnerNamespace = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: PartnerNamespace_PropertiesFields,
+			Kind:     "object",
+			Fields:   PartnerNamespace_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

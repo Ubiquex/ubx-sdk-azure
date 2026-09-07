@@ -29,11 +29,11 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySetting
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange_Delta struct {
-	After any
-	Before any
+	After      any
+	Before     any
 	ChangeType any
-	Children any
-	Path any
+	Children   any
+	Path       any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_DenySettingsChange struct {
@@ -57,44 +57,44 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceCha
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config_KeyVaultReference struct {
-	KeyVault any
-	SecretName any
+	KeyVault      any
+	SecretName    any
 	SecretVersion any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension_Config struct {
 	KeyVaultReference any
-	Type any
-	Value any
+	Type              any
+	Value             any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_Extension struct {
-	Config any
+	Config   any
 	ConfigId any
-	Name any
-	Version any
+	Name     any
+	Version  any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges_ResourceConfigurationChanges struct {
-	After any
+	After  any
 	Before any
-	Delta any
+	Delta  any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes_ResourceChanges struct {
-	ApiVersion any
-	ChangeCertainty any
-	ChangeType any
-	DenyStatusChange any
-	DeploymentId any
-	Extension any
-	Id any
-	Identifiers any
-	ManagementStatusChange any
+	ApiVersion                   any
+	ChangeCertainty              any
+	ChangeType                   any
+	DenyStatusChange             any
+	DeploymentId                 any
+	Extension                    any
+	Id                           any
+	Identifiers                  any
+	ManagementStatusChange       any
 	ResourceConfigurationChanges any
-	SymbolicName any
-	Type any
-	UnsupportedReason any
+	SymbolicName                 any
+	Type                         any
+	UnsupportedReason            any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Changes struct {
@@ -118,18 +118,18 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics_Additio
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Diagnostics struct {
 	AdditionalInfo any
-	Code any
-	Level any
-	Message any
-	Target any
+	Code           any
+	Level          any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error struct {
@@ -147,7 +147,7 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Error struct {
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputDefinitions struct {
 	Config any
-	Kind any
+	Kind   any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs struct {
@@ -156,9 +156,9 @@ type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ExternalInputs stru
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_Parameters struct {
 	Expression any
-	Reference any
-	Type any
-	Value any
+	Reference  any
+	Type       any
+	Value      any
 }
 
 type DeploymentstacksDeploymentStacksWhatIfResult_Properties_ParametersLink struct {

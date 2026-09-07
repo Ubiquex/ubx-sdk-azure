@@ -25,27 +25,27 @@ type ServicegroupsServiceGroup_Properties struct {
 }
 
 var ServicegroupsServiceGroup_Properties_AttributesFields = ubx.FieldMap{
-		"Criticality": ubx.FieldSpec{WireName: "criticality"},
-	}
+	"Criticality": ubx.FieldSpec{WireName: "criticality"},
+}
 
 var ServicegroupsServiceGroup_Properties_ParentFields = ubx.FieldMap{
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var ServicegroupsServiceGroup_PropertiesFields = ubx.FieldMap{
-		"Attributes": ubx.FieldSpec{
-			WireName: "attributes",
-			Kind: "object",
-			Fields: ServicegroupsServiceGroup_Properties_AttributesFields,
-		},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"Parent": ubx.FieldSpec{
-			WireName: "parent",
-			Kind: "object",
-			Fields: ServicegroupsServiceGroup_Properties_ParentFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"Attributes": ubx.FieldSpec{
+		WireName: "attributes",
+		Kind:     "object",
+		Fields:   ServicegroupsServiceGroup_Properties_AttributesFields,
+	},
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"Parent": ubx.FieldSpec{
+		WireName: "parent",
+		Kind:     "object",
+		Fields:   ServicegroupsServiceGroup_Properties_ParentFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type ServicegroupsServiceGroupConfig struct {
 	// The kind of the serviceGroup.
@@ -71,8 +71,8 @@ var ServicegroupsServiceGroup = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ServicegroupsServiceGroup_PropertiesFields,
+			Kind:     "object",
+			Fields:   ServicegroupsServiceGroup_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

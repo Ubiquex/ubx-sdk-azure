@@ -37,15 +37,15 @@ type ExpressrouteExpressRouteLink_Properties struct {
 
 type ExpressrouteExpressRouteLinkConfig struct {
 	ExpressRoutePortName any
-	LinkName any
+	LinkName             any
 }
 
 type ExpressrouteExpressRouteLinkAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
+	Etag                 any
 	ExpressRoutePortName any
 	// Resource ID.
-	Id any
+	Id       any
 	LinkName any
 	// Name of child port resource that is unique among child port resources of the parent.
 	Name any
@@ -57,6 +57,6 @@ var ExpressrouteExpressRouteLink = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_link",
 	Fields: ubx.FieldMap{
 		"ExpressRoutePortName": ubx.FieldSpec{WireName: "express_route_port_name"},
-		"LinkName": ubx.FieldSpec{WireName: "link_name"},
+		"LinkName":             ubx.FieldSpec{WireName: "link_name"},
 	},
 }

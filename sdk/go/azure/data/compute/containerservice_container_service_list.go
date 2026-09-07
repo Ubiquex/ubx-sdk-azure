@@ -4,11 +4,11 @@ package compute
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ContainerserviceContainerServiceList_Value_Properties_AgentPoolProfiles struct {
-	Count any
+	Count     any
 	DnsPrefix any
-	Fqdn any
-	Name any
-	VmSize any
+	Fqdn      any
+	Name      any
+	VmSize    any
 }
 
 type ContainerserviceContainerServiceList_Value_Properties_CustomProfile struct {
@@ -16,7 +16,7 @@ type ContainerserviceContainerServiceList_Value_Properties_CustomProfile struct 
 }
 
 type ContainerserviceContainerServiceList_Value_Properties_DiagnosticsProfile_VmDiagnostics struct {
-	Enabled any
+	Enabled    any
 	StorageUri any
 }
 
@@ -34,13 +34,13 @@ type ContainerserviceContainerServiceList_Value_Properties_LinuxProfile_Ssh stru
 
 type ContainerserviceContainerServiceList_Value_Properties_LinuxProfile struct {
 	AdminUsername any
-	Ssh any
+	Ssh           any
 }
 
 type ContainerserviceContainerServiceList_Value_Properties_MasterProfile struct {
-	Count any
+	Count     any
 	DnsPrefix any
-	Fqdn any
+	Fqdn      any
 }
 
 type ContainerserviceContainerServiceList_Value_Properties_OrchestratorProfile struct {
@@ -49,7 +49,7 @@ type ContainerserviceContainerServiceList_Value_Properties_OrchestratorProfile s
 
 type ContainerserviceContainerServiceList_Value_Properties_ServicePrincipalProfile struct {
 	ClientId any
-	Secret any
+	Secret   any
 }
 
 type ContainerserviceContainerServiceList_Value_Properties_WindowsProfile struct {
@@ -58,15 +58,15 @@ type ContainerserviceContainerServiceList_Value_Properties_WindowsProfile struct
 }
 
 type ContainerserviceContainerServiceList_Value_Properties struct {
-	AgentPoolProfiles any
-	CustomProfile any
-	DiagnosticsProfile any
-	LinuxProfile any
-	MasterProfile any
-	OrchestratorProfile any
-	ProvisioningState any
+	AgentPoolProfiles       any
+	CustomProfile           any
+	DiagnosticsProfile      any
+	LinuxProfile            any
+	MasterProfile           any
+	OrchestratorProfile     any
+	ProvisioningState       any
 	ServicePrincipalProfile any
-	WindowsProfile any
+	WindowsProfile          any
 }
 
 type ContainerserviceContainerServiceList_Value struct {
@@ -74,14 +74,14 @@ type ContainerserviceContainerServiceList_Value struct {
 }
 
 type ContainerserviceContainerServiceListConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
 type ContainerserviceContainerServiceListAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of container service results.
-	NextLink any
+	NextLink       any
 	SubscriptionId any
 	// the list of container services.
 	Value any
@@ -90,7 +90,7 @@ type ContainerserviceContainerServiceListAttrs struct {
 var ContainerserviceContainerServiceList = ubx.DataSourceBinding{
 	WireType: "azure_compute_containerservice_container_service_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

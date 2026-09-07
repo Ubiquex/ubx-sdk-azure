@@ -30,33 +30,33 @@ type MachineInstanceView_Disks_EncryptionSettings_DiskEncryptionKey_SourceVault 
 }
 
 type MachineInstanceView_Disks_EncryptionSettings_DiskEncryptionKey struct {
-	SecretUrl any
+	SecretUrl   any
 	SourceVault any
 }
 
 type MachineInstanceView_Disks_EncryptionSettings_KeyEncryptionKey struct {
-	KeyUrl any
+	KeyUrl      any
 	SourceVault any
 }
 
 type MachineInstanceView_Disks_EncryptionSettings struct {
 	DiskEncryptionKey any
-	Enabled any
-	KeyEncryptionKey any
+	Enabled           any
+	KeyEncryptionKey  any
 }
 
 type MachineInstanceView_Disks struct {
-	EncryptionSettings any
-	Name any
-	Statuses any
+	EncryptionSettings     any
+	Name                   any
+	Statuses               any
 	StorageAlignmentStatus any
 }
 
 type MachineInstanceView_Extensions struct {
-	Name any
-	Statuses any
-	Substatuses any
-	Type any
+	Name               any
+	Statuses           any
+	Substatuses        any
+	Type               any
 	TypeHandlerVersion any
 }
 
@@ -83,9 +83,9 @@ type MachineInstanceView_MaintenanceRedeployStatus struct {
 }
 
 type MachineInstanceView_PatchStatus_AvailablePatchSummary_Error_Details struct {
-	Code any
+	Code    any
 	Message any
-	Target any
+	Target  any
 }
 
 type MachineInstanceView_PatchStatus_AvailablePatchSummary_Error_Innererror struct {
@@ -162,8 +162,8 @@ type MachineInstanceView_PatchStatus struct {
 }
 
 type MachineInstanceView_VmAgent_ExtensionHandlers struct {
-	Status any
-	Type any
+	Status             any
+	Type               any
 	TypeHandlerVersion any
 }
 
@@ -224,7 +224,7 @@ type MachineInstanceViewAttrs struct {
 	VmAgent any
 	// The health status of the VM.
 	VmHealth any
-	VmName any
+	VmName   any
 }
 
 var MachineInstanceView = ubx.DataSourceBinding{

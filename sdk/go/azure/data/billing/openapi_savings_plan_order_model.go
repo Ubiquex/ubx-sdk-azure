@@ -25,11 +25,11 @@ type OpenapiSavingsPlanOrderModel_Properties_PlanInformation_PricingCurrencyTota
 
 type OpenapiSavingsPlanOrderModel_Properties_PlanInformation_Transactions struct {
 	BillingCurrencyTotal any
-	DueDate any
-	ExtendedStatusInfo any
-	PaymentDate any
+	DueDate              any
+	ExtendedStatusInfo   any
+	PaymentDate          any
 	PricingCurrencyTotal any
-	Status any
+	Status               any
 }
 
 type OpenapiSavingsPlanOrderModel_Properties_PlanInformation struct {
@@ -38,7 +38,7 @@ type OpenapiSavingsPlanOrderModel_Properties_PlanInformation struct {
 	// The price.
 	PricingCurrencyTotal any
 	// Date when the billing plan has started.
-	StartDate any
+	StartDate    any
 	Transactions any
 }
 
@@ -67,7 +67,7 @@ type OpenapiSavingsPlanOrderModel_Properties struct {
 	ProductCode any
 	// The provisioning state of the savings plan, e.g. Succeeded
 	ProvisioningState any
-	SavingsPlans any
+	SavingsPlans      any
 	// Represents the Savings plan term in ISO 8601 format.
 	Term any
 }
@@ -79,15 +79,15 @@ type OpenapiSavingsPlanOrderModel_Sku struct {
 
 type OpenapiSavingsPlanOrderModelConfig struct {
 	BillingAccountName any
-	Expand any
+	Expand             any
 	SavingsPlanOrderId any
 }
 
 type OpenapiSavingsPlanOrderModelAttrs struct {
 	BillingAccountName any
-	Expand any
+	Expand             any
 	// Savings plan order properties
-	Properties any
+	Properties         any
 	SavingsPlanOrderId any
 	// The SKU to be applied for this resource
 	Sku any
@@ -99,7 +99,7 @@ var OpenapiSavingsPlanOrderModel = ubx.DataSourceBinding{
 	WireType: "azure_billing_openapi_savings_plan_order_model",
 	Fields: ubx.FieldMap{
 		"BillingAccountName": ubx.FieldSpec{WireName: "billing_account_name"},
-		"Expand": ubx.FieldSpec{WireName: "expand"},
+		"Expand":             ubx.FieldSpec{WireName: "expand"},
 		"SavingsPlanOrderId": ubx.FieldSpec{WireName: "savings_plan_order_id"},
 	},
 }

@@ -4,7 +4,7 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiJob_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
@@ -20,16 +20,16 @@ type OpenapiJob_Identity struct {
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules_Auth struct {
-	SecretRef any
+	SecretRef        any
 	TriggerParameter any
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale_Rules struct {
-	Auth any
+	Auth     any
 	Identity any
 	Metadata any
-	Name any
-	Type any
+	Name     any
+	Type     any
 }
 
 type OpenapiJob_Properties_Configuration_EventTriggerConfig_Scale struct {
@@ -53,7 +53,7 @@ type OpenapiJob_Properties_Configuration_EventTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_IdentitySettings struct {
-	Identity any
+	Identity  any
 	Lifecycle any
 }
 
@@ -65,10 +65,10 @@ type OpenapiJob_Properties_Configuration_ManualTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_Registries struct {
-	Identity any
+	Identity          any
 	PasswordSecretRef any
-	Server any
-	Username any
+	Server            any
+	Username          any
 }
 
 type OpenapiJob_Properties_Configuration_ScheduleTriggerConfig struct {
@@ -81,10 +81,10 @@ type OpenapiJob_Properties_Configuration_ScheduleTriggerConfig struct {
 }
 
 type OpenapiJob_Properties_Configuration_Secrets struct {
-	Identity any
+	Identity    any
 	KeyVaultUrl any
-	Name any
-	Value any
+	Name        any
+	Value       any
 }
 
 type OpenapiJob_Properties_Configuration struct {
@@ -109,16 +109,16 @@ type OpenapiJob_Properties_Configuration struct {
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_HttpGet_HttpHeaders struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_HttpGet struct {
-	Host any
+	Host        any
 	HttpHeaders any
-	Path any
-	Port any
-	Scheme any
+	Path        any
+	Port        any
+	Scheme      any
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes_TcpSocket struct {
@@ -127,15 +127,15 @@ type OpenapiJob_Properties_Template_Containers_Probes_TcpSocket struct {
 }
 
 type OpenapiJob_Properties_Template_Containers_Probes struct {
-	FailureThreshold any
-	HttpGet any
-	InitialDelaySeconds any
-	PeriodSeconds any
-	SuccessThreshold any
-	TcpSocket any
+	FailureThreshold              any
+	HttpGet                       any
+	InitialDelaySeconds           any
+	PeriodSeconds                 any
+	SuccessThreshold              any
+	TcpSocket                     any
 	TerminationGracePeriodSeconds any
-	TimeoutSeconds any
-	Type any
+	TimeoutSeconds                any
+	Type                          any
 }
 
 type OpenapiJob_Properties_Template_Containers struct {
@@ -143,44 +143,44 @@ type OpenapiJob_Properties_Template_Containers struct {
 }
 
 type OpenapiJob_Properties_Template_InitContainers_Env struct {
-	Name any
+	Name      any
 	SecretRef any
-	Value any
+	Value     any
 }
 
 type OpenapiJob_Properties_Template_InitContainers_Resources struct {
-	Cpu any
+	Cpu              any
 	EphemeralStorage any
-	Memory any
+	Memory           any
 }
 
 type OpenapiJob_Properties_Template_InitContainers_VolumeMounts struct {
-	MountPath any
-	SubPath any
+	MountPath  any
+	SubPath    any
 	VolumeName any
 }
 
 type OpenapiJob_Properties_Template_InitContainers struct {
-	Args any
-	Command any
-	Env any
-	Image any
-	Name any
-	Resources any
+	Args         any
+	Command      any
+	Env          any
+	Image        any
+	Name         any
+	Resources    any
 	VolumeMounts any
 }
 
 type OpenapiJob_Properties_Template_Volumes_Secrets struct {
-	Path any
+	Path      any
 	SecretRef any
 }
 
 type OpenapiJob_Properties_Template_Volumes struct {
 	MountOptions any
-	Name any
-	Secrets any
-	StorageName any
-	StorageType any
+	Name         any
+	Secrets      any
+	StorageName  any
+	StorageType  any
 }
 
 type OpenapiJob_Properties_Template struct {
@@ -218,7 +218,7 @@ type OpenapiJobAttrs struct {
 	ApiName any
 	// Managed service identity (system assigned and/or user assigned identities)
 	Identity any
-	JobName any
+	JobName  any
 	// The geo-location where the resource lives
 	Location any
 	// Container Apps Job resource specific properties.

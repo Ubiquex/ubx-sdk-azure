@@ -18,17 +18,17 @@ type ImageVersion_Properties struct {
 
 type ImageVersionConfig struct {
 	DevCenterName any
-	GalleryName any
-	ImageName any
-	VersionName any
+	GalleryName   any
+	ImageName     any
+	VersionName   any
 }
 
 type ImageVersionAttrs struct {
 	DevCenterName any
-	GalleryName any
-	ImageName any
+	GalleryName   any
+	ImageName     any
 	// Properties of an image version.
-	Properties any
+	Properties  any
 	VersionName any
 }
 
@@ -36,8 +36,8 @@ var ImageVersion = ubx.DataSourceBinding{
 	WireType: "azure_devcenter_image_version",
 	Fields: ubx.FieldMap{
 		"DevCenterName": ubx.FieldSpec{WireName: "dev_center_name"},
-		"GalleryName": ubx.FieldSpec{WireName: "gallery_name"},
-		"ImageName": ubx.FieldSpec{WireName: "image_name"},
-		"VersionName": ubx.FieldSpec{WireName: "version_name"},
+		"GalleryName":   ubx.FieldSpec{WireName: "gallery_name"},
+		"ImageName":     ubx.FieldSpec{WireName: "image_name"},
+		"VersionName":   ubx.FieldSpec{WireName: "version_name"},
 	},
 }

@@ -23,6 +23,5 @@ type GrafanaManagedDashboardListAttrs struct {
 
 var GrafanaManagedDashboardList = ubx.DataSourceBinding{
 	WireType: "azure_dashboard_grafana_managed_dashboard_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

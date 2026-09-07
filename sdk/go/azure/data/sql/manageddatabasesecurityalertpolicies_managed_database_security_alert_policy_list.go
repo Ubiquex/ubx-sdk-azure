@@ -4,14 +4,14 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManageddatabasesecurityalertpoliciesManagedDatabaseSecurityAlertPolicyList_Value_Properties struct {
-	CreationTime any
-	DisabledAlerts any
-	EmailAccountAdmins any
-	EmailAddresses any
-	RetentionDays any
-	State any
+	CreationTime            any
+	DisabledAlerts          any
+	EmailAccountAdmins      any
+	EmailAddresses          any
+	RetentionDays           any
+	State                   any
 	StorageAccountAccessKey any
-	StorageEndpoint any
+	StorageEndpoint         any
 }
 
 type ManageddatabasesecurityalertpoliciesManagedDatabaseSecurityAlertPolicyList_Value struct {
@@ -19,12 +19,12 @@ type ManageddatabasesecurityalertpoliciesManagedDatabaseSecurityAlertPolicyList_
 }
 
 type ManageddatabasesecurityalertpoliciesManagedDatabaseSecurityAlertPolicyListConfig struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 }
 
 type ManageddatabasesecurityalertpoliciesManagedDatabaseSecurityAlertPolicyListAttrs struct {
-	DatabaseName any
+	DatabaseName        any
 	ManagedInstanceName any
 	// The link to the next page of items
 	NextLink any
@@ -35,7 +35,7 @@ type ManageddatabasesecurityalertpoliciesManagedDatabaseSecurityAlertPolicyListA
 var ManageddatabasesecurityalertpoliciesManagedDatabaseSecurityAlertPolicyList = ubx.DataSourceBinding{
 	WireType: "azure_sql_manageddatabasesecurityalertpolicies_managed_database_security_alert_policy_list",
 	Fields: ubx.FieldMap{
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
+		"DatabaseName":        ubx.FieldSpec{WireName: "database_name"},
 		"ManagedInstanceName": ubx.FieldSpec{WireName: "managed_instance_name"},
 	},
 }

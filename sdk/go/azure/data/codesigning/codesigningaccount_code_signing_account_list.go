@@ -8,9 +8,9 @@ type CodesigningaccountCodeSigningAccountList_Value_Properties_Sku struct {
 }
 
 type CodesigningaccountCodeSigningAccountList_Value_Properties struct {
-	AccountUri any
+	AccountUri        any
 	ProvisioningState any
-	Sku any
+	Sku               any
 }
 
 type CodesigningaccountCodeSigningAccountList_Value struct {
@@ -29,6 +29,5 @@ type CodesigningaccountCodeSigningAccountListAttrs struct {
 
 var CodesigningaccountCodeSigningAccountList = ubx.DataSourceBinding{
 	WireType: "azure_codesigning_codesigningaccount_code_signing_account_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

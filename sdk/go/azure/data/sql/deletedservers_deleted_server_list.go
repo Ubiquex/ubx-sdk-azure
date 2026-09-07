@@ -4,10 +4,10 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DeletedserversDeletedServerList_Value_Properties struct {
-	DeletionTime any
+	DeletionTime             any
 	FullyQualifiedDomainName any
-	OriginalId any
-	Version any
+	OriginalId               any
+	Version                  any
 }
 
 type DeletedserversDeletedServerList_Value struct {
@@ -26,6 +26,5 @@ type DeletedserversDeletedServerListAttrs struct {
 
 var DeletedserversDeletedServerList = ubx.DataSourceBinding{
 	WireType: "azure_sql_deletedservers_deleted_server_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

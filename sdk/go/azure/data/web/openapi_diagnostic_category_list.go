@@ -8,7 +8,7 @@ type OpenapiDiagnosticCategoryList_Value_Properties struct {
 }
 
 type OpenapiDiagnosticCategoryList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

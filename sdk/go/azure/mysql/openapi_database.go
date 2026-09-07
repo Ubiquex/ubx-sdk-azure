@@ -11,9 +11,9 @@ type OpenapiDatabase_Properties struct {
 }
 
 var OpenapiDatabase_PropertiesFields = ubx.FieldMap{
-		"Charset": ubx.FieldSpec{WireName: "charset"},
-		"Collation": ubx.FieldSpec{WireName: "collation"},
-	}
+	"Charset":   ubx.FieldSpec{WireName: "charset"},
+	"Collation": ubx.FieldSpec{WireName: "collation"},
+}
 
 type OpenapiDatabaseConfig struct {
 	// The properties of a database.
@@ -30,8 +30,8 @@ var OpenapiDatabase = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDatabase_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDatabase_PropertiesFields,
 		},
 	},
 }

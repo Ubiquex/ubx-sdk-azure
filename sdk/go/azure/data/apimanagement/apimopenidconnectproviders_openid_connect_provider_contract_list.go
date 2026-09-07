@@ -4,13 +4,13 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimopenidconnectprovidersOpenidConnectProviderContractList_Value_Properties struct {
-	ClientId any
-	ClientSecret any
-	Description any
-	DisplayName any
-	MetadataEndpoint any
+	ClientId              any
+	ClientSecret          any
+	Description           any
+	DisplayName           any
+	MetadataEndpoint      any
 	UseInApiDocumentation any
-	UseInTestConsole any
+	UseInTestConsole      any
 }
 
 type ApimopenidconnectprovidersOpenidConnectProviderContractList_Value struct {
@@ -31,6 +31,5 @@ type ApimopenidconnectprovidersOpenidConnectProviderContractListAttrs struct {
 
 var ApimopenidconnectprovidersOpenidConnectProviderContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimopenidconnectproviders_openid_connect_provider_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

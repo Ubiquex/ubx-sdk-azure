@@ -32,7 +32,7 @@ type VirtualwanVpnSiteLink_Properties struct {
 
 type VirtualwanVpnSiteLinkConfig struct {
 	VpnSiteLinkName any
-	VpnSiteName any
+	VpnSiteName     any
 }
 
 type VirtualwanVpnSiteLinkAttrs struct {
@@ -43,15 +43,15 @@ type VirtualwanVpnSiteLinkAttrs struct {
 	// Parameters for VpnSite.
 	Properties any
 	// Resource type.
-	Type any
+	Type            any
 	VpnSiteLinkName any
-	VpnSiteName any
+	VpnSiteName     any
 }
 
 var VirtualwanVpnSiteLink = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_vpn_site_link",
 	Fields: ubx.FieldMap{
 		"VpnSiteLinkName": ubx.FieldSpec{WireName: "vpn_site_link_name"},
-		"VpnSiteName": ubx.FieldSpec{WireName: "vpn_site_name"},
+		"VpnSiteName":     ubx.FieldSpec{WireName: "vpn_site_name"},
 	},
 }

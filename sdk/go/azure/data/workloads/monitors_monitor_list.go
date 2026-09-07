@@ -4,12 +4,12 @@ package workloads
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorsMonitorList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type MonitorsMonitorList_Value_Identity struct {
-	Type any
+	Type                   any
 	UserAssignedIdentities any
 }
 
@@ -21,19 +21,19 @@ type MonitorsMonitorList_Value_Properties_Errors_Details_InnerError struct {
 }
 
 type MonitorsMonitorList_Value_Properties_Errors_Details struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsMonitorList_Value_Properties_Errors_InnerError_InnerError struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsMonitorList_Value_Properties_Errors_InnerError struct {
@@ -41,11 +41,11 @@ type MonitorsMonitorList_Value_Properties_Errors_InnerError struct {
 }
 
 type MonitorsMonitorList_Value_Properties_Errors struct {
-	Code any
-	Details any
+	Code       any
+	Details    any
 	InnerError any
-	Message any
-	Target any
+	Message    any
+	Target     any
 }
 
 type MonitorsMonitorList_Value_Properties_ManagedResourceGroupConfiguration struct {
@@ -53,20 +53,20 @@ type MonitorsMonitorList_Value_Properties_ManagedResourceGroupConfiguration stru
 }
 
 type MonitorsMonitorList_Value_Properties struct {
-	AppLocation any
-	Errors any
-	LogAnalyticsWorkspaceArmId any
+	AppLocation                       any
+	Errors                            any
+	LogAnalyticsWorkspaceArmId        any
 	ManagedResourceGroupConfiguration any
-	MonitorSubnet any
-	MsiArmId any
-	ProvisioningState any
-	RoutingPreference any
-	StorageAccountArmId any
-	ZoneRedundancyPreference any
+	MonitorSubnet                     any
+	MsiArmId                          any
+	ProvisioningState                 any
+	RoutingPreference                 any
+	StorageAccountArmId               any
+	ZoneRedundancyPreference          any
 }
 
 type MonitorsMonitorList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -82,6 +82,5 @@ type MonitorsMonitorListAttrs struct {
 
 var MonitorsMonitorList = ubx.DataSourceBinding{
 	WireType: "azure_workloads_monitors_monitor_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

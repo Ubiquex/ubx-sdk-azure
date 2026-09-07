@@ -9,15 +9,15 @@ type DbOpenapiPrivateEndpointConnectionList_Value_Properties_PrivateEndpoint str
 
 type DbOpenapiPrivateEndpointConnectionList_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type DbOpenapiPrivateEndpointConnectionList_Value_Properties struct {
-	GroupId any
-	PrivateEndpoint any
+	GroupId                           any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type DbOpenapiPrivateEndpointConnectionList_Value struct {
@@ -30,7 +30,7 @@ type DbOpenapiPrivateEndpointConnectionListConfig struct {
 
 type DbOpenapiPrivateEndpointConnectionListAttrs struct {
 	AccountName any
-	NextLink any
+	NextLink    any
 	// Array of private endpoint connections
 	Value any
 }

@@ -113,23 +113,23 @@ type OpenapiProductPackageModel_Properties struct {
 }
 
 type OpenapiProductPackageModelConfig struct {
-	PackageId any
+	PackageId     any
 	WorkspaceName any
 }
 
 type OpenapiProductPackageModelAttrs struct {
 	// Etag of the azure resource
-	Etag any
+	Etag      any
 	PackageId any
 	// Describes package properties
-	Properties any
+	Properties    any
 	WorkspaceName any
 }
 
 var OpenapiProductPackageModel = ubx.DataSourceBinding{
 	WireType: "azure_securityinsights_openapi_product_package_model",
 	Fields: ubx.FieldMap{
-		"PackageId": ubx.FieldSpec{WireName: "package_id"},
+		"PackageId":     ubx.FieldSpec{WireName: "package_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

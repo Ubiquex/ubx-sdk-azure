@@ -4,12 +4,12 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RaiPolicy_Properties_ContentFilters struct {
-	Action any
-	Blocking any
-	Enabled any
-	Name any
+	Action            any
+	Blocking          any
+	Enabled           any
+	Name              any
 	SeverityThreshold any
-	Source any
+	Source            any
 }
 
 type RaiPolicy_Properties_CustomBlocklists struct {
@@ -32,7 +32,7 @@ type RaiPolicy_Properties struct {
 }
 
 type RaiPolicyConfig struct {
-	AccountName any
+	AccountName   any
 	RaiPolicyName any
 }
 
@@ -41,7 +41,7 @@ type RaiPolicyAttrs struct {
 	// Resource Etag.
 	Etag any
 	// Azure OpenAI Content Filters properties.
-	Properties any
+	Properties    any
 	RaiPolicyName any
 	// Resource tags.
 	Tags any
@@ -50,7 +50,7 @@ type RaiPolicyAttrs struct {
 var RaiPolicy = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_rai_policy",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":   ubx.FieldSpec{WireName: "account_name"},
 		"RaiPolicyName": ubx.FieldSpec{WireName: "rai_policy_name"},
 	},
 }

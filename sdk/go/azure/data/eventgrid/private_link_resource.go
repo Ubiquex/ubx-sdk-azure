@@ -4,19 +4,19 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResource_Properties struct {
-	DisplayName any
-	GroupId any
-	RequiredMembers any
+	DisplayName       any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type PrivateLinkResourceConfig struct {
-	ApiVersion any
-	ParentName any
-	ParentType any
+	ApiVersion              any
+	ParentName              any
+	ParentType              any
 	PrivateLinkResourceName any
-	ResourceGroupName any
-	SubscriptionId any
+	ResourceGroupName       any
+	SubscriptionId          any
 }
 
 type PrivateLinkResourceAttrs struct {
@@ -24,13 +24,13 @@ type PrivateLinkResourceAttrs struct {
 	// Fully qualified identifier of the resource.
 	Id any
 	// Name of the resource.
-	Name any
-	ParentName any
-	ParentType any
+	Name                    any
+	ParentName              any
+	ParentType              any
 	PrivateLinkResourceName any
-	Properties any
-	ResourceGroupName any
-	SubscriptionId any
+	Properties              any
+	ResourceGroupName       any
+	SubscriptionId          any
 	// Type of the resource.
 	Type any
 }
@@ -38,11 +38,11 @@ type PrivateLinkResourceAttrs struct {
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_private_link_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ParentName": ubx.FieldSpec{WireName: "parent_name"},
-		"ParentType": ubx.FieldSpec{WireName: "parent_type"},
+		"ApiVersion":              ubx.FieldSpec{WireName: "api_version"},
+		"ParentName":              ubx.FieldSpec{WireName: "parent_name"},
+		"ParentType":              ubx.FieldSpec{WireName: "parent_type"},
 		"PrivateLinkResourceName": ubx.FieldSpec{WireName: "private_link_resource_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceGroupName":       ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":          ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

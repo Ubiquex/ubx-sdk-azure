@@ -17,12 +17,12 @@ type ApimapisTagDescriptionContract2_Properties struct {
 }
 
 var ApimapisTagDescriptionContract2_PropertiesFields = ubx.FieldMap{
-		"Description": ubx.FieldSpec{WireName: "description"},
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ExternalDocsDescription": ubx.FieldSpec{WireName: "external_docs_description"},
-		"ExternalDocsUrl": ubx.FieldSpec{WireName: "external_docs_url"},
-		"TagId": ubx.FieldSpec{WireName: "tag_id"},
-	}
+	"Description":             ubx.FieldSpec{WireName: "description"},
+	"DisplayName":             ubx.FieldSpec{WireName: "display_name"},
+	"ExternalDocsDescription": ubx.FieldSpec{WireName: "external_docs_description"},
+	"ExternalDocsUrl":         ubx.FieldSpec{WireName: "external_docs_url"},
+	"TagId":                   ubx.FieldSpec{WireName: "tag_id"},
+}
 
 type ApimapisTagDescriptionContract2Config struct {
 	// Parameters supplied to the Create TagDescription operation.
@@ -39,8 +39,8 @@ var ApimapisTagDescriptionContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimapisTagDescriptionContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimapisTagDescriptionContract2_PropertiesFields,
 		},
 	},
 }

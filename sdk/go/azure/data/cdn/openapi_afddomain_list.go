@@ -17,32 +17,32 @@ type OpenapiAfddomainList_Value_Properties_TlsSettings_CustomizedCipherSuiteSet 
 }
 
 type OpenapiAfddomainList_Value_Properties_TlsSettings struct {
-	CertificateType any
-	CipherSuiteSetType any
+	CertificateType          any
+	CipherSuiteSetType       any
 	CustomizedCipherSuiteSet any
-	MinimumTlsVersion any
-	Secret any
-	ServerTlsGroupPolicy any
-	ServerTlsGroups any
+	MinimumTlsVersion        any
+	Secret                   any
+	ServerTlsGroupPolicy     any
+	ServerTlsGroups          any
 }
 
 type OpenapiAfddomainList_Value_Properties_ValidationProperties struct {
-	ExpirationDate any
+	ExpirationDate  any
 	ValidationToken any
 }
 
 type OpenapiAfddomainList_Value_Properties struct {
-	AzureDnsZone any
-	DeploymentStatus any
-	DomainValidationState any
-	ExtendedProperties any
-	HostName any
-	MtlsSettings any
+	AzureDnsZone                       any
+	DeploymentStatus                   any
+	DomainValidationState              any
+	ExtendedProperties                 any
+	HostName                           any
+	MtlsSettings                       any
 	PreValidatedCustomDomainResourceId any
-	ProfileName any
-	ProvisioningState any
-	TlsSettings any
-	ValidationProperties any
+	ProfileName                        any
+	ProvisioningState                  any
+	TlsSettings                        any
+	ValidationProperties               any
 }
 
 type OpenapiAfddomainList_Value struct {
@@ -55,7 +55,7 @@ type OpenapiAfddomainListConfig struct {
 
 type OpenapiAfddomainListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink    any
 	ProfileName any
 	// The AFDDomain items on this page
 	Value any

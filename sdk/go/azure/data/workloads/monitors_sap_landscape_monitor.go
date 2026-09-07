@@ -4,7 +4,7 @@ package workloads
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MonitorsSapLandscapeMonitor_Properties_Grouping_Landscape struct {
-	Name any
+	Name   any
 	TopSid any
 }
 
@@ -16,9 +16,9 @@ type MonitorsSapLandscapeMonitor_Properties_Grouping struct {
 }
 
 type MonitorsSapLandscapeMonitor_Properties_TopMetricsThresholds struct {
-	Green any
-	Name any
-	Red any
+	Green  any
+	Name   any
+	Red    any
 	Yellow any
 }
 

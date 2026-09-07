@@ -22,17 +22,17 @@ type ExpressrouteExpressRouteLagMember_Properties struct {
 
 type ExpressrouteExpressRouteLagMemberConfig struct {
 	ExpressRouteLagName any
-	LinkName any
-	MemberName any
+	LinkName            any
+	MemberName          any
 }
 
 type ExpressrouteExpressRouteLagMemberAttrs struct {
 	// A unique read-only string that changes whenever the resource is updated.
-	Etag any
+	Etag                any
 	ExpressRouteLagName any
 	// The unique identifier of the resource.
-	Id any
-	LinkName any
+	Id         any
+	LinkName   any
 	MemberName any
 	// Name of child member resource that is unique among child member resources of the parent.
 	Name any
@@ -46,7 +46,7 @@ var ExpressrouteExpressRouteLagMember = ubx.DataSourceBinding{
 	WireType: "azure_network_expressroute_express_route_lag_member",
 	Fields: ubx.FieldMap{
 		"ExpressRouteLagName": ubx.FieldSpec{WireName: "express_route_lag_name"},
-		"LinkName": ubx.FieldSpec{WireName: "link_name"},
-		"MemberName": ubx.FieldSpec{WireName: "member_name"},
+		"LinkName":            ubx.FieldSpec{WireName: "link_name"},
+		"MemberName":          ubx.FieldSpec{WireName: "member_name"},
 	},
 }

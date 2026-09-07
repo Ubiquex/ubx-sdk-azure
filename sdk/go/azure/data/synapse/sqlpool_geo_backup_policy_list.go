@@ -4,13 +4,13 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolGeoBackupPolicyList_Value_Properties struct {
-	State any
+	State       any
 	StorageType any
 }
 
 type SqlpoolGeoBackupPolicyList_Value struct {
-	Kind any
-	Location any
+	Kind       any
+	Location   any
 	Properties any
 }
 

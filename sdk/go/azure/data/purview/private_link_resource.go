@@ -13,25 +13,25 @@ type PrivateLinkResource_Properties struct {
 }
 
 type PrivateLinkResourceConfig struct {
-	AccountName any
-	ApiVersion any
-	GroupId any
+	AccountName       any
+	ApiVersion        any
+	GroupId           any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type PrivateLinkResourceAttrs struct {
 	AccountName any
-	ApiVersion any
-	GroupId any
+	ApiVersion  any
+	GroupId     any
 	// The private link resource identifier.
 	Id any
 	// The private link resource name.
 	Name any
 	// A privately linkable resource properties.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// The private link resource type.
 	Type any
 }
@@ -39,10 +39,10 @@ type PrivateLinkResourceAttrs struct {
 var PrivateLinkResource = ubx.DataSourceBinding{
 	WireType: "azure_purview_private_link_resource",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
+		"AccountName":       ubx.FieldSpec{WireName: "account_name"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"GroupId":           ubx.FieldSpec{WireName: "group_id"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

@@ -4,20 +4,20 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SreagentAgentSpaceList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type SreagentAgentSpaceList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type SreagentAgentSpaceList_Value_Properties_ComplianceStatus struct {
-	ComplianceIssues any
-	IsCompliant any
+	ComplianceIssues    any
+	IsCompliant         any
 	LastComplianceCheck any
 }
 
@@ -27,20 +27,20 @@ type SreagentAgentSpaceList_Value_Properties_Policies_GenevaActionsConfiguration
 }
 
 type SreagentAgentSpaceList_Value_Properties_Policies_GenevaActionsConfiguration_AllowedActions struct {
-	ActionName any
+	ActionName       any
 	ActionParameters any
 	ApprovalRequired any
-	Extension any
+	Extension        any
 }
 
 type SreagentAgentSpaceList_Value_Properties_Policies_GenevaActionsConfiguration struct {
-	AcisEndpoint any
-	AllowedActions any
-	AuthenticationMode any
+	AcisEndpoint                      any
+	AllowedActions                    any
+	AuthenticationMode                any
 	CertificateSubjectAlternativeName any
-	CertificateSubjectName any
-	ClientId any
-	ExtensionName any
+	CertificateSubjectName            any
+	ClientId                          any
+	ExtensionName                     any
 }
 
 type SreagentAgentSpaceList_Value_Properties_Policies struct {
@@ -48,19 +48,19 @@ type SreagentAgentSpaceList_Value_Properties_Policies struct {
 }
 
 type SreagentAgentSpaceList_Value_Properties struct {
-	ComplianceStatus any
-	CurrentAgentCount any
-	Description any
+	ComplianceStatus      any
+	CurrentAgentCount     any
+	Description           any
 	LastPolicyPropagation any
-	MaxAgentCount any
-	MemberAgents any
-	Policies any
-	ProvisioningState any
-	ServiceTreeId any
+	MaxAgentCount         any
+	MemberAgents          any
+	Policies              any
+	ProvisioningState     any
+	ServiceTreeId         any
 }
 
 type SreagentAgentSpaceList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -76,6 +76,5 @@ type SreagentAgentSpaceListAttrs struct {
 
 var SreagentAgentSpaceList = ubx.DataSourceBinding{
 	WireType: "azure_app_sreagent_agent_space_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

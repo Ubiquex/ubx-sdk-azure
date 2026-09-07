@@ -4,7 +4,7 @@ package devtestlabs
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type DtlArmTemplate_Properties_ParametersValueFilesInfo struct {
-	FileName any
+	FileName            any
 	ParametersValueInfo any
 }
 
@@ -29,16 +29,16 @@ type DtlArmTemplate_Properties struct {
 
 type DtlArmTemplateConfig struct {
 	ArtifactSourceName any
-	LabName any
-	Name any
+	LabName            any
+	Name               any
 }
 
 type DtlArmTemplateAttrs struct {
 	ArtifactSourceName any
-	LabName any
+	LabName            any
 	// The geo-location where the resource lives
 	Location any
-	Name any
+	Name     any
 	// Properties of an Azure Resource Manager template.
 	Properties any
 	// Resource tags.
@@ -49,7 +49,7 @@ var DtlArmTemplate = ubx.DataSourceBinding{
 	WireType: "azure_devtestlabs_dtl_arm_template",
 	Fields: ubx.FieldMap{
 		"ArtifactSourceName": ubx.FieldSpec{WireName: "artifact_source_name"},
-		"LabName": ubx.FieldSpec{WireName: "lab_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"LabName":            ubx.FieldSpec{WireName: "lab_name"},
+		"Name":               ubx.FieldSpec{WireName: "name"},
 	},
 }

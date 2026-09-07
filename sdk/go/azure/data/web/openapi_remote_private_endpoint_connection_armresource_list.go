@@ -9,19 +9,19 @@ type OpenapiRemotePrivateEndpointConnectionArmresourceList_Value_Properties_Priv
 
 type OpenapiRemotePrivateEndpointConnectionArmresourceList_Value_Properties_PrivateLinkServiceConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiRemotePrivateEndpointConnectionArmresourceList_Value_Properties struct {
-	IpAddresses any
-	PrivateEndpoint any
+	IpAddresses                       any
+	PrivateEndpoint                   any
 	PrivateLinkServiceConnectionState any
-	ProvisioningState any
+	ProvisioningState                 any
 }
 
 type OpenapiRemotePrivateEndpointConnectionArmresourceList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

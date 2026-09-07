@@ -4,14 +4,14 @@ package containerservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedclustersMeshRevisionProfile_Properties_MeshRevisions_CompatibleWith struct {
-	Name any
+	Name     any
 	Versions any
 }
 
 type ManagedclustersMeshRevisionProfile_Properties_MeshRevisions struct {
 	CompatibleWith any
-	Revision any
-	Upgrades any
+	Revision       any
+	Upgrades       any
 }
 
 type ManagedclustersMeshRevisionProfile_Properties struct {

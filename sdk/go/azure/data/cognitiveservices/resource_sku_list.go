@@ -5,23 +5,23 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceSkuList_Value_Restrictions_RestrictionInfo struct {
 	Locations any
-	Zones any
+	Zones     any
 }
 
 type ResourceSkuList_Value_Restrictions struct {
-	ReasonCode any
+	ReasonCode      any
 	RestrictionInfo any
-	Type any
-	Values any
+	Type            any
+	Values          any
 }
 
 type ResourceSkuList_Value struct {
-	Kind any
-	Locations any
-	Name any
+	Kind         any
+	Locations    any
+	Name         any
 	ResourceType any
 	Restrictions any
-	Tier any
+	Tier         any
 }
 
 type ResourceSkuListConfig struct {
@@ -36,6 +36,5 @@ type ResourceSkuListAttrs struct {
 
 var ResourceSkuList = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_resource_sku_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

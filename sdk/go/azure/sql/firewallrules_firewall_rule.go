@@ -16,17 +16,17 @@ type FirewallrulesFirewallRule_Values struct {
 }
 
 var FirewallrulesFirewallRule_PropertiesFields = ubx.FieldMap{
-		"EndIpAddress": ubx.FieldSpec{WireName: "end_ip_address"},
-		"StartIpAddress": ubx.FieldSpec{WireName: "start_ip_address"},
-	}
+	"EndIpAddress":   ubx.FieldSpec{WireName: "end_ip_address"},
+	"StartIpAddress": ubx.FieldSpec{WireName: "start_ip_address"},
+}
 
 var FirewallrulesFirewallRule_ValuesFields = ubx.FieldMap{
-		"Properties": ubx.FieldSpec{
-			WireName: "properties",
-			Kind: "object",
-			Fields: FirewallrulesFirewallRule_PropertiesFields,
-		},
-	}
+	"Properties": ubx.FieldSpec{
+		WireName: "properties",
+		Kind:     "object",
+		Fields:   FirewallrulesFirewallRule_PropertiesFields,
+	},
+}
 
 type FirewallrulesFirewallRuleConfig struct {
 	// The firewall rule(s) making up this collection. (AI-inferred)
@@ -45,8 +45,8 @@ var FirewallrulesFirewallRule = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Values": ubx.FieldSpec{
 			WireName: "values",
-			Kind: "list",
-			Fields: FirewallrulesFirewallRule_ValuesFields,
+			Kind:     "list",
+			Fields:   FirewallrulesFirewallRule_ValuesFields,
 		},
 	},
 }

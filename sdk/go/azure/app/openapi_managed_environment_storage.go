@@ -40,40 +40,40 @@ type OpenapiManagedEnvironmentStorage_Properties struct {
 }
 
 var OpenapiManagedEnvironmentStorage_Properties_AzureFile_AccountKeyVaultPropertiesFields = ubx.FieldMap{
-		"Identity": ubx.FieldSpec{WireName: "identity"},
-		"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
-	}
+	"Identity":    ubx.FieldSpec{WireName: "identity"},
+	"KeyVaultUrl": ubx.FieldSpec{WireName: "key_vault_url"},
+}
 
 var OpenapiManagedEnvironmentStorage_Properties_AzureFileFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"AccountKey": ubx.FieldSpec{WireName: "account_key"},
-		"AccountKeyVaultProperties": ubx.FieldSpec{
-			WireName: "account_key_vault_properties",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironmentStorage_Properties_AzureFile_AccountKeyVaultPropertiesFields,
-		},
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"ShareName": ubx.FieldSpec{WireName: "share_name"},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"AccountKey": ubx.FieldSpec{WireName: "account_key"},
+	"AccountKeyVaultProperties": ubx.FieldSpec{
+		WireName: "account_key_vault_properties",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironmentStorage_Properties_AzureFile_AccountKeyVaultPropertiesFields,
+	},
+	"AccountName": ubx.FieldSpec{WireName: "account_name"},
+	"ShareName":   ubx.FieldSpec{WireName: "share_name"},
+}
 
 var OpenapiManagedEnvironmentStorage_Properties_NfsAzureFileFields = ubx.FieldMap{
-		"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
-		"Server": ubx.FieldSpec{WireName: "server"},
-		"ShareName": ubx.FieldSpec{WireName: "share_name"},
-	}
+	"AccessMode": ubx.FieldSpec{WireName: "access_mode"},
+	"Server":     ubx.FieldSpec{WireName: "server"},
+	"ShareName":  ubx.FieldSpec{WireName: "share_name"},
+}
 
 var OpenapiManagedEnvironmentStorage_PropertiesFields = ubx.FieldMap{
-		"AzureFile": ubx.FieldSpec{
-			WireName: "azure_file",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironmentStorage_Properties_AzureFileFields,
-		},
-		"NfsAzureFile": ubx.FieldSpec{
-			WireName: "nfs_azure_file",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironmentStorage_Properties_NfsAzureFileFields,
-		},
-	}
+	"AzureFile": ubx.FieldSpec{
+		WireName: "azure_file",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironmentStorage_Properties_AzureFileFields,
+	},
+	"NfsAzureFile": ubx.FieldSpec{
+		WireName: "nfs_azure_file",
+		Kind:     "object",
+		Fields:   OpenapiManagedEnvironmentStorage_Properties_NfsAzureFileFields,
+	},
+}
 
 type OpenapiManagedEnvironmentStorageConfig struct {
 	// Storage properties
@@ -90,8 +90,8 @@ var OpenapiManagedEnvironmentStorage = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiManagedEnvironmentStorage_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiManagedEnvironmentStorage_PropertiesFields,
 		},
 	},
 }

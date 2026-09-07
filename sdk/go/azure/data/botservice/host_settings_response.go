@@ -4,7 +4,7 @@ package botservice
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HostSettingsResponseConfig struct {
-	ApiVersion any
+	ApiVersion     any
 	SubscriptionId any
 }
 
@@ -13,7 +13,7 @@ type HostSettingsResponseAttrs struct {
 	// Same as toBotFromChannelOpenIdMetadataUrl, used by SDK < v4.12
 	BotOpenIdMetadata any
 	// For in-conversation bot user authentication
-	OauthUrl any
+	OauthUrl       any
 	SubscriptionId any
 	// For verifying incoming tokens from the channels
 	ToBotFromChannelOpenIdMetadataUrl any
@@ -32,7 +32,7 @@ type HostSettingsResponseAttrs struct {
 var HostSettingsResponse = ubx.DataSourceBinding{
 	WireType: "azure_botservice_host_settings_response",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":     ubx.FieldSpec{WireName: "api_version"},
 		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

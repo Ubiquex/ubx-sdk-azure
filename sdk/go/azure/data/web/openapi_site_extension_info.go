@@ -40,15 +40,15 @@ type OpenapiSiteExtensionInfo_Properties struct {
 	PublishedDateTime any
 	// Summary description.
 	Summary any
-	Title any
+	Title   any
 	// Version information.
 	Version any
 }
 
 type OpenapiSiteExtensionInfoConfig struct {
-	Name any
+	Name            any
 	SiteExtensionId any
-	Slot any
+	Slot            any
 }
 
 type OpenapiSiteExtensionInfoAttrs struct {
@@ -56,16 +56,16 @@ type OpenapiSiteExtensionInfoAttrs struct {
 	Kind any
 	Name any
 	// SiteExtensionInfo resource specific properties
-	Properties any
+	Properties      any
 	SiteExtensionId any
-	Slot any
+	Slot            any
 }
 
 var OpenapiSiteExtensionInfo = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_site_extension_info",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":            ubx.FieldSpec{WireName: "name"},
 		"SiteExtensionId": ubx.FieldSpec{WireName: "site_extension_id"},
-		"Slot": ubx.FieldSpec{WireName: "slot"},
+		"Slot":            ubx.FieldSpec{WireName: "slot"},
 	},
 }

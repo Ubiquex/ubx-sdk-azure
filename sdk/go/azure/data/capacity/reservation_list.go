@@ -8,11 +8,11 @@ type ReservationList_Value_Properties_InstanceView_ReservationStateInfo struct {
 }
 
 type ReservationList_Value_Properties_InstanceView_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type ReservationList_Value_Properties_InstanceView_UtilizationInfo_VirtualMachinesAllocated struct {
@@ -20,45 +20,45 @@ type ReservationList_Value_Properties_InstanceView_UtilizationInfo_VirtualMachin
 }
 
 type ReservationList_Value_Properties_InstanceView_UtilizationInfo struct {
-	CurrentCapacity any
+	CurrentCapacity                 any
 	UsedReservedCountBySubscription any
-	VirtualMachinesAllocated any
+	VirtualMachinesAllocated        any
 }
 
 type ReservationList_Value_Properties_InstanceView struct {
 	ReservationStateInfo any
-	Statuses any
-	UtilizationInfo any
+	Statuses             any
+	UtilizationInfo      any
 }
 
 type ReservationList_Value_Properties_ScheduleProfile struct {
-	End any
+	End                   any
 	MinimumCommitmentDays any
-	ModifiableUntil any
-	Start any
+	ModifiableUntil       any
+	Start                 any
 }
 
 type ReservationList_Value_Properties struct {
-	InstanceView any
-	PlatformFaultDomainCount any
-	ProvisioningState any
-	ProvisioningTime any
-	ReservationId any
-	ScheduleProfile any
-	TimeCreated any
+	InstanceView              any
+	PlatformFaultDomainCount  any
+	ProvisioningState         any
+	ProvisioningTime          any
+	ReservationId             any
+	ScheduleProfile           any
+	TimeCreated               any
 	VirtualMachinesAssociated any
 }
 
 type ReservationList_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type ReservationList_Value struct {
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type ReservationListConfig struct {

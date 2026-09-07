@@ -9,21 +9,21 @@ type OpenapiCodeContainer_Properties struct {
 }
 
 type OpenapiCodeContainerConfig struct {
-	Name any
+	Name          any
 	WorkspaceName any
 }
 
 type OpenapiCodeContainerAttrs struct {
 	Name any
 	// Container for code asset versions.
-	Properties any
+	Properties    any
 	WorkspaceName any
 }
 
 var OpenapiCodeContainer = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_code_container",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

@@ -5,25 +5,25 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicySetDefinitionVersion_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitionGroups struct {
 	AdditionalMetadataId any
-	Category any
-	Description any
-	DisplayName any
-	Name any
+	Category             any
+	Description          any
+	DisplayName          any
+	Name                 any
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters struct {
@@ -31,12 +31,12 @@ type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions_Parameters s
 }
 
 type OpenapiPolicySetDefinitionVersion_Properties_PolicyDefinitions struct {
-	DefinitionVersion any
-	EffectiveDefinitionVersion any
-	GroupNames any
-	LatestDefinitionVersion any
-	Parameters any
-	PolicyDefinitionId any
+	DefinitionVersion           any
+	EffectiveDefinitionVersion  any
+	GroupNames                  any
+	LatestDefinitionVersion     any
+	Parameters                  any
+	PolicyDefinitionId          any
 	PolicyDefinitionReferenceId any
 }
 

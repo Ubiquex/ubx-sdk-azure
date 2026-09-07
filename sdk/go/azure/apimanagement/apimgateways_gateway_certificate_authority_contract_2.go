@@ -9,8 +9,8 @@ type ApimgatewaysGatewayCertificateAuthorityContract2_Properties struct {
 }
 
 var ApimgatewaysGatewayCertificateAuthorityContract2_PropertiesFields = ubx.FieldMap{
-		"IsTrusted": ubx.FieldSpec{WireName: "is_trusted"},
-	}
+	"IsTrusted": ubx.FieldSpec{WireName: "is_trusted"},
+}
 
 type ApimgatewaysGatewayCertificateAuthorityContract2Config struct {
 	// Gateway certificate authority details.
@@ -27,8 +27,8 @@ var ApimgatewaysGatewayCertificateAuthorityContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimgatewaysGatewayCertificateAuthorityContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimgatewaysGatewayCertificateAuthorityContract2_PropertiesFields,
 		},
 	},
 }

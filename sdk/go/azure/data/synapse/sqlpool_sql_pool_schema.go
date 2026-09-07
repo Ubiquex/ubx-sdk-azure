@@ -4,19 +4,19 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolSqlPoolSchemaConfig struct {
-	SchemaName any
+	SchemaName  any
 	SqlPoolName any
 }
 
 type SqlpoolSqlPoolSchemaAttrs struct {
-	SchemaName any
+	SchemaName  any
 	SqlPoolName any
 }
 
 var SqlpoolSqlPoolSchema = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_sql_pool_schema",
 	Fields: ubx.FieldMap{
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
+		"SchemaName":  ubx.FieldSpec{WireName: "schema_name"},
 		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

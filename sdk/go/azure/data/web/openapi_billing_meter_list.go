@@ -5,12 +5,12 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiBillingMeterList_Value_Properties struct {
 	BillingLocation any
-	FriendlyName any
-	MeterId any
-	Multiplier any
-	OsType any
-	ResourceType any
-	ShortName any
+	FriendlyName    any
+	MeterId         any
+	Multiplier      any
+	OsType          any
+	ResourceType    any
+	ShortName       any
 }
 
 type OpenapiBillingMeterList_Value struct {
@@ -19,14 +19,14 @@ type OpenapiBillingMeterList_Value struct {
 
 type OpenapiBillingMeterListConfig struct {
 	BillingLocation any
-	OsType any
+	OsType          any
 }
 
 type OpenapiBillingMeterListAttrs struct {
 	BillingLocation any
 	// The link to the next page of items
 	NextLink any
-	OsType any
+	OsType   any
 	// The BillingMeter items on this page
 	Value any
 }
@@ -35,6 +35,6 @@ var OpenapiBillingMeterList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_billing_meter_list",
 	Fields: ubx.FieldMap{
 		"BillingLocation": ubx.FieldSpec{WireName: "billing_location"},
-		"OsType": ubx.FieldSpec{WireName: "os_type"},
+		"OsType":          ubx.FieldSpec{WireName: "os_type"},
 	},
 }

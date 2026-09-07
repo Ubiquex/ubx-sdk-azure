@@ -12,116 +12,116 @@ type DtlLabVirtualMachineList_Value_Properties_ApplicableSchedule_Properties_Lab
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_NotificationSettings struct {
-	EmailRecipient any
+	EmailRecipient     any
 	NotificationLocale any
-	Status any
-	TimeInMinutes any
-	WebhookUrl any
+	Status             any
+	TimeInMinutes      any
+	WebhookUrl         any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties_WeeklyRecurrence struct {
-	Time any
+	Time     any
 	Weekdays any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ApplicableSchedule_Properties_LabVmsShutdown_Properties struct {
-	CreatedDate any
-	DailyRecurrence any
-	HourlyRecurrence any
+	CreatedDate          any
+	DailyRecurrence      any
+	HourlyRecurrence     any
 	NotificationSettings any
-	ProvisioningState any
-	Status any
-	TargetResourceId any
-	TaskType any
-	TimeZoneId any
-	UniqueIdentifier any
-	WeeklyRecurrence any
+	ProvisioningState    any
+	Status               any
+	TargetResourceId     any
+	TaskType             any
+	TimeZoneId           any
+	UniqueIdentifier     any
+	WeeklyRecurrence     any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ApplicableSchedule_Properties_LabVmsShutdown struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ApplicableSchedule_Properties struct {
 	LabVmsShutdown any
-	LabVmsStartup any
+	LabVmsStartup  any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ApplicableSchedule struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ArtifactDeploymentStatus struct {
 	ArtifactsApplied any
 	DeploymentStatus any
-	TotalArtifacts any
+	TotalArtifacts   any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_Artifacts_Parameters struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_Artifacts struct {
-	ArtifactId any
-	ArtifactTitle any
-	DeploymentStatusMessage any
-	InstallTime any
-	Parameters any
-	Status any
+	ArtifactId               any
+	ArtifactTitle            any
+	DeploymentStatusMessage  any
+	InstallTime              any
+	Parameters               any
+	Status                   any
 	VmExtensionStatusMessage any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ComputeVm_DataDisks struct {
-	DiskSizeGiB any
-	DiskUri any
+	DiskSizeGiB   any
+	DiskUri       any
 	ManagedDiskId any
-	Name any
+	Name          any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ComputeVm_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Message any
+	Message       any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ComputeVm struct {
-	DataDiskIds any
-	DataDisks any
+	DataDiskIds        any
+	DataDisks          any
 	NetworkInterfaceId any
-	OsDiskId any
-	OsType any
-	Statuses any
-	VmSize any
+	OsDiskId           any
+	OsType             any
+	Statuses           any
+	VmSize             any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_DataDiskParameters_AttachNewDataDiskOptions struct {
-	DiskName any
+	DiskName    any
 	DiskSizeGiB any
-	DiskType any
+	DiskType    any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_DataDiskParameters struct {
 	AttachNewDataDiskOptions any
-	ExistingLabDiskId any
-	HostCaching any
+	ExistingLabDiskId        any
+	HostCaching              any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_GalleryImageReference struct {
-	Offer any
-	OsType any
+	Offer     any
+	OsType    any
 	Publisher any
-	Sku any
-	Version any
+	Sku       any
+	Version   any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_NetworkInterface_SharedPublicIpAddressConfiguration_InboundNatRules struct {
-	BackendPort any
-	FrontendPort any
+	BackendPort       any
+	FrontendPort      any
 	TransportProtocol any
 }
 
@@ -130,77 +130,77 @@ type DtlLabVirtualMachineList_Value_Properties_NetworkInterface_SharedPublicIpAd
 }
 
 type DtlLabVirtualMachineList_Value_Properties_NetworkInterface struct {
-	DnsName any
-	PrivateIpAddress any
-	PublicIpAddress any
-	PublicIpAddressId any
-	RdpAuthority any
+	DnsName                            any
+	PrivateIpAddress                   any
+	PublicIpAddress                    any
+	PublicIpAddressId                  any
+	RdpAuthority                       any
 	SharedPublicIpAddressConfiguration any
-	SshAuthority any
-	SubnetId any
-	VirtualNetworkId any
+	SshAuthority                       any
+	SubnetId                           any
+	VirtualNetworkId                   any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ScheduleParameters_Properties struct {
-	DailyRecurrence any
-	HourlyRecurrence any
+	DailyRecurrence      any
+	HourlyRecurrence     any
 	NotificationSettings any
-	Status any
-	TargetResourceId any
-	TaskType any
-	TimeZoneId any
-	WeeklyRecurrence any
+	Status               any
+	TargetResourceId     any
+	TaskType             any
+	TimeZoneId           any
+	WeeklyRecurrence     any
 }
 
 type DtlLabVirtualMachineList_Value_Properties_ScheduleParameters struct {
-	Location any
-	Name any
+	Location   any
+	Name       any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlLabVirtualMachineList_Value_Properties struct {
-	AllowClaim any
-	ApplicableSchedule any
-	ArtifactDeploymentStatus any
-	Artifacts any
-	ComputeId any
-	ComputeVm any
-	CreatedByUser any
-	CreatedByUserId any
-	CreatedDate any
-	CustomImageId any
-	DataDiskParameters any
-	DisallowPublicIpAddress any
-	EnvironmentId any
-	ExpirationDate any
-	Fqdn any
-	GalleryImageReference any
-	IsAuthenticationWithSshKey any
-	LabSubnetName any
-	LabVirtualNetworkId any
-	LastKnownPowerState any
-	NetworkInterface any
-	Notes any
-	OsType any
-	OwnerObjectId any
-	OwnerUserPrincipalName any
-	Password any
-	PlanId any
-	ProvisioningState any
-	ScheduleParameters any
-	Size any
-	SshKey any
-	StorageType any
-	UniqueIdentifier any
-	UserName any
+	AllowClaim                   any
+	ApplicableSchedule           any
+	ArtifactDeploymentStatus     any
+	Artifacts                    any
+	ComputeId                    any
+	ComputeVm                    any
+	CreatedByUser                any
+	CreatedByUserId              any
+	CreatedDate                  any
+	CustomImageId                any
+	DataDiskParameters           any
+	DisallowPublicIpAddress      any
+	EnvironmentId                any
+	ExpirationDate               any
+	Fqdn                         any
+	GalleryImageReference        any
+	IsAuthenticationWithSshKey   any
+	LabSubnetName                any
+	LabVirtualNetworkId          any
+	LastKnownPowerState          any
+	NetworkInterface             any
+	Notes                        any
+	OsType                       any
+	OwnerObjectId                any
+	OwnerUserPrincipalName       any
+	Password                     any
+	PlanId                       any
+	ProvisioningState            any
+	ScheduleParameters           any
+	Size                         any
+	SshKey                       any
+	StorageType                  any
+	UniqueIdentifier             any
+	UserName                     any
 	VirtualMachineCreationSource any
 }
 
 type DtlLabVirtualMachineList_Value struct {
-	Location any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type DtlLabVirtualMachineListConfig struct {

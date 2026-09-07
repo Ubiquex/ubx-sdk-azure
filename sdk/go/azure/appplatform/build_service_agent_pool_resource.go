@@ -20,19 +20,19 @@ type BuildServiceAgentPoolResource_Properties struct {
 }
 
 var BuildServiceAgentPoolResource_Properties_PoolSizeFields = ubx.FieldMap{
-		"Cpu": ubx.FieldSpec{WireName: "cpu"},
-		"Memory": ubx.FieldSpec{WireName: "memory"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-	}
+	"Cpu":    ubx.FieldSpec{WireName: "cpu"},
+	"Memory": ubx.FieldSpec{WireName: "memory"},
+	"Name":   ubx.FieldSpec{WireName: "name"},
+}
 
 var BuildServiceAgentPoolResource_PropertiesFields = ubx.FieldMap{
-		"PoolSize": ubx.FieldSpec{
-			WireName: "pool_size",
-			Kind: "object",
-			Fields: BuildServiceAgentPoolResource_Properties_PoolSizeFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"PoolSize": ubx.FieldSpec{
+		WireName: "pool_size",
+		Kind:     "object",
+		Fields:   BuildServiceAgentPoolResource_Properties_PoolSizeFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type BuildServiceAgentPoolResourceConfig struct {
 	// Build service agent pool properties
@@ -49,8 +49,8 @@ var BuildServiceAgentPoolResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BuildServiceAgentPoolResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BuildServiceAgentPoolResource_PropertiesFields,
 		},
 	},
 }

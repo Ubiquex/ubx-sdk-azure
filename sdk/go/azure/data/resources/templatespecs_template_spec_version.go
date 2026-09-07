@@ -4,7 +4,7 @@ package resources
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type TemplatespecsTemplateSpecVersion_Properties_LinkedTemplates struct {
-	Path any
+	Path     any
 	Template any
 }
 
@@ -37,10 +37,10 @@ type TemplatespecsTemplateSpecVersion_SystemData struct {
 }
 
 type TemplatespecsTemplateSpecVersionConfig struct {
-	ApiVersion any
-	ResourceGroupName any
-	SubscriptionId any
-	TemplateSpecName any
+	ApiVersion          any
+	ResourceGroupName   any
+	SubscriptionId      any
+	TemplateSpecName    any
 	TemplateSpecVersion any
 }
 
@@ -53,14 +53,14 @@ type TemplatespecsTemplateSpecVersionAttrs struct {
 	// Name of this resource.
 	Name any
 	// Template Spec Version properties.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
 	// Resource tags.
-	Tags any
-	TemplateSpecName any
+	Tags                any
+	TemplateSpecName    any
 	TemplateSpecVersion any
 	// Type of this resource.
 	Type any
@@ -69,10 +69,10 @@ type TemplatespecsTemplateSpecVersionAttrs struct {
 var TemplatespecsTemplateSpecVersion = ubx.DataSourceBinding{
 	WireType: "azure_resources_templatespecs_template_spec_version",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TemplateSpecName": ubx.FieldSpec{WireName: "template_spec_name"},
+		"ApiVersion":          ubx.FieldSpec{WireName: "api_version"},
+		"ResourceGroupName":   ubx.FieldSpec{WireName: "resource_group_name"},
+		"SubscriptionId":      ubx.FieldSpec{WireName: "subscription_id"},
+		"TemplateSpecName":    ubx.FieldSpec{WireName: "template_spec_name"},
 		"TemplateSpecVersion": ubx.FieldSpec{WireName: "template_spec_version"},
 	},
 }

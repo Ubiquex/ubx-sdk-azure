@@ -38,43 +38,43 @@ type InputsInput_Properties struct {
 }
 
 var InputsInput_Properties_CompressionFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var InputsInput_Properties_Diagnostics_ConditionsFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Since": ubx.FieldSpec{WireName: "since"},
-	}
+	"Code":    ubx.FieldSpec{WireName: "code"},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Since":   ubx.FieldSpec{WireName: "since"},
+}
 
 var InputsInput_Properties_DiagnosticsFields = ubx.FieldMap{
-		"Conditions": ubx.FieldSpec{
-			WireName: "conditions",
-			Kind: "list",
-			Fields: InputsInput_Properties_Diagnostics_ConditionsFields,
-		},
-	}
+	"Conditions": ubx.FieldSpec{
+		WireName: "conditions",
+		Kind:     "list",
+		Fields:   InputsInput_Properties_Diagnostics_ConditionsFields,
+	},
+}
 
 var InputsInput_PropertiesFields = ubx.FieldMap{
-		"Compression": ubx.FieldSpec{
-			WireName: "compression",
-			Kind: "object",
-			Fields: InputsInput_Properties_CompressionFields,
-		},
-		"Diagnostics": ubx.FieldSpec{
-			WireName: "diagnostics",
-			Kind: "object",
-			Fields: InputsInput_Properties_DiagnosticsFields,
-		},
-		"Etag": ubx.FieldSpec{WireName: "etag"},
-		"PartitionKey": ubx.FieldSpec{WireName: "partition_key"},
-		"Serialization": ubx.FieldSpec{
-			WireName: "serialization",
-			Kind: "object",
-			Fields: InputsInput_Properties_CompressionFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Compression": ubx.FieldSpec{
+		WireName: "compression",
+		Kind:     "object",
+		Fields:   InputsInput_Properties_CompressionFields,
+	},
+	"Diagnostics": ubx.FieldSpec{
+		WireName: "diagnostics",
+		Kind:     "object",
+		Fields:   InputsInput_Properties_DiagnosticsFields,
+	},
+	"Etag":         ubx.FieldSpec{WireName: "etag"},
+	"PartitionKey": ubx.FieldSpec{WireName: "partition_key"},
+	"Serialization": ubx.FieldSpec{
+		WireName: "serialization",
+		Kind:     "object",
+		Fields:   InputsInput_Properties_CompressionFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 type InputsInputConfig struct {
 	// Resource name
@@ -100,8 +100,8 @@ var InputsInput = ubx.ResourceBinding{
 		"Name": ubx.FieldSpec{WireName: "name"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: InputsInput_PropertiesFields,
+			Kind:     "object",
+			Fields:   InputsInput_PropertiesFields,
 		},
 	},
 }

@@ -24,6 +24,5 @@ type KeysKeyListAttrs struct {
 
 var KeysKeyList = ubx.DataSourceBinding{
 	WireType: "azure_synapse_keys_key_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

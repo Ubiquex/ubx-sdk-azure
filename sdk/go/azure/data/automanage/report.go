@@ -13,10 +13,10 @@ type Report_Properties_Error_Details_Details struct {
 
 type Report_Properties_Error_Details struct {
 	AdditionalInfo any
-	Code any
-	Details any
-	Message any
-	Target any
+	Code           any
+	Details        any
+	Message        any
+	Target         any
 }
 
 type Report_Properties_Error struct {
@@ -33,11 +33,11 @@ type Report_Properties_Error struct {
 }
 
 type Report_Properties_Resources struct {
-	Error any
-	Id any
-	Name any
+	Error  any
+	Id     any
+	Name   any
 	Status any
-	Type any
+	Type   any
 }
 
 type Report_Properties struct {
@@ -79,13 +79,13 @@ type Report_SystemData struct {
 }
 
 type ReportConfig struct {
-	ClusterName any
+	ClusterName                        any
 	ConfigurationProfileAssignmentName any
-	ReportName any
+	ReportName                         any
 }
 
 type ReportAttrs struct {
-	ClusterName any
+	ClusterName                        any
 	ConfigurationProfileAssignmentName any
 	// Data related to the report detail.
 	Properties any
@@ -97,8 +97,8 @@ type ReportAttrs struct {
 var Report = ubx.DataSourceBinding{
 	WireType: "azure_automanage_report",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":                        ubx.FieldSpec{WireName: "cluster_name"},
 		"ConfigurationProfileAssignmentName": ubx.FieldSpec{WireName: "configuration_profile_assignment_name"},
-		"ReportName": ubx.FieldSpec{WireName: "report_name"},
+		"ReportName":                         ubx.FieldSpec{WireName: "report_name"},
 	},
 }

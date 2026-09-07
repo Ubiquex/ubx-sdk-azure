@@ -14,7 +14,7 @@ type OpenapiSiteConfigResource_Properties_ApiManagementConfig struct {
 }
 
 type OpenapiSiteConfigResource_Properties_AppSettings struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -53,18 +53,18 @@ type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_SlowRequests st
 }
 
 type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodes struct {
-	Count any
-	Path any
-	Status any
-	SubStatus any
+	Count        any
+	Path         any
+	Status       any
+	SubStatus    any
 	TimeInterval any
-	Win32Status any
+	Win32Status  any
 }
 
 type OpenapiSiteConfigResource_Properties_AutoHealRules_Triggers_StatusCodesRange struct {
-	Count any
-	Path any
-	StatusCodes any
+	Count        any
+	Path         any
+	StatusCodes  any
 	TimeInterval any
 }
 
@@ -91,19 +91,19 @@ type OpenapiSiteConfigResource_Properties_AutoHealRules struct {
 }
 
 type OpenapiSiteConfigResource_Properties_AzureStorageAccounts struct {
-	AccessKey any
+	AccessKey   any
 	AccountName any
-	MountPath any
-	Protocol any
-	ShareName any
-	State any
-	Type any
+	MountPath   any
+	Protocol    any
+	ShareName   any
+	State       any
+	Type        any
 }
 
 type OpenapiSiteConfigResource_Properties_ConnectionStrings struct {
 	ConnectionString any
-	Name any
-	Type any
+	Name             any
+	Type             any
 }
 
 type OpenapiSiteConfigResource_Properties_Cors struct {
@@ -114,14 +114,14 @@ type OpenapiSiteConfigResource_Properties_Cors struct {
 }
 
 type OpenapiSiteConfigResource_Properties_Experiments_RampUpRules struct {
-	ActionHostName any
+	ActionHostName            any
 	ChangeDecisionCallbackUrl any
-	ChangeIntervalInMinutes any
-	ChangeStep any
-	MaxReroutePercentage any
-	MinReroutePercentage any
-	Name any
-	ReroutePercentage any
+	ChangeIntervalInMinutes   any
+	ChangeStep                any
+	MaxReroutePercentage      any
+	MinReroutePercentage      any
+	Name                      any
+	ReroutePercentage         any
 }
 
 type OpenapiSiteConfigResource_Properties_Experiments struct {
@@ -130,23 +130,23 @@ type OpenapiSiteConfigResource_Properties_Experiments struct {
 }
 
 type OpenapiSiteConfigResource_Properties_HandlerMappings struct {
-	Arguments any
-	Extension any
+	Arguments       any
+	Extension       any
 	ScriptProcessor any
 }
 
 type OpenapiSiteConfigResource_Properties_IpSecurityRestrictions struct {
-	Action any
-	Description any
-	Headers any
-	IpAddress any
-	Name any
-	Priority any
-	SubnetMask any
-	SubnetTrafficTag any
-	Tag any
+	Action               any
+	Description          any
+	Headers              any
+	IpAddress            any
+	Name                 any
+	Priority             any
+	SubnetMask           any
+	SubnetTrafficTag     any
+	Tag                  any
 	VnetSubnetResourceId any
-	VnetTrafficTag any
+	VnetTrafficTag       any
 }
 
 type OpenapiSiteConfigResource_Properties_Limits struct {
@@ -187,14 +187,14 @@ type OpenapiSiteConfigResource_Properties_Push struct {
 
 type OpenapiSiteConfigResource_Properties_VirtualApplications_VirtualDirectories struct {
 	PhysicalPath any
-	VirtualPath any
+	VirtualPath  any
 }
 
 type OpenapiSiteConfigResource_Properties_VirtualApplications struct {
-	PhysicalPath any
-	PreloadEnabled any
+	PhysicalPath       any
+	PreloadEnabled     any
 	VirtualDirectories any
-	VirtualPath any
+	VirtualPath        any
 }
 
 type OpenapiSiteConfigResource_Properties struct {

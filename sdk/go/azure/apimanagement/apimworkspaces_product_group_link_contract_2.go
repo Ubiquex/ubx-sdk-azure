@@ -9,8 +9,8 @@ type ApimworkspacesProductGroupLinkContract2_Properties struct {
 }
 
 var ApimworkspacesProductGroupLinkContract2_PropertiesFields = ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
-	}
+	"GroupId": ubx.FieldSpec{WireName: "group_id"},
+}
 
 type ApimworkspacesProductGroupLinkContract2Config struct {
 	// Product-group link entity properties.
@@ -27,8 +27,8 @@ var ApimworkspacesProductGroupLinkContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimworkspacesProductGroupLinkContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimworkspacesProductGroupLinkContract2_PropertiesFields,
 		},
 	},
 }

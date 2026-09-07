@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAutomationRuleList_Value_Properties_Actions struct {
 	ActionType any
-	Order any
+	Order      any
 }
 
 type OpenapiAutomationRuleList_Value_Properties_CreatedBy struct {
-	Email any
-	Name any
-	ObjectId any
+	Email             any
+	Name              any
+	ObjectId          any
 	UserPrincipalName any
 }
 
@@ -20,26 +20,26 @@ type OpenapiAutomationRuleList_Value_Properties_TriggeringLogic_Conditions struc
 }
 
 type OpenapiAutomationRuleList_Value_Properties_TriggeringLogic struct {
-	Conditions any
+	Conditions        any
 	ExpirationTimeUtc any
-	IsEnabled any
-	TriggersOn any
-	TriggersWhen any
+	IsEnabled         any
+	TriggersOn        any
+	TriggersWhen      any
 }
 
 type OpenapiAutomationRuleList_Value_Properties struct {
-	Actions any
-	CreatedBy any
-	CreatedTimeUtc any
-	DisplayName any
-	LastModifiedBy any
+	Actions             any
+	CreatedBy           any
+	CreatedTimeUtc      any
+	DisplayName         any
+	LastModifiedBy      any
 	LastModifiedTimeUtc any
-	Order any
-	TriggeringLogic any
+	Order               any
+	TriggeringLogic     any
 }
 
 type OpenapiAutomationRuleList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -51,7 +51,7 @@ type OpenapiAutomationRuleListAttrs struct {
 	// The link to the next page of items
 	NextLink any
 	// List of automation rules.
-	Value any
+	Value         any
 	WorkspaceName any
 }
 

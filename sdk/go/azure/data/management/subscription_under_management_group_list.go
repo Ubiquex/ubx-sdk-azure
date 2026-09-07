@@ -9,9 +9,9 @@ type SubscriptionUnderManagementGroupList_Value_Properties_Parent struct {
 
 type SubscriptionUnderManagementGroupList_Value_Properties struct {
 	DisplayName any
-	Parent any
-	State any
-	Tenant any
+	Parent      any
+	State       any
+	Tenant      any
 }
 
 type SubscriptionUnderManagementGroupList_Value struct {

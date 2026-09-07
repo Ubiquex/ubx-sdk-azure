@@ -58,49 +58,49 @@ type ManagementOpenapiScheduledAction_Properties struct {
 }
 
 var ManagementOpenapiScheduledAction_Properties_FileDestinationFields = ubx.FieldMap{
-		"FileFormats": ubx.FieldSpec{WireName: "file_formats"},
-	}
+	"FileFormats": ubx.FieldSpec{WireName: "file_formats"},
+}
 
 var ManagementOpenapiScheduledAction_Properties_NotificationFields = ubx.FieldMap{
-		"Language": ubx.FieldSpec{WireName: "language"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"RegionalFormat": ubx.FieldSpec{WireName: "regional_format"},
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"To": ubx.FieldSpec{WireName: "to"},
-	}
+	"Language":       ubx.FieldSpec{WireName: "language"},
+	"Message":        ubx.FieldSpec{WireName: "message"},
+	"RegionalFormat": ubx.FieldSpec{WireName: "regional_format"},
+	"Subject":        ubx.FieldSpec{WireName: "subject"},
+	"To":             ubx.FieldSpec{WireName: "to"},
+}
 
 var ManagementOpenapiScheduledAction_Properties_ScheduleFields = ubx.FieldMap{
-		"DayOfMonth": ubx.FieldSpec{WireName: "day_of_month"},
-		"DaysOfWeek": ubx.FieldSpec{WireName: "days_of_week"},
-		"EndDate": ubx.FieldSpec{WireName: "end_date"},
-		"Frequency": ubx.FieldSpec{WireName: "frequency"},
-		"HourOfDay": ubx.FieldSpec{WireName: "hour_of_day"},
-		"StartDate": ubx.FieldSpec{WireName: "start_date"},
-		"WeeksOfMonth": ubx.FieldSpec{WireName: "weeks_of_month"},
-	}
+	"DayOfMonth":   ubx.FieldSpec{WireName: "day_of_month"},
+	"DaysOfWeek":   ubx.FieldSpec{WireName: "days_of_week"},
+	"EndDate":      ubx.FieldSpec{WireName: "end_date"},
+	"Frequency":    ubx.FieldSpec{WireName: "frequency"},
+	"HourOfDay":    ubx.FieldSpec{WireName: "hour_of_day"},
+	"StartDate":    ubx.FieldSpec{WireName: "start_date"},
+	"WeeksOfMonth": ubx.FieldSpec{WireName: "weeks_of_month"},
+}
 
 var ManagementOpenapiScheduledAction_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"FileDestination": ubx.FieldSpec{
-			WireName: "file_destination",
-			Kind: "object",
-			Fields: ManagementOpenapiScheduledAction_Properties_FileDestinationFields,
-		},
-		"Notification": ubx.FieldSpec{
-			WireName: "notification",
-			Kind: "object",
-			Fields: ManagementOpenapiScheduledAction_Properties_NotificationFields,
-		},
-		"NotificationEmail": ubx.FieldSpec{WireName: "notification_email"},
-		"Schedule": ubx.FieldSpec{
-			WireName: "schedule",
-			Kind: "object",
-			Fields: ManagementOpenapiScheduledAction_Properties_ScheduleFields,
-		},
-		"Scope": ubx.FieldSpec{WireName: "scope"},
-		"Status": ubx.FieldSpec{WireName: "status"},
-		"ViewId": ubx.FieldSpec{WireName: "view_id"},
-	}
+	"DisplayName": ubx.FieldSpec{WireName: "display_name"},
+	"FileDestination": ubx.FieldSpec{
+		WireName: "file_destination",
+		Kind:     "object",
+		Fields:   ManagementOpenapiScheduledAction_Properties_FileDestinationFields,
+	},
+	"Notification": ubx.FieldSpec{
+		WireName: "notification",
+		Kind:     "object",
+		Fields:   ManagementOpenapiScheduledAction_Properties_NotificationFields,
+	},
+	"NotificationEmail": ubx.FieldSpec{WireName: "notification_email"},
+	"Schedule": ubx.FieldSpec{
+		WireName: "schedule",
+		Kind:     "object",
+		Fields:   ManagementOpenapiScheduledAction_Properties_ScheduleFields,
+	},
+	"Scope":  ubx.FieldSpec{WireName: "scope"},
+	"Status": ubx.FieldSpec{WireName: "status"},
+	"ViewId": ubx.FieldSpec{WireName: "view_id"},
+}
 
 type ManagementOpenapiScheduledActionConfig struct {
 	// The ETag (or entity tag) HTTP response header is an identifier for a specific version of a resource. It lets caches be more efficient and save bandwidth, as a web server does not need to resend a full response if the content was not changed. It is a string of ASCII characters placed between double quotes, like "675af34563dc-tr34".
@@ -131,8 +131,8 @@ var ManagementOpenapiScheduledAction = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ManagementOpenapiScheduledAction_PropertiesFields,
+			Kind:     "object",
+			Fields:   ManagementOpenapiScheduledAction_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

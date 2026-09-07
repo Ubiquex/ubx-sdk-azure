@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstanceadvancedthreatprotectionsettingsManagedInstanceAdvancedThreatProtectionList_Value_Properties struct {
 	CreationTime any
-	State any
+	State        any
 }
 
 type ManagedinstanceadvancedthreatprotectionsettingsManagedInstanceAdvancedThreatProtectionList_Value struct {

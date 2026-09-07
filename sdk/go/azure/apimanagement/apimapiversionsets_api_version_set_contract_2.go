@@ -11,9 +11,9 @@ type ApimapiversionsetsApiVersionSetContract2_Properties struct {
 }
 
 var ApimapiversionsetsApiVersionSetContract2_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"VersioningScheme": ubx.FieldSpec{WireName: "versioning_scheme"},
-	}
+	"DisplayName":      ubx.FieldSpec{WireName: "display_name"},
+	"VersioningScheme": ubx.FieldSpec{WireName: "versioning_scheme"},
+}
 
 type ApimapiversionsetsApiVersionSetContract2Config struct {
 	// Properties of an API Version Set.
@@ -30,8 +30,8 @@ var ApimapiversionsetsApiVersionSetContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimapiversionsetsApiVersionSetContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimapiversionsetsApiVersionSetContract2_PropertiesFields,
 		},
 	},
 }

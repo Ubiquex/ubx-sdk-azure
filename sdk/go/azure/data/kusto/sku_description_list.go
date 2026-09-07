@@ -4,28 +4,28 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SkuDescriptionList_Value_LocationInfo_ZoneDetails_Capabilities struct {
-	Name any
+	Name  any
 	Value any
 }
 
 type SkuDescriptionList_Value_LocationInfo_ZoneDetails struct {
 	Capabilities any
-	Name any
+	Name         any
 }
 
 type SkuDescriptionList_Value_LocationInfo struct {
-	Location any
+	Location    any
 	ZoneDetails any
-	Zones any
+	Zones       any
 }
 
 type SkuDescriptionList_Value struct {
 	LocationInfo any
-	Locations any
-	Name any
+	Locations    any
+	Name         any
 	ResourceType any
 	Restrictions any
-	Tier any
+	Tier         any
 }
 
 type SkuDescriptionListConfig struct {
@@ -40,6 +40,5 @@ type SkuDescriptionListAttrs struct {
 
 var SkuDescriptionList = ubx.DataSourceBinding{
 	WireType: "azure_kusto_sku_description_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

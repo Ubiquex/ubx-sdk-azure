@@ -5,33 +5,33 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SkuResourceList_Value_Capacity struct {
 	AllowedValues any
-	Default any
-	Maximum any
-	Minimum any
-	Step any
+	Default       any
+	Maximum       any
+	Minimum       any
+	Step          any
 }
 
 type SkuResourceList_Value_Sku struct {
 	Capacity any
-	Family any
-	Name any
-	Size any
-	Tier any
+	Family   any
+	Name     any
+	Size     any
+	Tier     any
 }
 
 type SkuResourceList_Value struct {
-	Capacity any
+	Capacity     any
 	ResourceType any
-	Sku any
+	Sku          any
 }
 
 type SkuResourceListConfig struct {
-	AccountName any
+	AccountName    any
 	DeploymentName any
 }
 
 type SkuResourceListAttrs struct {
-	AccountName any
+	AccountName    any
 	DeploymentName any
 	// The link used to get the next page of deployment skus.
 	NextLink any
@@ -42,7 +42,7 @@ type SkuResourceListAttrs struct {
 var SkuResourceList = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_sku_resource_list",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":    ubx.FieldSpec{WireName: "account_name"},
 		"DeploymentName": ubx.FieldSpec{WireName: "deployment_name"},
 	},
 }

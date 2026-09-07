@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCapacitySkuList_Value struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type OpenapiCapacitySkuListConfig struct {
@@ -19,6 +19,5 @@ type OpenapiCapacitySkuListAttrs struct {
 
 var OpenapiCapacitySkuList = ubx.DataSourceBinding{
 	WireType: "azure_powerbidedicated_openapi_capacity_sku_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

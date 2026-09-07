@@ -18,6 +18,5 @@ type OutboundfirewallrulesOutboundFirewallRuleAttrs struct {
 
 var OutboundfirewallrulesOutboundFirewallRule = ubx.ResourceBinding{
 	WireType: "azure_sql_outboundfirewallrules_outbound_firewall_rule",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

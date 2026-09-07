@@ -9,9 +9,9 @@ type GalleryimagesGalleryImagesList_Value_ExtendedLocation struct {
 }
 
 type GalleryimagesGalleryImagesList_Value_Properties_Identifier struct {
-	Offer any
+	Offer     any
 	Publisher any
-	Sku any
+	Sku       any
 }
 
 type GalleryimagesGalleryImagesList_Value_Properties_Status_DownloadStatus struct {
@@ -20,13 +20,13 @@ type GalleryimagesGalleryImagesList_Value_Properties_Status_DownloadStatus struc
 
 type GalleryimagesGalleryImagesList_Value_Properties_Status_ProvisioningStatus struct {
 	OperationId any
-	Status any
+	Status      any
 }
 
 type GalleryimagesGalleryImagesList_Value_Properties_Status struct {
-	DownloadStatus any
-	ErrorCode any
-	ErrorMessage any
+	DownloadStatus     any
+	ErrorCode          any
+	ErrorMessage       any
 	ProgressPercentage any
 	ProvisioningStatus any
 }
@@ -44,25 +44,25 @@ type GalleryimagesGalleryImagesList_Value_Properties_Version_Properties struct {
 }
 
 type GalleryimagesGalleryImagesList_Value_Properties_Version struct {
-	Name any
+	Name       any
 	Properties any
 }
 
 type GalleryimagesGalleryImagesList_Value_Properties struct {
 	CloudInitDataSource any
-	ContainerId any
-	HyperVgeneration any
-	Identifier any
-	ImagePath any
-	OsType any
-	ProvisioningState any
-	Status any
-	Version any
+	ContainerId         any
+	HyperVgeneration    any
+	Identifier          any
+	ImagePath           any
+	OsType              any
+	ProvisioningState   any
+	Status              any
+	Version             any
 }
 
 type GalleryimagesGalleryImagesList_Value struct {
 	ExtendedLocation any
-	Properties any
+	Properties       any
 }
 
 type GalleryimagesGalleryImagesListConfig struct {
@@ -71,11 +71,10 @@ type GalleryimagesGalleryImagesListConfig struct {
 type GalleryimagesGalleryImagesListAttrs struct {
 	// Link to the next set of results.
 	NextLink any
-	Value any
+	Value    any
 }
 
 var GalleryimagesGalleryImagesList = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_galleryimages_gallery_images_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

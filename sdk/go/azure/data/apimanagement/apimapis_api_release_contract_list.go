@@ -4,9 +4,9 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapisApiReleaseContractList_Value_Properties struct {
-	ApiId any
+	ApiId           any
 	CreatedDateTime any
-	Notes any
+	Notes           any
 	UpdatedDateTime any
 }
 
@@ -28,6 +28,5 @@ type ApimapisApiReleaseContractListAttrs struct {
 
 var ApimapisApiReleaseContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_api_release_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

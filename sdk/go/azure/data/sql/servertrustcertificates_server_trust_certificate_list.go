@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ServertrustcertificatesServerTrustCertificateList_Value_Properties struct {
 	CertificateName any
-	PublicBlob any
-	Thumbprint any
+	PublicBlob      any
+	Thumbprint      any
 }
 
 type ServertrustcertificatesServerTrustCertificateList_Value struct {

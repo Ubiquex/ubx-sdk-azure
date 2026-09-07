@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CreateResourceSupportedResponseList_Value_Properties struct {
 	CreationSupported any
-	Name any
+	Name              any
 }
 
 type CreateResourceSupportedResponseList_Value struct {

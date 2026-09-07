@@ -4,15 +4,15 @@ package kusto
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ScriptList_Value_Properties struct {
-	ContinueOnErrors any
-	ForceUpdateTag any
-	ManagedIdentityResourceId any
+	ContinueOnErrors           any
+	ForceUpdateTag             any
+	ManagedIdentityResourceId  any
 	PrincipalPermissionsAction any
-	ProvisioningState any
-	ScriptContent any
-	ScriptLevel any
-	ScriptUrl any
-	ScriptUrlSasToken any
+	ProvisioningState          any
+	ScriptContent              any
+	ScriptLevel                any
+	ScriptUrl                  any
+	ScriptUrlSasToken          any
 }
 
 type ScriptList_Value struct {
@@ -20,12 +20,12 @@ type ScriptList_Value struct {
 }
 
 type ScriptListConfig struct {
-	ClusterName any
+	ClusterName  any
 	DatabaseName any
 }
 
 type ScriptListAttrs struct {
-	ClusterName any
+	ClusterName  any
 	DatabaseName any
 	// Link to the next page of results.
 	NextLink any
@@ -36,7 +36,7 @@ type ScriptListAttrs struct {
 var ScriptList = ubx.DataSourceBinding{
 	WireType: "azure_kusto_script_list",
 	Fields: ubx.FieldMap{
-		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
+		"ClusterName":  ubx.FieldSpec{WireName: "cluster_name"},
 		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
 	},
 }

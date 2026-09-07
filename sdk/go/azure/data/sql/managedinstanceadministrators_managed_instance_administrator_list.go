@@ -5,9 +5,9 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstanceadministratorsManagedInstanceAdministratorList_Value_Properties struct {
 	AdministratorType any
-	Login any
-	Sid any
-	TenantId any
+	Login             any
+	Sid               any
+	TenantId          any
 }
 
 type ManagedinstanceadministratorsManagedInstanceAdministratorList_Value struct {

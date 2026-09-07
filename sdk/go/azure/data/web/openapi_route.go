@@ -4,19 +4,19 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiRouteConfig struct {
-	Name any
+	Name     any
 	VnetName any
 }
 
 type OpenapiRouteAttrs struct {
-	Name any
+	Name     any
 	VnetName any
 }
 
 var OpenapiRoute = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_route",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":     ubx.FieldSpec{WireName: "name"},
 		"VnetName": ubx.FieldSpec{WireName: "vnet_name"},
 	},
 }

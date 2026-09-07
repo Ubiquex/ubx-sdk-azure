@@ -4,22 +4,22 @@ package automation
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDscNodeReportList_Value_Errors struct {
-	ErrorCode any
+	ErrorCode    any
 	ErrorDetails any
 	ErrorMessage any
-	ErrorSource any
-	Locale any
-	ResourceId any
+	ErrorSource  any
+	Locale       any
+	ResourceId   any
 }
 
 type OpenapiDscNodeReportList_Value_MetaConfiguration struct {
-	ActionAfterReboot any
-	AllowModuleOverwrite any
-	CertificateId any
-	ConfigurationMode any
+	ActionAfterReboot              any
+	AllowModuleOverwrite           any
+	CertificateId                  any
+	ConfigurationMode              any
 	ConfigurationModeFrequencyMins any
-	RebootNodeIfNeeded any
-	RefreshFrequencyMins any
+	RebootNodeIfNeeded             any
+	RefreshFrequencyMins           any
 }
 
 type OpenapiDscNodeReportList_Value_Resources_DependsOn struct {
@@ -27,50 +27,50 @@ type OpenapiDscNodeReportList_Value_Resources_DependsOn struct {
 }
 
 type OpenapiDscNodeReportList_Value_Resources struct {
-	DependsOn any
+	DependsOn         any
 	DurationInSeconds any
-	Error any
-	ModuleName any
-	ModuleVersion any
-	ResourceId any
-	ResourceName any
-	SourceInfo any
-	StartDate any
-	Status any
+	Error             any
+	ModuleName        any
+	ModuleVersion     any
+	ResourceId        any
+	ResourceName      any
+	SourceInfo        any
+	StartDate         any
+	Status            any
 }
 
 type OpenapiDscNodeReportList_Value struct {
 	ConfigurationVersion any
-	EndTime any
-	Errors any
-	HostName any
-	IPv4Addresses any
-	IPv6Addresses any
-	Id any
-	LastModifiedTime any
-	MetaConfiguration any
-	NumberOfResources any
-	RawErrors any
-	RebootRequested any
-	RefreshMode any
-	ReportFormatVersion any
-	ReportId any
-	Resources any
-	StartTime any
-	Status any
-	Type any
+	EndTime              any
+	Errors               any
+	HostName             any
+	IPv4Addresses        any
+	IPv6Addresses        any
+	Id                   any
+	LastModifiedTime     any
+	MetaConfiguration    any
+	NumberOfResources    any
+	RawErrors            any
+	RebootRequested      any
+	RefreshMode          any
+	ReportFormatVersion  any
+	ReportId             any
+	Resources            any
+	StartTime            any
+	Status               any
+	Type                 any
 }
 
 type OpenapiDscNodeReportListConfig struct {
 	AutomationAccountName any
-	NodeId any
+	NodeId                any
 }
 
 type OpenapiDscNodeReportListAttrs struct {
 	AutomationAccountName any
 	// The link to the next page of items
 	NextLink any
-	NodeId any
+	NodeId   any
 	// The DscNodeReport items on this page
 	Value any
 }
@@ -79,6 +79,6 @@ var OpenapiDscNodeReportList = ubx.DataSourceBinding{
 	WireType: "azure_automation_openapi_dsc_node_report_list",
 	Fields: ubx.FieldMap{
 		"AutomationAccountName": ubx.FieldSpec{WireName: "automation_account_name"},
-		"NodeId": ubx.FieldSpec{WireName: "node_id"},
+		"NodeId":                ubx.FieldSpec{WireName: "node_id"},
 	},
 }

@@ -4,16 +4,16 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApplicationgatewayApplicationGatewayPrivateLinkResourceList_Value_Properties struct {
-	GroupId any
-	RequiredMembers any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type ApplicationgatewayApplicationGatewayPrivateLinkResourceList_Value struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type ApplicationgatewayApplicationGatewayPrivateLinkResourceListConfig struct {

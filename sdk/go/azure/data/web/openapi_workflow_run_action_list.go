@@ -9,19 +9,19 @@ type OpenapiWorkflowRunActionList_Value_Properties_Correlation struct {
 
 type OpenapiWorkflowRunActionList_Value_Properties_InputsLink_ContentHash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type OpenapiWorkflowRunActionList_Value_Properties_InputsLink struct {
-	ContentHash any
-	ContentSize any
+	ContentHash    any
+	ContentSize    any
 	ContentVersion any
-	Metadata any
-	Uri any
+	Metadata       any
+	Uri            any
 }
 
 type OpenapiWorkflowRunActionList_Value_Properties_RetryHistory_Error_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
@@ -30,26 +30,26 @@ type OpenapiWorkflowRunActionList_Value_Properties_RetryHistory_Error struct {
 }
 
 type OpenapiWorkflowRunActionList_Value_Properties_RetryHistory struct {
-	ClientRequestId any
-	Code any
-	EndTime any
-	Error any
+	ClientRequestId  any
+	Code             any
+	EndTime          any
+	Error            any
 	ServiceRequestId any
-	StartTime any
+	StartTime        any
 }
 
 type OpenapiWorkflowRunActionList_Value_Properties struct {
-	Code any
-	Correlation any
-	EndTime any
-	Error any
-	InputsLink any
-	OutputsLink any
-	RetryHistory any
-	StartTime any
-	Status any
+	Code              any
+	Correlation       any
+	EndTime           any
+	Error             any
+	InputsLink        any
+	OutputsLink       any
+	RetryHistory      any
+	StartTime         any
+	Status            any
 	TrackedProperties any
-	TrackingId any
+	TrackingId        any
 }
 
 type OpenapiWorkflowRunActionList_Value struct {
@@ -57,8 +57,8 @@ type OpenapiWorkflowRunActionList_Value struct {
 }
 
 type OpenapiWorkflowRunActionListConfig struct {
-	Name any
-	RunName any
+	Name         any
+	RunName      any
 	WorkflowName any
 }
 
@@ -66,17 +66,17 @@ type OpenapiWorkflowRunActionListAttrs struct {
 	Name any
 	// The link to the next page of items
 	NextLink any
-	RunName any
+	RunName  any
 	// The WorkflowRunAction items on this page
-	Value any
+	Value        any
 	WorkflowName any
 }
 
 var OpenapiWorkflowRunActionList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_run_action_list",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
+		"RunName":      ubx.FieldSpec{WireName: "run_name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

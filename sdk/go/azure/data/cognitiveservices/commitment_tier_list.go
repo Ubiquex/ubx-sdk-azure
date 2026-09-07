@@ -5,23 +5,23 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type CommitmentTierList_Value_Cost struct {
 	CommitmentMeterId any
-	OverageMeterId any
+	OverageMeterId    any
 }
 
 type CommitmentTierList_Value_Quota struct {
 	Quantity any
-	Unit any
+	Unit     any
 }
 
 type CommitmentTierList_Value struct {
-	Cost any
+	Cost         any
 	HostingModel any
-	Kind any
-	MaxCount any
-	PlanType any
-	Quota any
-	SkuName any
-	Tier any
+	Kind         any
+	MaxCount     any
+	PlanType     any
+	Quota        any
+	SkuName      any
+	Tier         any
 }
 
 type CommitmentTierListConfig struct {
@@ -36,6 +36,5 @@ type CommitmentTierListAttrs struct {
 
 var CommitmentTierList = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_commitment_tier_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

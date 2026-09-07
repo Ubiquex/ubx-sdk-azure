@@ -4,11 +4,11 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAddressResponse_Properties_VipMappings struct {
-	InUse any
-	InternalHttpPort any
+	InUse             any
+	InternalHttpPort  any
 	InternalHttpsPort any
-	ServiceName any
-	VirtualIp any
+	ServiceName       any
+	VirtualIp         any
 }
 
 type OpenapiAddressResponse_Properties struct {

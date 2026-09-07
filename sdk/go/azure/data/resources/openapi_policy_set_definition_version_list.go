@@ -5,25 +5,25 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiPolicySetDefinitionVersionList_Value_Properties_Parameters_Metadata struct {
 	AssignPermissions any
-	Description any
-	DisplayName any
-	StrongType any
+	Description       any
+	DisplayName       any
+	StrongType        any
 }
 
 type OpenapiPolicySetDefinitionVersionList_Value_Properties_Parameters struct {
 	AllowedValues any
-	DefaultValue any
-	Metadata any
-	Schema any
-	Type any
+	DefaultValue  any
+	Metadata      any
+	Schema        any
+	Type          any
 }
 
 type OpenapiPolicySetDefinitionVersionList_Value_Properties_PolicyDefinitionGroups struct {
 	AdditionalMetadataId any
-	Category any
-	Description any
-	DisplayName any
-	Name any
+	Category             any
+	Description          any
+	DisplayName          any
+	Name                 any
 }
 
 type OpenapiPolicySetDefinitionVersionList_Value_Properties_PolicyDefinitions_Parameters struct {
@@ -31,24 +31,24 @@ type OpenapiPolicySetDefinitionVersionList_Value_Properties_PolicyDefinitions_Pa
 }
 
 type OpenapiPolicySetDefinitionVersionList_Value_Properties_PolicyDefinitions struct {
-	DefinitionVersion any
-	EffectiveDefinitionVersion any
-	GroupNames any
-	LatestDefinitionVersion any
-	Parameters any
-	PolicyDefinitionId any
+	DefinitionVersion           any
+	EffectiveDefinitionVersion  any
+	GroupNames                  any
+	LatestDefinitionVersion     any
+	Parameters                  any
+	PolicyDefinitionId          any
 	PolicyDefinitionReferenceId any
 }
 
 type OpenapiPolicySetDefinitionVersionList_Value_Properties struct {
-	Description any
-	DisplayName any
-	Metadata any
-	Parameters any
+	Description            any
+	DisplayName            any
+	Metadata               any
+	Parameters             any
 	PolicyDefinitionGroups any
-	PolicyDefinitions any
-	PolicyType any
-	Version any
+	PolicyDefinitions      any
+	PolicyType             any
+	Version                any
 }
 
 type OpenapiPolicySetDefinitionVersionList_Value struct {
@@ -61,7 +61,7 @@ type OpenapiPolicySetDefinitionVersionListConfig struct {
 
 type OpenapiPolicySetDefinitionVersionListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink                any
 	PolicySetDefinitionName any
 	// The PolicySetDefinitionVersion items on this page
 	Value any

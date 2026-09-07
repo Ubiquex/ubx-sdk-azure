@@ -4,20 +4,20 @@ package dataprotection
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ResourceGuardResourceList_Value_Properties_ResourceGuardOperations struct {
-	RequestResourceType any
+	RequestResourceType    any
 	VaultCriticalOperation any
 }
 
 type ResourceGuardResourceList_Value_Properties struct {
-	AllowAutoApprovals any
-	Description any
-	ProvisioningState any
-	ResourceGuardOperations any
+	AllowAutoApprovals                  any
+	Description                         any
+	ProvisioningState                   any
+	ResourceGuardOperations             any
 	VaultCriticalOperationExclusionList any
 }
 
 type ResourceGuardResourceList_Value struct {
-	ETag any
+	ETag       any
 	Properties any
 }
 
@@ -33,6 +33,5 @@ type ResourceGuardResourceListAttrs struct {
 
 var ResourceGuardResourceList = ubx.DataSourceBinding{
 	WireType: "azure_dataprotection_resource_guard_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

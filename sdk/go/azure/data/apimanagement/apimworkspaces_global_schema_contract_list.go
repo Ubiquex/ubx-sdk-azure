@@ -4,11 +4,11 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimworkspacesGlobalSchemaContractList_Value_Properties struct {
-	Description any
-	Document any
+	Description       any
+	Document          any
 	ProvisioningState any
-	SchemaType any
-	Value any
+	SchemaType        any
+	Value             any
 }
 
 type ApimworkspacesGlobalSchemaContractList_Value struct {
@@ -29,6 +29,5 @@ type ApimworkspacesGlobalSchemaContractListAttrs struct {
 
 var ApimworkspacesGlobalSchemaContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimworkspaces_global_schema_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

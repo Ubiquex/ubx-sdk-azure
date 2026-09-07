@@ -11,7 +11,7 @@ type VirtualMachineInstance_ExtendedLocation struct {
 }
 
 type VirtualMachineInstance_Properties_AvailabilitySets struct {
-	Id any
+	Id   any
 	Name any
 }
 
@@ -33,9 +33,9 @@ type VirtualMachineInstance_Properties_HardwareProfile struct {
 }
 
 type VirtualMachineInstance_Properties_InfrastructureProfile_Checkpoints struct {
-	CheckpointId any
-	Description any
-	Name any
+	CheckpointId       any
+	Description        any
+	Name               any
 	ParentCheckpointId any
 }
 
@@ -65,16 +65,16 @@ type VirtualMachineInstance_Properties_InfrastructureProfile struct {
 }
 
 type VirtualMachineInstance_Properties_NetworkProfile_NetworkInterfaces struct {
-	DisplayName any
-	Ipv4AddressType any
-	Ipv4Addresses any
-	Ipv6AddressType any
-	Ipv6Addresses any
-	MacAddress any
-	MacAddressType any
-	Name any
-	NetworkName any
-	NicId any
+	DisplayName      any
+	Ipv4AddressType  any
+	Ipv4Addresses    any
+	Ipv6AddressType  any
+	Ipv6Addresses    any
+	MacAddress       any
+	MacAddressType   any
+	Name             any
+	NetworkName      any
+	NicId            any
 	VirtualNetworkId any
 }
 
@@ -113,20 +113,20 @@ type VirtualMachineInstance_Properties_OsProfile struct {
 }
 
 type VirtualMachineInstance_Properties_StorageProfile_Disks struct {
-	Bus any
-	BusType any
-	CreateDiffDisk any
-	DiskId any
-	DiskSizeGb any
-	DisplayName any
-	Lun any
-	MaxDiskSizeGb any
-	Name any
+	Bus              any
+	BusType          any
+	CreateDiffDisk   any
+	DiskId           any
+	DiskSizeGb       any
+	DisplayName      any
+	Lun              any
+	MaxDiskSizeGb    any
+	Name             any
 	StorageQoSpolicy any
-	TemplateDiskId any
-	VhdFormatType any
-	VhdType any
-	VolumeType any
+	TemplateDiskId   any
+	VhdFormatType    any
+	VhdType          any
+	VolumeType       any
 }
 
 type VirtualMachineInstance_Properties_StorageProfile struct {
@@ -161,7 +161,7 @@ type VirtualMachineInstanceAttrs struct {
 	// The extended location.
 	ExtendedLocation any
 	// Defines the resource properties.
-	Properties any
+	Properties  any
 	ResourceUri any
 }
 

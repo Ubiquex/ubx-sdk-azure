@@ -37,33 +37,33 @@ type ApimcertificatesCertificateContract2_Properties struct {
 }
 
 var ApimcertificatesCertificateContract2_Properties_KeyVault_LastStatusFields = ubx.FieldMap{
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"TimeStampUtc": ubx.FieldSpec{WireName: "time_stamp_utc"},
-	}
+	"Code":         ubx.FieldSpec{WireName: "code"},
+	"Message":      ubx.FieldSpec{WireName: "message"},
+	"TimeStampUtc": ubx.FieldSpec{WireName: "time_stamp_utc"},
+}
 
 var ApimcertificatesCertificateContract2_Properties_KeyVaultFields = ubx.FieldMap{
-		"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
-		"LastStatus": ubx.FieldSpec{
-			WireName: "last_status",
-			Kind: "object",
-			Fields: ApimcertificatesCertificateContract2_Properties_KeyVault_LastStatusFields,
-		},
-		"SecretIdentifier": ubx.FieldSpec{WireName: "secret_identifier"},
-	}
+	"IdentityClientId": ubx.FieldSpec{WireName: "identity_client_id"},
+	"LastStatus": ubx.FieldSpec{
+		WireName: "last_status",
+		Kind:     "object",
+		Fields:   ApimcertificatesCertificateContract2_Properties_KeyVault_LastStatusFields,
+	},
+	"SecretIdentifier": ubx.FieldSpec{WireName: "secret_identifier"},
+}
 
 var ApimcertificatesCertificateContract2_PropertiesFields = ubx.FieldMap{
-		"Data": ubx.FieldSpec{WireName: "data"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"KeyVault": ubx.FieldSpec{
-			WireName: "key_vault",
-			Kind: "object",
-			Fields: ApimcertificatesCertificateContract2_Properties_KeyVaultFields,
-		},
-		"Password": ubx.FieldSpec{WireName: "password"},
-		"Subject": ubx.FieldSpec{WireName: "subject"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-	}
+	"Data":           ubx.FieldSpec{WireName: "data"},
+	"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
+	"KeyVault": ubx.FieldSpec{
+		WireName: "key_vault",
+		Kind:     "object",
+		Fields:   ApimcertificatesCertificateContract2_Properties_KeyVaultFields,
+	},
+	"Password":   ubx.FieldSpec{WireName: "password"},
+	"Subject":    ubx.FieldSpec{WireName: "subject"},
+	"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
+}
 
 type ApimcertificatesCertificateContract2Config struct {
 	// Parameters supplied to the CreateOrUpdate certificate operation.
@@ -80,8 +80,8 @@ var ApimcertificatesCertificateContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimcertificatesCertificateContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimcertificatesCertificateContract2_PropertiesFields,
 		},
 	},
 }

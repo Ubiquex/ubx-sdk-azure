@@ -13,10 +13,10 @@ type ApimauthorizationprovidersAuthorizationAccessPolicyContract2_Properties str
 }
 
 var ApimauthorizationprovidersAuthorizationAccessPolicyContract2_PropertiesFields = ubx.FieldMap{
-		"AppIds": ubx.FieldSpec{WireName: "app_ids"},
-		"ObjectId": ubx.FieldSpec{WireName: "object_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-	}
+	"AppIds":   ubx.FieldSpec{WireName: "app_ids"},
+	"ObjectId": ubx.FieldSpec{WireName: "object_id"},
+	"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
+}
 
 type ApimauthorizationprovidersAuthorizationAccessPolicyContract2Config struct {
 	// Authorization Access Policy details.
@@ -33,8 +33,8 @@ var ApimauthorizationprovidersAuthorizationAccessPolicyContract2 = ubx.ResourceB
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimauthorizationprovidersAuthorizationAccessPolicyContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimauthorizationprovidersAuthorizationAccessPolicyContract2_PropertiesFields,
 		},
 	},
 }

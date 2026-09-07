@@ -5,31 +5,31 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiManagedPrivateEndpointResourceList_Value_Properties_ConnectionState struct {
 	ActionsRequired any
-	Description any
-	Status any
+	Description     any
+	Status          any
 }
 
 type OpenapiManagedPrivateEndpointResourceList_Value_Properties struct {
-	ConnectionState any
-	Fqdns any
-	GroupId any
-	IsReserved any
+	ConnectionState       any
+	Fqdns                 any
+	GroupId               any
+	IsReserved            any
 	PrivateLinkResourceId any
-	ProvisioningState any
+	ProvisioningState     any
 }
 
 type OpenapiManagedPrivateEndpointResourceList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type OpenapiManagedPrivateEndpointResourceListConfig struct {
-	FactoryName any
+	FactoryName               any
 	ManagedVirtualNetworkName any
 }
 
 type OpenapiManagedPrivateEndpointResourceListAttrs struct {
-	FactoryName any
+	FactoryName               any
 	ManagedVirtualNetworkName any
 	// The link to the next page of items
 	NextLink any
@@ -40,7 +40,7 @@ type OpenapiManagedPrivateEndpointResourceListAttrs struct {
 var OpenapiManagedPrivateEndpointResourceList = ubx.DataSourceBinding{
 	WireType: "azure_datafactory_openapi_managed_private_endpoint_resource_list",
 	Fields: ubx.FieldMap{
-		"FactoryName": ubx.FieldSpec{WireName: "factory_name"},
+		"FactoryName":               ubx.FieldSpec{WireName: "factory_name"},
 		"ManagedVirtualNetworkName": ubx.FieldSpec{WireName: "managed_virtual_network_name"},
 	},
 }

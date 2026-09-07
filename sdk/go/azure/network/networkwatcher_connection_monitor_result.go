@@ -188,195 +188,195 @@ type NetworkwatcherConnectionMonitorResult_Properties struct {
 }
 
 var NetworkwatcherConnectionMonitorResult_Properties_DestinationFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"Address":    ubx.FieldSpec{WireName: "address"},
+	"Port":       ubx.FieldSpec{WireName: "port"},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter_ItemsFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Address": ubx.FieldSpec{WireName: "address"},
+	"Type":    ubx.FieldSpec{WireName: "type"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_Endpoints_FilterFields = ubx.FieldMap{
-		"Items": ubx.FieldSpec{
-			WireName: "items",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter_ItemsFields,
-		},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Items": ubx.FieldSpec{
+		WireName: "items",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Filter_ItemsFields,
+	},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_Endpoints_LocationDetailsFields = ubx.FieldMap{
-		"Region": ubx.FieldSpec{WireName: "region"},
-	}
+	"Region": ubx.FieldSpec{WireName: "region"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_ExcludeFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-	}
+	"Address": ubx.FieldSpec{WireName: "address"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_Endpoints_ScopeFields = ubx.FieldMap{
-		"Exclude": ubx.FieldSpec{
-			WireName: "exclude",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_ExcludeFields,
-		},
-		"Include": ubx.FieldSpec{
-			WireName: "include",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_ExcludeFields,
-		},
-	}
+	"Exclude": ubx.FieldSpec{
+		WireName: "exclude",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_ExcludeFields,
+	},
+	"Include": ubx.FieldSpec{
+		WireName: "include",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_Endpoints_Scope_ExcludeFields,
+	},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_EndpointsFields = ubx.FieldMap{
-		"Address": ubx.FieldSpec{WireName: "address"},
-		"CoverageLevel": ubx.FieldSpec{WireName: "coverage_level"},
-		"Filter": ubx.FieldSpec{
-			WireName: "filter",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_FilterFields,
-		},
-		"LocationDetails": ubx.FieldSpec{
-			WireName: "location_details",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_LocationDetailsFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"Scope": ubx.FieldSpec{
-			WireName: "scope",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_Endpoints_ScopeFields,
-		},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Address":       ubx.FieldSpec{WireName: "address"},
+	"CoverageLevel": ubx.FieldSpec{WireName: "coverage_level"},
+	"Filter": ubx.FieldSpec{
+		WireName: "filter",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_Endpoints_FilterFields,
+	},
+	"LocationDetails": ubx.FieldSpec{
+		WireName: "location_details",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_Endpoints_LocationDetailsFields,
+	},
+	"Name":       ubx.FieldSpec{WireName: "name"},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+	"Scope": ubx.FieldSpec{
+		WireName: "scope",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_Endpoints_ScopeFields,
+	},
+	"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+	"Type":           ubx.FieldSpec{WireName: "type"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_Outputs_WorkspaceSettingsFields = ubx.FieldMap{
-		"WorkspaceResourceId": ubx.FieldSpec{WireName: "workspace_resource_id"},
-	}
+	"WorkspaceResourceId": ubx.FieldSpec{WireName: "workspace_resource_id"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_OutputsFields = ubx.FieldMap{
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"WorkspaceSettings": ubx.FieldSpec{
-			WireName: "workspace_settings",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_Outputs_WorkspaceSettingsFields,
-		},
-	}
+	"Type": ubx.FieldSpec{WireName: "type"},
+	"WorkspaceSettings": ubx.FieldSpec{
+		WireName: "workspace_settings",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_Outputs_WorkspaceSettingsFields,
+	},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_SourceFields = ubx.FieldMap{
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-	}
+	"Port":       ubx.FieldSpec{WireName: "port"},
+	"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration_RequestHeadersFields = ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Name":  ubx.FieldSpec{WireName: "name"},
+	"Value": ubx.FieldSpec{WireName: "value"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfigurationFields = ubx.FieldMap{
-		"Method": ubx.FieldSpec{WireName: "method"},
-		"Path": ubx.FieldSpec{WireName: "path"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-		"PreferHttps": ubx.FieldSpec{WireName: "prefer_https"},
-		"RequestHeaders": ubx.FieldSpec{
-			WireName: "request_headers",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration_RequestHeadersFields,
-		},
-		"ValidStatusCodeRanges": ubx.FieldSpec{WireName: "valid_status_code_ranges"},
-	}
+	"Method":      ubx.FieldSpec{WireName: "method"},
+	"Path":        ubx.FieldSpec{WireName: "path"},
+	"Port":        ubx.FieldSpec{WireName: "port"},
+	"PreferHttps": ubx.FieldSpec{WireName: "prefer_https"},
+	"RequestHeaders": ubx.FieldSpec{
+		WireName: "request_headers",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfiguration_RequestHeadersFields,
+	},
+	"ValidStatusCodeRanges": ubx.FieldSpec{WireName: "valid_status_code_ranges"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_IcmpConfigurationFields = ubx.FieldMap{
-		"DisableTraceRoute": ubx.FieldSpec{WireName: "disable_trace_route"},
-	}
+	"DisableTraceRoute": ubx.FieldSpec{WireName: "disable_trace_route"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_SuccessThresholdFields = ubx.FieldMap{
-		"ChecksFailedPercent": ubx.FieldSpec{WireName: "checks_failed_percent"},
-		"RoundTripTimeMs": ubx.FieldSpec{WireName: "round_trip_time_ms"},
-	}
+	"ChecksFailedPercent": ubx.FieldSpec{WireName: "checks_failed_percent"},
+	"RoundTripTimeMs":     ubx.FieldSpec{WireName: "round_trip_time_ms"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_TcpConfigurationFields = ubx.FieldMap{
-		"DestinationPortBehavior": ubx.FieldSpec{WireName: "destination_port_behavior"},
-		"DisableTraceRoute": ubx.FieldSpec{WireName: "disable_trace_route"},
-		"Port": ubx.FieldSpec{WireName: "port"},
-	}
+	"DestinationPortBehavior": ubx.FieldSpec{WireName: "destination_port_behavior"},
+	"DisableTraceRoute":       ubx.FieldSpec{WireName: "disable_trace_route"},
+	"Port":                    ubx.FieldSpec{WireName: "port"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_TestConfigurationsFields = ubx.FieldMap{
-		"HttpConfiguration": ubx.FieldSpec{
-			WireName: "http_configuration",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfigurationFields,
-		},
-		"IcmpConfiguration": ubx.FieldSpec{
-			WireName: "icmp_configuration",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_IcmpConfigurationFields,
-		},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"PreferredIpversion": ubx.FieldSpec{WireName: "preferred_ipversion"},
-		"Protocol": ubx.FieldSpec{WireName: "protocol"},
-		"SuccessThreshold": ubx.FieldSpec{
-			WireName: "success_threshold",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_SuccessThresholdFields,
-		},
-		"TcpConfiguration": ubx.FieldSpec{
-			WireName: "tcp_configuration",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_TcpConfigurationFields,
-		},
-		"TestFrequencySec": ubx.FieldSpec{WireName: "test_frequency_sec"},
-	}
+	"HttpConfiguration": ubx.FieldSpec{
+		WireName: "http_configuration",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_HttpConfigurationFields,
+	},
+	"IcmpConfiguration": ubx.FieldSpec{
+		WireName: "icmp_configuration",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_IcmpConfigurationFields,
+	},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"PreferredIpversion": ubx.FieldSpec{WireName: "preferred_ipversion"},
+	"Protocol":           ubx.FieldSpec{WireName: "protocol"},
+	"SuccessThreshold": ubx.FieldSpec{
+		WireName: "success_threshold",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_SuccessThresholdFields,
+	},
+	"TcpConfiguration": ubx.FieldSpec{
+		WireName: "tcp_configuration",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_TestConfigurations_TcpConfigurationFields,
+	},
+	"TestFrequencySec": ubx.FieldSpec{WireName: "test_frequency_sec"},
+}
 
 var NetworkwatcherConnectionMonitorResult_Properties_TestGroupsFields = ubx.FieldMap{
-		"Destinations": ubx.FieldSpec{WireName: "destinations"},
-		"Disable": ubx.FieldSpec{WireName: "disable"},
-		"Name": ubx.FieldSpec{WireName: "name"},
-		"Sources": ubx.FieldSpec{WireName: "sources"},
-		"TestConfigurations": ubx.FieldSpec{WireName: "test_configurations"},
-	}
+	"Destinations":       ubx.FieldSpec{WireName: "destinations"},
+	"Disable":            ubx.FieldSpec{WireName: "disable"},
+	"Name":               ubx.FieldSpec{WireName: "name"},
+	"Sources":            ubx.FieldSpec{WireName: "sources"},
+	"TestConfigurations": ubx.FieldSpec{WireName: "test_configurations"},
+}
 
 var NetworkwatcherConnectionMonitorResult_PropertiesFields = ubx.FieldMap{
-		"AutoStart": ubx.FieldSpec{WireName: "auto_start"},
-		"ConnectionMonitorType": ubx.FieldSpec{WireName: "connection_monitor_type"},
-		"Destination": ubx.FieldSpec{
-			WireName: "destination",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_DestinationFields,
-		},
-		"Endpoints": ubx.FieldSpec{
-			WireName: "endpoints",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_EndpointsFields,
-		},
-		"MonitoringIntervalInSeconds": ubx.FieldSpec{WireName: "monitoring_interval_in_seconds"},
-		"MonitoringStatus": ubx.FieldSpec{WireName: "monitoring_status"},
-		"Notes": ubx.FieldSpec{WireName: "notes"},
-		"Outputs": ubx.FieldSpec{
-			WireName: "outputs",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_OutputsFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Source": ubx.FieldSpec{
-			WireName: "source",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_SourceFields,
-		},
-		"StartTime": ubx.FieldSpec{WireName: "start_time"},
-		"TestConfigurations": ubx.FieldSpec{
-			WireName: "test_configurations",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_TestConfigurationsFields,
-		},
-		"TestGroups": ubx.FieldSpec{
-			WireName: "test_groups",
-			Kind: "list",
-			Fields: NetworkwatcherConnectionMonitorResult_Properties_TestGroupsFields,
-		},
-	}
+	"AutoStart":             ubx.FieldSpec{WireName: "auto_start"},
+	"ConnectionMonitorType": ubx.FieldSpec{WireName: "connection_monitor_type"},
+	"Destination": ubx.FieldSpec{
+		WireName: "destination",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_DestinationFields,
+	},
+	"Endpoints": ubx.FieldSpec{
+		WireName: "endpoints",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_EndpointsFields,
+	},
+	"MonitoringIntervalInSeconds": ubx.FieldSpec{WireName: "monitoring_interval_in_seconds"},
+	"MonitoringStatus":            ubx.FieldSpec{WireName: "monitoring_status"},
+	"Notes":                       ubx.FieldSpec{WireName: "notes"},
+	"Outputs": ubx.FieldSpec{
+		WireName: "outputs",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_OutputsFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Source": ubx.FieldSpec{
+		WireName: "source",
+		Kind:     "object",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_SourceFields,
+	},
+	"StartTime": ubx.FieldSpec{WireName: "start_time"},
+	"TestConfigurations": ubx.FieldSpec{
+		WireName: "test_configurations",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_TestConfigurationsFields,
+	},
+	"TestGroups": ubx.FieldSpec{
+		WireName: "test_groups",
+		Kind:     "list",
+		Fields:   NetworkwatcherConnectionMonitorResult_Properties_TestGroupsFields,
+	},
+}
 
 type NetworkwatcherConnectionMonitorResultConfig struct {
 	// Connection monitor location.
@@ -410,8 +410,8 @@ var NetworkwatcherConnectionMonitorResult = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: NetworkwatcherConnectionMonitorResult_PropertiesFields,
+			Kind:     "object",
+			Fields:   NetworkwatcherConnectionMonitorResult_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

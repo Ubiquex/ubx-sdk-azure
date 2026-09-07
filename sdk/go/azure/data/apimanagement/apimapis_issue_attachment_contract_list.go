@@ -4,9 +4,9 @@ package apimanagement
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapisIssueAttachmentContractList_Value_Properties struct {
-	Content any
+	Content       any
 	ContentFormat any
-	Title any
+	Title         any
 }
 
 type ApimapisIssueAttachmentContractList_Value struct {
@@ -27,6 +27,5 @@ type ApimapisIssueAttachmentContractListAttrs struct {
 
 var ApimapisIssueAttachmentContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimapis_issue_attachment_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

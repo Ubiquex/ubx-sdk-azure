@@ -8,7 +8,7 @@ type SqlserverDedicatedSqlminimalTlsSettingsList_Value_Properties struct {
 }
 
 type SqlserverDedicatedSqlminimalTlsSettingsList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
@@ -24,6 +24,5 @@ type SqlserverDedicatedSqlminimalTlsSettingsListAttrs struct {
 
 var SqlserverDedicatedSqlminimalTlsSettingsList = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlserver_dedicated_sqlminimal_tls_settings_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

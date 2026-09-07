@@ -9,26 +9,26 @@ type OpenapiAnalysisDefinition_Properties struct {
 }
 
 type OpenapiAnalysisDefinitionConfig struct {
-	AnalysisName any
+	AnalysisName       any
 	DiagnosticCategory any
-	SiteName any
+	SiteName           any
 }
 
 type OpenapiAnalysisDefinitionAttrs struct {
-	AnalysisName any
+	AnalysisName       any
 	DiagnosticCategory any
 	// Kind of resource.
 	Kind any
 	// AnalysisDefinition resource specific properties
 	Properties any
-	SiteName any
+	SiteName   any
 }
 
 var OpenapiAnalysisDefinition = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_analysis_definition",
 	Fields: ubx.FieldMap{
-		"AnalysisName": ubx.FieldSpec{WireName: "analysis_name"},
+		"AnalysisName":       ubx.FieldSpec{WireName: "analysis_name"},
 		"DiagnosticCategory": ubx.FieldSpec{WireName: "diagnostic_category"},
-		"SiteName": ubx.FieldSpec{WireName: "site_name"},
+		"SiteName":           ubx.FieldSpec{WireName: "site_name"},
 	},
 }

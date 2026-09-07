@@ -9,16 +9,16 @@ type VirtualnetworkBastionHostList_Value_Properties_IpConfigurations_Properties_
 
 type VirtualnetworkBastionHostList_Value_Properties_IpConfigurations_Properties struct {
 	PrivateIpallocationMethod any
-	ProvisioningState any
-	PublicIpaddress any
-	Subnet any
+	ProvisioningState         any
+	PublicIpaddress           any
+	Subnet                    any
 }
 
 type VirtualnetworkBastionHostList_Value_Properties_IpConfigurations struct {
-	Etag any
-	Name any
+	Etag       any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VirtualnetworkBastionHostList_Value_Properties_NetworkAcls_IpRules struct {
@@ -30,20 +30,20 @@ type VirtualnetworkBastionHostList_Value_Properties_NetworkAcls struct {
 }
 
 type VirtualnetworkBastionHostList_Value_Properties struct {
-	DisableCopyPaste any
-	DnsName any
-	EnableFileCopy any
-	EnableIpConnect any
-	EnableKerberos any
+	DisableCopyPaste         any
+	DnsName                  any
+	EnableFileCopy           any
+	EnableIpConnect          any
+	EnableKerberos           any
 	EnablePrivateOnlyBastion any
-	EnableSessionRecording any
-	EnableShareableLink any
-	EnableTunneling any
-	IpConfigurations any
-	NetworkAcls any
-	ProvisioningState any
-	ScaleUnits any
-	VirtualNetwork any
+	EnableSessionRecording   any
+	EnableShareableLink      any
+	EnableTunneling          any
+	IpConfigurations         any
+	NetworkAcls              any
+	ProvisioningState        any
+	ScaleUnits               any
+	VirtualNetwork           any
 }
 
 type VirtualnetworkBastionHostList_Value_Sku struct {
@@ -51,10 +51,10 @@ type VirtualnetworkBastionHostList_Value_Sku struct {
 }
 
 type VirtualnetworkBastionHostList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
-	Sku any
-	Zones any
+	Sku        any
+	Zones      any
 }
 
 type VirtualnetworkBastionHostListConfig struct {
@@ -69,6 +69,5 @@ type VirtualnetworkBastionHostListAttrs struct {
 
 var VirtualnetworkBastionHostList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualnetwork_bastion_host_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

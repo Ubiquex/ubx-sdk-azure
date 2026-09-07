@@ -19,13 +19,13 @@ type OpenapiGateway_Properties struct {
 }
 
 var OpenapiGateway_PropertiesFields = ubx.FieldMap{
-		"AllowedFeatures": ubx.FieldSpec{WireName: "allowed_features"},
-		"GatewayBypass": ubx.FieldSpec{WireName: "gateway_bypass"},
-		"GatewayEndpoint": ubx.FieldSpec{WireName: "gateway_endpoint"},
-		"GatewayId": ubx.FieldSpec{WireName: "gateway_id"},
-		"GatewayType": ubx.FieldSpec{WireName: "gateway_type"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-	}
+	"AllowedFeatures":   ubx.FieldSpec{WireName: "allowed_features"},
+	"GatewayBypass":     ubx.FieldSpec{WireName: "gateway_bypass"},
+	"GatewayEndpoint":   ubx.FieldSpec{WireName: "gateway_endpoint"},
+	"GatewayId":         ubx.FieldSpec{WireName: "gateway_id"},
+	"GatewayType":       ubx.FieldSpec{WireName: "gateway_type"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+}
 
 type OpenapiGatewayConfig struct {
 	// The geo-location where the resource lives
@@ -51,8 +51,8 @@ var OpenapiGateway = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiGateway_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiGateway_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

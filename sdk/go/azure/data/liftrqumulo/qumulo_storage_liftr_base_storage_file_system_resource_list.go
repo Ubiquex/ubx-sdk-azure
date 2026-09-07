@@ -4,24 +4,24 @@ package liftrqumulo
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type QumuloStorageLiftrBaseStorageFileSystemResourceList_Value_Identity_UserAssignedIdentities struct {
-	ClientId any
+	ClientId    any
 	PrincipalId any
 }
 
 type QumuloStorageLiftrBaseStorageFileSystemResourceList_Value_Identity struct {
-	PrincipalId any
-	TenantId any
-	Type any
+	PrincipalId            any
+	TenantId               any
+	Type                   any
 	UserAssignedIdentities any
 }
 
 type QumuloStorageLiftrBaseStorageFileSystemResourceList_Value_Properties_MarketplaceDetails struct {
-	MarketplaceSubscriptionId any
+	MarketplaceSubscriptionId     any
 	MarketplaceSubscriptionStatus any
-	OfferId any
-	PlanId any
-	PublisherId any
-	TermUnit any
+	OfferId                       any
+	PlanId                        any
+	PublisherId                   any
+	TermUnit                      any
 }
 
 type QumuloStorageLiftrBaseStorageFileSystemResourceList_Value_Properties_UserDetails struct {
@@ -29,20 +29,20 @@ type QumuloStorageLiftrBaseStorageFileSystemResourceList_Value_Properties_UserDe
 }
 
 type QumuloStorageLiftrBaseStorageFileSystemResourceList_Value_Properties struct {
-	AdminPassword any
-	AvailabilityZone any
-	ClusterLoginUrl any
-	DelegatedSubnetId any
+	AdminPassword      any
+	AvailabilityZone   any
+	ClusterLoginUrl    any
+	DelegatedSubnetId  any
 	MarketplaceDetails any
-	PerformanceTier any
-	PrivateIps any
-	ProvisioningState any
-	StorageSku any
-	UserDetails any
+	PerformanceTier    any
+	PrivateIps         any
+	ProvisioningState  any
+	StorageSku         any
+	UserDetails        any
 }
 
 type QumuloStorageLiftrBaseStorageFileSystemResourceList_Value struct {
-	Identity any
+	Identity   any
 	Properties any
 }
 
@@ -58,6 +58,5 @@ type QumuloStorageLiftrBaseStorageFileSystemResourceListAttrs struct {
 
 var QumuloStorageLiftrBaseStorageFileSystemResourceList = ubx.DataSourceBinding{
 	WireType: "azure_liftrqumulo_qumulo_storage_liftr_base_storage_file_system_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

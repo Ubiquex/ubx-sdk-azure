@@ -17,12 +17,12 @@ type SqlserverEncryptionProtector_Properties struct {
 }
 
 var SqlserverEncryptionProtector_PropertiesFields = ubx.FieldMap{
-		"ServerKeyName": ubx.FieldSpec{WireName: "server_key_name"},
-		"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
-		"Subregion": ubx.FieldSpec{WireName: "subregion"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"Uri": ubx.FieldSpec{WireName: "uri"},
-	}
+	"ServerKeyName": ubx.FieldSpec{WireName: "server_key_name"},
+	"ServerKeyType": ubx.FieldSpec{WireName: "server_key_type"},
+	"Subregion":     ubx.FieldSpec{WireName: "subregion"},
+	"Thumbprint":    ubx.FieldSpec{WireName: "thumbprint"},
+	"Uri":           ubx.FieldSpec{WireName: "uri"},
+}
 
 type SqlserverEncryptionProtectorConfig struct {
 	// Properties for an encryption protector execution.
@@ -43,8 +43,8 @@ var SqlserverEncryptionProtector = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: SqlserverEncryptionProtector_PropertiesFields,
+			Kind:     "object",
+			Fields:   SqlserverEncryptionProtector_PropertiesFields,
 		},
 	},
 }

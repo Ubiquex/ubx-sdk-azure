@@ -27,7 +27,7 @@ type SqlpoolReplicationLink_Properties struct {
 }
 
 type SqlpoolReplicationLinkConfig struct {
-	LinkId any
+	LinkId      any
 	SqlPoolName any
 }
 
@@ -36,7 +36,7 @@ type SqlpoolReplicationLinkAttrs struct {
 	// Location of the workspace that contains this firewall rule.
 	Location any
 	// Represents the properties of a Sql pool replication link.
-	Properties any
+	Properties  any
 	SqlPoolName any
 	// Type of resource this is.
 	Type any
@@ -45,7 +45,7 @@ type SqlpoolReplicationLinkAttrs struct {
 var SqlpoolReplicationLink = ubx.DataSourceBinding{
 	WireType: "azure_synapse_sqlpool_replication_link",
 	Fields: ubx.FieldMap{
-		"LinkId": ubx.FieldSpec{WireName: "link_id"},
+		"LinkId":      ubx.FieldSpec{WireName: "link_id"},
 		"SqlPoolName": ubx.FieldSpec{WireName: "sql_pool_name"},
 	},
 }

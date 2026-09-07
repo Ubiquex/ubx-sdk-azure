@@ -56,36 +56,36 @@ type BmsProtectedItemResource_Properties struct {
 }
 
 type BmsProtectedItemResourceConfig struct {
-	ContainerName any
-	FabricName any
-	OperationId any
+	ContainerName     any
+	FabricName        any
+	OperationId       any
 	ProtectedItemName any
-	VaultName any
+	VaultName         any
 }
 
 type BmsProtectedItemResourceAttrs struct {
 	ContainerName any
 	// Optional ETag.
-	ETag any
+	ETag       any
 	FabricName any
 	// Represents an Azure geography region where supported resource providers live.
-	Location any
+	Location    any
 	OperationId any
 	// Base class for backup items.
-	Properties any
+	Properties        any
 	ProtectedItemName any
 	// Resource tags.
-	Tags any
+	Tags      any
 	VaultName any
 }
 
 var BmsProtectedItemResource = ubx.DataSourceBinding{
 	WireType: "azure_recoveryservicesbackup_bms_protected_item_resource",
 	Fields: ubx.FieldMap{
-		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
-		"FabricName": ubx.FieldSpec{WireName: "fabric_name"},
-		"OperationId": ubx.FieldSpec{WireName: "operation_id"},
+		"ContainerName":     ubx.FieldSpec{WireName: "container_name"},
+		"FabricName":        ubx.FieldSpec{WireName: "fabric_name"},
+		"OperationId":       ubx.FieldSpec{WireName: "operation_id"},
 		"ProtectedItemName": ubx.FieldSpec{WireName: "protected_item_name"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
+		"VaultName":         ubx.FieldSpec{WireName: "vault_name"},
 	},
 }

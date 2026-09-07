@@ -13,11 +13,11 @@ type GroupIdInformation_Properties struct {
 }
 
 type GroupIdInformationConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ResourceId any
-	ResourceName any
-	SubscriptionId any
+	ResourceId        any
+	ResourceName      any
+	SubscriptionId    any
 }
 
 type GroupIdInformationAttrs struct {
@@ -27,11 +27,11 @@ type GroupIdInformationAttrs struct {
 	// The resource name.
 	Name any
 	// The properties for a group information object.
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ResourceId any
-	ResourceName any
-	SubscriptionId any
+	ResourceId        any
+	ResourceName      any
+	SubscriptionId    any
 	// The resource type.
 	Type any
 }
@@ -39,10 +39,10 @@ type GroupIdInformationAttrs struct {
 var GroupIdInformation = ubx.DataSourceBinding{
 	WireType: "azure_digitaltwins_group_id_information",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ResourceId":        ubx.FieldSpec{WireName: "resource_id"},
+		"ResourceName":      ubx.FieldSpec{WireName: "resource_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

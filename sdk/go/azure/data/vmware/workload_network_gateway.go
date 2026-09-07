@@ -13,12 +13,12 @@ type WorkloadNetworkGateway_Properties struct {
 }
 
 type WorkloadNetworkGatewayConfig struct {
-	GatewayId any
+	GatewayId        any
 	PrivateCloudName any
 }
 
 type WorkloadNetworkGatewayAttrs struct {
-	GatewayId any
+	GatewayId        any
 	PrivateCloudName any
 	// Properties of a NSX Gateway.
 	Properties any
@@ -27,7 +27,7 @@ type WorkloadNetworkGatewayAttrs struct {
 var WorkloadNetworkGateway = ubx.DataSourceBinding{
 	WireType: "azure_vmware_workload_network_gateway",
 	Fields: ubx.FieldMap{
-		"GatewayId": ubx.FieldSpec{WireName: "gateway_id"},
+		"GatewayId":        ubx.FieldSpec{WireName: "gateway_id"},
 		"PrivateCloudName": ubx.FieldSpec{WireName: "private_cloud_name"},
 	},
 }

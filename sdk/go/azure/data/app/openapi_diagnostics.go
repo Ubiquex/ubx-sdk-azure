@@ -4,7 +4,7 @@ package app
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiDiagnostics_Properties_DataProviderMetadata_PropertyBag struct {
-	Name any
+	Name  any
 	Value any
 }
 
@@ -17,30 +17,30 @@ type OpenapiDiagnostics_Properties_DataProviderMetadata struct {
 
 type OpenapiDiagnostics_Properties_Dataset_RenderingProperties struct {
 	Description any
-	IsVisible any
-	Title any
-	Type any
+	IsVisible   any
+	Title       any
+	Type        any
 }
 
 type OpenapiDiagnostics_Properties_Dataset_Table_Columns struct {
 	ColumnName any
 	ColumnType any
-	DataType any
+	DataType   any
 }
 
 type OpenapiDiagnostics_Properties_Dataset_Table struct {
-	Columns any
-	Rows any
+	Columns   any
+	Rows      any
 	TableName any
 }
 
 type OpenapiDiagnostics_Properties_Dataset struct {
 	RenderingProperties any
-	Table any
+	Table               any
 }
 
 type OpenapiDiagnostics_Properties_Metadata_SupportTopicList struct {
-	Id any
+	Id    any
 	PesId any
 }
 
@@ -85,12 +85,12 @@ type OpenapiDiagnostics_Properties struct {
 
 type OpenapiDiagnosticsConfig struct {
 	ContainerAppName any
-	DetectorName any
+	DetectorName     any
 }
 
 type OpenapiDiagnosticsAttrs struct {
 	ContainerAppName any
-	DetectorName any
+	DetectorName     any
 	// Diagnostics resource specific properties
 	Properties any
 }
@@ -99,6 +99,6 @@ var OpenapiDiagnostics = ubx.DataSourceBinding{
 	WireType: "azure_app_openapi_diagnostics",
 	Fields: ubx.FieldMap{
 		"ContainerAppName": ubx.FieldSpec{WireName: "container_app_name"},
-		"DetectorName": ubx.FieldSpec{WireName: "detector_name"},
+		"DetectorName":     ubx.FieldSpec{WireName: "detector_name"},
 	},
 }

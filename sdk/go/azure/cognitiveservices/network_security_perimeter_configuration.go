@@ -100,6 +100,5 @@ type NetworkSecurityPerimeterConfigurationAttrs struct {
 
 var NetworkSecurityPerimeterConfiguration = ubx.ResourceBinding{
 	WireType: "azure_cognitiveservices_network_security_perimeter_configuration",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

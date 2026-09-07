@@ -18,18 +18,18 @@ type OpenapiDatastore_Properties struct {
 }
 
 var OpenapiDatastore_Properties_CredentialsFields = ubx.FieldMap{
-		"CredentialsType": ubx.FieldSpec{WireName: "credentials_type"},
-	}
+	"CredentialsType": ubx.FieldSpec{WireName: "credentials_type"},
+}
 
 var OpenapiDatastore_PropertiesFields = ubx.FieldMap{
-		"Credentials": ubx.FieldSpec{
-			WireName: "credentials",
-			Kind: "object",
-			Fields: OpenapiDatastore_Properties_CredentialsFields,
-		},
-		"DatastoreType": ubx.FieldSpec{WireName: "datastore_type"},
-		"IsDefault": ubx.FieldSpec{WireName: "is_default"},
-	}
+	"Credentials": ubx.FieldSpec{
+		WireName: "credentials",
+		Kind:     "object",
+		Fields:   OpenapiDatastore_Properties_CredentialsFields,
+	},
+	"DatastoreType": ubx.FieldSpec{WireName: "datastore_type"},
+	"IsDefault":     ubx.FieldSpec{WireName: "is_default"},
+}
 
 type OpenapiDatastoreConfig struct {
 	// Base definition for datastore contents configuration.
@@ -50,8 +50,8 @@ var OpenapiDatastore = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiDatastore_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiDatastore_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

@@ -9,38 +9,38 @@ type VirtualwanVpnSiteList_Value_Properties_AddressSpace_IpamPoolPrefixAllocatio
 
 type VirtualwanVpnSiteList_Value_Properties_AddressSpace_IpamPoolPrefixAllocations struct {
 	AllocatedAddressPrefixes any
-	NumberOfIpAddresses any
-	Pool any
+	NumberOfIpAddresses      any
+	Pool                     any
 }
 
 type VirtualwanVpnSiteList_Value_Properties_AddressSpace struct {
-	AddressPrefixes any
+	AddressPrefixes           any
 	IpamPoolPrefixAllocations any
 }
 
 type VirtualwanVpnSiteList_Value_Properties_BgpProperties_BgpPeeringAddresses struct {
-	CustomBgpIpAddresses any
+	CustomBgpIpAddresses  any
 	DefaultBgpIpAddresses any
-	IpconfigurationId any
-	TunnelIpAddresses any
+	IpconfigurationId     any
+	TunnelIpAddresses     any
 }
 
 type VirtualwanVpnSiteList_Value_Properties_BgpProperties struct {
-	Asn any
-	BgpPeeringAddress any
+	Asn                 any
+	BgpPeeringAddress   any
 	BgpPeeringAddresses any
-	PeerWeight any
+	PeerWeight          any
 }
 
 type VirtualwanVpnSiteList_Value_Properties_DeviceProperties struct {
-	DeviceModel any
-	DeviceVendor any
+	DeviceModel     any
+	DeviceVendor    any
 	LinkSpeedInMbps any
 }
 
 type VirtualwanVpnSiteList_Value_Properties_O365Policy_BreakOutCategories struct {
-	Allow any
-	Default any
+	Allow    any
+	Default  any
 	Optimize any
 }
 
@@ -49,43 +49,43 @@ type VirtualwanVpnSiteList_Value_Properties_O365Policy struct {
 }
 
 type VirtualwanVpnSiteList_Value_Properties_VpnSiteLinks_Properties_BgpProperties struct {
-	Asn any
+	Asn               any
 	BgpPeeringAddress any
 }
 
 type VirtualwanVpnSiteList_Value_Properties_VpnSiteLinks_Properties_LinkProperties struct {
 	LinkProviderName any
-	LinkSpeedInMbps any
+	LinkSpeedInMbps  any
 }
 
 type VirtualwanVpnSiteList_Value_Properties_VpnSiteLinks_Properties struct {
-	BgpProperties any
-	Fqdn any
-	IpAddress any
-	LinkProperties any
+	BgpProperties     any
+	Fqdn              any
+	IpAddress         any
+	LinkProperties    any
 	ProvisioningState any
 }
 
 type VirtualwanVpnSiteList_Value_Properties_VpnSiteLinks struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
 type VirtualwanVpnSiteList_Value_Properties struct {
-	AddressSpace any
-	BgpProperties any
-	DeviceProperties any
-	IpAddress any
-	IsSecuritySite any
-	O365Policy any
+	AddressSpace      any
+	BgpProperties     any
+	DeviceProperties  any
+	IpAddress         any
+	IsSecuritySite    any
+	O365Policy        any
 	ProvisioningState any
-	SiteKey any
-	VirtualWan any
-	VpnSiteLinks any
+	SiteKey           any
+	VirtualWan        any
+	VpnSiteLinks      any
 }
 
 type VirtualwanVpnSiteList_Value struct {
-	Etag any
+	Etag       any
 	Properties any
 }
 
@@ -101,6 +101,5 @@ type VirtualwanVpnSiteListAttrs struct {
 
 var VirtualwanVpnSiteList = ubx.DataSourceBinding{
 	WireType: "azure_network_virtualwan_vpn_site_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

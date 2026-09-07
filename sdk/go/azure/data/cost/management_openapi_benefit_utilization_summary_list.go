@@ -10,15 +10,15 @@ type ManagementOpenapiBenefitUtilizationSummaryList_Value struct {
 type ManagementOpenapiBenefitUtilizationSummaryListConfig struct {
 	BillingAccountId any
 	BillingProfileId any
-	Filter any
-	GrainParameter any
+	Filter           any
+	GrainParameter   any
 }
 
 type ManagementOpenapiBenefitUtilizationSummaryListAttrs struct {
 	BillingAccountId any
 	BillingProfileId any
-	Filter any
-	GrainParameter any
+	Filter           any
+	GrainParameter   any
 	// The link (URL) to the next page of results.
 	NextLink any
 	// The list of benefit utilization summaries.
@@ -30,7 +30,7 @@ var ManagementOpenapiBenefitUtilizationSummaryList = ubx.DataSourceBinding{
 	Fields: ubx.FieldMap{
 		"BillingAccountId": ubx.FieldSpec{WireName: "billing_account_id"},
 		"BillingProfileId": ubx.FieldSpec{WireName: "billing_profile_id"},
-		"Filter": ubx.FieldSpec{WireName: "filter"},
-		"GrainParameter": ubx.FieldSpec{WireName: "grain_parameter"},
+		"Filter":           ubx.FieldSpec{WireName: "filter"},
+		"GrainParameter":   ubx.FieldSpec{WireName: "grain_parameter"},
 	},
 }

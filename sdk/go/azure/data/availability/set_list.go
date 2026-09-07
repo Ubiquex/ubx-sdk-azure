@@ -12,7 +12,7 @@ type SetList_Value_Properties_ScheduledEventsPolicy_AllInstancesDown struct {
 }
 
 type SetList_Value_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPublishingTargets_EventGridAndResourceGraph struct {
-	Enable any
+	Enable                    any
 	ScheduledEventsApiVersion any
 }
 
@@ -21,49 +21,49 @@ type SetList_Value_Properties_ScheduledEventsPolicy_ScheduledEventsAdditionalPub
 }
 
 type SetList_Value_Properties_ScheduledEventsPolicy struct {
-	AllInstancesDown any
+	AllInstancesDown                           any
 	ScheduledEventsAdditionalPublishingTargets any
-	UserInitiatedReboot any
-	UserInitiatedRedeploy any
+	UserInitiatedReboot                        any
+	UserInitiatedRedeploy                      any
 }
 
 type SetList_Value_Properties_Statuses struct {
-	Code any
+	Code          any
 	DisplayStatus any
-	Level any
-	Message any
-	Time any
+	Level         any
+	Message       any
+	Time          any
 }
 
 type SetList_Value_Properties_VirtualMachineScaleSetMigrationInfo_DefaultVirtualMachineScaleSetInfo struct {
-	ConstrainedMaximumCapacity any
+	ConstrainedMaximumCapacity    any
 	DefaultVirtualMachineScaleSet any
 }
 
 type SetList_Value_Properties_VirtualMachineScaleSetMigrationInfo struct {
 	DefaultVirtualMachineScaleSetInfo any
-	MigrateToVirtualMachineScaleSet any
+	MigrateToVirtualMachineScaleSet   any
 }
 
 type SetList_Value_Properties struct {
-	PlatformFaultDomainCount any
-	PlatformUpdateDomainCount any
-	ProximityPlacementGroup any
-	ScheduledEventsPolicy any
-	Statuses any
+	PlatformFaultDomainCount            any
+	PlatformUpdateDomainCount           any
+	ProximityPlacementGroup             any
+	ScheduledEventsPolicy               any
+	Statuses                            any
 	VirtualMachineScaleSetMigrationInfo any
-	VirtualMachines any
+	VirtualMachines                     any
 }
 
 type SetList_Value_Sku struct {
 	Capacity any
-	Name any
-	Tier any
+	Name     any
+	Tier     any
 }
 
 type SetList_Value struct {
 	Properties any
-	Sku any
+	Sku        any
 }
 
 type SetListConfig struct {
@@ -78,6 +78,5 @@ type SetListAttrs struct {
 
 var SetList = ubx.DataSourceBinding{
 	WireType: "azure_availability_set_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

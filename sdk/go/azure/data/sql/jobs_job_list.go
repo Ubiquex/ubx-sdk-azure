@@ -4,17 +4,17 @@ package sql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type JobsJobList_Value_Properties_Schedule struct {
-	Enabled any
-	EndTime any
-	Interval any
+	Enabled   any
+	EndTime   any
+	Interval  any
 	StartTime any
-	Type any
+	Type      any
 }
 
 type JobsJobList_Value_Properties struct {
 	Description any
-	Schedule any
-	Version any
+	Schedule    any
+	Version     any
 }
 
 type JobsJobList_Value struct {
@@ -23,13 +23,13 @@ type JobsJobList_Value struct {
 
 type JobsJobListConfig struct {
 	JobAgentName any
-	ServerName any
+	ServerName   any
 }
 
 type JobsJobListAttrs struct {
 	JobAgentName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The Job items on this page
 	Value any
@@ -39,6 +39,6 @@ var JobsJobList = ubx.DataSourceBinding{
 	WireType: "azure_sql_jobs_job_list",
 	Fields: ubx.FieldMap{
 		"JobAgentName": ubx.FieldSpec{WireName: "job_agent_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
+		"ServerName":   ubx.FieldSpec{WireName: "server_name"},
 	},
 }

@@ -4,18 +4,18 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolSqlPoolBlobAuditingPolicyList_Value_Properties struct {
-	AuditActionsAndGroups any
-	IsAzureMonitorTargetEnabled any
-	IsStorageSecondaryKeyInUse any
-	RetentionDays any
-	State any
-	StorageAccountAccessKey any
+	AuditActionsAndGroups        any
+	IsAzureMonitorTargetEnabled  any
+	IsStorageSecondaryKeyInUse   any
+	RetentionDays                any
+	State                        any
+	StorageAccountAccessKey      any
 	StorageAccountSubscriptionId any
-	StorageEndpoint any
+	StorageEndpoint              any
 }
 
 type SqlpoolSqlPoolBlobAuditingPolicyList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -25,7 +25,7 @@ type SqlpoolSqlPoolBlobAuditingPolicyListConfig struct {
 
 type SqlpoolSqlPoolBlobAuditingPolicyListAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink    any
 	SqlPoolName any
 	// Array of results.
 	Value any

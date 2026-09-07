@@ -5,13 +5,13 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimnotificationsNotificationContractList_Value_Properties_Recipients struct {
 	Emails any
-	Users any
+	Users  any
 }
 
 type ApimnotificationsNotificationContractList_Value_Properties struct {
 	Description any
-	Recipients any
-	Title any
+	Recipients  any
+	Title       any
 }
 
 type ApimnotificationsNotificationContractList_Value struct {
@@ -32,6 +32,5 @@ type ApimnotificationsNotificationContractListAttrs struct {
 
 var ApimnotificationsNotificationContractList = ubx.DataSourceBinding{
 	WireType: "azure_apimanagement_apimnotifications_notification_contract_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

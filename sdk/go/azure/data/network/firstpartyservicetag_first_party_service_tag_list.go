@@ -4,17 +4,17 @@ package network
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type FirstpartyservicetagFirstPartyServiceTagList_Value_Properties struct {
-	FailedReason any
+	FailedReason      any
 	ProvisioningState any
-	ResourceGuid any
-	Value any
+	ResourceGuid      any
+	Value             any
 }
 
 type FirstpartyservicetagFirstPartyServiceTagList_Value struct {
-	Etag any
-	Id any
+	Etag       any
+	Id         any
 	Properties any
-	Type any
+	Type       any
 }
 
 type FirstpartyservicetagFirstPartyServiceTagListConfig struct {
@@ -29,6 +29,5 @@ type FirstpartyservicetagFirstPartyServiceTagListAttrs struct {
 
 var FirstpartyservicetagFirstPartyServiceTagList = ubx.DataSourceBinding{
 	WireType: "azure_network_firstpartyservicetag_first_party_service_tag_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

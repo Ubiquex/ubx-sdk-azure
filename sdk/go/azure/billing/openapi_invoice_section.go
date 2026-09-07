@@ -21,14 +21,14 @@ type OpenapiInvoiceSection_Properties struct {
 }
 
 var OpenapiInvoiceSection_PropertiesFields = ubx.FieldMap{
-		"DisplayName": ubx.FieldSpec{WireName: "display_name"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"ReasonCode": ubx.FieldSpec{WireName: "reason_code"},
-		"State": ubx.FieldSpec{WireName: "state"},
-		"SystemId": ubx.FieldSpec{WireName: "system_id"},
-		"Tags": ubx.FieldSpec{WireName: "tags"},
-		"TargetCloud": ubx.FieldSpec{WireName: "target_cloud"},
-	}
+	"DisplayName":       ubx.FieldSpec{WireName: "display_name"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"ReasonCode":        ubx.FieldSpec{WireName: "reason_code"},
+	"State":             ubx.FieldSpec{WireName: "state"},
+	"SystemId":          ubx.FieldSpec{WireName: "system_id"},
+	"Tags":              ubx.FieldSpec{WireName: "tags"},
+	"TargetCloud":       ubx.FieldSpec{WireName: "target_cloud"},
+}
 
 type OpenapiInvoiceSectionConfig struct {
 	// An invoice section.
@@ -49,8 +49,8 @@ var OpenapiInvoiceSection = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiInvoiceSection_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiInvoiceSection_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

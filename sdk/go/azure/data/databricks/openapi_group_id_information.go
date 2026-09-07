@@ -13,21 +13,21 @@ type OpenapiGroupIdInformation_Properties struct {
 }
 
 type OpenapiGroupIdInformationConfig struct {
-	GroupId any
+	GroupId       any
 	WorkspaceName any
 }
 
 type OpenapiGroupIdInformationAttrs struct {
 	GroupId any
 	// The properties for a group information object
-	Properties any
+	Properties    any
 	WorkspaceName any
 }
 
 var OpenapiGroupIdInformation = ubx.DataSourceBinding{
 	WireType: "azure_databricks_openapi_group_id_information",
 	Fields: ubx.FieldMap{
-		"GroupId": ubx.FieldSpec{WireName: "group_id"},
+		"GroupId":       ubx.FieldSpec{WireName: "group_id"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

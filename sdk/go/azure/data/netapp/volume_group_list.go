@@ -4,29 +4,29 @@ package netapp
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VolumeGroupList_Value_Properties_GroupMetaData_GlobalPlacementRules struct {
-	Key any
+	Key   any
 	Value any
 }
 
 type VolumeGroupList_Value_Properties_GroupMetaData struct {
 	ApplicationIdentifier any
-	ApplicationType any
-	GlobalPlacementRules any
-	GroupDescription any
-	VolumesCount any
+	ApplicationType       any
+	GlobalPlacementRules  any
+	GroupDescription      any
+	VolumesCount          any
 }
 
 type VolumeGroupList_Value_Properties struct {
-	GroupMetaData any
+	GroupMetaData     any
 	ProvisioningState any
 }
 
 type VolumeGroupList_Value struct {
-	Id any
-	Location any
-	Name any
+	Id         any
+	Location   any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type VolumeGroupListConfig struct {

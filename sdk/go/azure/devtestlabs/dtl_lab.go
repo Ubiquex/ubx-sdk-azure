@@ -71,50 +71,50 @@ type DtlLab_Properties struct {
 }
 
 var DtlLab_Properties_AnnouncementFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"ExpirationDate": ubx.FieldSpec{WireName: "expiration_date"},
-		"Expired": ubx.FieldSpec{WireName: "expired"},
-		"Markdown": ubx.FieldSpec{WireName: "markdown"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Title": ubx.FieldSpec{WireName: "title"},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-	}
+	"Enabled":           ubx.FieldSpec{WireName: "enabled"},
+	"ExpirationDate":    ubx.FieldSpec{WireName: "expiration_date"},
+	"Expired":           ubx.FieldSpec{WireName: "expired"},
+	"Markdown":          ubx.FieldSpec{WireName: "markdown"},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Title":             ubx.FieldSpec{WireName: "title"},
+	"UniqueIdentifier":  ubx.FieldSpec{WireName: "unique_identifier"},
+}
 
 var DtlLab_Properties_SupportFields = ubx.FieldMap{
-		"Enabled": ubx.FieldSpec{WireName: "enabled"},
-		"Markdown": ubx.FieldSpec{WireName: "markdown"},
-	}
+	"Enabled":  ubx.FieldSpec{WireName: "enabled"},
+	"Markdown": ubx.FieldSpec{WireName: "markdown"},
+}
 
 var DtlLab_PropertiesFields = ubx.FieldMap{
-		"Announcement": ubx.FieldSpec{
-			WireName: "announcement",
-			Kind: "object",
-			Fields: DtlLab_Properties_AnnouncementFields,
-		},
-		"ArtifactsStorageAccount": ubx.FieldSpec{WireName: "artifacts_storage_account"},
-		"CreatedDate": ubx.FieldSpec{WireName: "created_date"},
-		"DefaultPremiumStorageAccount": ubx.FieldSpec{WireName: "default_premium_storage_account"},
-		"DefaultStorageAccount": ubx.FieldSpec{WireName: "default_storage_account"},
-		"EnvironmentPermission": ubx.FieldSpec{WireName: "environment_permission"},
-		"ExtendedProperties": ubx.FieldSpec{WireName: "extended_properties"},
-		"LabStorageType": ubx.FieldSpec{WireName: "lab_storage_type"},
-		"LoadBalancerId": ubx.FieldSpec{WireName: "load_balancer_id"},
-		"MandatoryArtifactsResourceIdsLinux": ubx.FieldSpec{WireName: "mandatory_artifacts_resource_ids_linux"},
-		"MandatoryArtifactsResourceIdsWindows": ubx.FieldSpec{WireName: "mandatory_artifacts_resource_ids_windows"},
-		"NetworkSecurityGroupId": ubx.FieldSpec{WireName: "network_security_group_id"},
-		"PremiumDataDiskStorageAccount": ubx.FieldSpec{WireName: "premium_data_disk_storage_account"},
-		"PremiumDataDisks": ubx.FieldSpec{WireName: "premium_data_disks"},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"PublicIpId": ubx.FieldSpec{WireName: "public_ip_id"},
-		"Support": ubx.FieldSpec{
-			WireName: "support",
-			Kind: "object",
-			Fields: DtlLab_Properties_SupportFields,
-		},
-		"UniqueIdentifier": ubx.FieldSpec{WireName: "unique_identifier"},
-		"VaultName": ubx.FieldSpec{WireName: "vault_name"},
-		"VmCreationResourceGroup": ubx.FieldSpec{WireName: "vm_creation_resource_group"},
-	}
+	"Announcement": ubx.FieldSpec{
+		WireName: "announcement",
+		Kind:     "object",
+		Fields:   DtlLab_Properties_AnnouncementFields,
+	},
+	"ArtifactsStorageAccount":              ubx.FieldSpec{WireName: "artifacts_storage_account"},
+	"CreatedDate":                          ubx.FieldSpec{WireName: "created_date"},
+	"DefaultPremiumStorageAccount":         ubx.FieldSpec{WireName: "default_premium_storage_account"},
+	"DefaultStorageAccount":                ubx.FieldSpec{WireName: "default_storage_account"},
+	"EnvironmentPermission":                ubx.FieldSpec{WireName: "environment_permission"},
+	"ExtendedProperties":                   ubx.FieldSpec{WireName: "extended_properties"},
+	"LabStorageType":                       ubx.FieldSpec{WireName: "lab_storage_type"},
+	"LoadBalancerId":                       ubx.FieldSpec{WireName: "load_balancer_id"},
+	"MandatoryArtifactsResourceIdsLinux":   ubx.FieldSpec{WireName: "mandatory_artifacts_resource_ids_linux"},
+	"MandatoryArtifactsResourceIdsWindows": ubx.FieldSpec{WireName: "mandatory_artifacts_resource_ids_windows"},
+	"NetworkSecurityGroupId":               ubx.FieldSpec{WireName: "network_security_group_id"},
+	"PremiumDataDiskStorageAccount":        ubx.FieldSpec{WireName: "premium_data_disk_storage_account"},
+	"PremiumDataDisks":                     ubx.FieldSpec{WireName: "premium_data_disks"},
+	"ProvisioningState":                    ubx.FieldSpec{WireName: "provisioning_state"},
+	"PublicIpId":                           ubx.FieldSpec{WireName: "public_ip_id"},
+	"Support": ubx.FieldSpec{
+		WireName: "support",
+		Kind:     "object",
+		Fields:   DtlLab_Properties_SupportFields,
+	},
+	"UniqueIdentifier":        ubx.FieldSpec{WireName: "unique_identifier"},
+	"VaultName":               ubx.FieldSpec{WireName: "vault_name"},
+	"VmCreationResourceGroup": ubx.FieldSpec{WireName: "vm_creation_resource_group"},
+}
 
 type DtlLabConfig struct {
 	// The geo-location where the resource lives
@@ -144,8 +144,8 @@ var DtlLab = ubx.ResourceBinding{
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: DtlLab_PropertiesFields,
+			Kind:     "object",
+			Fields:   DtlLab_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 		"Name": ubx.FieldSpec{WireName: "name"},

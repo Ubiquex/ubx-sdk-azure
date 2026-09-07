@@ -42,7 +42,7 @@ type OpenapiWorkflowEnvelope_Properties struct {
 }
 
 type OpenapiWorkflowEnvelopeConfig struct {
-	Name any
+	Name         any
 	WorkflowName any
 }
 
@@ -51,16 +51,16 @@ type OpenapiWorkflowEnvelopeAttrs struct {
 	Kind any
 	// The resource location.
 	Location any
-	Name any
+	Name     any
 	// Additional workflow properties.
-	Properties any
+	Properties   any
 	WorkflowName any
 }
 
 var OpenapiWorkflowEnvelope = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_workflow_envelope",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":         ubx.FieldSpec{WireName: "name"},
 		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

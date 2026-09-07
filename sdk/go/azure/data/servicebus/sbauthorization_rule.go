@@ -9,16 +9,16 @@ type SbauthorizationRule_Properties struct {
 }
 
 type SbauthorizationRuleConfig struct {
-	Alias any
+	Alias                 any
 	AuthorizationRuleName any
-	NamespaceName any
+	NamespaceName         any
 }
 
 type SbauthorizationRuleAttrs struct {
-	Alias any
+	Alias                 any
 	AuthorizationRuleName any
 	// The geo-location where the resource lives
-	Location any
+	Location      any
 	NamespaceName any
 	// AuthorizationRule properties.
 	Properties any
@@ -27,8 +27,8 @@ type SbauthorizationRuleAttrs struct {
 var SbauthorizationRule = ubx.DataSourceBinding{
 	WireType: "azure_servicebus_sbauthorization_rule",
 	Fields: ubx.FieldMap{
-		"Alias": ubx.FieldSpec{WireName: "alias"},
+		"Alias":                 ubx.FieldSpec{WireName: "alias"},
 		"AuthorizationRuleName": ubx.FieldSpec{WireName: "authorization_rule_name"},
-		"NamespaceName": ubx.FieldSpec{WireName: "namespace_name"},
+		"NamespaceName":         ubx.FieldSpec{WireName: "namespace_name"},
 	},
 }

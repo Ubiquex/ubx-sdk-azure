@@ -11,9 +11,9 @@ type ApimidentityproviderIdentityProviderContract2_Properties struct {
 }
 
 var ApimidentityproviderIdentityProviderContract2_PropertiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
-	}
+	"ClientId":     ubx.FieldSpec{WireName: "client_id"},
+	"ClientSecret": ubx.FieldSpec{WireName: "client_secret"},
+}
 
 type ApimidentityproviderIdentityProviderContract2Config struct {
 	// The external Identity Providers like Facebook, Google, Microsoft, Twitter or Azure Active Directory which can be used to enable access to the API Management service developer portal for all users.
@@ -30,8 +30,8 @@ var ApimidentityproviderIdentityProviderContract2 = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: ApimidentityproviderIdentityProviderContract2_PropertiesFields,
+			Kind:     "object",
+			Fields:   ApimidentityproviderIdentityProviderContract2_PropertiesFields,
 		},
 	},
 }

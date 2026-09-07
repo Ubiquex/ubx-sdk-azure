@@ -29,7 +29,7 @@ type ConfigurationProfileAssignment_SystemData struct {
 
 type ConfigurationProfileAssignmentConfig struct {
 	ConfigurationProfileAssignmentName any
-	VmName any
+	VmName                             any
 }
 
 type ConfigurationProfileAssignmentAttrs struct {
@@ -40,13 +40,13 @@ type ConfigurationProfileAssignmentAttrs struct {
 	Properties any
 	// Metadata pertaining to creation and last modification of the resource.
 	SystemData any
-	VmName any
+	VmName     any
 }
 
 var ConfigurationProfileAssignment = ubx.DataSourceBinding{
 	WireType: "azure_automanage_configuration_profile_assignment",
 	Fields: ubx.FieldMap{
 		"ConfigurationProfileAssignmentName": ubx.FieldSpec{WireName: "configuration_profile_assignment_name"},
-		"VmName": ubx.FieldSpec{WireName: "vm_name"},
+		"VmName":                             ubx.FieldSpec{WireName: "vm_name"},
 	},
 }

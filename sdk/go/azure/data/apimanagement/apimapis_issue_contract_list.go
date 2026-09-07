@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ApimapisIssueContractList_Value_Properties struct {
 	Description any
-	Title any
-	UserId any
+	Title       any
+	UserId      any
 }
 
 type ApimapisIssueContractList_Value struct {
@@ -19,7 +19,7 @@ type ApimapisIssueContractListConfig struct {
 
 type ApimapisIssueContractListAttrs struct {
 	// Total record count number across all pages.
-	Count any
+	Count                     any
 	ExpandCommentsAttachments any
 	// Next page link if any.
 	NextLink any

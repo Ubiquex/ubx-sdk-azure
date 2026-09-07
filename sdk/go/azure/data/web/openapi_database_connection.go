@@ -6,7 +6,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 type OpenapiDatabaseConnection_Properties_ConfigurationFiles struct {
 	Contents any
 	FileName any
-	Type any
+	Type     any
 }
 
 type OpenapiDatabaseConnection_Properties struct {
@@ -24,7 +24,7 @@ type OpenapiDatabaseConnection_Properties struct {
 
 type OpenapiDatabaseConnectionConfig struct {
 	DatabaseConnectionName any
-	Name any
+	Name                   any
 }
 
 type OpenapiDatabaseConnectionAttrs struct {
@@ -40,6 +40,6 @@ var OpenapiDatabaseConnection = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_database_connection",
 	Fields: ubx.FieldMap{
 		"DatabaseConnectionName": ubx.FieldSpec{WireName: "database_connection_name"},
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":                   ubx.FieldSpec{WireName: "name"},
 	},
 }

@@ -25,16 +25,16 @@ type OpenapiHostNameBinding_Properties struct {
 }
 
 var OpenapiHostNameBinding_PropertiesFields = ubx.FieldMap{
-		"AzureResourceName": ubx.FieldSpec{WireName: "azure_resource_name"},
-		"AzureResourceType": ubx.FieldSpec{WireName: "azure_resource_type"},
-		"CustomHostNameDnsRecordType": ubx.FieldSpec{WireName: "custom_host_name_dns_record_type"},
-		"DomainId": ubx.FieldSpec{WireName: "domain_id"},
-		"HostNameType": ubx.FieldSpec{WireName: "host_name_type"},
-		"SiteName": ubx.FieldSpec{WireName: "site_name"},
-		"SslState": ubx.FieldSpec{WireName: "ssl_state"},
-		"Thumbprint": ubx.FieldSpec{WireName: "thumbprint"},
-		"VirtualIp": ubx.FieldSpec{WireName: "virtual_ip"},
-	}
+	"AzureResourceName":           ubx.FieldSpec{WireName: "azure_resource_name"},
+	"AzureResourceType":           ubx.FieldSpec{WireName: "azure_resource_type"},
+	"CustomHostNameDnsRecordType": ubx.FieldSpec{WireName: "custom_host_name_dns_record_type"},
+	"DomainId":                    ubx.FieldSpec{WireName: "domain_id"},
+	"HostNameType":                ubx.FieldSpec{WireName: "host_name_type"},
+	"SiteName":                    ubx.FieldSpec{WireName: "site_name"},
+	"SslState":                    ubx.FieldSpec{WireName: "ssl_state"},
+	"Thumbprint":                  ubx.FieldSpec{WireName: "thumbprint"},
+	"VirtualIp":                   ubx.FieldSpec{WireName: "virtual_ip"},
+}
 
 type OpenapiHostNameBindingConfig struct {
 	// Kind of resource.
@@ -60,8 +60,8 @@ var OpenapiHostNameBinding = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiHostNameBinding_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiHostNameBinding_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

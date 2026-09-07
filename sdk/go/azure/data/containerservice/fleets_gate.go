@@ -36,14 +36,14 @@ type FleetsGate_Properties struct {
 
 type FleetsGateConfig struct {
 	FleetName any
-	GateName any
+	GateName  any
 }
 
 type FleetsGateAttrs struct {
 	// If eTag is provided in the response body, it may also be provided as a header per the normal etag convention. Entity tags are used for comparing two or more entities from the same requested resource. HTTP/1.1 uses entity tags in the etag (section 14.19), If-Match (section 14.24), If-None-Match (section 14.26), and If-Range (section 14.27) header fields.
-	ETag any
+	ETag      any
 	FleetName any
-	GateName any
+	GateName  any
 	// A Gate controls the progression during a staged rollout, e.g. in an Update Run.
 	Properties any
 }
@@ -52,6 +52,6 @@ var FleetsGate = ubx.DataSourceBinding{
 	WireType: "azure_containerservice_fleets_gate",
 	Fields: ubx.FieldMap{
 		"FleetName": ubx.FieldSpec{WireName: "fleet_name"},
-		"GateName": ubx.FieldSpec{WireName: "gate_name"},
+		"GateName":  ubx.FieldSpec{WireName: "gate_name"},
 	},
 }

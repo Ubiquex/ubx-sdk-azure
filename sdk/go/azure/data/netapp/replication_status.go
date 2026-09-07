@@ -5,8 +5,8 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ReplicationStatusConfig struct {
 	AccountName any
-	PoolName any
-	VolumeName any
+	PoolName    any
+	VolumeName  any
 }
 
 type ReplicationStatusAttrs struct {
@@ -17,19 +17,19 @@ type ReplicationStatusAttrs struct {
 	Healthy any
 	// The status of the replication
 	MirrorState any
-	PoolName any
+	PoolName    any
 	// Status of the volume replication relationship
 	RelationshipStatus any
 	// The progress of the replication
 	TotalProgress any
-	VolumeName any
+	VolumeName    any
 }
 
 var ReplicationStatus = ubx.DataSourceBinding{
 	WireType: "azure_netapp_replication_status",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"PoolName": ubx.FieldSpec{WireName: "pool_name"},
-		"VolumeName": ubx.FieldSpec{WireName: "volume_name"},
+		"PoolName":    ubx.FieldSpec{WireName: "pool_name"},
+		"VolumeName":  ubx.FieldSpec{WireName: "volume_name"},
 	},
 }

@@ -93,6 +93,5 @@ type NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration
 
 var NetworksecurityperimeterconfigurationsNetworkSecurityPerimeterConfiguration = ubx.ResourceBinding{
 	WireType: "azure_sql_networksecurityperimeterconfigurations_network_security_perimeter_configuration",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

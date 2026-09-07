@@ -4,16 +4,16 @@ package management
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type HierarchySettingsInfoList_Value_Properties struct {
-	DefaultManagementGroup any
+	DefaultManagementGroup               any
 	RequireAuthorizationForGroupCreation any
-	TenantId any
+	TenantId                             any
 }
 
 type HierarchySettingsInfoList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type HierarchySettingsInfoListConfig struct {

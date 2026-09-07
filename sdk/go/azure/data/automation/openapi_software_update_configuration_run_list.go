@@ -8,35 +8,35 @@ type OpenapiSoftwareUpdateConfigurationRunList_Value_Properties_SoftwareUpdateCo
 }
 
 type OpenapiSoftwareUpdateConfigurationRunList_Value_Properties_Tasks_PostTask struct {
-	JobId any
+	JobId  any
 	Source any
 	Status any
 }
 
 type OpenapiSoftwareUpdateConfigurationRunList_Value_Properties_Tasks struct {
 	PostTask any
-	PreTask any
+	PreTask  any
 }
 
 type OpenapiSoftwareUpdateConfigurationRunList_Value_Properties struct {
-	ComputerCount any
-	ConfiguredDuration any
-	CreatedBy any
-	CreationTime any
-	EndTime any
-	FailedCount any
-	LastModifiedBy any
-	LastModifiedTime any
-	OsType any
+	ComputerCount               any
+	ConfiguredDuration          any
+	CreatedBy                   any
+	CreationTime                any
+	EndTime                     any
+	FailedCount                 any
+	LastModifiedBy              any
+	LastModifiedTime            any
+	OsType                      any
 	SoftwareUpdateConfiguration any
-	StartTime any
-	Status any
-	Tasks any
+	StartTime                   any
+	Status                      any
+	Tasks                       any
 }
 
 type OpenapiSoftwareUpdateConfigurationRunList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 }
 

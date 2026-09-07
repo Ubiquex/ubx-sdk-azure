@@ -9,19 +9,19 @@ type WorkflowRunActionList_Value_Properties_Correlation struct {
 
 type WorkflowRunActionList_Value_Properties_InputsLink_ContentHash struct {
 	Algorithm any
-	Value any
+	Value     any
 }
 
 type WorkflowRunActionList_Value_Properties_InputsLink struct {
-	ContentHash any
-	ContentSize any
+	ContentHash    any
+	ContentSize    any
 	ContentVersion any
-	Metadata any
-	Uri any
+	Metadata       any
+	Uri            any
 }
 
 type WorkflowRunActionList_Value_Properties_RetryHistory_Error_Error struct {
-	Code any
+	Code    any
 	Message any
 }
 
@@ -30,61 +30,61 @@ type WorkflowRunActionList_Value_Properties_RetryHistory_Error struct {
 }
 
 type WorkflowRunActionList_Value_Properties_RetryHistory struct {
-	ClientRequestId any
-	Code any
-	EndTime any
-	Error any
+	ClientRequestId  any
+	Code             any
+	EndTime          any
+	Error            any
 	ServiceRequestId any
-	StartTime any
+	StartTime        any
 }
 
 type WorkflowRunActionList_Value_Properties struct {
-	Code any
-	Correlation any
-	EndTime any
-	Error any
-	InputsLink any
-	OutputsLink any
-	RetryHistory any
-	StartTime any
-	Status any
+	Code              any
+	Correlation       any
+	EndTime           any
+	Error             any
+	InputsLink        any
+	OutputsLink       any
+	RetryHistory      any
+	StartTime         any
+	Status            any
 	TrackedProperties any
-	TrackingId any
+	TrackingId        any
 }
 
 type WorkflowRunActionList_Value struct {
-	Name any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type WorkflowRunActionListConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	RunName any
-	SubscriptionId any
-	WorkflowName any
+	RunName           any
+	SubscriptionId    any
+	WorkflowName      any
 }
 
 type WorkflowRunActionListAttrs struct {
 	ApiVersion any
 	// The URL to get the next set of results.
-	NextLink any
+	NextLink          any
 	ResourceGroupName any
-	RunName any
-	SubscriptionId any
+	RunName           any
+	SubscriptionId    any
 	// A list of workflow run actions.
-	Value any
+	Value        any
 	WorkflowName any
 }
 
 var WorkflowRunActionList = ubx.DataSourceBinding{
 	WireType: "azure_logic_workflow_run_action_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"RunName": ubx.FieldSpec{WireName: "run_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"WorkflowName": ubx.FieldSpec{WireName: "workflow_name"},
+		"RunName":           ubx.FieldSpec{WireName: "run_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+		"WorkflowName":      ubx.FieldSpec{WireName: "workflow_name"},
 	},
 }

@@ -4,37 +4,37 @@ package web
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiCertificateList_Value_Properties_HostingEnvironmentProfile struct {
-	Id any
+	Id   any
 	Name any
 	Type any
 }
 
 type OpenapiCertificateList_Value_Properties struct {
-	CanonicalName any
-	CerBlob any
-	DomainValidationMethod any
-	ExpirationDate any
-	FriendlyName any
-	HostNames any
+	CanonicalName             any
+	CerBlob                   any
+	DomainValidationMethod    any
+	ExpirationDate            any
+	FriendlyName              any
+	HostNames                 any
 	HostingEnvironmentProfile any
-	IssueDate any
-	Issuer any
-	KeyVaultId any
-	KeyVaultSecretName any
-	KeyVaultSecretStatus any
-	Password any
-	PfxBlob any
-	PublicKeyHash any
-	SelfLink any
-	ServerFarmId any
-	SiteName any
-	SubjectName any
-	Thumbprint any
-	Valid any
+	IssueDate                 any
+	Issuer                    any
+	KeyVaultId                any
+	KeyVaultSecretName        any
+	KeyVaultSecretStatus      any
+	Password                  any
+	PfxBlob                   any
+	PublicKeyHash             any
+	SelfLink                  any
+	ServerFarmId              any
+	SiteName                  any
+	SubjectName               any
+	Thumbprint                any
+	Valid                     any
 }
 
 type OpenapiCertificateList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 
@@ -50,6 +50,5 @@ type OpenapiCertificateListAttrs struct {
 
 var OpenapiCertificateList = ubx.DataSourceBinding{
 	WireType: "azure_web_openapi_certificate_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -5,7 +5,7 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type VirtualnetworkNetworkVirtualApplianceSku_Properties_AvailableScaleUnits struct {
 	InstanceCount any
-	ScaleUnit any
+	ScaleUnit     any
 }
 
 type VirtualnetworkNetworkVirtualApplianceSku_Properties struct {
@@ -32,7 +32,7 @@ type VirtualnetworkNetworkVirtualApplianceSkuAttrs struct {
 	Name any
 	// Properties specific to NetworkVirtualApplianceSkus.
 	Properties any
-	SkuName any
+	SkuName    any
 	// Resource tags.
 	Tags any
 	// Resource type.

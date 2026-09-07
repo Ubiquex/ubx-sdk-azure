@@ -8,11 +8,11 @@ type ConfigurationProfileList_Value_Properties struct {
 }
 
 type ConfigurationProfileList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
@@ -31,6 +31,5 @@ type ConfigurationProfileListAttrs struct {
 
 var ConfigurationProfileList = ubx.DataSourceBinding{
 	WireType: "azure_automanage_configuration_profile_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

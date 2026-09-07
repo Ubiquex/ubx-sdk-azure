@@ -4,12 +4,12 @@ package synapse
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SqlpoolWorkloadGroupList_Value_Properties struct {
-	Importance any
-	MaxResourcePercent any
+	Importance                   any
+	MaxResourcePercent           any
 	MaxResourcePercentPerRequest any
-	MinResourcePercent any
+	MinResourcePercent           any
 	MinResourcePercentPerRequest any
-	QueryExecutionTimeout any
+	QueryExecutionTimeout        any
 }
 
 type SqlpoolWorkloadGroupList_Value struct {
@@ -22,7 +22,7 @@ type SqlpoolWorkloadGroupListConfig struct {
 
 type SqlpoolWorkloadGroupListAttrs struct {
 	// Link to retrieve next page of results.
-	NextLink any
+	NextLink    any
 	SqlPoolName any
 	// Array of results.
 	Value any

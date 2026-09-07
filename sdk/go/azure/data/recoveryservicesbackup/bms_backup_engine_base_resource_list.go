@@ -4,37 +4,37 @@ package recoveryservicesbackup
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type BmsBackupEngineBaseResourceList_Value_Properties_ExtendedInfo struct {
-	AvailableDiskSpace any
+	AvailableDiskSpace      any
 	AzureProtectedInstances any
-	DatabaseName any
-	DiskCount any
-	ProtectedItemsCount any
-	ProtectedServersCount any
-	RefreshedAt any
-	UsedDiskSpace any
+	DatabaseName            any
+	DiskCount               any
+	ProtectedItemsCount     any
+	ProtectedServersCount   any
+	RefreshedAt             any
+	UsedDiskSpace           any
 }
 
 type BmsBackupEngineBaseResourceList_Value_Properties struct {
-	AzureBackupAgentVersion any
-	BackupEngineId any
-	BackupEngineState any
-	BackupEngineType any
-	BackupManagementType any
-	CanReRegister any
-	DpmVersion any
-	ExtendedInfo any
-	FriendlyName any
-	HealthStatus any
+	AzureBackupAgentVersion            any
+	BackupEngineId                     any
+	BackupEngineState                  any
+	BackupEngineType                   any
+	BackupManagementType               any
+	CanReRegister                      any
+	DpmVersion                         any
+	ExtendedInfo                       any
+	FriendlyName                       any
+	HealthStatus                       any
 	IsAzureBackupAgentUpgradeAvailable any
-	IsDpmUpgradeAvailable any
-	RegistrationStatus any
+	IsDpmUpgradeAvailable              any
+	RegistrationStatus                 any
 }
 
 type BmsBackupEngineBaseResourceList_Value struct {
-	ETag any
-	Location any
+	ETag       any
+	Location   any
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type BmsBackupEngineBaseResourceListConfig struct {
@@ -45,7 +45,7 @@ type BmsBackupEngineBaseResourceListAttrs struct {
 	// The URI to fetch the next page of resources, with each API call returning up to 200 resources per page. Use ListNext() to fetch the next page if the total number of resources exceeds 200.
 	NextLink any
 	// List of resources.
-	Value any
+	Value     any
 	VaultName any
 }
 

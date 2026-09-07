@@ -4,17 +4,17 @@ package appplatform
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConfigServerResource_Properties_ConfigServer_GitProperty_Repositories struct {
-	HostKey any
-	HostKeyAlgorithm any
-	Label any
-	Name any
-	Password any
-	Pattern any
-	PrivateKey any
-	SearchPaths any
+	HostKey               any
+	HostKeyAlgorithm      any
+	Label                 any
+	Name                  any
+	Password              any
+	Pattern               any
+	PrivateKey            any
+	SearchPaths           any
 	StrictHostKeyChecking any
-	Uri any
-	Username any
+	Uri                   any
+	Username              any
 }
 
 type ConfigServerResource_Properties_ConfigServer_GitProperty struct {
@@ -62,27 +62,27 @@ type ConfigServerResource_Properties struct {
 }
 
 type ConfigServerResourceConfig struct {
-	ApiVersion any
+	ApiVersion        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 type ConfigServerResourceAttrs struct {
 	ApiVersion any
 	// Config server git properties payload
-	Properties any
+	Properties        any
 	ResourceGroupName any
-	ServiceName any
-	SubscriptionId any
+	ServiceName       any
+	SubscriptionId    any
 }
 
 var ConfigServerResource = ubx.DataSourceBinding{
 	WireType: "azure_appplatform_config_server_resource",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ServiceName": ubx.FieldSpec{WireName: "service_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"ServiceName":       ubx.FieldSpec{WireName: "service_name"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

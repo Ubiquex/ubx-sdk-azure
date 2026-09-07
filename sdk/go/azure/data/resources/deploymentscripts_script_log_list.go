@@ -13,12 +13,12 @@ type DeploymentscriptsScriptLogList_Value struct {
 
 type DeploymentscriptsScriptLogListConfig struct {
 	ResourceGroupName any
-	ScriptName any
+	ScriptName        any
 }
 
 type DeploymentscriptsScriptLogListAttrs struct {
 	ResourceGroupName any
-	ScriptName any
+	ScriptName        any
 	// Deployment scripts logs.
 	Value any
 }
@@ -27,6 +27,6 @@ var DeploymentscriptsScriptLogList = ubx.DataSourceBinding{
 	WireType: "azure_resources_deploymentscripts_script_log_list",
 	Fields: ubx.FieldMap{
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"ScriptName": ubx.FieldSpec{WireName: "script_name"},
+		"ScriptName":        ubx.FieldSpec{WireName: "script_name"},
 	},
 }

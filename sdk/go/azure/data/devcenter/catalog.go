@@ -60,7 +60,7 @@ type CatalogAttrs struct {
 	// Fully qualified resource ID for the resource. E.g. "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
 	Id any
 	// The name of the resource
-	Name any
+	Name        any
 	ProjectName any
 	// Properties of a catalog.
 	Properties any

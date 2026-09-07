@@ -23,15 +23,15 @@ type BindingResource_Properties struct {
 }
 
 var BindingResource_PropertiesFields = ubx.FieldMap{
-		"BindingParameters": ubx.FieldSpec{WireName: "binding_parameters"},
-		"CreatedAt": ubx.FieldSpec{WireName: "created_at"},
-		"GeneratedProperties": ubx.FieldSpec{WireName: "generated_properties"},
-		"Key": ubx.FieldSpec{WireName: "key"},
-		"ResourceId": ubx.FieldSpec{WireName: "resource_id"},
-		"ResourceName": ubx.FieldSpec{WireName: "resource_name"},
-		"ResourceType": ubx.FieldSpec{WireName: "resource_type"},
-		"UpdatedAt": ubx.FieldSpec{WireName: "updated_at"},
-	}
+	"BindingParameters":   ubx.FieldSpec{WireName: "binding_parameters"},
+	"CreatedAt":           ubx.FieldSpec{WireName: "created_at"},
+	"GeneratedProperties": ubx.FieldSpec{WireName: "generated_properties"},
+	"Key":                 ubx.FieldSpec{WireName: "key"},
+	"ResourceId":          ubx.FieldSpec{WireName: "resource_id"},
+	"ResourceName":        ubx.FieldSpec{WireName: "resource_name"},
+	"ResourceType":        ubx.FieldSpec{WireName: "resource_type"},
+	"UpdatedAt":           ubx.FieldSpec{WireName: "updated_at"},
+}
 
 type BindingResourceConfig struct {
 	// Binding resource properties payload
@@ -48,8 +48,8 @@ var BindingResource = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: BindingResource_PropertiesFields,
+			Kind:     "object",
+			Fields:   BindingResource_PropertiesFields,
 		},
 	},
 }

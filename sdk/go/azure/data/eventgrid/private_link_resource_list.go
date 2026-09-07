@@ -4,35 +4,35 @@ package eventgrid
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type PrivateLinkResourceList_Value_Properties struct {
-	DisplayName any
-	GroupId any
-	RequiredMembers any
+	DisplayName       any
+	GroupId           any
+	RequiredMembers   any
 	RequiredZoneNames any
 }
 
 type PrivateLinkResourceList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type PrivateLinkResourceListConfig struct {
-	ApiVersion any
-	ParentName any
-	ParentType any
+	ApiVersion        any
+	ParentName        any
+	ParentType        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 }
 
 type PrivateLinkResourceListAttrs struct {
 	ApiVersion any
 	// A link for the next page of private link resources.
-	NextLink any
-	ParentName any
-	ParentType any
+	NextLink          any
+	ParentName        any
+	ParentType        any
 	ResourceGroupName any
-	SubscriptionId any
+	SubscriptionId    any
 	// A collection of private link resources
 	Value any
 }
@@ -40,10 +40,10 @@ type PrivateLinkResourceListAttrs struct {
 var PrivateLinkResourceList = ubx.DataSourceBinding{
 	WireType: "azure_eventgrid_private_link_resource_list",
 	Fields: ubx.FieldMap{
-		"ApiVersion": ubx.FieldSpec{WireName: "api_version"},
-		"ParentName": ubx.FieldSpec{WireName: "parent_name"},
-		"ParentType": ubx.FieldSpec{WireName: "parent_type"},
+		"ApiVersion":        ubx.FieldSpec{WireName: "api_version"},
+		"ParentName":        ubx.FieldSpec{WireName: "parent_name"},
+		"ParentType":        ubx.FieldSpec{WireName: "parent_type"},
 		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
+		"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
 	},
 }

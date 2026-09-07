@@ -15,12 +15,12 @@ type OpenapiImmutabilityPolicy_Properties struct {
 }
 
 type OpenapiImmutabilityPolicyConfig struct {
-	AccountName any
+	AccountName   any
 	ContainerName any
 }
 
 type OpenapiImmutabilityPolicyAttrs struct {
-	AccountName any
+	AccountName   any
 	ContainerName any
 	// Resource Etag.
 	Etag any
@@ -31,7 +31,7 @@ type OpenapiImmutabilityPolicyAttrs struct {
 var OpenapiImmutabilityPolicy = ubx.DataSourceBinding{
 	WireType: "azure_storage_openapi_immutability_policy",
 	Fields: ubx.FieldMap{
-		"AccountName": ubx.FieldSpec{WireName: "account_name"},
+		"AccountName":   ubx.FieldSpec{WireName: "account_name"},
 		"ContainerName": ubx.FieldSpec{WireName: "container_name"},
 	},
 }

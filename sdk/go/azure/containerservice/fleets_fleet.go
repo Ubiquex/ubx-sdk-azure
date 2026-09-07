@@ -105,111 +105,110 @@ type FleetsFleet_Properties struct {
 }
 
 var FleetsFleet_Identity_UserAssignedIdentitiesFields = ubx.FieldMap{
-		"ClientId": ubx.FieldSpec{WireName: "client_id"},
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-	}
+	"ClientId":    ubx.FieldSpec{WireName: "client_id"},
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+}
 
 var FleetsFleet_IdentityFields = ubx.FieldMap{
-		"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
-		"TenantId": ubx.FieldSpec{WireName: "tenant_id"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"UserAssignedIdentities": ubx.FieldSpec{
-			WireName: "user_assigned_identities",
-			Kind: "map",
-			Fields: FleetsFleet_Identity_UserAssignedIdentitiesFields,
-		},
-	}
+	"PrincipalId": ubx.FieldSpec{WireName: "principal_id"},
+	"TenantId":    ubx.FieldSpec{WireName: "tenant_id"},
+	"Type":        ubx.FieldSpec{WireName: "type"},
+	"UserAssignedIdentities": ubx.FieldSpec{
+		WireName: "user_assigned_identities",
+		Kind:     "map",
+		Fields:   FleetsFleet_Identity_UserAssignedIdentitiesFields,
+	},
+}
 
 var FleetsFleet_Properties_HubProfile_AgentProfileFields = ubx.FieldMap{
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-		"VmSize": ubx.FieldSpec{WireName: "vm_size"},
-	}
+	"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
+	"VmSize":   ubx.FieldSpec{WireName: "vm_size"},
+}
 
 var FleetsFleet_Properties_HubProfile_ApiServerAccessProfileFields = ubx.FieldMap{
-		"EnablePrivateCluster": ubx.FieldSpec{WireName: "enable_private_cluster"},
-		"EnableVnetIntegration": ubx.FieldSpec{WireName: "enable_vnet_integration"},
-		"SubnetId": ubx.FieldSpec{WireName: "subnet_id"},
-	}
+	"EnablePrivateCluster":  ubx.FieldSpec{WireName: "enable_private_cluster"},
+	"EnableVnetIntegration": ubx.FieldSpec{WireName: "enable_vnet_integration"},
+	"SubnetId":              ubx.FieldSpec{WireName: "subnet_id"},
+}
 
 var FleetsFleet_Properties_HubProfileFields = ubx.FieldMap{
-		"AgentProfile": ubx.FieldSpec{
-			WireName: "agent_profile",
-			Kind: "object",
-			Fields: FleetsFleet_Properties_HubProfile_AgentProfileFields,
-		},
-		"ApiServerAccessProfile": ubx.FieldSpec{
-			WireName: "api_server_access_profile",
-			Kind: "object",
-			Fields: FleetsFleet_Properties_HubProfile_ApiServerAccessProfileFields,
-		},
-		"DnsPrefix": ubx.FieldSpec{WireName: "dns_prefix"},
-		"Fqdn": ubx.FieldSpec{WireName: "fqdn"},
-		"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
-		"PortalFqdn": ubx.FieldSpec{WireName: "portal_fqdn"},
-	}
+	"AgentProfile": ubx.FieldSpec{
+		WireName: "agent_profile",
+		Kind:     "object",
+		Fields:   FleetsFleet_Properties_HubProfile_AgentProfileFields,
+	},
+	"ApiServerAccessProfile": ubx.FieldSpec{
+		WireName: "api_server_access_profile",
+		Kind:     "object",
+		Fields:   FleetsFleet_Properties_HubProfile_ApiServerAccessProfileFields,
+	},
+	"DnsPrefix":         ubx.FieldSpec{WireName: "dns_prefix"},
+	"Fqdn":              ubx.FieldSpec{WireName: "fqdn"},
+	"KubernetesVersion": ubx.FieldSpec{WireName: "kubernetes_version"},
+	"PortalFqdn":        ubx.FieldSpec{WireName: "portal_fqdn"},
+}
 
 var FleetsFleet_Properties_Status_LastOperationError_AdditionalInfoFields = ubx.FieldMap{
-		"Info": ubx.FieldSpec{WireName: "info"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Info": ubx.FieldSpec{WireName: "info"},
+	"Type": ubx.FieldSpec{WireName: "type"},
+}
 
-var FleetsFleet_Properties_Status_LastOperationError_Details_DetailsFields = ubx.FieldMap{
-	}
+var FleetsFleet_Properties_Status_LastOperationError_Details_DetailsFields = ubx.FieldMap{}
 
 var FleetsFleet_Properties_Status_LastOperationError_DetailsFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: FleetsFleet_Properties_Status_LastOperationError_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: FleetsFleet_Properties_Status_LastOperationError_Details_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   FleetsFleet_Properties_Status_LastOperationError_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   FleetsFleet_Properties_Status_LastOperationError_Details_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var FleetsFleet_Properties_Status_LastOperationErrorFields = ubx.FieldMap{
-		"AdditionalInfo": ubx.FieldSpec{
-			WireName: "additional_info",
-			Kind: "list",
-			Fields: FleetsFleet_Properties_Status_LastOperationError_AdditionalInfoFields,
-		},
-		"Code": ubx.FieldSpec{WireName: "code"},
-		"Details": ubx.FieldSpec{
-			WireName: "details",
-			Kind: "list",
-			Fields: FleetsFleet_Properties_Status_LastOperationError_DetailsFields,
-		},
-		"Message": ubx.FieldSpec{WireName: "message"},
-		"Target": ubx.FieldSpec{WireName: "target"},
-	}
+	"AdditionalInfo": ubx.FieldSpec{
+		WireName: "additional_info",
+		Kind:     "list",
+		Fields:   FleetsFleet_Properties_Status_LastOperationError_AdditionalInfoFields,
+	},
+	"Code": ubx.FieldSpec{WireName: "code"},
+	"Details": ubx.FieldSpec{
+		WireName: "details",
+		Kind:     "list",
+		Fields:   FleetsFleet_Properties_Status_LastOperationError_DetailsFields,
+	},
+	"Message": ubx.FieldSpec{WireName: "message"},
+	"Target":  ubx.FieldSpec{WireName: "target"},
+}
 
 var FleetsFleet_Properties_StatusFields = ubx.FieldMap{
-		"LastOperationError": ubx.FieldSpec{
-			WireName: "last_operation_error",
-			Kind: "object",
-			Fields: FleetsFleet_Properties_Status_LastOperationErrorFields,
-		},
-		"LastOperationId": ubx.FieldSpec{WireName: "last_operation_id"},
-	}
+	"LastOperationError": ubx.FieldSpec{
+		WireName: "last_operation_error",
+		Kind:     "object",
+		Fields:   FleetsFleet_Properties_Status_LastOperationErrorFields,
+	},
+	"LastOperationId": ubx.FieldSpec{WireName: "last_operation_id"},
+}
 
 var FleetsFleet_PropertiesFields = ubx.FieldMap{
-		"HubProfile": ubx.FieldSpec{
-			WireName: "hub_profile",
-			Kind: "object",
-			Fields: FleetsFleet_Properties_HubProfileFields,
-		},
-		"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
-		"Status": ubx.FieldSpec{
-			WireName: "status",
-			Kind: "object",
-			Fields: FleetsFleet_Properties_StatusFields,
-		},
-	}
+	"HubProfile": ubx.FieldSpec{
+		WireName: "hub_profile",
+		Kind:     "object",
+		Fields:   FleetsFleet_Properties_HubProfileFields,
+	},
+	"ProvisioningState": ubx.FieldSpec{WireName: "provisioning_state"},
+	"Status": ubx.FieldSpec{
+		WireName: "status",
+		Kind:     "object",
+		Fields:   FleetsFleet_Properties_StatusFields,
+	},
+}
 
 type FleetsFleetConfig struct {
 	// Managed service identity (system assigned and/or user assigned identities)
@@ -240,14 +239,14 @@ var FleetsFleet = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Identity": ubx.FieldSpec{
 			WireName: "identity",
-			Kind: "object",
-			Fields: FleetsFleet_IdentityFields,
+			Kind:     "object",
+			Fields:   FleetsFleet_IdentityFields,
 		},
 		"Location": ubx.FieldSpec{WireName: "location"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: FleetsFleet_PropertiesFields,
+			Kind:     "object",
+			Fields:   FleetsFleet_PropertiesFields,
 		},
 		"Tags": ubx.FieldSpec{WireName: "tags"},
 	},

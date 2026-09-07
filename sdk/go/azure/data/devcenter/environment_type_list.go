@@ -9,7 +9,7 @@ type EnvironmentTypeList_Value_Properties struct {
 
 type EnvironmentTypeList_Value struct {
 	Properties any
-	Tags any
+	Tags       any
 }
 
 type EnvironmentTypeListConfig struct {

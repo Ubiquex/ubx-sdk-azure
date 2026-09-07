@@ -60,50 +60,50 @@ type JobstepsJobStep_Properties struct {
 }
 
 var JobstepsJobStep_Properties_ActionFields = ubx.FieldMap{
-		"Source": ubx.FieldSpec{WireName: "source"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-		"Value": ubx.FieldSpec{WireName: "value"},
-	}
+	"Source": ubx.FieldSpec{WireName: "source"},
+	"Type":   ubx.FieldSpec{WireName: "type"},
+	"Value":  ubx.FieldSpec{WireName: "value"},
+}
 
 var JobstepsJobStep_Properties_ExecutionOptionsFields = ubx.FieldMap{
-		"InitialRetryIntervalSeconds": ubx.FieldSpec{WireName: "initial_retry_interval_seconds"},
-		"MaximumRetryIntervalSeconds": ubx.FieldSpec{WireName: "maximum_retry_interval_seconds"},
-		"RetryAttempts": ubx.FieldSpec{WireName: "retry_attempts"},
-		"RetryIntervalBackoffMultiplier": ubx.FieldSpec{WireName: "retry_interval_backoff_multiplier"},
-		"TimeoutSeconds": ubx.FieldSpec{WireName: "timeout_seconds"},
-	}
+	"InitialRetryIntervalSeconds":    ubx.FieldSpec{WireName: "initial_retry_interval_seconds"},
+	"MaximumRetryIntervalSeconds":    ubx.FieldSpec{WireName: "maximum_retry_interval_seconds"},
+	"RetryAttempts":                  ubx.FieldSpec{WireName: "retry_attempts"},
+	"RetryIntervalBackoffMultiplier": ubx.FieldSpec{WireName: "retry_interval_backoff_multiplier"},
+	"TimeoutSeconds":                 ubx.FieldSpec{WireName: "timeout_seconds"},
+}
 
 var JobstepsJobStep_Properties_OutputFields = ubx.FieldMap{
-		"Credential": ubx.FieldSpec{WireName: "credential"},
-		"DatabaseName": ubx.FieldSpec{WireName: "database_name"},
-		"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
-		"SchemaName": ubx.FieldSpec{WireName: "schema_name"},
-		"ServerName": ubx.FieldSpec{WireName: "server_name"},
-		"SubscriptionId": ubx.FieldSpec{WireName: "subscription_id"},
-		"TableName": ubx.FieldSpec{WireName: "table_name"},
-		"Type": ubx.FieldSpec{WireName: "type"},
-	}
+	"Credential":        ubx.FieldSpec{WireName: "credential"},
+	"DatabaseName":      ubx.FieldSpec{WireName: "database_name"},
+	"ResourceGroupName": ubx.FieldSpec{WireName: "resource_group_name"},
+	"SchemaName":        ubx.FieldSpec{WireName: "schema_name"},
+	"ServerName":        ubx.FieldSpec{WireName: "server_name"},
+	"SubscriptionId":    ubx.FieldSpec{WireName: "subscription_id"},
+	"TableName":         ubx.FieldSpec{WireName: "table_name"},
+	"Type":              ubx.FieldSpec{WireName: "type"},
+}
 
 var JobstepsJobStep_PropertiesFields = ubx.FieldMap{
-		"Action": ubx.FieldSpec{
-			WireName: "action",
-			Kind: "object",
-			Fields: JobstepsJobStep_Properties_ActionFields,
-		},
-		"Credential": ubx.FieldSpec{WireName: "credential"},
-		"ExecutionOptions": ubx.FieldSpec{
-			WireName: "execution_options",
-			Kind: "object",
-			Fields: JobstepsJobStep_Properties_ExecutionOptionsFields,
-		},
-		"Output": ubx.FieldSpec{
-			WireName: "output",
-			Kind: "object",
-			Fields: JobstepsJobStep_Properties_OutputFields,
-		},
-		"StepId": ubx.FieldSpec{WireName: "step_id"},
-		"TargetGroup": ubx.FieldSpec{WireName: "target_group"},
-	}
+	"Action": ubx.FieldSpec{
+		WireName: "action",
+		Kind:     "object",
+		Fields:   JobstepsJobStep_Properties_ActionFields,
+	},
+	"Credential": ubx.FieldSpec{WireName: "credential"},
+	"ExecutionOptions": ubx.FieldSpec{
+		WireName: "execution_options",
+		Kind:     "object",
+		Fields:   JobstepsJobStep_Properties_ExecutionOptionsFields,
+	},
+	"Output": ubx.FieldSpec{
+		WireName: "output",
+		Kind:     "object",
+		Fields:   JobstepsJobStep_Properties_OutputFields,
+	},
+	"StepId":      ubx.FieldSpec{WireName: "step_id"},
+	"TargetGroup": ubx.FieldSpec{WireName: "target_group"},
+}
 
 type JobstepsJobStepConfig struct {
 	// Properties of a job step.
@@ -120,8 +120,8 @@ var JobstepsJobStep = ubx.ResourceBinding{
 	Fields: ubx.FieldMap{
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: JobstepsJobStep_PropertiesFields,
+			Kind:     "object",
+			Fields:   JobstepsJobStep_PropertiesFields,
 		},
 	},
 }

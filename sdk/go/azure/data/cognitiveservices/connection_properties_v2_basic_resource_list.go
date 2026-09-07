@@ -4,18 +4,18 @@ package cognitiveservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ConnectionPropertiesV2BasicResourceList_Value_Properties struct {
-	AuthType any
-	Category any
-	CreatedByWorkspaceArmId any
-	Error any
-	ExpiryTime any
-	Group any
-	IsSharedToAll any
-	Metadata any
-	PeRequirement any
-	PeStatus any
-	SharedUserList any
-	Target any
+	AuthType                    any
+	Category                    any
+	CreatedByWorkspaceArmId     any
+	Error                       any
+	ExpiryTime                  any
+	Group                       any
+	IsSharedToAll               any
+	Metadata                    any
+	PeRequirement               any
+	PeStatus                    any
+	SharedUserList              any
+	Target                      any
 	UseWorkspaceManagedIdentity any
 }
 
@@ -25,26 +25,26 @@ type ConnectionPropertiesV2BasicResourceList_Value struct {
 
 type ConnectionPropertiesV2BasicResourceListConfig struct {
 	AccountName any
-	Category any
-	IncludeAll any
-	Target any
+	Category    any
+	IncludeAll  any
+	Target      any
 }
 
 type ConnectionPropertiesV2BasicResourceListAttrs struct {
 	AccountName any
-	Category any
-	IncludeAll any
-	NextLink any
-	Target any
-	Value any
+	Category    any
+	IncludeAll  any
+	NextLink    any
+	Target      any
+	Value       any
 }
 
 var ConnectionPropertiesV2BasicResourceList = ubx.DataSourceBinding{
 	WireType: "azure_cognitiveservices_connection_properties_v2_basic_resource_list",
 	Fields: ubx.FieldMap{
 		"AccountName": ubx.FieldSpec{WireName: "account_name"},
-		"Category": ubx.FieldSpec{WireName: "category"},
-		"IncludeAll": ubx.FieldSpec{WireName: "include_all"},
-		"Target": ubx.FieldSpec{WireName: "target"},
+		"Category":    ubx.FieldSpec{WireName: "category"},
+		"IncludeAll":  ubx.FieldSpec{WireName: "include_all"},
+		"Target":      ubx.FieldSpec{WireName: "target"},
 	},
 }

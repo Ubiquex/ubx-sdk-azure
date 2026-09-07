@@ -4,7 +4,7 @@ package machinelearningservices
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiEnvironmentVersionList_Value_Properties_Build struct {
-	ContextUri any
+	ContextUri     any
 	DockerfilePath any
 }
 
@@ -14,22 +14,22 @@ type OpenapiEnvironmentVersionList_Value_Properties_InferenceConfig_LivenessRout
 }
 
 type OpenapiEnvironmentVersionList_Value_Properties_InferenceConfig struct {
-	LivenessRoute any
+	LivenessRoute  any
 	ReadinessRoute any
-	ScoringRoute any
-	StartupRoute any
+	ScoringRoute   any
+	StartupRoute   any
 }
 
 type OpenapiEnvironmentVersionList_Value_Properties struct {
-	AutoRebuild any
-	Build any
-	CondaFile any
-	EnvironmentType any
-	Image any
-	InferenceConfig any
-	OsType any
+	AutoRebuild       any
+	Build             any
+	CondaFile         any
+	EnvironmentType   any
+	Image             any
+	InferenceConfig   any
+	OsType            any
 	ProvisioningState any
-	Stage any
+	Stage             any
 }
 
 type OpenapiEnvironmentVersionList_Value struct {
@@ -38,15 +38,15 @@ type OpenapiEnvironmentVersionList_Value struct {
 
 type OpenapiEnvironmentVersionListConfig struct {
 	EnvironmentName any
-	ListViewType any
-	RegistryName any
+	ListViewType    any
+	RegistryName    any
 }
 
 type OpenapiEnvironmentVersionListAttrs struct {
 	EnvironmentName any
-	ListViewType any
+	ListViewType    any
 	// The link to the next page of items
-	NextLink any
+	NextLink     any
 	RegistryName any
 	// The EnvironmentVersion items on this page
 	Value any
@@ -56,7 +56,7 @@ var OpenapiEnvironmentVersionList = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_environment_version_list",
 	Fields: ubx.FieldMap{
 		"EnvironmentName": ubx.FieldSpec{WireName: "environment_name"},
-		"ListViewType": ubx.FieldSpec{WireName: "list_view_type"},
-		"RegistryName": ubx.FieldSpec{WireName: "registry_name"},
+		"ListViewType":    ubx.FieldSpec{WireName: "list_view_type"},
+		"RegistryName":    ubx.FieldSpec{WireName: "registry_name"},
 	},
 }

@@ -5,21 +5,21 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type MetadataEntityList_Value_Properties_SupportedValues struct {
 	DisplayName any
-	Id any
+	Id          any
 }
 
 type MetadataEntityList_Value_Properties struct {
 	ApplicableScenarios any
-	DependsOn any
-	DisplayName any
-	SupportedValues any
+	DependsOn           any
+	DisplayName         any
+	SupportedValues     any
 }
 
 type MetadataEntityList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
-	Type any
+	Type       any
 }
 
 type MetadataEntityListConfig struct {

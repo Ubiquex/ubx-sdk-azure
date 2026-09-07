@@ -26,21 +26,21 @@ type OpenapiPriceSheetResult_Properties_Download struct {
 
 type OpenapiPriceSheetResult_Properties_Pricesheets_SavingsPlan struct {
 	EffectivePrice any
-	MarketPrice any
-	Term any
+	MarketPrice    any
+	Term           any
 }
 
 type OpenapiPriceSheetResult_Properties_Pricesheets struct {
-	BillingPeriodId any
-	CurrencyCode any
+	BillingPeriodId  any
+	CurrencyCode     any
 	IncludedQuantity any
-	MeterDetails any
-	MeterId any
-	OfferId any
-	PartNumber any
-	SavingsPlan any
-	UnitOfMeasure any
-	UnitPrice any
+	MeterDetails     any
+	MeterId          any
+	OfferId          any
+	PartNumber       any
+	SavingsPlan      any
+	UnitOfMeasure    any
+	UnitPrice        any
 }
 
 type OpenapiPriceSheetResult_Properties struct {

@@ -13,10 +13,10 @@ type OpenapiRoute_Properties struct {
 }
 
 var OpenapiRoute_PropertiesFields = ubx.FieldMap{
-		"EndAddress": ubx.FieldSpec{WireName: "end_address"},
-		"RouteType": ubx.FieldSpec{WireName: "route_type"},
-		"StartAddress": ubx.FieldSpec{WireName: "start_address"},
-	}
+	"EndAddress":   ubx.FieldSpec{WireName: "end_address"},
+	"RouteType":    ubx.FieldSpec{WireName: "route_type"},
+	"StartAddress": ubx.FieldSpec{WireName: "start_address"},
+}
 
 type OpenapiRouteConfig struct {
 	// Kind of resource.
@@ -42,8 +42,8 @@ var OpenapiRoute = ubx.ResourceBinding{
 		"Kind": ubx.FieldSpec{WireName: "kind"},
 		"Properties": ubx.FieldSpec{
 			WireName: "properties",
-			Kind: "object",
-			Fields: OpenapiRoute_PropertiesFields,
+			Kind:     "object",
+			Fields:   OpenapiRoute_PropertiesFields,
 		},
 		"Name": ubx.FieldSpec{WireName: "name"},
 	},

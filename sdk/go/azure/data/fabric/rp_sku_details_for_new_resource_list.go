@@ -4,8 +4,8 @@ package fabric
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type RpSkuDetailsForNewResourceList_Value struct {
-	Locations any
-	Name any
+	Locations    any
+	Name         any
 	ResourceType any
 }
 
@@ -21,6 +21,5 @@ type RpSkuDetailsForNewResourceListAttrs struct {
 
 var RpSkuDetailsForNewResourceList = ubx.DataSourceBinding{
 	WireType: "azure_fabric_rp_sku_details_for_new_resource_list",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

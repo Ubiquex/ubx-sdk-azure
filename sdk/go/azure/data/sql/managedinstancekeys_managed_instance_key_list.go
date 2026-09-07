@@ -5,14 +5,14 @@ import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type ManagedinstancekeysManagedInstanceKeyList_Value_Properties struct {
 	AutoRotationEnabled any
-	CreationDate any
-	ServerKeyType any
-	Thumbprint any
-	Uri any
+	CreationDate        any
+	ServerKeyType       any
+	Thumbprint          any
+	Uri                 any
 }
 
 type ManagedinstancekeysManagedInstanceKeyList_Value struct {
-	Kind any
+	Kind       any
 	Properties any
 }
 

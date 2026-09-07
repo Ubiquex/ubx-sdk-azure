@@ -8,22 +8,22 @@ type OpenapiIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpointList_Va
 }
 
 type OpenapiIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpointList_Value_Endpoints struct {
-	DomainName any
+	DomainName      any
 	EndpointDetails any
 }
 
 type OpenapiIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpointList_Value struct {
-	Category any
+	Category  any
 	Endpoints any
 }
 
 type OpenapiIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpointListConfig struct {
-	FactoryName any
+	FactoryName            any
 	IntegrationRuntimeName any
 }
 
 type OpenapiIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpointListAttrs struct {
-	FactoryName any
+	FactoryName            any
 	IntegrationRuntimeName any
 	// The list of outbound network dependency endpoints.
 	Value any
@@ -32,7 +32,7 @@ type OpenapiIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpointListAtt
 var OpenapiIntegrationRuntimeOutboundNetworkDependenciesCategoryEndpointList = ubx.DataSourceBinding{
 	WireType: "azure_datafactory_openapi_integration_runtime_outbound_network_dependencies_category_endpoint_list",
 	Fields: ubx.FieldMap{
-		"FactoryName": ubx.FieldSpec{WireName: "factory_name"},
+		"FactoryName":            ubx.FieldSpec{WireName: "factory_name"},
 		"IntegrationRuntimeName": ubx.FieldSpec{WireName: "integration_runtime_name"},
 	},
 }

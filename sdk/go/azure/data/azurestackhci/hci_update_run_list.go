@@ -7,40 +7,40 @@ type HciUpdateRunList_Value_Properties_Progress_Steps struct {
 }
 
 type HciUpdateRunList_Value_Properties_Progress struct {
-	Description any
-	EndTimeUtc any
-	ErrorMessage any
+	Description           any
+	EndTimeUtc            any
+	ErrorMessage          any
 	ExpectedExecutionTime any
-	LastUpdatedTimeUtc any
-	Name any
-	StartTimeUtc any
-	Status any
-	Steps any
+	LastUpdatedTimeUtc    any
+	Name                  any
+	StartTimeUtc          any
+	Status                any
+	Steps                 any
 }
 
 type HciUpdateRunList_Value_Properties struct {
-	Duration any
-	LastUpdatedTime any
-	Progress any
+	Duration          any
+	LastUpdatedTime   any
+	Progress          any
 	ProvisioningState any
-	State any
-	TimeStarted any
+	State             any
+	TimeStarted       any
 }
 
 type HciUpdateRunList_Value struct {
-	Location any
+	Location   any
 	Properties any
 }
 
 type HciUpdateRunListConfig struct {
 	ClusterName any
-	UpdateName any
+	UpdateName  any
 }
 
 type HciUpdateRunListAttrs struct {
 	ClusterName any
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	UpdateName any
 	// The UpdateRun items on this page
 	Value any
@@ -50,6 +50,6 @@ var HciUpdateRunList = ubx.DataSourceBinding{
 	WireType: "azure_azurestackhci_hci_update_run_list",
 	Fields: ubx.FieldMap{
 		"ClusterName": ubx.FieldSpec{WireName: "cluster_name"},
-		"UpdateName": ubx.FieldSpec{WireName: "update_name"},
+		"UpdateName":  ubx.FieldSpec{WireName: "update_name"},
 	},
 }

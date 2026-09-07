@@ -4,9 +4,9 @@ package mysql
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type OpenapiAdvancedThreatProtectionList_Value_Properties struct {
-	CreationTime any
+	CreationTime      any
 	ProvisioningState any
-	State any
+	State             any
 }
 
 type OpenapiAdvancedThreatProtectionList_Value struct {
@@ -19,7 +19,7 @@ type OpenapiAdvancedThreatProtectionListConfig struct {
 
 type OpenapiAdvancedThreatProtectionListAttrs struct {
 	// The link to the next page of items
-	NextLink any
+	NextLink   any
 	ServerName any
 	// The AdvancedThreatProtection items on this page
 	Value any

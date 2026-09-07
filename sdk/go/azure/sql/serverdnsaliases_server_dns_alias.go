@@ -18,6 +18,5 @@ type ServerdnsaliasesServerDnsAliasAttrs struct {
 
 var ServerdnsaliasesServerDnsAlias = ubx.ResourceBinding{
 	WireType: "azure_sql_serverdnsaliases_server_dns_alias",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }

@@ -4,27 +4,27 @@ package subscription
 import ubx "github.com/ubiquex/ubx-sdk-go/runtime"
 
 type SubscriptionsGetTenantPolicyResponseList_Value_Properties struct {
-	BlockSubscriptionsIntoTenant any
+	BlockSubscriptionsIntoTenant    any
 	BlockSubscriptionsLeavingTenant any
-	ExemptedPrincipals any
-	PolicyId any
+	ExemptedPrincipals              any
+	PolicyId                        any
 }
 
 type SubscriptionsGetTenantPolicyResponseList_Value_SystemData struct {
-	CreatedAt any
-	CreatedBy any
-	CreatedByType any
-	LastModifiedAt any
-	LastModifiedBy any
+	CreatedAt          any
+	CreatedBy          any
+	CreatedByType      any
+	LastModifiedAt     any
+	LastModifiedBy     any
 	LastModifiedByType any
 }
 
 type SubscriptionsGetTenantPolicyResponseList_Value struct {
-	Id any
-	Name any
+	Id         any
+	Name       any
 	Properties any
 	SystemData any
-	Type any
+	Type       any
 }
 
 type SubscriptionsGetTenantPolicyResponseListConfig struct {

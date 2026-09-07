@@ -18,7 +18,7 @@ type VmInstanceHybridIdentityMetadataConfig struct {
 
 type VmInstanceHybridIdentityMetadataAttrs struct {
 	// Describes the properties of Hybrid Identity Metadata for a Virtual Machine.
-	Properties any
+	Properties  any
 	ResourceUri any
 }
 

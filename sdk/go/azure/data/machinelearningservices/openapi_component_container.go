@@ -9,21 +9,21 @@ type OpenapiComponentContainer_Properties struct {
 }
 
 type OpenapiComponentContainerConfig struct {
-	Name any
+	Name          any
 	WorkspaceName any
 }
 
 type OpenapiComponentContainerAttrs struct {
 	Name any
 	// Component container definition. <see href="https://docs.microsoft.com/en-us/azure/machine-learning/reference-yaml-component-command" />
-	Properties any
+	Properties    any
 	WorkspaceName any
 }
 
 var OpenapiComponentContainer = ubx.DataSourceBinding{
 	WireType: "azure_machinelearningservices_openapi_component_container",
 	Fields: ubx.FieldMap{
-		"Name": ubx.FieldSpec{WireName: "name"},
+		"Name":          ubx.FieldSpec{WireName: "name"},
 		"WorkspaceName": ubx.FieldSpec{WireName: "workspace_name"},
 	},
 }

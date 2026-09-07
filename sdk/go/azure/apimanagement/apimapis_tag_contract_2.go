@@ -18,6 +18,5 @@ type ApimapisTagContract2Attrs struct {
 
 var ApimapisTagContract2 = ubx.ResourceBinding{
 	WireType: "azure_apimanagement_apimapis_tag_contract_2",
-	Fields: ubx.FieldMap{
-	},
+	Fields:   ubx.FieldMap{},
 }
